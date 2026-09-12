@@ -2,16 +2,16 @@
  "count": 8952,
  "poets": [
   {
-   "slug": "lydgate",
-   "name": "John Lydgate",
-   "dates": "c. 1370–c. 1451",
-   "era": "Medieval",
-   "portrait": "poets/lydgate.jpg",
-   "credit": "Portrait of John Lydgate (illuminated manuscript) — Public domain (Wikimedia Commons)",
+   "slug": "beowulf-poet",
+   "name": "The Beowulf Poet",
+   "dates": "c. 8th–11th century",
+   "era": "Old English",
+   "portrait": null,
+   "credit": "No portrait exists; the poet's identity and even century of composition are unknown.",
    "bio": [
-    "John Lydgate (c. 1370–c. 1451) was a Benedictine monk of Bury St Edmunds and, in his own lifetime, probably the most prolific and widely read poet in England — his surviving output runs to well over a hundred thousand lines.",
-    "He wrote in conscious imitation of Chaucer, whom he revered as his master, producing enormous works such as the Troy Book and the Fall of Princes alongside occasional verse, saints' lives, and courtly dream visions for patrons that included the royal house of Lancaster.",
-    "Modern taste has generally preferred Chaucer's economy to Lydgate's copiousness, but he was central to how English poetry was read and valued through the fifteenth century."
+    "The author of Beowulf is unknown — an anonymous Anglo-Saxon poet whose single surviving epic, composed in Old English somewhere between the 8th and early 11th centuries, is the longest and most celebrated poem to survive from that period.",
+    "The poem survives in one manuscript, the Nowell Codex (British Library, Cotton Vitellius A.xv), damaged by fire in 1731 and now held by the British Library. It tells of the Geatish hero Beowulf's battles with the monster Grendel, Grendel's mother, and, in old age, a dragon.",
+    "This text is the 1910 verse translation by the American philologist Francis Barton Gummere, prepared for the Harvard Classics and long in the public domain; it preserves the original's alliterative, four-stress line."
    ],
    "poemCount": 0,
    "workCount": 1
@@ -47,6 +47,21 @@
    "workCount": 1
   },
   {
+   "slug": "chaucer",
+   "name": "Geoffrey Chaucer",
+   "dates": "c. 1343–1400",
+   "era": "Medieval",
+   "portrait": "poets/chaucer.jpg",
+   "credit": "Portrait of Geoffrey Chaucer (manuscript detail) — Public domain (Wikimedia Commons)",
+   "bio": [
+    "Geoffrey Chaucer (c. 1343–1400) was an English poet, civil servant, and diplomat, widely called the father of English poetry for demonstrating that the vernacular could carry the full weight of serious literary art.",
+    "He served in the royal household under three kings, worked as a customs official and clerk of the king's works, and travelled on diplomatic missions to France and Italy, where he likely encountered the work of Dante, Petrarch, and Boccaccio.",
+    "His masterwork, The Canterbury Tales, left unfinished at his death, gathers a fellowship of pilgrims riding to Canterbury and telling stories in turn — a panorama of medieval English society in verse of astonishing variety and wit. He was buried in Westminster Abbey, in the corner that later became Poets' Corner."
+   ],
+   "poemCount": 0,
+   "workCount": 2
+  },
+  {
    "slug": "gawain-poet",
    "name": "The Gawain Poet",
    "dates": "late 14th century",
@@ -62,34 +77,19 @@
    "workCount": 2
   },
   {
-   "slug": "beowulf-poet",
-   "name": "The Beowulf Poet",
-   "dates": "c. 8th–11th century",
-   "era": "Old English",
-   "portrait": null,
-   "credit": "No portrait exists; the poet's identity and even century of composition are unknown.",
+   "slug": "lydgate",
+   "name": "John Lydgate",
+   "dates": "c. 1370–c. 1451",
+   "era": "Medieval",
+   "portrait": "poets/lydgate.jpg",
+   "credit": "Portrait of John Lydgate (illuminated manuscript) — Public domain (Wikimedia Commons)",
    "bio": [
-    "The author of Beowulf is unknown — an anonymous Anglo-Saxon poet whose single surviving epic, composed in Old English somewhere between the 8th and early 11th centuries, is the longest and most celebrated poem to survive from that period.",
-    "The poem survives in one manuscript, the Nowell Codex (British Library, Cotton Vitellius A.xv), damaged by fire in 1731 and now held by the British Library. It tells of the Geatish hero Beowulf's battles with the monster Grendel, Grendel's mother, and, in old age, a dragon.",
-    "This text is the 1910 verse translation by the American philologist Francis Barton Gummere, prepared for the Harvard Classics and long in the public domain; it preserves the original's alliterative, four-stress line."
+    "John Lydgate (c. 1370–c. 1451) was a Benedictine monk of Bury St Edmunds and, in his own lifetime, probably the most prolific and widely read poet in England — his surviving output runs to well over a hundred thousand lines.",
+    "He wrote in conscious imitation of Chaucer, whom he revered as his master, producing enormous works such as the Troy Book and the Fall of Princes alongside occasional verse, saints' lives, and courtly dream visions for patrons that included the royal house of Lancaster.",
+    "Modern taste has generally preferred Chaucer's economy to Lydgate's copiousness, but he was central to how English poetry was read and valued through the fifteenth century."
    ],
    "poemCount": 0,
    "workCount": 1
-  },
-  {
-   "slug": "chaucer",
-   "name": "Geoffrey Chaucer",
-   "dates": "c. 1343–1400",
-   "era": "Medieval",
-   "portrait": "poets/chaucer.jpg",
-   "credit": "Portrait of Geoffrey Chaucer (manuscript detail) — Public domain (Wikimedia Commons)",
-   "bio": [
-    "Geoffrey Chaucer (c. 1343–1400) was an English poet, civil servant, and diplomat, widely called the father of English poetry for demonstrating that the vernacular could carry the full weight of serious literary art.",
-    "He served in the royal household under three kings, worked as a customs official and clerk of the king's works, and travelled on diplomatic missions to France and Italy, where he likely encountered the work of Dante, Petrarch, and Boccaccio.",
-    "His masterwork, The Canterbury Tales, left unfinished at his death, gathers a fellowship of pilgrims riding to Canterbury and telling stories in turn — a panorama of medieval English society in verse of astonishing variety and wit. He was buried in Westminster Abbey, in the corner that later became Poets' Corner."
-   ],
-   "poemCount": 0,
-   "workCount": 2
   },
   {
    "slug": "marlowe",
