@@ -35,12 +35,12 @@
         query = e.target.value.trim().toLowerCase();
         if (query) filterSubject = "All";
         syncSearchInput();
-        if (/^#\/(poem|topics|about|poets|poet)/.test(location.hash)) location.hash = "#/";
+        if (/^#\/(?!poems)/.test(location.hash) && location.hash !== "#/poems") location.hash = "#/poems";
         else renderList();
       });
     });
     document.querySelectorAll("form.search-form").forEach((form) =>
-      form.addEventListener("submit", (e) => { e.preventDefault(); if (location.hash !== "#/") location.hash = "#/"; else renderList(); }));
+      form.addEventListener("submit", (e) => { e.preventDefault(); if (location.hash !== "#/poems") location.hash = "#/poems"; else renderList(); }));
   }
   function syncSearchInput() {
     document.querySelectorAll("input.search-input").forEach((input) => {
@@ -61,7 +61,8 @@
     else if (h.startsWith("#/poets")) { setRoute("poets", "sub"); renderPoets(); }
     else if (h.startsWith("#/topics")) { setRoute("topics", "sub"); renderTopics(); }
     else if (h.startsWith("#/about")) { setRoute("about", "sub"); renderAbout(); }
-    else { setRoute("poems", "home"); renderList(); }
+    else if (h.startsWith("#/poems")) { setRoute("poems", "sub"); renderList(); }
+    else { setRoute("poems", "home"); renderHome(); }
     syncSearchInput();
     window.scrollTo(0, 0);
   }
@@ -100,6 +101,35 @@
       <p class="card-excerpt">${esc(w.blurb || (w.sections.length + " cantos"))}</p>
       <span class="work-flag">Read in ${w.sections.length} parts →</span>
     </button>`;
+
+  // ---------- HOME: curated highlights ----------
+  const FEATURED = [
+    ["blake", "The Tyger"],
+    ["blake", "London"],
+    ["milton", "Sonnet 19: When I Consider How My Light Is Spent"],
+    ["herbert", "The Collar."],
+    ["marvell", "To his Coy Mistress."],
+    ["herrick", "To the Virgins, to make much of Time."],
+    ["byron", "She Walks in Beauty"],
+    ["shelley", "Ozymandias"],
+    ["keats", "Ode on a Grecian Urn"],
+    ["wordsworth", "I Wandered Lonely as a Cloud"],
+  ];
+  function renderHome() {
+    const featured = FEATURED
+      .map(([slug, title]) => DATA.poems.map((p, i) => ({ p, i })).find(({ p }) => p.authorSlug === slug && p.title === title))
+      .filter(Boolean);
+    const works = DATA.works || [];
+    app.innerHTML = `
+      <div class="page-head"><h1 class="page-title">Highlights</h1><p class="page-sub">A starting shelf — the full archive holds ${DATA.count} poems.</p></div>
+      <div class="grid">
+        ${works.map(workCardHTML).join("")}
+        ${featured.map(({ p, i }) => cardHTML(p, i)).join("")}
+      </div>
+      <div class="browse-all"><a href="#/poems" class="read-link">Browse all ${DATA.count} poems →</a></div>`;
+    app.querySelectorAll(".work-card").forEach((c) => c.addEventListener("click", () => { location.hash = "#/work/" + c.dataset.work; }));
+    bindCards();
+  }
 
   const sortKey = (s) => s.toLowerCase().replace(/^["'“‘]*(a|an|the)\s+/, "").replace(/^[^a-z0-9]+/, "").trim();
   function renderList() {
@@ -249,7 +279,7 @@
           </button>`).join("")}
       </div>`;
     app.querySelectorAll(".topic-card").forEach((c) => c.addEventListener("click", () => {
-      filterSubject = c.dataset.sub; query = ""; syncSearchInput(); location.hash = "#/";
+      filterSubject = c.dataset.sub; query = ""; syncSearchInput(); location.hash = "#/poems";
     }));
   }
 
@@ -299,12 +329,12 @@
           <button class="next" ${i === DATA.poems.length - 1 ? "disabled" : ""} data-go="${i + 1}"><span class="dir">Next →</span>${i < DATA.poems.length - 1 ? esc(DATA.poems[i + 1].title) : ""}</button>
         </div>
       </article>`;
-    document.getElementById("back").addEventListener("click", () => { if (history.length > 1) history.back(); else location.hash = "#/"; });
+    document.getElementById("back").addEventListener("click", () => { if (history.length > 1) history.back(); else location.hash = "#/poems"; });
     app.querySelectorAll(".theme-tag").forEach((t) => t.addEventListener("click", () => {
       const isSub = DATA.subjects.some((s) => s.name === t.dataset.sub);
       filterSubject = isSub ? t.dataset.sub : "All";
       query = isSub ? "" : t.dataset.sub.toLowerCase();
-      syncSearchInput(); location.hash = "#/";
+      syncSearchInput(); location.hash = "#/poems";
     }));
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/poem/" + b.dataset.go; }));
   }
