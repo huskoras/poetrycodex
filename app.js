@@ -17,6 +17,7 @@
   // Order here is the display/chronological order used on the home page.
   const CATEGORY_ORDER = [
     "Ancient Greek & Roman",
+    "Anglo-Saxon",
     "Medieval",
     "Tudor & Elizabethan",
     "Metaphysical & Cavalier",
@@ -26,6 +27,7 @@
   ];
   const CATEGORY_SLUGS = {
     "Ancient Greek & Roman": "ancient-greek-roman",
+    "Anglo-Saxon": "anglo-saxon",
     "Medieval": "medieval",
     "Tudor & Elizabethan": "tudor-elizabethan",
     "Metaphysical & Cavalier": "metaphysical-cavalier",
