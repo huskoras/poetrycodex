@@ -1,5 +1,5 @@
 {
- "count": 8952,
+ "count": 8970,
  "poets": [
   {
    "slug": "beowulf-poet",
@@ -90,6 +90,90 @@
    ],
    "poemCount": 0,
    "workCount": 1
+  },
+  {
+   "slug": "dunbar",
+   "name": "William Dunbar",
+   "dates": "c. 1460–c. 1520",
+   "era": "Medieval",
+   "portrait": "poets/dunbar.jpg",
+   "credit": "Portrait of William Dunbar — Public domain (Wikimedia Commons)",
+   "bio": [
+    "William Dunbar was a Scottish makar (court poet) attached to the household of King James IV, celebrated for the range and metrical virtuosity of his verse.",
+    "His poems move between satire, comic invective, and devotional lyric, and include the famous elegy ‘Lament for the Makers,’ with its refrain ‘Timor Mortis conturbat me.’"
+   ],
+   "poemCount": 4,
+   "workCount": 0
+  },
+  {
+   "slug": "skelton",
+   "name": "John Skelton",
+   "dates": "c. 1463–1529",
+   "era": "Tudor",
+   "portrait": "poets/skelton.jpg",
+   "credit": "Portrait of John Skelton — Public domain (Wikimedia Commons)",
+   "bio": [
+    "John Skelton was an English poet and tutor to the young Prince Henry, later Henry VIII, remembered for the idiosyncratic short-lined verse form later called ‘Skeltonics.’",
+    "He wrote both courtly lyrics of praise and sharp satire of clergy and court, and was crowned poet laureate by three universities."
+   ],
+   "poemCount": 2,
+   "workCount": 0
+  },
+  {
+   "slug": "hawes",
+   "name": "Stephen Hawes",
+   "dates": "c. 1475–1523?",
+   "era": "Tudor",
+   "portrait": null,
+   "credit": "No confirmed portrait sourced for this archive.",
+   "bio": [
+    "Stephen Hawes was an English poet who served as a groom of the chamber to Henry VII, best known for his allegorical romance ‘The Pastime of Pleasure.’",
+    "His verse bridges medieval allegory and the new humanism of the early Tudor court, and he was among the last English poets to write in the tradition of Chaucer and Lydgate."
+   ],
+   "poemCount": 2,
+   "workCount": 0
+  },
+  {
+   "slug": "wyatt",
+   "name": "Sir Thomas Wyatt",
+   "dates": "1503–1542",
+   "era": "Tudor",
+   "portrait": "poets/wyatt.jpg",
+   "credit": "Portrait of Sir Thomas Wyatt — Public domain (Wikimedia Commons)",
+   "bio": [
+    "Sir Thomas Wyatt was a Kentish courtier and diplomat under Henry VIII, credited with introducing the sonnet form into English poetry after his travels in Italy.",
+    "His lyrics of love and court intrigue circulated in manuscript during his lifetime and were first printed posthumously in Tottel’s Miscellany (1557)."
+   ],
+   "poemCount": 5,
+   "workCount": 0
+  },
+  {
+   "slug": "surrey",
+   "name": "Henry Howard, Earl of Surrey",
+   "dates": "1517–1547",
+   "era": "Tudor",
+   "portrait": "poets/surrey.jpg",
+   "credit": "Portrait of Henry Howard, Earl of Surrey — Public domain (Wikimedia Commons)",
+   "bio": [
+    "Henry Howard, Earl of Surrey, was an English nobleman and poet who, alongside his friend Sir Thomas Wyatt, helped pioneer the English sonnet and was the first to write English verse in blank verse.",
+    "He was executed for treason in the last weeks of Henry VIII’s reign, at the age of twenty-nine."
+   ],
+   "poemCount": 3,
+   "workCount": 0
+  },
+  {
+   "slug": "scott",
+   "name": "Alexander Scott",
+   "dates": "c. 1520–c. 1583",
+   "era": "Tudor",
+   "portrait": null,
+   "credit": "No confirmed portrait sourced for this archive.",
+   "bio": [
+    "Alexander Scott was a Scottish court poet whose surviving work, some three dozen short lyrics, chiefly concerns love and courtly compliment.",
+    "Little is known of his life beyond scattered records connecting him to Inchmahome Priory and the Scottish court of Mary, Queen of Scots."
+   ],
+   "poemCount": 2,
+   "workCount": 0
   },
   {
    "slug": "marlowe",
@@ -1030,27 +1114,27 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2271
+   "count": 2272
   },
   {
    "name": "Love",
-   "count": 1998
+   "count": 2009
   },
   {
    "name": "Nature",
-   "count": 1644
+   "count": 1645
   },
   {
    "name": "Religion",
-   "count": 1282
+   "count": 1283
   },
   {
    "name": "Death & Dying",
-   "count": 481
+   "count": 483
   },
   {
    "name": "History & Politics",
-   "count": 409
+   "count": 410
   },
   {
    "name": "Relationships",
@@ -1070,7 +1154,15 @@
   },
   {
    "name": "Social Commentaries",
-   "count": 50
+   "count": 51
+  },
+  {
+   "name": "Mythology & Folklore",
+   "count": 1
+  },
+  {
+   "name": "The Body",
+   "count": 1
   }
  ],
  "poems": [
@@ -108506,6 +108598,222 @@
    "collection": "Poems: New and Old",
    "note": "",
    "text": "TO COLONEL FRANCIS EDWARD YOUNGHUSBAND\n\n  Across the Western World, the Arabian Sea,\n  The Hundred Kingdoms and the Rivers Three,\n  Beyond the rampart of Himalayan snows,\n  And up the road that only Rumour knows,\n  Unchecked, old friend, from Devon to Thibet,\n  Friendship and Memory dog your footsteps yet.\n\n  Let not the scornful ask me what avails\n  So small a pack to follow mighty trails:\n  Long since I saw what difference must be\n  Between a stream like you, a ditch like me.\n  This drains a garden and a homely field\n  Which scarce at times a living current yield;\n  The other from the high lands of his birth\n  Plunges through rocks and spurns the pastoral earth,\n  Then settling silent to his deeper course\n  Draws in his fellows to augment his force,\n  Becomes a name, and broadening as he goes,\n  Gives power and purity where'er he flows,\n  Till, great enough for any commerce grown,\n  He links all nations while he serves his own.\n  Soldier, explorer, statesman, what in truth\n  Have you in common with homekeeping youth?\n  \"Youth\" comes your answer like an echo faint;\n  And youth it was that made us first acquaint.\n  Do you remember when the Downs were white\n  With the March dust from highways glaring bright,\n  How you and I, like yachts that toss the foam,\n  From Penpole Fields came stride and stride for home?\n  One grimly leading, one intent to pass,\n  Mile after mile we measured road and grass,\n  Twin silent shadows, till the hour was done,\n  The shadows parted and the stouter won.\n  Since then I know one thing beyond appeal--\n  How runs from stem to stern a trimbuilt keel.\n  Another day--but that's not mine to tell,\n  The man in front does not observe so well;\n  Though, spite of all these five-and-twenty years,\n  As clear as life our schoolday scene appears.\n  The guarded course, the barriers and the rope;\n  The runners, stripped of all but shivering hope;\n  The starter's good grey head; the sudden hush;\n  The stern white line; the half-unconscious rush;\n  The deadly bend, the pivot of our fate;\n  The rope again; the long green level straight;\n  The lane of heads, the cheering half unheard;\n  The dying spurt, the tape, the judge's word.\n\n  You, too, I doubt not, from your Lama's hall\n  Can see the Stand above the worn old wall,\n  Where then they clamoured as our race we sped,\n  Where now they number our heroic dead.*\n  As clear as life you, too, can hear the sound\n  Of voices once for all by \"lock-up\" bound,\n  And see the flash of eyes still nobly bright\n  But in the \"Bigside scrimmage\" lost to sight.\n\n  Old loves, old rivalries, old happy times,\n  These well may move your memory and my rhymes;\n  These are the Past; but there is that, my friend,\n  Between us two, that has nor time nor end.\n  Though wide apart the lines our fate has traced\n  Since those far shadows of our boyhood raced,\n  In the dim region all men must explore--\n  The mind's Thibet, where none has gone before--\n  Rounding some shoulder of the lonely trail\n  We met once more, and raised a lusty hail.\n\n  \"Forward!\" cried one, \"for us no beaten track,\n  No city continuing, no turning back:\n  The past we love not for its being past,\n  But for its hope and ardour forward cast:\n  The victories of our youth we count for gain\n  Only because they steeled our hearts to pain,\n  And hold no longer even Clifton great\n  Save as she schooled our wills to serve the State.\n  Nay, England's self, whose thousand-year-old name\n  Burns in our blood like ever-smouldering flame,\n  Whose Titan shoulders as the world are wide\n  And her great pulses like the Ocean tide,\n  Lives but to bear the hopes we shall not see--\n  Dear mortal Mother of the race to be.\"\n\n  Thereto you answered, \"Forward! in God's name;\n  I own no lesser law, no narrower claim.\n  A freeman's Reason well might think it scorn\n  To toil for those who may be never born,\n  But for some Cause not wholly out of ken,\n  Some all-directing Will that works with men,\n  Some Universal under which may fall\n  The minor premiss of our effort small;\n  In Whose unending purpose, though we cease,\n  We find our impulse and our only peace.\"\n\n  So passed our greeting, till we turned once more,\n  I to my desk and you to rule Indore.\n  To meet again--ah! when?  Yet once we met,\n  And to one dawn our faces still are set.\n\n  EXETER,\n    _September_ 10, 1904.\n\n* In the school quadrangle at Clifton, the site from which, upon\noccasion, the grand stand used to overlook the Close, is now occupied\nby the Memorial to those Cliftonians who fell in the South African War."
+  },
+  {
+   "title": "To a Lady",
+   "authorSlug": "dunbar",
+   "author": "William Dunbar",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Sweet rois of vertew and of gentilness,\n    Delytsum lily of everie lustynes,\n        Richest in bontie and in bewtie clear,\n        And everie vertew that is wenit dear,\n    Except onlie that ye are mercyless.\n\n    Into your garth this day I did persew;\n    There saw I flowris that fresche were of hew;\n        Baith quhyte and reid most lusty were to seyne,\n        And halesome herbis upon stalkis greene;\n    Yet leaf nor flowr find could I nane of rew.\n\n    I doubt that Merche, with his cauld blastis keyne,\n    Has slain this gentil herb, that I of mene;\n        Quhois piteous death dois to my heart sic paine\n        That I would make to plant his root againe,--\n    So confortand his levis unto me bene."
+  },
+  {
+   "title": "In Honour of the City of London",
+   "authorSlug": "dunbar",
+   "author": "William Dunbar",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    London, thou art of townes _A per se_.\n      Soveraign of cities, seemliest in sight,\n    Of high renoun, riches and royaltie;\n      Of lordis, barons, and many a goodly knyght;\n      Of most delectable lusty ladies bright;\n    Of famous prelatis, in habitis clericall;\n      Of merchauntis full of substaunce and of myght:\n    London, thou art the flour of Cities all.\n\n    Gladdith anon, thou lusty Troynovaunt,\n      Citie that some tyme cleped was New Troy;\n    In all the erth, imperiall as thou stant,\n      Pryncesse of townes, of pleasure and of joy,\n      A richer restith under no Christen roy;\n    For manly power, with craftis naturall,\n      Fourmeth none fairer sith the flode of Noy:\n    London, thou art the flour of Cities all.\n\n    Gemme of all joy, jasper of jocunditie,\n      Most myghty carbuncle of vertue and valour;\n    Strong Troy in vigour and in strenuytie;\n      Of royall cities rose and geraflour;\n    Empress of townes, exalt in honour;\n    In beawtie beryng the crone imperiall;\n      Swete paradise precelling in pleasure;\n    London, thou art the flour of Cities all.\n\n    Above all ryvers thy Ryver hath renowne,\n      Whose beryall stremys, pleasaunt and preclare,\n    Under thy lusty wallys renneth down,\n      Where many a swan doth swymme with wyngis fair;\n\n      Where many a barge doth saile and row with are;\n    Where many a ship doth rest with top-royall.\n      O, towne of townes! patrone and not compare,\n    London, thou art the flour of Cities all.\n\n    Upon thy lusty Brigge of pylers white\n      Been merchauntis full royall to behold;\n    Upon thy stretis goeth many a semely knyght\n      In velvet gownes and in cheynes of gold.\n      By Julyus Cesar thy Tour founded of old\n    May be the hous of Mars victoryall,\n      Whose artillary with tonge may not be told:\n    London, thou art the flour of Cities all.\n\n    Strong be thy wallis that about thee standis;\n      Wise be the people that within thee dwellis;\n    Fresh is thy ryver with his lusty strandis;\n      Blith be thy chirches, wele sownyng be thy bellis;\n      Rich be thy merchauntis in substaunce that excellis;\n    Fair be their wives, right lovesom, white and small;\n      Clere be thy virgyns, lusty under kellis:\n    London, thou art the flour of Cities all.\n\n    Thy famous Maire, by pryncely governaunce,\n      With sword of justice thee ruleth prudently.\n    No Lord of Parys, Venyce, or Floraunce\n      In dignitye or honour goeth to hym nigh.\n      He is exampler, loode-ster, and guye;\n    Principall patrone and rose orygynalle,\n      Above all Maires as maister most worthy:\n    London, thou art the flour of Cities all."
+  },
+  {
+   "title": "On the Nativity of Christ",
+   "authorSlug": "dunbar",
+   "author": "William Dunbar",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    _Rorate coeli desuper_!\n      Hevins, distil your balmy schouris!\n    For now is risen the bricht day-ster,\n      Fro the rose Mary, flour of flouris:\n      The cleir Sone, quhom no cloud devouris,\n    Surmounting Phebus in the Est,\n      Is cumin of his hevinly touris:\n        _Et nobis Puer natus est_.\n\n    Archangellis, angellis, and dompnationis,\n      Tronis, potestatis, and marteiris seir,\n    And all ye hevinly operationis,\n      Ster, planeit, firmament, and spheir,\n      Fire, erd, air, and water cleir,\n    To Him gife loving, most and lest,\n      That come in to so meik maneir;\n        _Et nobis Puer natus est_.\n\n    Synnaris be glad, and penance do,\n      And thank your Maker hairtfully;\n    For he that ye micht nocht come to\n      To you is cumin full humbly\n      Your soulis with his blood to buy\n    And loose you of the fiendis arrest--\n      And only of his own mercy;\n        _Pro nobis Puer natus est_.\n\n    All clergy do to him inclyne,\n      And bow unto that bairn benyng,\n    And do your observance divyne\n      To him that is of kingis King:\n\n      Encense his altar, read and sing\n    In holy kirk, with mind degest,\n      Him honouring attour all thing\n        _Qui nobis Puer natus est_.\n\n    Celestial foulis in the air,\n      Sing with your nottis upon hicht,\n    In firthis and in forrestis fair\n      Be myrthful now at all your mycht;\n      For passit is your dully nicht,\n    Aurora has the cloudis perst,\n      The Sone is risen with glaidsum licht,\n        _Et nobis Puer natus est_.\n\n    Now spring up flouris fra the rute,\n      Revert you upward naturaly,\n    In honour of the blissit frute\n      That raiss up fro the rose Mary;\n      Lay out your levis lustily,\n    Fro deid take life now at the lest\n      In wirschip of that Prince worthy\n        _Qui nobis Puer natus est_.\n\n    Sing, hevin imperial, most of hicht!\n      Regions of air mak armony!\n    All fish in flud and fowl of flicht\n      Be mirthful and mak melody!\n      All Gloria in excelsis cry!\n    Heaven, erd, se, man, bird, and best,--\n      He that is crownit abone the sky\n        _Pro nobis Puer natus est_!"
+  },
+  {
+   "title": "Lament for the Makers",
+   "authorSlug": "dunbar",
+   "author": "William Dunbar",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    I that in heill was and gladnèss\n    Am trublit now with great sickness\n    And feblit with infirmitie:--\n        _Timor Mortis conturbat me_.\n\n    Our plesance here is all vain glory,\n    This fals world is but transitory,\n    The flesh is bruckle, the Feynd is slee:--\n        _Timor Mortis conturbat me_.\n\n    The state of man does change and vary,\n    Now sound, now sick, now blyth, now sary,\n    Now dansand mirry, now like to die:--\n        _Timor Mortis conturbat me_.\n\n    No state in Erd here standis sicker;\n    As with the wynd wavis the wicker\n    So wannis this world’s vanitie:--\n        _Timor Mortis conturbat me_.\n\n    Unto the Death gois all Estatis,\n    Princis, Prelatis, and Potestatis,\n    Baith rich and poor of all degree:--\n        _Timor Mortis conturbat me_.\n\n    He takis the knichtis in to the field\n    Enarmit under helm and scheild;\n    Victor he is at all mellie:--\n        _Timor Mortis conturbat me_.\n\n    That strong unmerciful tyrand\n    Takis, on the motheris breast sowkand,\n    The babe full of benignitie:--\n        _Timor Mortis conturbat me_.\n\n    He takis the campion in the stour,\n    The captain closit in the tour,\n    The lady in bour full of bewtie:--\n        _Timor Mortis conturbat me_.\n\n    He spairis no lord for his piscence,\n    Na clerk for his intelligence;\n    His awful straik may no man flee:--\n        _Timor Mortis conturbat me_.\n\n    Art-magicianis and astrologgis,\n    Rethoris, logicianis, and theologgis,\n    Them helpis no conclusionis slee:--\n        _Timor Mortis conturbat me_.\n\n    In medecine the most practicianis,\n    Leechis, surrigianis, and physicianis,\n    Themself from Death may not supplee:--\n        _Timor Mortis conturbat me_.\n\n    I see that makaris amang the lave\n    Playis here their padyanis, syne gois to grave;\n    Sparit is nocht their facultie:--\n        _Timor Mortis conturbat me_.\n\n    He has done petuously devour\n    The noble Chaucer, of makaris flour,\n    The Monk of Bury, and Gower, all three:--\n        _Timor Mortis conturbat me._\n\n    The good Sir Hew of Eglintoun,\n    Ettrick, Heriot, and Wintoun,\n    He has tane out of this cuntrie:--\n        _Timor Mortis conturbat me_.\n\n    That scorpion fell has done infeck\n    Maister John Clerk, and James Afflek,\n    Fra ballat-making and tragedie:--\n        _Timor Mortis conturbat me_.\n\n    Holland and Barbour he has berevit;\n    Alas! that he not with us levit\n    Sir Mungo Lockart of the Lee:--\n        _Timor Mortis conturbat me_.\n\n    Clerk of Tranent eke he has tane,\n    That made the anteris of Gawaine;\n    Sir Gilbert Hay endit has he:--\n        _Timor Mortis conturbat me_.\n\n    He has Blind Harry and Sandy Traill\n    Slain with his schour of mortal hail,\n    Quhilk Patrick Johnstoun might nought flee:--\n        _Timor Mortis conturbat me_.\n\n    He has reft Merseir his endite,\n    That did in luve so lively write,\n    So short, so quick, of sentence hie:--\n        _Timor Mortis conturbat me_.\n\n    He has tane Rowll of Aberdene,\n    And gentill Rowll of Corstorphine;\n    Two better fallowis did no man see:--\n        _Timor Mortis conturbat me_.\n\n    In Dunfermline he has tane Broun\n    With Maister Robert Henrysoun;\n    Sir John the Ross enbrast has he:--\n        _Timor Mortis conturbat me_.\n\n    And he has now tane, last of a,\n    Good gentil Stobo and Quintin Shaw,\n    Of quhom all wichtis hes pitie:--\n        _Timor Mortis conturbat me_.\n\n    Good Maister Walter Kennedy\n    In point of Death lies verily;\n    Great ruth it were that so suld be:--\n        _Timor Mortis conturbat me_.\n\n    Sen he has all my brether tane,\n    He will naught let me live alane;\n    Of force I man his next prey be:--\n        _Timor Mortis conturbat me_.\n\n    Since for the Death remeid is none,\n    Best is that we for Death dispone,\n    After our death that live may we:--\n        _Timor Mortis conturbat me_."
+  },
+  {
+   "title": "To Mistress Margery Wentworth",
+   "authorSlug": "skelton",
+   "author": "John Skelton",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    With margerain gentle,\n      The flower of goodlihead,\n    Embroidered the mantle\n      Is of your maidenhead.\n    Plainly I cannot glose;\n      Ye be, as I divine,\n    The pretty primrose,\n      The goodly columbine.\n\n    Benign, courteous, and meek,\n      With wordes well devised;\n    In you, who list to seek,\n      Be virtues well comprised.\n    With margerain gentle,\n      The flower of goodlihead,\n    Embroidered the mantle\n      Is of your maidenhead."
+  },
+  {
+   "title": "To Mistress Margaret Hussey",
+   "authorSlug": "skelton",
+   "author": "John Skelton",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "      Merry Margaret\n      As midsummer flower,\n      Gentle as falcon\n      Or hawk of the tower:\n    With solace and gladness,\n    Much mirth and no madness,\n    All good and no badness;\n        So joyously,\n        So maidenly,\n        So womanly\n        Her demeaning\n        In every thing,\n        Far, far passing\n        That I can indite,\n        Or suffice to write\n      Of Merry Margaret\n      As midsummer flower,\n      Gentle as falcon\n      Or hawk of the tower.\n      As patient and still\n      And as full of good will\n      As fair Isaphill,\n      Coliander,\n      Sweet pomander,\n      Good Cassander;\n      Steadfast of thought,\n      Well made, well wrought,\n      Far may be sought,\n      Ere that ye can find\n      So courteous, so kind\n      As merry Margaret,\n      This midsummer flower,\n      Gentle as falcon\n      Or hawk of the tower."
+  },
+  {
+   "title": "The True Knight",
+   "authorSlug": "hawes",
+   "author": "Stephen Hawes",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    For knighthood is not in the feats of warre,\n      As for to fight in quarrel right or wrong,\n    But in a cause which truth can not defarre:\n      He ought himself for to make sure and strong,\n      Justice to keep mixt with mercý among:\n        And no quarrell a knight ought to take\n        But for a truth, or for the common’s sake."
+  },
+  {
+   "title": "An Epitaph",
+   "authorSlug": "hawes",
+   "author": "Stephen Hawes",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    O mortal folk, you may behold and see\n      How I lie here, sometime a mighty knight;\n    The end of joy and all prosperitee\n      Is death at last, thorough his course and might:\n      After the day there cometh the dark night,\n        For though the daye be never so long,\n        At last the bells ringeth to evensong."
+  },
+  {
+   "title": "Forget not yet",
+   "authorSlug": "wyatt",
+   "author": "Sir Thomas Wyatt",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "The Lover Beseecheth his Mistress not to Forget his Steadfast Faith and True Intent",
+   "text": "    Forget not yet the tried intent\n    Of such a truth as I have meant;\n    My great travail so gladly spent,\n    Forget not yet!\n\n    Forget not yet when first began\n    The weary life ye know, since whan\n    The suit, the service, none tell can;\n    Forget not yet!\n\n    Forget not yet the great assays,\n    The cruel wrong, the scornful ways,\n    The painful patience in delays,\n    Forget not yet!\n\n    Forget not! O, forget not this!--\n    How long ago hath been, and is,\n    The mind that never meant amiss--\n    Forget not yet!\n\n    Forget not then thine own approved,\n    The which so long hath thee so loved,\n    Whose steadfast faith yet never moved:\n    Forget not this!"
+  },
+  {
+   "title": "The Appeal",
+   "authorSlug": "wyatt",
+   "author": "Sir Thomas Wyatt",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "An Earnest Suit to his Unkind Mistress, not to Forsake him",
+   "text": "    And wilt thou leave me thus!\n    Say nay, say nay, for shame!\n    --To save thee from the blame\n    Of all my grief and grame.\n    And wilt thou leave me thus?\n        Say nay! say nay!\n\n    And wilt thou leave me thus,\n    That hath loved thee so long\n    In wealth and woe among:\n    And is thy heart so strong\n    As for to leave me thus?\n        Say nay! say nay!\n\n    And wilt thou leave me thus,\n    That hath given thee my heart\n    Never for to depart\n    Neither for pain nor smart:\n    And wilt thou leave me thus?\n        Say nay! say nay!\n\n    And wilt thou leave me thus,\n    And have no more pitye\n    Of him that loveth thee?\n    Alas, thy cruelty!\n    And wilt thou leave me thus?\n        Say nay! say nay!"
+  },
+  {
+   "title": "A Revocation",
+   "authorSlug": "wyatt",
+   "author": "Sir Thomas Wyatt",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    What should I say?\n    --Since Faith is dead.\n    And Truth away\n      From you is fled?\n      Should I be led\n        With doubleness?\n        Nay! nay! mistress.\n\n    I promised you,\n      And you promised me,\n    To be as true\n      As I would be.\n      But since I see\n        Your double heart,\n        Farewell my part!\n\n    Thought for to take\n      ’Tis not my mind;\n    But to forsake\n      One so unkind;\n      And as I find\n        So will I trust.\n        Farewell, unjust!\n\n    Can ye say nay\n      But that you said\n    That I alway\n      Should be obeyed?\n      And--thus betrayed\n        Or that I wist!\n        Farewell, unkist!"
+  },
+  {
+   "title": "They Flee from Me",
+   "authorSlug": "wyatt",
+   "author": "Sir Thomas Wyatt",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    They flee from me that sometime did me seek,\n      With naked foot stalking within my chamber:\n    Once have I seen them gentle, tame, and meek,\n      That now are wild, and do not once remember\n      That sometime they have put themselves in danger\n    To take bread at my hand; and now they range,\n    Busily seeking in continual change.\n\n    Thanked be fortune, it hath been otherwise\n      Twenty times better; but once especial--\n    In thin array: after a pleasant guise,\n      When her loose gown did from her shoulders fall,\n      And she me caught in her arms long and small,\n    And therewithal so sweetly did me kiss,\n    And softly said, ‘_Dear heart, how like you this?_’\n\n    It was no dream; for I lay broad awaking:\n      But all is turn’d now, through my gentleness,\n    Into a bitter fashion of forsaking;\n      And I have leave to go of her goodness;\n      And she also to use new-fangleness.\n    But since that I unkindly so am servèd,\n    ‘_How like you this?_’--what hath she now deservèd?"
+  },
+  {
+   "title": "To His Lute",
+   "authorSlug": "wyatt",
+   "author": "Sir Thomas Wyatt",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    My lute, awake! perform the last\n    Labour that thou and I shall waste,\n      And end that I have now begun;\n    For when this song is said and past,\n      My lute, be still, for I have done.\n\n    As to be heard where ear is none,\n    As lead to grave in marble stone,\n      My song may pierce her heart as soon:\n    Should we then sing, or sigh, or moan?\n      No, no, my lute! for I have done.\n\n    The rocks do not so cruelly\n    Repulse the waves continually,\n      As she my suit and affectiòn;\n    So that I am past remedy:\n      Whereby my lute and I have done.\n\n    Proud of the spoil that thou hast got\n    Of simple hearts thorough Love’s shot,\n      By whom, unkind, thou hast them won;\n    Think not he hath his bow forgot,\n      Although my lute and I have done.\n\n    Vengeance shall fall on thy disdain,\n    That makest but game of earnest pain:\n      Trow not alone under the sun\n    Unquit to cause thy lover’s plain,\n      Although my lute and I have done.\n\n    May chance thee lie wither’d and old\n    The winter nights that are so cold,\n      Plaining in vain unto the moon:\n    Thy wishes then dare not be told:\n      Care then who list! for I have done.\n\n    And then may chance thee to repent\n    The time that thou has lost and spent\n      To cause thy lover’s sigh and swoon:\n    Then shalt thou know beauty but lent,\n      And wish and want as I have done.\n\n    Now cease, my lute! this is the last\n    Labour that thou and I shall waste,\n      And ended is that we begun:\n    Now is this song both sung and past--\n      My lute, be still, for I have done."
+  },
+  {
+   "title": "Description of Spring",
+   "authorSlug": "surrey",
+   "author": "Henry Howard, Earl of Surrey",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": null,
+   "note": "Wherein each thing renews, save only the Lover",
+   "text": "    The soote season, that bud and bloom forth brings,\n    With green hath clad the hill and eke the vale:\n    The nightingale with feathers new she sings;\n    The turtle to her make hath told her tale.\n    Summer is come, for every spray now springs:\n    The hart hath hung his old head on the pale;\n    The buck in brake his winter coat he flings;\n    The fishes flete with new repairèd scale.\n\n    The adder all her slough away she slings;\n    The swift swallow pursueth the flies smale;\n    The busy bee her honey now she mings;\n    Winter is worn that was the flowers’ bale.\n\n    And thus I see among these pleasant things\n    Each care decays, and yet my sorrow springs."
+  },
+  {
+   "title": "Complaint of the Absence of Her Lover being upon the Sea",
+   "authorSlug": "surrey",
+   "author": "Henry Howard, Earl of Surrey",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    O happy dames! that may embrace\n      The fruit of your delight,\n    Help to bewail the woful case\n      And eke the heavy plight\n    Of me, that wonted to rejoice\n    The fortune of my pleasant choice:\n    Good ladies, help to fill my mourning voice.\n\n    In ship, freight with rememberance\n      Of thoughts and pleasures past,\n    He sails that hath in governance\n      My life while it will last:\n    With scalding sighs, for lack of gale,\n    Furthering his hope, that is his sail,\n    Toward me, the swete port of his avail,\n\n    Alas! how oft in dreams I see\n      Those eyes that were my food;\n    Which sometime so delighted me,\n      That yet they do me good:\n    Wherewith I wake with his return\n    Whose absent flame did make me burn:\n    But when I find the lack, Lord! how I mourn!\n\n    When other lovers in arms across\n      Rejoice their chief delight,\n    Drownèd in tears, to mourn my loss\n      I stand the bitter night\n    In my window where I may see\n    Before the winds how the clouds flee:\n    Lo! what a mariner love hath made me!\n\n    And in green waves when the salt flood\n      Doth rise by rage of wind,\n    A thousand fancies in that mood\n      Assail my restless mind.\n    Alas! now drencheth my sweet foe,\n    That with the spoil of my heart did go,\n    And left me; but alas! why did he so?\n\n    And when the seas wax calm again\n      To chase fro me annoy,\n    My doubtful hope doth cause me plain;\n      So dread cuts off my joy.\n    Thus is my wealth mingled with woe\n    And of each thought a doubt doth grow;\n    --Now he comes! Will he come? Alas! no, no.\n\n     _40._ drencheth] i.e. is drenched or drowned."
+  },
+  {
+   "title": "The Means to attain Happy Life",
+   "authorSlug": "surrey",
+   "author": "Henry Howard, Earl of Surrey",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Martial, the things that do attain\n    The happy life be these, I find:--\n    The richesse left, not got with pain;\n      The fruitful ground, the quiet mind;\n    The equal friend; no grudge, no strife;\n      No charge of rule, nor governance;\n    Without disease, the healthful life;\n      The household of continuance;\n\n    The mean diet, no delicate fare;\n      True wisdom join’d with simpleness;\n    The night dischargèd of all care,\n      Where wine the wit may not oppress.\n\n    The faithful wife, without debate;\n      Such sleeps as may beguile the night:\n    Contented with thine own estate\n      Ne wish for death, ne fear his might."
+  },
+  {
+   "title": "A Bequest of His Heart",
+   "authorSlug": "scott",
+   "author": "Alexander Scott",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Hence, heart, with her that must depart,\n      And hald thee with thy soverane!\n    For I had liever want ane heart.\n      Nor have the heart that dois me pain.\n      Therefore, go, with thy luve remain,\n    And let me leif thus unmolest;\n      And see that thou come not again,\n    But bide with her thou luvis best.\n\n    Sen she that I have servit lang\n      Is to depart so suddenly,\n    Address thee now, for thou sall gang\n      And bear thy lady company.\n\n      Fra she be gone, heartless am I,\n    For quhy? thou art with her possest.\n      Therefore, my heart, go hence in high,\n    And bide with her thou luvis best.\n\n    Though this belappit body here\n      Be bound to servitude and thrall,\n    My faithful heart is free entier\n      And mind to serve my lady at all.\n      Would God that I were perigall\n    Under that redolent rose to rest!\n      Yet at the least, my heart, thou sall\n    Abide with her thou luvis best.\n\n    Sen in your garth the lily quhyte\n      May not remain amang the laif,\n    Adieu the flower of whole delite!\n      Adieu the succour that may me saif!\n      Adieu the fragrant balme suaif,\n    And lamp of ladies lustiest!\n      My faithful heart she shall it haif\n    To bide with her it luvis best.\n\n    Deploir, ye ladies cleir of hue,\n      Her absence, sen she must depart!\n    And, specially, ye luveris true\n      That wounded bene with Luvis dart.\n      For some of you sall want ane heart\n    As well as I; therefore at last\n      Do go with mine, with mind inwart,\n    And bide with her thou luvis best!\n\n     belappit] downtrodden. perigall] made equal to, privileged. garth]\n     garden-close. laif] rest. with mind inwart] with inner mind, i.e.\n     in spirit."
+  },
+  {
+   "title": "A Rondel of Love",
+   "authorSlug": "scott",
+   "author": "Alexander Scott",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Lo, quhat it is to love\n      Learn ye that list to prove,\n    By me, I say, that no ways may\n      The ground of grief remove,\n    But still decay both nicht and day:\n      Lo, quhat it is to love!\n\n      Love is ane fervent fire\n      Kindlit without desire,\n    Short pleasure, long displeasure,\n      Repentance is the hire;\n    Ane pure tressour without measour;\n      Love is ane fervent fire.\n\n      To love and to be wise,\n      To rage with good advice;\n    Now thus, now than, so gois the game,\n      Incertain is the dice;\n    There is no man, I say, that can\n      Both love and to be wise.\n\n      Flee always from the snare,\n      Learn at me to beware;\n    It is ane pain, and double trane\n      Of endless woe and care;\n    For to refrain that danger plain,\n      Flee always from the snare."
   }
  ],
  "works": [
