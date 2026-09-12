@@ -7,9 +7,38 @@
   let POETS = {};      // slug -> poet
   let WORKS = {};      // slug -> work
   let POEM_IDX = new Map(); // poem object -> index
+  let CATEGORY_STATS = {}; // category name -> { poems, works }
 
   const esc = (s) => String(s == null ? "" : s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+  // ---------- era/category taxonomy ----------
+  // Umbrella categories applied to every poet's `category` field (see poems.json).
+  // Order here is the display/chronological order used on the home page.
+  const CATEGORY_ORDER = [
+    "Ancient Greek & Roman",
+    "Medieval",
+    "Tudor & Elizabethan",
+    "Metaphysical & Cavalier",
+    "Romantic",
+    "Victorian",
+    "American",
+  ];
+  const CATEGORY_SLUGS = {
+    "Ancient Greek & Roman": "ancient-greek-roman",
+    "Medieval": "medieval",
+    "Tudor & Elizabethan": "tudor-elizabethan",
+    "Metaphysical & Cavalier": "metaphysical-cavalier",
+    "Romantic": "romantic",
+    "Victorian": "victorian",
+    "American": "american",
+  };
+  const SLUG_TO_CATEGORY = Object.fromEntries(Object.entries(CATEGORY_SLUGS).map(([k, v]) => [v, k]));
+  const EPICS_SLUG = "epics";
+  // "Epics" is a cross-cutting tag derived from each work's existing `type` field
+  // (e.g. "Epic poem", "Heroic poem", "Historical epic") rather than a duplicated
+  // boolean flag in the data — one regex here keeps poems.json untouched.
+  const isEpicWork = (w) => /\b(epic|heroic poem)\b/i.test(w.type || "");
 
   fetch("poems.json")
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -18,6 +47,12 @@
       d.poets.forEach((p) => { POETS[p.slug] = p; });
       (d.works || []).forEach((w) => { WORKS[w.slug] = w; });
       d.poems.forEach((p, i) => POEM_IDX.set(p, i));
+      d.poets.forEach((p) => {
+        if (!p.category) return;
+        const s = (CATEGORY_STATS[p.category] = CATEGORY_STATS[p.category] || { poems: 0, works: 0 });
+        s.poems += p.poemCount || 0;
+        s.works += p.workCount || 0;
+      });
       const fc = document.getElementById("foot-count"); if (fc) fc.textContent = d.count;
       const fp = document.getElementById("foot-poets"); if (fp) fp.textContent = d.poets.length;
       wireSearch();
@@ -58,6 +93,7 @@
     else if ((m = h.match(/^#\/work\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderWorkSection(m[1], parseInt(m[2], 10)); }
     else if ((m = h.match(/^#\/work\/([\w-]+)$/))) { setRoute("poems", "sub"); renderWork(m[1]); }
     else if ((m = h.match(/^#\/poet\/([\w-]+)$/))) { setRoute("poets", "sub"); renderPoet(m[1]); }
+    else if ((m = h.match(/^#\/category\/([\w-]+)$/))) { setRoute("poems", "sub"); renderCategory(m[1]); }
     else if (h.startsWith("#/poets")) { setRoute("poets", "sub"); renderPoets(); }
     else if (h.startsWith("#/topics")) { setRoute("topics", "sub"); renderTopics(); }
     else if (h.startsWith("#/about")) { setRoute("about", "sub"); renderAbout(); }
@@ -102,31 +138,58 @@
       <span class="work-flag">Read in ${w.sections.length} parts →</span>
     </button>`;
 
-  // ---------- HOME: curated highlights ----------
-  const FEATURED = [
-    ["blake", "The Tyger"],
-    ["blake", "London"],
-    ["milton", "Sonnet 19: When I Consider How My Light Is Spent"],
-    ["herbert", "The Collar."],
-    ["marvell", "To his Coy Mistress."],
-    ["herrick", "To the Virgins, to make much of Time."],
-    ["byron", "She Walks in Beauty"],
-    ["shelley", "Ozymandias"],
-    ["keats", "Ode on a Grecian Urn"],
-    ["wordsworth", "I Wandered Lonely as a Cloud"],
-  ];
+  // ---------- HOME: browse by era ----------
   function renderHome() {
-    const featured = FEATURED
-      .map(([slug, title]) => DATA.poems.map((p, i) => ({ p, i })).find(({ p }) => p.authorSlug === slug && p.title === title))
-      .filter(Boolean);
-    const works = DATA.works || [];
+    const epicCount = (DATA.works || []).filter(isEpicWork).length;
+    const tiles = CATEGORY_ORDER.map((cat) => {
+      const stats = CATEGORY_STATS[cat] || { poems: 0, works: 0 };
+      return `
+        <button class="topic-card" data-category="${esc(CATEGORY_SLUGS[cat])}">
+          <p class="tc-name">${esc(cat)}</p>
+          <p class="tc-count">${stats.poems} poem${stats.poems === 1 ? "" : "s"}${stats.works ? " · " + stats.works + " work" + (stats.works === 1 ? "" : "s") : ""}</p>
+        </button>`;
+    }).join("");
     app.innerHTML = `
-      <div class="page-head"><h1 class="page-title">Highlights</h1><p class="page-sub">A starting shelf — the full archive holds ${DATA.count} poems.</p></div>
+      <div class="page-head"><h1 class="page-title">Browse by Era</h1><p class="page-sub">${DATA.count} poems across ${DATA.poets.length} poets, sorted into the ages that shaped them.</p></div>
+      <div class="topic-grid">
+        ${tiles}
+        <button class="topic-card epics-tile" data-category="${EPICS_SLUG}">
+          <p class="tc-name">Epics</p>
+          <p class="tc-count">${epicCount} work${epicCount === 1 ? "" : "s"} · every era</p>
+        </button>
+      </div>
+      <div class="browse-all"><a href="#/poems" class="read-link">Or browse all ${DATA.count} poems →</a></div>`;
+    app.querySelectorAll(".topic-card[data-category]").forEach((c) =>
+      c.addEventListener("click", () => { location.hash = "#/category/" + c.dataset.category; }));
+  }
+
+  // ---------- CATEGORY: filtered era (or cross-cutting "epics") view ----------
+  function renderCategory(slug) {
+    const isEpics = slug === EPICS_SLUG;
+    const catName = isEpics ? "Epics" : SLUG_TO_CATEGORY[slug];
+    if (!catName) { location.hash = "#/"; return; }
+
+    const works = isEpics
+      ? (DATA.works || []).filter(isEpicWork)
+      : (DATA.works || []).filter((w) => POETS[w.authorSlug] && POETS[w.authorSlug].category === catName);
+    const poems = isEpics
+      ? []
+      : DATA.poems.map((p, i) => ({ p, i })).filter(({ p }) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
+    poems.sort((a, b) => sortKey(a.p.title).localeCompare(sortKey(b.p.title)));
+
+    const sub = isEpics
+      ? `${works.length} epic work${works.length === 1 ? "" : "s"}, spanning every era in the archive.`
+      : `${poems.length} poem${poems.length === 1 ? "" : "s"}${works.length ? " · " + works.length + " work" + (works.length === 1 ? "" : "s") : ""}.`;
+
+    app.innerHTML = `
+      <button class="back" id="back">← Browse by Era</button>
+      <div class="page-head"><h1 class="page-title">${esc(catName)}</h1><p class="page-sub">${sub}</p></div>
       <div class="grid">
         ${works.map(workCardHTML).join("")}
-        ${featured.map(({ p, i }) => cardHTML(p, i)).join("")}
-      </div>
-      <div class="browse-all"><a href="#/poems" class="read-link">Browse all ${DATA.count} poems →</a></div>`;
+        ${poems.map(({ p, i }) => cardHTML(p, i)).join("")}
+        ${!works.length && !poems.length ? `<p class="empty">Nothing filed here yet.</p>` : ""}
+      </div>`;
+    document.getElementById("back").addEventListener("click", () => { location.hash = "#/"; });
     app.querySelectorAll(".work-card").forEach((c) => c.addEventListener("click", () => { location.hash = "#/work/" + c.dataset.work; }));
     bindCards();
   }

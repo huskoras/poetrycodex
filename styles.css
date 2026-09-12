@@ -196,6 +196,8 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 .topic-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--line-strong); }
 .topic-card .tc-name { font-family: var(--serif); font-size: 1.5rem; font-weight: 500; color: var(--ink); margin: 0; line-height: 1.15; }
 .topic-card .tc-count { font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-top: .6rem; }
+.topic-card.epics-tile { border-left: 4px solid var(--gold); background: linear-gradient(180deg, var(--surface) 0%, var(--surface-alt) 100%); }
+.topic-card.epics-tile .tc-count { color: var(--gold); }
 
 .empty { text-align: center; color: var(--faint); font-family: var(--serif); font-style: italic; font-size: 1.2rem; padding: 4rem 0; }
 
