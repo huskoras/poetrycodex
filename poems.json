@@ -1,5 +1,5 @@
 {
- "count": 9071,
+ "count": 9089,
  "poets": [
   {
    "slug": "beowulf-poet",
@@ -244,6 +244,90 @@
    ],
    "poemCount": 93,
    "workCount": 1
+  },
+  {
+   "slug": "lodge",
+   "name": "Thomas Lodge",
+   "dates": "1557–1625",
+   "era": "Elizabethan",
+   "portrait": null,
+   "credit": "No confirmed portrait sourced for this archive.",
+   "bio": [
+    "Thomas Lodge was an English poet, dramatist and prose romancer whose pastoral romance ‘Rosalynde’ (1590) later supplied Shakespeare with the plot of ‘As You Like It.’",
+    "His lyric poems, many embedded as songs within his prose fictions, are prized for their musicality and pastoral grace."
+   ],
+   "poemCount": 2,
+   "workCount": 0
+  },
+  {
+   "slug": "greene",
+   "name": "Robert Greene",
+   "dates": "1558–1592",
+   "era": "Elizabethan",
+   "portrait": "poets/greene.jpg",
+   "credit": "Portrait of Robert Greene — Public domain (Wikimedia Commons)",
+   "bio": [
+    "Robert Greene was an Elizabethan playwright, pamphleteer and poet, notorious in his own time for his dissolute life and for a posthumous pamphlet often read as an attack on the young William Shakespeare.",
+    "His lyric poems, many sung by characters in his prose romances, are notable for their pastoral grace and simplicity."
+   ],
+   "poemCount": 3,
+   "workCount": 0
+  },
+  {
+   "slug": "southwell",
+   "name": "Robert Southwell",
+   "dates": "1561–1595",
+   "era": "Elizabethan",
+   "portrait": "poets/southwell.jpg",
+   "credit": "Portrait of Robert Southwell — Public domain (Wikimedia Commons)",
+   "bio": [
+    "Robert Southwell was an English Jesuit priest and poet who was arrested, tortured and executed for treason under Elizabeth I because of his underground Catholic ministry.",
+    "His devotional verse, most famously ‘The Burning Babe,’ was admired even by contemporaries hostile to his faith."
+   ],
+   "poemCount": 2,
+   "workCount": 0
+  },
+  {
+   "slug": "campion",
+   "name": "Thomas Campion",
+   "dates": "1567–1620",
+   "era": "Elizabethan",
+   "portrait": "poets/campion.jpg",
+   "credit": "Portrait of Thomas Campion — Public domain (Wikimedia Commons)",
+   "bio": [
+    "Thomas Campion was an English composer, physician and poet who wrote and set to music his own delicate, classically influenced lyrics.",
+    "He also published a treatise arguing for quantitative, unrhymed verse in English, though his own most enduring songs are rhymed airs."
+   ],
+   "poemCount": 9,
+   "workCount": 0
+  },
+  {
+   "slug": "davies",
+   "name": "Sir John Davies",
+   "dates": "1569–1626",
+   "era": "Elizabethan",
+   "portrait": null,
+   "credit": "No confirmed portrait sourced for this archive.",
+   "bio": [
+    "Sir John Davies was an English poet, lawyer and politician who later served as Attorney General for Ireland.",
+    "He is best remembered for ‘Nosce Teipsum,’ a long philosophical poem on the nature of the soul, and for witty, compact epigrams on the paradox of human self-knowledge."
+   ],
+   "poemCount": 1,
+   "workCount": 0
+  },
+  {
+   "slug": "barnfield",
+   "name": "Richard Barnfield",
+   "dates": "1574–1620",
+   "era": "Elizabethan",
+   "portrait": null,
+   "credit": "No confirmed portrait sourced for this archive.",
+   "bio": [
+    "Richard Barnfield was an English poet whose pastoral and erotic verse, including ‘The Affectionate Shepherd,’ was controversial in its own time for its open homoeroticism.",
+    "Some of his lyrics, including ‘As it fell upon a day,’ were long misattributed to his contemporary William Shakespeare."
+   ],
+   "poemCount": 1,
+   "workCount": 0
   },
   {
    "slug": "marlowe",
@@ -1184,11 +1268,11 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2272
+   "count": 2273
   },
   {
    "name": "Love",
-   "count": 2105
+   "count": 2115
   },
   {
    "name": "Nature",
@@ -1196,7 +1280,7 @@
   },
   {
    "name": "Religion",
-   "count": 1285
+   "count": 1286
   },
   {
    "name": "Death & Dying",
@@ -1208,7 +1292,7 @@
   },
   {
    "name": "Relationships",
-   "count": 330
+   "count": 331
   },
   {
    "name": "Arts & Sciences",
@@ -1216,11 +1300,11 @@
   },
   {
    "name": "Time & Brevity",
-   "count": 182
+   "count": 183
   },
   {
    "name": "The Mind",
-   "count": 135
+   "count": 137
   },
   {
    "name": "Social Commentaries",
@@ -1228,7 +1312,7 @@
   },
   {
    "name": "Mythology & Folklore",
-   "count": 1
+   "count": 3
   },
   {
    "name": "The Body",
@@ -110096,6 +110180,222 @@
    "collection": "Amoretti",
    "note": "",
    "text": "Lyke as the culver on the bared bough\nSits mourning for the absence of her mate,\nAnd in her songs sends many a wishful vow\nFor his returne, that seemes to linger late,\nSo I alone, now left disconsolate,\nMourne to my selfe the absence of my Love;\nAnd wandring here and there all desolate,\nSeek with my playnts to match that mournful dove\nNe ioy of ought that under heaven doth hove,\nCan comfort me, but her owne ioyous sight,\nWhose sweet aspect both God and man can move,\nIn her unspotted pleasauns to delight.\n  Dark is my day, whyles her fayre light I mis,\n  And dead my life that wants such lively blis."
+  },
+  {
+   "title": "Rosalind’s Madrigal",
+   "authorSlug": "lodge",
+   "author": "Thomas Lodge",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Love in my bosom like a bee\n          Doth suck his sweet:\n    Now with his wings he plays with me,\n          Now with his feet.\n    Within mine eyes he makes his nest,\n    His bed amidst my tender breast;\n    My kisses are his daily feast,\n    And yet he robs me of my rest:\n          Ah! wanton, will ye?\n\n    And if I sleep, then percheth he\n          With pretty flight,\n    And makes his pillow of my knee\n          The livelong night.\n    Strike I my lute, he tunes the string;\n    He music plays if so I sing;\n    He lends me every lovely thing,\n    Yet cruel he my heart doth sting:\n          Whist, wanton, still ye!\n\n    Else I with roses every day\n          Will whip you hence,\n    And bind you, when you long to play,\n          For your offence.\n    I’ll shut mine eyes to keep you in;\n    I’ll make you fast it for your sin;\n    I’ll count your power not worth a pin.\n    --Alas! what hereby shall I win\n          If he gainsay me?\n\n    What if I beat the wanton boy\n          With many a rod?\n    He will repay me with annoy,\n          Because a god.\n    Then sit thou safely on my knee;\n    Then let thy bower my bosom be;\n    Lurk in mine eyes, I like of thee;\n    O Cupid, so thou pity me,\n          Spare not, but play thee!\n\n_98._ _Phillis_ I\n\n    My Phillis hath the morning sun\n      At first to look upon her;\n    And Phillis hath morn-waking birds\n      Her risings still to honour.\n    My Phillis hath prime-feather’d flowers,\n      That smile when she treads on them;\n    And Phillis hath a gallant flock,\n      That leaps since she doth own them.\n    But Phillis hath too hard a heart,\n      Alas that she should have it!\n    It yields no mercy to desert,\n      Nor grace to those that crave it.\n\n_99._ _Phillis_ 2\n\n    Love guards the roses of thy lips\n      And flies about them like a bee;\n    If I approach he forward skips,\n      And if I kiss he stingeth me.\n\n    Love in thine eyes doth build his bower,\n      And sleeps within their pretty shine;\n    And if I look the boy will lower,\n      And from their orbs shoot shafts divine.\n\n    Love works thy heart within his fire,\n      And in my tears doth firm the same;\n    And if I tempt it will retire,\n      And of my plaints doth make a game.\n\n    Love, let me cull her choicest flowers;\n      And pity me, and calm her eye;\n    Make soft her heart, dissolve her lowers\n      Then will I praise thy deity.\n\n    But if thou do not, Love, I’ll truly serve her\n    In spite of thee, and by firm faith deserve her."
+  },
+  {
+   "title": "Rosaline",
+   "authorSlug": "lodge",
+   "author": "Thomas Lodge",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Like to the clear in highest sphere\n      Where all imperial glory shines,\n    Of selfsame colour is her hair\n      Whether unfolded or in twines:\n          Heigh ho, fair Rosaline!\n    Her eyes are sapphires set in snow,\n      Resembling heaven by every wink;\n    The gods do fear whenas they glow,\n      And I do tremble when I think\n          Heigh ho, would she were mine!\n\n    Her cheeks are like the blushing cloud\n      That beautifies Aurora’s face,\n    Or like the silver crimson shroud\n      That Phœbus’ smiling looks doth grace.\n          Heigh ho, fair Rosaline!\n    Her lips are like two budded roses\n      Whom ranks of lilies neighbour nigh,\n    Within whose bounds she balm encloses\n      Apt to entice a deity:\n          Heigh ho, would she were mine!\n\n    Her neck like to a stately tower\n      Where Love himself imprison’d lies,\n    To watch for glances every hour\n      From her divine and sacred eyes:\n          Heigh ho, fair Rosaline!\n    Her paps are centres of delight,\n      Her breasts are orbs of heavenly frame,\n    Where Nature moulds the dew of light\n      To feed perfection with the same:\n          Heigh ho, would she were mine!\n\n    With orient pearl, with ruby red,\n      With marble white, with sapphire blue,\n    Her body every way is fed,\n      Yet soft to touch and sweet in view:\n          Heigh ho, fair Rosaline!\n    Nature herself her shape admires;\n      The gods are wounded in her sight;\n    And Love forsakes his heavenly fires\n      And at her eyes his brand doth light:\n          Heigh ho, would she were mine!\n\n    Then muse not, Nymphs, though I bemoan\n      The absence of fair Rosaline,\n    Since for a fair there’s fairer none,\n      Nor for her virtues so divine:\n          Heigh ho, fair Rosaline!\n    Heigh ho, my heart! would God that she were mine!"
+  },
+  {
+   "title": "Samela",
+   "authorSlug": "greene",
+   "author": "Robert Greene",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Like to Diana in her summer weed,\n      Girt with a crimson robe of brightest dye,\n            Goes fair Samela.\n    Whiter than be the flocks that straggling feed\n      When wash’d by Arethusa faint they lie,\n            Is fair Samela.\n    As fair Aurora in her morning grey,\n      Deck’d with the ruddy glister of her love\n            Is fair Samela;\n    Like lovely Thetis on a calmèd day\n      Whenas her brightness Neptune’s fancy move,\n            Shines fair Samela.\n\n    Her tresses gold, her eyes like glassy streams,\n      Her teeth are pearl, the breasts are ivory\n            Of fair Samela;\n    Her cheeks like rose and lily yield forth gleams;\n      Her brows bright arches framed of ebony.\n            Thus fair Samela\n    Passeth fair Venus in her bravest hue,\n      And Juno in the show of majesty\n            (For she’s Samela!),\n    Pallas in wit,--all three, if you well view,\n      For beauty, wit, and matchless dignity,\n            Yield to Samela."
+  },
+  {
+   "title": "Fawnia",
+   "authorSlug": "greene",
+   "author": "Robert Greene",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Ah! were she pitiful as she is fair,\n    Or but as mild as she is seeming so,\n    Then were my hopes greater than my despair,\n    Then all the world were heaven, nothing woe.\n    Ah! were her heart relenting as her hand,\n    That seems to melt even with the mildest touch,\n    Then knew I where to seat me in a land\n    Under wide heavens, but yet there is not such.\n    So as she shows she seems the budding rose,\n    Yet sweeter far than is an earthly flower;\n    Sovran of beauty, like the spray she grows;\n    Compass’d she is with thorns and canker’d flower.\n      Yet were she willing to be pluck’d and worn,\n      She would be gather’d, though she grew on thorn.\n\n    Ah! when she sings, all music else be still,\n    For none must be comparèd to her note;\n    Ne’er breathed such glee from Philomela’s bill,\n    Nor from the morning-singer’s swelling throat.\n    Ah! when she riseth from her blissful bed\n    She comforts all the world as doth the sun,\n    And at her sight the night’s foul vapour’s fled;\n    When she is set the gladsome day is done.\n      O glorious sun, imagine me the west,\n      Shine in my arms, and set thou in my breast!"
+  },
+  {
+   "title": "Sephestia’s Lullaby",
+   "authorSlug": "greene",
+   "author": "Robert Greene",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Weep not, my wanton, smile upon my knee;\n    When thou art old there’s grief enough for thee.\n          Mother’s wag, pretty boy,\n          Father’s sorrow, father’s joy;\n          When thy father first did see\n          Such a boy by him and me,\n          He was glad, I was woe;\n          Fortune changèd made him so,\n          When he left his pretty boy,\n          Last his sorrow, first his joy.\n\n    Weep not, my wanton, smile upon my knee;\n    When thou art old there’s grief enough for thee.\n          Streaming tears that never stint,\n          Like pearl-drops from a flint,\n          Fell by course from his eyes,\n          That one another’s place supplies;\n          Thus he grieved in every part,\n          Tears of blood fell from his heart,\n          When he left his pretty boy,\n          Father’s sorrow, father’s joy.\n\n    Weep not, my wanton, smile upon my knee;\n    When thou art old there’s grief enough for thee.\n          The wanton smiled, father wept,\n          Mother cried, baby leapt;\n          More he crow’d, more we cried,\n          Nature could not sorrow hide:\n          He must go, he must kiss\n          Child and mother, baby bliss,\n          For he left his pretty boy,\n          Father’s sorrow, father’s joy.\n\n    Weep not, my wanton, smile upon my knee,\n    When thou art old there’s grief enough for thee."
+  },
+  {
+   "title": "Times go by Turns",
+   "authorSlug": "southwell",
+   "author": "Robert Southwell",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    The loppèd tree in time may grow again,\n    Most naked plants renew both fruit and flower;\n    The sorest wight may find release of pain,\n    The driest soil suck in some moist’ning shower;\n    Times go by turns and chances change by course,\n    From foul to fair, from better hap to worse.\n\n    The sea of Fortune doth not ever flow,\n    She draws her favours to the lowest ebb;\n    Her tides hath equal times to come and go,\n    Her loom doth weave the fine and coarsest web;\n    No joy so great but runneth to an end,\n    No hap so hard but may in fine amend.\n\n    Not always fall of leaf nor ever spring,\n    No endless night yet not eternal day;\n    The saddest birds a season find to sing,\n    The roughest storm a calm may soon allay:\n    Thus with succeeding turns God tempereth all,\n    That man may hope to rise, yet fear to fall.\n\n    A chance may win that by mischance was lost;\n    The net that holds no great, takes little fish;\n    In some things all, in all things none are crost,\n    Few all they need, but none have all they wish;\n    Unmeddled joys here to no man befall:\n    Who least, hath some; who most, hath never all."
+  },
+  {
+   "title": "The Burning Babe",
+   "authorSlug": "southwell",
+   "author": "Robert Southwell",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    As I in hoary winter’s night\n      Stood shivering in the snow,\n    Surprised I was with sudden heat\n      Which made my heart to glow;\n    And lifting up a fearful eye\n      To view what fire was near,\n    A pretty babe all burning bright\n      Did in the air appear;\n    Who, scorchèd with excessive heat,\n      Such floods of tears did shed,\n    As though His floods should quench His flames,\n      Which with His tears were bred:\n    ‘Alas!’ quoth He, ‘but newly born\n      In fiery heats I fry,\n    Yet none approach to warm their hearts\n      Or feel my fire but I!\n\n    ‘My faultless breast the furnace is;\n      The fuel, wounding thorns;\n    Love is the fire, and sighs the smoke;\n      The ashes, shames and scorns;\n    The fuel Justice layeth on,\n      And Mercy blows the coals,\n    The metal in this furnace wrought\n      Are men’s defilèd souls:\n    For which, as now on fire I am\n      To work them to their good,\n    So will I melt into a bath,\n      To wash them in my blood.’\n    With this He vanish’d out of sight\n      And swiftly shrunk away,\n    And straight I callèd unto mind\n      That it was Christmas Day."
+  },
+  {
+   "title": "Cherry-Ripe",
+   "authorSlug": "campion",
+   "author": "Thomas Campion",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    There is a garden in her face\n      Where roses and white lilies blow;\n    A heavenly paradise is that place,\n      Wherein all pleasant fruits do flow:\n        There cherries grow which none may buy\n        Till ‘Cherry-ripe’ themselves do cry.\n\n    Those cherries fairly do enclose\n      Of orient pearl a double row,\n    Which when her lovely laughter shows,\n      They look like rose-buds fill’d with snow;\n        Yet them nor peer nor prince can buy\n        Till ‘Cherry-ripe’ themselves do cry.\n\n    Her eyes like angels watch them still;\n      Her brows like bended bows do stand,\n    Threat’ning with piercing frowns to kill\n      All that attempt with eye or hand\n        Those sacred cherries to come nigh,\n        Till ‘Cherry-ripe’ themselves do cry."
+  },
+  {
+   "title": "Laura",
+   "authorSlug": "campion",
+   "author": "Thomas Campion",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "      Rose-cheek’d _Laura_, come;\n    Sing thou smoothly with thy beauty’s\n    Silent music, either other\n            Sweetly gracing.\n\n      Lovely forms do flow\n    From concent divinely framèd:\n    Heaven is music, and thy beauty’s\n            Birth is heavenly.\n\n      These dull notes we sing\n    Discords need for helps to grace them;\n    Only beauty purely loving\n            Knows no discord;\n\n      But still moves delight,\n    Like clear springs renew’d by flowing,\n    Ever perfect, ever in them-\n            selves eternal."
+  },
+  {
+   "title": "Devotion, Part i",
+   "authorSlug": "campion",
+   "author": "Thomas Campion",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Follow thy fair sun, unhappy shadow!\n      Though thou be black as night,\n      And she made all of light,\n    Yet follow thy fair sun, unhappy shadow!\n\n    Follow her, whose light thy light depriveth!\n      Though here thou liv’st disgraced,\n      And she in heaven is placed,\n    Yet follow her whose light the world reviveth!\n\n    Follow those pure beams, whose beauty burneth!\n      That so have scorchèd thee\n      As thou still black must be,\n    Till her kind beams thy black to brightness turneth.\n\n    Follow her, while yet her glory shineth!\n      There comes a luckless night\n      That will dim all her light;\n    And this the black unhappy shade divineth.\n\n    Follow still, since so thy fates ordainèd!\n      The sun must have his shade,\n      Till both at once do fade,--\n    The sun still proud, the shadow still disdainèd."
+  },
+  {
+   "title": "Devotion, Part ii",
+   "authorSlug": "campion",
+   "author": "Thomas Campion",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Follow your saint, follow with accents sweet!\n    Haste you, sad notes, fall at her flying feet!\n    There, wrapt in cloud of sorrow, pity move,\n    And tell the ravisher of my soul I perish for her love:\n    But if she scorns my never-ceasing pain,\n    Then burst with sighing in her sight, and ne’er return again!\n\n    All that I sung still to her praise did tend;\n    Still she was first, still she my songs did end;\n    Yet she my love and music both doth fly,\n    The music that her echo is and beauty’s sympathy:\n    Then let my notes pursue her scornful flight!\n    It shall suffice that they were breathed and died for her delight."
+  },
+  {
+   "title": "Vobiscum est Iope",
+   "authorSlug": "campion",
+   "author": "Thomas Campion",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    When thou must home to shades of underground,\n    And there arrived, a new admirèd guest,\n    The beauteous spirits do engirt thee round,\n    White Iope, blithe Helen, and the rest,\n    To hear the stories of thy finish’d love\n    From that smooth tongue whose music hell can move;\n\n    Then wilt thou speak of banqueting delights,\n    Of masques and revels which sweet youth did make,\n    Of tourneys and great challenges of knights,\n    And all these triumphs for thy beauty’s sake:\n    When thou hast told these honours done to thee,\n    Then tell, O tell, how thou didst murder me!"
+  },
+  {
+   "title": "Hymn in Praise of Neptune",
+   "authorSlug": "campion",
+   "author": "Thomas Campion",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Of Neptune’s empire let us sing,\n    At whose command the waves obey;\n    To whom the rivers tribute pay,\n    Down the high mountains sliding:\n    To whom the scaly nation yields\n    Homage for the crystal fields\n        Wherein they dwell:\n    And every sea-dog pays a gem\n    Yearly out of his wat’ry cell\n    To deck great Neptune’s diadem.\n\n    The Tritons dancing in a ring\n    Before his palace gates do make\n    The water with their echoes quake,\n    Like the great thunder sounding:\n    The sea-nymphs chant their accents shrill,\n    And the sirens, taught to kill\n        With their sweet voice,\n    Make ev’ry echoing rock reply\n    Unto their gentle murmuring noise\n    The praise of Neptune’s empery."
+  },
+  {
+   "title": "Winter Nights",
+   "authorSlug": "campion",
+   "author": "Thomas Campion",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "          Now winter nights enlarge\n            The number of their hours,\n          And clouds their storms discharge\n            Upon the airy towers.\n          Let now the chimneys blaze\n            And cups o’erflow with wine;\n          Let well-tuned words amaze\n            With harmony divine.\n          Now yellow waxen lights\n            Shall wait on honey love,\n    While youthful revels, masques, and courtly sights\n            Sleep’s leaden spells remove.\n\n          This time doth well dispense\n            With lovers’ long discourse;\n          Much speech hath some defence\n            Though beauty no remorse.\n          All do not all things well;\n            Some measures comely tread,\n          Some knotted riddles tell,\n            Some poems smoothly read.\n          The summer hath his joys,\n            And winter his delights;\n    Though love and all his pleasures are but toys,\n            They shorten tedious nights."
+  },
+  {
+   "title": "Integer Vitae",
+   "authorSlug": "campion",
+   "author": "Thomas Campion",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    The man of life upright,\n      Whose guiltless heart is free\n    From all dishonest deeds,\n      Or thought of vanity;\n\n    The man whose silent days\n      In harmless joys are spent,\n    Whom hopes cannot delude,\n      Nor sorrow discontent;\n\n    That man needs neither towers\n      Nor armour for defence,\n    Nor secret vaults to fly\n      From thunder’s violence:\n\n    He only can behold\n      With unaffrighted eyes\n    The horrors of the deep\n      And terrors of the skies.\n\n    Thus, scorning all the cares\n      That fate or fortune brings,\n    He makes the heaven his book,\n      His wisdom heavenly things;\n\n    Good thoughts his only friends,\n      His wealth a well-spent age,\n    The earth his sober inn\n      And quiet pilgrimage."
+  },
+  {
+   "title": "O come quickly!",
+   "authorSlug": "campion",
+   "author": "Thomas Campion",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Never weather-beaten sail more willing bent to shore,\n    Never tirèd pilgrim’s limbs affected slumber more,\n    Than my wearied sprite now longs to fly out of my troubled breast:\n    O come quickly, sweetest Lord, and take my soul to rest!\n\n    Ever blooming are the joys of heaven’s high Paradise,\n    Cold age deafs not there our ears nor vapour dims our eyes:\n    Glory there the sun outshines; whose beams the Blessèd only see:\n    O come quickly, glorious Lord, and raise my sprite to Thee!"
+  },
+  {
+   "title": "Man",
+   "authorSlug": "davies",
+   "author": "Sir John Davies",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    I know my soul hath power to know all things,\n    Yet she is blind and ignorant in all:\n    I know I’m one of Nature’s little kings,\n    Yet to the least and vilest things am thrall.\n\n    I know my life’s a pain and but a span;\n    I know my sense is mock’d in everything;\n    And, to conclude, I know myself a Man--\n    Which is a proud and yet a wretched thing."
+  },
+  {
+   "title": "Philomel",
+   "authorSlug": "barnfield",
+   "author": "Richard Barnfield",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    As it fell upon a day\n    In the merry month of May,\n    Sitting in a pleasant shade\n    Which a grove of myrtles made,\n    Beasts did leap and birds did sing,\n    Trees did grow and plants did spring;\n    Everything did banish moan\n    Save the Nightingale alone:\n    She, poor bird, as all forlorn\n    Lean’d her breast up-till a thorn,\n    And there sung the dolefull’st ditty,\n    That to hear it was great pity.\n    _Fie, fie, fie!_ now would she cry;\n    _Tereu, Tereu!_ by and by;\n    That to hear her so complain\n    Scarce I could from tears refrain;\n    For her griefs so lively shown\n    Made me think upon mine own.\n    Ah! thought I, thou mourn’st in vain,\n    None takes pity on thy pain:\n    Senseless trees they cannot hear thee,\n    Ruthless beasts they will not cheer thee:\n    King Pandion he is dead,\n    All thy friends are lapp’d in lead;\n    All thy fellow birds do sing\n    Careless of thy sorrowing:\n    Even so, poor bird, like thee,\n    None alive will pity me."
   }
  ],
  "works": [
