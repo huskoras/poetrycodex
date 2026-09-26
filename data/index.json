@@ -1,5 +1,5 @@
 {
- "count": 11168,
+ "count": 11200,
  "workCount": 45,
  "poets": [
   {
@@ -1165,6 +1165,22 @@
    "workCount": 0
   },
   {
+   "slug": "landor",
+   "name": "Walter Savage Landor",
+   "dates": "1775–1864",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": null,
+   "credit": "",
+   "bio": [
+    "Walter Savage Landor (1775–1864) was an English writer best known for Imaginary Conversations, a vast series of prose dialogues between historical figures, and for a small body of exquisitely polished short poems and epigrams that later poets — Swinburne, Pound, and others — prized above almost anything else of his era for their classical restraint.",
+    "Quarrelsome and litigious by temperament (he was expelled from Oxford and later drove himself into exile in Italy more than once), Landor lived to eighty-nine, still writing crisp, controlled verse almost to the end — including his own epitaph-poem, ‘I strove with none.’"
+   ],
+   "order": 920,
+   "poemCount": 32,
+   "workCount": 0
+  },
+  {
    "slug": "moore",
    "name": "Thomas Moore",
    "dates": "1779–1852",
@@ -1904,15 +1920,15 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2403
+   "count": 2404
   },
   {
    "name": "Nature",
-   "count": 2350
+   "count": 2353
   },
   {
    "name": "Love",
-   "count": 2286
+   "count": 2296
   },
   {
    "name": "Religion",
@@ -1920,11 +1936,11 @@
   },
   {
    "name": "Death & Dying",
-   "count": 684
+   "count": 686
   },
   {
    "name": "History & Politics",
-   "count": 592
+   "count": 593
   },
   {
    "name": "Relationships",
@@ -1932,15 +1948,15 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 309
+   "count": 317
   },
   {
    "name": "Time & Brevity",
-   "count": 232
+   "count": 236
   },
   {
    "name": "The Mind",
-   "count": 209
+   "count": 212
   },
   {
    "name": "Social Commentaries",
@@ -57930,6 +57946,416 @@
    ],
    "collection": null,
    "excerpt": "The following changes have been made to the text:\n\nPage 289: The number 2 removed from in front of line that begins: \"Too …"
+  },
+  {
+   "id": "landor/0",
+   "title": "She I Love (Alas in Vain!)",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      She I love (alas in vain!)\n        Floats before my slumbering eyes:\n      When she comes she lulls my pain, …"
+  },
+  {
+   "id": "landor/1",
+   "title": "Pleasure! Why Thus Desert the Heart",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "The Mind"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Pleasure! why thus desert the heart\n          In its spring-tide?\n      I could have seen her, I could part, …"
+  },
+  {
+   "id": "landor/2",
+   "title": "Past Ruin'd Ilion Helen Lives",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Mythology & Folklore"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Past ruin'd Ilion Helen lives,\n        Alcestis rises from the shades;\n      Verse calls them forth; 'tis verse that gives …"
+  },
+  {
+   "id": "landor/3",
+   "title": "Ianthe! You Are Call'd to Cross the Sea!",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Ianthe! you are call'd to cross the sea!\n            A path forbidden _me_!\n      Remember, while the Sun his blessing sheds …"
+  },
+  {
+   "id": "landor/4",
+   "title": "The Gates of Fame and of the Grave",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Death & Dying"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      The gates of fame and of the grave\n      Stand under the same architrave."
+  },
+  {
+   "id": "landor/5",
+   "title": "Twenty Years Hence",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Love"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Twenty years hence my eyes may grow\n      If not quite dim, yet rather so,\n      Still yours from others they shall know …"
+  },
+  {
+   "id": "landor/6",
+   "title": "Here, Ever Since You Went Abroad",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Here, ever since you went abroad,\n        If there be change, no change I see,\n      I only walk our wonted road, …"
+  },
+  {
+   "id": "landor/7",
+   "title": "Tell Me Not Things Past All Belief",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Tell me not things past all belief;\n        One truth in you I prove;\n      The flame of anger, bright and brief, …"
+  },
+  {
+   "id": "landor/8",
+   "title": "Proud Word You Never Spoke, but You Will Speak",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "The Mind"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Proud word you never spoke, but you will speak\n        Four not exempt from pride some future day.\n      Resting on one white hand a warm wet cheek …"
+  },
+  {
+   "id": "landor/9",
+   "title": "Fiesole Idyl",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "FIESOLE IDYL\n\n      Here, where precipitate Spring, with one light bound …"
+  },
+  {
+   "id": "landor/10",
+   "title": "Rose Aylmer",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Ah what avails the sceptred race,\n        Ah what the form divine!\n      What every virtue, every grace! …"
+  },
+  {
+   "id": "landor/11",
+   "title": "With Rosy Hand a Little Girl Prest Down",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      With rosy hand a little girl prest down\n      A boss of fresh-cull'd cowslips in a rill:\n      Often as they sprang up again, a frown …"
+  },
+  {
+   "id": "landor/12",
+   "title": "Ternissa! You Are Fled!",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Death & Dying"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "            Ternissa! you are fled!\n            I say not to the dead,\n      But to the happy ones who rest below: …"
+  },
+  {
+   "id": "landor/13",
+   "title": "Various the Roads of Life",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Time & Brevity"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Various the roads of life; in one\n        All terminate, one lonely way\n      We go; and 'Is he gone?' …"
+  },
+  {
+   "id": "landor/14",
+   "title": "Yes; I Write Verses Now and Then",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Yes; I write verses now and then,\n      But blunt and flaccid is my pen,\n      No longer talkt of by young men …"
+  },
+  {
+   "id": "landor/15",
+   "title": "On Seeing a Hair of Lucretia Borgia",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Time & Brevity"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "ON SEEING A HAIR OF LUCRETIA BORGIA\n\n      Borgia, thou once wert almost too august …"
+  },
+  {
+   "id": "landor/16",
+   "title": "Once, and Once Only, Have I Seen Thy Face",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Once, and once only, have I seen thy face,\n      Elia! once only has thy tripping tongue\n      Run o'er my breast, yet never has been left …"
+  },
+  {
+   "id": "landor/17",
+   "title": "To Wordsworth",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Relationships"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "TO WORDSWORTH\n\n      Those who have laid the harp aside …"
+  },
+  {
+   "id": "landor/18",
+   "title": "To Charles Dickens",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Relationships"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "TO CHARLES DICKENS\n\n      Go then to Italy; but mind …"
+  },
+  {
+   "id": "landor/19",
+   "title": "To Barry Cornwall",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Relationships"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "TO BARRY CORNWALL\n\n      Barry! your spirit long ago …"
+  },
+  {
+   "id": "landor/20",
+   "title": "To Robert Browning",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Relationships"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "TO ROBERT BROWNING\n\n      There is delight in singing, tho' none hear …"
+  },
+  {
+   "id": "landor/21",
+   "title": "Age",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "The Mind"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "AGE\n\n      Death, tho' I see him not, is near …"
+  },
+  {
+   "id": "landor/22",
+   "title": "Leaf After Leaf Drops Off",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Leaf after leaf drops off, flower after flower,\n      Some in the chill, some in the warmer hour:\n      Alike they flourish and alike they fall, …"
+  },
+  {
+   "id": "landor/23",
+   "title": "Well I Remember How You Smiled",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Well I remember how you smiled\n        To see me write your name upon\n      The soft sea-sand--'_O! what a child!_ …"
+  },
+  {
+   "id": "landor/24",
+   "title": "I Strove with None",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Time & Brevity"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      I strove with none, for none was worth my strife.\n      Nature I loved, and, next to Nature, Art;\n      I warmed both hands before the fire of Life; …"
+  },
+  {
+   "id": "landor/25",
+   "title": "Death Stands Above Me, Whispering Low",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "The Mind"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "      Death stands above me, whispering low\n        I know not what into my ear:\n      Of his strange language all I know …"
+  },
+  {
+   "id": "landor/26",
+   "title": "A Pastoral",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "A PASTORAL\n\n      Damon was sitting in the grove …"
+  },
+  {
+   "id": "landor/27",
+   "title": "The Lover",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "THE LOVER\n\n      Now thou art gone, tho' not gone far, …"
+  },
+  {
+   "id": "landor/28",
+   "title": "The Poet Who Sleeps",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Death & Dying"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "THE POET WHO SLEEPS\n\n      One day, when I was young, I read …"
+  },
+  {
+   "id": "landor/29",
+   "title": "Daniel Defoe",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "History & Politics"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "DANIEL DEFOE\n\n      Few will acknowledge what they owe …"
+  },
+  {
+   "id": "landor/30",
+   "title": "Idle Words",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Time & Brevity"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "IDLE WORDS\n\n      They say that every idle word …"
+  },
+  {
+   "id": "landor/31",
+   "title": "To the River Avon",
+   "authorSlug": "landor",
+   "author": "Walter Savage Landor",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Arts & Sciences"
+   ],
+   "collection": "Imaginary Conversations and Poems: A Selection",
+   "excerpt": "TO THE RIVER AVON\n\n      Avon! why runnest thou away so fast? …"
   },
   {
    "id": "moore/0",
