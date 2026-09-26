@@ -1,5 +1,5 @@
 {
- "count": 11048,
+ "count": 11057,
  "workCount": 42,
  "poets": [
   {
@@ -973,6 +973,22 @@
    "workCount": 1
   },
   {
+   "slug": "swift",
+   "name": "Jonathan Swift",
+   "dates": "1667–1745",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": "poets/swift.jpg",
+   "credit": "Portrait of Jonathan Swift by Charles Jervas, c. 1718 · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Jonathan Swift (1667–1745), Dean of St Patrick’s Cathedral in Dublin, is remembered above all for his prose satires, but his verse — plain-spoken, often savage, sometimes tender — was equally his own invention.",
+    "Poems like A Description of a City Shower and The Lady’s Dressing-Room turned unflinching, unglamorous observation into satire, while Cadenus and Vanessa and the Stella poems show a gentler, more private side of a famously guarded man."
+   ],
+   "order": 620,
+   "poemCount": 9,
+   "workCount": 0
+  },
+  {
    "slug": "pope",
    "name": "Alexander Pope",
    "dates": "1688–1744",
@@ -1780,19 +1796,19 @@
   },
   {
    "name": "Nature",
-   "count": 2319
+   "count": 2321
   },
   {
    "name": "Love",
-   "count": 2266
+   "count": 2267
   },
   {
    "name": "Religion",
-   "count": 1625
+   "count": 1626
   },
   {
    "name": "Death & Dying",
-   "count": 673
+   "count": 674
   },
   {
    "name": "History & Politics",
@@ -1816,11 +1832,11 @@
   },
   {
    "name": "Social Commentaries",
-   "count": 67
+   "count": 70
   },
   {
    "name": "Mythology & Folklore",
-   "count": 4
+   "count": 5
   }
  ],
  "works": [
@@ -50442,6 +50458,114 @@
    ],
    "collection": null,
    "excerpt": "_Enter_ JANUS.\n\n_Janus_. Chronos, Chronos, mend thy pace; …"
+  },
+  {
+   "id": "swift/0",
+   "title": "Mrs. Frances Harris's Petition",
+   "authorSlug": "swift",
+   "author": "Jonathan Swift",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": "To their Excellencies the Lords Justices of Ireland,\nThe humble petition of Frances Harris,\nWho must starve and die a maid if it miscarries; …"
+  },
+  {
+   "id": "swift/1",
+   "title": "Baucis and Philemon",
+   "authorSlug": "swift",
+   "author": "Jonathan Swift",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore"
+   ],
+   "collection": null,
+   "excerpt": "In ancient times, as story tells,\nThe saints would often leave their cells,\nAnd stroll about, but hide their quality, …"
+  },
+  {
+   "id": "swift/2",
+   "title": "A Description of the Morning",
+   "authorSlug": "swift",
+   "author": "Jonathan Swift",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "Now hardly here and there an hackney-coach\nAppearing, show'd the ruddy morn's approach.\nNow Betty from her master's bed had flown, …"
+  },
+  {
+   "id": "swift/3",
+   "title": "A Description of a City Shower",
+   "authorSlug": "swift",
+   "author": "Jonathan Swift",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "Careful observers may foretell the hour,\n(By sure prognostics,) when to dread a shower.\nWhile rain depends, the pensive cat gives o'er …"
+  },
+  {
+   "id": "swift/4",
+   "title": "Clever Tom Clinch Going to Be Hanged",
+   "authorSlug": "swift",
+   "author": "Jonathan Swift",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": "As clever Tom Clinch, while the rabble was bawling,\nRode stately through Holborn to die in his calling,\nHe stopt at the George for a bottle of sack, …"
+  },
+  {
+   "id": "swift/5",
+   "title": "The Lady's Dressing-Room",
+   "authorSlug": "swift",
+   "author": "Jonathan Swift",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": "Five hours (and who can do it less in?)\nBy haughty Celia spent in dressing;\nThe goddess from her chamber issues, …"
+  },
+  {
+   "id": "swift/6",
+   "title": "The Day of Judgment",
+   "authorSlug": "swift",
+   "author": "Jonathan Swift",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": null,
+   "excerpt": "With a whirl of thought oppress'd,\nI sunk from reverie to rest.\nAn horrid vision seized my head; …"
+  },
+  {
+   "id": "swift/7",
+   "title": "Verses on the Death of Dr. Swift",
+   "authorSlug": "swift",
+   "author": "Jonathan Swift",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "AS Rochefoucauld his maxims drew\nFrom nature, I believe 'em true:\nThey argue no corrupted mind …"
+  },
+  {
+   "id": "swift/8",
+   "title": "Cadenus and Vanessa",
+   "authorSlug": "swift",
+   "author": "Jonathan Swift",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "excerpt": "The shepherds and the nymphs were seen\nPleading before the Cyprian queen.\nThe counsel for the fair began, …"
   },
   {
    "id": "pope/0",
