@@ -1,7 +1,7 @@
 # Poetry Codex
 
 **Read [`AGENTS.md`](./AGENTS.md) first — it is the full briefing for this project**
-(tech stack, `poems.json` schema, content/copyright rules, extraction methodology,
+(tech stack, data schema, content/copyright rules, extraction methodology,
 deploy workflow, current state and known gaps).
 
 `AGENTS.md` is the shared briefing for every AI coding tool used on this repo

@@ -48,7 +48,14 @@ sections (cantos/books/fitts).
   longer exists in the working tree, only in git history at or before commit `b38eab4`).
 - `tools/build_index.py` — regenerates `data/index.json` from `data/poets/*.json` +
   `data/works/*.json`. Run this after any content edit.
-- `tools/verify_split.py` — data-integrity check (see "Verifying data integrity" below).
+- `tools/verify_split.py` — integrity check. Self-contained (does **not** need the old
+  `poems.json`): it verifies the poet/work files and `data/index.json` agree with each
+  other — poem counts, sequential unique ids, index stubs matching their source poems,
+  `subjects[]` tallies, per-poet `poemCount`/`workCount`, work section titles, that every
+  `legacy_index` entry still resolves, that no poem/section text is empty, that every
+  non-null `portrait` file exists, and that every poet's `category` is one that actually
+  appears in `CATEGORY_ORDER` in `app.js` (so a poet can't silently vanish from the home
+  page). Run it after `build_index.py` on every content change; it exits non-zero on error.
 - `poets/*.jpg` — portrait/illustration images (unrelated to `data/poets/`; note the
   singular/plural difference — this is the images folder, `data/poets/` is poem data).
 - `dev_server.py` — local no-cache dev server (`python dev_server.py` → http://localhost:8777)
