@@ -1,5 +1,5 @@
 {
- "count": 11069,
+ "count": 11076,
  "workCount": 43,
  "poets": [
   {
@@ -1069,6 +1069,22 @@
    "workCount": 1
   },
   {
+   "slug": "burns",
+   "name": "Robert Burns",
+   "dates": "1759–1796",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": "poets/burns.jpg",
+   "credit": "Portrait of Robert Burns by Alexander Nasmyth, 1787 · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Robert Burns (1759–1796), Scotland’s national poet, turned the everyday life and speech of Ayrshire farming folk into poetry of remarkable warmth, wit, and force.",
+    "Writing in Scots and English by turns, he ranged from the comic terror of Tam O’ Shanter to the tenderness of A Red, Red Rose and the satire of Holy Willie’s Prayer; his spelling is kept exactly as printed here."
+   ],
+   "order": 850,
+   "poemCount": 7,
+   "workCount": 0
+  },
+  {
    "slug": "blake",
    "name": "William Blake",
    "dates": "1757–1827",
@@ -1840,15 +1856,15 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2401
+   "count": 2402
   },
   {
    "name": "Nature",
-   "count": 2321
+   "count": 2322
   },
   {
    "name": "Love",
-   "count": 2268
+   "count": 2269
   },
   {
    "name": "Religion",
@@ -1864,7 +1880,7 @@
   },
   {
    "name": "Relationships",
-   "count": 383
+   "count": 384
   },
   {
    "name": "Arts & Sciences",
@@ -1880,11 +1896,11 @@
   },
   {
    "name": "Social Commentaries",
-   "count": 74
+   "count": 76
   },
   {
    "name": "Mythology & Folklore",
-   "count": 5
+   "count": 6
   }
  ],
  "works": [
@@ -51001,6 +51017,90 @@
    ],
    "collection": null,
    "excerpt": "_To the March in Scipio._\n\n  Toll for the brave! …"
+  },
+  {
+   "id": "burns/0",
+   "title": "Holy Willie’s Prayer",
+   "authorSlug": "burns",
+   "author": "Robert Burns",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": "O Thou, who in the heavens does dwell,\nWho, as it pleases best Thysel’,\nSends ane to heaven an’ ten to hell, …"
+  },
+  {
+   "id": "burns/1",
+   "title": "To a Mouse, on Turning Her Up in Her Nest with the Plough, November, 1785",
+   "authorSlug": "burns",
+   "author": "Robert Burns",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "Wee, sleekit, cow’rin, tim’rous beastie,\nO, what a panic’s in thy breastie!\nThou need na start awa sae hasty, …"
+  },
+  {
+   "id": "burns/2",
+   "title": "The Cotter’s Saturday Night",
+   "authorSlug": "burns",
+   "author": "Robert Burns",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": null,
+   "excerpt": "Let not Ambition mock their useful toil,\nTheir homely joys, and destiny obscure;\nNor Grandeur hear, with a disdainful smile, …"
+  },
+  {
+   "id": "burns/3",
+   "title": "To a Louse, on Seeing One on a Lady’s Bonnet, at Church",
+   "authorSlug": "burns",
+   "author": "Robert Burns",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": "Ha! whaur ye gaun, ye crowlin ferlie?\nYour impudence protects you sairly;\nI canna say but ye strunt rarely, …"
+  },
+  {
+   "id": "burns/4",
+   "title": "Auld Lang Syne",
+   "authorSlug": "burns",
+   "author": "Robert Burns",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships"
+   ],
+   "collection": null,
+   "excerpt": "Should auld acquaintance be forgot,\nAnd never brought to mind?\nShould auld acquaintance be forgot, …"
+  },
+  {
+   "id": "burns/5",
+   "title": "Tam O’ Shanter: A Tale",
+   "authorSlug": "burns",
+   "author": "Robert Burns",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore"
+   ],
+   "collection": null,
+   "excerpt": "“Of Brownyis and of Bogillis full is this Buke.”\n\nGawin Douglas. …"
+  },
+  {
+   "id": "burns/6",
+   "title": "A Red, Red Rose",
+   "authorSlug": "burns",
+   "author": "Robert Burns",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "excerpt": "O my Luve’s like a red, red rose,\nThat’s newly sprung in June:\nO my Luve’s like the melodie, …"
   },
   {
    "id": "blake/0",
