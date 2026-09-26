@@ -1,6 +1,6 @@
 {
- "count": 11063,
- "workCount": 42,
+ "count": 11069,
+ "workCount": 43,
  "poets": [
   {
    "slug": "cynewulf",
@@ -1053,6 +1053,22 @@
    "workCount": 0
   },
   {
+   "slug": "cowper",
+   "name": "William Cowper",
+   "dates": "1731–1800",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": "poets/cowper.jpg",
+   "credit": "Portrait of William Cowper by Lemuel Francis Abbott, 1792 · Public domain (Wikimedia Commons)",
+   "bio": [
+    "William Cowper (1731–1800) wrote from a life shadowed by recurring breakdowns and religious despair, retired to the Buckinghamshire village of Olney under the care of friends.",
+    "His comic ballad John Gilpin made him briefly famous, but his lasting achievement is The Task, a long meditative poem on rural retirement, and the Olney Hymns he wrote with John Newton, including “God Moves in a Mysterious Way.”"
+   ],
+   "order": 770,
+   "poemCount": 6,
+   "workCount": 1
+  },
+  {
    "slug": "blake",
    "name": "William Blake",
    "dates": "1757–1827",
@@ -1832,15 +1848,15 @@
   },
   {
    "name": "Love",
-   "count": 2267
+   "count": 2268
   },
   {
    "name": "Religion",
-   "count": 1626
+   "count": 1627
   },
   {
    "name": "Death & Dying",
-   "count": 675
+   "count": 677
   },
   {
    "name": "History & Politics",
@@ -1848,7 +1864,7 @@
   },
   {
    "name": "Relationships",
-   "count": 382
+   "count": 383
   },
   {
    "name": "Arts & Sciences",
@@ -1864,7 +1880,7 @@
   },
   {
    "name": "Social Commentaries",
-   "count": 73
+   "count": 74
   },
   {
    "name": "Mythology & Folklore",
@@ -4273,6 +4289,45 @@
     {
      "title": "Hiawatha's Departure",
      "stanzas": 3
+    }
+   ]
+  },
+  {
+   "slug": "the-task",
+   "title": "The Task",
+   "subtitle": "A Poem, in Six Books",
+   "authorSlug": "cowper",
+   "author": "William Cowper",
+   "year": "1785",
+   "type": "Meditative poem",
+   "translator": null,
+   "workGroup": null,
+   "note": "",
+   "blurb": "Begun as a joke on the subject of a sofa, The Task grew into Cowper’s masterpiece — a long, ruminative blank-verse walk through rural retirement, nature, solitude, and faith.",
+   "sections": [
+    {
+     "title": "Book I: The Sofa",
+     "stanzas": 24
+    },
+    {
+     "title": "Book II: The Timepiece",
+     "stanzas": 22
+    },
+    {
+     "title": "Book III: The Garden",
+     "stanzas": 18
+    },
+    {
+     "title": "Book IV: The Winter Evening",
+     "stanzas": 16
+    },
+    {
+     "title": "Book V: The Winter Morning Walk",
+     "stanzas": 17
+    },
+    {
+     "title": "Book VI: The Winter Walk at Noon",
+     "stanzas": 21
     }
    ]
   },
@@ -50874,6 +50929,78 @@
    ],
    "collection": null,
    "excerpt": "Of old, when Scarròn his companions invited,\nEach guest brought his dish, and the feast was united;\nIf our landlord supplies us with beef, and with fish, …"
+  },
+  {
+   "id": "cowper/0",
+   "title": "The Diverting History of John Gilpin",
+   "authorSlug": "cowper",
+   "author": "William Cowper",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": "John Gilpin was a citizen\n  Of credit and renown,\nA train-band captain eke was he …"
+  },
+  {
+   "id": "cowper/1",
+   "title": "An Epistle to Joseph Hill, Esq.",
+   "authorSlug": "cowper",
+   "author": "William Cowper",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships"
+   ],
+   "collection": null,
+   "excerpt": "DEAR JOSEPH,--five and twenty years ago--\nAlas, how time escapes!--'tis even so--\nWith frequent intercourse, and always sweet …"
+  },
+  {
+   "id": "cowper/2",
+   "title": "To Mary",
+   "authorSlug": "cowper",
+   "author": "William Cowper",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "excerpt": "The twentieth year is well-nigh past\nSince first our sky was overcast,\nAh, would that this might be the last! …"
+  },
+  {
+   "id": "cowper/3",
+   "title": "The Castaway",
+   "authorSlug": "cowper",
+   "author": "William Cowper",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "  Obscurest night involved the sky,\n    The Atlantic billows roar'd,\n  When such a destined wretch as I, …"
+  },
+  {
+   "id": "cowper/4",
+   "title": "Light Shining Out of Darkness",
+   "authorSlug": "cowper",
+   "author": "William Cowper",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": null,
+   "excerpt": "  God moves in a mysterious way\n    His wonders to perform;\n  He plants his footsteps in the sea, …"
+  },
+  {
+   "id": "cowper/5",
+   "title": "On the Loss of the Royal George",
+   "authorSlug": "cowper",
+   "author": "William Cowper",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "_To the March in Scipio._\n\n  Toll for the brave! …"
   },
   {
    "id": "blake/0",
