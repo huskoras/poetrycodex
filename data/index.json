@@ -1,5 +1,5 @@
 {
- "count": 11060,
+ "count": 11063,
  "workCount": 42,
  "poets": [
   {
@@ -1005,6 +1005,22 @@
    "workCount": 2
   },
   {
+   "slug": "johnson_samuel",
+   "name": "Samuel Johnson",
+   "dates": "1709–1784",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": "poets/johnson_samuel.jpg",
+   "credit": "Portrait of Samuel Johnson by Sir Joshua Reynolds, c. 1772 · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Samuel Johnson (1709–1784) — lexicographer, essayist, critic, and the dominant literary figure of mid-18th-century England — also wrote poetry of severe, weighty moral force.",
+    "London and The Vanity of Human Wishes, both close imitations of Juvenal’s satires, and his plain elegy for his friend Robert Levet, show the same unflinching realism that marks his prose."
+   ],
+   "order": 720,
+   "poemCount": 3,
+   "workCount": 0
+  },
+  {
    "slug": "gray",
    "name": "Thomas Gray",
    "dates": "1716–1771",
@@ -1824,7 +1840,7 @@
   },
   {
    "name": "Death & Dying",
-   "count": 674
+   "count": 675
   },
   {
    "name": "History & Politics",
@@ -1844,11 +1860,11 @@
   },
   {
    "name": "The Mind",
-   "count": 202
+   "count": 203
   },
   {
    "name": "Social Commentaries",
-   "count": 72
+   "count": 73
   },
   {
    "name": "Mythology & Folklore",
@@ -50702,6 +50718,42 @@
    ],
    "collection": null,
    "excerpt": "_P_. Shut, shut the door, good John! fatigued, I said,\nTie up the knocker, say I'm sick, I'm dead.\nThe Dog-star rages! nay, 'tis past a doubt, …"
+  },
+  {
+   "id": "johnson_samuel/0",
+   "title": "London: A Poem, in Imitation of the Third Satire of Juvenal",
+   "authorSlug": "johnson_samuel",
+   "author": "Samuel Johnson",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": " --Quis ineptae\nTam patiens urbis, tam ferreus ut teneat se?  JUV.\n …"
+  },
+  {
+   "id": "johnson_samuel/1",
+   "title": "The Vanity of Human Wishes: In Imitation of the Tenth Satire of Juvenal",
+   "authorSlug": "johnson_samuel",
+   "author": "Samuel Johnson",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind"
+   ],
+   "collection": null,
+   "excerpt": "Let observation, with extensive view,\nSurvey mankind, from China to Peru;\nRemark each anxious toil, each eager strife, …"
+  },
+  {
+   "id": "johnson_samuel/2",
+   "title": "On the Death of Mr. Robert Levet",
+   "authorSlug": "johnson_samuel",
+   "author": "Samuel Johnson",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "Condemn'd to hope's delusive mine,\nAs on we toil, from day to day,\nBy sudden blasts, or slow decline, …"
   },
   {
    "id": "gray/0",
