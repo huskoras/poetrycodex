@@ -1,6 +1,6 @@
 {
- "count": 11114,
- "workCount": 43,
+ "count": 11118,
+ "workCount": 45,
  "poets": [
   {
    "slug": "cynewulf",
@@ -317,22 +317,6 @@
    ],
    "order": 180,
    "poemCount": 3,
-   "workCount": 0
-  },
-  {
-   "slug": "scott",
-   "name": "Alexander Scott",
-   "dates": "c. 1520–c. 1583",
-   "era": "Tudor",
-   "category": "Tudor & Elizabethan",
-   "portrait": null,
-   "credit": "No confirmed portrait sourced for this archive.",
-   "bio": [
-    "Alexander Scott was a Scottish court poet whose surviving work, some three dozen short lyrics, chiefly concerns love and courtly compliment.",
-    "Little is known of his life beyond scattered records connecting him to Inchmahome Priory and the Scottish court of Mary, Queen of Scots."
-   ],
-   "order": 190,
-   "poemCount": 2,
    "workCount": 0
   },
   {
@@ -1117,6 +1101,22 @@
    "workCount": 0
   },
   {
+   "slug": "scott",
+   "name": "Sir Walter Scott",
+   "dates": "1771–1832",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": null,
+   "credit": "",
+   "bio": [
+    "Sir Walter Scott (1771–1832) was a Scottish poet and novelist whose verse romances — The Lay of the Last Minstrel, Marmion, The Lady of the Lake — made him the best-selling poet in Europe before Byron eclipsed him, and whose Waverley novels effectively invented the historical novel.",
+    "Trained as a lawyer in Edinburgh, Scott drew on a lifelong passion for Scottish Border ballads and Highland history; a private financial ruin late in life led him to write at a furious pace to pay off his debts, at the cost of his health."
+   ],
+   "order": 903,
+   "poemCount": 6,
+   "workCount": 2
+  },
+  {
    "slug": "coleridge",
    "name": "Samuel Taylor Coleridge",
    "dates": "1772–1834",
@@ -1892,7 +1892,7 @@
   },
   {
    "name": "History & Politics",
-   "count": 575
+   "count": 579
   },
   {
    "name": "Relationships",
@@ -3519,6 +3519,112 @@
     {
      "title": "Juliana",
      "stanzas": 92
+    }
+   ]
+  },
+  {
+   "slug": "lady-of-the-lake",
+   "title": "The Lady of the Lake",
+   "subtitle": null,
+   "authorSlug": "scott",
+   "author": "Sir Walter Scott",
+   "year": "1810",
+   "type": "Narrative poem",
+   "translator": null,
+   "workGroup": null,
+   "note": "",
+   "blurb": "A romance of the Scottish Highlands, unfolding over six days on the shores of Loch Katrine, that made Sir Walter Scott the most popular poet in Europe.",
+   "sections": [
+    {
+     "title": "Canto I",
+     "stanzas": 78
+    },
+    {
+     "title": "Canto II",
+     "stanzas": 84
+    },
+    {
+     "title": "Canto III",
+     "stanzas": 71
+    },
+    {
+     "title": "Canto IV",
+     "stanzas": 106
+    },
+    {
+     "title": "Canto V",
+     "stanzas": 67
+    },
+    {
+     "title": "Canto VI",
+     "stanzas": 76
+    }
+   ]
+  },
+  {
+   "slug": "marmion",
+   "title": "Marmion",
+   "subtitle": "A Tale of Flodden Field",
+   "authorSlug": "scott",
+   "author": "Sir Walter Scott",
+   "year": "1808",
+   "type": "Narrative poem",
+   "translator": null,
+   "workGroup": null,
+   "note": "",
+   "blurb": "A verse romance of treachery and doomed love set against the Scottish army's march to its catastrophic defeat at Flodden in 1513.",
+   "sections": [
+    {
+     "title": "Introduction to Canto I",
+     "stanzas": 19
+    },
+    {
+     "title": "Canto I",
+     "stanzas": 63
+    },
+    {
+     "title": "Introduction to Canto II",
+     "stanzas": 12
+    },
+    {
+     "title": "Canto II",
+     "stanzas": 67
+    },
+    {
+     "title": "Introduction to Canto III",
+     "stanzas": 11
+    },
+    {
+     "title": "Canto III",
+     "stanzas": 70
+    },
+    {
+     "title": "Introduction to Canto IV",
+     "stanzas": 9
+    },
+    {
+     "title": "Canto IV",
+     "stanzas": 65
+    },
+    {
+     "title": "Introduction to Canto V",
+     "stanzas": 10
+    },
+    {
+     "title": "Canto V",
+     "stanzas": 78
+    },
+    {
+     "title": "Introduction to Canto VI",
+     "stanzas": 11
+    },
+    {
+     "title": "Canto VI",
+     "stanzas": 77
+    },
+    {
+     "title": "L'Envoy",
+     "stanzas": 2
     }
    ]
   },
@@ -6913,30 +7019,6 @@
    ],
    "collection": null,
    "excerpt": "    Martial, the things that do attain\n    The happy life be these, I find:--\n    The richesse left, not got with pain; …"
-  },
-  {
-   "id": "scott/0",
-   "title": "A Bequest of His Heart",
-   "authorSlug": "scott",
-   "author": "Alexander Scott",
-   "primarySubject": "Love",
-   "subjects": [
-    "Love"
-   ],
-   "collection": null,
-   "excerpt": "    Hence, heart, with her that must depart,\n      And hald thee with thy soverane!\n    For I had liever want ane heart. …"
-  },
-  {
-   "id": "scott/1",
-   "title": "A Rondel of Love",
-   "authorSlug": "scott",
-   "author": "Alexander Scott",
-   "primarySubject": "Love",
-   "subjects": [
-    "Love"
-   ],
-   "collection": null,
-   "excerpt": "    Lo, quhat it is to love\n      Learn ye that list to prove,\n    By me, I say, that no ways may …"
   },
   {
    "id": "gascoigne/0",
@@ -51708,6 +51790,84 @@
    ],
    "collection": null,
    "excerpt": "The world is too much with us; late and soon,\nGetting and spending, we lay waste our powers;—\nLittle we see in Nature that is ours; …"
+  },
+  {
+   "id": "scott/0",
+   "title": "The Vision of Don Roderick",
+   "authorSlug": "scott",
+   "author": "Sir Walter Scott",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Arts & Sciences"
+   ],
+   "collection": "The Vision of Don Roderick (1811)",
+   "excerpt": "INTRODUCTION.\n\n                                    I. …"
+  },
+  {
+   "id": "scott/1",
+   "title": "The Field of Waterloo",
+   "authorSlug": "scott",
+   "author": "Sir Walter Scott",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "The Field of Waterloo (1815)",
+   "excerpt": "THE FIELD OF WATERLOO.\n\n                                    I. …"
+  },
+  {
+   "id": "scott/2",
+   "title": "The Dance of Death",
+   "authorSlug": "scott",
+   "author": "Sir Walter Scott",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Ballads and Lyrical Pieces (1815)",
+   "excerpt": "THE DANCE OF DEATH.\n[1815.]\n …"
+  },
+  {
+   "id": "scott/3",
+   "title": "Romance of Dunois",
+   "authorSlug": "scott",
+   "author": "Sir Walter Scott",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "History & Politics"
+   ],
+   "collection": "Ballads and Lyrical Pieces (1815)",
+   "excerpt": "ROMANCE OF DUNOIS.\nFROM THE FRENCH.\n[1815.] …"
+  },
+  {
+   "id": "scott/4",
+   "title": "The Troubadour",
+   "authorSlug": "scott",
+   "author": "Sir Walter Scott",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "History & Politics"
+   ],
+   "collection": "Ballads and Lyrical Pieces (1815)",
+   "excerpt": "THE TROUBADOUR.\nFROM THE SAME COLLECTION.\n[1815.] …"
+  },
+  {
+   "id": "scott/5",
+   "title": "Pibroch of Donald Dhu",
+   "authorSlug": "scott",
+   "author": "Sir Walter Scott",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Arts & Sciences"
+   ],
+   "collection": "Ballads and Lyrical Pieces (1815)",
+   "excerpt": "PIBROCH OF DONALD DHU.\n\n[This is a very ancient pibroch belonging to Clan MacDonald.  The words …"
   },
   {
    "id": "coleridge/0",
