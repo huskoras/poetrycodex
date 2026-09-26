@@ -1,5 +1,5 @@
 {
- "count": 11200,
+ "count": 11229,
  "workCount": 45,
  "poets": [
   {
@@ -1277,6 +1277,22 @@
    "workCount": 0
   },
   {
+   "slug": "hood",
+   "name": "Thomas Hood",
+   "dates": "1799–1845",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": null,
+   "credit": "",
+   "bio": [
+    "Thomas Hood (1799–1845) was an English poet and humorist, famous in his own lifetime chiefly for comic verse and outrageous puns, but remembered today at least as much for a handful of serious social poems — above all ‘The Song of the Shirt’ and ‘The Bridge of Sighs’ — written from genuine anger at the suffering of the poor.",
+    "Chronically ill for most of his adult life, he supported a family through unrelenting magazine work, editing and writing comic annuals even as his health failed; he died at forty-five, not long after a government pension was finally arranged for him."
+   ],
+   "order": 965,
+   "poemCount": 29,
+   "workCount": 0
+  },
+  {
    "slug": "johnson",
    "name": "Lionel Johnson",
    "dates": "1867–1902",
@@ -1920,15 +1936,15 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2404
+   "count": 2408
   },
   {
    "name": "Nature",
-   "count": 2353
+   "count": 2355
   },
   {
    "name": "Love",
-   "count": 2296
+   "count": 2301
   },
   {
    "name": "Religion",
@@ -1936,7 +1952,7 @@
   },
   {
    "name": "Death & Dying",
-   "count": 686
+   "count": 691
   },
   {
    "name": "History & Politics",
@@ -1948,23 +1964,23 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 317
+   "count": 318
   },
   {
    "name": "Time & Brevity",
-   "count": 236
+   "count": 237
   },
   {
    "name": "The Mind",
-   "count": 212
+   "count": 217
   },
   {
    "name": "Social Commentaries",
-   "count": 79
+   "count": 82
   },
   {
    "name": "Mythology & Folklore",
-   "count": 10
+   "count": 13
   }
  ],
  "works": [
@@ -64291,6 +64307,381 @@
    ],
    "collection": null,
    "excerpt": "Bright star, would I were stedfast as thou art—\n   Not in lone splendour hung aloft the night\nAnd watching, with eternal lids apart, …"
+  },
+  {
+   "id": "hood/0",
+   "title": "To Hope",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "Oh! take, young Seraph, take thy harp,\n  And play to me so cheerily;\nFor grief is dark, and care is sharp, …"
+  },
+  {
+   "id": "hood/1",
+   "title": "The Two Peacocks of Bedfont",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Love"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "I.\n\nAlas! That breathing Vanity should go …"
+  },
+  {
+   "id": "hood/2",
+   "title": "Fair Ines",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "O Saw ye not fair Ines?\nShe's gone into the West,\nTo dazzle when the sun is down, …"
+  },
+  {
+   "id": "hood/3",
+   "title": "Autumn",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "I saw old Autumn in the misty morn\nStand shadowless like Silence, listening\nTo silence, for no lonely bird would sing …"
+  },
+  {
+   "id": "hood/4",
+   "title": "Silence",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Death & Dying"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "There is a silence where hath been no sound,\nThere is a silence where no sound may be,\nIn the cold grave--under the deep deep sea, …"
+  },
+  {
+   "id": "hood/5",
+   "title": "To an Enthusiast",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Time & Brevity"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "Young ardent soul, graced with fair Nature's truth,\nSpring warmth of heart, and fervency of mind,\nAnd still a large late love of all thy kind. …"
+  },
+  {
+   "id": "hood/6",
+   "title": "Death",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "The Mind"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "It is not death, that sometime in a sigh\nThis eloquent breath shall take its speechless flight;\nThat sometime these bright stars, that now reply …"
+  },
+  {
+   "id": "hood/7",
+   "title": "The Forsaken",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "The dead are in their silent graves,\nAnd the dew is cold above,\nAnd the living weep and sigh, …"
+  },
+  {
+   "id": "hood/8",
+   "title": "The Water Lady",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Love"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "[Footnote 7: Suggested, according to Hood's son, by a water-color\ndrawing by Keats's friend Severn.]\n …"
+  },
+  {
+   "id": "hood/9",
+   "title": "I Remember, I Remember",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Living"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "I remember, I remember,\nThe house where I was born,\nThe little window where the sun …"
+  },
+  {
+   "id": "hood/10",
+   "title": "Ruth",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "She stood breast high amid the corn\nClasp'd by the golden light of morn,\nLike the sweetheart of the sun, …"
+  },
+  {
+   "id": "hood/11",
+   "title": "Ode to Melancholy",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Death & Dying"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "Come, let us set our careful breasts,\nLike Philomel, against the thorn,\nTo aggravate the inward grief, …"
+  },
+  {
+   "id": "hood/12",
+   "title": "The Dream of Eugene Aram",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Death & Dying"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "I.\n\n'Twas in the prime of summer time, …"
+  },
+  {
+   "id": "hood/13",
+   "title": "The Death-bed",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "[Footnote 10: _The Englishman's Magazine_, August 1831. This magazine\nwas a venture of Edward Moxon, the publisher, but had a career of only\nseven months. It is memorable, however, for including, besides the …"
+  },
+  {
+   "id": "hood/14",
+   "title": "The Lee Shore",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "Sleet! and Hail! and Thunder!\n  And ye Winds that rave,\nTill the sands thereunder …"
+  },
+  {
+   "id": "hood/15",
+   "title": "Lear",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "A poor old king, with sorrow for my crown,\nThroned upon straw, and mantled with the wind--\nFor pity, my own tears have made me blind …"
+  },
+  {
+   "id": "hood/16",
+   "title": "The Song of the Shirt",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "With fingers weary and worn,\n  With eyelids heavy and red,\nA woman sat, in unwomanly rags, …"
+  },
+  {
+   "id": "hood/17",
+   "title": "The Lady's Dream",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "The Mind"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "The lady lay in her bed,\n  Her couch so warm and soft,\nBut her sleep was restless and broken still; …"
+  },
+  {
+   "id": "hood/18",
+   "title": "An Allegory",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "The Mind"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "There's a murmur in the air,\nAnd noise in every street--\nThe murmur of many tongues, …"
+  },
+  {
+   "id": "hood/19",
+   "title": "The Bridge of Sighs",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Social Commentaries"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "   \"Drown'd! drown'd!\"--_Hamlet_.\n\nOne more Unfortunate, …"
+  },
+  {
+   "id": "hood/20",
+   "title": "The Last Man",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "The Mind"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "I.\n\n'Twas in the year two thousand and one, …"
+  },
+  {
+   "id": "hood/21",
+   "title": "Faithless Sally Brown",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Living"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "[Footnote 26: These famous verses were first published as from an\nanonymous correspondent in the _London Magazine_. When Hood reprinted\nthem, under his own name, in the first series of _Whims and Oddities_, …"
+  },
+  {
+   "id": "hood/22",
+   "title": "The Demon-ship",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Death & Dying"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "'Twas off the Wash--the sun went down--the sea look'd black and grim,\nFor stormy clouds, with murky fleece, were mustering at the brim;\nTitanic shades! enormous gloom!--as if the solid night …"
+  },
+  {
+   "id": "hood/23",
+   "title": "Death's Ramble",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Living"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "[Footnote 27: Of course suggested by Coleridge and Southey's\n_Devil's Walk_. It is ablaze with wit and real imagination. Old\nnursery tales are not so well remembered in these days that it is …"
+  },
+  {
+   "id": "hood/24",
+   "title": "The Drowning Ducks",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Social Commentaries"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "Amongst the sights that Mrs. Bond\n  Enjoyed yet grieved at more than others,\nWere little ducklings in a pond, …"
+  },
+  {
+   "id": "hood/25",
+   "title": "The Lost Heir",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Relationships"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "    \"Oh where, and oh where\n    Is my bonny laddie gone?\"\n    _Old Song_. …"
+  },
+  {
+   "id": "hood/26",
+   "title": "Those Evening Bells",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Arts & Sciences"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "Those evening bells, those evening bells,\nHow many a tale their music tells,--\nOf Yorkshire cakes and crumpets prime, …"
+  },
+  {
+   "id": "hood/27",
+   "title": "The Carelesse Nurse Mayd",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Death & Dying"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "I sawe a Mayd sitte on a Bank,\nBeguiled by Wooer fayne and fond;\nAnd whiles His flatterynge Vowes She drank, …"
+  },
+  {
+   "id": "hood/28",
+   "title": "Faithless Nelly Gray",
+   "authorSlug": "hood",
+   "author": "Thomas Hood",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Living"
+   ],
+   "collection": "The Poetical Works of Thomas Hood",
+   "excerpt": "Ben Battle was a soldier bold,\n  And used to war's alarms;\nBut a cannon-ball took off his legs, …"
   },
   {
    "id": "johnson/0",
