@@ -1,5 +1,5 @@
 {
- "count": 11118,
+ "count": 11132,
  "workCount": 45,
  "poets": [
   {
@@ -1133,6 +1133,22 @@
    "workCount": 0
   },
   {
+   "slug": "southey",
+   "name": "Robert Southey",
+   "dates": "1774–1843",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": null,
+   "credit": "",
+   "bio": [
+    "Robert Southey (1774–1843) was an English poet and man of letters, Poet Laureate from 1813 until his death, and one of the “Lake Poets” alongside his friends Wordsworth and Coleridge (whose sister-in-law he married).",
+    "He was, in his own day, best known for his grim and often macabre ballads of guilt, folklore and the supernatural, and for prose-poem “Eclogues” that gave a plain, compassionate voice to the rural poor — work that has aged rather better than the long epics on which he staked his reputation."
+   ],
+   "order": 915,
+   "poemCount": 14,
+   "workCount": 0
+  },
+  {
    "slug": "arnold",
    "name": "Matthew Arnold",
    "dates": "1822–1888",
@@ -1884,19 +1900,19 @@
   },
   {
    "name": "Religion",
-   "count": 1627
+   "count": 1628
   },
   {
    "name": "Death & Dying",
-   "count": 680
+   "count": 681
   },
   {
    "name": "History & Politics",
-   "count": 579
+   "count": 580
   },
   {
    "name": "Relationships",
-   "count": 384
+   "count": 386
   },
   {
    "name": "Arts & Sciences",
@@ -1908,15 +1924,15 @@
   },
   {
    "name": "The Mind",
-   "count": 205
+   "count": 209
   },
   {
    "name": "Social Commentaries",
-   "count": 77
+   "count": 79
   },
   {
    "name": "Mythology & Folklore",
-   "count": 6
+   "count": 9
   }
  ],
  "works": [
@@ -51896,6 +51912,188 @@
    ],
    "collection": null,
    "excerpt": "All Nature seems at work. Slugs leave their lair—\nThe bees are stirring—birds are on the wing—\nAnd Winter slumbering in the open air, …"
+  },
+  {
+   "id": "southey/0",
+   "title": "The Cross Roads",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Death & Dying"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "There was an old man breaking stones\nTo mend the turnpike way,\nHe sat him down beside a brook …"
+  },
+  {
+   "id": "southey/1",
+   "title": "The Sailor Who Had Served in the Slave Trade",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Social Commentaries"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "He stopt,—it surely was a groan\nThat from the hovel came!\nHe stopt and listened anxiously …"
+  },
+  {
+   "id": "southey/2",
+   "title": "Jaspar",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Death & Dying"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "Jaspar was poor, and want and vice\nHad made his heart like stone,\nAnd Jaspar look’d with envious eyes …"
+  },
+  {
+   "id": "southey/3",
+   "title": "Lord William",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Death & Dying"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "No eye beheld when William plunged\nYoung Edmund in the stream,\nNo human ear but William’s heard …"
+  },
+  {
+   "id": "southey/4",
+   "title": "A Ballad, Shewing How an Old Woman Rode Double, and Who Rode Before Her",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Death & Dying"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "The Raven croak’d as she sate at her meal,\nAnd the Old Woman knew what he said,\nAnd she grew pale at the Raven’s tale, …"
+  },
+  {
+   "id": "southey/5",
+   "title": "The Surgeon's Warning",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Death & Dying"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "The Doctor whispered to the Nurse\nAnd the Surgeon knew what he said,\nAnd he grew pale at the Doctor’s tale …"
+  },
+  {
+   "id": "southey/6",
+   "title": "The Victory",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "Hark—how the church-bells thundering harmony\nStuns the glad ear! tidings of joy have come,\nGood tidings of great joy! two gallant ships …"
+  },
+  {
+   "id": "southey/7",
+   "title": "Henry the Hermit",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "It was a little island where he dwelt,\nOr rather a lone rock, barren and bleak,\nShort scanty herbage spotting with dark spots …"
+  },
+  {
+   "id": "southey/8",
+   "title": "The Old Mansion House",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Time & Brevity"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "_Stranger_.\nOld friend! why you seem bent on parish duty,\nBreaking the highway stones,—and ’tis a task …"
+  },
+  {
+   "id": "southey/9",
+   "title": "The Grandmother's Tale",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Mythology & Folklore"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "_Jane_.\nHarry! I’m tired of playing. We’ll draw round\nThe fire, and Grandmamma perhaps will tell us …"
+  },
+  {
+   "id": "southey/10",
+   "title": "The Funeral",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Social Commentaries"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "The coffin as I past across the lane\nCame sudden on my view. It was not here,\nA sight of every day, as in the streets …"
+  },
+  {
+   "id": "southey/11",
+   "title": "The Sailor's Mother",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "_Woman_.\nSir for the love of God some small relief\nTo a poor woman! …"
+  },
+  {
+   "id": "southey/12",
+   "title": "The Witch",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Social Commentaries"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "_Nathaniel_.\nFather! here father! I have found a horse-shoe!\nFaith it was just in time, for t’other night …"
+  },
+  {
+   "id": "southey/13",
+   "title": "The Ruined Cottage",
+   "authorSlug": "southey",
+   "author": "Robert Southey",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Time & Brevity"
+   ],
+   "collection": "Poems, 1799 (Ballads / English Eclogues)",
+   "excerpt": "Aye Charles! I knew that this would fix thine eye,\nThis woodbine wreathing round the broken porch,\nIts leaves just withering, yet one autumn flower …"
   },
   {
    "id": "arnold/0",
