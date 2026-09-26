@@ -1,6 +1,6 @@
 {
- "count": 11012,
- "workCount": 39,
+ "count": 11031,
+ "workCount": 40,
  "poets": [
   {
    "slug": "cynewulf",
@@ -957,6 +957,22 @@
    "workCount": 0
   },
   {
+   "slug": "dryden",
+   "name": "John Dryden",
+   "dates": "1631–1700",
+   "era": "Restoration",
+   "category": "Restoration & Augustan",
+   "portrait": "poets/dryden.jpg",
+   "credit": "Portrait of John Dryden by an unknown artist, after Sir Godfrey Kneller · Public domain (Wikimedia Commons)",
+   "bio": [
+    "John Dryden (1631–1700) was England’s dominant literary figure of the later 17th century — poet, satirist, playwright, and critic — and was made the first official Poet Laureate in 1668.",
+    "His satires — Absalom and Achitophel, Mac Flecknoe, The Medal — and his public odes set the model for Augustan verse that Pope and Swift would inherit."
+   ],
+   "order": 585,
+   "poemCount": 19,
+   "workCount": 1
+  },
+  {
    "slug": "blake",
    "name": "William Blake",
    "dates": "1757–1827",
@@ -968,7 +984,7 @@
     "William Blake (1757–1827) was an English poet, painter, and printmaker, largely unrecognised in his lifetime and now seen as a seminal figure of the Romantic age.",
     "He engraved and hand-coloured his own illuminated books, most famously <em>Songs of Innocence and of Experience</em>, where word and image are inseparable."
    ],
-   "order": 590,
+   "order": 890,
    "poemCount": 46,
    "workCount": 0
   },
@@ -984,7 +1000,7 @@
     "William Wordsworth (1770–1850) was an English Romantic poet who, with Coleridge, launched the movement in <em>Lyrical Ballads</em> (1798).",
     "He made ordinary life and the natural world his subject, and served as Poet Laureate from 1843 until his death."
    ],
-   "order": 600,
+   "order": 900,
    "poemCount": 3,
    "workCount": 0
   },
@@ -1000,7 +1016,7 @@
     "Samuel Taylor Coleridge (1772–1834) was an English poet, critic, and philosopher, co-founder of the Romantic movement.",
     "His visionary poems ‘The Rime of the Ancient Mariner’ and ‘Kubla Khan’ remain touchstones of the imagination he spent his life theorising."
    ],
-   "order": 610,
+   "order": 910,
    "poemCount": 2,
    "workCount": 0
   },
@@ -1016,7 +1032,7 @@
     "Matthew Arnold (1822–1888) was an English poet and cultural critic, Professor of Poetry at Oxford.",
     "His poems — among them ‘Dover Beach’ and ‘The Scholar-Gipsy’ — register the anxious loss of religious certainty at the heart of the Victorian age."
    ],
-   "order": 620,
+   "order": 920,
    "poemCount": 485,
    "workCount": 0
   },
@@ -1032,7 +1048,7 @@
     "Robert Browning (1812–1889) was an English poet and playwright, master of the dramatic monologue — a poem spoken entirely in an invented character's voice.",
     "This selection gathers his early collections <em>Dramatic Lyrics</em> (1842) and <em>Dramatic Romances</em> (1845); his stage plays and longer closet-dramas (Pauline, Paracelsus, Sordello, Pippa Passes) are not included here."
    ],
-   "order": 630,
+   "order": 930,
    "poemCount": 407,
    "workCount": 0
   },
@@ -1048,7 +1064,7 @@
     "Lord Byron (George Gordon Byron, 1788–1824) was an English Romantic poet and satirist, one of the most celebrated — and scandalous — figures of his age.",
     "He died at Missolonghi while supporting the Greek war of independence, and gave his name to the brooding ‘Byronic hero.’"
    ],
-   "order": 640,
+   "order": 940,
    "poemCount": 3,
    "workCount": 0
   },
@@ -1064,7 +1080,7 @@
     "Percy Bysshe Shelley (1792–1822) was an English Romantic poet, radical in politics and idealist in temper.",
     "Author of ‘Ozymandias’ and ‘Ode to the West Wind,’ he drowned off the Italian coast before his thirtieth birthday."
    ],
-   "order": 650,
+   "order": 950,
    "poemCount": 3,
    "workCount": 0
   },
@@ -1080,7 +1096,7 @@
     "John Keats (1795–1821) was an English Romantic poet whose odes are among the most celebrated in the language.",
     "He trained as a surgeon before devoting himself to poetry, and died of tuberculosis in Rome at just twenty-five."
    ],
-   "order": 660,
+   "order": 960,
    "poemCount": 3,
    "workCount": 0
   },
@@ -1096,7 +1112,7 @@
     "Lionel Johnson (1867–1902) was an English poet and critic associated with the Rhymers' Club and the Decadent movement of the 1890s.",
     "A convert to Catholicism, his spare, disciplined verse turned repeatedly to faith, monastic ideals, and the pull of dissipation he struggled against."
    ],
-   "order": 670,
+   "order": 970,
    "poemCount": 29,
    "workCount": 0
   },
@@ -1112,7 +1128,7 @@
     "Oscar Wilde (1854–1900) was an Irish poet, playwright, and wit, one of the most celebrated figures of Victorian literary London before his 1895 trial and imprisonment.",
     "His early verse is lush and Romantic in the Keatsian mode, while <em>The Ballad of Reading Gaol</em>, written after his release from prison, is a stark, plainspoken account of suffering and remorse."
    ],
-   "order": 680,
+   "order": 980,
    "poemCount": 67,
    "workCount": 0
   },
@@ -1128,7 +1144,7 @@
     "Thomas Hardy (1840–1928) is best known as a novelist, but after finishing <em>Jude the Obscure</em> in 1895 he devoted the rest of his long career chiefly to poetry.",
     "His verse is plain-spoken and often bleak, preoccupied with chance, loss, rural Wessex life, and the death of his first wife Emma, which produced some of his most admired elegies."
    ],
-   "order": 690,
+   "order": 990,
    "poemCount": 517,
    "workCount": 0
   },
@@ -1144,7 +1160,7 @@
     "William Ernest Henley (1849–1903) was an English poet and editor whose leg was amputated in youth after tubercular illness, an experience recorded directly in his sequence <em>In Hospital</em>.",
     "He is best remembered for <em>Invictus</em>, and his robust, muscular verse and criticism made him an influential figure among younger writers of the 1890s."
    ],
-   "order": 700,
+   "order": 1000,
    "poemCount": 167,
    "workCount": 0
   },
@@ -1160,7 +1176,7 @@
     "A. E. Housman (1859–1936) was an English classical scholar and poet whose reputation rests on two slim volumes, <em>A Shropshire Lad</em> (1896) and <em>Last Poems</em> (1922).",
     "His terse, ballad-like lyrics of doomed youth, soldiering, and rural England were composed in a private grief masked by classical restraint."
    ],
-   "order": 710,
+   "order": 1010,
    "poemCount": 89,
    "workCount": 0
   },
@@ -1176,7 +1192,7 @@
     "Andrew Lang (1844–1912) was a Scottish man of letters, folklorist, and translator, remembered today chiefly for his coloured Fairy Books but also a prolific poet.",
     "His verse favours French forms revived by the 1870s ballade craze, along with translations and tributes to French and English poets he admired."
    ],
-   "order": 720,
+   "order": 1020,
    "poemCount": 198,
    "workCount": 0
   },
@@ -1192,7 +1208,7 @@
     "Amy Levy (1861–1889) was an English poet and novelist, among the first Jewish women to study at Cambridge, who took her own life at twenty-seven.",
     "Her poems of London street life, unrequited love, and urban melancholy anticipate the modern lyric's compression and irony."
    ],
-   "order": 730,
+   "order": 1030,
    "poemCount": 22,
    "workCount": 0
   },
@@ -1208,7 +1224,7 @@
     "George MacDonald (1824–1905) was a Scottish minister turned author, celebrated for fantasy novels such as <em>Phantastes</em> and <em>The Princess and the Goblin</em>, and a lifelong writer of devotional and reflective verse.",
     "His poems return often to faith, fatherhood, nature, and the soul's struggle toward trust in a loving God."
    ],
-   "order": 740,
+   "order": 1040,
    "poemCount": 331,
    "workCount": 0
   },
@@ -1224,7 +1240,7 @@
     "George Meredith (1828–1909) was an English novelist and poet whose sonnet sequence <em>Modern Love</em> (1862) gave unusually candid, ironic voice to a marriage's collapse.",
     "His nature poetry, especially <em>The Lark Ascending</em>, prizes close observation and intellectual vigour over conventional sentiment."
    ],
-   "order": 750,
+   "order": 1050,
    "poemCount": 254,
    "workCount": 0
   },
@@ -1240,7 +1256,7 @@
     "William Morris (1834–1896) was an English designer, socialist, and poet, a central figure of the Pre-Raphaelite circle whose vast output includes the narrative cycle <em>The Earthly Paradise</em> and the Icelandic-inspired epic <em>Sigurd the Volsung</em>.",
     "In later years his political convictions produced the direct, rallying verse of <em>Chants for Socialists</em> and <em>The Pilgrims of Hope</em>."
    ],
-   "order": 760,
+   "order": 1060,
    "poemCount": 183,
    "workCount": 0
   },
@@ -1256,7 +1272,7 @@
     "Henry Newbolt (1862–1938) was an English poet best known for patriotic and naval verse such as <em>Vitài Lampada</em> and <em>Drake's Drum</em>, written to celebrate duty, empire, and the sea.",
     "His confident public rhetoric made him one of the most widely recited poets of the pre-1914 era."
    ],
-   "order": 770,
+   "order": 1070,
    "poemCount": 118,
    "workCount": 0
   },
@@ -1272,7 +1288,7 @@
     "Arthur O'Shaughnessy (1844–1881) was an English poet who worked as a herpetologist at the British Museum while publishing richly musical, melancholy verse.",
     "His <em>Ode</em>, beginning \"We are the music makers,\" is his most famous poem and a manifesto for the visionary power of artists."
    ],
-   "order": 780,
+   "order": 1080,
    "poemCount": 36,
    "workCount": 0
   },
@@ -1288,7 +1304,7 @@
     "Algernon Charles Swinburne (1837–1909) was an English poet notorious in his own day for the sensuous, metrically dazzling, and often scandalous verse of <em>Poems and Ballads</em>.",
     "An ardent republican, he also wrote fervent political verse cheering Italian unification and liberty, alongside a huge later output of odes, elegies, and sonnets."
    ],
-   "order": 790,
+   "order": 1090,
    "poemCount": 624,
    "workCount": 0
   },
@@ -1304,7 +1320,7 @@
     "Francis Thompson (1859–1907) was an English poet who spent years destitute and addicted to opium on the streets of London before his talent was discovered and he found refuge among Catholic friends.",
     "His best-known poem, <em>The Hound of Heaven</em>, describes a soul fleeing and finally yielding to divine pursuit."
    ],
-   "order": 800,
+   "order": 1100,
    "poemCount": 19,
    "workCount": 0
   },
@@ -1320,7 +1336,7 @@
     "Lewis Carroll, the pen name of Charles Lutwidge Dodgson (1832–1898), was an Oxford mathematician best known for the Alice books, whose fondness for nonsense and wordplay also produced a distinctive body of comic and whimsical verse.",
     "<em>The Hunting of the Snark</em> and the parodies collected in <em>Phantasmagoria</em> remain classics of English nonsense poetry."
    ],
-   "order": 810,
+   "order": 1110,
    "poemCount": 45,
    "workCount": 0
   },
@@ -1336,7 +1352,7 @@
     "Rudyard Kipling (1865–1936) was an English author born in Bombay, awarded the Nobel Prize in Literature in 1907, whose verse gave voice to soldiers, machines, and the British imperial experience in vigorous, ballad-like rhythms.",
     "Poems such as <em>If—</em>, <em>Gunga Din</em>, and <em>Recessional</em> made him one of the most quoted poets in the English language."
    ],
-   "order": 820,
+   "order": 1120,
    "poemCount": 159,
    "workCount": 0
   },
@@ -1352,7 +1368,7 @@
     "Alice Meynell (1847–1922) was an English poet, essayist, and suffragist, admired in her lifetime for the precision and restraint of her devout, closely observed lyrics.",
     "A convert to Catholicism, she wrote often of motherhood, nature, and quiet spiritual attention."
    ],
-   "order": 830,
+   "order": 1130,
    "poemCount": 19,
    "workCount": 0
   },
@@ -1368,7 +1384,7 @@
     "Arthur Hugh Clough (1819–1861) was an English poet and close friend of Matthew Arnold, whose verse candidly registers the Victorian crisis of religious faith and doubt.",
     "His long poems <em>Amours de Voyage</em> and <em>The Bothie of Tober-na-Vuolich</em> experiment with conversational, unglamorous realism unusual for their time."
    ],
-   "order": 840,
+   "order": 1140,
    "poemCount": 92,
    "workCount": 0
   },
@@ -1384,7 +1400,7 @@
     "Ernest Dowson (1867–1900) was an English poet of the 1890s Decadent movement, associated with the Rhymers' Club, who died of tuberculosis and drink at thirty-two.",
     "His hallmark is a wistful, musical melancholy, most famous in the refrain \"I have been faithful to thee, Cynara! in my fashion,\" from his poem <em>Non Sum Qualis Eram</em>."
    ],
-   "order": 850,
+   "order": 1150,
    "poemCount": 72,
    "workCount": 0
   },
@@ -1400,7 +1416,7 @@
     "Alfred, Lord Tennyson (1809–1892) was Poet Laureate of Great Britain for over four decades and the most popular and representative poet of the Victorian age.",
     "His work ranges from the intimate grief of <em>In Memoriam A.H.H.</em>, written for a dead friend, to the martial narrative verse of <em>Enoch Arden</em> and the ballad-like <em>Maud</em>."
    ],
-   "order": 860,
+   "order": 1160,
    "poemCount": 245,
    "workCount": 0
   },
@@ -1416,7 +1432,7 @@
     "Elizabeth Barrett Browning (1806–1861) was one of the most celebrated English poets of her day, an invalid for much of her youth who eloped to Italy with fellow poet Robert Browning in 1846.",
     "Her <em>Sonnets from the Portuguese</em>, written to Robert during their courtship, remain her best-loved work, alongside socially engaged narrative poems on slavery, child labour, and women's lives."
    ],
-   "order": 870,
+   "order": 1170,
    "poemCount": 220,
    "workCount": 0
   },
@@ -1432,7 +1448,7 @@
     "Dante Gabriel Rossetti (1828–1882) was an English poet and painter, a founder of the Pre-Raphaelite Brotherhood, who worked in sister arts of image and verse throughout his career.",
     "His sonnet sequence <em>The House of Life</em> traces the arc of love and loss with dense, jewelled imagery, while <em>The Blessed Damozel</em> imagines a dead woman watching for her lover from heaven."
    ],
-   "order": 880,
+   "order": 1180,
    "poemCount": 119,
    "workCount": 0
   },
@@ -1448,7 +1464,7 @@
     "Robert Louis Stevenson (1850–1894) was a Scottish novelist and poet, best known for <em>Treasure Island</em> and <em>Strange Case of Dr Jekyll and Mr Hyde</em>, who also wrote widely loved verse.",
     "<em>A Child's Garden of Verses</em> captures the imaginative world of childhood, while <em>Songs of Travel</em>, mostly written in his final years in Samoa, turns to restlessness, distance, and mortality."
    ],
-   "order": 890,
+   "order": 1190,
    "poemCount": 98,
    "workCount": 0
   },
@@ -1464,7 +1480,7 @@
     "Charles Kingsley (1819–1875) was an English clergyman, novelist, and poet, remembered as a children's author for <em>The Water-Babies</em> and as a muscular-Christian social reformer.",
     "His poems range from the classical narrative <em>Andromeda</em>, written in unrhymed hexameters, to plain-spoken ballads and songs of the sea and English rural life."
    ],
-   "order": 900,
+   "order": 1200,
    "poemCount": 72,
    "workCount": 0
   },
@@ -1480,7 +1496,7 @@
     "Edward Lear (1812–1888) was an English artist and writer who, alongside a career as a natural history and landscape painter, invented much of the English nonsense verse tradition.",
     "His limericks, alphabets, and songs such as <em>The Owl and the Pussy-cat</em> and <em>The Jumblies</em>, collected across several <em>Book of Nonsense</em> volumes, delight in invented words and gentle absurdity."
    ],
-   "order": 910,
+   "order": 1210,
    "poemCount": 57,
    "workCount": 0
   },
@@ -1496,7 +1512,7 @@
     "Jean Ingelow (1820–1897) was an English poet and novelist, immensely popular in her lifetime, admired for narrative ballads and devotional lyrics of home, sea, and childhood.",
     "Her poem <em>The High Tide on the Coast of Lincolnshire</em> (1571), a ballad of a great flood, remained a schoolroom favourite for generations."
    ],
-   "order": 920,
+   "order": 1220,
    "poemCount": 175,
    "workCount": 0
   },
@@ -1512,7 +1528,7 @@
     "Edward FitzGerald (1809–1883) was an English writer whose free translation and adaptation of the medieval Persian quatrains of Omar Khayyam, <em>The Rubaiyat of Omar Khayyam</em>, became one of the most quoted poems in the English language.",
     "Reworked by FitzGerald through several editions, its meditations on wine, transience, and fate gave English verse a strikingly fatalistic, epicurean voice unlike anything else in the period."
    ],
-   "order": 930,
+   "order": 1230,
    "poemCount": 102,
    "workCount": 0
   },
@@ -1528,7 +1544,7 @@
     "Coventry Patmore (1823–1896) was an English poet best known for <em>The Angel in the House</em>, a long narrative sequence idealizing married domestic love that became one of the era's most influential, and later most contested, poems.",
     "A convert to Catholicism, his later odes turn toward mystical and religious themes."
    ],
-   "order": 940,
+   "order": 1240,
    "poemCount": 26,
    "workCount": 0
   },
@@ -1544,7 +1560,7 @@
     "Adelaide Anne Procter (1825–1864) was an English poet and social activist, a devout Catholic and one of the best-selling poets of the Victorian era after Tennyson himself.",
     "Her collection <em>Legends and Lyrics</em> gathers narrative ballads and devotional verse, often concerned with charity, suffering, and quiet endurance."
    ],
-   "order": 950,
+   "order": 1250,
    "poemCount": 100,
    "workCount": 0
   },
@@ -1560,7 +1576,7 @@
     "Emily Brontë (1818–1848) is best known as the author of <em>Wuthering Heights</em>, but she also wrote intense, visionary lyric poetry, much of it set in the imagined world of Gondal she created with her sister Anne.",
     "Published pseudonymously as \"Ellis Bell\" alongside her sisters' verse in 1846, her poems of longing, imprisonment, and the moors were far better received by contemporary critics than the sisters' novels first were."
    ],
-   "order": 960,
+   "order": 1260,
    "poemCount": 32,
    "workCount": 0
   },
@@ -1576,7 +1592,7 @@
     "Christina Rossetti (1830–1894) was an English poet of devotional intensity and quiet formal mastery, sister of the painter-poet Dante Gabriel Rossetti.",
     "Best known for ‘Goblin Market’ and the carol ‘In the Bleak Midwinter,’ she also wrote <em>Sing-Song</em> (1872), a book of nursery rhymes for children."
    ],
-   "order": 970,
+   "order": 1270,
    "poemCount": 215,
    "workCount": 0
   },
@@ -1592,7 +1608,7 @@
     "Walt Whitman (1819–1892) was an American poet, essayist, and journalist from Long Island, New York, widely regarded as the father of free verse and one of the most influential poets in American literature.",
     "His single, ever-expanding book ‘Leaves of Grass’, first published in 1855 and revised throughout his life into the 1892 ‘deathbed’ edition used here, celebrated democracy, the body, and the American landscape in a sweeping, unrhymed line."
    ],
-   "order": 980,
+   "order": 1280,
    "poemCount": 378,
    "workCount": 0
   },
@@ -1608,7 +1624,7 @@
     "Emily Dickinson (1830–1886) was an American poet who lived a famously reclusive life in Amherst, Massachusetts, writing nearly 1,800 poems of which barely a dozen were published in her lifetime.",
     "Her tightly compressed, slant-rhymed verse on death, nature, faith, and the inner mind — much of it untitled and left in small hand-sewn booklets — was published posthumously and is now considered among the most original in American literature."
    ],
-   "order": 990,
+   "order": 1290,
    "poemCount": 446,
    "workCount": 0
   },
@@ -1624,7 +1640,7 @@
     "Edgar Allan Poe (1809–1849) was an American writer, editor, and literary critic best known for tales of mystery and the macabre, but he considered himself first a poet and a founder of the detective and horror genres.",
     "His musical, tightly-wrought verse — including ‘The Raven’, ‘Annabel Lee’, and ‘The Bells’ — explores loss, beauty, and death, and made him one of the most widely imitated poets in the English language."
    ],
-   "order": 1000,
+   "order": 1300,
    "poemCount": 52,
    "workCount": 0
   },
@@ -1640,7 +1656,7 @@
     "Henry Wadsworth Longfellow (1807–1882) was an American poet and Harvard professor, and by far the most popular and widely read American poet of the 19th century, both at home and in Europe.",
     "A leading figure among the ‘Fireside Poets’, he wrote narrative epics such as ‘The Song of Hiawatha’ and ‘Paul Revere’s Ride’ alongside shorter lyrics on nature, faith, and everyday life, in verse prized for its clarity and musicality."
    ],
-   "order": 1010,
+   "order": 1310,
    "poemCount": 228,
    "workCount": 1
   },
@@ -1656,7 +1672,7 @@
     "Ralph Waldo Emerson (1803–1882) was an American essayist, lecturer, and poet from Concord, Massachusetts, and the leading voice of the Transcendentalist movement, which prized intuition, nature, and individual conscience over inherited tradition.",
     "Best known for essays such as ‘Self-Reliance’ and ‘Nature’, he also wrote compact, philosophical verse — including ‘Concord Hymn’, ‘The Rhodora’, and ‘Brahma’ — that distilled his ideas into poetic form."
    ],
-   "order": 1020,
+   "order": 1320,
    "poemCount": 207,
    "workCount": 0
   },
@@ -1672,7 +1688,7 @@
     "William Cullen Bryant (1794–1878) was an American poet and long-time editor of the New York Evening Post, whose meditative nature poetry helped establish a distinctly American Romantic voice.",
     "Written when he was only seventeen, ‘Thanatopsis’ remains his best-known work, and poems such as ‘To a Waterfowl’ and ‘The Prairies’ celebrate the American landscape with a solemn, elevated calm."
    ],
-   "order": 1030,
+   "order": 1330,
    "poemCount": 114,
    "workCount": 0
   },
@@ -1688,7 +1704,7 @@
     "James Russell Lowell (1819–1891) was an American poet, critic, and diplomat from Cambridge, Massachusetts, who edited the Atlantic Monthly and later served as U.S. minister to Spain and Britain.",
     "A member of the ‘Fireside Poets’, he wrote lyric and narrative verse — most famously ‘The Vision of Sir Launfal’ — alongside satirical and abolitionist poetry that engaged directly with the politics of his day."
    ],
-   "order": 1040,
+   "order": 1340,
    "poemCount": 146,
    "workCount": 1
   },
@@ -1704,7 +1720,7 @@
     "John Greenleaf Whittier (1807–1892) was an American Quaker poet and dedicated abolitionist from Massachusetts, who used verse throughout his life to campaign against slavery and to record New England legend and rural memory.",
     "His long autobiographical poem ‘Snow-Bound’ (1866), recalling his family snowed in at their farmhouse, became one of the most beloved American poems of the 19th century."
    ],
-   "order": 1050,
+   "order": 1350,
    "poemCount": 89,
    "workCount": 0
   },
@@ -1720,7 +1736,7 @@
     "Sidney Lanier (1842–1881) was an American poet and musician from Georgia who served in the Confederate army, was imprisoned as a prisoner of war, and spent much of his short life battling the tuberculosis that eventually killed him.",
     "A trained flautist, he brought a musician’s sense of rhythm and sound to poems such as ‘The Marshes of Glynn’ and ‘The Song of the Chattahoochee’, which celebrate the landscape of the American South."
    ],
-   "order": 1060,
+   "order": 1360,
    "poemCount": 85,
    "workCount": 0
   }
@@ -1740,15 +1756,15 @@
   },
   {
    "name": "Religion",
-   "count": 1622
+   "count": 1624
   },
   {
    "name": "Death & Dying",
-   "count": 667
+   "count": 669
   },
   {
    "name": "History & Politics",
-   "count": 565
+   "count": 574
   },
   {
    "name": "Relationships",
@@ -1756,11 +1772,11 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 295
+   "count": 300
   },
   {
    "name": "Time & Brevity",
-   "count": 227
+   "count": 228
   },
   {
    "name": "The Mind",
@@ -2910,6 +2926,33 @@
     {
      "title": "Guthlac",
      "stanzas": 113
+    }
+   ]
+  },
+  {
+   "slug": "hind-and-the-panther",
+   "title": "The Hind and the Panther",
+   "subtitle": "A Poem, in Three Parts",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "year": "1687",
+   "type": "Allegorical poem",
+   "translator": null,
+   "workGroup": null,
+   "note": "",
+   "blurb": "A long allegorical fable in which the milk-white Hind (the Catholic Church) and the Panther (the Church of England) debate faith and politics after James II’s accession.",
+   "sections": [
+    {
+     "title": "Part I",
+     "stanzas": 19
+    },
+    {
+     "title": "Part II",
+     "stanzas": 32
+    },
+    {
+     "title": "Part III",
+     "stanzas": 86
     }
    ]
   },
@@ -50073,6 +50116,234 @@
    ],
    "collection": null,
    "excerpt": "NO, no, unfaithful World, thou hast\nToo long my easie Heart betray'd,\nAnd me too long thy Foot-ball made: …"
+  },
+  {
+   "id": "dryden/0",
+   "title": "On the Death of Lord Hastings",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "Must noble Hastings immaturely die,\nThe honour of his ancient family;\nBeauty and learning thus together meet, …"
+  },
+  {
+   "id": "dryden/1",
+   "title": "Heroic Stanzas on the Death of Oliver Cromwell",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "1 And now 'tis time; for their officious haste,\n    Who would before have borne him to the sky,\n  Like eager Romans, ere all rites were past, …"
+  },
+  {
+   "id": "dryden/2",
+   "title": "To His Sacred Majesty: A Panegyric on His Coronation",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "In that wild deluge where the world was drown'd,\nWhen life and sin one common tomb had found,\nThe first small prospect of a rising hill …"
+  },
+  {
+   "id": "dryden/3",
+   "title": "To the Lord Chancellor Hyde",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "My Lord,\nWhile flattering crowds officiously appear\nTo give themselves, not you, a happy year; …"
+  },
+  {
+   "id": "dryden/4",
+   "title": "Satire on the Dutch",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "As needy gallants, in the scrivener's hands,\nCourt the rich knaves that gripe their mortgaged lands;\nThe first fat buck of all the season's sent, …"
+  },
+  {
+   "id": "dryden/5",
+   "title": "To Her Royal Highness the Duchess, on the Memorable Victory Gained by the Duke",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "Madam,\nWhen, for our sakes, your hero you resign'd\nTo swelling seas, and every faithless wind; …"
+  },
+  {
+   "id": "dryden/6",
+   "title": "Annus Mirabilis: The Year of Wonders, 1666",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "1  In thriving arts long time had Holland grown,\n     Crouching at home and cruel when abroad:\n   Scarce leaving us the means to claim our own; …"
+  },
+  {
+   "id": "dryden/7",
+   "title": "Absalom and Achitophel",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "In pious times, ere priestcraft did begin,\nBefore polygamy was made a sin;\nWhen man on many multiplied his kind, …"
+  },
+  {
+   "id": "dryden/8",
+   "title": "The Medal: A Satire Against Sedition",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "Of all our antic sights and pageantry,\nWhich English idiots run in crowds to see,\nThe Polish Medal bears the prize alone: …"
+  },
+  {
+   "id": "dryden/9",
+   "title": "Religio Laici; or, A Layman's Faith",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": null,
+   "excerpt": "Dim as the borrow'd beams of moon and stars\nTo lonely, weary, wandering travellers,\nIs reason to the soul: and as on high, …"
+  },
+  {
+   "id": "dryden/10",
+   "title": "Threnodia Augustalis: A Funeral Pindaric Poem, Sacred to the Happy Memory of King Charles II",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "Thus long my grief has kept me dumb:\n  Sure there's a lethargy in mighty woe,\n  Tears stand congeal'd, and cannot flow; …"
+  },
+  {
+   "id": "dryden/11",
+   "title": "Veni Creator Spiritus, Paraphrased",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": null,
+   "excerpt": "CREATOR SPIRIT, by whose aid\nThe world's foundations first were laid,\nCome, visit every pious mind; …"
+  },
+  {
+   "id": "dryden/12",
+   "title": "Mac Flecknoe",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "All human things are subject to decay,\nAnd when fate summons, monarchs must obey.\nThis Flecknoe found, who, like Augustus, young …"
+  },
+  {
+   "id": "dryden/13",
+   "title": "Britannia Rediviva: A Poem on the Prince, Born June 10, 1688",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "Our vows are heard betimes! and Heaven takes care\nTo grant, before we can conclude the prayer:\nPreventing angels met it half the way, …"
+  },
+  {
+   "id": "dryden/14",
+   "title": "To My Honoured Friend Sir Robert Howard, on His Excellent Poems",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "As there is music uninform'd by art\nIn those wild notes, which, with a merry heart,\nThe birds in unfrequented shades express, …"
+  },
+  {
+   "id": "dryden/15",
+   "title": "To Mr Lee, on His \"Alexander\"",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "The blast of common censure could I fear,\nBefore your play my name should not appear;\nFor 'twill be thought, and with some colour too, …"
+  },
+  {
+   "id": "dryden/16",
+   "title": "A Song for St Cecilia's Day, 1687",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "1   FROM harmony, from heavenly harmony\n         This universal frame began:\n       When nature underneath a heap …"
+  },
+  {
+   "id": "dryden/17",
+   "title": "Alexander's Feast; or, The Power of Music",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "1   'Twas at the royal feast, for Persia won\n          By Philip's warlike son:\n      Aloft in awful state …"
+  },
+  {
+   "id": "dryden/18",
+   "title": "The Secular Masque",
+   "authorSlug": "dryden",
+   "author": "John Dryden",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity"
+   ],
+   "collection": null,
+   "excerpt": "_Enter_ JANUS.\n\n_Janus_. Chronos, Chronos, mend thy pace; …"
   },
   {
    "id": "blake/0",
