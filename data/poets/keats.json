@@ -1,0 +1,60 @@
+{
+ "slug": "keats",
+ "name": "John Keats",
+ "dates": "1795–1821",
+ "era": "Romantic",
+ "category": "Romantic",
+ "portrait": "poets/keats.jpg",
+ "credit": "Portrait by William Hilton (c. 1822) · Public domain (Wikimedia Commons)",
+ "bio": [
+  "John Keats (1795–1821) was an English Romantic poet whose odes are among the most celebrated in the language.",
+  "He trained as a surgeon before devoting himself to poetry, and died of tuberculosis in Rome at just twenty-five."
+ ],
+ "order": 660,
+ "poems": [
+  {
+   "id": "keats/0",
+   "title": "Ode on a Grecian Urn",
+   "authorSlug": "keats",
+   "author": "John Keats",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Time & Brevity",
+    "Love"
+   ],
+   "collection": null,
+   "note": "Keats questions a silent urn until it answers with the poem’s most debated line: ‘Beauty is truth, truth beauty.’ Its frozen figures never age and never quite live — art’s cold, consoling permanence.",
+   "text": "Thou still unravish’d bride of quietness,\n   Thou foster-child of silence and slow time,\nSylvan historian, who canst thus express\n   A flowery tale more sweetly than our rhyme:\nWhat leaf-fring’d legend haunts about thy shape\n   Of deities or mortals, or of both,\n      In Tempe or the dales of Arcady?\n   What men or gods are these? What maidens loth?\nWhat mad pursuit? What struggle to escape?\n      What pipes and timbrels? What wild ecstasy?\n\nHeard melodies are sweet, but those unheard\n   Are sweeter; therefore, ye soft pipes, play on;\nNot to the sensual ear, but, more endear’d,\n   Pipe to the spirit ditties of no tone:\nFair youth, beneath the trees, thou canst not leave\n   Thy song, nor ever can those trees be bare;\n      Bold Lover, never, never canst thou kiss,\nThough winning near the goal yet, do not grieve;\n   She cannot fade, though thou hast not thy bliss,\n      For ever wilt thou love, and she be fair!\n\nAh, happy, happy boughs! that cannot shed\n   Your leaves, nor ever bid the Spring adieu;\nAnd, happy melodist, unwearied,\n   For ever piping songs for ever new;\nMore happy love! more happy, happy love!\n   For ever warm and still to be enjoy’d,\n      For ever panting, and for ever young;\nAll breathing human passion far above,\n   That leaves a heart high-sorrowful and cloy’d,\n      A burning forehead, and a parching tongue.\n\nWho are these coming to the sacrifice?\n   To what green altar, O mysterious priest,\nLead’st thou that heifer lowing at the skies,\n   And all her silken flanks with garlands drest?\nWhat little town by river or sea shore,\n   Or mountain-built with peaceful citadel,\n      Is emptied of this folk, this pious morn?\nAnd, little town, thy streets for evermore\n   Will silent be; and not a soul to tell\n      Why thou art desolate, can e’er return.\n\nO Attic shape! Fair attitude! with brede\n   Of marble men and maidens overwrought,\nWith forest branches and the trodden weed;\n   Thou, silent form, dost tease us out of thought\nAs doth eternity: Cold Pastoral!\n   When old age shall this generation waste,\n      Thou shalt remain, in midst of other woe\nThan ours, a friend to man, to whom thou say’st,\n   “Beauty is truth, truth beauty,”—that is all\n      Ye know on earth, and all ye need to know."
+  },
+  {
+   "id": "keats/1",
+   "title": "To Autumn",
+   "authorSlug": "keats",
+   "author": "John Keats",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": null,
+   "note": "No lament, only fullness: mists, ripeness, the last oozings of the cider-press. Keats hears autumn’s own music and lets the season stand, unhurried, as its own kind of perfection.",
+   "text": "Season of mists and mellow fruitfulness,\n   Close bosom-friend of the maturing sun;\nConspiring with him how to load and bless\n   With fruit the vines that round the thatch-eves run;\nTo bend with apples the moss’d cottage-trees,\n   And fill all fruit with ripeness to the core;\n      To swell the gourd, and plump the hazel shells\n   With a sweet kernel; to set budding more,\nAnd still more, later flowers for the bees,\nUntil they think warm days will never cease,\n      For summer has o’er-brimm’d their clammy cells.\n\nWho hath not seen thee oft amid thy store?\n   Sometimes whoever seeks abroad may find\nThee sitting careless on a granary floor,\n   Thy hair soft-lifted by the winnowing wind;\nOr on a half-reap’d furrow sound asleep,\n   Drows’d with the fume of poppies, while thy hook\n      Spares the next swath and all its twinèd flowers:\nAnd sometimes like a gleaner thou dost keep\n   Steady thy laden head across a brook;\n   Or by a cyder-press, with patient look,\n      Thou watchest the last oozings hours by hours.\n\nWhere are the songs of Spring? Ay, Where are they?\n   Think not of them, thou hast thy music too,—\nWhile barrèd clouds bloom the soft-dying day,\n   And touch the stubble-plains with rosy hue;\nThen in a wailful choir the small gnats mourn\n   Among the river sallows, borne aloft\n      Or sinking as the light wind lives or dies;\nAnd full-grown lambs loud bleat from hilly bourn;\n   Hedge-crickets sing; and now with treble soft\n   The red-breast whistles from a garden-croft;\n      And gathering swallows twitter in the skies."
+  },
+  {
+   "id": "keats/2",
+   "title": "Bright Star",
+   "authorSlug": "keats",
+   "author": "John Keats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": null,
+   "note": "The sonnet wants the star’s steadfastness but not its loneliness — Keats would be constant only while ‘pillow’d upon my fair love’s ripening breast,’ poised forever between eternity and a single human night.",
+   "text": "Bright star, would I were stedfast as thou art—\n   Not in lone splendour hung aloft the night\nAnd watching, with eternal lids apart,\n   Like nature’s patient, sleepless Eremite,\nThe moving waters at their priestlike task\n   Of pure ablution round earth’s human shores,\nOr gazing on the new soft-fallen mask\n   Of snow upon the mountains and the moors—\nNo—yet still stedfast, still unchangeable,\n   Pillow’d upon my fair love’s ripening breast,\nTo feel for ever its soft fall and swell,\n   Awake for ever in a sweet unrest,\nStill, still to hear her tender-taken breath,\n   And so live ever—or else swoon to death."
+  }
+ ]
+}

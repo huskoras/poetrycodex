@@ -4,16 +4,39 @@
   let DATA = null;
   let query = "";
   let filterSubject = "All";
-  let POETS = {};      // slug -> poet
-  let WORKS = {};      // slug -> work
-  let POEM_IDX = new Map(); // poem object -> index
+  let POETS = {};      // slug -> poet (index-level: metadata + counts, no full poems)
+  let WORKS = {};      // slug -> work (index-level: metadata + section titles/stanzas, no text)
   let CATEGORY_STATS = {}; // category name -> { poems, works }
+
+  // ---------- on-demand data fetching (poet/work full text, cached in memory) ----------
+  const POET_CACHE = new Map();  // slug -> Promise<{slug, poems:[...]}>
+  const WORK_CACHE = new Map();  // slug -> Promise<full work with sections[].text>
+  function fetchPoetFile(slug) {
+    if (!POET_CACHE.has(slug)) {
+      POET_CACHE.set(slug, fetch(`data/poets/${encodeURIComponent(slug)}.json`)
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .catch((e) => { POET_CACHE.delete(slug); throw e; }));
+    }
+    return POET_CACHE.get(slug);
+  }
+  function fetchWorkFile(slug) {
+    if (!WORK_CACHE.has(slug)) {
+      WORK_CACHE.set(slug, fetch(`data/works/${encodeURIComponent(slug)}.json`)
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .catch((e) => { WORK_CACHE.delete(slug); throw e; }));
+    }
+    return WORK_CACHE.get(slug);
+  }
+  function renderLoading() { app.innerHTML = `<p class="loading">Loading…</p>`; }
+  function renderFetchError(e) {
+    app.innerHTML = `<p class="empty">Could not load this text (${esc(e.message)}).<br>Check your connection and try again.</p>`;
+  }
 
   const esc = (s) => String(s == null ? "" : s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
   // ---------- era/category taxonomy ----------
-  // Umbrella categories applied to every poet's `category` field (see poems.json).
+  // Umbrella categories applied to every poet's `category` field (see data/poets/<slug>.json).
   // Order here is the display/chronological order used on the home page.
   const CATEGORY_ORDER = [
     "Ancient Greek & Roman",
@@ -39,16 +62,15 @@
   const EPICS_SLUG = "epics";
   // "Epics" is a cross-cutting tag derived from each work's existing `type` field
   // (e.g. "Epic poem", "Heroic poem", "Historical epic") rather than a duplicated
-  // boolean flag in the data — one regex here keeps poems.json untouched.
+  // boolean flag in the data — one regex here keeps the work files untouched.
   const isEpicWork = (w) => /\b(epic|heroic poem)\b/i.test(w.type || "");
 
-  fetch("poems.json")
+  fetch("data/index.json")
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((d) => {
       DATA = d;
       d.poets.forEach((p) => { POETS[p.slug] = p; });
       (d.works || []).forEach((w) => { WORKS[w.slug] = w; });
-      d.poems.forEach((p, i) => POEM_IDX.set(p, i));
       d.poets.forEach((p) => {
         if (!p.category) return;
         const s = (CATEGORY_STATS[p.category] = CATEGORY_STATS[p.category] || { poems: 0, works: 0 });
@@ -91,7 +113,16 @@
     if (!DATA) return;
     const h = location.hash || "#/";
     let m;
-    if ((m = h.match(/^#\/poem\/(\d+)$/))) { setRoute("poems", "sub"); renderDetail(parseInt(m[1], 10)); }
+    if ((m = h.match(/^#\/poem\/(\d+)$/))) {
+      // Legacy link: #/poem/<arrayIndex> from the old single-poems.json array.
+      // Resolve via the frozen legacyIndex map and redirect to the new stable id.
+      setRoute("poems", "sub");
+      const oldI = parseInt(m[1], 10);
+      const id = DATA.legacyIndex && DATA.legacyIndex[oldI];
+      if (id) location.replace(location.href.split("#")[0] + "#/poem/" + id);
+      else { app.innerHTML = `<p class="empty">That poem could not be found.</p>`; }
+    }
+    else if ((m = h.match(/^#\/poem\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderDetail(m[1], parseInt(m[2], 10)); }
     else if ((m = h.match(/^#\/work\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderWorkSection(m[1], parseInt(m[2], 10)); }
     else if ((m = h.match(/^#\/work\/([\w-]+)$/))) { setRoute("poems", "sub"); renderWork(m[1]); }
     else if ((m = h.match(/^#\/poet\/([\w-]+)$/))) { setRoute("poets", "sub"); renderPoet(m[1]); }
@@ -113,21 +144,23 @@
   function matches(p) {
     if (filterSubject !== "All" && p.primarySubject !== filterSubject) return false;
     if (query) {
-      const hay = (p.title + " " + p.author + " " + p.text + " " + p.subjects.join(" ")).toLowerCase();
+      // Full poem text is no longer in the index (that's the whole point of the
+      // split), so search matches title + author + excerpt + subjects only.
+      const hay = (p.title + " " + p.author + " " + p.excerpt + " " + p.subjects.join(" ")).toLowerCase();
       if (!hay.includes(query)) return false;
     }
     return true;
   }
-  const cardHTML = (p, i) => `
-    <button class="card" data-i="${i}">
+  const cardHTML = (p) => `
+    <button class="card" data-id="${esc(p.id)}">
       <div class="card-subject">${esc(p.primarySubject)}</div>
       <h2 class="card-title">${esc(p.title)}</h2>
       <div class="card-author">${esc(p.author)}</div>
-      <p class="card-excerpt">${esc(p.text)}</p>
+      <p class="card-excerpt">${esc(p.excerpt)}</p>
     </button>`;
   function bindCards() {
-    app.querySelectorAll(".card[data-i]").forEach((c) =>
-      c.addEventListener("click", () => { location.hash = "#/poem/" + c.dataset.i; }));
+    app.querySelectorAll(".card[data-id]").forEach((c) =>
+      c.addEventListener("click", () => { location.hash = "#/poem/" + c.dataset.id; }));
   }
 
   // ---------- POEMS ----------
@@ -176,8 +209,8 @@
       : (DATA.works || []).filter((w) => POETS[w.authorSlug] && POETS[w.authorSlug].category === catName);
     const poems = isEpics
       ? []
-      : DATA.poems.map((p, i) => ({ p, i })).filter(({ p }) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
-    poems.sort((a, b) => sortKey(a.p.title).localeCompare(sortKey(b.p.title)));
+      : DATA.poems.filter((p) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
+    poems.sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title)));
 
     const sub = isEpics
       ? `${works.length} epic work${works.length === 1 ? "" : "s"}, spanning every era in the archive.`
@@ -188,7 +221,7 @@
       <div class="page-head"><h1 class="page-title">${esc(catName)}</h1><p class="page-sub">${sub}</p></div>
       <div class="grid">
         ${works.map(workCardHTML).join("")}
-        ${poems.map(({ p, i }) => cardHTML(p, i)).join("")}
+        ${poems.map(cardHTML).join("")}
         ${!works.length && !poems.length ? `<p class="empty">Nothing filed here yet.</p>` : ""}
       </div>`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/"; });
@@ -198,8 +231,8 @@
 
   const sortKey = (s) => s.toLowerCase().replace(/^["'“‘]*(a|an|the)\s+/, "").replace(/^[^a-z0-9]+/, "").trim();
   function renderList() {
-    const results = DATA.poems.map((p, i) => ({ p, i })).filter(({ p }) => matches(p));
-    results.sort((a, b) => sortKey(a.p.title).localeCompare(sortKey(b.p.title)));
+    const results = DATA.poems.filter(matches);
+    results.sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title)));
     const works = (DATA.works || []).filter((w) => filterSubject === "All" && (!query || (w.title + " " + w.author).toLowerCase().includes(query)));
     let banner = "";
     if (query) banner = `<div class="filter-banner"><span class="lbl">Search</span> <span class="val">“${esc(query)}”</span><button data-clear="1">Clear ✕</button></div>`;
@@ -210,7 +243,7 @@
       ${banner}
       ${query ? "" : `<div class="chips">${chips}</div>`}
       <p class="result-meta">${results.length} poem${results.length === 1 ? "" : "s"}${works.length ? " · " + works.length + " work" + (works.length === 1 ? "" : "s") : ""}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}</p>
-      <div class="grid">${works.map(workCardHTML).join("")}${results.length || works.length ? results.map(({ p, i }) => cardHTML(p, i)).join("") : `<p class="empty">No poems match.</p>`}</div>`;
+      <div class="grid">${works.map(workCardHTML).join("")}${results.length || works.length ? results.map(cardHTML).join("") : `<p class="empty">No poems match.</p>`}</div>`;
 
     app.querySelectorAll(".chip").forEach((c) => c.addEventListener("click", () => { filterSubject = c.dataset.sub; query = ""; syncSearchInput(); renderList(); }));
     const clr = app.querySelector("[data-clear]");
@@ -248,7 +281,7 @@
   function renderPoet(slug) {
     const poet = POETS[slug];
     if (!poet) { location.hash = "#/poets"; return; }
-    const poems = DATA.poems.map((p, i) => ({ p, i })).filter(({ p }) => p.authorSlug === slug);
+    const poems = DATA.poems.filter((p) => p.authorSlug === slug);
     const works = (DATA.works || []).filter((w) => w.authorSlug === slug);
     const worksHTML = works.length ? `
         <section class="poet-poems">
@@ -280,8 +313,8 @@
         <section class="poet-poems">
           <h2>Poems · ${poems.length}</h2>
           <ul class="poem-links">
-            ${poems.map(({ p, i }) => `
-              <li><a href="#/poem/${i}"><span class="pl-title">${esc(p.title)}</span><span class="pl-sub">${esc(p.primarySubject)}</span></a></li>`).join("")}
+            ${poems.map((p) => `
+              <li><a href="#/poem/${esc(p.id)}"><span class="pl-title">${esc(p.title)}</span><span class="pl-sub">${esc(p.primarySubject)}</span></a></li>`).join("")}
           </ul>
         </section>
       </article>`;
@@ -304,7 +337,7 @@
         <p class="section-label">Contents · ${w.sections.length} parts</p>
         <ul class="poem-links">
           ${w.sections.map((s, i) => `
-            <li><a href="#/work/${esc(w.slug)}/${i}"><span class="pl-title">${esc(s.title)}</span><span class="pl-sub">${s.text.split("\n\n").length} stanzas</span></a></li>`).join("")}
+            <li><a href="#/work/${esc(w.slug)}/${i}"><span class="pl-title">${esc(s.title)}</span><span class="pl-sub">${s.stanzas} stanzas</span></a></li>`).join("")}
         </ul>
       </article>`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/poet/" + w.authorSlug; });
@@ -312,8 +345,16 @@
 
   // ---------- WORK: one section (canto) reader ----------
   function renderWorkSection(slug, i) {
-    const w = WORKS[slug];
-    if (!w || !w.sections[i]) { location.hash = "#/work/" + slug; return; }
+    if (!WORKS[slug]) { location.hash = "#/"; return; }
+    renderLoading();
+    const requestedHash = location.hash;
+    fetchWorkFile(slug).then((w) => {
+      if (location.hash !== requestedHash) return; // route changed while fetching
+      if (!w.sections[i]) { location.hash = "#/work/" + slug; return; }
+      renderWorkSectionReady(w, slug, i);
+    }).catch((e) => { if (location.hash === requestedHash) renderFetchError(e); });
+  }
+  function renderWorkSectionReady(w, slug, i) {
     const s = w.sections[i];
     app.innerHTML = `
       <article class="detail">
@@ -371,9 +412,21 @@
   }
 
   // ---------- POEM DETAIL ----------
-  function renderDetail(i) {
-    const p = DATA.poems[i];
-    if (!p) { location.hash = "#/"; return; }
+  // id format: "<authorSlug>/<n>" where n is the poem's index within that
+  // poet's own poems array (stable across content edits to OTHER poets).
+  function renderDetail(slug, n) {
+    if (!POETS[slug]) { location.hash = "#/"; return; }
+    renderLoading();
+    const requestedHash = location.hash;
+    fetchPoetFile(slug).then((poetFile) => {
+      if (location.hash !== requestedHash) return; // route changed while fetching
+      const p = poetFile.poems[n];
+      if (!p) { location.hash = "#/poet/" + slug; return; }
+      renderDetailReady(poetFile, slug, n, p);
+    }).catch((e) => { if (location.hash === requestedHash) renderFetchError(e); });
+  }
+  function renderDetailReady(poetFile, slug, n, p) {
+    const poems = poetFile.poems;
     const themes = p.subjects.length
       ? `<div class="themes">${p.subjects.map((s) => `<span class="theme-tag" data-sub="${esc(s)}">${esc(s)}</span>`).join("")}</div>` : "";
     app.innerHTML = `
@@ -390,8 +443,8 @@
         <p class="section-label">Codex Note</p>
         <p class="note-block">${esc(p.note)}</p>` : ""}
         <div class="detail-nav">
-          <button ${i === 0 ? "disabled" : ""} data-go="${i - 1}"><span class="dir">← Previous</span>${i > 0 ? esc(DATA.poems[i - 1].title) : ""}</button>
-          <button class="next" ${i === DATA.poems.length - 1 ? "disabled" : ""} data-go="${i + 1}"><span class="dir">Next →</span>${i < DATA.poems.length - 1 ? esc(DATA.poems[i + 1].title) : ""}</button>
+          <button ${n === 0 ? "disabled" : ""} data-go="${n - 1}"><span class="dir">← Previous</span>${n > 0 ? esc(poems[n - 1].title) : ""}</button>
+          <button class="next" ${n === poems.length - 1 ? "disabled" : ""} data-go="${n + 1}"><span class="dir">Next →</span>${n < poems.length - 1 ? esc(poems[n + 1].title) : ""}</button>
         </div>
       </article>`;
     document.getElementById("back").addEventListener("click", () => { if (history.length > 1) history.back(); else location.hash = "#/poems"; });
@@ -401,6 +454,6 @@
       query = isSub ? "" : t.dataset.sub.toLowerCase();
       syncSearchInput(); location.hash = "#/poems";
     }));
-    app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/poem/" + b.dataset.go; }));
+    app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/poem/" + slug + "/" + b.dataset.go; }));
   }
 })();

@@ -1,0 +1,76 @@
+{
+ "slug": "milton",
+ "name": "John Milton",
+ "dates": "1608–1674",
+ "era": "17th Century",
+ "category": "Metaphysical & Cavalier",
+ "portrait": "poets/milton.jpg",
+ "credit": "Portrait, Christ’s College, Cambridge · Public domain (Wikimedia Commons)",
+ "bio": [
+  "John Milton (1608–1674) was an English poet and polemicist, author of the epic <em>Paradise Lost</em>. He went blind in mid-life and composed his greatest work by dictation.",
+  "Though he predates the Romantic movement, his blank verse and his figure of Satan shaped nearly every English poet who followed."
+ ],
+ "order": 450,
+ "poems": [
+  {
+   "id": "milton/0",
+   "title": "Sonnet 19: When I Consider How My Light Is Spent",
+   "authorSlug": "milton",
+   "author": "John Milton",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Living",
+    "Time & Brevity"
+   ],
+   "collection": null,
+   "note": "Written after Milton went blind, this sonnet turns a private terror — uselessness before God — into a theology of patience, closing on its famous redefinition of service as endurance: “They also serve who only stand and wait.”",
+   "text": "When I consider how my light is spent,\n   Ere half my days, in this dark world and wide,\n   And that one Talent which is death to hide\n   Lodged with me useless, though my Soul more bent\nTo serve therewith my Maker, and present\n   My true account, lest he returning chide;\n   “Doth God exact day-labour, light denied?”\n   I fondly ask. But patience, to prevent\nThat murmur, soon replies, “God doth not need\n   Either man’s work or his own gifts; who best\n   Bear his mild yoke, they serve him best. His state\nIs Kingly. Thousands at his bidding speed\n   And post o’er Land and Ocean without rest:\n   They also serve who only stand and wait.”"
+  },
+  {
+   "id": "milton/1",
+   "title": "On Shakespeare. 1630",
+   "authorSlug": "milton",
+   "author": "John Milton",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Time & Brevity",
+    "Living"
+   ],
+   "collection": null,
+   "note": "Milton’s first published poem argues that Shakespeare needs no marble tomb: his readers, struck ‘marble’ with wonder, become his living monument. The conceit fuses elegy with poetry’s oldest boast — that verse outlasts stone.",
+   "text": "What needs my Shakespeare for his honoured bones,\nThe labour of an age in pilèd stones,\nOr that his hallowed relics should be hid\nUnder a star-ypointing pyramid?\nDear son of memory, great heir of fame,\nWhat need’st thou such weak witness of thy name?\nThou in our wonder and astonishment\nHast built thyself a live-long monument.\nFor whilst to th’ shame of slow-endeavouring art,\nThy easy numbers flow, and that each heart\nHath from the leaves of thy unvalued book\nThose Delphic lines with deep impression took,\nThen thou, our fancy of itself bereaving,\nDost make us marble with too much conceiving;\nAnd so sepúlchred in such pomp dost lie,\nThat kings for such a tomb would wish to die."
+  },
+  {
+   "id": "milton/2",
+   "title": "Sonnet 7: How Soon Hath Time",
+   "authorSlug": "milton",
+   "author": "John Milton",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Living",
+    "Religion"
+   ],
+   "collection": null,
+   "note": "At twenty-three, Milton frets that he has produced nothing equal to his ambition. The sonnet resolves that anxiety into submission: whatever his pace, his life unfolds ‘in strictest measure’ under ‘my great Task-Master’s eye.’",
+   "text": "How soon hath Time, the subtle thief of youth,\n   Stol’n on his wing my three-and-twentieth year!\n   My hasting days fly on with full career,\n   But my late spring no bud or blossom shew’th.\nPerhaps my semblance might deceive the truth\n   That I to manhood am arriv’d so near,\n   And inward ripeness doth much less appear,\nThat some more timely-happy spirits endu’th.\nYet be it less or more, or soon or slow,\n   It shall be still in strictest measure ev’n\n   To that same lot, however mean or high,\nToward which Time leads me, and the will of Heav’n:\n   All is, if I have grace to use it so\n   As ever in my great Task-Master’s eye."
+  },
+  {
+   "id": "milton/3",
+   "title": "On the Late Massacre in Piedmont",
+   "authorSlug": "milton",
+   "author": "John Milton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion",
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "note": "Milton’s furious sonnet on the 1655 slaughter of the Waldensians is public poetry as both prayer and protest. The martyrs’ scattered ashes become seed: persecution, he insists, will multiply a hundredfold the faith it meant to destroy.",
+   "text": "Avenge, O Lord, thy slaughtered saints, whose bones\n   Lie scattered on the Alpine mountains cold;\n   Ev’n them who kept thy truth so pure of old,\n   When all our fathers worshiped stocks and stones,\nForget not: in thy book record their groans\n   Who were thy sheep and in their ancient fold\n   Slain by the bloody Piedmontese that rolled\n   Mother with infant down the rocks. Their moans\nThe vales redoubled to the hills, and they\n   To Heav’n. Their martyred blood and ashes sow\n   O’er all th’ Italian fields where still doth sway\nThe triple Tyrant; that from these may grow\n   A hundredfold, who having learnt thy way\n   Early may fly the Babylonian woe."
+  }
+ ]
+}

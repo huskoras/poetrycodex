@@ -1,0 +1,58 @@
+{
+ "slug": "byron",
+ "name": "Lord Byron",
+ "dates": "1788–1824",
+ "era": "Romantic",
+ "category": "Romantic",
+ "portrait": "poets/byron.jpg",
+ "credit": "Portrait by Thomas Phillips (1813) · Public domain (Wikimedia Commons)",
+ "bio": [
+  "Lord Byron (George Gordon Byron, 1788–1824) was an English Romantic poet and satirist, one of the most celebrated — and scandalous — figures of his age.",
+  "He died at Missolonghi while supporting the Greek war of independence, and gave his name to the brooding ‘Byronic hero.’"
+ ],
+ "order": 640,
+ "poems": [
+  {
+   "id": "byron/0",
+   "title": "She Walks in Beauty",
+   "authorSlug": "byron",
+   "author": "Lord Byron",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "The Body"
+   ],
+   "collection": null,
+   "note": "Written after Byron saw his cousin in mourning dress, the lyric balances light and dark in every line, finding a beauty ‘of cloudless climes and starry skies’ that is as much moral serenity as physical grace.",
+   "text": "She walks in beauty, like the night\nOf cloudless climes and starry skies;\nAnd all that’s best of dark and bright\nMeet in her aspect and her eyes;\nThus mellowed to that tender light\nWhich heaven to gaudy day denies.\n\nOne shade the more, one ray the less,\nHad half impaired the nameless grace\nWhich waves in every raven tress,\nOr softly lightens o’er her face;\nWhere thoughts serenely sweet express,\nHow pure, how dear their dwelling-place.\n\nAnd on that cheek, and o’er that brow,\nSo soft, so calm, yet eloquent,\nThe smiles that win, the tints that glow,\nBut tell of days in goodness spent,\nA mind at peace with all below,\nA heart whose love is innocent!"
+  },
+  {
+   "id": "byron/1",
+   "title": "So, We’ll Go No More a Roving",
+   "authorSlug": "byron",
+   "author": "Lord Byron",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Living"
+   ],
+   "collection": null,
+   "note": "Weariness in the voice of the age’s great adventurer. The heart must pause, the sword outwears its sheath — Byron admits that even desire has a curfew.",
+   "text": "So, we’ll go no more a roving\n   So late into the night,\nThough the heart be still as loving,\n   And the moon be still as bright.\n\nFor the sword outwears its sheath,\n   And the soul wears out the breast,\nAnd the heart must pause to breathe,\n   And love itself have rest.\n\nThough the night was made for loving,\n   And the day returns too soon,\nYet we’ll go no more a roving\n   By the light of the moon."
+  },
+  {
+   "id": "byron/2",
+   "title": "When We Two Parted",
+   "authorSlug": "byron",
+   "author": "Lord Byron",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": null,
+   "note": "A poem of secret grief. Because the love was hidden, so must the mourning be; Byron greets a lost lover’s name years later ‘with silence and tears.’",
+   "text": "When we two parted\n   In silence and tears,\nHalf broken-hearted\n   To sever for years,\nPale grew thy cheek and cold,\n   Colder thy kiss;\nTruly that hour foretold\n   Sorrow to this.\n\nThe dew of the morning\n   Sunk chill on my brow—\nIt felt like the warning\n   Of what I feel now.\nThy vows are all broken,\n   And light is thy fame:\nI hear thy name spoken,\n   And share in its shame.\n\nThey name thee before me,\n   A knell to mine ear;\nA shudder comes o’er me—\n   Why wert thou so dear?\nThey know not I knew thee,\n   Who knew thee too well:—\nLong, long shall I rue thee,\n   Too deeply to tell.\n\nIn secret we met—\n   In silence I grieve,\nThat thy heart could forget,\n   Thy spirit deceive.\nIf I should meet thee\n   After long years,\nHow should I greet thee?—\n   With silence and tears."
+  }
+ ]
+}

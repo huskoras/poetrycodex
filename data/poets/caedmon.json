@@ -1,0 +1,31 @@
+{
+ "slug": "caedmon",
+ "name": "Cædmon",
+ "dates": "fl. c. 657–680",
+ "era": "Old English",
+ "category": "Anglo-Saxon",
+ "portrait": "poets/caedmon.jpg",
+ "credit": "A page from the so-called ‘Cædmon Manuscript’ (Bodleian Library, MS Junius 11, c. 1000) — the illustrated Old English paraphrase of Genesis, Exodus, and Daniel once (wrongly) believed to be Cædmon's own work. Not a portrait; no image of him survives. Public domain (Wikimedia Commons).",
+ "bio": [
+  "Cædmon is the first English poet known to us by name. According to the Venerable Bede's Ecclesiastical History (completed 731), he was an illiterate herdsman attached to the double monastery at Whitby who, ashamed of his inability to sing at feasts, received the gift of song in a dream: a stranger commanded him to “sing of the beginning of created things,” and he woke with the verses of what is now called Cædmon's Hymn already composed.",
+  "The Abbess Hild, recognizing the gift as divine, had him instructed in sacred history so that he might turn it into verse; he is said to have gone on to compose poems on Genesis, Exodus, and other scriptural subjects, though none of these survive under his name. Only the nine-line Hymn, preserved by Bede and copied into manuscripts of the Ecclesiastical History, can be attributed to him with any confidence.",
+  "For centuries the long biblical paraphrases of the Junius Manuscript (Genesis, Exodus, Daniel, Christ and Satan) were attributed to Cædmon on the strength of Bede's account, and the manuscript is still nicknamed for him, but modern scholarship treats those poems as the anonymous work of later, unrelated poets."
+ ],
+ "order": 10,
+ "poems": [
+  {
+   "id": "caedmon/0",
+   "title": "Cædmon's Hymn",
+   "authorSlug": "caedmon",
+   "author": "Cædmon",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Preserved in Bede's Ecclesiastical History",
+   "note": "The earliest datable poem in English, nine lines of praise for the Creator that Cædmon is said by Bede to have composed in a dream. Preserved in both Northumbrian and West Saxon versions; this is a translation of the West Saxon text.",
+   "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+   "text": "Now shall we praise the Prince of heaven,\nThe might of the Maker and his manifold thought,\nThe work of the Father: of what wonders he wrought\nThe Lord everlasting, when he laid out the worlds.\nHe first raised up for the race of men\nThe heaven as a roof, the holy Ruler.\nThen the world below, the Ward of mankind,\nThe Lord everlasting, at last established\nAs a home for man, the Almighty Lord."
+  }
+ ]
+}

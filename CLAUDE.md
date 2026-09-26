@@ -10,8 +10,11 @@ if you learn something durable about this project, update `AGENTS.md`, not this 
 
 Quick reminders:
 - Static site, no build step. `git push` to `main` **is** the deploy (GitHub Pages).
-- All content lives in `poems.json` (~30 MB). Recompute `count`, `subjects[]`,
-  and per-poet `poemCount`/`workCount` after any content change.
+- Content lives in `data/poets/<slug>.json` + `data/works/<slug>.json` (full text).
+  `data/index.json` is a generated startup index — after any content edit, run
+  `python tools/build_index.py` (recomputes `count`, `subjects[]`, per-poet
+  `poemCount`/`workCount`), then `python tools/verify_split.py`, then commit both the
+  edited poet/work file and the regenerated `data/index.json`.
 - Public domain only. Translations must be pre-1929 — record the `translator` field.
 - Never ingest editorial notes, introductions, footnotes or stage plays as "poems".
 - Spot-check extracted poems before committing; bad data is worse than no data.

@@ -1,0 +1,58 @@
+{
+ "slug": "wordsworth",
+ "name": "William Wordsworth",
+ "dates": "1770–1850",
+ "era": "Romantic",
+ "category": "Romantic",
+ "portrait": "poets/wordsworth.jpg",
+ "credit": "‘Wordsworth on Helvellyn’ by Benjamin Robert Haydon (1842) · Public domain (Wikimedia Commons)",
+ "bio": [
+  "William Wordsworth (1770–1850) was an English Romantic poet who, with Coleridge, launched the movement in <em>Lyrical Ballads</em> (1798).",
+  "He made ordinary life and the natural world his subject, and served as Poet Laureate from 1843 until his death."
+ ],
+ "order": 600,
+ "poems": [
+  {
+   "id": "wordsworth/0",
+   "title": "I Wandered Lonely as a Cloud",
+   "authorSlug": "wordsworth",
+   "author": "William Wordsworth",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": null,
+   "note": "Memory, not the flowers, is the poem’s real subject. The crowd of daffodils returns to Wordsworth ‘in vacant or in pensive mood’ — proof of his belief that poetry begins in emotion recollected in tranquillity.",
+   "text": "I wandered lonely as a cloud\nThat floats on high o’er vales and hills,\nWhen all at once I saw a crowd,\nA host, of golden daffodils;\nBeside the lake, beneath the trees,\nFluttering and dancing in the breeze.\n\nContinuous as the stars that shine\nAnd twinkle on the milky way,\nThey stretched in never-ending line\nAlong the margin of a bay:\nTen thousand saw I at a glance,\nTossing their heads in sprightly dance.\n\nThe waves beside them danced; but they\nOut-did the sparkling waves in glee:\nA poet could not but be gay,\nIn such a jocund company:\nI gazed—and gazed—but little thought\nWhat wealth the show to me had brought:\n\nFor oft, when on my couch I lie\nIn vacant or in pensive mood,\nThey flash upon that inward eye\nWhich is the bliss of solitude;\nAnd then my heart with pleasure fills,\nAnd dances with the daffodils."
+  },
+  {
+   "id": "wordsworth/1",
+   "title": "Composed upon Westminster Bridge, September 3, 1802",
+   "authorSlug": "wordsworth",
+   "author": "William Wordsworth",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": null,
+   "note": "The great Romantic of nature stops, astonished, before the sleeping city at dawn. London wears the morning ‘like a garment’; even the machine of the metropolis lies still, its mighty heart quiet.",
+   "text": "Earth has not any thing to show more fair:\nDull would he be of soul who could pass by\nA sight so touching in its majesty:\nThis City now doth, like a garment, wear\nThe beauty of the morning; silent, bare,\nShips, towers, domes, theatres, and temples lie\nOpen unto the fields, and to the sky;\nAll bright and glittering in the smokeless air.\nNever did sun more beautifully steep\nIn his first splendour, valley, rock, or hill;\nNe’er saw I, never felt, a calm so deep!\nThe river glideth at his own sweet will:\nDear God! the very houses seem asleep;\nAnd all that mighty heart is lying still!"
+  },
+  {
+   "id": "wordsworth/2",
+   "title": "The World Is Too Much with Us",
+   "authorSlug": "wordsworth",
+   "author": "William Wordsworth",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "note": "A sonnet against getting and spending. Wordsworth would rather be a pagan who sees Proteus rise from the sea than a modern soul deaf to nature — a furious defence of wonder over commerce.",
+   "text": "The world is too much with us; late and soon,\nGetting and spending, we lay waste our powers;—\nLittle we see in Nature that is ours;\nWe have given our hearts away, a sordid boon!\nThis Sea that bares her bosom to the moon;\nThe winds that will be howling at all hours,\nAnd are up-gathered now like sleeping flowers;\nFor this, for everything, we are out of tune;\nIt moves us not.—Great God! I’d rather be\nA Pagan suckled in a creed outworn;\nSo might I, standing on this pleasant lea,\nHave glimpses that would make me less forlorn;\nHave sight of Proteus rising from the sea;\nOr hear old Triton blow his wreathèd horn."
+  }
+ ]
+}

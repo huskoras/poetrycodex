@@ -28,11 +28,37 @@ sections (cantos/books/fitts).
 - **Plain static site.** No framework, no build step, no bundler, no package.json, no CI.
 - `index.html` — page shell (sticky top bar, hero, footer)
 - `styles.css` — all styling (design tokens in `:root`)
-- `app.js` — the whole app: hash routing + all render functions
-- `poems.json` — **all content** (~30 MB)
-- `poets/*.jpg` — portrait/illustration images
+- `app.js` — the whole app: hash routing + all render functions + on-demand data fetching
+- `data/index.json` — **startup index**, fetched once on page load (~4.5 MB): poet
+  metadata + counts, poem *index entries* (title/author/subjects/3-line excerpt, no
+  full text), work metadata + section titles (no section text), subject tallies, and
+  `legacyIndex` (see below). This is a generated build artifact — never hand-edit it.
+- `data/poets/<slug>.json` — **source of truth** for one poet: identity fields +
+  every one of that poet's poems, **full text included**. Fetched lazily the first
+  time a poem by that poet is opened, then cached in memory for the session.
+- `data/works/<slug>.json` — **source of truth** for one long work: full metadata +
+  `sections[]` with **full section text**. Fetched lazily the first time a section of
+  that work is opened, then cached in memory.
+- `data/legacy_index.json` — a frozen, one-time array mapping the old pre-split
+  `poems.json` array position (`0..11011`) to the new stable poem id. Written once by
+  `tools/split_data.py`; carried through unmodified by every `build_index.py` rebuild.
+  New poems never get a legacy number — only ids that existed before the 2026 split do.
+- `tools/split_data.py` — one-off migration script that produced the files above from
+  the old monolithic `poems.json` (kept for reference; do not re-run — `poems.json` no
+  longer exists in the working tree, only in git history at or before commit `b38eab4`).
+- `tools/build_index.py` — regenerates `data/index.json` from `data/poets/*.json` +
+  `data/works/*.json`. Run this after any content edit.
+- `tools/verify_split.py` — data-integrity check (see "Verifying data integrity" below).
+- `poets/*.jpg` — portrait/illustration images (unrelated to `data/poets/`; note the
+  singular/plural difference — this is the images folder, `data/poets/` is poem data).
 - `dev_server.py` — local no-cache dev server (`python dev_server.py` → http://localhost:8777)
 - `BAŞLAT.bat` — double-click launcher for the owner (starts server + opens browser)
+
+**Why split:** the original `poems.json` held all ~30 MB of content in one file the
+browser had to fetch in full before showing anything, and GitHub warns above 50 MB /
+hard-rejects above 100 MB. As of September 2026 content is split as above: the browser
+fetches only the ~4.5 MB index up front, then fetches one poet or work file (usually a
+few dozen KB to a few hundred KB) only when that specific poem or work section is opened.
 
 **Deploy:** GitHub Pages serves `main` directly. **Pushing to `main` IS deploying** —
 the live site updates ~1 minute after a push. There is no build or deploy step.
@@ -42,31 +68,34 @@ either file, bump `N` in `index.html` or returning visitors get a stale cached c
 
 ---
 
-## 3. Data schema (`poems.json`)
+## 3. Data schema (`data/poets/<slug>.json`, `data/works/<slug>.json`, `data/index.json`)
 
-Top level: `{ count, poets[], subjects[], poems[], works[], workCount }`
-
-**Poet:**
+**`data/poets/<slug>.json`** (source of truth for a poet + all their short/medium poems):
 ```json
 { "slug": "keats", "name": "John Keats", "dates": "1795–1821",
   "era": "Romantic", "category": "Romantic",
   "portrait": "poets/keats.jpg",   // or null
   "credit": "Portrait of John Keats by William Hilton (c. 1822) · Public domain (Wikimedia Commons)",
   "bio": ["paragraph 1", "paragraph 2"],
-  "poemCount": 3, "workCount": 0 }
+  "order": 730,                   // chronological sort key, spaced by 10 — see below
+  "poems": [
+    { "id": "keats/0", "title": "Ode on a Grecian Urn", "authorSlug": "keats", "author": "John Keats",
+      "primarySubject": "Arts & Sciences", "subjects": ["Arts & Sciences"],
+      "collection": null,          // or e.g. "Hesperides (1648)"
+      "note": "",                  // optional short critical "Codex Note"; "" hides the section
+      "translator": "trans. ...",  // ONLY for translated works; omit for English originals
+      "text": "line\nline\n\nnext stanza" }
+  ] }
 ```
 
-**Poem** (flat, short-to-medium pieces):
-```json
-{ "title": "To Autumn", "authorSlug": "keats", "author": "John Keats",
-  "primarySubject": "Nature", "subjects": ["Nature"],
-  "collection": null,            // or e.g. "Hesperides (1648)"
-  "note": "",                    // optional short critical "Codex Note"; "" hides the section
-  "translator": "trans. ...",    // ONLY for translated works; omit for English originals
-  "text": "line\nline\n\nnext stanza" }
-```
+**Stable poem ids:** each poem's `id` is `"<authorSlug>/<n>"`, where `n` is that poem's
+plain index within its own poet's `poems[]` array (0, 1, 2, …). It is stable across edits
+to *other* poets — appending a poem to a different poet's file never changes anyone
+else's id. Appending a poem to the *same* poet's file is safe (new poem gets the next
+`n`); inserting one in the middle of an existing poet's array would shift later ids, so
+prefer appending. `#/poem/<authorSlug>/<n>` is the URL.
 
-**Work** (long texts split into sections):
+**`data/works/<slug>.json`** (source of truth for one long work, full text):
 ```json
 { "slug": "iliad-butler", "title": "The Iliad", "subtitle": "...",
   "authorSlug": "homer", "author": "Homer", "year": "1898",
@@ -77,12 +106,27 @@ Top level: `{ count, poets[], subjects[], poems[], works[], workCount }`
   "sections": [ { "title": "Book I", "text": "..." } ] }
 ```
 
+**`data/index.json`** (generated by `tools/build_index.py` — never hand-edit):
+`{ count, poets[] (metadata+counts only), subjects[], poems[] (index entries: id,
+title, author, authorSlug, primarySubject, subjects, collection, excerpt, translator —
+no full text), works[] (metadata + section titles/stanza counts — no section text),
+workCount, legacyIndex[] }`.
+
 ### Rules when you change data
-- After adding/removing poems: recompute `count`, the `subjects[]` tallies, and each
-  affected poet's `poemCount` / `workCount`. Do this programmatically, don't hand-edit.
-- Poets are ordered **chronologically by birth**; insert new ones in the right position.
-- Keep the file's `indent=1` pretty-printing (`json.dump(..., ensure_ascii=False, indent=1)`)
-  so diffs stay readable. Do not collapse it to one line.
+- **Workflow:** write or extend `data/poets/<slug>.json` (existing poet: append to its
+  `poems[]`, each with the next sequential `id`; new poet: include all fields above plus
+  an `order` value in the right chronological gap) or `data/works/<slug>.json` (a full
+  work with `sections[].text`). Then run `python tools/build_index.py` to regenerate
+  `data/index.json`. Then `python tools/verify_split.py` to confirm nothing broke.
+  Then preview locally, commit, push.
+- `count`, the `subjects[]` tallies, and each poet's `poemCount`/`workCount` in
+  `data/index.json` are all derived by `build_index.py` — never hand-compute or hand-edit
+  them, just re-run the script.
+- Poets are ordered by their `order` field (chronological by birth), spaced by 10 so a
+  new poet can be inserted between two existing ones (e.g. `order: 15` between `10` and
+  `20`) without renumbering anyone else.
+- Keep each poet/work file's `indent=1` pretty-printing (`json.dump(..., ensure_ascii=False,
+  indent=1)`) so diffs stay readable. Do not collapse it to one line.
 - `primarySubject` must be one of: Living, Love, Nature, Religion, Death & Dying,
   History & Politics, The Mind, Time & Brevity, Arts & Sciences, Social Commentaries,
   Relationships, Mythology & Folklore.
@@ -110,11 +154,22 @@ Metaphysical & Cavalier · Romantic · Victorian · American
 ## 4. Routes (all hash-based, in `app.js`)
 
 `#/` home (era tiles) · `#/poems` full archive · `#/poets` · `#/poet/<slug>` ·
-`#/poem/<index>` · `#/work/<slug>` (contents) · `#/work/<slug>/<i>` (one section) ·
+`#/poem/<authorSlug>/<n>` · `#/poem/<oldNumericIndex>` (legacy, see below) ·
+`#/work/<slug>` (contents) · `#/work/<slug>/<i>` (one section) ·
 `#/category/<slug>` · `#/topics` · `#/about`
 
-Note `#/poem/<index>` is an **array index** into `poems[]`, so reordering the array
-changes existing links. Prefer appending/grouping over reshuffling.
+**Legacy links:** before the September 2026 data-layer split, poem links were a bare
+array index into a single `poems[]` array (`#/poem/137`). Those numbers are now frozen
+forever in `data/legacy_index.json` / `data/index.json`'s `legacyIndex[]`, mapping each
+old index to its new stable id. `app.js` detects the old numeric route
+(`#/poem/(\d+)$`), looks it up in `legacyIndex`, and `location.replace()`s to the new
+`#/poem/<authorSlug>/<n>` URL — so any old bookmark or external link someone saved still
+works. Never reuse or repurpose these numbers; new poems only ever get new stable ids.
+
+**Search limitation:** because `data/index.json` holds only a 3-line excerpt of each poem
+(not the full text — that's the whole point of the split), the `#/poems` search box
+matches title + author + excerpt + subjects only. It will not find a poem by a word that
+appears only later in its body. This is a known, accepted trade-off for load time.
 
 ---
 
@@ -189,18 +244,25 @@ git push                                   # this deploys
 ```
 
 Commit and push **incrementally** (after each poet/work), not in one big batch at the end —
-long ingestion jobs get interrupted and uncommitted work is lost.
+long ingestion jobs get interrupted and uncommitted work is lost. Every content commit
+should include the regenerated `data/index.json` alongside the `data/poets/`/`data/works/`
+file you changed — run `tools/build_index.py` before committing, every time.
 
-**Do not run two agents against this repo at once.** `poems.json` is a single large file;
-concurrent edits collide. Finish or stop one before starting another.
+**Do not run two agents against this repo at once.** Concurrent edits to the same poet or
+work file, or to `data/index.json`, collide. Finish or stop one before starting another.
 
 ---
 
 ## 8. Current state & known gaps
 
-**Size warning:** `poems.json` is ~30 MB. GitHub warns above 50 MB and hard-rejects files
-over 100 MB. Before the archive grows much further, split it into per-poet or per-era JSON
-files loaded on demand, and have `app.js` fetch an index first.
+**Data layer:** as of September 2026 content lives in `data/poets/*.json` (107 files) and
+`data/works/*.json` (39 files), full text included, with `data/index.json` (~4.5 MB) as a
+lightweight generated startup index. This replaced the single ~30 MB `poems.json` (which
+was approaching GitHub's 50 MB warning threshold and 100 MB hard limit as the archive
+grew) — see section 2 and 3 above for the new layout, and `tools/verify_split.py` for the
+integrity check that green-lit the migration. `poems.json` itself was deleted from the
+working tree after verifying every poem/work byte-for-byte against it; it is still
+recoverable from git history at or before commit `b38eab4` if ever needed.
 
 Not yet done, in rough priority order:
 - Minor Tudor poets: Henry Lok, Deloney, Howell, Griffin, Barnes, Googe, Turberville

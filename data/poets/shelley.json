@@ -1,0 +1,59 @@
+{
+ "slug": "shelley",
+ "name": "Percy Bysshe Shelley",
+ "dates": "1792–1822",
+ "era": "Romantic",
+ "category": "Romantic",
+ "portrait": "poets/shelley.jpg",
+ "credit": "Portrait by Alfred Clint · Public domain (Wikimedia Commons)",
+ "bio": [
+  "Percy Bysshe Shelley (1792–1822) was an English Romantic poet, radical in politics and idealist in temper.",
+  "Author of ‘Ozymandias’ and ‘Ode to the West Wind,’ he drowned off the Italian coast before his thirtieth birthday."
+ ],
+ "order": 650,
+ "poems": [
+  {
+   "id": "shelley/0",
+   "title": "Ozymandias",
+   "authorSlug": "shelley",
+   "author": "Percy Bysshe Shelley",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Time & Brevity",
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "note": "Empire reduced to a shattered face in the sand. The sculptor’s mockery outlasts the king it served, and Shelley lets the desert have the last word on every tyrant’s boast: ‘Look on my Works, ye Mighty, and despair!’",
+   "text": "I met a traveller from an antique land,\nWho said—“Two vast and trunkless legs of stone\nStand in the desert. . . . Near them, on the sand,\nHalf sunk a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them, and the heart that fed;\nAnd on the pedestal, these words appear:\nMy name is Ozymandias, King of Kings;\nLook on my Works, ye Mighty, and despair!\nNothing beside remains. Round the decay\nOf that colossal Wreck, boundless and bare\nThe lone and level sands stretch far away.”"
+  },
+  {
+   "id": "shelley/1",
+   "title": "Ode to the West Wind",
+   "authorSlug": "shelley",
+   "author": "Percy Bysshe Shelley",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": null,
+   "note": "Shelley begs the wild autumn wind to scatter his words like leaves and sparks. The famous close turns despair toward prophecy: ‘If Winter comes, can Spring be far behind?’",
+   "text": "I\nO wild West Wind, thou breath of Autumn’s being,\nThou, from whose unseen presence the leaves dead\nAre driven, like ghosts from an enchanter fleeing,\n\nYellow, and black, and pale, and hectic red,\nPestilence-stricken multitudes: O thou,\nWho chariotest to their dark wintry bed\n\nThe wingèd seeds, where they lie cold and low,\nEach like a corpse within its grave, until\nThine azure sister of the Spring shall blow\n\nHer clarion o’er the dreaming earth, and fill\n(Driving sweet buds like flocks to feed in air)\nWith living hues and odours plain and hill:\n\nWild Spirit, which art moving everywhere;\nDestroyer and preserver; hear, oh hear!\n\nV\nMake me thy lyre, even as the forest is:\nWhat if my leaves are falling like its own!\nThe tumult of thy mighty harmonies\n\nWill take from both a deep, autumnal tone,\nSweet though in sadness. Be thou, Spirit fierce,\nMy spirit! Be thou me, impetuous one!\n\nDrive my dead thoughts over the universe\nLike withered leaves to quicken a new birth!\nAnd, by the incantation of this verse,\n\nScatter, as from an unextinguished hearth\nAshes and sparks, my words among mankind!\nBe through my lips to unawakened Earth\n\nThe trumpet of a prophecy! O Wind,\nIf Winter comes, can Spring be far behind?"
+  },
+  {
+   "id": "shelley/2",
+   "title": "Music, When Soft Voices Die",
+   "authorSlug": "shelley",
+   "author": "Percy Bysshe Shelley",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": null,
+   "note": "Eight lines on how the beloved outlives absence. As melody survives the silenced string and scent the withered violet, love goes on ‘slumbering’ in memory.",
+   "text": "Music, when soft voices die,\nVibrates in the memory—\nOdours, when sweet violets sicken,\nLive within the sense they quicken.\n\nRose leaves, when the rose is dead,\nAre heaped for the belovèd’s bed;\nAnd so thy thoughts, when thou art gone,\nLove itself shall slumber on."
+  }
+ ]
+}

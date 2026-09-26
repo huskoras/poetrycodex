@@ -1,0 +1,68 @@
+{
+ "slug": "raleigh",
+ "name": "Sir Walter Raleigh",
+ "dates": "1552–1618",
+ "era": "Elizabethan",
+ "category": "Tudor & Elizabethan",
+ "portrait": "poets/raleigh.jpg",
+ "credit": "Portrait of Sir Walter Raleigh — Public domain (Wikimedia Commons)",
+ "bio": [
+  "Sir Walter Raleigh was an English courtier, explorer and poet, a favourite of Elizabeth I who later fell from favour and was ultimately executed under James I.",
+  "His surviving poems, several written while imprisoned in the Tower of London, meditate with stoic clarity on time, fortune and mortality."
+ ],
+ "order": 230,
+ "poems": [
+  {
+   "id": "raleigh/0",
+   "title": "The Silent Lover, Part i",
+   "authorSlug": "raleigh",
+   "author": "Sir Walter Raleigh",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Passions are liken’d best to floods and streams:\n      The shallow murmur, but the deep are dumb;\n    So, when affection yields discourse, it seems\n      The bottom is but shallow whence they come.\n    They that are rich in words, in words discover\n    That they are poor in that which makes a lover."
+  },
+  {
+   "id": "raleigh/1",
+   "title": "The Silent Lover, Part ii",
+   "authorSlug": "raleigh",
+   "author": "Sir Walter Raleigh",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Wrong not, sweet empress of my heart,\n      The merit of true passion,\n    With thinking that he feels no smart,\n      That sues for no compassion.\n\n    Silence in love bewrays more woe\n      Than words, though ne’er so witty:\n    A beggar that is dumb, you know,\n      May challenge double pity.\n\n    Then wrong not, dearest to my heart,\n      My true, though secret passion;\n    He smarteth most that hides his smart,\n      And sues for no compassion."
+  },
+  {
+   "id": "raleigh/2",
+   "title": "His Pilgrimage",
+   "authorSlug": "raleigh",
+   "author": "Sir Walter Raleigh",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Give me my scallop-shell of quiet,\n      My staff of faith to walk upon,\n    My scrip of joy, immortal diet,\n      My bottle of salvation,\n    My gown of glory, hope’s true gage;\n    And thus I’ll take my pilgrimage.\n\n    Blood must be my body’s balmer;\n      No other balm will there be given;\n    Whilst my soul, like quiet palmer,\n      Travelleth towards the land of heaven;\n    Over the silver mountains,\n    Where spring the nectar fountains;\n          There will I kiss\n          The bowl of bliss;\n        And drink mine everlasting fill\n        Upon every milken hill.\n        My soul will be a-dry before;\n        But, after, it will thirst no more."
+  },
+  {
+   "id": "raleigh/3",
+   "title": "The Conclusion",
+   "authorSlug": "raleigh",
+   "author": "Sir Walter Raleigh",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": null,
+   "note": "",
+   "text": "    Even such is Time, that takes in trust\n      Our youth, our joys, our all we have,\n    And pays us but with earth and dust;\n      Who in the dark and silent grave,\n    When we have wander’d all our ways,\n    Shuts up the story of our days;\n    But from this earth, this grave, this dust,\n    My God shall raise me up, I trust."
+  }
+ ]
+}
