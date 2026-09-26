@@ -1,5 +1,5 @@
 {
- "count": 11132,
+ "count": 11168,
  "workCount": 45,
  "poets": [
   {
@@ -1165,6 +1165,22 @@
    "workCount": 0
   },
   {
+   "slug": "moore",
+   "name": "Thomas Moore",
+   "dates": "1779–1852",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": null,
+   "credit": "",
+   "bio": [
+    "Thomas Moore (1779–1852) was Ireland's national poet in the Romantic era, celebrated above all for the Irish Melodies (issued in installments from 1808 to 1834), verses written to fit traditional Irish airs, which carried Irish nationalist feeling and folklore to drawing rooms across Britain and America.",
+    "A close friend of Byron (whose memoirs he controversially burned after the poet's death) and a fixture of literary London, Moore was also the author of the wildly popular Oriental verse-romance Lalla Rookh, though it is the Melodies — \"The Minstrel Boy,\" \"The Last Rose of Summer,\" \"Believe Me, if All Those Endearing Young Charms\" — that have lasted."
+   ],
+   "order": 925,
+   "poemCount": 36,
+   "workCount": 0
+  },
+  {
    "slug": "browning_r",
    "name": "Robert Browning",
    "dates": "1812–1889",
@@ -1888,15 +1904,15 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2402
+   "count": 2403
   },
   {
    "name": "Nature",
-   "count": 2346
+   "count": 2350
   },
   {
    "name": "Love",
-   "count": 2274
+   "count": 2286
   },
   {
    "name": "Religion",
@@ -1904,11 +1920,11 @@
   },
   {
    "name": "Death & Dying",
-   "count": 681
+   "count": 684
   },
   {
    "name": "History & Politics",
-   "count": 580
+   "count": 592
   },
   {
    "name": "Relationships",
@@ -1916,11 +1932,11 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 308
+   "count": 309
   },
   {
    "name": "Time & Brevity",
-   "count": 230
+   "count": 232
   },
   {
    "name": "The Mind",
@@ -1932,7 +1948,7 @@
   },
   {
    "name": "Mythology & Folklore",
-   "count": 9
+   "count": 10
   }
  ],
  "works": [
@@ -57914,6 +57930,469 @@
    ],
    "collection": null,
    "excerpt": "The following changes have been made to the text:\n\nPage 289: The number 2 removed from in front of line that begins: \"Too …"
+  },
+  {
+   "id": "moore/0",
+   "title": "Go Where Glory Waits Thee",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Go where glory waits thee,\nBut while fame elates thee,\n  Oh! still remember me. …"
+  },
+  {
+   "id": "moore/1",
+   "title": "Erin! the Tear and the Smile in Thine Eyes",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Love"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Erin, the tear and the smile in thine eyes,\nBlend like the rainbow that hangs in thy skies!\n  Shining through sorrow's stream, …"
+  },
+  {
+   "id": "moore/2",
+   "title": "Oh! Breathe Not His Name",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Oh! breathe not his name, let it sleep in the shade,\nWhere cold and unhonored his relics are laid:\nSad, silent, and dark, be the tears that we shed, …"
+  },
+  {
+   "id": "moore/3",
+   "title": "The Harp That Once thro' Tara's Halls",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Time & Brevity"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "The harp that once thro' Tara's halls\n  The soul of music shed,\nNow hangs as mute on Tara's walls. …"
+  },
+  {
+   "id": "moore/4",
+   "title": "Fly Not Yet",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Fly not yet, 'tis just the hour,\nWhen pleasure, like the midnight flower\nThat scorns the eye of vulgar light, …"
+  },
+  {
+   "id": "moore/5",
+   "title": "Rich and Rare Were the Gems She Wore",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Mythology & Folklore"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Rich and rare were the gems she wore,\nAnd a bright gold ring on her wand she bore;\nBut oh! her beauty was far beyond …"
+  },
+  {
+   "id": "moore/6",
+   "title": "The Meeting of the Waters",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "There is not in the wide world a valley so sweet\nAs that vale in whose bosom the bright waters meet;\nOh! the last rays of feeling and life must depart, …"
+  },
+  {
+   "id": "moore/7",
+   "title": "How Dear to Me the Hour",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "How dear to me the hour when daylight dies,\n  And sunbeams melt along the silent sea,\nFor then sweet dreams of other days arise, …"
+  },
+  {
+   "id": "moore/8",
+   "title": "The Legacy",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Death & Dying"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "When in death I shall calmly recline,\n  O bear my heart to my mistress dear;\nTell her it lived upon smiles and wine …"
+  },
+  {
+   "id": "moore/9",
+   "title": "Let Erin Remember the Days of Old",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Time & Brevity"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Let Erin remember the days of old.\n  Ere her faithless sons betrayed her;\nWhen Malachi wore the collar of gold, …"
+  },
+  {
+   "id": "moore/10",
+   "title": "The Song of Fionnuala",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "History & Politics"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Silent, oh Moyle, be the roar of thy water,\n  Break not, ye breezes, your chain of repose,\nWhile, murmuring mournfully, Lir's lonely daughter …"
+  },
+  {
+   "id": "moore/11",
+   "title": "Believe Me, if All Those Endearing Young Charms",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Believe me, if all those endearing young charms,\n  Which I gaze on so fondly today,\nWere to change by to-morrow, and fleet in my arms, …"
+  },
+  {
+   "id": "moore/12",
+   "title": "Erin, Oh Erin",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Time & Brevity"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Like the bright lamp, that shone in Kildare's holy fane,\n  And burn'd thro' long ages of darkness and storm,\nIs the heart that sorrows have frowned on in vain, …"
+  },
+  {
+   "id": "moore/13",
+   "title": "Love's Young Dream",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Oh! the days are gone, when Beauty bright\n    My heart's chain wove;\nWhen my dream of life, from morn till night, …"
+  },
+  {
+   "id": "moore/14",
+   "title": "Weep On, Weep On",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Weep on, weep on, your hour is past;\n  Your dreams of pride are o'er;\nThe fatal chain is round you cast, …"
+  },
+  {
+   "id": "moore/15",
+   "title": "She Is Far from the Land",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Death & Dying"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "She is far from the land where her young hero sleeps,\n  And lovers are round her, sighing:\nBut coldly she turns from their gaze, and weeps, …"
+  },
+  {
+   "id": "moore/16",
+   "title": "Oh, the Shamrock",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Nature"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "   Thro' Erin's Isle,\n   To sport awhile,\nAs Love and Valor wandered, …"
+  },
+  {
+   "id": "moore/17",
+   "title": "At the Mid Hour of Night",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "At the mid hour of night, when stars are weeping, I fly\nTo the lone vale we loved, when life shone warm in thine eye;\nAnd I think oft, if spirits can steal from the regions of air, …"
+  },
+  {
+   "id": "moore/18",
+   "title": "'Tis the Last Rose of Summer",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "'Tis the last rose of summer\n  Left blooming alone;\nAll her lovely companions …"
+  },
+  {
+   "id": "moore/19",
+   "title": "The Young May Moon",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "The young May moon is beaming, love,\nThe glow-worm's lamp is gleaming, love,\n   How sweet to rove …"
+  },
+  {
+   "id": "moore/20",
+   "title": "The Minstrel Boy",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "The Minstrel-Boy to the war is gone,\n  In the ranks of death you'll find him;\nHis father's sword he has girded on. …"
+  },
+  {
+   "id": "moore/21",
+   "title": "Come O'er the Sea",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "    Come o'er the sea,\n    Maiden, with me,\n  Mine thro' sunshine, storm, and snows; …"
+  },
+  {
+   "id": "moore/22",
+   "title": "The Time I've Lost in Wooing",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Arts & Sciences"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "The time I've lost in wooing,\nIn watching and pursuing\n  The light, that lies …"
+  },
+  {
+   "id": "moore/23",
+   "title": "Where Is the Slave",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Oh, where's the slave so lowly,\nCondemned to chains unholy,\n  Who, could he burst …"
+  },
+  {
+   "id": "moore/24",
+   "title": "Come, Rest in This Bosom",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Come, rest in this bosom, my own stricken deer,\nTho' the herd have fled from thee, thy home is still here;\nHere still is the smile, that no cloud can o'ercast, …"
+  },
+  {
+   "id": "moore/25",
+   "title": "I Saw from the Beach",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "I saw from the beach, when the morning was shining,\n  A bark o'er the waters move gloriously on;\nI came when the sun o'er that beach was declining, …"
+  },
+  {
+   "id": "moore/26",
+   "title": "Dear Harp of My Country",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "History & Politics"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Dear Harp of my Country! in darkness I found thee,\n  The cold chain of silence had hung o'er thee long,\nWhen proudly, my own Island Harp, I unbound thee, …"
+  },
+  {
+   "id": "moore/27",
+   "title": "When Cold in the Earth",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Death & Dying"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "When cold in the earth lies the friend thou hast loved,\n  Be his faults and his follies forgot by thee then;\nOr, if from their slumber the veil be removed, …"
+  },
+  {
+   "id": "moore/28",
+   "title": "Wreath the Bowl",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Relationships"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "  Wreath the bowl\n  With flowers of soul,\nThe brightest wit can find us; …"
+  },
+  {
+   "id": "moore/29",
+   "title": "To Ladies' Eyes",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Living"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "To Ladies' eyes around, boy,\n  We can't refuse, we can't refuse,\nTho' bright eyes so abound, boy, …"
+  },
+  {
+   "id": "moore/30",
+   "title": "Sail On, Sail On",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "The Mind"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Sail on, sail on, thou fearless bark--\n  Wherever blows the welcome wind,\nIt cannot lead to scenes more dark, …"
+  },
+  {
+   "id": "moore/31",
+   "title": "Oh, Ye Dead!",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "The Mind"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Oh, ye Dead! oh, ye Dead! whom we know by the light you give\nFrom your cold gleaming eyes, tho' you move like men who live,\n  Why leave you thus your graves, …"
+  },
+  {
+   "id": "moore/32",
+   "title": "Sweet Innisfallen",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Sweet Innisfallen, fare thee well,\n  May calm and sunshine long be thine!\nHow fair thou art let others tell,-- …"
+  },
+  {
+   "id": "moore/33",
+   "title": "Song of Innisfail",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Mythology & Folklore"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "They came from a land beyond the sea,\n  And now o'er the western main\nSet sail, in their good ships, gallantly, …"
+  },
+  {
+   "id": "moore/34",
+   "title": "The Night Dance",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Strike the gay harp! see the moon is on high,\n  And, as true to her beam as the tides of the ocean,\nYoung hearts, when they feel the soft light of her eye, …"
+  },
+  {
+   "id": "moore/35",
+   "title": "Silence Is in Our Festal Halls",
+   "authorSlug": "moore",
+   "author": "Thomas Moore",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "Irish Melodies",
+   "excerpt": "Silence is in our festal halls,--\n  Sweet Son of Song! thy course is o'er;\nIn vain on thee sad Erin calls, …"
   },
   {
    "id": "browning_r/0",
