@@ -1,5 +1,5 @@
 {
- "count": 11057,
+ "count": 11060,
  "workCount": 42,
  "poets": [
   {
@@ -1021,6 +1021,22 @@
    "workCount": 0
   },
   {
+   "slug": "goldsmith",
+   "name": "Oliver Goldsmith",
+   "dates": "1728–1774",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": "poets/goldsmith.jpg",
+   "credit": "Portrait of Oliver Goldsmith after Sir Joshua Reynolds · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Oliver Goldsmith (1728–1774) was an Irish-born writer of extraordinary range — poet, playwright, and novelist — whose warmth and clarity made him one of the best-loved authors of his age.",
+    "The Deserted Village, his elegy for a vanishing rural England, and Retaliation, his affectionate mock-epitaphs on his own dinner-table friends, remain his most-read poems."
+   ],
+   "order": 760,
+   "poemCount": 3,
+   "workCount": 0
+  },
+  {
    "slug": "blake",
    "name": "William Blake",
    "dates": "1757–1827",
@@ -1820,7 +1836,7 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 305
+   "count": 306
   },
   {
    "name": "Time & Brevity",
@@ -1832,7 +1848,7 @@
   },
   {
    "name": "Social Commentaries",
-   "count": 70
+   "count": 72
   },
   {
    "name": "Mythology & Folklore",
@@ -50770,6 +50786,42 @@
    ],
    "collection": null,
    "excerpt": "[Greek:  Zêna----\n         Ton phronein brotous hodô-\n         santa, tôi pathei mathan …"
+  },
+  {
+   "id": "goldsmith/0",
+   "title": "The Traveller; or, A Prospect of Society",
+   "authorSlug": "goldsmith",
+   "author": "Oliver Goldsmith",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": "  Remote, unfriended, melancholy, slow--\nOr by the lazy Scheldt, or wandering Po,\nOr onward where the rude Carinthian boor …"
+  },
+  {
+   "id": "goldsmith/1",
+   "title": "The Deserted Village",
+   "authorSlug": "goldsmith",
+   "author": "Oliver Goldsmith",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": "Sweet Auburn! loveliest village of the plain,\nWhere health and plenty cheer’d the labouring swain,\nWhere smiling spring its earliest visit paid, …"
+  },
+  {
+   "id": "goldsmith/2",
+   "title": "Retaliation",
+   "authorSlug": "goldsmith",
+   "author": "Oliver Goldsmith",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "Of old, when Scarròn his companions invited,\nEach guest brought his dish, and the feast was united;\nIf our landlord supplies us with beef, and with fish, …"
   },
   {
    "id": "blake/0",
