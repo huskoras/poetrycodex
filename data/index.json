@@ -1,6 +1,6 @@
 {
- "count": 11031,
- "workCount": 40,
+ "count": 11041,
+ "workCount": 42,
  "poets": [
   {
    "slug": "cynewulf",
@@ -973,6 +973,22 @@
    "workCount": 1
   },
   {
+   "slug": "pope",
+   "name": "Alexander Pope",
+   "dates": "1688–1744",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": "poets/pope.jpg",
+   "credit": "Portrait of Alexander Pope by Michael Dahl, c. 1727 · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Alexander Pope (1688–1744) was the foremost English poet of the early 18th century, master of the heroic couplet and the sharpest satirist of his age.",
+    "Barred by his Catholicism and ill health from university or public office, he made a career (and a fortune) from his verse and his acclaimed translation of Homer; The Rape of the Lock and An Essay on Man remain his best-loved works."
+   ],
+   "order": 660,
+   "poemCount": 10,
+   "workCount": 2
+  },
+  {
    "slug": "blake",
    "name": "William Blake",
    "dates": "1757–1827",
@@ -1744,23 +1760,23 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2400
+   "count": 2401
   },
   {
    "name": "Nature",
-   "count": 2317
+   "count": 2318
   },
   {
    "name": "Love",
-   "count": 2265
+   "count": 2266
   },
   {
    "name": "Religion",
-   "count": 1624
+   "count": 1625
   },
   {
    "name": "Death & Dying",
-   "count": 669
+   "count": 671
   },
   {
    "name": "History & Politics",
@@ -1772,7 +1788,7 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 300
+   "count": 304
   },
   {
    "name": "Time & Brevity",
@@ -2440,6 +2456,37 @@
     {
      "title": "Canto 15",
      "stanzas": 1
+    }
+   ]
+  },
+  {
+   "slug": "essay-on-man",
+   "title": "An Essay on Man",
+   "subtitle": "In Four Epistles to Henry St John, Lord Bolingbroke",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "year": "1734",
+   "type": "Philosophical poem",
+   "translator": null,
+   "workGroup": null,
+   "note": "",
+   "blurb": "Pope’s attempt, in polished couplets, to ‘vindicate the ways of God to Man’ — four epistles on man’s place in the universe, himself, society, and happiness.",
+   "sections": [
+    {
+     "title": "Epistle I",
+     "stanzas": 23
+    },
+    {
+     "title": "Epistle II",
+     "stanzas": 27
+    },
+    {
+     "title": "Epistle III",
+     "stanzas": 19
+    },
+    {
+     "title": "Epistle IV",
+     "stanzas": 27
     }
    ]
   },
@@ -3911,6 +3958,41 @@
     {
      "title": "Passus XX",
      "stanzas": 96
+    }
+   ]
+  },
+  {
+   "slug": "rape-of-the-lock",
+   "title": "The Rape of the Lock",
+   "subtitle": "An Heroi-Comical Poem, in Five Cantos",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "year": "1714",
+   "type": "Mock-heroic poem",
+   "translator": null,
+   "workGroup": null,
+   "note": "",
+   "blurb": "A mock-epic on a society scandal — a lock of hair snipped in jest — blown up with the full machinery of Homeric epic, sylphs and all.",
+   "sections": [
+    {
+     "title": "Canto I",
+     "stanzas": 10
+    },
+    {
+     "title": "Canto II",
+     "stanzas": 11
+    },
+    {
+     "title": "Canto III",
+     "stanzas": 16
+    },
+    {
+     "title": "Canto IV",
+     "stanzas": 13
+    },
+    {
+     "title": "Canto V",
+     "stanzas": 14
     }
    ]
   },
@@ -50344,6 +50426,126 @@
    ],
    "collection": null,
    "excerpt": "_Enter_ JANUS.\n\n_Janus_. Chronos, Chronos, mend thy pace; …"
+  },
+  {
+   "id": "pope/0",
+   "title": "Messiah: A Sacred Eclogue",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": null,
+   "excerpt": "Ye Nymphs of Solyma! begin the song:\nTo heavenly themes sublimer strains belong.\nThe mossy fountains, and the sylvan shades, …"
+  },
+  {
+   "id": "pope/1",
+   "title": "An Essay on Criticism",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "'Tis hard to say, if greater want of skill\nAppear in writing or in judging ill;\nBut, of the two, less dangerous is the offence …"
+  },
+  {
+   "id": "pope/2",
+   "title": "Windsor-Forest",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "Thy forests, Windsor! and thy green retreats,\nAt once the Monarch's and the Muse's seats,\nInvite my lays. Be present, sylvan Maids! …"
+  },
+  {
+   "id": "pope/3",
+   "title": "Ode on Solitude",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": null,
+   "excerpt": "1 Happy the man, whose wish and care\n  A few paternal acres bound,\nContent to breathe his native air …"
+  },
+  {
+   "id": "pope/4",
+   "title": "The Dying Christian to His Soul",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "1   Vital spark of heavenly flame!\n  Quit, oh quit this mortal frame:\n  Trembling, hoping, lingering, flying, …"
+  },
+  {
+   "id": "pope/5",
+   "title": "Elegy to the Memory of an Unfortunate Lady",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "What beckoning ghost, along the moonlight shade\nInvites my steps, and points to yonder glade?\n'Tis she!--but why that bleeding bosom gored, …"
+  },
+  {
+   "id": "pope/6",
+   "title": "The Temple of Fame",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "In that soft season, when descending showers\nCall forth the greens, and wake the rising flowers;\nWhen opening buds salute the welcome day, …"
+  },
+  {
+   "id": "pope/7",
+   "title": "Eloisa to Abelard",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "excerpt": "In these deep solitudes and awful cells,\nWhere heavenly-pensive Contemplation dwells,\nAnd ever-musing Melancholy reigns, …"
+  },
+  {
+   "id": "pope/8",
+   "title": "Epistle to Miss Blount, with the Works of Voiture",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "In these gay thoughts the Loves and Graces shine,\nAnd all the writer lives in every line;\nHis easy art may happy nature seem, …"
+  },
+  {
+   "id": "pope/9",
+   "title": "Epistle to Dr Arbuthnot",
+   "authorSlug": "pope",
+   "author": "Alexander Pope",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "_P_. Shut, shut the door, good John! fatigued, I said,\nTie up the knocker, say I'm sick, I'm dead.\nThe Dog-star rages! nay, 'tis past a doubt, …"
   },
   {
    "id": "blake/0",
