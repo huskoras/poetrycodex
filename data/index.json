@@ -1,5 +1,5 @@
 {
- "count": 11076,
+ "count": 11114,
  "workCount": 43,
  "poets": [
   {
@@ -1197,6 +1197,22 @@
    "workCount": 0
   },
   {
+   "slug": "clare",
+   "name": "John Clare",
+   "dates": "1793–1864",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": null,
+   "credit": "",
+   "bio": [
+    "John Clare (1793–1864) was an English labouring-class poet, the son of a Northamptonshire farm labourer, whose closely observed poems of birds, insects and the vanishing open fields of his native Helpston mark him as one of the great nature poets in the language.",
+    "His early success gave way to poverty and the destruction of the rural world he wrote from, as the enclosure acts fenced in the commons he had grown up roaming. He spent the last decades of his life in asylums, where he continued to write some of his most haunting poems, including \"I Am.\""
+   ],
+   "order": 956,
+   "poemCount": 38,
+   "workCount": 0
+  },
+  {
    "slug": "keats",
    "name": "John Keats",
    "dates": "1795–1821",
@@ -1860,11 +1876,11 @@
   },
   {
    "name": "Nature",
-   "count": 2322
+   "count": 2346
   },
   {
    "name": "Love",
-   "count": 2269
+   "count": 2274
   },
   {
    "name": "Religion",
@@ -1872,7 +1888,7 @@
   },
   {
    "name": "Death & Dying",
-   "count": 677
+   "count": 680
   },
   {
    "name": "History & Politics",
@@ -1884,19 +1900,19 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 306
+   "count": 308
   },
   {
    "name": "Time & Brevity",
-   "count": 229
+   "count": 230
   },
   {
    "name": "The Mind",
-   "count": 203
+   "count": 205
   },
   {
    "name": "Social Commentaries",
-   "count": 76
+   "count": 77
   },
   {
    "name": "Mythology & Folklore",
@@ -62503,6 +62519,474 @@
    ],
    "collection": null,
    "excerpt": "Music, when soft voices die,\nVibrates in the memory—\nOdours, when sweet violets sicken, …"
+  },
+  {
+   "id": "clare/0",
+   "title": "I Am",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "I AM: yet what I am none cares or knows,\n  My friends forsake me like a memory lost;\nI am the self-consumer of my woes, …"
+  },
+  {
+   "id": "clare/1",
+   "title": "The Peasant Poet",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Living"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "He loved the brook's soft sound,\n  The swallow swimming by.\nHe loved the daisy-covered ground, …"
+  },
+  {
+   "id": "clare/2",
+   "title": "Clock-a-Clay",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "In the cowslip pips I lie,\nHidden from the buzzing fly,\nWhile green grass beneath me lies, …"
+  },
+  {
+   "id": "clare/3",
+   "title": "Little Trotty Wagtail",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Little trotty wagtail he went in the rain,\nAnd tittering, tottering sideways he neer got straight again,\nHe stooped to get a worm, and looked up to get a fly, …"
+  },
+  {
+   "id": "clare/4",
+   "title": "Song's Eternity",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Time & Brevity"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "What is song's eternity?\n  Come and see.\nCan it noise and bustle be? …"
+  },
+  {
+   "id": "clare/5",
+   "title": "The Fallen Elm",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Social Commentaries"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Old elm, that murmured in our chimney top\nThe sweetest anthem autumn ever made\nAnd into mellow whispering calms would drop …"
+  },
+  {
+   "id": "clare/6",
+   "title": "The Skylark",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Above the russet clods the corn is seen\nSprouting its spiry points of tender green,\nWhere squats the hare, to terrors wide awake, …"
+  },
+  {
+   "id": "clare/7",
+   "title": "Emmonsail's Heath in Winter",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "I love to see the old heath's withered brake\nMingle its crimpled leaves with furze and ling,\nWhile the old heron from the lonely lake …"
+  },
+  {
+   "id": "clare/8",
+   "title": "The Thrush's Nest",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Within a thick and spreading hawthorn bush,\n  That overhung a molehill large and round,\nI heard from morn to morn a merry thrush …"
+  },
+  {
+   "id": "clare/9",
+   "title": "Summer Images",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Now swarthy summer, by rude health embrowned,\n  Precedence takes of rosy fingered spring;\nAnd laughing joy, with wild flowers pranked and crowned, …"
+  },
+  {
+   "id": "clare/10",
+   "title": "Autumn",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Syren of sullen moods and fading hues,\nYet haply not incapable of joy,\n    Sweet Autumn! I thee hail …"
+  },
+  {
+   "id": "clare/11",
+   "title": "The Flitting",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "I've left my own old home of homes,\n  Green fields and every pleasant place;\nThe summer like a stranger comes, …"
+  },
+  {
+   "id": "clare/12",
+   "title": "Remembrances",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Summer's pleasures they are gone like to visions every one,\nAnd the cloudy days of autumn and of winter cometh on.\nI tried to call them back, but unbidden they are gone …"
+  },
+  {
+   "id": "clare/13",
+   "title": "Invitation to Eternity",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "The Mind"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Say, wilt thou go with me, sweet maid,\nSay, maiden, wilt thou go with me\nThrough the valley-depths of shade, …"
+  },
+  {
+   "id": "clare/14",
+   "title": "First Love",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "I ne'er was struck before that hour\n  With love so sudden and so sweet.\nHer face it bloomed like a sweet flower …"
+  },
+  {
+   "id": "clare/15",
+   "title": "Badger",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "When midnight comes a host of dogs and men\nGo out and track the badger to his den,\nAnd put a sack within the hole, and lie …"
+  },
+  {
+   "id": "clare/16",
+   "title": "The Vixen",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Among the taller wood with ivy hung,\nThe old fox plays and dances round her young.\nShe snuffs and barks if any passes bye …"
+  },
+  {
+   "id": "clare/17",
+   "title": "Sudden Shower",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Black grows the southern sky, betokening rain,\n  And humming hive-bees homeward hurry bye:\nThey feel the change; so let us shun the grain, …"
+  },
+  {
+   "id": "clare/18",
+   "title": "The Fox",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "The shepherd on his journey heard when nigh\nHis dog among the bushes barking high;\nThe ploughman ran and gave a hearty shout, …"
+  },
+  {
+   "id": "clare/19",
+   "title": "Nightwind",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Darkness like midnight from the sobbing woods\nClamours with dismal tidings of the rain,\nRoaring as rivers breaking loose in floods …"
+  },
+  {
+   "id": "clare/20",
+   "title": "Signs of Winter",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "The cat runs races with her tail. The dog\nLeaps oer the orchard hedge and knarls the grass.\nThe swine run round and grunt and play with straw, …"
+  },
+  {
+   "id": "clare/21",
+   "title": "Wild Bees",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "These children of the sun which summer brings\nAs pastoral minstrels in her merry train\nPipe rustic ballads upon busy wings …"
+  },
+  {
+   "id": "clare/22",
+   "title": "Evening Primrose",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "When once the sun sinks in the west,\nAnd dew-drops pearl the evening's breast;\nAlmost as pale as moonbeams are, …"
+  },
+  {
+   "id": "clare/23",
+   "title": "Insects",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "These tiny loiterers on the barley's beard,\nAnd happy units of a numerous herd\nOf playfellows, the laughing Summer brings, …"
+  },
+  {
+   "id": "clare/24",
+   "title": "To John Clare",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Well, honest John, how fare you now at home?\nThe spring is come, and birds are building nests;\nThe old cock robin to the stye is come, …"
+  },
+  {
+   "id": "clare/25",
+   "title": "Love Lives Beyond the Tomb",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Death & Dying"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "  Love lives beyond\nThe tomb, the earth, which fades like dew!\n  I love the fond, …"
+  },
+  {
+   "id": "clare/26",
+   "title": "The Dying Child",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "He could not die when trees were green,\n  For he loved the time too well.\nHis little hands, when flowers were seen, …"
+  },
+  {
+   "id": "clare/27",
+   "title": "Graves of Infants",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "    Infant' graves are steps of angels, where\n      Earth's brightest gems of innocence repose.\n    God is their parent, and they need no tear; …"
+  },
+  {
+   "id": "clare/28",
+   "title": "Dewdrops",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "The dewdrops on every blade of grass are so much like silver drops\nthat I am obliged to stoop down as I walk to see if they are pearls,\nand those sprinkled on the ivy-woven beds of primroses underneath the …"
+  },
+  {
+   "id": "clare/29",
+   "title": "The Maple Tree",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "The maple with its tassel flowers of green,\nThat turns to red a staghorn-shaped seed,\nJust spreading out its scolloped leaves is seen, …"
+  },
+  {
+   "id": "clare/30",
+   "title": "House or Window Flies",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "These little window dwellers, in cottages and halls, were always\nentertaining to me; after dancing in the window all day from sunrise\nto sunset they would sip of the tea, drink of the beer, and eat of the …"
+  },
+  {
+   "id": "clare/31",
+   "title": "Early Spring",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "The Spring is come, and Spring flowers coming too,\n    The crocus, patty kay, the rich hearts' ease;\nThe polyanthus peeps with blebs of dew, …"
+  },
+  {
+   "id": "clare/32",
+   "title": "Ballad",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "A faithless shepherd courted me,\nHe stole away my liberty.\nWhen my poor heart was strange to men, …"
+  },
+  {
+   "id": "clare/33",
+   "title": "In Hilly-Wood",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "How sweet to be thus nestling deep in boughs,\n  Upon an ashen stoven pillowing me;\nFaintly are heard the ploughmen at their ploughs, …"
+  },
+  {
+   "id": "clare/34",
+   "title": "The Gipsy's Camp",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Social Commentaries"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "How oft on Sundays, when I'd time to tramp,\nMy rambles led me to a gipsy's camp,\nWhere the real effigy of midnight hags, …"
+  },
+  {
+   "id": "clare/35",
+   "title": "Gipsies",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Nature"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "The snow falls deep; the forest lies alone;\nThe boy goes hasty for his load of brakes,\nThen thinks upon the fire and hurries back; …"
+  },
+  {
+   "id": "clare/36",
+   "title": "Bantry Bay",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "On the eighteenth of October we lay in Bantry Bay,\n  All ready to set sail, with a fresh and steady gale:\nA fortnight and nine days we in the harbour lay, …"
+  },
+  {
+   "id": "clare/37",
+   "title": "The Sailor-Boy",
+   "authorSlug": "clare",
+   "author": "John Clare",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
+   "excerpt": "Tis three years and a quarter since I left my own fireside\nTo go aboard a ship through love, and plough the ocean wide.\nI crossed my native fields, where the scarlet poppies grew, …"
   },
   {
    "id": "keats/0",
