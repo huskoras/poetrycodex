@@ -296,13 +296,13 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 /* The reading column is 720px; the engine gets its own, wider card so the
    lens row does not wrap into four cramped lines. */
 .engine {
-  width: min(980px, 100vw - 3rem);
-  margin: 3.4rem 0 0 50%;
+  width: min(1080px, 100vw - 3rem);
+  margin: 1.6rem 0 2.8rem 50%;
   transform: translateX(-50%);
   background: var(--surface-alt);
   border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 2.1rem 2.4rem 2.3rem;
+  border-radius: 10px;
+  padding: 2.3rem 2.6rem 2.5rem;
   box-shadow: var(--shadow-sm);
 }
 .engine .section-label { margin-top: 0; }
@@ -331,22 +331,27 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 .lens-alt.active { background: var(--gold); border-color: var(--gold); color: #fff; }
 
 /* --- question + compare rows --- */
-.ask-form { display: flex; gap: .6rem; margin: 0 0 1rem; max-width: 680px; position: relative; }
-.ask-form:last-of-type { margin-bottom: 1.8rem; }
+.ask-form { display: flex; align-items: flex-end; gap: .7rem; margin: 0 0 1rem; position: relative; }
+.ask-form:not(.compare-form) { margin-bottom: 1.1rem; }
+.ask-form.compare-form { margin-bottom: 2rem; }
 .ask-input {
-  flex: 1; font-family: var(--serif); font-size: 1.04rem;
-  padding: .78rem 1rem; color: var(--ink);
+  flex: 1; font-family: var(--serif); font-size: 1.1rem; line-height: 1.6;
+  padding: 1rem 1.15rem; color: var(--ink);
   background: var(--surface);
-  border: 1px solid var(--line-strong); border-radius: 4px;
+  border: 1px solid var(--line-strong); border-radius: 6px;
+}
+textarea.ask-input {
+  min-height: 118px; resize: vertical; display: block;
+  box-shadow: inset 0 1px 2px rgba(23,20,15,.04);
 }
 .ask-input::placeholder { color: var(--faint); font-style: italic; }
 .ask-input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(169,133,47,.13); }
 .ask-send {
-  font-family: var(--sans); font-size: .76rem; font-weight: 700;
+  font-family: var(--sans); font-size: .78rem; font-weight: 700;
   letter-spacing: .1em; text-transform: uppercase;
-  padding: .78rem 1.5rem; cursor: pointer; border-radius: 4px;
+  padding: 1rem 1.9rem; cursor: pointer; border-radius: 6px;
   color: #fff; background: var(--gold); border: 1px solid var(--gold);
-  transition: opacity .15s;
+  transition: opacity .15s; white-space: nowrap;
 }
 .ask-send:hover:not(:disabled) { opacity: .86; }
 .ask-input:disabled, .ask-send:disabled { opacity: .45; cursor: default; }
@@ -372,7 +377,8 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 /* --- generated output --- */
 .engine-out {
   border-left: 3px solid var(--gold);
-  padding: .1rem 0 .1rem 1.5rem; margin: 0;
+  padding: .3rem 0 .3rem 1.7rem; margin: .4rem 0 0;
+  min-height: 170px;
 }
 .engine-out p {
   font-family: var(--serif); font-size: 1.13rem; line-height: 1.82;
@@ -422,7 +428,8 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 .hero-ask button:hover { opacity: .86; }
 
 @media (max-width: 760px) {
-  .engine { width: calc(100vw - 2rem); padding: 1.5rem 1.3rem 1.7rem; }
+  .engine { width: calc(100vw - 2rem); padding: 1.5rem 1.3rem 1.7rem; margin-bottom: 2rem; }
+  textarea.ask-input { min-height: 104px; }
   .engine-out { padding-left: 1.1rem; }
   .lens { font-size: .7rem; padding: .52rem .8rem; letter-spacing: .06em; }
   .ask-form { flex-direction: column; }
@@ -430,3 +437,13 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
   .hero-ask { flex-direction: column; width: min(92vw, 440px); }
   .hero-ask button { padding: .7rem; }
 }
+
+/* The composer carries the hint, so the intro above it can stay short. */
+.ask-hint {
+  font-family: var(--sans); font-size: .72rem; letter-spacing: .05em;
+  color: var(--faint); margin: 0 0 1.7rem;
+}
+.compare-form .ask-send {
+  background: transparent; color: var(--gold); border-color: var(--gold);
+}
+.compare-form .ask-send:hover:not(:disabled) { background: var(--gold); color: #fff; opacity: 1; }

@@ -382,8 +382,8 @@
         <h1 class="detail-title">${esc(s.title)}</h1>
         <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
         <hr class="rule">
-        <blockquote class="poem-text">${esc(s.text)}</blockquote>
         ${enginePanel(s.text, { gloss: true })}
+        <blockquote class="poem-text">${esc(s.text)}</blockquote>
         <div class="detail-nav">
           <button ${i === 0 ? "disabled" : ""} data-go="${i - 1}"><span class="dir">← Previous</span>${i > 0 ? esc(w.sections[i - 1].title) : ""}</button>
           <button class="next" ${i === w.sections.length - 1 ? "disabled" : ""} data-go="${i + 1}"><span class="dir">Next →</span>${i < w.sections.length - 1 ? esc(w.sections[i + 1].title) : ""}</button>
@@ -585,10 +585,12 @@
       <div class="lens-row">${LENSES.map((l) =>
         `<button class="lens" data-lens="${esc(l.id)}">${esc(l.label)}</button>`).join("")}${gloss}</div>
       <form class="ask-form" autocomplete="off">
-        <input class="ask-input" type="text" maxlength="400"
-               placeholder="Ask the Codex about this poem\u2026" aria-label="Ask the Codex about this poem" />
+        <textarea class="ask-input" rows="3" maxlength="400"
+                  placeholder="Ask the Codex about this poem \u2014 what it means, how it works, what a critic would say\u2026"
+                  aria-label="Ask the Codex about this poem"></textarea>
         <button class="ask-send" type="submit">Ask</button>
       </form>
+      <p class="ask-hint">Press Enter to ask \u00b7 Shift + Enter for a new line</p>
       ${compare}
       <div class="engine-out" id="engine-out" hidden></div>
       </section>`;
@@ -678,6 +680,10 @@
       }
     }));
 
+    askInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); askForm.requestSubmit(); }
+    });
+
     askForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const question = askInput.value.trim();
@@ -733,12 +739,12 @@
         <p class="detail-author">by <a href="#/poet/${esc(p.authorSlug)}">${esc(p.author)}</a></p>
         ${themes}
         <hr class="rule">
+        ${enginePanel(p.text, { compare: true, gloss: true })}
         <p class="section-label">The Poem</p>
         <blockquote class="poem-text">${esc(p.text)}</blockquote>
         ${p.note ? `<div class="rule-ornament">✦ ✦ ✦</div>
         <p class="section-label">Codex Note</p>
         <p class="note-block">${esc(p.note)}</p>` : ""}
-        ${enginePanel(p.text, { compare: true, gloss: true })}
         <div class="detail-nav">
           <button ${n === 0 ? "disabled" : ""} data-go="${n - 1}"><span class="dir">← Previous</span>${n > 0 ? esc(poems[n - 1].title) : ""}</button>
           <button class="next" ${n === poems.length - 1 ? "disabled" : ""} data-go="${n + 1}"><span class="dir">Next →</span>${n < poems.length - 1 ? esc(poems[n + 1].title) : ""}</button>
