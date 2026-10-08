@@ -308,11 +308,25 @@ export default {
         "\n---\n" + otherText + "\n---\n\n" +
         "Read these two poems against each other.";
     } else {
-      if (text.length > MAX_GLOSS_CHARS) {
-        return json(400, { error: "This poem is too long to gloss line by line." }, origin);
+      // A whole book of Chaucer would be slow and expensive to gloss, so a long
+      // text is cut at a line break and the opening is glossed instead. The
+      // model is told, so it does not pretend to have reached the end.
+      let body = text;
+      let excerpt = false;
+      if (body.length > MAX_GLOSS_CHARS) {
+        const cut = body.lastIndexOf("\n", MAX_GLOSS_CHARS);
+        body = body.slice(0, cut > MAX_GLOSS_CHARS / 2 ? cut : MAX_GLOSS_CHARS);
+        excerpt = true;
       }
       system = [{ type: "text", text: SYSTEM_GLOSS, cache_control: { type: "ephemeral" } }];
-      prompt = poem + "Gloss this poem into modern English.";
+      prompt =
+        'Poem: "' + title + '"\n' +
+        "Poet: " + (author || "Anonymous") + "\n" +
+        (year ? "Date: " + year + "\n" : "") +
+        (excerpt ? "This is the opening of a longer text.\n" : "") +
+        "\n---\n" + body + "\n---\n\n" +
+        "Gloss these lines into modern English." +
+        (excerpt ? " Gloss exactly the lines you were given and stop there; do not note that the text continues." : "");
     }
 
     const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
