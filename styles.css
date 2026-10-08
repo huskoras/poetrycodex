@@ -666,3 +666,29 @@ textarea.ask-input {
   .door img { width: 96px; height: 96px; margin-bottom: 1rem; }
   .d-name { font-size: 1.6rem; }
 }
+
+
+/* ============ ARCHIVE PAGE SEARCH ============ */
+/* The header search is a small utility; this one is the page's front door. */
+.archive-head { text-align: center; }
+.archive-head .page-sub { margin-left: auto; margin-right: auto; max-width: 62ch; }
+.archive-search {
+  display: flex; margin: 1.8rem auto 0; width: min(100%, 560px);
+  box-shadow: var(--shadow-sm);
+}
+.archive-search input {
+  flex: 1; font-family: var(--serif); font-size: 1.08rem;
+  padding: .9rem 1.1rem; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line-strong); border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+.archive-search input::placeholder { color: var(--faint); }
+.archive-search input:focus { outline: none; border-color: var(--accent-2); }
+.archive-search button {
+  width: 60px; border: none; cursor: pointer;
+  background: var(--accent); color: #fff; border-radius: 0 4px 4px 0;
+  display: grid; place-items: center;
+}
+.archive-search button:hover { background: var(--accent-2); }
+
+@media (max-width: 560px) { .archive-search { width: 100%; } }

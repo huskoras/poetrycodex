@@ -112,6 +112,8 @@
   function wireSearch() {
     document.querySelectorAll("input.search-input").forEach((input) => {
       input.value = query;
+      if (input.dataset.wired) return;          // safe to call again after a render
+      input.dataset.wired = "1";
       input.addEventListener("input", (e) => {
         query = e.target.value.trim().toLowerCase();
         if (query) filterSubject = "All";
@@ -120,8 +122,11 @@
         else renderList();
       });
     });
-    document.querySelectorAll("form.search-form").forEach((form) =>
-      form.addEventListener("submit", (e) => { e.preventDefault(); if (location.hash !== "#/poems") location.hash = "#/poems"; else renderList(); }));
+    document.querySelectorAll("form.search-form").forEach((form) => {
+      if (form.dataset.wired) return;
+      form.dataset.wired = "1";
+      form.addEventListener("submit", (e) => { e.preventDefault(); if (location.hash !== "#/poems") location.hash = "#/poems"; else renderList(); });
+    });
   }
   function syncSearchInput() {
     document.querySelectorAll("input.search-input").forEach((input) => {
@@ -221,11 +226,22 @@
 
   function renderEras() {
     app.innerHTML = `
-      <div class="page-head"><h1 class="page-title">Browse by Era</h1>
-      <p class="page-sub">${DATA.count} poems across ${DATA.poets.length} poets, sorted into the ages that shaped them.</p></div>
+      <div class="page-head archive-head">
+        <h1 class="page-title">The Archive</h1>
+        <p class="page-sub">Explore poetry across eras, poets and themes \u2014
+        ${DATA.count} poems by ${DATA.poets.length} poets, every one in the public domain.</p>
+        <form class="archive-search search-form" autocomplete="off">
+          <input class="search-input" type="search" placeholder="Search by poem or poet\u2026" aria-label="Search the archive" />
+          <button type="submit" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </form>
+      </div>
+      <p class="doors-or">Browse by era</p>
       ${eraGridHTML()}
       <div class="browse-all"><a href="#/poems" class="read-link">Or browse all ${DATA.count} poems \u2192</a></div>`;
     bindEraTiles();
+    wireSearch();
   }
 
   function bindEraTiles() {
