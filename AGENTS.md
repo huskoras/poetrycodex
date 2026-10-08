@@ -190,7 +190,19 @@ API key, so every Claude call goes through it.
   traditions (formalist, historicist, feminist, psychoanalytic, postcolonial,
   ecocritical, marxist, reader-response).
 - `POST /api/ask` — an answer to the reader's own question about that poem.
-- Both stream `data: {"t": "..."}` SSE lines, terminated by `[DONE]`.
+- `POST /api/compare` — a reading of two poems against each other.
+- `POST /api/gloss` — Old/Middle English rendered line by line into modern
+  English, plus a short note on the hard words. Long texts are cut at a line
+  break and only the opening is glossed.
+- All four stream `data: {"t": "..."}` SSE lines, terminated by `[DONE]`.
+
+The panel renders on poem pages and on work sections (`renderDetailReady` and
+`renderWorkSectionReady` in `app.js`). The **Modern English** button appears
+only where `looksArchaic()` fires: a vocabulary of words that died out before
+the 17th century, at 5+ hits per 1000 words, or a thorn/eth/ash character.
+Measured over this archive, Middle English scores 9–59 and early modern verse
+0–1.6, so Chaucer and Langland get the button and Shakespeare and Spenser do
+not. Re-run `tools/`-style calibration before moving that threshold.
 
 Model `claude-opus-5-5`. Guardrails: origin allowlist, six requests per minute
 per IP, 24,000-character text cap, 2,000-token output cap, and a cache
