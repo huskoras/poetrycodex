@@ -180,6 +180,32 @@ appears only later in its body. This is a known, accepted trade-off for load tim
 
 ---
 
+## 4b. The critical engine (`worker/`)
+
+Live at `https://poetrycodex-engine.poetrycodex.workers.dev`, wired into
+`ENGINE_URL` in `app.js`. A Cloudflare Worker: the static site cannot hold an
+API key, so every Claude call goes through it.
+
+- `POST /api/analyze` — a reading of a poem through one of eight critical
+  traditions (formalist, historicist, feminist, psychoanalytic, postcolonial,
+  ecocritical, marxist, reader-response).
+- `POST /api/ask` — an answer to the reader's own question about that poem.
+- Both stream `data: {"t": "..."}` SSE lines, terminated by `[DONE]`.
+
+Model `claude-opus-5-5`. Guardrails: origin allowlist, six requests per minute
+per IP, 24,000-character text cap, 2,000-token output cap, and a cache
+breakpoint on the stable half of the system prompt.
+
+**The honesty rule is load-bearing.** Both system prompts forbid invented
+quotations, dates, editions and attributed scholarly views. The engine may name
+a critical tradition; it may not put a claim in a named scholar's mouth. Do not
+relax this — fabricated citation would discredit the project with the
+academic collaborators it is being built with. Real citation waits for the
+retrieval layer over public-domain criticism and open-access scholarship.
+
+Deploying: `cd worker && npx wrangler deploy`. The API key is an encrypted
+Worker secret, never in this repo. See `worker/README.md`.
+
 ## 5. ⚠️ Content rules — the most important part
 
 Everything here is **public domain**, and it must stay that way.
