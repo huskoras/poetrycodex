@@ -425,35 +425,6 @@ textarea.ask-input {
 
 
 /* ============ THE ORACLE ============ */
-/* Home-page invitation. Silver against the archive's gold, so the two
-   emblems read as a pair rather than a repeat. */
-.oracle-banner {
-  display: flex; align-items: center; gap: 1.4rem;
-  text-decoration: none; margin: 0 0 2.6rem;
-  padding: 1.3rem 1.6rem; border-radius: 10px;
-  background: linear-gradient(100deg, #1d2d3f 0%, #26415c 60%, #2d4a69 100%);
-  box-shadow: var(--shadow); color: #fff;
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-.oracle-banner:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(23,20,15,.12), 0 18px 44px rgba(23,20,15,.18); }
-.oracle-banner img {
-  flex: none; border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.18);
-}
-.ob-text { display: flex; flex-direction: column; gap: .18rem; flex: 1; }
-.ob-kicker {
-  font-family: var(--sans); font-size: .62rem; font-weight: 700;
-  letter-spacing: .18em; text-transform: uppercase; color: var(--gold);
-}
-.ob-title { font-family: var(--serif); font-size: 1.62rem; font-weight: 500; line-height: 1.15; }
-.ob-sub { font-family: var(--serif); font-size: 1rem; line-height: 1.5; color: rgba(255,255,255,.76); max-width: 56ch; }
-.ob-go {
-  flex: none; font-family: var(--sans); font-size: .72rem; font-weight: 700;
-  letter-spacing: .12em; text-transform: uppercase;
-  padding: .6rem 1.1rem; border-radius: 4px;
-  background: var(--gold); color: #fff;
-}
-.tb-oracle { color: var(--gold) !important; font-weight: 700 !important; }
 
 /* --- the Oracle page --- */
 .oracle { max-width: 820px; margin: 0 auto; }
@@ -532,9 +503,6 @@ textarea.ask-input {
 .oracle .ask-hint { text-align: center; margin: .2rem 0 0; }
 
 @media (max-width: 760px) {
-  .oracle-banner { flex-wrap: wrap; gap: 1rem; padding: 1.1rem 1.2rem; }
-  .oracle-banner img { width: 64px; height: 64px; }
-  .ob-go { width: 100%; text-align: center; }
   .o-you .o-bubble { max-width: 92%; }
   .o-send { padding: .95rem 1.2rem; }
 }
@@ -639,3 +607,62 @@ textarea.ask-input {
 .o-resting p:last-child { margin-bottom: 0; }
 .o-resting a { color: var(--accent); text-decoration: underline; text-underline-offset: .18em; }
 .o-resting a:hover { color: var(--gold); }
+
+
+/* ============ THE TWO DOORS ============ */
+/* One roof, two ways in. Equal weight, different temperature: amber for the
+   collection, silver for the asking. */
+.doors {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem;
+  margin: 0 0 3.4rem;
+}
+.door {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: 2.6rem 2rem 2.2rem; border-radius: 12px; text-decoration: none;
+  border: 1px solid var(--line-strong); background: var(--surface);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.door:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.door img {
+  border-radius: 50%; margin-bottom: 1.3rem;
+  box-shadow: 0 3px 14px rgba(23,20,15,.28);
+}
+.d-name {
+  font-family: var(--serif); font-size: 1.9rem; font-weight: 500;
+  color: var(--ink); line-height: 1.1; margin-bottom: .7rem;
+}
+.d-line {
+  font-family: var(--serif); font-size: 1.04rem; line-height: 1.65;
+  color: var(--ink-soft); max-width: 34ch; margin-bottom: 1.5rem;
+}
+.d-go {
+  font-family: var(--sans); font-size: .72rem; font-weight: 700;
+  letter-spacing: .13em; text-transform: uppercase;
+  padding: .62rem 1.4rem; border-radius: 4px; color: #fff;
+}
+.door-archive:hover { border-color: var(--gold); }
+.door-archive .d-go { background: var(--gold); }
+.door-oracle:hover { border-color: var(--accent); }
+.door-oracle .d-go { background: var(--accent); }
+
+/* Asleep, but still half the architecture. */
+.door-oracle.is-resting img { filter: grayscale(.5) brightness(.93); opacity: .7; }
+.door-oracle.is-resting .d-name,
+.door-oracle.is-resting .d-line { opacity: .62; }
+.door-oracle.is-resting .d-go {
+  background: transparent; color: var(--faint);
+  border: 1px solid var(--line-strong);
+}
+
+.doors-or {
+  font-family: var(--sans); font-size: .7rem; font-weight: 700;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--faint);
+  text-align: center; margin: 0 0 1.4rem;
+}
+
+@media (max-width: 820px) {
+  .doors { grid-template-columns: 1fr; gap: 1.1rem; margin-bottom: 2.6rem; }
+  .door { padding: 2rem 1.4rem 1.8rem; }
+  .door img { width: 96px; height: 96px; margin-bottom: 1rem; }
+  .d-name { font-size: 1.6rem; }
+}

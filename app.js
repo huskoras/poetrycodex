@@ -234,21 +234,30 @@
   }
 
   function renderHome() {
+    // Two doors under one roof: the collection, and the way of asking about it.
+    // The Oracle keeps its place even while it sleeps, so the shape of the site
+    // does not change when it wakes.
     app.innerHTML = `
-      <a class="oracle-banner" href="#/oracle">
-        <img src="oracle.png" alt="" width="92" height="92" />
-        <span class="ob-text">
-          <span class="ob-kicker">${ORACLE_LIVE ? "Ask the archive" : "Resting"}</span>
-          <span class="ob-title">The Oracle</span>
-          <span class="ob-sub">Ask for a poem, an argument, or a place to start. It searches the collection and answers.</span>
-        </span>
-        <span class="ob-go">${ORACLE_LIVE ? "Consult &rarr;" : "About &rarr;"}</span>
-      </a>
+      <div class="doors">
+        <a class="door door-archive" href="#/eras">
+          <img src="archive.png" alt="" width="124" height="124" />
+          <span class="d-name">The Archive</span>
+          <span class="d-line">${DATA.count} poems by ${DATA.poets.length} poets,
+          from Anglo-Saxon verse to the Victorians \u2014 every one in the public domain.</span>
+          <span class="d-go">Enter &rarr;</span>
+        </a>
+        <a class="door door-oracle${ORACLE_LIVE ? "" : " is-resting"}" href="#/oracle">
+          <img src="oracle.png" alt="" width="124" height="124" />
+          <span class="d-name">The Oracle</span>
+          <span class="d-line">Ask for a poem, an argument, or a place to start.
+          It searches the collection before it answers.</span>
+          <span class="d-go">${ORACLE_LIVE ? "Consult &rarr;" : "Resting"}</span>
+        </a>
+      </div>
 
-      <div class="page-head"><h1 class="page-title">Browse by Era</h1>
-      <p class="page-sub">${DATA.count} poems across ${DATA.poets.length} poets, sorted into the ages that shaped them.</p></div>
+      <p class="doors-or">Or go straight to an era</p>
       ${eraGridHTML()}
-      <div class="browse-all"><a href="#/poems" class="read-link">Or browse all ${DATA.count} poems →</a></div>`;
+      <div class="browse-all"><a href="#/poems" class="read-link">Browse all ${DATA.count} poems \u2192</a></div>`;
     bindEraTiles();
   }
 
