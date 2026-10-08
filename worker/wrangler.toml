@@ -3,6 +3,11 @@ main = "src/index.js"
 compatibility_date = "2026-10-08"
 compatibility_flags = ["nodejs_compat"]
 
+# The Oracle is the costliest route, so it has an off switch. Set to "true"
+# and redeploy to bring it back; nothing else on the site depends on it.
+[vars]
+ORACLE_ENABLED = "false"
+
 # The API key is NOT stored here. It is set once as an encrypted secret:
 #   npx wrangler secret put ANTHROPIC_API_KEY
 # or in the Cloudflare dashboard under

@@ -543,6 +543,11 @@ export default {
     // The Oracle is a conversation about the archive, not about one poem, so it
     // takes a different body and runs its own tool loop.
     if (route === "/api/oracle") {
+      // Flip ORACLE_ENABLED in wrangler.toml to bring it back. Checked before
+      // anything else so a direct call to the endpoint cannot spend a cent.
+      if (String(env.ORACLE_ENABLED) !== "true") {
+        return json(503, { error: "The Oracle is resting. The archive is open as usual." }, origin);
+      }
       if (env.ORACLE_LIMITER) {
         const ip = request.headers.get("CF-Connecting-IP") || "unknown";
         const { success } = await env.ORACLE_LIMITER.limit({ key: ip });

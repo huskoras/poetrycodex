@@ -12,6 +12,9 @@
   // The reading panel stays hidden until this points at the deployed Worker
   // (see worker/README.md). Keep it in sync with ALLOWED_ORIGINS there.
   const ENGINE_URL = "https://poetrycodex-engine.poetrycodex.workers.dev";
+  // Set to true (and ORACLE_ENABLED in worker/wrangler.toml) to wake the Oracle.
+  const ORACLE_LIVE = false;
+
   // What the Oracle is reading over your shoulder, if anything.
   let ORACLE_CONTEXT = null;   // {id, title, author, text}
   const LENSES = [
@@ -235,11 +238,11 @@
       <a class="oracle-banner" href="#/oracle">
         <img src="oracle.png" alt="" width="92" height="92" />
         <span class="ob-text">
-          <span class="ob-kicker">Ask the archive</span>
+          <span class="ob-kicker">${ORACLE_LIVE ? "Ask the archive" : "Resting"}</span>
           <span class="ob-title">The Oracle</span>
           <span class="ob-sub">Ask for a poem, an argument, or a place to start. It searches the collection and answers.</span>
         </span>
-        <span class="ob-go">Consult &rarr;</span>
+        <span class="ob-go">${ORACLE_LIVE ? "Consult &rarr;" : "About &rarr;"}</span>
       </a>
 
       <div class="page-head"><h1 class="page-title">Browse by Era</h1>
@@ -557,7 +560,27 @@
     </div>`;
   }
 
+  function renderOracleResting() {
+    app.innerHTML = `
+      <section class="oracle">
+        <header class="oracle-head">
+          <img class="oracle-coin is-resting" src="oracle.png" alt="Silver tetradrachm of Alexander the Great" />
+          <h1>The Oracle</h1>
+          <p>The Oracle is resting. It will answer again soon.</p>
+        </header>
+        <div class="o-resting">
+          <p>The Oracle reads the archive and answers questions about it \u2014 which poem to
+          start with, how a form works, what a period was arguing about. It is paused for
+          the moment.</p>
+          <p>Everything else is open: <a href="#/poems">${DATA.count} poems</a> by
+          <a href="#/poets">${DATA.poets.length} poets</a>, arranged
+          <a href="#/eras">by era</a>, every one of them free to read.</p>
+        </div>
+      </section>`;
+  }
+
   function renderOracle() {
+    if (!ORACLE_LIVE) return renderOracleResting();
     const empty = !ORACLE_MSGS.length;
     app.innerHTML = `
       <section class="oracle">
@@ -840,8 +863,8 @@
       <p class="ask-hint">Press Enter to ask \u00b7 Shift + Enter for a new line</p>
       ${compare}
       <div class="engine-out" id="engine-out" hidden></div>
-      <p class="engine-more">Or <button class="to-oracle" type="button">take this poem to the Oracle</button>
-      for a longer conversation.</p>
+      ${ORACLE_LIVE ? `<p class="engine-more">Or <button class="to-oracle" type="button">take this poem to the Oracle</button>
+      for a longer conversation.</p>` : ""}
       </section>`;
   }
 
