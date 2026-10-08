@@ -13,8 +13,9 @@ Quick reminders:
 - Content lives in `data/poets/<slug>.json` + `data/works/<slug>.json` (full text).
   `data/index.json` is a generated startup index — after any content edit, run
   `python tools/build_index.py` (recomputes `count`, `subjects[]`, per-poet
-  `poemCount`/`workCount`), then `python tools/verify_split.py`, then commit both the
-  edited poet/work file and the regenerated `data/index.json`.
+  `poemCount`/`workCount`), then `python tools/build_search_index.py`, then
+  `python tools/verify_split.py`, then commit the edited poet/work file together
+  with the regenerated `data/index.json` and `data/search.json`.
 - Public domain only. Translations must be pre-1929 — record the `translator` field.
 - Never ingest editorial notes, introductions, footnotes or stage plays as "poems".
 - Spot-check extracted poems before committing; bad data is worse than no data.

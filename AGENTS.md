@@ -46,6 +46,9 @@ sections (cantos/books/fitts).
 - `tools/split_data.py` — one-off migration script that produced the files above from
   the old monolithic `poems.json` (kept for reference; do not re-run — `poems.json` no
   longer exists in the working tree, only in git history at or before commit `b38eab4`).
+- `tools/build_search_index.py` — regenerates `data/search.json` (the Oracle's
+  lookup table) from `data/index.json`. Run it after `build_index.py` on every
+  content change, or the Oracle will recommend poems that have moved.
 - `tools/build_index.py` — regenerates `data/index.json` from `data/poets/*.json` +
   `data/works/*.json`. Run this after any content edit.
 - `tools/verify_split.py` — integrity check. Self-contained (does **not** need the old
@@ -194,7 +197,15 @@ API key, so every Claude call goes through it.
 - `POST /api/gloss` — Old/Middle English rendered line by line into modern
   English, plus a short note on the hard words. Long texts are cut at a line
   break and only the opening is glossed.
-- All four stream `data: {"t": "..."}` SSE lines, terminated by `[DONE]`.
+- `POST /api/oracle` — open conversation about the archive (the `#/oracle`
+  page). The model cannot see the archive, so its prompt carries a catalogue of
+  poets and works built from `index.json`, and it finds individual poems with a
+  `search_archive` tool backed by `data/search.json`. **It is forbidden to name
+  a poem the tool has not returned** — that rule is what keeps recommendations
+  real, so do not loosen it. Carrying all 11,229 titles in the prompt instead
+  would cost about $0.65 per request.
+- All five stream `data: {"t": "..."}` SSE lines, terminated by `[DONE]`;
+  `/api/oracle` also sends `{"searching": "..."}` as it looks things up.
 
 The panel renders on poem pages and on work sections (`renderDetailReady` and
 `renderWorkSectionReady` in `app.js`). The **Modern English** button appears
