@@ -404,29 +404,6 @@ textarea.ask-input {
   margin-top: 1.5rem !important; font-style: normal !important;
 }
 
-/* ============ HERO: ASK THE CODEX ============ */
-.hero-ask {
-  display: flex; gap: .5rem; margin-top: .9rem;
-  width: min(92vw, 640px); justify-content: center;
-}
-.hero-ask .ha-field { position: relative; flex: 1.35; }
-.hero-ask input {
-  width: 100%; font-family: var(--serif); font-size: 1rem;
-  padding: .7rem .95rem; color: var(--ink); background: var(--surface);
-  border: 1px solid var(--line-strong); border-radius: 3px;
-}
-.hero-ask .ha-q { flex: 1; }
-.hero-ask input::placeholder { color: var(--faint); font-style: italic; }
-.hero-ask input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(169,133,47,.13); }
-.hero-ask button {
-  font-family: var(--sans); font-size: .74rem; font-weight: 700;
-  letter-spacing: .1em; text-transform: uppercase;
-  padding: 0 1.3rem; cursor: pointer; border-radius: 3px;
-  color: #fff; background: var(--gold); border: 1px solid var(--gold);
-  transition: opacity .15s;
-}
-.hero-ask button:hover { opacity: .86; }
-
 @media (max-width: 760px) {
   .engine { width: calc(100vw - 2rem); padding: 1.5rem 1.3rem 1.7rem; margin-bottom: 2rem; }
   textarea.ask-input { min-height: 104px; }
@@ -434,8 +411,6 @@ textarea.ask-input {
   .lens { font-size: .7rem; padding: .52rem .8rem; letter-spacing: .06em; }
   .ask-form { flex-direction: column; }
   .ask-send { width: 100%; }
-  .hero-ask { flex-direction: column; width: min(92vw, 440px); }
-  .hero-ask button { padding: .7rem; }
 }
 
 /* The composer carries the hint, so the intro above it can stay short. */
@@ -562,4 +537,90 @@ textarea.ask-input {
   .ob-go { width: 100%; text-align: center; }
   .o-you .o-bubble { max-width: 92%; }
   .o-send { padding: .95rem 1.2rem; }
+}
+
+
+/* ============ ENGINE CUE ============ */
+/* The panel is closed by default so the poem comes first; this bar opens it
+   and stays in reach however long the poem runs. */
+.engine-cue {
+  position: sticky; top: 56px; z-index: 20;
+  display: flex; align-items: center; gap: .9rem; width: 100%;
+  margin: 1.4rem 0 1.8rem; padding: .85rem 1.1rem;
+  cursor: pointer; text-align: left;
+  background: var(--surface-alt); border: 1px solid var(--line-strong);
+  border-radius: 8px; box-shadow: var(--shadow-sm);
+  transition: border-color .15s, box-shadow .15s;
+}
+.engine-cue:hover { border-color: var(--gold); }
+.ec-mark { color: var(--gold); font-size: 1rem; line-height: 1; }
+.ec-label {
+  font-family: var(--sans); font-size: .76rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--ink);
+}
+.ec-hint {
+  flex: 1; font-family: var(--serif); font-size: .96rem; font-style: italic;
+  color: var(--ink-soft); opacity: .8;
+}
+.ec-go {
+  flex: none; font-family: var(--sans); font-size: .7rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--gold);
+}
+.engine-more {
+  font-family: var(--serif); font-size: 1rem; color: var(--ink-soft);
+  margin: 1.6rem 0 0; font-style: italic;
+}
+.to-oracle {
+  font: inherit; font-style: normal; color: var(--accent); cursor: pointer;
+  background: none; border: none; padding: 0;
+  text-decoration: underline; text-underline-offset: .18em;
+}
+.to-oracle:hover { color: var(--gold); }
+
+/* ============ ORACLE: CONTEXT & TRAIL ============ */
+/* Naming the scope is what makes this one Oracle rather than two. */
+.o-context {
+  display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap;
+  margin: 0 0 1.6rem; padding: .7rem 1rem;
+  background: var(--surface-alt); border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--gold); border-radius: 6px;
+}
+.oc-label {
+  font-family: var(--sans); font-size: .64rem; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--gold);
+}
+.oc-title { font-family: var(--serif); font-size: 1.04rem; color: var(--ink); }
+.oc-by { font-family: var(--serif); font-size: .96rem; font-style: italic; color: var(--ink-soft); }
+.oc-clear {
+  margin-left: auto; cursor: pointer; background: none; border: none;
+  font-size: 1.2rem; line-height: 1; color: var(--faint); padding: 0 .2rem;
+}
+.oc-clear:hover { color: var(--ink); }
+
+/* What the answer was built on, kept rather than discarded. */
+.o-trail { margin-top: 1.2rem; }
+.o-trail summary {
+  font-family: var(--sans); font-size: .68rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--faint);
+  cursor: pointer; list-style: none;
+}
+.o-trail summary::-webkit-details-marker { display: none; }
+.o-trail summary::before { content: "\25b8 "; }
+.o-trail[open] summary::before { content: "\25be "; }
+.o-trail summary:hover { color: var(--gold); }
+.o-trail p { margin: .6rem 0 0 !important; display: flex; flex-wrap: wrap; gap: .35rem; }
+.o-trail span {
+  font-family: var(--sans) !important; font-size: .7rem; letter-spacing: .04em;
+  padding: .2rem .55rem; border-radius: 10px;
+  background: var(--surface-alt); border: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+
+/* A question quoted, not a chat bubble. The archive's tone, not a messenger's. */
+.o-you { display: block; }
+.o-q {
+  margin: 0; padding: 0 0 0 1.4rem;
+  border-left: 3px solid var(--line-strong);
+  font-family: var(--serif); font-size: 1.22rem; line-height: 1.55;
+  color: var(--ink); font-style: italic;
 }

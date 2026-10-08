@@ -402,9 +402,25 @@ async function oracleResponse(body, origin, env) {
 
   const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
   const system = [
+    // Stable across every conversation, so the cache breakpoint sits here.
     { type: "text", text: SYSTEM_ORACLE + "\n\n--- CATALOGUE ---\n" + cat,
       cache_control: { type: "ephemeral" } },
   ];
+
+  // The reader may have brought a poem with them from its page. It goes after
+  // the breakpoint so it cannot disturb the cached prefix.
+  const ctx = body.context;
+  if (ctx && typeof ctx.title === "string" && typeof ctx.text === "string") {
+    system.push({
+      type: "text",
+      text: "The reader is on the page of this poem, and their questions are most " +
+        "likely about it unless they say otherwise. It is in the archive, so search " +
+        "for its id as usual before linking to it.\n\n" +
+        'Poem: "' + ctx.title.slice(0, MAX_FIELD_CHARS) + '"\n' +
+        "Poet: " + String(ctx.author || "Anonymous").slice(0, MAX_FIELD_CHARS) + "\n\n---\n" +
+        ctx.text.slice(0, MAX_TEXT_CHARS / 2) + "\n---",
+    });
+  }
 
   const encoder = new TextEncoder();
   const sse = new ReadableStream({

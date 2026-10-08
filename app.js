@@ -12,7 +12,8 @@
   // The reading panel stays hidden until this points at the deployed Worker
   // (see worker/README.md). Keep it in sync with ALLOWED_ORIGINS there.
   const ENGINE_URL = "https://poetrycodex-engine.poetrycodex.workers.dev";
-  let PENDING_ASK = null;   // {id, question} handed from the home page to the poem page
+  // What the Oracle is reading over your shoulder, if anything.
+  let ORACLE_CONTEXT = null;   // {id, title, author, text}
   const LENSES = [
     { id: "formalist", label: "Formalist" },
     { id: "historicist", label: "Historicist" },
@@ -98,7 +99,6 @@
       const fc = document.getElementById("foot-count"); if (fc) fc.textContent = d.count;
       const fp = document.getElementById("foot-poets"); if (fp) fp.textContent = d.poets.length;
       wireSearch();
-      initHeroAsk();
       route();
     })
     .catch((e) => {
@@ -150,6 +150,7 @@
     else if (h.startsWith("#/topics")) { setRoute("topics", "sub"); renderTopics(); }
     else if (h.startsWith("#/about")) { setRoute("about", "sub"); renderAbout(); }
     else if (h.startsWith("#/oracle")) { setRoute("oracle", "sub"); renderOracle(); }
+    else if (h.startsWith("#/eras")) { setRoute("eras", "sub"); renderEras(); }
     else if (h.startsWith("#/poems")) { setRoute("poems", "sub"); renderList(); }
     else { setRoute("poems", "home"); renderHome(); }
     syncSearchInput();
@@ -194,38 +195,58 @@
     </button>`;
 
   // ---------- HOME: browse by era ----------
-  function renderHome() {
+  // The era grid, shared by the home page and #/eras.
+  function eraGridHTML() {
     const epicCount = (DATA.works || []).filter(isEpicWork).length;
     const tiles = CATEGORY_ORDER.map((cat) => {
       const stats = CATEGORY_STATS[cat] || { poems: 0, works: 0 };
       return `
         <button class="topic-card" data-category="${esc(CATEGORY_SLUGS[cat])}">
           <p class="tc-name">${esc(cat)}</p>
-          <p class="tc-count">${stats.poems} poem${stats.poems === 1 ? "" : "s"}${stats.works ? " · " + stats.works + " work" + (stats.works === 1 ? "" : "s") : ""}</p>
+          <p class="tc-count">${stats.poems} poem${stats.poems === 1 ? "" : "s"}${stats.works ? " \u00b7 " + stats.works + " work" + (stats.works === 1 ? "" : "s") : ""}</p>
         </button>`;
     }).join("");
-    app.innerHTML = `
-      <a class="oracle-banner" href="#/oracle">
-        <img src="oracle.png" alt="" width="92" height="92" />
-        <span class="ob-text">
-          <span class="ob-kicker">New</span>
-          <span class="ob-title">The Oracle</span>
-          <span class="ob-sub">Ask for a poem, an argument, or a place to start. It searches the archive and answers.</span>
-        </span>
-        <span class="ob-go">Consult &rarr;</span>
-      </a>
-
-      <div class="page-head"><h1 class="page-title">Browse by Era</h1><p class="page-sub">${DATA.count} poems across ${DATA.poets.length} poets, sorted into the ages that shaped them.</p></div>
+    return `
       <div class="topic-grid">
         ${tiles}
         <button class="topic-card epics-tile" data-category="${EPICS_SLUG}">
           <p class="tc-name">Epics</p>
-          <p class="tc-count">${epicCount} work${epicCount === 1 ? "" : "s"} · every era</p>
+          <p class="tc-count">${epicCount} work${epicCount === 1 ? "" : "s"} \u00b7 every era</p>
         </button>
-      </div>
-      <div class="browse-all"><a href="#/poems" class="read-link">Or browse all ${DATA.count} poems →</a></div>`;
-    app.querySelectorAll(".topic-card[data-category]").forEach((c) =>
+      </div>`;
+  }
+
+  function renderEras() {
+    app.innerHTML = `
+      <div class="page-head"><h1 class="page-title">Browse by Era</h1>
+      <p class="page-sub">${DATA.count} poems across ${DATA.poets.length} poets, sorted into the ages that shaped them.</p></div>
+      ${eraGridHTML()}
+      <div class="browse-all"><a href="#/poems" class="read-link">Or browse all ${DATA.count} poems \u2192</a></div>`;
+    bindEraTiles();
+  }
+
+  function bindEraTiles() {
+    app.querySelectorAll(".topic-card").forEach((c) =>
       c.addEventListener("click", () => { location.hash = "#/category/" + c.dataset.category; }));
+  }
+
+  function renderHome() {
+    app.innerHTML = `
+      <a class="oracle-banner" href="#/oracle">
+        <img src="oracle.png" alt="" width="92" height="92" />
+        <span class="ob-text">
+          <span class="ob-kicker">Ask the archive</span>
+          <span class="ob-title">The Oracle</span>
+          <span class="ob-sub">Ask for a poem, an argument, or a place to start. It searches the collection and answers.</span>
+        </span>
+        <span class="ob-go">Consult &rarr;</span>
+      </a>
+
+      <div class="page-head"><h1 class="page-title">Browse by Era</h1>
+      <p class="page-sub">${DATA.count} poems across ${DATA.poets.length} poets, sorted into the ages that shaped them.</p></div>
+      ${eraGridHTML()}
+      <div class="browse-all"><a href="#/poems" class="read-link">Or browse all ${DATA.count} poems →</a></div>`;
+    bindEraTiles();
   }
 
   // ---------- CATEGORY: filtered era (or cross-cutting "epics") view ----------
@@ -488,7 +509,7 @@
   // ---------- THE ORACLE ----------
   // Kept at module scope so leaving the page and coming back does not throw
   // the conversation away.
-  let ORACLE_MSGS = [];          // [{role:"user"|"assistant", content:"..."}]
+  let ORACLE_MSGS = [];          // [{role, content, searches?}]
 
   const ORACLE_OPENERS = [
     "Recommend me poems about nature, epic and heroes.",
@@ -510,11 +531,30 @@
       .map((para) => `<p>${para.replace(/\n/g, "<br>")}</p>`).join("");
   }
 
+  // The searches behind an answer, kept visible. An archive's credibility
+  // rests on being able to see what was looked up.
+  function searchTrail(searches) {
+    if (!searches || !searches.length) return "";
+    return `<details class="o-trail"><summary>Searched the archive &middot; ${searches.length}
+      ${searches.length === 1 ? "query" : "queries"}</summary>
+      <p>${searches.map((q) => `<span>${esc(q)}</span>`).join("")}</p></details>`;
+  }
+
   function oracleBubble(m) {
     return m.role === "user"
-      ? `<div class="o-turn o-you"><div class="o-bubble">${esc(m.content)}</div></div>`
+      ? `<div class="o-turn o-you"><blockquote class="o-q">${esc(m.content)}</blockquote></div>`
       : `<div class="o-turn o-codex"><div class="o-mark"><img src="oracle.png" alt="" width="34" height="34" /></div>
-         <div class="o-body">${renderMarkdown(m.content)}</div></div>`;
+         <div class="o-body">${renderMarkdown(m.content)}${searchTrail(m.searches)}</div></div>`;
+  }
+
+  function contextChip() {
+    if (!ORACLE_CONTEXT) return "";
+    return `<div class="o-context">
+      <span class="oc-label">Reading</span>
+      <span class="oc-title">${esc(ORACLE_CONTEXT.title)}</span>
+      <span class="oc-by">${esc(ORACLE_CONTEXT.author)}</span>
+      <button class="oc-clear" title="Ask about the whole archive instead">&times;</button>
+    </div>`;
   }
 
   function renderOracle() {
@@ -527,6 +567,7 @@
           <p>Ask anything about poetry, or about what this archive holds. The Oracle
           searches the collection before it answers, and links to what it finds.</p>
         </header>
+        ${contextChip()}
         ${empty ? `<div class="o-openers">${ORACLE_OPENERS.map((q) =>
           `<button class="o-opener">${esc(q)}</button>`).join("")}</div>` : ""}
         <div class="o-thread" id="o-thread">${ORACLE_MSGS.map(oracleBubble).join("")}</div>
@@ -544,6 +585,9 @@
     const input = app.querySelector(".o-input");
     const send = app.querySelector(".o-send");
     let running = false;
+
+    const clear = app.querySelector(".oc-clear");
+    if (clear) clear.addEventListener("click", () => { ORACLE_CONTEXT = null; renderOracle(); });
 
     // The composer grows with the question, up to a point.
     function grow() {
@@ -579,12 +623,20 @@
       const live = document.getElementById("o-live").querySelector(".o-body");
       live.scrollIntoView({ behavior: "smooth", block: "end" });
 
+      const searches = [];
       let prose = "";
       try {
+        const payload = { messages: ORACLE_MSGS.map((m) => ({ role: m.role, content: m.content })) };
+        if (ORACLE_CONTEXT) {
+          payload.context = {
+            title: ORACLE_CONTEXT.title, author: ORACLE_CONTEXT.author,
+            text: ORACLE_CONTEXT.text,
+          };
+        }
         const res = await fetch(ENGINE_URL + "/api/oracle", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ messages: ORACLE_MSGS }),
+          body: JSON.stringify(payload),
         });
         if (!res.ok || !res.body) {
           const info = await res.json().catch(() => ({}));
@@ -606,16 +658,19 @@
             let msg;
             try { msg = JSON.parse(chunk); } catch { continue; }
             if (msg.error) throw new Error(msg.error);
-            if (msg.searching && !prose) {
-              live.innerHTML = `<p class="o-status">Searching the archive for \u201c${esc(msg.searching)}\u201d\u2026</p>`;
+            if (msg.searching) {
+              if (searches.indexOf(msg.searching) < 0) searches.push(msg.searching);
+              if (!prose) {
+                live.innerHTML = `<p class="o-status">Searching the archive for \u201c${esc(msg.searching)}\u201d\u2026</p>`;
+              }
               continue;
             }
             prose += msg.t || "";
-            if (prose) live.innerHTML = renderMarkdown(prose);
+            if (prose) live.innerHTML = renderMarkdown(prose) + searchTrail(searches);
           }
         }
         if (!prose.trim()) throw new Error("The Oracle had nothing to say. Please try again.");
-        ORACLE_MSGS.push({ role: "assistant", content: prose });
+        ORACLE_MSGS.push({ role: "assistant", content: prose, searches });
       } catch (err) {
         live.innerHTML = `<p class="o-error">${esc(err.message || "The Oracle could not answer.")}</p>`;
         ORACLE_MSGS.pop();                       // drop the unanswered question
@@ -734,30 +789,6 @@
     input.addEventListener("blur", () => setTimeout(close, 140));
   }
 
-  // Hero form: pick any poem in the archive and ask about it without first
-  // navigating there. The question is carried over and runs on arrival.
-  function initHeroAsk() {
-    const form = document.querySelector(".hero-ask");
-    if (!form || !ENGINE_URL) return;
-    const poemInput = form.querySelector(".ha-poem");
-    const hits = form.querySelector(".ha-hits");
-    const qInput = form.querySelector(".ha-q");
-    let chosen = null;
-    attachPoemPicker(poemInput, hits, (p) => { chosen = p; });
-    form.hidden = false;
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      if (!chosen) { poemInput.focus(); return; }
-      const question = qInput.value.trim();
-      if (!question) { qInput.focus(); return; }
-      const id = chosen.id;
-      PENDING_ASK = { id, question };
-      poemInput.value = ""; qInput.value = ""; chosen = null;
-      location.hash = routeFor(id);
-    });
-  }
-
   // The gloss button has to find Chaucer, Gower, Langland and Wyatt without
   // firing on Shakespeare or Spenser, whose spelling is old but readable.
   // Measured over the archive, Middle English texts score 9-59 hits per
@@ -788,7 +819,13 @@
         <ul class="compare-hits" hidden></ul>
       </form>` : "";
     return `
-      <section class="engine">
+      <button class="engine-cue" type="button" aria-expanded="false">
+        <span class="ec-mark">\u25c8</span>
+        <span class="ec-label">Read with the Codex</span>
+        <span class="ec-hint">Eight critical traditions, or a question of your own</span>
+        <span class="ec-go">Open \u25be</span>
+      </button>
+      <section class="engine" hidden>
       <p class="section-label">Read with the Codex</p>
       <p class="engine-intro">Choose a critical tradition, or ask a question of your own.
       Readings are generated, and are meant to open an argument rather than settle one.</p>
@@ -803,6 +840,8 @@
       <p class="ask-hint">Press Enter to ask \u00b7 Shift + Enter for a new line</p>
       ${compare}
       <div class="engine-out" id="engine-out" hidden></div>
+      <p class="engine-more">Or <button class="to-oracle" type="button">take this poem to the Oracle</button>
+      for a longer conversation.</p>
       </section>`;
   }
 
@@ -903,16 +942,23 @@
           "In answer to: \u201c" + question + "\u201d \u2014 generated by the Poetry Codex critical engine.");
     });
 
-    if (cmpForm) bindCompare(cmpForm, piece, run, () => running, buttons);
+    const panel = app.querySelector(".engine");
+    const cue = app.querySelector(".engine-cue");
+    if (cue) cue.addEventListener("click", () => {
+      const open = !panel.hidden;
+      panel.hidden = open;
+      cue.setAttribute("aria-expanded", String(!open));
+      cue.querySelector(".ec-go").textContent = open ? "Open \u25be" : "Close \u25b4";
+      if (!open) panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
 
-    if (PENDING_ASK && PENDING_ASK.id === piece.id) {
-      const { question } = PENDING_ASK;
-      PENDING_ASK = null;
-      askInput.value = question;
-      out.scrollIntoView({ behavior: "smooth", block: "center" });
-      run("/api/ask", { question },
-          "In answer to: \u201c" + question + "\u201d \u2014 generated by the Poetry Codex critical engine.");
-    }
+    const toOracle = app.querySelector(".to-oracle");
+    if (toOracle) toOracle.addEventListener("click", () => {
+      ORACLE_CONTEXT = { id: piece.id, title: piece.title, author: piece.author, text: piece.text };
+      location.hash = "#/oracle";
+    });
+
+    if (cmpForm) bindCompare(cmpForm, piece, run, () => running, buttons);
   }
 
   // Compare box: same picker, then the chosen poem's full text.
