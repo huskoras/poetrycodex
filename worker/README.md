@@ -24,6 +24,9 @@ Eight critical traditions are available: `formalist`, `historicist`, `feminist`,
   `src/index.js` in step with `ENGINE_URL` in `../app.js`.
 - **Size caps** — poem text is truncated at 24,000 characters, `max_tokens` is
   capped at 2,000, so no single request can run away with the balance.
+- **Rate limit** — six readings per minute per IP, via the `ANALYZE_LIMITER`
+  binding in `wrangler.toml`. Generous for a reader, useless for anyone trying
+  to drain the balance.
 - **Prompt caching** — the stable half of the system prompt carries a cache
   breakpoint, so repeat traffic is cheaper.
 - The key is only ever an encrypted Worker secret. It is never in this repo,
@@ -59,7 +62,5 @@ One reading is roughly 1,500 input + 600 output tokens on `claude-opus-5-5` —
 on the order of a cent. Lower `output_config.effort` from `high` to `medium` in
 `src/index.js` to reduce it further.
 
-Before this is linked from the live site, add a rate-limiting rule in the
-Cloudflare dashboard (Security → WAF → Rate limiting rules), e.g. 10 requests
-per minute per IP on `/api/analyze`. The caps above bound the cost of one
-request; the WAF rule bounds how many a single visitor can make.
+Deployed and live at `https://poetrycodex-engine.poetrycodex.workers.dev`,
+wired into `ENGINE_URL` in `../app.js`.

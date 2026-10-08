@@ -7,3 +7,13 @@ compatibility_flags = ["nodejs_compat"]
 #   npx wrangler secret put ANTHROPIC_API_KEY
 # or in the Cloudflare dashboard under
 #   Workers & Pages -> poetrycodex-engine -> Settings -> Variables -> Secret.
+
+# Per-visitor throttle: six readings a minute from one IP is generous for a
+# reader and useless for anyone trying to drain the balance.
+[[ratelimits]]
+name = "ANALYZE_LIMITER"
+namespace_id = "1001"
+
+  [ratelimits.simple]
+  limit = 6
+  period = 60

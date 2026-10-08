@@ -164,6 +164,15 @@ export default {
       return json(500, { error: "The critical engine is not configured yet." }, origin);
     }
 
+    // One visitor cannot ask for readings faster than a reader plausibly would.
+    if (env.ANALYZE_LIMITER) {
+      const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+      const { success } = await env.ANALYZE_LIMITER.limit({ key: ip });
+      if (!success) {
+        return json(429, { error: "Too many readings at once. Please wait a moment." }, origin);
+      }
+    }
+
     let body;
     try {
       body = await request.json();
