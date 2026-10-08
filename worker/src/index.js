@@ -326,7 +326,10 @@ export default {
         (excerpt ? "This is the opening of a longer text.\n" : "") +
         "\n---\n" + body + "\n---\n\n" +
         "Gloss these lines into modern English." +
-        (excerpt ? " Gloss exactly the lines you were given and stop there; do not note that the text continues." : "");
+        (excerpt
+          ? " Gloss exactly the lines you were given, then give the Notes paragraph as usual." +
+            " Do not remark that the text continues beyond them."
+          : "");
     }
 
     const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
