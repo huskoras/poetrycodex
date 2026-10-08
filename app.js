@@ -390,7 +390,8 @@
         </div>
       </article>`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/work/" + slug; });
-    bindEngine({ title: w.title + " - " + s.title, author: w.author, text: s.text });
+    bindEngine({ title: w.title + " \u00b7 " + s.title, author: w.author, text: s.text,
+                 id: "work:" + slug + "/" + i });
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/work/" + slug + "/" + b.dataset.go; }));
   }
 
@@ -486,28 +487,82 @@
       renderDetailReady(poetFile, slug, n, p);
     }).catch((e) => { if (location.hash === requestedHash) renderFetchError(e); });
   }
-  // Type-ahead over the index: title or poet, eight hits, newest query wins.
-  // `onPick` receives the chosen index stub.
+  // Everything the Codex can be pointed at: every poem, and every section of
+  // every work. Built once, on first use.
+  let ASK_ITEMS = null;
+  function askItems() {
+    if (ASK_ITEMS || !DATA) return ASK_ITEMS || [];
+    ASK_ITEMS = DATA.poems.map((p) => ({
+      id: p.id,
+      label: p.title,
+      author: p.author,
+      hay: (p.title + " " + p.author).toLowerCase(),
+    }));
+    (DATA.works || []).forEach((w) => {
+      (w.sections || []).forEach((sec, i) => {
+        ASK_ITEMS.push({
+          id: "work:" + w.slug + "/" + i,
+          label: w.title + " \u00b7 " + sec.title,
+          author: w.author,
+          hay: (w.title + " " + sec.title + " " + w.author).toLowerCase(),
+        });
+      });
+    });
+    return ASK_ITEMS;
+  }
+
+  // Where an ask-item lives.
+  function routeFor(id) {
+    return id.startsWith("work:")
+      ? "#/work/" + id.slice(5)
+      : "#/poem/" + id;
+  }
+
+  // The full text behind an ask-item, fetched on demand.
+  function loadPiece(id) {
+    if (id.startsWith("work:")) {
+      const cut = id.lastIndexOf("/");
+      const slug = id.slice(5, cut);
+      const i = Number(id.slice(cut + 1));
+      return fetchWorkFile(slug).then((w) => {
+        const sec = w.sections[i];
+        return sec && { title: w.title + " \u00b7 " + sec.title, author: w.author, text: sec.text };
+      });
+    }
+    const parts = id.split("/");
+    return fetchPoetFile(parts[0]).then((f) => {
+      const po = f.poems[Number(parts[1])];
+      return po && { title: po.title, author: po.author, text: po.text };
+    });
+  }
+
+  // Type-ahead over poems and work sections. Title matches beat author
+  // matches, and a title that starts with the query beats one that merely
+  // contains it, so "paradise lost" leads with the poem of that name.
   function attachPoemPicker(input, hits, onPick, excludeId) {
-    let chosen = null;
     const close = () => { hits.hidden = true; hits.innerHTML = ""; };
 
     input.addEventListener("input", () => {
-      chosen = null;
       onPick(null);
       const q = input.value.trim().toLowerCase();
-      if (q.length < 3 || !DATA) return close();
-      const found = [];
-      for (const p of DATA.poems) {
-        if (p.id === excludeId) continue;
-        if (p.title.toLowerCase().includes(q) || p.author.toLowerCase().includes(q)) {
-          found.push(p);
-          if (found.length === 8) break;
-        }
+      if (q.length < 3) return close();
+      const scored = [];
+      for (const it of askItems()) {
+        if (it.id === excludeId) continue;
+        const label = it.label.toLowerCase();
+        let score;
+        if (label.startsWith(q)) score = 0;
+        else if (label.includes(q)) score = 1;
+        else if (it.hay.includes(q)) score = 2;
+        else continue;
+        scored.push([score, it]);
+        if (scored.length > 400) break;          // enough to rank well
       }
-      if (!found.length) return close();
-      hits.innerHTML = found.map((p) =>
-        `<li data-id="${esc(p.id)}"><strong>${esc(p.title)}</strong> <span>${esc(p.author)}</span></li>`).join("");
+      if (!scored.length) return close();
+      scored.sort((a, b) => a[0] - b[0]);
+      const found = scored.slice(0, 8).map((x) => x[1]);
+      hits.innerHTML = found.map((it) =>
+        `<li data-id="${esc(it.id)}"><strong>${esc(it.label)}</strong> <span>${esc(it.author)}</span></li>`).join("");
       hits.hidden = false;
     });
 
@@ -515,13 +570,12 @@
     hits.addEventListener("mousedown", (e) => {
       const li = e.target.closest("li");
       if (!li) return;
-      chosen = DATA.poems.find((p) => p.id === li.dataset.id) || null;
-      if (chosen) { input.value = chosen.title + " \u2014 " + chosen.author; onPick(chosen); }
+      const it = askItems().find((x) => x.id === li.dataset.id);
+      if (it) { input.value = it.label + " \u2014 " + it.author; onPick(it); }
       close();
     });
 
     input.addEventListener("blur", () => setTimeout(close, 140));
-    return () => chosen;
   }
 
   // Hero form: pick any poem in the archive and ask about it without first
@@ -541,10 +595,10 @@
       if (!chosen) { poemInput.focus(); return; }
       const question = qInput.value.trim();
       if (!question) { qInput.focus(); return; }
-      const id = chosen.id;                  // "<slug>/<n>", already the route tail
+      const id = chosen.id;
       PENDING_ASK = { id, question };
       poemInput.value = ""; qInput.value = ""; chosen = null;
-      location.hash = "#/poem/" + id;
+      location.hash = routeFor(id);
     });
   }
 
@@ -716,9 +770,7 @@
       e.preventDefault();
       if (isRunning() || !chosen) { input.focus(); return; }
       buttons.forEach((b) => b.classList.remove("active"));
-      const parts = chosen.id.split("/");
-      const file = await fetchPoetFile(parts[0]).catch(() => null);
-      const other = file && file.poems[Number(parts[1])];
+      const other = await loadPiece(chosen.id).catch(() => null);
       if (!other) return;
       run("/api/compare",
           { otherTitle: other.title, otherAuthor: other.author, otherText: other.text },
