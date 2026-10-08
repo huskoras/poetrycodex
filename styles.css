@@ -346,3 +346,33 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 .ask-send:hover:not(:disabled) { opacity: .85; }
 .ask-input:disabled, .ask-send:disabled { opacity: .45; cursor: default; }
 @media (max-width: 520px) { .ask-form { flex-direction: column; } .ask-send { width: 100%; } }
+
+/* Modern-English gloss button, compare picker, gloss output */
+.lens-alt { border-style: dashed; }
+.lens-alt.active { border-style: solid; }
+
+.compare-form { position: relative; }
+.compare-hits {
+  position: absolute; top: 100%; left: 0; right: 0; z-index: 20;
+  margin: .25rem 0 0; padding: .25rem; list-style: none;
+  background: #fff; border: 1px solid rgba(23,20,15,.18); border-radius: 3px;
+  box-shadow: 0 8px 22px rgba(23,20,15,.14); max-height: 280px; overflow-y: auto;
+}
+.compare-hits li {
+  padding: .5rem .6rem; cursor: pointer; border-radius: 2px;
+  font-family: var(--serif); font-size: .98rem; line-height: 1.35;
+}
+.compare-hits li:hover { background: rgba(23,20,15,.06); }
+.compare-hits li strong { font-weight: 500; color: var(--ink); }
+.compare-hits li span {
+  display: block; font-family: var(--sans); font-size: .72rem;
+  letter-spacing: .05em; text-transform: uppercase; color: var(--ink-soft); opacity: .7;
+}
+
+/* A gloss is original line then modern rendering, so it wants tighter,
+   left-aligned blocks rather than prose paragraphs. */
+.engine-out.is-gloss p {
+  white-space: pre-wrap; font-size: 1.02rem; line-height: 1.6;
+  margin: 0 0 1.1rem;
+}
+.engine-out.is-gloss p:last-of-type { white-space: normal; }

@@ -9,6 +9,10 @@
  *   a reading of the poem through one critical tradition.
  * POST /api/ask      { title, author, year?, question, text }
  *   an answer to the reader's own question about the poem.
+ * POST /api/compare  { title, author, text, otherTitle, otherAuthor, otherText }
+ *   a comparative reading of two poems in the archive.
+ * POST /api/gloss    { title, author, text }
+ *   a modern-English gloss of Old or Middle English verse.
  *
  * Both return a text/event-stream of {"t": "<chunk of prose>"} lines,
  * terminated by [DONE].
@@ -31,6 +35,9 @@ const MAX_TEXT_CHARS = 24000;
 const MAX_FIELD_CHARS = 200;
 const MAX_QUESTION_CHARS = 400;
 const MAX_TOKENS = 2000;
+const MAX_GLOSS_TOKENS = 8000;
+// Longer than this and a line-by-line gloss is no longer a sensible unit of work.
+const MAX_GLOSS_CHARS = 6000;
 
 /**
  * The critical traditions the engine can read through. `focus` is appended
@@ -152,6 +159,47 @@ const SYSTEM_ASK = [
   "- Write in English.",
 ].join("\n");
 
+const SYSTEM_COMPARE = [
+  "You are the critical engine of Poetry Codex, an archive of poetry in the public domain. You are given two poems and asked to read them against each other.",
+  "",
+  "A comparison is an argument, not a list of similarities. Find the one point of real contact or real divergence that makes the pair worth setting side by side, and build the reading from there.",
+  "",
+  "Method:",
+  "- Ground every claim in the words on the page, from both poems. Quote sparingly — a few words at a time.",
+  "- Attend to form as much as to subject: metre, syntax, length of line, where each poem puts its weight. Two poems on the same theme that handle it in the same way are less interesting than two that do not.",
+  "- Where the poems belong to different periods or traditions, let that difference do work rather than flattening it.",
+  "- If the pair genuinely has little to say to each other, say so, and say what the mismatch reveals.",
+  "",
+  "Honesty:",
+  "- Never invent quotations, titles, dates, editions, or the views of named critics. You may name a critical tradition; do not attribute a claim to a scholar unless you are certain of it, and never fabricate a citation.",
+  "- Do not assert influence between the poems unless the dates and the evidence support it. Resemblance is not influence.",
+  "- Where a date or attribution is uncertain, say so.",
+  "",
+  "Form:",
+  "- 300–450 words, in three or four paragraphs of continuous prose.",
+  "- No headings, no bullet lists, no preamble. Begin with the argument.",
+  "- Write in English.",
+].join("\n");
+
+const SYSTEM_GLOSS = [
+  "You are the critical engine of Poetry Codex, an archive of poetry in the public domain. You are given a poem in Old English, Middle English, or early modern English, and you produce a modern-English gloss so that a reader can follow it.",
+  "",
+  "Output format, exactly:",
+  "- Work through the poem in order, in short runs of one to four lines.",
+  "- For each run: give the original lines first, exactly as they appear in the text you were given, then on the next line a plain modern-English rendering preceded by an arrow and a space (\"→ \").",
+  "- Separate each run from the next with a blank line.",
+  "- The rendering is for understanding, not for poetry: keep it close to the original word order where that is still readable, and plain where it is not.",
+  "",
+  "After the gloss, add one short paragraph (at most 120 words) headed \"Notes:\" on the two or three words or constructions a modern reader will most need help with — a false friend, a lost idiom, a compound, a case ending that carries the sense.",
+  "",
+  "Honesty:",
+  "- Where a word or line is genuinely disputed, render the likeliest sense and say in the Notes that it is contested. Do not present a guess as settled.",
+  "- Never invent a manuscript reading, an emendation, or an editor's opinion.",
+  "- Do not silently correct or normalise the original lines you quote back.",
+  "",
+  "If the poem is already in modern English and needs no gloss, say so in one sentence and stop.",
+].join("\n");
+
 function corsHeaders(origin) {
   return {
     "Access-Control-Allow-Origin": ALLOWED_ORIGINS.has(origin) ? origin : "https://poetrycodex.com",
@@ -185,7 +233,8 @@ export default {
       return json(200, { ok: true, model: MODEL, lenses: Object.keys(LENSES) }, origin);
     }
     const route = url.pathname;
-    if ((route !== "/api/analyze" && route !== "/api/ask") || request.method !== "POST") {
+    const ROUTES = ["/api/analyze", "/api/ask", "/api/compare", "/api/gloss"];
+    if (!ROUTES.includes(route) || request.method !== "POST") {
       return json(404, { error: "Not found." }, origin);
     }
     if (origin && !ALLOWED_ORIGINS.has(origin)) {
@@ -237,18 +286,40 @@ export default {
         { type: "text", text: "Critical tradition for this reading — " + lens.label + ".\n" + lens.focus },
       ];
       prompt = poem + "Read this poem through the " + lens.label + " tradition.";
-    } else {
+    } else if (route === "/api/ask") {
       const question = clean(body.question, MAX_QUESTION_CHARS);
       if (!question) return json(400, { error: "A question is required." }, origin);
       system = [{ type: "text", text: SYSTEM_ASK, cache_control: { type: "ephemeral" } }];
       // Delimited and labelled, so the model reads it as a question, not as instructions.
       prompt = poem + "The reader asks:\n<question>\n" + question + "\n</question>";
+    } else if (route === "/api/compare") {
+      const otherTitle = clean(body.otherTitle, MAX_FIELD_CHARS);
+      const otherAuthor = clean(body.otherAuthor, MAX_FIELD_CHARS);
+      // Half the cap each, so a comparison costs no more than a single reading.
+      const otherText = clean(body.otherText, MAX_TEXT_CHARS / 2);
+      if (!otherTitle || !otherText) {
+        return json(400, { error: "A second poem is required." }, origin);
+      }
+      system = [{ type: "text", text: SYSTEM_COMPARE, cache_control: { type: "ephemeral" } }];
+      prompt =
+        "First poem.\n" + poem +
+        'Second poem.\nPoem: "' + otherTitle + '"\n' +
+        "Poet: " + (otherAuthor || "Anonymous") + "\n" +
+        "\n---\n" + otherText + "\n---\n\n" +
+        "Read these two poems against each other.";
+    } else {
+      if (text.length > MAX_GLOSS_CHARS) {
+        return json(400, { error: "This poem is too long to gloss line by line." }, origin);
+      }
+      system = [{ type: "text", text: SYSTEM_GLOSS, cache_control: { type: "ephemeral" } }];
+      prompt = poem + "Gloss this poem into modern English.";
     }
 
     const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
     const stream = client.messages.stream({
       model: MODEL,
-      max_tokens: MAX_TOKENS,
+      // A gloss runs the length of the poem; a reading is a few paragraphs.
+      max_tokens: route === "/api/gloss" ? MAX_GLOSS_TOKENS : MAX_TOKENS,
       output_config: { effort: "high" },
       system,
       messages: [{ role: "user", content: prompt }],

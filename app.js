@@ -381,12 +381,14 @@
         <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
         <hr class="rule">
         <blockquote class="poem-text">${esc(s.text)}</blockquote>
+        ${enginePanel(s.text, { gloss: true })}
         <div class="detail-nav">
           <button ${i === 0 ? "disabled" : ""} data-go="${i - 1}"><span class="dir">← Previous</span>${i > 0 ? esc(w.sections[i - 1].title) : ""}</button>
           <button class="next" ${i === w.sections.length - 1 ? "disabled" : ""} data-go="${i + 1}"><span class="dir">Next →</span>${i < w.sections.length - 1 ? esc(w.sections[i + 1].title) : ""}</button>
         </div>
       </article>`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/work/" + slug; });
+    bindEngine({ title: w.title + " - " + s.title, author: w.author, text: s.text });
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/work/" + slug + "/" + b.dataset.go; }));
   }
 
@@ -482,47 +484,75 @@
       renderDetailReady(poetFile, slug, n, p);
     }).catch((e) => { if (location.hash === requestedHash) renderFetchError(e); });
   }
+  // The gloss button has to find Chaucer, Gower, Langland and Wyatt without
+  // firing on Shakespeare or Spenser, whose spelling is old but readable.
+  // Measured over the archive, Middle English texts score 9-59 hits per
+  // thousand words on this vocabulary and early modern verse scores 0-1.6,
+  // so the threshold sits in the gap.
+  const ARCHAIC_WORDS = /\b(whan|swich|eek|nat|wol|quod|yclept|y-\w+|by-\w+|sithen|thilke|hire|nys|seyde|clepe[dn]?|licour|swoot|yern|mountaigne|leere|lynnen|aprilis|holt|heeth|croppes|yonge|sonne|halwes|ferne|straunge|sondry|corages|smale|foweles|slepen|nyght|eyen|bifil|wende[n]?|thanne|everich|certes|natheles|wight(?:es)?|sooth|ywis|parde|nolde|moot|mote|hadde|wolde|sholde|coude|seith|goth|doun|agayn|oother|peple|erthe|wordes|dayes|bettre|werk(?:es)?)\b/gi;
+  const ARCHAIC_PER_1000 = 5;
+  function looksArchaic(text) {
+    const sample = text.slice(0, 4000);
+    if (/[\u00e6\u00fe\u00f0]/.test(sample)) return true;   // ash, thorn, eth
+    const words = Math.max(sample.split(/\s+/).length, 1);
+    return (sample.match(ARCHAIC_WORDS) || []).length / words * 1000 >= ARCHAIC_PER_1000;
+  }
+
   // Markup for the critical-engine panel; empty while ENGINE_URL is unset.
-  function enginePanel() {
+  // opts.gloss adds the modern-English button (only where the text is archaic),
+  // opts.compare the second-poem picker.
+  function enginePanel(text, opts) {
     if (!ENGINE_URL) return "";
+    const o = opts || {};
+    const gloss = o.gloss && looksArchaic(text)
+      ? `<button class="lens lens-alt" data-gloss="1">Modern English</button>` : "";
+    const compare = o.compare ? `
+      <form class="ask-form compare-form" autocomplete="off">
+        <input class="ask-input compare-input" type="text" maxlength="120"
+               placeholder="Compare with another poem\u2026" aria-label="Compare with another poem" />
+        <button class="ask-send" type="submit">Compare</button>
+        <ul class="compare-hits" hidden></ul>
+      </form>` : "";
     return `
-      <div class="rule-ornament">✦ ✦ ✦</div>
+      <div class="rule-ornament">\u2726 \u2726 \u2726</div>
       <p class="section-label">Read with the Codex</p>
       <p class="engine-intro">Choose a critical tradition, or ask a question of your own.
       Readings are generated, and are meant to open an argument rather than settle one.</p>
       <div class="lens-row">${LENSES.map((l) =>
-        `<button class="lens" data-lens="${esc(l.id)}">${esc(l.label)}</button>`).join("")}</div>
+        `<button class="lens" data-lens="${esc(l.id)}">${esc(l.label)}</button>`).join("")}${gloss}</div>
       <form class="ask-form" autocomplete="off">
         <input class="ask-input" type="text" maxlength="400"
-               placeholder="Ask the Codex about this poem…" aria-label="Ask the Codex about this poem" />
+               placeholder="Ask the Codex about this poem\u2026" aria-label="Ask the Codex about this poem" />
         <button class="ask-send" type="submit">Ask</button>
       </form>
+      ${compare}
       <div class="engine-out" id="engine-out" hidden></div>`;
   }
 
-  function bindEngine(p) {
+  // `piece` is {title, author, text, id?} - a poem, or one section of a work.
+  function bindEngine(piece) {
     if (!ENGINE_URL) return;
     const out = document.getElementById("engine-out");
     const buttons = Array.from(app.querySelectorAll(".lens"));
-    const form = app.querySelector(".ask-form");
-    const input = app.querySelector(".ask-input");
-    const send = app.querySelector(".ask-send");
+    const askForm = app.querySelector(".ask-form:not(.compare-form)");
+    const askInput = askForm.querySelector(".ask-input");
+    const cmpForm = app.querySelector(".compare-form");
+    const fields = Array.from(app.querySelectorAll(".ask-input, .ask-send"));
     let running = false;
 
     function setBusy(busy) {
       running = busy;
       buttons.forEach((b) => { b.disabled = busy; });
-      input.disabled = busy;
-      send.disabled = busy;
+      fields.forEach((f) => { f.disabled = busy; });
     }
 
-    // Streams one reading or answer into #engine-out.
+    // Streams one reading, answer, gloss or comparison into #engine-out.
     async function run(path, payload, credit) {
       if (running) return;
       setBusy(true);
       out.hidden = false;
       out.className = "engine-out is-loading";
-      out.textContent = "Reading…";
+      out.textContent = "Reading\u2026";
       let prose = "";
 
       try {
@@ -530,7 +560,7 @@
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(Object.assign(
-            { title: p.title, author: p.author, text: p.text }, payload)),
+            { title: piece.title, author: piece.author, text: piece.text }, payload)),
         });
         if (!res.ok || !res.body) {
           const info = await res.json().catch(() => ({}));
@@ -553,7 +583,7 @@
             try { msg = JSON.parse(chunk); } catch { continue; }
             if (msg.error) throw new Error(msg.error);
             prose += msg.t || "";
-            out.className = "engine-out";
+            out.className = "engine-out" + (path === "/api/gloss" ? " is-gloss" : "");
             out.innerHTML = prose.split(/\n{2,}/).filter(Boolean)
               .map((para) => `<p>${esc(para)}</p>`).join("")
               + `<p class="engine-credit">${esc(credit)}</p>`;
@@ -570,18 +600,75 @@
     buttons.forEach((btn) => btn.addEventListener("click", () => {
       if (running) return;
       buttons.forEach((b) => b.classList.toggle("active", b === btn));
-      input.value = "";
-      run("/api/analyze", { lens: btn.dataset.lens },
-          btn.textContent + " reading, generated by the Poetry Codex critical engine.");
+      askInput.value = "";
+      if (btn.dataset.gloss) {
+        run("/api/gloss", {}, "Modern-English gloss, generated by the Poetry Codex critical engine.");
+      } else {
+        run("/api/analyze", { lens: btn.dataset.lens },
+            btn.textContent + " reading, generated by the Poetry Codex critical engine.");
+      }
     }));
 
-    form.addEventListener("submit", (e) => {
+    askForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      const question = input.value.trim();
+      const question = askInput.value.trim();
       if (!question || running) return;
       buttons.forEach((b) => b.classList.remove("active"));
       run("/api/ask", { question },
-          "In answer to: “" + question + "” — generated by the Poetry Codex critical engine.");
+          "In answer to: \u201c" + question + "\u201d \u2014 generated by the Poetry Codex critical engine.");
+    });
+
+    if (cmpForm) bindCompare(cmpForm, piece, run, () => running, buttons);
+  }
+
+  // Title/author picker over the index, then the chosen poem's full text.
+  function bindCompare(form, piece, run, isRunning, buttons) {
+    const input = form.querySelector(".compare-input");
+    const hits = form.querySelector(".compare-hits");
+    let chosen = null;
+
+    function close() { hits.hidden = true; hits.innerHTML = ""; }
+
+    input.addEventListener("input", () => {
+      chosen = null;
+      const q = input.value.trim().toLowerCase();
+      if (q.length < 3) return close();
+      const found = [];
+      for (const p of DATA.poems) {
+        if (p.id === piece.id) continue;
+        if (p.title.toLowerCase().includes(q) || p.author.toLowerCase().includes(q)) {
+          found.push(p);
+          if (found.length === 8) break;
+        }
+      }
+      if (!found.length) return close();
+      hits.innerHTML = found.map((p) =>
+        `<li data-id="${esc(p.id)}"><strong>${esc(p.title)}</strong> <span>${esc(p.author)}</span></li>`).join("");
+      hits.hidden = false;
+    });
+
+    hits.addEventListener("mousedown", (e) => {
+      const li = e.target.closest("li");
+      if (!li) return;
+      chosen = DATA.poems.find((p) => p.id === li.dataset.id) || null;
+      if (chosen) input.value = chosen.title + " \u2014 " + chosen.author;
+      close();
+    });
+
+    input.addEventListener("blur", () => setTimeout(close, 120));
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (isRunning() || !chosen) { input.focus(); return; }
+      buttons.forEach((b) => b.classList.remove("active"));
+      const parts = chosen.id.split("/");
+      const file = await fetchPoetFile(parts[0]).catch(() => null);
+      const other = file && file.poems[Number(parts[1])];
+      if (!other) return;
+      run("/api/compare",
+          { otherTitle: other.title, otherAuthor: other.author, otherText: other.text },
+          "A comparative reading with \u201c" + other.title + "\u201d by " + other.author
+          + ", generated by the Poetry Codex critical engine.");
     });
   }
 
@@ -602,7 +689,7 @@
         ${p.note ? `<div class="rule-ornament">✦ ✦ ✦</div>
         <p class="section-label">Codex Note</p>
         <p class="note-block">${esc(p.note)}</p>` : ""}
-        ${enginePanel()}
+        ${enginePanel(p.text, { compare: true, gloss: true })}
         <div class="detail-nav">
           <button ${n === 0 ? "disabled" : ""} data-go="${n - 1}"><span class="dir">← Previous</span>${n > 0 ? esc(poems[n - 1].title) : ""}</button>
           <button class="next" ${n === poems.length - 1 ? "disabled" : ""} data-go="${n + 1}"><span class="dir">Next →</span>${n < poems.length - 1 ? esc(poems[n + 1].title) : ""}</button>
@@ -616,6 +703,6 @@
       syncSearchInput(); location.hash = "#/poems";
     }));
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/poem/" + slug + "/" + b.dataset.go; }));
-    bindEngine(p);
+    bindEngine({ title: p.title, author: p.author, text: p.text, id: p.id });
   }
 })();
