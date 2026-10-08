@@ -211,7 +211,10 @@
       return `
         <button class="topic-card" data-category="${esc(CATEGORY_SLUGS[cat])}">
           <p class="tc-name">${esc(cat)}</p>
-          <p class="tc-count">${stats.poems} poem${stats.poems === 1 ? "" : "s"}${stats.works ? " \u00b7 " + stats.works + " work" + (stats.works === 1 ? "" : "s") : ""}</p>
+          <p class="tc-count">${[
+            stats.poems ? stats.poems + " poem" + (stats.poems === 1 ? "" : "s") : "",
+            stats.works ? stats.works + " work" + (stats.works === 1 ? "" : "s") : "",
+          ].filter(Boolean).join(" \u00b7 ")}</p>
         </button>`;
     }).join("");
     return `
