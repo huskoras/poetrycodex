@@ -1,0 +1,9 @@
+name = "poetrycodex-engine"
+main = "src/index.js"
+compatibility_date = "2026-10-08"
+compatibility_flags = ["nodejs_compat"]
+
+# The API key is NOT stored here. It is set once as an encrypted secret:
+#   npx wrangler secret put ANTHROPIC_API_KEY
+# or in the Cloudflare dashboard under
+#   Workers & Pages -> poetrycodex-engine -> Settings -> Variables -> Secret.
