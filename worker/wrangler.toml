@@ -17,3 +17,13 @@ namespace_id = "1001"
   [ratelimits.simple]
   limit = 6
   period = 60
+
+# The Oracle costs several times what a single reading does, so it gets its own,
+# tighter bucket on top of the shared one.
+[[ratelimits]]
+name = "ORACLE_LIMITER"
+namespace_id = "1002"
+
+  [ratelimits.simple]
+  limit = 3
+  period = 60

@@ -42,10 +42,10 @@ const MAX_TOKENS = 2000;
 const MAX_GLOSS_TOKENS = 8000;
 // Longer than this and a line-by-line gloss is no longer a sensible unit of work.
 const MAX_GLOSS_CHARS = 6000;
-const MAX_ORACLE_TOKENS = 1600;
+const MAX_ORACLE_TOKENS = 1100;
 const MAX_ORACLE_TURNS = 16;        // messages of history accepted from the client
 const MAX_ORACLE_CHARS = 2000;      // per message
-const MAX_TOOL_ROUNDS = 4;          // search calls allowed in one answer
+const MAX_TOOL_ROUNDS = 2;          // rounds of searching; each one re-sends the conversation
 const SEARCH_INDEX_URL = "https://poetrycodex.com/data/search.json";
 
 /**
@@ -217,7 +217,7 @@ const SYSTEM_ORACLE = [
   "",
   "The archive:",
   "- You cannot see it. You have a catalogue of its poets and works below, and a search_archive tool for individual poems.",
-  "- Before naming any poem, search for it. Name only poems the tool has returned to you in this conversation, and give each one as a link exactly like this: [The Sick Rose](#/poem/blake/27), using the id the tool returned.",
+  "- Before naming any poem, search for it. You get two rounds of searching, so make all the calls you need at once rather than one at a time. Name only poems the tool has returned to you in this conversation, and give each one as a link exactly like this: [The Sick Rose](#/poem/blake/27), using the id the tool returned.",
   "- Works are in the catalogue below and are linked as [Paradise Lost](#/work/paradise-lost).",
   "- If the archive has nothing for what the reader wants, say so plainly, and say what it does have that comes nearest. Do not invent an entry to be helpful.",
   "- You may discuss poems that are not in the archive \u2014 the history of poetry is larger than this collection \u2014 but say clearly when something is not here, and never give it a link.",
@@ -238,9 +238,10 @@ const SEARCH_TOOL = {
   description:
     "Search the poems in Poetry Codex by words in the title, by poet, by subject, or by era. " +
     "Returns matching poems with the id you must use when linking to them. " +
-    "Call this before naming any poem. Several calls with different wordings are fine \u2014 " +
-    "the archive is indexed by title and poet, not by what a poem is secretly about, so a " +
-    "search for an abstract theme may return little and a search for a concrete word may return much.",
+    "Call this before naming any poem. Make all the searches you need in ONE batch of " +
+    "parallel calls rather than one at a time \u2014 you get very few rounds. The archive is " +
+    "indexed by title, poet, subject and era, not by what a poem is secretly about, so a " +
+    "search for an abstract theme may return little while a subject or era filter returns much.",
   input_schema: {
     type: "object",
     properties: {
@@ -256,7 +257,7 @@ const SEARCH_TOOL = {
           "Tudor & Elizabethan, Metaphysical & Cavalier, Restoration & Augustan, Romantic, " +
           "Victorian, American.",
       },
-      limit: { type: "integer", description: "How many to return, 1-30. Default 12." },
+      limit: { type: "integer", description: "How many to return, 1-20. Default 10." },
     },
     required: [],
     additionalProperties: false,
@@ -278,7 +279,7 @@ function runSearch(index, input) {
   const q = String(input.query || "").trim().toLowerCase();
   const subject = String(input.subject || "").trim().toLowerCase();
   const era = String(input.era || "").trim().toLowerCase();
-  const limit = Math.min(Math.max(Number(input.limit) || 12, 1), 30);
+  const limit = Math.min(Math.max(Number(input.limit) || 10, 1), 20);
   const terms = q ? q.split(/\s+/).filter(Boolean) : [];
 
   const scored = [];
@@ -334,6 +335,18 @@ async function catalogue() {
     `${(idx.works || []).length} long works.\n\nSubjects: ${subjects}\n\n` +
     `POETS BY ERA\n${poets}\n\nWORKS (link these by the path in brackets)\n${works}`;
   return CATALOGUE;
+}
+
+
+// Token accounting, sent as the last event before [DONE]. The page ignores it;
+// it exists so spend can be measured rather than guessed.
+function tally(into, usage) {
+  if (!usage) return into;
+  into.in += usage.input_tokens || 0;
+  into.out += usage.output_tokens || 0;
+  into.cacheWrite += usage.cache_creation_input_tokens || 0;
+  into.cacheRead += usage.cache_read_input_tokens || 0;
+  return into;
 }
 
 function corsHeaders(origin) {
@@ -398,6 +411,7 @@ async function oracleResponse(body, origin, env) {
     async start(controller) {
       const send = (obj) => controller.enqueue(encoder.encode("data: " + JSON.stringify(obj) + "\n\n"));
       const turn = messages.slice();
+      const used = { in: 0, out: 0, cacheWrite: 0, cacheRead: 0, rounds: 0 };
       try {
         for (let round = 0; ; round++) {
           const stream = client.messages.stream({
@@ -416,6 +430,8 @@ async function oracleResponse(body, origin, env) {
           }
 
           const reply = await stream.finalMessage();
+          tally(used, reply.usage);
+          used.rounds = round + 1;
           turn.push({ role: "assistant", content: reply.content });
 
           if (reply.stop_reason === "refusal") {
@@ -449,6 +465,7 @@ async function oracleResponse(body, origin, env) {
           }
           turn.push({ role: "user", content: results });
         }
+        send({ usage: used });
         controller.enqueue(encoder.encode("data: [DONE]\n\n"));
       } catch (err) {
         send({ error: "The Oracle could not finish. Please try again." });
@@ -510,6 +527,13 @@ export default {
     // The Oracle is a conversation about the archive, not about one poem, so it
     // takes a different body and runs its own tool loop.
     if (route === "/api/oracle") {
+      if (env.ORACLE_LIMITER) {
+        const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+        const { success } = await env.ORACLE_LIMITER.limit({ key: ip });
+        if (!success) {
+          return json(429, { error: "The Oracle needs a moment. Please wait before asking again." }, origin);
+        }
+      }
       return oracleResponse(body, origin, env);
     }
 
@@ -607,6 +631,8 @@ export default {
               send({ error: "The engine declined to produce this reading." });
             }
           }
+          const final = await stream.finalMessage().catch(() => null);
+          if (final) send({ usage: tally({ in: 0, out: 0, cacheWrite: 0, cacheRead: 0 }, final.usage) });
           controller.enqueue(encoder.encode("data: [DONE]\n\n"));
         } catch (err) {
           send({ error: "The reading could not be completed. Please try again." });
