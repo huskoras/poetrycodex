@@ -11,7 +11,7 @@
   // ---------- critical engine ----------
   // The reading panel stays hidden until this points at the deployed Worker
   // (see worker/README.md). Keep it in sync with ALLOWED_ORIGINS there.
-  const ENGINE_URL = "";
+  const ENGINE_URL = "https://poetrycodex-engine.poetrycodex.workers.dev";
   const LENSES = [
     { id: "formalist", label: "Formalist" },
     { id: "historicist", label: "Historicist" },
