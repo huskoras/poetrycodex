@@ -149,6 +149,7 @@
     else if (h.startsWith("#/poets")) { setRoute("poets", "sub"); renderPoets(); }
     else if (h.startsWith("#/topics")) { setRoute("topics", "sub"); renderTopics(); }
     else if (h.startsWith("#/about")) { setRoute("about", "sub"); renderAbout(); }
+    else if (h.startsWith("#/oracle")) { setRoute("oracle", "sub"); renderOracle(); }
     else if (h.startsWith("#/poems")) { setRoute("poems", "sub"); renderList(); }
     else { setRoute("poems", "home"); renderHome(); }
     syncSearchInput();
@@ -204,6 +205,16 @@
         </button>`;
     }).join("");
     app.innerHTML = `
+      <a class="oracle-banner" href="#/oracle">
+        <img src="oracle.png" alt="" width="92" height="92" />
+        <span class="ob-text">
+          <span class="ob-kicker">New</span>
+          <span class="ob-title">The Oracle</span>
+          <span class="ob-sub">Ask for a poem, an argument, or a place to start. It searches the archive and answers.</span>
+        </span>
+        <span class="ob-go">Consult &rarr;</span>
+      </a>
+
       <div class="page-head"><h1 class="page-title">Browse by Era</h1><p class="page-sub">${DATA.count} poems across ${DATA.poets.length} poets, sorted into the ages that shaped them.</p></div>
       <div class="topic-grid">
         ${tiles}
@@ -471,6 +482,151 @@
         <p>Poetry Codex welcomes correspondence from scholars, teachers and readers:
         <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a>.</p>
       </article>`;
+  }
+
+
+  // ---------- THE ORACLE ----------
+  // Kept at module scope so leaving the page and coming back does not throw
+  // the conversation away.
+  let ORACLE_MSGS = [];          // [{role:"user"|"assistant", content:"..."}]
+
+  const ORACLE_OPENERS = [
+    "Recommend me poems about nature, epic and heroes.",
+    "I have never read poetry before. Where should I start?",
+    "What makes a sonnet a sonnet?",
+    "Which poem in this archive is the strangest?",
+  ];
+
+  // Escapes everything, then allows exactly three things back: bold, italic,
+  // and links whose href is an internal route. Nothing else from the model
+  // reaches the page as markup.
+  function renderMarkdown(text) {
+    let out = esc(text);
+    out = out.replace(/\[([^\]\n]+)\]\(#\/([A-Za-z0-9\/_\-]+)\)/g,
+      (m, label, href) => `<a href="#/${href}">${label}</a>`);
+    out = out.replace(/\*\*([^*\n]+)\*\*/g, "<strong>$1</strong>");
+    out = out.replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<em>$2</em>");
+    return out.split(/\n{2,}/).filter(Boolean)
+      .map((para) => `<p>${para.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+
+  function oracleBubble(m) {
+    return m.role === "user"
+      ? `<div class="o-turn o-you"><div class="o-bubble">${esc(m.content)}</div></div>`
+      : `<div class="o-turn o-codex"><div class="o-mark"><img src="oracle.png" alt="" width="34" height="34" /></div>
+         <div class="o-body">${renderMarkdown(m.content)}</div></div>`;
+  }
+
+  function renderOracle() {
+    const empty = !ORACLE_MSGS.length;
+    app.innerHTML = `
+      <section class="oracle">
+        <header class="oracle-head">
+          <img class="oracle-coin" src="oracle.png" alt="Silver tetradrachm of Alexander the Great" />
+          <h1>The Oracle</h1>
+          <p>Ask anything about poetry, or about what this archive holds. The Oracle
+          searches the collection before it answers, and links to what it finds.</p>
+        </header>
+        ${empty ? `<div class="o-openers">${ORACLE_OPENERS.map((q) =>
+          `<button class="o-opener">${esc(q)}</button>`).join("")}</div>` : ""}
+        <div class="o-thread" id="o-thread">${ORACLE_MSGS.map(oracleBubble).join("")}</div>
+        <form class="o-composer" autocomplete="off">
+          <textarea class="o-input" rows="1" maxlength="2000"
+                    placeholder="Ask the Oracle\u2026" aria-label="Ask the Oracle"></textarea>
+          <button class="o-send" type="submit">Ask</button>
+        </form>
+        <p class="ask-hint">Press Enter to ask \u00b7 Shift + Enter for a new line \u00b7
+        Answers are generated, and the archive ends where copyright begins.</p>
+      </section>`;
+
+    const thread = document.getElementById("o-thread");
+    const form = app.querySelector(".o-composer");
+    const input = app.querySelector(".o-input");
+    const send = app.querySelector(".o-send");
+    let running = false;
+
+    // The composer grows with the question, up to a point.
+    function grow() {
+      input.style.height = "auto";
+      input.style.height = Math.min(input.scrollHeight, 260) + "px";
+    }
+    input.addEventListener("input", grow);
+    grow();
+    input.focus();
+
+    app.querySelectorAll(".o-opener").forEach((b) =>
+      b.addEventListener("click", () => { input.value = b.textContent; grow(); ask(); }));
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); ask(); }
+    });
+    form.addEventListener("submit", (e) => { e.preventDefault(); ask(); });
+
+    async function ask() {
+      const question = input.value.trim();
+      if (!question || running) return;
+      running = true;
+      input.value = ""; grow();
+      input.disabled = true; send.disabled = true;
+      const openers = app.querySelector(".o-openers");
+      if (openers) openers.remove();
+
+      ORACLE_MSGS.push({ role: "user", content: question });
+      thread.insertAdjacentHTML("beforeend", oracleBubble(ORACLE_MSGS[ORACLE_MSGS.length - 1]));
+      thread.insertAdjacentHTML("beforeend",
+        `<div class="o-turn o-codex" id="o-live"><div class="o-mark"><img src="oracle.png" alt="" width="34" height="34" /></div>
+         <div class="o-body"><p class="o-status">Consulting the archive\u2026</p></div></div>`);
+      const live = document.getElementById("o-live").querySelector(".o-body");
+      live.scrollIntoView({ behavior: "smooth", block: "end" });
+
+      let prose = "";
+      try {
+        const res = await fetch(ENGINE_URL + "/api/oracle", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ messages: ORACLE_MSGS }),
+        });
+        if (!res.ok || !res.body) {
+          const info = await res.json().catch(() => ({}));
+          throw new Error(info.error || "The Oracle could not answer.");
+        }
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let buf = "";
+        for (;;) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buf += decoder.decode(value, { stream: true });
+          const lines = buf.split("\n");
+          buf = lines.pop();
+          for (const line of lines) {
+            if (!line.startsWith("data: ")) continue;
+            const chunk = line.slice(6);
+            if (chunk === "[DONE]") continue;
+            let msg;
+            try { msg = JSON.parse(chunk); } catch { continue; }
+            if (msg.error) throw new Error(msg.error);
+            if (msg.searching && !prose) {
+              live.innerHTML = `<p class="o-status">Searching the archive for \u201c${esc(msg.searching)}\u201d\u2026</p>`;
+              continue;
+            }
+            prose += msg.t || "";
+            if (prose) live.innerHTML = renderMarkdown(prose);
+          }
+        }
+        if (!prose.trim()) throw new Error("The Oracle had nothing to say. Please try again.");
+        ORACLE_MSGS.push({ role: "assistant", content: prose });
+      } catch (err) {
+        live.innerHTML = `<p class="o-error">${esc(err.message || "The Oracle could not answer.")}</p>`;
+        ORACLE_MSGS.pop();                       // drop the unanswered question
+      } finally {
+        const node = document.getElementById("o-live");
+        if (node) node.removeAttribute("id");
+        running = false;
+        input.disabled = false; send.disabled = false;
+        input.focus();
+      }
+    }
   }
 
   // ---------- POEM DETAIL ----------
