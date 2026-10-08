@@ -1,5 +1,5 @@
 {
- "count": 11229,
+ "count": 11287,
  "workCount": 45,
  "poets": [
   {
@@ -155,6 +155,22 @@
    "workCount": 1
   },
   {
+   "slug": "anonymous-middle-english",
+   "name": "Anonymous (Middle English)",
+   "dates": "c. 13th–16th century",
+   "era": "Medieval",
+   "category": "Medieval",
+   "portrait": null,
+   "credit": "No portrait: these are the voices of unnamed singers and scribes, and no author’s name survives for any of them. They are known from manuscripts such as British Library Harley 978 (the ‘Cuckoo Song’), Harley 2253 (the Harley Lyrics) and Sloane 2593 (carols and songs).",
+   "bio": [
+    "Most of the short poems that survive from medieval England carry no author’s name. They are songs, hymns, carols, ballads and charms, copied by clerks, friars and minstrels onto the spare leaves of larger books, and they reach us through a handful of manuscripts: the Reading Abbey volume that preserves ‘Sumer is icumen in’, the Harley miscellany (MS Harley 2253) with its love-songs and spring-songs, the song-book Sloane 2593 with its carols, and the Balliol commonplace book of Richard Hill, which holds ‘Lully, lulley’.",
+    "The poems gathered here run from about 1225 to the edge of the sixteenth century, with one later record of a far older custom. They include some of the earliest English love-songs, the plain and piercing carols of the fifteenth century, early ballads such as ‘Judas’ and ‘Robyn and Gandelyn’, the ‘Erthe upon erthe’ tradition of the memento mori, and the Yorkshire ‘Lyke-Wake Dirge’. The spelling is Middle English as the editors printed it."
+   ],
+   "order": 85,
+   "poemCount": 27,
+   "workCount": 0
+  },
+  {
    "slug": "gower",
    "name": "John Gower",
    "dates": "c. 1330–1408",
@@ -168,7 +184,7 @@
     "Confessio Amantis, his English masterwork, frames some hundred and forty tales as a lover's confession to a priest of Venus, moving through the Seven Deadly Sins toward a final meditation on age and the end of love — dedicated, in its first version, to Richard II."
    ],
    "order": 90,
-   "poemCount": 0,
+   "poemCount": 1,
    "workCount": 1
   },
   {
@@ -202,7 +218,7 @@
     "His masterwork, The Canterbury Tales, left unfinished at his death, gathers a fellowship of pilgrims riding to Canterbury and telling stories in turn — a panorama of medieval English society in verse of astonishing variety and wit. He was buried in Westminster Abbey, in the corner that later became Poets' Corner."
    ],
    "order": 110,
-   "poemCount": 0,
+   "poemCount": 21,
    "workCount": 2
   },
   {
@@ -236,7 +252,7 @@
     "Modern taste has generally preferred Chaucer's economy to Lydgate's copiousness, but he was central to how English poetry was read and valued through the fifteenth century."
    ],
    "order": 130,
-   "poemCount": 0,
+   "poemCount": 9,
    "workCount": 1
   },
   {
@@ -1936,51 +1952,51 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2408
+   "count": 2411
   },
   {
    "name": "Nature",
-   "count": 2355
+   "count": 2358
   },
   {
    "name": "Love",
-   "count": 2301
+   "count": 2319
   },
   {
    "name": "Religion",
-   "count": 1628
+   "count": 1639
   },
   {
    "name": "Death & Dying",
-   "count": 691
+   "count": 694
   },
   {
    "name": "History & Politics",
-   "count": 593
+   "count": 595
   },
   {
    "name": "Relationships",
-   "count": 386
+   "count": 390
   },
   {
    "name": "Arts & Sciences",
-   "count": 318
+   "count": 320
   },
   {
    "name": "Time & Brevity",
-   "count": 237
+   "count": 238
   },
   {
    "name": "The Mind",
-   "count": 217
+   "count": 218
   },
   {
    "name": "Social Commentaries",
-   "count": 82
+   "count": 88
   },
   {
    "name": "Mythology & Folklore",
-   "count": 13
+   "count": 17
   }
  ],
  "works": [
@@ -6891,6 +6907,733 @@
    "collection": "Fragments",
    "excerpt": "with golden ankles",
    "translator": "trans. Henry Thornton Wharton (1885)"
+  },
+  {
+   "id": "anonymous-middle-english/0",
+   "title": "Mirie It Is While Sumer Ilast",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Bodleian MS Rawlinson G. 22",
+   "excerpt": "Mirie it is while sumer ilast\n  With fugheles song;\nOc nu necheth windes blast …"
+  },
+  {
+   "id": "anonymous-middle-english/1",
+   "title": "Sumer Is Icumen In",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Reading Abbey manuscript (British Library, Harley 978)",
+   "excerpt": "Sumer is icumen in,\n  Lhude sing cuccu!\nGroweth sed, and bloweth med, …"
+  },
+  {
+   "id": "anonymous-middle-english/2",
+   "title": "Foweles in the Frith",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "Foweles in the frith,\n  The fisses in the flod.\n  And I mon waxe wod; …"
+  },
+  {
+   "id": "anonymous-middle-english/3",
+   "title": "Judas",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Mythology & Folklore"
+   ],
+   "collection": "Trinity College, Cambridge, MS B. 14. 39",
+   "excerpt": "Hit wes upon a Scere Þorsday þat vre Louerd aros;\nFul milde were þe wordes He spec to Iudas:\n …"
+  },
+  {
+   "id": "anonymous-middle-english/4",
+   "title": "Now Springs the Spray",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Lincoln’s Inn MS Hale 135",
+   "excerpt": "Nou sprinkes þe sprai,\nAl for loue icche am so seek\nÞat slepen I ne mai. …"
+  },
+  {
+   "id": "anonymous-middle-english/5",
+   "title": "Lenten Is Come with Love to Toune",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Harley Lyrics (British Library, MS Harley 2253)",
+   "excerpt": "Lenten ys come wiþ loue to toune,\nWiþ blosmen and wiþ briddes roune,\n  Þat al þis blisse bryngeþ. …"
+  },
+  {
+   "id": "anonymous-middle-english/6",
+   "title": "Alysoun",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Harley Lyrics (British Library, MS Harley 2253)",
+   "excerpt": "Bytuene Mersh and Aueril,\n  When spray biginneþ to springe,\nÞe lutel foul haþ hire wyl …"
+  },
+  {
+   "id": "anonymous-middle-english/7",
+   "title": "Blow, Northerne Wynd",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Harley Lyrics (British Library, MS Harley 2253)",
+   "excerpt": "Ichot a burde in boure bryht,\n  That fully semly is on syht,\nMenskful maiden of myht; …"
+  },
+  {
+   "id": "anonymous-middle-english/8",
+   "title": "Wynter Wakeneth Al My Care",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Death & Dying"
+   ],
+   "collection": "Harley Lyrics (British Library, MS Harley 2253)",
+   "excerpt": "Wynter wakeneth al my care,\nNou this leves waxeth bare;\nOfte I sike ant mourne sare …"
+  },
+  {
+   "id": "anonymous-middle-english/9",
+   "title": "Of On That Is So Fayr and Bright",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Egerton MS 613",
+   "excerpt": "Of on that is so fayr and bright\n    Velud maris stella,\nBrighter than the day is light, …"
+  },
+  {
+   "id": "anonymous-middle-english/10",
+   "title": "Erthe toc of erthe",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Time & Brevity"
+   ],
+   "collection": "Harley Lyrics (British Library, MS Harley 2253)",
+   "excerpt": "Erþe toc of erþe erþe wyþ woh,\nErþe oþer erþe to þe erþe droh,\nErþe leyde erþe in erþene þroh, …"
+  },
+  {
+   "id": "anonymous-middle-english/11",
+   "title": "Icham of Irlaunde",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "Bodleian MS Rawlinson D. 913",
+   "excerpt": "Icham of Irlaunde,\nAnt of the holy londe\n    Of Irlande. …"
+  },
+  {
+   "id": "anonymous-middle-english/12",
+   "title": "Maiden in the Mor Lay",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": "Bodleian MS Rawlinson D. 913",
+   "excerpt": "Maiden in the mor lay,\n    In the mor lay,\nSeuenyst fulle, seuenist fulle, …"
+  },
+  {
+   "id": "anonymous-middle-english/13",
+   "title": "Iesu, Swete Sone Dere",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Relationships"
+   ],
+   "collection": "British Library, MS Harley 7322",
+   "excerpt": "Iesu, swete sone dere!\n  On porful bed list þou here,\nAnd þat me greueþ sore; …"
+  },
+  {
+   "id": "anonymous-middle-english/14",
+   "title": "Of a Rose, a Lovely Rose",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Sloane MS 2593",
+   "excerpt": "Of a rose, a lovely rose,\n  Of a rose is al myn song.\n …"
+  },
+  {
+   "id": "anonymous-middle-english/15",
+   "title": "The Blacksmiths",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "British Library, MS Arundel 292",
+   "excerpt": "Swarte smekyd smeþes smateryd wyth smoke\nDryue me to deth wyth den of here dyntes.\nSwech noys on nyghtes ne herd men neuer: …"
+  },
+  {
+   "id": "anonymous-middle-english/16",
+   "title": "Erthe upon Erthe",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "Lincoln Cathedral, Thornton Manuscript",
+   "excerpt": "Erthe owte of erthe es wondirly wroghte,\nErthe hase getyn one erthe a dignyte of noghte,\nErthe appone erthe hase sett alle his thoghte …"
+  },
+  {
+   "id": "anonymous-middle-english/17",
+   "title": "Adam Lay Ybounden",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Sloane MS 2593",
+   "excerpt": "Adam lay i-bowndyn,\n  bowndyn in a bond,\nFowre thowsand wynter …"
+  },
+  {
+   "id": "anonymous-middle-english/18",
+   "title": "I Sing of a Maiden",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Sloane MS 2593",
+   "excerpt": "I sing of a maiden\n  That is makeles,\nKing of all kinges …"
+  },
+  {
+   "id": "anonymous-middle-english/19",
+   "title": "Saint Stephen and King Herod",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Sloane MS 2593",
+   "excerpt": "Seynt Stevene was a clerk\n  in kyng Herowdes halle,\nAnd servyd him of bred and cloth, …"
+  },
+  {
+   "id": "anonymous-middle-english/20",
+   "title": "Quia Amore Langueo",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Lambeth Palace MS 853",
+   "excerpt": "In a valey of this restles minde\n  I soughte in mounteine and in mede,\nTrustinge a trewe love for to finde. …"
+  },
+  {
+   "id": "anonymous-middle-english/21",
+   "title": "Robyn and Gandelyn",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "History & Politics"
+   ],
+   "collection": "Sloane MS 2593",
+   "excerpt": "I herde a carpyng of a clerk,\n  Al at yone wodes ende,\nOf gode Robyn and Gandeleyn; …"
+  },
+  {
+   "id": "anonymous-middle-english/22",
+   "title": "Robin Hood and the Monk",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "History & Politics"
+   ],
+   "collection": "Cambridge University Library, MS Ff. 5. 48",
+   "excerpt": "In somer, when the shawes be sheyne,\n  And leves be large and long,\nHit is full mery in feyre foreste …"
+  },
+  {
+   "id": "anonymous-middle-english/23",
+   "title": "Rats Away",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore"
+   ],
+   "collection": "Bodleian MS Rawlinson C. 288",
+   "excerpt": "I comawnde alle þe ratones þat are here abowte,\nÞat non dwelle in þis place, withinne ne withowte,\nThorgh þe vertu of Iesu Crist, þat Mary bare abowte, …"
+  },
+  {
+   "id": "anonymous-middle-english/24",
+   "title": "The Corpus Christi Carol",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Mythology & Folklore"
+   ],
+   "collection": "Richard Hill’s commonplace book (Balliol College, MS 354)",
+   "excerpt": "Lully, lulley, lully, lulley,\nThe faucon hath borne my make away.\n …"
+  },
+  {
+   "id": "anonymous-middle-english/25",
+   "title": "Western Wind",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Royal Appendix MS 58",
+   "excerpt": "Western wind, when will thou blow,\n  The small rain down can rain?\nChrist, if my love were in my arms …"
+  },
+  {
+   "id": "anonymous-middle-english/26",
+   "title": "A Lyke-Wake Dirge",
+   "authorSlug": "anonymous-middle-english",
+   "author": "Anonymous (Middle English)",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Mythology & Folklore"
+   ],
+   "collection": "Yorkshire tradition",
+   "excerpt": "This ae nighte, this ae nighte,\n  Every nighte and alle,\nFire and fleet and candle-lighte, …"
+  },
+  {
+   "id": "gower/0",
+   "title": "In Praise of Peace",
+   "authorSlug": "gower",
+   "author": "John Gower",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": "Trentham Manuscript",
+   "excerpt": "O noble worthy king, Henry the ferthe,\nIn whom the gladde fortune is befalle\nThe people to governe here upon erthe, …"
+  },
+  {
+   "id": "chaucer/0",
+   "title": "Truth (Balade de Bon Conseyl)",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Flee fro the prees, and dwelle with sothfastnesse,\nSuffyce unto thy good, though hit be smal;\nFor hord hath hate, and climbing tikelnesse, …"
+  },
+  {
+   "id": "chaucer/1",
+   "title": "Gentilesse",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "The firste stok, fader of gentilesse--\nWhat man that claymeth gentil for to be,\nMust folowe his trace, and alle his wittes dresse …"
+  },
+  {
+   "id": "chaucer/2",
+   "title": "Lak of Stedfastnesse",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Som tyme this world was so stedfast and stable\nThat mannes word was obligacioun,\nAnd now hit is so fals and deceivable, …"
+  },
+  {
+   "id": "chaucer/3",
+   "title": "The Former Age",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Mythology & Folklore"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "A blisful lyf, a paisible and a swete\nLedden the peples in the former age;\nThey helde hem payed of fruites, that they ete, …"
+  },
+  {
+   "id": "chaucer/4",
+   "title": "Fortune",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Le Pleintif countre Fortune.\n\nThis wrecched worldes transmutacioun, …"
+  },
+  {
+   "id": "chaucer/5",
+   "title": "The Complaint of Chaucer to His Purse",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "To you, my purse, and to non other wight\nCompleyne I, for ye be my lady dere!\nI am so sory, now that ye be light; …"
+  },
+  {
+   "id": "chaucer/6",
+   "title": "Chaucers Wordes unto Adam, His Owne Scriveyn",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Adam scriveyn, if ever it thee bifalle\nBoece or Troilus to wryten newe,\nUnder thy lokkes thou most have the scalle, …"
+  },
+  {
+   "id": "chaucer/7",
+   "title": "Envoy to Scogan",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Love"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "To-broken been the statuts hye in hevene\nThat creat were eternally to dure,\nSith that I see the brighte goddes sevene …"
+  },
+  {
+   "id": "chaucer/8",
+   "title": "Envoy to Bukton",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "My maister Bukton, whan of Criste our kinge\nWas axed, what is trouthe or sothfastnesse,\nHe nat a word answerde to that axinge, …"
+  },
+  {
+   "id": "chaucer/9",
+   "title": "Proverbs",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "What shul thise clothes many-fold,\n  Lo! this hote somers day?--\nAfter greet heet cometh cold; …"
+  },
+  {
+   "id": "chaucer/10",
+   "title": "To Rosemounde",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Madame, ye ben of al beautè shryne\nAs fer as cercled is the mappemounde;\nFor as the cristal glorious ye shyne, …"
+  },
+  {
+   "id": "chaucer/11",
+   "title": "Merciles Beaute",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Your yën two wol slee me sodenly,\nI may the beautè of hem not sustene,\nSo woundeth hit through-out my herte kene. …"
+  },
+  {
+   "id": "chaucer/12",
+   "title": "Against Women Unconstant",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Madame, for your newe-fangelnesse,\nMany a servaunt have ye put out of grace,\nI take my leve of your unstedfastnesse, …"
+  },
+  {
+   "id": "chaucer/13",
+   "title": "An Amorous Complaint",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "I, which that am the sorwefulleste man\nThat in this world was ever yit livinge,\nAnd leest recoverer of him-selven can, …"
+  },
+  {
+   "id": "chaucer/14",
+   "title": "A Balade of Complaint",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Compleyne ne coude, ne might myn herte never\nMy peynes halve, ne what torment I have,\nThough that I sholde in your presence ben ever, …"
+  },
+  {
+   "id": "chaucer/15",
+   "title": "A Complaint to His Lady",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "The longe night, whan every creature\n  Shulde have hir rest in somwhat, as by kinde,\nOr elles ne may hir lyf nat long endure, …"
+  },
+  {
+   "id": "chaucer/16",
+   "title": "The Complaint unto Pity",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Pite, that I have sought so yore ago,\nWith herte sore, and ful of besy peyne,\nThat in this world was never wight so wo …"
+  },
+  {
+   "id": "chaucer/17",
+   "title": "The Complaint of Venus",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Ther nis so hy comfort to my plesaunce,\nWhan that I am in any hevinesse,\nAs for to have leyser of remembraunce …"
+  },
+  {
+   "id": "chaucer/18",
+   "title": "The Complaint of Mars",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Mythology & Folklore"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Gladeth, ye foules, of the morow gray,\nLo! Venus risen among yon rowes rede!\nAnd floures fresshe, honoureth ye this day; …"
+  },
+  {
+   "id": "chaucer/19",
+   "title": "Anelida and Arcite",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Mythology & Folklore"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Thou ferse god of armes, Mars the rede,\nThat in the frosty country called Trace,\nWithin thy grisly temple ful of drede …"
+  },
+  {
+   "id": "chaucer/20",
+   "title": "An ABC",
+   "authorSlug": "chaucer",
+   "author": "Geoffrey Chaucer",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Short Poems",
+   "excerpt": "Almighty and al merciable quene,\nTo whom that al this world fleeth for socour,\nTo have relees of sinne, sorwe and tene, …"
+  },
+  {
+   "id": "lydgate/0",
+   "title": "The Complaint of the Black Knight",
+   "authorSlug": "lydgate",
+   "author": "John Lydgate",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Minor Poems",
+   "excerpt": "In May, whan Flora, the fresshe lusty quene,\nThe soile hath clad in grene, rede, and whyte,\nAnd Phebus gan to shede his stremes shene …"
+  },
+  {
+   "id": "lydgate/1",
+   "title": "The Flour of Curtesye",
+   "authorSlug": "lydgate",
+   "author": "John Lydgate",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Minor Poems",
+   "excerpt": "In Fevrier, whan the frosty mone\nWas horned, ful of Phebus fyry light,\nAnd that she gan to reyse her stremes sone, …"
+  },
+  {
+   "id": "lydgate/2",
+   "title": "A Balade in Commendation of Our Lady",
+   "authorSlug": "lydgate",
+   "author": "John Lydgate",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Minor Poems",
+   "excerpt": "A thousand stories coude I mo reherce\nOf olde poetes, touching this matere,\nHow that Cupyde the hertes gan so perce …"
+  },
+  {
+   "id": "lydgate/3",
+   "title": "To My Soverain Lady",
+   "authorSlug": "lydgate",
+   "author": "John Lydgate",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Minor Poems",
+   "excerpt": "I have non English convenient and digne\nMyn hertes hele, lady, thee with t'honoure,\nIvorie clene; therfore I wol resigne …"
+  },
+  {
+   "id": "lydgate/4",
+   "title": "Ballad of Good Counsel",
+   "authorSlug": "lydgate",
+   "author": "John Lydgate",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Minor Poems",
+   "excerpt": "Consider wel, with every circumstaunce,\nOf what estat so-ever that thou be--\nRiche, strong, or mighty of puissaunce, …"
+  },
+  {
+   "id": "lydgate/5",
+   "title": "Beware of Doubleness",
+   "authorSlug": "lydgate",
+   "author": "John Lydgate",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "Minor Poems",
+   "excerpt": "This world is ful of variaunce\nIn every thing, who taketh hede,\nThat faith and trust, and al constaunce, …"
+  },
+  {
+   "id": "lydgate/6",
+   "title": "A Balade: Warning Men to Beware of Deceitful Women",
+   "authorSlug": "lydgate",
+   "author": "John Lydgate",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "Minor Poems",
+   "excerpt": "Loke wel aboute, ye that lovers be;\nLat nat your lustes lede you to dotage;\nBe nat enamoured on al thing that ye see. …"
+  },
+  {
+   "id": "lydgate/7",
+   "title": "Three Sayings",
+   "authorSlug": "lydgate",
+   "author": "John Lydgate",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "Minor Poems",
+   "excerpt": "Ther beth four thinges that maketh a man a fool,\nHónour first putteth him in outrage,\nAnd alder-next solitarie and sool; …"
+  },
+  {
+   "id": "lydgate/8",
+   "title": "Go Forth, King",
+   "authorSlug": "lydgate",
+   "author": "John Lydgate",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Minor Poems",
+   "excerpt": "Go forth, king, rule thee by sapience;\nBishop, be able to minister doctryne;\nLord, to trew consayl yeve audience; …"
   },
   {
    "id": "dunbar/0",
