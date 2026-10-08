@@ -13,6 +13,10 @@
  *   a comparative reading of two poems in the archive.
  * POST /api/gloss    { title, author, text }
  *   a modern-English gloss of Old or Middle English verse.
+ * POST /api/oracle   { messages: [{role, content}, ...] }
+ *   open conversation about the archive. The model cannot see the archive, so
+ *   it is given a catalogue of poets and works and a search tool for poems; it
+ *   is forbidden to name a poem the tool did not return.
  *
  * Both return a text/event-stream of {"t": "<chunk of prose>"} lines,
  * terminated by [DONE].
@@ -38,6 +42,11 @@ const MAX_TOKENS = 2000;
 const MAX_GLOSS_TOKENS = 8000;
 // Longer than this and a line-by-line gloss is no longer a sensible unit of work.
 const MAX_GLOSS_CHARS = 6000;
+const MAX_ORACLE_TOKENS = 1600;
+const MAX_ORACLE_TURNS = 16;        // messages of history accepted from the client
+const MAX_ORACLE_CHARS = 2000;      // per message
+const MAX_TOOL_ROUNDS = 4;          // search calls allowed in one answer
+const SEARCH_INDEX_URL = "https://poetrycodex.com/data/search.json";
 
 /**
  * The critical traditions the engine can read through. `focus` is appended
@@ -200,6 +209,133 @@ const SYSTEM_GLOSS = [
   "If the poem is already in modern English and needs no gloss, say so in one sentence and stop.",
 ].join("\n");
 
+
+const SYSTEM_ORACLE = [
+  "You are the Oracle of Poetry Codex, an archive of poetry in the public domain. You talk with readers about poetry: what to read, how a poem works, how a form or a period or a critical tradition works, and what the archive holds.",
+  "",
+  "You are a well-read interlocutor, not a search box and not a cheerful assistant. Have views. Argue for them. A recommendation should say why the poem is worth the reader's hour, not just what it is about.",
+  "",
+  "The archive:",
+  "- You cannot see it. You have a catalogue of its poets and works below, and a search_archive tool for individual poems.",
+  "- Before naming any poem, search for it. Name only poems the tool has returned to you in this conversation, and give each one as a link exactly like this: [The Sick Rose](#/poem/blake/27), using the id the tool returned.",
+  "- Works are in the catalogue below and are linked as [Paradise Lost](#/work/paradise-lost).",
+  "- If the archive has nothing for what the reader wants, say so plainly, and say what it does have that comes nearest. Do not invent an entry to be helpful.",
+  "- You may discuss poems that are not in the archive \u2014 the history of poetry is larger than this collection \u2014 but say clearly when something is not here, and never give it a link.",
+  "",
+  "Honesty:",
+  "- Never invent quotations, dates, editions, or the views of named critics. Name a critical tradition freely; attribute a specific claim to a specific scholar only when you are certain, and never fabricate a citation.",
+  "- Where a date or attribution is uncertain, say so.",
+  "- Every text here is in the public domain, so the archive stops around the 1920s. If a reader asks for a living or mid-century poet, explain why they are absent rather than pretending.",
+  "",
+  "Form:",
+  "- Write prose. Short paragraphs. No headings and no bullet lists unless the reader asks for a list of poems, in which case one line each.",
+  "- Usually under 300 words. Go longer only when the question earns it.",
+  "- Plain Markdown links are rendered; nothing else is.",
+].join("\n");
+
+const SEARCH_TOOL = {
+  name: "search_archive",
+  description:
+    "Search the poems in Poetry Codex by words in the title, by poet, by subject, or by era. " +
+    "Returns matching poems with the id you must use when linking to them. " +
+    "Call this before naming any poem. Several calls with different wordings are fine \u2014 " +
+    "the archive is indexed by title and poet, not by what a poem is secretly about, so a " +
+    "search for an abstract theme may return little and a search for a concrete word may return much.",
+  input_schema: {
+    type: "object",
+    properties: {
+      query: { type: "string", description: "Words to look for in the poem title or the poet's name." },
+      subject: {
+        type: "string",
+        description: "Restrict to one subject. One of: Love, Nature, Religion, Death, War, " +
+          "Time, Art, Politics, Myth, Grief, Arts & Sciences, Travel.",
+      },
+      era: {
+        type: "string",
+        description: "Restrict to one era. One of: Ancient Greek & Roman, Anglo-Saxon, Medieval, " +
+          "Tudor & Elizabethan, Metaphysical & Cavalier, Restoration & Augustan, Romantic, " +
+          "Victorian, American.",
+      },
+      limit: { type: "integer", description: "How many to return, 1-30. Default 12." },
+    },
+    required: [],
+    additionalProperties: false,
+  },
+};
+
+// The search index, held for the life of the isolate.
+let SEARCH_INDEX = null;
+async function searchIndex() {
+  if (!SEARCH_INDEX) {
+    const res = await fetch(SEARCH_INDEX_URL, { cf: { cacheTtl: 3600, cacheEverything: true } });
+    if (!res.ok) throw new Error("search index unavailable");
+    SEARCH_INDEX = await res.json();
+  }
+  return SEARCH_INDEX;
+}
+
+function runSearch(index, input) {
+  const q = String(input.query || "").trim().toLowerCase();
+  const subject = String(input.subject || "").trim().toLowerCase();
+  const era = String(input.era || "").trim().toLowerCase();
+  const limit = Math.min(Math.max(Number(input.limit) || 12, 1), 30);
+  const terms = q ? q.split(/\s+/).filter(Boolean) : [];
+
+  const scored = [];
+  for (const p of index.poems) {
+    if (subject && p.s.toLowerCase() !== subject) continue;
+    if (era && p.e.toLowerCase() !== era) continue;
+    let score = 0;
+    if (terms.length) {
+      const title = p.t.toLowerCase();
+      const author = p.a.toLowerCase();
+      for (const t of terms) {
+        if (title.startsWith(t)) score += 3;
+        else if (title.includes(t)) score += 2;
+        else if (author.includes(t)) score += 1;
+      }
+      if (!score) continue;
+    }
+    scored.push([score, p]);
+    if (scored.length > 1500) break;
+  }
+  scored.sort((a, b) => b[0] - a[0]);
+  return {
+    matches: scored.slice(0, limit).map(([, p]) => ({ id: p.i, title: p.t, poet: p.a, subject: p.s, era: p.e })),
+    total: scored.length,
+  };
+}
+
+// Poets and works are small enough to carry in the prompt; 11,229 poem titles
+// are not, which is why the tool exists.
+let CATALOGUE = null;
+async function catalogue() {
+  if (CATALOGUE) return CATALOGUE;
+  const res = await fetch("https://poetrycodex.com/data/index.json",
+    { cf: { cacheTtl: 3600, cacheEverything: true } });
+  if (!res.ok) throw new Error("catalogue unavailable");
+  const idx = await res.json();
+
+  const byEra = new Map();
+  for (const p of idx.poets) {
+    const era = p.category || "Other";
+    if (!byEra.has(era)) byEra.set(era, []);
+    byEra.get(era).push(`${p.name} (${p.dates || "?"}), ${p.poemCount} poems`);
+  }
+  const poets = [...byEra.entries()]
+    .map(([era, list]) => `${era}:\n  ${list.join("; ")}`).join("\n");
+  const works = (idx.works || [])
+    .map((w) => `${w.title} \u2014 ${w.author}${w.year ? ", " + w.year : ""} [#/work/${w.slug}]`)
+    .join("\n");
+  const subjects = (idx.subjects || []).map((s) => `${s.name} (${s.count})`).join(", ");
+
+  CATALOGUE =
+    `The archive holds ${idx.count} poems by ${idx.poets.length} poets, and ` +
+    `${(idx.works || []).length} long works.\n\nSubjects: ${subjects}\n\n` +
+    `POETS BY ERA\n${poets}\n\nWORKS (link these by the path in brackets)\n${works}`;
+  return CATALOGUE;
+}
+
 function corsHeaders(origin) {
   return {
     "Access-Control-Allow-Origin": ALLOWED_ORIGINS.has(origin) ? origin : "https://poetrycodex.com",
@@ -221,6 +357,117 @@ function clean(value, limit) {
   return typeof value === "string" ? value.trim().slice(0, limit) : "";
 }
 
+
+/**
+ * The Oracle: a conversation about the archive.
+ *
+ * The model answers from the catalogue in its prompt, and looks poems up with
+ * search_archive. The loop runs until it stops asking for searches; its prose
+ * streams to the reader as it is written, and each search is announced so the
+ * page can show what is happening rather than a blank pause.
+ */
+async function oracleResponse(body, origin, env) {
+  const incoming = Array.isArray(body.messages) ? body.messages : [];
+  if (!incoming.length) return json(400, { error: "Nothing to answer." }, origin);
+
+  const messages = incoming
+    .slice(-MAX_ORACLE_TURNS)
+    .filter((m) => (m.role === "user" || m.role === "assistant") && typeof m.content === "string")
+    .map((m) => ({ role: m.role, content: m.content.trim().slice(0, MAX_ORACLE_CHARS) }))
+    .filter((m) => m.content);
+
+  if (!messages.length || messages[messages.length - 1].role !== "user") {
+    return json(400, { error: "Nothing to answer." }, origin);
+  }
+
+  let cat, index;
+  try {
+    [cat, index] = await Promise.all([catalogue(), searchIndex()]);
+  } catch {
+    return json(503, { error: "The Oracle cannot reach the archive just now." }, origin);
+  }
+
+  const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
+  const system = [
+    { type: "text", text: SYSTEM_ORACLE + "\n\n--- CATALOGUE ---\n" + cat,
+      cache_control: { type: "ephemeral" } },
+  ];
+
+  const encoder = new TextEncoder();
+  const sse = new ReadableStream({
+    async start(controller) {
+      const send = (obj) => controller.enqueue(encoder.encode("data: " + JSON.stringify(obj) + "\n\n"));
+      const turn = messages.slice();
+      try {
+        for (let round = 0; ; round++) {
+          const stream = client.messages.stream({
+            model: MODEL,
+            max_tokens: MAX_ORACLE_TOKENS,
+            output_config: { effort: "medium" },
+            system,
+            tools: [SEARCH_TOOL],
+            messages: turn,
+          });
+
+          for await (const event of stream) {
+            if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
+              send({ t: event.delta.text });
+            }
+          }
+
+          const reply = await stream.finalMessage();
+          turn.push({ role: "assistant", content: reply.content });
+
+          if (reply.stop_reason === "refusal") {
+            send({ error: "The Oracle declined to answer that." });
+            break;
+          }
+          const calls = reply.content.filter((b) => b.type === "tool_use");
+          if (!calls.length) break;
+
+          // Every tool_result goes back in one user message, or the model
+          // learns to stop calling tools in parallel.
+          const results = calls.map((call) => {
+            if (call.name !== "search_archive") {
+              return { type: "tool_result", tool_use_id: call.id, is_error: true,
+                       content: "Unknown tool." };
+            }
+            send({ searching: String(call.input.query || call.input.subject || call.input.era || "the archive") });
+            let found;
+            try {
+              found = runSearch(index, call.input);
+            } catch {
+              return { type: "tool_result", tool_use_id: call.id, is_error: true,
+                       content: "The search failed." };
+            }
+            return { type: "tool_result", tool_use_id: call.id,
+                     content: JSON.stringify(found) };
+          });
+          if (round + 1 >= MAX_TOOL_ROUNDS) {
+            results.push({ type: "text",
+              text: "No further searches are available for this answer. Reply now with what you have." });
+          }
+          turn.push({ role: "user", content: results });
+        }
+        controller.enqueue(encoder.encode("data: [DONE]\n\n"));
+      } catch (err) {
+        send({ error: "The Oracle could not finish. Please try again." });
+        console.error("oracle failed:", (err && err.message) || err);
+      } finally {
+        controller.close();
+      }
+    },
+  });
+
+  return new Response(sse, {
+    headers: {
+      "Content-Type": "text/event-stream; charset=utf-8",
+      "Cache-Control": "no-store",
+      ...corsHeaders(origin),
+    },
+  });
+}
+
 export default {
   async fetch(request, env) {
     const origin = request.headers.get("Origin") || "";
@@ -233,7 +480,7 @@ export default {
       return json(200, { ok: true, model: MODEL, lenses: Object.keys(LENSES) }, origin);
     }
     const route = url.pathname;
-    const ROUTES = ["/api/analyze", "/api/ask", "/api/compare", "/api/gloss"];
+    const ROUTES = ["/api/analyze", "/api/ask", "/api/compare", "/api/gloss", "/api/oracle"];
     if (!ROUTES.includes(route) || request.method !== "POST") {
       return json(404, { error: "Not found." }, origin);
     }
@@ -258,6 +505,12 @@ export default {
       body = await request.json();
     } catch {
       return json(400, { error: "Malformed request." }, origin);
+    }
+
+    // The Oracle is a conversation about the archive, not about one poem, so it
+    // takes a different body and runs its own tool loop.
+    if (route === "/api/oracle") {
+      return oracleResponse(body, origin, env);
     }
 
     const title = clean(body.title, MAX_FIELD_CHARS);
