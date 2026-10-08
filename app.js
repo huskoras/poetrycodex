@@ -397,19 +397,59 @@
       <article class="about">
         <img class="about-coin" src="coin.png" alt="Gold medallion of Alexander the Great" />
         <h1>About Poetry Codex</h1>
-        <p>Poetry Codex is a curated archive of poetry and criticism — a quiet place to find a poem,
-        its poet, and a brief reading of it. It gathers <strong>${DATA.count} poems</strong> by
-        <strong>${DATA.poets.length} poets</strong>, from Milton to the English Romantics.</p>
-        <h2>The Codex Note</h2>
-        <p>Each poem carries a short <em>Codex Note</em> — a considered critical reading meant to open a door,
-        not close one.</p>
-        <h2>The Emblem</h2>
+        <p>Poetry Codex is a reading archive of poetry in the public domain — and the foundation of a
+        larger project: a critical engine able to read these poems through the full range of methods
+        that literary scholarship has developed over the past two centuries.</p>
+        <p>The archive currently holds <strong>${DATA.count} poems</strong> by
+        <strong>${DATA.poets.length} poets</strong>, from Anglo-Saxon verse and the Greek and Roman
+        epics through the Middle Ages, the Renaissance, the Romantics and the Victorians. Every text
+        is reproduced in full, from a named edition, and is free of copyright.</p>
+
+        <h2>Why this exists</h2>
+        <p>Great poems are easy to find online; informed readings of them are not. A reader is usually
+        offered either a bare text or a single, unattributed interpretation presented as the meaning of
+        the poem. Poetry Codex begins from a different premise: that a poem is best understood through
+        more than one lens, and that a reader deserves to see the lens named.</p>
+
+        <h2>The Critical Engine <span class="soon">In development</span></h2>
+        <p>We are building a reading system specialised entirely in poetry — not a general assistant —
+        that can analyse any text in the archive through a chosen critical tradition: formalist,
+        historicist, psychoanalytic, feminist, postcolonial, ecocritical, and others. Ask how
+        <em>Beowulf</em> reads through a feminist lens, or how a Donne lyric looks first to a New Critic
+        and then to a historicist, and the answer should be an argument rather than a summary — and it
+        should say which scholarship it is standing on.</p>
+        <p>The engine is grounded in the history of criticism itself: the methods, the debates and the
+        critics who shaped them, together with open scholarship drawn from the academic literature. Its
+        purpose is to cite scholarship, not to replace it. Every reading names its method and its
+        sources, so that a reader can disagree with it intelligently.</p>
+        <ul class="about-list">
+          <li><strong>Semantic search</strong> — find poems by what they are about, not by the words
+          they happen to use: ask for poems on exile, or on grief that refuses consolation.</li>
+          <li><strong>Codex Notes</strong> — a short critical reading for every poem in the archive,
+          generated under scholarly constraints and reviewed before publication.</li>
+          <li><strong>Comparative reading</strong> — two poems placed side by side, with an account of
+          what they share and where they part.</li>
+          <li><strong>Modern-English gloss</strong> — line-by-line glosses for Old and Middle English
+          verse, so that the earliest poetry in the archive stays readable.</li>
+        </ul>
+
+        <h2>Built with scholars</h2>
+        <p>The engine is being developed together with academic collaborators, who define the critical
+        frameworks, select the sources and review the readings it produces. Poetry Codex is built on the
+        assumption that an interpretation is only as good as the tradition it can be held accountable to.</p>
+
+        <h2>Texts &amp; images</h2>
+        <p>Every poem here is in the public domain and is reproduced in full. Translations are pre-1929
+        and name their translator. Poet portraits are likewise public-domain works, courtesy of Wikimedia
+        Commons, and each carries its credit.</p>
+
+        <h2>The emblem</h2>
         <p>The archive’s emblem is a Roman gold medallion depicting Alexander the Great — an image of
         inheritance and endurance, fitting for a collection that returns great poems to a single shelf.</p>
-        <h2>Texts &amp; Images</h2>
-        <p>Every poem here is in the public domain and is reproduced in full. Poet portraits are likewise
-        public-domain works, courtesy of Wikimedia Commons; each carries its credit. Poetry Codex is a
-        non-commercial reading archive.</p>
+
+        <h2>Contact</h2>
+        <p>Poetry Codex welcomes correspondence from scholars, teachers and readers:
+        <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a>.</p>
       </article>`;
   }
 
