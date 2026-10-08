@@ -291,88 +291,142 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 }
 .about-list strong { color: var(--ink); font-weight: 600; }
 
-/* Critical engine — lens picker + generated reading */
-.engine-intro { font-family: var(--serif); font-size: 1rem; line-height: 1.7;
-  color: var(--ink-soft); margin: 0 0 1rem; font-style: italic; opacity: .9; }
-.lens-row { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.2rem; }
-.lens {
-  font-family: var(--sans); font-size: .74rem; font-weight: 600;
-  letter-spacing: .07em; text-transform: uppercase;
-  padding: .5rem .85rem; border-radius: 3px; cursor: pointer;
-  color: var(--ink-soft); background: transparent;
-  border: 1px solid rgba(23,20,15,.2);
-  transition: background .15s, border-color .15s, color .15s;
-}
-.lens:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
-.lens.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-.lens:disabled { opacity: .45; cursor: default; }
-.engine-out {
-  border-left: 2px solid var(--accent); padding: .2rem 0 .2rem 1.3rem;
-  margin: 0 0 1.4rem;
-}
-.engine-out p { font-family: var(--serif); font-size: 1.1rem; line-height: 1.8;
-  color: var(--ink-soft); margin: 0 0 1rem; }
-.engine-out.is-loading, .engine-out.is-error {
-  font-family: var(--sans); font-size: .82rem; letter-spacing: .06em;
-  text-transform: uppercase; color: var(--ink-soft); padding-top: .4rem;
-}
-.engine-out.is-loading { animation: engine-pulse 1.4s ease-in-out infinite; }
-.engine-out.is-error { border-left-color: #a33; color: #a33; }
-@keyframes engine-pulse { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
-.engine-credit {
-  font-family: var(--sans) !important; font-size: .72rem !important;
-  letter-spacing: .05em; text-transform: uppercase; opacity: .55;
-  margin-top: 1.2rem !important;
-}
-@media (max-width: 640px) { .lens { font-size: .68rem; padding: .45rem .7rem; } }
 
-/* Ask the Codex — free-form question box */
-.ask-form { display: flex; gap: .5rem; margin: 0 0 1.3rem; max-width: 560px; }
-.ask-input {
-  flex: 1; font-family: var(--serif); font-size: 1rem;
-  padding: .62rem .85rem; color: var(--ink);
-  background: rgba(255,255,255,.55);
-  border: 1px solid rgba(23,20,15,.2); border-radius: 3px;
+/* ============ CRITICAL ENGINE ============ */
+/* The reading column is 720px; the engine gets its own, wider card so the
+   lens row does not wrap into four cramped lines. */
+.engine {
+  width: min(980px, 100vw - 3rem);
+  margin: 3.4rem 0 0 50%;
+  transform: translateX(-50%);
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 2.1rem 2.4rem 2.3rem;
+  box-shadow: var(--shadow-sm);
 }
-.ask-input::placeholder { color: var(--ink-soft); opacity: .6; font-style: italic; }
-.ask-input:focus { outline: none; border-color: var(--accent); background: #fff; }
+.engine .section-label { margin-top: 0; }
+.engine-intro {
+  font-family: var(--serif); font-size: 1.02rem; line-height: 1.7;
+  color: var(--ink-soft); margin: 0 0 1.5rem; max-width: 62ch; font-style: italic;
+}
+
+/* --- lens buttons --- */
+.lens-row { display: flex; flex-wrap: wrap; gap: .55rem; margin: 0 0 1.6rem; }
+.lens {
+  font-family: var(--sans); font-size: .76rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+  padding: .62rem 1.05rem; border-radius: 4px; cursor: pointer;
+  color: var(--ink-soft); background: var(--surface);
+  border: 1px solid var(--line-strong);
+  transition: background .15s, border-color .15s, color .15s, box-shadow .15s;
+}
+.lens:hover:not(:disabled) {
+  border-color: var(--accent); color: var(--accent); box-shadow: var(--shadow-sm);
+}
+.lens.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.lens:disabled { opacity: .4; cursor: default; box-shadow: none; }
+.lens-alt { border-style: dashed; color: var(--gold); border-color: var(--gold); }
+.lens-alt:hover:not(:disabled) { border-color: var(--gold); color: var(--gold); }
+.lens-alt.active { background: var(--gold); border-color: var(--gold); color: #fff; }
+
+/* --- question + compare rows --- */
+.ask-form { display: flex; gap: .6rem; margin: 0 0 1rem; max-width: 680px; position: relative; }
+.ask-form:last-of-type { margin-bottom: 1.8rem; }
+.ask-input {
+  flex: 1; font-family: var(--serif); font-size: 1.04rem;
+  padding: .78rem 1rem; color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line-strong); border-radius: 4px;
+}
+.ask-input::placeholder { color: var(--faint); font-style: italic; }
+.ask-input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(169,133,47,.13); }
 .ask-send {
-  font-family: var(--sans); font-size: .74rem; font-weight: 600;
-  letter-spacing: .09em; text-transform: uppercase;
-  padding: .62rem 1.15rem; cursor: pointer; border-radius: 3px;
-  color: #fff; background: var(--accent); border: 1px solid var(--accent);
+  font-family: var(--sans); font-size: .76rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  padding: .78rem 1.5rem; cursor: pointer; border-radius: 4px;
+  color: #fff; background: var(--gold); border: 1px solid var(--gold);
   transition: opacity .15s;
 }
-.ask-send:hover:not(:disabled) { opacity: .85; }
+.ask-send:hover:not(:disabled) { opacity: .86; }
 .ask-input:disabled, .ask-send:disabled { opacity: .45; cursor: default; }
-@media (max-width: 520px) { .ask-form { flex-direction: column; } .ask-send { width: 100%; } }
 
-/* Modern-English gloss button, compare picker, gloss output */
-.lens-alt { border-style: dashed; }
-.lens-alt.active { border-style: solid; }
-
-.compare-form { position: relative; }
-.compare-hits {
-  position: absolute; top: 100%; left: 0; right: 0; z-index: 20;
-  margin: .25rem 0 0; padding: .25rem; list-style: none;
-  background: #fff; border: 1px solid rgba(23,20,15,.18); border-radius: 3px;
-  box-shadow: 0 8px 22px rgba(23,20,15,.14); max-height: 280px; overflow-y: auto;
+/* --- type-ahead list, shared by compare and the hero form --- */
+.compare-hits, .ha-hits {
+  position: absolute; top: 100%; left: 0; right: 0; z-index: 30;
+  margin: .3rem 0 0; padding: .3rem; list-style: none;
+  background: var(--surface); border: 1px solid var(--line-strong); border-radius: 4px;
+  box-shadow: var(--shadow); max-height: 300px; overflow-y: auto; text-align: left;
 }
-.compare-hits li {
-  padding: .5rem .6rem; cursor: pointer; border-radius: 2px;
-  font-family: var(--serif); font-size: .98rem; line-height: 1.35;
+.compare-hits li, .ha-hits li {
+  padding: .55rem .65rem; cursor: pointer; border-radius: 3px;
+  font-family: var(--serif); font-size: 1rem; line-height: 1.35; color: var(--ink);
 }
-.compare-hits li:hover { background: rgba(23,20,15,.06); }
-.compare-hits li strong { font-weight: 500; color: var(--ink); }
-.compare-hits li span {
-  display: block; font-family: var(--sans); font-size: .72rem;
-  letter-spacing: .05em; text-transform: uppercase; color: var(--ink-soft); opacity: .7;
+.compare-hits li:hover, .ha-hits li:hover { background: var(--surface-alt); }
+.compare-hits li strong, .ha-hits li strong { font-weight: 500; }
+.compare-hits li span, .ha-hits li span {
+  display: block; font-family: var(--sans); font-size: .7rem;
+  letter-spacing: .06em; text-transform: uppercase; color: var(--faint);
 }
 
-/* A gloss is original line then modern rendering, so it wants tighter,
-   left-aligned blocks rather than prose paragraphs. */
-.engine-out.is-gloss p {
-  white-space: pre-wrap; font-size: 1.02rem; line-height: 1.6;
-  margin: 0 0 1.1rem;
+/* --- generated output --- */
+.engine-out {
+  border-left: 3px solid var(--gold);
+  padding: .1rem 0 .1rem 1.5rem; margin: 0;
 }
-.engine-out.is-gloss p:last-of-type { white-space: normal; }
+.engine-out p {
+  font-family: var(--serif); font-size: 1.13rem; line-height: 1.82;
+  color: var(--ink-soft); margin: 0 0 1.1rem;
+}
+.engine-out p:last-of-type { margin-bottom: 0; }
+.engine-out.is-loading, .engine-out.is-error {
+  font-family: var(--sans); font-size: .8rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-soft); padding-top: .3rem;
+}
+.engine-out.is-loading { animation: engine-pulse 1.4s ease-in-out infinite; }
+.engine-out.is-error { border-left-color: #9c3b2e; color: #9c3b2e; }
+@keyframes engine-pulse { 0%,100% { opacity: .42; } 50% { opacity: 1; } }
+
+/* A gloss alternates original line and modern rendering, so it wants tighter
+   blocks than prose; the trailing Notes paragraph goes back to normal flow. */
+.engine-out.is-gloss p { white-space: pre-wrap; font-size: 1.04rem; line-height: 1.62; }
+.engine-out.is-gloss p:last-of-type { white-space: normal; font-style: italic; }
+
+.engine-credit {
+  font-family: var(--sans) !important; font-size: .72rem !important;
+  letter-spacing: .06em; text-transform: uppercase; color: var(--faint) !important;
+  margin-top: 1.5rem !important; font-style: normal !important;
+}
+
+/* ============ HERO: ASK THE CODEX ============ */
+.hero-ask {
+  display: flex; gap: .5rem; margin-top: .9rem;
+  width: min(92vw, 640px); justify-content: center;
+}
+.hero-ask .ha-field { position: relative; flex: 1.35; }
+.hero-ask input {
+  width: 100%; font-family: var(--serif); font-size: 1rem;
+  padding: .7rem .95rem; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line-strong); border-radius: 3px;
+}
+.hero-ask .ha-q { flex: 1; }
+.hero-ask input::placeholder { color: var(--faint); font-style: italic; }
+.hero-ask input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(169,133,47,.13); }
+.hero-ask button {
+  font-family: var(--sans); font-size: .74rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  padding: 0 1.3rem; cursor: pointer; border-radius: 3px;
+  color: #fff; background: var(--gold); border: 1px solid var(--gold);
+  transition: opacity .15s;
+}
+.hero-ask button:hover { opacity: .86; }
+
+@media (max-width: 760px) {
+  .engine { width: calc(100vw - 2rem); padding: 1.5rem 1.3rem 1.7rem; }
+  .engine-out { padding-left: 1.1rem; }
+  .lens { font-size: .7rem; padding: .52rem .8rem; letter-spacing: .06em; }
+  .ask-form { flex-direction: column; }
+  .ask-send { width: 100%; }
+  .hero-ask { flex-direction: column; width: min(92vw, 440px); }
+  .hero-ask button { padding: .7rem; }
+}
