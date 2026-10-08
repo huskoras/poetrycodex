@@ -228,8 +228,7 @@
     app.innerHTML = `
       <div class="page-head archive-head">
         <h1 class="page-title">The Archive</h1>
-        <p class="page-sub">Explore poetry across eras, poets and themes \u2014
-        ${DATA.count} poems by ${DATA.poets.length} poets, every one in the public domain.</p>
+        <p class="page-sub">Explore poetry across eras, poets and themes.</p>
         <form class="archive-search search-form" autocomplete="off">
           <input class="search-input" type="search" placeholder="Search by poem or poet\u2026" aria-label="Search the archive" />
           <button type="submit" aria-label="Search">
