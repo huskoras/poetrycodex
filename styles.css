@@ -325,3 +325,24 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
   margin-top: 1.2rem !important;
 }
 @media (max-width: 640px) { .lens { font-size: .68rem; padding: .45rem .7rem; } }
+
+/* Ask the Codex — free-form question box */
+.ask-form { display: flex; gap: .5rem; margin: 0 0 1.3rem; max-width: 560px; }
+.ask-input {
+  flex: 1; font-family: var(--serif); font-size: 1rem;
+  padding: .62rem .85rem; color: var(--ink);
+  background: rgba(255,255,255,.55);
+  border: 1px solid rgba(23,20,15,.2); border-radius: 3px;
+}
+.ask-input::placeholder { color: var(--ink-soft); opacity: .6; font-style: italic; }
+.ask-input:focus { outline: none; border-color: var(--accent); background: #fff; }
+.ask-send {
+  font-family: var(--sans); font-size: .74rem; font-weight: 600;
+  letter-spacing: .09em; text-transform: uppercase;
+  padding: .62rem 1.15rem; cursor: pointer; border-radius: 3px;
+  color: #fff; background: var(--accent); border: 1px solid var(--accent);
+  transition: opacity .15s;
+}
+.ask-send:hover:not(:disabled) { opacity: .85; }
+.ask-input:disabled, .ask-send:disabled { opacity: .45; cursor: default; }
+@media (max-width: 520px) { .ask-form { flex-direction: column; } .ask-send { width: 100%; } }
