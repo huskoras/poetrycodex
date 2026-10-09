@@ -1,5 +1,5 @@
 {
- "count": 11659,
+ "count": 11715,
  "workCount": 45,
  "poets": [
   {
@@ -2045,6 +2045,22 @@
    "workCount": 0
   },
   {
+   "slug": "chesterton",
+   "name": "G. K. Chesterton",
+   "dates": "1874–1936",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/chesterton.jpg",
+   "credit": "Portrait of G. K. Chesterton by Ernest Herbert Mills (1909) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Gilbert Keith Chesterton (1874–1936) was an English writer, born in London, known for his journalism, his Father Brown stories and his Christian apologetics, and also a prolific poet. He wrote on politics, history, and literature with a style full of paradox.",
+    "His poems range from the rousing ballad “Lepanto” and the long “Ballad of the White Horse” (1911) to comic verses on wine and inns, such as “The Rolling English Road.” The poems here are drawn from The Wild Knight (1900), Poems (1915), Wine, Water and Song (1915), and The Ballad of St. Barbara (1922)."
+   ],
+   "order": 1420,
+   "poemCount": 56,
+   "workCount": 0
+  },
+  {
    "slug": "thomas_e",
    "name": "Edward Thomas",
    "dates": "1878–1917",
@@ -2127,20 +2143,20 @@
  ],
  "subjects": [
   {
-   "name": "Nature",
-   "count": 2432
+   "name": "Living",
+   "count": 2442
   },
   {
-   "name": "Living",
-   "count": 2428
+   "name": "Nature",
+   "count": 2437
   },
   {
    "name": "Love",
-   "count": 2357
+   "count": 2360
   },
   {
    "name": "Religion",
-   "count": 1658
+   "count": 1666
   },
   {
    "name": "Death & Dying",
@@ -2148,7 +2164,7 @@
   },
   {
    "name": "History & Politics",
-   "count": 639
+   "count": 649
   },
   {
    "name": "Relationships",
@@ -2156,23 +2172,23 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 339
+   "count": 343
   },
   {
    "name": "Time & Brevity",
-   "count": 269
+   "count": 270
   },
   {
    "name": "The Mind",
-   "count": 241
+   "count": 242
   },
   {
    "name": "Social Commentaries",
-   "count": 102
+   "count": 111
   },
   {
    "name": "Mythology & Folklore",
-   "count": 33
+   "count": 34
   }
  ],
  "works": [
@@ -143199,6 +143215,734 @@
    ],
    "collection": "The Farmer's Bride (1921 edition)",
    "excerpt": "Not yet will those measureless fields be green again\nWhere only yesterday the wild, sweet, blood of wonderful youth was shed;\nThere is a grave whose earth must hold too long, too deep a stain, …"
+  },
+  {
+   "id": "chesterton/0",
+   "title": "The Donkey",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "When fishes flew and forests walked\n  And figs grew upon thorn,\nSome moment when the moon was blood …"
+  },
+  {
+   "id": "chesterton/1",
+   "title": "The Wild Knight",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Religion"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "The wasting thistle whitens on my crest,\nThe barren grasses blow upon my spear,\nA green, pale pennon: blazon of wild faith …"
+  },
+  {
+   "id": "chesterton/2",
+   "title": "By the Babe Unborn",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Mythology & Folklore"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "If trees were tall and grasses short,\n  As in some crazy tale,\nIf here and there a sea were blue …"
+  },
+  {
+   "id": "chesterton/3",
+   "title": "The Happy Man",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "To teach the grey earth like a child,\n  To bid the heavens repent,\nI only ask from Fate the gift …"
+  },
+  {
+   "id": "chesterton/4",
+   "title": "The Praise of Dust",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "'What of vile dust?' the preacher said.\n  Methought the whole world woke,\nThe dead stone lived beneath my foot, …"
+  },
+  {
+   "id": "chesterton/5",
+   "title": "The Beatific Vision",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "Through what fierce incarnations, furled\n  In fire and darkness, did I go,\nEre I was worthy in the world …"
+  },
+  {
+   "id": "chesterton/6",
+   "title": "A Christmas Carol",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "The Christ-child lay on Mary's lap,\n  His hair was like a light.\n(O weary, weary were the world, …"
+  },
+  {
+   "id": "chesterton/7",
+   "title": "King's Cross Station",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Time & Brevity"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "This circled cosmos whereof man is god\n  Has suns and stars of green and gold and red,\nAnd cloudlands of great smoke, that range o'er range …"
+  },
+  {
+   "id": "chesterton/8",
+   "title": "The Holy of Holies",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "'Elder father, though thine eyes\nShine with hoary mysteries,\nCanst thou tell what in the heart …"
+  },
+  {
+   "id": "chesterton/9",
+   "title": "The Last Masquerade",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "A wan new garment of young green\n  Touched, as you turned your soft brown hair\n  And in me surged the strangest prayer …"
+  },
+  {
+   "id": "chesterton/10",
+   "title": "The Pessimist",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "You that have snarled through the ages, take your answer and go--\nI know your hoary question, the riddle that all men know.\nYou have weighed the stars in a balance, and grasped the skies in a span: …"
+  },
+  {
+   "id": "chesterton/11",
+   "title": "Ecclesiastes",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "There is one sin: to call a green leaf grey,\n  Whereat the sun in heaven shuddereth.\nThere is one blasphemy: for death to pray, …"
+  },
+  {
+   "id": "chesterton/12",
+   "title": "The Fish",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "The Wild Knight and Other Poems (1900)",
+   "excerpt": "Dark the sea was: but I saw him,\n  One great head with goggle eyes,\nLike a diabolic cherub …"
+  },
+  {
+   "id": "chesterton/13",
+   "title": "Lepanto",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "White founts falling in the Courts of the sun,\nAnd the Soldan of Byzantium is smiling as they run;\nThere is laughter like the fountains in that face of all men feared, …"
+  },
+  {
+   "id": "chesterton/14",
+   "title": "The House of Christmas",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Relationships"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "There fared a mother driven forth\nOut of an inn to roam;\nIn the place where she was homeless …"
+  },
+  {
+   "id": "chesterton/15",
+   "title": "Antichrist, or the Reunion of Christendom",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Religion"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "Are they clinging to their crosses,\n             F.E. Smith,\nWhere the Breton boat-fleet tosses, …"
+  },
+  {
+   "id": "chesterton/16",
+   "title": "The Secret People",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "Smile at us, pay us, pass us; but do not quite forget.\nFor we are the people of England, that never has spoken yet.\nThere is many a fat farmer that drinks less cheerfully, …"
+  },
+  {
+   "id": "chesterton/17",
+   "title": "A Ballade of Suicide",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Social Commentaries"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "The gallows in my garden, people say,\nIs new and neat and adequately tall.\nI tie the noose on in a knowing way …"
+  },
+  {
+   "id": "chesterton/18",
+   "title": "A Ballade of an Anti-Puritan",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "They spoke of Progress spiring round,\nOf Light and Mrs. Humphry Ward--\nIt is not true to say I frowned, …"
+  },
+  {
+   "id": "chesterton/19",
+   "title": "A Ballade of a Book-Reviewer",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "I have not read a rotten page\nOf \"Sex-Hate\" or \"The Social Test,\"\nAnd here comes \"Husks\" and \"Heritage\".... …"
+  },
+  {
+   "id": "chesterton/20",
+   "title": "A Cider Song",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "The wine they drink in Paradise\nThey make in Haute Lorraine;\nGod brought it burning from the sod …"
+  },
+  {
+   "id": "chesterton/21",
+   "title": "When I Came Back to Fleet Street",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Social Commentaries"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "When I came back to Fleet Street,\n  Through a sunset nook at night,\nAnd saw the old Green Dragon …"
+  },
+  {
+   "id": "chesterton/22",
+   "title": "The Shakespeare Memorial",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "Lord Lilac thought it rather rotten\nThat Shakespeare should be quite\nAnd therefore got on a Committee …"
+  },
+  {
+   "id": "chesterton/23",
+   "title": "The Higher Unity",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Religion"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "It was Isaiah Bunter\n  Who sailed to the world's end,\nAnd spread religion in a way …"
+  },
+  {
+   "id": "chesterton/24",
+   "title": "Glencoe",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "The star-crowned cliffs seem hinged upon the sky,\nThe clouds are floating rags across them curled,\nThey open to us like the gates of God …"
+  },
+  {
+   "id": "chesterton/25",
+   "title": "The Great Minimum",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Time & Brevity"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "It is something to have wept as we have wept,\nIt is something to have done as we have done,\nIt is something to have watched when all men slept, …"
+  },
+  {
+   "id": "chesterton/26",
+   "title": "A Song of Defeat",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "The line breaks and the guns go under,\n  The lords and the lackeys ride the plain;\nI draw deep breaths of the dawn and thunder, …"
+  },
+  {
+   "id": "chesterton/27",
+   "title": "A Hymn",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "History & Politics"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "O God of earth and altar,\n  Bow down and hear our cry\nOur earthly rulers falter, …"
+  },
+  {
+   "id": "chesterton/28",
+   "title": "Love's Trappist",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Arts & Sciences"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "There is a place where lute and lyre are broken.\nWhere scrolls are torn and on a wild wind go,\nWhere tablets stand wiped naked for a token, …"
+  },
+  {
+   "id": "chesterton/29",
+   "title": "The Wise Men",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": "Poems (1915)",
+   "excerpt": "Step softly, under snow or rain,\n  To find the place where men can pray;\nThe way is all so very plain …"
+  },
+  {
+   "id": "chesterton/30",
+   "title": "The Englishman",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "History & Politics"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "St. George he was for England,\nAnd before he killed the dragon\nHe drank a pint of English ale …"
+  },
+  {
+   "id": "chesterton/31",
+   "title": "Wine and Water",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "Old Noah he had an ostrich farm and fowls on the largest scale,\nHe ate his egg with a ladle in an egg-cup big as a pail,\nAnd the soup he took was Elephant Soup and the fish he took was Whale, …"
+  },
+  {
+   "id": "chesterton/32",
+   "title": "The Song against Grocers",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "God made the wicked Grocer\nFor a mystery and a sign,\nThat men might shun the awful shops …"
+  },
+  {
+   "id": "chesterton/33",
+   "title": "The Rolling English Road",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "Before the Roman came to Rye or out to Severn strode,\nThe rolling English drunkard made the rolling English road.\nA reeling road, a rolling road, that rambles round the shire, …"
+  },
+  {
+   "id": "chesterton/34",
+   "title": "The Song of Quoodle",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "They haven't got no noses,\nThe fallen sons of Eve;\nEven the smell of roses …"
+  },
+  {
+   "id": "chesterton/35",
+   "title": "Pioneers, O Pioneers",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "Nebuchadnezzar the King of the Jews\nSuffered from new and original views,\nHe crawled on his hands and knees, it's said, …"
+  },
+  {
+   "id": "chesterton/36",
+   "title": "The Logical Vegetarian",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Social Commentaries"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "  You will find me drinking rum,\n  Like a sailor in a slum,\nYou will find me drinking beer like a Bavarian. …"
+  },
+  {
+   "id": "chesterton/37",
+   "title": "The Saracen's Head",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "\"The Saracen's Head\" looks down the lane,\nWhere we shall never drink wine again,\nFor the wicked old women who feel well-bred …"
+  },
+  {
+   "id": "chesterton/38",
+   "title": "The Good Rich Man",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "Mr. Mandragon, the Millionaire, he wouldn't have wine or wife,\nHe couldn't endure complexity: he lived the Simple Life.\nHe ordered his lunch by megaphone in manly, simple tones, …"
+  },
+  {
+   "id": "chesterton/39",
+   "title": "The Song against Songs",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "The song of the sorrow of Melisande is a weary song and a dreary song,\nThe glory of Mariana's grange had got into great decay,\nThe song of the Raven Never More has never been called a cheery song, …"
+  },
+  {
+   "id": "chesterton/40",
+   "title": "Me Heart",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Social Commentaries"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "I come from Castlepatrick, and me heart is on me sleeve,\nAnd any sword or pistol boy can hit it with me leave,\nIt shines there for an epaulette, as golden as a flame, …"
+  },
+  {
+   "id": "chesterton/41",
+   "title": "The Song of the Oak",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "The Druids waved their golden knives\nAnd danced around the Oak\nWhen they had sacrificed a man; …"
+  },
+  {
+   "id": "chesterton/42",
+   "title": "The Road to Roundabout",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Mythology & Folklore"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "Some say that Guy of Warwick,\nThe man that killed the Cow\nAnd brake the mighty Boar alive …"
+  },
+  {
+   "id": "chesterton/43",
+   "title": "The Song of the Strange Ascetic",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Living"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "If I had been a Heathen,\n  I'd have praised the purple vine,\nMy slaves should dig the vineyards, …"
+  },
+  {
+   "id": "chesterton/44",
+   "title": "The Song of Right and Wrong",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Religion"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "Feast on wine or fast on water,\nAnd your honour shall stand sure,\nGod Almighty's son and daughter …"
+  },
+  {
+   "id": "chesterton/45",
+   "title": "Who Goes Home?",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "Wine, Water and Song (1915)",
+   "excerpt": "In the city set upon slime and loam\nThey cry in their parliament \"Who goes home?\"\nAnd there comes no answer in arch or dome, …"
+  },
+  {
+   "id": "chesterton/46",
+   "title": "The Ballad of St. Barbara",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": "The Ballad of St. Barbara, and Other Verses (1922)",
+   "excerpt": "When the long grey lines came flooding upon Paris in the plain,\nWe stood and drank of the last free air we never could taste again:\nThey had led us back from the lost battle, to halt we knew not where …"
+  },
+  {
+   "id": "chesterton/47",
+   "title": "Elegy in a Country Churchyard",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "The Ballad of St. Barbara, and Other Verses (1922)",
+   "excerpt": "The men that worked for England\nThey have their graves at home:\nAnd bees and birds of England …"
+  },
+  {
+   "id": "chesterton/48",
+   "title": "The Sword of Surprise",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Religion"
+   ],
+   "collection": "The Ballad of St. Barbara, and Other Verses (1922)",
+   "excerpt": "Sunder me from my bones, O sword of God,\nTill they stand stark and strange as do the trees;\nThat I whose heart goes up with the soaring woods …"
+  },
+  {
+   "id": "chesterton/49",
+   "title": "The Old Song",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "The Ballad of St. Barbara, and Other Verses (1922)",
+   "excerpt": "A livid sky on London\nAnd like iron steeds that rear\nA shock of engines halted, …"
+  },
+  {
+   "id": "chesterton/50",
+   "title": "The Philanthropist",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Religion"
+   ],
+   "collection": "The Ballad of St. Barbara, and Other Verses (1922)",
+   "excerpt": "Abou Ben Adhem (may his tribe decrease\nBy cautious birth-control and die in peace)\nMellow with learning lightly took the word …"
+  },
+  {
+   "id": "chesterton/51",
+   "title": "The English Graves",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "The Ballad of St. Barbara, and Other Verses (1922)",
+   "excerpt": "Were I that wandering citizen whose city is the world,\nI would not weep for all that fell before the flags were furled;\nI would not let one murmur mar the trumpets volleying forth …"
+  },
+  {
+   "id": "chesterton/52",
+   "title": "Memory",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Relationships"
+   ],
+   "collection": "The Ballad of St. Barbara, and Other Verses (1922)",
+   "excerpt": "If I ever go back to Baltimore,\nThe city of Maryland,\nI shall miss again as I missed before …"
+  },
+  {
+   "id": "chesterton/53",
+   "title": "For a War Memorial",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "The Ballad of St. Barbara, and Other Verses (1922)",
+   "excerpt": "The hucksters haggle in the mart\nThe cars and carts go by;\nSenates and schools go droning on; …"
+  },
+  {
+   "id": "chesterton/54",
+   "title": "The Convert",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": "The Ballad of St. Barbara, and Other Verses (1922)",
+   "excerpt": "After one moment when I bowed my head\nAnd the whole world turned over and came upright,\nAnd I came out where the old road shone white, …"
+  },
+  {
+   "id": "chesterton/55",
+   "title": "To Captain Fryatt",
+   "authorSlug": "chesterton",
+   "author": "G. K. Chesterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "The Ballad of St. Barbara, and Other Verses (1922)",
+   "excerpt": "Trampled yet red is the last of the embers,\nRed the last cloud of a sun that has set;\nWhat of your sleeping though Flanders remembers, …"
   },
   {
    "id": "thomas_e/0",
