@@ -1,5 +1,5 @@
 {
- "count": 11453,
+ "count": 11488,
  "workCount": 45,
  "poets": [
   {
@@ -2029,6 +2029,22 @@
    "workCount": 0
   },
   {
+   "slug": "rosenberg",
+   "name": "Isaac Rosenberg",
+   "dates": "1890–1918",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/rosenberg.jpg",
+   "credit": "Self-portrait of Isaac Rosenberg (before 1918) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Isaac Rosenberg (1890–1918) was an English poet and painter, born in Bristol to Jewish immigrant parents from Lithuania and raised in the East End of London. He studied art at the Slade School, and his first pamphlets of verse were printed at his own expense.",
+    "He enlisted in 1915 and wrote his war poems, among them “Break of Day in the Trenches” and “Dead Man’s Dump,” in the trenches, scribbling them on scraps of paper. He was killed on 1 April 1918. His Poems, edited by Gordon Bottomley with a memoir by Laurence Binyon, appeared in 1922."
+   ],
+   "order": 1440,
+   "poemCount": 35,
+   "workCount": 0
+  },
+  {
    "slug": "owen",
    "name": "Wilfred Owen",
    "dates": "1893–1918",
@@ -2048,47 +2064,47 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2418
+   "count": 2419
   },
   {
    "name": "Nature",
-   "count": 2397
+   "count": 2401
   },
   {
    "name": "Love",
-   "count": 2333
+   "count": 2336
   },
   {
    "name": "Religion",
-   "count": 1649
+   "count": 1652
   },
   {
    "name": "Death & Dying",
-   "count": 728
+   "count": 732
   },
   {
    "name": "History & Politics",
-   "count": 610
+   "count": 619
   },
   {
    "name": "Relationships",
-   "count": 398
+   "count": 400
   },
   {
    "name": "Arts & Sciences",
-   "count": 327
+   "count": 329
   },
   {
    "name": "Time & Brevity",
-   "count": 247
+   "count": 248
   },
   {
    "name": "The Mind",
-   "count": 231
+   "count": 233
   },
   {
    "name": "Social Commentaries",
-   "count": 95
+   "count": 99
   },
   {
    "name": "Mythology & Folklore",
@@ -142328,6 +142344,461 @@
    ],
    "collection": "The Collected Poems of Rupert Brooke (1915)",
    "excerpt": "Because God put His adamantine fate\n Between my sullen heart and its desire,\nI swore that I would burst the Iron Gate, …"
+  },
+  {
+   "id": "rosenberg/0",
+   "title": "Daughters of War",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Mythology & Folklore"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "Space beats the ruddy freedom of their limbs,\nTheir naked dances with man’s spirit naked\nBy the root side of the tree of life …"
+  },
+  {
+   "id": "rosenberg/1",
+   "title": "On Receiving the First News of the War",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "Snow is a strange white word;\nNo ice or frost\nHas asked of bud or bird …"
+  },
+  {
+   "id": "rosenberg/2",
+   "title": "Spring, 1916",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "Moses: A Play (1916)",
+   "excerpt": "Slow, rigid, is this masquerade\nThat passes as through a difficult air:\nHeavily—heavily passes. …"
+  },
+  {
+   "id": "rosenberg/3",
+   "title": "The Troop Ship",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Living"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "Grotesque and queerly huddled\nContortionists to twist\nThe sleepy soul to a sleep, …"
+  },
+  {
+   "id": "rosenberg/4",
+   "title": "Marching",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Living"
+   ],
+   "collection": "Moses: A Play (1916)",
+   "excerpt": "My eyes catch ruddy necks\nSturdily pressed back—\nAll a red-brick moving glint. …"
+  },
+  {
+   "id": "rosenberg/5",
+   "title": "Break of Day in the Trenches",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Nature"
+   ],
+   "collection": "Poetry, Chicago (December 1916)",
+   "excerpt": "The darkness crumbles away—\nIt is the same old druid Time as ever.\nOnly a live thing leaps my hand— …"
+  },
+  {
+   "id": "rosenberg/6",
+   "title": "Killed in Action",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Arts & Sciences"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "Your “Youth” has fallen from its shelf,\nAnd you have fallen, you yourself.\nThey knocked a soldier on the head, …"
+  },
+  {
+   "id": "rosenberg/7",
+   "title": "Returning, We Hear the Larks",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "Sombre the night is:\nAnd, though we have our lives, we know\nWhat sinister threat lurks there. …"
+  },
+  {
+   "id": "rosenberg/8",
+   "title": "The Destruction of Jerusalem by the Babylonian Hordes",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "They left their Babylon bare\nOf all its tall men,\nOf all its proud horses; …"
+  },
+  {
+   "id": "rosenberg/9",
+   "title": "The Burning of the Temple",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "Fierce wrath of Solomon,\nWhere sleepest thou? O see,\nThe fabric which thou won …"
+  },
+  {
+   "id": "rosenberg/10",
+   "title": "Home-Thoughts from France",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "History & Politics"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "Wan, fragile faces of joy,\nPitiful mouths that strive\nTo light with smiles the place …"
+  },
+  {
+   "id": "rosenberg/11",
+   "title": "The Immortals",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "I killed them, but they would not die.\nYea, all the day and all the night\nFor them I could not rest nor sleep, …"
+  },
+  {
+   "id": "rosenberg/12",
+   "title": "Louse Hunting",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "Nudes, stark and glistening,\nYelling in lurid glee. Grinning faces\nAnd raging limbs …"
+  },
+  {
+   "id": "rosenberg/13",
+   "title": "Girl to Soldier on Leave",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Love"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "I love you, Titan lover,\nMy own storm-days’ Titan.\nGreater than the son of Zeus, …"
+  },
+  {
+   "id": "rosenberg/14",
+   "title": "Soldier: Twentieth Century",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "The Mind"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "I love you, great new Titan!\nAm I not you?\nNapoleon and Cæsar …"
+  },
+  {
+   "id": "rosenberg/15",
+   "title": "The Jew",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Religion"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "Moses, from whose loins I sprung,\nLit by a lamp in his blood\nTen immutable rules, a moon …"
+  },
+  {
+   "id": "rosenberg/16",
+   "title": "The Dying Soldier",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "“Here are houses,” he moaned,\n“I could reach, but my brain swims.”\nThen they thundered and flashed, …"
+  },
+  {
+   "id": "rosenberg/17",
+   "title": "Dead Man's Dump",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "The plunging limbers over the shattered track\nRacketed with their rusty freight,\nStuck out like many crowns of thorns, …"
+  },
+  {
+   "id": "rosenberg/18",
+   "title": "The Dead Heroes",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Youth (1915)",
+   "excerpt": "Flame out, you glorious skies,\nWelcome our brave;\nKiss their exultant eyes; …"
+  },
+  {
+   "id": "rosenberg/19",
+   "title": "Zion",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "History & Politics"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "She stood—a hill-ensceptred Queen,\n  The glory streaming from her;\nWhile Heaven flashed her rays between, …"
+  },
+  {
+   "id": "rosenberg/20",
+   "title": "Spring",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "I walk and I wonder\nTo hear the birds sing;\nWithout you, my lady, …"
+  },
+  {
+   "id": "rosenberg/21",
+   "title": "Heart's First Word. I.",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "The Mind"
+   ],
+   "collection": "Night and Day (1912)",
+   "excerpt": "To sweeten a swift minute so\nWith such rare fragrance of sweet speech,\nAnd make the after hours go …"
+  },
+  {
+   "id": "rosenberg/22",
+   "title": "If You Are Fire",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "The Mind"
+   ],
+   "collection": "Youth (1915)",
+   "excerpt": "If you are fire and I am fire,\nWho blows the flame apart\nSo that desire eludes desire …"
+  },
+  {
+   "id": "rosenberg/23",
+   "title": "In the Underworld",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Love"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "I have lived in the underworld so long:\nHow can you, a creature of light,\nWithout terror understand the song …"
+  },
+  {
+   "id": "rosenberg/24",
+   "title": "In Piccadilly",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Time & Brevity"
+   ],
+   "collection": "Youth (1915)",
+   "excerpt": "Lamp-lit faces, to you\nWhat is your starry dew?\nGold flowers of the night blue! …"
+  },
+  {
+   "id": "rosenberg/25",
+   "title": "A Careless Heart",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "The Mind"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "A little breath can make a prayer,\nA little wind can take it\nAnd turn it back again to air: …"
+  },
+  {
+   "id": "rosenberg/26",
+   "title": "Dawn",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "O tender first cold flush of rose,\nO budded dawn, wake dreamily;\nYour dim lips as your lids unclose …"
+  },
+  {
+   "id": "rosenberg/27",
+   "title": "The One Lost",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "I mingle with your bones;\nYou steal in subtle noose\nThis lighted dust Jehovah loans …"
+  },
+  {
+   "id": "rosenberg/28",
+   "title": "Don Juan's Song",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Mythology & Folklore"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "The moon is in an ecstasy,\nIt wanes not nor can grow;\nThe heavens are in a mist of love, …"
+  },
+  {
+   "id": "rosenberg/29",
+   "title": "On a Lady Singing",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Love"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "She bade us listen to the singing lark\nIn tones far sweeter than its own:\nFor fear that she should cease and leave us dark …"
+  },
+  {
+   "id": "rosenberg/30",
+   "title": "Beauty",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Time & Brevity"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "As a sword in the sun—\nA glory calling a glory—\nOur eyes, seeing it run, …"
+  },
+  {
+   "id": "rosenberg/31",
+   "title": "The Blind God",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "Streaked with immortal blasphemies,\nBetwixt His twin eternities\nThe Shaper of mortal destinies …"
+  },
+  {
+   "id": "rosenberg/32",
+   "title": "God",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": "Moses: A Play (1916)",
+   "excerpt": "In his malodorous brain what slugs and mire,\nLanthorned in his oblique eyes, guttering burned!\nHis body lodged a rat where men nursed souls: …"
+  },
+  {
+   "id": "rosenberg/33",
+   "title": "Sleep",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Religion"
+   ],
+   "collection": "Moses: A Play (1916)",
+   "excerpt": "Godhead’s lip hangs\nWhen our pulses have no golden tremors,\nAnd his whips are flicked by mice …"
+  },
+  {
+   "id": "rosenberg/34",
+   "title": "My Days",
+   "authorSlug": "rosenberg",
+   "author": "Isaac Rosenberg",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1922)",
+   "excerpt": "My days are but the tombs of buried hours;\nWhich tombs are hidden in the pilèd years;\nBut from the mounds there spring up many flowers, …"
   },
   {
    "id": "owen/0",
