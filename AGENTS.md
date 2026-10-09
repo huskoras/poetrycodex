@@ -13,7 +13,7 @@ do the technical work yourself rather than handing them instructions to run.
 
 ## 1. What this project is
 
-A curated archive of **public-domain poetry** — currently **11,012 poems, 107 poets,
+A curated archive of **public-domain poetry** — currently **12,239 poems, 151 poets,
 39 multi-section works**, spanning Cædmon (~7th c.) and Homer (~8th c. BC) through
 early-20th-century American poets.
 
