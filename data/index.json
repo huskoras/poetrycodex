@@ -1,5 +1,5 @@
 {
- "count": 12082,
+ "count": 12084,
  "workCount": 45,
  "poets": [
   {
@@ -1035,6 +1035,22 @@
    "order": 660,
    "poemCount": 10,
    "workCount": 2
+  },
+  {
+   "slug": "blair",
+   "name": "Robert Blair",
+   "dates": "1699–1746",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Robert Blair (1699–1746) was a Scottish minister and poet, born in Edinburgh and for many years parish minister of Athelstaneford in East Lothian. He wrote little verse that survives.",
+    "His blank-verse poem The Grave (1743) is a gloomy meditation on death and the churchyard in the manner of the so-called graveyard poets, and was often reprinted, notably with William Blake’s designs in 1808."
+   ],
+   "order": 670,
+   "poemCount": 2,
+   "workCount": 0
   },
   {
    "slug": "johnson_samuel",
@@ -2352,7 +2368,7 @@
   },
   {
    "name": "Death & Dying",
-   "count": 788
+   "count": 790
   },
   {
    "name": "History & Politics",
@@ -52758,6 +52774,32 @@
    ],
    "collection": null,
    "excerpt": "_P_. Shut, shut the door, good John! fatigued, I said,\nTie up the knocker, say I'm sick, I'm dead.\nThe Dog-star rages! nay, 'tis past a doubt, …"
+  },
+  {
+   "id": "blair/0",
+   "title": "The Grave",
+   "authorSlug": "blair",
+   "author": "Robert Blair",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "The Grave (1743)",
+   "excerpt": "While some affect the sun, and some the shade,\nSome flee the city, some the hermitage;\nTheir aims as various, as the roads they take …"
+  },
+  {
+   "id": "blair/1",
+   "title": "A Poem Dedicated to the Memory of Mr William Law",
+   "authorSlug": "blair",
+   "author": "Robert Blair",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": null,
+   "excerpt": "In silence to suppress my griefs I've tried,\nAnd kept within its banks the swelling tide!\nBut all in vain: unbidden numbers flow; …"
   },
   {
    "id": "johnson_samuel/0",
