@@ -1,5 +1,5 @@
 {
- "count": 12282,
+ "count": 12290,
  "workCount": 45,
  "poets": [
   {
@@ -1034,6 +1034,22 @@
    ],
    "order": 620,
    "poemCount": 9,
+   "workCount": 0
+  },
+  {
+   "slug": "nedim",
+   "name": "Nedim",
+   "dates": "c. 1681–1730",
+   "era": "Ottoman Tulip Era",
+   "category": "Turkish & Ottoman",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Ahmed Nedim was one of the most celebrated Ottoman poets of the early 18th century, the age later called the Tulip Era, a period of peace, luxury and garden-pavilion culture in Istanbul. He wrote the courtly ghazel and became librarian and boon-companion of the Grand Vezir Ibrahim Pasha.",
+    "He died in October 1730, when the palace was stormed in the uprising that overthrew Sultan Ahmed III. E. J. W. Gibb, whose History of Ottoman Poetry gives the first sustained English account of him, warned that Nedim's delicate verbal music could scarcely survive translation. The poems below are Gibb's renderings of ghazels from the fourth volume of that history."
+   ],
+   "order": 625,
+   "poemCount": 8,
    "workCount": 0
   },
   {
@@ -2452,11 +2468,11 @@
   },
   {
    "name": "Living",
-   "count": 2469
+   "count": 2471
   },
   {
    "name": "Love",
-   "count": 2464
+   "count": 2470
   },
   {
    "name": "Religion",
@@ -53331,6 +53347,114 @@
    ],
    "collection": null,
    "excerpt": "The shepherds and the nymphs were seen\nPleading before the Cyprian queen.\nThe counsel for the fair began, …"
+  },
+  {
+   "id": "nedim/0",
+   "title": "But a Glass or Two She Gave Us",
+   "authorSlug": "nedim",
+   "author": "Nedim",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Love"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "But a glass or two she gave us, yet she drave our thoughts astray;\nOut on yonder wine-retailing, wit-assailing paynim may!\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
+  },
+  {
+   "id": "nedim/1",
+   "title": "Her Every Curl a Thousand Tangles Bears",
+   "authorSlug": "nedim",
+   "author": "Nedim",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "Her every curl a thousand heart-enchanting tangles bears,\nAnd every tangle in each curl a thousand souls ensnares.\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
+  },
+  {
+   "id": "nedim/2",
+   "title": "Yea, Her Fair and Lucent Neck",
+   "authorSlug": "nedim",
+   "author": "Nedim",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "Yea, her fair and lucent neck as white as shining camphor glows;\nYea, her eyebrows and her eyes surpass the black the sable knows.\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
+  },
+  {
+   "id": "nedim/3",
+   "title": "O My Wayward Fair",
+   "authorSlug": "nedim",
+   "author": "Nedim",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "O my wayward fair, who thus hath reared thee sans all fear to be?\nWho hath tendered thee that thus thou shamest e'en the cypress-tree?\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
+  },
+  {
+   "id": "nedim/4",
+   "title": "Thy Bosom Bright Hath Worked",
+   "authorSlug": "nedim",
+   "author": "Nedim",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "Thy bosom bright hath worked the sun's pavilion dire dismay,\nThy leg diaphanous hath wrought the shaft of dawn's deray.\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
+  },
+  {
+   "id": "nedim/5",
+   "title": "Love-Distraught, My Heart and Soul",
+   "authorSlug": "nedim",
+   "author": "Nedim",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "The Mind"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "Love-distraught, my heart and soul are gone for naught to beauties fair;\nAll my patience and endurance spent on torn and shredded spare.\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
+  },
+  {
+   "id": "nedim/6",
+   "title": "Her Legs and Hips, Her Chin and Lips",
+   "authorSlug": "nedim",
+   "author": "Nedim",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Love"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "Her legs and hips, her chin and lips, are e'en to mine own heart;\nIn brief she's all, from head to foot, I ween, to mine own heart.\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
+  },
+  {
+   "id": "nedim/7",
+   "title": "The Realm of Sufferance Thou'st Laid Waste",
+   "authorSlug": "nedim",
+   "author": "Nedim",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "History & Politics"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "The realm of sufferance thou'st laid waste; Hulagu Khan art hight, Paynim,\nHave ruth! thou'st set the world aflame; art thou a burning light, Paynim?\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
   },
   {
    "id": "young/0",
