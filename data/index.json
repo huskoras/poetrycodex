@@ -1,5 +1,5 @@
 {
- "count": 12296,
+ "count": 12303,
  "workCount": 45,
  "poets": [
   {
@@ -317,6 +317,22 @@
    ],
    "order": 160,
    "poemCount": 2,
+   "workCount": 0
+  },
+  {
+   "slug": "fuzuli",
+   "name": "Fuzuli",
+   "dates": "c. 1483–1556",
+   "era": "Ottoman Classical",
+   "category": "Turkish & Ottoman",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Fuzuli (Mehmed bin Süleyman, c. 1483–1556) was one of the greatest poets of the sixteenth-century Turkish world. He wrote in Azerbaijani Turkish, Ottoman Turkish, Persian and Arabic, and is remembered above all for his romance Leyla and Mejnun, the tale of the lover driven mad by his love for Leyla.",
+    "E. J. W. Gibb, whose Ottoman Poems (1882) gives the first English translations of his ghazels, noted that Fuzuli's Leyla and Mejnun contains many touching passages of great beauty. The poems below are from that volume."
+   ],
+   "order": 165,
+   "poemCount": 7,
    "workCount": 0
   },
   {
@@ -2484,7 +2500,7 @@
   },
   {
    "name": "Love",
-   "count": 2472
+   "count": 2477
   },
   {
    "name": "Living",
@@ -2492,11 +2508,11 @@
   },
   {
    "name": "Religion",
-   "count": 1720
+   "count": 1721
   },
   {
    "name": "Death & Dying",
-   "count": 807
+   "count": 808
   },
   {
    "name": "History & Politics",
@@ -8298,6 +8314,103 @@
    ],
    "collection": null,
    "excerpt": "    O mortal folk, you may behold and see\n      How I lie here, sometime a mighty knight;\n    The end of joy and all prosperitee …"
+  },
+  {
+   "id": "fuzuli/0",
+   "title": "Breeze, Thou'rt Kind",
+   "authorSlug": "fuzuli",
+   "author": "Fuzuli",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Ottoman Poems (1882)",
+   "excerpt": "Breeze, thou'rt kind, of balm to those whom pangs affright, thou news hast brought,\nTo wounded frame of life, to life of life's delight thou news hast brought.\n …",
+   "translator": "trans. E. J. W. Gibb (1882)"
+  },
+  {
+   "id": "fuzuli/1",
+   "title": "Thou Perfect Being",
+   "authorSlug": "fuzuli",
+   "author": "Fuzuli",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": "Ottoman Poems (1882)",
+   "excerpt": "Thou Perfect Being, Source whence wisdom's mysteries arise;\nThings, the issue of Thine essence, show wherein Thy nature lies.\n …",
+   "translator": "trans. E. J. W. Gibb (1882)"
+  },
+  {
+   "id": "fuzuli/2",
+   "title": "Strange If Beauties' Hearts Turn Blood",
+   "authorSlug": "fuzuli",
+   "author": "Fuzuli",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Ottoman Poems (1882)",
+   "excerpt": "Strange if beauties' hearts turn blood through envy of thy cheek most fair?\nFor that which stone to ruby turns is but the radiant sunlight's glare.\n …",
+   "translator": "trans. E. J. W. Gibb (1882)"
+  },
+  {
+   "id": "fuzuli/3",
+   "title": "A Stately Cypress Yesterday",
+   "authorSlug": "fuzuli",
+   "author": "Fuzuli",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Ottoman Poems (1882)",
+   "excerpt": "Stately Cypress yesterday her shade threw o'er my head;\nHer form was heart-ensnaring, heart-delighting her light tread;\nWhen speaking, sudden opened she her smiling rubies red, …",
+   "translator": "trans. E. J. W. Gibb (1882)"
+  },
+  {
+   "id": "fuzuli/4",
+   "title": "Yield Not the Soul to Pang of Love",
+   "authorSlug": "fuzuli",
+   "author": "Fuzuli",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "The Mind"
+   ],
+   "collection": "Ottoman Poems (1882)",
+   "excerpt": "Yield not the soul to pang of Love, for Love's the soul's fierce glow;\nThat Love's the torment of the soul doth all the wide world know.\n …",
+   "translator": "trans. E. J. W. Gibb (1882)"
+  },
+  {
+   "id": "fuzuli/5",
+   "title": "Zeyd's Vision",
+   "authorSlug": "fuzuli",
+   "author": "Fuzuli",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "Ottoman Poems (1882)",
+   "excerpt": "'Tis grief and mourning Zeyd renewed always;\nFrom his wailing ceased he not, he wept aye.\n …",
+   "translator": "trans. E. J. W. Gibb (1882)"
+  },
+  {
+   "id": "fuzuli/6",
+   "title": "Mejnun Addresses Nevfil",
+   "authorSlug": "fuzuli",
+   "author": "Fuzuli",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Ottoman Poems (1882)",
+   "excerpt": "Quoth Mejnun: 'O sole friend of true plight!\nWith counsel many have tried me to guide right:\nMany with wisdom gifted have advice shown, …",
+   "translator": "trans. E. J. W. Gibb (1882)"
   },
   {
    "id": "wyatt/0",
