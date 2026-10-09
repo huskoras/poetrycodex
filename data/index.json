@@ -1,5 +1,5 @@
 {
- "count": 11549,
+ "count": 11584,
  "workCount": 45,
  "poets": [
   {
@@ -2077,6 +2077,22 @@
    "workCount": 0
   },
   {
+   "slug": "gurney",
+   "name": "Ivor Gurney",
+   "dates": "1890–1937",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": null,
+   "credit": "",
+   "bio": [
+    "Ivor Gurney (1890–1937) was an English poet and composer, born in Gloucester and a chorister at Gloucester Cathedral, who studied music at the Royal College of Music under Stanford. His work is bound up with the Severn valley and the Gloucestershire countryside.",
+    "He served as a private with the 2/5th Gloucesters on the Western Front, was wounded and gassed, and published two books of poems in his lifetime, Severn and Somme (1917) and War’s Embers (1919). He suffered a long mental illness and spent his last fifteen years in an asylum, where he went on writing."
+   ],
+   "order": 1443,
+   "poemCount": 35,
+   "workCount": 0
+  },
+  {
    "slug": "owen",
    "name": "Wilfred Owen",
    "dates": "1893–1918",
@@ -2096,11 +2112,11 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2421
+   "count": 2429
   },
   {
    "name": "Living",
-   "count": 2421
+   "count": 2426
   },
   {
    "name": "Love",
@@ -2108,27 +2124,27 @@
   },
   {
    "name": "Religion",
-   "count": 1653
+   "count": 1655
   },
   {
    "name": "Death & Dying",
-   "count": 742
+   "count": 747
   },
   {
    "name": "History & Politics",
-   "count": 622
+   "count": 625
   },
   {
    "name": "Relationships",
-   "count": 403
+   "count": 409
   },
   {
    "name": "Arts & Sciences",
-   "count": 331
+   "count": 333
   },
   {
    "name": "Time & Brevity",
-   "count": 255
+   "count": 259
   },
   {
    "name": "The Mind",
@@ -143623,6 +143639,461 @@
    ],
    "collection": "Poems (1922)",
    "excerpt": "My days are but the tombs of buried hours;\nWhich tombs are hidden in the pilèd years;\nBut from the mounds there spring up many flowers, …"
+  },
+  {
+   "id": "gurney/0",
+   "title": "The Volunteer",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "I would test God’s purposes:\n  I will go up and see\nWhat fate He’ll give, what destiny …"
+  },
+  {
+   "id": "gurney/1",
+   "title": "The Farm",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Nature"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "A creeper-covered house, an orchard near;\nA farmyard with tall ricks upstanding clear\nIn golden sunlight of a late September.---- …"
+  },
+  {
+   "id": "gurney/2",
+   "title": "Omens",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Relationships"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "Black rooks about the trees\n  Are circling slow;\nTall elms that can no ease …"
+  },
+  {
+   "id": "gurney/3",
+   "title": "Turmut-Hoeing",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "I straightened my back from turmut-hoeing\n  And saw, with suddenly opened eyes,\nTall trees, a meadow ripe for mowing, …"
+  },
+  {
+   "id": "gurney/4",
+   "title": "In a Ward",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "O wind that tosses free\n  The children’s hair;\nScatters the blossom of …"
+  },
+  {
+   "id": "gurney/5",
+   "title": "Camps",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "Out of the line we rest in villages\n  Quiet indeed, where heal the spirit’s scars;\nBut even so, lapped deep in sunshine and ease, …"
+  },
+  {
+   "id": "gurney/6",
+   "title": "Solace of Men",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Arts & Sciences"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "Sweet smelling, sweet to handle, fair of hue\n  Tobacco is. The soldier everywhere\n  Takes it as friend, its friendliness to share, …"
+  },
+  {
+   "id": "gurney/7",
+   "title": "At Reserve Depot",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "When Spring comes here with early innocency\n  Of pale high blue, they’ll put Revally back.\nThe passers-by carelessly amused will see …"
+  },
+  {
+   "id": "gurney/8",
+   "title": "Toasts and Memories",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "When once I sat in estaminets\n  With trusty friends of mine,\nWe drank to folk in England …"
+  },
+  {
+   "id": "gurney/9",
+   "title": "From the Window",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "Tall poplars in the sun\nAre quivering, and planes,\nForgetting the day gone, …"
+  },
+  {
+   "id": "gurney/10",
+   "title": "Ypres—Minsterworth",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Nature"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "Thick lie in Gloucester orchards now\n  Apples the Severn wind\nWith rough play tore from the tossing …"
+  },
+  {
+   "id": "gurney/11",
+   "title": "Toussaints",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "Like softly clanging cymbals were\nPlane-trees, poplars Autumn had\nArrayed in gloriously sad …"
+  },
+  {
+   "id": "gurney/12",
+   "title": "The Stone-Breaker",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "The early dew was still untrodden,\n  Flawless it lay on flower and blade,\nThe last caress of night’s cold fragrance …"
+  },
+  {
+   "id": "gurney/13",
+   "title": "Drifting Leaves",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "The yellow willow leaves that float\n  Down Severn after Autumn rains\nTake not of trouble any note-- …"
+  },
+  {
+   "id": "gurney/14",
+   "title": "Contrasts",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "If I were on the High Road\n  That runs to Malvern Town,\nI should not need to read, to smoke, …"
+  },
+  {
+   "id": "gurney/15",
+   "title": "The Immortal Hour",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "I have forgotten where the pleasure lay\n  In resting idle in the summer weather,\nWaiting on Beauty’s power my spirit to sway, …"
+  },
+  {
+   "id": "gurney/16",
+   "title": "To His Love",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "He’s gone, and all our plans\n  Are useless indeed.\nWe’ll walk no more on Cotswold …"
+  },
+  {
+   "id": "gurney/17",
+   "title": "Migrants",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "No colour yet appears\nOn trees still summer fine,\nThe hill has brown sheaves yet, …"
+  },
+  {
+   "id": "gurney/18",
+   "title": "Old Martinmas Eve",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "The moon, one tree, one star,\nStill meadows far,\nEnwreathed and scarfed by phantom lines of white. …"
+  },
+  {
+   "id": "gurney/19",
+   "title": "After Music",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "Why, I am on fire now, and tremulous\n  With sense of Beauty long denied; the first\n  Opening of floodgate to the glorious burst …"
+  },
+  {
+   "id": "gurney/20",
+   "title": "The Target",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "I shot him, and it had to be\nOne of us! ’Twas him or me.\n“Couldn’t be helped,” and none can blame …"
+  },
+  {
+   "id": "gurney/21",
+   "title": "Twigworth Vicarage",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "Wakened by birds and sun, laughter of the wind,\n  A man might see all heart’s desire by raising\n  His pillowed sleepy head (still apt for lazing …"
+  },
+  {
+   "id": "gurney/22",
+   "title": "Hidden Tales",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "The proud and sturdy horses\nGather their willing forces,\nUnswerving make their courses …"
+  },
+  {
+   "id": "gurney/23",
+   "title": "Recompense",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "I’d not have missed one single scrap of pain\nThat brought me to such friends, and them to me;\nAnd precious is the smallest agony, …"
+  },
+  {
+   "id": "gurney/24",
+   "title": "The Plain",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "The plain’s a waste of evil mire,\n  And dead of colour, sodden-grey,\nThe trees are ruined, crumbled the spire …"
+  },
+  {
+   "id": "gurney/25",
+   "title": "“On Rest”",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "It’s a King’s life, a life fit for a King!\nTo lie safe sheltered in some old hay-loft\nNight long, on golden straw, and warm and soft, …"
+  },
+  {
+   "id": "gurney/26",
+   "title": "Dicky",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "They found him when the day\nWas yet but gloom;\nSix feet of scarréd clay …"
+  },
+  {
+   "id": "gurney/27",
+   "title": "From Omiecourt",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Nature"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "O small dear things for which we fight--\n  Red roofs, ricks crowned with early gold,\n  Orchards that hedges thick enfold-- …"
+  },
+  {
+   "id": "gurney/28",
+   "title": "The Lock-Keeper",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Nature"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "A tall lean man he was, proud of his gun,\nOf his garden, and small fruit trees every one\nKnowing all weather signs, the flight of birds, …"
+  },
+  {
+   "id": "gurney/29",
+   "title": "The Revellers",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "I saw a silver-bright shield hang\nEntangled in the topmost boughs\nOf an old elm-tree, and a house …"
+  },
+  {
+   "id": "gurney/30",
+   "title": "“Annie Laurie”",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "The high barn’s lit by many a guttering flare\n  Of flickering candle, dangerous--(hence forbidden)--\n  To warm soft straw, whereby the cold floor’s hidden, …"
+  },
+  {
+   "id": "gurney/31",
+   "title": "The Battalion Is Now on Rest",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "Walking the village street, to watch the stars and find\nSome peace like the old peace, some soothe for soul and mind;\nThe noise of laughter strikes me as I move on my way …"
+  },
+  {
+   "id": "gurney/32",
+   "title": "Photographs",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "Lying in dug-outs, joking idly, wearily;\n  Watching the candle guttering in the draught;\nHearing the great shells go high over us, eerily …"
+  },
+  {
+   "id": "gurney/33",
+   "title": "Interval",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "To straight the back, how good; to see the slow\n  Dispersed cloud-flocks of Heaven wandering blind\n  Without a shepherd, feel caress the kind …"
+  },
+  {
+   "id": "gurney/34",
+   "title": "De Profundis",
+   "authorSlug": "gurney",
+   "author": "Ivor Gurney",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "History & Politics"
+   ],
+   "collection": "War's Embers, and Other Verses (1919)",
+   "excerpt": "If only this fear would leave me I could dream of Crickley Hill\n  And a hundred thousand thoughts of home would visit my heart in sleep;\nBut here the peace is shattered all day by the devil’s will, …"
   },
   {
    "id": "owen/0",
