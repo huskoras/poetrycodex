@@ -1,5 +1,5 @@
 {
- "count": 11382,
+ "count": 11394,
  "workCount": 45,
  "poets": [
   {
@@ -1357,6 +1357,22 @@
    "workCount": 0
   },
   {
+   "slug": "beddoes",
+   "name": "Thomas Lovell Beddoes",
+   "dates": "1803–1849",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": "poets/beddoes.jpg",
+   "credit": "Portrait of Thomas Lovell Beddoes by Nathan Cooper Branwhite (1824) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Thomas Lovell Beddoes (1803–1849) was an English poet, dramatist and physician, educated at Charterhouse and Oxford. He spent most of his adult life on the Continent, studying medicine in Germany and Switzerland.",
+    "His great work, the blank-verse tragedy Death’s Jest-Book, was begun in the 1820s and published only after his death in 1850. It is full of grave-haunted lyrics, such as “Dream-Pedlary” and “Old Adam, the Carrion Crow,” for which he is now chiefly read. He died in Basel in 1849."
+   ],
+   "order": 967,
+   "poemCount": 12,
+   "workCount": 0
+  },
+  {
    "slug": "johnson",
    "name": "Lionel Johnson",
    "dates": "1867–1902",
@@ -2004,11 +2020,11 @@
   },
   {
    "name": "Nature",
-   "count": 2389
+   "count": 2390
   },
   {
    "name": "Love",
-   "count": 2321
+   "count": 2324
   },
   {
    "name": "Religion",
@@ -2016,7 +2032,7 @@
   },
   {
    "name": "Death & Dying",
-   "count": 706
+   "count": 713
   },
   {
    "name": "History & Politics",
@@ -2036,7 +2052,7 @@
   },
   {
    "name": "The Mind",
-   "count": 226
+   "count": 227
   },
   {
    "name": "Social Commentaries",
@@ -66706,6 +66722,162 @@
    ],
    "collection": "The Poetical Works of Thomas Hood",
    "excerpt": "Ben Battle was a soldier bold,\n  And used to war's alarms;\nBut a cannon-ball took off his legs, …"
+  },
+  {
+   "id": "beddoes/0",
+   "title": "Dream-Pedlary",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Death & Dying"
+   ],
+   "collection": "Poems, Posthumous and Collected (1851)",
+   "excerpt": "If there were dreams to sell,\n  What would you buy?\nSome cost a passing bell; …"
+  },
+  {
+   "id": "beddoes/1",
+   "title": "Old Adam, the Carrion Crow",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Mythology & Folklore"
+   ],
+   "collection": "Death's Jest-Book (1850)",
+   "excerpt": "Old Adam, the carrion crow,\n  The old crow of Cairo;\nHe sat in the shower, and let it flow …"
+  },
+  {
+   "id": "beddoes/2",
+   "title": "Song from the Ship",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Death's Jest-Book (1850)",
+   "excerpt": "To sea, to sea! The calm is o'er;\n  The wanton water leaps in sport,\nAnd rattles down the pebbly shore; …"
+  },
+  {
+   "id": "beddoes/3",
+   "title": "The Phantom-Wooer",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "Poems, Posthumous and Collected (1851)",
+   "excerpt": "A ghost, that loved a lady fair,\nEver in the starry air\nOf midnight at her pillow stood; …"
+  },
+  {
+   "id": "beddoes/4",
+   "title": "A Dirge",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Time & Brevity"
+   ],
+   "collection": "Poems, Posthumous and Collected (1851)",
+   "excerpt": "To-day is a thought, a fear is to-morrow,\nAnd yesterday is our sin and our sorrow;\nAnd life is a death, …"
+  },
+  {
+   "id": "beddoes/5",
+   "title": "Bridal Serenade",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Death & Dying"
+   ],
+   "collection": "Poems, Posthumous and Collected (1851)",
+   "excerpt": "Maiden, thou sittest alone above,\nCrowned with flowers, and like a sprite\nStarrily clothed in a garment white: …"
+  },
+  {
+   "id": "beddoes/6",
+   "title": "Dirge: To her couch of evening rest",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "Poems, Posthumous and Collected (1851)",
+   "excerpt": "To her couch of evening rest\n'Neath the sun's divinest west,\nBear we, in the silent car, …"
+  },
+  {
+   "id": "beddoes/7",
+   "title": "Dirge and Hymeneal",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "Poems, Posthumous and Collected (1851)",
+   "excerpt": "Dirge.\n\nWoe! woe! this is death's hour …"
+  },
+  {
+   "id": "beddoes/8",
+   "title": "Dial-Thoughts",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Death & Dying"
+   ],
+   "collection": "Poems, Posthumous and Collected (1851)",
+   "excerpt": "I.\n\nI think of thee at day-break still, …"
+  },
+  {
+   "id": "beddoes/9",
+   "title": "The Runaway",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Social Commentaries"
+   ],
+   "collection": "Poems, Posthumous and Collected (1851)",
+   "excerpt": "Has no one seen my heart of you?\nMy heart has run away;\nAnd, if you catch him, ladies, do …"
+  },
+  {
+   "id": "beddoes/10",
+   "title": "The Ghosts' Moonshine",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Mythology & Folklore"
+   ],
+   "collection": "Poems, Posthumous and Collected (1851)",
+   "excerpt": "I.\n\nIt is midnight, my wedded; …"
+  },
+  {
+   "id": "beddoes/11",
+   "title": "A Lament",
+   "authorSlug": "beddoes",
+   "author": "Thomas Lovell Beddoes",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "Poems, Posthumous and Collected (1851)",
+   "excerpt": "In the twilight, silent smiled\nAll alone the daisy's eyelid,\nFringed with pink-tipped petals piled. …"
   },
   {
    "id": "johnson/0",
