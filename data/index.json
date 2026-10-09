@@ -1,5 +1,5 @@
 {
- "count": 11357,
+ "count": 11382,
  "workCount": 45,
  "poets": [
   {
@@ -1245,6 +1245,22 @@
    "workCount": 0
   },
   {
+   "slug": "hunt",
+   "name": "Leigh Hunt",
+   "dates": "1784–1859",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": "poets/hunt.jpg",
+   "credit": "Portrait of Leigh Hunt by Benjamin Robert Haydon · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Leigh Hunt (1784–1859) was an English poet, essayist and editor, best remembered today as the friend and champion of Keats and Shelley. As editor of The Examiner he was imprisoned from 1813 to 1815 for libelling the Prince Regent, and he received visitors in his cell.",
+    "His own poems range from the narrative Story of Rimini (1816) to light verse, sonnets and short lyrics. “Abou Ben Adhem” and “Jenny Kiss’d Me” are the two that most readers know."
+   ],
+   "order": 933,
+   "poemCount": 25,
+   "workCount": 0
+  },
+  {
    "slug": "byron",
    "name": "Lord Byron",
    "dates": "1788–1824",
@@ -1984,35 +2000,35 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2413
+   "count": 2416
   },
   {
    "name": "Nature",
-   "count": 2383
+   "count": 2389
   },
   {
    "name": "Love",
-   "count": 2319
+   "count": 2321
   },
   {
    "name": "Religion",
-   "count": 1645
+   "count": 1646
   },
   {
    "name": "Death & Dying",
-   "count": 705
+   "count": 706
   },
   {
    "name": "History & Politics",
-   "count": 603
+   "count": 605
   },
   {
    "name": "Relationships",
-   "count": 391
+   "count": 395
   },
   {
    "name": "Arts & Sciences",
-   "count": 324
+   "count": 327
   },
   {
    "name": "Time & Brevity",
@@ -2020,15 +2036,15 @@
   },
   {
    "name": "The Mind",
-   "count": 225
+   "count": 226
   },
   {
    "name": "Social Commentaries",
-   "count": 88
+   "count": 89
   },
   {
    "name": "Mythology & Folklore",
-   "count": 18
+   "count": 19
   }
  ],
  "works": [
@@ -64949,6 +64965,329 @@
    ],
    "collection": "Dramatic Romances (1845)",
    "excerpt": "Quoth a young Sadducee:\n      \"Reader of many rolls,\n    Is it so certain we …"
+  },
+  {
+   "id": "hunt/0",
+   "title": "Abou Ben Adhem",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Relationships"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "Abou Ben Adhem (may his tribe increase)\nAwoke one night from a deep dream of peace,\nAnd saw, within the moonlight in his room, …"
+  },
+  {
+   "id": "hunt/1",
+   "title": "The Glove and the Lions",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "History & Politics"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "King Francis was a hearty king, and lov'd a royal sport,\nAnd one day, as his lions fought, sat looking on the court;\nThe nobles fill'd the benches, and the ladies in their pride, …"
+  },
+  {
+   "id": "hunt/2",
+   "title": "Jenny Kiss'd Me",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "Jenny kiss'd me when we met,\n Jumping from the chair she sat in;\nTime, you thief, who love to get …"
+  },
+  {
+   "id": "hunt/3",
+   "title": "To the Grasshopper and the Cricket",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Arts & Sciences"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "Green little vaulter in the sunny grass,\nCatching your heart up at the feel of June,\nSole voice that 's heard amidst the lazy noon, …"
+  },
+  {
+   "id": "hunt/4",
+   "title": "The Fish, the Man, and the Spirit",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "You strange, astonish'd-looking, angle-faced,\nDreary-mouth'd, gaping wretches of the sea,\nGulping salt-water everlastingly, …"
+  },
+  {
+   "id": "hunt/5",
+   "title": "To Kosciusko",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "'Tis like thy patient valour thus to keep,\nGreat Kosciusko, to the rural shade,\nWhile Freedom's ill-found amulet still is made …"
+  },
+  {
+   "id": "hunt/6",
+   "title": "On a Lock of Milton's Hair",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Time & Brevity"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "It lies before me there, and my own breath\nStirs its thin outer threads, as though beside\nThe living head I stood in honour'd pride, …"
+  },
+  {
+   "id": "hunt/7",
+   "title": "Quiet Evenings",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Relationships"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "Dear Barnes, whose native taste, solid and clear,\nThe throng of life has strengthen'd without harm,\nYou know the rural feeling, and the charm …"
+  },
+  {
+   "id": "hunt/8",
+   "title": "The Nile",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "The Examiner (1818)",
+   "excerpt": "It flows through old hush'd Egypt and its sands,\nLike some grave mighty thought threading a dream;\nAnd times and things, as in that vision, seem …"
+  },
+  {
+   "id": "hunt/9",
+   "title": "Mahmoud",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Relationships"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "Horne, hear a theme that should have had its dues\nFrom thine own passionate and thoughtful Muse.\n …"
+  },
+  {
+   "id": "hunt/10",
+   "title": "Sudden Fine Weather",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Arts & Sciences"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "Reader! what soul that loves a verse, can see\nThe spring return, nor glow like you and me?\nHear the quick birds, and see the landscape fill, …"
+  },
+  {
+   "id": "hunt/11",
+   "title": "Thoughts of the Avon, on the 28th of September, 1817",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Relationships"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "It is the loveliest day that we have had\nThis lovely month, sparkling and full of cheer;\nThe sun has a sharp eye, yet kind and glad; …"
+  },
+  {
+   "id": "hunt/12",
+   "title": "To T. L. H., Six Years Old, During a Sickness",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Living"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "Sleep breathes at last from out thee,\n My little, patient boy;\nAnd balmy rest about thee …"
+  },
+  {
+   "id": "hunt/13",
+   "title": "To J. H., Four Years Old",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Living"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "Ah little ranting Johnny,\nFor ever blithe and bonny,\nAnd singing nonny, nonny, …"
+  },
+  {
+   "id": "hunt/14",
+   "title": "A Thought or Two on Reading Pomfret's \"Choice\"",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Arts & Sciences"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "I have been reading Pomfret's \"Choice\" this spring,\nA pretty kind of—sort of—kind of thing,\nNot much a verse, and poem none at all, …"
+  },
+  {
+   "id": "hunt/15",
+   "title": "Christmas",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "Christmas comes! He comes, he comes,\nUsher'd with a rain of plums;\nHollies in the windows greet him; …"
+  },
+  {
+   "id": "hunt/16",
+   "title": "The Lover of Music to His Piano-Forte",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Love"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "Oh friend, whom glad or grave we seek,\n Heav'n-holding shrine!\nI ope thee, touch thee, hear thee speak, …"
+  },
+  {
+   "id": "hunt/17",
+   "title": "A Hymn to Bishop St. Valentine",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Religion"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "The day, the only day returns,\nThe true redde letter day returns,\nWhen summer time in winter burns; …"
+  },
+  {
+   "id": "hunt/18",
+   "title": "Power and Gentleness",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Nature"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "I've thought, at gentle and ungentle hour,\nOf many an act and giant shape of power;\nOf the old kings with high exacting looks, …"
+  },
+  {
+   "id": "hunt/19",
+   "title": "Paganini",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "So play'd of late to every passing thought\nWith finest change (might I but half as well\nSo write!) the pale magician of the bow, …"
+  },
+  {
+   "id": "hunt/20",
+   "title": "Our Cottage",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "Some few of us, children and grown, possess\nA cottage, far remov'd. 'Tis in a glade,\nWhere the sun harbours; and one side of it …"
+  },
+  {
+   "id": "hunt/21",
+   "title": "Reflections of a Dead Body",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "The Mind"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "What change is this! What joy! What depth of rest!\nWhat suddenness of withdrawal from all pain\nInto all bliss? into a balm so perfect …"
+  },
+  {
+   "id": "hunt/22",
+   "title": "An Angel in the House",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Religion"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "How sweet it were, if without feeble fright,\nOr dying of the dreadful beauteous sight,\nAn angel came to us, and we could bear …"
+  },
+  {
+   "id": "hunt/23",
+   "title": "The Curate and His Bishop",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Relationships"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "On business call'd from his abode,\nA Curate jogg'd along the road.\nIn patient leanness jogg'd his mare; …"
+  },
+  {
+   "id": "hunt/24",
+   "title": "The Panther",
+   "authorSlug": "hunt",
+   "author": "Leigh Hunt",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Love"
+   ],
+   "collection": "The Poetical Works of Leigh Hunt (1844)",
+   "excerpt": "The panther leap'd to the front of his lair,\nAnd stood with a foot up, and snuff'd the air;\nHe quiver'd his tongue from his panting mouth, …"
   },
   {
    "id": "byron/0",
