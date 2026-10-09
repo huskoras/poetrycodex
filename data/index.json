@@ -1,5 +1,5 @@
 {
- "count": 11584,
+ "count": 11659,
  "workCount": 45,
  "poets": [
   {
@@ -2013,6 +2013,22 @@
    "workCount": 0
   },
   {
+   "slug": "yeats",
+   "name": "W. B. Yeats",
+   "dates": "1865–1939",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/yeats.jpg",
+   "credit": "Portrait of W. B. Yeats by George Charles Beresford (1911) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "William Butler Yeats (1865–1939) was an Irish poet and dramatist, born in Dublin, who led the Irish literary revival and co-founded the Abbey Theatre. He received the Nobel Prize in Literature in 1923 and served as a senator of the Irish Free State.",
+    "His poetry moved from the Celtic Twilight lyrics of The Rose and The Wind Among the Reeds, through the harder manner of Responsibilities and The Wild Swans at Coole, to the visionary poems of Michael Robartes and the Dancer and The Tower. The poems here are drawn from his books published up to 1928."
+   ],
+   "order": 1400,
+   "poemCount": 75,
+   "workCount": 0
+  },
+  {
    "slug": "mew",
    "name": "Charlotte Mew",
    "dates": "1869–1928",
@@ -2112,51 +2128,51 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2429
+   "count": 2432
   },
   {
    "name": "Living",
-   "count": 2426
+   "count": 2428
   },
   {
    "name": "Love",
-   "count": 2340
+   "count": 2357
   },
   {
    "name": "Religion",
-   "count": 1655
+   "count": 1658
   },
   {
    "name": "Death & Dying",
-   "count": 747
+   "count": 750
   },
   {
    "name": "History & Politics",
-   "count": 625
+   "count": 639
   },
   {
    "name": "Relationships",
-   "count": 409
+   "count": 411
   },
   {
    "name": "Arts & Sciences",
-   "count": 333
+   "count": 339
   },
   {
    "name": "Time & Brevity",
-   "count": 259
+   "count": 269
   },
   {
    "name": "The Mind",
-   "count": 238
+   "count": 241
   },
   {
    "name": "Social Commentaries",
-   "count": 101
+   "count": 102
   },
   {
    "name": "Mythology & Folklore",
-   "count": 22
+   "count": 33
   }
  ],
  "works": [
@@ -141938,6 +141954,978 @@
    ],
    "collection": null,
    "excerpt": "The Centennial Meditation of Columbia.  1776-1876.  A Cantata.\n     <Musical Annotations, in angled brackets, precede each section.>\n     <Full chorus:  sober, measured and yet majestic progressions of chords.> …"
+  },
+  {
+   "id": "yeats/0",
+   "title": "To the Rose upon the Rood of Time",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Arts & Sciences"
+   ],
+   "collection": "The Rose (1893)",
+   "excerpt": "Red Rose, proud Rose, sad Rose of all my days!\nCome near me, while I sing the ancient ways:\nCuchulain battling with the bitter tide; …"
+  },
+  {
+   "id": "yeats/1",
+   "title": "The Lake Isle of Innisfree",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "The Rose (1893)",
+   "excerpt": "I will arise and go now, and go to Innisfree,\nAnd a small cabin build there, of clay and wattles made:\nNine bean rows will I have there, a hive for the honey bee, …"
+  },
+  {
+   "id": "yeats/2",
+   "title": "The Sorrow of Love",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "History & Politics"
+   ],
+   "collection": "The Rose (1893)",
+   "excerpt": "The quarrel of the sparrows in the eaves,\nThe full round moon and the star-laden sky,\nAnd the loud song of the ever-singing leaves, …"
+  },
+  {
+   "id": "yeats/3",
+   "title": "When You Are Old",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "The Rose (1893)",
+   "excerpt": "When you are old and gray and full of sleep,\nAnd nodding by the fire, take down this book,\nAnd slowly read, and dream of the soft look …"
+  },
+  {
+   "id": "yeats/4",
+   "title": "Who Goes with Fergus?",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Love"
+   ],
+   "collection": "The Rose (1893)",
+   "excerpt": "Who will go drive with Fergus now,\nAnd pierce the deep wood's woven shade,\nAnd dance upon the level shore? …"
+  },
+  {
+   "id": "yeats/5",
+   "title": "The Man Who Dreamed of Faeryland",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Death & Dying"
+   ],
+   "collection": "The Rose (1893)",
+   "excerpt": "He stood among a crowd at Drumahair;\nHis heart hung all upon a silken dress,\nAnd he had known at last some tenderness, …"
+  },
+  {
+   "id": "yeats/6",
+   "title": "The Ballad of Father Gilligan",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Mythology & Folklore"
+   ],
+   "collection": "The Rose (1893)",
+   "excerpt": "The old priest Peter Gilligan\nWas weary night and day;\nFor half his flock were in their beds, …"
+  },
+  {
+   "id": "yeats/7",
+   "title": "The Stolen Child",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": "The Wanderings of Oisin and Other Poems (1889)",
+   "excerpt": "Where dips the rocky highland\nOf Sleuth Wood in the lake,\nThere lies a leafy island …"
+  },
+  {
+   "id": "yeats/8",
+   "title": "Down by the Salley Gardens",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "The Wanderings of Oisin and Other Poems (1889)",
+   "excerpt": "Down by the salley gardens my love and I did meet;\nShe passed the salley gardens with little snow-white feet.\nShe bid me take love easy, as the leaves grow on the tree; …"
+  },
+  {
+   "id": "yeats/9",
+   "title": "The Hosting of the Sidhe",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Love"
+   ],
+   "collection": "The Wind Among the Reeds (1899)",
+   "excerpt": "The host is riding from Knocknarea\nAnd over the grave of Clooth-na-bare;\nCaolte tossing his burning hair …"
+  },
+  {
+   "id": "yeats/10",
+   "title": "The Song of Wandering Aengus",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Love"
+   ],
+   "collection": "The Wind Among the Reeds (1899)",
+   "excerpt": "I went out to the hazel wood,\nBecause a fire was in my head,\nAnd cut and peeled a hazel wand, …"
+  },
+  {
+   "id": "yeats/11",
+   "title": "Aedh Wishes for the Cloths of Heaven",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Wind Among the Reeds (1899)",
+   "excerpt": "Had I the heavens' embroidered cloths,\nEnwrought with golden and silver light,\nThe blue and the dim and the dark cloths …"
+  },
+  {
+   "id": "yeats/12",
+   "title": "The Fiddler of Dooney",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Arts & Sciences"
+   ],
+   "collection": "The Wind Among the Reeds (1899)",
+   "excerpt": "When I play on my fiddle in Dooney,\nFolk dance like a wave of the sea;\nMy cousin is priest in Kilvarnet, …"
+  },
+  {
+   "id": "yeats/13",
+   "title": "The Cap and Bells",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Arts & Sciences"
+   ],
+   "collection": "The Wind Among the Reeds (1899)",
+   "excerpt": "The jester walked in the garden:\nThe garden had fallen still;\nHe bade his soul rise upward …"
+  },
+  {
+   "id": "yeats/14",
+   "title": "Into the Twilight",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": "The Wind Among the Reeds (1899)",
+   "excerpt": "Out-worn heart, in a time out-worn,\nCome clear of the nets of wrong and right;\nLaugh heart again in the gray twilight, …"
+  },
+  {
+   "id": "yeats/15",
+   "title": "The Secret Rose",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Religion"
+   ],
+   "collection": "The Wind Among the Reeds (1899)",
+   "excerpt": "Far off, most secret, and inviolate Rose,\nEnfold me in my hour of hours; where those\nWho sought thee in the Holy Sepulchre, …"
+  },
+  {
+   "id": "yeats/16",
+   "title": "The Host of the Air",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Love"
+   ],
+   "collection": "The Wind Among the Reeds (1899)",
+   "excerpt": "O'Driscoll drove with a song,\nThe wild duck and the drake,\nFrom the tall and the tufted reeds …"
+  },
+  {
+   "id": "yeats/17",
+   "title": "Hanrahan Reproves the Curlew",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "The Wind Among the Reeds (1899)",
+   "excerpt": "O, curlew, cry no more in the air,\nOr only to the waters in the West;\nBecause your crying brings to my mind …"
+  },
+  {
+   "id": "yeats/18",
+   "title": "Aedh Tells of the Rose in His Heart",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "The Mind"
+   ],
+   "collection": "The Wind Among the Reeds (1899)",
+   "excerpt": "All things uncomely and broken, all things worn out and old,\nThe cry of a child by the roadway, the creak of a lumbering cart,\nThe heavy steps of the ploughman, splashing the wintry mould, …"
+  },
+  {
+   "id": "yeats/19",
+   "title": "Adam's Curse",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Love"
+   ],
+   "collection": "In the Seven Woods (1903)",
+   "excerpt": "We sat together at one summer's end\nThat beautiful mild woman your close friend\nAnd you and I, and talked of poetry. …"
+  },
+  {
+   "id": "yeats/20",
+   "title": "The Folly of Being Comforted",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "In the Seven Woods (1903)",
+   "excerpt": "One that is ever kind said yesterday:\n'Your well beloved's hair has threads of grey\nAnd little shadows come about her eyes; …"
+  },
+  {
+   "id": "yeats/21",
+   "title": "The Arrow",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "In the Seven Woods (1903)",
+   "excerpt": "I thought of your beauty and this arrow\nMade out of a wild thought is in my marrow.\nThere's no man may look upon her, no man, …"
+  },
+  {
+   "id": "yeats/22",
+   "title": "In the Seven Woods",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "In the Seven Woods (1903)",
+   "excerpt": "I have heard the pigeons of the Seven Woods\nMake their faint thunder, and the garden bees\nHum in the lime tree flowers; and put away …"
+  },
+  {
+   "id": "yeats/23",
+   "title": "No Second Troy",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "History & Politics"
+   ],
+   "collection": "The Green Helmet and Other Poems (1912)",
+   "excerpt": "Why should I blame her that she filled my days\nWith misery, or that she would of late\nHave taught to ignorant men most violent ways, …"
+  },
+  {
+   "id": "yeats/24",
+   "title": "Reconciliation",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "The Green Helmet and Other Poems (1912)",
+   "excerpt": "Some may have blamed you that you took away\nThe verses that could move them on the day\nWhen, the ears being deafened, the sight of the eyes blind …"
+  },
+  {
+   "id": "yeats/25",
+   "title": "The Fascination of What's Difficult",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": "The Green Helmet and Other Poems (1912)",
+   "excerpt": "The fascination of what's difficult\nHas dried the sap out of my veins, and rent\nSpontaneous joy and natural content …"
+  },
+  {
+   "id": "yeats/26",
+   "title": "The Coming of Wisdom with Time",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Living"
+   ],
+   "collection": "The Green Helmet and Other Poems (1912)",
+   "excerpt": "Though leaves are many, the root is one;\nThrough all the lying days of my youth\nI swayed my leaves and flowers in the sun; …"
+  },
+  {
+   "id": "yeats/27",
+   "title": "A Drinking Song",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Living"
+   ],
+   "collection": "The Green Helmet and Other Poems (1912)",
+   "excerpt": "Wine comes in at the mouth\nAnd love comes in at the eye;\nThat's all we shall know for truth …"
+  },
+  {
+   "id": "yeats/28",
+   "title": "The Cold Heaven",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Religion"
+   ],
+   "collection": "The Green Helmet and Other Poems (1912)",
+   "excerpt": "Suddenly I saw the cold and rook delighting Heaven\nThat seemed as though ice burned and was but the more ice,\nAnd thereupon imagination and heart were driven …"
+  },
+  {
+   "id": "yeats/29",
+   "title": "September 1913",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "Responsibilities (1914)",
+   "excerpt": "What need you, being come to sense,\nBut fumble in a greasy till\nAnd add the halfpence to the pence …"
+  },
+  {
+   "id": "yeats/30",
+   "title": "To a Shade",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "Responsibilities (1914)",
+   "excerpt": "If you have revisited the town, thin Shade,\nWhether to look upon your monument\n(I wonder if the builder has been paid) …"
+  },
+  {
+   "id": "yeats/31",
+   "title": "Paudeen",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "The Mind"
+   ],
+   "collection": "Responsibilities (1914)",
+   "excerpt": "Indignant at the fumbling wits, the obscure spite\nOf our old Paudeen in his shop, I stumbled blind\nAmong the stones and thorn trees, under morning light; …"
+  },
+  {
+   "id": "yeats/32",
+   "title": "The Magi",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "History & Politics"
+   ],
+   "collection": "Responsibilities (1914)",
+   "excerpt": "Now as at all times I can see in the mind's eye,\nIn their stiff, painted clothes, the pale unsatisfied ones\nAppear and disappear in the blue depth of the sky …"
+  },
+  {
+   "id": "yeats/33",
+   "title": "A Coat",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "Responsibilities (1914)",
+   "excerpt": "I made my song a coat\nCovered with embroideries\nOut of old mythologies …"
+  },
+  {
+   "id": "yeats/34",
+   "title": "The Three Hermits",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Living"
+   ],
+   "collection": "Responsibilities (1914)",
+   "excerpt": "Three old hermits took the air\nBy a cold and desolate sea,\nFirst was muttering a prayer, …"
+  },
+  {
+   "id": "yeats/35",
+   "title": "The Mountain Tomb",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Death & Dying"
+   ],
+   "collection": "Responsibilities (1914)",
+   "excerpt": "Pour wine and dance if Manhood still have pride,\nBring roses if the rose be yet in bloom;\nThe cataract smokes upon the mountain side, …"
+  },
+  {
+   "id": "yeats/36",
+   "title": "A Memory of Youth",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "Responsibilities (1914)",
+   "excerpt": "The moments passed as at a play,\nI had the wisdom love brings forth;\nI had my share of mother wit …"
+  },
+  {
+   "id": "yeats/37",
+   "title": "To a Child Dancing in the Wind",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Relationships"
+   ],
+   "collection": "Responsibilities (1914)",
+   "excerpt": "I\n\nDance there upon the shore; …"
+  },
+  {
+   "id": "yeats/38",
+   "title": "Running to Paradise",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "Responsibilities (1914)",
+   "excerpt": "As I came over Windy Gap\nThey threw a halfpenny into my cap,\nFor I am running to Paradise; …"
+  },
+  {
+   "id": "yeats/39",
+   "title": "The Wild Swans at Coole",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "The trees are in their autumn beauty,\nThe woodland paths are dry,\nUnder the October twilight the water …"
+  },
+  {
+   "id": "yeats/40",
+   "title": "In Memory of Major Robert Gregory",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "1\n\nNow that we're almost settled in our house …"
+  },
+  {
+   "id": "yeats/41",
+   "title": "An Irish Airman Foresees His Death",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "I know that I shall meet my fate\nSomewhere among the clouds above;\nThose that I fight I do not hate …"
+  },
+  {
+   "id": "yeats/42",
+   "title": "The Fisherman",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "Although I can see him still,\nThe freckled man who goes\nTo a grey place on a hill …"
+  },
+  {
+   "id": "yeats/43",
+   "title": "The Scholars",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Time & Brevity"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "Bald heads forgetful of their sins,\nOld, learned, respectable bald heads\nEdit and annotate the lines …"
+  },
+  {
+   "id": "yeats/44",
+   "title": "Lines Written in Dejection",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Mythology & Folklore"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "When have I last looked on\nThe round green eyes and the long wavering bodies\nOf the dark leopards of the moon? …"
+  },
+  {
+   "id": "yeats/45",
+   "title": "Men Improve with the Years",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Love"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "I am worn out with dreams;\nA weather-worn, marble triton\nAmong the streams; …"
+  },
+  {
+   "id": "yeats/46",
+   "title": "The Living Beauty",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Arts & Sciences"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "I'll say and maybe dream I have drawn content--\nSeeing that time has frozen up the blood,\nThe wick of youth being burned and the oil spent-- …"
+  },
+  {
+   "id": "yeats/47",
+   "title": "A Deep-Sworn Vow",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "Others because you did not keep\nThat deep-sworn vow have been friends of mine;\nYet always when I look death in the face, …"
+  },
+  {
+   "id": "yeats/48",
+   "title": "Broken Dreams",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "There is grey in your hair.\nYoung men no longer suddenly catch their breath\nWhen you are passing; …"
+  },
+  {
+   "id": "yeats/49",
+   "title": "Memory",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "One had a lovely face,\nAnd two or three had charm,\nBut charm and face were in vain …"
+  },
+  {
+   "id": "yeats/50",
+   "title": "Her Praise",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Social Commentaries"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "She is foremost of those that I would hear praised.\nI have gone about the house, gone up and down\nAs a man does who has published a new book …"
+  },
+  {
+   "id": "yeats/51",
+   "title": "On Being Asked for a War Poem",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Arts & Sciences"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "I think it better that in times like these\nA poet keep his mouth shut, for in truth\nWe have no gift to set a statesman right; …"
+  },
+  {
+   "id": "yeats/52",
+   "title": "The Balloon of the Mind",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Arts & Sciences"
+   ],
+   "collection": "The Wild Swans at Coole (1919)",
+   "excerpt": "Hands, do what you're bid;\nBring the balloon of the mind\nThat bellies and drags in the wind …"
+  },
+  {
+   "id": "yeats/53",
+   "title": "Easter, 1916",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Michael Robartes and the Dancer (1921)",
+   "excerpt": "I have met them at close of day\nComing with vivid faces\nFrom counter or desk among grey …"
+  },
+  {
+   "id": "yeats/54",
+   "title": "The Second Coming",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": "Michael Robartes and the Dancer (1921)",
+   "excerpt": "Turning and turning in the widening gyre\nThe falcon cannot hear the falconer;\nThings fall apart; the centre cannot hold; …"
+  },
+  {
+   "id": "yeats/55",
+   "title": "A Prayer for My Daughter",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "History & Politics"
+   ],
+   "collection": "Michael Robartes and the Dancer (1921)",
+   "excerpt": "Once more the storm is howling and half hid\nUnder this cradle-hood and coverlid\nMy child sleeps on. There is no obstacle …"
+  },
+  {
+   "id": "yeats/56",
+   "title": "Sixteen Dead Men",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Michael Robartes and the Dancer (1921)",
+   "excerpt": "O but we talked at large before\nThe sixteen men were shot,\nBut who can talk of give and take, …"
+  },
+  {
+   "id": "yeats/57",
+   "title": "On a Political Prisoner",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Nature"
+   ],
+   "collection": "Michael Robartes and the Dancer (1921)",
+   "excerpt": "She that but little patience knew,\nFrom childhood on, had now so much\nA grey gull lost its fear and flew …"
+  },
+  {
+   "id": "yeats/58",
+   "title": "The Rose Tree",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Michael Robartes and the Dancer (1921)",
+   "excerpt": "“O words are lightly spoken”\nSaid Pearse to Connolly,\n“Maybe a breath of politic words …"
+  },
+  {
+   "id": "yeats/59",
+   "title": "Towards Break of Day",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Love"
+   ],
+   "collection": "Michael Robartes and the Dancer (1921)",
+   "excerpt": "Was it the double of my dream\nThe woman that by me lay\nDreamed, or did we halve a dream …"
+  },
+  {
+   "id": "yeats/60",
+   "title": "To Be Carved on a Stone at Ballylee",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Arts & Sciences"
+   ],
+   "collection": "Michael Robartes and the Dancer (1921)",
+   "excerpt": "I, the poet William Yeats,\nWith old mill boards and sea-green slates,\nAnd smithy work from the Gort forge, …"
+  },
+  {
+   "id": "yeats/61",
+   "title": "A Meditation in Time of War",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "The Mind"
+   ],
+   "collection": "Michael Robartes and the Dancer (1921)",
+   "excerpt": "For one throb of the Artery,\nWhile on that old grey stone I sat\nUnder the old wind-broken tree, …"
+  },
+  {
+   "id": "yeats/62",
+   "title": "Sailing to Byzantium",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Time & Brevity"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "I\n\nThat is no country for old men. The young …"
+  },
+  {
+   "id": "yeats/63",
+   "title": "The Tower",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Arts & Sciences"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "I\n\nWhat shall I do with this absurdity-- …"
+  },
+  {
+   "id": "yeats/64",
+   "title": "Leda and the Swan",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "History & Politics"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "A sudden blow: the great wings beating still\nAbove the staggering girl, her thighs caressed\nBy the dark webs, her nape caught in his bill, …"
+  },
+  {
+   "id": "yeats/65",
+   "title": "Among School Children",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Arts & Sciences"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "I\n\nI walk through the long schoolroom questioning, …"
+  },
+  {
+   "id": "yeats/66",
+   "title": "Nineteen Hundred and Nineteen",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Time & Brevity"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "I\n\nMany ingenious lovely things are gone …"
+  },
+  {
+   "id": "yeats/67",
+   "title": "Meditations in Time of Civil War",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Arts & Sciences"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "I\nAncestral Houses\n …"
+  },
+  {
+   "id": "yeats/68",
+   "title": "A Prayer for My Son",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Religion"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "Bid a strong ghost stand at the head\nThat my Michael may sleep sound,\nNor cry, nor turn in the bed …"
+  },
+  {
+   "id": "yeats/69",
+   "title": "All Souls' Night",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Mythology & Folklore"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "Midnight has come and the great Christ Church Bell,\nAnd may a lesser bell, sound through the room;\nAnd it is All Souls’ Night, …"
+  },
+  {
+   "id": "yeats/70",
+   "title": "The Wheel",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Death & Dying"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "Through winter-time we call on spring,\nAnd through the spring on summer call,\nAnd when abounding hedges ring …"
+  },
+  {
+   "id": "yeats/71",
+   "title": "Two Songs from a Play",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "I\n\nI saw a staring virgin stand …"
+  },
+  {
+   "id": "yeats/72",
+   "title": "The New Faces",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Relationships"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "If you, that have grown old, were the first dead,\nNeither catalpa tree nor scented lime\nShould hear my living feet, nor would I tread …"
+  },
+  {
+   "id": "yeats/73",
+   "title": "Youth and Age",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Living"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "Much did I rage when young,\nBeing by the world oppressed,\nBut now with flattering tongue …"
+  },
+  {
+   "id": "yeats/74",
+   "title": "The Three Monuments",
+   "authorSlug": "yeats",
+   "author": "W. B. Yeats",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "The Tower (1928)",
+   "excerpt": "They hold their public meetings where\nOur most renowned patriots stand,\nOne among the birds of the air, …"
   },
   {
    "id": "mew/0",
