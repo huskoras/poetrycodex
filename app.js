@@ -68,6 +68,7 @@
     "Romantic",
     "Victorian",
     "American",
+    "Modern",
   ];
   const CATEGORY_SLUGS = {
     "Ancient Greek & Roman": "ancient-greek-roman",
@@ -79,6 +80,7 @@
     "Romantic": "romantic",
     "Victorian": "victorian",
     "American": "american",
+    "Modern": "modern",
   };
   const SLUG_TO_CATEGORY = Object.fromEntries(Object.entries(CATEGORY_SLUGS).map(([k, v]) => [v, k]));
   const EPICS_SLUG = "epics";
