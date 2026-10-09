@@ -261,7 +261,11 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 /* ============ RESPONSIVE ============ */
 @media (max-width: 780px) {
   .topbar-inner { flex-wrap: wrap; gap: .7rem 1rem; padding: .6rem 1.3rem; }
-  .tb-nav { margin-left: 0; order: 3; width: 100%; overflow-x: auto; }
+  /* Five items on one line, so nothing hides off the edge. */
+  .tb-nav { margin-left: 0; order: 3; width: 100%; justify-content: space-between; gap: .4rem; }
+  .tb-nav a { white-space: nowrap; font-size: .68rem; letter-spacing: .05em; }
+  /* The cue keeps its label and its action; the sentence beside them is for desktop. */
+  .ec-hint { display: none; }
   .tb-search { margin-left: auto; }
   .hero-inner { padding: 3rem 1.3rem 2.8rem; }
   main { padding: 1.8rem 1.3rem 3rem; }
