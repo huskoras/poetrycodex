@@ -1,5 +1,5 @@
 {
- "count": 11932,
+ "count": 11953,
  "workCount": 45,
  "poets": [
   {
@@ -1098,6 +1098,22 @@
    ],
    "order": 885,
    "poemCount": 35,
+   "workCount": 0
+  },
+  {
+   "slug": "chatterton",
+   "name": "Thomas Chatterton",
+   "dates": "1752–1770",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Thomas Chatterton (1752–1770) was born in Bristol, the posthumous son of a schoolmaster and church official, and was writing remarkable verse before he was in his teens. He invented a fifteenth-century Bristol priest named Thomas Rowley and wrote a body of poems in an imitation medieval English, passing them off as Rowley's recovered manuscripts.",
+    "He went to London in 1770 hoping to live by his pen and died there in August of that year, aged seventeen. The question whether the Rowley poems were genuine was argued for decades, but they are now known to be his own. Wordsworth called him ‘the marvellous Boy,’ and Keats dedicated Endymion to his memory."
+   ],
+   "order": 887,
+   "poemCount": 21,
    "workCount": 0
   },
   {
@@ -2244,7 +2260,7 @@
   },
   {
    "name": "Living",
-   "count": 2459
+   "count": 2460
   },
   {
    "name": "Love",
@@ -2252,15 +2268,15 @@
   },
   {
    "name": "Religion",
-   "count": 1674
+   "count": 1675
   },
   {
    "name": "Death & Dying",
-   "count": 775
+   "count": 777
   },
   {
    "name": "History & Politics",
-   "count": 664
+   "count": 670
   },
   {
    "name": "Relationships",
@@ -2268,7 +2284,7 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 349
+   "count": 354
   },
   {
    "name": "Time & Brevity",
@@ -2276,15 +2292,15 @@
   },
   {
    "name": "The Mind",
-   "count": 251
+   "count": 252
   },
   {
    "name": "Social Commentaries",
-   "count": 132
+   "count": 136
   },
   {
    "name": "Mythology & Folklore",
-   "count": 43
+   "count": 44
   }
  ],
  "works": [
@@ -52749,6 +52765,277 @@
    ],
    "collection": "Beachy Head, with Other Poems (1807)",
    "excerpt": "The gorse is yellow on the heath,\n  The banks with speedwell flowers are gay,\nThe oaks are budding; and beneath, …"
+  },
+  {
+   "id": "chatterton/0",
+   "title": "Eclogue the First",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "  Whanne Englonde, smeethynge from her lethal wounde,\n  From her galled necke dyd twytte the chayne awaie,\n  Kennynge her legeful sonnes falle all arounde, …"
+  },
+  {
+   "id": "chatterton/1",
+   "title": "Eclogue the Second",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Nature"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "Sprytes of the bleste, the pious Nygelle sed,\nPoure owte yer pleasaunce onn mie fadres hedde.\n …"
+  },
+  {
+   "id": "chatterton/2",
+   "title": "Eclogue the Third",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "  Wouldst thou kenn nature in her better parte?\n  Goe, serche the logges and bordels of the hynde;\n  Gyff theie have anie, itte ys roughe-made arte, …"
+  },
+  {
+   "id": "chatterton/3",
+   "title": "Elinoure and Juga",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "  Onne Ruddeborne bank twa pynynge Maydens fate,\n  Theire teares faste dryppeynge to the waterre cleere;\n  Echone bementynge for her absente mate, …"
+  },
+  {
+   "id": "chatterton/4",
+   "title": "To Johne Ladgate",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "Well thanne, goode Johne, sythe ytt must needes be soe,\nThatt thou & I a bowtynge matche must have,\nLette ytt ne breakynge of oulde friendshyppe bee, …"
+  },
+  {
+   "id": "chatterton/5",
+   "title": "Songe to Ælla",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "  Oh thou, orr what remaynes of thee,\n  Ælla, the darlynge of futurity,\nLett thys mie songe bolde as thie courage be, …"
+  },
+  {
+   "id": "chatterton/6",
+   "title": "Lydgate's Answer",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "Havynge wythe mouche attentyonn redde\n  Whatt you dydd to mee sende,\nAdmyre the varses mouche I dydd, …"
+  },
+  {
+   "id": "chatterton/7",
+   "title": "Bristowe Tragedie; or, The Dethe of Syr Charles Bawdin",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "The featherd songster chaunticleer\n  Han wounde hys bugle horne,\nAnd tolde the earlie villager …"
+  },
+  {
+   "id": "chatterton/8",
+   "title": "Epistle to Mastre Canynge on Ælla",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "'Tys songe bie mynstrelles, thatte yn auntyent tym,\nWhan Reasonn hylt herselfe in cloudes of nyghte,\n  The preeste delyvered alle the lege yn rhym; …"
+  },
+  {
+   "id": "chatterton/9",
+   "title": "Letter to the Dygne Mastre Canynge",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "Straunge dome ytte ys, that, yn these daies of oures,\nNete butte a bare recytalle can hav place;\nNowe shapelie poesie hast loste yttes powers, …"
+  },
+  {
+   "id": "chatterton/10",
+   "title": "Entroductionne",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Arts & Sciences"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "Somme cherisounce it ys to gentle mynde,\nWhan heie have chevyced theyre londe from bayne,\nWhan theie ar dedd, theie leave yer name behynde, …"
+  },
+  {
+   "id": "chatterton/11",
+   "title": "Englysh Metamorphosis, Book I",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "History & Politics"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "  Whanne Scythyannes, salvage as the wolves theie chacde,\n  Peyncted in horrowe formes bie nature dyghte,\n  Heckled yn beastskyns, slepte uponne the waste, …"
+  },
+  {
+   "id": "chatterton/12",
+   "title": "An Excelente Balade of Charitie",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Religion"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "  In Virgyne the sweltrie sun gan sheene,\n  And hotte upon the mees did caste his raie;\n  The apple rodded from its palie greene, …"
+  },
+  {
+   "id": "chatterton/13",
+   "title": "Onn oure Ladies Chyrche",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Arts & Sciences"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "As onn a hylle one eve sittynge,\nAt oure Ladie's Chyrche mouche wonderynge,\nThe counynge handieworke so fyne, …"
+  },
+  {
+   "id": "chatterton/14",
+   "title": "On the Same",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Religion"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "  Stay, curyous traveller, and pass not bye,\n  Until this fetive pile astounde thine eye.\n  Whole rocks on rocks with yron joynd surveie, …"
+  },
+  {
+   "id": "chatterton/15",
+   "title": "Epitaph on Robert Canynge",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "  Thys mornynge starre of Radcleves rysynge raie,\n  A true manne good of mynde and Canynge hyghte,\n  Benethe thys stone lies moltrynge ynto claie, …"
+  },
+  {
+   "id": "chatterton/16",
+   "title": "The Storie of William Canynge",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "Anent a brooklette as I laie reclynd,\nListeynge to heare the water glyde alonge,\nMyndeynge how thorowe the grene mees yt twynd, …"
+  },
+  {
+   "id": "chatterton/17",
+   "title": "On Happienesse",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Religion"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "Maie Selynesse on erthes boundes bee hadde?\nMaie yt adyghte yn human shape bee founde?\nWote yee, ytt was wyth Edin's bower bestadde, …"
+  },
+  {
+   "id": "chatterton/18",
+   "title": "Onn Johne a Dalbenie",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "Johne makes a jarre boute Lancaster and Yorke;\nBee stille, gode manne, and learne to mynde thie worke."
+  },
+  {
+   "id": "chatterton/19",
+   "title": "The Gouler's Requiem",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Death & Dying"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "  Mie boolie entes, adieu! ne moe the syghte\n  Of guilden merke shall mete mie joieous eyne,\n  Ne moe the sylver noble sheenynge bryghte …"
+  },
+  {
+   "id": "chatterton/20",
+   "title": "The Accounte of W. Canynges Feast",
+   "authorSlug": "chatterton",
+   "author": "Thomas Chatterton",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Social Commentaries"
+   ],
+   "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
+   "excerpt": "Thorowe the halle the belle han sounde;\nByelecoyle doe the Grave beseeme;\nThe ealdermenne doe sytte arounde, …"
   },
   {
    "id": "blake/0",
