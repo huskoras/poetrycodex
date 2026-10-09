@@ -1,5 +1,5 @@
 {
- "count": 12303,
+ "count": 12328,
  "workCount": 45,
  "poets": [
   {
@@ -1003,6 +1003,22 @@
    "order": 585,
    "poemCount": 19,
    "workCount": 1
+  },
+  {
+   "slug": "koroglu",
+   "name": "Köroğlu",
+   "dates": "17th century (traditional)",
+   "era": "Traditional Turkic",
+   "category": "Turkish & Ottoman",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Köroğlu (Kurroglou in older English spellings) is the legendary bandit-poet of Turkish and Turkic folklore. He robbed the caravans on the road between Persia and the Ottoman lands, and is remembered above all for the improvised songs he is said to have sung. He is the hero of a large cycle of tales and songs carried by wandering minstrels among the Turkic peoples of Anatolia, Azerbaijan and Central Asia.",
+    "The cycle is traditional, and its authorship is not known: no single author can be named, and the songs were passed on orally and changed with each telling. The English version used here is from Alexander Chodzko's Specimens of the Popular Poetry of Persia (1842), which places the hero in northern Khorasan in the second half of the seventeenth century. Chodzko's versions are set within his prose narrative, so the songs are given as paragraphs rather than as verse lines."
+   ],
+   "order": 595,
+   "poemCount": 25,
+   "workCount": 0
   },
   {
    "slug": "finch",
@@ -2496,15 +2512,15 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2518
+   "count": 2522
   },
   {
    "name": "Love",
-   "count": 2477
+   "count": 2479
   },
   {
    "name": "Living",
-   "count": 2471
+   "count": 2476
   },
   {
    "name": "Religion",
@@ -2512,15 +2528,15 @@
   },
   {
    "name": "Death & Dying",
-   "count": 808
+   "count": 809
   },
   {
    "name": "History & Politics",
-   "count": 681
+   "count": 688
   },
   {
    "name": "Relationships",
-   "count": 435
+   "count": 439
   },
   {
    "name": "Arts & Sciences",
@@ -2532,7 +2548,7 @@
   },
   {
    "name": "The Mind",
-   "count": 274
+   "count": 276
   },
   {
    "name": "Social Commentaries",
@@ -52629,6 +52645,347 @@
    ],
    "collection": null,
    "excerpt": "_Enter_ JANUS.\n\n_Janus_. Chronos, Chronos, mend thy pace; …"
+  },
+  {
+   "id": "koroglu/0",
+   "title": "I Come, and I Say to Thee",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "I come, and I say to thee. Prince, listen and learn how a noble horse may be known. Active and brisk, see if his nostrils are rapidly swelling and shrinking alternately; whether his slender limbs are like the limbs of the gazelle, ready to commence its course. His haunches must resemble those of a chamois: his tender mouth yields to the slightest motion of the bridle, like the mouth of a young camel. When he eats, his teeth grind the grain, and make them crack like a millstone in motion; and he swallows them like a famished wolf. His back ought to remind you exactly of that of a hare: his mane is soft and silky: his neck is lofty, formed in semblance of the peacock's. The best time to mount him is between his fourth and fifth year. His head, neat and small as the head of the great serpent, chah-maur: his eyes projecting like two apples: his teeth are like so many diamonds. The shape of his mouth ought to approach that of a male camel: his limbs are neatly turned and fashioned; their shape is rather rounded than elongated. When brought out of the stable he is playful and prances. His eyes are like the eyes of the eagle, and he walks along with the restlessness of a hungry wolf. His belly and his ribs ought to fill the girth exactly. A young man of good family lends an obedient ear to the words of his parents: he pays the greatest attention to his horse: he knows by heart its descent and its pure blood; often he tries the vigour of the joints of its knees. In one word, he ought to be what Mirza-Serraf was in his youth.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/1",
+   "title": "My Prince Has Issued an Order",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "My prince has issued an order that I should be punished. But, by Allah, I know how to defend myself, I shall escape. In vain wouldst thou offer me thy riches and favours, as food is offered to the gluttonous and famished eagle; I will reject them all.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/2",
+   "title": "I Am Called God in My House",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "The Mind"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "I am called God in my house. Yes; I am a God. I shall not bend my neck before a coward like thee. The pitcher has carried water long enough for thee; but that pitcher is broken at last.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/3",
+   "title": "It Is Thyself That Thou Hast Built and Ruined",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "It is thyself that thou hast built and ruined, when thou hast lent thy ear to base calumniators. I shall take life. I shall overturn thy throne.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/4",
+   "title": "Enough of This Boasting",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "The Mind"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "Enough of this boasting. What are in my eyes thirty, sixty, or a hundred of your warriors? What are your rocks, your precipices, and deserts, under the hoof of my steed? In me you behold the leopard of the mountains and of the valleys.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/5",
+   "title": "Listen to the Words of Kurroglou",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Time & Brevity"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "Listen to the words of Kurroglou. Life is a burden to me. From this day I yield my head to the chances of fortune, like an autumn leaf abandoned to the wilful breath of the wind. With God's assistance I shall go to Persia, to establish there the worship of Ali, who is venerated in that country.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/6",
+   "title": "The Hour of Departure Has Arrived",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "The hour of departure has arrived. Whoever will follow me into Kurdistan, now let him be ready! The man whose lips are wont to drink in the cup of valour, let him follow me! I will have no cowards. Accursed be their infamous race! Those who can tear to pieces the shroud of death, — let them follow me!",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/7",
+   "title": "My Heart Is Fond of a Youth",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "My heart is fond of a youth whose eyebrows are arched. His waist is slender, his lips like a bud, a smiling rose. Youth, sacrifice thy soul to beauty! Behold in me its victim. Go round the world you will not find a more promising lad. His name is Ayvaz Bally. The meadow of the eighth paradise! His father is by trade a butcher. The son, a mine of precious stones.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/8",
+   "title": "Am I to Confess It, Then?",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "The Mind"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "Am I to confess it, then? No, I am a shepherd. The life of created beings must have an end. When I shoot from the bow, my arrow pierces through the rock. O! son of the butcher.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/9",
+   "title": "Thou Sayst I Must Not Weep",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "Thou sayst I must not weep. How can I help my tears, O Kurroglou? Thou tellest me not to torment thee with my grief. How can I help being sad?",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/10",
+   "title": "How Beautiful Thy Head Looks",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Love"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "How beautiful thy head looks with this plume; it is like the male crane's head. I shall keep it; I shall watch over it carefully. I sought thee in heaven, and I have found thee on earth; do not weep, my young crane. The arched line of thy eyebrows has been sketched by the pen of the Almighty. Thou art just come of age, thou art fifteen, O my youth. To all these ornaments one only is wanting, and it is that of chivalrous achievements. Thou shalt be the model of a Warrior. I shall cover thy head with a calotte of gold. O my young crane, weep no more.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/11",
+   "title": "O My Steed, Thy Father Was Bedon",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "O my steed, thy father was Bedon; thy mother Koldan. On! on! my worthy Kyrat, carry me to Chamly-bill! Leave me not here amongst unbelievers and foes, in the midst of the brown fog. On! on! my soul, Kyrat, carry me to Chamly-bill!",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/12",
+   "title": "Warrior Reyhan! Thou Art Come with an Army",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "Warrior Reyhan! thou art come with an army against me alone. Where is thy honour, where thy boasted valour? Why dost thou seek to destroy my soul? Warrior Reyhan, thou must be mad!",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/13",
+   "title": "In Thy Breath There Is the Fragrance",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "In thy breath there is the fragrance of the violet and hyacinth; like them thou art blooming in solitude. Thou art an arrow in my heart's core; Heaven will take vengeance on thee, because thou wouldst not listen to my complaints.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/14",
+   "title": "A Mist Is Descending upon the Tops of the High Mountains",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "A mist is descending upon the tops of the high mountains. Darkness, fog, and humidity dwell on them. The snow is coming down, the ravines and mountain passes become inaccessible for a caravan. Bitter and cold blasts are blowing.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/15",
+   "title": "Winter, Winter Is Come",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Relationships"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "Winter, winter is come, wild ducks are flocking on the lakes. The antelopes have descended in herds into the valleys. Thou art alone, foreign warrior, in the midst of men who are strangers to thee; their language is unknown to thee; thou art indeed to be pitied.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/16",
+   "title": "Without Kyrat",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "Without Kyrat, life and the world is but a sin to me. Poor Kurroglou! Now, when Kyrat has left thy hands, thou must strike with sorrow thy head, Kurroglou!",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/17",
+   "title": "O Thou Whom I Got First into My Hands",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "O thou whom I got first into my hands in Turkestan, come Kyrat, come, darling of my life! Thou hast fallen into the hands of a villain; come Kyrat, thou dearest to me of all things in life, come! I had a bit made for thee of fifteen pounds of iron. When thou art angry, thou wilt not touch food for three days. Thou wilt not stumble once in a race of forty farsakhs. O! Kyrat, thou dearest of all things to me in life, come!",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/18",
+   "title": "A Noble Horse Walks Boldly",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "A noble horse walks boldly, as if he were anxious to overthrow his rider. He stirs his ears, and pulls so hard on the reins that the rider must hold him tightly, and let his hand have no rest. The horse of a ram-warrior ought to be as mad as his master.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/19",
+   "title": "The Pregnant Sun Brings Forth the Day",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "The pregnant sun brings forth the day. It gathers a host of rays on its head. From its face comes snow — the frost. What does it signify? Is it a hurricane, or a winter?",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/20",
+   "title": "The Guns Roar, Peal After Peal",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "The guns roar, peal after peal; the bombs shoot out, the treacherous lead whistles; heads drop down like unripe melons; the blood gushes, and, like water, flows in streams.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/21",
+   "title": "O My Gardens!",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "O my gardens! I used to gather your flowers, make nosegays of them, and send them as presents to my sweethearts. My friends standing on the road, cried and remained alone. Kurroglou, put thy confidence in God! He will be a shield against the misfortune that may befal thee unawares. Foe! do not step out before mine eyes, and do not conceal from me the last sight of Chamly-bill, left so far behind me.",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/22",
+   "title": "The Spring Comes",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "The spring comes. The snow melts on the mountains. My sisterly mountains unveil their fronts before my eyes. Here my Egyptian sword revelled in blood to satiety! O my mountains! my battles will live eternally in your echoes! How happy I was wandering upon your bosom! Hidden amongst your rocks, I lay in ambush, waiting till a heavy caravan ascended your acclivities. O my mountains, you never betrayed my secrets! Thanks to you! Thanks!",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/23",
+   "title": "Kurroglou Says, I Came into This World",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "Kurroglou says, 'I came into this world. I learned the price of the days gone by. I died the very day my mother brought me forth. I have only two brothers, my sword and my horse. Ye mountains, ye are my sisters.'",
+   "translator": "trans. Alexander Chodzko (1842)"
+  },
+  {
+   "id": "koroglu/24",
+   "title": "A True Warrior Must Lose His Life",
+   "authorSlug": "koroglu",
+   "author": "Köroğlu",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "Specimens of the Popular Poetry of Persia (1842)",
+   "excerpt": "A true warrior must lose his life on the field of battle. The guns and the carbines thunder for him the death-song. O death! whom didst thou spare? The most cunning of all men, Babai-Amir, once run from thee, and endeavoured to escape. Didst thou not catch him, jumping upon him from an ambush? The heart of Kurroglou the ram fears thee not, provided his vows may be agreeable to God. Were even Hassan and Hussein, these footstools of the throne of God, on the seventh heaven (Ersh) spared by thee? No! thou hast made them martyrs at Kerbella.",
+   "translator": "trans. Alexander Chodzko (1842)"
   },
   {
    "id": "finch/0",
