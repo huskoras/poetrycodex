@@ -1,5 +1,5 @@
 {
- "count": 11287,
+ "count": 11322,
  "workCount": 45,
  "poets": [
   {
@@ -1277,6 +1277,22 @@
    "workCount": 0
   },
   {
+   "slug": "hemans",
+   "name": "Felicia Hemans",
+   "dates": "1793–1835",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": "poets/hemans.jpg",
+   "credit": "Portrait of Felicia Hemans by William Edward West (before 1835) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Felicia Hemans (1793–1835), born Felicia Dorothea Browne in Liverpool and raised largely in Wales, published her first volume of poems at fourteen and became one of the most widely read poets of her day, in Britain and in America.",
+    "After her husband left for Italy in 1818 she brought up her five sons alone and supported them by her writing. Her best-known collections include Records of Woman (1828) and Songs of the Affections (1830), and poems such as “Casabianca” and “The Homes of England” were learned by heart by generations of schoolchildren. She died in Dublin at forty-one."
+   ],
+   "order": 958,
+   "poemCount": 35,
+   "workCount": 0
+  },
+  {
    "slug": "keats",
    "name": "John Keats",
    "dates": "1795–1821",
@@ -1952,11 +1968,11 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2411
+   "count": 2413
   },
   {
    "name": "Nature",
-   "count": 2358
+   "count": 2363
   },
   {
    "name": "Love",
@@ -1964,27 +1980,27 @@
   },
   {
    "name": "Religion",
-   "count": 1639
+   "count": 1645
   },
   {
    "name": "Death & Dying",
-   "count": 694
+   "count": 704
   },
   {
    "name": "History & Politics",
-   "count": 595
+   "count": 600
   },
   {
    "name": "Relationships",
-   "count": 390
+   "count": 391
   },
   {
    "name": "Arts & Sciences",
-   "count": 320
+   "count": 322
   },
   {
    "name": "Time & Brevity",
-   "count": 238
+   "count": 241
   },
   {
    "name": "The Mind",
@@ -1996,7 +2012,7 @@
   },
   {
    "name": "Mythology & Folklore",
-   "count": 17
+   "count": 18
   }
  ],
  "works": [
@@ -65009,6 +65025,461 @@
    ],
    "collection": "Poems Chiefly from Manuscript (1920, ed. Blunden & Porter)",
    "excerpt": "Tis three years and a quarter since I left my own fireside\nTo go aboard a ship through love, and plough the ocean wide.\nI crossed my native fields, where the scarlet poppies grew, …"
+  },
+  {
+   "id": "hemans/0",
+   "title": "Casabianca",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "The boy stood on the burning deck\n  Whence all but he had fled;\nThe flame that lit the battle’s wreck …"
+  },
+  {
+   "id": "hemans/1",
+   "title": "The Homes of England",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Relationships"
+   ],
+   "collection": null,
+   "excerpt": "The stately homes of England!\n  How beautiful they stand,\nAmidst their tall ancestral trees, …"
+  },
+  {
+   "id": "hemans/2",
+   "title": "The Landing of the Pilgrim Fathers in New England",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": null,
+   "excerpt": "The breaking waves dash’d high\n  On a stern and rock-bound coast,\nAnd the woods against a stormy sky …"
+  },
+  {
+   "id": "hemans/3",
+   "title": "The Treasures of the Deep",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "What hidest thou in thy treasure caves and cells,\n  Thou hollow-sounding and mysterious main?--\nPale glistening pearls, and rainbow-colour’d shells …"
+  },
+  {
+   "id": "hemans/4",
+   "title": "Bring Flowers",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "Bring flowers, young flowers, for the festal board,\nTo wreath the cup ere the wine is pour’d!\nBring flowers! they are springing in wood and vale: …"
+  },
+  {
+   "id": "hemans/5",
+   "title": "The Better Land",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Relationships"
+   ],
+   "collection": null,
+   "excerpt": "“I hear thee speak of the better land,\nThou call’st its children a happy band;\nMother! oh, where is that radiant shore? …"
+  },
+  {
+   "id": "hemans/6",
+   "title": "The Hour of Death",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "      Leaves have their time to fall,\nAnd flowers to wither at the north wind’s breath,\n  And stars to set--but all, …"
+  },
+  {
+   "id": "hemans/7",
+   "title": "The Graves of a Household",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": null,
+   "excerpt": "They grew in beauty side by side,\n  They fill’d one home with glee;--\nTheir graves are sever’d far and wide, …"
+  },
+  {
+   "id": "hemans/8",
+   "title": "The Wreck",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "All night the booming minute-gun\n  Had peal’d along the deep,\nAnd mournfully the rising sun …"
+  },
+  {
+   "id": "hemans/9",
+   "title": "The Hebrew Mother",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Relationships"
+   ],
+   "collection": null,
+   "excerpt": "The rose was in rich bloom on Sharon’s plain,\nWhen a young mother, with her first-born, thence\nWent up to Zion; for the boy was vow’d …"
+  },
+  {
+   "id": "hemans/10",
+   "title": "The Grave of a Poetess",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Arts & Sciences"
+   ],
+   "collection": "Records of Woman (1828)",
+   "excerpt": "I stood beside thy lowly grave;\n  Spring odours breathed around,\nAnd music, in the river wave, …"
+  },
+  {
+   "id": "hemans/11",
+   "title": "Properzia Rossi",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Love"
+   ],
+   "collection": "Records of Woman (1828)",
+   "excerpt": "I.\n\nOne dream of passion and of beauty more! …"
+  },
+  {
+   "id": "hemans/12",
+   "title": "Indian Woman's Death-Song",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Records of Woman (1828)",
+   "excerpt": "Down a broad river of the western wilds,\nPiercing thick forest-glooms, a light canoe\nSwept with the current: fearful was the speed …"
+  },
+  {
+   "id": "hemans/13",
+   "title": "The Image in Lava",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Relationships"
+   ],
+   "collection": null,
+   "excerpt": "Thou thing of years departed!\n  What ages have gone by\nSince here the mournful seal was set …"
+  },
+  {
+   "id": "hemans/14",
+   "title": "The Palm-Tree",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": null,
+   "excerpt": "It waved not through an eastern sky,\nBeside a fount of Araby;\nIt was not fann’d by southern breeze …"
+  },
+  {
+   "id": "hemans/15",
+   "title": "The Sunbeam",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": null,
+   "excerpt": "Thou art no lingerer in monarch’s hall--\nA joy thou art, and a wealth to all!\nA bearer of hope unto land and sea-- …"
+  },
+  {
+   "id": "hemans/16",
+   "title": "The Child's Last Sleep",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": null,
+   "excerpt": "Thou sleepest--but when wilt thou wake, fair child?\nWhen the fawn awakes in the forest wild?\nWhen the lark’s wing mounts with the breeze of morn? …"
+  },
+  {
+   "id": "hemans/17",
+   "title": "To Wordsworth",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "Thine is a strain to read among the hills,\n  The old and full of voices,--by the source\nOf some free stream, whose gladdening presence fills …"
+  },
+  {
+   "id": "hemans/18",
+   "title": "England's Dead",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "    Son of the Ocean Isle!\n    Where sleep your mighty dead?\nShow me what high and stately pile …"
+  },
+  {
+   "id": "hemans/19",
+   "title": "The Voice of Spring",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": null,
+   "excerpt": "I come, I come! ye have call’d me long--\nI come o’er the mountains with light and song!\nYe may trace my step o’er the wakening earth …"
+  },
+  {
+   "id": "hemans/20",
+   "title": "The Sound of the Sea",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": null,
+   "excerpt": "Thou art sounding on, thou mighty sea!\n  For ever and the same;\nThe ancient rocks yet ring to thee-- …"
+  },
+  {
+   "id": "hemans/21",
+   "title": "Angel Visits",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": null,
+   "excerpt": "Are ye for ever to your skies departed?\n  Oh! will ye visit this dim world no more?\nYe, whose bright wings a solemn splendour darted …"
+  },
+  {
+   "id": "hemans/22",
+   "title": "The Wings of the Dove",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "      Oh, for thy wings, thou dove!\nNow sailing by with sunshine on thy breast;\n      That, borne like thee above, …"
+  },
+  {
+   "id": "hemans/23",
+   "title": "Kindred Hearts",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Living"
+   ],
+   "collection": null,
+   "excerpt": "Oh! ask not, hope thou not too much\n  Of sympathy below!\nFew are the hearts whence one same touch …"
+  },
+  {
+   "id": "hemans/24",
+   "title": "The Cross in the Wilderness",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "Silent and mournful sat an Indian chief,\n  In the red sunset, by a grassy tomb;\nHis eyes, that might not weep, were dark with grief, …"
+  },
+  {
+   "id": "hemans/25",
+   "title": "Evening Prayer at a Girls' School",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Living"
+   ],
+   "collection": null,
+   "excerpt": "Hush! ’tis a holy hour. The quiet room\n  Seems like a temple, while yon soft lamp sheds\nA faint and starry radiance, through the gloom …"
+  },
+  {
+   "id": "hemans/26",
+   "title": "The Lost Pleiad",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Mythology & Folklore"
+   ],
+   "collection": null,
+   "excerpt": "And is there glory from the heavens departed?\n  O void unmark’d!--thy sisters of the sky\n    Still hold their place on high, …"
+  },
+  {
+   "id": "hemans/27",
+   "title": "The Mourner for the Barmecides",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Relationships"
+   ],
+   "collection": null,
+   "excerpt": "Fallen was the house of Giafar; and its name,\nThe high romantic name of Barmecide,\nA sound forbidden on its own bright shores, …"
+  },
+  {
+   "id": "hemans/28",
+   "title": "The Festal Hour",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "    When are the lessons given\nThat shake the startled earth? When wakes the foe\nWhile the friend sleeps? When falls the traitor’s blow? …"
+  },
+  {
+   "id": "hemans/29",
+   "title": "The Dying Improvisatore",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "        The spirit of my land,\nIt visits me once more!--though I must die\nFar from the myrtles which thy breeze hath fann’d, …"
+  },
+  {
+   "id": "hemans/30",
+   "title": "The Departed",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": null,
+   "excerpt": "And shrink ye from the way\n  To the spirit’s distant shore?--\nEarth’s mightiest men, in arm’d array, …"
+  },
+  {
+   "id": "hemans/31",
+   "title": "Ivan the Czar",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "He sat in silence on the ground,\n  The old and haughty Czar,\nLonely, though princes girt him round, …"
+  },
+  {
+   "id": "hemans/32",
+   "title": "The Dial of Flowers",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": null,
+   "excerpt": "’Twas a lovely thought to mark the hours,\n    As they floated in light away,\nBy the opening and the folding flowers, …"
+  },
+  {
+   "id": "hemans/33",
+   "title": "Our Daily Paths",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": null,
+   "excerpt": "There’s beauty all around our paths, if but our watchful eyes\nCan trace it midst familiar things, and through their lowly guise;\nWe may find it where a hedgerow showers its blossoms o’er our way, …"
+  },
+  {
+   "id": "hemans/34",
+   "title": "Elysium",
+   "authorSlug": "hemans",
+   "author": "Felicia Hemans",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "    Fair wert thou in the dreams\nOf elder time, thou land of glorious flowers\nAnd summer winds and low-toned silvery streams, …"
   },
   {
    "id": "keats/0",
