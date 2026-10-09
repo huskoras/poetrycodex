@@ -1,5 +1,5 @@
 {
- "count": 12239,
+ "count": 12244,
  "workCount": 45,
  "poets": [
   {
@@ -508,7 +508,7 @@
     "Some of his lyrics, including ‘As it fell upon a day,’ were long misattributed to his contemporary William Shakespeare."
    ],
    "order": 300,
-   "poemCount": 1,
+   "poemCount": 6,
    "workCount": 0
   },
   {
@@ -2436,11 +2436,11 @@
   },
   {
    "name": "Living",
-   "count": 2468
+   "count": 2469
   },
   {
    "name": "Love",
-   "count": 2430
+   "count": 2433
   },
   {
    "name": "Religion",
@@ -2472,7 +2472,7 @@
   },
   {
    "name": "Social Commentaries",
-   "count": 186
+   "count": 187
   },
   {
    "name": "Mythology & Folklore",
@@ -9734,6 +9734,68 @@
    ],
    "collection": null,
    "excerpt": "    As it fell upon a day\n    In the merry month of May,\n    Sitting in a pleasant shade …"
+  },
+  {
+   "id": "barnfield/1",
+   "title": "The Affectionate Shepherd",
+   "authorSlug": "barnfield",
+   "author": "Richard Barnfield",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Affectionate Shepheard (1594)",
+   "excerpt": "Scarce had the morning starre hid from the light\nHeavens crimson canopie with stars bespangled,\nBut I began to rue th' unhappy sight …"
+  },
+  {
+   "id": "barnfield/2",
+   "title": "The Second Dayes Lamentation of the Affectionate Shepheard",
+   "authorSlug": "barnfield",
+   "author": "Richard Barnfield",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Affectionate Shepheard (1594)",
+   "excerpt": "Next morning, when the golden sunne was risen,\nAnd new had bid good morrow to the mountaines;\nWhen night her silver light had lockt in prison, …"
+  },
+  {
+   "id": "barnfield/3",
+   "title": "The Shepheards Content",
+   "authorSlug": "barnfield",
+   "author": "Richard Barnfield",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "The Affectionate Shepheard (1594)",
+   "excerpt": "Of all the kindes of common countrey life,\nMethinkes a shepheards life is most content;\nHis state is quiet peace, devoyd of strife; …"
+  },
+  {
+   "id": "barnfield/4",
+   "title": "Loe here behold these tributarie teares",
+   "authorSlug": "barnfield",
+   "author": "Richard Barnfield",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Affectionate Shepheard (1594)",
+   "excerpt": "Loe here behold these tributarie teares\nPaid to thy faire but cruell tyrant eyes;\nLoe here the blossome of my youthfull yeares, …"
+  },
+  {
+   "id": "barnfield/5",
+   "title": "The Complaint of Chastitie",
+   "authorSlug": "barnfield",
+   "author": "Richard Barnfield",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Relationships"
+   ],
+   "collection": "The Affectionate Shepheard (1594)",
+   "excerpt": "You modest dames, inricht with chastitie,\nMaske your bright eyes with Vestaes sable vaile,\nSince few are left so faire or chast as shee, …"
   },
   {
    "id": "marlowe/0",
