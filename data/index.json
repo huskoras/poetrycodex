@@ -1,5 +1,5 @@
 {
- "count": 12204,
+ "count": 12239,
  "workCount": 45,
  "poets": [
   {
@@ -986,6 +986,22 @@
    ],
    "order": 600,
    "poemCount": 22,
+   "workCount": 0
+  },
+  {
+   "slug": "prior",
+   "name": "Matthew Prior",
+   "dates": "1664–1721",
+   "era": "Restoration",
+   "category": "Restoration & Augustan",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Matthew Prior (1664–1721) was the son of a joiner, educated at Westminster School and Cambridge, and made his career as a diplomat. He served as secretary to the embassy at The Hague and in Paris, and took part in the negotiations that led to the Treaty of Utrecht, and was imprisoned for a time after the Whig ministry came to power in 1715.",
+    "As a poet he was admired for his light, polished verse: songs and epigrams addressed to Cloe, tales and fables, and longer poems such as Alma and Solomon. His Poems on Several Occasions was published by subscription in 1718."
+   ],
+   "order": 610,
+   "poemCount": 35,
    "workCount": 0
   },
   {
@@ -2424,7 +2440,7 @@
   },
   {
    "name": "Love",
-   "count": 2411
+   "count": 2430
   },
   {
    "name": "Religion",
@@ -2432,23 +2448,23 @@
   },
   {
    "name": "Death & Dying",
-   "count": 805
+   "count": 807
   },
   {
    "name": "History & Politics",
-   "count": 680
+   "count": 681
   },
   {
    "name": "Relationships",
-   "count": 433
+   "count": 435
   },
   {
    "name": "Arts & Sciences",
-   "count": 391
+   "count": 393
   },
   {
    "name": "Time & Brevity",
-   "count": 284
+   "count": 288
   },
   {
    "name": "The Mind",
@@ -2456,7 +2472,7 @@
   },
   {
    "name": "Social Commentaries",
-   "count": 181
+   "count": 186
   },
   {
    "name": "Mythology & Folklore",
@@ -52216,6 +52232,459 @@
    ],
    "collection": "Miscellany Poems, on Several Occasions (1713)",
    "excerpt": "The Tree of Knowledge, which in Eden prove'd\nThe Tree of Life, was thence to heaven remov'd:\nHope is the growth of earth, the only plant …"
+  },
+  {
+   "id": "prior/0",
+   "title": "The Despairing Shepherd",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Death & Dying"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "ALEXIS shunn'd his fellow swains,\nTheir rural sports, and jocund strains,\n(Heav'n guard us all from Cupid's bow!) …"
+  },
+  {
+   "id": "prior/1",
+   "title": "The Lady's Looking-Glass",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "CELIA and I the other day\nWalk'd o'er the sand-hills to the sea :\nThe setting sun adorn'd the coast, …"
+  },
+  {
+   "id": "prior/2",
+   "title": "To a Lady: She Refusing to Continue a Dispute with Me",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "SPARE, gen'rous Victor, spare the slave.\nWho did unequal war pursue ;\nThat more than triumph he might have, …"
+  },
+  {
+   "id": "prior/3",
+   "title": "Celia to Damon",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "WHAT can I say, what arguments can prove\nMy truth, what colours can describe my love ;\nIf its excess and fury be not known, …"
+  },
+  {
+   "id": "prior/4",
+   "title": "To Cloe Weeping",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "SEE, whilst thou weep'st, fair Cloe, see\nThe world in sympathy with thee.\nThe cheerful birds no longer sing ; …"
+  },
+  {
+   "id": "prior/5",
+   "title": "Cloe Hunting",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Mythology & Folklore"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "BEHIND her neck her comely tresses tied,\nHer ivory quiver graceful by her side,\nA-hunting Cloe went : she lost her way, …"
+  },
+  {
+   "id": "prior/6",
+   "title": "Cupid Mistaken",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Mythology & Folklore"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "AS after noon, one summer's day,\nVenus stood bathing in a river,\nCupid a-shooting went that way, …"
+  },
+  {
+   "id": "prior/7",
+   "title": "Venus Mistaken",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Mythology & Folklore"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "WHEN Cloe's picture was to Venus shown,\nSurpris'd, the goddess took it for her own.\nAnd what, said she, does this bold painter mean ? …"
+  },
+  {
+   "id": "prior/8",
+   "title": "A Lover's Anger",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "AS Cloe came into the room t'other day,\nI peevish began ; where so long could you stay ?\nIn your life-time you never regarded your hour : …"
+  },
+  {
+   "id": "prior/9",
+   "title": "Mercury and Cupid",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Mythology & Folklore"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "IN sullen humour one day Jove\nSent Hermes down to Ida's grove,\nCommanding Cupid to deliver …"
+  },
+  {
+   "id": "prior/10",
+   "title": "On Beauty: A Riddle",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Mythology & Folklore"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "RESOLVE me, Cloe, what is this :\nOr forfeit me one precious kiss.\n'Tis the first offspring of the Graces ; …"
+  },
+  {
+   "id": "prior/11",
+   "title": "The Question, to Lisetta",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "WHAT nymph should I admire, or trust,\nBut Cloe beauteous, Cloe just?\nWhat nymph should I desire to see, …"
+  },
+  {
+   "id": "prior/12",
+   "title": "Lisetta's Reply",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "SURE, Cloe just, and Cloe fair,\nDeserves to be your only care :\nBut when you and she to-day …"
+  },
+  {
+   "id": "prior/13",
+   "title": "The Garland",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Love",
+    "Nature"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "THE pride of every grove I chose,\nThe violet sweet, and lily fair,\nThe dappled pink, and blushing rose, …"
+  },
+  {
+   "id": "prior/14",
+   "title": "The Lady Who Offers Her Looking-Glass to Venus",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Love"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "VENUS, take my votive glass ;\nSince I am not what I was,\nWhat from this day I shall be, …"
+  },
+  {
+   "id": "prior/15",
+   "title": "Cloe Jealous",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "FORBEAR to ask me, why I weep ;\nVex'd Cloe to her shepherd said ;\n'Tis for my two poor straggling sheep …"
+  },
+  {
+   "id": "prior/16",
+   "title": "Answer to Cloe Jealous",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Death & Dying"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "YES, fairest proof of Beauty's power,\nDear idol of my panting heart,\nNature points this my fatal hour : …"
+  },
+  {
+   "id": "prior/17",
+   "title": "A Better Answer",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "DEAR Cloe, how blubber'd is that pretty face;\nThy cheek all on fire, and thy hair all uncurl'd :\nPr'ythee quit this caprice; and (as old Falstaff says) …"
+  },
+  {
+   "id": "prior/18",
+   "title": "To a Young Gentleman in Love",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "FROM public noise and factious strife,\nFrom all the busy ills of life,\nTake me, my Celia, to thy breast, …"
+  },
+  {
+   "id": "prior/19",
+   "title": "An English Padlock",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "MISS DANAE, when fair and young,\n(As Horace has divinely sung)\nCould not be kept from Jove's embrace …"
+  },
+  {
+   "id": "prior/20",
+   "title": "A Dutch Proverb",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "FIRE, water, woman, are man's ruin :\nSays wise professor Vander Bruin.\nBy flames a house I hir'd was lost …"
+  },
+  {
+   "id": "prior/21",
+   "title": "The Chameleon",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "AS the Chameleon, who is known\nTo have no colours of his own ;\nBut borrows from his neighbour's hue …"
+  },
+  {
+   "id": "prior/22",
+   "title": "Merry Andrew",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "SLY Merry Andrew, the last Southwark fair\n(At Barthol'mew he did not much appear:\nSo peevish was the edict of the Mayor) …"
+  },
+  {
+   "id": "prior/23",
+   "title": "A Simile",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "DEAR Thomas, didst thou never pop\nThy head into a tin-man's shop ?\nThere, Thomas, didst thou never see …"
+  },
+  {
+   "id": "prior/24",
+   "title": "The Flies",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "SAY, sire of insects, mighty Sol,\n(A Fly upon the chariot pole\nCries out,) what Blue-bottle alive …"
+  },
+  {
+   "id": "prior/25",
+   "title": "A Paraphrase from the French",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "IN grey-hair'd Celia's wither'd arms\nAs mighty Lewis lay,\nShe cried, \" If I have any charms, …"
+  },
+  {
+   "id": "prior/26",
+   "title": "To a Person Who Wrote Ill, and Spoke Worse Against Me",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "LIE, Philo, untouch'd on my peaceable shelf;\nNor take it amiss, that so little I heed thee :\nI've no envy to thee, and some love to myself: …"
+  },
+  {
+   "id": "prior/27",
+   "title": "Her Right Name",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "AS Nancy at her toilet sat,\nAdmiring this, and blaming that ;\nTell me, she said ; but tell me true ; …"
+  },
+  {
+   "id": "prior/28",
+   "title": "Lines Written in an Ovid",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Arts & Sciences"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "OVID is the surest guide,\nYou can name, to show the way\nTo any woman, maid, or bride, …"
+  },
+  {
+   "id": "prior/29",
+   "title": "A Reasonable Affliction",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "IN his death-bed poor Lubin lies ;\nHis spouse is in despair :\nWith frequent sobs, and mutual cries, …"
+  },
+  {
+   "id": "prior/30",
+   "title": "Phillis's Age",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "HOW old may Phillis be, you ask,\nWhose beauty thus all hearts engages ?\nTo answer is no easy task : …"
+  },
+  {
+   "id": "prior/31",
+   "title": "Forma Bonum Fragile",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "WHAT a frail thing is beauty ! says Baron Le Cras,\nLe Cras,\nPerceiving his mistress had one eye of glass : …"
+  },
+  {
+   "id": "prior/32",
+   "title": "A Critical Moment",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "HOW capricious were Nature and Art to poor Nell !\nNell !\nShe was painting her cheeks at the time her nose fell."
+  },
+  {
+   "id": "prior/33",
+   "title": "The Thief and the Cordelier",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Death & Dying"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "WHO has e'er been at Paris must needs know the Greve,\nThe fatal retreat of th' unfortunate brave :\nWhere honour and justice most oddly contribute, …"
+  },
+  {
+   "id": "prior/34",
+   "title": "An Epitaph",
+   "authorSlug": "prior",
+   "author": "Matthew Prior",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Several Occasions",
+   "excerpt": "INTERR'D beneath this marble stone\nLie sauntering Jack and idle Joan.\nWhile rolling threescore years and one …"
   },
   {
    "id": "swift/0",
