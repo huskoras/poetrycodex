@@ -1,5 +1,5 @@
 {
- "count": 11806,
+ "count": 11836,
  "workCount": 45,
  "poets": [
   {
@@ -2045,6 +2045,22 @@
    "workCount": 0
   },
   {
+   "slug": "davies_wh",
+   "name": "W. H. Davies",
+   "dates": "1871–1940",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/davies_wh.jpg",
+   "credit": "Photograph of W. H. Davies by Alvin Langdon Coburn (1913) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "William Henry Davies (1871–1940) was a Welsh poet and writer, born in Newport, Monmouthshire. He spent years as a tramp in America and Britain, losing a foot while trying to jump a freight train, and wrote of that life in The Autobiography of a Super-Tramp (1908).",
+    "His short, simple lyrics about birds, flowers, tramps and the poor made him one of the Georgian poets. “Leisure,” first published in Songs of Joy (1911), is his best-known poem; the other poems here are from Foliage (1913)."
+   ],
+   "order": 1413,
+   "poemCount": 30,
+   "workCount": 0
+  },
+  {
    "slug": "belloc",
    "name": "Hilaire Belloc",
    "dates": "1870–1953",
@@ -2176,15 +2192,15 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2462
+   "count": 2468
   },
   {
    "name": "Living",
-   "count": 2447
+   "count": 2456
   },
   {
    "name": "Love",
-   "count": 2383
+   "count": 2385
   },
   {
    "name": "Religion",
@@ -2192,7 +2208,7 @@
   },
   {
    "name": "Death & Dying",
-   "count": 757
+   "count": 758
   },
   {
    "name": "History & Politics",
@@ -2204,19 +2220,19 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 344
+   "count": 347
   },
   {
    "name": "Time & Brevity",
-   "count": 273
+   "count": 275
   },
   {
    "name": "The Mind",
-   "count": 246
+   "count": 247
   },
   {
    "name": "Social Commentaries",
-   "count": 124
+   "count": 130
   },
   {
    "name": "Mythology & Folklore",
@@ -143247,6 +143263,395 @@
    ],
    "collection": "The Farmer's Bride (1921 edition)",
    "excerpt": "Not yet will those measureless fields be green again\nWhere only yesterday the wild, sweet, blood of wonderful youth was shed;\nThere is a grave whose earth must hold too long, too deep a stain, …"
+  },
+  {
+   "id": "davies_wh/0",
+   "title": "Thunderstorms",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Nature"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "My mind has thunderstorms,\n  That brood for heavy hours:\nUntil they rain me words, …"
+  },
+  {
+   "id": "davies_wh/1",
+   "title": "Strong Moments",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "Sometimes I hear fine ladies sing,\n  Sometimes I smoke and drink with men;\nSometimes I play at games of cards-- …"
+  },
+  {
+   "id": "davies_wh/2",
+   "title": "A Greeting",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "Good morning, Life--and all\nThings glad and beautiful.\nMy pockets nothing hold, …"
+  },
+  {
+   "id": "davies_wh/3",
+   "title": "Sweet Stay-at-Home",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Relationships"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "Sweet Stay-at-Home, sweet Well-content,\nThou knowest of no strange continent:\nThou hast not felt thy bosom keep …"
+  },
+  {
+   "id": "davies_wh/4",
+   "title": "The Starved",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Death & Dying"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "My little Lamb, what is amiss?\nIf there was milk in mother's kiss,\nYou would not look as white as this. …"
+  },
+  {
+   "id": "davies_wh/5",
+   "title": "A May Morning",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "The sky is clear,\n  The sun is bright;\nThe cows are red, …"
+  },
+  {
+   "id": "davies_wh/6",
+   "title": "The Lonely Dreamer",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Arts & Sciences"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "He lives his lonely life, and when he dies\nA thousand hearts maybe will utter sighs;\nBecause they liked his songs, and now their bird …"
+  },
+  {
+   "id": "davies_wh/7",
+   "title": "Christmas",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Social Commentaries"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "Christmas has come, let's eat and drink--\nThis is no time to sit and think;\nFarewell to study, books and pen, …"
+  },
+  {
+   "id": "davies_wh/8",
+   "title": "Laughing Rose",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "If I were gusty April now,\n  How I would blow at laughing Rose;\nI'd make her ribbons slip their knots, …"
+  },
+  {
+   "id": "davies_wh/9",
+   "title": "Seeking Joy",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "Joy, how I sought thee!\nSilver I spent and gold,\nOn the pleasures of this world, …"
+  },
+  {
+   "id": "davies_wh/10",
+   "title": "The Old Oak Tree",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Social Commentaries"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "I sit beneath your leaves, old oak,\n  You mighty one of all the trees;\nWithin whose hollow trunk a man …"
+  },
+  {
+   "id": "davies_wh/11",
+   "title": "Poor Kings",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "God's pity on poor kings,\n    They know no gentle rest;\nThe North and South cry out, …"
+  },
+  {
+   "id": "davies_wh/12",
+   "title": "Smiles",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "I saw a black girl once,\n  As black as winter's night;\nTill through her parted lips …"
+  },
+  {
+   "id": "davies_wh/13",
+   "title": "Mad Poll",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Social Commentaries"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "There goes mad Poll, dressed in wild flowers,\n  Poor, crazy Poll, now old and wan;\nHer hair all down, like any child: …"
+  },
+  {
+   "id": "davies_wh/14",
+   "title": "Francis Thompson",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Death & Dying"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "Thou hadst no home, and thou couldst see\n  In every street the windows' light:\n  Dragging thy limbs about all night, …"
+  },
+  {
+   "id": "davies_wh/15",
+   "title": "The Bird-Man",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Nature"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "Man is a bird:\n  He rises on fine wings\nInto the Heaven's clear light; …"
+  },
+  {
+   "id": "davies_wh/16",
+   "title": "Winter's Beauty",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "Is it not fine to walk in spring,\nWhen leaves are born, and hear birds sing?\nAnd when they lose their singing powers, …"
+  },
+  {
+   "id": "davies_wh/17",
+   "title": "The Church Organ",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Religion"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "The homeless man has heard thy voice,\n  Its sound doth move his memory deep;\nHe stares bewildered, as a man …"
+  },
+  {
+   "id": "davies_wh/18",
+   "title": "Heigh Ho, the Rain",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "The Lark that in heaven dim\n  Can match a rainy hour\n  With his own music's shower, …"
+  },
+  {
+   "id": "davies_wh/19",
+   "title": "Night Wanderers",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "They hear the bell of midnight toll,\nAnd shiver in their flesh and soul;\nThey lie on hard, cold wood or stone, …"
+  },
+  {
+   "id": "davies_wh/20",
+   "title": "Who I Know",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Relationships"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "I do not know his grace the Duke,\n  Outside whose gilded gate there died\nOf want a feeble, poor old man, …"
+  },
+  {
+   "id": "davies_wh/21",
+   "title": "The Two Lives",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Arts & Sciences"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "Now how could I, with gold to spare,\n  Who know the harlot's arms, and wine,\nSit in this green field all alone, …"
+  },
+  {
+   "id": "davies_wh/22",
+   "title": "Life Is Jolly",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Social Commentaries"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "This life is jolly, O!\n  I envy no man's lot;\nMy eyes can much admire, …"
+  },
+  {
+   "id": "davies_wh/23",
+   "title": "The Fog",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Social Commentaries"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "I saw the fog grow thick,\n  Which soon made blind my ken;\nIt made tall men of boys, …"
+  },
+  {
+   "id": "davies_wh/24",
+   "title": "Dreams of the Sea",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "I know not why I yearn for thee again,\n  To sail once more upon thy fickle flood;\nI'll hear thy waves wash under my death-bed, …"
+  },
+  {
+   "id": "davies_wh/25",
+   "title": "The Helpless",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "Those poor, heartbroken wretches, doomed\n  To hear at night the clocks' hard tones;\nThey have no beds to warm their limbs, …"
+  },
+  {
+   "id": "davies_wh/26",
+   "title": "Children at Play",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "I hear a merry noise indeed:\n  Is it the geese and ducks that take\nTheir first plunge in a quiet pond …"
+  },
+  {
+   "id": "davies_wh/27",
+   "title": "When the Cuckoo Sings",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "In summer, when the Cuckoo sings,\n  And clouds like greater moons can shine;\nWhen every leafy tree doth hold …"
+  },
+  {
+   "id": "davies_wh/28",
+   "title": "My Youth",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Arts & Sciences"
+   ],
+   "collection": "Foliage (1913)",
+   "excerpt": "My youth was my old age,\n    Weary and long;\nIt had too many cares …"
+  },
+  {
+   "id": "davies_wh/29",
+   "title": "Leisure",
+   "authorSlug": "davies_wh",
+   "author": "W. H. Davies",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "Songs of Joy (1911)",
+   "excerpt": "What is this life if, full of care,\nWe have no time to stand and stare.\n …"
   },
   {
    "id": "belloc/0",
