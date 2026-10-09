@@ -1,5 +1,5 @@
 {
- "count": 11836,
+ "count": 11847,
  "workCount": 45,
  "poets": [
   {
@@ -2029,6 +2029,22 @@
    "workCount": 0
   },
   {
+   "slug": "binyon",
+   "name": "Laurence Binyon",
+   "dates": "1869–1943",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/binyon.jpg",
+   "credit": "Portrait of Laurence Binyon by William Strang (1901) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Laurence Binyon (1869–1943) was an English poet, playwright and art historian, born in Lancaster and educated at St Paul’s School and Oxford. He worked at the British Museum, where he became Keeper of Prints and Drawings and a leading authority on Asian art.",
+    "He is best known for “For the Fallen,” published in The Times in September 1914, whose fourth stanza is read at Remembrance services. He also wrote odes, narrative poems and a verse translation of Dante’s Divine Comedy."
+   ],
+   "order": 1403,
+   "poemCount": 11,
+   "workCount": 0
+  },
+  {
    "slug": "mew",
    "name": "Charlotte Mew",
    "dates": "1869–1928",
@@ -2200,7 +2216,7 @@
   },
   {
    "name": "Love",
-   "count": 2385
+   "count": 2387
   },
   {
    "name": "Religion",
@@ -2208,11 +2224,11 @@
   },
   {
    "name": "Death & Dying",
-   "count": 758
+   "count": 761
   },
   {
    "name": "History & Politics",
-   "count": 650
+   "count": 654
   },
   {
    "name": "Relationships",
@@ -2224,11 +2240,11 @@
   },
   {
    "name": "Time & Brevity",
-   "count": 275
+   "count": 276
   },
   {
    "name": "The Mind",
-   "count": 247
+   "count": 248
   },
   {
    "name": "Social Commentaries",
@@ -142990,6 +143006,147 @@
    ],
    "collection": "The Tower (1928)",
    "excerpt": "They hold their public meetings where\nOur most renowned patriots stand,\nOne among the birds of the air, …"
+  },
+  {
+   "id": "binyon/0",
+   "title": "For the Fallen",
+   "authorSlug": "binyon",
+   "author": "Laurence Binyon",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "The Winnowing-Fan (1914)",
+   "excerpt": "With proud thanksgiving, a mother for her children,\nEngland mourns for her dead across the sea.\nFlesh of her flesh they were, spirit of her spirit, …"
+  },
+  {
+   "id": "binyon/1",
+   "title": "The Fourth of August",
+   "authorSlug": "binyon",
+   "author": "Laurence Binyon",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "Poems of the Great War (1914)",
+   "excerpt": "Now in thy splendour go before us,\n  Spirit of England, ardent-eyed!\nEnkindle this dear earth that bore us, …"
+  },
+  {
+   "id": "binyon/2",
+   "title": "To the Belgians",
+   "authorSlug": "binyon",
+   "author": "Laurence Binyon",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "A Treasury of War Poetry (1917)",
+   "excerpt": "Horace that Cæsar knew,\nThat won stern Roman praise,\nWhat land not envies you …"
+  },
+  {
+   "id": "binyon/3",
+   "title": "The New World",
+   "authorSlug": "binyon",
+   "author": "Laurence Binyon",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Time & Brevity"
+   ],
+   "collection": "A Treasury of War Poetry (1917)",
+   "excerpt": "Now is the time of the splendour of Youth and Death.\nThe spirit of man grows grander than men knew.\nThe unbearable burden is borne, the impossible done; …"
+  },
+  {
+   "id": "binyon/4",
+   "title": "Men of Verdun",
+   "authorSlug": "binyon",
+   "author": "Laurence Binyon",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "A Treasury of War Poetry (1917)",
+   "excerpt": "There are five men in the moonlight\nThat by their shadows stand;\nThree hobble humped on crutches, …"
+  },
+  {
+   "id": "binyon/5",
+   "title": "Oxford in War-Time",
+   "authorSlug": "binyon",
+   "author": "Laurence Binyon",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "History & Politics"
+   ],
+   "collection": "A Treasury of War Poetry (1917)",
+   "excerpt": "What alters you, familiar lawn and tower,\nArched alley, and garden green to the grey wall\nWith crumbling crevice and the old wine-red flower, …"
+  },
+  {
+   "id": "binyon/6",
+   "title": "The Healers",
+   "authorSlug": "binyon",
+   "author": "Laurence Binyon",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Living"
+   ],
+   "collection": "A Treasury of War Poetry (1917)",
+   "excerpt": "In a vision of the night I saw them,\nIn the battles of the night.\n'Mid the roar and the reeling shadows of blood …"
+  },
+  {
+   "id": "binyon/7",
+   "title": "The Orphans of Flanders",
+   "authorSlug": "binyon",
+   "author": "Laurence Binyon",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Relationships"
+   ],
+   "collection": "The Book of the Homeless (1916)",
+   "excerpt": "Where is the land that fathered, nourished, poured\nThe sap of a strong race into your veins,—\nLand of wide tilth, of farms and granaries stored, …"
+  },
+  {
+   "id": "binyon/8",
+   "title": "Youth",
+   "authorSlug": "binyon",
+   "author": "Laurence Binyon",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Time & Brevity"
+   ],
+   "collection": "Primavera (1890)",
+   "excerpt": "YOUTH\n\n …"
+  },
+  {
+   "id": "binyon/9",
+   "title": "Testamentum Amoris",
+   "authorSlug": "binyon",
+   "author": "Laurence Binyon",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "The Mind"
+   ],
+   "collection": "Primavera (1890)",
+   "excerpt": "TESTAMENTUM AMORIS\n\n …"
+  },
+  {
+   "id": "binyon/10",
+   "title": "Psyche",
+   "authorSlug": "binyon",
+   "author": "Laurence Binyon",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "The Mind"
+   ],
+   "collection": "Primavera (1890)",
+   "excerpt": "PSYCHE\n\n …"
   },
   {
    "id": "mew/0",
