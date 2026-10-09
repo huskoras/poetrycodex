@@ -32,3 +32,9 @@ namespace_id = "1002"
   [ratelimits.simple]
   limit = 3
   period = 60
+
+# Readings that have already been written, keyed by poem and lens. Each one is
+# paid for once; every later reader gets it back for nothing.
+[[kv_namespaces]]
+binding = "READINGS"
+id = "31a49e2007dd42b48a0b00e3f86fb017"

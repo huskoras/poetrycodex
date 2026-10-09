@@ -38,7 +38,8 @@ const ALLOWED_ORIGINS = new Set([
 const MAX_TEXT_CHARS = 24000;
 const MAX_FIELD_CHARS = 200;
 const MAX_QUESTION_CHARS = 400;
-const MAX_TOKENS = 2000;
+// Thinking is billed against this too, so it must leave room for the reading.
+const MAX_TOKENS = 4000;
 const MAX_GLOSS_TOKENS = 8000;
 // Longer than this and a line-by-line gloss is no longer a sensible unit of work.
 const MAX_GLOSS_CHARS = 6000;
@@ -349,6 +350,36 @@ function tally(into, usage) {
   return into;
 }
 
+
+// A reading is fully determined by its route, its model settings, its system
+// text and its user prompt, so a hash of exactly those is a safe cache key: any
+// change to a prompt, a lens or the poem itself produces a new key by itself.
+async function sha256Hex(text) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+// Replays a stored reading in the same stream format a live one uses, so the
+// page cannot tell the difference.
+function cachedReadingSSE(text, origin) {
+  const encoder = new TextEncoder();
+  const body = new ReadableStream({
+    start(controller) {
+      controller.enqueue(encoder.encode("data: " + JSON.stringify({ t: text }) + "\n\n"));
+      controller.enqueue(encoder.encode("data: " + JSON.stringify({ cached: true }) + "\n\n"));
+      controller.enqueue(encoder.encode("data: [DONE]\n\n"));
+      controller.close();
+    },
+  });
+  return new Response(body, {
+    headers: {
+      "Content-Type": "text/event-stream; charset=utf-8",
+      "Cache-Control": "no-store",
+      ...corsHeaders(origin),
+    },
+  });
+}
+
 function corsHeaders(origin) {
   return {
     "Access-Control-Allow-Origin": ALLOWED_ORIGINS.has(origin) ? origin : "https://poetrycodex.com",
@@ -630,11 +661,24 @@ export default {
           : "");
     }
 
+    // Readings of a poem through a given lens are the same every time, so once
+    // one has been written it is served from storage. Questions are not cached:
+    // they are free text and rarely repeat.
+    const maxTokens = route === "/api/gloss" ? MAX_GLOSS_TOKENS : MAX_TOKENS;
+    let cacheKey = null;
+    if (route !== "/api/ask" && env.READINGS) {
+      cacheKey = "r:" + (await sha256Hex(JSON.stringify([
+        route, MODEL, "high", maxTokens, system.map((b) => b.text), prompt,
+      ])));
+      const stored = await env.READINGS.get(cacheKey);
+      if (stored) return cachedReadingSSE(stored, origin);
+    }
+
     const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
     const stream = client.messages.stream({
       model: MODEL,
       // A gloss runs the length of the poem; a reading is a few paragraphs.
-      max_tokens: route === "/api/gloss" ? MAX_GLOSS_TOKENS : MAX_TOKENS,
+      max_tokens: maxTokens,
       output_config: { effort: "high" },
       system,
       messages: [{ role: "user", content: prompt }],
@@ -644,16 +688,26 @@ export default {
     const sse = new ReadableStream({
       async start(controller) {
         const send = (obj) => controller.enqueue(encoder.encode("data: " + JSON.stringify(obj) + "\n\n"));
+        let full = "";
+        let refused = false;
         try {
           for await (const event of stream) {
             if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
+              full += event.delta.text;
               send({ t: event.delta.text });
             } else if (event.type === "message_delta" && event.delta.stop_reason === "refusal") {
+              refused = true;
               send({ error: "The engine declined to produce this reading." });
             }
           }
           const final = await stream.finalMessage().catch(() => null);
           if (final) send({ usage: tally({ in: 0, out: 0, cacheWrite: 0, cacheRead: 0 }, final.usage) });
+          // Keep only a complete, unrefused reading: a truncated one would be
+          // served to everyone who asks after.
+          if (cacheKey && !refused && full.trim() && final && final.stop_reason === "end_turn") {
+            await env.READINGS.put(cacheKey, full).catch((e) =>
+              console.error("cache write failed:", (e && e.message) || e));
+          }
           controller.enqueue(encoder.encode("data: [DONE]\n\n"));
         } catch (err) {
           send({ error: "The reading could not be completed. Please try again." });
