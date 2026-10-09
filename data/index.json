@@ -1,5 +1,5 @@
 {
- "count": 12003,
+ "count": 12032,
  "workCount": 45,
  "poets": [
   {
@@ -986,6 +986,22 @@
    ],
    "order": 620,
    "poemCount": 9,
+   "workCount": 0
+  },
+  {
+   "slug": "gay",
+   "name": "John Gay",
+   "dates": "1685–1732",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "John Gay (1685–1732) was an English poet and dramatist, born in Barnstaple, Devon. A friend of Pope, Swift and Arbuthnot, he wrote Trivia, a mock-georgic on walking the streets of London, and The Beggar’s Opera (1728), a ballad opera that was a great popular success.",
+    "His Fables, published in two series in 1727 and 1738, are short verse stories in which animals speak and act as foils to human folly. They were widely read for generations and are the part of his verse that still has readers."
+   ],
+   "order": 640,
+   "poemCount": 29,
    "workCount": 0
   },
   {
@@ -2288,15 +2304,15 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2495
+   "count": 2496
   },
   {
    "name": "Living",
-   "count": 2462
+   "count": 2463
   },
   {
    "name": "Love",
-   "count": 2397
+   "count": 2398
   },
   {
    "name": "Religion",
@@ -2304,7 +2320,7 @@
   },
   {
    "name": "Death & Dying",
-   "count": 782
+   "count": 785
   },
   {
    "name": "History & Politics",
@@ -2312,11 +2328,11 @@
   },
   {
    "name": "Relationships",
-   "count": 423
+   "count": 427
   },
   {
    "name": "Arts & Sciences",
-   "count": 362
+   "count": 365
   },
   {
    "name": "Time & Brevity",
@@ -2328,7 +2344,7 @@
   },
   {
    "name": "Social Commentaries",
-   "count": 145
+   "count": 161
   },
   {
    "name": "Mythology & Folklore",
@@ -51910,6 +51926,383 @@
    ],
    "collection": null,
    "excerpt": "The shepherds and the nymphs were seen\nPleading before the Cyprian queen.\nThe counsel for the fair began, …"
+  },
+  {
+   "id": "gay/0",
+   "title": "The Shepherd and the Philosopher",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "Remote from cities lived a swain,\nUnvexed with all the cares of gain;\nHis head was silvered o'er with age, …"
+  },
+  {
+   "id": "gay/1",
+   "title": "The Lion, the Tiger, and the Traveller",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "Accept, young Prince, the moral lay\nAnd in these tales mankind survey;\nWith early virtues plant your breast, …"
+  },
+  {
+   "id": "gay/2",
+   "title": "The Spaniel and the Cameleon",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "A spaniel, bred with all the care\nThat waits upon a favourite heir,\nNe'er felt correction's rigid hand; …"
+  },
+  {
+   "id": "gay/3",
+   "title": "The Mother, the Nurse, and the Fairy",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Living"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "Give me a son! The blessing sent,\nWere ever parents more content?\nHow partial are their doting eyes! …"
+  },
+  {
+   "id": "gay/4",
+   "title": "The Wild Boar and the Ram",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "Against an elm a sheep was tied,\nThe butcher's knife in blood was dyed:\nThe patient flock in silent fright, …"
+  },
+  {
+   "id": "gay/5",
+   "title": "The Miser and Plutus",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "The wind was high, the window shakes,\nWith sudden start the miser wakes;\nAlong the silent room he stalks; …"
+  },
+  {
+   "id": "gay/6",
+   "title": "The Lion, the Fox, and the Geese",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "A lion, tired with state affairs,\nQuite sick of pomp, and worn with cares,\nResolved (remote from noise and strife) …"
+  },
+  {
+   "id": "gay/7",
+   "title": "The Lady and the Wasp",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Relationships"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "What whispers must the beauty bear!\nWhat hourly nonsense haunts her ear!\nWhere'er her eyes dispense their charms, …"
+  },
+  {
+   "id": "gay/8",
+   "title": "The Elephant and the Bookseller",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "The man who, with undaunted toils,\nSails unknown seas to unknown soils,\nWith various wonders feasts his sight: …"
+  },
+  {
+   "id": "gay/9",
+   "title": "The Peacock, the Turkey, and the Goose",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "In beauty faults conspicuous grow;\nThe smallest speck is seen on snow.\n   As near a barn, by hunger led, …"
+  },
+  {
+   "id": "gay/10",
+   "title": "Cupid, Hymen, and Plutus",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "As Cupid in Cythera's grove\nEmployed the lesser powers of love;\nSome shape the bow, or fit the string; …"
+  },
+  {
+   "id": "gay/11",
+   "title": "The Tame Stag",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "As a young stag the thicket pass'd,\nThe branches held his antlers fast;\nA clown, who saw the captive hung, …"
+  },
+  {
+   "id": "gay/12",
+   "title": "The Monkey Who Had Seen the World",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "A Monkey, to reform the times,\nResolved to visit foreign climes:\nFor men in distant regions roam …"
+  },
+  {
+   "id": "gay/13",
+   "title": "The Pin and the Needle",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Relationships"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "A pin, who long had served a beauty,\nProficient in the toilet's duty,\nHad formed her sleeve, confined her hair, …"
+  },
+  {
+   "id": "gay/14",
+   "title": "The Shepherd's Dog and the Wolf",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "A wolf, with hunger fierce and bold,\nRavaged the plains, and thinned the fold:\nDeep in the wood secure he lay, …"
+  },
+  {
+   "id": "gay/15",
+   "title": "The Painter Who Pleased Nobody and Everybody",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "Lest men suspect your tale untrue,\nKeep probability in view.\nThe traveller leaping o'er those bounds, …"
+  },
+  {
+   "id": "gay/16",
+   "title": "The Old Hen and the Cock",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Living"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "Restrain your child; you'll soon believe\nThe text which says, we sprung from Eve.\n   As an old hen led forth her train, …"
+  },
+  {
+   "id": "gay/17",
+   "title": "The Old Woman and Her Cats",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "Who friendship with a knave hath made,\nIs judged a partner in the trade.\nThe matron who conducts abroad …"
+  },
+  {
+   "id": "gay/18",
+   "title": "The Sick Man and the Angel",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Living"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "'Is there no hope?' the sick man said.\nThe silent doctor shook his head,\nAnd took his leave with signs of sorrow, …"
+  },
+  {
+   "id": "gay/19",
+   "title": "The Poet and the Rose",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Nature"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "I hate the man who builds his name\nOn ruins of another's fame.\nThus prudes, by characters o'erthrown, …"
+  },
+  {
+   "id": "gay/20",
+   "title": "The Court of Death",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Social Commentaries"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "Death, on a solemn night of state,\nIn all his pomp of terror sate:\nThe attendants of his gloomy reign, …"
+  },
+  {
+   "id": "gay/21",
+   "title": "The Hare and Many Friends",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Living"
+   ],
+   "collection": "Fables, Part I (1727)",
+   "excerpt": "Friendship, like love, is but a name,\nUnless to one you stint the flame.\nThe child, whom many fathers share, …"
+  },
+  {
+   "id": "gay/22",
+   "title": "The Dog and the Fox (To a Lawyer)",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Fables, Part II (1738)",
+   "excerpt": "I know you lawyers can with ease\nTwist words and meanings as you please;\nThat language, by your skill made pliant, …"
+  },
+  {
+   "id": "gay/23",
+   "title": "The Baboon and the Poultry (To a Levee-Hunter)",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Fables, Part II (1738)",
+   "excerpt": "We frequently misplace esteem,\nBy judging men by what they seem,\nTo birth, wealth, power, we should allow …"
+  },
+  {
+   "id": "gay/24",
+   "title": "The Ant in Office (To a Friend)",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Fables, Part II (1738)",
+   "excerpt": "You tell me, that you apprehend\nMy verse may touchy folks offend.\nIn prudence too you think my rhymes …"
+  },
+  {
+   "id": "gay/25",
+   "title": "The Squire and His Cur (To a Country Gentleman)",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Nature"
+   ],
+   "collection": "Fables, Part II (1738)",
+   "excerpt": "The man of pure and simple heart\nThrough life disdains a double part.\nHe never needs the screen of lies …"
+  },
+  {
+   "id": "gay/26",
+   "title": "The Degenerate Bees (To the Reverend Dr Swift, Dean of St Patrick's)",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Fables, Part II (1738)",
+   "excerpt": "Though Courts the practice disallow,\nA friend at all times I'll avow.\nIn politics I know 'tis wrong: …"
+  },
+  {
+   "id": "gay/27",
+   "title": "Pan and Fortune (To a Young Heir)",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Mythology & Folklore"
+   ],
+   "collection": "Fables, Part II (1738)",
+   "excerpt": "Soon as your father's death was known,\n(As if the estate had been their own)\nThe gamesters outwardly express'd …"
+  },
+  {
+   "id": "gay/28",
+   "title": "The Ravens, the Sexton, and the Earth-Worm (To Laura)",
+   "authorSlug": "gay",
+   "author": "John Gay",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "Fables, Part II (1738)",
+   "excerpt": "Laura, methinks you're over nice.\nTrue, flattery is a shocking vice;\nYet sure, whene'er the praise is just, …"
   },
   {
    "id": "pope/0",
