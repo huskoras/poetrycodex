@@ -1,5 +1,5 @@
 {
- "count": 12328,
+ "count": 12333,
  "workCount": 45,
  "poets": [
   {
@@ -2317,6 +2317,22 @@
    "workCount": 0
   },
   {
+   "slug": "yurdakul",
+   "name": "Mehmet Emin Yurdakul",
+   "dates": "1869–1944",
+   "era": "Late Ottoman",
+   "category": "Turkish & Ottoman",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Mehmet Emin Yurdakul was born in Beşiktaş, Istanbul, in 1869, the son of a fisherman. He made his name with 'Cenge Giderken' ('Going to War'), published in 1897 during the Greco-Turkish War. He wrote in plain spoken Turkish and the syllabic metre of folk poetry instead of the Persian-derived metres of Ottoman court verse, and became known as 'the Turkish poet'.",
+    "He served as an Ottoman provincial governor and an Ottoman deputy, and from 1923 until his death in 1944 sat in the Turkish Grand National Assembly. The poems below come from Türk Sazı ('The Turkish Saz', 1914). The text follows the third edition in modern Turkish letters (Atlas Kitabevi, 1979) as transcribed on tr.wikisource.org."
+   ],
+   "order": 1405,
+   "poemCount": 5,
+   "workCount": 0
+  },
+  {
    "slug": "mew",
    "name": "Charlotte Mew",
    "dates": "1869–1928",
@@ -2512,7 +2528,7 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2522
+   "count": 2523
   },
   {
    "name": "Love",
@@ -2520,7 +2536,7 @@
   },
   {
    "name": "Living",
-   "count": 2476
+   "count": 2477
   },
   {
    "name": "Religion",
@@ -2552,7 +2568,7 @@
   },
   {
    "name": "Social Commentaries",
-   "count": 187
+   "count": 190
   },
   {
    "name": "Mythology & Folklore",
@@ -148574,6 +148590,72 @@
    ],
    "collection": "Primavera (1890)",
    "excerpt": "She is not fair, as some are fair,\nCold as the snow, as sunshine gay:\nOn her clear brow, come grief what may, …"
+  },
+  {
+   "id": "yurdakul/0",
+   "title": "Sürücü",
+   "authorSlug": "yurdakul",
+   "author": "Mehmet Emin Yurdakul",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "Türk Sazı (1914). Original Turkish text.",
+   "excerpt": "Gidiyorduk: Kar üstünde bir incecik çığırdan;\nGidiyorduk: İri buzlar sarkıtmıştı her saçak;\nGidiyorduk: Ben hayvanın üzerinde, o yayan; …",
+   "translator": null
+  },
+  {
+   "id": "yurdakul/1",
+   "title": "On Para Ver",
+   "authorSlug": "yurdakul",
+   "author": "Mehmet Emin Yurdakul",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "Türk Sazı (1914). Original Turkish text.",
+   "excerpt": "— Beyefendi, çoluğunun, çocuğunun başıyçin\nOn paracık sadaka ver; ihtiyarı sevindir.\n— Öf, usandık bu dilenci sürüsünden, bütün gün. …",
+   "translator": null
+  },
+  {
+   "id": "yurdakul/2",
+   "title": "Bırak Şu Kuşçağızı",
+   "authorSlug": "yurdakul",
+   "author": "Mehmet Emin Yurdakul",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Türk Sazı (1914). Original Turkish text.",
+   "excerpt": "Bırak konsun, şu koskoca ormanlığın içinden\nBiçareye bir dikenli kara çalı çok mudur?\nO da tıpkı sizin gibi bir kanunla yaşarken …",
+   "translator": null
+  },
+  {
+   "id": "yurdakul/3",
+   "title": "Bıçaksız Katiller",
+   "authorSlug": "yurdakul",
+   "author": "Mehmet Emin Yurdakul",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "Türk Sazı (1914). Original Turkish text.",
+   "excerpt": "Diyorlar ki: «Bak, şu katil, insan değil, canavar;\nBir masumu kaplan gibi parçaladı o alçak.\nMadameki kan dökene ceza veren kanun var; …",
+   "translator": null
+  },
+  {
+   "id": "yurdakul/4",
+   "title": "Issız Ev",
+   "authorSlug": "yurdakul",
+   "author": "Mehmet Emin Yurdakul",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "The Mind"
+   ],
+   "collection": "Türk Sazı (1914). Original Turkish text.",
+   "excerpt": "Acep şu ev neden böyle ıssız, sönük, karanlık?...\nBak içinde ne bir mum var, ne bir çocuk sesi var.\nKapısında bir aç toprak, bacasında viranlık; …",
+   "translator": null
   },
   {
    "id": "mew/0",
