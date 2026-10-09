@@ -1,5 +1,5 @@
 {
- "count": 12279,
+ "count": 12282,
  "workCount": 45,
  "poets": [
   {
@@ -153,6 +153,22 @@
    "order": 80,
    "poemCount": 0,
    "workCount": 1
+  },
+  {
+   "slug": "yunus-emre",
+   "name": "Yunus Emre",
+   "dates": "d. c. 1321",
+   "era": "Medieval Anatolian",
+   "category": "Turkish & Ottoman",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Yunus Emre is the first recorded native poet of the Western Turks: a mystic who wrote in Anatolian Turkish rather than in the Persian forms that Ottoman court poets later preferred. Ottoman biographers describe him as nearly unlettered, a disciple of the holy man Tapduk Emre, whose verse was held to be a direct gift of God.",
+    "Only a little is known of his life, and the early sources disagree. E. J. W. Gibb, whose History of Ottoman Poetry (1900) gives the first English account of him, notes that one of his own poems dates his devotion to the Path to the year 707 AH (1307–8), which places him about a century before the dates given by later biographers."
+   ],
+   "order": 82,
+   "poemCount": 3,
+   "workCount": 0
   },
   {
    "slug": "anonymous-middle-english",
@@ -2444,7 +2460,7 @@
   },
   {
    "name": "Religion",
-   "count": 1714
+   "count": 1717
   },
   {
    "name": "Death & Dying",
@@ -7387,6 +7403,46 @@
    "collection": "Fragments",
    "excerpt": "with golden ankles",
    "translator": "trans. Henry Thornton Wharton (1885)"
+  },
+  {
+   "id": "yunus-emre/0",
+   "title": "Faith, Idol, Ka'ba-Fane Am I",
+   "authorSlug": "yunus-emre",
+   "author": "Yunus Emre",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. I (1900)",
+   "excerpt": "Faith, idol, Ka'ba-fane am I; who smites the sphere a-spin am I;\nThe cloud upon the heavens' face, likewise the rains that rain am I.\n …",
+   "translator": "trans. E. J. W. Gibb (1900)"
+  },
+  {
+   "id": "yunus-emre/1",
+   "title": "That Mighty One of 'Be! and 'Tis",
+   "authorSlug": "yunus-emre",
+   "author": "Yunus Emre",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. I (1900)",
+   "excerpt": "That Mighty One of 'Be! and 'tis,' that Lord of gracious sway am I.\nThat King who ere 'tis cut provides for each his bread each day am I.\n …",
+   "translator": "trans. E. J. W. Gibb (1900)"
+  },
+  {
+   "id": "yunus-emre/2",
+   "title": "Come and Let Us Two Be Comrades",
+   "authorSlug": "yunus-emre",
+   "author": "Yunus Emre",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Relationships"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. I (1900)",
+   "excerpt": "Come and let us two be comrades, come and let us seek the Loved One;\nCome and let us two be helpmates, come and let us seek the Loved One.\n …",
+   "translator": "trans. E. J. W. Gibb (1900)"
   },
   {
    "id": "anonymous-middle-english/0",
