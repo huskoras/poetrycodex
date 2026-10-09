@@ -1,5 +1,5 @@
 {
- "count": 12149,
+ "count": 12182,
  "workCount": 45,
  "poets": [
   {
@@ -1178,6 +1178,22 @@
    ],
    "order": 850,
    "poemCount": 7,
+   "workCount": 0
+  },
+  {
+   "slug": "barbauld",
+   "name": "Anna Laetitia Barbauld",
+   "dates": "1743–1825",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Anna Laetitia Barbauld (1743–1825), née Aikin, was born in Leicestershire, the daughter of a Dissenting minister and schoolmaster, and grew up at Warrington Academy. Her Poems (1773) went through several editions within a year, and she went on to write hymns, children’s books and essays and to teach at a school she ran with her husband.",
+    "Her later work includes the long political poem Eighteen Hundred and Eleven (1812), which looks forward to the decline of Britain and the rise of America. She was a friend of Joseph Priestley and a figure in the Dissenting and literary circles of her day."
+   ],
+   "order": 880,
+   "poemCount": 33,
    "workCount": 0
   },
   {
@@ -2384,7 +2400,7 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2509
+   "count": 2514
   },
   {
    "name": "Living",
@@ -2392,27 +2408,27 @@
   },
   {
    "name": "Love",
-   "count": 2404
+   "count": 2411
   },
   {
    "name": "Religion",
-   "count": 1706
+   "count": 1712
   },
   {
    "name": "Death & Dying",
-   "count": 803
+   "count": 804
   },
   {
    "name": "History & Politics",
-   "count": 678
+   "count": 680
   },
   {
    "name": "Relationships",
-   "count": 429
+   "count": 433
   },
   {
    "name": "Arts & Sciences",
-   "count": 384
+   "count": 389
   },
   {
    "name": "Time & Brevity",
@@ -2420,11 +2436,11 @@
   },
   {
    "name": "The Mind",
-   "count": 268
+   "count": 270
   },
   {
    "name": "Social Commentaries",
-   "count": 170
+   "count": 171
   },
   {
    "name": "Mythology & Folklore",
@@ -54136,6 +54152,428 @@
    ],
    "collection": null,
    "excerpt": "O my Luve’s like a red, red rose,\nThat’s newly sprung in June:\nO my Luve’s like the melodie, …"
+  },
+  {
+   "id": "barbauld/0",
+   "title": "A Summer Evening's Meditation",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "'TIS past! The sultry tyrant of the south\nHas spent his short-liv'd rage; more grateful hours\nMove silent on; the skies no more repel …"
+  },
+  {
+   "id": "barbauld/1",
+   "title": "An Address to the Deity",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "GOD of my life! and author of my days!\nPermit my feeble voice to lisp thy praise;\nAnd trembling, take upon a mortal tongue …"
+  },
+  {
+   "id": "barbauld/2",
+   "title": "Characters",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "OH! born to sooth distress, and lighten care;\nLively as soft, and innocent as fair;\nBlest with that sweet simplicity of thought …"
+  },
+  {
+   "id": "barbauld/3",
+   "title": "Corsica",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Nature"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "HAIL generous Corsica! unconquer'd isle!\nThe fort of freedom; that amidst the waves\nStands like a rock of adamant, and dares …"
+  },
+  {
+   "id": "barbauld/4",
+   "title": "Delia, an Elegy",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "YES, Delia loves! My fondest vows are blest;\nFarewell the memory of her past disdain;\nOne kind relenting glance has heal'd my breast, …"
+  },
+  {
+   "id": "barbauld/5",
+   "title": "Hymn to Content",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Nature"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "O Thou, the Nymph with placid eye!\nO seldom found, yet ever nigh!\nReceive my temperate vow: …"
+  },
+  {
+   "id": "barbauld/6",
+   "title": "Ode to Spring",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "SWEET daughter of a rough and stormy sire,\nHoar Winter's blooming child; delightful Spring!\nWhose unshorn locks with leaves …"
+  },
+  {
+   "id": "barbauld/7",
+   "title": "On a Lady's Writing",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Relationships"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "Her even lines her steady temper show;\nNeat as her dress, and polish'd as her brow;\nStrong as her judgment, easy as her air; …"
+  },
+  {
+   "id": "barbauld/8",
+   "title": "On the Backwardness of the Spring, 1771",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "IN vain the sprightly sun renews his course,\nClimbs up th' ascending signs and leads the day,\nWhile long embattled clouds repel his force, …"
+  },
+  {
+   "id": "barbauld/9",
+   "title": "On the Death of Mrs. Jennings",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "'TIS past: dear venerable shade, farewel!\nThy blameless life thy peaceful death shall tell.\nClear to the last thy setting orb has run; …"
+  },
+  {
+   "id": "barbauld/10",
+   "title": "Ovid to His Wife",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Mythology & Folklore"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "MY aged head now stoops its honours low,\nBow'd with the load of fifty winters' snow;\nAnd for the raven's glossy black assumes …"
+  },
+  {
+   "id": "barbauld/11",
+   "title": "The Groans of the Tankard",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Arts & Sciences"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "OF strange events I sing, and portents dire;\nThe wond'rous themes a reverent ear require:\nTho' strange the tale, the faithful Muse believe, …"
+  },
+  {
+   "id": "barbauld/12",
+   "title": "The Invitation, to Miss B—",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Nature"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "HEALTH to my friend, and long unbroken years,\nBy storms unruffled and unstain'd by tears:\nWing'd by new joys may each white minute fly; …"
+  },
+  {
+   "id": "barbauld/13",
+   "title": "The Mouse's Petition",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Social Commentaries"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "OH! hear a pensive prisoner's prayer,\nFor liberty that sighs;\nAnd never let thine heart be shut …"
+  },
+  {
+   "id": "barbauld/14",
+   "title": "The Origin of Song-Writing",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Mythology & Folklore",
+    "Love"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "WHEN Cupid, wanton boy, was young,\nHis wings unfledg'd, and rude his tongue,\nHe loiter'd in Arcadian bowers, …"
+  },
+  {
+   "id": "barbauld/15",
+   "title": "To Miss R—, on Her Attendance upon Her Mother at Buxton",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "WHEN blooming beauty in the noon of power,\nWhile offer'd joys demand each sprightly hour,\nWith all that pomp of charms and winning mien …"
+  },
+  {
+   "id": "barbauld/16",
+   "title": "To Mrs. P—, with Drawings of Birds and Insects",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Nature",
+    "Relationships"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "AMANDA bids; at her command again\nI seize the pencil, or resume the pen;\nNo other call my willing hand requires, …"
+  },
+  {
+   "id": "barbauld/17",
+   "title": "To Wisdom",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "O Wisdom! if thy soft controul\nCan sooth the sickness of the soul,\nCan bid the warring passions cease, …"
+  },
+  {
+   "id": "barbauld/18",
+   "title": "To a Lady, with Painted Flowers",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Nature"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "FLOWERS to the fair: To you these flowers I bring,\nAnd strive to greet you with an earlier spring.\nFlowers sweet, and gay, and delicate like you; …"
+  },
+  {
+   "id": "barbauld/19",
+   "title": "Verses on Mrs. Rowe",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "SUCH were the notes our chaster Sappho sung,\nAnd every Muse drop'd honey on her tongue.\nBlest shade! how pure a breath of praise was thine, …"
+  },
+  {
+   "id": "barbauld/20",
+   "title": "Verses Written in an Alcove",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "NOW the moon-beam's trembling lustre\nSilvers o'er the dewy green,\nAnd in soft and shadowy colours …"
+  },
+  {
+   "id": "barbauld/21",
+   "title": "Hymn I",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "JEHOVAH reigns: let every nation hear,\nAnd at his footstool bow with holy fear;\nLet heaven's high arches echo with his name, …"
+  },
+  {
+   "id": "barbauld/22",
+   "title": "Hymn II",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "PRAISE to God, immortal praise,\n\nFor the love that crowns our days; …"
+  },
+  {
+   "id": "barbauld/23",
+   "title": "Hymn III: For Easter-Sunday",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "AGAIN the Lord of life and light\nAwakes the kindling ray;\nUnseals the eyelids of the morn, …"
+  },
+  {
+   "id": "barbauld/24",
+   "title": "Hymn IV",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Relationships"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "BEHOLD, where breathing love divine,\nOur dying Master stands!\nHis weeping followers gathering round …"
+  },
+  {
+   "id": "barbauld/25",
+   "title": "Hymn V",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "AWAKE, my soul! lift up thine eyes,\nSee where thy foes against thee rise,\nIn long array, a numerous host; …"
+  },
+  {
+   "id": "barbauld/26",
+   "title": "Song I: Come Here, Fond Youth",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "COME here fond youth, whoe'er thou be,\nThat boasts to love as well as me;\nAnd if thy breast have felt so wide a wound, …"
+  },
+  {
+   "id": "barbauld/27",
+   "title": "Song II: If Ever Thou Didst Joy to Bind",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "IF ever thou didst joy to bind\nTwo hearts in equal pasion join'd,\nO son of Venus! hear me now, …"
+  },
+  {
+   "id": "barbauld/28",
+   "title": "Song III: Leave Me, Simple Shepherd",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "LEAVE me, simple shepherd, leave me;\nDrag no more a hopeless chain:\nI cannot like, nor would deceive thee; …"
+  },
+  {
+   "id": "barbauld/29",
+   "title": "Song IV: When Gentle Celia First I Knew",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "WHEN gentle Celia first I knew,\nA breast so good, so kind, so true,\nReason and taste approv'd; …"
+  },
+  {
+   "id": "barbauld/30",
+   "title": "Song V: As Near a Weeping Spring",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "AS near a weeping spring reclin'd\nThe beauteous Araminta pin'd,\nAnd mourn'd a false ungrateful youth; …"
+  },
+  {
+   "id": "barbauld/31",
+   "title": "Song VI: When First upon Your Tender Cheek",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "Poems (1773)",
+   "excerpt": "WHEN first upon your tender cheek\nI saw the morn of beauty break\nWith mild and cheering beam, …"
+  },
+  {
+   "id": "barbauld/32",
+   "title": "Eighteen Hundred and Eleven",
+   "authorSlug": "barbauld",
+   "author": "Anna Laetitia Barbauld",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "Eighteen Hundred and Eleven (1812)",
+   "excerpt": "Still the loud death drum, thundering from afar,\nO'er the vext nations pours the storm of war:\nTo the stern call still Britain bends her ear, …"
   },
   {
    "id": "smith/0",
