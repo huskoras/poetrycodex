@@ -16,6 +16,9 @@ Quick reminders:
   `poemCount`/`workCount`), then `python tools/build_search_index.py`, then
   `python tools/verify_split.py`, then commit the edited poet/work file together
   with the regenerated `data/index.json` and `data/search.json`.
+- Then run `python tools/build_pages.py` — it regenerates the static poem and poet
+  pages (`poem/`, `poet/`) and `sitemap.xml` that search engines index. Those
+  folders are generated: never edit them by hand.
 - Public domain only. Translations must be pre-1929 — record the `translator` field.
 - Never ingest editorial notes, introductions, footnotes or stage plays as "poems".
 - Spot-check extracted poems before committing; bad data is worse than no data.

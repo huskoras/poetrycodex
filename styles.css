@@ -696,3 +696,21 @@ textarea.ask-input {
 .archive-search button:hover { background: var(--accent-2); }
 
 @media (max-width: 560px) { .archive-search { width: 100%; } }
+
+
+/* ============ STATIC PAGES (poem and poet pages for search engines) ============ */
+.static-page .poem-text { white-space: normal; }
+.static-page .stanza { margin: 0 0 1.25em; }
+.static-page .read-in-archive { margin-top: 2.2rem; font-family: var(--sans); font-size: .78rem;
+  letter-spacing: .1em; text-transform: uppercase; }
+.static-page .read-in-archive a { color: var(--gold); text-decoration: none; font-weight: 700; }
+.static-page .read-in-archive a:hover { color: var(--accent); }
+.pn-row { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.6rem; }
+.pn { flex: 1; font-family: var(--serif); font-size: 1rem; line-height: 1.4; color: var(--ink-soft);
+  text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 1rem; }
+.pn:hover { border-color: var(--accent-2); color: var(--accent); }
+.pn.next { text-align: right; }
+.bio p { font-family: var(--serif); font-size: 1.1rem; line-height: 1.75; color: var(--ink-soft); margin: 0 0 1rem; max-width: 62ch; }
+.poet-poems { font-family: var(--serif); font-size: 1.08rem; line-height: 1.9; padding-left: 1.5rem; }
+.poet-poems a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line-strong); }
+.poet-poems a:hover { color: var(--accent); border-bottom-color: var(--accent); }
