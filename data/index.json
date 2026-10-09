@@ -1,5 +1,5 @@
 {
- "count": 11746,
+ "count": 11806,
  "workCount": 45,
  "poets": [
   {
@@ -2093,6 +2093,22 @@
    "workCount": 0
   },
   {
+   "slug": "lawrence",
+   "name": "D. H. Lawrence",
+   "dates": "1885–1930",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/lawrence.jpg",
+   "credit": "Passport photograph of D. H. Lawrence (1929) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "David Herbert Lawrence (1885–1930) was an English novelist, essayist and poet, born in Eastwood, Nottinghamshire, the son of a coal miner. He wrote Sons and Lovers, The Rainbow and Women in Love, and also much poetry from his early lyrics of Nottinghamshire to the free-verse poems of his years abroad.",
+    "The poems here come from Love Poems and Others (1913), Look! We Have Come Through! (1917), New Poems (1918) and Birds, Beasts and Flowers (1923), the last of which contains his best-known animal poems. He died in Vence, France, in 1930."
+   ],
+   "order": 1430,
+   "poemCount": 60,
+   "workCount": 0
+  },
+  {
    "slug": "brooke",
    "name": "Rupert Brooke",
    "dates": "1887–1915",
@@ -2159,28 +2175,28 @@
  ],
  "subjects": [
   {
-   "name": "Living",
-   "count": 2445
+   "name": "Nature",
+   "count": 2462
   },
   {
-   "name": "Nature",
-   "count": 2440
+   "name": "Living",
+   "count": 2447
   },
   {
    "name": "Love",
-   "count": 2363
+   "count": 2383
   },
   {
    "name": "Religion",
-   "count": 1670
+   "count": 1671
   },
   {
    "name": "Death & Dying",
-   "count": 754
+   "count": 757
   },
   {
    "name": "History & Politics",
-   "count": 649
+   "count": 650
   },
   {
    "name": "Relationships",
@@ -2188,23 +2204,23 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 343
+   "count": 344
   },
   {
    "name": "Time & Brevity",
-   "count": 270
+   "count": 273
   },
   {
    "name": "The Mind",
-   "count": 243
+   "count": 246
   },
   {
    "name": "Social Commentaries",
-   "count": 121
+   "count": 124
   },
   {
    "name": "Mythology & Folklore",
-   "count": 34
+   "count": 35
   }
  ],
  "works": [
@@ -144881,6 +144897,785 @@
    ],
    "collection": "Last Poems (1918)",
    "excerpt": "Chapel and gravestones, old and few,\nAre shrouded by a mountain fold\nFrom sound and view …"
+  },
+  {
+   "id": "lawrence/0",
+   "title": "Cherry Robbers",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "Under the long, dark boughs, like jewels red\n      In the hair of an Eastern girl\nShine strings of crimson cherries, as if had bled …"
+  },
+  {
+   "id": "lawrence/1",
+   "title": "Kisses in the Train",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "I saw the midlands\n  Revolve through her hair;\nThe fields of autumn …"
+  },
+  {
+   "id": "lawrence/2",
+   "title": "Wedding Morn",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "The morning breaks like a pomegranate\n    In a shining crack of red,\nAh, when to-morrow the dawn comes late …"
+  },
+  {
+   "id": "lawrence/3",
+   "title": "Bei Hennef",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "The little river twittering in the twilight,\nThe wan, wondering look of the pale sky,\n    This is almost bliss. …"
+  },
+  {
+   "id": "lawrence/4",
+   "title": "A Collier's Wife",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Relationships"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "Somebody's knocking at the door\n    Mother, come down and see.\n--I's think it's nobbut a beggar, …"
+  },
+  {
+   "id": "lawrence/5",
+   "title": "Aware",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "Slowly the moon is rising out of the ruddy haze,\nDivesting herself of her golden shift, and so\nEmerging white and exquisite; and I in amaze …"
+  },
+  {
+   "id": "lawrence/6",
+   "title": "A White Blossom",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "A tiny moon as white and small as a single jasmine flower\nLeans all alone above my window, on night's wintry bower,\nLiquid as lime-tree blossom, soft as brilliant water or rain …"
+  },
+  {
+   "id": "lawrence/7",
+   "title": "A Pang of Reminiscence",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "High and smaller goes the moon, she is small and very far from me,\nWistful and candid, watching me wistfully, and I see\nTrembling blue in her pallor a tear that surely I have seen before, …"
+  },
+  {
+   "id": "lawrence/8",
+   "title": "The Appeal",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "You, Helen, who see the stars\nAs mistletoe berries burning in a black tree,\nYou surely, seeing I am a bowl of kisses, …"
+  },
+  {
+   "id": "lawrence/9",
+   "title": "Corot",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Nature"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "The trees rise tall and taller, lifted\nOn a subtle rush of cool grey flame\nThat issuing out of the dawn has sifted …"
+  },
+  {
+   "id": "lawrence/10",
+   "title": "Lightning",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "I felt the lurch and halt of her heart\n    Next my breast, where my own heart was beating;\nAnd I laughed to feel it plunge and bound, …"
+  },
+  {
+   "id": "lawrence/11",
+   "title": "Reminder",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "Love Poems and Others (1913)",
+   "excerpt": "    Do you remember\nHow night after night swept level and low\nOverhead, at home, and had not one star, …"
+  },
+  {
+   "id": "lawrence/12",
+   "title": "Piano",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Relationships"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "Softly, in the dusk, a woman is singing to me;\nTaking me back down the vista of years, till I see\nA child sitting under the piano, in the boom of the tingling strings …"
+  },
+  {
+   "id": "lawrence/13",
+   "title": "Tarantella",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "Sad as he sits on the white sea-stone\nAnd the suave sea chuckles, and turns to the moon,\nAnd the moon significant smiles at the cliffs and the boulders. …"
+  },
+  {
+   "id": "lawrence/14",
+   "title": "In Church",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "In the choir the boys are singing the hymn.\n        The morning light on their lips\nMoves in silver-moist flashes, in musical trim. …"
+  },
+  {
+   "id": "lawrence/15",
+   "title": "Flapper",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "Love has crept out of her sealed heart\n  As a field-bee, black and amber,\n  Breaks from the winter-cell, to clamber …"
+  },
+  {
+   "id": "lawrence/16",
+   "title": "Gipsy",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Social Commentaries"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "I, the man with the red scarf,\n   Will give thee what I have, this last week's earnings.\nTake them, and buy thee a silver ring …"
+  },
+  {
+   "id": "lawrence/17",
+   "title": "Love Storm",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "Many roses in the wind\nAre tapping at the window-sash.\nA hawk is in the sky; his wings …"
+  },
+  {
+   "id": "lawrence/18",
+   "title": "Twenty Years Ago",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "Round the house were lilacs and strawberries\n  And foal-foots spangling the paths,\nAnd far away on the sand-hills, dewberries …"
+  },
+  {
+   "id": "lawrence/19",
+   "title": "Narcissus",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Mythology & Folklore"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "Where the minnows trace\nA glinting web quick hid in the gloom of the brook,\nWhen I think of the place …"
+  },
+  {
+   "id": "lawrence/20",
+   "title": "Autumn Sunshine",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "The sun sets out the autumn crocuses\n  And fills them up a pouring measure\n  Of death-producing wine, till treasure …"
+  },
+  {
+   "id": "lawrence/21",
+   "title": "The North Country",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Nature"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "In another country, black poplars shake themselves over a pond,\nAnd rooks and the rising smoke-waves scatter and wheel from the works beyond;\nThe air is dark with north and with sulphur, the grass is a darker green, …"
+  },
+  {
+   "id": "lawrence/22",
+   "title": "Heimweh",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "History & Politics"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "Far-off the lily-statues stand white-ranked in the garden at home.\nWould God they were shattered quickly, the cattle would tread them out in the loam.\nI wish the elder trees in flower could suddenly heave, and burst …"
+  },
+  {
+   "id": "lawrence/23",
+   "title": "Coming Awake",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Nature"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "When I woke, the lake-lights were quivering on the wall,\nThe sunshine swam in a shoal across and across,\nAnd a hairy, big bee hung over the primulas …"
+  },
+  {
+   "id": "lawrence/24",
+   "title": "Birdcage Walk",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Social Commentaries"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "When the wind blows her veil\n  And uncovers her laughter\nI cease, I turn pale. …"
+  },
+  {
+   "id": "lawrence/25",
+   "title": "Thief in the Night",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Love"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "Last night a thief came to me\n  And struck at me with something dark.\nI cried, but no one could hear me, …"
+  },
+  {
+   "id": "lawrence/26",
+   "title": "Sigh No More",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "New Poems (1918)",
+   "excerpt": "The cuckoo and the coo-dove's ceaseless calling,\n               Calling,\nOf a meaningless monotony is palling …"
+  },
+  {
+   "id": "lawrence/27",
+   "title": "Song of a Man Who Has Come Through",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Love"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "Not I, not I, but the wind that blows through me!\nA fine wind is blowing the new direction of Time.\nIf only I let it bear me, carry me, if only it carry me! …"
+  },
+  {
+   "id": "lawrence/28",
+   "title": "Gloire de Dijon",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "When she rises in the morning\nI linger to watch her;\nShe spreads the bath-cloth underneath the window …"
+  },
+  {
+   "id": "lawrence/29",
+   "title": "River Roses",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "By the Isar, in the twilight\nWe were wandering and singing,\nBy the Isar, in the evening …"
+  },
+  {
+   "id": "lawrence/30",
+   "title": "Green",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "The dawn was apple-green,\nThe sky was green wine held up in the sun,\nThe moon was a golden petal between. …"
+  },
+  {
+   "id": "lawrence/31",
+   "title": "Moonrise",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "And who has seen the moon, who has not seen\nHer rise from out the chamber of the deep,\nFlushed and grand and naked, as from the chamber …"
+  },
+  {
+   "id": "lawrence/32",
+   "title": "Elegy",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "The sun immense and rosy\nMust have sunk and become extinct\nThe night you closed your eyes for ever against me. …"
+  },
+  {
+   "id": "lawrence/33",
+   "title": "Rabbit Snared in the Night",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "Why do you spurt and sprottle\nlike that, bunny?\nWhy should I want to throttle …"
+  },
+  {
+   "id": "lawrence/34",
+   "title": "A Doe at Evening",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "As I went through the marshes\na doe sprang out of the corn\nand flashed up the hill-side …"
+  },
+  {
+   "id": "lawrence/35",
+   "title": "Winter Dawn",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "Green star Sirius\nDribbling over the lake;\nThe stars have gone so far on their road, …"
+  },
+  {
+   "id": "lawrence/36",
+   "title": "Hymn to Priapus",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "My love lies underground\nWith her face upturned to mine,\nAnd her mouth unclosed in a last long kiss …"
+  },
+  {
+   "id": "lawrence/37",
+   "title": "A Young Wife",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "The pain of loving you\nIs almost more than I can bear.\n …"
+  },
+  {
+   "id": "lawrence/38",
+   "title": "People",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Time & Brevity"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "The great gold apples of night\nHang from the street's long bough\n         Dripping their light …"
+  },
+  {
+   "id": "lawrence/39",
+   "title": "Song of a Man Who Is Not Loved",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "The Mind"
+   ],
+   "collection": "Look! We Have Come Through! (1917)",
+   "excerpt": "The space of the world is immense, before me and\n   around me;\nIf I turn quickly, I am terrified, feeling space …"
+  },
+  {
+   "id": "lawrence/40",
+   "title": "Pomegranate",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "You tell me I am wrong.\nWho are you, who is anybody to tell me I am wrong?\nI am not wrong. …"
+  },
+  {
+   "id": "lawrence/41",
+   "title": "Peach",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "Would you like to throw a stone at me?\nHere, take all that’s left of my peach.\n …"
+  },
+  {
+   "id": "lawrence/42",
+   "title": "Medlars and Sorb-Apples",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "I love you, rotten,\nDelicious rottenness.\n …"
+  },
+  {
+   "id": "lawrence/43",
+   "title": "Figs",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "The proper way to eat a fig, in society,\nIs to split it in four, holding it by the stump,\nAnd open it, so that it is a glittering, rosy, moist, honied, heavy-petalled four-petalled flower. …"
+  },
+  {
+   "id": "lawrence/44",
+   "title": "Cypresses",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Nature"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "Tuscan cypresses,\nWhat is it?\n …"
+  },
+  {
+   "id": "lawrence/45",
+   "title": "Bare Fig-Trees",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Social Commentaries"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "Fig-trees, weird fig-trees\nMade of thick smooth silver,\nMade of sweet, untarnished silver in the sea-southern air-- …"
+  },
+  {
+   "id": "lawrence/46",
+   "title": "Almond Blossom",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "Even iron can put forth,\nEven iron.\n …"
+  },
+  {
+   "id": "lawrence/47",
+   "title": "Purple Anemones",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "Who gave us flowers?\nHeaven? The white God?\n …"
+  },
+  {
+   "id": "lawrence/48",
+   "title": "The Mosquito",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Social Commentaries"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "When did you start your tricks\nMonsieur?\n …"
+  },
+  {
+   "id": "lawrence/49",
+   "title": "Fish",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": " Fish, oh Fish,\n So little matters!\n …"
+  },
+  {
+   "id": "lawrence/50",
+   "title": "Bat",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Mythology & Folklore"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "At evening, sitting on this terrace,\nWhen the sun from the west, beyond Pisa, beyond the mountains of Carrara\nDeparts, and the world is taken by surprise ... …"
+  },
+  {
+   "id": "lawrence/51",
+   "title": "Snake",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "A snake came to my water-trough\nOn a hot, hot day, and I in pyjamas for the heat,\nTo drink there. …"
+  },
+  {
+   "id": "lawrence/52",
+   "title": "Baby Tortoise",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "You know what it is to be born alone,\nBaby tortoise!\n …"
+  },
+  {
+   "id": "lawrence/53",
+   "title": "Tortoise Shout",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "I thought he was dumb,\nI said he was dumb,\nYet I’ve heard him cry. …"
+  },
+  {
+   "id": "lawrence/54",
+   "title": "Turkey-Cock",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Mythology & Folklore"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "You ruffled black blossom,\nYou glossy dark wind.\n …"
+  },
+  {
+   "id": "lawrence/55",
+   "title": "Humming-Bird",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "I can imagine, in some otherworld\nPrimeval-dumb, far back\nIn that most awful stillness, that only gasped and hummed, …"
+  },
+  {
+   "id": "lawrence/56",
+   "title": "Eagle in New Mexico",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "Towards the sun, towards the south-west\nA scorched breast.\nA scorched breast, breasting the sun like an answer, …"
+  },
+  {
+   "id": "lawrence/57",
+   "title": "The Blue Jay",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "The blue jay with a crest on his head\nComes round the cabin in the snow.\nHe runs in the snow like a bit of blue metal, …"
+  },
+  {
+   "id": "lawrence/58",
+   "title": "Kangaroo",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "In the northern hemisphere\nLife seems to leap at the air, or skim under the wind\nLike stags on rocky ground, or pawing horses, or springy scut-tailed rabbits. …"
+  },
+  {
+   "id": "lawrence/59",
+   "title": "Mountain Lion",
+   "authorSlug": "lawrence",
+   "author": "D. H. Lawrence",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Birds, Beasts and Flowers (1923)",
+   "excerpt": "Climbing through the January snow, into the Lobo canyon\nDark grow the spruce-trees, blue is the balsam, water sounds still unfrozen, and the trail is still evident.\n …"
   },
   {
    "id": "brooke/0",
