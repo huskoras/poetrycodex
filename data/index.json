@@ -1,5 +1,5 @@
 {
- "count": 11322,
+ "count": 11357,
  "workCount": 45,
  "poets": [
   {
@@ -1085,6 +1085,22 @@
    "workCount": 0
   },
   {
+   "slug": "smith",
+   "name": "Charlotte Smith",
+   "dates": "1749–1806",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": "poets/smith.jpg",
+   "credit": "Portrait of Charlotte Smith by George Romney (1792) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Charlotte Smith (1749–1806) was an English poet and novelist, born Charlotte Turner and raised in Sussex and Surrey. Married young to a spendthrift husband who was imprisoned for debt in 1783, she turned to writing to support her many children.",
+    "Her Elegiac Sonnets (1784), expanded through many editions, is often credited with reviving the English sonnet as a form for personal feeling, and its melancholy landscapes of the Sussex downs and coast lie behind much Romantic poetry. She was also a successful novelist, and her long blank-verse poem Beachy Head appeared after her death in 1807."
+   ],
+   "order": 885,
+   "poemCount": 35,
+   "workCount": 0
+  },
+  {
    "slug": "blake",
    "name": "William Blake",
    "dates": "1757–1827",
@@ -1972,7 +1988,7 @@
   },
   {
    "name": "Nature",
-   "count": 2363
+   "count": 2383
   },
   {
    "name": "Love",
@@ -1984,11 +2000,11 @@
   },
   {
    "name": "Death & Dying",
-   "count": 704
+   "count": 705
   },
   {
    "name": "History & Politics",
-   "count": 600
+   "count": 603
   },
   {
    "name": "Relationships",
@@ -1996,15 +2012,15 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 322
+   "count": 324
   },
   {
    "name": "Time & Brevity",
-   "count": 241
+   "count": 243
   },
   {
    "name": "The Mind",
-   "count": 218
+   "count": 225
   },
   {
    "name": "Social Commentaries",
@@ -52022,6 +52038,461 @@
    ],
    "collection": null,
    "excerpt": "O my Luve’s like a red, red rose,\nThat’s newly sprung in June:\nO my Luve’s like the melodie, …"
+  },
+  {
+   "id": "smith/0",
+   "title": "Sonnet I",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "The partial Muse, has from my earliest hours\n  Smil'd on the rugged path I'm doom'd to tread,\nAnd still with sportive hand has snatch'd wild flowers, …"
+  },
+  {
+   "id": "smith/1",
+   "title": "Sonnet II: Written at the Close of Spring",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "The garlands fade that Spring so lately wove,\n  Each simple flower which she had nursed in dew,\nAnemonies, that spangled every grove, …"
+  },
+  {
+   "id": "smith/2",
+   "title": "Sonnet III: To a Nightingale",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Poor melancholy bird—that all night long\nTell'st to the Moon thy tale of tender woe;\nFrom what sad cause can such sweet sorrow flow, …"
+  },
+  {
+   "id": "smith/3",
+   "title": "Sonnet IV: To the Moon",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Queen of the silver bow!—by thy pale beam,\n  Alone and pensive, I delight to stray,\nAnd watch thy shadow trembling in the stream, …"
+  },
+  {
+   "id": "smith/4",
+   "title": "Sonnet V: To the South Downs",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Ah! hills belov'd!——where once a happy child,\n  Your beechen shades, 'your turf, your flowers among,'\nI wove your blue-bells into garlands wild, …"
+  },
+  {
+   "id": "smith/5",
+   "title": "Sonnet VI: To Hope",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "O, Hope! thou soother sweet of human woes!\n  How shall I lure thee to my haunts forlorn?\nFor me wilt thou renew the wither'd rose, …"
+  },
+  {
+   "id": "smith/6",
+   "title": "Sonnet VII: On the Departure of the Nightingale",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Sweet poet of the woods!——a long adieu!\n  Farewel, soft minstrel of the early year!\nAh! 'twill be long ere thou shalt sing anew, …"
+  },
+  {
+   "id": "smith/7",
+   "title": "Sonnet VIII: To Spring",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Again the wood and long-withdrawing vale,\n  In many a tint of tender green are drest,\nWhere the young leaves, unfolding, scarce conceal …"
+  },
+  {
+   "id": "smith/8",
+   "title": "Sonnet XI: To Sleep",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Come, balmy Sleep! tired Nature's soft resort!\n  On these sad temples all thy poppies shed;\nAnd bid gay dreams, from Morpheus' airy court, …"
+  },
+  {
+   "id": "smith/9",
+   "title": "Sonnet XII: Written on the Sea Shore, October 1784",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "On some rude fragment of the rocky shore,\n  Where on the fractured cliff the billows break,\n  Musing, my solitary seat I take, …"
+  },
+  {
+   "id": "smith/10",
+   "title": "Sonnet XXXII: To Melancholy",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Nature"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "When latest Autumn spreads her evening veil,\n  And the grey mists from these dim waves arise,\n  I love to listen to the hollow sighs, …"
+  },
+  {
+   "id": "smith/11",
+   "title": "Sonnet XXXIX: To Night",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "I love thee, mournful, sober-suited Night!\n  When the faint moon, yet lingering in her wane,\nAnd veil'd in clouds, with pale uncertain light …"
+  },
+  {
+   "id": "smith/12",
+   "title": "Sonnet XLI: To Tranquillity",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "In this tumultuous sphere, for thee unfit,\n  How seldom art thou found—Tranquillity!\n  Unless 'tis when with mild and downcast eye …"
+  },
+  {
+   "id": "smith/13",
+   "title": "Sonnet XLIV: Written in the Church-Yard at Middleton in Sussex",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Press'd by the Moon, mute arbitress of tides,\n  While the loud equinox its power combines,\n  The sea no more its swelling surge confines, …"
+  },
+  {
+   "id": "smith/14",
+   "title": "Sonnet XLV: On Leaving a Part of Sussex",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Farewel, Aruna!—on whose varied shore\n  My early vows were paid to Nature's shrine,\n  When thoughtless joy, and infant hope were mine, …"
+  },
+  {
+   "id": "smith/15",
+   "title": "Sonnet XLVI: Written at Penshurst, in Autumn 1788",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Arts & Sciences"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Ye towers sublime! deserted now and drear!\n  Ye woods! deep sighing to the hollow blast,\nThe musing wanderer loves to linger near, …"
+  },
+  {
+   "id": "smith/16",
+   "title": "Sonnet XLVII: To Fancy",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Arts & Sciences"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Thee, Queen of Shadows!—shall I still invoke,\n  Still love the scenes thy sportive pencil drew,\nWhen on mine eyes the early radiance broke …"
+  },
+  {
+   "id": "smith/17",
+   "title": "Sonnet LIV: The Sleeping Woodman",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Ye copses wild, where April bids arise\n  The vernal grasses, and the early flowers;\nMy soul depress'd—from human converse flies …"
+  },
+  {
+   "id": "smith/18",
+   "title": "Sonnet LV: The Return of the Nightingale",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Borne on the warm wing of the western gale,\n  How tremulously low is heard to float\nThro' the green budding thorns that fringe the vale, …"
+  },
+  {
+   "id": "smith/19",
+   "title": "Sonnet LVIII: The Glow-Worm",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "When on some balmy-breathing night of Spring\n  The happy child, to whom the world is new,\nPursues the evening moth, of mealy wing, …"
+  },
+  {
+   "id": "smith/20",
+   "title": "Sonnet LXVI: Written in a Tempestuous Night, on the Coast of Sussex",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "The night-flood rakes upon the stony shore;\n  Along the rugged cliffs and chalky caves\nMourns the hoarse Ocean, seeming to deplore …"
+  },
+  {
+   "id": "smith/21",
+   "title": "Sonnet LXXI: Written at Weymouth in Winter",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "The chill waves whiten in the sharp North-east;\n  Cold, cold the night-blast comes, with sullen sound,\nAnd black and gloomy, like my cheerless breast: …"
+  },
+  {
+   "id": "smith/22",
+   "title": "Sonnet LXXII: To the Morning Star",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Thee! lucid arbiter 'twixt day and night,\n  The Seaman greets, as on the Ocean stream\n  Reflected, thy precursive friendly beam …"
+  },
+  {
+   "id": "smith/23",
+   "title": "Sonnet LXXVII: To the Insect of the Gossamer",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Small, viewless aeronaut, that by the line\n  Of Gossamer suspended, in mid air\n  Float'st on a sun beam—Living Atom, where …"
+  },
+  {
+   "id": "smith/24",
+   "title": "Sonnet LXXVIII: To the Snowdrops",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Wan Heralds of the Sun and Summer gale!\n  That seem just fallen from infant Zephyrs' wing;\nNot now, as once, with heart revived I hail …"
+  },
+  {
+   "id": "smith/25",
+   "title": "Sonnet LXXX: To the Invisible Moon",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Dark and conceal'd art thou, soft Evening's Queen,\n  And Melancholy's votaries that delight\nTo watch thee, gliding thro' the blue serene, …"
+  },
+  {
+   "id": "smith/26",
+   "title": "Sonnet LXXXII: To the Shade of Burns",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Death & Dying"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Mute is thy wild harp, now, O Bard sublime!\n  Who, amid Scotia's mountain solitude,\nGreat Nature taught to \"build the lofty rhyme,\" …"
+  },
+  {
+   "id": "smith/27",
+   "title": "Sonnet LXXXIII: The Sea View",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Nature"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "The upland shepherd, as reclined he lies\n  On the soft turf that clothes the mountain brow,\nMarks the bright Sea-line mingling with the skies; …"
+  },
+  {
+   "id": "smith/28",
+   "title": "Sonnet LXXXVIII: Nepenthe",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Mythology & Folklore"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Oh! for imperial Polydamna's art,\n  Which to bright Helen was in Egypt taught,\n  To mix with magic power the oblivious draught …"
+  },
+  {
+   "id": "smith/29",
+   "title": "Sonnet XC: To Oblivion",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Death & Dying"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Forgetfulness! I would thy hand could close\n  These eyes that turn reluctant from the day;\n  So might this painful consciousness decay, …"
+  },
+  {
+   "id": "smith/30",
+   "title": "Sonnet XCII: Written at Bignor Park in Sussex, in August 1799",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Low murmurs creep along the woody vale,\n  The tremulous Aspens shudder in the breeze,\nSlow o'er the downs the leaden vapours sail, …"
+  },
+  {
+   "id": "smith/31",
+   "title": "Beachy Head",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "Beachy Head, with Other Poems (1807)",
+   "excerpt": "On thy stupendous summit, rock sublime!\nThat o'er the channel rear'd, half way at sea\nThe mariner at early morning hails, …"
+  },
+  {
+   "id": "smith/32",
+   "title": "The Female Exile",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "November's chill blast on the rough beach is howling,\n  The surge breaks afar, and then foams to the shore,\nDark clouds o'er the sea gather heavy and scowling, …"
+  },
+  {
+   "id": "smith/33",
+   "title": "Apostrophe to an Old Tree",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Social Commentaries"
+   ],
+   "collection": "Elegiac Sonnets, and Other Poems (1800)",
+   "excerpt": "Where thy broad branches brave the bitter North,\nLike rugged, indigent, unheeded, worth,\nLo! Vegetation's guardian hands emboss …"
+  },
+  {
+   "id": "smith/34",
+   "title": "The Swallow",
+   "authorSlug": "smith",
+   "author": "Charlotte Smith",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Beachy Head, with Other Poems (1807)",
+   "excerpt": "The gorse is yellow on the heath,\n  The banks with speedwell flowers are gay,\nThe oaks are budding; and beneath, …"
   },
   {
    "id": "blake/0",
