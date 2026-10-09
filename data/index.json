@@ -1,5 +1,5 @@
 {
- "count": 11418,
+ "count": 11453,
  "workCount": 45,
  "poets": [
   {
@@ -2013,6 +2013,22 @@
    "workCount": 0
   },
   {
+   "slug": "brooke",
+   "name": "Rupert Brooke",
+   "dates": "1887–1915",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/brooke.jpg",
+   "credit": "Photograph of Rupert Brooke by Sherril Schell (1913), from Collected Poems (1918) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Rupert Brooke (1887–1915) was an English poet, born at Rugby and educated at King’s College, Cambridge, where he became a fellow. He was a leading figure among the Georgian poets, and travelled in America and the South Seas in 1913–1914.",
+    "He joined the Royal Naval Division in 1914 and wrote the sonnet sequence 1914, which includes “The Soldier.” He died of blood poisoning aboard a French hospital ship off the Greek island of Skyros on 23 April 1915, on his way to Gallipoli, and was buried there."
+   ],
+   "order": 1433,
+   "poemCount": 35,
+   "workCount": 0
+  },
+  {
    "slug": "owen",
    "name": "Wilfred Owen",
    "dates": "1893–1918",
@@ -2032,31 +2048,31 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2416
+   "count": 2418
   },
   {
    "name": "Nature",
-   "count": 2392
+   "count": 2397
   },
   {
    "name": "Love",
-   "count": 2325
+   "count": 2333
   },
   {
    "name": "Religion",
-   "count": 1646
+   "count": 1649
   },
   {
    "name": "Death & Dying",
-   "count": 723
+   "count": 728
   },
   {
    "name": "History & Politics",
-   "count": 608
+   "count": 610
   },
   {
    "name": "Relationships",
-   "count": 397
+   "count": 398
   },
   {
    "name": "Arts & Sciences",
@@ -2064,19 +2080,19 @@
   },
   {
    "name": "Time & Brevity",
-   "count": 243
+   "count": 247
   },
   {
    "name": "The Mind",
-   "count": 230
+   "count": 231
   },
   {
    "name": "Social Commentaries",
-   "count": 92
+   "count": 95
   },
   {
    "name": "Mythology & Folklore",
-   "count": 19
+   "count": 20
   }
  ],
  "works": [
@@ -141858,6 +141874,460 @@
    ],
    "collection": null,
    "excerpt": "The Centennial Meditation of Columbia.  1776-1876.  A Cantata.\n     <Musical Annotations, in angled brackets, precede each section.>\n     <Full chorus:  sober, measured and yet majestic progressions of chords.> …"
+  },
+  {
+   "id": "brooke/0",
+   "title": "Peace",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Living"
+   ],
+   "collection": "1914 and Other Poems (1915)",
+   "excerpt": "Now, God be thanked Who has matched us with His hour,\n And caught our youth, and wakened us from sleeping,\nWith hand made sure, clear eye, and sharpened power, …"
+  },
+  {
+   "id": "brooke/1",
+   "title": "Safety",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "1914 and Other Poems (1915)",
+   "excerpt": "Dear! of all happy in the hour, most blest\n He who has found our hid security,\nAssured in the dark tides of the world that rest, …"
+  },
+  {
+   "id": "brooke/2",
+   "title": "The Dead (I)",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "1914 and Other Poems (1915)",
+   "excerpt": "Blow out, you bugles, over the rich Dead!\n There's none of these so lonely and poor of old,\n But, dying, has made us rarer gifts than gold. …"
+  },
+  {
+   "id": "brooke/3",
+   "title": "The Dead (II)",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Time & Brevity"
+   ],
+   "collection": "1914 and Other Poems (1915)",
+   "excerpt": "These hearts were woven of human joys and cares,\n Washed marvellously with sorrow, swift to mirth.\nThe years had given them kindness.  Dawn was theirs, …"
+  },
+  {
+   "id": "brooke/4",
+   "title": "The Soldier",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "1914 and Other Poems (1915)",
+   "excerpt": "If I should die, think only this of me:\n That there's some corner of a foreign field\nThat is for ever England.  There shall be …"
+  },
+  {
+   "id": "brooke/5",
+   "title": "The Treasure",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "The Mind"
+   ],
+   "collection": "1914 and Other Poems (1915)",
+   "excerpt": "When colour goes home into the eyes,\n And lights that shine are shut again\nWith dancing girls and sweet birds' cries …"
+  },
+  {
+   "id": "brooke/6",
+   "title": "Tiare Tahiti",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Mythology & Folklore"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Mamua, when our laughter ends,\nAnd hearts and bodies, brown as white,\nAre dust about the doors of friends, …"
+  },
+  {
+   "id": "brooke/7",
+   "title": "Retrospect",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "In your arms was still delight,\nQuiet as a street at night;\nAnd thoughts of you, I do remember, …"
+  },
+  {
+   "id": "brooke/8",
+   "title": "The Great Lover",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Love"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "I have been so great a lover:  filled my days\nSo proudly with the splendour of Love's praise,\nThe pain, the calm, and the astonishment, …"
+  },
+  {
+   "id": "brooke/9",
+   "title": "Heaven",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Fish (fly-replete, in depth of June,\nDawdling away their wat'ry noon)\nPonder deep wisdom, dark or clear, …"
+  },
+  {
+   "id": "brooke/10",
+   "title": "Waikiki",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Warm perfumes like a breath from vine and tree\n Drift down the darkness.  Plangent, hidden from eyes\n Somewhere an 'eukaleli' thrills and cries …"
+  },
+  {
+   "id": "brooke/11",
+   "title": "Hauntings",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "In the grey tumult of these after years\n Oft silence falls; the incessant wranglers part;\nAnd less-than-echoes of remembered tears …"
+  },
+  {
+   "id": "brooke/12",
+   "title": "Clouds",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Down the blue night the unending columns press\n In noiseless tumult, break and wave and flow,\n Now tread the far South, or lift rounds of snow …"
+  },
+  {
+   "id": "brooke/13",
+   "title": "Mutability",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "The Mind"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "They say there's a high windless world and strange,\n Out of the wash of days and temporal tide,\n Where Faith and Good, Wisdom and Truth abide, …"
+  },
+  {
+   "id": "brooke/14",
+   "title": "The Busy Heart",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Love"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Now that we've done our best and worst, and parted,\n I would fill my mind with thoughts that will not rend.\n(O heart, I do not dare go empty-hearted) …"
+  },
+  {
+   "id": "brooke/15",
+   "title": "Love",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Love is a breach in the walls, a broken gate,\n Where that comes in that shall not go again;\nLove sells the proud heart's citadel to Fate. …"
+  },
+  {
+   "id": "brooke/16",
+   "title": "The Chilterns",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Love"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Your hands, my dear, adorable,\nYour lips of tenderness\n-- Oh, I've loved you faithfully and well, …"
+  },
+  {
+   "id": "brooke/17",
+   "title": "The Night Journey",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Hands and lit faces eddy to a line;\nThe dazed last minutes click; the clamour dies.\nBeyond the great-swung arc o' the roof, divine, …"
+  },
+  {
+   "id": "brooke/18",
+   "title": "Beauty and Beauty",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "When Beauty and Beauty meet\n All naked, fair to fair,\nThe earth is crying-sweet, …"
+  },
+  {
+   "id": "brooke/19",
+   "title": "The Way That Lovers Use",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "The way that lovers use is this;\n They bow, catch hands, with never a word,\nAnd their lips meet, and they do kiss, …"
+  },
+  {
+   "id": "brooke/20",
+   "title": "Mary and Gabriel",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Love"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Young Mary, loitering once her garden way,\nFelt a warm splendour grow in the April day,\nAs wine that blushes water through.  And soon, …"
+  },
+  {
+   "id": "brooke/21",
+   "title": "The Funeral of Youth: Threnody",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Time & Brevity"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "The day that YOUTH had died,\nThere came to his grave-side,\nIn decent mourning, from the country's ends, …"
+  },
+  {
+   "id": "brooke/22",
+   "title": "The Old Vicarage, Grantchester",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Just now the lilac is in bloom,\nAll before my little room;\nAnd in my flower-beds, I think, …"
+  },
+  {
+   "id": "brooke/23",
+   "title": "Sonnet Reversed",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Love"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Hand trembling towards hand; the amazing lights\nOf heart and eye. They stood on supreme heights.\n …"
+  },
+  {
+   "id": "brooke/24",
+   "title": "The Fish",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "In a cool curving world he lies\nAnd ripples with dark ecstasies.\nThe kind luxurious lapse and steal …"
+  },
+  {
+   "id": "brooke/25",
+   "title": "Dust",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Love"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "When the white flame in us is gone,\n And we that lost the world's delight\nStiffen in darkness, left alone …"
+  },
+  {
+   "id": "brooke/26",
+   "title": "The Hill",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Breathless, we flung us on the windy hill,\nLaughed in the sun, and kissed the lovely grass.\nYou said, \"Through glory and ecstasy we pass; …"
+  },
+  {
+   "id": "brooke/27",
+   "title": "Day That I Have Loved",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Death & Dying"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Tenderly, day that I have loved, I close your eyes,\n And smooth your quiet brow, and fold your thin dead hands.\nThe grey veils of the half-light deepen; colour dies. …"
+  },
+  {
+   "id": "brooke/28",
+   "title": "Wagner",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Arts & Sciences"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Creeps in half wanton, half asleep,\n One with a fat wide hairless face.\nHe likes love-music that is cheap; …"
+  },
+  {
+   "id": "brooke/29",
+   "title": "Success",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "I think if you had loved me when I wanted;\n If I'd looked up one day, and seen your eyes,\nAnd found my wild sick blasphemous prayer granted, …"
+  },
+  {
+   "id": "brooke/30",
+   "title": "Kindliness",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "When love has changed to kindliness --\nOh, love, our hungry lips, that press\nSo tight that Time's an old god's dream …"
+  },
+  {
+   "id": "brooke/31",
+   "title": "The Jolly Company",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "The stars, a jolly company,\n I envied, straying late and lonely;\nAnd cried upon their revelry: …"
+  },
+  {
+   "id": "brooke/32",
+   "title": "Victory",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Love"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "All night the ways of Heaven were desolate,\n Long roads across a gleaming empty sky.\n Outcast and doomed and driven, you and I, …"
+  },
+  {
+   "id": "brooke/33",
+   "title": "A Channel Passage",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Love"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "The damned ship lurched and slithered.  Quiet and quick\n My cold gorge rose; the long sea rolled; I knew\nI must think hard of something, or be sick; …"
+  },
+  {
+   "id": "brooke/34",
+   "title": "Failure",
+   "authorSlug": "brooke",
+   "author": "Rupert Brooke",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": "The Collected Poems of Rupert Brooke (1915)",
+   "excerpt": "Because God put His adamantine fate\n Between my sullen heart and its desire,\nI swore that I would burst the Iron Gate, …"
   },
   {
    "id": "owen/0",
