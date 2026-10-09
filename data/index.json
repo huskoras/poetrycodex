@@ -1,5 +1,5 @@
 {
- "count": 11528,
+ "count": 11549,
  "workCount": 45,
  "poets": [
   {
@@ -2013,6 +2013,22 @@
    "workCount": 0
   },
   {
+   "slug": "mew",
+   "name": "Charlotte Mew",
+   "dates": "1869–1928",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/mew.jpg",
+   "credit": "Photograph of Charlotte Mew (c. 1900) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Charlotte Mew (1869–1928) was an English poet, born in Bloomsbury, London. She lived for most of her life with her sister and her mother, in straitened circumstances, and published only two books of poems in her lifetime.",
+    "The Farmer’s Bride (1916; enlarged in 1921) won the admiration of Thomas Hardy and other poets and made her reputation. Her poems are dramatic and irregular, with voices ranging from a Devon farmer to a nun and a grieving lover. She died in 1928."
+   ],
+   "order": 1406,
+   "poemCount": 21,
+   "workCount": 0
+  },
+  {
    "slug": "thomas_e",
    "name": "Edward Thomas",
    "dates": "1878–1917",
@@ -2080,51 +2096,51 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2420
+   "count": 2421
   },
   {
    "name": "Living",
-   "count": 2420
+   "count": 2421
   },
   {
    "name": "Love",
-   "count": 2337
+   "count": 2340
   },
   {
    "name": "Religion",
-   "count": 1652
+   "count": 1653
   },
   {
    "name": "Death & Dying",
-   "count": 738
+   "count": 742
   },
   {
    "name": "History & Politics",
-   "count": 621
+   "count": 622
   },
   {
    "name": "Relationships",
-   "count": 400
+   "count": 403
   },
   {
    "name": "Arts & Sciences",
-   "count": 330
+   "count": 331
   },
   {
    "name": "Time & Brevity",
-   "count": 254
+   "count": 255
   },
   {
    "name": "The Mind",
-   "count": 237
+   "count": 238
   },
   {
    "name": "Social Commentaries",
-   "count": 99
+   "count": 101
   },
   {
    "name": "Mythology & Folklore",
-   "count": 20
+   "count": 22
   }
  ],
  "works": [
@@ -141906,6 +141922,279 @@
    ],
    "collection": null,
    "excerpt": "The Centennial Meditation of Columbia.  1776-1876.  A Cantata.\n     <Musical Annotations, in angled brackets, precede each section.>\n     <Full chorus:  sober, measured and yet majestic progressions of chords.> …"
+  },
+  {
+   "id": "mew/0",
+   "title": "The Farmer's Bride",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Love"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Three Summers since I chose a maid,\n    Too young maybe--but more’s to do\nAt harvest-time than bide and woo. …"
+  },
+  {
+   "id": "mew/1",
+   "title": "Fame",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Nature"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Sometimes in the over-heated house, but not for long,\n      Smirking and speaking rather loud,\n      I see myself among the crowd, …"
+  },
+  {
+   "id": "mew/2",
+   "title": "The Narrow Door",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Social Commentaries"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "    The narrow door, the narrow door\n    On the three steps of which the café children play\n    Mostly at shop with pebbles from the shore, …"
+  },
+  {
+   "id": "mew/3",
+   "title": "Beside the Bed",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Someone has shut the shining eyes, straightened and folded\n  The wandering hands quietly covering the unquiet breast:\nSo, smoothed and silenced you lie, like a child, not again to be questioned or scolded; …"
+  },
+  {
+   "id": "mew/4",
+   "title": "In Nunhead Cemetery",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "It is the clay that makes the earth stick to his spade;\n    He fills in holes like this year after year;\nThe others have gone; they were tired, and half afraid, …"
+  },
+  {
+   "id": "mew/5",
+   "title": "The Pedlar",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "The Mind"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Lend me, a little while, the key\n  That locks your heavy heart, and I’ll give you back--\nRarer than books and ribbons and beads bright to see, …"
+  },
+  {
+   "id": "mew/6",
+   "title": "Pécheresse",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Religion"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Down the long quay the slow boats glide,\n  While here and there a house looms white\nAgainst the gloom of the waterside, …"
+  },
+  {
+   "id": "mew/7",
+   "title": "The Changeling",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Relationships"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Toll no bell for me, dear Father, dear Mother,\n  Waste no sighs;\nThere are my sisters, there is my little brother …"
+  },
+  {
+   "id": "mew/8",
+   "title": "Ken",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Social Commentaries"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "The town is old and very steep,\n  A place of bells and cloisters and grey towers,\nAnd black clad people walking in their sleep-- …"
+  },
+  {
+   "id": "mew/9",
+   "title": "À quoi bon dire",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Love"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Seventeen years ago you said\n  Something that sounded like Good-bye;\n  And everybody thinks that you are dead, …"
+  },
+  {
+   "id": "mew/10",
+   "title": "The Quiet House",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Death & Dying"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "When we were children old Nurse used to say,\n  The house was like an auction or a fair\n  Until the lot of us were safe in bed. …"
+  },
+  {
+   "id": "mew/11",
+   "title": "On the Asylum Road",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "The Mind"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Theirs is the house whose windows--every pane--\n  Are made of darkly stained or clouded glass:\nSometimes you come upon them in the lane, …"
+  },
+  {
+   "id": "mew/12",
+   "title": "Jour des Morts",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Sweetheart, is this the last of all our posies\n  And little festivals, my flowers are they\nBut white and wistful ghosts of gayer roses …"
+  },
+  {
+   "id": "mew/13",
+   "title": "Exspecto Resurrectionem",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Death & Dying"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "    Oh! King who hast the key\n    Of that dark room,\nThe last which prisons us but held not Thee, …"
+  },
+  {
+   "id": "mew/14",
+   "title": "The Sunlit House",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Time & Brevity"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "White through the gate it gleamed and slept\n    In shuttered sunshine: the parched garden flowers\nTheir fallen petals from the beds unswept, …"
+  },
+  {
+   "id": "mew/15",
+   "title": "The Shade-Catchers",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "I think they were about as high\nAs haycocks are. They went running by\nCatching bits of shade in the sunny street: …"
+  },
+  {
+   "id": "mew/16",
+   "title": "Song",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Love, Love to-day, my dear,\nLove is not always here;\nWise maids know how soon grows sere …"
+  },
+  {
+   "id": "mew/17",
+   "title": "Saturday Market",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Death & Dying"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Bury your heart in some deep green hollow\n    Or hide it up in a kind old tree\nBetter still, give it the swallow …"
+  },
+  {
+   "id": "mew/18",
+   "title": "Arracombe Wood",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "    Some said, because he wud’n spaik\n    Any words to women but Yes and No,\nNor put out his hand for Parson to shake …"
+  },
+  {
+   "id": "mew/19",
+   "title": "Sea Love",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Tide be runnin’ the great world over:\n    T’was only last June month I mind that we\nWas thinkin’ the toss and the call in the breast of the lover …"
+  },
+  {
+   "id": "mew/20",
+   "title": "The Cenotaph",
+   "authorSlug": "mew",
+   "author": "Charlotte Mew",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "The Farmer's Bride (1921 edition)",
+   "excerpt": "Not yet will those measureless fields be green again\nWhere only yesterday the wild, sweet, blood of wonderful youth was shed;\nThere is a grave whose earth must hold too long, too deep a stain, …"
   },
   {
    "id": "thomas_e/0",
