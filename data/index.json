@@ -1,5 +1,5 @@
 {
- "count": 12084,
+ "count": 12119,
  "workCount": 45,
  "poets": [
   {
@@ -1181,6 +1181,22 @@
    "workCount": 0
   },
   {
+   "slug": "wheatley",
+   "name": "Phillis Wheatley",
+   "dates": "c. 1753–1784",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Phillis Wheatley (c. 1753–1784) was born in West Africa, kidnapped and brought to Boston as a child in 1761, and purchased by the merchant John Wheatley. Taught to read and write in his household, she began publishing verse as a teenager.",
+    "Poems on Various Subjects, Religious and Moral (1773) was the first book of poems published by an African American. A group of Boston notables attested in its front matter that she had written the poems; she was freed shortly after the book appeared."
+   ],
+   "order": 886,
+   "poemCount": 35,
+   "workCount": 0
+  },
+  {
    "slug": "chatterton",
    "name": "Thomas Chatterton",
    "dates": "1752–1770",
@@ -2352,7 +2368,7 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2499
+   "count": 2506
   },
   {
    "name": "Living",
@@ -2364,15 +2380,15 @@
   },
   {
    "name": "Religion",
-   "count": 1687
+   "count": 1693
   },
   {
    "name": "Death & Dying",
-   "count": 790
+   "count": 803
   },
   {
    "name": "History & Politics",
-   "count": 675
+   "count": 678
   },
   {
    "name": "Relationships",
@@ -2380,7 +2396,7 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 379
+   "count": 381
   },
   {
    "name": "Time & Brevity",
@@ -2388,7 +2404,7 @@
   },
   {
    "name": "The Mind",
-   "count": 264
+   "count": 266
   },
   {
    "name": "Social Commentaries",
@@ -2396,7 +2412,7 @@
   },
   {
    "name": "Mythology & Folklore",
-   "count": 46
+   "count": 48
   }
  ],
  "works": [
@@ -54175,6 +54191,458 @@
    ],
    "collection": "Beachy Head, with Other Poems (1807)",
    "excerpt": "The gorse is yellow on the heath,\n  The banks with speedwell flowers are gay,\nThe oaks are budding; and beneath, …"
+  },
+  {
+   "id": "wheatley/0",
+   "title": "To Maecenas",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "MAECENAS, you, beneath the myrtle shade,\nRead o'er what poets sung, and shepherds play'd.\nWhat felt those poets but you feel the same? …"
+  },
+  {
+   "id": "wheatley/1",
+   "title": "On Virtue",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "O Thou bright jewel in my aim I strive\nTo comprehend thee.  Thine own words declare\nWisdom is higher than a fool can reach. …"
+  },
+  {
+   "id": "wheatley/2",
+   "title": "To the University of Cambridge, in New-England",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Arts & Sciences"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "WHILE an intrinsic ardor prompts to write,\nThe muses promise to assist my pen;\n'Twas not long since I left my native shore …"
+  },
+  {
+   "id": "wheatley/3",
+   "title": "To the King's Most Excellent Majesty, 1768",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "YOUR subjects hope, dread Sire--\nThe crown upon your brows may flourish long,\nAnd that your arm may in your God be strong! …"
+  },
+  {
+   "id": "wheatley/4",
+   "title": "On Being Brought from Africa to America",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "'TWAS mercy brought me from my Pagan land,\nTaught my benighted soul to understand\nThat there's a God, that there's a Saviour too: …"
+  },
+  {
+   "id": "wheatley/5",
+   "title": "On the Death of the Rev. Dr. Sewell, 1769",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "ERE yet the morn its lovely blushes spread,\nSee Sewell number'd with the happy dead.\nHail, holy man, arriv'd th' immortal shore, …"
+  },
+  {
+   "id": "wheatley/6",
+   "title": "On the Death of the Rev. Mr. George Whitefield, 1770",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "HAIL, happy saint, on thine immortal throne,\nPossest of glory, life, and bliss unknown;\nWe hear no more the music of thy tongue, …"
+  },
+  {
+   "id": "wheatley/7",
+   "title": "On the Death of a Young Lady of Five Years of Age",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "FROM dark abodes to fair etherial light\nTh' enraptur'd innocent has wing'd her flight;\nOn the kind bosom of eternal love …"
+  },
+  {
+   "id": "wheatley/8",
+   "title": "On the Death of a Young Gentleman",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "WHO taught thee conflict with the pow'rs of night,\nTo vanquish satan in the fields of light?\nWho strung thy feeble arms with might unknown, …"
+  },
+  {
+   "id": "wheatley/9",
+   "title": "To a Lady on the Death of Her Husband",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "GRIM monarch! see, depriv'd of vital breath,\nA young physician in the dust of death:\nDost thou go on incessant to destroy, …"
+  },
+  {
+   "id": "wheatley/10",
+   "title": "Goliath of Gath",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "History & Politics"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "YE martial pow'rs, and all ye tuneful nine,\nInspire my song, and aid my high design.\nThe dreadful scenes and toils of war I write, …"
+  },
+  {
+   "id": "wheatley/11",
+   "title": "Thoughts on the Works of Providence",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "ARISE, my soul, on wings enraptur'd, rise\nTo praise the monarch of the earth and skies,\nWhose goodness and benificence appear …"
+  },
+  {
+   "id": "wheatley/12",
+   "title": "To a Lady on the Death of Three Relations",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "WE trace the pow'r of Death from tomb to tomb,\nAnd his are all the ages yet to come.\n'Tis his to call the planets from on high, …"
+  },
+  {
+   "id": "wheatley/13",
+   "title": "To a Clergyman on the Death of His Lady",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "WHERE contemplation finds her sacred spring,\nWhere heav'nly music makes the arches ring,\nWhere virtue reigns unsully'd and divine, …"
+  },
+  {
+   "id": "wheatley/14",
+   "title": "An Hymn to the Morning",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Arts & Sciences"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "ATTEND my lays, ye ever honour'd nine,\nAssist my labours, and my strains refine;\nIn smoothest numbers pour the notes along, …"
+  },
+  {
+   "id": "wheatley/15",
+   "title": "An Hymn to the Evening",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "SOON as the sun forsook the eastern main\nThe pealing thunder shook the heav'nly plain;\nMajestic grandeur!  From the zephyr's wing, …"
+  },
+  {
+   "id": "wheatley/16",
+   "title": "On Isaiah lxiii. 1-8",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "SAY, heav'nly muse, what king or mighty God,\nThat moves sublime from Idumea's road?\nIn Bosrah's dies, with martial glories join'd, …"
+  },
+  {
+   "id": "wheatley/17",
+   "title": "On Recollection",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Arts & Sciences"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "MNEME begin.  Inspire, ye sacred nine,\nYour vent'rous Afric in her great design.\nMneme, immortal pow'r, I trace thy spring: …"
+  },
+  {
+   "id": "wheatley/18",
+   "title": "On Imagination",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Arts & Sciences"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "THY various works, imperial queen, we see,\nHow bright their forms! how deck'd with pomp by thee!\nThy wond'rous acts in beauteous order stand, …"
+  },
+  {
+   "id": "wheatley/19",
+   "title": "A Funeral Poem on the Death of C. E., an Infant of Twelve Months",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "THROUGH airy roads he wings his instant flight\nTo purer regions of celestial light;\nEnlarg'd he sees unnumber'd systems roll, …"
+  },
+  {
+   "id": "wheatley/20",
+   "title": "To Captain H---- D----, of the 65th Regiment",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "SAY, muse divine, can hostile scenes delight\nThe warrior's bosom in the fields of fight?\nLo! here the christian and the hero join …"
+  },
+  {
+   "id": "wheatley/21",
+   "title": "To the Right Honourable William, Earl of Dartmouth",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "HAIL, happy day, when, smiling like the morn,\nFair Freedom rose New-England to adorn:\nThe northern clime beneath her genial ray, …"
+  },
+  {
+   "id": "wheatley/22",
+   "title": "Ode to Neptune",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "WHILE raging tempests shake the shore,\nWhile AElus' thunders round us roar,\nAnd sweep impetuous o'er the plain …"
+  },
+  {
+   "id": "wheatley/23",
+   "title": "To a Lady on Her Coming to North-America with Her Son, for the Recovery of Her Health",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "INDULGENT muse! my grov'ling mind inspire,\nAnd fill my bosom with celestial fire.\nSee from Jamaica's fervid shore she moves, …"
+  },
+  {
+   "id": "wheatley/24",
+   "title": "To a Lady on Her Remarkable Preservation in an Hurricane in North-Carolina",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "THOUGH thou did'st hear the tempest from afar,\nAnd felt'st the horrors of the wat'ry war,\nTo me unknown, yet on this peaceful shore …"
+  },
+  {
+   "id": "wheatley/25",
+   "title": "To a Lady and Her Children, on the Death of Her Son and Their Brother",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "O'ERWHELMING sorrow now demands my song:\nFrom death the overwhelming sorrow sprung.\nWhat flowing tears?  What hearts with grief opprest? …"
+  },
+  {
+   "id": "wheatley/26",
+   "title": "To a Gentleman and Lady on the Death of the Lady's Brother and Sister, and a Child of the Name of Avis, Aged One Year",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "ON Death's domain intent I fix my eyes,\nWhere human nature in vast ruin lies:\nWith pensive mind I search the drear abode, …"
+  },
+  {
+   "id": "wheatley/27",
+   "title": "On the Death of Dr. Samuel Marshall, 1771",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "THROUGH thickest glooms look back, immortal shade,\nOn that confusion which thy death has made:\nOr from Olympus' height look down, and see …"
+  },
+  {
+   "id": "wheatley/28",
+   "title": "To a Gentleman on His Voyage to Great-Britain for the Recovery of His Health",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "WHILE others chant of gay Elysian scenes,\nOf balmy zephyrs, and of flow'ry plains,\nMy song more happy speaks a greater name, …"
+  },
+  {
+   "id": "wheatley/29",
+   "title": "An Hymn to Humanity",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "LO! for this dark terrestrial ball\nForsakes his azure-paved hall\n    A prince of heav'nly birth! …"
+  },
+  {
+   "id": "wheatley/30",
+   "title": "To the Honourable T. H. Esq; on the Death of His Daughter",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "WHILE deep you mourn beneath the cypress-shade\nThe hand of Death, and your dear daughter laid\nIn dust, whose absence gives your tears to flow, …"
+  },
+  {
+   "id": "wheatley/31",
+   "title": "Niobe in Distress for Her Children Slain by Apollo",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Death & Dying"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "APOLLO's wrath to man the dreadful spring\nOf ills innum'rous, tuneful goddess, sing!\nThou who did'st first th' ideal pencil give, …"
+  },
+  {
+   "id": "wheatley/32",
+   "title": "To S. M. a Young African Painter, on Seeing His Works",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "TO show the lab'ring bosom's deep intent,\nAnd thought in living characters to paint,\nWhen first thy pencil did those beauties give, …"
+  },
+  {
+   "id": "wheatley/33",
+   "title": "To His Honour the Lieutenant-Governor, on the Death of His Lady, March 24, 1773",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "ALL-Conquering Death! by thy resistless pow'r,\nHope's tow'ring plumage falls to rise no more!\nOf scenes terrestrial how the glories fly, …"
+  },
+  {
+   "id": "wheatley/34",
+   "title": "A Farewel to America",
+   "authorSlug": "wheatley",
+   "author": "Phillis Wheatley",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Relationships"
+   ],
+   "collection": "Poems on Various Subjects, Religious and Moral (1773)",
+   "excerpt": "ADIEU, New-England's smiling meads,\n    Adieu, the flow'ry plain:\nI leave thine op'ning charms, O spring, …"
   },
   {
    "id": "chatterton/0",
