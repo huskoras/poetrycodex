@@ -1,5 +1,5 @@
 {
- "count": 11906,
+ "count": 11932,
  "workCount": 45,
  "poets": [
   {
@@ -2093,6 +2093,22 @@
    "workCount": 0
   },
   {
+   "slug": "mccrae",
+   "name": "John McCrae",
+   "dates": "1872–1918",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/mccrae.jpg",
+   "credit": "Photograph of John McCrae in uniform (c. 1914) by William Notman and Son · Public domain (Wikimedia Commons)",
+   "bio": [
+    "John McCrae (1872–1918) was a Canadian physician, soldier and poet, born in Guelph, Ontario. He served as a gunner in the South African War and as a medical officer in the First World War, and taught medicine at McGill University.",
+    "He wrote “In Flanders Fields” at Ypres in May 1915 after the death of a friend. It was first published in Punch that December and became one of the best-known poems of the war. He died of pneumonia in France in January 1918, and In Flanders Fields and Other Poems appeared in 1919."
+   ],
+   "order": 1416,
+   "poemCount": 26,
+   "workCount": 0
+  },
+  {
    "slug": "chesterton",
    "name": "G. K. Chesterton",
    "dates": "1874–1936",
@@ -2224,11 +2240,11 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2490
+   "count": 2492
   },
   {
    "name": "Living",
-   "count": 2456
+   "count": 2459
   },
   {
    "name": "Love",
@@ -2236,19 +2252,19 @@
   },
   {
    "name": "Religion",
-   "count": 1671
+   "count": 1674
   },
   {
    "name": "Death & Dying",
-   "count": 769
+   "count": 775
   },
   {
    "name": "History & Politics",
-   "count": 657
+   "count": 664
   },
   {
    "name": "Relationships",
-   "count": 415
+   "count": 416
   },
   {
    "name": "Arts & Sciences",
@@ -2256,15 +2272,15 @@
   },
   {
    "name": "Time & Brevity",
-   "count": 280
+   "count": 282
   },
   {
    "name": "The Mind",
-   "count": 250
+   "count": 251
   },
   {
    "name": "Social Commentaries",
-   "count": 131
+   "count": 132
   },
   {
    "name": "Mythology & Folklore",
@@ -144228,6 +144244,344 @@
    ],
    "collection": "Verses and Sonnets (1896)",
    "excerpt": "Youth gave you to me, but I’ll not believe\n  That youth will, taking his quick self, take you.\nYouth’s all our truth; he cannot so deceive; …"
+  },
+  {
+   "id": "mccrae/0",
+   "title": "In Flanders Fields",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "In Flanders fields the poppies blow\nBetween the crosses, row on row,\nThat mark our place; and in the sky …"
+  },
+  {
+   "id": "mccrae/1",
+   "title": "The Anxious Dead",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "O guns, fall silent till the dead men hear\nAbove their heads the legions pressing on:\n(These fought their fight in time of bitter fear, …"
+  },
+  {
+   "id": "mccrae/2",
+   "title": "The Unconquered Dead",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "Not we the conquered! Not to us the blame\nOf them that flee, of them that basely yield;\nNor ours the shout of victory, the fame …"
+  },
+  {
+   "id": "mccrae/3",
+   "title": "Isandlwana",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "Scarlet coats, and crash o' the band,\nThe grey of a pauper's gown,\nA soldier's grave in Zululand, …"
+  },
+  {
+   "id": "mccrae/4",
+   "title": "Quebec",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Time & Brevity"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "Of old, like Helen, guerdon of the strong—\nLike Helen fair, like Helen light of word,—\n\"The spoils unto the conquerors belong. …"
+  },
+  {
+   "id": "mccrae/5",
+   "title": "Mine Host",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Living"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "There stands a hostel by a travelled way;\nLife is the road and Death the worthy host;\nEach guest he greets, nor ever lacks to say, …"
+  },
+  {
+   "id": "mccrae/6",
+   "title": "Penance",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "My lover died a century ago,\nHer dear heart stricken by my sland'rous breath,\nWherefore the Gods forbade that I should know …"
+  },
+  {
+   "id": "mccrae/7",
+   "title": "The Captain",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Time & Brevity"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "Here all the day she swings from tide to tide,\nHere all night long she tugs a rusted chain,\nA masterless hulk that was a ship of pride, …"
+  },
+  {
+   "id": "mccrae/8",
+   "title": "The Song of the Derelict",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "Ye have sung me your songs, ye have chanted your rimes\n(I scorn your beguiling, O sea!)\nYe fondle me now, but to strike me betimes. …"
+  },
+  {
+   "id": "mccrae/9",
+   "title": "The Night Cometh",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "Cometh the night. The wind falls low,\nThe trees swing slowly to and fro:\nAround the church the headstones grey …"
+  },
+  {
+   "id": "mccrae/10",
+   "title": "Eventide",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Living"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "The day is past and the toilers cease;\nThe land grows dim 'mid the shadows grey,\nAnd hearts are glad, for the dark brings peace …"
+  },
+  {
+   "id": "mccrae/11",
+   "title": "Recompense",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "I saw two sowers in Life's field at morn,\nTo whom came one in angel guise and said,\n\"Is it for labour that a man is born? …"
+  },
+  {
+   "id": "mccrae/12",
+   "title": "Anarchy",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "I saw a city filled with lust and shame,\nWhere men, like wolves, slunk through the grim half-light;\nAnd sudden, in the midst of it, there came …"
+  },
+  {
+   "id": "mccrae/13",
+   "title": "Disarmament",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "One spake amid the nations, \"Let us cease\nFrom darkening with strife the fair World's light,\nWe who are great in war be great in peace. …"
+  },
+  {
+   "id": "mccrae/14",
+   "title": "Equality",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Death & Dying"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "I saw a King, who spent his life to weave\nInto a nation all his great heart thought,\nUnsatisfied until he should achieve …"
+  },
+  {
+   "id": "mccrae/15",
+   "title": "The Pilgrims",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Living"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "An uphill path, sun-gleams between the showers,\nWhere every beam that broke the leaden sky\nLit other hills with fairer ways than ours; …"
+  },
+  {
+   "id": "mccrae/16",
+   "title": "Then and Now",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Love"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "Beneath her window in the fragrant night\nI half forget how truant years have flown\nSince I looked up to see her chamber-light, …"
+  },
+  {
+   "id": "mccrae/17",
+   "title": "Unsolved",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Love"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "Amid my books I lived the hurrying years,\nDisdaining kinship with my fellow man;\nAlike to me were human smiles and tears, …"
+  },
+  {
+   "id": "mccrae/18",
+   "title": "The Warrior",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Arts & Sciences"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "He wrought in poverty, the dull grey days,\nBut with the night his little lamp-lit room\nWas bright with battle flame, or through a haze …"
+  },
+  {
+   "id": "mccrae/19",
+   "title": "The Harvest of the Sea",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "The earth grows white with harvest; all day long\nThe sickles gleam, until the darkness weaves\nHer web of silence o'er the thankful song …"
+  },
+  {
+   "id": "mccrae/20",
+   "title": "Slumber Songs",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Living"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "Sleep, little eyes\nThat brim with childish tears amid thy play,\nBe comforted!  No grief of night can weigh …"
+  },
+  {
+   "id": "mccrae/21",
+   "title": "In Due Season",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "If night should come and find me at my toil,\nWhen all Life's day I had, tho' faintly, wrought,\nAnd shallow furrows, cleft in stony soil …"
+  },
+  {
+   "id": "mccrae/22",
+   "title": "The Shadow of the Cross",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Social Commentaries"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "At the drowsy dusk when the shadows creep\nFrom the golden west, where the sunbeams sleep,\n …"
+  },
+  {
+   "id": "mccrae/23",
+   "title": "Upon Watts' Picture \"Sic Transit\"",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Death & Dying"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "But yesterday the tourney, all the eager joy of life,\nThe waving of the banners, and the rattle of the spears,\nThe clash of sword and harness, and the madness of the strife; …"
+  },
+  {
+   "id": "mccrae/24",
+   "title": "The Dying of Père Pierre",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Death & Dying"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "\"Nay, grieve not that ye can no honour give\nTo these poor bones that presently must be\nBut carrion; since I have sought to live …"
+  },
+  {
+   "id": "mccrae/25",
+   "title": "The Oldest Drama",
+   "authorSlug": "mccrae",
+   "author": "John McCrae",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "In Flanders Fields and Other Poems (1919)",
+   "excerpt": "Immortal story that no mother's heart\nEv'n yet can read, nor feel the biting pain\nThat rent her soul! Immortal not by art …"
   },
   {
    "id": "chesterton/0",
