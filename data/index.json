@@ -1,5 +1,5 @@
 {
- "count": 12055,
+ "count": 12082,
  "workCount": 45,
  "poets": [
   {
@@ -1066,6 +1066,22 @@
    ],
    "order": 740,
    "poemCount": 7,
+   "workCount": 0
+  },
+  {
+   "slug": "akenside",
+   "name": "Mark Akenside",
+   "dates": "1721–1770",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Mark Akenside (1721–1770) was born in Newcastle upon Tyne, the son of a butcher, and studied at Edinburgh and Leiden before practising as a physician in London. He was lame from a boyhood accident.",
+    "His blank-verse The Pleasures of Imagination (1744), a philosophical poem on the sources of aesthetic pleasure, made him famous when he was in his early twenties, and he later reworked it at length. His Odes (1745) and Hymn to the Naiads belong to the same classical, Whig and deist temper."
+   ],
+   "order": 742,
+   "poemCount": 27,
    "workCount": 0
   },
   {
@@ -2320,7 +2336,7 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2497
+   "count": 2499
   },
   {
    "name": "Living",
@@ -2328,11 +2344,11 @@
   },
   {
    "name": "Love",
-   "count": 2398
+   "count": 2403
   },
   {
    "name": "Religion",
-   "count": 1686
+   "count": 1687
   },
   {
    "name": "Death & Dying",
@@ -2340,15 +2356,15 @@
   },
   {
    "name": "History & Politics",
-   "count": 673
+   "count": 675
   },
   {
    "name": "Relationships",
-   "count": 427
+   "count": 428
   },
   {
    "name": "Arts & Sciences",
-   "count": 369
+   "count": 379
   },
   {
    "name": "Time & Brevity",
@@ -2356,7 +2372,7 @@
   },
   {
    "name": "The Mind",
-   "count": 259
+   "count": 264
   },
   {
    "name": "Social Commentaries",
@@ -2364,7 +2380,7 @@
   },
   {
    "name": "Mythology & Folklore",
-   "count": 45
+   "count": 46
   }
  ],
  "works": [
@@ -52862,6 +52878,355 @@
    ],
    "collection": null,
    "excerpt": "[Greek:  Zêna----\n         Ton phronein brotous hodô-\n         santa, tôi pathei mathan …"
+  },
+  {
+   "id": "akenside/0",
+   "title": "The Pleasures of Imagination, Book I",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind",
+    "Nature"
+   ],
+   "collection": "The Pleasures of Imagination (1744)",
+   "excerpt": "With what attractive charms this goodly frame\nOf Nature touches the consenting hearts\nOf mortal men; and what the pleasing stores …"
+  },
+  {
+   "id": "akenside/1",
+   "title": "The Pleasures of Imagination, Book II",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": "The Pleasures of Imagination (1744)",
+   "excerpt": "When shall the laurel and the vocal string\nResume their honours? When shall we behold\nThe tuneful tongue, the Promethéan band …"
+  },
+  {
+   "id": "akenside/2",
+   "title": "The Pleasures of Imagination, Book III",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind",
+    "Social Commentaries"
+   ],
+   "collection": "The Pleasures of Imagination (1744)",
+   "excerpt": "What wonder therefore, since the endearing ties\nOf passion link the universal kind\nOf man so close, what wonder if to search …"
+  },
+  {
+   "id": "akenside/3",
+   "title": "To a Friend, Unsuccessful in Love",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "Indeed, my Phædria, if to find\nThat wealth can female wishes gain,\nHad e'er disturb'd your thoughtful mind, …"
+  },
+  {
+   "id": "akenside/4",
+   "title": "Against Suspicion",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "The Mind"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "Oh, fly! 'tis dire Suspicion's mien;\n  And, meditating plagues unseen,\n      The sorceress hither bends: …"
+  },
+  {
+   "id": "akenside/5",
+   "title": "Hymn to Cheerfulness",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Nature"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "How thick the shades of evening close!\nHow pale the sky with weight of snows!\nHaste, light the tapers, urge the fire, …"
+  },
+  {
+   "id": "akenside/6",
+   "title": "On the Use of Poetry",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "Not for themselves did human kind\nContrive the parts by heaven assign'd\n  On life's wide scene to play: …"
+  },
+  {
+   "id": "akenside/7",
+   "title": "To the Muse",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "Queen of my songs, harmonious maid,\n  Ah! why hast thou withdrawn thy aid?\n  Ah! why forsaken thus my breast …"
+  },
+  {
+   "id": "akenside/8",
+   "title": "On Love, to a Friend",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "No, foolish youth--to virtuous fame\n  If now thy early hopes be vow'd,\n  If true ambition's nobler flame …"
+  },
+  {
+   "id": "akenside/9",
+   "title": "To the Evening Star",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "To-night retired, the queen of heaven\n    With young Endymion stays:\n  And now to Hesper it is given …"
+  },
+  {
+   "id": "akenside/10",
+   "title": "On a Sermon Against Glory",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "Come then, tell me, sage divine,\n    Is it an offence to own\n    That our bosoms e'er incline …"
+  },
+  {
+   "id": "akenside/11",
+   "title": "The Remonstrance of Shakespeare",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "History & Politics"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "If, yet regardful of your native land,\nOld Shakspeare's tongue you deign to understand,\nLo, from the blissful bowers where heaven rewards …"
+  },
+  {
+   "id": "akenside/12",
+   "title": "To Sleep",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Nature"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "Thou silent power, whose welcome sway\n    Charms every anxious thought away;\n    In whose divine oblivion drown'd, …"
+  },
+  {
+   "id": "akenside/13",
+   "title": "To the Cuckoo",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "O rustic herald of the spring,\n  At length in yonder woody vale\n  Fast by the brook I hear thee sing; …"
+  },
+  {
+   "id": "akenside/14",
+   "title": "On Love of Praise",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Social Commentaries"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "Of all the springs within the mind\n    Which prompt her steps in fortune's maze,\n  From none more pleasing aid we find …"
+  },
+  {
+   "id": "akenside/15",
+   "title": "At Study",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "Whither did my fancy stray?\n  By what magic drawn away\n    Have I left my studious theme, …"
+  },
+  {
+   "id": "akenside/16",
+   "title": "The Complaint",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Love"
+   ],
+   "collection": "Odes on Several Subjects",
+   "excerpt": "Away! away!\n  Tempt me no more, insidious love:\n      Thy soothing sway …"
+  },
+  {
+   "id": "akenside/17",
+   "title": "Hymn to the Naiads",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": "Hymn to the Naiads (1746)",
+   "excerpt": "O'er yonder eastern bill the twilight pale\nWalks forth from darkness; and the God of day,\nWith bright Astraea seated by his side, …"
+  },
+  {
+   "id": "akenside/18",
+   "title": "An Epistle to Curio",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": "Thrice has the spring beheld thy faded fame,\nAnd the fourth winter rises on thy shame,\nSince I exulting grasp'd the votive shell, …"
+  },
+  {
+   "id": "akenside/19",
+   "title": "The Virtuoso",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": "Whilom by silver Thames's gentle stream,\n    In London town there dwelt a subtile wight;\n  A wight of mickle wealth, and mickle fame, …"
+  },
+  {
+   "id": "akenside/20",
+   "title": "Ambition and Content: A Fable",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": null,
+   "excerpt": "While yet the world was young, and men were few,\nNor lurking fraud, nor tyrant rapine knew,\nIn virtue rude, the gaudy arts they scorn'd, …"
+  },
+  {
+   "id": "akenside/21",
+   "title": "The Poet: A Rhapsody",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": null,
+   "excerpt": "Of all the various lots around the ball,\nWhich fate to man distributes, absolute,\nAvert, ye gods! that of the Muse's son, …"
+  },
+  {
+   "id": "akenside/22",
+   "title": "A British Philippic",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "Whence this unwonted transport in my breast?\nWhy glow my thoughts, and whither would the Muse\nAspire with rapid wing? Her country's cause …"
+  },
+  {
+   "id": "akenside/23",
+   "title": "Hymn to Science",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": null,
+   "excerpt": "Science! thou fair effusive ray\n  From the great source of mental day,\n    Free, generous, and refined! …"
+  },
+  {
+   "id": "akenside/24",
+   "title": "Love: An Elegy",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "excerpt": "Too much my heart of Beauty's power hath known,\nToo long to Love hath reason left her throne;\nToo long my genius mourn'd his myrtle chain, …"
+  },
+  {
+   "id": "akenside/25",
+   "title": "To Cordelia",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "From pompous life's dull masquerade,\n    From Pride's pursuits, and Passion's war,\n    Far, my Cordelia, very far, …"
+  },
+  {
+   "id": "akenside/26",
+   "title": "Song",
+   "authorSlug": "akenside",
+   "author": "Mark Akenside",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "excerpt": "The shape alone let others prize,\n    The features of the fair;\n  I look for spirit in her eyes, …"
   },
   {
    "id": "collins/0",
