@@ -1,5 +1,5 @@
 {
- "count": 11715,
+ "count": 11746,
  "workCount": 45,
  "poets": [
   {
@@ -2045,6 +2045,22 @@
    "workCount": 0
   },
   {
+   "slug": "belloc",
+   "name": "Hilaire Belloc",
+   "dates": "1870–1953",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/belloc.jpg",
+   "credit": "Portrait of Hilaire Belloc (c. 1917) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Hilaire Belloc (1870–1953) was a French-born English writer and Liberal MP, educated at Balliol College, Oxford, who wrote history, travel books, essays, novels and verse. He was a close friend of G. K. Chesterton, and a Catholic apologist.",
+    "His verse, from Verses and Sonnets (1896) and Verses (1910), ranges from serious lyrics of Sussex and of faith to comic and satirical ballads such as the “Dedicatory Ode” and “Lines to a Don.” The Cautionary Tales and Bad Child’s Book of Beasts are his best-known children’s verse."
+   ],
+   "order": 1415,
+   "poemCount": 31,
+   "workCount": 0
+  },
+  {
    "slug": "chesterton",
    "name": "G. K. Chesterton",
    "dates": "1874–1936",
@@ -2144,23 +2160,23 @@
  "subjects": [
   {
    "name": "Living",
-   "count": 2442
+   "count": 2445
   },
   {
    "name": "Nature",
-   "count": 2437
+   "count": 2440
   },
   {
    "name": "Love",
-   "count": 2360
+   "count": 2363
   },
   {
    "name": "Religion",
-   "count": 1666
+   "count": 1670
   },
   {
    "name": "Death & Dying",
-   "count": 750
+   "count": 754
   },
   {
    "name": "History & Politics",
@@ -2168,7 +2184,7 @@
   },
   {
    "name": "Relationships",
-   "count": 411
+   "count": 414
   },
   {
    "name": "Arts & Sciences",
@@ -2180,11 +2196,11 @@
   },
   {
    "name": "The Mind",
-   "count": 242
+   "count": 243
   },
   {
    "name": "Social Commentaries",
-   "count": 111
+   "count": 121
   },
   {
    "name": "Mythology & Folklore",
@@ -143215,6 +143231,409 @@
    ],
    "collection": "The Farmer's Bride (1921 edition)",
    "excerpt": "Not yet will those measureless fields be green again\nWhere only yesterday the wild, sweet, blood of wonderful youth was shed;\nThere is a grave whose earth must hold too long, too deep a stain, …"
+  },
+  {
+   "id": "belloc/0",
+   "title": "To Dives",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Death & Dying"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "Dives, when you and I go down to Hell,\nWhere scribblers end and millionaires as well,\nWe shall be carrying on our separate backs …"
+  },
+  {
+   "id": "belloc/1",
+   "title": "Stanzas Written on Battersea Bridge during a South-Westerly Gale",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "The woods and downs have caught the mid-December,\n  The noisy woods and high sea-downs of home;\nThe wind has found me and I do remember …"
+  },
+  {
+   "id": "belloc/2",
+   "title": "The South Country",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "When I am living in the Midlands\n  That are sodden and unkind,\nI light my lamp in the evening: …"
+  },
+  {
+   "id": "belloc/3",
+   "title": "Noël",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Mythology & Folklore"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "I\n\n  On a winter’s night long time ago …"
+  },
+  {
+   "id": "belloc/4",
+   "title": "The Birds",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "When Jesus Christ was four years old,\nThe angels brought Him toys of gold,\nWhich no man ever had bought or sold. …"
+  },
+  {
+   "id": "belloc/5",
+   "title": "Our Lord and Our Lady",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Relationships"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "They warned Our Lady for the Child\n  That was Our blessed Lord,\nAnd She took Him into the desert wild, …"
+  },
+  {
+   "id": "belloc/6",
+   "title": "Courtesy",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "Of Courtesy, it is much less\nThan Courage of Heart or Holiness,\nYet in my Walks it seems to me …"
+  },
+  {
+   "id": "belloc/7",
+   "title": "The Night",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Religion"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "Most holy Night, that still dost keep\nThe keys of all the doors of sleep,\nTo me when my tired eyelids close …"
+  },
+  {
+   "id": "belloc/8",
+   "title": "To the Balliol Men Still in Africa",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "History & Politics"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "Years ago when I was at Balliol,\n  Balliol men--and I was one--\nSwam together in winter rivers, …"
+  },
+  {
+   "id": "belloc/9",
+   "title": "The Rebel",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "There is a wall of which the stones\nAre lies and bribes and dead men’s bones.\nAnd wrongfully this evil wall …"
+  },
+  {
+   "id": "belloc/10",
+   "title": "Auvergnat",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "There was a man was half a clown\n  (It’s so my father tells of it).\nHe saw the church in Clermont town …"
+  },
+  {
+   "id": "belloc/11",
+   "title": "Drinking Dirge",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Time & Brevity"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "A thousand years ago I used to dine\n  In houses where they gave me such regale\nOf dear companionship and comrades fine …"
+  },
+  {
+   "id": "belloc/12",
+   "title": "West Sussex Drinking Song",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "  They sell good Beer at Haslemere\n    And under Guildford Hill.\n  At Little Cowfold as I’ve been told …"
+  },
+  {
+   "id": "belloc/13",
+   "title": "A Ballad on Sociological Economics",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "A while ago it came to pass\n  (Merry we carol it all the day),\nThere sat a man on the top of an ass …"
+  },
+  {
+   "id": "belloc/14",
+   "title": "Heretics All",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Living"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "Heretics all, whoever you be,\nIn Tarbes or Nimes, or over the sea,\nYou never shall have good words from me. …"
+  },
+  {
+   "id": "belloc/15",
+   "title": "The Death and Last Confession of Wandering Peter",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Living"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "When Peter Wanderwide was young\n  He wandered everywhere he would:\nAnd all that he approved was sung, …"
+  },
+  {
+   "id": "belloc/16",
+   "title": "Dedicatory Ode",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Arts & Sciences"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "I mean to write with all my strength\n  (It lately has been sadly waning),\nA ballad of enormous length-- …"
+  },
+  {
+   "id": "belloc/17",
+   "title": "Dedication on the Gift of a Book to a Child",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Arts & Sciences"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "Child! do not throw this book about!\n  Refrain from the unholy pleasure\nOf cutting all the pictures out! …"
+  },
+  {
+   "id": "belloc/18",
+   "title": "Fille-la-Haine",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "Death went into the steeple to ring,\n  And he pulled the rope and he tolled a knell.\nFille-la-Haine, how well you sing! …"
+  },
+  {
+   "id": "belloc/19",
+   "title": "The Moon's Funeral",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "I\n\n  The Moon is dead. I saw her die. …"
+  },
+  {
+   "id": "belloc/20",
+   "title": "The Happy Journalist",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "I love to walk about at night\n  By nasty lanes and corners foul,\nAll shielded from the unfriendly light …"
+  },
+  {
+   "id": "belloc/21",
+   "title": "Lines to a Don",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Arts & Sciences"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "Remote and ineffectual Don\nThat dared attack my Chesterton,\nWith that poor weapon, half-impelled, …"
+  },
+  {
+   "id": "belloc/22",
+   "title": "The Yellow Mustard",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "Oh! ye that prink it to and fro,\nIn pointed flounce and furbelow,\nWhat have ye known, what can ye know …"
+  },
+  {
+   "id": "belloc/23",
+   "title": "On Hygiene",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "Of old when folk lay sick and sorely tried,\nThe doctors gave them medicine and they died.\nHere is an happier age, for now we know …"
+  },
+  {
+   "id": "belloc/24",
+   "title": "The Politician; or, the Irish Earldom",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "A strong and striking Personality,\n  Worth several hundred thousand pounds--\nOf strict political Morality-- …"
+  },
+  {
+   "id": "belloc/25",
+   "title": "Short Ballad and Postscript on Consols",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Verses (1916 edition)",
+   "excerpt": "I\n\n  Gigantic daughter of the West …"
+  },
+  {
+   "id": "belloc/26",
+   "title": "Love and Honour",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Mythology & Folklore"
+   ],
+   "collection": "Verses and Sonnets (1896)",
+   "excerpt": "Love wooing Honour, Honour’s love did win,\n  And had his pleasure all a summer’s day.\nNot understanding how the dooms begin, …"
+  },
+  {
+   "id": "belloc/27",
+   "title": "Her Music",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Arts & Sciences"
+   ],
+   "collection": "Verses and Sonnets (1896)",
+   "excerpt": "Oh! do not play me music any more,\n  Lest in us mortal, some not mortal spell\n  Should stir strange hopes, and leave a tale to tell …"
+  },
+  {
+   "id": "belloc/28",
+   "title": "The Poor of London",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Religion"
+   ],
+   "collection": "Verses and Sonnets (1896)",
+   "excerpt": "Almighty God, whose Justice, like a sun\n  Shall coruscate along the floors of heaven:\nRaising what’s low, perfecting what’s undone, …"
+  },
+  {
+   "id": "belloc/29",
+   "title": "The Justice of the Peace",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Verses and Sonnets (1896)",
+   "excerpt": "Distinguish carefully between these two,\n  This thing is yours, that other thing is mine.\nYou have a shirt, a brimless hat, a shoe …"
+  },
+  {
+   "id": "belloc/30",
+   "title": "Her Youth",
+   "authorSlug": "belloc",
+   "author": "Hilaire Belloc",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "Verses and Sonnets (1896)",
+   "excerpt": "Youth gave you to me, but I’ll not believe\n  That youth will, taking his quick self, take you.\nYouth’s all our truth; he cannot so deceive; …"
   },
   {
    "id": "chesterton/0",
