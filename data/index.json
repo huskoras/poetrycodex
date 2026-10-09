@@ -1,5 +1,5 @@
 {
- "count": 11488,
+ "count": 11528,
  "workCount": 45,
  "poets": [
   {
@@ -2013,6 +2013,22 @@
    "workCount": 0
   },
   {
+   "slug": "thomas_e",
+   "name": "Edward Thomas",
+   "dates": "1878–1917",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/thomas_e.jpg",
+   "credit": "Photograph of Edward Thomas (c. 1905) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Edward Thomas (1878–1917) was an English-Welsh writer who made his living as a critic, biographer and country writer before turning to poetry in 1914 at the urging of his friend Robert Frost. He wrote nearly all of his poems in the last two and a half years of his life.",
+    "He enlisted in 1915 and was killed at Arras on 9 April 1917. His first collection, Poems, appeared in October 1917 under the pseudonym Edward Eastaway, followed by Last Poems in 1918. Quiet and exact, his poems are among the most admired English poems of the war years, although few of them mention the war directly."
+   ],
+   "order": 1423,
+   "poemCount": 40,
+   "workCount": 0
+  },
+  {
    "slug": "brooke",
    "name": "Rupert Brooke",
    "dates": "1887–1915",
@@ -2063,16 +2079,16 @@
  ],
  "subjects": [
   {
-   "name": "Living",
-   "count": 2419
+   "name": "Nature",
+   "count": 2420
   },
   {
-   "name": "Nature",
-   "count": 2401
+   "name": "Living",
+   "count": 2420
   },
   {
    "name": "Love",
-   "count": 2336
+   "count": 2337
   },
   {
    "name": "Religion",
@@ -2080,11 +2096,11 @@
   },
   {
    "name": "Death & Dying",
-   "count": 732
+   "count": 738
   },
   {
    "name": "History & Politics",
-   "count": 619
+   "count": 621
   },
   {
    "name": "Relationships",
@@ -2092,15 +2108,15 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 329
+   "count": 330
   },
   {
    "name": "Time & Brevity",
-   "count": 248
+   "count": 254
   },
   {
    "name": "The Mind",
-   "count": 233
+   "count": 237
   },
   {
    "name": "Social Commentaries",
@@ -141890,6 +141906,525 @@
    ],
    "collection": null,
    "excerpt": "The Centennial Meditation of Columbia.  1776-1876.  A Cantata.\n     <Musical Annotations, in angled brackets, precede each section.>\n     <Full chorus:  sober, measured and yet majestic progressions of chords.> …"
+  },
+  {
+   "id": "thomas_e/0",
+   "title": "The Sign-Post",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "The dim sea glints chill. The white sun is shy.\nAnd the skeleton weeds and the never-dry,\nRough, long grasses keep white with frost …"
+  },
+  {
+   "id": "thomas_e/1",
+   "title": "Tears",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "History & Politics"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "It seems I have no tears left. They should have fallen--\nTheir ghosts, if tears have ghosts, did fall--that day\nWhen twenty hounds streamed by me, not yet combed out …"
+  },
+  {
+   "id": "thomas_e/2",
+   "title": "The Owl",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "Downhill I came, hungry, and yet not starved;\nCold, yet had heat within me that was proof\nAgainst the North wind; tired, yet so that rest …"
+  },
+  {
+   "id": "thomas_e/3",
+   "title": "Swedes",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "They have taken the gable from the roof of clay\nOn the long swede pile. They have let in the sun\nTo the white and gold and purple of curled fronds …"
+  },
+  {
+   "id": "thomas_e/4",
+   "title": "As the Team's Head-Brass",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "As the team's head-brass flashed out on the turn\nThe lovers disappeared into the wood.\nI sat among the boughs of the fallen elm …"
+  },
+  {
+   "id": "thomas_e/5",
+   "title": "Thaw",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "Over the land freckled with snow half-thawed\nThe speculating rooks at their nests cawed\nAnd saw from elm-tops, delicate as flower of grass, …"
+  },
+  {
+   "id": "thomas_e/6",
+   "title": "Like the Touch of Rain",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "Like the touch of rain she was\nOn a man's flesh and hair and eyes\nWhen the joy of walking thus …"
+  },
+  {
+   "id": "thomas_e/7",
+   "title": "The Path",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "Running along a bank, a parapet\nThat saves from the precipitous wood below\nThe level road, there is a path. It serves …"
+  },
+  {
+   "id": "thomas_e/8",
+   "title": "It Rains",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "It rains, and nothing stirs within the fence\nAnywhere through the orchard's untrodden, dense\nForest of parsley. The great diamonds …"
+  },
+  {
+   "id": "thomas_e/9",
+   "title": "Bright Clouds",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "Bright clouds of may\nShade half the pond.\nBeyond, …"
+  },
+  {
+   "id": "thomas_e/10",
+   "title": "Adlestrop",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "Yes. I remember Adlestrop--\nThe name, because one afternoon\nOf heat the express-train drew up there …"
+  },
+  {
+   "id": "thomas_e/11",
+   "title": "The Green Roads",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "The green roads that end in the forest\nAre strewn with white goose feathers this June,\n …"
+  },
+  {
+   "id": "thomas_e/12",
+   "title": "Gone, Gone Again",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "History & Politics"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "May, June, July,\nAnd August gone,\nAgain gone by, …"
+  },
+  {
+   "id": "thomas_e/13",
+   "title": "October",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "The green elm with the one great bough of gold\nLets leaves into the grass slip, one by one,--\nThe short hill grass, the mushrooms small milk-white, …"
+  },
+  {
+   "id": "thomas_e/14",
+   "title": "Liberty",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "The last light has gone out of the world, except\nThis moonlight lying on the grass like frost\nBeyond the brink of the tall elm's shadow …"
+  },
+  {
+   "id": "thomas_e/15",
+   "title": "The Gallows",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "There was a weasel lived in the sun\nWith all his family,\nTill a keeper shot him with his gun …"
+  },
+  {
+   "id": "thomas_e/16",
+   "title": "Birds' Nests",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "The summer nests uncovered by autumn wind.\nSome torn, others dislodged, all dark.\nEveryone sees them: low or high in tree, …"
+  },
+  {
+   "id": "thomas_e/17",
+   "title": "Rain",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "The Mind"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "Rain, midnight rain, nothing but the wild rain\nOn this bleak hut, and solitude, and me\nRemembering again that I shall die …"
+  },
+  {
+   "id": "thomas_e/18",
+   "title": "Lights Out",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "The Mind"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "I have come to the borders of sleep,\nThe unfathomable deep\nForest where all must lose …"
+  },
+  {
+   "id": "thomas_e/19",
+   "title": "Words",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Nature"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "Out of us all\nThat make rhymes,\nWill you choose …"
+  },
+  {
+   "id": "thomas_e/20",
+   "title": "The Glory",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Nature"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "The glory of the beauty of the morning,--\nThe cuckoo crying over the untouched dew;\nThe blackbird that has found it, and the dove …"
+  },
+  {
+   "id": "thomas_e/21",
+   "title": "Fifty Faggots",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Nature"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "There they stand, on their ends, the fifty faggots\nThat once were underwood of hazel and ash\nIn Jenny Pinks's Copse. Now, by the hedge …"
+  },
+  {
+   "id": "thomas_e/22",
+   "title": "Melancholy",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Nature"
+   ],
+   "collection": "Poems (1917, as 'Edward Eastaway')",
+   "excerpt": "The rain and wind, the rain and wind, raved endlessly.\nOn me the Summer storm, and fever, and melancholy\nWrought magic, so that if I feared the solitude …"
+  },
+  {
+   "id": "thomas_e/23",
+   "title": "I never saw that Land before",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "I never saw that Land before\nAnd now can never see it again;\nYet, as if by acquaintance hoar …"
+  },
+  {
+   "id": "thomas_e/24",
+   "title": "Old Man",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "The Mind"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "Old Man, or Lad's-love,--in the name there's nothing\nTo one that knows not Lad's-love, or Old Man,\nThe hoar-green feathery herb, almost a tree, …"
+  },
+  {
+   "id": "thomas_e/25",
+   "title": "The Thrush",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "When Winter's ahead,\nWhat can you read in November\nThat you read in April …"
+  },
+  {
+   "id": "thomas_e/26",
+   "title": "Under the Woods",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "When these old woods were young\nThe thrushes' ancestors\nAs sweetly sung …"
+  },
+  {
+   "id": "thomas_e/27",
+   "title": "The Cuckoo",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Time & Brevity"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "That's the cuckoo, you say. I cannot hear it.\nWhen last I heard it I cannot recall; but I know\nToo well the year when first I failed to hear it-- …"
+  },
+  {
+   "id": "thomas_e/28",
+   "title": "The Unknown Bird",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "Three lovely notes he whistled, too soft to be heard\nIf others sang; but others never sang\nIn the great beech-wood all that May and June. …"
+  },
+  {
+   "id": "thomas_e/29",
+   "title": "The Lofty Sky",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "To-day I want the sky,\nThe tops of the high hills,\nAbove the last man's house, …"
+  },
+  {
+   "id": "thomas_e/30",
+   "title": "After Rain",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "The rain of a night and a day and a night\nStops at the light\nOf this pale choked day. The peering sun …"
+  },
+  {
+   "id": "thomas_e/31",
+   "title": "The Barn",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Social Commentaries"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "They should never have built a barn there, at all--\nDrip, drip, drip!--under that elm tree,\nThough then it was young. Now it is old …"
+  },
+  {
+   "id": "thomas_e/32",
+   "title": "Aspens",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "All day and night, save winter, every weather,\nAbove the inn, the smithy, and the shop,\nThe aspens at the cross-roads talk together …"
+  },
+  {
+   "id": "thomas_e/33",
+   "title": "Snow",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "In the gloom of whiteness,\nIn the great silence of snow,\nA child was sighing …"
+  },
+  {
+   "id": "thomas_e/34",
+   "title": "House and Man",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Relationships"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "One hour: as dim he and his house now look\nAs a reflection in a rippling brook,\nWhile I remember him; but first, his house. …"
+  },
+  {
+   "id": "thomas_e/35",
+   "title": "Out in the Dark",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "Out in the dark over the snow\nThe fallow fawns invisible go\nWith the fallow doe; …"
+  },
+  {
+   "id": "thomas_e/36",
+   "title": "A Private",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "This ploughman dead in battle slept out of doors\nMany a frozen night, and merrily\nAnswered staid drinkers, good bedmen, and all bores: …"
+  },
+  {
+   "id": "thomas_e/37",
+   "title": "The Brook",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "Seated once by a brook, watching a child\nChiefly that paddled, I was thus beguiled.\nMellow the blackbird sang and sharp the thrush …"
+  },
+  {
+   "id": "thomas_e/38",
+   "title": "Beauty",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Nature"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "What does it mean? Tired, angry, and ill at ease,\nNo man, woman, or child alive could please\nMe now. And yet I almost dare to laugh …"
+  },
+  {
+   "id": "thomas_e/39",
+   "title": "The Mountain Chapel",
+   "authorSlug": "thomas_e",
+   "author": "Edward Thomas",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "Last Poems (1918)",
+   "excerpt": "Chapel and gravestones, old and few,\nAre shrouded by a mountain fold\nFrom sound and view …"
   },
   {
    "id": "brooke/0",
