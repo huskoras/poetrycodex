@@ -1,5 +1,5 @@
 {
- "count": 11847,
+ "count": 11906,
  "workCount": 45,
  "poets": [
   {
@@ -2157,6 +2157,22 @@
    "workCount": 0
   },
   {
+   "slug": "ledwidge",
+   "name": "Francis Ledwidge",
+   "dates": "1887–1917",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/ledwidge.jpg",
+   "credit": "Portrait of Francis Ledwidge, frontispiece to The Complete Poems (1919) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Francis Ledwidge (1887–1917) was an Irish poet, the son of a farm labourer from Slane, County Meath, who worked as a farmhand, miner and road worker. Lord Dunsany read his early verse, encouraged him and arranged the publication of Songs of the Fields (1915).",
+    "He enlisted in the Royal Inniskilling Fusiliers, served at Gallipoli, in Serbia and in France, and wrote poems of the Irish countryside and of the war, including an elegy for Thomas MacDonagh. He was killed at Boezinge, near Ypres, on 31 July 1917."
+   ],
+   "order": 1436,
+   "poemCount": 59,
+   "workCount": 0
+  },
+  {
    "slug": "rosenberg",
    "name": "Isaac Rosenberg",
    "dates": "1890–1918",
@@ -2208,7 +2224,7 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2468
+   "count": 2490
   },
   {
    "name": "Living",
@@ -2216,7 +2232,7 @@
   },
   {
    "name": "Love",
-   "count": 2387
+   "count": 2395
   },
   {
    "name": "Religion",
@@ -2224,35 +2240,35 @@
   },
   {
    "name": "Death & Dying",
-   "count": 761
+   "count": 769
   },
   {
    "name": "History & Politics",
-   "count": 654
+   "count": 657
   },
   {
    "name": "Relationships",
-   "count": 414
+   "count": 415
   },
   {
    "name": "Arts & Sciences",
-   "count": 347
+   "count": 349
   },
   {
    "name": "Time & Brevity",
-   "count": 276
+   "count": 280
   },
   {
    "name": "The Mind",
-   "count": 248
+   "count": 250
   },
   {
    "name": "Social Commentaries",
-   "count": 130
+   "count": 131
   },
   {
    "name": "Mythology & Folklore",
-   "count": 35
+   "count": 43
   }
  ],
  "works": [
@@ -146692,6 +146708,771 @@
    ],
    "collection": "The Collected Poems of Rupert Brooke (1915)",
    "excerpt": "Because God put His adamantine fate\n Between my sullen heart and its desire,\nI swore that I would burst the Iron Gate, …"
+  },
+  {
+   "id": "ledwidge/0",
+   "title": "Behind the Closed Eye",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "I walk the old frequented ways\n  That wind around the tangled braes,\nI live again the sunny days …"
+  },
+  {
+   "id": "ledwidge/1",
+   "title": "To a Linnet in a Cage",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "When Spring is in the fields that stained your wing,\n  And the blue distance is alive with song,\nAnd finny quiets of the gabbling spring …"
+  },
+  {
+   "id": "ledwidge/2",
+   "title": "A Twilight in Middle March",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "Within the oak a throb of pigeon wings\nFell silent, and grey twilight hushed the fold,\nAnd spiders' hammocks swung on half-oped things …"
+  },
+  {
+   "id": "ledwidge/3",
+   "title": "Spring",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "The dews drip roses on the meadows\nWhere the meek daisies dot the sward.\nAnd Æolus whispers through the shadows, …"
+  },
+  {
+   "id": "ledwidge/4",
+   "title": "Desire in Spring",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "I love the cradle songs the mothers sing\nIn lonely places when the twilight drops,\nThe slow endearing melodies that bring …"
+  },
+  {
+   "id": "ledwidge/5",
+   "title": "A Rainy Day in April",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "When the clouds shake their hyssops, and the rain\nLike holy water falls upon the plain,\n'Tis sweet to gaze upon the springing grain …"
+  },
+  {
+   "id": "ledwidge/6",
+   "title": "The Broken Tryst",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "The dropping words of larks, the sweetest tongue\nThat sings between the dusks, tell all of you;\nThe bursting white of Peace is all along …"
+  },
+  {
+   "id": "ledwidge/7",
+   "title": "Evening in May",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "There is nought tragic here, tho' night uplifts\n  A narrow curtain where the footlights burned,\nBut one long act where Love each bold heart sifts …"
+  },
+  {
+   "id": "ledwidge/8",
+   "title": "The Wife of Llew",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "And Gwydion said to Math, when it was Spring:\n\"Come now and let us make a wife for Llew.\"\nAnd so they broke broad boughs yet moist with dew, …"
+  },
+  {
+   "id": "ledwidge/9",
+   "title": "The Hills",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "The hills are crying from the fields to me,\nAnd calling me with music from a choir\nOf waters in their woods where I can see …"
+  },
+  {
+   "id": "ledwidge/10",
+   "title": "June",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "Broom out the floor now, lay the fender by,\nAnd plant this bee-sucked bough of woodbine there,\nAnd let the window down. The butterfly …"
+  },
+  {
+   "id": "ledwidge/11",
+   "title": "In Manchester",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Nature"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "There is a noise of feet that move in sin\nUnder the side-faced moon here where I stray,\nWant by me like a Nemesis. The din …"
+  },
+  {
+   "id": "ledwidge/12",
+   "title": "Music on Water",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Death & Dying"
+   ],
+   "collection": "Songs of the Fields (1915)",
+   "excerpt": "Where does Remembrance weep when we forget?\nFrom whither brings she back an old delight?\nWhy do we weep that once we laughed? and yet …"
+  },
+  {
+   "id": "ledwidge/13",
+   "title": "In the Dusk",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Time & Brevity"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "Day hangs its light between two dusks, my heart,\nAlways beyond the dark there is the blue.\nSometime we'll leave the dark, myself and you, …"
+  },
+  {
+   "id": "ledwidge/14",
+   "title": "August",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "She'll come at dusky first of day,\nWhite over yellow harvest's song.\nUpon her dewy rainbow way …"
+  },
+  {
+   "id": "ledwidge/15",
+   "title": "Before the Tears",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Relationships"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "You looked as sad as an eclipséd moon\nAbove the sheaves of harvest, and there lay\nA light lisp on your tongue, and very soon …"
+  },
+  {
+   "id": "ledwidge/16",
+   "title": "The Lost Ones",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "Somewhere is music from the linnets, bills,\nAnd thro' the sunny flowers the bee-wings drone,\nAnd white bells of convolvulus on hills …"
+  },
+  {
+   "id": "ledwidge/17",
+   "title": "A Song",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "My heart has flown on wings to you, away\nIn the lonely places where your footsteps lie\nFull up of stars when the short showers of day …"
+  },
+  {
+   "id": "ledwidge/18",
+   "title": "A Fear",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Religion"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "I roamed the woods to-day and seemed to hear,\nAs Dante heard, the voice of suffering trees.\nThe twisted roots seemed bare contorted knees, …"
+  },
+  {
+   "id": "ledwidge/19",
+   "title": "The Coming Poet",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Time & Brevity"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "\"Is it far to the town?\" said the poet,\nAs he stood 'neath the groaning vane,\nAnd the warm lights shimmered silver …"
+  },
+  {
+   "id": "ledwidge/20",
+   "title": "Evening in February",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "The windy evening drops a grey\nOld eyelid down across the sun,\nThe last crow leaves the ploughman's way …"
+  },
+  {
+   "id": "ledwidge/21",
+   "title": "Low-Moon Land",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "I often look when the moon is low\nThro' that other window on the wall,\nAt a land all beautiful under snow, …"
+  },
+  {
+   "id": "ledwidge/22",
+   "title": "Growing Old",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Relationships"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "We'll fill a Provence bowl and pledge us deep\nThe memory of the far ones, and between\nThe soothing pipes, in heavy-lidded sleep, …"
+  },
+  {
+   "id": "ledwidge/23",
+   "title": "After My Last Song",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "Where I shall rest when my last song is over\nThe air is smelling like a feast of wine;\nAnd purple breakers of the windy clover …"
+  },
+  {
+   "id": "ledwidge/24",
+   "title": "A Little Boy in the Morning",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "He will not come, and still I wait.\nHe whistles at another gate\nWhere angels listen. Ah, I know …"
+  },
+  {
+   "id": "ledwidge/25",
+   "title": "To a Distant One",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "Through wild by-ways I come to you, my love,\nNor ask of those I meet the surest way,\nWhat way I turn I cannot go astray …"
+  },
+  {
+   "id": "ledwidge/26",
+   "title": "The Place",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "Blossoms as old as May I scatter here,\nAnd a blue wave I lifted from the stream.\nIt shall not know when winter days are drear …"
+  },
+  {
+   "id": "ledwidge/27",
+   "title": "May",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "She leans across an orchard gate somewhere,\nBending from out the shadows to the light,\nA dappled spray of blossom in her hair …"
+  },
+  {
+   "id": "ledwidge/28",
+   "title": "Crewbawn",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "White clouds that change and pass,\nAnd stars that shine awhile,\nDew water on the grass, …"
+  },
+  {
+   "id": "ledwidge/29",
+   "title": "Evening in England",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "From its blue vase the rose of evening drops.\nUpon the streams its petals float away.\nThe hills all blue with distance hide their tops …"
+  },
+  {
+   "id": "ledwidge/30",
+   "title": "Autumn Evening in Serbia",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "All the thin shadows\nHave closed on the grass,\nWith the drone on their dark wings …"
+  },
+  {
+   "id": "ledwidge/31",
+   "title": "Nocturne",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "The rim of the moon\nIs over the corn.\nThe beetle's drone …"
+  },
+  {
+   "id": "ledwidge/32",
+   "title": "Spring and Autumn",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Nature"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "Green ripples singing down the corn,\nWith blossoms dumb the path I tread,\nAnd in the music of the morn …"
+  },
+  {
+   "id": "ledwidge/33",
+   "title": "The Departure of Proserpine",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Death & Dying"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "Old mother Earth for me already grieves,\nHer morns wake weeping and her noons are dim,\nSilence has left her woods, and all the leaves …"
+  },
+  {
+   "id": "ledwidge/34",
+   "title": "The Home-Coming of the Sheep",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "The sheep are coming home in Greece,\nHark the bells on every hill!\nFlock by flock, and fleece by fleece, …"
+  },
+  {
+   "id": "ledwidge/35",
+   "title": "My Mother",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Death & Dying"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "God made my mother on an April day,\nFrom sorrow and the mist along the sea,\nLost birds' and wanderers' songs and ocean spray …"
+  },
+  {
+   "id": "ledwidge/36",
+   "title": "To One Dead",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "A blackbird singing\nOn a moss upholstered stone,\nBluebells swinging, …"
+  },
+  {
+   "id": "ledwidge/37",
+   "title": "The Shadow People",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "Old lame Bridget doesn't hear\nFairy music in the grass\nWhen the gloaming's on the mere …"
+  },
+  {
+   "id": "ledwidge/38",
+   "title": "Thomas MacDonagh",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "He shall not hear the bittern cry\nIn the wild sky, where he is lain,\nNor voices of the sweeter birds …"
+  },
+  {
+   "id": "ledwidge/39",
+   "title": "The Blackbirds",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Nature"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "I heard the Poor Old Woman say:\n\"At break of day the fowler came,\nAnd took my blackbirds from their songs …"
+  },
+  {
+   "id": "ledwidge/40",
+   "title": "The Lure",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "I saw night leave her halos down\nOn Mitylene's dark mountain isle,\nThe silhouette of one fair town …"
+  },
+  {
+   "id": "ledwidge/41",
+   "title": "Evening Clouds",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "A little flock of clouds go down to rest\nIn some blue corner off the moon's highway,\nWith shepherd winds that shook them in the West …"
+  },
+  {
+   "id": "ledwidge/42",
+   "title": "The Herons",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Mythology & Folklore"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "As I was climbing Ardan Mor\nFrom the shore of Sheelan lake,\nI met the herons coming down …"
+  },
+  {
+   "id": "ledwidge/43",
+   "title": "After",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "And in the after silences\nOf flower-lit distances I'll be,\nAnd who would find me travels far …"
+  },
+  {
+   "id": "ledwidge/44",
+   "title": "A Dream Dance",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Love"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "Maeve held a ball on the dún,\nCuculain and Eimer were there,\nIn the light of an old broken moon …"
+  },
+  {
+   "id": "ledwidge/45",
+   "title": "In September",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Songs of Peace (1917)",
+   "excerpt": "Still are the meadowlands, and still\nRipens the upland corn,\nAnd over the brown gradual hill …"
+  },
+  {
+   "id": "ledwidge/46",
+   "title": "To a Sparrow",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Arts & Sciences"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "Because you have no fear to mingle\nWings with those of greater part,\nSo like me, with song I single …"
+  },
+  {
+   "id": "ledwidge/47",
+   "title": "Youth",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Love"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "She paved the way with perfume sweet\nOf flowers that moved like winds alight,\nAnd never weary grew my feet …"
+  },
+  {
+   "id": "ledwidge/48",
+   "title": "Autumn",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "Now leafy winds are blowing cold,\nAnd South by West the sun goes down,\nA quiet huddles up the fold …"
+  },
+  {
+   "id": "ledwidge/49",
+   "title": "Ireland",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Love"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "I called you by sweet names by wood and linn,\nYou answered not because my voice was new,\nAnd you were listening for the hounds of Finn …"
+  },
+  {
+   "id": "ledwidge/50",
+   "title": "At a Poet's Grave",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Arts & Sciences"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "When I leave down this pipe my friend\nAnd sleep with flowers I loved, apart,\nMy songs shall rise in wilding things …"
+  },
+  {
+   "id": "ledwidge/51",
+   "title": "Soliloquy",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Death & Dying"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "When I was young I had a care\nLest I should cheat me of my share\nOf that which makes it sweet to strive …"
+  },
+  {
+   "id": "ledwidge/52",
+   "title": "The Dead Kings",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Mythology & Folklore"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "All the dead kings came to me\nAt Rosnaree, where I was dreaming.\nA few stars glimmered through the morn, …"
+  },
+  {
+   "id": "ledwidge/53",
+   "title": "In France",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "The silence of maternal hills\nIs round me in my evening dreams;\nAnd round me music-making bills …"
+  },
+  {
+   "id": "ledwidge/54",
+   "title": "Fairies",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "Maiden-poet, come with me\nTo the heaped up cairn of Maeve,\nAnd there we'll dance a fairy dance …"
+  },
+  {
+   "id": "ledwidge/55",
+   "title": "Pan",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "He knows the safe ways and unsafe\nAnd he will lead the lambs to fold,\nGathering them with his merry pipe, …"
+  },
+  {
+   "id": "ledwidge/56",
+   "title": "A Fairy Hunt",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "Who would hear the fairy horn\nCalling all the hounds of Finn\nMust be in a lark's nest born …"
+  },
+  {
+   "id": "ledwidge/57",
+   "title": "The Sylph",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "I saw you and I named a flower\nThat lights with blue a woodland space,\nI named a bird of the red hour …"
+  },
+  {
+   "id": "ledwidge/58",
+   "title": "Home",
+   "authorSlug": "ledwidge",
+   "author": "Francis Ledwidge",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "Last Songs (1918)",
+   "excerpt": "A burst of sudden wings at dawn,\nFaint voices in a dreamy noon,\nEvenings of mist and murmurings, …"
   },
   {
    "id": "rosenberg/0",
