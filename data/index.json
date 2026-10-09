@@ -1,5 +1,5 @@
 {
- "count": 12182,
+ "count": 12204,
  "workCount": 45,
  "poets": [
   {
@@ -971,6 +971,22 @@
    "order": 585,
    "poemCount": 19,
    "workCount": 1
+  },
+  {
+   "slug": "finch",
+   "name": "Anne Finch, Countess of Winchilsea",
+   "dates": "1661–1720",
+   "era": "Restoration",
+   "category": "Restoration & Augustan",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Anne Finch, Countess of Winchilsea (1661–1720), née Kingsmill, was a maid of honour to Mary of Modena and married Heneage Finch in 1684. After the Revolution of 1688 the couple retired to the country, where she wrote most of her poems. She published Miscellany Poems, on Several Occasions in 1713 and often called herself Ardelia in her verse.",
+    "Her ‘Nocturnal Reverie’ was singled out by Wordsworth as a rare piece of fresh nature description in its century, and her ode ‘The Spleen’ is among the earliest English poems on melancholy as a condition. She also wrote fables, satires, songs and religious poems."
+   ],
+   "order": 600,
+   "poemCount": 22,
+   "workCount": 0
   },
   {
    "slug": "swift",
@@ -2400,11 +2416,11 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2514
+   "count": 2518
   },
   {
    "name": "Living",
-   "count": 2466
+   "count": 2468
   },
   {
    "name": "Love",
@@ -2412,11 +2428,11 @@
   },
   {
    "name": "Religion",
-   "count": 1712
+   "count": 1713
   },
   {
    "name": "Death & Dying",
-   "count": 804
+   "count": 805
   },
   {
    "name": "History & Politics",
@@ -2428,7 +2444,7 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 389
+   "count": 391
   },
   {
    "name": "Time & Brevity",
@@ -2436,11 +2452,11 @@
   },
   {
    "name": "The Mind",
-   "count": 270
+   "count": 272
   },
   {
    "name": "Social Commentaries",
-   "count": 171
+   "count": 181
   },
   {
    "name": "Mythology & Folklore",
@@ -51914,6 +51930,292 @@
    ],
    "collection": null,
    "excerpt": "_Enter_ JANUS.\n\n_Janus_. Chronos, Chronos, mend thy pace; …"
+  },
+  {
+   "id": "finch/0",
+   "title": "A Nocturnal Reverie",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "In such a Night, when every louder Wind\nIs to its distant Cavern safe confin'd;\nAnd only gentle Zephyr fans his Wings, …"
+  },
+  {
+   "id": "finch/1",
+   "title": "The Spleen",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "What art thou, SPLEEN, which ev'ry thing dost ape ?\nThou Proteus to abus'd Mankind,\nWho never yet thy real Cause cou'd find, …"
+  },
+  {
+   "id": "finch/2",
+   "title": "To Death",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "O King of Terrors, whose unbounded Sway\nAll that have Life, must certainly Obey;\nThe King, the Priest, the Prophet, all are Thine, …"
+  },
+  {
+   "id": "finch/3",
+   "title": "The Petition for an Absolute Retreat",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living",
+    "Relationships"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "Give me O indulgent Fate!\nGive me yet, before I Dye,\nA sweet, but absolute Retreat, …"
+  },
+  {
+   "id": "finch/4",
+   "title": "Fanscomb Barn",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Nature"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "In Fanscomb Barn (who knows not Fanscomb Barn?)\nSeated between the sides of rising Hills,\nWhose airy Tops o'erlook the Gallick Seas, …"
+  },
+  {
+   "id": "finch/5",
+   "title": "The Tree",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "Fair Tree! for thy delightful Shade\n'Tis just that some Return be made;\nSure, some Return is due from me …"
+  },
+  {
+   "id": "finch/6",
+   "title": "The Atheist and the Acorn",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Nature"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "Methinks this World is oddly made,\nAnd ev'ry thing's amiss,\nA dull presuming Atheist said, …"
+  },
+  {
+   "id": "finch/7",
+   "title": "The Lyon and the Gnat",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Nature"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "To the still Covert of a Wood,\nAbout the prime of Day,\nA Lyon, satiated with Food, …"
+  },
+  {
+   "id": "finch/8",
+   "title": "The Man and His Horse",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Nature"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "Within a Meadow, on the way,\nA sordid Churl resolv'd to stay,\nAnd give his Horse a Bite ; …"
+  },
+  {
+   "id": "finch/9",
+   "title": "Jupiter and the Farmer",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Mythology & Folklore"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "When Poets gave their God in Crete a Birth,\nThen Jupiter held Traffick with the Earth,\nAnd had a Farm to Lett: the Fine was high, …"
+  },
+  {
+   "id": "finch/10",
+   "title": "The Man Bitten by Fleas",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "A Peevish Fellow laid his Head\nOn Pillows stuff'd with Down ;\nBut was no sooner warm in bed, …"
+  },
+  {
+   "id": "finch/11",
+   "title": "Democritus and His Neighbours",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "The Mind"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "In Vulgar Minds what Errors do arise !\nHow diff'ring are the Notions, they possess,\nFrom theirs, whom better Sense do's bless, …"
+  },
+  {
+   "id": "finch/12",
+   "title": "The Owl Describing Her Young Ones",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Nature"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "Why was that baleful Creature made,\nWhich seeks our Quiet to invade,\nAnd screams ill Omens through the Shade? …"
+  },
+  {
+   "id": "finch/13",
+   "title": "The Eagle, the Sow, and the Cat",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Nature"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "The Queen of Birds, t'encrease the Regal Stock,\nHad hatch'd her young Ones in a stately Oak,\nWhose Middle-part was by a Cat possest, …"
+  },
+  {
+   "id": "finch/14",
+   "title": "The Shepherd Piping to the Fishes",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Nature"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "A Shepherd seeking with his Lass\nTo shun the Heat of Day ;\nWas seated on the shadow'd Grass, …"
+  },
+  {
+   "id": "finch/15",
+   "title": "The Jester and the Little Fishes",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Arts & Sciences"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "Far, from Societies where I haue place\nBe all half Witts, and Acters of grimace ;\nBuffoons, and Mimmicks, quoters of old saws, …"
+  },
+  {
+   "id": "finch/16",
+   "title": "To Mr. Pope",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "The Works of Alexander Pope (1717)",
+   "excerpt": "The muse, of ev'ry heav'nly gift allowed\nTo be the chief, is public, though not proud.\nWidely extensive is the poet's aim, …"
+  },
+  {
+   "id": "finch/17",
+   "title": "The Circuit of Apollo",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": null,
+   "excerpt": "Appollo as lately a Circuit he made,\nThroo' the lands of the Muses when Kent he survey'd\nAnd saw there that Poets were not very common, …"
+  },
+  {
+   "id": "finch/18",
+   "title": "Enquiry After Peace",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "The Mind"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "PEACE! where art thou to be found?\nWhere, in all the spacious Round,\nMay thy Footsteps be pursu'd? …"
+  },
+  {
+   "id": "finch/19",
+   "title": "The Dog and His Master",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Relationships"
+   ],
+   "collection": null,
+   "excerpt": "NO better Dog e'er kept his Master's Door\nThan honest Snarl, who spar'd nor Rich nor Poor;\nBut gave the Alarm, when any one drew nigh, …"
+  },
+  {
+   "id": "finch/20",
+   "title": "To the Nightingale",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Arts & Sciences"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "Exert thy voice, sweet harbinger of spring!\nThis moment is thy time to sing,\nThis moment I attend to praise, …"
+  },
+  {
+   "id": "finch/21",
+   "title": "Hope",
+   "authorSlug": "finch",
+   "author": "Anne Finch, Countess of Winchilsea",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Religion"
+   ],
+   "collection": "Miscellany Poems, on Several Occasions (1713)",
+   "excerpt": "The Tree of Knowledge, which in Eden prove'd\nThe Tree of Life, was thence to heaven remov'd:\nHope is the growth of earth, the only plant …"
   },
   {
    "id": "swift/0",
