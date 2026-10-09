@@ -1,5 +1,5 @@
 {
- "count": 12333,
+ "count": 12346,
  "workCount": 45,
  "poets": [
   {
@@ -2445,6 +2445,22 @@
    "workCount": 0
   },
   {
+   "slug": "ahmet-hasim",
+   "name": "Ahmet Haşim",
+   "dates": "c. 1885–1933",
+   "era": "Late Ottoman",
+   "category": "Turkish & Ottoman",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Ahmet Haşim was born in Baghdad in the mid-1880s (sources differ on the year) and came to Istanbul at about twelve, after his mother's death. At the Galatasaray school he discovered French poetry and the Symbolists. In 1909 he joined the Fecr-i Âtî ('Dawn of the Future') group and published his poems in its magazine, Servet-i Fünûn.",
+    "He published two books of verse, Göl Saatleri ('Lake Hours', 1921) and Piyale ('The Wine Cup', 1926), made of short, musical poems about evening, water and light. He died in Istanbul on 4 June 1933. The texts below are the original Turkish, taken from tr.wikisource.org."
+   ],
+   "order": 1431,
+   "poemCount": 13,
+   "workCount": 0
+  },
+  {
    "slug": "brooke",
    "name": "Rupert Brooke",
    "dates": "1887–1915",
@@ -2528,11 +2544,11 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2523
+   "count": 2531
   },
   {
    "name": "Love",
-   "count": 2479
+   "count": 2482
   },
   {
    "name": "Living",
@@ -2544,7 +2560,7 @@
   },
   {
    "name": "Death & Dying",
-   "count": 809
+   "count": 810
   },
   {
    "name": "History & Politics",
@@ -2564,7 +2580,7 @@
   },
   {
    "name": "The Mind",
-   "count": 276
+   "count": 277
   },
   {
    "name": "Social Commentaries",
@@ -152085,6 +152101,183 @@
    ],
    "collection": "Birds, Beasts and Flowers (1923)",
    "excerpt": "Climbing through the January snow, into the Lobo canyon\nDark grow the spruce-trees, blue is the balsam, water sounds still unfrozen, and the trail is still evident.\n …"
+  },
+  {
+   "id": "ahmet-hasim/0",
+   "title": "Zulmet",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Love"
+   ],
+   "collection": "Göl Saatleri (1921). Original Turkish text.",
+   "excerpt": "Ey sen\nKi şimdi şüpheli bir şekl-i pür-hayâl oldun\nBu semâ-yı mesânın altında! …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/1",
+   "title": "Seher",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Göl Saatleri (1921). Original Turkish text.",
+   "excerpt": "Ağaçların seherî zirvesinde titreşiyor\nTuyûr-ı fâniye-i âlem-i tahayyül ü hâb.\n …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/2",
+   "title": "Gece Yarısı",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "The Mind"
+   ],
+   "collection": "Göl Saatleri (1921). Original Turkish text.",
+   "excerpt": "Ve ansızın suya etmekle mâh-ı dûr sukut\nMiyâh-ı ruhumu andırdı safha-i tâlâb:\nO ruh içinde muzî bir garîb nilüfer …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/3",
+   "title": "Öğle",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Göl Saatleri (1921). Original Turkish text.",
+   "excerpt": "Yeşil sularda büyük inciden çiçekler açar,\nGümüş böcekler okur âba bir neşîde-i hâb.\nDurur sevâhilin üstünde, bî-heves, bî-tâb, …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/4",
+   "title": "Öğleden Sonra",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Göl Saatleri (1921). Original Turkish text.",
+   "excerpt": "İçer gümüş kıyılardan remîde âhûlar\nVe onların sesi eyler bütün sükûtu harâb,\nEder bu daveti, durgun sulardan, istiğrâb …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/5",
+   "title": "Bir Günün Sonunda Arzu",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Piyale (1926). Original Turkish text.",
+   "excerpt": "Yorgun gözümün halkalarında\nGüller gibi fecr oldu nümâyân,\nGüller gibi... sonsuz iri güller, …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/6",
+   "title": "Şafakta",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Piyale (1926). Original Turkish text.",
+   "excerpt": "Dönsek mi bu aşkın şafağından,\nGitsek mi ekâlîm-i leyâle?\nBizden daha evvel erişenler, …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/7",
+   "title": "Bülbül",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Piyale (1926). Original Turkish text.",
+   "excerpt": "Bir gamlı hazanın seherinde\nIsrara ne hâcet yine, bülbül!\nBil, kalbimizin bahçelerinde …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/8",
+   "title": "Bir Yaz Gecesi Hatırası",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Piyale (1926). Original Turkish text.",
+   "excerpt": "İşveyle, fısıltıyla, gülüşle\nOlmuş şeb-i sevda yine bîhâp;\nOklar gibi saplanmada kalbe, …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/9",
+   "title": "Bahçe",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Piyale (1926). Original Turkish text.",
+   "excerpt": "Bir Acem bahçesi, bir seccade\nDolduran havzı ateşten bade.\nNe kadar gamlı bu akşam vakti …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/10",
+   "title": "Sonbahar",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Love"
+   ],
+   "collection": "Piyale (1926). Original Turkish text.",
+   "excerpt": "Bir taraf bahçe, bir tarafta dere,\nGel uzan, sevgilim, benimle yere;\nSuyu yakuta döndüren bu hazan …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/11",
+   "title": "Yarı Yol",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Nature"
+   ],
+   "collection": "Piyale (1926). Original Turkish text.",
+   "excerpt": "Nasıl istersen öyle dinle, bakın:\nDalların zirvesindeyiz ancak\nYarı yoldan ziyâde yerden uzak. …",
+   "translator": null
+  },
+  {
+   "id": "ahmet-hasim/12",
+   "title": "Orman",
+   "authorSlug": "ahmet-hasim",
+   "author": "Ahmet Haşim",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Piyale (1926). Original Turkish text.",
+   "excerpt": "Su değil, mevsimin havası akan,\nDuyduğun yaprağın, dalın sesidir;\nSuda yıldızların parıltısıdır, …",
+   "translator": null
   },
   {
    "id": "brooke/0",
