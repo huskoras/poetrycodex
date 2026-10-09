@@ -1,5 +1,5 @@
 {
- "count": 11394,
+ "count": 11418,
  "workCount": 45,
  "poets": [
   {
@@ -2011,6 +2011,22 @@
    "order": 1360,
    "poemCount": 85,
    "workCount": 0
+  },
+  {
+   "slug": "owen",
+   "name": "Wilfred Owen",
+   "dates": "1893–1918",
+   "era": "Early Twentieth Century",
+   "category": "Victorian",
+   "portrait": "poets/owen.jpg",
+   "credit": "Portrait of Wilfred Owen (frontispiece to Poems, 1920) · Public domain (Wikimedia Commons)",
+   "bio": [
+    "Wilfred Owen (1893–1918) was an English poet and soldier whose unsparing poems of the Western Front made him the best-known poet of the First World War. Only a handful of his poems were published in his lifetime.",
+    "He served with the Manchester Regiment, was treated for shell-shock at Craiglockhart, where he met Siegfried Sassoon, and returned to the front in 1918. He won the Military Cross and was killed on 4 November 1918, a week before the Armistice. His Poems, edited by Sassoon, appeared in 1920."
+   ],
+   "order": 1450,
+   "poemCount": 24,
+   "workCount": 0
   }
  ],
  "subjects": [
@@ -2020,11 +2036,11 @@
   },
   {
    "name": "Nature",
-   "count": 2390
+   "count": 2392
   },
   {
    "name": "Love",
-   "count": 2324
+   "count": 2325
   },
   {
    "name": "Religion",
@@ -2032,15 +2048,15 @@
   },
   {
    "name": "Death & Dying",
-   "count": 713
+   "count": 723
   },
   {
    "name": "History & Politics",
-   "count": 605
+   "count": 608
   },
   {
    "name": "Relationships",
-   "count": 395
+   "count": 397
   },
   {
    "name": "Arts & Sciences",
@@ -2052,11 +2068,11 @@
   },
   {
    "name": "The Mind",
-   "count": 227
+   "count": 230
   },
   {
    "name": "Social Commentaries",
-   "count": 89
+   "count": 92
   },
   {
    "name": "Mythology & Folklore",
@@ -141842,6 +141858,318 @@
    ],
    "collection": null,
    "excerpt": "The Centennial Meditation of Columbia.  1776-1876.  A Cantata.\n     <Musical Annotations, in angled brackets, precede each section.>\n     <Full chorus:  sober, measured and yet majestic progressions of chords.> …"
+  },
+  {
+   "id": "owen/0",
+   "title": "Strange Meeting",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "It seemed that out of the battle I escaped\nDown some profound dull tunnel, long since scooped\nThrough granites which Titanic wars had groined. …"
+  },
+  {
+   "id": "owen/1",
+   "title": "Greater Love",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "Red lips are not so red\n   As the stained stones kissed by the English dead.\nKindness of wooed and wooer …"
+  },
+  {
+   "id": "owen/2",
+   "title": "Apologia pro Poemate Meo",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "History & Politics"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "I, too, saw God through mud--\n    The mud that cracked on cheeks when wretches smiled.\n    War brought more glory to their eyes than blood, …"
+  },
+  {
+   "id": "owen/3",
+   "title": "The Show",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "The Mind"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "My soul looked down from a vague height with Death,\nAs unremembering how I rose or why,\nAnd saw a sad land, weak with sweats of dearth, …"
+  },
+  {
+   "id": "owen/4",
+   "title": "Mental Cases",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "History & Politics"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "Who are these?  Why sit they here in twilight?\nWherefore rock they, purgatorial shadows,\nDrooping tongues from jaws that slob their relish, …"
+  },
+  {
+   "id": "owen/5",
+   "title": "Parable of the Old Men and the Young",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Religion"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "So Abram rose, and clave the wood, and went,\nAnd took the fire with him, and a knife.\nAnd as they sojourned both of them together, …"
+  },
+  {
+   "id": "owen/6",
+   "title": "Arms and the Boy",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "Let the boy try along this bayonet-blade\nHow cold steel is, and keen with hunger of blood;\nBlue with all malice, like a madman's flash; …"
+  },
+  {
+   "id": "owen/7",
+   "title": "Anthem for Doomed Youth",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "What passing-bells for these who die as cattle?\n   Only the monstrous anger of the guns.\n   Only the stuttering rifles' rapid rattle …"
+  },
+  {
+   "id": "owen/8",
+   "title": "The Send-off",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "Down the close, darkening lanes they sang their way\nTo the siding-shed,\nAnd lined the train with faces grimly gay. …"
+  },
+  {
+   "id": "owen/9",
+   "title": "Insensibility",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "History & Politics"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "I\nHappy are men who yet before they are killed\nCan let their veins run cold. …"
+  },
+  {
+   "id": "owen/10",
+   "title": "Dulce et Decorum est",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "Bent double, like old beggars under sacks,\nKnock-kneed, coughing like hags, we cursed through sludge,\nTill on the haunting flares we turned our backs, …"
+  },
+  {
+   "id": "owen/11",
+   "title": "The Sentry",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "We'd found an old Boche dug-out, and he knew,\nAnd gave us hell, for shell on frantic shell\nHammered on top, but never quite burst through. …"
+  },
+  {
+   "id": "owen/12",
+   "title": "The Dead-Beat",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "He dropped,--more sullenly than wearily,\nLay stupid like a cod, heavy like meat,\nAnd none of us could kick him to his feet; …"
+  },
+  {
+   "id": "owen/13",
+   "title": "Exposure",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Death & Dying"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "I\nOur brains ache, in the merciless iced east winds that knife us . . .\nWearied we keep awake because the night is silent . . . …"
+  },
+  {
+   "id": "owen/14",
+   "title": "Spring Offensive",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "Halted against the shade of a last hill,\nThey fed, and, lying easy, were at ease\nAnd, finding comfortable chests and knees …"
+  },
+  {
+   "id": "owen/15",
+   "title": "The Chances",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "I mind as 'ow the night afore that show\nUs five got talking,--we was in the know,\n\"Over the top to-morrer; boys, we're for it, …"
+  },
+  {
+   "id": "owen/16",
+   "title": "S. I. W.",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "Patting goodbye, doubtless they told the lad\nHe'd always show the Hun a brave man's face;\nFather would sooner him dead than in disgrace,-- …"
+  },
+  {
+   "id": "owen/17",
+   "title": "Futility",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "Move him into the sun--\nGently its touch awoke him once,\nAt home, whispering of fields unsown. …"
+  },
+  {
+   "id": "owen/18",
+   "title": "Smile, Smile, Smile",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "Head to limp head, the sunk-eyed wounded scanned\nYesterday's Mail; the casualties (typed small)\nAnd (large) Vast Booty from our Latest Haul. …"
+  },
+  {
+   "id": "owen/19",
+   "title": "Conscious",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "The Mind"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "His fingers wake, and flutter up the bed.\nHis eyes come open with a pull of will,\nHelped by the yellow may-flowers by his head. …"
+  },
+  {
+   "id": "owen/20",
+   "title": "A Terre",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Living"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "Sit on the bed; I'm blind, and three parts shell,\nBe careful; can't shake hands now; never shall.\nBoth arms have mutinied against me--brutes. …"
+  },
+  {
+   "id": "owen/21",
+   "title": "Wild with all Regrets",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Living"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "My arms have mutinied against me--brutes!\nMy fingers fidget like ten idle brats,\nMy back's been stiff for hours, damned hours. …"
+  },
+  {
+   "id": "owen/22",
+   "title": "Disabled",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Time & Brevity"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "He sat in a wheeled chair, waiting for dark,\nAnd shivered in his ghastly suit of grey,\nLegless, sewn short at elbow.  Through the park …"
+  },
+  {
+   "id": "owen/23",
+   "title": "The End",
+   "authorSlug": "owen",
+   "author": "Wilfred Owen",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion"
+   ],
+   "collection": "Poems (1920)",
+   "excerpt": "After the blast of lightning from the east,\nThe flourish of loud clouds, the Chariot throne,\nAfter the drums of time have rolled and ceased …"
   }
  ],
  "legacyIndex": [
