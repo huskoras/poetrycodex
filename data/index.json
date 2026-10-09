@@ -1,5 +1,5 @@
 {
- "count": 11953,
+ "count": 11983,
  "workCount": 45,
  "poets": [
   {
@@ -1114,6 +1114,22 @@
    ],
    "order": 887,
    "poemCount": 21,
+   "workCount": 0
+  },
+  {
+   "slug": "crabbe",
+   "name": "George Crabbe",
+   "dates": "1754–1832",
+   "era": "Romantic",
+   "category": "Romantic",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "George Crabbe (1754–1832) was born at Aldeburgh on the Suffolk coast, trained as a surgeon and apothecary, and went to London in 1780 to try his fortune as a poet. Edmund Burke took him up, and he afterward became a clergyman. The Village (1783), which Samuel Johnson read in manuscript, set out to show the real life of the rural poor against the conventions of pastoral.",
+    "His later narrative poems, The Parish Register, The Borough and the Tales, tell the lives of ordinary people in plain, exact couplets and were widely read in his day. Peter Grimes, from The Borough, is the source of Benjamin Britten’s opera."
+   ],
+   "order": 888,
+   "poemCount": 30,
    "workCount": 0
   },
   {
@@ -2256,7 +2272,7 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2492
+   "count": 2493
   },
   {
    "name": "Living",
@@ -2264,15 +2280,15 @@
   },
   {
    "name": "Love",
-   "count": 2395
+   "count": 2396
   },
   {
    "name": "Religion",
-   "count": 1675
+   "count": 1677
   },
   {
    "name": "Death & Dying",
-   "count": 777
+   "count": 778
   },
   {
    "name": "History & Politics",
@@ -2280,23 +2296,23 @@
   },
   {
    "name": "Relationships",
-   "count": 416
+   "count": 423
   },
   {
    "name": "Arts & Sciences",
-   "count": 354
+   "count": 357
   },
   {
    "name": "Time & Brevity",
-   "count": 282
+   "count": 283
   },
   {
    "name": "The Mind",
-   "count": 252
+   "count": 257
   },
   {
    "name": "Social Commentaries",
-   "count": 136
+   "count": 145
   },
   {
    "name": "Mythology & Folklore",
@@ -53036,6 +53052,397 @@
    ],
    "collection": "The Rowley Poems (ed. Tyrwhitt, 1778)",
    "excerpt": "Thorowe the halle the belle han sounde;\nByelecoyle doe the Grave beseeme;\nThe ealdermenne doe sytte arounde, …"
+  },
+  {
+   "id": "crabbe/0",
+   "title": "The Village, Book I",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Nature"
+   ],
+   "collection": "The Village (1783)",
+   "excerpt": "The Village Life, and every care that reigns\nO'er youthful peasants and declining swains;\nWhat labour yields, and what, that labour past, …"
+  },
+  {
+   "id": "crabbe/1",
+   "title": "The Village, Book II",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "The Village (1783)",
+   "excerpt": "No longer truth, though shown in verse, disdain,\nBut own the Village Life a life of pain:\nI too must yield, that oft amid those woes …"
+  },
+  {
+   "id": "crabbe/2",
+   "title": "The Newspaper",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Arts & Sciences"
+   ],
+   "collection": "The Newspaper (1785)",
+   "excerpt": "A time like this, a busy, bustling time,\nSuits ill with writers, very ill with rhyme:\nUnheard we sing, when party-rage runs strong, …"
+  },
+  {
+   "id": "crabbe/3",
+   "title": "The Library",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": "The Library (1781)",
+   "excerpt": "When the sad soul, by care and grief oppress'd,\nLooks round the world, but looks in vain for rest;\nWhen every object that appears in view …"
+  },
+  {
+   "id": "crabbe/4",
+   "title": "The Parish Register, Part I: Baptisms",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "The Parish Register (1807)",
+   "excerpt": "The year revolves, and I again explore\nThe simple Annals of my Parish poor;\nWhat Infant-members in my flock appear, …"
+  },
+  {
+   "id": "crabbe/5",
+   "title": "The Parish Register, Part II: Marriages",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "The Parish Register (1807)",
+   "excerpt": "DISPOSED to wed, e'en while you hasten, stay;\nThere's great advantage in a small delay:\nThus Ovid sang, and much the wise approve …"
+  },
+  {
+   "id": "crabbe/6",
+   "title": "The Parish Register, Part III: Burials",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Social Commentaries"
+   ],
+   "collection": "The Parish Register (1807)",
+   "excerpt": "THERE was, 'tis said, and I believe, a time\nWhen humble Christians died with views sublime;\nWhen all were ready for their faith to bleed, …"
+  },
+  {
+   "id": "crabbe/7",
+   "title": "The Borough, Letter I: General Description",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Social Commentaries"
+   ],
+   "collection": "The Borough (1810)",
+   "excerpt": "\"DESCRIBE the Borough\"--though our idle tribe\nMay love description, can we so describe,\nThat you shall fairly streets and buildings trace, …"
+  },
+  {
+   "id": "crabbe/8",
+   "title": "The Borough, Letter II: The Church",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Social Commentaries"
+   ],
+   "collection": "The Borough (1810)",
+   "excerpt": "\"WHAT is a Church?\"--Let Truth and Reason speak,\nThey would reply, \"The faithful, pure, and meek;\nFrom Christian folds, the one selected race, …"
+  },
+  {
+   "id": "crabbe/9",
+   "title": "The Borough, Letter XII: Players",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "The Borough (1810)",
+   "excerpt": "DRAWN by the annual call, we now behold\nOur Troop Dramatic, heroes known of old,\nAnd those, since last they march'd, enlisted and enrolled: …"
+  },
+  {
+   "id": "crabbe/10",
+   "title": "The Borough, Letter XIV: Life of Blaney",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "The Borough (1810)",
+   "excerpt": "OBSERVE that tall pale Veteran! what a look\nOf shame and guilt!--who cannot read that book?\nMisery and mirth are blended in his face, …"
+  },
+  {
+   "id": "crabbe/11",
+   "title": "The Borough, Letter XV: Clelia",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "The Borough (1810)",
+   "excerpt": "WE had a sprightly nymph--in every town\nAre some such sprights, who wander up and down;\nShe had her useful arts, and could contrive, …"
+  },
+  {
+   "id": "crabbe/12",
+   "title": "The Borough, Letter XIX: The Parish-Clerk",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": "The Borough (1810)",
+   "excerpt": "WITH our late Vicar, and his age the same,\nHis clerk, hight Jachin, to his office came;\nThe like slow speech was his, the like tall slender frame: …"
+  },
+  {
+   "id": "crabbe/13",
+   "title": "The Borough, Letter XX: Ellen Orford",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Religion"
+   ],
+   "collection": "The Borough (1810)",
+   "excerpt": "OBSERVE yon tenement, apart and small,\nWhere the wet pebbles shine upon the wall;\nWhere the low benches lean beside the door, …"
+  },
+  {
+   "id": "crabbe/14",
+   "title": "The Borough, Letter XXI: Abel Keene",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Religion"
+   ],
+   "collection": "The Borough (1810)",
+   "excerpt": "A QUIET, simple man was Abel Keene,\nHe meant no harm, nor did he often mean;\nHe kept a school of loud rebellious boys, …"
+  },
+  {
+   "id": "crabbe/15",
+   "title": "The Borough, Letter XXII: Peter Grimes",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Death & Dying"
+   ],
+   "collection": "The Borough (1810)",
+   "excerpt": "OLD Peter Grimes made fishing his employ,\nHis wife he cabin'd with him and his boy,\nAnd seem'd that life laborious to enjoy: …"
+  },
+  {
+   "id": "crabbe/16",
+   "title": "The Borough, Letter XXIII: Prisons",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "The Mind"
+   ],
+   "collection": "The Borough (1810)",
+   "excerpt": "'TIS well--that Man to all the varying states\nOf good and ill his mind accommodates;\nHe not alone progressive grief sustains, …"
+  },
+  {
+   "id": "crabbe/17",
+   "title": "Procrastination",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "Tales (1812)",
+   "excerpt": "Love will expire--the gay, the happy dream\nWill turn to scorn, indiff'rence, or esteem:\nSome favour'd pairs, in this exchange, are blest, …"
+  },
+  {
+   "id": "crabbe/18",
+   "title": "Edward Shore",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Living"
+   ],
+   "collection": "Tales (1812)",
+   "excerpt": "Genius! thou gift of Heav'n! thou light divine!\nAmid what dangers art thou doom'd to shine!\nOft will the body's weakness check thy force, …"
+  },
+  {
+   "id": "crabbe/19",
+   "title": "The Widow's Tale",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Living"
+   ],
+   "collection": "Tales (1812)",
+   "excerpt": "To Farmer Moss, in Langar Vale, came down,\nHis only daughter, from her school in town;\nA tender, timid maid! who knew not how …"
+  },
+  {
+   "id": "crabbe/20",
+   "title": "The Lover's Journey",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Love",
+    "Nature"
+   ],
+   "collection": "Tales (1812)",
+   "excerpt": "It is the Soul that sees:  the outward eyes\nPresent the object, but the Mind descries;\nAnd thence delight, disgust, or cool indiff'rence rise: …"
+  },
+  {
+   "id": "crabbe/21",
+   "title": "The Wager",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "Tales (1812)",
+   "excerpt": "Counter and Clubb were men in trade, whose pains,\nCredit, and prudence, brought them constant gains;\nPartners and punctual, every friend agreed …"
+  },
+  {
+   "id": "crabbe/22",
+   "title": "The Brothers",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Living"
+   ],
+   "collection": "Tales (1812)",
+   "excerpt": "Than old George Fletcher, on the British coast\nDwelt not a seaman who had more to boast:\nKind, simple and sincere--he seldom spoke, …"
+  },
+  {
+   "id": "crabbe/23",
+   "title": "The Learned Boy",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Relationships"
+   ],
+   "collection": "Tales (1812)",
+   "excerpt": "An honest man was Farmer Jones, and true;\nHe did by all as all by him should do;\nGrave, cautious, careful, fond of gain was he, …"
+  },
+  {
+   "id": "crabbe/24",
+   "title": "Arabella",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Religion"
+   ],
+   "collection": "Tales (1812)",
+   "excerpt": "Of a fair town where Doctor Rack was guide,\nHis only daughter was the boast and pride -\nWise Arabella, yet not wise alone, …"
+  },
+  {
+   "id": "crabbe/25",
+   "title": "Sir Eustace Grey",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Religion"
+   ],
+   "collection": "Poems (1807)",
+   "excerpt": "VISITOR.\n\nI'll know no more;--the heart is torn …"
+  },
+  {
+   "id": "crabbe/26",
+   "title": "The Hall of Justice",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Religion"
+   ],
+   "collection": "Poems (1807)",
+   "excerpt": "VAGRANT.\n\nTake, take away thy barbarous hand, …"
+  },
+  {
+   "id": "crabbe/27",
+   "title": "Woman",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "Poems (1807)",
+   "excerpt": "Place the white man on Afric's coast,\nWhose swarthy sons in blood delight,\nWho of their scorn to Europe boast, …"
+  },
+  {
+   "id": "crabbe/28",
+   "title": "The Birth of Flattery",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Poems (1807)",
+   "excerpt": "Muse of my Spenser, who so well could sing\nThe passions all, their bearings and their ties;\nWho could in view those shadowy beings bring, …"
+  },
+  {
+   "id": "crabbe/29",
+   "title": "Reflections",
+   "authorSlug": "crabbe",
+   "author": "George Crabbe",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Living"
+   ],
+   "collection": "Poems (1807)",
+   "excerpt": "When all the fiercer passions cease\n(The glory and disgrace of youth):\nWhen the deluded soul in peace, …"
   },
   {
    "id": "blake/0",
