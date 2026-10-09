@@ -1,5 +1,5 @@
 {
- "count": 12119,
+ "count": 12149,
  "workCount": 45,
  "poets": [
   {
@@ -1114,6 +1114,22 @@
    ],
    "order": 744,
    "poemCount": 20,
+   "workCount": 0
+  },
+  {
+   "slug": "smart",
+   "name": "Christopher Smart",
+   "dates": "1722–1771",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Christopher Smart (1722–1771) was born in Kent and educated at Cambridge, where he became a fellow of Pembroke Hall. He lived in London as a hack writer and was confined for mental illness between 1756 and 1763. He died in a debtors’ prison.",
+    "His A Song to David (1763) is the poem by which he is chiefly remembered; its ecstatic language was thought a sign of his madness and it was little read for a century. His Hymns for the Amusement of Children appeared in 1771, and Jubilate Agno, written in confinement, was not published until the twentieth century."
+   ],
+   "order": 748,
+   "poemCount": 30,
    "workCount": 0
   },
   {
@@ -2368,19 +2384,19 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2506
+   "count": 2509
   },
   {
    "name": "Living",
-   "count": 2463
+   "count": 2466
   },
   {
    "name": "Love",
-   "count": 2403
+   "count": 2404
   },
   {
    "name": "Religion",
-   "count": 1693
+   "count": 1706
   },
   {
    "name": "Death & Dying",
@@ -2392,11 +2408,11 @@
   },
   {
    "name": "Relationships",
-   "count": 428
+   "count": 429
   },
   {
    "name": "Arts & Sciences",
-   "count": 381
+   "count": 384
   },
   {
    "name": "Time & Brevity",
@@ -2404,11 +2420,11 @@
   },
   {
    "name": "The Mind",
-   "count": 266
+   "count": 268
   },
   {
    "name": "Social Commentaries",
-   "count": 166
+   "count": 170
   },
   {
    "name": "Mythology & Folklore",
@@ -53544,6 +53560,390 @@
    ],
    "collection": null,
    "excerpt": "To fair Fidele's grassy tomb\n  Soft maids and village hinds shall bring\nEach opening sweet of earliest bloom, …"
+  },
+  {
+   "id": "smart/0",
+   "title": "A Song to David",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Arts & Sciences"
+   ],
+   "collection": "A Song to David (1763)",
+   "excerpt": "O THOU, that sit'st upon a throne,\nWith harp of high majestic tone,\nTo praise the King of kings; …"
+  },
+  {
+   "id": "smart/1",
+   "title": "Mirth",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "If you are merry sing away,\nAnd touch the organs sweet;\nThis is the Lord's triumphant day, …"
+  },
+  {
+   "id": "smart/2",
+   "title": "Against Despair",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "A raven once an Acorn took\nFrom Bashan's tallest stoutest tree;\nHe hid it by a limpid brook, …"
+  },
+  {
+   "id": "smart/3",
+   "title": "Beauty (For a Damsel)",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Living"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "Christ, keep me from the self — survey\nOf beauties all thine own;\nIf there is beauty, let me pray …"
+  },
+  {
+   "id": "smart/4",
+   "title": "Charity",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Relationships"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "O queen of virtues, whose sweet pow'r\nDoes o'er the first perfections tow'r,\nSustaining in the arms of love …"
+  },
+  {
+   "id": "smart/5",
+   "title": "Contentment",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Living"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "God's all my portion, all my good,\nFrom his rich mercy flows;\nAnd his good Providence secures …"
+  },
+  {
+   "id": "smart/6",
+   "title": "For Christmas-Day",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "High let us swell our tuneful Notes\nAnd join th'angelic Throng,\nFor Angels no such Love have known, …"
+  },
+  {
+   "id": "smart/7",
+   "title": "For Easter-Sunday",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "Jesus Christ is risen to day,\nHallelujah.\nOur triumphant Holy-Day; …"
+  },
+  {
+   "id": "smart/8",
+   "title": "For Good-Friday",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Death & Dying"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "Awake, my Soul! this solemn Day,\nTo Notes deep, melting, soft, and slow,\nSing in some Heart-affecting Lay, …"
+  },
+  {
+   "id": "smart/9",
+   "title": "For Saturday",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "Now's the time for mirth and play,\nSaturday's an holyday;\nPraise to heav'n unceasing yield, …"
+  },
+  {
+   "id": "smart/10",
+   "title": "For Sunday",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Living"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "Arise — arise — the Lord arose\nOn this triumphant day:\nYour souls to piety dispose, …"
+  },
+  {
+   "id": "smart/11",
+   "title": "Good-nature to Animals",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "The man of Mercy (says the Seer)\nShews mercy to his beast;\nLearn not of churls to be severe, …"
+  },
+  {
+   "id": "smart/12",
+   "title": "Hope",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "Ah! Hannah, why should'st thou despair,\nQuick to the Tabernacle speed;\nThere on thy knees prefer thy pray'r, …"
+  },
+  {
+   "id": "smart/13",
+   "title": "Humility",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "Folly builds high upon the Sand,\nBut lowly let my Basis be;\nFirm as a Rock my Hope shall stand, …"
+  },
+  {
+   "id": "smart/14",
+   "title": "Long-suffering of God",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "One hundred feet from off the ground\nThat noble Aloe blows;\nBut mark ye by what skill profound …"
+  },
+  {
+   "id": "smart/15",
+   "title": "Melancholy",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "O pluck me quick the raven's quill,\nAnd I will set me down,\nMy destin'd purpose to fulfil, …"
+  },
+  {
+   "id": "smart/16",
+   "title": "Mercy",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "O sweet — attentive to the pray'r,\nYe forward hope and stave despair;\nThro' Christ his blood divinely spill'd, …"
+  },
+  {
+   "id": "smart/17",
+   "title": "Prayer",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "Pray without ceasing (says the Saint)\nNor ever in the spirit faint;\nWith grace the bloom and faith the root, …"
+  },
+  {
+   "id": "smart/18",
+   "title": "Silence",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "Before thy betters with suspense,\nInto thyself withdraw\nSilence denotes superior sense, …"
+  },
+  {
+   "id": "smart/19",
+   "title": "Wisdom",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "Father of Lights, conduct my feet\nThro' Life's dark, dang'rous road;\nAnd, O, let ev'ry step still bring …"
+  },
+  {
+   "id": "smart/20",
+   "title": "Taste",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Religion"
+   ],
+   "collection": "Hymns for the Amusement of Children (1771)",
+   "excerpt": "O guide my judgment and my taste,\nSweet SPIRIT, author of the book\nOf wonders, told in language chaste, …"
+  },
+  {
+   "id": "smart/21",
+   "title": "The Wholesale Critic and the Hop-Merchant",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Fables",
+   "excerpt": "Hail to each ancient sacred shade\nOf those, who gave the Muses aid,\nSkill'd verse mysterious to unfold, …"
+  },
+  {
+   "id": "smart/22",
+   "title": "The English Bull Dog, Dutch Mastiff, and Quail",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "Fables",
+   "excerpt": "Are we not all of race divine,\nAlike of an immortal line?\nShall man to man afford derision, …"
+  },
+  {
+   "id": "smart/23",
+   "title": "Fashion and Night",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Fables",
+   "excerpt": "Fashion, a motley nymph of yore,\nThe Cyprian Queen to Porteus bore:\nVarious herself in various climes, …"
+  },
+  {
+   "id": "smart/24",
+   "title": "The Tea-Pot and the Scrubbing-Brush",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Arts & Sciences"
+   ],
+   "collection": "Fables",
+   "excerpt": "A tawdry Tea-Pot, A-la-mode,\nWhere art her utmost skill bestow'd,\nWas much esteem'd for being old, …"
+  },
+  {
+   "id": "smart/25",
+   "title": "Madam and the Magpie",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships",
+    "Social Commentaries"
+   ],
+   "collection": "Fables",
+   "excerpt": "Ye thunders roll, ye oceans roar,\nAnd wake the rough resounding shore;\nYe guns in smoke and flames engage, …"
+  },
+  {
+   "id": "smart/26",
+   "title": "The Snake, the Goose, and the Nightingale",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Fables",
+   "excerpt": "When rul'd by truth and nature's ways,\nWhen just to blame, yet fix'd to praise,\nAs votary of the Delphic God, …"
+  },
+  {
+   "id": "smart/27",
+   "title": "The Bag-Wig and the Tobacco-Pipe",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Living"
+   ],
+   "collection": "Fables",
+   "excerpt": "A Bag-wig of a jauntee air,\nTrick'd up with all a barber's care,\nLoaded with powder and perfume, …"
+  },
+  {
+   "id": "smart/28",
+   "title": "On a Lady Throwing Snow-Balls at Her Lover",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": null,
+   "excerpt": "When, wanton fair, the snowy orb you throw,\nI feel a fire before unknown in snow.\nE'en coldest snow I find has pow'r to warm …"
+  },
+  {
+   "id": "smart/29",
+   "title": "Madam, If You Please",
+   "authorSlug": "smart",
+   "author": "Christopher Smart",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Love"
+   ],
+   "collection": null,
+   "excerpt": "Madam if you please\nTo hear such things as these.\nMadam, I have a rival sad, …"
   },
   {
    "id": "goldsmith/0",
