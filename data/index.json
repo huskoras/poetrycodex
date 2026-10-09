@@ -1,5 +1,5 @@
 {
- "count": 12290,
+ "count": 12296,
  "workCount": 45,
  "poets": [
   {
@@ -1341,6 +1341,22 @@
    "workCount": 0
   },
   {
+   "slug": "galib",
+   "name": "Şeyh Galip",
+   "dates": "1757–1799",
+   "era": "Ottoman Romantic",
+   "category": "Turkish & Ottoman",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Mehmed Esad, known as Şeyh Galip or Galib Dede (1757–1799), was a Mevlevi dervish and sheikh of the Galata convent in Istanbul, and one of the foremost poets of the late Ottoman Romantic school. Sultan Selim III conferred on him the office of sheikh.",
+    "His masterpiece is the mystical romance Husn ü Aşk ('Beauty and Love'), from which two passages are given here. E. J. W. Gibb, who gave the first English account of his diwan, praised the strong and glowing verse of his lyric poems."
+   ],
+   "order": 895,
+   "poemCount": 6,
+   "workCount": 0
+  },
+  {
    "slug": "wordsworth",
    "name": "William Wordsworth",
    "dates": "1770–1850",
@@ -2467,16 +2483,16 @@
    "count": 2518
   },
   {
+   "name": "Love",
+   "count": 2472
+  },
+  {
    "name": "Living",
    "count": 2471
   },
   {
-   "name": "Love",
-   "count": 2470
-  },
-  {
    "name": "Religion",
-   "count": 1717
+   "count": 1720
   },
   {
    "name": "Death & Dying",
@@ -2496,7 +2512,7 @@
   },
   {
    "name": "Time & Brevity",
-   "count": 288
+   "count": 289
   },
   {
    "name": "The Mind",
@@ -58128,6 +58144,88 @@
    ],
    "collection": "Songs Of Experience",
    "excerpt": "Cruelty has a human heart,\nAnd Jealousy a human face;\nTerror the human form divine, …"
+  },
+  {
+   "id": "galib/0",
+   "title": "While the Lovers Circle Here in Mystic Dance",
+   "authorSlug": "galib",
+   "author": "Şeyh Galip",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "While the lovers circle here in mystic dance,\nSun and moon traverse the sphere in mystic dance.\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
+  },
+  {
+   "id": "galib/1",
+   "title": "Those Cries That Sound Throughout the Fast",
+   "authorSlug": "galib",
+   "author": "Şeyh Galip",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "Those cries that sound throughout the fast as for the bowl are all for Thee;\nThose songs and roundelays the which the minstrels troll are all for Thee.\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
+  },
+  {
+   "id": "galib/2",
+   "title": "Out on This Jugglery",
+   "authorSlug": "galib",
+   "author": "Şeyh Galip",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Religion"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "Out on this jugglery! by God! out on this idle snare!\nOut on this pomp and circumstance! out on this glory and glare!\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
+  },
+  {
+   "id": "galib/3",
+   "title": "We Reached the Loved One's Blissful Gate",
+   "authorSlug": "galib",
+   "author": "Şeyh Galip",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Love"
+   ],
+   "collection": "A History of Ottoman Poetry, vol. IV (1905)",
+   "excerpt": "We reached the loved one's blissful gate, but naught of her did sight;\nWe entered Paradise, but ah, we saw no Vision bright.\n …",
+   "translator": "trans. E. J. W. Gibb (1905)"
+  },
+  {
+   "id": "galib/4",
+   "title": "The Song of Love's Nurse",
+   "authorSlug": "galib",
+   "author": "Şeyh Galip",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Living"
+   ],
+   "collection": "Ottoman Poems (1882)",
+   "excerpt": "O Moon! sleep, sleep thou, for this night\nThe cry 'O Lord!' upon thine ear shall smite;\nThough formed, its purpose is yet hid from sight, …",
+   "translator": "trans. E. J. W. Gibb (1882)"
+  },
+  {
+   "id": "galib/5",
+   "title": "Sweet Were Those Moments When the Heart Was Gay",
+   "authorSlug": "galib",
+   "author": "Şeyh Galip",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Time & Brevity"
+   ],
+   "collection": "Ottoman Poems (1882)",
+   "excerpt": "Sweet were those moments when the heart was gay,\nAnd the soul's realm, the court of joy's array;\nThoughts of those times now o'er my spirit stray, …",
+   "translator": "trans. E. J. W. Gibb (1882)"
   },
   {
    "id": "wordsworth/0",
