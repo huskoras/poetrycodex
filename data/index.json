@@ -1,5 +1,5 @@
 {
- "count": 11983,
+ "count": 12003,
  "workCount": 45,
  "poets": [
   {
@@ -1034,6 +1034,22 @@
    ],
    "order": 740,
    "poemCount": 7,
+   "workCount": 0
+  },
+  {
+   "slug": "collins",
+   "name": "William Collins",
+   "dates": "1721–1759",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "William Collins (1721–1759) was born in Chichester and educated at Winchester and Oxford. He went to London to live by his pen, and his small output of odes, published in 1746, made little stir at first but is now ranked among the finest lyric poetry of the century.",
+    "His odes to Evening, Fear and Simplicity, and ‘How sleep the brave,’ are often seen as turning eighteenth-century verse toward feeling and imagination. His mind failed in his later years and he died in Chichester at thirty-seven."
+   ],
+   "order": 744,
+   "poemCount": 20,
    "workCount": 0
   },
   {
@@ -2272,27 +2288,27 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2493
+   "count": 2495
   },
   {
    "name": "Living",
-   "count": 2460
+   "count": 2462
   },
   {
    "name": "Love",
-   "count": 2396
+   "count": 2397
   },
   {
    "name": "Religion",
-   "count": 1677
+   "count": 1678
   },
   {
    "name": "Death & Dying",
-   "count": 778
+   "count": 782
   },
   {
    "name": "History & Politics",
-   "count": 670
+   "count": 672
   },
   {
    "name": "Relationships",
@@ -2300,7 +2316,7 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 357
+   "count": 362
   },
   {
    "name": "Time & Brevity",
@@ -2308,7 +2324,7 @@
   },
   {
    "name": "The Mind",
-   "count": 257
+   "count": 259
   },
   {
    "name": "Social Commentaries",
@@ -2316,7 +2332,7 @@
   },
   {
    "name": "Mythology & Folklore",
-   "count": 44
+   "count": 45
   }
  ],
  "works": [
@@ -52134,6 +52150,265 @@
    ],
    "collection": null,
    "excerpt": "[Greek:  Zêna----\n         Ton phronein brotous hodô-\n         santa, tôi pathei mathan …"
+  },
+  {
+   "id": "collins/0",
+   "title": "Eclogue I: Selim; or, The Shepherd's Moral",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Nature"
+   ],
+   "collection": "Oriental Eclogues",
+   "excerpt": "'Ye Persian maids, attend your poet's lays,\nAnd hear how shepherds pass their golden days.\nNot all are blest, whom fortune's hand sustains …"
+  },
+  {
+   "id": "collins/1",
+   "title": "Eclogue II: Hassan; or, The Camel Driver",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Living"
+   ],
+   "collection": "Oriental Eclogues",
+   "excerpt": "In silent horror o'er the boundless waste\nThe driver Hassan with his camels past:\nOne cruise of water on his back he bore, …"
+  },
+  {
+   "id": "collins/2",
+   "title": "Eclogue III: Abra; or, The Georgian Sultana",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love",
+    "Nature"
+   ],
+   "collection": "Oriental Eclogues",
+   "excerpt": "In Georgia's land, where Tefflis' towers are seen,\nIn distant view, along the level green,\nWhile evening dews enrich the glittering glade, …"
+  },
+  {
+   "id": "collins/3",
+   "title": "Eclogue IV: Agib and Secander; or, The Fugitives",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living",
+    "Death & Dying"
+   ],
+   "collection": "Oriental Eclogues",
+   "excerpt": "In fair Circassia, where, to love inclined,\nEach swain was blest, for every maid was kind;\nAt that still hour, when awful midnight reigns, …"
+  },
+  {
+   "id": "collins/4",
+   "title": "Ode to Pity",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Relationships"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "O thou, the friend of man, assign'd\nWith balmy hands his wounds to bind,\n  And charm his frantic woe: …"
+  },
+  {
+   "id": "collins/5",
+   "title": "Ode to Fear",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Arts & Sciences"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "Thou, to whom the world unknown,\nWith all its shadowy shapes, is shown;\nWho seest, appall'd, the unreal scene, …"
+  },
+  {
+   "id": "collins/6",
+   "title": "Ode to Simplicity",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Nature"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "  O thou, by Nature taught\n  To breathe her genuine thought,\nIn numbers warmly pure, and sweetly strong; …"
+  },
+  {
+   "id": "collins/7",
+   "title": "Ode on the Poetical Character",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "The Mind"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "As once,--if, not with light regard,\nI read aright that gifted bard,\n--Him whose school above the rest …"
+  },
+  {
+   "id": "collins/8",
+   "title": "Ode, Written in the Beginning of the Year 1746 (How Sleep the Brave)",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "How sleep the brave, who sink to rest,\nBy all their country's wishes bless'd!\nWhen Spring, with dewy fingers cold, …"
+  },
+  {
+   "id": "collins/9",
+   "title": "Ode to Mercy",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "History & Politics"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "        STROPHE.\n\n  O Thou, who sitt'st a smiling bride …"
+  },
+  {
+   "id": "collins/10",
+   "title": "Ode to Liberty",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "        STROPHE.\n\n  Who shall awake the Spartan fife, …"
+  },
+  {
+   "id": "collins/11",
+   "title": "Ode to a Lady, on the Death of Colonel Ross, in the Action of Fontenoy",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "History & Politics"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "While, lost to all his former mirth,\nBritannia's genius bends to earth,\n    And mourns the fatal day: …"
+  },
+  {
+   "id": "collins/12",
+   "title": "Ode to Evening",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "Time & Brevity"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "If aught of oaten stop, or pastoral song,\nMay hope, chaste Eve, to soothe thy modest ear,\n    Like thy own brawling springs, …"
+  },
+  {
+   "id": "collins/13",
+   "title": "Ode to Peace",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Nature"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "O thou, who bad'st thy turtles bear\nSwift from his grasp thy golden hair,\n  And sought'st thy native skies; …"
+  },
+  {
+   "id": "collins/14",
+   "title": "The Manners: An Ode",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "Farewell, for clearer ken design'd,\nThe dim-discover'd tracts of mind;\nTruths which, from action's paths retired, …"
+  },
+  {
+   "id": "collins/15",
+   "title": "The Passions: An Ode for Music",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind",
+    "Arts & Sciences"
+   ],
+   "collection": "Odes on Several Descriptive and Allegorical Subjects (1746)",
+   "excerpt": "When Music, heavenly maid, was young,\nWhile yet in early Greece she sung,\nThe Passions oft, to hear her shell, …"
+  },
+  {
+   "id": "collins/16",
+   "title": "Ode on the Death of Thomson",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "In yonder grave a Druid lies,\n  Where slowly winds the stealing wave;\nThe year's best sweets shall duteous rise …"
+  },
+  {
+   "id": "collins/17",
+   "title": "Ode on the Popular Superstitions of the Highlands of Scotland",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore",
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "I.\n\nHome, thou return'st from Thames, whose Naiads long …"
+  },
+  {
+   "id": "collins/18",
+   "title": "An Epistle, Addressed to Sir Thomas Hanmer, on His Edition of Shakespeare's Works",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "  SIR,\nA patriot's hand protects a poet's lays,\nWhile nursed by you she sees her myrtles bloom, …"
+  },
+  {
+   "id": "collins/19",
+   "title": "Dirge in Cymbeline",
+   "authorSlug": "collins",
+   "author": "William Collins",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Nature"
+   ],
+   "collection": null,
+   "excerpt": "To fair Fidele's grassy tomb\n  Soft maids and village hinds shall bring\nEach opening sweet of earliest bloom, …"
   },
   {
    "id": "goldsmith/0",
