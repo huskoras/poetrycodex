@@ -1,5 +1,5 @@
 {
- "count": 12032,
+ "count": 12055,
  "workCount": 45,
  "poets": [
   {
@@ -986,6 +986,22 @@
    ],
    "order": 620,
    "poemCount": 9,
+   "workCount": 0
+  },
+  {
+   "slug": "young",
+   "name": "Edward Young",
+   "dates": "1683–1765",
+   "era": "Augustan",
+   "category": "Restoration & Augustan",
+   "portrait": null,
+   "credit": null,
+   "bio": [
+    "Edward Young (1683–1765) was born in Hampshire and educated at Oxford, where he became a fellow of All Souls. He made his name with a poem on the Last Judgment, a series of satires called The Love of Fame, and some tragedies, and took holy orders in middle age, becoming rector of Welwyn in Hertfordshire in 1730.",
+    "His blank-verse The Complaint, or Night Thoughts (1742–1745), a long meditation in nine Nights on life, death and immortality, was one of the most widely read poems in Europe in the later eighteenth century. William Blake made a famous series of designs for it."
+   ],
+   "order": 630,
+   "poemCount": 23,
    "workCount": 0
   },
   {
@@ -2304,7 +2320,7 @@
  "subjects": [
   {
    "name": "Nature",
-   "count": 2496
+   "count": 2497
   },
   {
    "name": "Living",
@@ -2316,15 +2332,15 @@
   },
   {
    "name": "Religion",
-   "count": 1678
+   "count": 1686
   },
   {
    "name": "Death & Dying",
-   "count": 785
+   "count": 788
   },
   {
    "name": "History & Politics",
-   "count": 672
+   "count": 673
   },
   {
    "name": "Relationships",
@@ -2332,11 +2348,11 @@
   },
   {
    "name": "Arts & Sciences",
-   "count": 365
+   "count": 369
   },
   {
    "name": "Time & Brevity",
-   "count": 283
+   "count": 284
   },
   {
    "name": "The Mind",
@@ -2344,7 +2360,7 @@
   },
   {
    "name": "Social Commentaries",
-   "count": 161
+   "count": 166
   },
   {
    "name": "Mythology & Folklore",
@@ -51926,6 +51942,309 @@
    ],
    "collection": null,
    "excerpt": "The shepherds and the nymphs were seen\nPleading before the Cyprian queen.\nThe counsel for the fair began, …"
+  },
+  {
+   "id": "young/0",
+   "title": "Night Thoughts, Night the First: On Life, Death, and Immortality",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Time & Brevity",
+    "Religion"
+   ],
+   "collection": "The Complaint; or, Night Thoughts (1742–1745)",
+   "excerpt": "Tired Nature's sweet restorer, balmy Sleep!\nHe, like the world, his ready visit pays\nWhere Fortune smiles; the wretched he forsakes; …"
+  },
+  {
+   "id": "young/1",
+   "title": "Night Thoughts, Night the Second: On Time, Death, and Friendship",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity",
+    "Death & Dying",
+    "Relationships"
+   ],
+   "collection": "The Complaint; or, Night Thoughts (1742–1745)",
+   "excerpt": "\"When the cock crew, he wept\"--smote by that eye\nWhich looks on me, on all: that Power, who bids\nThis midnight sentinel, with clarion shrill …"
+  },
+  {
+   "id": "young/2",
+   "title": "Night Thoughts, Night the Third: Narcissa",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Religion",
+    "Relationships"
+   ],
+   "collection": "The Complaint; or, Night Thoughts (1742–1745)",
+   "excerpt": "From dreams, where thought in fancy's maze runs mad,\nTo reason, that heaven-lighted lamp in man,\nOnce more I wake; and at the destined hour, …"
+  },
+  {
+   "id": "young/3",
+   "title": "Night Thoughts, Night the Fourth: The Christian Triumph",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Death & Dying"
+   ],
+   "collection": "The Complaint; or, Night Thoughts (1742–1745)",
+   "excerpt": "A much-indebted muse, O Yorke! intrudes.\nAmid the smiles of fortune, and of youth,\nThine ear is patient of a serious song. …"
+  },
+  {
+   "id": "young/4",
+   "title": "Night Thoughts, Night the Fifth: The Relapse",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind",
+    "Death & Dying"
+   ],
+   "collection": "The Complaint; or, Night Thoughts (1742–1745)",
+   "excerpt": "Lorenzo! to recriminate is just.\nFondness for fame is avarice of air.\nI grant the man is vain who writes for praise. …"
+  },
+  {
+   "id": "young/5",
+   "title": "The Last Day, Book I",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Death & Dying"
+   ],
+   "collection": "The Last Day (1713)",
+   "excerpt": "While others sing the fortune of the great;\nEmpire and arms, and all the pomp of state;\nWith Britain's hero set their souls on fire, …"
+  },
+  {
+   "id": "young/6",
+   "title": "The Last Day, Book II",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Death & Dying"
+   ],
+   "collection": "The Last Day (1713)",
+   "excerpt": "Now man awakes, and from his silent bed,\nWhere he has slept for ages, lifts his head;\nShakes off the slumber of ten thousand years, …"
+  },
+  {
+   "id": "young/7",
+   "title": "The Last Day, Book III",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Death & Dying"
+   ],
+   "collection": "The Last Day (1713)",
+   "excerpt": "The book unfolding; the resplendent seat\nOf saints and angels; the tremendous fate\nOf guilty souls; the gloomy realms of woe; …"
+  },
+  {
+   "id": "young/8",
+   "title": "The Love of Fame, Satire I",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "The Love of Fame, the Universal Passion (1728)",
+   "excerpt": "My verse is satire; Dorset, lend your ear,\nAnd patronize a muse you cannot fear.\nTo poets sacred is a Dorset's name: …"
+  },
+  {
+   "id": "young/9",
+   "title": "The Love of Fame, Satire II",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "The Mind"
+   ],
+   "collection": "The Love of Fame, the Universal Passion (1728)",
+   "excerpt": "My muse, proceed, and reach thy destin'd end;\nThough toils and danger the bold task attend.\nHeroes and gods make other poems fine; …"
+  },
+  {
+   "id": "young/10",
+   "title": "The Love of Fame, Satire III",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "The Mind"
+   ],
+   "collection": "The Love of Fame, the Universal Passion (1728)",
+   "excerpt": "Long, Dodington, in debt, I long have sought\nTo ease the burthen of my grateful thought;\nAnd now a poet's gratitude you see; …"
+  },
+  {
+   "id": "young/11",
+   "title": "The Love of Fame, Satire IV",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "History & Politics"
+   ],
+   "collection": "The Love of Fame, the Universal Passion (1728)",
+   "excerpt": "Round some fair tree th' ambitious woodbine grows,\nAnd breathes her sweets on the supporting boughs;\nSo sweet the verse, th' ambitious verse, should be, …"
+  },
+  {
+   "id": "young/12",
+   "title": "The Love of Fame, Satire V",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Relationships"
+   ],
+   "collection": "The Love of Fame, the Universal Passion (1728)",
+   "excerpt": "Nor reigns ambition in bold man alone;\nSoft female hearts the rude invader own:\nBut there, indeed, it deals in nicer things, …"
+  },
+  {
+   "id": "young/13",
+   "title": "The Love of Fame, Satire VI",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries",
+    "Relationships"
+   ],
+   "collection": "The Love of Fame, the Universal Passion (1728)",
+   "excerpt": "I sought a patroness, but sought in vain.\nApollo whisper'd in my ear--\"Germain.\"--\nI know her not.--\"Your reason's somewhat odd; …"
+  },
+  {
+   "id": "young/14",
+   "title": "The Love of Fame, Satire VII",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics",
+    "Social Commentaries"
+   ],
+   "collection": "The Love of Fame, the Universal Passion (1728)",
+   "excerpt": "On this last labour, this my closing strain,\nSmile, Walpole! or the Nine inspire in vain:\nTo thee, 'tis due; that verse how justly thine, …"
+  },
+  {
+   "id": "young/15",
+   "title": "Ocean: An Ode",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature",
+    "History & Politics"
+   ],
+   "collection": null,
+   "excerpt": "At careless ease my limbs are spread;\n  All nature still,\n  But yonder rill; …"
+  },
+  {
+   "id": "young/16",
+   "title": "A Paraphrase on Part of the Book of Job",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": null,
+   "excerpt": "Thrice happy Job long liv'd in regal state,\nNor saw the sumptuous East a prince so great;\nWhose worldly stores in such abundance flow'd, …"
+  },
+  {
+   "id": "young/17",
+   "title": "To Mr. Addison, on the Tragedy of Cato",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "What do we see? Is Cato then become\nA greater name in Britain than in Rome?\nDoes mankind now admire his virtues more, …"
+  },
+  {
+   "id": "young/18",
+   "title": "A Letter to Mr. Tickell, Occasioned by the Death of Addison",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying",
+    "Arts & Sciences"
+   ],
+   "collection": null,
+   "excerpt": "O long with me in Oxford groves confin'd,\nIn social arts and sacred friendship join'd;\nFair Isis' sorrow, and fair Isis' boast, …"
+  },
+  {
+   "id": "young/19",
+   "title": "Resignation, Part I",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "Time & Brevity",
+    "Death & Dying"
+   ],
+   "collection": null,
+   "excerpt": "The days how few, how short the years\n  Of man's too rapid race!\nEach leaving, as it swiftly flies, …"
+  },
+  {
+   "id": "young/20",
+   "title": "Resignation, Part II",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion",
+    "The Mind"
+   ],
+   "collection": null,
+   "excerpt": "But what in either sex, beyond\n  All parts, our glory crowns?\n\"In ruffling seasons to be calm, …"
+  },
+  {
+   "id": "young/21",
+   "title": "Two Epistles to Mr. Pope, Epistle I",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Two Epistles to Mr. Pope, Concerning the Authors of the Age (1730)",
+   "excerpt": "Whilst you at Twickenham plan the future wood,\nOr turn the volumes of the wise and good,\nOur senate meets; at parties, parties bawl, …"
+  },
+  {
+   "id": "young/22",
+   "title": "Two Epistles to Mr. Pope, Epistle II",
+   "authorSlug": "young",
+   "author": "Edward Young",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences",
+    "Social Commentaries"
+   ],
+   "collection": "Two Epistles to Mr. Pope, Concerning the Authors of the Age (1730)",
+   "excerpt": "All write at London; shall the rage abate\nHere, where it most should shine, the muses' seat?\nWhere, mortal or immortal, as they please, …"
   },
   {
    "id": "gay/0",
