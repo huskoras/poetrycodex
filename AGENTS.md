@@ -4,18 +4,23 @@ This file is the onboarding document for any AI coding agent working on this rep
 (OpenAI Codex reads `AGENTS.md` automatically; Claude Code reads `CLAUDE.md`, which
 points here). Read it fully before making changes.
 
-**Live site:** https://huskoras.github.io/poetrycodex/
+**Live site:** https://poetrycodex.com (GitHub Pages origin behind Cloudflare; the old
+address https://huskoras.github.io/poetrycodex/ redirects there)
 **Repo:** https://github.com/huskoras/poetrycodex
+**AI engine:** https://poetrycodex-engine.poetrycodex.workers.dev (Cloudflare Worker, `worker/`)
+**Contact:** admin@poetrycodex.com
 **Owner:** a non-technical user. Explain things in plain language, avoid jargon, and
-do the technical work yourself rather than handing them instructions to run.
+do the technical work yourself rather than handing them instructions to run. He enters
+API keys, secrets, payments and dashboard settings himself — never ask him to paste a key.
 
 ---
 
 ## 1. What this project is
 
-A curated archive of **public-domain poetry** — currently **12,239 poems, 151 poets,
-39 multi-section works**, spanning Cædmon (~7th c.) and Homer (~8th c. BC) through
-early-20th-century American poets.
+A curated archive of **public-domain poetry** — currently **12,346 poems, 158 poets,
+45 multi-section works** (as of 10 Oct 2026), spanning Cædmon (~7th c.) and Homer
+(~8th c. BC) through early-20th-century British, American and Turkish poets — plus an
+AI reading engine ("Read with the Codex" on every poem, and the Oracle, see §4b).
 
 Each poem page shows the full text; each poet has a page with portrait, dates, bio and
 their poem/work list. Long texts (epics, poem cycles) are "works" split into readable
@@ -59,8 +64,15 @@ sections (cantos/books/fitts).
   non-null `portrait` file exists, and that every poet's `category` is one that actually
   appears in `CATEGORY_ORDER` in `app.js` (so a poet can't silently vanish from the home
   page). Run it after `build_index.py` on every content change; it exits non-zero on error.
+- `tools/build_pages.py` — generates the **static HTML pages search engines index**:
+  `poem/<slug>/<n>/index.html` (full text + canonical URL), `poet/<slug>/index.html`,
+  the sitemap index `sitemap.xml` + `sitemap-1..13.xml`, and the plain poet-link list in
+  the home-page footer. `poem/` and `poet/` are generated — never edit them by hand. Run it
+  after `build_index.py` on every content change (works-only poets get no poem pages).
+- `robots.txt` — allows everything and points to the sitemap. `CNAME` — `poetrycodex.com`.
 - `poets/*.jpg` — portrait/illustration images (unrelated to `data/poets/`; note the
   singular/plural difference — this is the images folder, `data/poets/` is poem data).
+- `worker/` — the Cloudflare Worker that holds the API key and talks to Claude (§4b).
 - `dev_server.py` — local no-cache dev server (`python dev_server.py` → http://localhost:8777)
 - `BAŞLAT.bat` — double-click launcher for the owner (starts server + opens browser)
 
@@ -75,6 +87,18 @@ the live site updates ~1 minute after a push. There is no build or deploy step.
 
 **Cache-busting:** `index.html` loads `styles.css?v=N` and `app.js?v=N`. If you change
 either file, bump `N` in `index.html` or returning visitors get a stale cached copy.
+
+**Domain, DNS, email (set up 8–9 Oct 2026):** `poetrycodex.com` is registered at Namecheap
+(renews 10 Sep 2027). DNS is on **Cloudflare** (Free plan; nameservers leo/meiling), SSL
+mode **Full**, Always-HTTPS on, HSTS 6 months (no subdomains, no preload), DNSSEC off. The
+site's A/www records are proxied (orange); the mail records are DNS-only (grey) — making
+them orange breaks mail. Mail is Namecheap Private Email (`admin@poetrycodex.com`). A full
+record list is kept outside the repo in `../poetrycodex-notlar/poetrycodex-dns-yedek.txt`.
+
+**Search engines:** Google Search Console is verified for the domain; the home page is
+indexed. The sitemap kept showing "Couldn't fetch" in Search Console (Oct 2026) even though
+every sitemap file returns 200 to Googlebot — hence the footer poet links as a second
+crawl path. If this recurs, check Cloudflare → Security → Events for blocked Googlebot.
 
 ---
 
@@ -148,9 +172,10 @@ with a unique `slug` (`iliad-butler`, `iliad-pope`) but a **shared `workGroup`**
 translations over time — preserve this pattern.
 
 ### Categories (home page "Browse by Era")
-Every poet has a `category`, one of the eight in `CATEGORY_ORDER` in `app.js`:
+Every poet has a `category`, one of the eleven in `CATEGORY_ORDER` in `app.js`:
 Ancient Greek & Roman · Anglo-Saxon · Medieval · Tudor & Elizabethan ·
-Metaphysical & Cavalier · Romantic · Victorian · American
+Metaphysical & Cavalier · Restoration & Augustan · Romantic · Victorian · American ·
+Modern · Turkish & Ottoman
 
 **If you introduce a new category you MUST also add it to `CATEGORY_ORDER` and
 `CATEGORY_SLUGS` in `app.js`**, or poets in it become invisible on the home page.
@@ -163,10 +188,14 @@ Metaphysical & Cavalier · Romantic · Victorian · American
 
 ## 4. Routes (all hash-based, in `app.js`)
 
-`#/` home (era tiles) · `#/poems` full archive · `#/poets` · `#/poet/<slug>` ·
+`#/` home (two "doors": Archive → `#/eras`, Oracle → `#/oracle`, plus era tiles) ·
+`#/eras` · `#/poems` full archive (topic filters live here) · `#/poets` · `#/poet/<slug>` ·
 `#/poem/<authorSlug>/<n>` · `#/poem/<oldNumericIndex>` (legacy, see below) ·
 `#/work/<slug>` (contents) · `#/work/<slug>/<i>` (one section) ·
-`#/category/<slug>` · `#/topics` · `#/about`
+`#/category/<slug>` · `#/oracle` · `#/about`
+
+Nav: Poems · Poets · Eras · The Oracle · About. The pre-redesign layout is tagged
+`design-before-v2` in git if a rollback is ever wanted.
 
 **Legacy links:** before the September 2026 data-layer split, poem links were a bare
 array index into a single `poems[]` array (`#/poem/137`). Those numbers are now frozen
@@ -202,8 +231,19 @@ API key, so every Claude call goes through it.
   poets and works built from `index.json`, and it finds individual poems with a
   `search_archive` tool backed by `data/search.json`. **It is forbidden to name
   a poem the tool has not returned** — that rule is what keeps recommendations
-  real, so do not loosen it. Carrying all 11,229 titles in the prompt instead
+  real, so do not loosen it. Carrying all 12,000+ titles in the prompt instead
   would cost about $0.65 per request.
+- **The Oracle is currently PAUSED** (owner's decision, 8 Oct 2026, to stop API
+  spending). Two switches, both off: `ORACLE_LIVE = false` in `app.js` and
+  `ORACLE_ENABLED = "false"` under `[vars]` in `worker/wrangler.toml` (the route then
+  answers 503 "The Oracle is resting"). The page, nav link and home door stay up and
+  read "Resting". To re-enable: flip both, bump the cache-buster, redeploy the Worker.
+  The per-poem panel (analyze/ask/compare/gloss) is **still live** and still spends.
+- **Costs, measured 8 Oct 2026 on Opus:** Oracle ≈ $0.066 per question, lens reading
+  ≈ $0.038, poem question ≈ $0.022, compare ≈ $0.04, gloss ≈ $0.05. Finished lens
+  readings are cached in the KV namespace bound as `READINGS` (key = hash of poem +
+  lens), so each is paid for once; free-text questions and truncated outputs are not
+  cached. Never pre-generate readings for the whole archive (≈ $3,500) — on demand only.
 - All five stream `data: {"t": "..."}` SSE lines, terminated by `[DONE]`;
   `/api/oracle` also sends `{"searching": "..."}` as it looks things up.
 
@@ -216,10 +256,17 @@ Measured over this archive, Middle English scores 9–59 and early modern verse
 not. Re-run `tools/`-style calibration before moving that threshold.
 
 Model `claude-opus-5-5`. Guardrails: origin allowlist, six requests per minute
-per IP, 24,000-character text cap, 2,000-token output cap, and a cache
-breakpoint on the stable half of the system prompt.
+per IP (`ANALYZE_LIMITER`) plus three per minute for the Oracle (`ORACLE_LIMITER`),
+24,000-character text cap, output caps of 4,000 tokens (8,000 for gloss, 1,100 for
+the Oracle), and a cache breakpoint on the stable half of the system prompt.
 
-**The honesty rule is load-bearing.** Both system prompts forbid invented
+**The owner wants to co-write the Oracle's persona and every prompt himself.** The
+prompts live in `worker/src/index.js` (`SYSTEM_ORACLE`, `SYSTEM_STABLE`, `SYSTEM_ASK`,
+`SYSTEM_COMPARE`, `SYSTEM_GLOSS`, the eight `LENSES`); a readable export is kept in
+`../poetrycodex-notlar/poetrycodex-promptlar.md`. Do not rewrite a prompt's voice
+without him.
+
+**The honesty rule is load-bearing.** All the system prompts forbid invented
 quotations, dates, editions and attributed scholarly views. The engine may name
 a critical tradition; it may not put a claim in a named scholar's mouth. Do not
 relax this — fabricated citation would discredit the project with the
@@ -240,13 +287,27 @@ Everything here is **public domain**, and it must stay that way.
    pre-1929** (verify from the source's own front matter / Gutenberg metadata).
    - ✅ Used here: Butler (1898/1900), Pope (1715–20), Gummere (1910), Evelyn-White (1914),
      Riley (1851), Ridley (1896), Southey (1808), Wharton (1885), Gordon (1926),
-     Spaeth (1921), Cook & Tinker (1902), Weston (1898), Jewett (1908).
+     Spaeth (1921), Cook & Tinker (1902), Weston (1898), Jewett (1908),
+     E. J. W. Gibb (1882/1900–09, Ottoman verse — OCR, not yet checked against print),
+     Chodzko (1842, Köroğlu).
    - ❌ Never use: Heaney, Armitage, Tolkien, Borroff, Fagles, Wilson, Crossley-Holland,
      Alexander, Liuzza, Bradley, or any modern named translator. Also avoid modern
      *critical editions* (e.g. Agnes Latham's 1951 Raleigh) — the editorial layer is
      in copyright even when the poem isn't.
    - **If you cannot verify a translation's date, use the original-language text or skip it.**
 3. **Always record the `translator` field** on translated poems/works.
+3a. **Twentieth-century English-language poets** are allowed only if the book was
+   **published before 1931 AND the poet died before 1956** (safe under both US and
+   life+70 rules). Yeats, Lawrence etc.: pre-1929/pre-1923 books only. Excluded by this
+   rule: Masefield, Sassoon, Graves, de la Mare, T. S. Eliot, Sitwell and anyone later.
+3b. **Turkish & Ottoman ("Option 1", owner's decision 9 Oct 2026):** Turkish originals
+   are allowed if **published before 1931 and the author has been dead more than 70
+   years**; add a short English note. Ottoman classics may come through Gibb's
+   translations. **Refused and to stay refused:** Nazım Hikmet, Orhan Kemal, Rüştü Onur,
+   Muzaffer Tayyip Uslu, Fazıl Hüsnü Dağlarca, the Garip and Hececiler poets (all still
+   in copyright). Do **not** scrape poetry websites; use scanned pre-1931 editions or
+   Gutenberg/Internet Archive scans with a visible publication date. 47 OCR-garbled
+   candidates were rejected on quality in Oct 2026 — do not re-add them unverified.
 4. **Poems only.** Never ingest as "poems": editors' introductions, footnotes, glossaries,
    textual-variant apparatus, transcriber's notes, publisher pages, tables of contents,
    biographies, letters, prose essays, or stage plays. Several sources bundle plays with
@@ -286,6 +347,11 @@ Hard-won lessons — these bugs all actually happened here:
 - **Always spot-check 3–5 extracted poems per source** — does each title actually match the
   text under it? **Publishing garbled data is worse than publishing nothing.** If a source
   resists clean parsing after a couple of honest attempts, skip it and say so.
+- **Edit JSON surgically.** Loading a poet file and `json.dump`-ing it back rewrites and
+  reflows the whole file, producing an unreadable diff and hiding mistakes. Append or
+  patch only the lines you mean to change.
+- **Prose that is really verse:** R. K. Gordon's 1926 Exeter riddles are printed as prose
+  paragraphs — that is the edition, not truncation. Check the source before "fixing" it.
 
 ---
 
@@ -293,16 +359,24 @@ Hard-won lessons — these bugs all actually happened here:
 
 ```bash
 python dev_server.py                       # local preview at :8777
-# ...make changes, verify in the browser...
-git add -A
+# ...edit data/poets/<slug>.json or data/works/<slug>.json, verify in the browser...
+python tools/build_index.py                # regenerates data/index.json
+python tools/build_search_index.py         # regenerates data/search.json (Oracle lookup)
+python tools/verify_split.py               # must print ALL CHECKS PASSED
+python tools/build_pages.py                # regenerates poem/, poet/, sitemap*.xml, footer links
+git add data/poets/<slug>.json data/index.json data/search.json poem poet sitemap*.xml index.html
 git commit -m "Add X"
 git push                                   # this deploys
 ```
 
 Commit and push **incrementally** (after each poet/work), not in one big batch at the end —
 long ingestion jobs get interrupted and uncommitted work is lost. Every content commit
-should include the regenerated `data/index.json` alongside the `data/poets/`/`data/works/`
-file you changed — run `tools/build_index.py` before committing, every time.
+should include the regenerated `data/index.json`, `data/search.json` and the static pages
+alongside the `data/poets/`/`data/works/` file you changed. Stage the files you changed by
+name rather than `git add -A`, so stray scratch files never reach the repo.
+
+Worker changes: `cd worker && npx wrangler deploy` (wrangler is OAuth-logged-in on the
+owner's PC; the API key is an encrypted Worker secret, never in this repo).
 
 **Do not run two agents against this repo at once.** Concurrent edits to the same poet or
 work file, or to `data/index.json`, collide. Finish or stop one before starting another.
@@ -311,23 +385,48 @@ work file, or to `data/index.json`, collide. Finish or stop one before starting 
 
 ## 8. Current state & known gaps
 
-**Data layer:** as of September 2026 content lives in `data/poets/*.json` (107 files) and
-`data/works/*.json` (39 files), full text included, with `data/index.json` (~4.5 MB) as a
-lightweight generated startup index. This replaced the single ~30 MB `poems.json` (which
+**Data layer:** content lives in `data/poets/*.json` (158 files) and `data/works/*.json`
+(45 files), full text included, with `data/index.json` (~5 MB) as a lightweight generated
+startup index. Eight poets exist only through works and have no flat poems (cynewulf, homer,
+ovid, lucan, beowulf-poet, el-cid-poet, langland, gawain-poet), which is why there are 150
+static poet pages for 158 poets. This replaced the single ~30 MB `poems.json` (which
 was approaching GitHub's 50 MB warning threshold and 100 MB hard limit as the archive
 grew) — see section 2 and 3 above for the new layout, and `tools/verify_split.py` for the
 integrity check that green-lit the migration. `poems.json` itself was deleted from the
 working tree after verifying every poem/work byte-for-byte against it; it is still
 recoverable from git history at or before commit `b38eab4` if ever needed.
 
+**Done in October 2026:** custom domain + Cloudflare + HTTPS/HSTS; company email; the
+Worker engine and the Oracle (paused); redesigned two-door home page; favicons/manifest/share
+tags; static pages + sitemap + robots.txt; 58 Medieval short poems; the remaining Romantics
+(Hunt, Hemans, Charlotte Smith, Beddoes); the **Modern** category (Owen, Brooke, Rosenberg,
+Edward Thomas, Mew, Gurney, Yeats, Chesterton, Belloc, Lawrence, W. H. Davies, Binyon,
+Ledwidge, McCrae); twelve more 18th-century poets; Phillis Wheatley (American); the
+**Turkish & Ottoman** category (Yunus Emre, Fuzuli, Nedim, Şeyh Galip via Gibb; Köroğlu via
+Chodzko; Ahmet Haşim and Mehmet Emin Yurdakul in Turkish).
+
 Not yet done, in rough priority order:
-- Minor Tudor poets: Henry Lok, Deloney, Howell, Griffin, Barnes, Googe, Turberville
-- ~23 obscure Victorian poets (only OCR sources found so far — handle front matter carefully)
+- Owner decisions pending: whether the per-poem AI panel stays live (and Opus vs Sonnet);
+  a monthly spend limit in the Anthropic Console; co-writing the Oracle persona.
+- Turkish: ~125 more Köroğlu songs in Chodzko; Tevfik Fikret, Mehmet Akif, Ziya Gökalp
+  book by book from pre-1931 editions; Karacaoğlan (3 songs in an 1842 book, attribution
+  unverified). Spot-check the Gibb OCR against a printed copy.
+- Minor Tudor poets: Henry Lok, Deloney, Howell, Griffin, Barnes, Googe, Turberville, Lyly, Dyer
+- 18th c.: James Thomson (no clean source), Lady Mary Wortley Montagu, Mary Leapor (corrupt
+  source), Gay's *Beggar's Opera* songs, Smart's *Jubilate Agno*
+- ~20 obscure Victorian poets (only OCR sources found so far) and Hopkins (his mature poems
+  are embedded in Bridges' 1918 editorial notes — needs per-poem work)
 - Chaucer's *Troilus and Criseyde*, *House of Fame*, *Legend of Good Women*
 - Gawain Poet's *Patience* and *Cleanness*
 - Old English: *Descent into Hell*, *Resignation*, *Solomon and Saturn I/II*, and ~60 more
   Exeter Book riddles (only riddles with unambiguous numbering were added — 34 of ~95)
-- Oliver Wendell Holmes and Phillis Wheatley (prose/verse interleaving defeated parsing)
+- William Browne (EEBO parser drops `<l>` lines inside `<sp>` speaker blocks — fix first)
+- Oliver Wendell Holmes (prose/verse interleaving defeated parsing)
+- Known defects: Arnold lacks "Dover Beach"; a Tennyson poem titled "Miscellaneous" should
+  be "Tithonus"; Browning has ~40 bare Roman-numeral titles; Newbolt's 118 rebuilt poems
+  deserve a human skim
+- Codex Notes exist on 1,220 poems; imported poems stay blank by the owner's choice. A
+  Batch-API + human-review pass is planned, not started.
 - Poet bios are factual placeholders the owner may want to replace with his own text
-- Custom domain **poetrycodex.com** is not connected yet (would need the domain purchased,
-  a `CNAME` file in this repo, and DNS records pointed at GitHub Pages)
+- Later, at scale (~30k poems): replace the 5 MB `index.json` with a small cover file plus
+  Worker-side listing/search; a citation layer over open-access criticism.
