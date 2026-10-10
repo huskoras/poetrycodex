@@ -82,6 +82,21 @@
   const SITE_TITLE = document.title;
   const setTitle = (t) => { document.title = t ? t + " · Poetry Codex" : SITE_TITLE; };
 
+  // ---------- "Suggest a poem" ----------
+  // A plain email with a short form in it (footer and About page): no form on the site,
+  // nothing sent anywhere but the reader's own mail program. Every a[data-suggest] gets it.
+  const SUGGEST_URL = "mailto:admin@poetrycodex.com?subject=" +
+    encodeURIComponent("Suggest a poem for Poetry Codex") + "&body=" + encodeURIComponent([
+      "Poem (title or first line):",
+      "Poet:",
+      "Translator and year, if it is a translation:",
+      "Where it can be read (book, edition or link), if you know:",
+      "",
+      "Why it belongs in the archive (optional):",
+      "",
+    ].join("\r\n"));
+  document.querySelectorAll("a[data-suggest]").forEach((a) => { a.href = SUGGEST_URL; });
+
   // ---------- attribution ----------
   // The data stores translators as "trans. Name (year)". Pages spell that out;
   // cards drop the trailing date, which the card already shows as the year.
@@ -1283,6 +1298,13 @@
         and name their translator; where the book a poem comes from is recorded, its page names that
         too. Poet portraits are likewise public-domain works, courtesy of Wikimedia
         Commons, and each carries its credit.</p>
+
+        <h2>Suggest a missing poem</h2>
+        <p>If a poem you would expect to find here is missing, tell us. It can join the archive if
+        it is in the public domain: by a poet who died long ago and, if it is a translation, in an
+        English version published before 1929.
+        <a data-suggest href="${esc(SUGGEST_URL)}">Suggest a poem</a> opens an email with a short
+        form to fill in.</p>
 
         <h2>The emblem</h2>
         <p>The archive’s emblem is a Roman gold medallion depicting Alexander the Great — an image of
