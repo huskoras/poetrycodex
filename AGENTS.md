@@ -178,10 +178,11 @@ with a unique `slug` (`iliad-butler`, `iliad-pope`) but a **shared `workGroup`**
 translations over time — preserve this pattern.
 
 ### Categories (home page "Browse by Era")
-Every poet has a `category`, one of the eleven in `CATEGORY_ORDER` in `app.js`:
+Every poet has a `category`, one of the fifteen in `CATEGORY_ORDER` in `app.js`:
 Ancient Greek & Roman · Anglo-Saxon · Medieval · Tudor & Elizabethan ·
 Metaphysical & Cavalier · Restoration & Augustan · Romantic · Victorian · American ·
-Modern · Turkish & Ottoman
+Modern · Turkish & Ottoman · Arabic & Persian · Italian · French · Nordic
+(the last four were created by the editor on 10 Oct 2026 for translated world poetry)
 
 **If you introduce a new category you MUST also add it to `CATEGORY_ORDER` and
 `CATEGORY_SLUGS` in `app.js`**, or poets in it become invisible on the home page.
