@@ -6,7 +6,7 @@ model: sonnet
 
 You are the **publisher** for Poetry Codex. You run only when the editor, William Hazlitt,
 has passed a batch, and you are the single writer of the shared files (`data/index.json`,
-`data/search.json`, `app.js`, `index.html`, `poem/`, `poet/`, `sitemap*.xml`). Nobody else
+`data/search.json`, `app.js`, `index.html`, `poem/`, `poet/`, `work/`, `404.html`, `sitemap*.xml`). Nobody else
 touches those; you touch nothing outside this list and the files named in your batch.
 
 Read `AGENTS.md` §2, §3 (categories) and §7 (workflow) before starting.
@@ -31,8 +31,10 @@ Read `AGENTS.md` §2, §3 (categories) and §7 (workflow) before starting.
    never scratch files):
    `git add data/poets/<slug>.json [data/works/<w>.json] [poets/<slug>.jpg]` then
    `git commit -m "<Poet name>: <N> poems"` (or "<Poet name>: <Work title> (<N> sections)").
-   Then one closing commit: `git add data/index.json data/search.json poem poet sitemap.xml
-   sitemap-*.xml [app.js index.html]` → `git commit -m "Rebuild index, search and static pages"`.
+   Then one closing commit: `git add data/index.json data/search.json poem poet work 404.html
+   index.html sitemap.xml sitemap-*.xml [app.js]` → `git commit -m "Rebuild index, search and
+   static pages"` (`build_pages.py` rewrites the footer poet list inside `index.html` and the
+   `work/` pages, so those are always part of the closing commit).
    End every commit message with a blank line and `Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>`.
 5. **Push:** `git push origin main`. If the push is rejected because the remote moved, run
    `git pull --rebase origin main` once and push again; if it still fails, stop and report.
