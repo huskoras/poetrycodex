@@ -591,6 +591,7 @@
     }
     else if ((m = h.match(/^#\/poem\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderDetail(m[1], parseInt(m[2], 10)); }
     else if ((m = h.match(/^#\/work\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderWorkSection(m[1], parseInt(m[2], 10)); }
+    else if ((m = h.match(/^#\/work\/([\w-]+)\/(\d+)\/with\/([\w-]+)$/))) { setRoute("poems", "sub"); renderCompare(m[1], parseInt(m[2], 10), m[3]); }
     else if ((m = h.match(/^#\/work\/([\w-]+)$/))) { setRoute("poems", "sub"); renderWork(m[1]); }
     else if ((m = h.match(/^#\/poet\/([\w-]+)$/))) { setRoute("poets", "sub"); renderPoet(m[1]); }
     else if ((m = h.match(/^#\/category\/([\w-]+)$/))) { setRoute("poems", "sub"); renderCategory(m[1]); }
@@ -888,6 +889,48 @@
     const grouped = w.workGroup && DATA.works.some((o) => o.slug !== w.slug && o.workGroup === w.workGroup);
     return `${w.title} — ${w.author}` + (grouped && w.translator ? ", " + translatorShort(w.translator) : "");
   }
+
+  // ---------- other translations of the same work ----------
+  // Works sharing a workGroup with a different translator are translations of one original
+  // (iliad-pope, iliad-butler). A group with one translator is a manuscript or a poem in
+  // parts (the Junius poems, the three parts of Christ), not a set of translations.
+  const trName = (t) => String(t || "").replace(/^trans\.\s*/i, "");          // "Samuel Butler (1898)"
+  const trSurname = (t) => translatorShort(trName(t)).split(/\s+/).pop();      // "Butler"
+  const trLabel = (t) => {                                   // "Samuel Butler’s translation (1898)"
+    const year = (String(t || "").match(/\(([^)]*)\)\s*$/) || [])[1];
+    return `${translatorShort(trName(t))}’s translation${year ? ` (${year})` : ""}`;
+  };
+  function otherTranslations(w) {
+    if (!w || !w.workGroup || !w.translator) return [];
+    const mine = translatorShort(trName(w.translator));
+    return DATA.works.filter((o) => o.slug !== w.slug && o.workGroup === w.workGroup &&
+      o.translator && translatorShort(trName(o.translator)) !== mine);
+  }
+  // The same book in another translation: by its title ("Book VI"), else by position when
+  // both have as many parts; -1 when there is no telling.
+  const partKey = (t) => fold(t).replace(/[^a-z0-9]+/g, "");
+  function matchingPart(w, o, i) {
+    const k = partKey(w.sections[i] && w.sections[i].title);
+    const j = k ? o.sections.findIndex((s) => partKey(s.title) === k) : -1;
+    return j >= 0 ? j : o.sections.length === w.sections.length && o.sections[i] ? i : -1;
+  }
+  // "Also in this archive" under the translator line: each other translation (at the same
+  // book, on a part page) and, on a part page, the two side by side. w: an index entry.
+  function otherTrHTML(w, i) {
+    const others = otherTranslations(w);
+    if (!others.length) return "";
+    return `
+      <div class="also-tr">
+        <p class="section-label">Also in this archive</p>
+        ${others.map((o) => {
+          const j = i == null ? -1 : matchingPart(w, o, i);
+          return `<p class="also-row">${j >= 0
+            ? `<a href="#/work/${esc(o.slug)}/${j}">${esc(trLabel(o.translator))} · ${esc(o.sections[j].title)}</a>
+               <a class="compare-btn" href="#/work/${esc(w.slug)}/${i}/with/${esc(o.slug)}">Compare side by side</a>`
+            : `<a href="#/work/${esc(o.slug)}">${esc(trLabel(o.translator))} →</a>`}</p>`;
+        }).join("")}
+      </div>`;
+  }
   function renderWork(slug) {
     const w = WORKS[slug];
     if (!w) { location.hash = "#/"; return; }
@@ -902,6 +945,7 @@
         <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
         ${sourceLine(w.translator)}
         ${w.blurb ? `<p class="note-block">${esc(w.blurb)}</p>` : ""}
+        ${otherTrHTML(w)}
         <div class="cite-row toc-tools">${shelfButtonHTML(entry)}</div>
         <p class="shelf-msg" hidden>${VISIT_ONLY}</p>
         <hr class="rule">
@@ -941,6 +985,7 @@
         <h1 class="detail-title">${esc(s.title)}</h1>
         <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
         ${sourceLine(w.translator)}
+        ${otherTrHTML(WORKS[slug], i)}
         <hr class="rule">
         ${enginePanel(s.text, { gloss: true })}
         ${poemBlock(s.text, { translator: w.translator, lang: langAttr(w.authorSlug, w.translator), work: true })}
@@ -958,6 +1003,110 @@
     bindShelfButton(entry);
     bindNote(entry);
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/work/" + slug + "/" + b.dataset.go; }));
+    restoreScroll();
+  }
+
+  // ---------- WORK: two translations side by side ----------
+  // #/work/iliad-pope/5/with/iliad-butler: Book VI of Pope's Iliad beside the same book of
+  // Butler's. On a wide screen each translation scrolls in its own column and, unless the
+  // reader turns it off, the two keep in step by proportion (the translations differ in
+  // length, so "in step" is approximate); on a phone they are stacked.
+  function renderCompare(slug, i, oslug) {
+    const a = WORKS[slug], b = WORKS[oslug];
+    if (!a || !b || !otherTranslations(a).includes(b)) { location.hash = a ? "#/work/" + slug + "/" + i : "#/"; return; }
+    renderLoading();
+    const requestedHash = location.hash;
+    Promise.all([fetchWorkFile(slug), fetchWorkFile(oslug)]).then(([wa, wb]) => {
+      if (location.hash !== requestedHash) return;
+      if (!wa.sections[i]) { location.hash = "#/work/" + slug; return; }
+      renderCompareReady(wa, wb, slug, i, oslug);
+    }).catch((e) => { if (location.hash === requestedHash) renderFetchError(e); });
+  }
+  function compareColHTML(w, k, id) {
+    const s = w.sections[k];
+    const prose = isProse(s.text, w.translator);
+    return `
+      <section class="compare-col" id="${id}">
+        <header class="compare-head">
+          <p class="compare-tr">${esc(trName(w.translator))}<span class="compare-part"> · ${esc(s.title)}</span></p>
+          <a class="compare-open" href="#/work/${esc(w.slug)}/${k}">Read alone →</a>
+        </header>
+        <div class="compare-pane" tabindex="0" role="region" aria-label="${esc(trLabel(w.translator))}, ${esc(s.title)}">
+          <div class="poem-text${prose ? " is-prose" : ""}"${langAttr(w.authorSlug, w.translator)}>${poemHTML(s.text, prose)}</div>
+          ${prose ? `<p class="prose-note">This translation is printed as prose in its source edition.</p>` : ""}
+        </div>
+      </section>`;
+  }
+  const WIDE = window.matchMedia("(min-width: 781px)");
+  function fitPanes() {
+    const panes = app.querySelectorAll(".compare-pane");
+    if (!panes.length) return;
+    panes.forEach((p) => { p.style.height = ""; });
+    if (!WIDE.matches) return;
+    const top = panes[0].getBoundingClientRect().top + window.scrollY;
+    const h = Math.max(Math.round(window.innerHeight * 0.55), window.innerHeight - top - 20);
+    panes.forEach((p) => { p.style.height = h + "px"; });
+  }
+  window.addEventListener("resize", () => { clearTimeout(fitPanes._t); fitPanes._t = setTimeout(fitPanes, 150); });
+  function renderCompareReady(wa, wb, slug, i, oslug) {
+    const a = WORKS[slug], b = WORKS[oslug];
+    const j = matchingPart(a, b, i);
+    const s = wa.sections[i];
+    const sa = trSurname(a.translator), sb = trSurname(b.translator);
+    const more = otherTranslations(a).filter((o) => o.slug !== oslug);
+    const go = (k) => `#/work/${slug}/${k}/with/${oslug}`;
+    setTitle(`${a.title}, ${s.title} — ${sa} and ${sb} side by side`);
+    app.innerHTML = `
+      <article class="compare">
+        <button class="back" id="back">← ${esc(a.title)}, ${esc(s.title)} · ${esc(sa)}</button>
+        <div class="detail-subject">${esc(a.title)} · Two translations</div>
+        <h1 class="detail-title">${esc(s.title)}</h1>
+        <div class="compare-top">
+        <p class="detail-author">by <a href="#/poet/${esc(a.authorSlug)}">${esc(a.author)}</a> · ${esc(sa)} and ${esc(sb)}</p>
+        <div class="compare-tools">
+          <label class="compare-sync"><input type="checkbox" checked> Scroll together</label>
+          ${j >= 0 ? `<a class="compare-btn" href="#/work/${esc(oslug)}/${j}/with/${esc(slug)}">Swap sides</a>` : ""}
+          ${more.map((o) => `<a class="compare-btn" href="#/work/${esc(slug)}/${i}/with/${esc(o.slug)}">Compare with ${esc(trSurname(o.translator))}</a>`).join("")}
+          <button class="compare-jump" type="button" data-to="tr-b">Jump to ${esc(sb)} ↓</button>
+        </div>
+        </div>
+        <div class="compare-grid">
+          ${compareColHTML(wa, i, "tr-a")}
+          ${j >= 0 ? compareColHTML(wb, j, "tr-b") : `
+            <section class="compare-col" id="tr-b">
+              <p class="empty">${esc(trLabel(b.translator))} has no part matching ${esc(s.title)}.<br>
+              <a href="#/work/${esc(oslug)}">Open its contents →</a></p>
+            </section>`}
+        </div>
+        <div class="detail-nav">
+          <button ${i === 0 ? "disabled" : ""} data-go="${i - 1}"><span class="dir">← Previous</span>${i > 0 ? esc(wa.sections[i - 1].title) : ""}</button>
+          <button class="next" ${i === wa.sections.length - 1 ? "disabled" : ""} data-go="${i + 1}"><span class="dir">Next →</span>${i < wa.sections.length - 1 ? esc(wa.sections[i + 1].title) : ""}</button>
+        </div>
+      </article>`;
+    document.getElementById("back").addEventListener("click", () => { location.hash = "#/work/" + slug + "/" + i; });
+    app.querySelectorAll(".detail-nav button").forEach((btn) => btn.addEventListener("click", () => { if (!btn.disabled) location.hash = go(btn.dataset.go); }));
+    const jump = app.querySelector(".compare-jump");
+    jump.addEventListener("click", () => {
+      jumpTo(window.scrollY + document.getElementById(jump.dataset.to).getBoundingClientRect().top - 12);
+      const bar = document.querySelector(".topbar");            // if it is still on screen
+      const cover = bar ? bar.getBoundingClientRect().bottom : 0;
+      if (cover > 0) jumpTo(window.scrollY - cover);
+    });
+    // On a wide screen the columns reach down to the bottom of the window.
+    fitPanes();
+    // Keeping in step: scrolling one column moves the other to the same proportion of its
+    // length. Only the column the reader is moving drives; the other's echo is ignored.
+    const panes = [...app.querySelectorAll(".compare-pane")];
+    const sync = app.querySelector(".compare-sync input");
+    let driver = null, release = 0;
+    panes.forEach((p, k) => p.addEventListener("scroll", () => {
+      if (!sync.checked || panes.length < 2 || (driver && driver !== p)) return;
+      driver = p;
+      clearTimeout(release); release = setTimeout(() => { driver = null; }, 150);
+      const o = panes[1 - k];
+      const f = p.scrollTop / Math.max(1, p.scrollHeight - p.clientHeight);
+      o.scrollTop = f * (o.scrollHeight - o.clientHeight);
+    }, { passive: true }));
     restoreScroll();
   }
 

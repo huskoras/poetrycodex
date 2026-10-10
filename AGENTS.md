@@ -189,7 +189,12 @@ workCount, legacyIndex[] }`.
 The site supports several translations of the same text. Each is its **own work entry**
 with a unique `slug` (`iliad-butler`, `iliad-pope`) but a **shared `workGroup`**
 (`"iliad"`), plus a `translator` string. The owner intends to add more Homer
-translations over time — preserve this pattern.
+translations over time — preserve this pattern. The app treats works as translations of
+one another only when they share a `workGroup` **and** have different translators (the
+Junius poems and the three parts of *Christ* share a group and one translator, so they
+are not): each part page then links the same book in the other translation and offers
+"Compare side by side". Books are paired by section title ("Book VI"), else by position
+when both have as many sections — give a new translation the same section titles.
 
 ### Categories (home page "Browse by Era")
 Every poet has a `category`, one of the fifteen in `CATEGORY_ORDER` in `app.js`:
@@ -213,6 +218,7 @@ Modern · Turkish & Ottoman · Arabic & Persian · Italian · French · Nordic
 `#/eras` · `#/poems` full archive (topic filters live here) · `#/poets` · `#/poet/<slug>` ·
 `#/poem/<authorSlug>/<n>` · `#/poem/<oldNumericIndex>` (legacy, see below) ·
 `#/work/<slug>` (contents) · `#/work/<slug>/<i>` (one section) ·
+`#/work/<slug>/<i>/with/<otherSlug>` (the same book in two translations, side by side) ·
 `#/category/<slug>` · `#/oracle` · `#/about` · `#/shelf` (the reader's saved texts)
 
 Nav: Poems · Poets · Eras · The Oracle · About. The pre-redesign layout is tagged
