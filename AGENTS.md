@@ -213,7 +213,7 @@ Modern · Turkish & Ottoman · Arabic & Persian · Italian · French · Nordic
 `#/eras` · `#/poems` full archive (topic filters live here) · `#/poets` · `#/poet/<slug>` ·
 `#/poem/<authorSlug>/<n>` · `#/poem/<oldNumericIndex>` (legacy, see below) ·
 `#/work/<slug>` (contents) · `#/work/<slug>/<i>` (one section) ·
-`#/category/<slug>` · `#/oracle` · `#/about`
+`#/category/<slug>` · `#/oracle` · `#/about` · `#/shelf` (the reader's saved texts)
 
 Nav: Poems · Poets · Eras · The Oracle · About. The pre-redesign layout is tagged
 `design-before-v2` in git if a rollback is ever wanted.
@@ -241,6 +241,13 @@ card; a fresh visit starts at the top. Cards are `<a href="#/...">` links. Every
 work sections carry "Cite this poem" (MLA + Chicago) and "Copy link", both on the static
 page's permanent address (`/poem/<slug>/<n>/`, `/work/<slug>/<i>/`); surname-first
 exceptions live in `CITE_NAMES` in `app.js`.
+
+**The reader's shelf:** "Save to shelf" (under every poem and work section, and on a work's
+contents page) keeps the text in the browser's `localStorage` (`pc-shelf`) and nowhere else —
+no account, nothing sent to the site. `#/shelf` lists it and downloads it as Markdown or JSON
+with each text's permanent address. Where the browser keeps no site data the shelf lasts
+for the visit and the page says so. The top bar's "Shelf" link appears once something is
+saved; the footer always has "Your shelf".
 
 ---
 

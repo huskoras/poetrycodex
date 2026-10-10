@@ -140,12 +140,15 @@
     const plain = (h) => h.replace(/<[^>]+>/g, "").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
     return [{ style: "MLA", html: mla, text: plain(mla) }, { style: "Chicago", html: chicago, text: plain(chicago) }];
   }
-  function citeHTML(o) {
+  // The row under a text: Save to shelf (when `entry` is given), Cite, Copy link.
+  function citeHTML(o, entry) {
     return `
       <div class="cite-row">
+        ${entry ? shelfButtonHTML(entry) : ""}
         <button class="cite-toggle" type="button" aria-expanded="false" aria-controls="cite-box">Cite this ${o.work ? "text" : "poem"}</button>
         <button class="cite-link" type="button" data-url="${esc(SITE + o.path)}">Copy link</button>
       </div>
+      ${entry ? `<p class="shelf-msg" hidden>${VISIT_ONLY}</p>` : ""}
       <div class="cite-box" id="cite-box" hidden>
         ${citations(o).map((c, i) => `
           <div class="cite-entry">
@@ -195,6 +198,80 @@
         .then(() => flash(b, "Copied"), () => flash(b, "Press Ctrl+C"));
     }));
   }
+
+  // ---------- the reader's shelf ----------
+  // "Save to shelf" keeps a poem, a long work or one book of it in this browser's
+  // localStorage and nowhere else: no account, nothing sent to the site, nothing shared.
+  // Where the browser keeps no site data (some private windows, storage switched off, or
+  // full) the shelf lasts for this visit only, and the shelf page says so and offers the
+  // download. Ids are the Codex's own: "keats/0" (a poem), "work:iliad-pope" (a work),
+  // "work:iliad-pope/5" (one part of it); each entry keeps the title it was saved under.
+  const SHELF_KEY = "pc-shelf";
+  const STORE_OK = (() => {
+    try { localStorage.setItem("pc-test", "1"); localStorage.removeItem("pc-test"); return true; }
+    catch (e) { return false; }
+  })();
+  const MEMORY = {};   // this visit's copy of anything the browser would not keep
+  function readStore(key) {
+    let raw = MEMORY[key];
+    if (raw === undefined && STORE_OK) { try { raw = localStorage.getItem(key); } catch (e) { raw = null; } }
+    try { const v = raw ? JSON.parse(raw) : null; return v && typeof v === "object" ? v : {}; }
+    catch (e) { return {}; }
+  }
+  // Returns false when the browser refused it: kept for this visit only.
+  function writeStore(key, value) {
+    const raw = JSON.stringify(value);
+    if (STORE_OK) {
+      try { localStorage.setItem(key, raw); delete MEMORY[key]; return true; } catch (e) { /* full */ }
+    }
+    MEMORY[key] = raw;
+    return false;
+  }
+  const visitOnly = () => Object.keys(MEMORY).length > 0 || !STORE_OK;
+  function shelfItems() {
+    const s = readStore(SHELF_KEY);
+    return Array.isArray(s.items) ? s.items.filter((it) => it && typeof it.id === "string") : [];
+  }
+  const onShelf = (id) => shelfItems().some((it) => it.id === id);
+  // entry: {id, kind: "poem" | "work" | "part", title, author, translator}
+  function toggleShelf(entry) {
+    const items = shelfItems();
+    const at = items.findIndex((it) => it.id === entry.id);
+    if (at >= 0) items.splice(at, 1);
+    else items.unshift(Object.assign({}, entry, { saved: new Date().toISOString() }));
+    const kept = writeStore(SHELF_KEY, { v: 1, items });
+    updateShelfNav();
+    return { on: at < 0, kept };
+  }
+  // The top bar's "Shelf" appears once there is something on it.
+  function updateShelfNav() {
+    const show = shelfItems().length > 0 || /^#\/shelf/.test(location.hash);
+    document.querySelectorAll('[data-nav="shelf"]').forEach((a) => { a.hidden = !show; });
+  }
+  const shelfPath = (id) => id.startsWith("work:") ? "/work/" + id.slice(5) + "/" : "/poem/" + id + "/";
+  const VISIT_ONLY = "This browser is not keeping data for this site, so your shelf lasts for this visit only. Download it from your shelf before you close the tab.";
+  function shelfButtonHTML(entry) {
+    const on = onShelf(entry.id);
+    return `<button class="shelf-toggle" type="button" aria-pressed="${on}">${on ? "On your shelf" : "Save to shelf"}</button>
+      <a class="shelf-view" href="#/shelf"${on ? "" : " hidden"}>View shelf →</a>`;
+  }
+  function bindShelfButton(entry) {
+    const btn = app.querySelector(".shelf-toggle");
+    if (!btn) return;
+    btn.addEventListener("click", () => {
+      const r = toggleShelf(entry);
+      btn.setAttribute("aria-pressed", String(r.on));
+      btn.textContent = r.on ? "On your shelf" : "Save to shelf";
+      app.querySelector(".shelf-view").hidden = !r.on;
+      const msg = app.querySelector(".shelf-msg");
+      if (msg) msg.hidden = r.kept;
+    });
+  }
+  window.addEventListener("storage", (e) => {      // saved or removed in another tab
+    if (e.key !== SHELF_KEY && e.key !== null) return;
+    updateShelfNav();
+    if (DATA && /^#\/shelf/.test(location.hash)) renderShelf();
+  });
 
   // Turkish & Ottoman poems with no translator are in Turkish (screen readers, hyphenation);
   // the page around them stays English. Same rule as text_lang in tools/build_pages.py.
@@ -468,6 +545,7 @@
     else if (h.startsWith("#/poets")) { setRoute("poets", "sub"); renderPoets(); }
     else if (h.startsWith("#/topics")) { setRoute("topics", "sub"); renderTopics(); }
     else if (h.startsWith("#/about")) { setRoute("about", "sub"); renderAbout(); }
+    else if (h.startsWith("#/shelf")) { setRoute("shelf", "sub"); renderShelf(); }
     else if (h.startsWith("#/oracle")) { setRoute("oracle", "sub"); renderOracle(); }
     else if (h.startsWith("#/eras")) { setRoute("eras", "sub"); renderEras(); }
     else if (h.startsWith("#/poems")) {
@@ -482,6 +560,7 @@
     }
     else { setRoute("poems", "home"); renderHome(); }
     syncSearchInput();
+    updateShelfNav();
     jumpTo(st ? st.y : 0);
     restoreY = st ? st.y : 0;
   }
@@ -760,6 +839,7 @@
   function renderWork(slug) {
     const w = WORKS[slug];
     if (!w) { location.hash = "#/"; return; }
+    const entry = { id: "work:" + slug, kind: "work", title: w.title, author: w.author, translator: w.translator || "" };
     setTitle(workTitle(w));
     app.innerHTML = `
       <article class="detail work-toc">
@@ -770,6 +850,8 @@
         <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
         ${sourceLine(w.translator)}
         ${w.blurb ? `<p class="note-block">${esc(w.blurb)}</p>` : ""}
+        <div class="cite-row toc-tools">${shelfButtonHTML(entry)}</div>
+        <p class="shelf-msg" hidden>${VISIT_ONLY}</p>
         <hr class="rule">
         <p class="section-label">Contents · ${w.sections.length} parts</p>
         <ul class="poem-links">
@@ -778,6 +860,7 @@
         </ul>
       </article>`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/poet/" + w.authorSlug; });
+    bindShelfButton(entry);
   }
 
   // ---------- WORK: one section (canto) reader ----------
@@ -796,6 +879,8 @@
     const wt = workTitle(WORKS[slug]);
     const cite = { author: w.author, work: w.title, title: w.sections.length > 1 ? s.title : "",
                    translator: w.translator, path: `/work/${slug}/${i}/` };
+    const entry = { id: "work:" + slug + "/" + i, kind: "part", author: w.author, translator: w.translator || "",
+                    title: w.sections.length > 1 ? w.title + " · " + s.title : w.title };
     setTitle(w.sections.length > 1 ? wt.replace(w.title, w.title + ", " + s.title) : wt);
     app.innerHTML = `
       <article class="detail">
@@ -807,7 +892,7 @@
         <hr class="rule">
         ${enginePanel(s.text, { gloss: true })}
         ${poemBlock(s.text, { translator: w.translator, lang: langAttr(w.authorSlug, w.translator), work: true })}
-        ${citeHTML(cite)}
+        ${citeHTML(cite, entry)}
         <div class="detail-nav">
           <button ${i === 0 ? "disabled" : ""} data-go="${i - 1}"><span class="dir">← Previous</span>${i > 0 ? esc(w.sections[i - 1].title) : ""}</button>
           <button class="next" ${i === w.sections.length - 1 ? "disabled" : ""} data-go="${i + 1}"><span class="dir">Next →</span>${i < w.sections.length - 1 ? esc(w.sections[i + 1].title) : ""}</button>
@@ -818,6 +903,7 @@
                  id: "work:" + slug + "/" + i });
     bindLineNumbers();
     bindCite(cite);
+    bindShelfButton(entry);
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/work/" + slug + "/" + b.dataset.go; }));
     restoreScroll();
   }
@@ -904,6 +990,97 @@
         <p>Poetry Codex welcomes correspondence from scholars, teachers and readers:
         <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a>.</p>
       </article>`;
+  }
+
+  // ---------- SHELF: what the reader saved, in this browser ----------
+  const shortDate = (iso) => {
+    const d = new Date(iso);
+    return isNaN(d) ? "" : `${d.getDate()} ${MONTHS[d.getMonth()].slice(0, 3)} ${d.getFullYear()}`;
+  };
+  const byLine = (it) => [it.author, it.translator && translatorShort(it.translator)].filter(Boolean).join(" · ");
+  function shelfRowHTML(it) {
+    return `
+      <li class="shelf-item">
+        <a class="shelf-link" href="${esc(routeFor(it.id))}">
+          <span class="shelf-title">${esc(it.title)}</span>
+          <span class="shelf-by">${esc(byLine(it))}</span>
+        </a>
+        <span class="shelf-side">
+          <span class="shelf-date">Saved ${esc(shortDate(it.saved))}</span>
+          <button class="shelf-remove" type="button" data-id="${esc(it.id)}" aria-label="Remove ${esc(it.title)} from your shelf">Remove</button>
+        </span>
+      </li>`;
+  }
+  function renderShelf() {
+    setTitle("Your shelf");
+    const items = shelfItems();
+    const poems = items.filter((it) => it.kind === "poem");
+    const works = items.filter((it) => it.kind !== "poem");
+    const group = (name, list) => list.length ? `
+      <section class="shelf-group">
+        <h2>${name} · ${list.length}</h2>
+        <ul class="shelf-list">${list.map(shelfRowHTML).join("")}</ul>
+      </section>` : "";
+    app.innerHTML = `
+      <article class="shelf">
+        <div class="page-head">
+          <h1 class="page-title">Your shelf</h1>
+          <p class="page-sub">Poems and works you have saved. They are kept in this browser only:
+          nothing is sent to Poetry Codex, and no one else can see them.</p>
+        </div>
+        ${visitOnly() ? `<p class="shelf-warn">This browser is not keeping data for this site (a private
+          window, or site storage switched off or full), so your shelf will be gone when you close
+          this tab. Download it below to keep a copy.</p>` : ""}
+        ${items.length ? group("Poems", poems) + group("Works", works) + `
+        <section class="shelf-export">
+          <h2>Take it with you</h2>
+          <p>Your shelf is stored nowhere else. Download a copy to keep it, or to paste into your own notes.</p>
+          <div class="cite-row">
+            <button class="shelf-dl" type="button" data-format="md">Download as Markdown</button>
+            <button class="shelf-dl" type="button" data-format="json">Download as JSON</button>
+          </div>
+        </section>` : `
+        <p class="empty">Nothing on your shelf yet.</p>
+        <p class="shelf-how">Open any poem or long work and press <strong>Save to shelf</strong> under the text.
+        It will wait for you here. <a href="#/poems">Browse the poems →</a></p>`}
+      </article>`;
+    app.querySelectorAll(".shelf-remove").forEach((b) => b.addEventListener("click", () => {
+      const it = shelfItems().find((x) => x.id === b.dataset.id);
+      if (it) toggleShelf(it);
+      renderShelf();
+    }));
+    app.querySelectorAll(".shelf-dl").forEach((b) => b.addEventListener("click", () => {
+      const day = new Date().toISOString().slice(0, 10);
+      if (b.dataset.format === "json") {
+        downloadFile(`poetry-codex-shelf-${day}.json`, "application/json", JSON.stringify(shelfExport(), null, 2));
+      } else {
+        downloadFile(`poetry-codex-shelf-${day}.md`, "text/markdown", shelfMarkdown());
+      }
+    }));
+  }
+  // What the downloads hold: every entry with its permanent address.
+  function shelfExport() {
+    return {
+      format: "Poetry Codex shelf", version: 1, exported: new Date().toISOString(),
+      shelf: shelfItems().map((it) => ({ id: it.id, kind: it.kind, title: it.title, author: it.author,
+        translator: it.translator || undefined, url: SITE + shelfPath(it.id), saved: it.saved })),
+    };
+  }
+  function shelfMarkdown() {
+    const md = (s) => String(s || "").replace(/([\\`*_[\]<>])/g, "\\$1");
+    const items = shelfItems();
+    const block = (name, list) => list.length ? `## ${name}\n\n` + list.map((it) =>
+      `- **${md(it.title)}** — ${md(byLine(it))}  \n  ${SITE + shelfPath(it.id)}  \n  Saved ${shortDate(it.saved)}\n`).join("\n") + "\n" : "";
+    return `# My Poetry Codex shelf\n\nExported ${shortDate(new Date().toISOString())} from ${SITE}\n\n`
+      + block("Poems", items.filter((it) => it.kind === "poem"))
+      + block("Works", items.filter((it) => it.kind !== "poem"));
+  }
+  function downloadFile(name, type, text) {
+    const url = URL.createObjectURL(new Blob([text], { type: type + ";charset=utf-8" }));
+    const a = document.createElement("a");
+    a.href = url; a.download = name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
   }
 
 
@@ -1415,6 +1592,7 @@
       ? `<div class="themes">${p.subjects.map((s) => `<span class="theme-tag" data-sub="${esc(s)}">${esc(s)}</span>`).join("")}</div>` : "";
     const lang = langAttr(p.authorSlug, p.translator);
     const cite = { author: p.author, title: p.title, translator: p.translator, path: `/poem/${slug}/${n}/` };
+    const entry = { id: slug + "/" + n, kind: "poem", title: p.title, author: p.author, translator: p.translator || "" };
     setTitle(p.title + " — " + p.author);
     app.innerHTML = `
       <article class="detail">
@@ -1430,7 +1608,7 @@
         ${p.note ? `<div class="rule-ornament">✦ ✦ ✦</div>
         <p class="section-label">Codex Note</p>
         <p class="note-block">${esc(p.note)}</p>` : ""}
-        ${citeHTML(cite)}
+        ${citeHTML(cite, entry)}
         <div class="detail-nav">
           <button ${n === 0 ? "disabled" : ""} data-go="${n - 1}"><span class="dir">← Previous</span>${n > 0 ? esc(poems[n - 1].title) : ""}</button>
           <button class="next" ${n === poems.length - 1 ? "disabled" : ""} data-go="${n + 1}"><span class="dir">Next →</span>${n < poems.length - 1 ? esc(poems[n + 1].title) : ""}</button>
@@ -1447,6 +1625,7 @@
     bindEngine({ title: p.title, author: p.author, text: p.text, id: p.id });
     bindLineNumbers();
     bindCite(cite);
+    bindShelfButton(entry);
     restoreScroll();
   }
 })();
