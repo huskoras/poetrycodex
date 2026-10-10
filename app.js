@@ -128,10 +128,12 @@
     const url = SITE + o.path;
     const tr = o.translator ? translatorShort(o.translator).replace(/^trans\.\s*/i, "").replace(/\s*&\s*/g, " and ") : "";
     const by = tr ? ` Translated by ${esc(tr)}.` : "";
-    const end = (s) => /[.?!]$/.test(s) ? s : s + ".";
+    // One closing full stop: none after ? or !, and a stray trailing comma or colon in
+    // the data ("Ad Amicum Litigantem,") gives way to it.
+    const end = (s) => { s = String(s).replace(/[\s,;:]+$/, ""); return /[.?!]$/.test(s) ? s : s + "."; };
     const what = !o.work ? `“${esc(end(o.title))}”`
       : o.title && o.title !== o.work ? `<i>${esc(o.work)}</i>, ${esc(end(o.title))}`
-      : `<i>${esc(o.work)}</i>${/[.?!]$/.test(o.work) ? "" : "."}`;
+      : `<i>${esc(end(o.work))}</i>`;
     const lead = `${esc(end(citeName(o.author)))} ${what}${by}`;
     const mla = `${lead} <i>Poetry Codex</i>, ${esc(url.replace(/^https:\/\//, ""))}. Accessed ${d.getDate()} ${MLA_MONTHS[d.getMonth()]} ${d.getFullYear()}.`;
     const chicago = `${lead} Poetry Codex. Accessed ${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}. ${esc(url)}.`;
