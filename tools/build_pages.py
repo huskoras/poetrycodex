@@ -21,12 +21,23 @@ import html
 import io
 import json
 import os
+import re
 import shutil
 from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://poetrycodex.com"
 TODAY = date.today().isoformat()
+
+
+def css_version():
+    """The styles.css cache-buster index.html uses, so static pages never load a stale stylesheet."""
+    shell_html = io.open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
+    m = re.search(r"styles\.css\?v=(\d+)", shell_html)
+    return m.group(1) if m else "1"
+
+
+CSS_V = css_version()
 
 FONTS = (
     '<link rel="preconnect" href="https://fonts.googleapis.com" />'
@@ -50,6 +61,18 @@ def para_html(text):
     )
 
 
+def source_line(p):
+    """'Translated by … · From <book>' under the author line, as the app shows it."""
+    parts = []
+    tr = (p.get("translator") or "").strip()
+    co = (p.get("collection") or "").strip()
+    if tr:
+        parts.append(re.sub(r"^trans\.\s*", "Translated by ", tr, flags=re.I))
+    if co:
+        parts.append("From " + co)
+    return f'<p class="detail-source">{esc(" · ".join(parts))}</p>' if parts else ""
+
+
 def shell(title, description, canonical, body, og_type="article"):
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -67,7 +90,7 @@ def shell(title, description, canonical, body, og_type="article"):
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   {FONTS}
-  <link rel="stylesheet" href="/styles.css?v=30" />
+  <link rel="stylesheet" href="/styles.css?v={CSS_V}" />
 </head>
 <body>
   <header class="site-head">
@@ -118,6 +141,7 @@ def poem_page(poet, poems, n, p, poet_name):
       <p class="detail-subject">{esc(subj)}</p>
       <h1 class="detail-title">{esc(title)}</h1>
       <p class="detail-author">by <a href="/poet/{poet["slug"]}/">{esc(author)}</a></p>
+      {source_line(p)}
       {('<div class="themes">' + themes + '</div>') if themes else ''}
       <hr class="rule">
       <div class="poem-text">

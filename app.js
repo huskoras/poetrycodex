@@ -55,6 +55,17 @@
   const esc = (s) => String(s == null ? "" : s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+  // ---------- attribution ----------
+  // The data stores translators as "trans. Name (year)". Pages spell that out;
+  // cards drop the trailing date, which the card already shows as the year.
+  const translatedBy = (t) => String(t).replace(/^trans\.\s*/i, "Translated by ");
+  const translatorShort = (t) => String(t).replace(/\s*\([^)]*\)\s*$/, "");
+  // "Translated by … · From <book>", under the author line; empty when neither is known.
+  function sourceLine(translator, collection) {
+    const parts = [translator && translatedBy(translator), collection && "From " + collection].filter(Boolean);
+    return parts.length ? `<p class="detail-source">${parts.map(esc).join(" · ")}</p>` : "";
+  }
+
   // ---------- era/category taxonomy ----------
   // Umbrella categories applied to every poet's `category` field (see data/poets/<slug>.json).
   // Order here is the display/chronological order used on the home page.
@@ -201,7 +212,7 @@
     <button class="card work-card" data-work="${esc(w.slug)}">
       <div class="card-subject">${esc(w.type)} · ${esc(w.year)}</div>
       <h2 class="card-title">${esc(w.title)}</h2>
-      <div class="card-author">${esc(w.author)}</div>
+      <div class="card-author">${esc(w.author)}${w.translator ? " · " + esc(translatorShort(w.translator)) : ""}</div>
       <p class="card-excerpt">${esc(w.blurb || (w.sections.length + " cantos"))}</p>
       <span class="work-flag">Read in ${w.sections.length} parts →</span>
     </button>`;
@@ -265,7 +276,7 @@
           <img src="archive.png" alt="" width="124" height="124" />
           <span class="d-name">The Archive</span>
           <span class="d-line">${DATA.count} poems by ${DATA.poets.length} poets,
-          from Anglo-Saxon verse to the Victorians \u2014 every one in the public domain.</span>
+          from Homer and Anglo-Saxon verse to the early twentieth century \u2014 every one in the public domain.</span>
           <span class="d-go">Enter &rarr;</span>
         </a>
         <a class="door door-oracle${ORACLE_LIVE ? "" : " is-resting"}" href="#/oracle">
@@ -347,7 +358,7 @@
   // ---------- POETS index ----------
   function renderPoets() {
     app.innerHTML = `
-      <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">${DATA.poets.length} poets, from Milton to the Romantics.</p></div>
+      <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">${DATA.poets.length} poets, from Homer to the early twentieth century.</p></div>
       <div class="poet-grid">
         ${DATA.poets.map((p) => `
           <button class="poet-card" data-slug="${esc(p.slug)}">
@@ -390,7 +401,6 @@
             <p class="poet-dates">${esc(poet.dates)}</p>
             <div class="poet-bio">
               ${poet.bio.map((para) => `<p>${para}</p>`).join("")}
-              <span class="draft">Draft note — your biography text will replace this.</span>
             </div>
           </div>
         </div>
@@ -417,6 +427,7 @@
         <h1 class="detail-title">${esc(w.title)}</h1>
         ${w.subtitle ? `<p class="work-subtitle">${esc(w.subtitle)}</p>` : ""}
         <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
+        ${sourceLine(w.translator)}
         ${w.blurb ? `<p class="note-block">${esc(w.blurb)}</p>` : ""}
         <hr class="rule">
         <p class="section-label">Contents · ${w.sections.length} parts</p>
@@ -447,6 +458,7 @@
         <div class="detail-subject">${esc(w.title)} · ${esc(w.year)}</div>
         <h1 class="detail-title">${esc(s.title)}</h1>
         <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
+        ${sourceLine(w.translator)}
         <hr class="rule">
         ${enginePanel(s.text, { gloss: true })}
         <blockquote class="poem-text">${esc(s.text)}</blockquote>
@@ -487,9 +499,10 @@
         larger project: a critical engine able to read these poems through the full range of methods
         that literary scholarship has developed over the past two centuries.</p>
         <p>The archive currently holds <strong>${DATA.count} poems</strong> by
-        <strong>${DATA.poets.length} poets</strong>, from Anglo-Saxon verse and the Greek and Roman
-        epics through the Middle Ages, the Renaissance, the Romantics and the Victorians. Every text
-        is reproduced in full, from a named edition, and is free of copyright.</p>
+        <strong>${DATA.poets.length} poets</strong>, from the Greek and Roman epics and Anglo-Saxon
+        verse through the Middle Ages, the Renaissance, the Romantics and the Victorians to the early
+        twentieth century, together with Turkish and Ottoman poetry. Every text is reproduced in full
+        and is free of copyright.</p>
 
         <h2>Why this exists</h2>
         <p>Great poems are easy to find online; informed readings of them are not. A reader is usually
@@ -497,22 +510,24 @@
         the poem. Poetry Codex begins from a different premise: that a poem is best understood through
         more than one lens, and that a reader deserves to see the lens named.</p>
 
-        <h2>The Critical Engine <span class="soon">In development</span></h2>
+        <h2>The Critical Engine <span class="soon">Early version</span></h2>
         <p>We are building a reading system specialised entirely in poetry — not a general assistant —
         that can analyse any text in the archive through a chosen critical tradition: formalist,
-        historicist, psychoanalytic, feminist, postcolonial, ecocritical, and others. Ask how
-        <em>Beowulf</em> reads through a feminist lens, or how a Donne lyric looks first to a New Critic
-        and then to a historicist, and the answer should be an argument rather than a summary — and it
-        should say which scholarship it is standing on.</p>
+        historicist, psychoanalytic, feminist, postcolonial, ecocritical, and others. An early version
+        is already open on every poem page, under “Read with the Codex”. Ask how <em>Beowulf</em> reads
+        through a feminist lens, or how a Donne lyric looks first to a New Critic and then to a
+        historicist, and the answer should be an argument rather than a summary.</p>
         <p>The engine is grounded in the history of criticism itself: the methods, the debates and the
-        critics who shaped them, together with open scholarship drawn from the academic literature. Its
-        purpose is to cite scholarship, not to replace it. Every reading names its method and its
-        sources, so that a reader can disagree with it intelligently.</p>
+        critics who shaped them. Its purpose is to lead readers to scholarship, not to replace it. Every
+        reading is generated and names its method, so that a reader can disagree with it intelligently;
+        it never attributes a claim to a named critic. Real citation of scholarship will come when the
+        archive is joined to open-access criticism.</p>
+        <p>What the engine offers, and what it is growing into:</p>
         <ul class="about-list">
           <li><strong>Semantic search</strong> — find poems by what they are about, not by the words
           they happen to use: ask for poems on exile, or on grief that refuses consolation.</li>
-          <li><strong>Codex Notes</strong> — a short critical reading for every poem in the archive,
-          generated under scholarly constraints and reviewed before publication.</li>
+          <li><strong>Codex Notes</strong> — short critical readings, generated under scholarly
+          constraints and reviewed before publication; a growing number of poems carry one.</li>
           <li><strong>Comparative reading</strong> — two poems placed side by side, with an account of
           what they share and where they part.</li>
           <li><strong>Modern-English gloss</strong> — line-by-line glosses for Old and Middle English
@@ -526,7 +541,8 @@
 
         <h2>Texts &amp; images</h2>
         <p>Every poem here is in the public domain and is reproduced in full. Translations are pre-1929
-        and name their translator. Poet portraits are likewise public-domain works, courtesy of Wikimedia
+        and name their translator; where the book a poem comes from is recorded, its page names that
+        too. Poet portraits are likewise public-domain works, courtesy of Wikimedia
         Commons, and each carries its credit.</p>
 
         <h2>The emblem</h2>
@@ -1045,6 +1061,7 @@
         <div class="detail-subject">${esc(p.primarySubject)}</div>
         <h1 class="detail-title">${esc(p.title)}</h1>
         <p class="detail-author">by <a href="#/poet/${esc(p.authorSlug)}">${esc(p.author)}</a></p>
+        ${sourceLine(p.translator, p.collection)}
         ${themes}
         <hr class="rule">
         ${enginePanel(p.text, { compare: true, gloss: true })}

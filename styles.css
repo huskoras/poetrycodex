@@ -176,8 +176,6 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 .poet-name { font-family: var(--serif); font-weight: 500; font-size: clamp(2.1rem, 5vw, 3.1rem); line-height: 1.05; margin: 0; }
 .poet-dates { font-family: var(--serif); font-style: italic; font-size: 1.25rem; color: var(--ink-soft); margin: .3rem 0 1.4rem; }
 .poet-bio p { font-family: var(--serif); font-size: 1.12rem; line-height: 1.75; color: var(--ink-soft); margin: 0 0 1rem; max-width: 60ch; }
-.poet-bio .draft { font-family: var(--sans); font-size: .74rem; letter-spacing: .06em; color: var(--faint); font-style: normal;
-  background: var(--surface-alt); border: 1px dashed var(--line-strong); border-radius: 4px; padding: .5rem .75rem; display: inline-block; }
 
 .poet-poems { margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 2rem; }
 .poet-poems h2 { font-family: var(--sans); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); font-weight: 700; margin: 0 0 1rem; }
@@ -214,6 +212,9 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 .detail-author { font-family: var(--serif); font-style: italic; font-size: 1.25rem; color: var(--ink-soft); margin: 0 0 1.6rem; }
 .detail-author a { color: var(--accent); text-decoration: none; }
 .detail-author a:hover { text-decoration: underline; }
+/* translator and source book, tucked under the author line */
+.detail-source { font-family: var(--sans); font-size: .82rem; line-height: 1.5; letter-spacing: .02em;
+  color: var(--ink-soft); margin: -1rem 0 1.6rem; }
 .rule { border: none; border-top: 1px solid var(--line); margin: 2.1rem 0; }
 .rule-ornament { text-align: center; color: var(--gold); margin: 2.3rem 0; letter-spacing: .6rem; }
 .section-label { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); margin: 0 0 .9rem; font-weight: 700; }
@@ -274,7 +275,7 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
   .detail-nav { flex-direction: column; }
 }
 
-/* About — roadmap list + "in development" tag */
+/* About — roadmap list + "early version" tag */
 .about h2 .soon {
   display: inline-block; margin-left: .6rem; padding: .18rem .5rem;
   font-family: var(--sans); font-size: .62rem; font-weight: 700;
