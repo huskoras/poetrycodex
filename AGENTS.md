@@ -228,8 +228,19 @@ works. Never reuse or repurpose these numbers; new poems only ever get new stabl
 
 **Search limitation:** because `data/index.json` holds only a 3-line excerpt of each poem
 (not the full text — that's the whole point of the split), the `#/poems` search box
-matches title + author + excerpt + subjects only. It will not find a poem by a word that
-appears only later in its body. This is a known, accepted trade-off for load time.
+matches title + author + translator + excerpt + subjects only. It will not find a poem by a
+word that appears only later in its body. This is a known, accepted trade-off for load time.
+Search folds case, accents, apostrophes and Turkish i/ı/İ and spells out æ/þ/ð/œ (`fold` in
+`app.js`: "hasim" finds Haşim, "caedmon" Cædmon), and a query is its words in any order.
+
+**Lists and history:** `#/poems` and `#/category/...` draw 60 cards at a time ("Show 60
+more"). Each history entry keeps its scroll position (and, on lists, the number of cards
+shown, the search and the subject filter) in `history.state`, so Back returns to the same
+card; a fresh visit starts at the top. Cards are `<a href="#/...">` links. Every route sets
+`document.title` in the static pages' form ("Title — Author · Poetry Codex"). Poems and
+work sections carry "Cite this poem" (MLA + Chicago) and "Copy link", both on the static
+page's permanent address (`/poem/<slug>/<n>/`, `/work/<slug>/<i>/`); surname-first
+exceptions live in `CITE_NAMES` in `app.js`.
 
 ---
 
