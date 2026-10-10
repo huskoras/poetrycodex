@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found · Poetry Codex</title>
+  <meta name="description" content="This page is not in the Poetry Codex archive." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css?v=33" />
+</head>
+<body>
+  <header class="site-head">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="tb-brand" href="/"><img src="/coin.png" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
+        <nav class="tb-nav">
+          <a href="/#/poems">Poems</a>
+          <a href="/#/poets">Poets</a>
+          <a href="/#/eras">Eras</a>
+          <a class="tb-oracle" href="/#/oracle">The Oracle</a>
+          <a href="/#/about">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="static-page">
+    <article class="detail not-found">
+      <p class="detail-subject">Page not found</p>
+      <h1 class="detail-title">This page is not in the Codex</h1>
+      <p class="page-sub">The address may be mistyped, or the page may have moved. Search the archive, or start from one of these.</p>
+      <form class="archive-search" id="nf-search" action="/" method="get" autocomplete="off">
+        <input type="search" name="q" placeholder="Search by poem or poet…" aria-label="Search the archive" />
+        <button type="submit" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </form>
+      <nav class="hero-nav" aria-label="Archive">
+        <a href="/#/poems">Poems</a>
+        <a href="/#/poets">Poets</a>
+        <a href="/#/eras">Eras</a>
+        <a href="/#/oracle">The Oracle</a>
+        <a href="/#/about">About</a>
+      </nav>
+    </article>
+    <script>
+      (function () {
+        // /poets, /about … typed as paths are meant as the archive's pages of that name.
+        var path = location.pathname.replace(/\/+$/, "").toLowerCase();
+        if (/^\/(poems|poets|eras|oracle|about)$/.test(path)) { location.replace("/#" + path); return; }
+        document.getElementById("nf-search").addEventListener("submit", function (e) {
+          e.preventDefault();
+          var q = this.q.value.trim();
+          location.href = "/#/poems" + (q ? "?q=" + encodeURIComponent(q) : "");
+        });
+      })();
+    </script>
+  </main>
+  <footer class="site-foot">
+    <div class="foot-bar">
+      <span>© 2026 Poetry Codex. All texts are in the public domain.</span>
+      <span class="foot-privacy"><a href="/">Open the full archive</a> · <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -174,7 +174,16 @@
     else if (h.startsWith("#/about")) { setRoute("about", "sub"); renderAbout(); }
     else if (h.startsWith("#/oracle")) { setRoute("oracle", "sub"); renderOracle(); }
     else if (h.startsWith("#/eras")) { setRoute("eras", "sub"); renderEras(); }
-    else if (h.startsWith("#/poems")) { setRoute("poems", "sub"); renderList(); }
+    else if (h.startsWith("#/poems")) {
+      // "#/poems?q=keats" (the 404 page's search box) opens the archive already searched.
+      const q = h.match(/[?&]q=([^&]*)/);
+      if (q) {
+        try { query = decodeURIComponent(q[1].replace(/\+/g, " ")).trim().toLowerCase(); } catch (e) { query = ""; }
+        filterSubject = "All";
+        history.replaceState(null, "", "#/poems");
+      }
+      setRoute("poems", "sub"); renderList();
+    }
     else { setRoute("poems", "home"); renderHome(); }
     syncSearchInput();
     window.scrollTo(0, 0);

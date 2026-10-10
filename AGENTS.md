@@ -66,8 +66,8 @@ sections (cantos/books/fitts).
   page). Run it after `build_index.py` on every content change; it exits non-zero on error.
 - `tools/build_pages.py` — generates the **static HTML pages search engines index**:
   `poem/<slug>/<n>/index.html` (full text + canonical URL), `poet/<slug>/index.html`,
-  the sitemap index `sitemap.xml` + `sitemap-1..13.xml`, and the plain poet-link list in
-  the home-page footer. `poem/` and `poet/` are generated — never edit them by hand. Run it
+  the sitemap index `sitemap.xml` + `sitemap-1..13.xml`, the plain poet-link list in
+  the home-page footer, and `404.html`. `poem/`, `poet/` and `404.html` are generated — never edit them by hand. Run it
   after `build_index.py` on every content change (works-only poets get no poem pages).
 - `robots.txt` — allows everything and points to the sitemap. `CNAME` — `poetrycodex.com`.
 - `poets/*.jpg` — portrait/illustration images (unrelated to `data/poets/`; note the

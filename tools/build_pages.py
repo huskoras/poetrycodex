@@ -10,7 +10,8 @@ give each poem and poet an address of its own, with the full text in the HTML.
 Output (all regenerated; do not edit by hand):
     poem/<poet-slug>/<n>/index.html   — /poem/blake/27/
     poet/<poet-slug>/index.html       — /poet/blake/
-    sitemap.xml
+    sitemap.xml + sitemap-<n>.xml
+    404.html                          — shown for any address that does not exist
 
 A reader who lands on one of these pages gets the poem in full, with a link
 into the archive for the rest of the experience. Run after any content change:
@@ -74,6 +75,15 @@ def source_line(p):
 
 
 def shell(title, description, canonical, body, og_type="article"):
+    if canonical:
+        meta = f"""<link rel="canonical" href="{esc(canonical)}" />
+  <meta property="og:type" content="{og_type}" />
+  <meta property="og:site_name" content="Poetry Codex" />
+  <meta property="og:title" content="{esc(title)}" />
+  <meta property="og:description" content="{esc(description)}" />
+  <meta property="og:url" content="{esc(canonical)}" />"""
+    else:  # the 404 page: nothing there for a search engine to keep
+        meta = '<meta name="robots" content="noindex" />'
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,12 +91,7 @@ def shell(title, description, canonical, body, og_type="article"):
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{esc(title)} · Poetry Codex</title>
   <meta name="description" content="{esc(description)}" />
-  <link rel="canonical" href="{esc(canonical)}" />
-  <meta property="og:type" content="{og_type}" />
-  <meta property="og:site_name" content="Poetry Codex" />
-  <meta property="og:title" content="{esc(title)}" />
-  <meta property="og:description" content="{esc(description)}" />
-  <meta property="og:url" content="{esc(canonical)}" />
+  {meta}
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   {FONTS}
@@ -182,6 +187,41 @@ def poet_page(poet, poems_count, poem_list):
     return shell(name, desc, canonical, body, og_type="profile")
 
 
+def not_found_page():
+    """404.html: GitHub Pages serves it for any address that does not exist."""
+    body = r"""    <article class="detail not-found">
+      <p class="detail-subject">Page not found</p>
+      <h1 class="detail-title">This page is not in the Codex</h1>
+      <p class="page-sub">The address may be mistyped, or the page may have moved. Search the archive, or start from one of these.</p>
+      <form class="archive-search" id="nf-search" action="/" method="get" autocomplete="off">
+        <input type="search" name="q" placeholder="Search by poem or poet…" aria-label="Search the archive" />
+        <button type="submit" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </form>
+      <nav class="hero-nav" aria-label="Archive">
+        <a href="/#/poems">Poems</a>
+        <a href="/#/poets">Poets</a>
+        <a href="/#/eras">Eras</a>
+        <a href="/#/oracle">The Oracle</a>
+        <a href="/#/about">About</a>
+      </nav>
+    </article>
+    <script>
+      (function () {
+        // /poets, /about … typed as paths are meant as the archive's pages of that name.
+        var path = location.pathname.replace(/\/+$/, "").toLowerCase();
+        if (/^\/(poems|poets|eras|oracle|about)$/.test(path)) { location.replace("/#" + path); return; }
+        document.getElementById("nf-search").addEventListener("submit", function (e) {
+          e.preventDefault();
+          var q = this.q.value.trim();
+          location.href = "/#/poems" + (q ? "?q=" + encodeURIComponent(q) : "");
+        });
+      })();
+    </script>"""
+    return shell("Page not found", "This page is not in the Poetry Codex archive.", None, body)
+
+
 def write(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with io.open(path, "w", encoding="utf-8", newline="\n") as f:
@@ -247,6 +287,7 @@ def main():
     index.append("</sitemapindex>")
     write(os.path.join(ROOT, "sitemap.xml"), NL.join(index) + NL)
     fill_home_poet_links(POET_ROWS)
+    write(os.path.join(ROOT, "404.html"), not_found_page())
     print("sitemap index: " + str(len(chunks)) + " child sitemaps")
 
     print(f"poet pages: {poet_count}")
