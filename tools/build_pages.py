@@ -200,12 +200,27 @@ def main():
             urls.append(f"{SITE}/poem/{slug}/{n}/")
             poem_count += 1
 
-    sm = ['<?xml version="1.0" encoding="UTF-8"?>',
-          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for u in urls:
-        sm.append(f"  <url><loc>{esc(u)}</loc><lastmod>{TODAY}</lastmod></url>")
-    sm.append("</urlset>")
-    write(os.path.join(ROOT, "sitemap.xml"), "\n".join(sm) + "\n")
+    # Split into small child sitemaps behind one index. Google fetches each child
+    # separately, so no single file is large, and a failure in one does not hide the rest.
+    CHUNK = 1000
+    chunks = [urls[i:i + CHUNK] for i in range(0, len(urls), CHUNK)]
+    for old in [f for f in os.listdir(ROOT) if f.startswith("sitemap-") and f.endswith(".xml")]:
+        os.remove(os.path.join(ROOT, old))
+    NL = chr(10)
+    for n, chunk in enumerate(chunks, 1):
+        body = ['<?xml version="1.0" encoding="UTF-8"?>',
+                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+        for u in chunk:
+            body.append("  <url><loc>" + esc(u) + "</loc><lastmod>" + TODAY + "</lastmod></url>")
+        body.append("</urlset>")
+        write(os.path.join(ROOT, "sitemap-" + str(n) + ".xml"), NL.join(body) + NL)
+    index = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for n in range(1, len(chunks) + 1):
+        index.append("  <sitemap><loc>" + SITE + "/sitemap-" + str(n) + ".xml</loc><lastmod>" + TODAY + "</lastmod></sitemap>")
+    index.append("</sitemapindex>")
+    write(os.path.join(ROOT, "sitemap.xml"), NL.join(index) + NL)
+    print("sitemap index: " + str(len(chunks)) + " child sitemaps")
 
     print(f"poet pages: {poet_count}")
     print(f"poem pages: {poem_count}")
