@@ -222,8 +222,48 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 .rule { border: none; border-top: 1px solid var(--line); margin: 2.1rem 0; }
 .rule-ornament { text-align: center; color: var(--gold); margin: 2.3rem 0; letter-spacing: .6rem; }
 .section-label { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); margin: 0 0 .9rem; font-weight: 700; }
-.poem-text { font-family: var(--serif); font-size: 1.2rem; line-height: 1.85; color: var(--ink); white-space: pre-wrap;
+.poem-text { font-family: var(--serif); font-size: 1.2rem; line-height: 1.85; color: var(--ink);
   padding-left: 1.3rem; border-left: 3px solid var(--accent); font-style: normal; font-weight: 400; margin: 0; }
+/* Each line is its own block (poemHTML in app.js, para_html in tools/build_pages.py).
+   A line too long for the screen wraps with a hanging indent, as printed verse does,
+   so its turnover never passes for a new line; leading spaces keep the poem's own
+   indentation. The <br> after each line only matters without this stylesheet
+   (reader modes, plain-text copies), so it is hidden here. */
+.poem-text .stanza { margin: 0 0 1.25em; }
+.poem-text .stanza:last-child { margin-bottom: 0; }
+.poem-text .ln { display: block; white-space: pre-wrap; padding-left: 1.8em; text-indent: -1.8em; }
+.poem-text .ln + br { display: none; }
+/* Prose translations (Gordon's riddles, Kennedy's Cynewulf, Chodzko, Wharton's Sappho)
+   are paragraphs in their source editions, and read as paragraphs here. */
+.poem-text.is-prose { border-left: 0; padding-left: 0; font-size: 1.12rem; line-height: 1.75;
+  text-align: justify; hyphens: auto; }
+.poem-text.is-prose p { margin: 0 0 1em; }
+.poem-text.is-prose p:last-child { margin-bottom: 0; }
+.prose-note { font-family: var(--sans); font-size: .76rem; letter-spacing: .02em; color: var(--faint); margin: 1.4rem 0 0; }
+/* Optional line numbers for long poems and work sections: every fifth line, in a
+   right-hand gutter. They count the lines of this edition, not a critical edition's. */
+.ln-bar { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin: 0 0 .9rem; }
+.ln-bar .section-label { margin: 0; }
+.ln-ctl { margin-left: auto; display: flex; align-items: center; gap: .7rem; }
+.ln-note { font-family: var(--sans); font-size: .72rem; color: var(--faint); }
+.ln-toggle { font-family: var(--sans); font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-soft); background: var(--surface); border: 1px solid var(--line-strong); border-radius: 999px;
+  padding: .32rem .8rem; cursor: pointer; transition: border-color .15s, color .15s; }
+.ln-toggle:hover, .ln-toggle[aria-pressed="true"] { border-color: var(--accent-2); color: var(--accent); }
+.poem-text.numbered { padding-right: 2.6rem; }
+.poem-text.numbered .ln { position: relative; }
+.poem-text.numbered .ln[data-n]::after { content: attr(data-n); position: absolute; top: 0; right: -2.6rem; width: 2.1rem;
+  text-align: right; text-indent: 0; font-family: var(--sans); font-size: .62rem; font-weight: 600;
+  line-height: 2.22rem; /* = the poem's 1.2rem x 1.85, so the number sits on its line */ color: var(--faint); }
+/* On a phone a slightly smaller face and a narrower margin let more of each line fit;
+   the lines that still wrap get the hanging indent. Justified prose would open wide
+   gaps in so narrow a column, so prose sets ragged-right there. */
+@media (max-width: 560px) {
+  .poem-text { font-size: 1.06rem; padding-left: .9rem; }
+  .poem-text.is-prose { font-size: 1.02rem; text-align: left; }
+  .poem-text.numbered { padding-right: 2.1rem; }
+  .poem-text.numbered .ln[data-n]::after { right: -2.1rem; width: 1.8rem; line-height: 1.96rem; /* 1.06 x 1.85 */ }
+}
 .note-block { font-family: var(--serif); font-size: 1.12rem; line-height: 1.75; color: var(--ink-soft); }
 .themes { display: flex; flex-wrap: wrap; gap: .5rem; }
 .theme-tag { font-family: var(--sans); font-size: .8rem; padding: .35rem .8rem; border: 1px solid var(--line-strong);
@@ -707,8 +747,6 @@ textarea.ask-input {
 
 
 /* ============ STATIC PAGES (poem and poet pages for search engines) ============ */
-.static-page .poem-text { white-space: normal; }
-.static-page .stanza { margin: 0 0 1.25em; }
 .static-page .read-in-archive { margin-top: 2.2rem; font-family: var(--sans); font-size: .78rem;
   letter-spacing: .1em; text-transform: uppercase; }
 .static-page .read-in-archive a { color: var(--gold); text-decoration: none; font-weight: 700; }
@@ -724,9 +762,11 @@ textarea.ask-input {
 .pn:hover { border-color: var(--accent-2); color: var(--accent); }
 .pn.next { text-align: right; }
 .bio p { font-family: var(--serif); font-size: 1.1rem; line-height: 1.75; color: var(--ink-soft); margin: 0 0 1rem; max-width: 62ch; }
-.poet-poems { font-family: var(--serif); font-size: 1.08rem; line-height: 1.9; padding-left: 1.5rem; }
-.poet-poems a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line-strong); }
-.poet-poems a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+/* Scoped to the static pages: the app's poet page uses .poet-poems for its own sections. */
+.static-page ol.poet-poems { font-family: var(--serif); font-size: 1.08rem; line-height: 1.9;
+  margin: 0 0 2.2rem; padding: 0 0 0 1.5rem; border-top: 0; }
+.static-page .poet-poems a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line-strong); }
+.static-page .poet-poems a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 
 /* Poet links in the footer: plain text that crawlers can follow and readers can scan */
@@ -741,12 +781,14 @@ textarea.ask-input {
   @page { margin: 2cm; }
   body { background: #fff; }
   .site-head, .site-foot, .engine-cue, .engine, .detail-nav, .back, .themes, .pn-row,
-  .read-in-archive, .rule-ornament { display: none !important; }
+  .read-in-archive, .rule-ornament, .ln-ctl { display: none !important; }
   .detail { max-width: none; }
   .detail-title { font-size: 22pt; }
   .detail-author a, .detail-subject a { color: inherit; }
   .poem-text { border: 0; padding: 0; font-size: 11.5pt; line-height: 1.5; color: #000; }
   .stanza { break-inside: avoid; }
+  .poem-text.is-prose { font-size: 11pt; line-height: 1.5; }
+  .poem-text.numbered .ln[data-n]::after { line-height: 17.25pt; color: #555; }
   .note-block { font-size: 10.5pt; }
   .detail::after { content: "Poetry Codex \00b7  poetrycodex.com"; display: block; margin-top: 2.2rem;
     font-family: var(--sans); font-size: 8pt; letter-spacing: .08em; color: #555; }

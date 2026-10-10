@@ -73,7 +73,14 @@ sections (cantos/books/fitts).
   the home-page footer, and `404.html`. Every page carries schema.org JSON-LD
   (CreativeWork with author/translator/inLanguage/Public Domain Mark + BreadcrumbList;
   ProfilePage for poets) and an `og:image` (the poet's portrait, else `icon-512.png`).
-  Turkish & Ottoman poems with no translator get `lang="tr"` on the title and text.
+  Turkish & Ottoman poems with no translator get `lang="tr"` on the title and text (the app
+  does the same, `langAttr` in `app.js`). Poem text is one `<span class="ln">` per line inside
+  `<p class="stanza">` (hanging indent for wrapped lines, leading spaces kept); prose
+  translations (`is_prose` / `isProse`: lines over 200 characters, or hard-wrapped lines that
+  mostly start in lower case — Butler's Homer, Riley's Ovid, Gordon, Kennedy, Chodzko…) are
+  set as paragraphs with a "printed as prose" note. `app.js` and `build_pages.py` must keep
+  the same rules. The app also offers a "Line numbers" switch on poems over 40 lines and on
+  verse work sections (headings and Arguments are not counted).
   `poem/`, `poet/`, `work/` and `404.html` are generated — never edit them by hand. Run it
   after `build_index.py` on every content change.
 - `robots.txt` — allows everything and points to the sitemap. `CNAME` — `poetrycodex.com`.

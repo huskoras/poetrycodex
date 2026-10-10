@@ -57,13 +57,74 @@ def esc(s):
     return html.escape(s or "", quote=True)
 
 
-def para_html(text):
-    """Keep line and stanza breaks: stanzas become paragraphs, lines become <br>."""
-    stanzas = [s for s in (text or "").split("\n\n") if s.strip()]
+def trimmed_lines(text):
+    return [line.strip() for line in (text or "").split("\n") if line.strip()]
+
+
+def is_prose(text, translator):
+    """Prose translations, printed as prose in their source editions. Either one paragraph
+    per line (Gordon's riddles, Kennedy's Cynewulf, Chodzko, Wharton's Sappho: most of the
+    text in lines over 200 characters) or hard-wrapped at about 70 characters (Butler's
+    Homer, Riley's Ovid, Southey's Cid, Evelyn-White's Hymns, Weston's Gawain: most lines
+    start in lower case, which verse of this period almost never does; Gummere's Beowulf
+    does too, but its lines are short). Same rule as isProse in app.js."""
+    if not (translator or "").strip():
+        return False
+    lines = trimmed_lines(text)
+    total = sum(len(line) for line in lines)
+    if not total:
+        return False
+    if sum(len(line) for line in lines if len(line) > 200) / total >= 0.5:
+        return True
+    if len(lines) < 2:
+        return False
+    lengths = sorted(len(line) for line in lines)
+    lower = sum(1 for line in lines if re.match(r"[a-z]", line)) / len(lines)
+    return lower >= 0.5 and lengths[len(lines) // 2] >= 55
+
+
+def prose_paras(text):
+    """Hard-wrapped lines joined back into paragraphs, as proseHTML in app.js does: a line
+    well short of the text's usual width (or a one-line paragraph over 200 characters)
+    ends a paragraph."""
+    lengths = sorted(len(line) for line in trimmed_lines(text))
+    width = lengths[int(len(lengths) * 0.9)] if lengths else 0
+    paras = []
+    for stanza in re.split(r"\n\s*\n", text or ""):
+        cur = []
+        for line in trimmed_lines(stanza):
+            cur.append(line)
+            if len(line) > 200 or len(line) < width - 15:
+                paras.append(" ".join(cur))
+                cur = []
+        if cur:
+            paras.append(" ".join(cur))
+    return paras
+
+
+def para_html(text, prose=False):
+    """Stanzas become paragraphs and each line its own block, as poemHTML in app.js does:
+    styles.css gives a wrapped line a hanging indent, and leading spaces keep the poem's
+    indentation. The <br> after each line is hidden by the stylesheet but keeps lines apart
+    in reader modes and plain-text copies. Prose translations are plain paragraphs."""
+    if prose:
+        return "\n".join("<p>" + esc(p) + "</p>" for p in prose_paras(text))
+    stanzas = [s for s in re.split(r"\n\s*\n", text or "") if s.strip()]
     return "\n".join(
-        '<p class="stanza">' + "<br>\n".join(esc(line) for line in s.split("\n")) + "</p>"
+        '<p class="stanza">' + "".join(
+            '<span class="ln">' + esc(line.rstrip()) + "</span><br>"
+            for line in s.split("\n") if line.strip()) + "</p>"
         for s in stanzas
     )
+
+
+def text_block(text, translator, lang_attr=""):
+    """The poem's text, plus a short note under a prose translation."""
+    prose = is_prose(text, translator)
+    note = ('\n      <p class="prose-note">This translation is printed as prose in its source edition.</p>'
+            if prose else "")
+    return (f'<div class="poem-text{" is-prose" if prose else ""}"{lang_attr}>\n'
+            f'{para_html(text, prose)}\n      </div>{note}')
 
 
 def source_line(p):
@@ -219,9 +280,7 @@ def poem_page(poet, poems, n, p):
       {source_line(p)}
       {('<div class="themes">' + themes + '</div>') if themes else ''}
       <hr class="rule">
-      <div class="poem-text"{lang_attr}>
-{para_html(p["text"])}
-      </div>
+      {text_block(p["text"], p.get("translator"), lang_attr)}
       {('<div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">' + esc(note) + '</p>') if note else ''}
       <p class="read-in-archive"><a href="/#/poem/{slug}/{n}">Read this poem with the Codex →</a></p>
       <nav class="pn-row">{prev_link}{next_link}</nav>
@@ -355,9 +414,7 @@ def section_page(w, poet, grouped, i):
       <p class="detail-author">by <a href="/poet/{w["authorSlug"]}/">{esc(w["author"])}</a></p>
       {source_line(w)}
       <hr class="rule">
-      <div class="poem-text">
-{para_html(s.get("text"))}
-      </div>
+      {text_block(s.get("text"), w.get("translator"))}
       <p class="read-in-archive"><a href="/#/work/{slug}/{i}">Read this with the Codex →</a></p>
       <nav class="pn-row">{prev_link}{next_link}</nav>
     </article>"""

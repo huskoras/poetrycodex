@@ -65,6 +65,104 @@
     const parts = [translator && translatedBy(translator), collection && "From " + collection].filter(Boolean);
     return parts.length ? `<p class="detail-source">${parts.map(esc).join(" · ")}</p>` : "";
   }
+  // Turkish & Ottoman poems with no translator are in Turkish (screen readers, hyphenation);
+  // the page around them stays English. Same rule as text_lang in tools/build_pages.py.
+  const langAttr = (authorSlug, translator) =>
+    POETS[authorSlug] && POETS[authorSlug].category === "Turkish & Ottoman" && !String(translator || "").trim()
+      ? ' lang="tr"' : "";
+
+  // ---------- poem text ----------
+  // Prose translations are printed as prose in their source editions, in two shapes:
+  // one paragraph per line (Gordon's riddles, Kennedy's Cynewulf, Chodzko's Köroğlu,
+  // Wharton's Sappho: most of the text in lines over 200 characters), or hard-wrapped at
+  // about 70 characters (Butler's Homer, Riley's Ovid, Southey's Cid, Evelyn-White's
+  // Hymns, Weston's Gawain: most lines start in lower case, which verse of this period
+  // almost never does). Measured in October 2026 the two groups separate cleanly from
+  // every verse text; Gummere's Beowulf starts lines in lower case but its lines are short.
+  // Same rule as is_prose in tools/build_pages.py.
+  const trimmedLines = (text) => String(text || "").split("\n").map((l) => l.trim()).filter(Boolean);
+  function isProse(text, translator) {
+    if (!String(translator || "").trim()) return false;
+    const ls = trimmedLines(text);
+    const all = ls.reduce((a, l) => a + l.length, 0);
+    if (!all) return false;
+    if (ls.reduce((a, l) => a + (l.length > 200 ? l.length : 0), 0) / all >= 0.5) return true;
+    if (ls.length < 2) return false;
+    const lens = ls.map((l) => l.length).sort((a, b) => a - b);
+    return ls.filter((l) => /^[a-z]/.test(l)).length / ls.length >= 0.5 && lens[ls.length >> 1] >= 55;
+  }
+  const lineCount = (text) => trimmedLines(text).length;
+  // Prose: hard-wrapped lines are joined back into paragraphs. A line well short of the
+  // text's usual width (or a one-line paragraph over 200 characters) ends a paragraph.
+  function proseHTML(text) {
+    const lens = trimmedLines(text).map((l) => l.length).sort((a, b) => a - b);
+    const width = lens[Math.floor(lens.length * 0.9)] || 0;
+    const paras = [];
+    for (const st of String(text || "").split(/\n\s*\n/)) {
+      let cur = [];
+      for (const l of trimmedLines(st)) {
+        cur.push(l);
+        if (l.length > 200 || l.length < width - 15) { paras.push(cur.join(" ")); cur = []; }
+      }
+      if (cur.length) paras.push(cur.join(" "));
+    }
+    return paras.map((p) => `<p>${esc(p)}</p>`).join("");
+  }
+  // Verse: stanzas become paragraphs and each line its own block (styles.css .ln: hanging
+  // indent, leading spaces kept); every fifth line carries its number for the optional
+  // gutter. Headings are shown but not counted: a line with no lower-case letter ("12",
+  // "BOOK I.", "THE ARGUMENT.") and an Argument (a stanza opening "Argument", or the
+  // stanza after a heading that is only "THE ARGUMENT."), as editions number them.
+  // The <br> is hidden by the stylesheet; it keeps lines apart in reader modes.
+  // Mirrors para_html in tools/build_pages.py (which does not number).
+  const ARGUMENT = /^(the\s+)?argument\b/i;
+  function poemHTML(text, prose) {
+    if (prose) return proseHTML(text);
+    const stanzas = String(text || "").split(/\n\s*\n/).filter((s) => s.trim());
+    let n = 0, skipNext = false;
+    return stanzas.map((st) => {
+      const ls = st.split("\n").filter((l) => l.trim());
+      const first = ls[0].trim();
+      const argument = skipNext || ARGUMENT.test(first);
+      skipNext = ARGUMENT.test(first) && ls.length === 1;
+      return `<p class="stanza">${ls.map((l) => {
+        const counted = !argument && /\p{Ll}/u.test(l) && ++n % 5 === 0;
+        return `<span class="ln"${counted ? ` data-n="${n}"` : ""}>${esc(l.replace(/\s+$/, ""))}</span><br>`;
+      }).join("")}</p>`;
+    }).join("");
+  }
+  // Long poems (over 40 lines) and every verse work section get a line-number switch;
+  // the reader's choice is remembered in this browser.
+  const LN_KEY = "pc-line-numbers";
+  function lineNumbersOn() {
+    try { return localStorage.getItem(LN_KEY) === "1"; } catch (e) { return false; }
+  }
+  // The text block with its label row. o: {label, translator, lang, work}
+  function poemBlock(text, o) {
+    const prose = isProse(text, o.translator);
+    const numberable = !prose && (o.work || lineCount(text) > 40);
+    const on = numberable && lineNumbersOn();
+    const label = o.label ? `<p class="section-label">${o.label}</p>` : "";
+    const head = numberable ? `
+      <div class="ln-bar">${label}
+        <span class="ln-ctl"><span class="ln-note"${on ? "" : " hidden"}>Numbered as printed in this edition</span>
+        <button class="ln-toggle" type="button" aria-pressed="${on}">Line numbers</button></span>
+      </div>` : label;
+    return `${head}
+      <div class="poem-text${prose ? " is-prose" : ""}${on ? " numbered" : ""}"${o.lang || ""}>${poemHTML(text, prose)}</div>
+      ${prose ? `<p class="prose-note">This translation is printed as prose in its source edition.</p>` : ""}`;
+  }
+  function bindLineNumbers() {
+    const btn = app.querySelector(".ln-toggle");
+    if (!btn) return;
+    btn.addEventListener("click", () => {
+      const on = btn.getAttribute("aria-pressed") !== "true";
+      btn.setAttribute("aria-pressed", String(on));
+      app.querySelector(".poem-text").classList.toggle("numbered", on);
+      app.querySelector(".ln-note").hidden = !on;
+      try { localStorage.setItem(LN_KEY, on ? "1" : "0"); } catch (e) { /* private window: not remembered */ }
+    });
+  }
 
   // ---------- era/category taxonomy ----------
   // Umbrella categories applied to every poet's `category` field (see data/poets/<slug>.json).
@@ -215,9 +313,9 @@
   const cardHTML = (p) => `
     <button class="card" data-id="${esc(p.id)}">
       <div class="card-subject">${esc(p.primarySubject)}</div>
-      <h2 class="card-title">${esc(p.title)}</h2>
+      <h2 class="card-title"${langAttr(p.authorSlug, p.translator)}>${esc(p.title)}</h2>
       <div class="card-author">${esc(p.author)}</div>
-      <p class="card-excerpt">${esc(p.excerpt)}</p>
+      <p class="card-excerpt"${langAttr(p.authorSlug, p.translator)}>${esc(p.excerpt)}</p>
     </button>`;
   function bindCards() {
     app.querySelectorAll(".card[data-id]").forEach((c) =>
@@ -426,7 +524,7 @@
           <h2>Poems · ${poems.length}</h2>
           <ul class="poem-links">
             ${poems.map((p) => `
-              <li><a href="#/poem/${esc(p.id)}"><span class="pl-title">${esc(p.title)}</span><span class="pl-sub">${esc(p.primarySubject)}</span></a></li>`).join("")}
+              <li><a href="#/poem/${esc(p.id)}"><span class="pl-title"${langAttr(p.authorSlug, p.translator)}>${esc(p.title)}</span><span class="pl-sub">${esc(p.primarySubject)}</span></a></li>`).join("")}
           </ul>
         </section>
       </article>`;
@@ -478,7 +576,7 @@
         ${sourceLine(w.translator)}
         <hr class="rule">
         ${enginePanel(s.text, { gloss: true })}
-        <blockquote class="poem-text">${esc(s.text)}</blockquote>
+        ${poemBlock(s.text, { translator: w.translator, lang: langAttr(w.authorSlug, w.translator), work: true })}
         <div class="detail-nav">
           <button ${i === 0 ? "disabled" : ""} data-go="${i - 1}"><span class="dir">← Previous</span>${i > 0 ? esc(w.sections[i - 1].title) : ""}</button>
           <button class="next" ${i === w.sections.length - 1 ? "disabled" : ""} data-go="${i + 1}"><span class="dir">Next →</span>${i < w.sections.length - 1 ? esc(w.sections[i + 1].title) : ""}</button>
@@ -487,6 +585,7 @@
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/work/" + slug; });
     bindEngine({ title: w.title + " \u00b7 " + s.title, author: w.author, text: s.text,
                  id: "work:" + slug + "/" + i });
+    bindLineNumbers();
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/work/" + slug + "/" + b.dataset.go; }));
   }
 
@@ -1076,18 +1175,18 @@
     const poems = poetFile.poems;
     const themes = p.subjects.length
       ? `<div class="themes">${p.subjects.map((s) => `<span class="theme-tag" data-sub="${esc(s)}">${esc(s)}</span>`).join("")}</div>` : "";
+    const lang = langAttr(p.authorSlug, p.translator);
     app.innerHTML = `
       <article class="detail">
         <button class="back" id="back">← The Archive</button>
         <div class="detail-subject">${esc(p.primarySubject)}</div>
-        <h1 class="detail-title">${esc(p.title)}</h1>
+        <h1 class="detail-title"${lang}>${esc(p.title)}</h1>
         <p class="detail-author">by <a href="#/poet/${esc(p.authorSlug)}">${esc(p.author)}</a></p>
         ${sourceLine(p.translator, p.collection)}
         ${themes}
         <hr class="rule">
         ${enginePanel(p.text, { compare: true, gloss: true })}
-        <p class="section-label">The Poem</p>
-        <blockquote class="poem-text">${esc(p.text)}</blockquote>
+        ${poemBlock(p.text, { label: "The Poem", translator: p.translator, lang })}
         ${p.note ? `<div class="rule-ornament">✦ ✦ ✦</div>
         <p class="section-label">Codex Note</p>
         <p class="note-block">${esc(p.note)}</p>` : ""}
@@ -1105,5 +1204,6 @@
     }));
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/poem/" + slug + "/" + b.dataset.go; }));
     bindEngine({ title: p.title, author: p.author, text: p.text, id: p.id });
+    bindLineNumbers();
   }
 })();
