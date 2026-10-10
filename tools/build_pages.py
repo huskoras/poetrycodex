@@ -67,7 +67,7 @@ def shell(title, description, canonical, body, og_type="article"):
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   {FONTS}
-  <link rel="stylesheet" href="/styles.css?v=29" />
+  <link rel="stylesheet" href="/styles.css?v=30" />
 </head>
 <body>
   <header class="site-head">
@@ -171,6 +171,7 @@ def main():
     for d in ("poem", "poet"):
         shutil.rmtree(os.path.join(ROOT, d), ignore_errors=True)
 
+    POET_ROWS = []
     # Only the home page and the generated pages are listed: hash routes are not crawlable.
     urls = [f"{SITE}/"]
     poem_count = poet_count = 0
@@ -189,6 +190,7 @@ def main():
             "slug": slug, "name": poet_stub["name"], "dates": poet_stub.get("dates"),
             "category": poet_stub.get("category"), "bio": poet_stub.get("bio") or [],
         }
+        POET_ROWS.append({"slug": slug, "name": poet["name"]})
         write(os.path.join(ROOT, "poet", slug, "index.html"),
               poet_page(poet, len(poems), poems))
         urls.append(f"{SITE}/poet/{slug}/")
@@ -220,11 +222,28 @@ def main():
         index.append("  <sitemap><loc>" + SITE + "/sitemap-" + str(n) + ".xml</loc><lastmod>" + TODAY + "</lastmod></sitemap>")
     index.append("</sitemapindex>")
     write(os.path.join(ROOT, "sitemap.xml"), NL.join(index) + NL)
+    fill_home_poet_links(POET_ROWS)
     print("sitemap index: " + str(len(chunks)) + " child sitemaps")
 
     print(f"poet pages: {poet_count}")
     print(f"poem pages: {poem_count}")
     print(f"sitemap urls: {len(urls)}")
+
+
+def fill_home_poet_links(poets):
+    """Rewrite the poet-link block in index.html so crawlers can reach every poet."""
+    path = os.path.join(ROOT, "index.html")
+    text = io.open(path, encoding="utf-8").read()
+    start_m = "<!-- POET-LINKS:START -->"
+    end_m = "<!-- POET-LINKS:END -->"
+    a = text.index(start_m) + len(start_m)
+    b = text.index(end_m)
+    links = " · ".join(
+        '<a href="/poet/' + p["slug"] + '/">' + esc(p["name"]) + "</a>" for p in poets
+    )
+    text = text[:a] + links + text[b:]
+    io.open(path, "w", encoding="utf-8", newline="\n").write(text)
+    print("home page: " + str(len(poets)) + " poet links")
 
 
 if __name__ == "__main__":
