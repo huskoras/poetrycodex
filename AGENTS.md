@@ -65,10 +65,17 @@ sections (cantos/books/fitts).
   appears in `CATEGORY_ORDER` in `app.js` (so a poet can't silently vanish from the home
   page). Run it after `build_index.py` on every content change; it exits non-zero on error.
 - `tools/build_pages.py` — generates the **static HTML pages search engines index**:
-  `poem/<slug>/<n>/index.html` (full text + canonical URL), `poet/<slug>/index.html`,
-  the sitemap index `sitemap.xml` + `sitemap-1..13.xml`, the plain poet-link list in
-  the home-page footer, and `404.html`. `poem/`, `poet/` and `404.html` are generated — never edit them by hand. Run it
-  after `build_index.py` on every content change (works-only poets get no poem pages).
+  `poem/<slug>/<n>/index.html` (full text + canonical URL), `poet/<slug>/index.html`
+  (every poet, including works-only poets, with their Major Works), `work/<slug>/index.html`
+  (a long work's contents) and `work/<slug>/<i>/index.html` (one book/canto/part in full),
+  the sitemap index `sitemap.xml` + `sitemap-1..N.xml` (no `<lastmod>`: a date stamped
+  "today" on every build is one Google learns to ignore), the plain poet-link list in
+  the home-page footer, and `404.html`. Every page carries schema.org JSON-LD
+  (CreativeWork with author/translator/inLanguage/Public Domain Mark + BreadcrumbList;
+  ProfilePage for poets) and an `og:image` (the poet's portrait, else `icon-512.png`).
+  Turkish & Ottoman poems with no translator get `lang="tr"` on the title and text.
+  `poem/`, `poet/`, `work/` and `404.html` are generated — never edit them by hand. Run it
+  after `build_index.py` on every content change.
 - `robots.txt` — allows everything and points to the sitemap. `CNAME` — `poetrycodex.com`.
 - `poets/*.jpg` — portrait/illustration images (unrelated to `data/poets/`; note the
   singular/plural difference — this is the images folder, `data/poets/` is poem data).
@@ -384,9 +391,9 @@ python dev_server.py                       # local preview at :8777
 python tools/build_index.py                # regenerates data/index.json
 python tools/build_search_index.py         # regenerates data/search.json (Oracle lookup)
 python tools/verify_split.py               # must print ALL CHECKS PASSED
-python tools/build_pages.py                # regenerates poem/, poet/, sitemap*.xml, footer links
+python tools/build_pages.py                # regenerates poem/, poet/, work/, sitemap*.xml, 404.html, footer links
 python tools/shrink_portraits.py           # only if new poets/*.jpg portraits were added
-git add data/poets/<slug>.json data/index.json data/search.json poem poet sitemap*.xml index.html
+git add data/poets/<slug>.json data/index.json data/search.json poem poet work sitemap*.xml 404.html index.html
 git commit -m "Add X"
 git push                                   # this deploys
 ```
