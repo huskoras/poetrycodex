@@ -2,8 +2,14 @@
   "use strict";
   const app = document.getElementById("app");
   let DATA = null;
-  let query = "";
+  let query = "";            // the search as typed (folded only when matching)
   let filterSubject = "All";
+  // Long card lists are drawn PAGE cards at a time: the whole archive at once is
+  // 60,000 elements, slow on a cheap phone. "Show more" adds the next PAGE.
+  const PAGE = 60;
+  let shown = PAGE;
+  let SORTED = [];           // every poem, by title (built once the index arrives)
+  const COLLATE = new Intl.Collator("en");
   let POETS = {};      // slug -> poet (index-level: metadata + counts, no full poems)
   let WORKS = {};      // slug -> work (index-level: metadata + section titles/stanzas, no text)
   let CATEGORY_STATS = {}; // category name -> { poems, works }
@@ -54,6 +60,27 @@
 
   const esc = (s) => String(s == null ? "" : s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+  // ---------- search folding ----------
+  // Search ignores case, accents, apostrophes and the Turkish dotted and dotless i, and
+  // spells out the old letters, so "hasim" finds Haşim, "caedmon" Cædmon, "isik" IŞIK and
+  // "maarri" al-Ma'arri. The query and what it is matched against both pass through here.
+  const FOLD_LETTERS = { "æ": "ae", "œ": "oe", "þ": "th", "ð": "d", "ø": "o", "ł": "l",
+                         "ß": "ss", "ſ": "s", "ı": "i", "đ": "d", "ƿ": "w" };
+  const fold = (s) => String(s || "").toLocaleLowerCase("tr").normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[æœþðøłßſıđƿ]/g, (c) => FOLD_LETTERS[c])
+    .replace(/['‘’ʼʾʿ`]/g, "")
+    .replace(/\s+/g, " ");
+  // A search is its words: each must appear somewhere, in any order ("keats ode").
+  const searchWords = (q) => fold(q).split(" ").filter(Boolean);
+  const hasAll = (hay, words) => words.every((w) => hay.includes(w));
+
+  // ---------- tab title ----------
+  // Each page names itself in the browser tab, history and bookmarks, in the same form
+  // as the static pages ("Ode on a Grecian Urn — John Keats · Poetry Codex").
+  const SITE_TITLE = document.title;
+  const setTitle = (t) => { document.title = t ? t + " · Poetry Codex" : SITE_TITLE; };
 
   // ---------- attribution ----------
   // The data stores translators as "trans. Name (year)". Pages spell that out;
@@ -220,6 +247,9 @@
         s.poems += p.poemCount || 0;
         s.works += p.workCount || 0;
       });
+      // Sorted by title once; every list filters this and so keeps the order.
+      d.poems.forEach((p) => { p._sk = sortKey(p.title); });
+      SORTED = d.poems.slice().sort((a, b) => COLLATE.compare(a._sk, b._sk));
       const fc = document.getElementById("foot-count"); if (fc) fc.textContent = d.count;
       const fp = document.getElementById("foot-poets"); if (fp) fp.textContent = d.poets.length;
       wireSearch();
@@ -230,23 +260,41 @@
     });
 
   // ---------- global search ----------
+  // Typing redraws the list 150 ms after the last key, not on every key. Typing anywhere
+  // but the archive goes to it; the top bar's box takes over at once, so the reader can
+  // keep typing even though the box they started in (home page, Eras page) goes away.
+  let searchTimer = 0;
+  const onArchive = () => /^#\/poems(\?|$)/.test(location.hash);
+  function freshList() { shown = PAGE; renderList(); jumpTo(0); saveView(); }
   function wireSearch() {
     document.querySelectorAll("input.search-input").forEach((input) => {
       input.value = query;
       if (input.dataset.wired) return;          // safe to call again after a render
       input.dataset.wired = "1";
       input.addEventListener("input", (e) => {
-        query = e.target.value.trim().toLowerCase();
+        query = e.target.value.trim();
         if (query) filterSubject = "All";
         syncSearchInput();
-        if (/^#\/(?!poems)/.test(location.hash) && location.hash !== "#/poems") location.hash = "#/poems";
-        else renderList();
+        clearTimeout(searchTimer);
+        if (onArchive()) { searchTimer = setTimeout(freshList, 150); return; }
+        const bar = document.querySelector(".tb-search input");
+        if (bar && bar !== input) {
+          setRoute("poems", "sub");             // shows the top bar before the hash changes
+          bar.value = e.target.value;
+          bar.focus();
+          bar.setSelectionRange(bar.value.length, bar.value.length);
+        }
+        location.hash = "#/poems";
       });
     });
     document.querySelectorAll("form.search-form").forEach((form) => {
       if (form.dataset.wired) return;
       form.dataset.wired = "1";
-      form.addEventListener("submit", (e) => { e.preventDefault(); if (location.hash !== "#/poems") location.hash = "#/poems"; else renderList(); });
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        clearTimeout(searchTimer);
+        if (!onArchive()) location.hash = "#/poems"; else freshList();
+      });
     });
   }
   function syncSearchInput() {
@@ -255,11 +303,49 @@
     });
   }
 
+  // ---------- coming back to where you were ----------
+  // Each history entry remembers its scroll position and, on card lists, how many cards
+  // were showing and what was searched, so Back from a poem lands on the card the reader
+  // left. A new visit to a page starts at the top. The browser's own restoration is off:
+  // it would scroll before the page is drawn.
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  let viewTimer = 0;
+  let restoreY = 0;          // poems and work sections load first; they scroll once drawn
+  function saveView() {
+    clearTimeout(viewTimer);
+    if (!DATA) return;
+    try {
+      history.replaceState(Object.assign({}, history.state,
+        { y: Math.round(window.scrollY), shown, query, filterSubject }), "");
+    } catch (e) { /* too many saves in a row (Safari limits them): the next one will do */ }
+  }
+  window.addEventListener("scroll", () => {
+    clearTimeout(viewTimer); viewTimer = setTimeout(saveView, 250);
+  }, { passive: true });
+  // Leaving by a link or button: save first, before the next page replaces this one.
+  document.addEventListener("click", (e) => { if (e.target.closest("a, button")) saveView(); }, true);
+  // The stylesheet scrolls smoothly (for in-page jumps); a new page should simply be there.
+  function jumpTo(y) {
+    const root = document.documentElement;
+    root.style.scrollBehavior = "auto";
+    void root.offsetHeight;   // apply it before scrolling, or Chrome still glides
+    window.scrollTo(0, y);
+    root.style.scrollBehavior = "";
+  }
+  function restoreScroll() { if (restoreY) jumpTo(restoreY); restoreY = 0; }
+
   // ---------- routing ----------
   window.addEventListener("hashchange", route);
   function route() {
     if (!DATA) return;
     const h = location.hash || "#/";
+    // Back/Forward bring back the entry's saved view; anything else is a fresh visit.
+    const st = history.state && typeof history.state.y === "number" ? history.state : null;
+    shown = st && st.shown > PAGE ? st.shown : PAGE;
+    if (st && /^#\/poems(\?|$)/.test(h)) {
+      query = st.query || "";
+      filterSubject = st.filterSubject || "All";
+    }
     let m;
     if ((m = h.match(/^#\/poem\/(\d+)$/))) {
       // Legacy link: #/poem/<arrayIndex> from the old single-poems.json array.
@@ -284,7 +370,7 @@
       // "#/poems?q=keats" (the 404 page's search box) opens the archive already searched.
       const q = h.match(/[?&]q=([^&]*)/);
       if (q) {
-        try { query = decodeURIComponent(q[1].replace(/\+/g, " ")).trim().toLowerCase(); } catch (e) { query = ""; }
+        try { query = decodeURIComponent(q[1].replace(/\+/g, " ")).trim(); } catch (e) { query = ""; }
         filterSubject = "All";
         history.replaceState(null, "", "#/poems");
       }
@@ -292,7 +378,8 @@
     }
     else { setRoute("poems", "home"); renderHome(); }
     syncSearchInput();
-    window.scrollTo(0, 0);
+    jumpTo(st ? st.y : 0);
+    restoreY = st ? st.y : 0;
   }
   function setRoute(navKey, mode) {
     document.body.dataset.route = mode;   // "home" shows hero; anything else hides it
@@ -300,37 +387,64 @@
   }
 
   // ---------- helpers ----------
-  function matches(p) {
+  // words: searchWords(query). Full poem text is not in the index (that's the whole
+  // point of the split), so search covers title, poet, translator, the opening lines
+  // and subjects; the folded text is built the first time a poem is searched.
+  function matches(p, words) {
     if (filterSubject !== "All" && p.primarySubject !== filterSubject) return false;
-    if (query) {
-      // Full poem text is no longer in the index (that's the whole point of the
-      // split), so search matches title + author + excerpt + subjects only.
-      const hay = (p.title + " " + p.author + " " + p.excerpt + " " + p.subjects.join(" ")).toLowerCase();
-      if (!hay.includes(query)) return false;
+    if (!words.length) return true;
+    if (p._hay === undefined) {
+      p._hay = fold([p.title, p.author, p.translator, p.excerpt, p.subjects.join(" ")].join(" "));
     }
-    return true;
+    return hasAll(p._hay, words);
   }
+  // Cards are links, so they open in a new tab and can be followed by search engines.
   const cardHTML = (p) => `
-    <button class="card" data-id="${esc(p.id)}">
+    <a class="card" href="#/poem/${esc(p.id)}">
       <div class="card-subject">${esc(p.primarySubject)}</div>
       <h2 class="card-title"${langAttr(p.authorSlug, p.translator)}>${esc(p.title)}</h2>
       <div class="card-author">${esc(p.author)}</div>
       <p class="card-excerpt"${langAttr(p.authorSlug, p.translator)}>${esc(p.excerpt)}</p>
-    </button>`;
-  function bindCards() {
-    app.querySelectorAll(".card[data-id]").forEach((c) =>
-      c.addEventListener("click", () => { location.hash = "#/poem/" + c.dataset.id; }));
+    </a>`;
+
+  // The first `shown` poems, and a "Show more" button for the rest.
+  function pagedCards(poems) {
+    return poems.slice(0, shown).map(cardHTML).join("");
+  }
+  function moreHTML(total) {
+    const left = total - shown;
+    return left > 0 ? `<div class="more-row"><button class="more-btn" type="button">Show ${Math.min(PAGE, left)} more<span class="more-left"> · ${left} left</span></button></div>` : "";
+  }
+  // Adds the next PAGE cards in place (no redraw, so the page does not move) and hands
+  // keyboard focus to the first of them.
+  function bindMore(poems) {
+    const btn = app.querySelector(".more-btn");
+    if (!btn) return;
+    const grid = app.querySelector(".grid");
+    btn.addEventListener("click", () => {
+      const last = grid.lastElementChild;
+      const from = shown;
+      shown += PAGE;
+      grid.insertAdjacentHTML("beforeend", poems.slice(from, shown).map(cardHTML).join(""));
+      const row = btn.parentNode;
+      if (poems.length > shown) row.outerHTML = moreHTML(poems.length);
+      else row.remove();
+      bindMore(poems);
+      const first = last ? last.nextElementSibling : grid.firstElementChild;
+      if (first) first.focus({ preventScroll: true });
+      saveView();
+    });
   }
 
   // ---------- POEMS ----------
   const workCardHTML = (w) => `
-    <button class="card work-card" data-work="${esc(w.slug)}">
+    <a class="card work-card" href="#/work/${esc(w.slug)}">
       <div class="card-subject">${esc(w.type)} · ${esc(w.year)}</div>
       <h2 class="card-title">${esc(w.title)}</h2>
       <div class="card-author">${esc(w.author)}${w.translator ? " · " + esc(translatorShort(w.translator)) : ""}</div>
       <p class="card-excerpt">${esc(w.blurb || (w.sections.length + " cantos"))}</p>
       <span class="work-flag">Read in ${w.sections.length} parts →</span>
-    </button>`;
+    </a>`;
 
   // ---------- HOME: browse by era ----------
   // The era grid, shared by the home page and #/eras.
@@ -339,25 +453,26 @@
     const tiles = CATEGORY_ORDER.map((cat) => {
       const stats = CATEGORY_STATS[cat] || { poems: 0, works: 0 };
       return `
-        <button class="topic-card" data-category="${esc(CATEGORY_SLUGS[cat])}">
+        <a class="topic-card" href="#/category/${esc(CATEGORY_SLUGS[cat])}">
           <p class="tc-name">${esc(cat)}</p>
           <p class="tc-count">${[
             stats.poems ? stats.poems + " poem" + (stats.poems === 1 ? "" : "s") : "",
             stats.works ? stats.works + " work" + (stats.works === 1 ? "" : "s") : "",
           ].filter(Boolean).join(" \u00b7 ")}</p>
-        </button>`;
+        </a>`;
     }).join("");
     return `
       <div class="topic-grid">
         ${tiles}
-        <button class="topic-card epics-tile" data-category="${EPICS_SLUG}">
+        <a class="topic-card epics-tile" href="#/category/${EPICS_SLUG}">
           <p class="tc-name">Epics</p>
           <p class="tc-count">${epicCount} work${epicCount === 1 ? "" : "s"} \u00b7 every era</p>
-        </button>
+        </a>
       </div>`;
   }
 
   function renderEras() {
+    setTitle("The Archive");
     app.innerHTML = `
       <div class="page-head archive-head">
         <h1 class="page-title">The Archive</h1>
@@ -372,16 +487,11 @@
       <p class="doors-or">Browse by era</p>
       ${eraGridHTML()}
       <div class="browse-all"><a href="#/poems" class="read-link">Or browse all ${DATA.count} poems \u2192</a></div>`;
-    bindEraTiles();
     wireSearch();
   }
 
-  function bindEraTiles() {
-    app.querySelectorAll(".topic-card").forEach((c) =>
-      c.addEventListener("click", () => { location.hash = "#/category/" + c.dataset.category; }));
-  }
-
   function renderHome() {
+    setTitle("");
     // Two doors under one roof: the collection, and the way of asking about it.
     // The Oracle keeps its place even while it sleeps, so the shape of the site
     // does not change when it wakes.
@@ -406,7 +516,6 @@
       <p class="doors-or">Or go straight to an era</p>
       ${eraGridHTML()}
       <div class="browse-all"><a href="#/poems" class="read-link">Browse all ${DATA.count} poems \u2192</a></div>`;
-    bindEraTiles();
   }
 
   // ---------- CATEGORY: filtered era (or cross-cutting "epics") view ----------
@@ -420,47 +529,52 @@
       : (DATA.works || []).filter((w) => POETS[w.authorSlug] && POETS[w.authorSlug].category === catName);
     const poems = isEpics
       ? []
-      : DATA.poems.filter((p) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
-    poems.sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title)));
+      : SORTED.filter((p) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
 
     const sub = isEpics
       ? `${works.length} epic work${works.length === 1 ? "" : "s"}, spanning every era in the archive.`
       : `${poems.length} poem${poems.length === 1 ? "" : "s"}${works.length ? " · " + works.length + " work" + (works.length === 1 ? "" : "s") : ""}.`;
 
+    setTitle(isEpics ? "Epics" : catName + " poetry");
     app.innerHTML = `
       <button class="back" id="back">← Browse by Era</button>
       <div class="page-head"><h1 class="page-title">${esc(catName)}</h1><p class="page-sub">${sub}</p></div>
       <div class="grid">
         ${works.map(workCardHTML).join("")}
-        ${poems.map(cardHTML).join("")}
+        ${pagedCards(poems)}
         ${!works.length && !poems.length ? `<p class="empty">Nothing filed here yet.</p>` : ""}
-      </div>`;
+      </div>
+      ${moreHTML(poems.length)}`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/"; });
-    app.querySelectorAll(".work-card").forEach((c) => c.addEventListener("click", () => { location.hash = "#/work/" + c.dataset.work; }));
-    bindCards();
+    bindMore(poems);
   }
 
   const sortKey = (s) => s.toLowerCase().replace(/^["'“‘]*(a|an|the)\s+/, "").replace(/^[^a-z0-9]+/, "").trim();
   function renderList() {
-    const results = DATA.poems.filter(matches);
-    results.sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title)));
-    const works = (DATA.works || []).filter((w) => filterSubject === "All" && (!query || (w.title + " " + w.author).toLowerCase().includes(query)));
+    const words = searchWords(query);
+    const results = SORTED.filter((p) => matches(p, words));
+    const works = filterSubject !== "All" ? [] : (DATA.works || []).filter((w) => {
+      if (!words.length) return true;
+      if (w._hay === undefined) w._hay = fold([w.title, w.author, w.translator].join(" "));
+      return hasAll(w._hay, words);
+    });
     let banner = "";
     if (query) banner = `<div class="filter-banner"><span class="lbl">Search</span> <span class="val">“${esc(query)}”</span><button data-clear="1">Clear ✕</button></div>`;
     const chips = [`<button class="chip ${filterSubject === "All" ? "active" : ""}" data-sub="All">All<span class="n">${DATA.count}</span></button>`]
       .concat(DATA.subjects.map((s) => `<button class="chip ${filterSubject === s.name ? "active" : ""}" data-sub="${esc(s.name)}">${esc(s.name)}<span class="n">${s.count}</span></button>`)).join("");
 
+    setTitle(query ? `\u201c${query}\u201d \u2014 Search` : filterSubject !== "All" ? `Poems on ${filterSubject}` : "All poems");
     app.innerHTML = `
       ${banner}
       ${query ? "" : `<div class="chips">${chips}</div>`}
       <p class="result-meta">${results.length} poem${results.length === 1 ? "" : "s"}${works.length ? " · " + works.length + " work" + (works.length === 1 ? "" : "s") : ""}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}</p>
-      <div class="grid">${works.map(workCardHTML).join("")}${results.length || works.length ? results.map(cardHTML).join("") : `<p class="empty">No poems match.</p>`}</div>`;
+      <div class="grid">${works.map(workCardHTML).join("")}${results.length || works.length ? pagedCards(results) : `<p class="empty">No poems match.</p>`}</div>
+      ${moreHTML(results.length)}`;
 
-    app.querySelectorAll(".chip").forEach((c) => c.addEventListener("click", () => { filterSubject = c.dataset.sub; query = ""; syncSearchInput(); renderList(); }));
+    app.querySelectorAll(".chip").forEach((c) => c.addEventListener("click", () => { filterSubject = c.dataset.sub; query = ""; syncSearchInput(); freshList(); }));
     const clr = app.querySelector("[data-clear]");
-    if (clr) clr.addEventListener("click", () => { query = ""; filterSubject = "All"; syncSearchInput(); renderList(); });
-    app.querySelectorAll(".work-card").forEach((c) => c.addEventListener("click", () => { location.hash = "#/work/" + c.dataset.work; }));
-    bindCards();
+    if (clr) clr.addEventListener("click", () => { query = ""; filterSubject = "All"; syncSearchInput(); freshList(); });
+    bindMore(results);
   }
 
   // ---------- portrait fallback (monogram) ----------
@@ -472,20 +586,20 @@
 
   // ---------- POETS index ----------
   function renderPoets() {
+    setTitle("Poets");
     app.innerHTML = `
       <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">${DATA.poets.length} poets, from Homer to the early twentieth century.</p></div>
       <div class="poet-grid">
         ${DATA.poets.map((p) => `
-          <button class="poet-card" data-slug="${esc(p.slug)}">
+          <a class="poet-card" href="#/poet/${esc(p.slug)}">
             ${portraitImgHTML(p, "pc-img")}
             <div class="pc-body">
               <p class="pc-name">${esc(p.name)}</p>
               <p class="pc-dates">${esc(p.dates)}</p>
               <p class="pc-count">${p.poemCount} poem${p.poemCount === 1 ? "" : "s"}${p.workCount ? " · " + p.workCount + " work" + (p.workCount === 1 ? "" : "s") : ""}</p>
             </div>
-          </button>`).join("")}
+          </a>`).join("")}
       </div>`;
-    app.querySelectorAll(".poet-card").forEach((c) => c.addEventListener("click", () => { location.hash = "#/poet/" + c.dataset.slug; }));
   }
 
   // ---------- POET page ----------
@@ -494,6 +608,7 @@
     if (!poet) { location.hash = "#/poets"; return; }
     const poems = DATA.poems.filter((p) => p.authorSlug === slug);
     const works = (DATA.works || []).filter((w) => w.authorSlug === slug);
+    setTitle(poet.name);
     const worksHTML = works.length ? `
         <section class="poet-poems">
           <h2>Major Works</h2>
@@ -532,9 +647,16 @@
   }
 
   // ---------- WORK: table of contents ----------
+  // "The Iliad — Homer, trans. Alexander Pope" when the archive holds more than one
+  // translation of a work (as work_title in tools/build_pages.py).
+  function workTitle(w) {
+    const grouped = w.workGroup && DATA.works.some((o) => o.slug !== w.slug && o.workGroup === w.workGroup);
+    return `${w.title} — ${w.author}` + (grouped && w.translator ? ", " + translatorShort(w.translator) : "");
+  }
   function renderWork(slug) {
     const w = WORKS[slug];
     if (!w) { location.hash = "#/"; return; }
+    setTitle(workTitle(w));
     app.innerHTML = `
       <article class="detail work-toc">
         <button class="back" id="back">← ${esc(w.author)}</button>
@@ -567,6 +689,8 @@
   }
   function renderWorkSectionReady(w, slug, i) {
     const s = w.sections[i];
+    const wt = workTitle(WORKS[slug]);
+    setTitle(w.sections.length > 1 ? wt.replace(w.title, w.title + ", " + s.title) : wt);
     app.innerHTML = `
       <article class="detail">
         <button class="back" id="back">← ${esc(w.title)} · Contents</button>
@@ -587,10 +711,12 @@
                  id: "work:" + slug + "/" + i });
     bindLineNumbers();
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/work/" + slug + "/" + b.dataset.go; }));
+    restoreScroll();
   }
 
   // ---------- TOPICS ----------
   function renderTopics() {
+    setTitle("Topics");
     app.innerHTML = `
       <div class="page-head"><h1 class="page-title">Topics &amp; Themes</h1><p class="page-sub">Browse the archive by subject.</p></div>
       <div class="topic-grid">
@@ -607,6 +733,7 @@
 
   // ---------- ABOUT ----------
   function renderAbout() {
+    setTitle("About");
     app.innerHTML = `
       <article class="about">
         <img class="about-coin" src="coin-300.webp" alt="Gold medallion of Alexander the Great" />
@@ -724,6 +851,7 @@
   }
 
   function renderOracleResting() {
+    setTitle("The Oracle");
     app.innerHTML = `
       <section class="oracle">
         <header class="oracle-head">
@@ -744,6 +872,7 @@
 
   function renderOracle() {
     if (!ORACLE_LIVE) return renderOracleResting();
+    setTitle("The Oracle");
     const empty = !ORACLE_MSGS.length;
     app.innerHTML = `
       <section class="oracle">
@@ -893,7 +1022,8 @@
       id: p.id,
       label: p.title,
       author: p.author,
-      hay: (p.title + " " + p.author).toLowerCase(),
+      lab: fold(p.title),
+      hay: fold(p.title + " " + p.author),
     }));
     (DATA.works || []).forEach((w) => {
       (w.sections || []).forEach((sec, i) => {
@@ -901,7 +1031,8 @@
           id: "work:" + w.slug + "/" + i,
           label: w.title + " \u00b7 " + sec.title,
           author: w.author,
-          hay: (w.title + " " + sec.title + " " + w.author).toLowerCase(),
+          lab: fold(w.title + " · " + sec.title),
+          hay: fold(w.title + " " + sec.title + " " + w.author),
         });
       });
     });
@@ -941,15 +1072,14 @@
 
     input.addEventListener("input", () => {
       onPick(null);
-      const q = input.value.trim().toLowerCase();
+      const q = fold(input.value.trim());
       if (q.length < 3) return close();
       const scored = [];
       for (const it of askItems()) {
         if (it.id === excludeId) continue;
-        const label = it.label.toLowerCase();
         let score;
-        if (label.startsWith(q)) score = 0;
-        else if (label.includes(q)) score = 1;
+        if (it.lab.startsWith(q)) score = 0;
+        else if (it.lab.includes(q)) score = 1;
         else if (it.hay.includes(q)) score = 2;
         else continue;
         scored.push([score, it]);
@@ -1176,6 +1306,7 @@
     const themes = p.subjects.length
       ? `<div class="themes">${p.subjects.map((s) => `<span class="theme-tag" data-sub="${esc(s)}">${esc(s)}</span>`).join("")}</div>` : "";
     const lang = langAttr(p.authorSlug, p.translator);
+    setTitle(p.title + " — " + p.author);
     app.innerHTML = `
       <article class="detail">
         <button class="back" id="back">← The Archive</button>
@@ -1199,11 +1330,12 @@
     app.querySelectorAll(".theme-tag").forEach((t) => t.addEventListener("click", () => {
       const isSub = DATA.subjects.some((s) => s.name === t.dataset.sub);
       filterSubject = isSub ? t.dataset.sub : "All";
-      query = isSub ? "" : t.dataset.sub.toLowerCase();
+      query = isSub ? "" : t.dataset.sub;
       syncSearchInput(); location.hash = "#/poems";
     }));
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/poem/" + slug + "/" + b.dataset.go; }));
     bindEngine({ title: p.title, author: p.author, text: p.text, id: p.id });
     bindLineNumbers();
+    restoreScroll();
   }
 })();

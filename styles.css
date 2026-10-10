@@ -141,6 +141,19 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 .card-excerpt { font-family: var(--serif); font-size: .95rem; color: var(--ink-soft); line-height: 1.55; margin: 0;
   white-space: pre-line; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 
+/* Cards, poet cards and era tiles are links (new tab, crawlable); they keep the look
+   they had as buttons: no underline, and each line's own font and spacing. */
+a.card, a.poet-card, a.topic-card { color: inherit; text-decoration: none; line-height: normal; }
+a.poet-card, a.topic-card { display: block; }
+
+/* "Show 60 more" under a long card list */
+.more-row { display: flex; justify-content: center; margin: 2.2rem 0 .4rem; }
+.more-btn { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent); background: var(--surface); border: 1px solid var(--line-strong); border-radius: 999px;
+  padding: .75rem 1.6rem; cursor: pointer; transition: border-color .15s, color .15s; }
+.more-btn:hover { border-color: var(--accent); }
+.more-btn .more-left { color: var(--faint); font-weight: 500; letter-spacing: .06em; }
+
 /* work card in the archive grid */
 .card.work-card { background: linear-gradient(180deg, var(--surface) 0%, var(--surface-alt) 100%); border-color: var(--line-strong); }
 .card.work-card::before { background: var(--gold); transform: scaleY(1); width: 4px; }
