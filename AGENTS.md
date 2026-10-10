@@ -255,7 +255,10 @@ nowhere else — no account, nothing sent to the site. `#/shelf` lists saved tex
 notes, then notes on unsaved texts, and downloads everything as Markdown or JSON with each
 text's permanent address. Where the browser keeps no site data the shelf lasts
 for the visit and the page says so. The top bar's "Shelf" link appears once something is
-saved; the footer always has "Your shelf".
+saved; the footer always has "Your shelf". The same goes for the reading position in long works
+(`pc-reading`: the last book opened in each work and how far down it the reader got): the work's
+contents page and the poet page offer "Continue reading", which reopens the book at that place
+(or the next book, once one is finished), and "Forget my place" clears it.
 
 ---
 

@@ -325,6 +325,83 @@
     if (DATA && /^#\/shelf/.test(location.hash)) renderShelf();
   });
 
+  // ---------- where the reader is in a long work ----------
+  // The last book opened in each work and how far into it the reader had read, so the
+  // work's contents page and the poet page can offer "Continue reading". Kept in this
+  // browser only (pc-reading), like the shelf: {v, works: {slug: {i, frac, at}}}.
+  const READING_KEY = "pc-reading";
+  function readingWorks() {
+    const w = readStore(READING_KEY).works;
+    return w && typeof w === "object" && !Array.isArray(w) ? w : {};
+  }
+  // The record for a work, if its book still exists.
+  function readingOf(slug) {
+    const r = readingWorks()[slug];
+    const w = WORKS[slug];
+    return r && w && Number.isInteger(r.i) && w.sections[r.i] ? r : null;
+  }
+  function setReading(slug, i, frac) {
+    const works = readingWorks();
+    works[slug] = { i, frac: Math.round(Math.min(1, Math.max(0, frac || 0)) * 1000) / 1000, at: new Date().toISOString() };
+    writeStore(READING_KEY, { v: 1, works });
+  }
+  function forgetReading(slug) {
+    const works = readingWorks();
+    delete works[slug];
+    writeStore(READING_KEY, { v: 1, works });
+  }
+  // How far down the text the reader is: the point a third of the way down the window.
+  let READING_NOW = null;    // {slug, i, el} while a book of a work is on screen
+  let pendingResume = null;  // {slug, i, frac} set by a "Continue reading" link
+  let readingTimer = 0;
+  function readingFrac(el) {
+    const r = el.getBoundingClientRect();
+    return Math.min(1, Math.max(0, (window.innerHeight * 0.3 - r.top) / Math.max(1, r.height)));
+  }
+  function noteReading() {
+    const n = READING_NOW;
+    if (n && n.el.isConnected) setReading(n.slug, n.i, readingFrac(n.el));
+  }
+  window.addEventListener("scroll", () => {
+    if (!READING_NOW) return;
+    clearTimeout(readingTimer); readingTimer = setTimeout(noteReading, 400);
+  }, { passive: true });
+  // The place to offer: the book left off in; the next one when that book was finished;
+  // the first again when the whole work was.
+  function resumePoint(w) {
+    const r = readingOf(w.slug);
+    if (!r) return null;
+    const last = w.sections.length - 1;
+    const done = r.frac >= 0.95;
+    if (done && r.i < last) return { i: r.i + 1, frac: 0, after: w.sections[r.i].title, at: r.at };
+    if (done) return { i: 0, frac: 0, again: true, at: r.at };
+    return { i: r.i, frac: r.frac || 0, at: r.at };
+  }
+  // A "Continue reading" link. withTitle: name the work too (on the poet page).
+  function continueHTML(w, withTitle) {
+    const p = resumePoint(w);
+    if (!p) return "";
+    const part = w.sections[p.i].title;
+    const meta = p.after ? `You finished ${esc(p.after)} · ${esc(shortDate(p.at))}`
+      : p.again ? `You reached the end${w.sections.length > 1 ? " of " + esc(w.sections[w.sections.length - 1].title) : ""} · ${esc(shortDate(p.at))}`
+      : (p.frac >= 0.05 ? `About ${Math.round(p.frac * 20) * 5}% through · ` : "") + `Last opened ${esc(shortDate(p.at))}`;
+    const grouped = otherTranslations(w).length > 0;
+    const label = (p.again ? "Read it again" : "Continue reading") +
+      (withTitle ? " · " + w.title + (grouped ? ` (${trSurname(w.translator)})` : "") : "");
+    return `
+      <a class="continue" href="#/work/${esc(w.slug)}/${p.i}" data-resume="${esc(w.slug)}" data-i="${p.i}" data-frac="${p.frac}">
+        <span class="continue-label">${esc(label)}</span>
+        <span class="continue-part">${esc(part)} <span aria-hidden="true">→</span></span>
+        <span class="continue-meta">${meta}</span>
+      </a>`;
+  }
+  // The links remember where to scroll to: the book opens at the place it was left.
+  function bindContinue() {
+    app.querySelectorAll("a.continue").forEach((a) => a.addEventListener("click", () => {
+      pendingResume = { slug: a.dataset.resume, i: +a.dataset.i, frac: +a.dataset.frac || 0 };
+    }));
+  }
+
   // Turkish & Ottoman poems with no translator are in Turkish (screen readers, hyphenation);
   // the page around them stays English. Same rule as text_lang in tools/build_pages.py.
   const langAttr = (authorSlug, translator) =>
@@ -571,6 +648,7 @@
   window.addEventListener("hashchange", route);
   function route() {
     if (!DATA) return;
+    if (READING_NOW) { clearTimeout(readingTimer); noteReading(); READING_NOW = null; }
     const h = location.hash || "#/";
     // Back/Forward bring back the entry's saved view; anything else is a fresh visit.
     const st = history.state && typeof history.state.y === "number" ? history.state : null;
@@ -845,6 +923,10 @@
     const poems = DATA.poems.filter((p) => p.authorSlug === slug);
     const works = (DATA.works || []).filter((w) => w.authorSlug === slug);
     setTitle(poet.name);
+    const started = works.filter((w) => readingOf(w.slug))
+      .sort((a, b) => String(readingOf(b.slug).at).localeCompare(String(readingOf(a.slug).at)));
+    const continueBlock = started.length ? `
+            <div class="continue-list">${started.map((w) => continueHTML(w, true)).join("")}</div>` : "";
     const worksHTML = works.length ? `
         <section class="poet-poems">
           <h2>Major Works</h2>
@@ -864,7 +946,7 @@
           <div>
             <p class="poet-era">${esc(poet.era)}</p>
             <h1 class="poet-name">${esc(poet.name)}</h1>
-            <p class="poet-dates">${esc(poet.dates)}</p>
+            <p class="poet-dates">${esc(poet.dates)}</p>${continueBlock}
             <div class="poet-bio">
               ${poet.bio.map((para) => `<p>${para}</p>`).join("")}
             </div>
@@ -880,6 +962,7 @@
         </section>
       </article>`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/poets"; });
+    bindContinue();
   }
 
   // ---------- WORK: table of contents ----------
@@ -935,6 +1018,7 @@
     const w = WORKS[slug];
     if (!w) { location.hash = "#/"; return; }
     const entry = { id: "work:" + slug, kind: "work", title: w.title, author: w.author, translator: w.translator || "" };
+    const place = readingOf(slug);
     setTitle(workTitle(w));
     app.innerHTML = `
       <article class="detail work-toc">
@@ -946,17 +1030,22 @@
         ${sourceLine(w.translator)}
         ${w.blurb ? `<p class="note-block">${esc(w.blurb)}</p>` : ""}
         ${otherTrHTML(w)}
+        ${place ? `<div class="continue-wrap">${continueHTML(w)}
+          <button class="continue-forget" type="button">Forget my place</button></div>` : ""}
         <div class="cite-row toc-tools">${shelfButtonHTML(entry)}</div>
         <p class="shelf-msg" hidden>${VISIT_ONLY}</p>
         <hr class="rule">
         <p class="section-label">Contents · ${w.sections.length} parts</p>
         <ul class="poem-links">
           ${w.sections.map((s, i) => `
-            <li><a href="#/work/${esc(w.slug)}/${i}"><span class="pl-title">${esc(s.title)}</span><span class="pl-sub">${s.stanzas} stanzas</span></a></li>`).join("")}
+            <li><a href="#/work/${esc(w.slug)}/${i}"><span class="pl-title">${esc(s.title)}</span><span class="pl-sub">${place && place.i === i ? '<span class="last-read">Last read</span> · ' : ""}${s.stanzas} stanzas</span></a></li>`).join("")}
         </ul>
       </article>`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/poet/" + w.authorSlug; });
     bindShelfButton(entry);
+    bindContinue();
+    const forget = app.querySelector(".continue-forget");
+    if (forget) forget.addEventListener("click", () => { forgetReading(slug); renderWork(slug); });
   }
 
   // ---------- WORK: one section (canto) reader ----------
@@ -1004,6 +1093,17 @@
     bindNote(entry);
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/work/" + slug + "/" + b.dataset.go; }));
     restoreScroll();
+    // Reading position: opened from "Continue reading", the book scrolls to where it was
+    // left; either way this book becomes the work's place, updated as the reader scrolls.
+    const text = app.querySelector(".poem-text");
+    const resume = pendingResume && pendingResume.slug === slug && pendingResume.i === i ? pendingResume.frac : 0;
+    pendingResume = null;
+    if (resume > 0) {
+      const r = text.getBoundingClientRect();
+      jumpTo(Math.max(0, window.scrollY + r.top + resume * r.height - window.innerHeight * 0.3));
+    }
+    READING_NOW = { slug, i, el: text };
+    setReading(slug, i, resume > 0 ? resume : readingFrac(text));
   }
 
   // ---------- WORK: two translations side by side ----------

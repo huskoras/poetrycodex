@@ -354,6 +354,22 @@ a.poet-card, a.topic-card { display: block; }
 .detail-nav .dir { display: block; font-family: var(--sans); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); margin-bottom: .25rem; }
 .detail-nav .next { text-align: right; }
 
+/* ============ CONTINUE READING (app.js continueHTML; kept in this browser only) ============ */
+.continue-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.2rem; margin: 1.4rem 0 0; }
+.continue { display: flex; flex-direction: column; gap: .12rem; flex: 1 1 18rem; min-width: 0; padding: .75rem 1.1rem;
+  background: var(--surface-alt); border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: 2px;
+  text-decoration: none; color: var(--ink); transition: border-color .15s; }
+.continue:hover { border-color: var(--accent-2); border-left-color: var(--gold); }
+.continue-label { font-family: var(--sans); font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.continue-part { font-family: var(--serif); font-size: 1.25rem; line-height: 1.3; color: var(--ink); }
+.continue:hover .continue-part { color: var(--accent); }
+.continue-meta { font-family: var(--sans); font-size: .76rem; color: var(--faint); }
+.continue-forget { background: none; border: none; padding: 0; font-family: var(--sans); font-size: .74rem; color: var(--faint);
+  text-decoration: underline; cursor: pointer; }
+.continue-forget:hover { color: var(--accent); }
+.continue-list { display: grid; gap: .7rem; max-width: 60ch; margin: -.4rem 0 1.6rem; }
+.poem-links .last-read { color: var(--accent); }
+
 /* ============ OTHER TRANSLATIONS + SIDE BY SIDE (app.js otherTrHTML, renderCompare) ============ */
 .also-tr { margin: -.4rem 0 1.6rem; padding: .8rem 1rem; background: var(--surface-alt); border-left: 3px solid var(--gold); }
 .also-tr .section-label { margin: 0 0 .35rem; }
@@ -901,7 +917,7 @@ textarea.ask-input {
   body { background: #fff; }
   .site-head, .site-foot, .engine-cue, .engine, .detail-nav, .back, .themes, .pn-row,
   .read-in-archive, .rule-ornament, .ln-ctl, .cite-row, .cite-box, .more-row, .shelf-msg, .note-box,
-  .also-tr, .compare-tools, .compare-open { display: none !important; }
+  .also-tr, .compare-tools, .compare-open, .continue-wrap, .continue-list { display: none !important; }
   .detail { max-width: none; }
   .compare-grid { display: block; }
   .compare-col + .compare-col { margin-top: 1.6rem; }
