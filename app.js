@@ -140,15 +140,16 @@
     const plain = (h) => h.replace(/<[^>]+>/g, "").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
     return [{ style: "MLA", html: mla, text: plain(mla) }, { style: "Chicago", html: chicago, text: plain(chicago) }];
   }
-  // The row under a text: Save to shelf (when `entry` is given), Cite, Copy link.
+  // The row under a text: Save to shelf and Add a note (when `entry` is given), Cite,
+  // Copy link; the note opens under the row.
   function citeHTML(o, entry) {
     return `
       <div class="cite-row">
-        ${entry ? shelfButtonHTML(entry) : ""}
+        ${entry ? shelfButtonHTML(entry, true) : ""}
         <button class="cite-toggle" type="button" aria-expanded="false" aria-controls="cite-box">Cite this ${o.work ? "text" : "poem"}</button>
         <button class="cite-link" type="button" data-url="${esc(SITE + o.path)}">Copy link</button>
       </div>
-      ${entry ? `<p class="shelf-msg" hidden>${VISIT_ONLY}</p>` : ""}
+      ${entry ? `<p class="shelf-msg" hidden>${VISIT_ONLY}</p>${noteBoxHTML(entry)}` : ""}
       <div class="cite-box" id="cite-box" hidden>
         ${citations(o).map((c, i) => `
           <div class="cite-entry">
@@ -199,14 +200,17 @@
     }));
   }
 
-  // ---------- the reader's shelf ----------
-  // "Save to shelf" keeps a poem, a long work or one book of it in this browser's
-  // localStorage and nowhere else: no account, nothing sent to the site, nothing shared.
+  // ---------- the reader's shelf and private notes ----------
+  // "Save to shelf" keeps a poem, a long work or one book of it, and "Add a note" a note
+  // on a poem or a book, in this browser's localStorage and nowhere else: no account,
+  // nothing sent to the site, nothing shared.
   // Where the browser keeps no site data (some private windows, storage switched off, or
   // full) the shelf lasts for this visit only, and the shelf page says so and offers the
   // download. Ids are the Codex's own: "keats/0" (a poem), "work:iliad-pope" (a work),
   // "work:iliad-pope/5" (one part of it); each entry keeps the title it was saved under.
   const SHELF_KEY = "pc-shelf";
+  const NOTES_KEY = "pc-notes";
+  const NOTE_MAX = 5000;
   const STORE_OK = (() => {
     try { localStorage.setItem("pc-test", "1"); localStorage.removeItem("pc-test"); return true; }
     catch (e) { return false; }
@@ -243,17 +247,65 @@
     updateShelfNav();
     return { on: at < 0, kept };
   }
+  // id -> {id, kind, title, author, translator, text, updated}
+  function allNotes() {
+    const n = readStore(NOTES_KEY).notes;
+    return n && typeof n === "object" && !Array.isArray(n) ? n : {};
+  }
+  // An empty note is no note. Returns false when kept for this visit only.
+  function setNote(entry, text) {
+    const notes = allNotes();
+    text = String(text || "").slice(0, NOTE_MAX);
+    if (text.trim()) notes[entry.id] = Object.assign({}, entry, { text, updated: new Date().toISOString() });
+    else delete notes[entry.id];
+    const kept = writeStore(NOTES_KEY, { v: 1, notes });
+    updateShelfNav();
+    return kept;
+  }
   // The top bar's "Shelf" appears once there is something on it.
   function updateShelfNav() {
-    const show = shelfItems().length > 0 || /^#\/shelf/.test(location.hash);
+    const show = shelfItems().length > 0 || Object.keys(allNotes()).length > 0 || /^#\/shelf/.test(location.hash);
     document.querySelectorAll('[data-nav="shelf"]').forEach((a) => { a.hidden = !show; });
   }
   const shelfPath = (id) => id.startsWith("work:") ? "/work/" + id.slice(5) + "/" : "/poem/" + id + "/";
   const VISIT_ONLY = "This browser is not keeping data for this site, so your shelf lasts for this visit only. Download it from your shelf before you close the tab.";
-  function shelfButtonHTML(entry) {
+  const NOTE_KEPT = "Private: kept in this browser only, never sent to Poetry Codex. It also appears on your shelf.";
+  const NOTE_VISIT = "This browser is not keeping data for this site, so this note lasts for this visit only. Download it from your shelf before you close the tab.";
+  function shelfButtonHTML(entry, noteable) {
     const on = onShelf(entry.id);
+    const note = noteable && allNotes()[entry.id];
     return `<button class="shelf-toggle" type="button" aria-pressed="${on}">${on ? "On your shelf" : "Save to shelf"}</button>
-      <a class="shelf-view" href="#/shelf"${on ? "" : " hidden"}>View shelf →</a>`;
+      <a class="shelf-view" href="#/shelf"${on ? "" : " hidden"}>View shelf →</a>
+      ${noteable ? `<button class="note-toggle" type="button" aria-expanded="${!!note}" aria-controls="note-box">${note ? "Your note" : "Add a note"}</button>` : ""}`;
+  }
+  // The note under a poem or a book of a long work: open when there is one.
+  function noteBoxHTML(entry) {
+    const note = allNotes()[entry.id];
+    return `
+      <div class="note-box" id="note-box"${note ? "" : " hidden"}>
+        <label class="section-label" for="note-input">Your note</label>
+        <textarea class="note-input" id="note-input" rows="4" maxlength="${NOTE_MAX}"
+                  placeholder="A private note on this text: what struck you, a line to come back to\u2026">${esc(note ? note.text : "")}</textarea>
+        <p class="note-status">${visitOnly() ? NOTE_VISIT : NOTE_KEPT}</p>
+      </div>`;
+  }
+  // Saved as it is typed, so leaving the page never loses a word.
+  function bindNote(entry) {
+    const toggle = app.querySelector(".note-toggle");
+    if (!toggle) return;
+    const box = document.getElementById("note-box");
+    const input = box.querySelector(".note-input");
+    const status = box.querySelector(".note-status");
+    toggle.addEventListener("click", () => {
+      box.hidden = !box.hidden;
+      toggle.setAttribute("aria-expanded", String(!box.hidden));
+      if (!box.hidden) input.focus();
+    });
+    input.addEventListener("input", () => {
+      const kept = setNote(entry, input.value);
+      toggle.textContent = input.value.trim() ? "Your note" : "Add a note";
+      status.textContent = kept ? NOTE_KEPT : NOTE_VISIT;
+    });
   }
   function bindShelfButton(entry) {
     const btn = app.querySelector(".shelf-toggle");
@@ -268,7 +320,7 @@
     });
   }
   window.addEventListener("storage", (e) => {      // saved or removed in another tab
-    if (e.key !== SHELF_KEY && e.key !== null) return;
+    if (e.key !== SHELF_KEY && e.key !== NOTES_KEY && e.key !== null) return;
     updateShelfNav();
     if (DATA && /^#\/shelf/.test(location.hash)) renderShelf();
   });
@@ -904,6 +956,7 @@
     bindLineNumbers();
     bindCite(cite);
     bindShelfButton(entry);
+    bindNote(entry);
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/work/" + slug + "/" + b.dataset.go; }));
     restoreScroll();
   }
@@ -998,40 +1051,55 @@
     return isNaN(d) ? "" : `${d.getDate()} ${MONTHS[d.getMonth()].slice(0, 3)} ${d.getFullYear()}`;
   };
   const byLine = (it) => [it.author, it.translator && translatorShort(it.translator)].filter(Boolean).join(" · ");
-  function shelfRowHTML(it) {
+  // `it` a shelf entry or, for a note on a text not on the shelf, the note itself.
+  function shelfRowHTML(it, note) {
     return `
       <li class="shelf-item">
         <a class="shelf-link" href="${esc(routeFor(it.id))}">
           <span class="shelf-title">${esc(it.title)}</span>
           <span class="shelf-by">${esc(byLine(it))}</span>
         </a>
-        <span class="shelf-side">
+        <span class="shelf-side">${it.saved ? `
           <span class="shelf-date">Saved ${esc(shortDate(it.saved))}</span>
-          <button class="shelf-remove" type="button" data-id="${esc(it.id)}" aria-label="Remove ${esc(it.title)} from your shelf">Remove</button>
+          <button class="shelf-remove" type="button" data-id="${esc(it.id)}" aria-label="Remove ${esc(it.title)} from your shelf">Remove</button>`
+          : `<span class="shelf-date">Note · ${esc(shortDate(note.updated))}</span>`}
         </span>
+        ${note ? `<p class="shelf-note">${esc(note.text)}</p>` : ""}
       </li>`;
+  }
+  // Notes on texts that are not on the shelf, newest first.
+  function looseNotes() {
+    const notes = allNotes();
+    const saved = new Set(shelfItems().map((it) => it.id));
+    return Object.keys(notes).filter((id) => !saved.has(id)).map((id) => notes[id])
+      .filter((n) => n && typeof n.text === "string" && typeof n.id === "string")
+      .sort((a, b) => String(b.updated).localeCompare(String(a.updated)));
   }
   function renderShelf() {
     setTitle("Your shelf");
     const items = shelfItems();
+    const notes = allNotes();
+    const loose = looseNotes();
     const poems = items.filter((it) => it.kind === "poem");
     const works = items.filter((it) => it.kind !== "poem");
-    const group = (name, list) => list.length ? `
+    const group = (name, list, noteOf) => list.length ? `
       <section class="shelf-group">
         <h2>${name} · ${list.length}</h2>
-        <ul class="shelf-list">${list.map(shelfRowHTML).join("")}</ul>
+        <ul class="shelf-list">${list.map((it) => shelfRowHTML(it, noteOf(it))).join("")}</ul>
       </section>` : "";
+    const savedNote = (it) => notes[it.id];
     app.innerHTML = `
       <article class="shelf">
         <div class="page-head">
           <h1 class="page-title">Your shelf</h1>
-          <p class="page-sub">Poems and works you have saved. They are kept in this browser only:
-          nothing is sent to Poetry Codex, and no one else can see them.</p>
+          <p class="page-sub">Poems and works you have saved, and your notes. They are kept in this
+          browser only: nothing is sent to Poetry Codex, and no one else can see them.</p>
         </div>
         ${visitOnly() ? `<p class="shelf-warn">This browser is not keeping data for this site (a private
           window, or site storage switched off or full), so your shelf will be gone when you close
           this tab. Download it below to keep a copy.</p>` : ""}
-        ${items.length ? group("Poems", poems) + group("Works", works) + `
+        ${items.length || loose.length ? group("Poems", poems, savedNote) + group("Works", works, savedNote)
+          + group("Your notes on other texts", loose, (n) => n) + `
         <section class="shelf-export">
           <h2>Take it with you</h2>
           <p>Your shelf is stored nowhere else. Download a copy to keep it, or to paste into your own notes.</p>
@@ -1041,8 +1109,9 @@
           </div>
         </section>` : `
         <p class="empty">Nothing on your shelf yet.</p>
-        <p class="shelf-how">Open any poem or long work and press <strong>Save to shelf</strong> under the text.
-        It will wait for you here. <a href="#/poems">Browse the poems →</a></p>`}
+        <p class="shelf-how">Open any poem or long work and press <strong>Save to shelf</strong> under the text,
+        or <strong>Add a note</strong> to write a private note on it. Both will wait for you here.
+        <a href="#/poems">Browse the poems →</a></p>`}
       </article>`;
     app.querySelectorAll(".shelf-remove").forEach((b) => b.addEventListener("click", () => {
       const it = shelfItems().find((x) => x.id === b.dataset.id);
@@ -1060,20 +1129,32 @@
   }
   // What the downloads hold: every entry with its permanent address.
   function shelfExport() {
+    const notes = allNotes();
+    const row = (it) => {
+      const n = notes[it.id];
+      return { id: it.id, kind: it.kind, title: it.title, author: it.author,
+        translator: it.translator || undefined, url: SITE + shelfPath(it.id), saved: it.saved || undefined,
+        note: n ? n.text : undefined, noteUpdated: n ? n.updated : undefined };
+    };
     return {
       format: "Poetry Codex shelf", version: 1, exported: new Date().toISOString(),
-      shelf: shelfItems().map((it) => ({ id: it.id, kind: it.kind, title: it.title, author: it.author,
-        translator: it.translator || undefined, url: SITE + shelfPath(it.id), saved: it.saved })),
+      shelf: shelfItems().map(row), notes: looseNotes().map(row),
     };
   }
   function shelfMarkdown() {
     const md = (s) => String(s || "").replace(/([\\`*_[\]<>])/g, "\\$1");
     const items = shelfItems();
+    const notes = allNotes();
+    // A note is quoted under its text, line for line.
+    const quote = (n) => n ? "\n" + n.text.split("\n").map((l) => "  > " + l).join("\n") + "\n" : "";
     const block = (name, list) => list.length ? `## ${name}\n\n` + list.map((it) =>
-      `- **${md(it.title)}** — ${md(byLine(it))}  \n  ${SITE + shelfPath(it.id)}  \n  Saved ${shortDate(it.saved)}\n`).join("\n") + "\n" : "";
+      `- **${md(it.title)}** — ${md(byLine(it))}  \n  ${SITE + shelfPath(it.id)}  \n  `
+      + (it.saved ? `Saved ${shortDate(it.saved)}` : `Note written ${shortDate(it.updated)}`) + "\n"
+      + quote(notes[it.id])).join("\n") + "\n" : "";
     return `# My Poetry Codex shelf\n\nExported ${shortDate(new Date().toISOString())} from ${SITE}\n\n`
       + block("Poems", items.filter((it) => it.kind === "poem"))
-      + block("Works", items.filter((it) => it.kind !== "poem"));
+      + block("Works", items.filter((it) => it.kind !== "poem"))
+      + block("Notes on other texts", looseNotes());
   }
   function downloadFile(name, type, text) {
     const url = URL.createObjectURL(new Blob([text], { type: type + ";charset=utf-8" }));
@@ -1626,6 +1707,7 @@
     bindLineNumbers();
     bindCite(cite);
     bindShelfButton(entry);
+    bindNote(entry);
     restoreScroll();
   }
 })();

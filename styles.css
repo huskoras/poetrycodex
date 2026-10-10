@@ -300,10 +300,10 @@ a.poet-card, a.topic-card { display: block; }
 }
 
 /* ============ THE READER'S SHELF (kept in this browser only) ============ */
-.shelf-toggle, .shelf-remove, .shelf-dl { font-family: var(--sans); font-size: .68rem; font-weight: 600; letter-spacing: .1em;
+.shelf-toggle, .note-toggle, .shelf-remove, .shelf-dl { font-family: var(--sans); font-size: .68rem; font-weight: 600; letter-spacing: .1em;
   text-transform: uppercase; color: var(--ink-soft); background: var(--surface); border: 1px solid var(--line-strong);
   border-radius: 999px; padding: .38rem .9rem; cursor: pointer; transition: border-color .15s, color .15s; white-space: nowrap; }
-.shelf-toggle:hover, .shelf-remove:hover, .shelf-dl:hover { border-color: var(--accent-2); color: var(--accent); }
+.shelf-toggle:hover, .note-toggle:hover, .note-toggle[aria-expanded="true"], .shelf-remove:hover, .shelf-dl:hover { border-color: var(--accent-2); color: var(--accent); }
 .shelf-toggle[aria-pressed="true"] { border-color: var(--gold); color: var(--ink); }
 .shelf-toggle[aria-pressed="true"]::before { content: "\2713\00a0"; color: var(--gold); }
 .shelf-view { align-self: center; font-family: var(--sans); font-size: .76rem; font-weight: 600; color: var(--accent);
@@ -335,6 +335,17 @@ a.poet-card, a.topic-card { display: block; }
 .shelf-export .cite-row { margin-top: 1rem; }
 .shelf-how { text-align: center; max-width: 52ch; margin: -2.4rem auto 0; }
 .shelf-how a { color: var(--accent); }
+/* The reader's own note: gold-edged, so it never passes for the Codex Note */
+.note-box { margin: 1rem 0 0; }
+.note-box .section-label { display: block; margin-bottom: .5rem; }
+.note-input { display: block; width: 100%; min-height: 6.5rem; resize: vertical; font-family: var(--serif); font-size: 1.05rem;
+  line-height: 1.6; color: var(--ink); background: var(--surface-alt); border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--gold); border-radius: 2px; padding: .7rem .9rem; }
+.note-input:focus { outline: none; border-color: var(--accent-2); border-left-color: var(--gold); }
+.note-status { font-family: var(--sans); font-size: .74rem; line-height: 1.5; color: var(--faint); margin: .45rem 0 0; }
+.shelf-note { flex-basis: 100%; margin: .35rem 0 0; padding: .55rem .9rem; background: var(--surface-alt);
+  border-left: 3px solid var(--gold); font-family: var(--serif); font-size: 1rem; line-height: 1.6; color: var(--ink-soft);
+  white-space: pre-wrap; overflow-wrap: anywhere; }
 .detail-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; }
 .detail-nav button { flex: 1; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 1rem;
   cursor: pointer; text-align: left; font-family: var(--serif); color: var(--ink-soft); transition: border-color .15s, color .15s; }
@@ -846,7 +857,7 @@ textarea.ask-input {
   @page { margin: 2cm; }
   body { background: #fff; }
   .site-head, .site-foot, .engine-cue, .engine, .detail-nav, .back, .themes, .pn-row,
-  .read-in-archive, .rule-ornament, .ln-ctl, .cite-row, .cite-box, .more-row, .shelf-msg { display: none !important; }
+  .read-in-archive, .rule-ornament, .ln-ctl, .cite-row, .cite-box, .more-row, .shelf-msg, .note-box { display: none !important; }
   .detail { max-width: none; }
   .detail-title { font-size: 22pt; }
   .detail-author a, .detail-subject a { color: inherit; }

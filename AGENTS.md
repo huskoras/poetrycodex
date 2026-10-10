@@ -242,10 +242,12 @@ work sections carry "Cite this poem" (MLA + Chicago) and "Copy link", both on th
 page's permanent address (`/poem/<slug>/<n>/`, `/work/<slug>/<i>/`); surname-first
 exceptions live in `CITE_NAMES` in `app.js`.
 
-**The reader's shelf:** "Save to shelf" (under every poem and work section, and on a work's
-contents page) keeps the text in the browser's `localStorage` (`pc-shelf`) and nowhere else —
-no account, nothing sent to the site. `#/shelf` lists it and downloads it as Markdown or JSON
-with each text's permanent address. Where the browser keeps no site data the shelf lasts
+**The reader's shelf and notes:** "Save to shelf" (under every poem and work section, and on a
+work's contents page) and "Add a note" (a private note under a poem or work section, saved as
+it is typed) keep their data in the browser's `localStorage` (`pc-shelf`, `pc-notes`) and
+nowhere else — no account, nothing sent to the site. `#/shelf` lists saved texts with their
+notes, then notes on unsaved texts, and downloads everything as Markdown or JSON with each
+text's permanent address. Where the browser keeps no site data the shelf lasts
 for the visit and the page says so. The top bar's "Shelf" link appears once something is
 saved; the footer always has "Your shelf".
 
