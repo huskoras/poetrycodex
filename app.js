@@ -92,6 +92,108 @@
     const parts = [translator && translatedBy(translator), collection && "From " + collection].filter(Boolean);
     return parts.length ? `<p class="detail-source">${parts.map(esc).join(" · ")}</p>` : "";
   }
+  // ---------- citation ----------
+  // "Cite this poem" gives MLA (9th ed.) and Chicago (bibliography) entries that point at
+  // the page's permanent address (/poem/keats/0/, the static page search engines index),
+  // never at the #/ address, which Google counts as the home page.
+  const SITE = "https://poetrycodex.com";
+  // Surname first, as both styles want. Titles (Sir) are dropped; names with no
+  // surname to invert (Homer, Yunus Emre, "Anonymous (Old English)") stay as written.
+  const CITE_NAMES = {
+    "Alfred, Lord Tennyson": "Tennyson, Alfred, Lord",
+    "Lord Byron": "Byron, George Gordon, Lord",
+    "Dante Alighieri": "Dante Alighieri",
+    "Jean de La Fontaine": "La Fontaine, Jean de",
+    "William Drummond of Hawthornden": "Drummond, William, of Hawthornden",
+    "Abu al-Ala al-Ma'arri": "al-Ma'arri, Abu al-Ala",
+    "Yunus Emre": "Yunus Emre", "Namık Kemal": "Namık Kemal", "Şeyh Galip": "Şeyh Galip",
+  };
+  function citeName(name) {
+    name = String(name || "").trim();
+    if (CITE_NAMES[name]) return CITE_NAMES[name];
+    if (/[()]|^anonymous|\bpoets?$/i.test(name)) return name;
+    const [person, rest] = name.split(/,\s*(.*)/);           // "Henry Howard, Earl of Surrey"
+    const parts = person.replace(/^Sir\s+/, "").split(/\s+/);
+    if (parts.length < 2) return name;
+    return parts.pop() + ", " + parts.join(" ") + (rest ? ", " + rest : "");
+  }
+  const MONTHS = ["January", "February", "March", "April", "May", "June", "July",
+                  "August", "September", "October", "November", "December"];
+  const MLA_MONTHS = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July",
+                      "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
+  // o: {author, title, work?, path, translator?} -> [{style, html, text}]; `title` is the
+  // poem (quoted) or, with `work`, the part of a long work (the work is italic).
+  function citations(o) {
+    const d = new Date();
+    const url = SITE + o.path;
+    const tr = o.translator ? translatorShort(o.translator).replace(/^trans\.\s*/i, "").replace(/\s*&\s*/g, " and ") : "";
+    const by = tr ? ` Translated by ${esc(tr)}.` : "";
+    const end = (s) => /[.?!]$/.test(s) ? s : s + ".";
+    const what = !o.work ? `“${esc(end(o.title))}”`
+      : o.title && o.title !== o.work ? `<i>${esc(o.work)}</i>, ${esc(end(o.title))}`
+      : `<i>${esc(o.work)}</i>${/[.?!]$/.test(o.work) ? "" : "."}`;
+    const lead = `${esc(end(citeName(o.author)))} ${what}${by}`;
+    const mla = `${lead} <i>Poetry Codex</i>, ${esc(url.replace(/^https:\/\//, ""))}. Accessed ${d.getDate()} ${MLA_MONTHS[d.getMonth()]} ${d.getFullYear()}.`;
+    const chicago = `${lead} Poetry Codex. Accessed ${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}. ${esc(url)}.`;
+    const plain = (h) => h.replace(/<[^>]+>/g, "").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+    return [{ style: "MLA", html: mla, text: plain(mla) }, { style: "Chicago", html: chicago, text: plain(chicago) }];
+  }
+  function citeHTML(o) {
+    return `
+      <div class="cite-row">
+        <button class="cite-toggle" type="button" aria-expanded="false" aria-controls="cite-box">Cite this ${o.work ? "text" : "poem"}</button>
+        <button class="cite-link" type="button" data-url="${esc(SITE + o.path)}">Copy link</button>
+      </div>
+      <div class="cite-box" id="cite-box" hidden>
+        ${citations(o).map((c, i) => `
+          <div class="cite-entry">
+            <p class="cite-style">${c.style}</p>
+            <p class="cite-text" id="cite-${i}">${c.html}</p>
+            <button class="cite-copy" type="button" data-i="${i}">Copy</button>
+          </div>`).join("")}
+      </div>`;
+  }
+  // Copies as formatted text where the browser allows (italics survive into Word), else
+  // plain; with no clipboard at all, selects the text for Ctrl+C.
+  function copyText(text, html, fallbackNode) {
+    const c = navigator.clipboard;
+    if (c && html && window.ClipboardItem) {
+      return c.write([new ClipboardItem({
+        "text/html": new Blob([html], { type: "text/html" }),
+        "text/plain": new Blob([text], { type: "text/plain" }),
+      })]).catch(() => c.writeText(text));
+    }
+    if (c) return c.writeText(text);
+    if (fallbackNode) {
+      const r = document.createRange(); r.selectNodeContents(fallbackNode);
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    }
+    return Promise.reject(new Error("no clipboard"));
+  }
+  function flash(btn, label) {
+    const was = btn.dataset.label || (btn.dataset.label = btn.textContent);
+    btn.textContent = label;
+    clearTimeout(btn._t); btn._t = setTimeout(() => { btn.textContent = was; }, 1600);
+  }
+  function bindCite(o) {
+    const toggle = app.querySelector(".cite-toggle");
+    if (!toggle) return;
+    const box = app.querySelector(".cite-box");
+    const list = citations(o);
+    toggle.addEventListener("click", () => {
+      box.hidden = !box.hidden;
+      toggle.setAttribute("aria-expanded", String(!box.hidden));
+    });
+    const link = app.querySelector(".cite-link");
+    link.addEventListener("click", () => copyText(link.dataset.url)
+      .then(() => flash(link, "Link copied"), () => flash(link, link.dataset.url)));
+    app.querySelectorAll(".cite-copy").forEach((b) => b.addEventListener("click", () => {
+      const c = list[+b.dataset.i];
+      copyText(c.text, c.html, document.getElementById("cite-" + b.dataset.i))
+        .then(() => flash(b, "Copied"), () => flash(b, "Press Ctrl+C"));
+    }));
+  }
+
   // Turkish & Ottoman poems with no translator are in Turkish (screen readers, hyphenation);
   // the page around them stays English. Same rule as text_lang in tools/build_pages.py.
   const langAttr = (authorSlug, translator) =>
@@ -690,6 +792,8 @@
   function renderWorkSectionReady(w, slug, i) {
     const s = w.sections[i];
     const wt = workTitle(WORKS[slug]);
+    const cite = { author: w.author, work: w.title, title: w.sections.length > 1 ? s.title : "",
+                   translator: w.translator, path: `/work/${slug}/${i}/` };
     setTitle(w.sections.length > 1 ? wt.replace(w.title, w.title + ", " + s.title) : wt);
     app.innerHTML = `
       <article class="detail">
@@ -701,6 +805,7 @@
         <hr class="rule">
         ${enginePanel(s.text, { gloss: true })}
         ${poemBlock(s.text, { translator: w.translator, lang: langAttr(w.authorSlug, w.translator), work: true })}
+        ${citeHTML(cite)}
         <div class="detail-nav">
           <button ${i === 0 ? "disabled" : ""} data-go="${i - 1}"><span class="dir">← Previous</span>${i > 0 ? esc(w.sections[i - 1].title) : ""}</button>
           <button class="next" ${i === w.sections.length - 1 ? "disabled" : ""} data-go="${i + 1}"><span class="dir">Next →</span>${i < w.sections.length - 1 ? esc(w.sections[i + 1].title) : ""}</button>
@@ -710,6 +815,7 @@
     bindEngine({ title: w.title + " \u00b7 " + s.title, author: w.author, text: s.text,
                  id: "work:" + slug + "/" + i });
     bindLineNumbers();
+    bindCite(cite);
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/work/" + slug + "/" + b.dataset.go; }));
     restoreScroll();
   }
@@ -1306,6 +1412,7 @@
     const themes = p.subjects.length
       ? `<div class="themes">${p.subjects.map((s) => `<span class="theme-tag" data-sub="${esc(s)}">${esc(s)}</span>`).join("")}</div>` : "";
     const lang = langAttr(p.authorSlug, p.translator);
+    const cite = { author: p.author, title: p.title, translator: p.translator, path: `/poem/${slug}/${n}/` };
     setTitle(p.title + " — " + p.author);
     app.innerHTML = `
       <article class="detail">
@@ -1321,6 +1428,7 @@
         ${p.note ? `<div class="rule-ornament">✦ ✦ ✦</div>
         <p class="section-label">Codex Note</p>
         <p class="note-block">${esc(p.note)}</p>` : ""}
+        ${citeHTML(cite)}
         <div class="detail-nav">
           <button ${n === 0 ? "disabled" : ""} data-go="${n - 1}"><span class="dir">← Previous</span>${n > 0 ? esc(poems[n - 1].title) : ""}</button>
           <button class="next" ${n === poems.length - 1 ? "disabled" : ""} data-go="${n + 1}"><span class="dir">Next →</span>${n < poems.length - 1 ? esc(poems[n + 1].title) : ""}</button>
@@ -1336,6 +1444,7 @@
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/poem/" + slug + "/" + b.dataset.go; }));
     bindEngine({ title: p.title, author: p.author, text: p.text, id: p.id });
     bindLineNumbers();
+    bindCite(cite);
     restoreScroll();
   }
 })();

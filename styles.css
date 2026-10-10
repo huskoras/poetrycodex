@@ -283,6 +283,21 @@ a.poet-card, a.topic-card { display: block; }
   border-radius: 999px; color: var(--ink-soft); cursor: pointer; transition: all .15s; background: var(--surface); }
 .theme-tag:hover { border-color: var(--accent-2); color: var(--accent); }
 
+/* "Cite this poem" and "Copy link", under the text; the entries open below. */
+.cite-row { display: flex; flex-wrap: wrap; gap: .6rem; margin: 2.6rem 0 0; }
+.cite-toggle, .cite-link, .cite-copy { font-family: var(--sans); font-size: .68rem; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--ink-soft); background: var(--surface); border: 1px solid var(--line-strong);
+  border-radius: 999px; padding: .38rem .9rem; cursor: pointer; transition: border-color .15s, color .15s; white-space: nowrap; }
+.cite-toggle:hover, .cite-link:hover, .cite-copy:hover, .cite-toggle[aria-expanded="true"] { border-color: var(--accent-2); color: var(--accent); }
+.cite-box { margin: 1rem 0 0; padding: .4rem 1.2rem; background: var(--surface-alt); border: 1px solid var(--line); border-radius: 4px; }
+.cite-entry { display: grid; grid-template-columns: 5rem 1fr auto; gap: .4rem 1rem; align-items: baseline; padding: .8rem 0; }
+.cite-entry + .cite-entry { border-top: 1px solid var(--line); }
+.cite-style { font-family: var(--sans); font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); margin: 0; }
+.cite-text { font-family: var(--serif); font-size: 1rem; line-height: 1.55; color: var(--ink); margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 560px) {
+  .cite-entry { grid-template-columns: 1fr auto; }
+  .cite-text { grid-column: 1 / -1; grid-row: 2; }
+}
 .detail-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; }
 .detail-nav button { flex: 1; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 1rem;
   cursor: pointer; text-align: left; font-family: var(--serif); color: var(--ink-soft); transition: border-color .15s, color .15s; }
@@ -794,7 +809,7 @@ textarea.ask-input {
   @page { margin: 2cm; }
   body { background: #fff; }
   .site-head, .site-foot, .engine-cue, .engine, .detail-nav, .back, .themes, .pn-row,
-  .read-in-archive, .rule-ornament, .ln-ctl { display: none !important; }
+  .read-in-archive, .rule-ornament, .ln-ctl, .cite-row, .cite-box, .more-row { display: none !important; }
   .detail { max-width: none; }
   .detail-title { font-size: 22pt; }
   .detail-author a, .detail-subject a { color: inherit; }
