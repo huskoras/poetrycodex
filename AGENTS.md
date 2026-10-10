@@ -300,14 +300,25 @@ Everything here is **public domain**, and it must stay that way.
    **published before 1931 AND the poet died before 1956** (safe under both US and
    life+70 rules). Yeats, Lawrence etc.: pre-1929/pre-1923 books only. Excluded by this
    rule: Masefield, Sassoon, Graves, de la Mare, T. S. Eliot, Sitwell and anyone later.
-3b. **Turkish & Ottoman ("Option 1", owner's decision 9 Oct 2026):** Turkish originals
-   are allowed if **published before 1931 and the author has been dead more than 70
-   years**; add a short English note. Ottoman classics may come through Gibb's
-   translations. **Refused and to stay refused:** Nazım Hikmet, Orhan Kemal, Rüştü Onur,
-   Muzaffer Tayyip Uslu, Fazıl Hüsnü Dağlarca, the Garip and Hececiler poets (all still
-   in copyright). Do **not** scrape poetry websites; use scanned pre-1931 editions or
-   Gutenberg/Internet Archive scans with a visible publication date. 47 OCR-garbled
-   candidates were rejected on quality in Oct 2026 — do not re-add them unverified.
+3b. **Turkish & Ottoman ("Option 2", owner's decision 10 Oct 2026, replacing Option 1):**
+   Turkish originals are allowed if **the author died before 1956** (more than 70 years
+   ago — public domain in Turkey under FSEK art. 27); add a short English note. The
+   publication year is no longer a bar: the owner was told that post-1930 publications
+   stay technically protected in the US until 95 years after publication, and accepted
+   that for Turkish originals. Ottoman classics may come through Gibb's translations.
+   Explicitly wanted: the complete poems of Rüştü Onur (d. 1942) and Muzaffer Tayyip
+   Uslu (d. 1946). Newly admissible: Orhan Veli (d. 1950), Sabahattin Ali (d. 1948),
+   Kemalettin Kamu (d. 1948), Ömer Bedrettin Uşaklı (d. 1946), Neyzen Tevfik (d. 1953).
+   **Refused and to stay refused:** Nazım Hikmet (d. 1963 — protected in Turkey until
+   2034), Orhan Kemal (d. 1970), Dağlarca, Oktay Rifat, Melih Cevdet, Yahya Kemal (d. 1958),
+   Cahit Sıtkı (d. 1956) and anyone who died in or after 1956. Do **not** scrape poetry
+   websites; use Wikisource, scanned editions, or Gutenberg/Internet Archive with a
+   visible publication date. 47 OCR-garbled candidates were rejected on quality in Oct
+   2026 — do not re-add them unverified.
+3c. **Other languages (Italian, French, Arabic, Nordic, …):** the original must be public
+   domain **and** the English translation published before 1929; the translation is what
+   the site shows, with `translator` set. Prefer sources where the original is also
+   available in clean text.
 4. **Poems only.** Never ingest as "poems": editors' introductions, footnotes, glossaries,
    textual-variant apparatus, transcriber's notes, publisher pages, tables of contents,
    biographies, letters, prose essays, or stage plays. Several sources bundle plays with
@@ -378,8 +389,34 @@ name rather than `git add -A`, so stray scratch files never reach the repo.
 Worker changes: `cd worker && npx wrangler deploy` (wrangler is OAuth-logged-in on the
 owner's PC; the API key is an encrypted Worker secret, never in this repo).
 
-**Do not run two agents against this repo at once.** Concurrent edits to the same poet or
-work file, or to `data/index.json`, collide. Finish or stop one before starting another.
+**Shared-file rule.** Several ingesters may write *different* new poet/work files at the
+same time, but only **one** process may ever regenerate `data/index.json` /
+`data/search.json` / `poem/` / `poet/` / `sitemap*.xml`, edit `app.js` or `index.html`, or
+commit and push — the publisher, and only after every ingester has finished. Never run
+two publishers, and never run a publisher while an ingester is still writing.
+
+---
+
+## 7b. The editorial team (`.claude/agents/`)
+
+Since 10 Oct 2026 the archive is grown by a team of Claude Code agents, defined in
+`.claude/agents/*.md` (each file is the agent's standing brief; edit the file to change
+the agent). The owner has given the editor full authority to publish; he reviews the live
+site afterwards and asks for changes.
+
+| Agent | Model | Job |
+|---|---|---|
+| `william-hazlitt` | Fable 5.1 | Editor-in-chief. Decides what enters, creates categories, writes ingestion instructions, spot-checks every file against its source, passes/fixes/rejects. Writes no data himself. |
+| `marlowe` | Fable 5.1 | English-literature scout. Audits the archive against the canon, finds missing poets/works/famous poems, sources clean texts. |
+| `scout-turkish` | Haiku | Turkish & Ottoman scout (Option 2 rule above). |
+| `scout-italian`, `scout-french`, `scout-arabic`, `scout-nordic` | Haiku | Per-language scouts: public-domain originals with pre-1929 English translations. |
+| `poem-ingester` | Sonnet | Turns one approved poet/work into `data/poets/<slug>.json` (+ `data/works/`, portrait). Writes only its own files; never builds, never commits. |
+| `publisher` | Sonnet | Runs alone after a batch passes: removes rejected files, registers new categories in `app.js`, runs the build/verify chain, commits one poet per commit, pushes, confirms the live site. |
+| `site-improver` | Opus | Studies the site as a product and writes prioritised proposals (in Turkish) for the owner. Read-only. |
+
+A round = scouts (parallel) → Hazlitt decides → ingesters (parallel, own files) → Hazlitt
+checks each file, one fix round → publisher. Rounds repeat until the scouts run dry. Reports
+and backlogs from each run are kept outside the repo in `../poetrycodex-notlar/`.
 
 ---
 
