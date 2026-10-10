@@ -940,6 +940,7 @@
       out.className = "engine-out is-loading";
       out.textContent = "Reading\u2026";
       let prose = "";
+      let saved = false;     // the Worker replayed a stored reading ({cached: true})
 
       try {
         const res = await fetch(ENGINE_URL + path, {
@@ -968,11 +969,14 @@
             let msg;
             try { msg = JSON.parse(chunk); } catch { continue; }
             if (msg.error) throw new Error(msg.error);
+            if (msg.cached) saved = true;
             prose += msg.t || "";
             out.className = "engine-out" + (path === "/api/gloss" ? " is-gloss" : "");
             out.innerHTML = prose.split(/\n{2,}/).filter(Boolean)
               .map((para) => `<p>${esc(para)}</p>`).join("")
-              + `<p class="engine-credit">${esc(credit)}</p>`;
+              + `<p class="engine-credit">${esc(credit)}${saved
+                ? ` <span class="engine-saved" title="Written for an earlier reader and kept: everyone who asks for this reading gets the same text.">Saved reading</span>`
+                : ""}</p>`;
           }
         }
       } catch (err) {

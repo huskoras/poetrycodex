@@ -37,6 +37,12 @@ Eight critical traditions are available: `formalist`, `historicist`, `feminist`,
 - **Rate limit** — six readings per minute per IP, via the `ANALYZE_LIMITER`
   binding in `wrangler.toml`. Generous for a reader, useless for anyone trying
   to drain the balance.
+- **Daily ceiling** — at most `DAILY_PAID_LIMIT` (in `wrangler.toml`, default
+  150) model calls per UTC day across all visitors, counted in the `READINGS`
+  KV under `paid:<date>`. Past it, new readings get a polite 503; stored
+  readings are served before the check and keep working. KV is eventually
+  consistent, so the count is approximate: keep a monthly limit in the
+  Anthropic Console as well.
 - **Prompt caching** — the stable half of the system prompt carries a cache
   breakpoint, so repeat traffic is cheaper.
 - The key is only ever an encrypted Worker secret. It is never in this repo,

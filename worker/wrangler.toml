@@ -8,6 +8,12 @@ compatibility_flags = ["nodejs_compat"]
 [vars]
 ORACLE_ENABLED = "false"
 
+# Most paid model calls the engine will make in one UTC day, across all visitors.
+# 150 is roughly $6 a day at the October 2026 prices (about $180 a month at the
+# very most). Saved readings do not count and keep working after the limit.
+# Raise it here and redeploy if a busy day (a class, a link going round) hits it.
+DAILY_PAID_LIMIT = "150"
+
 # The API key is NOT stored here. It is set once as an encrypted secret:
 #   npx wrangler secret put ANTHROPIC_API_KEY
 # or in the Cloudflare dashboard under

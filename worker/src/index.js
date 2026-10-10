@@ -401,6 +401,34 @@ function clean(value, limit) {
   return typeof value === "string" ? value.trim().slice(0, limit) : "";
 }
 
+// A ceiling on what the engine can spend in one day, whoever is asking: the
+// per-IP limiter stops one visitor, this stops many. Every request that is about
+// to reach the model is counted in KV under the UTC date; stored readings are
+// served before this and never counted, so they keep working once the day's
+// allowance is gone. KV is eventually consistent, so the count is approximate -
+// an insurance, not an invoice. Set the number with DAILY_PAID_LIMIT in wrangler.toml.
+const DAILY_PAID_DEFAULT = 150;
+const SPENT_FOR_TODAY =
+  "The Codex has read all it can for today. Saved readings are still open — please come back tomorrow.";
+
+function dailyPaidLimit(env) {
+  const raw = env.DAILY_PAID_LIMIT;
+  const n = Number(raw);
+  return raw != null && raw !== "" && Number.isFinite(n) ? n : DAILY_PAID_DEFAULT;
+}
+
+// True if one more paid call fits in today's allowance (and counts it).
+async function takeDailyAllowance(env) {
+  if (!env.READINGS) return true;
+  const key = "paid:" + new Date().toISOString().slice(0, 10);
+  const used = Number(await env.READINGS.get(key).catch(() => null)) || 0;
+  if (used >= dailyPaidLimit(env)) return false;
+  // Two days' life is enough: only today's key is ever read.
+  await env.READINGS.put(key, String(used + 1), { expirationTtl: 172800 }).catch((e) =>
+    console.error("spend counter write failed:", (e && e.message) || e));
+  return true;
+}
+
 
 /**
  * The Oracle: a conversation about the archive.
@@ -586,6 +614,7 @@ export default {
           return json(429, { error: "The Oracle needs a moment. Please wait before asking again." }, origin);
         }
       }
+      if (!(await takeDailyAllowance(env))) return json(503, { error: SPENT_FOR_TODAY }, origin);
       return oracleResponse(body, origin, env);
     }
 
@@ -673,6 +702,9 @@ export default {
       const stored = await env.READINGS.get(cacheKey);
       if (stored) return cachedReadingSSE(stored, origin);
     }
+
+    // Past this point the request costs money.
+    if (!(await takeDailyAllowance(env))) return json(503, { error: SPENT_FOR_TODAY }, origin);
 
     const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
     const stream = client.messages.stream({

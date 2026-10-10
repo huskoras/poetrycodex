@@ -257,6 +257,9 @@ not. Re-run `tools/`-style calibration before moving that threshold.
 
 Model `claude-opus-5-5`. Guardrails: origin allowlist, six requests per minute
 per IP (`ANALYZE_LIMITER`) plus three per minute for the Oracle (`ORACLE_LIMITER`),
+a site-wide daily ceiling of paid model calls (`DAILY_PAID_LIMIT` in `wrangler.toml`,
+150 ≈ $6/day; counted in the `READINGS` KV under `paid:<UTC date>`, approximate; stored
+readings bypass it and the page labels them "Saved reading"),
 24,000-character text cap, output caps of 4,000 tokens (8,000 for gloss, 1,100 for
 the Oracle), and a cache breakpoint on the stable half of the system prompt.
 
