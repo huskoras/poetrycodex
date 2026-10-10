@@ -282,14 +282,14 @@
     app.innerHTML = `
       <div class="doors">
         <a class="door door-archive" href="#/eras">
-          <img src="archive.png" alt="" width="124" height="124" />
+          <img src="archive-248.webp" alt="" width="124" height="124" />
           <span class="d-name">The Archive</span>
           <span class="d-line">${DATA.count} poems by ${DATA.poets.length} poets,
           from Homer and Anglo-Saxon verse to the early twentieth century \u2014 every one in the public domain.</span>
           <span class="d-go">Enter &rarr;</span>
         </a>
         <a class="door door-oracle${ORACLE_LIVE ? "" : " is-resting"}" href="#/oracle">
-          <img src="oracle.png" alt="" width="124" height="124" />
+          <img src="oracle-248.webp" alt="" width="124" height="124" />
           <span class="d-name">The Oracle</span>
           <span class="d-line">Ask for a poem, an argument, or a place to start.
           It searches the collection before it answers.</span>
@@ -502,7 +502,7 @@
   function renderAbout() {
     app.innerHTML = `
       <article class="about">
-        <img class="about-coin" src="coin.png" alt="Gold medallion of Alexander the Great" />
+        <img class="about-coin" src="coin-300.webp" alt="Gold medallion of Alexander the Great" />
         <h1>About Poetry Codex</h1>
         <p>Poetry Codex is a reading archive of poetry in the public domain — and the foundation of a
         larger project: a critical engine able to read these poems through the full range of methods
@@ -602,7 +602,7 @@
   function oracleBubble(m) {
     return m.role === "user"
       ? `<div class="o-turn o-you"><blockquote class="o-q">${esc(m.content)}</blockquote></div>`
-      : `<div class="o-turn o-codex"><div class="o-mark"><img src="oracle.png" alt="" width="34" height="34" /></div>
+      : `<div class="o-turn o-codex"><div class="o-mark"><img src="oracle-248.webp" alt="" width="34" height="34" /></div>
          <div class="o-body">${renderMarkdown(m.content)}${searchTrail(m.searches)}</div></div>`;
   }
 
@@ -620,7 +620,7 @@
     app.innerHTML = `
       <section class="oracle">
         <header class="oracle-head">
-          <img class="oracle-coin is-resting" src="oracle.png" alt="Silver tetradrachm of Alexander the Great" />
+          <img class="oracle-coin is-resting" src="oracle-248.webp" alt="Silver tetradrachm of Alexander the Great" />
           <h1>The Oracle</h1>
           <p>The Oracle is resting. It will answer again soon.</p>
         </header>
@@ -641,7 +641,7 @@
     app.innerHTML = `
       <section class="oracle">
         <header class="oracle-head">
-          <img class="oracle-coin" src="oracle.png" alt="Silver tetradrachm of Alexander the Great" />
+          <img class="oracle-coin" src="oracle-248.webp" alt="Silver tetradrachm of Alexander the Great" />
           <h1>The Oracle</h1>
           <p>Ask anything about poetry, or about what this archive holds. The Oracle
           searches the collection before it answers, and links to what it finds.</p>
@@ -697,7 +697,7 @@
       ORACLE_MSGS.push({ role: "user", content: question });
       thread.insertAdjacentHTML("beforeend", oracleBubble(ORACLE_MSGS[ORACLE_MSGS.length - 1]));
       thread.insertAdjacentHTML("beforeend",
-        `<div class="o-turn o-codex" id="o-live"><div class="o-mark"><img src="oracle.png" alt="" width="34" height="34" /></div>
+        `<div class="o-turn o-codex" id="o-live"><div class="o-mark"><img src="oracle-248.webp" alt="" width="34" height="34" /></div>
          <div class="o-body"><p class="o-status">Consulting the archive\u2026</p></div></div>`);
       const live = document.getElementById("o-live").querySelector(".o-body");
       live.scrollIntoView({ behavior: "smooth", block: "end" });

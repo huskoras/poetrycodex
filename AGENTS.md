@@ -72,6 +72,12 @@ sections (cantos/books/fitts).
 - `robots.txt` — allows everything and points to the sitemap. `CNAME` — `poetrycodex.com`.
 - `poets/*.jpg` — portrait/illustration images (unrelated to `data/poets/`; note the
   singular/plural difference — this is the images folder, `data/poets/` is poem data).
+  New portraits are shrunk with `python tools/shrink_portraits.py` (640 px wide, JPEG
+  quality 80; safe to rerun, it skips files already done). Originals of the October 2026
+  set are kept outside the repo in `../poetrycodex-notlar/gorsel-asillari-2026-10-10/`.
+- Site images: the pages use `coin-68.webp` (top bar), `coin-300.webp` (hero, About),
+  `archive-248.webp` and `oracle-248.webp`. The large `coin.png`/`archive.png`/`oracle.png`
+  are the sources; they stay in the repo but no page loads them.
 - `worker/` — the Cloudflare Worker that holds the API key and talks to Claude (§4b).
 - `dev_server.py` — local no-cache dev server (`python dev_server.py` → http://localhost:8777)
 - `BAŞLAT.bat` — double-click launcher for the owner (starts server + opens browser)
@@ -378,6 +384,7 @@ python tools/build_index.py                # regenerates data/index.json
 python tools/build_search_index.py         # regenerates data/search.json (Oracle lookup)
 python tools/verify_split.py               # must print ALL CHECKS PASSED
 python tools/build_pages.py                # regenerates poem/, poet/, sitemap*.xml, footer links
+python tools/shrink_portraits.py           # only if new poets/*.jpg portraits were added
 git add data/poets/<slug>.json data/index.json data/search.json poem poet sitemap*.xml index.html
 git commit -m "Add X"
 git push                                   # this deploys
