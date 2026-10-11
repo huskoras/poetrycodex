@@ -372,6 +372,11 @@ a.poet-card, a.topic-card { display: block; }
 .detail-nav button:disabled { opacity: .35; cursor: default; }
 .detail-nav .dir { display: block; font-family: var(--sans); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); margin-bottom: .25rem; }
 .detail-nav .next { text-align: right; }
+/* "Read next": three poems on the same subject, under Previous / Next. */
+.related { margin-top: 3rem; padding-top: 1.6rem; border-top: 1px solid var(--line); }
+.related-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .9rem; }
+.related-grid .card { padding: 1.1rem 1.1rem 1rem; }
+.related-grid .card-title { font-size: 1.12rem; }
 
 /* ============ CONTINUE READING (app.js continueHTML; kept in this browser only) ============ */
 .continue-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.2rem; margin: 1.4rem 0 0; }
@@ -953,7 +958,7 @@ textarea.ask-input {
   body { background: #fff; }
   .site-head, .site-foot, .engine-cue, .engine, .detail-nav, .back, .themes, .pn-row,
   .read-in-archive, .rule-ornament, .ln-ctl, .cite-row, .cite-box, .cite-static, .more-row, .shelf-msg, .note-box,
-  .also-tr, .compare-tools, .compare-open, .continue-wrap, .continue-list { display: none !important; }
+  .also-tr, .compare-tools, .compare-open, .continue-wrap, .continue-list, .related { display: none !important; }
   .detail { max-width: none; }
   .compare-grid { display: block; }
   .compare-col + .compare-col { margin-top: 1.6rem; }

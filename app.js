@@ -1980,6 +1980,50 @@
     });
   }
 
+  // "Read next": three poems on the same subject from the same era or tradition, the same
+  // three every time a poem is opened (picked from the poem's id, no randomness), from other
+  // poets where there are enough. If the era has fewer than three, the subject alone is used.
+  let RELATED = null;   // "subject|category" -> poems, and "subject|" -> poems (built once)
+  function relatedPoems(p) {
+    if (!RELATED) {
+      RELATED = new Map();
+      const add = (k, q) => { if (!RELATED.has(k)) RELATED.set(k, []); RELATED.get(k).push(q); };
+      DATA.poems.forEach((q) => {
+        add(q.primarySubject + "|" + ((POETS[q.authorSlug] || {}).category || ""), q);
+        add(q.primarySubject + "|", q);
+      });
+    }
+    const cat = (POETS[p.authorSlug] || {}).category || "";
+    let pool = (RELATED.get(p.primarySubject + "|" + cat) || []).filter((q) => q.id !== p.id);
+    let label = cat ? `More ${cat} poems on ${p.primarySubject}` : "";
+    if (pool.length < 3 || !cat) {
+      pool = (RELATED.get(p.primarySubject + "|") || []).filter((q) => q.id !== p.id);
+      label = `More poems on ${p.primarySubject}`;
+    }
+    if (!pool.length) return null;
+    let h = 0;
+    for (const ch of p.id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+    const len = pool.length, start = h % len, step = len % 7919 ? 7919 : 1;
+    const picked = [], poets = new Set([p.authorSlug]);
+    // First pass: one poem each from other poets; second pass: anything left.
+    for (const distinct of [true, false]) {
+      for (let k = 0; k < len && picked.length < 3; k++) {
+        const q = pool[(start + k * step) % len];
+        if (picked.includes(q) || (distinct && poets.has(q.authorSlug))) continue;
+        picked.push(q); poets.add(q.authorSlug);
+      }
+    }
+    return { label, poems: picked };
+  }
+  function relatedHTML(p) {
+    const r = relatedPoems(p);
+    if (!r) return "";
+    return `<section class="related" aria-label="${esc(r.label)}">
+          <p class="section-label">Read next · ${esc(r.label)}</p>
+          <div class="grid related-grid">${r.poems.map(cardHTML).join("")}</div>
+        </section>`;
+  }
+
   function renderDetailReady(poetFile, slug, n, p) {
     const poems = poetFile.poems;
     const themes = p.subjects.length
@@ -2007,6 +2051,7 @@
           <button ${n === 0 ? "disabled" : ""} data-go="${n - 1}"><span class="dir">← Previous</span>${n > 0 ? esc(poems[n - 1].title) : ""}</button>
           <button class="next" ${n === poems.length - 1 ? "disabled" : ""} data-go="${n + 1}"><span class="dir">Next →</span>${n < poems.length - 1 ? esc(poems[n + 1].title) : ""}</button>
         </div>
+        ${relatedHTML(p)}
       </article>`;
     document.getElementById("back").addEventListener("click", () => { if (history.length > 1) history.back(); else location.hash = "#/poems"; });
     app.querySelectorAll(".theme-tag").forEach((t) => t.addEventListener("click", () => {
