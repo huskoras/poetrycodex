@@ -31,8 +31,15 @@ a { color: inherit; }
 :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 
 /* ============ STICKY TOP BAR ============ */
+/* A sticky box only sticks inside its parent, and on inner pages the header holds nothing
+   but the bar, so the header itself is what sticks. On home the bar is hidden and the hero
+   scrolls away as before. On phones the bar is two or three rows tall (about 140px, a sixth
+   of the screen), so there it scrolls away with the page and the reader keeps the poem. */
+@media (min-width: 781px) {
+  body:not([data-route="home"]) .site-head { position: sticky; top: 0; z-index: 50; }
+}
 .topbar {
-  position: sticky; top: 0; z-index: 50;
+  position: relative; z-index: 50;
   background: var(--masthead); border-bottom: 1px solid var(--line-strong);
 }
 .topbar-inner {
@@ -61,6 +68,15 @@ a { color: inherit; }
   border: none; background: var(--accent); color: #fff; cursor: pointer; transition: background .15s;
 }
 .tb-search button:hover { background: var(--accent-2); }
+/* Between phone and desktop widths the one-row bar is tight: "The Oracle" broke onto two
+   lines and the search button ran off the right edge. Tighter spacing keeps it on one row. */
+.tb-nav a { white-space: nowrap; }
+@media (min-width: 781px) and (max-width: 1100px) {
+  .topbar-inner { padding: .55rem 1.3rem; gap: .9rem; }
+  .tb-nav { gap: 1rem; margin-left: 0; }
+  .tb-nav a { font-size: .72rem; letter-spacing: .06em; }
+  .tb-search input { width: clamp(100px, 14vw, 180px); }
+}
 
 /* ============ HERO (home only — big, centered) ============ */
 .hero {
@@ -708,6 +724,8 @@ textarea.ask-input {
   transition: border-color .15s, box-shadow .15s;
 }
 .engine-cue:hover { border-color: var(--gold); }
+/* On phones the top bar does not follow the reader, so the cue sticks to the screen's top. */
+@media (max-width: 780px) { .engine-cue { top: .6rem; } }
 .ec-mark { color: var(--gold); font-size: 1rem; line-height: 1; }
 .ec-label {
   font-family: var(--sans); font-size: .76rem; font-weight: 700;
