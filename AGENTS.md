@@ -463,7 +463,7 @@ site afterwards and asks for changes.
 | `william-hazlitt` | Fable 5.1 | Editor-in-chief. Decides what enters, creates categories, writes ingestion instructions, spot-checks every file against its source, passes/fixes/rejects. Writes no data himself. |
 | `marlowe` | Fable 5.1 | English-literature scout. Audits the archive against the canon, finds missing poets/works/famous poems, sources clean texts. |
 | `scout-turkish` | Haiku | Turkish & Ottoman scout (Option 2 rule above). |
-| `scout-italian`, `scout-french`, `scout-arabic`, `scout-nordic` | Haiku | Per-language scouts: public-domain originals with pre-1929 English translations. |
+| `scout-italian`, `scout-french`, `scout-arabic`, `scout-nordic`, `scout-german`, `scout-spanish`, `scout-persian`, `scout-classical`, `scout-east-asian`, `scout-celtic-slavic` | Haiku (Fable for a first sweep) | Per-language scouts: public-domain originals with pre-1929 English translations. The last six were added on 11 Oct 2026 when the owner asked for more languages. |
 | `poem-ingester` | Sonnet | Turns one approved poet/work into `data/poets/<slug>.json` (+ `data/works/`, portrait). Writes only its own files; never builds, never commits. |
 | `publisher` | Sonnet | Runs alone after a batch passes: removes rejected files, registers new categories in `app.js`, runs the build/verify chain, commits one poet per commit, pushes, confirms the live site. |
 | `site-improver` | Opus | Studies the site as a product and writes prioritised proposals (in Turkish) for the owner. Read-only. |
