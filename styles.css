@@ -310,6 +310,9 @@ a.poet-card, a.topic-card { display: block; }
 .cite-entry + .cite-entry { border-top: 1px solid var(--line); }
 .cite-style { font-family: var(--sans); font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); margin: 0; }
 .cite-text { font-family: var(--serif); font-size: 1rem; line-height: 1.55; color: var(--ink); margin: 0; overflow-wrap: anywhere; }
+/* Static pages (no app) print the two entries as plain text under the poem. */
+.cite-static { margin: 2.6rem 0 0; }
+.cite-static .cite-box { margin-top: .5rem; }
 @media (max-width: 560px) {
   .cite-entry { grid-template-columns: 1fr auto; }
   .cite-text { grid-column: 1 / -1; grid-row: 2; }
@@ -934,7 +937,7 @@ textarea.ask-input {
   @page { margin: 2cm; }
   body { background: #fff; }
   .site-head, .site-foot, .engine-cue, .engine, .detail-nav, .back, .themes, .pn-row,
-  .read-in-archive, .rule-ornament, .ln-ctl, .cite-row, .cite-box, .more-row, .shelf-msg, .note-box,
+  .read-in-archive, .rule-ornament, .ln-ctl, .cite-row, .cite-box, .cite-static, .more-row, .shelf-msg, .note-box,
   .also-tr, .compare-tools, .compare-open, .continue-wrap, .continue-list { display: none !important; }
   .detail { max-width: none; }
   .compare-grid { display: block; }

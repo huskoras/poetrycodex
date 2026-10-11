@@ -195,6 +195,82 @@ def translator_names(tr):
     return [n.strip() for n in re.split(r"\s+(?:&|and)\s+", name) if n.strip()]
 
 
+# ---------- citation (plain text, as "Cite this poem" in app.js words it) ----------
+# Surname first, as both styles want. Titles (Sir) are dropped; names with no surname to
+# invert (Homer, Yunus Emre, "Anonymous (Old English)") stay as written. Keep in step with
+# CITE_NAMES / citeName / citations in app.js.
+CITE_NAMES = {
+    "Alfred, Lord Tennyson": "Tennyson, Alfred, Lord",
+    "Lord Byron": "Byron, George Gordon, Lord",
+    "Dante Alighieri": "Dante Alighieri",
+    "Jean de La Fontaine": "La Fontaine, Jean de",
+    "William Drummond of Hawthornden": "Drummond, William, of Hawthornden",
+    "Abu al-Ala al-Ma'arri": "al-Ma'arri, Abu al-Ala",
+    "Yunus Emre": "Yunus Emre", "Namık Kemal": "Namık Kemal", "Şeyh Galip": "Şeyh Galip",
+}
+
+
+def cite_name(name):
+    name = (name or "").strip()
+    if name in CITE_NAMES:
+        return CITE_NAMES[name]
+    if re.search(r"[()]|^anonymous|\bpoets?$", name, re.I):
+        return name
+    person_part, _, rest = name.partition(",")          # "Henry Howard, Earl of Surrey"
+    rest = rest.lstrip()
+    parts = re.sub(r"^Sir\s+", "", person_part).split()
+    if len(parts) < 2:
+        return name
+    return parts[-1] + ", " + " ".join(parts[:-1]) + (", " + rest if rest else "")
+
+
+def cite_end(s):
+    """One closing full stop: none after ? or !, and a stray trailing comma or colon in the
+    data ("Ad Amicum Litigantem,") gives way to it."""
+    s = re.sub(r"[\s,;:]+$", "", s or "")
+    return s if re.search(r"[.?!]$", s) else s + "."
+
+
+# The access date is the reader's, not the build's: a tiny script writes today's date into
+# each entry. Without JavaScript the entries simply have none (both styles allow that).
+CITE_DATE_JS = (
+    '<script>(function(){var d=new Date(),M=["Jan.","Feb.","Mar.","Apr.","May","June","July",'
+    '"Aug.","Sept.","Oct.","Nov.","Dec."],L=["January","February","March","April","May","June",'
+    '"July","August","September","October","November","December"];'
+    'document.querySelectorAll(".cite-acc").forEach(function(s){s.textContent=s.getAttribute("data-style")==="mla"'
+    '?" Accessed "+d.getDate()+" "+M[d.getMonth()]+" "+d.getFullYear()+"."'
+    ':" Accessed "+L[d.getMonth()]+" "+d.getDate()+", "+d.getFullYear()+".";});})();</script>'
+)
+
+
+def cite_block(author, path, title="", work="", translator=""):
+    """MLA (9th ed.) and Chicago entries for a poem (`title`) or a part of a long work
+    (`work`, plus the part's `title` when the work has several), on the permanent address."""
+    url = SITE + path
+    tr = re.sub(r"\s*\([^)]*\)\s*$", "", (translator or "").strip())
+    tr = re.sub(r"\s*&\s*", " and ", re.sub(r"^trans\.\s*", "", tr, flags=re.I))
+    by = f" Translated by {esc(tr)}." if tr else ""
+    if not work:
+        what = f"“{esc(cite_end(title))}”"
+    elif title and title != work:
+        what = f"<i>{esc(work)}</i>, {esc(cite_end(title))}"
+    else:
+        what = f"<i>{esc(cite_end(work))}</i>"
+    lead = f"{esc(cite_end(cite_name(author)))} {what}{by}"
+    mla = (f'{lead} <i>Poetry Codex</i>, {esc(url.replace("https://", ""))}.'
+           '<span class="cite-acc" data-style="mla"></span>')
+    chicago = f'{lead} Poetry Codex.<span class="cite-acc" data-style="chicago"></span> {esc(url)}.'
+    label = "Cite this text" if work else "Cite this poem"
+    entries = "".join(
+        f'\n        <div class="cite-entry"><p class="cite-style">{style}</p><p class="cite-text">{text}</p></div>'
+        for style, text in (("MLA", mla), ("Chicago", chicago)))
+    return (f'<section class="cite-static" aria-label="{label}">\n'
+            f'      <p class="section-label">{label}</p>\n'
+            f'      <div class="cite-box">{entries}\n      </div>\n'
+            f'      {CITE_DATE_JS}\n'
+            f'      </section>')
+
+
 def text_lang(category, translator):
     """Turkish and Ottoman poems in the original are Turkish; everything else is English."""
     return "tr" if category == "Turkish & Ottoman" and not (translator or "").strip() else "en"
@@ -316,6 +392,7 @@ def poem_page(poet, poems, n, p):
       <hr class="rule">
       {text_block(p["text"], p.get("translator"), lang_attr)}
       {('<div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">' + esc(note) + '</p>') if note else ''}
+      {cite_block(author, f"/poem/{slug}/{n}/", title=title, translator=p.get("translator"))}
       <p class="read-in-archive"><a href="/#/poem/{slug}/{n}">Read this poem with the Codex →</a></p>
       <nav class="pn-row">{prev_link}{next_link}</nav>
     </article>"""
@@ -450,6 +527,7 @@ def section_page(w, poet, grouped, i):
       {source_line(w)}
       <hr class="rule">
       {text_block(s.get("text"), w.get("translator"))}
+      {cite_block(w["author"], f"/work/{slug}/{i}/", title="" if whole else s["title"], work=w["title"], translator=w.get("translator"))}
       <p class="read-in-archive"><a href="/#/work/{slug}/{i}">Read this with the Codex →</a></p>
       <nav class="pn-row">{prev_link}{next_link}</nav>
     </article>"""
