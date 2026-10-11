@@ -819,6 +819,34 @@
     wireSearch();
   }
 
+  // While the Oracle rests, its door holds the poem of the day: the same poem for every
+  // reader on a given (UTC) day, no server involved. The pool is the poems with a Codex Note
+  // (`hasNote`, from build_index.py) or, in an index built before that field, every poem
+  // whose opening lines fit a card. A prime stride walks the pool so that one day's poet is
+  // not the next day's too.
+  function poemOfTheDay() {
+    const fits = (p) => p.excerpt && p.excerpt.split("\n").every((l) => l.length <= 90);
+    let pool = DATA.poems.filter((p) => p.hasNote && fits(p));
+    if (!pool.length) pool = DATA.poems.filter(fits);
+    if (!pool.length) return null;
+    const day = Math.floor(Date.now() / 864e5);
+    return pool[(day * 7919) % pool.length];
+  }
+  function poemOfTheDayHTML() {
+    const p = poemOfTheDay();
+    if (!p) return "";
+    const d = new Date();
+    const lang = langAttr(p.authorSlug, p.translator);
+    return `<a class="door door-today" href="#/poem/${esc(p.id)}">
+          <span class="d-kicker">Poem of the day · ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]}</span>
+          <span class="d-name"${lang}>${esc(p.title)}</span>
+          <span class="d-by">${esc(p.author)}${p.translator ? " · " + esc(translatorShort(p.translator).replace(/^trans\.\s*/i, "trans. ")) : ""}</span>
+          <span class="d-verse"${lang}>${esc(p.excerpt)}</span>
+          <span class="d-go">Read the poem &rarr;</span>
+          <span class="d-rest">While the Oracle rests, a new poem sits here each day.</span>
+        </a>`;
+  }
+
   function renderHome() {
     setTitle("");
     // Two doors under one roof: the collection, and the way of asking about it.
@@ -833,13 +861,13 @@
           from Homer and Anglo-Saxon verse to the early twentieth century \u2014 every one in the public domain.</span>
           <span class="d-go">Enter &rarr;</span>
         </a>
-        <a class="door door-oracle${ORACLE_LIVE ? "" : " is-resting"}" href="#/oracle">
+        ${ORACLE_LIVE ? `<a class="door door-oracle" href="#/oracle">
           <img src="oracle-248.webp" alt="" width="124" height="124" />
           <span class="d-name">The Oracle</span>
           <span class="d-line">Ask for a poem, an argument, or a place to start.
           It searches the collection before it answers.</span>
-          <span class="d-go">${ORACLE_LIVE ? "Consult &rarr;" : "Resting"}</span>
-        </a>
+          <span class="d-go">Consult &rarr;</span>
+        </a>` : poemOfTheDayHTML()}
       </div>
 
       <p class="doors-or">Or go straight to an era</p>

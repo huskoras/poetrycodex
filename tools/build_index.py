@@ -99,6 +99,9 @@ def build():
             }
             if "translator" in pm:
                 entry["translator"] = pm["translator"]
+            # The home page's poem of the day is drawn from the poems with a Codex Note.
+            if (pm.get("note") or "").strip():
+                entry["hasNote"] = True
             index_poems.append(entry)
             subject_tally[pm["primarySubject"]] = subject_tally.get(pm["primarySubject"], 0) + 1
 
