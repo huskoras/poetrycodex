@@ -1435,11 +1435,18 @@
         is already open on every poem page, under “Read with the Codex”. Ask how <em>Beowulf</em> reads
         through a feminist lens, or how a Donne lyric looks first to a New Critic and then to a
         historicist, and the answer should be an argument rather than a summary.</p>
-        <p>The engine is grounded in the history of criticism itself: the methods, the debates and the
-        critics who shaped them. Its purpose is to lead readers to scholarship, not to replace it. Every
-        reading is generated and names its method, so that a reader can disagree with it intelligently;
-        it never attributes a claim to a named critic. Real citation of scholarship will come when the
-        archive is joined to open-access criticism.</p>
+        <p><strong>How the Codex reads.</strong> When you ask for a reading of a poem, a language model
+        (Claude, made by Anthropic) reads the poem in front of you and writes a short critical response
+        through the tradition you choose. It works from the poem and from what it learned in training,
+        and it is instructed never to invent a quotation, a date, an edition, or the opinion of a named
+        critic; it may name a critical tradition, but it does not put words in a scholar’s mouth. The
+        engine does not claim to give the right reading, only a starting point for yours; machine-written
+        readings can be shallow or wrong, and they are no substitute for a teacher, a good edition, or a
+        library.</p>
+        <p><strong>What comes next</strong> (a plan, not a feature): we are assembling a library of
+        public-domain criticism and essays; once it is switched on, the engine will answer with real
+        passages from that library in front of it, each quotation copied from the source and footnoted
+        to the full article here — and it will say so when the library has nothing to offer.</p>
         <p>What the engine offers, and what it is growing into:</p>
         <ul class="about-list">
           <li><strong>Semantic search</strong> — find poems by what they are about, not by the words
