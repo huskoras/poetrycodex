@@ -594,6 +594,11 @@
     "Italian",
     "French",
     "Nordic",
+    "German",
+    "Spanish & Portuguese",
+    "Chinese & Japanese",
+    "Celtic",
+    "Russian & Slavic",
   ];
   const CATEGORY_SLUGS = {
     "Ancient Greek & Roman": "ancient-greek-roman",
@@ -611,6 +616,11 @@
     "Italian": "italian",
     "French": "french",
     "Nordic": "nordic",
+    "German": "german",
+    "Spanish & Portuguese": "spanish-portuguese",
+    "Chinese & Japanese": "chinese-japanese",
+    "Celtic": "celtic",
+    "Russian & Slavic": "russian-slavic",
   };
   const SLUG_TO_CATEGORY = Object.fromEntries(Object.entries(CATEGORY_SLUGS).map(([k, v]) => [v, k]));
   const EPICS_SLUG = "epics";
