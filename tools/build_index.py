@@ -122,17 +122,21 @@ def build():
             "workCount": work_count_by_slug.get(slug, 0),
         })
         for pm in poet_poems:
+            # Slim entries (C2): the poet's slug is the first half of the id and the author is
+            # the poet's name (verify_split.py checks both), so neither is repeated 14,000 times;
+            # subjects are written only when there is more than the primary one, collection and
+            # translator only when there is one. app.js and build_search_index.py fill them back in.
             entry = {
                 "id": pm["id"],
                 "title": pm["title"],
-                "authorSlug": pm["authorSlug"],
-                "author": pm["author"],
                 "primarySubject": pm["primarySubject"],
-                "subjects": pm["subjects"],
-                "collection": pm.get("collection"),
                 "excerpt": make_excerpt(pm["text"]),
             }
-            if "translator" in pm:
+            if pm["subjects"] != [pm["primarySubject"]]:
+                entry["subjects"] = pm["subjects"]
+            if pm.get("collection"):
+                entry["collection"] = pm["collection"]
+            if pm.get("translator"):
                 entry["translator"] = pm["translator"]
             # The home page's poem of the day is drawn from the poems with a Codex Note.
             if (pm.get("note") or "").strip():
@@ -173,16 +177,10 @@ def build():
     subjects = [{"name": k, "count": v} for k, v in subject_tally.items()]
     subjects.sort(key=lambda s: -s["count"])
 
-    # legacyIndex: a one-time, frozen mapping from the OLD #/poem/<i> numeric
-    # array index (from the pre-split poems.json) to the new stable id, written
-    # once by tools/split_data.py. It never changes after that -- new poems
-    # added going forward only ever get new stable ids, never a legacy number
-    # -- so we just carry the file through unmodified on every rebuild.
-    legacy_index = []
-    if os.path.exists(LEGACY_INDEX_PATH):
-        with open(LEGACY_INDEX_PATH, encoding="utf-8") as f:
-            legacy_index = json.load(f)
-
+    # legacyIndex: the frozen map from the OLD #/poem/<i> numeric array index (pre-split
+    # poems.json) to the new stable id lives in data/legacy_index.json (written once by
+    # tools/split_data.py, never changed). It is no longer copied in here (C2): app.js
+    # fetches that file only when an old numeric link is opened.
     index = {
         "count": len(index_poems),
         "workCount": len(index_works),
@@ -190,11 +188,26 @@ def build():
         "subjects": subjects,
         "works": index_works,
         "poems": index_poems,
-        "legacyIndex": legacy_index,
     }
 
-    with open(INDEX_PATH, "w", encoding="utf-8") as f:
-        json.dump(index, f, ensure_ascii=False, indent=1)
+    # Compact JSON, one poet / work / poem per line: indent=1 spent about a third of the
+    # file on spaces, and a line per record keeps git diffs readable.
+    def dumps(o):
+        return json.dumps(o, ensure_ascii=False, separators=(",", ":"))
+    out = ["{"]
+    keys = list(index)
+    for k, key in enumerate(keys):
+        tail = "," if k < len(keys) - 1 else ""
+        v = index[key]
+        if isinstance(v, list) and v:
+            out.append(dumps(key) + ":[")
+            out.append(",\n".join(dumps(x) for x in v))
+            out.append("]" + tail)
+        else:
+            out.append(dumps(key) + ":" + dumps(v) + tail)
+    out.append("}")
+    with open(INDEX_PATH, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(out) + "\n")
 
     size = os.path.getsize(INDEX_PATH)
     print(f"Wrote {INDEX_PATH} ({size / 1024:.1f} KB)")

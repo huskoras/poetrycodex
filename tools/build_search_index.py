@@ -29,14 +29,18 @@ def main():
         idx = json.load(f)
 
     era = {p["slug"]: p.get("category") or "" for p in idx["poets"]}
+    # Since C2 the index's poem entries carry no author / authorSlug: the slug is the first
+    # half of the id and the author is the poet's name (an older index still has both).
+    name = {p["slug"]: p["name"] for p in idx["poets"]}
+    slug_of = lambda p: p.get("authorSlug") or p["id"].split("/")[0]
 
     poems = [
         {
             "i": p["id"],
             "t": p["title"],
-            "a": p["author"],
+            "a": p.get("author") or name.get(slug_of(p), ""),
             "s": p.get("primarySubject") or "",
-            "e": era.get(p["authorSlug"], ""),
+            "e": era.get(slug_of(p), ""),
         }
         for p in idx["poems"]
     ]

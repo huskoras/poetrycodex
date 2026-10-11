@@ -110,9 +110,16 @@ def main():
         if src is None:
             errors.append(f"index stub {stub.get('id')} has no poem in any poet file")
             continue
+        # Since C2 a stub has no author / authorSlug (app.js derives them from the id and the
+        # poet's name), so the source must agree with what will be derived.
+        slug = stub["id"].split("/")[0]
+        derived = {"authorSlug": slug, "author": (idx_poets.get(slug) or {}).get("name")}
         for f in ("title", "author", "authorSlug", "primarySubject"):
-            if stub.get(f) != src.get(f):
-                errors.append(f"{stub['id']}: index {f}={stub.get(f)!r} != source {src.get(f)!r}")
+            want = stub.get(f, derived.get(f))
+            if want != src.get(f):
+                errors.append(f"{stub['id']}: index {f}={want!r} != source {src.get(f)!r}")
+        if stub.get("subjects", [src.get("primarySubject")]) != src.get("subjects"):
+            errors.append(f"{stub['id']}: index subjects differ from source")
 
     # ---- subjects ----
     idx_subjects = {s["name"]: s["count"] for s in idx.get("subjects", [])}

@@ -631,6 +631,16 @@
         s.poems += p.poemCount || 0;
         s.works += p.workCount || 0;
       });
+      // Since C2 the index leaves out what it can derive: the poet's slug (the first half of
+      // the id), the author (the poet's name), subjects when only the primary one, and empty
+      // collection / translator. Filled back in here, so the rest of the app is unchanged; an
+      // older index that still has them all works the same.
+      d.poems.forEach((p) => {
+        if (!p.authorSlug) p.authorSlug = p.id.slice(0, p.id.lastIndexOf("/"));
+        if (!p.author) p.author = (POETS[p.authorSlug] || {}).name || "";
+        if (!p.subjects) p.subjects = [p.primarySubject];
+        if (p.collection === undefined) p.collection = null;
+      });
       // Sorted by title once; every list filters this and so keeps the order.
       d.poems.forEach((p) => { p._sk = sortKey(p.title); });
       SORTED = d.poems.slice().sort((a, b) => COLLATE.compare(a._sk, b._sk));
@@ -736,11 +746,22 @@
     if ((m = h.match(/^#\/poem\/(\d+)$/))) {
       // Legacy link: #/poem/<arrayIndex> from the old single-poems.json array.
       // Resolve via the frozen legacyIndex map and redirect to the new stable id.
+      // The map is its own file (data/legacy_index.json, 180 KB), fetched only for such a
+      // link; an index built before C2 still carries it as legacyIndex.
       setRoute("poems", "sub");
       const oldI = parseInt(m[1], 10);
-      const id = DATA.legacyIndex && DATA.legacyIndex[oldI];
-      if (id) location.replace(location.href.split("#")[0] + "#/poem/" + id);
-      else { app.innerHTML = `<p class="empty">That poem could not be found.</p>`; }
+      const go = (map) => {
+        if (location.hash !== h) return;   // the reader has moved on meanwhile
+        const id = map && map[oldI];
+        if (id) location.replace(location.href.split("#")[0] + "#/poem/" + id);
+        else app.innerHTML = `<p class="empty">That poem could not be found.</p>`;
+      };
+      if (DATA.legacyIndex) go(DATA.legacyIndex);
+      else {
+        renderLoading();
+        fetch("data/legacy_index.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+          .then(go).catch(() => go(null));
+      }
     }
     else if ((m = h.match(/^#\/poem\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderDetail(m[1], parseInt(m[2], 10)); }
     else if ((m = h.match(/^#\/work\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderWorkSection(m[1], parseInt(m[2], 10)); }
