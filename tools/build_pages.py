@@ -54,6 +54,13 @@ FONTS = (
 )
 
 
+# The reader's "Aa" choices in the app (text size, light/dark: localStorage pc-text /
+# pc-theme), applied before the page draws, exactly as the script in index.html does.
+VIEW_PREFS = ('<script>try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),'
+              's=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;'
+              'if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>')
+
+
 def esc(s):
     return html.escape(s or "", quote=True)
 
@@ -333,6 +340,7 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   {FONTS}
+  {VIEW_PREFS}
   <link rel="stylesheet" href="/styles.css?v={CSS_V}" />
 </head>
 <body>
@@ -470,7 +478,60 @@ def work_title(w, grouped):
     return f"{w['title']} — {w['author']}" + (", trans. " + " & ".join(names) if grouped and names else "")
 
 
-def work_page(w, poet, grouped):
+# "Also in this archive": the other translations of a work, as on the app's part pages
+# (otherTranslations / matchingPart / otherTrHTML in app.js, same rules): works count as
+# translations of each other only when they share a workGroup and have different
+# translators; a book is matched by its title ("Book VI"), else by position when both have
+# as many parts. Index entries (titles only) are enough.
+def tr_label(t):
+    """'trans. Samuel Butler (1898)' -> 'Samuel Butler’s translation (1898)'."""
+    name = re.sub(r"^trans\.\s*", "", t or "", flags=re.I)
+    year = re.search(r"\(([^)]*)\)\s*$", name)
+    short = re.sub(r"\s*\([^)]*\)\s*$", "", name)
+    return f"{short}’s translation" + (f" ({year.group(1)})" if year else "")
+
+
+def other_translations(w, all_works):
+    if not w.get("workGroup") or not w.get("translator"):
+        return []
+    short = lambda t: re.sub(r"\s*\([^)]*\)\s*$", "", re.sub(r"^trans\.\s*", "", t or "", flags=re.I))
+    mine = short(w["translator"])
+    return [o for o in all_works if o["slug"] != w["slug"] and o.get("workGroup") == w["workGroup"]
+            and o.get("translator") and short(o["translator"]) != mine]
+
+
+def part_key(t):
+    t = unicodedata.normalize("NFD", (t or "").lower())
+    return re.sub(r"[^a-z0-9]+", "", "".join(c for c in t if not unicodedata.combining(c)))
+
+
+def matching_part(w, o, i):
+    ws, os_ = w.get("sections") or [], o.get("sections") or []
+    k = part_key(ws[i]["title"]) if i < len(ws) else ""
+    for j, sec in enumerate(os_):
+        if k and part_key(sec["title"]) == k:
+            return j
+    return i if len(os_) == len(ws) and i < len(os_) else -1
+
+
+def also_block(w, others, i=None):
+    """The gold-edged box under the translator line; i is the book on a part page."""
+    if not others:
+        return ""
+    rows = []
+    for o in others:
+        j = -1 if i is None else matching_part(w, o, i)
+        if j >= 0:
+            rows.append(f'<p class="also-row"><a href="/work/{o["slug"]}/{j}/">{esc(tr_label(o["translator"]))}'
+                        f' · {esc(o["sections"][j]["title"])}</a>'
+                        f' <a class="compare-btn" href="/#/work/{w["slug"]}/{i}/with/{o["slug"]}">Compare side by side</a></p>')
+        else:
+            rows.append(f'<p class="also-row"><a href="/work/{o["slug"]}/">{esc(tr_label(o["translator"]))} →</a></p>')
+    return ('<div class="also-tr">\n        <p class="section-label">Also in this archive</p>\n        '
+            + "\n        ".join(rows) + "\n      </div>")
+
+
+def work_page(w, poet, grouped, others=()):
     """A long work's contents: what it is, who wrote and translated it, and every part."""
     slug = w["slug"]
     sections = w.get("sections") or []
@@ -488,6 +549,7 @@ def work_page(w, poet, grouped):
       {subtitle}
       <p class="detail-author">by <a href="/poet/{w["authorSlug"]}/">{esc(w["author"])}</a></p>
       {source_line(w)}
+      {also_block(w, others)}
       {blurb}
       <hr class="rule">
       <p class="section-label">Contents · {parts}</p>
@@ -508,7 +570,7 @@ def work_page(w, poet, grouped):
                  image=share_image(poet), ld=ld)
 
 
-def section_page(w, poet, grouped, i):
+def section_page(w, poet, grouped, i, others=()):
     """One book, canto or part of a long work, in full."""
     slug = w["slug"]
     sections = w["sections"]
@@ -525,6 +587,7 @@ def section_page(w, poet, grouped, i):
       <h1 class="detail-title">{esc(s["title"])}</h1>
       <p class="detail-author">by <a href="/poet/{w["authorSlug"]}/">{esc(w["author"])}</a></p>
       {source_line(w)}
+      {also_block(w, others, i)}
       <hr class="rule">
       {text_block(s.get("text"), w.get("translator"))}
       {cite_block(w["author"], f"/work/{slug}/{i}/", title="" if whole else s["title"], work=w["title"], translator=w.get("translator"))}
@@ -643,12 +706,13 @@ def main():
                 continue
             w = json.load(io.open(wf, encoding="utf-8"))
             grouped = group_size.get(w.get("workGroup"), 0) > 1
-            write(os.path.join(ROOT, "work", w["slug"], "index.html"), work_page(w, poet, grouped))
+            others = other_translations(stub, idx.get("works") or [])
+            write(os.path.join(ROOT, "work", w["slug"], "index.html"), work_page(w, poet, grouped, others))
             urls.append(f"{SITE}/work/{w['slug']}/")
             work_count += 1
             for i in range(len(w.get("sections") or [])):
                 write(os.path.join(ROOT, "work", w["slug"], str(i), "index.html"),
-                      section_page(w, poet, grouped, i))
+                      section_page(w, poet, grouped, i, others))
                 urls.append(f"{SITE}/work/{w['slug']}/{i}/")
                 section_count += 1
 
