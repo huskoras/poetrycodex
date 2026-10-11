@@ -12,12 +12,63 @@
   --accent: #26415c;        /* deep navy — pairs with the gold coin */
   --accent-2: #345678;
   --gold: #a9852f;
+  --on-accent: #ffffff;     /* text on a navy or gold button */
+  --error: #9c3b2e;
+  --ts: 1;                  /* reading text size: 1, 1.15 or 1.3 (the "Aa" switch) */
+  color-scheme: light;
   --shadow-sm: 0 1px 2px rgba(23,20,15,.05);
   --shadow: 0 2px 4px rgba(23,20,15,.05), 0 10px 30px rgba(23,20,15,.07);
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, sans-serif;
   --wrap: 1180px;
 }
+/* Night reading: the same navy and gold on a dark page. It follows the device's setting
+   unless the reader picks Light or Dark under "Aa" (data-theme on <html>, set before the
+   page draws by the small script in the <head>). */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #ebe5d8;
+    --ink-soft: #c3bcad;
+    --faint: #918a7c;
+    --masthead: #1a2028;
+    --masthead-2: #262e38;
+    --body: #12161b;
+    --surface: #171c22;
+    --surface-alt: #1d232a;
+    --line: #2b323b;
+    --line-strong: #3a434d;
+    --accent: #a3bfdc;        /* the navy, lifted so it reads on a dark page */
+    --accent-2: #86a5c7;
+    --gold: #cba650;
+    --on-accent: #10161d;
+    --error: #e3937f;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.3);
+    --shadow: 0 2px 4px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ink: #ebe5d8;
+  --ink-soft: #c3bcad;
+  --faint: #918a7c;
+  --masthead: #1a2028;
+  --masthead-2: #262e38;
+  --body: #12161b;
+  --surface: #171c22;
+  --surface-alt: #1d232a;
+  --line: #2b323b;
+  --line-strong: #3a434d;
+  --accent: #a3bfdc;        /* the navy, lifted so it reads on a dark page */
+  --accent-2: #86a5c7;
+  --gold: #cba650;
+  --on-accent: #10161d;
+  --error: #e3937f;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.3);
+  --shadow: 0 2px 4px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+  color-scheme: dark;
+}
+:root[data-text="l"] { --ts: 1.15; }
+:root[data-text="xl"] { --ts: 1.3; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -60,12 +111,12 @@ a { color: inherit; }
 .tb-search { margin-left: auto; display: flex; box-shadow: var(--shadow-sm); }
 .tb-search input {
   font-family: var(--serif); font-size: .92rem; width: clamp(120px, 20vw, 210px);
-  padding: .42rem .75rem; border: 1px solid var(--line-strong); border-right: none; background: #fff; color: var(--ink);
+  padding: .42rem .75rem; border: 1px solid var(--line-strong); border-right: none; background: var(--surface); color: var(--ink);
 }
 .tb-search input:focus { outline: none; border-color: var(--accent-2); }
 .tb-search button {
   display: flex; align-items: center; justify-content: center; width: 40px;
-  border: none; background: var(--accent); color: #fff; cursor: pointer; transition: background .15s;
+  border: none; background: var(--accent); color: var(--on-accent); cursor: pointer; transition: background .15s;
 }
 .tb-search button:hover { background: var(--accent-2); }
 /* Between phone and desktop widths the one-row bar is tight: "The Oracle" broke onto two
@@ -99,9 +150,9 @@ body[data-route="home"] .topbar { display: none; }        /* slim bar hidden on 
   font-size: clamp(1.45rem, 3.8vw, 2.25rem); letter-spacing: .015em; color: var(--ink-soft); margin: 0; }
 .hero-search { display: flex; box-shadow: var(--shadow-sm); margin-top: .5rem; }
 .hero-search input { font-family: var(--serif); font-size: 1.1rem; width: min(72vw, 440px);
-  padding: .82rem 1.15rem; border: 1px solid var(--line-strong); border-right: none; background: #fff; color: var(--ink); }
+  padding: .82rem 1.15rem; border: 1px solid var(--line-strong); border-right: none; background: var(--surface); color: var(--ink); }
 .hero-search input:focus { outline: none; border-color: var(--accent-2); }
-.hero-search button { width: 54px; border: none; background: var(--accent); color: #fff; cursor: pointer;
+.hero-search button { width: 54px; border: none; background: var(--accent); color: var(--on-accent); cursor: pointer;
   display: flex; align-items: center; justify-content: center; transition: background .15s; }
 .hero-search button:hover { background: var(--accent-2); }
 .hero-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.9rem; margin-top: .3rem; }
@@ -129,7 +180,7 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 .chip { font-family: var(--sans); font-size: .8rem; padding: .38rem .8rem; border: 1px solid var(--line-strong);
   background: var(--surface); color: var(--ink-soft); border-radius: 999px; cursor: pointer; transition: all .15s; }
 .chip:hover { border-color: var(--accent-2); color: var(--accent); }
-.chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.chip.active { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .chip .n { opacity: .6; margin-left: .35rem; font-variant-numeric: tabular-nums; }
 
 .filter-banner { display: flex; align-items: center; gap: .8rem; flex-wrap: wrap; background: var(--surface-alt);
@@ -240,6 +291,27 @@ a.poet-card, a.topic-card { display: block; }
   font-family: var(--sans); font-size: .82rem; letter-spacing: .06em; color: var(--ink-soft); padding: 0; margin-bottom: 2rem;
   text-transform: uppercase; font-weight: 600; }
 .back:hover { color: var(--accent); }
+/* "Aa": text size and theme, top right of a poem or a book of a long work. */
+.detail { position: relative; }
+.detail > .back { margin-right: 4.4rem; }   /* a long work title wraps before it reaches "Aa" */
+.rt { position: absolute; top: -.3rem; right: 0; z-index: 45; }
+.rt-toggle { font-family: var(--serif); font-size: 1rem; line-height: 1; color: var(--ink-soft); background: var(--surface);
+  border: 1px solid var(--line-strong); border-radius: 999px; padding: .38rem .8rem; cursor: pointer;
+  transition: border-color .15s, color .15s; }
+.rt-toggle:hover, .rt-toggle[aria-expanded="true"] { border-color: var(--accent-2); color: var(--accent); }
+.rt-panel { position: absolute; top: calc(100% + .45rem); right: 0; width: 15.5rem; padding: .9rem 1rem;
+  background: var(--surface); border: 1px solid var(--line-strong); border-radius: 6px; box-shadow: var(--shadow); }
+.rt-panel[hidden] { display: none; }
+.rt-row + .rt-row { margin-top: .85rem; }
+.rt-label { display: block; font-family: var(--sans); font-size: .64rem; font-weight: 700; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--faint); margin-bottom: .4rem; }
+.rt-opts { display: flex; gap: .35rem; }
+.rt-opts button { flex: 1; font-family: var(--sans); font-size: .76rem; font-weight: 600; color: var(--ink-soft);
+  background: var(--surface); border: 1px solid var(--line-strong); border-radius: 4px; padding: .4rem .3rem; cursor: pointer; }
+.rt-opts button:hover { border-color: var(--accent-2); color: var(--accent); }
+.rt-opts button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.rt-opts .rt-a { font-family: var(--serif); font-weight: 500; }
+.rt-opts .rt-a1 { font-size: .8rem; } .rt-opts .rt-a2 { font-size: .96rem; } .rt-opts .rt-a3 { font-size: 1.14rem; }
 .detail-subject { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: .9rem; }
 .detail-title { font-family: var(--serif); font-weight: 500; font-size: clamp(2rem, 6vw, 3.1rem); line-height: 1.08; margin: 0 0 .55rem; }
 .detail-author { font-family: var(--serif); font-style: italic; font-size: 1.25rem; color: var(--ink-soft); margin: 0 0 1.6rem; }
@@ -251,7 +323,7 @@ a.poet-card, a.topic-card { display: block; }
 .rule { border: none; border-top: 1px solid var(--line); margin: 2.1rem 0; }
 .rule-ornament { text-align: center; color: var(--gold); margin: 2.3rem 0; letter-spacing: .6rem; }
 .section-label { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); margin: 0 0 .9rem; font-weight: 700; }
-.poem-text { font-family: var(--serif); font-size: 1.2rem; line-height: 1.85; color: var(--ink);
+.poem-text { font-family: var(--serif); font-size: calc(1.2rem * var(--ts)); line-height: 1.85; color: var(--ink);
   padding-left: 1.3rem; border-left: 3px solid var(--accent); font-style: normal; font-weight: 400; margin: 0; }
 /* Each line is its own block (poemHTML in app.js, para_html in tools/build_pages.py).
    A line too long for the screen wraps with a hanging indent, as printed verse does,
@@ -264,7 +336,7 @@ a.poet-card, a.topic-card { display: block; }
 .poem-text .ln + br { display: none; }
 /* Prose translations (Gordon's riddles, Kennedy's Cynewulf, Chodzko, Wharton's Sappho)
    are paragraphs in their source editions, and read as paragraphs here. */
-.poem-text.is-prose { border-left: 0; padding-left: 0; font-size: 1.12rem; line-height: 1.75;
+.poem-text.is-prose { border-left: 0; padding-left: 0; font-size: calc(1.12rem * var(--ts)); line-height: 1.75;
   text-align: justify; hyphens: auto; }
 .poem-text.is-prose p { margin: 0 0 1em; }
 .poem-text.is-prose p:last-child { margin-bottom: 0; }
@@ -283,17 +355,17 @@ a.poet-card, a.topic-card { display: block; }
 .poem-text.numbered .ln { position: relative; }
 .poem-text.numbered .ln[data-n]::after { content: attr(data-n); position: absolute; top: 0; right: -2.6rem; width: 2.1rem;
   text-align: right; text-indent: 0; font-family: var(--sans); font-size: .62rem; font-weight: 600;
-  line-height: 2.22rem; /* = the poem's 1.2rem x 1.85, so the number sits on its line */ color: var(--faint); }
+  line-height: calc(2.22rem * var(--ts)); /* = the poem's 1.2rem x 1.85, so the number sits on its line */ color: var(--faint); }
 /* On a phone a slightly smaller face and a narrower margin let more of each line fit;
    the lines that still wrap get the hanging indent. Justified prose would open wide
    gaps in so narrow a column, so prose sets ragged-right there. */
 @media (max-width: 560px) {
-  .poem-text { font-size: 1.06rem; padding-left: .9rem; }
-  .poem-text.is-prose { font-size: 1.02rem; text-align: left; }
+  .poem-text { font-size: calc(1.06rem * var(--ts)); padding-left: .9rem; }
+  .poem-text.is-prose { font-size: calc(1.02rem * var(--ts)); text-align: left; }
   .poem-text.numbered { padding-right: 2.1rem; }
-  .poem-text.numbered .ln[data-n]::after { right: -2.1rem; width: 1.8rem; line-height: 1.96rem; /* 1.06 x 1.85 */ }
+  .poem-text.numbered .ln[data-n]::after { right: -2.1rem; width: 1.8rem; line-height: calc(1.96rem * var(--ts)); /* 1.06 x 1.85 */ }
 }
-.note-block { font-family: var(--serif); font-size: 1.12rem; line-height: 1.75; color: var(--ink-soft); }
+.note-block { font-family: var(--serif); font-size: calc(1.12rem * var(--ts)); line-height: 1.75; color: var(--ink-soft); }
 .themes { display: flex; flex-wrap: wrap; gap: .5rem; }
 .theme-tag { font-family: var(--sans); font-size: .8rem; padding: .35rem .8rem; border: 1px solid var(--line-strong);
   border-radius: 999px; color: var(--ink-soft); cursor: pointer; transition: all .15s; background: var(--surface); }
@@ -425,8 +497,8 @@ a.poet-card, a.topic-card { display: block; }
 .compare-open:hover { text-decoration: underline; }
 /* Wide screens: each translation scrolls in its own column, which fills the window. */
 .compare-pane { height: calc(100vh - 17rem); min-height: 20rem; overflow-y: auto; padding: 0 1rem .5rem 0; }
-.compare-pane .poem-text { font-size: 1.08rem; line-height: 1.75; }
-.compare-pane .poem-text.is-prose { font-size: 1.04rem; }
+.compare-pane .poem-text { font-size: calc(1.08rem * var(--ts)); line-height: 1.75; }
+.compare-pane .poem-text.is-prose { font-size: calc(1.04rem * var(--ts)); }
 .compare-col .empty { padding: 3rem 0; }
 .compare-col .empty a { color: var(--accent); }
 /* Phones and narrow windows: stacked, one after the other, in the page's own scroll. */
@@ -532,11 +604,11 @@ a.poet-card, a.topic-card { display: block; }
 .lens:hover:not(:disabled) {
   border-color: var(--accent); color: var(--accent); box-shadow: var(--shadow-sm);
 }
-.lens.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.lens.active { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .lens:disabled { opacity: .4; cursor: default; box-shadow: none; }
 .lens-alt { border-style: dashed; color: var(--gold); border-color: var(--gold); }
 .lens-alt:hover:not(:disabled) { border-color: var(--gold); color: var(--gold); }
-.lens-alt.active { background: var(--gold); border-color: var(--gold); color: #fff; }
+.lens-alt.active { background: var(--gold); border-color: var(--gold); color: var(--on-accent); }
 
 /* --- question + compare rows --- */
 .ask-form { display: flex; align-items: flex-end; gap: .7rem; margin: 0 0 1rem; position: relative; }
@@ -558,7 +630,7 @@ textarea.ask-input {
   font-family: var(--sans); font-size: .78rem; font-weight: 700;
   letter-spacing: .1em; text-transform: uppercase;
   padding: 1rem 1.9rem; cursor: pointer; border-radius: 6px;
-  color: #fff; background: var(--gold); border: 1px solid var(--gold);
+  color: var(--on-accent); background: var(--gold); border: 1px solid var(--gold);
   transition: opacity .15s; white-space: nowrap;
 }
 .ask-send:hover:not(:disabled) { opacity: .86; }
@@ -598,7 +670,7 @@ textarea.ask-input {
   text-transform: uppercase; color: var(--ink-soft); padding-top: .3rem;
 }
 .engine-out.is-loading { animation: engine-pulse 1.4s ease-in-out infinite; }
-.engine-out.is-error { border-left-color: #9c3b2e; color: #9c3b2e; }
+.engine-out.is-error { border-left-color: var(--error); color: var(--error); }
 @keyframes engine-pulse { 0%,100% { opacity: .42; } 50% { opacity: 1; } }
 
 /* A gloss alternates original line and modern rendering, so it wants tighter
@@ -632,7 +704,7 @@ textarea.ask-input {
 .compare-form .ask-send {
   background: transparent; color: var(--gold); border-color: var(--gold);
 }
-.compare-form .ask-send:hover:not(:disabled) { background: var(--gold); color: #fff; opacity: 1; }
+.compare-form .ask-send:hover:not(:disabled) { background: var(--gold); color: var(--on-accent); opacity: 1; }
 
 
 /* ============ THE ORACLE ============ */
@@ -666,7 +738,7 @@ textarea.ask-input {
 .o-turn { display: flex; gap: 1rem; }
 .o-you { justify-content: flex-end; }
 .o-you .o-bubble {
-  background: var(--accent); color: #fff; border-radius: 14px 14px 3px 14px;
+  background: var(--accent); color: var(--on-accent); border-radius: 14px 14px 3px 14px;
   padding: .85rem 1.15rem; max-width: 80%;
   font-family: var(--serif); font-size: 1.06rem; line-height: 1.6;
 }
@@ -686,7 +758,7 @@ textarea.ask-input {
   letter-spacing: .07em; text-transform: uppercase;
 }
 .o-status { color: var(--faint) !important; animation: engine-pulse 1.4s ease-in-out infinite; }
-.o-error { color: #9c3b2e !important; }
+.o-error { color: var(--error) !important; }
 
 .o-composer {
   display: flex; align-items: flex-end; gap: .7rem;
@@ -706,7 +778,7 @@ textarea.ask-input {
   font-family: var(--sans); font-size: .78rem; font-weight: 700;
   letter-spacing: .1em; text-transform: uppercase;
   padding: 1rem 1.7rem; cursor: pointer; border-radius: 8px;
-  color: #fff; background: var(--gold); border: 1px solid var(--gold);
+  color: var(--on-accent); background: var(--gold); border: 1px solid var(--gold);
   transition: opacity .15s;
 }
 .o-send:hover:not(:disabled) { opacity: .86; }
@@ -914,7 +986,7 @@ textarea.ask-input {
 .archive-search input:focus { outline: none; border-color: var(--accent-2); }
 .archive-search button {
   width: 60px; border: none; cursor: pointer;
-  background: var(--accent); color: #fff; border-radius: 0 4px 4px 0;
+  background: var(--accent); color: var(--on-accent); border-radius: 0 4px 4px 0;
   display: grid; place-items: center;
 }
 .archive-search button:hover { background: var(--accent-2); }
@@ -955,10 +1027,14 @@ textarea.ask-input {
 /* ============ PRINT: a poem printed for a class is the poem, its note and where it came from ============ */
 @media print {
   @page { margin: 2cm; }
+  /* Paper is white whatever the screen's theme (the triple :root outranks the dark rules). */
+  :root:root:root { --ink: #17140f; --ink-soft: #4c473e; --faint: #8c8578; --body: #fff; --surface: #fff;
+    --surface-alt: #f6f5f1; --line: #e4e1d8; --line-strong: #d6d2c7; --accent: #26415c; --accent-2: #345678;
+    --gold: #a9852f; --on-accent: #fff; --masthead: #f1f0ea; --ts: 1; color-scheme: light; }
   body { background: #fff; }
   .site-head, .site-foot, .engine-cue, .engine, .detail-nav, .back, .themes, .pn-row,
   .read-in-archive, .rule-ornament, .ln-ctl, .cite-row, .cite-box, .cite-static, .more-row, .shelf-msg, .note-box,
-  .also-tr, .compare-tools, .compare-open, .continue-wrap, .continue-list, .related { display: none !important; }
+  .also-tr, .compare-tools, .compare-open, .continue-wrap, .continue-list, .related, .rt { display: none !important; }
   .detail { max-width: none; }
   .compare-grid { display: block; }
   .compare-col + .compare-col { margin-top: 1.6rem; }

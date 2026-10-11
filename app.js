@@ -516,6 +516,64 @@
     });
   }
 
+  // ---------- "Aa": reading text size and theme ----------
+  // Kept in this browser only (pc-text: "", "l", "xl"; pc-theme: "", "light", "dark") and put
+  // on <html> as data-text / data-theme, which styles.css reads. The small script at the top
+  // of index.html (and of the static pages) applies them before the page is drawn, so a
+  // night reader never sees a white flash. "Auto" (no theme) follows the device's setting.
+  const VIEW_KEYS = { text: "pc-text", theme: "pc-theme" };
+  const viewPref = (kind) => document.documentElement.dataset[kind] || "";
+  function setViewPref(kind, v) {
+    const root = document.documentElement;
+    if (v) root.dataset[kind] = v; else delete root.dataset[kind];
+    try { if (v) localStorage.setItem(VIEW_KEYS[kind], v); else localStorage.removeItem(VIEW_KEYS[kind]); }
+    catch (e) { /* private window: kept for this visit only */ }
+  }
+  function readingToolsHTML() {
+    const opt = (kind, v, label, extra) =>
+      `<button type="button" data-${kind}="${v}" aria-pressed="${viewPref(kind) === v}"${extra || ""}>${label}</button>`;
+    return `<div class="rt">
+        <button class="rt-toggle" type="button" aria-expanded="false" aria-controls="rt-panel" aria-label="Text size and theme" title="Text size and theme">Aa</button>
+        <div class="rt-panel" id="rt-panel" hidden>
+          <div class="rt-row"><span class="rt-label">Text size</span><span class="rt-opts">
+            ${opt("text", "", "A", ` class="rt-a rt-a1" aria-label="Standard text"`)}
+            ${opt("text", "l", "A", ` class="rt-a rt-a2" aria-label="Larger text"`)}
+            ${opt("text", "xl", "A", ` class="rt-a rt-a3" aria-label="Largest text"`)}
+          </span></div>
+          <div class="rt-row"><span class="rt-label">Theme</span><span class="rt-opts">
+            ${opt("theme", "", "Auto", ` title="Follow this device's light or dark setting"`)}
+            ${opt("theme", "light", "Light")}
+            ${opt("theme", "dark", "Dark")}
+          </span></div>
+        </div>
+      </div>`;
+  }
+  function bindReadingTools() {
+    const box = app.querySelector(".rt");
+    if (!box) return;
+    const btn = box.querySelector(".rt-toggle"), panel = box.querySelector(".rt-panel");
+    btn.addEventListener("click", () => {
+      panel.hidden = !panel.hidden;
+      btn.setAttribute("aria-expanded", String(!panel.hidden));
+    });
+    panel.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
+      const kind = "text" in b.dataset ? "text" : "theme";
+      setViewPref(kind, b.dataset[kind]);
+      panel.querySelectorAll(`[data-${kind}]`).forEach((o) => o.setAttribute("aria-pressed", String(o === b)));
+    }));
+  }
+  // A click outside the panel, or Escape, closes it (one listener for every page).
+  function closeReadingTools(refocus) {
+    const box = app.querySelector(".rt");
+    if (!box || box.querySelector(".rt-panel").hidden) return;
+    box.querySelector(".rt-panel").hidden = true;
+    const btn = box.querySelector(".rt-toggle");
+    btn.setAttribute("aria-expanded", "false");
+    if (refocus) btn.focus();
+  }
+  document.addEventListener("click", (e) => { const box = app.querySelector(".rt"); if (box && !box.contains(e.target)) closeReadingTools(false); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeReadingTools(true); });
+
   // ---------- era/category taxonomy ----------
   // Umbrella categories applied to every poet's `category` field (see data/poets/<slug>.json).
   // Order here is the display/chronological order used on the home page.
@@ -1116,6 +1174,7 @@
     app.innerHTML = `
       <article class="detail">
         <button class="back" id="back">← ${esc(w.title)} · Contents</button>
+        ${readingToolsHTML()}
         <div class="detail-subject">${esc(w.title)} · ${esc(w.year)}</div>
         <h1 class="detail-title">${esc(s.title)}</h1>
         <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
@@ -1133,6 +1192,7 @@
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/work/" + slug; });
     bindEngine({ title: w.title + " \u00b7 " + s.title, author: w.author, text: s.text,
                  id: "work:" + slug + "/" + i });
+    bindReadingTools();
     bindLineNumbers();
     bindCite(cite);
     bindShelfButton(entry);
@@ -2035,6 +2095,7 @@
     app.innerHTML = `
       <article class="detail">
         <button class="back" id="back">← The Archive</button>
+        ${readingToolsHTML()}
         <div class="detail-subject">${esc(p.primarySubject)}</div>
         <h1 class="detail-title"${lang}>${esc(p.title)}</h1>
         <p class="detail-author">by <a href="#/poet/${esc(p.authorSlug)}">${esc(p.author)}</a></p>
@@ -2062,6 +2123,7 @@
     }));
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/poem/" + slug + "/" + b.dataset.go; }));
     bindEngine({ title: p.title, author: p.author, text: p.text, id: p.id });
+    bindReadingTools();
     bindLineNumbers();
     bindCite(cite);
     bindShelfButton(entry);
