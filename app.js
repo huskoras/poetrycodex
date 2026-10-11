@@ -753,7 +753,12 @@
       filterForm = st.filterForm || "All";
     }
     let m;
-    if ((m = h.match(/^#\/poem\/(\d+)$/))) {
+    if (h === "#/today") {
+      // The day's poem, from a link that never changes (the footer's, or a bookmark).
+      const p = poemOfTheDay();
+      location.replace(location.href.split("#")[0] + (p ? "#/poem/" + p.id : "#/"));
+    }
+    else if ((m = h.match(/^#\/poem\/(\d+)$/))) {
       // Legacy link: #/poem/<arrayIndex> from the old single-poems.json array.
       // Resolve via the frozen legacyIndex map and redirect to the new stable id.
       // The map is its own file (data/legacy_index.json, 180 KB), fetched only for such a
@@ -911,11 +916,10 @@
     wireSearch();
   }
 
-  // While the Oracle rests, its door holds the poem of the day: the same poem for every
-  // reader on a given (UTC) day, no server involved. The pool is the poems with a Codex Note
-  // (`hasNote`, from build_index.py) or, in an index built before that field, every poem
-  // whose opening lines fit a card. A prime stride walks the pool so that one day's poet is
-  // not the next day's too.
+  // The poem of the day: the same poem for every reader on a given (UTC) day, no server
+  // involved. The pool is the poems with a Codex Note (`hasNote`, from build_index.py) or,
+  // in an index built before that field, every poem whose opening lines fit a card. A prime
+  // stride walks the pool so that one day's poet is not the next day's too.
   function poemOfTheDay() {
     const fits = (p) => p.excerpt && p.excerpt.split("\n").every((l) => l.length <= 90);
     let pool = DATA.poems.filter((p) => p.hasNote && fits(p));
@@ -924,28 +928,29 @@
     const day = Math.floor(Date.now() / 864e5);
     return pool[(day * 7919) % pool.length];
   }
+  // Its own card on the home page, under the two doors.
   function poemOfTheDayHTML() {
     const p = poemOfTheDay();
     if (!p) return "";
     const d = new Date();
     const lang = langAttr(p.authorSlug, p.translator);
-    return `<a class="door door-today" href="#/poem/${esc(p.id)}">
-          <span class="d-kicker">Poem of the day · ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]}</span>
-          <span class="d-name"${lang}>${esc(p.title)}</span>
-          <span class="d-by">${esc(p.author)}${p.translator ? " · " + esc(translatorShort(p.translator).replace(/^trans\.\s*/i, "trans. ")) : ""}</span>
-          <span class="d-verse"${lang}>${esc(p.excerpt)}</span>
-          <span class="d-go">Read the poem &rarr;</span>
-          <span class="d-rest">While the Oracle rests, a new poem sits here each day.</span>
-        </a>`;
+    return `<a class="potd" href="#/poem/${esc(p.id)}">
+        <span class="d-kicker">Poem of the day · ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]}</span>
+        <span class="d-name"${lang}>${esc(p.title)}</span>
+        <span class="d-by">${esc(p.author)}${p.translator ? " · " + esc(translatorShort(p.translator).replace(/^trans\.\s*/i, "trans. ")) : ""}</span>
+        <span class="d-verse"${lang}>${esc(p.excerpt)}</span>
+        <span class="d-go">Read the poem &rarr;</span>
+      </a>`;
   }
 
   function renderHome() {
     setTitle("");
     // Two doors under one roof: the collection, and the way of asking about it.
     // The Oracle keeps its place even while it sleeps, so the shape of the site
-    // does not change when it wakes.
+    // does not change when it wakes. The poem of the day has its own card below.
+    const potd = poemOfTheDayHTML();
     app.innerHTML = `
-      <div class="doors">
+      <div class="doors${potd ? " has-potd" : ""}">
         <a class="door door-archive" href="#/eras">
           <img src="archive-248.webp" alt="" width="124" height="124" />
           <span class="d-name">The Archive</span>
@@ -953,14 +958,15 @@
           from Homer and Anglo-Saxon verse to the early twentieth century \u2014 every one in the public domain.</span>
           <span class="d-go">Enter &rarr;</span>
         </a>
-        ${ORACLE_LIVE ? `<a class="door door-oracle" href="#/oracle">
+        <a class="door door-oracle${ORACLE_LIVE ? "" : " is-resting"}" href="#/oracle">
           <img src="oracle-248.webp" alt="" width="124" height="124" />
           <span class="d-name">The Oracle</span>
           <span class="d-line">Ask for a poem, an argument, or a place to start.
           It searches the collection before it answers.</span>
-          <span class="d-go">Consult &rarr;</span>
-        </a>` : poemOfTheDayHTML()}
+          <span class="d-go">${ORACLE_LIVE ? "Consult &rarr;" : "Resting"}</span>
+        </a>
       </div>
+      ${potd}
 
       <p class="doors-or">Or go straight to an era</p>
       ${eraGridHTML()}
