@@ -4,6 +4,7 @@
   let DATA = null;
   let query = "";            // the search as typed (folded only when matching)
   let filterSubject = "All";
+  let filterForm = "All";    // "Sonnet", "Ode"… (the `form` that build_index.py reads off titles)
   // Long card lists are drawn PAGE cards at a time: the whole archive at once is
   // 60,000 elements, slow on a cheap phone. "Show more" adds the next PAGE.
   const PAGE = 60;
@@ -656,7 +657,7 @@
       input.dataset.wired = "1";
       input.addEventListener("input", (e) => {
         query = e.target.value.trim();
-        if (query) filterSubject = "All";
+        if (query) { filterSubject = "All"; filterForm = "All"; }
         syncSearchInput();
         clearTimeout(searchTimer);
         if (onArchive()) { searchTimer = setTimeout(freshList, 150); return; }
@@ -699,7 +700,7 @@
     if (!DATA) return;
     try {
       history.replaceState(Object.assign({}, history.state,
-        { y: Math.round(window.scrollY), shown, query, filterSubject }), "");
+        { y: Math.round(window.scrollY), shown, query, filterSubject, filterForm }), "");
     } catch (e) { /* too many saves in a row (Safari limits them): the next one will do */ }
   }
   window.addEventListener("scroll", () => {
@@ -729,6 +730,7 @@
     if (st && /^#\/poems(\?|$)/.test(h)) {
       query = st.query || "";
       filterSubject = st.filterSubject || "All";
+      filterForm = st.filterForm || "All";
     }
     let m;
     if ((m = h.match(/^#\/poem\/(\d+)$/))) {
@@ -757,7 +759,7 @@
       const q = h.match(/[?&]q=([^&]*)/);
       if (q) {
         try { query = decodeURIComponent(q[1].replace(/\+/g, " ")).trim(); } catch (e) { query = ""; }
-        filterSubject = "All";
+        filterSubject = "All"; filterForm = "All";
         history.replaceState(null, "", "#/poems");
       }
       setRoute("poems", "sub"); renderList();
@@ -779,6 +781,7 @@
   // and subjects; the folded text is built the first time a poem is searched.
   function matches(p, words) {
     if (filterSubject !== "All" && p.primarySubject !== filterSubject) return false;
+    if (filterForm !== "All" && p.form !== filterForm) return false;
     if (!words.length) return true;
     if (p._hay === undefined) {
       p._hay = fold([p.title, p.author, p.translator, p.excerpt, p.subjects.join(" ")].join(" "));
@@ -965,10 +968,25 @@
   }
 
   const sortKey = (s) => s.toLowerCase().replace(/^["'“‘]*(a|an|the)\s+/, "").replace(/^[^a-z0-9]+/, "").trim();
+  // Forms (B3): build_index.py gives a poem a `form` when its title names one ("Sonnet 18",
+  // "Ode to Psyche", "Tam Samson's Elegy") or, for sonnets, when it has the sonnet's shape
+  // (14 lines as 8 + 6 or 4 + 4 + 3 + 3). An index built before that has no forms and no row.
+  const FORM_PLURAL = { Sonnet: "Sonnets", Ode: "Odes", Ballad: "Ballads", Elegy: "Elegies", Hymn: "Hymns",
+    Song: "Songs", Riddle: "Riddles", Epigram: "Epigrams", Epitaph: "Epitaphs", Ghazal: "Ghazals" };
+  let FORM_COUNTS = null;
+  function formCounts() {
+    if (!FORM_COUNTS) {
+      const n = {};
+      DATA.poems.forEach((p) => { if (p.form) n[p.form] = (n[p.form] || 0) + 1; });
+      FORM_COUNTS = Object.keys(n).sort((a, b) => n[b] - n[a]).map((name) => ({ name, count: n[name] }));
+    }
+    return FORM_COUNTS;
+  }
+  const formLabel = (f) => FORM_PLURAL[f] || f;
   function renderList() {
     const words = searchWords(query);
     const results = SORTED.filter((p) => matches(p, words));
-    const works = filterSubject !== "All" ? [] : (DATA.works || []).filter((w) => {
+    const works = filterSubject !== "All" || filterForm !== "All" ? [] : (DATA.works || []).filter((w) => {
       if (!words.length) return true;
       if (w._hay === undefined) w._hay = fold([w.title, w.author, w.translator].join(" "));
       return hasAll(w._hay, words);
@@ -977,18 +995,25 @@
     if (query) banner = `<div class="filter-banner"><span class="lbl">Search</span> <span class="val">“${esc(query)}”</span><button data-clear="1">Clear ✕</button></div>`;
     const chips = [`<button class="chip ${filterSubject === "All" ? "active" : ""}" data-sub="All">All<span class="n">${DATA.count}</span></button>`]
       .concat(DATA.subjects.map((s) => `<button class="chip ${filterSubject === s.name ? "active" : ""}" data-sub="${esc(s.name)}">${esc(s.name)}<span class="n">${s.count}</span></button>`)).join("");
+    const forms = formCounts();
+    const formChips = forms.length ? `<div class="chips form-chips" role="group" aria-label="Form"><span class="chips-lbl">Form</span>`
+      + [`<button class="chip ${filterForm === "All" ? "active" : ""}" data-form="All">Any form</button>`]
+        .concat(forms.map((f) => `<button class="chip ${filterForm === f.name ? "active" : ""}" data-form="${esc(f.name)}">${esc(formLabel(f.name))}<span class="n">${f.count}</span></button>`)).join("")
+      + `</div>` : "";
+    const what = filterForm !== "All" ? formLabel(filterForm) : "Poems";
 
-    setTitle(query ? `\u201c${query}\u201d \u2014 Search` : filterSubject !== "All" ? `Poems on ${filterSubject}` : "All poems");
+    setTitle(query ? `\u201c${query}\u201d \u2014 Search` : filterSubject !== "All" ? `${what} on ${filterSubject}` : filterForm !== "All" ? what : "All poems");
     app.innerHTML = `
       ${banner}
-      ${query ? "" : `<div class="chips">${chips}</div>`}
-      <p class="result-meta">${results.length} poem${results.length === 1 ? "" : "s"}${works.length ? " · " + works.length + " work" + (works.length === 1 ? "" : "s") : ""}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}</p>
+      ${query ? "" : `<div class="chips">${chips}</div>${formChips}`}
+      <p class="result-meta">${results.length} poem${results.length === 1 ? "" : "s"}${works.length ? " · " + works.length + " work" + (works.length === 1 ? "" : "s") : ""}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}${filterForm !== "All" ? " · " + esc(formLabel(filterForm)) : ""}</p>
       <div class="grid">${works.map(workCardHTML).join("")}${results.length || works.length ? pagedCards(results) : `<p class="empty">No poems match.</p>`}</div>
       ${moreHTML(results.length)}`;
 
-    app.querySelectorAll(".chip").forEach((c) => c.addEventListener("click", () => { filterSubject = c.dataset.sub; query = ""; syncSearchInput(); freshList(); }));
+    app.querySelectorAll(".chip[data-sub]").forEach((c) => c.addEventListener("click", () => { filterSubject = c.dataset.sub; query = ""; syncSearchInput(); freshList(); }));
+    app.querySelectorAll(".chip[data-form]").forEach((c) => c.addEventListener("click", () => { filterForm = c.dataset.form; query = ""; syncSearchInput(); freshList(); }));
     const clr = app.querySelector("[data-clear]");
-    if (clr) clr.addEventListener("click", () => { query = ""; filterSubject = "All"; syncSearchInput(); freshList(); });
+    if (clr) clr.addEventListener("click", () => { query = ""; filterSubject = "All"; filterForm = "All"; syncSearchInput(); freshList(); });
     bindMore(results);
   }
 
@@ -1340,7 +1365,7 @@
           </button>`).join("")}
       </div>`;
     app.querySelectorAll(".topic-card").forEach((c) => c.addEventListener("click", () => {
-      filterSubject = c.dataset.sub; query = ""; syncSearchInput(); location.hash = "#/poems";
+      filterSubject = c.dataset.sub; filterForm = "All"; query = ""; syncSearchInput(); location.hash = "#/poems";
     }));
   }
 
@@ -2089,6 +2114,7 @@
     const themes = p.subjects.length
       ? `<div class="themes">${p.subjects.map((s) => `<span class="theme-tag" data-sub="${esc(s)}">${esc(s)}</span>`).join("")}</div>` : "";
     const lang = langAttr(p.authorSlug, p.translator);
+    const form = (DATA.poems.find((q) => q.id === p.id) || {}).form;   // index only (B3)
     const cite = { author: p.author, title: p.title, translator: p.translator, path: `/poem/${slug}/${n}/` };
     const entry = { id: slug + "/" + n, kind: "poem", title: p.title, author: p.author, translator: p.translator || "" };
     setTitle(p.title + " — " + p.author);
@@ -2096,7 +2122,7 @@
       <article class="detail">
         <button class="back" id="back">← The Archive</button>
         ${readingToolsHTML()}
-        <div class="detail-subject">${esc(p.primarySubject)}</div>
+        <div class="detail-subject">${esc(p.primarySubject)}${form ? " · " + esc(form) : ""}</div>
         <h1 class="detail-title"${lang}>${esc(p.title)}</h1>
         <p class="detail-author">by <a href="#/poet/${esc(p.authorSlug)}">${esc(p.author)}</a></p>
         ${sourceLine(p.translator, p.collection)}
@@ -2118,6 +2144,7 @@
     app.querySelectorAll(".theme-tag").forEach((t) => t.addEventListener("click", () => {
       const isSub = DATA.subjects.some((s) => s.name === t.dataset.sub);
       filterSubject = isSub ? t.dataset.sub : "All";
+      filterForm = "All";
       query = isSub ? "" : t.dataset.sub;
       syncSearchInput(); location.hash = "#/poems";
     }));

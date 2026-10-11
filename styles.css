@@ -182,6 +182,10 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 2.4rem 2rem 4rem; }
 .chip:hover { border-color: var(--accent-2); color: var(--accent); }
 .chip.active { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .chip .n { opacity: .6; margin-left: .35rem; font-variant-numeric: tabular-nums; }
+/* The second row on #/poems: forms (Sonnet, Ode…), set a little closer to the subjects. */
+.form-chips { margin-top: -.7rem; align-items: center; }
+.chips-lbl { font-family: var(--sans); font-size: .66rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--faint); margin-right: .2rem; }
 
 .filter-banner { display: flex; align-items: center; gap: .8rem; flex-wrap: wrap; background: var(--surface-alt);
   border: 1px solid var(--line); padding: .7rem 1rem; border-radius: 4px; margin-bottom: 1.4rem; }

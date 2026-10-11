@@ -21,6 +21,7 @@ needed. Index output is sorted by this field.
 """
 import json
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -35,6 +36,40 @@ INDEX_PATH = os.path.join(ROOT, "data", "index.json")
 LEGACY_INDEX_PATH = os.path.join(ROOT, "data", "legacy_index.json")
 
 EXCERPT_LINES = 3
+
+# Forms (B3): the "Form" row on #/poems. A poem gets one only when its title names the form
+# ("Sonnet 18", "Ode to Psyche", "Tam Samson's Elegy", "Burns: an Ode", "Elegy Written in a
+# Country Churchyard"), when its book is a sonnet sequence ("Sonnets from the Portuguese"),
+# or, for sonnets, when it has the sonnet's shape: 14 lines of ordinary length set as 8 + 6
+# or 4 + 4 + 3 + 3. A form word elsewhere in a title ("What of Rafael's sonnets, Dante's
+# picture?", "The Origin of Song-Writing", "Tahmis-i Gazel-i ...") does not count. A bare
+# 14-line rule was tried and left out: it also catches couplet poems and fables.
+FORMS = [("Sonnet", "sonnets?"), ("Ode", "odes?"), ("Ballad", "ballads?|ballade"),
+         ("Elegy", "elegy|elegie|elegiac"), ("Hymn", "hymns?"), ("Song", "songs?"),
+         ("Riddle", "riddles?"), ("Epigram", "epigrams?"), ("Epitaph", "epitaphs?"),
+         ("Ghazal", "gazel|ghazel|ghazal|gazal")]
+FORM_AFTER = r"(?:to|on|for|upon|in|at|of|written|composed|addressed|from|by|with|against)"
+SONNET_SHAPES = ((8, 6), (4, 4, 3, 3))
+
+
+def poem_form(title, text, collection):
+    t = title.lower().strip().rstrip(".,;:!?")
+    for name, word in FORMS:
+        w = r"(?:%s)(?![\w-])" % word
+        if (re.match(r"^(?:(?:an?|the|\d+|[ivxlc]+)[.)]?\s+)?" + w, t)    # "Ode to…", "A Song for…"
+                or re.search(r"(?<![\w-])" + w + "$", t)                  # "…: an Ode", "Bede's Death Song"
+                or re.search(r"(?<![\w-])" + w + r"\s+" + FORM_AFTER + r"\b", t)  # "Birthday Ode for…"
+                or re.search(r"(?<![\w-])" + w + r"\s+[ivxlc\d]+\b", t)):  # "Amoretti: Sonnet XXV"
+            return name
+    if re.match(r"sonnets\b", (collection or "").lower()):
+        return "Sonnet"
+    stanzas = [[l for l in b.split("\n") if l.strip()] for b in text.split("\n\n")]
+    stanzas = [b for b in stanzas if b]
+    lines = [l for b in stanzas for l in b]
+    if (len(lines) == 14 and all(20 <= len(l.strip()) <= 80 for l in lines)
+            and tuple(len(b) for b in stanzas) in SONNET_SHAPES):
+        return "Sonnet"
+    return None
 
 
 def make_excerpt(text):
@@ -102,6 +137,9 @@ def build():
             # The home page's poem of the day is drawn from the poems with a Codex Note.
             if (pm.get("note") or "").strip():
                 entry["hasNote"] = True
+            form = poem_form(pm["title"], pm["text"], pm.get("collection"))
+            if form:
+                entry["form"] = form
             index_poems.append(entry)
             subject_tally[pm["primarySubject"]] = subject_tally.get(pm["primarySubject"], 0) + 1
 
