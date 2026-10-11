@@ -21,6 +21,12 @@ needed. Index output is sorted by this field.
 """
 import json
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# The page text's own rule for prose translations and their paragraphs, so the contents
+# list counts what the reader will see (app.js has the same rule as isProse/proseHTML).
+from build_pages import is_prose, prose_paras, verse_lines  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 POETS_DIR = os.path.join(ROOT, "data", "poets")
@@ -98,10 +104,16 @@ def build():
 
     index_works = []
     for w in works_raw:
-        sections = [
-            {"title": s["title"], "stanzas": s["text"].count("\n\n") + 1}
-            for s in w["sections"]
-        ]
+        sections = []
+        for s in w["sections"]:
+            # lines: verse lines as the "Line numbers" switch counts them (the app says "about
+            # 540 lines"); a prose translation is counted in the paragraphs it is printed as.
+            sec = {"title": s["title"], "stanzas": s["text"].count("\n\n") + 1,
+                   "lines": verse_lines(s["text"])}
+            if is_prose(s["text"], w.get("translator")):
+                sec["prose"] = True
+                sec["paras"] = len(prose_paras(s["text"]))
+            sections.append(sec)
         index_works.append({
             "slug": w["slug"],
             "title": w["title"],

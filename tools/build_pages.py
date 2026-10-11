@@ -27,6 +27,7 @@ import json
 import os
 import re
 import shutil
+import unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://poetrycodex.com"
@@ -116,6 +117,39 @@ def para_html(text, prose=False):
             for line in s.split("\n") if line.strip()) + "</p>"
         for s in stanzas
     )
+
+
+ARGUMENT = re.compile(r"(the\s+)?argument\b", re.I)
+
+
+def verse_lines(text):
+    """The lines of verse, counted as the app's "Line numbers" switch numbers them (poemHTML
+    in app.js): headings with no lower-case letter ("BOOK I.", "12") and Arguments (a stanza
+    opening "Argument", or the stanza after a heading that is only "THE ARGUMENT.") are left out."""
+    n, skip_next = 0, False
+    for st in re.split(r"\n\s*\n", text or ""):
+        ls = [line for line in st.split("\n") if line.strip()]
+        if not ls:
+            continue
+        first = ls[0].strip()
+        argument = skip_next or bool(ARGUMENT.match(first))
+        skip_next = bool(ARGUMENT.match(first)) and len(ls) == 1
+        if not argument:
+            n += sum(1 for line in ls if any(unicodedata.category(ch) == "Ll" for ch in line))
+    return n
+
+
+def part_size(text, translator):
+    """How long a book or canto is, for a contents list: "about 540 lines" for verse (exact
+    under 100), "38 paragraphs" for a prose translation, as partSize in app.js says it from
+    the counts build_index.py stores (`lines`, `prose`, `paras`)."""
+    if is_prose(text, translator):
+        n = len(prose_paras(text))
+        return f"{n} paragraph" + ("" if n == 1 else "s")
+    n = verse_lines(text)
+    if n < 100:
+        return f"{n} line" + ("" if n == 1 else "s")
+    return f"about {int(n / 10 + 0.5) * 10} lines"   # rounds .5 up, as Math.round does
 
 
 def text_block(text, translator, lang_attr=""):
@@ -364,7 +398,8 @@ def work_page(w, poet, grouped):
     slug = w["slug"]
     sections = w.get("sections") or []
     rows = "\n".join(
-        f'<li><a href="/work/{slug}/{i}/"><span class="pl-title">{esc(s["title"])}</span></a></li>'
+        f'<li><a href="/work/{slug}/{i}/"><span class="pl-title">{esc(s["title"])}</span>'
+        f'<span class="pl-sub">{part_size(s.get("text"), w.get("translator"))}</span></a></li>'
         for i, s in enumerate(sections))
     kind = " · ".join(esc(x) for x in (w.get("type"), w.get("year")) if x)
     parts = f"{len(sections)} part" + ("" if len(sections) == 1 else "s")

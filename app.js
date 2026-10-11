@@ -1050,10 +1050,13 @@
         <div class="cite-row toc-tools">${shelfButtonHTML(entry)}</div>
         <p class="shelf-msg" hidden>${VISIT_ONLY}</p>
         <hr class="rule">
-        <p class="section-label">Contents · ${w.sections.length} parts</p>
+        <p class="section-label">Contents · ${w.sections.length} part${w.sections.length === 1 ? "" : "s"}</p>
         <ul class="poem-links">
-          ${w.sections.map((s, i) => `
-            <li><a href="#/work/${esc(w.slug)}/${i}"><span class="pl-title">${esc(s.title)}</span><span class="pl-sub">${place && place.i === i ? '<span class="last-read">Last read</span> · ' : ""}${s.stanzas} stanzas</span></a></li>`).join("")}
+          ${w.sections.map((s, i) => {
+            const bits = [place && place.i === i ? '<span class="last-read">Last read</span>' : "", partSize(s)].filter(Boolean);
+            return `
+            <li><a href="#/work/${esc(w.slug)}/${i}"><span class="pl-title">${esc(s.title)}</span><span class="pl-sub">${bits.join(" · ")}</span></a></li>`;
+          }).join("")}
         </ul>
       </article>`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/poet/" + w.authorSlug; });
@@ -1119,6 +1122,17 @@
     }
     READING_NOW = { slug, i, el: text };
     setReading(slug, i, resume > 0 ? resume : readingFrac(text));
+  }
+
+  // How long a book or canto is, for the contents list: "about 540 lines" for verse (exact
+  // under 100), "38 paragraphs" for a prose translation. build_index.py counts both (`lines`,
+  // `prose`, `paras`) with the same rule as the page text; an older index without them shows
+  // no count rather than a wrong one.
+  function partSize(s) {
+    if (s.prose) return s.paras ? `${s.paras} paragraph${s.paras === 1 ? "" : "s"}` : "";
+    if (!s.lines) return "";
+    if (s.lines < 100) return `${s.lines} line${s.lines === 1 ? "" : "s"}`;
+    return `about ${Math.round(s.lines / 10) * 10} lines`;
   }
 
   // ---------- WORK: two translations side by side ----------
