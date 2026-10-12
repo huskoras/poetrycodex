@@ -17,8 +17,8 @@ API keys, secrets, payments and dashboard settings himself — never ask him to 
 
 ## 1. What this project is
 
-A curated archive of **public-domain poetry** — currently **23,863 poems, 306 poets,
-64 multi-section works** (as of 12 Oct 2026), spanning Cædmon (~7th c.) and Homer
+A curated archive of **public-domain poetry** — currently **28,954 poems, 641 poets,
+69 multi-section works** (as of 12 Oct 2026), spanning Cædmon (~7th c.) and Homer
 (~8th c. BC) through early-20th-century British, American and Turkish poets — plus an
 AI reading engine ("Read with the Codex" on every poem, and the Oracle, see §4b).
 
