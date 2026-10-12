@@ -1,0 +1,29 @@
+{
+ "slug": "kisen",
+ "name": "Kisen",
+ "dates": "dates unknown",
+ "era": "Classical Japanese (Nara and Heian)",
+ "category": "Chinese & Japanese",
+ "portrait": null,
+ "credit": null,
+ "bio": [
+  "Poet of the Hyakunin Isshu (no. 8); Porter gives no dates for this poet."
+ ],
+ "order": 63.1813,
+ "poems": [
+  {
+   "id": "kisen/0",
+   "title": "My home is near the Capital",
+   "authorSlug": "kisen",
+   "author": "Kisen",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "A Hundred Verses from Old Japan (Hyakunin Isshu), poem 8",
+   "note": "",
+   "translator": "trans. William N. Porter (1909)",
+   "text": "My home is near the Capital,\nMy humble cottage bare\nLies south-east on Mount Uji; so\nThe people all declare\nMy life’s a ‘Hill of Care’."
+  }
+ ]
+}
