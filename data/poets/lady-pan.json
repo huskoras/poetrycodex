@@ -1,0 +1,30 @@
+{
+ "slug": "lady-pan",
+ "name": "The Lady Pan",
+ "dates": "1st century BC",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "The Lady Pan is dated by Giles to the 1st century BC. She is the court lady of the Han dynasty whose poem of the autumn fan became a standard image of the discarded favourite.",
+  "The poems here are Herbert A. Giles’s versions in Chinese Poetry in English Verse (1898), given with the poet’s name as spelled in that book."
+ ],
+ "order": 49.25,
+ "poems": [
+  {
+   "id": "lady-pan/0",
+   "title": "The Autumn Fan",
+   "authorSlug": "lady-pan",
+   "author": "The Lady Pan",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Chinese Poetry in English Verse (1898)",
+   "note": "",
+   "translator": "trans. Herbert A. Giles (1898)",
+   "text": "O fair white silk, fresh from the weaver's loom,\nClear as the frost, bright as the winter snow —\nSee! friendship fashions out of thee a fan.\nRound as the round moon shines in heaven above;\nAt home, abroad, a close companion thou,\nStirring at every move the grateful gale;\nAnd yet I fear, ah me! that autumn chills.\nCooling the dying summer's torrid rage,\nWill see thee laid neglected on the shelf.\nAll thought of by gone days, like them by-gone."
+  }
+ ]
+}

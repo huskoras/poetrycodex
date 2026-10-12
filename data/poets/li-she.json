@@ -1,0 +1,44 @@
+{
+ "slug": "li-she",
+ "name": "Li She",
+ "dates": "9th century AD",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Li She is dated by Giles to the 9th century AD. Giles prints two of his poems, one of them on highwaymen.",
+  "The poems here are Herbert A. Giles’s versions in Chinese Poetry in English Verse (1898), given with the poet’s name as spelled in that book."
+ ],
+ "order": 63.32275,
+ "poems": [
+  {
+   "id": "li-she/0",
+   "title": "Escape",
+   "authorSlug": "li-she",
+   "author": "Li She",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "Chinese Poetry in English Verse (1898)",
+   "note": "",
+   "translator": "trans. Herbert A. Giles (1898)",
+   "text": "Confusion overwhelming me, as in a drunken dream,\nI note that spring has fled and wander off to hill and stream;\nWith a friendly Buddhist priest I seek a respite from the strife\nArid manifold anomalies which go to make up life."
+  },
+  {
+   "id": "li-she/1",
+   "title": "On Highwaymen",
+   "authorSlug": "li-she",
+   "author": "Li She",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "Chinese Poetry in English Verse (1898)",
+   "note": "",
+   "translator": "trans. Herbert A. Giles (1898)",
+   "text": "The rainy mist sweeps gently o'er the village by the stream,\nWhen from the leafy forest glades the brigand daggers gleam\n\nAnd yet there is no need to fear or step from out their way,\nFor more than half the world consists of bigger rogues than they!"
+  }
+ ]
+}
