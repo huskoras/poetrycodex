@@ -1,0 +1,44 @@
+{
+ "slug": "julian-emperor",
+ "name": "Julian the Emperor",
+ "dates": "date not given by Paton",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Julian the Emperor is one of the epigrammatists whose short poems were gathered in the Greek Anthology. Paton's index of authors gives no firm date for the poet. Paton's index lists him as the emperor Julian.",
+  "This archive carries the 2 epigrams ascribed to the poet in the third volume of W. R. Paton's prose translation (Book IX: 365, 368)."
+ ],
+ "order": 61.359921,
+ "poems": [
+  {
+   "id": "julian-emperor/0",
+   "title": "Book IX, 365: On an Organ",
+   "authorSlug": "julian-emperor",
+   "author": "Julian the Emperor",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. III, 1917)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "I see a new kind of reeds. Are they, perchance, the wild product of some strange brazen soil? They are not even moved by our winds, but from a cave of bull’s hide issues a blast and passes into these hollow reeds at their root. And a valiant man with swift fingers stands touching the notes which play in concert with the pipes, and they, gently leaping, press the music out of the pipes."
+  },
+  {
+   "id": "julian-emperor/1",
+   "title": "Book IX, 368: On Beer",
+   "authorSlug": "julian-emperor",
+   "author": "Julian the Emperor",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. III, 1917)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Who and whence art thou, Dionysus? For, by the true Bacchus, I know thee not: I know only the son of Zeus. He smells of nectar, but thou of billy-goat. Did the Celts for lack of grapes make thee out of corn? Then thou shouldst be called Demetrius, not Dionysus, being born of corn, rather than of the fire, and Bromus rather than Bromius."
+  }
+ ]
+}

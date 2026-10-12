@@ -1,0 +1,30 @@
+{
+ "slug": "ammianus",
+ "name": "Ammianus",
+ "dates": "1st century AD (Paton’s date, queried)",
+ "era": "Roman",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Ammianus is one of the epigrammatists whose short poems were gathered in the Greek Anthology. Paton's index of authors dates the poet to 1st century AD (with a query).",
+  "This archive carries the 1 epigram ascribed to the poet in the third volume of W. R. Paton's prose translation (Book IX: 573)."
+ ],
+ "order": 60.103442,
+ "poems": [
+  {
+   "id": "ammianus/0",
+   "title": "Book IX, 573",
+   "authorSlug": "ammianus",
+   "author": "Ammianus",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. III, 1917)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Sit not, O man, at another’s table indulging thy belly with the bread of reproach, now weeping with the weeper and the sour-countenanced, and now laughing with the laugher, sharing both laughter and tears when thou hast no need of either."
+  }
+ ]
+}

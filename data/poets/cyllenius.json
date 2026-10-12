@@ -1,0 +1,44 @@
+{
+ "slug": "cyllenius",
+ "name": "Cyllenius",
+ "dates": "date unknown (Paton)",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Cyllenius is one of the epigrammatists whose short poems were gathered in the Greek Anthology. Paton's index of authors records the poet's date as unknown.",
+  "This archive carries the 2 epigrams ascribed to the poet in the third volume of W. R. Paton's prose translation (Book IX: 4, 33)."
+ ],
+ "order": 59.614,
+ "poems": [
+  {
+   "id": "cyllenius/0",
+   "title": "Book IX, 4",
+   "authorSlug": "cyllenius",
+   "author": "Cyllenius",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. III, 1917)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "I, the wild pear-tree of the thicket, a denizen of the wilderness where the wild beasts feed, once bearing plenty of bastard fruit, have had foreign shoots grafted on me, and flourish now no longer wild, but loaded with a crop that is not my natural one. Gardener, I am deeply grateful for thy pains, owing it to thee that I now am enrolled in the tribe of noble fruit-trees."
+  },
+  {
+   "id": "cyllenius/1",
+   "title": "Book IX, 33",
+   "authorSlug": "cyllenius",
+   "author": "Cyllenius",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. III, 1917)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Before I was a ship I perished. What more could I have suffered if I had become familiar with the deep? Alas, every bark meets its end by the waves!"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "slug": "plato-younger",
+ "name": "Plato the Younger",
+ "dates": "date unknown (Paton)",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Plato the Younger is one of the epigrammatists whose short poems were gathered in the Greek Anthology. Paton's index of authors records the poet's date as unknown.",
+  "This archive carries the 3 epigrams ascribed to the poet in the third volume of W. R. Paton's prose translation (Book IX: 13, 748, 751)."
+ ],
+ "order": 59.614001,
+ "poems": [
+  {
+   "id": "plato-younger/0",
+   "title": "Book IX, 13",
+   "authorSlug": "plato-younger",
+   "author": "Plato the Younger",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. III, 1917)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "A blind man carried a lame man on his back, lending him his feet and borrowing from him his eyes."
+  },
+  {
+   "id": "plato-younger/1",
+   "title": "Book IX, 748: On Dionysus carved on an Amethyst",
+   "authorSlug": "plato-younger",
+   "author": "Plato the Younger",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. III, 1917)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "The stone is amethyst, but I am the toper Dionysus. Hither let it teach me to be sober, or learn itself to get drunk."
+  },
+  {
+   "id": "plato-younger/2",
+   "title": "Book IX, 751",
+   "authorSlug": "plato-younger",
+   "author": "Plato the Younger",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. III, 1917)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "The stone is Hyacinthus, and on it are Apollo and Daphne. Of which was Apollo rather the lover?"
+  }
+ ]
+}

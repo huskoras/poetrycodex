@@ -1,0 +1,30 @@
+{
+ "slug": "nicodemus",
+ "name": "Nicodemus",
+ "dates": "date unknown (Paton)",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Nicodemus is one of the epigrammatists whose short poems were gathered in the Greek Anthology. Paton's index of authors records the poet's date as unknown.",
+  "This archive carries the 1 epigram ascribed to the poet in the third volume of W. R. Paton's prose translation (Book IX: 53)."
+ ],
+ "order": 59.61401,
+ "poems": [
+  {
+   "id": "nicodemus/0",
+   "title": "Book IX, 53",
+   "authorSlug": "nicodemus",
+   "author": "Nicodemus",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. III, 1917)",
+   "note": "Also attributed to Bassus.",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Hippocrates was the light of mankind; whole peoples were saved by him, and there was a scarcity of dead in Hades."
+  }
+ ]
+}
