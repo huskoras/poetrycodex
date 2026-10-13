@@ -1,0 +1,30 @@
+{
+ "slug": "athenogenes",
+ "name": "Athenogenes",
+ "dates": "d. 296",
+ "era": "Byzantine",
+ "category": "Medieval",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "John Brownlie's Hymns of the Greek Church (1900) heads its rendering of the evening hymn 'Phos hilaron' with the name of Athenogenes and the date 296 A.D. The sources used here give nothing else about him.",
+  "This file contains that single poem, Brownlie's translation beginning 'Light serene of holy glory', recorded with its translator."
+ ],
+ "order": 60.900007,
+ "poems": [
+  {
+   "id": "athenogenes/0",
+   "title": "Light serene of holy glory",
+   "authorSlug": "athenogenes",
+   "author": "Athenogenes",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Hymns of the Greek Church (1900)",
+   "note": "",
+   "translator": "trans. John Brownlie (1900)",
+   "text": "Light serene of holy glory\nFrom the Immortal Father poured,\nHoly Thou, O Blessed Jesus,\nHoly, Blessed, Christ the Lord.\n\nNow we see the sun descending,\nNow declines the evening light,\nAnd in hymns we praise the Father,\nSon and Spirit, God of Might.\n\nWorthy of unending praises,\nChrist the Son of God art Thou;\nFor Thy gift of life eternal,\nSee the world adores Thee now."
+  }
+ ]
+}
