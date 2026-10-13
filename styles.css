@@ -84,8 +84,8 @@ a { color: inherit; }
 /* ============ STICKY TOP BAR ============ */
 /* A sticky box only sticks inside its parent, and on inner pages the header holds nothing
    but the bar, so the header itself is what sticks. On home the bar is hidden and the hero
-   scrolls away as before. On phones the bar is two or three rows tall (about 140px, a sixth
-   of the screen), so there it scrolls away with the page and the reader keeps the poem. */
+   scrolls away as before. On phones the bar is two rows tall (about 94px, a ninth of the
+   screen), and there it scrolls away with the page so the reader keeps the poem. */
 @media (min-width: 781px) {
   body:not([data-route="home"]) .site-head { position: sticky; top: 0; z-index: 50; }
 }
@@ -364,10 +364,11 @@ a.poet-card, a.topic-card { display: block; }
    the lines that still wrap get the hanging indent. Justified prose would open wide
    gaps in so narrow a column, so prose sets ragged-right there. */
 @media (max-width: 560px) {
-  .poem-text { font-size: calc(1.06rem * var(--ts)); padding-left: .9rem; }
+  .poem-text { font-size: calc(.95rem * var(--ts)); padding-left: .75rem; border-left-width: 2px; }
   .poem-text.is-prose { font-size: calc(1.02rem * var(--ts)); text-align: left; }
   .poem-text.numbered { padding-right: 2.1rem; }
-  .poem-text.numbered .ln[data-n]::after { right: -2.1rem; width: 1.8rem; line-height: calc(1.96rem * var(--ts)); /* 1.06 x 1.85 */ }
+  .poem-text.numbered .ln[data-n]::after { right: -2.1rem; width: 1.8rem;
+    line-height: calc(1.7575rem * var(--ts)); /* .95 x 1.85, so the number sits on its line */ }
 }
 .note-block { font-family: var(--serif); font-size: calc(1.12rem * var(--ts)); line-height: 1.75; color: var(--ink-soft); }
 .themes { display: flex; flex-wrap: wrap; gap: .5rem; }
@@ -547,12 +548,24 @@ a.poet-card, a.topic-card { display: block; }
   /* The cue keeps its label and its action; the sentence beside them is for desktop. */
   .ec-hint { display: none; }
   .tb-search { margin-left: auto; }
+  /* The search box takes what the brand leaves, so the light/dark button stays on the
+     first row beside it: two rows (brand, search, moon / the nav), not three. */
+  .tb-search { flex: 1 1 0; min-width: 0; }
+  .tb-search input { width: 100%; min-width: 0; }
+  .topbar .tb-search + .tb-theme { margin-left: 0; }
   .hero-inner { padding: 3rem 1.3rem 2.8rem; }
   main { padding: 1.8rem 1.3rem 3rem; }
   .poet-top { grid-template-columns: 1fr; gap: 1.4rem; }
   .portrait-wrap { max-width: 300px; }
   .detail-nav { flex-direction: column; }
 }
+/* Small phones: the coin alone links home in the app's bar (the page title still names the
+   site), so the search box keeps a usable width. The static pages have no search box there. */
+@media (max-width: 440px) { .topbar-inner.has-search .tb-brand span { display: none; } }
+/* A long label ("Narrative poem · 1818 · 4 parts") goes under its title rather than off the edge. */
+@media (max-width: 560px) { .poem-links a { flex-wrap: wrap; row-gap: .15rem; } .poem-links .pl-sub { white-space: normal; } }
+/* Phones: a 1rem margin each side gives verse more of the line (after the 780px rule above). */
+@media (max-width: 560px) { main { padding-left: 1rem; padding-right: 1rem; } }
 
 /* About — roadmap list + "early version" tag */
 .about h2 .soon {
