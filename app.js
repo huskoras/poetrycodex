@@ -61,6 +61,9 @@
 
   const esc = (s) => String(s == null ? "" : s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  // Counts are printed with commas ("12,041 poems"). Never used for a total of poets: the
+  // site does not print one anywhere (owner's rule).
+  const num = (n) => Number(n || 0).toLocaleString("en-US");
 
   // ---------- search folding ----------
   // Search ignores case, accents, apostrophes and the Turkish dotted and dotless i, and
@@ -104,6 +107,11 @@
   const translatedBy = (t) => String(t).replace(/^trans\.\s*/i, "Translated by ");
   const translatorShort = (t) => String(t).replace(/\s*\([^)]*\)\s*$/, "");
   // "Translated by … · From <book>", under the author line; empty when neither is known.
+  // The poet's dates after the byline of a poem or a work's part ("by John Keats 1795–1821").
+  const datesHTML = (slug) => {
+    const d = (POETS[slug] || {}).dates;
+    return d ? ` <span class="detail-dates">${esc(d)}</span>` : "";
+  };
   function sourceLine(translator, collection) {
     const parts = [translator && translatedBy(translator), collection && "From " + collection].filter(Boolean);
     return parts.length ? `<p class="detail-source">${parts.map(esc).join(" · ")}</p>` : "";
@@ -846,7 +854,7 @@
   }
   function moreHTML(total) {
     const left = total - shown;
-    return left > 0 ? `<div class="more-row"><button class="more-btn" type="button">Show ${Math.min(PAGE, left)} more<span class="more-left"> · ${left} left</span></button></div>` : "";
+    return left > 0 ? `<div class="more-row"><button class="more-btn" type="button">Show ${Math.min(PAGE, left)} more<span class="more-left"> · ${num(left)} left</span></button></div>` : "";
   }
   // Adds the next PAGE cards in place (no redraw, so the page does not move) and hands
   // keyboard focus to the first of them.
@@ -876,7 +884,7 @@
       <h2 class="card-title">${esc(w.title)}</h2>
       <div class="card-author">${esc(w.author)}${w.translator ? " · " + esc(translatorShort(w.translator)) : ""}</div>
       <p class="card-excerpt">${esc(w.blurb || (w.sections.length + " cantos"))}</p>
-      <span class="work-flag">Read in ${w.sections.length} parts →</span>
+      <span class="work-flag">${w.sections.length === 1 ? "Read" : `Read in ${num(w.sections.length)} parts`} →</span>
     </a>`;
 
   // ---------- HOME: browse by era ----------
@@ -889,8 +897,8 @@
         <a class="topic-card" href="#/category/${esc(CATEGORY_SLUGS[cat])}">
           <p class="tc-name">${esc(cat)}</p>
           <p class="tc-count">${[
-            stats.poems ? stats.poems + " poem" + (stats.poems === 1 ? "" : "s") : "",
-            stats.works ? stats.works + " work" + (stats.works === 1 ? "" : "s") : "",
+            stats.poems ? num(stats.poems) + " poem" + (stats.poems === 1 ? "" : "s") : "",
+            stats.works ? num(stats.works) + " work" + (stats.works === 1 ? "" : "s") : "",
           ].filter(Boolean).join(" \u00b7 ")}</p>
         </a>`;
     }).join("");
@@ -899,7 +907,7 @@
         ${tiles}
         <a class="topic-card epics-tile" href="#/category/${EPICS_SLUG}">
           <p class="tc-name">Epics</p>
-          <p class="tc-count">${epicCount} work${epicCount === 1 ? "" : "s"} \u00b7 every era</p>
+          <p class="tc-count">${num(epicCount)} work${epicCount === 1 ? "" : "s"} \u00b7 every era</p>
         </a>
       </div>`;
   }
@@ -919,7 +927,7 @@
       </div>
       <p class="doors-or">Browse by era</p>
       ${eraGridHTML()}
-      <div class="browse-all"><a href="#/poems" class="read-link">Or browse all ${DATA.count} poems \u2192</a></div>`;
+      <div class="browse-all"><a href="#/poems" class="read-link">Or browse all ${num(DATA.count)} poems \u2192</a></div>`;
     wireSearch();
   }
 
@@ -961,7 +969,7 @@
         <a class="door door-archive" href="#/eras">
           <img src="archive-248.webp" alt="" width="124" height="124" />
           <span class="d-name">The Archive</span>
-          <span class="d-line">${DATA.count.toLocaleString("en-US")} poems,
+          <span class="d-line">${num(DATA.count)} poems,
           from Homer and Anglo-Saxon verse to the early twentieth century \u2014 every one in the public domain.</span>
           <span class="d-go">Enter &rarr;</span>
         </a>
@@ -977,7 +985,7 @@
 
       <p class="doors-or">Or go straight to an era</p>
       ${eraGridHTML()}
-      <div class="browse-all"><a href="#/poems" class="read-link">Browse all ${DATA.count} poems \u2192</a></div>`;
+      <div class="browse-all"><a href="#/poems" class="read-link">Browse all ${num(DATA.count)} poems \u2192</a></div>`;
   }
 
   // ---------- CATEGORY: filtered era (or cross-cutting "epics") view ----------
@@ -994,8 +1002,8 @@
       : SORTED.filter((p) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
 
     const sub = isEpics
-      ? `${works.length} epic work${works.length === 1 ? "" : "s"}, spanning every era in the archive.`
-      : `${poems.length} poem${poems.length === 1 ? "" : "s"}${works.length ? " · " + works.length + " work" + (works.length === 1 ? "" : "s") : ""}.`;
+      ? `${num(works.length)} epic work${works.length === 1 ? "" : "s"}, spanning every era in the archive.`
+      : `${num(poems.length)} poem${poems.length === 1 ? "" : "s"}${works.length ? " · " + num(works.length) + " work" + (works.length === 1 ? "" : "s") : ""}.`;
 
     setTitle(isEpics ? "Epics" : catName + " poetry");
     app.innerHTML = `
@@ -1037,12 +1045,12 @@
     });
     let banner = "";
     if (query) banner = `<div class="filter-banner"><span class="lbl">Search</span> <span class="val">“${esc(query)}”</span><button data-clear="1">Clear ✕</button></div>`;
-    const chips = [`<button class="chip ${filterSubject === "All" ? "active" : ""}" data-sub="All">All<span class="n">${DATA.count}</span></button>`]
-      .concat(DATA.subjects.map((s) => `<button class="chip ${filterSubject === s.name ? "active" : ""}" data-sub="${esc(s.name)}">${esc(s.name)}<span class="n">${s.count}</span></button>`)).join("");
+    const chips = [`<button class="chip ${filterSubject === "All" ? "active" : ""}" data-sub="All">All<span class="n">${num(DATA.count)}</span></button>`]
+      .concat(DATA.subjects.map((s) => `<button class="chip ${filterSubject === s.name ? "active" : ""}" data-sub="${esc(s.name)}">${esc(s.name)}<span class="n">${num(s.count)}</span></button>`)).join("");
     const forms = formCounts();
     const formChips = forms.length ? `<div class="chips form-chips" role="group" aria-label="Form"><span class="chips-lbl">Form</span>`
       + [`<button class="chip ${filterForm === "All" ? "active" : ""}" data-form="All">Any form</button>`]
-        .concat(forms.map((f) => `<button class="chip ${filterForm === f.name ? "active" : ""}" data-form="${esc(f.name)}">${esc(formLabel(f.name))}<span class="n">${f.count}</span></button>`)).join("")
+        .concat(forms.map((f) => `<button class="chip ${filterForm === f.name ? "active" : ""}" data-form="${esc(f.name)}">${esc(formLabel(f.name))}<span class="n">${num(f.count)}</span></button>`)).join("")
       + `</div>` : "";
     const what = filterForm !== "All" ? formLabel(filterForm) : "Poems";
 
@@ -1050,7 +1058,7 @@
     app.innerHTML = `
       ${banner}
       ${query ? "" : `<div class="chips">${chips}</div>${formChips}`}
-      <p class="result-meta">${results.length} poem${results.length === 1 ? "" : "s"}${works.length ? " · " + works.length + " work" + (works.length === 1 ? "" : "s") : ""}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}${filterForm !== "All" ? " · " + esc(formLabel(filterForm)) : ""}</p>
+      <p class="result-meta">${num(results.length)} poem${results.length === 1 ? "" : "s"}${works.length ? " · " + num(works.length) + " work" + (works.length === 1 ? "" : "s") : ""}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}${filterForm !== "All" ? " · " + esc(formLabel(filterForm)) : ""}</p>
       <div class="grid">${works.map(workCardHTML).join("")}${results.length || works.length ? pagedCards(results) : `<p class="empty">No poems match.</p>`}</div>
       ${moreHTML(results.length)}`;
 
@@ -1080,7 +1088,10 @@
             <div class="pc-body">
               <p class="pc-name">${esc(p.name)}</p>
               <p class="pc-dates">${esc(p.dates)}</p>
-              <p class="pc-count">${p.poemCount} poem${p.poemCount === 1 ? "" : "s"}${p.workCount ? " · " + p.workCount + " work" + (p.workCount === 1 ? "" : "s") : ""}</p>
+              <p class="pc-count">${[
+                p.poemCount ? num(p.poemCount) + " poem" + (p.poemCount === 1 ? "" : "s") : "",
+                p.workCount ? num(p.workCount) + " work" + (p.workCount === 1 ? "" : "s") : "",
+              ].filter(Boolean).join(" · ")}</p>
             </div>
           </a>`).join("")}
       </div>`;
@@ -1102,7 +1113,7 @@
           <h2>Major Works</h2>
           <ul class="poem-links">
             ${works.map((w) => `
-              <li><a href="#/work/${esc(w.slug)}"><span class="pl-title">${esc(w.title)}</span><span class="pl-sub">${esc(w.type)} · ${esc(w.year)} · ${w.sections.length} parts</span></a></li>`).join("")}
+              <li><a href="#/work/${esc(w.slug)}"><span class="pl-title">${esc(w.title)}</span><span class="pl-sub">${esc(w.type)} · ${esc(w.year)} · ${num(w.sections.length)} part${w.sections.length === 1 ? "" : "s"}</span></a></li>`).join("")}
           </ul>
         </section>` : "";
     app.innerHTML = `
@@ -1114,7 +1125,8 @@
             <figcaption class="portrait-credit">${esc(poet.credit)}</figcaption>
           </figure>
           <div>
-            <p class="poet-era">${esc(poet.era)}</p>
+            <p class="poet-era">${CATEGORY_SLUGS[poet.category]
+              ? `<a href="#/category/${esc(CATEGORY_SLUGS[poet.category])}">${esc(poet.era)}</a>` : esc(poet.era)}</p>
             <h1 class="poet-name">${esc(poet.name)}</h1>
             <p class="poet-dates">${esc(poet.dates)}</p>${continueBlock}
             <div class="poet-bio">
@@ -1123,13 +1135,13 @@
           </div>
         </div>
         ${worksHTML}
-        <section class="poet-poems">
-          <h2>Poems · ${poems.length}</h2>
+        ${poems.length || !works.length ? `<section class="poet-poems">
+          <h2>Poems · ${num(poems.length)}</h2>
           <ul class="poem-links">
             ${poems.map((p) => `
               <li><a href="#/poem/${esc(p.id)}"><span class="pl-title"${langAttr(p.authorSlug, p.translator)}>${esc(p.title)}</span><span class="pl-sub">${esc(p.primarySubject)}</span></a></li>`).join("")}
           </ul>
-        </section>
+        </section>` : ""}
       </article>`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/poets"; });
     bindContinue();
@@ -1205,7 +1217,7 @@
         <div class="cite-row toc-tools">${shelfButtonHTML(entry)}</div>
         <p class="shelf-msg" hidden>${VISIT_ONLY}</p>
         <hr class="rule">
-        <p class="section-label">Contents · ${w.sections.length} part${w.sections.length === 1 ? "" : "s"}</p>
+        <p class="section-label">Contents · ${num(w.sections.length)} part${w.sections.length === 1 ? "" : "s"}</p>
         <ul class="poem-links">
           ${w.sections.map((s, i) => {
             const bits = [place && place.i === i ? '<span class="last-read">Last read</span>' : "", partSize(s)].filter(Boolean);
@@ -1246,7 +1258,7 @@
         ${readingToolsHTML()}
         <div class="detail-subject">${esc(w.title)} · ${esc(w.year)}</div>
         <h1 class="detail-title">${esc(s.title)}</h1>
-        <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
+        <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a>${datesHTML(w.authorSlug)}</p>
         ${sourceLine(w.translator)}
         ${otherTrHTML(WORKS[slug], i)}
         <hr class="rule">
@@ -1405,7 +1417,7 @@
         ${DATA.subjects.map((s) => `
           <button class="topic-card" data-sub="${esc(s.name)}">
             <p class="tc-name">${esc(s.name)}</p>
-            <p class="tc-count">${s.count} poem${s.count === 1 ? "" : "s"}</p>
+            <p class="tc-count">${num(s.count)} poem${s.count === 1 ? "" : "s"}</p>
           </button>`).join("")}
       </div>`;
     app.querySelectorAll(".topic-card").forEach((c) => c.addEventListener("click", () => {
@@ -2174,7 +2186,7 @@
         ${readingToolsHTML()}
         <div class="detail-subject">${esc(p.primarySubject)}${form ? " · " + esc(form) : ""}</div>
         <h1 class="detail-title"${lang}>${esc(p.title)}</h1>
-        <p class="detail-author">by <a href="#/poet/${esc(p.authorSlug)}">${esc(p.author)}</a></p>
+        <p class="detail-author">by <a href="#/poet/${esc(p.authorSlug)}">${esc(p.author)}</a>${datesHTML(p.authorSlug)}</p>
         ${sourceLine(p.translator, p.collection)}
         ${themes}
         <hr class="rule">
