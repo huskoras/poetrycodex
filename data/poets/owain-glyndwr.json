@@ -1,0 +1,30 @@
+{
+ "slug": "owain-glyndwr",
+ "name": "Owain Glyndŵr",
+ "dates": "c. 1354–1416",
+ "era": "Medieval Welsh",
+ "category": "Celtic",
+ "portrait": null,
+ "credit": "No confirmed portrait sourced for this archive.",
+ "bio": [
+  "Owain Glyndŵr (c. 1354–1416), Prince of Wales, led the Welsh revolt against English rule from 1400. He was the patron of the poet Iolo Goch, who celebrated his house at Sycharth.",
+  "The quatrain here is attributed to him in Borrow's source, as translated in Welsh Poems and Ballads (1915); the attribution is traditional and uncertain."
+ ],
+ "order": 100.5,
+ "poems": [
+  {
+   "id": "owain-glyndwr/0",
+   "title": "David Gam",
+   "authorSlug": "owain-glyndwr",
+   "author": "Owain Glyndŵr",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "Welsh Poems and Ballads (1915)",
+   "note": "From \"Wild Wales\". Printed as \"Attributed to Owain Glyndower\"; the attribution is the source's.",
+   "translator": "trans. George Borrow (Welsh Poems and Ballads, 1915)",
+   "text": "Shouldst thou a little red man descry\n   Asking about his dwelling fair,\nTell him it under the bank doth lie,\n   And its brow the mark of the coal doth bear."
+  }
+ ]
+}
