@@ -1,7 +1,7 @@
 :root {
   --ink: #17140f;
   --ink-soft: #4c473e;
-  --faint: #8c8578;
+  --faint: #736c60;        /* small grey labels: 4.5 : 1 on white, the masthead and --surface-alt */
   --masthead: #f1f0ea;      /* light warm grey — sticky header + hero */
   --masthead-2: #e7e4da;    /* a shade deeper — far end of the monogram tiles' gradient */
   --body: #ffffff;
@@ -11,7 +11,8 @@
   --line-strong: #d6d2c7;
   --accent: #26415c;        /* deep navy — pairs with the gold coin */
   --accent-2: #345678;
-  --gold: #a9852f;
+  --gold: #a9852f;          /* rules, borders, ornaments */
+  --gold-ink: #86671f;      /* gold for small text and for gold buttons with white text (4.5 : 1) */
   --on-accent: #ffffff;     /* text on a navy or gold button */
   --error: #9c3b2e;
   --ts: 1;                  /* reading text size: 1, 1.15 or 1.3 (the "Aa" switch) */
@@ -40,6 +41,7 @@
     --accent: #a3bfdc;        /* the navy, lifted so it reads on a dark page */
     --accent-2: #86a5c7;
     --gold: #cba650;
+    --gold-ink: #cba650;
     --on-accent: #10161d;
     --error: #e3937f;
     --shadow-sm: 0 1px 2px rgba(0,0,0,.3);
@@ -61,6 +63,7 @@
   --accent: #a3bfdc;        /* the navy, lifted so it reads on a dark page */
   --accent-2: #86a5c7;
   --gold: #cba650;
+  --gold-ink: #cba650;
   --on-accent: #10161d;
   --error: #e3937f;
   --shadow-sm: 0 1px 2px rgba(0,0,0,.3);
@@ -229,7 +232,7 @@ a.poet-card, a.topic-card { display: block; }
 .card.work-card { background: linear-gradient(180deg, var(--surface) 0%, var(--surface-alt) 100%); border-color: var(--line-strong); }
 .card.work-card::before { background: var(--gold); transform: scaleY(1); width: 4px; }
 .card.work-card .work-flag { margin-top: .9rem; font-family: var(--sans); font-size: .74rem; font-weight: 700;
-  letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+  letter-spacing: .08em; text-transform: uppercase; color: var(--gold-ink); }
 .work-subtitle { font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--ink-soft); margin: -.2rem 0 1rem; }
 
 /* ============ POET CARDS (index) ============ */
@@ -283,7 +286,7 @@ a.poet-card, a.topic-card { display: block; }
 .topic-card .tc-name { font-family: var(--serif); font-size: 1.5rem; font-weight: 500; color: var(--ink); margin: 0; line-height: 1.15; }
 .topic-card .tc-count { font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-top: .6rem; }
 .topic-card.epics-tile { border-left: 4px solid var(--gold); background: linear-gradient(180deg, var(--surface) 0%, var(--surface-alt) 100%); }
-.topic-card.epics-tile .tc-count { color: var(--gold); }
+.topic-card.epics-tile .tc-count { color: var(--gold-ink); }
 
 .empty { text-align: center; color: var(--faint); font-family: var(--serif); font-style: italic; font-size: 1.2rem; padding: 4rem 0; }
 
@@ -623,9 +626,9 @@ a.poet-card, a.topic-card { display: block; }
 }
 .lens.active { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .lens:disabled { opacity: .4; cursor: default; box-shadow: none; }
-.lens-alt { border-style: dashed; color: var(--gold); border-color: var(--gold); }
-.lens-alt:hover:not(:disabled) { border-color: var(--gold); color: var(--gold); }
-.lens-alt.active { background: var(--gold); border-color: var(--gold); color: var(--on-accent); }
+.lens-alt { border-style: dashed; color: var(--gold-ink); border-color: var(--gold); }
+.lens-alt:hover:not(:disabled) { border-color: var(--gold); color: var(--gold-ink); }
+.lens-alt.active { background: var(--gold-ink); border-color: var(--gold-ink); color: var(--on-accent); }
 
 /* --- question + compare rows --- */
 .ask-form { display: flex; align-items: flex-end; gap: .7rem; margin: 0 0 1rem; position: relative; }
@@ -647,7 +650,7 @@ textarea.ask-input {
   font-family: var(--sans); font-size: .78rem; font-weight: 700;
   letter-spacing: .1em; text-transform: uppercase;
   padding: 1rem 1.9rem; cursor: pointer; border-radius: 6px;
-  color: var(--on-accent); background: var(--gold); border: 1px solid var(--gold);
+  color: var(--on-accent); background: var(--gold-ink); border: 1px solid var(--gold-ink);
   transition: opacity .15s; white-space: nowrap;
 }
 .ask-send:hover:not(:disabled) { opacity: .86; }
@@ -702,7 +705,7 @@ textarea.ask-input {
 }
 /* a stored reading, replayed rather than written afresh */
 .engine-saved { display: inline-block; margin-left: .45rem; padding: .05rem .42rem; border: 1px solid currentColor;
-  border-radius: 3px; color: var(--gold); font-weight: 700; white-space: nowrap; cursor: help; }
+  border-radius: 3px; color: var(--gold-ink); font-weight: 700; white-space: nowrap; cursor: help; }
 
 @media (max-width: 760px) {
   .engine { width: calc(100vw - 2rem); padding: 1.5rem 1.3rem 1.7rem; margin-bottom: 2rem; }
@@ -719,9 +722,9 @@ textarea.ask-input {
   color: var(--faint); margin: 0 0 1.7rem;
 }
 .compare-form .ask-send {
-  background: transparent; color: var(--gold); border-color: var(--gold);
+  background: transparent; color: var(--gold-ink); border-color: var(--gold);
 }
-.compare-form .ask-send:hover:not(:disabled) { background: var(--gold); color: var(--on-accent); opacity: 1; }
+.compare-form .ask-send:hover:not(:disabled) { background: var(--gold-ink); border-color: var(--gold-ink); color: var(--on-accent); opacity: 1; }
 
 
 /* ============ THE ORACLE ============ */
@@ -795,7 +798,7 @@ textarea.ask-input {
   font-family: var(--sans); font-size: .78rem; font-weight: 700;
   letter-spacing: .1em; text-transform: uppercase;
   padding: 1rem 1.7rem; cursor: pointer; border-radius: 8px;
-  color: var(--on-accent); background: var(--gold); border: 1px solid var(--gold);
+  color: var(--on-accent); background: var(--gold-ink); border: 1px solid var(--gold-ink);
   transition: opacity .15s;
 }
 .o-send:hover:not(:disabled) { opacity: .86; }
@@ -834,7 +837,7 @@ textarea.ask-input {
 }
 .ec-go {
   flex: none; font-family: var(--sans); font-size: .7rem; font-weight: 700;
-  letter-spacing: .1em; text-transform: uppercase; color: var(--gold);
+  letter-spacing: .1em; text-transform: uppercase; color: var(--gold-ink);
 }
 .engine-more {
   font-family: var(--serif); font-size: 1rem; color: var(--ink-soft);
@@ -857,7 +860,7 @@ textarea.ask-input {
 }
 .oc-label {
   font-family: var(--sans); font-size: .64rem; font-weight: 700;
-  letter-spacing: .16em; text-transform: uppercase; color: var(--gold);
+  letter-spacing: .16em; text-transform: uppercase; color: var(--gold-ink);
 }
 .oc-title { font-family: var(--serif); font-size: 1.04rem; color: var(--ink); }
 .oc-by { font-family: var(--serif); font-size: .96rem; font-style: italic; color: var(--ink-soft); }
@@ -940,10 +943,10 @@ textarea.ask-input {
 .d-go {
   font-family: var(--sans); font-size: .72rem; font-weight: 700;
   letter-spacing: .13em; text-transform: uppercase;
-  padding: .62rem 1.4rem; border-radius: 4px; color: #fff;
+  padding: .62rem 1.4rem; border-radius: 4px; color: var(--on-accent);
 }
 .door-archive:hover { border-color: var(--gold); }
-.door-archive .d-go { background: var(--gold); }
+.door-archive .d-go { background: var(--gold-ink); }
 .door-oracle:hover { border-color: var(--accent); }
 .door-oracle .d-go { background: var(--accent); }
 
@@ -968,7 +971,7 @@ textarea.ask-input {
 .potd .d-go { background: var(--accent); }
 .d-kicker {
   font-family: var(--sans); font-size: .68rem; font-weight: 700; letter-spacing: .16em;
-  text-transform: uppercase; color: var(--gold); margin: 0 0 1.1rem;
+  text-transform: uppercase; color: var(--gold-ink); margin: 0 0 1.1rem;
 }
 .potd .d-name { margin-bottom: .45rem; text-wrap: balance; }
 .d-by { font-family: var(--serif); font-style: italic; font-size: 1.04rem; color: var(--ink-soft); margin-bottom: 1.2rem; }
@@ -1021,7 +1024,7 @@ textarea.ask-input {
 /* ============ STATIC PAGES (poem and poet pages for search engines) ============ */
 .static-page .read-in-archive { margin-top: 2.2rem; font-family: var(--sans); font-size: .78rem;
   letter-spacing: .1em; text-transform: uppercase; }
-.static-page .read-in-archive a { color: var(--gold); text-decoration: none; font-weight: 700; }
+.static-page .read-in-archive a { color: var(--gold-ink); text-decoration: none; font-weight: 700; }
 .static-page .read-in-archive a:hover { color: var(--accent); }
 .static-page a.back { text-decoration: none; }   /* work sections: back to the contents */
 /* 404 page (also generated by tools/build_pages.py) */
@@ -1070,9 +1073,9 @@ textarea.ask-input {
 @media print {
   @page { margin: 2cm; }
   /* Paper is white whatever the screen's theme (the triple :root outranks the dark rules). */
-  :root:root:root { --ink: #17140f; --ink-soft: #4c473e; --faint: #8c8578; --body: #fff; --surface: #fff;
+  :root:root:root { --ink: #17140f; --ink-soft: #4c473e; --faint: #736c60; --body: #fff; --surface: #fff;
     --surface-alt: #f6f5f1; --line: #e4e1d8; --line-strong: #d6d2c7; --accent: #26415c; --accent-2: #345678;
-    --gold: #a9852f; --on-accent: #fff; --masthead: #f1f0ea; --ts: 1; color-scheme: light; }
+    --gold: #a9852f; --gold-ink: #86671f; --on-accent: #fff; --masthead: #f1f0ea; --ts: 1; color-scheme: light; }
   body { background: #fff; }
   .site-head, .site-foot, .engine-cue, .engine, .detail-nav, .back, .themes, .pn-row,
   .read-in-archive, .rule-ornament, .ln-ctl, .cite-row, .cite-box, .cite-static, .more-row, .shelf-msg, .note-box,
