@@ -1,0 +1,30 @@
+{
+ "slug": "artemon",
+ "name": "Artemon",
+ "dates": "date uncertain (Paton)",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Artemon is one of the named epigrammatists whose short poems are preserved in the Greek Anthology. Paton's Index of Authors says the poet's date is uncertain. The attribution is queried by Paton.",
+  "This archive carries the 1 epigram ascribed to the poet in the fourth volume of W. R. Paton's prose translation (Loeb, 1918): Book XII: 124."
+ ],
+ "order": 59.614104,
+ "poems": [
+  {
+   "id": "artemon/0",
+   "title": "Book XII, 124",
+   "authorSlug": "artemon",
+   "author": "Artemon",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "Attribution queried by Paton.",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "As Echedemus was peeping out of his door on the sly, I slyly kissed that charming boy who is just in his prime. Now I am in dread, for he came to me in a dream, bearing a quiver, and departed after giving me fighting cocks, but at one time smiling, at another with no friendly look. But have I touched a swarm of bees, and a nettle, and fire?"
+  }
+ ]
+}

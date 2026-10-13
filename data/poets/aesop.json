@@ -1,0 +1,30 @@
+{
+ "slug": "aesop",
+ "name": "Aesop",
+ "dates": "dates uncertain",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Aesop is one of the named epigrammatists whose short poems are preserved in the Greek Anthology. Paton's Index of Authors gives no date for the poet.",
+  "This archive carries the 1 epigram ascribed to the poet in the fourth volume of W. R. Paton's prose translation (Loeb, 1918): Book X: 123."
+ ],
+ "order": 59.614101,
+ "poems": [
+  {
+   "id": "aesop/0",
+   "title": "Book X, 123",
+   "authorSlug": "aesop",
+   "author": "Aesop",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Life, how shall one escape thee without death; for thou hast a myriad ills and neither to fly from them nor to bear them is easy. Sweet are thy natural beauties, the earth, the sea, the stars, the orbs of the sun and moon. But all the rest is fear and pain, and if some good befall a man, an answering Nemesis succeeds it."
+  }
+ ]
+}

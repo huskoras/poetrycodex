@@ -1,0 +1,44 @@
+{
+ "slug": "apollinarius",
+ "name": "Apollinarius",
+ "dates": "4th century AD (?) (Paton’s date)",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Apollinarius is one of the named epigrammatists whose short poems are preserved in the Greek Anthology. Paton's Index of Authors dates the poet to the 4th century AD (?).",
+  "This archive carries the 2 epigrams ascribed to the poet in the fourth volume of W. R. Paton's prose translation (Loeb, 1918): Book XI: 399, 421."
+ ],
+ "order": 61.358011,
+ "poems": [
+  {
+   "id": "apollinarius/0",
+   "title": "Book XI, 399",
+   "authorSlug": "apollinarius",
+   "author": "Apollinarius",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "A grammarian riding on a donkey fell off it, and, they say, lost his memory of grammar; then afterwards he led an ordinary life without any profession, not knowing a word of what he had always been teaching. But just the opposite happened to Glycon; for, having been ignorant of the vulgar tongue, not to speak of grammar, now, by riding on Libyan donkeys and often falling off them, he has suddenly become a grammarian."
+  },
+  {
+   "id": "apollinarius/1",
+   "title": "Book XI, 421",
+   "authorSlug": "apollinarius",
+   "author": "Apollinarius",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "If you speak ill of me in my absence you do me no injury; but if you speak well of me in my presence, know that you are speaking ill of me."
+  }
+ ]
+}

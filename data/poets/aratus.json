@@ -11,5 +11,34 @@
   "The Phaenomena, based on a prose work by the astronomer Eudoxus, was translated into Latin by Cicero and others and remained a school text for centuries. Mair’s Loeb prose translation (1921) is given in the Works section."
  ],
  "order": 43.8,
- "poems": []
+ "poems": [
+  {
+   "id": "aratus/0",
+   "title": "Book XI, 437",
+   "authorSlug": "aratus",
+   "author": "Aratus of Soli",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "I lament for Diotimus, who sits on stones repeating Alpha and Beta to the children of Gargarus."
+  },
+  {
+   "id": "aratus/1",
+   "title": "Book XII, 129",
+   "authorSlug": "aratus",
+   "author": "Aratus of Soli",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Philoctes of Argos is “fair” at Argos, and the columns of Corinth and tombstones of Megara announce the same. It is written that he is fair as far as Amphiaraus’ Baths. But that is little; they are only letters that beat us. For they are not stones that testify to this Philocles’ beauty, but Rhianus, who saw him with his own eyes, and he is superior to the other one."
+  }
+ ]
 }

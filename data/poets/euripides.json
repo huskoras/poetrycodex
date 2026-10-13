@@ -1,0 +1,30 @@
+{
+ "slug": "euripides",
+ "name": "Euripides",
+ "dates": "dates uncertain",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Euripides is one of the named epigrammatists whose short poems are preserved in the Greek Anthology. Paton's Index of Authors gives no date for the poet. The attribution is queried by Paton.",
+  "This archive carries the 1 epigram ascribed to the poet in the fourth volume of W. R. Paton's prose translation (Loeb, 1918): Book X: 107."
+ ],
+ "order": 42.851011,
+ "poems": [
+  {
+   "id": "euripides/0",
+   "title": "Book X, 107",
+   "authorSlug": "euripides",
+   "author": "Euripides",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "Attribution queried by Paton.",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "No man is fortunate unless God will it. Alas how unequal is the lot of men. Some are prosperous and on others who reverence the gods fall cruel misfortunes."
+  }
+ ]
+}

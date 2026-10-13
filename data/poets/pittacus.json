@@ -1,0 +1,30 @@
+{
+ "slug": "pittacus",
+ "name": "Pittacus",
+ "dates": "dates uncertain",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Pittacus is one of the named epigrammatists whose short poems are preserved in the Greek Anthology. Paton's Index of Authors gives no date for the poet. The attribution is queried by Paton.",
+  "This archive carries the 1 epigram ascribed to the poet in the fourth volume of W. R. Paton's prose translation (Loeb, 1918): Book XI: 440."
+ ],
+ "order": 59.614113,
+ "poems": [
+  {
+   "id": "pittacus/0",
+   "title": "Book XI, 440",
+   "authorSlug": "pittacus",
+   "author": "Pittacus",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "Attribution queried by Paton.",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Avoid all Megarians, for they are bitter."
+  }
+ ]
+}

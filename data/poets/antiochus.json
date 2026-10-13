@@ -1,0 +1,44 @@
+{
+ "slug": "antiochus",
+ "name": "Antiochus",
+ "dates": "date uncertain (Paton)",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Antiochus is one of the named epigrammatists whose short poems are preserved in the Greek Anthology. Paton's Index of Authors says the poet's date is uncertain.",
+  "This archive carries the 2 epigrams ascribed to the poet in the fourth volume of W. R. Paton's prose translation (Loeb, 1918): Book XI: 412, 422."
+ ],
+ "order": 59.614103,
+ "poems": [
+  {
+   "id": "antiochus/0",
+   "title": "Book XI, 412",
+   "authorSlug": "antiochus",
+   "author": "Antiochus",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "To paint the soul is difficult, to sketch the outward shape is easy, but in your case both are just the opposite. For Nature, bringing outside the perversity of your soul, has wrought so that it is a visible object ; but as for the tumult of your person and the offensiveness of your body, how could one paint it when one does not even wish to look on it?"
+  },
+  {
+   "id": "antiochus/1",
+   "title": "Book XI, 422",
+   "authorSlug": "antiochus",
+   "author": "Antiochus",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "Paton’s heading: “On an Ilkterate Man speaking in Public”.",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Bias, if he had any sense, would have hanged himself, but now, being such a fool, he both lives and grows rich even after his appearance in public."
+  }
+ ]
+}

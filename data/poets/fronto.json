@@ -1,0 +1,44 @@
+{
+ "slug": "fronto",
+ "name": "Fronto",
+ "dates": "3rd century AD (Paton’s date)",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Fronto is one of the named epigrammatists whose short poems are preserved in the Greek Anthology. Paton's Index of Authors dates the poet to the 3rd century AD.",
+  "This archive carries the 2 epigrams ascribed to the poet in the fourth volume of W. R. Paton's prose translation (Loeb, 1918): Book XII: 174, 233."
+ ],
+ "order": 60.728011,
+ "poems": [
+  {
+   "id": "fronto/0",
+   "title": "Book XII, 174",
+   "authorSlug": "fronto",
+   "author": "Fronto",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "How long wilt thou resist me, dearest Cyrus? What art thou doing? Dost thou not pity thy Cambyses tell me. Become not a Mede, for soon thou shalt be a Scythian and the hairs will make thee Astyages."
+  },
+  {
+   "id": "fronto/1",
+   "title": "Book XII, 233",
+   "authorSlug": "fronto",
+   "author": "Fronto",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Comedian, thou deemest that thy prime is “The Treasure,” knowing not that it is swifter to depart than “The Phantom.”” Time will make thee “The Hated Man” and then “The Countryman,” and then thou shalt seek “The Clipped Lady.”"
+  }
+ ]
+}

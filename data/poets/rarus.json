@@ -1,0 +1,30 @@
+{
+ "slug": "rarus",
+ "name": "Rarus",
+ "dates": "dates uncertain",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Rarus is one of the named epigrammatists whose short poems are preserved in the Greek Anthology. Paton's Index of Authors gives no date for the poet.",
+  "This archive carries the 1 epigram ascribed to the poet in the fourth volume of W. R. Paton's prose translation (Loeb, 1918): Book X: 121."
+ ],
+ "order": 59.614114,
+ "poems": [
+  {
+   "id": "rarus/0",
+   "title": "Book X, 121",
+   "authorSlug": "rarus",
+   "author": "Rarus",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "He who says openly that he hates us does not hurt us so much as the man who simulates pure friendship. For having previous knowledge of him who hates us, we avoid him, but we do not guard ourselves against him who says he loves us. Him I judge a grievous enemy, who, when we trust him as a friend, does us injury by stealth."
+  }
+ ]
+}

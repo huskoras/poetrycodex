@@ -1,0 +1,30 @@
+{
+ "slug": "trajan",
+ "name": "Trajan",
+ "dates": "dates uncertain",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Trajan is one of the named epigrammatists whose short poems are preserved in the Greek Anthology. Paton's Index of Authors gives no date for the poet. Paton's index lists him as the emperor Trajan.",
+  "This archive carries the 1 epigram ascribed to the poet in the fourth volume of W. R. Paton's prose translation (Loeb, 1918): Book XI: 418."
+ ],
+ "order": 60.201011,
+ "poems": [
+  {
+   "id": "trajan/0",
+   "title": "Book XI, 418",
+   "authorSlug": "trajan",
+   "author": "Trajan",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. IV, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "If you put your nose pointing to the sun and open your mouth wide, you will show all passers-by the time of day."
+  }
+ ]
+}
