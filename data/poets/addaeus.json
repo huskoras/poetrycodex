@@ -1,0 +1,44 @@
+{
+ "slug": "addaeus",
+ "name": "Addaeus",
+ "dates": "date uncertain (probably 1st century BC / 1st century AD)",
+ "era": "Imperial Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Addaeus is an epigrammatist whose short poems are preserved in the Greek Anthology; the Anthology's headings sometimes call him a Macedonian. His date is uncertain, but he is generally placed among the poets of the early imperial period.",
+  "Mackail's Select Epigrams (1890) prints two of his epigrams, one a request to a hero's shrine at Potidaea and one on the release of an old ox from labour."
+ ],
+ "order": 54.36,
+ "poems": [
+  {
+   "id": "addaeus/0",
+   "title": "The Prayers of the Saints (Mackail)",
+   "authorSlug": "addaeus",
+   "author": "Addaeus",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Select Epigrams from the Greek Anthology (1890)",
+   "note": "",
+   "translator": "trans. J. W. Mackail (1890)",
+   "text": "If thou pass by the hero (and he is called Philopregmon) who lies by the cross-roads in front of Potidaea, tell him to what work thou leadest thy feet; straightway will he, being by thee, make thy business easy."
+  },
+  {
+   "id": "addaeus/1",
+   "title": "The Release of the Ox (Mackail)",
+   "authorSlug": "addaeus",
+   "author": "Addaeus",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Select Epigrams from the Greek Anthology (1890)",
+   "note": "",
+   "translator": "trans. J. W. Mackail (1890)",
+   "text": "The labouring ox, outworn with old age and labour of the furrow, Alcon did not lead to the butchering knife, reverencing it for its works; and astray in the deep meadow grass it rejoices with lowings over freedom from the plough."
+  }
+ ]
+}

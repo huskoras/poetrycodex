@@ -1,0 +1,58 @@
+{
+ "slug": "alpheus",
+ "name": "Alpheus of Mytilene",
+ "dates": "date uncertain (probably 1st century BC / 1st century AD)",
+ "era": "Imperial Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Alpheus of Mytilene is an epigrammatist represented in the Greek Anthology, where his poems are generally thought to come from the Garland of Philip of Thessalonica. His date is uncertain, but he probably belongs to the early imperial period.",
+  "His epigrams include prayers to Poseidon and reflections on the ruined cities of the heroic age, such as Troy and Mycenae. Mackail's Select Epigrams (1890) prints several of them."
+ ],
+ "order": 54.35,
+ "poems": [
+  {
+   "id": "alpheus/0",
+   "title": "To Poseidon of Aegae (Mackail)",
+   "authorSlug": "alpheus",
+   "author": "Alpheus of Mytilene",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Select Epigrams from the Greek Anthology (1890)",
+   "note": "",
+   "translator": "trans. J. W. Mackail (1890)",
+   "text": "Thou who holdest sovereignty of swift-sailing ships, steed-loving god, and the great overhanging cliff of Euboea, give to thy worshippers a favourable voyage even to the City of Ares, who loosed moorings from Syria."
+  },
+  {
+   "id": "alpheus/1",
+   "title": "The Tale of Troy (Mackail)",
+   "authorSlug": "alpheus",
+   "author": "Alpheus of Mytilene",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "Select Epigrams from the Greek Anthology (1890)",
+   "note": "",
+   "translator": "trans. J. W. Mackail (1890)",
+   "text": "Still we hear the wail of Andromache, still we see all Troy toppling from her foundations, and the battling of Ajax, and Hector, bound to the horses, dragged under the city's crown of towers, through the Muse of Maeonides, the poet with whom no one country adorns herself as her own, but the zones of both worlds."
+  },
+  {
+   "id": "alpheus/2",
+   "title": "Mycenae (1) (Mackail)",
+   "authorSlug": "alpheus",
+   "author": "Alpheus of Mytilene",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity"
+   ],
+   "collection": "Select Epigrams from the Greek Anthology (1890)",
+   "note": "",
+   "translator": "trans. J. W. Mackail (1890)",
+   "text": "Few of the native places of the heroes are in our eyes, and those yet left rise little above the plain; and such art thou, O hapless Mycenae, as I marked thee in passing by, more desolate than any hill-pasture, a thing that goatherds point at; and an old man said, \"Here stood the Cyclopean city rich in gold.\""
+  }
+ ]
+}

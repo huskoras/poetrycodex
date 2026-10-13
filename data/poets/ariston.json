@@ -1,0 +1,30 @@
+{
+ "slug": "ariston",
+ "name": "Ariston",
+ "dates": "date uncertain",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Ariston is one of the epigrammatists whose short poems were gathered in the Greek Anthology. His date is not known.",
+  "Mackail's Select Epigrams (1890) prints one of his epigrams, a humorous address by a poor scholar to the mice in his cupboard."
+ ],
+ "order": 59.614125,
+ "poems": [
+  {
+   "id": "ariston/0",
+   "title": "The Poor Scholar (Mackail)",
+   "authorSlug": "ariston",
+   "author": "Ariston",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "Select Epigrams from the Greek Anthology (1890)",
+   "note": "",
+   "translator": "trans. J. W. Mackail (1890)",
+   "text": "O mice, if you are come after bread, go to another cupboard (for we live in a tiny cottage) where you will feed daintily on rich cheese and dried raisins, and make an abundant supper off the scraps; but if you sharpen your teeth again on my books and come in with your graceless rioting, you shall howl for it."
+  }
+ ]
+}

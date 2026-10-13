@@ -1,0 +1,44 @@
+{
+ "slug": "theognis",
+ "name": "Theognis of Megara",
+ "dates": "fl. 6th century BC",
+ "era": "Archaic",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Theognis of Megara was an archaic Greek elegiac poet, traditionally placed in the sixth century BC. A body of about 1,400 lines of elegiac couplets, the Theognidea, survives under his name, though much of it is probably the work of other hands and later date.",
+  "The two epigrams here come from the Greek Anthology and are printed in J. W. Mackail's Select Epigrams (1890); the saying that it is best never to have been born is one of the most quoted sentiments of Greek poetry."
+ ],
+ "order": 42.12,
+ "poems": [
+  {
+   "id": "theognis/0",
+   "title": "The Shadow of Life (Mackail)",
+   "authorSlug": "theognis",
+   "author": "Theognis of Megara",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "Select Epigrams from the Greek Anthology (1890)",
+   "note": "",
+   "translator": "trans. J. W. Mackail (1890)",
+   "text": "Fools and children are mankind to weep the dead, and not the flower of youth perishing."
+  },
+  {
+   "id": "theognis/1",
+   "title": "Pis-Aller (Mackail)",
+   "authorSlug": "theognis",
+   "author": "Theognis of Megara",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "Select Epigrams from the Greek Anthology (1890)",
+   "note": "",
+   "translator": "trans. J. W. Mackail (1890)",
+   "text": "Of all things not to be born into the world is best, nor to see the beams of the keen sun; but being born, as swiftly as may be to pass the gates of Hades, and lie under a heavy heap of earth."
+  }
+ ]
+}
