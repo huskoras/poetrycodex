@@ -1,0 +1,30 @@
+{
+ "slug": "micias",
+ "name": "Micias",
+ "dates": "date uncertain",
+ "era": "Hellenistic",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Micias is known only as the name under which a single epigram, on a wayside fountain, is preserved in the Greek Anthology. Nothing secure is recorded of his life, and his date is uncertain.",
+  "This archive carries one poem ascribed to him, in Sir Rennell Rodd's 1916 rendering from the Greek Anthology."
+ ],
+ "order": 44.1234,
+ "poems": [
+  {
+   "id": "micias/0",
+   "title": "A Wayside Fountain",
+   "authorSlug": "micias",
+   "author": "Micias",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "Love, Worship and Death (1916)",
+   "note": "",
+   "translator": "trans. Rennell Rodd (1916)",
+   "text": "Rest here beneath the poplars,\n  When tired with travelling,\nAnd drawing nigh refresh you\n  With water from our spring.\nSo may you keep in memory\n  When under other skies\nThe fount his father Simus set\n  By the grave where Gillus lies."
+  }
+ ]
+}
