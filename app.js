@@ -662,8 +662,7 @@
       // Sorted by title once; every list filters this and so keeps the order.
       d.poems.forEach((p) => { p._sk = sortKey(p.title); });
       SORTED = d.poems.slice().sort((a, b) => COLLATE.compare(a._sk, b._sk));
-      const fc = document.getElementById("foot-count"); if (fc) fc.textContent = d.count;
-      const fp = document.getElementById("foot-poets"); if (fp) fp.textContent = d.poets.length;
+      const fc = document.getElementById("foot-count"); if (fc) fc.textContent = d.count.toLocaleString("en-US");
       wireSearch();
       route();
     })
@@ -962,7 +961,7 @@
         <a class="door door-archive" href="#/eras">
           <img src="archive-248.webp" alt="" width="124" height="124" />
           <span class="d-name">The Archive</span>
-          <span class="d-line">${DATA.count} poems by ${DATA.poets.length} poets,
+          <span class="d-line">${DATA.count.toLocaleString("en-US")} poems,
           from Homer and Anglo-Saxon verse to the early twentieth century \u2014 every one in the public domain.</span>
           <span class="d-go">Enter &rarr;</span>
         </a>
@@ -1073,7 +1072,7 @@
   function renderPoets() {
     setTitle("Poets");
     app.innerHTML = `
-      <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">${DATA.poets.length} poets, from Homer to the early twentieth century.</p></div>
+      <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">Poets from Homer to the early twentieth century.</p></div>
       <div class="poet-grid">
         ${DATA.poets.map((p) => `
           <a class="poet-card" href="#/poet/${esc(p.slug)}">
@@ -1424,8 +1423,7 @@
         <p>Poetry Codex is a reading archive of poetry in the public domain — and the foundation of a
         larger project: a critical engine able to read these poems through the full range of methods
         that literary scholarship has developed over the past two centuries.</p>
-        <p>The archive currently holds <strong>${DATA.count} poems</strong> by
-        <strong>${DATA.poets.length} poets</strong>, from the Greek and Roman epics and Anglo-Saxon
+        <p>The archive currently holds <strong>${DATA.count.toLocaleString("en-US")} poems</strong>, from the Greek and Roman epics and Anglo-Saxon
         verse through the Middle Ages, the Renaissance, the Romantics and the Victorians to the early
         twentieth century, together with Turkish and Ottoman poetry. Every text is reproduced in full
         and is free of copyright.</p>
@@ -1679,8 +1677,8 @@
           <p>The Oracle reads the archive and answers questions about it \u2014 which poem to
           start with, how a form works, what a period was arguing about. It is paused for
           the moment.</p>
-          <p>Everything else is open: <a href="#/poems">${DATA.count} poems</a> by
-          <a href="#/poets">${DATA.poets.length} poets</a>, arranged
+          <p>Everything else is open: <a href="#/poems">${DATA.count.toLocaleString("en-US")} poems</a> by
+          <a href="#/poets">poets of every age</a>, arranged
           <a href="#/eras">by era</a>, every one of them free to read.</p>
         </div>
       </section>`;

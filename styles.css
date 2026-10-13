@@ -1062,3 +1062,20 @@ textarea.ask-input {
   .detail::after { content: "Poetry Codex \00b7  poetrycodex.com"; display: block; margin-top: 2.2rem;
     font-family: var(--sans); font-size: 8pt; letter-spacing: .08em; color: #555; }
 }
+
+/* Light/dark switch in the top bar (works on every page; see pcToggleTheme in the head script). */
+.tb-theme { margin-left: .6rem; flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; padding: 0; border: 1px solid var(--line-strong); border-radius: 50%;
+  background: transparent; color: var(--ink); cursor: pointer; }
+.tb-theme:hover, .tb-theme:focus-visible { color: var(--accent); border-color: var(--accent-2); }
+.tb-theme-end { margin-left: auto; }
+.tb-theme .i-sun { display: none; }
+:root[data-theme="dark"] .tb-theme .i-sun { display: block; }
+:root[data-theme="dark"] .tb-theme .i-moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tb-theme .i-sun { display: block; }
+  :root:not([data-theme="light"]) .tb-theme .i-moon { display: none; }
+}
+@media print { .tb-theme { display: none; } }
+.hero { position: relative; }
+.hero-theme { position: absolute; top: 1rem; right: 1rem; margin: 0; }

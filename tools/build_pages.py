@@ -56,7 +56,7 @@ FONTS = (
 
 # The reader's "Aa" choices in the app (text size, light/dark: localStorage pc-text /
 # pc-theme), applied before the page draws, exactly as the script in index.html does.
-VIEW_PREFS = ('<script>try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),'
+VIEW_PREFS = ('<script>'+'window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};'+'try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),'
               's=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;'
               'if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>')
 
@@ -355,6 +355,7 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
+        <button class="tb-theme tb-theme-end" type="button" onclick="pcToggleTheme()" aria-label="Switch between light and dark" title="Light or dark"><svg class="i-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="i-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
       </div>
     </div>
   </header>
