@@ -1,0 +1,44 @@
+{
+ "slug": "theophanes",
+ "name": "Theophanes",
+ "dates": "date uncertain (Paton)",
+ "era": "Byzantine",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Theophanes is one of the Byzantine epigrammatists of the Greek Anthology. Paton’s Index of Authors gives his date as uncertain.",
+  "This archive carries the 2 epigrams ascribed to the poet in the fifth volume of W. R. Paton's prose translation (Loeb, 1918): Book XV: 14, 35."
+ ],
+ "order": 61.8701,
+ "poems": [
+  {
+   "id": "theophanes/0",
+   "title": "Book XV, 14: In Reply to the Above",
+   "authorSlug": "theophanes",
+   "author": "Theophanes",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. V, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "And what mark of distinction dost thou bear, O empty braggart, to show that thou lovest the learned and excludest on the other hand the illiterate? Thou bearest neither gold, nor silver, nor ivory, but masters of carpentry wrought thee, ignorant of Calliope and with no skill of Hephaestus, to be a wooden seat for all, learned and unlearned alike."
+  },
+  {
+   "id": "theophanes/1",
+   "title": "Book XV, 35",
+   "authorSlug": "theophanes",
+   "author": "Theophanes",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. V, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Would I could be a white lily that thou mightest take me up in thy hands and sate me still more with thy skin."
+  }
+ ]
+}

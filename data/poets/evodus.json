@@ -1,0 +1,44 @@
+{
+ "slug": "evodus",
+ "name": "Evodus",
+ "dates": "date not given by Paton",
+ "era": "Ancient Greek",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Evodus is one of the named epigrammatists of the Greek Anthology. Paton’s Index of Authors gives no firm date for him.",
+  "This archive carries the 2 epigrams ascribed to the poet in the fifth volume of W. R. Paton's prose translation (Loeb, 1918): Book XVI: 116, 155."
+ ],
+ "order": 59.61418,
+ "poems": [
+  {
+   "id": "evodus/0",
+   "title": "Book XVI, 116: On the Same",
+   "authorSlug": "evodus",
+   "author": "Evodus",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. V, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "THere were a horse without a head and a man lying unfinished: Nature, in sport, grafted him on the swift horse."
+  },
+  {
+   "id": "evodus/1",
+   "title": "Book XVI, 155: On the Same",
+   "authorSlug": "evodus",
+   "author": "Evodus",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. V, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Echo the mimic, the lees of the voice, the tail of a word."
+  }
+ ]
+}

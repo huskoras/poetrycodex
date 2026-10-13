@@ -1,0 +1,72 @@
+{
+ "slug": "ignatius",
+ "name": "Ignatius",
+ "dates": "10th century AD (?) (Paton’s date)",
+ "era": "Byzantine",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Ignatius is one of the Byzantine ecclesiastical writers whose epitaphs and verses are preserved in the Greek Anthology. Paton’s Index of Authors dates him, with a query, to the 10th century AD.",
+  "This archive carries the 4 epigrams ascribed to the poet in the fifth volume of W. R. Paton's prose translation (Loeb, 1918): Book XV: 29, 30, 31, 39."
+ ],
+ "order": 61.8702,
+ "poems": [
+  {
+   "id": "ignatius/0",
+   "title": "Book XV, 29",
+   "authorSlug": "ignatius",
+   "author": "Ignatius",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. V, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "I, Ignatius, who lived in many sins, have left the brightness of the sweet sunlight, and here I am hidden in a dark tomb, my soul enduring, alas long punishment. But, O Judge (I am a mortal and thou eternal and merciful), look on me graciously with benignant eye."
+  },
+  {
+   "id": "ignatius/1",
+   "title": "Book XV, 30: On the Monk Paul",
+   "authorSlug": "ignatius",
+   "author": "Ignatius",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. V, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "This tomb hides beneath it the body, not the virtue, of renowned Paul; for his admirable discourses are dazzling as the light of the sun, and the labours of his virtue have great glory. For twenty years and three he endured on earth, and having lived conformably to the Word, met with a good end."
+  },
+  {
+   "id": "ignatius/2",
+   "title": "Book XV, 31: On Samuel, Deacon of the Great Church",
+   "authorSlug": "ignatius",
+   "author": "Ignatius",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. V, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Holy Samuel lies hid in the womb of earth, having left all the possessions he had to God; and now he hath entered the bright court of the pious to receive glory for his great labours."
+  },
+  {
+   "id": "ignatius/3",
+   "title": "Book XV, 39: On his own Work",
+   "authorSlug": "ignatius",
+   "author": "Ignatius",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. V, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Ignatius was the author of these works, highly skilled in learned song; Ignatius was their author, he who brought to light the science of grammar hidden in the ocean of oblivion."
+  }
+ ]
+}

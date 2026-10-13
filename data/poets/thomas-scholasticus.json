@@ -1,0 +1,44 @@
+{
+ "slug": "thomas-scholasticus",
+ "name": "Thomas Scholasticus",
+ "dates": "date not given by Paton",
+ "era": "Late Antique",
+ "category": "Ancient Greek & Roman",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Thomas Scholasticus is one of the named epigrammatists of the Greek Anthology. Paton’s Index of Authors gives no firm date for him.",
+  "This archive carries the 2 epigrams ascribed to the poet in the fifth volume of W. R. Paton's prose translation (Loeb, 1918): Book XVI: 315, 379."
+ ],
+ "order": 61.6411,
+ "poems": [
+  {
+   "id": "thomas-scholasticus/0",
+   "title": "Book XVI, 315",
+   "authorSlug": "thomas-scholasticus",
+   "author": "Thomas Scholasticus",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. V, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "I love three stars of Rhetoric, because they alone are the best of all rhetoricians. I love thy works, Demosthenes, but I am also a great lover of both Aristides and Thucydides."
+  },
+  {
+   "id": "thomas-scholasticus/1",
+   "title": "Book XVI, 379: On Anastasius",
+   "authorSlug": "thomas-scholasticus",
+   "author": "Thomas Scholasticus",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "The Greek Anthology (Loeb, vol. V, 1918)",
+   "note": "",
+   "translator": "trans. W. R. Paton (1916–18)",
+   "text": "Beneath this earth lies Anastasius the bold driver, mindful no more of the chariot-race, he who of ald set on his head as many crowns as were the racing days that other charioteers saw."
+  }
+ ]
+}
