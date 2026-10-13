@@ -363,7 +363,10 @@ Everything here is **public domain**, and it must stay that way.
    Original-language texts (Middle English, Old English, Elizabethan) are always safe.
 2. **Translations are separate copyrighted works.** A 2,800-year-old Greek poem is public
    domain; a 1999 translation of it is not. Only use translations that are **published
-   pre-1929** (verify from the source's own front matter / Gutenberg metadata).
+   before 1931** (verify from the source's own front matter / Gutenberg metadata). The
+   owner moved this cut-off from 1929 to 1931 on 13 Oct 2026: works published in 1929 and
+   1930 have been public domain in the US since 1 January 2026 (95-year term), matching
+   the 1931 rule for English originals below.
    - ✅ Used here: Butler (1898/1900), Pope (1715–20), Gummere (1910), Evelyn-White (1914),
      Riley (1851), Ridley (1896), Southey (1808), Wharton (1885), Gordon (1926),
      Spaeth (1921), Cook & Tinker (1902), Weston (1898), Jewett (1908),
@@ -395,7 +398,7 @@ Everything here is **public domain**, and it must stay that way.
    visible publication date. 47 OCR-garbled candidates were rejected on quality in Oct
    2026 — do not re-add them unverified.
 3c. **Other languages (Italian, French, Arabic, Nordic, …):** the original must be public
-   domain **and** the English translation published before 1929; the translation is what
+   domain **and** the English translation published before 1931; the translation is what
    the site shows, with `translator` set. Prefer sources where the original is also
    available in clean text.
 4. **Poems only.** Never ingest as "poems": editors' introductions, footnotes, glossaries,

@@ -15,7 +15,8 @@ lessons (§6), the workflow (§7), the current state and gaps (§8).
 
 ## What you decide
 1. **Whether a candidate enters.** The archive is public-domain only. The rules you enforce:
-   - Originals: author long dead. Translations: published before 1929 (`translator` recorded).
+   - Originals: author long dead. Translations: published before 1931 (`translator` recorded;
+     the owner moved the cut-off from 1929 to 1931 on 13 Oct 2026, see AGENTS.md §3).
    - Twentieth-century English-language poets: book published before 1931 AND poet died before 1956.
    - Turkish ("Option 2", the owner's decision of 10 Oct 2026): originals by an author who
      died before 1956 (public domain in Turkey, life + 70), in Turkish, with a short English
@@ -26,7 +27,7 @@ lessons (§6), the workflow (§7), the current state and gaps (§8).
      source exists. Nazım Hikmet (d. 1963), Orhan Kemal (d. 1970), Dağlarca, Oktay Rifat, Melih
      Cevdet and everyone else who died in or after 1956 stay out, however often they are asked for.
    - Other languages: the original must be public domain AND the English translation must be
-     published before 1929. Prefer candidates that have both the original and a translation.
+     published before 1931. Prefer candidates that have both the original and a translation.
    - If a date cannot be verified from the source itself (front matter, catalogue record), the
      candidate waits. "Probably fine" is not a basis.
    - Poems only: no plays, prose, introductions, footnotes, editorial apparatus.
