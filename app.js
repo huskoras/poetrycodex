@@ -14,6 +14,12 @@
   let POETS = {};      // slug -> poet (index-level: metadata + counts, no full poems)
   let WORKS = {};      // slug -> work (index-level: metadata + section titles/stanzas, no text)
   let CATEGORY_STATS = {}; // category name -> { poems, works }
+  // The fast first screen: data/home.json (tools/build_home.py) holds what the home page
+  // shows, so it is drawn before the large index arrives (see "a fast first screen" below).
+  let HOME = null;           // home.json once it is in
+  let HOME_FAILED = false;   // home.json missing, broken, unreachable or slow: the home page says so while it waits
+  let EARLY_HOME = "";       // the home page as drawn from home.json, while it is on screen
+  let INDEX_ERROR = "";      // why data/index.json could not be loaded, if it could not
 
   // ---------- critical engine ----------
   // The reading panel stays hidden until this points at the deployed Worker
@@ -645,6 +651,31 @@
   // boolean flag in the data — one regex here keeps the work files untouched.
   const isEpicWork = (w) => /\b(epic|heroic poem)\b/i.test(w.type || "");
 
+  // ---------- a fast first screen ----------
+  // data/index.json is large (about 25 MB), and on a phone the home page used to wait 10 to
+  // 40 seconds for it. The home page needs only the counts and the poem of the day, which
+  // data/home.json holds (about 80 KB, written by tools/build_home.py from the same index):
+  // the home page is drawn from it at once while the index loads. Every other page waits for
+  // the index as before ("Opening the archive…"). If home.json is missing or broken, the
+  // home page waits for the index too, as it always did; if it is slow (1.5 s), the home
+  // page says "Opening the archive…" meanwhile, and is still drawn from it if it comes first.
+  fetch("data/home.json", { priority: "high" })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((h) => {
+      if (h && typeof h.count === "number" && h.eras) HOME = h; else HOME_FAILED = true;
+    }, () => { HOME_FAILED = true; })
+    .then(() => {
+      if (DATA) return;                       // the index won the race: nothing to do
+      const fc = document.getElementById("foot-count");
+      if (HOME && fc && !fc.textContent) fc.textContent = num(HOME.count);
+      if (isHomeHash(location.hash)) route(); // other pages already say "Opening the archive…"
+    });
+  setTimeout(() => {
+    if (HOME || DATA || HOME_FAILED) return;
+    HOME_FAILED = true;
+    if (isHomeHash(location.hash)) route();
+  }, 1500);
+
   fetch("data/index.json")
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((d) => {
@@ -670,13 +701,23 @@
       // Sorted by title once; every list filters this and so keeps the order.
       d.poems.forEach((p) => { p._sk = sortKey(p.title); });
       SORTED = d.poems.slice().sort((a, b) => COLLATE.compare(a._sk, b._sk));
-      const fc = document.getElementById("foot-count"); if (fc) fc.textContent = d.count.toLocaleString("en-US");
+      const fc = document.getElementById("foot-count"); if (fc) fc.textContent = num(d.count);
       wireSearch();
-      route();
+      // A home page already drawn from home.json stays as it is, and where the reader has
+      // scrolled it to, unless the index tells a different story (a home.json older than
+      // the index): then it is redrawn in place.
+      if (EARLY_HOME && isHomeHash(location.hash)) {
+        const html = homeHTML();
+        if (html !== EARLY_HOME) app.innerHTML = html;
+        EARLY_HOME = "";
+      } else route();
     })
     .catch((e) => {
-      app.innerHTML = `<p class="empty">Could not load the archive (${esc(e.message)}).<br>Serve this through a local server, not a file:// path.</p>`;
+      INDEX_ERROR = String(e && e.message || e);
+      EARLY_HOME = "";
+      app.innerHTML = indexErrorHTML();
     });
+  const indexErrorHTML = () => `<p class="empty">Could not load the archive (${esc(INDEX_ERROR)}).<br>Serve this through a local server, not a file:// path.</p>`;
 
   // ---------- global search ----------
   // Typing redraws the list 150 ms after the last key, not on every key. Typing anywhere
@@ -684,7 +725,9 @@
   // keep typing even though the box they started in (home page, Eras page) goes away.
   let searchTimer = 0;
   const onArchive = () => /^#\/poems(\?|$)/.test(location.hash);
-  function freshList() { shown = PAGE; renderList(); jumpTo(0); saveView(); }
+  // (Before the index is in there is no list to redraw: route() draws it, with the search,
+  // when the index arrives.)
+  function freshList() { if (!DATA) return; shown = PAGE; renderList(); jumpTo(0); saveView(); }
   function wireSearch() {
     document.querySelectorAll("input.search-input").forEach((input) => {
       input.value = query;
@@ -732,7 +775,7 @@
   let restoreY = 0;          // poems and work sections load first; they scroll once drawn
   function saveView() {
     clearTimeout(viewTimer);
-    if (!DATA) return;
+    if (!DATA && !EARLY_HOME) return;   // nothing drawn yet whose place is worth keeping
     try {
       history.replaceState(Object.assign({}, history.state,
         { y: Math.round(window.scrollY), shown, query, filterSubject, filterForm }), "");
@@ -755,8 +798,41 @@
 
   // ---------- routing ----------
   window.addEventListener("hashchange", route);
+  // The home page: "#/", no hash, or a query on it. (route() also sends unknown addresses
+  // home once the index is in.)
+  const isHomeHash = (h) => !h || /^#\/?(\?.*)?$/.test(h);
+  const EARLY_NAV = [[/^#\/(poems|poem|work|category|today)\b/, "poems"], [/^#\/poets?\b/, "poets"],
+    [/^#\/topics/, "topics"], [/^#\/about/, "about"], [/^#\/shelf/, "shelf"], [/^#\/oracle/, "oracle"], [/^#\/eras/, "eras"]];
+  // Before the index is in: the home page from home.json if it has come (while it is on its
+  // way the home page shows only the masthead), anything else "Opening the archive…".
+  // route() draws the page properly when the index arrives.
+  function routeEarly() {
+    const h = location.hash;
+    updateShelfNav();
+    if (isHomeHash(h)) {
+      setRoute("poems", "home");
+      let html = "";
+      if (HOME && !INDEX_ERROR) {
+        try { html = homeHTML(); }
+        catch (e) { HOME = null; HOME_FAILED = true; }   // a home.json it cannot read: wait for the index
+      }
+      EARLY_HOME = html;
+      if (html) {
+        setTitle("");
+        app.innerHTML = html;
+        const st = history.state;   // a reload or Back keeps its place, as route() does
+        if (st && typeof st.y === "number") jumpTo(st.y);
+      } else if (INDEX_ERROR) app.innerHTML = indexErrorHTML();
+      else if (HOME_FAILED) app.innerHTML = `<p class="loading">Opening the archive…</p>`;
+      return;
+    }
+    EARLY_HOME = "";
+    const nav = EARLY_NAV.find(([re]) => re.test(h));
+    setRoute(nav ? nav[1] : "", "sub");
+    app.innerHTML = INDEX_ERROR ? indexErrorHTML() : `<p class="loading">Opening the archive…</p>`;
+  }
   function route() {
-    if (!DATA) return;
+    if (!DATA) { routeEarly(); return; }
     if (READING_NOW) { clearTimeout(readingTimer); noteReading(); READING_NOW = null; }
     const h = location.hash || "#/";
     // Back/Forward bring back the entry's saved view; anything else is a fresh visit.
@@ -888,11 +964,11 @@
     </a>`;
 
   // ---------- HOME: browse by era ----------
-  // The era grid, shared by the home page and #/eras.
-  function eraGridHTML() {
-    const epicCount = (DATA.works || []).filter(isEpicWork).length;
+  // The era grid, shared by the home page and #/eras. The counts come from the index, or,
+  // for the home page drawn before it arrives, from home.json.
+  function eraGridHTML(eraStats = CATEGORY_STATS, epicCount = (DATA.works || []).filter(isEpicWork).length) {
     const tiles = CATEGORY_ORDER.map((cat) => {
-      const stats = CATEGORY_STATS[cat] || { poems: 0, works: 0 };
+      const stats = eraStats[cat] || { poems: 0, works: 0 };
       return `
         <a class="topic-card" href="#/category/${esc(CATEGORY_SLUGS[cat])}">
           <p class="tc-name">${esc(cat)}</p>
@@ -935,20 +1011,29 @@
   // involved. The pool is the poems with a Codex Note (`hasNote`, from build_index.py) or,
   // in an index built before that field, every poem whose opening lines fit a card. A prime
   // stride walks the pool so that one day's poet is not the next day's too.
+  // tools/build_home.py writes the next 400 days of it into home.json by the same rule:
+  // change both together.
+  const utcDay = () => Math.floor(Date.now() / 864e5);
   function poemOfTheDay() {
     const fits = (p) => p.excerpt && p.excerpt.split("\n").every((l) => l.length <= 90);
     let pool = DATA.poems.filter((p) => p.hasNote && fits(p));
     if (!pool.length) pool = DATA.poems.filter(fits);
     if (!pool.length) return null;
-    const day = Math.floor(Date.now() / 864e5);
-    return pool[(day * 7919) % pool.length];
+    return pool[(utcDay() * 7919) % pool.length];
   }
-  // Its own card on the home page, under the two doors.
-  function poemOfTheDayHTML() {
-    const p = poemOfTheDay();
+  // Today's row of home.json, as an object like an index entry (plus `lang`), or null.
+  function homePoemOfTheDay() {
+    const row = HOME.potd && HOME.potd[utcDay() - HOME.potdStart];
+    if (!row) return null;
+    const p = {};
+    (HOME.potdFields || []).forEach((k, i) => { p[k] = row[i]; });
+    return p.id && p.title ? p : null;
+  }
+  // Its own card on the home page, under the two doors. p: poemOfTheDay() or homePoemOfTheDay().
+  function poemOfTheDayHTML(p) {
     if (!p) return "";
     const d = new Date();
-    const lang = langAttr(p.authorSlug, p.translator);
+    const lang = p.lang !== undefined ? (p.lang ? ` lang="${esc(p.lang)}"` : "") : langAttr(p.authorSlug, p.translator);
     return `<a class="potd" href="#/poem/${esc(p.id)}">
         <span class="d-kicker">Poem of the day · ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]}</span>
         <span class="d-name"${lang}>${esc(p.title)}</span>
@@ -960,16 +1045,24 @@
 
   function renderHome() {
     setTitle("");
+    app.innerHTML = homeHTML();
+  }
+  // The home page's markup, from the index when it is in, else from home.json (the same
+  // facts, so the page does not change when the index arrives; see "a fast first screen").
+  function homeHTML() {
+    const f = DATA
+      ? { count: DATA.count, eras: CATEGORY_STATS, epics: (DATA.works || []).filter(isEpicWork).length, potd: poemOfTheDay() }
+      : { count: HOME.count, eras: HOME.eras, epics: HOME.epics || 0, potd: homePoemOfTheDay() };
     // Two doors under one roof: the collection, and the way of asking about it.
     // The Oracle keeps its place even while it sleeps, so the shape of the site
     // does not change when it wakes. The poem of the day has its own card below.
-    const potd = poemOfTheDayHTML();
-    app.innerHTML = `
+    const potd = poemOfTheDayHTML(f.potd);
+    return `
       <div class="doors${potd ? " has-potd" : ""}">
         <a class="door door-archive" href="#/eras">
           <img src="archive-248.webp" alt="" width="124" height="124" />
           <span class="d-name">The Archive</span>
-          <span class="d-line">${num(DATA.count)} poems,
+          <span class="d-line">${num(f.count)} poems,
           from Homer and Anglo-Saxon verse to the early twentieth century \u2014 every one in the public domain.</span>
           <span class="d-go">Enter &rarr;</span>
         </a>
@@ -984,8 +1077,8 @@
       ${potd}
 
       <p class="doors-or">Or go straight to an era</p>
-      ${eraGridHTML()}
-      <div class="browse-all"><a href="#/poems" class="read-link">Browse all ${num(DATA.count)} poems \u2192</a></div>`;
+      ${eraGridHTML(f.eras, f.epics)}
+      <div class="browse-all"><a href="#/poems" class="read-link">Browse all ${num(f.count)} poems \u2192</a></div>`;
   }
 
   // ---------- CATEGORY: filtered era (or cross-cutting "epics") view ----------
@@ -2219,4 +2312,10 @@
     bindNote(entry);
     restoreScroll();
   }
+
+  // ---------- start ----------
+  // Search works before the index is in (it opens the archive, which draws when the index
+  // arrives); the page shows the masthead, or "Opening the archive…", until then.
+  wireSearch();
+  route();
 })();

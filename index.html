@@ -29,8 +29,11 @@
   <!-- The reader's "Aa" choices (text size, light/dark), applied before the page draws. -->
   <script>window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
   <link rel="stylesheet" href="styles.css?v=51" />
+  <!-- The home page is drawn from this small file while the large index loads (app.js, "a fast first screen"). -->
+  <link rel="preload" href="data/home.json" as="fetch" crossorigin />
 </head>
 <body>
+  <script>document.body.dataset.route=/^(#\/?(\?.*)?)?$/.test(location.hash)?"home":"sub"</script>
   <button class="skip-link" type="button" onclick="var m=document.getElementById('app');m.tabIndex=-1;m.focus()">Skip to the text</button>
   <header class="site-head">
     <div class="topbar">
@@ -108,6 +111,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=63"></script>
+  <script src="app.js?v=64"></script>
 </body>
 </html>
