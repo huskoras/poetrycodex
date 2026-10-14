@@ -1118,3 +1118,10 @@ textarea.ask-input {
 @media print { .tb-theme { display: none; } }
 .hero { position: relative; }
 .hero-theme { position: absolute; top: 1rem; right: 1rem; margin: 0; }
+
+/* "Source": the printed book a text comes from (data/sources, tools/build_sources.py). */
+.book-source { font-family: var(--sans); font-size: .85rem; line-height: 1.55; color: var(--ink-soft, var(--ink)); margin: 1.6rem 0 .4rem; max-width: 46rem; }
+.book-source .bs-label { display: inline-block; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-right: .5rem; font-weight: 600; }
+.book-source a { color: inherit; }
+.book-source .bs-note { color: var(--muted, inherit); font-size: .8rem; }
+.book-source-slot[hidden] { display: none; }

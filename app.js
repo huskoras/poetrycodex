@@ -52,6 +52,18 @@
     }
     return POET_CACHE.get(slug);
   }
+  // data/sources/<poet>.json (tools/build_sources.py): the printed book each group of poems
+  // and each work comes from. Missing for a poet -> {} (the page simply shows no book line).
+  const SRC_CACHE = new Map();
+  function fetchSources(slug) {
+    if (!SRC_CACHE.has(slug)) {
+      SRC_CACHE.set(slug, fetch(`data/sources/${encodeURIComponent(slug)}.json`)
+        .then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
+    }
+    return SRC_CACHE.get(slug);
+  }
+  const poemSource = (d, p) => ((d && d.poems) || []).find((x) =>
+    x.c === (p.collection || "") && x.t === (p.translator || "")) || null;
   function fetchWorkFile(slug) {
     if (!WORK_CACHE.has(slug)) {
       WORK_CACHE.set(slug, fetch(`data/works/${encodeURIComponent(slug)}.json`)
@@ -164,11 +176,31 @@
     const what = !o.work ? `“${esc(end(o.title))}”`
       : o.title && o.title !== o.work ? `<i>${esc(o.work)}</i>, ${esc(end(o.title))}`
       : `<i>${esc(end(o.work))}</i>`;
-    const lead = `${esc(end(citeName(o.author)))} ${what}${by}`;
-    const mla = `${lead} <i>Poetry Codex</i>, ${esc(url.replace(/^https:\/\//, ""))}. Accessed ${d.getDate()} ${MLA_MONTHS[d.getMonth()]} ${d.getFullYear()}.`;
-    const chicago = `${lead} Poetry Codex. Accessed ${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}. ${esc(url)}.`;
+    // With the printed source known, the book is the container (MLA) or the "In" (Chicago),
+    // and its translator goes there; the strings come ready-made from build_sources.py.
+    const lead = o.src ? `${esc(end(citeName(o.author)))} ${what}` : `${esc(end(citeName(o.author)))} ${what}${by}`;
+    const mla = (o.src ? `${lead} ${end(o.src.mla)} ` : `${lead} `) +
+      `<i>Poetry Codex</i>, ${esc(url.replace(/^https:\/\//, ""))}. Accessed ${d.getDate()} ${MLA_MONTHS[d.getMonth()]} ${d.getFullYear()}.`;
+    const chicago = (o.src ? `${lead} ${o.src.chi} ` : `${lead} `) +
+      `Poetry Codex. Accessed ${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}. ${esc(url)}.`;
     const plain = (h) => h.replace(/<[^>]+>/g, "").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
     return [{ style: "MLA", html: mla, text: plain(mla) }, { style: "Chicago", html: chicago, text: plain(chicago) }];
+  }
+  // "Source: <the printed book>. Digital text: <where>." under a poem or a part of a work.
+  // src.line is HTML built from the bibliography (titles in <i>, the rest escaped).
+  function bookSourceHTML(src) {
+    if (!src) return "";
+    const txt = src.text ? ` Digital text: ${src.url ? `<a href="${esc(src.url)}" rel="noopener">${esc(src.text)}</a>` : esc(src.text)}.` : "";
+    const unsure = src.sure ? "" : ` <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span>`;
+    return `<p class="book-source"><span class="bs-label">Source</span> ${src.line}.${txt}${unsure}</p>`;
+  }
+  // Fill the source line and redo the citations once data/sources/<poet>.json is in.
+  function applySource(o, src, here) {
+    if (!src || location.hash !== here) return;
+    const slot = app.querySelector(".book-source-slot");
+    if (slot) slot.outerHTML = bookSourceHTML(src);
+    o.src = src;
+    citations(o).forEach((c, i) => { const el = document.getElementById("cite-" + i); if (el) el.innerHTML = c.html; });
   }
   // The row under a text: Save to shelf and Add a note (when `entry` is given), Cite,
   // Copy link; the note opens under the row.
@@ -215,7 +247,6 @@
     const toggle = app.querySelector(".cite-toggle");
     if (!toggle) return;
     const box = app.querySelector(".cite-box");
-    const list = citations(o);
     toggle.addEventListener("click", () => {
       box.hidden = !box.hidden;
       toggle.setAttribute("aria-expanded", String(!box.hidden));
@@ -224,7 +255,7 @@
     link.addEventListener("click", () => copyText(link.dataset.url)
       .then(() => flash(link, "Link copied"), () => flash(link, link.dataset.url)));
     app.querySelectorAll(".cite-copy").forEach((b) => b.addEventListener("click", () => {
-      const c = list[+b.dataset.i];
+      const c = citations(o)[+b.dataset.i];   // o.src may arrive after binding
       copyText(c.text, c.html, document.getElementById("cite-" + b.dataset.i))
         .then(() => flash(b, "Copied"), () => flash(b, "Press Ctrl+C"));
     }));
@@ -1362,6 +1393,7 @@
         <hr class="rule">
         ${enginePanel(s.text, { gloss: true })}
         ${poemBlock(s.text, { translator: w.translator, lang: langAttr(w.authorSlug, w.translator), work: true })}
+        <p class="book-source-slot" hidden></p>
         ${citeHTML(cite, entry)}
         <div class="detail-nav">
           <button ${i === 0 ? "disabled" : ""} data-go="${i - 1}"><span class="dir">← Previous</span>${i > 0 ? esc(w.sections[i - 1].title) : ""}</button>
@@ -1374,6 +1406,7 @@
     bindReadingTools();
     bindLineNumbers();
     bindCite(cite);
+    { const here = location.hash; fetchSources(w.authorSlug).then((d) => applySource(cite, d && d.works && d.works[slug], here)); }
     bindShelfButton(entry);
     bindNote(entry);
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/work/" + slug + "/" + b.dataset.go; }));
@@ -2290,6 +2323,7 @@
         <hr class="rule">
         ${enginePanel(p.text, { compare: true, gloss: true })}
         ${poemBlock(p.text, { label: "The Poem", translator: p.translator, lang })}
+        <p class="book-source-slot" hidden></p>
         ${p.note ? `<div class="rule-ornament">✦ ✦ ✦</div>
         <p class="section-label">Codex Note</p>
         <p class="note-block">${esc(p.note)}</p>` : ""}
@@ -2313,6 +2347,7 @@
     bindReadingTools();
     bindLineNumbers();
     bindCite(cite);
+    { const here = location.hash; fetchSources(p.authorSlug).then((d) => applySource(cite, poemSource(d, p), here)); }
     bindShelfButton(entry);
     bindNote(entry);
     restoreScroll();
