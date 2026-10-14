@@ -1005,7 +1005,6 @@
           <p class="tc-name">${esc(cat)}</p>
           <p class="tc-count">${[
             stats.poems ? num(stats.poems) + " poem" + (stats.poems === 1 ? "" : "s") : "",
-            stats.works ? num(stats.works) + " work" + (stats.works === 1 ? "" : "s") : "",
           ].filter(Boolean).join(" \u00b7 ")}</p>
         </a>`;
     }).join("");
@@ -1127,7 +1126,7 @@
 
     const sub = isEpics
       ? `${num(works.length)} epic work${works.length === 1 ? "" : "s"}, spanning every era in the archive.`
-      : `${num(poems.length)} poem${poems.length === 1 ? "" : "s"}${works.length ? " · " + num(works.length) + " work" + (works.length === 1 ? "" : "s") : ""}.`;
+      : `${num(poems.length)} poem${poems.length === 1 ? "" : "s"}.`;
 
     setTitle(isEpics ? "Epics" : catName + " poetry");
     app.innerHTML = `
@@ -1182,7 +1181,7 @@
     app.innerHTML = `
       ${banner}
       ${query ? "" : `<div class="chips">${chips}</div>${formChips}`}
-      <p class="result-meta">${num(results.length)} poem${results.length === 1 ? "" : "s"}${works.length ? " · " + num(works.length) + " work" + (works.length === 1 ? "" : "s") : ""}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}${filterForm !== "All" ? " · " + esc(formLabel(filterForm)) : ""}</p>
+      <p class="result-meta">${num(results.length)} poem${results.length === 1 ? "" : "s"}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}${filterForm !== "All" ? " · " + esc(formLabel(filterForm)) : ""}</p>
       <div class="grid">${works.map(workCardHTML).join("")}${results.length || works.length ? pagedCards(results) : `<p class="empty">No poems match.</p>`}</div>
       ${moreHTML(results.length)}`;
 
@@ -1214,7 +1213,6 @@
               <p class="pc-dates">${esc(p.dates)}</p>
               <p class="pc-count">${[
                 p.poemCount ? num(p.poemCount) + " poem" + (p.poemCount === 1 ? "" : "s") : "",
-                p.workCount ? num(p.workCount) + " work" + (p.workCount === 1 ? "" : "s") : "",
               ].filter(Boolean).join(" · ")}</p>
             </div>
           </a>`).join("")}
