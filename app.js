@@ -535,20 +535,23 @@
   function lineNumbersOn() {
     try { return localStorage.getItem(LN_KEY) === "1"; } catch (e) { return false; }
   }
-  // The text block with its label row. o: {label, translator, lang, work}
+  // The text block with its label row. o: {label, translator, lang, work, parallel}
+  // parallel: the "Read with the translation" control (parCtlHTML); the text then sits in
+  // .text-solo, with an empty .fx-slot beside it for the facing pages.
   function poemBlock(text, o) {
     const prose = isProse(text, o.translator);
     const numberable = !prose && (o.work || lineCount(text) > 40);
     const on = numberable && lineNumbersOn();
     const label = o.label ? `<p class="section-label">${o.label}</p>` : "";
-    const head = numberable ? `
-      <div class="ln-bar">${label}
-        <span class="ln-ctl"><span class="ln-note"${on ? "" : " hidden"}>Numbered as printed in this edition</span>
-        <button class="ln-toggle" type="button" aria-pressed="${on}">Line numbers</button></span>
+    const head = numberable || o.parallel ? `
+      <div class="ln-bar">${label}${o.parallel || ""}
+        ${numberable ? `<span class="ln-ctl"><span class="ln-note"${on ? "" : " hidden"}>Numbered as printed in this edition</span>
+        <button class="ln-toggle" type="button" aria-pressed="${on}">Line numbers</button></span>` : ""}
       </div>` : label;
-    return `${head}
+    const solo = `
       <div class="poem-text${prose ? " is-prose" : ""}${on ? " numbered" : ""}"${o.lang || ""}>${poemHTML(text, prose)}</div>
       ${prose ? `<p class="prose-note">This translation is printed as prose in its source edition.</p>` : ""}`;
+    return `${head}${o.parallel ? `<div class="text-solo">${solo}</div><div class="fx-slot" hidden></div>` : solo}`;
   }
   function bindLineNumbers() {
     const btn = app.querySelector(".ln-toggle");
@@ -560,6 +563,379 @@
       app.querySelector(".ln-note").hidden = !on;
       try { localStorage.setItem(LN_KEY, on ? "1" : "0"); } catch (e) { /* private window: not remembered */ }
     });
+  }
+
+  // ---------- facing pages: the original beside its translation ----------
+  // data/parallel.json (tools/build_parallel.py, from the Old English specialist's line maps
+  // in data/parallel-oe.json) says which original faces which translation and how their
+  // lines meet. A poem or a book with an entry gets "Read with the translation" (on the
+  // original) or "Read with the original" (on a translation) beside its label, and the text
+  // becomes two columns, Loeb fashion: the original always on the left with its line numbers
+  // in the margin, lines facing lines ("lines") or a passage facing its paragraphs ("blocks",
+  // for a prose translation). On a phone a switch shows the original, the translation, or
+  // both, each line followed by its translation. The reader's choice is kept in this browser
+  // (pc-parallel: {on, view: "orig" | "tr" | "both", pick: {id or "w:slug": the other's}}).
+  const PAR_KEY = "pc-parallel";
+  const LANG_NAMES = { ang: "Old English" };
+  let PARALLEL = null;         // Promise of data/parallel.json; PAR_DATA once it is in
+  let PAR_DATA = null;
+  function fetchParallel() {
+    if (!PARALLEL) {
+      PARALLEL = fetch("data/parallel.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then((d) => { PAR_DATA = d && typeof d === "object" ? d : {}; return PAR_DATA; })
+        .catch(() => { PARALLEL = null; return {}; });   // no facing pages this time; a later page tries again
+    }
+    return PARALLEL;
+  }
+  const parList = (kind, key) => ((PAR_DATA && PAR_DATA[kind]) || {})[key] || [];
+  const parPrefs = () => readStore(PAR_KEY);
+  const setParPrefs = (change) => writeStore(PAR_KEY, Object.assign(parPrefs(), change));
+  // The other text to open with, when the reader keeps facing pages on: the one last chosen
+  // here, else the first.
+  function parPick(list, key) {
+    const p = parPrefs();
+    if (!p.on || !list.length) return null;
+    const want = p.pick && p.pick[key];
+    return list.find((e) => e.with === want) || list[0];
+  }
+  // The other texts are fetched once and then kept, so the facing pages draw without a wait.
+  const FX_READY = new Map();  // "poem:<id>" | "work:<slug>" -> the poem or the full work
+  function loadPartner(kind, id) {
+    const key = kind + ":" + id;
+    if (FX_READY.has(key)) return Promise.resolve(FX_READY.get(key));
+    const got = kind === "poem"
+      ? fetchPoetFile(id.split("/")[0]).then((f) => f.poems[+id.split("/")[1]])
+      : fetchWorkFile(id);
+    return got.then((d) => { if (!d) throw new Error("missing"); FX_READY.set(key, d); return d; });
+  }
+
+  // "Translated by R. K. Gordon (1926)": the name and the first year, without the book.
+  const trCredit = (t) => {
+    const s = trName(t), year = (s.match(/\b1\d{3}\b/) || [])[0];
+    return "Translated by " + s.split(/,\s|\s\(/)[0] + (year ? ` (${year})` : "");
+  };
+  // One version of several ("Cædmon's Hymn: West Saxon Version (Old English)" -> "West Saxon Version").
+  const versionName = (t) => String(t || "").replace(/\s*\(Old English\)\s*$/i, "").replace(/^.*?:\s+/, "");
+  const indexPoem = (id) => (DATA && DATA.poems.find((q) => q.id === id)) || {};
+  // The control beside the text's label. kind: "poems" | "works"; key: the poem id or work slug.
+  function parCtlHTML(kind, key, list) {
+    if (!list.length) return "";
+    const isOrig = list[0].orig === key;
+    const what = isOrig ? "Read with the translation" : "Read with the original";
+    const btn = (e, label) => `<button class="par-toggle" type="button" aria-pressed="false" data-with="${esc(e.with)}">${esc(label)}</button>`;
+    if (list.length === 1) return `<span class="par-ctl">${btn(list[0], what)}</span>`;
+    const name = (e) => {
+      const o = kind === "poems" ? indexPoem(e.with) : WORKS[e.with] || {};
+      return isOrig ? (o.translator ? trCredit(o.translator).replace(/^Translated by /, "") : o.title || "")
+                    : versionName(o.title);
+    };
+    return `<span class="par-ctl" role="group" aria-label="${what}"><span class="par-lbl">${what}:</span>${list.map((e) => btn(e, name(e))).join("")}</span>`;
+  }
+
+  // A text as its units: the non-empty lines, each marked when a blank line (a stanza
+  // break) comes before it. The maps count these units from 1.
+  function textUnits(text) {
+    const out = [];
+    let gap = false;
+    String(text || "").split("\n").forEach((l) => {
+      if (!l.trim()) { gap = out.length > 0; return; }
+      out.push({ t: l.replace(/\s+$/, ""), gap });
+      gap = false;
+    });
+    return out;
+  }
+  // The original's line numbers: a line with a lower-case letter counts; a heading is shown,
+  // not counted, and a bare numeral ("I", "II": the two Waldere fragments) starts again at 1.
+  function numberUnits(us) {
+    let n = 0;
+    us.forEach((u) => {
+      if (/\p{Ll}/u.test(u.t)) u.n = ++n;
+      else { u.head = true; if (/^\s*[IVXL]+\.?\s*$/.test(u.t)) n = 0; }
+    });
+  }
+  const span = (a, b) => { const r = []; for (let k = a; k <= b; k++) r.push(k); return r; };
+  // Rows of the facing pages, as unit numbers: [{o: [..], t: [..]}]. map: [[oa, ob, ta, tb,
+  // per?], ...] (null: line for line). In "lines" mode a segment of as many lines on each side
+  // is a row per line, one of `per` translation lines to each original line is a row per
+  // original line (Thorpe's half-lines stay with their line), anything else one row; rows
+  // that share a line are one row (Waldere I.8 folded into the line before it). In "blocks"
+  // mode each segment is one row, and a line two segments share (Seafarer 64, split at the
+  // caesura) is shown in the first. Lines no segment names (a translator's heading, a
+  // footnote) get rows of their own where they fall.
+  function alignRows(nO, nT, map, blocks) {
+    const segs = map || [[1, Math.min(nO, nT), 1, Math.min(nO, nT)]];
+    const out = [];
+    const shares = (a, b) => a.o.some((x) => b.o.includes(x)) || a.t.some((x) => b.t.includes(x));
+    const join = (a, b) => [...new Set(a.concat(b))].sort((x, y) => x - y);
+    const add = (g) => {
+      while (!blocks && out.length && shares(out[out.length - 1], g)) {
+        const h = out.pop();
+        g = { o: join(h.o, g.o), t: join(h.t, g.t) };
+      }
+      out.push(g);
+    };
+    let oEnd = 0, tEnd = 0;
+    segs.forEach(([oa, ob, ta, tb, per]) => {
+      if (blocks) { oa = Math.max(oa, oEnd + 1); ta = Math.max(ta, tEnd + 1); }
+      const o = span(Math.max(1, oa), Math.min(ob, nO)), t = span(Math.max(1, ta), Math.min(tb, nT));
+      if (!o.length && !t.length) return;
+      if (o.length) oEnd = Math.max(oEnd, o[o.length - 1]);
+      if (t.length) tEnd = Math.max(tEnd, t[t.length - 1]);
+      const k = !blocks && o.length && t.length && (t.length === o.length ? 1 : per && t.length === per * o.length ? per : 0);
+      if (k) o.forEach((x, i) => add({ o: [x], t: t.slice(i * k, i * k + k) }));
+      else add({ o, t });
+    });
+    const inO = new Set(out.flatMap((g) => g.o)), inT = new Set(out.flatMap((g) => g.t));
+    const rows = [];
+    let oi = 1, ti = 1;
+    const fill = (oTo, tTo) => {
+      for (; oi < oTo; oi++) if (!inO.has(oi)) rows.push({ o: [oi], t: [] });
+      for (; ti < tTo; ti++) if (!inT.has(ti)) rows.push({ o: [], t: [ti] });
+    };
+    out.forEach((g) => {
+      fill(g.o.length ? g.o[0] : oi, g.t.length ? g.t[0] : ti);
+      rows.push(g);
+      if (g.o.length) oi = Math.max(oi, g.o[g.o.length - 1] + 1);
+      if (g.t.length) ti = Math.max(ti, g.t[g.t.length - 1] + 1);
+    });
+    fill(nO + 1, nT + 1);
+    return rows;
+  }
+  // Unit numbers -> the units themselves (a missing line, a left-out running head drop out).
+  const rowUnits = (rows, O, T) => rows.map((r) => ({
+    o: r.o.map((k) => O[k - 1]).filter(Boolean),
+    t: r.t.map((k) => T[k - 1]).filter((u) => u && !u.skip),
+  })).filter((r) => r.o.length || r.t.length);
+
+  // A poem and its partner (either may be the original).
+  function poemFacing(cur, other, e) {
+    const orig = e.orig === cur.id ? cur : other, tr = orig === cur ? other : cur;
+    const O = textUnits(orig.text), T = textUnits(tr.text);
+    numberUnits(O);
+    const blocks = e.mode === "blocks";
+    return {
+      rows: rowUnits(alignRows(O.length, T.length, e.map, blocks), O, T),
+      blocks, lang: e.lang, prose: isProse(tr.text, tr.translator), translator: tr.translator,
+      version: parList("poems", tr.id).length > 1 ? versionName(orig.title) : "",
+      oHref: orig === cur ? "" : "#/poem/" + orig.id, tHref: tr === cur ? "" : "#/poem/" + tr.id,
+    };
+  }
+
+  // ---- works: a book of a translation beside its stretch of the original, or the reverse ----
+  // An original work's sections are titled by their line numbers ("Lines 126–259",
+  // "Genesis A, lines 1–234"); the Meters of Boethius go meter by meter ("oes").
+  const secRange = (title) => { const m = String(title || "").match(/(\d+)\s*[–-]\s*(\d+)\s*$/); return m ? [+m[1], +m[2]] : null; };
+  const oeApplies = (s, w, j) => {
+    if (s.oes != null) return s.oes === j;
+    const r = w.sections[j] && secRange(w.sections[j].title);
+    return !!(r && s.oe && r[0] <= s.oe[1] && r[1] >= s.oe[0]);
+  };
+  // The parallel entries that have something for this book.
+  function workParList(slug, i) {
+    const w = WORKS[slug];
+    return w ? parList("works", slug).filter((e) =>
+      e.sections.some((s) => (e.orig === slug ? oeApplies(s, w, i) : s.tr === i))) : [];
+  }
+  // The original's lines a..b of one parallel section, by number (index n - a). merged: lines
+  // the text runs together (beowulf-oe 140 stands for 140-141): the next number stays empty
+  // and the lines after it keep their own. A line past the end of the last section's own
+  // range (Juliana's closing "Amen." after 731) is kept, unnumbered, after the rest.
+  function oeLines(w, s, merged) {
+    const [a, b] = s.oe;
+    const out = new Array(Math.max(0, b - a + 1));
+    const put = (sec, from, to) => {
+      let n = from - 1;
+      textUnits(sec.text).forEach((u) => {
+        n += 1;
+        if (n >= a && n <= b) { u.n = n; out[n - a] = u; }
+        else if (n > b && to === b) { u.n = b; u.nonum = true; out.push(u); }
+        if (merged && merged.includes(n)) n += 1;
+      });
+    };
+    if (s.oes != null) { if (w.sections[s.oes]) put(w.sections[s.oes], 1, b); }
+    else w.sections.forEach((sec) => { const r = secRange(sec.title); if (r && r[1] >= a && r[0] <= b) put(sec, r[0], r[1]); });
+    return out;
+  }
+  // The translation's units for one parallel section: the printed book's running heads and
+  // footnotes marked to be left out, the translator's captions marked, and a paragraph in
+  // which a chunk begins ("from") cut in two there. chunks -> [[oa, ob, ta, tb]] on the cut units.
+  function trUnits(sec, s) {
+    const us = textUnits(sec.text);
+    (s.skip || []).forEach((k) => { if (us[k - 1]) us[k - 1].skip = true; });
+    (s.caps || []).forEach((k) => { if (us[k - 1]) us[k - 1].cap = true; });
+    const chunks = (s.chunks || []).filter((c) => c.oe && c.paras);
+    if (!chunks.length) return { units: us, map: null };
+    const pieces = us.map((u) => [u]);
+    chunks.forEach((c) => {
+      const u = us[c.paras[0] - 1];
+      const at = c.from && u && pieces[c.paras[0] - 1].length === 1 ? u.t.indexOf(c.from) : -1;
+      if (at > 0) pieces[c.paras[0] - 1] = [Object.assign({}, u, { t: u.t.slice(0, at).trimEnd() }),
+                                            Object.assign({}, u, { t: u.t.slice(at), gap: false })];
+    });
+    const flat = [], first = [];
+    pieces.forEach((ps, k) => { first[k] = flat.length + 1; flat.push(...ps); });
+    const cut = (p) => pieces[p - 1] && pieces[p - 1].length > 1;
+    const map = chunks.filter((c) => first[c.paras[0] - 1] && first[c.paras[1] - 1]).map((c, x, all) => {
+      const [p, q] = c.paras, next = all[x + 1];
+      const start = first[p - 1] + (c.from && cut(p) ? 1 : 0);
+      const end = first[q - 1] + (next && next.from && next.paras[0] === q && cut(q) ? 0 : pieces[q - 1].length - 1);
+      return [c.oe[0], c.oe[1], start, end];
+    });
+    return { units: flat, map };
+  }
+  // The rows of one parallel section, in the original's own numbering.
+  function sectionRows(e, s, wo, wt) {
+    const sec = wt.sections[s.tr];
+    if (!sec || !s.oe) return [];
+    const a = s.oe[0];
+    const O = oeLines(wo, s, e.merged), T = trUnits(sec, s);
+    const local = (m) => m && m.map(([oa, ob, ta, tb, k]) => [oa - a + 1, ob - a + 1, ta, tb, k]);
+    const rows = e.lfl ? alignRows(O.length, T.units.length, local(s.map), false)
+      : alignRows(O.length, T.units.length, local(T.map) || [[1, O.length, 1, T.units.length]], true);
+    return rowUnits(rows, O, T.units);
+  }
+  // On the original's page: only its own lines. A row with no original line (a caption, a
+  // line the translator added) goes with the row before it, else the one after.
+  function clipRows(rows, A, B) {
+    const keep = rows.map((r) => (r.o.length ? r.o.some((u) => u.n >= A && u.n <= B) : null));
+    keep.forEach((k, x) => {
+      if (k !== null) return;
+      let y = x - 1;
+      while (y >= 0 && keep[y] === null) y--;
+      if (y < 0) { y = x + 1; while (y < keep.length && keep[y] === null) y++; }
+      keep[x] = y >= 0 && y < keep.length ? !!keep[y] : false;
+    });
+    return rows.filter((r, x) => keep[x]).map((r) => ({ o: r.o.filter((u) => u.n >= A && u.n <= B), t: r.t }));
+  }
+  function workFacing(cur, slug, i, other, e) {
+    const isOrig = e.orig === slug;
+    const wo = isOrig ? cur : other, wt = isOrig ? other : cur;
+    const secs = e.sections.filter((s) => (isOrig ? oeApplies(s, cur, i) : s.tr === i));
+    const r = isOrig && secRange(cur.sections[i].title);
+    let rows = [];
+    secs.forEach((s) => {
+      let part = sectionRows(e, s, wo, wt);
+      if (r && s.oes == null) part = clipRows(part, r[0], r[1]);
+      // On the original's page the translation's books are named where each begins.
+      if (isOrig && wt.sections.length > 1 && part.length) part[0].head = wt.sections[s.tr].title;
+      rows = rows.concat(part);
+    });
+    const trText = secs.map((s) => (wt.sections[s.tr] || {}).text || "").join("\n\n");
+    // The other text's own page: the book of the translation, or the stretch of the original
+    // where this book begins.
+    const s0 = secs[0];
+    const oeAt = !s0 ? -1 : s0.oes != null ? s0.oes
+      : wo.sections.findIndex((sec) => { const q = secRange(sec.title); return q && q[0] <= s0.oe[0] && s0.oe[0] <= q[1]; });
+    return {
+      rows, blocks: !e.lfl, lang: e.lang, prose: isProse(trText, wt.translator), translator: wt.translator,
+      skipped: secs.some((s) => s.skip && s.skip.length), drift: e.lfl && secs.some((s) => !s.map),
+      oHref: isOrig || !s0 ? "" : `#/work/${e.with}` + (oeAt >= 0 ? "/" + oeAt : ""),
+      tHref: isOrig && s0 ? `#/work/${e.with}/${s0.tr}` : "",
+    };
+  }
+
+  // The facing pages. m: {rows, blocks, lang, prose, translator, version, oHref, tHref, skipped, drift}
+  function facingHTML(m) {
+    const view = ["orig", "tr", "both"].includes(parPrefs().view) ? parPrefs().view : "both";
+    const langName = LANG_NAMES[m.lang] || "Original";
+    const lang = m.lang ? ` lang="${esc(m.lang)}"` : "";
+    // Every fifth line is numbered, and in "blocks" mode the first line of each passage too.
+    const oLine = (u, k) => {
+      const shown = u.n && !u.nonum && (u.n % 5 === 0 || (m.blocks && k === 0));
+      return `<span class="ln${k && u.gap ? " fx-gap" : ""}${u.head ? " fx-hd" : ""}"${shown ? ` data-n="${u.n}"` : ""}>${esc(u.t)}</span><br>`;
+    };
+    // A caption that is a fitt numeral comes out of the scan as "Ill"; it is "III".
+    const capText = (t) => (/^[IVXl1]+$/.test(t.trim()) ? t.replace(/[l1]/g, "I") : t);
+    // Prose sets as paragraphs beside a passage; facing line by line (Charm 10's prose close
+    // in a verse translation) every unit is a line.
+    const paras = m.prose && m.blocks;
+    const tUnit = (u, k) => u.cap ? `<p class="fx-cap">${esc(capText(u.t))}</p>`
+      : paras ? `<p>${esc(u.t)}</p>`
+      : `<span class="ln${k && u.gap ? " fx-gap" : ""}">${esc(u.t)}</span><br>`;
+    // Prose: a piece that starts in lower case goes on with the paragraph before it (the
+    // printed book's page breaks cut Kennedy's paragraphs: "swiftly van-" / "ished ; light").
+    const tCell = (us) => {
+      if (!paras) return us.map(tUnit).join("");
+      const out = [];
+      us.forEach((u) => {
+        const last = out[out.length - 1];
+        if (last && !u.cap && !last.cap && /^[a-z]/.test(u.t)) last.t = /[a-z]-$/.test(last.t) ? last.t.slice(0, -1) + u.t : last.t + " " + u.t;
+        else out.push({ t: u.t, cap: u.cap });
+      });
+      return out.map(tUnit).join("");
+    };
+    const rows = m.rows.map((r, x) => {
+      const gap = x > 0 && !m.blocks && !r.head && ((r.o[0] && r.o[0].gap) || (r.t[0] && r.t[0].gap));
+      // A book of the translation is named on a row of its own, so its first line still
+      // faces the line it translates.
+      const book = r.head ? `<div class="fx-row fx-bookrow"><div class="fx-o"></div><div class="fx-t"><p class="fx-book">${esc(r.head)}</p></div></div>` : "";
+      return `${book}<div class="fx-row${gap ? " gap" : ""}"><div class="fx-o"${lang}>${r.o.map(oLine).join("")}</div><div class="fx-t">${tCell(r.t)}</div></div>`;
+    }).join("");
+    const open = (href) => (href ? ` <a class="fx-open" href="${esc(href)}">Its own page →</a>` : "");
+    const notes = [
+      `Line numbers are those of the ${esc(langName)} text.`,
+      m.drift ? "The translation keeps the original’s line count; inside long speeches a line can run one or two ahead or behind." : "",
+      m.blocks ? `Each passage of the ${esc(langName)} faces its translation.` : "",
+      m.skipped ? "Page numbers, running heads and footnotes of the printed translation are left out here." : "",
+    ].filter(Boolean).join(" ");
+    const vbtn = (v, label) => `<button type="button" data-fx-view="${v}" aria-pressed="${view === v}">${esc(label)}</button>`;
+    return `
+      <div class="fx" data-view="${view}" data-mode="${m.blocks ? "blocks" : "lines"}">
+        <div class="fx-switch" role="group" aria-label="Show">${vbtn("orig", langName)}${vbtn("tr", "Translation")}${vbtn("both", "Both")}</div>
+        <div class="fx-row fx-head">
+          <p class="fx-lbl">${esc(langName)}${m.version ? ` · ${esc(m.version)}` : ""}${open(m.oHref)}</p>
+          <p class="fx-lbl">${esc(m.translator ? trCredit(m.translator) : "Translation")}${open(m.tHref)}</p>
+        </div>
+        ${rows}
+        <p class="fx-note">${notes}</p>
+      </div>`;
+  }
+  function bindFacingView(slot) {
+    const fx = slot.querySelector(".fx");
+    slot.querySelectorAll("[data-fx-view]").forEach((b) => b.addEventListener("click", () => {
+      fx.dataset.view = b.dataset.fxView;
+      slot.querySelectorAll("[data-fx-view]").forEach((o) => o.setAttribute("aria-pressed", String(o === b)));
+      setParPrefs({ view: b.dataset.fxView });
+    }));
+  }
+  // ctx: {kind: "poem" | "work", key (pick key), list, build(entry, other) -> model, onShow(el)}
+  function bindFacing(ctx) {
+    const bar = app.querySelector(".par-ctl");
+    if (!bar) return;
+    const solo = app.querySelector(".text-solo"), slot = app.querySelector(".fx-slot");
+    const lnCtl = app.querySelector(".ln-ctl");
+    const btns = [...bar.querySelectorAll(".par-toggle")];
+    const show = (e) => {
+      btns.forEach((b) => { b.setAttribute("aria-pressed", String(!!e && b.dataset.with === e.with)); b.disabled = false; });
+      solo.hidden = !!e; slot.hidden = !e;
+      if (lnCtl) lnCtl.hidden = !!e;
+      if (!e) slot.innerHTML = "";
+      if (ctx.onShow) ctx.onShow(e ? slot : solo);
+    };
+    const open = (e) => {
+      const other = FX_READY.get(ctx.kind + ":" + e.with);
+      if (other) {
+        slot.innerHTML = facingHTML(ctx.build(e, other));
+        bindFacingView(slot);
+        show(e);
+        return;
+      }
+      const b = btns.find((x) => x.dataset.with === e.with);
+      if (b) b.disabled = true;
+      loadPartner(ctx.kind, e.with).then(() => {
+        if (slot.isConnected && parPrefs().on) open(e); else if (b) b.disabled = false;
+      }).catch(() => { if (b) { b.disabled = false; flash(b, "Could not load it"); } });
+    };
+    btns.forEach((b) => b.addEventListener("click", () => {
+      const e = ctx.list.find((x) => x.with === b.dataset.with);
+      const on = b.getAttribute("aria-pressed") !== "true";
+      const pick = Object.assign({}, parPrefs().pick);
+      if (on) pick[ctx.key] = e.with;
+      setParPrefs({ on, pick });
+      if (on) open(e); else show(null);
+    }));
+    const start = parPick(ctx.list, ctx.key);
+    if (start) open(start);
   }
 
   // ---------- "Aa": reading text size and theme ----------
@@ -1365,10 +1741,13 @@
     if (!WORKS[slug]) { location.hash = "#/"; return; }
     renderLoading();
     const requestedHash = location.hash;
-    fetchWorkFile(slug).then((w) => {
-      if (location.hash !== requestedHash) return; // route changed while fetching
-      if (!w.sections[i]) { location.hash = "#/work/" + slug; return; }
-      renderWorkSectionReady(w, slug, i);
+    Promise.all([fetchWorkFile(slug), fetchParallel()]).then(([w]) => {
+      if (location.hash !== requestedHash) return null; // route changed while fetching
+      if (!w.sections[i]) { location.hash = "#/work/" + slug; return null; }
+      const pick = parPick(workParList(slug, i), "w:" + slug);   // as on a poem: the other text first
+      return (pick ? loadPartner("work", pick.with).catch(() => null) : Promise.resolve()).then(() => {
+        if (location.hash === requestedHash) renderWorkSectionReady(w, slug, i);
+      });
     }).catch((e) => { if (location.hash === requestedHash) renderFetchError(e); });
   }
   function renderWorkSectionReady(w, slug, i) {
@@ -1378,6 +1757,7 @@
                    translator: w.translator, path: `/work/${slug}/${i}/` };
     const entry = { id: "work:" + slug + "/" + i, kind: "part", author: w.author, translator: w.translator || "",
                     title: w.sections.length > 1 ? w.title + " · " + s.title : w.title };
+    const par = workParList(slug, i);
     setTitle(w.sections.length > 1 ? wt.replace(w.title, w.title + ", " + s.title) : wt);
     app.innerHTML = `
       <article class="detail">
@@ -1390,7 +1770,8 @@
         ${otherTrHTML(WORKS[slug], i)}
         <hr class="rule">
         ${enginePanel(s.text, { gloss: true })}
-        ${poemBlock(s.text, { translator: w.translator, lang: langAttr(w.authorSlug, w.translator), work: true })}
+        ${poemBlock(s.text, { translator: w.translator, lang: langAttr(w.authorSlug, w.translator), work: true,
+                              parallel: parCtlHTML("works", slug, par) })}
         <p class="book-source-slot" hidden></p>
         ${citeHTML(cite, entry)}
         <div class="detail-nav">
@@ -1403,6 +1784,9 @@
                  id: "work:" + slug + "/" + i });
     bindReadingTools();
     bindLineNumbers();
+    // The reading position follows whichever text is on screen, alone or facing its partner.
+    bindFacing({ kind: "work", key: "w:" + slug, list: par, build: (e, other) => workFacing(w, slug, i, other, e),
+                 onShow: (el) => { if (READING_NOW && READING_NOW.slug === slug) READING_NOW.el = el; } });
     bindCite(cite);
     { const here = location.hash; fetchSources(w.authorSlug).then((d) => applySource(cite, d && d.works && d.works[slug], here)); }
     bindShelfButton(entry);
@@ -1411,7 +1795,7 @@
     restoreScroll();
     // Reading position: opened from "Continue reading", the book scrolls to where it was
     // left; either way this book becomes the work's place, updated as the reader scrolls.
-    const text = app.querySelector(".poem-text");
+    const text = app.querySelector(".fx-slot:not([hidden])") || app.querySelector(".poem-text");
     const resume = pendingResume && pendingResume.slug === slug && pendingResume.i === i ? pendingResume.frac : 0;
     pendingResume = null;
     if (resume > 0) {
@@ -1961,11 +2345,15 @@
     if (!POETS[slug]) { location.hash = "#/"; return; }
     renderLoading();
     const requestedHash = location.hash;
-    fetchPoetFile(slug).then((poetFile) => {
-      if (location.hash !== requestedHash) return; // route changed while fetching
+    Promise.all([fetchPoetFile(slug), fetchParallel()]).then(([poetFile]) => {
+      if (location.hash !== requestedHash) return null; // route changed while fetching
       const p = poetFile.poems[n];
-      if (!p) { location.hash = "#/poet/" + slug; return; }
-      renderDetailReady(poetFile, slug, n, p);
+      if (!p) { location.hash = "#/poet/" + slug; return null; }
+      // A reader who keeps facing pages on gets them at once: the other text comes first.
+      const pick = parPick(parList("poems", p.id), p.id);
+      return (pick ? loadPartner("poem", pick.with).catch(() => null) : Promise.resolve()).then(() => {
+        if (location.hash === requestedHash) renderDetailReady(poetFile, slug, n, p);
+      });
     }).catch((e) => { if (location.hash === requestedHash) renderFetchError(e); });
   }
   // Everything the Codex can be pointed at: every poem, and every section of
@@ -2308,6 +2696,7 @@
     const form = (DATA.poems.find((q) => q.id === p.id) || {}).form;   // index only (B3)
     const cite = { author: p.author, title: p.title, translator: p.translator, path: `/poem/${slug}/${n}/` };
     const entry = { id: slug + "/" + n, kind: "poem", title: p.title, author: p.author, translator: p.translator || "" };
+    const par = parList("poems", p.id);
     setTitle(p.title + " — " + p.author);
     app.innerHTML = `
       <article class="detail">
@@ -2320,7 +2709,7 @@
         ${themes}
         <hr class="rule">
         ${enginePanel(p.text, { compare: true, gloss: true })}
-        ${poemBlock(p.text, { label: "The Poem", translator: p.translator, lang })}
+        ${poemBlock(p.text, { label: "The Poem", translator: p.translator, lang, parallel: parCtlHTML("poems", p.id, par) })}
         <p class="book-source-slot" hidden></p>
         ${p.note ? `<div class="rule-ornament">✦ ✦ ✦</div>
         <p class="section-label">Codex Note</p>
@@ -2344,6 +2733,7 @@
     bindEngine({ title: p.title, author: p.author, text: p.text, id: p.id });
     bindReadingTools();
     bindLineNumbers();
+    bindFacing({ kind: "poem", key: p.id, list: par, build: (e, other) => poemFacing(p, other, e) });
     bindCite(cite);
     { const here = location.hash; fetchSources(p.authorSlug).then((d) => applySource(cite, poemSource(d, p), here)); }
     bindShelfButton(entry);

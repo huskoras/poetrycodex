@@ -378,6 +378,83 @@ a.poet-card, a.topic-card { display: block; }
   .poem-text.numbered .ln[data-n]::after { right: -2.1rem; width: 1.8rem;
     line-height: calc(1.7575rem * var(--ts)); /* .95 x 1.85, so the number sits on its line */ }
 }
+
+/* ============ FACING PAGES: the original beside its translation (facingHTML in app.js) ============
+   Loeb fashion: the original always on the left with its line numbers in the margin, the
+   translation on the right. Each row is one aligned stretch (a line, a line with Thorpe's two
+   half-lines, two lines a translator ran together, or a passage beside its paragraphs), so
+   lines keep facing even where one side wraps. Below 900px a switch shows the original, the
+   translation, or both, each line followed by its translation. */
+.par-ctl { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .4rem .5rem; }
+.par-lbl { font-family: var(--sans); font-size: .72rem; color: var(--faint); }
+.par-toggle { font-family: var(--sans); font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-soft); background: var(--surface); border: 1px solid var(--line-strong); border-radius: 999px;
+  padding: .32rem .8rem; cursor: pointer; transition: border-color .15s, color .15s; }
+.par-toggle:hover, .par-toggle[aria-pressed="true"] { border-color: var(--accent-2); color: var(--accent); }
+.par-toggle[disabled] { opacity: .6; cursor: progress; }
+.text-solo[hidden], .fx-slot[hidden], .ln-ctl[hidden] { display: none; }
+.fx { --fx-fs: calc(1.06rem * var(--ts)); --fx-lh: 1.75; font-family: var(--serif); font-size: var(--fx-fs);
+  line-height: var(--fx-lh); color: var(--ink); padding-left: 2.6rem; }
+.fx-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 1.5rem; }
+.fx-t { border-left: 1px solid var(--line); padding-left: 1.5rem; }
+.fx-row.gap > .fx-o, .fx-row.gap > .fx-t { padding-top: 1.1em; }
+.fx[data-mode="blocks"] .fx-row:not(.fx-head) > div { padding-bottom: 1.4em; }
+.fx[data-mode] .fx-row.fx-bookrow > div { padding-top: .9em; padding-bottom: 0; }   /* the book's name is the break */
+.fx[data-mode] .fx-head + .fx-row.fx-bookrow > div { padding-top: 0; }
+.fx .ln { display: block; position: relative; white-space: pre-wrap; padding-left: 1.8em; text-indent: -1.8em; }
+.fx .ln + br { display: none; }
+.fx .fx-gap { margin-top: 1.1em; }
+.fx .fx-hd { color: var(--faint); }
+.fx-o .ln[data-n]::before { content: attr(data-n); position: absolute; top: 0; left: -2.6rem; width: 2.1rem;
+  text-align: right; text-indent: 0; font-family: var(--sans); font-size: .62rem; font-weight: 600; font-style: normal;
+  line-height: calc(var(--fx-fs) * var(--fx-lh)); /* the line's own height, so the number sits on it */ color: var(--faint); }
+.fx-t p { margin: 0 0 .75em; }   /* ragged right: a justified column this narrow opens wide gaps */
+.fx-t p:last-child { margin-bottom: 0; }
+.fx-t .fx-cap, .fx-t .fx-book { font-family: var(--sans); font-size: .64rem; font-weight: 700; letter-spacing: .13em;
+  text-transform: uppercase; font-style: normal; color: var(--faint); text-align: left; margin: .35em 0 .5em; line-height: 1.5; }
+.fx-head { margin-bottom: 1rem; padding-bottom: .5rem; border-bottom: 1px solid var(--line); }
+.fx-lbl { margin: 0; font-family: var(--sans); font-size: .74rem; font-weight: 600; letter-spacing: .03em; line-height: 1.5; color: var(--faint); }
+.fx-head .fx-lbl + .fx-lbl { padding-left: calc(1.5rem + 1px); }
+.fx-open { margin-left: .35rem; font-weight: 600; color: var(--accent); text-decoration: none; white-space: nowrap; }
+.fx-open:hover { text-decoration: underline; }
+.fx-note { margin: 1.6rem 0 0; font-family: var(--sans); font-size: .74rem; line-height: 1.55; color: var(--faint); }
+.fx-switch { display: none; }
+/* Wide screens: the two pages take more room than the reading column. */
+@media screen and (min-width: 900px) {
+  .fx { margin-left: calc(50% - min(540px, 50vw - 3rem)); margin-right: calc(50% - min(540px, 50vw - 3rem)); }
+}
+@media screen and (max-width: 899px) {
+  .fx { --fx-fs: calc(1rem * var(--ts)); padding-left: 2.1rem; }
+  .fx-o .ln[data-n]::before { left: -2.1rem; width: 1.7rem; }
+  .fx-switch { display: flex; gap: .35rem; margin: 0 0 1rem calc(-2.1rem); max-width: 22rem; }
+  .fx-switch button { flex: 1; font-family: var(--sans); font-size: .72rem; font-weight: 600; color: var(--ink-soft);
+    background: var(--surface); border: 1px solid var(--line-strong); border-radius: 4px; padding: .45rem .3rem; cursor: pointer; }
+  .fx-switch button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .fx-row { display: block; }
+  .fx-t { border-left: 0; padding-left: 0; }
+  .fx-row.gap > .fx-o, .fx-row.gap > .fx-t { padding-top: 0; }
+  .fx-row.gap { padding-top: 1em; }
+  .fx-head { display: block; margin: 0 0 .9rem calc(-2.1rem); padding-bottom: .45rem; }
+  .fx-head .fx-lbl, .fx-head .fx-lbl + .fx-lbl { display: inline; padding-left: 0; }
+  .fx-head .fx-lbl + .fx-lbl::before { content: " · "; }
+  .fx[data-view="orig"] .fx-t, .fx[data-view="tr"] .fx-o,
+  .fx[data-view="orig"] .fx-head .fx-lbl + .fx-lbl, .fx[data-view="tr"] .fx-head .fx-lbl:first-child { display: none; }
+  .fx[data-view="tr"] .fx-head .fx-lbl + .fx-lbl::before { content: none; }
+  .fx[data-view="tr"] { padding-left: 0; }
+  .fx[data-view="orig"] .fx-bookrow { display: none; }
+  .fx[data-view="tr"] .fx-switch, .fx[data-view="tr"] .fx-head { margin-left: 0; }
+  .fx[data-view="both"] .fx-o:empty, .fx[data-view="both"] .fx-t:empty { display: none; }
+  .fx[data-view="both"] .fx-t { font-size: .88em; font-style: italic; line-height: 1.6; color: var(--ink-soft); margin: .1em 0 .65em; }
+  .fx[data-view="both"][data-mode="blocks"] .fx-row > .fx-o { padding-bottom: .5em; }
+  .fx-t p { text-align: left; }
+}
+@media screen and (max-width: 560px) {
+  .fx { --fx-fs: calc(.95rem * var(--ts)); padding-left: 1.8rem; }
+  .fx-o .ln[data-n]::before { left: -1.8rem; width: 1.45rem; }
+  .fx-switch, .fx-head { margin-left: -1.8rem; }
+}
+/* The narrowest phones: a long line with its caesura still mostly fits. */
+@media screen and (max-width: 360px) { .fx { --fx-fs: calc(.9rem * var(--ts)); } }
 .note-block { font-family: var(--serif); font-size: calc(1.12rem * var(--ts)); line-height: 1.75; color: var(--ink-soft); }
 .themes { display: flex; flex-wrap: wrap; gap: .5rem; }
 .theme-tag { font-family: var(--sans); font-size: .8rem; padding: .35rem .8rem; border: 1px solid var(--line-strong);
@@ -1100,6 +1177,14 @@ textarea.ask-input {
   .note-block { font-size: 10.5pt; }
   .detail::after { content: "Poetry Codex \00b7  poetrycodex.com"; display: block; margin-top: 2.2rem;
     font-family: var(--sans); font-size: 8pt; letter-spacing: .08em; color: #555; }
+  /* Facing pages print as two columns, whatever the screen showed. */
+  .par-ctl, .fx-switch, .fx-open { display: none !important; }
+  .fx { --fx-fs: 9.5pt; --fx-lh: 1.45; margin: 0; padding-left: 1.7rem; color: #000; }
+  .fx-row { column-gap: 1rem; }
+  .fx-t { padding-left: 1rem; }
+  .fx-head .fx-lbl + .fx-lbl { padding-left: calc(1rem + 1px); }
+  .fx-o .ln[data-n]::before { left: -1.7rem; width: 1.3rem; color: #555; }
+  .fx[data-mode="lines"] .fx-row { break-inside: avoid; }
 }
 
 /* Light/dark switch in the top bar (works on every page; see pcToggleTheme in the head script). */
