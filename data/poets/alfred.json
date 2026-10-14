@@ -1,0 +1,42 @@
+{
+ "slug": "alfred",
+ "name": "King Alfred",
+ "dates": "849–899",
+ "era": "Old English",
+ "category": "Anglo-Saxon",
+ "portrait": "poets/alfred.jpg",
+ "credit": "The Alfred Jewel (Ashmolean Museum, late 9th century), inscribed ‘AELFRED MEC HEHT GEWYRCAN’; photograph by Geni, 2025 · CC BY-SA 4.0 (Wikimedia Commons)",
+ "bio": [
+  "Alfred (849–899) was king of the West Saxons from 871 until his death, and the only English king to be called “the Great.” He is remembered for his defence of Wessex against the Danes and for his programme of learning, in which he sponsored, and by his own account took part in, English translations of Latin works, among them Gregory the Great’s Pastoral Care and Boethius’s Consolation of Philosophy.",
+  "The verse attributed to him is the metrical preface and epilogue to the Pastoral Care and the Old English Meters of Boethius, which turn the verse sections of the Consolation into alliterative English. The Proem to the Meters names Alfred as the author, but whether he wrote them, or someone in his circle did, is debated."
+ ],
+ "order": 70.2,
+ "poems": [
+  {
+   "id": "alfred/0",
+   "title": "Metrical Preface to the Pastoral Care (Old English)",
+   "authorSlug": "alfred",
+   "author": "King Alfred",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "The Anglo-Saxon Poetic Records, ed. Krapp and Dobbie, vol. VI (1942)",
+   "note": "Old English text as in ASPR; hand-keyed e-text via sacred-texts.com.",
+   "text": "þis ærendgewrit    Agustinus\nofer sealtne sæ    suðan brohte\niegbuendum,    swa hit ær fore\nadihtode    dryhtnes cempa,\nRome papa.    Ryhtspell monig\nGregorius    gleawmod gindwod\nðurh sefan snyttro,    searoðonca hord.\nForðæm he monncynnes    mæst gestriende\nrodra wearde,    Romwara betest,\nmonna modwelegost,    mærðum gefrægost.\nSiððan min on englisc    ælfred kyning\nawende worda gehwelc,    and me his writerum\nsende suð and norð,    heht him swelcra ma\nbrengan bi ðære bisene,    ðæt he his biscepum\nsendan meahte,    forðæm hi his sume ðorfton,\nða ðe lædenspræce    læste cuðon."
+  },
+  {
+   "id": "alfred/1",
+   "title": "Metrical Epilogue to the Pastoral Care (Old English)",
+   "authorSlug": "alfred",
+   "author": "King Alfred",
+   "primarySubject": "Arts & Sciences",
+   "subjects": [
+    "Arts & Sciences"
+   ],
+   "collection": "The Anglo-Saxon Poetic Records, ed. Krapp and Dobbie, vol. VI (1942)",
+   "note": "Old English text as in ASPR; hand-keyed e-text via sacred-texts.com.",
+   "text": "ðis is nu se wæterscipe    ðe us wereda god\nto frofre gehet    foldbuendum.\nHe cwæð ðæt he wolde    ðæt on worulde forð\nof ðæm innoðum    a libbendu\nwætru fleowen,    ðe wel on hine\ngelifden under lyfte.    Is hit lytel tweo\nðæt ðæs wæterscipes    welsprynge is\non hefonrice,    ðæt is halig gæst.\nðonan hine hlodan    halge and gecorene,\nsiððan hine gierdon    ða ðe gode herdon\nðurh halga bec    hider on eorðan\ngeond manna mod    missenlice.\nSume hine weriað    on gewitlocan,\nwisdomes stream,    welerum gehæftað,\nðæt he on unnyt    ut ne tofloweð.\nAc se wæl wunað    on weres breostum\nðurh dryhtnes giefe    diop and stille.\nSume hine lætað    ofer landscare\nriðum torinnan;    nis ðæt rædlic ðing,\ngif swa hlutor wæter,    hlud and undiop,\ntofloweð æfter feldum    oð hit to fenne werð.\nAc hladað iow nu drincan,    nu iow dryhten geaf\nðæt iow Gregorius    gegiered hafað\nto durum iowrum    dryhtnes welle.\nFylle nu his fætels,    se ðe fæstne hider\nkylle brohte,    cume eft hræðe.\nGif her ðegna hwelc    ðyrelne kylle\nbrohte to ðys burnan,    bete hine georne,\nðy læs he forsceade    scirost wætra,\noððe him lifes drync    forloren weorðe."
+  }
+ ]
+}
