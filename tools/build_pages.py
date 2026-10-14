@@ -180,6 +180,40 @@ def source_line(p):
     return f'<p class="detail-source">{esc(" · ".join(parts))}</p>' if parts else ""
 
 
+_SOURCES = {}
+
+
+def sources_of(slug):
+    """data/sources/<slug>.json from tools/build_sources.py ({} when the poet has none)."""
+    if slug not in _SOURCES:
+        path = os.path.join(ROOT, "data", "sources", f"{slug}.json")
+        try:
+            _SOURCES[slug] = json.load(io.open(path, encoding="utf-8"))
+        except (OSError, ValueError):
+            _SOURCES[slug] = {}
+    return _SOURCES[slug]
+
+
+def book_source(src):
+    """'Source: <the printed book>. Digital text: <where>.' as the app shows it.
+    src['line'] is HTML made by build_sources.py (titles in <i>, the rest escaped)."""
+    if not src:
+        return ""
+    txt = ""
+    if src.get("text"):
+        t = esc(src["text"])
+        txt = f' Digital text: <a href="{esc(src["url"])}" rel="noopener">{t}</a>.' if src.get("url") else f" Digital text: {t}."
+    unsure = "" if src.get("sure") else ' <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span>'
+    return f'<p class="book-source"><span class="bs-label">Source</span> {src["line"]}.{txt}{unsure}</p>'
+
+
+def poem_source(slug, p):
+    for x in sources_of(slug).get("poems") or []:
+        if x.get("c") == (p.get("collection") or "") and x.get("t") == (p.get("translator") or ""):
+            return x
+    return None
+
+
 def bio_html(para):
     """Bios carry <em> for titles (the app renders them as HTML); keep only that tag."""
     return esc(para).replace("&lt;em&gt;", "<em>").replace("&lt;/em&gt;", "</em>")
@@ -407,6 +441,7 @@ def poem_page(poet, poems, n, p):
       {('<div class="themes">' + themes + '</div>') if themes else ''}
       <hr class="rule">
       {text_block(p["text"], p.get("translator"), lang_attr)}
+      {book_source(poem_source(slug, p))}
       {('<div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">' + esc(note) + '</p>') if note else ''}
       {cite_block(author, f"/poem/{slug}/{n}/", title=title, translator=p.get("translator"))}
       <p class="read-in-archive"><a href="/#/poem/{slug}/{n}">Read this poem with the Codex →</a></p>
@@ -598,6 +633,7 @@ def section_page(w, poet, grouped, i, others=()):
       {also_block(w, others, i)}
       <hr class="rule">
       {text_block(s.get("text"), w.get("translator"))}
+      {book_source((sources_of(w["authorSlug"]).get("works") or {}).get(slug))}
       {cite_block(w["author"], f"/work/{slug}/{i}/", title="" if whole else s["title"], work=w["title"], translator=w.get("translator"))}
       <p class="read-in-archive"><a href="/#/work/{slug}/{i}">Read this with the Codex →</a></p>
       <nav class="pn-row">{prev_link}{next_link}</nav>
