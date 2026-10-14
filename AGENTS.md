@@ -219,9 +219,14 @@ Modern · Turkish & Ottoman · Arabic & Persian · Italian · French · Nordic
 **If you introduce a new category you MUST also add it to `CATEGORY_ORDER` and
 `CATEGORY_SLUGS` in `app.js`**, or poets in it become invisible on the home page.
 
-"**Epics**" is a ninth, cross-cutting home tile. It is *derived*, not stored:
-`isEpicWork(w) = /\b(epic|heroic poem)\b/i.test(w.type)`. Set a work's `type` to
-"Epic poem" / "Heroic poem" / "Historical epic" to include it.
+"**Epics**" is a cross-cutting home tile (after the era tiles). It is *derived*, not stored:
+`isEpicWork(w) = /\b(epic|heroic (?:poems?|lays?))\b/i.test(w.type)` (the same regex is
+`EPIC` in `tools/build_home.py`: change both together). Set a work's `type` to
+"Epic poem" / "Heroic poem" / "Historical epic" to include it; a didactic poem
+(Works and Days, the Georgics) is "Didactic poem", not an epic. The Epics page
+(`#/category/epics`, `renderEpics()`) groups the epics by the poet's category, in
+`CATEGORY_ORDER`, and gives each workGroup one card that links to every version (the
+original text first, then translations by year); the tile's number counts each workGroup once.
 
 ---
 

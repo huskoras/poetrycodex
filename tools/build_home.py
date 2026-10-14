@@ -40,7 +40,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 DAYS = 400                      # how far ahead the poem of the day is written out
 STRIDE = 7919                   # the prime in poemOfTheDay() (app.js)
-EPIC = re.compile(r"\b(epic|heroic poem)\b", re.I | re.A)   # isEpicWork() in app.js
+EPIC = re.compile(r"\b(epic|heroic (?:poems?|lays?))\b", re.I | re.A)   # isEpicWork() in app.js
 
 
 def js_len(s):
@@ -85,7 +85,9 @@ def main():
     home = {
         "count": idx["count"],
         "workCount": idx.get("workCount") or len(idx.get("works") or []),
-        "epics": sum(1 for w in idx.get("works") or [] if EPIC.search(w.get("type") or "")),
+        # epicCount() in app.js: the translations of one original count once
+        "epics": len({w.get("workGroup") or w["slug"] for w in idx.get("works") or []
+                      if EPIC.search(w.get("type") or "")}),
         "eras": eras,
         "potdStart": start,
         "potdFields": ["id", "title", "author", "translator", "excerpt", "lang"],

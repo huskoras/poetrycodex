@@ -235,6 +235,21 @@ a.poet-card, a.topic-card { display: block; }
   letter-spacing: .08em; text-transform: uppercase; color: var(--gold-ink); }
 .work-subtitle { font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--ink-soft); margin: -.2rem 0 1rem; }
 
+/* Epics page: one card per epic, its translations listed under it, by tradition */
+.epic-jump { margin: 1.4rem 0 .4rem; }
+.epic-tradition { margin-top: 2.6rem; scroll-margin-top: 5rem; }
+.epic-tradition > .section-label { padding-bottom: .55rem; border-bottom: 1px solid var(--line); margin-bottom: 1.2rem; }
+.card.epic-card { cursor: default; }
+.card.epic-card:hover { transform: none; }
+.epic-card .card-title a { color: inherit; text-decoration: none; }
+.epic-card .card-title a:hover { color: var(--accent); }
+.epic-versions { list-style: none; margin: 1rem 0 0; padding: .8rem 0 0; border-top: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; gap: .4rem .5rem; }
+.epic-versions a { display: inline-block; font-family: var(--sans); font-size: .78rem; color: var(--gold-ink);
+  border: 1px solid var(--line-strong); border-radius: 999px; padding: .28rem .7rem; text-decoration: none; line-height: 1.3; }
+.epic-versions a:hover { border-color: var(--accent); color: var(--accent); }
+.epic-versions .ev-year { color: var(--faint); font-variant-numeric: tabular-nums; margin-left: .15rem; }
+
 /* ============ POET CARDS (index) ============ */
 .poet-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1.4rem; }
 .poet-card { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; cursor: pointer;

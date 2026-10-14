@@ -1056,7 +1056,9 @@
   // "Epics" is a cross-cutting tag derived from each work's existing `type` field
   // (e.g. "Epic poem", "Heroic poem", "Historical epic") rather than a duplicated
   // boolean flag in the data — one regex here keeps the work files untouched.
-  const isEpicWork = (w) => /\b(epic|heroic poem)\b/i.test(w.type || "");
+  const isEpicWork = (w) => /\b(epic|heroic (?:poems?|lays?))\b/i.test(w.type || "");
+  // How many epics, counting the translations of one original once (as on the Epics page).
+  const epicCount = (works) => new Set((works || []).filter(isEpicWork).map((w) => w.workGroup || w.slug)).size;
 
   // ---------- a fast first screen ----------
   // data/index.json is large (about 25 MB), and on a phone the home page used to wait 10 to
@@ -1373,7 +1375,7 @@
   // ---------- HOME: browse by era ----------
   // The era grid, shared by the home page and #/eras. The counts come from the index, or,
   // for the home page drawn before it arrives, from home.json.
-  function eraGridHTML(eraStats = CATEGORY_STATS, epicCount = (DATA.works || []).filter(isEpicWork).length) {
+  function eraGridHTML(eraStats = CATEGORY_STATS, nEpics = epicCount(DATA.works)) {
     const tiles = CATEGORY_ORDER.map((cat) => {
       const stats = eraStats[cat] || { poems: 0, works: 0 };
       return `
@@ -1389,7 +1391,7 @@
         ${tiles}
         <a class="topic-card epics-tile" href="#/category/${EPICS_SLUG}">
           <p class="tc-name">Epics</p>
-          <p class="tc-count">${num(epicCount)} work${epicCount === 1 ? "" : "s"} \u00b7 every era</p>
+          <p class="tc-count">${nEpics ? num(nEpics) + " epic" + (nEpics === 1 ? "" : "s") + " \u00b7 " : ""}every era</p>
         </a>
       </div>`;
   }
@@ -1457,7 +1459,7 @@
   // facts, so the page does not change when the index arrives; see "a fast first screen").
   function homeHTML() {
     const f = DATA
-      ? { count: DATA.count, eras: CATEGORY_STATS, epics: (DATA.works || []).filter(isEpicWork).length, potd: poemOfTheDay() }
+      ? { count: DATA.count, eras: CATEGORY_STATS, epics: epicCount(DATA.works), potd: poemOfTheDay() }
       : { count: HOME.count, eras: HOME.eras, epics: HOME.epics || 0, potd: homePoemOfTheDay() };
     // Two doors under one roof: the collection, and the way of asking about it.
     // The Oracle keeps its place even while it sleeps, so the shape of the site
@@ -1489,22 +1491,15 @@
 
   // ---------- CATEGORY: filtered era (or cross-cutting "epics") view ----------
   function renderCategory(slug) {
-    const isEpics = slug === EPICS_SLUG;
-    const catName = isEpics ? "Epics" : SLUG_TO_CATEGORY[slug];
+    if (slug === EPICS_SLUG) { renderEpics(); return; }
+    const catName = SLUG_TO_CATEGORY[slug];
     if (!catName) { location.hash = "#/"; return; }
 
-    const works = isEpics
-      ? (DATA.works || []).filter(isEpicWork)
-      : (DATA.works || []).filter((w) => POETS[w.authorSlug] && POETS[w.authorSlug].category === catName);
-    const poems = isEpics
-      ? []
-      : SORTED.filter((p) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
+    const works = (DATA.works || []).filter((w) => POETS[w.authorSlug] && POETS[w.authorSlug].category === catName);
+    const poems = SORTED.filter((p) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
+    const sub = `${num(poems.length)} poem${poems.length === 1 ? "" : "s"}.`;
 
-    const sub = isEpics
-      ? `${num(works.length)} epic work${works.length === 1 ? "" : "s"}, spanning every era in the archive.`
-      : `${num(poems.length)} poem${poems.length === 1 ? "" : "s"}.`;
-
-    setTitle(isEpics ? "Epics" : catName + " poetry");
+    setTitle(catName + " poetry");
     app.innerHTML = `
       <button class="back" id="back">← Browse by Era</button>
       <div class="page-head"><h1 class="page-title">${esc(catName)}</h1><p class="page-sub">${sub}</p></div>
@@ -1516,6 +1511,80 @@
       ${moreHTML(poems.length)}`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/"; });
     bindMore(poems);
+  }
+
+  // ---------- EPICS: the world's epics by tradition ----------
+  // One card per epic: the translations of one original (a workGroup) share a card that
+  // links to each of them, the original text first, then by year. The traditions are the
+  // poets' categories, in the era order of the home page.
+  function epicGroups() {
+    const by = new Map();
+    (DATA.works || []).filter(isEpicWork).forEach((w) => {
+      const k = w.workGroup || w.slug;
+      if (!by.has(k)) by.set(k, []);
+      by.get(k).push(w);
+    });
+    return [...by.values()];
+  }
+  // The first year in the translator's closing parenthesis: "(1791; Southey’s edition, 1860)" → 1791.
+  const verYear = (o) => {
+    const par = (String(o.translator || "").match(/\(([^)]*)\)\s*$/) || [])[1] || "";
+    return (par.match(/\d{4}(?:[–-]\d{2,4})?/) || [""])[0];
+  };
+  function verNames(o) {
+    if (!o.translator) {
+      const m = o.title.match(/\(([^)]+)\)\s*$/);
+      return m ? m[1] + " text" : "Original text";
+    }
+    const t = translatorShort(trName(o.translator));
+    const earl = t.match(/Earl of (\w+)/);
+    if (earl) return earl[1];
+    const parts = t.split(/\s*(?:,|\band\b|&)\s*/).map((s) => s.replace(/^with\s+/i, "").trim()).filter((s) => s && !/^(?:Jr|Sr)\.?$/.test(s))
+      .map((s) => s.replace(/,?\s+(?:Jr|Sr)\.?$/, "").split(/\s+/).pop());
+    return parts.length > 1 ? parts.slice(0, -1).join(", ") + " and " + parts[parts.length - 1] : parts[0] || t;
+  }
+  function epicCardHTML(ws) {
+    if (ws.length === 1) return workCardHTML(ws[0]);
+    const vs = ws.slice().sort((a, b) => (!a.translator ? -1 : !b.translator ? 1 : (verYear(a) || "9").localeCompare(verYear(b) || "9")));
+    const title = vs.map((w) => w.title.replace(/\s*\([^)]*\)\s*$/, "")).sort((a, b) => a.length - b.length)[0];
+    const lead = vs.find((w) => w.translator) || vs[0];
+    const nTr = vs.filter((w) => w.translator).length;
+    const what = nTr > 1 ? `${num(nTr)} translations` : nTr === 1 && vs.length > 1 ? "Original and translation" : `${num(vs.length)} versions`;
+    return `
+    <div class="card work-card epic-card">
+      <div class="card-subject">${esc(lead.type)} · ${what}</div>
+      <h2 class="card-title"><a href="#/work/${esc(lead.slug)}">${esc(title)}</a></h2>
+      <div class="card-author">${esc(lead.author)}</div>
+      <ul class="epic-versions">${vs.map((w) => `
+        <li><a href="#/work/${esc(w.slug)}"${w.translator ? "" : langAttr(w.authorSlug, "")}>${esc(verNames(w))}${verYear(w) ? ` <span class="ev-year">${esc(verYear(w))}</span>` : ""}</a></li>`).join("")}
+      </ul>
+    </div>`;
+  }
+  function renderEpics() {
+    const groups = epicGroups();
+    const ord = (ws) => (POETS[ws[0].authorSlug] || {}).order ?? 0;
+    const cats = CATEGORY_ORDER.map((cat) => ({
+      cat,
+      groups: groups.filter((ws) => (POETS[ws[0].authorSlug] || {}).category === cat)
+        .sort((a, b) => ord(a) - ord(b) || sortKey(a[0].title).localeCompare(sortKey(b[0].title))),
+    })).filter((c) => c.groups.length);
+    setTitle("Epics");
+    app.innerHTML = `
+      <button class="back" id="back">← Browse by Era</button>
+      <div class="page-head"><h1 class="page-title">Epics</h1>
+        <p class="page-sub">The long heroic and sacred poems of the world, from Gilgamesh and Homer to the Kalevala and Hiawatha, each with every translation the archive holds.</p></div>
+      <nav class="chips epic-jump" aria-label="Traditions">${cats.map((c, i) =>
+        `<button type="button" class="chip" data-to="epics-${i}">${esc(c.cat)}</button>`).join("")}</nav>
+      ${cats.map((c, i) => `
+      <section class="epic-tradition" id="epics-${i}">
+        <h2 class="section-label">${esc(c.cat)}</h2>
+        <div class="grid">${c.groups.map(epicCardHTML).join("")}</div>
+      </section>`).join("")}`;
+    document.getElementById("back").addEventListener("click", () => { location.hash = "#/"; });
+    app.querySelectorAll(".epic-jump button").forEach((b) => b.addEventListener("click", () => {
+      const s = document.getElementById(b.dataset.to);
+      if (s) s.scrollIntoView({ behavior: "smooth", block: "start" });
+    }));
   }
 
   const sortKey = (s) => s.toLowerCase().replace(/^["'“‘]*(a|an|the)\s+/, "").replace(/^[^a-z0-9]+/, "").trim();
