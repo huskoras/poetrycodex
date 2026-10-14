@@ -1,0 +1,6571 @@
+{
+ "poems": [
+  {
+   "oe_id": "anonymous-old-english/61",
+   "oe_title": "Widsith (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/0",
+     "title": "Widsith",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "Faust & Thompson keep the original line count; minor reordering inside lines 41-43 only."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/70",
+   "oe_title": "Deor (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/1",
+     "title": "Deor",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "Line-for-line, refrains included."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/178",
+   "oe_title": "Waldhere (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/2",
+     "title": "Waldhere",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        1
+       ],
+       "tr": null,
+       "note": "OE section heading 'I' (not a verse line)"
+      },
+      {
+       "oe": [
+        2,
+        8
+       ],
+       "tr": [
+        1,
+        7
+       ],
+       "note": "Waldere I.1-7"
+      },
+      {
+       "oe": [
+        9,
+        9
+       ],
+       "tr": [
+        7,
+        7
+       ],
+       "note": "Waldere I.8 ('is se dæg cumen') folded into tr 7"
+      },
+      {
+       "oe": [
+        10,
+        32
+       ],
+       "tr": [
+        8,
+        30
+       ],
+       "note": "Waldere I.9-31"
+      },
+      {
+       "oe": [
+        33,
+        33
+       ],
+       "tr": [
+        30,
+        30
+       ],
+       "note": "Waldere I.32 ('gif he ða') folded into tr 30"
+      },
+      {
+       "oe": [
+        34,
+        34
+       ],
+       "tr": null,
+       "note": "OE section heading 'II'"
+      },
+      {
+       "oe": [
+        35,
+        65
+       ],
+       "tr": [
+        31,
+        61
+       ],
+       "note": "Waldere II.1-31"
+      }
+     ],
+     "note": "OE text carries headings I / II as separate lines; the translation runs both fragments on without a break (fragment II begins at tr 31)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/177",
+   "oe_title": "The Fight at Finnsburg (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/3",
+     "title": "The Fight at Finnsburg",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        4
+       ],
+       "tr": [
+        1,
+        4
+       ]
+      },
+      {
+       "oe": [
+        5,
+        5
+       ],
+       "tr": [
+        5,
+        6
+       ],
+       "note": "OE 5 rendered in two lines"
+      },
+      {
+       "oe": [
+        6,
+        12
+       ],
+       "tr": [
+        7,
+        13
+       ]
+      },
+      {
+       "oe": [
+        13,
+        13
+       ],
+       "tr": [
+        14,
+        15
+       ],
+       "note": "OE 13 (long line) rendered in two lines"
+      },
+      {
+       "oe": [
+        14,
+        48
+       ],
+       "tr": [
+        16,
+        50
+       ]
+      }
+     ],
+     "note": "Line-for-line apart from two expanded lines."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/56",
+   "oe_title": "The Wanderer (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/4",
+     "title": "The Wanderer",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        91
+       ],
+       "tr": [
+        1,
+        91
+       ]
+      },
+      {
+       "oe": [
+        92,
+        93
+       ],
+       "tr": [
+        92,
+        92
+       ],
+       "note": "'Hwær cwom...' questions of OE 92-93 compressed into one line"
+      },
+      {
+       "oe": [
+        94,
+        115
+       ],
+       "tr": [
+        93,
+        114
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/59",
+   "oe_title": "The Seafarer (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/5",
+     "title": "The Seafarer",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        64
+       ],
+       "tr": [
+        1,
+        1
+       ],
+       "note": "tr para 1 ends at 64a 'ofer holma gelagu'"
+      },
+      {
+       "oe": [
+        64,
+        80
+       ],
+       "tr": [
+        2,
+        2
+       ],
+       "note": "64b 'Forþon me hatran sind' to 80a 'dream mid dugeþum'"
+      },
+      {
+       "oe": [
+        80,
+        108
+       ],
+       "tr": [
+        3,
+        3
+       ],
+       "note": "80b 'Dagas sind gewitene' to 108"
+      },
+      {
+       "oe": [
+        109,
+        110
+       ],
+       "tr": [
+        4,
+        4
+       ]
+      },
+      {
+       "oe": [
+        111,
+        125
+       ],
+       "tr": [
+        5,
+        5
+       ],
+       "note": "to the end, Amen"
+      }
+     ],
+     "note": "Gordon's prose, five paragraphs (tr numbers = paragraph index)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/131",
+   "oe_title": "The Wife's Lament (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/6",
+     "title": "The Wife's Lament",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/141",
+   "oe_title": "The Husband's Message (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/7",
+     "title": "The Husband's Message",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        9
+       ],
+       "tr": [
+        1,
+        11
+       ],
+       "note": "damaged opening; the translation fills the gaps with conjectural sense, so lines do not correspond one-to-one here"
+      },
+      {
+       "oe": [
+        10,
+        12
+       ],
+       "tr": [
+        12,
+        14
+       ],
+       "note": "approximate"
+      },
+      {
+       "oe": [
+        13,
+        53
+       ],
+       "tr": [
+        15,
+        55
+       ],
+       "note": "1:1 from here (offset +2)"
+      }
+     ],
+     "note": "Faust & Thompson follow an older text that restores the damaged opening; the rune lines (OE 49-50) = tr 51-52."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/142",
+   "oe_title": "The Ruin (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/8",
+     "title": "The Ruin",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        46
+       ],
+       "tr": [
+        1,
+        46
+       ]
+      },
+      {
+       "oe": [
+        47,
+        47
+       ],
+       "tr": [
+        46,
+        46
+       ],
+       "note": "fragment 'þonne is' folded into tr 46"
+      },
+      {
+       "oe": [
+        48,
+        49
+       ],
+       "tr": [
+        47,
+        48
+       ]
+      }
+     ],
+     "note": "Damaged lines rendered with dots, line by line."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/54",
+   "oe_title": "The Dream of the Rood (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/10",
+     "title": "The Dream of the Rood",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/180",
+   "oe_title": "The Battle of Brunanburh (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/11",
+     "title": "The Battle of Brunanburh",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        27
+       ],
+       "tr": [
+        1,
+        27
+       ]
+      },
+      {
+       "oe": [
+        28,
+        29
+       ],
+       "tr": [
+        28,
+        28
+       ],
+       "note": "OE 28-29 compressed"
+      },
+      {
+       "oe": [
+        30,
+        73
+       ],
+       "tr": [
+        29,
+        72
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/179",
+   "oe_title": "The Battle of Maldon (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/12",
+     "title": "The Battle of Maldon",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        286
+       ],
+       "tr": [
+        1,
+        286
+       ]
+      },
+      {
+       "oe": [
+        287,
+        287
+       ],
+       "tr": null,
+       "note": "OE 287 ('and ðær Gaddes mæg grund gesohte') not rendered"
+      },
+      {
+       "oe": [
+        288,
+        325
+       ],
+       "tr": [
+        287,
+        324
+       ]
+      },
+      {
+       "oe": null,
+       "tr": [
+        325,
+        325
+       ],
+       "note": "row of dots marking the lost ending"
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/66",
+   "oe_title": "The Panther (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/14",
+     "title": "The Panther",
+     "translator": "trans. James Hall Pitman (1921)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        8
+       ],
+       "tr": [
+        1,
+        8
+       ]
+      },
+      {
+       "oe": [
+        8,
+        15
+       ],
+       "tr": [
+        9,
+        15
+       ]
+      },
+      {
+       "oe": [
+        15,
+        18
+       ],
+       "tr": [
+        16,
+        21
+       ]
+      },
+      {
+       "oe": [
+        19,
+        34
+       ],
+       "tr": [
+        22,
+        35
+       ]
+      },
+      {
+       "oe": [
+        35,
+        54
+       ],
+       "tr": [
+        36,
+        53
+       ]
+      },
+      {
+       "oe": [
+        55,
+        68
+       ],
+       "tr": [
+        54,
+        68
+       ]
+      },
+      {
+       "oe": [
+        69,
+        74
+       ],
+       "tr": [
+        69,
+        73
+       ]
+      },
+      {
+       "oe": [
+        74,
+        74
+       ],
+       "tr": [
+        74,
+        75
+       ]
+      }
+     ],
+     "note": "Pitman's blank verse runs close to the OE (75 vs 74 lines) but drifts by 1-3 lines and splits lines at paragraph breaks; blocks follow Pitman's verse paragraphs (break at a split line). Good enough for top-aligned blocks; not exact line-for-line."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/67",
+   "oe_title": "The Whale (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/15",
+     "title": "The Whale",
+     "translator": "trans. James Hall Pitman (1921)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        31
+       ],
+       "tr": [
+        1,
+        28
+       ],
+       "note": "block ends at 31a 'scipu mid scealcum'"
+      },
+      {
+       "oe": [
+        31,
+        49
+       ],
+       "tr": [
+        29,
+        48
+       ],
+       "note": "49a 'eorlas ond yðmearas'"
+      },
+      {
+       "oe": [
+        49,
+        81
+       ],
+       "tr": [
+        49,
+        81
+       ]
+      },
+      {
+       "oe": [
+        82,
+        88
+       ],
+       "tr": [
+        82,
+        91
+       ],
+       "note": "OE 82 is defective; Pitman supplies conjectural text"
+      },
+      {
+       "oe": null,
+       "tr": [
+        92,
+        92
+       ],
+       "note": "stray line 'Footnote 1: Conjecturally supplied.' is part of the text field (data glitch)"
+      }
+     ],
+     "note": "Blank verse, 92 lines vs 88; drift up to 3 lines inside blocks."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/68",
+   "oe_title": "The Partridge (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/16",
+     "title": "The Partridge",
+     "translator": "trans. James Hall Pitman (1921)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        2
+       ],
+       "tr": [
+        1,
+        2
+       ],
+       "note": "opening half-lines"
+      },
+      {
+       "oe": null,
+       "tr": [
+        2,
+        19
+       ],
+       "note": "Pitman fills the manuscript gap with conjectural text (no OE)"
+      },
+      {
+       "oe": [
+        3,
+        9
+       ],
+       "tr": [
+        20,
+        25
+       ]
+      },
+      {
+       "oe": null,
+       "tr": [
+        26,
+        26
+       ],
+       "note": "stray line 'Footnote 1: Conjecturally supplied, on the basis of other versions.' inside the text field (data glitch)"
+      },
+      {
+       "oe": [
+        10,
+        16
+       ],
+       "tr": [
+        27,
+        36
+       ]
+      },
+      {
+       "oe": [
+        17,
+        17
+       ],
+       "tr": [
+        37,
+        37
+       ],
+       "note": "Finit."
+      }
+     ],
+     "note": "Most of the translation (tr 2-19) is a conjectural supplement for the lost leaf; only tr 20-37 face surviving OE."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/72",
+   "oe_title": "Riddle 1 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/17",
+     "title": "Riddle I. A Storm",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        13
+       ],
+       "tr": [
+        1,
+        13
+       ]
+      },
+      {
+       "oe": [
+        14,
+        15
+       ],
+       "tr": [
+        14,
+        14
+       ],
+       "note": "closing question compressed"
+      }
+     ],
+     "note": "KD/ASPR 1 = F&T I."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/73",
+   "oe_title": "Riddle 2 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/18",
+     "title": "Riddle II. A Storm",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 2."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/74",
+   "oe_title": "Riddle 3 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/19",
+     "title": "Riddle III. A Storm",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 3."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/76",
+   "oe_title": "Riddle 5 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/20",
+     "title": "Riddle V. A Shield",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 5 (shield)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/78",
+   "oe_title": "Riddle 7 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/21",
+     "title": "Riddle VII. A Swan",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 7 (swan)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/79",
+   "oe_title": "Riddle 8 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/22",
+     "title": "Riddle VIII. A Nightingale",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 8."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/85",
+   "oe_title": "Riddle 14 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/23",
+     "title": "Riddle XIV. A Horn",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 14 (horn)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/86",
+   "oe_title": "Riddle 15 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/24",
+     "title": "Riddle XV. A Badger",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 15 (badger)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/94",
+   "oe_title": "Riddle 23 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/25",
+     "title": "Riddle XXIII. A Bow",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 23 (bow, AGOF)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/97",
+   "oe_title": "Riddle 26 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/26",
+     "title": "Riddle XXVI. A Bible",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 26 (book)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/116",
+   "oe_title": "Riddle 45 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/27",
+     "title": "Riddle XLV. Dough",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 45 (dough)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/118",
+   "oe_title": "Riddle 47 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/28",
+     "title": "Riddle XLVII. A Bookworm",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 47 (bookworm)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/140",
+   "oe_title": "Riddle 60 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/29",
+     "title": "Riddle LX. A Reed",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 60 (reed)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/81",
+   "oe_title": "Riddle 10 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/30",
+     "title": "Riddle X. A Barnacle Goose",
+     "translator": "trans. J. Duncan Spaeth, Old English Poetry (Princeton University Press, 1921)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 10. Spaeth matches the line count; sense runs a little freely within lines."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/87",
+   "oe_title": "Riddle 16 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/31",
+     "title": "Riddle XVI. An Anchor",
+     "translator": "trans. J. Duncan Spaeth, Old English Poetry (Princeton University Press, 1921)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 16 (anchor)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/92",
+   "oe_title": "Riddle 21 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/32",
+     "title": "Riddle XXI. A Plough",
+     "translator": "trans. J. Duncan Spaeth, Old English Poetry (Princeton University Press, 1921)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 21 (plough)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/98",
+   "oe_title": "Riddle 27 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/33",
+     "title": "Riddle XXVII. Mead",
+     "translator": "trans. J. Duncan Spaeth, Old English Poetry (Princeton University Press, 1921)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 27 (mead)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/128",
+   "oe_title": "Riddle 57 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/34",
+     "title": "Riddle LVII. Gnats",
+     "translator": "trans. J. Duncan Spaeth, Old English Poetry (Princeton University Press, 1921)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 57."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/162",
+   "oe_title": "Riddle 80 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/35",
+     "title": "Riddle LXXIX. A Falcon",
+     "translator": "trans. Herbert B. Brougham, in Cook & Tinker, Select Translations from Old English Poetry (1902)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "ASPR 80 ('Ic eom æþelinges eaxlgestealla'); the title's 'LXXIX' is Grein-Wülker numbering."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/80",
+   "oe_title": "Riddle 9 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/36",
+     "title": "Riddle IX. A Cuckoo",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        12
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 9 (cuckoo). Prose, one paragraph."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/82",
+   "oe_title": "Riddle 11 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/37",
+     "title": "Riddle XI. Night",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        10
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 11."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/88",
+   "oe_title": "Riddle 17 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/38",
+     "title": "Riddle XVII. A Ballista",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        11
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 17."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/95",
+   "oe_title": "Riddle 24 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/39",
+     "title": "Riddle XXIV. A Jay",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        10
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 24 (jay, runes)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/100",
+   "oe_title": "Riddle 29 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/40",
+     "title": "Riddle XXIX. Moon and Sun",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        14
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 29."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/104",
+   "oe_title": "Riddle 33 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/41",
+     "title": "Riddle XXXIII. An Iceberg",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        13
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 33."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/105",
+   "oe_title": "Riddle 34 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/42",
+     "title": "Riddle XXXIV. A Rake",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        9
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 34."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/106",
+   "oe_title": "Riddle 35 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/43",
+     "title": "Riddle XXXV. A Coat of Mail",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        14
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 35 (mail-coat)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/203",
+   "oe_title": "The Leiden Riddle (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/43",
+     "title": "Riddle XXXV. A Coat of Mail",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "medium",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        14
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "The Leiden Riddle is the Northumbrian version of the same riddle (Aldhelm's Lorica) as Exeter Riddle 35; Gordon translates the Exeter text, so wording differs slightly."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/109",
+   "oe_title": "Riddle 38 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/44",
+     "title": "Riddle XXXVIII. A Bullock",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        7
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 38."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/122",
+   "oe_title": "Riddle 51 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/45",
+     "title": "Riddle LI. Pen and Fingers",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        7
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 51."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/124",
+   "oe_title": "Riddle 53 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/46",
+     "title": "Riddle LIII. A Battering Ram",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        13
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 53."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/119",
+   "oe_title": "Riddle 48 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/47",
+     "title": "Riddle LIX. A Chalice",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        8
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "Gordon's 'Riddle LIX. A Chalice' translates ASPR 48 ('Ic gefrægn for hæleþum hring endean'), not ASPR 59 (the other chalice riddle), as the poem's own note says. Do NOT pair it with Riddle 59."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/163",
+   "oe_title": "Riddle 81 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/48",
+     "title": "Riddle LXXX. A Weathercock",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        12
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 81 (weathercock)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/167",
+   "oe_title": "Riddle 85 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/49",
+     "title": "Riddle LXXXIV. Fish and River",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        7
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 85."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/168",
+   "oe_title": "Riddle 86 (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/50",
+     "title": "Riddle LXXXV. A One-Eyed Seller of Garlic",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        7
+       ],
+       "tr": [
+        1,
+        1
+       ]
+      }
+     ],
+     "note": "ASPR 86."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/52",
+   "oe_title": "Soul and Body I (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/51",
+     "title": "The Soul's Address to the Body",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": null,
+       "tr": [
+        1,
+        1
+       ],
+       "note": "heading 'I'"
+      },
+      {
+       "oe": [
+        1,
+        16
+       ],
+       "tr": [
+        2,
+        2
+       ]
+      },
+      {
+       "oe": [
+        17,
+        102
+       ],
+       "tr": [
+        3,
+        3
+       ],
+       "note": "the damned soul's speech"
+      },
+      {
+       "oe": [
+        103,
+        107
+       ],
+       "tr": [
+        4,
+        4
+       ]
+      },
+      {
+       "oe": [
+        108,
+        126
+       ],
+       "tr": [
+        5,
+        5
+       ]
+      },
+      {
+       "oe": null,
+       "tr": [
+        6,
+        6
+       ],
+       "note": "heading 'II'"
+      },
+      {
+       "oe": [
+        127,
+        166
+       ],
+       "tr": [
+        7,
+        7
+       ],
+       "note": "the saved soul's speech"
+      },
+      {
+       "oe": null,
+       "tr": [
+        8,
+        8
+       ],
+       "note": "editorial '[The end of the poem is missing.]'"
+      }
+     ],
+     "note": "Gordon's prose. Part II (saved soul) exists only in the Vercelli text, so this is the primary pairing; Gordon's Part I also takes some Exeter readings (e.g. 'thirsty for blood, they drink the corpse', 'born once again')."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/69",
+   "oe_title": "Soul and Body II (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/51",
+     "title": "The Soul's Address to the Body",
+     "translator": "trans. R. K. Gordon, Anglo-Saxon Poetry (Everyman’s Library, 1926)",
+     "mode": "blocks",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": null,
+       "tr": [
+        1,
+        1
+       ],
+       "note": "heading 'I'"
+      },
+      {
+       "oe": [
+        1,
+        16
+       ],
+       "tr": [
+        2,
+        2
+       ]
+      },
+      {
+       "oe": [
+        17,
+        96
+       ],
+       "tr": [
+        3,
+        3
+       ]
+      },
+      {
+       "oe": [
+        97,
+        102
+       ],
+       "tr": [
+        4,
+        4
+       ]
+      },
+      {
+       "oe": [
+        103,
+        121
+       ],
+       "tr": [
+        5,
+        5
+       ]
+      },
+      {
+       "oe": null,
+       "tr": [
+        6,
+        8
+       ],
+       "note": "Part II and the closing note have no Exeter counterpart"
+      }
+     ],
+     "note": "Same poem (Exeter version, which lacks the saved-soul part). Show only tr paragraphs 2-5 opposite it."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/57",
+   "oe_title": "The Gifts of Men (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/220",
+     "title": "The Gifts of Men",
+     "translator": "trans. Benjamin Thorpe (1842)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        113
+       ],
+       "tr": [
+        1,
+        226
+       ],
+       "per_line": 2
+      }
+     ],
+     "note": "Thorpe sets each half-line as a line: OE line n = tr lines 2n-1 and 2n, exact throughout."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/58",
+   "oe_title": "Precepts (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/221",
+     "title": "Precepts",
+     "translator": "trans. Benjamin Thorpe (1842)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        17
+       ],
+       "tr": [
+        1,
+        34
+       ],
+       "per_line": 2
+      },
+      {
+       "oe": [
+        18,
+        18
+       ],
+       "tr": [
+        35,
+        37
+       ],
+       "note": "OE 18 rendered in three half-lines"
+      },
+      {
+       "oe": [
+        19,
+        94
+       ],
+       "tr": [
+        38,
+        189
+       ],
+       "per_line": 2
+      }
+     ],
+     "note": "Half-line layout."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/135",
+   "oe_title": "Almsgiving (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/222",
+     "title": "Almsgiving",
+     "translator": "trans. Benjamin Thorpe (1842)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        9
+       ],
+       "tr": [
+        1,
+        18
+       ],
+       "per_line": 2
+      }
+     ],
+     "note": "Half-line layout, exact."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/136",
+   "oe_title": "Pharaoh (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/223",
+     "title": "Pharaoh",
+     "translator": "trans. Benjamin Thorpe (1842)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        8
+       ],
+       "tr": [
+        1,
+        16
+       ],
+       "per_line": 2
+      }
+     ],
+     "note": "Half-line layout, exact (tr 14 is Thorpe's asterisks for the gap)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/137",
+   "oe_title": "The Lord's Prayer I (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/224",
+     "title": "The Lord's Prayer I",
+     "translator": "trans. Benjamin Thorpe (1842)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        11
+       ],
+       "tr": [
+        1,
+        22
+       ],
+       "per_line": 2
+      }
+     ],
+     "note": "Half-line layout, exact."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/138",
+   "oe_title": "Homiletic Fragment II (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/225",
+     "title": "Homiletic Fragment II",
+     "translator": "trans. Benjamin Thorpe (1842)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        7
+       ],
+       "tr": [
+        1,
+        14
+       ],
+       "per_line": 2
+      },
+      {
+       "oe": [
+        8,
+        8
+       ],
+       "tr": [
+        15,
+        15
+       ],
+       "note": "'an lifgende' not rendered"
+      },
+      {
+       "oe": [
+        9,
+        14
+       ],
+       "tr": [
+        16,
+        27
+       ],
+       "per_line": 2
+      },
+      {
+       "oe": [
+        15,
+        15
+       ],
+       "tr": null,
+       "note": "not rendered (blank line in Thorpe)"
+      },
+      {
+       "oe": [
+        16,
+        16
+       ],
+       "tr": [
+        28,
+        29
+       ]
+      },
+      {
+       "oe": [
+        17,
+        17
+       ],
+       "tr": [
+        30,
+        30
+       ]
+      },
+      {
+       "oe": [
+        18,
+        18
+       ],
+       "tr": [
+        31,
+        32
+       ]
+      },
+      {
+       "oe": [
+        19,
+        19
+       ],
+       "tr": [
+        33,
+        33
+       ]
+      },
+      {
+       "oe": [
+        20,
+        20
+       ],
+       "tr": [
+        34,
+        35
+       ]
+      }
+     ],
+     "note": "Half-line layout; the damaged close is rendered selectively. The text field has two blank lines (gaps) which are skipped in the tr numbering."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/208",
+   "oe_title": "Metrical Charm 1: For Unfruitful Land (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/226",
+     "title": "Metrical Charm 1: For Unfruitful Land",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        25
+       ],
+       "tr": null,
+       "note": "prose rubric, not translated"
+      },
+      {
+       "oe": [
+        26,
+        38
+       ],
+       "tr": [
+        1,
+        13
+       ]
+      },
+      {
+       "oe": [
+        39,
+        50
+       ],
+       "tr": null,
+       "note": "prose rubric, not translated"
+      },
+      {
+       "oe": [
+        51,
+        57
+       ],
+       "tr": [
+        14,
+        20
+       ]
+      },
+      {
+       "oe": [
+        58,
+        59
+       ],
+       "tr": [
+        21,
+        21
+       ]
+      },
+      {
+       "oe": [
+        60,
+        66
+       ],
+       "tr": [
+        22,
+        28
+       ]
+      },
+      {
+       "oe": [
+        67,
+        68
+       ],
+       "tr": null,
+       "note": "prose rubric"
+      },
+      {
+       "oe": [
+        69,
+        71
+       ],
+       "tr": [
+        29,
+        31
+       ]
+      },
+      {
+       "oe": [
+        72,
+        74
+       ],
+       "tr": null,
+       "note": "prose rubric"
+      },
+      {
+       "oe": [
+        75,
+        80
+       ],
+       "tr": [
+        32,
+        37
+       ]
+      },
+      {
+       "oe": [
+        81,
+        82
+       ],
+       "tr": null,
+       "note": "closing rubric"
+      }
+     ],
+     "note": "Only the verse incantations are translated, line for line."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/211",
+   "oe_title": "Metrical Charm 4: For a Sudden Stitch (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/227",
+     "title": "Metrical Charm 4: For a Sudden Stitch",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        2
+       ],
+       "tr": null,
+       "note": "prose recipe, not translated"
+      },
+      {
+       "oe": [
+        3,
+        28
+       ],
+       "tr": [
+        1,
+        26
+       ]
+      },
+      {
+       "oe": [
+        29,
+        29
+       ],
+       "tr": null,
+       "note": "closing rubric"
+      }
+     ],
+     "note": "Verse 1:1 (offset -2)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/63",
+   "oe_title": "Maxims I (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/228",
+     "title": "Maxims I",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        70
+       ],
+       "tr": null,
+       "note": "Maxims I A: not translated"
+      },
+      {
+       "oe": [
+        71,
+        106
+       ],
+       "tr": [
+        1,
+        36
+       ],
+       "note": "Maxims I B, 'Forst sceal freosan' to 106"
+      },
+      {
+       "oe": [
+        107,
+        204
+       ],
+       "tr": null,
+       "note": "not translated"
+      }
+     ],
+     "note": "Selection only (ASPR 71-106), line for line."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/62",
+   "oe_title": "The Fortunes of Men (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/229",
+     "title": "The Fortunes of Men",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "F&T title 'The Fates of Men'."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/215",
+   "oe_title": "Metrical Charm 8: For a Swarm of Bees (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/230",
+     "title": "Metrical Charm 8: For a Swarm of Bees",
+     "translator": "trans. Albert S. Cook & Chauncey B. Tinker (eds), Select Translations from Old English Poetry (1902)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        2
+       ],
+       "tr": null,
+       "note": "rubric"
+      },
+      {
+       "oe": [
+        3,
+        6
+       ],
+       "tr": [
+        1,
+        4
+       ]
+      },
+      {
+       "oe": [
+        7,
+        7
+       ],
+       "tr": null,
+       "note": "rubric"
+      },
+      {
+       "oe": [
+        8,
+        11
+       ],
+       "tr": [
+        5,
+        8
+       ]
+      }
+     ],
+     "note": "Verse 1:1, rubrics omitted."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/209",
+   "oe_title": "Metrical Charm 2: The Nine Herbs Charm (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/231",
+     "title": "Metrical Charm 2: The Nine Herbs Charm",
+     "translator": "trans. Albert S. Cook & Chauncey B. Tinker (eds), Select Translations from Old English Poetry (1902)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        44
+       ],
+       "tr": [
+        1,
+        44
+       ]
+      },
+      {
+       "oe": [
+        45,
+        57
+       ],
+       "tr": [
+        45,
+        45
+       ],
+       "note": "list of venoms rendered as one prose paragraph"
+      },
+      {
+       "oe": [
+        58,
+        63
+       ],
+       "tr": [
+        46,
+        46
+       ],
+       "note": "prose paragraph"
+      },
+      {
+       "oe": [
+        64,
+        73
+       ],
+       "tr": null,
+       "note": "closing prescription, not translated"
+      }
+     ],
+     "note": "Lines 1-44 are line-for-line; the end switches to prose paragraphs."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/217",
+   "oe_title": "Metrical Charm 10: For Loss of Cattle (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/232",
+     "title": "Metrical Charm 10: For Loss of Cattle",
+     "translator": "trans. William O. Stevens, in Cook & Tinker, Select Translations from Old English Poetry (1902)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        2
+       ],
+       "tr": null,
+       "note": "rubric"
+      },
+      {
+       "oe": [
+        3,
+        6
+       ],
+       "tr": [
+        1,
+        4
+       ]
+      },
+      {
+       "oe": [
+        6,
+        13
+       ],
+       "tr": [
+        5,
+        5
+       ],
+       "note": "rest of the charm rendered as one prose paragraph"
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/207",
+   "oe_title": "The Brussels Cross (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/233",
+     "title": "The Brussels Cross",
+     "translator": "trans. Chauncey B. Tinker, in Cook & Tinker, Select Translations from Old English Poetry (1902)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        2
+       ],
+       "tr": [
+        1,
+        2
+       ]
+      },
+      {
+       "oe": [
+        3,
+        4
+       ],
+       "tr": null,
+       "note": "maker's inscription (Æthelmær and Æthelwold) not translated"
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/189",
+   "oe_title": "The Judgment Day II (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/235",
+     "title": "The Judgment Day II",
+     "translator": "trans. J. Rawson Lumby, Be Domes Dæge (Early English Text Society, 1876)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        120
+       ],
+       "tr": [
+        1,
+        120
+       ]
+      },
+      {
+       "oe": [
+        121,
+        122
+       ],
+       "tr": [
+        121,
+        121
+       ]
+      },
+      {
+       "oe": [
+        123,
+        274
+       ],
+       "tr": [
+        122,
+        273
+       ]
+      },
+      {
+       "oe": [
+        275,
+        276
+       ],
+       "tr": [
+        274,
+        274
+       ]
+      },
+      {
+       "oe": [
+        277,
+        306
+       ],
+       "tr": [
+        275,
+        304
+       ]
+      }
+     ],
+     "note": "Lumby's EETS facing translation, line for line."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/190",
+   "oe_title": "An Exhortation to Christian Living (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/236",
+     "title": "An Exhortation to Christian Living",
+     "translator": "trans. J. Rawson Lumby, Be Domes Dæge (Early English Text Society, 1876)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        8
+       ],
+       "tr": [
+        1,
+        8
+       ]
+      },
+      {
+       "oe": [
+        9,
+        12
+       ],
+       "tr": [
+        9,
+        11
+       ],
+       "note": "enjambed, approximate"
+      },
+      {
+       "oe": [
+        13,
+        65
+       ],
+       "tr": [
+        12,
+        64
+       ]
+      },
+      {
+       "oe": [
+        66,
+        67
+       ],
+       "tr": [
+        65,
+        65
+       ]
+      },
+      {
+       "oe": [
+        68,
+        82
+       ],
+       "tr": [
+        66,
+        80
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/191",
+   "oe_title": "A Summons to Prayer (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/237",
+     "title": "A Summons to Prayer",
+     "translator": "trans. J. Rawson Lumby, Be Domes Dæge (Early English Text Society, 1876)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        12
+       ],
+       "tr": [
+        1,
+        12
+       ]
+      },
+      {
+       "oe": [
+        13,
+        13
+       ],
+       "tr": [
+        13,
+        14
+       ]
+      },
+      {
+       "oe": [
+        14,
+        31
+       ],
+       "tr": [
+        15,
+        32
+       ]
+      }
+     ],
+     "note": "Macaronic poem; Latin half-lines translated too."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/192",
+   "oe_title": "The Lord's Prayer II (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/238",
+     "title": "The Lord's Prayer II",
+     "translator": "trans. J. Rawson Lumby, Be Domes Dæge (Early English Text Society, 1876)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        1
+       ],
+       "tr": [
+        1,
+        2
+       ],
+       "note": "Lumby sets the Latin petition 'Pater noster.' on its own line"
+      },
+      {
+       "oe": [
+        2,
+        8
+       ],
+       "tr": [
+        3,
+        9
+       ]
+      },
+      {
+       "oe": [
+        9,
+        9
+       ],
+       "tr": [
+        10,
+        11
+       ],
+       "note": "Latin petition line"
+      },
+      {
+       "oe": [
+        10,
+        17
+       ],
+       "tr": [
+        12,
+        19
+       ]
+      },
+      {
+       "oe": [
+        18,
+        18
+       ],
+       "tr": [
+        20,
+        21
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        19,
+        26
+       ],
+       "tr": [
+        22,
+        29
+       ]
+      },
+      {
+       "oe": [
+        27,
+        27
+       ],
+       "tr": [
+        30,
+        31
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        28,
+        34
+       ],
+       "tr": [
+        32,
+        38
+       ]
+      },
+      {
+       "oe": [
+        35,
+        35
+       ],
+       "tr": [
+        39,
+        40
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        36,
+        50
+       ],
+       "tr": [
+        41,
+        55
+       ]
+      },
+      {
+       "oe": [
+        51,
+        51
+       ],
+       "tr": [
+        56,
+        57
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        52,
+        60
+       ],
+       "tr": [
+        58,
+        66
+       ]
+      },
+      {
+       "oe": [
+        61,
+        61
+       ],
+       "tr": [
+        67,
+        68
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        62,
+        67
+       ],
+       "tr": [
+        69,
+        74
+       ]
+      },
+      {
+       "oe": [
+        68,
+        68
+       ],
+       "tr": [
+        75,
+        76
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        69,
+        75
+       ],
+       "tr": [
+        77,
+        83
+       ]
+      },
+      {
+       "oe": [
+        76,
+        76
+       ],
+       "tr": [
+        84,
+        85
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        77,
+        78
+       ],
+       "tr": [
+        86,
+        87
+       ]
+      },
+      {
+       "oe": [
+        79,
+        81
+       ],
+       "tr": [
+        88,
+        89
+       ],
+       "note": "three OE lines in two"
+      },
+      {
+       "oe": [
+        82,
+        83
+       ],
+       "tr": [
+        90,
+        91
+       ]
+      },
+      {
+       "oe": [
+        84,
+        101
+       ],
+       "tr": [
+        92,
+        109
+       ],
+       "note": "OE 84 is the Latin line by itself"
+      },
+      {
+       "oe": [
+        102,
+        102
+       ],
+       "tr": [
+        110,
+        111
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        103,
+        104
+       ],
+       "tr": [
+        112,
+        113
+       ]
+      },
+      {
+       "oe": [
+        105,
+        105
+       ],
+       "tr": [
+        114,
+        115
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        106,
+        113
+       ],
+       "tr": [
+        116,
+        123
+       ]
+      },
+      {
+       "oe": [
+        114,
+        122
+       ],
+       "tr": [
+        124,
+        132
+       ]
+      },
+      {
+       "oe": [
+        123,
+        123
+       ],
+       "tr": [
+        133,
+        134
+       ],
+       "note": "'Amen.' on its own line"
+      },
+      {
+       "oe": [
+        124,
+        125
+       ],
+       "tr": [
+        135,
+        136
+       ]
+      }
+     ],
+     "note": "Line for line except that every Latin petition gets its own line in Lumby (136 vs 125)."
+    }
+   ]
+  },
+  {
+   "oe_id": "anonymous-old-english/193",
+   "oe_title": "The Gloria I (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/239",
+     "title": "The Gloria I",
+     "translator": "trans. J. Rawson Lumby, Be Domes Dæge (Early English Text Society, 1876)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        1
+       ],
+       "tr": [
+        1,
+        2
+       ],
+       "note": "'Gloria.' on its own line"
+      },
+      {
+       "oe": [
+        2,
+        7
+       ],
+       "tr": [
+        3,
+        8
+       ]
+      },
+      {
+       "oe": [
+        8,
+        8
+       ],
+       "tr": [
+        9,
+        10
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        9,
+        13
+       ],
+       "tr": [
+        11,
+        15
+       ]
+      },
+      {
+       "oe": [
+        14,
+        14
+       ],
+       "tr": [
+        16,
+        17
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        15,
+        30
+       ],
+       "tr": [
+        18,
+        33
+       ]
+      },
+      {
+       "oe": [
+        31,
+        31
+       ],
+       "tr": [
+        34,
+        35
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        32,
+        40
+       ],
+       "tr": [
+        36,
+        44
+       ]
+      },
+      {
+       "oe": [
+        41,
+        41
+       ],
+       "tr": [
+        45,
+        46
+       ],
+       "note": "Latin"
+      },
+      {
+       "oe": [
+        42,
+        50
+       ],
+       "tr": [
+        47,
+        55
+       ]
+      },
+      {
+       "oe": [
+        51,
+        51
+       ],
+       "tr": [
+        56,
+        57
+       ],
+       "note": "'Amen.' on its own line"
+      },
+      {
+       "oe": [
+        52,
+        57
+       ],
+       "tr": [
+        58,
+        63
+       ]
+      }
+     ],
+     "note": "As with The Lord's Prayer II, Latin cues are split onto their own lines."
+    }
+   ]
+  },
+  {
+   "oe_id": "caedmon/2",
+   "oe_title": "Cædmon's Hymn: West Saxon Version (Old English)",
+   "translations": [
+    {
+     "id": "caedmon/0",
+     "title": "Cædmon's Hymn",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "The translation's note says it renders the West Saxon text."
+    }
+   ]
+  },
+  {
+   "oe_id": "caedmon/1",
+   "oe_title": "Cædmon's Hymn: Northumbrian Version (Old English)",
+   "translations": [
+    {
+     "id": "caedmon/0",
+     "title": "Cædmon's Hymn",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "Same hymn, Northumbrian version; translation made from the West Saxon text but fits line for line."
+    }
+   ]
+  },
+  {
+   "oe_id": "bede/1",
+   "oe_title": "Bede's Death Song: Northumbrian Version (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/9",
+     "title": "Bede's Death Song",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "Translation follows the Northumbrian reading ('After his day of death' = æfter deothdaege)."
+    }
+   ]
+  },
+  {
+   "oe_id": "bede/2",
+   "oe_title": "Bede's Death Song: The Hague Version (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/9",
+     "title": "Bede's Death Song",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "Hague version, same wording as the Northumbrian in substance."
+    }
+   ]
+  },
+  {
+   "oe_id": "bede/3",
+   "oe_title": "Bede's Death Song: West Saxon Version (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/9",
+     "title": "Bede's Death Song",
+     "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+     "mode": "lines",
+     "confidence": "high",
+     "exceptions": [
+      "1:1"
+     ],
+     "note": "West Saxon version: line 5 reads 'æfter deaþe heonon' (after death hence), slightly different from the translation's 'day of death'."
+    }
+   ]
+  }
+ ],
+ "works": [
+  {
+   "oe_work": "beowulf-oe",
+   "translation_work": "beowulf",
+   "translator": "trans. Francis Barton Gummere (1910)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Prelude of the Founder of the Danish House",
+     "oe_lines": [
+      1,
+      52
+     ],
+     "tr_line_count": 52
+    },
+    {
+     "section": 1,
+     "title": "Fitt I",
+     "oe_lines": [
+      53,
+      114
+     ],
+     "tr_line_count": 62
+    },
+    {
+     "section": 2,
+     "title": "Fitt II",
+     "oe_lines": [
+      115,
+      188
+     ],
+     "tr_line_count": 74
+    },
+    {
+     "section": 3,
+     "title": "Fitt III",
+     "oe_lines": [
+      189,
+      257
+     ],
+     "tr_line_count": 69
+    },
+    {
+     "section": 4,
+     "title": "Fitt IV",
+     "oe_lines": [
+      258,
+      319
+     ],
+     "tr_line_count": 62
+    },
+    {
+     "section": 5,
+     "title": "Fitt V",
+     "oe_lines": [
+      320,
+      370
+     ],
+     "tr_line_count": 51
+    },
+    {
+     "section": 6,
+     "title": "Fitt VI",
+     "oe_lines": [
+      371,
+      455
+     ],
+     "tr_line_count": 86,
+     "note": "86 translation lines for 85 OE lines"
+    },
+    {
+     "section": 7,
+     "title": "Fitt VII",
+     "oe_lines": [
+      456,
+      498
+     ],
+     "tr_line_count": 43
+    },
+    {
+     "section": 8,
+     "title": "Fitt VIII",
+     "oe_lines": [
+      499,
+      558
+     ],
+     "tr_line_count": 60
+    },
+    {
+     "section": 9,
+     "title": "Fitt IX",
+     "oe_lines": [
+      559,
+      661
+     ],
+     "tr_line_count": 103
+    },
+    {
+     "section": 10,
+     "title": "Fitt X",
+     "oe_lines": [
+      662,
+      709
+     ],
+     "tr_line_count": 48
+    },
+    {
+     "section": 11,
+     "title": "Fitt XI",
+     "oe_lines": [
+      710,
+      790
+     ],
+     "tr_line_count": 82,
+     "note": "82 translation lines for 81 OE lines"
+    },
+    {
+     "section": 12,
+     "title": "Fitt XII",
+     "oe_lines": [
+      791,
+      836
+     ],
+     "tr_line_count": 46
+    },
+    {
+     "section": 13,
+     "title": "Fitt XIII",
+     "oe_lines": [
+      837,
+      924
+     ],
+     "tr_line_count": 88
+    },
+    {
+     "section": 14,
+     "title": "Fitt XIV",
+     "oe_lines": [
+      925,
+      990
+     ],
+     "tr_line_count": 66
+    },
+    {
+     "section": 15,
+     "title": "Fitt XV",
+     "oe_lines": [
+      991,
+      1049
+     ],
+     "tr_line_count": 60,
+     "note": "60 translation lines for 59 OE lines"
+    },
+    {
+     "section": 16,
+     "title": "Fitt XVI",
+     "oe_lines": [
+      1050,
+      1124
+     ],
+     "tr_line_count": 75
+    },
+    {
+     "section": 17,
+     "title": "Fitt XVII",
+     "oe_lines": [
+      1125,
+      1191
+     ],
+     "tr_line_count": 68,
+     "note": "68 translation lines for 67 OE lines"
+    },
+    {
+     "section": 18,
+     "title": "Fitt XVIII",
+     "oe_lines": [
+      1192,
+      1250
+     ],
+     "tr_line_count": 60,
+     "note": "60 translation lines for 59 OE lines"
+    },
+    {
+     "section": 19,
+     "title": "Fitt XIX",
+     "oe_lines": [
+      1251,
+      1320
+     ],
+     "tr_line_count": 70
+    },
+    {
+     "section": 20,
+     "title": "Fitt XX",
+     "oe_lines": [
+      1321,
+      1382
+     ],
+     "tr_line_count": 62
+    },
+    {
+     "section": 21,
+     "title": "Fitt XXI",
+     "oe_lines": [
+      1383,
+      1472
+     ],
+     "tr_line_count": 91,
+     "note": "91 translation lines for 90 OE lines"
+    },
+    {
+     "section": 22,
+     "title": "Fitt XXII",
+     "oe_lines": [
+      1473,
+      1556
+     ],
+     "tr_line_count": 84
+    },
+    {
+     "section": 23,
+     "title": "Fitt XXIII",
+     "oe_lines": [
+      1557,
+      1650
+     ],
+     "tr_line_count": 94
+    },
+    {
+     "section": 24,
+     "title": "Fitt XXIV",
+     "oe_lines": [
+      1651,
+      1744
+     ],
+     "tr_line_count": 97,
+     "note": "97 translation lines for 94 OE lines"
+    },
+    {
+     "section": 25,
+     "title": "Fitt XXV",
+     "oe_lines": [
+      1745,
+      1816
+     ],
+     "tr_line_count": 73,
+     "note": "73 translation lines for 72 OE lines; Gummere's fitt XXV begins at 1745 ('Þonne bið on hreþre'), five lines later than the MS fitt division at 1740."
+    },
+    {
+     "section": 26,
+     "title": "Fitt XXVI",
+     "oe_lines": [
+      1817,
+      1887
+     ],
+     "tr_line_count": 71
+    },
+    {
+     "section": 27,
+     "title": "Fitt XXVII",
+     "oe_lines": [
+      1888,
+      1962
+     ],
+     "tr_line_count": 75
+    },
+    {
+     "section": 28,
+     "title": "Fitt XXVIII",
+     "oe_lines": [
+      1963,
+      2143
+     ],
+     "tr_line_count": 181,
+     "note": "Gummere runs MS fitts XXVIII and [XXIX] (1963-2038, 2039-2143) together."
+    },
+    {
+     "section": 29,
+     "title": "Fitt XXIX",
+     "oe_lines": [
+      2144,
+      2220
+     ],
+     "tr_line_count": 77
+    },
+    {
+     "section": 30,
+     "title": "Fitt XXX",
+     "oe_lines": [
+      2221,
+      2311
+     ],
+     "tr_line_count": 91
+    },
+    {
+     "section": 31,
+     "title": "Fitt XXXI",
+     "oe_lines": [
+      2312,
+      2390
+     ],
+     "tr_line_count": 79
+    },
+    {
+     "section": 32,
+     "title": "Fitt XXXII",
+     "oe_lines": [
+      2391,
+      2459
+     ],
+     "tr_line_count": 69
+    },
+    {
+     "section": 33,
+     "title": "Fitt XXXIII",
+     "oe_lines": [
+      2460,
+      2601
+     ],
+     "tr_line_count": 142,
+     "note": "Gummere runs two MS fitts together (2460-2537, 2538-2601)."
+    },
+    {
+     "section": 34,
+     "title": "Fitt XXXIV",
+     "oe_lines": [
+      2602,
+      2693
+     ],
+     "tr_line_count": 92
+    },
+    {
+     "section": 35,
+     "title": "Fitt XXXV",
+     "oe_lines": [
+      2694,
+      2751
+     ],
+     "tr_line_count": 58
+    },
+    {
+     "section": 36,
+     "title": "Fitt XXXVI",
+     "oe_lines": [
+      2752,
+      2820
+     ],
+     "tr_line_count": 69
+    },
+    {
+     "section": 37,
+     "title": "Fitt XXXVII",
+     "oe_lines": [
+      2821,
+      2891
+     ],
+     "tr_line_count": 72,
+     "note": "72 translation lines for 71 OE lines"
+    },
+    {
+     "section": 38,
+     "title": "Fitt XXXVIII",
+     "oe_lines": [
+      2892,
+      2945
+     ],
+     "tr_line_count": 54
+    },
+    {
+     "section": 39,
+     "title": "Fitt XXXIX",
+     "oe_lines": [
+      2946,
+      3057
+     ],
+     "tr_line_count": 112
+    },
+    {
+     "section": 40,
+     "title": "Fitt XL",
+     "oe_lines": [
+      3058,
+      3136
+     ],
+     "tr_line_count": 79
+    },
+    {
+     "section": 41,
+     "title": "Fitt XLI",
+     "oe_lines": [
+      3137,
+      3182
+     ],
+     "tr_line_count": 46
+    }
+   ],
+   "line_for_line": true,
+   "note": "Gummere keeps the OE line count fitt by fitt (3193 lines vs 3182; +1 in fitts VI, XI, XV, XVII, XVIII, XXI, XXV, XXXVII, +3 in XXIV). Inside long speeches lines drift by 1-3 and half-lines are sometimes swapped, so line-level facing is approximate but close; top-align each fitt against its OE range. Every fitt boundary was checked against the OE first and last lines. DATA GLITCH in beowulf-oe section 1 ('Lines 126-259'): ASPR 140 and 141 are merged into one garbled line ('ða him gebeacnod wice sweotolan tacne', should be 'ða him gebeacnod wæs, / gesægd soðlice sweotolan tacne'), so that section has 133 lines and counting lines from 126 gives numbers one too low from 141 to 259."
+  },
+  {
+   "oe_work": "elene-oe",
+   "translation_work": "elene",
+   "translator": "trans. James M. Garnett (1900; 3rd ed. 1911)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Canto 1",
+     "oe_lines": [
+      1,
+      98
+     ],
+     "tr_line_count": 98
+    },
+    {
+     "section": 1,
+     "title": "Canto 2",
+     "oe_lines": [
+      99,
+      193
+     ],
+     "tr_line_count": 95
+    },
+    {
+     "section": 2,
+     "title": "Canto 3",
+     "oe_lines": [
+      194,
+      275
+     ],
+     "tr_line_count": 82
+    },
+    {
+     "section": 3,
+     "title": "Canto 4",
+     "oe_lines": [
+      276,
+      363
+     ],
+     "tr_line_count": 88
+    },
+    {
+     "section": 4,
+     "title": "Canto 5",
+     "oe_lines": [
+      364,
+      453
+     ],
+     "tr_line_count": 90
+    },
+    {
+     "section": 5,
+     "title": "Canto 6",
+     "oe_lines": [
+      454,
+      546
+     ],
+     "tr_line_count": 93
+    },
+    {
+     "section": 6,
+     "title": "Canto 7",
+     "oe_lines": [
+      547,
+      618
+     ],
+     "tr_line_count": 72
+    },
+    {
+     "section": 7,
+     "title": "Canto 8",
+     "oe_lines": [
+      619,
+      708
+     ],
+     "tr_line_count": 90
+    },
+    {
+     "section": 8,
+     "title": "Canto 9",
+     "oe_lines": [
+      709,
+      801
+     ],
+     "tr_line_count": 93
+    },
+    {
+     "section": 9,
+     "title": "Canto 10",
+     "oe_lines": [
+      802,
+      893
+     ],
+     "tr_line_count": 92
+    },
+    {
+     "section": 10,
+     "title": "Canto 11",
+     "oe_lines": [
+      894,
+      966
+     ],
+     "tr_line_count": 73
+    },
+    {
+     "section": 11,
+     "title": "Canto 12",
+     "oe_lines": [
+      967,
+      1042
+     ],
+     "tr_line_count": 76
+    },
+    {
+     "section": 12,
+     "title": "Canto 13",
+     "oe_lines": [
+      1043,
+      1146
+     ],
+     "tr_line_count": 104
+    },
+    {
+     "section": 13,
+     "title": "Canto 14",
+     "oe_lines": [
+      1147,
+      1235
+     ],
+     "tr_line_count": 89
+    },
+    {
+     "section": 14,
+     "title": "Canto 15",
+     "oe_lines": [
+      1236,
+      1321
+     ],
+     "tr_line_count": 85,
+     "note": "85 translation lines for 86 OE lines (Garnett tr 41 covers OE 1276-1277, so tr = OE-1 after that)"
+    }
+   ],
+   "line_for_line": true,
+   "note": "Garnett's cantos are the 15 MS fitts and his verse is strictly line-for-line (1320 lines vs 1321): tr line k of the whole poem = OE line k up to 1276. Fitt boundaries checked against the OE. OE section 10 of elene-oe starts at 1277, inside Garnett's canto 15."
+  },
+  {
+   "oe_work": "meters-of-boethius-oe",
+   "translation_work": "meters-of-boethius",
+   "translator": "trans. Walter John Sedgefield, King Alfred's Version of the Consolations of Boethius (Oxford: Clarendon Press, 1900)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Proem",
+     "oe_section": 0,
+     "oe_lines": [
+      1,
+      10
+     ],
+     "tr_line_count": 10
+    },
+    {
+     "section": 1,
+     "title": "Meter 1",
+     "oe_section": 1,
+     "oe_lines": [
+      1,
+      84
+     ],
+     "tr_line_count": 84
+    },
+    {
+     "section": 2,
+     "title": "Meter 2",
+     "oe_section": 2,
+     "oe_lines": [
+      1,
+      19
+     ],
+     "tr_line_count": 19
+    },
+    {
+     "section": 3,
+     "title": "Meter 3",
+     "oe_section": 3,
+     "oe_lines": [
+      1,
+      11
+     ],
+     "tr_line_count": 11
+    },
+    {
+     "section": 4,
+     "title": "Meter 4",
+     "oe_section": 4,
+     "oe_lines": [
+      1,
+      57
+     ],
+     "tr_line_count": 57
+    },
+    {
+     "section": 5,
+     "title": "Meter 5",
+     "oe_section": 5,
+     "oe_lines": [
+      1,
+      45
+     ],
+     "tr_line_count": 45
+    },
+    {
+     "section": 6,
+     "title": "Meter 6",
+     "oe_section": 6,
+     "oe_lines": [
+      1,
+      17
+     ],
+     "tr_line_count": 17
+    },
+    {
+     "section": 7,
+     "title": "Meter 7",
+     "oe_section": 7,
+     "oe_lines": [
+      1,
+      54
+     ],
+     "tr_line_count": 54
+    },
+    {
+     "section": 8,
+     "title": "Meter 8",
+     "oe_section": 8,
+     "oe_lines": [
+      1,
+      59
+     ],
+     "tr_line_count": 59
+    },
+    {
+     "section": 9,
+     "title": "Meter 9",
+     "oe_section": 9,
+     "oe_lines": [
+      1,
+      63
+     ],
+     "tr_line_count": 62,
+     "note": "62 translation lines for 63 OE lines"
+    },
+    {
+     "section": 10,
+     "title": "Meter 10",
+     "oe_section": 10,
+     "oe_lines": [
+      1,
+      70
+     ],
+     "tr_line_count": 70
+    },
+    {
+     "section": 11,
+     "title": "Meter 11",
+     "oe_section": 11,
+     "oe_lines": [
+      1,
+      102
+     ],
+     "tr_line_count": 102
+    },
+    {
+     "section": 12,
+     "title": "Meter 12",
+     "oe_section": 12,
+     "oe_lines": [
+      1,
+      32
+     ],
+     "tr_line_count": 32
+    },
+    {
+     "section": 13,
+     "title": "Meter 13",
+     "oe_section": 13,
+     "oe_lines": [
+      1,
+      80
+     ],
+     "tr_line_count": 80
+    },
+    {
+     "section": 14,
+     "title": "Meter 14",
+     "oe_section": 14,
+     "oe_lines": [
+      1,
+      11
+     ],
+     "tr_line_count": 11
+    },
+    {
+     "section": 15,
+     "title": "Meter 15",
+     "oe_section": 15,
+     "oe_lines": [
+      1,
+      15
+     ],
+     "tr_line_count": 15
+    },
+    {
+     "section": 16,
+     "title": "Meter 16",
+     "oe_section": 16,
+     "oe_lines": [
+      1,
+      24
+     ],
+     "tr_line_count": 24
+    },
+    {
+     "section": 17,
+     "title": "Meter 17",
+     "oe_section": 17,
+     "oe_lines": [
+      1,
+      30
+     ],
+     "tr_line_count": 29,
+     "note": "29 translation lines for 30 OE lines"
+    },
+    {
+     "section": 18,
+     "title": "Meter 18",
+     "oe_section": 18,
+     "oe_lines": [
+      1,
+      11
+     ],
+     "tr_line_count": 11
+    },
+    {
+     "section": 19,
+     "title": "Meter 19",
+     "oe_section": 19,
+     "oe_lines": [
+      1,
+      47
+     ],
+     "tr_line_count": 47
+    },
+    {
+     "section": 20,
+     "title": "Meter 20",
+     "oe_section": 20,
+     "oe_lines": [
+      1,
+      281
+     ],
+     "tr_line_count": 281
+    },
+    {
+     "section": 21,
+     "title": "Meter 21",
+     "oe_section": 21,
+     "oe_lines": [
+      1,
+      44
+     ],
+     "tr_line_count": 44
+    },
+    {
+     "section": 22,
+     "title": "Meter 22",
+     "oe_section": 22,
+     "oe_lines": [
+      1,
+      65
+     ],
+     "tr_line_count": 65
+    },
+    {
+     "section": 23,
+     "title": "Meter 23",
+     "oe_section": 23,
+     "oe_lines": [
+      1,
+      11
+     ],
+     "tr_line_count": 11
+    },
+    {
+     "section": 24,
+     "title": "Meter 24",
+     "oe_section": 24,
+     "oe_lines": [
+      1,
+      64
+     ],
+     "tr_line_count": 64
+    },
+    {
+     "section": 25,
+     "title": "Meter 25",
+     "oe_section": 25,
+     "oe_lines": [
+      1,
+      72
+     ],
+     "tr_line_count": 72
+    },
+    {
+     "section": 26,
+     "title": "Meter 26",
+     "oe_section": 26,
+     "oe_lines": [
+      1,
+      119
+     ],
+     "tr_line_count": 118,
+     "note": "118 translation lines for 119 OE lines"
+    },
+    {
+     "section": 27,
+     "title": "Meter 27",
+     "oe_section": 27,
+     "oe_lines": [
+      1,
+      33
+     ],
+     "tr_line_count": 33
+    },
+    {
+     "section": 28,
+     "title": "Meter 28",
+     "oe_section": 28,
+     "oe_lines": [
+      1,
+      83
+     ],
+     "tr_line_count": 82,
+     "note": "82 translation lines for 83 OE lines"
+    },
+    {
+     "section": 29,
+     "title": "Meter 29",
+     "oe_section": 29,
+     "oe_lines": [
+      1,
+      96
+     ],
+     "tr_line_count": 97,
+     "note": "97 translation lines for 96 OE lines"
+    },
+    {
+     "section": 30,
+     "title": "Meter 30",
+     "oe_section": 30,
+     "oe_lines": [
+      1,
+      18
+     ],
+     "tr_line_count": 18
+    },
+    {
+     "section": 31,
+     "title": "Meter 31",
+     "oe_section": 31,
+     "oe_lines": [
+      1,
+      23
+     ],
+     "tr_line_count": 23
+    }
+   ],
+   "line_for_line": true,
+   "note": "Section i of the translation = section i of the OE (Proem, Meters 1-31). ASPR numbers each meter from line 1, so oe_lines are per-meter. Sedgefield's alliterative verse is line-for-line (equal counts in 27 of 32 sections, off by one in the other five); inside the longest meters (e.g. 26, 28) it drifts by about one line."
+  },
+  {
+   "oe_work": "phoenix-oe",
+   "translation_work": "phoenix",
+   "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "The Phoenix",
+     "oe_lines": [
+      1,
+      677
+     ],
+     "tr_line_count": 676,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        1,
+        124
+       ],
+       "tr_lines": [
+        1,
+        124
+       ]
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        125,
+        264
+       ],
+       "tr_lines": [
+        125,
+        264
+       ]
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        265,
+        386
+       ],
+       "tr_lines": [
+        265,
+        386
+       ]
+      },
+      {
+       "oe_section": 3,
+       "oe_lines": [
+        387,
+        517
+       ],
+       "tr_lines": [
+        387,
+        517
+       ]
+      },
+      {
+       "oe_section": 4,
+       "oe_lines": [
+        518,
+        649
+       ],
+       "tr_lines": [
+        518,
+        649
+       ]
+      },
+      {
+       "oe_section": 5,
+       "oe_lines": [
+        650,
+        677
+       ],
+       "tr_lines": [
+        650,
+        676
+       ]
+      }
+     ],
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        660
+       ],
+       "tr": [
+        1,
+        660
+       ]
+      },
+      {
+       "oe": [
+        661,
+        662
+       ],
+       "tr": [
+        661,
+        661
+       ]
+      },
+      {
+       "oe": [
+        663,
+        677
+       ],
+       "tr": [
+        662,
+        676
+       ]
+      }
+     ]
+    }
+   ],
+   "line_for_line": true,
+   "note": "Faust & Thompson render the Phoenix line for line (676 vs 677), including the macaronic close; translation line numbers = OE line numbers up to 660, then one less. tr_lines are indices of non-empty lines in the single translation section."
+  },
+  {
+   "oe_work": "judith-oe",
+   "translation_work": "judith",
+   "translator": "trans. Cosette Faust Newton & Stith Thompson (1918)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Judith",
+     "oe_lines": [
+      1,
+      349
+     ],
+     "tr_line_count": 340,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        1,
+        121
+       ],
+       "tr_lines": [
+        1,
+        118
+       ]
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        122,
+        274
+       ],
+       "tr_lines": [
+        119,
+        268
+       ],
+       "tr_start": "Great was the glory then gained in the fight"
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        275,
+        349
+       ],
+       "tr_lines": [
+        269,
+        340
+       ],
+       "tr_start": "A loyal liegeman, --long had he wavered--"
+      }
+     ]
+    }
+   ],
+   "line_for_line": false,
+   "note": "Alliterative verse, nearly line-for-line (340 vs 349) but compressing as it goes: drift reaches +3 by line 120 and +9 by the end. Use the three chunks (one per OE section) and top-align inside each."
+  },
+  {
+   "oe_work": "andreas-oe",
+   "translation_work": "andreas",
+   "translator": "trans. Charles W. Kennedy (1910)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Andreas",
+     "oe_lines": [
+      1,
+      1722
+     ],
+     "tr_para_count": 195,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        1,
+        121
+       ],
+       "tr_paras": [
+        1,
+        10
+       ],
+       "tr_start": {
+        "para": 1,
+        "starts_with": "Lo ! we have heard of twelve glorious men in olden days unde",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        122,
+        247
+       ],
+       "tr_paras": [
+        10,
+        24
+       ],
+       "tr_start": {
+        "para": 10,
+        "starts_with": "Then was Matthew heartened anew exceedingly and the veil of",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        248,
+        381
+       ],
+       "tr_paras": [
+        24,
+        48
+       ],
+       "tr_start": {
+        "para": 24,
+        "starts_with": "That was God Himself, the Lord of hosts, Eternal, Almighty,",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 3,
+       "oe_lines": [
+        382,
+        509
+       ],
+       "tr_paras": [
+        48,
+        65
+       ],
+       "tr_start": {
+        "para": 48,
+        "starts_with": "But even yet upon the ocean path, on the oar-stirred sea, th",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 4,
+       "oe_lines": [
+        510,
+        631
+       ],
+       "tr_paras": [
+        66,
+        81
+       ],
+       "tr_start": {
+        "para": 66,
+        "starts_with": "The Eternal Lord gave answer unto him : “ Oft it doth befall",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 5,
+       "oe_lines": [
+        632,
+        752
+       ],
+       "tr_paras": [
+        82,
+        95
+       ],
+       "tr_start": {
+        "para": 82,
+        "starts_with": "And yet again the Warden of the wave addressed him : “ Neith",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 6,
+       "oe_lines": [
+        753,
+        874
+       ],
+       "tr_paras": [
+        95,
+        103
+       ],
+       "tr_start": {
+        "para": 95,
+        "starts_with": "to Abraham, to Isaac, and to J acob He granted grace, decked",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 7,
+       "oe_lines": [
+        875,
+        1003
+       ],
+       "tr_paras": [
+        103,
+        118
+       ],
+       "tr_start": {
+        "para": 103,
+        "starts_with": "We recognized the holy patriarchs, no little band of martyrs",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 8,
+       "oe_lines": [
+        1004,
+        1128
+       ],
+       "tr_paras": [
+        118,
+        131
+       ],
+       "tr_start": {
+        "para": 118,
+        "starts_with": "He beheld Matthew in that house of death, that valiant man w",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 9,
+       "oe_lines": [
+        1129,
+        1252
+       ],
+       "tr_paras": [
+        131,
+        146
+       ],
+       "tr_start": {
+        "para": 131,
+        "starts_with": "Nor might he in his wretchedness find mercy or favour at the",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 10,
+       "oe_lines": [
+        1253,
+        1374
+       ],
+       "tr_paras": [
+        146,
+        159
+       ],
+       "tr_start": {
+        "para": 146,
+        "starts_with": "Then in the shades of darkness the holy man, the valiant ear",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 11,
+       "oe_lines": [
+        1375,
+        1497
+       ],
+       "tr_paras": [
+        160,
+        172
+       ],
+       "tr_start": {
+        "para": 160,
+        "starts_with": "And unto him Andrew gave answer :",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 12,
+       "oe_lines": [
+        1498,
+        1619
+       ],
+       "tr_paras": [
+        172,
+        186
+       ],
+       "tr_start": {
+        "para": 172,
+        "starts_with": "Hearken thou marble stone unto the rede of God, before whose",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 13,
+       "oe_lines": [
+        1620,
+        1722
+       ],
+       "tr_paras": [
+        186,
+        195
+       ],
+       "tr_start": {
+        "para": 186,
+        "starts_with": "So at the moving of the Holy Spirit, that prayer was made ac",
+        "mid_paragraph": true
+       }
+      }
+     ],
+     "ocr_junk_paras": {
+      "page_numbers": [
+       15,
+       21,
+       183
+      ],
+      "line_markers": [
+       54,
+       84,
+       100,
+       153,
+       173
+      ],
+      "footnotes": [
+       187
+      ],
+      "fragments": [
+       14,
+       112
+      ]
+     },
+     "kennedy_captions": [
+      4,
+      12,
+      25,
+      47,
+      75,
+      98,
+      101,
+      115,
+      117,
+      122,
+      129,
+      137,
+      145,
+      178,
+      180,
+      188,
+      189
+     ]
+    }
+   ],
+   "line_for_line": false,
+   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few). Kennedy's section captions ('THE SHIPMEN', 'THE STORM', fitt numerals) appear as separate lines."
+  },
+  {
+   "oe_work": "christ-1-advent-oe",
+   "translation_work": "christ-1-advent",
+   "translator": "trans. Charles W. Kennedy (1910)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Christ I: The Advent Lyrics",
+     "oe_lines": [
+      1,
+      439
+     ],
+     "tr_para_count": 40,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        1,
+        129
+       ],
+       "tr_paras": [
+        1,
+        14
+       ],
+       "tr_start": {
+        "para": 1,
+        "starts_with": "Thou art the wall-stone that of old the builders rejected. W",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        130,
+        255
+       ],
+       "tr_paras": [
+        15,
+        26
+       ],
+       "tr_start": {
+        "para": 15,
+        "starts_with": "O God of spirits ! how wisely and with right wast Thou named",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        256,
+        377
+       ],
+       "tr_paras": [
+        26,
+        36
+       ],
+       "tr_start": {
+        "para": 26,
+        "starts_with": "The cursed Wolf, that dark death-shadow, hath scattered far",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 3,
+       "oe_lines": [
+        378,
+        439
+       ],
+       "tr_paras": [
+        37,
+        40
+       ],
+       "tr_start": {
+        "para": 37,
+        "starts_with": "O Glorious, Heavenly Trinity, high and holy, full of honour,",
+        "mid_paragraph": false
+       }
+      }
+     ],
+     "ocr_junk_paras": {
+      "running_heads": [
+       4,
+       11,
+       16,
+       25,
+       29,
+       35
+      ],
+      "line_markers": [
+       3
+      ]
+     }
+    }
+   ],
+   "line_for_line": false,
+   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+  },
+  {
+   "oe_work": "christ-2-ascension-oe",
+   "translation_work": "christ-2-ascension",
+   "translator": "trans. Charles W. Kennedy (1910)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Christ II: The Ascension",
+     "oe_lines": [
+      440,
+      866
+     ],
+     "tr_para_count": 41,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        440,
+        560
+       ],
+       "tr_paras": [
+        1,
+        15
+       ],
+       "tr_start": {
+        "para": 1,
+        "starts_with": "Now eagerly in inward thought and wisely seek, thou man of g",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        561,
+        682
+       ],
+       "tr_paras": [
+        15,
+        26
+       ],
+       "tr_start": {
+        "para": 15,
+        "starts_with": "Now are these devil-champions all undone, cast into everlast",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        683,
+        814
+       ],
+       "tr_paras": [
+        26,
+        37
+       ],
+       "tr_start": {
+        "para": 26,
+        "starts_with": "But to no single man doth He give all wisdom of heart, lest",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 3,
+       "oe_lines": [
+        815,
+        866
+       ],
+       "tr_paras": [
+        37,
+        41
+       ],
+       "tr_start": {
+        "para": 37,
+        "starts_with": "Therefore will I teach each well-loved man that he give heed",
+        "mid_paragraph": true
+       }
+      }
+     ],
+     "ocr_junk_paras": {
+      "running_heads": [
+       9,
+       16,
+       23,
+       28,
+       34,
+       39
+      ],
+      "page_numbers": [
+       8
+      ]
+     },
+     "kennedy_captions": [
+      25
+     ]
+    }
+   ],
+   "line_for_line": false,
+   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+  },
+  {
+   "oe_work": "christ-3-doomsday-oe",
+   "translation_work": "christ-3-doomsday",
+   "translator": "trans. Charles W. Kennedy (1910)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Christ III: Judgment Day",
+     "oe_lines": [
+      867,
+      1664
+     ],
+     "tr_para_count": 93,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        867,
+        993
+       ],
+       "tr_paras": [
+        1,
+        18
+       ],
+       "tr_start": {
+        "para": 1,
+        "starts_with": "Then in the midnight the great day of the Lord of might shal",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        994,
+        1114
+       ],
+       "tr_paras": [
+        18,
+        30
+       ],
+       "tr_start": {
+        "para": 18,
+        "starts_with": "The dusky flame shall blaze on those undone by sin, and fire",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        1115,
+        1236
+       ],
+       "tr_paras": [
+        30,
+        43
+       ],
+       "tr_start": {
+        "para": 30,
+        "starts_with": "All this then may they see, open and clear, that for the lov",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 3,
+       "oe_lines": [
+        1237,
+        1364
+       ],
+       "tr_paras": [
+        43,
+        59
+       ],
+       "tr_start": {
+        "para": 43,
+        "starts_with": "The first clear token is that they gleam with light before t",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 4,
+       "oe_lines": [
+        1365,
+        1486
+       ],
+       "tr_paras": [
+        59,
+        72
+       ],
+       "tr_start": {
+        "para": 59,
+        "starts_with": "They may not look for mercy from the Lord, nor life nor pity",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 5,
+       "oe_lines": [
+        1487,
+        1608
+       ],
+       "tr_paras": [
+        72,
+        83
+       ],
+       "tr_start": {
+        "para": 72,
+        "starts_with": "Why didst thou hang Me on a cross of thy hand’s making in gr",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 6,
+       "oe_lines": [
+        1609,
+        1664
+       ],
+       "tr_paras": [
+        83,
+        93
+       ],
+       "tr_start": {
+        "para": 83,
+        "starts_with": "There shall thieves and spoilers and liars and adulterers ha",
+        "mid_paragraph": true
+       }
+      }
+     ],
+     "ocr_junk_paras": {
+      "running_heads": [
+       5,
+       13,
+       20,
+       27,
+       34,
+       41,
+       49,
+       57,
+       63,
+       70,
+       79,
+       84,
+       92
+      ],
+      "page_numbers": [
+       4,
+       28,
+       33
+      ],
+      "line_markers": [
+       67
+      ]
+     },
+     "kennedy_captions": [
+      17,
+      45,
+      52,
+      68,
+      73,
+      89
+     ]
+    }
+   ],
+   "line_for_line": false,
+   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+  },
+  {
+   "oe_work": "christ-and-satan-oe",
+   "translation_work": "christ-and-satan",
+   "translator": "trans. Charles W. Kennedy (1916)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Christ and Satan",
+     "oe_lines": [
+      1,
+      729
+     ],
+     "tr_para_count": 110,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        1,
+        124
+       ],
+       "tr_paras": [
+        2,
+        18
+       ],
+       "tr_start": {
+        "para": 2,
+        "starts_with": "IT is revealed to those who dwell on earth that God had stre",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        125,
+        247
+       ],
+       "tr_paras": [
+        18,
+        40
+       ],
+       "tr_start": {
+        "para": 18,
+        "starts_with": "So the accursed spirit, doomed to woe, lamented his afflicti",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        248,
+        369
+       ],
+       "tr_paras": [
+        41,
+        56
+       ],
+       "tr_start": {
+        "para": 41,
+        "starts_with": "I can show you enduring counsel, if ye will trust my strengt",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 3,
+       "oe_lines": [
+        370,
+        492
+       ],
+       "tr_paras": [
+        56,
+        75
+       ],
+       "tr_start": {
+        "para": 56,
+        "starts_with": "Darkly Satan planned to build a lofty throne in heaven, with",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 4,
+       "oe_lines": [
+        493,
+        615
+       ],
+       "tr_paras": [
+        75,
+        91
+       ],
+       "tr_start": {
+        "para": 75,
+        "starts_with": "And from His home on high He came to earth, being born of a",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 5,
+       "oe_lines": [
+        616,
+        729
+       ],
+       "tr_paras": [
+        92,
+        110
+       ],
+       "tr_start": {
+        "para": 92,
+        "starts_with": "Ye are welcome ! Enter now the heavenly kingdom, into the li",
+        "mid_paragraph": false
+       }
+      }
+     ],
+     "ocr_junk_paras": {
+      "running_heads": [
+       4,
+       13,
+       23,
+       35,
+       45,
+       52,
+       60,
+       69,
+       78,
+       87,
+       96,
+       107
+      ],
+      "line_markers": [
+       22
+      ],
+      "footnotes": [
+       44,
+       59,
+       68,
+       86,
+       101
+      ]
+     },
+     "kennedy_captions": [
+      1,
+      8,
+      55,
+      102
+     ]
+    }
+   ],
+   "line_for_line": false,
+   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few). Para 1 is the title line (\"CHRIST AND SATAN THE LAMENT OF THE FALLEN ANGELS\"); the poem begins at para 2."
+  },
+  {
+   "oe_work": "daniel-oe",
+   "translation_work": "daniel",
+   "translator": "trans. Charles W. Kennedy (1916)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Daniel",
+     "oe_lines": [
+      1,
+      764
+     ],
+     "tr_para_count": 90,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        1,
+        123
+       ],
+       "tr_paras": [
+        1,
+        13
+       ],
+       "tr_start": {
+        "para": 1,
+        "starts_with": "IN Jerusalem, as I have heard, the Hebrews prospered, dispen",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        124,
+        249
+       ],
+       "tr_paras": [
+        13,
+        32
+       ],
+       "tr_start": {
+        "para": 13,
+        "starts_with": "He was shaken with terror and knew no beginning nor word of",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        250,
+        371
+       ],
+       "tr_paras": [
+        33,
+        46
+       ],
+       "tr_start": {
+        "para": 33,
+        "starts_with": "The flame passed by the holy men and fell upon their heathen",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 3,
+       "oe_lines": [
+        372,
+        494
+       ],
+       "tr_paras": [
+        46,
+        58
+       ],
+       "tr_start": {
+        "para": 46,
+        "starts_with": "O let the souls",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 4,
+       "oe_lines": [
+        495,
+        619
+       ],
+       "tr_paras": [
+        59,
+        74
+       ],
+       "tr_start": {
+        "para": 59,
+        "starts_with": "Now a dream came unto Nebuchadnezzar in his sleep and troubl",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 5,
+       "oe_lines": [
+        620,
+        740
+       ],
+       "tr_paras": [
+        74,
+        88
+       ],
+       "tr_start": {
+        "para": 74,
+        "starts_with": "Seven winters together the king of that fair city suffered t",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 6,
+       "oe_lines": [
+        741,
+        764
+       ],
+       "tr_paras": [
+        88,
+        90
+       ],
+       "tr_start": {
+        "para": 88,
+        "starts_with": "But the prophet of God, skilled in the law and wise of heart",
+        "mid_paragraph": true
+       }
+      }
+     ],
+     "ocr_junk_paras": {
+      "running_heads": [
+       3,
+       10,
+       20,
+       28,
+       35,
+       43,
+       48,
+       55,
+       61,
+       67,
+       77,
+       85
+      ],
+      "line_markers": [
+       14
+      ],
+      "footnotes": [
+       24,
+       27,
+       40,
+       73
+      ]
+     }
+    }
+   ],
+   "line_for_line": false,
+   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+  },
+  {
+   "oe_work": "exodus-oe",
+   "translation_work": "exodus",
+   "translator": "trans. Charles W. Kennedy (1916)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Exodus",
+     "oe_lines": [
+      1,
+      590
+     ],
+     "tr_para_count": 74,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        1,
+        124
+       ],
+       "tr_paras": [
+        1,
+        15
+       ],
+       "tr_start": {
+        "para": 1,
+        "starts_with": "Lo ! far and wide throughout the earth we have heard how the",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        125,
+        246
+       ],
+       "tr_paras": [
+        15,
+        29
+       ],
+       "tr_start": {
+        "para": 15,
+        "starts_with": "Armour gleamed, and bucklers glistened as the warriors took",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        247,
+        368
+       ],
+       "tr_paras": [
+        29,
+        45
+       ],
+       "tr_start": {
+        "para": 29,
+        "starts_with": "The army of these sturdy men was mustered, and ready to adva",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 3,
+       "oe_lines": [
+        369,
+        515
+       ],
+       "tr_paras": [
+        45,
+        62
+       ],
+       "tr_start": {
+        "para": 45,
+        "starts_with": "To save the life of all the tribes of earth the wise sea-pri",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 4,
+       "oe_lines": [
+        516,
+        590
+       ],
+       "tr_paras": [
+        63,
+        74
+       ],
+       "tr_start": {
+        "para": 63,
+        "starts_with": "Then on the shore of the sea Moses, the noble-hearted, preac",
+        "mid_paragraph": false
+       }
+      }
+     ],
+     "ocr_junk_paras": {
+      "running_heads": [
+       11,
+       18,
+       25,
+       33,
+       41,
+       47,
+       51,
+       58,
+       65,
+       73
+      ],
+      "line_markers": [
+       4,
+       57
+      ],
+      "footnotes": [
+       17,
+       32,
+       37,
+       46,
+       64
+      ]
+     }
+    }
+   ],
+   "line_for_line": false,
+   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+  },
+  {
+   "oe_work": "juliana-oe",
+   "translation_work": "juliana",
+   "translator": "trans. Charles W. Kennedy (1910)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Juliana",
+     "oe_lines": [
+      1,
+      731
+     ],
+     "tr_para_count": 93,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        1,
+        131
+       ],
+       "tr_paras": [
+        1,
+        17
+       ],
+       "tr_start": {
+        "para": 1,
+        "starts_with": "Lo ! we have heard warriors tell and valiant men rehearse wh",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        132,
+        252
+       ],
+       "tr_paras": [
+        17,
+        37
+       ],
+       "tr_start": {
+        "para": 17,
+        "starts_with": "Unto thee will I speak truth ; as I live, I will not work a",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        253,
+        381
+       ],
+       "tr_paras": [
+        37,
+        57
+       ],
+       "tr_start": {
+        "para": 37,
+        "starts_with": "Be thou in haste when he bids thee be led outward hence, tha",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 3,
+       "oe_lines": [
+        382,
+        538
+       ],
+       "tr_paras": [
+        57,
+        70
+       ],
+       "tr_start": {
+        "para": 57,
+        "starts_with": "But if I meet any courageous man, a valiant champion of the",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 4,
+       "oe_lines": [
+        539,
+        661
+       ],
+       "tr_paras": [
+        71,
+        87
+       ],
+       "tr_start": {
+        "para": 71,
+        "starts_with": "I entreat thee, my lady Juliana, by the",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 5,
+       "oe_lines": [
+        662,
+        731
+       ],
+       "tr_paras": [
+        87,
+        93
+       ],
+       "tr_start": {
+        "para": 87,
+        "starts_with": "unto me it seemeth wise that ye wakefully keep watch against",
+        "mid_paragraph": true
+       }
+      }
+     ],
+     "ocr_junk_paras": {
+      "page_numbers": [
+       86
+      ],
+      "fragments": [
+       47
+      ]
+     },
+     "kennedy_captions": [
+      27,
+      36,
+      74,
+      76
+     ]
+    }
+   ],
+   "line_for_line": false,
+   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+  },
+  {
+   "oe_work": "guthlac-oe",
+   "translation_work": "guthlac",
+   "translator": "trans. Charles W. Kennedy (1910)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Guthlac",
+     "oe_lines": [
+      1,
+      1379
+     ],
+     "tr_para_count": 113,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        1,
+        126
+       ],
+       "tr_paras": [
+        1,
+        6
+       ],
+       "tr_start": {
+        "para": 1,
+        "starts_with": "Many are the orders under heaven, upon the earth, which moun",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        127,
+        249
+       ],
+       "tr_paras": [
+        6,
+        14
+       ],
+       "tr_start": {
+        "para": 6,
+        "starts_with": "The other tempted him to seek",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        250,
+        370
+       ],
+       "tr_paras": [
+        14,
+        25
+       ],
+       "tr_start": {
+        "para": 14,
+        "starts_with": "For myself alone, full easily shall I rear a house and place",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 3,
+       "oe_lines": [
+        371,
+        493
+       ],
+       "tr_paras": [
+        25,
+        35
+       ],
+       "tr_start": {
+        "para": 25,
+        "starts_with": "Nor may my flesh alone of all the fleeting world shun death,",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 4,
+       "oe_lines": [
+        494,
+        617
+       ],
+       "tr_paras": [
+        35,
+        46
+       ],
+       "tr_start": {
+        "para": 35,
+        "starts_with": "Now will I speak the truth. God shaped youth and man’s joy,",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 5,
+       "oe_lines": [
+        618,
+        738
+       ],
+       "tr_paras": [
+        46,
+        54
+       ],
+       "tr_start": {
+        "para": 46,
+        "starts_with": "All my days will I do honour to that Judge in word and deed,",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 6,
+       "oe_lines": [
+        739,
+        818
+       ],
+       "tr_paras": [
+        54,
+        62
+       ],
+       "tr_start": {
+        "para": 54,
+        "starts_with": "So that kindly soul, severed from mankind’s delights, served",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 7,
+       "oe_lines": [
+        819,
+        975
+       ],
+       "tr_paras": [
+        63,
+        72
+       ],
+       "tr_start": {
+        "para": 63,
+        "starts_with": "It is widely known unto the tribes of men, famed among the p",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 8,
+       "oe_lines": [
+        976,
+        1104
+       ],
+       "tr_paras": [
+        73,
+        85
+       ],
+       "tr_start": {
+        "para": 73,
+        "starts_with": "In that bitter hour, the strength of Guthlac was wasted ; ye",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 9,
+       "oe_lines": [
+        1105,
+        1226
+       ],
+       "tr_paras": [
+        86,
+        98
+       ],
+       "tr_start": {
+        "para": 86,
+        "starts_with": "So the blessed man at that holy tide, on that bright day, ex",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 10,
+       "oe_lines": [
+        1227,
+        1347
+       ],
+       "tr_paras": [
+        99,
+        111
+       ],
+       "tr_start": {
+        "para": 99,
+        "starts_with": "Lo ! thou dost speak to me, my friend, questioning me who am",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 11,
+       "oe_lines": [
+        1348,
+        1379
+       ],
+       "tr_paras": [
+        112,
+        113
+       ],
+       "tr_start": {
+        "para": 112,
+        "starts_with": "Best is an enduring heart for him who often suffers great af",
+        "mid_paragraph": false
+       }
+      }
+     ],
+     "ocr_junk_paras": {}
+    }
+   ],
+   "line_for_line": false,
+   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few). Para 18 has lost its opening words in the OCR ('strong in answer and in courage...')."
+  },
+  {
+   "oe_work": "genesis-oe",
+   "translation_work": "genesis",
+   "translator": "trans. Charles W. Kennedy (1916)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "Genesis",
+     "oe_lines": [
+      1,
+      2936
+     ],
+     "tr_para_count": 405,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        1,
+        234
+       ],
+       "tr_paras": [
+        1,
+        42
+       ],
+       "tr_start": {
+        "para": 1,
+        "starts_with": "RIGHT is it that we praise the King of heaven, the Lord of h",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 1,
+       "oe_lines": [
+        235,
+        355
+       ],
+       "tr_paras": [
+        43,
+        75
+       ],
+       "tr_start": {
+        "para": 43,
+        "starts_with": "Eat freely of the fruit of every other tree. From that one t",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 2,
+       "oe_lines": [
+        356,
+        476
+       ],
+       "tr_paras": [
+        76,
+        92
+       ],
+       "tr_start": {
+        "para": 76,
+        "starts_with": "This narrow place is little like those other realms we knew,",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 3,
+       "oe_lines": [
+        477,
+        598
+       ],
+       "tr_paras": [
+        93,
+        106
+       ],
+       "tr_start": {
+        "para": 93,
+        "starts_with": "The other tree was dark, sunless, and full of shadows : that",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 4,
+       "oe_lines": [
+        599,
+        744
+       ],
+       "tr_paras": [
+        106,
+        124
+       ],
+       "tr_start": {
+        "para": 106,
+        "starts_with": "She ate the fruit and set at naught the will and word of God",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 5,
+       "oe_lines": [
+        745,
+        851
+       ],
+       "tr_paras": [
+        124,
+        139
+       ],
+       "tr_start": {
+        "para": 124,
+        "starts_with": "Then was God moved to wrath and hard of heart, and drove us",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 6,
+       "oe_lines": [
+        852,
+        986
+       ],
+       "tr_paras": [
+        140,
+        158
+       ],
+       "tr_start": {
+        "para": 140,
+        "starts_with": "Then came Almighty God, the Glorious Prince, walking in the",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 7,
+       "oe_lines": [
+        987,
+        1116
+       ],
+       "tr_paras": [
+        159,
+        174
+       ],
+       "tr_start": {
+        "para": 159,
+        "starts_with": "After that mortal blow came woe and tribulation. From that s",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 8,
+       "oe_lines": [
+        1117,
+        1239
+       ],
+       "tr_paras": [
+        175,
+        190
+       ],
+       "tr_start": {
+        "para": 175,
+        "starts_with": "Now, when Adam begat another son to be his heir, that sturdy",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 9,
+       "oe_lines": [
+        1240,
+        1362
+       ],
+       "tr_paras": [
+        190,
+        204
+       ],
+       "tr_start": {
+        "para": 190,
+        "starts_with": "The first-born son of Noah was Shem, and the second Ham, and",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 10,
+       "oe_lines": [
+        1363,
+        1484
+       ],
+       "tr_paras": [
+        204,
+        218
+       ],
+       "tr_start": {
+        "para": 204,
+        "starts_with": "And the Warden of that heavenly kingdom, the God of victorie",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 11,
+       "oe_lines": [
+        1485,
+        1614
+       ],
+       "tr_paras": [
+        219,
+        234
+       ],
+       "tr_start": {
+        "para": 219,
+        "starts_with": "For thee again on earth a fair abiding- place is founded, bl",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 12,
+       "oe_lines": [
+        1615,
+        1735
+       ],
+       "tr_paras": [
+        235,
+        248
+       ],
+       "tr_start": {
+        "para": 235,
+        "starts_with": "Likewise sons were born unto Ham. The names of the eldest we",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 13,
+       "oe_lines": [
+        1736,
+        1862
+       ],
+       "tr_paras": [
+        248,
+        261
+       ],
+       "tr_start": {
+        "para": 248,
+        "starts_with": "The noble sons of men chose them a dwelling in the land of H",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 14,
+       "oe_lines": [
+        1863,
+        2017
+       ],
+       "tr_paras": [
+        261,
+        280
+       ],
+       "tr_start": {
+        "para": 261,
+        "starts_with": "He knew why the Lord afflicted him with plagues ! Then the p",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 15,
+       "oe_lines": [
+        2018,
+        2138
+       ],
+       "tr_paras": [
+        281,
+        295
+       ],
+       "tr_start": {
+        "para": 281,
+        "starts_with": "For a certain man who survived the battle and the sword came",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 16,
+       "oe_lines": [
+        2139,
+        2260
+       ],
+       "tr_paras": [
+        296,
+        310
+       ],
+       "tr_start": {
+        "para": 296,
+        "starts_with": "I say to thee, O prince of men, before the Holy Lord of eart",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 17,
+       "oe_lines": [
+        2261,
+        2381
+       ],
+       "tr_paras": [
+        311,
+        326
+       ],
+       "tr_start": {
+        "para": 311,
+        "starts_with": "Then was the wife of Abraham hard of heart and hostile -mind",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 18,
+       "oe_lines": [
+        2382,
+        2505
+       ],
+       "tr_paras": [
+        327,
+        345
+       ],
+       "tr_start": {
+        "para": 327,
+        "starts_with": "But the woman laughed at the Lord of hosts with derision ; f",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 19,
+       "oe_lines": [
+        2506,
+        2627
+       ],
+       "tr_paras": [
+        345,
+        357
+       ],
+       "tr_start": {
+        "para": 345,
+        "starts_with": "Because of the sins of Sodom and Gomorrah the Lord hath bidd",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 20,
+       "oe_lines": [
+        2628,
+        2759
+       ],
+       "tr_paras": [
+        357,
+        376
+       ],
+       "tr_start": {
+        "para": 357,
+        "starts_with": "And the prince sent forth his thanes and bade them bring him",
+        "mid_paragraph": true
+       }
+      },
+      {
+       "oe_section": 21,
+       "oe_lines": [
+        2760,
+        2880
+       ],
+       "tr_paras": [
+        377,
+        393
+       ],
+       "tr_start": {
+        "para": 377,
+        "starts_with": "Then the Almighty Lord came unto Sarah, according to His wor",
+        "mid_paragraph": false
+       }
+      },
+      {
+       "oe_section": 22,
+       "oe_lines": [
+        2881,
+        2936
+       ],
+       "tr_paras": [
+        394,
+        405
+       ],
+       "tr_start": {
+        "para": 394,
+        "starts_with": "Abide ye here in this place, and we two will come again, whe",
+        "mid_paragraph": false
+       }
+      }
+     ],
+     "ocr_junk_paras": {
+      "running_heads": [
+       2,
+       7,
+       12,
+       17,
+       40,
+       49,
+       73,
+       82,
+       90,
+       97,
+       104,
+       111,
+       119,
+       126,
+       132,
+       143,
+       154,
+       163,
+       170,
+       180,
+       189,
+       197,
+       205,
+       212,
+       220,
+       228,
+       238,
+       245,
+       252,
+       260,
+       266,
+       276,
+       283,
+       291,
+       301,
+       308,
+       318,
+       329,
+       339,
+       347,
+       354,
+       363,
+       373,
+       383,
+       404
+      ],
+      "footnotes": [
+       89,
+       123,
+       227,
+       237,
+       270,
+       274,
+       275,
+       286,
+       338,
+       358,
+       372,
+       403
+      ]
+     }
+    }
+   ],
+   "line_for_line": false,
+   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few). Paras 22-39 and 48-71 are hard-wrapped printed lines (one sentence split over many 'paragraphs'). Kennedy's own captions '(Beginning of Genesis B)' (para 42) and '(End of Genesis B)' (para 139) mark Genesis B = OE 235-851, matching the OE sections."
+  },
+  {
+   "oe_work": "fates-of-the-apostles-oe",
+   "translation_work": "fates-of-the-apostles",
+   "translator": "trans. Charles W. Kennedy (1910)",
+   "sections": [
+    {
+     "section": 0,
+     "title": "The Fates of the Apostles",
+     "oe_lines": [
+      1,
+      122
+     ],
+     "tr_para_count": 12,
+     "chunks": [
+      {
+       "oe_section": 0,
+       "oe_lines": [
+        1,
+        122
+       ],
+       "tr_paras": [
+        1,
+        12
+       ],
+       "tr_start": {
+        "para": 1,
+        "starts_with": "Lo ! travel-worn, with weary heart, I wrought this lay, made",
+        "mid_paragraph": false
+       }
+      }
+     ],
+     "para_anchors": [
+      {
+       "para": 1,
+       "oe_lines": [
+        1,
+        29
+       ]
+      },
+      {
+       "para": 2,
+       "oe_lines": null,
+       "note": "OCR running head"
+      },
+      {
+       "para": 3,
+       "oe_lines": [
+        30,
+        37
+       ]
+      },
+      {
+       "para": 4,
+       "oe_lines": [
+        37,
+        62
+       ]
+      },
+      {
+       "para": 5,
+       "oe_lines": [
+        63,
+        74
+       ]
+      },
+      {
+       "para": 6,
+       "oe_lines": [
+        75,
+        87
+       ]
+      },
+      {
+       "para": 7,
+       "oe_lines": [
+        88,
+        94
+       ]
+      },
+      {
+       "para": 8,
+       "oe_lines": null,
+       "note": "OCR running head"
+      },
+      {
+       "para": 9,
+       "oe_lines": [
+        94,
+        95
+       ]
+      },
+      {
+       "para": 10,
+       "oe_lines": [
+        96,
+        102
+       ]
+      },
+      {
+       "para": 11,
+       "oe_lines": [
+        103,
+        105
+       ]
+      },
+      {
+       "para": 12,
+       "oe_lines": [
+        105,
+        122
+       ]
+      }
+     ],
+     "ocr_junk_paras": {
+      "running_heads": [
+       2,
+       8
+      ]
+     }
+    }
+   ],
+   "line_for_line": false,
+   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few). para_anchors gives an OE line range for every paragraph (the runic signature passage is paras 10-11 = OE 96-105)."
+  }
+ ],
+ "unpaired_oe": [
+  {
+   "oe_id": "anonymous-old-english/53",
+   "oe_title": "Homiletic Fragment I (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/55",
+   "oe_title": "Azarias (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/60",
+   "oe_title": "Vainglory (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/64",
+   "oe_title": "The Order of the World (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/65",
+   "oe_title": "The Riming Poem (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/71",
+   "oe_title": "Wulf and Eadwacer (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/75",
+   "oe_title": "Riddle 4 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/77",
+   "oe_title": "Riddle 6 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/83",
+   "oe_title": "Riddle 12 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/84",
+   "oe_title": "Riddle 13 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/89",
+   "oe_title": "Riddle 18 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/90",
+   "oe_title": "Riddle 19 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/91",
+   "oe_title": "Riddle 20 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/93",
+   "oe_title": "Riddle 22 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/96",
+   "oe_title": "Riddle 25 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/99",
+   "oe_title": "Riddle 28 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/101",
+   "oe_title": "Riddle 30 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/102",
+   "oe_title": "Riddle 31 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/103",
+   "oe_title": "Riddle 32 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/107",
+   "oe_title": "Riddle 36 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/108",
+   "oe_title": "Riddle 37 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/110",
+   "oe_title": "Riddle 39 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/111",
+   "oe_title": "Riddle 40 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/112",
+   "oe_title": "Riddle 41 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/113",
+   "oe_title": "Riddle 42 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/114",
+   "oe_title": "Riddle 43 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/115",
+   "oe_title": "Riddle 44 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/117",
+   "oe_title": "Riddle 46 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/120",
+   "oe_title": "Riddle 49 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/121",
+   "oe_title": "Riddle 50 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/123",
+   "oe_title": "Riddle 52 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/125",
+   "oe_title": "Riddle 54 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/126",
+   "oe_title": "Riddle 55 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/127",
+   "oe_title": "Riddle 56 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/129",
+   "oe_title": "Riddle 58 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/130",
+   "oe_title": "Riddle 59 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/132",
+   "oe_title": "The Judgment Day I (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/133",
+   "oe_title": "Resignation (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/134",
+   "oe_title": "The Descent into Hell (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/139",
+   "oe_title": "Riddle 30b (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/143",
+   "oe_title": "Riddle 61 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/144",
+   "oe_title": "Riddle 62 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/145",
+   "oe_title": "Riddle 63 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/146",
+   "oe_title": "Riddle 64 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/147",
+   "oe_title": "Riddle 65 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/148",
+   "oe_title": "Riddle 66 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/149",
+   "oe_title": "Riddle 67 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/150",
+   "oe_title": "Riddle 68 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/151",
+   "oe_title": "Riddle 69 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/152",
+   "oe_title": "Riddle 70 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/153",
+   "oe_title": "Riddle 71 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/154",
+   "oe_title": "Riddle 72 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/155",
+   "oe_title": "Riddle 73 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/156",
+   "oe_title": "Riddle 74 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/157",
+   "oe_title": "Riddle 75 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/158",
+   "oe_title": "Riddle 76 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/159",
+   "oe_title": "Riddle 77 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/160",
+   "oe_title": "Riddle 78 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/161",
+   "oe_title": "Riddle 79 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/164",
+   "oe_title": "Riddle 82 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/165",
+   "oe_title": "Riddle 83 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/166",
+   "oe_title": "Riddle 84 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/169",
+   "oe_title": "Riddle 87 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/170",
+   "oe_title": "Riddle 88 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/171",
+   "oe_title": "Riddle 89 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/172",
+   "oe_title": "Riddle 91 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/173",
+   "oe_title": "Riddle 92 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/174",
+   "oe_title": "Riddle 93 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/175",
+   "oe_title": "Riddle 94 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/176",
+   "oe_title": "Riddle 95 (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/181",
+   "oe_title": "The Capture of the Five Boroughs (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/182",
+   "oe_title": "The Coronation of Edgar (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/183",
+   "oe_title": "The Death of Edward (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/184",
+   "oe_title": "Durham (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/185",
+   "oe_title": "The Rune Poem (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/186",
+   "oe_title": "The Menologium (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/187",
+   "oe_title": "Maxims II (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/188",
+   "oe_title": "A Proverb from Winfrid's Time (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/194",
+   "oe_title": "The Lord's Prayer III (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/195",
+   "oe_title": "The Creed (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/196",
+   "oe_title": "The Kentish Hymn (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/197",
+   "oe_title": "Psalm 50, Kentish Version (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/198",
+   "oe_title": "The Gloria II (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/199",
+   "oe_title": "A Prayer (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/200",
+   "oe_title": "Thureth (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/201",
+   "oe_title": "Aldhelm (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/202",
+   "oe_title": "The Seasons for Fasting (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/204",
+   "oe_title": "Latin-English Proverbs (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/205",
+   "oe_title": "Metrical Preface to Waerferth's Translation of Gregory's Dialogues (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/206",
+   "oe_title": "Metrical Epilogue to MS 41, Corpus Christi College, Cambridge (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/210",
+   "oe_title": "Metrical Charm 3: Against a Dwarf (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/212",
+   "oe_title": "Metrical Charm 5: For Loss of Cattle (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/213",
+   "oe_title": "Metrical Charm 6: For Delayed Birth (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/214",
+   "oe_title": "Metrical Charm 7: For the Water-Elf Disease (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/216",
+   "oe_title": "Metrical Charm 9: For Loss of Cattle (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/218",
+   "oe_title": "Metrical Charm 11: A Journey Charm (Old English)"
+  },
+  {
+   "oe_id": "anonymous-old-english/219",
+   "oe_title": "Metrical Charm 12: Against a Wen (Old English)"
+  },
+  {
+   "oe_id": "alfred/0",
+   "oe_title": "Metrical Preface to the Pastoral Care (Old English)"
+  },
+  {
+   "oe_id": "alfred/1",
+   "oe_title": "Metrical Epilogue to the Pastoral Care (Old English)"
+  }
+ ],
+ "notes": {
+  "date": "2026-10-14",
+  "summary": {
+   "oe_poems_paired": 76,
+   "pairs": 76,
+   "pairs_by_mode_confidence": {
+    "blocks/high": 21,
+    "blocks/medium": 1,
+    "lines/high": 54
+   },
+   "works_mapped": 16,
+   "oe_poems_without_translation": 99
+  },
+  "line_numbering": {
+   "poems": "All 'oe' and 'tr' numbers in poems[].translations[].exceptions are 1-based indices of NON-EMPTY lines of each poem's text field (blank lines skipped). For the OE texts this equals ASPR numbering except where a poem has heading lines (Waldhere 'I'/'II'), prose rubrics (charms) or 'Finit.'. For prose translations each paragraph is one non-empty line, so 'tr' numbers are paragraph numbers.",
+   "exceptions_format": "['1:1'] = translation line n faces OE line n throughout. Otherwise a full piecewise map: {'oe':[a,b],'tr':[c,d]} segments in order; 'oe': null = translation lines with no OE (headings, conjectural supplements, footnotes); 'tr': null = OE lines left untranslated (charm rubrics, omitted lines); 'per_line': 2 = each OE line takes two translation lines (Thorpe sets every half-line on its own line). In 'blocks' mode the same segments define the blocks to top-align side by side.",
+   "works": "oe_lines are ASPR line numbers, as in the OE sections' 'Lines a-b' titles (Genesis: continuous A+B numbering; Meters of Boethius: each meter numbered from 1, matched by oe_section). Kennedy chunks use tr_paras = 1-based non-empty-line indices in the single translation section."
+  },
+  "riddle_numbering": "Faust & Thompson and Spaeth titles use the Krapp-Dobbie/Tupper numbers (I-LX = ASPR 1-60). Brougham's 'LXXIX. A Falcon' is ASPR 80 (Grein-Wülker numbering). Gordon's numbers are not reliable as ASPR numbers: 'LIX. A Chalice' is ASPR 48 (not 59), 'LXXX' = ASPR 81, 'LXXXIV' = 85, 'LXXXV' = 86; all Gordon riddles were matched by content. ASPR 59 (the other chalice riddle) therefore has no translation.",
+  "special_pairings": [
+   "Gordon's 'The Soul's Address to the Body' is a composite: Part II (saved soul) exists only in Vercelli (Soul and Body I), but Part I also uses Exeter-only readings (Soul and Body II 94, 101, 107). It is paired with both, paragraph-mapped to each.",
+   "Gordon's 'Riddle XXXV. A Coat of Mail' (Exeter Riddle 35) is also paired, at medium confidence, with The Leiden Riddle (its Northumbrian version).",
+   "Faust & Thompson's Cædmon's Hymn (made from the West Saxon text) and Bede's Death Song (follows the Northumbrian reading) are paired with every OE version on the site.",
+   "Faust & Thompson's Maxims I gives only ASPR 71-106; Charm 1 and Charm 4 give only the verse incantations; Cook & Tinker's Nine Herbs Charm is verse to line 44 and prose after."
+  ],
+  "translations_with_no_oe_original_on_site": [
+   "anonymous-old-english/13 The Grave (Faust & Thompson): the Bodley 343 poem is not among the site's OE texts.",
+   "anonymous-old-english/234 The Ruthwell Cross (Cook): related to Dream of the Rood (roughly Rood 39-64) but a different text; no OE Ruthwell inscription on the site. Could be shown as a related text, not as a facing translation.",
+   "bede/0 'The Hymn for conquering Martyrs raise' (Neale): a Latin hymn, not Old English."
+  ],
+  "oe_works_with_no_translation": [
+   "fragments-of-psalms-oe",
+   "paris-psalter-oe",
+   "solomon-and-saturn-oe"
+  ],
+  "data_glitches_found": [
+   "beowulf-oe section 1 (Lines 126-259): ASPR 140-141 merged into one garbled line ('ða him gebeacnod wice sweotolan tacne'); the section has 133 lines for 134 numbers.",
+   "anonymous-old-english/15 (Pitman, The Whale), tr line 92 and anonymous-old-english/16 (Pitman, The Partridge), tr line 26: Pitman's footnotes ('Footnote 1: Conjecturally supplied...') sit inside the poem text.",
+   "All 11 Kennedy prose works are uncleaned OCR: running heads ('THE CÆDMON POEMS', 'CHRIST'), page numbers, marginal line-range markers, Grein footnotes and Kennedy's section captions appear as separate lines (listed per work in ocr_junk_paras / kennedy_captions), some markers also sit at the end of real paragraphs (e.g. Genesis '3<>4-334 B', Andreas 'teach 449-485 9'), and Genesis paras 22-39 and 48-71 are hard-wrapped printed lines. Guthlac para 18 has lost its opening words. These should be cleaned before facing-page display; the 'starts_with' anchors will survive re-indexing.",
+   "Elene (Garnett) keeps bracketed footnote markers ([1], [4]) inside lines."
+  ],
+  "method": "Every pair was checked by printing OE and translation side by side (full text for short poems, every 4th-10th line plus the ends for long ones, full view wherever counts differed), so the segment maps are line-exact for the 'lines' pairs except where marked 'approximate'. Long-work boundaries were found by reading the OE first lines of each section against the translation text."
+ }
+}
