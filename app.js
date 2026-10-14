@@ -417,7 +417,7 @@
       : (p.frac >= 0.05 ? `About ${Math.round(p.frac * 20) * 5}% through · ` : "") + `Last opened ${esc(shortDate(p.at))}`;
     const grouped = otherTranslations(w).length > 0;
     const label = (p.again ? "Read it again" : "Continue reading") +
-      (withTitle ? " · " + w.title + (grouped ? ` (${trSurname(w.translator)})` : "") : "");
+      (withTitle ? " · " + w.title + (grouped ? ` (${verShort(w)})` : "") : "");
     return `
       <a class="continue" href="#/work/${esc(w.slug)}/${p.i}" data-resume="${esc(w.slug)}" data-i="${p.i}" data-frac="${p.frac}">
         <span class="continue-label">${esc(label)}</span>
@@ -1258,11 +1258,16 @@
     const year = (String(t || "").match(/\(([^)]*)\)\s*$/) || [])[1];
     return `${translatorShort(trName(t))}’s translation${year ? ` (${year})` : ""}`;
   };
+  // A work with no translator in a group of translations is the original text (the Old
+  // English Genesis beside Kennedy's Genesis): it pairs with every translation, and every
+  // translation pairs with it, but two untranslated works never pair.
+  const verLabel = (o) => o.translator ? trLabel(o.translator) : (o.subtitle || "Original text");
+  const verShort = (o) => o.translator ? trSurname(o.translator) : "original";
   function otherTranslations(w) {
-    if (!w || !w.workGroup || !w.translator) return [];
-    const mine = translatorShort(trName(w.translator));
+    if (!w || !w.workGroup) return [];
+    const mine = w.translator ? translatorShort(trName(w.translator)) : "";
     return DATA.works.filter((o) => o.slug !== w.slug && o.workGroup === w.workGroup &&
-      o.translator && translatorShort(trName(o.translator)) !== mine);
+      (o.translator ? translatorShort(trName(o.translator)) !== mine : !!w.translator));
   }
   // The same book in another translation: by its title ("Book VI"), else by position when
   // both have as many parts; -1 when there is no telling.
@@ -1283,9 +1288,9 @@
         ${others.map((o) => {
           const j = i == null ? -1 : matchingPart(w, o, i);
           return `<p class="also-row">${j >= 0
-            ? `<a href="#/work/${esc(o.slug)}/${j}">${esc(trLabel(o.translator))} · ${esc(o.sections[j].title)}</a>
+            ? `<a href="#/work/${esc(o.slug)}/${j}">${esc(verLabel(o))} · ${esc(o.sections[j].title)}</a>
                <a class="compare-btn" href="#/work/${esc(w.slug)}/${i}/with/${esc(o.slug)}">Compare side by side</a>`
-            : `<a href="#/work/${esc(o.slug)}">${esc(trLabel(o.translator))} →</a>`}</p>`;
+            : `<a href="#/work/${esc(o.slug)}">${esc(verLabel(o))} →</a>`}</p>`;
         }).join("")}
       </div>`;
   }
@@ -1419,10 +1424,10 @@
     return `
       <section class="compare-col" id="${id}">
         <header class="compare-head">
-          <p class="compare-tr">${esc(trName(w.translator))}<span class="compare-part"> · ${esc(s.title)}</span></p>
+          <p class="compare-tr">${esc(w.translator ? trName(w.translator) : verLabel(w))}<span class="compare-part"> · ${esc(s.title)}</span></p>
           <a class="compare-open" href="#/work/${esc(w.slug)}/${k}">Read alone →</a>
         </header>
-        <div class="compare-pane" tabindex="0" role="region" aria-label="${esc(trLabel(w.translator))}, ${esc(s.title)}">
+        <div class="compare-pane" tabindex="0" role="region" aria-label="${esc(verLabel(w))}, ${esc(s.title)}">
           <div class="poem-text${prose ? " is-prose" : ""}"${langAttr(w.authorSlug, w.translator)}>${poemHTML(s.text, prose)}</div>
           ${prose ? `<p class="prose-note">This translation is printed as prose in its source edition.</p>` : ""}
         </div>
@@ -1443,7 +1448,7 @@
     const a = WORKS[slug], b = WORKS[oslug];
     const j = matchingPart(a, b, i);
     const s = wa.sections[i];
-    const sa = trSurname(a.translator), sb = trSurname(b.translator);
+    const sa = verShort(a), sb = verShort(b);
     const more = otherTranslations(a).filter((o) => o.slug !== oslug);
     const go = (k) => `#/work/${slug}/${k}/with/${oslug}`;
     setTitle(`${a.title}, ${s.title} — ${sa} and ${sb} side by side`);
@@ -1457,7 +1462,7 @@
         <div class="compare-tools">
           <label class="compare-sync"><input type="checkbox" checked> Scroll together</label>
           ${j >= 0 ? `<a class="compare-btn" href="#/work/${esc(oslug)}/${j}/with/${esc(slug)}">Swap sides</a>` : ""}
-          ${more.map((o) => `<a class="compare-btn" href="#/work/${esc(slug)}/${i}/with/${esc(o.slug)}">Compare with ${esc(trSurname(o.translator))}</a>`).join("")}
+          ${more.map((o) => `<a class="compare-btn" href="#/work/${esc(slug)}/${i}/with/${esc(o.slug)}">Compare with ${esc(verShort(o))}</a>`).join("")}
           <button class="compare-jump" type="button" data-to="tr-b">Jump to ${esc(sb)} ↓</button>
         </div>
         </div>
@@ -1465,7 +1470,7 @@
           ${compareColHTML(wa, i, "tr-a")}
           ${j >= 0 ? compareColHTML(wb, j, "tr-b") : `
             <section class="compare-col" id="tr-b">
-              <p class="empty">${esc(trLabel(b.translator))} has no part matching ${esc(s.title)}.<br>
+              <p class="empty">${esc(verLabel(b))} has no part matching ${esc(s.title)}.<br>
               <a href="#/work/${esc(oslug)}">Open its contents →</a></p>
             </section>`}
         </div>
