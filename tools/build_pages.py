@@ -344,6 +344,7 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
   <link rel="stylesheet" href="/styles.css?v={CSS_V}" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
       <div class="topbar-inner">
@@ -359,7 +360,7 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
       </div>
     </div>
   </header>
-  <main class="static-page">
+  <main class="static-page" id="main">
 {body}
   </main>
   <footer class="site-foot">
@@ -371,6 +372,12 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
 </body>
 </html>
 """
+
+
+def dates_span(poet):
+    """The poet's dates after the byline, as the app shows them (empty when unknown)."""
+    d = (poet or {}).get("dates") if isinstance(poet, dict) else None
+    return f' <span class="detail-dates">{esc(d)}</span>' if d else ""
 
 
 def poem_page(poet, poems, n, p):
@@ -395,7 +402,7 @@ def poem_page(poet, poems, n, p):
     body = f"""    <article class="detail">
       <p class="detail-subject">{esc(subj)}</p>
       <h1 class="detail-title"{lang_attr}>{esc(title)}</h1>
-      <p class="detail-author">by <a href="/poet/{slug}/">{esc(author)}</a></p>
+      <p class="detail-author">by <a href="/poet/{slug}/">{esc(author)}</a>{dates_span(poet)}</p>
       {source_line(p)}
       {('<div class="themes">' + themes + '</div>') if themes else ''}
       <hr class="rule">
@@ -444,7 +451,7 @@ def poet_page(poet, poem_list, works):
             f'<li><a href="/poem/{slug}/{i}/">{esc(p["title"])}</a></li>'
             for i, p in enumerate(poem_list))
         poems_block = f"""
-      <p class="section-label">Poems ({len(poem_list)})</p>
+      <p class="section-label">Poems ({len(poem_list):,})</p>
       <ol class="poet-poems">
 {rows}
       </ol>"""
@@ -586,7 +593,7 @@ def section_page(w, poet, grouped, i, others=()):
       <a class="back" href="/work/{slug}/">← {esc(w["title"])} · Contents</a>
       <p class="detail-subject">{kind}</p>
       <h1 class="detail-title">{esc(s["title"])}</h1>
-      <p class="detail-author">by <a href="/poet/{w["authorSlug"]}/">{esc(w["author"])}</a></p>
+      <p class="detail-author">by <a href="/poet/{w["authorSlug"]}/">{esc(w["author"])}</a>{dates_span(poet)}</p>
       {source_line(w)}
       {also_block(w, others, i)}
       <hr class="rule">

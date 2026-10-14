@@ -454,11 +454,12 @@ Hard-won lessons — these bugs all actually happened here:
 python dev_server.py                       # local preview at :8777
 # ...edit data/poets/<slug>.json or data/works/<slug>.json, verify in the browser...
 python tools/build_index.py                # regenerates data/index.json
+python tools/build_home.py                 # regenerates data/home.json (instant home page)
 python tools/build_search_index.py         # regenerates data/search.json (Oracle lookup)
 python tools/verify_split.py               # must print ALL CHECKS PASSED
 python tools/build_pages.py                # regenerates poem/, poet/, work/, sitemap*.xml, 404.html, footer links
 python tools/shrink_portraits.py           # only if new poets/*.jpg portraits were added
-git add data/poets/<slug>.json data/index.json data/search.json poem poet work sitemap*.xml 404.html index.html
+git add data/poets/<slug>.json data/index.json data/home.json data/search.json poem poet work sitemap*.xml 404.html index.html
 git commit -m "Add X"
 git push                                   # this deploys
 ```
