@@ -1,0 +1,44 @@
+{
+ "slug": "ma-tai",
+ "name": "Ma Tai",
+ "dates": "graduated AD 844",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Ma Tai was a T'ang poet who took his degree at the government examinations in AD 844. His two poems here are an autumn cottage and thoughts of old time.",
+  "The poems here are Witter Bynner and Kiang Kang-hu's versions in The Jade Mountain (1929), given with the poet's name as spelled in that book."
+ ],
+ "order": 63.33698,
+ "poems": [
+  {
+   "id": "ma-tai/0",
+   "title": "An Autumn Cottage at Pa-shang",
+   "authorSlug": "ma-tai",
+   "author": "Ma Tai",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "The Jade Mountain (1929)",
+   "note": "",
+   "translator": "trans. Witter Bynner and Kiang Kang-hu (1929)",
+   "text": "After the shower at Pa-shang,\nI see an evening line of wildgeese,\nThe limp-hanging leaves of a foreign tree,\nA lantern's cold gleam, lonely in the night,\nAn empty garden, white with dew,\nThe ruined wall of a neighbouring monastery.\n. . . I have taken my ease here long enough.\nWhat am I waiting for, I wonder."
+  },
+  {
+   "id": "ma-tai/1",
+   "title": "Thoughts of Old Time on the Ch'u River",
+   "authorSlug": "ma-tai",
+   "author": "Ma Tai",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "The Jade Mountain (1929)",
+   "note": "",
+   "translator": "trans. Witter Bynner and Kiang Kang-hu (1929)",
+   "text": "A cold light shines on the gathering dew,\nAs sunset fades beyond the southern mountains;\nTrees echo with monkeys on the banks of Lake Tung-t'ing,\nWhere somebody is moving in an orchid-wood boat.\nMarsh-lands are swollen wide with the moon,\nWhile torrents are bent to the mountains' will;\nAnd the vanished Queens of the Clouds leave me\nSad with autumn all night long."
+  }
+ ]
+}
