@@ -32,9 +32,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "data", "parallel-oe.json")
 OUT = os.path.join(ROOT, "data", "parallel.json")
 LANG = "ang"   # every pair in parallel-oe.json has an Old English original
-# Lines an original's text runs together (parallel-oe.json notes.data_glitches_found): the
-# line numbered n there also stands for n + 1, so the numbering after it stays right.
-MERGED = {"beowulf-oe": [140]}   # ASPR 140-141: 'ða him gebeacnod wice sweotolan tacne'
+# Lines an original's text runs together: {work slug: [n, ...]}, the line numbered n there also
+# standing for n + 1, so the numbering after it stays right. Empty now: the one case,
+# beowulf-oe ASPR 140-141, was restored in the text itself on 14 Oct 2026.
+MERGED = {}
 
 
 def seg_map(exc):

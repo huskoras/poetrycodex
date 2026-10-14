@@ -684,17 +684,9 @@
         91
        ],
        "note": "OE 82 is defective; Pitman supplies conjectural text"
-      },
-      {
-       "oe": null,
-       "tr": [
-        92,
-        92
-       ],
-       "note": "stray line 'Footnote 1: Conjecturally supplied.' is part of the text field (data glitch)"
       }
      ],
-     "note": "Blank verse, 92 lines vs 88; drift up to 3 lines inside blocks."
+     "note": "Blank verse, 91 lines vs 88; drift up to 3 lines inside blocks."
     }
    ]
   },
@@ -739,21 +731,13 @@
        ]
       },
       {
-       "oe": null,
-       "tr": [
-        26,
-        26
-       ],
-       "note": "stray line 'Footnote 1: Conjecturally supplied, on the basis of other versions.' inside the text field (data glitch)"
-      },
-      {
        "oe": [
         10,
         16
        ],
        "tr": [
-        27,
-        36
+        26,
+        35
        ]
       },
       {
@@ -762,13 +746,13 @@
         17
        ],
        "tr": [
-        37,
-        37
+        36,
+        36
        ],
        "note": "Finit."
       }
      ],
-     "note": "Most of the translation (tr 2-19) is a conjectural supplement for the lost leaf; only tr 20-37 face surviving OE."
+     "note": "Most of the translation (tr 2-19) is a conjectural supplement for the lost leaf; only tr 20-36 face surviving OE."
     }
    ]
   },
@@ -3478,7 +3462,7 @@
     }
    ],
    "line_for_line": true,
-   "note": "Gummere keeps the OE line count fitt by fitt (3193 lines vs 3182; +1 in fitts VI, XI, XV, XVII, XVIII, XXI, XXV, XXXVII, +3 in XXIV). Inside long speeches lines drift by 1-3 and half-lines are sometimes swapped, so line-level facing is approximate but close; top-align each fitt against its OE range. Every fitt boundary was checked against the OE first and last lines. DATA GLITCH in beowulf-oe section 1 ('Lines 126-259'): ASPR 140 and 141 are merged into one garbled line ('ða him gebeacnod wice sweotolan tacne', should be 'ða him gebeacnod wæs, / gesægd soðlice sweotolan tacne'), so that section has 133 lines and counting lines from 126 gives numbers one too low from 141 to 259."
+   "note": "Gummere keeps the OE line count fitt by fitt (3193 lines vs 3182; +1 in fitts VI, XI, XV, XVII, XVIII, XXI, XXV, XXXVII, +3 in XXIV). Inside long speeches lines drift by 1-3 and half-lines are sometimes swapped, so line-level facing is approximate but close; top-align each fitt against its OE range. Every fitt boundary was checked against the OE first and last lines. (beowulf-oe section 1 once ran ASPR 140 and 141 together; restored on 14 Oct 2026 from the ASPR e-text, so every OE section has one line per number.)"
   },
   {
    "oe_work": "elene-oe",
@@ -4144,7 +4128,7 @@
       1,
       1722
      ],
-     "tr_para_count": 195,
+     "tr_para_count": 130,
      "chunks": [
       {
        "oe_section": 0,
@@ -4154,7 +4138,7 @@
        ],
        "tr_paras": [
         1,
-        10
+        7
        ],
        "tr_start": {
         "para": 1,
@@ -4169,12 +4153,12 @@
         247
        ],
        "tr_paras": [
-        10,
-        24
+        7,
+        16
        ],
        "tr_start": {
-        "para": 10,
-        "starts_with": "Then was Matthew heartened anew exceedingly and the veil of",
+        "para": 7,
+        "starts_with": "Then was Matthew heartened anew exceedingly and the veil of ",
         "mid_paragraph": true
        }
       },
@@ -4185,12 +4169,12 @@
         381
        ],
        "tr_paras": [
-        24,
-        48
+        16,
+        35
        ],
        "tr_start": {
-        "para": 24,
-        "starts_with": "That was God Himself, the Lord of hosts, Eternal, Almighty,",
+        "para": 16,
+        "starts_with": "That was God Himself, the Lord of hosts, Eternal, Almighty, ",
         "mid_paragraph": true
        }
       },
@@ -4201,11 +4185,11 @@
         509
        ],
        "tr_paras": [
-        48,
-        65
+        35,
+        47
        ],
        "tr_start": {
-        "para": 48,
+        "para": 35,
         "starts_with": "But even yet upon the ocean path, on the oar-stirred sea, th",
         "mid_paragraph": true
        }
@@ -4217,11 +4201,11 @@
         631
        ],
        "tr_paras": [
-        66,
-        81
+        48,
+        60
        ],
        "tr_start": {
-        "para": 66,
+        "para": 48,
         "starts_with": "The Eternal Lord gave answer unto him : “ Oft it doth befall",
         "mid_paragraph": false
        }
@@ -4233,11 +4217,11 @@
         752
        ],
        "tr_paras": [
-        82,
-        95
+        61,
+        69
        ],
        "tr_start": {
-        "para": 82,
+        "para": 61,
         "starts_with": "And yet again the Warden of the wave addressed him : “ Neith",
         "mid_paragraph": false
        }
@@ -4249,12 +4233,12 @@
         874
        ],
        "tr_paras": [
-        95,
-        103
+        69,
+        74
        ],
        "tr_start": {
-        "para": 95,
-        "starts_with": "to Abraham, to Isaac, and to J acob He granted grace, decked",
+        "para": 69,
+        "starts_with": "to Abraham, to Isaac, and to Jacob He granted grace, decked ",
         "mid_paragraph": true
        }
       },
@@ -4265,11 +4249,11 @@
         1003
        ],
        "tr_paras": [
-        103,
-        118
+        74,
+        83
        ],
        "tr_start": {
-        "para": 103,
+        "para": 74,
         "starts_with": "We recognized the holy patriarchs, no little band of martyrs",
         "mid_paragraph": true
        }
@@ -4281,11 +4265,11 @@
         1128
        ],
        "tr_paras": [
-        118,
-        131
+        83,
+        91
        ],
        "tr_start": {
-        "para": 118,
+        "para": 83,
         "starts_with": "He beheld Matthew in that house of death, that valiant man w",
         "mid_paragraph": true
        }
@@ -4297,11 +4281,11 @@
         1252
        ],
        "tr_paras": [
-        131,
-        146
+        91,
+        101
        ],
        "tr_start": {
-        "para": 131,
+        "para": 91,
         "starts_with": "Nor might he in his wretchedness find mercy or favour at the",
         "mid_paragraph": true
        }
@@ -4313,11 +4297,11 @@
         1374
        ],
        "tr_paras": [
-        146,
-        159
+        101,
+        109
        ],
        "tr_start": {
-        "para": 146,
+        "para": 101,
         "starts_with": "Then in the shades of darkness the holy man, the valiant ear",
         "mid_paragraph": true
        }
@@ -4329,11 +4313,11 @@
         1497
        ],
        "tr_paras": [
-        160,
-        172
+        110,
+        119
        ],
        "tr_start": {
-        "para": 160,
+        "para": 110,
         "starts_with": "And unto him Andrew gave answer :",
         "mid_paragraph": false
        }
@@ -4345,11 +4329,11 @@
         1619
        ],
        "tr_paras": [
-        172,
-        186
+        119,
+        125
        ],
        "tr_start": {
-        "para": 172,
+        "para": 119,
         "starts_with": "Hearken thou marble stone unto the rede of God, before whose",
         "mid_paragraph": true
        }
@@ -4361,60 +4345,33 @@
         1722
        ],
        "tr_paras": [
-        186,
-        195
+        125,
+        130
        ],
        "tr_start": {
-        "para": 186,
+        "para": 125,
         "starts_with": "So at the moving of the Holy Spirit, that prayer was made ac",
         "mid_paragraph": true
        }
       }
      ],
-     "ocr_junk_paras": {
-      "page_numbers": [
-       15,
-       21,
-       183
-      ],
-      "line_markers": [
-       54,
-       84,
-       100,
-       153,
-       173
-      ],
-      "footnotes": [
-       187
-      ],
-      "fragments": [
-       14,
-       112
-      ]
-     },
      "kennedy_captions": [
-      4,
-      12,
-      25,
-      47,
-      75,
-      98,
-      101,
-      115,
-      117,
+      2,
+      8,
+      14,
+      34,
+      50,
+      72,
+      82,
+      89,
+      100,
       122,
-      129,
-      137,
-      145,
-      178,
-      180,
-      188,
-      189
+      126
      ]
     }
    ],
    "line_for_line": false,
-   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few). Kennedy's section captions ('THE SHIPMEN', 'THE STORM', fitt numerals) appear as separate lines."
+   "note": "Kennedy's prose, one translation section, one paragraph per line. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The OCR was cleaned on 14 Oct 2026 (running heads and the recto page headlines, page numbers, marginal line ranges, signature letters and Grein's footnotes removed; words broken at line and page ends rejoined; paragraphs as printed, checked against the scan), so there is no ocr_junk_paras list any more. kennedy_captions are Kennedy's fitt numerals (II-X, XIII, XIV, as printed)."
   },
   {
    "oe_work": "christ-1-advent-oe",
@@ -4428,7 +4385,7 @@
       1,
       439
      ],
-     "tr_para_count": 40,
+     "tr_para_count": 22,
      "chunks": [
       {
        "oe_section": 0,
@@ -4438,7 +4395,7 @@
        ],
        "tr_paras": [
         1,
-        14
+        7
        ],
        "tr_start": {
         "para": 1,
@@ -4453,11 +4410,11 @@
         255
        ],
        "tr_paras": [
-        15,
-        26
+        8,
+        14
        ],
        "tr_start": {
-        "para": 15,
+        "para": 8,
         "starts_with": "O God of spirits ! how wisely and with right wast Thou named",
         "mid_paragraph": false
        }
@@ -4469,12 +4426,12 @@
         377
        ],
        "tr_paras": [
-        26,
-        36
+        14,
+        19
        ],
        "tr_start": {
-        "para": 26,
-        "starts_with": "The cursed Wolf, that dark death-shadow, hath scattered far",
+        "para": 14,
+        "starts_with": "The cursed Wolf, that dark death-shadow, hath scattered far ",
         "mid_paragraph": true
        }
       },
@@ -4485,33 +4442,20 @@
         439
        ],
        "tr_paras": [
-        37,
-        40
+        20,
+        22
        ],
        "tr_start": {
-        "para": 37,
+        "para": 20,
         "starts_with": "O Glorious, Heavenly Trinity, high and holy, full of honour,",
         "mid_paragraph": false
        }
       }
-     ],
-     "ocr_junk_paras": {
-      "running_heads": [
-       4,
-       11,
-       16,
-       25,
-       29,
-       35
-      ],
-      "line_markers": [
-       3
-      ]
-     }
+     ]
     }
    ],
    "line_for_line": false,
-   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+   "note": "Kennedy's prose, one translation section, one paragraph per line. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The OCR was cleaned on 14 Oct 2026 (running heads and the recto page headlines, page numbers, marginal line ranges, signature letters and Grein's footnotes removed; words broken at line and page ends rejoined; paragraphs as printed, checked against the scan), so there is no ocr_junk_paras list any more."
   },
   {
    "oe_work": "christ-2-ascension-oe",
@@ -4525,7 +4469,7 @@
       440,
       866
      ],
-     "tr_para_count": 41,
+     "tr_para_count": 17,
      "chunks": [
       {
        "oe_section": 0,
@@ -4535,7 +4479,7 @@
        ],
        "tr_paras": [
         1,
-        15
+        6
        ],
        "tr_start": {
         "para": 1,
@@ -4550,11 +4494,11 @@
         682
        ],
        "tr_paras": [
-        15,
-        26
+        6,
+        10
        ],
        "tr_start": {
-        "para": 15,
+        "para": 6,
         "starts_with": "Now are these devil-champions all undone, cast into everlast",
         "mid_paragraph": true
        }
@@ -4566,12 +4510,12 @@
         814
        ],
        "tr_paras": [
-        26,
-        37
+        10,
+        15
        ],
        "tr_start": {
-        "para": 26,
-        "starts_with": "But to no single man doth He give all wisdom of heart, lest",
+        "para": 10,
+        "starts_with": "But to no single man doth He give all wisdom of heart, lest ",
         "mid_paragraph": true
        }
       },
@@ -4582,36 +4526,20 @@
         866
        ],
        "tr_paras": [
-        37,
-        41
+        15,
+        17
        ],
        "tr_start": {
-        "para": 37,
+        "para": 15,
         "starts_with": "Therefore will I teach each well-loved man that he give heed",
         "mid_paragraph": true
        }
       }
-     ],
-     "ocr_junk_paras": {
-      "running_heads": [
-       9,
-       16,
-       23,
-       28,
-       34,
-       39
-      ],
-      "page_numbers": [
-       8
-      ]
-     },
-     "kennedy_captions": [
-      25
      ]
     }
    ],
    "line_for_line": false,
-   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+   "note": "Kennedy's prose, one translation section, one paragraph per line. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The OCR was cleaned on 14 Oct 2026 (running heads and the recto page headlines, page numbers, marginal line ranges, signature letters and Grein's footnotes removed; words broken at line and page ends rejoined; paragraphs as printed, checked against the scan), so there is no ocr_junk_paras list any more. The runic signature (paras 15) has the rune letters in square brackets after the words they stand for."
   },
   {
    "oe_work": "christ-3-doomsday-oe",
@@ -4625,7 +4553,7 @@
       867,
       1664
      ],
-     "tr_para_count": 93,
+     "tr_para_count": 45,
      "chunks": [
       {
        "oe_section": 0,
@@ -4635,7 +4563,7 @@
        ],
        "tr_paras": [
         1,
-        18
+        10
        ],
        "tr_start": {
         "para": 1,
@@ -4650,11 +4578,11 @@
         1114
        ],
        "tr_paras": [
-        18,
-        30
+        10,
+        15
        ],
        "tr_start": {
-        "para": 18,
+        "para": 10,
         "starts_with": "The dusky flame shall blaze on those undone by sin, and fire",
         "mid_paragraph": true
        }
@@ -4666,11 +4594,11 @@
         1236
        ],
        "tr_paras": [
-        30,
-        43
+        15,
+        21
        ],
        "tr_start": {
-        "para": 30,
+        "para": 15,
         "starts_with": "All this then may they see, open and clear, that for the lov",
         "mid_paragraph": true
        }
@@ -4682,11 +4610,11 @@
         1364
        ],
        "tr_paras": [
-        43,
-        59
+        21,
+        29
        ],
        "tr_start": {
-        "para": 43,
+        "para": 21,
         "starts_with": "The first clear token is that they gleam with light before t",
         "mid_paragraph": true
        }
@@ -4698,11 +4626,11 @@
         1486
        ],
        "tr_paras": [
-        59,
-        72
+        29,
+        34
        ],
        "tr_start": {
-        "para": 59,
+        "para": 29,
         "starts_with": "They may not look for mercy from the Lord, nor life nor pity",
         "mid_paragraph": true
        }
@@ -4714,11 +4642,11 @@
         1608
        ],
        "tr_paras": [
-        72,
-        83
+        34,
+        40
        ],
        "tr_start": {
-        "para": 72,
+        "para": 34,
         "starts_with": "Why didst thou hang Me on a cross of thy hand’s making in gr",
         "mid_paragraph": true
        }
@@ -4730,53 +4658,23 @@
         1664
        ],
        "tr_paras": [
-        83,
-        93
+        40,
+        45
        ],
        "tr_start": {
-        "para": 83,
+        "para": 40,
         "starts_with": "There shall thieves and spoilers and liars and adulterers ha",
         "mid_paragraph": true
        }
       }
      ],
-     "ocr_junk_paras": {
-      "running_heads": [
-       5,
-       13,
-       20,
-       27,
-       34,
-       41,
-       49,
-       57,
-       63,
-       70,
-       79,
-       84,
-       92
-      ],
-      "page_numbers": [
-       4,
-       28,
-       33
-      ],
-      "line_markers": [
-       67
-      ]
-     },
      "kennedy_captions": [
-      17,
-      45,
-      52,
-      68,
-      73,
-      89
+      43
      ]
     }
    ],
    "line_for_line": false,
-   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+   "note": "Kennedy's prose, one translation section, one paragraph per line. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The OCR was cleaned on 14 Oct 2026 (running heads and the recto page headlines, page numbers, marginal line ranges, signature letters and Grein's footnotes removed; words broken at line and page ends rejoined; paragraphs as printed, checked against the scan), so there is no ocr_junk_paras list any more. kennedy_captions: Kennedy's heading 'SECOND ENDING OF CHRIST'."
   },
   {
    "oe_work": "christ-and-satan-oe",
@@ -4790,7 +4688,7 @@
       1,
       729
      ],
-     "tr_para_count": 110,
+     "tr_para_count": 66,
      "chunks": [
       {
        "oe_section": 0,
@@ -4799,8 +4697,8 @@
         124
        ],
        "tr_paras": [
-        2,
-        18
+        1,
+        11
        ],
        "tr_start": {
         "para": 2,
@@ -4815,11 +4713,11 @@
         247
        ],
        "tr_paras": [
-        18,
-        40
+        11,
+        21
        ],
        "tr_start": {
-        "para": 18,
+        "para": 11,
         "starts_with": "So the accursed spirit, doomed to woe, lamented his afflicti",
         "mid_paragraph": true
        }
@@ -4831,12 +4729,12 @@
         369
        ],
        "tr_paras": [
-        41,
-        56
+        22,
+        31
        ],
        "tr_start": {
-        "para": 41,
-        "starts_with": "I can show you enduring counsel, if ye will trust my strengt",
+        "para": 22,
+        "starts_with": "\" ' I can show you enduring counsel, if ye will trust my str",
         "mid_paragraph": false
        }
       },
@@ -4847,11 +4745,11 @@
         492
        ],
        "tr_paras": [
-        56,
-        75
+        31,
+        42
        ],
        "tr_start": {
-        "para": 56,
+        "para": 31,
         "starts_with": "Darkly Satan planned to build a lofty throne in heaven, with",
         "mid_paragraph": true
        }
@@ -4863,12 +4761,12 @@
         615
        ],
        "tr_paras": [
-        75,
-        91
+        42,
+        52
        ],
        "tr_start": {
-        "para": 75,
-        "starts_with": "And from His home on high He came to earth, being born of a",
+        "para": 42,
+        "starts_with": "And from His home on high He came to earth, being born of a ",
         "mid_paragraph": true
        }
       },
@@ -4879,52 +4777,25 @@
         729
        ],
        "tr_paras": [
-        92,
-        110
+        53,
+        66
        ],
        "tr_start": {
-        "para": 92,
-        "starts_with": "Ye are welcome ! Enter now the heavenly kingdom, into the li",
+        "para": 53,
+        "starts_with": "' Ye are welcome ! Enter now the heavenly kingdom, into the ",
         "mid_paragraph": false
        }
       }
      ],
-     "ocr_junk_paras": {
-      "running_heads": [
-       4,
-       13,
-       23,
-       35,
-       45,
-       52,
-       60,
-       69,
-       78,
-       87,
-       96,
-       107
-      ],
-      "line_markers": [
-       22
-      ],
-      "footnotes": [
-       44,
-       59,
-       68,
-       86,
-       101
-      ]
-     },
      "kennedy_captions": [
       1,
-      8,
-      55,
-      102
+      30,
+      60
      ]
     }
    ],
    "line_for_line": false,
-   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few). Para 1 is the title line (\"CHRIST AND SATAN THE LAMENT OF THE FALLEN ANGELS\"); the poem begins at para 2."
+   "note": "Kennedy's prose, one translation section, one paragraph per line. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The OCR was cleaned on 14 Oct 2026 (running heads and the recto page headlines, page numbers, marginal line ranges, signature letters and Grein's footnotes removed; words broken at line and page ends rejoined; paragraphs as printed, checked against the scan), so there is no ocr_junk_paras list any more. kennedy_captions: Kennedy's part captions (THE LAMENT OF THE FALLEN ANGELS, THE HARROWING OF HELL, THE TEMPTATION); para 1 is the first of them."
   },
   {
    "oe_work": "daniel-oe",
@@ -4938,7 +4809,7 @@
       1,
       764
      ],
-     "tr_para_count": 90,
+     "tr_para_count": 51,
      "chunks": [
       {
        "oe_section": 0,
@@ -4948,7 +4819,7 @@
        ],
        "tr_paras": [
         1,
-        13
+        8
        ],
        "tr_start": {
         "para": 1,
@@ -4963,12 +4834,12 @@
         249
        ],
        "tr_paras": [
-        13,
-        32
+        8,
+        17
        ],
        "tr_start": {
-        "para": 13,
-        "starts_with": "He was shaken with terror and knew no beginning nor word of",
+        "para": 8,
+        "starts_with": "He was shaken with terror and knew no beginning nor word of ",
         "mid_paragraph": true
        }
       },
@@ -4979,11 +4850,11 @@
         371
        ],
        "tr_paras": [
-        33,
-        46
+        18,
+        26
        ],
        "tr_start": {
-        "para": 33,
+        "para": 18,
         "starts_with": "The flame passed by the holy men and fell upon their heathen",
         "mid_paragraph": false
        }
@@ -4995,12 +4866,12 @@
         494
        ],
        "tr_paras": [
-        46,
-        58
+        26,
+        32
        ],
        "tr_start": {
-        "para": 46,
-        "starts_with": "O let the souls",
+        "para": 26,
+        "starts_with": "O let the souls of men bless the Lord of might ! Let burning",
         "mid_paragraph": true
        }
       },
@@ -5011,11 +4882,11 @@
         619
        ],
        "tr_paras": [
-        59,
-        74
+        33,
+        41
        ],
        "tr_start": {
-        "para": 59,
+        "para": 33,
         "starts_with": "Now a dream came unto Nebuchadnezzar in his sleep and troubl",
         "mid_paragraph": false
        }
@@ -5027,11 +4898,11 @@
         740
        ],
        "tr_paras": [
-        74,
-        88
+        41,
+        50
        ],
        "tr_start": {
-        "para": 74,
+        "para": 41,
         "starts_with": "Seven winters together the king of that fair city suffered t",
         "mid_paragraph": true
        }
@@ -5043,45 +4914,20 @@
         764
        ],
        "tr_paras": [
-        88,
-        90
+        50,
+        51
        ],
        "tr_start": {
-        "para": 88,
+        "para": 50,
         "starts_with": "But the prophet of God, skilled in the law and wise of heart",
         "mid_paragraph": true
        }
       }
-     ],
-     "ocr_junk_paras": {
-      "running_heads": [
-       3,
-       10,
-       20,
-       28,
-       35,
-       43,
-       48,
-       55,
-       61,
-       67,
-       77,
-       85
-      ],
-      "line_markers": [
-       14
-      ],
-      "footnotes": [
-       24,
-       27,
-       40,
-       73
-      ]
-     }
+     ]
     }
    ],
    "line_for_line": false,
-   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+   "note": "Kennedy's prose, one translation section, one paragraph per line. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The OCR was cleaned on 14 Oct 2026 (running heads and the recto page headlines, page numbers, marginal line ranges, signature letters and Grein's footnotes removed; words broken at line and page ends rejoined; paragraphs as printed, checked against the scan), so there is no ocr_junk_paras list any more. The last sentence ('...great prosperity. But thou deniest...'), lost in the ingest, was restored from the scan."
   },
   {
    "oe_work": "exodus-oe",
@@ -5095,7 +4941,7 @@
       1,
       590
      ],
-     "tr_para_count": 74,
+     "tr_para_count": 38,
      "chunks": [
       {
        "oe_section": 0,
@@ -5105,7 +4951,7 @@
        ],
        "tr_paras": [
         1,
-        15
+        9
        ],
        "tr_start": {
         "para": 1,
@@ -5120,12 +4966,12 @@
         246
        ],
        "tr_paras": [
-        15,
-        29
+        9,
+        16
        ],
        "tr_start": {
-        "para": 15,
-        "starts_with": "Armour gleamed, and bucklers glistened as the warriors took",
+        "para": 9,
+        "starts_with": "Armour gleamed, and bucklers glistened as the warriors took ",
         "mid_paragraph": true
        }
       },
@@ -5136,11 +4982,11 @@
         368
        ],
        "tr_paras": [
-        29,
-        45
+        16,
+        25
        ],
        "tr_start": {
-        "para": 29,
+        "para": 16,
         "starts_with": "The army of these sturdy men was mustered, and ready to adva",
         "mid_paragraph": true
        }
@@ -5152,11 +4998,11 @@
         515
        ],
        "tr_paras": [
-        45,
-        62
+        25,
+        32
        ],
        "tr_start": {
-        "para": 45,
+        "para": 25,
         "starts_with": "To save the life of all the tribes of earth the wise sea-pri",
         "mid_paragraph": true
        }
@@ -5168,45 +5014,20 @@
         590
        ],
        "tr_paras": [
-        63,
-        74
+        33,
+        38
        ],
        "tr_start": {
-        "para": 63,
+        "para": 33,
         "starts_with": "Then on the shore of the sea Moses, the noble-hearted, preac",
         "mid_paragraph": false
        }
       }
-     ],
-     "ocr_junk_paras": {
-      "running_heads": [
-       11,
-       18,
-       25,
-       33,
-       41,
-       47,
-       51,
-       58,
-       65,
-       73
-      ],
-      "line_markers": [
-       4,
-       57
-      ],
-      "footnotes": [
-       17,
-       32,
-       37,
-       46,
-       64
-      ]
-     }
+     ]
     }
    ],
    "line_for_line": false,
-   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+   "note": "Kennedy's prose, one translation section, one paragraph per line. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The OCR was cleaned on 14 Oct 2026 (running heads and the recto page headlines, page numbers, marginal line ranges, signature letters and Grein's footnotes removed; words broken at line and page ends rejoined; paragraphs as printed, checked against the scan), so there is no ocr_junk_paras list any more."
   },
   {
    "oe_work": "juliana-oe",
@@ -5220,7 +5041,7 @@
       1,
       731
      ],
-     "tr_para_count": 93,
+     "tr_para_count": 66,
      "chunks": [
       {
        "oe_section": 0,
@@ -5230,7 +5051,7 @@
        ],
        "tr_paras": [
         1,
-        17
+        15
        ],
        "tr_start": {
         "para": 1,
@@ -5245,12 +5066,12 @@
         252
        ],
        "tr_paras": [
-        17,
-        37
+        15,
+        30
        ],
        "tr_start": {
-        "para": 17,
-        "starts_with": "Unto thee will I speak truth ; as I live, I will not work a",
+        "para": 15,
+        "starts_with": "Unto thee will I speak truth ; as I live, I will not work a ",
         "mid_paragraph": true
        }
       },
@@ -5261,11 +5082,11 @@
         381
        ],
        "tr_paras": [
-        37,
-        57
+        30,
+        43
        ],
        "tr_start": {
-        "para": 37,
+        "para": 30,
         "starts_with": "Be thou in haste when he bids thee be led outward hence, tha",
         "mid_paragraph": true
        }
@@ -5277,12 +5098,12 @@
         538
        ],
        "tr_paras": [
-        57,
-        70
+        43,
+        52
        ],
        "tr_start": {
-        "para": 57,
-        "starts_with": "But if I meet any courageous man, a valiant champion of the",
+        "para": 43,
+        "starts_with": "But if I meet any courageous man, a valiant champion of the ",
         "mid_paragraph": true
        }
       },
@@ -5293,12 +5114,12 @@
         661
        ],
        "tr_paras": [
-        71,
-        87
+        53,
+        62
        ],
        "tr_start": {
-        "para": 71,
-        "starts_with": "I entreat thee, my lady Juliana, by the",
+        "para": 53,
+        "starts_with": "“ I entreat thee, my lady Juliana, by the grace of God, that",
         "mid_paragraph": false
        }
       },
@@ -5309,34 +5130,24 @@
         731
        ],
        "tr_paras": [
-        87,
-        93
+        62,
+        66
        ],
        "tr_start": {
-        "para": 87,
+        "para": 62,
         "starts_with": "unto me it seemeth wise that ye wakefully keep watch against",
         "mid_paragraph": true
        }
       }
      ],
-     "ocr_junk_paras": {
-      "page_numbers": [
-       86
-      ],
-      "fragments": [
-       47
-      ]
-     },
      "kennedy_captions": [
-      27,
-      36,
-      74,
-      76
+      28,
+      55
      ]
     }
    ],
    "line_for_line": false,
-   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few)."
+   "note": "Kennedy's prose, one translation section, one paragraph per line. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The OCR was cleaned on 14 Oct 2026 (running heads and the recto page headlines, page numbers, marginal line ranges, signature letters and Grein's footnotes removed; words broken at line and page ends rejoined; paragraphs as printed, checked against the scan), so there is no ocr_junk_paras list any more. kennedy_captions are Kennedy's fitt numerals II and III; the runic signature (para 66) has the rune letters in square brackets after the words they stand for."
   },
   {
    "oe_work": "guthlac-oe",
@@ -5350,7 +5161,7 @@
       1,
       1379
      ],
-     "tr_para_count": 113,
+     "tr_para_count": 85,
      "chunks": [
       {
        "oe_section": 0,
@@ -5376,11 +5187,11 @@
        ],
        "tr_paras": [
         6,
-        14
+        11
        ],
        "tr_start": {
         "para": 6,
-        "starts_with": "The other tempted him to seek",
+        "starts_with": "The other tempted him to seek by night the gathered band of ",
         "mid_paragraph": true
        }
       },
@@ -5391,11 +5202,11 @@
         370
        ],
        "tr_paras": [
-        14,
-        25
+        11,
+        18
        ],
        "tr_start": {
-        "para": 14,
+        "para": 11,
         "starts_with": "For myself alone, full easily shall I rear a house and place",
         "mid_paragraph": true
        }
@@ -5407,11 +5218,11 @@
         493
        ],
        "tr_paras": [
-        25,
-        35
+        18,
+        25
        ],
        "tr_start": {
-        "para": 25,
+        "para": 18,
         "starts_with": "Nor may my flesh alone of all the fleeting world shun death,",
         "mid_paragraph": true
        }
@@ -5423,12 +5234,12 @@
         617
        ],
        "tr_paras": [
-        35,
-        46
+        25,
+        33
        ],
        "tr_start": {
-        "para": 35,
-        "starts_with": "Now will I speak the truth. God shaped youth and man’s joy,",
+        "para": 25,
+        "starts_with": "Now will I speak the truth. God shaped youth and man’s joy, ",
         "mid_paragraph": true
        }
       },
@@ -5439,11 +5250,11 @@
         738
        ],
        "tr_paras": [
-        46,
-        54
+        33,
+        40
        ],
        "tr_start": {
-        "para": 46,
+        "para": 33,
         "starts_with": "All my days will I do honour to that Judge in word and deed,",
         "mid_paragraph": true
        }
@@ -5455,11 +5266,11 @@
         818
        ],
        "tr_paras": [
-        54,
-        62
+        40,
+        46
        ],
        "tr_start": {
-        "para": 54,
+        "para": 40,
         "starts_with": "So that kindly soul, severed from mankind’s delights, served",
         "mid_paragraph": true
        }
@@ -5471,11 +5282,11 @@
         975
        ],
        "tr_paras": [
-        63,
-        72
+        47,
+        53
        ],
        "tr_start": {
-        "para": 63,
+        "para": 47,
         "starts_with": "It is widely known unto the tribes of men, famed among the p",
         "mid_paragraph": false
        }
@@ -5487,11 +5298,11 @@
         1104
        ],
        "tr_paras": [
-        73,
-        85
+        54,
+        64
        ],
        "tr_start": {
-        "para": 73,
+        "para": 55,
         "starts_with": "In that bitter hour, the strength of Guthlac was wasted ; ye",
         "mid_paragraph": false
        }
@@ -5503,11 +5314,11 @@
         1226
        ],
        "tr_paras": [
-        86,
-        98
+        65,
+        73
        ],
        "tr_start": {
-        "para": 86,
+        "para": 65,
         "starts_with": "So the blessed man at that holy tide, on that bright day, ex",
         "mid_paragraph": false
        }
@@ -5519,12 +5330,12 @@
         1347
        ],
        "tr_paras": [
-        99,
-        111
+        74,
+        84
        ],
        "tr_start": {
-        "para": 99,
-        "starts_with": "Lo ! thou dost speak to me, my friend, questioning me who am",
+        "para": 74,
+        "starts_with": "“ Lo ! thou dost speak to me, my friend, questioning me who ",
         "mid_paragraph": false
        }
       },
@@ -5535,21 +5346,33 @@
         1379
        ],
        "tr_paras": [
-        112,
-        113
+        85,
+        85
        ],
        "tr_start": {
-        "para": 112,
-        "starts_with": "Best is an enduring heart for him who often suffers great af",
+        "para": 85,
+        "starts_with": "“ Best is an enduring heart for him who often suffers great ",
         "mid_paragraph": false
        }
       }
      ],
-     "ocr_junk_paras": {}
+     "kennedy_captions": [
+      4,
+      9,
+      12,
+      21,
+      27,
+      39,
+      50,
+      54,
+      61,
+      67,
+      79
+     ]
     }
    ],
    "line_for_line": false,
-   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few). Para 18 has lost its opening words in the OCR ('strong in answer and in courage...')."
+   "note": "Kennedy's prose, one translation section, one paragraph per line. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The OCR was cleaned on 14 Oct 2026 (running heads and the recto page headlines, page numbers, marginal line ranges, signature letters and Grein's footnotes removed; words broken at line and page ends rejoined; paragraphs as printed, checked against the scan), so there is no ocr_junk_paras list any more. kennedy_captions are Kennedy's fitt numerals II-XII; the opening words of the old para 18 ('Guthlac was ready. God wrought him') and 'Guthlac, nigh at hand.' were restored from the scan."
   },
   {
    "oe_work": "genesis-oe",
@@ -5563,7 +5386,7 @@
       1,
       2936
      ],
-     "tr_para_count": 405,
+     "tr_para_count": 228,
      "chunks": [
       {
        "oe_section": 0,
@@ -5573,7 +5396,7 @@
        ],
        "tr_paras": [
         1,
-        42
+        14
        ],
        "tr_start": {
         "para": 1,
@@ -5588,12 +5411,12 @@
         355
        ],
        "tr_paras": [
-        43,
-        75
+        15,
+        24
        ],
        "tr_start": {
-        "para": 43,
-        "starts_with": "Eat freely of the fruit of every other tree. From that one t",
+        "para": 16,
+        "starts_with": "\" Eat freely of the fruit of every other tree. From that one",
         "mid_paragraph": false
        }
       },
@@ -5604,12 +5427,12 @@
         476
        ],
        "tr_paras": [
-        76,
-        92
+        25,
+        32
        ],
        "tr_start": {
-        "para": 76,
-        "starts_with": "This narrow place is little like those other realms we knew,",
+        "para": 25,
+        "starts_with": "\" This narrow place is little like those other realms we kne",
         "mid_paragraph": false
        }
       },
@@ -5620,11 +5443,11 @@
         598
        ],
        "tr_paras": [
-        93,
-        106
+        33,
+        40
        ],
        "tr_start": {
-        "para": 93,
+        "para": 33,
         "starts_with": "The other tree was dark, sunless, and full of shadows : that",
         "mid_paragraph": false
        }
@@ -5636,11 +5459,11 @@
         744
        ],
        "tr_paras": [
-        106,
-        124
+        40,
+        51
        ],
        "tr_start": {
-        "para": 106,
+        "para": 40,
         "starts_with": "She ate the fruit and set at naught the will and word of God",
         "mid_paragraph": true
        }
@@ -5652,12 +5475,12 @@
         851
        ],
        "tr_paras": [
-        124,
-        139
+        51,
+        60
        ],
        "tr_start": {
-        "para": 124,
-        "starts_with": "Then was God moved to wrath and hard of heart, and drove us",
+        "para": 51,
+        "starts_with": "Then was God moved to wrath and hard of heart, and drove us ",
         "mid_paragraph": true
        }
       },
@@ -5668,12 +5491,12 @@
         986
        ],
        "tr_paras": [
-        140,
-        158
+        61,
+        73
        ],
        "tr_start": {
-        "para": 140,
-        "starts_with": "Then came Almighty God, the Glorious Prince, walking in the",
+        "para": 61,
+        "starts_with": "Then came Almighty God, the Glorious Prince, walking in the ",
         "mid_paragraph": false
        }
       },
@@ -5684,11 +5507,11 @@
         1116
        ],
        "tr_paras": [
-        159,
-        174
+        74,
+        85
        ],
        "tr_start": {
-        "para": 159,
+        "para": 74,
         "starts_with": "After that mortal blow came woe and tribulation. From that s",
         "mid_paragraph": false
        }
@@ -5700,11 +5523,11 @@
         1239
        ],
        "tr_paras": [
-        175,
-        190
+        86,
+        95
        ],
        "tr_start": {
-        "para": 175,
+        "para": 86,
         "starts_with": "Now, when Adam begat another son to be his heir, that sturdy",
         "mid_paragraph": false
        }
@@ -5716,11 +5539,11 @@
         1362
        ],
        "tr_paras": [
-        190,
-        204
+        95,
+        104
        ],
        "tr_start": {
-        "para": 190,
+        "para": 95,
         "starts_with": "The first-born son of Noah was Shem, and the second Ham, and",
         "mid_paragraph": true
        }
@@ -5732,11 +5555,11 @@
         1484
        ],
        "tr_paras": [
-        204,
-        218
+        104,
+        112
        ],
        "tr_start": {
-        "para": 204,
+        "para": 104,
         "starts_with": "And the Warden of that heavenly kingdom, the God of victorie",
         "mid_paragraph": true
        }
@@ -5748,12 +5571,12 @@
         1614
        ],
        "tr_paras": [
-        219,
-        234
+        113,
+        122
        ],
        "tr_start": {
-        "para": 219,
-        "starts_with": "For thee again on earth a fair abiding- place is founded, bl",
+        "para": 113,
+        "starts_with": "\" For thee again on earth a fair abiding-place is founded, b",
         "mid_paragraph": false
        }
       },
@@ -5764,11 +5587,11 @@
         1735
        ],
        "tr_paras": [
-        235,
-        248
+        123,
+        130
        ],
        "tr_start": {
-        "para": 235,
+        "para": 123,
         "starts_with": "Likewise sons were born unto Ham. The names of the eldest we",
         "mid_paragraph": false
        }
@@ -5780,11 +5603,11 @@
         1862
        ],
        "tr_paras": [
-        248,
-        261
+        130,
+        137
        ],
        "tr_start": {
-        "para": 248,
+        "para": 130,
         "starts_with": "The noble sons of men chose them a dwelling in the land of H",
         "mid_paragraph": true
        }
@@ -5796,11 +5619,11 @@
         2017
        ],
        "tr_paras": [
-        261,
-        280
+        137,
+        146
        ],
        "tr_start": {
-        "para": 261,
+        "para": 137,
         "starts_with": "He knew why the Lord afflicted him with plagues ! Then the p",
         "mid_paragraph": true
        }
@@ -5812,11 +5635,11 @@
         2138
        ],
        "tr_paras": [
-        281,
-        295
+        147,
+        155
        ],
        "tr_start": {
-        "para": 281,
+        "para": 147,
         "starts_with": "For a certain man who survived the battle and the sword came",
         "mid_paragraph": false
        }
@@ -5828,12 +5651,12 @@
         2260
        ],
        "tr_paras": [
-        296,
-        310
+        156,
+        164
        ],
        "tr_start": {
-        "para": 296,
-        "starts_with": "I say to thee, O prince of men, before the Holy Lord of eart",
+        "para": 156,
+        "starts_with": "\" I say to thee, O prince of men, before the Holy Lord of ea",
         "mid_paragraph": false
        }
       },
@@ -5844,12 +5667,12 @@
         2381
        ],
        "tr_paras": [
-        311,
-        326
+        165,
+        176
        ],
        "tr_start": {
-        "para": 311,
-        "starts_with": "Then was the wife of Abraham hard of heart and hostile -mind",
+        "para": 165,
+        "starts_with": "Then was the wife of Abraham hard of heart and hostile-minde",
         "mid_paragraph": false
        }
       },
@@ -5860,11 +5683,11 @@
         2505
        ],
        "tr_paras": [
-        327,
-        345
+        177,
+        188
        ],
        "tr_start": {
-        "para": 327,
+        "para": 177,
         "starts_with": "But the woman laughed at the Lord of hosts with derision ; f",
         "mid_paragraph": false
        }
@@ -5876,11 +5699,11 @@
         2627
        ],
        "tr_paras": [
-        345,
-        357
+        188,
+        196
        ],
        "tr_start": {
-        "para": 345,
+        "para": 188,
         "starts_with": "Because of the sins of Sodom and Gomorrah the Lord hath bidd",
         "mid_paragraph": true
        }
@@ -5892,11 +5715,11 @@
         2759
        ],
        "tr_paras": [
-        357,
-        376
+        196,
+        208
        ],
        "tr_start": {
-        "para": 357,
+        "para": 196,
         "starts_with": "And the prince sent forth his thanes and bade them bring him",
         "mid_paragraph": true
        }
@@ -5908,11 +5731,11 @@
         2880
        ],
        "tr_paras": [
-        377,
-        393
+        209,
+        220
        ],
        "tr_start": {
-        "para": 377,
+        "para": 209,
         "starts_with": "Then the Almighty Lord came unto Sarah, according to His wor",
         "mid_paragraph": false
        }
@@ -5924,83 +5747,24 @@
         2936
        ],
        "tr_paras": [
-        394,
-        405
+        221,
+        228
        ],
        "tr_start": {
-        "para": 394,
-        "starts_with": "Abide ye here in this place, and we two will come again, whe",
+        "para": 221,
+        "starts_with": "\" Abide ye here in this place, and we two will come again, w",
         "mid_paragraph": false
        }
       }
      ],
-     "ocr_junk_paras": {
-      "running_heads": [
-       2,
-       7,
-       12,
-       17,
-       40,
-       49,
-       73,
-       82,
-       90,
-       97,
-       104,
-       111,
-       119,
-       126,
-       132,
-       143,
-       154,
-       163,
-       170,
-       180,
-       189,
-       197,
-       205,
-       212,
-       220,
-       228,
-       238,
-       245,
-       252,
-       260,
-       266,
-       276,
-       283,
-       291,
-       301,
-       308,
-       318,
-       329,
-       339,
-       347,
-       354,
-       363,
-       373,
-       383,
-       404
-      ],
-      "footnotes": [
-       89,
-       123,
-       227,
-       237,
-       270,
-       274,
-       275,
-       286,
-       338,
-       358,
-       372,
-       403
-      ]
-     }
+     "kennedy_captions": [
+      15,
+      60
+     ]
     }
    ],
    "line_for_line": false,
-   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few). Paras 22-39 and 48-71 are hard-wrapped printed lines (one sentence split over many 'paragraphs'). Kennedy's own captions '(Beginning of Genesis B)' (para 42) and '(End of Genesis B)' (para 139) mark Genesis B = OE 235-851, matching the OE sections."
+   "note": "Kennedy's prose, one translation section, one paragraph per line. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The OCR was cleaned on 14 Oct 2026 (running heads and the recto page headlines, page numbers, marginal line ranges, signature letters and Grein's footnotes removed; words broken at line and page ends rejoined; paragraphs as printed, checked against the scan), so there is no ocr_junk_paras list any more. kennedy_captions: Kennedy's own '(Beginning of Genesis B)' (para 15) and '(End of Genesis B)' (para 60) mark Genesis B = OE 235-851, matching the OE sections."
   },
   {
    "oe_work": "fates-of-the-apostles-oe",
@@ -6014,7 +5778,7 @@
       1,
       122
      ],
-     "tr_para_count": 12,
+     "tr_para_count": 7,
      "chunks": [
       {
        "oe_section": 0,
@@ -6024,7 +5788,7 @@
        ],
        "tr_paras": [
         1,
-        12
+        7
        ],
        "tr_start": {
         "para": 1,
@@ -6038,93 +5802,56 @@
        "para": 1,
        "oe_lines": [
         1,
-        29
-       ]
-      },
-      {
-       "para": 2,
-       "oe_lines": null,
-       "note": "OCR running head"
-      },
-      {
-       "para": 3,
-       "oe_lines": [
-        30,
         37
        ]
       },
       {
-       "para": 4,
+       "para": 2,
        "oe_lines": [
         37,
         62
        ]
       },
       {
-       "para": 5,
+       "para": 3,
        "oe_lines": [
         63,
         74
        ]
       },
       {
-       "para": 6,
+       "para": 4,
        "oe_lines": [
         75,
         87
        ]
       },
       {
-       "para": 7,
+       "para": 5,
        "oe_lines": [
         88,
-        94
-       ]
-      },
-      {
-       "para": 8,
-       "oe_lines": null,
-       "note": "OCR running head"
-      },
-      {
-       "para": 9,
-       "oe_lines": [
-        94,
         95
        ]
       },
       {
-       "para": 10,
+       "para": 6,
        "oe_lines": [
         96,
-        102
-       ]
-      },
-      {
-       "para": 11,
-       "oe_lines": [
-        103,
         105
        ]
       },
       {
-       "para": 12,
+       "para": 7,
        "oe_lines": [
         105,
         122
        ]
       }
-     ],
-     "ocr_junk_paras": {
-      "running_heads": [
-       2,
-       8
-      ]
-     }
+     ]
     }
    ],
    "line_for_line": false,
-   "note": "Kennedy's prose, one translation section. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The text is uncleaned OCR: ocr_junk_paras lists running heads, page numbers, marginal line ranges and Grein footnotes that sit in the text as separate lines (list is automatic, may miss a few). para_anchors gives an OE line range for every paragraph (the runic signature passage is paras 10-11 = OE 96-105)."
+   "note": "Kennedy's prose, one translation section, one paragraph per line. 'chunks' split it to match the OE work's own sections: tr_paras are 1-based indices of non-empty lines in the text field; where an OE section begins mid-paragraph (mid_paragraph: true) cut the paragraph at the sentence given in starts_with. The OCR was cleaned on 14 Oct 2026 (running heads and the recto page headlines, page numbers, marginal line ranges, signature letters and Grein's footnotes removed; words broken at line and page ends rejoined; paragraphs as printed, checked against the scan), so there is no ocr_junk_paras list any more. para_anchors gives an OE line range for every paragraph (the runic signature passage is para 6 = OE 96-105; the rune letters follow their words in square brackets)."
   }
  ],
  "unpaired_oe": [
@@ -6561,10 +6288,10 @@
    "solomon-and-saturn-oe"
   ],
   "data_glitches_found": [
-   "beowulf-oe section 1 (Lines 126-259): ASPR 140-141 merged into one garbled line ('ða him gebeacnod wice sweotolan tacne'); the section has 133 lines for 134 numbers.",
-   "anonymous-old-english/15 (Pitman, The Whale), tr line 92 and anonymous-old-english/16 (Pitman, The Partridge), tr line 26: Pitman's footnotes ('Footnote 1: Conjecturally supplied...') sit inside the poem text.",
-   "All 11 Kennedy prose works are uncleaned OCR: running heads ('THE CÆDMON POEMS', 'CHRIST'), page numbers, marginal line-range markers, Grein footnotes and Kennedy's section captions appear as separate lines (listed per work in ocr_junk_paras / kennedy_captions), some markers also sit at the end of real paragraphs (e.g. Genesis '3<>4-334 B', Andreas 'teach 449-485 9'), and Genesis paras 22-39 and 48-71 are hard-wrapped printed lines. Guthlac para 18 has lost its opening words. These should be cleaned before facing-page display; the 'starts_with' anchors will survive re-indexing.",
-   "Elene (Garnett) keeps bracketed footnote markers ([1], [4]) inside lines."
+   "beowulf-oe section 1 (Lines 126-259): ASPR 140-141 merged into one garbled line ('ða him gebeacnod wice sweotolan tacne'); the section has 133 lines for 134 numbers. (Fixed 14 Oct 2026.)",
+   "anonymous-old-english/15 (Pitman, The Whale), tr line 92 and anonymous-old-english/16 (Pitman, The Partridge), tr line 26: Pitman's footnotes ('Footnote 1: Conjecturally supplied...') sit inside the poem text. (Fixed 14 Oct 2026.)",
+   "All 11 Kennedy prose works are uncleaned OCR: running heads ('THE CÆDMON POEMS', 'CHRIST'), page numbers, marginal line-range markers, Grein footnotes and Kennedy's section captions appear as separate lines (listed per work in ocr_junk_paras / kennedy_captions), some markers also sit at the end of real paragraphs (e.g. Genesis '3<>4-334 B', Andreas 'teach 449-485 9'), and Genesis paras 22-39 and 48-71 are hard-wrapped printed lines. Guthlac para 18 has lost its opening words. These should be cleaned before facing-page display; the 'starts_with' anchors will survive re-indexing. (Fixed 14 Oct 2026.)",
+   "Elene (Garnett) keeps bracketed footnote markers ([1], [4]) inside lines. (Fixed 14 Oct 2026.)"
   ],
   "method": "Every pair was checked by printing OE and translation side by side (full text for short poems, every 4th-10th line plus the ends for long ones, full view wherever counts differed), so the segment maps are line-exact for the 'lines' pairs except where marked 'approximate'. Long-work boundaries were found by reading the OE first lines of each section against the translation text."
  }
