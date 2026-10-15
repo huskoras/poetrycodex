@@ -7248,6 +7248,207 @@
      "note": "Sweet's prose, one paragraph, facing the whole verse epilogue."
     }
    ]
+  },
+  {
+   "oe_id": "anonymous-old-english/65",
+   "oe_title": "The Riming Poem (Old English)",
+   "translations": [
+    {
+     "id": "anonymous-old-english/312",
+     "title": "The Riming Poem",
+     "translator": "trans. Benjamin Thorpe (1842)",
+     "mode": "blocks",
+     "confidence": "medium",
+     "exceptions": [
+      {
+       "oe": [
+        1,
+        2
+       ],
+       "tr": [
+        1,
+        4
+       ]
+      },
+      {
+       "oe": [
+        3,
+        4
+       ],
+       "tr": [
+        5,
+        8
+       ]
+      },
+      {
+       "oe": [
+        5,
+        8
+       ],
+       "tr": [
+        9,
+        15
+       ]
+      },
+      {
+       "oe": [
+        9,
+        10
+       ],
+       "tr": [
+        16,
+        17
+       ],
+       "note": "Thorpe marks a gap after 'the world'"
+      },
+      {
+       "oe": [
+        11,
+        12
+       ],
+       "tr": [
+        18,
+        21
+       ]
+      },
+      {
+       "oe": [
+        13,
+        13
+       ],
+       "tr": null,
+       "note": "untranslated"
+      },
+      {
+       "oe": [
+        14,
+        14
+       ],
+       "tr": [
+        22,
+        23
+       ]
+      },
+      {
+       "oe": [
+        15,
+        16
+       ],
+       "tr": [
+        24,
+        27
+       ]
+      },
+      {
+       "oe": [
+        17,
+        18
+       ],
+       "tr": [
+        28,
+        31
+       ]
+      },
+      {
+       "oe": [
+        19,
+        20
+       ],
+       "tr": [
+        32,
+        35
+       ]
+      },
+      {
+       "oe": [
+        21,
+        22
+       ],
+       "tr": [
+        36,
+        38
+       ]
+      },
+      {
+       "oe": [
+        23,
+        24
+       ],
+       "tr": [
+        39,
+        41
+       ]
+      },
+      {
+       "oe": [
+        25,
+        26
+       ],
+       "tr": null,
+       "note": "untranslated"
+      },
+      {
+       "oe": [
+        27,
+        30
+       ],
+       "tr": [
+        42,
+        49
+       ]
+      },
+      {
+       "oe": [
+        31,
+        35
+       ],
+       "tr": [
+        50,
+        58
+       ]
+      },
+      {
+       "oe": [
+        36,
+        37
+       ],
+       "tr": [
+        59,
+        60
+       ]
+      },
+      {
+       "oe": [
+        38,
+        42
+       ],
+       "tr": [
+        61,
+        70
+       ]
+      },
+      {
+       "oe": [
+        43,
+        43
+       ],
+       "tr": [
+        71,
+        71
+       ]
+      },
+      {
+       "oe": [
+        44,
+        87
+       ],
+       "tr": null,
+       "note": "Thorpe stops here; the rest of the poem is untranslated in his edition"
+      }
+     ],
+     "note": "Thorpe translates lines 1-43 only, one half-line per line, leaving lines 13 and 25-26 and the second half of the poem untranslated."
+    }
+   ]
   }
  ],
  "works": [
@@ -11337,10 +11538,6 @@
  ],
  "unpaired_oe": [
   {
-   "oe_id": "anonymous-old-english/65",
-   "oe_title": "The Riming Poem (Old English)"
-  },
-  {
    "oe_id": "anonymous-old-english/96",
    "oe_title": "Riddle 25 (Old English)"
   },
@@ -11440,15 +11637,15 @@
  "notes": {
   "date": "2026-10-15",
   "summary": {
-   "oe_poems_paired": 150,
-   "pairs": 150,
+   "oe_poems_paired": 151,
+   "pairs": 151,
    "pairs_by_mode_confidence": {
     "blocks/high": 39,
-    "blocks/medium": 1,
+    "blocks/medium": 2,
     "lines/high": 110
    },
    "works_mapped": 17,
-   "oe_poems_without_translation": 25
+   "oe_poems_without_translation": 24
   },
   "line_numbering": {
    "poems": "All 'oe' and 'tr' numbers in poems[].translations[].exceptions are 1-based indices of NON-EMPTY lines of each poem's text field (blank lines skipped). For the OE texts this equals ASPR numbering except where a poem has heading lines (Waldhere 'I'/'II'), prose rubrics (charms) or 'Finit.'. For prose translations each paragraph is one non-empty line, so 'tr' numbers are paragraph numbers.",
