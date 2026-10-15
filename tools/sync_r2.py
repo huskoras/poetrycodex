@@ -5,10 +5,17 @@ Run after every publish (after the rebuild commit), from the repository root:
     python tools/sync_r2.py            # upload what changed, delete what was removed
     python tools/sync_r2.py --dry-run  # show what would happen, change nothing
 
-It uses rclone with a remote named "r2" (an S3 remote for Cloudflare R2). The owner sets
-that remote up once, in his own terminal, so the keys never pass through anyone else:
+It uses rclone with a remote named "r2" (an S3 remote for Cloudflare R2). The keys are the
+owner's R2 API token, which he saves once in his own terminal, so they never pass through
+anyone else:
 
-    rclone config create r2 s3 provider=Cloudflare access_key_id=<ID> secret_access_key=<SECRET> endpoint=https://<ACCOUNT_ID>.r2.cloudflarestorage.com acl=private no_check_bucket=true
+    setx R2_ACCESS_KEY_ID "<Access Key ID>"
+    setx R2_SECRET_ACCESS_KEY "<Secret Access Key>"
+
+The script reads them from the environment (or, on Windows, from the user's saved
+environment in the registry, so a terminal opened before setx also works) and hands them to
+rclone as RCLONE_CONFIG_R2_* variables; it never prints them. An "r2" remote made with
+`rclone config` works too, if the variables are absent.
 
 What is published is exactly what GitHub Pages published: the committed files of the site
 (git ls-files), not the tools, the Worker code or the notes, and never an uncommitted file.
@@ -22,6 +29,30 @@ import tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUCKET = "r2:poetrycodex-site"
+ACCOUNT_ID = "1f203135a377d2295a7c788481062f11"   # the Cloudflare account (not a secret)
+
+
+def saved_env(name):
+    v = os.environ.get(name)
+    if v or os.name != "nt":
+        return v
+    try:
+        import winreg
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Environment") as k:
+            return winreg.QueryValueEx(k, name)[0]
+    except OSError:
+        return None
+
+
+def rclone_env():
+    env = dict(os.environ)
+    key, secret = saved_env("R2_ACCESS_KEY_ID"), saved_env("R2_SECRET_ACCESS_KEY")
+    if key and secret:
+        env.update({"RCLONE_CONFIG_R2_TYPE": "s3", "RCLONE_CONFIG_R2_PROVIDER": "Cloudflare",
+                    "RCLONE_CONFIG_R2_ACCESS_KEY_ID": key, "RCLONE_CONFIG_R2_SECRET_ACCESS_KEY": secret,
+                    "RCLONE_CONFIG_R2_ENDPOINT": f"https://{ACCOUNT_ID}.r2.cloudflarestorage.com",
+                    "RCLONE_CONFIG_R2_ACL": "private", "RCLONE_CONFIG_R2_NO_CHECK_BUCKET": "true"})
+    return env
 TOP_FILES = {"index.html", "404.html", "app.js", "styles.css", "robots.txt", "site.webmanifest"}
 TOP_EXT = (".png", ".webp", ".ico", ".jpg", ".svg")
 DIRS = ("data/", "poem/", "poet/", "work/", "poets/")
@@ -33,30 +64,51 @@ def published(path):
     return path.startswith(DIRS)
 
 
+def rclone_exe():
+    import shutil
+    found = shutil.which("rclone")
+    if found:
+        return found
+    # winget puts its link here; a shell opened before the install has not got it on PATH
+    link = os.path.join(os.environ.get("LOCALAPPDATA", ""), "Microsoft", "WinGet", "Links", "rclone.exe")
+    return link if os.path.exists(link) else "rclone"
+
+
 def run(args, **kw):
+    if args and args[0] == "rclone":
+        args = [rclone_exe()] + args[1:]
     print("+", " ".join(args), flush=True)
-    return subprocess.run(args, cwd=ROOT, **kw)
+    return subprocess.run(args, cwd=ROOT, env=rclone_env(), **kw)
+
+
+def snapshot(files, dest):
+    """Write the committed (HEAD) copy of every published file under dest, so the bucket gets
+    exactly what GitHub has, whatever is being edited in the working tree meanwhile."""
+    import tarfile
+    p = subprocess.Popen(["git", "archive", "--format=tar", "HEAD", "--", *DIRS, *sorted({f for f in files if "/" not in f})],
+                         cwd=ROOT, stdout=subprocess.PIPE)
+    with tarfile.open(fileobj=p.stdout, mode="r|") as tar:
+        tar.extractall(dest, filter="data")
+    if p.wait():
+        sys.exit("git archive failed")
 
 
 def main():
     dry = "--dry-run" in sys.argv
     files = subprocess.run(["git", "ls-files", "-z"], cwd=ROOT, capture_output=True).stdout.decode("utf-8").split("\0")
     files = sorted(f for f in files if f and published(f))
-    dirty = subprocess.run(["git", "status", "--porcelain", "--", *DIRS, *TOP_FILES], cwd=ROOT,
-                           capture_output=True, text=True).stdout.splitlines()
-    dirty = [d for d in dirty if not d.startswith("??")]
-    if dirty:
-        print(f"Warning: {len(dirty)} published files have uncommitted changes; the bucket gets the "
-              "working-tree copy. Commit first for an exact match with GitHub.", file=sys.stderr)
     print(f"{len(files)} published files")
     with tempfile.TemporaryDirectory() as tmp:
+        src = os.path.join(tmp, "site")
+        print("Exporting the committed site ...", flush=True)
+        snapshot(files, src)
         lst = os.path.join(tmp, "files.txt")
         with open(lst, "w", encoding="utf-8", newline="\n") as fh:
             fh.write("\n".join(files) + "\n")
         common = ["--transfers", "32", "--checkers", "64", "--fast-list", "--stats", "30s", "--stats-one-line"]
         if dry:
             common.append("--dry-run")
-        r = run(["rclone", "copy", "--files-from", lst, "--checksum", "--no-traverse", *common, ".", BUCKET])
+        r = run(["rclone", "copy", "--files-from", lst, "--checksum", "--no-traverse", *common, src, BUCKET])
         if r.returncode:
             sys.exit(r.returncode)
         # Delete what the site no longer has (a renamed or removed page).
