@@ -590,11 +590,14 @@
   const parList = (kind, key) => ((PAR_DATA && PAR_DATA[kind]) || {})[key] || [];
   const parPrefs = () => readStore(PAR_KEY);
   const setParPrefs = (change) => writeStore(PAR_KEY, Object.assign(parPrefs(), change));
-  // The other text to open with, when the reader keeps facing pages on: the one last chosen
-  // here, else the first.
+  // Facing pages are the default (the owner's wish, 15 Oct 2026: the Old English on the left,
+  // the translation on the right); only a reader who has turned them off reads one text.
+  const parOn = () => parPrefs().on !== false;
+  // The other text to open with, when facing pages are on: the one last chosen here, else
+  // the first.
   function parPick(list, key) {
     const p = parPrefs();
-    if (!p.on || !list.length) return null;
+    if (!parOn() || !list.length) return null;
     const want = p.pick && p.pick[key];
     return list.find((e) => e.with === want) || list[0];
   }
@@ -923,7 +926,7 @@
       const b = btns.find((x) => x.dataset.with === e.with);
       if (b) b.disabled = true;
       loadPartner(ctx.kind, e.with).then(() => {
-        if (slot.isConnected && parPrefs().on) open(e); else if (b) b.disabled = false;
+        if (slot.isConnected && parOn()) open(e); else if (b) b.disabled = false;
       }).catch(() => { if (b) { b.disabled = false; flash(b, "Could not load it"); } });
     };
     btns.forEach((b) => b.addEventListener("click", () => {
