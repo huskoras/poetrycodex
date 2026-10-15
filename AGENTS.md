@@ -104,8 +104,18 @@ hard-rejects above 100 MB. As of September 2026 content is split as above: the b
 fetches only the ~4.5 MB index up front, then fetches one poet or work file (usually a
 few dozen KB to a few hundred KB) only when that specific poem or work section is opened.
 
-**Deploy:** GitHub Pages serves `main` directly. **Pushing to `main` IS deploying** —
-the live site updates ~1 minute after a push. There is no build or deploy step.
+**Deploy (since 15 Oct 2026): Cloudflare R2 + the `poetrycodex-site` Worker.** The site
+outgrew GitHub Pages (1.5 GB, 112,000 files; Pages publishes at most 1 GB) and Cloudflare
+Pages (100,000 files, 25 MiB a file). The published files now live in the R2 bucket
+`poetrycodex-site`, and `site-worker/` (routes `poetrycodex.com/*`, `www.poetrycodex.com/*`)
+serves them exactly as GitHub Pages did (folder → index.html, 301 to the slashed address,
+404.html, www → apex, 5-minute edge cache). **A publish is now: commit, `git push`, then
+`python tools/sync_r2.py`**, which uploads the committed (HEAD) copy of every published
+file that changed and deletes what was removed. It needs rclone (installed with winget) and
+the owner's R2 key in his user environment (`R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, saved
+by him with `tools/save_r2_keys.ps1`; never put a key in the repo or in chat). GitHub stays the
+master copy, and the way back: comment out the routes in `site-worker/wrangler.toml` and
+`wrangler deploy` (the DNS records still point at GitHub Pages).
 
 **Cache-busting:** `index.html` loads `styles.css?v=N` and `app.js?v=N`. If you change
 either file, bump `N` in `index.html` or returning visitors get a stale cached copy.
@@ -484,7 +494,8 @@ python tools/build_pages.py                # regenerates poem/, poet/, work/, si
 python tools/shrink_portraits.py           # only if new poets/*.jpg portraits were added
 git add data/poets/<slug>.json data/index.json data/home.json data/search.json data/sources poem poet work sitemap*.xml 404.html index.html
 git commit -m "Add X"
-git push                                   # this deploys
+git push                                   # GitHub, the master copy
+python tools/sync_r2.py                    # this deploys: uploads the committed site to Cloudflare R2
 ```
 
 Commit and push **incrementally** (after each poet/work), not in one big batch at the end —

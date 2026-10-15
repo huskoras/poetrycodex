@@ -9,7 +9,9 @@ deploy workflow, current state and known gaps).
 if you learn something durable about this project, update `AGENTS.md`, not this file.
 
 Quick reminders:
-- Static site, no build step. `git push` to `main` **is** the deploy (GitHub Pages).
+- Static site, no build step. Since 15 Oct 2026 it is served from Cloudflare R2 by
+  `site-worker/`: publish = commit, `git push` (GitHub stays the master copy), then
+  `python tools/sync_r2.py` (uploads the committed site to R2). See AGENTS.md "Deploy".
 - Content lives in `data/poets/<slug>.json` + `data/works/<slug>.json` (full text).
   `data/index.json` is a generated startup index — after any content edit, run
   `python tools/build_index.py` (recomputes `count`, `subjects[]`, per-poet

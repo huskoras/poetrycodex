@@ -5,14 +5,15 @@ main = "src/index.js"
 compatibility_date = "2026-10-01"
 workers_dev = true
 
+# The domain is served by this Worker since 15 Oct 2026 (the owner's go-ahead after testing
+# the workers.dev address). To go back to GitHub Pages, comment the routes out and run
+# `wrangler deploy` again: the DNS records still point at GitHub and never change.
+# (Top-level keys must come before the [[r2_buckets]] table, or TOML puts them inside it.)
+routes = [
+  { pattern = "poetrycodex.com/*", zone_name = "poetrycodex.com" },
+  { pattern = "www.poetrycodex.com/*", zone_name = "poetrycodex.com" },
+]
+
 [[r2_buckets]]
 binding = "SITE"
 bucket_name = "poetrycodex-site"
-
-# Switching the domain over (only after the workers.dev address has been tested):
-# uncomment these two routes and run `wrangler deploy` again. To go back to GitHub Pages,
-# comment them out and deploy again (the DNS records never change).
-# routes = [
-#   { pattern = "poetrycodex.com/*", zone_name = "poetrycodex.com" },
-#   { pattern = "www.poetrycodex.com/*", zone_name = "poetrycodex.com" },
-# ]
