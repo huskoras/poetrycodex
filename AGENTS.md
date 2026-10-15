@@ -117,6 +117,15 @@ by him with `tools/save_r2_keys.ps1`; never put a key in the repo or in chat). G
 master copy, and the way back: comment out the routes in `site-worker/wrangler.toml` and
 `wrangler deploy` (the DNS records still point at GitHub Pages).
 
+**Shards (fast poem pages, 15 Oct 2026):** `tools/build_shards.py` cuts every poet into
+files of 50 poems (`data/c/<poet>/<k>.json`) and every work into one file per section
+(`data/ws/<work>/<i>.json`). `app.js` draws a poem page or a work-section page from its shard
+at once, before `data/index.json` (32 MB) arrives, and draws it again in place (same scroll)
+when the index is in. The shards are derived and NOT in git (`.gitignore`): `sync_r2.py`
+builds them from the committed copy it uploads. Where they are missing (a local copy, GitHub
+Pages) the app falls back to the whole poet or work file. Run `python tools/build_shards.py`
+yourself only to test locally. `POEM_SHARD` in app.js must equal `SHARD` in the script.
+
 **Cache-busting:** `index.html` loads `styles.css?v=N` and `app.js?v=N`. If you change
 either file, bump `N` in `index.html` or returning visitors get a stale cached copy.
 

@@ -45,12 +45,16 @@ def css_version():
 
 CSS_V = css_version()
 
+FONT_CSS = ('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;'
+            '0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:'
+            'ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap')
+# The font stylesheet is loaded without holding up the first paint (the text shows at once in
+# the fallback fonts and takes the web fonts when they arrive), as in index.html.
 FONTS = (
     '<link rel="preconnect" href="https://fonts.googleapis.com" />'
     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />'
-    '<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;'
-    '0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:'
-    'ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />'
+    f'<link rel="preload" as="style" href="{FONT_CSS}" onload="this.onload=null;this.rel=\'stylesheet\'" />'
+    f'<noscript><link rel="stylesheet" href="{FONT_CSS}" /></noscript>'
 )
 
 

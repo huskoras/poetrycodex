@@ -102,6 +102,18 @@ def main():
         src = os.path.join(tmp, "site")
         print("Exporting the committed site ...", flush=True)
         snapshot(files, src)
+        # The shards (tools/build_shards.py) are made from that same copy: they are derived
+        # files, not in git, and are uploaded with the rest.
+        r = subprocess.run([sys.executable, "-I", os.path.join(ROOT, "tools", "build_shards.py"), "--root", src], cwd=ROOT)
+        if r.returncode:
+            sys.exit("build_shards failed")
+        for sub in ("c", "ws"):
+            base = os.path.join(src, "data", sub)
+            for dirpath, _, names in os.walk(base):
+                for n in names:
+                    files.append(os.path.relpath(os.path.join(dirpath, n), src).replace(os.sep, "/"))
+        files.sort()
+        print(f"{len(files)} files with the shards", flush=True)
         lst = os.path.join(tmp, "files.txt")
         with open(lst, "w", encoding="utf-8", newline="\n") as fh:
             fh.write("\n".join(files) + "\n")

@@ -19,6 +19,7 @@
   let HOME = null;           // home.json once it is in
   let HOME_FAILED = false;   // home.json missing, broken, unreachable or slow: the home page says so while it waits
   let EARLY_HOME = "";       // the home page as drawn from home.json, while it is on screen
+  let EARLY_DRAWN = "";     // the hash of a poem or book page drawn from its shard before the index
   let INDEX_ERROR = "";      // why data/index.json could not be loaded, if it could not
 
   // ---------- critical engine ----------
@@ -71,6 +72,54 @@
         .catch((e) => { WORK_CACHE.delete(slug); throw e; }));
     }
     return WORK_CACHE.get(slug);
+  }
+  // ---------- shards: one poem or one book opens without the index ----------
+  // tools/build_shards.py (run by tools/sync_r2.py into the copy on Cloudflare) cuts every
+  // poet into files of POEM_SHARD poems (data/c/<poet>/<k>.json) and every work into one file
+  // per section (data/ws/<work>/<i>.json). A poem page or a book page is drawn from its shard
+  // at once, before data/index.json (32 MB) has arrived; when the index is in, the page is
+  // drawn again in place with what only the index knows (related poems, other translations).
+  // Where there are no shards (a local copy, GitHub Pages) the whole poet or work file is
+  // fetched as before.
+  const POEM_SHARD = 50;
+  const SHARD_CACHE = new Map();
+  function fetchShard(path) {
+    if (!SHARD_CACHE.has(path)) {
+      SHARD_CACHE.set(path, fetch(path).then((r) => (r.ok ? r.json() : null)).catch(() => null));
+    }
+    return SHARD_CACHE.get(path);
+  }
+  // Before the index, the poet's own record stands in for its index entry (name, dates,
+  // category for the language tag, portrait).
+  function notePoet(slug, rec) {
+    if (!POETS[slug] && rec) POETS[slug] = Object.assign({ slug }, rec, { poems: undefined });
+  }
+  // {slug, poems}: the poems of this shard at their places in an array as long as the poet's
+  // list, with the titles either side of it for Previous / Next; or the whole poet file.
+  function loadPoemPage(slug, n) {
+    const k = Math.floor(n / POEM_SHARD);
+    return fetchShard(`data/c/${encodeURIComponent(slug)}/${k}.json`).then((s) => {
+      if (!s || !Array.isArray(s.poems)) {
+        return fetchPoetFile(slug).then((f) => { notePoet(slug, f); return f; });
+      }
+      notePoet(slug, s.poet);
+      const poems = new Array(s.total);
+      s.poems.forEach((p, j) => { poems[s.start + j] = p; });
+      if (s.before != null) poems[s.start - 1] = { title: s.before };
+      if (s.after != null) poems[s.start + s.poems.length] = { title: s.after };
+      return { slug, poems };
+    });
+  }
+  // The work with section i in full and the titles either side; or the whole work file.
+  function loadSectionPage(slug, i) {
+    return fetchShard(`data/ws/${encodeURIComponent(slug)}/${i}.json`).then((s) => {
+      if (!s || !s.work || !s.section) return fetchWorkFile(slug);
+      const sections = new Array(s.count);
+      sections[i] = s.section;
+      if (s.prev != null) sections[i - 1] = { title: s.prev };
+      if (s.next != null) sections[i + 1] = { title: s.next };
+      return Object.assign({}, s.work, { sections });
+    });
   }
   function renderLoading() { app.innerHTML = `<p class="loading">Loading…</p>`; }
   function renderFetchError(e) {
@@ -607,7 +656,7 @@
     const key = kind + ":" + id;
     if (FX_READY.has(key)) return Promise.resolve(FX_READY.get(key));
     const got = kind === "poem"
-      ? fetchPoetFile(id.split("/")[0]).then((f) => f.poems[+id.split("/")[1]])
+      ? loadPoemPage(id.split("/")[0], +id.split("/")[1]).then((f) => f.poems[+id.split("/")[1]])
       : fetchWorkFile(id);
     return got.then((d) => { if (!d) throw new Error("missing"); FX_READY.set(key, d); return d; });
   }
@@ -734,8 +783,8 @@
     return !!(r && s.oe && r[0] <= s.oe[1] && r[1] >= s.oe[0]);
   };
   // The parallel entries that have something for this book.
-  function workParList(slug, i) {
-    const w = WORKS[slug];
+  function workParList(slug, i, cur) {
+    const w = WORKS[slug] || cur;   // cur: the work as loaded, before the index is in
     return w ? parList("works", slug).filter((e) =>
       e.sections.some((s) => (e.orig === slug ? oeApplies(s, w, i) : s.tr === i))) : [];
   }
@@ -1088,7 +1137,7 @@
     if (isHomeHash(location.hash)) route();
   }, 1500);
 
-  fetch("data/index.json")
+  fetch("data/index.json", { priority: "low" })   // after the home file and any shard
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((d) => {
       DATA = d;
@@ -1122,6 +1171,12 @@
         const html = homeHTML();
         if (html !== EARLY_HOME) app.innerHTML = html;
         EARLY_HOME = "";
+      } else if (EARLY_DRAWN && EARLY_DRAWN === location.hash) {
+        // A poem or a book drawn from its shard: drawn again in place, where the reader is.
+        const y = window.scrollY;
+        route();
+        restoreY = y;
+        jumpTo(y);
       } else route();
     })
     .catch((e) => {
@@ -1239,6 +1294,10 @@
       return;
     }
     EARLY_HOME = "";
+    // A poem or a book of a work is drawn from its shard at once; the index redraws it later.
+    let m;
+    if (!INDEX_ERROR && (m = h.match(/^#\/poem\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderDetail(m[1], parseInt(m[2], 10)); return; }
+    if (!INDEX_ERROR && (m = h.match(/^#\/work\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderWorkSection(m[1], parseInt(m[2], 10)); return; }
     const nav = EARLY_NAV.find(([re]) => re.test(h));
     setRoute(nav ? nav[1] : "", "sub");
     app.innerHTML = INDEX_ERROR ? indexErrorHTML() : `<p class="loading">Opening the archive…</p>`;
@@ -1741,7 +1800,7 @@
   const verLabel = (o) => o.translator ? trLabel(o.translator) : (o.subtitle || "Original text");
   const verShort = (o) => o.translator ? trSurname(o.translator) : "original";
   function otherTranslations(w) {
-    if (!w || !w.workGroup) return [];
+    if (!w || !w.workGroup || !DATA) return [];
     const mine = w.translator ? translatorShort(trName(w.translator)) : "";
     return DATA.works.filter((o) => o.slug !== w.slug && o.workGroup === w.workGroup &&
       (o.translator ? translatorShort(trName(o.translator)) !== mine : !!w.translator));
@@ -1810,13 +1869,14 @@
 
   // ---------- WORK: one section (canto) reader ----------
   function renderWorkSection(slug, i) {
-    if (!WORKS[slug]) { location.hash = "#/"; return; }
-    renderLoading();
+    if (DATA && !WORKS[slug]) { location.hash = "#/"; return; }
+    if (EARLY_DRAWN !== location.hash) renderLoading();
     const requestedHash = location.hash;
-    Promise.all([fetchWorkFile(slug), fetchParallel()]).then(([w]) => {
+    Promise.all([loadSectionPage(slug, i), fetchParallel()]).then(([w]) => {
       if (location.hash !== requestedHash) return null; // route changed while fetching
       if (!w.sections[i]) { location.hash = "#/work/" + slug; return null; }
-      const pick = parPick(workParList(slug, i), "w:" + slug);   // as on a poem: the other text first
+      notePoet(w.authorSlug, { name: w.author });
+      const pick = parPick(workParList(slug, i, w), "w:" + slug);   // as on a poem: the other text first
       return (pick ? loadPartner("work", pick.with).catch(() => null) : Promise.resolve()).then(() => {
         if (location.hash === requestedHash) renderWorkSectionReady(w, slug, i);
       });
@@ -1824,12 +1884,13 @@
   }
   function renderWorkSectionReady(w, slug, i) {
     const s = w.sections[i];
-    const wt = workTitle(WORKS[slug]);
+    const wt = WORKS[slug] ? workTitle(WORKS[slug]) : `${w.title} — ${w.author}`;
     const cite = { author: w.author, work: w.title, title: w.sections.length > 1 ? s.title : "",
                    translator: w.translator, path: `/work/${slug}/${i}/` };
     const entry = { id: "work:" + slug + "/" + i, kind: "part", author: w.author, translator: w.translator || "",
                     title: w.sections.length > 1 ? w.title + " · " + s.title : w.title };
-    const par = workParList(slug, i);
+    const par = workParList(slug, i, w);
+    EARLY_DRAWN = DATA ? "" : location.hash;
     setTitle(w.sections.length > 1 ? wt.replace(w.title, w.title + ", " + s.title) : wt);
     app.innerHTML = `
       <article class="detail">
@@ -2414,10 +2475,10 @@
   // id format: "<authorSlug>/<n>" where n is the poem's index within that
   // poet's own poems array (stable across content edits to OTHER poets).
   function renderDetail(slug, n) {
-    if (!POETS[slug]) { location.hash = "#/"; return; }
-    renderLoading();
+    if (DATA && !POETS[slug]) { location.hash = "#/"; return; }
+    if (EARLY_DRAWN !== location.hash) renderLoading();   // a page drawn before the index is redrawn in place
     const requestedHash = location.hash;
-    Promise.all([fetchPoetFile(slug), fetchParallel()]).then(([poetFile]) => {
+    Promise.all([loadPoemPage(slug, n), fetchParallel()]).then(([poetFile]) => {
       if (location.hash !== requestedHash) return null; // route changed while fetching
       const p = poetFile.poems[n];
       if (!p) { location.hash = "#/poet/" + slug; return null; }
@@ -2765,7 +2826,8 @@
     const themes = p.subjects.length
       ? `<div class="themes">${p.subjects.map((s) => `<span class="theme-tag" data-sub="${esc(s)}">${esc(s)}</span>`).join("")}</div>` : "";
     const lang = langAttr(p.authorSlug, p.translator);
-    const form = (DATA.poems.find((q) => q.id === p.id) || {}).form;   // index only (B3)
+    const form = DATA ? (DATA.poems.find((q) => q.id === p.id) || {}).form : "";   // index only (B3)
+    EARLY_DRAWN = DATA ? "" : location.hash;
     const cite = { author: p.author, title: p.title, translator: p.translator, path: `/poem/${slug}/${n}/` };
     const entry = { id: slug + "/" + n, kind: "poem", title: p.title, author: p.author, translator: p.translator || "" };
     const par = parList("poems", p.id);
@@ -2791,11 +2853,11 @@
           <button ${n === 0 ? "disabled" : ""} data-go="${n - 1}"><span class="dir">← Previous</span>${n > 0 ? esc(poems[n - 1].title) : ""}</button>
           <button class="next" ${n === poems.length - 1 ? "disabled" : ""} data-go="${n + 1}"><span class="dir">Next →</span>${n < poems.length - 1 ? esc(poems[n + 1].title) : ""}</button>
         </div>
-        ${relatedHTML(p)}
+        ${DATA ? relatedHTML(p) : ""}
       </article>`;
     document.getElementById("back").addEventListener("click", () => { if (history.length > 1) history.back(); else location.hash = "#/poems"; });
     app.querySelectorAll(".theme-tag").forEach((t) => t.addEventListener("click", () => {
-      const isSub = DATA.subjects.some((s) => s.name === t.dataset.sub);
+      const isSub = !DATA || DATA.subjects.some((s) => s.name === t.dataset.sub);
       filterSubject = isSub ? t.dataset.sub : "All";
       filterForm = "All";
       query = isSub ? "" : t.dataset.sub;
