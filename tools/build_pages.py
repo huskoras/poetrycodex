@@ -472,7 +472,9 @@ def work_meta(w):
 def poet_page(poet, poem_list, works):
     name = poet["name"]
     slug = poet["slug"]
-    bio = [b for b in (poet.get("bio") or []) if b and b.strip()]
+    bio = poet.get("bio") or []
+    bio = [bio] if isinstance(bio, str) else bio      # one paragraph given as a plain string
+    bio = [b for b in bio if b and b.strip()]
     bio_block = "\n".join(f"<p>{bio_html(b)}</p>" for b in bio)
     works_block = ""
     if works:

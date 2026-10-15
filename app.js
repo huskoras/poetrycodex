@@ -2306,7 +2306,7 @@
             <h1 class="poet-name">${esc(poet.name)}</h1>
             <p class="poet-dates">${esc(poet.dates)}</p>${continueBlock}
             <div class="poet-bio">
-              ${poet.bio.map((para) => `<p>${para}</p>`).join("")}
+              ${[].concat(poet.bio || []).map((para) => `<p>${para}</p>`).join("")}
             </div>
           </div>
         </div>
