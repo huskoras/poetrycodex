@@ -695,7 +695,7 @@
             <div class="cite-row"><button class="account-delete" type="button">Delete my account</button></div>
           </section>
           <p class="account-status" role="status"></p>
-          <p class="account-small"><a href="/privacy/">Privacy and personal data</a></p>
+          <p class="account-small"><a href="/privacy/">Privacy and personal data</a> · <a href="/terms/">Terms of use</a></p>
         </article>`;
       const status = app.querySelector(".account-status");
       app.querySelector(".account-out").addEventListener("click", async () => {
@@ -722,8 +722,9 @@
         save; no password is ever given to the site, and nothing is shared or shown to anyone.</p>
         <div class="account-google"><p class="loading">Loading Google sign-in\u2026</p></div>
         <p class="account-status" role="status"></p>
-        <p class="account-small">By signing in you agree that your name, email address, shelf and notes are kept for this
-        purpose as described in <a href="/privacy/">Privacy and personal data</a>. You can delete your account at any time.</p>
+        <p class="account-small">By signing in you accept the <a href="/terms/">Terms of use</a> and agree that your name,
+        email address, shelf and notes are kept for this purpose as described in <a href="/privacy/">Privacy and personal
+        data</a>. You can delete your account at any time.</p>
       </article>`;
     showGoogleButton(app.querySelector(".account-google"), app.querySelector(".account-status"));
   }
