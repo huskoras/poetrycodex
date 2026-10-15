@@ -1375,3 +1375,5 @@ textarea.ask-input {
   .tb-acct.is-in .tb-acct-l { display: none; }
 }
 @media print { .tb-acct, .hero-tools { display: none !important; } }
+.mark-date, .note-date { margin: -.2rem 0 .55rem; color: var(--faint); font-family: var(--sans); font-size: .76rem; letter-spacing: .02em; }
+.note-date { margin: .3rem 0 0; }

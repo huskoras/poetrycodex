@@ -377,7 +377,8 @@
   function setNote(entry, text) {
     const notes = allNotes();
     text = String(text || "").slice(0, NOTE_MAX);
-    if (text.trim()) notes[entry.id] = Object.assign({}, entry, { text, updated: new Date().toISOString() });
+    const now = new Date().toISOString(), was = notes[entry.id];
+    if (text.trim()) notes[entry.id] = Object.assign({}, entry, { text, created: (was && (was.created || was.updated)) || now, updated: now });
     else delete notes[entry.id];
     const kept = writeStore(NOTES_KEY, { v: 1, notes });
     updateShelfNav();
@@ -410,6 +411,7 @@
         <textarea class="note-input" id="note-input" rows="4" maxlength="${NOTE_MAX}"
                   placeholder="A private note on this text: what struck you, a line to come back to\u2026">${esc(note ? note.text : "")}</textarea>
         <p class="note-status">${visitOnly() && !signedIn() ? NOTE_VISIT : noteKept()}</p>
+        ${note ? `<p class="note-date">${esc(writtenLine(note))}</p>` : ""}
       </div>`;
   }
   // Saved as it is typed, so leaving the page never loses a word.
@@ -451,6 +453,11 @@
   // translator, items: [{id, a, b, quote, text, updated}]}}}, kept like the other notes (this
   // browser, and the account of a signed-in reader); listed on the shelf and the account page.
   const MARKS_KEY = "pc-marks";
+  const writtenLine = (n) => {
+    if (!n || !n.updated) return "";
+    const first = shortDate(n.created || n.updated), last = shortDate(n.updated);
+    return "Written " + first + (last !== first ? " \u00b7 edited " + last : "");
+  };
   const MARK_MAX = 2000;
   function allMarks() {
     const m = readStore(MARKS_KEY).marks;
@@ -463,7 +470,8 @@
     const g = marks[entry.id] || { title: entry.title, author: entry.author, kind: entry.kind, translator: entry.translator || "", items: [] };
     g.items = (g.items || []).filter((x) => x.id !== mark.id);
     const text = String(mark.text || "").slice(0, MARK_MAX);
-    if (text.trim()) g.items.push(Object.assign({}, mark, { text, updated: new Date().toISOString() }));
+    const now = new Date().toISOString();
+    if (text.trim()) g.items.push(Object.assign({}, mark, { text, created: mark.created || mark.updated || now, updated: now }));
     g.items.sort((x, y) => x.a - y.a);
     if (g.items.length) marks[entry.id] = g; else delete marks[entry.id];
     writeStore(MARKS_KEY, { v: 1, marks });
@@ -547,6 +555,7 @@
     pop.className = "mark-pop";
     pop.innerHTML = `
       <p class="mark-quote">\u201c${esc(m.quote)}\u201d</p>
+      ${isNew ? "" : `<p class="mark-date">${esc(writtenLine(m))}</p>`}
       <textarea class="mark-input" rows="3" maxlength="${MARK_MAX}" aria-label="Your note"
         placeholder="Your note on ${m.a === m.b ? "this line" : "these lines"}\u2026">${esc(m.text || "")}</textarea>
       <div class="mark-actions">
@@ -578,7 +587,7 @@
       <li class="mark-row">
         <p class="mark-row-quote">\u201c${esc(m.quote)}\u201d</p>
         <p class="mark-row-note">${esc(m.text)}</p>
-        <p class="mark-row-src"><a href="${esc(routeFor(id))}">${esc(g.title || "")}</a>${g.author ? ` \u00b7 ${esc(g.author)}` : ""} \u00b7 ${esc(shortDate(m.updated))}</p>
+        <p class="mark-row-src"><a href="${esc(routeFor(id))}">${esc(g.title || "")}</a>${g.author ? ` \u00b7 ${esc(g.author)}` : ""} \u00b7 ${esc(writtenLine(m))}</p>
       </li>`;
 
   // ---------- the reader's readings with the Codex ----------
