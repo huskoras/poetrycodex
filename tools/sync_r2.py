@@ -117,15 +117,20 @@ def main():
                     files.append(os.path.relpath(os.path.join(dirpath, n), src).replace(os.sep, "/"))
         files.sort()
         print(f"{len(files)} files with the shards", flush=True)
-        lst = os.path.join(tmp, "files.txt")
-        with open(lst, "w", encoding="utf-8", newline="\n") as fh:
-            fh.write("\n".join(files) + "\n")
         common = ["--transfers", "32", "--checkers", "64", "--fast-list", "--stats", "30s", "--stats-one-line"]
         if dry:
             common.append("--dry-run")
-        r = run(["rclone", "copy", "--files-from", lst, "--checksum", "--no-traverse", *common, src, BUCKET])
-        if r.returncode:
-            sys.exit(r.returncode)
+        # Two passes: everything a page loads (app.js?v=N, styles.css, data, images) first, the
+        # pages themselves and sw.js after, so no reader is sent a new page while the files it
+        # names are still the old ones (a browser would keep that old copy under the new ?v=N).
+        later = lambda f: f.endswith(".html") or f == "sw.js"
+        for n, part in enumerate(([f for f in files if not later(f)], [f for f in files if later(f)])):
+            lst = os.path.join(tmp, f"files-{n}.txt")
+            with open(lst, "w", encoding="utf-8", newline="\n") as fh:
+                fh.write("\n".join(part) + "\n")
+            r = run(["rclone", "copy", "--files-from", lst, "--checksum", "--no-traverse", *common, src, BUCKET])
+            if r.returncode:
+                sys.exit(r.returncode)
         # Delete what the site no longer has (a renamed or removed page).
         have = run(["rclone", "lsf", "-R", "--files-only", "--fast-list", BUCKET], capture_output=True, text=True)
         if have.returncode:
