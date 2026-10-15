@@ -354,6 +354,16 @@ is `privacy/index.html` (published by sync_r2.py with the `privacy/` folder). Lo
 `site-worker/wrangler.localtest.toml` (gitignored, no routes) with `.dev.vars` holding the TEST
 client id `test-client.…` and a throwaway DEV_JWKS key — the Worker accepts that key only for a
 client id starting `test-client.`, so it can never sign anyone into the real site.
+Synced kinds (`SYNC_KINDS` in app.js = `KEYS` in accounts.js): shelf, notes, reading, parallel,
+**marks** (notes on lines: select text in a verse poem → "Note on this line"; anchored to the
+lines' `data-i`, poemHTML's running index of every rendered line, so never renumber how
+poemHTML emits lines; gold rule + dot in the text; listed on the shelf and `#/account`) and
+**readings** (the last 30 texts the engine wrote for this reader, recorded in bindEngine's
+run()). `#/account` signed in = "Your library" (medallion header, Open your shelf, counts, recent
+saves, line notes, notes, readings, then sign out/delete). The site never shows the owner's
+name or a place; it is "run by an international group of academics" (owner, 16 Oct 2026).
+The emblem is the Walters Art Museum's Medallion with Alexander the Great (59.1, CC0), credited
+in the footer and on About.
 
 ---
 
