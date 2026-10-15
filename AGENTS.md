@@ -337,6 +337,24 @@ saved; the footer always has "Your shelf". The same goes for the reading positio
 contents page and the poet page offer "Continue reading", which reopens the book at that place
 (or the next book, once one is finished), and "Forget my place" clears it.
 
+**Reader accounts (15 Oct 2026; the owner's go-ahead):** "Continue with Google" on `#/account`
+keeps the shelf, notes, reading places and facing-page settings in the reader's account as well
+as in the browser. Server: `site-worker/src/accounts.js` on the site Worker (`/api/config`,
+`/api/auth/google`, `/api/me`, `PUT /api/data`, `/api/auth/logout`, `DELETE /api/account`), D1
+database `poetrycodex-readers` (`site-worker/schema.sql`; apply with `wrangler d1 execute
+poetrycodex-readers --remote --file schema.sql`). Google Identity Services gives the page a
+signed ID token; the Worker checks it against Google's keys (no client secret exists), keeps an
+opaque session token's SHA-256 (cookie `pc_session`, HttpOnly, Path=/api, 180 days), and refuses
+any change not sent from the site's own Origin. Client: the "reader accounts" section of app.js;
+the browser copy stays the one pages read, the account copy is pulled after load and on return
+to the tab, changes are pushed 1.5 s later (`pc-account`, `pc-sync` in localStorage). The public
+client id lives in TWO places that must match: `<meta name="pc-google-client">` in index.html and
+`GOOGLE_CLIENT_ID` in `site-worker/wrangler.toml`; empty = no sign-in anywhere. The privacy page
+is `privacy/index.html` (published by sync_r2.py with the `privacy/` folder). Local tests:
+`site-worker/wrangler.localtest.toml` (gitignored, no routes) with `.dev.vars` holding the TEST
+client id `test-client.…` and a throwaway DEV_JWKS key — the Worker accepts that key only for a
+client id starting `test-client.`, so it can never sign anyone into the real site.
+
 ---
 
 ## 4b. The critical engine (`worker/`)

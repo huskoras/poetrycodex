@@ -529,6 +529,20 @@ a.poet-card, a.topic-card { display: block; }
 .shelf-export { margin-top: 3rem; padding-top: 1.6rem; border-top: 1px solid var(--line); }
 .shelf-export p, .shelf-how { font-family: var(--serif); font-size: 1.05rem; line-height: 1.6; color: var(--ink-soft); margin: 0; }
 .shelf-export .cite-row { margin-top: 1rem; }
+
+/* ---------- reader accounts (#/account) ---------- */
+.account { max-width: 44rem; }
+.account > p { line-height: 1.6; }
+.account-google { min-height: 48px; margin: 1.6rem 0 .6rem; }
+.account-actions { border-top: 1px solid var(--line); margin-top: 2.2rem; padding-top: 1.1rem; }
+.account-actions h2 { font-family: var(--sans); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 .6rem; }
+.account-actions .cite-row { margin-top: .8rem; }
+.account-out, .account-delete { font-family: var(--sans); font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  padding: .55rem 1rem; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); cursor: pointer; border-radius: 999px; }
+.account-out:hover, .account-delete:hover { border-color: var(--accent-2); color: var(--accent); }
+.account-check { display: block; font-size: .95rem; line-height: 1.5; color: var(--ink-soft); }
+.account-status { min-height: 1.4em; color: var(--ink-soft); }
+.account-small { font-size: .85rem; color: var(--ink-soft); }
 .shelf-how { text-align: center; max-width: 52ch; margin: -2.4rem auto 0; }
 .shelf-how a { color: var(--accent); }
 /* The reader's own note: gold-edged, so it never passes for the Codex Note */

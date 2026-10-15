@@ -312,8 +312,9 @@
 
   // ---------- the reader's shelf and private notes ----------
   // "Save to shelf" keeps a poem, a long work or one book of it, and "Add a note" a note
-  // on a poem or a book, in this browser's localStorage and nowhere else: no account,
-  // nothing sent to the site, nothing shared.
+  // on a poem or a book, in this browser's localStorage; a reader who signs in (see "reader
+  // accounts" below) also keeps them in their account, so they follow them to every device.
+  // Nothing is ever shared or shown to anyone else.
   // Where the browser keeps no site data (some private windows, storage switched off, or
   // full) the shelf lasts for this visit only, and the shelf page says so and offers the
   // download. Ids are the Codex's own: "keats/0" (a poem), "work:iliad-pope" (a work),
@@ -321,6 +322,13 @@
   const SHELF_KEY = "pc-shelf";
   const NOTES_KEY = "pc-notes";
   const NOTE_MAX = 5000;
+  // Reader accounts (below). The kinds kept in the account and the browser key of each.
+  const GOOGLE_CLIENT = (document.querySelector('meta[name="pc-google-client"]') || {}).content || "";
+  const ACCOUNT_KEY = "pc-account";   // {name, email} while signed in: the pages' hint (the session is an HttpOnly cookie)
+  const SYNC_KEY = "pc-sync";         // {at: {kind: server ms}, dirty: {kind: n}}
+  const SYNC_KINDS = { shelf: "pc-shelf", notes: "pc-notes", reading: "pc-reading", parallel: "pc-parallel" };
+  const KIND_OF = { "pc-shelf": "shelf", "pc-notes": "notes", "pc-reading": "reading", "pc-parallel": "parallel" };
+  let SYNCING = false;                // true while the account's copy is written into the browser
   const STORE_OK = (() => {
     try { localStorage.setItem("pc-test", "1"); localStorage.removeItem("pc-test"); return true; }
     catch (e) { return false; }
@@ -335,6 +343,7 @@
   // Returns false when the browser refused it: kept for this visit only.
   function writeStore(key, value) {
     const raw = JSON.stringify(value);
+    if (KIND_OF[key] && !SYNCING) noteChange(KIND_OF[key]);
     if (STORE_OK) {
       try { localStorage.setItem(key, raw); delete MEMORY[key]; return true; } catch (e) { /* full */ }
     }
@@ -379,7 +388,9 @@
   }
   const shelfPath = (id) => id.startsWith("work:") ? "/work/" + id.slice(5) + "/" : "/poem/" + id + "/";
   const VISIT_ONLY = "This browser is not keeping data for this site, so your shelf lasts for this visit only. Download it from your shelf before you close the tab.";
-  const NOTE_KEPT = "Private: kept in this browser only, never sent to Poetry Codex. It also appears on your shelf.";
+  const NOTE_KEPT_LOCAL = "Private: kept in this browser only, never sent to Poetry Codex. It also appears on your shelf.";
+  const NOTE_KEPT_ACCOUNT = "Private: kept in your account and in this browser, never shown to anyone. It also appears on your shelf.";
+  const noteKept = () => (signedIn() ? NOTE_KEPT_ACCOUNT : NOTE_KEPT_LOCAL);
   const NOTE_VISIT = "This browser is not keeping data for this site, so this note lasts for this visit only. Download it from your shelf before you close the tab.";
   function shelfButtonHTML(entry, noteable) {
     const on = onShelf(entry.id);
@@ -396,7 +407,7 @@
         <label class="section-label" for="note-input">Your note</label>
         <textarea class="note-input" id="note-input" rows="4" maxlength="${NOTE_MAX}"
                   placeholder="A private note on this text: what struck you, a line to come back to\u2026">${esc(note ? note.text : "")}</textarea>
-        <p class="note-status">${visitOnly() ? NOTE_VISIT : NOTE_KEPT}</p>
+        <p class="note-status">${visitOnly() && !signedIn() ? NOTE_VISIT : noteKept()}</p>
       </div>`;
   }
   // Saved as it is typed, so leaving the page never loses a word.
@@ -414,7 +425,7 @@
     input.addEventListener("input", () => {
       const kept = setNote(entry, input.value);
       toggle.textContent = input.value.trim() ? "Your note" : "Add a note";
-      status.textContent = kept ? NOTE_KEPT : NOTE_VISIT;
+      status.textContent = kept || signedIn() ? noteKept() : NOTE_VISIT;
     });
   }
   function bindShelfButton(entry) {
@@ -459,6 +470,262 @@
     const works = readingWorks();
     delete works[slug];
     writeStore(READING_KEY, { v: 1, works });
+  }
+
+  // ---------- reader accounts: the shelf on every device ----------
+  // "Continue with Google" (Google Identity Services, loaded only when the reader opens the
+  // account page) gives the page a Google-signed token; the site's own Worker checks it at
+  // /api/auth/google and sets an HttpOnly session cookie (site-worker/src/accounts.js). From
+  // then on the shelf, the notes, the reading places and the facing-page settings are kept in
+  // the account as well as here. The browser copy is still the one every page reads: the
+  // account's copy is pulled after the first paint and whenever the reader comes back to the
+  // tab, and each change is pushed a moment after it is made. A kind changed here since the
+  // last sync is merged with the account's (shelf and notes by entry, the newer one winning);
+  // one not changed here simply takes the account's copy, so a removal on one device reaches
+  // the others. GOOGLE_CLIENT (a meta tag in index.html) empty = no sign-in anywhere.
+  const signedIn = () => !!(GOOGLE_CLIENT && readStore(ACCOUNT_KEY).email);
+  const syncState = () => { const s = readStore(SYNC_KEY); s.at = s.at || {}; s.dirty = s.dirty || {}; return s; };
+  const hasContent = (v) => !!v && Object.keys(v).some((k) => k !== "v" && v[k] && (typeof v[k] !== "object" || Object.keys(v[k]).length));
+  const MERGE = {
+    shelf(local, server) {
+      const items = [], seen = new Set();
+      [].concat((local && local.items) || [], (server && server.items) || []).forEach((it) => {
+        if (it && typeof it.id === "string" && !seen.has(it.id)) { seen.add(it.id); items.push(it); }
+      });
+      items.sort((a, b) => String(b.saved || "").localeCompare(String(a.saved || "")));
+      return { v: 1, items };
+    },
+    notes(local, server) {
+      const notes = Object.assign({}, (server && server.notes) || {});
+      Object.entries((local && local.notes) || {}).forEach(([id, n]) => {
+        if (!notes[id] || String(n.updated || "") >= String(notes[id].updated || "")) notes[id] = n;
+      });
+      return { v: 1, notes };
+    },
+    reading(local, server) {
+      const works = Object.assign({}, (server && server.works) || {});
+      Object.entries((local && local.works) || {}).forEach(([slug, r]) => {
+        if (!works[slug] || String(r.at || "") >= String(works[slug].at || "")) works[slug] = r;
+      });
+      return { v: 1, works };
+    },
+    parallel: (local, server) => Object.assign({}, server || {}, local || {}),
+  };
+  let pushTimer = 0, pushing = false, lastPull = 0;
+  function noteChange(kind) {
+    if (!signedIn()) return;
+    const s = syncState();
+    s.dirty[kind] = (s.dirty[kind] || 0) + 1;
+    writeStore(SYNC_KEY, s);
+    schedulePush(1500);
+  }
+  function schedulePush(ms) { clearTimeout(pushTimer); pushTimer = setTimeout(pushNow, ms); }
+  async function pushNow(keepalive) {
+    if (!signedIn()) return;
+    if (pushing) { schedulePush(2000); return; }
+    const sent = syncState().dirty;
+    const kinds = Object.keys(sent).filter((k) => sent[k] && SYNC_KINDS[k]);
+    if (!kinds.length) return;
+    const body = {};
+    kinds.forEach((k) => { body[k] = readStore(SYNC_KINDS[k]); });
+    pushing = true;
+    try {
+      const res = await fetch("/api/data", { method: "PUT", credentials: "same-origin", keepalive: !!keepalive,
+        headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+      if (res.status === 401) { signedOutHere(); return; }
+      if (!res.ok) throw new Error(res.status);
+      const out = await res.json();
+      const s = syncState();
+      kinds.forEach((k) => {
+        if (out.updated && out.updated[k]) s.at[k] = out.updated[k];
+        if (s.dirty[k] === sent[k]) delete s.dirty[k];   // changed again meanwhile: it goes next time
+      });
+      writeStore(SYNC_KEY, s);
+      if (Object.keys(s.dirty).length) schedulePush(1500);
+    } catch (e) {
+      schedulePush(30000);   // offline or a hiccup: kept here, tried again
+    } finally { pushing = false; }
+  }
+  async function pullNow() {
+    if (!signedIn()) return;
+    lastPull = Date.now();
+    let me;
+    try {
+      const r = await fetch("/api/me", { credentials: "same-origin", cache: "no-store" });
+      if (!r.ok) return;
+      me = await r.json();
+    } catch (e) { return; }
+    if (!me.signedIn) { signedOutHere(); return; }
+    applyAccount(me);
+  }
+  // The account's copy into this browser (merging what changed here meanwhile).
+  function applyAccount(me) {
+    writeStore(ACCOUNT_KEY, { name: me.name || "", email: me.email || "" });
+    const s = syncState();
+    let changed = false, push = false;
+    SYNCING = true;
+    try {
+      Object.entries(SYNC_KINDS).forEach(([kind, key]) => {
+        const srv = me.data && me.data[kind];
+        if (s.dirty[kind]) {
+          writeStore(key, MERGE[kind](readStore(key), srv ? srv.value : null));
+          changed = push = true;
+        } else if (srv && srv.updated > (s.at[kind] || 0)) {
+          writeStore(key, srv.value);
+          s.at[kind] = srv.updated;
+          changed = true;
+        }
+      });
+    } finally { SYNCING = false; }
+    writeStore(SYNC_KEY, s);
+    if (push) schedulePush(200);
+    updateAccountNav();
+    if (changed) {
+      updateShelfNav();
+      if (/^#\/(shelf|account)/.test(location.hash) && DATA) route();
+    }
+  }
+  function signedOutHere(clearLocal) {
+    clearTimeout(pushTimer);
+    const keys = [ACCOUNT_KEY, SYNC_KEY].concat(clearLocal ? Object.values(SYNC_KINDS) : []);
+    keys.forEach((k) => { delete MEMORY[k]; try { localStorage.removeItem(k); } catch (e) { /* nothing kept */ } });
+    updateAccountNav();
+    updateShelfNav();
+  }
+  // The top bar's account link: "Sign in", or the reader's first name.
+  function updateAccountNav() {
+    const acct = readStore(ACCOUNT_KEY);
+    const label = signedIn() ? (String(acct.name || "").split(/\s+/)[0] || "Account").slice(0, 14) : "Sign in";
+    document.querySelectorAll('[data-nav="account"]').forEach((a) => { a.hidden = !GOOGLE_CLIENT; a.textContent = label; });
+  }
+  let GIS_LOADING = null;
+  function loadGoogle() {
+    if (window.google && google.accounts && google.accounts.id) return Promise.resolve();
+    if (!GIS_LOADING) GIS_LOADING = new Promise((resolve, reject) => {
+      const el = document.createElement("script");
+      el.src = "https://accounts.google.com/gsi/client";
+      el.async = true;
+      el.onload = () => resolve();
+      el.onerror = () => { GIS_LOADING = null; reject(new Error("not loaded")); };
+      document.head.appendChild(el);
+    });
+    return GIS_LOADING;
+  }
+  const darkNow = () => (document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")) === "dark";
+  function showGoogleButton(box, status) {
+    loadGoogle().then(() => {
+      google.accounts.id.initialize({ client_id: GOOGLE_CLIENT, callback: (r) => onCredential(r, status),
+        ux_mode: "popup", auto_select: false, use_fedcm_for_button: true, context: "signin" });
+      box.innerHTML = "";
+      google.accounts.id.renderButton(box, { type: "standard", theme: darkNow() ? "filled_black" : "outline",
+        size: "large", text: "continue_with", shape: "pill", logo_alignment: "left", width: 280 });
+    }).catch(() => {
+      status.textContent = "Google sign-in could not be loaded. Check your connection (or any blocker that stops accounts.google.com) and try again.";
+    });
+  }
+  async function onCredential(resp, status) {
+    status.textContent = "Signing in\u2026";
+    try {
+      const r = await fetch("/api/auth/google", { method: "POST", credentials: "same-origin",
+        headers: { "content-type": "application/json" }, body: JSON.stringify({ credential: resp.credential }) });
+      const me = await r.json().catch(() => ({}));
+      if (!r.ok || !me.signedIn) throw new Error(me.error || "error " + r.status);
+      writeStore(ACCOUNT_KEY, { name: me.name || "", email: me.email || "" });
+      // What this browser already holds joins the account (merged, nothing lost).
+      const s = syncState();
+      Object.entries(SYNC_KINDS).forEach(([kind, key]) => { if (hasContent(readStore(key))) s.dirty[kind] = (s.dirty[kind] || 0) + 1; });
+      writeStore(SYNC_KEY, s);
+      applyAccount(me);
+      route();
+    } catch (e) {
+      status.textContent = "Sign-in did not work (" + e.message + "). Please try again.";
+    }
+  }
+  async function signOut(clearLocal) {
+    await pushNow();
+    try { await fetch("/api/auth/logout", { method: "POST", credentials: "same-origin", headers: { "content-type": "application/json" }, body: "{}" }); }
+    catch (e) { /* the cookie ends anyway when it expires; this browser forgets the account now */ }
+    if (window.google && google.accounts && google.accounts.id) google.accounts.id.disableAutoSelect();
+    signedOutHere(clearLocal);
+  }
+  async function deleteAccount() {
+    const r = await fetch("/api/account", { method: "DELETE", credentials: "same-origin", headers: { "content-type": "application/json" } });
+    if (!r.ok) throw new Error("error " + r.status);
+    signedOutHere(false);
+  }
+  // Pulled after the first paint, and again on coming back to the tab (at most once a minute);
+  // a change not yet sent goes out as the tab is hidden.
+  document.addEventListener("visibilitychange", () => {
+    if (!signedIn()) return;
+    if (document.visibilityState === "visible") { if (Date.now() - lastPull > 60000) pullNow(); }
+    else if (Object.keys(syncState().dirty).length) pushNow(true);
+  });
+  window.addEventListener("online", () => { if (signedIn()) schedulePush(500); });
+
+  function renderAccount() {
+    setTitle(signedIn() ? "Your account" : "Sign in");
+    const acct = readStore(ACCOUNT_KEY);
+    if (!GOOGLE_CLIENT) {
+      app.innerHTML = `<article class="account"><div class="page-head"><h1 class="page-title">Sign in</h1>
+        <p class="page-sub">Accounts are not open yet. Your shelf and notes are kept in this browser meanwhile.</p></div></article>`;
+      return;
+    }
+    if (signedIn()) {
+      const n = shelfItems().length, k = Object.keys(allNotes()).length;
+      app.innerHTML = `
+        <article class="account">
+          <div class="page-head">
+            <h1 class="page-title">Your account</h1>
+            <p class="page-sub">Signed in as <strong>${esc(acct.name || acct.email)}</strong>${acct.name ? ` · ${esc(acct.email)}` : ""}</p>
+          </div>
+          <p>Your shelf (${num(n)} ${n === 1 ? "text" : "texts"}), your notes (${num(k)}), your places in the long works and your
+          facing-page settings are kept in your account and in this browser. Sign in with the same Google account on any
+          other device and they will be there. No one else can see them.</p>
+          <p><a href="#/shelf">Open your shelf →</a></p>
+          <section class="account-actions">
+            <h2>Sign out</h2>
+            <label class="account-check"><input type="checkbox" class="account-clear"> Also remove my shelf and notes from this
+            browser (on a shared computer). They stay in your account.</label>
+            <div class="cite-row"><button class="account-out" type="button">Sign out</button></div>
+          </section>
+          <section class="account-actions">
+            <h2>Delete my account</h2>
+            <p>Deletes your account and everything kept in it from Poetry Codex, at once and for good. What is in this browser
+            stays until you remove it.</p>
+            <div class="cite-row"><button class="account-delete" type="button">Delete my account</button></div>
+          </section>
+          <p class="account-status" role="status"></p>
+          <p class="account-small"><a href="/privacy/">Privacy and personal data</a></p>
+        </article>`;
+      const status = app.querySelector(".account-status");
+      app.querySelector(".account-out").addEventListener("click", async () => {
+        status.textContent = "Signing out\u2026";
+        await signOut(app.querySelector(".account-clear").checked);
+        route();
+      });
+      app.querySelector(".account-delete").addEventListener("click", async () => {
+        if (!confirm("Delete your Poetry Codex account and everything kept in it? This cannot be undone.")) return;
+        status.textContent = "Deleting\u2026";
+        try { await deleteAccount(); route(); status.textContent = ""; }
+        catch (e) { status.textContent = "It could not be deleted just now (" + e.message + "). Please try again."; }
+      });
+      return;
+    }
+    app.innerHTML = `
+      <article class="account">
+        <div class="page-head">
+          <h1 class="page-title">Sign in</h1>
+          <p class="page-sub">Keep your shelf, your notes and your place in the long works on every device.</p>
+        </div>
+        <p>Signing in is optional: the whole archive is open without it. With an account, what you save follows you to
+        your phone, your laptop or the library computer. Poetry Codex keeps only your name, your email address and what you
+        save; no password is ever given to the site, and nothing is shared or shown to anyone.</p>
+        <div class="account-google"><p class="loading">Loading Google sign-in\u2026</p></div>
+        <p class="account-status" role="status"></p>
+        <p class="account-small">By signing in you agree that your name, email address, shelf and notes are kept for this
+        purpose as described in <a href="/privacy/">Privacy and personal data</a>. You can delete your account at any time.</p>
+      </article>`;
+    showGoogleButton(app.querySelector(".account-google"), app.querySelector(".account-status"));
   }
   // How far down the text the reader is: the point a third of the way down the window.
   let READING_NOW = null;    // {slug, i, el} while a book of a work is on screen
@@ -1198,6 +1465,9 @@
   // (isHomeHash is defined further down: the same test is written out here.)
   if (!location.hash || /^#\/?(\?.*)?$/.test(location.hash) || /^#\/(poem|work)\/[\w-]+\/\d+$/.test(location.hash)) setTimeout(loadIndex, 2500);
   else loadIndex();
+  // A signed-in reader: the account's copy is pulled after the first paint (reader accounts).
+  updateAccountNav();
+  if (signedIn()) setTimeout(pullNow, 1200);   // a timer, not a frame: it runs in a background tab too
   const indexErrorHTML = () => `<p class="empty">Could not load the archive (${esc(INDEX_ERROR)}).<br>Serve this through a local server, not a file:// path.</p>`;
 
   // ---------- global search ----------
@@ -1283,7 +1553,7 @@
   // home once the index is in.)
   const isHomeHash = (h) => !h || /^#\/?(\?.*)?$/.test(h);
   const EARLY_NAV = [[/^#\/(poems|poem|work|category|today)\b/, "poems"], [/^#\/poets?\b/, "poets"],
-    [/^#\/topics/, "topics"], [/^#\/about/, "about"], [/^#\/shelf/, "shelf"], [/^#\/oracle/, "oracle"], [/^#\/eras/, "eras"]];
+    [/^#\/topics/, "topics"], [/^#\/about/, "about"], [/^#\/shelf/, "shelf"], [/^#\/account/, "account"], [/^#\/oracle/, "oracle"], [/^#\/eras/, "eras"]];
   // Before the index is in: the home page from home.json if it has come (while it is on its
   // way the home page shows only the masthead), anything else "Opening the archive…".
   // route() draws the page properly when the index arrives.
@@ -1365,6 +1635,7 @@
     else if (h.startsWith("#/topics")) { setRoute("topics", "sub"); renderTopics(); }
     else if (h.startsWith("#/about")) { setRoute("about", "sub"); renderAbout(); }
     else if (h.startsWith("#/shelf")) { setRoute("shelf", "sub"); renderShelf(); }
+    else if (h.startsWith("#/account")) { setRoute("account", "sub"); renderAccount(); }
     else if (h.startsWith("#/oracle")) { setRoute("oracle", "sub"); renderOracle(); }
     else if (h.startsWith("#/eras")) { setRoute("eras", "sub"); renderEras(); }
     else if (h.startsWith("#/poems")) {
@@ -2214,8 +2485,10 @@
       <article class="shelf">
         <div class="page-head">
           <h1 class="page-title">Your shelf</h1>
-          <p class="page-sub">Poems and works you have saved, and your notes. They are kept in this
-          browser only: nothing is sent to Poetry Codex, and no one else can see them.</p>
+          <p class="page-sub">Poems and works you have saved, and your notes. ${signedIn()
+            ? `They are kept in your account and in this browser, and no one else can see them. <a href="#/account">Your account →</a>`
+            : `They are kept in this browser only: nothing is sent to Poetry Codex, and no one else can see them.${GOOGLE_CLIENT
+              ? ` <a href="#/account">Sign in to keep them on all your devices →</a>` : ""}`}</p>
         </div>
         ${visitOnly() ? `<p class="shelf-warn">This browser is not keeping data for this site (a private
           window, or site storage switched off or full), so your shelf will be gone when you close
@@ -2224,7 +2497,7 @@
           + group("Your notes on other texts", loose, (n) => n) + `
         <section class="shelf-export">
           <h2>Take it with you</h2>
-          <p>Your shelf is stored nowhere else. Download a copy to keep it, or to paste into your own notes.</p>
+          <p>${signedIn() ? "Download a copy to keep, or to paste into your own notes." : "Your shelf is stored nowhere else. Download a copy to keep it, or to paste into your own notes."}</p>
           <div class="cite-row">
             <button class="shelf-dl" type="button" data-format="md">Download as Markdown</button>
             <button class="shelf-dl" type="button" data-format="json">Download as JSON</button>

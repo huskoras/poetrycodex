@@ -8,8 +8,11 @@
 //   /poem/keats/0    -> 301 to /poem/keats/0/ (when that folder has an index.html)
 //   anything missing -> 404.html with status 404
 //   www.poetrycodex.com/... -> 301 to poetrycodex.com/...
+//   /api/...         -> reader accounts (src/accounts.js), from the D1 database
 // Responses are kept in Cloudflare's edge cache for a few minutes, so most visits never reach
 // R2; a publish shows everywhere within CACHE_SECONDS.
+
+import { handleApi } from "./accounts.js";
 
 const CACHE_SECONDS = 300;          // HTML and data: a new publish is live within 5 minutes
 const ASSET_SECONDS = 86400;        // images, and app.js / styles.css (their ?v= changes on edit)
@@ -52,13 +55,21 @@ async function serve(env, key, request, status = 200) {
 
 export default {
   async fetch(request, env, ctx) {
-    if (request.method !== "GET" && request.method !== "HEAD") {
-      return new Response("Method not allowed", { status: 405, headers: { allow: "GET, HEAD" } });
-    }
     const url = new URL(request.url);
     if (url.hostname.startsWith("www.")) {
       url.hostname = url.hostname.slice(4);
       return Response.redirect(url.toString(), 301);
+    }
+    // Reader accounts (src/accounts.js): never cached, never served from R2.
+    if (url.pathname.startsWith("/api/")) {
+      try { return await handleApi(request, env, url); }
+      catch (e) {
+        return new Response(JSON.stringify({ error: "server error" }), { status: 500,
+          headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" } });
+      }
+    }
+    if (request.method !== "GET" && request.method !== "HEAD") {
+      return new Response("Method not allowed", { status: 405, headers: { allow: "GET, HEAD" } });
     }
     const cache = caches.default;
     const cacheKey = new Request(url.toString(), { method: "GET" });

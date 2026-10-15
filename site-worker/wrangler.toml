@@ -14,6 +14,17 @@ routes = [
   { pattern = "www.poetrycodex.com/*", zone_name = "poetrycodex.com" },
 ]
 
+# Reader accounts (src/accounts.js). The Google client id is public (every visitor's browser
+# sees it); there is no client secret. Empty = the sign-in button stays hidden.
+[vars]
+GOOGLE_CLIENT_ID = ""
+SITE_ORIGINS = "https://poetrycodex.com"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "poetrycodex-readers"
+database_id = "0a2e2da3-562d-43d7-a49f-77b3901d3e8c"
+
 [[r2_buckets]]
 binding = "SITE"
 bucket_name = "poetrycodex-site"
