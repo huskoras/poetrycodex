@@ -125,6 +125,16 @@ when the index is in. The shards are derived and NOT in git (`.gitignore`): `syn
 builds them from the committed copy it uploads. Where they are missing (a local copy, GitHub
 Pages) the app falls back to the whole poet or work file. Run `python tools/build_shards.py`
 yourself only to test locally. `POEM_SHARD` in app.js must equal `SHARD` in the script.
+A work opened from its shard has only that section (plus its neighbours' titles); the other
+places in `sections` are holes, so code that walks a work's sections on a section page must
+skip missing ones (`find`/`findIndex` visit holes; `forEach`/`filter`/`some` do not). On a
+home page or a poem/section link the index is fetched 2.5 s after the first paint.
+
+**Service worker (`sw.js`, 15 Oct 2026):** a returning reader's browser keeps the site:
+pages network-first (the kept copy after 3 s or offline), `app.js?v=N`/`styles.css?v=N` kept
+until the number changes, `data/` and images shown from the kept copy and refreshed in the
+background. So bump `?v=N` on every app.js/styles.css change (as before); raise `VERSION` in
+`sw.js` only to throw away everything kept (a broken file cached by mistake).
 
 **Cache-busting:** `index.html` loads `styles.css?v=N` and `app.js?v=N`. If you change
 either file, bump `N` in `index.html` or returning visitors get a stale cached copy.

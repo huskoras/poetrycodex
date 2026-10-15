@@ -877,7 +877,7 @@
     // where this book begins.
     const s0 = secs[0];
     const oeAt = !s0 ? -1 : s0.oes != null ? s0.oes
-      : wo.sections.findIndex((sec) => { const q = secRange(sec.title); return q && q[0] <= s0.oe[0] && s0.oe[0] <= q[1]; });
+      : wo.sections.findIndex((sec) => { const q = sec && secRange(sec.title); return q && q[0] <= s0.oe[0] && s0.oe[0] <= q[1]; });
     return {
       rows, blocks: !e.lfl, lang: e.lang, prose: isProse(trText, wt.translator), translator: wt.translator,
       skipped: secs.some((s) => s.skip && s.skip.length), drift: e.lfl && secs.some((s) => !s.map),
@@ -1130,60 +1130,74 @@
       const fc = document.getElementById("foot-count");
       if (HOME && fc && !fc.textContent) fc.textContent = num(HOME.count);
       if (isHomeHash(location.hash)) route(); // other pages already say "Opening the archive…"
+      afterPaint(loadIndex);
     });
   setTimeout(() => {
     if (HOME || DATA || HOME_FAILED) return;
     HOME_FAILED = true;
+    loadIndex();
     if (isHomeHash(location.hash)) route();
   }, 1500);
 
-  fetch("data/index.json", { priority: "low" })   // after the home file and any shard
-    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then((d) => {
-      DATA = d;
-      d.poets.forEach((p) => { POETS[p.slug] = p; });
-      (d.works || []).forEach((w) => { WORKS[w.slug] = w; });
-      d.poets.forEach((p) => {
-        if (!p.category) return;
-        const s = (CATEGORY_STATS[p.category] = CATEGORY_STATS[p.category] || { poems: 0, works: 0 });
-        s.poems += p.poemCount || 0;
-        s.works += p.workCount || 0;
-      });
-      // Since C2 the index leaves out what it can derive: the poet's slug (the first half of
-      // the id), the author (the poet's name), subjects when only the primary one, and empty
-      // collection / translator. Filled back in here, so the rest of the app is unchanged; an
-      // older index that still has them all works the same.
-      d.poems.forEach((p) => {
-        if (!p.authorSlug) p.authorSlug = p.id.slice(0, p.id.lastIndexOf("/"));
-        if (!p.author) p.author = (POETS[p.authorSlug] || {}).name || "";
-        if (!p.subjects) p.subjects = [p.primarySubject];
-        if (p.collection === undefined) p.collection = null;
-      });
-      // Sorted by title once; every list filters this and so keeps the order.
-      d.poems.forEach((p) => { p._sk = sortKey(p.title); });
-      SORTED = d.poems.slice().sort((a, b) => COLLATE.compare(a._sk, b._sk));
-      const fc = document.getElementById("foot-count"); if (fc) fc.textContent = num(d.count);
-      wireSearch();
-      // A home page already drawn from home.json stays as it is, and where the reader has
-      // scrolled it to, unless the index tells a different story (a home.json older than
-      // the index): then it is redrawn in place.
-      if (EARLY_HOME && isHomeHash(location.hash)) {
-        const html = homeHTML();
-        if (html !== EARLY_HOME) app.innerHTML = html;
+  // The index (32 MB; reading it holds the page up for half a second or more on a phone) is
+  // fetched only once the first screen is drawn: the home page from home.json, a poem or a
+  // book from its shard. Any other page asks for it at once (routeEarly).
+  let INDEX_STARTED = false;
+  function loadIndex() {
+    if (INDEX_STARTED) return;
+    INDEX_STARTED = true;
+    fetch("data/index.json", { priority: "low" })   // after the home file and any shard
+      .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then((d) => {
+        DATA = d;
+        d.poets.forEach((p) => { POETS[p.slug] = p; });
+        (d.works || []).forEach((w) => { WORKS[w.slug] = w; });
+        d.poets.forEach((p) => {
+          if (!p.category) return;
+          const s = (CATEGORY_STATS[p.category] = CATEGORY_STATS[p.category] || { poems: 0, works: 0 });
+          s.poems += p.poemCount || 0;
+          s.works += p.workCount || 0;
+        });
+        // Since C2 the index leaves out what it can derive: the poet's slug (the first half of
+        // the id), the author (the poet's name), subjects when only the primary one, and empty
+        // collection / translator. Filled back in here, so the rest of the app is unchanged; an
+        // older index that still has them all works the same.
+        d.poems.forEach((p) => {
+          if (!p.authorSlug) p.authorSlug = p.id.slice(0, p.id.lastIndexOf("/"));
+          if (!p.author) p.author = (POETS[p.authorSlug] || {}).name || "";
+          if (!p.subjects) p.subjects = [p.primarySubject];
+          if (p.collection === undefined) p.collection = null;
+        });
+        // Sorted by title once; every list filters this and so keeps the order.
+        d.poems.forEach((p) => { p._sk = sortKey(p.title); });
+        SORTED = d.poems.slice().sort((a, b) => COLLATE.compare(a._sk, b._sk));
+        const fc = document.getElementById("foot-count"); if (fc) fc.textContent = num(d.count);
+        wireSearch();
+        // A home page already drawn from home.json stays as it is, and where the reader has
+        // scrolled it to, unless the index tells a different story (a home.json older than
+        // the index): then it is redrawn in place.
+        if (EARLY_HOME && isHomeHash(location.hash)) {
+          const html = homeHTML();
+          if (html !== EARLY_HOME) app.innerHTML = html;
+          EARLY_HOME = "";
+        } else if (EARLY_DRAWN && EARLY_DRAWN === location.hash) {
+          // A poem or a book drawn from its shard: drawn again in place, where the reader is.
+          const y = window.scrollY;
+          route();
+          restoreY = y;
+          jumpTo(y);
+        } else route();
+      })
+      .catch((e) => {
+        INDEX_ERROR = String(e && e.message || e);
         EARLY_HOME = "";
-      } else if (EARLY_DRAWN && EARLY_DRAWN === location.hash) {
-        // A poem or a book drawn from its shard: drawn again in place, where the reader is.
-        const y = window.scrollY;
-        route();
-        restoreY = y;
-        jumpTo(y);
-      } else route();
-    })
-    .catch((e) => {
-      INDEX_ERROR = String(e && e.message || e);
-      EARLY_HOME = "";
-      app.innerHTML = indexErrorHTML();
-    });
+        app.innerHTML = indexErrorHTML();
+      });
+  }
+  const afterPaint = (fn) => requestAnimationFrame(() => setTimeout(fn, 60));
+  // (isHomeHash is defined further down: the same test is written out here.)
+  if (!location.hash || /^#\/?(\?.*)?$/.test(location.hash) || /^#\/(poem|work)\/[\w-]+\/\d+$/.test(location.hash)) setTimeout(loadIndex, 2500);
+  else loadIndex();
   const indexErrorHTML = () => `<p class="empty">Could not load the archive (${esc(INDEX_ERROR)}).<br>Serve this through a local server, not a file:// path.</p>`;
 
   // ---------- global search ----------
@@ -1298,6 +1312,7 @@
     let m;
     if (!INDEX_ERROR && (m = h.match(/^#\/poem\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderDetail(m[1], parseInt(m[2], 10)); return; }
     if (!INDEX_ERROR && (m = h.match(/^#\/work\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderWorkSection(m[1], parseInt(m[2], 10)); return; }
+    loadIndex();
     const nav = EARLY_NAV.find(([re]) => re.test(h));
     setRoute(nav ? nav[1] : "", "sub");
     app.innerHTML = INDEX_ERROR ? indexErrorHTML() : `<p class="loading">Opening the archive…</p>`;
@@ -1891,6 +1906,7 @@
                     title: w.sections.length > 1 ? w.title + " · " + s.title : w.title };
     const par = workParList(slug, i, w);
     EARLY_DRAWN = DATA ? "" : location.hash;
+    if (!DATA) afterPaint(loadIndex);
     setTitle(w.sections.length > 1 ? wt.replace(w.title, w.title + ", " + s.title) : wt);
     app.innerHTML = `
       <article class="detail">
@@ -2828,6 +2844,7 @@
     const lang = langAttr(p.authorSlug, p.translator);
     const form = DATA ? (DATA.poems.find((q) => q.id === p.id) || {}).form : "";   // index only (B3)
     EARLY_DRAWN = DATA ? "" : location.hash;
+    if (!DATA) afterPaint(loadIndex);
     const cite = { author: p.author, title: p.title, translator: p.translator, path: `/poem/${slug}/${n}/` };
     const entry = { id: slug + "/" + n, kind: "poem", title: p.title, author: p.author, translator: p.translator || "" };
     const par = parList("poems", p.id);
@@ -2880,4 +2897,11 @@
   // arrives); the page shows the masthead, or "Opening the archive…", until then.
   wireSearch();
   route();
+
+  // The service worker (sw.js): on a later visit the page, the app and the index come from
+  // the reader's own browser at once and are refreshed in the background. Registered after
+  // the page has loaded, so it never competes with the first screen.
+  if ("serviceWorker" in navigator && location.protocol !== "file:") {
+    window.addEventListener("load", () => { navigator.serviceWorker.register("sw.js").catch(() => {}); });
+  }
 })();
