@@ -775,11 +775,19 @@
     updateAccountNav();
     updateShelfNav();
   }
-  // The top bar's account link: "Sign in", or the reader's first name.
+  // The account button at the top right: "Sign in", or the reader's initial and first name.
   function updateAccountNav() {
     const acct = readStore(ACCOUNT_KEY);
-    const label = signedIn() ? (String(acct.name || "").split(/\s+/)[0] || "Account").slice(0, 14) : "Sign in";
-    document.querySelectorAll('[data-nav="account"]').forEach((a) => { a.hidden = !GOOGLE_CLIENT; a.textContent = label; });
+    const on = signedIn();
+    const first = (String(acct.name || "").split(/\s+/)[0] || "").slice(0, 14);
+    document.querySelectorAll("[data-acct]").forEach((a) => {
+      a.hidden = !GOOGLE_CLIENT;
+      a.classList.toggle("is-in", on);
+      a.title = on ? "Your library" : "Sign in";
+      a.setAttribute("aria-label", on ? "Your library" + (acct.name ? ", " + acct.name : "") : "Sign in");
+      a.querySelector(".tb-acct-av").textContent = on ? (first || acct.email || "?").charAt(0).toUpperCase() : "";
+      a.querySelector(".tb-acct-l").textContent = on ? (first || "Library") : "Sign in";
+    });
   }
   let GIS_LOADING = null;
   function loadGoogle() {
@@ -1918,6 +1926,7 @@
   function setRoute(navKey, mode) {
     document.body.dataset.route = mode;   // "home" shows hero; anything else hides it
     document.querySelectorAll(".tb-nav a, .hero-nav a").forEach((a) => a.classList.toggle("active", a.dataset.nav === navKey));
+    document.querySelectorAll("[data-acct]").forEach((a) => a.classList.toggle("active", navKey === "account"));
   }
 
   // ---------- helpers ----------
