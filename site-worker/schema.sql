@@ -23,7 +23,7 @@ CREATE INDEX IF NOT EXISTS sessions_reader ON sessions(reader_id);
 
 CREATE TABLE IF NOT EXISTS reader_data (
   reader_id  INTEGER NOT NULL REFERENCES readers(id) ON DELETE CASCADE,
-  key        TEXT    NOT NULL,       -- "shelf" | "notes" | "reading" | "parallel"
+  key        TEXT    NOT NULL,       -- "shelf" | "notes" | "reading" | "parallel" | "marks" | "readings"
   value      TEXT    NOT NULL,       -- the JSON the site keeps under pc-<key>
   updated_at INTEGER NOT NULL,
   PRIMARY KEY (reader_id, key)

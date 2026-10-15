@@ -1239,3 +1239,96 @@ textarea.ask-input {
 .book-source a { color: inherit; }
 .book-source .bs-note { color: var(--muted, inherit); font-size: .8rem; }
 .book-source-slot[hidden] { display: none; }
+
+/* ---------- the reader's library (#/account) ---------- */
+.acct { max-width: 52rem; margin: 0 auto; }
+.acct-head { display: flex; align-items: center; gap: 1.4rem; flex-wrap: wrap; padding: 1.6rem;
+  background: var(--surface-alt); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow-sm); }
+.acct-seal { width: 88px; height: 88px; border-radius: 50%; flex: none;
+  box-shadow: 0 0 0 3px var(--surface), 0 0 0 4px var(--gold), var(--shadow); }
+.acct-id { flex: 1 1 16rem; min-width: 0; }
+.acct-kicker { font-family: var(--sans); font-size: .7rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--gold-ink); margin: 0 0 .3rem; }
+.acct-name { font-family: var(--serif); font-size: clamp(1.6rem, 4vw, 2.3rem); font-weight: 500; line-height: 1.15; margin: 0; overflow-wrap: anywhere; }
+.acct-mail { margin: .35rem 0 0; color: var(--ink-soft); font-size: .95rem; overflow-wrap: anywhere; }
+.acct-open { display: inline-flex; align-items: center; gap: .55rem; padding: .9rem 1.45rem; border-radius: 999px;
+  background: var(--accent); color: var(--on-accent); font-family: var(--sans); font-weight: 600; font-size: .8rem;
+  letter-spacing: .08em; text-transform: uppercase; text-decoration: none; box-shadow: var(--shadow); transition: background .15s, transform .15s; }
+.acct-open:hover { background: var(--accent-2); transform: translateY(-1px); }
+.acct-sync { color: var(--ink-soft); font-size: .95rem; line-height: 1.55; margin: 1rem .2rem 0; }
+.acct-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; margin: 1.4rem 0 .4rem; }
+.acct-stat { display: flex; flex-direction: column; align-items: flex-start; gap: .3rem; padding: 1rem 1.1rem; text-align: left;
+  border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--ink); cursor: pointer;
+  transition: border-color .15s, transform .15s; }
+.acct-stat:hover { border-color: var(--gold); transform: translateY(-2px); }
+.acct-stat-n { font-family: var(--serif); font-size: 2rem; line-height: 1; color: var(--accent); }
+.acct-stat-l { font-family: var(--sans); font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); }
+.acct-sec { margin-top: 2.4rem; scroll-margin-top: 90px; }
+.acct-sec h2 { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ink-soft); margin: 0 0 .9rem; padding-bottom: .55rem; border-bottom: 1px solid var(--line); }
+.acct-list, .mark-list, .acct-readings { list-style: none; margin: 0; padding: 0; }
+.acct-row a { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .75rem .2rem;
+  border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); }
+.acct-row a:hover .acct-row-t { color: var(--accent); }
+.acct-row-t { font-family: var(--serif); font-size: 1.06rem; }
+.acct-row-by { color: var(--ink-soft); font-size: .88rem; text-align: right; }
+.acct-empty { color: var(--ink-soft); font-family: var(--serif); font-style: italic; margin: 0; }
+.acct-more { margin: .8rem 0 0; font-family: var(--sans); font-size: .85rem; }
+.mark-row { padding: .2rem 0 .2rem 1rem; border-left: 3px solid var(--gold); margin: 0 0 1.1rem; }
+.mark-row-quote { font-family: var(--serif); font-size: 1.04rem; margin: 0 0 .3rem; }
+.mark-row-note { margin: 0 0 .3rem; white-space: pre-wrap; line-height: 1.55; }
+.mark-row-src { margin: 0; font-size: .85rem; color: var(--ink-soft); }
+.acct-reading details { border: 1px solid var(--line); border-radius: 12px; margin: 0 0 .7rem; background: var(--surface); }
+.acct-reading details[open] { border-color: var(--gold); }
+.acct-reading summary { cursor: pointer; list-style: none; padding: .85rem 1rem; display: flex; flex-wrap: wrap; gap: .3rem .7rem; align-items: baseline; }
+.acct-reading summary::-webkit-details-marker { display: none; }
+.acct-r-kind { font-family: var(--sans); font-size: .62rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--on-accent); background: var(--accent); padding: .22rem .6rem; border-radius: 999px; }
+.acct-r-label { font-family: var(--serif); font-size: 1.04rem; }
+.acct-r-src { flex-basis: 100%; color: var(--ink-soft); font-size: .85rem; }
+.acct-r-text { padding: 0 1.1rem 1rem; line-height: 1.65; }
+.acct-r-go { font-family: var(--sans); font-size: .85rem; }
+.acct-set-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .8rem 1.2rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.acct-set-row > div { flex: 1 1 20rem; }
+.acct-set-t { font-weight: 600; margin: 0 0 .25rem; }
+.acct-set-d { margin: 0; color: var(--ink-soft); font-size: .92rem; line-height: 1.5; }
+.acct-btn { font-family: var(--sans); font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  padding: .62rem 1.15rem; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface); color: var(--ink); cursor: pointer; }
+.acct-btn:hover { border-color: var(--accent-2); color: var(--accent); }
+.acct-btn-quiet { color: var(--ink-soft); }
+.acct-small { font-size: .85rem; color: var(--ink-soft); line-height: 1.55; margin-top: 1.2rem; }
+.acct-perks { list-style: none; padding: 0; margin: 1.6rem 0 1rem; display: grid; gap: .8rem; }
+.acct-perks li { display: flex; flex-direction: column; gap: .25rem; padding: 1rem 1.2rem; border: 1px solid var(--line);
+  border-left: 3px solid var(--gold); border-radius: 12px; background: var(--surface); }
+.acct-perk-t { font-family: var(--serif); font-size: 1.12rem; color: var(--accent); }
+.acct-perk-d { color: var(--ink-soft); font-size: .95rem; }
+.acct-google { min-height: 48px; margin: 1.4rem 0 .4rem; }
+@media (max-width: 640px) {
+  .acct-head { padding: 1.2rem; }
+  .acct-seal { width: 64px; height: 64px; }
+  .acct-open { width: 100%; justify-content: center; }
+  .acct-stats { grid-template-columns: repeat(2, 1fr); }
+  .acct-row a { flex-direction: column; gap: .15rem; }
+  .acct-row-by { text-align: left; }
+}
+
+/* ---------- notes on lines ---------- */
+.poem-text .ln.has-mark { background: rgba(169, 133, 47, .09); box-shadow: inset 3px 0 0 var(--gold); border-radius: 2px; }
+.mark-dot { display: inline-block; width: .62rem; height: .62rem; margin-left: .5rem; padding: 0; border: none; border-radius: 50%;
+  vertical-align: middle; background: var(--gold); box-shadow: 0 0 0 3px rgba(169, 133, 47, .2); cursor: pointer; }
+.mark-dot:hover { background: var(--gold-ink); }
+.mark-add { position: absolute; z-index: 60; padding: .58rem .95rem; border: none; border-radius: 999px; background: var(--accent);
+  color: var(--on-accent); font-family: var(--sans); font-size: .74rem; font-weight: 600; letter-spacing: .05em; box-shadow: var(--shadow); cursor: pointer; }
+.mark-add[hidden] { display: none; }
+.mark-pop { margin: .5rem 0 1.3rem; padding: .95rem 1.05rem; border: 1px solid var(--gold); border-radius: 12px;
+  background: var(--surface-alt); font-family: var(--sans); font-size: .95rem; white-space: normal; text-indent: 0; }
+.mark-quote { font-family: var(--serif); margin: 0 0 .55rem; color: var(--ink-soft); }
+.mark-input { width: 100%; box-sizing: border-box; padding: .6rem .7rem; border: 1px solid var(--line-strong); border-radius: 8px;
+  background: var(--surface); color: var(--ink); font: inherit; resize: vertical; }
+.mark-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: .65rem; }
+.mark-actions button { padding: .45rem .95rem; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface);
+  color: var(--ink); font-family: var(--sans); font-size: .68rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+.mark-actions .mark-save { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.mark-where { margin-left: auto; color: var(--ink-soft); font-size: .8rem; }
+@media print { .mark-dot, .mark-add, .mark-pop { display: none !important; } .poem-text .ln.has-mark { background: none; } }

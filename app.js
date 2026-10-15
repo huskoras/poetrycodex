@@ -326,8 +326,10 @@
   const GOOGLE_CLIENT = (document.querySelector('meta[name="pc-google-client"]') || {}).content || "";
   const ACCOUNT_KEY = "pc-account";   // {name, email} while signed in: the pages' hint (the session is an HttpOnly cookie)
   const SYNC_KEY = "pc-sync";         // {at: {kind: server ms}, dirty: {kind: n}}
-  const SYNC_KINDS = { shelf: "pc-shelf", notes: "pc-notes", reading: "pc-reading", parallel: "pc-parallel" };
-  const KIND_OF = { "pc-shelf": "shelf", "pc-notes": "notes", "pc-reading": "reading", "pc-parallel": "parallel" };
+  const SYNC_KINDS = { shelf: "pc-shelf", notes: "pc-notes", reading: "pc-reading", parallel: "pc-parallel",
+                       marks: "pc-marks", readings: "pc-readings" };
+  const KIND_OF = { "pc-shelf": "shelf", "pc-notes": "notes", "pc-reading": "reading", "pc-parallel": "parallel",
+                    "pc-marks": "marks", "pc-readings": "readings" };
   let SYNCING = false;                // true while the account's copy is written into the browser
   const STORE_OK = (() => {
     try { localStorage.setItem("pc-test", "1"); localStorage.removeItem("pc-test"); return true; }
@@ -383,7 +385,7 @@
   }
   // The top bar's "Shelf" appears once there is something on it.
   function updateShelfNav() {
-    const show = shelfItems().length > 0 || Object.keys(allNotes()).length > 0 || /^#\/shelf/.test(location.hash);
+    const show = shelfItems().length > 0 || Object.keys(allNotes()).length > 0 || markCount() > 0 || /^#\/shelf/.test(location.hash);
     document.querySelectorAll('[data-nav="shelf"]').forEach((a) => { a.hidden = !show; });
   }
   const shelfPath = (id) => id.startsWith("work:") ? "/work/" + id.slice(5) + "/" : "/poem/" + id + "/";
@@ -440,6 +442,165 @@
       if (msg) msg.hidden = r.kept;
     });
   }
+  // ---------- notes on lines ----------
+  // Select a line, or a few words of one, in a poem or a book of a long work, and "Note on
+  // this line" appears under the selection. The note keeps the lines it covers (data-i, each
+  // line's place in the text as poemHTML numbers them) and the words selected; those lines
+  // get a gold mark in the margin, which opens the note again. Prose texts and the facing
+  // pages take no line notes. pc-marks: {v, marks: {entry id: {title, author, kind,
+  // translator, items: [{id, a, b, quote, text, updated}]}}}, kept like the other notes (this
+  // browser, and the account of a signed-in reader); listed on the shelf and the account page.
+  const MARKS_KEY = "pc-marks";
+  const MARK_MAX = 2000;
+  function allMarks() {
+    const m = readStore(MARKS_KEY).marks;
+    return m && typeof m === "object" && !Array.isArray(m) ? m : {};
+  }
+  const marksOf = (id) => ((allMarks()[id] || {}).items || []);
+  const markCount = () => Object.values(allMarks()).reduce((n, g) => n + ((g && g.items) || []).length, 0);
+  function putMark(entry, mark) {          // empty text: the note is deleted
+    const marks = allMarks();
+    const g = marks[entry.id] || { title: entry.title, author: entry.author, kind: entry.kind, translator: entry.translator || "", items: [] };
+    g.items = (g.items || []).filter((x) => x.id !== mark.id);
+    const text = String(mark.text || "").slice(0, MARK_MAX);
+    if (text.trim()) g.items.push(Object.assign({}, mark, { text, updated: new Date().toISOString() }));
+    g.items.sort((x, y) => x.a - y.a);
+    if (g.items.length) marks[entry.id] = g; else delete marks[entry.id];
+    writeStore(MARKS_KEY, { v: 1, marks });
+    updateShelfNav();
+  }
+  let MARK_CTX = null;                     // {entry, root} while a text that takes line notes is shown
+  let markBtn = null, selTimer = 0;
+  function bindMarks(entry) {
+    const root = app.querySelector(".text-solo .poem-text") || app.querySelector(".poem-text");
+    MARK_CTX = root && !root.classList.contains("is-prose") && root.querySelector(".ln[data-i]") ? { entry, root } : null;
+    hideMarkButton();
+    if (MARK_CTX) drawMarks();
+  }
+  function drawMarks() {
+    const { entry, root } = MARK_CTX;
+    root.querySelectorAll(".mark-dot").forEach((d) => d.remove());
+    root.querySelectorAll(".ln.has-mark").forEach((l) => l.classList.remove("has-mark"));
+    marksOf(entry.id).forEach((m) => {
+      for (let i = m.a; i <= m.b; i++) {
+        const l = root.querySelector(`.ln[data-i="${i}"]`);
+        if (l) l.classList.add("has-mark");
+      }
+      const first = root.querySelector(`.ln[data-i="${m.a}"]`);
+      if (!first) return;
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "mark-dot";
+      dot.title = "Your note";
+      dot.setAttribute("aria-label", "Your note on this line");
+      dot.addEventListener("click", (e) => { e.preventDefault(); openMarkEditor(m, false); });
+      first.appendChild(dot);
+    });
+  }
+  function hideMarkButton() { if (markBtn) markBtn.hidden = true; }
+  // The lines a selection touches, within the text on screen; a drag that ends at the very
+  // start of the next line does not take that line.
+  function selectedLines() {
+    if (!MARK_CTX || !MARK_CTX.root.isConnected) return null;
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || !sel.rangeCount) return null;
+    const r = sel.getRangeAt(0);
+    if (!MARK_CTX.root.contains(r.commonAncestorContainer) && !r.intersectsNode(MARK_CTX.root)) return null;
+    const lines = [...MARK_CTX.root.querySelectorAll(".ln[data-i]")].filter((l) => r.intersectsNode(l) && l.textContent.trim());
+    if (lines.length > 1 && r.endOffset === 0 && lines[lines.length - 1].contains(r.endContainer)) lines.pop();
+    if (!lines.length) return null;
+    const quote = sel.toString().replace(/\s+/g, " ").trim().slice(0, 300);
+    if (!quote) return null;
+    return { a: +lines[0].dataset.i, b: +lines[lines.length - 1].dataset.i, quote, rect: r.getBoundingClientRect() };
+  }
+  function checkSelection() {
+    const sel = selectedLines();
+    if (!sel) { hideMarkButton(); return; }
+    if (!markBtn) {
+      markBtn = document.createElement("button");
+      markBtn.type = "button";
+      markBtn.className = "mark-add";
+      markBtn.addEventListener("mousedown", (e) => e.preventDefault());   // keeps the selection
+      markBtn.addEventListener("click", () => {
+        const got = selectedLines() || markBtn.sel;
+        hideMarkButton();
+        if (got) openMarkEditor({ id: "m" + Date.now().toString(36), a: got.a, b: got.b, quote: got.quote, text: "" }, true);
+      });
+      document.body.appendChild(markBtn);
+    }
+    markBtn.sel = sel;
+    markBtn.textContent = sel.a === sel.b ? "Note on this line" : `Note on these ${sel.b - sel.a + 1} lines`;
+    const width = document.documentElement.clientWidth;
+    markBtn.style.top = (window.scrollY + sel.rect.bottom + 10) + "px";
+    markBtn.style.left = Math.max(8, Math.min(window.scrollX + sel.rect.left, window.scrollX + width - 210)) + "px";
+    markBtn.hidden = false;
+  }
+  document.addEventListener("selectionchange", () => { clearTimeout(selTimer); selTimer = setTimeout(checkSelection, 220); });
+  // The note under the last line it covers: a new one, or one opened from its mark.
+  function openMarkEditor(m, isNew) {
+    if (!MARK_CTX) return;
+    const { entry, root } = MARK_CTX;
+    root.querySelectorAll(".mark-pop").forEach((p) => p.remove());
+    const last = root.querySelector(`.ln[data-i="${m.b}"]`);
+    const stanza = last && last.closest(".stanza");
+    const pop = document.createElement("div");
+    pop.className = "mark-pop";
+    pop.innerHTML = `
+      <p class="mark-quote">\u201c${esc(m.quote)}\u201d</p>
+      <textarea class="mark-input" rows="3" maxlength="${MARK_MAX}" aria-label="Your note"
+        placeholder="Your note on ${m.a === m.b ? "this line" : "these lines"}\u2026">${esc(m.text || "")}</textarea>
+      <div class="mark-actions">
+        <button type="button" class="mark-save">Save note</button>
+        <button type="button" class="mark-cancel">${isNew ? "Cancel" : "Close"}</button>
+        ${isNew ? "" : `<button type="button" class="mark-delete">Delete</button>`}
+        <span class="mark-where">${signedIn() ? "Private: kept in your account" : "Private: kept in this browser"}</span>
+      </div>`;
+    if (stanza) stanza.after(pop); else root.appendChild(pop);
+    window.getSelection().removeAllRanges();
+    const input = pop.querySelector(".mark-input");
+    input.focus();
+    pop.querySelector(".mark-save").addEventListener("click", () => {
+      putMark(entry, Object.assign({}, m, { text: input.value }));
+      pop.remove();
+      drawMarks();
+    });
+    pop.querySelector(".mark-cancel").addEventListener("click", () => pop.remove());
+    const del = pop.querySelector(".mark-delete");
+    if (del) del.addEventListener("click", () => { putMark(entry, Object.assign({}, m, { text: "" })); pop.remove(); drawMarks(); });
+  }
+  // Every note on a line, newest first: [{id (the text's), g (its group), m}]
+  function markRows() {
+    const rows = [];
+    Object.entries(allMarks()).forEach(([id, g]) => ((g && g.items) || []).forEach((m) => rows.push({ id, g, m })));
+    return rows.sort((x, y) => String(y.m.updated).localeCompare(String(x.m.updated)));
+  }
+  const markRowHTML = ({ id, g, m }) => `
+      <li class="mark-row">
+        <p class="mark-row-quote">\u201c${esc(m.quote)}\u201d</p>
+        <p class="mark-row-note">${esc(m.text)}</p>
+        <p class="mark-row-src"><a href="${esc(routeFor(id))}">${esc(g.title || "")}</a>${g.author ? ` \u00b7 ${esc(g.author)}` : ""} \u00b7 ${esc(shortDate(m.updated))}</p>
+      </li>`;
+
+  // ---------- the reader's readings with the Codex ----------
+  // Each reading, answer, gloss or comparison the engine writes for this reader is kept (the
+  // last READINGS_MAX, each up to 6,000 characters), so the account page can show them again.
+  // pc-readings: {v, items: [{id, kind, label, title, author, text, at}]}.
+  const READINGS_KEY = "pc-readings";
+  const READINGS_MAX = 30;
+  function allReadings() {
+    const r = readStore(READINGS_KEY).items;
+    return Array.isArray(r) ? r.filter((x) => x && x.id && x.text) : [];
+  }
+  function recordReading(piece, path, label, text) {
+    if (!piece || !piece.id || !String(text || "").trim()) return;
+    const kind = path.replace("/api/", "");
+    const items = allReadings().filter((x) => !(x.id === piece.id && x.kind === kind && x.label === label));
+    items.unshift({ id: piece.id, kind, label, title: piece.title, author: piece.author,
+                    text: String(text).slice(0, 6000), at: new Date().toISOString() });
+    writeStore(READINGS_KEY, { v: 1, items: items.slice(0, READINGS_MAX) });
+  }
+  const READING_KINDS = { analyze: "Reading", ask: "Question", gloss: "Gloss", compare: "Comparison" };
+
   window.addEventListener("storage", (e) => {      // saved or removed in another tab
     if (e.key !== SHELF_KEY && e.key !== NOTES_KEY && e.key !== null) return;
     updateShelfNav();
@@ -510,6 +671,28 @@
       return { v: 1, works };
     },
     parallel: (local, server) => Object.assign({}, server || {}, local || {}),
+    marks(local, server) {
+      const marks = JSON.parse(JSON.stringify((server && server.marks) || {}));
+      Object.entries((local && local.marks) || {}).forEach(([id, g]) => {
+        if (!g || !Array.isArray(g.items)) return;
+        const into = marks[id] || Object.assign({}, g, { items: [] });
+        const byId = new Map((into.items || []).map((m) => [m.id, m]));
+        g.items.forEach((m) => { const o = byId.get(m.id); if (!o || String(m.updated || "") >= String(o.updated || "")) byId.set(m.id, m); });
+        into.items = [...byId.values()].sort((x, y) => x.a - y.a);
+        marks[id] = into;
+      });
+      return { v: 1, marks };
+    },
+    readings(local, server) {
+      const seen = new Map();
+      [].concat((local && local.items) || [], (server && server.items) || []).forEach((r) => {
+        if (!r || !r.id) return;
+        const k = r.id + "|" + r.kind + "|" + r.label;
+        const o = seen.get(k);
+        if (!o || String(r.at || "") > String(o.at || "")) seen.set(k, r);
+      });
+      return { v: 1, items: [...seen.values()].sort((x, y) => String(y.at).localeCompare(String(x.at))).slice(0, READINGS_MAX) };
+    },
   };
   let pushTimer = 0, pushing = false, lastPull = 0;
   function noteChange(kind) {
@@ -662,72 +845,149 @@
   });
   window.addEventListener("online", () => { if (signedIn()) schedulePush(500); });
 
+  // The account page, #/account: the reader's library when signed in (what is saved, the
+  // notes on poems and on lines, the readings the Codex wrote for them, then the account's
+  // own settings); the sign-in page when not.
   function renderAccount() {
-    setTitle(signedIn() ? "Your account" : "Sign in");
     const acct = readStore(ACCOUNT_KEY);
+    setTitle(signedIn() ? "Your library" : "Sign in");
+    const seal = `<img class="acct-seal" src="coin-300.webp" alt="" width="96" height="96" />`;
     if (!GOOGLE_CLIENT) {
-      app.innerHTML = `<article class="account"><div class="page-head"><h1 class="page-title">Sign in</h1>
-        <p class="page-sub">Accounts are not open yet. Your shelf and notes are kept in this browser meanwhile.</p></div></article>`;
+      app.innerHTML = `<article class="acct"><header class="acct-head">${seal}<div class="acct-id">
+        <h1 class="acct-name">Sign in</h1><p class="acct-mail">Accounts are not open yet. Your shelf and notes are kept in this browser meanwhile.</p>
+        </div></header></article>`;
       return;
     }
-    if (signedIn()) {
-      const n = shelfItems().length, k = Object.keys(allNotes()).length;
+    if (!signedIn()) {
       app.innerHTML = `
-        <article class="account">
-          <div class="page-head">
-            <h1 class="page-title">Your account</h1>
-            <p class="page-sub">Signed in as <strong>${esc(acct.name || acct.email)}</strong>${acct.name ? ` · ${esc(acct.email)}` : ""}</p>
-          </div>
-          <p>Your shelf (${num(n)} ${n === 1 ? "text" : "texts"}), your notes (${num(k)}), your places in the long works and your
-          facing-page settings are kept in your account and in this browser. Sign in with the same Google account on any
-          other device and they will be there. No one else can see them.</p>
-          <p><a href="#/shelf">Open your shelf →</a></p>
-          <section class="account-actions">
-            <h2>Sign out</h2>
-            <label class="account-check"><input type="checkbox" class="account-clear"> Also remove my shelf and notes from this
-            browser (on a shared computer). They stay in your account.</label>
-            <div class="cite-row"><button class="account-out" type="button">Sign out</button></div>
-          </section>
-          <section class="account-actions">
-            <h2>Delete my account</h2>
-            <p>Deletes your account and everything kept in it from Poetry Codex, at once and for good. What is in this browser
-            stays until you remove it.</p>
-            <div class="cite-row"><button class="account-delete" type="button">Delete my account</button></div>
-          </section>
+        <article class="acct acct-signin">
+          <header class="acct-head">${seal}
+            <div class="acct-id">
+              <p class="acct-kicker">Poetry Codex</p>
+              <h1 class="acct-name">Your library, on every device</h1>
+              <p class="acct-mail">Signing in is optional: the whole archive is open without it.</p>
+            </div>
+          </header>
+          <ul class="acct-perks">
+            <li><span class="acct-perk-t">A shelf that follows you</span>
+              <span class="acct-perk-d">Save poems and long works on your phone, read them on your laptop.</span></li>
+            <li><span class="acct-perk-t">Notes on the lines</span>
+              <span class="acct-perk-d">Select a line in any poem and write beside it; your notes wait for you.</span></li>
+            <li><span class="acct-perk-t">Your readings with the Codex</span>
+              <span class="acct-perk-d">Every reading and answer the engine writes for you, kept to read again.</span></li>
+          </ul>
+          <div class="acct-google"><p class="loading">Loading Google sign-in…</p></div>
           <p class="account-status" role="status"></p>
-          <p class="account-small"><a href="/privacy/">Privacy and personal data</a> · <a href="/terms/">Terms of use</a></p>
+          <p class="acct-small">Poetry Codex keeps only your name, your email address and what you save. No password is ever
+          given to the site, and nothing is shared or shown to anyone. By signing in you accept the <a href="/terms/">Terms of
+          use</a> and the <a href="/privacy/">privacy notice</a>; you can delete your account at any time.</p>
         </article>`;
-      const status = app.querySelector(".account-status");
-      app.querySelector(".account-out").addEventListener("click", async () => {
-        status.textContent = "Signing out\u2026";
-        await signOut(app.querySelector(".account-clear").checked);
-        route();
-      });
-      app.querySelector(".account-delete").addEventListener("click", async () => {
-        if (!confirm("Delete your Poetry Codex account and everything kept in it? This cannot be undone.")) return;
-        status.textContent = "Deleting\u2026";
-        try { await deleteAccount(); route(); status.textContent = ""; }
-        catch (e) { status.textContent = "It could not be deleted just now (" + e.message + "). Please try again."; }
-      });
+      showGoogleButton(app.querySelector(".acct-google"), app.querySelector(".account-status"));
       return;
     }
+    const shelf = shelfItems();
+    const notes = Object.values(allNotes()).sort((a, b) => String(b.updated).localeCompare(String(a.updated)));
+    const marks = markRows();
+    const readings = allReadings();
+    const stat = (n, one, many, jump) => `
+      <button class="acct-stat" type="button" data-jump="${jump}">
+        <span class="acct-stat-n">${num(n)}</span><span class="acct-stat-l">${n === 1 ? one : many}</span>
+      </button>`;
+    const empty = (t) => `<p class="acct-empty">${t}</p>`;
+    const itemRow = (it) => `
+      <li class="acct-row"><a href="${esc(routeFor(it.id))}"><span class="acct-row-t">${esc(it.title)}</span>
+        <span class="acct-row-by">${esc(byLine(it))}</span></a></li>`;
+    const noteRow = (n) => `
+      <li class="mark-row"><p class="mark-row-note">${esc(n.text)}</p>
+        <p class="mark-row-src"><a href="${esc(routeFor(n.id))}">${esc(n.title || "")}</a>${n.author ? ` · ${esc(n.author)}` : ""} · ${esc(shortDate(n.updated))}</p></li>`;
+    const readingRow = (r, k) => `
+      <li class="acct-reading">
+        <details>
+          <summary><span class="acct-r-kind">${esc(READING_KINDS[r.kind] || "Reading")}</span>
+            <span class="acct-r-label">${esc(r.label || "")}</span>
+            <span class="acct-r-src">${esc(r.title || "")}${r.author ? ` · ${esc(r.author)}` : ""} · ${esc(shortDate(r.at))}</span></summary>
+          <div class="acct-r-text">${String(r.text).split(/\n{2,}/).filter(Boolean).map((p) => `<p>${esc(p)}</p>`).join("")}
+            <p class="acct-r-go"><a href="${esc(routeFor(r.id))}">Open the text →</a></p></div>
+        </details>
+      </li>`;
     app.innerHTML = `
-      <article class="account">
-        <div class="page-head">
-          <h1 class="page-title">Sign in</h1>
-          <p class="page-sub">Keep your shelf, your notes and your place in the long works on every device.</p>
+      <article class="acct">
+        <header class="acct-head">${seal}
+          <div class="acct-id">
+            <p class="acct-kicker">Your library</p>
+            <h1 class="acct-name">${esc(acct.name || acct.email)}</h1>
+            <p class="acct-mail">${esc(acct.email)}</p>
+          </div>
+          <a class="acct-open" href="#/shelf">Open your shelf <span aria-hidden="true">→</span></a>
+        </header>
+        <p class="acct-sync">Kept in your account and in this browser: sign in with the same Google account on any device
+        and everything here is waiting. No one else can see it.</p>
+        <div class="acct-stats">
+          ${stat(shelf.length, "text saved", "texts saved", "acct-saved")}
+          ${stat(notes.length, "note", "notes", "acct-notes")}
+          ${stat(marks.length, "note on a line", "notes on lines", "acct-marks")}
+          ${stat(readings.length, "reading with the Codex", "readings with the Codex", "acct-readings")}
         </div>
-        <p>Signing in is optional: the whole archive is open without it. With an account, what you save follows you to
-        your phone, your laptop or the library computer. Poetry Codex keeps only your name, your email address and what you
-        save; no password is ever given to the site, and nothing is shared or shown to anyone.</p>
-        <div class="account-google"><p class="loading">Loading Google sign-in\u2026</p></div>
-        <p class="account-status" role="status"></p>
-        <p class="account-small">By signing in you accept the <a href="/terms/">Terms of use</a> and agree that your name,
-        email address, shelf and notes are kept for this purpose as described in <a href="/privacy/">Privacy and personal
-        data</a>. You can delete your account at any time.</p>
+
+        <section class="acct-sec" id="acct-saved">
+          <h2>Recently saved</h2>
+          ${shelf.length ? `<ul class="acct-list">${shelf.slice(0, 6).map(itemRow).join("")}</ul>
+            ${shelf.length > 6 ? `<p class="acct-more"><a href="#/shelf">All ${num(shelf.length)} on your shelf →</a></p>` : ""}`
+            : empty(`Nothing saved yet: open a poem or a long work and press <strong>Save to shelf</strong>.`)}
+        </section>
+        <section class="acct-sec" id="acct-marks">
+          <h2>Notes on lines</h2>
+          ${marks.length ? `<ul class="mark-list">${marks.slice(0, 12).map(markRowHTML).join("")}</ul>
+            ${marks.length > 12 ? `<p class="acct-more"><a href="#/shelf">All ${num(marks.length)} on your shelf →</a></p>` : ""}`
+            : empty(`Select a line, or a few words, in any poem and choose <strong>Note on this line</strong>.`)}
+        </section>
+        <section class="acct-sec" id="acct-notes">
+          <h2>Notes on poems</h2>
+          ${notes.length ? `<ul class="mark-list">${notes.slice(0, 6).map(noteRow).join("")}</ul>`
+            : empty(`Under any poem, <strong>Add a note</strong> keeps a private note on the whole text.`)}
+        </section>
+        <section class="acct-sec" id="acct-readings">
+          <h2>Readings with the Codex</h2>
+          ${readings.length ? `<ul class="acct-readings">${readings.map(readingRow).join("")}</ul>`
+            : empty(`Open a poem and choose <strong>Read with the Codex</strong>: every reading, answer or gloss it writes for you is kept here.`)}
+        </section>
+
+        <section class="acct-sec acct-settings">
+          <h2>Account</h2>
+          <div class="acct-set-row">
+            <div><p class="acct-set-t">Sign out</p>
+              <label class="account-check"><input type="checkbox" class="account-clear"> Also remove my library from this
+              browser (on a shared computer). It stays in your account.</label></div>
+            <button class="acct-btn account-out" type="button">Sign out</button>
+          </div>
+          <div class="acct-set-row">
+            <div><p class="acct-set-t">Delete my account</p>
+              <p class="acct-set-d">Deletes your account and everything kept in it from Poetry Codex, at once and for good.
+              What is in this browser stays until you remove it.</p></div>
+            <button class="acct-btn acct-btn-quiet account-delete" type="button">Delete account</button>
+          </div>
+          <p class="account-status" role="status"></p>
+          <p class="acct-small"><a href="/privacy/">Privacy and personal data</a> · <a href="/terms/">Terms of use</a></p>
+        </section>
       </article>`;
-    showGoogleButton(app.querySelector(".account-google"), app.querySelector(".account-status"));
+    app.querySelectorAll(".acct-stat").forEach((b) => b.addEventListener("click", () => {
+      const to = document.getElementById(b.dataset.jump);
+      if (to) to.scrollIntoView({ behavior: "smooth", block: "start" });
+    }));
+    const status = app.querySelector(".account-status");
+    app.querySelector(".account-out").addEventListener("click", async () => {
+      status.textContent = "Signing out…";
+      await signOut(app.querySelector(".account-clear").checked);
+      route();
+    });
+    app.querySelector(".account-delete").addEventListener("click", async () => {
+      if (!confirm("Delete your Poetry Codex account and everything kept in it? This cannot be undone.")) return;
+      status.textContent = "Deleting…";
+      try { await deleteAccount(); route(); status.textContent = ""; }
+      catch (e) { status.textContent = "It could not be deleted just now (" + e.message + "). Please try again."; }
+    });
   }
+
   // How far down the text the reader is: the point a third of the way down the window.
   let READING_NOW = null;    // {slug, i, el} while a book of a work is on screen
   let pendingResume = null;  // {slug, i, frac} set by a "Continue reading" link
@@ -834,7 +1094,7 @@
   function poemHTML(text, prose) {
     if (prose) return proseHTML(text);
     const stanzas = String(text || "").split(/\n\s*\n/).filter((s) => s.trim());
-    let n = 0, skipNext = false;
+    let n = 0, i = 0, skipNext = false;
     return stanzas.map((st) => {
       const ls = st.split("\n").filter((l) => l.trim());
       const first = ls[0].trim();
@@ -842,7 +1102,7 @@
       skipNext = ARGUMENT.test(first) && ls.length === 1;
       return `<p class="stanza">${ls.map((l) => {
         const counted = !argument && /\p{Ll}/u.test(l) && ++n % 5 === 0;
-        return `<span class="ln"${counted ? ` data-n="${n}"` : ""}>${esc(l.replace(/\s+$/, ""))}</span><br>`;
+        return `<span class="ln" data-i="${i++}"${counted ? ` data-n="${n}"` : ""}>${esc(l.replace(/\s+$/, ""))}</span><br>`;
       }).join("")}</p>`;
     }).join("");
   }
@@ -2212,6 +2472,7 @@
     { const here = location.hash; fetchSources(w.authorSlug).then((d) => applySource(cite, d && d.works && d.works[slug], here)); }
     bindShelfButton(entry);
     bindNote(entry);
+    bindMarks(entry);
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/work/" + slug + "/" + b.dataset.go; }));
     restoreScroll();
     // Reading position: opened from "Continue reading", the book scrolls to where it was
@@ -2417,15 +2678,19 @@
         assumption that an interpretation is only as good as the tradition it can be held accountable to.</p>
 
         <h2>Texts &amp; images</h2>
-        <p>Every poem here is in the public domain and is reproduced in full. Translations are pre-1929
-        and name their translator; where the book a poem comes from is recorded, its page names that
-        too. Poet portraits are likewise public-domain works, courtesy of Wikimedia
+        <p>Every poem here is in the public domain and is reproduced in full. Translations were published
+        before 1931 and name their translator; where the book a poem comes from is recorded, its page names
+        that too. Poet portraits are likewise public-domain works, courtesy of Wikimedia
         Commons, and each carries its credit.</p>
+        <p>The gold medallion that is the Codex's emblem is the <a href="https://art.thewalters.org/object/59.1/" rel="noopener">Medallion with
+        Alexander the Great</a>, Roman, about 215–243 CE, found at Aboukir in Egypt in 1902 and now in the Walters
+        Art Museum, Baltimore (59.1). The museum has placed its photographs in the public domain, and we thank the
+        Walters for its generosity.</p>
 
         <h2>Suggest a missing poem</h2>
         <p>If a poem you would expect to find here is missing, tell us. It can join the archive if
         it is in the public domain: by a poet who died long ago and, if it is a translation, in an
-        English version published before 1929.
+        English version published before 1931.
         <a data-suggest href="${esc(SUGGEST_URL)}">Suggest a poem</a> opens an email with a short
         form to fill in.</p>
 
@@ -2494,8 +2759,13 @@
         ${visitOnly() ? `<p class="shelf-warn">This browser is not keeping data for this site (a private
           window, or site storage switched off or full), so your shelf will be gone when you close
           this tab. Download it below to keep a copy.</p>` : ""}
-        ${items.length || loose.length ? group("Poems", poems, savedNote) + group("Works", works, savedNote)
-          + group("Your notes on other texts", loose, (n) => n) + `
+        ${items.length || loose.length || markCount() ? group("Poems", poems, savedNote) + group("Works", works, savedNote)
+          + group("Your notes on other texts", loose, (n) => n)
+          + (markCount() ? `
+        <section class="shelf-group">
+          <h2>Notes on lines · ${markCount()}</h2>
+          <ul class="mark-list">${markRows().map(markRowHTML).join("")}</ul>
+        </section>` : "") + `
         <section class="shelf-export">
           <h2>Take it with you</h2>
           <p>${signedIn() ? "Download a copy to keep, or to paste into your own notes." : "Your shelf is stored nowhere else. Download a copy to keep it, or to paste into your own notes."}</p>
@@ -2535,6 +2805,8 @@
     return {
       format: "Poetry Codex shelf", version: 1, exported: new Date().toISOString(),
       shelf: shelfItems().map(row), notes: looseNotes().map(row),
+      lineNotes: markRows().map(({ id, g, m }) => ({ id, title: g.title, author: g.author, url: SITE + shelfPath(id),
+        quote: m.quote, note: m.text, updated: m.updated })),
     };
   }
   function shelfMarkdown() {
@@ -2550,7 +2822,9 @@
     return `# My Poetry Codex shelf\n\nExported ${shortDate(new Date().toISOString())} from ${SITE}\n\n`
       + block("Poems", items.filter((it) => it.kind === "poem"))
       + block("Works", items.filter((it) => it.kind !== "poem"))
-      + block("Notes on other texts", looseNotes());
+      + block("Notes on other texts", looseNotes())
+      + (markCount() ? "## Notes on lines\n\n" + markRows().map(({ id, g, m }) =>
+        `- “${md(m.quote)}” — **${md(g.title)}**, ${md(g.author || "")}  \n  ${SITE + shelfPath(id)}\n  > ${m.text.split("\n").join("\n  > ")}\n`).join("\n") + "\n" : "");
   }
   function downloadFile(name, type, text) {
     const url = URL.createObjectURL(new Blob([text], { type: type + ";charset=utf-8" }));
@@ -2945,7 +3219,7 @@
     }
 
     // Streams one reading, answer, gloss or comparison into #engine-out.
-    async function run(path, payload, credit) {
+    async function run(path, payload, credit, label) {
       if (running) return;
       setBusy(true);
       out.hidden = false;
@@ -2991,6 +3265,7 @@
                 : ""}</p>`;
           }
         }
+        recordReading(piece, path, label || "", prose);
       } catch (err) {
         out.className = "engine-out is-error";
         out.textContent = err.message || "The reading could not be completed.";
@@ -3008,10 +3283,10 @@
         const partial = piece.text.length > 6000;
         run("/api/gloss", {}, partial
           ? "Modern-English gloss of the opening lines, generated by the Poetry Codex critical engine."
-          : "Modern-English gloss, generated by the Poetry Codex critical engine.");
+          : "Modern-English gloss, generated by the Poetry Codex critical engine.", "Modern-English gloss");
       } else {
         run("/api/analyze", { lens: btn.dataset.lens },
-            btn.textContent + " reading, generated by the Poetry Codex critical engine.");
+            btn.textContent + " reading, generated by the Poetry Codex critical engine.", btn.textContent + " reading");
       }
     }));
 
@@ -3025,7 +3300,7 @@
       if (!question || running) return;
       buttons.forEach((b) => b.classList.remove("active"));
       run("/api/ask", { question },
-          "In answer to: \u201c" + question + "\u201d \u2014 generated by the Poetry Codex critical engine.");
+          "In answer to: \u201c" + question + "\u201d \u2014 generated by the Poetry Codex critical engine.", question);
     });
 
     const panel = app.querySelector(".engine");
@@ -3063,7 +3338,7 @@
       run("/api/compare",
           { otherTitle: other.title, otherAuthor: other.author, otherText: other.text },
           "A comparative reading with \u201c" + other.title + "\u201d by " + other.author
-          + ", generated by the Poetry Codex critical engine.");
+          + ", generated by the Poetry Codex critical engine.", "Compared with \u201c" + other.title + "\u201d");
     });
   }
 
@@ -3163,6 +3438,7 @@
     { const here = location.hash; fetchSources(p.authorSlug).then((d) => applySource(cite, poemSource(d, p), here)); }
     bindShelfButton(entry);
     bindNote(entry);
+    bindMarks(entry);
     restoreScroll();
   }
 

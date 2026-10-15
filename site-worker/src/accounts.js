@@ -18,7 +18,7 @@
 
 const SESSION_DAYS = 180;
 const COOKIE = "pc_session";
-const KEYS = new Set(["shelf", "notes", "reading", "parallel"]);
+const KEYS = new Set(["shelf", "notes", "reading", "parallel", "marks", "readings"]);
 const MAX_VALUE = 400 * 1024;          // bytes of JSON per kind (5,000-character notes: ~80 of them)
 const GOOGLE_JWKS = "https://www.googleapis.com/oauth2/v3/certs";
 const ISSUERS = new Set(["accounts.google.com", "https://accounts.google.com"]);
