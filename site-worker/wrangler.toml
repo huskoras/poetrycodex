@@ -1,0 +1,18 @@
+# poetrycodex-site: the Worker that serves poetrycodex.com from R2 (see src/index.js).
+# The published files are copied into the bucket by tools/sync_r2.py.
+name = "poetrycodex-site"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+[[r2_buckets]]
+binding = "SITE"
+bucket_name = "poetrycodex-site"
+
+# Switching the domain over (only after the workers.dev address has been tested):
+# uncomment these two routes and run `wrangler deploy` again. To go back to GitHub Pages,
+# comment them out and deploy again (the DNS records never change).
+# routes = [
+#   { pattern = "poetrycodex.com/*", zone_name = "poetrycodex.com" },
+#   { pattern = "www.poetrycodex.com/*", zone_name = "poetrycodex.com" },
+# ]
