@@ -17,7 +17,7 @@ routes = [
 # Reader accounts (src/accounts.js). The Google client id is public (every visitor's browser
 # sees it); there is no client secret. Empty = the sign-in button stays hidden.
 [vars]
-GOOGLE_CLIENT_ID = ""
+GOOGLE_CLIENT_ID = "176923465175-uc80ic3g0f0sosm3bf205747dchv6s07.apps.googleusercontent.com"
 SITE_ORIGINS = "https://poetrycodex.com"
 
 [[d1_databases]]
