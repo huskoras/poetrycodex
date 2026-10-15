@@ -17,8 +17,8 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
-  <script>window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=56" />
+  <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
+  <link rel="stylesheet" href="/styles.css?v=57" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
@@ -33,7 +33,7 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <button class="tb-theme tb-theme-end" type="button" onclick="pcToggleTheme()" aria-label="Switch between light and dark" title="Light or dark"><svg class="i-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="i-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -47,7 +47,7 @@
 <p>Thomas Gray (1716–1771) was a reclusive Cambridge scholar who published only a handful of poems in his lifetime, yet his Elegy Written in a Country Churchyard became one of the most quoted poems in the English language.</p>
 <p>His Pindaric odes The Progress of Poesy and The Bard helped carry English verse from Augustan restraint toward the Romantic sublime.</p>
       </div>
-      <p class="section-label">Poems (18)</p>
+      <p class="section-label">Poems (43)</p>
       <ol class="poet-poems">
 <li><a href="/poem/gray/0/">Elegy Written in a Country Churchyard</a></li>
 <li><a href="/poem/gray/1/">Ode on the Spring</a></li>
@@ -67,6 +67,31 @@
 <li><a href="/poem/gray/15/">Stanzas Suggested by a View of the Seat and Ruins at Kingsgate, in Kent, 1766</a></li>
 <li><a href="/poem/gray/16/">Translation from Statius</a></li>
 <li><a href="/poem/gray/17/">Gray on Himself</a></li>
+<li><a href="/poem/gray/18/">Sonnet on the Death of Richard West</a></li>
+<li><a href="/poem/gray/19/">Hymn to Ignorance: A Fragment</a></li>
+<li><a href="/poem/gray/20/">The Alliance of Education and Government: A Fragment</a></li>
+<li><a href="/poem/gray/21/">Stanzas to Mr. Richard Bentley</a></li>
+<li><a href="/poem/gray/22/">Epitaph on a Child</a></li>
+<li><a href="/poem/gray/23/">Epitaph on Sir William Williams</a></li>
+<li><a href="/poem/gray/24/">Caradoc</a></li>
+<li><a href="/poem/gray/25/">Conan</a></li>
+<li><a href="/poem/gray/26/">Jemmy Twitcher: or, The Cambridge Courtship</a></li>
+<li><a href="/poem/gray/27/">Shakespeare Verses</a></li>
+<li><a href="/poem/gray/28/">Satire upon the Heads; or, Never a Barrel the Better Herring</a></li>
+<li><a href="/poem/gray/29/">Amatory Lines</a></li>
+<li><a href="/poem/gray/30/">Song</a></li>
+<li><a href="/poem/gray/31/">Comic Lines</a></li>
+<li><a href="/poem/gray/32/">Couplet about Birds</a></li>
+<li><a href="/poem/gray/33/">Tophet</a></li>
+<li><a href="/poem/gray/34/">Parody on an Epitaph</a></li>
+<li><a href="/poem/gray/35/">Impromptus</a></li>
+<li><a href="/poem/gray/36/">Stanza</a></li>
+<li><a href="/poem/gray/37/">Translation from Statius (Thebaid VI, 646-688)</a></li>
+<li><a href="/poem/gray/38/">Translation from Tasso (Gerusalemme Liberata XIV, st. 32)</a></li>
+<li><a href="/poem/gray/39/">Imitated from Propertius (III. v. 1-2)</a></li>
+<li><a href="/poem/gray/40/">Translation from Propertius (III. v. 19ff.)</a></li>
+<li><a href="/poem/gray/41/">Translation from Propertius (II. i): To Maecenas</a></li>
+<li><a href="/poem/gray/42/">Translation from Dante, Inferno, Canto 33 (Count Ugolino)</a></li>
       </ol>
       <p class="read-in-archive"><a href="/#/poet/gray">See Thomas Gray in the full archive →</a></p>
     </article>
