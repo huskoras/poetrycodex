@@ -89,6 +89,9 @@ def snapshot(files, dest):
                          cwd=ROOT, stdout=subprocess.PIPE)
     with tarfile.open(fileobj=p.stdout, mode="r|") as tar:
         tar.extractall(dest, filter="data")
+    # tarfile stops at the end-of-archive mark, but git still writes the padding after it;
+    # unread, it fills the pipe and git (and this script) wait for ever.
+    p.stdout.read()
     if p.wait():
         sys.exit("git archive failed")
 
