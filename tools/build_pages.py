@@ -404,7 +404,7 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
   <footer class="site-foot">
     <div class="foot-bar">
       <span>© 2026 Poetry Codex. All texts are in the public domain.</span>
-      <span class="foot-privacy"><a href="/">Open the full archive</a> · <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a></span>
+      <span class="foot-privacy"><a href="/">Open the full archive</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a></span>
     </div>
   </footer>
 </body>
