@@ -1704,13 +1704,13 @@
       if (DATA) return;                       // the index won the race: nothing to do
       const fc = document.getElementById("foot-count");
       if (HOME && fc && !fc.textContent) fc.textContent = num(HOME.count);
-      if (isHomeHash(location.hash)) route(); // other pages already say "Opening the archive…"
+      if (isHomeHash(location.hash) || isTodayHash(location.hash)) route(); // other pages already say "Opening the archive…"
       if (isHomeHash(location.hash)) afterPaint(loadIndex);
     });
   setTimeout(() => {
     if (HOME || DATA || HOME_FAILED) return;
     HOME_FAILED = true;
-    if (isHomeHash(location.hash)) { loadIndex(); route(); }
+    if (isHomeHash(location.hash) || isTodayHash(location.hash)) { loadIndex(); route(); }
   }, 1500);
 
   // The index (32 MB; reading it holds the page up for half a second or more on a phone) is
@@ -1883,6 +1883,7 @@
   // The home page: "#/", no hash, or a query on it. (route() also sends unknown addresses
   // home once the index is in.)
   const isHomeHash = (h) => !h || /^#\/?(\?.*)?$/.test(h);
+  const isTodayHash = (h) => h === "#/today";
   const EARLY_NAV = [[/^#\/(poems|poem|work|category|today)\b/, "poems"], [/^#\/poets?\b/, "poets"],
     [/^#\/topics/, "topics"], [/^#\/about/, "about"], [/^#\/shelf/, "shelf"], [/^#\/account/, "account"], [/^#\/oracle/, "oracle"], [/^#\/eras/, "eras"]];
   // Before the index is in: the home page from home.json if it has come (while it is on its
@@ -1910,7 +1911,7 @@
     }
     EARLY_HOME = "";
     // A poem or a book of a work is drawn from its shard at once, a work's contents and two
-    // translations side by side from work/works.json;
+    // translations side by side from work/works.json, the poem of the day from home.json;
     // none of them waits for the index or asks for it.
     const st = history.state && typeof history.state.y === "number" ? history.state : null;
     // (The page scrolls to its saved place once drawn: restoreScroll(), in each renderer that
@@ -1922,6 +1923,11 @@
     let m;
     if ((m = h.match(/^#\/poem\/([\w-]+)\/(\d+)$/))) { early(() => renderDetail(m[1], parseInt(m[2], 10))); return; }
     if ((m = h.match(/^#\/work\/([\w-]+)\/(\d+)$/))) { early(() => renderWorkSection(m[1], parseInt(m[2], 10))); return; }
+    if (h === "#/today" && (HOME || !HOME_FAILED)) {
+      if (HOME) early(renderToday);           // else home.json is on its way: its arrival routes again
+      else { setRoute("poems", "sub"); app.innerHTML = `<p class="loading">Loading…</p>`; }
+      return;
+    }
     if ((m = h.match(/^#\/work\/([\w-]+)(?:\/(\d+)\/with\/([\w-]+))?$/))) {
       setRoute("poems", "sub");
       if (!WORKS[m[1]]) app.innerHTML = `<p class="loading">Loading…</p>`;
@@ -1956,11 +1962,7 @@
       filterForm = st.filterForm || "All";
     }
     let m;
-    if (h === "#/today") {
-      // The day's poem, from a link that never changes (the footer's, or a bookmark).
-      const p = poemOfTheDay();
-      location.replace(location.href.split("#")[0] + (p ? "#/poem/" + p.id : "#/"));
-    }
+    if (h === "#/today") { setRoute("poems", "sub"); renderToday(); }
     else if ((m = h.match(/^#\/poem\/(\d+)$/))) {
       // Legacy link: #/poem/<arrayIndex> from the old single-poems.json array.
       // Resolve via the frozen legacyIndex map and redirect to the new stable id.
@@ -2127,20 +2129,98 @@
   // tools/build_home.py writes the next 400 days of it into home.json by the same rule:
   // change both together.
   const utcDay = () => Math.floor(Date.now() / 864e5);
-  function poemOfTheDay() {
-    const fits = (p) => p.excerpt && p.excerpt.split("\n").every((l) => l.length <= 90);
-    let pool = DATA.poems.filter((p) => p.hasNote && fits(p));
-    if (!pool.length) pool = DATA.poems.filter(fits);
-    if (!pool.length) return null;
-    return pool[(utcDay() * 7919) % pool.length];
+  let POTD_POOL = null;
+  function poemOfTheDay(day = utcDay()) {
+    if (!POTD_POOL) {
+      const fits = (p) => p.excerpt && p.excerpt.split("\n").every((l) => l.length <= 90);
+      POTD_POOL = DATA.poems.filter((p) => p.hasNote && fits(p));
+      if (!POTD_POOL.length) POTD_POOL = DATA.poems.filter(fits);
+    }
+    if (!POTD_POOL.length) return null;
+    return POTD_POOL[(day * 7919) % POTD_POOL.length];
   }
-  // Today's row of home.json, as an object like an index entry (plus `lang`), or null.
-  function homePoemOfTheDay() {
-    const row = HOME.potd && HOME.potd[utcDay() - HOME.potdStart];
+  // A day's row of home.json (today's by default), as an object like an index entry (plus
+  // `lang`), or null. home.json starts on the day it was built and runs 400 days ahead.
+  function homePoemOfTheDay(day = utcDay()) {
+    const row = HOME && HOME.potd && day >= HOME.potdStart ? HOME.potd[day - HOME.potdStart] : null;
     if (!row) return null;
     const p = {};
     (HOME.potdFields || []).forEach((k, i) => { p[k] = row[i]; });
     return p.id && p.title ? p : null;
+  }
+  // The poem of a given day, from the index when it is in (as the home page does), else
+  // from home.json.
+  const potdFor = (day) => (DATA ? poemOfTheDay(day) : homePoemOfTheDay(day));
+  const dayLabel = (day) => { const d = new Date(day * 864e5); return d.getUTCDate() + " " + MONTHS[d.getUTCMonth()]; };
+
+  // ---------- #/today: the poem of the day in full, and the days before it ----------
+  // The poem comes from its shard, so the page needs no index. The earlier days are in
+  // home.json from the day it was built; days before that are worked out from the index by
+  // the same rule, which is fetched only when the reader asks for them.
+  const TODAY_BACK = 30;
+  function renderToday() {
+    const today = utcDay();
+    const t = potdFor(today);
+    if (!t) { location.replace(location.href.split("#")[0] + "#/"); return; }
+    const requestedHash = location.hash;
+    const slug = t.id.slice(0, t.id.lastIndexOf("/")), n = +t.id.slice(t.id.lastIndexOf("/") + 1);
+    renderLoading();
+    loadPoemPage(slug, n).then((f) => {
+      if (location.hash !== requestedHash) return;
+      const p = f.poems[n];
+      if (!p || !p.text) { location.replace(location.href.split("#")[0] + "#/poem/" + t.id); return; }
+      EARLY_DRAWN = DATA ? "" : location.hash;   // drawn without the index: it stays when the index comes
+      EARLY_REDRAW = false;
+      const lang = langAttr(p.authorSlug || slug, p.translator);
+      setTitle("Poem of the day — " + p.title);
+      app.innerHTML = `
+      <article class="detail potd-page">
+        <div class="detail-subject">Poem of the day · ${dayLabel(today)}</div>
+        <h1 class="detail-title"${lang}>${esc(p.title)}</h1>
+        <p class="detail-author">by <a href="#/poet/${esc(slug)}">${esc(p.author)}</a>${datesHTML(slug)}</p>
+        ${sourceLine(p.translator, p.collection)}
+        <hr class="rule">
+        ${poemBlock(p.text, { label: "The Poem", translator: p.translator, lang })}
+        ${p.note ? `<div class="rule-ornament">✦ ✦ ✦</div>
+        <p class="section-label">Codex Note</p>
+        <p class="note-block">${esc(p.note)}</p>` : ""}
+        <div class="browse-all"><a href="#/poem/${esc(t.id)}" class="read-link">Open the poem’s page, to read it with the Codex →</a></div>
+        <section class="poet-poems potd-earlier">
+          <h2>Earlier poems of the day</h2>
+          <div class="potd-days"></div>
+        </section>
+      </article>`;
+      bindLineNumbers();
+      drawTodayDays(today);
+      restoreScroll();
+    }).catch((e) => { if (location.hash === requestedHash) renderFetchError(e); });
+  }
+  function drawTodayDays(today) {
+    const box = app.querySelector(".potd-days");
+    if (!box) return;
+    const rows = [];
+    let missing = 0;
+    for (let day = today - 1; day >= today - TODAY_BACK; day--) {
+      const p = potdFor(day);
+      if (p) rows.push({ day, p }); else missing++;
+    }
+    const more = missing && !DATA ? `<div class="more-row"><button class="more-btn" type="button">${rows.length ? "Show earlier days" : `Show the last ${TODAY_BACK} days`}</button></div>` : "";
+    box.innerHTML = (rows.length ? `<ul class="poem-links">${rows.map(({ day, p }) => {
+      const lang = p.lang !== undefined ? (p.lang ? ` lang="${esc(p.lang)}"` : "") : langAttr(p.authorSlug, p.translator);
+      return `
+        <li><a href="#/poem/${esc(p.id)}"><span class="pl-title"${lang}>${esc(p.title)}</span><span class="pl-sub">${esc(p.author)} · ${dayLabel(day)}</span></a></li>`;
+    }).join("")}</ul>` : "") + more;
+    const btn = box.querySelector(".more-btn");
+    if (btn) btn.addEventListener("click", () => {
+      btn.disabled = true;
+      btn.textContent = "Loading…";
+      const here = location.hash;
+      loadIndex();
+      whenIndex(() => {
+        if (location.hash !== here) return;
+        if (DATA) drawTodayDays(today); else btn.textContent = "Could not load the earlier days";
+      });
+    });
   }
   // Its own card on the home page, under the two doors. p: poemOfTheDay() or homePoemOfTheDay().
   function poemOfTheDayHTML(p) {
