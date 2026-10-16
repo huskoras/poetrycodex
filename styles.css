@@ -1387,7 +1387,13 @@ textarea.ask-input {
 :root[data-theme="dark"] { --lamp-glow: rgba(203, 166, 80, .16); --relief-filter: brightness(2.6) saturate(1.15); }
 .hero { overflow: hidden; }
 .hero-relief, .hero-lamp { position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .8s ease; }
-.hero.relief-ready .hero-relief { background: url("alexander-relief.webp") 50% 44% / min(1000px, 170vw) auto no-repeat; }
+/* The face (at 52% across and 37% down the picture) is placed beside the medallion, not behind
+   it: to the right on a wide screen, under the title on a phone. */
+.hero { --rs: min(980px, 150vw); --fx: 76%; --fy: 46%; }
+@media (max-width: 760px) { .hero { --rs: 150vw; --fx: 50%; --fy: 66%; } }
+.hero-relief::before { content: ""; position: absolute; width: var(--rs); height: var(--rs);
+  left: calc(var(--fx) - var(--rs) * .52); top: calc(var(--fy) - var(--rs) * .37); }
+.hero.relief-ready .hero-relief::before { background: url("alexander-relief.webp") center / contain no-repeat; }
 .hero-relief { filter: var(--relief-filter);
   -webkit-mask-image: radial-gradient(circle var(--lr, 0px) at var(--lx, 50%) var(--ly, 40%), #000 0%, rgba(0, 0, 0, .75) 38%, transparent 72%);
           mask-image: radial-gradient(circle var(--lr, 0px) at var(--lx, 50%) var(--ly, 40%), #000 0%, rgba(0, 0, 0, .75) 38%, transparent 72%); }

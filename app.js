@@ -1773,7 +1773,10 @@
       if (!onScreen || still) return;
       if (Date.now() - last > 2500) {
         const k = (t - t0) / 1000;
-        put(hero.clientWidth * (0.5 + 0.32 * Math.sin(k * 0.23)), hero.clientHeight * (0.42 + 0.22 * Math.sin(k * 0.37 + 1)));
+        // wide screens: mostly over the right side, where the face is; phones: up and down the middle
+        const wide = hero.clientWidth > 760;
+        put(hero.clientWidth * (wide ? 0.64 + 0.26 * Math.sin(k * 0.23) : 0.5 + 0.3 * Math.sin(k * 0.23)),
+            hero.clientHeight * (wide ? 0.46 + 0.2 * Math.sin(k * 0.37 + 1) : 0.55 + 0.25 * Math.sin(k * 0.37 + 1)));
       }
       raf = requestAnimationFrame(wander);
     }
