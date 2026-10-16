@@ -150,7 +150,7 @@ body[data-route="home"] .topbar { display: none; }        /* slim bar hidden on 
 .hero-coin:hover { transform: rotate(-4deg) scale(1.02); }
 .hero-title { font-family: var(--serif); font-weight: 500; font-size: clamp(3rem, 9vw, 6rem); line-height: 1; margin: 0; color: var(--ink); text-wrap: balance; }
 .hero-tag { font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif; font-style: italic; font-weight: 500;
-  font-size: clamp(1.45rem, 3.8vw, 2.25rem); letter-spacing: .015em; color: var(--ink-soft); margin: 0; }
+  font-size: clamp(1.45rem, 3.8vw, 2.25rem); letter-spacing: .015em; color: var(--ink-soft); margin: 0; text-wrap: balance; }
 .hero-search { display: flex; box-shadow: var(--shadow-sm); margin-top: .5rem; }
 .hero-search input { font-family: var(--serif); font-size: 1.1rem; width: min(72vw, 440px);
   padding: .82rem 1.15rem; border: 1px solid var(--line-strong); border-right: none; background: var(--surface); color: var(--ink); }
@@ -159,6 +159,17 @@ body[data-route="home"] .topbar { display: none; }        /* slim bar hidden on 
   display: flex; align-items: center; justify-content: center; transition: background .15s; }
 .hero-search button:hover { background: var(--accent-2); }
 .hero-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.9rem; margin-top: .3rem; }
+/* Phones: the five links on one line (it wrapped 3 + 2 with a wide gap), scrolling sideways
+   if a small screen cannot hold them; the auto margins centre it without clipping the start. */
+@media (max-width: 560px) {
+  .hero-nav { flex-wrap: nowrap; justify-content: flex-start; gap: .75rem; overflow-x: auto;
+    width: calc(100% + 2rem); max-width: none; margin-left: -1rem; margin-right: -1rem; padding: 0 .5rem; box-sizing: border-box;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .hero-nav::-webkit-scrollbar { display: none; }
+  .hero-nav a { flex: none; font-size: .7rem; letter-spacing: .05em; white-space: nowrap; }
+  .hero-nav a:first-child { margin-left: auto; }
+  .hero-nav a:last-child, .hero-nav a:nth-last-child(2):has(+ a[hidden]) { margin-right: auto; }
+}
 .hero-nav a { font-family: var(--sans); font-size: .82rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
   color: var(--ink-soft); text-decoration: none; padding: .3rem 0; border-bottom: 2px solid transparent; transition: color .15s, border-color .15s; }
 .hero-nav a:hover { color: var(--accent); }
@@ -262,6 +273,24 @@ a.poet-card, a.topic-card { display: block; }
 .poet-card .pc-name { font-family: var(--serif); font-size: 1.32rem; color: var(--ink); margin: 0; line-height: 1.15; }
 .poet-card .pc-dates { font-family: var(--serif); font-style: italic; color: var(--ink-soft); font-size: .95rem; margin: .2rem 0 0; }
 .poet-card .pc-count { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-top: .6rem; }
+/* The poets page shows one letter at a time: the A–Z strip and the name filter above the cards. */
+.poet-tools { display: flex; flex-wrap: wrap; align-items: center; gap: .9rem 1.4rem; margin: 0 0 1.4rem; }
+.az-strip { display: flex; flex-wrap: wrap; gap: .25rem; flex: 1 1 100%; }
+.az { display: inline-flex; align-items: center; justify-content: center; min-width: 2rem; height: 2rem; padding: 0 .3rem;
+  font-family: var(--serif); font-size: 1.05rem; color: var(--accent); text-decoration: none;
+  border: 1px solid var(--line); border-radius: 3px; background: var(--surface); transition: border-color .15s, background .15s, color .15s; }
+a.az:hover { border-color: var(--accent-2); }
+a.az.active { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.az-none { color: var(--faint); opacity: .45; background: transparent; }
+.poet-filter input { font-family: var(--serif); font-size: 1rem; width: min(100%, 260px); padding: .5rem .8rem;
+  border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); }
+.poet-filter input:focus { outline: none; border-color: var(--accent-2); }
+.poet-filter { flex: 0 1 260px; }
+@media (max-width: 560px) {
+  .az { min-width: 1.85rem; height: 1.85rem; font-size: .98rem; }
+  .poet-filter { flex: 1 1 100%; } .poet-filter input { width: 100%; }
+}
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 
 /* monogram fallback for poets with no confirmed portrait */
 .pc-monogram { display: flex; align-items: center; justify-content: center;
@@ -592,6 +621,17 @@ a.poet-card, a.topic-card { display: block; }
 .also-row + .also-row { margin-top: .5rem; }
 .also-row a:not(.compare-btn) { color: var(--accent); text-decoration: none; }
 .also-row a:not(.compare-btn):hover { text-decoration: underline; }
+/* On a book's page: one folded line, opened into a short list. */
+.also-fold { margin: -.6rem 0 1.1rem; padding: .45rem .9rem; }
+.also-fold > summary { cursor: pointer; font-family: var(--serif); font-size: 1rem; color: var(--ink-soft); list-style: none; }
+.also-fold > summary::-webkit-details-marker { display: none; }
+.also-fold > summary::before { content: "\25B8"; color: var(--gold); display: inline-block; margin-right: .45rem; transition: transform .15s; }
+.also-fold[open] > summary::before { transform: rotate(90deg); }
+.also-fold > summary:hover { color: var(--accent); }
+.also-list { list-style: none; margin: .5rem 0 .2rem; padding: 0; display: grid; gap: .3rem; font-family: var(--serif); font-size: 1rem; }
+.also-list a { color: var(--accent); text-decoration: none; }
+.also-list a:hover { text-decoration: underline; }
+.also-list .also-cmp { font-family: var(--sans); font-size: .7rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; margin-left: .5rem; color: var(--ink-soft); }
 .compare-btn, .compare-jump { font-family: var(--sans); font-size: .68rem; font-weight: 600; letter-spacing: .1em;
   text-transform: uppercase; color: var(--ink); background: var(--surface); border: 1px solid var(--gold);
   border-radius: 999px; padding: .38rem .9rem; cursor: pointer; text-decoration: none; white-space: nowrap;
@@ -661,10 +701,10 @@ a.poet-card, a.topic-card { display: block; }
   .tb-nav a { white-space: nowrap; font-size: .68rem; letter-spacing: .05em; }
   /* The cue keeps its label and its action; the sentence beside them is for desktop. */
   .ec-hint { display: none; }
-  .tb-search { margin-left: auto; }
-  /* The search box takes what the brand leaves, so the light/dark button stays on the
-     first row beside it: two rows (brand, search, moon / the nav), not three. */
-  .tb-search { flex: 1 1 0; min-width: 0; }
+  /* Phones: the brand, Display and Sign in on the first row, the search box across the whole
+     second row (it shrank to about 105px beside them), the nav on the third. */
+  .topbar-inner.has-search .tb-display { margin-left: auto; }
+  .tb-search { order: 2; flex: 1 1 100%; margin-left: 0; min-width: 0; }
   .tb-search input { width: 100%; min-width: 0; }
   .topbar .tb-search + .tb-theme { margin-left: 0; }
   .hero-inner { padding: 3rem 1.3rem 2.8rem; }
@@ -673,9 +713,14 @@ a.poet-card, a.topic-card { display: block; }
   .portrait-wrap { max-width: 300px; }
   .detail-nav { flex-direction: column; }
 }
-/* Small phones: the coin alone links home in the app's bar (the page title still names the
-   site), so the search box keeps a usable width. The static pages have no search box there. */
-@media (max-width: 440px) { .topbar-inner.has-search .tb-brand span { display: none; } }
+/* The search box has its own row on phones, so the brand keeps its name beside the coin, with
+   Display and Sign in on the same first row (tighter spacing on small phones; the coin alone
+   on the very narrowest). */
+@media (max-width: 440px) {
+  .topbar-inner.has-search { padding: .6rem 1rem; column-gap: .6rem; }
+  .topbar-inner.has-search .tb-acct { margin-left: 0; }
+}
+@media (max-width: 340px) { .topbar-inner.has-search .tb-brand span { display: none; } }
 /* A long label ("Narrative poem · 1818 · 4 parts") goes under its title rather than off the edge. */
 @media (max-width: 560px) { .poem-links a { flex-wrap: wrap; row-gap: .15rem; } .poem-links .pl-sub { white-space: normal; } }
 /* Phones: a 1rem margin each side gives verse more of the line (after the 780px rule above). */
@@ -1378,3 +1423,14 @@ textarea.ask-input {
 .mark-date, .note-date { margin: -.2rem 0 .55rem; color: var(--faint); font-family: var(--sans); font-size: .76rem; letter-spacing: .02em; }
 .note-date { margin: .3rem 0 0; }
 
+
+/* #/poems: the long works in their own section under the poems. */
+.list-works { margin: 2.6rem 0 0; border-top: 1px solid var(--line); padding-top: 1.4rem; scroll-margin-top: 5rem; }
+.list-works > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: .5rem; margin: 0 0 1.1rem; color: var(--ink-soft); }
+.list-works > summary::-webkit-details-marker { display: none; }
+.list-works > summary::before { content: "\25B8"; color: var(--gold); font-size: .9rem; transition: transform .15s; }
+.list-works[open] > summary::before { transform: rotate(90deg); }
+.list-works > summary .n { opacity: .6; font-variant-numeric: tabular-nums; }
+.list-works > summary:hover { color: var(--accent); }
+.result-meta .works-jump { color: var(--accent); text-decoration: none; }
+.result-meta .works-jump:hover { text-decoration: underline; }

@@ -818,7 +818,7 @@
         ux_mode: "popup", auto_select: false, use_fedcm_for_button: true, context: "signin" });
       box.innerHTML = "";
       google.accounts.id.renderButton(box, { type: "standard", theme: darkNow() ? "filled_black" : "outline",
-        size: "large", text: "continue_with", shape: "pill", logo_alignment: "left", width: 280 });
+        size: "large", text: "continue_with", shape: "pill", logo_alignment: "left", width: 280, locale: "en" });
     }).catch(() => {
       status.textContent = "Google sign-in could not be loaded. Check your connection (or any blocker that stops accounts.google.com) and try again.";
     });
@@ -1830,7 +1830,7 @@
   // The home page: "#/", no hash, or a query on it. (route() also sends unknown addresses
   // home once the index is in.)
   const isHomeHash = (h) => !h || /^#\/?(\?.*)?$/.test(h);
-  const EARLY_NAV = [[/^#\/(poems|poem|work|category|today)\b/, "poems"], [/^#\/poets?\b/, "poets"],
+  const EARLY_NAV = [[/^#\/category\b/, "eras"], [/^#\/(poems|poem|work|today)\b/, "poems"], [/^#\/poets?\b/, "poets"],
     [/^#\/topics/, "topics"], [/^#\/about/, "about"], [/^#\/shelf/, "shelf"], [/^#\/account/, "account"], [/^#\/oracle/, "oracle"], [/^#\/eras/, "eras"]];
   // Before the index is in: the home page from home.json if it has come (while it is on its
   // way the home page shows only the masthead), anything else "Opening the archive…".
@@ -1839,7 +1839,7 @@
     const h = location.hash;
     updateShelfNav();
     if (isHomeHash(h)) {
-      setRoute("poems", "home");
+      setRoute("", "home");
       let html = "";
       if (HOME && !INDEX_ERROR) {
         try { html = homeHTML(); }
@@ -1908,7 +1908,7 @@
     else if ((m = h.match(/^#\/work\/([\w-]+)\/(\d+)\/with\/([\w-]+)$/))) { setRoute("poems", "sub"); renderCompare(m[1], parseInt(m[2], 10), m[3]); }
     else if ((m = h.match(/^#\/work\/([\w-]+)$/))) { setRoute("poems", "sub"); renderWork(m[1]); }
     else if ((m = h.match(/^#\/poet\/([\w-]+)$/))) { setRoute("poets", "sub"); renderPoet(m[1]); }
-    else if ((m = h.match(/^#\/category\/([\w-]+)$/))) { setRoute("poems", "sub"); renderCategory(m[1]); }
+    else if ((m = h.match(/^#\/category\/([\w-]+)$/))) { setRoute("eras", "sub"); renderCategory(m[1]); }
     else if (h.startsWith("#/poets")) { setRoute("poets", "sub"); renderPoets(); }
     else if (h.startsWith("#/topics")) { setRoute("topics", "sub"); renderTopics(); }
     else if (h.startsWith("#/about")) { setRoute("about", "sub"); renderAbout(); }
@@ -1926,7 +1926,7 @@
       }
       setRoute("poems", "sub"); renderList();
     }
-    else { setRoute("poems", "home"); renderHome(); }
+    else { setRoute("", "home"); renderHome(); }
     syncSearchInput();
     updateShelfNav();
     jumpTo(st ? st.y : 0);
@@ -1934,6 +1934,15 @@
   }
   function setRoute(navKey, mode) {
     document.body.dataset.route = mode;   // "home" shows hero; anything else hides it
+    // One h1 a page: the hero's title is the home page's h1, and a plain paragraph (hidden
+    // with the hero) on every other page, whose own title is its h1.
+    const ht = document.querySelector(".hero-title");
+    if (ht && (ht.tagName === "H1") !== (mode === "home")) {
+      const el = document.createElement(mode === "home" ? "h1" : "p");
+      el.className = ht.className;
+      el.innerHTML = ht.innerHTML;
+      ht.replaceWith(el);
+    }
     document.querySelectorAll(".tb-nav a, .hero-nav a").forEach((a) => a.classList.toggle("active", a.dataset.nav === navKey));
     document.querySelectorAll("[data-acct]").forEach((a) => a.classList.toggle("active", navKey === "account"));
   }
@@ -1952,13 +1961,41 @@
     return hasAll(p._hay, words);
   }
   // Cards are links, so they open in a new tab and can be followed by search engines.
+  // A card's excerpt is cut at about 300 characters (a prose poem's "three lines" can run to
+  // thousands), at a word break.
+  const EXCERPT_MAX = 300;
+  const clipExcerpt = (s) => {
+    s = String(s || "");
+    if (s.length <= EXCERPT_MAX) return s;
+    const cut = s.slice(0, EXCERPT_MAX), sp = cut.lastIndexOf(" ");
+    return (sp > EXCERPT_MAX * 0.6 ? cut.slice(0, sp) : cut).replace(/[\s,;:.—-]+$/, "") + "…";
+  };
   const cardHTML = (p) => `
     <a class="card" href="#/poem/${esc(p.id)}">
       <div class="card-subject">${esc(p.primarySubject)}</div>
       <h2 class="card-title"${langAttr(p.authorSlug, p.translator)}>${esc(p.title)}</h2>
       <div class="card-author">${esc(p.author)}</div>
-      <p class="card-excerpt"${langAttr(p.authorSlug, p.translator)}>${esc(p.excerpt)}</p>
+      <p class="card-excerpt"${langAttr(p.authorSlug, p.translator)}>${esc(clipExcerpt(p.excerpt))}</p>
     </a>`;
+  // Search results by how well they match: the exact title first, then titles that hold the
+  // search (poems that carry a Codex Note ahead, then titles that start with it, then the
+  // shorter titles: "Grecian" puts "Ode on a Grecian Urn" before "Grecian Kindness"), then
+  // poems whose poet matches, then the rest (opening lines, translator, subject). Within a
+  // rank the title order of SORTED stands (the sort is stable).
+  const titleFold = (s) => fold(s).replace(/^["'“‘]*(a|an|the)\s+/, "").replace(/[^a-z0-9 ]+/g, " ").replace(/\s+/g, " ").trim();
+  function rankResults(results, words) {
+    if (!words.length) return results;
+    const phrase = titleFold(words.join(" "));
+    const score = (p) => {
+      const t = p._tf === undefined ? (p._tf = titleFold(p.title)) : p._tf;
+      if (t === phrase) return 0;
+      // A title that holds the search: the shorter the title, the more of it the search is.
+      if (t.includes(phrase) || hasAll(t, words)) return (p.hasNote ? 1e6 : 2e6) + (t.startsWith(phrase) ? 0 : 1e5) + t.length;
+      if (hasAll(fold(p.author), words)) return p.hasNote ? 3e6 : 4e6;
+      return p.hasNote ? 5e6 : 6e6;
+    };
+    return results.map((p, k) => [score(p), k, p]).sort((a, b) => a[0] - b[0] || a[1] - b[1]).map((x) => x[2]);
+  }
 
   // The first `shown` poems, and a "Show more" button for the rest.
   function pagedCards(poems) {
@@ -2024,10 +2061,10 @@
   }
 
   function renderEras() {
-    setTitle("The Archive");
+    setTitle("Eras");
     app.innerHTML = `
       <div class="page-head archive-head">
-        <h1 class="page-title">The Archive</h1>
+        <h1 class="page-title">Eras</h1>
         <p class="page-sub">Explore poetry across eras, poets and themes.</p>
         <form class="archive-search search-form" autocomplete="off">
           <input class="search-input" type="search" placeholder="Search by poem or poet\u2026" aria-label="Search the archive" />
@@ -2232,7 +2269,7 @@
   const formLabel = (f) => FORM_PLURAL[f] || f;
   function renderList() {
     const words = searchWords(query);
-    const results = SORTED.filter((p) => matches(p, words));
+    const results = rankResults(SORTED.filter((p) => matches(p, words)), words);
     const works = filterSubject !== "All" || filterForm !== "All" ? [] : (DATA.works || []).filter((w) => {
       if (!words.length) return true;
       if (w._hay === undefined) w._hay = fold([w.title, w.author, w.translator].join(" "));
@@ -2251,17 +2288,49 @@
 
     setTitle(query ? `\u201c${query}\u201d \u2014 Search` : filterSubject !== "All" ? `${what} on ${filterSubject}` : filterForm !== "All" ? what : "All poems");
     app.innerHTML = `
+      <h1 class="visually-hidden">${query ? "Search the archive" : filterSubject !== "All" ? `${esc(what)} on ${esc(filterSubject)}` : filterForm !== "All" ? esc(what) : "All poems"}</h1>
       ${banner}
       ${query ? "" : `<div class="chips">${chips}</div>${formChips}`}
-      <p class="result-meta">${num(results.length)} poem${results.length === 1 ? "" : "s"}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}${filterForm !== "All" ? " · " + esc(formLabel(filterForm)) : ""}</p>
-      <div class="grid">${works.map(workCardHTML).join("")}${results.length || works.length ? pagedCards(results) : `<p class="empty">No poems match.</p>`}</div>
-      ${moreHTML(results.length)}`;
+      <p class="result-meta">${num(results.length)} poem${results.length === 1 ? "" : "s"}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}${filterForm !== "All" ? " · " + esc(formLabel(filterForm)) : ""}${works.length ? ` · <a href="#list-works" class="works-jump">${num(works.length)} long work${works.length === 1 ? "" : "s"} ↓</a>` : ""}</p>
+      <div class="grid">${results.length ? pagedCards(results) : works.length ? "" : `<p class="empty">No poems match.</p>`}</div>
+      ${moreHTML(results.length)}
+      ${works.length ? `
+      <details class="list-works" id="list-works"${query || !results.length ? " open" : ""}>
+        <summary class="section-label">Long works <span class="n">${num(works.length)}</span></summary>
+        <div class="grid works-grid"></div>
+        <div class="works-more"></div>
+      </details>` : ""}`;
 
     app.querySelectorAll(".chip[data-sub]").forEach((c) => c.addEventListener("click", () => { filterSubject = c.dataset.sub; query = ""; syncSearchInput(); freshList(); }));
     app.querySelectorAll(".chip[data-form]").forEach((c) => c.addEventListener("click", () => { filterForm = c.dataset.form; query = ""; syncSearchInput(); freshList(); }));
     const clr = app.querySelector("[data-clear]");
     if (clr) clr.addEventListener("click", () => { query = ""; filterSubject = "All"; filterForm = "All"; syncSearchInput(); freshList(); });
     bindMore(results);
+    bindListWorks(works);
+  }
+  // The long works under the poems, drawn only when their section is open, PAGE at a time.
+  function bindListWorks(works) {
+    const box = app.querySelector(".list-works");
+    if (!box) return;
+    const grid = box.querySelector(".works-grid"), more = box.querySelector(".works-more");
+    let upto = 0;
+    const page = () => {
+      grid.insertAdjacentHTML("beforeend", works.slice(upto, upto + PAGE).map(workCardHTML).join(""));
+      upto += PAGE;
+      const left = works.length - upto;
+      more.innerHTML = left > 0 ? `<div class="more-row"><button class="more-btn" type="button">Show ${Math.min(PAGE, left)} more<span class="more-left"> · ${num(left)} left</span></button></div>` : "";
+      const b = more.querySelector("button");
+      if (b) b.addEventListener("click", page);
+    };
+    const open = () => { if (box.open && !upto) page(); };
+    box.addEventListener("toggle", open);
+    open();
+    const jump = app.querySelector(".works-jump");
+    if (jump) jump.addEventListener("click", (e) => {
+      e.preventDefault();             // the address stays #/poems
+      box.open = true; open();
+      box.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   }
 
   // ---------- portrait fallback (monogram) ----------
@@ -2272,23 +2341,109 @@
   }
 
   // ---------- POETS index ----------
-  function renderPoets() {
-    setTitle("Poets");
-    app.innerHTML = `
-      <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">Poets from Homer to the early twentieth century.</p></div>
-      <div class="poet-grid">
-        ${DATA.poets.map((p) => `
+  // Three thousand cards at once made a page 1.5 million pixels tall on a phone, so the page
+  // shows one letter of the alphabet at a time (#/poets?l=K, by surname), or the poets whose
+  // name matches the filter box (#/poets?q=keats). Poets with nothing to read are left out.
+  // The surname: the last word of the name ("John Keats"), less "of Lesbos", "(attributed)",
+  // ", Earl of Surrey" and "Jr."; a name with no surname to invert (Homer, "Anonymous …",
+  // the traditions that put the family name first or have none) files under its first word.
+  const FIRST_WORD_CATS = new Set(["Ancient Near East", "Turkish & Ottoman", "Arabic & Persian", "Hebrew", "Indian", "Chinese & Japanese"]);
+  function poetSortName(p) {
+    if (p._sn !== undefined) return p._sn;
+    let n = String(p.name || "").trim();
+    if (CITE_NAMES[n]) n = CITE_NAMES[n];
+    else {
+      n = n.replace(/\s*\([^)]*\)/g, "").split(",")[0].replace(/^(the|sir|saint|st\.)\s+/i, "").trim();
+      if (!/^anonymous\b/i.test(n) && !FIRST_WORD_CATS.has(p.category)) {
+        const parts = n.replace(/\s+of\s+.*$/i, "").split(/\s+/).filter(Boolean);
+        while (parts.length > 1 && /^(jr\.?|sr\.?|[ivx]+\.?)$/i.test(parts[parts.length - 1])) parts.pop();
+        if (parts.length > 1) n = parts.pop() + ", " + parts.join(" ");
+      }
+    }
+    return (p._sn = fold(n).replace(/^[^a-z0-9]+/, ""));
+  }
+  const poetLetter = (p) => { const c = poetSortName(p).charAt(0).toUpperCase(); return c >= "A" && c <= "Z" ? c : "#"; };
+  const POET_PAGE = 120;
+  let POET_LIST = null;      // the poets with poems or works, by surname (built once)
+  function poetList() {
+    if (!POET_LIST) POET_LIST = DATA.poets.filter((p) => p.poemCount || p.workCount)
+      .sort((a, b) => COLLATE.compare(poetSortName(a), poetSortName(b)));
+    return POET_LIST;
+  }
+  const poetCountLine = (p) => p.poemCount
+    ? num(p.poemCount) + " poem" + (p.poemCount === 1 ? "" : "s")
+    : num(p.workCount) + " work" + (p.workCount === 1 ? "" : "s");
+  const poetCardHTML = (p) => `
           <a class="poet-card" href="#/poet/${esc(p.slug)}">
             ${portraitImgHTML(p, "pc-img")}
             <div class="pc-body">
               <p class="pc-name">${esc(p.name)}</p>
               <p class="pc-dates">${esc(p.dates)}</p>
-              <p class="pc-count">${[
-                p.poemCount ? num(p.poemCount) + " poem" + (p.poemCount === 1 ? "" : "s") : "",
-              ].filter(Boolean).join(" · ")}</p>
+              <p class="pc-count">${poetCountLine(p)}</p>
             </div>
-          </a>`).join("")}
-      </div>`;
+          </a>`;
+  function renderPoets() {
+    const all = poetList();
+    const counts = {};
+    all.forEach((p) => { const l = poetLetter(p); counts[l] = (counts[l] || 0) + 1; });
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").concat(counts["#"] ? ["#"] : []);
+    const h = location.hash;
+    const qm = h.match(/[?&]q=([^&]*)/), lm = h.match(/[?&]l=([^&]*)/);
+    let q = "";
+    if (qm) { try { q = decodeURIComponent(qm[1].replace(/\+/g, " ")); } catch (e) { q = ""; } }
+    let letter = lm ? decodeURIComponent(lm[1]).toUpperCase() : "";
+    if (!counts[letter]) letter = letters.find((l) => counts[l]) || "A";
+    setTitle("Poets");
+    app.innerHTML = `
+      <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">${num(all.length)} poets from Homer to the early twentieth century, by surname.</p></div>
+      <div class="poet-tools">
+        <nav class="az-strip" aria-label="Poets by surname">${letters.map((l) => counts[l]
+          ? `<a class="az" href="#/poets?l=${encodeURIComponent(l)}" data-l="${esc(l)}">${esc(l)}</a>`
+          : `<span class="az az-none" aria-hidden="true">${esc(l)}</span>`).join("")}</nav>
+        <label class="poet-filter"><span class="visually-hidden">Filter poets by name</span>
+          <input type="search" placeholder="Filter by name…" autocomplete="off" value="${esc(q)}" /></label>
+      </div>
+      <p class="result-meta poet-meta"></p>
+      <div class="poet-grid"></div>
+      <div class="poet-more"></div>`;
+    const input = app.querySelector(".poet-filter input");
+    const grid = app.querySelector(".poet-grid"), meta = app.querySelector(".poet-meta"), more = app.querySelector(".poet-more");
+    let list = [], upto = 0;
+    const page = () => {
+      grid.insertAdjacentHTML("beforeend", list.slice(upto, upto + POET_PAGE).map(poetCardHTML).join(""));
+      upto += POET_PAGE;
+      const left = list.length - upto;
+      more.innerHTML = left > 0 ? `<div class="more-row"><button class="more-btn" type="button">Show ${Math.min(POET_PAGE, left)} more<span class="more-left"> · ${num(left)} left</span></button></div>` : "";
+      const b = more.querySelector("button");
+      if (b) b.addEventListener("click", page);
+    };
+    const draw = () => {
+      const words = searchWords(q);
+      list = words.length ? all.filter((p) => hasAll(p._nh || (p._nh = fold(p.name)), words)) : all.filter((p) => poetLetter(p) === letter);
+      app.querySelectorAll(".az-strip a").forEach((a) => {
+        const on = !words.length && a.dataset.l === letter;
+        a.classList.toggle("active", on);
+        if (on) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+      });
+      meta.textContent = words.length
+        ? `${num(list.length)} poet${list.length === 1 ? "" : "s"} matching “${q.trim()}”`
+        : `${num(list.length)} poet${list.length === 1 ? "" : "s"} under ${letter}`;
+      grid.innerHTML = list.length ? "" : `<p class="empty">No poet's name matches.</p>`;
+      upto = 0;
+      page();
+    };
+    draw();
+    // The filter keeps its own address (#/poets?q=…) without a new history entry for each key.
+    let t = 0;
+    input.addEventListener("input", () => {
+      clearTimeout(t);
+      t = setTimeout(() => {
+        q = input.value;
+        const addr = q.trim() ? "#/poets?q=" + encodeURIComponent(q.trim()) : "#/poets?l=" + encodeURIComponent(letter);
+        try { history.replaceState(history.state, "", addr); } catch (e) { /* the list still changes */ }
+        draw();
+      }, 120);
+    });
   }
 
   // ---------- POET page ----------
@@ -2380,9 +2535,26 @@
   }
   // "Also in this archive" under the translator line: each other translation (at the same
   // book, on a part page) and, on a part page, the two side by side. w: an index entry.
+  // On a part page it is one folded line ("Also in 8 other translations"), so the verse
+  // starts near the top: opened, each translation is one row of two short links.
   function otherTrHTML(w, i) {
     const others = otherTranslations(w);
     if (!others.length) return "";
+    if (i != null) {
+      const n = others.length;
+      const kind = others.every((o) => o.translator) ? "translation" : "version";
+      const rows = others.map((o) => {
+        const j = matchingPart(w, o, i);
+        return j >= 0
+          ? `<li><a href="#/work/${esc(o.slug)}/${j}">${esc(verLabel(o))}</a> <a class="also-cmp" href="#/work/${esc(w.slug)}/${i}/with/${esc(o.slug)}">compare</a></li>`
+          : `<li><a href="#/work/${esc(o.slug)}">${esc(verLabel(o))} →</a></li>`;
+      }).join("");
+      return `
+      <details class="also-tr also-fold">
+        <summary>Also in ${n === 1 ? `one other ${kind}` : `${num(n)} other ${kind}s`}: ${esc(others.slice(0, 3).map(verShort).join(", "))}${n > 3 ? "…" : ""}</summary>
+        <ul class="also-list">${rows}</ul>
+      </details>`;
+    }
     return `
       <div class="also-tr">
         <p class="section-label">Also in this archive</p>
@@ -2648,9 +2820,9 @@
         <p>Poetry Codex is a reading archive of poetry in the public domain — and the foundation of a
         larger project: a critical engine able to read these poems through the full range of methods
         that literary scholarship has developed over the past two centuries.</p>
-        <p>The archive currently holds <strong>${DATA.count.toLocaleString("en-US")} poems</strong>, from the Greek and Roman epics and Anglo-Saxon
-        verse through the Middle Ages, the Renaissance, the Romantics and the Victorians to the early
-        twentieth century, together with Turkish and Ottoman poetry. Every text is reproduced in full
+        <p>The archive currently holds <strong>${DATA.count.toLocaleString("en-US")} poems</strong> in ${CATEGORY_ORDER.length} traditions, from the ancient world,
+        the Greek and Roman epics and Anglo-Saxon verse through the Middle Ages, the Renaissance, the
+        Romantics and the Victorians to the early twentieth century. Every text is reproduced in full
         and is free of copyright.</p>
 
         <h2>Why this exists</h2>
@@ -2681,7 +2853,7 @@
         <p>What the engine offers, and what it is growing into:</p>
         <ul class="about-list">
           <li><strong>Semantic search</strong> — find poems by what they are about, not by the words
-          they happen to use: ask for poems on exile, or on grief that refuses consolation.</li>
+          they happen to use: ask for poems on exile, or on grief that refuses consolation.${ORACLE_LIVE ? "" : " It comes with the Oracle, which is resting for now and will return later."}</li>
           <li><strong>Codex Notes</strong> — short critical readings, generated under scholarly
           constraints and reviewed before publication; a growing number of poems carry one.</li>
           <li><strong>Comparative reading</strong> — two poems placed side by side, with an account of
