@@ -386,7 +386,7 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
   <header class="site-head">
     <div class="topbar">
       <div class="topbar-inner">
-        <a class="tb-brand" href="/"><img class="seal seal-l" src="/seal-ink-96.webp" alt="" width="34" height="34" /><img class="seal seal-d" src="/seal-cream-96.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
+        <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
           <a href="/#/poets">Poets</a>

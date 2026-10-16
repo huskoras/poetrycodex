@@ -1434,17 +1434,3 @@ textarea.ask-input {
 .list-works > summary:hover { color: var(--accent); }
 .result-meta .works-jump { color: var(--accent); text-decoration: none; }
 .result-meta .works-jump:hover { text-decoration: underline; }
-
-/* The seal and spaced wordmark (top left of every page; on the home page over the hero). */
-.tb-brand img.seal { width: 36px; height: 36px; filter: none; }
-.tb-brand .seal-d { display: none; }
-:root[data-theme="dark"] .tb-brand .seal-l { display: none; }
-:root[data-theme="dark"] .tb-brand .seal-d { display: block; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .tb-brand .seal-l { display: none; }
-  :root:not([data-theme="light"]) .tb-brand .seal-d { display: block; }
-}
-.tb-brand span { font-family: var(--serif); font-weight: 500; font-size: 1.02rem; letter-spacing: .24em; text-transform: uppercase; }
-.hero-brand { position: absolute; top: 1rem; left: 1.2rem; z-index: 2; gap: .7rem; }
-@media (max-width: 560px) { .hero-brand span { display: none; } }
-@media print { .hero-brand { display: none; } }
