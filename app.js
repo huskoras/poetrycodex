@@ -2283,11 +2283,14 @@
     const works = (DATA.works || []).filter((w) => POETS[w.authorSlug] && POETS[w.authorSlug].category === catName);
     const poems = SORTED.filter((p) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
     const sub = `${num(poems.length)} poem${poems.length === 1 ? "" : "s"}.`;
+    const lists = eraListsHTML(catName, slug);
 
     setTitle(catName + " poetry");
     app.innerHTML = `
       <button class="back" id="back">← Browse by Era</button>
       <div class="page-head"><h1 class="page-title">${esc(catName)}</h1><p class="page-sub">${sub}</p></div>
+      ${lists}
+      ${lists && (works.length || poems.length) ? `<h2 class="section-label era-az">Every work and poem, A–Z</h2>` : ""}
       <div class="grid">
         ${works.map(workCardHTML).join("")}
         ${pagedCards(poems)}
@@ -2296,6 +2299,45 @@
       ${moreHTML(poems.length)}`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/"; });
     bindMore(poems);
+  }
+
+  // Above an era's cards: its poets (name and dates, earliest first; where there are more
+  // than ERA_POETS, the ERA_POETS with most poems, and a link to all of them on the Poets
+  // page) and a few poems to begin with (each of the leading poets' first poem with a Codex
+  // Note, else their first poem), in the poet-page list style.
+  const ERA_POETS = 40, ERA_START = 10;
+  const poetSize = (p) => (p.poemCount || 0) + (p.workCount || 0);
+  let ERA_FIRSTS = null;   // poet slug -> the poem to begin with (built once)
+  function eraListsHTML(catName, slug) {
+    const all = DATA.poets.filter((p) => p.category === catName && poetSize(p) > 0);
+    if (all.length < 2) return "";
+    const byDate = (a, b) => (a.order ?? 0) - (b.order ?? 0);
+    const bySize = all.slice().sort((a, b) => poetSize(b) - poetSize(a) || byDate(a, b));
+    const poets = (all.length > ERA_POETS ? bySize.slice(0, ERA_POETS) : all.slice()).sort(byDate);
+    if (!ERA_FIRSTS) {
+      ERA_FIRSTS = new Map();
+      DATA.poems.forEach((p) => {
+        const f = ERA_FIRSTS.get(p.authorSlug);
+        if (!f || (p.hasNote && !f.hasNote)) ERA_FIRSTS.set(p.authorSlug, p);
+      });
+    }
+    const firsts = ERA_FIRSTS;
+    const start = bySize.map((p) => firsts.get(p.slug)).filter(Boolean).slice(0, ERA_START)
+      .sort((a, b) => byDate(POETS[a.authorSlug], POETS[b.authorSlug]));
+    return `
+      <section class="poet-poems era-lists">
+        <h2>${all.length > ERA_POETS ? `The ${ERA_POETS} poets with most poems` : `Poets · ${num(all.length)}`}</h2>
+        <ul class="poem-links">${poets.map((p) => `
+          <li><a href="#/poet/${esc(p.slug)}"><span class="pl-title">${esc(p.name)}</span><span class="pl-sub">${esc(p.dates || "")}</span></a></li>`).join("")}
+        </ul>
+        ${all.length > ERA_POETS ? `<div class="browse-all"><a href="#/poets?era=${esc(slug)}" class="read-link">All ${num(all.length)} poets →</a></div>` : ""}
+      </section>
+      ${start.length ? `<section class="poet-poems era-lists">
+        <h2>Poems to begin with</h2>
+        <ul class="poem-links">${start.map((p) => `
+          <li><a href="#/poem/${esc(p.id)}"><span class="pl-title"${langAttr(p.authorSlug, p.translator)}>${esc(p.title)}</span><span class="pl-sub">${esc(p.author)}</span></a></li>`).join("")}
+        </ul>
+      </section>` : ""}`;
   }
 
   // ---------- EPICS: the world's epics by tradition ----------
@@ -2431,11 +2473,17 @@
 
   // ---------- POETS index ----------
   function renderPoets() {
-    setTitle("Poets");
+    // "#/poets?era=romantic" (an era page's "All N poets"): that era's poets only.
+    const era = SLUG_TO_CATEGORY[(location.hash.match(/[?&]era=([\w-]+)/) || [])[1]];
+    const list = era ? DATA.poets.filter((p) => p.category === era && poetSize(p) > 0) : DATA.poets;
+    setTitle(era ? era + " poets" : "Poets");
     app.innerHTML = `
-      <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">Poets from Homer to the early twentieth century.</p></div>
+      ${era ? `<button class="back" id="back">← ${esc(era)}</button>` : ""}
+      <div class="page-head"><h1 class="page-title">${era ? esc(era) + " poets" : "Poets"}</h1><p class="page-sub">${era
+        ? `${num(list.length)} poets, earliest first. <a href="#/poets">All poets →</a>`
+        : "Poets from Homer to the early twentieth century."}</p></div>
       <div class="poet-grid">
-        ${DATA.poets.map((p) => `
+        ${list.map((p) => `
           <a class="poet-card" href="#/poet/${esc(p.slug)}">
             ${portraitImgHTML(p, "pc-img")}
             <div class="pc-body">
@@ -2447,6 +2495,8 @@
             </div>
           </a>`).join("")}
       </div>`;
+    const back = document.getElementById("back");
+    if (back) back.addEventListener("click", () => { location.hash = "#/category/" + CATEGORY_SLUGS[era]; });
   }
 
   // ---------- POET page ----------

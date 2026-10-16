@@ -295,6 +295,17 @@ a.poet-card, a.topic-card { display: block; }
 .poem-links a:hover { color: var(--accent); padding-left: .7rem; }
 .poem-links .pl-title { font-family: var(--serif); font-size: 1.25rem; color: inherit; }
 .poem-links .pl-sub { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); font-weight: 600; white-space: nowrap; }
+/* An era page's poets and first poems: the same list, tighter, in two columns on a wide screen. */
+.era-lists { margin-top: 1.4rem; }
+.era-lists + .era-lists { margin-top: 2.2rem; }
+.era-lists .poem-links a { padding: .55rem .3rem; }
+.era-lists .poem-links .pl-title { font-size: 1.1rem; }
+.era-lists .browse-all { margin-top: 1.4rem; }
+@media (min-width: 781px) {
+  .era-lists .poem-links { columns: 2; column-gap: 3rem; }
+  .era-lists .poem-links li { break-inside: avoid; }
+}
+.section-label.era-az { margin: 2.6rem 0 1rem; }
 
 /* ============ TOPIC CARDS ============ */
 .topic-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1.1rem; }
