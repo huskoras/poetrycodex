@@ -702,6 +702,22 @@ def write(path, content):
         f.write(content)
 
 
+WORK_FIELDS = ("slug", "title", "subtitle", "authorSlug", "author", "year", "type", "translator",
+               "workGroup", "blurb")
+
+
+def works_manifest(works):
+    """work/works.json: every work as data/index.json lists it, without the notes and the stanza
+    counts (about 150 KB compressed). app.js draws a work's contents page, a book's "Also in this
+    archive" and the side-by-side view from it, so those pages never fetch the 32 MB index."""
+    rows = []
+    for w in works:
+        row = {k: w[k] for k in WORK_FIELDS if w.get(k) not in (None, "")}
+        row["sections"] = [{k: v for k, v in s.items() if k != "stanzas"} for s in w.get("sections") or []]
+        rows.append(row)
+    return "[\n" + ",\n".join(json.dumps(r, ensure_ascii=False, separators=(",", ":")) for r in rows) + "\n]\n"
+
+
 def main():
     idx = json.load(io.open(os.path.join(ROOT, "data", "index.json"), encoding="utf-8"))
 
@@ -765,6 +781,7 @@ def main():
                       section_page(w, poet, grouped, i, others))
                 urls.append(f"{SITE}/work/{w['slug']}/{i}/")
                 section_count += 1
+    write(os.path.join(ROOT, "work", "works.json"), works_manifest(idx.get("works") or []))
 
     # Split into small child sitemaps behind one index. Google fetches each child
     # separately, so no single file is large, and a failure in one does not hide the rest.

@@ -20,6 +20,7 @@
   let HOME_FAILED = false;   // home.json missing, broken, unreachable or slow: the home page says so while it waits
   let EARLY_HOME = "";       // the home page as drawn from home.json, while it is on screen
   let EARLY_DRAWN = "";     // the hash of a poem or book page drawn from its shard before the index
+  let EARLY_REDRAW = false;  // ...and that page wants drawing again when the index comes (see loadIndex)
   let INDEX_ERROR = "";      // why data/index.json could not be loaded, if it could not
 
   // ---------- critical engine ----------
@@ -73,6 +74,25 @@
     }
     return WORK_CACHE.get(slug);
   }
+  // work/works.json (tools/build_pages.py): every work as the index lists it (metadata and
+  // its parts' titles and sizes, no text; about 150 KB compressed against the index's 9 MB).
+  // A work's contents page, a part's "Also in this archive" and the side-by-side view are
+  // drawn from it without the index. Resolves true when WORKS is filled (from this file or
+  // from the index), false when the file is missing (an older build): then the index it is.
+  let WORKS_LIST = null;
+  function loadWorks() {
+    if (DATA) return Promise.resolve(true);
+    if (!WORKS_LIST) {
+      WORKS_LIST = fetch("work/works.json").then((r) => (r.ok ? r.json() : null)).catch(() => null)
+        .then((list) => {
+          if (!Array.isArray(list)) return false;
+          if (!DATA) list.forEach((w) => { if (w && w.slug && !WORKS[w.slug]) WORKS[w.slug] = w; });
+          return true;
+        });
+    }
+    return WORKS_LIST;
+  }
+  const worksList = () => (DATA ? DATA.works || [] : Object.values(WORKS));
   // ---------- shards: one poem or one book opens without the index ----------
   // tools/build_shards.py (run by tools/sync_r2.py into the copy on Cloudflare) cuts every
   // poet into files of POEM_SHARD poems (data/c/<poet>/<k>.json) and every work into one file
@@ -1213,7 +1233,8 @@
   };
   // One version of several ("Cædmon's Hymn: West Saxon Version (Old English)" -> "West Saxon Version").
   const versionName = (t) => String(t || "").replace(/\s*\(Old English\)\s*$/i, "").replace(/^.*?:\s+/, "");
-  const indexPoem = (id) => (DATA && DATA.poems.find((q) => q.id === id)) || {};
+  // A poem's index entry; without the index, the poem itself if it has been fetched.
+  const indexPoem = (id) => (DATA && DATA.poems.find((q) => q.id === id)) || FX_READY.get("poem:" + id) || {};
   // The control beside the text's label. kind: "poems" | "works"; key: the poem id or work slug.
   function parCtlHTML(kind, key, list) {
     if (!list.length) return "";
@@ -1665,6 +1686,10 @@
   // the index as before ("Opening the archive…"). If home.json is missing or broken, the
   // home page waits for the index too, as it always did; if it is slow (1.5 s), the home
   // page says "Opening the archive…" meanwhile, and is still drawn from it if it comes first.
+  // Poem pages, books of works and contents pages never ask for the index by themselves
+  // (only the home page does, after its first paint): a reader who opens one poem gets that
+  // poem and not 9 MB of index. It is fetched when something needs it (the search box, the
+  // lists, Poets, Eras, a category, the shelf; see routeEarly and loadIndex's callers).
   fetch("data/home.json", { priority: "high" })
     .then((r) => (r.ok ? r.json() : null))
     .then((h) => {
@@ -1675,19 +1700,23 @@
       const fc = document.getElementById("foot-count");
       if (HOME && fc && !fc.textContent) fc.textContent = num(HOME.count);
       if (isHomeHash(location.hash)) route(); // other pages already say "Opening the archive…"
-      afterPaint(loadIndex);
+      if (isHomeHash(location.hash)) afterPaint(loadIndex);
     });
   setTimeout(() => {
     if (HOME || DATA || HOME_FAILED) return;
     HOME_FAILED = true;
-    loadIndex();
-    if (isHomeHash(location.hash)) route();
+    if (isHomeHash(location.hash)) { loadIndex(); route(); }
   }, 1500);
 
   // The index (32 MB; reading it holds the page up for half a second or more on a phone) is
-  // fetched only once the first screen is drawn: the home page from home.json, a poem or a
-  // book from its shard. Any other page asks for it at once (routeEarly).
+  // fetched after the home page's first paint (drawn from home.json), and by any page that
+  // needs it (routeEarly). A poem, a book of a work or a contents page never fetches it by
+  // itself: it is drawn from its shard (or work/works.json) and stays as it is; what only the
+  // index can do there (the "Compare with another poem" picker) asks for it when used, and
+  // whenIndex() runs its callbacks once it is in.
   let INDEX_STARTED = false;
+  const INDEX_WAITERS = [];
+  const whenIndex = (fn) => { if (DATA || INDEX_ERROR) fn(); else INDEX_WAITERS.push(fn); };
   function loadIndex() {
     if (INDEX_STARTED) return;
     INDEX_STARTED = true;
@@ -1726,23 +1755,38 @@
           if (html !== EARLY_HOME) app.innerHTML = html;
           EARLY_HOME = "";
         } else if (EARLY_DRAWN && EARLY_DRAWN === location.hash) {
-          // A poem or a book drawn from its shard: drawn again in place, where the reader is.
-          const y = window.scrollY;
-          route();
-          restoreY = y;
-          jumpTo(y);
+          // A page drawn without the index stays as it is (the reader may be typing in it),
+          // with the poem's form added to its label; a book whose other translations were not
+          // known (no work/works.json) is drawn again in place, where the reader is.
+          if (EARLY_REDRAW) {
+            const y = window.scrollY;
+            route();
+            restoreY = y;
+            jumpTo(y);
+          } else {
+            upgradeEarly();
+            EARLY_DRAWN = "";
+          }
         } else route();
+        INDEX_WAITERS.splice(0).forEach((fn) => { try { fn(); } catch (err) { /* one slip does not stop the rest */ } });
       })
       .catch((e) => {
         INDEX_ERROR = String(e && e.message || e);
         EARLY_HOME = "";
-        app.innerHTML = indexErrorHTML();
+        // A page drawn without the index keeps its text; only what was waiting hears of it.
+        if (!(EARLY_DRAWN && EARLY_DRAWN === location.hash)) app.innerHTML = indexErrorHTML();
+        INDEX_WAITERS.splice(0).forEach((fn) => { try { fn(); } catch (err) { /* as above */ } });
       });
   }
   const afterPaint = (fn) => requestAnimationFrame(() => setTimeout(fn, 60));
-  // (isHomeHash is defined further down: the same test is written out here.)
-  if (!location.hash || /^#\/?(\?.*)?$/.test(location.hash) || /^#\/(poem|work)\/[\w-]+\/\d+$/.test(location.hash)) setTimeout(loadIndex, 2500);
-  else loadIndex();
+  // A poem page drawn without the index, once it is in: the poem's form ("Sonnet") in its label.
+  function upgradeEarly() {
+    const m = location.hash.match(/^#\/poem\/([\w-]+\/\d+)$/);
+    const label = m && app.querySelector(".detail .detail-subject");
+    if (!label || label.dataset.form) return;
+    const form = indexPoem(m[1]).form;
+    if (form) { label.dataset.form = form; label.textContent += " · " + form; }
+  }
   // A signed-in reader: the account's copy is pulled after the first paint (reader accounts).
   updateAccountNav();
   if (signedIn()) setTimeout(pullNow, 1200);   // a timer, not a frame: it runs in a background tab too
@@ -1762,6 +1806,8 @@
       input.value = query;
       if (input.dataset.wired) return;          // safe to call again after a render
       input.dataset.wired = "1";
+      // A reader who reaches for the search box will need the index: it starts coming now.
+      input.addEventListener("focus", loadIndex);
       input.addEventListener("input", (e) => {
         query = e.target.value.trim();
         if (query) { filterSubject = "All"; filterForm = "All"; }
@@ -1804,7 +1850,9 @@
   let restoreY = 0;          // poems and work sections load first; they scroll once drawn
   function saveView() {
     clearTimeout(viewTimer);
-    if (!DATA && !EARLY_HOME) return;   // nothing drawn yet whose place is worth keeping
+    // Nothing drawn yet whose place is worth keeping (a poem or a book drawn without the
+    // index is: Back returns to the same line of it).
+    if (!DATA && !EARLY_HOME && EARLY_DRAWN !== location.hash) return;
     try {
       history.replaceState(Object.assign({}, history.state,
         { y: Math.round(window.scrollY), shown, query, filterSubject, filterForm }), "");
@@ -1856,18 +1904,43 @@
       return;
     }
     EARLY_HOME = "";
-    // A poem or a book of a work is drawn from its shard at once; the index redraws it later.
+    // A poem or a book of a work is drawn from its shard at once, a work's contents and two
+    // translations side by side from work/works.json;
+    // none of them waits for the index or asks for it.
+    const st = history.state && typeof history.state.y === "number" ? history.state : null;
+    // (The page scrolls to its saved place once drawn: restoreScroll(), in each renderer that
+    // waits for a file, here for one that draws at once.)
+    const early = (fn, drawsAtOnce) => {
+      setRoute("poems", "sub"); restoreY = st ? st.y : 0; jumpTo(0); fn();
+      if (drawsAtOnce) restoreScroll();
+    };
     let m;
-    if (!INDEX_ERROR && (m = h.match(/^#\/poem\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderDetail(m[1], parseInt(m[2], 10)); return; }
-    if (!INDEX_ERROR && (m = h.match(/^#\/work\/([\w-]+)\/(\d+)$/))) { setRoute("poems", "sub"); renderWorkSection(m[1], parseInt(m[2], 10)); return; }
+    if ((m = h.match(/^#\/poem\/([\w-]+)\/(\d+)$/))) { early(() => renderDetail(m[1], parseInt(m[2], 10))); return; }
+    if ((m = h.match(/^#\/work\/([\w-]+)\/(\d+)$/))) { early(() => renderWorkSection(m[1], parseInt(m[2], 10))); return; }
+    if ((m = h.match(/^#\/work\/([\w-]+)(?:\/(\d+)\/with\/([\w-]+))?$/))) {
+      setRoute("poems", "sub");
+      if (!WORKS[m[1]]) app.innerHTML = `<p class="loading">Loading…</p>`;
+      loadWorks().then((ok) => {
+        if (location.hash !== h || DATA) return;            // moved on, or the index has drawn it
+        if (ok && WORKS[m[1]]) {
+          EARLY_DRAWN = h; EARLY_REDRAW = false;
+          if (m[2]) early(() => renderCompare(m[1], parseInt(m[2], 10), m[3]));
+          else early(() => renderWork(m[1]), true);
+        } else {                                            // no works.json: the index it is
+          loadIndex();
+          app.innerHTML = INDEX_ERROR ? indexErrorHTML() : `<p class="loading">Opening the archive…</p>`;
+        }
+      });
+      return;
+    }
     loadIndex();
     const nav = EARLY_NAV.find(([re]) => re.test(h));
     setRoute(nav ? nav[1] : "", "sub");
     app.innerHTML = INDEX_ERROR ? indexErrorHTML() : `<p class="loading">Opening the archive…</p>`;
   }
   function route() {
-    if (!DATA) { routeEarly(); return; }
     if (READING_NOW) { clearTimeout(readingTimer); noteReading(); READING_NOW = null; }
+    if (!DATA) { routeEarly(); return; }
     const h = location.hash || "#/";
     // Back/Forward bring back the entry's saved view; anything else is a fresh visit.
     const st = history.state && typeof history.state.y === "number" ? history.state : null;
@@ -2345,7 +2418,7 @@
   // "The Iliad — Homer, trans. Alexander Pope" when the archive holds more than one
   // translation of a work (as work_title in tools/build_pages.py).
   function workTitle(w) {
-    const grouped = w.workGroup && DATA.works.some((o) => o.slug !== w.slug && o.workGroup === w.workGroup);
+    const grouped = w.workGroup && worksList().some((o) => o.slug !== w.slug && o.workGroup === w.workGroup);
     return `${w.title} — ${w.author}` + (grouped && w.translator ? ", " + translatorShort(w.translator) : "");
   }
 
@@ -2365,9 +2438,9 @@
   const verLabel = (o) => o.translator ? trLabel(o.translator) : (o.subtitle || "Original text");
   const verShort = (o) => o.translator ? trSurname(o.translator) : "original";
   function otherTranslations(w) {
-    if (!w || !w.workGroup || !DATA) return [];
+    if (!w || !w.workGroup) return [];
     const mine = w.translator ? translatorShort(trName(w.translator)) : "";
-    return DATA.works.filter((o) => o.slug !== w.slug && o.workGroup === w.workGroup &&
+    return worksList().filter((o) => o.slug !== w.slug && o.workGroup === w.workGroup &&
       (o.translator ? translatorShort(trName(o.translator)) !== mine : !!w.translator));
   }
   // The same book in another translation: by its title ("Book VI"), else by position when
@@ -2442,7 +2515,10 @@
       if (!w.sections[i]) { location.hash = "#/work/" + slug; return null; }
       notePoet(w.authorSlug, { name: w.author });
       const pick = parPick(workParList(slug, i, w), "w:" + slug);   // as on a poem: the other text first
-      return (pick ? loadPartner("work", pick.with).catch(() => null) : Promise.resolve()).then(() => {
+      // A work in a group (translations of one original) names them under its title: the
+      // list of works comes from work/works.json when the index is not in.
+      const works = w.workGroup || workParList(slug, i, w).length > 1 ? loadWorks() : Promise.resolve();
+      return Promise.all([works, pick ? loadPartner("work", pick.with).catch(() => null) : null]).then(() => {
         if (location.hash === requestedHash) renderWorkSectionReady(w, slug, i);
       });
     }).catch((e) => { if (location.hash === requestedHash) renderFetchError(e); });
@@ -2455,8 +2531,11 @@
     const entry = { id: "work:" + slug + "/" + i, kind: "part", author: w.author, translator: w.translator || "",
                     title: w.sections.length > 1 ? w.title + " · " + s.title : w.title };
     const par = workParList(slug, i, w);
-    EARLY_DRAWN = DATA ? "" : location.hash;
-    if (!DATA) afterPaint(loadIndex);
+    EARLY_DRAWN = DATA ? "" : location.hash;   // drawn without the index
+    // Its other translations unknown (no work/works.json): the index is fetched after the
+    // first paint, as before, and the page drawn again with them when it is in.
+    EARLY_REDRAW = !DATA && !!w.workGroup && !WORKS[slug];
+    if (EARLY_REDRAW) setTimeout(loadIndex, 300);   // a timer, not a frame: it runs in a background tab too
     setTitle(w.sections.length > 1 ? wt.replace(w.title, w.title + ", " + s.title) : wt);
     app.innerHTML = `
       <article class="detail">
@@ -3065,8 +3144,11 @@
       const p = poetFile.poems[n];
       if (!p) { location.hash = "#/poet/" + slug; return null; }
       // A reader who keeps facing pages on gets them at once: the other text comes first.
-      const pick = parPick(parList("poems", p.id), p.id);
-      return (pick ? loadPartner("poem", pick.with).catch(() => null) : Promise.resolve()).then(() => {
+      // With several to choose from, all of them (their buttons are named from them when
+      // the index is not in; they are short and mostly in the same shard).
+      const list = parList("poems", p.id), pick = parPick(list, p.id);
+      const want = list.length > 1 && !DATA ? list.map((e) => e.with) : pick ? [pick.with] : [];
+      return Promise.all(want.map((id) => loadPartner("poem", id).catch(() => null))).then(() => {
         if (location.hash === requestedHash) renderDetailReady(poetFile, slug, n, p);
       });
     }).catch((e) => { if (location.hash === requestedHash) renderFetchError(e); });
@@ -3127,11 +3209,25 @@
   // contains it, so "paradise lost" leads with the poem of that name.
   function attachPoemPicker(input, hits, onPick, excludeId) {
     const close = () => { hits.hidden = true; hits.innerHTML = ""; };
+    // The titles to pick from are the index's: a poem page drawn without it asks for it when
+    // the reader comes to this box, and looks again when it is in.
+    input.addEventListener("focus", loadIndex);
+    let waiting = false;
 
-    input.addEventListener("input", () => {
+    input.addEventListener("input", function search() {
       onPick(null);
       const q = fold(input.value.trim());
       if (q.length < 3) return close();
+      if (!DATA) {
+        loadIndex();
+        hits.innerHTML = `<li class="hits-wait">${INDEX_ERROR ? "The list of titles could not be loaded." : "Loading the archive’s titles…"}</li>`;
+        hits.hidden = false;
+        if (!waiting && !INDEX_ERROR) {
+          waiting = true;
+          whenIndex(() => { waiting = false; if (document.activeElement === input && input.value.trim()) search(); });
+        }
+        return;
+      }
       const scored = [];
       for (const it of askItems()) {
         if (it.id === excludeId) continue;
@@ -3154,7 +3250,7 @@
     // mousedown, not click: blur would close the list first.
     hits.addEventListener("mousedown", (e) => {
       const li = e.target.closest("li");
-      if (!li) return;
+      if (!li || !li.dataset.id) return;
       const it = askItems().find((x) => x.id === li.dataset.id);
       if (it) { input.value = it.label + " \u2014 " + it.author; onPick(it); }
       close();
@@ -3404,14 +3500,38 @@
         </section>`;
   }
 
+  // "Read next" on a poem drawn without the index: three more poems by the same poet, from
+  // those its shard holds (up to 50 around it), the same three every time.
+  function poetNextHTML(poems, n, p) {
+    const pool = [];
+    poems.forEach((q, j) => { if (j !== n && q && q.text && q.id) pool.push(q); });
+    if (!pool.length) return "";
+    let h = 0;
+    for (const ch of p.id || "") h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+    const step = Math.max(1, Math.floor(pool.length / 3)), start = h % pool.length, picked = [];
+    for (let k = 0; k < pool.length && picked.length < 3; k++) {
+      const q = pool[(start + k * step) % pool.length];
+      if (!picked.includes(q)) picked.push(q);
+    }
+    const cards = picked.map((q) => {
+      const lines = q.text.split("\n");
+      return cardHTML(Object.assign({}, q, { authorSlug: q.authorSlug || p.authorSlug, author: q.author || p.author,
+        excerpt: lines.slice(0, 3).join("\n") + (lines.length > 3 ? " …" : "") }));
+    });
+    const label = "More by " + p.author;
+    return `<section class="related" aria-label="${esc(label)}">
+          <p class="section-label">Read next · ${esc(label)}</p>
+          <div class="grid related-grid">${cards.join("")}</div>
+        </section>`;
+  }
   function renderDetailReady(poetFile, slug, n, p) {
     const poems = poetFile.poems;
     const themes = p.subjects.length
       ? `<div class="themes">${p.subjects.map((s) => `<span class="theme-tag" data-sub="${esc(s)}">${esc(s)}</span>`).join("")}</div>` : "";
     const lang = langAttr(p.authorSlug, p.translator);
     const form = DATA ? (DATA.poems.find((q) => q.id === p.id) || {}).form : "";   // index only (B3)
-    EARLY_DRAWN = DATA ? "" : location.hash;
-    if (!DATA) afterPaint(loadIndex);
+    EARLY_DRAWN = DATA ? "" : location.hash;   // drawn without the index, which it does not fetch
+    EARLY_REDRAW = false;
     const cite = { author: p.author, title: p.title, translator: p.translator, path: `/poem/${slug}/${n}/` };
     const entry = { id: slug + "/" + n, kind: "poem", title: p.title, author: p.author, translator: p.translator || "" };
     const par = parList("poems", p.id);
@@ -3437,7 +3557,7 @@
           <button ${n === 0 ? "disabled" : ""} data-go="${n - 1}"><span class="dir">← Previous</span>${n > 0 ? esc(poems[n - 1].title) : ""}</button>
           <button class="next" ${n === poems.length - 1 ? "disabled" : ""} data-go="${n + 1}"><span class="dir">Next →</span>${n < poems.length - 1 ? esc(poems[n + 1].title) : ""}</button>
         </div>
-        ${DATA ? relatedHTML(p) : ""}
+        ${DATA ? relatedHTML(p) : poetNextHTML(poems, n, p)}
       </article>`;
     document.getElementById("back").addEventListener("click", () => { if (history.length > 1) history.back(); else location.hash = "#/poems"; });
     app.querySelectorAll(".theme-tag").forEach((t) => t.addEventListener("click", () => {
