@@ -1743,6 +1743,47 @@
   // (isHomeHash is defined further down: the same test is written out here.)
   if (!location.hash || /^#\/?(\?.*)?$/.test(location.hash) || /^#\/(poem|work)\/[\w-]+\/\d+$/.test(location.hash)) setTimeout(loadIndex, 2500);
   else loadIndex();
+  // ---------- the hidden Alexander on the home page ----------
+  // Under the cream of the home header lies a large bronze relief of the medallion's Alexander
+  // (alexander-relief.webp, from the Walters Art Museum's public-domain photograph); a soft
+  // lamp uncovers it where the pointer passes, and wanders slowly by itself when the pointer
+  // is away (styles.css .hero-relief). The picture loads after the page has appeared; the lamp
+  // runs only while the header is on screen, and never wanders for a reader who asks for less
+  // motion. The medallion itself is left as it was.
+  (function heroLamp() {
+    const hero = document.querySelector(".hero");
+    if (!hero || !("IntersectionObserver" in window)) return;
+    const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const radius = () => Math.max(150, Math.min(hero.clientWidth, 900) * 0.28);
+    let raf = 0, last = 0, t0 = 0, onScreen = false;
+    const put = (x, y) => {
+      hero.style.setProperty("--lx", x + "px");
+      hero.style.setProperty("--ly", y + "px");
+      hero.style.setProperty("--lr", radius() + "px");
+      hero.classList.add("lit");
+    };
+    hero.addEventListener("pointermove", (e) => {
+      const r = hero.getBoundingClientRect();
+      put(e.clientX - r.left, e.clientY - r.top);
+      last = Date.now();
+    });
+    hero.addEventListener("pointerleave", () => { last = 0; if (still) hero.classList.remove("lit"); });
+    function wander(t) {
+      raf = 0;
+      if (!onScreen || still) return;
+      if (Date.now() - last > 2500) {
+        const k = (t - t0) / 1000;
+        put(hero.clientWidth * (0.5 + 0.32 * Math.sin(k * 0.23)), hero.clientHeight * (0.42 + 0.22 * Math.sin(k * 0.37 + 1)));
+      }
+      raf = requestAnimationFrame(wander);
+    }
+    new IntersectionObserver(([e]) => {
+      onScreen = e.isIntersecting;
+      if (onScreen && !hero.classList.contains("relief-ready")) setTimeout(() => hero.classList.add("relief-ready"), 600);
+      if (onScreen && !raf && !still) { t0 = performance.now(); raf = requestAnimationFrame(wander); }
+    }).observe(hero);
+  })();
+
   // A signed-in reader: the account's copy is pulled after the first paint (reader accounts).
   updateAccountNav();
   if (signedIn()) setTimeout(pullNow, 1200);   // a timer, not a frame: it runs in a background tab too
