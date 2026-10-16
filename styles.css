@@ -1378,28 +1378,3 @@ textarea.ask-input {
 .mark-date, .note-date { margin: -.2rem 0 .55rem; color: var(--faint); font-family: var(--sans); font-size: .76rem; letter-spacing: .02em; }
 .note-date { margin: .3rem 0 0; }
 
-/* The hidden Alexander under the home header's cream (app.js heroLamp): a bronze relief that a
-   soft lamp uncovers where the pointer passes. The medallion and everything else sit above it. */
-:root { --lamp-glow: rgba(255, 244, 214, .55); --relief-filter: none; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --lamp-glow: rgba(203, 166, 80, .16); --relief-filter: brightness(2.6) saturate(1.15); }
-}
-:root[data-theme="dark"] { --lamp-glow: rgba(203, 166, 80, .16); --relief-filter: brightness(2.6) saturate(1.15); }
-.hero { overflow: hidden; }
-.hero-relief, .hero-lamp { position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .8s ease; }
-/* The face (at 52% across and 37% down the picture) is placed beside the medallion, not behind
-   it: to the right on a wide screen, under the title on a phone. */
-.hero { --rs: min(980px, 150vw); --fx: 76%; --fy: 46%; }
-@media (max-width: 760px) { .hero { --rs: 150vw; --fx: 50%; --fy: 66%; } }
-.hero-relief::before { content: ""; position: absolute; width: var(--rs); height: var(--rs);
-  left: calc(var(--fx) - var(--rs) * .52); top: calc(var(--fy) - var(--rs) * .37); }
-.hero.relief-ready .hero-relief::before { background: url("alexander-relief.webp") center / contain no-repeat; }
-.hero-relief { filter: var(--relief-filter);
-  -webkit-mask-image: radial-gradient(circle var(--lr, 0px) at var(--lx, 50%) var(--ly, 40%), #000 0%, rgba(0, 0, 0, .75) 38%, transparent 72%);
-          mask-image: radial-gradient(circle var(--lr, 0px) at var(--lx, 50%) var(--ly, 40%), #000 0%, rgba(0, 0, 0, .75) 38%, transparent 72%); }
-.hero-lamp { background: radial-gradient(circle calc(var(--lr, 0px) * 1.1) at var(--lx, 50%) var(--ly, 40%), var(--lamp-glow), transparent 70%);
-  mix-blend-mode: soft-light; }
-.hero.lit .hero-relief, .hero.lit .hero-lamp { opacity: 1; }
-.hero-coin, .hero-title, .hero-tag, .hero-search, .hero-nav { position: relative; z-index: 1; }
-.hero-tools { z-index: 2; }
-@media print { .hero-relief, .hero-lamp { display: none; } }
