@@ -1686,12 +1686,17 @@
   // the index as before ("Opening the archive…"). If home.json is missing or broken, the
   // home page waits for the index too, as it always did; if it is slow (1.5 s), the home
   // page says "Opening the archive…" meanwhile, and is still drawn from it if it comes first.
+  // The request is started by a line in the <head> of index.html (window.pcHome), so it runs
+  // while app.js is still loading; a <link rel=preload> did the same but the service worker
+  // could not hand its copy to this fetch, and the file came down twice.
   // Poem pages, books of works and contents pages never ask for the index by themselves
   // (only the home page does, after its first paint): a reader who opens one poem gets that
   // poem and not 9 MB of index. It is fetched when something needs it (the search box, the
   // lists, Poets, Eras, a category, the shelf; see routeEarly and loadIndex's callers).
-  fetch("data/home.json", { priority: "high" })
-    .then((r) => (r.ok ? r.json() : null))
+  const homeFetch = (window.pcHome && typeof window.pcHome.then === "function")
+    ? window.pcHome : fetch("data/home.json", { priority: "high" });
+  homeFetch
+    .then((r) => (r && r.ok ? r.json() : null))
     .then((h) => {
       if (h && typeof h.count === "number" && h.eras) HOME = h; else HOME_FAILED = true;
     }, () => { HOME_FAILED = true; })
