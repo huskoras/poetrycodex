@@ -1,6 +1,14 @@
 (() => {
   "use strict";
   const app = document.getElementById("app");
+  // "/?q=keats" (the search box in the static pages' top bar, a plain GET form) opens the
+  // archive already searched, as "#/poems?q=keats" does.
+  {
+    const q = /^\?(?:.*&)?q=([^&#]*)/.exec(location.search);
+    if (q && (!location.hash || /^#\/?(poems)?(\?.*)?$/.test(location.hash))) {
+      history.replaceState(null, "", location.pathname + "#/poems?q=" + q[1]);
+    }
+  }
   let DATA = null;
   let query = "";            // the search as typed (folded only when matching)
   let filterSubject = "All";

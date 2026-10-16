@@ -685,7 +685,7 @@ a.poet-card, a.topic-card { display: block; }
   .detail-nav { flex-direction: column; }
 }
 /* Small phones: the coin alone links home in the app's bar (the page title still names the
-   site), so the search box keeps a usable width. The static pages have no search box there. */
+   site), so the search box keeps a usable width. The static pages have the same bar. */
 @media (max-width: 440px) { .topbar-inner.has-search .tb-brand span { display: none; } }
 /* A long label ("Narrative poem · 1818 · 4 parts") goes under its title rather than off the edge. */
 @media (max-width: 560px) { .poem-links a { flex-wrap: wrap; row-gap: .15rem; } .poem-links .pl-sub { white-space: normal; } }
