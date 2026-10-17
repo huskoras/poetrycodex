@@ -40,7 +40,7 @@ so your proposals fit what exists.
 
 ## What to deliver
 Write a report to the path the task gives (default
-`C:\Users\husey\OneDrive\Documents\Projects\poetrycodex-notlar\design-research-<date>.md`), in
+`G:\Drive'ım\Project Poetry Codex\Notes and records\design-research-<date>.md`), in
 plain English for the owner, with:
 - a short "what makes their design work" section (10–15 points, each with the page where you
   saw it);
