@@ -1482,7 +1482,7 @@
   // .text-solo, with an empty .fx-slot beside it for the facing pages.
   function poemBlock(text, o) {
     const prose = isProse(text, o.translator);
-    const numberable = prose ? !!o.work : (o.work || lineCount(text) >= 10);
+    const numberable = !prose && (o.work || lineCount(text) >= 10);
     const on = numberable && lineNumbersOn();
     const label = o.label ? `<p class="section-label">${o.label}</p>` : "";
     const head = numberable || o.parallel ? `
@@ -1494,6 +1494,34 @@
       <div class="poem-text${prose ? " is-prose" : ""}${on ? " numbered" : ""}"${o.lang || ""}>${poemHTML(text, prose)}</div>
       ${prose ? `<p class="prose-note">This translation is printed as prose in its source edition.</p>` : ""}`;
     return `${head}${o.parallel ? `<div class="text-solo">${solo}</div><div class="fx-slot" hidden></div>` : solo}`;
+  }
+  // A prose translation with a line map (data/linemaps/<slug>.json, from the Perseus
+  // edition's line markers: {book index: [the Greek line each paragraph begins at, to the
+  // marker at or before it]}) shows those numbers in the margin, as the Loeb prints them.
+  const LINEMAPPED = new Set(["iliad-murray"]);
+  const LINEMAP_CACHE = {};
+  function applyLineMap(slug, i) {
+    if (!LINEMAPPED.has(slug)) return;
+    const url = `data/linemaps/${slug}.json`;
+    (LINEMAP_CACHE[url] || (LINEMAP_CACHE[url] = fetch(url).then((r) => r.ok ? r.json() : {}).catch(() => ({})))).then((map) => {
+      const nums = map && map[i];
+      const root = app.querySelector(".text-solo .poem-text.is-prose") || app.querySelector(".poem-text.is-prose");
+      if (!Array.isArray(nums) || !root) return;
+      const ps = root.querySelectorAll(":scope > p");
+      if (ps.length !== nums.length) return;
+      ps.forEach((p, k) => { p.dataset.n = nums[k]; });
+      const on = lineNumbersOn();
+      root.classList.toggle("numbered", on);
+      root.classList.add("greek-lines");
+      if (!app.querySelector(".ln-toggle")) {
+        const bar = document.createElement("div");
+        bar.className = "ln-bar";
+        bar.innerHTML = `<span class="ln-ctl"><span class="ln-note"${on ? "" : " hidden"}>Greek line numbers: where each paragraph begins, to the nearest five lines</span>
+          <button class="ln-toggle" type="button" aria-pressed="${on}">Line numbers</button></span>`;
+        root.before(bar);
+        bindLineNumbers();
+      }
+    });
   }
   function bindLineNumbers() {
     const btn = app.querySelector(".ln-toggle");
@@ -3455,6 +3483,7 @@
                  id: "work:" + slug + "/" + i });
     bindReadingTools();
     bindLineNumbers();
+    applyLineMap(slug, i);
     // The reading position follows whichever text is on screen, alone or facing its partner.
     bindFacing({ kind: "work", key: "w:" + slug, list: par, build: (e, other) => workFacing(w, slug, i, other, e),
                  onShow: (el) => { if (READING_NOW && READING_NOW.slug === slug) READING_NOW.el = el; } });

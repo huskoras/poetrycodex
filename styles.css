@@ -1584,3 +1584,10 @@ a.sr-top-t:hover { text-decoration: underline; text-decoration-color: var(--gold
 mark.hl.is-hover { outline: 2px solid var(--gold); outline-offset: 1px; }
 .hl-pop.in-margin { width: 290px; }
 @media print { .mn-col { display: none; } }
+
+/* "Still being built": a quiet line under the header, which the reader can hide. */
+.wip-bar { padding: .45rem 2.6rem .45rem 1rem; text-align: center; font-family: var(--sans); font-size: .78rem; line-height: 1.4; color: var(--ink-soft);
+  background: rgba(203, 166, 80, .12); border-bottom: 1px solid rgba(203, 166, 80, .35); position: relative; }
+.wip-bar[hidden] { display: none; }
+.wip-x { position: absolute; right: .6rem; top: 50%; transform: translateY(-50%); border: none; background: none; font-size: 1.1rem; line-height: 1; color: var(--ink-soft); cursor: pointer; padding: .2rem .4rem; }
+@media print { .wip-bar { display: none; } }

@@ -31,7 +31,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <!-- The reader's "Aa" choices (text size, light/dark), applied before the page draws. -->
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="styles.css?v=70" />
+  <link rel="stylesheet" href="styles.css?v=71" />
   <!-- The home page is drawn from this small file while the large index loads (app.js, "a fast first screen").
        Asked for here, while app.js is still loading, with the same fetch() app.js reads it with
        (a rel=preload copy could not be handed over through the service worker, and came down twice). -->
@@ -87,6 +87,8 @@
       </nav>
     </div>
   </header>
+  <div class="wip-bar" id="wip-bar">Poetry Codex is still being built: new poems, study notes and features arrive every week. Thank you for your patience. <button type="button" class="wip-x" aria-label="Hide this notice" onclick="try{localStorage.setItem('pc-wip','1')}catch(e){};this.parentNode.hidden=true">×</button></div>
+  <script>try{if(localStorage.getItem('pc-wip')==='1')document.getElementById('wip-bar').hidden=true}catch(e){}</script>
 
   <main id="app"></main>
 
@@ -94,7 +96,7 @@
     <div class="foot-inner">
       <div class="foot-brand">
         <span class="foot-mark">Poetry&nbsp;Codex</span>
-        <p class="foot-desc"><span id="foot-count"></span> poems — a curated archive of poetry in the public domain. Codex Notes are editorial readings; poet portraits are public-domain works courtesy of Wikimedia Commons. Our emblem is the gold <a href="https://art.thewalters.org/object/59.1/" rel="noopener">Medallion with Alexander the Great</a> (Roman, about 215–243 CE), which the Walters Art Museum, Baltimore, has generously placed in the public domain: with our thanks.</p>
+        <p class="foot-desc"><span id="foot-count"></span> poems — a curated archive of poetry in the public domain, still being built. Codex Notes are editorial readings; poet portraits are public-domain works courtesy of Wikimedia Commons. Our emblem is the gold <a href="https://art.thewalters.org/object/59.1/" rel="noopener">Medallion with Alexander the Great</a> (Roman, about 215–243 CE), which the Walters Art Museum, Baltimore, has generously placed in the public domain: with our thanks.</p>
       </div>
       <nav class="foot-links" aria-label="Footer">
         <a href="#/poems">Poems</a>
@@ -119,6 +121,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=94"></script>
+  <script src="app.js?v=96"></script>
 </body>
 </html>
