@@ -392,7 +392,7 @@
     const items = shelfItems();
     const at = items.findIndex((it) => it.id === entry.id);
     if (at >= 0) items.splice(at, 1);
-    else items.unshift(Object.assign({}, entry, { saved: new Date().toISOString() }));
+    else { items.unshift(Object.assign({}, entry, { saved: new Date().toISOString() })); keepOffline(entry.id); }
     const kept = writeStore(SHELF_KEY, { v: 1, items });
     updateShelfNav();
     return { on: at < 0, kept };
@@ -2356,6 +2356,49 @@
     restoreScroll();
   }
 
+  // ---------- installing the app ----------
+  // Poetry Codex installs as an app (site.webmanifest, sw.js): on Android and on a laptop the
+  // browser offers it and "Install the app" (footer) asks for it; on an iPhone or iPad, where
+  // Safari has no such prompt, the same link shows how to add it to the Home Screen.
+  let INSTALL_EVT = null;
+  const isStandalone = () => window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+  const isIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  function showInstall() {
+    const can = !isStandalone() && (!!INSTALL_EVT || isIOS());
+    document.querySelectorAll(".install-app").forEach((b) => { b.hidden = !can; });
+  }
+  window.addEventListener("beforeinstallprompt", (e) => { INSTALL_EVT = e; showInstall(); });
+  window.addEventListener("appinstalled", () => { INSTALL_EVT = null; showInstall(); });
+  function iosGuide() {
+    const d = document.createElement("div");
+    d.className = "ios-guide"; d.setAttribute("role", "dialog"); d.setAttribute("aria-label", "Install Poetry Codex");
+    d.innerHTML = `<div class="ios-card">
+      <button type="button" class="gl-close" aria-label="Close">×</button>
+      <p class="gl-kind">Install the app</p>
+      <h3 class="gl-title">Poetry Codex on your iPhone or iPad</h3>
+      <ol class="ios-steps">
+        <li>In Safari, tap the <strong>Share</strong> button (the square with an arrow pointing up).</li>
+        <li>Choose <strong>Add to Home Screen</strong>, then <strong>Add</strong>.</li>
+        <li>Open Poetry Codex from its icon: it runs full screen, like any app, with your shelf, highlights and notes.</li>
+      </ol></div>`;
+    document.body.appendChild(d);
+    const close = () => d.remove();
+    d.addEventListener("click", (e) => { if (e.target === d || e.target.closest(".gl-close")) close(); });
+  }
+  document.addEventListener("click", async (e) => {
+    const b = e.target.closest && e.target.closest(".install-app");
+    if (!b) return;
+    e.preventDefault();
+    if (INSTALL_EVT) { INSTALL_EVT.prompt(); try { await INSTALL_EVT.userChoice; } catch (err) { /* dismissed */ } INSTALL_EVT = null; showInstall(); }
+    else if (isIOS()) iosGuide();
+  });
+  showInstall();
+  // A text saved to the shelf is fetched at once, so the app keeps it for reading offline.
+  function keepOffline(id) {
+    const m = /^work:([^/]+)/.exec(id);
+    const url = m ? `data/works/${encodeURIComponent(m[1])}.json` : `data/poets/${encodeURIComponent(id.split("/")[0])}.json`;
+    fetch(url).catch(() => {});
+  }
   // ---------- global search ----------
   // Typing redraws the list 150 ms after the last key, not on every key. Typing anywhere
   // but the archive goes to it; the top bar's box takes over at once, so the reader can

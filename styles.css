@@ -1591,3 +1591,11 @@ mark.hl.is-hover { outline: 2px solid var(--gold); outline-offset: 1px; }
 .wip-bar[hidden] { display: none; }
 .wip-x { position: absolute; right: .6rem; top: 50%; transform: translateY(-50%); border: none; background: none; font-size: 1.1rem; line-height: 1; color: var(--ink-soft); cursor: pointer; padding: .2rem .4rem; }
 @media print { .wip-bar { display: none; } }
+
+/* Installing on an iPhone: a short guide over the page. */
+.ios-guide { position: fixed; inset: 0; z-index: 80; display: flex; align-items: flex-end; justify-content: center; background: rgba(10, 14, 20, .45); padding: 1rem; }
+.ios-card { position: relative; width: min(440px, 100%); box-sizing: border-box; padding: 1.3rem 1.4rem 1.1rem; border-radius: 16px; background: var(--surface); border: 1px solid var(--gold); box-shadow: var(--shadow); }
+.ios-steps { margin: .6rem 0 0; padding-left: 1.2rem; font-size: .95rem; line-height: 1.55; color: var(--ink-soft); }
+.ios-steps li { margin-bottom: .45rem; }
+
+.install-app[hidden] { display: none !important; }

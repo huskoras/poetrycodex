@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.poetrycodex.app",
+    "sha256_cert_fingerprints": ["75:F8:6D:CF:CB:E2:5C:4B:61:2A:01:E3:C7:C5:03:A4:11:93:01:BE:D4:12:2B:10:D0:FE:E7:88:59:C7:F0:97"]
+  }
+}]
