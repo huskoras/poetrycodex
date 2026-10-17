@@ -1445,3 +1445,19 @@ textarea.ask-input {
 .list-works > summary:hover { color: var(--accent); }
 .result-meta .works-jump { color: var(--accent); text-decoration: none; }
 .result-meta .works-jump:hover { text-decoration: underline; }
+
+/* An object from the poems' world (the Pylos Combat Agate on Homer's page and the
+   Ancient Greek & Roman page): photograph left, account right; stacked on phones. */
+.artefact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 1.75rem 2.25rem; align-items: center; margin: 2.25rem 0 2.5rem; padding: 1.75rem 0; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); }
+.artefact-img { display: block; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow); background: #ebe6dc; }
+.artefact-img img { display: block; width: 100%; height: auto; }
+.artefact figcaption { min-width: 0; }
+.artefact-kicker { margin: 0 0 .35rem; font-size: .72rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-ink); }
+.artefact-title { margin: 0 0 .3rem; font-family: var(--serif); font-size: 1.6rem; font-weight: 500; line-height: 1.2; color: var(--ink); }
+.artefact-meta { margin: 0 0 1rem; font-size: .82rem; letter-spacing: .02em; color: var(--muted, var(--ink-soft)); }
+.artefact figcaption p:not([class]) { margin: 0 0 .8rem; font-family: var(--serif); font-size: 1.05rem; line-height: 1.7; color: var(--ink-soft); max-width: 60ch; }
+.artefact-credit { margin: .4rem 0 0; font-size: .74rem; color: var(--muted, var(--ink-soft)); }
+.artefact-credit a { color: inherit; }
+@media (max-width: 760px) { .artefact { grid-template-columns: minmax(0, 1fr); gap: 1.1rem; padding: 1.25rem 0; } .artefact-title { font-size: 1.35rem; } }
+.page-head + .artefact { border-top: 0; margin-top: .5rem; padding-top: .5rem; }
+@media print { .artefact { display: none; } }

@@ -2335,6 +2335,7 @@
     app.innerHTML = `
       <button class="back" id="back">← Browse by Era</button>
       <div class="page-head"><h1 class="page-title">${esc(catName)}</h1><p class="page-sub">${sub}</p></div>
+      ${slug === "ancient-greek-roman" ? AGATE_HTML : ""}
       ${lists}
       ${lists && (works.length || poems.length) ? `<h2 class="section-label era-az">Every work and poem, A–Z</h2>` : ""}
       <div class="grid">
@@ -2659,6 +2660,24 @@
   }
 
   // ---------- POET page ----------
+  // ---------- an object from the poems' world, framed beside them ----------
+  // The Pylos Combat Agate on Homer's page and the Ancient Greek & Roman era page (the
+  // owner's request, 17 Oct 2026). The photograph is CC BY-SA 4.0, so its credit stays.
+  // The same text is in tools/build_pages.py (AGATE_HTML) for the static Homer page.
+  const AGATE_HTML = `
+      <figure class="artefact">
+        <a class="artefact-img" href="agate-1200.webp"><img src="agate-640.webp" srcset="agate-640.webp 640w, agate-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 46vw" width="640" height="321" loading="lazy" alt="The Pylos Combat Agate: an almond-shaped sealstone of banded brown and white agate with gold end-caps, its tiny carved battle scene catching the light" /></a>
+        <figcaption>
+          <p class="artefact-kicker">Before Homer</p>
+          <h2 class="artefact-title">The Pylos Combat Agate</h2>
+          <p class="artefact-meta">Minoan Crete, about 1450 BCE · banded agate, about 3.5 cm long</p>
+          <p>A warrior who has already struck down one enemy lunges over a great body-shield and drives his sword at the throat of a second, gripping the crest of the man’s helmet. The whole fight is cut into a sealstone smaller than a thumb, so finely that the muscles of the fighters and the patterns of their kilts can be read only under a lens.</p>
+          <p>It was buried with a man of rank, the so-called Griffin Warrior, beside the Palace of Nestor at Pylos, and found in 2015 by the University of Cincinnati excavation led by Sharon Stocker and Jack Davis. Encrusted with limestone, it was first taken for a bead; cleaning revealed the scene in 2017, and it is now counted the finest engraving known from the Aegean Bronze Age.</p>
+          <p>The <em>Iliad</em> would not be written down for another seven centuries, yet its world is already here: champions in single combat, crested helmets, the tall shields Homer still remembers in Ajax’s shield “like a tower”, and Pylos itself, the city of old Nestor.</p>
+          <p class="artefact-credit">Photograph: <a href="https://commons.wikimedia.org/wiki/File:Pylos_Combat_Agate_on_exhibit_at_the_Getty_Villa_2025_(cropped).jpg" rel="noopener">Jengod</a>, on loan at the Getty Villa, 2025; cropped. <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener">CC BY-SA 4.0</a>.</p>
+        </figcaption>
+      </figure>`;
+
   function renderPoet(slug) {
     const poet = POETS[slug];
     if (!poet) { location.hash = "#/poets"; return; }
@@ -2695,6 +2714,7 @@
             </div>
           </div>
         </div>
+        ${slug === "homer" ? AGATE_HTML : ""}
         ${worksHTML}
         ${poems.length || !works.length ? `<section class="poet-poems">
           <h2>Poems · ${num(poems.length)}</h2>
