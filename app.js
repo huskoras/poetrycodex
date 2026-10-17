@@ -2335,7 +2335,7 @@
     app.innerHTML = `
       <button class="back" id="back">← Browse by Era</button>
       <div class="page-head"><h1 class="page-title">${esc(catName)}</h1><p class="page-sub">${sub}</p></div>
-      ${slug === "ancient-greek-roman" ? AGATE_HTML : ""}
+      ${slug === "ancient-greek-roman" ? AGATE_HTML : `<div id="era-art"></div>`}
       ${lists}
       ${lists && (works.length || poems.length) ? `<h2 class="section-label era-az">Every work and poem, A–Z</h2>` : ""}
       <div class="grid">
@@ -2346,6 +2346,7 @@
       ${moreHTML(poems.length)}`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/"; });
     bindMore(poems);
+    fillEraArt(slug);
   }
 
   // Above an era's cards: its poets (name and dates, earliest first; where there are more
@@ -2664,6 +2665,34 @@
   // The Pylos Combat Agate on Homer's page and the Ancient Greek & Roman era page (the
   // owner's request, 17 Oct 2026). The photograph is the excavators'; the owner chose it and will take it down if they ask.
   // The same text is in tools/build_pages.py (AGATE_HTML) for the static Homer page.
+  // Every other era page opens with its own showpiece (data/era-art.json: object, account,
+  // photo credit; the images in eras/), fetched once when the first era page is opened.
+  let ERA_ART = null;
+  function fillEraArt(slug) {
+    const box = document.getElementById("era-art");
+    if (!box) return;
+    (ERA_ART || (ERA_ART = fetch("data/era-art.json").then((r) => r.json()).catch(() => ({}))))
+      .then((all) => { const a = all[slug]; if (a && box.isConnected) box.outerHTML = eraArtHTML(slug, a); });
+  }
+  function eraArtHTML(slug, a) {
+    return `
+      <figure class="artefact">
+        <div class="artefact-case">
+          <a class="artefact-img" href="eras/${slug}-1200.webp"><img src="eras/${slug}-640.webp" srcset="eras/${slug}-640.webp 640w, eras/${slug}-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 720px" width="${a.w}" height="${a.h}" alt="${esc(a.title)}" /></a>
+        </div>
+        <figcaption>
+          <div class="artefact-head">
+            <p class="artefact-kicker">${esc(a.kicker)}</p>
+            <h2 class="artefact-title">${esc(a.title)}</h2>
+            <p class="artefact-meta">${a.meta.split(" · ").map(esc).join("<br>")}</p>
+          </div>
+          <div class="artefact-text">
+            ${a.paras.map((t) => `<p>${esc(t)}</p>`).join("")}
+            <p class="artefact-credit"><a href="${esc(a.page)}" rel="noopener">${esc(a.credit)}</a></p>
+          </div>
+        </figcaption>
+      </figure>`;
+  }
   const AGATE_HTML = `
       <figure class="artefact">
         <div class="artefact-case">
