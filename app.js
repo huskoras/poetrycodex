@@ -826,7 +826,7 @@
   // For the works in GLOSSED, data/glosses/<slug>/<book>.json holds the notes on that book:
   // [{id, anchor, occurrence, kind, title, greek, ref, short, body, sources: [{cite, url}], see}].
   // Each anchor is underlined in the text; a click opens the note. Readers can hide them.
-  const GLOSSED = new Set(["iliad-murray", "paradise-lost"]);
+  const GLOSSED = new Set(["iliad-murray", "paradise-lost", "odyssey-murray", "aeneid-mackail", "gilgamish-thompson"]);
   const GLOSS_OFF_KEY = "pc-gloss-off";
   const glossOff = () => { try { return localStorage.getItem(GLOSS_OFF_KEY) === "1"; } catch (e) { return false; } };
   const GLOSS_CACHE = {};
@@ -1498,7 +1498,7 @@
   // A prose translation with a line map (data/linemaps/<slug>.json, from the Perseus
   // edition's line markers: {book index: [the Greek line each paragraph begins at, to the
   // marker at or before it]}) shows those numbers in the margin, as the Loeb prints them.
-  const LINEMAPPED = new Set(["iliad-murray"]);
+  const LINEMAPPED = new Set(["iliad-murray", "odyssey-murray"]);
   const LINEMAP_CACHE = {};
   function applyLineMap(slug, i) {
     if (!LINEMAPPED.has(slug)) return;
@@ -3010,7 +3010,13 @@
   }
   // The translation the editors recommend for a first reading (the owner's choice, 17 Oct
   // 2026): listed first, with a badge, wherever the translations of that work are listed.
-  const RECOMMENDED = { iliad: "iliad-murray" };
+  const RECOMMENDED = { iliad: "iliad-murray", odyssey: "odyssey-murray", aeneid: "aeneid-mackail", gilgamesh: "gilgamish-thompson" };
+  const REC_WHY = {
+    iliad: "The translation we recommend for a first reading and for study: close to the Greek line by line, plain and clear, with study notes and the Greek line numbers.",
+    odyssey: "The translation we recommend for a first reading and for study: Murray's Loeb version, close to the Greek, plain and clear.",
+    aeneid: "The translation we recommend for a first reading and for study: Mackail's prose keeps close to Virgil's Latin, sentence by sentence.",
+    gilgamesh: "The translation we recommend: Campbell Thompson's version of all twelve tablets, the fullest made before 1931.",
+  };
   const isRecommended = (w) => !!w && !!w.workGroup && RECOMMENDED[w.workGroup] === w.slug;
   const recBadge = (w) => isRecommended(w) ? ` <span class="rec-badge">Recommended</span>` : "";
   function epicCardHTML(ws) {
@@ -3445,7 +3451,7 @@
         ${w.subtitle ? `<p class="work-subtitle">${esc(w.subtitle)}</p>` : ""}
         <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
         ${sourceLine(w.translator)}
-        ${isRecommended(w) ? `<p class="rec-line"><span class="rec-badge">Recommended</span> The translation we recommend for a first reading and for study: faithful line by line to the Greek, plain and clear.</p>` : ""}
+        ${isRecommended(w) ? `<p class="rec-line"><span class="rec-badge">Recommended</span> ${esc(REC_WHY[w.workGroup] || "The translation we recommend for a first reading and for study.")}</p>` : ""}
         ${w.blurb ? `<p class="note-block">${esc(w.blurb)}</p>` : ""}
         ${otherTrHTML(w)}
         ${place ? `<div class="continue-wrap">${continueHTML(w)}
