@@ -22,6 +22,6 @@ Quick reminders:
   pages (`poem/`, `poet/`) and `sitemap.xml` that search engines index. Those
   folders are generated: never edit them by hand.
 - Public domain only. Translations must be pre-1929 — record the `translator` field.
-- Never ingest editorial notes, introductions, footnotes or stage plays as "poems".
+- Never ingest editorial notes, introductions, footnotes or stage plays as "poems". Exception (owner's ruling, 17 Oct 2026): a verse play or poetic prose work in the poetry tradition (e.g. Shakespeare's history plays, Blake's Marriage of Heaven and Hell) may come in as a WORK when an editor's item explicitly assigns it; never on an ingester's own initiative. Novels, history and ordinary prose stay out.
 - Spot-check extracted poems before committing; bad data is worse than no data.
 - Bump the `?v=N` cache-buster in `index.html` when changing `app.js` or `styles.css`.

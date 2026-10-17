@@ -30,7 +30,7 @@ lessons (§6), the workflow (§7), the current state and gaps (§8).
      published before 1931. Prefer candidates that have both the original and a translation.
    - If a date cannot be verified from the source itself (front matter, catalogue record), the
      candidate waits. "Probably fine" is not a basis.
-   - Poems only: no plays, prose, introductions, footnotes, editorial apparatus.
+   - Poems only: no plays, prose, introductions, footnotes, editorial apparatus. Exception (owner's ruling, 17 Oct 2026): a verse play or poetic prose work in the poetry tradition (e.g. Shakespeare's history plays, Blake's Marriage of Heaven and Hell) may come in as a WORK when an editor's item explicitly assigns it; never on an ingester's own initiative. Novels, history and ordinary prose stay out.
    - Quality: a garbled OCR text is worse than no text. Reject sources that resist clean parsing.
 2. **Where it goes.** Each poet has exactly one `category` from `CATEGORY_ORDER` in `app.js`.
    You may create a new category when a language or tradition needs one (say where it sits in
