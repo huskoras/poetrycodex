@@ -2076,6 +2076,209 @@
   if (signedIn()) setTimeout(pullNow, 1200);   // a timer, not a frame: it runs in a background tab too
   const indexErrorHTML = () => `<p class="empty">Could not load the archive (${esc(INDEX_ERROR)}).<br>Serve this through a local server, not a file:// path.</p>`;
 
+  // ---------- search: suggestions as you type, a results page, a work's translations ----------
+  // Every search box shows suggestions under it as the reader types (works, poets, poems),
+  // from two small files built by tools/build_suggest.py: data/suggest/core.json (every work,
+  // translations grouped, and every poet) and data/suggest/p/<abc>.json (the poem titles
+  // with a word that begins with those letters). Enter, or "See all results", opens
+  // #/search?q=, drawn from the same files. Neither needs the archive index.
+  let SG_CORE = null;
+  const SG_SHARDS = {};
+  const sgFold = (s) => fold(s).replace(/^(the|a|an) /, "");
+  function sgCore() {
+    return SG_CORE || (SG_CORE = fetch("data/suggest/core.json").then((r) => r.ok ? r.json() : []).catch(() => [])
+      .then((rows) => rows.map(([k, label, sub, href, weight, extra]) => ({ k, label, sub, href, weight, extra, f: sgFold(label), full: fold(label) }))));
+  }
+  function sgShard(key) {
+    return SG_SHARDS[key] || (SG_SHARDS[key] = fetch(`data/suggest/p/${key}.json`).then((r) => r.ok ? r.json() : []).catch(() => []));
+  }
+  const sgWords = (q) => fold(q).split(" ").filter(Boolean);
+  // Every word of the search begins a word of the text ("grec ur" finds "Ode on a Grecian Urn").
+  const sgHasAll = (text, words) => { const ws = text.split(" "); return words.every((w) => ws.some((t) => t.startsWith(w))); };
+  function sgScoreCore(e, q, words) {
+    if (e.f === q || e.full === q) return 0;
+    if (e.f.startsWith(q) || e.full.startsWith(q)) return 1;
+    if (e.k === "p" && e.full.split(" ").pop().startsWith(q)) return 1.5;   // a surname: "keats"
+    if (sgHasAll(e.full, words)) return 2;
+    return -1;
+  }
+  async function sgFind(qRaw, limits) {
+    const q = fold(qRaw), words = sgWords(qRaw);
+    if (!q) return { works: [], poets: [], poems: [] };
+    const core = await sgCore();
+    const ranked = core.map((e) => [sgScoreCore(e, q, words), e]).filter((x) => x[0] >= 0)
+      .sort((a, b) => a[0] - b[0] || b[1].weight - a[1].weight || a[1].label.length - b[1].label.length).map((x) => x[1]);
+    const works = ranked.filter((e) => e.k === "w").slice(0, limits.works);
+    const poets = ranked.filter((e) => e.k === "p").slice(0, limits.poets);
+    let poems = [];
+    const long = words.filter((w) => w.length >= 3).sort((a, b) => b.length - a.length)[0];
+    if (long) {
+      const rows = await sgShard(long.slice(0, 3));
+      const qs = sgFold(qRaw);
+      const seen = new Set();
+      poems = rows.map((r) => {
+        const t = fold(r[0]), ts = sgFold(r[0]);
+        let s;
+        if (ts === qs || t === q) s = 0;
+        else if (ts.startsWith(qs) || t.startsWith(q)) s = 1;
+        else if (t.includes(q)) s = 2;
+        else if (sgHasAll(t, words)) s = 3;
+        else if (sgHasAll(t + " " + fold(r[1]), words)) s = 4;
+        else return null;
+        return [s, r];
+      }).filter(Boolean).sort((a, b) => a[0] - b[0] || a[1][0].length - b[1][0].length)
+        .map((x) => x[1]).filter((r) => !seen.has(r[2]) && seen.add(r[2])).slice(0, limits.poems);
+    }
+    return { works, poets, poems };
+  }
+  const poemHref = (id) => "#/poem/" + id;
+  // ----- the dropdown under a search box -----
+  function attachSuggest(input) {
+    if (input.dataset.sg) return;
+    input.dataset.sg = "1";
+    input.setAttribute("role", "combobox");
+    input.setAttribute("aria-autocomplete", "list");
+    input.setAttribute("aria-expanded", "false");
+    const box = document.createElement("div");
+    box.className = "sg-box"; box.hidden = true; box.setAttribute("role", "listbox");
+    box.id = "sg-" + Math.random().toString(36).slice(2, 8);
+    input.setAttribute("aria-controls", box.id);
+    (input.closest("form") || input.parentNode).appendChild(box);
+    let seq = 0, active = -1, items = [];
+    const close = () => { box.hidden = true; input.setAttribute("aria-expanded", "false"); active = -1; };
+    const go = (href) => { close(); input.blur(); location.hash = href.replace(/^#/, ""); };
+    const setActive = (k) => {
+      active = k;
+      items.forEach((a, j) => a.classList.toggle("is-active", j === k));
+      if (items[k]) { input.setAttribute("aria-activedescendant", items[k].id); items[k].scrollIntoView({ block: "nearest" }); }
+    };
+    async function update() {
+      const v = input.value.trim(), my = ++seq;
+      if (fold(v).length < 2) { close(); return; }
+      const r = await sgFind(v, { works: 4, poets: 4, poems: 6 });
+      if (my !== seq) return;
+      const row = (href, title, sub, kind) => `<a class="sg-item" role="option" href="${esc(href)}"><span class="sg-t">${title}</span>${sub ? `<span class="sg-s">${sub}</span>` : ""}${kind ? `<span class="sg-k">${kind}</span>` : ""}</a>`;
+      const groups = [];
+      if (r.works.length) groups.push(`<div class="sg-group"><p class="sg-head">Works</p>${r.works.map((e) => row(e.href, esc(e.label), esc(e.sub), esc(e.extra))).join("")}</div>`);
+      if (r.poets.length) groups.push(`<div class="sg-group"><p class="sg-head">Poets</p>${r.poets.map((e) => row(e.href, esc(e.label), esc(e.sub), "")).join("")}</div>`);
+      if (r.poems.length) groups.push(`<div class="sg-group"><p class="sg-head">Poems</p>${r.poems.map((p) => row(poemHref(p[2]), esc(p[0]), esc(p[1]), "")).join("")}</div>`);
+      box.innerHTML = groups.join("") + `<a class="sg-item sg-all" role="option" href="#/search?q=${encodeURIComponent(v)}">See all results for “${esc(v)}” →</a>`;
+      items = [...box.querySelectorAll(".sg-item")];
+      items.forEach((a, j) => { a.id = box.id + "-" + j; });
+      active = -1;
+      box.hidden = false; input.setAttribute("aria-expanded", "true");
+    }
+    let t = 0;
+    input.addEventListener("input", () => { clearTimeout(t); t = setTimeout(update, 90); });
+    input.addEventListener("focus", () => { sgCore(); if (input.value.trim()) update(); });
+    input.addEventListener("keydown", (e) => {
+      if (box.hidden && e.key !== "Enter") return;
+      if (e.key === "ArrowDown") { e.preventDefault(); setActive(Math.min(items.length - 1, active + 1)); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); setActive(Math.max(-1, active - 1)); }
+      else if (e.key === "Escape") { close(); }
+      else if (e.key === "Enter" && active >= 0 && items[active]) { e.preventDefault(); go(items[active].getAttribute("href")); }
+    });
+    box.addEventListener("mousedown", (e) => e.preventDefault());     // the input keeps focus
+    box.addEventListener("click", (e) => { const a = e.target.closest(".sg-item"); if (a) { e.preventDefault(); go(a.getAttribute("href")); } });
+    input.addEventListener("blur", () => setTimeout(close, 120));
+  }
+  // ----- the results page: #/search?q= -----
+  const SR_PAGE = 30;
+  async function renderSearch(qRaw) {
+    setRoute("poems", "sub");
+    setTitle(qRaw ? `“${qRaw}” · Search` : "Search");
+    document.querySelectorAll("input.search-input").forEach((i) => { if (document.activeElement !== i) i.value = qRaw; });
+    if (!qRaw.trim()) { app.innerHTML = `<div class="page-head"><h1 class="page-title">Search</h1><p class="page-sub">Type a poem, a poet or a work in the box above.</p></div>`; return; }
+    app.innerHTML = `<p class="loading">Searching…</p>`;
+    const h = location.hash;
+    const r = await sgFind(qRaw, { works: 40, poets: 40, poems: 400 });
+    if (location.hash !== h) return;
+    const top = [...r.works, ...r.poets].find((e) => sgScoreCore(e, fold(qRaw), sgWords(qRaw)) <= 1.5);
+    const topW = top && top.k === "w" ? await topWorkHTML(top) : "";
+    const topHTML = top ? (topW || `
+      <a class="sr-top" href="${esc(top.href)}">
+        <span class="sr-top-k">Poet</span>
+        <span class="sr-top-t">${esc(top.label)}</span>
+        <span class="sr-top-s">${esc([top.sub, top.extra].filter(Boolean).join(" · "))}</span>
+        <span class="sr-top-go">See the poems →</span>
+      </a>`) : "";
+    const rest = (list) => list.filter((e) => e !== top);
+    const row = (href, t, s, k) => `<li><a class="sr-row" href="${esc(href)}"><span class="sr-t">${t}</span><span class="sr-s">${s}</span>${k ? `<span class="sr-k">${k}</span>` : ""}</a></li>`;
+    const works = rest(r.works), poets = rest(r.poets), poems = r.poems;
+    const none = !top && !works.length && !poets.length && !poems.length;
+    app.innerHTML = `
+      <div class="sr">
+        <div class="page-head"><p class="sr-label">Search</p><h1 class="page-title">“${esc(qRaw)}”</h1>
+          <p class="page-sub">${none ? "Nothing found. Try fewer words, or another spelling." :
+            [r.works.length && `${num(r.works.length)} work${r.works.length === 1 ? "" : "s"}`, r.poets.length && `${num(r.poets.length)} poet${r.poets.length === 1 ? "" : "s"}`,
+             poems.length && `${poems.length >= 400 ? "400+" : num(poems.length)} poem${poems.length === 1 ? "" : "s"}`].filter(Boolean).join(" · ")}</p></div>
+        ${topHTML}
+        ${works.length ? `<section class="sr-sec"><h2 class="section-label">Works</h2><ul class="sr-list">${works.map((e) => row(e.href, esc(e.label), esc(e.sub), esc(e.extra))).join("")}</ul></section>` : ""}
+        ${poets.length ? `<section class="sr-sec"><h2 class="section-label">Poets</h2><ul class="sr-list sr-cols">${poets.slice(0, 12).map((e) => row(e.href, esc(e.label), esc(e.sub), "")).join("")}</ul></section>` : ""}
+        ${poems.length ? `<section class="sr-sec"><h2 class="section-label">Poems</h2><ul class="sr-list" id="sr-poems">${poems.slice(0, SR_PAGE).map((p) => row(poemHref(p[2]), esc(p[0]), esc(p[1]), "")).join("")}</ul>
+          ${poems.length > SR_PAGE ? `<div class="more-row"><button class="more-btn sr-more" type="button">Show more poems</button></div>` : ""}</section>` : ""}
+      </div>`;
+    let shownP = SR_PAGE;
+    const more = app.querySelector(".sr-more");
+    if (more) more.addEventListener("click", () => {
+      const ul = document.getElementById("sr-poems");
+      ul.insertAdjacentHTML("beforeend", poems.slice(shownP, shownP + SR_PAGE).map((p) => row(poemHref(p[2]), esc(p[0]), esc(p[1]), "")).join(""));
+      shownP += SR_PAGE;
+      if (shownP >= poems.length) more.parentNode.remove();
+    });
+    restoreScroll();
+  }
+  // The top result for a work: its translations listed at once.
+  async function topWorkHTML(e) {
+    const m = /^#\/versions\/([\w-]+)$/.exec(e.href);
+    if (!m) return "";
+    await loadWorks();
+    const vs = versionsOf(m[1]);
+    if (!vs.length) return "";
+    return `
+      <section class="sr-top sr-top-work">
+        <span class="sr-top-k">${esc(vs[0].type || "Work")}</span>
+        <a class="sr-top-t" href="${esc(e.href)}">${esc(e.label)}</a>
+        <span class="sr-top-s">${esc(e.sub)} · ${esc(e.extra)}</span>
+        ${versionsListHTML(vs.slice(0, 6))}
+        ${vs.length > 6 ? `<a class="sr-top-go" href="${esc(e.href)}">All ${num(vs.length)} versions →</a>` : ""}
+      </section>`;
+  }
+  // ----- a work's translations: #/versions/<workGroup> -----
+  function versionsOf(group) {
+    return Object.values(WORKS).filter((w) => (w.workGroup || w.slug) === group)
+      .sort((a, b) => (isRecommended(b) - isRecommended(a)) || (!a.translator ? -1 : !b.translator ? 1 : (verYear(a) || "9").localeCompare(verYear(b) || "9")));
+  }
+  const versionsListHTML = (vs) => `<ol class="vs-list">${vs.map((w) => `
+      <li><a class="vs-row" href="#/work/${esc(w.slug)}">
+        <span class="vs-name">${esc(w.translator ? translatorShort(trName(w.translator)) : (w.subtitle || "Original text"))}${recBadge(w)}</span>
+        <span class="vs-meta">${esc([verYear(w) || w.year, w.sections && w.sections[0] && w.sections[0].prose ? "prose" : "verse", w.sections && w.sections.length > 1 ? `${num(w.sections.length)} books` : ""].filter(Boolean).join(" · "))}</span>
+      </a></li>`).join("")}</ol>`;
+  async function renderVersions(group) {
+    setRoute("poems", "sub");
+    app.innerHTML = `<p class="loading">Loading…</p>`;
+    const h = location.hash;
+    await loadWorks();
+    if (location.hash !== h) return;
+    const vs = versionsOf(group);
+    if (!vs.length) { app.innerHTML = `<p class="empty">This work is not in the archive.</p>`; return; }
+    if (vs.length === 1) { location.replace("#/work/" + vs[0].slug); return; }
+    const title = vs.map((w) => w.title.replace(/\s*\([^)]*\)\s*$/, "")).sort((a, b) => a.length - b.length)[0];
+    const lead = vs.find((w) => w.blurb) || vs[0];
+    setTitle(`${title} — ${lead.author}`);
+    app.innerHTML = `
+      <article class="detail vs-page">
+        <div class="detail-subject">${esc(lead.type || "Work")}</div>
+        <h1 class="detail-title">${esc(title)}</h1>
+        <p class="detail-author">by <a href="#/poet/${esc(lead.authorSlug)}">${esc(lead.author)}</a></p>
+        ${lead.blurb ? `<p class="note-block">${esc(lead.blurb)}</p>` : ""}
+        <h2 class="section-label">${num(vs.filter((w) => w.translator).length)} translations in the archive</h2>
+        ${versionsListHTML(vs)}
+        <p class="vs-tip">Each book can be read beside another translation: open a book and choose “Compare side by side”.</p>
+      </article>`;
+    restoreScroll();
+  }
+
   // ---------- global search ----------
   // Typing redraws the list 150 ms after the last key, not on every key. Typing anywhere
   // but the archive goes to it; the top bar's box takes over at once, so the reader can
@@ -2090,31 +2293,20 @@
       input.value = query;
       if (input.dataset.wired) return;          // safe to call again after a render
       input.dataset.wired = "1";
-      // A reader who reaches for the search box will need the index: it starts coming now.
-      input.addEventListener("focus", loadIndex);
-      input.addEventListener("input", (e) => {
-        query = e.target.value.trim();
-        if (query) { filterSubject = "All"; filterForm = "All"; }
-        syncSearchInput();
-        clearTimeout(searchTimer);
-        if (onArchive()) { searchTimer = setTimeout(freshList, 150); return; }
-        const bar = document.querySelector(".tb-search input");
-        if (bar && bar !== input) {
-          setRoute("poems", "sub");             // shows the top bar before the hash changes
-          bar.value = e.target.value;
-          bar.focus();
-          bar.setSelectionRange(bar.value.length, bar.value.length);
-        }
-        location.hash = "#/poems";
-      });
+      // Suggestions under the box as the reader types (attachSuggest); Enter opens the
+      // results page. Neither needs the archive index.
+      attachSuggest(input);
     });
     document.querySelectorAll("form.search-form").forEach((form) => {
       if (form.dataset.wired) return;
       form.dataset.wired = "1";
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        clearTimeout(searchTimer);
-        if (!onArchive()) location.hash = "#/poems"; else freshList();
+        const input = form.querySelector("input.search-input");
+        const v = input ? input.value.trim() : "";
+        if (!v) return;
+        if (input) input.blur();
+        location.hash = "#/search?q=" + encodeURIComponent(v);
       });
     });
   }
@@ -2230,6 +2422,14 @@
   }
   function route() {
     if (READING_NOW) { clearTimeout(readingTimer); noteReading(); READING_NOW = null; }
+    {
+      const h0 = location.hash || "", st0 = history.state && typeof history.state.y === "number" ? history.state : null;
+      let m0;
+      if ((m0 = h0.match(/^#\/search(?:\?q=(.*))?$/))) { restoreY = st0 ? st0.y : 0; jumpTo(0); renderSearch(decodeURIComponent((m0[1] || "").replace(/\+/g, " "))); return; }
+      if ((m0 = h0.match(/^#\/versions\/([\w-]+)$/))) { restoreY = st0 ? st0.y : 0; jumpTo(0); renderVersions(m0[1]); return; }
+      // an old link to the archive with a search goes to the results page
+      if ((m0 = h0.match(/^#\/poems\?(?:.*&)?q=([^&]+)/))) { location.replace("#/search?q=" + m0[1]); return; }
+    }
     if (!DATA) { routeEarly(); return; }
     const h = location.hash || "#/";
     // Back/Forward bring back the entry's saved view; anything else is a fresh visit.
