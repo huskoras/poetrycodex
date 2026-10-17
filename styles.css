@@ -1465,3 +1465,59 @@ textarea.ask-input {
 .artefact-text .artefact-credit { margin: .4rem 0 0; font-family: inherit; font-size: .74rem; }
 @media (max-width: 760px) { .artefact figcaption { grid-template-columns: minmax(0, 1fr); gap: .25rem; } .artefact-title { font-size: 1.35rem; } .artefact-actual { display: none; } }
 @media print { .artefact { display: none; } }
+
+/* Highlights: four colours that keep the text readable in both themes; a note adds a gold
+   underline. The bar appears under a selection; the pop-up edits one highlight. */
+:root { --hl-yellow: rgba(250, 214, 72, .45); --hl-green: rgba(120, 200, 120, .38); --hl-blue: rgba(110, 170, 240, .36); --hl-pink: rgba(240, 130, 170, .36); }
+:root[data-theme="dark"] { --hl-yellow: rgba(230, 190, 60, .38); --hl-green: rgba(90, 180, 100, .34); --hl-blue: rgba(90, 150, 230, .36); --hl-pink: rgba(230, 110, 160, .34); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --hl-yellow: rgba(230, 190, 60, .38); --hl-green: rgba(90, 180, 100, .34); --hl-blue: rgba(90, 150, 230, .36); --hl-pink: rgba(230, 110, 160, .34); } }
+mark.hl { color: inherit; border-radius: 2px; padding: .05em 0; cursor: pointer; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+mark.hl-yellow, .hl-swatch.hl-yellow, .hl-chip.hl-yellow { background: var(--hl-yellow); }
+mark.hl-green, .hl-swatch.hl-green, .hl-chip.hl-green { background: var(--hl-green); }
+mark.hl-blue, .hl-swatch.hl-blue, .hl-chip.hl-blue { background: var(--hl-blue); }
+mark.hl-pink, .hl-swatch.hl-pink, .hl-chip.hl-pink { background: var(--hl-pink); }
+mark.hl.has-note { text-decoration: underline; text-decoration-color: var(--gold); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.hl-bar { position: absolute; z-index: 60; display: flex; align-items: center; gap: .4rem; padding: .4rem .5rem; border-radius: 999px; background: var(--surface); border: 1px solid var(--line-strong); box-shadow: var(--shadow); }
+.hl-bar[hidden] { display: none; }
+.hl-swatch { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line-strong); cursor: pointer; padding: 0; }
+.hl-swatch[aria-pressed="true"] { outline: 2px solid var(--accent); outline-offset: 2px; }
+.hl-note-btn { margin-left: .2rem; padding: .35rem .8rem; border: none; border-radius: 999px; background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: .82rem; cursor: pointer; }
+.hl-pop { position: absolute; z-index: 61; width: min(380px, calc(100vw - 16px)); box-sizing: border-box; padding: .95rem 1.05rem; border: 1px solid var(--gold); border-radius: 12px; background: var(--surface); box-shadow: var(--shadow); }
+.hl-colors { display: flex; gap: .5rem; margin: .4rem 0 .7rem; }
+.hl-chip { display: inline-block; width: .8em; height: .8em; border-radius: 50%; margin-right: .45em; vertical-align: -.05em; }
+
+/* Study notes: the editors' glosses. A dotted gold underline marks a glossed word; the note
+   opens beside it (a sheet from the bottom on phones); all of a book's notes are listed below it. */
+.gl { cursor: pointer; text-decoration: underline dotted var(--gold); text-decoration-thickness: 2px; text-underline-offset: 4px; border-radius: 2px; }
+.gl:hover, .gl:focus-visible { background: rgba(203, 166, 80, .16); outline: none; }
+.gl-count { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .8rem; margin: 0 0 1.2rem; padding: .6rem .9rem; border-left: 3px solid var(--gold); background: rgba(203, 166, 80, .08); font-size: .86rem; color: var(--ink-soft); }
+.gl-count-label { font-size: .7rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-ink); }
+.gl-flip { padding: .3rem .8rem; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface); color: var(--ink); font-size: .8rem; cursor: pointer; }
+.gl-all { font-size: .82rem; color: var(--accent); }
+.gl-pop { position: absolute; z-index: 62; width: min(460px, calc(100vw - 16px)); max-height: 70vh; overflow: auto; box-sizing: border-box; padding: 1.1rem 1.25rem 1rem; border: 1px solid var(--gold); border-radius: 12px; background: var(--surface); box-shadow: var(--shadow); }
+.gl-pop.gl-sheet { position: fixed; left: 0; right: 0; bottom: 0; top: auto; width: auto; max-height: 72vh; border-radius: 16px 16px 0 0; }
+.gl-close { position: absolute; top: .45rem; right: .6rem; width: 32px; height: 32px; border: none; background: none; font-size: 1.4rem; line-height: 1; color: var(--ink-soft); cursor: pointer; }
+.gl-kind { margin: 0 0 .25rem; font-size: .68rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-ink); }
+.gl-title { margin: 0 2rem .3rem 0; font-family: var(--serif); font-size: 1.3rem; font-weight: 500; line-height: 1.25; color: var(--ink); }
+.gl-greek { margin: 0 0 .6rem; font-family: var(--serif); font-style: italic; color: var(--ink-soft); }
+.gl-short { margin: 0 0 .7rem; font-family: var(--serif); font-size: 1.05rem; font-weight: 500; line-height: 1.55; color: var(--ink); }
+.gl-body p { margin: 0 0 .7rem; font-family: var(--serif); font-size: 1rem; line-height: 1.65; color: var(--ink-soft); }
+.gl-see { font-size: .85rem; color: var(--ink-soft); }
+.gl-see-b { padding: 0; border: none; background: none; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; }
+.gl-src summary { cursor: pointer; font-size: .8rem; font-weight: 600; letter-spacing: .06em; color: var(--ink-soft); }
+.gl-src ul { margin: .5rem 0 0; padding-left: 1.1rem; font-size: .82rem; line-height: 1.5; color: var(--ink-soft); }
+.gl-src a { color: var(--accent); }
+.gl-list { margin: 2rem 0 1.5rem; padding-top: 1rem; border-top: 1px solid var(--gold); }
+.gl-list ol { margin: .6rem 0 0; padding-left: 1.4rem; }
+.gl-list li { margin: 0 0 .6rem; line-height: 1.45; }
+.gl-li { padding: 0; border: none; background: none; cursor: pointer; text-align: left; font: inherit; }
+.gl-li-t { font-family: var(--serif); font-size: 1.02rem; color: var(--accent); text-decoration: underline; text-decoration-color: rgba(203, 166, 80, .6); }
+.gl-li-r { font-size: .74rem; color: var(--ink-soft); }
+.gl-li-s { display: block; font-size: .86rem; color: var(--ink-soft); }
+@media print { .gl-count, .gl-pop, .hl-bar, .hl-pop { display: none; } .gl { text-decoration: none; } }
+
+/* The translation the editors recommend */
+.rec-badge { display: inline-block; margin-left: .45rem; padding: .1rem .5rem; border-radius: 999px; background: var(--gold); color: #1c2430; font-size: .64rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; vertical-align: .15em; font-family: inherit; font-style: normal; }
+.rec-line { font-size: .9rem; color: var(--ink-soft); }
+.rec-line .rec-badge { margin: 0 .4rem 0 0; }
+.pl-tr { font-size: .82em; color: var(--ink-soft); font-style: italic; }

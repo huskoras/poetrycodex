@@ -511,14 +511,17 @@
   function bindMarks(entry) {
     const root = app.querySelector(".text-solo .poem-text") || app.querySelector(".poem-text");
     MARK_CTX = root && !root.classList.contains("is-prose") && root.querySelector(".ln[data-i]") ? { entry, root } : null;
+    HL_CTX = root ? { entry, root } : null;
     hideMarkButton();
+    hideHlBar();
     if (MARK_CTX) drawMarks();
+    if (HL_CTX) { drawGlosses(entry).then(drawHighlights); }
   }
   function drawMarks() {
     const { entry, root } = MARK_CTX;
     root.querySelectorAll(".mark-dot").forEach((d) => d.remove());
     root.querySelectorAll(".ln.has-mark").forEach((l) => l.classList.remove("has-mark"));
-    marksOf(entry.id).forEach((m) => {
+    marksOf(entry.id).filter((m) => m.kind !== "hl").forEach((m) => {
       for (let i = m.a; i <= m.b; i++) {
         const l = root.querySelector(`.ln[data-i="${i}"]`);
         if (l) l.classList.add("has-mark");
@@ -572,7 +575,7 @@
     markBtn.style.left = Math.max(8, Math.min(window.scrollX + sel.rect.left, window.scrollX + width - 210)) + "px";
     markBtn.hidden = false;
   }
-  document.addEventListener("selectionchange", () => { clearTimeout(selTimer); selTimer = setTimeout(checkSelection, 220); });
+  document.addEventListener("selectionchange", () => { clearTimeout(selTimer); selTimer = setTimeout(checkHlSelection, 220); });
   // The note under the last line it covers: a new one, or one opened from its mark.
   function openMarkEditor(m, isNew) {
     if (!MARK_CTX) return;
@@ -613,11 +616,278 @@
     return rows.sort((x, y) => String(y.m.updated).localeCompare(String(x.m.updated)));
   }
   const markRowHTML = ({ id, g, m }) => `
-      <li class="mark-row">
-        <p class="mark-row-quote">\u201c${esc(m.quote)}\u201d</p>
-        <p class="mark-row-note">${esc(m.text)}</p>
+      <li class="mark-row${m.kind === "hl" ? " is-hl" : ""}">
+        <p class="mark-row-quote">${m.kind === "hl" ? `<span class="hl-chip hl-${esc(HL_COLORS.includes(m.color) ? m.color : "yellow")}"></span>` : ""}\u201c${esc(m.quote)}\u201d</p>
+        ${m.text ? `<p class="mark-row-note">${esc(m.text)}</p>` : ""}
         <p class="mark-row-src"><a href="${esc(routeFor(id))}">${esc(g.title || "")}</a>${g.author ? ` \u00b7 ${esc(g.author)}` : ""} \u00b7 ${esc(writtenLine(m))}</p>
       </li>`;
+
+  // ---------- highlights: coloured, with an optional note, on any text ----------
+  // Select words in a poem or a book of a long work (verse or prose) and a small bar offers
+  // four colours and a note. Kept with the line notes (pc-marks, synced to the account) as
+  // items {id, kind: "hl", s, e (character offsets in the text), quote, color, text}; a: -1
+  // keeps them out of the line-note drawing of older copies of this script.
+  const HL_COLORS = ["yellow", "green", "blue", "pink"];
+  const HL_NAMES = { yellow: "Yellow", green: "Green", blue: "Blue", pink: "Pink" };
+  let HL_CTX = null, hlBar = null, hlPop = null;
+  const hlOf = (id) => marksOf(id).filter((m) => m.kind === "hl");
+  function putHighlight(entry, h, remove) {
+    const marks = allMarks();
+    const g = marks[entry.id] || { title: entry.title, author: entry.author, kind: entry.kind, translator: entry.translator || "", items: [] };
+    g.items = (g.items || []).filter((x) => x.id !== h.id);
+    const now = new Date().toISOString();
+    if (!remove) g.items.push({ id: h.id, kind: "hl", a: -1, s: h.s, e: h.e, quote: String(h.quote || "").slice(0, 600),
+      color: HL_COLORS.includes(h.color) ? h.color : "yellow", text: String(h.text || "").slice(0, MARK_MAX),
+      created: h.created || now, updated: now });
+    if (g.items.length) marks[entry.id] = g; else delete marks[entry.id];
+    writeStore(MARKS_KEY, { v: 1, marks });
+    updateShelfNav();
+  }
+  // The text nodes of the text on screen with their offsets (pop-ups and buttons left out).
+  function hlNodes(root) {
+    const nodes = []; let pos = 0;
+    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: (n) =>
+      n.parentElement && n.parentElement.closest(".mark-pop, .mark-dot") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+    for (let n = w.nextNode(); n; n = w.nextNode()) { nodes.push({ n, s: pos }); pos += n.nodeValue.length; }
+    return nodes;
+  }
+  function pointOffset(nodes, container, offset) {
+    if (container.nodeType === 3) { const f = nodes.find((x) => x.n === container); if (f) return f.s + offset; }
+    const r = document.createRange(); r.setStart(container, offset);
+    const f = nodes.find((x) => r.comparePoint(x.n, 0) >= 0);
+    return f ? f.s : (nodes.length ? nodes[nodes.length - 1].s + nodes[nodes.length - 1].n.nodeValue.length : 0);
+  }
+  function wrapSpan(nodes, s, e, make) {
+    nodes.forEach(({ n, s: ns }) => {
+      const ne = ns + n.nodeValue.length;
+      if (ne <= s || ns >= e) return;
+      let node = n; const a = Math.max(s, ns) - ns, b = Math.min(e, ne) - ns;
+      if (b < node.nodeValue.length) node.splitText(b);
+      if (a > 0) node = node.splitText(a);
+      if (!node.nodeValue.trim()) return;
+      const m = make(); node.parentNode.insertBefore(m, node); m.appendChild(node);
+    });
+  }
+  function drawHighlights() {
+    if (!HL_CTX || !HL_CTX.root.isConnected) return;
+    const { entry, root } = HL_CTX;
+    root.querySelectorAll("mark.hl").forEach((m) => m.replaceWith(...m.childNodes));
+    root.normalize();
+    const norm = (t) => t.replace(/\s+/g, " ").trim();
+    hlOf(entry.id).forEach((h) => {
+      const nodes = hlNodes(root);
+      const full = nodes.map((x) => x.n.nodeValue).join("");
+      let s = h.s, e = h.e;
+      const q = norm(String(h.quote || ""));
+      if (!(e > s) || norm(full.slice(s, e)) !== q) {          // the text has moved: find the words again
+        const at = q ? full.indexOf(q.slice(0, 80)) : -1;
+        if (at < 0) return;
+        s = at; e = at + q.length;
+      }
+      wrapSpan(nodes, s, e, () => {
+        const m = document.createElement("mark");
+        m.className = "hl hl-" + (HL_COLORS.includes(h.color) ? h.color : "yellow") + (h.text ? " has-note" : "");
+        m.dataset.hl = h.id;
+        if (h.text) m.title = "Your note: " + h.text.slice(0, 120);
+        return m;
+      });
+    });
+  }
+  function hideHlBar() { if (hlBar) hlBar.hidden = true; }
+  function hlSelection() {
+    if (!HL_CTX || !HL_CTX.root.isConnected) return null;
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || !sel.rangeCount) return null;
+    const r = sel.getRangeAt(0), root = HL_CTX.root;
+    if (!root.contains(r.startContainer) || !root.contains(r.endContainer)) return null;
+    if (!sel.toString().trim()) return null;
+    const nodes = hlNodes(root);
+    let s = pointOffset(nodes, r.startContainer, r.startOffset), e = pointOffset(nodes, r.endContainer, r.endOffset);
+    const full = nodes.map((x) => x.n.nodeValue).join("");
+    while (s < e && /\s/.test(full[s])) s++;
+    while (e > s && /\s/.test(full[e - 1])) e--;
+    if (e <= s) return null;
+    return { s, e, quote: full.slice(s, e).replace(/\s+/g, " ").trim().slice(0, 600), rect: r.getBoundingClientRect() };
+  }
+  function checkHlSelection() {
+    const sel = hlSelection();
+    if (!sel) { hideHlBar(); return; }
+    if (!hlBar) {
+      hlBar = document.createElement("div");
+      hlBar.className = "hl-bar";
+      hlBar.setAttribute("role", "toolbar");
+      hlBar.setAttribute("aria-label", "Highlight");
+      hlBar.innerHTML = HL_COLORS.map((c) => `<button type="button" class="hl-swatch hl-${c}" data-c="${c}" aria-label="Highlight in ${HL_NAMES[c].toLowerCase()}" title="${HL_NAMES[c]}"></button>`).join("")
+        + `<button type="button" class="hl-note-btn" data-c="note">Note</button>`;
+      hlBar.addEventListener("mousedown", (e) => e.preventDefault());   // keeps the selection
+      hlBar.addEventListener("click", (e) => {
+        const b = e.target.closest("button"); if (!b || !HL_CTX) return;
+        const got = hlSelection() || hlBar.sel; hideHlBar();
+        if (!got) return;
+        const h = { id: "h" + Date.now().toString(36), s: got.s, e: got.e, quote: got.quote, color: b.dataset.c === "note" ? "yellow" : b.dataset.c, text: "" };
+        putHighlight(HL_CTX.entry, h);
+        window.getSelection().removeAllRanges();
+        drawHighlights();
+        if (b.dataset.c === "note") openHlPop(h, true);
+      });
+      document.body.appendChild(hlBar);
+    }
+    hlBar.sel = sel;
+    const width = document.documentElement.clientWidth;
+    hlBar.style.top = (window.scrollY + sel.rect.bottom + 10) + "px";
+    hlBar.style.left = Math.max(8, Math.min(window.scrollX + sel.rect.left, window.scrollX + width - 230)) + "px";
+    hlBar.hidden = false;
+  }
+  // A highlight clicked (or just made with "Note"): its colour, its note, or remove it.
+  function openHlPop(h, focusNote) {
+    if (!HL_CTX) return;
+    closeHlPop();
+    const el = HL_CTX.root.querySelector(`mark.hl[data-hl="${h.id}"]`);
+    if (!el) return;
+    hlPop = document.createElement("div");
+    hlPop.className = "hl-pop";
+    hlPop.innerHTML = `
+      <p class="mark-quote">“${esc(h.quote.length > 160 ? h.quote.slice(0, 160) + "…" : h.quote)}”</p>
+      <div class="hl-colors">${HL_COLORS.map((c) => `<button type="button" class="hl-swatch hl-${c}" data-c="${c}" aria-pressed="${h.color === c}" aria-label="${HL_NAMES[c]}"></button>`).join("")}</div>
+      <textarea class="mark-input" rows="3" maxlength="${MARK_MAX}" aria-label="Your note" placeholder="A note on these words…">${esc(h.text || "")}</textarea>
+      <div class="mark-actions">
+        <button type="button" class="mark-save">Save</button>
+        <button type="button" class="mark-cancel">Close</button>
+        <button type="button" class="mark-delete">Remove highlight</button>
+        <span class="mark-where">${signedIn() ? "Private: kept in your account" : "Private: kept in this browser"}</span>
+      </div>`;
+    document.body.appendChild(hlPop);
+    const r = el.getBoundingClientRect(), width = document.documentElement.clientWidth;
+    hlPop.style.top = (window.scrollY + r.bottom + 8) + "px";
+    hlPop.style.left = Math.max(8, Math.min(window.scrollX + r.left, window.scrollX + width - Math.min(380, width - 16) - 8)) + "px";
+    const input = hlPop.querySelector(".mark-input");
+    if (focusNote) input.focus();
+    let color = h.color;
+    hlPop.querySelectorAll(".hl-colors button").forEach((b) => b.addEventListener("click", () => {
+      color = b.dataset.c;
+      hlPop.querySelectorAll(".hl-colors button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      putHighlight(HL_CTX.entry, Object.assign({}, h, { color, text: input.value })); drawHighlights();
+    }));
+    hlPop.querySelector(".mark-save").addEventListener("click", () => { putHighlight(HL_CTX.entry, Object.assign({}, h, { color, text: input.value })); closeHlPop(); drawHighlights(); });
+    hlPop.querySelector(".mark-cancel").addEventListener("click", closeHlPop);
+    hlPop.querySelector(".mark-delete").addEventListener("click", () => { putHighlight(HL_CTX.entry, h, true); closeHlPop(); drawHighlights(); });
+  }
+  function closeHlPop() { if (hlPop) { hlPop.remove(); hlPop = null; } }
+
+  // ---------- study notes: the editors' glosses on a work ----------
+  // For the works in GLOSSED, data/glosses/<slug>/<book>.json holds the notes on that book:
+  // [{id, anchor, occurrence, kind, title, greek, ref, short, body, sources: [{cite, url}], see}].
+  // Each anchor is underlined in the text; a click opens the note. Readers can hide them.
+  const GLOSSED = new Set(["iliad-murray", "paradise-lost"]);
+  const GLOSS_OFF_KEY = "pc-gloss-off";
+  const glossOff = () => { try { return localStorage.getItem(GLOSS_OFF_KEY) === "1"; } catch (e) { return false; } };
+  const GLOSS_CACHE = {};
+  let GLOSS_NOW = null, glPop = null;
+  function glossKey(entry) {
+    const m = /^work:([^/]+)\/(\d+)$/.exec((entry && entry.id) || "");
+    return m && GLOSSED.has(m[1]) ? { slug: m[1], i: +m[2] } : null;
+  }
+  async function drawGlosses(entry) {
+    GLOSS_NOW = null;
+    const k = glossKey(entry);
+    if (!k || !HL_CTX) return;
+    const url = `data/glosses/${k.slug}/${k.i}.json`;
+    const notes = await (GLOSS_CACHE[url] || (GLOSS_CACHE[url] = fetch(url).then((r) => r.ok ? r.json() : []).catch(() => [])));
+    if (!HL_CTX || HL_CTX.entry !== entry || !HL_CTX.root.isConnected || !Array.isArray(notes) || !notes.length) return;
+    const root = HL_CTX.root;
+    GLOSS_NOW = { notes, byId: new Map(notes.map((n) => [n.id, n])) };
+    const on = !glossOff();
+    if (on) {
+      notes.forEach((g) => {
+        if (!g.anchor) return;
+        const nodes = hlNodes(root);
+        const full = nodes.map((x) => x.n.nodeValue).join("");
+        let at = -1;
+        for (let c = 0; c < (g.occurrence || 1); c++) { at = full.indexOf(g.anchor, at + 1); if (at < 0) break; }
+        if (at < 0) return;
+        const end = at + g.anchor.length;
+        if (nodes.some(({ n, s }) => s < end && s + n.nodeValue.length > at && n.parentElement.closest(".gl"))) return;
+        wrapSpan(nodes, at, end, () => {
+          const b = document.createElement("span");
+          b.className = "gl"; b.dataset.g = g.id; b.tabIndex = 0; b.setAttribute("role", "button");
+          b.setAttribute("aria-label", "Study note: " + g.title);
+          return b;
+        });
+      });
+    }
+    const bar = document.createElement("div");
+    bar.className = "gl-count";
+    bar.innerHTML = `<span class="gl-count-label">Study notes</span> <span>${num(notes.length)} note${notes.length === 1 ? "" : "s"} on this book by the editors${on ? ": click an underlined word" : ""}.</span>
+      <button type="button" class="gl-flip" aria-pressed="${on}">${on ? "Hide them" : "Show them"}</button>
+      <a class="gl-all" href="#gl-list">All notes ↓</a>`;
+    root.before(bar);
+    bar.querySelector(".gl-all").addEventListener("click", (e) => { e.preventDefault(); document.getElementById("gl-list").scrollIntoView({ behavior: "smooth" }); });
+    bar.querySelector(".gl-flip").addEventListener("click", () => {
+      try { localStorage.setItem(GLOSS_OFF_KEY, on ? "1" : "0"); } catch (e) { /* this visit only */ }
+      const y = window.scrollY; window.dispatchEvent(new HashChangeEvent("hashchange")); setTimeout(() => window.scrollTo(0, y), 60);
+    });
+    const list = document.createElement("section");
+    list.className = "gl-list"; list.id = "gl-list";
+    list.innerHTML = `<h2 class="section-label">Study notes on this book</h2><ol>${notes.map((g) =>
+      `<li><button type="button" class="gl-li" data-g="${esc(g.id)}"><span class="gl-li-t">${esc(g.title)}</span>${g.ref ? ` <span class="gl-li-r">${esc(g.ref)}</span>` : ""}</button><span class="gl-li-s">${esc(g.short || "")}</span></li>`).join("")}</ol>`;
+    root.after(list);
+    list.querySelectorAll(".gl-li").forEach((b) => b.addEventListener("click", () => openGloss(b.dataset.g, b)));
+  }
+  function openGloss(id, el) {
+    if (!GLOSS_NOW) return;
+    const g = GLOSS_NOW.byId.get(id);
+    if (!g) return;
+    closeGloss();
+    glPop = document.createElement("aside");
+    glPop.className = "gl-pop";
+    glPop.setAttribute("role", "dialog");
+    glPop.setAttribute("aria-label", "Study note: " + g.title);
+    const see = (g.see || []).map((x) => GLOSS_NOW.byId.get(x)).filter(Boolean);
+    glPop.innerHTML = `
+      <button type="button" class="gl-close" aria-label="Close">×</button>
+      <p class="gl-kind">${esc(g.kind || "note")}${g.ref ? ` · ${esc(g.ref)}` : ""}</p>
+      <h3 class="gl-title">${esc(g.title)}</h3>
+      ${g.greek ? `<p class="gl-greek">${esc(g.greek)}</p>` : ""}
+      ${g.short ? `<p class="gl-short">${esc(g.short)}</p>` : ""}
+      <div class="gl-body">${String(g.body || "").split(/\n\s*\n/).map((t) => `<p>${esc(t)}</p>`).join("")}</div>
+      ${see.length ? `<p class="gl-see">See also: ${see.map((x) => `<button type="button" class="gl-see-b" data-g="${esc(x.id)}">${esc(x.title)}</button>`).join(", ")}</p>` : ""}
+      ${(g.sources || []).length ? `<details class="gl-src"><summary>Sources</summary><ul>${g.sources.map((x) =>
+        `<li>${x.url ? `<a href="${esc(x.url)}" rel="noopener" target="_blank">${esc(x.cite)}</a>` : esc(x.cite)}</li>`).join("")}</ul></details>` : ""}`;
+    document.body.appendChild(glPop);
+    if (window.matchMedia("(max-width: 760px)").matches) glPop.classList.add("gl-sheet");
+    else {
+      const r = el.getBoundingClientRect(), width = document.documentElement.clientWidth;
+      glPop.style.top = (window.scrollY + r.bottom + 8) + "px";
+      glPop.style.left = Math.max(8, Math.min(window.scrollX + r.left - 20, window.scrollX + width - Math.min(460, width - 16) - 8)) + "px";
+    }
+    glPop.querySelector(".gl-close").addEventListener("click", closeGloss);
+    glPop.querySelectorAll(".gl-see-b").forEach((b) => b.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const t = HL_CTX && HL_CTX.root.querySelector(`.gl[data-g="${b.dataset.g}"]`);
+      if (t) t.scrollIntoView({ block: "center" });
+      openGloss(b.dataset.g, t || el);
+    }));
+  }
+  function closeGloss() { if (glPop) { glPop.remove(); glPop = null; } }
+  document.addEventListener("click", (e) => {
+    const t = e.target.closest ? e.target : e.target.parentElement;
+    if (!t) return;
+    const m = t.closest("mark.hl");
+    if (m && HL_CTX && HL_CTX.root.contains(m) && window.getSelection().isCollapsed) {
+      const h = hlOf(HL_CTX.entry.id).find((x) => x.id === m.dataset.hl);
+      if (h) { e.preventDefault(); closeGloss(); openHlPop(h); return; }
+    }
+    if (hlPop && !hlPop.contains(t)) closeHlPop();
+    const g = t.closest(".gl[data-g]");
+    if (g && window.getSelection().isCollapsed) { openGloss(g.dataset.g, g); return; }
+    if (glPop && !glPop.contains(t) && !t.closest(".gl-li, .gl-see-b")) closeGloss();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { closeGloss(); closeHlPop(); }
+    const g = e.target.closest && e.target.closest(".gl[data-g]");
+    if (g && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openGloss(g.dataset.g, g); }
+  });
+  window.addEventListener("hashchange", () => { closeHlPop(); hideHlBar(); closeGloss(); });
 
   // ---------- the reader's readings with the Codex ----------
   // Each reading, answer, gloss or comparison the engine writes for this reader is kept (the
@@ -2418,9 +2688,14 @@
       .map((s) => s.replace(/,?\s+(?:Jr|Sr)\.?$/, "").split(/\s+/).pop());
     return parts.length > 1 ? parts.slice(0, -1).join(", ") + " and " + parts[parts.length - 1] : parts[0] || t;
   }
+  // The translation the editors recommend for a first reading (the owner's choice, 17 Oct
+  // 2026): listed first, with a badge, wherever the translations of that work are listed.
+  const RECOMMENDED = { iliad: "iliad-murray" };
+  const isRecommended = (w) => !!w && !!w.workGroup && RECOMMENDED[w.workGroup] === w.slug;
+  const recBadge = (w) => isRecommended(w) ? ` <span class="rec-badge">Recommended</span>` : "";
   function epicCardHTML(ws) {
     if (ws.length === 1) return workCardHTML(ws[0]);
-    const vs = ws.slice().sort((a, b) => (!a.translator ? -1 : !b.translator ? 1 : (verYear(a) || "9").localeCompare(verYear(b) || "9")));
+    const vs = ws.slice().sort((a, b) => (isRecommended(b) - isRecommended(a)) || (!a.translator ? -1 : !b.translator ? 1 : (verYear(a) || "9").localeCompare(verYear(b) || "9")));
     const title = vs.map((w) => w.title.replace(/\s*\([^)]*\)\s*$/, "")).sort((a, b) => a.length - b.length)[0];
     const lead = vs.find((w) => w.translator) || vs[0];
     const nTr = vs.filter((w) => w.translator).length;
@@ -2431,7 +2706,7 @@
       <h2 class="card-title"><a href="#/work/${esc(lead.slug)}">${esc(title)}</a></h2>
       <div class="card-author">${esc(lead.author)}</div>
       <ul class="epic-versions">${vs.map((w) => `
-        <li><a href="#/work/${esc(w.slug)}"${w.translator ? "" : langAttr(w.authorSlug, "")}>${esc(verNames(w))}${verYear(w) ? ` <span class="ev-year">${esc(verYear(w))}</span>` : ""}</a></li>`).join("")}
+        <li><a href="#/work/${esc(w.slug)}"${w.translator ? "" : langAttr(w.authorSlug, "")}>${esc(verNames(w))}${verYear(w) ? ` <span class="ev-year">${esc(verYear(w))}</span>` : ""}</a>${recBadge(w)}</li>`).join("")}
       </ul>
     </div>`;
   }
@@ -2718,7 +2993,8 @@
     const poet = POETS[slug];
     if (!poet) { location.hash = "#/poets"; return; }
     const poems = DATA.poems.filter((p) => p.authorSlug === slug);
-    const works = (DATA.works || []).filter((w) => w.authorSlug === slug);
+    const works = (DATA.works || []).filter((w) => w.authorSlug === slug)
+      .map((w, k) => [w, k]).sort((a, b) => (isRecommended(b[0]) - isRecommended(a[0])) || a[1] - b[1]).map((x) => x[0]);
     setTitle(poet.name);
     const started = works.filter((w) => readingOf(w.slug))
       .sort((a, b) => String(readingOf(b.slug).at).localeCompare(String(readingOf(a.slug).at)));
@@ -2729,7 +3005,7 @@
           <h2>Major Works</h2>
           <ul class="poem-links">
             ${works.map((w) => `
-              <li><a href="#/work/${esc(w.slug)}"><span class="pl-title">${esc(w.title)}</span><span class="pl-sub">${esc(w.type)} · ${esc(w.year)} · ${num(w.sections.length)} part${w.sections.length === 1 ? "" : "s"}</span></a></li>`).join("")}
+              <li><a href="#/work/${esc(w.slug)}"><span class="pl-title">${esc(w.title)}${w.translator ? ` <span class="pl-tr">${esc(translatorShort(trName(w.translator)))}</span>` : ""}${recBadge(w)}</span><span class="pl-sub">${esc(w.type)} · ${esc(w.year)} · ${num(w.sections.length)} part${w.sections.length === 1 ? "" : "s"}</span></a></li>`).join("")}
           </ul>
         </section>` : "";
     app.innerHTML = `
@@ -2814,8 +3090,8 @@
       const rows = others.map((o) => {
         const j = matchingPart(w, o, i);
         return j >= 0
-          ? `<li><a href="#/work/${esc(o.slug)}/${j}">${esc(verLabel(o))}</a> <a class="also-cmp" href="#/work/${esc(w.slug)}/${i}/with/${esc(o.slug)}">compare</a></li>`
-          : `<li><a href="#/work/${esc(o.slug)}">${esc(verLabel(o))} →</a></li>`;
+          ? `<li><a href="#/work/${esc(o.slug)}/${j}">${esc(verLabel(o))}</a>${recBadge(o)} <a class="also-cmp" href="#/work/${esc(w.slug)}/${i}/with/${esc(o.slug)}">compare</a></li>`
+          : `<li><a href="#/work/${esc(o.slug)}">${esc(verLabel(o))} →</a>${recBadge(o)}</li>`;
       }).join("");
       return `
       <details class="also-tr also-fold">
@@ -2831,7 +3107,7 @@
           return `<p class="also-row">${j >= 0
             ? `<a href="#/work/${esc(o.slug)}/${j}">${esc(verLabel(o))} · ${esc(o.sections[j].title)}</a>
                <a class="compare-btn" href="#/work/${esc(w.slug)}/${i}/with/${esc(o.slug)}">Compare side by side</a>`
-            : `<a href="#/work/${esc(o.slug)}">${esc(verLabel(o))} →</a>`}</p>`;
+            : `<a href="#/work/${esc(o.slug)}">${esc(verLabel(o))} →</a>${recBadge(o)}`}</p>`;
         }).join("")}
       </div>`;
   }
@@ -2849,6 +3125,7 @@
         ${w.subtitle ? `<p class="work-subtitle">${esc(w.subtitle)}</p>` : ""}
         <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
         ${sourceLine(w.translator)}
+        ${isRecommended(w) ? `<p class="rec-line"><span class="rec-badge">Recommended</span> The translation we recommend for a first reading and for study: faithful line by line to the Greek, plain and clear.</p>` : ""}
         ${w.blurb ? `<p class="note-block">${esc(w.blurb)}</p>` : ""}
         ${otherTrHTML(w)}
         ${place ? `<div class="continue-wrap">${continueHTML(w)}
