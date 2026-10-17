@@ -20,6 +20,8 @@ def fold(s):
     return re.sub(r"[^a-z0-9]+", " ", s).strip()
 
 
+# Windows cannot make files with these names: they get a trailing "_" (as in app.js sgShard).
+RESERVED = {"con", "prn", "aux", "nul"}
 STOP = set("the and for from with that this into upon unto your thou thee thy his her our their its was are not but all who what when where which".split())
 
 
@@ -59,8 +61,9 @@ def main():
             shards.setdefault(k, []).append([p["title"], poets.get(p["id"].rsplit("/", 1)[0], {}).get("name", ""), p["id"]])
     old = set(os.listdir(os.path.join(OUT, "p")))
     for k, rows in shards.items():
-        io.open(os.path.join(OUT, "p", k + ".json"), "w", encoding="utf-8").write(json.dumps(rows, ensure_ascii=False, separators=(",", ":")))
-        old.discard(k + ".json")
+        name = k + ("_" if k in RESERVED else "") + ".json"
+        io.open(os.path.join(OUT, "p", name), "w", encoding="utf-8").write(json.dumps(rows, ensure_ascii=False, separators=(",", ":")))
+        old.discard(name)
     for f in old:
         os.remove(os.path.join(OUT, "p", f))
     size = os.path.getsize(os.path.join(OUT, "core.json"))

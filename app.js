@@ -2090,7 +2090,7 @@
       .then((rows) => rows.map(([k, label, sub, href, weight, extra]) => ({ k, label, sub, href, weight, extra, f: sgFold(label), full: fold(label) }))));
   }
   function sgShard(key) {
-    return SG_SHARDS[key] || (SG_SHARDS[key] = fetch(`data/suggest/p/${key}.json`).then((r) => r.ok ? r.json() : []).catch(() => []));
+    return SG_SHARDS[key] || (SG_SHARDS[key] = fetch(`data/suggest/p/${key}${["con", "prn", "aux", "nul"].includes(key) ? "_" : ""}.json`).then((r) => r.ok ? r.json() : []).catch(() => []));
   }
   const sgWords = (q) => fold(q).split(" ").filter(Boolean);
   // Every word of the search begins a word of the text ("grec ur" finds "Ode on a Grecian Urn").
