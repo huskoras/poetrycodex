@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">   Chirrups of the trot afield,</span><br><span class="ln">   Hurrahs of the battle-charge,</span><br><span class="ln">   How they answered, how they pealed,</span><br><span class="ln">   When the morning rose and drew</span><br><span class="ln">   Bow and javelin, lance and targe,</span><br><span class="ln">   In the nuptial casement’s view!</span><br><span class="ln">      Attila, my Attila!</span><br><span class="ln">   Down the hillspurs, out of tents</span><br><span class="ln">   Glimmering in mid-forest, through</span><br><span class="ln">   Mists of the cool morning scents,</span><br><span class="ln">   Forth from city-alley, court,</span><br><span class="ln">   Arch, the bounding horsemen flew,</span><br><span class="ln">   Joined along the plains of dew,</span><br><span class="ln">   Raced and gave the rein to sport,</span><br><span class="ln">   Closed and streamed like curtain-rents</span><br><span class="ln">   Fluttered by a wind, and flowed</span><br><span class="ln">   Into squadrons: trumpets blew,</span><br><span class="ln">   Chargers neighed, and trappings glowed</span><br><span class="ln">   Brave as the bright Orient’s.</span><br><span class="ln">   Look on the seas that run to greet</span><br><span class="ln">   Sunrise: look on the leagues of wheat:</span><br><span class="ln">   Look on the lines and squares that fret</span><br><span class="ln">   Leaping to level the lance blood-wet.</span><br><span class="ln">   Tens of thousands, man and steed,</span><br><span class="ln">   Tossing like field-flowers in Spring;</span><br><span class="ln">   Ready to be hurled at need</span><br><span class="ln">   Whither their great lord may sling.</span><br><span class="ln">   Finger Romeward, Romeward, King!</span><br><span class="ln">      Attila, my Attila!</span><br><span class="ln">   Still the woman holds him fast</span><br><span class="ln">   As a night-flag round the mast.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> George Meredith, <i>Poems</i>, Vol. II, Surrey Edition (London: The Times Book Club, 1912). Digital text: <a href="https://www.gutenberg.org/ebooks/1382" rel="noopener">Project Gutenberg 1382</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/meredith/151">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/meredith/150/">← The Nuptials of Attila: XVII</a><a class="pn next" href="/poem/meredith/152/">The Nuptials of Attila: XIX →</a></nav>
+      <section class="poet-poems more-by"><h2>More by George Meredith</h2><ul class="poem-links"><li><a href="/poem/meredith/36/"><span class="pl-title">Autumn Even-song</span></a></li><li><a href="/poem/meredith/110/"><span class="pl-title">The Day of the Daughter of Hades: VIII</span></a></li><li><a href="/poem/meredith/187/"><span class="pl-title">Jump-to-Glory Jane: XXIX</span></a></li><li><a href="/poem/meredith/261/"><span class="pl-title">Song</span></a></li><li><a href="/poem/meredith/335/"><span class="pl-title">Periander</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

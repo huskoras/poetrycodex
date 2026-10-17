@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -50,7 +51,7 @@
 <p class="stanza"><span class="ln">Saviour and Lord of all,</span><br><span class="ln">Thy proffer we receive.</span><br><span class="ln">Obedient to Thy gospel-call.</span><br><span class="ln">That bids us turn and live;</span><br><span class="ln">Our former years mis-spent,</span><br><span class="ln">Though late, we deeply mourn,</span><br><span class="ln">And soften&#x27;d by Thy grace, repent,</span><br><span class="ln">And to Thy arms return.</span><br><span class="ln">With fear, and grief, and shame,</span><br><span class="ln">Our folly we bemoan;</span><br><span class="ln">But wonder at the patient Lamb,</span><br><span class="ln">Who lets us still alone:</span><br><span class="ln">Thy patience lifts us up.</span><br><span class="ln">Thy free unbounded grace.</span><br><span class="ln">And all our fear is lost in hope,</span><br><span class="ln">And all our grief in praise.</span><br></p>
 <p class="stanza"><span class="ln">To Thee, by whom we live,</span><br><span class="ln">Our praise and lives we pay.</span><br><span class="ln">Praise, ardent, cordial, constant give,</span><br><span class="ln">And shout to see the day:</span><br><span class="ln">The day of saving grace,</span><br><span class="ln">Thy consecrated year,</span><br><span class="ln">When the bright Sun of Righteousness</span><br><span class="ln">Doth to our world appear.</span><br><span class="ln">Compare Young, &quot;Night Thoughts,&quot; Night iv., line 341.</span><br><span class="ln">Risen, we know, Thou art.</span><br><span class="ln">With healing in Thy wings,</span><br><span class="ln">We feel, we fejl it in our heart</span><br><span class="ln">The Hfe Thy presence brings!</span><br><span class="ln">The seal and earnest this,</span><br><span class="ln">Our pardon we receive.</span><br><span class="ln">And look with Thee in glorious bliss</span><br><span class="ln">Eternally to live.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Charles Wesley, <i>The Poetical Works of John and Charles Wesley</i>, Vol. VI (London: Wesleyan-Methodist Conference Office, 1870). Digital text: <a href="https://archive.org/details/poeticalworksofj0006wesl" rel="noopener">Internet Archive poeticalworksofj0006wesl</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -62,6 +63,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/wesley_c/1299">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/wesley_c/1298/">← Hymns for New-Year&#x27;s-Day, 1</a><a class="pn next" href="/poem/wesley_c/1300/">Hymns for New-Year&#x27;s-Day, 3 →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Charles Wesley</h2><ul class="poem-links"><li><a href="/poem/wesley_c/698/"><span class="pl-title">Hymns for the Nativity of Our Lord, 13</span></a></li><li><a href="/poem/wesley_c/2136/"><span class="pl-title">Psalm 66</span></a></li><li><a href="/poem/wesley_c/3570/"><span class="pl-title">Isaiah 64:8: We are the clay, and Thou our Potter</span></a></li><li><a href="/poem/wesley_c/5004/"><span class="pl-title">Luke 1:46, 47: An humble saint will never praise</span></a></li><li><a href="/poem/wesley_c/6439/"><span class="pl-title">Acts 14:4: But the multitude of the city was divided, &amp;c</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

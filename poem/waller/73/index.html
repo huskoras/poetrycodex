@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">THrice happy pair of whom we cannot kno…</span><br><span class="ln">Which first began to love, or loves most now</span><br><span class="ln">Fair course of passion where two Lovers …,</span><br><span class="ln">And run together, …</span><br><span class="ln">Successful Youth, whom Love has taught the way</span><br><span class="ln">To be victorious in the first Essay.</span><br><span class="ln">Sure Love&#x27;s an Art best practised at first,</span><br><span class="ln">And where th&#x27;experienc&#x27;d still prosper worst;</span><br><span class="ln">I with a different Fate pursu&#x27;d in vain</span><br><span class="ln">The haughty Calia, till my just disdain</span><br><span class="ln">Of her neglect, above that passion born,</span><br><span class="ln">Did pride to pride oppose, and scorn to scorn,</span><br><span class="ln">Now she relents, but all too late to move</span><br><span class="ln">A heart directed to a Nobler love;</span><br><span class="ln">The scales are turn&#x27;d, her kindness weighs no more,</span><br><span class="ln">Now, than my vows and service did before:</span><br><span class="ln">So in some well wrought hangings you may see</span><br><span class="ln">How Hector leads, and how the Grecians flee;</span><br><span class="ln">…ere the fierce Mars his courage so inspires▪</span><br><span class="ln">…hat with bold hands the Argive Fleet he fires;</span><br><span class="ln">… there from Heaven the blew ey&#x27;d Virgin falls</span><br><span class="ln">…nd frighted Tro… retires within her Walls.</span><br><span class="ln">They that are foremost in that bloody Race</span><br><span class="ln">Turn head anon, and give the Conqu&#x27;rors chace▪</span><br><span class="ln">So like the chances are of Love and War,</span><br><span class="ln">That they alone in this distinguish&#x27;d are:</span><br><span class="ln">In love the victors from the vanquish&#x27;d flie,</span><br><span class="ln">They flie that wound, and they pursue that die.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Edmund Waller, <i>Poems, &amp;c. Written upon Several Occasions, and to Several Persons</i> (London: H. Herringman (sold by J. Knight and F. Saunders), 1686). Digital text: <a href="https://quod.lib.umich.edu/e/eebo/A67346.0001.001" rel="noopener">EEBO-TCP A67346</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/waller/73">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/waller/72/">← In Answer Of Sir John Suckling&#x27;s Verses.</a><a class="pn next" href="/poem/waller/74/">An Apology for having loved before, →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Edmund Waller</h2><ul class="poem-links"><li><a href="/poem/waller/22/"><span class="pl-title">Of Loving at first sight.</span></a></li><li><a href="/poem/waller/53/"><span class="pl-title">To my Lord of Northumberland upon the death of his Lady.</span></a></li><li><a href="/poem/waller/86/"><span class="pl-title">Of a War with Spain, and a Fight at Sea.</span></a></li><li><a href="/poem/waller/117/"><span class="pl-title">CANTO II.</span></a></li><li><a href="/poem/waller/147/"><span class="pl-title">Translated Out of French.</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

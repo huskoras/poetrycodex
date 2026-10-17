@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">Cousin, I hope each Star when you was born,</span><br><span class="ln">Did Heaven with a benign aspect adorn:</span><br><span class="ln">And every glistering jewel of the sky</span><br><span class="ln">Dispense their Good to your Nativity.</span><br><span class="ln">You being sweet-condition&#x27;d, having mov&#x27;d</span><br><span class="ln">All men to honour you (so well belov&#x27;d)</span><br><span class="ln">Nobly descended, bred to all the Arts</span><br><span class="ln">That give a man renown for worthy parts;</span><br><span class="ln">To a great fortune heir, and a brave seat,</span><br><span class="ln">(For what then Rushton can be held more sweet!)</span><br><span class="ln">Married to a fine Lady, the first day</span><br><span class="ln">Of her youths spring (whose ripe and flourishing May</span><br><span class="ln">Of Beauty, still is years to come; yet she</span><br><span class="ln">Handsome as fancy can think woman t&#x27;be)</span><br><span class="ln">Inheritrix unto a grand estate,</span><br><span class="ln">(And yet her excellent vertues far more great)</span><br><span class="ln">We needs must guess the Heavens your friend, and know</span><br><span class="ln">(Y&#x27;ave so much Land upon&#x27;t) the earth is so.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Aston Cokain, <i>A Chain of Golden Poems, Embellished with Wit, Mirth, and Eloquence</i> (London: Printed by W. G., and to be sold by Isaac Pridmore, 1658). Digital text: <a href="https://quod.lib.umich.edu/e/eebo/A33611.0001.001" rel="noopener">EEBO-TCP A33611</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/cokain/172">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/cokain/171/">← Epigram 4. Of Virgil</a><a class="pn next" href="/poem/cokain/173/">Epigram 6. To Mrs. Elizabeth Cokaine, his Lady →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Sir Aston Cokain</h2><ul class="poem-links"><li><a href="/poem/cokain/0/"><span class="pl-title">A Remedy for Love</span></a></li><li><a href="/poem/cokain/65/"><span class="pl-title">Epigram 22. An Epitaph on my dear sister the Lady Boteler, who deceased about the 34th year of her Age</span></a></li><li><a href="/poem/cokain/129/"><span class="pl-title">Epigram 85. To Sir Francis Boteler, my brother in law, from Ashbourn</span></a></li><li><a href="/poem/cokain/196/"><span class="pl-title">Epigram 29. Of Men and Women</span></a></li><li><a href="/poem/cokain/260/"><span class="pl-title">Epigram 92. To the same</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

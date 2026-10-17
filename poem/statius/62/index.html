@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -49,7 +50,7 @@
 <p>O youthful Sleep, gentlest of the gods, by what crime or error of mine have I deserved that I alone should lack thy bounty? Silent are all the cattle, and the wild beasts and the birds, and the curved mountain summits have the semblance of weary slumber, nor do the raging torrents roar as they were wont; the ruffled waves have sunk to rest, and the sea leans against earth’s bosom and is still. Seven times now hath the returning moon beheld my fixed and ailing eyes; so often have the lights of Oeta and Paphos revisited me, so oft hath Tithonia passed by my groans, and pitying sprinkled me with her cool whip. Ah! how may I endure? Not if I had the thousand eyes of sacred Argus, which he kept but in alternate watchfulness, nor ever waked in all his frame at once. But now—ah, me!—if some lover through the long hours of night is clasping a girl’s entwining arms, and of his own will drives thee from him, come thence, O Sleep! nor do I bid thee shower all the influence of thy wings upon my eyes—that be the prayer of happier folk!—touch me but with thy wand’s extremest tip—’tis enough—or pass over me with lightly hovering step.</p>
       </div>
       <p class="prose-note">This translation is printed as prose in its source edition.</p>
-      <p class="book-source"><span class="bs-label">Source</span> Statius, <i>Statius, with an English Translation by J. H. Mozley (Vol. I: Silvae; Thebaid I-IV)</i>, Vol. I (of two), trans. J. H. Mozley (The Loeb Classical Library) (London; New York: William Heinemann Ltd.; G. P. Putnam's Sons, 1928). Digital text: <a href="https://en.wikisource.org/wiki/Index:Statius_(Mozley_1928)_v1.djvu" rel="noopener">Wikisource Statius (Mozley 1928) v1/Silvae</a>.</p>
+      
       <div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">Prose translation.</p>
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -61,6 +62,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/statius/62">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/statius/61/">← Silvae V.3 (Mozley): The Poet’s Lament for His Father</a><a class="pn next" href="/poem/statius/63/">Silvae V.5 (Mozley): A Lament for His Adopted Son →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Statius</h2><ul class="poem-links"><li><a href="/poem/statius/1/"><span class="pl-title">Silvae I.2: The Marriage of Stella and Violentilla</span></a></li><li><a href="/poem/statius/13/"><span class="pl-title">Silvae III.1: The Temple of Hercules at Sorrento</span></a></li><li><a href="/poem/statius/25/"><span class="pl-title">Silvae IV.8: To Menecrates on the Birth of a Third Child</span></a></li><li><a href="/poem/statius/37/"><span class="pl-title">Silvae I.6 (Mozley): The Kalends of December</span></a></li><li><a href="/poem/statius/50/"><span class="pl-title">Silvae IV.1 (Mozley): The Seventeenth Consulship of the Emperor Augustus Germanicus</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

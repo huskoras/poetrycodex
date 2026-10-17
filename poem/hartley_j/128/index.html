@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -50,7 +51,7 @@
 <p class="stanza"><span class="ln">Growl on, old lass, an ease thi mind!</span><br><span class="ln">   It nivver troubles me;</span><br><span class="ln">Aw&#x27;ve proved &#x27;at tha&#x27;rt booath true an kind,--</span><br><span class="ln">   Ther&#x27;s lots &#x27;at&#x27;s war nor thee.</span><br><span class="ln">An if tha&#x27;s but a hooamly face,</span><br><span class="ln">   Framed in a white starched cap,</span><br><span class="ln">Ther&#x27;s nooan wod suit as weel i&#x27;th&#x27; place,--</span><br><span class="ln">   Ther&#x27;s nooan aw&#x27;d like to swap.</span><br></p>
 <p class="stanza"><span class="ln">Soa aw&#x27;ll contented jog along,--</span><br><span class="ln">   It&#x27;s th&#x27; wisest thing to do;</span><br><span class="ln">Aw&#x27;ve seldom need to use im tongue,</span><br><span class="ln">   Tha tawks enuff for two.</span><br><span class="ln">Tha cooks mi vittals, maks mi bed,</span><br><span class="ln">   An finds me clooas to don;</span><br><span class="ln">An if to-day aw worn&#x27;t wed,</span><br><span class="ln">   Aw&#x27;d say to thee,--&quot;Come on.&quot;</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> John Hartley, <i>Yorkshire Lyrics</i> (London and Wakefield: W. Nicholson &amp; Sons, Limited, [1898]). Digital text: <a href="https://www.gutenberg.org/ebooks/19470" rel="noopener">Project Gutenberg 19470</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -62,6 +63,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/hartley_j/128">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/hartley_j/127/">← Contrasts</a><a class="pn next" href="/poem/hartley_j/129/">Th&#x27; State o&#x27; th&#x27; Poll. A nop tickle illusion →</a></nav>
+      <section class="poet-poems more-by"><h2>More by John Hartley</h2><ul class="poem-links"><li><a href="/poem/hartley_j/32/"><span class="pl-title">Sing On</span></a></li><li><a href="/poem/hartley_j/82/"><span class="pl-title">Mary Hanner&#x27;s Peanner</span></a></li><li><a href="/poem/hartley_j/135/"><span class="pl-title">Stir thi Lass!</span></a></li><li><a href="/poem/hartley_j/185/"><span class="pl-title">Come thi Ways in</span></a></li><li><a href="/poem/hartley_j/235/"><span class="pl-title">When Cora Died</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

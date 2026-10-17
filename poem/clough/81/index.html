@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -49,7 +50,7 @@
 <p class="stanza"><span class="ln">  O happy mother!—while the man wayworn</span><br><span class="ln">  Sleeps by his ass and dreams of daily bread,</span><br><span class="ln">  Wakeful and heedful for thy infant care—</span><br><span class="ln">  O happy mother!—while thy husband sleeps,</span><br><span class="ln">  Art privileged, O blessed one, to see</span><br><span class="ln">  Celestial strangers sharing in thy task,</span><br><span class="ln">  And visible angels waiting on thy child.</span><br></p>
 <p class="stanza"><span class="ln">  Take, O young soul, O infant heaven-desired,</span><br><span class="ln">  Take and fear not the cates, although of earth,</span><br><span class="ln">  Which to thy hands celestial hands extend,</span><br><span class="ln">  Take and fear not: such vulgar meats of life</span><br><span class="ln">  Thy spirit lips no more must scorn to pass;</span><br><span class="ln">  The seeming ill, contaminating joys,</span><br><span class="ln">  Thy sense divine no more be loth to allow;</span><br><span class="ln">  The pleasures as the pains of our strange life</span><br><span class="ln">  Thou art engaged, self-compromised, to share.</span><br><span class="ln">  Look up, upon thy mother’s face there sits</span><br><span class="ln">  No sad suspicion of a lurking ill,</span><br><span class="ln">  No shamed confession of a needful sin;</span><br><span class="ln">  Mistrust her not, although of earth she too:</span><br><span class="ln">  Look up! the bright-eyed cherubs overhead</span><br><span class="ln">  Strew from mid air fresh flowers to crown the just</span><br><span class="ln">  Look! thy own father’s servants these, and thine,</span><br><span class="ln">  Who at his bidding and at thine are here.</span><br><span class="ln">  In thine own word was it not said long since</span><br><span class="ln">  Butter and honey shall he eat, and learn</span><br><span class="ln">  The evil to refuse and choose the good?</span><br><span class="ln">  Fear not, O babe divine, fear not, accept;</span><br><span class="ln">  O happy mother, privileged to see,</span><br><span class="ln">  While the man sleeps, the sacred mystery.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Arthur Hugh Clough, <i>Poems of Arthur Hugh Clough</i> (London: Macmillan and Co., Limited; New York: The Macmillan Company, 1898). Digital text: <a href="https://www.gutenberg.org/ebooks/66689" rel="noopener">Project Gutenberg 66689</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -61,6 +62,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/clough/81">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/clough/80/">← Even the Winds and the Sea Obey</a><a class="pn next" href="/poem/clough/82/">To a Sleeping Child →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Arthur Hugh Clough</h2><ul class="poem-links"><li><a href="/poem/clough/16/"><span class="pl-title">A Protest</span></a></li><li><a href="/poem/clough/34/"><span class="pl-title">‘_what Went Ye Out for to See?_’</span></a></li><li><a href="/poem/clough/52/"><span class="pl-title">A London Idyll</span></a></li><li><a href="/poem/clough/71/"><span class="pl-title">Actæon</span></a></li><li><a href="/poem/clough/92/"><span class="pl-title">I have seen higher, holier things than these</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

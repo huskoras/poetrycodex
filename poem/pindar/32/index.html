@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -53,7 +54,7 @@
 <p>But, in remembrance of Zeus, swell, softly swell, for Nemea a far-famed strain of song. For, on this spot, it is meet indeed to chant with gentle voice the king of the gods, for they tell that here by a mortal mother he begat Aeacus to be a ruler of cities for his own illustrious land, and to be a kindly friend and brother to thee, O Heracles. But, if a man hath any fruition of his fellow, we should say that a neighbour is to: his neighbour a priceless joy, if he loved him with steadfast heart; but if a god also should uphold this truth, ’tis by thy favour, O thou who didst quell the Giants that, Sogenes, fostering a spirit of devotion to his sire, would fain dwell happily beside the rich and hallowed road, where once his fathers dwelt; for he hath his house in the precincts of thy temples, which face him, like the yoke-arms of a four-horsed chariot, on either hand as he goeth forth. And thee, O blessed Heracles, it beseemeth to persuade the consort of Hera and the grey-eyed maiden; for full often canst thou grant to mortals relief from distress inexplicable. Oh that, having harnessed their youth and happy eld to a life of steadfast strength, thou mightest weave it to its close in happiness, and that children’s children may have for ever the boon that is now present, and a nobler boon hereafter. But my heart will not confess that I have, with words offensive, dragged in the dirt the name of Neoptolemus. Howsoever, to traverse the same ground thrice and four times is poverty of thought, like that of one who vainly babbles to babes of Corinth, the city of Zeus.’</p>
       </div>
       <p class="prose-note">This translation is printed as prose in its source edition.</p>
-      <p class="book-source"><span class="bs-label">Source</span> Pindar, <i>The Odes of Pindar, including the principal fragments, with an introduction and an…</i>, trans. Sir John Sandys (The Loeb Classical Library) (London and New York: William Heinemann; The Macmillan Co, 1915). Digital text: <a href="https://archive.org/details/odesofpindarsand00pinduoft" rel="noopener">Internet Archive odesofpindarsand00pinduoft</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -65,6 +66,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/pindar/32">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/pindar/31/">← Nemean 6: For Alcimidas of Aegina</a><a class="pn next" href="/poem/pindar/33/">Nemean 8: For Deinias of Aegina →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Pindar</h2><ul class="poem-links"><li><a href="/poem/pindar/3/"><span class="pl-title">Olympian 4: For Psaumis of Camarina</span></a></li><li><a href="/poem/pindar/21/"><span class="pl-title">Pythian 8: For Aristomenes of Aegina</span></a></li><li><a href="/poem/pindar/43/"><span class="pl-title">Isthmian 7: For Strepsiades of Thebes</span></a></li><li><a href="/poem/pindar/61/"><span class="pl-title">Pythian 3: For Hieron of Syracuse, Winner in the Horse-Race (Myers)</span></a></li><li><a href="/poem/pindar/79/"><span class="pl-title">Nemean 9: For Chromios of Aitna, Winner in the Chariot-Race (Myers)</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

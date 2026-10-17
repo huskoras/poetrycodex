@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -67,7 +68,7 @@
 <p class="stanza"><span class="ln">&#x27;I&#x27;ll return ye good fer evil</span><br><span class="ln">  Much ez we frail mortils can,</span><br><span class="ln">But I wun&#x27;t go help the Devil</span><br><span class="ln">  Makin&#x27; man the cuss o&#x27; man;</span><br><span class="ln">Call me coward, call me traiter,</span><br><span class="ln">  Jest ez suits your mean idees,--</span><br><span class="ln">Here I stand a tyrant hater,</span><br><span class="ln">  An&#x27; the friend o&#x27; God an&#x27; Peace!&#x27;</span><br></p>
 <p class="stanza"><span class="ln">Ef I&#x27;d my way I hed ruther</span><br><span class="ln">  We should go to work an part,</span><br><span class="ln">They take one way, we take t&#x27;other,</span><br><span class="ln">  Guess it wouldn&#x27;t break my heart;</span><br><span class="ln">Man hed ough&#x27; to put asunder</span><br><span class="ln">  Them thet God has noways jined;</span><br><span class="ln">An&#x27; I shouldn&#x27;t gretly wonder</span><br><span class="ln">  Ef there&#x27;s thousands o&#x27; my mind.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> James Russell Lowell, <i>The Complete Poetical Works of James Russell Lowell</i>, Cabinet Edition (Boston / New York: Houghton, Mifflin and Company (The Riverside Press, Cambridge), 1902). Digital text: <a href="https://www.gutenberg.org/ebooks/13310" rel="noopener">Project Gutenberg 13310</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -79,6 +80,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/lowell/179">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/lowell/178/">← Leaving the Matter Open: A Tale</a><a class="pn next" href="/poem/lowell/180/">The Biglow Papers, First Series, No. II: A Letter from Mr. Hosea Biglow →</a></nav>
+      <section class="poet-poems more-by"><h2>More by James Russell Lowell</h2><ul class="poem-links"><li><a href="/poem/lowell/57/"><span class="pl-title">The Beggar</span></a></li><li><a href="/poem/lowell/128/"><span class="pl-title">Bibliolatres</span></a></li><li><a href="/poem/lowell/202/"><span class="pl-title">Under the Willows</span></a></li><li><a href="/poem/lowell/273/"><span class="pl-title">Arcadia Rediviva</span></a></li><li><a href="/poem/lowell/344/"><span class="pl-title">Love and Thought</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -56,7 +57,7 @@
 <p class="stanza"><span class="ln">And do you still remember, Chaise,</span><br><span class="ln">How at the Dhoor —</span><br><span class="ln">Near Ramsey, to be sure —</span><br><span class="ln">I got two painters painting in the chapel</span><br><span class="ln">To make with me a congregation?</span><br><span class="ln">And you did mount the pulpit, and did grapple</span><br><span class="ln">With a tremendous text, and warn the nation</span><br><span class="ln">Of drunkenness; and in your hand</span><br><span class="ln">Did wave an empty bottle, so that we,</span><br><span class="ln">By palpable typology,</span><br><span class="ln">Might understand —</span><br><span class="ln">Dear Chaise, you never had</span><br><span class="ln">An audience more silent or more sad!</span><br></p>
 <p class="stanza"><span class="ln">And have you met him, Chaise,</span><br><span class="ln">Whom you did long to meet?</span><br><span class="ln">You used to call him dear and sweet —</span><br><span class="ln">Good Bishop Wilson — has he taken you</span><br><span class="ln">In hand, dear Chaise? And is he true,</span><br><span class="ln">And is he kind,</span><br><span class="ln">And do you tell him all your mind,</span><br><span class="ln">Dear Chaise —</span><br><span class="ln">All your mind?</span><br><span class="ln">And have you yet set up the press;</span><br><span class="ln">And is the type in readiness,</span><br><span class="ln">Founded with gems</span><br><span class="ln">Of living sapphire, dipped</span><br><span class="ln">In blood of molten rubies, diamond-tipped?</span><br><span class="ln">And, with the sanction of the Governor,</span><br><span class="ln">Do you, a proud compositor,</span><br><span class="ln">Stand forth, and prent the Hemns? —</span><br><span class="ln">Chaise, poor Chaise!</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Thomas Edward Brown, <i>The Collected Poems of T. E. Brown, with Introduction by W. E. Henley</i> (London: Macmillan and Co., Limited, 1909). Digital text: <a href="https://archive.org/details/collectedpoemsof00browrich" rel="noopener">Internet Archive collectedpoemsof00browrich</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -68,6 +69,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/brown_te/2">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/brown_te/1/">← Old John</a><a class="pn next" href="/poem/brown_te/3/">In the Coach →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Thomas Edward Brown</h2><ul class="poem-links"><li><a href="/poem/brown_te/18/"><span class="pl-title">Song</span></a></li><li><a href="/poem/brown_te/41/"><span class="pl-title">Octaves</span></a></li><li><a href="/poem/brown_te/65/"><span class="pl-title">Prelude (Third Series)</span></a></li><li><a href="/poem/brown_te/88/"><span class="pl-title">Between our Folding Lips</span></a></li><li><a href="/poem/brown_te/111/"><span class="pl-title">Dreams</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

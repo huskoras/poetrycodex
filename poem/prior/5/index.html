@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">BEHIND her neck her comely tresses tied,</span><br><span class="ln">Her ivory quiver graceful by her side,</span><br><span class="ln">A-hunting Cloe went : she lost her way,</span><br><span class="ln">And through the woods uncertain chanc&#x27;d to stray.</span><br><span class="ln">Apollo passing by beheld the maid ;</span><br><span class="ln">And, Sister dear, bright Cynthia, turn, he said :</span><br><span class="ln">The hunted hind lies close in yonder brake.</span><br><span class="ln">Loud Cupid laugh&#x27;d, to see the god&#x27;s mistake ;</span><br><span class="ln">And laughing cried, Learn better, great divine,</span><br><span class="ln">To know thy kindred, and to honour mine.</span><br><span class="ln">Rightly advis&#x27;d, far hence thy sister seek,</span><br><span class="ln">Or on Meander&#x27;s bank, or Latmus&#x27; peak.</span><br><span class="ln">But in this nymph, my friend, my sister know :</span><br><span class="ln">She draws my arrows, and she bends my bow :</span><br><span class="ln">Fair Thames she haunts, and every neighb&#x27;ring grove,</span><br><span class="ln">Sacred to soft recess, and gentle love.</span><br><span class="ln">Go, with thy Cynthia, hurl the pointed spear</span><br><span class="ln">At the rough boar, or chase the flying deer :</span><br><span class="ln">I and my Cloe take nobler aim :</span><br><span class="ln">At human hearts we fling, nor ever miss the game.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Matthew Prior, <i>The Poetical Works of Matthew Prior, with Memoir by the Rev. John Mitford, Volume I</i>, I, Aldine Edition of the British Poets (The Aldine Edition of the British Poets) (London: Bell and Daldy, 1866). Digital text: <a href="https://archive.org/details/poeticalworks01prio" rel="noopener">Internet Archive poeticalworks01prio</a>. <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span></p>
+      
       <div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">Cloe, hunting, is taken for Diana by Apollo, and Cupid laughs and sends the sun-god off to find his own sister.</p>
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/prior/5">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/prior/4/">← To Cloe Weeping</a><a class="pn next" href="/poem/prior/6/">Cupid Mistaken →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Matthew Prior</h2><ul class="poem-links"><li><a href="/poem/prior/37/"><span class="pl-title">To the Duke de Noailles</span></a></li><li><a href="/poem/prior/97/"><span class="pl-title">An Ode, Humbly Inscribed to the Queen, on the Glorious Success of Her Majesty&#x27;s Arms, 1706</span></a></li><li><a href="/poem/prior/156/"><span class="pl-title">Nannette: A Song</span></a></li><li><a href="/poem/prior/215/"><span class="pl-title">Song: Since We Your Husband Daily See</span></a></li><li><a href="/poem/prior/275/"><span class="pl-title">Fragments for Alma: Yet Happy Human Race My Friend</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

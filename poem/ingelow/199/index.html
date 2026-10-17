@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -55,7 +56,7 @@
 <p class="stanza"><span class="ln">    I will fear you, O stars, never more.</span><br><span class="ln">I have felt it! Go on, while the world is asleep,</span><br><span class="ln">  Golden islands, fast moored in God&#x27;s infinite deep.</span><br><span class="ln">Hark, hark to the words of sweet fashion, the harpings of yore!</span><br><span class="ln">How they sang to Him, seer and saint, in the far away lands:</span><br><span class="ln">      &quot;The heavens are the work of Thy hands;</span><br><span class="ln">      They shall perish, but Thou shalt endure;</span><br><span class="ln">          Yea, they all shall wax old,--</span><br><span class="ln">But Thy throne is established, O God, and Thy years are made sure;</span><br><span class="ln">      They shall perish, but Thou shalt endure,--</span><br><span class="ln">      They shall pass like a tale that is told.&quot;</span><br></p>
 <p class="stanza"><span class="ln">      Doth He answer, the Ancient of Days?</span><br><span class="ln">      Will He speak in the tongue and the fashion of men?</span><br><span class="ln">(Hist! hist! while the heaven-hung multitudes shine in His praise,</span><br><span class="ln">His language of old.) Nay, He spoke with them first; it was then</span><br><span class="ln">        They lifted their eyes to His throne;</span><br><span class="ln">&quot;They shall call on Me, &#x27;Thou art our Father, our God, Thou alone!&#x27;</span><br><span class="ln">For I made them, I led them in deserts and desolate ways;</span><br><span class="ln">        I have found them a Ransom Divine;</span><br><span class="ln">I have loved them with love everlasting, the children of men;</span><br><span class="ln">        I swear by Myself, they are Mine.&quot;</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Jean Ingelow, <i>Poems by Jean Ingelow, in Two Volumes, Vol. I</i>, I, Author's Complete Edition (Boston: Roberts Brothers, 1896). Digital text: <a href="https://www.gutenberg.org/ebooks/13223" rel="noopener">Project Gutenberg 13223</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -67,6 +68,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/ingelow/199">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/ingelow/198/">← Songs of the Night Watches: The First Watch. Tired</a><a class="pn next" href="/poem/ingelow/200/">A Lily and a Lute →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Jean Ingelow</h2><ul class="poem-links"><li><a href="/poem/ingelow/21/"><span class="pl-title">Sailing Beyond Seas</span></a></li><li><a href="/poem/ingelow/62/"><span class="pl-title">The Sleep of Sigismund: XXI</span></a></li><li><a href="/poem/ingelow/103/"><span class="pl-title">The Monitions of the Unseen</span></a></li><li><a href="/poem/ingelow/144/"><span class="pl-title">Married Lovers</span></a></li><li><a href="/poem/ingelow/185/"><span class="pl-title">Songs of Seven: Seven Times Three. Love</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

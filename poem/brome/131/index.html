@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">Among the train of mourners, whose swoln eyes</span><br><span class="ln">Wallow in tears of these sad obsequies;</span><br><span class="ln">Admit me as a cypher here to come,</span><br><span class="ln">Who though am nothing, yet can raise a sum:</span><br><span class="ln">And truly I can mourn as well as they</span><br><span class="ln">Who&#x27;re clad in sable weeds, though mine is gray.</span><br><span class="ln">Excuse me Sir, passion will swell that&#x27;s pent;</span><br><span class="ln">Thank not my tears, I cannot but lament,</span><br><span class="ln">To see a Lady ready for your bed,</span><br><span class="ln">To death&#x27;s imbraces yield her mayden-head:</span><br><span class="ln">And that Angellick Corps, that should have been</span><br><span class="ln">A Cabinet to lodge your Jewels in,</span><br><span class="ln">Should now b&#x27;imbalm&#x27;d with dust, and made a prey</span><br><span class="ln">To the happy worms, who may call that day</span><br><span class="ln">On which her limbs unto their lot did fall;</span><br><span class="ln">Your sad Solemnities, their Festival:</span><br><span class="ln">Should I not mourn, I could not pay the due,</span><br><span class="ln">Of tears to her, or sympathy to you:</span><br><span class="ln">For Death did flay you both, when she did dye,</span><br><span class="ln">So who writes one&#x27;s must write both&#x27;s Elegy.</span><br><span class="ln">She was too good for you, she was too high,</span><br><span class="ln">A wife for Angels, to get Angels by:</span><br><span class="ln">Whom you and all did love, and did suppose,</span><br><span class="ln">To be an Angel in a mortal&#x27;s cloaths:</span><br><span class="ln">But Heaven to undeceive you let you know,</span><br><span class="ln">By her mortality, she was not so.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Alexander Brome, <i>Songs and Other Poems by Alex. Brome, Gent</i>, Second edition, corrected and enlarged (London: Printed for Henry Brome, at the Gun in Ivy Lane, 1664). Digital text: <a href="https://github.com/textcreationpartnership/A29623" rel="noopener">EEBO-TCP A29623</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/brome/131">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/brome/130/">← Epistle XXV. To his Friend Mr. I. B. being at London in the Authors retirement</a><a class="pn next" href="/poem/brome/132/">Epistle XXVII. On the great cryer at Westminster-Hall →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Alexander Brome</h2><ul class="poem-links"><li><a href="/poem/brome/14/"><span class="pl-title">Song XV. To his Friend that had vow&#x27;d Small-Beer</span></a></li><li><a href="/poem/brome/57/"><span class="pl-title">Song XIII. Copernicus</span></a></li><li><a href="/poem/brome/101/"><span class="pl-title">Ballad XIV. The Holy Pedler</span></a></li><li><a href="/poem/brome/148/"><span class="pl-title">Epistle XLIV. On a Comedy called The Passionate Lovers</span></a></li><li><a href="/poem/brome/191/"><span class="pl-title">Epigram XXVI. On Philip of Macedon</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

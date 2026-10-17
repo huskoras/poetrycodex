@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -80,7 +81,7 @@
 <p class="stanza"><span class="ln">&quot;The parish aid withdrawn, I look&#x27;d around,</span><br><span class="ln">And in my school a bless&#x27;d subsistence found -</span><br><span class="ln">My winter-calm of life:  to be of use</span><br><span class="ln">Would pleasant thoughts and heavenly hopes produce;</span><br><span class="ln">I loved them all; it soothed me to presage</span><br><span class="ln">The various trials of their riper age,</span><br><span class="ln">Then dwell on mine, and bless the Power who gave</span><br><span class="ln">Pains to correct us, and remorse to save.</span><br></p>
 <p class="stanza"><span class="ln">&quot;Yes! these were days of peace, but they are past, -</span><br><span class="ln">A trial came, I will believe, a last;</span><br><span class="ln">I lost my sight, and my employment gone,</span><br><span class="ln">Useless I live, but to the day live on;</span><br><span class="ln">Those eyes which long the light of heaven enjoy&#x27;d,</span><br><span class="ln">Were not by pain, by agony destroy&#x27;d:</span><br><span class="ln">My senses fail not all; I speak, I pray;</span><br><span class="ln">By night my rest, my food I take by day;</span><br><span class="ln">And, as my mind looks cheerful to my end,</span><br><span class="ln">I love mankind, and call my GOD my friend.&quot;</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> George Crabbe, ed. Adolphus William Ward, <i>Poems by George Crabbe, Volume I</i>, I (Cambridge English Classics) (Cambridge: At the University Press, 1905). Digital text: <a href="https://www.gutenberg.org/ebooks/46858" rel="noopener">Project Gutenberg 46858</a>.</p>
+      
       <div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">A portrait of an aged and poor woman of the borough who has borne much suffering and ends with faith in God and love of mankind.</p>
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -92,6 +93,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/crabbe/13">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/crabbe/12/">← The Borough, Letter XIX: The Parish-Clerk</a><a class="pn next" href="/poem/crabbe/14/">The Borough, Letter XXI: Abel Keene →</a></nav>
+      <section class="poet-poems more-by"><h2>More by George Crabbe</h2><ul class="poem-links"><li><a href="/poem/crabbe/38/"><span class="pl-title">Parody on Byrom&#x27;s &quot;My Time, Oh ye Muses&quot;</span></a></li><li><a href="/poem/crabbe/80/"><span class="pl-title">The Borough, Letter XVII: The Hospital and Governors</span></a></li><li><a href="/poem/crabbe/122/"><span class="pl-title">Posthumous Tales: Villars</span></a></li><li><a href="/poem/crabbe/163/"><span class="pl-title">Disillusioned</span></a></li><li><a href="/poem/crabbe/205/"><span class="pl-title">On a Drawing of Cadlands</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

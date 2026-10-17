@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -52,7 +53,7 @@
 <p class="stanza"><span class="ln">Low-breathed strains of sweetest music float about my raptured ears;</span><br><span class="ln">Angel-eyes are glancing at me hopeful smiles and happy tears.</span><br><span class="ln">Merry feet go scaling up the old and thunder-shattered steeps,</span><br><span class="ln">And the billows clamber after, and the surge to ocean leaps,</span><br><span class="ln">Scattered into fruitless showers, falling where the breakers roll,</span><br><span class="ln">Baffled like the aspirations of a proud ambitious soul.</span><br><span class="ln">Far off sounds of silvery laughter through the hollow caverns ring,</span><br><span class="ln">While my heart leaps up to catch reviving pleasure on the wing;</span><br><span class="ln">And the years come trooping backward, and we both again are young,</span><br><span class="ln">Walking side by side upon the lovely shores of Wollongong.</span><br></p>
 <p class="stanza"><span class="ln">Fleeting dreams and idle fancies!  Lo, the gloomy after Age</span><br><span class="ln">Creepeth, like an angry shadow, over life&#x27;s eventful stage!</span><br><span class="ln">Joy is but a mocking phantom, throwing out its glitter brief--</span><br><span class="ln">Short-lived as the western sunbeam dying from the cedar leaf.</span><br><span class="ln">Here we linger, lonely-hearted, musing over visions fled,</span><br><span class="ln">While the sickly twilight withers from the arches overhead.</span><br><span class="ln">Semblance of a bliss delusive are those dull, receding rays;</span><br><span class="ln">Semblance of the faint reflection left to us of other days;</span><br><span class="ln">Days of vernal hope and gladness, hours when the blossoms sprung</span><br><span class="ln">Round the feet of blithesome ramblers by the shores of Wollongong.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Henry Kendall; with biographical note by Bertram Stevens, <i>The Poems of Henry Kendall</i> (Sydney: Angus &amp; Robertson Ltd, 1920). Digital text: <a href="https://www.gutenberg.org/ebooks/962" rel="noopener">Project Gutenberg 962</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -64,6 +65,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/kendall/31">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/kendall/30/">← Clari</a><a class="pn next" href="/poem/kendall/32/">Ella with the Shining Hair →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Henry Kendall</h2><ul class="poem-links"><li><a href="/poem/kendall/28/"><span class="pl-title">Waiting and Wishing</span></a></li><li><a href="/poem/kendall/72/"><span class="pl-title">Sitting by the Fire</span></a></li><li><a href="/poem/kendall/114/"><span class="pl-title">When Underneath the Brown Dead Grass</span></a></li><li><a href="/poem/kendall/155/"><span class="pl-title">Sonnets on the Discovery of Botany Bay by Captain Cook</span></a></li><li><a href="/poem/kendall/197/"><span class="pl-title">The Austral Months</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

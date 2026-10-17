@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -54,7 +55,7 @@
 <p class="stanza"><span class="ln">Plots wrap&#x27;d in Clouds, and Death like Shades of Night,</span><br><span class="ln">To him lye all expos&#x27;d, as Noon-day Light.</span><br></p>
 <p class="stanza"><span class="ln">He gives a City wide Imperial Sway,</span><br><span class="ln">And does her Yoke on vanquish&#x27;d Nations lay.</span><br><span class="ln">She on the Necks of Captive Princes treads,</span><br><span class="ln">When he her Armys forth to Conquest leads;</span><br><span class="ln">She does with unexhausted Wealth abound,</span><br><span class="ln">And as a Mistress awes the World around.</span><br><span class="ln">Then on a suddain he corrects her Pride,</span><br><span class="ln">And to her Banks drives back her ebbing Tyde.</span><br><span class="ln">He breaks her Yoke, and rescues from her hand</span><br><span class="ln">The Realms he subject made to her Command.</span><br><span class="ln">He thro&#x27; her Streets does Desolation spread,</span><br><span class="ln">And casts down from the Clouds her tow&#x27;ring Head.</span><br><span class="ln">Great Chiefs, when he rebukes them, Cowards grow,</span><br><span class="ln">And all the marks of Consternation show;</span><br><span class="ln">His Terrors pierce their Breasts, like poison&#x27;d Darts,</span><br><span class="ln">Enfeeble and dismay the proudest Hearts.</span><br><span class="ln">For Hills and Mountains they&#x27;ll forsake their Home,</span><br><span class="ln">And thro&#x27; the trackless Woods despairing Roam:</span><br><span class="ln">They&#x27;ll seek the lonesom, salvage Wilderness,</span><br><span class="ln">There to conceal their vagabond Distress.</span><br><span class="ln">They and the Beasts each other shall affright,</span><br><span class="ln">At distance gaze, then fly each other&#x27;s sight.</span><br><span class="ln">They ne&#x27;er shall see a Beam of dawning Hope,</span><br><span class="ln">But for their way involv&#x27;d in Darkness grope.</span><br><span class="ln">With Wrath Divine intoxicated they,</span><br><span class="ln">Like Drunken Men, shall Reel and lose their way.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Sir Richard Blackmore, <i>A Paraphrase on the Book of Job, as likewise on the Songs of Moses, Deborah, David, on…</i> (London: Printed for Awnsham and John Churchill, 1700). Digital text: <a href="https://raw.githubusercontent.com/textcreationpartnership/A27998/master/A27998.xml" rel="noopener">EEBO-TCP A27998</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -66,6 +67,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/blackmore/10">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/blackmore/9/">← Job, Chapter 10</a><a class="pn next" href="/poem/blackmore/11/">Job, Chapter 13 →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Sir Richard Blackmore</h2><ul class="poem-links"><li><a href="/poem/blackmore/4/"><span class="pl-title">Job, Chapter 5</span></a></li><li><a href="/poem/blackmore/17/"><span class="pl-title">Job, Chapter 19</span></a></li><li><a href="/poem/blackmore/28/"><span class="pl-title">Job, Chapter 30</span></a></li><li><a href="/poem/blackmore/38/"><span class="pl-title">Job, Chapter 40</span></a></li><li><a href="/poem/blackmore/49/"><span class="pl-title">Isaiah, Chapter 14</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

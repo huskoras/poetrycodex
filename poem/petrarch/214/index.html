@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">High birth in humble life, reserved yet kind,</span><br><span class="ln">On youth&#x27;s gay flower ripe fruits of age and rare,</span><br><span class="ln">A virtuous heart, therewith a lofty mind,</span><br><span class="ln">A happy spirit in a pensive air;</span><br><span class="ln">Her planet, nay, heaven&#x27;s king, has fitly shrined</span><br><span class="ln">All gifts and graces in this lady fair,</span><br><span class="ln">True honour, purest praises, worth refined,</span><br><span class="ln">Above what rapt dreams of best poets are.</span><br><span class="ln">Virtue and Love so rich in her unite,</span><br><span class="ln">With natural beauty dignified address,</span><br><span class="ln">Gestures that still a silent grace express,</span><br><span class="ln">And in her eyes I know not what strange light,</span><br><span class="ln">That makes the noonday dark, the dusk night clear,</span><br><span class="ln">Bitter the sweet, and e&#x27;en sad absence dear.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Francesco Petrarca, <i>The Sonnets, Triumphs, and Other Poems of Petrarch, now first completely translated into…</i>, trans. Major Macgregor (Bohn's Illustrated Library) (London: George Bell and Sons (Bohn), 1879). Digital text: <a href="https://www.gutenberg.org/ebooks/17650" rel="noopener">Project Gutenberg 17650</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/petrarch/214">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/petrarch/213/">← Sestina VI (In Life): The History of His Love; and Prayer for Help</a><a class="pn next" href="/poem/petrarch/215/">Sonnet CLXXX (In Life): Her Cruelty Renders Life Worse Than Death to Him →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Francesco Petrarca (Petrarch)</h2><ul class="poem-links"><li><a href="/poem/petrarch/12/"><span class="pl-title">Sonnet XII (In Life): The Beauty of Laura Leads Him to the Contemplation of the Supreme Good</span></a></li><li><a href="/poem/petrarch/86/"><span class="pl-title">Sonnet LXVI (In Life): He Calls the Eyes of Laura Foes, Because They Keep Him in Life Only to Torment Him</span></a></li><li><a href="/poem/petrarch/159/"><span class="pl-title">Sonnet CXXVII (In Life): Her Every Action is Divine</span></a></li><li><a href="/poem/petrarch/235/"><span class="pl-title">Sonnet CC (In Life): He Prays Love, Who is the Cause of His Offences, to Obtain Pardon for Him</span></a></li><li><a href="/poem/petrarch/308/"><span class="pl-title">Sonnet XLI (In Death): It is Impossible for Him to Describe Her Excellences</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -53,7 +54,7 @@
 <p class="stanza"><span class="ln">    Yoked in knowledge and remorse, now we come to rest,</span><br><span class="ln">    Laughing at old villainies that Time has turned to jest,</span><br><span class="ln">    Pardoning old necessities no pardon can efface--</span><br><span class="ln">    That undying sin we shared in Rouen marketplace.</span><br><span class="ln">    Now we watch the new years shape, wondering if they hold</span><br><span class="ln">    Fiercer lightnings in their heart than we launched of old.</span><br><span class="ln">    Now we hear new voices rise, question, boast or gird,</span><br><span class="ln">    As we raged (rememberest thou?) when our crowds were stirred,</span><br><span class="ln">    Now we count new keels afloat, and new hosts on land,</span><br><span class="ln">    Massed like ours (rememberest thou?) when our strokes were planned.</span><br><span class="ln">    We were schooled for dear life&#x27;s sake, to know each other&#x27;s blade</span><br><span class="ln">    What can blood and iron make more than we have made?</span><br><span class="ln">    We have learned by keenest use to know each other&#x27;s mind.</span><br><span class="ln">    What shall blood and iron loose that we cannot bind?</span><br><span class="ln">    We who swept each other&#x27;s coast, sacked each other&#x27;s home,</span><br><span class="ln">    Since the sword of Brennus clashed on the scales at Rome,</span><br><span class="ln">    Listen, count and close again, wheeling girth to girth,</span><br><span class="ln">    In the linked and steadfast guard set for peace on earth!</span><br></p>
 <p class="stanza"><span class="ln">    Broke to every known mischance, lifted over all</span><br><span class="ln">    By the light sane joy of life, the buckler of the Gaul;</span><br><span class="ln">    Furious in luxury, merciless in toil,</span><br><span class="ln">    Terrible with strength renewed from a tireless soil;</span><br><span class="ln">    Strictest judge of her own worth, gentlest of man&#x27;s mind,</span><br><span class="ln">    First to face the Truth and last to leave old Truths behind--</span><br><span class="ln">    France, beloved of every soul that loves or serves its kind!</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Rudyard Kipling, <i>The Years Between</i> (London: Methuen and Co. Ltd, 1919). Digital text: <a href="https://www.gutenberg.org/ebooks/21777" rel="noopener">Project Gutenberg 21777</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -65,6 +66,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/kipling/89">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/kipling/88/">← The Covenant</a><a class="pn next" href="/poem/kipling/90/">&#x27;for All We Have and Are&#x27; →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Rudyard Kipling</h2><ul class="poem-links"><li><a href="/poem/kipling/37/"><span class="pl-title">&#x27;lukannon&#x27;</span></a></li><li><a href="/poem/kipling/133/"><span class="pl-title">An Only Son</span></a></li><li><a href="/poem/kipling/226/"><span class="pl-title">The Sea-Wife</span></a></li><li><a href="/poem/kipling/319/"><span class="pl-title">Certain Maxims of Hafiz</span></a></li><li><a href="/poem/kipling/412/"><span class="pl-title">The Instructor</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

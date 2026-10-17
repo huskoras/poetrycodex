@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">God of wisdom, God of might,</span><br><span class="ln">Father! dearest name of all,</span><br><span class="ln">Bow thy throne and bless our rite;</span><br><span class="ln">&#x27;T is thy children on thee call.</span><br><span class="ln">Glorious One! look down from heaven,</span><br><span class="ln">Warm each heart and wake each vow;</span><br><span class="ln">Unto Thee this house is given;</span><br><span class="ln">With thy presence fill it now.</span><br><span class="ln">Fill it now! on every soul</span><br><span class="ln">Shed the incense of thy grace,</span><br><span class="ln">While our anthem-echoes roll</span><br><span class="ln">Round the consecrated place;</span><br><span class="ln">While thy holy page we read,</span><br><span class="ln">While the prayers Thou lovest ascend,</span><br><span class="ln">While thy cause thy servants plead, —</span><br><span class="ln">Fill this house, our God, our Friend.</span><br><span class="ln">Fill it now— O, fill it long!</span><br><span class="ln">So, when death shall call us home,</span><br><span class="ln">Still to Thee, in many a throng,</span><br><span class="ln">May our children&#x27;s children come.</span><br><span class="ln">Bless them, Father, long and late,</span><br><span class="ln">Blot their sins, their sorrows dry;</span><br><span class="ln">Make this place to them the gate</span><br><span class="ln">Leading to thy courts on high.</span><br><span class="ln">There, when time shall be no more,</span><br><span class="ln">When the feuds of earth are past,</span><br><span class="ln">May the tribes of every shore</span><br><span class="ln">Congregate in peace at last!</span><br><span class="ln">Then to Thee, thou One all-wise,</span><br><span class="ln">Shall the gather&#x27;d millions sing,</span><br><span class="ln">Till the arches of the skies</span><br><span class="ln">With their hallelujahs ring.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Rufus Wilmot Griswold, ed., <i>The Poets and Poetry of America</i>, Sixteenth edition, carefully revised, much enlarged, and continued to the present time (Philadelphia: Parry and McMillan (successors to A. Hart, late Carey &amp; Hart), 1855). Digital text: <a href="https://archive.org/details/poetspoetryofame00gris" rel="noopener">Internet Archive poetspoetryofame00gris</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/sprague/10">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/sprague/9/">← The Winged Worshippers</a><a class="pn next" href="/poem/sprague/11/">To My Cigar →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Charles Sprague</h2><ul class="poem-links"><li><a href="/poem/sprague/0/"><span class="pl-title">Curiosity</span></a></li><li><a href="/poem/sprague/2/"><span class="pl-title">The Brothers</span></a></li><li><a href="/poem/sprague/4/"><span class="pl-title">Look on This Picture</span></a></li><li><a href="/poem/sprague/6/"><span class="pl-title">I See Thee Still</span></a></li><li><a href="/poem/sprague/8/"><span class="pl-title">The Family Meeting</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

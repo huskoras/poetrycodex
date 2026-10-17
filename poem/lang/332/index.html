@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">   “TELL me, O Muse of the Shifty, the Man who wandered afar,”</span><br><span class="ln">   So have I chanted of late, and of Troy burg wasted of war—</span><br><span class="ln">   Now of the sorrows of Menfolk that fifty years have been,</span><br><span class="ln">   Now of the Grace of the Commune I sing, and the days of a Queen!</span><br><span class="ln">   Surely I curse rich Menfolk, “the Wights of the Whirlwind” may they—</span><br><span class="ln">   This is my style of translating ‘Αρπυίαι,—snatch them away!</span><br><span class="ln">   The Rich Thieves rolling in wealth that make profit of labouring men,</span><br><span class="ln">   Surely the Wights of the Whirlwind shall swallow them quick in their</span><br><span class="ln">   den!</span><br><span class="ln">   O baneful, O wit-straying, in the Burg of London ye dwell,</span><br><span class="ln">   And ever of Profits and three per cent. are the tales ye tell,</span><br><span class="ln">   But the stark, strong Polyphemus shall answer you back again,</span><br><span class="ln">   Him whom “No man slayeth by guile and not by main.”</span><br><span class="ln">   (By “main” I mean “main force,” if aught at all do I mean.</span><br><span class="ln">   In the Greek of the blindfold Bard it is simpler the sense to glean.)</span><br><span class="ln">   You Polyphemus shall swallow and fill his mighty maw,</span><br><span class="ln">   What time he maketh an end of the Priests, the Police, and the Law,</span><br><span class="ln">   And then, ah, who shall purchase the poems of old that I sang,</span><br><span class="ln">   Who shall pay twelve-and-six for an epic in Saga slang?</span><br><span class="ln">   But perchance even “Hermes the Flitter” could scarcely expound what I</span><br><span class="ln">   mean,</span><br><span class="ln">   And I trow that another were fitter to sing you a song for a Queen.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Andrew Lang, <i>New Collected Rhymes</i> (London, New York and Bombay: Longmans, Green, and Co, 1905). Digital text: <a href="https://www.gutenberg.org/ebooks/1746" rel="noopener">Project Gutenberg 1746</a>.</p>
+      
       <div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">parody by W. M., i.e. William Morris</p>
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/lang/332">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/lang/331/">← Ode of Jubilee</a><a class="pn next" href="/poem/lang/333/">Heliodore →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Andrew Lang</h2><ul class="poem-links"><li><a href="/poem/lang/6/"><span class="pl-title">On the Offer of Help from the Australians After the Fall of Khartoum</span></a></li><li><a href="/poem/lang/73/"><span class="pl-title">(after Richepin.)</span></a></li><li><a href="/poem/lang/139/"><span class="pl-title">Ballad of the Philanthropist</span></a></li><li><a href="/poem/lang/206/"><span class="pl-title">Ballade of the Summer Term</span></a></li><li><a href="/poem/lang/272/"><span class="pl-title">Celia’s Eyes</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

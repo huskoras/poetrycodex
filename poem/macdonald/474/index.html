@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">That instant--through the branches overhead</span><br><span class="ln">  No sound of going went--a shadow fell</span><br><span class="ln">  Isled in the unrippled pool of sunlight fed</span><br><span class="ln">From some far fountain hid in heavenly dell.</span><br><span class="ln">  I looked, and in the low roofs broken place</span><br><span class="ln">  A single snowdrop stood--a radiant bell</span><br><span class="ln">Of silvery shine, softly subdued by grace</span><br><span class="ln">  Of delicate green that made the white appear</span><br><span class="ln">  Yet whiter. Blind it bowed its head a space,</span><br><span class="ln">Half-timid--then, as in despite of fear,</span><br><span class="ln">  Unfolded its three rays. If it had swung</span><br><span class="ln">  Its pendent bell, and music golden clear--</span><br><span class="ln">Division just entrancing sounds among--</span><br><span class="ln">  Had flickered down as tender as flakes of snow,</span><br><span class="ln">  It had not shed more influence as it rung</span><br><span class="ln">Than from its look alone did rain and flow.</span><br><span class="ln">  I knew the flower; perceived its human ways;</span><br><span class="ln">  Dim saw the secret that had made it grow:</span><br><span class="ln">My heart supplied the music&#x27;s golden phrase.</span><br><span class="ln">  Light from the dark and snowdrops from the earth,</span><br><span class="ln">  Life&#x27;s resurrection out of gross decays,</span><br><span class="ln">The endless round of beauty&#x27;s yearly birth,</span><br><span class="ln">  And nations&#x27; rise and fall--were in the flower,</span><br><span class="ln">  And read themselves in silence. Heavenly mirth</span><br><span class="ln">Awoke in my sad heart. For one whole hour</span><br><span class="ln">  I praised the God of snowdrops. But at height</span><br><span class="ln">  The bliss gave way. Next, faith began to cower;</span><br><span class="ln">And then the snowdrop vanished from my sight.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> George MacDonald, <i>The Poetical Works of George MacDonald, in Two Volumes</i>, Vol. 2 (London: Chatto &amp; Windus, 1893). Digital text: <a href="https://www.gutenberg.org/ebooks/9984" rel="noopener">Project Gutenberg 9984</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/macdonald/474">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/macdonald/473/">← Somnium Mystici: X</a><a class="pn next" href="/poem/macdonald/475/">Somnium Mystici: XII →</a></nav>
+      <section class="poet-poems more-by"><h2>More by George MacDonald</h2><ul class="poem-links"><li><a href="/poem/macdonald/87/"><span class="pl-title">Morning Hymn</span></a></li><li><a href="/poem/macdonald/216/"><span class="pl-title">Galileo</span></a></li><li><a href="/poem/macdonald/346/"><span class="pl-title">The Mother Mary: IV</span></a></li><li><a href="/poem/macdonald/478/"><span class="pl-title">Somnium Mystici: XV</span></a></li><li><a href="/poem/macdonald/607/"><span class="pl-title">My Two Geniuses: I</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

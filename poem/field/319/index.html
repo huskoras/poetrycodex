@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -59,7 +60,7 @@
 <p class="stanza"><span class="ln">Three-fingered Hoover said it was a terrible mistake,</span><br><span class="ln">An&#x27; when the votes wuz in, he cried ez if his heart would break.</span><br><span class="ln">We never knew who Charlotte wuz, but Goslin&#x27;s brother Dick</span><br><span class="ln">Allowed she wuz the teacher from the camp on Roarin&#x27; Crick,</span><br><span class="ln">That had come to pass some foreign tongue with them uv our alite</span><br><span class="ln">Ez wuz at the high-toned party down at Sorry Tom&#x27;s that night.</span><br><span class="ln">We let it drop--this matter uv the lady--there an&#x27; then,</span><br><span class="ln">An&#x27; we never heerd, nor wanted to, of Charlotte Rooze again,</span><br><span class="ln">An&#x27; the Colorado wimmin-folks, ez like ez not, don&#x27;t know</span><br><span class="ln">How we vindicated all their sex a twenty year ago.</span><br></p>
 <p class="stanza"><span class="ln">For in these wondrous twenty years has come a mighty change,</span><br><span class="ln">An&#x27; most of them old pioneers have gone acrosst the range,</span><br><span class="ln">Way out into the silver land beyond the peaks uv snow,--</span><br><span class="ln">The land uv rest an&#x27; sunshine, where all good miners go.</span><br><span class="ln">I reckon that they love to look, from out the silver haze,</span><br><span class="ln">Upon that God&#x27;s own country where they spent sech happy days;</span><br><span class="ln">Upon the noble cities that have risen since they went;</span><br><span class="ln">Upon the camps an&#x27; ranches that are prosperous and content;</span><br><span class="ln">An&#x27; best uv all, upon those hills that reach into the air,</span><br><span class="ln">Ez if to clasp the loved ones that are waitin&#x27; over there.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Eugene Field, <i>A Little Book of Western Verse</i> (1889). Digital text: <a href="https://www.gutenberg.org/ebooks/9606" rel="noopener">Project Gutenberg 9606</a>. <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span></p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -71,6 +72,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/field/319">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/field/318/">← Béranger&#x27;s &quot;Ma Vocation&quot;</a><a class="pn next" href="/poem/field/320/">Prof. Vere de Blaw →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Eugene Field</h2><ul class="poem-links"><li><a href="/poem/field/42/"><span class="pl-title">Hushaby, Sweet My Own</span></a></li><li><a href="/poem/field/107/"><span class="pl-title">Crumpets and Tea</span></a></li><li><a href="/poem/field/171/"><span class="pl-title">Two Idylls from Bion the Smyrnean</span></a></li><li><a href="/poem/field/236/"><span class="pl-title">To G. C. (July 12, 1886)</span></a></li><li><a href="/poem/field/301/"><span class="pl-title">Horace III. 13</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

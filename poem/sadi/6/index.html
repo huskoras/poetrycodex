@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">O soul! if thou makest choice of humility,</span><br><span class="ln">The people of the world will be thy friends.</span><br><span class="ln">Humility will augment thy station,</span><br><span class="ln">Just as the moon gets light from the sun.</span><br><span class="ln">Humility is the source of intimacy,</span><br><span class="ln">For exalted will be the dignity of friendship.</span><br><span class="ln">Humility exalteth a man,</span><br><span class="ln">Humility is a decoration to men of position.</span><br><span class="ln">Every one who is human is humble;</span><br><span class="ln">Nought becometh a man save magnanimity.</span><br><span class="ln">The man of wisdom maketh choice of humility;</span><br><span class="ln">The bough laden with fruit rests upon the earth.</span><br><span class="ln">Humility will increase thy reputation,</span><br><span class="ln">It will get thee a place in the glorious Paradise.</span><br><span class="ln">Humility is the key of the gate of Heaven;</span><br><span class="ln">It is an ornament to position and dignity.</span><br><span class="ln">Whoever is accustomed to humility</span><br><span class="ln">Will enjoy rank and power.</span><br><span class="ln">Whoever is born to command,</span><br><span class="ln">It is more than delightful to find in him humility.</span><br><span class="ln">Humility will make thee beloved in the world</span><br><span class="ln">Thou wilt become dear in men&#x27;s hearts as their own soul.</span><br><span class="ln">Do not withhold humility from mankind,</span><br><span class="ln">For thus thou mayest withdraw thy neck (from perplexity) as it were a sword (from the scabbard).</span><br><span class="ln">Humility on the part of the exalted is commendable.</span><br><span class="ln">If a beggar be humble, it is his nature.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Sa'di, <i>Sadi's Scroll of Wisdom, with Introduction by Arthur N. Wollaston</i>, trans. Arthur N. Wollaston (The Wisdom of the East) (London: John Murray, 1906). Digital text: <a href="https://sacred-texts.com/isl/ssw/index.htm" rel="noopener">sacred-texts isl/ssw</a>. <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span></p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/sadi/6">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/sadi/5/">← In Condemnation of Parsimony</a><a class="pn next" href="/poem/sadi/7/">In Condemnation of Pride →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Sa&#x27;di of Shiraz</h2><ul class="poem-links"><li><a href="/poem/sadi/3/"><span class="pl-title">In Praise of Generosity</span></a></li><li><a href="/poem/sadi/11/"><span class="pl-title">In Condemnation of Oppression</span></a></li><li><a href="/poem/sadi/16/"><span class="pl-title">In Explanation of the Wine of Affection and Love</span></a></li><li><a href="/poem/sadi/21/"><span class="pl-title">In Condemnation of Lying</span></a></li><li><a href="/poem/sadi/25/"><span class="pl-title">From the Gulistan (The man who leaveth life behind)</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

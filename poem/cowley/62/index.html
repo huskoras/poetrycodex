@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -49,7 +50,7 @@
 <p class="stanza"><span class="ln">I; Others may with safety tell</span><br><span class="ln">The moderate Flames, which in them dwell;</span><br><span class="ln">And either find some Med&#x27;icine there,</span><br><span class="ln">Or cure themselves ev&#x27;en by Despair;</span><br><span class="ln">My Love&#x27;s so great, that it might prove</span><br><span class="ln">Dang&#x27;erous, to tell her that I Love.</span><br><span class="ln">So tender is my wound, it must not bear</span><br><span class="ln">Any salute, though of the kindest ayr.</span><br></p>
 <p class="stanza"><span class="ln">I would not have her know the pain,</span><br><span class="ln">The Torments for her I sustain.</span><br><span class="ln">Lest too much goodness make her throw</span><br><span class="ln">Her Love upon a Fate too low.</span><br><span class="ln">Forbid it Heaven my Life should be</span><br><span class="ln">Weigh&#x27;d with her least Conveniencie:</span><br><span class="ln">No; let me perish rather with my grief,</span><br><span class="ln">Then to her disadvantage find relief.</span><br><span class="ln">Yet when I dye, my last breath shall</span><br><span class="ln">Grow bold, and plainly tell her all.</span><br><span class="ln">Like covetous Men who ne&#x27;r descry,</span><br><span class="ln">Their dear hid Treasures till they dy.</span><br><span class="ln">Ah fairest Maid, how will it chear</span><br><span class="ln">My Ghost, to get from Thee a tear!</span><br><span class="ln">But take heed; for if me thou Pitiest then,</span><br><span class="ln">Twenty to one but I shall live agen.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Abraham Cowley, <i>Poems</i> (London: Printed for Humphrey Moseley, 1656). Digital text: <a href="https://quod.lib.umich.edu/e/eebo/A34829.0001.001" rel="noopener">EEBO-TCP A34829</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -61,6 +62,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/cowley/62">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/cowley/61/">← Against Fruition.</a><a class="pn next" href="/poem/cowley/63/">The given Heart. →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Abraham Cowley</h2><ul class="poem-links"><li><a href="/poem/cowley/2/"><span class="pl-title">On the Death of Sir Henry Wootton.</span></a></li><li><a href="/poem/cowley/32/"><span class="pl-title">ELEGIE UPON ANACREON, Who was choaked by a GRAPE-STONE.</span></a></li><li><a href="/poem/cowley/65/"><span class="pl-title">The Resolution.</span></a></li><li><a href="/poem/cowley/94/"><span class="pl-title">Impossibilities.</span></a></li><li><a href="/poem/cowley/124/"><span class="pl-title">2.</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -53,7 +54,7 @@
 <p class="stanza"><span class="ln">O Queen of the grief without knowledge,</span><br><span class="ln">of the courage that may not avail,</span><br><span class="ln">Of the longing that may not attain,</span><br><span class="ln">of the love that shall never forget,</span><br><span class="ln">More joy than the gladness of laughter</span><br><span class="ln">thy voice hath amidst of its wail:</span><br><span class="ln">More hope than of pleasure fulfilled</span><br><span class="ln">amidst of thy blindness is set;</span><br><span class="ln">More glorious than gaining of all</span><br><span class="ln">thine unfaltering hand that shall fail:</span><br><span class="ln">For what is the mark on thy brow</span><br><span class="ln">but the brand that thy Brynhild doth bear?</span><br><span class="ln">Lone once, and loved and undone</span><br><span class="ln">by a love that no ages outwear.</span><br></p>
 <p class="stanza"><span class="ln">Ah! when thy Balder comes back,</span><br><span class="ln">and bears from the heart of the Sun</span><br><span class="ln">Peace and the healing of pain,</span><br><span class="ln">and the wisdom that waiteth no more;</span><br><span class="ln">And the lilies are laid on thy brow</span><br><span class="ln">&#x27;mid the crown of the deeds thou hast done;</span><br><span class="ln">And the roses spring up by thy feet</span><br><span class="ln">that the rocks of the wilderness wore.</span><br><span class="ln">Ah! when thy Balder comes back</span><br><span class="ln">and we gather the gains he hath won,</span><br><span class="ln">Shall we not linger a little</span><br><span class="ln">to talk of thy sweetness of old,</span><br><span class="ln">Yea, turn back awhile to thy travail</span><br><span class="ln">whence the Gods stood aloof to behold?</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> William Morris, <i>Poems by the Way &amp; Love Is Enough</i> (London, New York, Bombay and Calcutta: Longmans, Green, and Co, 1907). Digital text: <a href="https://www.gutenberg.org/ebooks/15311" rel="noopener">Project Gutenberg 15311</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -65,6 +66,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/morris/13">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/morris/12/">← A Death Song</a><a class="pn next" href="/poem/morris/14/">The Raven →</a></nav>
+      <section class="poet-poems more-by"><h2>More by William Morris</h2><ul class="poem-links"><li><a href="/poem/morris/16/"><span class="pl-title">Spring&#x27;s Bedfellow</span></a></li><li><a href="/poem/morris/53/"><span class="pl-title">Pomona</span></a></li><li><a href="/poem/morris/90/"><span class="pl-title">The Emperor</span></a></li><li><a href="/poem/morris/127/"><span class="pl-title">The Sailing of the Sword</span></a></li><li><a href="/poem/morris/164/"><span class="pl-title">The Workers</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

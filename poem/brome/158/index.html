@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -52,7 +53,7 @@
 <p class="stanza"><span class="ln">And shall like Scripture be the Rule of good</span><br><span class="ln">To those that shall survive the flaming flood:</span><br><span class="ln">Whose syllables are Libraries, and can</span><br><span class="ln">Make a small volume turn a Vatican.</span><br><span class="ln">So th&#x27; hunted Bzoar when he&#x27;s sure to dye,</span><br><span class="ln">Bequeaths his cordials to his enemy.</span><br></p>
 <p class="stanza"><span class="ln">Rest Royal dust, and thank the storms that drove</span><br><span class="ln">Against their will you to your haven above.</span><br><span class="ln">They have but freed you from those waves that curl&#x27;d</span><br><span class="ln">Their bloudy power to drown this boistrous world:</span><br><span class="ln">They&#x27;ve but chang&#x27;d Throne for throne, and Crown for Crown;</span><br><span class="ln">You took a glorious, laid a thorny down.</span><br><span class="ln">You sit among your Peers with Saints and Kings,</span><br><span class="ln">View how we plot for sublunary things;</span><br><span class="ln">And labour for our ruine; you did fall</span><br><span class="ln">Just like our Saviour, for the sins of all,</span><br><span class="ln">And for your own; for in this impious time,</span><br><span class="ln">Virtue&#x27;s a vice, and piety&#x27;s a crime.</span><br><span class="ln">The sum of all whose faults being understood,</span><br><span class="ln">Is this, We were too bad, and you too good,</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Alexander Brome, <i>Songs and Other Poems by Alex. Brome, Gent</i>, Second edition, corrected and enlarged (London: Printed for Henry Brome, at the Gun in Ivy Lane, 1664). Digital text: <a href="https://github.com/textcreationpartnership/A29623" rel="noopener">EEBO-TCP A29623</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -64,6 +65,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/brome/158">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/brome/157/">← Epistle LIII. Upon the Kings imprisonment</a><a class="pn next" href="/poem/brome/159/">Epistle LV. On the Kings Death →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Alexander Brome</h2><ul class="poem-links"><li><a href="/poem/brome/12/"><span class="pl-title">Song XIII. To his Mistress</span></a></li><li><a href="/poem/brome/56/"><span class="pl-title">Song XII. The Companion</span></a></li><li><a href="/poem/brome/100/"><span class="pl-title">Ballad XIII. A New Ballad</span></a></li><li><a href="/poem/brome/143/"><span class="pl-title">Epistle XXXIX. To his Mistress married to another</span></a></li><li><a href="/poem/brome/190/"><span class="pl-title">Epigram XXV. On a Spartan Lady</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -55,7 +56,7 @@
 <p class="stanza"><span class="ln">Now let us with a spell invoke</span><br><span class="ln">The full-orb&#x27;d moon to grieve our eyes;</span><br><span class="ln">Not bright, not bright, but, with a cloud</span><br><span class="ln">Lapp&#x27;d all about her, let her rise</span><br><span class="ln">All pale and dim, as if from rest</span><br><span class="ln">The ghost of the late-buried sun</span><br><span class="ln">Had crept into the skies.</span><br><span class="ln">The Moon! she is the source of sighs,</span><br><span class="ln">The very face to make us sad;</span><br><span class="ln">If but to think in other times</span><br><span class="ln">The same calm quiet look she had,</span><br><span class="ln">As if the world held nothing base,</span><br><span class="ln">Of vile and mean, of fierce and bad;</span><br><span class="ln">The same fair light that shone in streams,</span><br><span class="ln">The fairy lamp that charmed the lad;</span><br><span class="ln">For so it is, with spent delights</span><br><span class="ln">She taunts men&#x27;s brains, and makes them mad.</span><br></p>
 <p class="stanza"><span class="ln">All things are touch&#x27;d with Melancholy,</span><br><span class="ln">Born of the secret soul&#x27;s mistrust,</span><br><span class="ln">To feel her fair ethereal wings</span><br><span class="ln">Weigh&#x27;d down with vile degraded dust;</span><br><span class="ln">Even the bright extremes of joy</span><br><span class="ln">Bring on conclusions of disgust,</span><br><span class="ln">Like the sweet blossoms of the May,</span><br><span class="ln">Whose fragrance ends in must.</span><br><span class="ln">O give her, then, her tribute just,</span><br><span class="ln">Her sighs and tears, and musings holy;</span><br><span class="ln">There is no music in the life</span><br><span class="ln">That sounds with idiot laughter solely;</span><br><span class="ln">There&#x27;s not a string attuned to mirth,</span><br><span class="ln">But has its chord in Melancholy.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Thomas Hood, <i>The Poetical Works of Thomas Hood, with Biographical Introduction by William Michael Rossetti</i>, Enlarged and revised edition (New York: A. L. Burt Company). Digital text: <a href="https://www.gutenberg.org/ebooks/15652" rel="noopener">Project Gutenberg 15652</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -67,6 +68,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/hood/11">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/hood/10/">← Ruth</a><a class="pn next" href="/poem/hood/12/">The Dream of Eugene Aram →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Thomas Hood</h2><ul class="poem-links"><li><a href="/poem/hood/1/"><span class="pl-title">The Two Peacocks of Bedfont</span></a></li><li><a href="/poem/hood/70/"><span class="pl-title">A Serenade</span></a></li><li><a href="/poem/hood/135/"><span class="pl-title">Her Majesty&#x27;s Visit to the City</span></a></li><li><a href="/poem/hood/200/"><span class="pl-title">The Kangaroos</span></a></li><li><a href="/poem/hood/265/"><span class="pl-title">By ev&#x27;ry sweet tradition of true hearts</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">Long had the bright Thealma lain obscure,</span><br><span class="ln">Her beauteous charms that might the world allure,</span><br><span class="ln">Lay like rough diamonds, in the mine, unknown,</span><br><span class="ln">By all the sons of folly trampled on,</span><br><span class="ln">Till your kind hand unveil&#x27;d her lovely face,</span><br><span class="ln">And gave her vigour to exert her rays:</span><br><span class="ln">Happy old man, whose worth all mankind knows,</span><br><span class="ln">Except thyself, who charitably shows</span><br><span class="ln">The ready road to Virtue and to Praise,</span><br><span class="ln">The way to many long and happy days;</span><br><span class="ln">The noble art of generous Piety,</span><br><span class="ln">And how to compass an Euthanasy!</span><br><span class="ln">Hence did he learn the skill of living well,</span><br><span class="ln">The bright Thealma was his oracle;</span><br><span class="ln">Inspir&#x27;d by Her, he knows no anxious cares</span><br><span class="ln">In near a century of happy years;</span><br><span class="ln">Easy he lives, and easy shall he lie</span><br><span class="ln">On the soft bosom of Eternity.</span><br><span class="ln">As long as Spenser&#x27;s noble flames shall burn,</span><br><span class="ln">And deep devotion shall attend his urn;</span><br><span class="ln">As long as Chalkhill&#x27;s venerable name</span><br><span class="ln">With humble emulation shall enflame</span><br><span class="ln">Posterity, and fill the rolls of fame,</span><br><span class="ln">Your memory shall ever be secure,</span><br><span class="ln">And long beyond our short-liv&#x27;d praise endure;</span><br><span class="ln">As Phidias in Minerva&#x27;s shield did live,</span><br><span class="ln">And shar&#x27;d that immortality he alone could give.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Thomas Flatman, <i>Poems and Songs</i>, Fourth edition (London: Printed for Benjamin Tooke, 1686). Digital text: <a href="https://github.com/textcreationpartnership/A39655" rel="noopener">EEBO-TCP A39655</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/flatman/74">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/flatman/73/">← On the King&#x27;s Return to White-hall, After His Summer&#x27;s Progress, 1684</a><a class="pn next" href="/poem/flatman/75/">Pastoral Dialogue →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Thomas Flatman</h2><ul class="poem-links"><li><a href="/poem/flatman/12/"><span class="pl-title">On Mr. Johnson&#x27;s Several Shipwrecks</span></a></li><li><a href="/poem/flatman/30/"><span class="pl-title">Love&#x27;s Bravo</span></a></li><li><a href="/poem/flatman/47/"><span class="pl-title">Phyllis Withdrawn</span></a></li><li><a href="/poem/flatman/65/"><span class="pl-title">On Poverty</span></a></li><li><a href="/poem/flatman/86/"><span class="pl-title">Song: &#x27;Oh no, oh no! it cannot be that I&#x27;</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

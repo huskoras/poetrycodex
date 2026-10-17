@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -49,7 +50,7 @@
 <p class="stanza"><span class="ln">    Ah! were she pitiful as she is fair,</span><br><span class="ln">    Or but as mild as she is seeming so,</span><br><span class="ln">    Then were my hopes greater than my despair,</span><br><span class="ln">    Then all the world were heaven, nothing woe.</span><br><span class="ln">    Ah! were her heart relenting as her hand,</span><br><span class="ln">    That seems to melt even with the mildest touch,</span><br><span class="ln">    Then knew I where to seat me in a land</span><br><span class="ln">    Under wide heavens, but yet there is not such.</span><br><span class="ln">    So as she shows she seems the budding rose,</span><br><span class="ln">    Yet sweeter far than is an earthly flower;</span><br><span class="ln">    Sovran of beauty, like the spray she grows;</span><br><span class="ln">    Compass’d she is with thorns and canker’d flower.</span><br><span class="ln">      Yet were she willing to be pluck’d and worn,</span><br><span class="ln">      She would be gather’d, though she grew on thorn.</span><br></p>
 <p class="stanza"><span class="ln">    Ah! when she sings, all music else be still,</span><br><span class="ln">    For none must be comparèd to her note;</span><br><span class="ln">    Ne’er breathed such glee from Philomela’s bill,</span><br><span class="ln">    Nor from the morning-singer’s swelling throat.</span><br><span class="ln">    Ah! when she riseth from her blissful bed</span><br><span class="ln">    She comforts all the world as doth the sun,</span><br><span class="ln">    And at her sight the night’s foul vapour’s fled;</span><br><span class="ln">    When she is set the gladsome day is done.</span><br><span class="ln">      O glorious sun, imagine me the west,</span><br><span class="ln">      Shine in my arms, and set thou in my breast!</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Arthur Quiller-Couch, ed., <i>The Oxford Book of English Verse, 1250-1900</i> (Oxford: Clarendon Press, 1900). Digital text: <a href="https://www.gutenberg.org/ebooks/66619" rel="noopener">Project Gutenberg 66619</a>. <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span></p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -61,6 +62,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/greene/1">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/greene/0/">← Samela</a><a class="pn next" href="/poem/greene/2/">Sephestia’s Lullaby →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Robert Greene</h2><ul class="poem-links"><li><a href="/poem/greene/7/"><span class="pl-title">Menaphon&#x27;s Roundelay</span></a></li><li><a href="/poem/greene/12/"><span class="pl-title">Anacreon&#x27;s Third Ode, Otherwise</span></a></li><li><a href="/poem/greene/18/"><span class="pl-title">The Palmer’s Ode</span></a></li><li><a href="/poem/greene/23/"><span class="pl-title">Philomela’s Second Ode</span></a></li><li><a href="/poem/greene/28/"><span class="pl-title">Fair is my Love for April’s in her Face</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

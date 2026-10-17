@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -57,7 +58,7 @@
 <p class="stanza"><span class="ln">Come all ye young Dam&#x27;sels both swarthy and fair,</span><br><span class="ln">This is the best place to put off your Crakt Ware;</span><br><span class="ln">Here&#x27;s Chapmen good store who too&#x27;t stifly will stand</span><br><span class="ln">And scorn to put Coin that is false in your Hand:</span><br><span class="ln">While you&#x27;re there abiding,</span><br><span class="ln">And on the Ice Gliding,</span><br><span class="ln">Let &#x27;em say what they will, &#x27;tis but a back-sliding:</span><br><span class="ln">But if ye shou&#x27;d Prove, then say I am a Prophet,</span><br><span class="ln">Tho&#x27;t&#x27;s a Slippery trick there shall come no more of it</span><br></p>
 <p class="stanza"><span class="ln">There&#x27;s many more Tricks, but too long to be told,</span><br><span class="ln">Which are not all new, tho&#x27; there&#x27;s none of &#x27;em old.</span><br><span class="ln">There&#x27;s the Fellow that Printeth the Old Bailey Trial,</span><br><span class="ln">Who to all the dull Printers does give a Denyal;</span><br><span class="ln">Hee&#x27;ll Print for a Sice,</span><br><span class="ln">(For that is his price</span><br><span class="ln">Your Name (that you brag may &#x27;twas done) on the Ice.</span><br><span class="ln">And Faith I do think it a very fine thing,</span><br><span class="ln">So my Tale&#x27;s at an end: but first, God save the KING</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> <i>English Broadside Ballads, as transcribed by the Text Creation Partnership (single…</i> (EEBO-TCP / Evans-TCP) (Various London printers and publishers (five American sheets from Boston and Cambridge, Massachusetts), 1540-1700). Digital text: <a href="https://github.com/textcreationpartnership/Texts" rel="noopener">EEBO-TCP 674 TCP texts (A-, B- and N-series numbers, e.g. A56102, B03301; the number is in each poem&#x27;s note)</a>. <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span></p>
+      
       <div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">Full title: FREEZLAND-FAIR, OR THE Icey Bear-Garden. To the tune of Packington&#x27;s pound. TCP A40438 (1684).</p>
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -69,6 +70,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/anonymous-english-broadsides/400">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/anonymous-english-broadsides/399/">← An Epitaph on Mr. John Smith</a><a class="pn next" href="/poem/anonymous-english-broadsides/401/">Prologue →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Anonymous (English broadside ballads)</h2><ul class="poem-links"><li><a href="/poem/anonymous-english-broadsides/100/"><span class="pl-title">The Discontented Lover</span></a></li><li><a href="/poem/anonymous-english-broadsides/228/"><span class="pl-title">The Countrey Farmer</span></a></li><li><a href="/poem/anonymous-english-broadsides/357/"><span class="pl-title">A Tory in a Whig&#x27;s Coat</span></a></li><li><a href="/poem/anonymous-english-broadsides/488/"><span class="pl-title">A Panegyric Upon the Blessed Virgin Mary</span></a></li><li><a href="/poem/anonymous-english-broadsides/617/"><span class="pl-title">Mrs. Judith Hull, of Boston, in N</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

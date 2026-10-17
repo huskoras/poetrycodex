@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">THou mighty gulfe, insatiat cormorant,</span><br><span class="ln">Deride me not, though I seeme petulant</span><br><span class="ln">To fall into thy chops. Let others pray</span><br><span class="ln">For euer their faire Poems flourish may.</span><br><span class="ln">But as for mee, hungry Obliuion</span><br><span class="ln">Deuoure me quick, accept my orizon:</span><br><span class="ln">My earnest prayers, which doe importune thee,</span><br><span class="ln">With gloomie shade of thy still Emperie,</span><br><span class="ln">To vaile both me and my rude poesie.</span><br><span class="ln">Farre worthier lines in silence of thy state</span><br><span class="ln">Doe sleepe securely free from loue or hate,</span><br><span class="ln">From which this liuing, nere can be exempt,</span><br><span class="ln">But whilst it breathes will hate and furie tempt.</span><br><span class="ln">Then close his eyes with thy all-dimming hand,</span><br><span class="ln">Which not right glorious actions can with-stand.</span><br><span class="ln">Peace hatefull tongues, I now in silence pace,</span><br><span class="ln">Vnlesse some hound doe wake me from my place,</span><br><span class="ln">I with this sharpe, yet well meant poesie,</span><br><span class="ln">Will sleepe secure, right free from iniurie</span><br><span class="ln">Of cancred hate, or rankest villanie.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> John Marston, <i>The Scourge of Villanie: Three Bookes of Satyres</i> (London: Printed by I[ames] R[oberts] and sold by John Buzbie, in Paul's Churchyard, at the sign of the Crane, 1598). Digital text: <a href="https://raw.githubusercontent.com/textcreationpartnership/A07078/master/A07078.xml" rel="noopener">EEBO-TCP A07078</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/marston/25">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/marston/24/">← The Scourge of Villanie, Satyre X</a><span></span></nav>
+      <section class="poet-poems more-by"><h2>More by John Marston</h2><ul class="poem-links"><li><a href="/poem/marston/3/"><span class="pl-title">The Authour in Prayse of His Precedent Poem</span></a></li><li><a href="/poem/marston/8/"><span class="pl-title">Certaine Satyres, Satyre IV: Parua magna, magna nulla</span></a></li><li><a href="/poem/marston/13/"><span class="pl-title">The Scourge of Villanie, Satyre II</span></a></li><li><a href="/poem/marston/18/"><span class="pl-title">The Scourge of Villanie, Satyre V</span></a></li><li><a href="/poem/marston/23/"><span class="pl-title">The Scourge of Villanie, Satyre IX</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

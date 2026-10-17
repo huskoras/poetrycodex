@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">Let no prophane, ignoble foot tread here,</span><br><span class="ln">This hallowed piece of earth, Dorset lyes there:</span><br><span class="ln">A small poor relique of a noble spirit,</span><br><span class="ln">Free as the air, and ample as his merit:</span><br><span class="ln">A soul refin’d, no proud forgetting lord,</span><br><span class="ln">But mindful of mean names, and of his word:</span><br><span class="ln">Who lov’d men for his honour, not his ends,</span><br><span class="ln">And had the noblest way of getting friends</span><br><span class="ln">By loving first, and yet who knew the court,</span><br><span class="ln">But understood it better by report</span><br><span class="ln">Than practice: he nothing took from thence</span><br><span class="ln">But the kings favour for his recompence.</span><br><span class="ln">Who, for religion or his countreys good,</span><br><span class="ln">Neither his honour valued, nor his blood.</span><br><span class="ln">Rich in the worlds opinion, and mens praise,</span><br><span class="ln">And full in all we could desire, but days.</span><br><span class="ln">He that is warn’d of this, and shall forbear</span><br><span class="ln">To vent a sigh for him, or shed a tear,</span><br><span class="ln">May he live long scorn’d, and unpitied fall,</span><br><span class="ln">And want a mourner at his funeral!</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Richard Corbet, <i>The Poems of Richard Corbet, late Bishop of Oxford and of Norwich, edited by Octavius Gilchrist</i>, 4th ed., with considerable additions (London: Longman, Hurst, Rees, and Orme, 1807). Digital text: <a href="https://archive.org/details/poemsofrichardco00corbuoft" rel="noopener">Internet Archive poemsofrichardco00corbuoft</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/corbet/18">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/corbet/17/">← A Letter to the Duke of Buckingham, being with the Prince in Spaine</a><a class="pn next" href="/poem/corbet/19/">To the New-Borne Prince, upon the Apparition of a Starr, and the Following Ecclypse →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Richard Corbet</h2><ul class="poem-links"><li><a href="/poem/corbet/4/"><span class="pl-title">Upon Mistris Mallet, an Unhandsome Gentlewoman, who made Love unto Him</span></a></li><li><a href="/poem/corbet/12/"><span class="pl-title">An Exhortation to Mr. John Hammon, Minister in the Parish of Bewdly</span></a></li><li><a href="/poem/corbet/23/"><span class="pl-title">Certain Few Woordes Spoken concerninge one Benet Corbett after her Decease</span></a></li><li><a href="/poem/corbet/31/"><span class="pl-title">A Non Sequitur</span></a></li><li><a href="/poem/corbet/39/"><span class="pl-title">Upon Fairford Windows</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

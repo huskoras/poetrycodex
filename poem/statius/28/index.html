@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -53,7 +54,7 @@
 <p>Happy Optatus, who in pride of hale youth shalt face every march and approach the rampart, and — so the Emperor&#x27;s star be gracious ! — shalt thyself too be girded up for battle and be the untiring comrade of thy heart&#x27;s friend, even as loyal Pylades bore him, and as the son of Menoetius fought before Troy. Such is the love, and such the harmony (long may it endure !) between thee and thy leader. But I am losing the strength of my youth. In Rome with prayer and vow I will strengthen your hearts. Alas, for if, as of old, it chance that I rehearse my plaintive song and the Senators of Rome gather to listen, Crispinus will be missing ; along each tier my Achilles will look for him in vain. But you, Crispinus, will return more mighty : (a Poet&#x27;s promises come true) and he, who to-day throws open to you the camp and its powers, will also grant to you to hold every preferment and to be surrounded with the proud emblems and sit, like your fathers, upon the throne of office. But how now? From Trojan Alba&#x27;s lofty heights, whence our Deity upon earth looks out upon towered Rome hard by, what messenger comes here, Crispinus, outstripping rumour, and fills your home? Surely was just saying : &#x27;a Poet&#x27;s auguries come true&#x27; ! See, in his might Caesar unbars for you the threshold of preferment and to your hands commits the sword of Ausonia. Forward ! Be strong : and rise to the height of such great favours, happy in sworn allegiance even now to our great chief, and in your keeping the imperial sword of hallowed Germanicus ! No meaner lot is this than if the Lord of battles himself gave you his eagles and set his grim helmet upon your brow. Forward with a will, and learn to deserve honour yet greater !</p>
       </div>
       <p class="prose-note">This translation is printed as prose in its source edition.</p>
-      <p class="book-source"><span class="bs-label">Source</span> Statius, <i>Silvae. Translated with Introduction and Notes</i>, trans. D. A. Slater (Oxford: Clarendon Press, 1908). Digital text: <a href="https://archive.org/details/silvaetranslated00statuoft" rel="noopener">Internet Archive silvaetranslated00statuoft</a>.</p>
+      
       <div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">Prose translation.</p>
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -65,6 +66,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/statius/28">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/statius/27/">← Silvae V.1: Consolation to Abascantus on the Death of His Wife Priscilla</a><a class="pn next" href="/poem/statius/29/">Silvae V.3: In Memory of the Poet&#x27;s Father →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Statius</h2><ul class="poem-links"><li><a href="/poem/statius/9/"><span class="pl-title">Silvae II.4: In Memory of Melior&#x27;s Parrot</span></a></li><li><a href="/poem/statius/21/"><span class="pl-title">Silvae IV.4: A Letter to Marcellus</span></a></li><li><a href="/poem/statius/36/"><span class="pl-title">Silvae I.5 (Mozley): The Baths of Claudius Etruscus</span></a></li><li><a href="/poem/statius/48/"><span class="pl-title">Silvae III.4 (Mozley): The Tresses of Flavius Earinus</span></a></li><li><a href="/poem/statius/61/"><span class="pl-title">Silvae V.3 (Mozley): The Poet’s Lament for His Father</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

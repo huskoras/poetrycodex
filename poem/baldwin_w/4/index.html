@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -73,7 +74,7 @@
 <p class="stanza"><span class="ln">Where vnto mee recounting all my faultes,</span><br><span class="ln">As murdering of duke Humfrey in his bed,</span><br><span class="ln">And how I had brought all the realme to naughtes,</span><br><span class="ln">Causing the king vnlawfully to wed,</span><br><span class="ln">There was no grace but I must lose my head:</span><br><span class="ln">Wherefore hee made mee [to] shriue mee in his bote,</span><br><span class="ln">And on the brinke my necke in two hee smote.</span><br></p>
 <p class="stanza"><span class="ln">This was mine end: which was by reason due</span><br><span class="ln">To mee, and such as other’s deaths procure:</span><br><span class="ln">Therefore bee bold to write, for it is true,</span><br><span class="ln">That who so doth such practise put in vre,</span><br><span class="ln">Of due reward at last shal be most sure,</span><br><span class="ln">For God is iust, whose stroke delayed long,</span><br><span class="ln">Doth light at last with paine more sharpe and strong.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Joseph Haslewood, ed., <i>Mirror for Magistrates, in Five Parts</i>, Vol. I; Vol. II (Parts 1 and 2) (London: Printed for Lackington, Allen, and Co., and Longman, Hurst, Rees, Orme, and Brown (T. Bensley, printer), 1815). Digital text: <a href="https://www.gutenberg.org/ebooks/72463" rel="noopener">Project Gutenberg 72463</a>.</p>
+      
       <div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">Original heading: “How Lord William De la pole, Duke of Suffolke, was worthely banished, for abusing his King, and causing the destruction of the good Duke Humfrey, Anno 1450.” From A Mirror for Magistrates, Part III (reprinted from the edition of 1587), in Joseph Haslewood’s reprint (London: Lackington, Allen, 1815), legend 65. Baldwin’s prose links between the tragedies are omitted.</p>
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -85,6 +86,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/baldwin_w/4">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/baldwin_w/3/">← The Fall of King James the First of Scotland, Murdered by His Own Subjects</a><a class="pn next" href="/poem/baldwin_w/5/">The Fall of Jack Cade, Rebel, Punished for His Treasons →</a></nav>
+      <section class="poet-poems more-by"><h2>More by William Baldwin</h2><ul class="poem-links"><li><a href="/poem/baldwin_w/0/"><span class="pl-title">The Fall of Henry Percy, Earl of Northumberland, Put to Death at York</span></a></li><li><a href="/poem/baldwin_w/2/"><span class="pl-title">The Fall of Thomas Montague, Earl of Salisbury, Slain at Orleans by a Piece of Ordnance</span></a></li><li><a href="/poem/baldwin_w/7/"><span class="pl-title">The Infamous End of Lord Tiptoft, Earl of Worcester</span></a></li><li><a href="/poem/baldwin_w/10/"><span class="pl-title">The Fall of George Plantagenet, Duke of Clarence, Wrongfully Imprisoned and Murdered</span></a></li><li><a href="/poem/baldwin_w/12/"><span class="pl-title">The Fall of Collingbourne, Cruelly Executed for Making a Foolish Rhyme</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

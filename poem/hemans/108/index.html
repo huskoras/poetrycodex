@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -53,7 +54,7 @@
 <p class="stanza"><span class="ln">  “Still sleep’st thou, Roman? Son of Victory, rise!</span><br><span class="ln">Wake to obey th’ avenging Destinies!</span><br><span class="ln">Shed by thy mandate, soon thy country’s blood</span><br><span class="ln">Shall swell and darken Tiber’s yellow flood!</span><br><span class="ln">My children’s manès call--awake! prepare</span><br><span class="ln">The feast they claim!--exult in Rome’s despair!</span><br><span class="ln">Be thine ear closed against her suppliant cries,</span><br><span class="ln">Bid thy soul triumph in her agonies;</span><br><span class="ln">Let carnage revel e’en her shrines among,</span><br><span class="ln">Spare not the valiant, pity not the young!</span><br><span class="ln">Haste! o’er her hills the sword’s libation shed,</span><br><span class="ln">And wreak the curse of Carthage on her head!”</span><br></p>
 <p class="stanza"><span class="ln">  The vision flies--a mortal step is near,</span><br><span class="ln">Whose echoes vibrate on the slumberer’s ear;</span><br><span class="ln">He starts, he wakes to woe--before him stands</span><br><span class="ln">Th’ unwelcome messenger of harsh commands,</span><br><span class="ln">Whose faltering accents tell the exiled chief</span><br><span class="ln">To seek on other shores a home for grief.</span><br><span class="ln">--Silent the wanderer sat--but on his cheek</span><br><span class="ln">The burning glow far more than words might speak;</span><br><span class="ln">And, from the kindling of his eye, there broke</span><br><span class="ln">Language where all th’ indignant soul awoke,</span><br><span class="ln">Till his deep thought found voice: then, calmly stern,</span><br><span class="ln">And sovereign in despair, he cried, “Return!</span><br><span class="ln">Tell him who sent thee hither, thou hast seen</span><br><span class="ln">Marius, the exile, rest where Carthage once hath been!”</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Felicia Hemans, <i>The Poems of Felicia Hemans: Complete Copyright Edition</i> (London; Edinburgh: William P. Nimmo, 1875). Digital text: <a href="https://www.gutenberg.org/ebooks/66785" rel="noopener">Project Gutenberg 66785</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -65,6 +66,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/hemans/108">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/hemans/107/">← The Caravan in the Deserts</a><a class="pn next" href="/poem/hemans/109/">A Tale of the Fourteenth Century →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Felicia Hemans</h2><ul class="poem-links"><li><a href="/poem/hemans/32/"><span class="pl-title">The Dial of Flowers</span></a></li><li><a href="/poem/hemans/157/"><span class="pl-title">The Farewell to the Dead</span></a></li><li><a href="/poem/hemans/279/"><span class="pl-title">The Minster</span></a></li><li><a href="/poem/hemans/401/"><span class="pl-title">Near Thee! Still Near Thee!</span></a></li><li><a href="/poem/hemans/523/"><span class="pl-title">The Raising of the Widow&#x27;s Son</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

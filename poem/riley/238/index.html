@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -49,7 +50,7 @@
 <p class="stanza"><span class="ln">      1</span><br><span class="ln">The ticking-- ticking-- ticking of the clock--!</span><br><span class="ln">That vexed me so last night--! &quot;For though Time keeps</span><br><span class="ln">Such drowsy watch,&quot; I moaned, &quot;he never sleeps,</span><br><span class="ln">But only nods above the world to mock</span><br><span class="ln">Its restless occupant, then rudely rock</span><br><span class="ln">It as the cradle of a babe that weeps!&quot;</span><br><span class="ln">I seemed to see the seconds piled in heaps</span><br><span class="ln">Like sand about me; and at every shock</span><br><span class="ln">O&#x27; the bell, the piled sands were swirled away</span><br><span class="ln">As by a desert-storm that swept the earth</span><br><span class="ln">Stark as a granary floor, whereon the gray</span><br><span class="ln">And mist-bedrizzled moon amidst the dearth</span><br><span class="ln">Came crawling, like a sickly child, to lay</span><br><span class="ln">Its pale face next mine own and weep for day.</span><br></p>
 <p class="stanza"><span class="ln">      2</span><br><span class="ln">Wait for the morning! Ah! We wait indeed</span><br><span class="ln">For daylight, we who toss about through stress</span><br><span class="ln">Of vacant-armed desires and emptiness</span><br><span class="ln">Of all the warm, warm touches that we need,</span><br><span class="ln">And the warm kisses upon which we feed</span><br><span class="ln">Our famished lips in fancy! May God bless</span><br><span class="ln">The starved lips of us with but one caress</span><br><span class="ln">Warm as the yearning blood our poor hearts bleed...!</span><br><span class="ln">A wild prayer--! Bite thy pillow, praying so--</span><br><span class="ln">Toss this side, and whirl that, and moan for dawn;</span><br><span class="ln">Let the clock&#x27;s seconds dribble out their woe,</span><br><span class="ln">And Time be drained of sorrow! Long ago</span><br><span class="ln">We heard the crowing cock, with answer drawn</span><br><span class="ln">As hoarsely sad at throat as sobs... Pray on!</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> James Whitcomb Riley, <i>Afterwhiles</i>, 1898 edition (Indianapolis: Bobbs-Merrill Company, 1898). Digital text: <a href="https://www.gutenberg.org/ebooks/15862" rel="noopener">Project Gutenberg 15862</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -61,6 +62,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/riley/238">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/riley/237/">← Indiana</a><a class="pn next" href="/poem/riley/239/">Grant →</a></nav>
+      <section class="poet-poems more-by"><h2>More by James Whitcomb Riley</h2><ul class="poem-links"><li><a href="/poem/riley/122/"><span class="pl-title">John Alden and Percilly</span></a></li><li><a href="/poem/riley/260/"><span class="pl-title">The Little Town O&#x27; Tailholt</span></a></li><li><a href="/poem/riley/395/"><span class="pl-title">We Must Get Home</span></a></li><li><a href="/poem/riley/530/"><span class="pl-title">A Summer Afternoon</span></a></li><li><a href="/poem/riley/665/"><span class="pl-title">Albumania</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

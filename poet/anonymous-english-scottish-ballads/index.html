@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -47,7 +48,7 @@
 <p>The popular ballads of England and Scotland are anonymous narrative songs, passed on by voice for generations before collectors wrote them down, mostly between the 15th and 18th centuries, so each ballad often survives in several differing versions. They tell of elves and ghosts, outlaws, border raids, feuds and unhappy lovers in plain, repeated formulas and refrains.</p>
 <p>This archive follows the selection of Arthur Quiller-Couch in The Oxford Book of Ballads (Clarendon Press, 1910), which gathers 176 ballads in seven books, from the supernatural and romantic pieces to the outlaw, historical and later broadside ballads. The editor keeps the Scots spellings of his sources.</p>
       </div>
-      <p class="section-label">Poems (234)</p>
+      <p class="section-label">Poems (291)</p>
       <ol class="poet-poems">
 <li><a href="/poem/anonymous-english-scottish-ballads/0/">Thomas the Rhymer</a></li>
 <li><a href="/poem/anonymous-english-scottish-ballads/1/">Tam Lin</a></li>
@@ -283,6 +284,63 @@
 <li><a href="/poem/anonymous-english-scottish-ballads/231/">The Yorkshire Horse-Dealer</a></li>
 <li><a href="/poem/anonymous-english-scottish-ballads/232/">Widdicombe Fair (1894 text)</a></li>
 <li><a href="/poem/anonymous-english-scottish-ballads/233/">The Gay Lady That Went to Church</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/234/">Jephthah Judge of Israel</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/235/">King Cophetua and the Beggar-Maid</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/236/">Willow, Willow, Willow</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/237/">Corydon&#x27;s Farewell to Phillis</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/238/">Gernutus the Jew of Venice</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/239/">Titus Andronicus&#x27;s Complaint</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/240/">King Leir and His Three Daughters</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/241/">The Frolicksome Duke, or the Tinker&#x27;s Good Fortune</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/242/">Winifreda</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/243/">Richard of Almaigne</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/244/">On the Death of K. Edward the First</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/245/">The Turnament of Tottenham</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/246/">For the Victory at Agincourt</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/247/">The Not-Browne Mayd</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/248/">Gentle Herdsman, Tell to Me</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/249/">As Ye Came from the Holy Land</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/250/">A Ballad of Luther, the Pope, a Cardinal, and a Husbandman</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/251/">John Anderson My Jo</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/252/">Little John Nobody</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/253/">Lady Anne Bothwell&#x27;s Lament</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/254/">Brave Lord Willoughbey</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/255/">The Winning of Cales</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/256/">Corydon&#x27;s Doleful Knell</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/257/">The Complaint of Conscience</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/258/">Plain Truth and Blind Ignorance</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/259/">The Wandering Jew</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/260/">The Old and Young Courtier</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/261/">The Downfall of Charing-Cross</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/262/">The Sale of Rebellious Houshold-Stuff</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/263/">Old Tom of Bedlam</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/264/">King Ryence&#x27;s Challenge</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/265/">King Arthur&#x27;s Death</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/266/">The Legend of King Arthur</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/267/">A Dyttie to Hey Downe</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/268/">The Ew-bughts, Marion</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/269/">The Legend of Sir Guy</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/270/">The Willow Tree</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/271/">The Lady&#x27;s Fall</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/272/">The Bride&#x27;s Burial</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/273/">Dulcina</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/274/">The Lady Isabella&#x27;s Tragedy</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/275/">The King of France&#x27;s Daughter</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/276/">A Lover of Late Was I</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/277/">The King and the Miller of Mansfield</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/278/">Queen Dido</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/279/">Robin Good-fellow</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/280/">The Fairy Queen</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/281/">The Birth of St. George</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/282/">St. George and the Dragon</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/283/">Love Will Find Out the Way</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/284/">George Barnwell</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/285/">The Spanish Virgin, or Effects of Jealousy</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/286/">Constant Penelope</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/287/">Valentine and Ursine</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/288/">The Dragon of Wantley</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/289/">St. George for England (First Part)</a></li>
+<li><a href="/poem/anonymous-english-scottish-ballads/290/">The Wanton Wife of Bath</a></li>
       </ol>
       <p class="read-in-archive"><a href="/#/poet/anonymous-english-scottish-ballads">See Anonymous (English and Scottish Ballads) in the full archive →</a></p>
     </article>

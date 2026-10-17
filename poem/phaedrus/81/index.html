@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">When I resolved my hand to stay</span><br><span class="ln">For this, that others might have play,</span><br><span class="ln">On reconsidering of my part</span><br><span class="ln">I soon recanted in my heart:</span><br><span class="ln">For if a rival should arise,</span><br><span class="ln">How can he possibly devise</span><br><span class="ln">The things that I have let alone,</span><br><span class="ln">Since each man&#x27;s fancy is his own,</span><br><span class="ln">And likewise colouring of the piece?--</span><br><span class="ln">It was not therefore mere caprice,</span><br><span class="ln">But strong reflection made me write:</span><br><span class="ln">Wherefore since you in tales delight,</span><br><span class="ln">Which I, in justice, after all,</span><br><span class="ln">Not Esop&#x27;s, but Esopian call;</span><br><span class="ln">Since he invented but a few;</span><br><span class="ln">I more, and some entirely new,</span><br><span class="ln">Keeping indeed the ancient style,</span><br><span class="ln">With fresh materials all the while.</span><br><span class="ln">As at your leisure you peruse</span><br><span class="ln">The fourth collection of my muse,</span><br><span class="ln">That you may not be at a stand,</span><br><span class="ln">A fifth shall shortly come to hand;</span><br><span class="ln">&#x27;Gainst which, if as against the rest,</span><br><span class="ln">Malignant cavillers protest,</span><br><span class="ln">Let them carp on, and make it plain</span><br><span class="ln">They carp at what they can&#x27;t attain.</span><br><span class="ln">My fame&#x27;s secure, since I can show</span><br><span class="ln">How men of eminence like you,</span><br><span class="ln">My little book transcribe and quote,</span><br><span class="ln">As like to live of classic note.</span><br><span class="ln">It is th&#x27; ambition of my pen</span><br><span class="ln">To win th&#x27; applause of learned men.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Phaedrus, <i>The Comedies of Terence and the Fables of Phædrus, literally translated into English…</i>, trans. Christopher Smart (Bohn's Classical Library) (London: George Bell &amp; Sons, 1887). Digital text: <a href="https://www.gutenberg.org/ebooks/25512" rel="noopener">Project Gutenberg 25512</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/phaedrus/81">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/phaedrus/80/">← Book IV: Epilogue to Eutychus</a><a class="pn next" href="/poem/phaedrus/82/">V.1 Demetrius and Menander →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Phaedrus</h2><ul class="poem-links"><li><a href="/poem/phaedrus/9/"><span class="pl-title">I.9 The Hare and the Sparrow</span></a></li><li><a href="/poem/phaedrus/27/"><span class="pl-title">I.28 The Fox and Eagle</span></a></li><li><a href="/poem/phaedrus/45/"><span class="pl-title">III.5 The Fly and the Mule</span></a></li><li><a href="/poem/phaedrus/63/"><span class="pl-title">IV.4 Esop and the Will</span></a></li><li><a href="/poem/phaedrus/84/"><span class="pl-title">V.3 The Bald Man and the Fly</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

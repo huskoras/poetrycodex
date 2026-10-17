@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -53,7 +54,7 @@
 <p class="stanza"><span class="ln">Around the Trojan&#x27;s LUGS flew peppering hot!</span><br><span class="ln">Till now AENEAS, fill&#x27;d with anxious dread,</span><br><span class="ln">Rush&#x27;d in between them, and, with words well-bred</span><br><span class="ln">Preserved alike the peace and DARES&#x27; head,</span><br><span class="ln">BOTH which the veteran much inclined to BREAK--</span><br><span class="ln">Then kindly thus the PUNISH&#x27;D youth bespake:</span><br><span class="ln">   Poor JOHNNY RAW! what madness could impel</span><br><span class="ln">So RUM a FLAT to face so PRIME a SWELL?</span><br><span class="ln">Sees&#x27;t thou not, boy, THE FANCY, heavenly Maid,</span><br><span class="ln">Herself descends to this great HAMMERER&#x27;S aid,</span><br><span class="ln">And, singling HIM from all her FLASH adorers,</span><br><span class="ln">Shines in his HITS, and thunders in his FLOORERS?</span><br><span class="ln">Then, yield thee, youth--nor such a SPOONEY be,</span><br><span class="ln">To think mere man can MILL a Deity!&quot;</span><br></p>
 <p class="stanza"><span class="ln">Thus spoke the Chief--and now, the SCRIMAGE o&#x27;er,</span><br><span class="ln">His faithful PALS the DONE-UP DARES bore</span><br><span class="ln">Back to his home, with tottering GAMS, sunk heart,</span><br><span class="ln">And MUNS and NODDLE PINK&#x27;D in every part.</span><br><span class="ln">While from his GOB the guggling CLARET gush&#x27;d,</span><br><span class="ln">And lots of GRINDERS, from their sockets crush&#x27;d,</span><br><span class="ln">Forth with the crimson tide in rattling fragments rush&#x27;d!</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> James Parton, ed., <i>The Humorous Poetry of the English Language, from Chaucer to Saxe, with Notes…</i> (New York: Mason Brothers, 1856). Digital text: <a href="https://www.gutenberg.org/ebooks/6652" rel="noopener">Project Gutenberg 6652</a>. <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span></p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -65,6 +66,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/moore/781">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/moore/780/">← The Fudges in England: Letter XI</a><a class="pn next" href="/poem/moore/782/">To Miss ----- →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Thomas Moore</h2><ul class="poem-links"><li><a href="/poem/moore/19/"><span class="pl-title">The Young May Moon</span></a></li><li><a href="/poem/moore/178/"><span class="pl-title">Written, on Passing Deadman&#x27;s Island, in the Gulf of St. Lawrence, Late in the Evening, September, 1804</span></a></li><li><a href="/poem/moore/337/"><span class="pl-title">Love Alone</span></a></li><li><a href="/poem/moore/497/"><span class="pl-title">To Caroline, Viscountess Valletort, Written at Lacock Abbey, January, 1832</span></a></li><li><a href="/poem/moore/656/"><span class="pl-title">The Cherries, a Parable</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

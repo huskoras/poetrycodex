@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -52,7 +53,7 @@
 <p class="stanza"><span class="ln">  To de front he went an&#x27; bravely fought de foe an&#x27; kep&#x27; his sperrit,</span><br><span class="ln">  An&#x27; his comerds said his whistle made &#x27;em strong when dey could hyeah it.</span><br><span class="ln">  When a saber er a bullet cut some frien&#x27; o&#x27; his&#x27;n down,</span><br><span class="ln">  An&#x27; de time &#x27;u&#x27;d come to trench him an&#x27; de boys &#x27;u&#x27;d gethah &#x27;roun&#x27;,</span><br><span class="ln">  An&#x27; dey could n&#x27;t sta&#x27;t a hymn-tune, mebbe none o&#x27; dem &#x27;u&#x27;d keer,</span><br><span class="ln">  Sam &#x27;u&#x27;d whistle &quot;Sleep in Jesus,&quot; an&#x27; he knowed de Mastah &#x27;d hyeah.</span><br><span class="ln">  In de camp, all sad discouraged, he would cheer de hea&#x27;ts of all,</span><br><span class="ln">  When above de soun&#x27; of labour dey could hyeah his whistle call:</span><br></p>
 <p class="stanza"><span class="ln">  When de cruel wah was ovah an&#x27; de boys come ma&#x27;chin&#x27; back,</span><br><span class="ln">  Dey was shouts an&#x27; cries an&#x27; blessin&#x27;s all erlong dey happy track,</span><br><span class="ln">  An&#x27; de da&#x27;kies all was happy; souls an&#x27; bodies bofe was freed.</span><br><span class="ln">  Why, hit seemed lak de Redeemah mus&#x27; &#x27;a&#x27; been on earf indeed.</span><br><span class="ln">  Dey was gethahed all one evenin&#x27; jes&#x27; befo&#x27; de cabin do&#x27;,</span><br><span class="ln">  When dey hyeahd somebody whistlin&#x27; kin&#x27; o&#x27; sof&#x27; an&#x27; sweet an&#x27; low.</span><br><span class="ln">  Dey could n&#x27;t see de whistlah, but de hymn was cleah and ca&#x27;m,</span><br><span class="ln">  An&#x27; dey all stood daih a-listenin&#x27; ontwell Dinah shouted, &quot;Sam!&quot;</span><br><span class="ln">  An&#x27; dey seed a little da&#x27;ky way off yandah thoo de trees</span><br><span class="ln">  Wid his face all in a puckah mekin&#x27; jes&#x27; sich soun&#x27;s ez dese:</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Paul Laurence Dunbar, <i>The Complete Poems of Paul Laurence Dunbar, with the Introduction to "Lyrics of Lowly Life" by W</i> (New York: Dodd, Mead and Company, 1922). Digital text: <a href="https://www.gutenberg.org/ebooks/18338" rel="noopener">Project Gutenberg 18338</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -64,6 +65,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/paul-laurence-dunbar/215">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/paul-laurence-dunbar/214/">← At Candle-Lightin&#x27; Time</a><a class="pn next" href="/poem/paul-laurence-dunbar/216/">How Lucy Backslid →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Paul Laurence Dunbar</h2><ul class="poem-links"><li><a href="/poem/paul-laurence-dunbar/71/"><span class="pl-title">Good-Night</span></a></li><li><a href="/poem/paul-laurence-dunbar/154/"><span class="pl-title">The Conquerors: The Black Troops in Cuba</span></a></li><li><a href="/poem/paul-laurence-dunbar/241/"><span class="pl-title">The Colored Band</span></a></li><li><a href="/poem/paul-laurence-dunbar/324/"><span class="pl-title">A Christmas Folksong</span></a></li><li><a href="/poem/paul-laurence-dunbar/408/"><span class="pl-title">Love&#x27;s Pictures</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

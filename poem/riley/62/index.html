@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -52,7 +53,7 @@
 <p class="stanza"><span class="ln">The Hoosier Folk-Child&#x27;s chubby face</span><br><span class="ln">Has scant refinement, caste or grace,--</span><br><span class="ln">From crown to chin, and cheek to cheek,</span><br><span class="ln">It bears the grimy water-streak</span><br><span class="ln">Of rinsings such as some long rain</span><br><span class="ln">Might drool across the window-pane</span><br><span class="ln">Wherethrough he peers, with troubled frown,</span><br><span class="ln">As some lorn team drives by for town.</span><br><span class="ln">His brow is elfed with wispish hair,</span><br><span class="ln">With tangles in it here and there,</span><br><span class="ln">As though the warlocks snarled it so</span><br><span class="ln">At midmirk when the moon sagged low,</span><br><span class="ln">And boughs did toss and skreek and shake,</span><br><span class="ln">And children moaned themselves awake,</span><br><span class="ln">With fingers clutched, and starting sight</span><br><span class="ln">Blind as the blackness of the night!</span><br></p>
 <p class="stanza"><span class="ln">The Hoosier Folk-Child!--Rich is he</span><br><span class="ln">In all the wealth of poverty!</span><br><span class="ln">He owns nor title nor estate,</span><br><span class="ln">Nor speech but half articulate,--</span><br><span class="ln">He owns nor princely robe nor crown;--</span><br><span class="ln">Yet, draped in patched and faded brown,</span><br><span class="ln">He owns the bird-songs of the hills--</span><br><span class="ln">The laughter of the April rills;</span><br><span class="ln">And his are all the diamonds set.</span><br><span class="ln">In Morning&#x27;s dewy coronet,--</span><br><span class="ln">And his the Dusk&#x27;s first minted stars</span><br><span class="ln">That twinkle through the pasture-bars,</span><br><span class="ln">And litter all the skies at night</span><br><span class="ln">With glittering scraps of silver light;--</span><br><span class="ln">The rainbow&#x27;s bar, from rim to rim,</span><br><span class="ln">In beaten gold, belongs to him.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> James Whitcomb Riley, <i>Green Fields and Running Brooks, and Other Poems</i> (Indianapolis: The Bobbs-Merrill Company, 1893). Digital text: <a href="https://www.gutenberg.org/ebooks/15079" rel="noopener">Project Gutenberg 15079</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -64,6 +65,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/riley/62">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/riley/61/">← Home at Night</a><a class="pn next" href="/poem/riley/63/">Jack the Giant Killer →</a></nav>
+      <section class="poet-poems more-by"><h2>More by James Whitcomb Riley</h2><ul class="poem-links"><li><a href="/poem/riley/121/"><span class="pl-title">Let Us Forget</span></a></li><li><a href="/poem/riley/256/"><span class="pl-title">Regardin&#x27; Terry Hut</span></a></li><li><a href="/poem/riley/391/"><span class="pl-title">Lines Fer Isaac Bradwell</span></a></li><li><a href="/poem/riley/526/"><span class="pl-title">A Poet&#x27;s Wooing</span></a></li><li><a href="/poem/riley/661/"><span class="pl-title">The Toy Penny-Dog</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

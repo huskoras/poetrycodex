@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -49,7 +50,7 @@
 <p class="stanza"><span class="ln">How shall a young unstable man</span><br><span class="ln">To evil prone like me,</span><br><span class="ln">His actions and his heart maintain</span><br><span class="ln">From all pollution free?</span><br><span class="ln">Thee, Lord, that I may not forsake,</span><br><span class="ln">Or ever turn aside,</span><br><span class="ln">Thy precepts for my rule I take,</span><br><span class="ln">Thy Spirit for my guide.</span><br><span class="ln">Govern&#x27;d by the engrafted word,</span><br><span class="ln">And principled with grace,</span><br><span class="ln">I shall not yield to sin abhorr&#x27;d.</span><br></p>
 <p class="stanza"><span class="ln">Or give to passion place:</span><br><span class="ln">From youthful lists I still shall flee,</span><br><span class="ln">From all the paths of vice,</span><br><span class="ln">My omnipresent Saviour see,</span><br><span class="ln">And walk before Thine eyes.</span><br><span class="ln">Saviour, to me Thy Spirit give,</span><br><span class="ln">That through His power I may</span><br><span class="ln">Thy word effectually believe,</span><br><span class="ln">And faithfully obey;</span><br><span class="ln">From every great transgression pure,</span><br><span class="ln">For all Thy will prepared,</span><br><span class="ln">Thy servant to the end endure,</span><br><span class="ln">And gain the full reward.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Charles Wesley, <i>The Poetical Works of John and Charles Wesley</i>, Vol. VII (of 13), ed. G. Osborn, D.D (London: Wesleyan-Methodist Conference Office, 1870). Digital text: <a href="https://archive.org/details/poeticalworksofj0007wesl" rel="noopener">Internet Archive poeticalworksofj0007wesl</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -61,6 +62,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/wesley_c/1756">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/wesley_c/1755/">← The Collier&#x27;s Hymn</a><a class="pn next" href="/poem/wesley_c/1757/">Hymns for the Use of Families, 126 →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Charles Wesley</h2><ul class="poem-links"><li><a href="/poem/wesley_c/690/"><span class="pl-title">Hymns for the Nativity of Our Lord, 6</span></a></li><li><a href="/poem/wesley_c/2127/"><span class="pl-title">Psalm 57</span></a></li><li><a href="/poem/wesley_c/3562/"><span class="pl-title">Isaiah 60:17, 15: For brass I will bring gold, and for iron, &amp;c</span></a></li><li><a href="/poem/wesley_c/4996/"><span class="pl-title">Luke 1:32, 33: Jesus, Son of the Most-High</span></a></li><li><a href="/poem/wesley_c/6431/"><span class="pl-title">Acts 13:47: I have set thee to be a light of the Gentiles</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

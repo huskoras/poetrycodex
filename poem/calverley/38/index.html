@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">A is an Angel of blushing eighteen:</span><br><span class="ln">B is the Ball where the Angel was seen:</span><br><span class="ln">C is her Chaperone, who cheated at cards:</span><br><span class="ln">D is the Deuxtemps, with Frank of the Guards:</span><br><span class="ln">E is the Eye which those dark lashes cover:</span><br><span class="ln">F is the Fan it peeped wickedly over:</span><br><span class="ln">G is the Glove of superlative kid:</span><br><span class="ln">H is the Hand which it spitefully hid:</span><br><span class="ln">I is the Ice which spent nature demanded:</span><br><span class="ln">J is the Juvenile who hurried to hand it:</span><br><span class="ln">K is the Kerchief, a rare work of art:</span><br><span class="ln">L is the Lace which composed the chief part.</span><br><span class="ln">M is the old Maid who watch’d the girls dance:</span><br><span class="ln">N is the Nose she turned up at each glance:</span><br><span class="ln">O is the Olga (just then in its prime):</span><br><span class="ln">P is the Partner who wouldn’t keep time:</span><br><span class="ln">Q ’s a Quadrille, put instead of the Lancers:</span><br><span class="ln">R the Remonstrances made by the dancers:</span><br><span class="ln">S is the Supper, where all went in pairs:</span><br><span class="ln">T is the Twaddle they talked on the stairs:</span><br><span class="ln">U is the Uncle who ‘thought we’d be going’:</span><br><span class="ln">V is the Voice which his niece replied ‘No’ in:</span><br><span class="ln">W is the Waiter, who sat up till eight:</span><br><span class="ln">X is his Exit, not rigidly straight:</span><br><span class="ln">Y is a Yawning fit caused by the Ball:</span><br><span class="ln">Z stands for Zero, or nothing at all.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> C. S. Calverley, <i>Verses and Translations</i>, Second edition, revised (Cambridge and London: Deighton, Bell, and Co. (Cambridge); Bell and Daldy (London), 1862). Digital text: <a href="https://www.gutenberg.org/ebooks/4096" rel="noopener">Project Gutenberg 4096</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/calverley/38">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/calverley/37/">← Lines Suggested by the 14th of February (I)</a><a class="pn next" href="/poem/calverley/39/">To Mrs. Goodchild →</a></nav>
+      <section class="poet-poems more-by"><h2>More by C. S. Calverley</h2><ul class="poem-links"><li><a href="/poem/calverley/8/"><span class="pl-title">Changed</span></a></li><li><a href="/poem/calverley/18/"><span class="pl-title">Arcades Ambo</span></a></li><li><a href="/poem/calverley/29/"><span class="pl-title">On the Beach</span></a></li><li><a href="/poem/calverley/42/"><span class="pl-title">Dirge</span></a></li><li><a href="/poem/calverley/53/"><span class="pl-title">Charade VI</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -52,7 +53,7 @@
 <p class="stanza"><span class="ln">Ho! alms for our hunters! all weary and faint,</span><br><span class="ln">Wax the curse of the sinner and prayer of the saint.</span><br><span class="ln">The horn is wound faintly, the echoes are still,</span><br><span class="ln">Over cane-brake and river, and forest and hill.</span><br><span class="ln">Haste, alms for our hunters! the hunted once more</span><br><span class="ln">Have turned from their flight with their backs to the shore</span><br><span class="ln">What right have they here in the home of the white,</span><br><span class="ln">Shadowed o&#x27;er by our banner of Freedom and Right?</span><br><span class="ln">Ho! alms for the hunters! or never again</span><br><span class="ln">Will they ride in their pomp to the hunting of men!</span><br></p>
 <p class="stanza"><span class="ln">Alms, alms for our hunters! why will ye delay,</span><br><span class="ln">When their pride and their glory are melting away?</span><br><span class="ln">The parson has turned; for, on charge of his own,</span><br><span class="ln">Who goeth a warfare, or hunting, alone?</span><br><span class="ln">The politic statesman looks back with a sigh,</span><br><span class="ln">There is doubt in his heart, there is fear in his eye.</span><br><span class="ln">Oh, haste, lest that doubting and fear shall prevail,</span><br><span class="ln">And the head of his steed take the place of the tail.</span><br><span class="ln">Oh, haste, ere he leave us! for who will ride then,</span><br><span class="ln">For pleasure or gain, to the hunting of men?</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> John Greenleaf Whittier, <i>The Works of John Greenleaf Whittier (Standard Library Edition)</i>, Vol. III (of VII): Anti-Slavery Poems and Songs of Labor and Reform, Standard Library Edition (Boston and New York: Houghton, Mifflin and Company, 1892). Digital text: <a href="https://www.gutenberg.org/ebooks/9580" rel="noopener">Project Gutenberg 9580</a>. <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span></p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -64,6 +65,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/whittier/215">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/whittier/214/">← The Yankee Girl</a><a class="pn next" href="/poem/whittier/216/">Stanzas for the Times →</a></nav>
+      <section class="poet-poems more-by"><h2>More by John Greenleaf Whittier</h2><ul class="poem-links"><li><a href="/poem/whittier/76/"><span class="pl-title">In School-Days</span></a></li><li><a href="/poem/whittier/169/"><span class="pl-title">The Meeting</span></a></li><li><a href="/poem/whittier/264/"><span class="pl-title">The Kansas Emigrants</span></a></li><li><a href="/poem/whittier/357/"><span class="pl-title">To My Friend on the Death of His Sister</span></a></li><li><a href="/poem/whittier/450/"><span class="pl-title">To G. G. An Autograph</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

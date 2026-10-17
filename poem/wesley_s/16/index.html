@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">HAppy the Man who free from Care and Strife,</span><br><span class="ln">With Dog and Bell gropes thro&#x27; the Road of Life!</span><br><span class="ln">Beggar at large, without o Fear, or Shame,</span><br><span class="ln">He&#x27;ll all the World his Benefactors name.</span><br><span class="ln">He, like the famous ancient Scythian Race,</span><br><span class="ln">Shifts not himself as often as his place.</span><br><span class="ln">Tir&#x27;d with the pillage of one fruitful Plain,</span><br><span class="ln">He and his Cattle soon decamp again:</span><br><span class="ln">He with a proud Repulse when warmly vext,</span><br><span class="ln">Throws you a hearty Curse, and tries the next.</span><br><span class="ln">No long Harangues to squeeze the stubborn Pence,</span><br><span class="ln">No Oratorical Impertinence,</span><br><span class="ln">Nor grateful murd&#x27;ring both of Truth and Sense.</span><br><span class="ln">He&#x27;ll in two Lines compendiously impart</span><br><span class="ln">The System of his truly Liberal Art;</span><br><span class="ln">Pray Sir, the Gift: And when the Farthings stir,</span><br><span class="ln">I hope you &#x27;ll never live to want it Sir!</span><br><span class="ln">When Beadle Death does him at last attend,</span><br><span class="ln">Let him go where he will, in this he&#x27;s sure to mend:</span><br><span class="ln">Death kindly Land and House provides him, more</span><br><span class="ln">Besides the Cage, than e&#x27;re he had before.</span><br><span class="ln">Thrice miserable they whom want and Fate</span><br><span class="ln">Eternal Mumpers made at Learning&#x27;s Gate:</span><br><span class="ln">Their Souls indeed they cram with notions high,</span><br><span class="ln">But let poor Colon live by Sympathy:</span><br><span class="ln">To Honourable Beggars they give place,</span><br><span class="ln">Lean younger Brothers of the lowsie Race.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Samuel Wesley, <i>Maggots: or, Poems on several Subjects, never before handled by a Scholar</i> (London: Printed by John Dunton, 1685). Digital text: <a href="https://quod.lib.umich.edu/e/eebo/A65464.0001.001" rel="noopener">EEBO-TCP A65464</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/wesley_s/16">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/wesley_s/15/">← A Box made like an Egg</a><a class="pn next" href="/poem/wesley_s/17/">Plures aluit Aristoteles quam Alexander →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Samuel Wesley</h2><ul class="poem-links"><li><a href="/poem/wesley_s/3/"><span class="pl-title">A Pindaricque on the Grunting of a Hog</span></a></li><li><a href="/poem/wesley_s/8/"><span class="pl-title">On a Cow&#x27;s Tail</span></a></li><li><a href="/poem/wesley_s/14/"><span class="pl-title">An Elegy on the untimely and much lamented Death of Poor Spot</span></a></li><li><a href="/poem/wesley_s/23/"><span class="pl-title">Out of Lucian&#x27;s true History, Part the First</span></a></li><li><a href="/poem/wesley_s/29/"><span class="pl-title">On a pretended Schollar</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

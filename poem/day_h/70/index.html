@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">Slowly the toil-cramped, gnarled old fist</span><br><span class="ln">Wrought at the sheet with a rasping pen;</span><br><span class="ln">Halted with tremulous quirk and twist,</span><br><span class="ln">Staggered, and then went on again.</span><br><span class="ln">The wan sun peeped through the wee patched pane</span><br><span class="ln">    And checkered the floor where the pale beams shone</span><br><span class="ln">In a quaint old kitchen up in Maine,</span><br><span class="ln">With an old man writing there alone.</span><br><span class="ln">And the pen wrought on and the head drooped low</span><br><span class="ln">    And a tear plashed down on the rusted pen,</span><br><span class="ln">As it traced a verse of the long ago</span><br><span class="ln">    That his grief had brought to his heart again.</span><br><span class="ln">    Be kind to thy father for when thou wast young,</span><br><span class="ln">    Who loved thee so fondly as lied</span><br><span class="ln">He caught the first accents that fell from thy tongue.</span><br><span class="ln">    And joined in thy innocent glee.</span><br><span class="ln">Be kind to thy father for now he is old,</span><br><span class="ln">    His locks intermingled with gray;</span><br><span class="ln">His footsteps are feeble, once fearless and bold</span><br><span class="ln">    Thy father is passing away.</span><br><span class="ln">Be kind to thy mother for lo, on her brow,</span><br><span class="ln">    May traces of sorrow be seen.</span><br><span class="ln">    Oh, well mayst thou cherish and comfort her now,</span><br><span class="ln">    For loving and kind has she been.</span><br><span class="ln">    Remember thy mother, for thee she will pray</span><br><span class="ln">    As long as God giveth her breath</span><br><span class="ln">    With accents of kindness; then cheer her hard way</span><br><span class="ln">    E&#x27;en thro&#x27; the dark valley of death.&quot;</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Holman F. Day, <i>Pine Tree Ballads: Rhymed Stories of Unplaned Human Natur' up in Maine</i> (Boston: Small, Maynard &amp; Company, 1902). Digital text: <a href="https://www.gutenberg.org/ebooks/55342" rel="noopener">Project Gutenberg 55342</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/day_h/70">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/day_h/69/">← John W. Jones</a><a class="pn next" href="/poem/day_h/71/">Our Home Folks →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Holman Day</h2><ul class="poem-links"><li><a href="/poem/day_h/25/"><span class="pl-title">Plain Old Kitchen Chap</span></a></li><li><a href="/poem/day_h/52/"><span class="pl-title">Here&#x27;s to the Stout Ash Pole</span></a></li><li><a href="/poem/day_h/82/"><span class="pl-title">&quot;As Beseemeth Men&quot;</span></a></li><li><a href="/poem/day_h/109/"><span class="pl-title">The Madawaska Wooing</span></a></li><li><a href="/poem/day_h/135/"><span class="pl-title">The Jumper</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

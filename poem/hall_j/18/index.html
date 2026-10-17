@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
       <div class="poem-text">
 <p class="stanza"><span class="ln">WEre yesterday Polemons Natals kept</span><br><span class="ln">That so his threshold is all freshly steept</span><br><span class="ln">With new-shed bloud? could he not sacrifice</span><br><span class="ln">Some sorry morkin that vnbidden dies:</span><br><span class="ln">Or meager heifer, or some roten Ewe:</span><br><span class="ln">Rut he must needs his Posts with bloud embrew,</span><br><span class="ln">And on his way-doore fixe the honned head,</span><br><span class="ln">With slowers, and with ribbands garnished?</span><br><span class="ln">Now shall the passenger deeme the man deuout.</span><br><span class="ln">What boots it be so, but the world must know&#x27;t?</span><br><span class="ln">O the fond boasting of vaineglorious man:</span><br><span class="ln">Does he the best, that may the best be seene?</span><br><span class="ln">Who euer giues a paire of veluet shooes</span><br><span class="ln">To th&#x27;holy Road: or liberally allowes:</span><br><span class="ln">But a new rope, to ring the Couure-feu Bell,</span><br><span class="ln">But he desires that his great deed may dwell,</span><br><span class="ln">Or grauen in the Chancel-window-glasse,</span><br><span class="ln">Or in the lasting tombe of plated brasse.</span><br><span class="ln">For he that doth so few deseruing deeds,</span><br><span class="ln">T&#x27; were sure his best sue for such larger meeds.</span><br><span class="ln">Who would inglorious liue, inglorious die,</span><br><span class="ln">And might eternize his names memorie?</span><br><span class="ln">And he that cannot brag of greater store,</span><br><span class="ln">Must make his somewhat much, and little more.</span><br><span class="ln">Nor can good Myson weare on his left hond,</span><br><span class="ln">A signet ring of Bristol-diamond:</span><br><span class="ln">But he must cut his gloue, to shew his pride,</span><br><span class="ln">That his trim Iewel might be better spide:</span><br><span class="ln">And that men monght some Burgesse him repute,</span><br><span class="ln">With Satten sleeues hath grac&#x27;d his sackeloth sure.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Joseph Hall, <i>Virgidemiarum, Sixe Bookes</i>, Books I-III (Toothless Satires); this group Book III (London: Printed by John Harison, for Robert Dexter, 1602). Digital text: <a href="https://quod.lib.umich.edu/e/eebo/A71323.0001.001" rel="noopener">EEBO-TCP A71323</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -60,6 +61,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/hall_j/18">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/hall_j/17/">← Book III, Satire 2</a><a class="pn next" href="/poem/hall_j/19/">Book III, Satire 5 →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Joseph Hall</h2><ul class="poem-links"><li><a href="/poem/hall_j/4/"><span class="pl-title">Book I, Satire 4</span></a></li><li><a href="/poem/hall_j/8/"><span class="pl-title">Book I, Satire 8</span></a></li><li><a href="/poem/hall_j/12/"><span class="pl-title">Book II, Satire 3</span></a></li><li><a href="/poem/hall_j/20/"><span class="pl-title">Book III, Satire 6</span></a></li><li><a href="/poem/hall_j/24/"><span class="pl-title">Satire VII</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

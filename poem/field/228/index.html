@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -53,7 +54,7 @@
 <p class="stanza"><span class="ln">It wuzn&#x27;t long afore the news had spread the country over,</span><br><span class="ln">And miners come a-flockin&#x27; in like honey bees to clover;</span><br><span class="ln">It kind uv did &#x27;em good they said, to feast their hungry eyes on</span><br><span class="ln">That picture uv Our Lady in the camp uv Blue Horizon.</span><br><span class="ln">But one mean cuss from Nigger Crick passed criticisms on &#x27;er--</span><br><span class="ln">Leastwise we overheerd him call her Pettibone&#x27;s madonner,</span><br><span class="ln">The which we did not take to be respectful to a lady--</span><br><span class="ln">So we hung him in a quiet spot that wuz cool &#x27;nd dry &#x27;nd shady;</span><br><span class="ln">Which same might not have been good law, but it wuz the right</span><br><span class="ln">    maneuver</span><br><span class="ln">To give the critics due respect for Pettibone&#x27;s shef doover.</span><br></p>
 <p class="stanza"><span class="ln">Gone is the camp--yes, years ago, the Blue Horizon busted,</span><br><span class="ln">And every mother&#x27;s son uv us got up one day &#x27;nd dusted,</span><br><span class="ln">While Pettibone perceeded east with wealth in his possession</span><br><span class="ln">And went to Yurrup, as I heerd, to study his perfession;</span><br><span class="ln">So, like as not, you&#x27;ll find him now a-paintin&#x27; heads &#x27;nd faces</span><br><span class="ln">At Venus, Billy Florence and the like I-talyun places--</span><br><span class="ln">But no such face he&#x27;ll paint again as at old Blue Horizon,</span><br><span class="ln">For I&#x27;ll allow no sweeter face no human soul sot eyes on;</span><br><span class="ln">And when the critics talk so grand uv Paris &#x27;nd the loover,</span><br><span class="ln">I say: &quot;Oh, but you orter seen the Pettibone shef doover!&quot;</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Eugene Field, <i>Hoosier Lyrics</i> (Selected Works of Eugene Field) (Chicago: M. A. Donohue &amp; Company, 1905). Digital text: <a href="https://www.gutenberg.org/ebooks/36150" rel="noopener">Project Gutenberg 36150</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -65,6 +66,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/field/228">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/field/227/">← Answer to Minnie Lee</a><a class="pn next" href="/poem/field/229/">Answer to His Queen →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Eugene Field</h2><ul class="poem-links"><li><a href="/poem/field/26/"><span class="pl-title">“Lollyby, Lolly, Lollyby”</span></a></li><li><a href="/poem/field/91/"><span class="pl-title">Fisherman Jim’s Kids</span></a></li><li><a href="/poem/field/155/"><span class="pl-title">To Cinna</span></a></li><li><a href="/poem/field/220/"><span class="pl-title">The Sleeping Child</span></a></li><li><a href="/poem/field/288/"><span class="pl-title">Morning Hymn</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

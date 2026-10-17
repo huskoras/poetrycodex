@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -61,7 +62,7 @@
 <p class="stanza"><span class="ln">For &#x27;twas the Haly Kirk that nurs&#x27;d</span><br><span class="ln">The Brownists and the Ranters Crew;</span><br><span class="ln">Foul Errors motly Vesture first</span><br><span class="ln">Was Oaded in a Northern Blue.</span><br><span class="ln">And what&#x27;s th&#x27; Enthusiastick breed,</span><br><span class="ln">Or men of Knipperdoling&#x27;s Creed,</span><br><span class="ln">But Cov&#x27;nanters run up to seed?</span><br></p>
 <p class="stanza"><span class="ln">Yet they all cry, they love the King,</span><br><span class="ln">And make boast of their Innocence:</span><br><span class="ln">There cannot be so vile a thing,</span><br><span class="ln">But may be colour&#x27;d with Pretence.</span><br><span class="ln">Yet when all&#x27;s said, one thing I&#x27;ll swear,</span><br><span class="ln">No Subject like th&#x27; old Cavalier,</span><br><span class="ln">No Traitor like Jack—.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> <i>English Broadside Ballads, as transcribed by the Text Creation Partnership (single…</i> (EEBO-TCP / Evans-TCP) (Various London printers and publishers (five American sheets from Boston and Cambridge, Massachusetts), 1540-1700). Digital text: <a href="https://github.com/textcreationpartnership/Texts" rel="noopener">EEBO-TCP 674 TCP texts (A-, B- and N-series numbers, e.g. A56102, B03301; the number is in each poem&#x27;s note)</a>. <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span></p>
+      
       <div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">Full title: The GENEVA BALLAD. To the tune of 48. TCP A30741 (1674). Other printings: A42617 (1674), B01875 (1674).</p>
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -73,6 +74,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/anonymous-english-broadsides/204">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/anonymous-english-broadsides/203/">← Courage Crowned with Conquest</a><a class="pn next" href="/poem/anonymous-english-broadsides/205/">The Frenchmens Wonder, or, the Battle of the Birds →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Anonymous (English broadside ballads)</h2><ul class="poem-links"><li><a href="/poem/anonymous-english-broadsides/75/"><span class="pl-title">A Merry New Ballad</span></a></li><li><a href="/poem/anonymous-english-broadsides/207/"><span class="pl-title">The Benjamin&#x27;s Lamentation for Their Sad Loss at Sea</span></a></li><li><a href="/poem/anonymous-english-broadsides/335/"><span class="pl-title">A Congratulation on the Happy Discovery of the Hellish Fanatick Plot</span></a></li><li><a href="/poem/anonymous-english-broadsides/463/"><span class="pl-title">An Answer to Nanny O</span></a></li><li><a href="/poem/anonymous-english-broadsides/592/"><span class="pl-title">The Two Unhappy Lovers</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

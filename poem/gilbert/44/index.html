@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -49,7 +50,7 @@
 <p class="stanza"><span class="ln">When all night long a chap remains</span><br><span class="ln">   On sentry-go, to chase monotony</span><br><span class="ln">He exercises of his brains,</span><br><span class="ln">   That is, assuming that he’s got any.</span><br><span class="ln">Though never nurtured in the lap</span><br><span class="ln">   Of luxury, yet I admonish you,</span><br><span class="ln">I am an intellectual chap,</span><br><span class="ln">   And think of things that would astonish you.</span><br><span class="ln">         I often think it’s comical</span><br><span class="ln">            How Nature always does contrive</span><br><span class="ln">         That every boy and every gal,</span><br><span class="ln">            That’s born into the world alive,</span><br><span class="ln">         Is either a little Liberal,</span><br><span class="ln">            Or else a little Conservative!</span><br><span class="ln">                     Fal lal la!</span><br></p>
 <p class="stanza"><span class="ln">When in that house M.P.’s divide,</span><br><span class="ln">   If they’ve a brain and cerebellum, too,</span><br><span class="ln">They’ve got to leave that brain outside,</span><br><span class="ln">   And vote just as their leaders tell ’em to.</span><br><span class="ln">But then the prospect of a lot</span><br><span class="ln">   Of statesmen, all in close proximity,</span><br><span class="ln">A-thinking for themselves, is what</span><br><span class="ln">   No man can face with equanimity.</span><br><span class="ln">         Then let’s rejoice with loud Fal lal</span><br><span class="ln">            That Nature wisely does contrive</span><br><span class="ln">         That every boy and every gal,</span><br><span class="ln">            That’s born into the world alive,</span><br><span class="ln">         Is either a little Liberal,</span><br><span class="ln">            Or else a little Conservative!</span><br><span class="ln">                     Fal lal la!</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> W. S. Gilbert, <i>The Bab Ballads, with Which Are Included Songs of a Savoyard</i> (London: Macmillan and Co., Limited, 1920). Digital text: <a href="https://www.gutenberg.org/ebooks/934" rel="noopener">Project Gutenberg 934</a>. <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span></p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -61,6 +62,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/gilbert/44">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/gilbert/43/">← Sorry Her Lot</a><a class="pn next" href="/poem/gilbert/45/">The Philosophic Pill →</a></nav>
+      <section class="poet-poems more-by"><h2>More by W. S. Gilbert</h2><ul class="poem-links"><li><a href="/poem/gilbert/1/"><span class="pl-title">The Englishman</span></a></li><li><a href="/poem/gilbert/34/"><span class="pl-title">The Sorcerer’s Song</span></a></li><li><a href="/poem/gilbert/70/"><span class="pl-title">One Against the World</span></a></li><li><a href="/poem/gilbert/103/"><span class="pl-title">Sir Macklin</span></a></li><li><a href="/poem/gilbert/135/"><span class="pl-title">Pasha Bailey Ben</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

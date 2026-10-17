@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -50,7 +51,7 @@
 <p class="stanza"><span class="ln">                               And &#x27;tis told</span><br><span class="ln">  How blind Arabah rose with unsealed eyes,</span><br><span class="ln">With seeing eyes; he who to Allah gave</span><br><span class="ln">  All that he had; which happened in this wise:--</span><br><span class="ln">&quot;Who&#x27;s this that lies upon the mosque&#x27;s cold pave?&quot;--</span><br><span class="ln">  &quot;A blind man, whom an angel&#x27;s hand shall lead.&quot;--</span><br><span class="ln">&quot;A beggar, richer than the rich who have.&quot;--</span><br><span class="ln">  &quot;Behold the lesson, such as Sufis feed</span><br><span class="ln">The soul upon!--O faith, blind-praying, see,</span><br><span class="ln">  Out of thyself how God repays indeed,</span><br><span class="ln">Ten-thousandfold, one generosity!&quot;...</span><br></p>
 <p class="stanza"><span class="ln">  All Baghdad knew how, at the hour of prayer,</span><br><span class="ln">A slave beneath each shoulder, it was he,</span><br><span class="ln">  Old, blind Arabah, whom a suppliant there,</span><br><span class="ln">Footsore and hungry, met and asked for bread.</span><br><span class="ln">  &quot;Alas! my son, God&#x27;s poor are everywhere,&quot;--</span><br><span class="ln">Hoar as a Koreish priest, Arabah said;--</span><br><span class="ln">  &quot;Richer than thou am I though poor indeed!</span><br><span class="ln">Take thou my slaves and sell, and buy thee bread.&quot;--</span><br><span class="ln">  Thrust him his slaves and said, &quot;Great is thy need.</span><br><span class="ln">Refuse, and I renounce them!&quot;--And the wall</span><br><span class="ln">  Struck with his staff, saying, &quot;This now shall lead.&quot;</span><br><span class="ln">--While from the mosque rang the muezzin&#x27;s call,</span><br><span class="ln">&quot;God is most mighty! Allah seeth all!&quot;</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Madison Cawein, <i>The Poems of Madison Cawein, with an introduction by Edmund Gosse, illustrated with…</i>, 5 vols. (texts from vols. I-V) (Indianapolis: The Bobbs-Merrill Company, 1907). Digital text: <a href="https://www.gutenberg.org/ebooks/55049" rel="noopener">Project Gutenberg 55049</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -62,6 +63,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/cawein/108">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/cawein/107/">← The Khalif and the Arab</a><a class="pn next" href="/poem/cawein/109/">The Seven Devils →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Madison Cawein</h2><ul class="poem-links"><li><a href="/poem/cawein/192/"><span class="pl-title">Love in a Garden</span></a></li><li><a href="/poem/cawein/386/"><span class="pl-title">Voices</span></a></li><li><a href="/poem/cawein/580/"><span class="pl-title">Dionysos</span></a></li><li><a href="/poem/cawein/775/"><span class="pl-title">The Egret Hunter</span></a></li><li><a href="/poem/cawein/969/"><span class="pl-title">A Poet&#x27;s Epitaph</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

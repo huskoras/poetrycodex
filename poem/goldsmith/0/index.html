@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -80,7 +81,7 @@
 <p class="stanza"><span class="ln">Even now, perhaps, as there some pilgrim strays</span><br><span class="ln">Through tangled forests, and through dangerous ways,</span><br><span class="ln">Where beasts with man divided empire claim,</span><br><span class="ln">And the brown Indian marks with murderous aim--</span><br><span class="ln">There, while above the giddy tempest flies,</span><br><span class="ln">And all around distressful yells arise--</span><br><span class="ln">The pensive exile, bending with his woe,</span><br><span class="ln">To stop too fearful, and too faint to go,</span><br><span class="ln">Casts a long look where England’s glories shine,</span><br><span class="ln">And bids his bosom sympathize with mine.</span><br></p>
 <p class="stanza"><span class="ln">  Vain, very vain, my weary search to find</span><br><span class="ln">That bliss which only centres in the mind.</span><br><span class="ln">Why have I stray’d from pleasure and repose,</span><br><span class="ln">To seek a good each government bestows?</span><br><span class="ln">In every government, though terrors reign,</span><br><span class="ln">Though tyrant-kings or tyrant-laws restrain,</span><br><span class="ln">How small, of all that human hearts endure,</span><br><span class="ln">That part which laws or kings can cause or cure!</span><br><span class="ln">Still to ourselves in every place consign’d,</span><br><span class="ln">Our own felicity we make or find:</span><br><span class="ln">With secret course, which no loud storms annoy,</span><br><span class="ln">Glides the smooth current of domestic joy;</span><br><span class="ln">The lifted axe, the agonizing wheel,</span><br><span class="ln">Zeck’s iron crown, and Damiens’ bed of steel,</span><br><span class="ln">To men remote from power but rarely known--</span><br><span class="ln">Leave reason, faith, and conscience, all our own.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Oliver Goldsmith, <i>The Complete Poetical Works of Oliver Goldsmith, edited with introduction and notes by Austin Dobson</i> (Oxford Edition) (London: Henry Frowde, 1906). Digital text: <a href="https://www.gutenberg.org/ebooks/3545" rel="noopener">Project Gutenberg 3545</a>. <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span></p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -92,6 +93,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/goldsmith/0">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><span></span><a class="pn next" href="/poem/goldsmith/1/">The Deserted Village →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Oliver Goldsmith</h2><ul class="poem-links"><li><a href="/poem/goldsmith/2/"><span class="pl-title">Retaliation</span></a></li><li><a href="/poem/goldsmith/9/"><span class="pl-title">Stanzas on the Taking of Quebec</span></a></li><li><a href="/poem/goldsmith/16/"><span class="pl-title">Translation of a South American Ode</span></a></li><li><a href="/poem/goldsmith/24/"><span class="pl-title">Threnodia Augustalis: Sacred to the Memory of Her Late Royal Highness the Princess Dowager of Wales</span></a></li><li><a href="/poem/goldsmith/31/"><span class="pl-title">The Clown’s Reply</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

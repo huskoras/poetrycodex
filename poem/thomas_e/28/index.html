@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -50,7 +51,7 @@
 <p class="stanza"><span class="ln">Oftenest when I heard him I was alone,</span><br><span class="ln">Nor could I ever make another hear.</span><br><span class="ln">La-la-la! he called, seeming far-off--</span><br><span class="ln">As if a cock crowed past the edge of the world,</span><br><span class="ln">As if the bird or I were in a dream.</span><br><span class="ln">Yet that he travelled through the trees and sometimes</span><br><span class="ln">Neared me, was plain, though somehow distant still</span><br><span class="ln">He sounded. All the proof is--I told men</span><br><span class="ln">What I had heard.</span><br></p>
 <p class="stanza"><span class="ln">            I never knew a voice,</span><br><span class="ln">Man, beast, or bird, better than this. I told</span><br><span class="ln">The naturalists; but neither had they heard</span><br><span class="ln">Anything like the notes that did so haunt me,</span><br><span class="ln">I had them clear by heart and have them still.</span><br><span class="ln">Four years, or five, have made no difference. Then</span><br><span class="ln">As now that La-la-la! was bodiless sweet:</span><br><span class="ln">Sad more than joyful it was, if I must say</span><br><span class="ln">That it was one or other, but if sad</span><br><span class="ln">&#x27;Twas sad only with joy too, too far off</span><br><span class="ln">For me to taste it. But I cannot tell</span><br><span class="ln">If truly never anything but fair</span><br><span class="ln">The days were when he sang, as now they seem.</span><br><span class="ln">This surely I know, that I who listened then,</span><br><span class="ln">Happy sometimes, sometimes suffering</span><br><span class="ln">A heavy body and a heavy heart,</span><br><span class="ln">Now straightway, if I think of it, become</span><br><span class="ln">Light as that bird wandering beyond my shore.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Edward Thomas, <i>Last Poems</i> (London: Selwyn &amp; Blount, 1918). Digital text: <a href="https://www.gutenberg.org/ebooks/22732" rel="noopener">Project Gutenberg 22732</a>.</p>
+      
       <div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">A bird whose three notes (&#x27;La-la-la!&#x27;) were heard once in a beech-wood and never again, though the speaker told naturalists. Four or five years on, it is &#x27;bodiless sweet&#x27; and makes him light.</p>
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -62,6 +63,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/thomas_e/28">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/thomas_e/27/">← The Cuckoo</a><a class="pn next" href="/poem/thomas_e/29/">The Lofty Sky →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Edward Thomas</h2><ul class="poem-links"><li><a href="/poem/thomas_e/21/"><span class="pl-title">Fifty Faggots</span></a></li><li><a href="/poem/thomas_e/50/"><span class="pl-title">If I Were to Own</span></a></li><li><a href="/poem/thomas_e/77/"><span class="pl-title">There&#x27;s Nothing Like the Sun</span></a></li><li><a href="/poem/thomas_e/103/"><span class="pl-title">Home</span></a></li><li><a href="/poem/thomas_e/130/"><span class="pl-title">The Chalk-Pit</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">

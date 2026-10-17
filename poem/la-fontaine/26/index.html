@@ -18,13 +18,13 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="/styles.css?v=62" />
+  <link rel="stylesheet" href="/styles.css?v=64" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -33,7 +33,8 @@
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        <form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off"><input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" /><button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -49,7 +50,7 @@
 <p class="stanza"><span class="ln">The Fox invited neighbour Stork to dinner,</span><br><span class="ln">But Reynard was a miser, I&#x27;m afraid;</span><br><span class="ln">He offered only soup, and that was thinner</span><br><span class="ln">Than any soup that ever yet was made.</span><br><span class="ln">The guest--whose lanky beak was an obstruction,</span><br><span class="ln">The mixture being served upon a plate--</span><br><span class="ln">Made countless vain experiments in suction,</span><br><span class="ln">While Reynard feasted at a rapid rate.</span><br><span class="ln">The victim, bent upon retaliation,</span><br><span class="ln">Got up a little dinner in return.</span><br><span class="ln">Reynard accepted; for an invitation</span><br><span class="ln">To eat and drink was not a thing to spurn.</span><br><span class="ln">He reached the Stork&#x27;s at the appointed hour,</span><br><span class="ln">Flattered the host, as well as he was able,</span><br><span class="ln">And got his grinders ready to devour</span><br><span class="ln">Whatever dishes might be brought to table.</span><br><span class="ln">But, lo! the Stork, to punish the offender,</span><br><span class="ln">Had got the meat cut very fine, and placed</span><br><span class="ln">Within a jug; the neck was long and slender,</span><br><span class="ln">Suited exactly to its owner&#x27;s taste.</span><br><span class="ln">The Stork, whose appetite was most extensive,</span><br><span class="ln">Emptied the jug entirely to the dregs;</span><br><span class="ln">While hungry Reynard, quite abashed and pensive,</span><br><span class="ln">Walked homewards with his tail between his legs.</span><br></p>
 <p class="stanza"><span class="ln">Deceivers reap the fruits of their deceit,</span><br><span class="ln">And being cheated may reform a cheat.</span><br></p>
       </div>
-      <p class="book-source"><span class="bs-label">Source</span> Jean de La Fontaine, <i>The Fables of La Fontaine, Translated into English Verse by Walter Thornbury, with…</i>, trans. Walter Thornbury (London and New York: Cassell, Petter, and Galpin, 1886). Digital text: <a href="https://www.gutenberg.org/ebooks/50316" rel="noopener">Project Gutenberg 50316</a>.</p>
+      
       
       <section class="cite-static" aria-label="Cite this poem">
       <p class="section-label">Cite this poem</p>
@@ -61,6 +62,7 @@
       </section>
       <p class="read-in-archive"><a href="/#/poem/la-fontaine/26">Read this poem with the Codex →</a></p>
       <nav class="pn-row"><a class="pn prev" href="/poem/la-fontaine/25/">← The Middle-Aged Man and the Two Widows</a><a class="pn next" href="/poem/la-fontaine/27/">The Lion and the Gnat →</a></nav>
+      <section class="poet-poems more-by"><h2>More by Jean de La Fontaine</h2><ul class="poem-links"><li><a href="/poem/la-fontaine/24/"><span class="pl-title">The Wolf Pleading Against the Fox Before the Ape</span></a></li><li><a href="/poem/la-fontaine/74/"><span class="pl-title">The Jay Dressed in Peacock&#x27;s Plumes</span></a></li><li><a href="/poem/la-fontaine/122/"><span class="pl-title">The Charlatan</span></a></li><li><a href="/poem/la-fontaine/169/"><span class="pl-title">The Madman Who Sold Wisdom</span></a></li><li><a href="/poem/la-fontaine/217/"><span class="pl-title">The Cat and the Two Sparrows</span></a></li></ul></section>
     </article>
   </main>
   <footer class="site-foot">
