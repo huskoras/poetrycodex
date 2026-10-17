@@ -355,6 +355,17 @@ def ld_json(*nodes):
     return '<script type="application/ld+json">' + data.replace("</", "<\\/") + "</script>"
 
 
+# The app's search box in the top bar, as a plain form: "/?q=…" opens the archive searched
+# (app.js turns it into "#/poems?q=…"), so it works without any script on the page.
+SEARCH_FORM = (
+    '<form class="tb-search search-form" action="/" method="get" role="search" autocomplete="off">'
+    '<input class="search-input" type="search" name="q" placeholder="Poem or poet…" aria-label="Search" />'
+    '<button type="submit" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" '
+    'stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/>'
+    '<line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></form>'
+)
+
+
 def shell(title, description, canonical, body, og_type="article", image=SHARE_IMAGE, ld=""):
     if canonical:
         meta = f"""<link rel="canonical" href="{esc(canonical)}" />
@@ -386,7 +397,7 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
   <a class="skip-link" href="#main">Skip to the text</a>
   <header class="site-head">
     <div class="topbar">
-      <div class="topbar-inner">
+      <div class="topbar-inner has-search">
         <a class="tb-brand" href="/"><img src="/coin-68.webp" alt="" width="34" height="34" /><span>Poetry&nbsp;Codex</span></a>
         <nav class="tb-nav">
           <a href="/#/poems">Poems</a>
@@ -395,7 +406,8 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
           <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
-        <div class="tb-display tb-theme-end" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
+        {SEARCH_FORM}
+        <div class="tb-display" role="group" aria-label="Display"><span class="tb-display-l" aria-hidden="true">Display</span><span class="tb-display-opts"><button type="button" class="tb-disp tb-disp-light" onclick="pcSetTheme('light')" aria-label="Light display" title="Light"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6" fill="currentColor"/><path d="M12 2.2v2.6M12 19.2v2.6M4.1 4.1l1.85 1.85M18.05 18.05l1.85 1.85M2.2 12h2.6M19.2 12h2.6M4.1 19.9l1.85-1.85M18.05 5.95l1.85-1.85" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><span class="tb-disp-sep" aria-hidden="true"></span><button type="button" class="tb-disp tb-disp-dark" onclick="pcSetTheme('dark')" aria-label="Dark display" title="Dark"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button></span></div>
       </div>
     </div>
   </header>
@@ -417,6 +429,29 @@ def dates_span(poet):
     """The poet's dates after the byline, as the app shows them (empty when unknown)."""
     d = (poet or {}).get("dates") if isinstance(poet, dict) else None
     return f' <span class="detail-dates">{esc(d)}</span>' if d else ""
+
+
+MORE_BY = 5
+
+
+def more_by(poet, poems, n, author):
+    """Up to MORE_BY links to other poems by the same poet, spread through their list and the
+    same on every build (the poems either side are already linked as Previous / Next)."""
+    others = [j for j in range(len(poems)) if abs(j - n) > 1] or [j for j in range(len(poems)) if j != n]
+    if not others:
+        return ""
+    k = min(MORE_BY, len(others))
+    step = len(others) / k
+    start = (n * 7919) % len(others)
+    picks = sorted({others[(start + int(i * step)) % len(others)] for i in range(k)})
+    items = []
+    for j in picks:
+        q = poems[j]
+        lang = text_lang(poet.get("category"), q.get("translator"))
+        la = f' lang="{lang}"' if lang != "en" else ""
+        items.append(f'<li><a href="/poem/{poet["slug"]}/{j}/"><span class="pl-title"{la}>{esc(q["title"])}</span></a></li>')
+    return (f'<section class="poet-poems more-by"><h2>More by {esc(author)}</h2>'
+            f'<ul class="poem-links">{"".join(items)}</ul></section>')
 
 
 def poem_page(poet, poems, n, p):
@@ -451,6 +486,7 @@ def poem_page(poet, poems, n, p):
       {cite_block(author, f"/poem/{slug}/{n}/", title=title, translator=p.get("translator"))}
       <p class="read-in-archive"><a href="/#/poem/{slug}/{n}">Read this poem with the Codex →</a></p>
       <nav class="pn-row">{prev_link}{next_link}</nav>
+      {more_by(poet, poems, n, author)}
     </article>"""
     canonical = f"{SITE}/poem/{slug}/{n}/"
     extra = {"about": p["subjects"]} if p.get("subjects") else {}
@@ -703,6 +739,22 @@ def write(path, content):
         f.write(content)
 
 
+WORK_FIELDS = ("slug", "title", "subtitle", "authorSlug", "author", "year", "type", "translator",
+               "workGroup", "blurb")
+
+
+def works_manifest(works):
+    """work/works.json: every work as data/index.json lists it, without the notes and the stanza
+    counts (about 150 KB compressed). app.js draws a work's contents page, a book's "Also in this
+    archive" and the side-by-side view from it, so those pages never fetch the 32 MB index."""
+    rows = []
+    for w in works:
+        row = {k: w[k] for k in WORK_FIELDS if w.get(k) not in (None, "")}
+        row["sections"] = [{k: v for k, v in s.items() if k != "stanzas"} for s in w.get("sections") or []]
+        rows.append(row)
+    return "[\n" + ",\n".join(json.dumps(r, ensure_ascii=False, separators=(",", ":")) for r in rows) + "\n]\n"
+
+
 def main():
     idx = json.load(io.open(os.path.join(ROOT, "data", "index.json"), encoding="utf-8"))
 
@@ -766,6 +818,7 @@ def main():
                       section_page(w, poet, grouped, i, others))
                 urls.append(f"{SITE}/work/{w['slug']}/{i}/")
                 section_count += 1
+    write(os.path.join(ROOT, "work", "works.json"), works_manifest(idx.get("works") or []))
 
     # Split into small child sitemaps behind one index. Google fetches each child
     # separately, so no single file is large, and a failure in one does not hide the rest.
