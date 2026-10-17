@@ -31,7 +31,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <!-- The reader's "Aa" choices (text size, light/dark), applied before the page draws. -->
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="styles.css?v=69" />
+  <link rel="stylesheet" href="styles.css?v=70" />
   <!-- The home page is drawn from this small file while the large index loads (app.js, "a fast first screen").
        Asked for here, while app.js is still loading, with the same fetch() app.js reads it with
        (a rel=preload copy could not be handed over through the service worker, and came down twice). -->
@@ -119,6 +119,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=93"></script>
+  <script src="app.js?v=94"></script>
 </body>
 </html>

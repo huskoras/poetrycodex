@@ -647,7 +647,7 @@
   function hlNodes(root) {
     const nodes = []; let pos = 0;
     const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: (n) =>
-      n.parentElement && n.parentElement.closest(".mark-pop, .mark-dot") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+      n.parentElement && n.parentElement.closest(".mark-pop, .mark-dot, .mn-col") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
     for (let n = w.nextNode(); n; n = w.nextNode()) { nodes.push({ n, s: pos }); pos += n.nodeValue.length; }
     return nodes;
   }
@@ -686,13 +686,54 @@
       }
       wrapSpan(nodes, s, e, () => {
         const m = document.createElement("mark");
+        if (h.text) m.dataset.note = "1";
         m.className = "hl hl-" + (HL_COLORS.includes(h.color) ? h.color : "yellow") + (h.text ? " has-note" : "");
         m.dataset.hl = h.id;
         if (h.text) m.title = "Your note: " + h.text.slice(0, 120);
         return m;
       });
     });
+    drawMarginNotes();
   }
+  // On a screen wide enough, each highlight with a note shows its note as a card in the right
+  // margin, level with its first words (pushed down when two would overlap); a click on the
+  // card opens it for editing, also in the margin. Narrower screens keep the pop-up.
+  const MARGIN_W = 250;
+  function marginRoom() {
+    if (!HL_CTX || !HL_CTX.root.isConnected) return false;
+    const r = HL_CTX.root.getBoundingClientRect();
+    return document.documentElement.clientWidth - r.right >= MARGIN_W + 70;
+  }
+  function drawMarginNotes() {
+    if (!HL_CTX || !HL_CTX.root.isConnected) return;
+    const root = HL_CTX.root;
+    root.querySelectorAll(".mn-col").forEach((c) => c.remove());
+    if (!marginRoom()) return;
+    const col = document.createElement("div");
+    col.className = "mn-col";
+    const base = root.getBoundingClientRect().top;
+    let floor = 0;
+    hlOf(HL_CTX.entry.id).filter((h) => h.text).map((h) => {
+      const m = root.querySelector(`mark.hl[data-hl="${h.id}"]`);
+      return m ? { h, top: m.getBoundingClientRect().top - base } : null;
+    }).filter(Boolean).sort((a, b) => a.top - b.top).forEach(({ h, top }) => {
+      const card = document.createElement("button");
+      card.type = "button";
+      card.className = "mn-card hl-edge-" + (HL_COLORS.includes(h.color) ? h.color : "yellow");
+      card.dataset.hl = h.id;
+      card.innerHTML = `<span class="mn-text">${esc(h.text)}</span>`;
+      col.appendChild(card);
+      const y = Math.max(top, floor);
+      card.style.top = y + "px";
+      floor = y + card.offsetHeight + 10;
+      card.addEventListener("click", (e) => { e.stopPropagation(); openHlPop(h); });
+      card.addEventListener("mouseenter", () => root.querySelectorAll(`mark.hl[data-hl="${h.id}"]`).forEach((x) => x.classList.add("is-hover")));
+      card.addEventListener("mouseleave", () => root.querySelectorAll(`mark.hl.is-hover`).forEach((x) => x.classList.remove("is-hover")));
+    });
+    if (col.children.length) root.appendChild(col);
+  }
+  let mnTimer = 0;
+  window.addEventListener("resize", () => { clearTimeout(mnTimer); mnTimer = setTimeout(drawMarginNotes, 150); });
   function hideHlBar() { if (hlBar) hlBar.hidden = true; }
   function hlSelection() {
     if (!HL_CTX || !HL_CTX.root.isConnected) return null;
@@ -758,8 +799,15 @@
       </div>`;
     document.body.appendChild(hlPop);
     const r = el.getBoundingClientRect(), width = document.documentElement.clientWidth;
-    hlPop.style.top = (window.scrollY + r.bottom + 8) + "px";
-    hlPop.style.left = Math.max(8, Math.min(window.scrollX + r.left, window.scrollX + width - Math.min(380, width - 16) - 8)) + "px";
+    if (marginRoom()) {
+      const tr = HL_CTX.root.getBoundingClientRect();
+      hlPop.classList.add("in-margin");
+      hlPop.style.top = (window.scrollY + r.top - 6) + "px";
+      hlPop.style.left = (window.scrollX + tr.right + 46) + "px";
+    } else {
+      hlPop.style.top = (window.scrollY + r.bottom + 8) + "px";
+      hlPop.style.left = Math.max(8, Math.min(window.scrollX + r.left, window.scrollX + width - Math.min(380, width - 16) - 8)) + "px";
+    }
     const input = hlPop.querySelector(".mark-input");
     if (focusNote) input.focus();
     let color = h.color;
@@ -877,7 +925,7 @@
       const h = hlOf(HL_CTX.entry.id).find((x) => x.id === m.dataset.hl);
       if (h) { e.preventDefault(); closeGloss(); openHlPop(h); return; }
     }
-    if (hlPop && !hlPop.contains(t)) closeHlPop();
+    if (hlPop && !hlPop.contains(t) && !t.closest(".mn-card")) closeHlPop();
     const g = t.closest(".gl[data-g]");
     if (g && window.getSelection().isCollapsed) { openGloss(g.dataset.g, g); return; }
     if (glPop && !glPop.contains(t) && !t.closest(".gl-li, .gl-see-b")) closeGloss();
@@ -1397,7 +1445,7 @@
       }
       if (cur.length) paras.push(cur.join(" "));
     }
-    return paras.map((p) => `<p>${esc(p)}</p>`).join("");
+    return paras.map((p, k) => `<p data-n="${k + 1}">${esc(p)}</p>`).join("");
   }
   // Verse: stanzas become paragraphs and each line its own block (styles.css .ln: hanging
   // indent, leading spaces kept); every fifth line carries its number for the optional
@@ -1422,24 +1470,25 @@
       }).join("")}</p>`;
     }).join("");
   }
-  // Long poems (over 40 lines) and every verse work section get a line-number switch;
-  // the reader's choice is remembered in this browser.
+  // Every verse poem of ten lines or more and every book of a work (its paragraphs, when it
+  // is prose) is numbered, every fifth line (the owner's wish, 17 Oct 2026); a switch turns
+  // the numbers off, and the reader's choice is remembered in this browser.
   const LN_KEY = "pc-line-numbers";
   function lineNumbersOn() {
-    try { return localStorage.getItem(LN_KEY) === "1"; } catch (e) { return false; }
+    try { return localStorage.getItem(LN_KEY) !== "0"; } catch (e) { return true; }
   }
   // The text block with its label row. o: {label, translator, lang, work, parallel}
   // parallel: the "Read with the translation" control (parCtlHTML); the text then sits in
   // .text-solo, with an empty .fx-slot beside it for the facing pages.
   function poemBlock(text, o) {
     const prose = isProse(text, o.translator);
-    const numberable = !prose && (o.work || lineCount(text) > 40);
+    const numberable = prose ? !!o.work : (o.work || lineCount(text) >= 10);
     const on = numberable && lineNumbersOn();
     const label = o.label ? `<p class="section-label">${o.label}</p>` : "";
     const head = numberable || o.parallel ? `
       <div class="ln-bar">${label}${o.parallel || ""}
-        ${numberable ? `<span class="ln-ctl"><span class="ln-note"${on ? "" : " hidden"}>Numbered as printed in this edition</span>
-        <button class="ln-toggle" type="button" aria-pressed="${on}">Line numbers</button></span>` : ""}
+        ${numberable ? `<span class="ln-ctl"><span class="ln-note"${on ? "" : " hidden"}>${prose ? "Paragraphs numbered" : "Numbered as printed in this edition"}</span>
+        <button class="ln-toggle" type="button" aria-pressed="${on}">${prose ? "Paragraph numbers" : "Line numbers"}</button></span>` : ""}
       </div>` : label;
     const solo = `
       <div class="poem-text${prose ? " is-prose" : ""}${on ? " numbered" : ""}"${o.lang || ""}>${poemHTML(text, prose)}</div>

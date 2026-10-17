@@ -1560,3 +1560,27 @@ a.sr-top-t:hover { text-decoration: underline; text-decoration-color: var(--gold
 .sr-top .vs-list { margin: .9rem 0 .2rem; }
 .vs-tip { font-size: .86rem; color: var(--ink-soft); }
 @media (max-width: 600px) { .sr-top-t { font-size: 1.5rem; } .sg-box, .tb-search .sg-box { left: 0; right: 0; width: auto; } }
+
+/* Paragraph numbers for prose books, in the same right-hand gutter as line numbers. */
+.poem-text.is-prose.numbered { padding-right: 2.6rem; }
+.poem-text.is-prose.numbered p { position: relative; }
+.poem-text.is-prose.numbered p::after { content: attr(data-n); position: absolute; top: .35em; right: -2.6rem; width: 2.1rem; text-align: right;
+  font-family: var(--sans); font-size: .62rem; font-weight: 600; line-height: 1; color: var(--faint); }
+@media (max-width: 560px) { .poem-text.is-prose.numbered { padding-right: 2.1rem; } .poem-text.is-prose.numbered p::after { right: -2.1rem; width: 1.8rem; } }
+
+/* The reader's notes in the right margin (wide screens): a card level with its words,
+   edged in the highlight's colour; hovering one lights its words. */
+.poem-text { position: relative; }
+.mn-col { position: absolute; top: 0; left: calc(100% + 3rem); width: 250px; height: 0; }
+.mn-card { position: absolute; left: 0; width: 100%; box-sizing: border-box; padding: .55rem .75rem .6rem .8rem; text-align: left; cursor: pointer;
+  border: 1px solid var(--line-strong); border-left: 4px solid var(--hl-yellow); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow);
+  font-family: var(--sans); font-size: .82rem; line-height: 1.45; color: var(--ink-soft); text-indent: 0; white-space: normal; }
+.mn-card:hover { border-color: var(--gold); color: var(--ink); }
+.mn-text { display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+.mn-card.hl-edge-yellow { border-left-color: rgba(220, 180, 40, .9); }
+.mn-card.hl-edge-green { border-left-color: rgba(70, 160, 80, .85); }
+.mn-card.hl-edge-blue { border-left-color: rgba(70, 130, 220, .85); }
+.mn-card.hl-edge-pink { border-left-color: rgba(220, 90, 140, .85); }
+mark.hl.is-hover { outline: 2px solid var(--gold); outline-offset: 1px; }
+.hl-pop.in-margin { width: 290px; }
+@media print { .mn-col { display: none; } }
