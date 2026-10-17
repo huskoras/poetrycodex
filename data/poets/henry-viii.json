@@ -1,0 +1,55 @@
+{
+ "slug": "henry-viii",
+ "name": "Henry VIII",
+ "dates": "1491–1547",
+ "era": "Tudor",
+ "category": "Tudor & Elizabethan",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Henry VIII (1491–1547) was King of England from 1509 until his death. A skilled musician and a patron of court music, he is credited with a number of songs and ballads, most of them preserved in the manuscript known as the Henry VIII Book (British Library, Additional MS 31922), compiled about 1518.",
+  "The pieces given here are the lyrics printed under his name in Early English Lyrics (1907): the holly-and-ivy song, the farewell lyric \"Whereto should I express\", and the famous \"Pastime with Good Company\". The attribution of individual songs to the king rests on the manuscript and on tradition."
+ ],
+ "order": 169.0206,
+ "poems": [
+  {
+   "id": "henry-viii/0",
+   "title": "Green groweth the holly; so doth the ivy",
+   "authorSlug": "henry-viii",
+   "author": "Henry VIII",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Early English Lyrics, ed. Chambers & Sidgwick (1907)",
+   "note": "",
+   "text": "Green groweth the holly; so doth the ivy.\nThough winter blastés blow never so high,\nGreen groweth the holly.\n\nAs the holly groweth green,\nAnd never changeth hue,\nSo I am, ever hath been\nUnto my lady true;\n\nAs the holly groweth green\nWith ivy all alone,\nWhen flowerés can not be seen\nAnd green wood leaves be gone.\n\nNow unto my lady\nPromise to her I make,\nFrom all other only\nTo her I me betake.\n\nAdieu, mine own lady,\nAdieu, my special,\nWho hath my heart truly,\nBe sure, and ever shall!"
+  },
+  {
+   "id": "henry-viii/1",
+   "title": "Whereto should I express",
+   "authorSlug": "henry-viii",
+   "author": "Henry VIII",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "Early English Lyrics, ed. Chambers & Sidgwick (1907)",
+   "note": "",
+   "text": "Whereto should I express\nMy inward heaviness?\nNo mirth can make me fain,\nTill that we meet again.\n\nDo way, dear heart, not so!\nLet no thought you dismay.\nThough ye now part me fro,\nWe shall meet when we may.\n\nWhen I remember me\nOf your most gentle mind,\nIt may in no wise agree\nThat I should be unkind.\n\nThe daisy delectable,\nThe violet wan and blo,\nYe are not variable.\nI love you and no moe.\n\nI make you fast and sure.\nIt is to me great pain\nThus long to endure\nTill that we meet again."
+  },
+  {
+   "id": "henry-viii/2",
+   "title": "Pastime with good company",
+   "authorSlug": "henry-viii",
+   "author": "Henry VIII",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "Early English Lyrics, ed. Chambers & Sidgwick (1907)",
+   "note": "",
+   "text": "Pastime with good company\nI love and shall, until I die.\nGrudge who lust, but none deny.\nSo God be pleased, thus live will I.\nFor my pastance,\nHunt, sing and dance,\nMy heart is set.\nAll goodly sport\nFor my comfort\nWho shall me let?\n\nYouth must have some dalliance,\nOf good or ill some pastance.\nCompany me thinks the best,\nAll thoughts and fancies to digest;\nFor idleness\nIs chief mistress\nOf vices all.\nThen who can say\nBut mirth and play\nIs best of all?\n\nCompany with honesty\nIs virtue, vices to flee;\nCompany is good and ill,\nBut every man has his freewill.\nThe best ensue,\nThe worst eschew!\nMy mind shall be,\nVirtue to use,\nVice to refuse;\nThus shall I use me."
+  }
+ ]
+}
