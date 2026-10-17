@@ -1447,17 +1447,21 @@ textarea.ask-input {
 .result-meta .works-jump:hover { text-decoration: underline; }
 
 /* An object from the poems' world (the Pylos Combat Agate on Homer's page and the
-   Ancient Greek & Roman page): photograph left, account right; stacked on phones. */
-.artefact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 1.75rem 2.25rem; align-items: center; margin: 2.25rem 0 2.5rem; padding: 1.75rem 0; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); }
-.artefact-img { display: block; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow); background: #ebe6dc; }
-.artefact-img img { display: block; width: 100%; height: auto; }
-.artefact figcaption { min-width: 0; }
+   Ancient Greek & Roman page): the stone in a dark, lit case (dark in either theme, as in
+   a museum), with an actual-size copy in the corner; the account below. */
+.artefact { margin: 2.25rem 0 2.5rem; }
+.artefact-case { position: relative; display: flex; justify-content: center; align-items: center; padding: clamp(1.5rem, 5vw, 3.5rem) clamp(1rem, 5vw, 3rem) clamp(2.5rem, 6vw, 3.75rem);
+  border-radius: 6px; border: 1px solid rgba(203, 166, 80, .45);
+  background: radial-gradient(ellipse 60% 70% at 50% 45%, #2b3442 0%, #161c25 62%, #0e1218 100%); box-shadow: var(--shadow); }
+.artefact-img { display: block; width: min(100%, 720px); }
+.artefact-img img { display: block; width: 100%; height: auto; filter: drop-shadow(0 18px 26px rgba(0, 0, 0, .55)); }
+.artefact-actual { position: absolute; right: 1rem; bottom: .8rem; display: flex; align-items: center; gap: .55rem; font-size: .66rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #cba650; }
+.artefact-actual img { width: 3.4cm; height: auto; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .6)); }
+.artefact figcaption { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr); gap: 1rem 2.5rem; padding: 1.5rem 0 1.25rem; border-bottom: 1px solid var(--gold); }
 .artefact-kicker { margin: 0 0 .35rem; font-size: .72rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-ink); }
-.artefact-title { margin: 0 0 .3rem; font-family: var(--serif); font-size: 1.6rem; font-weight: 500; line-height: 1.2; color: var(--ink); }
-.artefact-meta { margin: 0 0 1rem; font-size: .82rem; letter-spacing: .02em; color: var(--muted, var(--ink-soft)); }
-.artefact figcaption p:not([class]) { margin: 0 0 .8rem; font-family: var(--serif); font-size: 1.05rem; line-height: 1.7; color: var(--ink-soft); max-width: 60ch; }
-.artefact-credit { margin: .4rem 0 0; font-size: .74rem; color: var(--muted, var(--ink-soft)); }
-.artefact-credit a { color: inherit; }
-@media (max-width: 760px) { .artefact { grid-template-columns: minmax(0, 1fr); gap: 1.1rem; padding: 1.25rem 0; } .artefact-title { font-size: 1.35rem; } }
-.page-head + .artefact { border-top: 0; margin-top: .5rem; padding-top: .5rem; }
+.artefact-title { margin: 0 0 .5rem; font-family: var(--serif); font-size: 1.65rem; font-weight: 500; line-height: 1.2; color: var(--ink); }
+.artefact-meta { margin: 0; font-size: .82rem; line-height: 1.6; color: var(--ink-soft); }
+.artefact-text p { margin: 0 0 .8rem; font-family: var(--serif); font-size: 1.05rem; line-height: 1.7; color: var(--ink-soft); max-width: 62ch; }
+.artefact-text .artefact-credit { margin: .4rem 0 0; font-family: inherit; font-size: .74rem; }
+@media (max-width: 760px) { .artefact figcaption { grid-template-columns: minmax(0, 1fr); gap: .25rem; } .artefact-title { font-size: 1.35rem; } .artefact-actual { display: none; } }
 @media print { .artefact { display: none; } }
