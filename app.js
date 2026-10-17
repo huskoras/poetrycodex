@@ -238,6 +238,7 @@
   // "Source: <the printed book>. Digital text: <where>." under a poem or a part of a work.
   // src.line is HTML built from the bibliography (titles in <i>, the rest escaped).
   function bookSourceHTML(src) {
+    return "";   // the owner asked (17 Oct 2026) that the source books not be shown on the page
     if (!src) return "";
     const txt = src.text ? ` Digital text: ${src.url ? `<a href="${esc(src.url)}" rel="noopener">${esc(src.text)}</a>` : esc(src.text)}.` : "";
     const unsure = src.sure ? "" : ` <span class="bs-note">(details from catalogue records, not yet checked against the title page)</span>`;

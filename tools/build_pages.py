@@ -201,6 +201,7 @@ def sources_of(slug):
 def book_source(src):
     """'Source: <the printed book>. Digital text: <where>.' as the app shows it.
     src['line'] is HTML made by build_sources.py (titles in <i>, the rest escaped)."""
+    return ""   # the owner asked (17 Oct 2026) that the source books not be shown on the pages
     if not src:
         return ""
     txt = ""
