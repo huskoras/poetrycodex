@@ -831,15 +831,23 @@
   const glossOff = () => { try { return localStorage.getItem(GLOSS_OFF_KEY) === "1"; } catch (e) { return false; } };
   const GLOSS_CACHE = {};
   let GLOSS_NOW = null, glPop = null;
-  function glossKey(entry) {
-    const m = /^work:([^/]+)\/(\d+)$/.exec((entry && entry.id) || "");
-    return m && GLOSSED.has(m[1]) ? { slug: m[1], i: +m[2] } : null;
+  // Single poems with notes are listed in data/glosses/poems/index.json (["keats/0", ...]);
+  // their notes are in data/glosses/poems/<poet>/<n>.json.
+  let GLOSSED_POEMS = null;
+  const glossedPoems = () => GLOSSED_POEMS || (GLOSSED_POEMS = fetch("data/glosses/poems/index.json")
+    .then((r) => r.ok ? r.json() : []).catch(() => []).then((a) => new Set(Array.isArray(a) ? a : [])));
+  async function glossUrl(entry) {
+    const id = (entry && entry.id) || "";
+    const m = /^work:([^/]+)\/(\d+)$/.exec(id);
+    if (m) return GLOSSED.has(m[1]) ? `data/glosses/${m[1]}/${m[2]}.json` : null;
+    if (/^[\w-]+\/\d+$/.test(id) && (await glossedPoems()).has(id)) return `data/glosses/poems/${id}.json`;
+    return null;
   }
   async function drawGlosses(entry) {
     GLOSS_NOW = null;
-    const k = glossKey(entry);
-    if (!k || !HL_CTX) return;
-    const url = `data/glosses/${k.slug}/${k.i}.json`;
+    if (!HL_CTX) return;
+    const url = await glossUrl(entry);
+    if (!url) return;
     const notes = await (GLOSS_CACHE[url] || (GLOSS_CACHE[url] = fetch(url).then((r) => r.ok ? r.json() : []).catch(() => [])));
     if (!HL_CTX || HL_CTX.entry !== entry || !HL_CTX.root.isConnected || !Array.isArray(notes) || !notes.length) return;
     const root = HL_CTX.root;
@@ -865,7 +873,7 @@
     }
     const bar = document.createElement("div");
     bar.className = "gl-count";
-    bar.innerHTML = `<span class="gl-count-label">Study notes</span> <span>${num(notes.length)} note${notes.length === 1 ? "" : "s"} on this book by the editors${on ? ": click an underlined word" : ""}.</span>
+    bar.innerHTML = `<span class="gl-count-label">Study notes</span> <span>${num(notes.length)} note${notes.length === 1 ? "" : "s"} on this ${/^work:/.test(entry.id) ? "book" : "poem"} by the editors${on ? ": click an underlined word" : ""}.</span>
       <button type="button" class="gl-flip" aria-pressed="${on}">${on ? "Hide them" : "Show them"}</button>
       <a class="gl-all" href="#gl-list">All notes ↓</a>`;
     root.before(bar);
@@ -876,7 +884,7 @@
     });
     const list = document.createElement("section");
     list.className = "gl-list"; list.id = "gl-list";
-    list.innerHTML = `<h2 class="section-label">Study notes on this book</h2><ol>${notes.map((g) =>
+    list.innerHTML = `<h2 class="section-label">Study notes on this ${/^work:/.test(entry.id) ? "book" : "poem"}</h2><ol>${notes.map((g) =>
       `<li><button type="button" class="gl-li" data-g="${esc(g.id)}"><span class="gl-li-t">${esc(g.title)}</span>${g.ref ? ` <span class="gl-li-r">${esc(g.ref)}</span>` : ""}</button><span class="gl-li-s">${esc(g.short || "")}</span></li>`).join("")}</ol>`;
     root.after(list);
     list.querySelectorAll(".gl-li").forEach((b) => b.addEventListener("click", () => openGloss(b.dataset.g, b)));
