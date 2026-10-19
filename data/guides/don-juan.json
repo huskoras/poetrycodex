@@ -1,0 +1,990 @@
+{
+ "work": "don-juan",
+ "title": "Don Juan",
+ "author": "Lord Byron",
+ "quoteEdition": "don-juan",
+ "unit": "Part",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "George Gordon, sixth Baron Byron (1788–1824)"
+  },
+  {
+   "label": "Written",
+   "value": "July 1818 to May 1823, in Venice, Ravenna, Pisa and Genoa"
+  },
+  {
+   "label": "Published",
+   "value": "Cantos I–II by John Murray, without author's or publisher's name, July 1819; III–V by Murray, 1821; VI–XVI by John Hunt, 1823–24"
+  },
+  {
+   "label": "Form",
+   "value": "Ottava rima (eight lines of iambic pentameter rhyming abababcc), learned from John Hookham Frere's Whistlecraft (1817) and the Italian comic poets, above all Pulci"
+  },
+  {
+   "label": "Length",
+   "value": "Sixteen complete cantos and fourteen stanzas of a seventeenth, nearly 2,000 stanzas in all, plus a verse Dedication"
+  },
+  {
+   "label": "Genre",
+   "value": "Comic and satirical epic; the narrator calls it 'epic' and mocks the term in the same breath"
+  },
+  {
+   "label": "Settings",
+   "value": "Seville, the Mediterranean, a Greek island, Constantinople, Ismail on the Danube, St Petersburg, London and an English country house"
+  },
+  {
+   "label": "Hero",
+   "value": "Don Juan, here a handsome, passive young man more often seduced than seducing"
+  },
+  {
+   "label": "Narrator",
+   "value": "A worldly, digressive voice close to Byron's own, who talks to the reader about the poem, politics, poets and himself"
+  },
+  {
+   "label": "State",
+   "value": "Unfinished at Byron's death at Missolonghi, Greece, on 19 April 1824"
+  }
+ ],
+ "context": [
+  "Byron was the most famous poet in Europe when he left England in April 1816, after the collapse of his marriage to Annabella Milbanke and amid rumours of his relationship with his half-sister, Augusta Leigh. He never returned. Childe Harold's Pilgrimage (1812–18) and his Turkish tales had made the brooding 'Byronic hero' a fashion; in Venice, from 1817, he began to write in a very different voice, comic, colloquial and sceptical. The first sign was Beppo (1818), a short tale in ottava rima, and in July 1818 he began Don Juan [[marchand1957]] [[maccarthy2002]].",
+  "The stanza came from the Italian comic epic. Luigi Pulci's Morgante (fifteenth century), which Byron translated in part, Francesco Berni and Giambattista Casti had used ottava rima for burlesque, and John Hookham Frere had adapted it to English in his mock-chivalric Prospectus and Specimen of an Intended National Work, published under the pseudonym 'Whistlecraft' in 1817. Byron saw in the form a medium for everything he wanted to say: its six alternately rhyming lines allow narrative and reflection, and its closing couplet invites a joke or a sudden reversal [[vassallo1984]] [[ridenour1960]].",
+  "Publication was difficult from the start. Byron's friends in London, led by John Cam Hobhouse, thought Canto I indecent and the Dedication libellous; John Murray published Cantos I and II in July 1819 in an expensive quarto without the names of author or publisher, and without the Dedication. Reviewers condemned the poem's immorality and impiety, and pirated cheap editions spread it among readers the respectable quarto had not been meant for. Murray issued Cantos III–V in 1821 but grew more nervous, and from 1823 Byron gave the later cantos to John Hunt, brother of the radical editor Leigh Hunt, who published them in cheap editions [[steffan1957]] [[mcgann1986]] [[rutherford1970]].",
+  "The poem's hero comes from the old legend of Don Juan, the libertine of Tirso de Molina's El burlador de Sevilla, Molière's Dom Juan and Mozart's Don Giovanni, who is damned for his seductions. Byron keeps the name and the Spanish beginning and drops almost everything else: his Juan is a passive youth whom women pursue, and the poem's interest lies less in him than in the narrator who tells his story and in the European world through which he passes [[haslett1997]] [[boyd1945]].",
+  "Byron wrote the later cantos in Italy while engaged in the politics of Italian and Greek liberation. In July 1823 he sailed for Greece to support the war of independence against the Ottoman Empire, taking the unfinished poem with him; he died of fever at Missolonghi on 19 April 1824. The last cantos appeared in the weeks before his death. Since the twentieth century Don Juan has been widely regarded as his masterpiece and one of the great long poems in English [[marchand1957]] [[bone2004]]."
+ ],
+ "plot": [
+  "Don Juan, born in Seville, is brought up by his learned and strict mother, Donna Inez. At sixteen he has an affair with Donna Julia, a married friend of his mother; her husband, Don Alfonso, discovers them in a bedroom farce, and Juan is sent abroad. His ship is wrecked; the survivors in the longboat draw lots and eat his tutor; Juan alone reaches a Greek island, where he is nursed by Haidée, daughter of the pirate Lambro. They live as lovers until Lambro returns, has Juan seized and sold as a slave, and Haidée dies of grief.",
+  "In Constantinople Juan is bought for the Sultan's wife Gulbeyaz, who has him smuggled into the harem dressed as a woman; he refuses her, spends a night among the odalisques beside Dudu and escapes with an English soldier, Johnson. The two join the Russian army at the siege of Ismail, where Juan fights bravely and saves a Muslim girl, Leila. Sent with the news of victory to St Petersburg, he becomes the favourite of Catherine the Great.",
+  "When he falls ill, Catherine sends him on a diplomatic mission to England. Juan travels across Europe with Leila, is robbed by a highwayman outside London, and is welcomed into fashionable society, where he becomes a desirable bachelor. Lord Henry and Lady Adeline Amundeville invite him to their country house, Norman Abbey.",
+  "At the abbey Adeline sets out to find Juan a wife, while he grows interested in the serious young Catholic Aurora Raby and is pursued by the Duchess of Fitz-Fulke. Juan sees the ghost of the abbey, the Black Friar, and on its second appearance discovers that the ghost is the Duchess in disguise. The poem breaks off in a fragment of Canto XVII the morning after; Byron died before he could continue."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Dedication: To Bob Southey",
+   "lines": "Dedication",
+   "section": 0,
+   "summary": [
+    "Before the story begins, the narrator addresses Robert Southey, the Poet Laureate, in seventeen stanzas of mock homage. Southey, once a radical, is mocked as a turncoat who has grown fat on royal favour; Wordsworth's long Excursion and Coleridge's metaphysics are thrown in for good measure, and the three 'Lakers' are pictured as a nest of singing birds baked in a pie. The poet sets his own independence against their placemanship: he will write as he likes and court no patron.",
+    "The second half turns from poets to politics. Milton, blind, poor and loyal to the republic, is set up as the true model of a poet who did not flatter tyrants, and against him stands Lord Castlereagh, the Foreign Secretary, blamed for the repression of Ireland and for the settlement of Europe after Napoleon that restored the old monarchies. The Dedication ends by presenting the poem to Southey 'in honest simple verse', as the work of an unbought writer."
+   ],
+   "analysis": [
+    "The Dedication was written in Venice in 1818 and then withheld. Byron's friends in London, especially John Cam Hobhouse, judged it too dangerous, partly because it attacked a serving minister by name and partly because it would make the anonymous poem's author obvious; Cantos I and II appeared in 1819 without it, and it was not included in an authorised edition until after Byron's death [[steffan1957]] [[mcgann1986]]. Its suppression is itself part of the poem's history: from the start, Don Juan was a work its own publishers were afraid of.",
+    "The attack on the Lake poets is more than a literary quarrel. Byron links bad poetry with bad politics: the renegade who changes sides for a pension, the poet who writes for an established order, the minister whose speeches are as confused as his policies. The mock dedication, the heroic stanza used for insult, and the shift from comic abuse to the solemn figure of Milton give a first sample of the poem's whole method, in which jest and seriousness alternate without warning [[mcgann1976]] [[graham1990]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ Dedication 1",
+     "quote": "Bob Southey! You’re a poet, poet laureate,\nAnd representative of all the race.",
+     "note": "The opening rhyme of 'laureate' with 'Tory at' is the first of the poem's comic double and triple rhymes; the form itself mocks the official poet."
+    },
+    {
+     "ref": "DJ Dedication 11",
+     "quote": "Would he adore a sultan? He obey\nThe intellectual eunuch Castlereagh?",
+     "note": "Milton is imagined rising from the grave; the couplet's insult to Castlereagh was one reason the Dedication was suppressed."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Canto I: Seville and Donna Julia",
+   "lines": "Canto I",
+   "section": 1,
+   "summary": [
+    "The narrator announces that he wants a hero and, finding the age's heroes unreliable, takes 'our ancient friend Don Juan', familiar from the pantomime. He refuses to begin in the middle like other epic poets and starts with Juan's parents in Seville: Don José, a careless husband, and Donna Inez, a learned, rigid woman of mathematics and moral principle, whose marriage ends in quarrels, lawyers and José's death. Inez brings up her only son on a carefully expurgated education.",
+    "At sixteen Juan falls in love with Donna Julia, a married woman of twenty-three, a friend of his mother whose husband, Don Alfonso, is fifty. After a long comedy of resistance and self-deception, Julia yields on a summer evening in June. Months later Alfonso bursts into her bedroom at midnight with servants and lawyers; Julia brazens it out with a torrent of indignation while Juan lies hidden in the bed. When Alfonso returns and finds a pair of men's shoes, there is a fight in the dark, and Juan escapes naked. Alfonso begins divorce proceedings, Julia is sent to a convent, from which she writes Juan a farewell letter, and Juan is sent on his travels from Cadiz. The canto closes with the narrator's playful outline of his 'epic' and his own farewell to youth."
+   ],
+   "analysis": [
+    "Canto I establishes the poem's voice: a worldly, middle-aged narrator who talks to the reader, interrupts himself and comments on everything, while the story moves forward through farce. Byron's Juan is not the seducer of the legend told by Tirso de Molina, Molière and Mozart's Don Giovanni, but an innocent who is seduced; the reversal is central to the poem's comedy and to modern debates about its sexual politics [[haslett1997]] [[wolfson1987]]. Donna Inez was quickly read as a caricature of Byron's estranged wife, Annabella Milbanke, which added personal scandal to the canto's sexual frankness [[maccarthy2002]].",
+    "The bedroom scene is pure stage farce, but its consequences are not comic for Julia. Her letter from the convent, with its claim that love is 'woman's whole existence', speaks with a dignity the narrator does not undercut, and it gives the first instance of the poem's recurring concern with how differently the same passion falls on men and on women. The mock-epic programme of stanza 200, promising twelve books, a list of ships and a view of hell, is both a joke at the expense of epic rules and a claim that this sprawling poem is a true epic of modern life [[ridenour1960]] [[beatty1985]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 1.117",
+     "quote": "A little still she strove, and much repented\nAnd whispering ‘I will ne’er consent’—consented.",
+     "note": "The couplet springs the stanza's trap: the final word reverses Julia's protest. Byron's closing couplets often work like the punch line of a joke."
+    },
+    {
+     "ref": "DJ 1.194",
+     "quote": "‘Man’s love is of man’s life a thing apart,\n’Tis woman’s whole existence; man may range",
+     "note": "From Julia's letter, one of the poem's most quoted passages, on the unequal stakes of love for men and women."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Canto II: Shipwreck and Haidée",
+   "lines": "Canto II",
+   "section": 2,
+   "summary": [
+    "Juan sails from Cadiz on the Trinidada with his tutor Pedrillo and servants. A storm wrecks the ship; some of the crew get drunk and drown, and Juan, pistol in hand, keeps order at the spirit room. The survivors crowd into the longboat. As days pass without food they eat Juan's spaniel, and then, after drawing lots, they eat Pedrillo. Juan refuses to join them, and those who feed on the tutor die raving. At last a few survivors sight land; Juan alone reaches the shore alive and collapses.",
+    "He is found on the beach of a Greek island by Haidée, the daughter of the pirate and slave-trader Lambro, and her maid Zoe. They hide him in a cave, nurse and feed him, and Haidée, who speaks no language he knows, teaches him Greek. Her father is away at sea and believed dead. The two fall in love, and on the shore, with the stars and the sea as witnesses, they become lovers. The narrator comments on love, inconstancy and the morning after."
+   ],
+   "analysis": [
+    "The shipwreck is one of the boldest passages in English comic verse. Byron drew on published accounts of real disasters, gathered in collections such as Sir J. G. Dalyell's Shipwrecks and Disasters at Sea (1812), and he keeps their grim detail while setting it in the comic stanza. Early readers found the mixture of horror and jest monstrous; later critics have seen in it the poem's refusal to let either sentiment or mockery have the last word [[mcgann1976]] [[steffan1957]].",
+    "The love of Juan and Haidée is the poem's nearest approach to an ideal: a natural marriage outside society, with 'Solitude' as priest. But the narrator places it under shadows from the start. The father is only absent, the island is a pirate's base and the narrator keeps reminding us that such happiness belongs to youth and cannot last. Critics have read the episode as Byron's version of the Fall, an Eden that the poem's knowing voice already sees from the far side [[gleckner1967]] [[cooke1969]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 2.75",
+     "quote": "By which none were permitted to be neuter—\nAnd the lot fell on Juan’s luckless tutor.",
+     "note": "The comic feminine rhyme 'neuter' / 'tutor' delivers the death of Pedrillo: a typical clash of horror and wit."
+    },
+    {
+     "ref": "DJ 2.204",
+     "quote": "Their priest was Solitude, and they were wed:\nAnd they were happy, for to their young eyes\nEach was an angel, and earth paradise.",
+     "note": "The 'marriage' of Juan and Haidée; 'to their young eyes' quietly signals that the paradise is a matter of perspective."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Canto III: Lambro's Return and 'The Isles of Greece'",
+   "lines": "Canto III",
+   "section": 3,
+   "summary": [
+    "Lambro, far from dead, returns from a voyage and lands quietly to find his island given over to feasting, dancing and music: Haidée, believing herself mistress of his wealth, is holding court with Juan. The narrator describes Lambro as a man of real if misdirected gifts, a pirate made by the oppression of his country, and lingers over the luxurious feast, the dresses and the entertainers, while Lambro walks unrecognised towards the house.",
+    "Among the entertainers is a poet, a time-serving man who turns his verses to suit every audience. Yet for once he sings a song of real feeling, 'The Isles of Greece', which laments Greece's slavery under the Ottoman Empire and calls on modern Greeks to remember Marathon and Thermopylae. The narrator then wanders into a long digression on words and ink, on Wordsworth and Southey, and on the dullness of epics, before admitting that he has digressed and ending the canto at evening."
+   ],
+   "analysis": [
+    "'The Isles of Greece' is the most famous lyric in Don Juan and became an anthem of philhellenism. Byron's frame complicates it: the singer is a turncoat, the song is commissioned entertainment, and the narrator, after the lyric's passionate close, comments on the poet's profession and drifts into satire. The lyric and its frame together dramatise the question of sincerity that runs through the poem: can a poem that mocks enthusiasm also mean what it says? Byron's own death in the Greek cause in 1824 gave the song a weight that later readers could not separate from it [[mcgann1976]] [[beatty1985]].",
+    "Byron first drafted Cantos III and IV as a single canto and then divided it in two; the self-conscious joke of 'Hail, Muse! et cetera' at the start shows how far the epic invocation has become a formula. The digression on 'words' and 'ink' that follows the song is a small manifesto for the poem's belief in writing as action in the world [[steffan1957]] [[stabler2002]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 3.86, song st. 3",
+     "quote": "The mountains look on Marathon—\nAnd Marathon looks on the sea;\nAnd musing there an hour alone,\nI dream’d that Greece might still be free;",
+     "note": "From 'The Isles of Greece', sung by the poet at Haidée's feast: memory of ancient liberty set against present slavery."
+    },
+    {
+     "ref": "DJ 3.88",
+     "quote": "But words are things, and a small drop of ink,\nFalling like dew, upon a thought, produces\nThat which makes thousands, perhaps millions, think;",
+     "note": "The narrator's claim for the power of writing, made just after the song; the comic poem insists that it can act on the world."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Canto IV: The Death of Haidée",
+   "lines": "Canto IV",
+   "section": 4,
+   "summary": [
+    "The narrator reflects on the difficulty of keeping his poem afloat and on why he laughs at mortal things. Juan and Haidée, still unaware of Lambro's return, wake from a sleep troubled by Haidée's dream of disaster. Lambro appears in the room. Juan draws his sword; Haidée throws herself between them; Lambro's men overpower Juan, who is wounded, put in chains and carried off to be sold as a slave.",
+    "Haidée falls into a fever and a long silence, recognising no one. She revives briefly when a harper sings of love, then dies after twelve days; she was carrying Juan's child, which dies with her. Lambro's island becomes desolate, and nothing remains but her grave by the shore. Juan, meanwhile, is shipped towards Constantinople with a company of Italian opera singers who have also been sold, and the narrator turns back to comedy with an account of their quarrels."
+   ],
+   "analysis": [
+    "Canto IV contains the poem's purest pathos and the narrator's most famous explanation of his manner: he laughs so that he may not weep. The death of Haidée is told almost without irony, yet it is followed at once by the comic singers in the slave ship, so that the reader is denied the long close that a tragedy would provide. The sequence shows the poem's 'mobility' at work, the rapid changes of mood that critics have seen as either a failure of feeling or a more honest picture of how life moves on [[manning1978]] [[ridenour1960]].",
+    "The episode also shows the connection between love and power that the later cantos develop. Haidée's paradise depended on her father's piracy; it ends because a father claims his property, and Juan becomes property himself. The silence of the island afterwards, with nothing left to tell the story, extends to the whole poem the sense of a happiness that history has erased [[gleckner1967]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 4.4",
+     "quote": "And if I laugh at any mortal thing,\n’Tis that I may not weep; and if I weep,",
+     "note": "The narrator's best-known statement of the relation between his comedy and grief."
+    },
+    {
+     "ref": "DJ 4.71",
+     "quote": "Brief, but delightful—such as had not staid\nLong with her destiny; but she sleeps well\nBy the sea-shore, whereon she loved to dwell.",
+     "note": "Haidée's epitaph: the narrator allows her death a rare stillness."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Canto V: The Slave Market and Gulbeyaz",
+   "lines": "Canto V",
+   "section": 5,
+   "summary": [
+    "In the slave market of Constantinople, Juan is chained to an Englishman named Johnson, a cheerful soldier of fortune who has fought for the Russians and takes his capture philosophically. They are bought by Baba, a black eunuch, and taken by boat to the palace of the Sultan. There Baba insists that Juan be dressed as a woman, and Juan, protesting, is introduced into the seraglio as a female slave.",
+    "Juan has been bought for Gulbeyaz, the Sultan's favourite wife, a proud and beautiful woman who saw him in the market. She addresses him imperiously, 'Christian, canst thou love?', and expects him to fall at her feet. Juan, thinking of Haidée, bursts into tears and refuses: love, he says, is for the free. Gulbeyaz, astonished, weeps in turn, and is about to give way to rage or tenderness when the Sultan is announced. Juan, still disguised, is placed among the women of the harem."
+   ],
+   "analysis": [
+    "Canto V reverses the usual roles of the oriental tale. The man is bought, dressed in women's clothes and offered to a powerful woman, and his refusal is a claim of freedom made in the language of the captive heroine. Susan Wolfson's influential essay reads the cross-dressing here and in Canto VI as a way in which Byron tests the conventions of gender, showing Juan's 'feminine' passivity and the fragility of masculine identity, even as the narrator's jokes reassert male privilege [[wolfson1987]].",
+    "The canto was published in 1821 with Cantos III and IV, after Byron had promised Teresa Guiccioli, his companion in Ravenna, that he would stop writing the poem, a promise he later withdrew. Its satire of the Ottoman court is also a satire of every court: the Sultan, the eunuch and the favourite stand for absolute power and its dependants anywhere, and the slave market prices human beings as plainly as an English marriage market does in the later cantos [[mcgann1976]] [[marchand1957]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 5.116",
+     "quote": "And merely saying, ‘Christian, canst thou love?’\nConceived that phrase was quite enough to move",
+     "note": "Gulbeyaz assumes that command is enough to win love; the enjambment leaves her confidence hanging."
+    },
+    {
+     "ref": "DJ 5.127",
+     "quote": "Were fitter for me: Love is for the free!\nI am not dazzled by this splendid roof,",
+     "note": "Juan's refusal; the speech in which the passive hero claims freedom."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Canto VI: The Harem",
+   "lines": "Canto VI",
+   "section": 6,
+   "summary": [
+    "The Sultan arrives, notices the new 'girl' with approval, and goes to bed with Gulbeyaz. Juan, as 'Juanna', is led to the dormitory of the odalisques, where he is assigned to share a bed with Dudu, a languid and beautiful girl. The women's curiosity, their chatter and their beauty are described at length by the narrator, who digresses on the absurdity of polygamy and the desires of women.",
+    "In the night Dudu wakes screaming, and the women crowd around; she explains that she dreamed of a golden apple and a bee. The matron moves her, and the narrator leaves the truth of the night discreetly uncertain. In the morning the jealous Gulbeyaz learns where Juan has slept and orders Baba to have Juan and Dudu sewn into sacks and thrown into the Bosphorus. Before the order can be carried out, Juan, Johnson and two of the women escape from the palace."
+   ],
+   "analysis": [
+    "The harem cantos are Byron's most daring play with sexual suggestion and with disguise. Juan in women's dress, sharing a bed with a woman, is at once a joke about what the reader is not told and an experiment with identity. The narrator's frequent appeals to the 'chaste' reader and his refusals to say what happened draw the reader into complicity with the joke [[wolfson1987]] [[haslett1997]].",
+    "Dudu's dream of the apple and the bee recalls Eve's temptation and lightly mocks the poem's own Eden in the Haidée cantos. The canto also returns to political comedy: Byron mocks despotism through the Sultan and Gulbeyaz, and Cantos VI to VIII, published by John Hunt in July 1823, were the first to appear after Byron's break with John Murray [[steffan1957]] [[marchand1973]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 6.42",
+     "quote": "A kind of sleepy Venus seem’d Dudu,\nYet very fit to ‘murder sleep’ in those\nWho gazed upon her cheek’s transcendent hue,",
+     "note": "The quotation from Macbeth ('murder sleep') turns a tragic phrase into a joke about desire."
+    },
+    {
+     "ref": "DJ 6.1",
+     "quote": "‘There is a tide in the affairs of men\nWhich,—taken at the flood,’—you know the rest,",
+     "note": "The canto opens by quoting Shakespeare's Brutus and breaking off: a typical gesture of the conversational narrator."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Canto VII: The Siege of Ismail",
+   "lines": "Canto VII",
+   "section": 7,
+   "summary": [
+    "The narrator invokes Love and Glory and defends his poem against the charge that it scoffs at everything. The scene moves to the Danube, where in 1790 a Russian army besieges the Turkish fortress of Ismail. Byron, following a French history of the campaign, lists the Russian officers with absurd names, describes Potemkin, Catherine the Great's favourite, who orders the town taken at any cost, and introduces the general Suvorov (spelled 'Suwarrow' in the text), who arrives to direct the assault.",
+    "Juan and Johnson, having escaped from Constantinople with two women, arrive at the Russian camp. Johnson, an old acquaintance of the Russians, presents Juan as a volunteer, and Suvorov enlists them for the storming of the city. The two women are left behind, and the canto ends as the army prepares to attack at night."
+   ],
+   "analysis": [
+    "The war cantos turn the poem's satire on the glory celebrated by epic. Byron took his facts from the Marquis de Castelnau's history of New Russia, and he insists on their documentary truth; the comedy comes from the gap between the high style of military celebration and the facts of killing. Suvorov is described as half hero and half buffoon, a brilliant soldier whose genius serves slaughter [[mcgann1976]] [[graham1990]].",
+    "The opening apostrophe and the defence of the poem's laughter show how conscious Byron had become of his critics. Writing in 1822 in Pisa and Genoa, he answers charges of immorality by pointing to the morality of his attack on war. The episode also links the poem to contemporary events: readers in 1823 would remember Napoleon and Wellington, and the satire on conquest is aimed at them too [[beatty1985]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 7.55",
+     "quote": "Hero, buffoon, half-demon, and half-dirt,\nPraying, instructing, desolating, plundering;\nNow Mars, now Momus; and when bent to storm\nA fortress, Harlequin in uniform.",
+     "note": "Byron's portrait of Suvorov: the lists of contradictory words imitate the general's own restless energy."
+    },
+    {
+     "ref": "DJ 7.1",
+     "quote": "O Love! O Glory! what are ye who fly\nAround us ever, rarely to alight?",
+     "note": "The invocation of the poem's two great themes, presented as meteors that lure and abandon."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Canto VIII: The Storming of Ismail and Leila",
+   "lines": "Canto VIII",
+   "section": 8,
+   "summary": [
+    "The assault begins at night. The narrator describes the confusion, the fire and the killing, while Juan, separated from his regiment, fights his way forward in search of glory with the courage of youth. Johnson rejoins him. The defenders resist bravely: an old Tatar khan fights on beside his five sons until all are dead. The city falls, and the narrator records the rape and plunder that follow, while insisting on his reluctance to dwell on them.",
+    "In the slaughter Juan finds a ten-year-old Muslim girl, Leila, hiding among the dead, and saves her from two Cossacks who are about to kill her. He makes a vow to protect her. Ismail is taken with enormous losses on both sides, and Suvorov writes his despatch to the Empress in a rhymed couplet. Juan, who has distinguished himself, is sent with the despatch to St Petersburg, and he takes Leila with him."
+   ],
+   "analysis": [
+    "Canto VIII is Byron's most sustained attack on war. The narrator calculates the human cost of victory and claims that drying a single tear earns more honest fame than shedding seas of blood. The attack is political as well as moral: the canto mocks the newspapers' language of glory and the reigning monarchs of the Holy Alliance, and it uses the true history of Ismail as a mirror for Europe after Waterloo [[mcgann1976]] [[graham1990]].",
+    "Juan's rescue of Leila is the one clearly good act he performs in the poem, and it marks a moral development in the passive hero. Yet the narrator also shows that Juan has been as eager as anyone to win glory; the poem does not pretend that its hero stands outside the system it condemns [[manning1978]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 8.3",
+     "quote": "The drying up a single tear has more\nOf honest fame, than shedding seas of gore.",
+     "note": "The moral at the heart of the war cantos, set in the epigrammatic final couplet."
+    },
+    {
+     "ref": "DJ 8.141",
+     "quote": "To prayer was heard no more!—and Juan wept,\nAnd made a vow to shield her, which he kept.",
+     "note": "The canto's closing lines on Leila; for once the narrator vouches for Juan's constancy."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Canto IX: Catherine the Great",
+   "lines": "Canto IX",
+   "section": 9,
+   "summary": [
+    "The canto opens with a scathing address to the Duke of Wellington, 'Villainton', whose victory at Waterloo, the narrator says, served only to restore old tyrannies, and who has been rewarded with pensions and praise. The narrator declares war, in words at least, against every despotism, and then digresses on death, philosophy and his own poem.",
+    "Juan arrives at St Petersburg in his uniform, delivers the despatch and is presented at court to the Empress Catherine. Catherine, a ruler famous for her succession of young favourites, is struck by him; the courtiers understand at once, and the current favourites fear for their places. Juan becomes the Empress's lover, and the narrator comments ironically on the vanity that makes him enjoy his position."
+   ],
+   "analysis": [
+    "The Wellington stanzas were among the most provocative Byron ever wrote: Wellington was the national hero and a leading Tory politician. Byron's argument is that the defeat of Napoleon had not freed Europe but restored the old monarchies and repression, and he places his comic poem in the service of liberty. Jerome McGann and Peter Graham have shown how precisely these cantos respond to the politics of the early 1820s [[mcgann1976]] [[graham1990]].",
+    "Catherine reverses the pattern of the oriental cantos: Juan is again the object of a powerful woman's desire, but this time he consents and profits. The comedy of the court lies in its sexual and political economy, in which favour is exchanged for favours. The narrator is frank and amused about Catherine's appetites, and modern critics have discussed the mixture of misogyny and admiration in his portrait [[wolfson1987]] [[maccarthy2002]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 9.1",
+     "quote": "O, Wellington! (or ‘Villainton’—for Fame\nSounds the heroic syllables both ways;",
+     "note": "The pun, taken from French satire, opens the attack on the hero of Waterloo."
+    },
+    {
+     "ref": "DJ 9.24",
+     "quote": "To this my plain, sworn, downright detestation\nOf every depotism in every nation.",
+     "note": "The narrator's political credo; the text's 'depotism' is the 1857 edition's spelling."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Canto X: From Russia to England",
+   "lines": "Canto X",
+   "section": 10,
+   "summary": [
+    "Juan, now the Empress's favourite, lives in luxury, but his health fails in the Russian climate and the court life. The doctors recommend travel, and Catherine, unwilling to lose him but eager to keep him well, appoints him to a diplomatic mission to England, where a treaty is in question. Juan sets out with Leila, whom he has continued to protect and who refuses to be converted from Islam.",
+    "The journey takes them through Poland, Germany and the Low Countries, which the narrator describes in a rapid series of sights, mocking the battlefields and the relics shown to tourists. At Canterbury they see the cathedral; at Dover Juan first sees England, and the narrator, who reminds us that he is an exile, gives a mixed account of his native country, its liberty, its taxes and its hypocrisy."
+   ],
+   "analysis": [
+    "Canto X turns the poem towards its final subject, England, the society Byron had left in 1816 amid scandal. The traveller's view of Europe is a comic tour, but its sights are memorials of war, and the narrator's comment at Canterbury reduces the glory of the Black Prince and Becket to a rusty helmet and a doubtful bone [[beatty1985]].",
+    "The narrator's approach to England mixes nostalgia and hostility. He claims both the right of a native and the freedom of an exile, and the later cantos are shaped by that double position: Byron writes about English high society from memory, from Italy, as both insider and outsider [[graham1990]] [[mcgann1976]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 10.73",
+     "quote": "There’s glory again for you, gentle reader! All\nEnds in a rusty casque and dubious bone,",
+     "note": "At Canterbury the narrator returns to the theme of the war cantos, mocking military fame through its relics."
+    },
+    {
+     "ref": "DJ 10.22",
+     "quote": "He was now growing up like a green tree, able\nFor love, war, or ambition, which reward",
+     "note": "Juan in Catherine's favour: the narrator sees him as raw material for the world's rewards."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Canto XI: London",
+   "lines": "Canto XI",
+   "section": 11,
+   "summary": [
+    "After a comic opening on Bishop Berkeley's philosophy, Juan reaches Shooter's Hill outside London at sunset and breaks into praise of England as the home of liberty and law. At that moment a highwayman demands his money; Juan shoots him, and the dying robber, a Cockney named Tom, is left to the narrator's elegy in thieves' slang. Juan proceeds to London, describes the approach to the city and is presented at court and in society.",
+    "In London Juan, as a handsome young diplomat, is welcomed everywhere. The narrator describes the round of balls and dinners, the bluestockings and the poets, and reflects on how quickly fashion and fame change. A famous stanza recalls John Keats, 'snuffed out' by a hostile review, and a long passage asks where the famous people of a few years ago have gone, in an ironic version of the old 'ubi sunt' lament."
+   ],
+   "analysis": [
+    "The highwayman episode is the poem's sharpest comic deflation of patriotic rhetoric: Juan's praise of English freedom is answered by a robbery. The scene also shows Byron's interest in the language of the London underworld, which he had learned in his youth, and in the gap between official and real England [[graham1990]].",
+    "The 'ubi sunt' stanzas give the English cantos their elegiac colouring. Byron writes as a man looking back from 1822 on the Regency world he had known before his exile, and the list of the fallen and forgotten blends personal memory with satire on the transience of fashion. The Keats stanza shows the same mixture: it pities the young poet and mocks the idea that a review could kill [[christensen1993]] [[bone2004]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 11.60",
+     "quote": "’Tis strange the mind, that very fiery particle,\nShould let itself be snuff’d out by an article.",
+     "note": "On Keats, whose death was popularly blamed on a hostile review; the triple rhyme turns sympathy into epigram."
+    },
+    {
+     "ref": "DJ 11.8",
+     "quote": "Heard,—and that bee-like, bubbling, busy hum\nOf cities, that boil over with their scum:—",
+     "note": "Juan's first view of London from Shooter's Hill, just before the robbery."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Canto XII: The Marriage Market",
+   "lines": "Canto XII",
+   "section": 12,
+   "summary": [
+    "The narrator opens with reflections on middle age and on money: avarice, he says, is the passion of maturity, and bankers such as the Rothschilds are the true rulers of Europe. He then returns to Juan in London society. Leila is placed in the care of Lady Pinchbeck, a lady of fashion with a past, who undertakes her education.",
+    "Juan, unmarried, rich and charming, becomes a prize in the London marriage market, pursued by mothers and daughters alike. The narrator describes society as a game in which every player has a hidden aim, and comments on English coldness, propriety and the dull, respectable vices of the rich. He promises that the true business of his poem, its satire on English society, is about to begin."
+   ],
+   "analysis": [
+    "Canto XII marks the shift in the poem's satire from the despotism of foreign courts to the commercial society of England. Byron's attack on financiers and loans shows his awareness that power in the new Europe rested on credit as much as arms. Jerome Christensen has read the poem's whole relation to its public in terms of this commercial world, in which Byron himself was a celebrity and a product [[christensen1993]] [[mcgann1976]].",
+    "The marriage market parallels the slave market of Canto V. In both, human beings are valued and bought, though London disguises the bargain under manners. The narrator's comic tone does not hide the point that respectable English society is in its own way as mercenary as Constantinople [[graham1990]] [[wolfson1987]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 12.6",
+     "quote": "Are the true lords of Europe. Every loan\nIs not a merely speculative hit,\nBut seats a nation or upsets a throne.",
+     "note": "Bankers as the new rulers: the satire on war becomes a satire on money."
+    },
+    {
+     "ref": "DJ 12.58",
+     "quote": "The single ladies wishing to be double,\nThe married ones to save the virgins trouble.",
+     "note": "The marriage market as a game: the couplet's pun on 'single' and 'double' gives the joke."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Canto XIII: Lady Adeline and Norman Abbey",
+   "lines": "Canto XIII",
+   "section": 13,
+   "summary": [
+    "Juan becomes a friend of Lord Henry Amundeville, a rich and correct politician, and his wife, Lady Adeline, the most admired beauty of London society: cold on the surface, the narrator suggests, but with hidden fire. As the season ends, the Amundevilles invite a large party to their country seat, Norman Abbey, a former monastery turned into a Gothic mansion.",
+    "The narrator describes the abbey in detail: its lake, its woods, its ruined arch with a statue of the Virgin, its fountain, its picture gallery. He then lists the guests, a crowd of comic types with absurd names, among them the Duchess of Fitz-Fulke, and describes the daily life of an English country house, its sports, meals and boredom."
+   ],
+   "analysis": [
+    "Norman Abbey is modelled on Newstead Abbey, Byron's ancestral home, which he had sold in 1818. The loving description of the house, with its relics of a Catholic past, gives the English cantos a note of personal memory and loss. The abbey, with its monks expelled at the Reformation, is also a symbol of English history: an aristocracy built on dispossession, still haunted by what it displaced [[graham1990]] [[maccarthy2002]].",
+    "Adeline is the most complex woman in the poem. She is admired for her self-control and social skill, but the narrator compares her to a frozen bottle of champagne with a liquid heart, and he hints that her interest in Juan is more than friendship. The canto's satire on the 'Bores and Bored' of society is balanced by its real fascination with the English aristocratic world [[manning1978]] [[beatty1985]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 13.55",
+     "quote": "To Norman Abbey whirl’d the noble pair,—\nAn old, old monastery once, and now\nStill older mansion;",
+     "note": "The introduction of the abbey: a monastery become a mansion, the setting of the poem's last cantos."
+    },
+    {
+     "ref": "DJ 13.95",
+     "quote": "Society is now one polish’d horde,\nForm’d of two mighty tribes, the Bores and Bored.",
+     "note": "One of the best-known couplets of the English cantos."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Canto XIV: Country House Life",
+   "lines": "Canto XIV",
+   "section": 14,
+   "summary": [
+    "The narrator begins with reflections on the unknowability of human life and the pleasure of writing. At Norman Abbey the men hunt and the women gossip; Juan, a fine horseman, does well in the hunt and wins the admiration of the guests. The Duchess of Fitz-Fulke flirts openly with him, and Adeline, half jealous and half protective, decides to warn him.",
+    "Adeline resolves that Juan should marry and begins to consider suitable brides. The narrator describes her marriage to Lord Henry as correct but cold, and hints that Adeline's interest in Juan is more dangerous than she admits. He also reflects that truth is stranger than fiction and that his poem tells the truth about society that novels conceal."
+   ],
+   "analysis": [
+    "The English cantos move slowly, with long digressions and little action, and this has been taken either as a loss of energy or as a deliberate imitation of the idle rhythm of country-house life. Critics such as Peter Graham read them as a novel of manners in verse, close to Austen and the 'silver fork' novel, with a penetrating sense of social detail [[graham1990]] [[beatty1985]].",
+    "The narrator's claim that truth is stranger than fiction expresses the poem's realism. Byron repeatedly says that his tale is true to life, and the comedy of the English cantos lies in showing the passions and intrigues hidden under polished manners [[ridenour1960]] [[mcgann1976]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 14.101",
+     "quote": "’Tis strange,—but true; for truth is always strange;\nStranger than fiction; if it could be told,",
+     "note": "The source of the proverb 'truth is stranger than fiction'; the narrator claims to tell what novels hide."
+    },
+    {
+     "ref": "DJ 14.41",
+     "quote": "The Duchess of Fitz-Fulke, who loved ‘tracasserie,’\nBegan to treat him with some small ‘agacerie.’",
+     "note": "The French words of flirtation and mischief introduce the duchess's pursuit of Juan."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Canto XV: Aurora Raby",
+   "lines": "Canto XV",
+   "section": 15,
+   "summary": [
+    "Adeline continues her search for a wife for Juan, considering several candidates. The narrator digresses on his own poem, which he says follows no plan, and on the difficulty of describing an English dinner. The great dinner at Norman Abbey is described in a comic catalogue of French dishes.",
+    "At dinner Juan sits between Adeline and Aurora Raby, a young Catholic orphan, beautiful, silent, devout and indifferent to society. Adeline had not proposed her as a bride, and Juan wonders why. Aurora at first ignores Juan's charm, but he draws her into conversation, and she begins to take an interest in him. The narrator presents her as the one figure in English society who is truly apart from it."
+   ],
+   "analysis": [
+    "Aurora Raby is the poem's last, unfinished promise of an ideal. She resembles Haidée in her natural simplicity but differs in her seriousness and faith; she is described in images of stars and flowers that the narrator rarely uses without irony. Many critics have thought that Byron intended her to play a decisive role in Juan's development, and her presence beside Adeline and Fitz-Fulke sets up three versions of love among which the unfinished poem never chooses [[beatty1985]] [[manning1978]].",
+    "The narrator's claim to write without a plan here becomes a theory of composition. Byron told his friends that he had no fixed design and wrote to amuse himself, and the digressive form has been read as a deliberate image of a free mind in conversation with the world [[mcgann1976]] [[marchand1973]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 15.43",
+     "quote": "Aurora Raby, a young star who shone\nO’er life, too sweet an image for such glass,\nA lovely being, scarcely form’d or moulded,\nA rose with all its sweetest leaves yet folded;",
+     "note": "Aurora's introduction: images of star and rosebud mark her as untouched by the society around her."
+    },
+    {
+     "ref": "DJ 15.47",
+     "quote": "Her spirit seem’d as seated on a throne\nApart from the surrounding world, and strong\nIn its own strength—most strange in one so young!",
+     "note": "Aurora's self-possession contrasts with the social performance of Adeline."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Canto XVI: The Black Friar",
+   "lines": "Canto XVI",
+   "section": 16,
+   "summary": [
+    "Juan, unable to sleep after the dinner, walks in the gallery at night and sees a hooded figure in black pass by: the ghost of the abbey. The next morning he is pale and troubled; Lord Henry explains that he must have seen the Black Friar, the spirit of the monk who remained after the monastery was dissolved, and Adeline sings a ballad about him to the harp. Aurora watches Juan with calm curiosity, while the Duchess of Fitz-Fulke looks at him hard.",
+    "The day continues with Lord Henry's business as a landowner and justice: tenants, petitioners and a village girl who is pregnant. The party gives a dinner for local voters. Adeline's skill in playing a different role with every guest leads the narrator to his definition of 'mobility'. That night the ghost appears again in Juan's room; Juan reaches out, finds warm flesh and, as the hood falls back, discovers the Duchess of Fitz-Fulke."
+   ],
+   "analysis": [
+    "The Black Friar episode parodies the Gothic novel, but it also connects the comic plot to the history of Norman Abbey: the friar is the spirit of the dispossessed Church, and the ballad makes him the true lord of the house by night. The revelation that the ghost is a duchess in disguise brings the supernatural down to an intrigue of the country house, in the manner of Gothic parody, and gives the poem its last great comic surprise [[graham1990]] [[beatty1985]].",
+    "The definition of 'mobility' in stanza 97 has been taken as Byron's comment on his own character and on the narrator of the poem. Mobility is the capacity to be strongly moved by whatever is near: a quality that looks like insincerity but is, the narrator claims, its own kind of truth. Peter Manning and others have read it as a key to the shifting voice of Don Juan [[manning1978]] [[cooke1969]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 16.97",
+     "quote": "They err—’tis merely what is call’d mobility,\nA thing of temperament and not of art,",
+     "note": "The definition of 'mobility', often applied to Byron himself and to the narrator's quick changes of mood."
+    },
+    {
+     "ref": "DJ 16.123",
+     "quote": "In full, voluptuous, but not o’ergrown bulk,\nThe phantom of her frolic Grace—Fitz-Fulke!",
+     "note": "The final couplet of the last completed canto: the ghost unmasked."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "Canto XVII (fragment): Orphans",
+   "lines": "Canto XVII (fragment)",
+   "section": 17,
+   "summary": [
+    "Byron wrote fourteen stanzas of a seventeenth canto in May 1823, shortly before he left Genoa for Greece. The narrator begins with a digression on orphans: those who have lost their parents, and those who have lost only their parents' love. He then defends himself against the charge of inconsistency, saying that he has been praised and blamed for everything and that he is no more contradictory than anyone else.",
+    "The fragment ends on the morning after the ghost's second visit. Juan comes down to breakfast looking worn, as if he had fought with more than one ghost, and the Duchess of Fitz-Fulke appears pale and tired. The story breaks off there."
+   ],
+   "analysis": [
+    "The fragment remained among Byron's papers and was not published until long after his death. It shows the poem continuing in its usual manner, with digression, self-defence and comedy, and offers no hint of how the story would have ended. Byron had told friends at various times that Juan would be guillotined in the French Revolution, or end as a Methodist, or in an unhappy marriage; none of these endings was written [[steffan1957]] [[mcgann1986]].",
+    "The opening on orphans has been read as personal, since Byron's father died when he was three and he himself had left his daughter Ada. The last image of Juan and the Duchess pale at breakfast closes the poem as it began, on comedy of bedrooms and the morning after, while the poet's own story ended at Missolonghi in April 1824 [[maccarthy2002]] [[marchand1957]]."
+   ],
+   "key": [
+    {
+     "ref": "DJ 17.1",
+     "quote": "The world is full of orphans: firstly, those\nWho are so in the strict sense of the phrase",
+     "note": "The fragment's opening digression, one of the last stanzas Byron wrote for the poem."
+    },
+    {
+     "ref": "DJ 17.14",
+     "quote": "As if he had combated with more than one,\nBeing wan and worn, with eyes that hardly brooked",
+     "note": "The last view of Juan, the morning after the ghost's visit."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Don Juan",
+   "side": "Juan's loves",
+   "text": "The hero, a handsome Spanish youth who is sixteen at the start. Unlike the seducer of the legend, he is usually passive, pursued by women and carried along by events: shipwreck, slavery, war and the favour of courts. He is brave, generous, naive and vain, and he grows somewhat more worldly as the poem goes on. The narrator treats him with affectionate irony."
+  },
+  {
+   "name": "Donna Julia",
+   "side": "Juan's loves",
+   "text": "A beautiful married woman of twenty-three, wife of Don Alfonso and friend of Juan's mother. Her self-deceiving struggle with her passion is the comedy of Canto I, but her letter from the convent gives her a voice of real feeling."
+  },
+  {
+   "name": "Haidée",
+   "side": "Juan's loves",
+   "text": "The daughter of the pirate Lambro, who finds Juan on the shore of her island and becomes his lover. She is the poem's image of natural love outside society, and her death after her father's return is its central tragedy."
+  },
+  {
+   "name": "Gulbeyaz",
+   "side": "Juan's loves",
+   "text": "The proud favourite wife of the Sultan, who buys Juan and has him brought into the harem in disguise. Her command, 'Christian, canst thou love?', meets Juan's refusal, and her jealousy nearly kills him."
+  },
+  {
+   "name": "Dudu",
+   "side": "Juan's loves",
+   "text": "A languid, beautiful odalisque with whom Juan, disguised as a woman, shares a bed in the harem. Her dream of a golden apple and a bee leaves the events of the night tactfully uncertain."
+  },
+  {
+   "name": "Lady Adeline Amundeville",
+   "side": "England",
+   "text": "The wife of Lord Henry and the most admired woman of London society, gracious, controlled and skilled in playing every part. She takes it on herself to find Juan a wife, and her interest in him is more than she admits."
+  },
+  {
+   "name": "Aurora Raby",
+   "side": "England",
+   "text": "A young Catholic orphan at Norman Abbey, beautiful, serious and indifferent to society. She is the poem's last possible ideal, and many readers believe Byron meant her to matter in Juan's future."
+  },
+  {
+   "name": "The Duchess of Fitz-Fulke",
+   "side": "England",
+   "text": "A mischievous, sensual guest at Norman Abbey who flirts with Juan and finally visits him disguised as the ghostly Black Friar."
+  },
+  {
+   "name": "Lord Henry Amundeville",
+   "side": "England",
+   "text": "Adeline's husband, a rich, upright and rather cold politician and landowner, who befriends Juan and invites him to Norman Abbey."
+  },
+  {
+   "name": "The Black Friar",
+   "side": "England",
+   "text": "The legendary ghost of Norman Abbey, the spirit of a monk who remained after the monastery was dissolved; the subject of Adeline's ballad. His second appearance proves to be the Duchess of Fitz-Fulke."
+  },
+  {
+   "name": "Lambro",
+   "side": "Rulers and soldiers",
+   "text": "Haidée's father, a Greek pirate and slave-trader, presented as a man of natural gifts driven to crime by the oppression of his country. His return ends Juan's idyll."
+  },
+  {
+   "name": "Catherine the Great",
+   "side": "Rulers and soldiers",
+   "text": "Empress of Russia, who takes Juan as her favourite after he brings the news of Ismail. The narrator presents her with amused frankness as a ruler of great power and appetites."
+  },
+  {
+   "name": "Suvorov",
+   "side": "Rulers and soldiers",
+   "text": "The Russian general (spelled 'Suwarrow' in the text) who leads the storming of Ismail: a brilliant, eccentric soldier whom the narrator describes as hero and buffoon."
+  },
+  {
+   "name": "Johnson",
+   "side": "Rulers and soldiers",
+   "text": "An Englishman, a soldier of fortune whom Juan meets in the slave market at Constantinople. Cheerful, experienced and practical, he escapes with Juan and fights beside him at Ismail."
+  },
+  {
+   "name": "Leila",
+   "side": "Others",
+   "text": "A ten-year-old Muslim girl whom Juan saves in the sack of Ismail and takes with him to St Petersburg and England, where she is placed with Lady Pinchbeck."
+  },
+  {
+   "name": "Donna Inez",
+   "side": "Others",
+   "text": "Juan's mother, a learned and moralistic woman whose marriage to Don José ends in quarrels; she was widely taken as a caricature of Lady Byron."
+  },
+  {
+   "name": "Don Alfonso",
+   "side": "Others",
+   "text": "Julia's jealous husband of fifty, whose midnight search of her bedroom produces the farce of Canto I."
+  },
+  {
+   "name": "Pedrillo",
+   "side": "Others",
+   "text": "Juan's tutor, who sails with him from Cadiz and is chosen by lot to be eaten by the starving survivors of the shipwreck."
+  },
+  {
+   "name": "Baba",
+   "side": "Others",
+   "text": "The black eunuch who buys Juan and Johnson for Gulbeyaz and insists that Juan wear women's clothes."
+  },
+  {
+   "name": "The narrator",
+   "side": "Others",
+   "text": "The voice that tells the story, close to Byron himself: middle-aged, exiled, sceptical and endlessly digressive. He addresses the reader, attacks his enemies and comments on his own poem, and is in many ways its real hero."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Cant and the truth of experience",
+   "text": [
+    "Byron's favourite term of abuse was 'cant': the hypocritical language of morality, religion, patriotism or sentiment that hides self-interest. The poem sets out to expose cant wherever it finds it, in the Lake poets' politics, in the language of military glory, in respectable marriage and in its own readers' prudery. Against it the narrator offers what he calls truth: the facts of desire, appetite, money and death.",
+    "Yet the poem knows that its own frankness can become a pose. The narrator often admits that he too is inconsistent, and the debate about whether Don Juan's scepticism is liberating or cynical goes back to its first reviewers [[ridenour1960]] [[mcgann1976]]."
+   ]
+  },
+  {
+   "title": "Love and its transience",
+   "text": [
+    "Juan's loves, from Julia to Aurora, form a series that shows love in many forms: adulterous, idyllic, commanded, bought, social. The narrator treats love as the strongest of human forces and the least lasting, and his comedy often depends on the gap between the lovers' feelings and his knowledge of what will follow.",
+    "Only Haidée's love is shown without irony, and it is destroyed. The pattern suggests a fallen world in which innocent passion survives only in memory [[gleckner1967]] [[cooke1969]]."
+   ]
+  },
+  {
+   "title": "War and glory",
+   "text": [
+    "The siege of Ismail is the poem's great anti-war set piece. Byron shows the reality of slaughter behind the language of glory, and he extends the attack to Wellington and the monarchs of post-Napoleonic Europe. The narrator does not deny courage, as the old khan and Juan himself show, but he denies that conquest earns honour [[mcgann1976]] [[graham1990]]."
+   ]
+  },
+  {
+   "title": "Freedom and despotism",
+   "text": [
+    "The poem is consistently political. It attacks tyranny in the Sultan's court, the Russian empire and the restored monarchies of Europe, and it celebrates liberty in 'The Isles of Greece' and in Juan's refusal of Gulbeyaz. The narrator's war 'in words' on despotism became real when Byron went to fight for Greece [[mcgann1976]] [[bone2004]]."
+   ]
+  },
+  {
+   "title": "Gender and power",
+   "text": [
+    "Don Juan repeatedly reverses the expected roles of men and women. Juan is seduced, bought, disguised as a woman and chosen by an empress; powerful women command, and men are their property. The narrator's comments on women are often conventional or misogynistic, but the plot keeps unsettling them, and modern criticism has made this tension central [[wolfson1987]] [[haslett1997]]."
+   ]
+  },
+  {
+   "title": "Writing and the self",
+   "text": [
+    "The narrator is always writing about writing: the epic rules, his rhymes, his critics, his publishers and his own life. Don Juan is in part an autobiography of its author's mind, and its digressions record Byron's changing moods over five years. The poem's subject is as much the act of telling as the story told [[manning1978]] [[beatty1985]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Digression",
+   "text": "The narrator constantly leaves the story to talk about other things, and then returns with a 'but to resume' or an apology. The digressions are not interruptions of the poem but its main business, and the story often seems an excuse for them [[mcgann1976]] [[beatty1985]]."
+  },
+  {
+   "title": "Shipwreck and the sea",
+   "text": "The sea carries Juan from one life to the next: the voyage from Cadiz, the wreck, Haidée's shore, the slave ship. The narrator also speaks of his poem as a voyage, and the sea stands for the unpredictable movement of life."
+  },
+  {
+   "title": "Disguise and acting",
+   "text": "Juan dressed as a woman in the harem, Adeline playing a part with each guest, the Duchess dressed as the Black Friar: the poem is full of disguises and performances, which suggest that identity is a role and that society is a stage [[wolfson1987]]."
+  },
+  {
+   "title": "Feasts and food",
+   "text": "Food runs from the cannibalism of the longboat to Haidée's feast and the French dishes of Norman Abbey. Appetite is the most basic of the poem's truths, and the narrator uses it to bring high sentiment down to the body."
+  },
+  {
+   "title": "Lists and catalogues",
+   "text": "The poem mocks the epic catalogue with lists of generals, guests with comic names, dishes and the famous dead. The lists show both the abundance of the world and its absurdity."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "Haidée's island",
+   "text": "A natural paradise outside society, ruled by love; but it is a pirate's island, and its desolation after her death shows how history destroys such Edens."
+  },
+  {
+   "title": "Norman Abbey",
+   "text": "A monastery turned into an aristocratic house, modelled on Byron's own Newstead. It stands for English history and the aristocracy, built on the ruins of an older faith and still haunted by it [[graham1990]]."
+  },
+  {
+   "title": "The Black Friar",
+   "text": "The ghost of the dispossessed monk, lord of the abbey by night, symbolises the past that the present has displaced; its unmasking as the Duchess turns the Gothic into comedy."
+  },
+  {
+   "title": "Ottava rima's closing couplet",
+   "text": "The final couplet of each stanza, where the poem often reverses itself, works as a symbol of its whole vision: every high feeling is followed by a deflating second thought [[ridenour1960]]."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Unity and the digressive form",
+   "text": [
+    "Early readers often thought Don Juan formless, a series of episodes and digressions held together only by the hero's name. Byron himself encouraged the view, telling Murray that he had no plan. Twentieth-century critics argued instead for a unity of style and vision. George Ridenour found it in a consistent set of themes and images, especially the Fall, and in the controlled 'style' of the narrator [[ridenour1960]] [[marchand1973]].",
+    "Jerome McGann, in Don Juan in Context, argued that the poem's openness is its principle: it is a 'conversation' with its readers and its age, designed to change as it went, and its digressions are the form of a mind responding to events. Later critics such as Bernard Beatty have followed his lead in treating the poem's improvisation as an achievement [[mcgann1976]] [[beatty1985]]."
+   ],
+   "cite": [
+    "ridenour1960",
+    "marchand1973",
+    "mcgann1976",
+    "beatty1985"
+   ]
+  },
+  {
+   "title": "The narrator and Byron's mobility",
+   "text": [
+    "How far is the narrator Byron himself? The voice draws on Byron's own life, his exile, his enemies and his opinions, but it is also a dramatic performance. Peter Manning read Byron's fictions, including Don Juan, through their psychological patterns, especially the relation to powerful women and the mother; the narrator's shifting moods express unresolved conflicts [[manning1978]].",
+    "The definition of 'mobility' in Canto XVI has been central to this debate. For some critics mobility excuses inconsistency; for others it is a deliberate ideal of openness to experience. Peter Graham places the narrator within the social world of Regency England, a voice of a particular class and moment, and Michael Cooke saw in Byron's work a counter-heroic acceptance of human limits [[graham1990]] [[cooke1969]]."
+   ],
+   "cite": [
+    "manning1978",
+    "graham1990",
+    "cooke1969"
+   ]
+  },
+  {
+   "title": "Satire, politics and the Dedication",
+   "text": [
+    "Don Juan is a political poem, and the suppressed Dedication shows how dangerous its politics were. Its attacks on Castlereagh, Southey and later Wellington place it within the radical opposition of the post-war years, when the government repressed dissent after Peterloo (1819). McGann and Graham have shown how closely the poem responds to the events of 1818–24 [[mcgann1976]] [[graham1990]].",
+    "Critics have debated whether Byron's politics were radical or aristocratic Whig. Jerome Christensen argued that the poem must be read in relation to the commercial society that made Byron a celebrity, so that its satire is entangled with the market it mocks [[christensen1993]]."
+   ],
+   "cite": [
+    "mcgann1976",
+    "graham1990",
+    "christensen1993"
+   ]
+  },
+  {
+   "title": "Cant and sincerity",
+   "text": [
+    "Can a poem that mocks every sentiment be sincere? Victorian readers often thought Don Juan cynical; modern critics have argued that its irony is a way of telling the truth. Robert Gleckner read Byron's work as a vision of a ruined paradise in which despair is the underlying truth, while others see the comedy as a means of surviving that despair [[gleckner1967]] [[ridenour1960]].",
+    "Jane Stabler has studied Byron's 'poetics of digression' and allusion, showing how his shifts of tone engage the reader and expose the conventions of feeling [[stabler2002]]."
+   ],
+   "cite": [
+    "gleckner1967",
+    "ridenour1960",
+    "stabler2002"
+   ]
+  },
+  {
+   "title": "Gender and Juan's passivity",
+   "text": [
+    "Byron's Juan is seduced rather than seducing, and he spends part of the poem dressed as a woman. Susan Wolfson's essay 'Their She Condition' argued that the poem's cross-dressing and gender reversals expose the instability of masculine identity, even while the narrator tries to reassert male authority [[wolfson1987]].",
+    "Moyra Haslett has placed Byron's hero in the history of the Don Juan legend, showing how Byron transforms the seducer into a figure who reflects on masculinity and on women's desire. Critics continue to debate whether the poem's treatment of women is liberating or misogynist [[haslett1997]]."
+   ],
+   "cite": [
+    "wolfson1987",
+    "haslett1997"
+   ]
+  },
+  {
+   "title": "Epic and anti-epic",
+   "text": [
+    "The narrator calls his poem an epic (1.200) and mocks the rules of epic. Is Don Juan an epic, a parody of epic, or a new kind of modern epic? Elizabeth Boyd studied Byron's sources and the tradition of comic epic; Ridenour and Beatty read the poem as a serious epic of the modern world, in which the old heroic values are tested and found wanting [[boyd1945]] [[ridenour1960]] [[beatty1985]].",
+    "The Italian comic epic of Pulci and Berni provided a model for combining heroic narrative with burlesque, and Peter Vassallo has shown how deeply Byron's Italian reading shaped the poem [[vassallo1984]]."
+   ],
+   "cite": [
+    "boyd1945",
+    "ridenour1960",
+    "beatty1985",
+    "vassallo1984"
+   ]
+  },
+  {
+   "title": "Reception",
+   "text": [
+    "Don Juan was a scandal from its first appearance. Reviewers condemned its immorality, and Blackwood's Edinburgh Magazine attacked it in 1819; yet it sold widely, in pirated editions as well as authorised ones. Shelley, who heard Canto V in Ravenna in 1821, wrote to Byron that it was something wholly new, and Goethe praised it as a work of genius [[rutherford1970]] [[marchand1957]].",
+    "Victorian moralists often treated it as dangerous, though it influenced poets from Browning to Auden. In the twentieth century, Byron's critical standing rested increasingly on Don Juan rather than on Childe Harold, and the standard editions of Steffan and Pratt and of McGann made its textual history clear [[steffan1957]] [[mcgann1986]] [[bone2004]]."
+   ],
+   "cite": [
+    "rutherford1970",
+    "marchand1957",
+    "steffan1957",
+    "mcgann1986",
+    "bone2004"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "DJ 1.1",
+   "quote": "I want a hero: an uncommon want,\nWhen every year and month sends forth a new one,",
+   "who": "The narrator",
+   "explanation": "The poem begins by mocking the age's heroes and the epic need for one. The opening announces the conversational, ironic voice and the poem's interest in how heroes are made by fashion and the newspapers."
+  },
+  {
+   "ref": "DJ 1.200",
+   "quote": "My poem ’s epic, and is meant to be\nDivided in twelve books; each book containing,",
+   "who": "The narrator",
+   "explanation": "A mock programme for the poem, promising the conventional elements of epic. It parodies epic rules and claims the name of epic for a comic poem of modern life."
+  },
+  {
+   "ref": "DJ 1.194",
+   "quote": "‘Man’s love is of man’s life a thing apart,\n’Tis woman’s whole existence; man may range",
+   "who": "Donna Julia, in her letter",
+   "explanation": "Julia's farewell letter states the unequal stakes of love for men and women. The narrator leaves this unusually serious speech unmocked."
+  },
+  {
+   "ref": "DJ 2.179",
+   "quote": "Man, being reasonable, must get drunk;\nThe best of life is but intoxication:",
+   "who": "The narrator",
+   "explanation": "A comic paradox in the Haidée cantos: human life is driven by the desire to be carried out of itself, by love, wine, glory or gold."
+  },
+  {
+   "ref": "DJ 3.88",
+   "quote": "But words are things, and a small drop of ink,\nFalling like dew, upon a thought, produces\nThat which makes thousands, perhaps millions, think;",
+   "who": "The narrator",
+   "explanation": "A claim for the power of writing to change the world, made just after the song 'The Isles of Greece'."
+  },
+  {
+   "ref": "DJ 4.4",
+   "quote": "And if I laugh at any mortal thing,\n’Tis that I may not weep; and if I weep,",
+   "who": "The narrator",
+   "explanation": "The narrator's explanation of his comedy as a defence against grief, often quoted as a key to the whole poem."
+  },
+  {
+   "ref": "DJ 8.3",
+   "quote": "The drying up a single tear has more\nOf honest fame, than shedding seas of gore.",
+   "who": "The narrator",
+   "explanation": "The moral of the war cantos, contrasting human sympathy with military glory."
+  },
+  {
+   "ref": "DJ 11.60",
+   "quote": "’Tis strange the mind, that very fiery particle,\nShould let itself be snuff’d out by an article.",
+   "who": "The narrator",
+   "explanation": "On Keats, whose death was popularly blamed on a hostile review. The comic rhyme expresses both sympathy and Byron's scepticism about the story."
+  },
+  {
+   "ref": "DJ 14.101",
+   "quote": "’Tis strange,—but true; for truth is always strange;\nStranger than fiction;",
+   "who": "The narrator",
+   "explanation": "The source of a proverb, and the narrator's claim that his poem tells truths that novels hide."
+  },
+  {
+   "ref": "DJ 16.97",
+   "quote": "They err—’tis merely what is call’d mobility,\nA thing of temperament and not of art,",
+   "who": "The narrator, of Adeline",
+   "explanation": "The definition of 'mobility', the ability to be moved by whatever is nearest. It describes Adeline but has often been applied to Byron and to the poem's shifting voice."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Byron make his Don Juan a passive figure who is seduced rather than a seducer?",
+   "hint": "Compare the legendary Don Juan with Byron's hero, and think about Julia, Gulbeyaz and Catherine."
+  },
+  {
+   "q": "What does the Dedication reveal about the poem's politics and its view of poets?",
+   "hint": "Consider the attacks on Southey and Castlereagh and the figure of Milton."
+  },
+  {
+   "q": "How does ottava rima, especially its final couplet, shape the poem's humour and meaning?",
+   "hint": "Look at the couplets of 1.117, 2.75 and 8.3."
+  },
+  {
+   "q": "Is the shipwreck episode in Canto II tragic, comic or both?",
+   "hint": "Think about the drawing of lots, the rhymes and the narrator's comments."
+  },
+  {
+   "q": "Why is the love of Juan and Haidée the one relationship treated almost without irony, and why must it end?",
+   "hint": "Consider the island, Lambro and the narrator's comments on youth."
+  },
+  {
+   "q": "How does the poet who sings 'The Isles of Greece' complicate the song's meaning?",
+   "hint": "Look at how the narrator describes him before and after the song."
+  },
+  {
+   "q": "What is Byron's attitude to war in the Ismail cantos?",
+   "hint": "Think about Suvorov, the old khan, Leila and the stanzas on glory."
+  },
+  {
+   "q": "How does the poem compare the slave market in Constantinople with the marriage market in London?",
+   "hint": "Look at Cantos V and XII."
+  },
+  {
+   "q": "What does 'mobility' mean, and how might it describe the narrator?",
+   "hint": "Read 16.97 and think about the narrator's changes of mood."
+  },
+  {
+   "q": "Can a poem as digressive and unfinished as Don Juan have unity?",
+   "hint": "Consider the debate between critics who find unity of theme and those who see openness as the poem's principle."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "beatty1985",
+   "text": "Beatty, Bernard. Byron's Don Juan. London: Croom Helm, 1985."
+  },
+  {
+   "id": "bone2004",
+   "text": "Bone, Drummond, ed. The Cambridge Companion to Byron. Cambridge: Cambridge University Press, 2004."
+  },
+  {
+   "id": "boyd1945",
+   "text": "Boyd, Elizabeth French. Byron's Don Juan: A Critical Study. New Brunswick, NJ: Rutgers University Press, 1945."
+  },
+  {
+   "id": "christensen1993",
+   "text": "Christensen, Jerome. Lord Byron's Strength: Romantic Writing and Commercial Society. Baltimore: Johns Hopkins University Press, 1993."
+  },
+  {
+   "id": "cooke1969",
+   "text": "Cooke, Michael G. The Blind Man Traces the Circle: On the Patterns and Philosophy of Byron's Poetry. Princeton: Princeton University Press, 1969."
+  },
+  {
+   "id": "gleckner1967",
+   "text": "Gleckner, Robert F. Byron and the Ruins of Paradise. Baltimore: Johns Hopkins Press, 1967."
+  },
+  {
+   "id": "graham1990",
+   "text": "Graham, Peter W. Don Juan and Regency England. Charlottesville: University Press of Virginia, 1990."
+  },
+  {
+   "id": "haslett1997",
+   "text": "Haslett, Moyra. Byron's Don Juan and the Don Juan Legend. Oxford: Clarendon Press, 1997."
+  },
+  {
+   "id": "maccarthy2002",
+   "text": "MacCarthy, Fiona. Byron: Life and Legend. London: John Murray, 2002."
+  },
+  {
+   "id": "manning1978",
+   "text": "Manning, Peter J. Byron and His Fictions. Detroit: Wayne State University Press, 1978."
+  },
+  {
+   "id": "marchand1957",
+   "text": "Marchand, Leslie A. Byron: A Biography. 3 vols. New York: Knopf, 1957."
+  },
+  {
+   "id": "marchand1973",
+   "text": "Marchand, Leslie A., ed. Byron's Letters and Journals. 12 vols. London: John Murray, 1973–82."
+  },
+  {
+   "id": "mcgann1976",
+   "text": "McGann, Jerome J. Don Juan in Context. Chicago: University of Chicago Press, 1976."
+  },
+  {
+   "id": "mcgann1986",
+   "text": "McGann, Jerome J., ed. Lord Byron: The Complete Poetical Works. Vol. 5, Don Juan. Oxford: Clarendon Press, 1986."
+  },
+  {
+   "id": "ridenour1960",
+   "text": "Ridenour, George M. The Style of Don Juan. New Haven: Yale University Press, 1960."
+  },
+  {
+   "id": "rutherford1970",
+   "text": "Rutherford, Andrew, ed. Byron: The Critical Heritage. London: Routledge & Kegan Paul, 1970."
+  },
+  {
+   "id": "stabler2002",
+   "text": "Stabler, Jane. Byron, Poetics and History. Cambridge: Cambridge University Press, 2002."
+  },
+  {
+   "id": "steffan1957",
+   "text": "Steffan, Truman Guy, and Willis W. Pratt, eds. Byron's Don Juan: A Variorum Edition. 4 vols. Austin: University of Texas Press, 1957; 2nd ed. 1971."
+  },
+  {
+   "id": "vassallo1984",
+   "text": "Vassallo, Peter. Byron: The Italian Literary Influence. London: Macmillan, 1984."
+  },
+  {
+   "id": "wolfson1987",
+   "text": "Wolfson, Susan J. \"'Their She Condition': Cross-Dressing and the Politics of Gender in Don Juan.\" ELH 54, no. 3 (1987): 585–617."
+  }
+ ]
+}
