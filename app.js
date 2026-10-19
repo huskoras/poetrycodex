@@ -5567,7 +5567,7 @@
   // overview, book-by-book summary and analysis, characters, themes, the critical debates,
   // key passages (quoted from the recommended translation), questions and a bibliography.
   // Paragraphs cite with [[bibId]], drawn as (Author year) linked to the bibliography.
-  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost", "beowulf", "divine-comedy", "gilgamesh", "faerie-queene", "mahabharata", "ramayana", "shahnameh", "koroglu", "nibelungenlied", "song-of-roland", "kalevala", "sir-gawain", "orlando-furioso", "jerusalem-delivered", "lusiads", "metamorphoses", "poetic-edda"]);
+  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost", "beowulf", "divine-comedy", "gilgamesh", "faerie-queene", "mahabharata", "ramayana", "shahnameh", "koroglu", "nibelungenlied", "song-of-roland", "kalevala", "sir-gawain", "orlando-furioso", "jerusalem-delivered", "lusiads", "metamorphoses", "poetic-edda", "tain", "canterbury-tales", "idylls-of-the-king"]);
   const GUIDE_FILES = {};
   const GUIDE_PARTS = [["overview", "Overview"], ["books", "Book by book"], ["characters", "Characters"],
     ["themes", "Themes & symbols"], ["debates", "Critical debates"], ["quotes", "Key passages"],
@@ -5668,7 +5668,7 @@
       // a guide in parts (Beowulf): the part that holds this section, by the parts' first sections
       if (d.unit && (w.slug === d.quoteEdition || d.sameSections)) {
         U = d.unit; n = 0;
-        d.books.forEach((b) => { if (b.section != null && b.section <= i) n = b.n; });
+        d.books.forEach((b) => { if (b.section != null && b.section <= i && (!n || b.section > d.books[n - 1].section)) n = b.n; });
       } else if (d.unit) n = 0;
       const head = app.querySelector(".detail > .detail-author");
       if (!head || app.querySelector(".gd-box")) return;
