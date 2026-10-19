@@ -5567,7 +5567,7 @@
   // overview, book-by-book summary and analysis, characters, themes, the critical debates,
   // key passages (quoted from the recommended translation), questions and a bibliography.
   // Paragraphs cite with [[bibId]], drawn as (Author year) linked to the bibliography.
-  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost", "beowulf", "divine-comedy", "gilgamesh", "faerie-queene", "mahabharata", "ramayana"]);
+  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost", "beowulf", "divine-comedy", "gilgamesh", "faerie-queene", "mahabharata", "ramayana", "shahnameh", "koroglu", "nibelungenlied"]);
   const GUIDE_FILES = {};
   const GUIDE_PARTS = [["overview", "Overview"], ["books", "Book by book"], ["characters", "Characters"],
     ["themes", "Themes & symbols"], ["debates", "Critical debates"], ["quotes", "Key passages"],

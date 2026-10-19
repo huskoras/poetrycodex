@@ -1,0 +1,993 @@
+{
+ "work": "shahnameh",
+ "title": "The Shahnameh (Book of Kings)",
+ "author": "Ferdowsi",
+ "quoteEdition": "shahnama-warner",
+ "updated": "2026-10-19",
+ "unit": "Part",
+ "glance": [
+  {
+   "label": "Poet",
+   "value": "Abu'l-Qasem Ferdowsi of Tus in Khorasan (c. 940–1019/1025), a member of the dehqan class of landed gentry"
+  },
+  {
+   "label": "Composed",
+   "value": "Over some thirty to thirty-five years; a first version seems to have been finished in 994, and the final version is dated 400 AH, that is 1010"
+  },
+  {
+   "label": "Patrons",
+   "value": "Begun under the Samanids and local lords of Tus; the final version was dedicated to Sultan Mahmud of Ghazni (r. 998–1030)"
+  },
+  {
+   "label": "Language",
+   "value": "New Persian, with a remarkably small proportion of Arabic loanwords; the poem's diction became a model of literary Persian"
+  },
+  {
+   "label": "Form",
+   "value": "About 50,000 rhyming couplets (Ferdowsi himself speaks of 60,000) in the mutaqareb metre, eleven syllables to the half-line, in masnavi form"
+  },
+  {
+   "label": "Scope",
+   "value": "The history of Iran from the first king to the Arab conquest of 651: a mythical age, a heroic age centred on Rustam, and a historical age of the Sasanian kings"
+  },
+  {
+   "label": "Sources",
+   "value": "Chiefly the prose Shahnameh compiled at Tus in 957 for Abu Mansur 'Abd al-Razzaq, itself drawn from Middle Persian chronicles; about a thousand couplets by the poet Daqiqi are incorporated"
+  },
+  {
+   "label": "Central hero",
+   "value": "Rustam of Sistan, son of Zal, champion of the Iranian kings over many centuries"
+  },
+  {
+   "label": "Translations on this site",
+   "value": "Arthur George and Edmond Warner, complete in blank verse and rhymed passages (9 vols, 1905–25); James Atkinson's abridgement in prose and verse (1832)"
+  },
+  {
+   "label": "Critical text",
+   "value": "Djalal Khaleghi-Motlagh's edition, 8 vols (1988–2008), based on the Florence manuscript of 1217 and other early copies"
+  }
+ ],
+ "context": [
+  "Abu'l-Qasem Ferdowsi was born around 940 near Tus, in Khorasan in north-eastern Iran, into the class of dehqans, the landed gentry who preserved the traditions of pre-Islamic Iran in the centuries after the Arab conquest. Almost nothing certain is known of his life beyond what he tells us in the poem: that he worked on it for some thirty-five years, that he grew old and poor in the process, that he lost a son, and that friends and patrons helped him at different stages. A first version seems to have been completed in 994; the final version, dedicated to Sultan Mahmud of Ghazni, is dated in its closing lines to the year 400 of the Hijra, that is 1010. He died between 1019 and 1025 and was buried in his own garden in Tus [[shahbazi1991]].",
+  "The poem belongs to a period of Iranian cultural revival. Under the Samanid dynasty of Bukhara (819–999) Persian, written in Arabic script, became once again a language of literature and government, and there was intense interest in the history of the pre-Islamic kings. In 957 Abu Mansur 'Abd al-Razzaq, governor of Tus, commissioned a group of Zoroastrian scholars to compile a prose Shahnameh from Middle Persian chronicles; its preface survives. The poet Daqiqi began to versify this material and wrote about a thousand couplets before he was murdered, and Ferdowsi incorporated them into his poem. When Ferdowsi finished, power in Khorasan had passed to Mahmud of Ghazni, a Turkish sultan of slave origin and a militant Sunni, and the later legend that Mahmud underpaid the poet reflects a real distance between the poem's values and those of the court [[noldeke1896]] [[browne1902]] [[deblois2004]].",
+  "The Shahnameh tells the history of Iran under fifty rulers, from Gayumars, the first king, to Yazdagird III, killed in 651 after the Arab conquest. It falls into three broad ages. The mythical age tells of the founding of civilisation and the long tyranny of the dragon-king Zahhak; the heroic age, the longest and most famous, is dominated by the wars between Iran and Turan and by the champion Rustam; and the historical age covers Alexander and the Sasanian dynasty (224–651), whose kings are recognisable from Greek, Roman, Arabic and Armenian sources. Each age has its own character: myth, then tragedy and adventure, then chronicle, romance and wisdom [[yarshater1983]].",
+  "The poem is written in the mutaqareb metre, a line of short-long-long feet that gives Persian heroic verse its driving rhythm, in rhyming couplets. Ferdowsi's Persian is famously sparing of Arabic vocabulary, and a much-quoted line attributed to him claims that he revived Persian by this work. It is not quite a deliberate purism, since much of his vocabulary came with his sources, but the poem became the classic of the language. Through the centuries it was copied and illustrated more than any other secular Persian text, and it was read in the courts of the whole Persianate world, from the Timurids and Safavids to the Ottomans and the Mughals. The great Shahnameh of Shah Tahmasp, made in Tabriz in the 1520s and 1530s with 258 paintings, was sent as a gift to the Ottoman sultan Selim II in 1568 [[dickson1981]] [[canby2014]] [[hillenbrand2004]] [[melville2006]].",
+  "This guide quotes the complete English translation by the brothers Arthur George and Edmond Warner, published in nine volumes between 1905 and 1925, which renders the narrative in blank verse and the prefaces and lyrical passages in rhyme; references are given by the Warners' section titles and use their spellings (Rustam, Suhrab, Siyawush, Asfandiyar). The site also holds James Atkinson's abridgement of 1832, a mixture of prose and verse, which was for long the main English version. In the guide's own prose, names are given in the forms most common in modern English scholarship [[warner1905]] [[atkinson1832]] [[davis2006]]."
+ ],
+ "plot": [
+  "The poem begins with the first kings, who discover fire, metals and writing and establish the social order. Jamshid's pride costs him the royal glory, and the serpent-shouldered Zahhak rules for a thousand years until the smith Kaveh raises a rebellion and Faridun overthrows him. Faridun divides the world among his three sons; the two elder, Salm and Tur, murder the youngest, Iraj, who received Iran, and so begins the feud between Iran and Turan, the realm of Tur's descendants.",
+  "The heroic age follows the princes of Sistan: Zal, raised by the Simurgh, marries Rudaba, and their son Rustam becomes the champion of Iran. He rescues the foolish king Kai Kavus from the demons of Mazandaran, unknowingly kills his own son Sohrab in single combat, and raises the prince Siyavush, who is driven into exile in Turan and murdered there by Afrasiyab. Siyavush's son Kai Khusrau avenges him in a long war that ends with Afrasiyab's death, then renounces the throne and vanishes. Under Gushtasp, Zoroaster's faith comes to Iran, and Gushtasp sends his son Isfandiyar to bind Rustam; Rustam kills Isfandiyar with the Simurgh's help and soon afterwards dies through the treachery of his half-brother.",
+  "In the historical age, Alexander appears as a half-Iranian prince who conquers Dara and travels to the ends of the earth. After a brief glance at the Parthians, the poem tells the history of the Sasanian kings: Ardashir the founder, Bahram Gur the hunter, Anushirvan the just with his minister Buzurjmihr, and Khusrau Parviz with his love Shirin, murdered by his own son.",
+  "The empire then collapses. A succession of short reigns ends with Yazdagird III, who faces the Arab armies. His general Rustam foretells the end of Iran's greatness and dies at Qadisiyya; Yazdagird flees east and is murdered in a mill near Merv. Ferdowsi closes with his own verses on the completion of the book and his hope of lasting fame."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Prelude and the First Kings: Gayumars to Jamshid",
+   "lines": "Warner, vol. 1",
+   "section": 0,
+   "summary": [
+    "The poem opens with praise of God, of wisdom, of the Prophet and his family, and of the patron Mahmud. Between these set pieces Ferdowsi tells how the book came to be: an ancient chronicle of the kings was collected by a nobleman of Tus from learned Zoroastrian priests; a gifted young poet, Daqiqi, began to put it into verse and was murdered by his own slave; and Ferdowsi, fearing that his own life might also run out, took up the task with the help of friends who found him the book.",
+    "The history then begins with Gayumars, the first man to wear a crown, who lives in the mountains, clothes his people in leopard skins and loses his son Siyamak to a demon. His grandson Hushang discovers fire by striking a flint, and with it the feast of Sada; Tahmuras binds the demons, who buy their lives by teaching him to write. Jamshid then brings the age of invention to its height. He divides the people into priests, warriors, farmers and craftsmen, teaches the working of iron, weaving, medicine and the building of ships, and has the demons carry his throne into the air, a day still kept as Nowruz, the New Year.",
+    "After three centuries of peace Jamshid declares that all this is his own work and that he alone is the maker of the world. The royal glory leaves him, his nobles desert him, and the way is open for the usurper Zahhak."
+   ],
+   "analysis": [
+    "These short reigns are a myth of the origins of civilisation told as a list of kings. Each ruler adds an art or an institution, so that history is the gradual building of an ordered human world, and kingship is presented from the start as the source of that order. Ferdowsi's interest is less in the marvels than in the pattern: the king rules well while he holds the farr, the divine glory, and loses it when he forgets its source [[yarshater1983]] [[davis1992]].",
+    "Jamshid's fall sets the moral template for the whole poem. He is not overthrown by an enemy but by his own pride, and his punishment is that God's favour is simply withdrawn. Kai Kavus, Kai Khusrau in his anxiety at the height of his power, and several Sasanian kings will be measured against this first example. The Prelude, meanwhile, makes the poet a character in his own book, anxious about time, patronage and the survival of the stories, and it frames the whole as the rescue of an old tradition for the Persian language."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Gaiumart'",
+     "quote": "This order, Grace, and lustre came to earth\nWhen Sol was dominant in Aries\nAnd shone so brightly that the world grew young.",
+     "note": "The Warners regularly translate farr, the royal glory, as 'Grace'. Kingship enters the world as a cosmic event, at the spring equinox."
+    },
+    {
+     "ref": "Warner, 'The Prelude'",
+     "quote": "\"If I can get the book I will retell,\"\nI said, \" the tales in language of mine own.\"",
+     "note": "Ferdowsi's resolve after Daqiqi's death: to retell the prose chronicle in his own Persian verse."
+    },
+    {
+     "ref": "Warner, 'Jamshid'",
+     "quote": "Thereat the archmages hung their heads, perplexed\nTo answer and God's Grace departed from him,",
+     "note": "Jamshid's claim to be the maker of the world is met by silence, and the glory leaves him at once."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Zahhak, Kaveh and the Sons of Faridun",
+   "lines": "Warner, vol. 1",
+   "section": 5,
+   "summary": [
+    "Zahhak, the son of an Arab king, is tempted by Iblis, the devil, who persuades him to kill his father and then, disguised as a cook, kisses his shoulders. Two black serpents grow from the places he kissed; cut off, they grow again, and Iblis, now in the guise of a physician, advises that they be fed on human brains. When the Iranians abandon Jamshid they invite Zahhak to rule, and he hunts Jamshid down and saws him in two.",
+    "For a thousand years Zahhak rules through terror. Two young men are killed every day to feed the serpents, though two good men in the royal kitchen secretly save one of each pair, mixing a sheep's brain with the other's, and the survivors are said to be the ancestors of the Kurds. Zahhak dreams that a young prince will strike him down with an ox-headed mace, and the dream-readers name Faridun, a descendant of Jamshid, who is being raised in hiding.",
+    "The crisis comes when Kaveh, a blacksmith who has lost seventeen sons to the serpents, bursts into the court, tears up the document by which the nobles have testified to Zahhak's justice, and raises his leather apron on a spear as a banner of revolt. The people follow him to Faridun, who marches on the capital, defeats Zahhak and, on the advice of the angel Sorush, chains him alive in a cave on Mount Damavand.",
+    "Faridun reigns for five hundred years as a just king. When his three sons are grown, he finds them wives among the daughters of the king of Yemen and tests them in the shape of a dragon: the eldest, Salm, flees; the second, Tur, attacks; the youngest, Iraj, speaks calmly and wisely. Faridun then divides the world among them. Salm receives Rum and the west, Tur receives Turan and the east, and Iraj, the favourite, receives Iran, the centre of the world.",
+    "The elder brothers are consumed by envy. When Iraj comes to them unarmed, offering to give up his kingdom for the sake of peace, Tur strikes him with a golden chair, stabs him and cuts off his head, which the brothers send in a casket to their father. Faridun's grief is one of the most moving passages of the early poem. He lives on until Iraj's grandson Manuchehr, born to a daughter of the murdered prince, is old enough to take revenge, and Manuchehr kills both Salm and Tur."
+   ],
+   "analysis": [
+    "Zahhak is the poem's great image of tyranny: a king who literally lives on the bodies of his subjects. His serpents also make him a figure from older Iranian myth, for he descends from Azhi Dahaka, the three-headed dragon of the Avesta. Ferdowsi turns the dragon into a man and the myth into a political parable, in which a people that consents to injustice is in the end rescued by one of its humblest members.",
+    "Kaveh's apron, which Faridun decorates with jewels and makes the royal standard of Iran, the Derafsh-e Kaviani, is one of the most important symbols in the poem. The flag of the Iranian kings is said to have begun as the work-garment of a craftsman. The episode allows the poem to imagine the people as a moral force, and readers of every period, from medieval moralists to modern nationalists and revolutionaries, have returned to it [[davis1992]].",
+    "The division of the world is the poem's myth of the origin of its central conflict. Iran and Turan are not alien peoples but the inheritances of two brothers, and the long wars that follow are a family feud carried on through many generations. This kinship gives the wars their tragic depth: the enemy is a relative, and later heroes such as Siyavush and Kai Khusrau will carry the blood of both houses [[yarshater1983]].",
+    "Iraj is the first of the poem's innocent victims, a prince who chooses peace and is killed for it. His readiness to give up his crown anticipates Siyavush, and his murder begins the chain of vengeance that drives the heroic age. The episode also shows how Ferdowsi handles the theme of fate: the stars that Faridun's astrologers consult foretell strife for Iraj, yet the murder is presented as a free and terrible choice by his brothers."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Zahhak'",
+     "quote": "Who having slaughtered them took out their brains\nTo feed the snakes and ease the monarch's anguish.",
+     "note": "The daily sacrifice of two young men: the body politic is consumed to relieve the king's private pain."
+    },
+    {
+     "ref": "Warner, 'Zahhak'",
+     "quote": "He took a leathern apron, such as smiths\nWear to protect their legs while at the forge,\nStuck it upon a spear's point and forthwith",
+     "note": "Kaveh's revolt. The improvised banner becomes the standard of the Iranian kings."
+    },
+    {
+     "ref": "Warner, 'Faridun'",
+     "quote": "He drew a dagger from his boot, he robed\nIraj in blood, and with the keen bright blade\nEntrenched the royal breast.",
+     "note": "The murder of Iraj by his brother Tur, the first killing of kin in the poem and the origin of the feud between Iran and Turan."
+    },
+    {
+     "ref": "Warner, 'Faridun'",
+     "quote": "Whose severed head is here before me now,\nWhile foreign lions have devoured his body.",
+     "note": "Faridun's lament over the head of his son, sent to him in a casket by the murderers."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Zal and Rudaba, the Birth of Rustam and the Coming of Kai Kubad",
+   "lines": "Warner, vols. 1–2",
+   "section": 7,
+   "summary": [
+    "In Manuchehr's reign the poem turns to the great family of Sistan, the princes of the south-east. The hero Sam has a son born with white hair, and in his shame he has the child exposed on Mount Alborz. The Simurgh, a wise and enormous bird, carries the baby to her nest and raises him with her own young. Years later Sam, warned in a dream, repents and comes to find him; the Simurgh gives the young man, Zal, some of her feathers and tells him to burn one if he is ever in need.",
+    "Zal falls in love by report with Rudaba, daughter of Mehrab, king of Kabul, who is descended from Zahhak. Rudaba's maids arrange a meeting; she lets down her hair from the battlements for him to climb, but he refuses to use it and throws up a lasso instead. The match horrifies both families, and Manuchehr fears what a union with Zahhak's line may produce. The astrologers, however, foretell that the marriage will give Iran its greatest champion, and the king consents.",
+    "Rudaba's labour is so difficult that her life is despaired of. Zal burns a feather; the Simurgh appears and instructs a priest to cut the child from his mother's side and to heal her with herbs and the touch of a feather. The child is Rustam, so large that he seems a year old on his first day. As a boy he kills a raging white elephant with his grandfather's mace.",
+    "Manuchehr is succeeded by his son Naudar, a weak and greedy ruler. Pashang, king of Turan and a descendant of Tur, seizes the chance to avenge his ancestor and sends his son Afrasiyab across the Oxus. Naudar is captured, and Afrasiyab beheads him; Afrasiyab's own brother Aghriras, who pleads for the prisoners, is killed by him in turn. The brief reigns of Zav and Garshasp follow, and Iran is again exposed to Turanian invasion.",
+    "Zal sends the young Rustam to find a new king. Rustam chooses his horse, the red-flecked stallion Rakhsh, which no one else can master, and brings Kai Kubad, a descendant of Faridun, from his retreat on Mount Alborz. In his first battle he seizes Afrasiyab by the belt and lifts him from the saddle; the belt breaks and Afrasiyab escapes, but Pashang sues for peace. Kai Kubad founds the Kayanian dynasty and rules justly from Istakhr."
+   ],
+   "analysis": [
+    "This is the poem's great romance, and one of its most carefully crafted episodes. The courtship of Zal and Rudaba combines the conventions of Persian love poetry, with its musky locks, cypress forms and moon-like faces, with a serious political question: whether a hero of Iran may marry into the house of the arch-tyrant. The answer is that virtue and love can redeem an inheritance, and the greatest defender of Iran is himself part Zahhak's descendant.",
+    "The Simurgh stands at the edge of the human world as a figure of wisdom, healing and foresight; she protects the house of Sam across the generations and will return at the crisis of Rustam's life. The Sistan cycle may preserve a regional epic tradition of its own, later woven into the royal history, and the princes of Sistan keep a semi-independent standing towards the kings throughout the poem [[noldeke1896]] [[yarshater1983]].",
+    "Afrasiyab, introduced here, will be Iran's adversary for centuries of the story. He is not a simple villain: he is brave, sometimes generous and capable of grief, but he is ruled by fear and violence, and his murder of his merciful brother shows the destructiveness that will later fall on Siyavush. The Iran–Turan conflict now has its two permanent poles, Afrasiyab on one side and Rustam on the other.",
+    "Rustam's first acts set the terms of his career. He does not rule; he finds, enthrones and protects kings. The relation between the indispensable champion and the kings he serves, some of whom are unworthy of him, is one of the most important tensions in the poem, and Dick Davis has made it central to his reading of the work [[davis1992]]."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Minuchihr'",
+     "quote": "She loosed her tresses o'er the battlements\nAnd when they straightened out they reached the ground.",
+     "note": "Rudaba offers her hair as a rope, the most famous image of the romance."
+    },
+    {
+     "ref": "Warner, 'Minuchihr'",
+     "quote": "\"This is not well ; may no sun shine when I\nShall lay a wanton hand upon my Life",
+     "note": "Zal refuses to climb by her hair, and the courtship keeps its courtesy."
+    },
+    {
+     "ref": "Warner, 'Minuchihr'",
+     "quote": "The lofty Cypress smiled upon the babe,\nPerceived in him the Grace of king of kings,",
+     "note": "Rudaba sees the royal glory in her newborn son, Rustam."
+    },
+    {
+     "ref": "Warner, 'Kai Kubad'",
+     "quote": "Then, having caught the monarch by the belt,\nAnd dragged him from his poplar saddle, hoped",
+     "note": "Rustam's first battle: he lifts Afrasiyab from the saddle by his belt, which breaks and lets him escape."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Kai Kavus: Mazandaran, the Seven Courses and Other Follies",
+   "lines": "Warner, vol. 2",
+   "section": 12,
+   "summary": [
+    "Kai Kavus, Kai Kubad's son, is rich and powerful but rash. Tempted by a demon singing of the beauty of Mazandaran, the land of the divs, he invades it against Zal's advice. The White Div blinds him and his army and holds them captive. Rustam sets out to rescue them by the shorter and more dangerous road and passes through seven trials, the Seven Courses: Rakhsh kills a lion while his master sleeps; Rustam finds water in the desert, kills a dragon and a witch, captures the guide Ulad, defeats the div Arzhang, and finally kills the White Div in his cave, whose blood restores the king's sight.",
+    "The second part of the reign (Warner, 'Kai Kaus II: The Doings in Barbaristan and Other Tales') continues the pattern. Kavus wages war in Hamavaran, marries the princess Sudabeh and is imprisoned by her father; Rustam frees him. Then, tempted again, Kavus tries to fly to heaven on a throne lifted by eagles, which crashes in the wilderness when the birds tire. Rustam's own adventures with his companions include the hunting party in Turan that ends in a battle."
+   ],
+   "analysis": [
+    "The Seven Courses, a sequence of tests on the road to a goal, is one of the poem's best-known structures; it will be repeated, deliberately, in the Seven Stages of Isfandiyar. The trials are graded from natural dangers to the supernatural, and the hero's relation with his horse Rakhsh is drawn with real tenderness: Rustam scolds Rakhsh for fighting the lion alone because he cannot imagine finishing the journey without him.",
+    "Kavus is Ferdowsi's study of a foolish king, reckless, vain and easily led, yet still the king, whom the heroes must obey and repeatedly rescue. His flight to heaven repeats Jamshid's pride in comic form. The reign shows how the poem separates the institution of kingship, which it reveres, from the persons who hold it, whom it judges freely [[davis1992]]."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Kai Kaus I: The War with Mazandaran'",
+     "quote": "He said : \" O foolish Rakhsh ! who bade thee fight\nA lion ?",
+     "note": "The First Course: Rustam wakes to find that Rakhsh has killed a lion, and reproves him out of love."
+    },
+    {
+     "ref": "Warner, 'Kai Kaus I: The War with Mazandaran'",
+     "quote": "He said to Rakhsh : \" Fight not and make no friends.\nIf any foe approacheth run to me,\nBut venture not to counter divs and lions.\"",
+     "note": "Rustam's affectionate warning to his horse after the First Course."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Rustam and Sohrab",
+   "lines": "Warner, vol. 2",
+   "section": 14,
+   "summary": [
+    "Hunting near the Turanian border, Rustam loses Rakhsh and follows his tracks to the city of Samangan. That night the king's daughter Tahmineh comes to his room and asks to bear his child. They marry; Rustam leaves her an onyx amulet to bind on the child's arm and departs the next morning. Their son Sohrab grows with astonishing speed, learns who his father is, and resolves to conquer Iran, depose Kavus and set Rustam on the throne, and then to overthrow Afrasiyab as well. Afrasiyab, seeing his chance, sends advisers with orders to keep father and son from recognising each other.",
+    "Sohrab defeats the warriors of the White Castle, among them the woman warrior Gurdafarid, who tricks him and escapes. At the Iranian camp he repeatedly asks the captive Hujir to point out Rustam, and Hujir, fearing for Iran, lies. Rustam, who has quarrelled with Kavus and returned only reluctantly, fights the young man in disguise without giving his name. In their second bout Sohrab throws him, and Rustam saves himself by a lie about Iranian custom. In the third he throws Sohrab and stabs him. Dying, Sohrab names his father, and Rustam sees the amulet on his arm. Rustam sends to Kavus for the healing elixir, but the king, fearing what father and son might do together, delays, and Sohrab dies."
+   ],
+   "analysis": [
+    "This is the best-known episode of the poem outside Iran, and its tragedy is built from many small failures: Rustam's silence about his name, Hujir's lie, Sohrab's trust in signs he cannot read, Rustam's trick in the wrestling, Kavus's jealousy. Each choice is understandable, and together they make the catastrophe seem both chosen and fated. Ferdowsi interrupts the narrative with reflections on the incomprehensibility of fate, and the episode opens with a famous question about whether death is justice or injustice [[clinton1987]].",
+    "The story is the first of the poem's great conflicts between father and son. Here the father kills the son in ignorance; in Siyavush's story the father drives the son away; in Isfandiyar's the father sends the son to his death knowingly. Kavus's refusal of the elixir makes the political point sharp: the king prefers the death of a dangerous youth to the strengthening of an overmighty champion. Matthew Arnold's 'Sohrab and Rustum' (1853) made the episode famous in English [[arnold1853]] [[davis1992]]."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Kai Kaus III: Suhrab'",
+     "quote": "My mother told me\nHow I should recognise my father. I\nSought him in love and die of my desire.",
+     "note": "The dying Sohrab: the search for the father ends at the father's hand."
+    },
+    {
+     "ref": "Warner, 'Kai Kaus III: Suhrab'",
+     "quote": "\"Where is the proof that thou art Rustam's son ?\nMay his name perish from among the great,\nFor I am Rustam !",
+     "note": "Rustam reveals his name too late, and curses it."
+    },
+    {
+     "ref": "Warner, 'Kai Kaus III: Suhrab'",
+     "quote": "Exceedingly, yet, if I send the elixir,\nSuhrab — an elephantine chief — will live,\nWill strengthen Rustam's back,",
+     "note": "Kavus explains why he will not send the healing draught: political fear outweighs gratitude."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Siyavush",
+   "lines": "Warner, vol. 2",
+   "section": 15,
+   "summary": [
+    "Siyavush, son of Kavus, is raised by Rustam in Zabulistan and returns to court as a model prince. His stepmother Sudabeh falls in love with him, and when he rejects her she accuses him of assault. To prove his innocence he rides through a mountain of fire and emerges unharmed. Soon afterwards he leads an army against Afrasiyab, who, troubled by a dream, sues for peace and sends hostages. Kavus orders Siyavush to break the treaty and send the hostages to be killed. Unwilling to break his oath, the prince crosses into Turan.",
+    "Afrasiyab receives him with honour. On the advice of the noble Turanian Piran, Siyavush marries first Piran's daughter Jarira, then Afrasiyab's daughter Farangis, and builds the beautiful city of Siyavushgird. But Afrasiyab's brother Garsivaz, jealous of him, poisons the king's mind with false reports. Siyavush, foreseeing his death in a dream, makes no resistance. Captured, he is dragged out and beheaded by Gurwi over a basin, and from his blood springs a plant. Farangis, pregnant with his son, is saved by Piran."
+   ],
+   "analysis": [
+    "Siyavush is the poem's figure of innocent suffering. He is chaste, truthful and faithful to his word, and every one of these virtues brings him closer to death: chastity provokes Sudabeh's accusation, truthfulness brings the fire ordeal, and fidelity to his oath sends him into exile. Many scholars have seen in him traces of an older dying-god or martyr cult; the mourning for Siyavush was kept in Bukhara in the early Islamic period, and later Persian culture often read him alongside the Shi'i martyrs [[yarshater1983]] [[davis1992]].",
+    "The story is also the poem's most searching account of political failure on both sides. Kavus would have his son break a sworn treaty; Afrasiyab, a capable king, is led by suspicion and fear into murdering the man who has made his kingdom secure. The death of Siyavush is the hinge of the heroic age, for it renews the war between Iran and Turan with a cause that only the extinction of Afrasiyab can settle. Ferdowsi's own reflections on the vanity of the world are at their most intense here."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Kai Kaus IV: The Story of Siyawush'",
+     "quote": "\"Grant me a passage through this mount of fire,\nAnd free me from my sire's misprision.\"",
+     "note": "Siyavush's prayer before the ordeal by fire."
+    },
+    {
+     "ref": "Warner, 'Kai Kaus IV: The Story of Siyawush'",
+     "quote": "From that blood presently there sprang a plant,\nWhich I will teach thee how to recognise,\nFor it is called \" The Blood of Siyawush.\"",
+     "note": "The plant that grows from the prince's blood, a memorial in nature to an unjust death."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "The Vengeance for Siyavush and Kai Khusrau's First Wars",
+   "lines": "Warner, vols. 2–3",
+   "section": 16,
+   "summary": [
+    "Rustam punishes Kavus's household by killing Sudabeh and invades Turan, laying it waste for seven years. Meanwhile Farangis gives birth to Kai Khusrau, who is raised among shepherds and feigns simplicity to escape Afrasiyab's suspicion. The hero Giv searches Turan for seven years, finds him, and brings him and his mother across the Oxus to Iran. There the nobles choose him over Kavus's son Fariburz after he captures the enchanted fortress of Bahman, and Kavus yields him the throne.",
+    "The new king sends an army to avenge his father (Warner, 'Kai Khusrau I'). It goes disastrously wrong: the commander Tus, disobeying orders, attacks Kai Khusrau's own half-brother Farud, son of Siyavush and Jarira, who dies with his mother. The Iranians are then defeated and besieged on Mount Hamavan. Turan's allies, Kamus of Kashan and the Khan of Chin, come against them, and Rustam arrives to win the great battles told in 'The Story of Kamus of Kashan' and 'The Story of Rustam and the Khan of Chin'. A shorter tale follows, in which Rustam is thrown into the sea by the div Akwan and survives."
+   ],
+   "analysis": [
+    "Kai Khusrau is the poem's ideal king, the grandson of both Kavus and Afrasiyab, who unites the two blood-lines and is destined to end the feud. His survival among shepherds, his concealed identity and his recovery by Giv belong to a familiar pattern of the hidden royal child, but Ferdowsi gives it pathos through Giv's long search and the hardships of the flight.",
+    "The death of Farud is a second Siyavush story in miniature: a young prince of mixed descent killed by his own side through pride and haste. The episode shows that vengeance, however just, breeds new injustice, and the war that follows is long, costly and morally untidy. These middle parts of the poem are its most purely military, and their length matters, for they make the eventual victory feel earned and its cost unforgettable."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Kai Kaus V: How Rustam Avenged Siyawush and How Giv Brought Kai Khusrau to Iran'",
+     "quote": "Bestrode his sable steed, took to the water,\nReached like a boat the toll-house opposite,\nAnd issued from the bed of the Jihun\nWith gallant Giv and Farangis behind him.",
+     "note": "Kai Khusrau crosses the Oxus (Jihun) into Iran with Giv and his mother, escaping Afrasiyab's pursuit."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bizhan and Manizheh",
+   "lines": "Warner, vol. 3",
+   "section": 21,
+   "summary": [
+    "The poet introduces the story with a night scene: unable to sleep, he asks his companion to bring a lamp and wine, and she reads him a tale from an old book. Bizhan, son of Giv, volunteers to clear the land of Irman of wild boars. His companion Gurgin, jealous of his success, tempts him to visit a nearby meadow where Afrasiyab's daughter Manizheh is holding a spring festival. The two fall in love; Manizheh drugs Bizhan and carries him to her palace in Turan.",
+    "When Afrasiyab discovers him, he orders Bizhan chained in a pit and covered with the great stone of the div Akwan, and he casts out Manizheh, who survives by begging and lowers food to him. Kai Khusrau sees Bizhan's plight in his world-revealing cup. Rustam, disguised as a merchant, travels to Turan, hides his ring in a roast fowl that Manizheh carries to the pit, so that Bizhan knows help has come, then lifts the stone, frees Bizhan and carries the lovers back to Iran."
+   ],
+   "analysis": [
+    "This is the most self-contained and lightest of the heroic tales, a romance of adventure with a happy ending. It is also the boldest of Ferdowsi's female portraits: Manizheh takes the initiative in love, defies her father and accepts beggary for Bizhan's sake. The frame in which the poet hears the story from a woman reading by lamplight is unusual and much discussed, for it shows the poem presenting itself as drawn from an old written book [[davidson1994]] [[omidsalar2011]].",
+    "Kai Khusrau's cup, in which he sees the seven climes of the world, belongs to the poem's lore of sacred kingship, and Rustam's disguise, trickery and strength show the hero in a role closer to folktale. Gurgin's treachery and later pardon give the tale its moral shading."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Kai Khusrau V: The Story of Bizhan and Manizha'",
+     "quote": "Then throw him in the pit head first — no more\nOf sun and moon for him ! Take elephants,\nAnd fetch the boulder of the div Akwan,",
+     "note": "Afrasiyab's sentence on Bizhan: the pit and the stone become the image of his captivity."
+    },
+    {
+     "ref": "Warner, 'Kai Khusrau V: The Story of Bizhan and Manizha'",
+     "quote": "That darling Idol read the tale to me\nOut of the book of ancient legendry,",
+     "note": "The frame of the story: the poet's companion reads it to him from an old book, and he turns it into verse."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Twelve Rukhs, the Great War and Kai Khusrau's Departure",
+   "lines": "Warner, vol. 4",
+   "section": 22,
+   "summary": [
+    "In 'The Battle of the Twelve Rukhs' the armies of Iran under Gudarz and Turan under Piran agree to settle the war through twelve single combats between champions. The Iranians win every duel; Gudarz kills Piran, the wise Turanian who had sheltered Siyavush's family and whose death the Iranians mourn. In 'The Great War' Kai Khusrau himself leads the campaign against Afrasiyab, who flees as far as China and the sea and finally hides in a cave. The hermit Hum captures him, and Kai Khusrau kills him and his brother Garsivaz in vengeance for Siyavush.",
+    "Victorious, Kai Khusrau falls into a deep anxiety. He fears that power will corrupt him as it did Jamshid and Kavus, and he withdraws for weeks of prayer, ignoring the pleas of his nobles. Sorush tells him in a dream that his time has come. He distributes his treasures, appoints the unexpected Luhrasp as his successor, and rides into the mountains, where he vanishes at a spring. The paladins who follow him, Tus, Giv, Fariburz and Bizhan, perish in a snowstorm. Luhrasp's reign (Warner, 'Luhrasp') then opens a new era in which the problem is the ambition of his son Gushtasp."
+   ],
+   "analysis": [
+    "The Twelve Rukhs is an elaborate set piece of formal duelling; its chief emotional weight lies in Piran, the poem's noblest enemy, loyal to a king he cannot approve. With the death of Afrasiyab the cycle of vengeance that began with Iraj is closed, and the poem's mythical-heroic structure reaches its climax.",
+    "Kai Khusrau's renunciation is one of the most remarkable moments in the poem. The perfect king chooses to leave the world at the height of his power precisely because he understands the danger of power. His going is a kind of answer to Jamshid's fall: the king who keeps the farr is the one who will lay down the crown. Davis reads the scene as the poem's clearest statement that kingship is a burden and a moral peril [[davis1992]]."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Kai Khusrau VII: The Great War of Kai Khusrau with Afrasiyab'",
+     "quote": "On kingship and long rule I go the way\nOf Kai Kaus and of Jamshid, and lose\nMy footing as they did.",
+     "note": "Kai Khusrau explains his withdrawal: the fear of becoming another proud king."
+    },
+    {
+     "ref": "Warner, 'Kai Khusrau VII: The Great War of Kai Khusrau with Afrasiyab'",
+     "quote": "The snow had hoisted sail upon the earth\nThe lances of the nobles disappeared !",
+     "note": "The paladins who follow the king into the mountains are lost in the snow."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Gushtasp, Zoroaster and the Seven Stages of Isfandiyar",
+   "lines": "Warner, vol. 5",
+   "section": 25,
+   "summary": [
+    "Gushtasp, angry that his father Luhrasp will not yield him the throne, goes to Rum, where he lives in obscurity until the emperor's daughter Katayun chooses him as husband; his exploits there eventually win him recognition and the Iranian crown. The poet then tells of a dream in which Daqiqi asks him to include his verses, and he inserts the thousand or so couplets that Daqiqi wrote before his murder. They tell of the coming of the prophet Zoroaster (Zardusht), Gushtasp's conversion to his faith, his refusal to pay tribute to Arjasp, king of Turan, and the war that follows, in which Gushtasp's brother Zarir dies.",
+    "Ferdowsi resumes the narrative himself. Gushtasp, suspicious of his heroic son Isfandiyar, has him imprisoned in chains on the strength of a slander; Arjasp seizes the chance to attack, kills Luhrasp and carries off Gushtasp's daughters. Gushtasp, now desperate, promises Isfandiyar the throne if he will rescue them. Isfandiyar sets off on the Seven Stages (Warner, 'Gushtasp II'), fighting wolves, lions, a dragon, a witch, a monstrous Simurgh and a snowstorm, crosses a river, and finally storms Arjasp's Brazen Hold in disguise, freeing his sisters."
+   ],
+   "analysis": [
+    "The insertion of Daqiqi's verses is a rare glimpse of the poem's making. Ferdowsi praises his predecessor and criticises his style in the same breath, and modern scholars have found that Daqiqi's part closely follows a Middle Persian source, the Ayadgar i Zareran, which shows how faithfully the poets could follow written texts [[noldeke1896]] [[deblois2004]].",
+    "Gushtasp is the third great flawed king, after Kavus and Afrasiyab, and his treatment of Isfandiyar repeats the pattern of royal suspicion that destroyed Siyavush. Isfandiyar's Seven Stages consciously mirror Rustam's Seven Courses, presenting him as a rival champion and a champion of the new faith; the parallel prepares the confrontation of the two heroes."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Gushtasp I: The Coming of Zarduhsht and the War with Arjasp'",
+     "quote": "If thou canst speak but in Dakiki's vein\nSpeak not at all and spare thy nature pain,",
+     "note": "Ferdowsi's verdict on the verses of his predecessor, which he has just included in the poem."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Rustam and Isfandiyar; the Death of Rustam",
+   "lines": "Warner, vol. 5",
+   "section": 27,
+   "summary": [
+    "Gushtasp again breaks his promise. Warned by astrologers that Isfandiyar will die at Rustam's hands, he sends his son to bring the old hero to court in chains, on the pretext that Rustam has failed in his duty to the throne. Isfandiyar reluctantly obeys. Rustam is ready to honour and serve the prince but will not submit to bonds. After a series of courteous and increasingly bitter meetings the two fight. Isfandiyar, made invulnerable by Zoroaster except in his eyes, wounds Rustam and Rakhsh badly.",
+    "Zal summons the Simurgh, who heals them and leads Rustam to a tamarisk on the shore of the sea. From it he cuts a double-headed arrow; the Simurgh warns him that whoever kills Isfandiyar will suffer in this world and the next. Next day Rustam again offers peace, is refused, and shoots Isfandiyar in the eyes. Dying, Isfandiyar blames his father and entrusts his son Bahman to Rustam's care.",
+    "Rustam's own end (Warner, 'Gushtasp IV: The Story of Rustam and Shaghad') comes through treachery. His jealous half-brother Shaghad and the king of Kabul lure him to a hunting ground full of pits lined with spears; Rakhsh falls into one and both are mortally wounded. Rustam, dying, asks for his bow and shoots Shaghad through the hollow tree behind which he hides. Bahman later becomes king, avenges his father on Rustam's family, and is followed by Humai."
+   ],
+   "analysis": [
+    "Many readers consider this the poem's supreme tragedy. Unlike Sohrab, Isfandiyar knows exactly whom he is fighting, and so does Rustam. Both are noble, both appeal to duty, and neither can yield without losing honour. Rustam's loyalty is to the ideal of Iranian kingship; Isfandiyar's is to his father and the faith. The king who has set them against each other is the true author of the disaster, and Isfandiyar says so [[davis1992]].",
+    "The tamarisk arrow gives Rustam the victory at the cost of his own fate. With Isfandiyar's death the heroic age begins to close: Rustam's death soon follows, by a betrayal within his own family, and with him passes the hero who had sustained the kingdom since Kai Kubad. The Sistan house is later destroyed by Bahman, the son Rustam had raised."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Gushtasp III: The Story of Asfandiyar's Fight with Rustam'",
+     "quote": "And set thereon this shaft of tamarisk,\nThis fosterling of bane. Aim at his eyes,",
+     "note": "The Simurgh's instruction to Rustam; the Warners spell the prince's name Asfandiyar."
+    },
+    {
+     "ref": "Warner, 'Gushtasp III: The Story of Asfandiyar's Fight with Rustam'",
+     "quote": "The throne is thine, the stress and toil are mine ;\nThine is the crown and mine are bier and shroud.",
+     "note": "Isfandiyar's dying message to Gushtasp, the most direct indictment of a king in the poem."
+    },
+    {
+     "ref": "Warner, 'Gushtasp IV: The Story of Rustam and Shaghad'",
+     "quote": "He pinned his brother and the tree together,\nAnd gladdened in the article of death.",
+     "note": "Rustam's last shot, which kills his treacherous half-brother."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Darab, Dara and Alexander",
+   "lines": "Warner, vol. 6",
+   "section": 31,
+   "summary": [
+    "Queen Humai, wishing to keep the throne, sets her infant son Darab adrift on the Euphrates in a box; he is raised by a washerman, proves himself in war and is recognised. As king, Darab marries Nahid, daughter of Philip of Rum, but sends her home because of her bad breath; she gives birth to Sikandar (Alexander), whom Philip raises as his own. Darab's other son Dara inherits Iran, and Sikandar, as king of Rum, refuses the tribute and defeats him. Dara is stabbed by two of his own ministers, and Sikandar, arriving at his side, mourns his half-brother, punishes the murderers and marries Dara's daughter Rowshanak.",
+    "Sikandar's reign then becomes a book of wonders. He visits Kayd of India and receives four marvellous gifts, defeats Porus, goes on pilgrimage to Mecca, visits the queen of Andalus, debates with the Brahmans, meets the city of women, seeks the Water of Life in the Land of Darkness (only his guide Khizr finds it), builds the wall against Gog and Magog, and hears from a speaking tree that he will die far from home. He dies in Babylon, and his mother and the philosophers lament him."
+   ],
+   "analysis": [
+    "Ferdowsi's Alexander draws on the Persian versions of the Greek Alexander Romance. Making him a son of Darab is a striking way of absorbing the conqueror of the Persian empire into the Iranian royal line, so that his victory is not wholly a foreign conquest [[yarshater1983]].",
+    "The section moves from epic to wisdom literature and romance. Sikandar's travels become a meditation on the limits of human power: the man who conquers the world cannot win immortality, and the speaking tree's prophecy makes death the last frontier he must cross. The Alexander story became a separate genre of Persian poetry, above all in Nizami's Iskandarnameh."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Sikandar'",
+     "quote": "The speaking tree said to the Shah : \" Be speedy,\nAnd bind the baggage on.",
+     "note": "The tree's warning that Sikandar's life is nearly spent."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "The Sasanians: Ardashir to Bahram Gur",
+   "lines": "Warner, vols. 6–7",
+   "section": 34,
+   "summary": [
+    "The Parthian or Ashkanian kings are dismissed in a few lines: Ferdowsi says he has heard nothing of them but their names. The historical Sasanian dynasty begins with Ardashir Papakan, a descendant of Dara who serves at the court of the Parthian king Ardavan, escapes with the help of the slave girl Gulnar, defeats Ardavan and founds the new empire. He also destroys Haftvad, whose power comes from a monstrous worm, by pouring molten metal into its mouth. His testament to his successors is a celebrated piece of political wisdom.",
+    "The reigns that follow include Shapur II, 'the Shoulder-piercer', and his captivity in Rum, and Yazdagird I, called the Sinner, whose harshness alienates his subjects; he sends his son Bahram to be raised by the Arab king Munzir and is killed by a mysterious horse. The nobles refuse Bahram the throne until he takes the crown from between two lions. Bahram Gur ('the wild ass', for his passion for hunting it) is the poem's ideal of the pleasure-loving yet just king: his hunts, his harpist Azadeh, his visits incognito to peasants and merchants, and his journey to India are told in a long series of tales."
+   ],
+   "analysis": [
+    "The change from the legendary to the historical age is marked by a change of texture. Reigns become shorter, the source material becomes closer to chronicle, and the poem draws more heavily on advice literature and on anecdote. Here the Shahnameh most clearly functions as a mirror for princes, and Ardashir's testament set a model for later political writing [[yarshater1983]] [[melville2012]].",
+    "Bahram Gur is the most charming figure of the historical part. Many of his adventures, such as the death of Azadeh when he proves his skill as an archer at her expense, have a moral sting, and they became favourite subjects of later poets and painters. The ordeal of the lions, a proof of royal worth that recalls the tests of the heroic age, gives him a legitimacy that birth alone could not."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'The Ashkanians'",
+     "quote": "Naught have I heard of them except the name,\nAnd in the Book of Kings seen but the same.",
+     "note": "Ferdowsi on the Parthians, an admission of the limits of his sources."
+    },
+    {
+     "ref": "Warner, 'Yazdagird son of Shapur'",
+     "quote": "Ordeal by the lions will suffice,\nAnd thenceforth none will seek the sovereignty.\"",
+     "note": "Bahram's proposal: the crown set between two lions will go to the man who can take it. The Warners print this under his father's reign."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Anushirvan and Buzurjmihr",
+   "lines": "Warner, vols. 7–8",
+   "section": 49,
+   "summary": [
+    "After brief reigns, Kubad ruins his reputation by supporting the communist prophet Mazdak; his son Nushirvan (Anushirvan, Khusrau I) destroys Mazdak and his followers and rules for forty-eight years as the model of royal justice. He reforms the land tax, protects the frontiers and fights the Byzantines, and suppresses the revolt of his Christian son Nushzad.",
+    "The young scholar Buzurjmihr wins the king's favour by interpreting a dream and becomes his minister; at the seven banquets the sages debate questions of wisdom and conduct. An envoy from India brings a chessboard as a challenge, and Buzurjmihr discovers its rules and invents nard, a game like backgammon, in reply. The physician Burzoy brings the book of fables Kalila and Dimna from India. Buzurjmihr later falls from favour, is imprisoned and loses his sight, and is restored when only he can answer a riddle from Rum. In the Shah's last years he appoints his son Hurmuzd successor."
+   ],
+   "analysis": [
+    "Nushirvan's reign is the centre of the Sasanian section, and Ferdowsi uses it to present the virtues of the just ruler and the wise counsellor. The long dialogues and maxims draw on Middle Persian wisdom literature (andarz), which survived into Arabic and Persian, and they remind us that the poem was valued in later centuries as a book of political ethics as much as of stories [[yarshater1983]] [[melville2012]].",
+    "Even here the praise of the king is not unqualified. Buzurjmihr's fall shows the danger of serving a powerful monarch, and in one famous anecdote Nushirvan refuses a shoemaker's offer to fund his war in return for the right to educate his son as a scribe, on the grounds that the social order must not be disturbed. Modern readers have discussed whether the poet admires or quietly questions such rigidity [[davis1992]]."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Nushirwan IV: The Introduction of the Game of Chess into Iran, the Legend of its Invention, and the Discovery of the Book of Kalila and Dimna'",
+     "quote": "Bid those much travailed in the quest for knowledge\nTo place this board, used in the game of chess,\nBefore them and set all their wits to work",
+     "note": "The Indian king's challenge: a nation's wisdom is tested by a game."
+    },
+    {
+     "ref": "Warner, 'Nushirwan II: The Story of Buzurjmihr and of the Seven Banquets of Nushirwan'",
+     "quote": "Do not deem\nThat there is naught but folly in a dream ;",
+     "note": "The opening of Buzurjmihr's story, whose rise begins with the interpretation of a king's dream."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Hurmuzd, Khusrau Parviz and Shirin",
+   "lines": "Warner, vols. 8–9",
+   "section": 60,
+   "summary": [
+    "Hurmuzd, Nushirvan's son, begins well but becomes suspicious and cruel. His general Bahram Chubineh defeats the invading king Saveh, but, insulted by Hurmuzd, he rebels. Court nobles blind Hurmuzd and place his son Khusrau Parviz on the throne. Bahram drives Khusrau out; Khusrau flees to the Byzantine emperor Maurice, marries his daughter Maryam, and returns with a Roman army to defeat Bahram, who dies in exile among the Turks. Hurmuzd is put to death by Khusrau's uncles.",
+    "Khusrau's long reign is one of splendour: his palace, his treasures, his musician Barbad and his love for the Armenian Shirin, whom he marries in spite of the nobles' objections and who poisons Maryam. In old age he becomes avaricious and unjust, and his son Shiruy (Kubad) deposes and murders him. Shiruy then demands Shirin in marriage; she goes to Khusrau's tomb, takes poison and dies beside his body. Barbad's lament for the king, after which the minstrel cuts off his own fingers, marks the end of the age of Sasanian magnificence."
+   ],
+   "analysis": [
+    "The last great reign is told with fullness and a sense of decline. Khusrau's career shows the whole cycle of the poem in little: an exiled prince restored, a magnificent king, a ruler grown greedy, a father killed by his son. The parricide that ends his reign reverses the poem's earlier pattern of fathers destroying sons.",
+    "Shirin, who enters the story late, is the poem's last great heroine, and her death is told with dignity. Ferdowsi introduces the romance as an old story from an ancient book, and Nizami would later make it the subject of his Khusrau and Shirin. The rebel Bahram Chubineh, a commoner who claims the throne, is treated with surprising sympathy, so that the poem continues to the end to separate legitimacy from virtue."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Khusrau Parwiz'",
+     "quote": "Now will I tell again old histories\nAbout Shirin and Shah Khusrau Parwiz.\nThe book containing them is antiquate,",
+     "note": "The poet introduces the love story as drawn from an old book."
+    },
+    {
+     "ref": "Warner, 'Kubad (Shirwi)'",
+     "quote": "\" I will not come to thee save in the presence\nOf those wise men that are about thy court,\nMen of experience and clerkly skill.\"",
+     "note": "Shirin's answer to the parricide Shiruy, who wishes to marry her. She meets him only before witnesses, and then goes to her death."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "The Last Sasanians and the Arab Conquest",
+   "lines": "Warner, vol. 9",
+   "section": 62,
+   "summary": [
+    "The empire falls into chaos after Khusrau's death. Shiruy reigns for months; a series of short-lived rulers follows, including the usurper Guraz and two queens, Purandukht and Azarmdukht. The last king, Yazdagird, faces the Arab armies under Sa'd ibn Abi Waqqas. His general Rustam, son of Hurmuzd, reads in the stars that the empire is doomed and writes a long letter to his brother foretelling the evils to come, before falling at the battle of Qadisiyya.",
+    "Yazdagird flees east to Khorasan, where the governor Mahuy betrays him. Hiding in a mill near Merv, the king is murdered by the miller at Mahuy's command, despite the protests of the priests and nobles; Mahuy in his turn is killed by the Turks. The poem ends with Ferdowsi's own closing verses (Warner, 'The Completion of the Shahnama'), dating the completion of the work and claiming that, through his poem, he will not die."
+   ],
+   "analysis": [
+    "The poem ends not with a triumph but with a disaster narrated from the losing side. Rustam's prophetic letter, with its picture of a world where the low-born rise and the wise are despised, is one of the poem's most quoted passages, and the murder of a king by a miller is the ultimate sign of a broken order. The voice of lament is held in balance with the poet's evident faith as a Muslim: what is mourned is the end of an Iranian world, not the coming of Islam itself [[davis1992]] [[omidsalar2011]].",
+    "The closing verses return to the poet himself, now old, poor and disappointed in his patrons, but confident that his work will outlast every king. The Shahnameh, which began by tracing the origins of kingship, ends by placing the poet's own memorial above the dynasties he has chronicled."
+   ],
+   "key": [
+    {
+     "ref": "Warner, 'Yazdagird'",
+     "quote": "The royal and prophetic offices\nAre two gems set within one finger-ring.",
+     "note": "A priest's protest at the order to kill the king: kingship and faith are inseparable."
+    },
+    {
+     "ref": "Warner, 'Yazdagird'",
+     "quote": "A low-born-man was he, by name Khusrau,\nPoor, foolish, unrespected, purposeless.",
+     "note": "The miller who will kill the last king bears the name of the greatest Sasanian kings."
+    },
+    {
+     "ref": "Warner, 'The Completion of the Shahnama'",
+     "quote": "Yet live I shall: the seed of words have I\nFlung broad-cast and henceforth I shall not die.",
+     "note": "The final couplet: the poet's claim to immortality through his work."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Jamshid",
+   "side": "Kings of Iran",
+   "text": "The fourth king, who brings civilisation to its height in a golden age of three hundred years and has his throne carried into the sky on the first Nowruz. When he claims to be the maker of the world the royal glory leaves him, and he is overthrown and killed by Zahhak. He is the poem's first and defining example of royal pride."
+  },
+  {
+   "name": "Faridun",
+   "side": "Kings of Iran",
+   "text": "Descendant of Jamshid, raised in hiding, who overthrows Zahhak with the ox-headed mace and chains him in Mount Damavand. A just king who reigns for five hundred years, he divides the world among his three sons and lives to see the youngest, Iraj, murdered by the other two."
+  },
+  {
+   "name": "Kai Kavus",
+   "side": "Kings of Iran",
+   "text": "Kai Kaus in Warner. A powerful but rash and vain king who invades Mazandaran, tries to fly to heaven and repeatedly needs Rustam to rescue him. He refuses the elixir that might save Sohrab and drives his son Siyavush into exile. He embodies the poem's distinction between the dignity of kingship and the failings of a king."
+  },
+  {
+   "name": "Kai Khusrau",
+   "side": "Kings of Iran",
+   "text": "Son of Siyavush and Farangis, grandson of both Kavus and Afrasiyab. Raised among shepherds and brought to Iran by Giv, he avenges his father by destroying Afrasiyab, then renounces the throne for fear of becoming proud and vanishes in the mountains. He is the poem's ideal king."
+  },
+  {
+   "name": "Gushtasp",
+   "side": "Kings of Iran",
+   "text": "Son of Luhrasp, who accepts Zoroaster's faith. Jealous of his son Isfandiyar, he imprisons him, uses him and finally sends him to his death against Rustam, despite a prophecy that the expedition will be fatal. The poem's harshest portrait of a manipulative father and king."
+  },
+  {
+   "name": "Anushirvan",
+   "side": "Kings of Iran",
+   "text": "Nushirwan in Warner; the Sasanian Khusrau I (r. 531–579). The model of the just king, administrator and patron of learning, in whose reign chess and the fables of Kalila and Dimna come from India. His counsellor is Buzurjmihr."
+  },
+  {
+   "name": "Khusrau Parviz",
+   "side": "Kings of Iran",
+   "text": "Khusrau Parwiz in Warner; the Sasanian Khusrau II (r. 590–628). Driven out by the rebel Bahram Chubineh, he regains the throne with Byzantine help, reigns in splendour, marries Shirin, grows avaricious in old age and is murdered at his son's command."
+  },
+  {
+   "name": "Zal",
+   "side": "Heroes of Sistan",
+   "text": "Son of Sam, born white-haired, exposed by his father and raised by the Simurgh. Husband of Rudaba and father of Rustam, he is a wise counsellor to the kings and the keeper of the Simurgh's feathers, which he burns to summon her in times of crisis."
+  },
+  {
+   "name": "Rustam",
+   "side": "Heroes of Sistan",
+   "text": "Son of Zal and Rudaba, the greatest hero of the poem, who lives for centuries as the champion of Iran. Riding Rakhsh and wearing his leopard-skin coat, he passes the Seven Courses, kills Sohrab without knowing him, avenges Siyavush, rescues Bizhan and kills Isfandiyar. He serves kings but will not be humiliated by them, and he dies through his half-brother's treachery."
+  },
+  {
+   "name": "Sohrab",
+   "side": "Heroes of Sistan",
+   "text": "Suhrab in Warner. Son of Rustam and the princess Tahmineh of Samangan, a young hero of extraordinary strength who invades Iran hoping to find his father and set him on the throne. Rustam kills him in single combat and recognises him only by the amulet on his arm."
+  },
+  {
+   "name": "Siyavush",
+   "side": "Kings of Iran",
+   "text": "Siyawush in Warner. Son of Kai Kavus, raised by Rustam; he rejects his stepmother Sudabeh, passes through fire to prove his innocence, refuses to break a treaty and takes refuge in Turan, where he is murdered at Afrasiyab's command. His death is the poem's emblem of innocent suffering and the cause of its longest war."
+  },
+  {
+   "name": "Isfandiyar",
+   "side": "Kings of Iran",
+   "text": "Asfandiyar in Warner. Son of Gushtasp, champion of Zoroaster's faith, invulnerable except in his eyes. He passes his own Seven Stages to rescue his sisters, then is sent by his father to bring Rustam in chains, and is killed by him with the tamarisk arrow. He dies blaming his father."
+  },
+  {
+   "name": "Afrasiyab",
+   "side": "Turan",
+   "text": "King of Turan, descendant of Tur and Iran's great enemy through the heroic age. Brave and capable, sometimes moved by remorse, he is ruled by fear and cruelty: he kills his brother Aghriras and his son-in-law Siyavush. He is finally captured hiding in a cave and killed by his grandson Kai Khusrau."
+  },
+  {
+   "name": "Piran",
+   "side": "Turan",
+   "text": "Afrasiyab's chief counsellor and general, the noblest figure on the Turanian side. He shelters Siyavush and later saves Farangis and the infant Kai Khusrau, but remains loyal to his king and dies fighting Gudarz in the Battle of the Twelve Rukhs."
+  },
+  {
+   "name": "Garsivaz",
+   "side": "Turan",
+   "text": "Afrasiyab's brother, whose envy and slanders bring about the murder of Siyavush. He is executed with Afrasiyab at the end of the Great War."
+  },
+  {
+   "name": "Rudaba",
+   "side": "Women",
+   "text": "Daughter of Mehrab of Kabul, a descendant of Zahhak, who falls in love with Zal and offers him her hair as a rope. Her marriage to Zal overcomes the enmity of two houses, and her difficult labour produces Rustam."
+  },
+  {
+   "name": "Tahmineh",
+   "side": "Women",
+   "text": "Princess of Samangan who comes to Rustam's room at night and asks to bear his child. Mother of Sohrab, to whom she reveals his father's identity and gives the amulet by which he is later recognised."
+  },
+  {
+   "name": "Sudabeh",
+   "side": "Women",
+   "text": "Wife of Kai Kavus, daughter of the king of Hamavaran. Her passion for her stepson Siyavush and her false accusation lead to his ordeal by fire. After his death Rustam kills her."
+  },
+  {
+   "name": "Farangis",
+   "side": "Women",
+   "text": "Daughter of Afrasiyab and wife of Siyavush, mother of Kai Khusrau. She survives her father's wrath through Piran's protection and flees with her son to Iran."
+  },
+  {
+   "name": "Manizheh",
+   "side": "Women",
+   "text": "Manizha in Warner. Daughter of Afrasiyab who falls in love with Bizhan, brings him to her palace, and, when he is thrown into the pit, lives as a beggar to feed him until Rustam comes."
+  },
+  {
+   "name": "Shirin",
+   "side": "Women",
+   "text": "The beloved and then wife of Khusrau Parviz, a woman of great beauty and determination. Demanded in marriage by Khusrau's murderer Shiruy, she kills herself by poison at her husband's tomb."
+  },
+  {
+   "name": "Zahhak",
+   "side": "Others",
+   "text": "The Arab prince who, tempted by Iblis, kills his father and grows two serpents from his shoulders that must be fed on human brains. He usurps Jamshid's throne and rules as a tyrant for a thousand years until Faridun chains him in Mount Damavand."
+  },
+  {
+   "name": "Kaveh",
+   "side": "Others",
+   "text": "The blacksmith who loses his sons to Zahhak's serpents and raises his leather apron as a banner of revolt. The apron becomes the royal standard of Iran."
+  },
+  {
+   "name": "The Simurgh",
+   "side": "Others",
+   "text": "A vast and wise bird of Mount Alborz who raises the infant Zal, guides the birth of Rustam, heals him and Rakhsh after the fight with Isfandiyar, and shows him the tamarisk that will kill the prince."
+  },
+  {
+   "name": "Sikandar (Alexander)",
+   "side": "Others",
+   "text": "Alexander the Great, made in the poem the son of the Iranian king Darab by a princess of Rum. He defeats his half-brother Dara, travels to the ends of the earth in search of wisdom and immortality, and dies in Babylon."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Kingship and the farr",
+   "text": [
+    "The legitimacy of a king in the Shahnameh depends on the farr (Middle Persian xwarrah), the divine glory, which the Warners translate as 'Grace'. It is visible in the face of a true prince, it passes in the royal line, and it can be lost through pride or injustice, as it is by Jamshid. Kingship is thus a sacred office: the king is God's representative, the guardian of order and the source of prosperity [[yarshater1983]].",
+    "Yet the poem is full of bad and foolish kings, and its heroes are often wiser than their masters. The heroic age is structured by the tension between rulers such as Kavus and Gushtasp and champions such as Rustam, who serve the crown but refuse to be degraded by it. Whether the poem finally upholds royal authority or criticises it has become one of the main questions of modern criticism [[davis1992]]."
+   ]
+  },
+  {
+   "title": "Fate and the turning sky",
+   "text": [
+    "Again and again Ferdowsi interrupts the narrative to reflect that the turning heaven raises men and casts them down, that no one escapes death, and that the world is a passing inn. Fate is foretold by astrologers and dreams, and the characters often know their destinies in advance: Siyavush foresees his murder, the Simurgh tells Rustam the price of killing Isfandiyar.",
+    "But foreknowledge does not remove responsibility. The tragedies of the poem are shaped by human choices, and the poet's laments combine resignation with moral judgement. The tension between a world governed by an inscrutable destiny and a world in which people are justly praised and blamed is never resolved."
+   ]
+  },
+  {
+   "title": "Fathers and sons",
+   "text": [
+    "The great tragedies of the heroic age turn on the relation of father and son. Rustam kills his son Sohrab in ignorance; Kavus drives his son Siyavush into exile and so to his death; Gushtasp sends his son Isfandiyar to die, knowing the prophecy. The historical age reverses the pattern when Shiruy has his father Khusrau Parviz murdered.",
+    "These stories turn the political question of succession into a family drama. Fathers who hold power fear the sons who will inherit it, and the young, often more virtuous than their elders, pay the price. Critics have seen here the poem's deepest insight into the nature of authority [[davis1992]] [[clinton1987]]."
+   ]
+  },
+  {
+   "title": "Iran and Turan",
+   "text": [
+    "The central conflict of the heroic age is between Iran and Turan, the realms of the brothers Iraj and Tur. The two peoples share a common ancestry, intermarry, and produce heroes of mixed descent, from Siyavush's sons to Sohrab. The enemy is thus a kinsman, and the war has the character of an endless family feud.",
+    "In the poem, Turan becomes associated with the Turkic peoples of Central Asia, and the opposition between Iran and Turan acquired new meanings in later centuries, under Turkic dynasties that themselves patronised the poem. The categories are moral and dynastic more than ethnic: Turan has its noble figures, such as Piran, and Iran its villains."
+   ]
+  },
+  {
+   "title": "Memory, poetry and fame",
+   "text": [
+    "The poem is concerned throughout with its own role in preserving the past. Ferdowsi presents himself as rescuing old stories that would otherwise be lost, describes his sources and predecessors, and claims at the end that his verses will outlast any palace. The heroes too live for fame, and the poem is the place where their names survive.",
+    "This self-awareness makes the Shahnameh a reflection on how a culture remembers itself. Written in Persian under Muslim and Turkish rulers about a pre-Islamic past, it became the principal means by which later Iranians and the wider Persianate world knew that past."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "The ordeal or test",
+   "text": "Heroes and kings prove themselves through trials: the Seven Courses of Rustam and the Seven Stages of Isfandiyar, Siyavush's ride through fire, Bahram Gur's seizing of the crown from between two lions, Buzurjmihr's solving of the chess problem. The tests distinguish real worth from mere birth or claim."
+  },
+  {
+   "title": "Dreams and prophecies",
+   "text": "Kings dream of their fate (Zahhak of Faridun's mace, Afrasiyab of disaster before Siyavush's coming), astrologers read horoscopes, and the Simurgh and the angel Sorush foretell the future. Prophecy rarely prevents what it foresees and often helps to cause it, as with Gushtasp's sending of Isfandiyar."
+  },
+  {
+   "title": "Recognition",
+   "text": "Identity is hidden and revealed by signs: the amulet on Sohrab's arm, the royal glory in Kai Khusrau's face, the jewels left with the abandoned infant Darab. Failed or late recognition is at the heart of the poem's tragedies."
+  },
+  {
+   "title": "Laments on the transience of the world",
+   "text": "At the close of episodes the poet reflects on death, on the instability of fortune and on the folly of trusting the world. These passages give the narrative its meditative and elegiac tone and connect the epic with Persian wisdom poetry."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "Kaveh's banner",
+   "text": "The smith's leather apron raised on a spear becomes, decorated with jewels, the royal standard of Iran. It signifies that the legitimacy of the kings rests at least in part on the will of the people, and its loss at Qadisiyya in the historical tradition marked the fall of the empire."
+  },
+  {
+   "title": "The Simurgh and her feathers",
+   "text": "The great bird represents a wisdom and protective power beyond the human, and her feathers, kept by Zal, link the house of Sam to her across generations. Her help to Rustam against Isfandiyar is decisive but morally ambiguous."
+  },
+  {
+   "title": "Rakhsh",
+   "text": "Rustam's horse is his companion from youth to death, almost a second self. Their shared trials and their death together in Shaghad's pit make the horse a symbol of loyalty and of the hero's whole career."
+  },
+  {
+   "title": "The plant of Siyavush's blood",
+   "text": "The plant that springs from the blood of the murdered prince makes nature itself remember an unjust death. It is a symbol of martyrdom and of the vengeance that will follow."
+  },
+  {
+   "title": "Kai Khusrau's cup",
+   "text": "The world-revealing cup in which the king sees the seven climes and discovers Bizhan's prison stands for the almost sacred insight of the ideal king."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Oral or written sources",
+   "text": [
+    "Ferdowsi often refers to a 'dehqan' or to an old book as his source. Olga M. Davidson, applying the oral-formulaic theory of Milman Parry and Albert Lord, argued that the poem arises from a living tradition of oral performance, and that the poet's claims to written sources are part of a rhetoric of authority. On this view the Shahnameh is comparable to the Homeric poems as the product of a performance tradition [[davidson1994]].",
+    "Djalal Khaleghi-Motlagh, François de Blois and Mahmoud Omidsalar replied that the evidence points overwhelmingly to written sources: the surviving preface of Abu Mansur's prose Shahnameh, the close correspondence between the poem and Arabic histories that used the same Middle Persian materials, and Daqiqi's faithful versification of a known Middle Persian text. Most specialists now accept a primarily written basis, while allowing that oral narrative may have contributed to some cycles, notably that of Rustam [[deblois2004]] [[omidsalar2011]] [[khaleghi1988]]."
+   ],
+   "cite": [
+    "davidson1994",
+    "deblois2004",
+    "omidsalar2011",
+    "khaleghi1988"
+   ]
+  },
+  {
+   "title": "The critical text",
+   "text": [
+    "The poem survives in hundreds of manuscripts, none older than the thirteenth century, and copyists added and altered many lines. Nineteenth-century editions, notably that of Jules Mohl, were based on later manuscripts; a Moscow edition (1960–71) used older ones.",
+    "Djalal Khaleghi-Motlagh's edition (1988–2008), based on a wide collation headed by the Florence manuscript of 1217, is now the standard text. It removed a large number of interpolations and established the text that most modern scholarship and Davis's translation follow. The Warner translation, made from older printed texts, includes some passages now considered spurious [[khaleghi1988]] [[davis2006]]."
+   ],
+   "cite": [
+    "khaleghi1988",
+    "davis2006"
+   ]
+  },
+  {
+   "title": "Kingship and its critique",
+   "text": [
+    "Earlier readers often treated the Shahnameh as a celebration of royal power and of the Iranian monarchy. Dick Davis, in Epic and Sedition (1992), argued that the poem is profoundly ambivalent: the greatest heroes are repeatedly betrayed by their kings, and episodes such as those of Siyavush and Isfandiyar show the legitimate monarch as the source of injustice. The poem, he suggested, contains a 'seditious' undercurrent [[davis1992]].",
+    "Others have stressed that the poem was read for centuries as a mirror for princes and that its critique of individual kings strengthens rather than undermines the ideal of just kingship. The debate turns on whether the institution or the individual is finally the object of the poem's judgement [[melville2012]] [[omidsalar2011]]."
+   ],
+   "cite": [
+    "davis1992",
+    "melville2012",
+    "omidsalar2011"
+   ]
+  },
+  {
+   "title": "The tragic heroes",
+   "text": [
+    "The stories of Sohrab, Siyavush and Isfandiyar have been compared with Greek tragedy, and critics have debated how far Ferdowsi has a tragic vision in the Western sense. The deaths arise from conflicting obligations and from human error rather than simple wickedness, and the poet's comments emphasise both fate and choice.",
+    "Jerome Clinton's study of the Sohrab episode and Davis's readings argue for a complex moral structure; others warn against importing Aristotelian categories into a poem that has its own traditions of lament and wisdom [[clinton1987]] [[davis1992]]."
+   ],
+   "cite": [
+    "clinton1987",
+    "davis1992"
+   ]
+  },
+  {
+   "title": "National identity and the Persian language",
+   "text": [
+    "Since the nineteenth century, and especially under the Pahlavi monarchy, the Shahnameh has been treated as the national epic of Iran and as the poem that saved the Persian language. The millennium of Ferdowsi in 1934 and the building of his mausoleum at Tus made him a national symbol.",
+    "Scholars now question how far modern ideas of nation and language purism can be read back into the tenth century. Ferdowsi's sparing use of Arabic reflects his sources as much as a programme, and his Iran is defined by dynasty and culture more than by ethnicity. The poem's concept of Iran is nonetheless real and remarkable, and it shaped later Iranian self-understanding deeply [[yarshater1983]] [[melville2012]]."
+   ],
+   "cite": [
+    "yarshater1983",
+    "melville2012"
+   ]
+  },
+  {
+   "title": "Mahmud and the satire",
+   "text": [
+    "According to Nizami 'Aruzi's Chahar Maqala (c. 1156), Mahmud rewarded the poem with only twenty thousand dirhams; the offended poet divided the money between a bath attendant and a seller of beer, wrote a satire of a hundred couplets and fled. A patron bought up and destroyed all but six lines. Mahmud later relented, but his gift arrived as the poet's body was being carried out of Tus. Later prefaces add that gold had been promised and silver paid, and many manuscripts include a satire of varying length attacking Mahmud's low birth [[browne1921]].",
+    "Most scholars regard the satire, in the form preserved, as largely spurious, compiled from lines elsewhere in the poem and from later additions, though a few lines may be authentic. Shahbazi argued from the poem's own statements that relations with the Ghaznavid court were indeed disappointing, while the story of the payment is a legend that dramatises the conflict between poet and patron [[shahbazi1991]] [[khaleghi1988]]."
+   ],
+   "cite": [
+    "browne1921",
+    "shahbazi1991",
+    "khaleghi1988"
+   ]
+  },
+  {
+   "title": "Reception in the Persianate world and beyond",
+   "text": [
+    "The Shahnameh was copied, illustrated and imitated across the Persianate world. The Ottoman court commissioned Turkish translations in verse and prose, and the office of court şehnameci produced histories of the sultans modelled on it. Mughal and Timurid copies, and the great Safavid manuscript of Shah Tahmasp later given to Selim II, show its role as a royal book [[canby2014]] [[melville2012]].",
+    "In Europe, Jules Mohl's French edition and translation (1838–78) and Atkinson's English abridgement brought the poem to Western readers. Matthew Arnold's 'Sohrab and Rustum' (1853), based on a French summary, made the father-son tragedy one of the best-known episodes of Persian literature in English [[arnold1853]] [[atkinson1832]]."
+   ],
+   "cite": [
+    "canby2014",
+    "melville2012",
+    "arnold1853",
+    "atkinson1832"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Warner, 'The Prelude'",
+   "quote": "There was an Epic Cycle spread broadcast\nAmong the learned archmages, and at last\nA certain paladin, of rustic birth,",
+   "who": "Ferdowsi",
+   "explanation": "The poet's account of his source: stories kept by the Zoroastrian priests and collected by a nobleman of the dehqan class. The passage describes the compilation of Abu Mansur's prose Shahnameh, and it has been central to the debate over written and oral sources."
+  },
+  {
+   "ref": "Warner, 'Jamshid'",
+   "quote": "\"Mine is the Grace,\" he said, \" I am both king\nAnd archimage, I will restrain ill-doers\nAnd make for souls a path toward the light.\"",
+   "who": "Jamshid",
+   "explanation": "At the start of his reign Jamshid claims both kingship and priesthood. The union of royal and religious authority is the ideal of the poem; Jamshid's later claim to be the creator himself destroys it."
+  },
+  {
+   "ref": "Warner, 'Kai Kaus III: Suhrab'",
+   "quote": "My might and my successes are from God,\nNot from the Shah or host. Earth is my slave\nAnd Rakhsh my throne, a mace my signet-ring,",
+   "who": "Rustam",
+   "explanation": "Insulted by Kai Kavus, Rustam declares that he owes nothing to the king. The speech shows the independence of the Sistan hero and the fragile relation between the champion and the throne he defends."
+  },
+  {
+   "ref": "Warner, 'Kai Kaus III: Suhrab'",
+   "quote": "My mother told me\nHow I should recognise my father. I\nSought him in love and die of my desire.",
+   "who": "Sohrab",
+   "explanation": "The dying words of Sohrab to the man who has killed him. The quest for the father ends in his death at the father's hand, and the knowledge that might have prevented it comes too late."
+  },
+  {
+   "ref": "Warner, 'Kai Kaus IV: The Story of Siyawush'",
+   "quote": "From that blood presently there sprang a plant,\nWhich I will teach thee how to recognise,\nFor it is called \" The Blood of Siyawush.\"",
+   "who": "The narrator",
+   "explanation": "Siyavush's blood gives rise to a plant that bears his name. The detail commemorates an innocent death and suggests the old cult of mourning that surrounded the prince."
+  },
+  {
+   "ref": "Warner, 'Kai Khusrau VII: The Great War of Kai Khusrau with Afrasiyab'",
+   "quote": "On kingship and long rule I go the way\nOf Kai Kaus and of Jamshid, and lose\nMy footing as they did.",
+   "who": "Kai Khusrau",
+   "explanation": "The ideal king fears that power will corrupt him as it corrupted his ancestors, and so chooses to leave the world. The passage is the poem's most direct reflection on the moral danger of kingship."
+  },
+  {
+   "ref": "Warner, 'Gushtasp III: The Story of Asfandiyar's Fight with Rustam'",
+   "quote": "The throne is thine, the stress and toil are mine ;\nThine is the crown and mine are bier and shroud.",
+   "who": "Isfandiyar",
+   "explanation": "Dying, Isfandiyar sends this message to the father who sent him against Rustam. It sums up the poem's critique of kings who use their heroes for their own security."
+  },
+  {
+   "ref": "Warner, 'The Ashkanians'",
+   "quote": "Naught have I heard of them except the name,\nAnd in the Book of Kings seen but the same.",
+   "who": "Ferdowsi",
+   "explanation": "Ferdowsi admits that his sources say almost nothing of the Parthian kings. The statement is valuable evidence for the poet's dependence on a 'Book of Kings' and for his honesty about its gaps."
+  },
+  {
+   "ref": "Warner, 'Yazdagird'",
+   "quote": "The royal and prophetic offices\nAre two gems set within one finger-ring.",
+   "who": "Radwi, a priest",
+   "explanation": "Protesting against the order to kill Yazdagird, the priest states the principle that kingship and religion are inseparable. The image of two gems in one ring is a classic formulation of Sasanian political thought."
+  },
+  {
+   "ref": "Warner, 'The Completion of the Shahnama'",
+   "quote": "This tale of sixty thousand couplets I\nHave left to him by way of memory.",
+   "who": "Ferdowsi",
+   "explanation": "The poet's own reckoning of the poem's length. The figure is rounded; modern editions have about 50,000 couplets. The closing verses present the work as a memorial dedicated to the king but belonging to the poet."
+  }
+ ],
+ "questions": [
+  {
+   "q": "What does the story of Jamshid teach about the conditions of royal power, and where are its lessons repeated later in the poem?",
+   "hint": "Consider the farr, Jamshid's claim to be the maker of the world, Kai Kavus's flight to heaven and Kai Khusrau's renunciation."
+  },
+  {
+   "q": "Why might the poem make the royal standard of Iran out of a blacksmith's apron?",
+   "hint": "Think about Kaveh's role in Zahhak's fall, the relation between people and king, and the later use of the episode."
+  },
+  {
+   "q": "How does the division of the world among Faridun's sons shape the rest of the heroic age?",
+   "hint": "Look at the murder of Iraj, the kinship of Iran and Turan, and the heroes of mixed descent."
+  },
+  {
+   "q": "Who is responsible for the death of Sohrab?",
+   "hint": "Consider Rustam's silence, Hujir's lie, Afrasiyab's plotting, the wrestling trick and Kavus's refusal of the elixir, as well as the poet's comments on fate."
+  },
+  {
+   "q": "In what ways are Siyavush's virtues the cause of his downfall?",
+   "hint": "Think about his rejection of Sudabeh, the fire ordeal, his oath to Afrasiyab and his refusal to resist."
+  },
+  {
+   "q": "Compare Rustam's fight with Sohrab and his fight with Isfandiyar. Why is the second often considered the greater tragedy?",
+   "hint": "Consider knowledge and ignorance, the role of the king who sends Isfandiyar, and the price of the tamarisk arrow."
+  },
+  {
+   "q": "Why does Kai Khusrau give up the throne at the height of his success?",
+   "hint": "Look at his fear of becoming like Jamshid and Kavus, his dream of Sorush and the fate of the paladins who follow him."
+  },
+  {
+   "q": "How does the character of the poem change in the historical age of the Sasanians?",
+   "hint": "Consider the shorter reigns, the role of advice literature, the tales of Bahram Gur and Anushirvan, and the poet's comments on his sources."
+  },
+  {
+   "q": "How does Ferdowsi present the end of the Sasanian empire, and how does he balance lament with his own faith?",
+   "hint": "Read Rustam's letter before Qadisiyya, the murder of Yazdagird by the miller and the priest's protest about the two gems in one ring."
+  },
+  {
+   "q": "What does the poem say about its own sources and about the poet's role?",
+   "hint": "Look at the Prelude, the dream of Daqiqi, the frame of the Bizhan story, the comment on the Parthians and the closing verses."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "arnold1853",
+   "text": "Arnold, Matthew. Poems: A New Edition. London: Longman, Brown, Green, and Longmans, 1853. (Contains 'Sohrab and Rustum'.)"
+  },
+  {
+   "id": "atkinson1832",
+   "text": "Atkinson, James, trans. The Sháh Námeh of the Persian Poet Firdausí, Translated and Abridged in Prose and Verse. London: Oriental Translation Fund, 1832."
+  },
+  {
+   "id": "browne1902",
+   "text": "Browne, Edward G. A Literary History of Persia. 4 vols. London: T. Fisher Unwin; Cambridge: Cambridge University Press, 1902–1924."
+  },
+  {
+   "id": "browne1921",
+   "text": "Browne, Edward G., trans. Revised Translation of the Chahár Maqála ('Four Discourses') of Nizámí-i-'Arúdí of Samarqand. E. J. W. Gibb Memorial Series 11.2. London: Luzac, 1921."
+  },
+  {
+   "id": "canby2014",
+   "text": "Canby, Sheila R. The Shahnama of Shah Tahmasp: The Persian Book of Kings. New York: Metropolitan Museum of Art, 2014."
+  },
+  {
+   "id": "clinton1987",
+   "text": "Clinton, Jerome W., trans. The Tragedy of Sohráb and Rostám, from the Persian National Epic, the Shahname of Abol-Qasem Ferdowsi. Seattle: University of Washington Press, 1987; rev. ed. 1996."
+  },
+  {
+   "id": "davidson1994",
+   "text": "Davidson, Olga M. Poet and Hero in the Persian Book of Kings. Ithaca: Cornell University Press, 1994; 2nd ed. Costa Mesa: Mazda Publishers, 2006."
+  },
+  {
+   "id": "davis2006",
+   "text": "Davis, Dick, trans. Shahnameh: The Persian Book of Kings, by Abolqasem Ferdowsi. New York: Viking, 2006."
+  },
+  {
+   "id": "davis1992",
+   "text": "Davis, Dick. Epic and Sedition: The Case of Ferdowsi's Shahnameh. Fayetteville: University of Arkansas Press, 1992."
+  },
+  {
+   "id": "deblois2004",
+   "text": "de Blois, François. Persian Literature: A Bio-Bibliographical Survey, vol. 5: Poetry of the Pre-Mongol Period. 2nd rev. ed. London: RoutledgeCurzon, 2004."
+  },
+  {
+   "id": "dickson1981",
+   "text": "Dickson, Martin Bernard, and Stuart Cary Welch. The Houghton Shahnameh. 2 vols. Cambridge, MA: Harvard University Press for the Fogg Art Museum, 1981."
+  },
+  {
+   "id": "hillenbrand2004",
+   "text": "Hillenbrand, Robert, ed. Shahnama: The Visual Language of the Persian Book of Kings. Aldershot: Ashgate, 2004."
+  },
+  {
+   "id": "khaleghi1988",
+   "text": "Khaleghi-Motlagh, Djalal, ed. The Shahnameh (The Book of Kings), by Abu'l-Qasem Ferdowsi. 8 vols. New York: Bibliotheca Persica, 1988–2008. Vol. 6 with Mahmoud Omidsalar; vol. 7 with Abolfazl Khatibi."
+  },
+  {
+   "id": "melville2012",
+   "text": "Melville, Charles, and Gabrielle van den Berg, eds. Shahnama Studies II: The Reception of Firdausi's Shahnama. Leiden: Brill, 2012."
+  },
+  {
+   "id": "melville2006",
+   "text": "Melville, Charles, ed. Shahnama Studies I. Pembroke Papers 5. Cambridge: Centre of Middle Eastern and Islamic Studies, University of Cambridge, 2006."
+  },
+  {
+   "id": "noldeke1896",
+   "text": "Nöldeke, Theodor. Das iranische Nationalepos. Strassburg: Trübner, 1896 (in Grundriss der iranischen Philologie, vol. 2); 2nd ed. Berlin and Leipzig: de Gruyter, 1920. Trans. L. Bogdanov as The Iranian National Epic, or the Shahnamah. Bombay: K. R. Cama Oriental Institute, 1930."
+  },
+  {
+   "id": "omidsalar2011",
+   "text": "Omidsalar, Mahmoud. Poetics and Politics of Iran's National Epic, the Shāhnāmeh. New York: Palgrave Macmillan, 2011."
+  },
+  {
+   "id": "shahbazi1991",
+   "text": "Shahbazi, A. Shapur. Ferdowsi: A Critical Biography. Costa Mesa: Mazda Publishers; Cambridge, MA: Harvard University Center for Middle Eastern Studies, 1991."
+  },
+  {
+   "id": "warner1905",
+   "text": "Warner, Arthur George, and Edmond Warner, trans. The Shahnama of Firdausi. 9 vols. London: Kegan Paul, Trench, Trübner, 1905–1925."
+  },
+  {
+   "id": "yarshater1983",
+   "text": "Yarshater, Ehsan, ed. The Cambridge History of Iran, vol. 3: The Seleucid, Parthian and Sasanian Periods. 2 parts. Cambridge: Cambridge University Press, 1983. (Includes Yarshater, 'Iranian National History'.)"
+  }
+ ]
+}

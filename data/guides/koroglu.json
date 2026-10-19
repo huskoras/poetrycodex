@@ -1,0 +1,880 @@
+{
+ "work": "koroglu",
+ "title": "Köroğlu (The Adventures of Kurroglou)",
+ "author": "Anonymous (Turkic oral tradition)",
+ "quoteEdition": "adventures-of-kurroglou-chodzko",
+ "updated": "2026-10-19",
+ "unit": "Meeting",
+ "glance": [
+  {
+   "label": "Composed",
+   "value": "An oral cycle that grew from the late sixteenth century onwards around a historical Anatolian rebel-poet; Chodzko's version was taken down in northern Persia in the 1830s and printed in 1842"
+  },
+  {
+   "label": "Genre",
+   "value": "Hikâye or destan: a minstrel's tale in which prose narration alternates with sung verse"
+  },
+  {
+   "label": "Form",
+   "value": "Prose story with the hero's songs (in Turkic, syllabic lines in stanzas sung to the saz); Chodzko renders both prose and songs in English prose"
+  },
+  {
+   "label": "Language",
+   "value": "Azerbaijani Turkish in Chodzko's source, with Persian narration; the cycle also exists in Anatolian Turkish, Turkmen, Uzbek, Kazakh, Tajik, Georgian and Armenian versions"
+  },
+  {
+   "label": "Performers",
+   "value": "The âşık (Chodzko's 'aushik'), a minstrel who sings to the long-necked lute called the saz; in Central Asia the bakhshi or bagshy"
+  },
+  {
+   "label": "Setting",
+   "value": "The mountain stronghold of Çamlıbel (Chodzko's Chamly-bill) on the borders of the Ottoman and Persian worlds, with raids to Erzurum, Kars, Tokat, Urfa and Istanbul"
+  },
+  {
+   "label": "Hero",
+   "value": "Köroğlu, 'son of the blind man', bandit chief, rider of the horse Kırat, and poet"
+  },
+  {
+   "label": "Structure in this edition",
+   "value": "Thirteen 'Meetings' (Persian majlis), each one evening's session of the reciter"
+  },
+  {
+   "label": "Translation",
+   "value": "Alexander Chodzko, in Specimens of the Popular Poetry of Persia (London: Oriental Translation Fund, 1842)"
+  },
+  {
+   "label": "Famous saying",
+   "value": "'Tüfek icat oldu, mertlik bozuldu' ('the musket was invented, and valour was spoiled'), the Anatolian Köroğlu's verdict on the age of firearms; it does not occur in Chodzko's version"
+  }
+ ],
+ "context": [
+  "Köroğlu (pronounced roughly 'Kur-oh-loo', and spelled 'Kurroglou' by Chodzko) means 'son of the blind man'. He is the most widely travelled hero of Turkic oral literature: his story is told, in very different shapes, from the Balkans and Anatolia through Azerbaijan and northern Iran to Turkmenistan, Uzbekistan, Kazakhstan and Tajikistan, and it was borrowed by Georgian and Armenian storytellers as well. In the Anatolian Turkish tradition he is a highwayman of the mountains of Bolu; in Central Asia (as Görogly or Gurughli) he becomes a semi-mythical ruler and father of heroes. Everywhere he is both a fighter and a singer, and the songs credited to him are among the best-known folk poems in Turkish.",
+  "Behind the legend stands a historical figure. Ottoman state registers (mühimme defterleri) of the later sixteenth century, as Boratav and later scholars have reported, mention a rebel called Köroğlu in the region of Bolu, in the years when disorder in Anatolia was growing into the Celali revolts, a long series of uprisings by unemployed soldiers, students of religion and disaffected peasants [[boratav1931]] [[barkey1994]]. A poet named Köroğlu, whose verses survive in minstrel manuscripts, belongs to the same period, and some scholars think the bandit and the poet may have been one man, though the identification is not certain. Pertev Naili Boratav's Köroğlu Destanı (1931) first set the documents beside the legend and remains the foundation of Turkish scholarship on the cycle [[boratav1931]].",
+  "The cycle belongs to the tradition of the âşık, the 'lover' or minstrel, heir of the older Turkic ozan. The âşık accompanies himself on the saz, a long-necked lute, and performs in coffeehouses, at weddings and at village gatherings, often over several nights [[koprulu1966]] [[boratav1946]] [[basgoz2008]]. His usual form is the hikâye or 'tale', which Turkish scholars also call destan when the subject is heroic: the story is told in prose, and at every moment of strong feeling (a challenge, a lament, a declaration of love) the narrator takes up the saz and sings the hero's own words in verse. Köroğlu's songs, in the bold koçaklama ('heroic song') style, are thus not ornaments but the hinges of the plot [[boratav1946]] [[moyle1990]].",
+  "Alexander Chodzko (Aleksander Borejko Chodźko, 1804–1891), a Polish poet in the Russian diplomatic service in Persia, heard the story in the 1830s from professional reciters in the Caspian provinces of northern Persia, who told it in Persian prose and sang the songs in Azerbaijani Turkish. He published an English version in 1842 in a volume printed by the Oriental Translation Fund [[chodzko1842]]. It was the first large Turkic heroic cycle to reach a Western readership, earlier than Radloff's Kyrgyz Manas or the Central Asian epics collected by Russian scholars later in the century; George Sand adapted it in French within a year [[chadwick1969]] [[reichl1992]].",
+  "This guide uses Chodzko's text, which the site divides as he did into thirteen 'Meetings' (majlis, the evening sessions of the reciter). Readers should remember that his version is Persianised: the hero is a Turkmen who becomes a Shi'ite at Mashhad, the blinding is done by a prince of Turkestan rather than by the Bey of Bolu, and the ending is a murder rather than the Anatolian hero's withdrawal from a world of guns [[wilks2001]]. In the guide's own prose the modern Turkish forms are used: Köroğlu (Kurroglou), Kırat (Kyrat), Çamlıbel (Chamly-bill), Ayvaz, Nigâr Hanım (Nighara); quotations keep Chodzko's spellings. The site also holds twenty-five of the songs as separate poems."
+ ],
+ "plot": [
+  "Roushan, son of Mirza-Serraf, master of the stud to Sultan Murad of Turkestan, sees his father blinded with a hot iron for presenting two ugly colts sired by a stallion that came out of the Oxus. The blind father, an astrologer, trains one colt in secret and makes it a wonder-horse, Kırat; he teaches his son to ride and fight, and Roushan defies the prince in a string of improvised songs, taking the name Köroğlu, 'son of the blind man'. After his father's death at Mashhad Köroğlu defeats and enlists the brigand Daly Hassan, gathers seven hundred and seventy-seven horsemen and settles at Çamlıbel on the frontier between Persia and Turkey (Meetings I–II).",
+  "The middle Meetings are a series of adventures. Köroğlu carries off the beautiful butcher's son Ayvaz from Urfa and adopts him; he takes the blacksmith's son Demurchy-Oglou into his band; he slips into Istanbul disguised as a minstrel and elopes with Nigâr, daughter of the Ottoman sultan, defeating her brother on the road. A scullion steals Kırat and Köroğlu wins him back in disguise. A stranger beats him in single combat and he kills him in shame; he woos Parizadda of Kars and is rescued by Ayvaz; he frees Ayvaz and his companions from the pasha of Tokat (Meetings III–IX).",
+  "Later Meetings turn darker. Ayvaz, chafing at his role as cupbearer, deserts and betrays Köroğlu to his enemy Bolly-beg, and is forgiven; Demurchy-Oglou rebels and is forgiven; Köroğlu, ageing, is captured, dragged to Istanbul and thrown into a pit at Üsküdar (Scutari), from which he is freed by the pasha's daughter and the young Issa-Bally riding Kırat (Meetings X–XII).",
+  "In the last Meeting the grey-bearded hero names Ayvaz his heir, has his sword nailed into its scabbard and sets out alone on Kırat for Isfahan and Mecca. Two disgraced courtiers of Shah Abbas II receive him as a guest, hamstring Kırat by night and behead the unresisting hero. A drop of his blood on the shah's robe reveals the crime; the band takes vengeance, and Köroğlu is buried in a tomb (Meeting XIII)."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Son of the Blind Man",
+   "lines": "Chodzko, Meeting I",
+   "section": 0,
+   "summary": [
+    "Roushan's father, Mirza-Serraf, is master of the stud to Sultan Murad, ruler of a province of Turkestan. A stallion rises out of the Oxus, covers two mares and vanishes. Their foals look shaggy and wretched, and when Mirza-Serraf presents them, the furious prince has his eyes burned out. The blind man asks for one of the colts, the grey, and has his son shut it for forty days in a dark cave-stable; Roushan peeps in on the thirty-ninth day, and the horse's hidden wings are broken, though it will still outrun any horse alive. The father then trains son and horse together.",
+    "Meeting the prince by the Oxus, Roushan sings a song on the points of a noble horse, then answers each threat and bribe with another improvisation, takes the name Kurroglou, cuts through the prince's escort and swims the river. Father and son flee to an oasis near Herat, where Roushan is sent to gather a healing foam that would cure the blindness; he drinks it himself, and so becomes invincible while his father must die blind. At Mashhad they turn Shi'ite; the dying father names the horse Kyrat and orders his son to go to Azerbaijan and never rebel against the Shah."
+   ],
+   "analysis": [
+    "The Meeting gives the hero's name its meaning. In every tradition Köroğlu is 'son of the blind man', and his career begins as revenge for an injustice done by a ruler to a servant. In the Anatolian versions the tyrant is Bolu Bey and the father Koca Yusuf, the bey's groom; Chodzko's reciters move the story to Turkestan and the banks of the Oxus, but the shape (a ruler who cannot see true worth, a blind man who can) is the same [[boratav1931]] [[wilks2001]]. The paradox is deliberate: the prince with eyes misjudges the colt, the blind father reads its nature by touch.",
+    "Kırat's origin from a water-stallion is a widespread motif of Turkic and Iranian horse lore, and the broken wings explain how a once-supernatural creature becomes an earthly, though matchless, horse. The scene also establishes the cycle's method. Roushan does not simply defy the prince; he asks leave to recite verses, and the prince (absurdly but characteristically) orders his men not to touch him till the poem is finished. Song is a kind of armour, and the hero's first deed is a poem.",
+    "The swallowed foam is a story of a son's fault that is also a gift: by taking the cure meant for his father, Köroğlu gains his invincibility. The conversion at Mashhad and the father's command not to fight the Shah mark this version as Persian and Shi'ite in sympathy, a point to which the last Meeting returns [[wilks2001]]."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting I",
+     "quote": "This horse had feathers and wings, which I perceive have all been broken in consequence of thy imprudence.",
+     "note": "The blind father reads by touch what the son's glance has done: Kırat was a winged horse, and is now only the best horse in the world."
+    },
+    {
+     "ref": "Chodzko, Meeting I",
+     "quote": "I am called God in my house. Yes; I am a God. I shall not bend my neck before a coward like thee. The pitcher has carried water long enough for thee; but that pitcher is broken at last.",
+     "note": "The proverb of the pitcher announces the end of patient service: the servant's son will no longer carry water for the master."
+    },
+    {
+     "ref": "Chodzko, Meeting I",
+     "quote": "From this day I yield my head to the chances of fortune, like an autumn leaf abandoned to the wilful breath of the wind.",
+     "note": "The song in which Roushan takes the name Kurroglou turns rebellion into a vocation and a fate."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Daly Hassan and the Road to Çamlıbel",
+   "lines": "Chodzko, Meeting II",
+   "section": 1,
+   "summary": [
+    "Riding alone towards Azerbaijan, Köroğlu meets the famous brigand Daly Hassan (in Turkish, Deli Hasan, 'Mad Hasan') and his forty horsemen. He challenges them in a series of songs with the refrain 'why do we not fight to-day?', kills twenty, and sits on Daly Hassan's chest; the brigand weeps, swears to serve whoever throws him, and hands over his hoard. Together they plunder caravans and gather followers.",
+    "Settling in the meadow of Gokcha-pull, Köroğlu draws every brave man to his banner and soon commands seven hundred and seventy-seven. When the governor of Azerbaijan protests, he remembers his father's command and moves to the Turkish frontier, singing his men a marching song. Near Khoy he plunders a merchant's caravan, routs the governor of Erivan's fifteen hundred horse after a set of songs in which he calls himself Azrail, the angel of death, and finally settles at Chamly-bill."
+   ],
+   "analysis": [
+    "The Meeting founds the band. Its pattern (a rival brigand defeated, spared and enrolled) will recur: Köroğlu's company grows by conquest and by pardon, and its members are bound to him by oath, by pay and by 'bread and salt'. The number seven hundred and seventy-seven is formulaic; elsewhere the band is 'forty', as in Anatolian versions.",
+    "The frontier is essential. Köroğlu chooses a place 'on the boundary of two empires', as the governor of Erivan complains, where neither shah nor sultan fully rules. Historians of the Celali age describe exactly such a world of mountain bands negotiating with, fighting and sometimes joining the state [[barkey1994]]. The hero's frank economics ('I am not a king, and therefore have no treasures') make plunder the wage of loyalty rather than a crime, a point to set beside Hobsbawm's 'social bandit' [[hobsbawm1969]].",
+    "The Azrail songs show the boasting register (Turkish koçaklama) at its most violent. Their repeated refrain imitates the strophic shape of the Turkish originals even in Chodzko's prose."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting II",
+     "quote": "He treated them all like a father, and paid them so liberally that each of them could fill the hollow of his shield with the pay he received from Kurroglou.",
+     "note": "Generosity is the bond of the band; the outlaw chief is a father and paymaster, a rival to the king."
+    },
+    {
+     "ref": "Chodzko, Meeting II",
+     "quote": "War is but a wedding banquet. All those whose hearts are void of care, let them follow me!",
+     "note": "The marching song: war imagined as a feast, a common figure in Turkic heroic poetry."
+    },
+    {
+     "ref": "Chodzko, Meeting II",
+     "quote": "Kurroglou was not afraid of the governor, but he remembered his dying father’s command not to revolt against the shah of Persia.",
+     "note": "The rebel has limits: in this Persian version he will rob the shah's subjects but not rise against the shah."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Ayvaz Carried Off from Urfa",
+   "lines": "Chodzko, Meeting III",
+   "section": 2,
+   "summary": [
+    "Çamlıbel grows into a town. Köroğlu adopts as his brother the travelled merchant Khoja Yakub, who has seen at Orfah (Urfa) a butcher's son, Ayvaz, of extraordinary beauty and has had his portrait painted. When Köroğlu boasts that nothing in the world equals his horse, his men and his feasts, Khoja Yakub replies that he has seen a youth worth more than all of them. Köroğlu throws him in chains until the claim is proved and rides alone to Urfa.",
+    "Disguised in a shepherd's clothes, he clears the crowd round the butcher's shop with a club, passes himself off as a sheep-dealer named Roushan, wins the trust of Ayvaz's father, Mir Ibrahim, and sings veiled songs over wine. At the flock he reveals himself, seizes Ayvaz and puts him on Kırat. The two exchange songs about weeping. Pursued by Reyhan the Arab with a hundred and sixty horsemen, Kırat leaps a ravine; Köroğlu defeats and spares Reyhan, frees Khoja Yakub and makes Ayvaz chief cupbearer."
+   ],
+   "analysis": [
+    "Ayvaz is the most constant figure of the Anatolian cycle as well, where he is 'Kasap oğlu Ayvaz', the butcher's son, carried off and adopted. The relationship is ambiguous: the language of the portrait and of the songs is the language of love poetry, and the boy is wanted as son, cupbearer and beloved at once. Later Meetings make clear that Ayvaz resents the role of server at feasts, so this first seizure already contains the conflict of Meetings X and XI.",
+    "Disguise is Köroğlu's second weapon. Here, as often, he conceals his identity and reveals it through song; Chodzko's aside that 'a true looty possesses six tricks, five of cunning, and one of strength' summarises the trickster side of the hero, closer to the tales of clever outlaws than to the solemn epic of kings [[boratav1946]]."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting III",
+     "quote": "A true looty possesses six tricks, five of cunning, and one of strength.",
+     "note": "The outlaw's creed: cunning outweighs force five to one. 'Looty' is the Persian luti, a swaggering street tough or rogue."
+    },
+    {
+     "ref": "Chodzko, Meeting III",
+     "quote": "Alas, my horse! let me not look upon thy shame. I will have thee wrapped in velvet trappings, both on thy left and thy right side. I will shoe thy fore and thy hind legs with pure gold.",
+     "note": "The address to Kırat at the ravine: the horse is spoken to as a comrade whose honour is the rider's."
+    },
+    {
+     "ref": "Chodzko, Meeting III",
+     "quote": "faithful to his habit of speaking truth in one’s face, and saying to a coward, that he was a coward; to the brave, that he was a man.",
+     "note": "The narrator's portrait of the hero's frankness, which explains why he praises the defeated Reyhan."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Demurchy-Oglou and the Portrait of Nigâr",
+   "lines": "Chodzko, Meeting IV",
+   "section": 3,
+   "summary": [
+    "Demurchy-Oglou (Turkish Demircioğlu, 'the blacksmith's son') of Nakhchivan comes to join the band. Köroğlu tests him by shooting arrows through a ring set in an apple on his bare head; he does not flinch and is enrolled. In Istanbul Nighara (Nigâr), daughter of Sultan Murad, has heard of Köroğlu; through Belly-Ahmed, caught watching her procession, she sends him a letter and her miniature, urging him to carry her off.",
+    "Köroğlu chains the messenger until the tale is proved and rides to Istanbul. He lodges with an old woman who admits that mothers frighten their children with his name, has a saz made by an instrument-maker, forces a cleric to forge letters in the sultan's name and enters the harem disguised as a pilgrim. Nigâr has her maids beat the 'impostor'; bruised and hiding in a fountain, he answers with a long sequence of love songs."
+   ],
+   "analysis": [
+    "Nigâr is the hero's principal wife in most versions, and the motif of love from a portrait or by report links the hikâye to the romance tradition of Turkish and Persian minstrels [[boratav1946]] [[basgoz2008]]. The scene in the harem stages the âşık's art directly: the hero is beaten as a pretender and wins the princess by singing.",
+    "Köroğlu's remark that his deeds would be unknown without his songs is the cycle's own theory of poetry. The bandit is famous because he is a poet, and the poet is credible because he is a bandit."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting IV",
+     "quote": "Kurroglou tells you, if he did not improvise his pretty songs, no man on earth would know of his deeds. Yes, whatever I have done, I did it for friendship’s sake. The passion of base gain has never arisen in my soul.",
+     "note": "Song as memory: the hero insists that his fame depends on his verse, and that he robs for friendship, not greed."
+    },
+    {
+     "ref": "Chodzko, Meeting IV",
+     "quote": "I only give it to the brave, the cowards get nothing from me.",
+     "note": "The rule of the band: bread for courage, nothing for cowards."
+    },
+    {
+     "ref": "Chodzko, Meeting IV",
+     "quote": "Above all the gardens of the world I prefer my valley of Chamly-bill, and I like the walks in the bowers there.",
+     "note": "Çamlıbel as an earthly paradise, the outlaw's counter-court."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "The Abduction of Nigâr",
+   "lines": "Chodzko, Meeting V",
+   "section": 4,
+   "summary": [
+    "Nigâr guesses who her minstrel is, apologises, dresses him in a royal robe and plans the elopement. Köroğlu snatches her from her carriage on the road and binds her to himself with his shawl. Her brother Burji Sultan overtakes them; Kırat wakes his sleeping master by neighing and pawing. After a duel of songs, Köroğlu routs the Turkish troops, spares the prince at Nigâr's plea and makes him pronounce the marriage formula.",
+    "On the way home he beats a European suitor and, at Nigâr's request, spares a caravan until its master insults her; the merchants buy their lives with a tribute. Ayvaz rides out with the band to greet them, Nigâr enters the harem at Çamlıbel and a forty-day wedding feast follows."
+   ],
+   "analysis": [
+    "Nigâr is not a passive prize: she plans the escape, saves a suitor by threatening suicide and restrains the raiding. Her presence softens the hero without taming him, and the frank line about ploughing and trading shows that love does not change the band's economy.",
+    "The song duel with Burji Sultan, in which question and answer alternate, is the form called atışma or deyişme in the âşık tradition, a contest of improvised verse [[moyle1990]] [[basgoz2008]]."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting V",
+     "quote": "I am Kurroglou; my horse is mad, I am a madman too. I am the ram, the leader of the human flock; I am Kurroglou!",
+     "note": "The signature self-definition: horse and rider share the heroic 'madness' (Turkish deli) of the warrior."
+    },
+    {
+     "ref": "Chodzko, Meeting V",
+     "quote": "I neither plough nor trade; I must consequently avail myself of an opportunity like the present to provide myself with money.",
+     "note": "The outlaw's economy, stated without apology."
+    },
+    {
+     "ref": "Chodzko, Meeting V",
+     "quote": "The wine continued flowing in torrents; and it flows to this very hour!",
+     "note": "A storyteller's formula that joins the feast of the tale to the moment of performance."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Hamza Steals Kırat",
+   "lines": "Chodzko, Meeting VI",
+   "section": 5,
+   "summary": [
+    "Hassan Pasha, chief of a nomad tribe in Anatolia and mad about horses, promises a daughter and half his wealth to whoever brings him Kırat. Only Hamza, a bald scullion, volunteers. At Çamlıbel he wins the pity of the equerry Daly-Mehter, gets him drunk and rides off on Ayvaz's horse Durrat. When Köroğlu pursues on Kırat, Hamza, disguised as a miller, asks him to hold the horse a moment, leaps on Kırat and gallops away.",
+    "Köroğlu laments in songs, then accepts Hamza's offer: come in six months, disguised as a minstrel, and the horse will be returned. At the nomads' camp he sings in praise of horses before Hassan Pasha, is allowed to mount Kırat, refuses to dismount, reveals himself in song, kills the pasha and makes Hamza ruler in his place."
+   ],
+   "analysis": [
+    "The theft of Kırat is one of the best-loved episodes in Anatolian versions too. It shows how far the hero's power is bound up with the horse: without Kırat he is 'drowning in a deep sea'. It also gives the trickster role to someone else. The lowly Hamza out-wits the master of trickery, and Köroğlu's respect for him (he makes him a ruler) honours cunning wherever it is found.",
+    "The minstrel's disguise is once more the hero's way back. The cycle repeatedly imagines the âşık as someone who can enter any court, and the sung praise of the horse turns a performance into an act of recovery."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting VI",
+     "quote": "Without Kyrat, life and the world is but a sin to me. Poor Kurroglou! Now, when Kyrat has left thy hands, thou must strike with sorrow thy head, Kurroglou!",
+     "note": "The lament for the horse, one of the songs the site prints separately."
+    },
+    {
+     "ref": "Chodzko, Meeting VI",
+     "quote": "The horse of a ram-warrior ought to be as mad as his master.",
+     "note": "Horse and hero share one nature."
+    },
+    {
+     "ref": "Chodzko, Meeting VI",
+     "quote": "Hassan Pasha, rely not too much on thy power. I have many a servant who is as good as thee.",
+     "note": "The outlaw's contempt for the pasha's rank."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "The Stranger Who Beat Köroğlu",
+   "lines": "Chodzko, Meeting VII",
+   "section": 6,
+   "summary": [
+    "A guest's army has eaten Çamlıbel bare, so Köroğlu rides out on Kırat after a caravan. One of its masters, apparently a Turk playing backgammon, mocks him, rebukes him for attacking without warning, parries all seventeen of his weapons and almost throws him from the saddle, then courteously invites him into his tent. Ashamed, Köroğlu sings his praises and takes five hundred tumans for the songs, calling the money drops of his own blood.",
+    "He robs a second merchant by approaching as a minstrel and revealing himself in song, quoting a saying of Ali that justice is half of religion. Still haunted by his defeat, he waits for the stranger in a pass beyond Erzurum, unhorses and beheads him, and discovers from the corpse that he was an Armenian. He sings two songs of remorse and takes the caravan home."
+   ],
+   "analysis": [
+    "This is the cycle's most morally troubling episode. The stranger embodies a chivalry superior to Köroğlu's own: he warns before he fights and spares the man he could kill. Köroğlu's revenge is the act of a man who cannot bear to be second, and his songs of regret are ironic and bitter. The discovery that the victim was an Armenian adds a sharp twist for an audience used to ethnic and religious stereotypes.",
+    "The maxim about justice sits uneasily beside the robbery it accompanies. Readers who take Köroğlu as a straightforward champion of the poor should test that view here [[hobsbawm1969]] [[wilks2001]]."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting VII",
+     "quote": "A brave man gives a timely warning to his enemy; it is a woman’s part to fight without warning, and to kill by stealth.",
+     "note": "The stranger's rebuke states a code of honour that Köroğlu himself later breaks."
+    },
+    {
+     "ref": "Chodzko, Meeting VII",
+     "quote": "These are not tumans, they are as many drops of my own blood. This man has vanquished, but he would not slay me, and has moreover redeemed my blood with this money.",
+     "note": "Shame and honour: payment from a victor is a humiliation."
+    },
+    {
+     "ref": "Chodzko, Meeting VII",
+     "quote": "His death has cured me of a thousand griefs. I have accepted it with delight like a nosegay of roses. I stripped the corpse and saw he was an Armenian.",
+     "note": "A song of grim irony in which triumph and remorse are mixed."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Parizadda of Kars",
+   "lines": "Chodzko, Meeting VIII",
+   "section": 7,
+   "summary": [
+    "Köroğlu falls in love by report with Parizadda, daughter of Ahmed Pasha of Kars, and goes there disguised as a fortune-teller. Beaten by her maids, he reveals himself in song and wins her. His careless groom buys supper in his name, the pasha's champion Reyhan-Arab surrounds him, and Köroğlu holds out on the roof of an old Armenian church while masons undermine it.",
+    "A song carried to Çamlıbel brings Ayvaz with the band. The older companions find excuses not to face Reyhan-Arab, so the eighteen-year-old Ayvaz fights him while Köroğlu, on the roof, coaches him in a string of songs; Ayvaz splits his opponent to the saddle. Köroğlu embraces him as his true son and takes Parizadda home, and Nigâr, forgiving, orders the wedding."
+   ],
+   "analysis": [
+    "The Meeting is Ayvaz's coming of age, and its songs of instruction ('Ayvaz, my soul, my eye!') are among the most tender in the cycle. They show the hero as father and teacher as well as fighter.",
+    "The opening creed, with its three sources of bread (the sabre, the club and the minstrel's talent), sums up the double identity on which the cycle rests: warrior and poet [[reichl1992]]."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting VIII",
+     "quote": "I find every where my bread; firstly, upon the edge of my sabre; secondly, upon the head of my club; thirdly, if the above two means should fail, I have at my command the talent of an aushik.",
+     "note": "The poet-bandit's livelihood: the third resource is the âşık's art."
+    },
+    {
+     "ref": "Chodzko, Meeting VIII",
+     "quote": "A hero ought to thirst for some higher object. He must die, but his name remains after him.",
+     "note": "The heroic ideal of lasting fame, shared with epic traditions from Homer to the Turkic destan."
+    },
+    {
+     "ref": "Chodzko, Meeting VIII",
+     "quote": "May God bless my bread and salt which I gave thee. I have seen now that I have a son indeed, and that the fire will never be extinguished on the hearth of my house.",
+     "note": "Adoption is sealed by bread and salt, the bond of hospitality."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Birds of Tokat",
+   "lines": "Chodzko, Meeting IX",
+   "section": 8,
+   "summary": [
+    "At a feast the guest Mustapha-beg says only one thing is missing: roast geese and cranes from the park of the pasha of Tokat. Ayvaz, hurt at having to serve, insists on fetching them, with Demurchy-Oglou, Kimchy-Oglou and Daly-Ahmed. They are caught by Bolly-beg's horsemen and condemned to public execution. Ayvaz sends a song-letter through Khoja Yakub.",
+    "Köroğlu, who has been drunk for four days, sobers, laments and rallies his men and Mustapha-beg's horsemen. Disguised as a minstrel in Tokat, he pleads in song for Ayvaz's life; the prisoners sing too. At his signal (stroking his moustache) the band storms the square; he shoots the pasha with his carbine, makes the vizier governor and returns home with the freed men."
+   ],
+   "analysis": [
+    "The execution scene is a little drama of performance: the disguised âşık sings for clemency in front of the very pasha he is about to kill, and the condemned men answer in the same 'guitar'. Chodzko notes that this is the hero's only shot from a firearm; the musket here is a tool of the hero, not yet the end of heroism, as it is in the Anatolian ending.",
+    "The vizier's catalogue of grudges against Köroğlu (sons carried off, fathers killed, cattle taken) is a reminder that the 'noble robber' looks different from the side of his victims [[hobsbawm1969]] [[barkey1994]]."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting IX",
+     "quote": "A lamb is brought up to serve for a kabab—a man is brought up to be a companion. O pasha! I conjure thee on thy own head, let go Ayvaz; allow him to depart.",
+     "note": "The minstrel's plea, sung to the pasha before the rescue."
+    },
+    {
+     "ref": "Chodzko, Meeting IX",
+     "quote": "There is not-one amongst thy subjects, but he has a grudge against Kurroglou. One had a son carried away, another had a father killed by him.",
+     "note": "The state's view of the bandit."
+    },
+    {
+     "ref": "Chodzko, Meeting IX",
+     "quote": "He also possessed this quality, that when he had once tasted any man’s bread and salt, he felt grateful, and would never betray him.",
+     "note": "The code of bread and salt, which governs alliances throughout the cycle."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "The Desertion of Ayvaz",
+   "lines": "Chodzko, Meeting X",
+   "section": 9,
+   "summary": [
+    "Nazar-Jalali, a tribal chief of the Turkish frontier, camps near Çamlıbel with twelve thousand horse to learn the art of war from Köroğlu, who feasts him. Ayvaz, resentful at pouring wine for yet another guest, breaks a plate on Daly-Mehter's head and rides off. Köroğlu follows, pleading in songs, but Ayvaz goes over to Bolly-beg, who is marching to avenge Tokat, and swears to betray his adoptive father.",
+    "Lured alone into an ambush, Köroğlu fights, then rides Kırat up a steep rock, where he holds Bolly-beg off with song after song. Daly-Mehter, warned by a dream of his master swimming in a sea of blood, arrives with the band and Nazar-Jalali's army and destroys the enemy. Köroğlu protects Ayvaz from Daly-Mehter's club, Bolly-beg is captured, and his daughter is given to Daly-Mehter."
+   ],
+   "analysis": [
+    "The quarrel lays bare the tension built into Ayvaz's role: he is son and heir, but also a servant at table. Köroğlu's pleas ('Do not forsake me, a lonely old man') show the hero for the first time as old and vulnerable, preparing the mood of the last Meetings.",
+    "Bolly-beg's name strikingly recalls Bolu Bey, the hero's arch-enemy in the Anatolian tradition; in Chodzko he is a secondary antagonist, which is one of many signs that the Persian reciters reshuffled an inherited cast [[boratav1931]] [[wilks2001]]."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting X",
+     "quote": "Ayvaz, my son, my eye! leave off that quarreling with me; do not take offence for the trifle that has happened. Let not thine anger mislead thee. Do not forsake me, a lonely old man, as I am.",
+     "note": "The father's plea; the hero's power is helpless before the son's resentment."
+    },
+    {
+     "ref": "Chodzko, Meeting X",
+     "quote": "The cowards do not go forward; they think that in the rear nobody dies. But God shields the brave man, protecting him from calamity.",
+     "note": "A heroic maxim sung from the rock."
+    },
+    {
+     "ref": "Chodzko, Meeting X",
+     "quote": "A true warrior ought to be endowed with boldness, to have an Egyptian sword, and an Arab steed. It is better to keep a noble post vacant, than to bestow it upon a villain.",
+     "note": "A song that also glances at Ayvaz's ambition."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Mustapha-beg and Buly Pasha",
+   "lines": "Chodzko, Meeting XI",
+   "section": 10,
+   "summary": [
+    "Ayvaz clubs Demurchy-Oglou at a banquet; insulted and unavenged, Demurchy-Oglou deserts to Mustapha-beg in Kurdistan, who swears to help him kill Köroğlu. They creep into the harem at night, but Köroğlu, lying awake, sings in praise of Mustapha-beg, who once freed him from prison, and Mustapha-beg, moved, gives up the plot. Both submit, are forgiven and are feasted for two months.",
+    "Köroğlu plunders merchants financed by Hassan Pasha, the sultan's vizier, who offers his daughter Dunah Pasha to whoever captures the bandit. Her suitor Buly Pasha comes with twelve thousand horse. Köroğlu goes to his camp disguised as a minstrel, is recognised and tricked into letting himself be bound, is dragged in chains and fed bones, talks his way free as 'Aushik Roushan', and then ambushes the camp and captures Buly Pasha."
+   ],
+   "analysis": [
+    "Forgiveness is the theme of this Meeting: the would-be murderer is won over by a song of praise. The hero's power to bind men to him by verse is as decisive as his sword.",
+    "The prison songs ('What has happened to me to-day, will happen to thee to-morrow') introduce the turn of fortune that dominates the last two Meetings."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting XI",
+     "quote": "O foe! Do not be elated at seeing me crouching in the dust. What has happened to me to-day, will happen to thee to-morrow.",
+     "note": "The chained hero warns his captor of fortune's wheel."
+    },
+    {
+     "ref": "Chodzko, Meeting XI",
+     "quote": "I come upon the field upright. I stroke my mustachios and curl them. I will grind the steel with my teeth, and then spit it to heaven. I praise only brave men.",
+     "note": "A formulaic boast that recurs across the cycle, here sung in chains."
+    },
+    {
+     "ref": "Chodzko, Meeting XI",
+     "quote": "That which envelopes the head of the lofty mountains is fog. That which flows from a base man’s eyes is gore. Dost thou wish to know my name? I am called Aushik Roushan.",
+     "note": "The hero hides behind his birth-name and his minstrel's mask."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "The Pit at Scutari",
+   "lines": "Chodzko, Meeting XII",
+   "section": 11,
+   "summary": [
+    "Moved by the captive Buly Pasha's longing for Dunah Pasha, Köroğlu offers to go with him unfettered to Istanbul so that he can claim her. On the way Buly clubs him from his horse and binds him. Sung before Hassan Pasha's court in chains, Köroğlu knocks out a courtier's teeth and is condemned, then thrown into a deep pit at Scutari (Üsküdar). Dunah Pasha visits the pit, pledges her loyalty and has him fed lavishly.",
+    "At Çamlıbel the young Issa-Bally, the son of an Egyptian pasha stolen as a child, dreams of his master in danger and rides Kırat to Istanbul disguised as a minstrel. Dunah Pasha falls in love with him; betrayed by her nurse, they are surrounded, but Köroğlu breaks out of the pit, refusing to be rescued by a woman, kills Buly Pasha, and brings Dunah Pasha to Çamlıbel to marry Issa-Bally."
+   ],
+   "analysis": [
+    "The trust that Köroğlu shows Buly Pasha is noble and foolish at once, and the Meeting is full of complaints against Fortune, 'that jade'. The ageing hero is now more often rescued than rescuer: the next generation (Issa-Bally on Kırat) takes over the minstrel's disguise.",
+    "His refusal to be helped out of the well by a woman is comic and telling. Heroic pride survives every humiliation except the loss of the horse."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting XII",
+     "quote": "Behold! what days has brought on me, that jade which is commonly called Fortune. Fame, pride, shame, torment me, waste the strength of my body, and kill me.",
+     "note": "The hero's complaint against Fortune, a recurrent theme of the late Meetings."
+    },
+    {
+     "ref": "Chodzko, Meeting XII",
+     "quote": "I am Kurroglou, who robbed and famished the world; who imposed the haratch upon the capitals of many kingdoms. Did I ever solicit any favour from any body? and now capricious Fate has betrayed me!",
+     "note": "Pride and betrayal: the bandit who taxed kingdoms is now a captive."
+    },
+    {
+     "ref": "Chodzko, Meeting XII",
+     "quote": "Begone! Kurroglou will never suffer himself to be laughed at, nor that it be said, a woman got him out of the well.",
+     "note": "Heroic pride against rescue."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "The Last Journey",
+   "lines": "Chodzko, Meeting XIII",
+   "section": 12,
+   "summary": [
+    "Shah Abbas II, offended that Köroğlu always declines his invitations, offers the post of commander-in-chief to whoever brings his head. The barber shows Köroğlu his grey beard. He names Ayvaz his heir, has his favourite sword nailed into its scabbard, and sets out alone on Kırat to submit himself to God at Isfahan and then to make the pilgrimage to Mecca. In the mountains he sings farewell songs to the mountains, to Çamlıbel and to his men, and counsels them to live in unity.",
+    "Near Kuhrud two courtiers dismissed by the shah, Almas Khan and Behram Khan, invite him to supper and in the night hamstring Kırat. Köroğlu, weeping like a child, gives up resistance, sings of inconstant Fate and of the warrior's death, recites the prayer of the dying and is beheaded. When a drop of blood from the head falls on the shah's robe, the crime is revealed; the band's chiefs tell the truth and are given the murderers, Ayvaz receives the governorship of Çamlıbel, and the hero is buried in a mausoleum."
+   ],
+   "analysis": [
+    "Chodzko's ending is a Persian one: the hero, true to his father's command, never rebels against the Shah, dies a pious death on the road to Mecca, and is vindicated by the Shah's justice [[wilks2001]]. The Anatolian tradition ends very differently. There Köroğlu, defeated not by treachery but by the invention of the musket, declares 'tüfek icat oldu, mertlik bozuldu' ('the musket was invented, and valour was spoiled') and withdraws from the world; in some versions he 'joins the Forty' (Kırklara karıştı), the hidden saints, and never dies [[boratav1931]] [[kaplan1973]].",
+    "Even in Chodzko the guns are heard: his death-song says that guns and carbines thunder the warrior's dirge. The maiming of Kırat is the true death of the hero, for without the horse the poet-warrior has no reason to fight. In the Turkmen and Uzbek cycles, by contrast, Görogly's story continues through his sons and grandsons [[reichl1992]] [[chadwick1969]]."
+   ],
+   "key": [
+    {
+     "ref": "Chodzko, Meeting XIII",
+     "quote": "I came into this world. I learned the price of the days gone by. I died the very day my mother brought me forth. I have only two brothers, my sword and my horse. Ye mountains, ye are my sisters.",
+     "note": "The hero's farewell sums up his solitude and his kinship with sword, horse and mountain."
+    },
+    {
+     "ref": "Chodzko, Meeting XIII",
+     "quote": "There he perceived his faithful steed weltering in his blood, with his legs cut round. He clasped his head with both his hands and cried like a child.",
+     "note": "The maiming of Kırat, the emotional climax of the cycle."
+    },
+    {
+     "ref": "Chodzko, Meeting XIII",
+     "quote": "The guns and the carbines thunder for him the death-song. O death! whom didst thou spare?",
+     "note": "Firearms appear only as the music of the hero's death, a faint echo of the Anatolian ending."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Köroğlu (Kurroglou)",
+   "side": "Köroğlu and his band",
+   "text": "Born Roushan (Turkish Ruşen or Ruşen Ali), son of a blinded master of horse. He becomes the chief of a band of seven hundred and seventy-seven at Çamlıbel, a robber who calls himself the angel of death and a minstrel whose improvised songs answer every crisis. He is generous, boastful, proud, cunning, capable of cruelty and of remorse; he ages in the course of the cycle and dies, in Chodzko, by treachery on the road to Mecca."
+  },
+  {
+   "name": "Kırat (Kyrat)",
+   "side": "Köroğlu and his band",
+   "text": "The grey ('kır') horse sired by a stallion from the Oxus and trained in darkness by the blind father. Once winged, Kırat is still faster than any horse alive; it wakes its sleeping master, kills grooms who covet it and leaps ravines. Its theft (Meeting VI) and its maiming (Meeting XIII) are the hero's two great griefs."
+  },
+  {
+   "name": "Mirza-Serraf",
+   "side": "Köroğlu and his band",
+   "text": "Köroğlu's father, master of the stud to Sultan Murad, blinded for presenting the ugly colts. An astrologer and horseman, he trains son and horse and lays down the rule that his son must never rebel against the Shah. In Anatolian versions he is Koca Yusuf, the groom of Bolu Bey."
+  },
+  {
+   "name": "Ayvaz",
+   "side": "Köroğlu and his band",
+   "text": "The butcher's son of Urfa, carried off for his beauty and adopted as son, cupbearer and eventually heir. He proves himself against Reyhan-Arab at Kars, but resents serving at table, deserts and betrays his father (Meeting X), and is forgiven; at the end he governs Çamlıbel."
+  },
+  {
+   "name": "Daly Hassan, Daly-Mehter and Daly-Ahmed",
+   "side": "Köroğlu and his band",
+   "text": "Chodzko's names for the 'mad' (Turkish deli) companions fluctuate. Daly Hassan is the brigand defeated and enrolled in Meeting II; Daly-Mehter is the equerry and Köroğlu's most loyal fighter, who rescues him in Meeting X; Daly-Ahmed is the reckless comrade of the Tokat adventure."
+  },
+  {
+   "name": "Demurchy-Oglou and Kimchy-Oglou",
+   "side": "Köroğlu and his band",
+   "text": "Demurchy-Oglou (Demircioğlu), the blacksmith's son from Nakhchivan, wins his place by standing still under Köroğlu's arrows; in Meeting XI he deserts after a quarrel with Ayvaz and is forgiven. Kimchy-Oglou is another senior member of the band."
+  },
+  {
+   "name": "Issa-Bally and Khoja Yakub",
+   "side": "Köroğlu and his band",
+   "text": "Issa-Bally, the Egyptian pasha's son stolen as a child, rides Kırat to rescue Köroğlu from the pit at Scutari and marries Dunah Pasha. Khoja Yakub, the merchant adopted as brother, discovers Ayvaz and later carries his song-letter from Tokat."
+  },
+  {
+   "name": "Sultan Murad of Turkestan",
+   "side": "Rulers and enemies",
+   "text": "In Chodzko the prince who blinds Mirza-Serraf; his role corresponds to that of Bolu Bey in the Anatolian tradition."
+  },
+  {
+   "name": "Bolu Bey",
+   "side": "Rulers and enemies",
+   "text": "The governor of Bolu in the Anatolian versions, who blinds his groom Yusuf for bringing him an ugly colt and becomes Köroğlu's lifelong enemy. He does not appear under this name in Chodzko, though the Turkish commander Bolly-beg of Meetings IX–X may be a faint echo of him."
+  },
+  {
+   "name": "Pashas, khans and Shah Abbas II",
+   "side": "Rulers and enemies",
+   "text": "Köroğlu's opponents include Hussein-Aly-Khan of Erivan, Burji Sultan (Nigâr's brother), Reyhan the Arab, several pashas named Hassan, Bolly-beg, Buly Pasha, and finally Almas Khan and Behram Khan, the courtiers who murder him. Shah Abbas II, whom the hero never fights, puts a price on his head but avenges his death."
+  },
+  {
+   "name": "Nigâr Hanım (Nighara)",
+   "side": "Women",
+   "text": "The Ottoman sultan's daughter who falls in love with Köroğlu by report, plans her own abduction and becomes his chief wife. She restrains his raids and forgives his later marriages."
+  },
+  {
+   "name": "Parizadda and Dunah Pasha",
+   "side": "Women",
+   "text": "Parizadda, daughter of the pasha of Kars, is won by the disguised hero in Meeting VIII. Dunah Pasha, the vizier's daughter, comforts Köroğlu in the pit at Scutari and marries Issa-Bally."
+  },
+  {
+   "name": "Hamza",
+   "side": "Others",
+   "text": "The bald scullion who outwits both Daly-Mehter and Köroğlu and steals Kırat, and is later made ruler of the nomads; the cycle honours his cunning."
+  },
+  {
+   "name": "Mustapha-beg",
+   "side": "Others",
+   "text": "A Kurdish chief, sometimes ally and once would-be assassin, who is won over by Köroğlu's song of praise."
+  },
+  {
+   "name": "The stranger of Meeting VII",
+   "side": "Others",
+   "text": "The courteous rider who defeats and spares Köroğlu, and whom Köroğlu later kills in a mountain pass, discovering that he was an Armenian."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Justice, banditry and the outlaw-hero",
+   "text": [
+    "Köroğlu begins as the avenger of an injustice: a ruler has blinded a faithful servant. His band lives by plunder, but the cycle presents this as the honest economy of men who 'neither plough nor trade', and it repeatedly contrasts the generosity of the bandit chief with the greed and blindness of princes. In this he resembles Robin Hood and the other noble robbers whom Eric Hobsbawm called 'social bandits', men regarded by ordinary people as champions and avengers [[hobsbawm1969]].",
+    "Yet Chodzko's version also shows the cost of his justice: merchants mutilated, an innocent stranger beheaded, the grudges listed by the pasha's vizier. The cycle celebrates the outlaw without making him a saint, and it is careful, in this Persian version, to keep him loyal to the Shah [[wilks2001]]."
+   ]
+  },
+  {
+   "title": "The poet-hero",
+   "text": [
+    "Köroğlu is a warrior who sings. Every challenge, lament, plea and boast is an improvisation, and the narrator stops the story so that he can perform it. He says himself that without his songs no one would know his deeds. The songs disarm enemies, win women, recall forgotten friendships and even turn an assassin into an ally.",
+    "This makes the cycle a mirror of its own performance. The âşık who tells the story is also singing the hero's songs, often in disguise as an âşık within the story; the boundary between performer and hero is deliberately thin [[basgoz2008]] [[reichl2000]]."
+   ]
+  },
+  {
+   "title": "Horse and hero",
+   "text": [
+    "Kırat is the hero's other self, created by the father's art and destroyed by treachery at the end. The horse's theft and recovery, its intelligence and loyalty, and its maiming are central events, and some of the finest songs are addressed to it. The Turkic epic tradition generally gives the hero's horse an unusual dignity, and the Köroğlu cycle is its most famous example [[reichl1992]] [[chadwick1969]]."
+   ]
+  },
+  {
+   "title": "Fathers and sons",
+   "text": [
+    "The cycle opens with a son avenging his father and ends with a father naming his adopted son heir. Between the two, Köroğlu's love for Ayvaz, his teaching of him in battle and his anguish at Ayvaz's betrayal give the story an emotional depth that the adventures alone would lack."
+   ]
+  },
+  {
+   "title": "Fortune and old age",
+   "text": [
+    "The later Meetings are full of complaints against Fortune and Fate. The hero who taxed kingdoms finds himself chained, starved and mocked, and the grey beard shown him by the barber turns him from war to pilgrimage. The last songs are farewells, and the ending is less a defeat than a submission to time."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Disguise as a minstrel",
+   "text": "Again and again Köroğlu (and later Issa-Bally) enters an enemy court or camp as an âşık, sings, and reveals himself through the song. The disguise turns performance into action."
+  },
+  {
+   "title": "Bread and salt",
+   "text": "Shared food binds guest and host. Köroğlu will not betray a man whose bread he has eaten, and alliances throughout the cycle are made and kept by this rule."
+  },
+  {
+   "title": "Love from a portrait or by report",
+   "text": "Ayvaz, Nigâr and Parizadda are all loved before they are seen, through a picture or a traveller's tale, a motif shared with Turkish and Persian romances."
+  },
+  {
+   "title": "The prisoner's songs",
+   "text": "Chained or in a pit, the hero sings of fortune and pride; captivity becomes an occasion for his most reflective verse."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "Çamlıbel",
+   "text": "The 'pine-covered pass' is the outlaw's fortress and court, a counter-kingdom on the frontier of two empires. Köroğlu prefers it 'above all the gardens of the world', and his farewell to its mountains is the farewell to his life."
+  },
+  {
+   "title": "Blindness",
+   "text": "The blinded father sees what the sighted prince misses, and the hero's very name preserves the injustice that made him."
+  },
+  {
+   "title": "The sword nailed in its scabbard",
+   "text": "Köroğlu's final renunciation of violence: he wears the sword but can no longer draw it."
+  },
+  {
+   "title": "The saz",
+   "text": "The minstrel's lute, which the hero orders made in Istanbul, is as much his weapon as the sword: through it he reveals himself, wins, pleads and mourns."
+  }
+ ],
+ "debates": [
+  {
+   "title": "One hero or many?",
+   "text": [
+    "Ottoman registers of the later sixteenth century name a rebel Köroğlu in the Bolu region of northern Anatolia, and a poet Köroğlu is credited with verses in the âşık style of the same age. Boratav argued that the historical bandit-poet gave his name and some of his songs to a legend that then absorbed older material [[boratav1931]]. Others distinguish the poet from the outlaw, or think that several men bore the name.",
+    "The Central Asian Görogly, a king and ancestor of heroes with a supernatural birth from a dead mother in a grave, seems far removed from any sixteenth-century rebel; the question is whether a historical core travelled east or whether the name attached itself to an existing heroic type [[chadwick1969]] [[reichl1992]]."
+   ],
+   "cite": [
+    "boratav1931",
+    "reichl1992",
+    "chadwick1969"
+   ]
+  },
+  {
+   "title": "Origin and diffusion",
+   "text": [
+    "Where did the cycle begin? Turkish scholars, following Boratav, usually place its origin in the Celali-era Anatolia of Bolu and Çamlıbel and see the Azerbaijani and Central Asian forms as later developments. Azerbaijani scholarship emphasises the cycle's flowering among the âşıqs of Azerbaijan and northern Iran, and Soviet Turkmen and Uzbek scholars claimed great antiquity for their own versions.",
+    "Comparative studies show both diffusion and local remaking: the Anatolian version is a frontier bandit story, the Azerbaijani-Persian one adds Shi'ite piety and loyalty to the shah, and the Central Asian cycles turn it into a dynastic epic with many 'branches' [[reichl1992]] [[chadwick1969]] [[wilks2001]] [[eberhardboratav1953]]."
+   ],
+   "cite": [
+    "reichl1992",
+    "chadwick1969",
+    "wilks2001",
+    "eberhardboratav1953"
+   ]
+  },
+  {
+   "title": "How reliable is Chodzko?",
+   "text": [
+    "Chodzko's version was the first that Western readers knew, and it is still the only complete English one. But his reciters narrated in Persian, and he translated the Turkish songs into English prose, losing their metre, rhyme and refrains. His notes, footnotes and occasional embellishments also colour the text.",
+    "Judith Wilks has shown how his version 'Persianises' the hero, making him a Shi'ite convert loyal to Shah Abbas, and how this changes the meaning of the banditry [[wilks2001]]. Readers should therefore treat Chodzko as a valuable record of one regional tradition in the 1830s rather than as 'the' Köroğlu [[chodzko1842]] [[boratav1931]]."
+   ],
+   "cite": [
+    "wilks2001",
+    "chodzko1842",
+    "boratav1931"
+   ]
+  },
+  {
+   "title": "The âşık, performance and the hikâye",
+   "text": [
+    "Köprülü traced the âşık to the ancient ozan and the Turkic minstrel-shaman, and later scholars described the hikâye as a living performance genre in which the narrator improvises the prose and sings memorised or improvised songs [[koprulu1966]] [[boratav1946]].",
+    "İlhan Başgöz's fieldwork on performance and Natalie Moyle's study of the minstrel tale emphasise the role of audience, pace and the minstrel's own interventions; Wolfram Eberhard recorded tales in the coffeehouses of southeastern Turkey [[basgoz2008]] [[moyle1990]] [[eberhard1955]]. Read in this light, Chodzko's 'Meetings' are the written trace of evenings of performance. Reichl's comparative work sets such Turkic performance traditions beside medieval European oral poetry [[reichl2000]] [[reichl2012]]."
+   ],
+   "cite": [
+    "koprulu1966",
+    "boratav1946",
+    "basgoz2008",
+    "moyle1990",
+    "eberhard1955",
+    "reichl2000",
+    "reichl2012"
+   ]
+  },
+  {
+   "title": "The outlaw and the state",
+   "text": [
+    "Hobsbawm's concept of the 'social bandit', the peasant outlaw whom his community sees as a hero and avenger, has often been applied to Köroğlu [[hobsbawm1969]] [[hobsbawm1959]]. The Celali background seems to fit: the bandits of late sixteenth-century Anatolia were products of a social crisis.",
+    "But historians such as Karen Barkey argue that Ottoman bandits were often would-be insiders, demobilised soldiers who wanted posts and were bargained with and co-opted by the state, rather than peasant rebels [[barkey1994]]. Köroğlu's dealings with pashas and his refusal to fight the shah can support either reading."
+   ],
+   "cite": [
+    "hobsbawm1969",
+    "hobsbawm1959",
+    "barkey1994"
+   ]
+  },
+  {
+   "title": "Köroğlu in the Republic and in Soviet Azerbaijan",
+   "text": [
+    "In the Turkish Republic Köroğlu became a national folk hero: Boratav's study, the folklore collections of the 1930s onwards and editions taken down from living minstrels such as Behçet Mahir of Erzurum made the cycle a school classic, and novelists retold it, as Yaşar Kemal did in Üç Anadolu Efsanesi (1967) [[boratav1931]] [[kaplan1973]] [[kaftancioglu1974]] [[kemal1967]].",
+    "In Soviet Azerbaijan Üzeyir Hacıbəyov's opera Koroğlu (1937) cast the hero as a leader of the people against khans and oppressors, a reading that suited Soviet ideology; in Turkmenistan the Görogly epic became a symbol of national culture and was added to UNESCO's list of intangible heritage in 2015 [[reichl1992]]."
+   ],
+   "cite": [
+    "boratav1931",
+    "kaplan1973",
+    "kaftancioglu1974",
+    "kemal1967",
+    "reichl1992"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Chodzko, Meeting I",
+   "quote": "I am called God in my house. Yes; I am a God. I shall not bend my neck before a coward like thee. The pitcher has carried water long enough for thee; but that pitcher is broken at last.",
+   "who": "Köroğlu to Sultan Murad",
+   "explanation": "The young hero rejects the prince who blinded his father. The proverb of the broken pitcher marks the end of the servant's patience and the birth of the rebel."
+  },
+  {
+   "ref": "Chodzko, Meeting II",
+   "quote": "War is but a wedding banquet. All those whose hearts are void of care, let them follow me!",
+   "who": "Köroğlu to his band",
+   "explanation": "The marching song in which Köroğlu leads his men to the frontier. Imagining battle as a feast is common in Turkic heroic poetry, and the refrain 'let him follow me' gives the song its strophic shape."
+  },
+  {
+   "ref": "Chodzko, Meeting III",
+   "quote": "A true looty possesses six tricks, five of cunning, and one of strength.",
+   "who": "Köroğlu",
+   "explanation": "The hero's own summary of his method. Much of the cycle is a story of disguises and tricks rather than set battles."
+  },
+  {
+   "ref": "Chodzko, Meeting IV",
+   "quote": "Kurroglou tells you, if he did not improvise his pretty songs, no man on earth would know of his deeds.",
+   "who": "Köroğlu",
+   "explanation": "The cycle's theory of fame: the hero's deeds live because he sings them, and the âşık who performs the tale continues his work."
+  },
+  {
+   "ref": "Chodzko, Meeting V",
+   "quote": "I am Kurroglou; my horse is mad, I am a madman too. I am the ram, the leader of the human flock; I am Kurroglou!",
+   "who": "Köroğlu to Burji Sultan's army",
+   "explanation": "A self-naming boast. 'Mad' renders the Turkic deli, the fearless frenzy of the warrior, which horse and rider share."
+  },
+  {
+   "ref": "Chodzko, Meeting VI",
+   "quote": "Without Kyrat, life and the world is but a sin to me.",
+   "who": "Köroğlu",
+   "explanation": "The lament after Hamza steals Kırat shows that the hero's power and identity depend on the horse."
+  },
+  {
+   "ref": "Chodzko, Meeting VII",
+   "quote": "A brave man gives a timely warning to his enemy; it is a woman’s part to fight without warning, and to kill by stealth.",
+   "who": "The stranger to Köroğlu",
+   "explanation": "A code of chivalry spoken by the man who defeats Köroğlu. The hero's later ambush of the same man shows him falling short of it."
+  },
+  {
+   "ref": "Chodzko, Meeting VIII",
+   "quote": "I find every where my bread; firstly, upon the edge of my sabre; secondly, upon the head of my club; thirdly, if the above two means should fail, I have at my command the talent of an aushik.",
+   "who": "Köroğlu",
+   "explanation": "Sword, club and song: the three livelihoods of the poet-bandit, and a neat statement of his double identity."
+  },
+  {
+   "ref": "Chodzko, Meeting XIII",
+   "quote": "I have only two brothers, my sword and my horse. Ye mountains, ye are my sisters.",
+   "who": "Köroğlu, leaving Çamlıbel",
+   "explanation": "The farewell song of the old hero. His true kin are not people but his weapons, his horse and the landscape of his freedom."
+  },
+  {
+   "ref": "Chodzko, Meeting XIII",
+   "quote": "There he perceived his faithful steed weltering in his blood, with his legs cut round. He clasped his head with both his hands and cried like a child.",
+   "who": "The narrator",
+   "explanation": "The hamstringing of Kırat. The hero who has never wept for himself weeps for his horse, and gives up the fight."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why is the hero called 'son of the blind man'? How does the blinding shape his career?",
+   "hint": "Think about injustice and revenge, about the blind father's insight, and about how Chodzko's Sultan Murad differs from the Anatolian Bolu Bey."
+  },
+  {
+   "q": "What is the function of Köroğlu's songs in the narrative?",
+   "hint": "Look at the moments when the story stops for an improvisation: challenges, laments, pleas, love. Consider the claim in Meeting IV that without the songs nobody would know his deeds."
+  },
+  {
+   "q": "Is Köroğlu a social bandit in Hobsbawm's sense?",
+   "hint": "Weigh his generosity and his hostility to tyrants against the robbery of merchants, the killing of the stranger and the vizier's list of grievances. Consider Barkey's view of Ottoman bandits."
+  },
+  {
+   "q": "How does the relationship between Köroğlu and Ayvaz develop?",
+   "hint": "Trace the abduction (III), the battle at Kars (VIII), the Tokat adventure (IX), the desertion (X) and the inheritance (XIII)."
+  },
+  {
+   "q": "What role does Kırat play in the cycle?",
+   "hint": "Consider its supernatural origin, its theft and recovery, its intelligence and the meaning of its maiming at the end."
+  },
+  {
+   "q": "How does the minstrel's disguise reflect the tale's own mode of performance?",
+   "hint": "Look at the episodes in Istanbul, at the Haniss camp, in Tokat and at Buly Pasha's camp; think about the âşık telling a story about an âşık."
+  },
+  {
+   "q": "In what ways is Chodzko's version 'Persianised'?",
+   "hint": "Note the conversion at Mashhad, the father's command not to rebel against the Shah, and the ending under Shah Abbas II. Compare the Anatolian ending with the musket."
+  },
+  {
+   "q": "How are women portrayed in the cycle?",
+   "hint": "Compare Nigâr, Parizadda and Dunah Pasha. Who takes the initiative? Look also at Köroğlu's refusal to be rescued by a woman."
+  },
+  {
+   "q": "Compare the Anatolian ending ('tüfek icat oldu, mertlik bozuldu') with Chodzko's ending. What does each say about heroism?",
+   "hint": "One blames a technological change for the end of valour; the other a personal betrayal and the passing of time."
+  },
+  {
+   "q": "How has Köroğlu been used in modern national cultures?",
+   "hint": "Consider the Turkish Republic's folklore studies and school texts, Hacıbeyov's opera in Soviet Azerbaijan and the Turkmen UNESCO listing."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "barkey1994",
+   "text": "Barkey, Karen. Bandits and Bureaucrats: The Ottoman Route to State Centralization. Ithaca, NY: Cornell University Press, 1994."
+  },
+  {
+   "id": "basgoz2008",
+   "text": "Başgöz, İlhan. Hikâye: Turkish Folk Romance as Performance Art. Bloomington: Indiana University Press, 2008."
+  },
+  {
+   "id": "boratav1931",
+   "text": "Boratav, Pertev Naili. Köroğlu Destanı. İstanbul: Evkaf Matbaası, 1931."
+  },
+  {
+   "id": "boratav1946",
+   "text": "Boratav, Pertev Naili. Halk Hikâyeleri ve Halk Hikâyeciliği. Ankara: Millî Eğitim Basımevi, 1946."
+  },
+  {
+   "id": "chadwick1969",
+   "text": "Chadwick, Nora K., and Victor Zhirmunsky. Oral Epics of Central Asia. Cambridge: Cambridge University Press, 1969."
+  },
+  {
+   "id": "chodzko1842",
+   "text": "Chodzko, Alexander. Specimens of the Popular Poetry of Persia, as Found in the Adventures and Improvisations of Kurroglou, the Bandit-Minstrel of Northern Persia, and in the Songs of the People Inhabiting the Shores of the Caspian Sea. London: Oriental Translation Fund of Great Britain and Ireland, 1842."
+  },
+  {
+   "id": "eberhard1955",
+   "text": "Eberhard, Wolfram. Minstrel Tales from Southeastern Turkey. Berkeley: University of California Press, 1955."
+  },
+  {
+   "id": "eberhardboratav1953",
+   "text": "Eberhard, Wolfram, and Pertev Naili Boratav. Typen türkischer Volksmärchen. Wiesbaden: Franz Steiner, 1953."
+  },
+  {
+   "id": "hobsbawm1959",
+   "text": "Hobsbawm, E. J. Primitive Rebels: Studies in Archaic Forms of Social Movement in the 19th and 20th Centuries. Manchester: Manchester University Press, 1959."
+  },
+  {
+   "id": "hobsbawm1969",
+   "text": "Hobsbawm, E. J. Bandits. London: Weidenfeld and Nicolson, 1969."
+  },
+  {
+   "id": "kaftancioglu1974",
+   "text": "Kaftancıoğlu, Ümit. Köroğlu Kolları: Halk Destanları. İstanbul: Büyük Dağıtım Yayınevi, 1974."
+  },
+  {
+   "id": "kaplan1973",
+   "text": "Kaplan, Mehmet, Mehmet Akalın and Muhan Bali, eds. Köroğlu Destanı. Anlatan Behçet Mahir. Ankara: Sevinç Matbaası, 1973."
+  },
+  {
+   "id": "kemal1967",
+   "text": "Kemal, Yaşar. Üç Anadolu Efsanesi. İstanbul: Ararat Yayınevi, 1967."
+  },
+  {
+   "id": "koprulu1966",
+   "text": "Köprülü, Mehmet Fuad. Edebiyat Araştırmaları. Ankara: Türk Tarih Kurumu Basımevi, 1966. (Includes his essay on the origin and development of the âşık tradition.)"
+  },
+  {
+   "id": "moyle1990",
+   "text": "Moyle, Natalie Kononenko. The Turkish Minstrel Tale Tradition. New York: Garland, 1990."
+  },
+  {
+   "id": "reichl1992",
+   "text": "Reichl, Karl. Turkic Oral Epic Poetry: Traditions, Forms, Poetic Structure. New York: Garland, 1992."
+  },
+  {
+   "id": "reichl2000",
+   "text": "Reichl, Karl. Singing the Past: Turkic and Medieval Heroic Poetry. Ithaca, NY: Cornell University Press, 2000."
+  },
+  {
+   "id": "reichl2012",
+   "text": "Reichl, Karl, ed. Medieval Oral Literature. Berlin: De Gruyter, 2012."
+  },
+  {
+   "id": "wilks2001",
+   "text": "Wilks, Judith M. 'The Persianization of Köroğlu: Banditry and Royalty in Three Versions of the Köroğlu Destan.' Asian Folklore Studies 60, no. 2 (2001): 305–318."
+  }
+ ]
+}
