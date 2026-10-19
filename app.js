@@ -5567,7 +5567,7 @@
   // overview, book-by-book summary and analysis, characters, themes, the critical debates,
   // key passages (quoted from the recommended translation), questions and a bibliography.
   // Paragraphs cite with [[bibId]], drawn as (Author year) linked to the bibliography.
-  const GUIDES = new Set(["iliad", "aeneid"]);
+  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost"]);
   const GUIDE_FILES = {};
   const GUIDE_PARTS = [["overview", "Overview"], ["books", "Book by book"], ["characters", "Characters"],
     ["themes", "Themes & symbols"], ["debates", "Critical debates"], ["quotes", "Key passages"],
@@ -7639,9 +7639,9 @@
       if (!d || location.hash !== here || !row || row.querySelector(".pp-toc")) return;
       row.insertAdjacentHTML("beforeend", `<a class="shelf-dl pp-toc" href="#/people/${esc(d.group)}">Who’s who</a>`);
     });
-    if (GUIDES.has(w.workGroup)) {
+    if (GUIDES.has(w.workGroup || w.slug)) {
       const row = app.querySelector(".toc-tools");
-      if (row) row.insertAdjacentHTML("afterbegin", `<a class="shelf-dl gd-toc" href="#/guide/${esc(w.workGroup)}">Study guide</a>`);
+      if (row) row.insertAdjacentHTML("afterbegin", `<a class="shelf-dl gd-toc" href="#/guide/${esc(w.workGroup || w.slug)}">Study guide</a>`);
     }
   }
 

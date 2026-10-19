@@ -1,0 +1,866 @@
+{
+ "work": "paradise-lost",
+ "title": "Paradise Lost",
+ "author": "John Milton",
+ "quoteEdition": "paradise-lost",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Published",
+   "value": "1667, by Samuel Simmons in London, as 'Paradise lost. A Poem Written in Ten Books'; issues of 1668 added the prose Arguments (summaries of each book), a note on 'The Verse' and a list of errata"
+  },
+  {
+   "label": "Second edition",
+   "value": "1674, the year of Milton's death: the poem redivided into twelve books by splitting Books VII and X, with the Arguments now placed before each book, a few new lines, small revisions and commendatory poems by Samuel Barrow and Andrew Marvell"
+  },
+  {
+   "label": "Text on this site",
+   "value": "The 1667 text, arranged in the twelve books of 1674; the lines added in 1674 at the openings of Books VIII and XII are shown in square brackets, and some 1674 variants are recorded in notes at the end of each book. Line references in this guide follow the standard 1674 numbering used by modern editions"
+  },
+  {
+   "label": "Genre",
+   "value": "Christian epic on the classical model of Homer and Virgil, absorbing tragedy, pastoral, hymn, georgic, romance and biblical history"
+  },
+  {
+   "label": "Metre",
+   "value": "Blank verse: unrhymed iambic pentameter, with long verse paragraphs and frequent enjambment"
+  },
+  {
+   "label": "'The Verse'",
+   "value": "Milton's prefatory note, added in 1668, defends 'English Heroic Verse without Rime' on the precedent of Homer and Virgil, calls rhyme 'the Invention of a barbarous Age', and presents its rejection as the recovery of 'ancient liberty' from 'the troublesom and modern bondage of Rimeing'"
+  },
+  {
+   "label": "Length",
+   "value": "About 10,550 lines in ten books (1667); about 10,565 in twelve books (1674)"
+  },
+  {
+   "label": "Setting",
+   "value": "Heaven, Hell, Chaos, the newly created universe and the Garden of Eden; the narrative ranges from before the creation of the world to the Last Judgement"
+  },
+  {
+   "label": "Narrator",
+   "value": "A blind, inspired bard who invokes the 'Heav'nly Muse' and the Holy Spirit, and speaks of his own situation in the invocations to Books I, III, VII and IX"
+  },
+  {
+   "label": "Key themes",
+   "value": "Free will and providence; obedience and the Fall; theodicy; the heroic redefined as patience and faith; marriage, gender and hierarchy; the limits of knowledge; liberty, tyranny and monarchy"
+  }
+ ],
+ "context": [
+  "John Milton was born in Bread Street, London, on 9 December 1608, the son of a prosperous scrivener who was also a composer. He was educated at St Paul's School and at Christ's College, Cambridge (BA 1629, MA 1632), then spent nearly six years in private study before a journey through France and Italy in 1638–1639, during which, he later wrote, he visited the aged Galileo, then under house arrest. Already in the poems of these years ('On the Morning of Christ's Nativity', 'Lycidas', the masque known as Comus) he showed the ambition to become a great national poet; around 1640–1642 he sketched outlines for a biblical tragedy on the Fall, titled in one draft 'Adam unparadiz'd' [[lewalski2000]].",
+  "The poem was delayed for some twenty years by the English Revolution. From 1641 Milton wrote prose tracts against bishops, for divorce on grounds of incompatibility, and, in Areopagitica (1644), against pre-publication licensing. After the execution of Charles I in January 1649 he defended the regicide in The Tenure of Kings and Magistrates and Eikonoklastes, and served the new Commonwealth as Secretary for Foreign Tongues, answering royalist Europe in his Latin Defences of the English people. On the eve of the Restoration in 1660 he published The Ready and Easy Way to Establish a Free Commonwealth, still arguing against the return of kingship. When Charles II returned, Milton went into hiding, was briefly imprisoned, and escaped the scaffold; his books were burned. Paradise Lost was finished and published in a nation that had restored the monarchy he had opposed [[hill1977]] [[lewalski2000]].",
+  "By about 1652 Milton was totally blind. According to his early biographers, notably his nephew Edward Phillips and John Aubrey, he composed the poem largely after 1658, often at night or early in the morning, and dictated it in batches to whoever was available to write it down, revising as the copy was read back. The poem's invocations turn this situation into part of its subject: the narrator, 'In darkness, and with dangers compast round', asks for an inward illumination to replace the light he has lost [[lewalski2000]] [[fowler1998]].",
+  "Milton chose the epic, the highest of the classical genres, and set out to surpass it. Paradise Lost begins in medias res like the Iliad and Aeneid, contains invocations, a catalogue, councils, single combats, a descent to the underworld in reverse, epic similes and a prophetic review of future history modelled on Aeneid 6. But it also measures the classical epic against a 'better fortitude', and turns the heroic values of Homer and Virgil (martial glory, revenge, empire) into attributes of Satan. Renaissance theorists had looked for a Christian epic; Milton's model of a poem that contains all the other genres has been traced in detail by Barbara Lewalski [[lewalski1985]] [[quint2014]].",
+  "The poem's narrative core comes from the first three chapters of Genesis, which give only a few verses to the temptation and the Fall. Milton expands it with material from elsewhere in the Bible (the war in Heaven from Revelation 12, the fall of Lucifer read into Isaiah 14, the Son's exaltation from Psalm 2 and Hebrews 1), from Jewish and Christian commentary, and from the hexameral tradition of poems on the six days of creation. His own heterodox theology, set out in the Latin treatise De Doctrina Christiana, shapes the poem's account of the Son, of matter and of free will [[campbell2007]] [[fallon1991]]."
+ ],
+ "plot": [
+  "The poem opens in Hell, where Satan and his rebel angels lie on a burning lake after being thrown out of Heaven. Satan rouses them, they build the palace of Pandaemonium, and in a great council they decide to take revenge on God by corrupting his new creation, the human race. Satan volunteers for the journey. At the gates of Hell he meets his daughter Sin and their son Death, crosses the realm of Chaos, and approaches the newly created universe.",
+  "In Heaven, God foresees that man will fall by his own free choice, and the Son offers to die to redeem him. Satan, disguised as a young cherub, tricks the archangel Uriel into directing him to Eden. There he first sees Adam and Eve, overhears that they must not eat the fruit of the Tree of Knowledge, and is found whispering at Eve's ear as she sleeps. God sends the archangel Raphael to warn the couple, and over a meal Raphael tells Adam the story that the poem has so far omitted: the exaltation of the Son, Satan's rebellion, the three-day war in Heaven and the expulsion of the rebels, followed by the six days of creation. Adam in turn tells of his own creation and of Eve's.",
+  "The order of events is thus not the order of telling. Chronologically, the story runs from the Son's exaltation and the revolt (Books V–VI), through the creation of the world and of Adam and Eve (Books VII–VIII), to Satan's fall into Hell and journey (Books I–III), his arrival in Eden (Book IV) and the temptation (Book IX); the epic plunges 'into the midst of things', as the Argument to Book I says, and recovers its past through Raphael's narrative.",
+  "In Book IX Satan returns and enters the serpent. Eve persuades Adam to let her work apart from him; the serpent flatters her and persuades her to eat the forbidden fruit, and Adam eats too, unwilling to live without her. They fall into lust, shame and mutual accusation. The Son pronounces judgement, Sin and Death build a bridge from Hell to the world, and Satan's followers are turned into serpents. After despair and quarrelling, Adam and Eve are reconciled and repent. The archangel Michael shows Adam the future history of the world up to the Flood, then narrates the rest, to the redemption by Christ and the Last Judgement. Adam and Eve leave Paradise hand in hand."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Hell and the Fallen Angels",
+   "summary": [
+    "The narrator states his subject, man's first disobedience and its consequences 'till one greater Man / Restore us', and invokes the 'Heav'nly Muse' of Sinai and the creating Spirit to help him 'justifie the wayes of God to men'. He then plunges into the action. Satan and Beelzebub lie stunned on a lake of fire in Hell, where the flames give 'darkness visible'. Satan's first speech refuses repentance: all is not lost while will, hatred and courage remain.",
+    "Satan rises from the lake, his shield compared to the moon seen through Galileo's telescope and his spear to the tallest pine, and calls up his legions, who lie as thick as autumn leaves at Vallombrosa. A catalogue names the leading fallen angels by the names they will later bear as the idols of Canaan, Egypt and Greece. Satan addresses them, sheds tears, and announces the rumour of a new world and a new creature. Led by Mammon, the devils dig gold and raise Pandaemonium, designed by the architect Mulciber; to fit inside its hall the lesser spirits shrink to the size of dwarfs, while the great lords sit in full size in secret conclave."
+   ],
+   "analysis": [
+    "The opening twenty-six lines rewrite the classical proem. Like Homer and Virgil, the poet names his subject and calls on a Muse, but his Muse is the one who inspired Moses on Sinai, and he claims to pursue 'Things unattempted yet in Prose or Rhime', a boast translated from Ariosto that turns the epic tradition into a rival. The purpose clause, to 'assert th' Eternal Providence, / And justifie the wayes of God to men', announces a theodicy, an argument as well as a story [[fowler1998]].",
+    "Book I is where Satan's grandeur is greatest, and where the Romantic reading of him as a hero finds most support. His defiance has the resonance of Achilles and Turnus, and the similes that magnify him seem to celebrate his scale. But the similes also undercut him: the leaves, the scattered sedge on the Red Sea and the Egyptian cavalry drowned in pursuit of the Israelites all describe the devils as already defeated, and the moon seen through the telescope is 'spotty'. Christopher Ricks and Stanley Fish both show how the verse invites admiration and then calls it into question [[ricks1963]] [[fish1967]].",
+    "Satan's claim that 'The mind is its own place' is at once heroic Stoicism and self-deception; by Book IV he will discover that he carries Hell within him. The catalogue of devils, named by their future cults, establishes the poem's long time-scheme: the fallen angels are the false gods of human history, and the building of Pandaemonium, with its gold and its theatrical splendour, makes Hell a parody of a court."
+   ],
+   "key": [
+    {
+     "ref": "PL 1.24–26",
+     "quote": "That to the highth of this great Argument\nI may assert th' Eternal Providence,\nAnd justifie the wayes of God to men.",
+     "note": "The poem's statement of purpose. 'Argument' means subject as well as reasoning, and 'justifie' carries both the sense of proving God just and the theological sense of making righteous."
+    },
+    {
+     "ref": "PL 1.254–255",
+     "quote": "The mind is its own place, and in it self\nCan make a Heav'n of Hell, a Hell of Heav'n.",
+     "note": "Satan's defiant claim of mental independence echoes Stoic doctrine; the poem will show its truth turned against him."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Council in Pandaemonium",
+   "summary": [
+    "Satan, exalted on a throne 'by merit rais'd / To that bad eminence', opens a debate on how to continue the war. Moloch urges open war, whatever the cost; Belial, eloquent but 'Timorous and slothful', argues for patient endurance in case God's anger relents; Mammon proposes building a rival empire in Hell. Beelzebub then puts forward Satan's own plan: to attack God indirectly by seizing or corrupting the new world and its inhabitants. The plan is carried, and Satan alone volunteers for the dangerous journey.",
+    "While he is gone, the devils occupy themselves with games, music, philosophical debate on 'Providence, Foreknowledge, Will, and Fate', and an exploration of Hell's rivers and frozen continent. At the gates of Hell Satan meets a woman who is a serpent below the waist, and a shapeless figure with a crown. She is Sin, born from his head in Heaven, and the shadow is Death, their son, who in turn raped his mother and fathered the hell-hounds that torment her. Sin opens the gates, and Satan sets out into Chaos, the realm of warring elements ruled by Chaos and Night, who direct him on his way. At last he sees the world hanging from Heaven by a golden chain."
+   ],
+   "analysis": [
+    "The council is a parliamentary debate and a study in political rhetoric. Each speech represents a political temper (militarism, appeasement, economic self-sufficiency), but the conclusion is pre-arranged: Beelzebub's proposal was 'first devis'd / By Satan', and the vote is engineered. Readers have heard in it both the Long Parliament and the Restoration court, and Milton's prose shows him well acquainted with the arts of persuasion [[hill1977]] [[lewalski1985]].",
+    "Belial's speech contains the poem's most moving defence of consciousness, 'this intellectual being, / Those thoughts that wander through Eternity', yet the narrator notes that his words 'cloth'd in reasons garb / Counsel'd ignoble ease'. The fallen angels' philosophical debate, 'in wandring mazes lost', parodies the theological controversies of Milton's own time and anticipates the questions the poem itself must answer.",
+    "Sin and Death form an allegory within the epic, a grotesque parody of the Trinity: Sin springs from Satan's head as Athena from Zeus, and as the Son is the image of the Father. Some critics, from Addison and Johnson onwards, have thought the allegory out of place in a narrative of real beings; others see it as Milton's way of showing evil as a perversion and parody of good, with no substance of its own [[fallon1991]]."
+   ],
+   "key": [
+    {
+     "ref": "PL 2.146–148",
+     "quote": "for who would loose,\nThough full of pain, this intellectual being,\nThose thoughts that wander through Eternity,",
+     "note": "Belial's argument against annihilation. The lines are often quoted out of context as a hymn to the mind; in context they serve a counsel of passivity."
+    },
+    {
+     "ref": "PL 2.559–561",
+     "quote": "Of Providence, Foreknowledge, Will, and Fate,\nFixt Fate, free will, foreknowledge absolute,\nAnd found no end, in wandring mazes lost.",
+     "note": "The fallen angels debate the very questions of the poem's theodicy. The repetitions and inversions enact the circling of their argument."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Heaven and the Son's Offer",
+   "summary": [
+    "The narrator invokes 'holy light' and laments his blindness, praying that an inner light may let him 'see and tell / Of things invisible to mortal sight'. God the Father, looking down, sees Satan approaching the world and foretells that man will fall. He explains that he made angels and men 'Sufficient to have stood, though free to fall', that his foreknowledge does not cause their fall, and that man, deceived by another, will find grace, while the self-tempted angels will not.",
+    "Justice requires that someone pay the price of man's sin. When the heavenly host stands silent, the Son offers his own life. The Father accepts, foretells the Son's incarnation, death, resurrection and reign, and commands the angels to worship him; they sing a hymn. Meanwhile Satan lands on the outer shell of the universe, passes the 'Paradise of Fools' where vain things will collect, and finds the stairs to Heaven and the opening into the world. In the sun he meets the archangel Uriel and, disguised as a young cherub, asks the way to man; Uriel, unable to see through hypocrisy, points him towards Eden."
+   ],
+   "analysis": [
+    "The invocation to light, one of the poem's great autobiographical passages, sets the narrator's blindness alongside the blind poets and prophets of antiquity (Homer, Thamyris, Tiresias, Phineus). It moves from the outward light of nature, lost to him, to an inward illumination of the mind. The opening lines also hesitate theologically over the nature of light, whether it is created or eternal, a question tied to Milton's view of creation.",
+    "The dialogue in Heaven is the poem's most direct attempt at theodicy, and for many readers its least successful passage: Pope complained that God the Father 'turns a school-divine'. Defenders reply that the plain style is deliberate, God speaking without rhetoric, and that the reader's resistance is itself instructive [[fish1967]] [[danielson1982]]. Empson treated the speech as the self-justification of a God already planning a trap [[empson1961]].",
+    "The Son's offer answers Satan's volunteering in Book II: two journeys, two heroic offers, one for destruction and one for redemption. The Father declares the Son 'By Merit more then Birthright Son of God', and the theology of the scene, in which the Son is exalted for his merit and stands below the Father, has been read in relation to the anti-Trinitarian arguments of De Doctrina Christiana [[campbell2007]]."
+   ],
+   "key": [
+    {
+     "ref": "PL 3.40–44",
+     "quote": "Thus with the Year\nSeasons return, but not to me returns\nDay, or the sweet approach of Ev'n or Morn,\nOr sight of vernal bloom, or Summers Rose,\nOr flocks, or herds, or human face divine;",
+     "note": "The narrator's lament for his lost sight. The list of things unseen builds to the human face, the climax of what blindness takes away."
+    },
+    {
+     "ref": "PL 3.98–99",
+     "quote": "I made him just and right,\nSufficient to have stood, though free to fall.",
+     "note": "The Father's central statement of free will: man was created able to stand and able to fall, and the responsibility for falling is therefore his."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Eden",
+   "summary": [
+    "On Mount Niphates, within sight of Eden, Satan pauses. Addressing the sun, he admits that God deserved no such return from him, that his own pride caused his fall, and that he cannot repent, since submission would mean disgrace before the devils he leads. He concludes 'Evil be thou my Good'. His face, distorted by passion, betrays him to Uriel, who is watching.",
+    "Satan leaps the wall of Paradise and sits like a cormorant on the Tree of Life. The narrator describes the garden, its streams, flowers and fruits, and then Adam and Eve, naked, 'Not equal, as thir sex not equal seemd'. Satan overhears their talk, including the single prohibition, and Eve's account of her creation, when she was drawn to her own reflection in a pool until a voice led her to Adam. Satan resolves to use the prohibition against them. At evening Adam and Eve pray and retire to their bower, and the narrator praises wedded love. Uriel warns Gabriel; the angels Ithuriel and Zephon find Satan 'Squat like a Toad' at Eve's ear; Gabriel confronts him, and a sign of golden scales in the sky persuades Satan to flee."
+   ],
+   "analysis": [
+    "Satan's soliloquy, which according to Edward Phillips Milton had once intended as the opening of a tragedy, is the poem's fullest portrait of an inner Hell. Its logic leads Satan to the recognition 'my self am Hell' and then to the willed reversal of values 'Evil be thou my Good'. Here Satan is most human and most clearly self-condemned; critics who stress his heroism and those who stress his degeneration both appeal to this speech [[lewis1942]] [[waldock1947]].",
+    "The description of Adam and Eve introduces the poem's most contested lines on gender. 'Hee for God only, shee for God in him' sets out a hierarchy, but the book also gives Eve the first account of her own awakening, an episode echoing Ovid's Narcissus. Feminist critics have read the pool scene as a lesson in subordination; Diane McColley and others read it as the beginning of Eve's growth in understanding [[gilbert1979]] [[mccolley1983]].",
+    "Milton's Eden is not a static state of perfection. Adam and Eve work in the garden, which grows faster than they can prune it, they make love before the Fall, and they converse. Paradise is a place of growth and of choices, which makes the Fall a real loss rather than the inevitable end of an unstable innocence."
+   ],
+   "key": [
+    {
+     "ref": "PL 4.75",
+     "quote": "Which way I flie is Hell; my self am Hell;",
+     "note": "Satan's self-recognition. The line answers his boast in Book I that the mind is its own place."
+    },
+    {
+     "ref": "PL 4.299",
+     "quote": "Hee for God only, shee for God in him:",
+     "note": "The narrator's statement of hierarchy in marriage, much debated in feminist criticism of the poem."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Raphael's Visit and the Revolt",
+   "summary": [
+    "Eve wakes troubled by a dream in which a voice led her to the forbidden tree and she ate. Adam explains it by the psychology of the faculties: fancy, when reason sleeps, mimics and mixes the images of waking life, and evil can enter the mind without stain if it is not approved. The couple sing a morning hymn to the Creator. God sends Raphael to warn Adam of his danger, so that he may not plead ignorance.",
+    "Eve prepares a meal of fruits and Raphael eats it 'with keen dispatch / Of real hunger'. He explains that all things proceed from God and are made of 'one first matter', refined by degrees from body towards spirit, so that men may in time become like angels if they remain obedient. At Adam's request he begins the story of the war in Heaven. God exalted the Son as head of the angels; Satan, envious, drew his legions to the north and incited them to revolt in the name of freedom. Only the seraph Abdiel stood up against him, and departed through the hostile crowd to return to God."
+   ],
+   "analysis": [
+    "Raphael's account of the scale of being, with matter and spirit as degrees of a single substance, is one of the clearest expressions of the poem's monism. Milton rejects the dualism that separates body and soul, and angels in his Heaven eat, digest and make love. Stephen Fallon has traced this 'animist materialism' to Milton's engagement with the philosophers of his time [[fallon1991]].",
+    "The revolt turns on the Father's decree exalting the Son. Satan's argument is political: he presents himself as the champion of the angels, 'Natives and Sons of Heav'n', 'if not equal all, yet free', against a new monarch. His language echoes the republican vocabulary that Milton himself used against the Stuarts, a fact that has fuelled both the Romantic reading and the debate on the poem's politics. Abdiel's reply, that God made the angels and can unmake them, and that the Son's reign does not lessen them, gives the loyal answer [[hill1977]] [[empson1961]].",
+    "Abdiel, 'faithful found, / Among the faithless', is the poem's model of solitary integrity, the one who stands against the majority. Many readers have seen in him an image of Milton's own position after the Restoration."
+   ],
+   "key": [
+    {
+     "ref": "PL 5.469–472",
+     "quote": "O Adam, one Almightie is, from whom\nAll things proceed, and up to him return,\nIf not deprav'd from good, created all\nSuch to perfection, one first matter all,",
+     "note": "Raphael's statement of the unity of creation: one God, one first matter, and a scale up which creatures may rise."
+    },
+    {
+     "ref": "PL 5.896–899",
+     "quote": "So spake the Seraph Abdiel faithful found,\nAmong the faithless, faithful only hee;\nAmong innumerable false, unmov'd,\nUnshak'n, unseduc'd, unterrifi'd",
+     "note": "The narrator's tribute to Abdiel. The string of negative adjectives describes a fidelity defined by resistance."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "The War in Heaven",
+   "summary": [
+    "Raphael continues. God welcomes Abdiel and sends Michael and Gabriel with the loyal angels against the rebels. On the first day Abdiel strikes Satan, Michael wounds him with a sword from the armoury of God, and Satan feels pain for the first time, though his ethereal body closes again. At night the rebels, ashamed, invent gunpowder and cannon from the soil of Heaven.",
+    "On the second day the cannon knock down the loyal angels, who answer by tearing up the hills of Heaven and hurling them on the rebels, until the war threatens to wreck Heaven itself. On the third day the Father sends the Son, alone, in the chariot of paternal deity. He drives the rebels to the edge of Heaven, which opens, and they fall for nine days into Chaos and Hell. Raphael ends by warning Adam to remember Satan's example."
+   ],
+   "analysis": [
+    "The war in Heaven is the poem's most traditionally epic episode, with speeches, single combats and an aristeia, but it is often felt to be its most problematic. Immortal beings who cannot be killed fight a war whose outcome is never in doubt, and the invention of artillery and the hurling of mountains verge on comedy. Some critics have read this as deliberate: the war shows the futility of martial heroism, which God allows to exhaust itself before the Son ends it [[lewalski1985]] [[quint2014]].",
+    "Before beginning this narrative Raphael warned that he must accommodate heavenly things to human understanding, 'By lik'ning spiritual to corporal forms' (5.573), a principle that applies to the whole poem's representation of God and angels. Abdiel's debate with Satan on servitude sets out a key political idea: serving the worthiest is not servitude, while serving the unworthy, or one's own passions, is."
+   ],
+   "key": [
+    {
+     "ref": "PL 6.29–32",
+     "quote": "Servant of God, well done, well hast thou fought\nThe better fight, who single hast maintaind\nAgainst revolted multitudes the Cause\nOf Truth, in word mightier then they in Armes;",
+     "note": "God's welcome to Abdiel, echoing the parable of the talents. The 'better fight' is a fight of words and witness."
+    },
+    {
+     "ref": "PL 6.178–181",
+     "quote": "This is servitude,\nTo serve th' unwise, or him who hath rebelld\nAgainst his worthier, as thine now serve thee,\nThy self not free, but to thy self enthrall'd;",
+     "note": "Abdiel's definition of servitude, which reverses Satan's rhetoric of liberty."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "The Creation",
+   "summary": [
+    "The narrator invokes Urania, 'The meaning, not the Name', asking her to guide his song now that it descends from Heaven to earth. He writes of himself 'fall'n on evil dayes', and asks for protection from the 'barbarous dissonance' of Bacchus and his revellers, the fate of Orpheus.",
+    "Adam asks Raphael how the world was made. Raphael tells how, after the rebels' fall, God resolved to create a new world and a new race to repair the loss. The Son rides out into Chaos, marks the bounds of the universe with golden compasses, and over six days creates light, the firmament, the land and seas, plants, the sun, moon and stars, the creatures of sea and air, the land animals, and finally man in God's image. On the seventh day the Son returns to Heaven and the angels celebrate the Sabbath with song."
+   ],
+   "analysis": [
+    "In 1667 Books VII and VIII formed a single Book VII; in 1674 Milton divided it at the end of Raphael's account of creation and added four lines to begin the new Book VIII. The invocation is one of the poem's most personal passages: written after the Restoration, it represents the poet as surrounded by danger and darkness, seeking 'fit audience … though few' [[lewalski2000]].",
+    "The creation narrative expands Genesis 1 in the hexameral tradition, with vivid catalogues of creatures. Milton follows De Doctrina Christiana in having God create not from nothing but from Chaos, a matter that ultimately derives from God himself; the creative act is a process of ordering, separating and animating a pre-existent material [[fallon1991]] [[campbell2007]]."
+   ],
+   "key": [
+    {
+     "ref": "PL 7.24–28",
+     "quote": "More safe I Sing with mortal voice, unchang'd\nTo hoarce or mute, though fall'n on evil dayes,\nOn evil dayes though fall'n, and evil tongues;\nIn darkness, and with dangers compast round,\nAnd solitude;",
+     "note": "The narrator's description of his own situation after the Restoration. The chiasmus 'fall'n on evil dayes, / On evil dayes though fall'n' links the poet's fall to the poem's subject."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Adam's Story",
+   "summary": [
+    "Adam asks about the motions of the heavenly bodies. Raphael sets out both the earth-centred and the sun-centred systems without deciding between them, and advises him to 'be lowlie wise', thinking of what concerns him. Adam, wishing to detain his guest, tells his own story: his awakening, his questions about his maker, the dream in which he was led to Paradise, the prohibition, the naming of the animals, and his request for a companion equal to himself.",
+    "God creates Eve from Adam's rib while he sleeps. Adam describes his first sight of her and confesses that, although he knows her to be inferior in mind, in her presence she seems 'so absolute' that wisdom loses its authority. Raphael, frowning, warns him not to subject reason to passion. Adam asks whether angels love; Raphael, blushing 'Celestial rosie red', answers that they do, by total mingling of their spirits. He leaves with a final warning to stand firm."
+   ],
+   "analysis": [
+    "The book opens with the four lines added in 1674 (shown in brackets in the site text). Raphael's treatment of astronomy is careful: it reflects the uncertain state of cosmology in the 1660s and Milton's interest in Galileo, while subordinating curiosity to the knowledge needed for life. The theme of the limits of knowledge here prepares for Satan's appeal to Eve's desire for knowledge in Book IX.",
+    "Adam's narrative is the counterpart of Eve's in Book IV, and his request for a fit partner, in a debate in which God appears to test him, is one of the poem's most remarkable scenes. His confession of passion shows the vulnerability that will lead him to fall: the danger lies not in Eve but in Adam's idolatrous estimate of her. Gender critics have debated whether the scene confirms or unsettles the hierarchy of Book IV [[mccolley1983]] [[gilbert1979]]."
+   ],
+   "key": [
+    {
+     "ref": "PL 8.173–174",
+     "quote": "be lowlie wise:\nThink onely what concernes thee and thy being;",
+     "note": "Raphael's advice on curiosity, a key text for the poem's theme of the limits of knowledge."
+    },
+    {
+     "ref": "PL 8.546–550",
+     "quote": "yet when I approach\nHer loveliness, so absolute she seems\nAnd in her self compleat, so well to know\nHer own, that what she wills to do or say,\nSeems wisest, vertuousest, discreetest, best;",
+     "note": "Adam's confession of the power of Eve over his judgement. The superlatives, piling up, enact the overthrow of reason that Raphael warns against."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Fall",
+   "summary": [
+    "The narrator announces that he must change his 'Notes to Tragic', and claims a subject more heroic than the wars of Achilles, Turnus and Odysseus. Satan returns to Eden by night and, after a soliloquy in which he envies the earth, enters the sleeping serpent. In the morning Eve proposes that she and Adam work apart to get more done; after a long debate, Adam lets her go.",
+    "The serpent finds Eve alone among the roses, flatters her, and claims that the fruit of a certain tree gave him the power of speech and reason. Led to the tree, Eve recognises it, but the serpent argues that the fruit will make her a goddess and that God will not punish so small a fault. She eats. After deliberating whether to keep her knowledge to herself, she offers the fruit to Adam, who, appalled, resolves to die with her and eats 'not deceav'd, / But fondly overcome with Femal charm'. They feel intoxicated, make love, wake in shame, cover themselves with leaves and blame each other."
+   ],
+   "analysis": [
+    "The invocation redefines the heroic. Milton dismisses the epic subjects of war and the romance trappings of tournaments and heraldry, and claims instead 'the better fortitude / Of Patience and Heroic Martyrdom'. The poem's true hero is not the warrior but the one who obeys and suffers: ultimately the Son, and, after the Fall, Adam and Eve [[lewalski1985]].",
+    "The separation scene is a central crux of the poem. Eve's argument, 'what is Faith, Love, Vertue unassaid', echoes Milton's own defence in Areopagitica of virtue that is tested and not cloistered; Adam's reluctant consent, 'Go; for thy stay, not free, absents thee more', respects her freedom. Critics differ on whether Eve is right, whether the Fall begins here, and whether Adam should have commanded her [[mccolley1983]] [[fish1967]].",
+    "The two falls differ: Eve is deceived by argument and flattery, Adam is not deceived but chooses Eve over God. The narrator's restraint is notable. 'She pluck'd, she eat' is told in a half-line, and the response of Nature, sighing 'That all was lost', gives the cosmic weight of an act that seems so small."
+   ],
+   "key": [
+    {
+     "ref": "PL 9.31–33",
+     "quote": "the better fortitude\nOf Patience and Heroic Martyrdom\nUnsung;",
+     "note": "The narrator's redefinition of heroism, set against the martial subjects of earlier epic."
+    },
+    {
+     "ref": "PL 9.781–784",
+     "quote": "Forth reaching to the Fruit, she pluck'd, she eat:\nEarth felt the wound, and Nature from her seat\nSighing through all her Works gave signs of woe,\nThat all was lost.",
+     "note": "The moment of the Fall. 'Eat' is the past tense, pronounced 'et'; 'That all was lost' corrects Satan's 'All is not lost' in Book I."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Judgement and Repentance",
+   "summary": [
+    "The guardian angels return to Heaven, and God sends the Son to judge the guilty pair. The Son passes sentence on the serpent, on Eve (pain in childbirth and subjection to her husband) and on Adam (toil and death), and then clothes them. Sin and Death, sensing the Fall, build a bridge across Chaos from Hell to the world. Satan returns triumphant to Pandaemonium and boasts of his success, but instead of applause he hears a universal hiss: he and his followers have become serpents, and they chew bitter ashes from illusory fruit trees.",
+    "God sends angels to alter the heavens and the earth, introducing seasons, storms and violence among the animals. Adam laments at length, wishing he had never been made and questioning God's justice, then accepts that the fault is his. When Eve approaches, he rejects her as a serpent, but she falls at his feet and asks to bear the whole punishment. Adam relents. Eve proposes that they remain childless or kill themselves; Adam, remembering the promise that her seed will bruise the serpent's head, persuades her to repent. They pray for forgiveness."
+   ],
+   "analysis": [
+    "The book contrasts two responses to the Fall. Satan's return is a parody of a triumph, and his transformation into a serpent is a poetic justice that makes visible what he has become. Adam's soliloquy, by contrast, works through despair to the recognition of his own guilt; his question 'Did I request thee, Maker, from my Clay / To mould me Man' anticipates a long tradition of protest, from Mary Shelley's Frankenstein onwards.",
+    "Eve's initiative in seeking reconciliation, and her willingness to take the punishment on herself, reverses her part in the Fall and echoes the Son's offer in Book III. Critics who see the poem as hostile to women and those who see it as honouring Eve both have to reckon with the fact that the human recovery begins with her [[mccolley1983]] [[gilbert1979]]."
+   ],
+   "key": [
+    {
+     "ref": "PL 10.743–745",
+     "quote": "Did I request thee, Maker, from my Clay\nTo mould me Man, did I sollicite thee\nFrom darkness to promote me,",
+     "note": "Adam's protest against his creation; later used as the epigraph to Mary Shelley's Frankenstein (1818)."
+    },
+    {
+     "ref": "PL 10.914–916",
+     "quote": "Forsake me not thus, Adam, witness Heav'n\nWhat love sincere, and reverence in my heart\nI beare thee, and unweeting have offended,",
+     "note": "Eve's plea to Adam, the turning point towards reconciliation."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "The Visions of Michael",
+   "summary": [
+    "The Son presents the prayers of Adam and Eve to the Father, who accepts their repentance but decrees that they must leave Paradise. Michael is sent to expel them and to show Adam the future. Eve laments leaving her flowers; Adam laments the places where he spoke with God.",
+    "Michael leads Adam to a hill and shows him a series of visions: Cain murdering Abel, the first death; a lazar-house of diseases (whose catalogue Milton lengthened by three lines in 1674, 11.485–7); the sons of Seth seduced by the daughters of Cain; war and the righteous Enoch, saved from violence and taken up to Heaven; the corruption of the world and the preaching of Noah; and the Flood. Adam weeps, but the rainbow gives him hope."
+   ],
+   "analysis": [
+    "In 1667 Books XI and XII were a single Book X; the 1674 division splits Michael's narrative at the Flood. The site text gives the 1667 readings, with the 1674 variants recorded in the notes at the end of the book. The visions are a counterpart to Anchises' review of the future in Aeneid 6, but the history they show is a history of sin and suffering, not of national glory [[quint2014]].",
+    "The education of Adam is a pedagogical process: he repeatedly misreads what he sees, and Michael corrects him. The book thus reworks the theme of knowledge. Adam now learns, painfully, what knowledge of good and evil means, and learns too that his choices have consequences for all his descendants. Michael's advice on how to live, 'Nor love thy Life, nor hate', points towards the inward virtues the last book will commend."
+   ],
+   "key": [
+    {
+     "ref": "PL 11.553–554",
+     "quote": "Nor love thy Life, nor hate; but what thou livst\nLive well, how long or short permit to Heav'n:",
+     "note": "Michael's answer to Adam's wish for death after the vision of disease."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "The Expulsion",
+   "summary": [
+    "Michael narrates the rest of history: the tyranny of Nimrod and the tower of Babel; the call of Abraham; Moses, the Exodus and the Law; the kingdom of David; the Babylonian captivity; and the coming of the Messiah, his death, resurrection and ascension. He describes the corruption of the Church after the apostles, and the Last Judgement, when the earth will become 'far happier place / Then this of Eden'.",
+    "Adam exclaims at the goodness that will bring good out of evil, uncertain whether to repent of his sin or rejoice at it. He sums up what he has learned: that obedience is best, and that suffering for truth is the highest fortitude. Michael tells him that he will have 'A paradise within thee, happier farr'. Eve wakes from a dream sent by God and accepts the promise that through her the redeemer will come. The angels descend, and Michael leads the two out of the garden. They look back at the flaming sword at the gate, shed some tears, and go out into the world."
+   ],
+   "analysis": [
+    "The five lines that open Book XII were added in 1674. Michael's account of Nimrod, who 'not content / With fair equalitie, fraternal state, / Will arrogate Dominion undeserv'd', is an explicit treatment of political tyranny: human beings have no natural right to rule other human beings. Adam's indignation, and Michael's explanation that political tyranny follows from the loss of inner liberty, connect the poem's politics to its theology [[hill1977]].",
+    "Adam's exclamation, 'full of doubt I stand, / Whether I should repent me now of sin', is the poem's expression of the idea of the 'fortunate fall', the felix culpa of the Easter liturgy, in which the Fall is good because it leads to the greater good of redemption. Lovejoy traced the paradox through Christian tradition [[lovejoy1937]].",
+    "The ending has been praised as one of the finest in English. It combines grief and hope, loss and choice: 'The World was all before them, where to choose'. Adam and Eve leave hand in hand, 'with wandring steps and slow', and their 'solitarie way' is a shared one. The quiet close, after the vast scale of the poem, returns the story to two human beings [[martz1964]]."
+   ],
+   "key": [
+    {
+     "ref": "PL 12.473–476",
+     "quote": "full of doubt I stand,\nWhether I should repent me now of sin\nBy mee done and occasiond, or rejoyce\nMuch more, that much more good thereof shall spring,",
+     "note": "The idea of the 'fortunate fall'. Adam's doubt is sincere, and the poem does not simply resolve it."
+    },
+    {
+     "ref": "PL 12.646–649",
+     "quote": "The World was all before them, where to choose\nThir place of rest, and Providence thir guide:\nThey hand in hand with wandring steps and slow,\nThrough Eden took thir solitarie way.",
+     "note": "The last lines of the poem. 'Wandring', which elsewhere in the poem suggests error, here suggests the uncertain freedom of fallen life."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "God the Father",
+   "side": "Heaven",
+   "text": "The omnipotent and omniscient Creator, who speaks mainly in Books III and V–VI, and in Book X. He explains that he made angels and men free, that his foreknowledge does not cause the Fall, and that man will receive grace. His plain, logical speech has divided readers: for some he is a just and loving God, for others, notably Empson, a tyrant [[empson1961]] [[danielson1982]]."
+  },
+  {
+   "name": "The Son",
+   "side": "Heaven",
+   "text": "The Son of God, exalted by the Father as head of the angels, who drives the rebels out of Heaven, creates the world, offers to die for mankind, and judges Adam and Eve with mercy. He is the poem's true hero, whose heroism is obedience and self-sacrifice. His subordination to the Father has been read in the light of the anti-Trinitarian theology of De Doctrina Christiana [[campbell2007]]."
+  },
+  {
+   "name": "Raphael",
+   "side": "Heaven",
+   "text": "The 'affable Arch-angel' sent to warn Adam and Eve. He eats with them, explains the order of creation, narrates the war in Heaven and the creation, and answers Adam's questions about astronomy and love, warning him against curiosity and passion. His long narrative occupies Books V–VIII."
+  },
+  {
+   "name": "Michael",
+   "side": "Heaven",
+   "text": "The archangel who leads the loyal angels in the war in Heaven, wounding Satan, and who in Books XI–XII shows and tells Adam the future history of the world before leading him and Eve out of Paradise."
+  },
+  {
+   "name": "Gabriel",
+   "side": "Heaven",
+   "text": "The archangel who guards the gate of Paradise in Book IV. He confronts Satan, captured by Ithuriel and Zephon, and debates with him until the sign of the scales sends Satan away. He also fights in the war in Heaven."
+  },
+  {
+   "name": "Abdiel",
+   "side": "Heaven",
+   "text": "The seraph who alone among Satan's followers rejects the revolt in Book V and returns to God, and who strikes the first blow against Satan in the war in Heaven. He is the poem's model of solitary faithfulness against the majority."
+  },
+  {
+   "name": "Uriel",
+   "side": "Heaven",
+   "text": "The archangel who stands guard in the sun. Deceived by Satan's disguise, he directs him to Eden, but later recognises him by his distorted expression and warns Gabriel. He shows that even the sharpest-sighted angel cannot see through hypocrisy."
+  },
+  {
+   "name": "Ithuriel and Zephon",
+   "side": "Heaven",
+   "text": "Two angels of Gabriel's guard who find Satan 'Squat like a Toad' whispering into the ear of the sleeping Eve; at a touch of Ithuriel's spear Satan starts up in his own shape."
+  },
+  {
+   "name": "Satan",
+   "side": "Hell",
+   "text": "The leader of the rebel angels, once among the highest in Heaven, who revolts in envy at the Son's exaltation and is thrown into Hell. He dominates the first books, with his defiance, eloquence and courage, and his tragic soliloquy in Book IV. Then he degenerates through a series of disguises to the serpent. Whether he is the hero of the poem has been a central critical question since the Romantics [[lewis1942]] [[waldock1947]] [[fish1967]]."
+  },
+  {
+   "name": "Beelzebub",
+   "side": "Hell",
+   "text": "Satan's second in command, the first to whom Satan speaks in Hell. In the council of Book II he proposes Satan's plan to corrupt mankind, presented as his own."
+  },
+  {
+   "name": "Moloch",
+   "side": "Hell",
+   "text": "The fiercest of the fallen angels, later worshipped with child sacrifice. In the council he argues for open war, preferring annihilation to endurance."
+  },
+  {
+   "name": "Belial",
+   "side": "Hell",
+   "text": "The most graceful and eloquent of the fallen angels, and the most dissolute. In the council he argues for passive endurance, in the hope that God's anger will subside; the narrator calls his counsel 'ignoble ease'."
+  },
+  {
+   "name": "Mammon",
+   "side": "Hell",
+   "text": "The fallen angel who, even in Heaven, looked down at the golden pavement. He leads the mining of gold for Pandaemonium and in the council argues for building a rival empire in Hell."
+  },
+  {
+   "name": "Mulciber",
+   "side": "Hell",
+   "text": "The architect of Pandaemonium, whom the Greeks called Hephaestus and the Romans Vulcan. The narrator retells the myth of his fall from Olympus and then dismisses it as an error: he fell long before, with the rebel angels."
+  },
+  {
+   "name": "Adam",
+   "side": "Eden",
+   "text": "The first man, created directly by God, whose story of his creation and of his request for a companion is told in Book VIII. He is intelligent and inquisitive but vulnerable through his love for Eve, for whose sake he eats the fruit 'not deceav'd'. After the Fall he despairs, accuses God and Eve, and finally repents and learns from Michael the meaning of history."
+  },
+  {
+   "name": "Eve",
+   "side": "Eden",
+   "text": "The first woman, created from Adam's rib. She tells of her first awakening and her attraction to her own reflection. She is deceived by Satan and eats the fruit first, but she also begins the reconciliation after the Fall and receives the promise that from her will come the redeemer. Her role is at the centre of feminist debates about the poem [[gilbert1979]] [[mccolley1983]]."
+  },
+  {
+   "name": "Sin",
+   "side": "Allegorical figures",
+   "text": "Satan's daughter, born from his head when he first conceived rebellion, and the mother of Death by him. She is a woman above and a serpent below, surrounded by hell-hounds. She holds the keys to Hell's gates and opens them for Satan; after the Fall she and Death build a bridge to the world."
+  },
+  {
+   "name": "Death",
+   "side": "Allegorical figures",
+   "text": "The son of Satan and Sin, a shapeless shadow wearing 'the likeness of a Kingly Crown'. He rapes his mother at birth, quarrels with his father at Hell's gate, and after the Fall comes to the world to devour all things."
+  },
+  {
+   "name": "Chaos and Night",
+   "side": "Allegorical figures",
+   "text": "The rulers of the realm of unformed matter between Heaven and Hell, where hot, cold, moist and dry fight endlessly. Chaos directs Satan on his journey, hoping to regain territory lost to the new creation."
+  },
+  {
+   "name": "The narrator",
+   "side": "Others",
+   "text": "The blind poet who speaks in the invocations and comments on the action. He identifies himself with the prophets and with blind poets of antiquity, and describes his danger and isolation after the Restoration. His comments sometimes seem to contradict the impressions the narrative creates, a gap at the centre of the debate between Waldock and Fish [[waldock1947]] [[fish1967]]."
+  },
+  {
+   "name": "Urania",
+   "side": "Others",
+   "text": "The Muse invoked in Book VII, named after the classical Muse of astronomy but declared by Milton to be 'The meaning, not the Name': a heavenly Muse who was with the Father before creation, sister of Wisdom."
+  },
+  {
+   "name": "Nimrod",
+   "side": "Others",
+   "text": "The 'mightie Hunter' of Genesis 10, who in Michael's account in Book XII is the first tyrant, claiming dominion over his equals, and the builder of the tower of Babel."
+  },
+  {
+   "name": "Enoch and Noah",
+   "side": "Others",
+   "text": "The 'one just Man' figures of Michael's visions in Book XI. Enoch, who speaks for justice in a world at war, is taken up to Heaven; Noah preaches repentance to a corrupt world and is saved from the Flood."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Free will and providence",
+   "text": [
+    "The theodicy of Paradise Lost depends on free will. God declares that he made angels and men 'Sufficient to have stood, though free to fall', and that his foreknowledge is not a cause: they would fall just as certainly if he had not foreseen it. Without freedom, he argues, obedience would be worthless. The poem returns again and again to the moment of choice: Satan's, Abdiel's, Eve's, Adam's.",
+    "The difficulty, which the fallen angels themselves debate in Book II, is how human freedom can coexist with divine omniscience and omnipotence. Milton's position is Arminian: grace is offered to all, and individuals decide whether to accept it. Dennis Danielson has defended the coherence of the poem's argument, while Empson saw it as an elaborate cover for divine responsibility [[danielson1982]] [[empson1961]]."
+   ]
+  },
+  {
+   "title": "Obedience and the Fall",
+   "text": [
+    "The single prohibition, not to eat the fruit of the Tree of Knowledge, is in Milton's account a 'Sole pledge' of obedience, an arbitrary test whose very arbitrariness makes it a pure expression of trust. Raphael tells Adam that his happiness depends on 'thy obedience'. The Fall is thus not about the fruit but about disobedience, which the poem's first line names as its subject.",
+    "The poem analyses the Fall psychologically. Satan's fall is caused by envy and pride; Eve's by a desire for knowledge and godhead aroused by flattery; Adam's by the love that makes him prefer Eve to God. The poem also suggests that the Fall begins before the act: in Eve's dream, in Adam's excessive passion, in the separation scene."
+   ]
+  },
+  {
+   "title": "Justifying the ways of God",
+   "text": [
+    "The poem's declared purpose is to 'justifie the wayes of God to men'. This is a theological argument and a poetic one: the poem must show a God whose actions readers can accept as just. Its success in doing so has been disputed. For many readers God is the least successful character, and the theodicy is weakened by his tone [[empson1961]].",
+    "Defenders reply that the poem's argument is not confined to God's speeches but extends to the whole design: the Son's offer, the generosity of grace, the human recovery, and the promise of a greater good. Fish argued that the reader's discomfort with God is part of the poem's strategy, revealing the reader's own fallen perspective [[fish1967]] [[danielson1982]]."
+   ]
+  },
+  {
+   "title": "The epic and the heroic redefined",
+   "text": [
+    "Milton writes in the tradition of Homer and Virgil but claims a subject 'more Heroic' than theirs. The poem systematically attributes the qualities of classical heroes (martial courage, desire for glory, eloquence, revenge) to Satan, and reserves true heroism for obedience, patience and self-sacrifice: the Son's offer, Abdiel's witness, and Adam's final understanding that 'suffering for Truths sake / Is fortitude to highest victorie' [[lewalski1985]].",
+    "This redefinition makes the poem a critique of its own genre. The war in Heaven, the most conventionally epic episode, is also the most futile; the most heroic speeches belong to Satan. David Quint reads the poem as a sustained engagement with the epic tradition, and especially with Virgil [[quint2014]]."
+   ]
+  },
+  {
+   "title": "Gender and Eve",
+   "text": [
+    "Paradise Lost sets out a hierarchy of man over woman ('Hee for God only, shee for God in him'), and makes Eve the first to fall. It has therefore been central to feminist criticism. Virginia Woolf's phrase 'Milton's bogey' became, in Gilbert and Gubar, a figure for the patriarchal poetic tradition that women writers had to confront [[gilbert1979]].",
+    "Yet the poem gives Eve intelligence, a voice and a story of her own. She argues for her freedom in the separation scene, begins the reconciliation after the Fall, and receives the final promise of redemption. Diane McColley has defended Milton's Eve as a full moral agent, and the debate continues over whether the poem reinforces or complicates hierarchy [[mccolley1983]]."
+   ]
+  },
+  {
+   "title": "Knowledge and its limits",
+   "text": [
+    "The forbidden tree is the Tree of Knowledge, and the poem is preoccupied with what can and should be known. Raphael shares much knowledge with Adam but warns him against unnecessary curiosity about the heavens. Satan tempts Eve with the promise of godlike knowledge, and, as God says in Book XI, man now has knowledge of 'Good lost, and Evil got'.",
+    "The poem does not condemn knowledge as such. Adam's learning from Michael in the final books is a positive education, and the poem itself displays vast learning. The distinction is between knowledge sought in obedience and knowledge grasped against God, and between knowledge of things and the wisdom of knowing one's place."
+   ]
+  },
+  {
+   "title": "Politics, liberty and monarchy",
+   "text": [
+    "Written by a defender of regicide after the Restoration, the poem is full of political vocabulary. Satan speaks as a republican rebel against a monarch, but Heaven is a monarchy the poem endorses. Critics have debated whether this means that Milton abandoned his republicanism, or whether his point is that only God may legitimately be a king, so that the poem's real target is the human monarchy that imitates divine rule [[hill1977]].",
+    "The political argument is clearest in Book XII, where Nimrod's tyranny over his equals is condemned, and Michael explains that the loss of inner liberty to passion leads to the loss of outward liberty to tyrants. Abdiel's definition of servitude, and Satan's hollow appeals to freedom, sharpen the poem's account of true and false liberty."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Light and darkness",
+   "text": "The poem moves between the 'darkness visible' of Hell and the unapproachable light of God. The narrator's blindness gives the contrast personal force: in the invocation to Book III he asks for an inner light to replace the outer one. Light is associated with God, truth and creation, darkness with evil and ignorance, but the poem also complicates the pattern, since God himself is shrouded in a light so bright that it seems dark."
+  },
+  {
+   "title": "Falling and rising",
+   "text": "Satan's fall from Heaven, his rise from the lake, his ascent to Eden; the angels' scale of being by which man might rise; the Fall of man; the Son's descent and ascension. Vertical movement structures the poem. The pun in 'fall'n on evil dayes' links the poet to his subject."
+  },
+  {
+   "title": "Wandering",
+   "text": "The word 'wander' and its cognates recur throughout the poem, often associated with error (from Latin errare, to wander): the devils' arguments 'in wandring mazes lost', Eve's wandering thoughts, the serpent's mazes. In the last lines, 'wandring steps and slow', the word acquires a fallen but hopeful sense of journey."
+  },
+  {
+   "title": "Epic similes",
+   "text": "Milton's long similes compare Satan and the devils to leaves, the leviathan, the moon through a telescope, locusts, bees and a vulture. They connect the poem's events to later history, classical myth and contemporary science, and often contain hidden judgements: the comparisons that seem to magnify Satan frequently foreshadow his defeat [[ricks1963]]."
+  },
+  {
+   "title": "Sight and seeing",
+   "text": "Satan's eyes from the sun, Uriel's sharp sight, God's all-seeing view, the narrator's blindness, Eve's reflection in the pool, Adam's visions in Book XI: the poem constantly asks who sees, and what sight reveals or conceals."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The Tree of Knowledge",
+   "text": "The tree whose fruit is forbidden represents not knowledge as such but the boundary of obedience. Its fruit gives knowledge of good and evil only in the sense of experiencing evil. After the Fall, the irony of Satan's promise becomes clear: in God's words in Book XI, man has knowledge of 'Good lost, and Evil got'."
+  },
+  {
+   "title": "Pandaemonium",
+   "text": "The palace of the devils, built of gold in Book I, represents the false splendour of Hell. It is a parody of Heaven and of human courts and temples; the comparison with Babylon and Egypt links it to the idolatrous empires of later history."
+  },
+  {
+   "title": "The scales in Heaven",
+   "text": "The golden scales that appear in the sky at the end of Book IV recall the scales of Zeus in the Iliad and Aeneid. They show Satan that his strength is limited, and represent the providence that weighs all events."
+  },
+  {
+   "title": "The bridge of Sin and Death",
+   "text": "The causeway that Sin and Death build across Chaos after the Fall represents the ease with which evil now enters the world. It parodies both the creative work of the Son and the imperial bridges of Xerxes."
+  }
+ ],
+ "debates": [
+  {
+   "title": "The Satanist controversy",
+   "text": [
+    "Blake wrote in The Marriage of Heaven and Hell that Milton was 'of the Devil's party without knowing it', freer when he wrote of devils than of angels and God. Shelley, in A Defence of Poetry, argued that Satan was morally far superior to Milton's God [[blake1790]] [[shelley1840]]. A. J. A. Waldock argued that the poem's narrative and its commentary are at odds: Satan's grandeur is shown, and then the narrator's corrections tell us to disbelieve what we have seen [[waldock1947]].",
+    "C. S. Lewis replied that Satan is an embodiment of pride and self-deception whose story is one of steady degeneration, from hero to politician, spy and snake [[lewis1942]]. Stanley Fish turned the problem around: the poem deliberately makes readers admire Satan in order to reveal their own fallen state, and then corrects them, so that the reader becomes the true subject of the poem [[fish1967]]. Empson, from the other side, saw Satan's case as the honest response to a tyrannical God [[empson1961]]."
+   ],
+   "cite": [
+    "blake1790",
+    "shelley1840",
+    "waldock1947",
+    "lewis1942",
+    "fish1967",
+    "empson1961"
+   ]
+  },
+  {
+   "title": "Milton's God",
+   "text": [
+    "The representation of God the Father has long been considered a weakness. In Milton's God, William Empson argued that the poem's God is wicked, and that the poem is good precisely because Milton's honesty makes this visible. He saw the poem's moral confusion as the source of its power [[empson1961]].",
+    "Dennis Danielson defended the theodicy philosophically, showing how Milton's free-will argument answers the charges of Empson and others [[danielson1982]]. Other critics argue that Milton deliberately gives God a plain style to distinguish divine truth from Satanic rhetoric, and that God's speeches are best judged in the context of the whole design [[fish1967]] [[lewalski1985]]."
+   ],
+   "cite": [
+    "empson1961",
+    "danielson1982",
+    "fish1967",
+    "lewalski1985"
+   ]
+  },
+  {
+   "title": "Eve and gender",
+   "text": [
+    "Sandra Gilbert and Susan Gubar, taking up Virginia Woolf's phrase 'Milton's bogey', read the poem as a founding text of patriarchal literary culture, whose Eve represents the subordination of women and with which women writers, from Mary Shelley to the Brontës, had to struggle [[gilbert1979]].",
+    "Diane McColley argued that this reading depends on the tradition of hostile interpretation of Eve rather than on the poem itself, and that Milton's Eve is an intelligent, responsible being who grows in wisdom and plays a central role in the regeneration [[mccolley1983]]. Later critics have explored the tension between the poem's hierarchical statements and its sympathetic portrait of Eve, and Milton's own views of marriage as expressed in his divorce tracts [[lewalski2000]]."
+   ],
+   "cite": [
+    "gilbert1979",
+    "mccolley1983",
+    "lewalski2000"
+   ]
+  },
+  {
+   "title": "The Grand Style and the Milton controversy",
+   "text": [
+    "In the 1930s T. S. Eliot and F. R. Leavis attacked Milton's style. Eliot argued that Milton wrote English like a dead language, sacrificing visual imagination to sound, and that his influence on later poetry had been harmful [[eliot1936]]. Leavis criticised the 'Grand Style' as a monotonous ritual, remote from the sensitivity of speech [[leavis1936]]. Eliot partly retracted his views in a 1947 lecture.",
+    "Christopher Ricks's Milton's Grand Style answered them with close readings that show the subtlety of Milton's syntax and wordplay, his use of Latinate senses of English words, and the way his similes and line endings create meaning [[ricks1963]]. Harold Bloom later made Milton the great precursor whose achievement all later English poets have had to struggle against [[bloom1973]]."
+   ],
+   "cite": [
+    "eliot1936",
+    "leavis1936",
+    "ricks1963",
+    "bloom1973"
+   ]
+  },
+  {
+   "title": "Milton's politics in the poem",
+   "text": [
+    "Was Paradise Lost written by a defeated revolutionary, still committed to the republican cause? Christopher Hill read the poem in the context of the radical sects of the Revolution, and saw it as Milton's attempt to understand why God had allowed the cause to fail [[hill1977]].",
+    "Other scholars stress the poem's distinction between divine and human kingship: God is the only legitimate monarch, and the poem's attacks on idolatry, pomp and tyranny (Pandaemonium, Nimrod) reflect criticism of the Restoration court. Barbara Lewalski's biography follows Milton's political commitments to the end of his life [[lewalski2000]] [[quint2014]]."
+   ],
+   "cite": [
+    "hill1977",
+    "lewalski2000",
+    "quint2014"
+   ]
+  },
+  {
+   "title": "Theology: Arianism, monism and De Doctrina Christiana",
+   "text": [
+    "The Latin treatise De Doctrina Christiana, discovered in 1823 and published in 1825, sets out heterodox views: the Son is subordinate to the Father and not coeternal with him (a position often called Arian or anti-Trinitarian), the soul dies with the body until the resurrection (mortalism), and God created the world not from nothing but from himself. If Milton wrote it, these views illuminate the poem. In 1991 William B. Hunter questioned Milton's authorship; a team led by Gordon Campbell and Thomas Corns concluded that the manuscript is Milton's work, though unfinished [[campbell2007]].",
+    "Stephen Fallon has studied Milton's monism, the view that spirit and matter are a single substance, in relation to the philosophers of his day, and has shown its importance for the poem's angels and for its account of creation [[fallon1991]]. Critics still debate how far the poem's theology is orthodox, and how far its poetic effects depend on these heterodoxies [[lewalski2000]]."
+   ],
+   "cite": [
+    "campbell2007",
+    "fallon1991",
+    "lewalski2000"
+   ]
+  },
+  {
+   "title": "The fortunate fall",
+   "text": [
+    "The idea of the felix culpa, or 'fortunate fall', holds that the Fall was ultimately good because it led to the greater good of the Incarnation and Redemption. A. O. Lovejoy traced the idea through Christian writers and showed its importance in Adam's exclamation in Book XII [[lovejoy1937]].",
+    "Critics differ on how far the poem endorses the paradox. Adam's 'full of doubt' leaves the question open, and the poem's account of the loss of Eden, and of the suffering of history, works against any simple celebration of the Fall. The poem's last lines, poised between grief and hope, preserve the ambivalence [[martz1964]]."
+   ],
+   "cite": [
+    "lovejoy1937",
+    "martz1964"
+   ]
+  },
+  {
+   "title": "The ten-book and twelve-book versions",
+   "text": [
+    "The first edition of 1667 had ten books; in the 1674 second edition Milton divided Books VII and X, adding a few lines at the openings of the new Books VIII and XII and making small revisions, so that the poem had twelve books like the Aeneid. The change brought it closer to the Virgilian model and altered its proportions, making the poem's structure turn on a central division into two halves of six books [[fowler1998]].",
+    "Critics have discussed what each arrangement emphasises. The ten-book poem has been compared with the five-act structure of tragedy, which Milton had first planned for the subject; the twelve-book poem invites a reading in two halves, with the Son's victory closing Book VI and the creation opening Book VII. Modern editions follow the twelve-book text of 1674 [[fowler1998]] [[hughes1957]] [[kerrigan2007]] [[teskey2005]]. The site text keeps the 1667 readings in twelve-book form, which lets readers see where the two versions differ."
+   ],
+   "cite": [
+    "fowler1998",
+    "hughes1957",
+    "kerrigan2007",
+    "teskey2005"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "PL 1.24–26",
+   "quote": "That to the highth of this great Argument\nI may assert th' Eternal Providence,\nAnd justifie the wayes of God to men.",
+   "who": "The narrator",
+   "explanation": "The statement of the poem's purpose at the end of the opening invocation. It announces that the poem will be a theodicy, an argument for God's justice, as well as a narrative. The word 'justifie' has both a legal and a theological sense, and 'assert' means to defend or vindicate."
+  },
+  {
+   "ref": "PL 1.106–108",
+   "quote": "All is not lost; the unconquerable Will,\nAnd study of revenge, immortal hate,\nAnd courage never to submit or yield:",
+   "who": "Satan",
+   "explanation": "Satan's first speech to Beelzebub, in Hell. The lines show the heroic defiance that impressed the Romantics, but the qualities listed include revenge and hate. The phrase 'All is not lost' is answered in Book IX by the narrator's 'That all was lost'."
+  },
+  {
+   "ref": "PL 1.263",
+   "quote": "Better to reign in Hell, then serve in Heav'n.",
+   "who": "Satan",
+   "explanation": "Satan's most famous line, which sums up his choice of pride over obedience. The antithesis of reigning and serving is central to the poem's politics: the loyal angels will argue that serving God is the true freedom."
+  },
+  {
+   "ref": "PL 3.98–99",
+   "quote": "I made him just and right,\nSufficient to have stood, though free to fall.",
+   "who": "God the Father",
+   "explanation": "The core of the poem's free-will theodicy. God created man capable of obeying and of disobeying; the responsibility for the Fall is therefore man's. The line has been taken as both the strength and the weakness of the poem's argument."
+  },
+  {
+   "ref": "PL 4.108–110",
+   "quote": "So farwel Hope, and with Hope farwel Fear,\nFarwel Remorse: all Good to me is lost;\nEvil be thou my Good;",
+   "who": "Satan",
+   "explanation": "The conclusion of Satan's soliloquy on Mount Niphates. Having admitted his guilt and his inability to repent, he deliberately chooses evil. The speech is the poem's fullest portrait of a mind trapped by its own pride."
+  },
+  {
+   "ref": "PL 9.908–910",
+   "quote": "How can I live without thee, how forgoe\nThy sweet Converse and Love so dearly joyn'd,\nTo live again in these wilde Woods forlorn?",
+   "who": "Adam",
+   "explanation": "Adam's inner speech when he learns that Eve has eaten the fruit. His love for her is real and moving, but it leads him to choose her over God. The scene shows the human sympathy that makes the Fall tragic."
+  },
+  {
+   "ref": "PL 9.1187–1189",
+   "quote": "Thus they in mutual accusation spent\nThe fruitless hours, but neither self-condemning\nAnd of thir vain contest appeer'd no end.",
+   "who": "The narrator",
+   "explanation": "The last lines of Book IX, which describe the quarrel of Adam and Eve after the Fall. 'Fruitless' puns on the fruit; the absence of self-condemnation shows how the Fall has damaged their relationship. The next book will show the beginnings of repair."
+  },
+  {
+   "ref": "PL 12.469–470",
+   "quote": "O goodness infinite, goodness immense!\nThat all this good of evil shall produce,",
+   "who": "Adam",
+   "explanation": "Adam's response to Michael's account of the Redemption, the beginning of the passage associated with the 'fortunate fall'. The poem's theodicy culminates in the promise that God will bring good out of evil."
+  },
+  {
+   "ref": "PL 12.586–587",
+   "quote": "but shalt possess\nA Paradise within thee, happier farr.",
+   "who": "Michael",
+   "explanation": "Michael's final consolation to Adam: the outward Paradise is lost, but an inward one, built on faith, patience, temperance and love, is available. The idea of an inner Paradise is central to the poem's ending [[martz1964]]."
+  },
+  {
+   "ref": "PL 12.646–649",
+   "quote": "The World was all before them, where to choose\nThir place of rest, and Providence thir guide:\nThey hand in hand with wandring steps and slow,\nThrough Eden took thir solitarie way.",
+   "who": "The narrator",
+   "explanation": "The last lines of the poem. They combine loss and freedom, solitude and companionship, and leave Adam and Eve at the beginning of human history, guided by providence and still able to choose."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Is Satan the hero of Paradise Lost?",
+   "hint": "Consider the Romantic reading (Blake, Shelley) and the replies of Lewis and Fish. Compare Satan's speeches in Books I and IV, and trace his transformations through the poem."
+  },
+  {
+   "q": "Does the poem succeed in 'justifying the ways of God to men'?",
+   "hint": "Look at God's speeches in Book III and their reception, from Pope to Empson. Consider whether the theodicy depends on God's arguments or on the whole design, including the Son and the ending."
+  },
+  {
+   "q": "How does Milton redefine heroism?",
+   "hint": "Compare the invocation to Book IX with the war in Heaven in Book VI. Think about who in the poem embodies 'the better fortitude / Of Patience and Heroic Martyrdom'."
+  },
+  {
+   "q": "Is Eve presented as inferior to Adam?",
+   "hint": "Weigh the statements of hierarchy in Book IV against Eve's arguments in the separation scene and her role in the reconciliation in Book X. Compare Gilbert and Gubar with McColley."
+  },
+  {
+   "q": "Why does the poem begin in Hell rather than with the creation?",
+   "hint": "Think about the epic convention of beginning in medias res, the effect of meeting Satan first, and how Raphael's narrative in Books V–VIII reorders the story."
+  },
+  {
+   "q": "What role do the invocations play in the poem?",
+   "hint": "Read the invocations to Books I, III, VII and IX together. Consider what they tell us about the narrator, his blindness, his political situation and his relation to his Muse."
+  },
+  {
+   "q": "Who is responsible for the Fall?",
+   "hint": "Consider God's foreknowledge, Satan's temptation, Eve's choice to work alone, Adam's consent and Adam's own choice to eat. What does the poem say about the difference between the two falls?"
+  },
+  {
+   "q": "Is Paradise Lost a political poem?",
+   "hint": "Look at Satan's republican rhetoric, the debate in Pandaemonium, Abdiel's definition of servitude, and Michael's account of Nimrod. Consider when and by whom the poem was written."
+  },
+  {
+   "q": "How does the poem treat knowledge?",
+   "hint": "Compare Raphael's advice on astronomy in Book VIII with the serpent's promises in Book IX and Michael's education of Adam in Books XI–XII."
+  },
+  {
+   "q": "How should we read the poem's ending?",
+   "hint": "Consider the idea of the fortunate fall, the 'paradise within', and the final lines. Is the ending more hopeful or more mournful?"
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "blake1790",
+   "text": "Blake, William. The Marriage of Heaven and Hell. Illuminated book. London, c. 1790–1793."
+  },
+  {
+   "id": "bloom1973",
+   "text": "Bloom, Harold. The Anxiety of Influence: A Theory of Poetry. New York: Oxford University Press, 1973."
+  },
+  {
+   "id": "campbell2007",
+   "text": "Campbell, Gordon, Thomas N. Corns, John K. Hale, and Fiona J. Tweedie. Milton and the Manuscript of De Doctrina Christiana. Oxford: Oxford University Press, 2007."
+  },
+  {
+   "id": "danielson1982",
+   "text": "Danielson, Dennis Richard. Milton's Good God: A Study in Literary Theodicy. Cambridge: Cambridge University Press, 1982."
+  },
+  {
+   "id": "eliot1936",
+   "text": "Eliot, T. S. \"A Note on the Verse of John Milton.\" Essays and Studies 21 (1936): 32–40."
+  },
+  {
+   "id": "empson1961",
+   "text": "Empson, William. Milton's God. London: Chatto & Windus, 1961."
+  },
+  {
+   "id": "fallon1991",
+   "text": "Fallon, Stephen M. Milton among the Philosophers: Poetry and Materialism in Seventeenth-Century England. Ithaca: Cornell University Press, 1991."
+  },
+  {
+   "id": "fish1967",
+   "text": "Fish, Stanley. Surprised by Sin: The Reader in Paradise Lost. London: Macmillan; New York: St Martin's Press, 1967."
+  },
+  {
+   "id": "fowler1998",
+   "text": "Fowler, Alastair, ed. Milton: Paradise Lost. 2nd ed. Longman Annotated English Poets. Harlow: Longman, 1998. First published in John Carey and Alastair Fowler, eds, The Poems of John Milton (London: Longman, 1968)."
+  },
+  {
+   "id": "gilbert1979",
+   "text": "Gilbert, Sandra M., and Susan Gubar. The Madwoman in the Attic: The Woman Writer and the Nineteenth-Century Literary Imagination. New Haven: Yale University Press, 1979."
+  },
+  {
+   "id": "hill1977",
+   "text": "Hill, Christopher. Milton and the English Revolution. London: Faber and Faber, 1977."
+  },
+  {
+   "id": "hughes1957",
+   "text": "Hughes, Merritt Y., ed. John Milton: Complete Poems and Major Prose. New York: Odyssey Press, 1957."
+  },
+  {
+   "id": "kerrigan2007",
+   "text": "Kerrigan, William, John Rumrich, and Stephen M. Fallon, eds. The Complete Poetry and Essential Prose of John Milton. New York: Modern Library, 2007."
+  },
+  {
+   "id": "leavis1936",
+   "text": "Leavis, F. R. Revaluation: Tradition and Development in English Poetry. London: Chatto & Windus, 1936."
+  },
+  {
+   "id": "lewalski1985",
+   "text": "Lewalski, Barbara Kiefer. Paradise Lost and the Rhetoric of Literary Forms. Princeton: Princeton University Press, 1985."
+  },
+  {
+   "id": "lewalski2000",
+   "text": "Lewalski, Barbara K. The Life of John Milton: A Critical Biography. Oxford: Blackwell, 2000."
+  },
+  {
+   "id": "lewis1942",
+   "text": "Lewis, C. S. A Preface to Paradise Lost. London: Oxford University Press, 1942."
+  },
+  {
+   "id": "lovejoy1937",
+   "text": "Lovejoy, Arthur O. \"Milton and the Paradox of the Fortunate Fall.\" ELH 4, no. 3 (1937): 161–179."
+  },
+  {
+   "id": "martz1964",
+   "text": "Martz, Louis L. The Paradise Within: Studies in Vaughan, Traherne, and Milton. New Haven: Yale University Press, 1964."
+  },
+  {
+   "id": "mccolley1983",
+   "text": "McColley, Diane Kelsey. Milton's Eve. Urbana: University of Illinois Press, 1983."
+  },
+  {
+   "id": "quint2014",
+   "text": "Quint, David. Inside Paradise Lost: Reading the Designs of Milton's Epic. Princeton: Princeton University Press, 2014."
+  },
+  {
+   "id": "ricks1963",
+   "text": "Ricks, Christopher. Milton's Grand Style. Oxford: Clarendon Press, 1963."
+  },
+  {
+   "id": "shelley1840",
+   "text": "Shelley, Percy Bysshe. \"A Defence of Poetry\" (written 1821). In Essays, Letters from Abroad, Translations and Fragments, edited by Mary Shelley. 2 vols. London: Edward Moxon, 1840."
+  },
+  {
+   "id": "teskey2005",
+   "text": "Teskey, Gordon, ed. Paradise Lost. Norton Critical Edition. New York: W. W. Norton, 2005."
+  },
+  {
+   "id": "waldock1947",
+   "text": "Waldock, A. J. A. Paradise Lost and Its Critics. Cambridge: Cambridge University Press, 1947."
+  }
+ ]
+}
