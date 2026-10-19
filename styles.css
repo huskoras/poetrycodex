@@ -3182,3 +3182,6 @@ a.ec-here { color: var(--accent); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .gd-box-k { color: #ec7a52; } }
 :root[data-theme="dark"] .gd-box-k { color: #ec7a52; }
 @media (min-width: 700px) { .gd-tabs { flex-wrap: wrap; overflow: visible; } }
+.gd-box + .gd-box { margin-top: -.8rem; }
+.pp-box { border-left-color: var(--gold, #b08d3c); }
+.pp-box .gd-box-k { color: var(--gold, #9a7a2e); }

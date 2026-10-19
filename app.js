@@ -5549,7 +5549,17 @@
         <p class="vs-trs" data-trp="${esc(JSON.stringify(vs.map((w) => w.translator).filter(Boolean)))}" hidden></p>
       </article>`;
     linkTranslators();
+    addWhoBox(group, ".vs-page .section-label", "beforebegin");
     restoreScroll();
+  }
+  // Under the study-guide line (or in its place), a line to the work's who's who.
+  function addWhoBox(group, sel, where) {
+    const here = location.hash;
+    peopleOf(group).then((d) => {
+      const at = app.querySelector(sel);
+      if (!d || location.hash !== here || !at || app.querySelector(".gd-box.pp-box")) return;
+      at.insertAdjacentHTML(where, `<a class="gd-box pp-box" href="#/people/${esc(d.group)}"><span class="gd-box-k">Who’s who</span><span class="gd-box-t">${num(d.people.length)} people, gods and places in ${esc(d.title)}, with where each appears</span><span aria-hidden="true">→</span></a>`);
+    });
   }
 
   // ---------- study guides: #/guide/<workGroup>[/<part>[/<n>]] ----------
@@ -5614,6 +5624,7 @@
         <p class="gd-read">${d.quoteEdition ? `<a class="shelf-dl" href="#/work/${esc(d.quoteEdition)}/${nb - 1}">Read Book ${nb}</a>` : ""}
           ${nb > 1 ? `<a href="#/guide/${esc(group)}/books/${nb - 1}">← Book ${nb - 1}</a>` : ""}${nb < d.books.length ? `<a href="#/guide/${esc(group)}/books/${nb + 1}">Book ${nb + 1} →</a>` : ""}</p>`;
     } else if (part === "characters") {
+      setTimeout(() => addWhoBox(group, ".gd-body", "afterbegin"), 0);
       const sides = [...new Set(d.characters.map((c) => c.side))];
       body = sides.map((s) => `<h2 class="gd-h">${esc(s)}</h2><dl class="gd-chars">${d.characters.filter((c) => c.side === s)
         .map((c) => `<div><dt>${esc(c.name)}</dt><dd>${guideCite(d, group, c.text)}</dd></div>`).join("")}</dl>`).join("");
@@ -5655,6 +5666,7 @@
     if (!head || app.querySelector(".gd-box")) return;
     head.insertAdjacentHTML("afterend", `<a class="gd-box" href="#/guide/${esc(group)}/${n ? "books/" + n : "overview"}">
       <span class="gd-box-k">Study guide</span><span class="gd-box-t">${n ? `Book ${n}: summary and analysis` : "Summary, themes and critical debates"}</span><span aria-hidden="true">→</span></a>`);
+    addWhoBox(group, ".detail > .gd-box", "afterend");
   }
 
   // ---------- translator pages: #/translator/<slug>, #/translators ----------
