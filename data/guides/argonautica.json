@@ -1,0 +1,684 @@
+{
+ "work": "argonautica",
+ "title": "The Argonautica",
+ "author": "Apollonius of Rhodes",
+ "quoteEdition": "argonautica-way",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Composed",
+   "value": "Alexandria, in the third century BC, probably between about 270 and 240 BC; the exact date, and whether the poem was revised, are disputed"
+  },
+  {
+   "label": "Genre",
+   "value": "Epic poem: a heroic voyage narrative written by a learned Hellenistic poet in conscious dialogue with Homer"
+  },
+  {
+   "label": "Metre",
+   "value": "Dactylic hexameter, in a Homeric literary dialect enriched with rare words and scholarly variants"
+  },
+  {
+   "label": "Length",
+   "value": "Four books, 5,835 lines of Greek (1,362; 1,285; 1,407; 1,781)"
+  },
+  {
+   "label": "Setting",
+   "value": "The heroic age, a generation before the Trojan War: from Iolcus in Thessaly through the Hellespont and Black Sea to Colchis, and home by the rivers of Europe, the western Mediterranean and the coast of Libya"
+  },
+  {
+   "label": "Narrator",
+   "value": "A highly personal third-person narrator who invokes the Muses, comments, hesitates, breaks off digressions and links the heroic past to the customs of his own day"
+  },
+  {
+   "label": "Protagonists",
+   "value": "Jason, leader of the Argonauts, and Medea, the Colchian princess and sorceress whose love wins him the Golden Fleece"
+  },
+  {
+   "label": "Conflict",
+   "value": "Jason's quest, imposed by King Pelias, to fetch the Golden Fleece from King Aeetes of Colchis, and the price Medea pays for helping him"
+  },
+  {
+   "label": "Key themes",
+   "value": "Heroism redefined; love as a destructive force; helplessness and dependence; the gods and fate; the origins of places, cults and customs; Greeks and foreigners; the voyage as a map of the known world"
+  },
+  {
+   "label": "On this site",
+   "value": "Arthur S. Way's rhymed verse translation (1901), quoted in this guide, and R. C. Seaton's Loeb prose translation (1912)"
+  }
+ ],
+ "context": [
+  "Apollonius lived in the third century BC and worked in Alexandria, the Greek capital founded in Egypt by Alexander the Great and ruled by the Ptolemies. His surname 'of Rhodes' is explained by the ancient Lives, which say he was born in Alexandria (or in Naucratis), withdrew to Rhodes after an early reading of his poem failed, and became a citizen there; some scholars think instead that the Rhodian connection simply reflects a later period of his life. A papyrus list of the heads of the royal Library (P.Oxy. 1241) names him as librarian and as tutor to a Ptolemy, between Zenodotus and Eratosthenes, which places his headship around the middle of the century [[fraser1972]] [[pfeiffer1968]]. Besides the Argonautica he wrote scholarly works on Homer and poems on the foundations of cities, which survive only in fragments.",
+  "The Library and the Museum, the research community attached to it, made Alexandria the centre of a new kind of literature. Its poets were also scholars: they edited Homer, catalogued earlier writers and collected rare myths and local traditions. Their poetry is learned, allusive and self-conscious, prizing polish and novelty over bulk. The Argonautica is the one long epic of this world to survive. It retells a story older than the Iliad itself (the Odyssey already calls the Argo 'known to all'), and its main literary model besides Homer is Pindar's Fourth Pythian Ode, but Apollonius treats every inherited episode as a chance to show how differently it can be told [[hunter1993]] [[fantuzzi2004]].",
+  "The ancient Lives say that Apollonius was a pupil of Callimachus, the leading poet of the age, and later sources speak of a bitter quarrel between them over long epic, which Callimachus was supposed to have despised. Modern scholarship is sceptical. The story rests on late and confused evidence, the so-called pupil may simply be a reflection of their being librarians in turn, and the poems of both men show close and often friendly engagement with each other's work. Mary Lefkowitz showed how ancient biographies manufactured such quarrels out of the poets' own texts, and Alan Cameron argued that Callimachus' polemics were never aimed at epic as such [[lefkowitz1980]] [[cameron1995]].",
+  "The poem is a Homeric epic in metre, language and many of its devices: invocations, catalogues, similes, assemblies, divine councils. But it is about a quarter of the length of the Iliad, and its narrator is far more visible than Homer's. He speaks of his own song, admits uncertainty, asks the Muse for help, and repeatedly explains that a rite or place name 'still' bears witness to what the heroes did. This interest in origins (aitia) ties the heroic past to the Greek world of the poet's day, including places that mattered to the Ptolemies such as Cyrene in Libya. The hero, too, is new. Jason is often at a loss, a quality the poem marks with the word amēchaniē, 'helplessness', and he succeeds through charm, diplomacy and the help of others, above all Medea [[hunter1993]] [[lawall1966]].",
+  "The Argonautica was read closely at Rome. Varro of Atax translated it into Latin in the first century BC; Catullus, Virgil and Ovid all drew on it; and Valerius Flaccus wrote a new Latin Argonautica in the Flavian period. Virgil's Dido in Aeneid 4 is the most famous descendant of Apollonius' Medea, and his epic as a whole is now understood to be shaped by the Argonautica almost as deeply as by Homer [[nelis2001]]. Modern English readers have it in several translations, among them those of E. V. Rieu, Richard Hunter, Peter Green and William Race [[rieu1959]] [[hunter1993b]] [[green1997]] [[race2008]]; this site offers the rhymed version of Arthur S. Way (1901), quoted throughout this guide, and the literal prose of R. C. Seaton's Loeb edition (1912) [[way1901]] [[seaton1912]]. Way's lines do not correspond one-to-one to the Greek, so references below give the Greek book and line numbers."
+ ],
+ "plot": [
+  "King Pelias of Iolcus has been warned by an oracle to beware a man wearing one sandal. When Jason arrives at a festival having lost a shoe in a river, Pelias sends him to bring back the Golden Fleece from Colchis, at the far end of the Black Sea, where it hangs in a grove guarded by a serpent. The fleece belonged to the ram that carried Phrixus away from his murderous stepmother; Phrixus sacrificed it and settled with King Aeetes, son of the Sun. Jason gathers the best heroes of Greece, among them Heracles, Orpheus, Peleus, the twins Castor and Polydeuces and the winged sons of the North Wind, and they sail in the Argo, built with Athena's help.",
+  "On the way they stay with the women of Lemnos, who have murdered their menfolk, and Jason becomes the lover of their queen, Hypsipyle. Among the Doliones they kill their own host, King Cyzicus, in a night battle fought by mistake. In Mysia the boy Hylas is pulled into a spring by a nymph, and Heracles, searching for him, is left behind. Polydeuces kills the brutal boxer-king Amycus; the Argonauts free the blind prophet Phineus from the Harpies, and with his advice, and Athena's hand, they pass the Clashing Rocks into the Black Sea. After further losses and adventures along its southern coast they reach Colchis.",
+  "Hera and Athena ask Aphrodite to make Aeetes' daughter Medea, a priestess of Hecate skilled in drugs, fall in love with Jason. Eros shoots her. Aeetes sets Jason an impossible test: he must yoke two fire-breathing bronze bulls, plough the field of Ares, sow it with serpent's teeth and kill the armed men who spring up. After a night of torment Medea gives Jason a magic ointment, and he passes the test. Fearing her father, she flees to the Argo, lulls the serpent to sleep and helps Jason take the fleece.",
+  "The Colchians pursue them. Medea lures her brother Apsyrtus, the Colchian leader, into a trap, and Jason murders him. The killing angers Zeus, and the Argo is sent on a long detour up the rivers of Europe to be purified by Medea's aunt Circe. Guided by Hera and the sea-nymph Thetis, the heroes pass the Sirens and the Wandering Rocks and reach the Phaeacians, where Jason and Medea are married in haste so that she cannot be handed back to the Colchians. A storm then drives them onto the shoals of Libya; they carry the ship across the desert, find their way to the sea with the help of the god Triton, and, after Medea destroys the bronze giant Talos on Crete, sail home to Pagasae."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Gathering and the First Landfalls",
+   "summary": [
+    "The poet begins with Apollo and the oracle that made Pelias fear the man with one sandal, then lists the heroes who answered Jason's call, region by region, from Orpheus to the sons of Boreas. At Pagasae the crew launch the Argo and, at Jason's request, choose a leader; they want Heracles, who refuses and insists on Jason. Jason's mother laments as he leaves. At the first evening's feast the boastful Idas is silenced by Orpheus, whose song tells how the world was made.",
+    "The first landfall is Lemnos. A year earlier its women, cursed by Aphrodite, killed all their men; only the queen, Hypsipyle, secretly saved her father. Now, fearing for their future, they invite the strangers in. Jason goes to the palace wearing a richly embroidered cloak, Athena's gift, and Hypsipyle offers him her father's throne. The Argonauts linger until Heracles shames them into leaving. After the mysteries of Samothrace they enter the Propontis and are welcomed by King Cyzicus of the Doliones; they defeat a band of six-armed earthborn giants, but, driven back that night by contrary winds, they are taken for enemies and kill their host in the dark. His young wife Cleite hangs herself.",
+    "In Mysia Heracles breaks his oar in a rowing contest and goes into the woods for a new one. His companion Hylas, fetching water, is pulled into a spring by a nymph who has fallen in love with him; Polyphemus hears his cry, and he and Heracles search all night. At dawn the Argo sails without them. Telamon accuses Jason of abandoning Heracles on purpose, until the sea-god Glaucus rises from the waves to declare that Zeus intends Heracles for other labours."
+   ],
+   "analysis": [
+    "The book is built on the model of an Iliad in miniature, with an invocation, a catalogue of heroes and a series of assemblies, but almost every element is turned. The proem begins not with the Muse but with Apollo, and it plunges into the story through its cause, the oracle and the sandal, rather than through a single wrath. The catalogue is not of armies but of individuals, many of whom will barely act again. The choice of a leader, which in Homer would be settled by birth and might, becomes a vote, and the man everyone wants declines. From the start the poem raises the question of what makes a leader, and its answer is unsettling [[clauss1993]].",
+    "Jason's two great moments in the book are not feats of arms. He wins Hypsipyle in a scene modelled on Odysseus' meeting with Nausicaa, and he walks to her palace like a bright star that a girl watches from her window, an image of erotic attraction rather than martial glory. The cloak he wears is described in a long ekphrasis that rivals Akhilleus' shield, but where Homer's shield shows a world of cities, farms and war, Jason's cloak shows scenes of love, rivalry and seduction. The heroes' delay on Lemnos, and the women's own violence, also anticipate the darker erotic story of Medea [[beye1982]] [[hunter1993]].",
+    "The loss of Heracles closes the book. He is the old-style hero, huge, impatient and self-sufficient, and the Argo is almost too small for him: he breaks his oar and is left behind, as if the poem could not contain him. The Hylas episode is told with a delicacy that suits Hellenistic taste, and the narrator's refusal to tell the story of Heracles and Theiodamas in full is typical of his voice: he selects and steers, and shows that he is doing so. The episode ends with an aition, a ritual search for Hylas that the people of Cius still perform, linking the myth to the poet's own world."
+   ],
+   "key": [
+    {
+     "ref": "Arg. 1.1–4",
+     "quote": "First in my song shalt thou be, O Phœbus, the song that I sing\nOf the heroes of old, who sped, at the hest of Pelias the king,\nWhen down through the gorge of the Pontus-sea, through the Crags Dark-blue,\nOn the Quest of the Fleece of Gold the strong-ribbed Argo flew.",
+     "note": "The proem begins with Apollo rather than a Muse and calls the heroes 'men of old', marking the distance between the poet and his subject. Its compression is itself a statement of poetic style."
+    },
+    {
+     "ref": "Arg. 1.779–81",
+     "quote": "Lovesick for the youth who is far away amid alien men,\nHer betrothed, unto whom her parents shall wed her on some glad day:\nSo as a star was the hero treading the cityward way.",
+     "note": "Homer compares warriors to stars of ill omen; Apollonius compares Jason to a star seen through the eyes of a girl longing for her bridegroom. The simile defines his heroism as beauty and attraction, the quality that will win both Hypsipyle and Medea."
+    },
+    {
+     "ref": "Arg. 1.1220",
+     "quote": "But the story thereof should lead me far from my song astray.",
+     "note": "The narrator breaks off the tale of Heracles' violence against Theiodamas. Such moments make the act of selection visible: the poem constantly shows what it is choosing not to tell."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Amycus, Phineus and the Clashing Rocks",
+   "summary": [
+    "In the land of the Bebrycians the savage King Amycus forces every stranger to box with him. Polydeuces accepts, and after a long, closely described bout kills him with a blow above the ear; a battle with the Bebrycians follows. The Argonauts then reach Phineus, a blind old prophet whom Zeus punishes for revealing too much of the divine will: whenever he eats, the Harpies swoop down to snatch or foul his food. The winged sons of Boreas, Zetes and Calais, chase them away, and Iris swears by the Styx that they will not return. In gratitude Phineus foretells the voyage ahead, though he warns that he may not tell everything.",
+    "Following his instructions, the heroes release a dove before the Clashing Rocks. It passes, losing only the tip of its tail; the Argo follows, and when it is caught between the rocks Athena pushes it through with one hand. The rocks then fix themselves in place for ever. Jason, in a strange speech, confesses his despair and his regret at accepting the quest, and the crew respond with cheers. On the island of Thynias they see Apollo striding past at dawn and found a cult in his honour.",
+    "Among the Mariandynians King Lycus welcomes them as the slayers of his enemy Amycus, but the seer Idmon is killed by a boar and the helmsman Tiphys dies of sickness; Ancaeus takes the steering oar. They sail along the southern coast of the Black Sea, past the Amazons and strange peoples such as the Chalybes, who work iron, and the Mossynoeci, whose customs invert those of the Greeks. On the island of Ares they drive off birds that shoot feathers like arrows and rescue the shipwrecked sons of Phrixus, Aeetes' grandsons, who agree to guide them. Passing the Caucasus, they hear the cries of Prometheus under the eagle, and at nightfall they enter the river Phasis in Colchis."
+   ],
+   "analysis": [
+    "Book 2 is the most episodic of the four, a sequence of encounters arranged along the map of the Black Sea, and it is here that critics have most often debated whether the poem has real unity. One answer is that its structure is that of the journey itself: Phineus' prophecy gives the reader a route in advance, and the narrative then ticks off its stages, so that the interest lies less in what will happen than in how it is told. The book also mixes registers with deliberate variety: a brutal boxing match, a grotesque scene of starvation, an epiphany of almost mystical calm, and ethnographic catalogues of the kind found in historians [[hunter1993]] [[papanghelis2008]].",
+    "Phineus is an image of the poet's own position. Punished for telling mortals too much, he now chooses his words, withholds some knowledge and lets the gods keep their secrets; the narrator, too, repeatedly declines to say what is unspeakable or what he does not know. The boxing match with Amycus, by contrast, is a deliberately Homeric display piece, rewritten with technical detail and a simile drawn from shipbuilding, and it shows that Apollonius can do the traditional heroic scene when he chooses [[hutchinson1988]].",
+    "Jason's speech after the Clashing Rocks is the key passage for the debate about his character. He tells Tiphys that he was wrong to accept the quest and lies awake every night for fear of what may happen to his men. The narrator says he is 'testing' the crew, and their cheering restores him, but readers have long wondered how much of the despair is pretence. The scene is typical of the poem's ambivalent hero: anxious, self-aware, dependent on others' support, and capable of using his own weakness to bind his followers to him [[lawall1966]] [[clauss1993]]."
+   ],
+   "key": [
+    {
+     "ref": "Arg. 2.79–82",
+     "quote": "And even as when the shipwrights with hammers mightily swinging\nSmite on the beams of a galley, driving the clamps close-clinging\nSharply together, that bang upon clang cometh crashing and ringing,",
+     "note": "Homeric fighting is often compared to nature; here the blows of the boxers are compared to the work of shipbuilders, a fitting image for a poem about a ship, and a sign of Apollonius' taste for technical detail."
+    },
+    {
+     "ref": "Arg. 2.604–6",
+     "quote": "But the Crags in the selfsame place that moment were rooted fast\nEach hard against other for ever, as fated they were to remain\nBy the Blest, when a man in his ship should have passed therethrough unslain.",
+     "note": "The Argo's passage changes the world permanently: the moving rocks become fixed landmarks. The voyage is a founding event that opens the sea to later Greek sailors."
+    },
+    {
+     "ref": "Arg. 2.622–5",
+     "quote": "'Ah, Tiphys, to what end thus wouldst thou hearten me in my grief?\nI have sinned: with baneful and cureless madness have I transgressed.\nFor I ought, in the very hour when Pelias uttered his hest,\nTo have straightway refused this Quest, yea, though I were doomed to die",
+     "note": "Jason's confession of helplessness, just after the crew's greatest success, is the clearest instance of the poem's unheroic leader. Whether he means it or is testing his men, the speech shows leadership as a matter of managing fear."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Medea's Love and Jason's Ordeal",
+   "summary": [
+    "The poet calls on Erato, Muse of love poetry. On Olympus Hera and Athena, unsure how to help Jason, visit Aphrodite, who agrees to persuade her son Eros to make Medea fall in love with him. They find the boy cheating Ganymede at knucklebones, and Aphrodite bribes him with a wonderful golden ball once made for the infant Zeus. Jason and a few companions go to Aeetes' palace, which Hephaestus built and adorned with marvels. As they enter, Eros slips in unseen and shoots Medea, and love burns in her like a fire kindled from a single brand. Aeetes, angry and suspicious, sets his challenge: Jason must yoke the fire-breathing bulls, plough the field of Ares, sow the serpent's teeth and kill the warriors who spring from them, all in a single day. Jason accepts in despair.",
+    "Argus, Medea's nephew, suggests that she might help with her drugs, and he approaches her through his mother Chalciope, Medea's sister. Medea dreams that she herself performs the test. Torn between shame and desire, she agrees to help Chalciope's sons, and at night, alone, she debates whether to save Jason or die; she takes out her box of poisons to kill herself, then, recoiling from death, decides to help. At dawn she drives to the temple of Hecate and meets Jason, who appears like the star Sirius, splendid and baleful. She gives him a drug made from a flower that sprang from Prometheus' blood and tells him how to use it. He speaks of Ariadne, who helped Theseus and was rewarded; she asks him to remember her when he is home.",
+    "At midnight Jason sacrifices to Hecate as Medea instructed, and the goddess appears among serpents and torches. Next day, his body made invulnerable by the drug, he yokes the bulls, ploughs the field and sows the teeth. When the earthborn warriors rise, glittering like stars, he throws a great stone among them, as Medea advised, so that they fight one another, and he cuts down the rest. Aeetes returns to his palace planning treachery."
+   ],
+   "analysis": [
+    "Book 3 is the most celebrated part of the poem and one of the founding texts of the literature of love. The divine scenes are almost comic: the goddesses of war and marriage pay a social call on the goddess of love, who complains about her unruly son, and Eros is a spoilt child cheating at a game. Yet the arrow he shoots causes real anguish. Apollonius sets the light, domestic Olympus beside a deeply serious human passion, and the contrast makes Medea's suffering more vivid. Hunter's commentary on this book is the best guide to its language and its allusions [[hunter1989]].",
+    "Medea's love is presented from the inside with a psychological detail new to epic. The narrator follows her blushes, her glances, her dreams and her changes of mind, and her night monologue (3.744–824) is a drama of conflicting impulses: shame before her family and the Colchian women, pity for her sister's sons, fear for Jason, and the thought of suicide. Behind her stands the Medea of Euripides, who will kill her children in Corinth; Apollonius' reader knows her future, and the innocence of this young girl is coloured by that knowledge. The scene also draws on the tradition of tragic monologue and on Homer's Nausicaa, Penelope and Andromache [[hunter1989]] [[fantuzzi2004]].",
+    "The meeting at Hecate's temple reverses the epic roles: the girl holds the power and gives the instructions, and the hero, standing silent, can only persuade. Jason's reference to Ariadne is double-edged, since every reader knew that Theseus abandoned her; the poem's allusions repeatedly let us see more than Medea does. The ordeal itself is told with Homeric grandeur, but it is a triumph made possible by drugs and by Medea's plan, and the comparison of the earthborn warriors to stars, and of Jason to Sirius, keeps beauty and menace together."
+   ],
+   "key": [
+    {
+     "ref": "Arg. 3.296–8",
+     "quote": "So, burning in secret, about her heart did he coil and creep,\nLove the destroyer: her soft cheeks' colour went and came,\nPale now, and anon, through her soul's confusion, with crimson aflame.",
+     "note": "The simile compares Medea's love to a fire that a poor working woman kindles from one small brand before dawn. The Greek calls Eros oulos, 'destructive', a word close to the one Homer applies to Akhilleus' wrath in the Iliad's opening line: love here has the force of epic anger."
+    },
+    {
+     "ref": "Arg. 3.751–2",
+     "quote": "But not o'er Medea did sleep sweet dews of forgetfulness shake;\nFor many a care in her yearning for Jason held her awake,",
+     "note": "After a calm picture of a whole world asleep, Medea alone lies awake. Virgil imitated this contrast for the sleepless Dido in Aeneid 4."
+    },
+    {
+     "ref": "Arg. 3.956–61",
+     "quote": "Stately striding, as out of the ocean doth Sirius uprise,\nWho climbeth the sky most glorious and clear to discern from afar,\nBut unto the flocks for measureless mischief a baleful star:",
+     "note": "Seen through Medea's eyes, Jason is radiant and dangerous at once. Homer used the same star for Akhilleus advancing on Hector; here the menace is erotic and points to the harm Jason will bring her."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Flight, Murder and the Long Way Home",
+   "summary": [
+    "The narrator asks the Muse whether Medea fled from love or fear. Knowing that her father suspects her, she slips out of the palace at night and reaches the Argo, where Jason swears to marry her. She lulls the serpent with song and drugs, and Jason takes the fleece, which shines like moonlight. The Argonauts row away before dawn. The Colchians pursue in two fleets; the one led by Medea's brother Apsyrtus enters the Adriatic by a branch of the Danube and traps the Argo. The heroes agree that Medea should be left in the custody of a king who will decide whether she must go home. Medea, furious, accuses Jason of betrayal, and together they plan her brother's death: she lures him to a meeting at a temple of Artemis on an island, and Jason kills him from ambush. The Colchians scatter and settle in the region.",
+    "Zeus is angered by the murder. A speaking beam in the Argo's keel announces that they must be purified by Circe, and the ship sails up the Eridanus (Po), into the Rhodanus (Rhône), and across the lakes of the Celts, before reaching the western sea and Circe's island, where Medea's aunt performs the rite but sends her away in horror. Hera enlists the sea-nymph Thetis, the estranged wife of Peleus, and the Nereids carry the ship past the Wandering Rocks after Orpheus has drowned out the Sirens' song. Among the Phaeacians the second Colchian fleet demands Medea; King Alcinous rules that she must be returned if she is still a virgin, and his queen Arete warns the couple, who are married that night in a sacred cave, with the fleece as their bridal bed.",
+    "A storm then drives the Argo onto the shoals of the Syrtis in Libya. The heroes despair, until the local goddesses of the land appear to Jason and tell him how to save them: they carry the ship on their shoulders for twelve days across the desert to Lake Tritonis. They find the garden of the Hesperides, where Heracles passed the day before, and lose Canthus and the seer Mopsus. The god Triton gives Euphemus a clod of earth and shows them the way to the sea. On Crete Medea destroys the bronze giant Talos with the evil eye; on the island of Anaphe Apollo saves them from darkness; and after a last stop on Aegina they reach Pagasae, where the poet bids them farewell."
+   ],
+   "analysis": [
+    "The final book is the longest and the most varied. Its first half is dominated by Medea, who becomes the effective leader of the expedition, and by the murder of Apsyrtus, the poem's moral nadir. The narrator's outburst against 'ruthless Love' just before the killing places responsibility on Eros as well as on the lovers, and the details of the scene, Jason cutting off the corpse's extremities and spitting out its blood to avert vengeance, are deliberately repellent. Medea's crimes in later myth, and her killing of her children in Euripides, are no longer far away [[hunter1993]].",
+    "The return journey is a feat of learned geography. Apollonius sends the Argo through a combination of rivers and seas that no ship could sail, drawing on rival traditions about the route and on the geographical science of his day, and he overlays it on the wanderings of Odysseus: Circe, the Sirens, the Wandering Rocks, the cattle of the Sun and the Phaeacians all reappear. The heroes thus pass, a generation before Troy, through the places that Odysseus will visit, so that the Argonautica claims a kind of priority over Homer while openly depending on him [[vian1974]] [[papanghelis2008]].",
+    "The Libyan episode is especially important for the poem's relation to its own time. The clod of earth that Triton gives Euphemus becomes the island of Thera, whose colonists later founded Cyrene in Libya, a city closely tied to the Ptolemaic court. The book ends with a string of aitia, explanations of cults and customs at Anaphe and Aegina, and with the narrator's farewell to the heroes, who are called 'a race of blessed chieftains'. The voyage ends quietly, before any return to Pelias or any story of Corinth, leaving the reader to supply the future the poem has foreshadowed [[stephens2003]] [[mori2008]]."
+   ],
+   "key": [
+    {
+     "ref": "Arg. 4.1–3",
+     "quote": "Now take thou up the story, O Goddess of Song, and sing\nThe afflictions and thoughts of the Kolchian maid; for as touching this thing\nIn a tempest of wilderment whirled is my soul, that I know not to say",
+     "note": "The narrator confesses that he cannot judge Medea's motives, whether love or fear. Uncertainty about her inner life becomes part of the story."
+    },
+    {
+     "ref": "Arg. 4.445–7",
+     "quote": "Ah, ruthless Love, great grief, great curse to the sons of earth!\nOf thee fell feuds, and anguish-moans, and laments have birth;\nFrom thee therewithal unnumbered woes as a flood forth burst.",
+     "note": "Just before the murder of Apsyrtus the narrator speaks in his own voice, cursing Eros. The outburst echoes the poem's earlier image of 'Love the destroyer' and frames the crime as the work of passion."
+    },
+    {
+     "ref": "Arg. 4.1673–5",
+     "quote": "Zeus Father, awe as a wind on my spirit bloweth chill,\nSeeing how by disease not alone, nor by wounds, the doom of ill\nMeeteth us, yea, how one from afar shall work our bane!",
+     "note": "Even the narrator is shaken by Medea's power over Talos. The victory that brings the heroes home is a display of the dark magic that will make her terrible in later legend."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Jason",
+   "side": "Argonauts",
+   "text": "Son of Aeson, sent by his uncle Pelias to fetch the Golden Fleece. He is chosen leader only after Heracles refuses, and he is often anxious, passive or 'at a loss' (amēchanos). His gifts are beauty, eloquence, tact and the ability to win help, especially from women: Hypsipyle on Lemnos and Medea in Colchis. He accomplishes the ordeal of the bulls only with Medea's drugs, and he murders Apsyrtus from ambush. Critics disagree about whether he is a failed hero, an anti-hero or a new kind of hero suited to a new age."
+  },
+  {
+   "name": "Heracles",
+   "side": "Argonauts",
+   "text": "Son of Zeus and the strongest of the Argonauts, the crew's first choice as leader. He shames his companions out of their idleness on Lemnos, but he belongs to an older, more violent heroism and is left behind in Mysia while searching for Hylas. He continues to haunt the poem: in Libya the Argonauts arrive at the garden of the Hesperides just after he has passed."
+  },
+  {
+   "name": "Hylas",
+   "side": "Argonauts",
+   "text": "Heracles' young companion and squire. While fetching water at a spring in Mysia he is pulled into the water by a nymph who has fallen in love with him. His loss separates Heracles from the expedition."
+  },
+  {
+   "name": "Orpheus",
+   "side": "Argonauts",
+   "text": "The Thracian singer. He calms quarrels with a song about the creation of the world, leads the crew's hymns and rituals, and saves them from the Sirens by drowning out their song. He is, among other things, a figure of the poet."
+  },
+  {
+   "name": "Polydeuces and Castor",
+   "side": "Argonauts",
+   "text": "The twin sons of Leda. Polydeuces, the boxer, accepts Amycus' challenge and kills him."
+  },
+  {
+   "name": "Peleus and Telamon",
+   "side": "Argonauts",
+   "text": "Brothers, the fathers of Akhilleus and of Ajax. Peleus is a steady counsellor, and his estranged wife Thetis helps the Argo past the Wandering Rocks. Telamon furiously accuses Jason of leaving Heracles behind on purpose and later apologises."
+  },
+  {
+   "name": "Zetes and Calais",
+   "side": "Argonauts",
+   "text": "The winged sons of Boreas, the North Wind. They chase the Harpies away from Phineus."
+  },
+  {
+   "name": "Idmon and Mopsus",
+   "side": "Argonauts",
+   "text": "The expedition's seers. Idmon joins knowing he will die on the voyage and is killed by a boar among the Mariandynians; Mopsus, who interprets the omens, dies of a snakebite in Libya."
+  },
+  {
+   "name": "Tiphys and Ancaeus",
+   "side": "Argonauts",
+   "text": "The helmsmen. Tiphys steers the Argo through the Clashing Rocks but dies of sickness on the Black Sea coast; Ancaeus takes his place."
+  },
+  {
+   "name": "Euphemus",
+   "side": "Argonauts",
+   "text": "A son of Poseidon, able to run over the waves. He releases the dove at the Clashing Rocks, and he receives from Triton the clod of earth that will become the island of Thera, from which Cyrene was later colonised."
+  },
+  {
+   "name": "Idas",
+   "side": "Argonauts",
+   "text": "A boastful, irreverent warrior who scorns the reliance on Aphrodite and on a girl's help, the voice of an old-fashioned heroism that the poem treats as crude."
+  },
+  {
+   "name": "Medea",
+   "side": "Colchians",
+   "text": "Daughter of Aeetes, priestess of Hecate and a skilled sorceress. Struck by Eros, she falls helplessly in love with Jason, and after a night of agonised debate she gives him the drug that lets him survive the ordeal. She flees with the Argonauts, puts the serpent to sleep, lures her brother to his death, marries Jason among the Phaeacians and destroys Talos. The poem shows her as a frightened, passionate girl while never letting the reader forget the murderous Medea of later legend."
+  },
+  {
+   "name": "Aeetes",
+   "side": "Colchians",
+   "text": "King of Colchis and son of the Sun. Proud, suspicious and violent, he suspects his grandsons of plotting against him and sets Jason a test designed to kill him."
+  },
+  {
+   "name": "Chalciope",
+   "side": "Colchians",
+   "text": "Medea's elder sister, widow of Phrixus and mother of his sons. Medea uses concern for her and her children as a cover for her love."
+  },
+  {
+   "name": "Apsyrtus",
+   "side": "Colchians",
+   "text": "Medea's half-brother, who leads the Colchian pursuit. He is lured by Medea to a temple of Artemis and murdered by Jason."
+  },
+  {
+   "name": "Argus, son of Phrixus",
+   "side": "Colchians",
+   "text": "One of the four sons of Phrixus rescued by the Argonauts on the island of Ares. He guides them to Colchis and suggests asking Medea for help. (He is not the Argus who built the Argo.)"
+  },
+  {
+   "name": "Hypsipyle",
+   "side": "Women",
+   "text": "Queen of Lemnos, who alone spared her father when the women killed their men. She welcomes Jason and offers him her throne; her parting from him foreshadows Medea's story and Virgil's Dido."
+  },
+  {
+   "name": "Circe",
+   "side": "Women",
+   "text": "Sorceress, sister of Aeetes and aunt of Medea. She purifies Jason and Medea of Apsyrtus' murder but, learning what they have done, sends Medea away."
+  },
+  {
+   "name": "Arete",
+   "side": "Women",
+   "text": "Queen of the Phaeacians and wife of Alcinous. She pities Medea and warns the couple of Alcinous' ruling so that they can marry in time."
+  },
+  {
+   "name": "Hera",
+   "side": "Gods and others",
+   "text": "Jason's protector, who wants to punish Pelias for neglecting her worship. She plans the help of Medea and guides the return voyage."
+  },
+  {
+   "name": "Athena",
+   "side": "Gods and others",
+   "text": "Patroness of the Argo, which she helped to build, and of Jason, whose cloak she made. She pushes the ship through the Clashing Rocks."
+  },
+  {
+   "name": "Aphrodite and Eros",
+   "side": "Gods and others",
+   "text": "The goddess of love and her son, a spoiled, mischievous child who is bribed with a golden ball to shoot Medea. The comedy of their scene contrasts with the suffering his arrow causes."
+  },
+  {
+   "name": "Thetis",
+   "side": "Gods and others",
+   "text": "Sea-nymph and mother of Akhilleus, who had left Peleus in anger. At Hera's request she and her sister Nereids carry the Argo past the Wandering Rocks."
+  },
+  {
+   "name": "Phineus",
+   "side": "Gods and others",
+   "text": "A blind prophet punished by Zeus for revealing too much and tormented by the Harpies. Freed by the sons of Boreas, he foretells the Argonauts' route."
+  },
+  {
+   "name": "Amycus",
+   "side": "Gods and others",
+   "text": "King of the Bebrycians, who forces every stranger to box with him. He is killed by Polydeuces."
+  },
+  {
+   "name": "Pelias",
+   "side": "Gods and others",
+   "text": "King of Iolcus, Jason's uncle, who sends him on the quest in the hope that he will not return."
+  },
+  {
+   "name": "Talos",
+   "side": "Gods and others",
+   "text": "A giant of bronze, last of the bronze race, who guards Crete by throwing rocks. Medea destroys him with the evil eye, and he bleeds to death from a vein in his ankle."
+  },
+  {
+   "name": "Triton",
+   "side": "Gods and others",
+   "text": "The sea-god of Lake Tritonis in Libya. In human form he gives Euphemus a clod of earth and shows the Argonauts the way out to the sea."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Heroism redefined",
+   "text": [
+    "The Argonautica asks what heroism can mean after Homer. Its leader is chosen by vote, is often helpless, and succeeds by persuasion, charm and the help of a woman rather than by strength. The old type of hero is represented by Heracles, who is left behind, and by Idas, whose boasts are mocked. Some readers see Jason as a failure, others as an anti-hero, others as a modern, cooperative leader suited to a world in which no one man can do everything [[lawall1966]] [[clauss1993]] [[beye1982]].",
+    "The crew as a group is the poem's real hero in many episodes. Different Argonauts meet different tests: Polydeuces boxes, the Boreads fly, Orpheus sings, Euphemus releases the dove. Heroism is distributed, and the leader's role is to hold the group together."
+   ]
+  },
+  {
+   "title": "Love as a destructive force",
+   "text": [
+    "Eros in the Argonautica is a mischievous child and a terrible power. Medea's love is described in images of fire, wounding and sickness, and the narrator curses 'ruthless Love' as the cause of countless woes. Love wins Jason the fleece, but it also leads Medea to betray her family and to take part in her brother's murder. The poem treats erotic passion with a seriousness that earlier epic reserved for anger and war [[hunter1989]].",
+    "Love also structures the voyage. Hypsipyle on Lemnos, the nymph who takes Hylas, Cleite's suicide, Thetis' broken marriage and Medea's wedding among the Phaeacians form a sequence of stories of desire, loss and separation."
+   ]
+  },
+  {
+   "title": "Helplessness and dependence",
+   "text": [
+    "The word amēchaniē, 'helplessness' or 'lack of means', recurs at critical moments: when Jason hears Aeetes' terms, when the heroes are stranded in Libya, when he thinks of the dangers ahead. Mortal resource is constantly shown to be insufficient. The heroes need the gods, prophets, local guides and, above all, Medea; and their gratitude takes the form of cults and rites that the narrator says still exist."
+   ]
+  },
+  {
+   "title": "Origins and the present",
+   "text": [
+    "The narrator repeatedly explains that a place, a ritual or a custom of his own day began with the Argonauts: the search for Hylas at Cius, the islands named after Apsyrtus, the cave of Medea on Corcyra, the ribald jesting at the festival on Anaphe, the water-carrying race on Aegina. These aitia (explanations of origins) make the voyage a founding journey of the Greek world, and they reflect the scholarly interests of Alexandrian poets, who collected such local traditions [[fantuzzi2004]] [[hunter1993]].",
+    "Some aitia have contemporary political point. The clod of earth given to Euphemus, which becomes Thera, mother-city of Cyrene, connects the Argonauts with a region of central importance to the Ptolemies. The poem can be read as a mythical charter for the Greek presence in Egypt and Libya [[stephens2003]] [[mori2008]]."
+   ]
+  },
+  {
+   "title": "Greeks and others",
+   "text": [
+    "The voyage takes Greeks to the edges of their world and brings them into contact with peoples whose customs differ from theirs: the Bebrycians, the Mossynoeci, the Colchians, the Libyans. The poem's ethnography owes much to Herodotus and to the historians and geographers of Alexandria. Medea herself is a foreigner, a barbarian princess who marries a Greek, and the poem's sympathy for her, and its awareness of what she will become, explores the costs of such crossings."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Aitia ('origins')",
+   "text": "The narrator's phrase that something remains 'to this day' is the poem's most characteristic signature. Each aition links the heroic past to the poet's own present and displays the learning of an Alexandrian scholar-poet."
+  },
+  {
+   "title": "Similes",
+   "text": "Apollonius uses Homer's extended simile but often turns it in new directions: domestic and working scenes (a woman spinning before dawn, shipwrights hammering, sunlight reflected from water in a pail), and images seen through a character's eyes, especially Medea's. Many of his similes describe inner states rather than outer action."
+  },
+  {
+   "title": "Prophecy and foreknowledge",
+   "text": "Phineus, the seers Idmon and Mopsus, Glaucus and the Argo's speaking beam all reveal parts of the future. The reader, who knows the later myth of Medea, shares in this foreknowledge, and the poem exploits the irony."
+  },
+  {
+   "title": "Stars and light",
+   "text": "Jason is compared to a star twice, once as an image of desire and once as the baleful Sirius; the earthborn warriors glitter like stars; the fleece shines like the moon. Light in the poem is beautiful and often dangerous."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The Golden Fleece",
+   "text": "The object of the quest is strangely passive: once taken, it serves as a cloak, a sign of victory and a marriage bed. Its glow suggests glory, kingship and divine favour, but it is won by a woman's betrayal of her father, and it becomes the bed on which that bargain is sealed."
+  },
+  {
+   "title": "The Argo",
+   "text": "The first ship, or one of the first, built with Athena's help, with a speaking timber from Dodona in its keel. It is a community in small, with each hero at his bench, and the voyage it makes opens the world to later Greek sailors. Some readers also see it as an image of the poem, a crafted vessel carrying the heroic tradition into new waters."
+  },
+  {
+   "title": "Jason's cloak",
+   "text": "Athena's gift, described in a long ekphrasis in Book 1. Its scenes of myth, rivalry and seduction set it against Akhilleus' shield and announce the poem's interest in love and persuasion rather than war."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Jason as anti-hero",
+   "text": [
+    "Gilbert Lawall's influential article argued that Jason is deliberately shown as an anti-hero, a man without the virtues of the traditional hero who succeeds by guile and by exploiting others. The view has been refined rather than abandoned [[lawall1966]].",
+    "Others see in Jason a new model of leadership, cooperative, diplomatic and erotic rather than martial. James Clauss argued that Book 1 redefines the 'best of the Argonauts' in these terms, and Charles Beye read the poem as a fusion of epic and romance in which Jason's attractions are the point [[clauss1993]] [[beye1982]] [[hunter1993]]."
+   ],
+   "cite": [
+    "lawall1966",
+    "clauss1993",
+    "beye1982",
+    "hunter1993"
+   ]
+  },
+  {
+   "title": "Epic in a Hellenistic key: unity and structure",
+   "text": [
+    "Older critics found the poem episodic, a learned travelogue with a love story inserted in Book 3. More recent scholarship has stressed its design: the symmetries between the outward voyage (Books 1–2) and the return (Book 4), the way Medea's story is anticipated by earlier episodes, and the deliberate variety of tone that was a Hellenistic ideal. Hermann Fränkel's notes and the Budé edition of Francis Vian laid the textual and interpretative foundations for this reassessment [[frankel1968]] [[vian1974]] [[hutchinson1988]] [[papanghelis2008]]."
+   ],
+   "cite": [
+    "frankel1968",
+    "vian1974",
+    "hutchinson1988",
+    "papanghelis2008"
+   ]
+  },
+  {
+   "title": "The narrator",
+   "text": [
+    "The Argonautica's narrator is unusually present. He addresses the Muses as collaborators or informants, admits ignorance, refuses to tell certain stories, apologises to the gods and comments on the action. Richard Hunter and Simon Goldhill showed how this voice draws attention to the poem's own status as a written, learned work, and A. D. Morrison set it within the history of Greek poetic narrators [[hunter1993]] [[goldhill1991]] [[morrison2007]]."
+   ],
+   "cite": [
+    "hunter1993",
+    "goldhill1991",
+    "morrison2007"
+   ]
+  },
+  {
+   "title": "Medea: Euripidean shadow and psychology",
+   "text": [
+    "Apollonius' Medea is both a young girl in love and the future child-killer of Euripides' Medea (431 BC). Readers debate how far the poem plays on this double image: whether Book 3 invites pure sympathy, or whether every detail already hints at the sorceress she will become. Her psychology, shown through dreams, monologue and physical symptoms, has been hailed as the first great study of passion in epic, and the commentaries of Hunter and the discussions of Fantuzzi and Hunter trace its debts to tragedy and to Homer [[hunter1989]] [[fantuzzi2004]] [[hunter1993]]."
+   ],
+   "cite": [
+    "hunter1989",
+    "fantuzzi2004",
+    "hunter1993"
+   ]
+  },
+  {
+   "title": "Aetiology, geography and Ptolemaic Egypt",
+   "text": [
+    "The poem's aitia and its routes have been read as part of a Ptolemaic vision of the world. Susan Stephens argued that Alexandrian poetry spoke to both Greek and Egyptian cultural frameworks, and Anatole Mori that the Argonautica explores questions of kingship, colonisation and political cooperation relevant to the Ptolemaic court. The Libyan episode and the foundation of Cyrene are central to such readings [[stephens2003]] [[mori2008]] [[fraser1972]]."
+   ],
+   "cite": [
+    "stephens2003",
+    "mori2008",
+    "fraser1972"
+   ]
+  },
+  {
+   "title": "The quarrel with Callimachus",
+   "text": [
+    "The ancient story that Apollonius quarrelled with his teacher Callimachus, who disliked long poems, was once used to explain the whole literary history of the period. Mary Lefkowitz showed how ancient biographers built such tales from the poets' works, and Alan Cameron argued that Callimachus' polemic was not directed against epic. Most scholars now see the two poets as engaged in a mutual, often admiring dialogue [[lefkowitz1980]] [[cameron1995]] [[pfeiffer1968]]."
+   ],
+   "cite": [
+    "lefkowitz1980",
+    "cameron1995",
+    "pfeiffer1968"
+   ]
+  },
+  {
+   "title": "Reception by Virgil and the Roman poets",
+   "text": [
+    "Virgil's Aeneid has long been known to imitate the Argonautica in the story of Dido, whose love, sleepless night and curse echo Medea's. Damien Nelis argued that the influence goes much deeper, shaping the structure and many episodes of the whole Aeneid. Valerius Flaccus' Latin Argonautica, Ovid's Medea and Catullus' poem on Peleus and Thetis also respond to Apollonius [[nelis2001]] [[hunter1993]]."
+   ],
+   "cite": [
+    "nelis2001",
+    "hunter1993"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Arg. 1.1–2",
+   "quote": "First in my song shalt thou be, O Phœbus, the song that I sing\nOf the heroes of old, who sped, at the hest of Pelias the king,",
+   "who": "The narrator",
+   "explanation": "The opening invokes Apollo, god of poetry and oracles, and calls the Argonauts 'men of old'. The narrator thus places himself at a distance from the heroic age and presents himself as the one who remembers and re-creates it."
+  },
+  {
+   "ref": "Arg. 1.781",
+   "quote": "So as a star was the hero treading the cityward way.",
+   "who": "The narrator, of Jason on Lemnos",
+   "explanation": "The close of a simile that compares Jason to a star admired by a girl longing for her betrothed. His heroism is defined by attraction; the image prepares for the role love will play in his success."
+  },
+  {
+   "ref": "Arg. 1.1231–3",
+   "quote": "For the full moon casting her beams from the height of the firmament\nSmote him, and faintness of love on her soul the Cyprian sent,",
+   "who": "The narrator, of Hylas and the nymph",
+   "explanation": "The moonlight falling on Hylas' face makes the nymph fall in love. The scene is delicate and erotic; its consequence, the loss of Heracles, changes the whole expedition."
+  },
+  {
+   "ref": "Arg. 2.623",
+   "quote": "I have sinned: with baneful and cureless madness have I transgressed.",
+   "who": "Jason, to Tiphys",
+   "explanation": "Just after passing the Clashing Rocks, Jason says he was wrong ever to accept the quest. Whether sincere or a test of his men, the line exposes the anxious, unheroic side of the leader."
+  },
+  {
+   "ref": "Arg. 3.1–3",
+   "quote": "Come, Erato, now, stand by me: of thy lips let me be taught\nIn what manner thereafter Jason the Fleece to Iolkos brought\nThrough the love of Medea:",
+   "who": "The narrator",
+   "explanation": "The second proem calls on the Muse of love poetry and declares that the fleece was won 'through the love of Medea'. The epic quest depends on a girl's passion."
+  },
+  {
+   "ref": "Arg. 3.296–7",
+   "quote": "So, burning in secret, about her heart did he coil and creep,\nLove the destroyer:",
+   "who": "The narrator, of Medea",
+   "explanation": "Love takes hold of Medea like a slowly spreading fire. The adjective 'destructive' links love to the epic tradition of deadly wrath."
+  },
+  {
+   "ref": "Arg. 3.760",
+   "quote": "So quivered and fluttered the heart within the maiden's breast.",
+   "who": "The narrator, of Medea at night",
+   "explanation": "The end of a simile comparing her heart to a sunbeam reflected from water, darting about a room. A domestic image captures the restless movement of a mind in conflict."
+  },
+  {
+   "ref": "Arg. 3.771",
+   "quote": "'Oh hapless I, whether this way or that into ruin I fall!",
+   "who": "Medea",
+   "explanation": "The start of her night monologue: whatever she does, betray her father or let Jason die, she will be ruined. Her dilemma is the tragic heart of the poem."
+  },
+  {
+   "ref": "Arg. 4.445",
+   "quote": "Ah, ruthless Love, great grief, great curse to the sons of earth!",
+   "who": "The narrator",
+   "explanation": "Before Apsyrtus' murder the narrator curses Eros. The passion that won the fleece now leads to the poem's darkest crime."
+  },
+  {
+   "ref": "Arg. 4.1773–5",
+   "quote": "Be gracious, O blest generation of chieftains!--may these lays ring\nYear after year in the ears of men ever sweeter to sing!",
+   "who": "The narrator",
+   "explanation": "The farewell to the heroes, in the manner of a hymn's close. The poet hopes his song will grow sweeter with every year, a claim to lasting fame for the poem as well as the heroes."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Is Jason a hero, an anti-hero or a new kind of hero?",
+   "hint": "Look at his election as leader, his speech after the Clashing Rocks, his reaction to Aeetes' terms and his conduct at the murder of Apsyrtus. Compare him with Heracles and Idas."
+  },
+  {
+   "q": "Why does the poem lose Heracles at the end of Book 1?",
+   "hint": "Think about what kind of heroism Heracles represents and whether there is room for it in the world of the Argo."
+  },
+  {
+   "q": "How does the narrator's voice differ from Homer's, and why does it matter?",
+   "hint": "Consider invocations of the Muses, broken-off digressions, the narrator's comments and his uncertainty about Medea's motives."
+  },
+  {
+   "q": "What is the function of the aitia, the explanations of later customs and place names?",
+   "hint": "Collect examples (Cius, the Apsyrtides, Medea's cave, Anaphe, Aegina, Euphemus' clod) and ask what they link the voyage to."
+  },
+  {
+   "q": "How does Apollonius depict Medea's love in Book 3?",
+   "hint": "Look at the similes (fire, sunbeam), her dream, her night monologue and her physical symptoms. What is new compared with earlier epic?"
+  },
+  {
+   "q": "How does the poem make use of the reader's knowledge of Euripides' Medea?",
+   "hint": "Think about Jason's mention of Ariadne, the oath he swears, the murder of Apsyrtus, the destruction of Talos and the absence of any ending at Corinth."
+  },
+  {
+   "q": "How does the comedy of the gods in Book 3 relate to the human suffering it causes?",
+   "hint": "Compare the scene of Aphrodite and Eros with the scenes of Medea's torment that follow."
+  },
+  {
+   "q": "Is the Argonautica unified, or a sequence of episodes?",
+   "hint": "Look for parallels between the outward voyage and the return, and between Hypsipyle and Medea. Consider the role of Phineus' prophecy."
+  },
+  {
+   "q": "How does the return voyage in Book 4 rewrite the Odyssey?",
+   "hint": "Circe, the Sirens, the Wandering Rocks, the Phaeacians: note what is borrowed and what is changed, and that the Argonauts come first in mythical time."
+  },
+  {
+   "q": "What did Virgil take from Apollonius for Dido in Aeneid 4?",
+   "hint": "Compare Medea's sleepless night with Dido's, the role of Venus and Cupid, and the hero's dependence on the queen's help."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "beye1982",
+   "text": "Beye, Charles Rowan. Epic and Romance in the Argonautica of Apollonius. Carbondale: Southern Illinois University Press, 1982."
+  },
+  {
+   "id": "cameron1995",
+   "text": "Cameron, Alan. Callimachus and His Critics. Princeton: Princeton University Press, 1995."
+  },
+  {
+   "id": "clauss1993",
+   "text": "Clauss, James J. The Best of the Argonauts: The Redefinition of the Epic Hero in Book 1 of Apollonius's Argonautica. Berkeley: University of California Press, 1993."
+  },
+  {
+   "id": "fantuzzi2004",
+   "text": "Fantuzzi, Marco, and Richard Hunter. Tradition and Innovation in Hellenistic Poetry. Cambridge: Cambridge University Press, 2004."
+  },
+  {
+   "id": "frankel1968",
+   "text": "Fränkel, Hermann. Noten zu den Argonautika des Apollonios. Munich: C. H. Beck, 1968."
+  },
+  {
+   "id": "fraser1972",
+   "text": "Fraser, P. M. Ptolemaic Alexandria. 3 vols. Oxford: Clarendon Press, 1972."
+  },
+  {
+   "id": "goldhill1991",
+   "text": "Goldhill, Simon. The Poet's Voice: Essays on Poetics and Greek Literature. Cambridge: Cambridge University Press, 1991."
+  },
+  {
+   "id": "green1997",
+   "text": "Green, Peter, trans. The Argonautika by Apollonios Rhodios. Translated, with an Introduction, Commentary, and Glossary. Berkeley: University of California Press, 1997."
+  },
+  {
+   "id": "hunter1989",
+   "text": "Hunter, R. L., ed. Apollonius of Rhodes: Argonautica Book III. Cambridge Greek and Latin Classics. Cambridge: Cambridge University Press, 1989."
+  },
+  {
+   "id": "hunter1993",
+   "text": "Hunter, Richard. The Argonautica of Apollonius: Literary Studies. Cambridge: Cambridge University Press, 1993."
+  },
+  {
+   "id": "hunter1993b",
+   "text": "Hunter, Richard, trans. Apollonius of Rhodes: Jason and the Golden Fleece (The Argonautica). Oxford: Clarendon Press, 1993; Oxford World's Classics, 1995."
+  },
+  {
+   "id": "hutchinson1988",
+   "text": "Hutchinson, G. O. Hellenistic Poetry. Oxford: Clarendon Press, 1988."
+  },
+  {
+   "id": "lawall1966",
+   "text": "Lawall, Gilbert. \"Apollonius' Argonautica: Jason as Anti-Hero.\" Yale Classical Studies 19 (1966): 119–169."
+  },
+  {
+   "id": "lefkowitz1980",
+   "text": "Lefkowitz, Mary R. \"The Quarrel between Callimachus and Apollonius.\" Zeitschrift für Papyrologie und Epigraphik 40 (1980): 1–19."
+  },
+  {
+   "id": "mori2008",
+   "text": "Mori, Anatole. The Politics of Apollonius Rhodius' Argonautica. Cambridge: Cambridge University Press, 2008."
+  },
+  {
+   "id": "morrison2007",
+   "text": "Morrison, A. D. The Narrator in Archaic Greek and Hellenistic Poetry. Cambridge: Cambridge University Press, 2007."
+  },
+  {
+   "id": "nelis2001",
+   "text": "Nelis, Damien. Vergil's Aeneid and the Argonautica of Apollonius Rhodius. ARCA 39. Leeds: Francis Cairns, 2001."
+  },
+  {
+   "id": "papanghelis2008",
+   "text": "Papanghelis, Theodore D., and Antonios Rengakos, eds. A Companion to Apollonius Rhodius. Leiden: Brill, 2001. 2nd ed., Brill's Companion to Apollonius Rhodius. Leiden: Brill, 2008."
+  },
+  {
+   "id": "pfeiffer1968",
+   "text": "Pfeiffer, Rudolf. History of Classical Scholarship from the Beginnings to the End of the Hellenistic Age. Oxford: Clarendon Press, 1968."
+  },
+  {
+   "id": "race2008",
+   "text": "Race, William H., ed. and trans. Apollonius Rhodius: Argonautica. Loeb Classical Library 1. Cambridge, MA: Harvard University Press, 2008."
+  },
+  {
+   "id": "rieu1959",
+   "text": "Rieu, E. V., trans. Apollonius of Rhodes: The Voyage of Argo. Harmondsworth: Penguin, 1959."
+  },
+  {
+   "id": "seaton1912",
+   "text": "Seaton, R. C., trans. Apollonius Rhodius: The Argonautica. Loeb Classical Library 1. London: William Heinemann; New York: Macmillan, 1912."
+  },
+  {
+   "id": "stephens2003",
+   "text": "Stephens, Susan A. Seeing Double: Intercultural Poetics in Ptolemaic Alexandria. Berkeley: University of California Press, 2003."
+  },
+  {
+   "id": "vian1974",
+   "text": "Vian, Francis, ed., and Émile Delage, trans. Apollonios de Rhodes: Argonautiques. 3 vols. Paris: Les Belles Lettres, 1974–1981."
+  },
+  {
+   "id": "way1901",
+   "text": "Way, Arthur S., trans. The Tale of the Argonauts. London: J. M. Dent, 1901."
+  }
+ ]
+}
