@@ -1797,7 +1797,7 @@
   // Each anchor is underlined in the text; a click opens the note. Readers can hide them.
   // Every text on screen that has notes shows them: alone, in its facing-page column, or as
   // one of two translations side by side (each with its own count above it and list below).
-  const GLOSSED = new Set(["iliad-murray", "paradise-lost", "odyssey-murray", "aeneid-mackail", "gilgamish-thompson"]);
+  const GLOSSED = new Set(["iliad-murray", "paradise-lost", "odyssey-murray", "aeneid-mackail", "gilgamish-thompson", "masnavi-whinfield", "rubaiyat-fifth-edition-fitzgerald", "moallakat-jones"]);
   const GLOSS_OFF_KEY = "pc-gloss-off";
   const glossOff = () => prefs().gloss === false;   // pc-prefs (was pc-gloss-off, read once by the Aa section)
   const GLOSS_CACHE = {};
