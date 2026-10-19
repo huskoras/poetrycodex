@@ -1,0 +1,599 @@
+{
+ "work": "paradise-regained",
+ "title": "Paradise Regained",
+ "author": "John Milton",
+ "quoteEdition": "paradise-regained",
+ "updated": "2026-10-19",
+ "unit": "Book",
+ "glance": [
+  {
+   "label": "Published",
+   "value": "1671, in one volume with Samson Agonistes (London: printed by J.M. for John Starkey); licensed for the press on 2 July 1670 and entered in the Stationers' Register on 10 September 1670"
+  },
+  {
+   "label": "Composed",
+   "value": "Uncertain; usually placed between 1665 and 1670, after Paradise Lost was finished"
+  },
+  {
+   "label": "Genre",
+   "value": "Brief epic on a biblical subject, largely in dialogue"
+  },
+  {
+   "label": "Length",
+   "value": "Four books, 2,070 lines (502, 486, 443 and 639)"
+  },
+  {
+   "label": "Metre",
+   "value": "Unrhymed iambic pentameter (blank verse)"
+  },
+  {
+   "label": "Source",
+   "value": "The temptation of Jesus in the wilderness (Luke 4:1–13; Matthew 4:1–11; Mark 1:12–13), in Luke's order"
+  },
+  {
+   "label": "Setting",
+   "value": "The Jordan and the desert beyond it, during the forty days after Jesus' baptism; visionary views of Parthia, Rome and Athens; the pinnacle of the Temple in Jerusalem"
+  },
+  {
+   "label": "Protagonist",
+   "value": "The Son of God, a man not yet publicly known, who discovers his calling while refusing every temptation"
+  },
+  {
+   "label": "Antagonist",
+   "value": "Satan, who tempts the Son in a series of disguises and arguments in order to learn who he is"
+  },
+  {
+   "label": "Relation to Paradise Lost",
+   "value": "Presented as its sequel: one man's obedience recovers what one man's disobedience lost (PR 1.1–7)"
+  }
+ ],
+ "context": [
+  "John Milton (1608–1674) published Paradise Regain'd in 1671, four years after the first edition of Paradise Lost, in a small volume that also contained his tragedy Samson Agonistes. He was by then blind, a survivor of the Restoration of 1660, during which he had briefly been arrested and had seen the republic he had served as Latin Secretary collapse. The two 1671 poems are often read together: both present a solitary hero tested by temptation and both reflect, in different ways, the experience of political defeat.",
+  "The best-known account of the poem's origin comes from the Quaker Thomas Ellwood, who read to the blind Milton and found him a cottage at Chalfont St Giles during the plague of 1665. Ellwood records that Milton lent him the manuscript of Paradise Lost and that, returning it, he remarked: 'Thou hast said much here of Paradise lost; but what hast thou to say of Paradise found?' Later, in London, Milton showed him the new poem and said that he owed it to that question [[ellwood1714]]. The anecdote cannot settle the date of composition, but it is the main reason the poem is usually placed in the later 1660s [[lewalski2000]] [[campbell2008]].",
+  "Milton had long imagined a shorter epic form. In The Reason of Church-Government (1642) he set the 'diffuse' epics of Homer, Virgil and Tasso beside the Book of Job as 'a brief model'. Barbara Lewalski's Milton's Brief Epic (1966) showed that Paradise Regained belongs to a recognisable tradition of short biblical epics and that Job, with its dialogue between a tested man and a tempter permitted by God, is its central model [[lewalski1966]]. The Father himself recalls Job in the first book (PR 1.147), and the Son returns to him twice.",
+  "The story comes from the Gospels. After his baptism Jesus is led by the Spirit into the wilderness, fasts for forty days and is tempted by the devil. Matthew and Luke give the same three temptations in different orders; Milton follows Luke, so that the temptation of the kingdoms comes second and the temptation on the pinnacle of the Temple comes last, as the climax. Around this framework he adds a great deal: the councils of Satan, the doubts of the disciples, Mary's meditation, a banquet, offers of wealth, glory, military power, empire and learning, a night of storm, and a closing angelic hymn. Elizabeth Marie Pope showed how much of this expansion draws on centuries of commentary on the temptation [[pope1947]].",
+  "The poem has never been as popular as Paradise Lost. Milton's nephew Edward Phillips reported that it was generally thought much inferior to the earlier epic and that Milton could not bear to hear it called inferior. The Romantics, however, admired it; Wordsworth and Coleridge both praised its finish [[wittreich1970]], and William Blake painted a series of twelve watercolour designs for it [[butlin1981]]. Modern criticism, from Arnold Stein and Lewalski to Stanley Fish and the historicist readings of the 1990s, has made it one of the most closely argued of Milton's works [[stein1957]] [[fish1971]] [[knoppers1994]]."
+ ],
+ "plot": [
+  "At the Jordan, John the Baptist recognises Jesus, the Spirit descends on him like a dove and the Father's voice declares him his beloved Son. Satan hears the voice and calls a council in the air, where he tells the fallen angels that he must discover who this Son is and overcome him by fraud. In Heaven the Father announces to Gabriel that he will expose the Son to Satan's temptations, so that angels and men may see what perfect obedience is. The Son, led by the Spirit, walks into the desert, reflects on his childhood and on what he has learned of his calling from Scripture and from his mother, and remains there for forty days.",
+  "Satan approaches disguised as an old countryman and asks him to turn stones into bread; the Son sees through the disguise, and Satan, now unmasked, argues about his own role as a servant of God and a source of oracles. Meanwhile the new disciples, Andrew and Simon among them, lament the Son's disappearance, and Mary waits patiently for its meaning. Satan holds a second council, rejects Belial's advice to tempt the Son with women, and returns as a courtly figure with a magnificent banquet, then with offers of wealth. The Son refuses each.",
+  "Satan then offers glory, and from a high mountain shows the Son the armies of Parthia, promising that with their help he could seize the throne of David and free the lost tribes of Israel. The Son replies that his kingdom will come in God's time and by other means. Satan shows him imperial Rome and offers him all the kingdoms of the world if he will worship him; the Son answers with the first commandment. Satan then offers the learning of Athens, which the Son also rejects in favour of the Hebrew Scriptures.",
+  "Satan returns the Son to the wilderness and troubles his night with a terrifying storm; in the morning he admits that he still does not know in what sense the Son is the Son of God. He carries him to the highest pinnacle of the Temple in Jerusalem and dares him to stand or cast himself down. The Son replies 'Tempt not the Lord thy God' and stands, and Satan falls. Angels bear the Son to a flowery valley, feed him with heavenly food and sing a hymn of his victory, and he returns, unobserved, to his mother's house."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Baptism and the First Temptation",
+   "section": 0,
+   "lines": "Book I",
+   "summary": [
+    "The poet announces his theme as the counterpart of Paradise Lost and invokes the Spirit that led the Son into the desert. At the Jordan, John the Baptist proclaims repentance; Jesus comes 'obscure, Unmarkt, unknown', is recognised by John, and after his baptism the Spirit descends like a dove and the Father's voice names him his beloved Son. Satan, who was present, summons his peers to a 'gloomy Consistory' in the air, reminds them of the prophecy that the seed of the woman would bruise the serpent's head, and undertakes to test the newcomer by fraud rather than force. In Heaven the Father tells Gabriel that he will expose the Son to Satan, as he once allowed Satan to try Job, and the angels sing in anticipation of the victory.",
+    "The Son, musing on how to begin his work, walks alone into the desert. In a long soliloquy he recalls a childhood devoted to the Law, his visit to the Temple at twelve, his early dreams of freeing Israel by heroic deeds and his preference for persuasion over force. He recalls what Mary told him of the Annunciation and the shepherds, how he searched the Law and the Prophets and found that they spoke of him, and how his baptism showed that the time had come. He does not yet know why he has been led into the wilderness. Forty days pass, during which he neither eats nor feels hunger, among wild beasts that do him no harm.",
+    "Satan appears as an aged countryman gathering sticks and, claiming to have seen the baptism, asks him to turn the stones into bread to save himself and relieve the poor dwellers of the desert. The Son answers with Scripture (man does not live by bread alone) and says he knows who his visitor is. Satan admits his identity, describes himself as a spirit who still serves God, pities mankind and supplies the nations with oracles. The Son replies that Satan's oracles are lies, that they are now to cease, and that God has sent his 'living Oracle' into the world. Satan asks permission to keep visiting; the Son neither bids nor forbids him, and Satan vanishes as night falls."
+   ],
+   "analysis": [
+    "The opening lines define the poem against Paradise Lost. Milton places himself as the singer of 'the happy Garden' who now turns to Eden 'rais'd in the wast Wilderness', and he pairs 'one mans disobedience' with 'one mans firm obedience' in an echo of Romans 5:19. The 'deeds Above Heroic, though in secret done' announce a new idea of heroism: the action is interior, hidden and largely verbal. The poem will repeatedly invite the reader to expect spectacle and then withhold it [[fish1971]].",
+    "Book 1 is above all about identity. Satan heard the voice from Heaven but does not know what 'Son of God' means here, and the Father calls the Son 'This perfect Man, by merit call'd my Son' (PR 1.166), language that stresses his humanity and his testing. The Son himself learns who he is by reading Scripture and reflecting on his mother's report: 'soon found of whom they spake I am' (PR 1.262–63). He moves forward without full knowledge, trusting that God will reveal what he needs. Critics have connected this self-discovery with the theological idea of kenosis, the Son's 'emptying' of himself (Philippians 2:7), and with Milton's subordinationist account of the Son in De Doctrina Christiana [[lewalski1966]] [[rushdy1992]].",
+    "The first temptation sets the pattern of the whole poem. Satan's request seems compassionate, and he presents himself as a fellow sufferer, almost a penitent. The Son answers briefly, with Scripture, and without anger except when Satan claims credit for truth. His speech on the cessation of the oracles (PR 1.455–64), which recalls the Nativity Ode, turns a private encounter into a moment of world history: outward prophecy gives way to 'an inward Oracle' in the heart. The Book of Job is never far away; the Father and the Son both refer to it, and the frame of a man tested by divine permission comes directly from it."
+   ],
+   "key": [
+    {
+     "ref": "PR 1.1–7",
+     "quote": "I WHO e're while the happy Garden sung,\nBy one mans disobedience lost, now sing\nRecover'd Paradise to all mankind,\nBy one mans firm obedience fully tri'd",
+     "note": "The proem names Paradise Lost as its predecessor and states the new subject as an act of obedience. The parallel between the two 'one mans' comes from Romans 5:19."
+    },
+    {
+     "ref": "PR 1.290–93",
+     "quote": "And now by some strong motion I am led\nInto this wilderness, to what intent\nI learn not yet, perhaps I need not know;\nFor what concerns my knowledge God reveals.",
+     "note": "The Son ends his soliloquy in a state of trusting ignorance: he does not know his whole purpose and does not need to. This patience is the poem's version of heroism."
+    },
+    {
+     "ref": "PR 1.460–64",
+     "quote": "God hath now sent his living Oracle\nInto the World, to teach his final will,\nAnd sends his Spirit of Truth henceforth to dwell\nIn pious Hearts, an inward Oracle",
+     "note": "The pagan oracles are replaced by the Son himself and by the inward voice of the Spirit, a central theme of Milton's Protestant thought."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Disciples, Mary and the Banquet",
+   "section": 0,
+   "lines": "Book II",
+   "summary": [
+    "At the Jordan the newly baptised followers of Jesus, Andrew and Simon among them, miss him. Gathered in a fisherman's cottage, they lament that the Messiah they had just found has vanished, pray for him to come and free Israel, and resolve to wait in hope. Mary, too, notices that her son has not returned. In a meditative soliloquy she recalls the honour of the Annunciation and the sorrow Simeon foretold, remembers losing the twelve-year-old Jesus who was about 'His Father's business', and decides to wait patiently, keeping these things in her heart.",
+    "Satan returns to his council in the middle air, admits that this opponent is far more dangerous than Adam, and asks for advice. Belial proposes setting beautiful women in the Son's way; Satan scorns the idea, pointing out that such lures have worked only on lesser men, and decides to tempt him instead with things that have 'more shew Of worth, of honour, glory, and popular praise' and with food for his hunger. Meanwhile the Son, hungry at last after forty days, sleeps and dreams of Elijah fed by ravens and of Daniel eating his pulse.",
+    "In the morning he finds a pleasant grove, where Satan appears again, now dressed like a courtier, and spreads before him a magnificent banquet served by youths and nymphs, with music and perfumes. Satan insists that these are not forbidden fruits. The Son replies that he could command such a table himself if he chose, and rejects Satan's 'pompous Delicacies'; the banquet vanishes with the sound of Harpies' wings. Satan then offers riches as the means to power. The Son answers that virtue, valour and wisdom matter more than wealth, citing poor heroes of Israel and Rome, and declares that the man who rules his own passions is more truly a king."
+   ],
+   "analysis": [
+    "The scenes of the disciples and of Mary have no source in the temptation narratives. They widen the poem's world and show, in miniature, the virtue the Son practises: waiting on God without knowing the outcome. The disciples hope for a political Messiah who will restore the kingdom to Israel, a hope Satan will try to exploit in Book 3. Mary's soliloquy, with its quiet acceptance of being 'Afflicted ... and blest', makes her a model of patient faith and an anticipation of the Son's own answers.",
+    "Satan's second council parodies the infernal debates of Paradise Lost, Book 2, and Belial's proposal recalls his role in the earlier poem. Satan's reply is one of many signs that he is a sharper but also a more desperate figure here: he knows he faces something new. The banquet is Milton's most striking addition. It doubles the first temptation, links hunger to luxury and courtly display, and makes an explicit comparison with Eden ('Was that crude Apple that diverted Eve!'). The Son's reply does not deny that the food is lawful; it rejects the giver and the idea of receiving as a gift what is already his by right.",
+    "The temptation of wealth begins a sequence of political temptations. The Son's answer that inner self-government is the true kingship (PR 2.466–67) combines a classical, Stoic commonplace with Christian humility, and it can be read politically: after 1660 it locates rule in the virtuous person rather than in thrones. Critics who read the poem as a response to the Restoration often begin here [[hill1977]] [[knoppers1994]]."
+   ],
+   "key": [
+    {
+     "ref": "PR 2.102–4",
+     "quote": "But I to wait with patience am inur'd;\nMy heart hath been a store-house long of things\nAnd sayings laid up, portending strange events.",
+     "note": "Mary echoes Luke 2:19 and 2:51. Her patience mirrors her son's and gives the poem's central virtue a domestic, maternal form."
+    },
+    {
+     "ref": "PR 2.348–49",
+     "quote": "Alas how simple, to these Cates compar'd,\nWas that crude Apple that diverted Eve!",
+     "note": "The narrator links the banquet to the Fall. The Son's victory is measured against Eve's defeat, and the Second Adam faces a far richer temptation than the first."
+    },
+    {
+     "ref": "PR 2.466–67",
+     "quote": "Yet he who reigns within himself, and rules\nPassions, Desires, and Fears, is more a King;",
+     "note": "Kingship is redefined as self-mastery, a thought shared with Stoic philosophy and given a Christian and, after the Restoration, a political edge."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Glory and the Kingdom of Parthia",
+   "section": 0,
+   "lines": "Book III",
+   "summary": [
+    "Satan flatters the Son's wisdom and urges him to seek glory, citing Alexander, Scipio, Pompey and Julius Caesar, who achieved great things young. The Son answers that the praise of the people, 'a herd confus'd', is worthless, and that true glory is God's approval of the just man, as in the case of Job. Conquerors who ravage nations are destroyers, not heroes; he seeks not his own glory but the glory of the one who sent him. Satan replies that God himself demands glory from all creatures; the Son answers that God's glory is freely given back to him, and that men who claim glory for themselves rob him.",
+    "Satan then turns to the Son's claim to the throne of David. Why delay, he asks, when Judaea is under Roman rule and the Temple has been profaned? The Son answers that all things are fulfilled in their due time and that he may first have to be tried in humble state and suffering, since 'who best Can suffer, best can do'. Satan, in a moment of bleak candour, says that since all hope of grace is lost to him he would rather reach the worst than wait for it, and that he would gladly see the Son reign if that would shelter him.",
+    "Satan carries the Son to a high mountain from which they can see Assyria, Babylon, Persia and the Parthian empire. He shows him the Parthian king's army marching out against the Scythians, a vast display of cavalry and archers, and argues that the Son must use means: with Parthia's help he could free the ten lost tribes and take David's throne without fearing Rome. The Son dismisses this 'ostentation vain of fleshly arm' as evidence of human weakness. The lost tribes, he says, brought their captivity on themselves through idolatry; God will bring them back in his own time."
+   ],
+   "analysis": [
+    "Book 3 is the most argumentative of the four. The debate over glory reworks the classical ideal of fame, celebrated by Milton himself in Lycidas ('Fame is the spur'), and subordinates it to God's judgement. The Son's contempt for the people's praise has troubled readers who know Milton's own republicanism; it can be read as an expression of the regenerate few's isolation after 1660, or simply as the classical sage's indifference to the crowd [[hill1977]].",
+    "The central idea of this book is time. Satan presses for immediate action, the Son insists on God's 'due time'. 'Who best Can suffer, best can do; best reign, who first Well hath obey'd' (PR 3.194–96) states the poem's ethic in one sentence: action follows from obedience and suffering, not from opportunity. This is also the key text for political readings. Some critics have seen the Son's refusals as quietism, a withdrawal from politics; others, notably Christopher Hill and David Loewenstein, as the discipline of radicals who must wait, without despair, for a future overturning [[hill1977]] [[loewenstein2001]].",
+    "Satan's speech at PR 3.203–22 is one of the most moving in the poem. Unlike the defiant figure of Paradise Lost, Book 1, he is here a creature without hope who would 'be at the worst', and who half wishes the Son's reign might protect him. The Parthian scene, by contrast, is pure spectacle, a catalogue of armies in the epic manner that the Son answers with a few lines. The mismatch between Satan's elaborate show and the Son's plain refusal is the poem's characteristic rhythm [[lewalski1966]]."
+   ],
+   "key": [
+    {
+     "ref": "PR 3.47–50",
+     "quote": "For what is glory but the blaze of fame,\nThe peoples praise, if always praise unmixt?\nAnd what the people but a herd confus'd,\nA miscellaneous rabble, who extol",
+     "note": "The Son dismisses fame based on popular praise. True glory, he goes on to say, is God's approval of the just man."
+    },
+    {
+     "ref": "PR 3.194–97",
+     "quote": "What I can suffer, how obey? who best\nCan suffer, best can do; best reign, who first\nWell hath obey'd; just tryal e're I merit\nMy exaltation without change or end.",
+     "note": "The poem's ethic in brief: obedience and suffering come before reigning. The word 'merit' recalls the Father's 'by merit call'd my Son' (PR 1.166)."
+    },
+    {
+     "ref": "PR 3.209–11",
+     "quote": "I would be at the worst; worst is my Port.\nMy harbour and my ultimate repose,\nThe end I would attain, my final good.",
+     "note": "Satan's despair is now openly confessed. He seeks the worst as other beings seek the good, a bleak inversion of the end that the poem's ethics points to."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Rome, Athens and the Pinnacle",
+   "section": 0,
+   "lines": "Book IV",
+   "summary": [
+    "Satan shows the Son imperial Rome, its Capitol, palaces and embassies from every nation, and describes the emperor Tiberius as old, childless and debauched on Capri; the Son could expel him and free the Roman people. The Son replies that Rome's luxury and cruelty do not tempt him and that a people enslaved by its own vices cannot be made outwardly free; his kingdom will grow like a tree over the whole earth by means Satan is not to know. Satan then offers him all the kingdoms of the world if he will fall down and worship him. The Son, with disdain, answers with the first commandment and tells Satan that he now knows him for what he is.",
+    "Satan shifts to the life of the mind. If the Son wishes to rule by persuasion, he must know the learning of the Gentiles; and he shows him Athens, 'the eye of Greece', with Plato's Academy, the Lyceum, the Stoa, Homer and the tragedians, and the orators. The Son answers that one who receives light from above needs no other doctrine; the philosophers are ignorant of God and of the Fall; Greek poetry is inferior to the songs of Sion and Greek oratory to the prophets. Satan takes him back to the wilderness and, in the night, raises a fearful storm and sends demons to howl around him; the Son sits 'unappall'd in calm and sinless peace'.",
+    "In the morning Satan tells the Son that the storm was a sign of the troubles ahead, and confesses that he still does not know in what sense he is the Son of God, 'which bears no single sence'. He carries him through the air to the highest pinnacle of the Temple in Jerusalem and tells him either to stand or to cast himself down, quoting the psalm that angels will bear him up. The Son replies: 'also it is written, Tempt not the Lord thy God', and stands. Satan falls, like Antaeus throttled by Hercules and like the Sphinx when her riddle was solved. Angels carry the Son down, set before him a heavenly banquet and sing a hymn that proclaims him the 'True Image of the Father' and the one who has regained Paradise. He then returns home, unobserved, to his mother's house."
+   ],
+   "analysis": [
+    "The rejection of Athens (PR 4.285–364) is the most debated passage in the poem. Milton was one of the most learned poets in English and had defended classical education throughout his career; here his hero calls Greek philosophy 'false, or little else but dreams' and prefers Hebrew poetry and prophecy. Readers have explained this in various ways: as dramatic decorum, since the Son rejects learning offered by Satan as a means to power; as a precise theological claim, that pagan wisdom cannot save, with a concession for 'moral vertue ... By light of Nature' (PR 4.351–52); or as a sign of the late Milton's sterner Puritanism. The reply also reflects on the poem's own style: the prophets teach in a 'majestic unaffected stile' (PR 4.359), which is close to the plain manner of Paradise Regained itself [[lewalski1966]] [[fish2001]].",
+    "Satan's confession at PR 4.500–40 reveals what has driven him: he has been trying to learn what the title 'Son of God' means, since in one sense all angels and men are sons of God. The pinnacle is designed to force an answer. Standing on the pinnacle is impossible for a mere man, and falling would be presumption. The Son's reply can be read two ways. It quotes Deuteronomy 6:16, and so may mean that he, as a man, will not tempt God by demanding a miracle; but it can also be heard as a declaration that he himself is 'the Lord thy God' whom Satan is tempting. Whether this is the moment of revelation, and whether Satan understands it, is a central critical question [[pope1947]] [[lewalski1966]].",
+    "The ending is deliberately quiet. The two epic similes for Satan's fall echo his fall from Heaven in Paradise Lost, but the victor is fed by angels and sung by them as the 'Queller of Satan', and then simply goes home 'private'. The angels' hymn looks forward to the ministry, the Passion and the final defeat of Satan; the poem has shown only the preparation. The last line, with its plain domestic setting, returns the Son to the obscurity in which he began and leaves his public work still to come."
+   ],
+   "key": [
+    {
+     "ref": "PR 4.286–90",
+     "quote": "Think not but that I know these things, or think\nI know them not; not therefore am I short\nOf knowing what I aught: he who receives\nLight from above, from the fountain of light,",
+     "note": "The opening of the Son's reply on Athens. He neither claims nor denies classical learning; he subordinates it to revelation."
+    },
+    {
+     "ref": "PR 4.560–62",
+     "quote": "To whom thus Jesus: also it is written,\nTempt not the Lord thy God, he said and stood.\nBut Satan smitten with amazement fell",
+     "note": "The climax of the poem, in a line and a half. The Son's standing and Satan's fall are set side by side; the ambiguity of 'the Lord thy God' has generated much debate."
+    },
+    {
+     "ref": "PR 4.636–39",
+     "quote": "Thus they the Son of God our Saviour meek\nSung Victor, and from Heavenly Feast refresht\nBrought on his way with joy; hee unobserv'd\nHome to his Mothers house private return'd.",
+     "note": "The poem ends in privacy and anticipation. The victory is complete but unseen; the public ministry is still to come."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "The Son of God (Jesus)",
+   "side": "The Son and his followers",
+   "text": "The protagonist, a man of about thirty who has grown up in obscurity at Nazareth and has just been proclaimed the Son at his baptism. He knows from Scripture that he is the Messiah but not exactly how his work is to be done, and he learns more about himself in the course of the temptations. He is calm, brief and exact in his answers, mostly quoting or applying Scripture, and his victory consists in refusing. Milton presents him chiefly as a perfect man tested by obedience, which has made his theology a subject of debate."
+  },
+  {
+   "name": "Mary",
+   "side": "The Son and his followers",
+   "text": "The Son's mother. She speaks one soliloquy (PR 2.66–104), recalling the Annunciation, Simeon's prophecy and the loss of the boy Jesus in the Temple, and resolves to wait patiently. Her patience parallels her son's, and the poem ends with his return to her house."
+  },
+  {
+   "name": "Andrew, Simon and the disciples",
+   "side": "The Son and his followers",
+   "text": "The 'Plain Fishermen' who have just met Jesus at the Jordan. When he disappears, they lament and hope that he will restore the kingdom to Israel, but resolve to wait on Providence. Their hope for a political deliverer shows the expectation that Satan tries to exploit."
+  },
+  {
+   "name": "John the Baptist",
+   "side": "The Son and his followers",
+   "text": "The 'great Proclaimer' who baptises at the Jordan, recognises Jesus as the one he was to announce and witnesses the descent of the Spirit. He appears only in the opening narrative and in the Son's memories."
+  },
+  {
+   "name": "God the Father",
+   "side": "Heaven",
+   "text": "Speaks once, to Gabriel and the angels in Book 1, announcing that he will expose the Son to Satan as he did Job, so that all may see 'This perfect Man, by merit call'd my Son'. His speech defines the temptation as a public trial and the Son's weakness as the means of victory."
+  },
+  {
+   "name": "Gabriel and the angels",
+   "side": "Heaven",
+   "text": "Gabriel, who announced the Son's birth to Mary, is addressed by the Father in Book 1. The angels sing a hymn of anticipation there and, at the end, rescue the Son from the pinnacle, feed him and sing the closing hymn of victory."
+  },
+  {
+   "name": "Satan",
+   "side": "Satan and his council",
+   "text": "The tempter, appearing first as an old countryman and then as a courtly gentleman. Unlike the heroic rebel of Paradise Lost, he is cunning, rhetorical, at times almost pitiable, and haunted by despair. His main purpose is to discover in what sense the Son is the Son of God. Each failure drives him to a larger offer, until the pinnacle forces the issue and he falls."
+  },
+  {
+   "name": "Belial",
+   "side": "Satan and his council",
+   "text": "The 'dissolutest Spirit that fell', who in Book 2 advises Satan to tempt the Son with beautiful women. Satan rejects the plan, arguing that such a temptation would succeed only with weaker men."
+  },
+  {
+   "name": "The infernal council",
+   "side": "Satan and his council",
+   "text": "The fallen angels whom Satan summons twice to the middle air, in Book 1 and Book 2. They are frightened by the new threat and consent to Satan's plans; at the end Satan returns to them with the 'Joyless triumphals' of his failure."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Obedience and inner heroism",
+   "text": [
+    "The poem's opening lines define its subject as 'one mans firm obedience fully tri'd', and its hero wins without fighting. He refuses food, wealth, glory, armies, empire and learning, and his only act is to stand. Milton calls these 'deeds Above Heroic', claiming a higher heroism than the epic tradition of wrath and conquest. Paradise Lost had already called patience and martyrdom the 'better fortitude'; Paradise Regained makes that idea the whole action.",
+    "The Son's heroism is one of waiting. He repeatedly tells Satan that his time has not yet come and that he will act when God decrees. Mary and the disciples share this patient expectation. Whether patience is a political virtue, or a retreat from politics, is one of the main questions readers bring to the poem."
+   ]
+  },
+  {
+   "title": "Identity and self-knowledge",
+   "text": [
+    "Both protagonists are trying to learn who the Son is. Satan knows the voice from Heaven but not its meaning; the Son knows from Scripture that he is the Messiah but discovers only gradually how his mission is to be fulfilled. The temptations become a kind of examination through which identity is revealed [[stein1957]] [[rushdy1992]].",
+    "This makes the poem a theological drama as much as a moral one. The Father's words 'This perfect Man, by merit call'd my Son' and the Son's slow self-discovery raise the question of how Milton understood the Son's divinity, and the final scene on the pinnacle has been read as the moment when it is at last disclosed."
+   ]
+  },
+  {
+   "title": "True and false kingship",
+   "text": [
+    "Many of the temptations concern rule: wealth as a means to power, glory, Parthian arms, Roman empire, and the persuasive power of learning. The Son answers that self-government is the truest kingship and that his own kingdom will come by means that Satan cannot know. The poem contrasts outward power and spectacle with inward rule.",
+    "Published eleven years after the Restoration, by a poet who had defended the execution of Charles I, these arguments cannot be politically neutral. The Son's rejection of empire, armies and the spectacle of courts has been read as a critique of the restored monarchy [[knoppers1994]]."
+   ]
+  },
+  {
+   "title": "Time and Providence",
+   "text": [
+    "Satan's argument is always that the moment is now: the Son is hungry, Judaea is oppressed, Tiberius is old, the Parthians are on the march. The Son's answer is that 'All things are best fullfil'd in thir due time'. Waiting is not idleness but trust in God's ordering of history. The poem ends with the Son's public ministry still in the future."
+   ]
+  },
+  {
+   "title": "Word against spectacle",
+   "text": [
+    "Satan's temptations are visual: banquets, armies, cities and philosophical schools are shown to the Son in elaborate descriptions. The Son replies with words, usually Scripture, and often very few. The poem trains its reader to distrust splendour and to value the plain and exact word, a lesson reflected in its own style [[fish1971]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "'It is written'",
+   "text": "The Son answers the three Gospel temptations with quotations from Deuteronomy, as in the Gospels, and many of his other replies cite or apply Scripture. Satan quotes Scripture too, at the pinnacle. The poem is a contest of interpretation in which the right reading of Scripture is the hero's weapon."
+  },
+  {
+   "title": "Hunger and food",
+   "text": "The Son fasts forty days, dreams of Elijah's ravens and Daniel's pulse, refuses the stones and the banquet, and is finally fed by angels with fruits from the tree of life. Food links the poem to the apple of Paradise Lost and contrasts lawful need with luxury."
+  },
+  {
+   "title": "Standing and falling",
+   "text": "The Son 'stoodst Unshaken' in the storm and 'stood' on the pinnacle; Satan 'fell'. The motif links the poem to the Fall of Paradise Lost, where Adam was made 'Sufficient to have stood, though free to fall'."
+  },
+  {
+   "title": "Disguise",
+   "text": "Satan approaches as a countryman and as a courtier; the Son sees through each disguise. Behind them lies the larger question of what is hidden in the Son himself, a man in whose face 'The glimpses of his Fathers glory shine'."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The wilderness",
+   "text": "The desert where Israel wandered forty years and where Moses and Elijah fasted forty days becomes the scene of a new Eden: Paradise 'rais'd in the wast Wilderness'. Its barrenness strips the action down to dialogue and choice."
+  },
+  {
+   "title": "The mountain",
+   "text": "The 'specular Mount' from which Satan shows the kingdoms of the world is a place of vision and temptation, a dark counterpart to the hill from which Michael shows Adam the future in Paradise Lost."
+  },
+  {
+   "title": "The pinnacle of the Temple",
+   "text": "The highest point of the 'Fathers house' becomes the test of the Son's identity. To stand there is impossible for a mere man; the Son's standing marks the end of the trial and the fall of Satan."
+  },
+  {
+   "title": "The mother's house",
+   "text": "The final destination of the poem, a private, humble home. It answers the palaces, cities and thrones of the temptations and reminds the reader that the victory has been won in secret."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Genre and the relation to Paradise Lost",
+   "text": [
+    "Is Paradise Regained an epic, and is it a sequel? Milton called it a poem in four books and opened it with a formal invocation, but it has little action, a limited setting and much debate. Lewalski argued that it is a deliberate example of the 'brief epic' modelled on the Book of Job, a form with its own tradition of short biblical narratives, and that it rethinks epic heroism around Christ's offices as prophet, king and priest [[lewalski1966]].",
+    "Its relation to Paradise Lost is also debated. Ellwood's anecdote suggests a sequel, and the opening lines invite comparison; but the later poem omits the Crucifixion and locates the regaining of Paradise in the temptation. Some readers see it as the theological completion of the earlier epic, others as a different, more austere kind of poem that corrects it [[ellwood1714]] [[carey1997]] [[martz1964]]."
+   ],
+   "cite": [
+    "lewalski1966",
+    "ellwood1714",
+    "carey1997",
+    "martz1964",
+    "pope1947"
+   ]
+  },
+  {
+   "title": "Patience and politics after the Restoration",
+   "text": [
+    "The Son's refusals have been read as political quietism: after the defeat of 1660, the poem would counsel withdrawal into the inner life. Christopher Hill rejected this view. In his account the Son's patience is the discipline of a defeated revolutionary who refuses premature or illegitimate means and waits for God's time, without abandoning the hope of change [[hill1977]].",
+    "Laura Lunger Knoppers read the 1671 poems against the public spectacles of the restored monarchy, arguing that the Son's inward discipline and contempt for display oppose the culture of the Restoration court [[knoppers1994]]. David Loewenstein places the poem alongside the writings of radical sectarians, including Quakers, for whom spiritual inwardness was itself a form of resistance [[loewenstein2001]]."
+   ],
+   "cite": [
+    "hill1977",
+    "knoppers1994",
+    "loewenstein2001",
+    "knoppers2008"
+   ]
+  },
+  {
+   "title": "The rejection of Athens",
+   "text": [
+    "Does the Son's speech against Greek learning (PR 4.285–364) express Milton's own late view? Some readers have taken it so and found it a disturbing reversal of the humanism of Of Education and Areopagitica. Others argue that the Son rejects not classical learning but Satan's offer of it as a substitute for revelation and an instrument of power; that the Son claims to know these things already; and that the passage allows a place for 'moral vertue ... By light of Nature'.",
+    "A further view connects the speech with the poem's own practice: the Son prefers the 'majestic unaffected stile' of the prophets, and Paradise Regained is written in a deliberately plain manner. The rejection of Athens is then a statement of poetics as well as of doctrine [[lewalski1966]] [[fish2001]]."
+   ],
+   "cite": [
+    "lewalski1966",
+    "fish2001",
+    "stein1957"
+   ]
+  },
+  {
+   "title": "The theology of the Son",
+   "text": [
+    "The Latin treatise De Doctrina Christiana, discovered in 1823 and attributed to Milton, holds that the Son is subordinate to the Father and not co-eternal with him, a position often loosely called Arian. Paradise Regained, with its 'perfect Man, by merit call'd my Son' and its human, self-discovering hero, has been read in that light [[lieb2006]].",
+    "The attribution of De Doctrina was challenged by William B. Hunter; a team led by Gordon Campbell and Thomas Corns concluded that it is Milton's, though an unfinished work in progress [[hunter1998]] [[campbell2007]]. Readers also disagree over how far a poem should be glossed by a treatise: the Son's humanity in the poem can be explained by orthodox kenotic theology, in which the divine Son 'empties himself' in becoming man."
+   ],
+   "cite": [
+    "lieb2006",
+    "hunter1998",
+    "campbell2007",
+    "lewalski1966"
+   ]
+  },
+  {
+   "title": "The pinnacle: does Satan learn who the Son is?",
+   "text": [
+    "The climax turns on an ambiguous line: 'Tempt not the Lord thy God'. Read as a quotation of Deuteronomy, it means that the Son, as man, will not tempt God by forcing a miracle. Read as a declaration, it identifies the Son as the Lord whom Satan is tempting, and his standing as a manifestation of divinity. Pope surveyed the exegetical tradition behind the episode [[pope1947]]; Lewalski and others see it as the moment when the Son's full identity is revealed to himself and to Satan [[lewalski1966]].",
+    "Others resist a single answer. The poem says only that Satan, 'smitten with amazement', fell. Whether he understands what he has seen, and whether the Son's standing is a miracle or simply an act of trust, is left to the reader [[fish1971]] [[rushdy1992]]."
+   ],
+   "cite": [
+    "pope1947",
+    "lewalski1966",
+    "fish1971",
+    "rushdy1992"
+   ]
+  },
+  {
+   "title": "Style and the reader",
+   "text": [
+    "Early readers found the poem dry, and its style is very different from the grand manner of Paradise Lost: fewer similes, simpler syntax and long stretches of argument. Louis Martz connected it with the meditative tradition and the middle style of Virgil's Georgics [[martz1964]]; Lewalski showed that Milton varies his styles deliberately, reserving richness for Satan's temptations [[lewalski1966]].",
+    "Stanley Fish argued that the poem works on its readers by frustrating their desire for action. Every time the reader expects the Son to do something, he does nothing, and the reader must learn to see that refusal as the action [[fish1971]]."
+   ],
+   "cite": [
+    "martz1964",
+    "lewalski1966",
+    "fish1971"
+   ]
+  },
+  {
+   "title": "Reception",
+   "text": [
+    "According to Edward Phillips, the poem was generally judged inferior to Paradise Lost, to Milton's displeasure. That judgement prevailed through much of the eighteenth century. The Romantics revalued it: Wordsworth is reported to have thought it the most perfect in execution of Milton's poems, and Coleridge praised it as perfect in its kind [[wittreich1970]]. Blake painted twelve watercolours for it, now in the Fitzwilliam Museum, Cambridge [[butlin1981]]. Modern criticism since the 1940s has treated it as one of Milton's most demanding achievements."
+   ],
+   "cite": [
+    "wittreich1970",
+    "butlin1981",
+    "wittreich1971"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "PR 1.14–17",
+   "quote": "With prosperous wing full summ'd to tell of deeds\nAbove Heroic, though in secret done,\nAnd unrecorded left through many an Age,\nWorthy t' have not remain'd so long unsung.",
+   "who": "The narrator",
+   "explanation": "The invocation claims for the poem a heroism higher than that of epic tradition, consisting in secret and inward deeds. It also claims originality: the poet will sing what has remained 'unsung', an epic boast in a poem that questions epic values."
+  },
+  {
+   "ref": "PR 1.165–67",
+   "quote": "From what consummate vertue I have chose\nThis perfect Man, by merit call'd my Son,\nTo earn Salvation for the Sons of men.",
+   "who": "God the Father",
+   "explanation": "The Father presents the Son as a man chosen and proved by merit. The emphasis on humanity and testing is central to the poem's drama and to debates about Milton's theology."
+  },
+  {
+   "ref": "PR 1.262–64",
+   "quote": "Known partly, and soon found of whom they spake\nI am; this chiefly, that my way must lie\nThrough many a hard assay even to the death,",
+   "who": "The Son",
+   "explanation": "The Son describes his discovery of his identity in Scripture. The enjambment isolates 'I am', the divine name of Exodus 3:14, at the head of the line, while the sentence stresses suffering and death."
+  },
+  {
+   "ref": "PR 2.466–67",
+   "quote": "Yet he who reigns within himself, and rules\nPassions, Desires, and Fears, is more a King;",
+   "who": "The Son",
+   "explanation": "Rejecting wealth as the means to power, the Son defines kingship as self-government. The idea is classical, but in 1671 it also asks what makes a ruler legitimate."
+  },
+  {
+   "ref": "PR 3.182–83",
+   "quote": "All things are best fullfil'd in thir due time,\nAnd time there is for all things, Truth hath said:",
+   "who": "The Son",
+   "explanation": "Echoing Ecclesiastes 3:1, the Son opposes God's time to Satan's urgency. This principle governs his answers to all the political temptations."
+  },
+  {
+   "ref": "PR 3.194–96",
+   "quote": "What I can suffer, how obey? who best\nCan suffer, best can do; best reign, who first\nWell hath obey'd;",
+   "who": "The Son",
+   "explanation": "The poem's ethic: suffering and obedience come before action and rule. The chiasmus binds the passive and active virtues together."
+  },
+  {
+   "ref": "PR 4.321–24",
+   "quote": "However many books\nWise men have said are wearisom; who reads\nIncessantly, and to his reading brings not\nA spirit and judgment equal or superior,",
+   "who": "The Son",
+   "explanation": "Part of the rejection of Athens. The objection is not to books but to reading without judgement; the reader who brings nothing remains, as the next lines say, 'Deep verst in books and shallow in himself'."
+  },
+  {
+   "ref": "PR 4.420–21",
+   "quote": "O patient Son of God, yet only stoodst\nUnshaken; nor yet staid the terror there,",
+   "who": "The narrator",
+   "explanation": "In the night storm the narrator addresses the Son directly. 'Patient' and 'stoodst Unshaken' anticipate the final scene on the pinnacle."
+  },
+  {
+   "ref": "PR 4.516–17",
+   "quote": "In what degree or meaning thou art call'd\nThe Son of God, which bears no single sence;",
+   "who": "Satan",
+   "explanation": "Satan admits the question that has driven all his temptations. The phrase 'no single sence' points to the poem's interest in interpretation and to the theological problem of the Son's identity."
+  },
+  {
+   "ref": "PR 4.560–61",
+   "quote": "To whom thus Jesus: also it is written,\nTempt not the Lord thy God, he said and stood.",
+   "who": "The Son and the narrator",
+   "explanation": "The climax. The words can mean that the Son will not tempt God by presuming on a miracle, or that he is himself the Lord whom Satan tempts. The brief narrative 'he said and stood' turns words into the poem's only decisive act."
+  }
+ ],
+ "questions": [
+  {
+   "q": "In what sense does Paradise Regained 'regain' Paradise, if it ends before the Crucifixion?",
+   "hint": "Look at the opening lines and the angels' hymn (PR 4.596–635). Consider the parallel between the first Adam's disobedience and the Son's obedience."
+  },
+  {
+   "q": "Why does Milton follow Luke's order of the temptations rather than Matthew's?",
+   "hint": "Think about what the pinnacle achieves as a climax: the question of identity, the contrast of standing and falling."
+  },
+  {
+   "q": "How does the poem redefine heroism?",
+   "hint": "Compare 'deeds Above Heroic' (PR 1.15) with the heroes cited by Satan in Book 3 and with the warrior angels of Paradise Lost."
+  },
+  {
+   "q": "What do the scenes of the disciples and Mary add to the poem?",
+   "hint": "None of them is in the Gospel temptation narratives. Consider the theme of waiting and the different expectations of a Messiah."
+  },
+  {
+   "q": "How does Satan in Paradise Regained differ from Satan in Paradise Lost?",
+   "hint": "Consider his disguises, his rhetoric, his confession of despair (PR 3.203–22) and his uncertainty about the Son."
+  },
+  {
+   "q": "Is the Son's patience politically quietist?",
+   "hint": "Weigh the Son's insistence on 'due time' against Hill's and Knoppers's readings of the poem in the context of the Restoration."
+  },
+  {
+   "q": "How should we read the rejection of Athens in a poem by so learned a poet?",
+   "hint": "Note who is offering the learning and why, the Son's claim at PR 4.286–88, and the concession at PR 4.351–52."
+  },
+  {
+   "q": "What does the Son know about himself at the beginning of the poem, and what does he know at the end?",
+   "hint": "Compare the soliloquy of Book 1 with the scene on the pinnacle. Consider the idea of kenosis."
+  },
+  {
+   "q": "What is the effect of the poem's plain style?",
+   "hint": "Compare the Son's brief answers with Satan's descriptions of the banquet, Parthia, Rome and Athens. Consider PR 4.359 on the prophets' 'majestic unaffected stile'."
+  },
+  {
+   "q": "Why does the poem end with the Son returning 'private' to his mother's house?",
+   "hint": "Think about the theme of obscurity and secrecy, the role of Mary, and the work that the angels' hymn says is still to come."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "butlin1981",
+   "text": "Butlin, Martin. The Paintings and Drawings of William Blake. 2 vols. New Haven: Yale University Press for the Paul Mellon Centre for Studies in British Art, 1981."
+  },
+  {
+   "id": "campbell2007",
+   "text": "Campbell, Gordon, Thomas N. Corns, John K. Hale, and Fiona J. Tweedie. Milton and the Manuscript of De Doctrina Christiana. Oxford: Oxford University Press, 2007."
+  },
+  {
+   "id": "campbell2008",
+   "text": "Campbell, Gordon, and Thomas N. Corns. John Milton: Life, Work, and Thought. Oxford: Oxford University Press, 2008."
+  },
+  {
+   "id": "carey1997",
+   "text": "Carey, John, ed. Milton: Complete Shorter Poems. 2nd ed. Harlow: Longman, 1997."
+  },
+  {
+   "id": "ellwood1714",
+   "text": "Ellwood, Thomas. The History of the Life of Thomas Ellwood. London: Printed and sold by the assigns of J. Sowle, 1714."
+  },
+  {
+   "id": "fish1971",
+   "text": "Fish, Stanley E. 'Inaction and Silence: The Reader in Paradise Regained.' In Calm of Mind: Tercentenary Essays on Paradise Regained and Samson Agonistes in Honor of John S. Diekhoff, edited by Joseph Anthony Wittreich, Jr. Cleveland: Press of Case Western Reserve University, 1971."
+  },
+  {
+   "id": "fish2001",
+   "text": "Fish, Stanley. How Milton Works. Cambridge, MA: Belknap Press of Harvard University Press, 2001."
+  },
+  {
+   "id": "hill1977",
+   "text": "Hill, Christopher. Milton and the English Revolution. London: Faber and Faber, 1977."
+  },
+  {
+   "id": "hughes1957",
+   "text": "Hughes, Merritt Y., ed. John Milton: Complete Poems and Major Prose. New York: Odyssey Press, 1957."
+  },
+  {
+   "id": "hunter1998",
+   "text": "Hunter, William B. Visitation Unimplor'd: Milton and the Authorship of De Doctrina Christiana. Pittsburgh: Duquesne University Press, 1998."
+  },
+  {
+   "id": "knoppers1994",
+   "text": "Knoppers, Laura Lunger. Historicizing Milton: Spectacle, Power, and Poetry in Restoration England. Athens: University of Georgia Press, 1994."
+  },
+  {
+   "id": "knoppers2008",
+   "text": "Knoppers, Laura Lunger, ed. The 1671 Poems: Paradise Regain'd and Samson Agonistes. Vol. 2 of The Complete Works of John Milton. Oxford: Oxford University Press, 2008."
+  },
+  {
+   "id": "lewalski1966",
+   "text": "Lewalski, Barbara Kiefer. Milton's Brief Epic: The Genre, Meaning, and Art of Paradise Regained. Providence: Brown University Press; London: Methuen, 1966."
+  },
+  {
+   "id": "lewalski2000",
+   "text": "Lewalski, Barbara Kiefer. The Life of John Milton: A Critical Biography. Oxford: Blackwell, 2000."
+  },
+  {
+   "id": "lieb2006",
+   "text": "Lieb, Michael. Theological Milton: Deity, Discourse and Heresy in the Miltonic Canon. Pittsburgh: Duquesne University Press, 2006."
+  },
+  {
+   "id": "loewenstein2001",
+   "text": "Loewenstein, David. Representing Revolution in Milton and His Contemporaries: Religion, Politics, and Polemics in Radical Puritanism. Cambridge: Cambridge University Press, 2001."
+  },
+  {
+   "id": "martz1964",
+   "text": "Martz, Louis L. The Paradise Within: Studies in Vaughan, Traherne, and Milton. New Haven: Yale University Press, 1964."
+  },
+  {
+   "id": "pope1947",
+   "text": "Pope, Elizabeth Marie. Paradise Regained: The Tradition and the Poem. Baltimore: Johns Hopkins Press, 1947."
+  },
+  {
+   "id": "rushdy1992",
+   "text": "Rushdy, Ashraf H. A. The Empty Garden: The Subject of Late Milton. Pittsburgh: University of Pittsburgh Press, 1992."
+  },
+  {
+   "id": "stein1957",
+   "text": "Stein, Arnold. Heroic Knowledge: An Interpretation of Paradise Regained and Samson Agonistes. Minneapolis: University of Minnesota Press, 1957."
+  },
+  {
+   "id": "wittreich1970",
+   "text": "Wittreich, Joseph Anthony, Jr., ed. The Romantics on Milton: Formal Essays and Critical Asides. Cleveland: Press of Case Western Reserve University, 1970."
+  },
+  {
+   "id": "wittreich1971",
+   "text": "Wittreich, Joseph Anthony, Jr., ed. Calm of Mind: Tercentenary Essays on Paradise Regained and Samson Agonistes in Honor of John S. Diekhoff. Cleveland: Press of Case Western Reserve University, 1971."
+  }
+ ]
+}
