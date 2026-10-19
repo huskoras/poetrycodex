@@ -3186,3 +3186,14 @@ a.ec-here { color: var(--accent); }
 .pp-box { border-left-color: var(--gold, #b08d3c); }
 .pp-box .gd-box-k { color: var(--gold, #9a7a2e); }
 .gd-lines { margin: -.4rem 0 1rem !important; color: var(--ink-soft); font-size: .9rem; }
+/* study-guide and who's-who boxes: label above, title in the serif, arrow on the right (owner, 19 Oct 2026) */
+.gd-box { display: grid; grid-template-columns: 1fr auto; align-items: center; column-gap: 1.2rem; row-gap: .3rem;
+  padding: .9rem 1.15rem .95rem; transition: border-color .15s, background .15s; }
+.gd-box .gd-box-k { grid-column: 1; font: 600 .68rem/1 var(--sans); letter-spacing: .15em; }
+.gd-box .gd-box-t { grid-column: 1; font-family: var(--serif); font-style: normal; font-weight: 500; font-size: 1.06rem;
+  line-height: 1.35; color: var(--ink); letter-spacing: .005em; }
+.gd-box > span[aria-hidden] { grid-column: 2; grid-row: 1 / span 2; font-size: 1.25rem; color: #cf4f28; transition: transform .15s; }
+.gd-box.pp-box > span[aria-hidden] { color: var(--gold, #9a7a2e); }
+.gd-box:hover { background: var(--surface-2, var(--surface)); }
+.gd-box:hover > span[aria-hidden] { transform: translateX(3px); }
+.gd-box + .gd-box { margin-top: -.6rem; }
