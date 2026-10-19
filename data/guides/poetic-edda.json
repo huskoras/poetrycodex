@@ -1,0 +1,949 @@
+{
+ "work": "poetic-edda",
+ "title": "The Poetic Edda",
+ "author": "Anonymous (Old Norse)",
+ "quoteEdition": "poetic-edda-bellows",
+ "updated": "2026-10-19",
+ "unit": "Part",
+ "glance": [
+  {
+   "label": "Manuscript",
+   "value": "The Codex Regius, Reykjavík, Árni Magnússon Institute, GKS 2365 4to, written in Iceland around 1270; 45 leaves survive, and a gathering of eight leaves is lost from the middle of the Sigurd poems"
+  },
+  {
+   "label": "Discovery and return",
+   "value": "Acquired in 1643 by Bishop Brynjólfur Sveinsson of Skálholt, who sent it to King Frederik III of Denmark in 1662; returned to Iceland in 1971"
+  },
+  {
+   "label": "Contents",
+   "value": "About thirty poems: mythological poems about the gods (Völuspá to Alvíssmál), then heroic poems on Völundr, Helgi, Sigurd, Brynhildr, Guðrún and the Niflungs; translators add related poems from other manuscripts"
+  },
+  {
+   "label": "Composed",
+   "value": "Disputed: individual poems may date from the ninth or tenth century to the thirteenth; they were composed and transmitted orally before being written down, in Norway, Iceland and perhaps the Norse colonies"
+  },
+  {
+   "label": "Language",
+   "value": "Old Norse (Old West Norse, in its Icelandic form)"
+  },
+  {
+   "label": "Metres",
+   "value": "Fornyrðislag ('old-story metre') for narrative, ljóðaháttr ('song metre') for dialogue and wisdom, and the heavier málaháttr ('speech metre'), used in Atlamál; all are alliterative, like Old English verse"
+  },
+  {
+   "label": "Name",
+   "value": "'Edda' first belonged to Snorri Sturluson's handbook of poetics (c. 1220), the Prose Edda; the poems were called 'Sæmund's Edda' after a false seventeenth-century attribution to Sæmundr the Learned"
+  },
+  {
+   "label": "Translations on this site",
+   "value": "Henry Adams Bellows (1923), the quotation edition, in alliterative verse with modernised Norse spellings; and Benjamin Thorpe (1866)"
+  },
+  {
+   "label": "Bellows's forms",
+   "value": "Bellows writes Voluspo, Hovamol, Thrymskvitha, Othin, Sigurth, Guthrun, Völund; this guide uses the standard forms Völuspá, Hávamál, Þrymskviða, Odin, Sigurd, Guðrún, Völundr"
+  },
+  {
+   "label": "References",
+   "value": "By poem and stanza, as numbered in Bellows (e.g. Vsp. 1, Háv. 77); Bellows's numbers sometimes differ from the standard Neckel–Kuhn edition, notably in Hávamál, where they are one higher"
+  }
+ ],
+ "context": [
+  "The Poetic Edda is the name modern scholars give to a body of anonymous Old Norse poems about the gods and the legendary heroes of the Germanic north. Almost all of them survive in one small, plain book, the Codex Regius ('the king's book'), now GKS 2365 4to, written in Iceland around 1270. In 1643 it came into the hands of Brynjólfur Sveinsson, bishop of Skálholt, who believed it to be the lost work of the learned priest Sæmundr Sigfússon (1056–1133) and called it 'Sæmund's Edda'. In 1662 he sent it to King Frederik III of Denmark, and it remained in the Royal Library in Copenhagen until 1971, when it was returned to Iceland amid national celebration. It is now in the Árni Magnússon Institute in Reykjavík [[neckel1983]] [[larrington1996]].",
+  "The word Edda properly belongs to a different book: the Prose Edda of the Icelandic chieftain and historian Snorri Sturluson (1179–1241), written around 1220, a handbook for poets that retells the myths and explains poetic language. Snorri knew many of the same poems and quotes them, sometimes in versions that differ from the Codex Regius, and his prose account is often the only way to make sense of their allusions. The two Eddas must be kept apart, but each is needed to read the other [[faulkes1987]] [[lindow2001]].",
+  "The Codex Regius is arranged with care. It begins with Völuspá, the history of the world from creation to Ragnarök, and continues with poems about Odin, Thor, Freyr and Loki: wisdom poems, contests of knowledge, flytings and comic adventures. With Völundarkviða it turns to heroes, and from the Helgi poems onward it follows a single family history, the legend of the Völsungs and the Niflungs (the Gjúkungs), from the cursed gold of the dwarf Andvari through the deaths of Sigurd, Brynhildr, Gunnarr and Högni to the vengeance of Guðrún and the deaths of her last sons. Prose passages by the compiler link the poems and explain them. Translators usually add a few poems in the same style from other manuscripts, such as Baldrs draumar, Rígsþula and Hyndluljóð [[harris1985]] [[clunies2005]].",
+  "The poems are in three main metres, all built, like Old English verse, on stress and alliteration rather than syllable count or rhyme. Fornyrðislag, the 'metre of ancient words', is used for narrative and is closest to the Old English line; ljóðaháttr, the 'song metre', pairs a long line with a shorter self-contained one and is used for dialogue and wisdom; málaháttr, 'speech metre', has heavier lines. Unlike the elaborate court poetry of the skalds, Eddic verse is relatively plain in diction, anonymous, and concerned with the shared past rather than with praising a living patron [[clunies2005]] [[harris1985]].",
+  "This guide quotes the verse translation of Henry Adams Bellows (1923), which keeps the alliteration and the stanza shapes and gives the stanza numbers of the standard editions, though not always exactly. Bellows uses his own anglicised forms (Voluspo, Hovamol, Othin, Sigurth, Guthrun); the guide uses the usual modern forms in its own prose. The site also holds Benjamin Thorpe's translation of 1866, the first complete English version, which includes a few further poems. Among modern versions, Carolyne Larrington's Oxford translation and Ursula Dronke's edition with translation and commentary are the standard points of reference [[bellows1923]] [[thorpe1866]] [[larrington1996]] [[dronke1969]]."
+ ],
+ "plot": [
+  "The Poetic Edda has no single plot, but its order tells a story. Völuspá gives the whole history of the world: the void, the making of earth from the sea, the golden age of the gods, the first war and the first killing, the death of Baldr and the binding of Loki, and then Ragnarök, the 'doom of the gods', when the giants and monsters break loose, Odin is swallowed by the wolf, Thor dies killing the world serpent, and fire consumes the world, which rises again new and green.",
+  "The mythological poems that follow fill in this history. Odin seeks wisdom by sacrifice on the tree, by disguise in the halls of giants and kings, and by raising the dead; Thor fights giants, fishes for the world serpent and recovers his stolen hammer in women's clothing; Freyr woos a giantess; Loki insults all the gods at a feast and is bound. Throughout, the gods know that their end is coming.",
+  "The heroic poems begin with Völundr the smith's terrible revenge on the king who crippled him, and the stories of the hero Helgi and his valkyrie loves. Then comes the Völsung cycle. Sigurd, son of Sigmundr, kills the dragon Fáfnir and wins the cursed gold, wakes a valkyrie, and comes to the court of Gjúki, where he marries Guðrún and helps her brother Gunnarr to win Brynhildr by deceit. Brynhildr, learning the truth, brings about Sigurd's death and then kills herself.",
+  "Guðrún, married against her will to Atli, king of the Huns, sees him lure her brothers Gunnarr and Högni to his court and kill them for the gold, which Gunnarr has hidden in the Rhine. She avenges them by killing her own sons by Atli, then Atli himself, and burning his hall. In her last years she urges her sons by a third marriage, Hamðir and Sörli, to avenge their half-sister Svanhildr on the Gothic king Jörmunrekkr; they maim him but are stoned to death, and the line ends."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Seeress's Prophecy",
+   "lines": "Voluspo",
+   "section": 0,
+   "summary": [
+    "Völuspá, 'the prophecy of the seeress', opens the Codex Regius and gives the whole collection its cosmic frame. A völva, a seeress raised from a long memory that reaches back before the world, asks for silence from 'the holy races' and speaks to Odin, whom she calls Valfather. She remembers the giants who fostered her, the nine worlds and the great tree, and the time when Ymir lived and there was only a 'yawning gap', Ginnungagap.",
+    "She tells how the sons of Burr lifted the earth out of the sea, how the gods gave names to night and day, built their shrines at Iðavöllr and played at tables with golden pieces in a golden age. Dwarfs are made and listed; the first human pair, Askr and Embla, are found as lifeless logs and given breath, sense and colour. The ash Yggdrasil stands over the well of Urðr, where the three Norns allot the lives of men. Then comes the first war, between the Æsir and the Vanir, sparked by the burning of the witch Gullveig; Odin hurls his spear over the host, and the wall of the gods is broken.",
+    "The seeress shows that she knows where Odin's eye is hidden, in the well of Mímir, and is rewarded with rings. She sees the valkyries ride out, the death of Baldr by the mistletoe shaft, and Loki bound. From here the poem moves into the future: brothers kill each other, the hound Garmr howls, Heimdallr blows the Gjallarhorn, the wolf and the serpent break loose, and the gods fall one by one in Ragnarök while the sun turns black and fire leaps to heaven. Then a new earth rises green from the sea, the surviving gods meet again, Baldr returns, and the righteous dwell in the gold-roofed hall of Gimlé. The last image is the dragon Níðhöggr flying up with corpses on his wings, and the seeress sinks back into silence."
+   ],
+   "analysis": [
+    "The poem is a history of the cosmos in some sixty stanzas, told in the past and then, with growing urgency, in the present and future tense. Its refrain, 'would you know yet more?', both challenges Odin and draws the listener on. The speaker is herself a riddle: she knows more than the chief of the gods, who has paid with his eye for wisdom and must still come to her. Sigurður Nordal read the poem as the work of a single Icelandic poet writing around the year 1000, in the years of the conversion, who looked at the old gods with dread and at the new faith with hope [[nordal1978]] [[dronke1969]].",
+    "Völuspá survives in two main versions, in the Codex Regius and in Hauksbók (early fourteenth century), which differ in stanza order and content, and Snorri Sturluson quotes and paraphrases it at length in his Edda. The stanza on the 'mighty lord' who comes from above to rule all things (Vsp. 65 in Bellows) is found only in Hauksbók, and its Christian sound has made it central to arguments about the poem's origins. Bellows rearranged stanzas and marked gaps; the reader should remember that the order of the poem is itself an editorial question [[harris1985]] [[mckinnell1994]].",
+    "For readers who know Old English poetry, the metre is the first point of contact: fornyrðislag, the 'metre of ancient words', is built from paired short lines bound by alliteration, very close to the half-lines of Beowulf. The vision of brothers killing brothers and kinship broken (Vsp. 45) belongs to the same world of feud as the Old English heroic poems, and the poem's double ending, the new earth and the dragon, is a reminder that its picture of renewal is not simple consolation [[clunies2005]]."
+   ],
+   "key": [
+    {
+     "ref": "Vsp. 19",
+     "quote": "An ash I know,    Yggdrasil its name,\n    With water white    is the great tree wet;\n    Thence come the dews    that fall in the dales,\n    Green by Urth’s well    does it ever grow.",
+     "note": "Yggdrasil, the world-ash, drips with the dew that falls in the valleys. The tree is the axis of the nine worlds and a recurring centre of Eddic cosmology."
+    },
+    {
+     "ref": "Vsp. 45",
+     "quote": "Brothers shall fight    and fell each other,\n    And sisters’ sons    shall kinship stain;\n    Hard is it on earth,    with mighty whoredom;\n    Axe-time, sword-time,    shields are sundered,",
+     "note": "The 'axe-age, sword-age' of the end of the world begins with the breaking of kinship: in the heroic poems this is exactly the catastrophe that destroys the Niflungs."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Sayings of the High One",
+   "lines": "Hovamol",
+   "section": 1,
+   "summary": [
+    "Hávamál, 'the sayings of the High One' (that is, Odin), is the longest poem in the collection and the least like a story. It opens with practical advice for a traveller who enters a strange hall: look about before you go in, for you cannot tell where an enemy sits; a guest needs fire, food, dry clothes and a welcome; speak little, listen well, and do not drink yourself foolish. This long first section, often called the 'guest's wisdom', moves on to friendship, moderation, generosity, the value of a farm of one's own and the shortness of life. It includes the famous stanzas on death and fame: cattle die, kinsmen die, the self dies too, but a good name does not die.",
+    "The voice then turns to Odin's own experiences, especially with women: his failure to win the daughter of Billingr, who tricks him with a dog tied to her bed, and his success with the giantess Gunnlöð, whom he seduces in order to steal the mead of poetry. A section addressed to a man called Loddfáfnir gives further counsel, often introduced by a repeated formula.",
+    "The poem ends with Odin's account of how he won the runes. He hung on the 'windy tree' for nine nights, wounded with a spear and 'given to Odin, myself to myself', without bread or drink, until he took up the runes, screaming, and fell back. He then lists eighteen spells (the Ljóðatal) that he knows: charms to heal, to blunt an enemy's weapons, to quench fire, to calm the sea, to raise the dead and to win a woman's love, the last of which he will tell to no one."
+   ],
+   "analysis": [
+    "Hávamál is a gnomic poem, a collection of maxims, and much of it is in ljóðaháttr, the 'song metre' of Eddic wisdom: a long line with two alliterating halves followed by a shorter 'full line' that alliterates on its own. Bellows prints the full lines indented, so the shape of the metre can be seen on the page. The maxims are worldly, even calculating: trust is to be returned with trust and falsehood with falsehood. Carolyne Larrington has shown how closely their themes and techniques compare with Old English wisdom poems such as the Maxims and the gnomic passages of The Wanderer and The Seafarer [[larrington1993]].",
+    "The stanzas on death and fame (Háv. 77–78 in Bellows, 76–77 in Neckel–Kuhn) are the best-known lines in Old Norse. Their thought, that wealth and kin are lent and only reputation lasts, is very close to The Wanderer's 'here wealth is fleeting, here a friend is fleeting' (108–9) and to the ethic of lof and dom in Beowulf. Whether one hears in them heroic confidence or a rather bleak practicality depends on what stands around them in the poem.",
+    "Odin's hanging on the tree (Háv. 139–42 in Bellows; 138–41 in the standard numbering) has been compared ever since the nineteenth century with the Crucifixion, and the comparison raises the question of Christian influence. Many scholars prefer to read it against the evidence for Odin as god of the hanged and of sacrifice: a self-sacrifice through which the god gains hidden knowledge. Either way the passage makes wisdom something won through suffering, which links Hávamál to the other poems in which Odin seeks knowledge at any cost [[turvillepetre1964]] [[evans1986]]."
+   ],
+   "key": [
+    {
+     "ref": "Háv. 1",
+     "quote": "Within the gates    ere a man shall go,\n      (Full warily let him watch,)\n      Full long let him look about him;\n    For little he knows    where a foe may lurk,",
+     "note": "The first stanza is a lesson in caution at the threshold of a hall. Bellows's indented lines show the 'full lines' of ljóðaháttr."
+    },
+    {
+     "ref": "Háv. 47",
+     "quote": "Young was I once,    and wandered alone,\n      And nought of the road I knew;\n    Rich did I feel    when a comrade I found,\n      For man is man’s delight.",
+     "note": "Odin recalls his own youth. The gnomic last line, 'man is man's delight', is among the most quoted in the poem."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Wisdom Contests",
+   "lines": "Vafthruthnismol, Grimnismol",
+   "section": 2,
+   "summary": [
+    "In Vafþrúðnismál Odin asks his wife Frigg for advice before he goes to test the wisest of the giants, Vafþrúðnir. She warns him, but he goes in disguise, calling himself Gagnráðr. The two stake their heads on the outcome. The giant first questions his guest about the horses of day and night and the river that divides gods from giants; then Odin questions the giant, who tells of the creation of the world from Ymir's body, the origin of the winds, the fate of the gods at Ragnarök and who will survive it. At the end Odin asks what he himself whispered into the ear of his dead son Baldr on the funeral pyre. Only Odin can know the answer, and the giant realises with whom he has been contending.",
+    "Grímnismál is framed by a prose tale. Two princes, Agnarr and Geirröðr, are fostered by Odin and Frigg in disguise; Geirröðr becomes king by treachery. To win a wager with Frigg, Odin visits him as a stranger in a blue cloak who calls himself Grímnir, 'the masked one'. The king has him tortured between two fires for eight nights. The king's young son Agnarr brings him a drink, and Odin, now speaking in the fire, pours out a vision of the dwellings of the gods, Valhöll and its warriors, the ravens Huginn and Muninn, the rivers and the tree Yggdrasil with the creatures that gnaw it. He ends by naming himself in a long list of names. Geirröðr stumbles and falls on his own sword, and Agnarr becomes king."
+   ],
+   "analysis": [
+    "The two poems show the main form of mythological knowledge in the Edda: questions and answers in ljóðaháttr, with the stakes set high. In Vafþrúðnismál the contest is literally a matter of life and death, and the last question is unanswerable not because it is difficult but because it belongs to Odin alone. Snorri drew heavily on both poems for his account of the cosmos [[faulkes1987]] [[lindow2001]].",
+    "Grímnismál is a poem of revelation under torment. Like the hanging in Hávamál, it shows Odin gaining or displaying power through suffering, and its climax, the god's revelation of his names, is an epiphany that destroys the king who failed the test of hospitality. Terry Gunnell has argued that dialogue poems of this kind may have been performed by more than one speaker, a possibility that brings them close to drama [[gunnell1995]].",
+    "The list of Odin's names (Grm. 54) and the attention to the right name for each thing connect these poems to the poetic art itself: much of Old Norse poetry depended on the poet's mastery of heiti, poetic names, and kennings, and Snorri's handbook later systematised this lore [[clunies2005]]."
+   ],
+   "key": [
+    {
+     "ref": "Vm. 54",
+     "quote": "“Much have I fared,    much have I found,\n      Much have I got from the gods:\n    What spake Othin himself    in the ears of his son,\n      Ere in the bale-fire he burned?”",
+     "note": "Odin's final question: what he said to Baldr on the pyre. The answer is never given, which makes it the most famous secret in Norse myth."
+    },
+    {
+     "ref": "Grm. 20",
+     "quote": "O’er Mithgarth Hugin    and Munin both\n      Each day set forth to fly;\n    For Hugin I fear    lest he come not home,\n      But for Munin my care is more.",
+     "note": "Huginn ('thought') and Muninn ('memory'), Odin's ravens, fly out over Miðgarðr each day. Odin fears more for memory than for thought."
+    },
+    {
+     "ref": "Grm. 54",
+     "quote": "Now am I Othin,    Ygg was I once,\n      Ere that did they call me Thund;",
+     "note": "The masked guest names himself. The catalogue of names in this stanza is Odin's epiphany."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Freyr's Wooing, the Ferryman and Hymir's Cauldron",
+   "lines": "Skirnismol, Harbarthsljoth, Hymiskvitha",
+   "section": 4,
+   "summary": [
+    "In Skírnismál the god Freyr, sitting in Odin's high seat, sees the giantess Gerðr in Jötunheimr and falls sick with love. His servant Skírnir rides through flickering fire to woo her for him, taking Freyr's sword. Gerðr refuses gifts of golden apples and the ring Draupnir; she yields only when Skírnir threatens her with a curse of loneliness, madness and a monstrous marriage, carved in runes. She agrees to meet Freyr in the grove Barri after nine nights.",
+    "Hárbarðsljóð is a slanging match. Thor, returning from the east, comes to a sound and asks a ferryman to carry him across. The ferryman, Hárbarðr ('grey-beard'), is Odin in disguise; he refuses and mocks Thor's clothes and family. The two boast of their deeds: Thor of killing giants, Odin of seducing women and stirring up wars. Thor never gets across and must walk round.",
+    "In Hymiskviða the gods, feasting with the sea-giant Ægir, need a cauldron large enough to brew ale. Thor and Týr go to the giant Hymir to fetch one. Thor eats two oxen at a meal; on a fishing trip he baits his hook with an ox's head and draws up the Miðgarðr serpent, striking it with his hammer before it sinks back. He breaks Hymir's goblet on the giant's own head and carries off the cauldron."
+   ],
+   "analysis": [
+    "These three poems show the gods in dealings with the giants that are by turns erotic, comic and violent. Skírnismál has been read as a fertility myth, with Gerðr as the earth and Freyr as the god of growth, but it is also a disturbing poem about consent, in which the wooing succeeds only by threat. Hárbarðsljóð is a mannjafnaðr, a 'comparison of men', in which two speakers compete in insult and boast. It sets Odin's guile against Thor's strength and suggests that each god has his own social constituency: in the ferryman's words, Odin has the nobles who fall in battle and Thor the race of thralls [[lindow2001]] [[clunies1994]].",
+    "Thor's fishing for the world serpent was one of the most widely told Norse myths: it appears on carved stones in Scandinavia and on the Gosforth fishing stone in Cumbria, in northern England, which shows how far this mythology travelled in the Viking-age settlements of Britain. Hymiskviða itself is usually thought to be a late composition, full of kennings and allusions, which collects older stories into a single adventure [[harris1985]]."
+   ],
+   "key": [
+    {
+     "ref": "Hrbl. 24",
+     "quote": "“In Valland I was,    and wars I raised,\n    Princes I angered,    and peace brought never;\n    The noble who fall    in the fight hath Othin,\n    And Thor hath the race of the thralls.”",
+     "note": "Odin, in disguise as the ferryman, contrasts his followers with Thor's. The boast is one of the main pieces of evidence for the social profile of the two cults."
+    },
+    {
+     "ref": "Hym. 23",
+     "quote": "The warder of men,    the worm’s destroyer,\n    Fixed on his hook    the head of the ox;\n    There gaped at the bait    the foe of the gods,\n    The girdler of all    the earth beneath.",
+     "note": "Thor baits his hook for the 'girdler of all the earth', the Miðgarðr serpent, which will kill him at Ragnarök."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Loki's Quarrel",
+   "lines": "Lokasenna",
+   "section": 7,
+   "summary": [
+    "Lokasenna, 'Loki's flyting', is set at a feast in the hall of Ægir. A prose introduction tells how Loki kills one of Ægir's servants and is driven out, then returns and demands a seat and a drink. Odin, mindful of an old oath of blood-brotherhood, makes room for him. Loki then turns on the gods and goddesses one by one: Bragi is a coward, Iðunn and Freyja have slept with everyone, Odin has given victory to the unworthy and practised effeminate magic, Njörðr was a hostage, Týr lost his hand to the wolf and his wife to Loki, Freyr gave away his sword for a giantess. Each god answers, and Loki caps each answer.",
+    "Only the arrival of Thor ends the quarrel. Loki mocks him too, but four times Thor threatens him with his hammer, and Loki leaves, cursing Ægir's hall with fire. The closing prose tells how the gods catch Loki, disguised as a salmon, and bind him with the guts of his son, while a serpent drips poison onto his face; his wife Sigyn holds a bowl to catch it, and when she empties it the poison falls on him and his writhing shakes the earth."
+   ],
+   "analysis": [
+    "Lokasenna is the most sustained senna, or flyting, in Old Norse. Its insults are drawn from a large body of myth, much of which survives nowhere else, and it was long read as a late, even Christian, satire on the pagan gods. Many recent critics see it rather as a poem that knows the mythology intimately and dramatises the moral weaknesses that will lead to Ragnarök. Loki's accusations are mostly true, and the gods' frequent reply, that Frigg and Gefjun know all fates but do not speak them, hints at the doom that hangs over the feast [[mckinnell1994]] [[acker2002]].",
+    "The poem's structure, a series of exchanges each in a pair of ljóðaháttr stanzas, makes it one of the best candidates for dramatic performance, with several speakers taking roles [[gunnell1995]]. It also marks the turning point of Loki's career: after this he is no longer the gods' troublesome companion but their bound enemy, who will break free to lead the giants at the end of the world."
+   ],
+   "key": [
+    {
+     "ref": "Ls. 22",
+     "quote": "“Be silent, Othin!    not justly thou settest\n      The fate of the fight among men;\n    Oft gavst thou to him    who deserved not the gift,\n      To the baser, the battle’s prize.”",
+     "note": "Loki accuses Odin of unfairness in giving victory, the same charge that Odin himself boasts of in Hárbarðsljóð."
+    },
+    {
+     "ref": "Ls. 29",
+     "quote": "“Mad art thou, Loki,    that known thou makest\n      The wrong and shame thou hast wrought;\n    The fate of all    does Frigg know well,\n      Though herself she says it not.”",
+     "note": "Freyja's answer is a recurring motif of the poem: Frigg knows all fates and keeps silent. The knowledge of doom hangs over the comedy."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Thor's Hammer and the All-Wise Dwarf",
+   "lines": "Thrymskvitha, Alvissmol",
+   "section": 8,
+   "summary": [
+    "Þrymskviða begins with Thor waking to find his hammer gone. Loki borrows Freyja's feather-cloak and learns that the giant Þrymr has buried it eight miles under the earth and will return it only if Freyja is given to him as a wife. Freyja's fury is so great that her necklace, the Brísingamen, bursts. At Heimdallr's suggestion Thor himself is dressed as the bride, with keys at his belt and a veil, and Loki goes with him as his maid. At the wedding feast the bride eats an ox, eight salmon and all the dainties meant for the women, and drinks three casks of mead; Loki explains that Freyja has not eaten for eight nights in her longing for Jötunheimr. When the hammer is laid in the bride's lap to bless the marriage, Thor seizes it and kills Þrymr and all his kin.",
+    "In Alvíssmál a dwarf, Alvíss ('all-wise'), arrives to claim Thor's daughter, promised to him in Thor's absence. Thor will consent only if the dwarf can tell him what earth, sky, moon, sun, clouds, wind, sea, fire and other things are called in each of the worlds, among men, gods, giants, elves and dwarfs. Alvíss answers every question, but the questioning lasts all night, and the rising sun turns him to stone."
+   ],
+   "analysis": [
+    "Þrymskviða is the most purely comic of the Eddic poems and one of the best told: its repetitions and swift dialogue make it ideal for reading aloud. Its humour depends on the gap between Thor's masculinity and his disguise, and between the giant's eager innocence and the audience's knowledge. Because it is so polished and so free of obscurity, some scholars have argued that it is a late composition, perhaps of the thirteenth century, while others defend an earlier date [[harris1985]].",
+    "Alvíssmál is a poem of the poetic lexicon: each answer lists synonyms of the kind poets used, assigning them to different races. Thor, usually the god of force, wins here by wit, keeping the dwarf talking until dawn. Bellows's Alvissmol and his Thrymskvitha are adjacent in the Codex Regius, where the mythological poems end with Alvíssmál [[clunies2005]]."
+   ],
+   "key": [
+    {
+     "ref": "Þrk. 1",
+     "quote": "Wild was Vingthor    when he awoke,\n      And when his mighty    hammer he missed;\n    He shook his beard,    his hair was bristling,\n    As the son of Jorth    about him sought.",
+     "note": "The opening is abrupt and comic: the god of strength wakes to find his hammer gone."
+    },
+    {
+     "ref": "Þrk. 15",
+     "quote": "“Keys around him    let there rattle,\n    And down to his knees    hang woman’s dress;\n    With gems full broad    upon his breast,\n    And a pretty cap    to crown his head.”",
+     "note": "Heimdallr's plan to dress Thor as the bride, down to the keys of a married woman's household."
+    },
+    {
+     "ref": "Alv. 35",
+     "quote": "But with treacherous wiles    must I now betray thee:\n      The day has caught thee, dwarf!\n      (Now the sun shines here in the hall.)”",
+     "note": "Thor's triumphant last words: the questioning has outlasted the night, and the dwarf is caught by the sun."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Poems beyond the Codex Regius",
+   "lines": "Baldrs Draumar, Rigsthula, Hyndluljoth, Svipdagsmol",
+   "section": 10,
+   "summary": [
+    "Bellows, like most translators, adds several poems in Eddic style that are not in the Codex Regius. Baldrs draumar ('Baldr's dreams'), preserved in the fragmentary manuscript AM 748 I 4to, tells how Baldr has evil dreams, and Odin rides down to Hel and raises a dead seeress who reveals that Baldr will be killed by his brother Höðr and avenged by Váli. When she recognises Odin she tells him to ride home.",
+    "Rígsþula, found in a manuscript of Snorri's Edda (the Codex Wormianus), tells how the god Rígr, identified in the prose with Heimdallr, visits three households in turn and fathers the ancestors of three classes: Þræll the thrall, Karl the free farmer and Jarl the noble, whose youngest son Konr becomes a king. Hyndluljóð, in the late fourteenth-century Flateyjarbók, has Freyja ride to the giantess Hyndla with her favourite Óttarr disguised as a boar, to learn his ancestry; it contains a short prophecy of Ragnarök sometimes called 'the short Völuspá'.",
+    "Svipdagsmál is Bellows's name for two poems preserved only in late paper manuscripts, Grógaldr and Fjölsvinnsmál, which were joined into one story in the nineteenth century: the young Svipdagr raises his dead mother Gróa to give him protective spells, and then, at the gate of a fortress guarded by the watchman Fjölsviðr, wins entry to the maiden Menglöð, who has waited for him."
+   ],
+   "analysis": [
+    "These poems widen the picture of Eddic tradition but also raise questions of date and authenticity. Baldrs draumar is close in style to the poems of the Codex and supplies a myth that Völuspá only alludes to. Rígsþula, with its social ideology of noble birth, has been dated anywhere from the tenth to the thirteenth century and read both as an Irish-influenced Viking-age poem and as a learned medieval one. Svipdagsmál, the latest in transmission, may be a late medieval imitation of Eddic style [[harris1985]] [[larrington2016]].",
+    "Benjamin Thorpe's 1866 translation, also on this site, includes a further poem in this group, the Christian visionary Sólarljóð ('the song of the sun'), as well as the prose piece on the death of Sinfjötli as a separate item. Comparing the contents of the two translations is a good way to see that 'the Poetic Edda' is a modern editorial category rather than a fixed medieval book [[thorpe1866]]."
+   ],
+   "key": [
+    {
+     "ref": "Bdr. 14",
+     "quote": "“Home ride, Othin,    be ever proud;\n    For no one of men    shall seek me more\n    Till Loki wanders    loose from his bonds,\n    And to the last strife    the destroyers come.”",
+     "note": "The dead seeress, having recognised Odin, dismisses him with a prophecy of Ragnarök."
+    },
+    {
+     "ref": "Rþ. 1",
+     "quote": "Men say there went    by ways so green\n    Of old the god,    the aged and wise,\n    Mighty and strong    did Rig go striding.",
+     "note": "The opening of Rígsþula: the old god walking the green roads, about to found the orders of society."
+    },
+    {
+     "ref": "Hdl. 45",
+     "quote": "Then comes another,    a greater than all,\n    Though never I dare    his name to speak;\n    Few are they now    that farther can see\n    Than the moment when Othin    shall meet the wolf.",
+     "note": "The 'short Völuspá' in Hyndluljóð: a greater one is coming whose name the speaker dares not say."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Völundr the Smith",
+   "lines": "Völundarkvitha",
+   "section": 14,
+   "summary": [
+    "Völundarkviða begins the heroic poems in the Codex Regius, though its hero is half-elf and its world closer to folktale. A prose introduction tells how Völundr and his two brothers found three swan-maidens, valkyries, by a lake and lived with them for seven years, until the women flew away. Völundr stays behind, forging rings. King Níðuðr of the Njárar captures him in his sleep, takes his sword and gives one of his rings to his daughter Böðvildr. On the advice of the queen, who sees the hatred in his eyes, the king has Völundr hamstrung and sets him on an island to work for him.",
+    "Völundr takes his revenge. He lures the king's two young sons to his smithy, cuts off their heads and makes cups of their skulls for the king, jewels of their eyes for the queen, and a brooch of their teeth for Böðvildr. When Böðvildr brings him her broken ring to mend, he makes her drunk and rapes her. Then he rises into the air, by means the poem does not fully explain, and from above tells Níðuðr what he has done and that his daughter is pregnant. He flies off laughing; the king is left in grief, and Böðvildr laments that she could not resist him."
+   ],
+   "analysis": [
+    "This is the Eddic poem most directly linked to Old English. The Old English poem Deor opens with Weland's suffering in fetters and then turns, in its second stanza, to Beadohild, who grieved for her brothers' death more than for her own trouble when she knew she was pregnant; both stanzas end with the refrain 'that passed away, so may this'. The whalebone Franks Casket, carved in Northumbria in the early eighth century and now in the British Museum, shows Weland in his smithy holding a head in his tongs, a headless body beneath, and offering a cup to a woman, beside a man catching birds; the panel is set next to the Adoration of the Magi. Beowulf's mail-shirt is 'Weland's work' (Beowulf 455) [[malone1933]] [[webster2012]].",
+    "The story was therefore known in England centuries before the Codex Regius was written, and some scholars have argued that the Norse poem itself shows West Germanic, perhaps English, influence in its vocabulary and setting. Ursula Dronke's edition discusses the poem's peculiar mixture of the heroic and the uncanny and its sympathy for Böðvildr [[dronke1969]] [[mckinnell1994]].",
+    "The poem's power lies in its compression and its silences. The parallel stanzas in which the killing of the boys is first narrated and then repeated by Völundr to their father turn the narrative into an accusation. Völundr is both victim and monster, and the closing laughter and the lament of Böðvildr leave the moral balance deliberately unsettled."
+   ],
+   "key": [
+    {
+     "ref": "Vkv. 25",
+     "quote": "Their skulls, once hid    by their hair, he took,\n    Set them in silver    and sent them to Nithuth;\n    Gems full fair    from their eyes he fashioned,\n    To Nithuth’s wife    so wise he gave them.",
+     "note": "Völundr turns the boys' bodies into treasures. The same stanza returns, in the first person, when he tells Níðuðr what he has done (Vkv. 37)."
+    },
+    {
+     "ref": "Vkv. 40",
+     "quote": "Laughing Völund    rose aloft,\n    But left in sadness    Nithuth sat.",
+     "note": "The smith's escape. Deor's 'Welund' and 'Beadohild' are the same figures seen from the side of suffering."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Helgi Poems",
+   "lines": "Helgakvitha Hjorvarthssonar, Helgakvitha Hundingsbana I, Helgakvitha Hundingsbana II",
+   "section": 15,
+   "summary": [
+    "Three poems about heroes named Helgi stand between Völundarkviða and the Sigurd cycle. In Helgakviða Hjörvarðssonar the silent, nameless son of King Hjörvarðr is given his name and a sword by the valkyrie Sváva, whom he loves; he avenges his grandfather, but dies in a duel after his brother Heðinn makes a rash vow over the drinking cup to marry Sváva himself. Before he dies, Helgi asks her to take Heðinn as husband.",
+    "The two lays of Helgi Hundingsbani ('slayer of Hunding') make Helgi a son of Sigmundr the Völsung and so a half-brother of Sigurd. The first lay tells of his birth, attended by the Norns, his killing of King Hundingr and his sons, and his winning of the valkyrie Sigrún, who has been promised to another king; it includes a fierce flyting between Helgi's half-brother Sinfjötli and an enemy. The second lay, a mixture of verse and prose, retells the story with more episodes. Helgi kills Sigrún's father and one of her brothers, and her surviving brother Dagr kills Helgi with a spear lent by Odin. Sigrún curses her brother. Then Helgi rides back from the dead to his burial mound, and Sigrún spends a night with him there before he must ride away at dawn; she dies soon after of grief."
+   ],
+   "analysis": [
+    "The Helgi poems are the bridge between the mythological and the heroic halves of the collection: they still have valkyries, prophetic Norns and Odin's spear, but their subject is feud between noble houses. The closing prose notes that Helgi and Sváva, and later Helgi and Sigrún, were said to be reborn, which shows the compiler trying to join separate traditions into one cycle [[harris1985]] [[andersson1980]].",
+    "The meeting in the mound in the second lay is one of the most moving passages in Old Norse. Sigrún's tears fall on the dead man's breast like blood, and the love between the living woman and the dead warrior is shown without horror. Here, as in the later Guðrún poems, a woman's grief becomes the emotional centre of a heroic poem [[larrington2016]].",
+    "Sinfjötli, Sigmundr's son, appears in Beowulf as Fitela, the nephew and companion of Sigemund the dragon-slayer (Beowulf 874–900). The Old English poem gives the dragon to Sigemund, where the Norse gives it to Sigurd: one of several signs that the Völsung legend was shared across the Germanic world before it was written down."
+   ],
+   "key": [
+    {
+     "ref": "HH I 1",
+     "quote": "In olden days,    when eagles screamed,\n    And holy streams    from heaven’s crags fell,\n    Was Helgi then,    the hero-hearted,\n    Borghild’s son,    in Bralund born.",
+     "note": "The birth of Helgi is set in a mythic time 'when eagles screamed'."
+    },
+    {
+     "ref": "HH II 43",
+     "quote": "With frost thy hair    is heavy, Helgi,\n    And damp thou art    with the dew of death;",
+     "note": "Sigrún greets the dead Helgi in his mound, his hair heavy with frost."
+    },
+    {
+     "ref": "HH II 46",
+     "quote": "“Here a bed    I have made for thee, Helgi,\n    To rest thee from care,    thou kin of the Ylfings;\n    I will make thee sink    to sleep in my arms,\n    As once I lay    with the living king.”",
+     "note": "Sigrún prepares a bed in the burial mound: love that will not be parted by death."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Sigurd's Youth",
+   "lines": "Gripisspo, Reginsmol, Fafnismol, Sigrdrifumol",
+   "section": 18,
+   "summary": [
+    "The Sigurd cycle begins with Grípisspá, in which the young Sigurd visits his uncle Grípir, who foresees his whole life: his vengeance for his father, the killing of the dragon, his love for Brynhildr, the deception by which he wins her for Gunnarr, and his death. In Reginsmál the smith Reginn, Sigurd's foster-father, tells how his own father Hreiðmarr received a ransom from Odin, Loki and Hœnir after Loki killed Hreiðmarr's son Otr, who had the shape of an otter. Loki obtained the gold from the dwarf Andvari, who cursed it and especially the ring Andvaranautr. Fáfnir killed his father for the gold and became a dragon. Reginn forges the sword Gramr for Sigurd, who first avenges his father Sigmundr on the sons of Hundingr.",
+    "In Fáfnismál Sigurd kills Fáfnir from a pit as the dragon crawls to water. The dying dragon questions him and warns him of the gold. Reginn drinks his brother's blood and asks Sigurd to roast the heart; when Sigurd touches it and licks his finger, he understands the speech of birds, who tell him that Reginn means to betray him. He kills Reginn and takes the treasure. The birds tell him of a sleeping maiden on a mountain.",
+    "In Sigrdrífumál Sigurd rides to Hindarfjall, cuts the mail from a sleeping valkyrie and wakes her. She greets the day and the gods, explains that Odin put her to sleep for giving victory to the wrong king, and teaches Sigurd rune lore and wise counsel. The poem breaks off at the great gap in the Codex Regius."
+   ],
+   "analysis": [
+    "These four poems are a mixture of prophecy, story and wisdom, with much prose. Grípisspá, a summary of the whole legend, is generally thought to be late, a learned introduction to the cycle. The others keep the mythological apparatus of the first half of the collection: gods as actors, dragons, a cursed treasure, a valkyrie's wisdom. The curse on Andvari's gold is the thread that runs through the heroic poems to the end, as it passes from the gods to Hreiðmarr, Fáfnir, Sigurd and the Niflungs [[andersson1980]] [[haymes1996]].",
+    "A whole gathering of eight leaves is missing from the Codex Regius, beginning where the surviving text of Sigrdrífumál breaks off. It contained the story of Sigurd's betrothal to Brynhildr, his marriage to Guðrún and the deception of Brynhildr, probably including a long lay of Sigurd. Völsunga saga, a thirteenth-century prose retelling based on the poems, lets us reconstruct the outline. Whether Sigrdrífa, the valkyrie of this poem, is the same as Brynhildr was already a question for the medieval compilers; Völsunga saga makes them one [[larrington1996]] [[tolkien2009]].",
+    "Sigrdrífa's greeting to day and night (Sd. 2–3) is the closest thing in the Edda to a pagan prayer, and it is one of the most quoted passages in modern adaptations."
+   ],
+   "key": [
+    {
+     "ref": "Rm. 6",
+     "quote": "“The gold is given,    and great the price\n      Thou hast my head to save;\n    But fortune thy sons    shall find not there,\n      The bane of ye both it is.”",
+     "note": "Loki hands over the otter's ransom with a curse: the gold will be the death of Hreiðmarr and his sons."
+    },
+    {
+     "ref": "Fm. 32",
+     "quote": "“There sits Sigurth,    sprinkled with blood,\n    And Fafnir’s heart    with fire he cooks;\n    Wise were the breaker    of rings, I ween,\n    To eat the life-muscles    all so bright.”",
+     "note": "The birds' voices, which Sigurd understands after tasting the dragon's heart."
+    },
+    {
+     "ref": "Sd. 2",
+     "quote": "“Hail, day!    Hail, sons of day!\n      And night and her daughter now!\n    Look on us here    with loving eyes,\n      That waiting we victory win.",
+     "note": "The awakened valkyrie greets day and night: the hinge between the mythological world and the tragedy of Sigurd and Brynhildr."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Brynhildr and the Death of Sigurd",
+   "lines": "Brot af Sigurtharkvithu, Guthrunarkvitha I, Sigurtharkvitha en Skamma, Helreith Brynhildar",
+   "section": 22,
+   "summary": [
+    "After the lacuna the text resumes in the middle of a poem, the 'fragment of a Sigurd lay' (Brot). Brynhildr has been deceived into marrying Gunnarr, son of Gjúki, through Sigurd, who took Gunnarr's shape and rode through the fire for him; Sigurd himself is married to Gunnarr's sister Guðrún. Brynhildr demands Sigurd's death and claims he betrayed Gunnarr. Gunnarr and Högni have their younger brother Guthormr kill him. Brynhildr then laughs, foretells disaster and confesses that Sigurd was faithful: he laid a sword between them in the bed. A prose note records the different traditions of how Sigurd died, in bed or in the forest, and adds that 'German men' tell it the latter way.",
+    "In the first Guðrún lay, Guðrún sits by Sigurd's body and cannot weep, though noble women tell their own sorrows to move her. Only when her sister Gullrönd uncovers the corpse does she break into tears. The so-called short lay of Sigurd (in fact long) retells the whole story: Brynhildr's love for Sigurd, her revenge, Sigurd's death in his bed, her laughter at Guðrún's cry, and her suicide, after a long prophecy of what will follow, with the request to be burned beside Sigurd with the sword between them again. In Helreið Brynhildar she drives in a wagon on the road to Hel and answers a giantess who blames her, telling her own life and ending with a defiant claim that she and Sigurd will be together."
+   ],
+   "analysis": [
+    "These poems are the core of the legend of Brynhildr, and the most important for comparison with the Middle High German Nibelungenlied (c. 1200), in which Siegfried is killed by Hagen in the forest and the quarrel of Kriemhild and Brünhild is the cause. Theodore M. Andersson traced the Norse and German versions back through stages to a lost early poem on Brynhildr's revenge and argued that the Norse poems preserve a series of reworkings of that story [[andersson1980]] [[haymes1996]].",
+    "The three versions of Sigurd's death in these poems and the compiler's prose comments show that the medieval collector knew he had conflicting traditions and chose to keep them side by side. That choice, more than any single poem, is what makes the Codex Regius a deliberate anthology [[harris1985]] [[clunies2005]].",
+    "Brynhildr is the most complex figure in Eddic poetry: deceived, vengeful, truthful, the agent of Sigurd's death and his only true partner. Her laughter (Sg. 30), heard once and 'with all her heart', is one of the great moments of the heroic poems."
+   ],
+   "key": [
+    {
+     "ref": "Br. prose",
+     "quote": "But German men say\nthat they killed him out of doors in the forest",
+     "note": "The compiler notes the German version of Sigurd's death, the one told in the Nibelungenlied."
+    },
+    {
+     "ref": "Gðr. I 1",
+     "quote": "Then did Guthrun    think to die,\n    When she by Sigurth    sorrowing sat;\n    Tears she had not,    nor wrung her hands,\n    Nor ever wailed,    as other women.",
+     "note": "Guðrún's grief is too great for tears. The poem is built around the release of her weeping."
+    },
+    {
+     "ref": "Hlr. 14",
+     "quote": "“Ever with grief    and all too long\n    Are men and women    born in the world;\n    But yet we shall live    our lives together,\n    Sigurth and I.    Sink down, Giantess!”",
+     "note": "Brynhildr's last words on the road to Hel: a claim on Sigurd that even death will not undo."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Guðrún's Laments and the Fall of the Niflungs",
+   "lines": "Guthrunarkvitha II, en Forna, Guthrunarkvitha III, Oddrunargratr, Atlakvitha en Grönlenzka, Atlamol en Grönlenzku",
+   "section": 26,
+   "summary": [
+    "In the second (or 'old') Guðrún lay, Guðrún tells her life to Þjóðrekr (Theodoric) at Atli's court: her love for Sigurd, his death, her flight to Denmark, the potion of forgetfulness her mother Grímhildr gave her, and her forced marriage to Atli, king of the Huns and brother of Brynhildr, with her dark dreams of what will follow. In the third, a short late poem, she clears herself of a charge of adultery with Þjóðrekr by plunging her hand into boiling water. In Oddrúnargrátr ('Oddrún's lament') Atli's sister Oddrún helps a princess through a difficult birth and tells of her own secret love for Gunnarr.",
+    "Atlakviða tells how Atli invites Gunnarr and Högni to his hall. Guðrún sends a warning, a ring wound with wolf's hair, but they go. Seized and asked for the gold, Gunnarr demands to see Högni's heart; when it is brought, still and unafraid, he refuses to tell where the treasure lies and declares that the Rhine shall keep it. He is thrown into a snake pit, where he plays the harp until he dies. Guðrún takes her revenge: she kills her sons by Atli and serves them to him as food, kills Atli in his bed and burns the hall. Atlamál, the 'Greenlandic' poem of Atli, tells the same story at greater length and in a more domestic, homely style, with dreams, warnings, a sea crossing and a final quarrel between Guðrún and the dying Atli."
+   ],
+   "analysis": [
+    "Atli is Attila, king of the Huns (died 453), and Gunnarr is Gundaharius, king of the Burgundians, whose kingdom on the Rhine was destroyed by Huns in Roman service in 436–37. The Gothic historian Jordanes, citing Priscus, says that Attila died on his wedding night beside a new bride, and later writers said she killed him. Legend turned these events into the vengeance of Gjúki's daughter for her brothers. In the Nibelungenlied Kriemhild takes vengeance on her brothers for Siegfried; in the Norse she avenges her brothers on Atli. The Old English Widsith names Ætla of the Huns and Guðhere of the Burgundians, so the story was known in England too [[haymes1996]] [[dronke1969]].",
+    "Ursula Dronke's first volume, The Heroic Poems, edits Atlakviða and Atlamál with Guðrúnarhvöt and Hamðismál. Atlakviða, harsh, archaic and laconic, is often counted among the oldest poems in the collection; Atlamál, in the heavier málaháttr metre, is usually taken to be late, and its Greenland attribution, given in the manuscript to both poems, fits it better [[dronke1969]] [[clunies2005]].",
+    "The elegiac poems of Guðrún and Oddrún bring women's voices to the centre. They are retrospective, told after the events, and their subject is not the deed but the cost. Their mood is close to that of the Old English women's elegies, The Wife's Lament and Wulf and Eadwacer, and to the laments of Hildeburh and the Geatish woman in Beowulf [[larrington2016]] [[clunies1994]]."
+   ],
+   "key": [
+    {
+     "ref": "Gðr. II 2",
+     "quote": "So Sigurth rose    o’er Gjuki’s sons\n    As the leek grows green    above the grass,\n    Or the stag o’er all    the beasts doth stand,\n    Or as glow-red gold    above silver gray.",
+     "note": "Guðrún remembers Sigurd with a series of comparisons: as leek over grass, stag over beasts, gold over silver."
+    },
+    {
+     "ref": "Akv. 26",
+     "quote": "“Here have I the heart    of Hogni the valiant,\n    Unlike to the heart    of Hjalli the craven,\n    Little it trembles    as it lies on the platter,\n    Still less did it tremble    when it lay in his breast.",
+     "note": "Gunnarr looks at his brother's heart and knows that Högni died without fear; now only he knows where the gold is hidden."
+    },
+    {
+     "ref": "Akv. 29",
+     "quote": "“The swift Rhine shall hold    the strife-gold of heroes,\n    That once was the gods’,    the wealth of the Niflungs,\n    In the depths of the waters    the death-rings shall glitter,\n    And not shine on the hands    of the Hunnish men.”",
+     "note": "The Rhine shall keep the treasure: the Norse counterpart of Hagen's sinking of the hoard in the Nibelungenlied."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Guðrún's Inciting and the Last of the Line",
+   "lines": "Guthrunarhvot, Hamthesmol",
+   "section": 31,
+   "summary": [
+    "Guðrún has tried to drown herself after Atli's death, but the sea carried her to the land of King Jónakr, whom she married. Her daughter by Sigurd, Svanhildr, was married to Jörmunrekkr, king of the Goths, who had her trampled to death by horses on a false charge. In Guðrúnarhvöt ('Guðrún's whetting') she urges her sons Hamðir and Sörli to avenge their half-sister. They go, reproaching her, and she then laments all her sorrows, calls on Sigurd to come to her from Hel, and asks for a pyre.",
+    "Hamðismál tells the expedition. On the way the brothers meet their half-brother Erpr, who offers to help them 'as one foot helps another'; they mock him and kill him. At Jörmunrekkr's hall they cut off the king's hands and feet, but he survives to order them stoned, since iron will not bite them. Hamðir realises that if Erpr were alive the king's head would be off as well. The brothers die fighting, proud of their fame, saying that no one outlives the night once the Norns have spoken."
+   ],
+   "analysis": [
+    "Jörmunrekkr is Ermanaric, king of the Goths, who died about 375 according to the Roman historian Ammianus Marcellinus. Jordanes tells of a woman named Sunilda torn apart by horses at his command and of her brothers Sarus and Ammius who wounded him in revenge. The Old English Deor and Widsith also remember Eormanric as a cruel tyrant with a 'wolfish mind'. Hamðismál therefore joins the Niflung story to the oldest datable figure in Germanic heroic legend [[malone1933]] [[haymes1996]].",
+    "The kin-slaying on the road (Erpr's death) repeats in miniature the pattern of the whole cycle: the destruction of the family from within. With the death of Hamðir and Sörli, the last of Guðrún's line is gone, and the heroic half of the Codex Regius ends, as the mythological half did, with the end of a world. Hamðismál is among the poems often dated early, and its terse dignity has been much admired [[dronke1969]] [[andersson1980]].",
+    "The final speech of the brothers (Hm. 30) is the heroic ethic in its starkest form: fame is certain, death is certain, and the Norns' decree cannot be undone. It is the human counterpart of Hávamál's 'a noble name will never die'."
+   ],
+   "key": [
+    {
+     "ref": "Ghv. 21",
+     "quote": "“Pile ye up, jarls,    the pyre of oak,\n    Make it the highest    a hero e’er had;\n    Let the fire burn    my grief-filled breast,\n    My sore-pressed heart,    till my sorrows melt.”",
+     "note": "Guðrún asks for her own pyre: the ending she was denied when the sea refused to drown her."
+    },
+    {
+     "ref": "Hm. 31",
+     "quote": "Then Sorli beside    the gable sank,\n    And Hamther fell    at the back of the house.",
+     "note": "The death of the last two of Guðrún's sons, told in two plain lines."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Odin (Óðinn)",
+   "side": "Æsir and Vanir",
+   "text": "Chief of the Æsir, god of wisdom, poetry, war, the dead and magic; Bellows's Othin. He has given an eye for a drink from Mímir's well and hangs himself on the tree to gain the runes. He appears in disguise as Gagnráðr, Grímnir and Hárbarðr, raises the dead seeress, and gives and withdraws victory in the heroic poems. At Ragnarök he is swallowed by the wolf Fenrir."
+  },
+  {
+   "name": "Thor (Þórr)",
+   "side": "Æsir and Vanir",
+   "text": "Son of Odin and Jörð (Earth), god of thunder and strength, protector of gods and men against the giants with his hammer Mjöllnir. He is the hero of Þrymskviða, Hymiskviða and Alvíssmál and the butt of Odin's mockery in Hárbarðsljóð. At Ragnarök he kills the Miðgarðr serpent and dies of its venom after nine steps."
+  },
+  {
+   "name": "Loki",
+   "side": "Æsir and Vanir",
+   "text": "The son of a giant but living among the Æsir as Odin's blood-brother; clever, malicious and indispensable. He helps Thor recover his hammer, procures the gold that carries Andvari's curse, insults the gods in Lokasenna and is bound until Ragnarök, when he leads the forces of destruction. He is the father of Fenrir, the world serpent and Hel."
+  },
+  {
+   "name": "Frigg",
+   "side": "Æsir and Vanir",
+   "text": "Odin's wife, who knows all fates but does not speak them. She advises Odin before his contest with Vafþrúðnir and wagers against him in the prose frame of Grímnismál."
+  },
+  {
+   "name": "Baldr",
+   "side": "Æsir and Vanir",
+   "text": "Son of Odin and Frigg, the 'bleeding god' of Völuspá, killed by his blind brother Höðr with a shaft of mistletoe. His death is the first sign of the end, and his return in the new world its chief hope."
+  },
+  {
+   "name": "Freyr and Freyja",
+   "side": "Æsir and Vanir",
+   "text": "Brother and sister of the Vanir, the gods of fertility, children of Njörðr. Freyr woos the giantess Gerðr in Skírnismál and gives away his sword, which he will lack at Ragnarök. Freyja, goddess of love and owner of the Brísingamen, is demanded as a bride by the giant Þrymr and is the questioner of the giantess in Hyndluljóð."
+  },
+  {
+   "name": "Heimdallr",
+   "side": "Æsir and Vanir",
+   "text": "Watchman of the gods, whose horn Gjallarhorn announces Ragnarök. He suggests disguising Thor as a bride in Þrymskviða and is identified with Rígr, the father of the social orders, in Rígsþula."
+  },
+  {
+   "name": "The seeress (völva)",
+   "side": "Giants and others",
+   "text": "The speaker of Völuspá, raised by giants and remembering the time before the world. She speaks to Odin with authority and some contempt; her knowledge is greater than his. A dead seeress also prophesies Baldr's death in Baldrs draumar."
+  },
+  {
+   "name": "Vafþrúðnir",
+   "side": "Giants and others",
+   "text": "The wise giant whom Odin defeats in a contest of knowledge in Vafþrúðnismál, staking his head on the outcome; Bellows's Vafthruthnir."
+  },
+  {
+   "name": "Þrymr",
+   "side": "Giants and others",
+   "text": "The lord of the giants who steals Thor's hammer and demands Freyja as his bride, and is killed when the hammer is laid in the lap of the disguised Thor."
+  },
+  {
+   "name": "Hymir",
+   "side": "Giants and others",
+   "text": "The sea-giant who owns the great cauldron and takes Thor fishing in Hymiskviða."
+  },
+  {
+   "name": "Gerðr",
+   "side": "Giants and others",
+   "text": "A giantess, daughter of Gymir, wooed for Freyr by Skírnir with threats and curses; Bellows's Gerth."
+  },
+  {
+   "name": "Alvíss",
+   "side": "Giants and others",
+   "text": "The 'all-wise' dwarf who comes to marry Thor's daughter and is kept answering questions until the sun turns him to stone."
+  },
+  {
+   "name": "Fenrir and the Miðgarðr serpent",
+   "side": "Giants and others",
+   "text": "Monstrous children of Loki. The wolf, bound by the gods at the cost of Týr's hand, breaks free and swallows Odin; the serpent, which encircles the earth, is fished for by Thor and kills him at Ragnarök."
+  },
+  {
+   "name": "Sigurd (Sigurðr)",
+   "side": "Völsungs and Niflungs",
+   "text": "Son of Sigmundr the Völsung, the greatest hero of the North; Bellows's Sigurth. He kills the dragon Fáfnir, understands the birds, wins the treasure, wakes a valkyrie, marries Guðrún and wins Brynhildr for Gunnarr by taking his shape. He is killed by Guthormr at the urging of Brynhildr. He corresponds to Siegfried in the Nibelungenlied; in Beowulf the dragon-slaying belongs to his father Sigemund."
+  },
+  {
+   "name": "Brynhildr",
+   "side": "Völsungs and Niflungs",
+   "text": "Daughter of Buðli and sister of Atli, a former valkyrie who vowed to marry only the bravest of men. Deceived into marriage with Gunnarr, she brings about the death of Sigurd, whom she loved, then kills herself and rides to Hel claiming him. Whether she is the Sigrdrífa whom Sigurd wakes is uncertain in the poems."
+  },
+  {
+   "name": "Guðrún",
+   "side": "Völsungs and Niflungs",
+   "text": "Daughter of Gjúki, wife of Sigurd, then of Atli and finally of Jónakr; Bellows's Guthrun. She survives every catastrophe: she mourns Sigurd, avenges her brothers on Atli by killing her own sons and her husband, and urges her last sons to their deaths. Her laments make her the chief female voice of the heroic poems. In the German tradition she is Kriemhild."
+  },
+  {
+   "name": "Gunnarr",
+   "side": "Völsungs and Niflungs",
+   "text": "Son of Gjúki, king of the Niflungs (Burgundians), husband of Brynhildr, who consents to Sigurd's murder. Captured by Atli, he refuses to reveal the hoard and dies in a snake pit playing the harp. His historical original is the Burgundian king Gundaharius (died 437); in German he is Gunther."
+  },
+  {
+   "name": "Högni",
+   "side": "Völsungs and Niflungs",
+   "text": "Gunnarr's brother, who laughs as his heart is cut out. In the Norse he is a Gjúkung and opposed Sigurd's murder; in the Nibelungenlied he becomes Hagen, Siegfried's killer."
+  },
+  {
+   "name": "Sigmundr, Sinfjötli and Helgi",
+   "side": "Völsungs and Niflungs",
+   "text": "Sigmundr is Sigurd's father; Sinfjötli his son by his own sister, and Helgi Hundingsbani his son by Borghild. Helgi wins the valkyrie Sigrún and returns from the dead to her. Sigemund and Fitela appear in Beowulf (874–900)."
+  },
+  {
+   "name": "Hamðir and Sörli",
+   "side": "Völsungs and Niflungs",
+   "text": "Guðrún's sons by Jónakr, who avenge their half-sister Svanhildr on Jörmunrekkr after killing their half-brother Erpr, and are stoned to death; Bellows's Hamther and Sorli."
+  },
+  {
+   "name": "Völundr",
+   "side": "Others",
+   "text": "The smith, a prince of the Finns and 'lord of elves', husband of a swan-maiden, crippled and imprisoned by Níðuðr, who kills the king's sons, rapes his daughter and flies away. He is Weland of Deor, the Franks Casket and Beowulf, and Wayland Smith of English folklore."
+  },
+  {
+   "name": "Níðuðr and Böðvildr",
+   "side": "Others",
+   "text": "The king of the Njárar who captures Völundr, and his daughter, who wears Völundr's ring and bears his child. In Deor she is Beadohild; Bellows writes Nithuth and Bothvild."
+  },
+  {
+   "name": "Atli",
+   "side": "Others",
+   "text": "King of the Huns, brother of Brynhildr and second husband of Guðrún, who kills her brothers for the Niflung gold and is killed by her. He is the legendary form of Attila (died 453), Etzel in the Nibelungenlied and Ætla in Widsith."
+  },
+  {
+   "name": "Reginn, Fáfnir and Andvari",
+   "side": "Others",
+   "text": "Reginn the smith and his brother Fáfnir, sons of Hreiðmarr, quarrel over the ransom gold, which the dwarf Andvari has cursed. Fáfnir becomes a dragon and is killed by Sigurd, whom Reginn has fostered and plans to betray."
+  },
+  {
+   "name": "Jörmunrekkr",
+   "side": "Others",
+   "text": "King of the Goths, who has his wife Svanhildr trampled by horses and is maimed by her brothers. He is the historical Ermanaric (died c. 375), the Eormanric of Deor and Widsith."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Fate and the end of the world",
+   "text": [
+    "Fate is everywhere in the Edda. The Norns set the lives of men at the well beneath Yggdrasil, and the gods themselves know that Ragnarök is coming and cannot prevent it. What matters is not escape but the manner of facing fate: Odin gathers warriors for the last battle, and the heroes go to their deaths knowing what awaits them.",
+    "The heroic poems repeat the pattern of Völuspá on a human scale. The cycle of the Völsungs and Niflungs is a series of predicted catastrophes, foretold by Grípir, by the dying Fáfnir, by Brynhildr and by Guðrún's dreams, and each catastrophe springs from broken bonds of kinship and oath [[clunies1994]] [[andersson1980]]."
+   ]
+  },
+  {
+   "title": "Wisdom and the cost of knowledge",
+   "text": [
+    "Many of the mythological poems are about knowledge: who has it, how it is won and what it costs. Odin pays with an eye, with nine nights on the tree, with seductions and disguises; the giant Vafþrúðnir and the dwarf Alvíss lose their lives to his or Thor's questions. Knowledge is power, but it is also the knowledge of doom.",
+    "Hávamál brings this wisdom down to everyday life, in advice about guests, friends, drink and speech. Its mixture of divine and practical knowledge is close to the wisdom poetry of Anglo-Saxon England, and suggests a common Germanic tradition of gnomic verse [[larrington1993]]."
+   ]
+  },
+  {
+   "title": "Fame, death and the heroic ethic",
+   "text": [
+    "The best-known lines in the Edda say that a good name is the only thing that does not die. The heroic poems put this ethic to the test. Gunnarr refuses to reveal the hoard, Högni laughs as his heart is cut out, and Hamðir and Sörli die proud of their fame. These are the same values as those of the Old English Battle of Maldon and Beowulf, and they are just as costly.",
+    "Yet the poems rarely celebrate heroism without counting its victims. Behind every famous deed is a widow, a mother or a sister, and the women's laments ask whether fame is worth what it destroys [[clunies2005]]."
+   ]
+  },
+  {
+   "title": "Kinship, oath and vengeance",
+   "text": [
+    "The social world of the heroic poems rests on the obligation to avenge one's kin, and the drama arises when obligations conflict. Guðrún must choose between her brothers and her husband, and later between her husband and her sons; Brynhildr's oath and love destroy the man she loves; the brothers of Hamðismál kill their own half-brother on the way to vengeance. Völuspá names the breaking of kinship as the sign of the end of the world (Vsp. 45)."
+   ]
+  },
+  {
+   "title": "Gold and its curse",
+   "text": [
+    "The treasure of Andvari, cursed by the dwarf, passes from the gods to Hreiðmarr, to Fáfnir, to Sigurd and to the Niflungs, and brings death to every owner. In the end Gunnarr sinks it in the Rhine, and Guðrún's vengeance destroys the king who sought it. The theme links the Edda with Beowulf's cursed dragon hoard and with the treasure of the Nibelungenlied."
+   ]
+  },
+  {
+   "title": "Women's voices",
+   "text": [
+    "Women in the Edda are seeresses, valkyries, giantesses, wives and mourners, and they often have the most important speeches: the seeress tells Odin the history of the world, Sigrdrífa teaches Sigurd, Brynhildr tells her own story on the road to Hel, and Guðrún speaks the longest laments in Old Norse. The heroic poems in particular are often told from the point of view of the women who survive [[larrington2016]] [[clunies1994]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "The wisdom contest",
+   "text": "A question-and-answer exchange with a life at stake, as in Vafþrúðnismál and Alvíssmál, or a revelation under duress, as in Grímnismál. The form displays mythological knowledge and turns it into drama [[gunnell1995]]."
+  },
+  {
+   "title": "Flyting",
+   "text": "An exchange of insults and boasts in verse, called senna or mannjafnaðr: Hárbarðsljóð, Lokasenna and the quarrel of Sinfjötli in the first Helgi lay. The form has parallels in Beowulf's exchange with Unferth."
+  },
+  {
+   "title": "Prophecy and the raising of the dead",
+   "text": "The seeress of Völuspá, the dead seeress of Baldrs draumar, Gróa in Svipdagsmál and the prophecies of Grípir and Brynhildr all reveal fate before it happens. The future is known, which makes the action tragic rather than suspenseful."
+  },
+  {
+   "title": "Disguise and names",
+   "text": "Odin travels as Gagnráðr, Grímnir and Hárbarðr; Thor becomes a bride; Sigurd takes Gunnarr's shape to deceive Brynhildr. Names are power: Odin's catalogue of his names reveals him, and Alvíss dies listing the names of things."
+  },
+  {
+   "title": "The refrain",
+   "text": "Völuspá's 'would you know yet more?' and the repeated stanzas of Völundarkviða and Atlakviða show how repetition structures oral poetry and builds tension."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "Yggdrasil",
+   "text": "The world-ash that holds the nine worlds, watered from the well of Urðr and gnawed by the serpent Níðhöggr. It stands for the order and the vulnerability of the cosmos; it shakes when Ragnarök begins."
+  },
+  {
+   "title": "Mjöllnir",
+   "text": "Thor's hammer, the gods' defence against the giants and a sign of blessing at marriages, as Þrymskviða shows. Hammer amulets were worn in the Viking age, perhaps in answer to the Christian cross."
+  },
+  {
+   "title": "The ring and the hoard",
+   "text": "Andvari's ring and the gold of the Niflungs stand for the power and the curse of wealth. The ring passes from hand to hand like the curse itself and ends hidden in the Rhine."
+  },
+  {
+   "title": "The hall",
+   "text": "Ægir's hall, Valhöll, Geirröðr's hall, Atli's burning hall and the gold-roofed Gimlé of the new world: the hall is the centre of community and hospitality, and its destruction is the image of catastrophe, as in Beowulf's Heorot."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Dating and origins",
+   "text": [
+    "The poems were written down in the thirteenth century, but they are certainly older, and their dates are disputed. Some, such as Atlakviða and Hamðismál, are often placed in the ninth or tenth century because of their archaic language and style; others, such as Grípisspá, Atlamál and perhaps Þrymskviða, may be twelfth- or thirteenth-century compositions. Joseph Harris's survey sets out the evidence and the reasons for caution: linguistic dating of oral poetry is difficult, and a poem may be old in substance and young in form [[harris1985]].",
+    "Where they were composed is also uncertain. Many scholars think of Norway in the Viking age for the oldest mythological poems; others stress Iceland, where they were recorded, and the Norse colonies in the British Isles and Greenland. The manuscript calls Atlamál 'Greenlandic'. A related question is whether the mythological poems were composed by pagans for pagan audiences or by Christians looking back at the old religion [[mckinnell1994]] [[clunies2005]]."
+   ],
+   "cite": [
+    "harris1985",
+    "mckinnell1994",
+    "clunies2005"
+   ]
+  },
+  {
+   "title": "Völuspá and Christian influence",
+   "text": [
+    "Völuspá describes the end of the world and a new earth rising from the sea, where the guiltless gods return and the righteous live forever in Gimlé. In the Hauksbók version, a mighty one comes 'from above' to rule all. These ideas sound Christian, and they have been explained in very different ways: as Christian additions to a pagan poem; as the work of a pagan poet who knew something of Christianity and responded to it; or as the work of a Christian poet giving shape to the old myths.",
+    "Sigurður Nordal argued that the poem was composed by a single Icelandic poet around the year 1000, at the time of the conversion, who still held the old faith but was deeply affected by the new. Ursula Dronke has stressed the poet's learning and the place of the poem in a wider European tradition of visionary literature, while John McKinnell has shown how varied late heathenism itself was, so that 'pagan' and 'Christian' may not be the right alternatives [[nordal1978]] [[dronke1969]] [[mckinnell1994]]."
+   ],
+   "cite": [
+    "nordal1978",
+    "dronke1969",
+    "mckinnell1994"
+   ]
+  },
+  {
+   "title": "Oral tradition and the written collection",
+   "text": [
+    "The poems were composed and handed down orally, but the Codex Regius is a carefully ordered book with a compiler's prose links and comments. Scholars debate how much of the collection's shape is the compiler's work and how much he inherited from older written collections; the manuscript was itself probably copied from earlier written exemplars. The compiler's remarks about variant traditions of Sigurd's death show a learned editor at work.",
+    "The prose also raises the question of performance. Terry Gunnell has argued that the dialogue poems, with their many speakers and absence of narrative, may have been performed dramatically by more than one person, which would make them the earliest Scandinavian drama [[gunnell1995]] [[harris1985]] [[clunies2005]]."
+   ],
+   "cite": [
+    "gunnell1995",
+    "harris1985",
+    "clunies2005"
+   ]
+  },
+  {
+   "title": "The unity of Hávamál",
+   "text": [
+    "Hávamál looks like several poems joined together: the guest's wisdom, Odin's tales of women, the advice to Loddfáfnir, the winning of the runes and the list of spells. Older scholarship tried to separate the original poems and identify interpolations. More recent critics, including David Evans in his edition and Carolyne Larrington in her study of gnomic poetry, have emphasised the connections between the parts, especially the recurring themes of knowledge and its acquisition, and the figure of Odin as the speaker who unites them [[evans1986]] [[larrington1993]].",
+    "The question matters for interpretation: read as a whole, the poem moves from human prudence to divine wisdom won by sacrifice, and the practical advice of the opening takes on a different colour when it is spoken by the god of deception."
+   ],
+   "cite": [
+    "evans1986",
+    "larrington1993"
+   ]
+  },
+  {
+   "title": "The heroic poems and the continental legend",
+   "text": [
+    "The story of Sigurd, Brynhildr, Gunnarr and Atli was known across the Germanic world. The Middle High German Nibelungenlied (c. 1200) tells a version in which Kriemhild avenges Siegfried on her brothers, while in the Norse Guðrún avenges her brothers on Atli. Theodore M. Andersson's The Legend of Brynhild (1980) reconstructed the development of the story from a lost early lay through the Norse poems, Völsunga saga and the German tradition, and remains the central study of the relations between the versions [[andersson1980]].",
+    "The historical roots are clear in outline: the destruction of the Burgundians by the Huns in 436–37, the death of Attila in 453, the end of Ermanaric around 375. How these events became the legend, and when the Norse poems received the story from the south, is still debated. Edward Haymes and Susann Samples give an introduction to the whole Nibelung tradition, and Tolkien's own reworking of the Norse poems shows how the gaps in the collection invite reconstruction [[haymes1996]] [[tolkien2009]]."
+   ],
+   "cite": [
+    "andersson1980",
+    "haymes1996",
+    "tolkien2009"
+   ]
+  },
+  {
+   "title": "Völundarkviða and Old English",
+   "text": [
+    "The legend of the smith is known in England from the early eighth century: on the Franks Casket, in Deor, in Beowulf and in Waldere. Deor alludes to Weland's suffering and to Beadohild's pregnancy in terms that presuppose the story as Völundarkviða tells it. Some scholars have argued that the Norse poem itself was composed in a West Germanic or Anglo-Scandinavian context, pointing to its vocabulary and setting; others think the story simply travelled widely and was given Norse form in Scandinavia [[malone1933]] [[webster2012]] [[mckinnell1994]].",
+    "Whatever the answer, the poem is the best case for reading Old English and Old Norse heroic poetry side by side, and it shows how differently the same story could be used: Deor turns it into consolation ('that passed away, so may this'), while the Norse poem tells it as vengeance [[dronke1969]]."
+   ],
+   "cite": [
+    "malone1933",
+    "webster2012",
+    "mckinnell1994",
+    "dronke1969"
+   ]
+  },
+  {
+   "title": "Women's voices and the elegies of Guðrún",
+   "text": [
+    "A large part of the heroic poetry consists of laments and retrospective monologues by women: Guðrún's three lays, Oddrúnargrátr, Helreið Brynhildar and Guðrúnarhvöt. These poems have sometimes been called late and sentimental, a 'feminine' development of the heroic lay. Recent scholarship has instead treated them as a genre of their own, the heroic elegy, comparable to the Old English women's elegies, which offers a critique of the heroic ethic from within [[clunies1994]] [[larrington2016]].",
+    "The debate touches on authorship, too: some critics have wondered whether women composed or performed such laments, as they did in many traditional societies. The evidence is indirect, but the poems give women's experience of feud, marriage and loss a central place that few medieval traditions match [[acker2002]]."
+   ],
+   "cite": [
+    "clunies1994",
+    "larrington2016",
+    "acker2002"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Vsp. 1",
+   "quote": "Hearing I ask    from the holy races,\n    From Heimdall’s sons,    both high and low;\n    Thou wilt, Valfather,    that well I relate\n    Old tales I remember    of men long ago.",
+   "who": "The seeress",
+   "explanation": "The opening of Völuspá and of the Codex Regius. The seeress calls for silence from all ranks of beings and addresses Odin as Valfather, 'father of the slain'. The god of wisdom must listen to a woman's memory of what happened before the world was made."
+  },
+  {
+   "ref": "Vsp. 57",
+   "quote": "The sun turns black,    earth sinks in the sea,\n    The hot stars down    from heaven are whirled;\n    Fierce grows the steam    and the life-feeding flame,\n    Till fire leaps high    about heaven itself.",
+   "who": "The seeress",
+   "explanation": "The climax of Ragnarök. The order created at the beginning of the poem, sun, earth and stars, is undone in reverse: the earth sinks back into the sea from which it was raised."
+  },
+  {
+   "ref": "Vsp. 59",
+   "quote": "Now do I see    the earth anew\n    Rise all green    from the waves again;\n    The cataracts fall,    and the eagle flies,\n    And fish he catches    beneath the cliffs.",
+   "who": "The seeress",
+   "explanation": "The earth rising green again after the destruction. Whether this renewal reflects Christian ideas of a new heaven and earth or an older pagan pattern of cyclical time is one of the main debates about the poem."
+  },
+  {
+   "ref": "Háv. 77",
+   "quote": "Cattle die,    and kinsmen die,\n      And so one dies one’s self;\n    But a noble name    will never die,\n      If good renown one gets.",
+   "who": "Odin (the High One)",
+   "explanation": "The famous 'deyr fé' stanza (76 in the standard numbering). Wealth, family and the self all pass; only reputation survives. Compare The Wanderer 108–9 and the ethic of fame in Beowulf."
+  },
+  {
+   "ref": "Háv. 139",
+   "quote": "I ween that I hung    on the windy tree,\n      Hung there for nights full nine;\n    With the spear I was wounded,    and offered I was\n      To Othin, myself to myself,",
+   "who": "Odin",
+   "explanation": "The beginning of Odin's account of his self-sacrifice on the tree (138 in the standard numbering). The god is both victim and recipient of the sacrifice, and the reward is the runes, the knowledge of hidden things."
+  },
+  {
+   "ref": "Vm. 54",
+   "quote": "“Much have I fared,    much have I found,\n      Much have I got from the gods:\n    What spake Othin himself    in the ears of his son,\n      Ere in the bale-fire he burned?”",
+   "who": "Odin, disguised as Gagnráðr",
+   "explanation": "The last question of the contest with Vafþrúðnir. No one but Odin can know what he whispered to his dead son, so the question is also a revelation of who the questioner is."
+  },
+  {
+   "ref": "Þrk. 1",
+   "quote": "Wild was Vingthor    when he awoke,\n      And when his mighty    hammer he missed;\n    He shook his beard,    his hair was bristling,\n    As the son of Jorth    about him sought.",
+   "who": "The narrator",
+   "explanation": "The comic opening of Þrymskviða. The god of strength is introduced at his most helpless, which sets up the poem's play with disguise and role reversal."
+  },
+  {
+   "ref": "Vkv. 38",
+   "quote": "“And from the teeth    of the twain I wrought\n    A brooch for the breast,    to Bothvild I gave it;\n    Now big with child    does Bothvild go,\n    The only daughter    ye two had ever.”",
+   "who": "Völundr",
+   "explanation": "The smith's revenge is complete: he tells the king that his sons are dead and his daughter pregnant. The Old English Deor remembers the same story from Beadohild's side."
+  },
+  {
+   "ref": "Sg. 30",
+   "quote": "Then Brynhild, daughter    of Buthli, laughed,\n    Only once,    with all her heart,\n    When as she lay    full loud she heard\n    The grievous wail    of Gjuki’s daughter.",
+   "who": "The narrator",
+   "explanation": "Brynhildr's single laugh when she hears Guðrún's cry over Sigurd's body. Her triumph is also the beginning of her own death, and Gunnarr at once sees that it is not joy."
+  },
+  {
+   "ref": "Hm. 30",
+   "quote": "“We have greatly fought,    o’er the Goths do we stand\n    By our blades laid low,    like eagles on branches;\n    Great our fame though we die    today or tomorrow;\n    None outlives the night    when the Norns have spoken.”",
+   "who": "Hamðir",
+   "explanation": "The brothers' last words, as they are stoned in Jörmunrekkr's hall. Fame is won and death accepted: the heroic ethic in its starkest and most dignified form."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does the Codex Regius begin with Völuspá?",
+   "hint": "Think about how the poem's history of the world, from creation to Ragnarök and renewal, frames both the mythological and the heroic poems."
+  },
+  {
+   "q": "What does Odin gain, and what does he lose, in his pursuit of wisdom?",
+   "hint": "Consider Mímir's well, the tree in Hávamál, the contests with Vafþrúðnir and Geirröðr, and the dead seeress of Baldrs draumar."
+  },
+  {
+   "q": "Is Hávamál one poem or several?",
+   "hint": "Compare the practical advice of the opening with the stories of Odin and the winning of the runes. What holds the parts together?"
+  },
+  {
+   "q": "How does Þrymskviða make its comedy, and is there anything serious underneath it?",
+   "hint": "Look at disguise, gender, the hammer as a symbol, and the poem's ending."
+  },
+  {
+   "q": "Compare the story of Völundr in Völundarkviða with the allusions in Deor and on the Franks Casket.",
+   "hint": "What does each version choose to show, and what attitude does it take to suffering and revenge?"
+  },
+  {
+   "q": "Why does the compiler record different versions of Sigurd's death?",
+   "hint": "Read the prose after Brot af Sigurðarkviðu and think about what it shows about the collector's attitude to tradition."
+  },
+  {
+   "q": "Is Brynhildr a villain, a victim or a tragic heroine?",
+   "hint": "Consider her deception, her oath, her laughter in the short lay of Sigurd, and her speech on the road to Hel."
+  },
+  {
+   "q": "How do the Norse poems of Atli differ from the Nibelungenlied's account of the fall of the Burgundians?",
+   "hint": "Ask whom the heroine avenges, on whom, and why. What happens to the gold?"
+  },
+  {
+   "q": "What do the laments of Guðrún add to the heroic poems?",
+   "hint": "Think about who survives, who speaks, and how grief comments on the heroic ethic of fame."
+  },
+  {
+   "q": "How does the Edda's 'deyr fé' compare with the attitude to fame and loss in Old English poems such as The Wanderer and Beowulf?",
+   "hint": "Compare Háv. 77–78 with The Wanderer 108–10 and with Beowulf's speech on fame to Hrothgar."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "acker2002",
+   "text": "Acker, Paul, and Carolyne Larrington, eds. The Poetic Edda: Essays on Old Norse Mythology. New York: Routledge, 2002."
+  },
+  {
+   "id": "andersson1980",
+   "text": "Andersson, Theodore M. The Legend of Brynhild. Islandica 43. Ithaca: Cornell University Press, 1980."
+  },
+  {
+   "id": "bellows1923",
+   "text": "Bellows, Henry Adams, trans. The Poetic Edda. New York: American-Scandinavian Foundation, 1923."
+  },
+  {
+   "id": "clunies1994",
+   "text": "Clunies Ross, Margaret. Prolonged Echoes: Old Norse Myths in Medieval Northern Society. 2 vols. Odense: Odense University Press, 1994–1998."
+  },
+  {
+   "id": "clunies2005",
+   "text": "Clunies Ross, Margaret. A History of Old Norse Poetry and Poetics. Cambridge: D. S. Brewer, 2005."
+  },
+  {
+   "id": "dronke1969",
+   "text": "Dronke, Ursula, ed. and trans. The Poetic Edda. 3 vols. Oxford: Clarendon Press, 1969–2011. Vol. 1, Heroic Poems (1969); vol. 2, Mythological Poems (1997); vol. 3, Mythological Poems II (2011)."
+  },
+  {
+   "id": "evans1986",
+   "text": "Evans, David A. H., ed. Hávamál. Viking Society for Northern Research Text Series 7. London: Viking Society for Northern Research, 1986."
+  },
+  {
+   "id": "faulkes1987",
+   "text": "Faulkes, Anthony, trans. Snorri Sturluson: Edda. London: J. M. Dent, 1987."
+  },
+  {
+   "id": "gunnell1995",
+   "text": "Gunnell, Terry. The Origins of Drama in Scandinavia. Cambridge: D. S. Brewer, 1995."
+  },
+  {
+   "id": "harris1985",
+   "text": "Harris, Joseph. 'Eddic Poetry.' In Old Norse-Icelandic Literature: A Critical Guide, edited by Carol J. Clover and John Lindow, 68–156. Islandica 45. Ithaca: Cornell University Press, 1985."
+  },
+  {
+   "id": "haymes1996",
+   "text": "Haymes, Edward R., and Susann T. Samples. Heroic Legends of the North: An Introduction to the Nibelung and Dietrich Cycles. New York: Garland, 1996."
+  },
+  {
+   "id": "larrington1993",
+   "text": "Larrington, Carolyne. A Store of Common Sense: Gnomic Theme and Style in Old Icelandic and Old English Wisdom Poetry. Oxford: Clarendon Press, 1993."
+  },
+  {
+   "id": "larrington1996",
+   "text": "Larrington, Carolyne, trans. The Poetic Edda. Oxford World's Classics. Oxford: Oxford University Press, 1996; revised edition, 2014."
+  },
+  {
+   "id": "larrington2016",
+   "text": "Larrington, Carolyne, Judy Quinn, and Brittany Schorn, eds. A Handbook to Eddic Poetry: Myths and Legends of Early Scandinavia. Cambridge: Cambridge University Press, 2016."
+  },
+  {
+   "id": "lindow2001",
+   "text": "Lindow, John. Norse Mythology: A Guide to the Gods, Heroes, Rituals, and Beliefs. Oxford: Oxford University Press, 2001."
+  },
+  {
+   "id": "malone1933",
+   "text": "Malone, Kemp, ed. Deor. London: Methuen, 1933."
+  },
+  {
+   "id": "mckinnell1994",
+   "text": "McKinnell, John. Both One and Many: Essays on Change and Variety in Late Norse Heathenism. Rome: Il Calamo, 1994."
+  },
+  {
+   "id": "neckel1983",
+   "text": "Neckel, Gustav, ed. Edda: Die Lieder des Codex Regius nebst verwandten Denkmälern. 5th edition, revised by Hans Kuhn. Heidelberg: Carl Winter, 1983."
+  },
+  {
+   "id": "nordal1978",
+   "text": "Sigurður Nordal, ed. Völuspá. Translated by B. S. Benedikz and John McKinnell. Durham and St Andrews Medieval Texts 1. Durham: Durham and St Andrews Medieval Texts, 1978."
+  },
+  {
+   "id": "thorpe1866",
+   "text": "Thorpe, Benjamin, trans. Edda Sæmundar hinns Fróða: The Edda of Sæmund the Learned. 2 vols. London: Trübner, 1866."
+  },
+  {
+   "id": "tolkien2009",
+   "text": "Tolkien, J. R. R. The Legend of Sigurd and Gudrún. Edited by Christopher Tolkien. London: HarperCollins, 2009."
+  },
+  {
+   "id": "turvillepetre1964",
+   "text": "Turville-Petre, E. O. G. Myth and Religion of the North: The Religion of Ancient Scandinavia. London: Weidenfeld and Nicolson, 1964."
+  },
+  {
+   "id": "webster2012",
+   "text": "Webster, Leslie. The Franks Casket. London: British Museum Press, 2012."
+  }
+ ]
+}
