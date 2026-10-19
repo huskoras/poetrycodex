@@ -1,0 +1,920 @@
+{
+ "work": "mahabharata",
+ "title": "The Mahabharata",
+ "author": "Vyasa (traditional)",
+ "quoteEdition": "mahabharata-dutt",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Title",
+   "value": "Mahābhārata, 'the great (story of the) Bhāratas', the descendants of King Bharata; the tradition also calls it an itihāsa, 'thus indeed it was', a history"
+  },
+  {
+   "label": "Attributed to",
+   "value": "Vyāsa (Kṛṣṇa Dvaipāyana), the sage who is also a character in the story and the grandfather of both warring branches of the family"
+  },
+  {
+   "label": "Composed",
+   "value": "In layers over roughly eight centuries, c. 400 BCE to 400 CE; many scholars place the main written redaction between the second century BCE and the first century CE"
+  },
+  {
+   "label": "Language and metre",
+   "value": "Sanskrit, overwhelmingly in the anuṣṭubh śloka (four quarters of eight syllables), with passages in the longer triṣṭubh"
+  },
+  {
+   "label": "Length",
+   "value": "Traditionally 100,000 ślokas, counting the appendix Harivaṃśa; the critical edition's text has about 75,000 verses"
+  },
+  {
+   "label": "The 18 parvas (books)",
+   "value": "1 Ādi (Beginning), 2 Sabhā (Assembly Hall), 3 Āraṇyaka or Vana (Forest), 4 Virāṭa, 5 Udyoga (Effort), 6 Bhīṣma, 7 Droṇa, 8 Karṇa, 9 Śalya, 10 Sauptika (Night Raid), 11 Strī (Women), 12 Śānti (Peace), 13 Anuśāsana (Instruction), 14 Āśvamedhika (Horse Sacrifice), 15 Āśramavāsika (Hermitage), 16 Mausala (Clubs), 17 Mahāprasthānika (Great Journey), 18 Svargārohaṇa (Ascent to Heaven)"
+  },
+  {
+   "label": "Frame narratives",
+   "value": "Vaiśaṃpāyana, Vyāsa's pupil, recites the epic at the snake sacrifice of King Janamejaya, great-grandson of Arjuna; the bard Ugraśravas later repeats that recitation to the sages of the Naimiṣa Forest"
+  },
+  {
+   "label": "Critical edition",
+   "value": "Bhandarkar Oriental Research Institute, Poona, 1933–66, ed. V. S. Sukthankar and successors, 19 volumes; references here (MBh 6.23) give parva and adhyāya (chapter) of that edition"
+  },
+  {
+   "label": "On this site",
+   "value": "Romesh Chunder Dutt's condensed verse rendering (1899), twelve books and a Conclusion, quoted throughout this guide; and K. M. Ganguli's complete prose translation (1883–96) in all 18 parvas"
+  },
+  {
+   "label": "Central story",
+   "value": "The rivalry of the five Pāṇḍava brothers and their hundred Kaurava cousins over the kingdom of the Kurus, ending in an eighteen-day war at Kurukṣetra that destroys almost everyone"
+  }
+ ],
+ "context": [
+  "Indian tradition ascribes the Mahabharata to Vyasa, whose name means 'the arranger' and who is said also to have divided the Vedas. He is no remote author standing outside his work. He fathers Dhritarashtra and Pandu, so that the Kauravas and Pandavas are his grandsons; he appears at crises to advise, console and foretell; and he teaches the poem to his pupil Vaishampayana, who recites it at the snake sacrifice of King Janamejaya, a descendant of the heroes. That recitation is in turn retold by the bard Ugrashravas to the sages gathered in the Naimisha Forest. The epic therefore arrives inside a nest of frames, and stories within it are told inside stories, so that the reader always hears the war at one or two removes, as a tale someone needs to hear [[vanbuitenen1973]] [[hiltebeitel2001]].",
+  "The poem was not made at one time. Its core, the feud of two branches of the Bharata clan, may preserve memories of the late Vedic Kuru kingdom in the upper Ganges plain, but the text as we have it accumulated over roughly eight centuries, from about 400 BCE to about 400 CE. Over that period it absorbed genealogies, myths, sermons, law, cosmology and whole treatises on statecraft and liberation, until it could say of itself that what is found here may be found elsewhere, but what is not here is found nowhere. The tradition reckons it at 100,000 ślokas; the critical edition, which removes much later matter, still runs to some 75,000 verses. Most of it is in the plain, flexible anuṣṭubh śloka, a couplet of thirty-two syllables that suits narrative and dialogue alike [[brockington1998]] [[hopkins1901]].",
+  "Hundreds of manuscripts survive, in many scripts and in a Northern and a Southern recension that differ widely. From 1919 the Bhandarkar Oriental Research Institute in Poona compared them and, between 1933 and 1966, published a critical edition in nineteen volumes, edited first by V. S. Sukthankar (to his death in 1943) and then by S. K. Belvalkar, P. L. Vaidya and others. Its text, the 'constituted text', excludes passages that are not supported across the manuscript families and prints them in notes and appendices; modern scholarship and translations (van Buitenen, Fitzgerald, Smith) are based on it [[sukthankar1933]] [[smith2009]]. Older translations such as Ganguli's follow the vulgate text of the commentator Nilakantha (seventeenth century), and so include scenes the critical edition relegates to appendices.",
+  "The Mahabharata is at once an epic of war and a vast book of dharma: the order of things, duty, law and right conduct. It sets its heroes in situations where the claims of kinship, caste duty, truth and compassion collide, and it refuses easy answers. Its sixth book contains the Bhagavad Gita, the dialogue in which Krishna persuades Arjuna to fight; its twelfth and thirteenth books are long instructions given by the dying Bhishma. For two thousand years it has been retold in every Indian language, in drama, dance, temple ritual and television, and its characters remain living points of reference in Indian moral argument [[doniger2009]] [[ramanujan1991]].",
+  "This guide quotes Romesh Chunder Dutt's Maha-bharata: The Epic of Ancient India Condensed into English Verse (1899), the edition followed in the 'books' below. Dutt (1848–1909), a Bengali administrator, historian and novelist, selected the episodes he judged central to the story and rendered them in long rhymed trochaic couplets, a metre meant to suggest the swing of the śloka. He omits the Bhagavad Gita, the teachings of the Shanti and Anushasana books and almost all the tales of the forest years except Savitri, and he follows the vulgate text, so a few scenes he includes (Draupadi's refusal of Karna at the bridal contest, for example) are not in the critical edition. For the whole poem, read Kisari Mohan Ganguli's complete prose translation, also on this site, organised in the eighteen parvas [[dutt1899]] [[ganguli1883]]."
+ ],
+ "plot": [
+  "King Pandu of Hastinapura, cursed never to touch his wife without dying, retires to the forest, where his wives Kunti and Madri bear five sons by gods: Yudhishthira by Dharma, Bhima by the Wind, Arjuna by Indra, and the twins Nakula and Sahadeva by the Ashvins. Before her marriage Kunti had borne a son to the Sun, Karna, and set him adrift; he is raised by a charioteer. After Pandu's death the Pandavas grow up at court with the hundred sons of the blind king Dhritarashtra, led by Duryodhana, who hates them. Both groups are trained in arms by the brahmin Drona under the eye of their great-uncle Bhishma, who has vowed lifelong celibacy. At a tournament Karna challenges Arjuna and is mocked for his birth; Duryodhana makes him a king and wins his lifelong loyalty.",
+  "Duryodhana tries to burn the Pandavas in a house of lac; they escape and live disguised as brahmins. Arjuna wins the princess Draupadi at her bridal contest, and by their mother's word she becomes the wife of all five brothers. Given half the kingdom, they build Indraprastha, and Yudhishthira is consecrated emperor at the royal sacrifice, where Krishna, their cousin and ally, kills the insolent Shishupala. Envious, Duryodhana invites Yudhishthira to a game of dice played for him by his uncle Shakuni. Yudhishthira loses his wealth, his brothers, himself and finally Draupadi, who is dragged into the hall and insulted. She asks whether a man who has lost himself can stake his wife; Dhritarashtra, alarmed by omens, grants her boons that free her husbands. A second game sends the Pandavas into twelve years of exile in the forest and a thirteenth year in disguise, which they spend at the court of King Virata.",
+  "When they claim their kingdom back, Duryodhana refuses even five villages. Krishna's embassy fails, and the two sides gather vast armies at Kurukshetra. On the eve of battle Arjuna, seeing his kinsmen and teachers in the opposing ranks, lays down his bow; Krishna, his charioteer, answers him in the Bhagavad Gita. The war lasts eighteen days. Bhishma falls on a bed of arrows when Arjuna shoots from behind Shikhandin, a man who had been born a woman; Drona lays down his arms when Yudhishthira, the truth-teller, half-lies that his son Ashvatthaman is dead; Karna is shot while trying to free his sunken chariot wheel; Bhima breaks Duryodhana's thighs with a foul blow. In the night Ashvatthaman slaughters the sleeping Pandava camp, including Draupadi's sons.",
+  "The victors are left to mourn. The widows come to the field, Gandhari laments her hundred sons, and Kunti reveals that Karna was the Pandavas' elder brother. Yudhishthira, sick with guilt, is taught by the dying Bhishma how a king must live, and performs the horse sacrifice to cleanse his reign. Years later the old king and queens die in a forest fire; Krishna's own clan destroys itself in a drunken brawl, and Krishna is killed by a hunter's arrow. The Pandavas and Draupadi set out on a last journey to the Himalaya, and all fall on the way except Yudhishthira and the dog that follows him, who proves to be Dharma. In heaven Yudhishthira finds Duryodhana enthroned and his own family apparently in hell; refusing to leave them, he passes this last test, and the illusion gives way to a vision of all the dead, friend and foe, in their divine forms."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Book I: The Tournament",
+   "summary": [
+    "Drona, the brahmin who has trained the Kuru princes in arms, asks the blind king Dhritarashtra to hold a tournament. The court gathers, Gandhari and Pritha (Kunti) among the ladies, and the princes display their skill on horse, chariot and elephant. Bhima and Duryodhana fight with maces until the crowd's partisanship grows dangerous and Drona has them parted. Arjuna then performs wonders of archery to the acclaim of the people.",
+    "As the day ends a stranger in golden mail enters: Karna, whom Pritha bore to the Sun before her marriage. He repeats all of Arjuna's feats and challenges him to single combat. Kripa demands to know his lineage, for princes may not fight the low-born, and Karna cannot answer. Duryodhana at once crowns him king of Anga and asks only for his friendship. When the old charioteer who raised Karna comes forward and embraces him as a son, Bhima taunts Karna as fit only for the goad; Duryodhana replies that great deeds, not birth, make the warrior. Pritha, recognising her son, faints in silence."
+   ],
+   "analysis": [
+    "Dutt opens not with the long genealogies of the Adi Parva but with a public spectacle in which the whole conflict is staged in miniature. The two cousins' mace fight anticipates their final duel; the crowd already divides into factions; and the rivalry of Arjuna and Karna, sons of Indra and of the Sun, is literally sketched in the sky as clouds shade one and sunlight bathes the other. The scene also introduces the poem's habit of dramatic irony: the reader knows, as almost no one in the arena does, that the two archers are brothers.",
+    "The tournament raises the question of birth and worth that runs through the whole epic. Kripa's demand for a lineage, Bhima's sneer and Duryodhana's defence ('Noble deeds proclaim the warrior') make Karna the test case. Duryodhana's generosity is genuine, but it is also calculating: he buys a champion to match Arjuna. Karna's silence before insult, and his glance at the sun, his hidden father, become a recurring gesture."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book I, sect. V (MBh 1)",
+     "quote": "Pritha, yet unwedded, bore him, peerless archer on the earth,\nPortion of the solar radiance, for the Sun inspired his birth!",
+     "note": "The narrator tells the reader at once what the characters will learn only after Karna's death: the challenger is Kunti's first son, and so the eldest of the Pandavas."
+    },
+    {
+     "ref": "Dutt, Book I, sect. VIII (MBh 1)",
+     "quote": "Quivered Karna's lips in anger, word of answer spake he none,\nBut a deep sigh shook his bosom, and he gazed upon the sun!",
+     "note": "Karna's answer to Bhima's taunt is a look at his unknown father. The gesture will return when Draupadi refuses him in Book II."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Book II: The Bride's Choice",
+   "summary": [
+    "After escaping Duryodhana's plot to burn them alive, the Pandavas wander with their mother disguised as brahmins. They hear of the svayaṃvara, the 'self-choice', of Draupadi, daughter of King Drupada of Panchala, a maiden born from a sacrificial altar. Vyasa blesses their journey, and they lodge in a potter's house. Drupada, who hopes secretly for Arjuna as his son-in-law, has set a test: to string a huge bow and shoot five arrows through a revolving disc at a distant target.",
+    "Kings from all India fail one after another, thrown down by the recoiling bow. Karna strings it, but Draupadi declares that a king's daughter will not marry a charioteer's son, and he lays it down, looking at the sun. Arjuna rises from among the brahmins, bends the bow and hits the target; Draupadi garlands him. The defeated kings, outraged that a priest has won the bride, attack Drupada; Bhima tears up a tree to fight them and Arjuna stands beside him, until Krishna, who alone has recognised the brothers, calms the suitors."
+   ],
+   "analysis": [
+    "The svayaṃvara is the epic's great scene of courtly display, and Dutt fills it with catalogues of kings and descriptions of palaces, as well as the gods who gather in the sky to watch. But the contest is also a hinge of the plot. It allies the Pandavas with Panchala, brings Krishna into their story and makes Draupadi, the 'altar-born' woman, the centre of the conflict. Dutt stops short of the sequel in which, by Kunti's unwitting command to 'share what you have won', Draupadi becomes the wife of all five brothers, a polyandry the epic itself debates at length.",
+    "Draupadi's refusal of Karna belongs to the vulgate tradition that Dutt translates; the critical edition does not include it, and in its text Karna simply fails. The variant shows how the tradition elaborated the grievances that drive the story: Karna's later cruelty to Draupadi in the dicing hall reads, in this version, as revenge for this public humiliation. Arjuna's victory in brahmin disguise also turns the categories of caste upside down, as the angry kings at once complain."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book II, sect. I (MBh 1)",
+     "quote": "Human mother never bore her, human bosom never fed,\nFrom the Altar sprang the maiden who some noble prince will wed!",
+     "note": "Draupadi and her brother Dhrishtadyumna were born from Drupada's sacrifice for revenge on Drona; her birth marks her from the start as an agent of destruction as well as a bride."
+    },
+    {
+     "ref": "Dutt, Book II, sect. V (MBh 1, vulgate)",
+     "quote": "\"Monarch's daughter, born a Kshatra, Suta's son I will not wed!\"",
+     "note": "A line absent from the critical edition. It turns the bridal contest into another wound to Karna's pride and prepares his insults in Book IV."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Book III: The Imperial Sacrifice",
+   "summary": [
+    "In their new city of Indraprastha on the Jumna, Yudhishthira performs the rājasūya, the royal consecration that proclaims him supreme among kings. Rulers from every region bring tribute; the Kauravas take part, Duryodhana receiving the gifts. During the rite the sage Narada sees that the assembled kings are gods incarnate, sent to earth to fight and die in a coming war, and that Krishna is Narayana, the supreme god himself.",
+    "When the guest-offering (arghya) must be given to the most honoured guest, Bhishma names Krishna. Shishupala, king of Chedi, protests that an uncrowned chieftain should not be preferred to kings, sages and warriors. Krishna lists Shishupala's crimes and explains that he has forgiven him a hundred offences for his mother's sake; when Shishupala mocks him, Krishna beheads him with his discus, and the dead king's spirit enters Krishna. Yudhishthira gives him royal funeral rites, installs his son and is hailed emperor; Krishna departs for Dvaraka, advising him to rule like a father."
+   ],
+   "analysis": [
+    "Dutt places at the centre of the Sabha Parva two contrasting scenes of assembly: the triumph of the rājasūya and, in the next book, the catastrophe of the dice. The splendour he describes makes the fall more terrible, and the sacrifice also provokes the envy that leads Duryodhana to plot the game. Narada's vision is the clearest statement in Dutt of the epic's divine plan: the war is a cosmic event in which gods and demons born as men work out their destinies, a frame that sits uneasily with the very human moral arguments of the story.",
+    "The arghya quarrel reveals what is at stake in Krishna's divinity. Shishupala's complaint is reasonable by worldly standards, since Krishna holds no throne and is not the eldest or most learned; Bhishma's answer is that Krishna's worth transcends rank. The episode also displays a principle of the epic's theology: even an enemy of God is saved by his intense attention to him, as Shishupala's soul passes into Krishna like a spark."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book III, sect. III (MBh 2)",
+     "quote": "And he saw in them embodied beings of the upper sky,\nAnd in lotus-eyed Krishna saw the Highest of the High!",
+     "note": "Narada's vision reveals the theology of incarnation (avatāra) that frames the epic: the war is willed by Narayana to relieve the earth."
+    },
+    {
+     "ref": "Dutt, Book III, sect. IV (MBh 2)",
+     "quote": "Greatest midst the great is Krishna! chief of men without a peer!",
+     "note": "Bhishma's judgement sets the precedence of Krishna over all kings and provokes the first killing in Dutt's poem."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Book IV: The Fatal Dice",
+   "summary": [
+    "Dutt begins after the game has been lost. A servant tells Draupadi that Yudhishthira has staked and lost everything, his brothers and himself, and then her. She sends back a question: if he had already lost himself, how could he stake her? Duhshasana drags her by her hair, in a single garment, into the hall. She appeals to the elders, asking why no one defends a wife. Karna tells her that a slave's wife is a slave, and invites her to choose a new husband; Duryodhana tries to seat her on his knee (in the Sanskrit, he bares his thigh to her). Bhima vows to break that thigh in battle.",
+    "Jackals howl in the sacrificial chamber. Terrified by the omen, Dhritarashtra offers Draupadi boons. She asks first for Yudhishthira's freedom, so that her son will not be called a slave's child, and then for the freedom and weapons of the other four; she refuses a third boon, saying a kṣatriya woman asks no more. In Dutt's version the Pandavas then go into exile. Vidura keeps Kunti in his house and blesses them; Kunti weeps over her sons as they leave in deerskins."
+   ],
+   "analysis": [
+    "This is the moral centre of the epic's first half. Draupadi's question, whether a man who has lost his own freedom can wager his wife, is never answered by the assembly. Bhishma, in the Sanskrit, answers that dharma is subtle and that he cannot decide; the elders' silence condemns them. Dutt omits both the second game, by which the Pandavas are actually sent into exile, and the miracle of the critical text, in which Draupadi's garment cannot be stripped from her as Duhshasana pulls it (later versions credit Krishna), but he keeps her two speeches, which make her the most articulate figure in the hall [[hiltebeitel1988]] [[matilal1989]].",
+    "The scene plants the vows that the war will fulfil: Bhima's oath against Duryodhana's thigh, and Draupadi's unbound hair, which she will not tie until she has washed it in her enemies' blood. Karna's speech shows the worst of him and is often read as revenge for his rejection in Book II. Draupadi's use of her boons is also an act of political intelligence: she recovers her husbands' freedom and weapons and leaves the Kauravas in her debt."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book IV, sect. I (MBh 2.60)",
+     "quote": "If my lord, himself a bondsman, then hath staked his queen and wife,\nFalse the stake, for owns a bondsman neither wealth nor other's life,",
+     "note": "Draupadi's legal question, which the Sanskrit poses in terms of whether Yudhishthira lost himself or her first. It is the most famous unanswered question in the epic."
+    },
+    {
+     "ref": "Dutt, Book IV, sect. II (MBh 2)",
+     "quote": "Silent all? and will no chieftain rise to save a woman's life,\nNot a hand or voice is lifted to defend a virtuous wife?",
+     "note": "Draupadi turns from law to shame, indicting the whole warrior class of the court."
+    },
+    {
+     "ref": "Dutt, Book IV, sect. III (MBh 2)",
+     "quote": "If that knee, by which thou sinnest, Bhima breaks not in his ire,\nIn the battle's red arena with his weapon, deathful, dire!",
+     "note": "Bhima's vow, fulfilled with a foul blow in Book X; Dutt's 'knee' renders the Sanskrit 'thigh'."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Book V: Woman's Love",
+   "summary": [
+    "In the forest Draupadi cooks and keeps house, her hair unbound in token of her vow. Sages visit the exiles and tell them ancient tales. Yudhishthira, grieving for Draupadi, asks the sage Markandeya whether any woman has suffered as she has, and Markandeya tells the story of Savitri.",
+    "King Ashvapati of Madra, childless, is granted a daughter by the goddess Savitri. When she grows up he sends her to choose her own husband. She chooses Satyavan, son of a blind king living in exile in the forest; the sage Narada warns that Satyavan will die in a year, but Savitri refuses to choose twice. She lives with him in the hermitage, and as the day approaches keeps a three-night fast. On the fatal day she goes with him into the forest; he falls ill and dies with his head in her lap. Yama, god of death, comes to take his soul, and Savitri follows him. Her wise speeches win boon after boon (sight and kingdom for her father-in-law, sons for her own father) until Yama, cornered by her words, restores Satyavan to life. They walk home through the night forest."
+   ],
+   "analysis": [
+    "Dutt's fifth book stands for the whole of the Aranyaka Parva, the longest book of the epic, which fills the twelve years of exile with tales told to the Pandavas. Savitri's story (MBh 3.277–283) is the last of these and one of the most loved episodes in Indian literature. It is framed as an answer to Yudhishthira's question about Draupadi, and the parallels are clear: an exiled king, a wife whose devotion is tested in the forest, and a woman who defeats an overwhelming power with argument.",
+    "Savitri's triumph is not passive endurance. She chooses her husband against her father and Narada, keeps her knowledge secret, fasts to gain spiritual power and then argues with Death in the language of dharma, so that each boon builds on the last until the final one cannot be granted without returning Satyavan. In later Hindu practice she became the model of the devoted wife, honoured in an annual vow; modern readers have also seen in her a figure of female agency and eloquence comparable to Draupadi's in the dicing hall [[brodbeck2007]]."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book V, sect. III (MBh 3.278)",
+     "quote": "Only once a maiden chooseth, twice her troth may not be given!",
+     "note": "Savitri's refusal to choose again, even when told her husband will die in a year: fidelity to a word given, as in so many vows of the epic."
+    },
+    {
+     "ref": "Dutt, Book V, sect. V (MBh 3.281)",
+     "quote": "For a woman's troth abideth longer than the fleeting breath,\nAnd a woman's love abideth higher than the doom of Death!",
+     "note": "Yama's concession. Dutt titles the book 'Woman's Love', but in the Sanskrit what conquers Death is chiefly Savitri's eloquence about dharma."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Book VI: Cattle-Lifting",
+   "summary": [
+    "The Pandavas are spending their thirteenth year in disguise at the court of King Virata of the Matsyas: Yudhishthira as a courtier skilled at dice, Bhima as a cook, Arjuna as Brihannala, a eunuch dancing-master to the princess, the twins as keepers of horses and cattle, Draupadi as a maid. While Virata is away fighting raiders from Trigarta, the Kauravas, led by Bhishma, Drona and Karna, drive off the Matsya cattle from the north. The young prince Uttara boasts of what he would do if only he had a charioteer; Draupadi suggests Brihannala.",
+    "Arjuna drives Uttara to a śamī tree where the Pandavas' weapons are hidden, wrapped like corpses. As Uttara unwraps them, Arjuna names each bow and sword and reveals who he and his brothers are. Drona recognises Arjuna's monkey banner and the sound of his bow, Gandiva. Arjuna drives at Duryodhana, routs the Kaurava army and recovers the cattle. Virata, learning the truth, offers his daughter Uttara to Arjuna, who instead asks her hand for his son Abhimanyu; the wedding is celebrated at Upaplavya."
+   ],
+   "analysis": [
+    "The Virata Parva is the epic's nearest approach to comedy. The heroes are hidden in demeaning roles, the boastful prince turns coward, and Arjuna, the supreme warrior, appears in bangles as a dancing-master. Yet the disguises also probe identity: each Pandava's role inverts or parodies his nature, and Arjuna's temporary loss of manhood (in the Sanskrit, the result of a curse by a nymph he had refused) prefigures the war's use of Shikhandin, who changed sex, against Bhishma [[vanbuitenen1973]].",
+    "The cattle raid is a rehearsal for Kurukshetra. Arjuna defeats the very commanders he will face there, and Dutt makes Drona's recognition speech a moment of almost fatherly pride. Arjuna's refusal to marry a girl he has taught, and the wedding of Abhimanyu to Uttara instead, bind Virata to the Pandava cause and introduce the young hero whose death will be the war's most pitiful event."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book VI, sect. III (MBh 4)",
+     "quote": "Pardon, prince, these rings and bangles, pardon strange unmanly guise,\n'Tis no poor and sexless creature, Arjun greets thy wondering eyes!",
+     "note": "The revelation scene at the śamī tree: the end of the year of concealment and the return of Arjuna's martial identity."
+    },
+    {
+     "ref": "Dutt, Book VI, sect. IV (MBh 4)",
+     "quote": "That is Arjun's monkey-standard, how it greets my ancient eyes!",
+     "note": "Drona's recognition of his favourite pupil. Arjuna's banner carries the monkey god Hanuman."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Book VII: The Preparation",
+   "summary": [
+    "In Virata's council hall the Pandavas' allies debate what to do. Krishna proposes that an envoy ask Duryodhana to restore Yudhishthira's half of the kingdom. His brother Baladeva (Dutt's Valadeva) urges humility, since Yudhishthira gambled his realm away of his own will; Satyaki angrily calls this cowardice and urges war; Drupada advises sending an envoy while gathering allies. The embassies fail, and Krishna himself goes to Hastinapura.",
+    "There Krishna asks Dhritarashtra to restrain his sons, reminding him that he raised the Pandavas as his own children and warning of the slaughter to come. Bhishma, Drona, Vidura and Dhritarashtra himself beg Duryodhana to make peace. Duryodhana answers that Yudhishthira lost his kingdom fairly, that a kṣatriya killed in battle goes to heaven, and that he will not yield to the Pandavas as much land as a needle's point can cover."
+   ],
+   "analysis": [
+    "Dutt condenses the Udyoga Parva, the 'Book of the Effort', into a sequence of formal speeches, a rhetorical structure that recalls the councils of Western epic. The arguments are serious on both sides. Baladeva's point that the gambler is responsible for his losses is the same one Duryodhana makes, and Duryodhana's defence of warrior honour is coherent on its own terms. What condemns him is his refusal of any compromise, even after his own elders and parents have spoken.",
+    "Krishna's peace mission is one of the great puzzles of the epic. He speaks eloquently for peace, yet in the wider poem he is also the god who has come to destroy the wicked and lighten the earth's burden. Readers have long asked whether his embassy is sincere, and Matilal argued that Krishna acts as a pragmatic moral agent who sees beyond the rules [[matilal1989]] [[sharma1991]]. Dutt omits the dramatic sequel in the Sanskrit, in which Krishna reveals his divine form to the court and then tries to win Karna over by telling him of his birth."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book VII, sect. V (MBh 5)",
+     "quote": "Slaughter not the armed nations, slaughter not thy kith and kin,",
+     "note": "Krishna's appeal to Dhritarashtra; the war will indeed be a slaughter of kin, as Arjuna will see from his chariot."
+    },
+    {
+     "ref": "Dutt, Book VII, sect. X (MBh 5)",
+     "quote": "Town nor village, mart nor hamlet, help us righteous gods in heaven,\nSpot that needle's point can cover not unto them be given!",
+     "note": "Duryodhana's famous refusal, which makes the war inevitable. Yudhishthira had asked, in the Sanskrit, for as little as five villages."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Book VIII: Fall of Bhishma",
+   "summary": [
+    "The armies meet at Kurukshetra, Bhishma leading the Kauravas. Day after day he devastates the Pandava forces; father fights son and brother fights brother. Arjuna will not fight his great-uncle with full force, and when the Pandavas are routed Krishna leaps from the chariot to attack Bhishma himself, breaking his vow not to bear arms, until Arjuna drags him back and promises to fight in earnest. Bhima kills many of Duryodhana's brothers; Arjuna's son Iravat, born of a serpent princess, is killed. Duryodhana repeatedly accuses Bhishma of favouring the Pandavas.",
+    "In despair Yudhishthira and his brothers go to Bhishma's tent by night and ask how he can be killed. Bhishma tells them that he will not fight a woman or one born a woman. Krishna proposes to put Shikhandin, Drupada's son who was born a daughter, in front of Arjuna. Arjuna protests that it is a trick against the man he called father as a child, but obeys. On the tenth day Bhishma lowers his weapons before Shikhandin and falls, pierced by Arjuna's arrows, on a bed of arrows. Both sides mourn him. He urges Duryodhana to make peace, and when Karna visits him at night he tells him that he is Kunti's son and Arjuna's brother; Karna will not change sides."
+   ],
+   "analysis": [
+    "Dutt's eighth book omits the most famous part of the Bhishma Parva: the Bhagavad Gita (MBh 6.23–40), in which Arjuna, seeing his kinsmen and teachers drawn up against him, refuses to fight, and Krishna answers him with the teaching of action without attachment to its fruits, devotion and his own cosmic form. Dutt, like some nineteenth-century scholars, treated the Gita as a separate philosophical work; reading this book, one should know that the war in the Sanskrit begins only after the Gita's eighteen chapters [[edgerton1944]] [[malinar2007]].",
+    "Bhishma's death raises the epic's characteristic problem: victory is won by a stratagem that exploits the virtue of the enemy. Bhishma's vow of chivalry becomes the means of his death, and he himself reveals it. Arjuna's protest and Krishna's reply ('Dear or hated be the foeman, Arjun, thou shalt fight and slay') set out the dilemma that will recur at each fall. The dying Bhishma, who will live on his bed of arrows until the winter solstice and instruct Yudhishthira in the Shanti and Anushasana books, embodies a dharma at once admirable and tragically rigid."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book VIII, sect. I (MBh 6)",
+     "quote": "And the son knew not his father, and the sire knew not his son,\nBrother fought against his brother, strange the deeds of valour done!",
+     "note": "The confusion of the first day's battle: Dutt's image of the war's essential horror, a war within one family."
+    },
+    {
+     "ref": "Dutt, Book VIII, sect. X (MBh 6)",
+     "quote": "Bhishma thought of word he plighted and of oath that he had sworn,\nDropped his arms before the warrior who was but a female born!",
+     "note": "Bhishma's fall: he dies because he keeps his word. Dutt stresses that Shikhandin's arrows did not kill him."
+    },
+    {
+     "ref": "Dutt, Book VIII, sect. X (MBh 6.117)",
+     "quote": "Arjun is thy brother, Karna, end this sad fraternal war,\nSeek not life-blood of thy brother, nor against him drive thy car!",
+     "note": "Bhishma tells Karna of his birth, in vain. In the Sanskrit Karna has already heard the secret from Krishna and from Kunti before the war."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Book IX: Fall of Drona",
+   "summary": [
+    "Drona now leads the Kauravas and vows to take Yudhishthira prisoner; Arjuna vows to protect him. Abhimanyu distinguishes himself, Bhima and Shalya fight with maces to a standstill, and Arjuna kills the eastern king Bhagadatta. On the thirteenth day, while Arjuna is drawn away, Drona arrays his troops in a circular formation (the cakravyūha). Abhimanyu breaks into it alone and wreaks havoc, wounding Duhshasana and killing Duryodhana's son Lakshmana, until Jayadratha and six other warriors surround him; disarmed and on foot, he is killed. Arjuna returns to a silent camp and vows to kill Jayadratha before the next sunset or burn himself.",
+    "Next day Arjuna fights his way through the whole Kaurava army. As sunset nears, Krishna veils the sun with a cloud; Jayadratha, thinking the day over, shows himself, and Arjuna kills him. The battle continues into the night, when Karna kills Bhima's son Ghatotkacha. On the fifteenth day Drona kills Drupada and Virata. Bhima kills an elephant named Ashvatthaman, and a rumour spreads that Drona's son is dead. Drona asks Yudhishthira, who has never lied, and is told that the elephant Ashvatthaman is dead, but hears only half the words. Drona loses heart, and Dhrishtadyumna kills him."
+   ],
+   "analysis": [
+    "The Drona Parva shows the rules of battle collapsing. Abhimanyu is killed by seven men against one, against the agreed codes of combat; Arjuna's vengeance requires a divine trick with the sun; the night battle abandons the order of day; and Drona, the brahmin who has taken up the warrior's role, is killed through a lie told by the embodiment of dharma. Dutt's version has Yudhishthira speak the truth in a way designed to mislead; in the Sanskrit his chariot, which had always floated above the ground, sinks to earth at that moment, marking his fall.",
+    "The killing of Drona is one of the classic cases in debates about the morality of the war. Krishna argues that only deceit can stop Drona, who is slaughtering innocent troops with divine weapons, and that a lie to save life may be justified. Readers from Matilal onward have discussed whether this is a casuistry that dissolves dharma, or a recognition that rigid rules can serve evil [[matilal1989]] [[das2009]]."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book IX, sect. III (MBh 7)",
+     "quote": "Dauntless, with the seven brave chieftains Abhimanyu fought alone!",
+     "note": "The death of Abhimanyu inside the circular array: the war's most pitiful death and a flagrant breach of the warrior code."
+    },
+    {
+     "ref": "Dutt, Book IX, sect. V (MBh 7)",
+     "quote": "Drona heard but half the accents, feebly drooped his sinking head!",
+     "note": "Yudhishthira's half-truth, that 'Ashvatthaman' (the elephant) is dead, ends Drona's resistance and stains the truth-teller."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Book X: Fall of Karna",
+   "summary": [
+    "Duryodhana consecrates Karna as general. Karna asks for King Shalya of Madra, a match for Krishna, as his charioteer; Shalya mocks him as they drive out. Karna defeats Yudhishthira and spares him with scorn. Humiliated, Yudhishthira taunts Arjuna as a coward and tells him to give up his bow; Arjuna, who has vowed to kill anyone who says so, draws his sword on his brother until Krishna restrains him, and the brothers are reconciled in tears.",
+    "Arjuna and Karna fight their long-awaited duel. Arjuna's bowstring breaks and Karna keeps shooting; then Karna's chariot wheel sinks into the earth. As he tries to lift it, he appeals to the rules of fair combat. Krishna answers by listing his crimes, the dice game, the insult to Draupadi and the killing of Abhimanyu, and Arjuna kills him. On the last day Yudhishthira kills Shalya, Sahadeva kills Shakuni and Bhima kills the last of Duryodhana's brothers. Duryodhana hides in a lake; found, he fights Bhima with maces, and Bhima, remembering his vow, breaks his thigh with an illegal blow. That night Ashvatthaman steals into the Pandava camp and murders Dhrishtadyumna, Shikhandin and Draupadi's sons as they sleep. Duryodhana dies content on hearing the news."
+   ],
+   "analysis": [
+    "Dutt compresses the Karna, Shalya and Sauptika books into one, making Karna's fall the climax of the war. The duel is a tragedy of brothers who do not both know their relation: Karna, who knows, has promised Kunti to spare all her sons but Arjuna. Karna's appeal to fair play at the moment of his helplessness, and Krishna's answer that he has forfeited the right to invoke it, raise directly the question of whether the war's end justifies its means. In the Sanskrit Karna's death is also the working out of curses: his teacher's curse that he would forget his weapons at need, and a brahmin's that his wheel would sink [[mcgrath2004]].",
+    "The last day completes the pattern of victory by unfair means. Bhima's blow below the navel violates the rules of mace fighting, as Baladeva angrily protests in the Sanskrit; Duryodhana dies accusing the Pandavas of winning only by trickery, and flowers fall from heaven on him. The night massacre then turns the Pandavas' victory to ashes: the war ends not in triumph but in an act of horror committed in the dark, which the Sanskrit narrates at length in the Sauptika Parva."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book X, sect. II (MBh 8)",
+     "quote": "Room is none for Arjun's glory and for archer Karna's fame,\nOne must sink and one must sparkle with a brighter, richer flame!",
+     "note": "Karna's speech to Duryodhana: his rivalry with Arjuna is the meaning of his life, a rivalry for fame that the Iliad's readers will recognise."
+    },
+    {
+     "ref": "Dutt, Book X, sect. II (MBh 8)",
+     "quote": "Speak not then of rules of honour, blackened in your sins you die,",
+     "note": "Krishna's answer to Karna's appeal for fair combat. The epic leaves open whether this is justice or special pleading."
+    },
+    {
+     "ref": "Dutt, Book X, sect. IV (MBh 9)",
+     "quote": "Then his vow remembered Bhima, and he raised his weapon high,\nWith a foul attack but fatal Bhima broke Duryodhan's thigh!",
+     "note": "Dutt himself calls the blow 'foul'. The vow made in the dicing hall is fulfilled in breach of the rules of war."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Book XI: Funeral Rites",
+   "summary": [
+    "The blind Dhritarashtra, who has lost all hundred sons, goes out to the battlefield with Gandhari, Kunti and the widows of the Kuru house. Royal women who never appeared in public walk unveiled through the streets. On the field, among jackals and vultures, Gandhari speaks to Krishna of the dead heroes and the grieving women. Seeing Duryodhana, she faints, then recalls that when he went to war she told him only that victory follows dharma; he has died as a warrior and gone to heaven, but she grieves for her husband, for his widow and for her grandson.",
+    "Yudhishthira orders that all the dead, friend and foe and the nameless thousands, receive funeral rites, and great pyres burn through the night. At the Ganges, where the women offer water to the dead, Kunti tells her sons that Karna was her first-born. Yudhishthira laments that, with Karna at their side, they could have had everything and the war need never have happened; he offers water to his brother, and the survivors return to Hastinapura with empty hearts."
+   ],
+   "analysis": [
+    "The Stri Parva, 'the Book of the Women', is the epic's great lament and the counterweight to its battle books. The women's grief turns the glory of the dead into loss, and Gandhari's survey of the field recalls the laments of Andromache and Hecuba at the end of the Iliad. In the Sanskrit Gandhari also curses Krishna for not preventing the war, foretelling the destruction of his own clan, a curse Dutt omits [[fitzgerald2004]].",
+    "Gandhari's words to Duryodhana, 'where dharma is, there is victory' (yato dharmas tato jayaḥ), are the epic's refrain and its irony. The Pandavas have won, but the means of their victory have made it hard to say that dharma won. Kunti's revelation completes the tragedy of Karna and adds a new burden of guilt for Yudhishthira, which in the Sanskrit leads directly into the Shanti Parva, where he wishes to renounce the throne."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book XI, sect. III (MBh 11)",
+     "quote": "'Son!' I said to dear Duryodhan, 'Heaven avert a cruel fate,\nYato dharma stato jayah! Triumph doth on Virtue wait!'",
+     "note": "Gandhari recalls her blessing: where there is dharma, there is victory. The maxim recurs through the epic."
+    },
+    {
+     "ref": "Dutt, Book XI, sect. V (MBh 11)",
+     "quote": "Offer unto him oblation, Karna was my eldest son!",
+     "note": "Kunti's revelation at the river, after the war: the secret held since Book I comes out too late."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Book XII: Sacrifice of the Horse",
+   "summary": [
+    "Arjuna returns after a year following the consecrated horse, which has wandered freely through the kingdoms while he subdued all who opposed it. Yudhishthira prepares the aśvamedha, the horse sacrifice, at Hastinapura. Kings, sages and brahmins gather, and the feasting feeds a hundred thousand people. Vyasa tells Yudhishthira that a threefold gift will purify him of the blood of his kinsmen.",
+    "Animals and birds are offered at the sacrificial posts; the horse is killed according to Vedic rule and Draupadi is placed beside it as queen of the sacrifice. The brothers inhale the smoke of the burnt offering, which removes sin. Yudhishthira gives his whole kingdom to Vyasa, who returns it, telling him that it is his duty to rule. The guests depart and Krishna returns to Dvaraka."
+   ],
+   "analysis": [
+    "Dutt ends his narrative with the Ashvamedhika Parva, the fourteenth book, and so leaves out the long instructions of the Shanti and Anushasana Parvas and the dark aftermath of the Asramavasika and Mausala books. His choice gives the poem a closing ritual of purification and restored kingship, framing the war between two great sacrifices, the rājasūya of Book III and the aśvamedha here.",
+    "The idea that a sacrifice can wash away the guilt of the war is part of the epic's Brahmanical frame, and some scholars, notably Biardeau and Hiltebeitel, read the whole war as a great sacrifice of battle. Yet the book's emphasis on purification also confirms how deeply Yudhishthira's victory is stained, and the Sanskrit includes an episode, omitted by Dutt, in which a mongoose mocks the sacrifice as worth less than a poor brahmin's gift of a little flour [[hiltebeitel1976]] [[biardeau2002]]."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Book XII, sect. III (MBh 14)",
+     "quote": "May the threefold rich performance purify the darkening stain,\nBlood of warriors and of kinsmen slaughtered on the gory plain!",
+     "note": "Vyasa's blessing names the purpose of the horse sacrifice: to cleanse the guilt of the war of kin."
+    },
+    {
+     "ref": "Dutt, Book XII, sect. IV (MBh 14)",
+     "quote": "Placed Draupadi, Queen of yajna, by the slain and lifeless steed,",
+     "note": "Draupadi, once dragged into the hall as a slave, now presides over the rite as chief queen."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Conclusion",
+   "summary": [
+    "Dutt's Conclusion is a single speech from the final book, the Svargarohana Parva. In heaven, after Yudhishthira has endured a vision of his family in hell and has bathed in the heavenly Ganges, the speaker (Indra in the Sanskrit) shows him the dead in their true forms. Draupadi is a goddess born from the altar to be his wife; her sons were celestial beings; Karna shines with the Sun; Abhimanyu walks with the Moon; Bhishma is among the Vasus and Drona sits with the god of wisdom. All have entered heaven by their valour and virtue."
+   ],
+   "analysis": [
+    "Dutt leaps here from the horse sacrifice over the four books that tell of the deaths of the old king and queens, the destruction of Krishna's clan and the Pandavas' last journey, and he omits the preceding test in which Yudhishthira refuses heaven without his dog and chooses hell with his brothers. What he keeps is the epic's final vision of reconciliation: friends and enemies alike are restored to their divine natures, and the earthly war appears as a play of incarnate gods. Karna in particular, scorned on earth as a charioteer's son, is named in heaven as the Sun's.",
+    "Many readers have found this ending both consoling and unsettling. It confirms the frame announced by Narada in Book III, but it seems to dissolve the moral distinctions the story has so painfully argued over, since Duryodhana too is in heaven. Sukthankar read the whole epic on several levels, including a spiritual allegory of the soul's journey towards the divine, while others see the ending as the final turn of an epic that refuses simple verdicts [[sukthankar1957]] [[hiltebeitel2001]]."
+   ],
+   "key": [
+    {
+     "ref": "Dutt, Conclusion (MBh 18)",
+     "quote": "This is brave immortal Karna, erst on earth by Arjun slain,",
+     "note": "Karna's place in heaven completes his story: the outsider of the tournament is revealed as the Sun's son."
+    },
+    {
+     "ref": "Dutt, Conclusion (MBh 18)",
+     "quote": "These and other mighty warriors, in the earthly battle slain,\nBy their valour and their virtue walk the bright ethereal plain!",
+     "note": "The final vision reunites the warriors of both sides in heaven, the epic's last word on the war."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Yudhishthira",
+   "side": "Pandavas",
+   "text": "Eldest of the Pandavas, son of the god Dharma, called Dharmaraja, 'king of dharma' (Dutt's Yudhishthir). He is famous for truthfulness, patience and a judicial temper, but also for his fatal weakness for dice, through which he loses his brothers and his wife. Reluctant to fight, he wins the war through the half-truth that kills Drona and is left sick with guilt. His last trials, his refusal to abandon a dog and his choice to stay with his family in hell, show the ideal of a righteous king at its most demanding."
+  },
+  {
+   "name": "Bhima",
+   "side": "Pandavas",
+   "text": "The second Pandava, son of the Wind god, of enormous strength and appetite, the brother who acts on anger. He vows in the dicing hall to break Duryodhana's thigh and to drink Duhshasana's blood, and fulfils both oaths. He kills the hundred Kaurava brothers in the course of the war. Blunt and loyal, he is the defender of Draupadi when others hesitate."
+  },
+  {
+   "name": "Arjuna",
+   "side": "Pandavas",
+   "text": "The third Pandava, son of Indra, the supreme archer and wielder of the bow Gandiva (Dutt's Arjun). He wins Draupadi, is Krishna's closest friend and the listener of the Bhagavad Gita, and kills Bhishma, Jayadratha and Karna. His reluctance to kill kinsmen and teachers, and his grief for his sons Iravat and Abhimanyu, make him the war's conscience as well as its most effective killer."
+  },
+  {
+   "name": "Nakula and Sahadeva",
+   "side": "Pandavas",
+   "text": "The twin sons of Madri by the Ashvin gods, handsome, wise and loyal to their elder brothers. In disguise at Virata's court they keep horses and cattle. Sahadeva kills Shakuni, the architect of the dice game, on the last day of the war. Kunti treats Sahadeva, the youngest, as the most in need of care."
+  },
+  {
+   "name": "Abhimanyu",
+   "side": "Pandavas",
+   "text": "Son of Arjuna and Krishna's sister Subhadra, married to Virata's daughter Uttara. A brilliant young warrior, he breaks into Drona's circular array alone and is killed by several warriors at once, a breach of the code that provokes Arjuna's vengeance. His posthumous son Parikshit continues the dynasty."
+  },
+  {
+   "name": "Draupadi",
+   "side": "Women",
+   "text": "Princess of Panchala, born from a sacrificial fire, wife of all five Pandavas (also called Krishnaa and Panchali). Staked and lost at dice, dragged into the assembly, she asks the question no one can answer and wins her husbands' freedom with her boons. Her unbound hair and her demand for vengeance keep the Pandavas' grievance alive through the exile, and she loses all five sons in the night massacre. She is the epic's fiercest voice of justice and has been worshipped as a goddess in South India [[hiltebeitel1988]]."
+  },
+  {
+   "name": "Kunti",
+   "side": "Women",
+   "text": "Mother of Yudhishthira, Bhima and Arjuna (Dutt calls her Pritha) and, before her marriage, of Karna by the Sun, a secret she keeps until after his death. A widow who follows her sons through exile and war, she shares their sufferings and their pride. Her silence about Karna is one of the epic's great tragic choices."
+  },
+  {
+   "name": "Gandhari",
+   "side": "Women",
+   "text": "Wife of Dhritarashtra, who blindfolded herself for life on her marriage to the blind king, mother of the hundred Kauravas. She repeatedly warns Duryodhana that victory follows dharma, and after the war she laments over the battlefield. In the Sanskrit she curses Krishna for allowing the slaughter, foretelling the destruction of his clan."
+  },
+  {
+   "name": "Savitri",
+   "side": "Women",
+   "text": "Heroine of the tale told to the Pandavas in exile, who chooses a husband fated to die within a year and wins his life back from Yama by her devotion and argument. She became a model of the faithful wife in later Hindu tradition."
+  },
+  {
+   "name": "Subhadra",
+   "side": "Women",
+   "text": "Krishna's sister, Arjuna's wife and mother of Abhimanyu, whose lament for her son is one of the poem's most moving passages."
+  },
+  {
+   "name": "Duryodhana",
+   "side": "Kauravas",
+   "text": "Eldest son of Dhritarashtra and leader of the Kauravas (Dutt's Duryodhan). Consumed by envy of the Pandavas, he tries to burn them alive, robs them at dice and refuses to return even a needle's point of land. Yet he is generous to Karna, brave and unbowed to the end, and dies claiming that he lived as a true warrior while his enemies won only by trickery. Some regional traditions honour him as a hero."
+  },
+  {
+   "name": "Duhshasana",
+   "side": "Kauravas",
+   "text": "Duryodhana's next brother, who drags Draupadi by the hair into the assembly hall and tries to strip her. Bhima kills him in battle and drinks his blood, as he had vowed."
+  },
+  {
+   "name": "Karna",
+   "side": "Kauravas",
+   "text": "Kunti's first-born son by the Sun, abandoned at birth and raised by a charioteer, so that the Pandavas' eldest brother grows up as their enemy. Born with golden armour and earrings, he is a match for Arjuna and Duryodhana's devoted friend. Proud, generous and embittered by insults to his birth, he insults Draupadi but refuses to desert Duryodhana even when he learns his true identity. His death, when his chariot wheel sinks, is one of the epic's most debated scenes [[mcgrath2004]]."
+  },
+  {
+   "name": "Shakuni",
+   "side": "Kauravas",
+   "text": "Prince of Gandhara, brother of Gandhari and Duryodhana's uncle, master of dice, who plays and wins the game for Duryodhana. Sahadeva kills him on the last day."
+  },
+  {
+   "name": "Jayadratha",
+   "side": "Kauravas",
+   "text": "King of Sindhu and husband of Duryodhana's sister. He leads the group of warriors who kill Abhimanyu, and Arjuna kills him the next day before sunset, aided by Krishna's darkening of the sun."
+  },
+  {
+   "name": "Ashvatthaman",
+   "side": "Kauravas",
+   "text": "Son of Drona. After the war is lost, he enters the Pandava camp at night and kills Dhrishtadyumna, Shikhandin and Draupadi's sons as they sleep, an act that ends the war in horror. In the Sanskrit he is cursed by Krishna to wander the earth for three thousand years."
+  },
+  {
+   "name": "Shalya",
+   "side": "Kauravas",
+   "text": "King of Madra, brother of Madri and so the twins' uncle, who fights for the Kauravas. As Karna's charioteer he mocks and discourages him; he leads the Kaurava army on the last day and is killed by Yudhishthira."
+  },
+  {
+   "name": "Krishna",
+   "side": "Krishna and the gods",
+   "text": "Prince of the Yadava clan of Dvaraka, cousin and friend of the Pandavas and Arjuna's charioteer at Kurukshetra, revealed as an incarnation of the supreme god Vishnu-Narayana. He kills Shishupala, pleads for peace in Hastinapura, teaches Arjuna in the Bhagavad Gita and devises the stratagems by which Bhishma, Drona, Karna and Duryodhana fall. His double role as moral teacher and author of deceptions is a central puzzle of the epic."
+  },
+  {
+   "name": "Baladeva (Balarama)",
+   "side": "Krishna and the gods",
+   "text": "Krishna's elder brother, armed with a ploughshare (Dutt's Valadeva), who counsels reconciliation and stays neutral in the war. In the Sanskrit he angrily protests at Bhima's foul blow against Duryodhana."
+  },
+  {
+   "name": "Yama",
+   "side": "Krishna and the gods",
+   "text": "God of death and of dharma, who comes to take Satyavan's soul in the tale of Savitri. The god Dharma, father of Yudhishthira, is often identified with him and tests his son in the forest and at the gate of heaven."
+  },
+  {
+   "name": "Bhishma",
+   "side": "Elders and teachers",
+   "text": "Son of King Shantanu and the river Ganga, the great-uncle of both sides, who renounced the throne and marriage so that his father could marry again. He leads the Kauravas for ten days, though he loves the Pandavas, and falls on a bed of arrows when he refuses to fight Shikhandin. From that bed he instructs Yudhishthira in dharma before choosing the moment of his death."
+  },
+  {
+   "name": "Drona",
+   "side": "Elders and teachers",
+   "text": "The brahmin master of arms who taught both sides, especially Arjuna, his favourite. Born, as his standard recalls, in a water-pot, and an old enemy of Drupada, he commands the Kauravas after Bhishma. He is killed by Dhrishtadyumna after Yudhishthira's half-lie about the death of his son."
+  },
+  {
+   "name": "Kripa",
+   "side": "Elders and teachers",
+   "text": "Another brahmin teacher of the Kuru princes, who fights for the Kauravas, urges Duryodhana to make peace after Karna's death and survives the war."
+  },
+  {
+   "name": "Vidura",
+   "side": "Elders and teachers",
+   "text": "Half-brother of Dhritarashtra and Pandu, born of a servant woman, wise and devoted to dharma (he is in some accounts an incarnation of the god Dharma). He warns against the dice game, shelters Kunti during the exile and arranges the funeral rites after the war."
+  },
+  {
+   "name": "Dhritarashtra",
+   "side": "Elders and teachers",
+   "text": "The blind king of the Kurus, father of the hundred Kauravas. Torn between love for his sons and fear of injustice, he repeatedly fails to restrain Duryodhana, and the war's whole story is narrated to him by his charioteer Sanjaya, who has been given divine sight."
+  },
+  {
+   "name": "Vyasa",
+   "side": "Elders and teachers",
+   "text": "The sage credited with composing the epic, who is also the biological father of Dhritarashtra, Pandu and Vidura and thus the grandfather of both sides. He appears at critical moments to advise and to foretell, and presides over the horse sacrifice."
+  },
+  {
+   "name": "Drupada, Dhrishtadyumna and Shikhandin",
+   "side": "Others",
+   "text": "The king of Panchala, Drona's old enemy, and his children. Dhrishtadyumna, born from the fire with Draupadi to kill Drona, commands the Pandava army and kills Drona; Shikhandin, born a girl and later turned into a man, is placed before Arjuna to bring down Bhishma. All three are dead by the end of the war."
+  },
+  {
+   "name": "Shishupala",
+   "side": "Others",
+   "text": "King of Chedi and Krishna's kinsman, who objects to the honour given to Krishna at the royal sacrifice and is beheaded by his discus."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Dharma and its dilemmas",
+   "text": [
+    "Dharma is the epic's central concern. The word covers cosmic order, law, caste duty, righteousness and truth, and the Mahabharata repeatedly sets these meanings against each other. Yudhishthira's duty as a king to accept a challenge leads him to gamble away his wife; Bhishma's vow and loyalty to the throne bind him to fight for the wrong side; Arjuna's duty as a warrior requires him to kill his teachers and kin. As Bhishma says when Draupadi asks her question, dharma is 'subtle' (sūkṣma), hard to see [[matilal1989]].",
+    "The epic gives no single rule for resolving such conflicts. Krishna's teaching in the Gita, that one should act according to one's own duty without attachment to its results, is one answer; his stratagems on the battlefield suggest another, in which the end can justify bending the rules. Many readers think the poem's greatness lies precisely in its refusal to simplify, making its heroes live with choices that are right in one sense and wrong in another [[das2009]]."
+   ]
+  },
+  {
+   "title": "Kinship and the war within the family",
+   "text": [
+    "The Kurukshetra war is fought between cousins, and nearly everyone who dies is kin to someone on the other side. Bhishma, Drona and Kripa love the Pandavas but fight against them; Karna dies at the hand of a brother he has chosen not to acknowledge; Shalya fights against his nephews. Arjuna's horror at killing family is the occasion of the Bhagavad Gita, and Dutt's battle books keep returning to images of fathers, sons and brothers meeting in arms.",
+    "The poem's moral and emotional force comes from this intimacy. Victory over one's own family can only be a loss, and the laments of the Stri Parva, where the women mourn sons, brothers and husbands from both sides, show the cost of a war that destroys the very lineage it was fought to secure."
+   ]
+  },
+  {
+   "title": "Fate, time and human action",
+   "text": [
+    "The epic insists both on human responsibility and on a destiny that overrides it. Narada's vision reveals the war as a divine plan, curses and boons determine how heroes die, and the dying are told that Time (kāla) has already killed them. Yet characters are repeatedly offered choices, and the wrong ones, Yudhishthira's gambling, Duryodhana's refusal, Karna's silence, are what bring catastrophe.",
+    "The Mahabharata is set at the threshold of the Kali Yuga, the last and darkest age of the world, and its events mark the decline of dharma. Karve read the poem as the story of the end of an epoch, in which the old heroic world destroys itself [[karve1969]]."
+   ]
+  },
+  {
+   "title": "Women's voices",
+   "text": [
+    "Women in the epic suffer some of its worst outrages, but they also speak with unusual force. Draupadi argues law in the assembly and demands justice through the exile; Kunti makes the choices that shape her sons' lives; Gandhari judges both her son and Krishna; Savitri confronts Death himself. Their speeches often state moral truths that the men avoid.",
+    "Modern scholarship has explored how the epic both constrains and empowers women, and how Draupadi in particular has been read as goddess, wronged wife, and critic of patriarchal dharma [[brodbeck2007]] [[hiltebeitel1988]]."
+   ]
+  },
+  {
+   "title": "Kingship, renunciation and the cost of victory",
+   "text": [
+    "The story is about who should rule, but its most admired figures often wish to give up power. Bhishma renounces the throne at the start; Yudhishthira longs to renounce it at the end, and only long instruction persuades him to rule. The poem asks whether a king can be good, and whether the violence that kingship requires can be justified.",
+    "Victory brings no joy. Dutt's Book XI ends with the survivors returning to the city 'with a void and vacant heart', and the Sanskrit continues with the deaths of the elders, the destruction of Krishna's people and the Pandavas' final journey. The epic's last books suggest that only renunciation, and finally death, release the heroes from the consequences of their war."
+   ]
+  },
+  {
+   "title": "Truth and deception",
+   "text": [
+    "Truth (satya) is one of the epic's highest values: Yudhishthira's word is so reliable that his chariot floats above the ground, Bhishma's and Arjuna's vows are absolute, and Savitri wins by her truthfulness. But the war is won by deceptions: the use of Shikhandin, the half-lie to Drona, the darkening of the sun, the killing of Karna at a disadvantage and the foul blow against Duryodhana.",
+    "These deceptions are mostly devised by Krishna, who argues that they serve a higher dharma by ending a greater evil. The poem allows both the victims' protests and Krishna's answers to be heard, leaving the reader to judge."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Vows",
+   "text": "The plot is driven by vows: Bhishma's oath of celibacy and loyalty, Bhima's oaths in the dicing hall, Draupadi's vow not to bind her hair, Arjuna's vow to kill Jayadratha before sunset, and Karna's promise to Kunti to spare all her sons but Arjuna. Vows give characters moral stature but bind them to outcomes they cannot escape."
+  },
+  {
+   "title": "Disguise and hidden identity",
+   "text": "The Pandavas live as brahmins after the house of lac and as servants at Virata's court; Arjuna becomes a eunuch; Karna does not know his mother, and the Pandavas do not know their brother. Revelations of identity, at the śamī tree, at Bhishma's deathbed, at the river after the war, mark the poem's turning points."
+  },
+  {
+   "title": "Assemblies and councils",
+   "text": "Many key scenes take place in public assemblies: the tournament, the bridal contest, the royal sacrifice, the dicing hall, the council at Virata's court and Krishna's embassy to Hastinapura. Dutt's version, built largely of speeches, emphasises the epic as a drama of argument as well as of action."
+  },
+  {
+   "title": "Sacrifice",
+   "text": "The story is framed by sacrifices: the snake sacrifice where it is recited, the royal consecration that provokes the dice game, the horse sacrifice that purifies the victor. The war itself is often described as a sacrifice of battle, with weapons as ladles and the slain as offerings [[hiltebeitel1976]]."
+  },
+  {
+   "title": "Similes of elephants, storms and fire",
+   "text": "Dutt's translation is full of the epic's stock comparisons: warriors like tuskers in a forest, armies like an ocean in storm, heroes like fire consuming dry wood. They give the battle books a cumulative, formulaic grandeur close to oral epic style."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "Draupadi's hair",
+   "text": "Draupadi's hair, consecrated at the royal sacrifice and dragged by Duhshasana, remains unbound through the exile as a sign of her unavenged insult. In the Sanskrit tradition she binds it again only after Bhima has killed Duhshasana. It stands for her honour and for the debt of vengeance that drives the war."
+  },
+  {
+   "title": "The dice",
+   "text": "The game of dice, played with Shakuni's skill, symbolises the role of chance and fraud in human affairs. Its loss sets the whole tragedy in motion, and the epic's ages of the world are named after the throws of the dice, the last and worst being Kali."
+  },
+  {
+   "title": "The bow Gandiva and the banners",
+   "text": "Arjuna's divine bow, given by the fire god, embodies his prowess and his identity; his insult to it is what makes him draw his sword on Yudhishthira. The banners of the heroes, Arjuna's monkey, Bhishma's palm tree, Drona's water-pot, identify them on the field, and their fall marks each hero's defeat."
+  },
+  {
+   "title": "Bhishma's bed of arrows",
+   "text": "Bhishma lies on the arrows that have pierced him, a living image of the warrior's death and of dharma suspended between life and death. From this bed he teaches Yudhishthira how to rule."
+  },
+  {
+   "title": "Karna's chariot wheel and the sun",
+   "text": "Karna's sinking wheel, the result of a curse, marks the moment when fate catches up with him and he becomes helpless before his brother. The sun, his hidden father, is the light he looks to when insulted and the glory he rejoins in heaven."
+  }
+ ],
+ "debates": [
+  {
+   "title": "How did the epic grow?",
+   "text": [
+    "Nineteenth-century Western scholars treated the Mahabharata as a heap of materials gathered round a heroic core. Adolf Holtzmann even proposed that the original poem had favoured the Kauravas and was later 'inverted' to glorify the Pandavas and Krishna. E. Washburn Hopkins's The Great Epic of India (1901) studied its metre, style and contents in detail and proposed a sequence of stages, from a Bharata lay to a Pandu epic to a Krishnaite and didactic encyclopedia, completed by about 400 CE [[hopkins1901]].",
+    "Later scholars kept the idea of layers but differed on their order. Brockington's survey summarises the evidence of language, metre and content for a gradual growth over many centuries [[brockington1998]], while others have questioned whether a pure heroic 'original' can be recovered at all."
+   ],
+   "cite": [
+    "hopkins1901",
+    "brockington1998"
+   ]
+  },
+  {
+   "title": "Sukthankar and the critical edition",
+   "text": [
+    "The critical edition prepared at Poona under V. S. Sukthankar (1933–66) used the methods of classical textual criticism to establish the oldest text recoverable from the manuscripts, moving later additions to notes and appendices. Its constituted text is shorter and more coherent than the vulgate and is now the basis of almost all scholarship [[sukthankar1933]].",
+    "Sukthankar himself admitted that the edition does not reconstruct an 'original' and that many passages cannot be reliably dated. Some critics argue that the method undervalues the living, regional versions of the epic, and others that it was too conservative in what it kept. In his lectures On the Meaning of the Mahābhārata, Sukthankar also proposed reading the whole poem on several levels at once, historical, ethical and spiritual [[sukthankar1957]]."
+   ],
+   "cite": [
+    "sukthankar1933",
+    "sukthankar1957"
+   ]
+  },
+  {
+   "title": "The morality of the war: 'subtle' dharma",
+   "text": [
+    "The Pandavas fight for a just cause, but they win by repeated breaches of the rules of war, mostly at Krishna's prompting. Bimal Krishna Matilal and the contributors to Moral Dilemmas in the Mahābhārata (1989) argued that the epic deliberately presents genuine moral dilemmas, conflicts between valid duties, rather than a fixed code. Matilal defended Krishna as a figure who sees that rigid rules can be exploited by the wicked [[matilal1989]] [[sharma1991]].",
+    "Other readers see in the war a tragic darkening in which even dharma's champions are corrupted. The novelist and essayist Gurcharan Das has applied the epic's dilemmas to modern public life, arguing that its very ambiguity makes it a guide to the difficulty of being good [[das2009]]."
+   ],
+   "cite": [
+    "matilal1989",
+    "sharma1991",
+    "das2009"
+   ]
+  },
+  {
+   "title": "Draupadi's question",
+   "text": [
+    "Draupadi's question in the dicing hall, whether Yudhishthira lost himself before he staked her, has been read in many ways: as a legal puzzle about property and personhood, as a challenge to patriarchal dharma, and as an argument that the epic never resolves. Bhishma's reply that dharma is subtle does not answer it, and the episode has become a classic text for discussions of gender and law in ancient India [[brodbeck2007]].",
+    "Alf Hiltebeitel's The Cult of Draupadī studied her worship as a goddess in Tamil Nadu, where festivals re-enact the epic and she appears as a fierce, vengeful form of the goddess. His work connects the Sanskrit heroine to living traditions and argues that her suffering and anger are at the mythological centre of the war [[hiltebeitel1988]]."
+   ],
+   "cite": [
+    "hiltebeitel1988",
+    "brodbeck2007"
+   ]
+  },
+  {
+   "title": "Karna, the tragic outsider",
+   "text": [
+    "Karna has become for many modern readers the epic's most sympathetic figure: the eldest Pandava denied his birthright, insulted for his low status, generous to the point of giving away his divine armour, and loyal to the friend who first honoured him. Irawati Karve's Yuganta and many modern retellings present him as a victim of caste and fate [[karve1969]].",
+    "Kevin McGrath's study of Karna in the Sanskrit epic examines how he embodies the heroic ideal of an older bardic tradition, and how the poem uses him to question the values of the Pandava victory. Others stress that the epic also shows his pride and cruelty, especially towards Draupadi [[mcgrath2004]]."
+   ],
+   "cite": [
+    "karve1969",
+    "mcgrath2004"
+   ]
+  },
+  {
+   "title": "The place of the Bhagavad Gita",
+   "text": [
+    "The Bhagavad Gita (MBh 6.23–40) is the most influential text in the epic and probably in Hinduism. Nineteenth- and early twentieth-century scholars such as Richard Garbe and Rudolf Otto saw it as an interpolation or a composite of layers, a philosophical poem inserted, perhaps in stages, into the story of the battle. Edgerton's translation and commentary treated it as a unified work that nonetheless draws on several philosophical schools [[edgerton1944]].",
+    "More recent scholars, such as Angelika Malinar, argue that the Gita is closely tied to its epic context and was composed in dialogue with the narrative's problems of kingship and violent duty [[malinar2007]]. Its later readings, as a scripture of devotion, as Gandhi's gospel of selfless action, and as a text used to justify violence, have been traced by Richard Davis [[davis2015]]."
+   ],
+   "cite": [
+    "edgerton1944",
+    "malinar2007",
+    "davis2015"
+   ]
+  },
+  {
+   "title": "Bardic epic or Brahmanical text?",
+   "text": [
+    "Was the Mahabharata originally a bardic poem of warrior heroes, later taken over by brahmins and filled with religious instruction, or was it from the start a Brahmanical composition? Georges Dumézil read the Pandavas as embodiments of an Indo-European scheme of three functions, sovereignty, force and fertility, inherited from very old myth [[dumezil1968]]. Madeleine Biardeau interpreted the epic as a Brahmanical text organised around the theology of the avatar and the cosmic cycle [[biardeau2002]].",
+    "James Fitzgerald has argued that the epic as we know it was largely composed as a written work by brahmins in the centuries after the Mauryan empire, to re-establish their vision of kingship and dharma [[fitzgerald2004]]. Alf Hiltebeitel, in Rethinking the Mahābhārata, similarly sees it as a deliberate written composition of the second and first centuries BCE, with Vyasa as an authorial figure inside the text [[hiltebeitel2001]]."
+   ],
+   "cite": [
+    "dumezil1968",
+    "biardeau2002",
+    "fitzgerald2004",
+    "hiltebeitel2001"
+   ]
+  },
+  {
+   "title": "The epic in the Indian tradition",
+   "text": [
+    "A. K. Ramanujan observed that no Indian ever reads the Mahabharata for the first time: it is known from childhood through retellings, and its meaning lies partly in its patterns of repetition, by which stories within stories mirror and comment on one another [[ramanujan1991]]. Its many regional, folk and performance versions are part of the epic's life, not deviations from it.",
+    "Wendy Doniger's The Hindus: An Alternative History places the epic in the social history of ancient India, highlighting its treatment of violence, women, animals and caste, and its many voices [[doniger2009]]."
+   ],
+   "cite": [
+    "ramanujan1991",
+    "doniger2009"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Dutt, Book I, sect. VII (MBh 1)",
+   "quote": "Karna silent heard this mandate but his birth could not proclaim,\nLike a raindrop-pelted lotus bent his humble head in shame!",
+   "who": "The narrator",
+   "explanation": "Asked for his lineage at the tournament, Karna, the unknown son of the Sun and Kunti, cannot answer. The simile of the lotus pelted by rain captures the humiliation that will shape his loyalty to Duryodhana and his hatred of Arjuna."
+  },
+  {
+   "ref": "Dutt, Book IV, sect. I (MBh 2.60)",
+   "quote": "If my lord, himself a bondsman, then hath staked his queen and wife,\nFalse the stake, for owns a bondsman neither wealth nor other's life,",
+   "who": "Draupadi",
+   "explanation": "Draupadi's legal argument after Yudhishthira has lost her at dice. If he had lost himself first, he had no right to stake her. The question is never answered by the elders and lies at the moral centre of the epic."
+  },
+  {
+   "ref": "Dutt, Book IV, sect. II (MBh 2)",
+   "quote": "Silent all? and will no chieftain rise to save a woman's life,\nNot a hand or voice is lifted to defend a virtuous wife?",
+   "who": "Draupadi",
+   "explanation": "Draupadi's appeal to the assembled warriors shames the whole Kuru court. The silence of Bhishma and Drona, bound by their loyalty to the throne, foreshadows their position in the war."
+  },
+  {
+   "ref": "Dutt, Book V, sect. V (MBh 3.281)",
+   "quote": "For a woman's troth abideth longer than the fleeting breath,\nAnd a woman's love abideth higher than the doom of Death!",
+   "who": "Yama",
+   "explanation": "The god of death concedes to Savitri and restores her husband. Told to console Yudhishthira in exile, the tale offers a model of a woman's devotion and wisdom overcoming fate."
+  },
+  {
+   "ref": "Dutt, Book VII, sect. X (MBh 5)",
+   "quote": "Town nor village, mart nor hamlet, help us righteous gods in heaven,\nSpot that needle's point can cover not unto them be given!",
+   "who": "Duryodhana",
+   "explanation": "Duryodhana's refusal to grant the Pandavas any land at all, even after Krishna's plea for peace, makes war inevitable. His intransigence is set against the Pandavas' modest request."
+  },
+  {
+   "ref": "Dutt, Book VIII, sect. VIII (MBh 6)",
+   "quote": "Woe unto Hastina's empire built upon our children's grave!",
+   "who": "Arjuna",
+   "explanation": "Arjuna's grief at the death of his son Iravat. The line expresses the epic's sense that the kingdom being fought for is not worth its price, a doubt that will return after the war."
+  },
+  {
+   "ref": "Dutt, Book VIII, sect. X (MBh 6)",
+   "quote": "Bhishma thought of word he plighted and of oath that he had sworn,\nDropped his arms before the warrior who was but a female born!",
+   "who": "The narrator",
+   "explanation": "Bhishma falls because he keeps his vow not to fight one born a woman, and the Pandavas exploit his integrity. The scene shows how the war's victories depend on turning the enemy's virtues against him."
+  },
+  {
+   "ref": "Dutt, Book X, sect. II (MBh 8)",
+   "quote": "Room is none for Arjun's glory and for archer Karna's fame,\nOne must sink and one must sparkle with a brighter, richer flame!",
+   "who": "Karna",
+   "explanation": "On the morning of his last battle Karna defines his life by his rivalry with Arjuna, unaware or heedless that it is a rivalry with his brother. His heroic pride makes the duel the climax of the war."
+  },
+  {
+   "ref": "Dutt, Book XI, sect. III (MBh 11)",
+   "quote": "'Son!' I said to dear Duryodhan, 'Heaven avert a cruel fate,\nYato dharma stato jayah! Triumph doth on Virtue wait!'",
+   "who": "Gandhari",
+   "explanation": "Gandhari remembers the blessing she gave her son: where there is dharma, there is victory. Spoken over his body, the maxim is both a judgement on Duryodhana and an ironic question about the Pandavas' victory."
+  },
+  {
+   "ref": "Dutt, Conclusion (MBh 18)",
+   "quote": "These and other mighty warriors, in the earthly battle slain,\nBy their valour and their virtue walk the bright ethereal plain!",
+   "who": "Indra (unnamed in Dutt)",
+   "explanation": "The epic's final vision reunites the dead of both sides in heaven. It consoles, but it also raises the question of what the war's moral distinctions finally mean."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does the Mahabharata present its story through layers of narrators (Vyasa, Vaishampayana, Ugrashravas)? What does the frame add?",
+   "hint": "Think about the epic as a story told to a descendant of the heroes, and about how distance from the events invites reflection and judgement."
+  },
+  {
+   "q": "What is Draupadi's question in the dicing hall, and why does no one answer it?",
+   "hint": "Consider the legal problem of whether a man who has lost himself can stake his wife, Bhishma's remark that dharma is subtle, and the silence of the elders."
+  },
+  {
+   "q": "Is Karna a villain, a tragic hero or both?",
+   "hint": "Weigh his insults to Draupadi and his role at the dice game against his loyalty, generosity and the injustice of his birth. Look at Books I, IV, X and XI."
+  },
+  {
+   "q": "How does the epic judge the stratagems by which the Pandavas win the war?",
+   "hint": "Compare the falls of Bhishma, Drona, Karna and Duryodhana, the protests of the victims and Krishna's justifications."
+  },
+  {
+   "q": "What role does Krishna play in the story, and how can his divinity be reconciled with his tricks?",
+   "hint": "Consider Narada's vision in Book III, the peace embassy in Book VII, and his advice in the battle books. How does the Gita change the picture?"
+  },
+  {
+   "q": "Dutt omits the Bhagavad Gita. How does its absence change the meaning of the war books?",
+   "hint": "Think about Arjuna's reluctance to fight and what Krishna's teaching on action without attachment adds to the story of Bhishma's and Drona's deaths."
+  },
+  {
+   "q": "Why is the tale of Savitri told to the Pandavas in exile? How does it relate to Draupadi?",
+   "hint": "Compare the two women's situations, their speeches and the powers they confront."
+  },
+  {
+   "q": "Compare the laments of the women in Book XI with the war books. What does the epic gain by ending the battle with grief?",
+   "hint": "Consider Gandhari's speeches, Kunti's revelation about Karna and Yudhishthira's reaction."
+  },
+  {
+   "q": "How does the poem treat the relation between birth and merit?",
+   "hint": "Look at Karna, Drona (a brahmin warrior), Vidura (son of a servant woman) and the Pandavas' brahmin disguise at the bridal contest."
+  },
+  {
+   "q": "Does the ending in heaven resolve or dissolve the moral conflicts of the epic?",
+   "hint": "Think about the presence of Duryodhana and Karna in heaven, Yudhishthira's tests and the idea that the heroes were gods playing human roles."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "biardeau2002",
+   "text": "Biardeau, Madeleine. Le Mahābhārata: un récit fondateur du brahmanisme et son interprétation. 2 vols. Paris: Seuil, 2002."
+  },
+  {
+   "id": "brockington1998",
+   "text": "Brockington, John. The Sanskrit Epics. Handbuch der Orientalistik 2.12. Leiden: Brill, 1998."
+  },
+  {
+   "id": "brodbeck2007",
+   "text": "Brodbeck, Simon, and Brian Black, eds. Gender and Narrative in the Mahābhārata. London: Routledge, 2007."
+  },
+  {
+   "id": "das2009",
+   "text": "Das, Gurcharan. The Difficulty of Being Good: On the Subtle Art of Dharma. New Delhi: Allen Lane, 2009."
+  },
+  {
+   "id": "davis2015",
+   "text": "Davis, Richard H. The Bhagavad Gita: A Biography. Princeton: Princeton University Press, 2015."
+  },
+  {
+   "id": "doniger2009",
+   "text": "Doniger, Wendy. The Hindus: An Alternative History. New York: Penguin Press, 2009."
+  },
+  {
+   "id": "dumezil1968",
+   "text": "Dumézil, Georges. Mythe et épopée I: L'idéologie des trois fonctions dans les épopées des peuples indo-européens. Paris: Gallimard, 1968."
+  },
+  {
+   "id": "dutt1899",
+   "text": "Dutt, Romesh Chunder, trans. Maha-bharata: The Epic of Ancient India Condensed into English Verse. London: J. M. Dent, 1899."
+  },
+  {
+   "id": "edgerton1944",
+   "text": "Edgerton, Franklin, trans. The Bhagavad Gītā. 2 vols. Harvard Oriental Series 38–39. Cambridge, MA: Harvard University Press, 1944."
+  },
+  {
+   "id": "fitzgerald2004",
+   "text": "Fitzgerald, James L., trans. and ed. The Mahābhārata. Vol. 7, Book 11, The Book of the Women; Book 12, The Book of Peace, Part One. Chicago: University of Chicago Press, 2004."
+  },
+  {
+   "id": "ganguli1883",
+   "text": "Ganguli, Kisari Mohan, trans. The Mahabharata of Krishna-Dwaipayana Vyasa. Published by Pratap Chandra Roy. Calcutta: Bharata Press, 1883–96."
+  },
+  {
+   "id": "hiltebeitel1976",
+   "text": "Hiltebeitel, Alf. The Ritual of Battle: Krishna in the Mahābhārata. Ithaca: Cornell University Press, 1976."
+  },
+  {
+   "id": "hiltebeitel1988",
+   "text": "Hiltebeitel, Alf. The Cult of Draupadī. Vol. 1, Mythologies: From Gingee to Kurukṣetra. Chicago: University of Chicago Press, 1988."
+  },
+  {
+   "id": "hiltebeitel2001",
+   "text": "Hiltebeitel, Alf. Rethinking the Mahābhārata: A Reader's Guide to the Education of the Dharma King. Chicago: University of Chicago Press, 2001."
+  },
+  {
+   "id": "hopkins1901",
+   "text": "Hopkins, E. Washburn. The Great Epic of India: Its Character and Origin. New York: Charles Scribner's Sons, 1901."
+  },
+  {
+   "id": "karve1969",
+   "text": "Karve, Irawati. Yuganta: The End of an Epoch. Poona: Deshmukh Prakashan, 1969 (Marathi original, 1967)."
+  },
+  {
+   "id": "malinar2007",
+   "text": "Malinar, Angelika. The Bhagavadgītā: Doctrines and Contexts. Cambridge: Cambridge University Press, 2007."
+  },
+  {
+   "id": "matilal1989",
+   "text": "Matilal, Bimal Krishna, ed. Moral Dilemmas in the Mahābhārata. Shimla: Indian Institute of Advanced Study, in association with Motilal Banarsidass, Delhi, 1989."
+  },
+  {
+   "id": "mcgrath2004",
+   "text": "McGrath, Kevin. The Sanskrit Hero: Karṇa in Epic Mahābhārata. Leiden: Brill, 2004."
+  },
+  {
+   "id": "ramanujan1991",
+   "text": "Ramanujan, A. K. 'Repetition in the Mahābhārata.' In Essays on the Mahābhārata, edited by Arvind Sharma, 419–43. Leiden: E. J. Brill, 1991."
+  },
+  {
+   "id": "sharma1991",
+   "text": "Sharma, Arvind, ed. Essays on the Mahābhārata. Leiden: E. J. Brill, 1991."
+  },
+  {
+   "id": "smith2009",
+   "text": "Smith, John D., trans. The Mahābhārata: An Abridged Translation. London: Penguin Books, 2009."
+  },
+  {
+   "id": "sukthankar1933",
+   "text": "Sukthankar, V. S., S. K. Belvalkar, P. L. Vaidya, et al., eds. The Mahābhārata, for the First Time Critically Edited. 19 vols. Poona: Bhandarkar Oriental Research Institute, 1933–66."
+  },
+  {
+   "id": "sukthankar1957",
+   "text": "Sukthankar, V. S. On the Meaning of the Mahābhārata. Bombay: Asiatic Society of Bombay, 1957."
+  },
+  {
+   "id": "vanbuitenen1973",
+   "text": "van Buitenen, J. A. B., trans. and ed. The Mahābhārata. Vols. 1–3: The Book of the Beginning; The Book of the Assembly Hall; The Book of the Forest; The Book of Virāṭa; The Book of the Effort. Chicago: University of Chicago Press, 1973–78."
+  }
+ ]
+}
