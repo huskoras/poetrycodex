@@ -5567,7 +5567,7 @@
   // overview, book-by-book summary and analysis, characters, themes, the critical debates,
   // key passages (quoted from the recommended translation), questions and a bibliography.
   // Paragraphs cite with [[bibId]], drawn as (Author year) linked to the bibliography.
-  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost", "beowulf"]);
+  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost", "beowulf", "divine-comedy", "gilgamesh"]);
   const GUIDE_FILES = {};
   const GUIDE_PARTS = [["overview", "Overview"], ["books", "Book by book"], ["characters", "Characters"],
     ["themes", "Themes & symbols"], ["debates", "Critical debates"], ["quotes", "Key passages"],
@@ -5579,7 +5579,7 @@
   }
   const ROMAN = { I: 1, V: 5, X: 10, L: 50, C: 100 };
   function bookNumber(title) {
-    const m = String(title || "").match(/\b(?:Book|Canto)\s+([IVXLC]+|\d+)\b/i);
+    const m = String(title || "").match(/\b(?:Book|Canto|Tablet)\s+([IVXLC]+|\d+)\b/i);
     if (!m) return 0;
     if (/^\d+$/.test(m[1])) return +m[1];
     let n = 0; const r = m[1].toUpperCase();
@@ -5666,14 +5666,14 @@
       if (!d || location.hash !== here) return;
       let n = bookNumber(s && s.title), U = "Book";
       // a guide in parts (Beowulf): the part that holds this section, by the parts' first sections
-      if (d.unit && w.slug === d.quoteEdition) {
+      if (d.unit && (w.slug === d.quoteEdition || d.sameSections)) {
         U = d.unit; n = 0;
         d.books.forEach((b) => { if (b.section != null && b.section <= i) n = b.n; });
       } else if (d.unit) n = 0;
       const head = app.querySelector(".detail > .detail-author");
       if (!head || app.querySelector(".gd-box")) return;
       head.insertAdjacentHTML("afterend", `<a class="gd-box" href="#/guide/${esc(group)}/${n ? "books/" + n : "overview"}">
-        <span class="gd-box-k">Study guide</span><span class="gd-box-t">${n ? `${esc(U)} ${n}: summary and analysis` : "Summary, themes and critical debates"}</span><span aria-hidden="true">→</span></a>`);
+        <span class="gd-box-k">Study guide</span><span class="gd-box-t">${n ? (d.unit && d.books[n - 1] ? `${esc(d.books[n - 1].title)}: summary and analysis` : `${esc(U)} ${n}: summary and analysis`) : "Summary, themes and critical debates"}</span><span aria-hidden="true">→</span></a>`);
       addWhoBox(group, ".detail > .gd-box", "afterend");
     });
   }

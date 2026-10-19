@@ -1,0 +1,834 @@
+{
+ "work": "gilgamesh",
+ "title": "The Epic of Gilgamesh",
+ "author": "Anonymous (Babylonian); Sîn-lēqi-unninni",
+ "quoteEdition": "gilgamish-thompson",
+ "unit": "Tablet",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Composed",
+   "value": "Sumerian poems about Gilgamesh (Bilgames) from about 2100 BC; an Akkadian epic by about 1800 BC (the Old Babylonian version); the Standard Babylonian version, attributed to Sîn-lēqi-unninni, probably in the late second millennium BC"
+  },
+  {
+   "label": "Genre",
+   "value": "Narrative poem, the earliest long heroic and wisdom narrative to survive from Mesopotamia"
+  },
+  {
+   "label": "Language",
+   "value": "Akkadian (Babylonian dialect), written in cuneiform on clay tablets; the source poems are in Sumerian"
+  },
+  {
+   "label": "Versions",
+   "value": "Five separate Sumerian poems; the Old Babylonian epic, 'Surpassing all other kings', known from scattered tablets; the Standard Babylonian epic in eleven tablets, with a twelfth appended"
+  },
+  {
+   "label": "Principal manuscripts",
+   "value": "Seventh-century BC tablets from the libraries of Ashurbanipal at Nineveh, now in the British Museum, supplemented by tablets from Assur, Uruk, Babylon and elsewhere"
+  },
+  {
+   "label": "Opening words",
+   "value": "Standard Babylonian incipit ša naqba īmuru, 'He who saw the Deep'; older translations, Thompson's among them, read 'He who saw everything'"
+  },
+  {
+   "label": "Rediscovery",
+   "value": "George Smith identified the flood narrative of Tablet XI and announced it to the Society of Biblical Archaeology in London on 3 December 1872"
+  },
+  {
+   "label": "Setting",
+   "value": "Uruk (Thompson's 'Erech') in southern Mesopotamia, the Cedar Forest in the west, and the edges of the world beyond the Mountains of Mashu and the Waters of Death"
+  },
+  {
+   "label": "Translation quoted",
+   "value": "R. Campbell Thompson's English hexameters (1928), which spell the hero 'Gilgamish' and the flood hero 'Uta-Napishtim'; Thompson's brackets and dots mark restorations and gaps"
+  }
+ ],
+ "context": [
+  "Gilgamesh was probably a historical king of Uruk in the first half of the third millennium BC. The Sumerian King List gives him a reign of 126 years and makes him the son of Lugalbanda and the goddess Ninsun, and later tradition credited him with building the city's great wall. By the end of the third millennium he was the subject of Sumerian poems composed, or at least written down, under the kings of the Third Dynasty of Ur, who claimed him as a kinsman. Five of these poems survive: on the expedition against Huwawa, the Bull of Heaven, the war with Aga of Kish, Enkidu's descent to the Netherworld and the death of Gilgamesh [[kramer1981]] [[george2003]].",
+  "The poems were episodes, not an epic. Sometime in the Old Babylonian period, around 1800 BC, a poet writing in Akkadian combined several of them into a continuous narrative with a new theme, the hero's search for life after the death of his friend. This version, called by its first words 'Surpassing all other kings', is known only from scattered tablets, among them the Pennsylvania and Yale tablets and a tablet said to come from Sippar that preserves the alewife's advice to enjoy life. Jeffrey Tigay's study showed how the epic was built from these materials and then revised over a thousand years [[tigay1982]].",
+  "The version most readers know is the Standard Babylonian epic, which a later Assyrian catalogue attributes to Sîn-lēqi-unninni, an exorcist-priest of Uruk, probably working in the late second millennium BC [[lambert1962]]. He gave the poem a new prologue, 'He who saw the Deep', which frames the story as the wisdom of a king who learned the secrets of the time before the Flood and wrote his travails on stone. The text is divided into eleven tablets of about 300 lines each, to which a twelfth, a fairly literal Akkadian translation of the second half of the Sumerian poem about Enkidu and the Netherworld, was added. The best-preserved copies come from the libraries of Ashurbanipal (668–c. 631 BC) at Nineveh, destroyed in 612 BC [[george2003]] [[george1999]].",
+  "The epic was lost with the cuneiform culture that preserved it and was rediscovered only in the nineteenth century. Tablets excavated at Nineveh by Austen Henry Layard and Hormuzd Rassam came to the British Museum, where George Smith, in 1872, recognised among them a Babylonian account of the Flood strikingly like that in Genesis. His announcement caused a sensation, and the Daily Telegraph funded his expedition to Nineveh to look for missing fragments [[smith1873]] [[smith1876]] [[damrosch2007]]. New pieces continue to appear: a tablet acquired by the Sulaymaniyah Museum in Iraqi Kurdistan and published in 2014 added about twenty lines to Tablet V [[alrawi2014]].",
+  "The quotations in this guide come from R. Campbell Thompson's verse translation of 1928, which renders the Akkadian into English hexameters and spells the names 'Gilgamish', 'Erech', 'Uta-Napishtim' and 'Ur-Shanabi'; this guide uses the modern forms Gilgamesh, Uruk, Utnapishtim and Urshanabi. Thompson's tablet divisions reflect what was known in 1928, and he fills gaps in the Standard Babylonian text with Old Babylonian fragments, so his tablets do not always correspond line for line to modern editions such as George's [[thompson1928]] [[thompson1930]] [[george2003]]. For modern translations see George, Dalley and Foster [[george1999]] [[dalley1989]] [[foster2001]]."
+ ],
+ "plot": [
+  "Gilgamesh, king of Uruk, two-thirds god and one-third man, oppresses his city: he exhausts the young men and claims the young women. The people cry to the gods, and the mother goddess Aruru makes from clay a match for him, the wild man Enkidu, who lives among the animals. A trapper brings the temple woman Shamhat to the waterhole; after seven days with her Enkidu is shunned by his herds but gains understanding, and she leads him to the shepherds and then to Uruk. He blocks Gilgamesh's way to a wedding house; they wrestle, and from their struggle comes a friendship.",
+  "To win lasting fame Gilgamesh resolves to kill Humbaba, the guardian whom Enlil set over the Cedar Forest. Despite the warnings of Enkidu and the elders, and with the blessing of his mother Ninsun and the help of Shamash, the friends make the journey, defeat Humbaba with the aid of the Sun-god's winds and kill him as he pleads for his life. On their return the goddess Ishtar proposes marriage to Gilgamesh; he refuses her with a catalogue of her ruined lovers. She has her father Anu send the Bull of Heaven against Uruk, and the friends kill it. The gods decree that Enkidu must die, and after a sickness of twelve days he does.",
+  "Gilgamesh mourns him for seven days and nights, until a worm falls from his nose, then gives him a royal funeral. Terrified of his own death, he leaves the city dressed in skins to find Utnapishtim, the survivor of the Flood, to whom the gods granted eternal life. He passes the scorpion-people at the Mountains of Mashu, walks through the darkness of the sun's path, meets the alewife Siduri at the sea's edge, and crosses the Waters of Death with the boatman Urshanabi.",
+  "Utnapishtim tells him how Ea warned him of the Flood, how he built a boat and how the gods, regretting the destruction, made him immortal. He challenges Gilgamesh to stay awake for a week; Gilgamesh falls asleep at once. As a parting gift Utnapishtim reveals a plant that restores youth, which Gilgamesh retrieves from the bottom of the Apsû, only to lose it to a snake while he bathes. He returns to Uruk and shows Urshanabi the city's walls. A twelfth tablet, loosely attached, tells how Enkidu went down to the Netherworld to fetch objects Gilgamesh had lost there and was held fast, and how his ghost rose to describe the conditions of the dead."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Making of Enkidu",
+   "section": 0,
+   "summary": [
+    "The prologue invites the reader to admire Gilgamesh, the king who saw the Deep, learned what was hidden and brought back a tale from before the Flood, and to climb the walls of Uruk and read the story on a tablet of lapis lazuli kept in a box in the wall's foundations. The narrative then describes Gilgamesh as tall, beautiful and unmatched, two-thirds divine, but a tyrant who gives the young men of the city no rest and leaves no girl to her mother. The people complain, and the gods tell the mother goddess Aruru to create his equal. She pinches off clay and throws it into the wilderness, and Enkidu is born, hairy and naked, grazing with the gazelles.",
+    "A trapper finds his traps filled in and his pits destroyed. On his father's advice he goes to Gilgamesh, who sends him back with Shamhat, a woman of the temple of Ishtar. At the waterhole she reveals herself to Enkidu, and they make love for six days and seven nights. When he returns to his herds they flee; he is weaker, but he has gained understanding. Shamhat offers to lead him to Uruk, where Gilgamesh has already dreamed of his coming. In two dreams a rock from heaven and an axe fall into the city; Gilgamesh embraces them 'like a woman', and his mother Ninsun explains that they foretell a mighty friend."
+   ],
+   "analysis": [
+    "The prologue added by Sîn-lēqi-unninni turns a heroic story into a book of wisdom. Gilgamesh is praised not first for strength but for what he saw and knew, and for what he wrote down; the reader is told to take the tablet from its box and read. The poem therefore begins and ends with the walls of Uruk: at the end of Tablet XI Gilgamesh repeats the invitation to inspect them, and what is offered at the start as a tourist's marvel has become, by then, the only kind of permanence a mortal can achieve. Thompson's rendering of the first line, 'He who (the heart of) all matters hath proven', reflects the older reading of the incipit as 'He who saw everything' [[george2003]] [[thompson1930]].",
+    "Enkidu's creation and initiation set out the epic's most influential contrast, between the wild and the civilised. Enkidu is made like the first human beings in other Mesopotamian myths, from clay, and becomes human not by birth but by sex, food, clothes and speech. The scene has invited comparison with Adam and Eve, but the poem's valuation is different: what Enkidu loses (his speed, his kinship with the animals) is real, yet what he gains is understanding and a friend. Gilgamesh's dreams, in which the new arrival is held 'like a woman', introduce the question of the nature of the friendship that the rest of the poem will develop [[walls2001]] [[tigay1982]]."
+   ],
+   "key": [
+    {
+     "ref": "Tablet I",
+     "quote": "He who (the heart of) all matters hath proven let him [teach] the nation,\n[He who all] knowledge possesseth, therein shall he [school] all the people,\n[He shall his wisdom impart (?)] and (so) shall they ]share it] together.",
+     "note": "Thompson's version of the prologue. The king is praised first as one who knows and teaches; the epic presents itself as instruction handed down to the whole people. Note the square brackets, which mark Thompson's restorations of broken text."
+    },
+    {
+     "ref": "Tablet I",
+     "quote": "Enkidu losing his innocence—so, when the cattle fled from him,\nFailed his knees, and he slack’d in his running, (not) as aforetime:\nNatheless he (thus) hath attain’d his full growth and hath broaden’d (his) wisdom.",
+     "note": "The cost and gain of Enkidu's initiation in a single movement: he loses the innocence that bound him to the animals and his speed fails, yet he 'hath broaden'd (his) wisdom'."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Wrestling Match",
+   "section": 1,
+   "summary": [
+    "Shamhat divides her clothing with Enkidu and leads him by the hand to a camp of shepherds. He does not know how to eat bread or drink beer; she tells him that this is the custom of the land, and after seven jugs of beer he is merry, washes, anoints himself and becomes a man. He guards the shepherds' flocks against lions and wolves. A passing man tells him that in Uruk Gilgamesh takes the bride on her wedding night before her husband, and Enkidu, angered, goes to the city. The crowd sees that he is Gilgamesh's equal in build.",
+    "When Gilgamesh comes to the wedding house, Enkidu bars the door with his foot. They seize each other and wrestle like bulls, shattering the doorpost and shaking the wall, until Gilgamesh, with one knee on the ground, turns away, and Enkidu praises him as one whom his mother made unique and Enlil destined for kingship. In the Standard Babylonian version they then become friends. Gilgamesh proposes an expedition to the Cedar Forest to kill its guardian Humbaba; Enkidu, who knew the forest when he roamed with the animals, and the elders of Uruk both warn him of its danger."
+   ],
+   "analysis": [
+    "Bread and beer are the poem's emblems of civilisation, and they are offered by a woman. In the Old Babylonian version, which Thompson follows here, Shamhat's words to Enkidu make eating bread the condition of life itself. The scene completes his humanisation in social terms: he learns not only to eat but to protect a human community from the very animals he once ran with. When he defends the shepherds against lions, he has changed sides.",
+    "The wrestling match resolves the problem posed in Tablet I. Gilgamesh's excess of energy, which oppressed the city, is absorbed by an equal, and his conflict with his own people is replaced by a friendship. The fight takes place at a threshold, the door of the wedding house, and the custom that provokes it (the king's right to the bride) shows the abuse of kingship that Enkidu checks. Tigay notes that the wrestling and the friendship are much more fully developed in the Akkadian epic than in the Sumerian poems, where Enkidu is Gilgamesh's servant rather than his equal [[tigay1982]] [[george2003]]."
+   ],
+   "key": [
+    {
+     "ref": "Tablet II",
+     "quote": "\"Enkidu, taste of the bread, (for) of life ’tis; (forsooth), the essential,\nDrink thou, (too), of the mead, ’tis the wonted use of the country.\"",
+     "note": "Shamhat's instruction makes bread 'of life' and beer the custom of the land. Food here defines what it is to be human."
+    },
+    {
+     "ref": "Tablet II",
+     "quote": "Would not concede: they grappled and snorted(?) like bulls, (and) the threshold\nShatter’d: the (very) wall quiver’d as Gilgamish, Enkidu grappled,",
+     "note": "The wrestling match at the door of the wedding house. The simile of bulls recalls the aurochs to which Gilgamesh is compared in the prologue; the shaking wall suggests that the conflict touches the city itself."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Preparations for the Forest",
+   "section": 2,
+   "summary": [
+    "Gilgamesh insists on the expedition. When Enkidu describes Humbaba, whose roar is the Deluge, whose mouth is fire and whose breath is death, Gilgamesh replies that only the gods live for ever, that the days of men are numbered, and that if he falls he will at least have made a name. He has huge axes and swords cast for the two of them. The elders of Uruk counsel caution, advise him to let Enkidu, who knows the road, go in front, and bless him.",
+    "The friends go to the palace of Ninsun, Gilgamesh's divine mother. She bathes, dresses in her finery, climbs to the roof and makes offerings to Shamash, the Sun-god, asking why he gave her son such a restless heart and praying for his protection on the road. She then adopts Enkidu as a son, or at least entrusts Gilgamesh to his care. Gilgamesh gives instructions for the government of the city in his absence, and the two set out."
+   ],
+   "analysis": [
+    "Gilgamesh's speech on mortality states the heroic code at its starkest. Because life is short and its works are 'but wind', the only answer to death is fame. The rest of the poem will test this answer and find it insufficient: after Enkidu's death Gilgamesh no longer wants a name but life itself. The repeated warnings of Enkidu and the elders, who say that he does not know what he is undertaking, give the expedition the shape of youthful overreaching, though the poem never says that killing Humbaba is wrong in itself.",
+    "Ninsun's prayer introduces the divine framework of the adventure. Shamash is the god of justice and the patron of the expedition, and it is Shamash who 'touched' Gilgamesh's heart with restlessness. This is a characteristic Mesopotamian view of motivation, in which a god's impulse and a man's ambition are the same thing seen from two sides. Thompson's Tablet III contains material that modern editions divide between Tablets II and III, and he sets Ninsun's prayer in shorter lines to mark it off from the hexameters [[thompson1928]] [[george2003]]."
+   ],
+   "key": [
+    {
+     "ref": "Tablet III",
+     "quote": "\"Who, O my friend, is unconquer’d by [death]? A divinity, certes,\nLiveth for aye in the daylight, but mortals—their days are (all) number’d,\nAll that they do is (but) wind—But to thee, now death thou art dreading,",
+     "note": "The heroic answer to mortality: the gods live for ever 'in the daylight', men's days are numbered and their deeds are wind. Compare the very different answer Gilgamesh receives from Siduri in Tablet X."
+    },
+    {
+     "ref": "Tablet III",
+     "quote": "(I, forsooth), if I should fall, my name will have stablish’d (for ever).\nGilgamish ’twas, who fought with Humbaba, the Fierce!",
+     "note": "Fame as compensation for death. The line imagines the hero's name surviving him in the mouths of others, which is exactly what the written epic provides."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "The Journey and the Dreams",
+   "section": 3,
+   "summary": [
+    "The friends march with superhuman speed, covering in three days a journey of six weeks. Every three days they halt; Gilgamesh climbs a mountain, pours out flour and asks for a dream, and Enkidu builds him a shelter and lies down beside him. Five times Gilgamesh wakes from a frightening dream, of a falling mountain, a wild bull, a storm of fire and death, and each time Enkidu interprets it as a sign of victory over Humbaba.",
+    "As they approach the forest they hear Humbaba's roar. Gilgamesh's resolve and Enkidu's falter by turns, and each strengthens the other: two together, they say, can do what one cannot. They reach the edge of the forest. In Thompson's arrangement this tablet includes Enkidu's address to a great door of cedar and an account of his twelve days of sickness, passages that modern editions place in Tablet VII; Thompson's Tablet V contains the dreams of the journey."
+   ],
+   "analysis": [
+    "The dream sequence is highly patterned. The same ritual is repeated each time, and in each case Enkidu turns an apparently terrifying dream into a promise of success. The repetition builds suspense and shows the friendship at work: the man from the wild interprets for the king. The dreams are also ambiguous. Images of falling mountains and of fire and death might foretell Humbaba's defeat, but they also anticipate the doom that the expedition brings on Enkidu, and readers have suspected that his interpretations are too optimistic.",
+    "Mutual encouragement is the tablet's other theme. Courage here is not a fixed quality of one hero but something passed back and forth between companions. This helps explain why the loss of Enkidu later breaks Gilgamesh entirely. The tablet also shows a notable difference between Thompson's 1928 arrangement and George's edition, a reminder that the epic is still being reconstructed from fragments [[george2003]] [[george1999]]."
+   ],
+   "key": [
+    {
+     "ref": "Tablet IV",
+     "quote": "Pass [from thy hands]! [Be brave(?)] and resist! O my comrade, together\nWe will go down—let the combat [in no wise diminish(?)] thy courage!\nO forget death, and be fearful(?) of nothing(?) . . (for he who is) [valiant(?)],",
+     "note": "Gilgamesh encourages Enkidu at the edge of the forest. The plea to 'forget death' is ironic in a poem in which death becomes the only subject."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "The Death of Humbaba",
+   "section": 4,
+   "summary": [
+    "The friends stand at the edge of the Cedar Forest, gazing at the height of the trees and the well-trodden path where Humbaba walks, and at the Cedar Mountain, dwelling of the gods. Humbaba confronts them and taunts Enkidu as an orphan of the wild. Battle is joined; the earth splits and the sky darkens. Shamash sends thirteen winds (eight in Thompson's text) that pin Humbaba so that he can move neither forward nor back.",
+    "Humbaba begs for his life, offering to be Gilgamesh's servant and to cut timber for him. Enkidu urges Gilgamesh to kill him before the gods learn of it. Humbaba curses them both, and they cut off his head. They fell the cedars, and Enkidu makes from the tallest a great door for the temple of Enlil at Nippur. They return down the Euphrates on a raft, Gilgamesh carrying Humbaba's head."
+   ],
+   "analysis": [
+    "The killing of Humbaba is morally ambiguous. Humbaba is a monster, but he is also the appointed guardian of a sacred forest, placed there by Enlil. The forest itself is described with wonder: a tablet published in 2014 adds lines in which it is noisy with birds and monkeys, so that Humbaba appears less a mere ogre than the ruler of a living wilderness, and the felling of the cedars as a kind of devastation [[alrawi2014]]. Enkidu's insistence that Humbaba must die, and Humbaba's curse that Enkidu will not grow old, set up the gods' later decision.",
+    "Behind the episode lies the Mesopotamian need for timber, which the lowland cities had to fetch from the mountains of the west, and the Sumerian poem 'Gilgamesh and Huwawa', in which the hero tricks Huwawa out of his protective auras. The Akkadian poet has transformed a raid for timber into a quest for fame and a turning point in the hero's fate. The door made for Enlil is meant as an offering; in Tablet VII Enkidu, dying, curses it [[george2003]] [[tigay1982]]."
+   ],
+   "key": [
+    {
+     "ref": "Tablet V",
+     "quote": "Stood they and stared at the Forest, they gazed at the height of the Cedars,\nScanning the avenue into the Forest: (and there) where Humbaba\nStalk’d, was a path, (and) straight were his tracks, and good was the passage.",
+     "note": "The friends' first sight of the forest. The poem pauses for wonder before violence; the clear path shows that the forest is Humbaba's domain."
+    },
+    {
+     "ref": "Tablet V",
+     "quote": "Wherefore to Gilgamish spake (thus) Humbaba: \"O Gilgamish, (pr’y thee),\nStay, (now, thy hand): be [thou] now my [master], and I'll be thy henchman:",
+     "note": "Humbaba's plea for mercy. His offer to become Gilgamesh's servant raises the question whether killing him is heroism or excess."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Ishtar and the Bull of Heaven",
+   "section": 5,
+   "summary": [
+    "Back in Uruk, Gilgamesh washes, puts on clean clothes and his crown. The goddess Ishtar, seeing his beauty, proposes marriage, offering a chariot of lapis lazuli and gold, the homage of kings and fertile flocks. Gilgamesh refuses with a string of insults: she is a door that lets in the wind, a shoe that pinches, a waterskin that soaks its bearer. He recounts the fate of her lovers: Dumuzi (Tammuz), for whom she decreed yearly weeping, the bird whose wing she broke, the lion, the stallion, the shepherd turned into a wolf, and her father's gardener Ishullanu, whom she transformed into a lowly creature (Thompson guesses a spider).",
+    "Ishtar, in tears, goes to her father Anu and mother Antum and demands the Bull of Heaven, threatening to break open the Netherworld and let the dead devour the living. Anu warns that the Bull will bring seven years of famine; she says she has stored grain. The Bull descends on Uruk, and its snorting opens pits that swallow hundreds of men. Enkidu seizes it by the horns and Gilgamesh kills it with his sword. When Ishtar curses Gilgamesh from the wall, Enkidu tears off the Bull's haunch and throws it at her. The friends celebrate, but that night Enkidu dreams."
+   ],
+   "analysis": [
+    "Gilgamesh's refusal of Ishtar is the epic's most daring scene, a mortal mocking a goddess. It has been read as an expression of the danger of the goddess's love, which destroys those it touches, and as a sign of Gilgamesh's growing hubris. Tzvi Abusch argued that Ishtar's proposal should be read in the context of ritual and the underworld: the gifts she offers resemble funerary goods, and marriage to her would make Gilgamesh a functionary in the Netherworld, so that his refusal is a refusal of death itself [[abusch1986]].",
+    "The Bull of Heaven episode completes the friends' offence against the gods. They have killed Humbaba, the guardian appointed by Enlil, and now Ishtar's Bull; Enkidu's insult with the haunch goes beyond what even Gilgamesh did. West compared the scene in which Ishtar complains to her parents with Iliad 5, where Aphrodite, wounded by Diomedes, goes weeping to her mother Dione and is gently mocked by Zeus [[west1997]]. The tablet ends with the celebration of the two heroes, at the very moment their fate is being decided."
+   ],
+   "key": [
+    {
+     "ref": "Tablet VI",
+     "quote": "\"Gilgamish, come, be a bridegroom, to me of the fruit (of thy body)\nGrant me largesse: (for) my husband shalt be and I'll be thy consort.",
+     "note": "Ishtar's proposal. The language is of marriage and gifts, but Gilgamesh hears in it a threat."
+    },
+    {
+     "ref": "Tablet VI",
+     "quote": "[Thou’rt but a ruin which giveth no shelter (?) to man] from the weather,\nThou’rt but a back door [not] giving resistance to blast or to windstorm,",
+     "note": "The beginning of Gilgamesh's catalogue of insults, a sequence of images of things that fail their owners: a ruin, a back door, later a leaking bottle and a sandal that trips."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "The Death of Enkidu",
+   "section": 6,
+   "summary": [
+    "Enkidu dreams that the gods have held a council: Anu, Enlil, Ea and Shamash debate which of the two friends must die for killing Humbaba and the Bull, and Enlil decides that it will be Enkidu. He falls sick. He curses the great cedar door he made for Enlil, then the trapper and Shamhat, who brought him out of the wilderness. Shamash reproaches him: it was Shamhat who gave him bread and beer, clothes and a friend, and Gilgamesh will honour him in death. Enkidu relents and blesses her.",
+    "In a second dream a terrifying figure with a lion's face and eagle's talons seizes him, turns his arms into wings and leads him to the house of darkness, the abode of Irkalla, where the dead sit clothed in feathers and eat dust and clay. He sees the kings and priests of old, Etana and Sumuqan, and Ereshkigal, queen of the Netherworld, with her scribe Belet-seri. After twelve days of sickness, lamenting that he has not died gloriously in battle, Enkidu dies."
+   ],
+   "analysis": [
+    "Enkidu's curses and blessings sum up his life in reverse. He wishes undone each step of his humanisation, only to be reminded by Shamash that civilisation also gave him friendship. The scene thus re-examines the contrast between the wild and the civilised from the point of view of a dying man. His blessing on Shamhat, which predicts that kings and princes will love her and that wealth will be heaped up for her, is one of the poem's most generous passages.",
+    "The vision of the Netherworld is the bleakest in Mesopotamian literature. There is no judgement and no reward, only dust and darkness shared by kings and commoners alike; Jacobsen saw the epic as a whole as an expression of a growing awareness of death as the defining human limit [[jacobsen1976]]. Enkidu's death fulfils the dreams of Tablets IV and V and is the turning point of the epic, from fame to mortality. In Thompson's text much of the curse of the door appears in his Tablet IV, but the Netherworld vision is here [[thompson1928]] [[george2003]]."
+   ],
+   "key": [
+    {
+     "ref": "Tablet VII",
+     "quote": "(Straightway) he call’d him: \"O Enkidu, why dost thou curse the hetaera?\nShe ’twas who made thee eat bread, for divinity proper: (aye), wine (too),",
+     "note": "Shamash rebukes Enkidu for cursing Shamhat. The gifts of civilisation, bread and wine, are 'for divinity proper' and 'for royalty proper'."
+    },
+    {
+     "ref": "Tablet VII",
+     "quote": "Unto the Dwelling from which he who entereth cometh forth never!\n(Aye), by the road on the passage whereof there can be no returning,\nUnto the Dwelling whose tenants are (ever) bereft of the daylight,\nWhere for their food is the dust, and the mud is their sustenance: bird-like",
+     "note": "The House of Dust. The repeated 'Dwelling' and the 'road ... whereof there can be no returning' became the standard description of the Mesopotamian underworld; the same lines occur in the poem known as Ishtar's Descent."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "The Mourning of Gilgamesh",
+   "section": 7,
+   "summary": [
+    "At dawn Gilgamesh laments Enkidu, calling on the mountains, the forests, the animals, the rivers and the people of Uruk to weep for him, and recalling their adventures together. He touches Enkidu's heart and finds it still. He covers his friend's face like a bride, circles him like an eagle, and paces like a lioness deprived of her cubs, tearing out his hair and stripping off his fine clothes.",
+    "He summons craftsmen to make a statue of Enkidu in gold and lapis lazuli. He lays out treasures from his storehouse, weapons, jewellery and vessels, and offers them to the gods of the Netherworld, each one named, so that they will welcome his friend. The end of the tablet is broken. Thompson's text of this tablet is particularly fragmentary."
+   ],
+   "analysis": [
+    "Gilgamesh's lament is the first great elegy in world literature. Its similes cast him as a woman, a bride's attendant, a lioness: the grief of the hero is expressed through female and maternal roles, which some critics connect with the dreams of Tablet I, where he holds the token of Enkidu 'like a woman'. The lament also recapitulates the friends' exploits, so that the epic itself becomes an act of memory [[walls2001]] [[ackerman2005]].",
+    "The funeral shows that kingship and religion offer ways of dealing with death, through monuments, offerings and correct rites. A statue preserves Enkidu's image and grave goods secure his place below. Yet none of these restores him, and the next tablet shows that for Gilgamesh they are not enough. The contrast between public mourning and private terror shapes the second half of the poem [[george2003]]."
+   ],
+   "key": [
+    {
+     "ref": "Tablet VIII",
+     "quote": "’Tis that I weep for my [comrade] Enkidu, bitterly crying\nLike to a wailing woman: my grip is [slack’d] on the curtleaxe",
+     "note": "Gilgamesh compares himself to a wailing woman. The professional mourner's role, conventionally female, becomes the king's."
+    },
+    {
+     "ref": "Tablet VIII",
+     "quote": "Then he veil’d (his) friend like a bride ..\nLifted his voice like a lion . . . . . . . .\n[Roar’d] like a lioness robb’d of [her] whelps. In front of his [comrade]",
+     "note": "The images of bride and lioness show grief overturning the hero's normal identity. Note Thompson's dots marking lost text."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Road of the Sun",
+   "section": 8,
+   "summary": [
+    "Gilgamesh roams the wilderness in fear of death, asking whether he too will die like Enkidu. He resolves to find Utnapishtim, the son of Ubar-Tutu, who survived the Flood and was given eternal life. At night in the mountain passes he kills lions. He comes to the twin peaks of Mashu, which guard the rising and setting of the sun, and to the scorpion-man and his wife who keep the gate. They recognise that two-thirds of him are divine and let him pass.",
+    "For twelve double-hours he walks in darkness along the road of the sun beneath the earth, until light returns and he finds himself in a garden of trees whose fruit is carnelian and whose leaves are lapis lazuli. In Thompson's arrangement this tablet also includes a passage from the Old Babylonian version in which Shamash asks him why he wanders, since he will not find the life he seeks, and Gilgamesh replies that he wants to see the light of the sun before he lies in the earth."
+   ],
+   "analysis": [
+    "The quest takes Gilgamesh off the map of the human world. The Mountains of Mashu, the scorpion-people and the road of the sun belong to the cosmic geography of Mesopotamian myth, the path the sun takes at night. Gilgamesh repeats the journey of Shamash, his divine patron, through the darkness, and emerges in a garden of jewels that is both paradise and a dead, mineral landscape, beautiful but without life.",
+    "Gilgamesh's dialogue with Shamash, drawn from the Old Babylonian tablet, introduces the refrain of the second half of the epic: 'the life which thou seekest thou shalt not find'. The hero's longing to see the light of the sun is the opposite of the dust and darkness that Enkidu foresaw. Tigay showed that Sîn-lēqi-unninni did not take over every Old Babylonian passage, so that readers of older translations such as Thompson's encounter a composite of versions [[tigay1982]]."
+   ],
+   "key": [
+    {
+     "ref": "Tablet IX",
+     "quote": "Over the desert: \"I, too—shall I not die like Enkidu also?\nSorrow hath enter’d my heart; I fear death as I range o’er the desert,",
+     "note": "Enkidu's death becomes Gilgamesh's own fear. The question 'shall I not die like Enkidu also?' drives the rest of the epic."
+    },
+    {
+     "ref": "Tablet IX",
+     "quote": "Lay my head in the bowels of earth, and throughout the years slumber\nEver and aye? Let mine eyes see the Sun and be sated with brightness,\n(Yea, for) the darkness is (banish’d) afar, if wide be the brightness.\nWhen will the man who is dead (ever) look on the light of the Sunshine?\"",
+     "note": "Gilgamesh's reply to Shamash, from the Old Babylonian version. Light and the sun are life; the earth's 'bowels' are the darkness of the dead."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Siduri and the Waters of Death",
+   "section": 9,
+   "summary": [
+    "At the shore of the sea lives Siduri, the alewife, who bars her door in fear at the sight of the wild, skin-clad stranger. Gilgamesh explains his grief and fear: Enkidu, with whom he did everything, has turned to clay, and he will not lie down like him for ever. In the Old Babylonian version, which Thompson follows, she tells him that the gods kept life for themselves and allotted death to men, and advises him to eat, dance, wash, care for the child holding his hand and make his wife happy. She directs him to Urshanabi, Utnapishtim's boatman.",
+    "Gilgamesh smashes the 'Stone Ones' who crewed Urshanabi's boat (Thompson reads 'sails'), and so must cut three hundred punting poles to cross the Waters of Death, using his clothing as a sail when they run out. Utnapishtim watches from the shore. Gilgamesh tells him his story and his sorrow. Utnapishtim replies with a meditation on mortality: nothing lasts, neither houses nor contracts nor floods, and the gods fix the day of death but do not reveal it."
+   ],
+   "analysis": [
+    "Siduri's advice is the most quoted passage of the epic and one of its great puzzles. It proposes an ethic of ordinary pleasures and human relationships as the answer to death, an answer often compared with Ecclesiastes 9:7–9. But it is preserved only in the Old Babylonian version; the Standard Babylonian Siduri says something different, and Gilgamesh in any case ignores her. Whether the advice represents the poem's wisdom or a stage the hero must pass beyond is a central interpretive question [[tigay1982]] [[george2003]].",
+    "The crossing of the Waters of Death shows Gilgamesh's characteristic violence: by smashing the Stone Ones he makes his own task harder. Utnapishtim's speech in reply gives a second, sterner wisdom, that mortality is the law of all things and that the dead and the sleeping are alike. The images of the flood and of sleep anticipate the two stories of Tablet XI [[george1999]]."
+   ],
+   "key": [
+    {
+     "ref": "Tablet X",
+     "quote": "\"Gilgamish, why runnest thou, (inasmuch as) the life which thou seekest,\nThou canst not find? (For) the gods, in their (first) creation of mortals,\nDeath allotted to man, (but) life they retain’d in their keeping.",
+     "note": "Siduri's opening words: the life Gilgamesh seeks is reserved by the gods. Compare the very similar words of Shamash in Tablet IX."
+    },
+    {
+     "ref": "Tablet X",
+     "quote": "Each day and night be thou merry, (and) daily keep holiday revel,\nEach day and night do thou dance and rejoice; (and) fresh be thy raiment,\n(Aye), let thy head be clean washen, (and) bathe thyself in the water,\nCherish the little one holding thy hand; be thy spouse in thy bosom",
+     "note": "The ethic of ordinary life. The hero is told to cherish the 'little one holding thy hand' rather than search for the impossible."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "The Flood and the Plant of Youth",
+   "section": 10,
+   "summary": [
+    "Gilgamesh asks how Utnapishtim gained eternal life, and he tells the story of the Flood. The gods resolved to destroy mankind; Ea, sworn to secrecy, spoke to the reed wall of Utnapishtim's house in Shuruppak, telling him to tear down his house and build a boat. He built a cube-shaped vessel of seven decks and loaded it with his family, animals and craftsmen. The storm raged for six days and seven nights; even the gods cowered like dogs, and Ishtar lamented her people. The boat grounded on Mount Nimush (Thompson's 'Nisir'); Utnapishtim sent out a dove, a swallow and a raven, and offered a sacrifice, around which the gods gathered 'like flies'. Enlil was furious that a man had survived, but Ea rebuked him, and Enlil made Utnapishtim and his wife immortal.",
+    "Utnapishtim challenges Gilgamesh to stay awake for six days and seven nights; he falls asleep at once. Utnapishtim's wife bakes a loaf for each day so that he cannot deny it. Urshanabi bathes him and gives him new clothes, and as a parting gift Utnapishtim reveals a thorny plant at the bottom of the sea that restores youth, named 'The Old Man Becomes Young'. Gilgamesh ties stones to his feet and brings it up, but while he bathes in a pool a snake steals it and sloughs its skin. He weeps, then returns to Uruk and invites Urshanabi to climb and inspect its walls."
+   ],
+   "analysis": [
+    "The flood narrative was adapted from the Old Babylonian poem of Atrahasis, whose hero's name ('Exceedingly Wise') appears in Tablet XI as an epithet of Utnapishtim (Thompson's 'th' Abounding in Wisdom'). In Atrahasis the flood comes because human noise disturbs the gods; Tablet XI omits the cause, and the story becomes, within the epic, evidence that Utnapishtim's immortality was a unique event that cannot be repeated [[lambertmillard1969]] [[tigay1982]]. Its close resemblance to Genesis 6–9, in the building of the boat, the sending out of birds and the sacrifice, made it the most famous passage of Assyriology after 1872 [[smith1873]] [[heidel1946]].",
+    "The tests that follow, sleep and the plant, show Gilgamesh failing at a smaller scale what he sought at a larger: if he cannot conquer sleep, the image of death, he cannot conquer death. The snake, which renews itself by shedding its skin, gains what man loses. The final return to the walls answers the prologue. Gilgamesh's words to Urshanabi repeat the opening invitation, suggesting that the city and its works, not personal immortality, are what remain; whether this is consolation or resignation is left to the reader [[george2003]] [[jacobsen1976]]."
+   ],
+   "key": [
+    {
+     "ref": "Tablet XI",
+     "quote": "(Then), when the seventh day dawn’d, I put forth a dove, and released (her),\n(But) to and fro went the dove, and return’d (for) a resting-place was not.",
+     "note": "The release of the dove, the first of the three birds. The parallel with Genesis 8 is the detail that made George Smith's discovery famous."
+    },
+    {
+     "ref": "Tablet XI",
+     "quote": "Bathed in the water. (But here was) a serpent who snuff’d the plant's fragrance,\nDarted he up [from the water (?)], and snatch’d the plant, uttering malison\nAs he drew back. Then Gilgamish sate him, (and) burst into weeping.",
+     "note": "The loss of the plant of youth. The snake snatches what the hero laboured for, and Gilgamesh, for the first time in the poem, sits down and weeps."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Enkidu and the Netherworld",
+   "section": 11,
+   "summary": [
+    "In the modern reading of the tablet, two objects that Gilgamesh has made, probably a ball and a stick or a drum and a drumstick (pukku and mekku), fall into the Netherworld. Enkidu, alive again, offers to fetch them. Gilgamesh warns him not to wear clean clothes or sweet oil, carry a weapon, wear sandals, or kiss or strike his wife and child, lest the dead recognise him. Enkidu does all these things and the Netherworld seizes him. Thompson's broken text, which renders the lost objects obscurely, includes the taboos and a lament for a dead woman, the mother of Ninazu.",
+    "Gilgamesh appeals to Enlil and to the Moon-god Sin, who do not answer, and then to Ea, who arranges for a hole to be opened in the earth (Thompson has Nergal open it; in George's text it is Shamash). Enkidu's ghost rises like a breath of wind. The friends embrace, and Gilgamesh asks what he has seen of the order of the Netherworld. Enkidu tells him of the fates of the dead: the more sons a man has, the better his lot; the man killed in battle is tended by his parents; the man whose ghost has no one to make offerings eats scraps thrown into the street."
+   ],
+   "analysis": [
+    "Tablet XII is a close Akkadian translation of the second half of the Sumerian poem 'Gilgamesh, Enkidu and the Netherworld'. It does not fit the story: Enkidu is alive though he died in Tablet VII, and he is Gilgamesh's servant, as in the Sumerian poems, rather than his friend. For this reason many scholars regard it as an appendix, added to the eleven-tablet epic by a later scribe; George argues that it was attached because it complements the epic's interest in death and the dead, although it is not part of the narrative proper [[george2003]] [[tigay1982]].",
+    "Others have defended its place. It completes the twelve-tablet format of a library series, and it ends the epic as it began, with seeing and knowledge: the hero who 'saw the Deep' learns at last what the dead see. Its practical message, that the dead depend on the offerings of their descendants, links Gilgamesh with the cult in which he was worshipped as a judge of the Netherworld. Whether the tablet is a clumsy addition or a deliberate coda remains open [[george1999]] [[maier1997]]."
+   ],
+   "key": [
+    {
+     "ref": "Tablet XII",
+     "quote": "\"Tell, O my friend, O tell, O my friend, (O) tell (me, I pr’y thee),\nWhat thou hast seen of the laws of the Underworld?\" \"(Nay, then,) O comrade;\nI will not tell thee, (yea,) I will not tell thee—(for), were I to tell thee,\nWhat I have seen of the laws of the Underworld,—sit thee down weeping!\"",
+     "note": "Gilgamesh asks his friend's ghost about the 'laws of the Underworld'. Enkidu's reply, that the truth would make him weep, sets the tone of the dialogue that follows."
+    },
+    {
+     "ref": "Tablet XII",
+     "quote": "\"He whose ghost hath none to tend,\nDidst thou see him?\" \"(Aye), I saw,\nLees of cup, and broken bread\nThrown into the street he eateth.\"",
+     "note": "The fate of the ghost with no one to make offerings. The epic's last word on death concerns the obligations of the living to the dead."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Gilgamesh",
+   "side": "Humans",
+   "text": "King of Uruk, son of the goddess Ninsun and the deified king Lugalbanda, two-thirds god and one-third man. At the start he is a tyrant whose energy exhausts his city; his friendship with Enkidu turns that energy toward adventure and fame. Enkidu's death transforms him into a terrified wanderer seeking eternal life. He fails, but returns to Uruk wiser, and the prologue presents him as the king who saw everything and wrote it down. Thompson spells his name 'Gilgamish'."
+  },
+  {
+   "name": "Enkidu",
+   "side": "Humans",
+   "text": "The wild man created by Aruru from clay as Gilgamesh's equal. He lives with the animals until Shamhat brings him into human society. He becomes Gilgamesh's friend, brother and companion in the killing of Humbaba and the Bull of Heaven, and is condemned to death by the gods for these deeds. His dying curses and his vision of the Netherworld make him the poem's first witness to death. In Tablet XII, taken from a Sumerian poem, he appears as Gilgamesh's servant."
+  },
+  {
+   "name": "Shamhat",
+   "side": "Humans",
+   "text": "A woman of the temple of Ishtar in Uruk, sent with the trapper to bring Enkidu out of the wild. Her seduction, teaching and gifts of bread, beer and clothing make Enkidu human. Cursed by the dying Enkidu, she is then blessed by him at the urging of Shamash. Thompson calls her 'the courtesan-girl' and 'the hetaera'."
+  },
+  {
+   "name": "The Trapper",
+   "side": "Humans",
+   "text": "A hunter whose traps Enkidu destroys. His fear of the wild man leads to the plan to tame Enkidu through Shamhat. Enkidu curses him as he dies."
+  },
+  {
+   "name": "Utnapishtim",
+   "side": "Humans",
+   "text": "Survivor of the Flood, called 'the Distant', who with his wife was granted eternal life by Enlil and lives at the mouth of the rivers. He tells Gilgamesh the story of the Flood and sets him the test of sleep. In the Old Babylonian poem of Atrahasis the flood hero bears that name; in the Sumerian story he is Ziusudra. Thompson calls him 'Uta-Napishtim'."
+  },
+  {
+   "name": "Utnapishtim's wife",
+   "side": "Humans",
+   "text": "Nameless, she alone shows pity for Gilgamesh, urging her husband to wake him and later to give him a parting gift. Her loaves, baked one each day, prove that he has slept."
+  },
+  {
+   "name": "Urshanabi",
+   "side": "Humans",
+   "text": "Utnapishtim's boatman, who ferries Gilgamesh across the Waters of Death. Banished by Utnapishtim for bringing a mortal across, he returns with Gilgamesh to Uruk and is invited to view its walls. Thompson calls him 'Ur-Shanabi'."
+  },
+  {
+   "name": "Ninsun",
+   "side": "Gods",
+   "text": "The wise cow-goddess, Gilgamesh's mother. She interprets his dreams of Enkidu's coming, prays to Shamash for his safety before the Cedar Forest, and adopts Enkidu."
+  },
+  {
+   "name": "Shamash",
+   "side": "Gods",
+   "text": "The Sun-god, god of justice and patron of Gilgamesh. He supports the expedition against Humbaba and sends the winds that defeat him. He reminds the dying Enkidu of what Shamhat gave him, and in the Old Babylonian version warns Gilgamesh that he will not find the life he seeks."
+  },
+  {
+   "name": "Ishtar",
+   "side": "Gods",
+   "text": "Goddess of love and war, patron of Uruk. Her proposal of marriage is rejected by Gilgamesh with a list of her former lovers' fates, and she sends the Bull of Heaven in revenge. At the Flood she laments the destruction of her people and swears by her necklace of lapis lazuli to remember those days."
+  },
+  {
+   "name": "Anu",
+   "side": "Gods",
+   "text": "God of the sky, father of the gods and of Ishtar, and chief god of Uruk. He commissions the creation of Enkidu and, under pressure from Ishtar, releases the Bull of Heaven."
+  },
+  {
+   "name": "Enlil",
+   "side": "Gods",
+   "text": "The chief executive god, who appointed Humbaba to guard the Cedar Forest, decrees Enkidu's death and brings the Flood. After the Flood, rebuked by Ea, he makes Utnapishtim immortal."
+  },
+  {
+   "name": "Ea",
+   "side": "Gods",
+   "text": "God of fresh water and wisdom (the Sumerian Enki), who outwits the other gods by warning Utnapishtim of the Flood through the wall of his reed house and rebukes Enlil for destroying all mankind. In Tablet XII he helps Gilgamesh speak with Enkidu's ghost."
+  },
+  {
+   "name": "Humbaba",
+   "side": "Monsters and others",
+   "text": "The guardian of the Cedar Forest, appointed by Enlil, whose roar is the Flood and whose breath is death; the Sumerian Huwawa. He pleads for his life after Shamash's winds have trapped him, and curses the friends as they kill him."
+  },
+  {
+   "name": "The Bull of Heaven",
+   "side": "Monsters and others",
+   "text": "The celestial bull, perhaps the constellation Taurus, that Anu gives Ishtar to punish Gilgamesh. It brings drought and opens pits in the earth before the friends kill it."
+  },
+  {
+   "name": "The Scorpion-people",
+   "side": "Monsters and others",
+   "text": "A scorpion-man and his wife who guard the gate of the sun at the Mountains of Mashu. They recognise Gilgamesh's divine flesh and let him take the road of the sun."
+  },
+  {
+   "name": "Siduri",
+   "side": "Monsters and others",
+   "text": "The alewife who keeps a tavern at the edge of the sea, a semi-divine figure. In the Old Babylonian version she advises Gilgamesh to enjoy ordinary life; she directs him to Urshanabi. Thompson calls her 'the maker of wine' and 'the Wine-maker'."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Mortality",
+   "text": [
+    "Death is the great subject of the epic. In the first half Gilgamesh accepts it as the condition of a heroic life and seeks to transcend it through fame. Enkidu's death changes everything: the abstract knowledge that men must die becomes the terror of his own mortality, and he sets out to find the one man who escaped it. The second half is a series of lessons, from Shamash, Siduri and Utnapishtim, that death is the lot assigned to humanity by the gods.",
+    "The poem gives no single answer. Siduri recommends the pleasures of daily life; Utnapishtim's story shows that immortality was granted once and will not be granted again; the tests of sleep and of the plant show that the hero cannot master even the image of death or a second youth. What remains at the end is the city and the story. Jacobsen read the epic as a turning point in Mesopotamian thought, in which the hero's quest is rejected and the claims of ordinary life are affirmed [[jacobsen1976]]."
+   ]
+  },
+  {
+   "title": "Friendship",
+   "text": [
+    "The friendship of Gilgamesh and Enkidu is the emotional core of the epic and its most original element. In the Sumerian poems Enkidu is a servant; in the Akkadian epic he is the equal created by the gods to balance Gilgamesh, and the relationship is described in the language of brotherhood, partnership and love. The friends encourage each other, interpret each other's dreams and share each other's deeds.",
+    "The friendship also determines the epic's structure. Its formation in Tablets I–II channels Gilgamesh's destructive energy; its adventures in Tablets III–VI bring both fame and the gods' anger; its ending in Tablet VII drives the quest of Tablets IX–XI. Gilgamesh's laments show that what he has lost is not a companion but part of himself, and Tablet XII ends the epic with the two friends together again, if only as a living man and a ghost [[walls2001]] [[ackerman2005]]."
+   ]
+  },
+  {
+   "title": "Civilisation and the wild",
+   "text": [
+    "Enkidu's transformation from wild man to citizen sets out a Mesopotamian account of what makes us human: sex, bread and beer, clothing, anointing, shepherding and the city. Uruk, with its walls, temples and festivals, is the summit of this order. The poem respects civilisation but does not idealise it: Enkidu loses his innocence and his bond with the animals, and on his deathbed he curses those who brought him to the city.",
+    "Gilgamesh's journey reverses Enkidu's. After his friend's death he puts on skins, eats the flesh of wild animals and roams the wilderness, becoming what Enkidu was. Only after his failure does he wash, dress and return to the city. The epic is thus framed by two movements between wild and civilised, and the walls of Uruk become a symbol of the human world defined against the wilderness and death [[tigay1982]]."
+   ]
+  },
+  {
+   "title": "Kingship",
+   "text": [
+    "The epic is in part a mirror for kings. Gilgamesh begins as a tyrant who oppresses his people, and the gods respond to their complaints. The elders counsel him, his mother prays for him, and his friend checks him. His adventures are royal deeds: the acquisition of timber, the protection of the city from the Bull of Heaven, the building of monuments. The Sumerian poems already celebrated Gilgamesh as a royal ancestor.",
+    "By the end the king has learned the limits of his power. The prologue's portrait of Gilgamesh as a builder, a restorer of temples and a king who brought back ancient knowledge presents a model of kingship achieved through suffering. Sîn-lēqi-unninni's version, transmitted in royal libraries such as Ashurbanipal's, may have been read in part as instruction for rulers [[george2003]]."
+   ]
+  },
+  {
+   "title": "Wisdom and knowledge",
+   "text": [
+    "The Standard Babylonian prologue presents Gilgamesh as a sage who 'saw the Deep', learned secrets and brought back knowledge from before the Flood. The epic thus becomes a story of the acquisition of wisdom, but of a particular kind: not the secret of eternal life, which he fails to obtain, but knowledge of the human condition, learned through suffering and recorded in writing.",
+    "Wisdom takes many forms in the poem: Ninsun's dream interpretations, the elders' counsel, Shamhat's instruction, Siduri's advice, Utnapishtim's story and the knowledge of the dead that Enkidu reports in Tablet XII. Each speaker offers a partial truth. The reader, invited in the prologue to read the tablet, is placed in the position of one who learns from Gilgamesh's experience without having to repeat it [[george1999]]."
+   ]
+  },
+  {
+   "title": "The power of the gods",
+   "text": [
+    "The gods of the epic are powerful, partial and sometimes capricious. They create Enkidu to answer the people's complaint, support or oppose the heroes, decree Enkidu's death in council and bring the Flood on all mankind, then regret it. Ishtar's love is dangerous, Enlil's anger is sweeping, Ea's cunning saves humanity by a trick, and the gods gather round Utnapishtim's sacrifice 'like flies'.",
+    "Divine power sets the limits of human life: the gods keep life for themselves and allot death to men. Yet the gods are not simply hostile. Shamash supports Gilgamesh, Ninsun loves him, and Ea's rebuke of Enlil after the Flood implies a principle of justice: punish the sinner, not all mankind. The epic places human striving within a divine order that is neither just nor unjust in any simple sense [[jacobsen1976]] [[lambertmillard1969]]."
+   ]
+  },
+  {
+   "title": "Memory and the walls of Uruk",
+   "text": [
+    "If the individual cannot escape death, something can survive him. The epic offers several kinds of survival: fame, which Gilgamesh seeks in the Cedar Forest; the statue and funeral he gives Enkidu; descendants, whom the dead depend on in Tablet XII; and the walls of Uruk, which frame the whole poem. At the beginning and the end the walls are offered for inspection, built of baked brick on foundations laid by the Seven Sages.",
+    "The poem itself is the final form of memory. Gilgamesh wrote his travails on a stone tablet; the prologue tells the reader to find it in the wall and read. The epic thus makes its own survival, on clay, part of its meaning. The walls of Uruk crumbled, but the tablets in Ashurbanipal's libraries survived to be rediscovered after more than two thousand years, a history traced by Damrosch [[damrosch2007]] [[george2003]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Dreams",
+   "text": "Dreams structure the epic. Gilgamesh dreams of Enkidu's coming in Tablet I; on the road to the forest he has five dreams, all interpreted by Enkidu as favourable; Enkidu dreams of the gods' decision to kill him and of the Netherworld; Ea reveals the Flood through what he calls a dream. Dreams in Mesopotamia were messages from the gods, and their interpretation was a learned art. In the epic, however, the interpretations are often doubtful, and the dreams usually point to death."
+  },
+  {
+   "title": "Repetition",
+   "text": "Speeches, descriptions and actions are repeated, often word for word: Humbaba's description, the hunter's report, Gilgamesh's account of his grief to Siduri, Urshanabi and Utnapishtim, and the invitation to view the walls at the beginning and end. Repetition is a feature of Mesopotamian narrative poetry, but the epic uses it with purpose. Gilgamesh's repeated lament shows grief that cannot be finished, and the repeated wall speech frames the whole work."
+  },
+  {
+   "title": "Seven days and six days",
+   "text": "Sets of six and seven recur at turning points: Enkidu lies with Shamhat for six days and seven nights; Gilgamesh mourns Enkidu for six days and seven nights before he lets him be buried; the Flood rages for six days and seven nights; Gilgamesh is challenged to stay awake for six days and seven nights. The repeated figure links sex, death, the Flood and sleep, the poem's main thresholds of human experience."
+  },
+  {
+   "title": "Journeys",
+   "text": "The poem is built on journeys: Enkidu's from the wild to the city, the friends' to the Cedar Forest and back, Gilgamesh's to the edge of the world and back. Each journey crosses a boundary (the waterhole, the forest's edge, the Mountains of Mashu, the Waters of Death), and each return is marked by washing and new clothes. The prologue's description of Gilgamesh as one who 'went on a journey afar' makes travel the image of the acquisition of knowledge."
+  },
+  {
+   "title": "Clothing and washing",
+   "text": "Changes of clothing mark changes of state. Enkidu receives Shamhat's garment as he enters human society; Gilgamesh washes and dresses after killing Humbaba, prompting Ishtar's desire; he tears off his fine clothes in mourning and dresses in skins; Urshanabi washes him and gives him a garment that will stay fresh until he reaches home. Clothing in the epic is the visible sign of the human, civilised condition."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The walls of Uruk",
+   "text": "The walls framing the epic represent what human beings can build that outlasts them. Offered for inspection at the beginning and at the end, they are both the city's defence against the wild and Gilgamesh's monument. They contain the tablet on which his story is written, so that the walls and the poem are linked as two forms of memory [[george2003]]."
+  },
+  {
+   "title": "The plant of rejuvenation",
+   "text": "The thorny plant from the bottom of the sea, named 'The Old Man Becomes Young', offers not immortality but the renewal of youth. Gilgamesh plans to test it on an old man before eating it himself, a sign of caution or of a new care for others. Its loss to the snake marks the final failure of his quest for life."
+  },
+  {
+   "title": "The Cedar Forest",
+   "text": "The forest, home of the gods and guarded by Humbaba, represents the wild in its most sacred and dangerous form. For Gilgamesh it is the place where fame can be won; for the poem it is a place of wonder whose devastation brings divine anger. Its cedar, made into a door for Enlil's temple, becomes the object of Enkidu's dying curse [[alrawi2014]]."
+  },
+  {
+   "title": "The Bull of Heaven",
+   "text": "Sent by Ishtar and Anu, the Bull represents divine anger and the destructive power of nature, bringing drought and famine. Its killing marks the high point of the friends' power and the moment of their greatest offence. Its horns, dedicated to Lugalbanda, become a monument to their triumph."
+  },
+  {
+   "title": "The snake",
+   "text": "The snake that steals the plant and immediately sheds its skin gains the renewal that man loses. It is a natural emblem of rejuvenation, and its theft has often been compared with the role of the serpent in Genesis 3, where the snake also stands between humans and life [[heidel1946]]."
+  }
+ ],
+ "debates": [
+  {
+   "title": "The evolution of the epic",
+   "text": [
+    "Because the epic survives in versions separated by more than a thousand years, it offers a rare opportunity to watch an ancient literary work develop. Tigay's The Evolution of the Gilgamesh Epic reconstructed this process: separate Sumerian poems were combined into an Old Babylonian epic with a unifying theme, which was gradually revised and standardised into the Standard Babylonian version, with a new prologue, the adoption of the flood story and the addition of Tablet XII [[tigay1982]].",
+    "Tigay's model has been widely adopted, including as a comparative case for the composition of biblical texts. George's critical edition gave the evidence a fuller basis and stressed the variety of the second-millennium versions, some from outside Mesopotamia, such as the fragments from Megiddo and Hattusa and the Hittite and Hurrian adaptations. New finds, like the Sulaymaniyah Tablet V, continue to alter the picture [[george2003]] [[alrawi2014]]."
+   ],
+   "cite": [
+    "tigay1982",
+    "george2003",
+    "alrawi2014"
+   ]
+  },
+  {
+   "title": "Sîn-lēqi-unninni and authorship",
+   "text": [
+    "A first-millennium catalogue of texts and authors, published by Lambert, names Sîn-lēqi-unninni, an exorcist of Uruk, as the source of the Gilgamesh series [[lambert1962]]. Later scholars of Uruk claimed descent from him. He is usually dated to the late second millennium BC, though the evidence is indirect. The prologue and the frame of wisdom and writing are generally attributed to him, but it is debated how far he rewrote the poem and how far he merely edited and standardised earlier material.",
+    "The question of authorship differs from that for later literatures. Mesopotamian scribes copied, adapted and expanded texts, and an 'author' could be one who gave a work its definitive form. The Standard Babylonian epic is therefore best understood as one stage in a long tradition, though a decisive one. Tigay emphasises its changes in theme and style; George describes the relationship between the late version and its predecessors in detail [[tigay1982]] [[george2003]]."
+   ],
+   "cite": [
+    "lambert1962",
+    "tigay1982",
+    "george2003"
+   ]
+  },
+  {
+   "title": "The Flood, Atrahasis and Genesis",
+   "text": [
+    "George Smith's 1872 discovery placed the epic at the centre of debate about the Bible. The resemblances between Tablet XI and Genesis 6–9 are close, from the divine decision to destroy mankind to the building of a boat, the sending out of birds and the sacrifice that pleases the gods or God. Heidel's The Gilgamesh Epic and Old Testament Parallels compared the texts in detail and argued that the theological differences, monotheism and moral judgement against polytheistic caprice, mattered more than borrowed details [[smith1873]] [[heidel1946]].",
+    "The publication of Atrahasis in 1969 showed that the flood story in Gilgamesh was taken from an earlier Babylonian poem, which also includes the creation of humanity and so is structurally even closer to Genesis 1–9 [[lambertmillard1969]]. Most scholars now see the biblical narrative as dependent, directly or indirectly, on a Mesopotamian tradition, while debating the routes and the degree of conscious response; George observes that few doubt the Mesopotamian origin [[george2003]]."
+   ],
+   "cite": [
+    "smith1873",
+    "heidel1946",
+    "lambertmillard1969",
+    "george2003"
+   ]
+  },
+  {
+   "title": "Tablet XII",
+   "text": [
+    "Tablet XII is the epic's most debated part. A fairly literal translation of the second half of a Sumerian poem, it contradicts what precedes: Enkidu is alive and is Gilgamesh's servant. Many scholars consider it an appendix, outside the plan of the eleven-tablet poem whose prologue and conclusion frame it with the walls of Uruk. George treats it as a separate text attached to the series, related by its subject matter [[george2003]] [[tigay1982]].",
+    "Others defend its inclusion on thematic or formal grounds: it completes a twelve-tablet series; it returns to the theme of seeing and knowledge with which the epic began; it provides the answer, in the experience of the dead, to Gilgamesh's question about death; and it connects the epic hero with Gilgamesh the judge of the Netherworld, the role he played in cult. The debate turns on how we define the unity of an ancient work [[maier1997]] [[george1999]]."
+   ],
+   "cite": [
+    "george2003",
+    "tigay1982",
+    "maier1997",
+    "george1999"
+   ]
+  },
+  {
+   "title": "Gilgamesh and Enkidu: friendship or love?",
+   "text": [
+    "The language describing the relationship is intense: in the dreams of Tablet I Gilgamesh holds the rock and the axe to him 'like a woman'; in his lament he veils Enkidu's face 'like a bride'. Scholars have noted wordplay in the dreams on terms for the rock and the axe and words for cult functionaries associated with Ishtar. Some have concluded that the epic depicts a sexual relationship, others that it depicts an intense friendship using marital language as the strongest available metaphor [[walls2001]] [[george2003]].",
+    "Walls examined the relationship in terms of desire and gender, and Ackerman compared it with David and Jonathan, arguing that the narratives deliberately exploit the ambiguity of eros in heroic friendship [[walls2001]] [[ackerman2005]]. The question is complicated by the difference between ancient categories and modern ones, and by the poem's interest in the roles of wife, mother and lover throughout."
+   ],
+   "cite": [
+    "walls2001",
+    "ackerman2005",
+    "george2003"
+   ]
+  },
+  {
+   "title": "Gilgamesh and Homer",
+   "text": [
+    "Since the epic's rediscovery, scholars have noted parallels with Homer: the friendship of Gilgamesh and Enkidu and that of Akhilleus and Patroclus, with the death of the friend as the turning point; the hero's grief and the ghost's visit; Ishtar's complaint to her parents and Aphrodite's to Dione and Zeus in Iliad 5; the wandering hero and the semi-divine women at the edge of the world. West's The East Face of Helicon collected these and many other parallels and argued for extensive Near Eastern influence on early Greek poetry [[west1997]].",
+    "Burkert had earlier argued for an 'orientalizing revolution' in the archaic Greek world [[burkert1992]]. The routes of transmission remain uncertain, and critics debate whether the parallels show direct knowledge of the epic, shared traditions of oral poetry, or similar responses to similar themes. The debate has made Gilgamesh central to the study of comparative epic."
+   ],
+   "cite": [
+    "west1997",
+    "burkert1992"
+   ]
+  },
+  {
+   "title": "Ishtar's proposal",
+   "text": [
+    "Gilgamesh's rejection of Ishtar has been read as a moral judgement on the goddess, as a comic scene, as an expression of fear of female power, or as a sign of his hubris. Abusch offered a new reading in a much-cited article: the gifts and the marriage Ishtar offers have funerary and underworld associations, so that to accept would be to become a ruler of the dead; Gilgamesh's refusal is a refusal of death and of a divine role [[abusch1986]].",
+    "Abusch's reading links Tablet VI with the epic's larger theme of mortality and with the cult of Gilgamesh as a Netherworld deity. Other scholars have emphasised the scene's place in the structure of the hero's offences against the gods, and its relation to Sumerian traditions about Inanna and Dumuzi [[walls2001]] [[george2003]]."
+   ],
+   "cite": [
+    "abusch1986",
+    "walls2001",
+    "george2003"
+   ]
+  },
+  {
+   "title": "Rediscovery and reception",
+   "text": [
+    "The epic's modern history began in the British Museum with George Smith, a self-taught engraver turned Assyriologist, whose announcement of the flood story in 1872 brought international fame. Damrosch's The Buried Book traces the history of the tablets from Ashurbanipal's libraries to their rediscovery by Layard, Rassam and Smith, and on to modern readers and writers who have taken up the poem [[damrosch2007]] [[smith1876]].",
+    "Since Thompson's translation of 1928, the epic has been translated many times and has become a classic of world literature, read as the oldest great work of narrative poetry. Modern scholarly translations, George's, Dalley's and Foster's, differ from earlier ones in the readings of the text and in the use of new fragments, and anthologies such as Maier's collect the critical responses [[george1999]] [[dalley1989]] [[foster2001]] [[maier1997]]."
+   ],
+   "cite": [
+    "damrosch2007",
+    "smith1876",
+    "george1999",
+    "dalley1989",
+    "foster2001",
+    "maier1997"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Tablet I",
+   "quote": "He who (the heart of) all matters hath proven let him [teach] the nation,\n[He who all] knowledge possesseth, therein shall he [school] all the people,\n[He shall his wisdom impart (?)] and (so) shall they ]share it] together.",
+   "who": "The narrator",
+   "explanation": "The prologue in Thompson's version. Gilgamesh is presented as one who knows all things and teaches the people; the epic opens not with a deed but with wisdom shared. Later translations read 'He who saw the Deep', but the idea is the same: the story is knowledge handed down."
+  },
+  {
+   "ref": "Tablet III",
+   "quote": "\"Who, O my friend, is unconquer’d by [death]? A divinity, certes,\nLiveth for aye in the daylight, but mortals—their days are (all) number’d,\nAll that they do is (but) wind—But to thee, now death thou art dreading,",
+   "who": "Gilgamesh",
+   "explanation": "Gilgamesh's statement of the heroic view of death. Since men are mortal and their acts are wind, only fame can compensate. The epic will test this view after Enkidu's death."
+  },
+  {
+   "ref": "Tablet VI",
+   "quote": "[Thou’rt but a ruin which giveth no shelter (?) to man] from the weather,\nThou’rt but a back door [not] giving resistance to blast or to windstorm,",
+   "who": "Gilgamesh",
+   "explanation": "The beginning of Gilgamesh's rejection of Ishtar. The images of a ruin and a back door that fails to keep out the storm show the goddess as unreliable, and they reveal the hero's daring in insulting a goddess to her face."
+  },
+  {
+   "ref": "Tablet VII",
+   "quote": "Unto the Dwelling from which he who entereth cometh forth never!\n(Aye), by the road on the passage whereof there can be no returning,\nUnto the Dwelling whose tenants are (ever) bereft of the daylight,\nWhere for their food is the dust, and the mud is their sustenance: bird-like",
+   "who": "Enkidu",
+   "explanation": "Enkidu's dream of the Netherworld, the House of Dust from which no one returns. The vision of the dead eating dust in darkness is the bleakest picture of the afterlife in Mesopotamian literature."
+  },
+  {
+   "ref": "Tablet X",
+   "quote": "Like to the dust [hath become]; O Enkidu, (he was) my comrade,\nHe whom I loved hath become alike the dust]—[I,] shall I not, also,\nLay me down [like him], throughout all eternity [never returning]?\"",
+   "who": "Gilgamesh",
+   "explanation": "Gilgamesh tells Siduri why he wanders. The friend he loved has become dust, and the fear of the same fate drives him across the world. Note Thompson's brackets marking restored text."
+  },
+  {
+   "ref": "Tablet X",
+   "quote": "\"Gilgamish, why runnest thou, (inasmuch as) the life which thou seekest,\nThou canst not find? (For) the gods, in their (first) creation of mortals,\nDeath allotted to man, (but) life they retain’d in their keeping.",
+   "who": "Siduri",
+   "explanation": "The alewife's words, from the Old Babylonian version, express a basic Mesopotamian belief: the gods kept life for themselves and gave death to men."
+  },
+  {
+   "ref": "Tablet XI",
+   "quote": "O, instead of thy making a flood, let a lion come, man to diminish;\nO, instead of thy making a flood, let a jackal come, man to diminish;",
+   "who": "Ea",
+   "explanation": "Ea rebukes Enlil after the Flood: rather than destroy all mankind he could have sent a lion or a jackal to reduce their number. The speech proposes a principle of proportionate punishment."
+  },
+  {
+   "ref": "Tablet XI",
+   "quote": "Bathed in the water. (But here was) a serpent who snuff’d the plant's fragrance,\nDarted he up [from the water (?)], and snatch’d the plant, uttering malison\nAs he drew back. Then Gilgamish sate him, (and) burst into weeping.",
+   "who": "The narrator",
+   "explanation": "The loss of the plant of rejuvenation to the snake, which immediately sheds its skin. The hero's quest for life ends in a moment of carelessness."
+  },
+  {
+   "ref": "Tablet XI",
+   "quote": "\"Do thou, Ur-Shanabi, go up and walk on the ramparts of Erech,\nLook on its base, and take heed of its bricks, if its bricks be not kiln-burnt,\n(Aye), and its ground-work be not bitumen, e’en seven courses,",
+   "who": "Gilgamesh",
+   "explanation": "Gilgamesh's invitation to Urshanabi to examine the walls of Uruk echoes the prologue and closes the eleven-tablet epic. The walls, built by human labour, are what endures."
+  },
+  {
+   "ref": "Tablet XII",
+   "quote": "\"He whose ghost hath none to tend,\nDidst thou see him?\" \"(Aye), I saw,\nLees of cup, and broken bread\nThrown into the street he eateth.\"",
+   "who": "Enkidu's ghost",
+   "explanation": "The fate of the dead who have no one to make offerings: they eat scraps in the street. The epic's last words concern the dependence of the dead on the memory and care of the living."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does the Standard Babylonian version begin and end with the walls of Uruk?",
+   "hint": "Compare the prologue in Tablet I with Gilgamesh's words to Urshanabi in Tablet XI. Consider what the walls represent after the failure of the quest for eternal life, and how they relate to the tablet in which the story is written."
+  },
+  {
+   "q": "What makes Enkidu human, and what does he lose in becoming so?",
+   "hint": "Trace the stages of his transformation in Tablets I–II (Shamhat, bread and beer, clothing, the shepherds). Then consider his curses and blessing in Tablet VII."
+  },
+  {
+   "q": "How does the meaning of death change for Gilgamesh between Tablet III and Tablet IX?",
+   "hint": "Compare his speech to Enkidu about fame in Tablet III with his fear and wandering after Enkidu's death. What does he want in each case?"
+  },
+  {
+   "q": "Why does Gilgamesh reject Ishtar, and is he right to do so?",
+   "hint": "Look at the list of her lovers in Tablet VI. Consider Abusch's argument that the proposal has underworld associations, and the consequences of the refusal for Enkidu."
+  },
+  {
+   "q": "What is the role of the gods in the epic? Are they just?",
+   "hint": "Consider the creation of Enkidu, the council that decrees his death, the Flood and Ea's speech to Enlil afterwards, and the words of Shamash and Siduri about life and death."
+  },
+  {
+   "q": "Is Siduri's advice the moral of the epic?",
+   "hint": "Remember that it survives in the Old Babylonian version and not in the same form in the Standard Babylonian. Consider how Gilgamesh responds to it and what he learns later from Utnapishtim and from his own failures."
+  },
+  {
+   "q": "Why does the flood story appear in the Epic of Gilgamesh, and how does it function there?",
+   "hint": "Consider what the story tells Gilgamesh about the possibility of eternal life. Compare it with Atrahasis and Genesis, and think about what the epic omits and adds."
+  },
+  {
+   "q": "How should we understand the relationship between Gilgamesh and Enkidu?",
+   "hint": "Look at the language of the dreams in Tablet I and of the lament in Tablet VIII. Consider the arguments of Walls and Ackerman and the problem of applying modern categories."
+  },
+  {
+   "q": "Does Tablet XII belong in the epic?",
+   "hint": "Consider the contradictions with Tablets VII–XI, its origin as a translation of a Sumerian poem, and arguments for its thematic place, such as its focus on knowledge of the dead."
+  },
+  {
+   "q": "Compare the friendship and loss of Gilgamesh and Enkidu with those of Akhilleus and Patroclus in the Iliad.",
+   "hint": "Think about the death of the friend as a turning point, the hero's grief, the ghost's appearance and the question of mortality. Consider West's argument for Near Eastern influence on Greek epic and the alternative explanations."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "abusch1986",
+   "text": "Abusch, Tzvi. 'Ishtar's Proposal and Gilgamesh's Refusal: An Interpretation of The Gilgamesh Epic, Tablet 6, Lines 1–79.' History of Religions 26, no. 2 (1986): 143–187."
+  },
+  {
+   "id": "ackerman2005",
+   "text": "Ackerman, Susan. When Heroes Love: The Ambiguity of Eros in the Stories of Gilgamesh and David. New York: Columbia University Press, 2005."
+  },
+  {
+   "id": "alrawi2014",
+   "text": "Al-Rawi, Farouk N. H., and Andrew R. George. 'Back to the Cedar Forest: The Beginning and End of Tablet V of the Standard Babylonian Epic of Gilgameš.' Journal of Cuneiform Studies 66 (2014): 69–90."
+  },
+  {
+   "id": "burkert1992",
+   "text": "Burkert, Walter. The Orientalizing Revolution: Near Eastern Influence on Greek Culture in the Early Archaic Age. Translated by Margaret E. Pinder and Walter Burkert. Cambridge, MA: Harvard University Press, 1992."
+  },
+  {
+   "id": "dalley1989",
+   "text": "Dalley, Stephanie, trans. Myths from Mesopotamia: Creation, the Flood, Gilgamesh, and Others. Oxford: Oxford University Press, 1989."
+  },
+  {
+   "id": "damrosch2007",
+   "text": "Damrosch, David. The Buried Book: The Loss and Rediscovery of the Great Epic of Gilgamesh. New York: Henry Holt, 2007."
+  },
+  {
+   "id": "foster2001",
+   "text": "Foster, Benjamin R., trans. and ed. The Epic of Gilgamesh. Norton Critical Edition. New York: W. W. Norton, 2001."
+  },
+  {
+   "id": "george1999",
+   "text": "George, Andrew, trans. The Epic of Gilgamesh: The Babylonian Epic Poem and Other Texts in Akkadian and Sumerian. London: Allen Lane The Penguin Press, 1999."
+  },
+  {
+   "id": "george2003",
+   "text": "George, A. R. The Babylonian Gilgamesh Epic: Introduction, Critical Edition and Cuneiform Texts. 2 vols. Oxford: Oxford University Press, 2003."
+  },
+  {
+   "id": "heidel1946",
+   "text": "Heidel, Alexander. The Gilgamesh Epic and Old Testament Parallels. Chicago: University of Chicago Press, 1946."
+  },
+  {
+   "id": "jacobsen1976",
+   "text": "Jacobsen, Thorkild. The Treasures of Darkness: A History of Mesopotamian Religion. New Haven: Yale University Press, 1976."
+  },
+  {
+   "id": "kramer1981",
+   "text": "Kramer, Samuel Noah. History Begins at Sumer: Thirty-Nine Firsts in Recorded History. 3rd rev. ed. Philadelphia: University of Pennsylvania Press, 1981."
+  },
+  {
+   "id": "lambert1962",
+   "text": "Lambert, W. G. 'A Catalogue of Texts and Authors.' Journal of Cuneiform Studies 16, no. 3 (1962): 59–77."
+  },
+  {
+   "id": "lambertmillard1969",
+   "text": "Lambert, W. G., and A. R. Millard. Atra-ḫasīs: The Babylonian Story of the Flood. Oxford: Clarendon Press, 1969."
+  },
+  {
+   "id": "maier1997",
+   "text": "Maier, John, ed. Gilgamesh: A Reader. Wauconda, IL: Bolchazy-Carducci, 1997."
+  },
+  {
+   "id": "smith1873",
+   "text": "Smith, George. 'The Chaldean Account of the Deluge.' Transactions of the Society of Biblical Archaeology 2 (1873): 213–234."
+  },
+  {
+   "id": "smith1876",
+   "text": "Smith, George. The Chaldean Account of Genesis. London: Sampson Low, Marston, Searle, and Rivington, 1876."
+  },
+  {
+   "id": "thompson1928",
+   "text": "Thompson, R. Campbell, trans. The Epic of Gilgamish: A New Translation from a Collation of the Cuneiform Tablets in the British Museum Rendered Literally into English Hexameters. London: Luzac, 1928."
+  },
+  {
+   "id": "thompson1930",
+   "text": "Thompson, R. Campbell. The Epic of Gilgamish: Text, Transliteration, and Notes. Oxford: Clarendon Press, 1930."
+  },
+  {
+   "id": "tigay1982",
+   "text": "Tigay, Jeffrey H. The Evolution of the Gilgamesh Epic. Philadelphia: University of Pennsylvania Press, 1982."
+  },
+  {
+   "id": "walls2001",
+   "text": "Walls, Neal H. Desire, Discord and Death: Approaches to Ancient Near Eastern Myth. Boston: American Schools of Oriental Research, 2001."
+  },
+  {
+   "id": "west1997",
+   "text": "West, M. L. The East Face of Helicon: West Asiatic Elements in Greek Poetry and Myth. Oxford: Clarendon Press, 1997."
+  }
+ ]
+}
