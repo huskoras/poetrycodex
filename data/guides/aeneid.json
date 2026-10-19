@@ -1,0 +1,907 @@
+{
+ "work": "aeneid",
+ "title": "The Aeneid",
+ "author": "Virgil",
+ "quoteEdition": "aeneid-mackail",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Composed",
+   "value": "Between about 29 BC and Virgil's death in 19 BC; published after his death, on Augustus' orders, by his friends Varius and Tucca"
+  },
+  {
+   "label": "Genre",
+   "value": "Literary epic in the Homeric tradition, written by a single poet for readers and for recitation"
+  },
+  {
+   "label": "Metre",
+   "value": "Latin dactylic hexameter; nearly sixty lines are left incomplete"
+  },
+  {
+   "label": "Length",
+   "value": "12 books, about 9,900 lines of Latin"
+  },
+  {
+   "label": "Setting",
+   "value": "The fall of Troy, the voyage across the Mediterranean, Carthage, Sicily, Cumae and the underworld, and finally Latium and the site of the future Rome"
+  },
+  {
+   "label": "Time span",
+   "value": "Roughly seven years from the sack of Troy to the death of Turnus, though the main narrative begins in the seventh year and tells the earlier wanderings in flashback"
+  },
+  {
+   "label": "Narrator",
+   "value": "A third-person narrator who invokes the Muse, comments openly on the action and sometimes addresses his characters; Aeneas narrates Books 2 and 3 himself"
+  },
+  {
+   "label": "Protagonist",
+   "value": "Aeneas, son of Venus and the Trojan Anchises, a survivor of Troy destined to found the people from whom Rome will descend"
+  },
+  {
+   "label": "Conflict",
+   "value": "Aeneas' fated mission against Juno's hatred of Troy; first a journey (Books 1 to 6), then a war in Italy against Turnus and the Latins (Books 7 to 12)"
+  },
+  {
+   "label": "Key themes",
+   "value": "Pietas; fate against furor; the cost of empire; exile and loss; Rome's future; the suffering of the defeated; rivalry with Homer"
+  }
+ ],
+ "context": [
+  "Publius Vergilius Maro was born in 70 BC near Mantua, in what was then Cisalpine Gaul, and educated in Cremona, Milan and Rome. Ancient biographies, chiefly the Life by Donatus that goes back to Suetonius, describe a shy, scholarly man of modest landed family. His first works were the Eclogues (about 39 to 38 BC), pastoral poems that already register the confiscation of Italian land for veterans of the civil wars, and the Georgics (completed about 29 BC), a didactic poem on farming that is also a meditation on labour, loss and the restoration of order. By the time he began the Aeneid he was the leading poet of Rome and a member of the circle around Maecenas, the friend and adviser of Octavian [[horsfall1995]].",
+  "Virgil's whole life was shadowed by civil war. He was a young man of twenty-one when Caesar crossed the Rubicon (49 BC), was alive for the battles of Pharsalus (48) and Philippi (42), and in his late thirties when Octavian defeated Antony and Cleopatra at Actium (31 BC) and took Alexandria (30 BC). In 27 BC the senate gave Octavian the name Augustus. The new regime presented itself as the restoration of the republic, of traditional religion and of peace after decades of slaughter, and it made much of the Julian family's claim to descend from Aeneas' son Iulus and so from Venus. An epic on Aeneas was therefore also an epic about the origins and claims of the ruling house [[galinsky1996]].",
+  "The Aeneid was written over about ten years. The Life reports that Virgil drafted the poem first in prose, then versified it piecemeal, leaving some lines unfinished as 'props' to be replaced later, and that he read Books 2, 4 and 6 to Augustus and his sister Octavia. Even before its completion the poet Propertius announced that something greater than the Iliad was being born. In 19 BC Virgil set out for Greece meaning to spend three years revising, fell ill, and died at Brundisium on his way home. According to the Life he had asked for the manuscript to be burned; Augustus forbade it and had the poem published with only light editing, its half-lines and unrevised passages left as they stood [[sparrow1931]].",
+  "The poem's great model is Homer. Its first six books, with their wanderings, storms, banquet narrative and visit to the dead, answer the Odyssey; its last six, with their catalogue of warriors, night raid, slain young allies and final duel, answer the Iliad. Virgil reworks Homeric scenes line by line, but he also draws on Greek tragedy, on the Hellenistic epic of Apollonius of Rhodes (especially for Dido), on Ennius' Annals, the national epic of the Roman republic, and on Lucretius. The result is a learned, densely allusive poem that measures Rome against the whole Greek tradition [[knauer1964]] [[conte1986]].",
+  "The story of Aeneas was not Virgil's invention. In the Iliad Poseidon prophesies that Aeneas and his descendants will rule the Trojans, and by the third century BC Romans and Greeks alike connected him with the foundation of Lavinium and the line of Alban kings who preceded Romulus. Virgil's freedom lay in how he told the legend: in giving it a single, suffering hero, in setting it against the history of Rome down to his own day through prophecy, and in letting the losers of the story, Dido, Turnus and the Italians, speak with unusual force [[horsfall1995]]."
+ ],
+ "plot": [
+  "Seven years after the fall of Troy, Aeneas and the surviving Trojans are sailing from Sicily to Italy, where fate has promised them a new home. Juno, who hates the Trojans and favours Carthage, raises a storm that wrecks them on the coast of Africa. Queen Dido, a Phoenician exile building the new city of Carthage, welcomes them, and at a banquet Aeneas tells the story of Troy's last night and of the years of wandering that followed, in which he lost his wife Creusa and his father Anchises.",
+  "Venus and Juno, for opposed reasons, conspire to make Dido fall in love with Aeneas. During a hunt a storm drives them into a cave together; Dido calls the union a marriage. Jupiter sends Mercury to remind Aeneas of his duty to his son and to Rome, and Aeneas prepares to sail. Dido's pleading, rage and curse fail to move him, and as the fleet leaves she kills herself on a pyre. In Sicily the Trojans hold funeral games for Anchises; then, at Cumae, Aeneas descends with the Sibyl to the underworld, meets the dead of his past, including Dido, and is shown by his father's ghost the future heroes of Rome down to Augustus.",
+  "In Latium King Latinus, warned by oracles that his daughter Lavinia must marry a foreigner, welcomes the Trojans. Juno summons the Fury Allecto, who maddens the queen Amata and Turnus, prince of the Rutulians and Lavinia's suitor, and war breaks out. Aeneas seeks allies upriver from Evander, an Arcadian king settled on the future site of Rome, who entrusts him with his young son Pallas, and from the Etruscans, who have expelled their tyrant Mezentius. Venus brings him armour made by Vulcan, including a shield engraved with the future history of Rome.",
+  "In Aeneas' absence Turnus attacks the Trojan camp. When Aeneas returns, the war claims the young on both sides: Nisus and Euryalus, Pallas, killed by Turnus, who strips his sword-belt, Lausus and his father Mezentius, killed by Aeneas, and the warrior maiden Camilla. At last Turnus agrees to settle the war by single combat. A truce is broken, Aeneas is wounded and healed, and in the final duel Turnus is brought down. As he begs for his life Aeneas hesitates, sees Pallas' belt on his shoulder, and kills him in fury. The poem ends with Turnus' soul fleeing, resentful, to the shades."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Storm and Carthage",
+   "summary": [
+    "The poet announces his subject, arms and the man who came from Troy to Italy to found a city and bring his gods to Latium, and asks the Muse why Juno persecutes so good a man. Juno, who loves Carthage and resents Troy, bribes Aeolus, king of the winds, to wreck the Trojan fleet. Neptune calms the sea, and Aeneas lands with seven ships on the Libyan coast, where he hides his own despair to encourage his men.",
+    "On Olympus Venus complains to Jupiter, who reassures her with a prophecy of Rome's future: Aeneas will found Lavinium, his son Iulus will found Alba Longa, Romulus will found Rome, and a Julian Caesar will bring peace. Venus, disguised as a huntress, meets Aeneas and tells him the story of Dido, who fled Tyre after her brother murdered her husband Sychaeus. Wrapped in a mist, Aeneas enters Carthage, sees the city rising and finds the Trojan War painted on the walls of Juno's temple.",
+    "Dido receives the lost Trojans graciously, and Aeneas reveals himself. Venus, fearing Juno's influence in Carthage, sends Cupid in the likeness of Ascanius to inflame the queen with love. At the banquet the bard Iopas sings of the cosmos, and Dido asks Aeneas to tell the whole story of Troy's fall and his wanderings."
+   ],
+   "analysis": [
+    "The first line, 'arma virumque cano', joins the two halves of the poem (the 'man' of the Odyssey and the 'arms' of the Iliad) and claims both Homeric epics at once. The proem ends not with glory but with labour: 'so great a task it was to found the Roman people'. From the outset the poem measures its goal, Rome, by its cost, and its question to the Muse, whether such anger can live in heavenly minds, introduces a divine order that is anything but serene [[knauer1964]] [[otis1964]].",
+    "Book 1 sets out the poem's two levels of time. Jupiter's prophecy looks forward across a thousand years to an empire without limits and to the closing of the gates of War; the human story, meanwhile, is one of shipwreck and exhaustion. Neptune calming the storm is compared to a respected statesman quieting a riot, the first simile of the poem and an image of the order that Rome is meant to bring to violence [[hardie1986]].",
+    "The temple murals are the first of the poem's many works of art. Aeneas weeps to see his own past as a spectacle, and finds in it a sign of human sympathy: the 'tears of things'. Yet the paintings stand in the temple of Juno, Troy's enemy, and their meaning is less comforting than he supposes. The episode teaches the reader to look twice at images in this poem [[putnam1965]]."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 1.1–7",
+     "quote": "I sing of arms and the man who of old from the coasts of Troy came, an exile of fate, to Italy and the shore of Lavinium; hard driven on land and on the deep by the violence of heaven, for cruel Juno's unforgetful anger, and hard bestead in war also, ere he might found a city and carry his gods into Latium",
+     "note": "The proem defines the hero by suffering and destiny rather than by personal glory. 'Exile of fate' (fato profugus) states the poem's paradox: Aeneas is both a refugee and the instrument of a plan."
+    },
+    {
+     "ref": "Aen. 1.461–462",
+     "quote": "Here too is the meed of honour, here mortal estate touches the soul to tears.",
+     "note": "Aeneas' response to the murals contains the famous phrase 'sunt lacrimae rerum', whose exact meaning ('tears for things', 'the tears in things') has been debated for centuries. It is one of the poem's central statements of sympathy for suffering."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Fall of Troy",
+   "summary": [
+    "Aeneas begins his story. The Greeks, pretending to sail home, leave behind a great wooden horse. The priest Laocoön warns the Trojans not to trust it and hurls a spear into its side, but the Greek Sinon, posing as a deserter, persuades them that the horse is an offering to Minerva. When two sea-serpents kill Laocoön and his sons, the Trojans take this as divine judgement and drag the horse into the city.",
+    "That night the Greeks pour out of the horse and open the gates. The ghost of Hector, mangled as Achilles left him, appears to Aeneas in a dream and tells him to flee with Troy's gods. Aeneas instead rushes to fight. He sees Priam's palace stormed and the old king butchered at his own altar by Pyrrhus, son of Achilles. Venus stops him from killing Helen and shows him the gods themselves tearing down the city.",
+    "Anchises at first refuses to leave, until a harmless flame plays around the head of little Iulus and a shooting star confirms the omen. Aeneas carries his father on his shoulders, leads his son by the hand, and lets his wife Creusa follow behind. In the confusion Creusa is lost. Searching the burning city, Aeneas meets her ghost, who tells him of a new kingdom and a royal bride in Hesperia, by the Tiber. Three times he tries to embrace her, and three times she escapes his arms."
+   ],
+   "analysis": [
+    "Book 2 tells the fall of Troy from the side of the defeated. In the Odyssey the wooden horse is a Greek triumph sung at a banquet; here it is remembered as a catastrophe of deceit, and Greek cunning (Sinon, Ulysses) is contrasted with Trojan credulity and courage. Aeneas' first instinct is not pietas but furor: he arms himself 'madly' and seeks a glorious death. The book shows him learning, painfully, that his duty is to survive [[otis1964]] [[quinn1968]].",
+    "The image of Aeneas carrying Anchises and leading Iulus became the emblem of Roman pietas, reproduced on coins and statues: the hero bears the past and guides the future. Yet the image is shadowed by loss, since Creusa, walking behind, disappears. The poem's founding act of duty is also its first abandonment, and her gentle ghost anticipates the very different farewell of Dido.",
+    "Priam's headless body on the shore (2.557–558) recalled, for Roman readers, the death of Pompey on the beach in Egypt in 48 BC. Such echoes of the civil wars run throughout the poem and complicate any purely mythical reading of Troy's fall [[hardie1986]]."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 2.49",
+     "quote": "I fear the Grecians even when they offer gifts.",
+     "note": "Laocoön's warning (timeo Danaos et dona ferentes) became proverbial. Its wisdom is ignored, and the gods themselves ensure that it is: the serpents kill the one man who saw the truth."
+    },
+    {
+     "ref": "Aen. 2.792–793",
+     "quote": "Thrice there was I fain to lay mine arms round her neck; thrice the vision I vainly clasped fled out of my hands",
+     "note": "A reworking of Odysseus' attempt to embrace his mother's ghost (Odyssey 11). Virgil repeats the lines when Aeneas meets Anchises in Book 6, linking his losses of wife and father."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Wanderings",
+   "summary": [
+    "Aeneas continues. The exiles build ships and sail first to Thrace, where blood oozes from the shrubs on a mound: it is the grave of Polydorus, Priam's son, murdered for his gold by the Thracian king. On Delos Apollo tells them to seek their 'ancient mother'; Anchises misreads this as Crete, where plague strikes them, and the household gods in a dream redirect them to Hesperia, Italy, the homeland of their ancestor Dardanus.",
+    "On the Strophades islands the Harpies foul their food, and the Harpy Celaeno prophesies that they will not found their city until hunger drives them to eat their tables. At Buthrotum in Epirus they find Andromache, Hector's widow, now married to the Trojan seer Helenus in a miniature replica of Troy. Helenus gives detailed prophecies: avoid Scylla and Charybdis, consult the Sibyl at Cumae, and found the city where a white sow lies with thirty young.",
+    "Rounding Sicily, the Trojans rescue Achaemenides, a Greek left behind by Ulysses on the island of the Cyclopes, and escape Polyphemus. At Drepanum Anchises dies. Aeneas ends his story there: the storm of Book 1 followed."
+   ],
+   "analysis": [
+    "Book 3 is often thought the least finished of the books, and it contains inconsistencies with the rest of the poem (for example, who delivers the prophecy about the tables). It is also a deliberately episodic book that reworks the Odyssey's wanderings: Odysseus' fantastic adventures become a pilgrimage in search of the right place, guided by oracles that are repeatedly misunderstood [[williams1983]].",
+    "The book's theme is the temptation to rebuild the past. Buthrotum, with its little Troy, its dry stream named Xanthus and Andromache still mourning at Hector's cenotaph, is a moving but sterile copy. Aeneas' task is to find a new city, not to reconstruct the old one, and the book shows the exiles slowly learning that their 'ancient mother' lies ahead of them. The Greek Achaemenides, pitied and taken aboard, also shows that the Trojans can show mercy to an enemy [[quinn1968]]."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 3.56–57",
+     "quote": "O accursed hunger of gold, to what dost thou not compel human hearts!",
+     "note": "The narrator's outburst at the murder of Polydorus (auri sacra fames) is one of the poem's best-known moral sentences. Greed, like anger, is a force that breaks the bonds of duty between host and guest."
+    },
+    {
+     "ref": "Aen. 3.255–257",
+     "quote": "Yet shall you not wall round your ordained city, ere this murderous outrage on us compel you, in portentous hunger, to eat your tables with gnawing teeth.",
+     "note": "A frightening prophecy fulfilled harmlessly in Book 7, when the Trojans eat the flat loaves they used as plates. It is typical of the poem's oracles, which are true but rarely mean what their hearers expect."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Dido",
+   "summary": [
+    "Dido confesses to her sister Anna that Aeneas has awakened a love she had sworn, after Sychaeus' death, never to feel again. Anna urges her to yield, pointing to Carthage's need for allies. Juno, hoping to keep Aeneas from Italy, proposes a marriage to Venus, who agrees with secret amusement. During a royal hunt a storm scatters the party, and Dido and Aeneas shelter in the same cave, where they become lovers. Rumour spreads the news, and the African king Iarbas, a rejected suitor, complains to Jupiter.",
+    "Jupiter sends Mercury, who finds Aeneas dressed in Tyrian finery, building Carthage. Shaken, Aeneas orders the fleet prepared in secret. Dido discovers it and confronts him; he answers that he never claimed to be her husband and that he follows Italy 'not of his own will'. Her pleas, his silence, and her messages through Anna fail; like an oak battered by the winds, he stands firm though he groans inwardly.",
+    "Dido, pretending to perform a magic rite, builds a pyre with his sword and the bed they shared. Warned again by Mercury, Aeneas sails at night. At dawn Dido sees the fleet gone and curses Aeneas and his descendants, praying that an avenger will rise from her bones and that Carthage and Rome will be eternal enemies. She mounts the pyre and stabs herself with his sword. Juno sends Iris to release her lingering soul."
+   ],
+   "analysis": [
+    "Book 4 is the most famous and most argued-over book of the poem. Dido is drawn with the resources of Greek tragedy, Catullus and Apollonius' Medea; she is a queen and founder, Aeneas' equal and his mirror, an exile building a city. The narrator is openly partisan, calling her 'unhappy' and noting that she 'called it marriage' to hide her fault. Whether Aeneas wronged her, and whether the poem means us to judge him, has divided readers since antiquity [[pease1935]] [[quinn1968]].",
+    "The book also has a Roman political frame. Dido's curse looks forward to Hannibal and the Punic Wars, and Aeneas in Tyrian purple, idle in an eastern queen's city, recalls Antony with Cleopatra. Read this way, his departure is a choice of Rome over the East. Yet Virgil gives Dido the greatest speeches in the poem and gives Aeneas few words, so that the reader's sympathy cannot simply follow the political allegory [[quint1993]] [[lyne1987]].",
+    "The gods do not excuse the humans. Venus and Juno manipulate Dido's passion for their own ends, and Mercury's message gives Aeneas no choice; yet the narrator still describes her fall in terms of guilt (culpa) and his departure in terms of pietas. The book is the clearest example of the poem's habit of holding several judgements at once [[feeney1991]]."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 4.172",
+     "quote": "she calls it marriage, and with this name veils her fall.",
+     "note": "The narrator's comment on the cave scene. Whether there was a marriage is the legal and moral crux of the book: Dido believes there was, Aeneas denies it, and the poem lets both claims stand."
+    },
+    {
+     "ref": "Aen. 4.361",
+     "quote": "Not of my will do I follow Italy.",
+     "note": "Aeneas' reply to Dido ends on an incomplete line (Italiam non sponte sequor), one of the poem's half-lines. Whether by design or not, the speech breaks off at the point where duty and desire part."
+    },
+    {
+     "ref": "Aen. 4.625–626",
+     "quote": "Arise out of our dust, O unnamed avenger, to pursue the Dardanian settlement with firebrand and steel.",
+     "note": "Dido's curse looks forward to Hannibal. Her private grief becomes the origin of the Punic Wars, so that the cost of Aeneas' mission is written into Roman history."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "The Funeral Games",
+   "summary": [
+    "Looking back from the sea, the Trojans see the glow of Dido's pyre without knowing its cause. A storm drives them to Sicily, where their friend Acestes rules, and Aeneas holds games on the anniversary of Anchises' death: a ship race, a foot race, a boxing match and an archery contest, followed by the Game of Troy, a cavalry display by the Trojan boys led by Iulus.",
+    "Juno sends Iris, disguised as the old woman Beroe, to persuade the Trojan women, weary of wandering, to burn the ships. Jupiter sends rain to save most of them. On the advice of the old Nautes and of Anchises' ghost, Aeneas leaves the old and tired to found a city in Sicily and sails on with the rest. Venus asks Neptune for safe passage; he grants it at the price of one life. That night the god Sleep overcomes the helmsman Palinurus, who falls overboard, and Aeneas steers on alone, grieving."
+   ],
+   "analysis": [
+    "The games answer the funeral games for Patroclus in Iliad 23, and like them they show a community at play after grief. Several contests hint at Roman families (the ship captains are ancestors of noble houses) and at Augustan revivals: the Game of Troy was performed in Virgil's own day. Nisus' fall and his trick to win the race for his beloved Euryalus prepare for their deaths in Book 9 [[williams1983]] [[cairns1989]].",
+    "The book moves from celebration to sacrifice. Palinurus is the 'one life given for many' that Neptune demands, a pattern that recurs in the poem's last books, where the young die so that the community can go forward. The burning of the ships shows that the cost of the mission falls on the women too, who are left behind in a city that is a refuge rather than a destiny."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 5.231",
+     "quote": "to these success lends life; power comes with belief in it.",
+     "note": "Said of the crew of Mnestheus in the ship race (possunt, quia posse videntur). In a poem about destiny, the line is a rare celebration of human confidence."
+    },
+    {
+     "ref": "Aen. 5.815",
+     "quote": "one life shall be given for many.",
+     "note": "Neptune's price for the fleet's safe passage. The phrase introduces the logic of sacrifice that governs the deaths of Palinurus, Pallas and Turnus."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "The Underworld",
+   "summary": [
+    "At Cumae Aeneas consults the Sibyl, priestess of Apollo, who prophesies wars in Latium and a second Achilles. To enter the underworld he must pluck a golden bough and bury his comrade Misenus. Doves sent by Venus lead him to the bough. With the Sibyl he descends past the personified evils at the entrance and the ferryman Charon, meets the unburied Palinurus, and crosses the Styx.",
+    "In the Fields of Mourning he meets Dido. He weeps and protests that he left her unwillingly, but she turns away in silence and returns to her first husband Sychaeus. He meets the mutilated Trojan Deiphobus; the Sibyl describes the punishments of Tartarus; and they place the bough at the palace of Proserpina and enter Elysium.",
+    "There Anchises explains the purification and rebirth of souls, then shows Aeneas the future heroes of Rome waiting to be born: the Alban kings, Romulus, Augustus who will restore the golden age, the kings and heroes of the republic, Caesar and Pompey, and finally the young Marcellus, Augustus' nephew and heir, who died in 23 BC. Anchises dismisses his son and the Sibyl through the ivory gate of Sleep, by which false dreams are sent."
+   ],
+   "analysis": [
+    "Book 6 is the hinge of the poem. It reworks Odysseus' visit to the dead in Odyssey 11 but transforms it from a meeting with the past into a vision of the future. Aeneas meets those he has lost (Palinurus, Dido, Deiphobus) and then turns from them to the souls of Rome to come. Anchises' philosophical account of rebirth, drawing on Plato and Stoic ideas, gives the parade of heroes a cosmic frame [[austin1977]] [[otis1964]].",
+    "The parade is the poem's most direct praise of Augustus, but it is not simple propaganda. Anchises pleads with Caesar and Pompey not to turn their strength against their country, and the parade ends not in triumph but in mourning for Marcellus, a lament said to have made Octavia faint when Virgil recited it. Even the famous definition of Rome's mission, to rule, to impose peace, to spare the defeated and war down the proud, is tested by the poem's final scene [[putnam1965]].",
+    "The book's ending is its greatest puzzle. After this vision, Aeneas leaves by the gate through which 'false dreams' pass. Explanations range from the technical (the time of night) to the radical (that the vision of Roman greatness is itself illusory); the debate is discussed below [[austin1977]]."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 6.126–129",
+     "quote": "easy is the descent into hell; all night and day the gate of dark Dis stands open; but to recall thy steps and issue to upper air, this is the task and burden.",
+     "note": "The Sibyl's warning (facilis descensus Averno) became proverbial for the ease of falling into evil. For Aeneas the challenge is to return with knowledge, which he does through an ambiguous gate."
+    },
+    {
+     "ref": "Aen. 6.851–853",
+     "quote": "be thy charge, O Roman, to rule the nations in thine empire; this shall be thine art, to lay down the law of peace, to be merciful to the conquered and beat the haughty down.",
+     "note": "Anchises sets the Roman arts of government against Greek achievements in sculpture, oratory and astronomy. 'Parcere subiectis et debellare superbos' became the classic statement of the Roman imperial ideal, and the last scene of the poem asks whether Aeneas lives up to it."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Latium and the Outbreak of War",
+   "summary": [
+    "After burying his nurse Caieta, Aeneas sails past Circe's island and enters the mouth of the Tiber. The poet calls on the Muse Erato for a 'greater work'. King Latinus has been told by the oracle of Faunus that his daughter Lavinia must marry a foreign husband. When the Trojans eat their bread-plates, Iulus' joke shows that the Harpy's prophecy is fulfilled and they have arrived. Latinus welcomes Aeneas' envoy Ilioneus and offers Lavinia's hand.",
+    "Juno, enraged, resolves to delay what she cannot prevent and summons the Fury Allecto from the underworld. Allecto drives Queen Amata into a Bacchic frenzy against the match, appears to Turnus in a dream and fires him for war, and causes Iulus to wound a pet stag belonging to Silvia, daughter of the royal herdsman. Fighting breaks out. Latinus refuses to open the Gates of War and withdraws; Juno flings them open herself. The book ends with a catalogue of the Italian forces, led by Mezentius and closed by Turnus and the warrior maiden Camilla."
+   ],
+   "analysis": [
+    "The second invocation marks the start of the Iliadic half and calls it the greater work. The Italians are a settled, old people under a peaceful king, and the Trojans arrive as foreigners. Virgil insists on the injustice of the war's beginning: it is engineered by Juno and Allecto, sparked by an accident, and fought by peoples who were ready for peace. This has led some readers to see the second half of the poem as a civil war between future kin [[hardie1986]] [[otis1964]].",
+    "Juno's declaration that if she cannot bend heaven she will move hell sums up the furor that drives the second half. Allecto's three assaults, on a mother, a lover and the countryside, show madness spreading through every level of Italian society. The catalogue of Italians, modelled on the Iliad's Catalogue of Ships, presents the enemy with affection and antiquarian care: these are the ancestors of Rome too [[feeney1991]]."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 7.44–45",
+     "quote": "A greater history opens before me, a greater work I essay.",
+     "note": "The poet's claim (maius opus moveo) ranks war above wandering, and the Iliadic half above the Odyssean. It also suggests that the founding of Rome is a weightier subject than any Homeric theme."
+    },
+    {
+     "ref": "Aen. 7.312",
+     "quote": "if the powers of heaven are inflexible, I will stir up Acheron.",
+     "note": "Juno's motto (flectere si nequeo superos, Acheronta movebo). Freud took it as the epigraph of The Interpretation of Dreams, reading it as an image of repressed desire breaking out from below."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Evander and the Shield",
+   "summary": [
+    "The river god Tiberinus appears to Aeneas in a dream and confirms that he has come home; the white sow with thirty piglets appears as foretold. Aeneas rows upriver to Pallanteum, the modest town of the Arcadian exile Evander on the future site of Rome. Evander welcomes him, tells how Hercules killed the fire-breathing monster Cacus, and shows him the places that will become the Capitol, the Forum and the Lupercal, where cattle now graze.",
+    "Venus persuades her husband Vulcan to forge armour for her son. Evander, too weak to fight, sends his young son Pallas with Aeneas and directs him to the Etruscans, who have expelled the cruel Mezentius and await a foreign leader. Venus presents the armour. On the shield are scenes from Roman history: the wolf and the twins, the rape of the Sabines, the Gauls at the Capitol, Catiline punished and Cato giving laws, and at the centre the battle of Actium and Augustus' triple triumph of 29 BC. Aeneas, not understanding, lifts the shield to his shoulder."
+   ],
+   "analysis": [
+    "The visit to Pallanteum is a tour of Rome before Rome. Virgil plays on the contrast between rustic simplicity and later grandeur, and Evander's invitation to Aeneas to 'dare to despise wealth' expresses a moral ideal that Augustan Rome claimed to restore. Hercules' victory over Cacus is a pattern for heroic violence used in the service of order, and an anticipation of Aeneas' own fight against Turnus and Augustus' against Antony [[galinsky1996]] [[hardie1986]].",
+    "The shield of Aeneas answers the shield of Achilles in Iliad 18. Achilles' shield shows the whole of human life; Aeneas' shows Roman history, culminating at Actium, where Augustus and the gods of Rome face Antony, Cleopatra and the animal-headed gods of Egypt. The ekphrasis is the poem's most direct celebration of Augustus, but its last lines stress Aeneas' ignorance: he carries a future he cannot read [[putnam1965]] [[hardie1986]]."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 8.678–681",
+     "quote": "Here Caesar Augustus, leading Italy to battle with Fathers and People, with gods of household and of state, stands on the lofty stern; prosperous flames jet round his brow, and his ancestral star dawns overhead.",
+     "note": "Augustus at Actium is shown with the whole of Roman society and religion behind him, and with the comet of the deified Julius Caesar above him. The scene presents a civil war as a national war against the East."
+    },
+    {
+     "ref": "Aen. 8.730–731",
+     "quote": "rejoicing in the portraiture of unknown history, lifts on his shoulder the destined glories of his children.",
+     "note": "The book ends with Aeneas taking up the shield as he once took up Anchises. He bears the burden of the future as he bore the past, without understanding its meaning."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Nisus and Euryalus",
+   "summary": [
+    "Juno sends Iris to urge Turnus to attack the Trojan camp while Aeneas is away. Turnus tries to burn the Trojan ships, but they are made of the sacred pines of the goddess Cybele and turn into sea nymphs. The Trojans, obeying Aeneas' order, stay behind their walls.",
+    "Nisus and his young friend Euryalus volunteer to slip through the enemy lines to fetch Aeneas. They slaughter many sleeping Rutulians, but Euryalus takes a shining helmet as plunder, and its glint betrays them to a troop of cavalry. Euryalus is caught; Nisus, trying to save him, is killed over his body. The Rutulians parade their heads on spears, and Euryalus' mother laments on the walls.",
+    "Iulus kills his first man, the boastful Numanus, and Apollo praises him but warns him to fight no more. Turnus breaks into the camp when two giant Trojans open the gate, and kills many, but, cut off and alone, he escapes by leaping into the Tiber."
+   ],
+   "analysis": [
+    "The episode of Nisus and Euryalus reworks the night raid of Diomedes and Odysseus in Iliad 10, but where the Homeric raid succeeds, Virgil's ends in disaster. The friends' love is noble and their courage real, yet their killing of sleeping men verges on butchery, and Euryalus' greed for spoils destroys them. The narrator's tribute, promising them fame as long as Rome lasts, is both a sincere elegy and a reminder of how much the poem's glory costs [[williams1983]] [[lyne1987]].",
+    "Book 9 is Turnus' book, and it shows his heroic qualities as well as his violence; he is compared to a wolf and a lion, but he is also a great warrior worthy of epic. The mother of Euryalus, lamenting her son on the walls, recalls Andromache and Hecuba in the Iliad and voices the poem's sense of the price paid by the families of the young [[quinn1968]]."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 9.446–449",
+     "quote": "Happy pair! if my verse is aught of avail, no length of days shall ever blot you from the memory of time, while the house of Aeneas shall dwell by the Capitoline's stedfast stone",
+     "note": "A rare intervention in the narrator's own voice. Poetry promises the dead a fame tied to Rome's survival, so that their deaths become part of the city's history."
+    },
+    {
+     "ref": "Aen. 9.641",
+     "quote": "Good speed to thy young valour, O boy! this is the way to heaven",
+     "note": "Apollo's praise of Iulus after his first kill (sic itur ad astra). The phrase looks forward to the deification of the Julian line, but the god at once forbids the boy to fight again."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Pallas",
+   "summary": [
+    "Jupiter calls a council of the gods. Venus and Juno exchange accusations, and Jupiter declares that he will favour neither side: 'the Fates will find their way'. Aeneas sails back down the coast with an Etruscan fleet under Tarchon, and the transformed ships, now nymphs, warn him of the siege. The armies meet on the shore.",
+    "Pallas leads the Arcadians bravely, but Turnus seeks him out, kills him, and strips his heavy sword-belt, engraved with the murder of the sons of Aegyptus by their brides. Hearing the news, Aeneas rages through the battle: he takes eight young men alive to sacrifice at Pallas' pyre and refuses mercy to suppliants. Juno saves Turnus by luring him onto a ship with a phantom of Aeneas.",
+    "Mezentius, the godless tyrant, now leads the Italians. Aeneas wounds him, and his son Lausus steps in to protect him and is killed by Aeneas, who is moved to pity by the dying youth. Mezentius, grief-stricken, rides back to battle on his horse Rhoebus and dies by Aeneas' hand, asking only to be buried with his son."
+   ],
+   "analysis": [
+    "Book 10 is the most violent book in the poem and the one in which Aeneas behaves most like Achilles after the death of Patroclus. His human sacrifices and his refusal of mercy have troubled readers, though the poem frames them as acts of grief and vengeance in an epic tradition. The narrator's comment on Turnus taking the belt, that the mind of man does not know fate or keep measure in good fortune, prepares for the poem's last scene [[putnam1965]] [[galinsky1988]].",
+    "The death of Lausus is a counterpoint. Aeneas, seeing the boy's face grow pale, groans and stretches out his hand, thinking of his own love for his father; he calls Lausus 'pitiable' and leaves him his armour. Mezentius, despiser of the gods, is given a moving end as a father. Virgil repeatedly lets the enemy's family bonds mirror Aeneas' own pietas [[quinn1968]]."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 10.501–502",
+     "quote": "Ah spirit of man, ignorant of fate and the allotted future, or to keep bounds when elate with prosperity!",
+     "note": "The narrator's comment on Turnus' spoliation of Pallas (nescia mens hominum fati sortisque futurae). The belt becomes the instrument of his death in Book 12."
+    },
+    {
+     "ref": "Aen. 10.508",
+     "quote": "This one day sent thee first to war, this one day takes thee away",
+     "note": "The narrator's apostrophe to Pallas compresses a young man's whole life as a warrior into a single day, the poem's typical way of mourning the young."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Camilla",
+   "summary": [
+    "Aeneas sets up the arms of Mezentius as a trophy and sends Pallas' body home with a great procession, including the captives for sacrifice. Evander laments his son and asks that Turnus be killed in vengeance. A truce allows both sides to burn their dead. Latin envoys report that Diomedes, now settled in Italy, refuses to fight Aeneas, whom he praises as Hector's equal.",
+    "In the Latin council, Latinus proposes peace, and Drances, a jealous orator, attacks Turnus and urges him to fight Aeneas alone. Turnus answers with scorn and agrees to the duel if necessary. But the Trojans advance, and the debate collapses into war. Camilla, the Volscian warrior maiden dedicated as a child to Diana, leads the cavalry with great success until she is killed by the Etruscan Arruns while she pursues a richly dressed enemy; Diana's nymph Opis kills Arruns in turn. Turnus abandons his ambush, and Aeneas passes safely through the pass."
+   ],
+   "analysis": [
+    "Book 11 is a book of funerals and politics. Evander's lament and the burning of the dead on both sides express grief rather than glory, and the Latin council exposes the divisions of a people at war: Drances is right about the war but despicable in his motives, Turnus is wrong but courageous. The debate recalls the Roman senate as much as Homer's assemblies [[williams1983]].",
+    "Camilla is the poem's most striking warrior, drawn from the Amazon Penthesilea and from Italian legend. Like Euryalus she is distracted by gleaming spoils, and her death line is the same as Turnus' at the end of the poem. Her story, told by Diana, adds a further young victim to the war's account and gives the Italian side a heroine of real stature [[quinn1968]]."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 11.124–125",
+     "quote": "O Trojan, great in renown, yet greater in arms",
+     "note": "Drances' flattery of Aeneas. The praise is just, but it comes from a man whose hatred of Turnus makes him an unreliable voice of peace."
+    },
+    {
+     "ref": "Aen. 11.831",
+     "quote": "with a moan the life fled indignant into the dark.",
+     "note": "Camilla's death line (vitaque cum gemitu fugit indignata sub umbras) is repeated exactly as the last line of the poem, linking her death to Turnus'."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Turnus",
+   "summary": [
+    "Turnus resolves to fight Aeneas in single combat, despite the pleas of Latinus and Amata. A treaty is sworn: Aeneas promises that if he wins, Trojans and Latins will live together under equal laws. But Juno urges Turnus' sister, the nymph Juturna, to break the truce; she stirs up the Rutulians, an augur interprets a false omen, and fighting resumes. Aeneas, trying to restrain his men, is wounded by an arrow, and Venus secretly heals him.",
+    "Juturna, disguised as Turnus' charioteer, keeps her brother away from Aeneas. Aeneas attacks the city; Amata, believing Turnus dead, hangs herself. Turnus finally returns to face Aeneas. His sword breaks; Aeneas' spear sticks in a sacred olive stump; the gods intervene on both sides. On Olympus Jupiter and Juno are reconciled: she yields on condition that the Latins keep their name, language and dress, and the Trojans merge into them.",
+    "Jupiter sends a Dira, a hellish spirit in the form of an owl, to drive Juturna from the field and terrify Turnus. Turnus tries to hurl a huge stone but his strength fails him as in a dream. Aeneas' spear wounds him in the thigh. Turnus kneels and asks for mercy, conceding Lavinia. Aeneas hesitates, until he sees the belt of Pallas on Turnus' shoulder. Burning with fury, he kills him, and Turnus' soul flees resentful to the shades."
+   ],
+   "analysis": [
+    "Book 12 reworks the duel between Achilles and Hector in Iliad 22, but the reconciliation between Jupiter and Juno resolves the divine plot before the human one is finished. Juno's terms are significant: the future Romans will be Italians, not Trojans, and Troy's name will disappear. The poem thus ends with a founding that is also an absorption and a loss [[feeney1991]] [[tarrant2012]].",
+    "The final scene is the most debated passage in Latin literature. Turnus is defeated and humbled; Aeneas has been told by Anchises to spare the conquered. He hesitates, then kills him in rage, saying that Pallas makes the sacrifice. Some read the act as just vengeance and the necessary end of war; others as the moment where pietas yields to furor and the poem's ideals are undercut. The poem gives no resolution, no funeral, no return to peace: it ends with Turnus' death [[putnam1965]] [[galinsky1988]] [[thomas2001]]."
+   ],
+   "key": [
+    {
+     "ref": "Aen. 12.435–436",
+     "quote": "Learn of me, O boy, valour and toil indeed, fortune of others.",
+     "note": "Aeneas' farewell to Iulus echoes Ajax's words to his son in Sophocles. The hero offers his son a model of effort without success, a sober definition of heroism."
+    },
+    {
+     "ref": "Aen. 12.826–827",
+     "quote": "let Latium be, let Alban kings endure through ages, let Italian valour be potent in the race of Rome.",
+     "note": "Juno's condition for reconciliation. Rome will be Italian in name and strength, and Troy will be forgotten, so that the divine settlement implies the disappearance of the hero's own people."
+    },
+    {
+     "ref": "Aen. 12.948–949",
+     "quote": "Pallas it is, Pallas who now strikes the sacrifice, and exacts vengeance in thy guilty blood.",
+     "note": "Aeneas presents the killing as a sacrifice and a debt paid to the dead. Whether this is pietas toward Pallas and Evander or the furor the poem has warned against is the central question of the ending."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Aeneas",
+   "side": "Trojans",
+   "text": "Son of Venus and the mortal Anchises, a Trojan prince who survives the fall of the city to lead the exiles to Italy. He is defined by pietas, his devotion to gods, family and people, and by the suffering it costs him. Less dazzling than Achilles or Odysseus, he is a hero of endurance, often silent, often uncertain, who repeatedly gives up what he loves for a future he will not see. His behaviour in Book 4 and his killing of Turnus at the end have made him the focus of the poem's central interpretative debates [[otis1964]] [[johnson1976]]."
+  },
+  {
+   "name": "Anchises",
+   "side": "Trojans",
+   "text": "Aeneas' aged father, once the lover of Venus and crippled by Jupiter's thunderbolt for boasting of it. Carried out of Troy on his son's shoulders, he guides the voyage by interpreting omens until his death in Sicily. In the underworld he becomes the poem's prophet of Rome, explaining the destiny of souls and showing Aeneas the future heroes of the city."
+  },
+  {
+   "name": "Ascanius (Iulus)",
+   "side": "Trojans",
+   "text": "Aeneas' young son by Creusa, whose second name Iulus links him to the Julian family of Caesar and Augustus. He is the future for whose sake Aeneas sacrifices, a child in the early books who kills his first man in Book 9 and is told by Apollo that he will be the ancestor of gods."
+  },
+  {
+   "name": "Creusa",
+   "side": "Trojans",
+   "text": "Aeneas' wife, lost in the burning city as she follows him. Her ghost releases Aeneas from grief and foretells his new marriage in Italy. She is the first of the women whom his mission leaves behind."
+  },
+  {
+   "name": "Achates",
+   "side": "Trojans",
+   "text": "Aeneas' faithful companion, called 'fidus Achates', present at the hero's side in most key scenes. He has almost no personality of his own; his role is loyalty."
+  },
+  {
+   "name": "Palinurus",
+   "side": "Trojans",
+   "text": "Aeneas' helmsman, overcome by Sleep and thrown overboard on the way to Italy as the one life Neptune demands for the fleet's safe passage. His unburied ghost meets Aeneas in the underworld and is promised a name on the Italian coast (Cape Palinuro)."
+  },
+  {
+   "name": "Nisus and Euryalus",
+   "side": "Trojans",
+   "text": "Two devoted friends, an older man and a beautiful youth, who appear first in the foot race of Book 5 and die together in a night raid in Book 9. Their love, courage and recklessness make them the poem's most celebrated example of the young lives the war consumes."
+  },
+  {
+   "name": "Turnus",
+   "side": "Italians and Rutulians",
+   "text": "King of the Rutulians, Lavinia's suitor and leader of the Italian resistance. Proud, passionate and brave, he is maddened by Allecto into war but is also defending his marriage and his land against invaders. Virgil compares him to Achilles and lets him dominate the second half; his killing of Pallas and his death at Aeneas' hands make him both villain and victim [[putnam1965]]."
+  },
+  {
+   "name": "Latinus",
+   "side": "Italians and Rutulians",
+   "text": "Aged king of Latium, descendant of Saturn, who rules a peaceful people. He accepts the oracles and welcomes Aeneas, but he cannot control his wife, his people or Turnus, and he withdraws from power rather than lead them in a war he opposes."
+  },
+  {
+   "name": "Amata",
+   "side": "Italians and Rutulians",
+   "text": "Latinus' queen, who favours Turnus as Lavinia's husband. Maddened by Allecto, she leads the Latin women in a Bacchic frenzy; in Book 12, believing Turnus dead, she hangs herself, a death that recalls Dido's."
+  },
+  {
+   "name": "Lavinia",
+   "side": "Italians and Rutulians",
+   "text": "Daughter of Latinus, destined to marry Aeneas and become the mother of his Italian line. She never speaks; her one moment of visible feeling is a famous blush (12.64–69) whose meaning is left unexplained."
+  },
+  {
+   "name": "Camilla",
+   "side": "Italians and Rutulians",
+   "text": "A Volscian warrior maiden, dedicated as a baby to Diana and raised in the wilderness. She leads the Italian cavalry with brilliant success in Book 11 and is killed by the Etruscan Arruns; her death is mourned by Diana."
+  },
+  {
+   "name": "Mezentius",
+   "side": "Italians and Rutulians",
+   "text": "An Etruscan tyrant expelled by his own people for his cruelty, called 'despiser of the gods'. He fights for Turnus with savage courage, but the death of his son Lausus reveals a grieving father, and he dies with dignity at Aeneas' hand."
+  },
+  {
+   "name": "Lausus",
+   "side": "Italians and Rutulians",
+   "text": "Mezentius' young son, who dies protecting his wounded father. Aeneas' pity for him in Book 10 is one of the most humane moments in the war."
+  },
+  {
+   "name": "Juturna",
+   "side": "Italians and Rutulians",
+   "text": "A water nymph and Turnus' sister, made immortal by Jupiter. Prompted by Juno, she breaks the truce and keeps Turnus from the duel; driven off by Jupiter's Dira, she laments that her immortality condemns her to outlive her brother."
+  },
+  {
+   "name": "Drances",
+   "side": "Italians and Rutulians",
+   "text": "A Latin elder, eloquent and cowardly, who hates Turnus and urges peace in the council of Book 11. He shows that the right argument can come from the wrong man."
+  },
+  {
+   "name": "Dido",
+   "side": "Carthaginians",
+   "text": "Queen of Carthage, a Phoenician exile from Tyre who founds a new city after the murder of her husband Sychaeus. Intelligent, generous and capable, she is driven by divine interference into a love that destroys her. Her speeches of reproach, her curse and her silence in the underworld make her the poem's most memorable figure after Aeneas, and for many readers its tragic heart [[pease1935]]."
+  },
+  {
+   "name": "Anna",
+   "side": "Carthaginians",
+   "text": "Dido's sister and confidante, who encourages her love and later carries her messages to Aeneas. She discovers Dido dying and laments that she was deceived into helping prepare the pyre."
+  },
+  {
+   "name": "Evander",
+   "side": "Others",
+   "text": "An Arcadian Greek exile who rules Pallanteum, a small town on the future site of Rome. He welcomes Aeneas because of an old friendship with Anchises, shows him the landscape of the future city and entrusts him with his only son, Pallas. His lament in Book 11 is one of the poem's great expressions of parental grief."
+  },
+  {
+   "name": "Pallas",
+   "side": "Others",
+   "text": "Evander's young son, sent to learn war under Aeneas. He fights bravely in Book 10 and is killed by Turnus, who strips his sword-belt. His death binds Aeneas to vengeance and directly determines the poem's ending."
+  },
+  {
+   "name": "The Sibyl",
+   "side": "Others",
+   "text": "Deiphobe, the priestess of Apollo at Cumae, who prophesies war in Latium and guides Aeneas through the underworld. Her ecstatic possession by the god is one of the poem's most vivid descriptions of prophecy."
+  },
+  {
+   "name": "Juno",
+   "side": "Gods",
+   "text": "Queen of the gods, protector of Carthage and implacable enemy of the Trojans, whose anger sets the poem in motion. She knows she cannot defeat fate but tries to delay it, causing the storm, the Dido episode and the war in Italy. Her reconciliation with Jupiter in Book 12 ends the divine conflict. Many critics see her as a personification of the furor that Rome must contain [[feeney1991]]."
+  },
+  {
+   "name": "Venus",
+   "side": "Gods",
+   "text": "Aeneas' mother and protector, goddess of love and ancestor of the Julian family. She intervenes often on his behalf, but her methods, such as inflaming Dido with love and seducing Vulcan for armour, are manipulative, and she appears to her son mostly in disguise."
+  },
+  {
+   "name": "Jupiter",
+   "side": "Gods",
+   "text": "King of the gods and guarantor of fate, whose prophecy of Roman empire in Book 1 frames the poem. He stands above the quarrels of Juno and Venus, though he sends Mercury to Aeneas and the Dira against Turnus. The exact relation between Jupiter's will and fate is left ambiguous [[feeney1991]]."
+  },
+  {
+   "name": "Allecto",
+   "side": "Gods",
+   "text": "One of the Furies, summoned from the underworld by Juno in Book 7 to start the war. She maddens Amata and Turnus and engineers the first bloodshed, embodying the irrational violence that overwhelms Latium."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Pietas",
+   "text": [
+    "Pietas, the hero's defining quality, is not 'piety' in the modern sense but a sense of duty toward the gods, one's family, one's country and the dead. Aeneas introduces himself as 'pius Aeneas' (1.378), and the image of him carrying his father and leading his son expresses the virtue in its purest form. Pietas requires submission of the self: Aeneas repeatedly gives up personal desires, from a glorious death at Troy to life with Dido, for the sake of a mission that will benefit others [[otis1964]].",
+    "The poem also shows the cost and the limits of pietas. Its demands conflict with other loyalties, as in Book 4, where duty to Iulus' future means betraying Dido. And at the end of the poem, the killing of Turnus is presented both as an act of pietas toward Pallas and Evander and as a surrender to anger. Whether pietas and violence can be separated is one of the poem's open questions [[johnson1976]] [[galinsky1988]]."
+   ]
+  },
+  {
+   "title": "Fate and furor",
+   "text": [
+    "The Aeneid is governed by fate (fatum, literally 'what has been spoken'), which guarantees the foundation of Rome and the rule of Augustus. Oracles, prophecies and the parade of future heroes repeatedly remind the reader of the destined outcome. Against this order stands furor, irrational rage and passion, embodied in Juno, Allecto, Dido's love and Turnus' martial madness. Jupiter's prophecy of 'impious Furor' bound in chains (1.294–296) presents Roman history as the subjection of this force [[hardie1986]].",
+    "Yet furor is not confined to Rome's enemies. Aeneas himself takes up arms 'madly' at Troy, rages after Pallas' death, and kills Turnus 'set on fire by furies'. The poem's structure, which places order above chaos, is constantly disturbed by passions that cannot be contained, and the final victory of fate is achieved through an act of furor [[putnam1965]]."
+   ]
+  },
+  {
+   "title": "Empire and its cost",
+   "text": [
+    "The poem celebrates Rome's destiny to rule, set out in Jupiter's promise of 'empire without end' and Anchises' definition of the Roman arts of government. The shield of Aeneas shows that destiny reaching its climax in Augustus' victory at Actium and the submission of the world's peoples [[hardie1986]].",
+    "At the same time, Virgil never lets the reader forget the price. 'So great a task it was to found the Roman people' (1.33) sets the tone. The founding requires the death of Troy, of Creusa, Anchises, Palinurus, Dido, Pallas, Lausus, Camilla and Turnus. Many critics have seen in this insistent sense of loss a 'private voice' of sorrow that qualifies the public voice of imperial celebration [[parry1963]] [[lyne1987]]."
+   ]
+  },
+  {
+   "title": "The Homeric inheritance",
+   "text": [
+    "The Aeneid is written in constant dialogue with Homer. Its two halves correspond to the Odyssey and the Iliad, and countless scenes, similes and phrases rework Homeric models: the storm, the banquet narrative, the visit to the dead, the funeral games, the catalogue, the night raid, the shield, the final duel. Knauer catalogued these correspondences in detail and showed that they are structural, not decorative [[knauer1964]].",
+    "The relationship is also a contest. Aeneas is a Trojan, one of Homer's losers, whose descendants will conquer Greece; the poem rewrites the story of Troy from the side of the defeated and turns it into a story of victory. In the second half Aeneas plays an Achilles and Turnus calls himself one, so that the Homeric roles are unstable. Virgil's imitation is a way of interpreting Homer and asserting Rome's claim to the Greek heritage [[gransden1984]] [[conte1986]]."
+   ]
+  },
+  {
+   "title": "Loss and exile",
+   "text": [
+    "Aeneas is a refugee, 'an exile by fate', and the first half of the poem is a story of homelessness. The Trojans are repeatedly tempted to stop, in Thrace, Crete, Buthrotum, Carthage and Sicily, and each place proves wrong. Their search for the 'ancient mother' is also a process of letting go of Troy itself [[quinn1968]].",
+    "Loss runs through the poem's emotional life: Aeneas loses his city, his wife, his father, his helmsman and his lover, and his attempts to embrace the dead fail three times. The poem's characteristic tone, a melancholy sense of 'the tears of things', has made it for many readers less an epic of triumph than one of mourning [[johnson1976]]."
+   ]
+  },
+  {
+   "title": "Rome's future",
+   "text": [
+    "Although the action takes place in the legendary past, the poem is constantly oriented toward Rome's future and Virgil's present. Prophecy (Jupiter in Book 1, Anchises in Book 6), ekphrasis (the shield in Book 8) and aetiology (the explanation of Roman names, rites and places) make the story of Aeneas a prehistory of Augustan Rome. The visit to Pallanteum shows the Capitol and Forum as pastures, so that the reader sees past and future at once [[hardie1986]].",
+    "This double vision is ironic as well as celebratory. Aeneas cannot understand the future he is shown, and the poem's readers, who know what Rome became, including its civil wars, cannot share his ignorance. The tension between the hero's limited view and the reader's knowledge is one of the main sources of the poem's power [[feeney1991]]."
+   ]
+  },
+  {
+   "title": "The suffering of the defeated",
+   "text": [
+    "Virgil gives unusual weight to those who lose: the Trojans of Book 2, Dido, the Italians, Mezentius, Lausus, Camilla, Juturna and Turnus. The narrator mourns them, the Italians are given a dignified catalogue and noble deaths, and the poem ends not with the victor's triumph but with the victim's resentful soul. In this respect the Aeneid follows the Iliad, which shows equal pity for Trojans and Greeks [[parry1963]].",
+    "Critics disagree about what this sympathy means. For some it is a humane complement to the poem's imperial vision, consistent with the duty to spare the conquered; for others it is a deep criticism of empire. David Quint distinguishes between an 'epic of the winners', which imposes a single narrative, and the voices of the losers that the Aeneid also records, such as Dido's curse [[quint1993]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Prophecy",
+   "text": "The poem is full of oracles, omens, dreams and prophetic speeches: Jupiter's prophecy, Creusa's ghost, the Penates, Celaeno, Helenus, the Sibyl, Anchises, Tiberinus. They make the poem teleological, constantly pointing toward Rome, but they are often obscure, misinterpreted or fulfilled in unexpected ways. Prophecy also allows Virgil to bring the history of Rome down to his own day within a mythical narrative [[otis1964]]."
+  },
+  {
+   "title": "Funeral games and burials",
+   "text": "Burial rites recur throughout: Polydorus, Anchises' anniversary games, Misenus, Caieta, the unburied Palinurus, Pallas, the truce to burn the dead. They express pietas toward the dead and mark the stages of the journey. The poem's final lack of a funeral for Turnus is all the more striking against this background."
+  },
+  {
+   "title": "Ekphrasis",
+   "text": "Descriptions of works of art, such as the Trojan War murals at Carthage, the doors of Daedalus at Cumae, Pallas' sword-belt and the shield of Aeneas, place scenes within the narrative that comment on it. Characters often misread or cannot read them: Aeneas finds comfort in the murals, is called away before he can finish looking at the Cumaean doors and does not understand the shield [[putnam1965]] [[hardie1986]]."
+  },
+  {
+   "title": "Similes",
+   "text": "Virgil's similes adapt Homer's but are more closely tied to their context and to each other. Neptune is a statesman, Carthaginians are bees, Dido is a wounded deer and Aeneas an oak in the storm, Turnus is a wolf and a lion. Many are disturbing: the heroic Aeneas is compared to a monster, and Dido's city falls in a simile as if captured by an enemy. Viktor Pöschl showed how the similes form a network of symbolic images across the poem [[poschl1962]]."
+  },
+  {
+   "title": "Half-lines",
+   "text": "Nearly sixty lines in the poem are incomplete. Ancient biography explained them as temporary placeholders left by a poet who died before revising. Some, such as Aeneas' 'Italiam non sponte sequor' (4.361), are so effective that readers have suspected design, but most scholars accept that they are signs of the poem's unfinished state [[sparrow1931]]."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The golden bough",
+   "text": "The bough of gold hidden in a dark wood, which Aeneas must pluck to enter the underworld, is a gift for Proserpina and a sign of divine favour: it yields only to the one fated to take it. It is compared to mistletoe in winter, a living thing on an alien tree. Yet when Aeneas pulls it, it 'lingers' (cunctantem, 6.211), a detail that has been read as a hint that even the chosen hero's path is not simple [[austin1977]]."
+  },
+  {
+   "title": "The shield of Aeneas",
+   "text": "Forged by Vulcan, the shield shows Roman history from the twins and the she-wolf to Augustus' triumph. It symbolises the destiny Aeneas carries without understanding it, and the burden of the future placed on the shoulders of the founder. As an answer to the shield of Achilles, it also symbolises Virgil's transformation of Homer's universal vision into a national history [[hardie1986]]."
+  },
+  {
+   "title": "Pallas' sword-belt",
+   "text": "The belt Turnus takes from Pallas is engraved with the Danaids, who killed their bridegrooms on their wedding night. Its image of young men slaughtered before their time mirrors the death of Pallas, and its subject, murder within a family, suggests civil war. When Aeneas sees it on Turnus' shoulder, it turns his hesitation into rage; the belt is the final cause of the poem's ending [[putnam1965]]."
+  },
+  {
+   "title": "The gates of sleep",
+   "text": "Two gates lead out of the underworld: one of horn, through which true shades pass, and one of ivory, through which the shades send false dreams. Anchises sends Aeneas and the Sibyl out through the ivory gate. The image, drawn from Penelope's speech in Odyssey 19, has become a symbol of the poem's ambiguity about the truth of its own vision of Rome [[austin1977]]."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Two voices: the Augustan and the 'pessimistic' readings",
+   "text": [
+    "For much of the twentieth century the dominant reading of the Aeneid saw it as a celebration of Augustus and the Roman mission, a poem in which pietas overcomes furor and order triumphs over chaos. Richard Heinze's study of Virgil's epic technique and Brooks Otis's 'civilized poetry' both presented Aeneas as a hero who learns to subordinate himself to the destiny of Rome [[heinze1993]] [[otis1964]].",
+    "In the 1960s a group of mostly American critics, whom W. R. Johnson later called the 'Harvard school' (Clausen taught at Harvard, and Parry and Putnam took their doctorates there), challenged this view. Adam Parry described a 'public voice' of triumph and a 'private voice' of regret running through the poem; Clausen and Michael Putnam emphasised its sense of loss and the darkness of its ending. Johnson himself, and R. O. A. M. Lyne in Britain, developed related approaches [[parry1963]] [[clausen1964]] [[putnam1965]] [[johnson1976]] [[lyne1987]].",
+    "The 'pessimistic' reading in turn provoked responses defending the Augustan interpretation in more nuanced forms, notably by Karl Galinsky and Francis Cairns, while Richard Thomas argued that the optimistic reading has itself been shaped by a long tradition of reception sympathetic to imperial power. Many recent critics reject the polarity altogether and stress the poem's capacity to hold contradictory views [[galinsky1996]] [[cairns1989]] [[thomas2001]]."
+   ],
+   "cite": [
+    "heinze1993",
+    "otis1964",
+    "parry1963",
+    "clausen1964",
+    "putnam1965",
+    "johnson1976",
+    "lyne1987",
+    "galinsky1996",
+    "cairns1989",
+    "thomas2001"
+   ]
+  },
+  {
+   "title": "The ending and the killing of Turnus",
+   "text": [
+    "The poem ends abruptly with Aeneas killing a defeated, supplicating enemy in a fit of fury. For Putnam and others, this is the moment where Aeneas abandons his father's command to spare the conquered and becomes the embodiment of the furor the poem condemns; the ending exposes the violence on which empire rests [[putnam1965]].",
+    "Others argue that the killing is justified: Turnus has broken a treaty and killed Pallas, Aeneas owes vengeance to Evander, and ancient ethical theory, especially Aristotelian, allowed righteous anger. Galinsky's article on 'The Anger of Aeneas' is the classic statement of this view. A third position holds that the poem deliberately leaves the act ambiguous, refusing the comfort of either judgement [[galinsky1988]] [[tarrant2012]]."
+   ],
+   "cite": [
+    "putnam1965",
+    "galinsky1988",
+    "tarrant2012",
+    "thomas2001"
+   ]
+  },
+  {
+   "title": "Dido: tragedy and Aeneas' responsibility",
+   "text": [
+    "Readers since antiquity have wept for Dido; Augustine famously confessed that he did so as a boy. The poem gives her the most powerful speeches and portrays her as a victim of divine manipulation. Critics debate whether Aeneas is to blame, whether he promised marriage, and whether his departure is admirable obedience to duty or callous betrayal [[pease1935]] [[quinn1968]].",
+    "Some readers see Dido through Roman eyes, as a woman who broke her vow to her dead husband and as a figure of the dangerous East, like Cleopatra; others stress the poem's sympathy for her and its sense that Rome's founding requires the destruction of an innocent. The silence of her ghost in Book 6 suggests that the poem itself does not consider the matter settled [[lyne1987]] [[quint1993]]."
+   ],
+   "cite": [
+    "pease1935",
+    "quinn1968",
+    "lyne1987",
+    "quint1993"
+   ]
+  },
+  {
+   "title": "The gates of horn and ivory",
+   "text": [
+    "Why does Anchises send Aeneas out of the underworld by the gate of false dreams? The ancient commentator Servius offered two answers: that the gate marks the hour of the night, and that the poet wishes everything he has said to be understood as false. Modern critics have taken the second hint further, suggesting that the glorious future of Rome shown by Anchises is not to be trusted [[austin1977]].",
+    "A middle position holds that Aeneas, as a living man, cannot leave by the gate of 'true shades', and that the ivory gate marks the end of the vision without negating it. The passage has been central to 'pessimistic' readings of the poem, but its meaning remains disputed [[horsfall1995]] [[williams1983]]."
+   ],
+   "cite": [
+    "austin1977",
+    "horsfall1995",
+    "williams1983"
+   ]
+  },
+  {
+   "title": "Virgil and Homer",
+   "text": [
+    "Ancient critics already compared Virgil with Homer, some accusing him of plagiarism. Modern scholarship has shown how systematically the Aeneid is built on the Homeric poems; Knauer's lists of correspondences demonstrate that Virgil often combines several Homeric models in one scene. The question is no longer whether Virgil imitates but how imitation creates meaning [[knauer1964]].",
+    "Gian Biagio Conte's theory of 'poetic memory' sees allusion as a rhetorical figure, by which the reader recognises the model and notes the difference. Gransden and others have studied how the second half reshapes the Iliad, with Turnus and Aeneas both cast as Achilles. Virgil's dialogue with Homer is thus a way of thinking about history, heroism and Rome's place in the tradition [[conte1986]] [[gransden1984]]."
+   ],
+   "cite": [
+    "knauer1964",
+    "conte1986",
+    "gransden1984"
+   ]
+  },
+  {
+   "title": "The unfinished poem and Virgil's wish to burn it",
+   "text": [
+    "The Life of Virgil records that the poet wanted the Aeneid burned and that Augustus overruled him. The half-lines, some inconsistencies (especially in Book 3) and the abrupt ending suggest that the poem was not fully revised. Whether Virgil wished to destroy it because it was imperfect, or for some deeper reason, cannot be known [[sparrow1931]] [[horsfall1995]].",
+    "The poem's unfinished state matters for interpretation. Some critics argue that Virgil would have added a more reassuring conclusion, such as Turnus' burial or Aeneas' marriage; most now believe the ending is as Virgil intended it, since it echoes the death of Camilla and closes the poem's structure. The story of the wish to burn the poem has itself become part of the Aeneid's reception, for example in Hermann Broch's novel The Death of Virgil (1945) [[thomas2001]]."
+   ],
+   "cite": [
+    "sparrow1931",
+    "horsfall1995",
+    "thomas2001"
+   ]
+  },
+  {
+   "title": "The gods and fate",
+   "text": [
+    "What is the relationship between Jupiter and fate? Sometimes he seems to control it, sometimes merely to know it. Juno can delay but not alter it. The gods are both allegorical forces (Juno as furor, Jupiter as order) and characters with passions, deceits and comic moments inherited from Homer [[feeney1991]].",
+    "Denis Feeney has argued that Virgil's gods should be read as literary characters in a tradition, not as a coherent theology; others have seen Stoic ideas of providence in the poem. The gods' role also bears on human responsibility: if Dido and Turnus are driven mad by divine agents, how far are they to blame? [[feeney1991]] [[williams1983]]"
+   ],
+   "cite": [
+    "feeney1991",
+    "williams1983",
+    "heinze1993"
+   ]
+  },
+  {
+   "title": "The Aeneid's politics and Augustus",
+   "text": [
+    "Virgil was a friend of Augustus' circle, and the poem contains explicit praise of the emperor in Books 1, 6 and 8. It has often been read as a poem commissioned to legitimise the new regime by tracing it back to Aeneas and the gods. Ronald Syme's classic history The Roman Revolution (1939) treated the Augustan poets as part of an organised management of opinion [[galinsky1996]].",
+    "Recent scholarship has stressed complexity. Galinsky describes Augustan culture as a dialogue rather than propaganda; Hardie shows how the poem links Roman power with cosmic order; Quint reads it as the founding text of an imperial epic tradition that also preserves the voices of the defeated. The poem's preoccupation with civil war, a subject Augustus wished to close, suggests that its relation to power cannot be reduced to praise or criticism [[galinsky1996]] [[hardie1986]] [[quint1993]]."
+   ],
+   "cite": [
+    "galinsky1996",
+    "hardie1986",
+    "quint1993",
+    "cairns1989"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Aen. 1.1–7",
+   "quote": "I sing of arms and the man who of old from the coasts of Troy came, an exile of fate, to Italy and the shore of Lavinium",
+   "who": "The narrator",
+   "explanation": "The opening line combines the themes of both Homeric epics, the warrior and the wanderer, and declares the poem's ambition to rival them. Aeneas is introduced not by his name or his deeds but by his destiny and his exile: he is a man driven by forces larger than himself."
+  },
+  {
+   "ref": "Aen. 1.33",
+   "quote": "Such work was it to found the Roman people.",
+   "who": "The narrator",
+   "explanation": "This line (tantae molis erat Romanam condere gentem) closes the proem. It acknowledges the immense cost of Rome's foundation in suffering and labour, and introduces the poem's double perspective of glory and grief."
+  },
+  {
+   "ref": "Aen. 1.278–279",
+   "quote": "I appoint to these neither period nor boundary of empire: I have given them dominion without end.",
+   "who": "Jupiter",
+   "explanation": "Jupiter's promise of an empire without limits of space or time (imperium sine fine dedi) is the poem's boldest statement of Roman destiny. Its absolute claim stands in tension with the poem's attention to loss, and with the fact that every empire known to Virgil's readers had ended."
+  },
+  {
+   "ref": "Aen. 1.462",
+   "quote": "here mortal estate touches the soul to tears.",
+   "who": "Aeneas",
+   "explanation": "Aeneas, seeing his own war painted on the temple walls, finds comfort in the sympathy of strangers. The Latin 'sunt lacrimae rerum' has become the classic expression of the sadness of human affairs, and it defines the compassionate tone that distinguishes Virgil's epic."
+  },
+  {
+   "ref": "Aen. 4.361",
+   "quote": "Not of my will do I follow Italy.",
+   "who": "Aeneas",
+   "explanation": "Aeneas' final words to Dido sum up his conflict between personal desire and divine duty. The incomplete line, abruptly broken off, may reflect the poem's unfinished state, but it also captures the moment when Aeneas chooses his mission over his love."
+  },
+  {
+   "ref": "Aen. 6.851–853",
+   "quote": "be thy charge, O Roman, to rule the nations in thine empire; this shall be thine art, to lay down the law of peace, to be merciful to the conquered and beat the haughty down.",
+   "who": "Anchises",
+   "explanation": "Anchises defines the Roman mission: not the arts and sciences of the Greeks but government, peace and justice. The ideal of sparing the conquered becomes the measure by which Aeneas' final act is judged."
+  },
+  {
+   "ref": "Aen. 6.893–896",
+   "quote": "There are twin portals of Sleep, whereof the one is fabled of horn, and by it real shadows are given easy outlet; the other shining white of polished ivory, but false visions issue upward from the ghostly world.",
+   "who": "The narrator",
+   "explanation": "The gates of sleep close the underworld book, and Aeneas leaves by the ivory gate of false visions. The passage casts a shadow of doubt over the vision of Rome that has just been revealed, and remains one of the poem's great unsolved puzzles."
+  },
+  {
+   "ref": "Aen. 7.312",
+   "quote": "if the powers of heaven are inflexible, I will stir up Acheron.",
+   "who": "Juno",
+   "explanation": "Juno's declaration of war on fate expresses the irrational force of furor that opposes the poem's divine order. Her appeal to the powers below turns the second half of the poem into a war unleashed from hell."
+  },
+  {
+   "ref": "Aen. 12.947–949",
+   "quote": "Mayest thou, thou clad in the spoils of my dearest, escape mine hands? Pallas it is, Pallas who now strikes the sacrifice, and exacts vengeance in thy guilty blood.",
+   "who": "Aeneas",
+   "explanation": "Aeneas' last words in the poem turn the killing of Turnus into a sacrificial act on behalf of Pallas. The words may be read as justice, as vengeance or as a surrender to rage, and their ambiguity is the heart of the debate about the ending."
+  },
+  {
+   "ref": "Aen. 12.951–952",
+   "quote": "But his limbs grow slack and chill, and the life with a moan flies indignantly into the dark.",
+   "who": "The narrator",
+   "explanation": "The poem's last line describes not the victor's triumph but the loser's resentful soul. It repeats the death line of Camilla and leaves the reader with the suffering of the defeated rather than the foundation of Rome."
+  }
+ ],
+ "questions": [
+  {
+   "q": "What does pietas mean in the Aeneid, and does Aeneas remain pius at the end of the poem?",
+   "hint": "Consider the image of Aeneas carrying Anchises in Book 2 and his treatment of Dido in Book 4. Then compare Anchises' command in Book 6 to spare the conquered with the killing of Turnus. Is vengeance for Pallas a form of pietas?"
+  },
+  {
+   "q": "How does Virgil present Dido? Is she a tragic heroine, a dangerous temptation or both?",
+   "hint": "Look at the narrator's comments, the role of the gods, and Dido's speeches in Book 4. Consider the Roman political associations of Carthage and Cleopatra, and her silence in Book 6."
+  },
+  {
+   "q": "In what ways does the Aeneid imitate the Iliad and the Odyssey, and how does it change them?",
+   "hint": "Compare specific scenes: the storm, the visit to the dead, the shield, the funeral games, the final duel. Ask how Virgil's changes reflect a Roman, rather than Greek, set of values."
+  },
+  {
+   "q": "What is the significance of Aeneas leaving the underworld by the ivory gate?",
+   "hint": "Consider what Aeneas has seen in Book 6 and the tradition of the two gates from Odyssey 19. Does the gate cast doubt on the vision of Rome, or is there a simpler explanation?"
+  },
+  {
+   "q": "How does the Aeneid portray Augustus and Roman history? Is the poem a celebration of the regime?",
+   "hint": "Examine Jupiter's prophecy in Book 1, the parade of heroes in Book 6 and the shield in Book 8. Then consider the lament for Marcellus, the references to civil war and the end of the poem."
+  },
+  {
+   "q": "What role do the gods play in the poem? Are humans responsible for their actions?",
+   "hint": "Look at Juno's interventions, Venus' manipulation of Dido, Allecto's madness and Jupiter's statement that 'the Fates will find their way' in Book 10."
+  },
+  {
+   "q": "Why does Virgil give so much sympathy to Turnus and the Italians?",
+   "hint": "Consider the catalogue in Book 7, the deaths of Lausus and Camilla, Juno's terms in Book 12, and the idea that Romans descend from both Trojans and Italians."
+  },
+  {
+   "q": "What is the function of the shield of Aeneas in Book 8?",
+   "hint": "Compare it with the shield of Achilles in Iliad 18. Why does the narrator stress that Aeneas does not understand what he sees?"
+  },
+  {
+   "q": "How does the theme of young lives lost shape the second half of the poem?",
+   "hint": "Trace the deaths of Nisus and Euryalus, Pallas, Lausus and Camilla, and the lament for Marcellus in Book 6. How does the narrator speak about them?"
+  },
+  {
+   "q": "Why does the poem end so abruptly, and what difference does it make that the poem is unfinished?",
+   "hint": "Consider the half-lines, the story that Virgil wanted the poem burned, and the repetition of Camilla's death line. Would a reassuring ending have changed the poem's meaning?"
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "austin1977",
+   "text": "Austin, R. G., ed. P. Vergili Maronis Aeneidos Liber Sextus. Oxford: Clarendon Press, 1977."
+  },
+  {
+   "id": "cairns1989",
+   "text": "Cairns, Francis. Virgil's Augustan Epic. Cambridge: Cambridge University Press, 1989."
+  },
+  {
+   "id": "clausen1964",
+   "text": "Clausen, Wendell. \"An Interpretation of the Aeneid.\" Harvard Studies in Classical Philology 68 (1964): 139–147."
+  },
+  {
+   "id": "conte1986",
+   "text": "Conte, Gian Biagio. The Rhetoric of Imitation: Genre and Poetic Memory in Virgil and Other Latin Poets. Ed. Charles Segal. Ithaca: Cornell University Press, 1986."
+  },
+  {
+   "id": "feeney1991",
+   "text": "Feeney, D. C. The Gods in Epic: Poets and Critics of the Classical Tradition. Oxford: Clarendon Press, 1991."
+  },
+  {
+   "id": "galinsky1988",
+   "text": "Galinsky, Karl. \"The Anger of Aeneas.\" American Journal of Philology 109.3 (1988): 321–348."
+  },
+  {
+   "id": "galinsky1996",
+   "text": "Galinsky, Karl. Augustan Culture: An Interpretive Introduction. Princeton: Princeton University Press, 1996."
+  },
+  {
+   "id": "gransden1984",
+   "text": "Gransden, K. W. Virgil's Iliad: An Essay on Epic Narrative. Cambridge: Cambridge University Press, 1984."
+  },
+  {
+   "id": "hardie1986",
+   "text": "Hardie, Philip R. Virgil's Aeneid: Cosmos and Imperium. Oxford: Clarendon Press, 1986."
+  },
+  {
+   "id": "heinze1993",
+   "text": "Heinze, Richard. Virgil's Epic Technique. Trans. Hazel Harvey, David Harvey and Fred Robertson. Berkeley: University of California Press, 1993. First published as Virgils epische Technik. Leipzig: Teubner, 1903."
+  },
+  {
+   "id": "horsfall1995",
+   "text": "Horsfall, Nicholas, ed. A Companion to the Study of Virgil. Leiden: Brill, 1995."
+  },
+  {
+   "id": "johnson1976",
+   "text": "Johnson, W. R. Darkness Visible: A Study of Vergil's Aeneid. Berkeley: University of California Press, 1976."
+  },
+  {
+   "id": "knauer1964",
+   "text": "Knauer, Georg Nicolaus. Die Aeneis und Homer: Studien zur poetischen Technik Vergils mit Listen der Homerzitate in der Aeneis. Göttingen: Vandenhoeck & Ruprecht, 1964."
+  },
+  {
+   "id": "lyne1987",
+   "text": "Lyne, R. O. A. M. Further Voices in Vergil's Aeneid. Oxford: Clarendon Press, 1987."
+  },
+  {
+   "id": "otis1964",
+   "text": "Otis, Brooks. Virgil: A Study in Civilized Poetry. Oxford: Clarendon Press, 1963."
+  },
+  {
+   "id": "parry1963",
+   "text": "Parry, Adam. \"The Two Voices of Virgil's Aeneid.\" Arion 2.4 (1963): 66–80."
+  },
+  {
+   "id": "pease1935",
+   "text": "Pease, Arthur Stanley, ed. Publi Vergili Maronis Aeneidos Liber Quartus. Cambridge, MA: Harvard University Press, 1935."
+  },
+  {
+   "id": "poschl1962",
+   "text": "Pöschl, Viktor. The Art of Vergil: Image and Symbol in the Aeneid. Trans. Gerda Seligson. Ann Arbor: University of Michigan Press, 1962."
+  },
+  {
+   "id": "putnam1965",
+   "text": "Putnam, Michael C. J. The Poetry of the Aeneid: Four Studies in Imaginative Unity and Design. Cambridge, MA: Harvard University Press, 1965."
+  },
+  {
+   "id": "quinn1968",
+   "text": "Quinn, Kenneth. Virgil's Aeneid: A Critical Description. London: Routledge & Kegan Paul, 1968."
+  },
+  {
+   "id": "quint1993",
+   "text": "Quint, David. Epic and Empire: Politics and Generic Form from Virgil to Milton. Princeton: Princeton University Press, 1993."
+  },
+  {
+   "id": "sparrow1931",
+   "text": "Sparrow, John. Half-Lines and Repetitions in Virgil. Oxford: Clarendon Press, 1931."
+  },
+  {
+   "id": "tarrant2012",
+   "text": "Tarrant, Richard, ed. Virgil: Aeneid Book XII. Cambridge: Cambridge University Press, 2012."
+  },
+  {
+   "id": "thomas2001",
+   "text": "Thomas, Richard F. Virgil and the Augustan Reception. Cambridge: Cambridge University Press, 2001."
+  },
+  {
+   "id": "williams1983",
+   "text": "Williams, Gordon. Technique and Ideas in the Aeneid. New Haven: Yale University Press, 1983."
+  }
+ ]
+}

@@ -5557,7 +5557,7 @@
   // overview, book-by-book summary and analysis, characters, themes, the critical debates,
   // key passages (quoted from the recommended translation), questions and a bibliography.
   // Paragraphs cite with [[bibId]], drawn as (Author year) linked to the bibliography.
-  const GUIDES = new Set(["iliad"]);
+  const GUIDES = new Set(["iliad", "aeneid"]);
   const GUIDE_FILES = {};
   const GUIDE_PARTS = [["overview", "Overview"], ["books", "Book by book"], ["characters", "Characters"],
     ["themes", "Themes & symbols"], ["debates", "Critical debates"], ["quotes", "Key passages"],
