@@ -3185,3 +3185,4 @@ a.ec-here { color: var(--accent); }
 .gd-box + .gd-box { margin-top: -.8rem; }
 .pp-box { border-left-color: var(--gold, #b08d3c); }
 .pp-box .gd-box-k { color: var(--gold, #9a7a2e); }
+.gd-lines { margin: -.4rem 0 1rem !important; color: var(--ink-soft); font-size: .9rem; }

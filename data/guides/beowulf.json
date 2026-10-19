@@ -1,0 +1,930 @@
+{
+ "work": "beowulf",
+ "title": "Beowulf",
+ "author": "Anonymous (Old English)",
+ "quoteEdition": "beowulf",
+ "unit": "Part",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Manuscript",
+   "value": "Unique copy in London, British Library, Cotton Vitellius A.xv (the 'Nowell Codex'), written by two scribes around the year 1000; the hand changes in line 1939"
+  },
+  {
+   "label": "The 1731 fire",
+   "value": "Damaged in the fire at Ashburnham House on 23 October 1731; the scorched edges later crumbled, and the transcripts made for Grímur Thorkelin in 1787 preserve many letters since lost"
+  },
+  {
+   "label": "Composed",
+   "value": "Disputed: estimates range from the late seventh century to the early eleventh; most metrical and linguistic studies now favour the eighth century or earlier"
+  },
+  {
+   "label": "Genre",
+   "value": "Heroic poem with strong elegiac and homiletic elements; often called the oldest surviving epic in English"
+  },
+  {
+   "label": "Length",
+   "value": "3,182 lines, divided in the manuscript into a prologue and numbered sections called fitts"
+  },
+  {
+   "label": "Metre",
+   "value": "The Old English alliterative long line: two half-lines of two stresses each, bound across the caesura by alliteration"
+  },
+  {
+   "label": "Dialect",
+   "value": "Mainly late West Saxon, the literary standard of the copyists, with a significant admixture of Anglian and archaic forms"
+  },
+  {
+   "label": "Setting",
+   "value": "Southern Scandinavia in the late fifth and sixth centuries: the Danish court at Heorot and the land of the Geats in what is now southern Sweden"
+  },
+  {
+   "label": "Protagonist",
+   "value": "Beowulf, son of Ecgtheow, nephew of the Geatish king Hygelac, later king of the Geats for fifty winters"
+  },
+  {
+   "label": "Key themes",
+   "value": "The heroic code and loyalty to one's lord; kingship; fate and providence; a Christian poet's view of a pagan past; feud; mortality and transience; treasure; women as peace-weavers"
+  }
+ ],
+ "context": [
+  "Beowulf survives in a single manuscript, now London, British Library, Cotton Vitellius A.xv. The part containing the poem, called the Nowell Codex after the Elizabethan antiquary Laurence Nowell, whose name is written on its first page, also contains a fragment of a life of St Christopher, The Wonders of the East, The Letter of Alexander to Aristotle and the Old English poem Judith. Two scribes copied Beowulf, the second taking over in the middle of line 1939. The book was in the library of Sir Robert Cotton, and it was scorched in the fire at Ashburnham House in 1731; its edges went on crumbling until the leaves were mounted in paper frames in the nineteenth century. The Icelandic scholar Grímur Jónsson Thorkelin had two transcripts made in 1787 and published the first edition in 1815 [[kiernan1981]] [[fulk2008]].",
+  "Palaeographers date the manuscript to roughly 975–1025, most often to around the year 1000 [[fulk2008]]; Kiernan argued for the reign of Cnut (1016–35) [[kiernan1981]]. The poem itself is certainly older than the copy, but how much older is one of the great disputed questions of the field. Earlier scholars often placed it in the age of Bede, in seventh- or eighth-century Northumbria or Mercia; in the 1970s and 1980s confidence in that view collapsed, and the essays collected by Colin Chase in 1981 range from the eighth century to the eleventh [[chase1981]]. Since then, arguments from metre, spelling and scribal error have moved most specialists back towards an early date [[fulk1992]] [[lapidge2000]] [[neidorf2014]].",
+  "The poem's world is not England but Scandinavia in the migration period. Its Danes are the Scyldings, descendants of the founder Scyld Scefing; its Geats (Old English Gēatas) are a people of what is now southern Sweden; their wars with the Swedes and the Franks form a dark background to the second half. At least one event can be dated: the death of Beowulf's lord Hygelac on a raid against the Frisians corresponds to the death of a Scandinavian king called Chlochilaicus recorded by Gregory of Tours, usually placed around 520. The ship burial at Sutton Hoo in Suffolk, excavated in 1939, has made the poem's helmets, mailcoats and treasure-laden funerals vivid, and some scholars connect the poem's interest in the Scyldings with the East Anglian royal house [[chambers1921]] [[newton1993]].",
+  "Beowulf draws on a body of Germanic heroic legend that other texts share: the Old English Widsith and the Finnsburh Fragment, the Norse stories of Sigurd the dragon-slayer, and the Danish legends of Hrólfr kraki retold in Saxo Grammaticus and Icelandic saga. The poet expects the audience to know these stories and alludes to them in passing. The style is that of the Old English poetic tradition: the alliterative line, a special poetic vocabulary, compounds and kennings ('whale-road' for the sea), and variation, in which a single idea is restated in a series of parallel phrases. How far this style reflects oral composition, and how far it is the work of a literate poet, remains debated [[niles1983]] [[orchard2003]] [[robinson1985]].",
+  "The poet was a Christian writing about pagan ancestors. The narrator knows the God of Genesis, Cain and the Flood, yet never mentions Christ, and he places Christian sentiments in the mouths of characters who, in one notorious passage, are said to worship idols. Modern criticism of the poem as literature, rather than as a quarry for history and legend, is usually dated from J. R. R. Tolkien's British Academy lecture of 1936, which argued that the monsters are not a defect but the heart of a carefully balanced poem [[tolkien1936]] [[whitelock1951]]. Quotations in this guide are from Francis B. Gummere's alliterative verse translation of 1910, which follows the Old English almost line for line; references give the Old English line numbers of the standard edition [[fulk2008]] [[gummere1910]]."
+ ],
+ "plot": [
+  "The poem opens with the founding of the Danish royal line by Scyld Scefing, a foundling who became a great king and was sent out to sea in a treasure-laden ship at his death. His descendant Hrothgar builds the great hall Heorot, but the singing in the hall provokes Grendel, a monster of the moors descended from Cain, who for twelve years carries off Hrothgar's men by night. Beowulf, a young warrior of the Geats, hears of the trouble and sails to Denmark with fourteen companions.",
+  "Welcomed by Hrothgar but taunted by the king's spokesman Unferth, Beowulf vows to fight Grendel without a weapon. That night he tears off the monster's arm, and Grendel flees to die in his lair. The Danes celebrate with gifts and songs, among them the story of the tragic fight at Finnsburh. But Grendel's mother comes to avenge her son, killing Hrothgar's counsellor Æschere. Beowulf follows her to a haunted mere, dives to her underwater hall, and, when his borrowed sword fails, kills her with an ancient giant-made sword he finds on the wall.",
+  "After Hrothgar's long speech of warning against pride, Beowulf returns home and reports to his uncle, King Hygelac. In the space of a few lines fifty years pass: Hygelac dies on a raid, his son Heardred is killed by the Swedes, and Beowulf becomes king of the Geats and rules well for fifty winters. Then a fugitive steals a cup from a dragon's hoard, and the dragon burns the land.",
+  "The old king goes out to fight it with eleven companions and the thief as guide. Before the fight he recalls his youth and the misfortunes of the Geatish royal house. When the battle turns against him all his men flee except his young kinsman Wiglaf, who helps him kill the dragon. Beowulf, mortally wounded, gazes on the treasure and dies. Wiglaf rebukes the cowards; a messenger foretells the destruction of the leaderless Geats by their enemies; and the poem ends with Beowulf's funeral pyre, his barrow on the headland, and the lament of his people."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Scyld and the Building of Heorot",
+   "lines": "1–188",
+   "section": 0,
+   "summary": [
+    "The poem begins with an exclamation, Hwæt!, and a claim of shared tradition: 'we have heard' of the glory of the Spear-Danes. It tells how Scyld Scefing, who arrived among the Danes as a helpless child, grew to subdue neighbouring peoples and make them pay tribute. When he dies his people lay him in a ship heaped with treasure and give him to the sea; no one, the poet says, can tell who received that cargo.",
+    "Scyld's line continues through his son (named Beowulf in the manuscript, usually emended to Beow) and Healfdene to Hrothgar, who wins success in war and resolves to build a hall greater than any yet known. He names it Heorot, 'hart', and gives out rings at feasts there. The poet adds at once that the hall will one day burn in a feud between Hrothgar and his son-in-law.",
+    "A singer in the hall performs a song of the Creation. The joy of the hall torments Grendel, a creature of the fens descended from Cain, who comes by night and carries off thirty thanes. For twelve winters he haunts Heorot, and no counsel helps; in their distress some Danes make offerings at heathen shrines, and the narrator laments their ignorance of God."
+   ],
+   "analysis": [
+    "The prologue does not begin with the hero but with a dynasty and a funeral. Scyld's arrival from the sea and departure into it frame a life of conquest, and the poem's first verdict on him, 'that was a good king' (þæt wæs god cyning, 11), sets out the measure by which every later king will be judged: success in war, generosity with treasure and the security of the people. The ship funeral also begins the series of funerals that ends the poem with Beowulf's own [[orchard2003]].",
+    "Heorot is built and doomed in the same breath. The poet repeatedly tells his audience what will happen long after the action, a technique that gives the poem its characteristic double vision of present glory and future ruin. The scop's song of Creation, sung in a pagan hall, sets God's ordered world of light against Grendel, the outcast of darkness. The poet identifies the monster with the race of Cain, the first murderer, and so links the feud of Grendel against men to the first feud of brother against brother.",
+    "The passage on the Danes' heathen worship (175–188) is one of the most debated in the poem. It sits uneasily with the many speeches in which Hrothgar thanks God. Some critics have taken it as a later interpolation; others see it as the poet's honest admission that his admirable ancestors were pagans, and his sorrow for them [[robinson1985]] [[whitelock1951]]."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 1–3",
+     "quote": "LO, praise of the prowess of people-kings\nof spear-armed Danes, in days long sped,\nwe have heard, and what honor the athelings won!",
+     "note": "Gummere's 'Lo' renders Hwæt. The 'we have heard' places the poet and his audience inside a shared tradition of story."
+    },
+    {
+     "ref": "Beo. 50–52",
+     "quote": "No man is able\nto say in sooth, no son of the halls,\nno hero 'neath heaven, -- who harbored that freight!",
+     "note": "The close of Scyld's ship funeral: the first of the poem's confessions that human knowledge ends at death."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Hero Arrives",
+   "lines": "189–498",
+   "section": 3,
+   "summary": [
+    "In the land of the Geats, Hygelac's thane hears of Grendel and decides to sail to Hrothgar's aid; his elders do not discourage him. He chooses fourteen companions, and after a sea crossing told in a few vivid lines the ship reaches the Danish coast. A coastguard challenges them, is impressed by the leader's bearing, and guides them to Heorot.",
+    "At the door the herald Wulfgar questions them, and the stranger names himself: Beowulf. Hrothgar recognises the name. He knew Beowulf as a boy, and had once settled a feud for his father Ecgtheow by paying compensation to the Wylfings. He has heard that Beowulf has the strength of thirty men in his hand-grip.",
+    "Beowulf announces that he has fought giants and sea-monsters and asks to cleanse Heorot alone with his men. Since Grendel uses no weapons, he too will fight without sword or shield; if he dies, Hrothgar need not trouble about burying him. He ends by sending his mailcoat, the work of Weland, to Hygelac if he falls, and with the words 'Fate goes ever as it must'. Hrothgar describes his sorrow and seats the Geats at the feast."
+   ],
+   "analysis": [
+    "The arrival is told with a ceremonial slowness that is itself meaningful. Each encounter, with the coastguard, with Wulfgar and with the king, is a test of identity, in which the stranger must declare who his father and his lord are. A warrior in this poem is known by his kin and his allegiance; Beowulf names himself only once he is at the king's door.",
+    "The story of Ecgtheow's feud (459–472) introduces a pattern on which the whole poem depends. Hrothgar once paid compensation to end a killing, and Ecgtheow swore oaths to him; Beowulf's journey repays that old obligation. Help given in the past creates a debt in the present: the bond between Geats and Danes is a matter of exchange and memory, not merely of good will [[hill1995]].",
+    "Beowulf's decision to fight bare-handed matches the monster on his own terms and makes the combat a pure contest of strength. His closing words, Gæð a wyrd swa hio scel (455), are the first explicit mention of wyrd, 'what happens'. They are set beside a prayer-like trust that God will decide the outcome, and the poem never fully separates the two ideas."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 437–440",
+     "quote": "brand or buckler to bear in the fight,\ngold-colored targe:  but with gripe alone\nmust I front the fiend and fight for life,",
+     "note": "Beowulf renounces weapons for the fight with Grendel. His hand-grip (grap) will decide the combat."
+    },
+    {
+     "ref": "Beo. 455",
+     "quote": "Fares Wyrd  as she must.",
+     "note": "Gummere personifies wyrd as a goddess; in the Old English the word is closer to 'the course of events'."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Unferth and the Feast",
+   "lines": "499–709",
+   "section": 8,
+   "summary": [
+    "Unferth, the son of Ecglaf, who sits at Hrothgar's feet, envies Beowulf's fame and challenges him. Did he not lose a foolish swimming match against Breca, who stayed seven nights at sea and came out the stronger? He predicts that Beowulf will fare worse against Grendel.",
+    "Beowulf corrects the story. He and Breca were boys making a reckless boast; they swam with drawn swords against the whales, and when a storm parted them Beowulf was dragged to the sea-bottom and killed nine sea-monsters before the morning light showed him the coast. He adds that he has never heard of such deeds by Unferth, who killed his own brothers and will suffer for it in hell, and that Grendel would not have shamed Heorot if Unferth were as brave as his words.",
+    "The hall rejoices. Queen Wealhtheow carries the cup first to Hrothgar, then to all the company, and last to Beowulf, who vows to do the deed or die. At nightfall Hrothgar leaves the hall to the Geats. Beowulf lays aside his armour, and his men lie down to sleep, none of them expecting to see home again."
+   ],
+   "analysis": [
+    "The exchange with Unferth is a flyting, a formal contest of words of a kind well known in Germanic literature. Unferth's title in the poem is þyle, probably a court spokesman or orator, and his challenge has been read both as malice and as a recognised test of a newcomer's claims. In the manuscript his name is always spelled Hunferð, though it alliterates on a vowel; most editors print Unferth [[fulk2008]].",
+    "Beowulf's answer does more than defend his reputation. It retells the swim as a story of endurance against monsters and of a God-given dawn, and it ends with the remark that fate often saves an undoomed man if his courage holds (572–573). Fate and courage work together: wyrd does not replace the warrior's own virtue. His charge of fratricide also links Unferth to Cain, the poem's first image of evil.",
+    "Wealhtheow's progress through the hall shows the ceremonial role of a queen. In passing the cup she establishes rank, honours the king first and then binds the guest into the community of the hall. The scene is the first of the poem's portraits of women as weavers of social bonds [[damico1984]] [[hill1995]]."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 499–501",
+     "quote": "UNFERTH spake, the son of Ecglaf,\nwho sat at the feet of the Scyldings' lord,\nunbound the battle-runes.",
+     "note": "'Battle-runes' renders beadurune, 'hostile speech', the beginning of the flyting."
+    },
+    {
+     "ref": "Beo. 572–573",
+     "quote": "For Wyrd oft saveth\nearl undoomed if he doughty be!",
+     "note": "Wyrd oft nereð / unfægne eorl, þonne his ellen deah: a gnomic statement that fate favours the man whose courage does not fail."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "The Fight with Grendel",
+   "lines": "710–990",
+   "section": 11,
+   "summary": [
+    "Grendel comes from the moor under the mist, bearing God's anger, bursts the door of the hall and devours a sleeping Geat (later named as Hondscioh). Reaching for Beowulf, he finds himself in a grip stronger than any he has met. He tries to flee; the hall shakes and benches are torn from the floor. Beowulf's men strike with their swords, but no blade can harm the monster, who has laid a spell on weapons. Beowulf tears his arm off at the shoulder, and Grendel flees, mortally wounded, to his fen.",
+    "Beowulf hangs the arm, shoulder and hand under the roof of Heorot as a sign of victory. In the morning warriors follow Grendel's bloody track to the mere and ride home racing their horses. A king's thane composes a song in Beowulf's praise and tells of Sigemund, who slew a dragon and won a hoard, and of Heremod, a Danish king who turned cruel and failed his people.",
+    "Hrothgar comes to the hall with Wealhtheow, gives thanks to God, and declares that he will love Beowulf as a son. Beowulf replies that he wished he could have held the monster fast; Unferth falls silent before the great hand with its steel-like nails."
+   ],
+   "analysis": [
+    "The fight is told largely from Grendel's point of view. The poet lets us feel the monster's surprise, fear and desire to flee, and the hall itself becomes almost a character, so strongly built that it barely survives. The emphasis on the grip rather than on any weapon makes the victory a demonstration of the hero's own God-given strength [[irving1968]].",
+    "The improvised song of Sigemund and Heremod (867–915) is one of the poem's first digressions, and its placement is pointed. Sigemund, a dragon-slayer who wins treasure, anticipates Beowulf's last fight; Heremod, a promising prince who became a tyrant, shows the opposite path. The praise of the hero is made, in the traditional way, by comparison with figures of legend [[bonjour1950]].",
+    "Hrothgar's offer to treat Beowulf as a son is generous but raises a question the poem will return to: what becomes of the king's own sons and of his nephew Hrothulf? Gift-giving and adoption create bonds, but they can also create rivalries in a royal house."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 758–760",
+     "quote": "Then bethought him the hardy Hygelac-thane\nof his boast at evening:  up he bounded,\ngrasped firm his foe, whose fingers cracked.",
+     "note": "The boast made in hall is remembered and fulfilled in action: the heroic beot is a promise."
+    },
+    {
+     "ref": "Beo. 834–836",
+     "quote": "when the hardy-in-fight a hand laid down,\narm and shoulder, -- all, indeed,\nof Grendel's gripe, -- 'neath the gabled roof.",
+     "note": "Grendel's arm becomes a trophy hung in the hall, a sign (tacen) of the victory."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "The Feast and the Finnsburh Episode",
+   "lines": "991–1250",
+   "section": 15,
+   "summary": [
+    "Heorot is repaired and a feast held. Hrothgar gives Beowulf a golden standard, a helmet, a mailcoat and a sword, and eight horses, one with his own saddle; each of the Geats receives treasure, and gold is paid for the man Grendel killed. The narrator notes that the Scyldings did not yet plan treachery among themselves.",
+    "Hrothgar's singer performs the story of Finnsburh. Hnæf, a prince of the Danes, has been killed while visiting the hall of his brother-in-law Finn, king of the Frisians; Hildeburh, Hnæf's sister and Finn's wife, loses both brother and son, whom she has burned on one pyre. Through the winter the Danish survivor Hengest is bound to Finn by a truce, but at last he takes vengeance: Finn is killed in his own hall, and Hildeburh is carried back to the Danes.",
+    "Wealhtheow then speaks. She urges Hrothgar to be generous to the Geats but to leave his kingdom to his own sons, trusting that his nephew Hrothulf will treat them well. She gives Beowulf a magnificent collar, and asks him to be kind to her sons. The narrator compares the collar to the Brosinga mene and adds that Hygelac wore it when he fell on his raid against the Frisians. The Danes sleep in Heorot, not knowing what fate awaits them."
+   ],
+   "analysis": [
+    "The Finnsburh episode (1063–1159) is the longest digression in the first part of the poem, and it survives also in a separate fragment, the Finnsburh Fragment. It is told allusively, with attention not to battle but to grief, uneasy peace and the inevitability of revenge. Hildeburh, standing by the pyre of her son and brother, embodies the cost of feud to the women married across enemy lines [[chambers1921]].",
+    "Placed in the middle of a victory celebration, the song casts a shadow over it. A hall where kin by marriage share a feast and then kill each other is a clear warning for Heorot itself, where Wealhtheow's anxious speech hints that Hrothulf will not honour her sons. The audience probably knew from legend that the Scylding house would turn on itself [[bonjour1950]].",
+    "The narrator's reference to Hygelac's death on his raid while wearing the collar is the first sign that the Geatish story too will end in disaster. Treasure given in friendship becomes, in time, spoil lost in battle; the scene moves straight from generosity to loss."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 1114–1116",
+     "quote": "It was Hildeburh's hest, at Hnaef's own pyre\nthe bairn of her body on brands to lay,\nhis bones to burn, on the balefire placed,",
+     "note": "Hildeburh orders her son to be burned beside her brother, his uncle; the two sides of the feud meet in one fire."
+    },
+    {
+     "ref": "Beo. 1232–1233",
+     "quote": "flowed wine for the warriors. Wyrd they knew not,",
+     "note": "Wyrd ne cuþon: the feasters do not foresee the attack of Grendel's mother that night."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Grendel's Mother",
+   "lines": "1251–1650",
+   "section": 19,
+   "summary": [
+    "That night Grendel's mother comes to avenge her son. She seizes Æschere, Hrothgar's most beloved counsellor, and carries off Grendel's arm. In the morning Hrothgar, grief-stricken, describes the two monsters and their home: a mere in a desolate land where fire burns on the water and a hunted stag would rather die on the bank than enter it.",
+    "Beowulf comforts the king: it is better to avenge a friend than to mourn too much, and each must earn glory before death. They ride to the mere and find Æschere's head on the cliff. Unferth lends Beowulf his sword Hrunting. Beowulf dives, and the creature seizes him and drags him to her hall beneath the water.",
+    "There Hrunting fails to bite; Beowulf throws it down and wrestles with her. She sits on him and tries to stab him, but his mailcoat holds, and God grants him victory. He sees on the wall an ancient sword made by giants, kills her with it, and cuts off the head of Grendel's corpse. The blade melts in the monster's blood. At the ninth hour the Danes, seeing blood in the water, give him up for dead and go home; his own men wait. He swims up with the hilt and Grendel's head."
+   ],
+   "analysis": [
+    "The second fight answers the first. Grendel's mother is acting within the logic of the poem's human societies, avenging a kinsman, and her attack is a feud killing like those of the digressions. The poet calls her an aglæcwif, 'formidable woman' or 'monster-woman', and the same root word, aglæca, is applied to Beowulf himself; the line between hero and monster is not always simple [[orchard2003]].",
+    "The description of the mere (1357–1376) is one of the most celebrated landscapes in Old English, and it has close parallels in a vision of hell in the Old English Blickling Homily XVI. Whether or not the poet knew that text, the place is presented as both a real fen and an image of damnation.",
+    "Beowulf's speech of consolation (1384–1389) states the heroic ethic in its clearest form: since everyone must die, what matters is dom, the judgement of others after death. The fight that follows, however, shows the hero rescued by his armour, by God and by a weapon he did not bring. Human strength and borrowed swords both reach their limits, and victory depends on something given from outside [[irving1968]]."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 1386–1389",
+     "quote": "Each of us all must his end abide\nin the ways of the world; so win who may\nglory ere death! When his days are told,\nthat is the warrior's worthiest doom.",
+     "note": "Ure æghwylc sceal ende gebidan / worolde lifes; wyrce se þe mote / domes ær deaþe: the heroic creed in four lines."
+    },
+    {
+     "ref": "Beo. 1522–1525",
+     "quote": "But the warrior found\nthe light-of-battle  was loath to bite,\nto harm the heart:  its hard edge failed\nthe noble at need,",
+     "note": "Hrunting, Unferth's famous sword, fails for the first time; 'light-of-battle' renders the kenning beadoleoma."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Hrothgar's 'Sermon' and the Parting",
+   "lines": "1651–1887",
+   "section": 24,
+   "summary": [
+    "Beowulf returns to Heorot with Grendel's head and gives the hilt to Hrothgar. The king examines it: it is engraved with the story of the Flood that destroyed the race of giants, and with runes naming the man for whom it was made.",
+    "Hrothgar then delivers a long speech. He praises Beowulf, then warns him with the example of Heremod, who killed his own companions and gave no rings. He describes how a man to whom God has given wealth and power may come to think it will last for ever, until pride grows in him while his conscience sleeps and the devil shoots him with arrows; he then hoards his treasure and another man inherits it. He urges Beowulf to choose eternal rewards, since his strength will last only a little while before sickness, sword, fire, water or age takes it.",
+    "After a night of rest the Geats prepare to leave. Beowulf returns Hrunting to Unferth with courtesy and promises Hrothgar help in any future need. The old king embraces him and weeps, knowing he will not see him again. The Geats load their ship with treasure and sail home."
+   ],
+   "analysis": [
+    "The hilt and the sermon belong together. Hrothgar reads on the hilt the story of the giants destroyed by God, and then turns to the moral history of kings. The scene has been compared to a reading of scripture followed by a homily, and the speech draws on the language of Christian moral teaching about pride (oferhygd) and the devil's arrows [[goldsmith1970]] [[orchard2003]].",
+    "The speech is addressed to a young hero at the height of his strength, but its real subject is old age, and it looks forward to the second half of the poem, when Beowulf himself will be an old king faced with a ruinous enemy. Whether Beowulf's last fight shows him avoiding or falling into the errors Hrothgar describes is one of the main interpretative choices the poem leaves to its readers.",
+    "The farewell is unusually emotional. Hrothgar's tears show that the bond between the two men is more than a political alliance, and Beowulf's promise of future aid repays and renews the old exchange between their peoples."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 1748",
+     "quote": "Him seems too little what long he possessed.",
+     "note": "Þinceð him to lytel þæt he lange heold: the moment when prosperity turns into avarice."
+    },
+    {
+     "ref": "Beo. 1761–1763",
+     "quote": "The flower of thy might\nlasts now a while:  but erelong it shall be\nthat sickness or sword thy strength shall minish,",
+     "note": "Hrothgar's warning on the brevity of strength, followed by a list of the ways a man may die."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "The Return to Hygelac",
+   "lines": "1888–2199",
+   "section": 27,
+   "summary": [
+    "The Geats reach home and go to Hygelac's hall. The narrator introduces the young queen Hygd, generous to her people, and contrasts her with a queen of legend (usually called Modthryth) who had men put to death for daring to look at her, until marriage to the Anglian king Offa changed her.",
+    "Beowulf tells Hygelac of his adventures. He mentions that Hrothgar's daughter Freawaru is promised to Ingeld, prince of the Heathobards, to settle a feud, and predicts that the marriage will fail: an old warrior will see a young Dane wearing a sword taken from the Heathobards and goad a young man to vengeance. He then retells the fights with Grendel and his mother, naming Hondscioh, the companion Grendel devoured.",
+    "Beowulf gives Hygelac the gifts he received from Hrothgar and gives Wealhtheow's collar to Hygd. Hygelac in return gives him the sword of his grandfather Hrethel and land of seven thousand hides. The narrator remarks that Beowulf, once thought slack as a youth, has proved himself honourable and never killed his companions in drink."
+   ],
+   "analysis": [
+    "Beowulf's report is not mere repetition. It adds new details, such as Hondscioh's name and Grendel's glove, and frames the adventure in terms of service to his lord. Retelling is how fame is made in this poem: deeds are transformed into narrative before our eyes [[irving1968]].",
+    "The Ingeld prophecy (2020–2069) is the clearest statement in the poem of the fragility of marriages made to end feuds. Freawaru is a 'peace-weaver', but the sight of an heirloom on the wrong man's body is enough to undo the settlement. The audience knew, as the poet hints at the poem's opening, that Ingeld would later burn Heorot [[hill1995]].",
+    "The contrast between Hygd and the cruel queen (1925–1962) is the passage in which the word freoðuwebbe, 'peace-weaver', occurs in the poem. It shows the poet thinking about a queen's role in moral terms: a woman who should weave peace instead unweaves it. The passage, whose opening (1931–1932) is textually disputed, is also where the second scribe takes over, in line 1939 [[overing1990]] [[fulk2008]]."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 1940–1943",
+     "quote": "No queenly way\nfor woman to practise, though peerless she,\nthat the weaver-of-peace  from warrior dear\nby wrath and lying his life should reave!",
+     "note": "The poem's only use of freoðuwebbe, said of a queen who betrays the role."
+    },
+    {
+     "ref": "Beo. 2041–2043",
+     "quote": "Then, over the ale, on this heirloom gazing,\nsome ash-wielder old who has all in mind\nthat spear-death of men,",
+     "note": "Beowulf imagines the moment when an old warrior's memory reopens the feud of the Heathobards and Danes."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Dragon Awakes",
+   "lines": "2200–2390",
+   "section": 29,
+   "summary": [
+    "In a few lines many years pass. Hygelac falls in battle, his son Heardred is killed by the Swedes, and the kingdom passes to Beowulf, who rules well for fifty winters. Then a dragon that has guarded a hoard in a barrow for three hundred years is robbed of a precious cup by a fugitive slave seeking shelter.",
+    "The narrator explains the hoard's origin. Long ago the last survivor of a noble people laid his treasure in the earth and lamented: there was no one left to bear the sword or polish the cup, no harp, no hawk, no horse. When he died the dragon found the open treasure and guarded it, gaining nothing from it.",
+    "The dragon, discovering the theft, flies out by night and burns the Geats' dwellings, including Beowulf's own hall, the gift-seat of the Geats. Beowulf fears that he has offended God. He orders an iron shield to be made, since wood would burn, and resolves to fight the dragon alone. The narrator recalls his past: his escape from Hygelac's fatal raid, swimming home with thirty sets of armour, his refusal of the throne offered by Hygd, and his guardianship of the young Heardred."
+   ],
+   "analysis": [
+    "The transition at line 2200 is the poem's great structural hinge. Tolkien described the poem as a balance of two parts, youth and age, rise and fall, rather than a continuous narrative, and the abrupt leap of fifty years makes that design visible [[tolkien1936]]. The first part ends with a hero in his prime receiving treasure; the second begins with treasure stolen and a king facing his death.",
+    "The 'Lay of the Last Survivor' (2247–2266) is one of the purest elegiac passages in Old English and has often been compared to The Wanderer and The Ruin. It turns the hoard into a monument of a whole people's extinction. Its images of silent harps and idle hawks will be echoed when the messenger predicts the end of the Geats [[orchard2003]].",
+    "Beowulf's fear that he has broken an ancient law (2329–2332) is a rare look into his mind, and it has been read in contradictory ways: as a sign of humility, as the first hint of the pride Hrothgar warned against, or simply as a pagan king's dread of an unknown cause. The poet's long backward look at Beowulf's career also begins here, so that the last fight is surrounded by memory."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 2210–2211",
+     "quote": "until One began\nin the dark of night, a Dragon, to rage.",
+     "note": "Oð ðæt an ongan / deorcum nihtum draca ricsian: the phrasing echoes the introduction of Grendel (100), linking the two halves."
+    },
+    {
+     "ref": "Beo. 2247–2249",
+     "quote": "\"Now hold thou, earth, since heroes may not,\nwhat earls have owned! Lo, erst from thee\nbrave men brought it!",
+     "note": "Heald þu nu, hruse: the last survivor returns the treasure to the earth from which it came."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "The Old King's Memories",
+   "lines": "2391–2601",
+   "section": 32,
+   "summary": [
+    "Beowulf sets out with eleven companions, guided by the thief. Sitting on the headland, sad and ready for death, he recalls his childhood at the court of his grandfather Hrethel, who took him in at the age of seven. He tells how Hrethel's son Hæthcyn accidentally killed his elder brother Herebeald with an arrow, a death that could be neither avenged nor compensated, and how Hrethel died of grief.",
+    "He compares Hrethel's sorrow to that of an old man whose son hangs on the gallows, who sings a lament and looks on the empty rooms of his son's dwelling. He then recalls the wars with the Swedes, the death of Hæthcyn and of the Swedish king Ongentheow, and his own service to Hygelac, during which he crushed the Frankish champion Dæghrefn in his grip.",
+    "Beowulf makes a last boast that he will not retreat a foot's breadth, tells his men to wait on the slope, and goes forward to the barrow. He shouts a challenge, and the dragon comes out breathing fire. The iron shield protects him for a shorter time than he hoped; his sword bites less than it should; the dragon's flames surround him. His companions flee to the wood."
+   ],
+   "analysis": [
+    "The retrospective speech (2425–2509) is the poem's fullest account of the history of the Geatish royal house, and it is dominated by deaths that cannot be resolved. Herebeald's killing is the worst case in a feud society: the slayer is the victim's brother, and there is no one to pay or receive the price. Beowulf's grandfather is destroyed by a grief that no action can relieve [[hill1995]].",
+    "The simile of the father of the hanged son (2444–2462) is remarkable in Old English for its length and its imaginative extension beyond the story. It describes a man whose son has been executed and who therefore cannot claim compensation or revenge: a perfect image of grief without remedy. It has been read as one of the poem's purest elegies [[irving1968]].",
+    "The fight itself begins badly. The poet emphasises that this was the first time Beowulf had to fight without wyrd granting him glory (2574–2575). The flight of the companions breaks the central bond of the comitatus, in which retainers repay their lord's gifts by fighting and if need be dying for him."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 2444–2446",
+     "quote": "Too awful it is for an aged man\nto bide and bear, that his bairn so young\nrides on the gallows.",
+     "note": "Swa bið geomorlic gomelum ceorle: the simile of the hanged son, an image of grief with no remedy."
+    },
+    {
+     "ref": "Beo. 2456–2458",
+     "quote": "wine-hall waste and wind-swept chambers\nreft of revel. The rider sleepeth,\nthe hero, far-hidden;",
+     "note": "The empty hall, one of the poem's images of desolation, recalls the Last Survivor's lament."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Wiglaf and the Death of Beowulf",
+   "lines": "2602–2820",
+   "section": 34,
+   "summary": [
+    "One companion, Wiglaf, son of Weohstan, a young kinsman of Beowulf, cannot bear to see his lord suffer. The narrator explains the history of his sword, taken by his father from the Swedish prince Eanmund. Wiglaf reproaches the others for forgetting the gifts and promises made in the mead-hall, and goes to help.",
+    "Beowulf's sword Nægling breaks on the dragon's head, for his hand was too strong for any blade. The dragon seizes him by the neck. Wiglaf strikes lower and weakens its fire, and Beowulf, drawing a knife, cuts the dragon in two.",
+    "But the poison works in Beowulf's wound. He tells Wiglaf that he ruled fifty years, sought no feuds, swore no false oaths and killed no kinsmen, and asks to see the treasure. Gazing on the gold, he thanks God that he could win it for his people and asks for a barrow on the headland called Hronesnæs, to be seen by sailors. He gives Wiglaf his collar, helmet and mailcoat, calls him the last of their family, the Wægmundings, and dies."
+   ],
+   "analysis": [
+    "Wiglaf's intervention fulfils the ideal of the comitatus as the companions' flight betrays it. His speech recalls the reciprocal obligations of lord and retainer: the gifts given in the hall are payment in advance for loyalty in battle. The story of his sword, which belonged to a Swedish prince killed by Wiglaf's father, also shows how every weapon carries a history of feud [[irving1968]].",
+    "Beowulf's dying review of his reign follows exactly the criteria the poem has developed for a good king: defending his people, avoiding needless feuds and keeping oaths. His desire to see the gold before he dies has been read in contrasting ways: as a king's legitimate wish to know he has won wealth for his people, or as a sign of the fatal attraction of the hoard against which Hrothgar warned [[goldsmith1970]].",
+    "The death speech is also the end of a family. The Wægmundings have been swept away by fate, and Beowulf has no son; the treasure he won at the cost of his life will have no heir. The passing of the collar and helmet to Wiglaf is a last act of gift-giving, but it cannot secure the people's future."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 2732–2733",
+     "quote": "This people I ruled\nfifty winters.",
+     "note": "Ic ðas leode heold / fiftig wintra: Beowulf's account of his kingship echoes the narrator's summary of his reign (2208–2209)."
+    },
+    {
+     "ref": "Beo. 2813–2816",
+     "quote": "Thou art end and remnant of all our race\nthe Waegmunding name. For Wyrd hath swept them,\nall my line, to the land of doom,\nearls in their glory:  I after them go.",
+     "note": "Ealle wyrd forsweop: fate as the force that sweeps a whole kindred away."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "The Messenger and the Funeral",
+   "lines": "2821–3182",
+   "section": 37,
+   "summary": [
+    "The cowardly companions return. Wiglaf, sitting by his dead lord, tells them that their lord's gifts were wasted on them, that they and their kin will lose their lands, and that death is better for any warrior than a life of shame. A messenger rides to the Geats with the news of Beowulf's death.",
+    "The messenger predicts disaster: when the Franks and Frisians hear of the king's death, the old hostility caused by Hygelac's raid will break out, and the Swedes will remember the battle at Ravenswood, where Hygelac's men killed King Ongentheow. Geatish women will go into exile, and the raven will tell the eagle of its feast with the wolf on the bodies of the slain.",
+    "The people find the dead king and the dragon, fifty feet long, beside the hoard, which was laid under a curse. Wiglaf commands the funeral. The dragon is pushed over the cliff into the sea; Beowulf is burned on a great pyre hung with helmets and shields; a Geatish woman sings a lament of her fear of the days to come. The Geats build a barrow on the headland in ten days and bury the treasure in it, 'as useless to men as it was before'. Twelve warriors ride around it, praising their king as the mildest of men, the kindest to his people and the most eager for fame."
+   ],
+   "analysis": [
+    "The final part shifts from the hero to his people. The messenger's long prophecy, with its history of the Swedish wars, turns the hero's death into the end of a nation, and its images of exile and carrion beasts belong to the traditional language of the 'beasts of battle' theme in Old English poetry [[niles1983]].",
+    "The curse on the hoard (3051–3075) is notoriously obscure. It is not clear whether Beowulf is said to be affected by it, and the lines have been read as a pagan curse that God overrides, as a sign that the hero was implicated in greed, or as a simple statement that he did not know what lay on the gold. The burial of the treasure with the king leaves it 'useless to men', returning it to the earth like the Last Survivor's hoard [[fulk2008]].",
+    "The poem ends with two laments, one sung by a woman, one by twelve riders. The Geatish woman's song (3150–3155), in a damaged passage, gives voice to the fears of those who must survive the hero. The riders' praise ends with the word lofgeornost, 'most eager for praise', which can be heard as the supreme heroic compliment or as a final hint of the limitations of the heroic ideal [[robinson1985]] [[orchard2003]]."
+   ],
+   "key": [
+    {
+     "ref": "Beo. 2890–2891",
+     "quote": "Yea, death is better\nfor liegemen all than a life of shame!",
+     "note": "Deað bið sella / eorla gehwylcum þonne edwitlif: Wiglaf's judgement on the companions who fled."
+    },
+    {
+     "ref": "Beo. 3180–3182",
+     "quote": "quoth that of all the kings of earth,\nof men he was mildest and most beloved,\nto his kin the kindest, keenest for praise.",
+     "note": "The last lines of the poem; 'keenest for praise' renders lofgeornost, its final word."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Beowulf",
+   "side": "Geats",
+   "text": "Son of Ecgtheow and of a daughter of King Hrethel, so nephew of Hygelac, king of the Geats. As a young man he crosses the sea to kill Grendel and Grendel's mother; as an old king, after ruling for fifty winters, he dies killing the dragon that threatens his people. He is strong (with thirty men's strength in his grip), loyal to his lord, generous and courteous, and his reputation is the subject of the whole poem. Whether his final fight shows the perfection of the heroic ideal or its limits is a central question of interpretation."
+  },
+  {
+   "name": "Hygelac",
+   "side": "Geats",
+   "text": "King of the Geats, son of Hrethel, Beowulf's uncle and lord. He appears in person only when Beowulf returns from Denmark, but his death on a raid against the Frisians and Franks is mentioned four times. That raid is the one historical event in the poem that can be dated, through Gregory of Tours' account of the death of Chlochilaicus, around 520."
+  },
+  {
+   "name": "Hygd",
+   "side": "Geats",
+   "text": "Hygelac's young queen, daughter of Hæreth, praised as wise and generous. After Hygelac's death she offers the throne to Beowulf because she does not trust her young son Heardred to defend the kingdom; Beowulf refuses and supports Heardred instead, becoming king only after Heardred is killed by the Swedes."
+  },
+  {
+   "name": "Wiglaf",
+   "side": "Geats",
+   "text": "Son of Weohstan, a young warrior of the Wægmunding family to which Beowulf also belongs. He alone of Beowulf's companions comes to his aid against the dragon, and he becomes the voice of the heroic code in the last part of the poem, rebuking the cowards and directing the funeral. He is called 'the last of our race'."
+  },
+  {
+   "name": "Ecgtheow",
+   "side": "Geats",
+   "text": "Beowulf's father. Hrothgar recalls that Ecgtheow started a great feud by killing Heatholaf of the Wylfings, and that Hrothgar settled it by paying compensation; Ecgtheow then swore oaths to Hrothgar. Beowulf's journey to Denmark repays this debt."
+  },
+  {
+   "name": "Hrethel",
+   "side": "Geats",
+   "text": "King of the Geats, Beowulf's grandfather, who raised him from the age of seven. His eldest son Herebeald was accidentally killed by his second son Hæthcyn; unable to avenge or accept compensation for the death, Hrethel died of grief. His story is told in Beowulf's last speech before the dragon fight."
+  },
+  {
+   "name": "Scyld Scefing",
+   "side": "Danes",
+   "text": "Founder of the Danish royal line, the Scyldings. He came to the Danes as a foundling and became a conquering king; at his death he was laid in a treasure-laden ship and given to the sea. The poem's first judgement, 'that was a good king', is said of him."
+  },
+  {
+   "name": "Hrothgar",
+   "side": "Danes",
+   "text": "King of the Danes, son of Healfdene, builder of Heorot. Successful in his youth, he is old and helpless against Grendel. He is generous, wise and eloquent: his long speech after the fight with Grendel's mother, warning Beowulf against pride and reminding him of his mortality, is often called his 'sermon'. His affection for Beowulf is shown in his tears at their parting."
+  },
+  {
+   "name": "Wealhtheow",
+   "side": "Danes",
+   "text": "Hrothgar's queen, called a lady of the Helmings. She carries the mead-cup in hall and makes formal speeches; after the victory over Grendel she urges Hrothgar to leave his kingdom to his sons and expresses her trust in Hrothulf and asks Beowulf to befriend them. Her anxious words suggest the troubles to come in the Danish royal house."
+  },
+  {
+   "name": "Unferth",
+   "side": "Danes",
+   "text": "Son of Ecglaf, Hrothgar's þyle (spokesman or orator), who challenges Beowulf about his swimming match with Breca. Beowulf accuses him of having killed his brothers. Later, after Grendel's death, he lends Beowulf his sword Hrunting for the fight with Grendel's mother; the sword fails, but Beowulf returns it courteously."
+  },
+  {
+   "name": "Æschere",
+   "side": "Danes",
+   "text": "Hrothgar's dearest counsellor and companion in battle, killed by Grendel's mother in revenge for her son. Hrothgar's grief for him is one of the most moving speeches in the poem, and Beowulf finds his head on the cliff above the mere."
+  },
+  {
+   "name": "Hrothulf",
+   "side": "Danes",
+   "text": "Hrothgar's nephew, son of his brother Halga, who sits beside the king in Heorot. The poem hints that he will not keep faith with Hrothgar's sons. Scandinavian sources know him as Hrólfr kraki, a famous king of the Danes, which suggests that he later took the throne."
+  },
+  {
+   "name": "Grendel",
+   "side": "Monsters",
+   "text": "A monster living in the fens, a descendant of Cain, called a mearcstapa, 'border-walker'. Tormented by the joy of Heorot, he attacks the hall for twelve years. Beowulf tears off his arm in a wrestling match, and he flees to his lair to die. The poem presents him both as a physical creature and as a figure of exclusion from God and human society."
+  },
+  {
+   "name": "Grendel's mother",
+   "side": "Monsters",
+   "text": "Unnamed, she lives with Grendel in a hall under a haunted mere. She attacks Heorot to avenge her son, killing Æschere, and is killed by Beowulf with a giant-made sword. The poet calls her both a 'monster-woman' and a 'she-wolf of the deep'; critics have discussed whether she is a monster, a figure of feminine vengeance, or a mother acting within the code of feud."
+  },
+  {
+   "name": "The dragon",
+   "side": "Monsters",
+   "text": "A fire-breathing serpent that has guarded a hoard of treasure in a barrow for three hundred years. Robbed of a cup, it burns the Geats' land and Beowulf's hall. It is killed by Beowulf and Wiglaf, but its venom kills Beowulf. Its body, fifty feet long, is pushed over the cliff into the sea."
+  },
+  {
+   "name": "Sigemund",
+   "side": "Figures of the digressions",
+   "text": "A hero of legend, son of Wæls, whose dragon-slaying and winning of a hoard are sung in praise of Beowulf after the fight with Grendel. In the Norse tradition the dragon is killed by his son Sigurd. His story anticipates Beowulf's own last fight."
+  },
+  {
+   "name": "Heremod",
+   "side": "Figures of the digressions",
+   "text": "A Danish king of the past who promised greatness but became cruel and miserly, killing his own companions and giving no rings. He is twice set against Beowulf, once in the song after the fight with Grendel and once in Hrothgar's sermon, as the model of the bad king."
+  },
+  {
+   "name": "Hildeburh",
+   "side": "Figures of the digressions",
+   "text": "Daughter of Hoc, sister of the Danish prince Hnæf and wife of the Frisian king Finn. In the Finnsburh episode she loses both her son and her brother in a fight in her husband's hall and laments over their common pyre; later her husband too is killed. She is the poem's most tragic image of the woman married across lines of feud."
+  },
+  {
+   "name": "Finn and Hengest",
+   "side": "Figures of the digressions",
+   "text": "Finn, king of the Frisians, and Hengest, who leads the Danes after Hnæf's death in the Finnsburh episode. Forced into a truce with the man whose people killed his lord, Hengest spends a winter in Finn's hall before taking vengeance. Some scholars, Chambers among them, have identified him with the Hengest of English origin legend [[chambers1921]]."
+  },
+  {
+   "name": "Modthryth",
+   "side": "Figures of the digressions",
+   "text": "A queen of legend, contrasted with Hygd, who had men executed for looking at her until her marriage to Offa, king of the continental Angles. Her name is uncertain because of the state of the text; Modthryth and Thryth are the forms most often used. She is the only woman in the poem called a 'peace-weaver', and is so called precisely because she fails in the role."
+  },
+  {
+   "name": "Freawaru and Ingeld",
+   "side": "Figures of the digressions",
+   "text": "Hrothgar's daughter and the Heathobard prince to whom she is betrothed to end a feud. Beowulf predicts that the marriage will fail when an old warrior incites a young man to vengeance. The audience probably knew the legend in which Ingeld attacks Heorot."
+  },
+  {
+   "name": "The Last Survivor",
+   "side": "Figures of the digressions",
+   "text": "The nameless last member of a vanished people who buries their treasure in a barrow and laments over it before he dies. The hoard he leaves becomes the dragon's. His lament is one of the purest elegies in Old English."
+  },
+  {
+   "name": "Breca",
+   "side": "Others",
+   "text": "Chief of the Brondings and Beowulf's boyhood rival in a swimming contest at sea. Unferth says Breca won; Beowulf replies that they were parted by a storm and that he killed nine sea-monsters."
+  },
+  {
+   "name": "Ongentheow",
+   "side": "Others",
+   "text": "King of the Swedes, who killed the Geatish king Hæthcyn at the battle of Ravenswood and was killed in turn by the Geatish warriors Wulf and Eofor. His story is told by the messenger as a reason why the Swedes will attack the Geats after Beowulf's death."
+  }
+ ],
+ "themes": [
+  {
+   "title": "The heroic code and the comitatus",
+   "text": [
+    "The social world of the poem rests on the bond between a lord and his retainers, which modern scholars, borrowing from the Roman historian Tacitus, call the comitatus. The lord gives treasure, weapons, food and protection; the retainers give loyalty in battle and, if necessary, their lives. A warrior's highest goal is lof and dom, the praise of others and lasting reputation, which alone survive his death.",
+    "The poem celebrates this code and examines it. Beowulf's speech of consolation to Hrothgar states it with complete confidence (1384–1389). Yet in the second half the companions who have received gifts flee, Wiglaf has to remind them of their obligations, and a whole people is left exposed when its king dies seeking glory. The code is presented as noble, demanding and fragile [[irving1968]] [[hill1995]]."
+   ]
+  },
+  {
+   "title": "Kingship",
+   "text": [
+    "The poem is full of kings, and it measures them against an implicit standard: the good king defends his people, rewards his followers generously, keeps peace where he can and does not kill his kin. Scyld, Hrothgar, Hygelac and Beowulf are good kings in different ways; Heremod and the Swedish rulers show its failures.",
+    "The tension between the hero and the king is central to the second half. A young hero may risk everything for glory; a king must think of his people. Beowulf's choice to face the dragon himself can be read as the highest act of royal self-sacrifice or as a hero's failure to become a king. Hrothgar's sermon and the messenger's prophecy frame the question without answering it [[goldsmith1970]] [[orchard2003]]."
+   ]
+  },
+  {
+   "title": "Fate (wyrd) and providence",
+   "text": [
+    "The poem often speaks of wyrd, usually translated 'fate', but its meaning is closer to 'what happens', the course of events. Wyrd can sweep a family away or spare a brave man; it is rarely personified in the Old English, though Gummere's translation personifies it as a goddess.",
+    "Alongside wyrd stands the providence of God, who 'ruled all mankind then as now'. The narrator sometimes presents the two as one, and sometimes as God controlling fate. Critics have argued about whether wyrd in the poem retains a pagan sense or is simply a Christian poet's word for the working of providence [[robinson1985]] [[fulk2008]]."
+   ]
+  },
+  {
+   "title": "Christian and pagan",
+   "text": [
+    "The narrator is a Christian; his characters are pagans who live before the conversion of Scandinavia. He knows Old Testament stories (the Creation, Cain, the Flood) but never names Christ, and his heroes speak of God in terms that fit both a Christian and a monotheistic pagan view. The passage on the Danes' idol worship (175–188) shows that the poet was aware of the gap.",
+    "Scholars have explained this mixture in many ways: as the result of later Christian revision of a pagan poem; as a deliberate allegory of Christian salvation; or as the expression of a Christian poet's sympathetic but sorrowful view of noble ancestors who could not know the truth. Fred Robinson's account of an 'appositive style', which allows the poem to say two things at once, has been influential [[tolkien1936]] [[goldsmith1970]] [[robinson1985]] [[whitelock1951]]."
+   ]
+  },
+  {
+   "title": "Feud and its cycle",
+   "text": [
+    "Feud is the poem's model of social conflict. A killing creates an obligation to take revenge or to accept compensation (wergild); revenge creates a new obligation in turn. Grendel's raids and his mother's revenge mirror human feuds, and the digressions, from Finnsburh to Ingeld and the Swedish wars, are almost all stories of feud.",
+    "The poem shows the limits of the means of ending feud: compensation (as when Hrothgar settles Ecgtheow's feud), oaths, marriage alliances and treaties. All of them can be undone by memory and grief, as Beowulf predicts in the case of Ingeld. The Herebeald story, a killing within the family, shows a feud that cannot be resolved at all [[hill1995]]."
+   ]
+  },
+  {
+   "title": "Mortality and transience",
+   "text": [
+    "The poem constantly reminds its audience that all glory passes. Heorot is doomed from the moment it is built; Hrothgar warns Beowulf that his strength will last only a little while; the Last Survivor, the father of the hanged son and the Geatish woman all lament the passing of the world they knew.",
+    "This elegiac awareness is not opposed to the heroic ethic but grows from it: because life is brief, fame is the only lasting thing. Tolkien argued that the poem's deepest subject is man at war with the hostile world and his inevitable defeat in time, and that it is a heroic-elegiac poem rather than an epic [[tolkien1936]] [[irving1968]]."
+   ]
+  },
+  {
+   "title": "Treasure",
+   "text": [
+    "Treasure in the poem is a social medium: rings, swords and mailcoats express honour and bind people together. Kings are praised as ring-givers, and a hoarding king like Heremod is condemned. Weapons have histories, and their histories can restart feuds.",
+    "The dragon's hoard is the dark side of this world. It is treasure removed from circulation, guarded by a creature that cannot use it, cursed and finally buried again 'as useless to men as it was before'. Whether Beowulf's desire to see it before he dies is a noble wish to provide for his people or a sign of fatal attachment to gold is one of the poem's open questions [[goldsmith1970]] [[hill1995]]."
+   ]
+  },
+  {
+   "title": "Women and peace-weavers",
+   "text": [
+    "Women in the poem are queens, wives and mothers who take part in the ceremonial life of the hall and are often given in marriage to unite hostile peoples. The word freoðuwebbe, 'peace-weaver', occurs in the poem only once, for a queen who betrays the role, but it has become a key term for describing this function.",
+    "Feminist criticism has stressed how often these women are the victims of the feuds they are supposed to settle: Hildeburh, Freawaru and Wealhtheow all face, or will face, the destruction of their families. Gillian Overing reads them as figures caught in a masculine system of exchange; Helen Damico relates Wealhtheow to the valkyrie tradition; and Grendel's mother, an avenging mother, complicates any simple view of women as peacemakers [[overing1990]] [[damico1984]] [[hill1995]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "The digressions",
+   "text": "The main story is constantly interrupted by stories from other times: Sigemund and Heremod, Finnsburh, the necklace of the Brosings, Modthryth, Ingeld, the Last Survivor, the Swedish wars. They were once dismissed as distractions; since Adrien Bonjour's study they have been understood as mirrors and contrasts that comment on the main action and widen it into a history of peoples [[bonjour1950]] [[leyerle1967]]."
+  },
+  {
+   "title": "The hall",
+   "text": "Heorot, Hygelac's hall, the underwater hall of Grendel's mother, the dragon's 'earth-hall' and Beowulf's burnt gift-seat give the poem its architecture. The hall stands for order, community and joy, and its destruction or desolation is the poem's recurring image of loss."
+  },
+  {
+   "title": "Boasting",
+   "text": "The beot or gilp, a formal vow of what one will do, is a central heroic act. Beowulf boasts before each of his three fights and fulfils each boast. Boasting is not vanity but commitment: the words spoken in the hall bind the speaker to deeds in the field."
+  },
+  {
+   "title": "Gift-giving",
+   "text": "The exchange of gifts is the poem's model of social relations. Hrothgar rewards Beowulf, Beowulf passes the gifts to Hygelac and Hygd, Hygelac gives him land and Hrethel's sword, and Beowulf's last gesture is to give his collar to Wiglaf. When the companions flee, the failure of the gift-economy is the measure of their shame [[hill1995]]."
+  },
+  {
+   "title": "The funeral",
+   "text": "The poem begins and ends with a funeral, and others appear in between: the ship burial of Scyld, the pyre of Hnæf and Hildeburh's son, the Last Survivor's burial of the hoard, and the pyre and barrow of Beowulf. They mark the transience of human greatness, and they invite comparison with archaeological finds such as the Sutton Hoo ship burial [[newton1993]]."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "Heorot",
+   "text": "Hrothgar's hall, named 'hart', is the poem's symbol of civilisation: of order, song, gift-giving and the community of the comitatus. It is threatened by Grendel from outside and, as the poet hints, destined to burn in a feud within the royal family. It embodies both the achievements of human society and their vulnerability."
+  },
+  {
+   "title": "The giant sword's hilt",
+   "text": "When the blade of the ancient sword melts in the monster's blood, only the golden hilt remains. Engraved with the story of the Flood and with runes naming its owner, it carries the history of God's judgement on the giants into Hrothgar's hall. It has been read as an image of the written word and of the transition from pagan to Christian knowledge, since Hrothgar's sermon follows directly from his reading of it [[orchard2003]]."
+  },
+  {
+   "title": "The dragon's hoard",
+   "text": "The hoard, left by a vanished people, guarded by a dragon and cursed, is treasure removed from the circle of gift and exchange. It brings death to Beowulf and is buried with him. It symbolises both the material glory of the heroic world and its futility in the face of time."
+  },
+  {
+   "title": "Hrunting",
+   "text": "Unferth's sword, famous and never before known to fail, fails Beowulf against Grendel's mother. Its failure, like that of Nægling against the dragon, shows the limits of human weapons and of human help; victory depends on Beowulf's strength, his armour, God's aid and the weapon of the giants. Its return to Unferth with courtesy marks the reconciliation of the two men."
+  }
+ ],
+ "debates": [
+  {
+   "title": "The date of the poem",
+   "text": [
+    "The poem's date has been argued for over two centuries. The manuscript dates from around the year 1000, but scholars have proposed composition at any time from the late seventh century to the time of the manuscript. In 1981 Kevin Kiernan argued that the poem as we have it may be a work of the early eleventh century, from the reign of the Danish king Cnut, when an English poem praising Danish ancestors would have had a special point; the collection edited by Colin Chase in the same year showed how wide the range of opinion had become [[kiernan1981]] [[chase1981]].",
+    "Since then, evidence from metre and language has moved most specialists towards an early date. R. D. Fulk argued that the poem's observance of Kaluza's law, a metrical distinction that depends on vowel lengths later lost, points to composition before about 725 if the poem is Mercian, or 825 if Northumbrian. Michael Lapidge argued from the types of scribal error that the poem was copied at an early stage from an exemplar of the early eighth century. The essays in Leonard Neidorf's 2014 collection mostly support an early date, though the question remains contested [[fulk1992]] [[lapidge2000]] [[neidorf2014]]."
+   ],
+   "cite": [
+    "kiernan1981",
+    "chase1981",
+    "fulk1992",
+    "lapidge2000",
+    "neidorf2014"
+   ]
+  },
+  {
+   "title": "Tolkien and the monsters",
+   "text": [
+    "Before 1936, many scholars valued Beowulf chiefly as a source for history, myth and language, and regretted that a poet with such knowledge of heroic legend had built his poem around fights with monsters, placing historical matters in the digressions. W. P. Ker and R. W. Chambers both expressed this regret [[chambers1921]].",
+    "Tolkien's lecture 'Beowulf: The Monsters and the Critics' reversed the argument. He claimed that the monsters are essential, because they embody the hostile forces that men must face and by which they are finally defeated; that the poem is a balanced contrast of youth and age rather than a narrative; and that it is the work of a Christian poet looking back on a noble pagan past. The lecture founded modern literary criticism of the poem, though later scholars have questioned its picture of a poet looking back on paganism with nostalgia [[tolkien1936]] [[bjork1997]]."
+   ],
+   "cite": [
+    "tolkien1936",
+    "chambers1921",
+    "bjork1997"
+   ]
+  },
+  {
+   "title": "The poem's Christianity",
+   "text": [
+    "How Christian is Beowulf? Nineteenth-century scholars often thought that a pagan poem had been revised by Christian monks, and they tried to remove the Christian passages. Most twentieth-century scholars, following Klaeber and Tolkien, have accepted that the Christian elements are integral, but they disagree about their meaning [[fulk2008]].",
+    "Margaret Goldsmith read the poem as an allegory of Christian doctrine, with Beowulf's last fight as a failure of a soul tempted by pride and treasure. Dorothy Whitelock argued that the audience was fully Christian and familiar with Christian teaching. Fred Robinson argued that the poet uses a style in which words can be understood both in a pagan and a Christian sense, allowing his audience to admire their ancestors while knowing that they were damned [[goldsmith1970]] [[whitelock1951]] [[robinson1985]]."
+   ],
+   "cite": [
+    "fulk2008",
+    "goldsmith1970",
+    "whitelock1951",
+    "robinson1985"
+   ]
+  },
+  {
+   "title": "Oral composition or literate art?",
+   "text": [
+    "In 1953 Francis P. Magoun, applying the theory of oral-formulaic composition developed by Milman Parry and Albert Lord for Homer and the South Slavic epic, argued that Old English poetry, including Beowulf, was composed orally by singers using a stock of traditional formulas [[magoun1953]].",
+    "This view was soon challenged. Larry Benson showed that Old English poems known to be translated from Latin, and therefore composed by literate poets, are as formulaic as Beowulf. Most scholars now see the poem as the work of a literate poet using a traditional oral style; John D. Niles and Andy Orchard have described the interplay of oral tradition and written learning in the poem [[benson1966]] [[niles1983]] [[orchard2003]]."
+   ],
+   "cite": [
+    "magoun1953",
+    "benson1966",
+    "niles1983",
+    "orchard2003"
+   ]
+  },
+  {
+   "title": "Unity and the digressions",
+   "text": [
+    "Is Beowulf a unified poem? Earlier scholars sometimes saw it as a collection of separate lays joined together, and its many digressions as evidence of poor construction. Tolkien defended the structure of the poem as a whole, and Adrien Bonjour argued that every digression has an artistic function within the poem [[tolkien1936]] [[bonjour1950]].",
+    "Later critics have developed these defences. Arthur Brodeur analysed the poet's art of composition, and John Leyerle compared its structure to the interlace patterns of Anglo-Saxon art, in which the threads of different stories are woven together and bound across the poem. The question now is not whether the digressions are relevant but how they create meaning through contrast and anticipation [[brodeur1959]] [[leyerle1967]]."
+   ],
+   "cite": [
+    "tolkien1936",
+    "bonjour1950",
+    "brodeur1959",
+    "leyerle1967"
+   ]
+  },
+  {
+   "title": "Elegy and the 'last survivor'",
+   "text": [
+    "The poem's second half, and especially the Lay of the Last Survivor, the father's lament and the Geatish woman's song, has led some critics to see Beowulf as fundamentally elegiac, closer in spirit to The Wanderer than to the Iliad. Tolkien called it a heroic-elegiac poem [[tolkien1936]].",
+    "Others insist that the elegiac passages serve the heroic narrative rather than replacing it, and that the poem balances lament with celebration. The relationship between these modes affects how one reads the ending: as a tragedy of a people's destruction, or as a celebration of a hero whose fame outlives him [[irving1968]] [[orchard2003]]."
+   ],
+   "cite": [
+    "tolkien1936",
+    "irving1968",
+    "orchard2003"
+   ]
+  },
+  {
+   "title": "Women and peace-weaving",
+   "text": [
+    "Older criticism paid little attention to the women of Beowulf. Since the 1980s feminist and cultural criticism has examined their roles in detail. Helen Damico related Wealhtheow to the figure of the valkyrie in Norse tradition, and Gillian Overing argued that women in the poem function as signs within a masculine system of exchange, caught between the demands of different kin [[damico1984]] [[overing1990]].",
+    "John M. Hill has examined the poem's social world, including marriage, kinship and gift-exchange, in anthropological terms. The figure of the 'peace-weaver' has been questioned as a description: the poem uses the word only once, and its marriages to settle feuds almost always fail. Grendel's mother, an avenging mother, adds a further complication [[hill1995]]."
+   ],
+   "cite": [
+    "damico1984",
+    "overing1990",
+    "hill1995"
+   ]
+  },
+  {
+   "title": "The last word: lofgeornost",
+   "text": [
+    "The poem ends with the Geats' praise of Beowulf as the most generous and gentle of kings, kindest to his people and lofgeornost, 'most eager for praise'. Elsewhere in Old English, words of this family can carry a negative sense, close to 'vainglorious', especially in religious prose [[fulk2008]].",
+    "Critics have therefore debated whether the last word is the supreme praise of the heroic world, the final hint of a Christian poet's reservations about that world, or a deliberate ambiguity that lets both readings stand. The question concentrates the poem's larger problem of how a Christian poet judges the heroes he admires [[robinson1985]] [[orchard2003]]."
+   ],
+   "cite": [
+    "fulk2008",
+    "robinson1985",
+    "orchard2003"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Beo. 1–3",
+   "quote": "LO, praise of the prowess of people-kings\nof spear-armed Danes, in days long sped,\nwe have heard, and what honor the athelings won!",
+   "who": "The narrator",
+   "explanation": "The opening lines begin with Hwæt, a call for attention, and present the poem as part of a shared tradition: 'we have heard'. The subject announced is not one hero but the glory of a royal people, which prepares for the poem's interest in kings, dynasties and the memory of the past."
+  },
+  {
+   "ref": "Beo. 90–92",
+   "quote": "clear song of the singer. He sang who knew\ntales of the early time of man,\nhow the Almighty made the earth,",
+   "who": "The narrator",
+   "explanation": "The scop's song of Creation in Heorot is the first song within the poem. It sets the ordered world of God against Grendel, the creature of darkness who hears it, and it raises the question of what these pagan Danes know of God."
+  },
+  {
+   "ref": "Beo. 455",
+   "quote": "Fares Wyrd  as she must.",
+   "who": "Beowulf",
+   "explanation": "Beowulf's words before the fight with Grendel express the heroic acceptance of fate. In the Old English (Gæð a wyrd swa hio scel), wyrd means the course of events rather than a goddess, and Beowulf has just entrusted the outcome to God."
+  },
+  {
+   "ref": "Beo. 1386–1389",
+   "quote": "Each of us all must his end abide\nin the ways of the world; so win who may\nglory ere death! When his days are told,\nthat is the warrior's worthiest doom.",
+   "who": "Beowulf",
+   "explanation": "Beowulf's consolation to Hrothgar after the death of Æschere is the classic statement of the heroic ethic: since death is certain, a man must win dom, lasting reputation, while he can. The confidence of the speech is tested in the fight that follows and in the rest of the poem."
+  },
+  {
+   "ref": "Beo. 1761–1763",
+   "quote": "The flower of thy might\nlasts now a while:  but erelong it shall be\nthat sickness or sword thy strength shall minish,",
+   "who": "Hrothgar",
+   "explanation": "Hrothgar's sermon warns the young hero of the brevity of strength and the dangers of pride. Its list of ways a man may die is close to Christian homiletic writing, and its warnings anticipate Beowulf's own old age and death."
+  },
+  {
+   "ref": "Beo. 1940–1943",
+   "quote": "No queenly way\nfor woman to practise, though peerless she,\nthat the weaver-of-peace  from warrior dear\nby wrath and lying his life should reave!",
+   "who": "The narrator",
+   "explanation": "The only use of the word freoðuwebbe, 'peace-weaver', in the poem, applied to a queen who betrays the role. It shows that the poet thought of a queen's function as making and keeping peace."
+  },
+  {
+   "ref": "Beo. 2247–2249",
+   "quote": "\"Now hold thou, earth, since heroes may not,\nwhat earls have owned! Lo, erst from thee\nbrave men brought it!",
+   "who": "The Last Survivor",
+   "explanation": "The opening of the Last Survivor's lament. Treasure that once circulated in hall is given back to the earth because no one remains to use it. The passage is a miniature elegy that sets the tone of the poem's second half."
+  },
+  {
+   "ref": "Beo. 2444–2446",
+   "quote": "Too awful it is for an aged man\nto bide and bear, that his bairn so young\nrides on the gallows.",
+   "who": "Beowulf",
+   "explanation": "Beowulf compares his grandfather's grief for a son killed by his brother to that of a father whose son has been hanged. In both cases there is no possibility of revenge or compensation, and the feud society offers no remedy for grief."
+  },
+  {
+   "ref": "Beo. 2890–2891",
+   "quote": "Yea, death is better\nfor liegemen all than a life of shame!",
+   "who": "Wiglaf",
+   "explanation": "Wiglaf's condemnation of the companions who fled states the core of the comitatus ideal. The retainers who accepted their lord's gifts and failed him in battle have lost their honour, and their families will lose their lands."
+  },
+  {
+   "ref": "Beo. 3180–3182",
+   "quote": "quoth that of all the kings of earth,\nof men he was mildest and most beloved,\nto his kin the kindest, keenest for praise.",
+   "who": "The Geats",
+   "explanation": "The poem's final lines, the lament of Beowulf's companions. The first qualities praised are gentleness and kindness; the last word in Old English, lofgeornost, 'most eager for praise', has been read as the highest heroic praise or as a subtle reservation."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does the poem begin with Scyld Scefing and not with Beowulf?",
+   "hint": "Think about the opening and closing funerals, the poem's interest in dynasties and good kings, and the claim that 'we have heard' these stories."
+  },
+  {
+   "q": "How does the poem present Grendel? Is he a beast, a man, or something else?",
+   "hint": "Look at the descent from Cain, the song of Creation that torments him, the narration of the fight from his point of view, and words like mearcstapa."
+  },
+  {
+   "q": "What is the function of the Finnsburh episode in its context?",
+   "hint": "Consider where it is placed, what happens to Hildeburh, and how it relates to Wealhtheow's speech and the future of the Danish royal house."
+  },
+  {
+   "q": "Compare the three fights. What changes from one to the next?",
+   "hint": "Consider weapons and their failure, the help Beowulf receives, his age and role, and what each victory costs."
+  },
+  {
+   "q": "What does Hrothgar's 'sermon' warn Beowulf against, and does the rest of the poem show that the warning was needed?",
+   "hint": "Look at the story of Heremod, the image of the arrows of pride, and Beowulf's behaviour as king and in his last fight."
+  },
+  {
+   "q": "How does the poem combine its Christian narrator with its pagan characters?",
+   "hint": "Consider the passage on idol worship (175–188), the references to the Old Testament, the speeches in which characters thank God, and Robinson's idea of an 'appositive style'."
+  },
+  {
+   "q": "What role do women play in the poem?",
+   "hint": "Consider Wealhtheow, Hygd, Hildeburh, Freawaru, Modthryth, the Geatish woman at the funeral and Grendel's mother. What is a 'peace-weaver', and does the role ever work?"
+  },
+  {
+   "q": "Was Beowulf right to fight the dragon alone?",
+   "hint": "Weigh the duties of a hero against those of a king, the flight of the companions, the messenger's prophecy and the poem's last word, lofgeornost."
+  },
+  {
+   "q": "What is the significance of treasure in the poem?",
+   "hint": "Compare gifts given in Heorot with the dragon's hoard, the curse, the Last Survivor's lament and the burial of the treasure with Beowulf."
+  },
+  {
+   "q": "How does the poem's structure create meaning?",
+   "hint": "Consider Tolkien's idea of two balanced parts, the leap of fifty years at line 2200, the digressions, and the interlace structure described by Leyerle."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "benson1966",
+   "text": "Benson, Larry D. 'The Literary Character of Anglo-Saxon Formulaic Poetry.' PMLA 81 (1966): 334–41."
+  },
+  {
+   "id": "bjork1997",
+   "text": "Bjork, Robert E., and John D. Niles, eds. A Beowulf Handbook. Lincoln: University of Nebraska Press, 1997."
+  },
+  {
+   "id": "bonjour1950",
+   "text": "Bonjour, Adrien. The Digressions in Beowulf. Medium Ævum Monographs 5. Oxford: Basil Blackwell, 1950."
+  },
+  {
+   "id": "brodeur1959",
+   "text": "Brodeur, Arthur Gilchrist. The Art of Beowulf. Berkeley: University of California Press, 1959."
+  },
+  {
+   "id": "chambers1921",
+   "text": "Chambers, R. W. Beowulf: An Introduction to the Study of the Poem with a Discussion of the Stories of Offa and Finn. Cambridge: Cambridge University Press, 1921."
+  },
+  {
+   "id": "chase1981",
+   "text": "Chase, Colin, ed. The Dating of Beowulf. Toronto Old English Series 6. Toronto: University of Toronto Press, 1981."
+  },
+  {
+   "id": "damico1984",
+   "text": "Damico, Helen. Beowulf's Wealhtheow and the Valkyrie Tradition. Madison: University of Wisconsin Press, 1984."
+  },
+  {
+   "id": "fulk1992",
+   "text": "Fulk, R. D. A History of Old English Meter. Philadelphia: University of Pennsylvania Press, 1992."
+  },
+  {
+   "id": "fulk2008",
+   "text": "Fulk, R. D., Robert E. Bjork, and John D. Niles, eds. Klaeber's Beowulf and The Fight at Finnsburg. 4th ed. Toronto: University of Toronto Press, 2008."
+  },
+  {
+   "id": "goldsmith1970",
+   "text": "Goldsmith, Margaret E. The Mode and Meaning of 'Beowulf'. London: Athlone Press, 1970."
+  },
+  {
+   "id": "gummere1910",
+   "text": "Gummere, Francis B., trans. Beowulf. In Epic and Saga, edited by Charles W. Eliot. The Harvard Classics 49. New York: P. F. Collier & Son, 1910."
+  },
+  {
+   "id": "hill1995",
+   "text": "Hill, John M. The Cultural World in Beowulf. Toronto: University of Toronto Press, 1995."
+  },
+  {
+   "id": "irving1968",
+   "text": "Irving, Edward B., Jr. A Reading of Beowulf. New Haven: Yale University Press, 1968."
+  },
+  {
+   "id": "kiernan1981",
+   "text": "Kiernan, Kevin S. Beowulf and the Beowulf Manuscript. New Brunswick, NJ: Rutgers University Press, 1981."
+  },
+  {
+   "id": "lapidge2000",
+   "text": "Lapidge, Michael. 'The Archetype of Beowulf.' Anglo-Saxon England 29 (2000): 5–41."
+  },
+  {
+   "id": "leyerle1967",
+   "text": "Leyerle, John. 'The Interlace Structure of Beowulf.' University of Toronto Quarterly 37 (1967): 1–17."
+  },
+  {
+   "id": "magoun1953",
+   "text": "Magoun, Francis P., Jr. 'The Oral-Formulaic Character of Anglo-Saxon Narrative Poetry.' Speculum 28 (1953): 446–67."
+  },
+  {
+   "id": "neidorf2014",
+   "text": "Neidorf, Leonard, ed. The Dating of Beowulf: A Reassessment. Cambridge: D. S. Brewer, 2014."
+  },
+  {
+   "id": "newton1993",
+   "text": "Newton, Sam. The Origins of Beowulf and the Pre-Viking Kingdom of East Anglia. Cambridge: D. S. Brewer, 1993."
+  },
+  {
+   "id": "niles1983",
+   "text": "Niles, John D. Beowulf: The Poem and Its Tradition. Cambridge, MA: Harvard University Press, 1983."
+  },
+  {
+   "id": "orchard2003",
+   "text": "Orchard, Andy. A Critical Companion to Beowulf. Cambridge: D. S. Brewer, 2003."
+  },
+  {
+   "id": "overing1990",
+   "text": "Overing, Gillian R. Language, Sign, and Gender in Beowulf. Carbondale: Southern Illinois University Press, 1990."
+  },
+  {
+   "id": "robinson1985",
+   "text": "Robinson, Fred C. Beowulf and the Appositive Style. Knoxville: University of Tennessee Press, 1985."
+  },
+  {
+   "id": "tolkien1936",
+   "text": "Tolkien, J. R. R. 'Beowulf: The Monsters and the Critics.' Proceedings of the British Academy 22 (1936): 245–95."
+  },
+  {
+   "id": "whitelock1951",
+   "text": "Whitelock, Dorothy. The Audience of Beowulf. Oxford: Clarendon Press, 1951."
+  }
+ ]
+}

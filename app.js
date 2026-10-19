@@ -5567,7 +5567,7 @@
   // overview, book-by-book summary and analysis, characters, themes, the critical debates,
   // key passages (quoted from the recommended translation), questions and a bibliography.
   // Paragraphs cite with [[bibId]], drawn as (Author year) linked to the bibliography.
-  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost"]);
+  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost", "beowulf"]);
   const GUIDE_FILES = {};
   const GUIDE_PARTS = [["overview", "Overview"], ["books", "Book by book"], ["characters", "Characters"],
     ["themes", "Themes & symbols"], ["debates", "Critical debates"], ["quotes", "Key passages"],
@@ -5609,7 +5609,7 @@
     if (!d) { app.innerHTML = `<p class="empty">There is no study guide for this work yet.</p>`; return; }
     part = GUIDE_PARTS.some(([k]) => k === part) ? part : "overview";
     const P = (arr) => (arr || []).map((t) => `<p>${guideCite(d, group, t)}</p>`).join("");
-    const nb = Math.min(Math.max(+n || 1, 1), d.books.length);
+    const nb = Math.min(Math.max(+n || 1, 1), d.books.length), U = d.unit || "Book";
     let body = "";
     if (part === "overview") {
       body = `<dl class="gd-glance">${(d.glance || []).map((g) => `<div><dt>${esc(g.label)}</dt><dd>${guideCite(d, group, g.value)}</dd></div>`).join("")}</dl>
@@ -5617,12 +5617,12 @@
     } else if (part === "books") {
       const b = d.books[nb - 1];
       body = `<nav class="gd-books" aria-label="Books">${d.books.map((x) => `<a href="#/guide/${esc(group)}/books/${x.n}"${x.n === nb ? ' aria-current="page"' : ""}>${x.n}</a>`).join("")}</nav>
-        <h2 class="gd-h">Book ${b.n}: ${esc(b.title)}</h2>
+        <h2 class="gd-h">${esc(U)} ${b.n}: ${esc(b.title)}</h2>${b.lines ? `<p class="gd-lines">Lines ${esc(b.lines)}</p>` : ""}
         <h3 class="gd-h3">Summary</h3>${P(b.summary)}
         <h3 class="gd-h3">Analysis</h3>${P(b.analysis)}
         ${(b.key || []).length ? `<h3 class="gd-h3">Key passages</h3>${b.key.map((k) => `<figure class="gd-quote"><blockquote>${esc(k.quote)}</blockquote><figcaption>${guideRefLink(d, k.ref)}</figcaption>${k.note ? `<p>${guideCite(d, group, k.note)}</p>` : ""}</figure>`).join("")}` : ""}
-        <p class="gd-read">${d.quoteEdition ? `<a class="shelf-dl" href="#/work/${esc(d.quoteEdition)}/${nb - 1}">Read Book ${nb}</a>` : ""}
-          ${nb > 1 ? `<a href="#/guide/${esc(group)}/books/${nb - 1}">← Book ${nb - 1}</a>` : ""}${nb < d.books.length ? `<a href="#/guide/${esc(group)}/books/${nb + 1}">Book ${nb + 1} →</a>` : ""}</p>`;
+        <p class="gd-read">${d.quoteEdition ? `<a class="shelf-dl" href="#/work/${esc(d.quoteEdition)}/${b.section != null ? b.section : nb - 1}">Read ${d.unit ? "this part" : "Book " + nb}</a>` : ""}
+          ${nb > 1 ? `<a href="#/guide/${esc(group)}/books/${nb - 1}">← ${esc(U)} ${nb - 1}</a>` : ""}${nb < d.books.length ? `<a href="#/guide/${esc(group)}/books/${nb + 1}">${esc(U)} ${nb + 1} →</a>` : ""}</p>`;
     } else if (part === "characters") {
       setTimeout(() => addWhoBox(group, ".gd-body", "afterbegin"), 0);
       const sides = [...new Set(d.characters.map((c) => c.side))];
@@ -5642,13 +5642,13 @@
     } else {
       body = `<ul class="gd-bib">${d.bibliography.map((b) => `<li id="gd-${esc(b.id)}">${esc(b.text)}</li>`).join("")}</ul>`;
     }
-    setTitle(`${d.title}: study guide — ${GUIDE_PARTS.find(([k]) => k === part)[1]}`);
+    setTitle(`${d.title}: study guide — ${part === "books" && d.unit ? d.unit + " by " + d.unit.toLowerCase() : GUIDE_PARTS.find(([k]) => k === part)[1]}`);
     app.innerHTML = `
       <article class="detail gd-page">
         <div class="detail-subject">Study guide</div>
         <h1 class="detail-title">${esc(d.title)}</h1>
         <p class="detail-author">by ${esc(d.author)} · <a href="#/versions/${esc(group)}">Read the poem</a></p>
-        <nav class="gd-tabs" aria-label="Study guide">${GUIDE_PARTS.map(([k, label]) => `<a href="#/guide/${esc(group)}/${k}"${k === part ? ' aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
+        <nav class="gd-tabs" aria-label="Study guide">${GUIDE_PARTS.map(([k, label]) => `<a href="#/guide/${esc(group)}/${k}"${k === part ? ' aria-current="page"' : ""}>${k === "books" && d.unit ? d.unit + " by " + d.unit.toLowerCase() : label}</a>`).join("")}</nav>
         <div class="gd-body">${body}</div>
         <p class="gd-foot">Written by the Poetry Codex editors. Quotations from ${d.quoteEdition && WORKS[d.quoteEdition] ? esc(trName(WORKS[d.quoteEdition].translator || "")) : "the recommended translation"}; line references are to the Greek. Updated ${esc(d.updated || "")}.</p>
       </article>`;
@@ -5661,12 +5661,21 @@
     const group = w.workGroup || w.slug;
     if (!GUIDES.has(group)) return;
     const s = w.sections && w.sections[i];
-    const n = bookNumber(s && s.title);
-    const head = app.querySelector(".detail > .detail-author");
-    if (!head || app.querySelector(".gd-box")) return;
-    head.insertAdjacentHTML("afterend", `<a class="gd-box" href="#/guide/${esc(group)}/${n ? "books/" + n : "overview"}">
-      <span class="gd-box-k">Study guide</span><span class="gd-box-t">${n ? `Book ${n}: summary and analysis` : "Summary, themes and critical debates"}</span><span aria-hidden="true">→</span></a>`);
-    addWhoBox(group, ".detail > .gd-box", "afterend");
+    const here = location.hash;
+    guideOf(group).then((d) => {
+      if (!d || location.hash !== here) return;
+      let n = bookNumber(s && s.title), U = "Book";
+      // a guide in parts (Beowulf): the part that holds this section, by the parts' first sections
+      if (d.unit && w.slug === d.quoteEdition) {
+        U = d.unit; n = 0;
+        d.books.forEach((b) => { if (b.section != null && b.section <= i) n = b.n; });
+      } else if (d.unit) n = 0;
+      const head = app.querySelector(".detail > .detail-author");
+      if (!head || app.querySelector(".gd-box")) return;
+      head.insertAdjacentHTML("afterend", `<a class="gd-box" href="#/guide/${esc(group)}/${n ? "books/" + n : "overview"}">
+        <span class="gd-box-k">Study guide</span><span class="gd-box-t">${n ? `${esc(U)} ${n}: summary and analysis` : "Summary, themes and critical debates"}</span><span aria-hidden="true">→</span></a>`);
+      addWhoBox(group, ".detail > .gd-box", "afterend");
+    });
   }
 
   // ---------- translator pages: #/translator/<slug>, #/translators ----------
