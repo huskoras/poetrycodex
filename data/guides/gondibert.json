@@ -1,0 +1,779 @@
+{
+ "work": "gondibert",
+ "title": "Gondibert",
+ "author": "Sir William Davenant",
+ "quoteEdition": "gondibert",
+ "unit": "Part",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Sir William Davenant (1606–1668): poet, playwright, Poet Laureate from 1638, royalist soldier and later Restoration theatre manager"
+  },
+  {
+   "label": "Written",
+   "value": "Mostly in exile in Paris, 1649–50, with Hobbes reading the work as it went; Davenant broke off in Book III after his capture at sea in May 1650"
+  },
+  {
+   "label": "Published",
+   "value": "The Preface to Hobbes and Hobbes's Answer, with the opening of the poem, at Paris in 1650; the poem itself in London in 1651 (quarto and octavo editions)"
+  },
+  {
+   "label": "Form",
+   "value": "The 'interwoven Stanza of four': iambic pentameter quatrains rhyming abab, each canto opened by a six-line verse argument in couplets"
+  },
+  {
+   "label": "Length",
+   "value": "Unfinished: two books and part of a third. This text has twenty cantos and 1,635 quatrains; commonly cited totals of about 1,700 quatrains include material added later"
+  },
+  {
+   "label": "Plan",
+   "value": "Five books, to answer the five acts of a play, with the cantos as scenes; only Books I–II and six cantos of Book III were printed in 1651"
+  },
+  {
+   "label": "Setting",
+   "value": "Lombardy under the old King Aribert: the forest near Verona, the city and court, the veterans' camp at Brescia, and the house of the philosopher Astragon"
+  },
+  {
+   "label": "Main story",
+   "value": "Rhodalind, the king's daughter, is meant for Duke Gondibert; Gondibert falls in love instead with Birtha, Astragon's daughter, while Prince Oswald's faction plots revenge"
+  },
+  {
+   "label": "Kind",
+   "value": "A 'heroick poem' without gods, Muses or marvels: an epic of manners and statecraft that its author hoped would teach princes and nobles"
+  },
+  {
+   "label": "Quoted from",
+   "value": "The 1651 text as given on this site (Book I, Canto I to Book III, Canto VI), in Davenant's spelling; references are book.canto.stanza"
+  }
+ ],
+ "context": [
+  "William Davenant was born in Oxford early in 1606 and baptised on 3 March; his father kept a tavern there and later became mayor. The story that Shakespeare, passing through Oxford, stood godfather to him, and the darker hint that he was more than a godfather, comes from John Aubrey and Restoration gossip, and Davenant seems not to have discouraged it; none of it can be proved. By the 1630s he was a successful court dramatist and writer of masques, and in 1638, after Jonson's death, he received the pension that made him in effect Poet Laureate [[nethercot1938]] [[edmond1987]].",
+  "The Civil War made him a royalist soldier and conspirator. He was implicated in the Army Plot of 1641, served with the king's forces, was knighted in 1643, and passed much of the 1640s with Queen Henrietta Maria's court in Paris, where he became a Catholic and came to know Thomas Hobbes. In May 1650, sailing under a royal commission for Maryland, he was captured in the Channel and held at Cowes Castle on the Isle of Wight; he was later moved to the Tower and was not released until 1652. A well-known but unproved tradition holds that Milton helped to save him then, and that Davenant returned the favour in 1660 [[edmond1987]] [[edmond2004]].",
+  "Gondibert belongs to this crisis. Davenant wrote most of it in Paris, and in the long Preface addressed to Hobbes (dated Paris, 2 January 1650) he explains his aims; Hobbes's Answer, dated a few days later, praises the work and sets out his own account of how judgement and fancy make a poem. The Preface and Answer were printed in Paris in 1650 with the first part of the poem; the poem itself followed in London in 1651, with commendatory verses by Edmund Waller and Abraham Cowley and a Postscript in which Davenant, a prisoner at Cowes, explains that he must stop in the middle of the third book [[gladish1971]] [[spingarn1908]].",
+  "The Preface is one of the founding documents of English neoclassical criticism. Davenant reviews the epic tradition from Homer to Spenser and objects to its marvels and allegories. He wants a heroic poem built on probable human action, set in a Christian past distant enough to allow invention, and shaped like a play: five books for five acts, cantos for scenes. Its purpose is public. Religion, arms, policy and law, he argues, govern men poorly by themselves, and heroic poetry should support them by presenting attractive patterns of virtue to the princes and nobles whose example shapes everyone else. Hobbes's Answer agrees, and also approves a Christian poet's refusal to invoke a Muse [[dowlin1934]] [[swedenberg1944]].",
+  "The poem's reception was mixed from the beginning. In 1653 a group of royalist wits, usually associated with Sir John Denham, issued Certain Verses Written by Severall of the Authors Friends, a set of mocking poems on the Preface and the poem; Davenant's defenders replied in 1655. Later critics took the work more seriously. Thomas Rymer discussed it respectfully in the 1670s, and Dryden borrowed its quatrain for Annus Mirabilis (1667) and in Of Heroic Plays (1672) named Davenant as the founder of the heroic play, while finding the poem itself incomplete in design. Davenant's own Restoration career in the theatre, beginning with The Siege of Rhodes in the 1650s, carried the 'love and honour' manner into the drama [[raylor1994]] [[dryden1962]] [[miner1974]]."
+ ],
+ "plot": [
+  "Old Aribert, king of the Lombards, has no son. His daughter Rhodalind, admired for her virtue more than her beauty, will carry the crown to her husband. Two princes of the royal line have won renown in war: the proud and ambitious Prince Oswald, who leads the old veterans camped near Brescia, and the grave, generous Duke Gondibert, who leads the young army at Bergamo. The king secretly means Rhodalind for Gondibert, and Rhodalind secretly loves him; Gondibert knows neither fact, and Oswald suspects both.",
+  "During Gondibert's yearly hunt near Verona, Oswald ambushes him. Ashamed of the planned slaughter, he turns it into a duel of leaders with three seconds on each side. Oswald and his kinsmen Paradine and Dargonet die, and on Gondibert's side so do the rival lovers Arnold and Hugo; Hurgonil disarms Oswald's brother Hubert. When the Brescian troops break their vow and charge, a small pitched battle follows. Gondibert wins but is gravely wounded, and old Ulfin, leading a troop of maimed veterans, takes him to the house of the philosopher Astragon.",
+  "In Book II the news spreads through Verona. The priests at first refuse funeral rites to men killed in combat, and Oswald's sister Gartha curses Rhodalind and rides to rouse the Brescian camp. The king's counsellor Hermegild, who loves Gartha, quiets the army and plans a slower conspiracy, and Oswald is burned with Roman rites. At Astragon's house, a great centre of learning with three temples, Gondibert recovers and falls in love with Astragon's daughter Birtha, who loves him in return; he tells Astragon that he does not want the crown. Two young friends, Goltho and Ulfinore, also fall secretly in love with Birtha.",
+  "In Book III Hurgonil and Gondibert's sister Orna are betrothed, while Hermegild teaches Gartha to dissemble and to put on male disguise. News arrives that the king has publicly adopted Gondibert as heir and husband for Rhodalind. The king and court visit Astragon's house and the offer is made in person; Gondibert answers evasively and is ordered back to Verona. He gives Birtha a heart-shaped emerald that will fade if he is unfaithful. Astragon advises her to serve Rhodalind at court, and Goltho and Ulfinore ride to Verona, where Goltho is nearly caught by the courtesan Dalga. There the 1651 text stops."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Rivals and the Hunt",
+   "lines": "Book I, Cantos 1–2",
+   "section": 0,
+   "summary": [
+    "The poem opens with no invocation. It praises Aribert as a king who uses war to subdue tumult and law to protect subjects from one another, and then turns to his one heir, Rhodalind. The poet will not describe her beauty, since every lover would find his own mistress outshone. He then compares the two great captains of the royal line: Oswald, splendid at court, courting the people and driven by ambition, and Gondibert, plainly dressed, steady and loved for his virtue. The king's secret choice of Gondibert, and Rhodalind's secret love, set up the conflict, while Oswald's ambitious sister Gartha argues his cause.",
+    "Canto II moves to the forest near Verona, where Gondibert and his young friends hold an annual hunt to mark his grandfather's victory over the Vandals. The poet introduces the hunters as lovers: Hurgonil, who loves Gondibert's sister Orna; Arnold and Hugo, rivals for Laura; the young Goltho, who has not yet loved; and the reserved Tybalt. The long chase of an old royal stag ends in its death. Then a forest ranger rides up to warn that Oswald lies in ambush with five hundred lancers, and Gondibert draws his hunters into a square."
+   ],
+   "analysis": [
+    "The first canto works more like the opening exposition of a play than like an epic proem, as Davenant's dramatic plan would lead one to expect. Characters are set out in balanced pairs, Oswald against Gondibert and the old army against the young. The argument runs in maxims about war, law and faction. The closing stanzas complain that faction runs through courts, cities and camps, and that religion, once taken over by argument, carries war from the schools into the field. In 1650 readers could hardly miss the reference to England.",
+    "The hunt is the first great set piece, and it is more than decoration. The poet takes the stag's side against 'Tyrannick Man', and finds in the herd that abandons its leader an image of human politics. The stag's death foreshadows the duel: an old champion brought down by numbers and art, ending in a ritual that the poet calls vain custom. Hunters become the hunted within a single canto. Even this early, love is presented as the source of courage: every hunter wears a belt worked by his lady."
+   ],
+   "key": [
+    {
+     "ref": "Gond. 1.1.27",
+     "quote": "Oswald the great, and greater Gondibert!\nBoth from successfull conqu'ring Fathers sprung",
+     "note": "The poem's founding comparison. The line gives both men greatness and still ranks them, in the way the comparisons of Plutarch's Parallel Lives do."
+    },
+    {
+     "ref": "Gond. 1.1.80",
+     "quote": "Our Reason our Religion does invade,\nTill from the Schools to Camps it carry war.",
+     "note": "A comment on the age written into the Lombard story: theological argument turning into civil war."
+    },
+    {
+     "ref": "Gond. 1.2.41",
+     "quote": "We blush to see our politicks in Beasts,\nWho Many sav'd by this one Sacrifice;",
+     "note": "The herd gives up the hunted stag to save itself. The narrator reads the hunt as political allegory, cool and close to Hobbes."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Duel and the Battle",
+   "lines": "Book I, Cantos 3–5",
+   "section": 2,
+   "summary": [
+    "As the two forces close, Oswald is moved by the sight of Gondibert's young followers and offers to settle the quarrel in single combat on foot. He accuses Gondibert of secretly seeking Rhodalind and the crown. Gondibert denies loving her for the sake of reward and even offers to give up the crown, which he calls the worst part of Rhodalind. Oswald answers that power must not be divided. Seconds come forward: Hubert, Paradine and Dargonet for Oswald; Hurgonil, Arnold and Hugo, who wins the place from Tybalt by lot, for Gondibert. Borgio and Vasco quarrel with Tybalt and Goltho, and the troops are bound by oath to stand apart.",
+    "Canto IV opens with the poet defending heroic song as medicine for the soul. In the fighting, Arnold dies at Paradine's hand, Hugo kills Dargonet, and then Hugo and Paradine kill each other. Hurgonil disarms Hubert and spares him for Orna's sake, and Gondibert kills Oswald when Oswald's sword breaks. Borgio then urges the Brescians to take revenge. In Canto V Gondibert's hunters win a small, savage battle by feigned retreats and rallies. Vasco falls, Borgio is spared, and Hubert, who keeps looking for death, is set free. The Duke sends the dead lovers to Verona with Hurgonil and Tybalt, sets off for Bergamo, and collapses from his wounds."
+   ],
+   "analysis": [
+    "These cantos show Davenant's version of heroism most clearly. Oswald is no villain. His turn from murder to 'brave killing' (as the argument of Canto III puts it) is a real moral recovery, and both princes argue about power in serious terms. Oswald's claim that divided power destroys greatness, and that one must rule to keep the world safe, sounds close to Hobbes; Gondibert's reply, that true valour serves for fame and not for hire, belongs to the older ethic of honour. The poem lets these two views meet without fully settling between them.",
+    "The fighting itself is formal and almost choreographed: wounds are made 'civilly', 'as loyal Ladies might be proud to dress'. Davenant follows the logic of the duel as a substitute for war, and then shows it failing, since private rage turns into a battle anyway. The narrator's comments on chance and death, and the lament for the dead lovers Arnold and Hugo, bring out what the code of honour costs. This is the beginning of the 'love and honour' manner later found in the heroic play. In the Canto IV proem Davenant claims that poets are 'the old renown'd Physitians' of the mind, which states the moral theory of his Preface in verse."
+   ],
+   "key": [
+    {
+     "ref": "Gond. 1.3.36",
+     "quote": "Since the Worlds safety we in greatness find,\nAnd pow'r divided is from greatness gone,",
+     "note": "Oswald argues that sovereignty cannot be shared. The idea is close to Hobbes's view that a divided power destroys itself."
+    },
+    {
+     "ref": "Gond. 1.4.6",
+     "quote": "Poets the old renown'd Physitians are,\nWho for the sickly habits of the mind,\nExamples as the ancient cure prepare.",
+     "note": "The Preface's theory in verse: heroic poetry cures by example."
+    },
+    {
+     "ref": "Gond. 1.4.50",
+     "quote": "It clash'd and broke against the adverse steel,\nWhich travell'd onward till it reach'd his heart.",
+     "note": "Oswald dies by chance as much as by skill. The narrator has just noted how Heaven seems indifferent to human combats."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Ulfin's Veterans and the Gates of Verona",
+   "lines": "Book I, Canto 6 – Book II, Canto 1",
+   "section": 5,
+   "summary": [
+    "A dark troop of horsemen appears. It is led by old Ulfin, once page to Gondibert's grandfather, and made up of maimed veterans whom he feeds on his estate. Goltho, taking them for Oswald's men, defies them. Ulfin revives the Duke with a cordial and tells the story of his service, and his men, many with missing limbs or eyes, turn out to be loyal friends. Ulfin gives his son Ulfinore to Gondibert's service, and Gondibert pairs him with Goltho as a sworn friend. At nightfall Ulfin leads the wounded to the house of the wise and wealthy Astragon, whose physicians dress their wounds and give them sleep.",
+    "Book II opens with Hurgonil and Tybalt bringing the bodies of Arnold and Hugo into Verona at dawn. The poet describes the city waking: lawyers, debtors, merchants, a fleeing adulterer, gamblers, labourers. Rumour arrives ahead of the truth and reports both princes dead. The prior of the chief temple refuses rites to men killed in combat. A spokesman for the crowd attacks the priests as greedy pensioners, and Tybalt answers with a defence of priesthood: religion governs more cheaply than camps or laws. He also argues that a fight with nine hundred on the field counts as war, not private combat, and the priests then give the rites."
+   ],
+   "analysis": [
+    "Ulfin's troop of mutilated soldiers is one of the poem's strangest and most humane inventions. At first the ugliness of war's survivors horrifies the reader; then they are revealed as loyal friends living on the gratitude of a good lord. The episode shows Davenant's interest in what follows war: care for the wounded, the obligations of patrons, and Gondibert's growing dependence on the old and the wise. Ulfin's maxim that those who endure most conquer most anticipates the poem's turn from the battlefield to the house of learning.",
+    "The Verona canto is satire in a civic setting, with something of Davenant's experience of London streets and theatres. The quarrel at the temple door sets popular anticlericalism against a defence of the church as a social institution. Tybalt claims that conscience works in secret and prevents what law can only punish, so religion is cheap government. Many readers have found this argument close to Hobbes's treatment of religion as part of civil order. The final stanza, in which slaughter becomes lawful by its very scale, is one of the poem's sharpest moral judgements."
+   ],
+   "key": [
+    {
+     "ref": "Gond. 1.6.24",
+     "quote": "He prais'd my courage when I boldly fought,\nBut said, They conquer most, that most endure.",
+     "note": "Ulfin repeats a maxim of Gondibert's grandfather. Patience becomes a heroic virtue, and the poem now turns in that direction."
+    },
+    {
+     "ref": "Gond. 2.1.66",
+     "quote": "Your Pomp, by which your Pow'r in count'nance dures,\nThough costly, costs much less than Camps or Laws;",
+     "note": "Tybalt's defence of the priesthood treats religion as an inexpensive instrument of order."
+    },
+    {
+     "ref": "Gond. 2.1.75",
+     "quote": "How vain is Custom, and how guilty Pow'r?\nSlaughter is lawfull made by the excess;",
+     "note": "The narrator condemns a law that forgives killing once it becomes war."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Fame, Faction and Oswald's Funeral",
+   "lines": "Book II, Cantos 2–4",
+   "section": 7,
+   "summary": [
+    "Fame carries the news to the palace. Tybalt reports truthfully to Aribert, who hides his feelings and then speaks to his council about the vanity of power. He fears that Hubert will inherit Oswald's claims and that Rhodalind will become the cause of war, and he trusts his old counsellor Hermegild. In the women's apartments Tybalt breaks the news to Rhodalind, Orna and Laura. Laura faints at the name of Arnold, and Rhodalind's love for Gondibert shows through. Gartha storms in, curses Rhodalind and her father, and drives off by night to the camp at Brescia.",
+    "Hubert brings Oswald's body to the veterans, who mourn and then demand revenge. When Gartha arrives, her beauty and her speech turn their rage against Verona itself. Hermegild then arrives from court. Secretly in love with Gartha, he offers Hubert his help: Hubert will have Rhodalind and the crown, and Hermegild will have Gartha. He advises the army to wait, to win the people by pity rather than force, and to work by policy. The army calms down, and Oswald is burned with Roman rites while the other dead are buried."
+   ],
+   "analysis": [
+    "This part shows Davenant as a political poet. Aribert's speech on power as a wine that intoxicates the wise, and on how the people grow tired of long reigns, reads like a meditation on the fragility of monarchy written by a royalist in exile. Fame, rumour and the crowd recur throughout: Davenant is very aware of public opinion as a force in politics, and the stanza that says 'What's rage in one, is liberty in all' has a plain bearing on 1640s England.",
+    "Gartha and Hermegild bring court intrigue into the poem. Gartha is the poem's most energetic woman, a figure of ambition in a woman's form, and the narrator both admires and condemns her. Hermegild's advice, to steer the people as pilots use the wind, is political realism stated as policy. Oswald's Roman funeral, described in antiquarian detail, closes the active plot of the first movement with an image of greatness reduced to ashes."
+   ],
+   "key": [
+    {
+     "ref": "Gond. 2.2.22",
+     "quote": "Pow'r is that luscious wine, which does the bold,\nThe wise, and noble most Intoxicate;",
+     "note": "The old king speaks of the corrupting taste of power."
+    },
+    {
+     "ref": "Gond. 2.4.7",
+     "quote": "But when by Number they grew dignify'd,\nWhat's rage in one, is liberty in all.",
+     "note": "On crowds: numbers change the name of an act. The same idea returns in Hermegild's later remark that fashion is what numbers choose."
+    },
+    {
+     "ref": "Gond. 2.4.32",
+     "quote": "We are the Peoples Pilots, they our winds;\nTo change by Nature prone; but Art Laveers,",
+     "note": "Hermegild's political art: rulers tack against popular moods instead of meeting them head on."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "The House of Astragon",
+   "lines": "Book II, Cantos 5–6",
+   "section": 10,
+   "summary": [
+    "The poem returns to Astragon's house, and Ulfin guides Goltho and Ulfinore through it. Chemists and distillers work on minerals and plants, and divers bring creatures from the sea. Philosophers in towers observe the weather; astronomers with long 'Optick Tubes' study the moon, and Astragon teaches that the earth moves. 'Nature's Office' records the habits of beasts, birds and fish, and there are a physic garden, a gallery of skeletons called 'The Cabinet of Death', and a great library, 'The Monument of vanish'd Minds'. The library is reviewed shelf by shelf: Egyptian and Chaldean learning, the Greeks, the lawgivers, the Bible surrounded by unread polemical divinity, the Koran shown as a counterfeit, moralists, Aesop, historians, physicians, and the poets, led by David.",
+    "Canto VI describes Astragon's three temples, of Prayer, Penitence and Praise. The Temple of Prayer is plain and always open. The Temple of Penitence is of black marble, lit by a single lamp, with paintings of Sodom, Mary Magdalene and the penitent thief. On this day a shout calls the household to the Temple of Praise, since Astragon has discovered the secret use of the lodestone, a discovery that Heaven will hide from navigators until a new world is to be found. The Temple of Praise is bright with coloured marbles and painted with the Creation, Eve, the Flood and the Ascension. Gondibert, still weak, joins in its music and sings an inward hymn of thanks."
+   ],
+   "analysis": [
+    "The House of Astragon has long been read as a picture of experimental science a decade before the Royal Society was founded in 1660, and as a descendant of Salomon's House in Bacon's New Atlantis (1627). The label is apt but should not be pushed too far. Davenant shows organised, cooperative observation and collection, and he scorns scholastic jargon and controversial divinity. At the same time his learning is still that of a Renaissance cabinet of curiosities, and his Astragon's discoveries come by vision as well as by experiment. The library catalogue doubles as a short history of knowledge and a judgement on it.",
+    "The three temples set out a religion governed by reason, as the canto's argument says, though reason still must obey religion's laws. Praise is valued above prayer because praise unites a divided world, while prayer 'in various discord upward flies': people ask Heaven for opposite things. This preference for a shared public worship over competing petitions fits Davenant's longing for civil peace after the religious wars, and it returns in Astragon's rebuke to Birtha in Book III. The canto also gives the poem the only 'sacred' marvel it allows, a natural discovery read as providence."
+   ],
+   "key": [
+    {
+     "ref": "Gond. 2.5.19",
+     "quote": "Man's pride (grown to Religion) he abates,\nBy moving our lov'd Earth; which we think fix'd;",
+     "note": "Astragon is a Copernican. The poem treats the new astronomy as a cure for human pride."
+    },
+    {
+     "ref": "Gond. 2.5.35",
+     "quote": "And this was call'd, The Cabinet of Death.",
+     "note": "The gallery of skeletons, and with it the library called 'The Monument of vanish'd Minds', are the museum and archive of Astragon's house."
+    },
+    {
+     "ref": "Gond. 2.6.84",
+     "quote": "Praise, is devotion fit for mightie Minds!\nThe diff'ring World's agreeing Sacrifice;",
+     "note": "Praise is the worship on which divided faiths can agree."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Birtha",
+   "lines": "Book II, Cantos 7–8",
+   "section": 12,
+   "summary": [
+    "The poet excuses his long digression and introduces Birtha, Astragon's only child. She has never seen a court or a city; she gathers plants for her father's stills, and the whole household loves her. Nursing the wounded Duke, she gives him a new and worse wound. She does not understand her own feelings at first, imagines him as an angel and then as a husband, and in her daydreams pictures a life like Eden. Gondibert finds her alone and declares his love in elaborate terms: she is Nature's own pupil and has cured his mind of the love of courtly show. Astragon reads the signs in their pulses and faces, and Gondibert confesses to him that he loves Birtha.",
+    "In Canto VIII Birtha's maid Thula tells her that the household knows she is in love. Astragon tests Gondibert by warning him that learning and war can breed ambition, and that victors expect crowns. Gondibert answers that his wars were his father's plan to unite the world and end war, that he would refuse a universal crown, and that he would rather have Birtha in the shade than any throne. Astragon blesses the match. Goltho, told of it, mocks Birtha as a 'harmless Cottage Ornament' and is rebuked; he then confesses to Ulfinore that he loves her himself. Ulfinore says nothing of his own love for her. The poet ends Book II by surveying all the lovers of the poem."
+   ],
+   "analysis": [
+    "Birtha is the centre of the poem's opposition between Nature and Art. Rhodalind is royal virtue tested in public; Birtha is innocence in retreat, beautiful without art and wise without schooling. Davenant handles her with some comedy (the chemist who breaks his alembic as she passes, her charmingly mistaken ideas about how children are made) and also with real tenderness. Her love grows as she imagines it, in a sequence that looks forward to Restoration studies of the passions in drama.",
+    "Gondibert's reply to Astragon is the poem's fullest statement of its political ideal. His father fought for a universal monarchy that would end the causes of war: different languages, faiths and borders. Gondibert himself now prefers private virtue and love to public greatness. Readers disagree whether this marks the hero's maturity or a retreat that the unfinished plot would have tested and corrected; Davenant's Preface suggests that greatness is meant to be educated, not given up. Goltho's outburst states the opposite case, the army's claim on its general, and so the poem's love triangle doubles as a political question."
+   ],
+   "key": [
+    {
+     "ref": "Gond. 2.7.6",
+     "quote": "She ne'r saw Courts, yet Courts could have undone\nWith untaught looks, and an unpractis'd heart;",
+     "note": "Birtha as Nature against courtly Art."
+    },
+    {
+     "ref": "Gond. 2.8.43",
+     "quote": "For could I force all Monarchies to one,\nThat Universal Crown I would not wear.",
+     "note": "Gondibert approves the dream of one world monarchy but refuses it for himself."
+    },
+    {
+     "ref": "Gond. 2.8.46",
+     "quote": "Leave shining Thrones for Birtha in a shade,\nWith Nature's quiet wonders fill my mind;",
+     "note": "The pastoral choice that the court will challenge in Book III."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Weddings, Plots and the King's Choice",
+   "lines": "Book III, Cantos 1–3",
+   "section": 14,
+   "summary": [
+    "Gartha returns to Verona with Hermegild, apparently reconciled, and Rhodalind welcomes her. Orna nurses Hurgonil through his wounds and is ashamed of the love she showed while he was in danger, and the court prepares their marriage. Meanwhile Hermegild warns Gartha that the match will strengthen Gondibert's house, presents her with a man's clothes, and teaches her the arts of dissimulation. Laura, who has quickly forgotten Arnold, begins to encourage Tybalt.",
+    "At Astragon's house Gondibert and Birtha exchange private vows and plan a secret marriage. The page Orgo rides in with news that the king has publicly adopted Gondibert as his heir and named Rhodalind as his bride. Birtha collapses, and Gondibert vows that he never sought Rhodalind. Astragon calms them both. The poet then addresses a future reader and his bride, hoping that the book will teach later lovers. Orgo returns with a jewelled casket, and the king and his court arrive. Birtha hides, and Hermegild comforts the jealous Gartha with promises of patient intrigue."
+   ],
+   "analysis": [
+    "Book III moves the poem's interest from war to the politics of marriage. Weddings are both a social bond and a trap: in a striking passage the poet calls wedlock 'the States Net' and marriage 'too oft but civil war'. Hermegild's lessons to Gartha, who is to dress as a man and govern by appearances, are the poem's darkest account of court politics. Readers have connected them to the masquerades of Caroline court culture that Davenant himself had served.",
+    "The king's adoption of Gondibert brings public and private claims into direct conflict. Aribert's grace, choosing 'whom they will chuse' like God, is absolutist in its language, yet the adoption rests on merit and not on blood. The Canto III address to a future reader shows Davenant thinking about posterity and about the book as a 'Mon'ment of my Mind'. It is also a reminder that the poem was written by a prisoner who might not live to finish it."
+   ],
+   "key": [
+    {
+     "ref": "Gond. 3.1.42",
+     "quote": "For marriage is too oft but civil war.",
+     "note": "Marriage seen as politics, in a poem whose plot turns on a royal match."
+    },
+    {
+     "ref": "Gond. 3.1.62",
+     "quote": "This shape to fashion, which you scorn to use,\nBecause not by your Sex as fashion worn;\nAnd fashion is but that which Numbers chuse.",
+     "note": "Hermegild persuades Gartha to put on male dress. Convention rests on numbers, not nature."
+    },
+    {
+     "ref": "Gond. 3.3.51",
+     "quote": "That Kings, like God, may chuse whom they will chuse;\nAnd what they make, judge with their own Eyes good.",
+     "note": "Aribert's choice of heir is described in terms close to the divine right of kings."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "The Emerald and the Road to Court",
+   "lines": "Book III, Cantos 4–6",
+   "section": 17,
+   "summary": [
+    "Before the assembled court, Aribert offers Gondibert the crown and Rhodalind's love. Gondibert answers with praise of the king and of Rhodalind and calls himself unworthy and ambitious. He advises her to choose among the kings who will come to woo her. The king takes this for bashfulness and orders him back to Verona. Gondibert then gives Birtha the emerald from the casket, a family nuptial stone that will grow pale if he is unfaithful, and leaves her Orgo as a messenger. When the court is about to leave, Gartha demands to see the rumoured country beauty, and Rhodalind kindly spares Birtha. As the court rides off with Gondibert beside Rhodalind, Birtha watches and doubts him, but the emerald stays bright.",
+    "Birtha visits the three temples to pray for success in love. Astragon stops her and condemns the 'unrighteous war of prayer' in which rivals ask Heaven for opposite things. He tells her that Rhodalind's tested public virtue is greater than her own retired virtue, and that she should go to court and serve her rival. Goltho and Ulfinore take their leave of Birtha. In Canto VI Ulfin gives his son precepts for gaining and keeping power, and the two friends ride into Verona. There the black-eyed courtesan Dalga lures Goltho into her house; Ulfinore sees through her tricks, and the arrival of another lover drives them out. The text ends with Ulfinore's warning against lust."
+   ],
+   "analysis": [
+    "Gondibert's reply to the king is deliberately ambiguous. He tells the truth (that he is not what he seems) in a form the court reads as modesty, and his praise of an ideal prince, who sees that power can never be too high in good hands, puts some of the poem's most absolutist doctrine in the mouth of a man trying to escape a throne. Astragon's speech to Birtha then reverses the pastoral ideal of Book II: retired virtue is the lesser kind, and love must be tested in the world. Where the poem would have taken this is not known. Both heroines are now headed for the same court.",
+    "Ulfin's precepts to his son are a short handbook of statecraft: be good and then become powerful, since virtue without power is merely harmless; be open, generous, rich and diligent; avoid revenge and the secret war of courts. They have been read as Davenant's own counsel to the new men of the 1650s, or to a future royal court. The Dalga episode brings city comedy into the poem and hints at a new plot (her 'descent and Storie' are, the argument says, concealed). Davenant broke off here. The 1651 Postscript explains that his imprisonment, and the prospect of death, interrupted the work."
+   ],
+   "key": [
+    {
+     "ref": "Gond. 3.4.48",
+     "quote": "The Nuptial Pledge, and this I give to thee!",
+     "note": "The emerald, a stone with old lore about chastity and fidelity, becomes the poem's test of truth in love."
+    },
+    {
+     "ref": "Gond. 3.5.36",
+     "quote": "Mark Birtha, this unrighteous war of prayer!",
+     "note": "Astragon applies the lesson of the three temples: rival petitions are a kind of war."
+    },
+    {
+     "ref": "Gond. 3.6.4",
+     "quote": "Be good! and then in pitie soon be great!\nFor virtuous men should toil to compass pow'r,",
+     "note": "Ulfin's counsel to Ulfinore. The good must seek power, or the bad will hold it."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Gondibert",
+   "side": "Gondibert's party",
+   "text": "A duke of the Lombard royal line, son and grandson of great generals, and leader of the young army at Bergamo. He is grave, generous, loved by the people and unambitious. He kills Oswald in the duel, and while recovering at Astragon's house he falls in love with Birtha and comes to prefer private virtue to the crown. The king's adoption of him as heir and husband for Rhodalind leaves him caught between love and duty when the poem breaks off."
+  },
+  {
+   "name": "Hurgonil",
+   "side": "Gondibert's party",
+   "text": "A count of high birth, brave and modest, betrothed to Gondibert's sister Orna. He spares Hubert for Orna's sake, is disfigured in the battle and carries the dead to Verona. His marriage to Orna in Book III shows love and honour in harmony, and Hermegild fears it as an alliance."
+  },
+  {
+   "name": "Orna",
+   "side": "Gondibert's party",
+   "text": "Gondibert's shy sister, who nurses Hurgonil and is ashamed of the open love she showed while he was in danger. She is the poem's model of modest, loyal love."
+  },
+  {
+   "name": "Arnold and Hugo",
+   "side": "Gondibert's party",
+   "text": "Rivals for Laura's love. Arnold, a famous captain, is the man she favours; little Hugo is a lover who writes sonnets and is all heart. Both die in the duel, Hugo avenging Arnold. Gondibert mourns them as the last true lovers."
+  },
+  {
+   "name": "Tybalt",
+   "side": "Gondibert's party",
+   "text": "A mature, reserved warrior who hides his love for Laura. He reports the battle to the king, breaks the news to the ladies, and defends the priests against the crowd. In Book III he courts Laura after Arnold's death."
+  },
+  {
+   "name": "Goltho",
+   "side": "Gondibert's party",
+   "text": "A cheerful, impetuous youth, brave in battle and new to love. He becomes Ulfinore's sworn friend, falls in love with Birtha, and in Verona nearly falls victim to the courtesan Dalga. His lightness is set against Ulfinore's discretion."
+  },
+  {
+   "name": "Ulfin",
+   "side": "Gondibert's party",
+   "text": "An old soldier, once page to Gondibert's grandfather. He maintains a troop of maimed veterans, rescues the wounded Duke and brings him to Astragon. In the last canto he gives his son a set of precepts on gaining power."
+  },
+  {
+   "name": "Ulfinore",
+   "side": "Gondibert's party",
+   "text": "Ulfin's son, given to Gondibert's service and paired with Goltho as a friend. He is secretly Goltho's rival for Birtha but keeps his passion under control, and he rescues Goltho from Dalga."
+  },
+  {
+   "name": "Orgo",
+   "side": "Gondibert's party",
+   "text": "Gondibert's young page, discreet and loyal, who brings the news of the adoption and the emerald, and is left with Birtha as her messenger."
+  },
+  {
+   "name": "Laura",
+   "side": "Gondibert's party",
+   "text": "Gondibert's niece, a celebrated court beauty. She loves Arnold and faints at his death, but soon recovers and turns to Tybalt, an example of how changeable love can be."
+  },
+  {
+   "name": "Oswald",
+   "side": "Oswald's party",
+   "text": "A prince of the royal line and leader of the Brescian veterans. He is splendid, brave, liberal and consumed by ambition for Rhodalind's crown. He lays the ambush but turns it into an honourable duel, argues seriously that power must not be divided, and dies by Gondibert's sword."
+  },
+  {
+   "name": "Hubert",
+   "side": "Oswald's party",
+   "text": "Oswald's brother, a persuasive speaker and an unlucky fighter. Disarmed and spared by Hurgonil, he seeks death in the battle and lives to carry Oswald's body to Brescia and to inherit his claims and his faction."
+  },
+  {
+   "name": "Gartha",
+   "side": "Oswald's party",
+   "text": "Oswald's sister, a commanding beauty whose mind is ruled by ambition, not love. She curses Rhodalind, rouses the army to revenge, accepts Hermegild's love for political ends, and is taught to dissemble and to wear male disguise."
+  },
+  {
+   "name": "Paradine and Dargonet",
+   "side": "Oswald's party",
+   "text": "Sons of Astolpho and Oswald's kinsmen, who insist on serving as his seconds. Paradine kills Arnold and dies with Hugo; Dargonet is killed by Hugo."
+  },
+  {
+   "name": "Borgio and Vasco",
+   "side": "Oswald's party",
+   "text": "Hardened veterans born and bred in camps. Their insults start the quarrel with Tybalt and Goltho; they lead the charge after Oswald's death. Vasco is killed by Gondibert and Borgio is spared."
+  },
+  {
+   "name": "Aribert",
+   "side": "The court",
+   "text": "The old king of the Lombards, a conqueror who governs by law and arms and finds power a burden. He secretly and then publicly chooses Gondibert as his heir by adoption and as Rhodalind's husband."
+  },
+  {
+   "name": "Rhodalind",
+   "side": "The court",
+   "text": "The king's only child and heir, famous for virtue more than beauty, who loves Gondibert in silence. She is generous even to Gartha and Birtha. Astragon holds her up as the pattern of public, tested virtue."
+  },
+  {
+   "name": "Hermegild",
+   "side": "The court",
+   "text": "The king's trusted counsellor, old, wise and brave, who secretly loves Gartha and joins Oswald's faction in return for her. He calms the army and plans a long conspiracy through public opinion and dissimulation."
+  },
+  {
+   "name": "Dalga",
+   "side": "The court",
+   "text": "A beautiful black-eyed courtesan of Verona who lures Goltho in the last canto. Her 'descent and Storie' are kept back for a later episode that was never written."
+  },
+  {
+   "name": "Astragon",
+   "side": "Astragon's house",
+   "text": "A rich and learned philosopher, 'Natures Spie', whose house is a centre of research, collection and worship. He heals Gondibert and blesses his love for Birtha, but in Book III teaches her that public virtue outranks private virtue and that partial prayer is a kind of war."
+  },
+  {
+   "name": "Birtha",
+   "side": "Astragon's house",
+   "text": "Astragon's only daughter, raised among herbs and stills and never at court. She is the poem's figure of untaught Nature. She falls in love with Gondibert, is plighted to him with the emerald, and is about to go to court to serve her rival when the poem stops."
+  },
+  {
+   "name": "Thula",
+   "side": "Astragon's house",
+   "text": "Birtha's elderly maid, a gossip who reveals her mistress's love to the household and gapes at the court's splendour."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Love and honour",
+   "text": [
+    "The poem's heroes are all lovers, and love is presented as the source of courage, reason and even life itself: the narrator claims that 'Love and Reason up together grow'. Duels are fought with ladies in mind, the dead are mourned as lovers, and the plot depends on whether Gondibert's honour toward his king can be reconciled with his love for Birtha.",
+    "This conflict between love and the claims of honour and the state is the material of the Restoration 'love and honour' drama, which Davenant himself helped to found. In Gondibert the tension is still unresolved. The poem seems to hope that virtuous love and public duty can be made to agree [[miner1974]] [[bordinat1981]]."
+   ]
+  },
+  {
+   "title": "Ambition, power and the state",
+   "text": [
+    "The poem is full of maxims about power: that it must not be divided, that it intoxicates, that crowds make rage into liberty, that the good must seek power so that the bad do not hold it. Oswald, Gartha and Hermegild show ambition as a disease, while Aribert and Gondibert show how heavy power is. Gondibert's account of his father's wars, fought to unite all nations under one crown and so to end war, gives the poem an imperial, peace-making ideal.",
+    "Many of these passages share Hobbes's language and outlook (men as wolves, the need for an undivided sovereign, religion as civil order), though the poem never becomes a versified Leviathan [[jacobraylor1991]] [[norbrook1999]]."
+   ]
+  },
+  {
+   "title": "Nature and Art",
+   "text": [
+    "The House of Astragon serves Nature through Art: observation, collection, medicine. Birtha embodies Nature itself, and her untaught beauty exposes the cosmetic and political arts of the court. Again and again the poem praises 'Nature's Law' over fashion, custom and dissimulation.",
+    "Yet the poem does not reject art. Its ideal is art that serves nature and does not disguise it, the same ideal Davenant claims for his own poem in the Preface: probable action and natural passions in place of enchantment."
+   ]
+  },
+  {
+   "title": "Religion, reason and civil peace",
+   "text": [
+    "Davenant's religion is ordered, ceremonial and anti-controversial. The library's unread polemicists gather dust, the three temples separate prayer, penitence and praise, and praise is valued as the one worship a divided world can share. The quarrel at the temple door and Tybalt's defence of priests treat religion as an institution of order.",
+    "For a poet writing after religious wars and a regicide, this preference for peaceful public worship over 'Religions heat' is clearly pointed. It also connects the poem to Hobbes's view of religion as a matter for the sovereign [[smith1994]]."
+   ]
+  },
+  {
+   "title": "Poetry as instruction",
+   "text": [
+    "The narrator repeatedly claims that poets are the physicians of the mind and that his song offers patterns for imitation. In the address of Book III he imagines a future bride who learns love from his book. This follows the Preface's argument that heroic poetry should reform princes and nobles by example.",
+    "The poem's habit of turning its own events into general maxims, which can make it read slowly, follows from this purpose: it is meant as a mirror for the governing class [[dowlin1934]] [[swedenberg1944]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Fame and rumour",
+   "text": "Fame is personified as a swift, unreliable messenger that runs ahead of truth from the forest to the streets and from the streets to the court. The poem constantly sets rumour against 'temp'rate Truth', which follows slowly behind, and this marks Davenant's sense of public opinion as a political force."
+  },
+  {
+   "title": "Chemistry and medicine",
+   "text": "Images of alembics, elixirs, cordials and distillation run through the poem, from Rhodalind's tears 'As Roses silently in Lymbecks melt' to Astragon's laboratories. Healing is literal (the Duke's wounds) and moral (poetry as medicine)."
+  },
+  {
+   "title": "Coin and counterfeit",
+   "text": "Love, virtue and honour are repeatedly described in the language of minting and currency: what is 'currant', what is debased by 'allay', what is counterfeit. The images express the poem's worry about false appearances at court."
+  },
+  {
+   "title": "Storms, pilots and the sea",
+   "text": "Statesmen are pilots and the people are winds; lovers look on their beloved like sailors sighting land. The sea imagery joins politics to passion, and points to the poem's interest in navigation, culminating in the lodestone."
+  },
+  {
+   "title": "Hunting and ambush",
+   "text": "The hunt of Book I, in which the hunters are themselves hunted, sets up a pattern of pursuit and ambush that returns in Oswald's trap, Hermegild's plots, Gartha's disguise and Dalga's snare for Goltho."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The royal stag",
+   "text": "The old stag, once wounded by Aribert, killed by numbers and art after a long chase, stands for brave greatness destroyed. Its fate anticipates Oswald's, and the narrator's sympathy for it turns the hunt into a judgement on 'Tyrannick Man'."
+  },
+  {
+   "title": "The emerald",
+   "text": "Gondibert's heart-shaped nuptial emerald, handed down through seven centuries of his family's brides, is believed to fade when a husband is unfaithful. It stands for constancy and makes the inward truth of love visible."
+  },
+  {
+   "title": "The three temples",
+   "text": "Prayer, Penitence and Praise each have a building suited to their spirit: plain and open, black and dim, bright and full of music. Together they make an architecture of devotion ordered by reason, with praise at its highest point."
+  },
+  {
+   "title": "The Monument of vanish'd Minds",
+   "text": "Astragon's library, where the books are 'th'assembled souls' of the dead, represents the survival of the mind beyond the body. In Book III the poet calls his own book 'the Mon'ment of my Mind'."
+  }
+ ],
+ "debates": [
+  {
+   "title": "The Preface and neoclassical epic theory",
+   "text": [
+    "The Preface and Hobbes's Answer have often received more attention than the poem. Spingarn printed them as central texts of seventeenth-century criticism, and Dowlin read them as a programme for English neoclassicism: probability over marvels, decorum and the reform of manners, with drama as the model for epic construction. Later historians of epic theory, such as Swedenberg, trace from them a long English argument about machinery, Christian subjects and the moral function of heroic poetry [[spingarn1908]] [[dowlin1934]] [[swedenberg1944]].",
+    "How original the Preface is remains disputed. Much of it draws on Italian and French debates about Tasso and on Renaissance commonplaces about poetry as instruction. Its dramatic structure and its frank address to a governing class are more distinctive. Gladish's edition sets out its sources and its relation to Hobbes's Answer in detail; readers should treat strong claims for its novelty with caution [[gladish1971]]."
+   ],
+   "cite": [
+    "spingarn1908",
+    "dowlin1934",
+    "swedenberg1944",
+    "gladish1971"
+   ]
+  },
+  {
+   "title": "Hobbes and Davenant",
+   "text": [
+    "Davenant says Hobbes examined the poem daily as it was written, and Hobbes's Answer, with its account of judgement and fancy, was written in the same months as Leviathan (1651). Critics have long looked for Hobbes in the poem: in its distrust of supernatural machinery, its psychology of the passions, its emphasis on undivided sovereignty, and its treatment of religion as civil order [[hobbes2012]] [[spingarn1908]].",
+    "How far the debt goes is uncertain. Jacob and Raylor's study of Davenant's later Proposition for Advancement of Moralitie argues for a sustained Hobbesian programme in which spectacle and art produce obedience. Others note how much of the poem's ethic of honour, love and generous valour is Caroline and chivalric, and not Hobbesian at all. In the poem Hobbesian argument is often given to a speaker, Oswald or Hermegild for example, and not simply endorsed by it [[jacobraylor1991]] [[norbrook1999]]."
+   ],
+   "cite": [
+    "hobbes2012",
+    "spingarn1908",
+    "jacobraylor1991",
+    "norbrook1999"
+   ]
+  },
+  {
+   "title": "The poem's politics",
+   "text": [
+    "Gondibert was written by a royalist exile and published in the first years of the Commonwealth. It has been read as royalist (an exemplary monarchy and a loyal hero), as absolutist (kings who choose like God, power that can never be too high in good hands), and as a work of accommodation that, like Hobbes, places obedience to any effective sovereign above the question of right [[potter1989]] [[smith1994]].",
+    "Recent scholarship has stressed how the poem engages with the public sphere of the 1640s and 1650s: crowds, rumour, popular anticlericalism, the cost of war. It has also stressed that Davenant's political career, from royalist plotter to theatre manager under the Protectorate and the Restoration, makes simple labels unsafe. Norbrook reads Gondibert against republican poetics; Zwicker's account of the period's 'lines of authority' gives a wider context for such shifting loyalties [[norbrook1999]] [[zwicker1993]]."
+   ],
+   "cite": [
+    "potter1989",
+    "smith1994",
+    "norbrook1999",
+    "zwicker1993"
+   ]
+  },
+  {
+   "title": "Why the poem is unfinished",
+   "text": [
+    "Davenant's own explanation, in the Postscript from Cowes Castle, is that his capture and expected death stopped him in the middle of the third book. That account is consistent with the biography, and the later, posthumous addition of a further canto shows that he returned to the poem only in a small way [[nethercot1938]] [[edmond1987]].",
+    "Critics have also asked whether the design could have been finished. The plot had set up a love triangle, a conspiracy and a court full of new threats, with no clear tragic or comic outcome. The ridicule of 1653 may have discouraged him, and Davenant's energies after 1656 went into the theatre. These are reasonable conjectures, not established facts, and the biographies differ in emphasis [[harbage1935]] [[gladish1971]]."
+   ],
+   "cite": [
+    "nethercot1938",
+    "edmond1987",
+    "harbage1935",
+    "gladish1971"
+   ]
+  },
+  {
+   "title": "Heroic drama and the 'love and honour' tradition",
+   "text": [
+    "Davenant built his poem on the model of a play and later staged The Siege of Rhodes (1656), usually treated as the first English opera and a forerunner of the heroic play. Dryden's Of Heroic Plays credits Davenant with the form, while noting that he lacked the scale of an epic plot. Critics have therefore read Gondibert as a bridge between Caroline court drama, with its Platonic love and debates of honour, and the rhymed heroic plays of the 1660s and 1670s [[dryden1962]] [[miner1974]].",
+    "The extent of the influence is debated. French romance and Corneille's tragedy were also important to the heroic play, and Gondibert's slow, reflective manner is very different from the heroic play's rapid, declamatory conflicts. What can be said with confidence is that the poem's pairing of rival lovers and loyal subjects, and its interest in passion as a matter of public consequence, became a central concern of Restoration serious drama [[bordinat1981]]."
+   ],
+   "cite": [
+    "dryden1962",
+    "miner1974",
+    "bordinat1981"
+   ]
+  },
+  {
+   "title": "A mixed reputation",
+   "text": [
+    "The poem was admired and mocked from the start. Waller and Cowley praised it in commendatory verses. The authors of Certain Verses (1653), usually associated with Denham and other royalist wits, ridiculed the Preface's pretensions and the poem's tediousness, and Raylor's study of the Cavalier literary clubs reconstructs the convivial culture from which such mockery came [[raylor1994]].",
+    "Later critics were more respectful but seldom enthusiastic. Rymer and Dryden took Davenant seriously as a reformer, and Dryden's adoption of the quatrain in Annus Mirabilis was a significant tribute. But the poem was rarely read through, and by the eighteenth century it had become a byword for the dutiful unreadable epic. Modern editors and biographers have argued for the interest of its ideas and set pieces while conceding its longueurs [[dryden1962]] [[gladish1971]] [[edmond1987]]."
+   ],
+   "cite": [
+    "raylor1994",
+    "dryden1962",
+    "gladish1971",
+    "edmond1987"
+   ]
+  },
+  {
+   "title": "Gondibert and Paradise Lost",
+   "text": [
+    "Davenant and Milton were near contemporaries on opposite sides of the war, and tradition links them through acts of mutual rescue. Their epic choices contrast sharply. Davenant, following Hobbes's advice, gave up the Muse and supernatural machinery for a probable, invented story of a Christian court. Milton chose a scriptural subject, invoked a heavenly Muse, and made the supernatural his main matter. In the proem to Paradise Lost Book 9 he rejects the knightly apparatus of romance epic, its 'tinsel trappings' (9.36), in favour of 'the better fortitude' of patience and martyrdom [[milton1998]].",
+    "It is uncertain whether Milton had Gondibert specifically in mind, and critics should be cautious here. But the two poems answer the same questions about what a heroic poem should be after the civil wars, and some readers have found a further parallel: both turn from martial heroism toward patience, inward virtue and the education of a hero. Miner places both at the start of a 'Restoration mode', and Murrin traces the decline of allegorical epic to which Davenant's rationalism contributed [[miner1974]] [[murrin1980]]."
+   ],
+   "cite": [
+    "milton1998",
+    "miner1974",
+    "murrin1980"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Gond. 1.1.1",
+   "quote": "OF all the Lombards, by their Trophies known,\nWho sought Fame soon, and had her favour long,\nKing Aribert best seem'd to fill the Throne;\nAnd bred most bus'ness for Heroick Song.",
+   "who": "The narrator",
+   "explanation": "The first stanza of the poem. There is no invocation of a Muse and no divine machinery: the subject is a king and the 'bus'ness' he creates for poetry. The quatrain form, four pentameters rhyming abab, is set out at once."
+  },
+  {
+   "ref": "Gond. 1.3.26",
+   "quote": "Take what my prudent hope hath still declin'd,\nAnd my weak virtue never could sustain,\nThe Crown, which is the worst of Rhodalind.",
+   "who": "Gondibert to Oswald",
+   "explanation": "Gondibert treats the crown as the lesser part of the princess, valuing virtue above power. The line states his character, and it also shows the trouble his indifference will cause once the king insists on giving him both."
+  },
+  {
+   "ref": "Gond. 1.2.38",
+   "quote": "Tyrannick Man! Thy subjects Enemy!\nAnd more through wantonness than need or hate;",
+   "who": "The narrator, on the hunt",
+   "explanation": "The narrator turns against the hunters and treats the killing of the stag as tyranny over nature. The sympathy is unusual in seventeenth-century hunting poetry, and it gives a political edge to what could have been mere ornament."
+  },
+  {
+   "ref": "Gond. 2.1.55",
+   "quote": "The ancient Laws liv'd in the Peoples voice;\nRites you from Custom, not from Canon draw;",
+   "who": "The people's orator to the priests",
+   "explanation": "The crowd's spokesman claims that law lives in the people's voice and that church rites are only custom. Davenant gives popular anticlericalism a strong speech before answering it through Tybalt."
+  },
+  {
+   "ref": "Gond. 2.5.36",
+   "quote": "This to a structure led, long known to Fame,\nAnd call'd, The Monument of vanish'd Minds.",
+   "who": "The narrator, in the House of Astragon",
+   "explanation": "Astragon's library. The phrase presents books as the surviving minds of the dead, and the canto that follows is a critical tour of human knowledge."
+  },
+  {
+   "ref": "Gond. 2.6.85",
+   "quote": "For Pray'r the Ocean is, where diversly\nMen steer their Course, each to a sev'ral Coast;\nVVhere all our int'rests so discordant be,\nThat half beg winds by which the rest are lost.",
+   "who": "The narrator",
+   "explanation": "Prayer divides people because each asks for his own interest, while praise unites them. The image is the poem's clearest account of religion as a problem of civil peace."
+  },
+  {
+   "ref": "Gond. 2.7.20",
+   "quote": "For Love, makes Birtha shift with Death, his Dart,\nAnd she kills faster than her Father cures.",
+   "who": "The narrator",
+   "explanation": "A witty reversal: the nurse becomes the wounder. The scene moves the poem from the wounds of war to the wounds of love."
+  },
+  {
+   "ref": "Gond. 3.2.104",
+   "quote": "Like Pow'r, it grows to nothing, growing less;\nHonour, the moral Conscience of the Great!",
+   "who": "The narrator, on Gondibert's pages",
+   "explanation": "Gondibert's 'Heroe's Schools' for his pages turn the poem's ethic into a curriculum: shame, honour, kindness, love, toil. Honour is the inward restraint of the great, close to conscience."
+  },
+  {
+   "ref": "Gond. 3.5.28",
+   "quote": "Thou lov'st a Prince above thine own degree:\nDegree is Monarch's Art; Love, Nature's Law;",
+   "who": "Astragon to Birtha",
+   "explanation": "Social rank is an artifice of monarchs, while love is natural law. The line sums up the tension between the political order and the natural order of passion."
+  },
+  {
+   "ref": "Gond. 3.6.5",
+   "quote": "Our virtue without pow'r but harmless is!\nThe Good, who lazily are good at home,",
+   "who": "Ulfin to Ulfinore",
+   "explanation": "One of the last precepts in the 1651 text: private virtue is not enough, and the good have a duty to seek power. The idea corrects the pastoral retreat Gondibert had chosen."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Davenant leave out the invocation of the Muse and all supernatural machinery? What does the poem gain and lose by this?",
+   "hint": "Compare the opening stanza with classical openings; think about the Preface's demand for probability and Hobbes's view of a Christian poet invoking a Muse."
+  },
+  {
+   "q": "How does the hunt in Book I, Canto II prepare for the duel and battle that follow?",
+   "hint": "Consider the stag as an old champion brought down by numbers, the narrator's comments on 'Tyrannick Man', and hunters becoming the hunted."
+  },
+  {
+   "q": "Compare Oswald and Gondibert. Is Oswald a villain?",
+   "hint": "Look at his decision to turn the ambush into a duel, his argument about undivided power, and the way the army and Hubert mourn him."
+  },
+  {
+   "q": "In what sense is the House of Astragon an image of the new science? Where does it differ from a modern scientific institution?",
+   "hint": "Think about cooperative observation, collections and the attack on 'Canting Schools', and also about visions, temples and providence."
+  },
+  {
+   "q": "What does the poem's treatment of religion (the temple quarrel, the three temples, Astragon's rebuke to Birtha) suggest about Davenant's response to the religious conflicts of his time?",
+   "hint": "Consider praise against prayer, the dusty polemicists, and Tybalt's argument that religion is cheaper than camps or laws."
+  },
+  {
+   "q": "How does the poem use the contrast between Birtha and Rhodalind?",
+   "hint": "Nature and court, private and public virtue: look at Book II, Canto 7, and at Astragon's argument in Book III, Canto 5."
+  },
+  {
+   "q": "Which passages seem to you closest to Hobbes, and does the poem endorse them?",
+   "hint": "Think about who speaks them: Oswald, Hermegild, Aribert, Gondibert, Ulfin, or the narrator."
+  },
+  {
+   "q": "How does Davenant's plan of five books as five acts show in the parts that exist?",
+   "hint": "Consider the exposition of Book I, Canto I, the scene-like cantos, the verse arguments, and the stage language of the battle speech."
+  },
+  {
+   "q": "Where might the plot have gone? Use the hints the text gives.",
+   "hint": "Gartha's disguise, Hermegild's conspiracy, Birtha's journey to court, the emerald, the rival friends, and Dalga's concealed story."
+  },
+  {
+   "q": "Compare Davenant's choice of subject and manner with Milton's in Paradise Lost.",
+   "hint": "Muse and machinery, scripture and invention, the proem to Paradise Lost Book 9, and the turn from martial heroism to patience."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "bordinat1981",
+   "text": "Bordinat, Philip, and Sophia B. Blaydes. Sir William Davenant. Twayne's English Authors Series. Boston: Twayne, 1981."
+  },
+  {
+   "id": "gladish1971",
+   "text": "Davenant, Sir William. Sir William Davenant's Gondibert. Ed. David F. Gladish. Oxford: Clarendon Press, 1971."
+  },
+  {
+   "id": "dowlin1934",
+   "text": "Dowlin, Cornell March. Sir William Davenant's Gondibert, Its Preface, and Hobbes's Answer: A Study in English Neo-Classicism. Philadelphia, 1934."
+  },
+  {
+   "id": "dryden1962",
+   "text": "Dryden, John. Of Dramatic Poesy and Other Critical Essays. Ed. George Watson. 2 vols. London: J. M. Dent, 1962."
+  },
+  {
+   "id": "edmond2004",
+   "text": "Edmond, Mary. \"Davenant [D'Avenant], Sir William (1606–1668).\" Oxford Dictionary of National Biography. Oxford: Oxford University Press, 2004."
+  },
+  {
+   "id": "edmond1987",
+   "text": "Edmond, Mary. Rare Sir William Davenant. Manchester: Manchester University Press, 1987."
+  },
+  {
+   "id": "harbage1935",
+   "text": "Harbage, Alfred. Sir William Davenant: Poet Venturer, 1606–1668. Philadelphia: University of Pennsylvania Press, 1935."
+  },
+  {
+   "id": "hobbes2012",
+   "text": "Hobbes, Thomas. Leviathan. Ed. Noel Malcolm. 3 vols. Oxford: Clarendon Press, 2012."
+  },
+  {
+   "id": "jacobraylor1991",
+   "text": "Jacob, James R., and Timothy Raylor. \"Opera and Obedience: Thomas Hobbes and A Proposition for Advancement of Moralitie by Sir William Davenant.\" The Seventeenth Century 6.2 (1991): 205–250."
+  },
+  {
+   "id": "milton1998",
+   "text": "Milton, John. Paradise Lost. Ed. Alastair Fowler. 2nd ed. Harlow: Longman, 1998."
+  },
+  {
+   "id": "miner1974",
+   "text": "Miner, Earl. The Restoration Mode from Milton to Dryden. Princeton: Princeton University Press, 1974."
+  },
+  {
+   "id": "murrin1980",
+   "text": "Murrin, Michael. The Allegorical Epic: Essays in Its Rise and Decline. Chicago: University of Chicago Press, 1980."
+  },
+  {
+   "id": "nethercot1938",
+   "text": "Nethercot, Arthur H. Sir William D'avenant: Poet Laureate and Playwright-Manager. Chicago: University of Chicago Press, 1938."
+  },
+  {
+   "id": "norbrook1999",
+   "text": "Norbrook, David. Writing the English Republic: Poetry, Rhetoric and Politics, 1627–1660. Cambridge: Cambridge University Press, 1999."
+  },
+  {
+   "id": "potter1989",
+   "text": "Potter, Lois. Secret Rites and Secret Writing: Royalist Literature, 1641–1660. Cambridge: Cambridge University Press, 1989."
+  },
+  {
+   "id": "raylor1994",
+   "text": "Raylor, Timothy. Cavaliers, Clubs, and Literary Culture: Sir John Mennes, James Smith, and the Order of the Fancy. Newark: University of Delaware Press, 1994."
+  },
+  {
+   "id": "smith1994",
+   "text": "Smith, Nigel. Literature and Revolution in England, 1640–1660. New Haven: Yale University Press, 1994."
+  },
+  {
+   "id": "spingarn1908",
+   "text": "Spingarn, J. E., ed. Critical Essays of the Seventeenth Century. 3 vols. Oxford: Clarendon Press, 1908–1909. (Vol. 2 prints Davenant's Preface and Hobbes's Answer.)"
+  },
+  {
+   "id": "swedenberg1944",
+   "text": "Swedenberg, H. T., Jr. The Theory of the Epic in England, 1650–1800. Berkeley: University of California Press, 1944."
+  },
+  {
+   "id": "zwicker1993",
+   "text": "Zwicker, Steven N. Lines of Authority: Politics and English Literary Culture, 1649–1689. Ithaca: Cornell University Press, 1993."
+  }
+ ]
+}
