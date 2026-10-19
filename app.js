@@ -30,6 +30,10 @@
   let EARLY_DRAWN = "";     // the hash of a poem or book page drawn from its shard before the index
   let EARLY_REDRAW = false;  // ...and that page wants drawing again when the index comes (see loadIndex)
   let INDEX_ERROR = "";      // why data/index.json could not be loaded, if it could not
+  let TRANSLATORS = null;    // data/translators.json once it is in: {list, bySlug, byString} (translator pages)
+  let TRANSLATORS_P = null;  // ...and the fetch of it
+  let GLOSSARY = null;       // data/glossary.json once it is in: {list, bySlug} (glossary of poetic terms)
+  let GLOSSARY_P = null;     // ...and the fetch of it
 
   // ---------- critical engine ----------
   // The reading panel stays hidden until this points at the deployed Worker
@@ -208,9 +212,10 @@
     return d ? ` <span class="detail-dates">${esc(d)}</span>` : "";
   };
   // extra: the reading time on a book or a long poem ("about 22 min"), last on the line.
+  // The translator's name links to their page (trByHTML, under "translator pages").
   function sourceLine(translator, collection, extra) {
-    const parts = [translator && translatedBy(translator), collection && "From " + collection, extra].filter(Boolean);
-    return parts.length ? `<p class="detail-source">${parts.map(esc).join(" · ")}</p>` : "";
+    const parts = [translator && trByHTML(translator), collection && esc("From " + collection), extra && esc(extra)].filter(Boolean);
+    return parts.length ? `<p class="detail-source">${parts.join(" · ")}</p>` : "";
   }
   // ---------- citation ----------
   // "Cite this poem" gives MLA (9th ed.) and Chicago (bibliography) entries that point at
@@ -294,6 +299,7 @@
         ${entry ? shelfButtonHTML(entry, true) : ""}
         <button class="cite-toggle" type="button" aria-expanded="false" aria-controls="cite-box">Cite this ${o.work ? "text" : "poem"}</button>
         <button class="cite-link" type="button" data-url="${esc(SITE + o.path)}">Copy link</button>
+        ${entry ? `<button class="cite-print" type="button" aria-haspopup="dialog">Print</button>` : ""}
       </div>
       ${entry ? `<p class="shelf-msg" hidden>${VISIT_ONLY}</p>${noteBoxHTML(entry)}` : ""}
       <div class="cite-box" id="cite-box" hidden>
@@ -303,6 +309,17 @@
             <p class="cite-text" id="cite-${i}">${c.html}</p>
             <button class="cite-copy" type="button" data-i="${i}">Copy</button>
           </div>`).join("")}
+        ${o.translator ? trCiteHTML(o.translator) : ""}
+        <div class="cite-entry cite-recs">
+          <p class="cite-style">Files</p>
+          <p class="cite-text cite-recs-note">For Zotero, EndNote or Mendeley (RIS) and LaTeX (BibTeX)${o.translator ? ", with the translator" : ""}. Zotero's browser button also saves this page.</p>
+          <div class="cite-recs-acts" role="group" aria-label="RIS and BibTeX">
+            <button class="cite-copy cite-rec" type="button" data-rec="ris" data-act="copy">Copy RIS</button>
+            <button class="cite-copy cite-rec" type="button" data-rec="ris" data-act="save" aria-label="Download .ris file">.ris</button>
+            <button class="cite-copy cite-rec" type="button" data-rec="bib" data-act="copy">Copy BibTeX</button>
+            <button class="cite-copy cite-rec" type="button" data-rec="bib" data-act="save" aria-label="Download .bib file">.bib</button>
+          </div>
+        </div>
       </div>`;
   }
   // Copies as formatted text where the browser allows (italics survive into Word), else
@@ -338,12 +355,124 @@
     const link = app.querySelector(".cite-link");
     link.addEventListener("click", () => copyText(link.dataset.url)
       .then(() => flash(link, "Link copied"), () => flash(link, link.dataset.url)));
-    app.querySelectorAll(".cite-copy").forEach((b) => b.addEventListener("click", () => {
+    // RIS and BibTeX: copied as plain text, or saved as a file the reference manager opens.
+    app.querySelectorAll(".cite-rec").forEach((b) => b.addEventListener("click", () => {
+      const ris = b.dataset.rec === "ris", text = ris ? risRecord(o) : bibRecord(o);
+      if (b.dataset.act === "save") {
+        downloadFile(citeFileName(o, ris ? "ris" : "bib"), ris ? "application/x-research-info-systems" : "application/x-bibtex", text);
+        flash(b, "Saved");
+      } else copyText(text).then(() => flash(b, "Copied"), () => flash(b, "Not copied"));
+    }));
+    app.querySelectorAll(".cite-copy:not(.cite-rec)").forEach((b) => b.addEventListener("click", () => {
       const c = citations(o)[+b.dataset.i];   // o.src may arrive after binding
       copyText(c.text, c.html, document.getElementById("cite-" + b.dataset.i))
         .then(() => flash(b, "Copied"), () => flash(b, "Press Ctrl+C"));
     }));
   }
+
+  // ---------- citation records: Zotero, RIS and BibTeX ----------
+  // A reference manager reads a text's details without retyping. metaCitation(o) writes them
+  // into the page head as Highwire (citation_*) and Dublin Core (DC.*) tags, which the Zotero
+  // Connector's "Embedded Metadata" translator reads, and tells Zotero the page has changed;
+  // metaCitation(null) clears them (every route does, before drawing). The static pages are to
+  // print the same tags (citation_meta, a patch for build_pages.py not yet applied). The
+  // cite box adds RIS and BibTeX, to copy or download. Zotero ignores DC.contributor when citation_author is there, so the
+  // translator reaches Zotero only through the RIS file (A4, which it reads as translator).
+  // o: the cite object, plus year (the edition year, or "") and lang ("en", "tr").
+  // "trans. Andrew Lang, Walter Leaf and Ernest Myers (1911)" -> the three names. Dates,
+  // degrees (", M.A."), "and others" and a book after the names ("Henry Sweet, King
+  // Alfred's …", "Wentworth Dillon, Earl of Roscommon, in Nott, …") drop out; a title of
+  // nobility stays with its name. A list after a comma counts only when it reads as names
+  // and ends "and …" or starts "with …"; a phrasing that is not a name gives none at all.
+  function citeTranslators(t) {
+    const PARTICLE = /^(de|la|del|della|van|von|der|den|of|du|da|di|le|y|al|ibn|bin|and|&|with|others)$/;
+    const isName = (x) => !/^(The|A|An)\s/.test(x) && x.trim().split(/\s+(?:&|and|with)\s+/).every((n) => {
+      const w = n.split(/\s+/);
+      return w.length <= 6 && w.every((v) => /^["“]?[A-ZÀ-ÞĀ-Ž]/.test(v) || PARTICLE.test(v));
+    });
+    const s = String(t || "").replace(/^trans\.\s*/i, "").replace(/\([^)]*\)/g, " ").replace(/\s+/g, " ")
+      .replace(/,\s*(?:M\.A\.|C\.S\.I\.|D\.D\.|LL\.D\.|Ph\.D\.)/g, "")
+      .replace(/,\s*(?=(?:Earl|Lord|Lady|Baron|Viscount|Marquess|Duke|Count|Bishop)\b)/g, "\u0001 ");
+    const [first, ...rest] = s.split(/\s*,\s*/).map((x) => x.trim());
+    if (!first || !isName(first)) return [];
+    const list = rest.length && rest.every(isName) && (/\s(?:and|&)\s/.test(rest[rest.length - 1]) || rest.some((x) => /^with\s/.test(x)))
+      ? [first, ...rest] : [first];
+    return list.join(" and ").replace(/^with\s+/, "").split(/\s+(?:&|and|with)\s+|^with\s+/)
+      .map((x) => x.replace(/^with\s+/, "").replace(/["“”]/g, "").replace(/\u0001/g, ",").trim())
+      .filter((x) => x && !/^others$/i.test(x));
+  }
+  // The edition year, only where the data gives exactly one: the translator's "(1697)" or
+  // "(Macmillan school edition, 1910)", else a work's plain "1829". A range, two dates or
+  // "c." give none: never a guess.
+  function citeYear(translator, year) {
+    if (translator) {
+      const par = (String(translator).match(/\([^)]*\)/g) || []).join(" ");
+      const ys = par.match(/\b1\d{3}\b|\b20\d\d\b/g) || [];
+      return ys.length === 1 && !/\bc\.|circa|\?/i.test(par) ? ys[0] : "";
+    }
+    return /^\d{4}$/.test(String(year || "").trim()) ? String(year).trim() : "";
+  }
+  // The language of the text on the page: Turkish originals "tr", the Old English originals
+  // ("The Wanderer (Old English)", untranslated) "ang", everything else English.
+  const citeLang = (slug, translator, title) => langAttr(slug, translator) ? "tr"
+    : !String(translator || "").trim() && (POETS[slug] || {}).category === "Anglo-Saxon"
+      && /\(Old English\)\s*$/.test(title || "") ? "ang" : "en";
+  function metaCitation(o) {
+    const had = document.head.querySelector("meta[data-pc-cite]");
+    document.head.querySelectorAll("meta[data-pc-cite]").forEach((m) => m.remove());
+    if (o) {
+      const url = SITE + o.path;
+      const tags = [["citation_title", o.work ? (o.title ? o.work + ", " + o.title : o.work) : o.title],
+        ["citation_author", citeName(o.author)], ["DC.creator", o.author]]
+        .concat(citeTranslators(o.translator).map((n) => ["DC.contributor", n]))
+        .concat([["citation_publication_date", o.year || ""], ["DC.publisher", "Poetry Codex"],
+          ["citation_public_url", url], ["DC.identifier", url], ["DC.type", "Text"],
+          ["DC.language", o.lang || "en"], ["DC.rights", "Public domain"]]);
+      tags.forEach(([name, content]) => {
+        if (!content) return;
+        const m = document.createElement("meta");
+        m.name = name; m.content = content; m.dataset.pcCite = "";
+        document.head.appendChild(m);
+      });
+    }
+    if (o || had) document.dispatchEvent(new Event("ZoteroItemUpdated", { bubbles: true, cancelable: true }));
+  }
+  const isoDay = (d) => [d.getFullYear(), d.getMonth() + 1, d.getDate()].map((x) => String(x).padStart(2, "0")).join("-");
+  // A poem is a web page (RIS ELEC, BibTeX @misc); a part of a long work is a section of a
+  // book (CHAP, @incollection), the work as its book; a work in one part is a page again.
+  function risRecord(o) {
+    const part = o.work && o.title;
+    const rows = [["TY", part ? "CHAP" : "ELEC"], ["TI", part ? o.title : o.work || o.title], ["AU", citeName(o.author)]]
+      .concat(citeTranslators(o.translator).map((n) => ["A4", citeName(n)]))
+      .concat([["T2", part ? o.work : "Poetry Codex"], ["PB", "Poetry Codex"], ["PY", o.year || ""],
+        ["LA", o.lang || "en"], ["UR", SITE + o.path], ["Y2", isoDay(new Date()).replace(/-/g, "/")],
+        ["N1", "Public domain"], ["ER", ""]]);
+    return rows.filter(([k, v]) => v || k === "ER").map(([k, v]) => `${k}  - ${String(v).replace(/\s+/g, " ")}`).join("\r\n") + "\r\n";
+  }
+  // BibTeX: braces, backslashes and TeX's special characters escaped, and a double quote
+  // as {"}; a name with nothing to invert (Homer, Yunus Emre) braced, so it stays whole.
+  function bibRecord(o) {
+    const part = o.work && o.title;
+    const TEX = { "\\": "\\textbackslash{}", "{": "\\{", "}": "\\}", "&": "\\&", "%": "\\%", "$": "\\$", "#": "\\#", "_": "\\_",
+                  "~": "\\textasciitilde{}", "^": "\\textasciicircum{}", '"': '{"}' };
+    const tex = (s) => String(s || "").replace(/\s+/g, " ").replace(/[\\{}&%$#_~^"]/g, (c) => TEX[c]);
+    // "Keats, John" as it is; a name not inverted ("Edward, Earl of Derby") or with a second
+    // comma ("Tennyson, Alfred, Lord", which BibTeX would read as a "Jr" part) braced whole.
+    const person = (n) => { const c = citeName(n); return c !== String(n).trim() && c.split(",").length === 2 ? tex(c) : "{" + tex(c) + "}"; };
+    const key = "codex-" + o.path.replace(/^\/(poem|work)\//, "").replace(/\/$/, "").replace(/[^\w-]+/g, "-");
+    const trs = citeTranslators(o.translator);
+    const f = [["author", person(o.author)], ["title", tex(part ? o.title : o.work || o.title)],
+      ["booktitle", part ? tex(o.work) : ""], ["translator", trs.map(person).join(" and ")],
+      ["year", o.year || ""], [part ? "publisher" : "howpublished", "Poetry Codex"],
+      ["url", SITE + o.path], ["urldate", isoDay(new Date())],
+      ["language", { tr: "turkish", ang: "Old English" }[o.lang] || "english"], ["note", "Public domain"]];
+    return `@${part ? "incollection" : "misc"}{${key},\n`
+      + f.filter(([, v]) => v).map(([k, v]) => `  ${k.padEnd(12)} = {${v}}`).join(",\n") + "\n}\n";
+  }
+  // The file's name: the poet and the title, in plain letters ("keats-ode-on-a-grecian-urn.ris").
+  const citeFileName = (o, ext) => (o.path.replace(/^\/(poem|work)\//, "").split("/")[0] + "-"
+    + fold(o.work && o.title ? o.work + " " + o.title : o.work || o.title).replace(/[^a-z0-9]+/g, "-"))
+    .replace(/-+/g, "-").replace(/^-|-$/g, "").slice(0, 80) + "." + ext;
 
   // ---------- the reader's shelf and private notes ----------
   // "Save to shelf" keeps a poem, a long work or one book of it, and "Add a note" a note
@@ -418,6 +547,8 @@
   // deleted}}. A collection item is a shelf id (ref) or, with l ("120-160", counted as
   // "Link to lines" counts them), a passage of it; each keeps the title it was added under.
   // A text can be in several collections; deleting a collection never touches the shelf.
+  // A collection made into an assignment also has q (the teacher's question) and, on its
+  // items, note and due ("YYYY-MM-DD"); MERGE.shelf keeps a collection whole, so they sync.
   const STATUSES = [["to-read", "To read"], ["reading", "Reading"], ["read", "Read"], ["learning", "Learning"]];
   const STATUS_NAME = Object.fromEntries(STATUSES);
   const COL_NAME_MAX = 80;
@@ -451,10 +582,11 @@
     return saveShelf(s);
   }
   const colKey = (x) => x.ref + (x.l ? "@" + x.l : "");
-  function newCollection(name, items) {
+  // extra: more fields for the collection (q, the question of an assignment saved from a link).
+  function newCollection(name, items, extra) {
     const s = shelfStore();
-    const c = { id: "c" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5),
-                name: String(name).trim().slice(0, COL_NAME_MAX) || "Untitled", at: new Date().toISOString(), items: items || [] };
+    const c = Object.assign({ id: "c" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5),
+                name: String(name).trim().slice(0, COL_NAME_MAX) || "Untitled", at: new Date().toISOString(), items: items || [] }, extra || {});
     s.collections.push(c);
     saveShelf(s);
     return c;
@@ -766,6 +898,8 @@
     hideMarkButton();
     hideHlBar();
     drawMarks();
+    drawLineTargets();
+    lpReattach();
     Promise.all(ctxs.map(drawGlosses)).then(drawHighlights);
   }
   // The text as its own page lays it out (poemHTML): the characters of its text nodes in a row
@@ -828,7 +962,8 @@
   function facingCtxs(fx, texts) {
     return Object.keys(texts || {}).filter((id) => fx.querySelector(`[data-u][data-e="${CSS.escape(id)}"]`)).map((id) => {
       const t = texts[id], prose = isProse(t.text, t.translator);
-      return { entry: t.entry, root: fx, col: true, lines: !prose, lay: textLayout(t.text, prose), noQuote: true, noMargin: true };
+      return { entry: t.entry, root: fx, col: true, lines: !prose, lay: textLayout(t.text, prose), noQuote: true, noMargin: true,
+               text: t.text, translator: t.translator };
     });
   }
   function drawMarks() {
@@ -851,6 +986,8 @@
         first.appendChild(dot);
       });
     });
+    omApply();
+    lpRefresh();   // the "This line" panel lists them too
   }
   function hideMarkButton() { if (markBtn) markBtn.hidden = true; }
   // The lines a selection touches, within the text on screen; a drag that ends at the very
@@ -932,8 +1069,8 @@
   }
   const markRowHTML = ({ id, g, m }) => `
       <li class="mark-row${m.kind === "hl" ? " is-hl" : ""}">
-        <p class="mark-row-quote">${m.kind === "hl" ? `<span class="hl-chip hl-${esc(HL_COLORS.includes(m.color) ? m.color : "yellow")}"></span>` : ""}\u201c${esc(m.quote)}\u201d</p>
-        ${m.text ? `<p class="mark-row-note">${esc(m.text)}</p>` : ""}
+        <p class="mark-row-quote">${m.kind === "hl" ? `<span class="hl-chip hl-${esc(hlColor(m.color))}"></span>` : ""}\u201c${esc(m.quote)}\u201d</p>
+        ${m.text ? `<p class="mark-row-note">${noteHTML(m.text)}</p>` : ""}
         <p class="mark-row-src"><a href="${esc(routeFor(id))}">${esc(g.title || "")}</a>${g.author ? ` \u00b7 ${esc(g.author)}` : ""} \u00b7 ${esc(writtenLine(m))}</p>
       </li>`;
 
@@ -943,7 +1080,59 @@
   // items {id, kind: "hl", s, e (character offsets in the text), quote, color, text}; a: -1
   // keeps them out of the line-note drawing of older copies of this script.
   const HL_COLORS = ["yellow", "green", "blue", "pink"];
-  const HL_NAMES = { yellow: "Yellow", green: "Green", blue: "Blue", pink: "Pink" };
+  // A fifth swatch, "?", marks words as a question: an outline, not a colour, kept as color
+  // "q". Older copies of this script draw a colour they do not know as yellow (the gold one),
+  // so a question synced to a browser that still has one shows there as a plain highlight.
+  const HL_KINDS = HL_COLORS.concat(["q"]);
+  const HL_NAMES = { yellow: "Yellow", green: "Green", blue: "Blue", pink: "Pink", q: "Question" };
+  const hlColor = (c) => HL_KINDS.includes(c) ? c : "yellow";
+  const hlSwatchHTML = (c, attrs) => `<button type="button" class="hl-swatch hl-${c}" data-c="${c}"${attrs}>${c === "q" ? '<span aria-hidden="true">?</span>' : ""}</button>`;
+
+  // ---------- tags: #words in the reader's notes ----------
+  // Any #word in a note (on a highlight, on lines, or on a whole text) is a tag: a letter or
+  // digit, then letters, digits or hyphens, in any script ("#ölüm", "#ubi-sunt"). A # inside a
+  // web address, or straight after a letter, a digit or "&", is not one. Tags are read from
+  // the note's own text, so they need no store of their own and follow a signed-in reader with
+  // the notes; they are matched folded (fold), so "#Elegy" and "#elegy" are one tag. They show
+  // as small chips wherever a note is shown, and filter #/notes and "Only my marks".
+  const TAG_RE = /(^|[^\p{L}\p{N}\p{M}&#_/])#([\p{L}\p{N}][\p{L}\p{N}\p{M}-]*)/gu;
+  const URL_RE = /(?:\bhttps?:\/\/|\bwww\.)\S+/giu;
+  // The note in pieces: [{t, tag (its folded form) when it is a tag}].
+  function noteParts(text) {
+    const s = String(text || ""), out = [];
+    const plain = (part) => {
+      let k = 0;
+      for (const m of part.matchAll(TAG_RE)) {
+        const word = m[2].replace(/-+$/, ""), st = m.index + m[1].length;
+        if (st > k) out.push({ t: part.slice(k, st) });
+        out.push({ t: "#" + word, tag: fold(word) });
+        k = st + 1 + word.length;
+      }
+      if (k < part.length) out.push({ t: part.slice(k) });
+    };
+    let at = 0;
+    for (const u of s.matchAll(URL_RE)) { plain(s.slice(at, u.index)); out.push({ t: u[0] }); at = u.index + u[0].length; }
+    plain(s.slice(at));
+    return out;
+  }
+  const noteTags = (text) => [...new Set(noteParts(text).map((p) => p.tag).filter(Boolean))];
+  const noteHTML = (text) => noteParts(text).map((p) => p.tag ? `<span class="tag-chip">${esc(p.t)}</span>` : esc(p.t)).join("");
+  // Every tag in these notes, most used first: [{tag (folded), label (as most often written), n}].
+  function tagCounts(notes) {
+    const by = new Map();
+    notes.forEach((text) => {
+      const seen = new Set();
+      noteParts(text).forEach((p) => {
+        if (!p.tag || seen.has(p.tag)) return;
+        seen.add(p.tag);
+        const o = by.get(p.tag) || { tag: p.tag, n: 0, spell: new Map() };
+        o.n++; o.spell.set(p.t, (o.spell.get(p.t) || 0) + 1);
+        by.set(p.tag, o);
+      });
+    });
+    return [...by.values()].map((o) => ({ tag: o.tag, n: o.n, label: [...o.spell].sort((a, b) => b[1] - a[1])[0][0] }))
+      .sort((a, b) => b.n - a.n || COLLATE.compare(a.tag, b.tag));
+  }
   let HL_CTX = null, hlBar = null, hlPop = null;
   const hlOf = (id) => marksOf(id).filter((m) => m.kind === "hl");
   function putHighlight(entry, h, remove) {
@@ -952,7 +1141,7 @@
     g.items = (g.items || []).filter((x) => x.id !== h.id);
     const now = new Date().toISOString();
     if (!remove) g.items.push({ id: h.id, kind: "hl", a: -1, s: h.s, e: h.e, quote: String(h.quote || "").slice(0, 600),
-      color: HL_COLORS.includes(h.color) ? h.color : "yellow", text: String(h.text || "").slice(0, MARK_MAX),
+      color: hlColor(h.color), text: String(h.text || "").slice(0, MARK_MAX),
       created: h.created || now, updated: now, ...(h.rv ? { rv: h.rv } : {}) });   // rv: its review schedule, kept
     if (g.items.length) marks[entry.id] = g; else delete marks[entry.id];
     writeStore(MARKS_KEY, { v: 1, marks });
@@ -1012,13 +1201,16 @@
       wrapSpan(nodes, s, e, () => {
         const m = document.createElement("mark");
         if (h.text) m.dataset.note = "1";
-        m.className = "hl hl-" + (HL_COLORS.includes(h.color) ? h.color : "yellow") + (h.text ? " has-note" : "");
+        m.className = "hl hl-" + (hlColor(h.color)) + (h.text ? " has-note" : "");
         m.dataset.hl = h.id;
         if (h.text) m.title = "Your note: " + h.text.slice(0, 120);
+        else if (hlColor(h.color) === "q") m.title = "Your question";
         return m;
       });
     }));
+    omApply();
     drawMarginNotes();
+    lpRefresh();
   }
   // On a screen wide enough, each highlight with a note shows its note as a card in the right
   // margin, level with its first words (pushed down when two would overlap); a click on the
@@ -1030,7 +1222,7 @@
     ctx = ctx || marginCtx();
     if (!ctx || ctx.noMargin || !ctx.root.isConnected) return false;
     const r = ctx.root.getBoundingClientRect();
-    return document.documentElement.clientWidth - r.right >= MARGIN_W + 70;
+    return document.documentElement.clientWidth - lpDrawerWidth() - r.right >= MARGIN_W + 70;
   }
   function drawMarginNotes() {
     const ctx = marginCtx();
@@ -1044,13 +1236,13 @@
     let floor = 0;
     hlOf(ctx.entry.id).filter((h) => h.text).map((h) => {
       const m = root.querySelector(`mark.hl[data-hl="${h.id}"]`);
-      return m ? { h, top: m.getBoundingClientRect().top - base } : null;
+      return m && m.getClientRects().length ? { h, top: m.getBoundingClientRect().top - base } : null;   // none for words "Only my marks" folds away
     }).filter(Boolean).sort((a, b) => a.top - b.top).forEach(({ h, top }) => {
       const card = document.createElement("button");
       card.type = "button";
-      card.className = "mn-card hl-edge-" + (HL_COLORS.includes(h.color) ? h.color : "yellow");
+      card.className = "mn-card hl-edge-" + (hlColor(h.color));
       card.dataset.hl = h.id;
-      card.innerHTML = `<span class="mn-text">${esc(h.text)}</span>`;
+      card.innerHTML = `<span class="mn-text">${noteHTML(h.text)}</span>`;
       col.appendChild(card);
       const y = Math.max(top, floor);
       card.style.top = y + "px";
@@ -1089,8 +1281,10 @@
       hlBar.className = "hl-bar";
       hlBar.setAttribute("role", "toolbar");
       hlBar.setAttribute("aria-label", "Highlight, quote or look up");
-      hlBar.innerHTML = `<span class="hl-bar-group">` + HL_COLORS.map((c) => `<button type="button" class="hl-swatch hl-${c}" data-c="${c}" aria-label="Highlight in ${HL_NAMES[c].toLowerCase()}" title="${HL_NAMES[c]}"></button>`).join("")
-        + `<button type="button" class="hl-note-btn" data-c="note">Note</button></span>`
+      hlBar.innerHTML = `<span class="hl-bar-group">` + HL_KINDS.map((c) => hlSwatchHTML(c, c === "q" ? ` aria-label="Mark as a question" title="Question"`
+        : ` aria-label="Highlight in ${HL_NAMES[c].toLowerCase()}" title="${HL_NAMES[c]}"`)).join("")
+        + `<button type="button" class="hl-note-btn" data-c="note">Note</button>`
+        + `<button type="button" class="hl-note-btn hl-more" data-more="1" aria-haspopup="dialog">More on this line</button></span>`
         + `<span class="hl-bar-group hl-bar-acts">
              <button type="button" class="hl-act" data-act="quote">Copy quote</button>
              <button type="button" class="hl-act" data-act="link">Link to lines</button>
@@ -1103,6 +1297,12 @@
       });
       hlBar.addEventListener("click", (e) => {
         const b = e.target.closest("button"); if (!b || !HL_CTX) return;
+        // "More on this line": the lines the selection touches, in the "This line" panel.
+        if (b.dataset.more) {
+          const got = hlSelection() || hlBar.sel; hideHlBar();
+          if (got) lpFromOffsets(got.ctx, got.s, got.e);
+          return;
+        }
         if (b.dataset.act) {                       // Copy quote, Link to lines, Look up
           const q = quoteSelection() || hlBar.q, hadFocus = hlBar.contains(document.activeElement);
           const rect = hlBar.getBoundingClientRect();
@@ -1138,6 +1338,10 @@
     }
     hlBar.sel = sel;
     hlBar.q = quoteSelection();
+    const more = hlBar.querySelector(".hl-more"), lines = lpRangeOf(sel.ctx, sel.s, sel.e);
+    more.hidden = !lines;
+    more.textContent = lines && lines.b > lines.a ? `More on these ${lpProse(sel.ctx) ? "paragraphs" : "lines"}`
+      : `More on this ${lpProse(sel.ctx) ? "paragraph" : "line"}`;
     const look = hlBar.q && lookupWords(hlBar.q);
     const lb = hlBar.querySelector('[data-act="lookup"]');
     lb.hidden = !look;
@@ -1164,7 +1368,7 @@
     hlPop.className = "hl-pop";
     hlPop.innerHTML = `
       <p class="mark-quote">“${esc(h.quote.length > 160 ? h.quote.slice(0, 160) + "…" : h.quote)}”</p>
-      <div class="hl-colors">${HL_COLORS.map((c) => `<button type="button" class="hl-swatch hl-${c}" data-c="${c}" aria-pressed="${h.color === c}" aria-label="${HL_NAMES[c]}"></button>`).join("")}</div>
+      <div class="hl-colors">${HL_KINDS.map((c) => hlSwatchHTML(c, ` aria-pressed="${hlColor(h.color) === c}" aria-label="${HL_NAMES[c]}"`)).join("")}</div>
       <textarea class="mark-input" rows="3" maxlength="${MARK_MAX}" aria-label="Your note" placeholder="A note on these words…">${esc(h.text || "")}</textarea>
       <div class="mark-actions">
         <button type="button" class="mark-save">Save</button>
@@ -1196,6 +1400,175 @@
     hlPop.querySelector(".mark-delete").addEventListener("click", () => { putHighlight(HL_CTX.entry, h, true); closeHlPop(); drawHighlights(); });
   }
   function closeHlPop() { if (hlPop) { hlPop.remove(); hlPop = null; } }
+
+  // ---------- "Only my marks": the text folded down to what the reader marked ----------
+  // On a poem or a book with marks (shown alone, not in the facing pages), "Only my marks"
+  // (beside "Line numbers", and in the phone's reading bar) folds away every line (or
+  // paragraph) that holds no mark, keeping one line of context before and after each mark;
+  // each stretch folded away becomes a row "⋯ 46 lines ⋯", a button that opens it again (and
+  // folds it back). A bar above the text narrows it to some colours, Questions, line notes or
+  // tags (a mark shows when it is of a kind chosen, if any, and carries every tag chosen) and
+  // says how many marks could not be found in the text as it is now (they are on #/notes).
+  // Print prints the folded text while it is on. The rows are empty buttons drawn by the
+  // stylesheet (data-label), so the text's offsets are untouched. The state is kept for this
+  // visit only, per text (OM_STATE), and nowhere else.
+  const OM_STATE = new Map();     // entry id -> {on, kinds: [], tags: [], open: Set of folded stretches opened}
+  const omState = (id) => OM_STATE.get(id) || OM_STATE.set(id, { on: false, kinds: [], tags: [], open: new Set() }).get(id);
+  // The text "Only my marks" works on now: the text alone, on a reading page, with marks.
+  function omCtx() {
+    const ctx = SOLO_CTX;
+    if (!ctx || !ctx.root.isConnected || !ctx.root.closest("article.detail") || ctx.root.closest("[hidden]")) return null;
+    if (app.querySelector(".fx-slot:not([hidden]) .fx")) return null;
+    return marksOf(ctx.entry.id).length ? ctx : null;
+  }
+  const omOn = (id) => { const c = omCtx(); return !!(c && c.entry.id === id && omState(id).on); };
+  // The text's units (lines, or paragraphs of prose) and its marks, each with the units it stands in.
+  function omMarks(ctx) {
+    const prose = ctx.root.classList.contains("is-prose");
+    const units = [...ctx.root.querySelectorAll(prose ? ":scope > p" : ".ln[data-i]")];
+    const pos = new Map(units.map((u, k) => [u, k]));
+    const list = marksOf(ctx.entry.id).map((m) => {
+      const ks = new Set();
+      if (m.kind === "hl") ctx.root.querySelectorAll(`mark.hl[data-hl="${CSS.escape(m.id)}"]`).forEach((el) => {
+        const u = el.closest(prose ? "p" : ".ln[data-i]");
+        if (pos.has(u)) ks.add(pos.get(u));
+      });
+      else if (!prose) for (let i = m.a; i <= m.b; i++) { const l = ctxLine(ctx, i); if (pos.has(l)) ks.add(pos.get(l)); }
+      return { m, kind: m.kind === "hl" ? hlColor(m.color) : "line", tags: noteTags(m.text), ks: [...ks] };
+    });
+    return { prose, units, list };
+  }
+  const omShows = (st, x) => (!st.kinds.length || st.kinds.includes(x.kind)) && st.tags.every((t) => x.tags.includes(t));
+  // Folds the text (or unfolds it), and draws the switches and the bar. focus: a selector to
+  // put the focus on afterwards (the row or chip just pressed, drawn again).
+  function omApply(focus) {
+    const ctx = omCtx();
+    app.querySelectorAll(".om-gap").forEach((b) => b.remove());
+    app.querySelectorAll(".om-hide").forEach((x) => x.classList.remove("om-hide"));
+    const old = app.querySelector(".om-bar");
+    if (old) old.remove();
+    omControls(ctx);
+    if (!ctx || !omState(ctx.entry.id).on) return;
+    const st = omState(ctx.entry.id), { prose, units, list } = omMarks(ctx);
+    // What to keep: each mark shown, a unit either side.
+    const keep = new Set();
+    list.filter((x) => omShows(st, x)).forEach((x) => x.ks.forEach((k) => { keep.add(k - 1); keep.add(k); keep.add(k + 1); }));
+    const unit = prose ? "paragraph" : "line";
+    for (let k = 0; k < units.length;) {
+      if (keep.has(k)) { k++; continue; }
+      let e = k;
+      while (e + 1 < units.length && !keep.has(e + 1)) e++;
+      const n = units.slice(k, e + 1).filter((u) => u.textContent.trim()).length;
+      if (e > k && n > 1) {                  // one line alone is not worth a row
+        const open = st.open.has(k);
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "om-gap";
+        b.dataset.k = k;
+        b.setAttribute("aria-expanded", String(open));
+        b.dataset.label = open ? `Fold these ${num(n)} ${unit}s away` : `⋯ ${num(n)} ${unit}s ⋯`;
+        b.setAttribute("aria-label", open ? `Fold away the ${num(n)} ${unit}s below` : `${num(n)} ${unit}s without marks: show them`);
+        const from = k;
+        b.addEventListener("click", () => {
+          if (st.open.has(from)) st.open.delete(from); else st.open.add(from);
+          omApply(`.om-gap[data-k="${from}"]`);
+        });
+        units[k].before(b);
+        if (!open) units.slice(k, e + 1).forEach((u) => u.classList.add("om-hide"));
+      }
+      k = e + 1;
+    }
+    if (!prose) ctx.root.querySelectorAll(".stanza").forEach((s) => {
+      if (!s.querySelector(".om-gap") && s.querySelector(".ln") && !s.querySelector(".ln:not(.om-hide)")) s.classList.add("om-hide");
+    });
+    // The bar: the kinds and tags of the marks found in the text, each a toggle.
+    const found = list.filter((x) => x.ks.length), shown = found.filter((x) => omShows(st, x)), lost = list.length - found.length;
+    const kinds = HL_KINDS.concat(["line"]).filter((k) => found.some((x) => x.kind === k));
+    const tags = tagCounts(found.map((x) => x.m.text));
+    const kindLabel = (k) => k === "line" ? `<span class="nb-dot" aria-hidden="true"></span>Line notes`
+      : k === "q" ? `<span class="hl-chip hl-q" aria-hidden="true"></span>Questions`
+      : `<span class="hl-chip hl-${k}" aria-hidden="true"></span>${HL_NAMES[k]}`;
+    const bar = document.createElement("div");
+    bar.className = "om-bar";
+    bar.innerHTML = `
+      <p class="om-sum" role="status">Only your marks: ${num(shown.length)} of ${num(found.length)} shown, with a ${unit} either side.</p>
+      ${kinds.length > 1 || tags.length ? `<div class="om-chips" role="group" aria-label="Show only these marks">
+        <button type="button" class="chip om-chip" data-om="all" aria-pressed="${!st.kinds.length && !st.tags.length}">All marks</button>
+        ${kinds.length > 1 ? kinds.map((k) => `<button type="button" class="chip om-chip" data-om="k:${k}" aria-pressed="${st.kinds.includes(k)}">${kindLabel(k)}</button>`).join("") : ""}
+        ${tags.map((t) => `<button type="button" class="chip om-chip om-tag" data-om="t:${esc(t.tag)}" aria-pressed="${st.tags.includes(t.tag)}">${esc(t.label)} <span class="om-n">${num(t.n)}</span></button>`).join("")}
+      </div>` : ""}
+      ${lost ? `<p class="om-lost">${lost === 1 ? "One of your marks" : num(lost) + " of your marks"} could not be found in the text as it is now: <a href="#/notes">see ${lost === 1 ? "it" : "them"} in My notes</a>.</p>` : ""}
+      <button type="button" class="om-off">Show every ${unit}</button>`;
+    bar.querySelectorAll(".om-chip").forEach((c) => c.addEventListener("click", () => {
+      const v = c.dataset.om;
+      if (v === "all") { st.kinds = []; st.tags = []; }
+      else if (v.startsWith("k:")) { const k = v.slice(2); st.kinds = st.kinds.includes(k) ? st.kinds.filter((x) => x !== k) : st.kinds.concat(k); }
+      else { const t = v.slice(2); st.tags = st.tags.includes(t) ? st.tags.filter((x) => x !== t) : st.tags.concat(t); }
+      st.open.clear();
+      omApply(`.om-chip[data-om="${CSS.escape(v)}"]`);
+    }));
+    bar.querySelector(".om-off").addEventListener("click", () => { omSet(ctx, false); const t = app.querySelector(".om-toggle"); if (t) t.focus(); });
+    const text = ctx.root.closest(".text-solo") || ctx.root;
+    text.before(bar);
+    if (focus) {
+      drawMarginNotes();
+      const f = app.querySelector(focus);
+      if (f) f.focus({ preventScroll: true });
+    }
+  }
+  // A line Find or "Go to line" goes to, folded away: its stretch is opened.
+  function omReveal(el) {
+    if (!el || !el.closest || !el.closest(".om-hide")) return;
+    const gaps = [...app.querySelectorAll('.om-gap[aria-expanded="false"]')]
+      .filter((g) => g.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING);
+    const c = omCtx();
+    if (!gaps.length || !c) return;
+    omState(c.entry.id).open.add(+gaps[gaps.length - 1].dataset.k);
+    omApply();
+    drawMarginNotes();
+  }
+  function omSet(ctx, on) {
+    const st = omState(ctx.entry.id);
+    st.on = on;
+    st.open.clear();
+    if (on && ppOn()) { ppState(PP.slug).who = ""; ppApply(); }   // one fold at a time (who's who)
+    omApply();
+    drawMarginNotes();
+    announce(on ? "Only your marks are shown." : "Every line is shown.");
+  }
+  // "Only my marks" beside "Line numbers" (a row made for it where the text has none) and in
+  // the phone's reading bar, while the text has marks.
+  function omControls(ctx) {
+    const on = !!(ctx && omState(ctx.entry.id).on);
+    let btn = app.querySelector(".om-toggle");
+    if (ctx && !btn) {
+      const text = ctx.root.closest(".text-solo") || ctx.root;
+      let row = app.querySelector("article.detail .ln-bar");
+      if (!row) { row = document.createElement("div"); row.className = "ln-bar"; text.before(row); }
+      btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "om-toggle";
+      btn.textContent = "Only my marks";
+      btn.addEventListener("click", () => { const c = omCtx(); if (c) omSet(c, !omState(c.entry.id).on); });
+      const ctl = row.querySelector(".ln-ctl");
+      if (ctl) ctl.prepend(btn); else row.appendChild(btn);
+    }
+    if (btn) { btn.hidden = !ctx; btn.setAttribute("aria-pressed", String(on)); }
+    if (!RB || !RB.nav.isConnected) return;
+    let rb = RB.nav.querySelector(".rb-om");
+    if (ctx && !rb) {
+      RB.nav.querySelector(".rb-next").insertAdjacentHTML("beforebegin",
+        `<button type="button" class="rb-btn rb-om" aria-pressed="false">${rbIcon("marks")}<span class="rb-l">My marks</span></button>`);
+      rb = RB.nav.querySelector(".rb-om");
+      rb.addEventListener("click", () => {
+        const c = omCtx();
+        if (!c) return;
+        omSet(c, !omState(c.entry.id).on);
+        if (omState(c.entry.id).on) { const bar = app.querySelector(".om-bar"); if (bar) jumpTo(Math.max(0, window.scrollY + bar.getBoundingClientRect().top - 80)); }
+      });
+    }
+    if (rb) { rb.hidden = !ctx; rb.setAttribute("aria-pressed", String(on)); }
+  }
 
   // ---------- quoting a selection: copy with its citation, link to the lines, look up ----------
   // The highlight bar also offers "Copy quote" (the words as laid out, then the MLA entry with
@@ -1239,8 +1612,7 @@
     const r = sel.getRangeAt(0), root = HL_CTX.root;
     if (!root.contains(r.startContainer) || !root.contains(r.endContainer)) return null;
     const prose = root.classList.contains("is-prose");
-    const all = [...root.querySelectorAll(prose ? ":scope > p" : ".ln[data-i]")];
-    const units = all.filter((u) => r.intersectsNode(u));
+    const units = [...root.querySelectorAll(prose ? ":scope > p" : ".ln[data-i]")].filter((u) => r.intersectsNode(u));
     if (units.length > 1 && r.endOffset === 0 && units[units.length - 1].contains(r.endContainer)) units.pop();
     const parts = units.map((u) => {
       const ur = document.createRange(); ur.selectNodeContents(u);
@@ -1248,7 +1620,14 @@
       if (u.contains(r.endContainer)) ur.setEnd(r.endContainer, r.endOffset);
       return { u, t: ur.toString() };
     }).filter((p) => p.t.trim());
+    return quoteParts(root, parts);
+  }
+  // The quotation for those pieces of lines or paragraphs (parts: [{u (the line or
+  // paragraph), t (its words taken)}]); also used by the "This line" panel for whole lines.
+  function quoteParts(root, parts) {
     if (!parts.length) return null;
+    const prose = root.classList.contains("is-prose");
+    const all = [...root.querySelectorAll(prose ? ":scope > p" : ".ln[data-i]")];
     const first = parts[0].u, last = parts[parts.length - 1].u;
     let text, a, b, loc;
     if (prose) {
@@ -1398,7 +1777,10 @@
     if (!desc) { desc = document.createElement("span"); desc.id = "linked-desc"; desc.className = "visually-hidden"; root.before(desc); }
     desc.textContent = what;
     (slot || root).setAttribute("aria-describedby", "linked-desc");
-    if (LINES_SHOWN === location.hash) return;     // drawn again in place: the reader's scroll stands
+    // Opened from an assignment link: the lines keep a pale wash while the page is open
+    // (a class, never a mark).
+    if (assignmentItem()) lit.forEach((el) => el.classList.add("ln-assigned"));
+    if (LINES_SHOWN === location.hash) return;    // drawn again in place: the reader's scroll stands
     LINES_SHOWN = location.hash;
     const st = history.state;
     const target = lit.find((el) => el.getClientRects().length);
@@ -1538,7 +1920,7 @@
       const h = ctx && hlOf(ctx.entry.id).find((x) => x.id === m.dataset.hl);
       if (h) { e.preventDefault(); closeGloss(); HL_CTX = ctx; openHlPop(h); return; }
     }
-    if (hlPop && !hlPop.contains(t) && !t.closest(".mn-card, .hl-bar")) closeHlPop();   // the bar's Note just opened it
+    if (hlPop && !hlPop.contains(t) && !t.closest(".mn-card, .hl-bar, .lp-edit")) closeHlPop();   // the bar's Note just opened it
     const g = t.closest(".gl[data-g]");
     if (g && window.getSelection().isCollapsed) { openGloss(g.dataset.g, g); return; }
     if (glPop && !glPop.contains(t) && !t.closest(".gl-li, .gl-see-b")) closeGloss();
@@ -1549,6 +1931,850 @@
     if (g && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openGloss(g.dataset.g, g); }
   });
   window.addEventListener("hashchange", () => { closeHlPop(); hideHlBar(); closeGloss(); });
+
+  // ---------- "This line": everything about one line in one place ----------
+  // Tap the margin beside a line (where its number is printed, or would be: every line has an
+  // invisible target there), choose "More on this line" in the selection bar, or Tab to a
+  // line's target (Up and Down move between lines, Home and End to the first and last; "Go to
+  // line" puts the focus there too) and press Enter: a panel gathers what the Codex holds on
+  // that line or the lines selected. It only reads what is already kept, and nothing goes in
+  // the address: (1) the lines with their place; (2) the editors' study notes on them (one
+  // whose anchor stands in them, or whose range, "Il. 1.4-5", runs on from its anchor into
+  // them); (3) the reader's own line notes and highlights there, with "Add a note" (a line
+  // note in pc-marks, as the selection bar makes); (4) the same lines in the text this one
+  // faces in data/parallel.json, never guessed: a book with no such map offers its other
+  // translations instead, side by side; (5) whatever later features add through LP_PARTS;
+  // (6) Copy quote, Copy link to line, Listen from here, Look up a word, Learn this stanza.
+  // From 780px it is a drawer on the right that the page makes room for, and it stays open
+  // (and follows) as other lines are tapped; on a phone it is a sheet from the foot of the
+  // screen, 55% of its height, dragged up to 90%, down (or Esc, or Close) to shut, and modal
+  // while it is up. It works in a text alone, in either column of the facing pages and either
+  // side of two translations. A prose translation alone has a target by each paragraph; one
+  // in a facing column is reached through the selection bar only.
+  const LP_WIDE = window.matchMedia("(min-width: 780px)");
+  const LP_PARTS = [];        // later sections: (info) => {title, html, bind(el)} or null
+  const LP_SHOW = 3;          // other texts shown before "Show all"
+  let LP = null;              // {el, scrim, ctx, a, b, from, gen} while the panel is open
+  let LP_FACING = null;       // the page's facing-page setup (bindFacing): {hash, kind, key, list, build}
+  const lpProse = (ctx) => !ctx.col && ctx.root.classList.contains("is-prose");
+  const lpDrawerWidth = () => (LP && LP.el.isConnected && LP_WIDE.matches ? LP.el.offsetWidth : 0);
+  // A text's units, each with its number in the text from 0: its lines (data-i, or data-u in a
+  // facing column) or, for a prose translation alone, its paragraphs.
+  function lpKeyed(ctx) {
+    if (lpProse(ctx)) return [...ctx.root.querySelectorAll(":scope > p")].map((el, k) => ({ el, k }));
+    return ctxLines(ctx).map((el) => ({ el, k: +(ctx.col ? el.dataset.u : el.dataset.i) }));
+  }
+  const lpEls = (ctx, a, b) => lpKeyed(ctx).filter((x) => x.k >= a && x.k <= b).map((x) => x.el);
+  // Where each unit stands in the text's characters (the offsets highlights and study notes
+  // use): Map key -> [start, end].
+  function lpSpans(ctx) {
+    const keyOf = new Map(lpKeyed(ctx).map((x) => [x.el, x.k]));
+    const pick = lpProse(ctx) ? (el) => el.closest(".poem-text > p") : ctx.col ? (el) => el.closest("[data-u]") : (el) => el.closest(".ln[data-i]");
+    const spans = new Map();
+    ctxNodes(ctx).forEach(({ n, s }) => {
+      const u = pick(n.parentElement), k = u ? keyOf.get(u) : undefined;
+      if (k === undefined) return;
+      const e = s + n.nodeValue.length, had = spans.get(k);
+      spans.set(k, had ? [Math.min(had[0], s), Math.max(had[1], e)] : [s, e]);
+    });
+    return spans;
+  }
+  // The units a stretch of characters touches (a selection): {a, b}, or null.
+  function lpRangeOf(ctx, s, e) {
+    if (!ctx) return null;
+    let a = Infinity, b = -1;
+    lpSpans(ctx).forEach(([x, y], k) => { if (x < e && y > s) { a = Math.min(a, k); b = Math.max(b, k); } });
+    return b < 0 ? null : { a, b };
+  }
+  function lpFromOffsets(ctx, s, e) {
+    const r = lpRangeOf(ctx, s, e);
+    if (r) openLinePanel(ctx, r.a, r.b, null);
+  }
+  // The mark text a line belongs to: the one whose root holds it (in a facing column, the
+  // one its data-e names).
+  function lpCtxOf(el) {
+    const line = el.closest("[data-e]");
+    return liveCtxs().find((c) => c.root.contains(el) && (!c.col || (line && line.dataset.e === c.entry.id))) || null;
+  }
+  // The counted number of each line (data-c, as quotations cite it), from the page itself or,
+  // for a text shown in a column, as its own page counts them.
+  function lpCounts(ctx) {
+    if (ctx.lpC) return ctx.lpC;
+    const c = [];
+    let box = ctx.root;
+    if (ctx.col) { box = document.createElement("div"); box.innerHTML = poemHTML(ctx.text || "", false); }
+    box.querySelectorAll(".ln[data-i]").forEach((l) => { c[+l.dataset.i] = +(l.dataset.c || 0); });
+    return (ctx.lpC = c);
+  }
+  // "Line 12", "Lines 12–14", "Paragraph 3 · Greek lines 120–144" (Murray's Homer).
+  function lpPlace(ctx, a, b) {
+    if (lpProse(ctx)) {
+      const ps = ctx.root.querySelectorAll(":scope > p");
+      const para = a === b ? `Paragraph ${a + 1}` : `Paragraphs ${a + 1}–${b + 1}`;
+      if (!ctx.root.classList.contains("greek-lines") || !ps[a] || !ps[a].dataset.n) return para;
+      const ga = +ps[a].dataset.n, next = ps[b + 1], gb = next && next.dataset.n ? +next.dataset.n - 1 : 0;
+      return para + " · " + (gb > ga ? `Greek lines ${ga}–${gb}` : gb === ga ? `Greek line ${ga}` : `Greek lines ${ga} ff.`);
+    }
+    if (!ctx.lines) return a === b ? `Line ${a + 1} as printed` : `Lines ${a + 1}–${b + 1} as printed`;
+    const cs = lpCounts(ctx).slice(a, b + 1).filter(Boolean);
+    if (!cs.length) return a === b ? "A line not numbered" : "Lines not numbered";   // a heading, an argument
+    return cs[0] === cs[cs.length - 1] ? `Line ${cs[0]}` : `Lines ${cs[0]}–${cs[cs.length - 1]}`;
+  }
+  // The page's own text (its quotations, link and dictionary), alone or in its column.
+  const lpOwn = (ctx) => !!(SOLO_CTX && SOLO_CTX.root.isConnected && SEL_CTX && SOLO_CTX.entry.id === ctx.entry.id
+    && (ctx === SOLO_CTX || (ctx.col && ctx.lines && !SOLO_CTX.root.classList.contains("is-prose"))));
+
+  // ---- the targets in the margin ----
+  // One button per line (or paragraph), empty, so the text, its highlights and its offsets
+  // are untouched. Only one per text is in the Tab order (and heard by a screen reader in
+  // browse mode): the last one focused, else the first.
+  function drawLineTargets() {
+    const ctxs = liveCtxs(), roots = new Set(ctxs.map((c) => c.root));
+    roots.forEach((root) => {
+      root.querySelectorAll(".ln-more").forEach((b) => b.remove());
+      root.classList.remove("lp-on");
+    });
+    ctxs.forEach((ctx) => {
+      if (!ctx.lines && !lpProse(ctx)) return;
+      lpKeyed(ctx).forEach(({ el, k }) => {
+        if ((!lpProse(ctx) && !el.classList.contains("ln")) || !el.textContent.trim()) return;
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "ln-more";
+        b.tabIndex = -1;
+        b.setAttribute("aria-hidden", "true");
+        b.setAttribute("aria-label", "More on " + lpPlace(ctx, k, k).replace(/ · .*$/, "").replace(/^A /, "a ").replace(/^(Line|Paragraph)/, (x) => x.toLowerCase()));
+        el.appendChild(b);
+      });
+      ctx.root.classList.add("lp-on");
+    });
+    roots.forEach((root) => lpRove(root.querySelector(".ln-more")));
+  }
+  // That target becomes its text's one tab stop.
+  function lpRove(b) {
+    if (!b) return;
+    const root = b.closest(".poem-text, .fx");
+    if (root) root.querySelectorAll('.ln-more[tabindex="0"]').forEach((x) => { if (x !== b) { x.tabIndex = -1; x.setAttribute("aria-hidden", "true"); } });
+    b.tabIndex = 0;
+    b.removeAttribute("aria-hidden");
+  }
+  // Go to line: the focus on that line's target (a facing row hidden on a phone has none).
+  function lpFocusLine(el) {
+    const b = el && !el.classList.contains("fx-row") && el.querySelector(".ln-more");
+    if (!b || !b.getClientRects().length) return;
+    lpRove(b);
+    b.focus({ preventScroll: true });
+  }
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest && e.target.closest(".ln-more");
+    if (!b) return;
+    e.preventDefault();
+    const unit = b.parentElement, ctx = lpCtxOf(unit);
+    const hit = ctx && lpKeyed(ctx).find((x) => x.el === unit);
+    if (!hit) return;
+    lpRove(b);
+    openLinePanel(ctx, hit.k, hit.k, b);
+  });
+  document.addEventListener("focusin", (e) => { if (e.target.classList && e.target.classList.contains("ln-more")) lpRove(e.target); });
+  document.addEventListener("keydown", (e) => {
+    const t = e.target;
+    if (!t.classList || !t.classList.contains("ln-more") || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (!["ArrowDown", "ArrowUp", "Home", "End"].includes(e.key)) return;
+    const root = t.closest(".poem-text, .fx");
+    const all = [...root.querySelectorAll(".ln-more")].filter((x) => x.getClientRects().length);
+    const at = all.indexOf(t);
+    const to = e.key === "Home" ? 0 : e.key === "End" ? all.length - 1 : at + (e.key === "ArrowDown" ? 1 : -1);
+    e.preventDefault();
+    if (!all[to]) return;
+    lpRove(all[to]);
+    all[to].focus();
+  });
+
+  // ---- what the panel shows ----
+  // The editors' study notes on lines a..b, from the same files drawGlosses reads.
+  async function lpGlosses(ctx, a, b) {
+    const url = await glossUrl(ctx.entry);
+    if (!url) return [];
+    const notes = await (GLOSS_CACHE[url] || (GLOSS_CACHE[url] = fetch(url).then((r) => r.ok ? r.json() : []).catch(() => [])));
+    if (!Array.isArray(notes) || !ctx.root.isConnected) return [];
+    const spans = lpSpans(ctx), full = ctxFull(ctx, ctxNodes(ctx));
+    const unitAt = (at) => { let hit = -1; spans.forEach(([x, y], k) => { if (hit < 0 && at >= x && at < y) hit = k; }); return hit; };
+    // How many lines past its anchor a note runs: "Il. 1.4-5" one more, "l. 3" none (verse only).
+    const runOn = (ref) => {
+      const m = /(?:^|\s)(?:\d+\.)?(\d+)(?:\s*[-–]\s*(\d+))?/.exec(String(ref || ""));
+      return m && m[2] && !lpProse(ctx) ? Math.max(0, Math.min(30, +m[2] - +m[1])) : 0;
+    };
+    return notes.filter((g) => {
+      if (!g || !g.anchor) return false;
+      let at = -1;
+      for (let c = 0; c < (g.occurrence || 1); c++) { at = full.indexOf(g.anchor, at + 1); if (at < 0) break; }
+      if (at < 0) return false;
+      const k = unitAt(at);
+      return k >= 0 && k <= b && k + runOn(g.ref) >= a;
+    });
+  }
+  // The reader's line notes and highlights on lines a..b.
+  function lpMarks(ctx, a, b) {
+    const notes = ctx.lines ? marksOf(ctx.entry.id).filter((m) => m.kind !== "hl" && m.a <= b && m.b >= a) : [];
+    const spans = lpSpans(ctx), from = spans.get(a), to = spans.get(b);
+    let hls = [];
+    if (from && to) {
+      const full = ctxFull(ctx, ctxNodes(ctx));
+      hls = hlOf(ctx.entry.id).filter((h) => { const at = markSpan(full, h); return at && at[0] < to[1] && at[1] > from[0]; });
+    }
+    return { notes, hls };
+  }
+  // The other text's lines facing these: [{label, orig (it is the original), lines}]. With the
+  // facing pages on screen, the rows these lines stand in; with them off, the same rows made
+  // from data/parallel.json for each text this one faces (fetched once, then kept).
+  function lpFacingOnScreen(ctx, els) {
+    const rows = [...new Set(els.map((el) => el.closest(".fx-row")).filter(Boolean))];
+    if (!rows.length) return [];
+    const inOrig = !!els[0].closest(".fx-o");
+    const lbl = ctx.root.querySelectorAll(".fx-head .fx-lbl")[inOrig ? 1 : 0];
+    const lines = rows.flatMap((r) => [...r.querySelectorAll(inOrig ? ".fx-t > .ln, .fx-t > p" : ".fx-o > .ln")])
+      .map((x) => x.textContent.replace(/\s+/g, " ").trim()).filter(Boolean);
+    return lines.length ? [{ label: lbl ? lbl.firstChild.textContent.trim() : (inOrig ? "Translation" : "Original"), orig: !inOrig, lines }] : [];
+  }
+  function lpFacingModels(ctx, a, b) {
+    const F = LP_FACING;
+    if (!F || F.hash !== location.hash || ctx !== SOLO_CTX || !lpOwn(ctx) || !F.list.length) return { items: [], waiting: [] };
+    const items = [], waiting = [];
+    F.list.forEach((e) => {
+      const other = FX_READY.get(F.kind + ":" + e.with);
+      if (!other) { waiting.push(e); return; }
+      let m;
+      try { m = F.build(e, other); } catch (err) { return; }
+      const id = ctx.entry.id, mine = (u) => u.src === id && u.k >= a && u.k <= b;
+      const rows = m.rows.filter((r) => r.o.some(mine) || r.t.some(mine));
+      if (!rows.length) return;
+      const ownOrig = rows.some((r) => r.o.some(mine));
+      const lines = rows.flatMap((r) => (ownOrig ? r.t : r.o).filter((u) => u.src !== id).map((u) => String(u.t).replace(/\s+/g, " ").trim())).filter(Boolean);
+      if (!lines.length) return;
+      const label = ownOrig ? (m.translator ? trCredit(m.translator) : "Translation")
+        : (LANG_NAMES[m.lang] || "The original") + (m.version ? " · " + m.version : "");
+      items.push({ label, orig: !ownOrig, lines, lang: ownOrig ? "" : m.lang });
+    });
+    return { items, waiting };
+  }
+  // A book of a work with other translations and no line map: those translations' same book,
+  // side by side with this one.
+  function lpOtherBooks(ctx) {
+    const m = /^work:([^/]+)\/(\d+)$/.exec(ctx.entry.id);
+    const w = m && WORKS[m[1]];
+    if (!w || !w.sections) return [];
+    const i = +m[2];
+    return otherTranslations(w).filter((o) => matchingPart(w, o, i) >= 0)
+      .map((o) => ({ label: verShort(o), href: `#/work/${m[1]}/${i}/with/${o.slug}` }));
+  }
+  // Up to LP_SHOW items, the rest behind "Show all n".
+  const lpMoreList = (items, html) => items.slice(0, LP_SHOW).map(html).join("")
+    + (items.length > LP_SHOW ? `<div class="lp-rest" hidden>${items.slice(LP_SHOW).map(html).join("")}</div>
+       <button type="button" class="lp-showall">Show all ${num(items.length)}</button>` : "");
+  // The stanza line k stands in (units from 0, as poemHTML numbers them).
+  function lpStanza(text, k) {
+    const us = textUnits(text);
+    if (!us[k]) return null;
+    let a = k, b = k;
+    while (a > 0 && !us[a].gap) a--;
+    while (us[b + 1] && !us[b + 1].gap) b++;
+    return { a, b };
+  }
+  const lpWords = (els) => [...new Set(els.map((el) => el.textContent).join(" ").split(/\s+/)
+    .map((x) => x.replace(/^[^\p{L}\p{M}]+|[^\p{L}\p{M}]+$/gu, "")).filter((x) => /\p{L}/u.test(x)))].slice(0, 60);
+  // The dictionary: the page's own text's (bindQuoteTools), else by the column's language.
+  const lpDictFor = (ctx, el) => {
+    if (lpOwn(ctx)) return lookupDict();
+    const l = (el.closest("[lang]") || {}).lang || "";
+    return DICTS[l] ? l : "en";
+  };
+
+  // ---- the panel itself ----
+  function lpShell() {
+    const el = document.createElement("div");
+    el.className = "lp";
+    el.setAttribute("role", "dialog");
+    el.setAttribute("aria-labelledby", "lp-title");
+    el.innerHTML = `
+      <div class="lp-grip" aria-hidden="true"><span></span></div>
+      <div class="lp-head">
+        <div class="lp-head-t">
+          <p class="lp-kicker"></p>
+          <h2 class="lp-title" id="lp-title" tabindex="-1"></h2>
+        </div>
+        <button type="button" class="lp-size" aria-expanded="false">Taller</button>
+        <button type="button" class="lp-close">Close</button>
+      </div>
+      <div class="lp-body"></div>`;
+    const scrim = document.createElement("div");
+    scrim.className = "lp-scrim";
+    scrim.addEventListener("click", () => closeLinePanel(true));
+    el.querySelector(".lp-close").addEventListener("click", () => closeLinePanel(true));
+    el.querySelector(".lp-size").addEventListener("click", () => lpHeight(el.classList.contains("is-tall") ? 55 : 90));
+    el.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") { e.stopPropagation(); closeLinePanel(true); return; }
+      // On a phone the sheet is modal: Tab goes round inside it.
+      if (e.key !== "Tab" || LP_WIDE.matches) return;
+      const fs = [...el.querySelectorAll("button, a[href], textarea, summary, [tabindex='0']")].filter((x) => !x.disabled && x.getClientRects().length);
+      if (!fs.length) return;
+      const first = fs[0], last = fs[fs.length - 1];
+      if (e.shiftKey && (document.activeElement === first || !el.contains(document.activeElement))) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    });
+    lpDrag(el);
+    document.body.append(scrim, el);
+    return { el, scrim };
+  }
+  // The sheet's height on a phone, in % of the screen.
+  function lpHeight(pc) {
+    if (!LP) return;
+    LP.el.style.height = pc + "vh";
+    LP.el.classList.toggle("is-tall", pc > 70);
+    const b = LP.el.querySelector(".lp-size");
+    b.textContent = pc > 70 ? "Shorter" : "Taller";
+    b.setAttribute("aria-expanded", String(pc > 70));
+  }
+  // Dragging the sheet by its top: up to 90%, down to close (or back to 55%).
+  function lpDrag(el) {
+    let start = null;
+    const down = (e) => {
+      if (LP_WIDE.matches || e.target.closest("button") || (e.pointerType === "mouse" && e.button !== 0)) return;
+      start = { y: e.clientY, h: el.getBoundingClientRect().height, t: Date.now() };
+      el.classList.add("is-dragging");
+      try { e.currentTarget.setPointerCapture(e.pointerId); } catch (err) { /* not capturable */ }
+    };
+    const move = (e) => {
+      if (!start) return;
+      el.style.height = Math.max(80, Math.min(window.innerHeight * 0.9, start.h - (e.clientY - start.y))) + "px";
+    };
+    const up = (e) => {
+      if (!start) return;
+      const dy = e.clientY - start.y, fast = dy > 60 && Date.now() - start.t < 300;
+      const pc = (el.getBoundingClientRect().height / window.innerHeight) * 100;
+      start = null;
+      el.classList.remove("is-dragging");
+      if (fast || pc < 35) closeLinePanel(true);
+      else lpHeight(pc > 72 ? 90 : 55);
+    };
+    [el.querySelector(".lp-grip"), el.querySelector(".lp-head")].forEach((h) => {
+      h.addEventListener("pointerdown", down);
+      h.addEventListener("pointermove", move);
+      h.addEventListener("pointerup", up);
+      h.addEventListener("pointercancel", up);
+    });
+  }
+  // A drawer or a sheet, as the screen is now.
+  function lpMode() {
+    if (!LP) return;
+    const wide = LP_WIDE.matches, el = LP.el;
+    el.classList.toggle("is-sheet", !wide);
+    el.classList.toggle("is-drawer", wide);
+    if (wide) { el.removeAttribute("aria-modal"); el.style.height = ""; el.classList.remove("is-tall"); }
+    else { el.setAttribute("aria-modal", "true"); if (!el.style.height) lpHeight(55); }
+    LP.scrim.hidden = wide;
+    document.body.classList.toggle("lp-open", wide);
+    const head = document.querySelector(".site-head");
+    el.style.setProperty("--lp-top", wide && head && getComputedStyle(head).position === "sticky" ? Math.max(0, head.getBoundingClientRect().bottom) + "px" : "0px");
+    drawMarginNotes();
+    if (RB) rbSync();
+  }
+  { const changed = () => lpMode();
+    if (LP_WIDE.addEventListener) LP_WIDE.addEventListener("change", changed); else LP_WIDE.addListener(changed); }   // Safari 13
+  // Opens the panel on lines a..b of a text (or moves it there); from: the target the focus
+  // goes back to.
+  function openLinePanel(ctx, a, b, from) {
+    if (!ctx) return;
+    if (!LP) {
+      LP = Object.assign(lpShell(), { gen: 0 });
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) LP.el.classList.add("no-motion");
+    }
+    const first = lpEls(ctx, a, a)[0];
+    Object.assign(LP, { ctx, a, b, from: from || (first && first.querySelector(".ln-more")) || null });
+    lpMode();
+    lpDraw();
+    requestAnimationFrame(() => { if (LP) LP.el.classList.add("is-in"); });
+    LP.el.querySelector(".lp-title").focus({ preventScroll: true });
+  }
+  function closeLinePanel(refocus) {
+    if (!LP) return;
+    const { el, scrim, from } = LP;
+    LP = null;
+    el.remove(); scrim.remove();
+    document.body.classList.remove("lp-open");
+    document.querySelectorAll(".lp-sel").forEach((x) => x.classList.remove("lp-sel"));
+    drawMarginNotes();
+    if (refocus && from && from.isConnected) from.focus({ preventScroll: true });
+    if (RB) rbSync();
+  }
+  window.addEventListener("hashchange", () => closeLinePanel(false));
+  // The texts on screen were drawn again (the index came in, the facing pages turned on or
+  // off): the panel follows its lines there, or closes.
+  function lpReattach() {
+    if (!LP) return;
+    const was = LP.ctx, prose = lpProse(was);
+    const ctx = liveCtxs().find((c) => c.entry.id === was.entry.id && lpProse(c) === prose && (!was.lines || c.lines));
+    if (!ctx) { closeLinePanel(false); return; }
+    const first = lpEls(ctx, LP.a, LP.a)[0];
+    Object.assign(LP, { ctx, from: (first && first.querySelector(".ln-more")) || null });
+    lpDraw();
+  }
+  // Drawn again after a note or a highlight changes, unless the reader is typing in it.
+  function lpRefresh() {
+    if (!LP || !LP.ctx.root.isConnected || (LP.el.contains(document.activeElement) && document.activeElement.matches("textarea"))) return;
+    lpDraw();
+  }
+  function lpDraw() {
+    const { ctx, a, b, el } = LP, gen = ++LP.gen, entry = ctx.entry;
+    const els = lpEls(ctx, a, b);
+    document.querySelectorAll(".lp-sel").forEach((x) => x.classList.remove("lp-sel"));
+    els.forEach((x) => x.classList.add("lp-sel"));
+    const prose = lpProse(ctx), place = lpPlace(ctx, a, b), own = lpOwn(ctx);
+    el.querySelector(".lp-kicker").textContent = [entry.title, entry.author, entry.translator && translatorShort(trName(entry.translator))].filter(Boolean).join(" · ");
+    el.querySelector(".lp-title").textContent = place;
+    const langEl = els[0] && els[0].closest("[lang]"), lang = langEl ? ` lang="${esc(langEl.lang)}"` : "";
+    const texts = els.map((x) => x.textContent.replace(/\s+$/, ""));
+    const sec = (cls, title, body) => body ? `<section class="lp-sec ${cls}"><h3 class="lp-h">${title}</h3>${body}</section>` : "";
+    // (1) The lines themselves.
+    const whole = texts.join(" ").replace(/\s+/g, " ").trim();
+    const lineHTML = prose || (ctx.col && !ctx.lines)
+      ? `<p class="lp-quote is-prose"${lang}>${esc(whole.slice(0, 420))}${whole.length > 420 ? "…" : ""}</p>`
+      : `<p class="lp-quote"${lang}>${texts.map((t) => `<span class="lp-ql">${esc(t)}</span>`).join("")}</p>`;
+    // (3) The reader's own notes and highlights, and a new note.
+    const mk = lpMarks(ctx, a, b);
+    const mkRow = (m, hl) => `<li class="lp-mk">
+        <p class="lp-mk-q">${hl ? `<span class="hl-chip hl-${esc(hlColor(m.color))}"></span>` : ""}“${esc(String(m.quote || "").slice(0, 160))}”</p>
+        ${m.text ? `<p class="lp-mk-t">${noteHTML(m.text)}</p>` : ""}
+        <p class="lp-mk-d">${esc(writtenLine(m))}<button type="button" class="lp-edit" data-${hl ? "hl" : "mk"}="${esc(m.id)}">${hl && !m.text ? "Add a note" : "Edit"}</button></p></li>`;
+    const marksHTML = mk.notes.length || mk.hls.length
+      ? `<ul class="lp-list">${mk.notes.map((m) => mkRow(m, false)).join("")}${mk.hls.map((h) => mkRow(h, true)).join("")}</ul>` : "";
+    const addHTML = ctx.lines ? `
+        <details class="lp-add">
+          <summary>Add a note on ${a === b ? "this line" : "these lines"}</summary>
+          <label class="visually-hidden" for="lp-note">Your note</label>
+          <textarea id="lp-note" class="mark-input" rows="3" maxlength="${MARK_MAX}" placeholder="Your note…"></textarea>
+          <div class="mark-actions"><button type="button" class="mark-save lp-save">Save note</button>
+            <span class="mark-where">${signedIn() ? "Private: kept in your account" : "Private: kept in this browser"}</span></div>
+        </details>` : "";
+    // (4) The same lines in the text this one faces, else the book in other translations.
+    const onScreen = ctx.col ? lpFacingOnScreen(ctx, els) : [];
+    const fm = onScreen.length ? { items: onScreen, waiting: [] } : lpFacingModels(ctx, a, b);
+    const books = fm.items.length || fm.waiting.length ? [] : lpOtherBooks(ctx);
+    const parItem = (it) => `<div class="lp-par"><p class="lp-par-l">${esc(it.label)}</p>
+        <p class="lp-quote lp-par-q"${it.lang ? ` lang="${esc(it.lang)}"` : ""}>${it.lines.map((t) => `<span class="lp-ql">${esc(t)}</span>`).join("")}</p></div>`;
+    const parTitle = fm.items.length && fm.items.every((x) => x.orig) ? "In the original" : "In other translations";
+    const parHTML = fm.items.length ? lpMoreList(fm.items, parItem)
+      : fm.waiting.length ? `<p class="lp-wait">Finding the facing lines…</p>`
+      : books.length ? `<p class="lp-books">Open this book in: ${books.map((x) => `<a href="${esc(x.href)}">${esc(x.label)}</a>`).join(" · ")}</p>` : "";
+    // (6) What can be done with them.
+    const listen = (own || ctx.col) && LISTEN && app.querySelector(".listen-open");
+    const text = own ? SEL_CTX.text : ctx.text, translator = own ? SEL_CTX.translator : ctx.translator;
+    const st = !prose && ctx.lines && text ? lpStanza(text, a) : null;
+    const learn = st && st.b >= b && st.b - st.a < LEARN_PASSAGE_MAX;
+    const words = lpWords(els), dict = els[0] ? lpDictFor(ctx, els[0]) : "en";
+    const unit = prose ? "paragraph" : "line", units = a === b ? unit : unit + "s";
+    const acts = [
+      own ? `<button type="button" class="lp-act" data-act="quote">Copy quote</button>` : "",
+      own ? `<button type="button" class="lp-act" data-act="link">Copy link to ${units}</button>` : "",
+      listen ? `<button type="button" class="lp-act" data-act="listen">Listen from here</button>` : "",
+      learn ? `<button type="button" class="lp-act" data-act="learn" aria-haspopup="dialog">Learn this stanza</button>` : "",
+      own && PRINT_NOW && PRINT_NOW.hash === location.hash ? `<button type="button" class="lp-act" data-act="print" aria-haspopup="dialog">Print ${a === b ? "this " + unit : "these " + units}</button>` : "",
+    ].join("");
+    const lookHTML = words.length ? `<details class="lp-look"><summary>Look up a word in ${esc(DICTS[dict].name)}</summary>
+        <p class="lp-words"${lang}>${words.map((w) => `<button type="button" class="lp-word" data-w="${esc(w)}" aria-label="Look up ${esc(w)} (opens a new tab)">${esc(w)}</button>`).join("")}</p></details>` : "";
+    // (5) Sections added by later features.
+    const info = { ctx, entry, a, b, place, lines: texts };
+    const parts = LP_PARTS.map((f) => { try { return f(info); } catch (err) { return null; } }).filter((p) => p && p.html);
+    const body = el.querySelector(".lp-body");
+    body.innerHTML = `
+      <section class="lp-sec lp-line" aria-label="The ${units}">${lineHTML}</section>
+      <div class="lp-gl-slot"></div>
+      ${sec("lp-marks", "Your notes on " + (a === b ? "this " + unit : "these " + units), marksHTML + addHTML)}
+      ${sec("lp-pars", parTitle, parHTML)}
+      ${parts.map((p, k) => `<section class="lp-sec lp-part" data-part="${k}"><h3 class="lp-h">${esc(p.title)}</h3>${p.html}</section>`).join("")}
+      ${sec("lp-acts", "Do more", (acts ? `<div class="lp-act-row">${acts}</div>` : "") + lookHTML)}`;
+    parts.forEach((p, k) => { if (p.bind) p.bind(body.querySelector(`[data-part="${k}"]`)); });
+    body.querySelectorAll(".lp-showall").forEach((btn) => btn.addEventListener("click", () => {
+      const rest = btn.previousElementSibling;
+      rest.hidden = false; btn.remove();
+      rest.tabIndex = -1; rest.focus();
+    }));
+    // Add a note: a line note, as the selection bar's Note makes one.
+    const save = body.querySelector(".lp-save");
+    if (save) save.addEventListener("click", () => {
+      const input = body.querySelector("#lp-note");
+      if (!input.value.trim()) { input.focus(); return; }
+      putMark(entry, { id: "m" + Date.now().toString(36), a, b, quote: whole.slice(0, 300), text: input.value });
+      input.blur();
+      drawMarks();
+      announce("Note saved.");
+      const h = LP && LP.el.querySelector(".lp-marks .lp-h");
+      if (h) { h.tabIndex = -1; h.focus(); }
+    });
+    // Edit: the note's own editor under its stanza, or the highlight's beside its words.
+    body.querySelectorAll(".lp-edit").forEach((btn) => btn.addEventListener("click", () => {
+      if (!LP_WIDE.matches) closeLinePanel(false);
+      if (btn.dataset.mk) {
+        const m = marksOf(ctx.entry.id).find((x) => x.id === btn.dataset.mk);
+        if (m) { MARK_CTX = ctx; openMarkEditor(m, false); }
+      } else {
+        const h = hlOf(ctx.entry.id).find((x) => x.id === btn.dataset.hl);
+        if (h) { HL_CTX = ctx; openHlPop(h, true); }
+      }
+    }));
+    body.querySelectorAll(".lp-word").forEach((btn) => btn.addEventListener("click", () => window.open(DICTS[dict].url([btn.dataset.w]), "_blank", "noopener")));
+    body.querySelectorAll(".lp-act").forEach((btn) => btn.addEventListener("click", () => {
+      const act = btn.dataset.act;
+      if (act === "quote" || act === "link") { const q = lpQuote(a, b); if (q) quoteAction(act, q, false); return; }
+      if (act === "print") { const from = LP.from; closeLinePanel(false); openPrint({ a, b }, from); return; }
+      if (act === "listen") {
+        if (!LP_WIDE.matches) closeLinePanel(false);
+        startListen(app.querySelector(".listen-open"), els[0]);
+        return;
+      }
+      if (act === "learn") {
+        const from = LP.from;
+        closeLinePanel(false);
+        openLearn([{ label: "", entry, text, translator, lang, ok: true, own: true }], 0, { a: st.a + 1, b: st.b + 1 }, from);
+      }
+    }));
+    // (2) The editors' study notes, and (4) the texts still to fetch, once they are in.
+    lpGlosses(ctx, a, b).then((gs) => {
+      if (!LP || LP.gen !== gen || !gs.length) return;
+      const glRow = (g) => `<li class="lp-gl">
+          <p class="lp-gl-k">${esc(g.kind || "note")}${g.ref ? ` · ${esc(g.ref)}` : ""}</p>
+          <p class="lp-gl-t">${esc(g.title)}</p>
+          ${g.greek ? `<p class="gl-greek">${esc(g.greek)}</p>` : ""}
+          ${g.short ? `<p class="lp-gl-s">${esc(g.short)}</p>` : ""}
+          ${g.body ? `<details class="lp-gl-more"><summary>The whole note</summary><div class="gl-body">${String(g.body).split(/\n\s*\n/).map((t) => `<p>${esc(t)}</p>`).join("")}</div>
+            ${(g.sources || []).length ? `<p class="lp-gl-src">Sources: ${g.sources.map((x) => x.url ? `<a href="${esc(x.url)}" rel="noopener" target="_blank">${esc(x.cite)}</a>` : esc(x.cite)).join("; ")}</p>` : ""}</details>` : ""}
+        </li>`;
+      el.querySelector(".lp-gl-slot").innerHTML = sec("lp-gls", gs.length === 1 ? "Editors’ note" : "Editors’ notes", `<ul class="lp-list">${gs.map(glRow).join("")}</ul>`);
+    });
+    if (fm.waiting.length) Promise.all(fm.waiting.map((e) => loadPartner(LP_FACING.kind, e.with).catch(() => null)))
+      .then(() => { if (LP && LP.gen === gen) lpDraw(); });
+  }
+  // The page's own lines a..b as "Copy quote" and "Copy link" take them (quoteParts).
+  function lpQuote(a, b) {
+    const root = SOLO_CTX && SOLO_CTX.root;
+    if (!root || !root.isConnected || !SEL_CTX) return null;
+    const prose = root.classList.contains("is-prose");
+    const units = prose ? [...root.querySelectorAll(":scope > p")].slice(a, b + 1)
+      : [...root.querySelectorAll(".ln[data-i]")].filter((l) => +l.dataset.i >= a && +l.dataset.i <= b);
+    return quoteParts(root, units.map((u) => ({ u, t: u.textContent })).filter((p) => p.t.trim()));
+  }
+
+  // ---------- print for class ----------
+  // "Print" under every poem and book (beside Cite and Copy link), and "Print these lines" in
+  // the "This line" panel, open a small dialog: line numbers every fifth line, on every line or
+  // off; "Leave room for notes" (the text in a column 58% wide beside a ruled blank margin);
+  // "Include my marks and notes" (highlights print as underlines, the reader's line notes and
+  // notes on highlights as numbered notes at the end); "Print only lines a to b" (filled in
+  // from the lines chosen in the panel). A long print (over PRINT_PAGES_WARN pages) is said so;
+  // a book of a long work prints that book only, never the whole work. The choices are kept in
+  // this browser only (pc-print: {nums, room, marks}; not synced). Printing builds a clean copy
+  // of the text on screen, alone or facing its original (.pr-sheet: a header with the title,
+  // author, translator and edition; the text; the notes; a footer with the MLA entry, the
+  // permanent address, the date and "Public domain text, Poetry Codex"), and while the body
+  // has .pc-printing the stylesheet prints only that, black on white in a serif face, with the
+  // work and book at the head of every later page. The browser's own print (Save as PDF, or
+  // Share on a phone) does the rest. Ctrl+P without the dialog prints the page as before.
+  const PRINT_KEY = "pc-print";
+  const PRINT_PAGES_WARN = 40;
+  let PRINT_NOW = null;    // the page's print setup (bindPrint): {hash, cite, entry, title, author, translator, work, part, ...}
+  function printPrefs() {
+    const p = readStore(PRINT_KEY);
+    return { nums: ["five", "every", "off"].includes(p.nums) ? p.nums : "five", room: p.room === true, marks: p.marks === true };
+  }
+  function bindPrint(o) {
+    PRINT_NOW = Object.assign({ hash: location.hash }, o);
+    const btn = app.querySelector(".cite-print");
+    if (btn) btn.addEventListener("click", () => openPrint(null, btn));
+  }
+  // The text on screen: the text alone (always there, hidden while the facing pages show) and
+  // the facing pages when they are open.
+  function printSource() {
+    const solo = (SOLO_CTX && SOLO_CTX.root.isConnected && SOLO_CTX.root)
+      || app.querySelector(".text-solo .poem-text") || app.querySelector(".poem-text");
+    if (!solo) return null;
+    return { solo, fx: app.querySelector(".fx-slot:not([hidden]) .fx"), prose: solo.classList.contains("is-prose") };
+  }
+  // The text's units as the dialog counts them: {k (the line's data-i, or the paragraph from
+  // 0), n (its printed number: the counted line, 0 for a heading; the paragraph from 1), len,
+  // gap (it opens a stanza or a paragraph)}.
+  function printUnits(src) {
+    if (src.prose) return [...src.solo.querySelectorAll(":scope > p")].map((p, k) => ({ k, n: k + 1, len: p.textContent.length, gap: true }));
+    return [...src.solo.querySelectorAll(".ln[data-i]")].map((l) => ({ k: +l.dataset.i, n: +(l.dataset.c || 0),
+      len: l.textContent.length, gap: l === l.parentElement.querySelector(".ln") }));
+  }
+  // Printed numbers from..to as units a..b (a heading inside the stretch goes with it), and back.
+  function printRangeUnits(us, from, to) {
+    const hit = us.filter((u) => u.n && u.n >= from && u.n <= to);
+    return hit.length ? { a: hit[0].k, b: hit[hit.length - 1].k } : null;
+  }
+  function printRangeNums(us, r) {
+    const hit = us.filter((u) => u.k >= r.a && u.k <= r.b && u.n);
+    if (hit.length) return { from: hit[0].n, to: hit[hit.length - 1].n };
+    const next = us.find((u) => u.k > r.b && u.n) || us.find((u) => u.n);
+    return next ? { from: next.n, to: next.n } : null;
+  }
+  // About how many A4 or Letter pages: some 42 lines a page, a long line wrapping (sooner in
+  // the narrower column), a little more for each stanza break, the header and the footer.
+  function printPages(us, room, facing) {
+    const cap = room ? 46 : 78;
+    let rows = 14;
+    us.forEach((u) => { rows += Math.max(1, Math.ceil(u.len / cap)) + (u.gap ? 0.8 : 0); });
+    return Math.max(1, Math.ceil((rows * (facing ? 2 : 1)) / 42));
+  }
+  // range: units {a, b} from the line panel, or null; from: the button the focus goes back to.
+  function openPrint(range, from) {
+    const P = PRINT_NOW, src = printSource();
+    if (!P || P.hash !== location.hash || !src) return;
+    const us = printUnits(src), pref = printPrefs();
+    const unit = src.prose ? "paragraph" : "line";
+    const max = us.reduce((m, u) => Math.max(m, u.n), 0);
+    const nums = (range && printRangeNums(us, range)) || { from: 1, to: max };
+    const hasMarks = marksOf(P.entry.id).length > 0;
+    const numsNow = src.prose && pref.nums === "every" ? "five" : pref.nums;
+    const radio = (v, label) => `<label class="pr-opt"><input type="radio" name="pr-nums" value="${v}"${numsNow === v ? " checked" : ""}> ${label}</label>`;
+    const dlg = document.createElement("dialog");
+    dlg.className = "pr-dlg";
+    dlg.setAttribute("aria-labelledby", "pr-t");
+    dlg.innerHTML = `
+      <form method="dialog">
+        <h2 class="pr-t" id="pr-t">Print ${range ? (nums.from === nums.to ? `this ${unit}` : `these ${unit}s`) : P.part ? "this book" : P.work ? "this text" : "this poem"}</h2>
+        <p class="pr-d">${esc(P.part ? P.work + " · " + P.part : P.title)}${P.part ? " (this book only)" : ""}</p>
+        <fieldset class="pr-f"><legend>${!src.prose ? "Line numbers" : src.solo.classList.contains("greek-lines") ? "Greek line numbers" : "Paragraph numbers"}</legend>
+          <div class="pr-opts">${src.prose ? radio("five", "On") + radio("off", "Off")
+            : radio("five", "Every 5 lines") + radio("every", "Every line") + radio("off", "Off")}</div>
+        </fieldset>
+        <label class="pr-check"><input type="checkbox" name="pr-room"${pref.room ? " checked" : ""}>
+          <span>Leave room for notes<small>The text in a narrower column beside a ruled blank margin</small></span></label>
+        <label class="pr-check"><input type="checkbox" name="pr-marks"${pref.marks && hasMarks ? " checked" : ""}${hasMarks ? "" : " disabled"}>
+          <span>Include my marks and notes<small>${hasMarks ? "Highlights print as underlines; your notes are numbered and printed at the end"
+            : "You have no highlights or notes on this text"}</small></span></label>
+        ${max ? `<div class="pr-range">
+          <label class="pr-check"><input type="checkbox" name="pr-only"${range ? " checked" : ""}><span>Print only ${unit}s</span></label>
+          <span class="pr-nums">
+            <label>from <input type="number" name="pr-from" inputmode="numeric" min="1" max="${max}" value="${nums.from}" aria-label="First ${unit} to print"></label>
+            <label>to <input type="number" name="pr-to" inputmode="numeric" min="1" max="${max}" value="${nums.to}" aria-label="Last ${unit} to print"></label>
+          </span>
+        </div>` : ""}
+        ${src.fx ? `<p class="pr-hint">The facing pages print side by side on a landscape page and one above the other on a portrait page.</p>` : ""}
+        ${!src.fx && omOn(P.entry.id) ? `<p class="pr-hint">“Only my marks” is on: the lines it folds away are left out of the print.</p>` : ""}
+        <p class="pr-warn" role="status"></p>
+        <div class="mark-actions">
+          <button value="print" class="mark-save pr-go">Print</button>
+          <button value="cancel" class="mark-cancel">Cancel</button>
+        </div>
+      </form>`;
+    const f = dlg.querySelector("form"), el = (n) => f.elements[n];
+    const opts = () => {
+      const only = !!(el("pr-only") && el("pr-only").checked);
+      const a = only ? +el("pr-from").value || 1 : 1, b = only ? +el("pr-to").value || max : max;
+      return { nums: (f.querySelector('[name="pr-nums"]:checked') || {}).value || "five", room: el("pr-room").checked,
+               marks: el("pr-marks").checked && !el("pr-marks").disabled, only,
+               range: only ? printRangeUnits(us, Math.min(a, b), Math.max(a, b)) : null };
+    };
+    const warn = dlg.querySelector(".pr-warn"), go = dlg.querySelector(".pr-go");
+    const update = () => {
+      const o = opts();
+      const part = o.range ? us.filter((u) => u.k >= o.range.a && u.k <= o.range.b) : us;
+      const pages = printPages(part, o.room, !!src.fx && !(o.range && src.prose));
+      go.disabled = o.only && !o.range;
+      warn.classList.toggle("is-long", pages > PRINT_PAGES_WARN && !go.disabled);
+      warn.textContent = go.disabled ? `No ${unit} here is numbered ${el("pr-from").value}–${el("pr-to").value}.`
+        : pages > PRINT_PAGES_WARN ? `About ${num(pages)} pages: a long print. To print a part, tick “Print only ${unit}s”.`
+        : `About ${pages} page${pages === 1 ? "" : "s"}.`;
+    };
+    f.addEventListener("input", (e) => {
+      if (e.target.name === "pr-from" || e.target.name === "pr-to") el("pr-only").checked = true;
+      update();
+    });
+    f.addEventListener("change", update);
+    update();
+    dlg.addEventListener("close", () => {
+      const o = opts();
+      dlg.remove();
+      if (from && from.isConnected) from.focus({ preventScroll: true });
+      if (dlg.returnValue !== "print" || (o.only && !o.range)) return;
+      writeStore(PRINT_KEY, { nums: o.nums, room: o.room, marks: el("pr-marks").disabled ? pref.marks : o.marks });
+      printNow(P, src, o);
+    });
+    document.body.appendChild(dlg);
+    if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
+  }
+  // The clean copy of the text and what goes round it.
+  function printSheet(P, src, o) {
+    const id = P.entry.id, r = o.range;
+    const facing = !!src.fx && !(r && src.prose);   // a prose stretch is paragraphs; the columns count lines
+    const body = (facing ? src.fx : src.solo).cloneNode(true);
+    // "Only my marks" on: what it folds away stays out, a row in its place saying how much.
+    if (!facing && omOn(id)) {
+      body.querySelectorAll(".om-gap").forEach((g) => {
+        if (g.getAttribute("aria-expanded") === "true") { g.remove(); return; }
+        const row = document.createElement("span");
+        row.className = "pr-gap";
+        row.textContent = g.dataset.label;
+        g.replaceWith(row);
+      });
+      body.querySelectorAll(".om-hide").forEach((x) => {
+        if (x.nextElementSibling && x.nextElementSibling.tagName === "BR") x.nextElementSibling.remove();
+        x.remove();
+      });
+    }
+    // The who's who fold is for reading on the screen: the sheet has every line.
+    body.querySelectorAll(".pp-hide").forEach((x) => x.classList.remove("pp-hide"));
+    // What only the screen needs goes: buttons, pop-ups, the study notes' underlines, the
+    // passing classes of the panel, Listen and the margin notes, and ids (the page keeps its own).
+    body.querySelectorAll("button, .mark-pop, .mn-col, .fx-switch, .fx-open").forEach((x) => x.remove());
+    body.querySelectorAll("span.gl").forEach((g) => g.replaceWith(...g.childNodes));
+    body.querySelectorAll("[id], [tabindex], [role]").forEach((x) => { x.removeAttribute("id"); x.removeAttribute("tabindex"); x.removeAttribute("role"); });
+    body.querySelectorAll(".lp-sel, .is-hover, .is-now, .is-spoken, .has-note").forEach((x) => x.classList.remove("lp-sel", "is-hover", "is-now", "is-spoken", "has-note"));
+    body.querySelectorAll("[title]").forEach((x) => x.removeAttribute("title"));
+    body.classList.remove("numbered", "lp-on");
+    body.removeAttribute("role");
+    if (facing) body.dataset.view = "both";
+    // Only lines a..b (with the facing pages, the rows they stand in).
+    if (r && facing) {
+      let keep = r.a === 0;
+      body.querySelectorAll(".fx-row:not(.fx-head)").forEach((row) => {
+        const own = [...row.querySelectorAll(`[data-u][data-e="${CSS.escape(id)}"]`)].map((x) => +x.dataset.u);
+        if (own.length) keep = own.some((k) => k >= r.a && k <= r.b);
+        if (!keep) row.remove();
+      });
+    } else if (r && src.prose) {
+      [...body.querySelectorAll(":scope > p")].forEach((p, k) => { if (k < r.a || k > r.b) p.remove(); });
+    } else if (r) {
+      body.querySelectorAll(".ln[data-i]").forEach((l) => {
+        const k = +l.dataset.i;
+        if (k >= r.a && k <= r.b) return;
+        if (l.nextElementSibling && l.nextElementSibling.tagName === "BR") l.nextElementSibling.remove();
+        l.remove();
+      });
+      body.querySelectorAll(".stanza").forEach((s) => { if (!s.querySelector(".ln")) s.remove(); });
+    }
+    // A stanza (or a speech set as one) of up to twelve lines is kept on one page.
+    body.querySelectorAll(".stanza").forEach((s) => { if (s.querySelectorAll(".ln").length <= 12) s.classList.add("pr-keep"); });
+    // Line numbers: every fifth counted line (and the first of a stretch), every line, or none.
+    if (facing) {
+      if (o.nums === "off") body.querySelectorAll("[data-n]").forEach((x) => x.removeAttribute("data-n"));
+    } else if (src.prose) {
+      body.querySelectorAll(":scope > p").forEach((p) => { if (o.nums !== "off" && p.dataset.n) p.dataset.pn = p.dataset.n; });
+    } else {
+      const first = body.querySelector(".ln[data-c]");
+      body.querySelectorAll(".ln").forEach((l) => {
+        l.removeAttribute("data-n");
+        const c = +(l.dataset.c || 0);
+        if (c && (o.nums === "every" || (o.nums === "five" && (c % 5 === 0 || (r && l === first))))) l.dataset.pn = c;
+      });
+    }
+    // The reader's marks: highlights stay (printed as underlines) and every note, on a line or
+    // on a highlight, gets a number after its words and is printed at the end.
+    body.querySelectorAll(".has-mark").forEach((x) => x.classList.remove("has-mark"));
+    let notesHTML = "", keyHTML = "";
+    if (!o.marks) body.querySelectorAll("mark.hl").forEach((m) => m.replaceWith(...m.childNodes));
+    else {
+      const lineAt = (k) => body.querySelector(facing ? `[data-u="${k}"][data-e="${CSS.escape(id)}"]` : `.ln[data-i="${k}"]`);
+      const ctx = SOLO_CTX && SOLO_CTX.entry.id === id ? SOLO_CTX : null;
+      const items = [];
+      marksOf(id).forEach((m) => {
+        if (!String(m.text || "").trim()) return;
+        let at = null;
+        if (m.kind === "hl") {
+          const ms = body.querySelectorAll(`mark.hl[data-hl="${CSS.escape(m.id)}"]`);
+          at = ms[ms.length - 1] || null;
+        } else for (let k = m.b; k >= m.a && !at; k--) at = lineAt(k);
+        if (!at) return;
+        const sup = document.createElement("sup");
+        sup.className = "pr-ref";
+        if (m.kind === "hl") at.after(sup); else at.appendChild(sup);
+        let place = "";
+        try {
+          const line = m.kind === "hl" && !src.prose ? at.closest(facing ? "[data-u]" : ".ln[data-i]") : null;
+          if (ctx && m.kind !== "hl") place = lpPlace(ctx, m.a, m.b);
+          else if (ctx && line) { const k = +(facing ? line.dataset.u : line.dataset.i); place = lpPlace(ctx, k, k); }
+        } catch (err) { place = ""; }
+        items.push({ m, sup, place: /^Lines? \d/.test(place) ? place : "" });
+      });
+      items.sort((x, y) => (x.sup.compareDocumentPosition(y.sup) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
+      items.forEach((it, k) => { it.sup.textContent = k + 1; });
+      if (items.length) notesHTML = `
+        <section class="pr-notes"><h2 class="pr-h">Your notes</h2><ol>${items.map((it) => `
+          <li><span class="pr-nq">${it.place ? esc(it.place) + ": " : ""}“${esc(String(it.m.quote || "").replace(/\s+/g, " ").slice(0, 140))}${String(it.m.quote || "").length > 140 ? "…" : ""}”</span>
+            <span class="pr-nt">${esc(it.m.text)}</span></li>`).join("")}</ol></section>`;
+      // Underlines tell the colours apart on black-and-white paper.
+      const LINE = { yellow: "solid", green: "double", blue: "dotted", pink: "wavy", q: "dashed" };
+      const used = HL_KINDS.filter((c) => body.querySelector("mark.hl-" + c)), names = hlMeanings();
+      if (used.length) keyHTML = `<p class="pr-key">Your highlights are underlined: ${used.map((c) =>
+        `<span class="pr-u hl-${c}">${LINE[c]}</span> for ${c === "q" ? "questions" : HL_NAMES[c].toLowerCase()}${names[c] ? " (" + esc(names[c]) + ")" : ""}`).join(", ")}.</p>`;
+    }
+    // The header, the stretch printed and the citation for it.
+    const rn = r ? printRangeNums(printUnits(src), r) : null;
+    const where = !rn ? "" : src.prose ? (rn.from === rn.to ? `Paragraph ${rn.from}` : `Paragraphs ${rn.from}–${rn.to}`)
+      : rn.from === rn.to ? `Line ${rn.from}` : `Lines ${rn.from}–${rn.to}`;
+    const loc = !rn ? "" : src.prose ? (rn.from === rn.to ? `para. ${rn.from}` : `paras. ${rn.from}–${rn.to}`)
+      : rn.from === rn.to ? `line ${rn.from}` : `lines ${rn.from}–${rn.to}`;
+    const mla = citations(Object.assign({}, P.cite, loc ? { loc } : {}))[0];
+    const dates = (POETS[P.authorSlug] || {}).dates;
+    const source = [P.translator && translatedBy(P.translator), P.collection && "From " + P.collection].filter(Boolean).join(" · ");
+    const d = new Date();
+    const sheet = document.createElement("div");
+    sheet.className = "pr-sheet" + (o.room ? " pr-room" : "") + (facing ? " pr-facing" : "");
+    sheet.setAttribute("aria-hidden", "true");
+    sheet.innerHTML = `
+      <header class="pr-head">
+        ${P.kicker ? `<p class="pr-kicker">${esc(P.kicker)}</p>` : ""}
+        <h1 class="pr-title"${langAttr(P.authorSlug, P.translator)}>${esc(P.title)}</h1>
+        <p class="pr-by">by ${esc(P.author)}${dates ? ` <span class="pr-dates">${esc(dates)}</span>` : ""}</p>
+        ${source ? `<p class="pr-src">${esc(source)}</p>` : ""}
+        ${where ? `<p class="pr-where">${esc(where)}</p>` : ""}
+      </header>
+      <div class="pr-body"></div>
+      ${keyHTML}${notesHTML}
+      <footer class="pr-foot">
+        <p class="pr-cite"><span class="pr-lbl">MLA</span> ${mla.html}</p>
+        <p>Permanent address: ${esc(SITE + P.cite.path)} · Printed ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}</p>
+        <p class="pr-pd">Public domain text, Poetry Codex</p>
+      </footer>`;
+    sheet.querySelector(".pr-body").appendChild(body);
+    return sheet;
+  }
+  let PRINT_DONE = null;   // takes away the last copy printed (and its listeners)
+  function printNow(P, src, o) {
+    if (PRINT_DONE) PRINT_DONE();
+    document.querySelectorAll(".pr-sheet, #pr-page").forEach((x) => x.remove());
+    const sheet = printSheet(P, src, o);
+    // The work and the book (or the poem and its poet) at the head of every page after the
+    // first, and the page number at the foot (page margin boxes: Chrome and Edge; elsewhere
+    // the pages go without).
+    const str = (s) => '"' + String(s).replace(/[\\"]/g, "\\$&").replace(/\s+/g, " ") + '"';
+    const run = P.part ? `${P.work} · ${P.part}` : P.work ? `${P.work} · ${P.author}` : `${P.title} · ${P.author}`;
+    const page = document.createElement("style");
+    page.id = "pr-page";
+    page.textContent = `@media print {
+      @page { @top-center { content: ${str(run)}; font: italic 9pt Georgia, "Times New Roman", serif; color: #333; }
+              @bottom-center { content: counter(page); font: 9pt Georgia, "Times New Roman", serif; color: #333; } }
+      @page :first { @top-center { content: none; } } }`;
+    document.head.appendChild(page);
+    document.body.appendChild(sheet);
+    document.body.classList.add("pc-printing");
+    let timer = 0;
+    const done = () => {
+      clearTimeout(timer);
+      PRINT_DONE = null;
+      document.body.classList.remove("pc-printing");
+      sheet.remove(); page.remove();
+      window.removeEventListener("afterprint", later);
+      window.removeEventListener("hashchange", done);
+    };
+    // A phone's browser may lay the page out after print() returns: there the copy stays (it
+    // is never shown on screen) until the reader leaves the page.
+    const later = () => { if (!window.matchMedia("(pointer: coarse)").matches) timer = setTimeout(done, 500); };
+    window.addEventListener("afterprint", later);
+    window.addEventListener("hashchange", done);
+    PRINT_DONE = done;
+    window.print();
+  }
 
   // ---------- the reader's readings with the Codex ----------
   // Each reading, answer, gloss or comparison the engine writes for this reader is kept (the
@@ -1610,6 +2836,7 @@
     const works = readingWorks();
     works[slug] = Object.assign({}, works[slug], more, { i, frac: roundFrac(frac), at: new Date().toISOString() });
     writeReading({ works });
+    planReached(slug, i, frac);     // a reading plan's portion ends here: it is done (reading plans)
   }
   function forgetReading(slug) {
     const works = readingWorks();
@@ -1691,8 +2918,8 @@
       });
       return { v: 1, notes };
     },
-    // Works and long poems by entry, the newer place winning; the recent list as one list,
-    // newest first, without what either side cleared.
+    // Works, long poems and reading plans by entry, the newer winning; the recent list as one
+    // list, newest first, without what either side cleared.
     reading(local, server) {
       const newer = (part) => {
         const out = Object.assign({}, (server && server[part]) || {});
@@ -1714,6 +2941,9 @@
       const recent = [...seen.values()].sort((x, y) => String(y.at).localeCompare(String(x.at))).slice(0, RECENT_MAX);
       const out = { v: 1, works, poems: Object.fromEntries(keep.map((k) => [k, poems[k]])), recent };
       if (cleared) out.cleared = cleared;
+      // Reading plans by work, the newer record winning (a dropped plan is a dated {gone}).
+      const plans = newer("plans");
+      if (Object.keys(plans).length) out.plans = plans;
       return out;
     },
     // This browser's facing-page choices; the Aa choices (aa, see "Aa" below) the newer side's.
@@ -1967,7 +3197,7 @@
       <li class="acct-row"><a href="${esc(routeFor(it.id))}"><span class="acct-row-t">${esc(it.title)}</span>
         <span class="acct-row-by">${esc(byLine(it))}</span></a></li>`;
     const noteRow = (n) => `
-      <li class="mark-row"><p class="mark-row-note">${esc(n.text)}</p>
+      <li class="mark-row"><p class="mark-row-note">${noteHTML(n.text)}</p>
         <p class="mark-row-src"><a href="${esc(routeFor(n.id))}">${esc(n.title || "")}</a>${n.author ? ` · ${esc(n.author)}` : ""} · ${esc(shortDate(n.updated))}</p></li>`;
     const readingRow = (r, k) => `
       <li class="acct-reading">
@@ -2243,6 +3473,36 @@
   const langAttr = (authorSlug, translator) =>
     POETS[authorSlug] && POETS[authorSlug].category === "Turkish & Ottoman" && !String(translator || "").trim()
       ? ' lang="tr"' : "";
+  // The language of a text itself (its titles stay with langAttr): screen readers then read
+  // Old English, Chaucer or the Latin Dies irae in the right voice. Only an untranslated text
+  // can be other than English: Turkish as above; Old English (an Anglo-Saxon or Medieval text
+  // written with ash and its commonest words, þæt, ond, wæs); Middle English, or Middle Scots for
+  // Barbour, Blind Hary, Henryson and Gavin Douglas (else a Medieval text looksArchaic finds old);
+  // the few originals printed beside the translations (TEXT_LANG_IDS); and, for a poet of a
+  // translated literature whose own words are given, that literature's language.
+  const TEXT_LANG_IDS = { "arndt/1": "de", "luther/45": "de", "jacopone-da-todi/7": "la", "thomas-of-celano/8": "la" };
+  const SCOTS = new Set(["barbour", "blind-hary", "henryson", "douglas_g", "lancelot-of-the-laik"]);
+  const CAT_LANG = { German: "de", French: "fr", Italian: "it" };
+  // id: a poem's id, or "work:<slug>" for a book of a long work.
+  function textLang(authorSlug, translator, text, id) {
+    if (langAttr(authorSlug, translator)) return "tr";
+    if (String(translator || "").trim()) return "";
+    if (TEXT_LANG_IDS[id]) return TEXT_LANG_IDS[id];
+    // A page drawn before the index is in knows no category: the text alone then decides.
+    const cat = POETS[authorSlug] ? POETS[authorSlug].category : "";
+    const work = /^work:/.test(id || "") ? id.slice(5) : "";
+    const sample = String(text || "").slice(0, 4000);
+    const early = !cat || cat === "Anglo-Saxon" || cat === "Medieval";
+    if (early && /æ/i.test(sample) && /(?:^|[^\p{L}])(?:þæt|ðæt|ond|wæs)(?![\p{L}])/iu.test(sample)) return "ang";
+    if (early && (SCOTS.has(authorSlug) || SCOTS.has(work))) return "sco";
+    if (early && looksArchaic(sample)) return "enm";
+    if (cat === "Ancient Greek & Roman") return /[Ͱ-Ͽἀ-῿]/.test(sample) ? "grc" : "";
+    return CAT_LANG[cat] || "";
+  }
+  const textLangAttr = (authorSlug, translator, text, id) => {
+    const l = textLang(authorSlug, translator, text, id);
+    return l ? ` lang="${l}"` : "";
+  };
 
   // ---------- poem text ----------
   // Prose translations are printed as prose in their source editions, in two shapes:
@@ -2267,7 +3527,7 @@
   const lineCount = (text) => trimmedLines(text).length;
   // Prose: hard-wrapped lines are joined back into paragraphs. A line well short of the
   // text's usual width (or a one-line paragraph over 200 characters) ends a paragraph.
-  function proseHTML(text) {
+  function proseParas(text) {
     const lens = trimmedLines(text).map((l) => l.length).sort((a, b) => a - b);
     const width = lens[Math.floor(lens.length * 0.9)] || 0;
     const paras = [];
@@ -2279,7 +3539,10 @@
       }
       if (cur.length) paras.push(cur.join(" "));
     }
-    return paras.map((p, k) => `<p data-n="${k + 1}">${esc(p)}</p>`).join("");
+    return paras;
+  }
+  function proseHTML(text) {
+    return proseParas(text).map((p, k) => `<p data-n="${k + 1}">${esc(p)}</p>`).join("");
   }
   // Verse: stanzas become paragraphs and each line its own block (styles.css .ln: hanging
   // indent, leading spaces kept); every fifth line carries its number for the optional
@@ -2287,21 +3550,26 @@
   // "BOOK I.", "THE ARGUMENT.") and an Argument (a stanza opening "Argument", or the
   // stanza after a heading that is only "THE ARGUMENT."), as editions number them.
   // The <br> is hidden by the stylesheet; it keeps lines apart in reader modes.
+  // A poem of more than one stanza names each one for a screen reader (a group labelled
+  // "Stanza 3"), with no words added to the text, so copying and the line indexes are as before.
   // Mirrors para_html in tools/build_pages.py (which does not number).
   const ARGUMENT = /^(the\s+)?argument\b/i;
   function poemHTML(text, prose) {
     if (prose) return proseHTML(text);
     const stanzas = String(text || "").split(/\n\s*\n/).filter((s) => s.trim());
     let n = 0, i = 0, skipNext = false;
-    return stanzas.map((st) => {
+    return stanzas.map((st, k) => {
       const ls = st.split("\n").filter((l) => l.trim());
       const first = ls[0].trim();
       const argument = skipNext || ARGUMENT.test(first);
       skipNext = ARGUMENT.test(first) && ls.length === 1;
-      return `<p class="stanza">${ls.map((l) => {
+      return `<p class="stanza"${stanzas.length > 1 ? ` role="group" aria-label="Stanza ${k + 1}"` : ""}>${ls.map((l) => {
         // data-c: every counted line's number (quotations cite it); data-n: the printed fifth.
         const c = !argument && /\p{Ll}/u.test(l) ? ++n : 0;
-        return `<span class="ln" data-i="${i++}"${c ? ` data-c="${c}"` : ""}${c && c % 5 === 0 ? ` data-n="${c}"` : ""}>${esc(l.replace(/\s+$/, ""))}</span><br>`;
+        // An indent of eight spaces or more is a span of its own, which a phone caps at a
+        // quarter of the line (styles.css .ind); the text and its offsets are unchanged.
+        const t = l.replace(/\s+$/, ""), ind = /^[ \t]{8,}/.exec(t);
+        return `<span class="ln" data-i="${i++}"${c ? ` data-c="${c}"` : ""}${c && c % 5 === 0 ? ` data-n="${c}"` : ""}>${ind ? `<span class="ind">${ind[0]}</span>${esc(t.slice(ind[0].length))}` : esc(t)}</span><br>`;
       }).join("")}</p>`;
     }).join("");
   }
@@ -2350,7 +3618,9 @@
       root.classList.add("greek-lines");
       if (!app.querySelector(".ln-toggle")) {
         // The row "Listen" may already have made above the text is used, not a second one.
-        const prev = root.previousElementSibling, made = prev && prev.classList.contains("ln-bar");
+        let prev = root.previousElementSibling;
+        if (prev && prev.classList.contains("om-bar")) prev = prev.previousElementSibling;   // "Only my marks" bar
+        const made = prev && prev.classList.contains("ln-bar");
         const bar = made ? prev : document.createElement("div");
         bar.className = "ln-bar";
         bar.insertAdjacentHTML("beforeend", `<span class="ln-ctl"><span class="ln-note"${on ? "" : " hidden"}>Greek line numbers: where each paragraph begins, to the nearest five lines</span>
@@ -2739,6 +4009,7 @@
   // ctx: {kind: "poem" | "work", key (pick key), list, build(entry, other) -> model, onShow(el)}
   function bindFacing(ctx) {
     const bar = app.querySelector(".par-ctl");
+    LP_FACING = bar ? Object.assign({ hash: location.hash }, ctx) : null;   // the "This line" panel's own lines in the other text
     if (!bar) return;
     const solo = app.querySelector(".text-solo"), slot = app.querySelector(".fx-slot");
     const lnCtl = app.querySelector(".ln-ctl");
@@ -2796,20 +4067,24 @@
   // never sees a white flash: those two keys still hold the nearest it knows (Paper as light,
   // Black as dark, the largest size as xl), and the rest is set here, before app.js draws
   // anything. A static page's Display switch changes pc-theme alone; when it no longer matches,
-  // it wins. Signed in, each choice also goes into pc-parallel as aa: {choice: value, at} (the
+  // it wins. Spacing's Wide is the WCAG text-spacing test made a setting (letters .12em apart,
+  // words .16em, lines and stanzas further apart); "Dyslexia-friendly" is Wide with the Legible
+  // font, and then the editors' notes are set upright. Focus (pc-prefs focus, a
+  // switch here and on the phone's reading bar) dims all but one stanza, see "Focus" below.
+  // Signed in, each choice also goes into pc-parallel as aa: {choice: value, at} (the
   // Worker keeps only the kinds it knows; MERGE.parallel keeps the newer aa) and is taken from
   // there after each sync. The theme is the exception: Auto ("follow this device") is never
   // sent, and a device on Auto stays on Auto, so a phone that follows the system keeps doing so.
   const READ_PREFS = {
     theme: ["", "light", "paper", "dark", "black"], font: ["", "plain", "legible"],
-    text: ["", "l", "xl", "xxl"], lh: ["snug", "", "airy"], measure: ["narrow", "", "wide"] };
+    text: ["", "l", "xl", "xxl"], lh: ["snug", "", "airy", "wide"], measure: ["narrow", "", "wide"] };
   const RT_ROWS = [
     ["theme", "Theme", [["", "Auto", "Follow this device's light or dark setting"], ["light", "Light"], ["paper", "Paper", "Warm off-white, like a book's page"],
       ["dark", "Dark"], ["black", "Black", "Pure black, for OLED screens"]]],
     ["font", "Font", [["", "Book", "Fraunces, the Codex's serif"], ["plain", "Plain", "A plain sans-serif"],
       ["legible", "Legible", "Atkinson Hyperlegible, made for low vision"]]],
     ["text", "Text size", [["", "Standard text"], ["l", "Larger text"], ["xl", "Larger still"], ["xxl", "Largest text"]]],
-    ["lh", "Spacing", [["snug", "Snug"], ["", "Standard"], ["airy", "Airy"]]],
+    ["lh", "Spacing", [["snug", "Snug"], ["", "Standard"], ["airy", "Airy"], ["wide", "Wide", "Wider gaps between letters, words, lines and stanzas"]]],
     ["measure", "Width", [["narrow", "Narrow"], ["", "Standard"], ["wide", "Wide"]]],
   ];
   const readPref = (k) => READ_PREFS[k].includes(prefs()[k]) ? prefs()[k] : "";
@@ -2842,7 +4117,8 @@
     applyReadPrefs();
     syncReadPanel();
     // Anything but the theme and the switches moves the text: the margin notes are placed again.
-    if (Object.keys(change).some((k) => k !== "theme" && k !== "lines" && k !== "gloss")) window.dispatchEvent(new Event("resize"));
+    if (Object.keys(change).some((k) => k !== "theme" && k !== "lines" && k !== "gloss" && k !== "focus")) window.dispatchEvent(new Event("resize"));
+    if ("focus" in change) fmRefresh();
     if (fromAccount) return;
     const send = Object.assign({}, change);
     if (send.theme === "") delete send.theme;
@@ -2853,6 +4129,7 @@
     const aa = objOr(parPrefs().aa), change = {};
     Object.keys(aa).forEach((k) => {
       if (k === "lines" || k === "gloss") { if (typeof aa[k] === "boolean" && aa[k] !== (prefs()[k] !== false)) change[k] = aa[k]; return; }
+      if (k === "focus") { if (typeof aa[k] === "boolean" && aa[k] !== focusOn()) change[k] = aa[k]; return; }
       if (!READ_PREFS[k] || !READ_PREFS[k].includes(aa[k]) || aa[k] === readPref(k)) return;
       if (k === "theme" && !readPref("theme")) return;   // Auto here stays Auto
       change[k] = aa[k];
@@ -2880,7 +4157,10 @@
     (!document.documentElement.dataset.theme && matchMedia("(prefers-color-scheme: dark)").matches) ? "light" : "dark");
   function syncReadPanel() {
     document.querySelectorAll('.rt-panel input[type="radio"]').forEach((i) => { i.checked = i.value === readPref(i.name.slice(3)); });
+    document.querySelectorAll(".rt-dys").forEach((b) => b.setAttribute("aria-pressed", String(dyslexiaOn())));
+    document.querySelectorAll(".rt-focus, .rb-focus").forEach((b) => b.setAttribute("aria-pressed", String(focusOn())));
   }
+  function dyslexiaOn() { return readPref("font") === "legible" && readPref("lh") === "wide"; }
   function readingToolsHTML() {
     const row = ([kind, legend, opts]) => `
           <fieldset class="rt-row rt-row-${kind}"><legend class="rt-label">${legend}</legend><span class="rt-opts">
@@ -2889,8 +4169,12 @@
               : `<label class="rt-opt"${title ? ` title="${esc(title)}"` : ""}><input type="radio" name="rt-${kind}" value="${v}"${readPref(kind) === v ? " checked" : ""}><span>${label}</span></label>`).join("")}
           </span></fieldset>`;
     return `<div class="rt">
-        <button class="rt-toggle" type="button" aria-expanded="false" aria-controls="rt-panel" aria-label="Reading settings: theme, font, size, spacing, width" title="Reading settings">Aa</button>
+        <button class="rt-toggle" type="button" aria-expanded="false" aria-controls="rt-panel" aria-label="Reading settings: theme, font, size, spacing, width, focus" title="Reading settings">Aa</button>
         <div class="rt-panel" id="rt-panel" hidden>${RT_ROWS.map(row).join("")}
+          <div class="rt-switches">
+            <button type="button" class="rt-switch rt-dys" aria-pressed="${dyslexiaOn()}">Dyslexia-friendly<span class="rt-sw-sub">Legible font, wide spacing</span></button>
+            <button type="button" class="rt-switch rt-focus" aria-pressed="${focusOn()}">Focus<span class="rt-sw-sub">Dim all but one stanza</span></button>
+          </div>
           <button type="button" class="rt-reset">Reset</button>
         </div>
       </div>`;
@@ -2910,8 +4194,14 @@
       const i = e.target;
       if (i.type === "radio" && /^rt-/.test(i.name)) setReadPref({ [i.name.slice(3)]: i.value });
     });
+    panel.querySelector(".rt-dys").addEventListener("click", () => {
+      const on = !dyslexiaOn();
+      setReadPref(on ? { font: "legible", lh: "wide" } : { font: "", lh: "" });
+      announce(on ? "Dyslexia-friendly text: legible font, wide spacing." : "Standard font and spacing.");
+    });
+    panel.querySelector(".rt-focus").addEventListener("click", () => setFocusMode(!focusOn()));
     panel.querySelector(".rt-reset").addEventListener("click", () => {
-      setReadPref({ theme: "", font: "", text: "", lh: "", measure: "" });
+      setReadPref({ theme: "", font: "", text: "", lh: "", measure: "", focus: false });
       announce("Reading settings reset.");
     });
   }
@@ -3091,6 +4381,8 @@
     findLight(findEl(it));
   }
   function findLight(el) {
+    omReveal(el);
+    ppReveal(el);
     const root = document.documentElement;
     root.style.scrollBehavior = "auto";        // a jump, as jumpTo does: the page's smooth glide is slow over a long book
     void root.offsetHeight;
@@ -3143,6 +4435,7 @@
     FIND.line.setAttribute("aria-invalid", String(!el));
     if (!el) { announce(`There is no ${word} ${n} in this text.`); return; }
     findLight(el);
+    lpFocusLine(el);   // its margin target: Enter then opens "This line"
     announce(`${word === "line" ? "Line" : "Paragraph"} ${n}.`);
   }
   // The bar, under the title; focus goes to the words (or to the line number, for g).
@@ -3229,9 +4522,12 @@
     [["f", "/"], "Find in this text"],
     [["g"], "Go to a line"],
     [["n"], "A note on the words you have selected"],
+    [["n", "p"], "Next or previous speech, while following a speaker in a play (Speakers)"],
     [["t"], "Reading settings (Aa)"],
     [["Enter", "Shift+Enter"], "Next or previous match, in Find"],
     [["Esc"], "Close Find, a panel or this list"],
+    [["Enter"], "More on the line in focus (Tab to the margin beside a line; Up and Down move)"],
+    [["[", "]"], "Previous or next stanza (a speech in a play, a paragraph in prose)"],
     [["?"], "This list of keys"],
   ];
   const keysListHTML = () => `<dl class="kb-list">${READING_KEYS.map(([ks, what]) =>
@@ -3254,13 +4550,16 @@
     keySheet.querySelector(".kb-acts button").focus();
   }
   document.addEventListener("keydown", (e) => {
-    if (e.defaultPrevented || e.ctrlKey || e.metaKey || e.altKey || e.isComposing) return;
+    // [ and ] are typed with AltGr (Ctrl+Alt) on Turkish, German and other keyboards.
+    const bracket = e.key === "[" || e.key === "]";
+    if (e.defaultPrevented || e.metaKey || e.isComposing || ((e.ctrlKey || e.altKey) && !(bracket && e.ctrlKey && e.altKey))) return;
     const t = e.target;
-    if (t && t.closest && t.closest("input, textarea, select, [contenteditable]:not([contenteditable='false']), [role='slider'], [role='listbox'], [role='menu'], [role='tablist'], [role='radiogroup'], .hl-bar, .find-bar, .listen-bar, dialog")) return;
+    if (t && t.closest && t.closest("input, textarea, select, [contenteditable]:not([contenteditable='false']), [role='slider'], [role='listbox'], [role='menu'], [role='tablist'], [role='radiogroup'], .hl-bar, .find-bar, .listen-bar, .lp, dialog")) return;
     const key = e.key;
     if (key === "?") { e.preventDefault(); openKeySheet(); return; }
     if (!app.querySelector(".detail .poem-text, .compare .poem-text")) return;   // reading pages only
     if (key === "/") { e.preventDefault(); openFind(false); return; }   // Shift+7 on a Turkish keyboard
+    if (bracket) { if (fmStep(key === "]" ? 1 : -1)) e.preventDefault(); return; }
     if (e.shiftKey) return;                    // Shift+arrows extend a selection
     if (key === "ArrowLeft" || key === "ArrowRight") {
       const b = app.querySelector(`.detail-nav button${key === "ArrowRight" ? ".next" : ":not(.next)"}`);
@@ -3272,6 +4571,8 @@
       e.preventDefault(); b.click();
       const panel = app.querySelector(".rt-panel");
       ((panel && !panel.hidden && panel.querySelector("input:checked")) || b).focus();
+    } else if ((key === "n" || key === "p") && spkFollowing() && !(key === "n" && hlSelection())) {
+      e.preventDefault(); spkStep(key === "n" ? 1 : -1);
     } else if (key === "n") {
       if (!hlSelection()) { announce("Select some words in the text first, then press n."); return; }
       e.preventDefault();
@@ -3286,7 +4587,7 @@
   // 780px wide (where the top bar becomes three rows): once the reader has scrolled down past
   // the title the top bar slides away; scrolling back up by 40px or more, or reaching the end,
   // brings it back together with a bar at the foot of the screen: Previous · Aa · Find ·
-  // Contents (a book) or Save (a poem) · Next, each an icon with its name under it. The
+  // Contents (a book) or Save (a poem) · Focus · Next, each an icon with its name under it. The
   // reading-progress line rides on that bar's top edge, the "Read with the Codex" cue goes
   // below the text, and a note's dot in the margin is easier to hit. A tap in the text never
   // shows or hides anything (taps belong to highlights and study notes). The bar never hides
@@ -3302,6 +4603,9 @@
     find: '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/>',
     contents: '<path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r=".9"/><circle cx="4.5" cy="12" r=".9"/><circle cx="4.5" cy="18" r=".9"/>',
     save: '<path d="M6.5 3.5h11v17l-5.5-4-5.5 4z"/>',
+    marks: '<path d="M4 5h16M7 12h10M10 19h4"/>',
+    focus: '<path d="M4 6h16M4 18h16" stroke-opacity=".35"/><path d="M4 12h16" stroke-width="2.6"/>',
+    speakers: '<circle cx="9" cy="8" r="3"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><path d="M15.5 5.3a3 3 0 0 1 0 5.4M17 14.2c2 .6 3.2 2.2 3.6 4.8"/>',
   };
   const rbIcon = (k) => `<svg class="rb-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${RB_ICON[k]}</svg>`;
   // opts: {contents: "#/work/<slug>"} on a book or the side-by-side view; none on a poem.
@@ -3323,6 +4627,7 @@
       app.querySelector(".find-open") ? item("rb-find", rbIcon("find"), "Find", ' aria-expanded="false"') : "",
       o.contents ? `<a class="rb-btn rb-contents" href="${esc(o.contents)}">${rbIcon("contents")}<span class="rb-l">Contents</span></a>`
         : shelf ? item("rb-save", rbIcon("save"), "Save", ` aria-pressed="${shelf.getAttribute("aria-pressed") === "true"}"`) : "",
+      app.querySelector(".rt") ? item("rb-focus", rbIcon("focus"), "Focus", ` aria-pressed="${focusOn()}"`) : "",
       item("rb-next", rbIcon("next"), "Next", next && !next.disabled ? "" : " disabled"),
     ].join("");
     page.appendChild(nav);   // after the text, for a screen reader; fixed to the foot by styles.css
@@ -3346,7 +4651,11 @@
     });
     const save = nav.querySelector(".rb-save");
     if (save) save.addEventListener("click", () => { shelf.click(); rbSync(); });
+    const focus = nav.querySelector(".rb-focus");
+    if (focus) focus.addEventListener("click", () => setFocusMode(!focusOn()));
     RB = { nav, kind: o.contents ? "work" : "poem", last: window.scrollY, turn: window.scrollY, kb: false };
+    bindFocus();             // Focus and the [ ] keys, on this page's text
+    omControls(omCtx());     // "My marks", while the text has marks
     placeCue();
     rbSync();
   }
@@ -3369,7 +4678,7 @@
     if (!on) { body.classList.remove("rb-hide", "rb-off"); return; }
     const head = document.querySelector(".site-head");
     if (head) document.documentElement.style.setProperty("--rb-head", head.offsetHeight + "px");
-    const pop = document.querySelector(".hl-bar:not([hidden]), .gl-pop, .hl-pop, .shelf-menu");
+    const pop = document.querySelector(".hl-bar:not([hidden]), .gl-pop, .hl-pop, .shelf-menu, .lp.is-sheet");
     const typing = document.activeElement;
     RB.kb = rbTyping(typing);
     body.classList.toggle("rb-off", RB.kb || !!pop);
@@ -3420,6 +4729,114 @@
     if (RB_PHONE.addEventListener) RB_PHONE.addEventListener("change", turned); else RB_PHONE.addListener(turned);   // Safari 13
   }
   window.addEventListener("hashchange", () => { RB = null; rbSync(); });
+
+  // ---------- Focus: one stanza at a time; [ and ] between stanzas ----------
+  // Focus (off by default: Aa's switch, or the phone's reading bar) dims every stanza of the
+  // text on screen but one to 35%, to help a reader keep their place. The one left bright is
+  // the one last tapped, else, while scrolling, the one at the upper third of the screen.
+  // [ and ] move to the previous or next stanza, with or without Focus: a speech in a play is
+  // set as a stanza, a prose translation moves by paragraph, and the facing pages by their
+  // rows from one stanza break to the next (each passage, where passages face paragraphs). The
+  // stanza moved to is put at the upper third of the screen and takes the keyboard focus, so a
+  // screen reader reads it. Each unit's elements carry data-fm (its number) and the bright one
+  // fm-cur; styles.css dims the rest while the text has fm-on. Only the switch is kept
+  // (pc-prefs focus, beside the Aa choices, so it follows a signed-in reader).
+  function focusOn() { return prefs().focus === true; }
+  let FM = null;             // {root, units: [[element, …], …], at} for the text on screen
+  function setFocusMode(on) {
+    setReadPref({ focus: on });
+    announce(on ? "Focus on: one stanza at a time. Press [ or ] to move." : "Focus off.");
+  }
+  // The text on screen, cut into units (a line hidden by "My marks" is left out).
+  function fmUnits() {
+    const fx = app.querySelector(".detail .fx-slot:not([hidden]) .fx");
+    const root = fx || app.querySelector(".detail .poem-text");
+    if (!root) return null;
+    let units = [];
+    if (fx) {
+      const blocks = fx.dataset.mode === "blocks";
+      fx.querySelectorAll(".fx-row:not(.fx-head)").forEach((r) => {
+        if (!units.length || blocks || r.classList.contains("gap") || r.classList.contains("fx-bookrow")) units.push([]);
+        units[units.length - 1].push(r);
+      });
+    } else units = [...root.querySelectorAll(root.classList.contains("is-prose") ? ":scope > p" : ".stanza")].map((el) => [el]);
+    units = units.map((u) => u.filter((el) => el.getClientRects().length)).filter((u) => u.length);
+    units.forEach((u, k) => u.forEach((el) => { el.dataset.fm = k; }));
+    return { root, units, at: null };
+  }
+  // The unit at the upper third of the screen, or the nearest one to it.
+  function fmAtScroll() {
+    const us = FM.units, y = window.innerHeight / 3;
+    let lo = 0, hi = us.length - 1;
+    while (lo < hi) {                   // the last unit whose top is above that line
+      const mid = (lo + hi + 1) >> 1;
+      if (us[mid][0].getBoundingClientRect().top <= y) lo = mid; else hi = mid - 1;
+    }
+    const last = us[lo][us[lo].length - 1].getBoundingClientRect();
+    if (last.bottom >= y || lo === us.length - 1) return lo;
+    return y - last.bottom < us[lo + 1][0].getBoundingClientRect().top - y ? lo : lo + 1;
+  }
+  function fmShow(k) {
+    if (!FM) return;
+    FM.at = k;
+    const on = focusOn();
+    FM.root.classList.toggle("fm-on", on);
+    FM.root.querySelectorAll(".fm-cur").forEach((el) => el.classList.remove("fm-cur"));
+    if (on) (FM.units[k] || []).forEach((el) => el.classList.add("fm-cur"));
+  }
+  // Cut the text again (a new page, the facing pages opened or closed, the switch pressed).
+  function fmRefresh() {
+    const old = FM;
+    FM = fmUnits();
+    if (old && old.root !== (FM && FM.root) && old.root.isConnected) old.root.classList.remove("fm-on");
+    if (!FM || !FM.units.length) return;
+    fmShow(old && old.root === FM.root && old.at !== null && old.at < FM.units.length ? old.at : fmAtScroll());
+  }
+  // Moves to the previous (-1) or next (1) unit; false when there is no text to move in.
+  function fmStep(d) {
+    fmRefresh();
+    if (!FM || !FM.units.length) return false;
+    const n = FM.units.length, from = FM.at, k = Math.max(0, Math.min(n - 1, from + d));
+    const el = FM.units[k][0];
+    FM.hold = Date.now() + 300;      // the scroll this causes must not pick another stanza
+    jumpTo(Math.max(0, el.getBoundingClientRect().top + window.scrollY - window.innerHeight / 3 + 6));
+    fmShow(k);
+    if (!el.hasAttribute("tabindex")) el.tabIndex = -1;
+    el.focus({ preventScroll: true });
+    const what = FM.root.classList.contains("is-prose") ? "Paragraph" : "Stanza";
+    if (k === from) announce(d < 0 ? `The first ${what.toLowerCase()}.` : `The last ${what.toLowerCase()}.`);
+    else if (!el.hasAttribute("aria-label")) announce(`${what} ${k + 1} of ${n}`);
+    return true;
+  }
+  function bindFocus() {
+    FM = null;
+    fmRefresh();
+  }
+  window.addEventListener("scroll", () => {
+    if (!FM || FM.raf || (FM.hold && Date.now() < FM.hold)) return;
+    FM.raf = requestAnimationFrame(() => {
+      if (!FM) return;
+      FM.raf = 0;
+      if (FM.root.isConnected && FM.units.length) fmShow(fmAtScroll());
+    });
+  }, { passive: true });
+  // A tap in the text brightens that stanza (a selection or a highlight goes on as usual).
+  document.addEventListener("click", (e) => {
+    if (!FM || !focusOn() || !e.target.closest) return;
+    const u = e.target.closest("[data-fm]");
+    if (u && FM.root.contains(u)) { FM.hold = Date.now() + 300; fmShow(+u.dataset.fm); }
+  });
+  // The facing pages drawn or taken away, "My marks" folding the text: cut it again.
+  new MutationObserver(() => {
+    if (!FM || FM.mo) return;
+    FM.mo = requestAnimationFrame(() => {
+      if (!FM) return;
+      FM.mo = 0;
+      const root = app.querySelector(".detail .fx-slot:not([hidden]) .fx") || app.querySelector(".detail .poem-text");
+      if (root !== FM.root || !FM.root.isConnected) fmRefresh();
+    });
+  }).observe(app, { childList: true, subtree: true });
+  window.addEventListener("hashchange", () => { FM = null; });
 
   // ---------- learn by heart ----------
   // "Learn by heart" (beside Find on a verse poem or book of 4 to 60 lines, and in the
@@ -3922,7 +5339,7 @@
     const label = m && app.querySelector(".detail .detail-subject");
     if (!label || label.dataset.form) return;
     const form = indexPoem(m[1]).form;
-    if (form) { label.dataset.form = form; label.textContent += " · " + form; }
+    if (form) { label.dataset.form = form; label.insertAdjacentHTML("beforeend", ` · <a class="form-term" href="${termHref(formTerm(form))}" title="What is ${esc(withArticle(form.toLowerCase()))}?">${esc(form)}</a>`); }
   }
   // A signed-in reader: the account's copy is pulled after the first paint (reader accounts).
   updateAccountNav();
@@ -4125,10 +5542,818 @@
         <h1 class="detail-title">${esc(title)}</h1>
         <p class="detail-author">by <a href="#/poet/${esc(lead.authorSlug)}">${esc(lead.author)}</a></p>
         ${lead.blurb ? `<p class="note-block">${esc(lead.blurb)}</p>` : ""}
+        ${GUIDES.has(group) ? `<a class="gd-box" href="#/guide/${esc(group)}"><span class="gd-box-k">Study guide</span><span class="gd-box-t">Summary, book-by-book analysis, characters, themes and critical debates</span><span aria-hidden="true">→</span></a>` : ""}
         <h2 class="section-label">${num(vs.filter((w) => w.translator).length)} translations in the archive</h2>
         ${versionsListHTML(vs)}
         <p class="vs-tip">Each book can be read beside another translation: open a book and choose “Compare side by side”.</p>
+        <p class="vs-trs" data-trp="${esc(JSON.stringify(vs.map((w) => w.translator).filter(Boolean)))}" hidden></p>
       </article>`;
+    linkTranslators();
+    restoreScroll();
+  }
+
+  // ---------- study guides: #/guide/<workGroup>[/<part>[/<n>]] ----------
+  // data/guides/<group>.json, written for the editors (first the Iliad, 19 Oct 2026): an
+  // overview, book-by-book summary and analysis, characters, themes, the critical debates,
+  // key passages (quoted from the recommended translation), questions and a bibliography.
+  // Paragraphs cite with [[bibId]], drawn as (Author year) linked to the bibliography.
+  const GUIDES = new Set(["iliad"]);
+  const GUIDE_FILES = {};
+  const GUIDE_PARTS = [["overview", "Overview"], ["books", "Book by book"], ["characters", "Characters"],
+    ["themes", "Themes & symbols"], ["debates", "Critical debates"], ["quotes", "Key passages"],
+    ["questions", "Questions"], ["bibliography", "Further reading"]];
+  function guideOf(group) {
+    if (!GUIDES.has(group)) return Promise.resolve(null);
+    return GUIDE_FILES[group] || (GUIDE_FILES[group] = fetch(`data/guides/${encodeURIComponent(group)}.json`)
+      .then((r) => (r.ok ? r.json() : null)).catch(() => { delete GUIDE_FILES[group]; return null; }));
+  }
+  const ROMAN = { I: 1, V: 5, X: 10, L: 50, C: 100 };
+  function bookNumber(title) {
+    const m = String(title || "").match(/\b(?:Book|Canto)\s+([IVXLC]+|\d+)\b/i);
+    if (!m) return 0;
+    if (/^\d+$/.test(m[1])) return +m[1];
+    let n = 0; const r = m[1].toUpperCase();
+    for (let k = 0; k < r.length; k++) { const v = ROMAN[r[k]], nx = ROMAN[r[k + 1]] || 0; n += v < nx ? -v : v; }
+    return n;
+  }
+  function guideCite(d, group, text) {
+    const bib = {};
+    (d.bibliography || []).forEach((b) => { bib[b.id] = b; });
+    return esc(text).replace(/\[\[([\w-]+)\]\]/g, (all, id) => {
+      const b = bib[id];
+      if (!b) return "";
+      const who = b.text.split(/[,.]/)[0].trim(), yr = (b.text.match(/\b(1[5-9]\d\d|20\d\d)\b(?!.*\b(1[5-9]\d\d|20\d\d)\b)/) || [""])[0];
+      return `<a class="gd-cite" href="#/guide/${esc(group)}/bibliography" title="${esc(b.text)}">(${esc(who)}${yr ? " " + yr : ""})</a>`;
+    });
+  }
+  function guideRefLink(d, ref) {
+    const m = String(ref || "").match(/(\d+)\.\d/);
+    return m && d.quoteEdition ? `<a class="gd-ref" href="#/work/${esc(d.quoteEdition)}/${+m[1] - 1}">${esc(ref)}</a>` : `<span class="gd-ref">${esc(ref || "")}</span>`;
+  }
+  async function renderGuide(group, part, n) {
+    setRoute("poems", "sub");
+    const h = location.hash;
+    if (!app.querySelector(".gd-page")) app.innerHTML = `<p class="loading">Loading…</p>`;
+    const d = await guideOf(group);
+    if (location.hash !== h) return;
+    if (!d) { app.innerHTML = `<p class="empty">There is no study guide for this work yet.</p>`; return; }
+    part = GUIDE_PARTS.some(([k]) => k === part) ? part : "overview";
+    const P = (arr) => (arr || []).map((t) => `<p>${guideCite(d, group, t)}</p>`).join("");
+    const nb = Math.min(Math.max(+n || 1, 1), d.books.length);
+    let body = "";
+    if (part === "overview") {
+      body = `<dl class="gd-glance">${(d.glance || []).map((g) => `<div><dt>${esc(g.label)}</dt><dd>${guideCite(d, group, g.value)}</dd></div>`).join("")}</dl>
+        <h2 class="gd-h">Context</h2>${P(d.context)}<h2 class="gd-h">Plot overview</h2>${P(d.plot)}`;
+    } else if (part === "books") {
+      const b = d.books[nb - 1];
+      body = `<nav class="gd-books" aria-label="Books">${d.books.map((x) => `<a href="#/guide/${esc(group)}/books/${x.n}"${x.n === nb ? ' aria-current="page"' : ""}>${x.n}</a>`).join("")}</nav>
+        <h2 class="gd-h">Book ${b.n}: ${esc(b.title)}</h2>
+        <h3 class="gd-h3">Summary</h3>${P(b.summary)}
+        <h3 class="gd-h3">Analysis</h3>${P(b.analysis)}
+        ${(b.key || []).length ? `<h3 class="gd-h3">Key passages</h3>${b.key.map((k) => `<figure class="gd-quote"><blockquote>${esc(k.quote)}</blockquote><figcaption>${guideRefLink(d, k.ref)}</figcaption>${k.note ? `<p>${guideCite(d, group, k.note)}</p>` : ""}</figure>`).join("")}` : ""}
+        <p class="gd-read">${d.quoteEdition ? `<a class="shelf-dl" href="#/work/${esc(d.quoteEdition)}/${nb - 1}">Read Book ${nb}</a>` : ""}
+          ${nb > 1 ? `<a href="#/guide/${esc(group)}/books/${nb - 1}">← Book ${nb - 1}</a>` : ""}${nb < d.books.length ? `<a href="#/guide/${esc(group)}/books/${nb + 1}">Book ${nb + 1} →</a>` : ""}</p>`;
+    } else if (part === "characters") {
+      const sides = [...new Set(d.characters.map((c) => c.side))];
+      body = sides.map((s) => `<h2 class="gd-h">${esc(s)}</h2><dl class="gd-chars">${d.characters.filter((c) => c.side === s)
+        .map((c) => `<div><dt>${esc(c.name)}</dt><dd>${guideCite(d, group, c.text)}</dd></div>`).join("")}</dl>`).join("");
+    } else if (part === "themes") {
+      body = `<h2 class="gd-h">Themes</h2>${d.themes.map((t) => `<h3 class="gd-h3">${esc(t.title)}</h3>${P(t.text)}`).join("")}
+        <h2 class="gd-h">Motifs</h2>${(d.motifs || []).map((t) => `<h3 class="gd-h3">${esc(t.title)}</h3>${P([t.text])}`).join("")}
+        <h2 class="gd-h">Symbols</h2>${(d.symbols || []).map((t) => `<h3 class="gd-h3">${esc(t.title)}</h3>${P([t.text])}`).join("")}`;
+    } else if (part === "debates") {
+      body = d.debates.map((t) => `<h2 class="gd-h">${esc(t.title)}</h2>${P(t.text)}`).join("");
+    } else if (part === "quotes") {
+      body = d.quotes.map((q) => `<figure class="gd-quote"><blockquote>${esc(q.quote)}</blockquote>
+        <figcaption>${q.who ? esc(q.who) + " · " : ""}${guideRefLink(d, q.ref)}</figcaption><p>${guideCite(d, group, q.explanation)}</p></figure>`).join("");
+    } else if (part === "questions") {
+      body = `<ol class="gd-qs">${d.questions.map((q) => `<li><p class="gd-q">${esc(q.q)}</p><details><summary>How to approach it</summary><p>${guideCite(d, group, q.hint)}</p></details></li>`).join("")}</ol>`;
+    } else {
+      body = `<ul class="gd-bib">${d.bibliography.map((b) => `<li id="gd-${esc(b.id)}">${esc(b.text)}</li>`).join("")}</ul>`;
+    }
+    setTitle(`${d.title}: study guide — ${GUIDE_PARTS.find(([k]) => k === part)[1]}`);
+    app.innerHTML = `
+      <article class="detail gd-page">
+        <div class="detail-subject">Study guide</div>
+        <h1 class="detail-title">${esc(d.title)}</h1>
+        <p class="detail-author">by ${esc(d.author)} · <a href="#/versions/${esc(group)}">Read the poem</a></p>
+        <nav class="gd-tabs" aria-label="Study guide">${GUIDE_PARTS.map(([k, label]) => `<a href="#/guide/${esc(group)}/${k}"${k === part ? ' aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
+        <div class="gd-body">${body}</div>
+        <p class="gd-foot">Written by the Poetry Codex editors. Quotations from ${d.quoteEdition && WORKS[d.quoteEdition] ? esc(trName(WORKS[d.quoteEdition].translator || "")) : "the recommended translation"}; line references are to the Greek. Updated ${esc(d.updated || "")}.</p>
+      </article>`;
+    const cur = app.querySelector(".gd-books [aria-current]");
+    if (cur) cur.scrollIntoView({ block: "nearest", inline: "center" });
+    restoreScroll();
+  }
+  // A book of a guided work opens with a line to its summary and analysis.
+  function bindGuideBox(w, i) {
+    const group = w.workGroup || w.slug;
+    if (!GUIDES.has(group)) return;
+    const s = w.sections && w.sections[i];
+    const n = bookNumber(s && s.title);
+    const head = app.querySelector(".detail > .detail-author");
+    if (!head || app.querySelector(".gd-box")) return;
+    head.insertAdjacentHTML("afterend", `<a class="gd-box" href="#/guide/${esc(group)}/${n ? "books/" + n : "overview"}">
+      <span class="gd-box-k">Study guide</span><span class="gd-box-t">${n ? `Book ${n}: summary and analysis` : "Summary, themes and critical debates"}</span><span aria-hidden="true">→</span></a>`);
+  }
+
+  // ---------- translator pages: #/translator/<slug>, #/translators ----------
+  // data/translators.json (curated by the editor): [{slug, name, match: [the translator
+  // strings exactly as the data has them], forms: [the name as those strings spell it],
+  // born, died, note, source?, sort?}]. Dates and the note come from a catalogue record or
+  // the edition, else stay empty. A joint string ("S. H. Butcher and A. Lang") lists both
+  // people; anonymous and initials-only translators have no entry, so no page and no link.
+  // Wherever a translator is named (the line under a title, the cite box, a work's page of
+  // translations) the name links to the page; before the file is in, the name is drawn plain
+  // and linked in place when it comes (linkTranslators).
+  function loadTranslators() {
+    if (!TRANSLATORS_P) {
+      TRANSLATORS_P = fetch("data/translators.json").then((r) => (r.ok ? r.json() : [])).catch(() => [])
+        .then((list) => {
+          const byString = new Map(), bySlug = new Map();
+          (Array.isArray(list) ? list : []).forEach((t) => {
+            bySlug.set(t.slug, t);
+            (t.match || []).forEach((s) => { if (!byString.has(s)) byString.set(s, []); byString.get(s).push(t); });
+          });
+          TRANSLATORS = { list: Array.isArray(list) ? list : [], bySlug, byString };
+          linkTranslators();
+          return TRANSLATORS;
+        });
+    }
+    return TRANSLATORS_P;
+  }
+  const trPeople = (s) => (TRANSLATORS && TRANSLATORS.byString.get(String(s || ""))) || [];
+  const trHref = (t) => "#/translator/" + t.slug;
+  // "Translated by Samuel Butler (1898)" with each person's name a link. text: what is shown;
+  // s: the translator string it was made from.
+  function trLinked(text, s) {
+    const spans = [];
+    trPeople(s).forEach((t) => {
+      for (const f of (t.forms && t.forms.length ? t.forms : [t.name])) {
+        const at = text.indexOf(f);
+        if (at >= 0 && !spans.some((x) => at < x.end && at + f.length > x.at)) { spans.push({ at, end: at + f.length, t }); break; }
+      }
+    });
+    spans.sort((a, b) => a.at - b.at);
+    let html = "", i = 0;
+    spans.forEach((x) => {
+      html += esc(text.slice(i, x.at)) + `<a class="tr-link" href="${trHref(x.t)}">${esc(text.slice(x.at, x.end))}</a>`;
+      i = x.end;
+    });
+    return html + esc(text.slice(i));
+  }
+  function trByHTML(s) {
+    if (!TRANSLATORS) loadTranslators();
+    return `<span class="tr-by" data-tr="${esc(s)}">${trLinked(translatedBy(s), s)}</span>`;
+  }
+  // The cite box's "Translator" row: the people behind the string, each a link; hidden until
+  // there is someone to name.
+  function trCiteHTML(s) {
+    if (!TRANSLATORS) loadTranslators();
+    return `<div class="cite-entry cite-trs"${trPeople(s).length ? "" : " hidden"}>
+          <p class="cite-style">Translator</p>
+          <p class="cite-text" data-trc="${esc(s)}">${trNamesHTML([s])}</p>
+        </div>`;
+  }
+  // Each person behind these strings once, as links: "Alexander Pope · George Chapman".
+  function trNamesHTML(strings) {
+    const seen = new Set(), out = [];
+    strings.forEach((s) => trPeople(s).forEach((t) => {
+      if (!seen.has(t.slug)) { seen.add(t.slug); out.push(`<a class="tr-link" href="${trHref(t)}">${esc(t.name)}</a>`); }
+    }));
+    return out.join(" · ");
+  }
+  // Fills in the links on the page now on screen once data/translators.json is in.
+  function linkTranslators() {
+    if (!TRANSLATORS) { loadTranslators(); return; }
+    app.querySelectorAll("[data-tr]").forEach((el) => {
+      if (!el.querySelector("a")) el.innerHTML = trLinked(translatedBy(el.dataset.tr), el.dataset.tr);
+    });
+    app.querySelectorAll("[data-trc]").forEach((el) => {
+      el.innerHTML = trNamesHTML([el.dataset.trc]);
+      const row = el.closest(".cite-trs");
+      if (row) row.hidden = !el.innerHTML;
+    });
+    app.querySelectorAll("[data-trp]").forEach((el) => {
+      let strings = [];
+      try { strings = JSON.parse(el.dataset.trp); } catch (e) { /* none */ }
+      const names = trNamesHTML(strings);
+      el.innerHTML = names ? `About the translators: ${names}` : "";
+      el.hidden = !names;
+    });
+  }
+  // Surname first, for the A–Z ("Pope, Alexander"; "Gregory, Lady"); an entry whose name
+  // does not turn round that way ("Kiang Kang-hu") gives its own `sort`.
+  const trSortName = (t) => t.sort || citeName(t.name);
+  const trDates = (t) => t.born && t.died ? `${t.born}–${t.died}` : t.died ? "died " + t.died : t.born ? "born " + t.born : "";
+  // What one person translated here: {works: [index entries], poems: [index entries]}.
+  function trHoldings(t) {
+    const mine = new Set(t.match || []);
+    return {
+      works: DATA.works.filter((w) => w.translator && mine.has(w.translator)),
+      poems: DATA.poems.filter((p) => p.translator && mine.has(p.translator)),
+    };
+  }
+  const TR_POEMS_SHOWN = 8;   // poems listed under each original author before "Show all"
+  async function renderTranslator(slug) {
+    app.innerHTML = `<p class="loading">Loading…</p>`;
+    const h = location.hash;
+    await loadTranslators();
+    if (location.hash !== h) return;
+    const t = TRANSLATORS.bySlug.get(slug);
+    if (!t) { app.innerHTML = `<p class="empty">There is no page for this translator. <a href="#/translators">All translators</a></p>`; setTitle("Translator"); return; }
+    setTitle(t.name + " · Translator");
+    const { works, poems } = trHoldings(t);
+    // Grouped by the original's author, the author with most here first.
+    const groups = new Map();
+    const group = (slug, name) => {
+      if (!groups.has(slug)) groups.set(slug, { slug, name, works: [], poems: [] });
+      return groups.get(slug);
+    };
+    works.forEach((w) => group(w.authorSlug, w.author).works.push(w));
+    poems.forEach((p) => group(p.authorSlug, p.author || (POETS[p.authorSlug] || {}).name || p.authorSlug).poems.push(p));
+    const list = [...groups.values()].sort((a, b) => (b.works.length * 50 + b.poems.length) - (a.works.length * 50 + a.poems.length)
+      || COLLATE.compare(a.name, b.name));
+    // A translator who is also a poet in the archive: a link to their own poems.
+    const own = Object.values(POETS).find((p) => (p.poemCount || p.workCount) && fold(p.name) === fold(t.name.replace(/^Sir\s+/, "")));
+    const workRow = (w) => {
+      const grouped = (w.workGroup && versionsOf(w.workGroup).length > 1);
+      const n = w.sections ? w.sections.length : 0;
+      return `<li><a href="#/work/${esc(w.slug)}"><span class="pl-title">${esc(w.title)}</span>
+          <span class="pl-sub">${esc([verYear(w) || w.year, n > 1 ? `${num(n)} parts` : ""].filter(Boolean).join(" · "))}</span></a>
+          ${grouped ? `<a class="tr-alltr" href="#/versions/${esc(w.workGroup)}">All translations of this work</a>` : ""}</li>`;
+    };
+    const poemRow = (p) => `<li><a href="#/poem/${esc(p.id)}"><span class="pl-title">${esc(p.title)}</span></a></li>`;
+    const count = [works.length && `${num(works.length)} work${works.length === 1 ? "" : "s"}`,
+                   poems.length && `${num(poems.length)} poem${poems.length === 1 ? "" : "s"}`].filter(Boolean).join(" and ");
+    app.innerHTML = `
+      <article class="detail tr-page">
+        <p class="detail-subject"><a href="#/translators">Translators</a></p>
+        <h1 class="detail-title">${esc(t.name)}</h1>
+        ${trDates(t) ? `<p class="detail-author tr-dates">${esc(trDates(t))}</p>` : ""}
+        ${t.note ? `<p class="note-block">${esc(t.note)}</p>` : ""}
+        ${t.source ? `<p class="tr-source">Dates and note from <a href="${esc(t.source)}" rel="noopener">${esc(/wikipedia\.org/.test(t.source) ? "Wikipedia" : t.source.replace(/^https?:\/\/(www\.)?/, "").split("/")[0])}</a></p>` : ""}
+        ${own ? `<p class="tr-own">Their own poems: <a href="#/poet/${esc(own.slug)}">${esc(own.name)}</a></p>` : ""}
+        <section class="tr-holdings" aria-labelledby="tr-h">
+          <h2 class="section-label" id="tr-h">Translations on Poetry Codex${count ? ` · ${count}` : ""}</h2>
+          ${list.length ? list.map((g, gi) => `
+            <section class="tr-group">
+              <h3 class="tr-author"><a href="#/poet/${esc(g.slug)}">${esc(g.name)}</a></h3>
+              ${g.works.length ? `<ul class="poem-links">${g.works.map(workRow).join("")}</ul>` : ""}
+              ${g.poems.length ? `
+                <p class="tr-pcount">${num(g.poems.length)} poem${g.poems.length === 1 ? "" : "s"}</p>
+                <ul class="poem-links tr-poems" id="tr-poems-${gi}">${g.poems.slice(0, TR_POEMS_SHOWN).map(poemRow).join("")}</ul>
+                ${g.poems.length > TR_POEMS_SHOWN ? `<div class="more-row"><button class="more-btn tr-more" type="button" data-g="${gi}" aria-controls="tr-poems-${gi}">Show all ${num(g.poems.length)}</button></div>` : ""}` : ""}
+            </section>`).join("") : `<p class="empty">Nothing by this translator is in the archive at present.</p>`}
+        </section>
+        <p class="tr-back"><a href="#/translators">All translators, A–Z</a></p>
+      </article>`;
+    app.querySelectorAll(".tr-more").forEach((b) => b.addEventListener("click", () => {
+      const g = list[+b.dataset.g], ul = document.getElementById("tr-poems-" + b.dataset.g);
+      ul.insertAdjacentHTML("beforeend", g.poems.slice(TR_POEMS_SHOWN).map(poemRow).join(""));
+      const next = ul.children[TR_POEMS_SHOWN];
+      b.parentNode.remove();
+      if (next) next.querySelector("a").focus();
+    }));
+    restoreScroll();
+  }
+  async function renderTranslators() {
+    app.innerHTML = `<p class="loading">Loading…</p>`;
+    const h = location.hash;
+    await loadTranslators();
+    if (location.hash !== h) return;
+    setTitle("Translators");
+    const counted = TRANSLATORS.list.map((t) => ({ t, k: trSortName(t), ...trHoldings(t) }))
+      .filter((x) => x.works.length || x.poems.length)
+      .sort((a, b) => COLLATE.compare(fold(a.k), fold(b.k)));
+    const letterOf = (x) => { const c = fold(x.k).charAt(0).toUpperCase(); return c >= "A" && c <= "Z" ? c : "#"; };
+    const byLetter = new Map();
+    counted.forEach((x) => { const l = letterOf(x); if (!byLetter.has(l)) byLetter.set(l, []); byLetter.get(l).push(x); });
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").concat(byLetter.has("#") ? ["#"] : []);
+    const sub = (x) => [x.works.length && `${num(x.works.length)} work${x.works.length === 1 ? "" : "s"}`,
+                        x.poems.length && `${num(x.poems.length)} poem${x.poems.length === 1 ? "" : "s"}`].filter(Boolean).join(" · ");
+    app.innerHTML = `
+      <div class="page-head"><h1 class="page-title">Translators</h1>
+        <p class="page-sub">The ${num(counted.length)} translators whose work is in the archive, by surname.</p></div>
+      <nav class="az-strip tr-az" aria-label="Translators by surname">${letters.map((l) => byLetter.has(l)
+        ? `<a class="az" href="#tr-${l === "#" ? "other" : l}" data-l="${esc(l)}">${esc(l)}</a>`
+        : `<span class="az az-none" aria-hidden="true">${esc(l)}</span>`).join("")}</nav>
+      ${[...byLetter.entries()].map(([l, xs]) => `
+        <section class="tr-letter" aria-labelledby="tr-${l === "#" ? "other" : l}">
+          <h2 class="section-label era-az" id="tr-${l === "#" ? "other" : l}" tabindex="-1">${esc(l)}</h2>
+          <ul class="poem-links tr-index">${xs.map((x) => `
+            <li><a href="${trHref(x.t)}"><span class="pl-title">${esc(x.k)}${trDates(x.t) ? ` <span class="tr-idates">${esc(trDates(x.t))}</span>` : ""}</span><span class="pl-sub">${esc(sub(x))}</span></a></li>`).join("")}</ul>
+        </section>`).join("")}`;
+    // The letters move within the page without changing its address (hash routing).
+    app.querySelectorAll(".tr-az a").forEach((a) => a.addEventListener("click", (e) => {
+      e.preventDefault();
+      const target = document.getElementById(a.getAttribute("href").slice(1));
+      if (target) { target.scrollIntoView(); target.focus({ preventScroll: true }); }
+    }));
+    restoreScroll();
+  }
+
+  // ---------- glossary of poetic terms: #/terms, #/term/<slug> ----------
+  // data/glossary.json (written by the editors): {terms: [{slug, term, also, kind, short, long,
+  // examples: [{ref, l, lines, title, author, translator?, lang?, why}], see_also, sources}]}.
+  // Each example quotes two lines (sometimes four) from a text in the archive, with `l` the
+  // lines as ?l= counts them, so "Read these lines" opens the text there and lights them.
+  // #/terms is an A–Z list with a filter box; #/term/<slug> is one term: the definition (a
+  // <dl>), its examples (each a <blockquote> with cite), see also, further reading and Print,
+  // which prints the page on its own. Neither needs the index. Links in: the Form chips on
+  // #/poems (an (i) beside each), the form named in a poem's header, and the "This line"
+  // panel ("This poem is a sonnet: what is a sonnet?"). Nothing in a poem's text is underlined.
+  function loadGlossary() {
+    if (!GLOSSARY_P) {
+      GLOSSARY_P = fetch("data/glossary.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({}))
+        .then((d) => {
+          const list = Array.isArray(d && d.terms) ? d.terms : [];
+          GLOSSARY = { list, bySlug: new Map(list.map((t) => [t.slug, t])) };
+          return GLOSSARY;
+        });
+    }
+    return GLOSSARY_P;
+  }
+  // The index's forms ("Sonnet", "Ode", "Ghazal"…) are all glossary terms under their own name;
+  // a work is an epic when isEpicWork says so.
+  const formTerm = (form) => String(form || "").toLowerCase().replace(/[^a-z]+/g, "-");
+  const termHref = (slug) => "#/term/" + slug;
+  const withArticle = (w) => (/^[aeiou]/i.test(w) ? "an " : "a ") + w;
+  const KIND_LABEL = { form: "Form", genre: "Kind of poem", stanza: "Stanza", metre: "Metre", device: "Device", theme: "Theme" };
+  async function renderTerms() {
+    app.innerHTML = `<p class="loading">Loading…</p>`;
+    const h = location.hash;
+    await loadGlossary();
+    if (location.hash !== h) return;
+    setTitle("Glossary of poetic terms");
+    const list = GLOSSARY.list.slice().sort((a, b) => COLLATE.compare(fold(a.term), fold(b.term)));
+    if (!list.length) { app.innerHTML = `<p class="empty">The glossary could not be loaded. Please try again later.</p>`; return; }
+    const letterOf = (t) => fold(t.term).charAt(0).toUpperCase();
+    const byLetter = new Map();
+    list.forEach((t) => { const l = letterOf(t); if (!byLetter.has(l)) byLetter.set(l, []); byLetter.get(l).push(t); });
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+    const q0 = (h.match(/[?&]q=([^&]*)/) || [])[1];
+    app.innerHTML = `
+      <div class="page-head"><h1 class="page-title">Glossary of poetic terms</h1>
+        <p class="page-sub">${num(list.length)} terms for forms, metres and devices, each shown at work in poems from the archive.</p></div>
+      <div class="poet-tools term-tools">
+        <nav class="az-strip" aria-label="Terms by first letter">${letters.map((l) => byLetter.has(l)
+          ? `<a class="az" href="#gl-${l}" data-l="${l}">${l}</a>`
+          : `<span class="az az-none" aria-hidden="true">${l}</span>`).join("")}</nav>
+        <div class="poet-filter term-filter">
+          <label class="visually-hidden" for="term-q">Find a term</label>
+          <input id="term-q" type="search" placeholder="Find a term…" autocomplete="off" spellcheck="false" aria-describedby="term-count">
+        </div>
+        <p class="term-count" id="term-count" aria-live="polite"></p>
+      </div>
+      ${[...byLetter.entries()].map(([l, ts]) => `
+        <section class="term-letter" aria-labelledby="gl-${l}">
+          <h2 class="section-label era-az" id="gl-${l}" tabindex="-1">${l}</h2>
+          <ul class="term-list">${ts.map((t) => `
+            <li data-hay="${esc(fold([t.term].concat(t.also || [], t.short).join(" ")))}"><a href="${termHref(t.slug)}">
+              <span class="term-name">${esc(t.term)}</span>
+              <span class="term-short">${esc(t.short)}</span></a></li>`).join("")}</ul>
+        </section>`).join("")}
+      <p class="empty term-none" hidden>No term matches. <button type="button" class="term-clear">Show all terms</button></p>`;
+    // The letters move within the page without changing its address (hash routing); a letter
+    // the filter has hidden clears the filter first.
+    app.querySelectorAll(".term-tools .az-strip a").forEach((a) => a.addEventListener("click", (e) => {
+      e.preventDefault();
+      const target = document.getElementById(a.getAttribute("href").slice(1));
+      if (target && target.closest(".term-letter").hidden) { input.value = ""; filter(); }
+      if (target) { target.scrollIntoView(); target.focus({ preventScroll: true }); }
+    }));
+    // The filter matches a term, its other names and its one-line definition, in any order of
+    // words; the query is kept in the address (replaceState) so Back returns to it.
+    const input = app.querySelector("#term-q"), count = app.querySelector("#term-count");
+    const filter = () => {
+      const words = fold(input.value).split(/\s+/).filter(Boolean);
+      let shown = 0;
+      app.querySelectorAll(".term-letter").forEach((sec) => {
+        let n = 0;
+        sec.querySelectorAll("li[data-hay]").forEach((li) => {
+          const ok = words.every((w) => li.dataset.hay.includes(w));
+          li.hidden = !ok; if (ok) n++;
+        });
+        sec.hidden = !n; shown += n;
+      });
+      app.querySelector(".term-none").hidden = shown > 0;
+      count.textContent = words.length ? `${num(shown)} term${shown === 1 ? "" : "s"}` : "";
+      const addr = "#/terms" + (input.value.trim() ? "?q=" + encodeURIComponent(input.value.trim()) : "");
+      if (location.hash !== addr) {
+        if (EARLY_DRAWN === location.hash) EARLY_DRAWN = addr;
+        history.replaceState(history.state, "", addr);
+      }
+    };
+    input.addEventListener("input", filter);
+    app.querySelector(".term-clear").addEventListener("click", () => { input.value = ""; filter(); input.focus(); });
+    if (q0) { try { input.value = decodeURIComponent(q0.replace(/\+/g, " ")); } catch (e) { /* as typed */ } filter(); }
+    restoreScroll();
+  }
+  async function renderTerm(slug) {
+    app.innerHTML = `<p class="loading">Loading…</p>`;
+    const h = location.hash;
+    await loadGlossary();
+    if (location.hash !== h) return;
+    const t = GLOSSARY.bySlug.get(slug);
+    if (!t) { setTitle("Glossary"); app.innerHTML = `<p class="empty">There is no such term in the glossary. <a href="#/terms">All terms</a></p>`; return; }
+    setTitle(t.term + " · Glossary");
+    const lines = (x) => (x.l || "").replace("-", "–");
+    const exHTML = (x) => {
+      const href = routeFor(x.ref) + (x.l ? "?l=" + x.l : "");
+      const where = x.ref.startsWith("work:") ? "/work/" + x.ref.slice(5) + "/" : "/poem/" + x.ref + "/";
+      return `<figure class="term-ex">
+          <blockquote cite="${esc(where)}"${x.lang ? ` lang="${esc(x.lang)}"` : ""}><p>${(x.lines || []).map((l) => `<span class="term-ql">${esc(l)}</span>`).join("")}</p></blockquote>
+          <figcaption>
+            <p class="term-src"><cite>${esc(x.title)}</cite>${x.author ? ` · ${esc(x.author)}` : ""}${x.translator ? ` · ${esc(translatedBy(x.translator))}` : ""}</p>
+            ${x.why ? `<p class="term-why">${esc(x.why)}</p>` : ""}
+            <p class="term-go"><a href="${esc(href)}">Read ${String(x.l || "").includes("-") ? "these lines" : "this line"} in the text<span class="visually-hidden">: ${esc(x.title)}, lines ${esc(lines(x))}</span></a> <span class="term-ln">(line${String(x.l || "").includes("-") ? "s" : ""} ${esc(lines(x))})</span></p>
+          </figcaption>
+        </figure>`;
+    };
+    const see = (t.see_also || []).map((s) => GLOSSARY.bySlug.get(s)).filter(Boolean);
+    const srcName = (u) => /wikipedia\.org/.test(u) ? "Wikipedia: " + decodeURIComponent(u.split("/wiki/")[1] || "").replace(/_/g, " ").replace(/#.*/, "")
+      : /archive\.org/.test(u) ? "Internet Archive" : u.replace(/^https?:\/\/(www\.)?/, "").split("/")[0];
+    app.innerHTML = `
+      <article class="detail term-page">
+        <p class="detail-subject"><a href="#/terms">Glossary</a> · ${esc(KIND_LABEL[t.kind] || "Term")}</p>
+        <h1 class="detail-title">${esc(t.term)}</h1>
+        <dl class="term-def">
+          <dt class="visually-hidden"><dfn>${esc(t.term)}</dfn></dt>
+          ${(t.also || []).length ? `<dd class="term-also">Also called ${t.also.map((a) => `<i>${esc(a)}</i>`).join(", ")}</dd>` : ""}
+          <dd class="term-short-def">${esc(t.short)}</dd>
+          <dd class="term-long">${String(t.long || "").split(/\n\s*\n/).map((p) => `<p>${esc(p)}</p>`).join("")}</dd>
+        </dl>
+        <p class="term-tools-row no-print"><button type="button" class="term-print">Print this term</button>
+          <a class="term-all" href="#/terms">All terms, A–Z</a></p>
+        ${(t.examples || []).length ? `
+        <section class="term-exs" aria-labelledby="term-ex-h">
+          <h2 class="section-label" id="term-ex-h">In the archive</h2>
+          ${t.examples.map(exHTML).join("")}
+        </section>` : ""}
+        ${see.length ? `
+        <section class="term-see" aria-labelledby="term-see-h">
+          <h2 class="section-label" id="term-see-h">See also</h2>
+          <ul class="term-see-list">${see.map((s) => `<li><a href="${termHref(s.slug)}">${esc(s.term)}</a></li>`).join("")}</ul>
+        </section>` : ""}
+        ${(t.sources || []).length ? `
+        <section class="term-sources" aria-labelledby="term-src-h">
+          <h2 class="section-label" id="term-src-h">Further reading</h2>
+          <ul>${t.sources.map((u) => `<li><a href="${esc(u)}" rel="noopener" target="_blank">${esc(srcName(u))}<span class="visually-hidden"> (opens a new tab)</span></a></li>`).join("")}</ul>
+        </section>` : ""}
+        <p class="term-foot print-only">poetrycodex.com/#/term/${esc(t.slug)} · Definitions written by the editors; examples from public-domain texts in the archive.</p>
+      </article>`;
+    // Print: the browser prints the page alone (the top bar, footer and buttons are hidden on paper).
+    app.querySelector(".term-print").addEventListener("click", () => window.print());
+    restoreScroll();
+  }
+  // "This poem is a sonnet: what is a sonnet?" in the "This line" panel, for a poem with a form
+  // and for a book of an epic.
+  LP_PARTS.push((info) => {
+    const id = info.entry.id || "";
+    let word = "", slug = "", what = "poem";
+    const m = /^work:([^/]+)\//.exec(id);
+    if (m) { const w = WORKS[m[1]] || (DATA && DATA.works.find((x) => x.slug === m[1])); if (w && isEpicWork(w)) { word = "epic"; slug = "epic"; what = "work"; } }
+    else { const f = indexPoem(id).form; if (f) { word = f.toLowerCase(); slug = formTerm(f); } }
+    if (!slug) return null;
+    return { title: "The form", html: `<p class="lp-form">This ${what} is ${esc(withArticle(word))}: <a href="${termHref(slug)}">what is ${esc(withArticle(word))}?</a></p>` };
+  });
+
+  // ---------- "Read with": curated echoes and paired passages ----------
+  // data/echoes.json is the editors' list of passages that answer each other (Homer's leaves
+  // and Virgil's, Hector's farewell and Aeneas' words to his son, Juno's grudge and Satan's):
+  // {pairs: [{id, kind: echo | imitation | answer | source | contrast, a, b, note, q,
+  // checked_by, checked_on}]}. A side names one text in one translation, `ref` ("work:<slug>/<i>"
+  // or a poem id), and its lines: `l` "from-to" as the page counts them (in a book with a Greek
+  // line map, Murray's Homer, the Greek lines), or `p` "from-to", paragraphs of a prose
+  // translation; `label` names it ("Aeneid 6.450–476 (Dryden)") and `first` is its opening, two
+  // lines as printed. `og` {group, part, l} gives the book and lines in the original, so the pair
+  // also shows in every other translation of that book ("in this book"). Shown three ways:
+  // (a) "Echoes" in the "This line" panel, for lines inside a side's range; (b) a "Read with"
+  // card after the text of a book or poem that has pairs (three, then "Show all"), each with
+  // the other passage's opening, the note and "Open beside"; (c) #/pair/<id>, the two passages
+  // side by side from 900px (A at left), below that a switch A · B · Both, with the note and
+  // the question above and Cite and Copy link under each; Print prints the page alone, as a
+  // handout. #/pairs lists them all. The editors write every pair and readers add none, so
+  // nothing is stored or synced.
+  let ECHOES = null, ECHOES_P = null;   // {list, byId} once data/echoes.json is in
+  let EC_PAGE = null;                   // the book or poem on screen: {id, slug, group, part}
+  const EC_KINDS = { echo: "Echo", imitation: "Imitation", answer: "Answer", source: "Source", contrast: "Contrast" };
+  const EC_SHOW = 3;
+  function loadEchoes() {
+    if (!ECHOES_P) {
+      ECHOES_P = fetch("data/echoes.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({}))
+        .then((d) => {
+          const list = (Array.isArray(d && d.pairs) ? d.pairs : []).filter((p) => p && p.id && p.a && p.b && p.a.ref && p.b.ref);
+          ECHOES = { list, byId: new Map(list.map((p) => [p.id, p])) };
+          return ECHOES;
+        });
+    }
+    return ECHOES_P;
+  }
+  // "450-476" -> [450, 476]; "12" -> [12, 12].
+  const ecRange = (s) => { const m = /^(\d+)(?:\s*[-–]\s*(\d+))?$/.exec(String(s || "").trim()); return m ? [+m[1], +(m[2] || m[1])] : null; };
+  const ecSpan = (r) => (r[0] === r[1] ? String(r[0]) : r[0] + "–" + r[1]);
+  // A part's title as a key: "Book VI", "Book Six" and "Book 6" are one book.
+  const EC_WORDS = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
+    "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four"];
+  function ecRoman(s) {
+    const v = { i: 1, v: 5, x: 10, l: 50, c: 100 };
+    let n = 0;
+    for (let k = 0; k < s.length; k++) { const a = v[s[k]], b = v[s[k + 1]] || 0; n += a < b ? -a : a; }
+    return n;
+  }
+  const ecPartKey = (t) => String(t || "").toLowerCase().replace(/[^a-z0-9:-]+/g, " ").trim()
+    .replace(/(\s|^)([ivxlc]+|\d+|[a-z]+(?:-[a-z]+)?)$/, (x, sp, w) => {
+      const n = /^\d+$/.test(w) ? +w : /^[ivxlc]+$/.test(w) ? ecRoman(w) : EC_WORDS.indexOf(w);
+      return sp + (n > 0 ? n : w);
+    });
+  // The page a text id stands for: its work's group and the part's title, from the index or
+  // from what the page itself knew (EC_PAGE).
+  function ecHere(id) {
+    if (EC_PAGE && EC_PAGE.id === id) return EC_PAGE;
+    const m = /^work:([^/]+)\/(\d+)$/.exec(id || "");
+    if (!m) return { id };
+    const w = WORKS[m[1]], s = w && w.sections && w.sections[+m[2]];
+    return { id, slug: m[1], group: w && w.workGroup, part: s && s.title };
+  }
+  // How one side of a pair stands to a text: "exact" (this very text) or "book" (another
+  // translation of the same book, through og); else null.
+  function ecHow(side, here) {
+    if (side.ref === here.id) return "exact";
+    const og = side.og;
+    return og && og.group && here.group && og.group === here.group && ecPartKey(og.part) === ecPartKey(here.part) ? "book" : null;
+  }
+  // [{pair, mine, other, how}] for a text, in the order of their lines in it.
+  function ecPairsFor(here) {
+    if (!ECHOES || !here || !here.id) return [];
+    const out = [];
+    ECHOES.list.forEach((pair) => {
+      for (const [mine, other] of [[pair.a, pair.b], [pair.b, pair.a]]) {
+        const how = ecHow(mine, here);
+        if (how) { out.push({ pair, mine, other, how }); break; }
+      }
+    });
+    const at = (x) => { const r = ecSideRange(x.mine, x.how); return r ? r[0] : Infinity; };
+    return out.map((x, k) => ({ x, k, at: at(x) })).sort((p, q) => p.at - q.at || p.k - q.k).map((y) => y.x);
+  }
+  // The lines a..b chosen in the "This line" panel, in a side's own measure: counted lines,
+  // Greek lines (a book with a line map) or paragraphs; null where it cannot be said.
+  function ecChosen(ctx, a, b, side, how) {
+    if (lpProse(ctx)) {
+      if (how === "exact" && side.p) return [a + 1, b + 1];
+      const want = how === "exact" ? side.l : side.og && side.og.l;
+      if (!want || !ctx.root.classList.contains("greek-lines")) return null;
+      const ps = ctx.root.querySelectorAll(":scope > p"), ga = ps[a] && +ps[a].dataset.n, next = ps[b + 1];
+      return ga ? [ga, next && next.dataset.n ? Math.max(ga, +next.dataset.n - 1) : ga + 999] : null;
+    }
+    if (how !== "exact" || !side.l) return null;
+    const cs = lpCounts(ctx).slice(a, b + 1).filter(Boolean);
+    return cs.length ? [cs[0], cs[cs.length - 1]] : null;
+  }
+  const ecSideRange = (side, how) => ecRange(how === "exact" ? side.l || side.p : side.og && side.og.l);
+  const ecFirstHTML = (side, cls) => (side.first || []).length
+    ? `<p class="lp-quote ${cls}">${side.first.slice(0, 2).map((t) => `<span class="lp-ql">${esc(t)}</span>`).join("")}</p>` : "";
+  // (a) "Echoes" in the "This line" panel.
+  LP_PARTS.push((info) => {
+    if (!ECHOES) return null;
+    const here = ecHere(info.entry.id);
+    const hits = ecPairsFor(here).filter((x) => {
+      const r = ecSideRange(x.mine, x.how), got = r && ecChosen(info.ctx, info.a, info.b, x.mine, x.how);
+      return got && got[0] <= r[1] && got[1] >= r[0];
+    });
+    if (!hits.length) return null;
+    const row = (x) => `<div class="ec-pi">
+        <p class="lp-par-l"><span class="ec-kind">${esc(EC_KINDS[x.pair.kind] || "Echo")}</span> · ${esc(x.other.label)}</p>
+        ${ecFirstHTML(x.other, "lp-par-q")}
+        <p class="ec-pnote">${esc(x.pair.note)}</p>
+        <p class="ec-popen"><a href="#/pair/${esc(x.pair.id)}">Open beside<span class="visually-hidden">: ${esc(x.mine.label)} and ${esc(x.other.label)}</span></a></p>
+      </div>`;
+    return { title: hits.length === 1 ? "Echo" : "Echoes", html: lpMoreList(hits, row) };
+  });
+  // (b) The "Read with" card after the text. here: {id, slug, group, part}; drawn again with
+  // the page (the index coming in redraws it), and the panel too if it is open.
+  function bindEchoes(here) {
+    EC_PAGE = here;
+    const h = location.hash;
+    // A book with a Greek line map waits for it too (applyLineMap numbers the paragraphs first).
+    Promise.all([loadEchoes(), here.slug && LINEMAPPED.has(here.slug) ? lineMapOf(here.slug) : null]).then(() => {
+      if (location.hash !== h || !app.querySelector(".cite-row") || app.querySelector(".ec-card")) return;
+      if (LP) lpRefresh();
+      const hits = ecPairsFor(here);
+      if (!hits.length) return;
+      const root = app.querySelector(".text-solo .poem-text") || app.querySelector(".poem-text");
+      // Where a side's lines stand on this page, for "lines 146–149 here" (?l= counts units).
+      const unitsHere = (x) => {
+        const r = ecSideRange(x.mine, x.how);
+        if (!root || !r) return null;
+        let idx = [];
+        if (root.classList.contains("is-prose")) {
+          const ps = [...root.querySelectorAll(":scope > p")];
+          if (x.how === "exact" && x.mine.p) idx = ps.map((p, k) => k + 1).filter((k) => k >= r[0] && k <= r[1]);
+          else if (root.classList.contains("greek-lines")) idx = ps.map((p, k) => {
+            const ga = +p.dataset.n, gb = ps[k + 1] ? Math.max(ga, +ps[k + 1].dataset.n - 1) : ga + 999;
+            return ga <= r[1] && gb >= r[0] ? k + 1 : 0;
+          }).filter(Boolean);
+        } else if (x.how === "exact") {
+          idx = [...root.querySelectorAll(".ln[data-c]")].filter((l) => +l.dataset.c >= r[0] && +l.dataset.c <= r[1]).map((l) => +l.dataset.i + 1);
+        }
+        return idx.length ? [idx[0], idx[idx.length - 1]] : null;
+      };
+      const base = h.replace(/\?.*$/, "");
+      const item = (x) => {
+        const u = unitsHere(x), r = ecSideRange(x.mine, x.how);
+        const where = u ? `<a class="ec-here" href="${esc(base)}?l=${u[0] === u[1] ? u[0] : u[0] + "-" + u[1]}">${esc(x.mine.label.replace(/\s*\([^)]*\)\s*$/, ""))} here</a>`
+          : r && x.how === "book" ? `<span class="ec-here">${esc(x.mine.og.label || x.mine.label.replace(/\s*\([^)]*\)\s*$/, ""))} in this book</span>` : "";
+        return `<li class="ec-li">
+            <p class="ec-k"><span class="ec-kind">${esc(EC_KINDS[x.pair.kind] || "Echo")}</span>${where ? ` · ${where}` : ""}</p>
+            <p class="ec-other">Read with <cite>${esc(x.other.label)}</cite></p>
+            ${ecFirstHTML(x.other, "ec-first")}
+            <p class="ec-note">${esc(x.pair.note)}</p>
+            <p class="ec-act"><a class="ec-open" href="#/pair/${esc(x.pair.id)}">Open beside<span class="visually-hidden">: ${esc(x.mine.label)} and ${esc(x.other.label)}</span></a></p>
+          </li>`;
+      };
+      const sec = document.createElement("section");
+      sec.className = "ec-card";
+      sec.setAttribute("aria-labelledby", "ec-h");
+      sec.innerHTML = `
+        <h2 class="section-label" id="ec-h">Read with</h2>
+        <p class="ec-sub">Passages the editors pair with this ${here.id.startsWith("work:") ? "book" : "poem"}: echoes, imitations and answers, to open side by side.</p>
+        <ul class="ec-list">${hits.slice(0, EC_SHOW).map(item).join("")}</ul>
+        ${hits.length > EC_SHOW ? `<ul class="ec-list ec-rest" hidden tabindex="-1">${hits.slice(EC_SHOW).map(item).join("")}</ul>
+          <button type="button" class="ec-all">Show all ${num(hits.length)}</button>` : ""}`;
+      app.querySelector(".cite-row").before(sec);
+      const all = sec.querySelector(".ec-all");
+      if (all) all.addEventListener("click", () => { const rest = sec.querySelector(".ec-rest"); rest.hidden = false; all.remove(); rest.focus(); });
+    });
+  }
+  // One side's text: the lines it names, cut from its book or poem as the page prints them
+  // ({html, units: [a, b] for ?l=, loc for a citation, cite, href, title, by, part}).
+  async function ecPassage(side) {
+    const m = /^work:([^/]+)\/(\d+)$/.exec(side.ref), pm = /^([\w-]+)\/(\d+)$/.exec(side.ref);
+    let text = "", o = {};
+    if (m) {
+      const w = await loadSectionPage(m[1], +m[2]), s = w && w.sections[+m[2]];
+      if (!s || !s.text) throw new Error("missing");
+      text = s.text;
+      o = { author: w.author, authorSlug: w.authorSlug, translator: w.translator || "", title: w.title, part: w.sections.length > 1 ? s.title : "",
+            path: `/work/${m[1]}/${m[2]}/`, href: `#/work/${m[1]}/${m[2]}`, slug: m[1], i: +m[2], year: w.year };
+    } else if (pm) {
+      const f = await loadPoemPage(pm[1], +pm[2]), p = f && f.poems[+pm[2]];
+      if (!p || !p.text) throw new Error("missing");
+      text = p.text;
+      o = { author: p.author || (POETS[pm[1]] || {}).name || "", authorSlug: pm[1], translator: p.translator || "", title: p.title, part: "",
+            path: `/poem/${pm[1]}/${pm[2]}/`, href: `#/poem/${pm[1]}/${pm[2]}` };
+    } else throw new Error("bad ref");
+    const prose = isProse(text, o.translator), box = document.createElement("div");
+    box.innerHTML = poemHTML(text, prose);
+    const r = ecRange(side.l || side.p);
+    if (!r) throw new Error("no lines");
+    let units = [], keep = [], greek = false;
+    if (prose) {
+      const ps = [...box.querySelectorAll(":scope > p")];
+      if (side.p) keep = ps.map((p, k) => (k + 1 >= r[0] && k + 1 <= r[1] ? k : -1)).filter((k) => k >= 0);
+      else if (m && LINEMAPPED.has(m[1])) {
+        const nums = (await lineMapOf(m[1]))[m[2]];
+        if (Array.isArray(nums) && nums.length === ps.length) {
+          greek = true;
+          ps.forEach((p, k) => { p.dataset.n = nums[k]; });
+          keep = ps.map((p, k) => (nums[k] <= r[1] && (k + 1 < nums.length ? Math.max(nums[k], nums[k + 1] - 1) : nums[k] + 999) >= r[0] ? k : -1)).filter((k) => k >= 0);
+        }
+      }
+      units = keep.length ? [keep[0] + 1, keep[keep.length - 1] + 1] : [];
+      o.html = keep.map((k) => ps[k].outerHTML).join("");
+      o.loc = greek ? `lines ${ecSpan(r)}` : `${r[0] === r[1] ? "para." : "paras."} ${ecSpan(r)}`;
+    } else {
+      const ls = [...box.querySelectorAll(".ln[data-i]")];
+      const a = ls.findIndex((l) => +l.dataset.c >= r[0]);
+      let b = -1;
+      ls.forEach((l, k) => { if (+l.dataset.c && +l.dataset.c <= r[1]) b = k; });
+      if (a < 0 || b < a) throw new Error("lines");
+      keep = ls.slice(a, b + 1);
+      if (!keep[0].dataset.n && keep[0].dataset.c) keep[0].dataset.n = keep[0].dataset.c;   // the first line carries its number
+      // The lines kept in their stanzas.
+      const st = [];
+      keep.forEach((l) => { const p = l.closest(".stanza"); if (!st.length || st[st.length - 1].p !== p) st.push({ p, ls: [] }); st[st.length - 1].ls.push(l); });
+      o.html = st.map((x) => `<p class="stanza">${x.ls.map((l) => l.outerHTML + "<br>").join("")}</p>`).join("");
+      units = [+keep[0].dataset.i + 1, +keep[keep.length - 1].dataset.i + 1];
+      o.loc = r[0] === r[1] ? `line ${r[0]}` : `lines ${ecSpan(r)}`;
+    }
+    if (!o.html) throw new Error("lines");
+    o.prose = prose; o.greek = greek;
+    o.lang = textLangAttr(o.authorSlug, o.translator, text, side.ref);
+    o.lineHref = o.href + (units.length ? "?l=" + (units[0] === units[1] ? units[0] : units[0] + "-" + units[1]) : "");
+    o.cite = { author: o.author, work: m ? o.title : "", title: m ? o.part : o.title, translator: o.translator, path: o.path, loc: o.loc };
+    return o;
+  }
+  // (c) #/pair/<id>: the two passages side by side.
+  async function renderPair(id) {
+    app.innerHTML = `<p class="loading">Loading…</p>`;
+    const h = location.hash;
+    await loadEchoes();
+    if (location.hash !== h) return;
+    const pair = ECHOES.byId.get(id);
+    if (!pair) { setTitle("Read with"); app.innerHTML = `<p class="empty">There is no such pair. <a href="#/pairs">All paired passages</a></p>`; return; }
+    const got = await Promise.all([pair.a, pair.b].map((s) => ecPassage(s).catch(() => null)));
+    if (location.hash !== h) return;
+    const kind = EC_KINDS[pair.kind] || "Echo";
+    const title = pair.title || `${pair.a.label.replace(/\s*\([^)]*\)\s*$/, "")} and ${pair.b.label.replace(/\s*\([^)]*\)\s*$/, "")}`;
+    setTitle(title + " · Read with");
+    const col = (side, o, ab) => {
+      const name = `Passage ${ab}: ${side.label}`;
+      if (!o) return `<section class="pair-col" data-ab="${ab}" aria-label="${esc(name)}">
+          <p class="pair-lbl"><span class="pair-ab" aria-hidden="true">${ab}</span>${esc(side.label)}</p>
+          <p class="empty">This passage could not be loaded. Check your connection and try again.</p></section>`;
+      const c = citations(o.cite)[0];
+      return `<section class="pair-col" data-ab="${ab}" aria-label="${esc(name)}">
+          <p class="pair-lbl"><span class="pair-ab" aria-hidden="true">${ab}</span>${esc(side.label)}</p>
+          <p class="pair-src">${esc([o.author, o.translator && translatorShort(o.translator), o.part ? o.title + ", " + o.part : o.title].filter(Boolean).join(" · "))}</p>
+          <div class="poem-text pair-text numbered${o.prose ? " is-prose" : ""}"${o.lang || ""}>${o.html}</div>
+          ${o.greek ? `<p class="pair-gnote">Greek line numbers: where each paragraph begins, to the nearest five lines.</p>` : ""}
+          <div class="pair-acts no-print">
+            <a class="pair-go" href="${esc(o.lineHref)}">Read in the whole ${o.part ? "book" : "poem"}<span class="visually-hidden">: ${esc(side.label)}</span></a>
+            <button type="button" class="pair-cite" aria-expanded="false" aria-controls="pair-cite-${ab}">Cite<span class="visually-hidden"> passage ${ab}</span></button>
+            <button type="button" class="pair-link" data-url="${esc(SITE + "/" + o.lineHref)}">Copy link<span class="visually-hidden"> to passage ${ab}</span></button>
+          </div>
+          <div class="pair-cite-box" id="pair-cite-${ab}" hidden>
+            <p class="cite-style">MLA</p>
+            <p class="cite-text">${c.html}</p>
+            <button type="button" class="cite-copy pair-cite-copy">Copy</button>
+          </div>
+          <p class="print-only pair-cite-print">${c.html}</p>
+        </section>`;
+    };
+    app.innerHTML = `
+      <article class="detail pair-page">
+        <p class="detail-subject"><a href="#/pairs">Read with</a> · ${esc(kind)}</p>
+        <h1 class="detail-title">${esc(title)}</h1>
+        <div class="pair-note">
+          <p>${esc(pair.note)}</p>
+          ${pair.q ? `<p class="pair-q"><span class="pair-q-l">A question</span> ${esc(pair.q)}</p>` : ""}
+        </div>
+        <div class="pair-switch no-print" role="group" aria-label="Which passage to show">
+          <button type="button" data-v="a" aria-pressed="false">A</button>
+          <button type="button" data-v="b" aria-pressed="false">B</button>
+          <button type="button" data-v="both" aria-pressed="true">Both</button>
+        </div>
+        <div class="pair-cols" data-view="both">
+          ${col(pair.a, got[0], "A")}
+          ${col(pair.b, got[1], "B")}
+        </div>
+        <p class="pair-checked">${pair.checked_on ? `Checked against both texts by the editors, ${esc(pair.checked_on)}. ` : ""}Line numbers are the edition's own as this archive prints it; where a translation is named, the original's lines are in its label.</p>
+        <p class="term-tools-row no-print"><button type="button" class="term-print pair-print">Print this pair</button>
+          <button type="button" class="term-print pair-copy">Copy link to this pair</button>
+          <a class="term-all" href="#/pairs">All paired passages</a></p>
+        <p class="print-only pair-foot">poetrycodex.com/#/pair/${esc(pair.id)} · Paired and annotated by the editors of Poetry Codex; public-domain texts.</p>
+      </article>`;
+    // Below 900px one passage or both, stacked; the choice lasts for the visit.
+    const cols = app.querySelector(".pair-cols");
+    const view = (v) => {
+      cols.dataset.view = v;
+      app.querySelectorAll(".pair-switch button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === v)));
+    };
+    app.querySelectorAll(".pair-switch button").forEach((b) => b.addEventListener("click", () => view(b.dataset.v)));
+    app.querySelectorAll(".pair-col").forEach((sec) => {
+      const t = sec.querySelector(".pair-cite"), box = sec.querySelector(".pair-cite-box");
+      if (t) t.addEventListener("click", () => { box.hidden = !box.hidden; t.setAttribute("aria-expanded", String(!box.hidden)); });
+      const cp = sec.querySelector(".pair-cite-copy");
+      if (cp) cp.addEventListener("click", () => {
+        const txt = sec.querySelector(".pair-cite-box .cite-text");
+        copyText(txt.textContent, txt.innerHTML, txt).then(() => flash(cp, "Copied"), () => flash(cp, "Press Ctrl+C"));
+      });
+      const ln = sec.querySelector(".pair-link");
+      if (ln) ln.addEventListener("click", () => copyText(ln.dataset.url).then(() => flash(ln, "Link copied"), () => flash(ln, ln.dataset.url)));
+    });
+    const pc = app.querySelector(".pair-copy");
+    pc.addEventListener("click", () => copyText(SITE + "/#/pair/" + pair.id).then(() => flash(pc, "Link copied"), () => flash(pc, SITE + "/#/pair/" + pair.id)));
+    // Print: the page alone (top bar, footer, switch and buttons hidden), both passages stacked.
+    app.querySelector(".pair-print").addEventListener("click", () => window.print());
+    restoreScroll();
+  }
+  // #/pairs: every pair, by the work its first passage is in.
+  async function renderPairs() {
+    app.innerHTML = `<p class="loading">Loading…</p>`;
+    const h = location.hash;
+    await loadEchoes();
+    if (location.hash !== h) return;
+    setTitle("Read with: paired passages");
+    const groups = new Map();
+    ECHOES.list.forEach((p) => {
+      // "Iliad 6.146–149 (Murray)" -> Iliad; "Horace, Odes 3.30" -> Horace; "The Faerie Queene I.i.14" -> The Faerie Queene.
+      const g = String(p.a.label).replace(/\s*\([^)]*\)\s*$/, "").split(/[,:]|\s\d|\s[IVXL]+\.|\s'/)[0].trim() || "Other";
+      if (!groups.has(g)) groups.set(g, []);
+      groups.get(g).push(p);
+    });
+    app.innerHTML = `
+      <div class="page-head"><h1 class="page-title">Read with</h1>
+        <p class="page-sub">${num(ECHOES.list.length)} passages paired by the editors: where one poet echoes, imitates or answers another. Each opens side by side, with a note and a question.</p></div>
+      ${ECHOES.list.length ? [...groups.entries()].map(([g, ps], k) => `
+        <section class="ec-group" aria-labelledby="ec-g-${k}">
+          <h2 class="section-label" id="ec-g-${k}">${esc(g)}</h2>
+          <ul class="ec-index">${ps.map((p) => `
+            <li><a href="#/pair/${esc(p.id)}"><span class="ec-ix-t">${esc(p.a.label)} <span class="ec-ix-w">with</span> ${esc(p.b.label)}</span>
+              <span class="ec-ix-k">${esc(EC_KINDS[p.kind] || "Echo")}</span></a></li>`).join("")}</ul>
+        </section>`).join("") : `<p class="empty">The paired passages could not be loaded. Please try again later.</p>`}`;
     restoreScroll();
   }
 
@@ -4311,6 +6536,17 @@
       });
       return;
     }
+    // A reading plan needs only the list of works (and, once drawn, the work's own file).
+    if (/^#\/plan(?:$|\?)/.test(h)) {
+      setRoute("", "sub");
+      app.innerHTML = `<p class="loading">Loading…</p>`;
+      loadWorks().then((ok) => {
+        if (location.hash !== h || DATA) return;
+        if (ok) { EARLY_DRAWN = h; EARLY_REDRAW = false; setRoute("", "sub"); jumpTo(st ? st.y : 0); renderPlan(); }
+        else { loadIndex(); app.innerHTML = INDEX_ERROR ? indexErrorHTML() : `<p class="loading">Opening the archive…</p>`; }
+      });
+      return;
+    }
     // The reader's notes and highlights need only the texts they are on.
     if (/^#\/notes(?:$|[?/])/.test(h)) { setRoute("shelf", "sub"); jumpTo(st ? st.y : 0); renderNotes(); return; }
     loadIndex();
@@ -4319,12 +6555,39 @@
     app.innerHTML = INDEX_ERROR ? indexErrorHTML() : `<p class="loading">Opening the archive…</p>`;
   }
   function route() {
+    metaCitation(null);   // a poem or book page sets its own again once drawn
     if (READING_NOW) { clearTimeout(readingTimer); noteReading(); READING_NOW = null; }
     {
       const h0 = location.hash || "", st0 = history.state && typeof history.state.y === "number" ? history.state : null;
       let m0;
       if ((m0 = h0.match(/^#\/search(?:\?q=(.*))?$/))) { restoreY = st0 ? st0.y : 0; jumpTo(0); renderSearch(decodeURIComponent((m0[1] || "").replace(/\+/g, " "))); return; }
       if ((m0 = h0.match(/^#\/versions\/([\w-]+)$/))) { restoreY = st0 ? st0.y : 0; jumpTo(0); renderVersions(m0[1]); return; }
+      if ((m0 = h0.match(/^#\/guide\/([\w-]+)(?:\/([\w-]+)(?:\/(\d+))?)?$/))) { restoreY = st0 ? st0.y : 0; jumpTo(0); renderGuide(m0[1], m0[2] || "overview", m0[3]); return; }
+      // The glossary needs only data/glossary.json; drawn before the index, it stays as it is
+      // when the index comes (EARLY_DRAWN), so a reader is not sent back to the top.
+      if (/^#\/terms(?:\?q=[^&]*)?$/.test(h0) || (m0 = h0.match(/^#\/term\/([\w-]+)$/))) {
+        setRoute("", "sub"); restoreY = st0 ? st0.y : 0; jumpTo(0);
+        if (!DATA) { EARLY_DRAWN = h0; EARLY_REDRAW = false; }
+        if (m0) renderTerm(m0[1]); else renderTerms();
+        updateShelfNav();
+        return;
+      }
+      // "Read with": a pair and the list of pairs need only data/echoes.json and the two texts.
+      if ((m0 = h0.match(/^#\/pair\/([\w-]+)$/)) || h0 === "#/pairs") {
+        setRoute("", "sub"); restoreY = st0 ? st0.y : 0; jumpTo(0);
+        if (!DATA) { EARLY_DRAWN = h0; EARLY_REDRAW = false; }
+        if (m0) renderPair(m0[1]); else renderPairs();
+        updateShelfNav();
+        return;
+      }
+      // The who's who needs only data/people/ (and, for a card's lines, the list of works).
+      if ((m0 = h0.match(/^#\/person\/([\w-]+)\/([\w-]+)(?:\?w=([\w-]+))?$/)) || (m0 = h0.match(/^#\/people\/([\w-]+)$/))) {
+        setRoute("", "sub"); restoreY = st0 ? st0.y : 0; jumpTo(0);
+        if (!DATA) { EARLY_DRAWN = h0; EARLY_REDRAW = false; }
+        if (h0.startsWith("#/person/")) renderPerson(m0[1], m0[2], m0[3] || ""); else renderPeople(m0[1]);
+        updateShelfNav();
+        return;
+      }
       if ((m0 = h0.match(/^#\/surprise(?:\?([\w=&-]*))?$/))) { setRoute("poems", "sub"); jumpTo(0); renderSurprise(m0[1] || ""); return; }
       // an old link to the archive with a search goes to the results page
       if ((m0 = h0.match(/^#\/poems\?(?:.*&)?q=([^&]+)/))) { location.replace("#/search?q=" + m0[1]); return; }
@@ -4367,11 +6630,14 @@
     else if ((m = h.match(/^#\/work\/([\w-]+)(?:\?list=\d+)?$/))) { setRoute("poems", "sub"); renderWork(m[1]); }
     else if ((m = h.match(/^#\/poet\/([\w-]+)$/))) { setRoute("poets", "sub"); renderPoet(m[1]); }
     else if ((m = h.match(/^#\/category\/([\w-]+)$/))) { setRoute("eras", "sub"); renderCategory(m[1]); }
+    else if ((m = h.match(/^#\/translator\/([\w-]+)$/))) { setRoute("poets", "sub"); renderTranslator(m[1]); }
+    else if (h === "#/translators") { setRoute("poets", "sub"); renderTranslators(); }
     else if (h.startsWith("#/poets")) { setRoute("poets", "sub"); renderPoets(); }
     else if (h.startsWith("#/topics")) { setRoute("topics", "sub"); renderTopics(); }
     else if (h.startsWith("#/about")) { setRoute("about", "sub"); renderAbout(); }
     else if (h.startsWith("#/shelf")) { setRoute("shelf", "sub"); renderShelf(); }
     else if (h.startsWith("#/list")) { setRoute("", "sub"); renderReadingList(); }
+    else if (/^#\/plan(?:$|\?)/.test(h)) { setRoute("", "sub"); renderPlan(); }
     else if (h.startsWith("#/notes")) { setRoute("shelf", "sub"); renderNotes(); }
     else if (h.startsWith("#/account")) { setRoute("account", "sub"); renderAccount(); }
     else if (h.startsWith("#/oracle")) { setRoute("oracle", "sub"); renderOracle(); }
@@ -4764,6 +7030,7 @@
           <span class="d-go">${ORACLE_LIVE ? "Consult &rarr;" : "Resting"}</span>
         </a>
       </div>
+      ${homePlanHTML()}
       ${homeReadingHTML()}
       ${reviewSlotHTML("home")}
       ${potd}
@@ -4933,6 +7200,7 @@
   // Forms (B3): build_index.py gives a poem a `form` when its title names one ("Sonnet 18",
   // "Ode to Psyche", "Tam Samson's Elegy") or, for sonnets, when it has the sonnet's shape
   // (14 lines as 8 + 6 or 4 + 4 + 3 + 3). An index built before that has no forms and no row.
+  // Each form chip has an (i) beside it, a link to the form in the glossary (#/term/<form>).
   const FORM_PLURAL = { Sonnet: "Sonnets", Ode: "Odes", Ballad: "Ballads", Elegy: "Elegies", Hymn: "Hymns",
     Song: "Songs", Riddle: "Riddles", Epigram: "Epigrams", Epitaph: "Epitaphs", Ghazal: "Ghazals" };
   let FORM_COUNTS = null;
@@ -4960,8 +7228,9 @@
     const forms = formCounts();
     const formChips = forms.length ? `<div class="chips form-chips" role="group" aria-label="Form"><span class="chips-lbl">Form</span>`
       + [`<button class="chip ${filterForm === "All" ? "active" : ""}" data-form="All">Any form</button>`]
-        .concat(forms.map((f) => `<button class="chip ${filterForm === f.name ? "active" : ""}" data-form="${esc(f.name)}">${esc(formLabel(f.name))}<span class="n">${num(f.count)}</span></button>`)).join("")
-      + `</div>` : "";
+        .concat(forms.map((f) => `<span class="chip-pair"><button class="chip ${filterForm === f.name ? "active" : ""}" data-form="${esc(f.name)}">${esc(formLabel(f.name))}<span class="n">${num(f.count)}</span></button>`
+          + `<a class="chip-info" href="${termHref(formTerm(f.name))}" title="What is ${esc(withArticle(f.name.toLowerCase()))}?"><span aria-hidden="true">i</span><span class="visually-hidden">What is ${esc(withArticle(f.name.toLowerCase()))}? (glossary)</span></a></span>`)).join("")
+      + `<a class="chips-more" href="#/terms">Glossary of poetic terms</a></div>` : "";
     const what = filterForm !== "All" ? formLabel(filterForm) : "Poems";
 
     setTitle(query ? `\u201c${query}\u201d \u2014 Search` : filterSubject !== "All" ? `${what} on ${filterSubject}` : filterForm !== "All" ? what : "All poems");
@@ -5077,7 +7346,8 @@
     if (!counts[letter]) letter = letters.find((l) => counts[l]) || "A";
     setTitle("Poets");
     app.innerHTML = `
-      <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">${num(all.length)} poets from Homer to the early twentieth century, by surname.</p></div>
+      <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">${num(all.length)} poets from Homer to the early twentieth century, by surname.</p>
+        <p class="tr-also"><a href="#/translators">The translators, A–Z</a></p></div>
       <div class="poet-tools">
         <nav class="az-strip" aria-label="Poets by surname">${letters.map((l) => counts[l]
           ? `<a class="az" href="#/poets?l=${encodeURIComponent(l)}" data-l="${esc(l)}">${esc(l)}</a>`
@@ -5197,6 +7467,7 @@
     const worksHTML = works.length ? `
         <section class="poet-poems">
           <h2>Major Works</h2>
+          <p class="plan-make-row"><a class="shelf-dl" href="#/plan?w=${esc(works.reduce((a, b) => (b.sections.length > a.sections.length ? b : a)).slug)}">Make a reading plan</a></p>
           <ul class="poem-links">
             ${works.map((w) => `
               <li><a href="#/work/${esc(w.slug)}"><span class="pl-title">${esc(w.title)}${w.translator ? ` <span class="pl-tr">${esc(translatorShort(trName(w.translator)))}</span>` : ""}${recBadge(w)}</span><span class="pl-sub">${esc(w.type)} · ${esc(w.year)} · ${num(w.sections.length)} part${w.sections.length === 1 ? "" : "s"}</span></a></li>`).join("")}
@@ -5326,7 +7597,9 @@
         ${otherTrHTML(w)}
         ${place ? `<div class="continue-wrap">${continueHTML(w)}
           <button class="continue-forget" type="button">Forget my place</button></div>` : ""}
-        <div class="cite-row toc-tools">${shelfButtonHTML(entry)}${offlineHTML("work:" + slug)}</div>
+        ${workPlanHTML(slug)}
+        <div class="cite-row toc-tools">${shelfButtonHTML(entry)}${offlineHTML("work:" + slug)}
+          <a class="shelf-dl plan-make-link" href="#/plan?${planOf(slug) ? esc(planOf(slug).link) : "w=" + esc(slug)}">${planOf(slug) ? "Your reading plan" : "Make a reading plan"}</a></div>
         <p class="shelf-msg" hidden>${VISIT_ONLY}</p>
         <hr class="rule">
         <p class="section-label">Contents · ${num(w.sections.length)} part${w.sections.length === 1 ? "" : "s"}</p>
@@ -5339,12 +7612,25 @@
         </ul>
       </article>`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/poet/" + w.authorSlug; });
+    metaCitation({ author: w.author, work: w.title, title: "", translator: w.translator, path: `/work/${slug}/`,
+                   year: citeYear(w.translator, w.year), lang: citeLang(w.authorSlug, w.translator) });
     bindShelfButton(entry);
     bindOffline(workTitle(w));
     bindListNext();
     bindContinue();
     const forget = app.querySelector(".continue-forget");
     if (forget) forget.addEventListener("click", () => { forgetReading(slug); renderWork(slug); });
+    // A work with a who's who links to it beside the reading plan.
+    const here = location.hash;
+    peopleOf(w.workGroup).then((d) => {
+      const row = app.querySelector(".toc-tools");
+      if (!d || location.hash !== here || !row || row.querySelector(".pp-toc")) return;
+      row.insertAdjacentHTML("beforeend", `<a class="shelf-dl pp-toc" href="#/people/${esc(d.group)}">Who’s who</a>`);
+    });
+    if (GUIDES.has(w.workGroup)) {
+      const row = app.querySelector(".toc-tools");
+      if (row) row.insertAdjacentHTML("afterbegin", `<a class="shelf-dl gd-toc" href="#/guide/${esc(w.workGroup)}">Study guide</a>`);
+    }
   }
 
   // ---------- WORK: one section (canto) reader ----------
@@ -5369,7 +7655,8 @@
     const s = w.sections[i];
     const wt = WORKS[slug] ? workTitle(WORKS[slug]) : `${w.title} — ${w.author}`;
     const cite = { author: w.author, work: w.title, title: w.sections.length > 1 ? s.title : "",
-                   translator: w.translator, path: `/work/${slug}/${i}/` };
+                   translator: w.translator, path: `/work/${slug}/${i}/`,
+                   year: citeYear(w.translator, w.year), lang: citeLang(w.authorSlug, w.translator) };
     const entry = { id: "work:" + slug + "/" + i, kind: "part", author: w.author, translator: w.translator || "",
                     title: w.sections.length > 1 ? w.title + " · " + s.title : w.title };
     const par = workParList(slug, i, w);
@@ -5393,7 +7680,7 @@
         ${otherTrHTML(WORKS[slug], i)}
         <hr class="rule">
         ${enginePanel(s.text, { gloss: true })}
-        ${poemBlock(s.text, { translator: w.translator, lang: langAttr(w.authorSlug, w.translator), work: true,
+        ${poemBlock(s.text, { translator: w.translator, lang: textLangAttr(w.authorSlug, w.translator, s.text, "work:" + slug), work: true,
                               parallel: parCtlHTML("works", slug, par) })}
         <p class="book-source-slot" hidden></p>
         ${citeHTML(cite, entry)}
@@ -5414,6 +7701,10 @@
     bindFacing({ kind: "work", key: "w:" + slug, list: par, build: (e, other) => workFacing(w, slug, i, other, e),
                  onShow: (el) => { if (READING_NOW && READING_NOW.slug === slug) { READING_NOW.el = el; drawProgress(); } } });
     bindCite(cite);
+    metaCitation(cite);
+    bindPrint({ cite, entry, title: s.title, author: w.author, authorSlug: w.authorSlug, translator: w.translator,
+                work: w.title, year: w.year, part: w.sections.length > 1 ? s.title : "",
+                kicker: `${w.title}${w.year ? " · " + w.year : ""}` });
     { const here = location.hash; fetchSources(w.authorSlug).then((d) => applySource(cite, d && d.works && d.works[slug], here)); }
     bindShelfButton(entry);
     bindListNext();
@@ -5440,8 +7731,12 @@
     noteRecent({ id: "work:" + slug, kind: "work", i, part: w.sections.length > 1 ? s.title : "", title: named, author: w.author });
     drawProgress();
     showLinkedLines();
-    bindLearn({ entry, text: s.text, translator: w.translator, lang: langAttr(w.authorSlug, w.translator), par: [] });
+    bindLearn({ entry, text: s.text, translator: w.translator, lang: textLangAttr(w.authorSlug, w.translator, s.text, "work:" + slug), par: [] });
     bindReadingBar({ contents: "#/work/" + slug });
+    bindSpeakers(slug, i);
+    bindPeople(w, slug, i);
+    bindGuideBox(w, i);
+    bindEchoes({ id: entry.id, slug, group: w.workGroup || (WORKS[slug] || {}).workGroup, part: s.title });
   }
 
   // How long a book or canto is, for the contents list: "about 540 lines" for verse (exact
@@ -5453,6 +7748,735 @@
     if (!s.lines) return "";
     if (s.lines < 100) return `${s.lines} line${s.lines === 1 ? "" : "s"}`;
     return `about ${Math.round(s.lines / 10) * 10} lines`;
+  }
+
+  // ---------- Speakers: who speaks which lines of a verse play ----------
+  // A book of a play listed in data/speakers/index.json (made by build_speakers.py from the
+  // speaker labels printed in the text and an editor's cast list, data/speakers/_works.json)
+  // gets "Speakers" beside "Line numbers" and in the phone's reading bar. It opens the cast:
+  // the lines each speaks in this part and in the whole play, and the chorus's share as a
+  // plain bar with its number. Choosing someone follows them: the other speeches fade to 40%
+  // (not hidden), and a bar above the text offers "Previous" and "Next speech by …" (n and p
+  // from the keyboard) and "Hide the others", which folds the other speeches into rows
+  // ("Chorus, 24 lines") that open again when pressed. The labels are set in small capitals
+  // (.spk) and read out as "… speaks:". Counts leave out the labels and stage directions in
+  // brackets. The data names lines by poemHTML's data-i and carries each part's number of
+  // lines, so a part whose text has changed since gets nothing. Where a translator gives one
+  // label to two speakers, his label stands. The rows, like "My marks", are empty buttons drawn
+  // by the stylesheet (data-label), so the text's offsets are untouched. The speaker followed
+  // is kept for this visit only, per work (SPK_STATE), and nowhere else.
+  let SPK_LIST = null;          // Promise of data/speakers/index.json
+  const SPK_FILES = {};         // work slug -> Promise of data/speakers/<slug>.json
+  const SPK_STATE = new Map();  // work slug -> {who, hide, open: Set of folded stretches opened}
+  let SPK = null;               // {slug, i, d, root, lines, runs} for the part on screen
+  function speakersOf(slug) {
+    if (!SPK_LIST) SPK_LIST = fetch("data/speakers/index.json").then((r) => r.ok ? r.json() : {})
+      .catch(() => { SPK_LIST = null; return {}; });
+    return SPK_LIST.then((list) => {
+      if (!list || !list[slug]) return null;
+      return SPK_FILES[slug] || (SPK_FILES[slug] = fetch(`data/speakers/${slug}.json`).then((r) => r.ok ? r.json() : null)
+        .catch(() => { delete SPK_FILES[slug]; return null; }));
+    });
+  }
+  const spkState = (slug) => SPK_STATE.get(slug) || SPK_STATE.set(slug, { who: "", hide: false, open: new Set() }).get(slug);
+  const spkName = (id) => ((SPK && SPK.d.cast.find((c) => c.id === id)) || { label: id }).label;
+  const spkSum = (o) => Object.values(o || {}).reduce((a, b) => a + b, 0);
+  // Every part's counts added up: {castId: lines in the whole play}.
+  function spkPlay(d) {
+    const out = {};
+    Object.values(d.lines || {}).forEach((o) => Object.keys(o).forEach((k) => { out[k] = (out[k] || 0) + o[k]; }));
+    return out;
+  }
+  // A line that counts: not a label alone, not a stage direction in brackets.
+  const spkCounts = (l) => { const t = l.textContent.trim(); return !!t && !/^[[(].*[\])]\.?$/.test(t) && !l.classList.contains("spk-only"); };
+  function bindSpeakers(slug, i) {
+    SPK = null;
+    const here = location.hash;
+    speakersOf(slug).then((d) => {
+      if (!d || location.hash !== here || !d.sections || !d.sections[i]) return;
+      const root = app.querySelector(".detail .text-solo .poem-text") || app.querySelector(".detail .poem-text");
+      if (!root || root.classList.contains("is-prose") || root.dataset.spk) return;
+      const lines = [...root.querySelectorAll(".ln[data-i]")];
+      if (lines.length !== (d.count || {})[i]) return;     // the text has changed since the data was made
+      root.dataset.spk = "1";
+      // The labels: small capitals, and "speaks:" for a screen reader (styles.css .spk::after).
+      (d.labels[i] || []).forEach(([k, n]) => {
+        const l = lines[k];
+        if (!l) return;
+        wrapSpan(hlNodes(l), 0, n, () => { const s = document.createElement("span"); s.className = "spk"; return s; });
+        if (l.textContent.trim().length <= n) l.classList.add("spk-only");
+      });
+      const runs = d.sections[i].map(([a, b, id], k) => ({ a, b, id, k }));
+      runs.forEach((r) => { for (let x = r.a; x <= r.b && x < lines.length; x++) lines[x].dataset.spk = r.k; });
+      SPK = { slug, i, d, root, lines, runs };
+      spkControls();
+      spkApply();
+    });
+  }
+  // "Speakers" beside "Line numbers", and in the phone's reading bar.
+  function spkControls() {
+    const text = SPK.root.closest(".text-solo") || SPK.root;
+    let row = app.querySelector("article.detail .ln-bar");
+    if (!row) { row = document.createElement("div"); row.className = "ln-bar"; text.before(row); }
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "spk-open";
+    btn.textContent = "Speakers";
+    btn.setAttribute("aria-expanded", "false");
+    btn.setAttribute("aria-controls", "spk-panel");
+    btn.addEventListener("click", () => spkPanel(!app.querySelector("#spk-panel"), btn));
+    const ctl = row.querySelector(".ln-ctl");
+    if (ctl) ctl.prepend(btn); else row.appendChild(btn);
+    if (!RB || !RB.nav.isConnected || RB.nav.querySelector(".rb-spk")) return;
+    RB.nav.querySelector(".rb-next").insertAdjacentHTML("beforebegin",
+      `<button type="button" class="rb-btn rb-spk" aria-expanded="false" aria-controls="spk-panel">${rbIcon("speakers")}<span class="rb-l">Speakers</span></button>`);
+    const rb = RB.nav.querySelector(".rb-spk");
+    rb.addEventListener("click", () => spkPanel(!app.querySelector("#spk-panel"), rb));
+  }
+  // The cast list, opened under the row of switches (from the reading bar, scrolled to).
+  function spkPanel(open, from) {
+    const old = app.querySelector("#spk-panel");
+    if (old) old.remove();
+    app.querySelectorAll(".spk-open, .rb-spk").forEach((b) => b.setAttribute("aria-expanded", String(!!open)));
+    if (!open || !SPK || !SPK.root.isConnected) { if (from) from.focus(); return; }
+    const { d, i } = SPK, here = d.lines[i] || {}, play = spkPlay(d), st = spkState(SPK.slug);
+    const whole = Object.keys(d.sections).length > 1;
+    // In the order they first speak in this part; those silent here after them.
+    const first = new Map();
+    SPK.runs.forEach((r) => { if (!first.has(r.id)) first.set(r.id, first.size); });
+    const cast = d.cast.slice().sort((a, b) => (first.has(a.id) ? first.get(a.id) : 1e6) - (first.has(b.id) ? first.get(b.id) : 1e6));
+    const chorus = d.cast.filter((c) => c.group === "chorus").map((c) => c.id);
+    const meter = (o, where) => {
+      const t = spkSum(o), c = chorus.reduce((a, id) => a + (o[id] || 0), 0), p = t ? Math.round(100 * c / t) : 0;
+      return `<p class="spk-share"><span class="spk-share-l">The chorus ${where}: ${num(c)} of ${num(t)} lines</span>
+        <span class="spk-meter" aria-hidden="true"><span style="width:${p}%"></span></span><span class="spk-pct">${p}%</span></p>`;
+    };
+    const count = (c) => {
+      const h = here[c.id] || 0, n = (x) => `${num(x)} line${x === 1 ? "" : "s"}`;
+      if (!whole) return n(h);
+      return `${h ? n(h) + " here" : "not in this part"} · ${num(play[c.id] || 0)} in the play`;
+    };
+    const panel = document.createElement("div");
+    panel.className = "spk-panel";
+    panel.id = "spk-panel";
+    panel.setAttribute("role", "region");
+    panel.setAttribute("aria-label", "Speakers");
+    panel.innerHTML = `
+      <p class="spk-title">Who speaks${whole ? " in this part" : ""}</p>
+      ${chorus.length ? meter(here, whole ? "here" : "speaks") + (whole ? meter(play, "in the whole play") : "") : ""}
+      <ul class="spk-list">${cast.map((c) => `<li class="spk-row${here[c.id] ? "" : " is-silent"}">
+        ${here[c.id] ? `<button type="button" class="spk-pick" data-who="${esc(c.id)}" aria-pressed="${st.who === c.id}">${esc(c.label)}</button>`
+          : `<span class="spk-pick-off">${esc(c.label)}</span>`}
+        <span class="spk-n">${count(c)}</span></li>`).join("")}</ul>
+      <p class="spk-help">Choose someone to follow their speeches. The labels are as the translator printed them.</p>
+      <button type="button" class="spk-close">Close</button>`;
+    const row = app.querySelector("article.detail .ln-bar");
+    row.after(panel);
+    panel.querySelectorAll(".spk-pick").forEach((b) => b.addEventListener("click", () => {
+      spkPanel(false);
+      spkFollow(b.dataset.who);
+    }));
+    panel.querySelector(".spk-close").addEventListener("click", () => spkPanel(false, from || app.querySelector(".spk-open")));
+    panel.addEventListener("keydown", (e) => { if (e.key === "Escape") { e.stopPropagation(); spkPanel(false, from); } });
+    if (from && from.classList.contains("rb-spk")) {
+      const head = document.querySelector(".site-head");
+      jumpTo(Math.max(0, window.scrollY + panel.getBoundingClientRect().top - (head ? head.offsetHeight : 0) - 16));
+    }
+    (panel.querySelector('.spk-pick[aria-pressed="true"]') || panel.querySelector(".spk-pick") || panel.querySelector(".spk-close")).focus({ preventScroll: true });
+  }
+  function spkFollow(who) {
+    const st = spkState(SPK.slug);
+    st.who = who;
+    st.open.clear();
+    spkApply();
+    if (!who) { announce("Every speech is shown as before."); return; }
+    const n = SPK.runs.filter((r) => r.id === who).length;
+    announce(`Following ${spkName(who)}: ${n} speech${n === 1 ? "" : "es"} in this part. Press n for the next, p for the previous.`);
+    spkStep(1, true);
+  }
+  // Fades (or folds) the other speeches and draws the bar; again after every change.
+  function spkApply(focus) {
+    if (!SPK || !SPK.root.isConnected) return;
+    const { root, lines, runs } = SPK, st = spkState(SPK.slug);
+    // Folding moves the lines, so the margin notes are placed again whenever rows come or go.
+    const folded = !!root.querySelector(".spk-gap");
+    root.querySelectorAll(".spk-gap").forEach((b) => b.remove());
+    root.querySelectorAll(".spk-dim, .spk-hide, .spk-cur").forEach((x) => x.classList.remove("spk-dim", "spk-hide", "spk-cur"));
+    const oldBar = app.querySelector(".spk-bar");
+    if (oldBar) oldBar.remove();
+    const mine = runs.filter((r) => r.id === st.who);
+    root.classList.toggle("spk-on", !!mine.length);
+    if (!mine.length) { if (folded) drawMarginNotes(); return; }
+    const isMine = (k) => runs[k].id === st.who;
+    lines.forEach((l) => { if (l.dataset.spk !== undefined && !isMine(+l.dataset.spk)) l.classList.add("spk-dim"); });
+    if (st.hide) {
+      // Each stretch of other speeches between two of theirs becomes one row.
+      for (let k = 0; k < runs.length;) {
+        if (isMine(k)) { k++; continue; }
+        let e = k;
+        while (e + 1 < runs.length && !isMine(e + 1)) e++;
+        const ls = lines.slice(runs[k].a, runs[e].b + 1);
+        const who = [...new Set(runs.slice(k, e + 1).map((r) => spkName(r.id)))];
+        const n = ls.filter(spkCounts).length;
+        const names = who.length === 1 ? who[0] : who.length === 2 ? who.join(" and ")
+          : `${who.slice(0, 2).join(", ")} and ${who.length - 2} other${who.length > 3 ? "s" : ""}`;
+        const what = `${names}, ${num(n)} line${n === 1 ? "" : "s"}`;
+        const open = st.open.has(k), from = k;
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "spk-gap";
+        b.dataset.k = k;
+        b.setAttribute("aria-expanded", String(open));
+        b.dataset.label = open ? `Fold away: ${what}` : what;
+        b.setAttribute("aria-label", open ? `Fold away ${what}` : `${what}, folded away: show them`);
+        b.addEventListener("click", () => {
+          if (st.open.has(from)) st.open.delete(from); else st.open.add(from);
+          spkApply(`.spk-gap[data-k="${from}"]`);
+        });
+        ls[0].before(b);
+        if (!open) ls.forEach((l) => l.classList.add("spk-hide"));
+        k = e + 1;
+      }
+      root.querySelectorAll(".stanza").forEach((s) => {
+        if (!s.querySelector(".spk-gap") && s.querySelector(".ln") && !s.querySelector(".ln:not(.spk-hide)")) s.classList.add("spk-hide");
+      });
+    }
+    const name = spkName(st.who), n = (SPK.d.lines[SPK.i] || {})[st.who] || 0;
+    const bar = document.createElement("div");
+    bar.className = "spk-bar";
+    bar.setAttribute("role", "group");
+    bar.setAttribute("aria-label", "Following " + name);
+    bar.innerHTML = `
+      <p class="spk-sum">Following <strong>${esc(name)}</strong> · ${num(mine.length)} speech${mine.length === 1 ? "" : "es"}, ${num(n)} line${n === 1 ? "" : "s"}${Object.keys(SPK.d.sections).length > 1 ? " in this part" : ""}</p>
+      <div class="spk-acts">
+        <button type="button" class="spk-prev">Previous</button>
+        <button type="button" class="spk-next">Next speech by ${esc(name)}</button>
+        <label class="spk-hide-l"><input type="checkbox" class="spk-hide-cb"${st.hide ? " checked" : ""}> Hide the others</label>
+        <button type="button" class="spk-stop">Stop following</button>
+      </div>`;
+    bar.querySelector(".spk-prev").addEventListener("click", () => spkStep(-1));
+    bar.querySelector(".spk-next").addEventListener("click", () => spkStep(1));
+    bar.querySelector(".spk-hide-cb").addEventListener("change", (e) => {
+      st.hide = e.target.checked;
+      st.open.clear();
+      spkApply(".spk-hide-cb");
+      announce(st.hide ? "The other speeches are folded into rows." : "The other speeches are shown, faded.");
+    });
+    bar.querySelector(".spk-stop").addEventListener("click", () => { spkFollow(""); const b = app.querySelector(".spk-open"); if (b) b.focus(); });
+    // It stays in view under the sticky top bar while the reader moves from speech to speech.
+    const head = document.querySelector(".site-head");
+    bar.style.setProperty("--spk-top", head && !document.body.classList.contains("rb-on") &&
+      getComputedStyle(head).position === "sticky" ? head.offsetHeight + "px" : "0px");
+    (root.closest(".text-solo") || root).before(bar);
+    if (folded || st.hide) drawMarginNotes();
+    if (focus) {
+      const f = app.querySelector(focus);
+      if (f) f.focus({ preventScroll: true });
+    }
+  }
+  // The next (1) or previous (-1) speech of the one followed, put at the upper third of the
+  // screen with the keyboard focus on its first line. first: the first speech from here on.
+  function spkStep(dir, first) {
+    if (!SPK || !SPK.root.isConnected) return false;
+    const st = spkState(SPK.slug);
+    const mine = SPK.runs.filter((r) => r.id === st.who);
+    if (!mine.length) return false;
+    const mark = window.innerHeight / 3;
+    const top = (r) => SPK.lines[r.a].getBoundingClientRect().top;
+    let k = -1;
+    if (dir > 0) k = mine.findIndex((r) => top(r) > mark + (first ? -40 : 4));
+    else mine.forEach((r, j) => { if (top(r) < mark - 12) k = j; });
+    if (k < 0) {
+      if (first) k = 0;
+      else {
+        const more = SPK.i + dir >= 0 && SPK.d.sections[SPK.i + dir] ? ` The ${dir > 0 ? "next" : "previous"} part goes on.` : "";
+        announce(`No ${dir > 0 ? "later" : "earlier"} speech by ${spkName(st.who)} in this part.${more}`);
+        return true;
+      }
+    }
+    const r = mine[k], el = SPK.lines[r.a];
+    SPK.root.querySelectorAll(".spk-cur").forEach((x) => x.classList.remove("spk-cur"));
+    SPK.lines.slice(r.a, r.b + 1).forEach((l) => l.classList.add("spk-cur"));
+    jumpTo(Math.max(0, window.scrollY + el.getBoundingClientRect().top - mark + 6));
+    if (!el.hasAttribute("tabindex")) el.tabIndex = -1;
+    el.focus({ preventScroll: true });
+    if (!first) announce(`Speech ${k + 1} of ${mine.length} by ${spkName(st.who)}.`);
+    return true;
+  }
+  // n and p on the keyboard while following someone (n with words selected stays a note).
+  // Only where the one followed speaks in this part; elsewhere n is the note key as before.
+  const spkFollowing = () => { if (!SPK || !SPK.root.isConnected) return false;
+    const who = spkState(SPK.slug).who; return !!who && SPK.runs.some((r) => r.id === who); };
+
+  // ---------- Who's who: the people, gods and places of the great epics ----------
+  // data/people/index.json lists the work groups that have one ({groups: {iliad: {title, count,
+  // hidden?}}}); data/people/<group>.json is the editors' list: {key (how to read the
+  // respellings), note, sources, people: [{id, name, kind: god | mortal | monster | people |
+  // place, side, aliases: {default: [...], <translation slug>: [...]}, who (one sentence), more
+  // (80 words at most), say, say_also, related}], ambiguous: [{alias, ids, both, name, note}],
+  // exclude}. A name is found as each translation spells it: whole words, capitals as written,
+  // the longest name first ("son of Telamon" before "Telamon"), accents and æ set aside. A name
+  // two people share ("Ajax", "Atrides", "Xanthus") is given to neither: it shows as "which
+  // one?" with both, unless the same line names one of them outright; "the Ajaxes" counts for
+  // both. A name not in the list shows nothing, and nothing in the text is underlined. Shown
+  // four ways: (a) "People" beside "Line numbers" on a book of such a work: who is named in it,
+  // in the order they first appear, with their number of lines; choosing someone folds the book
+  // to the lines that name them (a line either side, the rest in rows, as "Only my marks"
+  // does), which ?who=<id> in the address does too; (b) "People in this line" in the "This
+  // line" panel; (c) #/person/<group>/<id>[?w=<translation>]: the card (who, more, how to say
+  // it, other names, related) and every line naming them in one translation, chosen from a
+  // list, book by book, each a link to its line; (d) #/people/<group>: everyone, with a filter.
+  // The lines are found in the browser from the text itself (a whole translation is fetched
+  // only for (c)), so they cannot drift from it. Nothing is stored or sent; the person
+  // followed lasts for this visit only, per work (PP_STATE).
+  let PEOPLE_LIST = null;        // Promise of data/people/index.json's groups
+  const PEOPLE_FILES = {};       // group -> Promise of its file, made ready by ppPrepare (null: none)
+  const PEOPLE_READY = {};       // group -> the file, once it is in (the "This line" panel reads it)
+  const PP_STATE = new Map();    // work slug -> {who, open: Set of folded stretches opened}
+  let PP = null;                 // {slug, i, group, d, root, prose, units, found, amb} for the book on screen
+  const PP_KINDS = { god: "God", monster: "Creature", people: "People", place: "Place" };
+  const ppKind = (p) => PP_KINDS[p.kind] || p.side || "Mortal";
+  const ppHref = (group, id, slug) => `#/person/${group}/${id}${slug ? "?w=" + slug : ""}`;
+  function peopleGroups() {
+    if (!PEOPLE_LIST) PEOPLE_LIST = fetch("data/people/index.json").then((r) => (r.ok ? r.json() : {}))
+      .then((d) => (d && d.groups) || {}).catch(() => { PEOPLE_LIST = null; return {}; });
+    return PEOPLE_LIST;
+  }
+  function peopleOf(group) {
+    if (!group) return Promise.resolve(null);
+    return peopleGroups().then((gs) => {
+      if (!gs[group] || gs[group].hidden) return null;
+      return PEOPLE_FILES[group] || (PEOPLE_FILES[group] = fetch(`data/people/${encodeURIComponent(group)}.json`)
+        .then((r) => (r.ok ? r.json() : null))
+        .then((d) => (d && Array.isArray(d.people) ? (PEOPLE_READY[group] = ppPrepare(d, group, gs[group])) : null))
+        .catch(() => { delete PEOPLE_FILES[group]; return null; }));
+    });
+  }
+  function ppPrepare(d, group, meta) {
+    d.group = group;
+    d.title = d.title || (meta && meta.title) || group;
+    d.byId = new Map(d.people.map((p) => [p.id, p]));
+    d.amb = Array.isArray(d.ambiguous) ? d.ambiguous : [];
+    d.rx = {};                   // translation slug -> its matcher (ppMatcher)
+    return d;
+  }
+  // Text as names are matched: accents and diaereses set aside (Oïleus, Hekabé), æ and œ spelt
+  // out, a curly apostrophe made straight.
+  const ppNorm = (s) => String(s || "").replace(/[’ʼ]/g, "'").replace(/æ/g, "ae").replace(/Æ/g, "Ae").replace(/œ/g, "oe").replace(/Œ/g, "Oe")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  // The names to find in one translation: {re, to: Map name -> {id} or {amb: index}}.
+  function ppMatcher(d, slug) {
+    if (d.rx[slug]) return d.rx[slug];
+    const to = new Map(), skip = new Set((d.exclude || []).map(ppNorm));
+    // "son of Peleus" also stands as "Peleus' son" and "Peleus's son", so the line is the son's,
+    // not his father's (the longer name is matched first).
+    const add = (name, t) => {
+      const k = ppNorm(name).replace(/\s+/g, " ").trim(), m = /^(sons?|daughters?) of (.+)$/i.exec(k);
+      if (k && !skip.has(k) && !to.has(k)) to.set(k, t);
+      if (m) [`${m[2]}' ${m[1].toLowerCase()}`, `${m[2]}'s ${m[1].toLowerCase()}`].forEach((x) => { if (!to.has(x)) to.set(x, t); });
+    };
+    d.people.forEach((p) => Object.keys(p.aliases || {}).forEach((key) => {
+      if (key === "default" || key === slug) (p.aliases[key] || []).forEach((a) => add(a, { id: p.id }));
+    }));
+    d.amb.forEach((a, k) => (a.alias || []).forEach((x) => add(x, { amb: k })));
+    const names = [...to.keys()].sort((a, b) => b.length - a.length)
+      .map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/ /g, "\\s+"));
+    let re = null;
+    try { re = names.length ? new RegExp(`(^|[^\\p{L}\\p{M}])(${names.join("|")})(?![\\p{L}\\p{M}])`, "gu") : null; } catch (e) { re = null; }
+    return (d.rx[slug] = { re, to });
+  }
+  // Who a line (or paragraph) names: {ids, amb: the shared names left open, at: id -> where}.
+  function ppFind(d, slug, text) {
+    const m = ppMatcher(d, slug), ids = [], open = [], at = new Map();
+    if (!m.re) return { ids, amb: open, at };
+    const t = ppNorm(text), hits = [];
+    m.re.lastIndex = 0;
+    let x;
+    while ((x = m.re.exec(t))) {
+      const hit = m.to.get(x[2].replace(/\s+/g, " "));
+      if (!hit) continue;
+      const where = x.index + x[1].length;
+      if (hit.id) { if (!ids.includes(hit.id)) { ids.push(hit.id); at.set(hit.id, where); } }
+      else if (!hits.some((h) => h.k === hit.amb)) hits.push({ k: hit.amb, where });
+    }
+    // "The Ajaxes" names both; "Ajax" alone names neither, unless the line names one outright.
+    hits.forEach((h) => { if (d.amb[h.k].both) d.amb[h.k].ids.forEach((id) => { if (!ids.includes(id)) { ids.push(id); at.set(id, h.where); } }); });
+    hits.forEach((h) => { const a = d.amb[h.k]; if (!a.both && !a.ids.some((id) => ids.includes(id))) open.push(h.k); });
+    return { ids, amb: open, at };
+  }
+  const ppState = (slug) => PP_STATE.get(slug) || PP_STATE.set(slug, { who: "", open: new Set(), i: -1 }).get(slug);
+
+  // (a) A book of a work with a who's who: who is named where.
+  function bindPeople(w, slug, i) {
+    PP = null;
+    const here = location.hash, group = w.workGroup || (WORKS[slug] || {}).workGroup;
+    if (!group) return;
+    // A book with a Greek line map waits for it (applyLineMap makes the row of switches first).
+    Promise.all([peopleOf(group), LINEMAPPED.has(slug) ? lineMapOf(slug) : null]).then(([d]) => {
+      if (!d || location.hash !== here) return;
+      const root = app.querySelector(".detail .text-solo .poem-text") || app.querySelector(".detail .poem-text");
+      if (!root || root.dataset.pp) return;
+      root.dataset.pp = "1";
+      const prose = root.classList.contains("is-prose");
+      const units = [...root.querySelectorAll(prose ? ":scope > p" : ".ln[data-i]")];
+      const found = new Map(), amb = new Map();    // id -> [unit k]; shared name -> [unit k]
+      units.forEach((u, k) => {
+        const f = ppFind(d, slug, u.textContent);
+        f.ids.forEach((id) => { if (!found.has(id)) found.set(id, []); found.get(id).push(k); });
+        f.amb.forEach((a) => { if (!amb.has(a)) amb.set(a, []); amb.get(a).push(k); });
+      });
+      PP = { slug, i, group, d, root, prose, units, found, amb, part: /^fitt/i.test(w.sections[i].title || "") ? "fitt" : "book" };
+      if (LP) lpRefresh();
+      if (!found.size) return;
+      ppControls();
+      // The stretches opened belong to one book; a link to lines shows the whole book.
+      const want = (/[?&]who=([\w-]+)/.exec(location.hash) || [])[1], st = ppState(slug);
+      if (st.i !== i) { st.open.clear(); st.i = i; }
+      if (want && found.has(want)) { st.who = want; st.open.clear(); }
+      else if (linkedRange()) st.who = "";
+      // "Only my marks" folds the same text: one fold at a time.
+      const oc = omCtx();
+      if (ppOn() && oc && omState(oc.entry.id).on) { if (want) { omState(oc.entry.id).on = false; omApply(); } else st.who = ""; }
+      ppApply();
+    });
+  }
+  const ppOn = () => !!(PP && PP.root.isConnected && ppState(PP.slug).who && PP.found.has(ppState(PP.slug).who));
+  // "People" beside "Line numbers".
+  function ppControls() {
+    const text = PP.root.closest(".text-solo") || PP.root;
+    let row = app.querySelector("article.detail .ln-bar");
+    if (!row) { row = document.createElement("div"); row.className = "ln-bar"; text.before(row); }
+    if (row.querySelector(".pp-open")) return;
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "pp-open";
+    btn.textContent = "People";
+    btn.setAttribute("aria-expanded", "false");
+    btn.setAttribute("aria-controls", "pp-panel");
+    btn.addEventListener("click", () => ppPanel(!app.querySelector("#pp-panel"), btn));
+    const ctl = row.querySelector(".ln-ctl");
+    if (ctl) ctl.prepend(btn); else row.appendChild(btn);
+  }
+  // Who is named in this book, under the row of switches.
+  function ppPanel(open, from) {
+    const old = app.querySelector("#pp-panel");
+    if (old) old.remove();
+    app.querySelectorAll(".pp-open").forEach((b) => b.setAttribute("aria-expanded", String(!!open)));
+    if (!open || !PP || !PP.root.isConnected) { if (from) from.focus(); return; }
+    const { d, found, amb, slug, prose } = PP, st = ppState(slug), unit = prose ? "paragraph" : "line";
+    const n = (x) => `${num(x)} ${unit}${x === 1 ? "" : "s"}`;
+    const list = [...found.entries()].sort((a, b) => a[1][0] - b[1][0]);   // in the order they first appear
+    const panel = document.createElement("div");
+    panel.className = "spk-panel pp-panel";
+    panel.id = "pp-panel";
+    panel.setAttribute("role", "region");
+    panel.setAttribute("aria-label", "People in this " + PP.part);
+    panel.innerHTML = `
+      <p class="spk-title">Named in this ${PP.part} · ${num(list.length)}</p>
+      <ul class="spk-list pp-list">${list.map(([id, ks]) => { const p = d.byId.get(id); return `<li class="spk-row">
+        <span class="pp-who"><button type="button" class="spk-pick pp-pick" data-who="${esc(id)}" aria-pressed="${st.who === id}">${esc(p.name)}</button>
+          <span class="pp-kind">${esc(ppKind(p))}</span></span>
+        <span class="spk-n">${n(ks.length)} · <a class="pp-about" href="${ppHref(d.group, id, slug)}">About<span class="visually-hidden"> ${esc(p.name)}</span></a></span></li>`; }).join("")}</ul>
+      ${amb.size ? `<p class="spk-help">Not given to anyone: ${[...amb.entries()].map(([k, ks]) => `“${esc(d.amb[k].name)}” (${n(ks.length)})`).join(", ")}, a name two people share. The panel on a line says who it may be.</p>` : ""}
+      <p class="spk-help">Choose a name to see only the ${unit}s that name them. Names are found as this translation spells them.</p>
+      <p class="pp-links"><a href="#/people/${esc(d.group)}">Who’s who in ${esc(d.title)}</a></p>
+      <button type="button" class="spk-close pp-close">Close</button>`;
+    app.querySelector("article.detail .ln-bar").after(panel);
+    panel.querySelectorAll(".pp-pick").forEach((b) => b.addEventListener("click", () => {
+      const who = b.dataset.who;
+      ppPanel(false);
+      ppFollow(st.who === who ? "" : who);
+    }));
+    panel.querySelector(".pp-close").addEventListener("click", () => ppPanel(false, from || app.querySelector(".pp-open")));
+    panel.addEventListener("keydown", (e) => { if (e.key === "Escape") { e.stopPropagation(); ppPanel(false, from); } });
+    (panel.querySelector('.pp-pick[aria-pressed="true"]') || panel.querySelector(".pp-pick")).focus({ preventScroll: true });
+  }
+  function ppFollow(who) {
+    if (!PP || !PP.root.isConnected) return;
+    const st = ppState(PP.slug);
+    st.who = who;
+    st.open.clear();
+    // "Only my marks" folds the same text: one fold at a time.
+    const oc = omCtx();
+    if (who && oc && omState(oc.entry.id).on) { omState(oc.entry.id).on = false; omApply(); }
+    ppApply();
+    if (!who) { announce("Every line is shown."); const b = app.querySelector(".pp-open"); if (b) b.focus(); return; }
+    const p = PP.d.byId.get(who), n = PP.found.get(who).length;
+    announce(`Only the ${PP.prose ? "paragraphs" : "lines"} naming ${p.name}: ${n}, with one either side.`);
+    const bar = app.querySelector(".pp-bar");
+    if (bar) {
+      const head = document.querySelector(".site-head");
+      jumpTo(Math.max(0, window.scrollY + bar.getBoundingClientRect().top - (head ? head.offsetHeight : 0) - 16));
+      const off = bar.querySelector(".pp-off");
+      if (off) off.focus({ preventScroll: true });
+    }
+  }
+  // A line Find goes to, folded away: its stretch is opened.
+  function ppReveal(el) {
+    if (!el || !el.closest || !el.closest(".pp-hide") || !PP || !PP.root.isConnected) return;
+    const gaps = [...PP.root.querySelectorAll('.pp-gap[aria-expanded="false"]')]
+      .filter((g) => g.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING);
+    if (!gaps.length) return;
+    ppState(PP.slug).open.add(+gaps[gaps.length - 1].dataset.k);
+    ppApply();
+  }
+  // Folds the book to the lines naming the one followed (or unfolds it), with its bar.
+  function ppApply(focus) {
+    if (!PP || !PP.root.isConnected) return;
+    const { root, units, prose, d } = PP, st = ppState(PP.slug);
+    const folded = !!root.querySelector(".pp-gap");
+    root.querySelectorAll(".pp-gap").forEach((b) => b.remove());
+    root.querySelectorAll(".pp-hide").forEach((x) => x.classList.remove("pp-hide"));
+    const oldBar = app.querySelector(".pp-bar");
+    if (oldBar) oldBar.remove();
+    if (!ppOn()) { if (folded) drawMarginNotes(); return; }
+    const ks = PP.found.get(st.who), p = d.byId.get(st.who), unit = prose ? "paragraph" : "line";
+    const keep = new Set();
+    ks.forEach((k) => { keep.add(k - 1); keep.add(k); keep.add(k + 1); });
+    for (let k = 0; k < units.length;) {
+      if (keep.has(k)) { k++; continue; }
+      let e = k;
+      while (e + 1 < units.length && !keep.has(e + 1)) e++;
+      const n = units.slice(k, e + 1).filter((u) => u.textContent.trim()).length;
+      if (e > k && n > 1) {                  // one line alone is not worth a row
+        const open = st.open.has(k), from = k;
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "pp-gap";
+        b.dataset.k = k;
+        b.setAttribute("aria-expanded", String(open));
+        b.dataset.label = open ? `Fold these ${num(n)} ${unit}s away` : `⋯ ${num(n)} ${unit}s ⋯`;
+        b.setAttribute("aria-label", open ? `Fold away the ${num(n)} ${unit}s below` : `${num(n)} ${unit}s not naming ${p.name}: show them`);
+        b.addEventListener("click", () => {
+          if (st.open.has(from)) st.open.delete(from); else st.open.add(from);
+          ppApply(`.pp-gap[data-k="${from}"]`);
+        });
+        units[k].before(b);
+        if (!open) units.slice(k, e + 1).forEach((u) => u.classList.add("pp-hide"));
+      }
+      k = e + 1;
+    }
+    if (!prose) root.querySelectorAll(".stanza").forEach((s) => {
+      if (!s.querySelector(".pp-gap") && s.querySelector(".ln") && !s.querySelector(".ln:not(.pp-hide)")) s.classList.add("pp-hide");
+    });
+    const bar = document.createElement("div");
+    bar.className = "pp-bar";
+    bar.setAttribute("role", "group");
+    bar.setAttribute("aria-label", "Only " + p.name);
+    bar.innerHTML = `
+      <p class="om-sum">Only the ${unit}s naming <strong>${esc(p.name)}</strong>: ${num(ks.length)} in this ${PP.part}, with a ${unit} either side.</p>
+      <div class="pp-acts"><a class="pp-card" href="${ppHref(d.group, p.id, PP.slug)}">About ${esc(p.name)}</a>
+        <button type="button" class="om-off pp-off">Show every ${unit}</button></div>`;
+    bar.querySelector(".pp-off").addEventListener("click", () => ppFollow(""));
+    (root.closest(".text-solo") || root).before(bar);
+    drawMarginNotes();
+    if (focus) { const f = app.querySelector(focus); if (f) f.focus({ preventScroll: true }); }
+  }
+
+  // (b) "People in this line" in the "This line" panel, for a book of a work with a who's who.
+  LP_PARTS.push((info) => {
+    const m = /^work:([^/]+)\/\d+$/.exec(info.entry.id || "");
+    if (!m) return null;
+    const slug = m[1], group = (PP && PP.slug === slug && PP.group) || (WORKS[slug] || {}).workGroup;
+    if (!group) return null;
+    const d = PEOPLE_READY[group];
+    if (!d) { peopleOf(group).then((x) => { if (x && LP) lpRefresh(); }); return null; }
+    const f = ppFind(d, slug, info.lines.join("\n"));
+    if (!f.ids.length && !f.amb.length) return null;
+    const row = (p) => `<li class="pp-li">
+        <p class="pp-li-n"><a href="${ppHref(group, p.id, slug)}">${esc(p.name)}</a> <span class="pp-kind">${esc(ppKind(p))}</span></p>
+        <p class="pp-li-w">${esc(p.who)}</p>
+        ${p.say ? `<p class="pp-say">Say it: <span class="pp-resp">${esc(p.say)}</span></p>` : ""}</li>`;
+    const ambRow = (k) => { const a = d.amb[k]; return `<li class="pp-li">
+        <p class="pp-li-n">${esc(a.name)}: which one?</p>
+        <p class="pp-li-w">${esc(a.note)}</p>
+        <p class="pp-li-w">${a.ids.map((id) => d.byId.get(id)).filter(Boolean).map((p) => `<a href="${ppHref(group, p.id, slug)}">${esc(p.name)}</a>`).join(" · ")}</p></li>`; };
+    const unit = lpProse(info.ctx) ? "paragraph" : "line";
+    return { title: info.a === info.b ? `People in this ${unit}` : `People in these ${unit}s`,
+             html: `<ul class="lp-list pp-lp">${f.ids.map((id) => d.byId.get(id)).filter(Boolean).map(row).join("")}${f.amb.map(ambRow).join("")}</ul>` };
+  });
+
+  // (c) #/person/<group>/<id>: one card, and every line that names them in a translation.
+  async function renderPerson(group, id, want) {
+    app.innerHTML = `<p class="loading">Loading…</p>`;
+    const h = location.hash;
+    const d = await peopleOf(group);
+    if (location.hash !== h) return;
+    const p = d && d.byId.get(id);
+    if (!p) {
+      setTitle("Who’s who");
+      app.innerHTML = `<p class="empty">There is no such entry in the who’s who.${d ? ` <a href="#/people/${esc(group)}">Everyone in ${esc(d.title)}</a>` : ""}</p>`;
+      return;
+    }
+    // The translations to choose from: work/works.json, else the index.
+    if (!(await loadWorks()) && !DATA && !INDEX_ERROR) await new Promise((res) => { INDEX_WAITERS.push(res); loadIndex(); });
+    if (location.hash !== h) return;
+    setTitle(`${p.name} · Who’s who: ${d.title}`);
+    const vers = worksList().filter((w) => w.workGroup === group && w.translator)
+      .sort((a, b) => COLLATE.compare(verShort(a), verShort(b)));
+    const first = vers.find((w) => w.slug === want) || vers.find(isRecommended) || vers[0];
+    // The other names: those every translation may use, then each translation's own.
+    const seen = new Set([fold(p.name)]);
+    const names = (list) => (list || []).filter((a) => { const k = fold(a); if (seen.has(k)) return false; seen.add(k); return true; });
+    const common = names((p.aliases || {}).default);
+    const own = Object.keys(p.aliases || {}).filter((k) => k !== "default")
+      .map((k) => ({ w: WORKS[k], list: names(p.aliases[k]) })).filter((x) => x.list.length);
+    const also = Object.entries(p.say_also || {});
+    const rel = (p.related || []).map((r) => d.byId.get(r)).filter(Boolean);
+    app.innerHTML = `
+      <article class="detail term-page pp-page">
+        <p class="detail-subject"><a href="#/people/${esc(group)}">Who’s who · ${esc(d.title)}</a> · ${esc(ppKind(p))}</p>
+        <h1 class="detail-title">${esc(p.name)}</h1>
+        ${p.say ? `<div class="pp-sayit">
+          <p class="pp-sayit-l">Say it</p>
+          <p class="pp-sayit-r"><span class="pp-resp">${esc(p.say)}</span></p>
+          ${also.length ? `<p class="pp-sayit-also">${also.map(([nm, s]) => `${esc(nm)}: <span class="pp-resp">${esc(s)}</span>`).join(" · ")}</p>` : ""}
+          ${d.key ? `<details class="pp-key"><summary>How to read this</summary><p>${esc(d.key)}</p></details>` : ""}
+        </div>` : ""}
+        <dl class="term-def">
+          <dt class="visually-hidden">Who ${esc(p.name)} is</dt>
+          <dd class="term-short-def">${esc(p.who)}</dd>
+          ${p.more ? `<dd class="term-long"><p>${esc(p.more)}</p></dd>` : ""}
+        </dl>
+        ${common.length || own.length ? `
+        <section class="pp-names" aria-labelledby="pp-names-h">
+          <h2 class="section-label" id="pp-names-h">Other names</h2>
+          ${common.length ? `<p class="pp-names-l">${common.map((a) => `<i>${esc(a)}</i>`).join(", ")}</p>` : ""}
+          ${own.map((x) => `<p class="pp-names-l"><span class="pp-names-w">${esc(x.w ? verShort(x.w) : "")}${x.w ? ": " : ""}</span>${x.list.map((a) => `<i>${esc(a)}</i>`).join(", ")}</p>`).join("")}
+        </section>` : ""}
+        ${rel.length ? `
+        <section class="term-see" aria-labelledby="pp-rel-h">
+          <h2 class="section-label" id="pp-rel-h">Related</h2>
+          <ul class="term-see-list">${rel.map((r) => `<li><a href="${ppHref(group, r.id, first ? first.slug : "")}">${esc(r.name)}</a></li>`).join("")}</ul>
+        </section>` : ""}
+        <section class="pp-every" aria-labelledby="pp-every-h">
+          <h2 class="section-label" id="pp-every-h">Every appearance</h2>
+          ${vers.length ? `<p class="pp-ver-row"><label for="pp-ver">In</label>
+            <select id="pp-ver">${vers.map((w) => `<option value="${esc(w.slug)}"${first && w.slug === first.slug ? " selected" : ""}>${esc(verLabel(w))}</option>`).join("")}</select></p>
+          <div class="pp-res" aria-live="polite"></div>` : `<p class="empty">The translations could not be loaded. Please try again later.</p>`}
+        </section>
+        <section class="term-sources" aria-labelledby="pp-src-h">
+          <h2 class="section-label" id="pp-src-h">About this list</h2>
+          ${d.note ? `<p class="pp-note">${esc(d.note)}</p>` : ""}
+          <ul>${(d.sources || []).map((s) => `<li>${s.url ? `<a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.cite)}<span class="visually-hidden"> (opens a new tab)</span></a>` : esc(s.cite)}</li>`).join("")}</ul>
+          <p><a href="#/people/${esc(group)}">Everyone in ${esc(d.title)}</a></p>
+        </section>
+      </article>`;
+    const sel = app.querySelector("#pp-ver");
+    if (sel) {
+      let gen = 0;
+      const draw = async (slug) => {
+        const my = ++gen, box = app.querySelector(".pp-res");
+        box.innerHTML = `<p class="loading">Finding every line…</p>`;
+        let w = null;
+        try { w = await fetchWorkFile(slug); } catch (e) { w = null; }
+        if (my !== gen || !box.isConnected) return;
+        if (!w || !Array.isArray(w.sections)) { box.innerHTML = `<p class="empty">This translation could not be loaded. Check your connection and try again.</p>`; return; }
+        const books = [];
+        w.sections.forEach((s, i) => {
+          const prose = isProse(s.text, w.translator);
+          const units = prose ? proseParas(s.text) : textUnits(s.text).map((u) => u.t);
+          const hits = [];
+          units.forEach((t, k) => { const f = ppFind(d, slug, t); if (f.ids.includes(p.id)) hits.push({ k, t, at: f.at.get(p.id) || 0 }); });
+          if (hits.length) books.push({ i, title: s.title, text: s.text, prose, hits });
+        });
+        const total = books.reduce((a, b) => a + b.hits.length, 0);
+        const prose = books.length && books.every((b) => b.prose), unit = prose ? "paragraph" : "line";
+        if (!total) { box.innerHTML = `<p class="empty">${esc(verLabel(w))} does not name ${esc(p.name)} under the names listed here.</p>`; return; }
+        box.innerHTML = `
+          <p class="pp-total">Named in ${num(total)} ${unit}${total === 1 ? "" : "s"}, in ${num(books.length)} of ${num(w.sections.length)} parts. Open a part to see each ${unit}.</p>
+          ${books.map((b, x) => `<details class="pp-book" data-x="${x}">
+            <summary><span class="pp-book-t">${esc(b.title)}</span> <span class="pp-book-n">${num(b.hits.length)} ${unit}${b.hits.length === 1 ? "" : "s"}</span></summary>
+            <p class="pp-only"><a href="#/work/${esc(slug)}/${b.i}?who=${esc(p.id)}">Read ${esc(b.title)} with only these ${unit}s</a></p>
+            <ol class="pp-lines"></ol>
+          </details>`).join("")}`;
+        // Each part's lines are drawn when it is opened: the line's number as the page counts it.
+        box.querySelectorAll(".pp-book").forEach((det) => det.addEventListener("toggle", () => {
+          const ol = det.querySelector(".pp-lines");
+          if (!det.open || ol.childElementCount) return;
+          const b = books[+det.dataset.x], nums = [];
+          if (!b.prose) {
+            const tmp = document.createElement("div");
+            tmp.innerHTML = poemHTML(b.text, false);
+            tmp.querySelectorAll(".ln[data-i]").forEach((l) => { nums[+l.dataset.i] = +(l.dataset.c || 0); });
+          }
+          ol.innerHTML = b.hits.map((x) => {
+            const where = b.prose ? `¶ ${x.k + 1}` : nums[x.k] ? `line ${nums[x.k]}` : "heading";
+            let t = x.t.replace(/\s+/g, " ").trim();
+            // A long paragraph: some 180 characters round the name, cut between words.
+            if (t.length > 200) {
+              const a = x.at > 80 ? t.lastIndexOf(" ", x.at - 80) + 1 : 0;
+              let e = a + 180 < t.length ? t.lastIndexOf(" ", a + 180) : t.length;
+              if (e <= x.at) e = Math.min(t.length, a + 180);
+              t = (a ? "…" : "") + t.slice(a, e).trim() + (e < t.length ? "…" : "");
+            }
+            return `<li><a href="#/work/${esc(slug)}/${b.i}?l=${x.k + 1}"><span class="pp-ln-n">${esc(where)}</span><span class="pp-ln-t">${esc(t)}</span></a></li>`;
+          }).join("");
+        }));
+      };
+      sel.addEventListener("change", () => {
+        const addr = `#/person/${group}/${p.id}?w=${sel.value}`;
+        if (EARLY_DRAWN === location.hash) EARLY_DRAWN = addr;
+        history.replaceState(history.state, "", addr);
+        draw(sel.value);
+      });
+      draw(sel.value);
+    }
+    restoreScroll();
+  }
+
+  // (d) #/people/<group>: everyone, grouped, with a filter.
+  async function renderPeople(group) {
+    app.innerHTML = `<p class="loading">Loading…</p>`;
+    const h = location.hash;
+    const d = await peopleOf(group);
+    if (location.hash !== h) return;
+    if (!d) { setTitle("Who’s who"); app.innerHTML = `<p class="empty">There is no who’s who for this work yet.</p>`; return; }
+    setTitle(`Who’s who: ${d.title}`);
+    const SECTIONS = [["god", "Gods"], ["Achaean", "The Achaeans"], ["Trojan", "The Trojans and their allies"],
+      ["mortal", "Others in the stories told"], ["monster", "Creatures"], ["people", "Peoples"], ["place", "Places"]];
+    const secOf = (p) => (p.kind === "mortal" ? p.side || "mortal" : p.kind);
+    const byName = (a, b) => COLLATE.compare(fold(a.name), fold(b.name));
+    const hay = (p) => fold([p.name, p.who].concat(...Object.values(p.aliases || {})).join(" "));
+    app.innerHTML = `
+      <div class="page-head"><h1 class="page-title">Who’s who: ${esc(d.title)}</h1>
+        <p class="page-sub">${num(d.people.length)} people, gods, peoples and places, each with how to say the name and every line that names them.</p></div>
+      ${d.key ? `<details class="pp-key pp-key-top"><summary>How to read the respellings</summary><p>${esc(d.key)}</p></details>` : ""}
+      <div class="poet-tools term-tools">
+        <div class="poet-filter term-filter">
+          <label class="visually-hidden" for="pp-q">Find a name</label>
+          <input id="pp-q" type="search" placeholder="Find a name…" autocomplete="off" spellcheck="false" aria-describedby="pp-count">
+        </div>
+        <p class="term-count" id="pp-count" aria-live="polite"></p>
+      </div>
+      ${SECTIONS.map(([k, label], x) => {
+        const ps = d.people.filter((p) => secOf(p) === k).sort(byName);
+        return ps.length ? `
+        <section class="term-letter pp-sec" aria-labelledby="pp-s-${x}">
+          <h2 class="section-label" id="pp-s-${x}">${esc(label)}</h2>
+          <ul class="term-list">${ps.map((p) => `
+            <li data-hay="${esc(hay(p))}"><a href="${ppHref(group, p.id)}">
+              <span class="term-name">${esc(p.name)}${p.say ? ` <span class="pp-resp pp-resp-s">${esc(p.say)}</span>` : ""}</span>
+              <span class="term-short">${esc(p.who)}</span></a></li>`).join("")}</ul>
+        </section>` : "";
+      }).join("")}
+      <p class="empty term-none" hidden>No name matches. <button type="button" class="term-clear">Show everyone</button></p>
+      ${d.note ? `<p class="pp-note">${esc(d.note)}</p>` : ""}`;
+    const input = app.querySelector("#pp-q"), count = app.querySelector("#pp-count");
+    const filter = () => {
+      const words = fold(input.value).split(/\s+/).filter(Boolean);
+      let shown = 0;
+      app.querySelectorAll(".pp-sec").forEach((sec) => {
+        let n = 0;
+        sec.querySelectorAll("li[data-hay]").forEach((li) => { const ok = words.every((w) => li.dataset.hay.includes(w)); li.hidden = !ok; if (ok) n++; });
+        sec.hidden = !n; shown += n;
+      });
+      app.querySelector(".term-none").hidden = shown > 0;
+      count.textContent = words.length ? `${num(shown)} name${shown === 1 ? "" : "s"}` : "";
+    };
+    input.addEventListener("input", filter);
+    app.querySelector(".term-clear").addEventListener("click", () => { input.value = ""; filter(); input.focus(); });
+    restoreScroll();
   }
 
   // ---------- WORK: two translations side by side ----------
@@ -5541,7 +8565,7 @@
     useMarkTexts([[wa, slug, i, "tr-a"], [wb, oslug, j, "tr-b"]].filter((c) => c[2] >= 0).map(([w, sl, k, id]) => {
       const root = app.querySelector(`#${id} .poem-text`);
       return root && { entry: partEntry(w, sl, k), root, lines: !root.classList.contains("is-prose") && !!root.querySelector(".ln[data-i]"),
-                       noQuote: true, noMargin: true };
+                       noQuote: true, noMargin: true, text: w.sections[k].text, translator: w.translator };
     }).filter(Boolean));
     app.querySelectorAll(".detail-nav button").forEach((btn) => btn.addEventListener("click", () => { if (!btn.disabled) location.hash = go(btn.dataset.go); }));
     const jump = app.querySelector(".compare-jump");
@@ -5756,14 +8780,14 @@
         <p class="empty">Nothing marked “${STATUS_NAME[status]}” yet.</p>
         <p class="shelf-how">Under any text, the arrow beside <strong>Save to shelf</strong> sets its reading
         status; here, the list beside each text does.</p>`;
-    } else body = items.length || loose.length || markCount() || cols.length ? (cols.length ? `
+    } else body = items.length || loose.length || markCount() || cols.length || planCount() ? (cols.length ? `
         <section class="shelf-group">
           <h2>Collections · ${cols.length}</h2>
           <ul class="shelf-list">${cols.map((c) => `
             <li class="shelf-item"><a class="shelf-link" href="#/shelf?c=${esc(c.id)}">
               <span class="shelf-title">${esc(c.name)}</span>
               <span class="shelf-by">${plural(c.items.length, "text", "texts")}</span></a></li>`).join("")}</ul>
-        </section>` : "") + group("Poems", poems, savedNote) + group("Works", works, savedNote)
+        </section>` : "") + shelfPlansHTML() + group("Poems", poems, savedNote) + group("Works", works, savedNote)
           + group("Your notes on other texts", loose, (n) => n)
           + (markCount() ? `
         <section class="shelf-group">
@@ -5798,7 +8822,14 @@
         ${pick}
         ${body}
       </article>`;
-    app.querySelectorAll(".shelf-remove:not(.col-out)").forEach((b) => b.addEventListener("click", () => {
+    // A plan: Stop (one followed) or Remove (one finished, from the history).
+    app.querySelectorAll(".plan-drop").forEach((b) => b.addEventListener("click", () => {
+      dropPlan(b.dataset.plan);
+      announce("Removed from your reading plans.");
+      SHELF_FOCUS = "#shelf-pick";
+      renderShelf();
+    }));
+    app.querySelectorAll(".shelf-remove:not(.col-out):not(.plan-drop)").forEach((b) => b.addEventListener("click", () => {
       const it = shelfItems().find((x) => x.id === b.dataset.id);
       if (it) toggleShelf(it);
       renderShelf();
@@ -5813,7 +8844,8 @@
       if (b.dataset.format === "json") {
         downloadFile(`poetry-codex-shelf-${day}.json`, "application/json", JSON.stringify(shelfExport(), null, 2));
       } else {
-        downloadFile(`poetry-codex-shelf-${day}.md`, "text/markdown", shelfMarkdown());
+        (markCount() ? shelfMarkLinks() : Promise.resolve({}))
+          .then((links) => downloadFile(`poetry-codex-shelf-${day}.md`, "text/markdown", shelfMarkdown(links)));
       }
     }));
     const pickEl = document.getElementById("shelf-pick");
@@ -5847,7 +8879,8 @@
   // ---------- one collection on the shelf ----------
   // Its texts and passages in the reader's order: a drag handle (mouse) and Up / Down
   // buttons (keyboard and touch) reorder them, and the new place is read out. Rename, delete
-  // (the texts stay on the shelf), share as a reading-list link, print as a handout.
+  // (the texts stay on the shelf), share as a reading-list link, print as a handout, or make
+  // it an assignment link (assignPanelHTML below).
   const colItemHref = (x) => routeFor(x.ref) + (x.l ? "?l=" + x.l : "");
   const passageLabel = (x) => x.l ? (x.loc || "lines " + x.l.replace("-", "–")) : "";
   function collectionHTML(col) {
@@ -5858,6 +8891,7 @@
           <p class="col-count">${num(n)} ${n === 1 ? "text" : "texts"}<span class="print-only"> · a reading list from Poetry Codex</span></p>
           <div class="cite-row col-tools no-print">
             <button class="shelf-dl col-share" type="button"${n ? "" : " disabled"}>Share as reading list</button>
+            <button class="shelf-dl col-assign" type="button" aria-expanded="${ASSIGN_OPEN === col.id && n ? "true" : "false"}" aria-controls="col-assign"${n ? "" : " disabled"}>Make an assignment link</button>
             <button class="shelf-dl col-print" type="button"${n ? "" : " disabled"}>Print list</button>
             <button class="shelf-dl col-rename" type="button" aria-expanded="false" aria-controls="col-rename-form">Rename</button>
             <button class="shelf-dl col-delete" type="button">Delete collection</button>
@@ -5868,6 +8902,8 @@
             <button class="shelf-dl" type="submit">Save</button>
             <button class="shelf-dl col-form-cancel" type="button">Cancel</button>
           </form>
+          ${n ? assignPanelHTML(col) : ""}
+          ${listQuestionHTML(col.q)}
           ${n ? `<ol class="shelf-list col-list">${col.items.map((x, k) => `
             <li class="shelf-item col-item" data-k="${k}">
               <span class="col-grip no-print" draggable="true" title="Drag to reorder" aria-hidden="true">⠇</span>
@@ -5875,6 +8911,8 @@
                 <span class="shelf-title">${esc(x.title)}</span>
                 <span class="shelf-by">${esc(byLine(x))}</span>
                 ${x.l ? `<span class="col-loc">${esc(passageLabel(x))}${x.first ? ` · “${esc(x.first)}…”` : ""}</span>` : ""}
+                ${dueDay(x.due) ? `<span class="rl-due">Due ${esc(dueLabel(x.due))}</span>` : ""}
+                ${x.note ? `<span class="rl-note"><span class="rl-note-label">Note:</span> ${esc(x.note)}</span>` : ""}
               </a>
               <span class="shelf-side no-print">${shelfLearnHTML(x.ref, x.l)}
                 <button class="col-move" type="button" data-k="${k}" data-d="-1" aria-label="Move ${esc(x.title)} up"${k === 0 ? " disabled" : ""}>Up</button>
@@ -5882,7 +8920,7 @@
                 <button class="shelf-remove col-out" type="button" data-k="${k}" aria-label="Take ${esc(x.title)} out of this collection">Remove</button>
               </span>
             </li>`).join("")}</ol>
-          <p class="print-only col-url">Online: ${esc(readingListURL(col.name, col.items).url)}</p>` : `
+          <p class="print-only col-url">Online: ${esc(readingListURL(col.name, col.items, col.q).url)}</p>` : `
           <p class="shelf-how">Nothing in this collection yet. Under any text, the arrow beside <strong>Save to
           shelf</strong> puts it in a collection; select some lines and <strong>Add passage to…</strong> puts in just those.</p>`}
         </section>`;
@@ -5922,7 +8960,8 @@
       li.addEventListener("drop", (e) => { e.preventDefault(); const from = dragFrom; dragFrom = -1; if (from >= 0) move(from, +li.dataset.k); });
     });
     const share = app.querySelector(".col-share");
-    if (share) share.addEventListener("click", () => shareReadingList(col.name, col.items));
+    if (share) share.addEventListener("click", () => shareReadingList(col.name, col.items, col.q));
+    bindAssignPanel(col);
     const print = app.querySelector(".col-print");
     if (print) print.addEventListener("click", () => window.print());
     const ren = app.querySelector(".col-rename"), form = document.getElementById("col-rename-form");
@@ -5953,6 +8992,108 @@
     });
   }
 
+  // ---------- making an assignment link ----------
+  // "Make an assignment link" on a collection opens a panel: a question for the whole list,
+  // and a note and a due date under each text. They are saved on the collection as they are
+  // typed (q, and note / due on its items), and the link below is rebuilt each time, with its
+  // length: course pages cut very long addresses, so above 1,900 characters the panel says so.
+  // Sharing: copy the link; "Post to Google Classroom" is Google's plain share address (no
+  // Google script is loaded); "Copy for Moodle, Canvas or Blackboard" copies an HTML link with
+  // the list's title; Email opens the reader's mail program with no address filled in.
+  let ASSIGN_OPEN = "";                // the collection whose panel is open, kept across redraws
+  function assignPanelHTML(col) {
+    const items = col.items.slice(0, LIST_MAX);
+    return `
+          <section class="assign-panel no-print" id="col-assign" aria-labelledby="assign-head"${ASSIGN_OPEN === col.id ? "" : " hidden"}>
+            <h3 class="assign-head" id="assign-head">Assignment link</h3>
+            <p class="assign-how">Add a question for the whole list and, if you like, a note and a due date for each text.
+              They travel in the link itself: students need no account, and nothing about them is stored or sent.</p>
+            <label class="col-form-label" for="assign-q">Question for the whole list <span class="assign-max">(up to ${ASSIGN_Q_MAX} characters)</span></label>
+            <textarea class="col-form-input assign-q" id="assign-q" maxlength="${ASSIGN_Q_MAX}" rows="3">${esc(col.q || "")}</textarea>
+            <ol class="assign-items">${items.map((x, k) => `
+              <li class="assign-item">
+                <p class="assign-title">${esc(x.title)}${x.l ? ` <span class="assign-loc">${esc(passageLabel(x))}</span>` : ""}</p>
+                <div class="assign-fields">
+                  <span class="assign-field assign-field-note">
+                    <label class="col-form-label" for="assign-n${k}">Note on this text <span class="assign-max">(up to ${ASSIGN_NOTE_MAX})</span></label>
+                    <textarea class="col-form-input assign-n" id="assign-n${k}" data-k="${k}" maxlength="${ASSIGN_NOTE_MAX}" rows="2">${esc(x.note || "")}</textarea>
+                  </span>
+                  <span class="assign-field">
+                    <label class="col-form-label" for="assign-d${k}">Due date</label>
+                    <input class="col-form-input assign-d" id="assign-d${k}" data-k="${k}" type="date" value="${esc(dueDay(x.due))}">
+                  </span>
+                </div>
+              </li>`).join("")}
+            </ol>
+            ${col.items.length > LIST_MAX ? `<p class="shelf-how">A link holds at most ${LIST_MAX} texts, so the link has the first ${LIST_MAX}.</p>` : ""}
+            <p class="assign-len"><span class="assign-count"></span></p>
+            <p class="assign-warn" role="status"></p>
+            <div class="cite-row assign-share">
+              <button class="shelf-dl assign-copy" type="button">Copy link</button>
+              <a class="shelf-dl assign-gc" href="#" target="_blank" rel="noopener noreferrer">Post to Google Classroom</a>
+              <button class="shelf-dl assign-lms" type="button">Copy for Moodle, Canvas or Blackboard</button>
+              <a class="shelf-dl assign-mail" href="#">Email</a>
+              <a class="shelf-view assign-preview" href="#">See it as a student <span aria-hidden="true">→</span></a>
+            </div>
+          </section>`;
+  }
+  function bindAssignPanel(col) {
+    const btn = app.querySelector(".col-assign"), panel = document.getElementById("col-assign");
+    if (!btn || !panel) return;
+    btn.addEventListener("click", () => {
+      // Closing draws the collection again, so its question and notes show what was typed.
+      if (!panel.hidden) { ASSIGN_OPEN = ""; SHELF_FOCUS = ".col-assign"; renderShelf(); return; }
+      panel.hidden = false;
+      ASSIGN_OPEN = col.id;
+      btn.setAttribute("aria-expanded", "true");
+      panel.querySelector(".assign-q").focus();
+    });
+    const now = () => shelfCollections().find((c) => c.id === col.id) || col;
+    let over = null;
+    const draw = () => {
+      const c = now(), { url, hash } = readingListURL(c.name, c.items, c.q);
+      panel.querySelector(".assign-count").textContent = `The link is ${num(url.length)} characters long.`;
+      const long = url.length > ASSIGN_URL_WARN;
+      if (long !== over) {                 // read out only when it crosses the line
+        over = long;
+        panel.querySelector(".assign-warn").textContent = long ? "Too long for some course pages: shorten the notes." : "";
+      }
+      panel.querySelector(".assign-gc").href = "https://classroom.google.com/share?url=" + encodeURIComponent(url) + "&title=" + encodeURIComponent(c.name);
+      panel.querySelector(".assign-mail").href = "mailto:?subject=" + encodeURIComponent(c.name)
+        + "&body=" + encodeURIComponent((oneLine(c.q, ASSIGN_Q_MAX) ? oneLine(c.q, ASSIGN_Q_MAX) + "\n\n" : "") + url);
+      panel.querySelector(".assign-preview").href = hash;
+      return { url, c };
+    };
+    // Saved as it is typed, on the collection itself.
+    panel.querySelector(".assign-q").addEventListener("input", (e) => {
+      const q = e.target.value.slice(0, ASSIGN_Q_MAX);
+      editCollection(col.id, (c) => { if (q.trim()) c.q = q; else delete c.q; });
+      draw();
+    });
+    panel.querySelectorAll(".assign-n, .assign-d").forEach((el) => el.addEventListener("input", () => {
+      const k = +el.dataset.k, isNote = el.classList.contains("assign-n");
+      editCollection(col.id, (c) => {
+        const x = c.items[k];
+        if (!x) return;
+        if (isNote) { if (el.value.trim()) x.note = el.value.slice(0, ASSIGN_NOTE_MAX); else delete x.note; }
+        else if (dueDay(el.value)) x.due = el.value; else delete x.due;
+      });
+      draw();
+    }));
+    panel.querySelector(".assign-copy").addEventListener("click", (e) => {
+      const b = e.currentTarget, { url } = draw();
+      copyText(url).then(() => { flash(b, "Copied"); announce("Assignment link copied."); }, () => copyBox(url, true));
+    });
+    panel.querySelector(".assign-lms").addEventListener("click", (e) => {
+      const b = e.currentTarget, { url, c } = draw();
+      const html = `<a href="${esc(url)}">${esc(c.name)}</a>`;
+      // As a link where the editor takes formatted text; as HTML source in its HTML view.
+      copyText(html, html).then(() => { flash(b, "Copied"); announce("Link copied for your course page: paste it into the editor, or into its HTML view."); },
+        () => copyBox(html, true));
+    });
+    draw();
+  }
+
   // ---------- reading lists: a collection shared as a link ----------
   // "Share as reading list" copies an address that carries the whole list:
   // #/list?t=<title>&i=<ref>,<ref>@120-160,… (a title of up to 80 characters, at most 60
@@ -5960,36 +9101,69 @@
   // Nothing is stored anywhere for it. Whoever opens it sees a read-only page: the texts with
   // their poet, translator and first line (or the lines), "Read in order", "Save this list to
   // my shelf" (a new collection) and "Print list". An id that is not in the archive shows as
-  // "not found" and is skipped. "Read in order" opens the first text with ?list=1 in its
-  // address; while ?list= is there, the foot of the text offers the next one. The list being
-  // read is kept for this tab only (sessionStorage), so the addresses stay short.
+  // "moved or withdrawn" and is skipped. "Read in order" opens the first text with ?list=1 in
+  // its address; while ?list= is there, the foot of the text offers the next one. The list
+  // being read is kept for this tab only (sessionStorage), so the addresses stay short.
+  // An assignment is the same link with the teacher's words in it (all optional):
+  // &q=<a question for the whole list, up to 300 characters>, &n<k>=<a note on item k, up to
+  // 200> and &d<k>=<YYYY-MM-DD, item k's due date>, k counting from 1. Older links and unknown
+  // parameters are simply read without them. The words are shown as text, never as HTML.
   const LIST_MAX = 60;
+  const ASSIGN_Q_MAX = 300, ASSIGN_NOTE_MAX = 200, ASSIGN_URL_WARN = 1900;
   const REF_RE = /^(?:work:[\w-]+(?:\/\d+)?|[\w-]+\/\d+)$/;
-  function readingListURL(name, items) {
-    const refs = items.slice(0, LIST_MAX).map((x) => x.ref + (x.l ? "@" + x.l : ""));
-    const hash = "#/list?t=" + encodeURIComponent(String(name).slice(0, COL_NAME_MAX)) + "&i=" + refs.join(",");
+  const oneLine = (s, max) => String(s || "").replace(/\s+/g, " ").trim().slice(0, max);
+  // A due date as the link carries it, or "" when it is not a real day.
+  function dueDay(s) {
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(s || ""));
+    if (!m) return "";
+    const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+    return d.getUTCMonth() === +m[2] - 1 && d.getUTCDate() === +m[3] ? m[0] : "";
+  }
+  const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  function dueLabel(s) {
+    const day = dueDay(s);
+    if (!day) return "";
+    const [y, m, d] = day.split("-").map(Number), dt = new Date(Date.UTC(y, m - 1, d));
+    return `${WEEKDAYS[dt.getUTCDay()]} ${d} ${MONTHS[m - 1].slice(0, 3)} ${y}`;
+  }
+  function readingListURL(name, items, q) {
+    const list = items.slice(0, LIST_MAX);
+    const refs = list.map((x) => x.ref + (x.l ? "@" + x.l : ""));
+    let extra = oneLine(q, ASSIGN_Q_MAX) ? "&q=" + encodeURIComponent(oneLine(q, ASSIGN_Q_MAX)) : "";
+    list.forEach((x, k) => {
+      const note = oneLine(x.note, ASSIGN_NOTE_MAX), due = dueDay(x.due);
+      if (note) extra += "&n" + (k + 1) + "=" + encodeURIComponent(note);
+      if (due) extra += "&d" + (k + 1) + "=" + due;
+    });
+    const hash = "#/list?t=" + encodeURIComponent(String(name).slice(0, COL_NAME_MAX)) + "&i=" + refs.join(",") + extra;
     return { hash, url: SITE + "/" + hash, over: items.length > LIST_MAX };
   }
-  function shareReadingList(name, items) {
-    const { hash, url, over } = readingListURL(name, items);
+  function shareReadingList(name, items, q) {
+    const { hash, url, over } = readingListURL(name, items, q);
     const msg = (over ? `A link holds at most ${LIST_MAX} texts, so this one has the first ${LIST_MAX} of ${num(items.length)}. ` : "")
       + "Link to the reading list copied. Whoever opens it sees the list; nothing is stored on Poetry Codex.";
     copyText(url).then(() => selToast(msg, { label: "Open it", run: () => { closeToast(); location.hash = hash; } }, true),
       () => copyBox(url, true));
   }
   function parseReadingList(h) {
-    let t = "", raw = "";
+    let t = "", raw = "", q = "";
+    const notes = {}, dues = {};
+    const dec = (v) => { try { return decodeURIComponent(v.replace(/\+/g, " ")); } catch (e) { return v; } };
     (h.split("?")[1] || "").split("&").forEach((kv) => {
       const at = kv.indexOf("="), k = kv.slice(0, at), v = kv.slice(at + 1);
-      if (k === "t") { try { t = decodeURIComponent(v.replace(/\+/g, " ")); } catch (e) { t = v; } }
+      let m;
+      if (k === "t") t = dec(v);
       else if (k === "i") { try { raw = decodeURIComponent(v); } catch (e) { raw = v; } }
+      else if (k === "q") q = dec(v);
+      else if ((m = /^([nd])(\d{1,2})$/.exec(k))) (m[1] === "n" ? notes : dues)[+m[2]] = dec(v);
     });
     const all = raw.split(",").map((x) => x.trim()).filter(Boolean);
-    const items = all.slice(0, LIST_MAX).map((x) => {
+    const items = all.slice(0, LIST_MAX).map((x, k) => {
       const at = x.lastIndexOf("@"), ref = at >= 0 ? x.slice(0, at) : x, l = at >= 0 ? x.slice(at + 1) : "";
-      return { ref, l: /^\d+(?:-\d+)?$/.test(l) ? l : "" };
+      return { ref, l: /^\d+(?:-\d+)?$/.test(l) ? l : "", note: oneLine(notes[k + 1], ASSIGN_NOTE_MAX), due: dueDay(dues[k + 1]) };
     });
-    return { t: t.replace(/\s+/g, " ").trim().slice(0, COL_NAME_MAX) || "A reading list", items, over: all.length > LIST_MAX ? all.length : 0 };
+    return { t: t.replace(/\s+/g, " ").trim().slice(0, COL_NAME_MAX) || "A reading list", items,
+             q: oneLine(q, ASSIGN_Q_MAX), over: all.length > LIST_MAX ? all.length : 0 };
   }
   // What the archive knows of a list item: null when it is not there.
   function listItemInfo(x) {
@@ -6015,8 +9189,17 @@
     if (x.l) info.loc = (info.prose ? "paragraphs " : "lines ") + x.l.replace("-", "–");
     return info;
   }
+  // The teacher's question, in a quiet frame; and an item's due date and note, under it.
+  const listQuestionHTML = (q) => q ? `
+        <div class="rl-question">
+          <p class="rl-q-label">Question for this list</p>
+          <p class="rl-q-text">${esc(q)}</p>
+        </div>` : "";
+  const listExtraHTML = (x) => x.note || x.due ? `
+            <div class="rl-extra">${x.due ? `<p class="rl-due">Due ${esc(dueLabel(x.due))}</p>` : ""}${x.note
+              ? `<p class="rl-note"><span class="rl-note-label">Teacher’s note:</span> ${esc(x.note)}</p>` : ""}</div>` : "";
   const LIST_RUN_KEY = "pc-list-run";
-  let LIST_RUN = null;                 // {t, from (the list page's address), items: [{ref, l, title}]}
+  let LIST_RUN = null;                 // {t, from (the list page's address), assign, items: [{ref, l, title, loc, note, due}]}
   function listRun() {
     if (!LIST_RUN) { try { LIST_RUN = JSON.parse(sessionStorage.getItem(LIST_RUN_KEY) || "null"); } catch (e) { LIST_RUN = null; } }
     return LIST_RUN && Array.isArray(LIST_RUN.items) ? LIST_RUN : null;
@@ -6030,18 +9213,22 @@
     const list = parseReadingList(location.hash);
     setTitle(list.t);
     const rows = list.items.map((x) => ({ x, info: listItemInfo(x) }));
-    const found = rows.filter((r) => r.info).map((r) => Object.assign({ ref: r.x.ref, l: r.x.l }, r.info));
+    const found = rows.filter((r) => r.info).map((r) => Object.assign({ ref: r.x.ref, l: r.x.l, note: r.x.note, due: r.x.due }, r.info));
     const missing = rows.length - found.length;
-    setListRun({ t: list.t, from: location.hash, items: found.map((x) => ({ ref: x.ref, l: x.l, title: x.title, loc: x.loc })) });
+    const assign = !!(list.q || list.items.some((x) => x.note || x.due));
+    setListRun({ t: list.t, from: location.hash, assign,
+                 items: found.map((x) => ({ ref: x.ref, l: x.l, title: x.title, loc: x.loc, note: x.note, due: x.due })) });
     let k = -1;
     app.innerHTML = `
       <article class="shelf rlist">
         <div class="page-head">
-          <p class="detail-subject">A reading list</p>
+          <p class="detail-subject">${assign ? "An assignment" : "A reading list"}</p>
           <h1 class="page-title">${esc(list.t)}</h1>
-          <p class="page-sub">${num(found.length)} ${found.length === 1 ? "text" : "texts"}. Shared as a link: the list travels in the
-            address itself, and nothing about it is stored on Poetry Codex.</p>
+          <p class="page-sub">${num(found.length)} ${found.length === 1 ? "text" : "texts"}. ${assign
+            ? "Shared as a link: the list, the question and the notes travel in the address itself. Nothing about you is stored or sent, and no sign-in is needed."
+            : "Shared as a link: the list travels in the address itself, and nothing about it is stored on Poetry Codex."}</p>
         </div>
+        ${listQuestionHTML(list.q)}
         ${found.length ? `<div class="cite-row rl-tools no-print">
           <a class="rl-read" href="${esc(listItemHref(found[0], 0))}">Read in order <span aria-hidden="true">→</span></a>
           <button class="shelf-dl rl-save" type="button">Save this list to my shelf</button>
@@ -6050,24 +9237,26 @@
         <p class="rl-saved no-print" hidden></p>` : ""}
         ${rows.length ? `<ol class="shelf-list rl-list">${rows.map(({ x, info }) => {
           if (!info) return `
-          <li class="shelf-item rl-missing"><span class="shelf-link"><span class="shelf-title">Not found</span>
-            <span class="shelf-by">${esc(x.ref)} · not in the archive, skipped</span></span></li>`;
+          <li class="shelf-item rl-missing"><span class="shelf-link"><span class="shelf-title">This text has moved or been withdrawn</span>
+            <span class="shelf-by">${esc(x.ref)} · skipped</span></span>${listExtraHTML(x)}</li>`;
           k++;
           return `
           <li class="shelf-item"><a class="shelf-link" href="${esc(listItemHref(x, k))}">
             <span class="shelf-title">${esc(info.title)}</span>
             <span class="shelf-by">${esc(byLine(info))}</span>
             ${info.loc || info.first ? `<span class="col-loc">${esc(info.loc || info.first)}</span>` : ""}
-          </a></li>`;
+          </a>${listExtraHTML(x)}</li>`;
         }).join("")}</ol>` : `<p class="empty">This reading list is empty.</p>`}
-        ${missing ? `<p class="shelf-how no-print">${missing === 1 ? "One item was" : num(missing) + " items were"} not found in the archive and ${missing === 1 ? "is" : "are"} skipped.</p>` : ""}
+        ${missing ? `<p class="shelf-how no-print">${missing === 1 ? "One item has" : num(missing) + " items have"} moved or been withdrawn and ${missing === 1 ? "is" : "are"} skipped.</p>` : ""}
         ${list.over ? `<p class="shelf-how">The link named ${num(list.over)} texts; a reading list holds at most ${LIST_MAX}, so only the first ${LIST_MAX} are shown.</p>` : ""}
         <p class="print-only col-url">Online: ${esc(SITE + "/" + location.hash)}</p>
       </article>`;
     const save = app.querySelector(".rl-save");
     if (save) save.addEventListener("click", () => {
+      // The teacher's question and notes come along: the reader's copy is an assignment too.
       const c = newCollection(list.t, found.map((x) => ({ ref: x.ref, l: x.l || undefined, title: x.title, author: x.author,
-        translator: x.translator, kind: x.kind, loc: x.l ? x.loc : undefined })));
+        translator: x.translator, kind: x.kind, loc: x.l ? x.loc : undefined, note: x.note || undefined, due: x.due || undefined })),
+        list.q ? { q: list.q } : null);
       const done = app.querySelector(".rl-saved");
       done.innerHTML = `Saved as a collection on your shelf. <a href="#/shelf?c=${esc(c.id)}">Open it →</a>`;
       done.hidden = false;
@@ -6078,14 +9267,52 @@
     const print = app.querySelector(".rl-print");
     if (print) print.addEventListener("click", () => window.print());
   }
+  // The text being read now, when it was opened from an assignment link: {run, k, x} or null.
+  function assignmentItem() {
+    const m = /[?&]list=(\d+)/.exec(location.hash), run = m && listRun();
+    if (!run || !run.assign) return null;
+    const k = +m[1] - 1;
+    return run.items[k] ? { run, k, x: run.items[k] } : null;
+  }
+  // The assignment bar is closed for one list at a time, for this visit only.
+  const ASSIGN_HIDE_KEY = "pc-assign-hide";
+  function assignHidden(from) { try { return sessionStorage.getItem(ASSIGN_HIDE_KEY) === from; } catch (e) { return false; } }
+  // A slim bar above a text opened from an assignment: where it stands in the list, the
+  // lines set, the due date and the teacher's note, with Previous / Back to list / Next.
+  // × closes it for the rest of the visit. Nothing is stored about the reader.
+  function assignBar({ run, k, x }) {
+    const n = run.items.length, prev = run.items[k - 1], next = run.items[k + 1];
+    const nav = document.createElement("nav");
+    nav.className = "assign-bar no-print";
+    nav.setAttribute("aria-label", "Assignment");
+    nav.innerHTML = `
+      <p class="ab-where"><strong>Reading ${k + 1} of ${n}</strong>${x.loc ? " · " + esc(x.loc.charAt(0).toUpperCase() + x.loc.slice(1)) : ""}${
+        dueDay(x.due) ? " · Due " + esc(dueLabel(x.due)) : ""}${x.note ? ` · <span class="ab-note-label">Teacher’s note:</span> ${esc(x.note)}` : ""}</p>
+      <div class="ab-links">
+        ${prev ? `<a class="ab-go" href="${esc(listItemHref(prev, k - 1))}"><span aria-hidden="true">←</span> Previous</a>` : ""}
+        <a class="ab-go" href="${esc(run.from)}">Back to list</a>
+        ${next ? `<a class="ab-go" href="${esc(listItemHref(next, k + 1))}">Next <span aria-hidden="true">→</span></a>` : ""}
+        <button class="ab-close" type="button" aria-label="Close the assignment bar">×</button>
+      </div>`;
+    nav.querySelector(".ab-close").addEventListener("click", () => {
+      try { sessionStorage.setItem(ASSIGN_HIDE_KEY, run.from); } catch (e) { /* closed for this page */ }
+      const head = app.querySelector("article.detail h1");
+      nav.remove();
+      if (head) { head.tabIndex = -1; head.focus(); }
+      announce("Assignment bar closed for this visit.");
+    });
+    return nav;
+  }
   // At the foot of a text opened from a reading list (?list=N): where it stands in the list
-  // and the next text, or the end of the list.
+  // and the next text, or the end of the list. From an assignment, the bar above it as well.
   function bindListNext() {
     const m = /[?&]list=(\d+)/.exec(location.hash), run = m && listRun();
     const art = app.querySelector("article.detail");
     if (!run || !art || app.querySelector(".list-next")) return;
     const k = +m[1] - 1, n = run.items.length, next = run.items[k + 1];
     if (!run.items[k]) return;
+    const a = assignmentItem();
+    if (a && !assignHidden(run.from)) art.before(assignBar(a));     // above the page, clear of Find and Aa
     const nav = document.createElement("nav");
     nav.className = "list-next no-print";
     nav.setAttribute("aria-label", "Reading list");
@@ -6108,28 +9335,41 @@
     return {
       format: "Poetry Codex shelf", version: 1, exported: new Date().toISOString(),
       shelf: shelfItems().map(row), notes: looseNotes().map(row),
-      collections: shelfCollections().map((c) => ({ name: c.name, readingList: readingListURL(c.name, c.items).url,
+      collections: shelfCollections().map((c) => ({ name: c.name, readingList: readingListURL(c.name, c.items, c.q).url,
         items: c.items.map((x) => ({ id: x.ref, title: x.title, author: x.author, lines: x.l || undefined, url: SITE + shelfPath(x.ref) })) })),
       lineNotes: markRows().map(({ id, g, m }) => ({ id, title: g.title, author: g.author, url: SITE + shelfPath(id),
         quote: m.quote, note: m.text, updated: m.updated })),
     };
   }
-  function shelfMarkdown() {
+  // links: {"<text id>|<mark id>": the address of the mark's lines}, from shelfMarkLinks.
+  function shelfMarkdown(links) {
     const md = (s) => String(s || "").replace(/([\\`*_[\]<>])/g, "\\$1");
     const items = shelfItems();
     const notes = allNotes();
+    const all = items.concat(looseNotes(), markRows().map(({ g }) => g));
+    const head = frontMatter({ title: "My Poetry Codex shelf", author: uniq(all.map((it) => it.author)),
+      translator: uniq(all.flatMap((it) => citeTranslators(it.translator))),
+      url: SITE + "/#/shelf", exported: isoDay(new Date()) });
     // A note is quoted under its text, line for line.
     const quote = (n) => n ? "\n" + n.text.split("\n").map((l) => "  > " + l).join("\n") + "\n" : "";
     const block = (name, list) => list.length ? `## ${name}\n\n` + list.map((it) =>
       `- **${md(it.title)}** — ${md(byLine(it))}  \n  ${SITE + shelfPath(it.id)}  \n  `
       + (it.saved ? `Saved ${shortDate(it.saved)}` : `Note written ${shortDate(it.updated)}`) + "\n"
       + quote(notes[it.id])).join("\n") + "\n" : "";
-    return `# My Poetry Codex shelf\n\nExported ${shortDate(new Date().toISOString())} from ${SITE}\n\n`
+    return head + `# My Poetry Codex shelf\n\nExported ${shortDate(new Date().toISOString())} from ${SITE}\n\n`
       + block("Poems", items.filter((it) => it.kind === "poem"))
       + block("Works", items.filter((it) => it.kind !== "poem"))
       + block("Notes on other texts", looseNotes())
       + (markCount() ? "## Notes on lines\n\n" + markRows().map(({ id, g, m }) =>
-        `- “${md(m.quote)}” — **${md(g.title)}**, ${md(g.author || "")}  \n  ${SITE + shelfPath(id)}\n  > ${m.text.split("\n").join("\n  > ")}\n`).join("\n") + "\n" : "");
+        `- “${md(m.quote)}” — **${md(g.title)}**, ${md(g.author || "")}  \n  <${(links && links[id + "|" + m.id]) || SITE + shelfPath(id)}>\n  > ${m.text.split("\n").join("\n  > ")}\n`).join("\n") + "\n" : "");
+  }
+  // Each highlight and line note found in its text (as on #/notes), for its ?l= address;
+  // one that cannot be found keeps the text's own address.
+  function shelfMarkLinks() {
+    const items = nbItems().filter((it) => it.type !== "note");
+    return Promise.all([...new Set(items.map((it) => it.tid))].map((tid) => nbText(tid).then((tx) => {
+      items.filter((it) => it.tid === tid).forEach((it) => nbPlace(it, tx));
+    }))).then(() => Object.fromEntries(items.map((it) => [it.key, markURL(it)])), () => ({}));
   }
   function downloadFile(name, type, text) {
     const url = URL.createObjectURL(new Blob([text], { type: type + ";charset=utf-8" }));
@@ -6137,6 +9377,536 @@
     a.href = url; a.download = name;
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 5000);
+  }
+
+  // ---------- READING PLANS: #/plan?w=iliad-pope&s=2026-10-20&e=&p=3b&d=127&by=book ----------
+  // A long work cut into portions with dates. The link holds the whole plan: the work (w),
+  // the start (s), a finish date (e) or else a pace (p: "3b" three books a week, "150l" about
+  // 150 lines a day), the reading days (d: Mon = 1, Tue = 2 … Sun = 64, added up) and the split
+  // (by: whole books, or even portions cut at the stanza or paragraph break nearest the target
+  // and never mid-sentence where a full stop is within five lines). The same link always gives
+  // the same plan, so a teacher shares a semester's plan as a link, as with an assignment.
+  // Following a plan keeps {link, started, done, snap (the portions as they were drawn), sig}
+  // under pc-reading's "plans" (MERGE.reading merges it by work, the newer winning), so it
+  // follows a signed-in reader with no change to the Worker. A portion is done when the place
+  // kept in pc-reading passes its last line, or when the reader ticks it. No streaks, no red,
+  // no count of missed days: only "Two portions to catch up" and a way to spread the rest.
+  const PLAN_MAX = 400;                  // portions in one plan (more than a year of days)
+  const PLAN_DAYS_MAX = 1500;            // reading days in one plan (about four years)
+  const PLAN_DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  const NUM_WORDS = ["No", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+  const weekIndex = (day) => (new Date(day + "T12:00:00").getDay() + 6) % 7;   // Mon 0 … Sun 6
+  const planMin = (m) => m < 1 ? "<1 min" : m < 90 ? `about ${Math.round(m)} min`
+    : `about ${Math.floor(m / 60)} h ${String(Math.round(m % 60)).padStart(2, "0")} min`;
+  function planParams(hash) {
+    const q = new URLSearchParams(String(hash || "").split("?")[1] || "");
+    const pm = /^(\d+(?:\.\d+)?)([bl])$/.exec(q.get("p") || "");
+    let p = pm ? { n: +pm[1], u: pm[2] } : null;
+    if (p) p.n = p.u === "b" ? Math.min(50, Math.max(0.25, p.n)) : Math.min(100000, Math.max(5, Math.round(p.n)));
+    const d = parseInt(q.get("d"), 10);
+    return { w: q.get("w") || "", s: dueDay(q.get("s")), e: dueDay(q.get("e")), p,
+             d: d >= 1 && d <= 127 ? d : 127, by: q.get("by") === "even" ? "even" : "book" };
+  }
+  const planQuery = (o) => `w=${o.w}&s=${o.s}&e=${o.e || ""}&p=${o.p ? o.p.n + o.p.u : ""}&d=${o.d}&by=${o.by}`;
+  // Every text unit of the work as the page numbers it: a verse line (weight 1) or a prose
+  // paragraph (weight: its words / 8, so that 25 "lines" are a minute either way), with how
+  // good a place to stop it ends at (3 the end of a book, 2 a stanza or paragraph, 1 a
+  // sentence; .5 a colon or semicolon and .25 a comma, for verse whose sentences run long).
+  function planUnits(work) {
+    return work.sections.map((s) => {
+      const prose = isProse(s.text, work.translator);
+      const units = [];
+      if (prose) proseParas(s.text).forEach((p) => units.push({ w: p.split(/\s+/).filter(Boolean).length / 8, brk: 2 }));
+      else String(s.text || "").split(/\n\s*\n/).filter((st) => st.trim()).forEach((st) => {
+        const ls = st.split("\n").filter((l) => l.trim());
+        ls.forEach((l, k) => units.push({ w: 1, brk: k === ls.length - 1 ? 2 : /[.!?][’”"')\]]*\s*$/.test(l) ? 1
+          : /[;:—][’”"')\]]*\s*$/.test(l) ? 0.5 : /,[’”"')\]]*\s*$/.test(l) ? 0.25 : 0 }));
+      });
+      if (!units.length) units.push({ w: 1, brk: 2 });
+      units[units.length - 1].brk = 3;
+      return { title: s.title, prose, units };
+    });
+  }
+  // The reading days from the start: n of them, or up to the finish date.
+  function planDays(o, n, until) {
+    const out = [];
+    let day = o.s;
+    for (let guard = 0; guard < PLAN_DAYS_MAX * 7 && (until ? day <= until : out.length < n); guard++) {
+      if (o.d & (1 << weekIndex(day))) out.push(day);
+      day = addDays(day, 1);
+    }
+    return out;
+  }
+  // The plan the link describes: {portions: [{d, i, a, j, b, n, q, m, lab, f0, f1, ef}], sig}.
+  // i/a: the book and unit it starts at, j/b where it ends (units counted from 1, as ?l= counts
+  // them); n lines and q paragraphs; m minutes; f0/f1 where it starts and ends in the whole
+  // work (0 to 1); ef how far into book j it ends, for "done".
+  function planPortions(work, o) {
+    const secs = planUnits(work);
+    const flat = [];
+    secs.forEach((s, i) => s.units.forEach((u, k) => flat.push({ i, k, w: u.w, brk: u.brk, prose: s.prose })));
+    const total = flat.reduce((a, u) => a + u.w, 0) || 1;
+    const by = secs.length > 1 ? o.by : "even";
+    const perWeek = [...Array(7).keys()].filter((k) => o.d & (1 << k)).length || 7;
+    let D;
+    if (o.e) D = planDays(o, 0, o.e).length;
+    else if (o.p && o.p.u === "l") D = Math.ceil(total / o.p.n);
+    else D = Math.round(secs.length / (o.p ? o.p.n : 3) * perWeek);
+    // D reading days; at most PLAN_MAX portions over them, so a slow pace keeps its dates.
+    D = Math.min(PLAN_DAYS_MAX, Math.max(1, D));
+    // Where each portion ends: an index into flat (inclusive).
+    const ends = [];
+    if (by === "book") {
+      const N = Math.min(D, PLAN_MAX, secs.length);
+      const bookEnd = [];                         // cumulative weight at the end of each book
+      let acc = 0, g = -1;
+      secs.forEach((s) => { s.units.forEach((u) => { acc += u.w; g++; }); bookEnd.push({ acc, g }); });
+      let prev = -1;
+      for (let k = 1; k < N; k++) {
+        const T = total * k / N;
+        let best = -1;
+        for (let c = prev + 1; c <= secs.length - 1 - (N - k); c++) {
+          if (best < 0 || Math.abs(bookEnd[c].acc - T) < Math.abs(bookEnd[best].acc - T)) best = c;
+        }
+        ends.push(bookEnd[best].g);
+        prev = best;
+      }
+    } else {
+      const N = Math.min(D, PLAN_MAX, flat.length);
+      const cum = [];
+      flat.reduce((a, u, g) => (cum[g] = a + u.w), 0);
+      const win = Math.max(5, total / N * 0.25);
+      let prev = -1;
+      for (let k = 1; k < N; k++) {
+        const T = total * k / N, last = flat.length - 1 - (N - k);
+        let near = prev + 1;
+        while (near < last && cum[near] < T) near++;
+        const pick = (ok, w) => {
+          let best = -1, bd = Infinity;
+          for (let g = prev + 1; g <= last; g++) {
+            if (cum[g] - T > 2 * w) break;        // past the window, even for a book's end
+            const dist = Math.abs(cum[g] - T) * (flat[g].brk === 3 ? 0.5 : 1);
+            if (dist <= w && ok(flat[g]) && dist < bd) { best = g; bd = dist; }
+          }
+          return best;
+        };
+        let g = pick((u) => u.brk >= 2, win);
+        for (const b of [1, 0.5, 0.25]) if (g < 0) g = pick((u) => u.brk >= b, 5);
+        if (g < 0) g = Math.max(prev + 1, Math.min(last, near));
+        ends.push(g);
+        prev = g;
+      }
+    }
+    ends.push(flat.length - 1);
+    // The portions, and the day each falls on: as far into the reading days as it starts in the work.
+    const days = planDays(o, D);
+    let start = 0, acc = 0, lastX = -1;
+    const portions = ends.map((g, k) => {
+      const part = flat.slice(start, g + 1);
+      const f0 = acc / total;
+      acc += part.reduce((a, u) => a + u.w, 0);
+      let x = Math.max(lastX + 1, Math.floor(f0 * D));
+      x = Math.min(x, days.length - (ends.length - k));
+      lastX = x;
+      const first = flat[start], end = flat[g];
+      const p = {
+        d: days[Math.max(0, x)] || o.s, i: first.i, a: first.k + 1, j: end.i, b: end.k + 1,
+        n: part.filter((u) => !u.prose).length, q: part.filter((u) => u.prose).length,
+        m: Math.round(part.reduce((a, u) => a + u.w, 0) / 25 * 10) / 10,
+        f0: Math.round(f0 * 10000) / 10000, f1: Math.round(acc / total * 10000) / 10000,
+        ef: Math.round((end.k + 1) / secs[end.i].units.length * 1000) / 1000,
+      };
+      p.lab = planLabel(secs, p);
+      start = g + 1;
+      return p;
+    });
+    return { portions, sig: secs.length + ":" + flat.length };
+  }
+  // "Book IV", "Books IV to VI" (as the titles go), "Book IV, lines 1–380",
+  // "Book IV, line 400, to Book V, line 120"; "Lines 1–380" in a work of one part.
+  function planLabel(secs, p) {
+    const one = secs.length === 1;
+    const unit = (s, n) => (s.prose ? "paragraph" : "line") + (n ? "s" : "");
+    const whole = (i) => secs[i].title;
+    const startsBook = p.a === 1, endsBook = p.b === secs[p.j].units.length;
+    if (startsBook && endsBook && !one) return p.i === p.j ? whole(p.i) : `${whole(p.i)} to ${whole(p.j)}`;
+    if (p.i === p.j) {
+      const what = `${unit(secs[p.i], true)} ${p.a}–${p.b}`;
+      return one ? what.charAt(0).toUpperCase() + what.slice(1) : `${whole(p.i)}, ${what}`;
+    }
+    return `${whole(p.i)}, ${unit(secs[p.i])} ${p.a}, to ${whole(p.j)}, ${unit(secs[p.j])} ${p.b}`;
+  }
+  const planSize = (p) => [p.n ? `${num(p.n)} line${p.n === 1 ? "" : "s"}` : "", p.q ? `${num(p.q)} paragraph${p.q === 1 ? "" : "s"}` : ""]
+    .filter(Boolean).join(", ");
+  const planHref = (slug, p) => `#/work/${slug}/${p.i}${p.a > 1 ? "?l=" + p.a : ""}`;
+
+  // The plans followed, from pc-reading: {slug: record}; a dropped one is {gone, at} so that
+  // the drop reaches the reader's other devices.
+  function readingPlans() { return objOr(readStore(READING_KEY).plans); }
+  function planOf(slug) {
+    const r = readingPlans()[slug];
+    return r && !r.gone && typeof r.link === "string" && Array.isArray(r.snap) && r.snap.length ? r : null;
+  }
+  function savePlan(slug, rec) {
+    const plans = readingPlans();
+    plans[slug] = Object.assign({}, rec, { at: new Date().toISOString() });
+    writeReading({ plans });
+  }
+  function dropPlan(slug) {
+    const plans = readingPlans();
+    plans[slug] = { gone: true, at: new Date().toISOString() };
+    writeReading({ plans });
+  }
+  // Ticks portion k (or unticks it); the last tick finishes the plan.
+  function setPlanDone(slug, k, on) {
+    const rec = planOf(slug);
+    if (!rec || !rec.snap[k]) return;
+    const done = new Set(Array.isArray(rec.done) ? rec.done : []);
+    if (on) done.add(k); else done.delete(k);
+    rec.done = [...done].sort((a, b) => a - b);
+    if (rec.done.length >= rec.snap.length) rec.finished = rec.finished || dayKey(new Date());
+    else delete rec.finished;
+    savePlan(slug, rec);
+  }
+  // Called whenever the place in a work is kept (setReading): every portion that ends in this
+  // book at or before the place is done.
+  function planReached(slug, i, frac) {
+    const rec = planOf(slug);
+    if (!rec || rec.finished) return;
+    const done = new Set(Array.isArray(rec.done) ? rec.done : []);
+    let more = false;
+    rec.snap.forEach((p, k) => {
+      if (!done.has(k) && p.j === i && (frac || 0) >= Math.min(0.95, p.ef)) { done.add(k); more = true; }
+    });
+    if (!more) return;
+    rec.done = [...done].sort((a, b) => a - b);
+    if (rec.done.length >= rec.snap.length) rec.finished = dayKey(new Date());
+    savePlan(slug, rec);
+  }
+  // Where the reader stands: the next portion not done, and how many earlier days' portions are open.
+  function planState(rec) {
+    const today = dayKey(new Date()), done = new Set(rec.done || []);
+    const open = rec.snap.map((p, k) => ({ p, k })).filter((x) => !done.has(x.k));
+    return { today, open, cur: open[0] || null, behind: open.filter((x) => x.p.d < today).length };
+  }
+  // "Spread the rest over the remaining days": the open portions over the reading days from
+  // today to the plan's last day, or, when there are fewer days than portions, one a reading
+  // day from today (the end moves later).
+  function spreadPlan(slug) {
+    const rec = planOf(slug);
+    if (!rec) return;
+    const o = planParams("?" + rec.link), st = planState(rec);
+    if (!st.open.length) return;
+    const lastDay = rec.snap[rec.snap.length - 1].d;
+    const from = Object.assign({}, o, { s: st.today });
+    let days = lastDay >= st.today ? planDays(from, 0, lastDay) : [];
+    const R = st.open.length;
+    if (days.length < R) days = planDays(from, R);
+    st.open.forEach((x, n) => { rec.snap[x.k] = Object.assign({}, x.p, { d: days[Math.floor(n * days.length / R)] }); });
+    rec.spread = st.today;
+    savePlan(slug, rec);
+  }
+  // The card on the home page and on the work's contents page: today's portion (or the next),
+  // with Read and Done. withTitle: name the work (home page).
+  function planCardHTML(slug, rec, withTitle) {
+    const st = planState(rec);
+    if (!st.cur) return "";
+    const p = st.cur.p, when = p.d <= st.today ? "Today" : "Next · " + dueLabel(p.d).replace(/ \d{4}$/, "");
+    return `
+        <div class="plan-card" data-plan="${esc(slug)}">
+          <p class="plan-card-head"><span class="continue-label">${esc(when)}</span>${withTitle ? ` <span class="plan-card-work">${esc(rec.title || "")}</span>` : ""}</p>
+          <p class="plan-card-what">${esc(p.lab)} <span class="plan-card-time">· ${esc(planMin(p.m))}</span></p>
+          ${st.behind ? `<p class="plan-card-behind">${esc((NUM_WORDS[st.behind] || num(st.behind)) + (st.behind === 1 ? " portion" : " portions"))} to catch up.
+            <button class="continue-forget plan-spread" type="button" data-plan="${esc(slug)}">Spread the rest over the remaining days</button></p>` : ""}
+          <div class="plan-card-acts">
+            <a class="shelf-dl plan-read" href="${esc(planHref(slug, p))}">Read</a>
+            <button class="shelf-dl plan-done" type="button" data-plan="${esc(slug)}" data-k="${st.cur.k}" aria-label="Done: ${esc(p.lab)}">Done</button>
+            <a class="shelf-view" href="#/plan?${esc(rec.link)}">The whole plan <span aria-hidden="true">→</span></a>
+          </div>
+        </div>`;
+  }
+  // The home page: the plans being followed (at most two, the soonest first). Nothing otherwise.
+  function homePlanHTML() {
+    const list = Object.keys(readingPlans()).map((slug) => [slug, planOf(slug)])
+      .filter(([, r]) => r && !r.finished && planState(r).cur)
+      .sort((a, b) => planState(a[1]).cur.p.d.localeCompare(planState(b[1]).cur.p.d)).slice(0, 2);
+    if (!list.length) return "";
+    return `<section class="plan-today home-plans" data-where="home" aria-label="Your reading plans">${list.map(([slug, r]) => planCardHTML(slug, r, true)).join("")}</section>`;
+  }
+  // The work's contents page: today's card, or a quiet line for a finished plan.
+  function workPlanHTML(slug) {
+    const rec = planOf(slug);
+    if (!rec) return "";
+    if (rec.finished) return `<p class="plan-finished">Reading plan finished on ${esc(dueLabel(rec.finished))}. <a href="#/plan?${esc(rec.link)}">See the plan</a></p>`;
+    return `<section class="plan-today" data-where="work:${esc(slug)}" aria-label="Your reading plan">${planCardHTML(slug, rec, false)}</section>`;
+  }
+  // Done and Spread on a card, wherever it is: the card is drawn again in place.
+  app.addEventListener("click", (e) => {
+    const b = e.target.closest(".plan-done, .plan-spread");
+    const box = b && b.closest(".plan-today");
+    if (!box) return;
+    const slug = b.dataset.plan;
+    if (b.classList.contains("plan-done")) { setPlanDone(slug, +b.dataset.k, true); announce("Marked as done."); }
+    else { spreadPlan(slug); announce("The rest of the plan is spread over the remaining days."); }
+    // On the plan page the table is drawn again too (its ticks and dates).
+    if (box.closest(".plan-page") && PLAN_REDRAW) { PLAN_FOCUS = ".plan-today .plan-read, .plan-finished"; PLAN_REDRAW(); return; }
+    const where = box.dataset.where;
+    const html = where === "home" ? homePlanHTML() : workPlanHTML(where.slice(5));
+    if (!html) { box.remove(); return; }
+    box.outerHTML = html;
+    const next = app.querySelector(`.plan-card[data-plan="${CSS.escape(slug)}"] .plan-read`) || app.querySelector(".plan-today .plan-read, .plan-finished a");
+    if (next) next.focus();
+  });
+  // The shelf's list of plans, followed and finished ("history").
+  function shelfPlansHTML() {
+    const list = Object.keys(readingPlans()).map((slug) => [slug, planOf(slug)]).filter(([, r]) => r);
+    if (!list.length) return "";
+    list.sort((a, b) => (!!a[1].finished - !!b[1].finished) || String(b[1].at).localeCompare(String(a[1].at)));
+    return `
+        <section class="shelf-group">
+          <h2>Reading plans · ${list.length}</h2>
+          <ul class="shelf-list">${list.map(([slug, r]) => {
+            const st = planState(r);
+            const what = r.finished ? `Finished on ${dueLabel(r.finished)}`
+              : st.cur ? `${st.cur.p.d <= st.today ? "Today" : "Next, " + dueLabel(st.cur.p.d)}: ${st.cur.p.lab}` : "";
+            return `
+            <li class="shelf-item"><a class="shelf-link" href="#/plan?${esc(r.link)}">
+              <span class="shelf-title">${esc(r.title || slug)}</span>
+              <span class="shelf-by">${esc([r.author, what].filter(Boolean).join(" · "))}</span></a>
+              <button class="shelf-remove plan-drop" type="button" data-plan="${esc(slug)}" aria-label="${r.finished ? "Remove from the list" : "Stop following"}: ${esc(r.title || slug)}">${r.finished ? "Remove" : "Stop"}</button></li>`;
+          }).join("")}</ul>
+        </section>`;
+  }
+  const planCount = () => Object.keys(readingPlans()).filter((slug) => planOf(slug)).length;
+
+  // A calendar file: one all-day event a portion, each with its link. Made in the browser.
+  function planICS(slug, title, portions) {
+    const escT = (s) => String(s).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+    const enc = new TextEncoder();
+    const fold = (line) => {                       // lines of at most 75 bytes
+      const out = [];
+      let cur = "";
+      for (const ch of line) {
+        if (enc.encode(cur + ch).length > (out.length ? 74 : 75)) { out.push(cur); cur = ""; }
+        cur += ch;
+      }
+      out.push(cur);
+      return out.join("\r\n ");
+    };
+    const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+Z$/, "Z");
+    const ymd = (d) => d.replace(/-/g, "");
+    const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Poetry Codex//Reading plan//EN", "CALSCALE:GREGORIAN",
+                   "X-WR-CALNAME:" + escT("Reading plan: " + title)];
+    portions.forEach((p, k) => {
+      const url = SITE + "/" + planHref(slug, p);
+      lines.push("BEGIN:VEVENT", `UID:plan-${slug}-${ymd(portions[0].d)}-${k + 1}@poetrycodex.com`, "DTSTAMP:" + stamp,
+        "DTSTART;VALUE=DATE:" + ymd(p.d), "DTEND;VALUE=DATE:" + ymd(addDays(p.d, 1)),
+        "SUMMARY:" + escT(`${title}: ${p.lab}`),
+        "DESCRIPTION:" + escT(`${planSize(p)}, ${planMin(p.m)}.\n${url}`), "URL:" + url,
+        "TRANSP:TRANSPARENT", "END:VEVENT");
+    });
+    lines.push("END:VCALENDAR");
+    return lines.map(fold).join("\r\n") + "\r\n";
+  }
+
+  // The page: the plan's settings (open when the link has no start yet), the table, Follow,
+  // the calendar file and the ways to share it. Changing a setting redraws the table and puts
+  // the new plan in the address without a new history entry.
+  let PLAN_FOCUS = "", PLAN_REDRAW = null;
+  function renderPlan() {
+    const o = planParams(location.hash), w = WORKS[o.w];
+    if (!w) {
+      setTitle("Reading plan");
+      app.innerHTML = `<p class="empty">This reading plan’s work could not be found. <a href="#/eras">Browse the archive →</a></p>`;
+      return;
+    }
+    const making = !o.s;
+    if (!o.s) o.s = dayKey(new Date());
+    if (!o.p && !o.e) o.p = w.sections.length > 1 ? { n: 3, u: "b" } : { n: 150, u: "l" };
+    if (w.sections.length === 1) { o.by = "even"; if (o.p && o.p.u === "b") o.p = { n: 150, u: "l" }; }
+    setTitle("Reading plan: " + w.title);
+    const here = location.hash;
+    if (EARLY_DRAWN !== here) renderLoading();
+    fetchWorkFile(o.w).then((work) => {
+      if (location.hash !== here) return;
+      drawPlan(w, work, o, making);
+    }).catch((e) => { if (location.hash === here) renderFetchError(e); });
+  }
+  function drawPlan(w, work, o, making) {
+    const slug = w.slug, one = work.sections.length === 1;
+    const siblings = worksList().filter((x) => x.authorSlug === w.authorSlug);
+    const name = w.title + (otherTranslations(w).length ? ` (${verShort(w)})` : "");
+    const pace = o.p || { n: one ? 150 : 3, u: one ? "l" : "b" };
+    app.innerHTML = `
+      <article class="detail plan-page">
+        <button class="back" id="back">← ${esc(w.title)} · Contents</button>
+        <p class="detail-subject">A reading plan</p>
+        <h1 class="detail-title">${esc(w.title)}</h1>
+        <p class="detail-author">by <a href="#/poet/${esc(w.authorSlug)}">${esc(w.author)}</a></p>
+        ${sourceLine(w.translator)}
+        <div class="plan-status"></div>
+        <details class="plan-make no-print"${making ? " open" : ""}>
+          <summary>${making ? "Make a reading plan" : "Change this plan"}</summary>
+          <form class="plan-form" novalidate>
+            ${siblings.length > 1 ? `<p class="plan-field"><label class="col-form-label" for="plan-w">Work</label>
+              <select class="shelf-pick" id="plan-w">${siblings.map((x) => `<option value="${esc(x.slug)}"${x.slug === slug ? " selected" : ""}>${esc(x.title + (x.translator ? " · " + translatorShort(trName(x.translator)) : ""))}</option>`).join("")}</select></p>` : ""}
+            <p class="plan-field"><label class="col-form-label" for="plan-s">Start</label>
+              <input class="col-form-input plan-date" id="plan-s" type="date" value="${esc(o.s)}" required></p>
+            <fieldset class="plan-set">
+              <legend class="col-form-label">How fast</legend>
+              <p class="plan-opt"><input type="radio" name="plan-how" id="plan-how-e" value="e"${o.e ? " checked" : ""}>
+                <label for="plan-how-e">Finish by</label>
+                <input class="col-form-input plan-date" id="plan-e" type="date" aria-label="Finish date" value="${esc(o.e || addDays(o.s, 55))}"></p>
+              <p class="plan-opt"><input type="radio" name="plan-how" id="plan-how-p" value="p"${o.e ? "" : " checked"}>
+                <label for="plan-how-p">At a pace of</label>
+                <input class="col-form-input plan-num" id="plan-n" type="number" min="${pace.u === "b" ? "0.25" : "5"}" step="${pace.u === "b" ? "0.5" : "10"}" value="${pace.n}" aria-label="How many">
+                <select class="shelf-pick plan-unit" id="plan-u" aria-label="Books a week or lines a day">
+                  ${one ? "" : `<option value="b"${pace.u === "b" ? " selected" : ""}>books a week</option>`}
+                  <option value="l"${pace.u === "l" ? " selected" : ""}>lines a day (about)</option>
+                </select></p>
+            </fieldset>
+            <fieldset class="plan-set">
+              <legend class="col-form-label">Reading days</legend>
+              <p class="plan-days">${PLAN_DAY_NAMES.map((n, k) => `<label class="plan-day"><input type="checkbox" value="${1 << k}"${o.d & (1 << k) ? " checked" : ""}> ${n}</label>`).join("")}</p>
+            </fieldset>
+            <fieldset class="plan-set"${one ? " hidden" : ""}>
+              <legend class="col-form-label">Split by</legend>
+              <p class="plan-opt"><input type="radio" name="plan-by" id="plan-by-b" value="book"${o.by === "book" ? " checked" : ""}> <label for="plan-by-b">Books (whole books in each portion)</label></p>
+              <p class="plan-opt"><input type="radio" name="plan-by" id="plan-by-e" value="even"${o.by === "even" ? " checked" : ""}> <label for="plan-by-e">Even portions (cut at a stanza or paragraph break)</label></p>
+            </fieldset>
+          </form>
+        </details>
+        <div class="plan-out"></div>
+      </article>`;
+    document.getElementById("back").addEventListener("click", () => { location.hash = "#/work/" + slug; });
+    const form = app.querySelector(".plan-form");
+    const read = () => {
+      const val = (id) => document.getElementById(id).value;
+      const how = form.querySelector('input[name="plan-how"]:checked').value;
+      let d = 0;
+      form.querySelectorAll(".plan-day input:checked").forEach((c) => { d += +c.value; });
+      const unit = val("plan-u"), n = parseFloat(val("plan-n"));
+      return { w: slug, s: dueDay(val("plan-s")) || o.s, e: how === "e" ? dueDay(val("plan-e")) : "",
+               p: how === "p" && n > 0 ? { n, u: unit } : (how === "p" ? pace : null), d: d || 127,
+               by: one ? "even" : (form.querySelector('input[name="plan-by"]:checked') || {}).value || "book" };
+    };
+    const update = () => {
+      const q = planParams("?" + planQuery(read()));
+      if (!q.p && !q.e) q.p = pace;
+      history.replaceState(history.state, "", "#/plan?" + planQuery(q));
+      EARLY_DRAWN = DATA ? "" : location.hash;
+      drawPlanOut(w, work, q, name);
+    };
+    form.addEventListener("input", (e) => {
+      if (e.target.id === "plan-w") return;
+      if (e.target.id === "plan-e") form.querySelector("#plan-how-e").checked = true;
+      if (e.target.id === "plan-n" || e.target.id === "plan-u") form.querySelector("#plan-how-p").checked = true;
+      if (e.target.id === "plan-u") {           // a sensible number for the other unit
+        const box = document.getElementById("plan-n");
+        box.value = e.target.value === "b" ? 3 : 150;
+        box.min = e.target.value === "b" ? "0.25" : "5"; box.step = e.target.value === "b" ? "0.5" : "10";
+      }
+      update();
+    });
+    form.addEventListener("submit", (e) => e.preventDefault());
+    const pick = document.getElementById("plan-w");
+    if (pick) pick.addEventListener("change", () => {
+      location.replace("#/plan?w=" + encodeURIComponent(pick.value));   // a new plan, made from the defaults
+    });
+    // The address always holds the whole plan, so the link to copy is the one shown.
+    const q0 = Object.assign({}, o, { p: o.e ? null : (o.p || pace) });
+    history.replaceState(history.state, "", "#/plan?" + planQuery(q0));
+    EARLY_DRAWN = DATA ? "" : location.hash;   // drawn without the index, which it does not need
+    drawPlanOut(w, work, q0, name);
+  }
+  function drawPlanOut(w, work, o, name) {
+    const slug = w.slug, link = planQuery(o);
+    const made = planPortions(work, o);
+    let rec = planOf(slug);
+    const mine = rec && rec.link === link;
+    // The work's parts have changed since the plan was followed: the portions are drawn
+    // again and what was done is carried over by where it stands in the work.
+    if (mine && rec.sig !== made.sig) {
+      const was = rec.snap.filter((p, k) => (rec.done || []).includes(k));
+      rec.snap = made.portions;
+      rec.sig = made.sig;
+      rec.done = made.portions.map((p, k) => [p, k]).filter(([p]) => was.some((x) => (p.f0 + p.f1) / 2 >= x.f0 && (p.f0 + p.f1) / 2 <= x.f1)).map(([, k]) => k);
+      savePlan(slug, rec);
+      rec = planOf(slug);
+    }
+    const portions = mine ? rec.snap : made.portions;
+    const done = new Set(mine ? rec.done || [] : []);
+    const first = portions[0].d, last = portions[portions.length - 1].d;
+    const total = portions.reduce((a, p) => a + p.m, 0);
+    const url = SITE + "/#/plan?" + link;
+    const status = app.querySelector(".plan-status");
+    status.innerHTML = mine ? (rec.finished
+      ? `<p class="plan-finished" tabindex="-1">Finished on ${esc(dueLabel(rec.finished))}.</p>`
+      : `<p class="plan-following">You are following this plan, since ${esc(dueLabel(rec.started))}.${rec.spread ? ` The rest was spread out on ${esc(dueLabel(rec.spread))}.` : ""}</p>
+         <section class="plan-today" data-where="work:${esc(slug)}" aria-label="Your reading plan">${planCardHTML(slug, rec, false)}</section>`)
+      : rec ? `<p class="plan-following">You follow a different plan for this work. <a href="#/plan?${esc(rec.link)}">Open it</a></p>` : "";
+    const out = app.querySelector(".plan-out");
+    out.innerHTML = `
+        ${o.e && o.e < o.s ? `<p class="plan-note">The finish date is before the start, so the plan has one day.</p>` : ""}
+        <p class="plan-sum">${num(portions.length)} reading${portions.length === 1 ? "" : "s"}, ${esc(dueLabel(first))} to ${esc(dueLabel(last))} · ${esc(planMin(total))} in all.</p>
+        <div class="plan-acts cite-row no-print">
+          ${mine ? `<button class="shelf-dl plan-stop" type="button">Stop following</button>`
+            : `<button class="shelf-dl plan-follow" type="button">${rec ? "Follow this plan instead" : "Follow this plan"}</button>`}
+          <button class="shelf-dl plan-ics" type="button">Add to calendar (.ics)</button>
+          <button class="shelf-dl plan-print" type="button">Print</button>
+        </div>
+        <div class="table-wrap plan-wrap">
+        <table class="plan-table">
+          <caption>Reading plan: ${esc(name)}, ${esc(dueLabel(first))} to ${esc(dueLabel(last))}</caption>
+          <thead><tr><th scope="col">Date</th><th scope="col">Reading</th><th scope="col">Length</th><th scope="col">Time</th>${mine ? `<th scope="col">Done</th>` : ""}</tr></thead>
+          <tbody>${portions.map((p, k) => `
+            <tr${done.has(k) ? ' class="is-done"' : ""}>
+              <td class="plan-d">${esc(dueLabel(p.d).replace(/ \d{4}$/, ""))}</td>
+              <th scope="row" class="plan-p"><a href="${esc(planHref(slug, p))}">${esc(p.lab)}</a></th>
+              <td class="plan-n">${esc(planSize(p))}</td>
+              <td class="plan-m">${esc(planMin(p.m).replace(/^about /, ""))}</td>
+              ${mine ? `<td class="plan-c"><input type="checkbox" class="plan-tick" data-k="${k}" aria-label="Done: ${esc(p.lab)}"${done.has(k) ? " checked" : ""}></td>` : ""}
+            </tr>`).join("")}
+          </tbody>
+        </table>
+        </div>
+        <section class="assign-panel plan-share no-print" aria-labelledby="plan-share-head">
+          <h2 class="assign-head" id="plan-share-head">Share this plan</h2>
+          <p class="assign-how">The plan travels in the link itself: the same link gives everyone the same dates and portions.
+            Nothing about the reader is stored or sent.</p>
+          <div class="cite-row assign-share">
+            <button class="shelf-dl plan-copy" type="button">Copy link</button>
+            <a class="shelf-dl" href="https://classroom.google.com/share?url=${esc(encodeURIComponent(url))}&amp;title=${esc(encodeURIComponent("Reading plan: " + name))}" target="_blank" rel="noopener noreferrer">Post to Google Classroom</a>
+            <button class="shelf-dl plan-lms" type="button">Copy for Moodle, Canvas or Blackboard</button>
+            <a class="shelf-dl" href="mailto:?subject=${esc(encodeURIComponent("Reading plan: " + name))}&amp;body=${esc(encodeURIComponent(url))}">Email</a>
+          </div>
+        </section>
+        <p class="print-only col-url">Online: ${esc(url)}</p>`;
+    PLAN_REDRAW = () => drawPlanOut(w, work, o, name);
+    const again = (focus) => { PLAN_FOCUS = focus; PLAN_REDRAW(); };
+    const btn = (sel, fn) => { const b = out.querySelector(sel); if (b) b.addEventListener("click", fn); };
+    btn(".plan-follow", () => {
+      savePlan(slug, { link, started: dayKey(new Date()), done: [], snap: made.portions, sig: made.sig, title: name, author: w.author });
+      announce("You are following this plan. Today’s reading is shown on the home page and on the work’s contents.");
+      again(".plan-stop");
+    });
+    btn(".plan-stop", () => { dropPlan(slug); announce("You no longer follow this plan."); again(".plan-follow"); });
+    btn(".plan-ics", () => downloadFile(`reading-plan-${slug}.ics`, "text/calendar", planICS(slug, name, portions)));
+    btn(".plan-print", () => window.print());
+    btn(".plan-copy", (e) => {
+      const b = e.currentTarget;
+      copyText(url).then(() => { flash(b, "Copied"); announce("Link copied."); }, () => copyBox(url, true));
+    });
+    btn(".plan-lms", (e) => {
+      const b = e.currentTarget, html = `<a href="${esc(url)}">${esc("Reading plan: " + name)}</a>`;
+      copyText(url, html).then(() => { flash(b, "Copied"); announce("Link copied for your course page."); }, () => copyBox(html, true));
+    });
+    out.querySelectorAll(".plan-tick").forEach((c) => c.addEventListener("change", () => {
+      setPlanDone(slug, +c.dataset.k, c.checked);
+      announce(c.checked ? "Marked as done." : "Marked as not done.");
+      again(`.plan-tick[data-k="${c.dataset.k}"]`);
+    }));
+    if (PLAN_FOCUS) { const f = app.querySelector(PLAN_FOCUS); PLAN_FOCUS = ""; if (f) f.focus(); }
   }
 
   // ---------- MY NOTES AND HIGHLIGHTS: #/notes ----------
@@ -6152,16 +9922,21 @@
   // entry. Everything is made in the browser: nothing is sent anywhere.
   // The reader's own meanings for the colours ("Question", "Image"…) are kept in this browser
   // only (pc-hl-names): the account keeps only the kinds its Worker knows.
+  // Tags (#words in the notes, noteParts) make a row of toggles under the colours, most used
+  // first, and combine: every tag chosen must be on the item. Marks whose words can no longer
+  // be found in their text are gathered at the end under "Notes whose lines have moved".
+  // "Export my questions" downloads every question (the "?" mark) as a Word-ready file in one
+  // click, each with its lines, the link to them, the reader's words and its citation.
   const HL_NAMES_KEY = "pc-hl-names";
   const HL_SUGGEST = { yellow: "Question", green: "Image", blue: "Sound", pink: "Theme" };
   function hlMeanings() {
     const n = readStore(HL_NAMES_KEY);
     return Object.fromEntries(HL_COLORS.map((c) => [c, typeof n[c] === "string" ? n[c].trim().slice(0, 40) : ""]));
   }
-  const NB_KINDS = HL_COLORS.concat(["line", "note"]);
-  const nbKindName = (k, names) => k === "line" ? "Line note" : k === "note" ? "Note on the whole text"
+  const NB_KINDS = HL_KINDS.concat(["line", "note"]);
+  const nbKindName = (k, names) => k === "line" ? "Line note" : k === "note" ? "Note on the whole text" : k === "q" ? "Question"
     : HL_NAMES[k] + (names[k] ? " · " + names[k] : "");
-  const NB = { q: "", kinds: [], notesOnly: false, sort: "text", text: "" };   // the filters, kept for the visit
+  const NB = { q: "", kinds: [], tags: [], notesOnly: false, sort: "text", text: "" };   // the filters, kept for the visit
   const NB_TEXTS = new Map();   // entry id -> Promise<the text as its page lays it out, or null>
   let NB_ITEMS = [], NB_READY = Promise.resolve(), nbTimer = 0;
   // The text behind an entry id, cut into the units its page numbers (verse lines, or
@@ -6213,13 +9988,13 @@
       if (!m || !m.id) return;
       const hl = m.kind === "hl";
       items.push({ key: tid + "|" + m.id, tid, g, m, type: hl ? "hl" : "line",
-        kind: hl ? (HL_COLORS.includes(m.color) ? m.color : "yellow") : "line",
-        quote: String(m.quote || ""), note: String(m.text || ""), when: m.created || m.updated || "" });
+        kind: hl ? (hlColor(m.color)) : "line",
+        quote: String(m.quote || ""), note: String(m.text || ""), tags: noteTags(m.text), when: m.created || m.updated || "" });
     }));
     Object.values(allNotes()).forEach((n) => {
       if (!n || typeof n.id !== "string" || typeof n.text !== "string" || !n.text.trim()) return;
       items.push({ key: n.id + "|note", tid: n.id, g: n, m: n, type: "note", kind: "note",
-        quote: "", note: n.text, when: n.created || n.updated || "" });
+        quote: "", note: n.text, tags: noteTags(n.text), when: n.created || n.updated || "" });
     });
     return items;
   }
@@ -6294,6 +10069,7 @@
     const words = searchWords(NB.q);
     return NB_ITEMS.filter((it) => (!NB.kinds.length || NB.kinds.includes(it.kind))
       && (!NB.notesOnly || it.note.trim())
+      && NB.tags.every((t) => it.tags.includes(t))
       && (!NB.text || it.tid === NB.text || it.where.top === NB.text)
       && (!words.length || hasAll(fold([it.quote, (it.lines || []).join(" "), it.note, it.where.topTitle, it.where.subTitle].join(" ")), words)));
   }
@@ -6334,7 +10110,7 @@
         <p class="nb-meta">${chip}<span class="nb-kind">${esc(kind)}</span>${it.loc ? ` · ${esc(it.loc)}` : ""}${it.when ? ` · ${esc(shortDate(it.when))}` : ""}</p>
         ${withSrc ? `<p class="nb-src">${esc(src)}</p>` : ""}${quote}
         ${it.changed ? `<p class="nb-changed">The text has changed since you marked this: these are the words as you marked them.</p>` : ""}
-        ${it.note.trim() ? `<p class="nb-note">${esc(it.note)}</p>` : ""}
+        ${it.note.trim() ? `<p class="nb-note">${noteHTML(it.note)}</p>` : ""}
         <p class="nb-cite">${nbCite(it).html}</p>
         <p class="nb-go"><a href="${esc(nbHref(it))}">${it.range ? "Go to " + esc(it.loc) : "Go to the text"}<span class="visually-hidden"> in ${esc(w.subTitle)}</span> <span aria-hidden="true">→</span></a></p>
       </li>`;
@@ -6342,7 +10118,8 @@
   // The filters in words, for the count and the head of a download ("Yellow, Line notes · …").
   function nbFilterWords(names) {
     const parts = [];
-    if (NB.kinds.length) parts.push(NB.kinds.map((k) => k === "line" ? "line notes" : k === "note" ? "notes on whole texts" : nbKindName(k, names)).join(", "));
+    if (NB.kinds.length) parts.push(NB.kinds.map((k) => k === "line" ? "line notes" : k === "note" ? "notes on whole texts" : k === "q" ? "questions" : nbKindName(k, names)).join(", "));
+    if (NB.tags.length) parts.push("tagged " + NB.tags.map((t) => "#" + t).join(" and "));
     if (NB.notesOnly) parts.push("with a note");
     if (NB.text) { const it = NB_ITEMS.find((x) => x.tid === NB.text || x.where.top === NB.text); if (it) parts.push(it.tid === NB.text ? it.where.subTitle : it.where.topTitle); }
     if (NB.q.trim()) parts.push(`matching “${NB.q.trim()}”`);
@@ -6381,16 +10158,20 @@
                 <button type="button" data-dl="md">Markdown (.md)</button>
                 <button type="button" data-dl="print">Print</button>
                 <p class="nb-dl-note">Only what is shown, each quotation with its MLA citation.</p>
+                <button type="button" data-dl="qmd" class="nb-dl-q">My questions only (Markdown)</button>
               </div>
             </details>
+            <button type="button" class="nb-qx" hidden>Export my questions</button>
           </div>
           <div class="nb-filters" id="nb-filters">
             <div class="nb-chips" role="group" aria-label="Show only">
               ${NB_KINDS.map((k) => `<button type="button" class="chip nb-chip" data-k="${k}" aria-pressed="${NB.kinds.includes(k)}">${
                 k === "line" ? `<span class="nb-dot" aria-hidden="true"></span>Line notes` : k === "note" ? "Notes on whole texts"
+                : k === "q" ? `<span class="hl-chip hl-q" aria-hidden="true"></span>Questions`
                 : `<span class="hl-chip hl-${k}" aria-hidden="true"></span><span class="nb-chip-t">${esc(nbKindName(k, names))}</span>`}</button>`).join("")}
               <button type="button" class="nb-name">Name colours</button>
             </div>
+            <div class="nb-tags" role="group" aria-label="Tags" hidden></div>
             <div class="nb-row2">
               <label class="nb-check"><input type="checkbox" class="nb-only"${NB.notesOnly ? " checked" : ""}> Notes only</label>
               <label class="nb-sel"><span>Text</span> <select class="nb-text"></select></label>
@@ -6459,18 +10240,43 @@
         const list = nbShown(), t = new Date();
         const day = [t.getFullYear(), t.getMonth() + 1, t.getDate()].map((x) => String(x).padStart(2, "0")).join("-");
         if (how === "print") window.print();
+        else if (how === "qmd") downloadFile(`poetry-codex-questions-${day}.md`, "text/markdown", nbMarkdown(nbQuestions(), NB_QS));
         else if (how === "md") downloadFile(`poetry-codex-notes-${day}.md`, "text/markdown", nbMarkdown(list));
         else downloadFile(`poetry-codex-notes-${day}.html`, "text/html", nbWordHTML(list));
       });
     }));
+    // "Export my questions": every question, whatever the filters, as a Word-ready file.
+    app.querySelector(".nb-qx").addEventListener("click", () => NB_READY.then(() => {
+      downloadFile(`poetry-codex-questions-${isoDay(new Date())}.html`, "text/html", nbWordHTML(nbQuestions(), NB_QS));
+      announce("Your questions are downloaded.");
+    }));
     nbStickyTop();
     nbLoad();
+  }
+  const nbQuestions = () => NB_ITEMS.filter((it) => it.kind === "q");
+  const NB_QS = { title: "My questions", intro: "Each question with its lines, the link to them, your words and the citation" };
+  // The tags of every note, as toggles (drawn when the marks are read, so a click keeps its place).
+  function nbTagsDraw() {
+    const box = app.querySelector(".nb-tags");
+    if (!box) return;
+    const tags = tagCounts(NB_ITEMS.map((it) => it.note));
+    NB.tags = NB.tags.filter((t) => tags.some((x) => x.tag === t));
+    box.hidden = !tags.length;
+    box.innerHTML = tags.length ? `<span class="nb-tags-l" aria-hidden="true">Tags</span>` + tags.map((t) =>
+      `<button type="button" class="chip nb-chip nb-tag" data-t="${esc(t.tag)}" aria-pressed="${NB.tags.includes(t.tag)}">${esc(t.label)} <span class="om-n">${num(t.n)}</span></button>`).join("") : "";
+    box.querySelectorAll(".nb-tag").forEach((b) => b.addEventListener("click", () => {
+      const t = b.dataset.t, on = !NB.tags.includes(t);
+      NB.tags = on ? NB.tags.concat(t) : NB.tags.filter((x) => x !== t);
+      b.setAttribute("aria-pressed", String(on));
+      nbDraw();
+    }));
   }
   // The marks again (on opening the page, and when the account's copy comes in), then each
   // text, after which the list is drawn again with lines and citations.
   function nbLoad() {
     NB_ITEMS = nbItems();
     NB_ITEMS.forEach((it) => { nbPlace(it, null); it.where = nbWhere(it); });
+    nbTagsDraw();
     const here = location.hash, items = NB_ITEMS;
     nbDraw(true);
     NB_READY = Promise.all([...new Set(items.map((it) => it.tid))].map((tid) => nbText(tid).then((tx) => {
@@ -6496,12 +10302,14 @@
     const filt = nbFilterWords(names);
     app.querySelector(".nb-count").textContent = (n === total ? marked(total) : `${num(n)} of ${marked(total)}: ${filt}`)
       + (waiting ? ". Finding each one in its text…" : "");
-    const active = NB.kinds.length + (NB.notesOnly ? 1 : 0) + (NB.text ? 1 : 0);
+    const active = NB.kinds.length + NB.tags.length + (NB.notesOnly ? 1 : 0) + (NB.text ? 1 : 0);
+    app.querySelector(".nb-qx").hidden = !nbQuestions().length;
+    app.querySelector(".nb-dl-q").hidden = !nbQuestions().length;
     app.querySelector(".nb-more").textContent = active ? `Filters (${active})` : "Filters";
     if (!n) {
       out.innerHTML = `<p class="nb-none">Nothing matches these filters. <button type="button" class="nb-clear">Show everything</button></p>`;
       out.querySelector(".nb-clear").addEventListener("click", () => {
-        Object.assign(NB, { q: "", kinds: [], notesOnly: false, text: "" });
+        Object.assign(NB, { q: "", kinds: [], tags: [], notesOnly: false, text: "" });
         app.querySelector(".nb-q").value = "";
         app.querySelector(".nb-only").checked = false;
         app.querySelectorAll(".nb-chip").forEach((b) => b.setAttribute("aria-pressed", "false"));
@@ -6515,13 +10323,21 @@
         .map((it) => nbItemHTML(it, names, true)).join("")}</ul>`;
       return;
     }
-    out.innerHTML = nbGroups(list).map((t) => `
+    // Marks whose words are no longer in their text: kept, together, at the end.
+    const moved = list.filter((it) => it.changed);
+    out.innerHTML = nbGroups(list.filter((it) => !it.changed)).map((t) => `
       <section class="nb-group">
         <h2 class="nb-top">${esc(t.title)}${t.by ? ` <span class="nb-top-by">${esc(t.by)}</span>` : ""}</h2>
         ${t.subs.map((s) => `
           ${s.title && s.title !== t.title ? `<h3 class="nb-sub"><a href="${esc(routeFor(s.tid))}">${esc(s.title)}</a></h3>` : ""}
           <ul class="nb-list">${s.items.map((it) => nbItemHTML(it, names, false)).join("")}</ul>`).join("")}
-      </section>`).join("");
+      </section>`).join("") + (moved.length ? `
+      <section class="nb-group nb-moved">
+        <h2 class="nb-top">Notes whose lines have moved</h2>
+        <p class="nb-moved-d">These texts have been corrected or set again since you marked them, and the words you marked
+        could not be found in them. Each is kept here with the words as you marked them.</p>
+        <ul class="nb-list">${moved.map((it) => nbItemHTML(it, names, true)).join("")}</ul>
+      </section>` : "");
   }
   // Above 780px the top bar sticks, and the filter bar sticks just under it.
   function nbStickyTop() {
@@ -6545,23 +10361,44 @@
     return citations(o)[0];
   }
   const nbStanzas = (it) => (it.lines && !it.changed ? it.lines : [it.quote]).join("\n").split("\n\n").map((st) => st.split("\n"));
-  const nbKindLabel = (it, names) => it.type === "hl" ? `Highlight, ${it.kind}${names[it.kind] ? ` (${names[it.kind]})` : ""}` : nbLabel(it, names);
+  const nbKindLabel = (it, names) => it.kind === "q" ? "Question"
+    : it.type === "hl" ? `Highlight, ${it.kind}${names[it.kind] ? ` (${names[it.kind]})` : ""}` : nbLabel(it, names);
+  // ---------- exports that link back ----------
+  // The Markdown downloads (My notes, the shelf) open cleanly in Obsidian or any notes app:
+  // YAML front matter (title, author, translator, url, exported), headings in plain words
+  // (no backslash escapes, and none of # | ^ [ ] that break an Obsidian [[note#heading]]
+  // link), and under each quoted passage the address of its lines. In the Word file each
+  // quotation is itself a link to its lines.
+  // f: {title, author, translator, url, exported}; a list gives a YAML list, empty drops out.
+  function frontMatter(f) {
+    const y = (v) => JSON.stringify(String(v));   // a JSON string is a valid YAML scalar
+    return "---\n" + Object.entries(f).map(([k, v]) => {
+      const vs = (Array.isArray(v) ? v : [v]).filter(Boolean);
+      return !vs.length ? "" : !Array.isArray(v) ? `${k}: ${y(vs[0])}\n`
+        : `${k}:\n` + vs.map((x) => `  - ${y(x)}\n`).join("");
+    }).join("") + "---\n\n";
+  }
+  const mdHead = (s) => String(s || "").replace(/[#^|[\]\\*_`<>]/g, "").replace(/\s+/g, " ").trim();
+  const uniq = (xs) => [...new Set(xs.filter(Boolean))];
+  // A mark's lines (?l=), or the text's own address when they cannot be found in it now.
+  const markURL = (it) => it.range ? SITE + "/" + nbHref(it) : SITE + shelfPath(it.tid);
   // A file Word and Google Docs open as a document: a heading for each text, the quotation
-  // indented with its line breaks, the note, then the citation.
-  function nbWordHTML(list) {
-    const names = hlMeanings(), filt = nbFilterWords(names);
+  // indented with its line breaks (a link to its lines), the note, then the citation.
+  // o: {title, intro} for a preset ("Export my questions"); else the page's filters say what it holds.
+  function nbWordHTML(list, o) {
+    const names = hlMeanings(), filt = o ? "" : nbFilterWords(names), title = o ? o.title : "My notes and highlights";
     const lineHTML = (l) => esc(l).replace(/^ +/, (s) => " ".repeat(s.length));
     const body = nbGroups(list).map((t) => `<h2>${esc(t.title)}${t.by ? ` <span class="by">— ${esc(t.by)}</span>` : ""}</h2>\n`
       + t.subs.map((s) => (s.title && s.title !== t.title ? `<h3>${esc(s.title)}</h3>\n` : "") + s.items.map((it) => {
         const c = nbCite(it);
         return `<p class="meta">${esc(nbKindLabel(it, names))}${it.loc ? " · " + esc(it.loc) : ""}</p>\n`
-          + (it.type === "note" ? "" : `<blockquote>${nbStanzas(it).map((st) => `<p>${st.map(lineHTML).join("<br>")}</p>`).join("")}</blockquote>\n`)
+          + (it.type === "note" ? "" : `<blockquote>${nbStanzas(it).map((st) => `<p><a href="${esc(markURL(it))}">${st.map(lineHTML).join("<br>")}</a></p>`).join("")}</blockquote>\n`)
           + (it.changed ? `<p class="meta">The text has changed since this was marked: these are the words as marked.</p>\n` : "")
           + (it.note.trim() ? `<p class="note">${esc(it.note.trim()).replace(/\n/g, "<br>")}</p>\n` : "")
           + `<p class="cite">${c.html}</p>\n`;
       }).join("")).join("")).join("");
     return `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><title>My notes and highlights · Poetry Codex</title>
+<html lang="en"><head><meta charset="utf-8"><title>${esc(title)} · Poetry Codex</title>
 <style>
 body { font-family: Georgia, "Times New Roman", serif; font-size: 12pt; line-height: 1.5; color: #000; max-width: 42em; margin: 2em auto; }
 h1 { font-size: 20pt; font-weight: normal; margin: 0 0 4pt; }
@@ -6569,22 +10406,31 @@ h2 { font-size: 15pt; margin: 22pt 0 4pt; } h2 .by { font-weight: normal; font-s
 h3 { font-size: 12.5pt; font-style: italic; font-weight: normal; margin: 14pt 0 4pt; }
 p { margin: 0 0 6pt; } .intro { color: #444; font-size: 10.5pt; }
 .meta { font-family: Arial, sans-serif; font-size: 9pt; color: #555; margin: 12pt 0 3pt; }
-blockquote { margin: 0 0 6pt 0.5in; } blockquote p { margin: 0 0 6pt; }
+blockquote { margin: 0 0 6pt 0.5in; } blockquote p { margin: 0 0 6pt; } blockquote a { color: #000; text-decoration: none; }
 .note { margin: 0 0 6pt 0.5in; } .cite { margin: 0 0 6pt 0.5in; font-size: 10.5pt; color: #333; }
 </style></head><body>
-<h1>My notes and highlights</h1>
-<p class="intro">From Poetry Codex (poetrycodex.com), ${esc(shortDate(new Date().toISOString()))}${filt ? ". Only " + esc(filt) : ""}.</p>
+<h1>${esc(title)}</h1>
+<p class="intro">From Poetry Codex (poetrycodex.com), ${esc(shortDate(new Date().toISOString()))}${filt ? ". Only " + esc(filt) : ""}${o && o.intro ? ". " + esc(o.intro) : ""}.</p>
 ${body}</body></html>`;
   }
-  function nbMarkdown(list) {
-    const names = hlMeanings(), filt = nbFilterWords(names);
+  function nbMarkdown(list, o) {
+    const names = hlMeanings(), filt = o ? "" : nbFilterWords(names), title = o ? o.title : "My notes and highlights";
     const md = (s) => String(s || "").replace(/([\\`*_[\]<>])/g, "\\$1");
     const mdCite = (h) => h.replace(/<\/?i>/g, "_").replace(/<[^>]+>/g, "").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
-    return `# My notes and highlights\n\nFrom Poetry Codex (${SITE}), ${shortDate(new Date().toISOString())}${filt ? ". Only " + filt : ""}.\n\n`
-      + nbGroups(list).map((t) => `## ${md(t.title)}${t.by ? " — " + md(t.by) : ""}\n\n`
-        + t.subs.map((s) => (s.title && s.title !== t.title ? `### ${md(s.title)}\n\n` : "") + s.items.map((it) =>
+    // The front matter names the text when the file holds one, else every poet and translator.
+    const groups = nbGroups(list), one = groups.length === 1 && groups[0].subs.length === 1 ? groups[0].subs[0] : null;
+    const src = (it) => it.tx || it.g || {};
+    const whose = (k) => uniq(k === "tr" ? list.flatMap((it) => citeTranslators(src(it).translator)) : list.map((it) => src(it).author));
+    const head = frontMatter(one
+      ? { title: one.tid.startsWith("work:") && one.title && one.title !== groups[0].title ? groups[0].title + ", " + one.title : one.title || groups[0].title,
+          author: whose("au")[0] || "", translator: whose("tr"), url: SITE + shelfPath(one.tid), exported: isoDay(new Date()) }
+      : { title, author: whose("au"), translator: whose("tr"), url: SITE + "/#/notes", exported: isoDay(new Date()) });
+    return head + `# ${title}\n\nFrom Poetry Codex (${SITE}), ${shortDate(new Date().toISOString())}${filt ? ". Only " + filt : ""}${o && o.intro ? ". " + o.intro : ""}.\n\n`
+      + groups.map((t) => `## ${mdHead(t.title)}${t.by ? " — " + mdHead(t.by) : ""}\n\n`
+        + t.subs.map((s) => (s.title && s.title !== t.title ? `### ${mdHead(s.title)}\n\n` : "") + s.items.map((it) =>
           `*${md(nbKindLabel(it, names))}${it.loc ? " · " + it.loc : ""}*\n\n`
           + (it.type === "note" ? "" : nbStanzas(it).map((st) => st.map((l) => "> " + md(l).replace(/^ +/, (x) => " ".repeat(x.length))).join("  \n")).join("\n>\n") + "\n\n")
+          + (it.type === "note" ? "" : `<${markURL(it)}>\n\n`)
           + (it.changed ? "(The text has changed since this was marked: these are the words as marked.)\n\n" : "")
           + (it.note.trim() ? it.note.trim().split("\n").map(md).join("  \n") + "\n\n" : "")
           + mdCite(nbCite(it).html) + "\n\n").join("")).join("")).join("");
@@ -6692,7 +10538,7 @@ ${body}</body></html>`;
         <button type="button" class="continue-forget rv-hide">Hide this card</button>
       </div>
       <div class="rv-body nb-k-${esc(it.kind)}">${rvQuoteHTML(it, test)}</div>
-      ${it.note.trim() ? `<p class="rv-note">${esc(it.note)}</p>` : ""}
+      ${it.note.trim() ? `<p class="rv-note">${noteHTML(it.note)}</p>` : ""}
       <p class="rv-src"><span class="rv-title">${esc(src)}</span>${by ? ` · ${esc(by)}` : ""}
         <a class="rv-go" href="${esc(nbHref(it))}">${it.range ? "Go to " + esc(it.loc) : "Go to the text"}<span class="visually-hidden"> in ${esc(w.subTitle)}</span> <span aria-hidden="true">→</span></a></p>
       <div class="rv-actions">
@@ -7362,11 +11208,12 @@ ${body}</body></html>`;
     const poems = poetFile.poems;
     const themes = p.subjects.length
       ? `<div class="themes">${p.subjects.map((s) => `<span class="theme-tag" data-sub="${esc(s)}">${esc(s)}</span>`).join("")}</div>` : "";
-    const lang = langAttr(p.authorSlug, p.translator);
+    const lang = langAttr(p.authorSlug, p.translator), tlang = textLangAttr(p.authorSlug, p.translator, p.text, p.id);
     const form = DATA ? (DATA.poems.find((q) => q.id === p.id) || {}).form : "";   // index only (B3)
     EARLY_DRAWN = DATA ? "" : location.hash;   // drawn without the index, which it does not fetch
     EARLY_REDRAW = false;
-    const cite = { author: p.author, title: p.title, translator: p.translator, path: `/poem/${slug}/${n}/` };
+    const cite = { author: p.author, title: p.title, translator: p.translator, path: `/poem/${slug}/${n}/`,
+                   year: citeYear(p.translator, ""), lang: citeLang(p.authorSlug, p.translator, p.title) };
     const entry = { id: slug + "/" + n, kind: "poem", title: p.title, author: p.author, translator: p.translator || "" };
     const par = parList("poems", p.id);
     const long = lineCount(p.text) > LONG_POEM;   // a long poem keeps its place, like a book
@@ -7379,14 +11226,14 @@ ${body}</body></html>`;
         ${findButtonHTML()}
         ${learnable(p.text, p.translator) ? learnButtonHTML() : ""}
         ${surpriseBarHTML()}
-        <div class="detail-subject">${esc(p.primarySubject)}${form ? " · " + esc(form) : ""}</div>
+        <div class="detail-subject">${esc(p.primarySubject)}${form ? ` · <a class="form-term" href="${termHref(formTerm(form))}" title="What is ${esc(withArticle(form.toLowerCase()))}?">${esc(form)}</a>` : ""}</div>
         <h1 class="detail-title"${lang}>${esc(p.title)}</h1>
         <p class="detail-author">by <a href="#/poet/${esc(p.authorSlug)}">${esc(p.author)}</a>${datesHTML(p.authorSlug)}</p>
         ${sourceLine(p.translator, p.collection, long ? readTime(p.text, isProse(p.text, p.translator)) : "")}
         ${themes}
         <hr class="rule">
         ${enginePanel(p.text, { compare: true, gloss: true })}
-        ${poemBlock(p.text, { label: "The Poem", translator: p.translator, lang, parallel: parCtlHTML("poems", p.id, par) })}
+        ${poemBlock(p.text, { label: "The Poem", translator: p.translator, lang: tlang, parallel: parCtlHTML("poems", p.id, par) })}
         <p class="book-source-slot" hidden></p>
         ${p.note ? `<div class="rule-ornament">✦ ✦ ✦</div>
         <p class="section-label">Codex Note</p>
@@ -7414,6 +11261,9 @@ ${body}</body></html>`;
     bindFacing({ kind: "poem", key: p.id, list: par, build: (e, other) => poemFacing(p, other, e),
                  onShow: (el) => { if (READING_NOW && READING_NOW.poem === entry.id) { READING_NOW.el = el; drawProgress(); } } });
     bindCite(cite);
+    metaCitation(cite);
+    bindPrint({ cite, entry, title: p.title, author: p.author, authorSlug: p.authorSlug, translator: p.translator,
+                collection: p.collection || "", kicker: p.primarySubject + (form ? " · " + form : "") });
     { const here = location.hash; fetchSources(p.authorSlug).then((d) => applySource(cite, poemSource(d, p), here)); }
     bindShelfButton(entry);
     bindListNext();
@@ -7422,7 +11272,7 @@ ${body}</body></html>`;
     bindQuoteTools(cite, p.authorSlug, p.translator, p.text);
     bindListen(listenLang(p.authorSlug, p.translator, p.text));
     restoreScroll();
-    bindLearn({ entry, text: p.text, translator: p.translator, lang, par });
+    bindLearn({ entry, text: p.text, translator: p.translator, lang: tlang, par });
     // Every poem goes on the recently read list; a long one also keeps the reader's place,
     // and opened from "Continue reading" it scrolls back there.
     noteRecent({ id: entry.id, kind: "poem", title: p.title, author: p.author });
@@ -7440,6 +11290,7 @@ ${body}</body></html>`;
     }
     showLinkedLines();
     bindReadingBar();
+    bindEchoes({ id: entry.id });
   }
 
   // ---------- Listen: the text read aloud by the device's own voice ----------
@@ -7497,6 +11348,7 @@ ${body}</body></html>`;
   function listenButton(root) {
     const host = root.closest(".text-solo") || root;
     let row = host.previousElementSibling;
+    if (row && row.classList.contains("om-bar")) row = row.previousElementSibling;   // "Only my marks" bar
     if (!row || !row.classList.contains("ln-bar")) {
       row = document.createElement("div");
       row.className = "ln-bar";
@@ -7600,12 +11452,17 @@ ${body}</body></html>`;
     return listenBar;
   }
   const listenRate = () => (LISTEN_RATES.includes(prefs().listenRate) ? prefs().listenRate : 1);
-  function startListen(btn) {
+  // from: a line or paragraph to start at ("Listen from here" in the "This line" panel); on
+  // the facing pages, a line of the original starts at the translation in its row.
+  function startListen(btn, from) {
     const ctx = LISTEN;
     if (!ctx) return;
     ctx.units = listenUnits();
     if (!ctx.units.length) { flash(btn, "Show the translation to listen"); return; }
-    ctx.at = listenStart(ctx.units);
+    const row = from && from.closest(".fx-row");
+    const k = !from ? -1 : ctx.units.findIndex((u) => u.el === from || from.contains(u.el) || u.el.contains(from)
+      || (row && row === u.el.closest(".fx-row")));
+    ctx.at = k >= 0 ? k : listenStart(ctx.units);
     const bar = listenBarEl();
     bar.hidden = false;
     document.body.classList.add("is-listening");

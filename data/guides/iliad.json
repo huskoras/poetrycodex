@@ -1,0 +1,1109 @@
+{
+ "work": "iliad",
+ "title": "The Iliad",
+ "author": "Homer",
+ "quoteEdition": "iliad-murray",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Composed",
+   "value": "Probably the second half of the eighth century BC or the first half of the seventh; the date at which it was fixed in writing is disputed"
+  },
+  {
+   "label": "Genre",
+   "value": "Epic poem in the oral-traditional heroic style"
+  },
+  {
+   "label": "Metre",
+   "value": "Dactylic hexameter, in a mixed literary dialect (mainly Ionic, with Aeolic and older elements)"
+  },
+  {
+   "label": "Length",
+   "value": "24 books, about 15,700 lines of Greek"
+  },
+  {
+   "label": "Setting",
+   "value": "The plain of Troy (Ilios), the Achaean camp by the ships, the city of Troy, and Mount Olympus, in the tenth year of the Trojan War"
+  },
+  {
+   "label": "Time span",
+   "value": "About fifty-one days; the fighting of Books 2 to 22 fills only four days"
+  },
+  {
+   "label": "Narrator",
+   "value": "An anonymous third-person narrator who calls on the Muse, sees into the minds of gods and men, and occasionally addresses his characters directly"
+  },
+  {
+   "label": "Protagonist",
+   "value": "Achilles, son of Peleus and the sea-goddess Thetis, the greatest warrior of the Achaeans"
+  },
+  {
+   "label": "Conflict",
+   "value": "Achilles' quarrel with Agamemnon and his withdrawal from battle; then his vengeance on Hector, the Trojan champion, for the death of Patroclus"
+  },
+  {
+   "label": "Key themes",
+   "value": "Wrath and its cost; honour and glory; mortality; the will of Zeus and fate; friendship and grief; pity for the enemy; war set against the life of peace"
+  }
+ ],
+ "context": [
+  "We know nothing reliable about the man the Greeks called Homer. Ancient 'Lives' place him in Ionia, on the coast of Asia Minor or one of its islands, and several cities claimed him; the tradition that he was blind may owe more to the blind singer Demodocus in the Odyssey than to biography. What is certain is that by the sixth century BC the Iliad and the Odyssey were recited by professional performers, the rhapsodes, at festivals such as the Athenian Panathenaia, and that by the classical period they were the foundation of Greek education. How the poems came to be composed, and by whom, is the problem known as the Homeric Question [[graziosi2002]] [[fowler2004]].",
+  "The poem's language betrays its origins. No Greek ever spoke it: it blends dialects, preserves word-forms centuries out of date, and is built from recurring phrases ('swift-footed Achilles', 'rosy-fingered Dawn') that fit the metre at fixed positions. In the 1920s and 1930s Milman Parry showed that this system of formulas is the tool of poets who composed aloud, in performance, without writing; his pupil Albert Lord confirmed the model by studying living South Slavic singers [[parry1971]] [[lord1960]]. Most scholars now hold that the Iliad grew out of a long oral tradition, though they disagree about how, when and by what means a single monumental version was fixed. Dates proposed for its composition range from the late eighth century to the mid-seventh [[west2011]].",
+  "The war the poem describes was already ancient to its first audience. Archaeology shows that the citadel at Hisarlık in north-west Turkey, generally identified with Troy, was a substantial Late Bronze Age city destroyed more than once around 1200 BC, and Hittite documents mention a place called Wilusa that may be Ilios [[latacz2004]]. Whether a Greek expedition ever besieged it is unprovable; what matters for the reader is that the Iliad imagines a heroic age of greater men, remembered across some five centuries of song [[page1959]].",
+  "The Iliad assumes that its audience knows the whole story. Paris (also called Alexander), son of King Priam of Troy, judged the beauty contest between Hera, Athena and Aphrodite, chose Aphrodite, and was rewarded with Helen, wife of Menelaus of Sparta. When he carried her off, Menelaus' brother Agamemnon led a great Achaean (Greek) army against Troy, and the siege has lasted nine years when the poem begins. Achilles, the son of a mortal father and a goddess, knows that he is destined to die young. The poem itself covers only a few weeks of the tenth year and ends before Achilles' death and the fall of the city.",
+  "Those later events were told in other epics, now lost except for fragments and a prose summary by Proclus: together they formed the Epic Cycle [[burgess2001]]. The Cypria narrated the causes of the war; the Aethiopis told of the Amazon Penthesilea, of Memnon, and of Achilles' death by an arrow of Paris guided by Apollo; the Little Iliad and the Sack of Troy (Iliupersis) described the Wooden Horse and the destruction of the city; the Returns (Nostoi) and the Odyssey followed the Greeks home. The Iliad often glances at this larger story, foreshadowing Achilles' death and Troy's fall, but chooses to end in suspense, with a funeral rather than a victory."
+ ],
+ "plot": [
+  "In the tenth year of the siege, Apollo sends a plague on the Achaean camp because Agamemnon, the commander-in-chief, has insulted the god's priest Chryses by refusing to ransom his captive daughter. Forced to give the girl back, Agamemnon compensates himself by seizing Briseis, the woman awarded to Achilles as a prize of honour. Achilles withdraws himself and his Myrmidons from the fighting and asks his mother Thetis to persuade Zeus to give the Trojans victory until the Achaeans recognise what they have lost. Zeus agrees.",
+  "The war goes on without Achilles. A duel between Paris and Menelaus ends inconclusively, a truce is broken, and the Achaean heroes Diomedes, Ajax, Agamemnon and others have their days of glory, while in Troy Hector, the city's defender, takes what proves his last leave of his wife Andromache and their infant son. As Zeus' plan takes effect, the Trojans drive the Achaeans back to the wall around their ships. Agamemnon sends an embassy offering Achilles enormous compensation, but Achilles refuses it. Soon the leading Achaeans are wounded, the wall is breached, and Hector brings fire to the ships.",
+  "Moved by the suffering of his comrades, Achilles' dearest friend Patroclus begs to go into battle in Achilles' armour. He drives the Trojans back and kills Sarpedon, a son of Zeus, but overreaches himself and is killed by Apollo, Euphorbus and Hector, who strips the famous armour. Achilles' grief is overwhelming. He reconciles with Agamemnon, receives new armour made by the god Hephaestus, and returns to battle in a fury of slaughter that even the river Scamander cannot stem. He kills Hector before the walls of Troy and drags the body behind his chariot.",
+  "After burying Patroclus and holding funeral games in his honour, Achilles continues to abuse Hector's corpse until the gods intervene. Guided by Hermes, the aged King Priam crosses the plain by night, enters Achilles' hut, and kisses the hands that killed his sons. The two enemies weep together, Achilles returns the body, and a truce allows the Trojans to mourn and bury Hector. The poem ends with his funeral, while the deaths of Achilles and the fall of Troy, both foretold, lie just beyond its close."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Quarrel",
+   "summary": [
+    "The poet asks the Muse to sing of the wrath of Achilles and its terrible cost. Chryses, a priest of Apollo, comes to the Achaean camp offering a rich ransom for his daughter Chryseis, Agamemnon's captive. Agamemnon drives him away with threats, and Apollo, answering his priest's prayer, shoots plague into the army for nine days. On the tenth Achilles calls an assembly, and the seer Calchas reveals the cause.",
+    "Agamemnon agrees to return the girl but demands another prize in her place. The argument with Achilles escalates until Agamemnon announces that he will take Achilles' own prize, Briseis. Achilles begins to draw his sword and is checked only by Athena, visible to him alone. He swears on the speaker's staff that the Achaeans will one day long for him, and withdraws. The elder Nestor fails to reconcile them. Odysseus returns Chryseis to her father and the plague ends; heralds lead Briseis away.",
+    "Weeping by the shore, Achilles calls up his mother Thetis and asks her to beg Zeus to favour the Trojans. When the gods return from a feast among the Ethiopians, Thetis clasps Zeus' knees and he grants her request with a nod that shakes Olympus. Hera, suspicious, quarrels with him, and the lame smith-god Hephaestus restores good humour by serving the gods wine amid their 'unquenchable laughter'."
+   ],
+   "analysis": [
+    "The first word of the poem in Greek is mēnin, 'wrath'. Mēnis is not ordinary anger but a cosmic, almost divine rage, a word otherwise used mostly of gods; it marks Achilles' anger as the subject of the whole epic, and it ties his story to 'the plan of Zeus'. The opening thus announces both a tragic focus on one man's passion and a wider design in which countless men die.",
+    "The quarrel is about timē, 'honour', which in Homer is not an inner feeling but a social reality measured in goods and public recognition. Briseis is Achilles' geras, his prize of honour, and to take her is to declare that his achievements count for less than Agamemnon's rank. The poem gives both men a case: Agamemnon is king over more men, Achilles is the better fighter. The scene also shows the poem's double stage. The human assembly is mirrored by a divine one, where a similar quarrel between Zeus and Hera is defused by laughter; what is catastrophic among mortals is comic among gods.",
+    "Book 1 also contains the poem's first supplication (Chryses to Agamemnon, Thetis to Zeus) and its first ransom refused. These motifs will return at the end, when Priam supplicates Achilles and a ransom is finally accepted; critics have often noted how carefully the first and last books answer each other [[macleod1982]]."
+   ],
+   "key": [
+    {
+     "ref": "Il. 1.1–7",
+     "quote": "The wrath sing, goddess, of Peleus' son, Achilles, that destructive wrath which brought countless woes upon the Achaeans, and sent forth to Hades many valiant souls of heroes, and made them themselves spoil for dogs and every bird; thus the plan of Zeus came to fulfillment, from the time when first they parted in strife Atreus' son, king of men, and brilliant Achilles.",
+     "note": "The proem names the subject (Achilles' mēnis), its human cost and its divine frame, 'the plan of Zeus'. Note that the bodies left for dogs and birds anticipate the poem's last great concern, the treatment of the dead."
+    },
+    {
+     "ref": "Il. 1.233–236",
+     "quote": "by this staff, that shall never more put forth leaves or shoots since first it left its stump among the mountains, nor shall it again grow green",
+     "note": "Achilles swears by the sceptre that passes among speakers in the assembly; its dead wood, cut from a living tree, makes it an image of an authority that cannot be renewed once broken. He then throws it to the ground."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Dream and the Catalogue",
+   "summary": [
+    "To begin fulfilling his promise to Thetis, Zeus sends a deceptive Dream to Agamemnon, telling him that he can take Troy that very day. Agamemnon decides first to test the army by proposing that they abandon the war and sail home. The test backfires: the men stampede for the ships, and only the intervention of Athena and Odysseus, who uses the royal sceptre to restore order, prevents a disgraceful departure.",
+    "In the reassembled army Thersites, the ugliest and most insolent man at Troy, abuses Agamemnon in terms strikingly close to those Achilles used. Odysseus beats him with the sceptre, and the soldiers laugh. Nestor then advises Agamemnon to marshal the troops by tribe and clan. The poet invokes the Muses and lists the Achaean contingents, their leaders and their numbers of ships: the Catalogue of Ships. A shorter catalogue of the Trojans and their allies follows."
+   ],
+   "analysis": [
+    "The book is an exposition in the theatrical sense: it brings the whole army and the whole cast of leaders before the audience. The Catalogue of Ships is the longest list in Greek poetry and may preserve geographical information older than the poem itself; it also performs the epic singer's authority, since only the Muses can supply such knowledge. Its placement in the tenth year, as if the fleet were still assembling, is one of several moments where the Iliad compresses the whole war into its few days [[kirk1985]].",
+    "Thersites is the only common soldier who speaks at length in the poem. His speech repeats Achilles' grievance without Achilles' standing, and the army's laughter at his punishment confirms the social order of the heroic world. Readers have long been divided over whether the episode is aristocratic propaganda or a subtler exposure of how power silences dissent; either way, it shows what happens when the language of honour is spoken by someone without timē."
+   ],
+   "key": [
+    {
+     "ref": "Il. 2.204–206",
+     "quote": "No good thing is a multitude of lords; let there be one lord, one king, to whom the son of crooked-counselling Cronos hath vouchsafed the sceptre and judgments",
+     "note": "Odysseus states the principle of single rule that justifies Agamemnon's position. The irony is that the poem's crisis comes precisely from the conflict between legitimate authority and real excellence."
+    },
+    {
+     "ref": "Il. 2.488–490",
+     "quote": "But the common folk I could not tell nor name, nay, not though ten tongues were mine and ten mouths and a voice unwearying, and though the heart within me were of bronze",
+     "note": "In the invocation before the Catalogue the poet admits the limits of human memory and depends on the Muses: a self-conscious statement of what an oral poet does."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Duel of Paris and Menelaus",
+   "summary": [
+    "As the armies advance, Paris swaggers in front of the Trojans but shrinks back when Menelaus appears. Shamed by Hector, he offers to settle the war by single combat with Menelaus, the winner to take Helen and her possessions. Both sides gladly swear oaths. Meanwhile Iris summons Helen from her weaving to the city wall, where the old men of Troy marvel at her beauty and Priam asks her to name the Achaean leaders below. She points out Agamemnon, Odysseus and Ajax; Antenor recalls Odysseus' eloquence; Helen looks in vain for her brothers Castor and Polydeuces, not knowing they are dead.",
+    "Priam drives down to the plain to swear the oaths with Agamemnon, then returns, unable to watch his son fight. Menelaus has the better of the duel, but when he is dragging Paris away by the helmet-strap Aphrodite snaps the strap, wraps Paris in mist and sets him down in his bedroom. She compels a reluctant and bitter Helen to join him, and the two go to bed while Menelaus searches the field."
+   ],
+   "analysis": [
+    "Book 3 seems to belong to the beginning of the war: a duel to decide who should have Helen, a 'viewing from the wall' (teichoskopia) in which the Trojans learn who their enemies are. Its placement here shows the poem's method of reaching back to tell the whole war through a few days. It also gives us Helen, the cause of the war, presented with remarkable sympathy: she is ashamed of herself, contemptuous of Paris, and helpless before Aphrodite, who threatens her when she resists.",
+    "The old men's verdict is one of the most quoted moments in the poem. They do not blame the Trojans or the Achaeans for suffering for such a woman, yet they wish her gone. Beauty here is both a value worth dying for and a curse. The duel itself ends in comedy and frustration, a pattern of interrupted resolution that will recur until Achilles returns."
+   ],
+   "key": [
+    {
+     "ref": "Il. 3.156–158",
+     "quote": "Small blame that Trojans and well-greaved Achaeans should for such a woman long time suffer woes; wondrously like is she to the immortal goddesses to look upon.",
+     "note": "The elders of Troy express the poem's ambivalence about Helen and about the war: it is understandable to fight for such beauty, and ruinous."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "The Broken Truce",
+   "summary": [
+    "On Olympus Zeus provokes Hera by suggesting that the war might end peacefully. Hera, whose hatred of Troy is implacable, agrees that he may one day destroy any of her favourite cities in exchange for the destruction of Troy now. Athena descends and persuades the Trojan archer Pandarus to shoot at Menelaus during the truce. The arrow wounds him, though Athena deflects it from a mortal spot, and the healer Machaon tends him.",
+    "Agamemnon, horrified at his brother's wound, declares that Troy will certainly fall for this perjury. He goes through the ranks rousing his commanders, praising some and rebuking others, including Diomedes, who accepts the reproach in silence while his companion Sthenelus protests. The armies clash and the first deaths of the poem's battles are described in close detail."
+   ],
+   "analysis": [
+    "The broken oath matters. In Homeric religion Zeus is the guardian of oaths, and Agamemnon's speech makes the Trojans' guilt the moral ground for Troy's eventual destruction. Yet the narrator has shown us that the truce was broken at the instigation of the gods themselves. Divine action and human responsibility are both fully present, a 'double motivation' that runs throughout the poem [[kullmann1985]].",
+    "The scene on Olympus, where Zeus and Hera bargain over cities like pieces in a game, is one of the passages that has made the Homeric gods seem frivolous or cruel. It also sharpens the human cost: the first deaths in battle, given individual names, origins and bodily wounds, follow directly from a divine bargain."
+   ],
+   "key": [
+    {
+     "ref": "Il. 4.163–165",
+     "quote": "For of a surety know I this in heart and soul: the day shall come when sacred Ilios shall be laid low, and Priam, and the people of Priam, with goodly spear of ash",
+     "note": "Agamemnon predicts the fall of Troy as punishment for the broken oath. Hector will speak the same lines in Book 6, with a very different emotion."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "The Aristeia of Diomedes",
+   "summary": [
+    "Athena fills Diomedes with strength and courage, and he sweeps through the Trojan ranks. Wounded by Pandarus, he prays to Athena, who heals him and lifts the mist from his eyes so that he can recognise gods on the battlefield, telling him to fight none of them except Aphrodite. He kills Pandarus and wounds Aeneas with a huge stone; when Aphrodite carries her son away, Diomedes pierces her hand. Apollo rescues Aeneas, and Aphrodite flees to Olympus, where her mother Dione comforts her with stories of other gods wounded by mortals.",
+    "Ares rallies the Trojans; Sarpedon, the Lycian son of Zeus, kills Tlepolemus, a son of Heracles, and is himself wounded. Hera and Athena drive down to support the Achaeans, and Athena, taking the place of Diomedes' charioteer, guides his spear into Ares' belly. The war-god roars like nine or ten thousand warriors and complains to Zeus, who rebukes him as the most hateful of the gods before having him healed."
+   ],
+   "analysis": [
+    "An aristeia is a hero's sequence of excellence, a run of victories in which one warrior dominates the battlefield, usually after arming and often ending in a wound or a check. Diomedes' aristeia, the first and one of the longest, shows what a great Achaean can achieve while Achilles is absent; he almost becomes a substitute Achilles, and his attack on gods marks the limit of what mortals may dare.",
+    "The divine episodes are both comic and serious. The wounded gods bleed ichor, not blood, and recover at once; their pain is real but temporary, which throws into relief the permanent consequences of mortal wounds. Dione's catalogue of suffering gods and Zeus' contempt for Ares show the Olympians as a family with its own quarrels, a comic counterpart to the tragedy below [[griffin1980]]."
+   ],
+   "key": [
+    {
+     "ref": "Il. 5.339–342",
+     "quote": "forth flowed the immortal blood of the goddess, the ichor, such as floweth in the blessed gods; for they eat not bread neither drink flaming wine, wherefore they are bloodless, and are called immortals.",
+     "note": "The narrator explains why gods are immortal: they eat no bread and drink no wine. The difference between mortal and immortal bodies is the poem's deepest boundary."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Hector and Andromache",
+   "summary": [
+    "The Achaeans press forward, and Menelaus is about to spare a Trojan suppliant, Adrestus, when Agamemnon persuades him to kill the man, declaring that not even the unborn child in a Trojan womb should escape. The seer Helenus sends Hector into the city to have the Trojan women offer a robe to Athena. On the battlefield Diomedes meets the Lycian Glaucus; when they discover that their grandfathers were guest-friends, they refuse to fight and exchange armour, Glaucus giving gold for bronze.",
+    "In Troy, Hector speaks with his mother Hecuba, who arranges the offering, which Athena rejects. He finds Paris idling with Helen, rebukes him, and declines Helen's invitation to sit and rest. Then he goes in search of his wife Andromache and finds her at the Scaean Gate with their baby son Astyanax. She begs him not to leave her a widow; he replies that shame forbids him to hang back, though he knows Troy will fall and imagines her led into slavery. The child is frightened by his father's plumed helmet; the parents laugh, Hector prays that his son will surpass him, and returns to battle with Paris."
+   ],
+   "analysis": [
+    "Book 6 is the poem's great pause. Its scenes inside the city show what war is fought for and what it will destroy: households, marriages, children. Andromache's speech reveals that Achilles has already killed her father and seven brothers, so that Hector is now her whole family; Hector's answer shows the hero's code at its most humane and most constrained. He fights because of aidōs, the sense of shame before his community, and for kleos, the glory that survives death, yet his imagination dwells on his wife's future suffering more than on his own fame [[redfield1975]].",
+    "The Glaucus and Diomedes episode shows an alternative to killing: xenia, the bond of guest-friendship and hospitality between households, which binds descendants across enemy lines. Glaucus' simile of the leaves, by contrast, places all human generations within the cycle of nature. Agamemnon's brutality at the start of the book frames these scenes, reminding us that pity is the exception in this war."
+   ],
+   "key": [
+    {
+     "ref": "Il. 6.146–149",
+     "quote": "Even as are the generations of leaves, such are those also of men. As for the leaves, the wind scattereth some upon the earth, but the forest, as it bourgeons, putteth forth others when the season of spring is come; even so of men one generation springeth up and another passeth away.",
+     "note": "Glaucus answers a question about his ancestry by questioning the value of ancestry itself: human lives come and go like leaves. The image became one of the most imitated in European poetry."
+    },
+    {
+     "ref": "Il. 6.429–430",
+     "quote": "Nay, Hector, thou art to me father and queenly mother, thou art brother, and thou art my stalwart husband.",
+     "note": "Andromache's plea shows the private cost of the hero's glory: Hector's death will leave her with no protector at all."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Hector and Ajax",
+   "summary": [
+    "Apollo and Athena agree to end the day's fighting with a single combat. Hector challenges any Achaean champion; after an embarrassed silence and a rebuke from Nestor, nine volunteer, and the lot falls to Ajax, son of Telamon. They fight with spears and stones until heralds part them at nightfall, and they exchange gifts: Hector gives a sword, Ajax a belt.",
+    "In Troy the elder Antenor proposes returning Helen; Paris refuses but offers to return the treasure he took. The Achaeans reject the offer, though both sides agree to a truce to burn their dead. On Nestor's advice the Achaeans build a wall with a trench to protect their ships. Poseidon complains that its fame will eclipse that of the walls of Troy, and Zeus assures him that he may destroy it after the war."
+   ],
+   "analysis": [
+    "The duel with Ajax repeats the pattern of Book 3, a single combat that settles nothing, and confirms Hector's status as the Trojans' champion. His challenge imagines the tomb of the man he will kill becoming a monument to his own kleos; the irony is that the poem's actual tombs will be those of Patroclus and of Hector himself. The exchange of gifts between enemies again shows the heroic code as a shared language that both sides respect.",
+    "The building of the wall is strange in the tenth year and has been read as a sign of the poem's compression of the war, or as a later addition. But the wall becomes important in Books 12 to 15, and the gods' promise to erase it is a reflection on poetry and memory: physical monuments vanish, while the song survives [[west2011]]."
+   ],
+   "key": [
+    {
+     "ref": "Il. 7.89–91",
+     "quote": "This is a barrow of a man that died in olden days, whom on a time in the midst of his prowess glorious Hector slew.’ So shall some man say, and my glory shall never die.",
+     "note": "Hector imagines a passing sailor reading the landscape as a record of his triumph. The passage is a miniature theory of kleos: glory exists in what others say in the future."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "The Turning of the Battle",
+   "summary": [
+    "Zeus forbids the gods to help either side and goes to Mount Ida to watch. At midday he weighs the fates of the two armies in his golden scales; the Achaean doom sinks, and he hurls thunderbolts that send them into flight. Nestor, trapped when his horse is struck, is rescued by Diomedes, who is in turn turned back by Zeus' lightning. Hector presses forward.",
+    "Hera and Athena set out to help the Achaeans, but Zeus sends Iris to turn them back with threats. Teucer, sheltering behind Ajax's shield, picks off Trojans with his bow until Hector wounds him. At nightfall the Trojans camp on the plain instead of returning to the city, and their thousand watch-fires shine like stars. Zeus, in an explicit prophecy, tells Hera that Hector will not stop until Achilles rises beside the ships in the fight over the dead Patroclus."
+   ],
+   "analysis": [
+    "Book 8 marks the beginning of the fulfilment of Zeus' promise to Thetis. Its fast, almost schematic narrative is driven by divine intervention: thunder, lightning, the scales. The weighing of fates raises the question of how Zeus relates to fate (moira), the portion allotted to each mortal. Does he consult destiny or decide it? The poem never settles the question, and the scales seem to express his will in visible form [[morrison1997]].",
+    "The camp on the plain changes the military situation decisively: the Trojans are now the besiegers. The closing simile of the fires compares the threat to a calm, beautiful night sky, a contrast between violence and natural peace typical of Homer's similes."
+   ],
+   "key": [
+    {
+     "ref": "Il. 8.69–72",
+     "quote": "then verily the Father lifted on high his golden scales, and set therein two fates of grievous death, one for the horse-taming Trojans, and one for the brazen-coated Achaeans; then he grasped the balance by the midst and raised it, and down sank the day of doom of the Achaeans.",
+     "note": "The scales make Zeus' plan visible. The same image recurs at the decisive moment of Hector's death in Book 22."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Embassy to Achilles",
+   "summary": [
+    "Agamemnon, in despair, proposes flight. Diomedes defies him, and Nestor advises reconciliation with Achilles. Agamemnon lists an enormous recompense: tripods, gold, horses, seven women, Briseis untouched, a daughter in marriage and seven cities. Phoenix, Achilles' old tutor, Ajax and Odysseus go as envoys and find Achilles singing to the lyre of the 'glorious deeds of men'.",
+    "Odysseus repeats the offer skilfully, omitting Agamemnon's closing demand that Achilles submit to him. Achilles' reply is the longest and most passionate speech in the poem. He rejects the gifts, accuses Agamemnon of deceit, questions whether honour bought with possessions means anything when death awaits all men equally, and reveals that his mother has told him of two fates: a short life with undying glory or a long one without it. He threatens to sail home the next day.",
+    "Phoenix recalls how he raised Achilles and tells the story of Meleager, who refused to fight until too late and lost his gifts. Achilles softens a little: he will now decide in the morning. Ajax's blunt appeal to comradeship moves him further: he will not fight until Hector reaches the Myrmidons' own ships. The envoys return with the refusal, and Diomedes says they must fight without him."
+   ],
+   "analysis": [
+    "Book 9 is the moral centre of the first half. Achilles' refusal has divided critics. Some see a hero who exposes the contradictions of the heroic code: if honour is measured by gifts, and the brave and the cowardly die alike, then the system that rewards bravery is hollow [[whitman1958]]. Others read his rejection as excess, a failure of the community-minded aidōs that Phoenix and Ajax appeal to, which sets up his tragic suffering when Patroclus dies. Adam Parry argued that Achilles has no language to express his disillusion except the heroic language itself [[parry1956]].",
+    "Achilles' two fates also define the poem's central opposition between kleos and nostos, the return home. To stay is to die young and be remembered; to leave is to live long and be forgotten. That Achilles is singing epic poetry himself when the envoys arrive makes the choice self-conscious: he is weighing the very fame that the Iliad confers.",
+    "The book's use of the dual verb forms for the envoys, as if only two men went, has led to theories that Phoenix was added later, or that the dual refers to Ajax and Odysseus escorted by Phoenix. The question is a classic example of how textual oddities feed larger arguments about composition."
+   ],
+   "key": [
+    {
+     "ref": "Il. 9.312–313",
+     "quote": "For hateful in my eyes, even as the gates of Hades, is that man that hideth one thing in his mind and sayeth another.",
+     "note": "Achilles opens his reply with a statement of his own transparency, aimed implicitly at Odysseus' diplomacy and at Agamemnon's offer."
+    },
+    {
+     "ref": "Il. 9.410–416",
+     "quote": "For my mother the goddess, silver-footed Thetis, telleth me that twofold fates are bearing me toward the doom of death: if I abide here and war about the city of the Trojans, then lost is my home-return, but my renown shall be imperishable; but if I return home to my dear native land, lost then is my glorious renown, yet shall my life long endure, neither shall the doom of death come soon upon me.",
+     "note": "The choice of two fates, kleos or nostos, glory or return. It is the clearest statement of the bargain on which the poem rests."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "The Night Raid",
+   "summary": [
+    "Agamemnon and Menelaus, unable to sleep, rouse the leaders for a night council outside the wall. Nestor asks for a volunteer to spy on the Trojans; Diomedes offers and chooses Odysseus as his partner. Athena sends them an omen, a heron. Meanwhile Hector offers Achilles' horses to any Trojan who will spy on the Achaean ships, and Dolon, rich, ugly and fast, volunteers, wearing a wolfskin.",
+    "Odysseus and Diomedes catch Dolon, terrify him into revealing the Trojan dispositions, and then Diomedes kills him as he pleads for his life. Following his information, they enter the camp of the newly arrived Thracian king Rhesus, kill him and twelve of his men in their sleep, and drive off his magnificent horses. They return in triumph and dedicate Dolon's spoils to Athena."
+   ],
+   "analysis": [
+    "Book 10, the Doloneia, is the most disputed book in the poem. An ancient commentary records the view that it was composed separately and inserted into the Iliad, and many modern scholars regard it as a later addition: it is self-contained, its tone of cunning and night-time trickery differs from the rest of the poem, and nothing in later books refers to it [[kirk1985]]. Others defend it as a deliberate variation in the poem's rhythm, a night between two days of disaster, or as a traditional ambush theme that oral epic would naturally include [[due2010]].",
+    "Whatever its origin, the book offers a different kind of heroism. Night warfare, disguise, interrogation and the killing of sleeping men belong to the mētis (cunning intelligence) associated with Odysseus, not to the open fighting of the day. The killing of Dolon, who has been promised his life, is among the coldest moments in the poem."
+   ],
+   "key": [
+    {
+     "ref": "Il. 10.314–317",
+     "quote": "Now there was among the Trojans one Dolon, the son of Eumedes the godlike herald, a man rich in gold, rich in bronze, that was ill-favoured to look upon, but withal swift of foot; and he was the only brother among five sisters.",
+     "note": "The brief characterisation, with its odd domestic detail, is typical of the way Homer gives even minor victims an identity and a family before they die."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "The Wounding of the Leaders",
+   "summary": [
+    "At dawn Strife (Eris) is sent among the Achaeans, and Agamemnon arms in splendour and has his aristeia, killing many Trojans, until he is wounded and leaves the field. Zeus sends Iris to tell Hector to hold back until Agamemnon is wounded, and then to attack. Hector now advances; Diomedes is shot in the foot by Paris, Odysseus is wounded and rescued by Ajax and Menelaus, and the healer Machaon is struck by an arrow. Ajax retreats slowly, like a stubborn donkey beaten by boys.",
+    "Achilles, watching from his ship, sees Nestor carrying a wounded man and sends Patroclus to find out who it is. Nestor delays Patroclus with a long story of his own youthful exploits in a cattle raid against the Epeians, then urges him to persuade Achilles to fight, or at least to go out himself in Achilles' armour. On the way back Patroclus meets the wounded Eurypylus and stops to tend him."
+   ],
+   "analysis": [
+    "Book 11 begins the long day of battle that will last until Book 18, and it is the point where Zeus' plan becomes painfully visible: the best Achaeans are taken out one by one. The narrator signals the turning point when Patroclus answers Achilles' call: 'this to him was the beginning of evil'. This is a good example of Homeric foreshadowing, which creates suspense not about what will happen but about how.",
+    "Nestor's reminiscence is more than garrulity. It offers Patroclus a model of a young man winning glory for his community, and the suggestion that he wear Achilles' armour turns the idea into a plan. Achilles' remark that the Achaeans will soon be at his knees shows him still hoping for the humiliation he asked of Zeus, unaware of its price."
+   ],
+   "key": [
+    {
+     "ref": "Il. 11.603–604",
+     "quote": "and he heard, and came forth from the hut like unto Ares; and this to him was the beginning of evil.",
+     "note": "A single sentence of narrative comment marks the moment the poem's second half begins to take shape: Patroclus' errand will lead to his death."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "The Battle for the Wall",
+   "summary": [
+    "The narrator looks ahead to the time after the war when Poseidon and Apollo will turn the rivers of Troy against the Achaean wall and wipe it away. The Trojans attack the trench. On Polydamas' advice they leave their chariots and attack on foot; Asius ignores the advice, and the narrator foretells his death. An eagle carrying a snake appears on the left and drops its prey, and Polydamas interprets it as a warning; Hector rejects the omen, declaring that the best omen is to fight for one's country.",
+    "Sarpedon and Glaucus lead the Lycians against the wall, and Sarpedon explains to Glaucus why noblemen must fight in the front line. Ajax and Teucer defend the battlements. Finally Hector picks up a huge stone, smashes the gate, and the Trojans pour in among the ships."
+   ],
+   "analysis": [
+    "Sarpedon's speech to Glaucus is the most explicit statement of the heroic code in Homer. Kings enjoy honour at home, the best land and the best seats at feasts, and they repay it by fighting in front. But the deeper justification is mortality: if men were ageless and immortal, no one would fight; because death is certain anyway, one should seek glory by giving it or winning it. Glory is the human answer to death [[schein1984]].",
+    "The prophecy of the wall's destruction, unusual for its view into the distant future, reflects on the relation between the heroic past and the poet's present: the physical traces of the war are gone, and only the poem remains. Hector's rejection of Polydamas begins a pattern of over-confidence that will cost him his life."
+   ],
+   "key": [
+    {
+     "ref": "Il. 12.322–328",
+     "quote": "Ah friend, if once escaped from this battle we were for ever to be ageless and immortal, neither should I fight myself amid the foremost, nor should I send thee into battle where men win glory; but now—for in any case fates of death beset us, fates past counting, which no mortal may escape or avoid—now let us go forward, whether we shall give glory to another, or another to us.",
+     "note": "Sarpedon makes mortality the reason for heroism: since death cannot be avoided, the only choice is between glory won and glory given."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Poseidon at the Ships",
+   "summary": [
+    "Satisfied that Hector has reached the ships, Zeus turns his eyes away from Troy. Poseidon, resentful of his brother, seizes the chance: disguised as the seer Calchas, he puts fresh strength into the two Ajaxes and rallies the Achaeans. The battle by the ships is long and confused. The Cretan leader Idomeneus, with his companion Meriones, has his aristeia, and Menelaus, Antilochus and others fight hard on the left.",
+    "Polydamas warns Hector that the Trojans are scattered and urges him to call the leaders together to decide whether to press on or withdraw. Hector agrees, finds many of his best men dead or wounded, and blames Paris, who answers him calmly. Ajax challenges Hector, an eagle appears on the right, and both armies raise a great shout."
+   ],
+   "analysis": [
+    "Book 13 is one of the least read books of the Iliad, but it shows how the poem sustains a long battle: through shifting focus between many fighters, conversations between companions (Idomeneus and Meriones talk about courage while fetching a spear), and the steady pressure of divine intervention behind the scenes. Homer's battle narrative is built from repeated typical scenes, yet individual deaths remain vivid and varied [[kirk1985]].",
+    "Polydamas is Hector's alter ego, the prudent counsellor whose advice Hector sometimes takes and sometimes scorns. His statement that the gods give different gifts to different men, fighting to one, wisdom to another, is aimed directly at Hector's over-confidence and prepares for Hector's fatal refusal of advice in Book 18 [[redfield1975]]."
+   ],
+   "key": [
+    {
+     "ref": "Il. 13.730–731",
+     "quote": "To one man hath God given works of war, to another the dance, to another the lyre and song",
+     "note": "Polydamas argues that no one man has every gift; Hector, excellent in battle, must listen to counsel. The point will matter tragically in Book 18."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "The Deception of Zeus",
+   "summary": [
+    "Nestor leaves the wounded Machaon to see the battle, and meets the wounded kings Agamemnon, Diomedes and Odysseus. Agamemnon again proposes flight; Odysseus rebukes him sharply, and Diomedes suggests that the wounded leaders go to the front to encourage the others. Poseidon, disguised as an old man, reassures Agamemnon.",
+    "Hera, seeing Zeus on Mount Ida, devises a plan to distract him. She bathes, anoints and dresses herself, borrows from Aphrodite the embroidered band that holds all the powers of desire, and bribes Sleep (Hypnos) with the promise of one of the Graces as a wife. On Ida she seduces Zeus, who covers them with a golden cloud and falls asleep in her arms. Poseidon openly leads the Achaeans, and Ajax strikes Hector with a stone; Hector is carried from the field vomiting blood, and the Trojans are routed."
+   ],
+   "analysis": [
+    "The Deception of Zeus (in Greek Dios apatē) is the most sustained comic episode involving the gods, and it has troubled readers since antiquity: the king of the gods is tricked by sex into neglecting his plan. Some ancient critics allegorised it; others found it impious. Modern critics often see it as a deliberate contrast: in the middle of slaughter, the gods enjoy pleasure without consequence. Zeus' catalogue of his previous lovers, offered as a compliment to Hera, is pure comedy [[griffin1980]].",
+    "The episode also displays the poem's typical scene of dressing and adornment, here turned to seduction rather than battle. Hera's toilet parallels the arming scenes of the warriors, and Aphrodite's band functions as her weapon."
+   ],
+   "key": [
+    {
+     "ref": "Il. 14.214–217",
+     "quote": "She spake, and loosed from her bosom the broidered zone, curiously-wrought, wherein are fashioned all manner of allurements; therein is love, therein desire, therein dalliance—beguilement that steals the wits even of the wise.",
+     "note": "The description of Aphrodite's band personifies the powers of love. Even Zeus, the guardian of the plan, will be beguiled."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "The Battle at the Ships",
+   "summary": [
+    "Zeus wakes, sees the Trojans routed and Hector wounded, and threatens Hera. He then reveals the course of events: Hector will drive the Achaeans to Achilles' ships, Achilles will send out Patroclus, who will kill Sarpedon and be killed by Hector; Achilles will then kill Hector, and in the end Troy will fall. Iris orders Poseidon to withdraw; he protests that the world was divided in three among Zeus, himself and Hades, but yields.",
+    "Apollo revives Hector and leads the Trojans forward, kicking down the Achaean wall as easily as a child knocks over a sandcastle. Patroclus leaves Eurypylus and runs to Achilles. The fighting reaches the ships, Hector seizes the stern of Protesilaus' ship and calls for fire, and Ajax, alone on the decks, fends off the Trojans with a long pike."
+   ],
+   "analysis": [
+    "Zeus' speech is the most complete prophecy in the poem, laying out the rest of the plot. It shows that Homer does not depend on surprise; the audience knows what will happen, and suspense comes from watching how. The prophecy also extends beyond the poem, confirming the fall of Troy that the Iliad will not narrate.",
+    "Poseidon's complaint about the threefold division of the cosmos raises the question of the gods' hierarchy. The brothers' shares were decided by lot, which suggests a kind of equality, yet Zeus is stronger and older. Divine politics, like human politics in Book 1, turns on the balance between rank and power."
+   ],
+   "key": [
+    {
+     "ref": "Il. 15.189–192",
+     "quote": "And in three-fold wise are all things divided, and unto each hath been apportioned his own domain. I verily, when the lots were shaken, won for my portion the grey sea to be my habitation for ever, and Hades won the murky darkness, while Zeus won the broad heaven amid the air and the clouds",
+     "note": "Poseidon describes the division of the world among the three sons of Cronos, in a rare glimpse of Greek cosmic myth within the poem."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "The Death of Patroclus",
+   "summary": [
+    "Patroclus comes to Achilles in tears, and Achilles mocks him gently. Patroclus begs to be sent out in Achilles' armour to save the ships. Achilles agrees, but tells him to return as soon as he has driven the Trojans from the ships, so as not to diminish Achilles' honour. As fire breaks out on Protesilaus' ship, Achilles arms Patroclus and the Myrmidons and prays to Zeus for Patroclus' safe return. Zeus grants half the prayer.",
+    "Patroclus drives the Trojans back and kills Sarpedon. Zeus considers saving his son, but Hera warns that other gods would then save theirs; Zeus weeps tears of blood and lets him die. Apollo has Sleep and Death carry the body home to Lycia. Forgetting Achilles' warning, Patroclus pursues the Trojans to the walls of Troy. Three times he climbs the wall and three times Apollo throws him back. Apollo then strikes him from behind, knocks off his helmet and armour, Euphorbus wounds him with a spear, and Hector kills him. The dying Patroclus prophesies Hector's own death at Achilles' hands."
+   ],
+   "analysis": [
+    "Patroclus is in effect Achilles' substitute, a 'ritual substitute' as Gregory Nagy has called him [[nagy1979]]: he wears Achilles' armour, fights in his place and dies the death meant for him. His aristeia follows the pattern of the hero who goes too far and is destroyed by a god. The narrator addresses him directly several times, an apostrophe used for few other characters, which marks a special sympathy.",
+    "The death of Sarpedon is the clearest test of Zeus' relation to fate. Zeus could save his son but does not, because to do so would upset the order of the world. His tears of blood are a rare sign of divine grief. Sarpedon's death, with his body carried home by Sleep and Death, anticipates the care for the dead that will dominate the end of the poem [[griffin1980]]."
+   ],
+   "key": [
+    {
+     "ref": "Il. 16.7–10",
+     "quote": "Why, Patroclus, art thou bathed in tears, like a girl, a mere babe, that runneth by her mother's side and biddeth her take her up, and clutcheth at her gown, and hindereth her in her going, and tearfully looketh up at her, till the mother take her up?",
+     "note": "Achilles' mocking simile is affectionate and domestic, and it reveals the tenderness between the two men just before Patroclus goes to his death."
+    },
+    {
+     "ref": "Il. 16.459–461",
+     "quote": "Howbeit he shed bloody rain-drops on the earth, shewing honour to his dear son—his own son whom Patroclus was about to slay in the deep-soiled land of Troy, far from his native land.",
+     "note": "Zeus marks his son's death with a sign of mourning. Even the most powerful god cannot, or will not, alter what is fated."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "The Fight over Patroclus' Body",
+   "summary": [
+    "Menelaus stands over Patroclus' body and kills Euphorbus. Hector, urged on by Apollo, drives him off and strips Achilles' armour from the corpse; Zeus, watching, pities him, for he will never bring the armour home to Andromache. Hector puts it on. The battle rages around the body, and Zeus covers the field in mist.",
+    "Achilles' immortal horses stand weeping, refusing to move; Zeus pities them for having been given to a mortal. Menelaus sends Antilochus to tell Achilles. As Zeus turns the battle in favour of the Trojans, Menelaus and Meriones carry the body back towards the ships while the two Ajaxes hold off Hector and Aeneas."
+   ],
+   "analysis": [
+    "The fight over a corpse is a characteristic scene of Homeric battle: the body is honoured by being recovered and dishonoured by being stripped or mutilated. Here the struggle lasts a whole book, a sign of how much Patroclus matters. The armour, passing from Achilles to Patroclus to Hector, becomes a marker of identity and of doom: whoever wears it next will die.",
+    "Zeus' reflections on Hector and on the horses introduce the poem's most general statements about the human condition. Zeus calls man the most miserable of all creatures that breathe and move on earth. The divine perspective, detached and immortal, gives the human tragedy a vast and pitiless frame."
+   ],
+   "key": [
+    {
+     "ref": "Il. 17.443–447",
+     "quote": "Ah unhappy pair, wherefore gave we you to king Peleus, to a mortal, while ye are ageless and immortal? Was it that among wretched men ye too should have sorrows? For in sooth there is naught, I ween, more miserable than man among all things that breathe and move upon earth.",
+     "note": "Zeus, pitying Achilles' immortal horses, delivers one of the bleakest verdicts on humankind in the poem."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "The Shield of Achilles",
+   "summary": [
+    "Antilochus brings the news. Achilles pours dust over his head and lies in the dirt, and his cry brings Thetis and her sister Nereids from the sea. He tells his mother that he will avenge Patroclus even though he knows that his own death must follow soon after Hector's. Iris tells him to show himself at the trench; he stands unarmed with Athena's fiery cloud about his head and shouts three times, and the Trojans panic. The Achaeans recover Patroclus' body.",
+    "In the Trojan assembly Polydamas urges retreat into the city; Hector refuses, and the Trojans applaud him. Achilles mourns Patroclus and vows not to bury him until he has brought Hector's head and armour. Thetis visits Hephaestus, who makes new armour. The centrepiece is a shield decorated with the earth, heavens and sea; a city at peace with a wedding and a lawsuit; a city at war with a siege and an ambush; ploughing, harvest, a vineyard, cattle attacked by lions, sheep and a dancing floor; and the river Ocean around the rim."
+   ],
+   "analysis": [
+    "Achilles' decision to return to battle is the turning point of the poem. He chooses death with full knowledge, and he does so not for glory alone but out of grief and guilt for his friend. The book also contains Hector's fatal error: rejecting Polydamas' advice, he condemns the Trojans to a disastrous battle in the open, and the narrator calls the Trojans fools whom Athena has robbed of sense.",
+    "The Shield is the most famous example of ekphrasis, a description of a work of art, in Western literature. It presents a world much wider than the battlefield: peace as well as war, law, agriculture, music and dance. Critics have read it as a picture of the cosmos, as an image of the life that war destroys, and as a reflection of the poem itself [[taplin1980]] [[edwards1987]]. Its scenes are described as if moving and sounding, beyond the power of any real metalwork."
+   ],
+   "key": [
+    {
+     "ref": "Il. 18.98–100",
+     "quote": "Straightway may I die, seeing I was not to bear aid to my comrade at his slaying. Far, far from his own land hath he fallen, and had need of me to be a warder off of ruin.",
+     "note": "Achilles accepts his fate. His guilt at failing Patroclus is stronger than any desire for return."
+    },
+    {
+     "ref": "Il. 18.483–485",
+     "quote": "Therein he wrought the earth, therein the heavens therein the sea, and the unwearied sun, and the moon at the full",
+     "note": "The Shield begins with the whole cosmos, placing the human scenes that follow within the order of the world."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "title": "The Reconciliation",
+   "summary": [
+    "Thetis brings the armour and preserves Patroclus' body from decay with nectar and ambrosia. Achilles calls an assembly and renounces his anger. Agamemnon replies that he was not to blame, but Zeus, Fate and the Erinys, who sent Atē, blind folly, upon him; he tells the story of how Atē once deceived Zeus himself. He offers the gifts promised in Book 9. Achilles is indifferent to them and wants to fight at once, but Odysseus insists that the army must eat first.",
+    "Briseis, returned, laments over Patroclus, who had been kind to her, and the other women weep for their own griefs. Achilles refuses food; Athena secretly sustains him with nectar. He arms himself in the new armour and mounts his chariot. His horse Xanthus, given speech by Hera, warns that a god and a mortal will kill him. Achilles answers that he knows it."
+   ],
+   "analysis": [
+    "The reconciliation is curiously flat: the gifts that caused such passion in Book 9 now hardly matter. Achilles' anger has been transferred from Agamemnon to Hector, and his public honour has been overtaken by private grief. Agamemnon's speech on Atē raises the question of responsibility: he accepts that he acted wrongly, yet ascribes the act to divine blindness. This is not an evasion in Homeric terms, since gods and mortals act together, but it shows how difficult it is for the king to say simply 'I was wrong'.",
+    "Briseis' lament is one of the few moments where a captive woman speaks. She has lost her husband and brothers to Achilles, and she mourns Patroclus because he promised to make her Achilles' wife. Her grief, and the women's private weeping, shows how the war appears to those who are its prizes."
+   ],
+   "key": [
+    {
+     "ref": "Il. 19.90–91",
+     "quote": "But what could I do? It is God that bringeth all things to their issue. Eldest daughter of Zeus is Ate that blindeth all",
+     "note": "Agamemnon attributes his folly to Atē, the daughter of Zeus. The passage is central to debates about Homeric ideas of guilt and responsibility."
+    },
+    {
+     "ref": "Il. 19.287–290",
+     "quote": "Patroclus, dearest to my hapless heart, alive I left thee when I went from the hut, and now I find thee dead, thou leader of hosts, as I return thereto: thus for me doth evil ever follow hard on evil.",
+     "note": "Briseis' lament gives voice to the experience of women enslaved by war."
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "title": "The Gods Go to War",
+   "summary": [
+    "Zeus calls the gods together and allows them to join the battle, fearing that Achilles might take Troy before its time. The gods take sides: Hera, Athena, Poseidon, Hermes and Hephaestus for the Achaeans; Ares, Apollo, Artemis, Leto, Aphrodite and the river Xanthus for the Trojans. The earth shakes, and Hades fears that it will split open.",
+    "Apollo urges Aeneas to face Achilles. Before fighting, Aeneas recites his long genealogy. Poseidon, though on the Achaean side, saves him from death, explaining that Aeneas is destined to survive and rule the Trojans. Achilles kills many Trojans, including Polydorus, Priam's youngest son. Hector faces him, but Apollo snatches him away in a mist. Achilles' slaughter continues, and the book ends with an image of his chariot wheels spattered with blood."
+   ],
+   "analysis": [
+    "The poem now builds towards the climax by enlarging the stage: the gods themselves enter the war. Yet the long-promised battle of the gods is postponed until Book 21, and when it comes it is almost comic. Divine participation magnifies Achilles' return without changing the outcome.",
+    "The rescue of Aeneas is important for the poem's reception. Poseidon's prophecy that Aeneas and his descendants will rule the Trojans was later used by Virgil and the Romans, who traced their origins to Aeneas. Within the Iliad, it shows that the Trojan race will not be wholly destroyed, a small comfort set against the coming destruction of the city."
+   ],
+   "key": [
+    {
+     "ref": "Il. 20.306–308",
+     "quote": "For at length hath the son of Cronos come to hate the race of Priam; and now verily shall the mighty Aeneas be king among the Trojans, and his sons' sons that shall be born in days to come.",
+     "note": "Poseidon's prophecy of Aeneas' future rule extends the poem's view beyond the fall of Troy."
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "title": "Achilles and the River",
+   "summary": [
+    "Achilles splits the Trojans at the river Scamander and fills it with corpses. He captures twelve young men alive for sacrifice at Patroclus' pyre. He meets Lycaon, a son of Priam whom he had once captured and sold, and who has only just returned to Troy. Lycaon clasps his knees and begs for his life; Achilles kills him and throws the body into the river. He then kills Asteropaeus.",
+    "The river god, angered at being choked with corpses, rises against Achilles and nearly drowns him, until Hephaestus, sent by Hera, burns the river with fire. The gods then fight among themselves: Athena knocks down Ares with a stone and strikes Aphrodite; Apollo refuses to fight Poseidon; Hera beats Artemis about the ears with her own bow. Priam opens the gates to let the fleeing Trojans in. Apollo, disguised as Agenor, lures Achilles away so that the Trojans can escape."
+   ],
+   "analysis": [
+    "The meeting with Lycaon is one of the most chilling scenes in the poem. Achilles has spared suppliants in the past, but since Patroclus' death he has no pity. His words to Lycaon, however, are not simply cruel: he places himself within the same fate of death, calling Lycaon 'friend' and reminding him that Achilles too must die. This shared mortality is a step towards the recognition of Book 24 [[schein1984]].",
+    "The fight with the river is the most fantastic episode in the poem, as nature itself revolts against Achilles' violence. The theomachy that follows is grotesque and comic, a parody of battle that shows how little the gods really risk. The contrast emphasises that for mortals war is deadly earnest."
+   ],
+   "key": [
+    {
+     "ref": "Il. 21.106–110",
+     "quote": "Nay, friend, do thou too die; why lamentest thou thus? Patroclus also died, who was better far than thou. And seest thou not what manner of man am I, how comely and how tall? A good man was my father, and a goddess the mother that bare me; yet over me too hang death and mighty fate.",
+     "note": "Achilles kills Lycaon while speaking of his own death. The word 'friend' (philos) is chilling and strangely intimate."
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "title": "The Death of Hector",
+   "summary": [
+    "The Trojans take refuge in the city, but Hector stays outside the Scaean Gate. Priam and Hecuba beg him to come inside; Hecuba bares the breast that nursed him. Hector debates with himself, considers offering Helen and the treasure, but decides that he must face Achilles. When Achilles approaches, Hector panics and runs. Three times they circle the walls of Troy. Zeus weighs their fates on the golden scales, and Hector's sinks.",
+    "Athena, disguised as Hector's brother Deiphobus, persuades him to stand and fight, then vanishes. Realising that he has been deceived, Hector resolves to die gloriously. Achilles kills him with a spear through the throat and refuses his dying plea to return his body to his parents. Hector prophesies Achilles' death. The Achaeans stab the corpse; Achilles ties it to his chariot and drags it in the dust. Priam and Hecuba lament from the wall, and Andromache, who has been preparing a bath for her husband, comes out and faints at the sight, then laments for herself and her son."
+   ],
+   "analysis": [
+    "Hector's death is the climax of the action. His soliloquy shows a hero trapped by his own code: he cannot go back because he has ignored Polydamas' advice and fears the reproach of the Trojans. His flight around the walls, compared to a race for a prize, is one of the most emotionally charged scenes in literature. The narrator observes that they ran not for a sacrificial animal or an ox-hide but for the life of Hector [[redfield1975]].",
+    "Andromache's lament, the last scene of the book, returns to the domestic world of Book 6. She imagines Astyanax as an orphan, pushed away from feasts and living on charity. The poem's view of Hector's death is thus not only heroic but also domestic: a family destroyed. Achilles' mutilation of the body sets up the final problem of the poem, the treatment of the dead."
+   ],
+   "key": [
+    {
+     "ref": "Il. 22.304–305",
+     "quote": "Nay, but not without a struggle let me die, neither ingloriously, but in the working of some great deed for the hearing of men that are yet to be.",
+     "note": "Hector, knowing that he is doomed, chooses to die in pursuit of kleos. His last wish is to be remembered."
+    },
+    {
+     "ref": "Il. 22.389–390",
+     "quote": "Nay, if even in the house of Hades men forget their dead, yet will I even there remember my dear comrade.",
+     "note": "Achilles, standing over Hector, thinks only of Patroclus. His grief remains unquenched by victory."
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "title": "The Funeral Games",
+   "summary": [
+    "The Myrmidons mourn Patroclus. That night his ghost appears to Achilles in a dream, asking for burial so that he can pass through the gates of Hades, and asking that their bones be placed together in one urn. Achilles tries to embrace him, but the ghost vanishes like smoke. The next day a great pyre is built; Achilles cuts his hair, slaughters animals, and kills twelve Trojan captives. The winds are summoned to fan the flames.",
+    "Achilles then holds funeral games, awarding prizes himself. There is a chariot race, in which Antilochus cheats Menelaus and apologises; boxing; wrestling between Ajax and Odysseus, which ends in a draw; a foot race, in which the lesser Ajax slips in dung; armed combat; a weight throw; archery; and a spear-throwing contest, which Achilles awards to Agamemnon without a contest."
+   ],
+   "analysis": [
+    "The funeral games show the Achaean community restored and Achilles reintegrated into it. Instead of withdrawing in anger, he presides over the competition, settles disputes with tact and generosity, and honours Agamemnon. Quarrels over prizes, which began the poem, are now resolved through courtesy. The games thus answer Book 1 in a lighter key [[macleod1982]].",
+    "Patroclus' ghost reveals the Homeric view of the afterlife: the dead are insubstantial shadows who need burial to rest. The human sacrifice at the pyre, by contrast, shows Achilles' grief still turned to savagery; the narrator says that he planned evil deeds. The book thus mixes reconciliation and brutality before the final transformation in Book 24."
+   ],
+   "key": [
+    {
+     "ref": "Il. 23.83–84",
+     "quote": "Lay not my bones apart from thine, Achilles, but let them lie together, even as we were reared in your house",
+     "note": "Patroclus' ghost asks for a common grave. The request emphasises their bond and anticipates Achilles' own death."
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "title": "The Ransom of Hector",
+   "summary": [
+    "Achilles cannot sleep, and every morning he drags Hector's body around Patroclus' tomb, but Apollo preserves it from harm. After twelve days Apollo protests to the gods; Zeus decides that Achilles must accept a ransom. Thetis tells her son, and Iris tells Priam to go to Achilles' hut with gifts. Hecuba tries to dissuade him, but Priam sets out by night with a single herald. Hermes, disguised as a young Myrmidon, guides them through the Achaean camp.",
+    "Priam enters Achilles' hut, clasps his knees and kisses his hands. He asks Achilles to remember his own father, Peleus. Both men weep, Priam for Hector, Achilles for his father and Patroclus. Achilles raises Priam up and speaks of the two jars of Zeus, from which he gives men good and evil. He agrees to return the body, has it washed and dressed, and shares a meal with Priam, telling the story of Niobe, who ate even after losing her children. They gaze at each other in wonder. Achilles grants an eleven-day truce for the funeral.",
+    "Hermes wakes Priam before dawn and leads him back to Troy. Cassandra sees him coming, and the Trojans gather. Andromache, Hecuba and Helen lament over Hector. The Trojans gather wood for nine days, and on the tenth they burn Hector's body, collect the bones in a golden casket, and build a barrow. The poem ends with the funeral."
+   ],
+   "analysis": [
+    "Book 24 resolves the wrath of Achilles not by victory but by pity. The meeting of Achilles and Priam is the emotional climax of the poem and one of the greatest scenes in literature. The enemy becomes a fellow sufferer; the killer becomes a host. Achilles' speech on the two jars places all men, Greeks and Trojans, within the same human condition of suffering. The ransom refused in Book 1 is accepted, and the supplication scorned there is honoured here [[macleod1982]].",
+    "The ending has sometimes been considered a later addition, but most scholars now see it as the necessary conclusion: the wrath announced in the first line is resolved, and the poem ends not with the fall of Troy but with a funeral [[taplin1992]]. The three laments of the women give the last word to those who suffer from war, and Helen's lament for Hector's kindness is particularly moving."
+   ],
+   "key": [
+    {
+     "ref": "Il. 24.504–506",
+     "quote": "Lo, I am more piteous far than he, and have endured what no other mortal on the face of earth hath yet endured, to reach forth my hand to the face of him that hath slain my sons.",
+     "note": "Priam's appeal turns his humiliation into his claim on Achilles' pity. The gesture is the centre of the whole poem."
+    },
+    {
+     "ref": "Il. 24.804",
+     "quote": "On this wise held they funeral for horse-taming Hector.",
+     "note": "The last line of the poem. The Iliad ends not with Achilles but with his enemy, buried with honour."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Achilles",
+   "side": "Achaeans",
+   "text": "Son of the mortal Peleus and the sea-goddess Thetis, leader of the Myrmidons and the greatest warrior at Troy. He knows he must choose between a short, glorious life and a long, obscure one. Dishonoured by Agamemnon, he withdraws from the war and prays for Achaean defeat; when that defeat costs the life of Patroclus, his anger turns on Hector with terrible ferocity. His story moves from wounded pride, through grief and savagery, to the pity he shows Priam in Book 24. He is the poem's most articulate questioner of the heroic code as well as its supreme embodiment."
+  },
+  {
+   "name": "Agamemnon",
+   "side": "Achaeans",
+   "text": "Son of Atreus, king of Mycenae and commander of the Achaean army. He is the most powerful king but not the best fighter, and his insecurity about his status drives the quarrel of Book 1. He can be brave (his aristeia in Book 11) but is prone to despair, repeatedly proposing that the army go home. His public apology in Book 19, which blames Atē for his folly, shows a king who finds it hard to admit fault plainly."
+  },
+  {
+   "name": "Patroclus",
+   "side": "Achaeans",
+   "text": "Son of Menoetius, Achilles' closest companion since childhood, gentle and compassionate; Briseis remembers his kindness. Moved by the suffering of the Achaeans, he persuades Achilles to let him fight in Achilles' armour. His victories, including the killing of Sarpedon, lead him beyond Achilles' instructions to the walls of Troy, where Apollo, Euphorbus and Hector kill him. His death is the hinge of the plot and turns Achilles' wrath from Agamemnon to Hector."
+  },
+  {
+   "name": "Odysseus",
+   "side": "Achaeans",
+   "text": "King of Ithaca, the most resourceful and persuasive of the Achaeans. He restores order in Book 2, leads the embassy to Achilles in Book 9, and carries out the night raid with Diomedes in Book 10. His tact and practical wisdom (he insists that men must eat before they fight) contrast with Achilles' absolute candour. The Iliad already shows the qualities that make him the hero of the Odyssey."
+  },
+  {
+   "name": "Diomedes",
+   "side": "Achaeans",
+   "text": "Son of Tydeus and king of Argos, the youngest of the major Achaean heroes. Favoured by Athena, he dominates Book 5, wounding Aphrodite and Ares. He is courageous and outspoken in council, yet capable of generosity, as when he exchanges armour with Glaucus. In Achilles' absence he is the closest thing to a substitute Achilles until he is wounded in Book 11."
+  },
+  {
+   "name": "Ajax",
+   "side": "Achaeans",
+   "text": "Son of Telamon, from Salamis, called the 'bulwark of the Achaeans': the biggest and strongest Achaean after Achilles, famous for his huge tower-like shield. He fights Hector to a draw in Book 7 and defends the ships almost single-handed in Book 15. His blunt appeal to friendship in Book 9 is the speech that moves Achilles most. He is distinct from the lesser Ajax, son of Oileus."
+  },
+  {
+   "name": "Nestor",
+   "side": "Achaeans",
+   "text": "The aged king of Pylos, the oldest of the Achaean leaders, who has outlived two generations of men. He gives advice, often prefaced by long stories of his own youthful exploits, which serve as models for the young. His authority rests on memory and experience rather than strength, and his advice is always heard with respect even when it miscarries. It is Nestor who suggests the embassy to Achilles and who persuades Patroclus to fight in Achilles' armour."
+  },
+  {
+   "name": "Menelaus",
+   "side": "Achaeans",
+   "text": "King of Sparta, Agamemnon's younger brother and Helen's husband, whose wrong is the cause of the war. Brave but not among the strongest fighters, he is often protected by others. He fights Paris in Book 3, is wounded by Pandarus' arrow in Book 4, and defends Patroclus' body in Book 17. His readiness to spare a suppliant in Book 6, until Agamemnon overrules him, and his brother's anxious protectiveness towards him, give him a gentler character than Agamemnon's."
+  },
+  {
+   "name": "Phoenix",
+   "side": "Achaeans",
+   "text": "Achilles' old tutor, who fled his own father's curse and was raised to honour by Peleus. In the embassy of Book 9 he tells the story of Meleager as a warning against refusing gifts until too late. He stays behind with Achilles. His speech offers Achilles a father's counsel and an example from the heroic past, and includes the allegory of the Prayers (Litai), who limp after Atē repairing the harm she has done."
+  },
+  {
+   "name": "Briseis",
+   "side": "Others",
+   "text": "A woman of Lyrnessus captured by Achilles, who killed her husband and brothers. As Achilles' prize of honour, she becomes the object of the quarrel. Returned in Book 19, she laments over Patroclus, who had been kind to her. Her few lines are among the most moving in the poem and give voice to the women whom the war has made into possessions."
+  },
+  {
+   "name": "Thersites",
+   "side": "Achaeans",
+   "text": "The ugliest and most insolent man in the Achaean army, who in Book 2 abuses Agamemnon in terms close to Achilles' own. Odysseus beats him with the sceptre and the army laughs. He is the only commoner given a speaking part of any length. Later tradition made him a nobleman killed by Achilles, but in the Iliad he serves as a grotesque double of Achilles, voicing a grievance that only a hero may voice with impunity."
+  },
+  {
+   "name": "Hector",
+   "side": "Trojans",
+   "text": "Son of Priam and Hecuba, husband of Andromache, father of Astyanax, and the chief defender of Troy. He is a devoted son, husband and father who fights from a sense of duty and shame before the Trojans as much as for glory. Success in the absence of Achilles makes him over-confident: he rejects Polydamas' advice, keeps the Trojans on the plain, and then dies alone outside the walls. His death and the treatment of his body are the climax of the poem."
+  },
+  {
+   "name": "Priam",
+   "side": "Trojans",
+   "text": "The aged king of Troy, father of fifty sons, most of whom have died in the war. He is gentle towards Helen and does not blame her. His journey to Achilles' hut to ransom Hector's body in Book 24, and his act of kissing the hands that killed his sons, is the poem's supreme act of courage and humility. He watches from the wall as his sons die and begs Hector in vain to come inside; in grief he rolls in the dung of his courtyard before he sets out. Achilles' wonder at him in Book 24 shows the dignity that suffering can confer."
+  },
+  {
+   "name": "Hecuba",
+   "side": "Trojans",
+   "text": "Queen of Troy, Hector's mother. She arranges the offering to Athena in Book 6, pleads with Hector from the walls in Book 22, baring the breast that nursed him, and laments him in Book 24. Her hatred of Achilles is fierce: she wishes she could eat his liver raw. Mother of many sons killed by the Achaeans, she voices the grief of the older generation; in later tradition, and above all in Euripides, she becomes the type of the captive queen."
+  },
+  {
+   "name": "Andromache",
+   "side": "Trojans",
+   "text": "Hector's wife, daughter of Eetion of Thebe, whose father and seven brothers Achilles killed. In Book 6 she begs Hector to stay by the wall rather than return to the plain; in Book 22 she is preparing his bath when she hears the cries of mourning. Her laments imagine the fate of their son and of the women of Troy, and they bring the poem's tragedy into the household."
+  },
+  {
+   "name": "Paris (Alexander)",
+   "side": "Trojans",
+   "text": "Son of Priam, whose abduction of Helen started the war. He is handsome, a skilled archer, and favoured by Aphrodite, but he lacks his brother's sense of duty and is frequently rebuked by Hector and despised by Helen. He wounds Diomedes, Machaon and Eurypylus in Book 11. According to the later tradition he will kill Achilles with Apollo's help, a death foretold by the dying Hector in Book 22. He accepts his brother's rebukes with disarming good humour."
+  },
+  {
+   "name": "Helen",
+   "side": "Trojans",
+   "text": "The wife of Menelaus, now the wife of Paris in Troy, whose beauty is the cause of the war. Homer presents her with sympathy: intelligent, self-reproachful, aware that she will be a theme of song, and contemptuous of Paris but helpless before Aphrodite. Her lament for Hector, who never spoke a harsh word to her, is the last of the three laments that close the poem, and it reminds us that she has no other protector left in Troy."
+  },
+  {
+   "name": "Aeneas",
+   "side": "Trojans",
+   "text": "Son of Anchises and Aphrodite, a leading Trojan warrior. He is twice rescued by gods, by Aphrodite and Apollo in Book 5 and by Poseidon in Book 20, where it is prophesied that he and his descendants will rule the Trojans. This prophecy made him the founder figure of Virgil's Aeneid. In the Iliad he is pious and respected, but he resents Priam for not honouring him as he deserves, a hint of rivalry within the Trojan royal house."
+  },
+  {
+   "name": "Sarpedon",
+   "side": "Trojans",
+   "text": "Son of Zeus and leader of the Lycians, allies of Troy. His speech to Glaucus in Book 12 is the classic statement of the heroic code. Patroclus kills him in Book 16, and Zeus, though tempted to save him, lets fate run its course, marking his death with a rain of blood. Sleep and Death carry his body home to Lycia for burial, and the fight over his armour shows how much the dead hero's body still matters."
+  },
+  {
+   "name": "Glaucus",
+   "side": "Trojans",
+   "text": "Sarpedon's cousin and companion among the Lycians. In Book 6 his meeting with Diomedes leads to the simile of the generations of leaves and to an exchange of armour based on ancestral guest-friendship. The narrator remarks that Zeus took away Glaucus' wits, since he traded golden armour worth a hundred oxen for bronze worth nine. After Sarpedon's death he rallies the Lycians to defend the body and reproaches Hector bitterly for failing to protect it."
+  },
+  {
+   "name": "Polydamas",
+   "side": "Trojans",
+   "text": "A Trojan of the same generation as Hector, born on the same night, who excels in counsel as Hector does in battle. His prudent advice is sometimes heeded and sometimes rejected; Hector's refusal to retreat into the city on his advice in Book 18 leads to the Trojan disaster. In Book 12 he reads the omen of the eagle and the snake as a warning, and Hector brushes it aside. He is the wise counsellor whose truth goes unheard, and Hector remembers his advice with bitter regret before his death."
+  },
+  {
+   "name": "Zeus",
+   "side": "Gods",
+   "text": "The king of the gods, whose 'plan' frames the whole poem. He agrees to Thetis' request to give the Trojans victory, weighs fates on his scales, and decides the major turns of the action. He is powerful but not omnipotent in practice: he must manage other gods' resentments, is deceived by Hera, and does not save his own son Sarpedon. He is also capable of pity, for Hector and for Achilles' horses."
+  },
+  {
+   "name": "Hera",
+   "side": "Gods",
+   "text": "Wife and sister of Zeus, implacably hostile to Troy since the Judgement of Paris. She schemes on behalf of the Achaeans, most notably in her seduction of Zeus in Book 14, and is always ready to quarrel with her husband. She resents Zeus' secret promise to Thetis and is willing to sacrifice even her favourite cities, Argos, Sparta and Mycenae, if only Troy is destroyed. Her scheming brings out the comic and domestic side of the Olympians."
+  },
+  {
+   "name": "Athena",
+   "side": "Gods",
+   "text": "Daughter of Zeus, goddess of wisdom and war, a strong supporter of the Achaeans. She restrains Achilles in Book 1, inspires Diomedes, and in Book 22 tricks Hector into facing Achilles by disguising herself as his brother Deiphobus. She gives Diomedes the power to see the gods, guides his spear against Ares, and fells Ares with a stone in the battle of the gods. Her clear-sighted partisanship makes her the most active deity in the poem."
+  },
+  {
+   "name": "Apollo",
+   "side": "Gods",
+   "text": "Son of Zeus and Leto, the archer god and the chief divine supporter of Troy. He sends the plague in Book 1, rescues Aeneas and Hector, strikes down Patroclus, and in Book 24 protests against Achilles' treatment of Hector's body, which he has guarded from decay. He hurls Patroclus back from the walls and warns Diomedes that gods and men are of different kinds. He embodies both the gods' distance from humanity and their power to save or destroy."
+  },
+  {
+   "name": "Thetis",
+   "side": "Gods",
+   "text": "A sea-goddess, wife of the mortal Peleus and mother of Achilles. She grieves for her son's short life, persuades Zeus to honour him, brings him new armour from Hephaestus, and in Book 24 tells him to accept the ransom for Hector. Her relationship with Achilles is tender: she grieves over his short life, carries his complaint to Zeus, and comforts him in his grief. Through her the poem sees Achilles' mortality from the point of view of an immortal parent."
+  },
+  {
+   "name": "Aphrodite",
+   "side": "Gods",
+   "text": "Goddess of love, mother of Aeneas and protector of Paris and Helen. She rescues Paris from the duel in Book 3, is wounded by Diomedes in Book 5, and lends Hera her embroidered band in Book 14. She threatens Helen when she resists, a reminder that desire is a power stronger than the will, and in the battle of the gods Athena strikes her down. She embodies erōs, the desire that began the war."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Wrath and its consequences",
+   "text": [
+    "The Iliad announces its subject in its first word: mēnis, the wrath of Achilles. The poem follows this anger from its cause in a quarrel over honour to its consequences: the deaths of countless Achaeans, of Patroclus, and of Hector. The anger changes object, from Agamemnon to Hector, and changes nature, from wounded pride to grief-maddened revenge, before it is finally resolved in Book 24.",
+    "Anger in the poem is not simply a vice. Achilles has a legitimate grievance, and his wrath is a sign of his greatness. But the poem shows anger as a force that escapes control and destroys what it seeks to protect. Phoenix's story of Meleager in Book 9 and Achilles' own bitter regret in Book 18, where he wishes that strife and anger would perish from among gods and men, show the poem's understanding of how anger, sweeter than honey at first, becomes self-destructive."
+   ]
+  },
+  {
+   "title": "Honour, glory and the heroic code",
+   "text": [
+    "The heroes of the Iliad live by a code built on timē (honour, expressed in public recognition and material rewards) and kleos (glory, the fame that survives death in song). Sarpedon's speech in Book 12 explains the logic: kings receive honour at home and must earn it in battle, and because death is inevitable, the best response is to seek glory. Hector fights from aidōs, a sense of shame before the community, and dies seeking to be remembered.",
+    "The poem both celebrates and questions this code. Achilles' speech in Book 9 asks whether any reward can compensate for the loss of life, and whether honour distributed by an unworthy king is honour at all. Critics have long debated whether Achilles transcends the heroic code or is simply its most extreme exponent [[whitman1958]] [[redfield1975]]."
+   ]
+  },
+  {
+   "title": "Mortality and the human condition",
+   "text": [
+    "The deepest theme of the Iliad is the contrast between mortals and immortals. The gods suffer but recover; they quarrel but are reconciled over wine; their wounds heal at once. Humans die, and they know they will die. Zeus' remark in Book 17 that nothing is more wretched than man sums up a vision that many readers find bleak but also profoundly humane.",
+    "The poem's attention to individual deaths, often accompanied by a brief history of the victim's family or homeland, gives every loss weight [[griffin1980]]. Achilles, the son of a goddess with a short life ahead of him, embodies this condition most intensely: his choice between kleos and nostos is a choice about how to face death [[schein1984]]."
+   ]
+  },
+  {
+   "title": "Fate, the gods and human responsibility",
+   "text": [
+    "The action unfolds under 'the plan of Zeus', and the gods intervene constantly. Yet the poem never makes mortals mere puppets. Agamemnon blames Atē for his folly but still compensates Achilles; Hector is deceived by Athena yet chooses to die gloriously. Scholars speak of 'double motivation': an action can be both a god's work and a person's own choice [[kullmann1985]].",
+    "Moira, fate or one's allotted portion, is a limit that even Zeus usually respects, as the death of Sarpedon shows. Whether Zeus is above fate or its executor remains unclear, and the scales of Zeus present the question without answering it [[morrison1997]]."
+   ]
+  },
+  {
+   "title": "Friendship and grief",
+   "text": [
+    "The bond between Achilles and Patroclus is the emotional core of the poem. Patroclus is Achilles' philos, his dearest comrade, and his death transforms Achilles' anger and drives the second half of the plot. Achilles' grief is total: he lies in the dust, refuses food, and cannot let go of the body.",
+    "Grief is expressed in formal laments (gooi) by women and men alike, and the poem ends with three laments over Hector. Shared grief becomes the ground of the final reconciliation when Achilles and Priam weep together, each for his own dead."
+   ]
+  },
+  {
+   "title": "War and peace",
+   "text": [
+    "The Iliad is a poem of war, but it constantly reminds us of peace. The similes compare warriors to farmers, craftsmen, and shepherds; the Shield of Achilles depicts a city at peace beside a city at war; Hector's meeting with Andromache shows the household that war will destroy. Achilles' horses, the springs where Trojan women once washed their clothes, and the memories of the dead all evoke a world beyond the battlefield.",
+    "Whether the poem glorifies or condemns war is one of the central questions of its reception. Simone Weil read it as a poem in which force turns everyone it touches into a thing [[weil1945]]; others emphasise the poem's admiration for heroic courage. Its greatness may lie in holding both views at once."
+   ]
+  },
+  {
+   "title": "Pity and recognition of the enemy",
+   "text": [
+    "Pity is rare on the battlefield of the Iliad. Agamemnon kills suppliants, and Achilles after Patroclus' death spares no one. Yet the poem consistently invites pity for the dead, Trojan and Achaean alike, and it ends with an extraordinary act of shared compassion between enemies.",
+    "The meeting of Achilles and Priam shows mortal recognition across the divide of war. Achilles sees his own father in Priam; Priam admires Achilles' beauty. The poem thus does not end with triumph but with a recognition of shared suffering, the human solidarity that war denies [[macleod1982]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Similes",
+   "text": "Homer's extended similes compare scenes of battle to images drawn from nature and everyday life: lions attacking cattle, storms at sea, forest fires, farmers threshing grain, a mother brushing a fly from her sleeping child. They slow down the action, offer a vision of a world beyond the war, and often express emotions that the characters cannot. Many are drawn from the world of peace, so that war is constantly set against the life it destroys."
+  },
+  {
+   "title": "Supplication",
+   "text": "Supplication (hikesia), the ritual of clasping a person's knees or touching their chin to beg for mercy, appears throughout the poem. Chryses' plea is rejected in Book 1, Thetis' supplication of Zeus succeeds, suppliants on the battlefield are killed by Agamemnon and Achilles, and Priam's supplication of Achilles in Book 24 is finally granted. The fate of suppliants measures the moral state of the war."
+  },
+  {
+   "title": "Arming scenes and armour",
+   "text": "Before an aristeia, a warrior arms himself in a set sequence: greaves, breastplate, sword, shield, helmet, spear. Such typical scenes are building blocks of oral composition, expanded or compressed as needed. Achilles' armour in particular passes from Achilles to Patroclus to Hector, marking each wearer for death, until Achilles receives the new armour made by Hephaestus."
+  },
+  {
+   "title": "Funeral rites and lament",
+   "text": "Proper burial is essential in the Homeric world, and the threat of leaving a body to dogs and birds is the worst insult. The poem moves from the anonymous dead of the proem to the elaborate funeral of Patroclus and the final funeral of Hector. Laments by women and men articulate the losses of war and give the poem its closing voice."
+  },
+  {
+   "title": "Gifts, prizes and ransom",
+   "text": "The exchange of goods structures social relations in the poem. Prizes measure honour, gifts seal friendships and reconciliations, and ransom allows the return of captives and bodies. The poem begins with a ransom refused (Chryses) and ends with a ransom accepted (Priam), framing the wrath of Achilles between two acts of exchange."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The Shield of Achilles",
+   "text": "The shield made by Hephaestus in Book 18 represents the whole world: the heavens, the earth and the sea, cities at peace and at war, farming, celebration, and the river Ocean around the edge. Carried by Achilles into his most violent fighting, it holds within it an image of everything that war threatens. It has also been read as a symbol of the poem itself, a work of art that contains a world [[taplin1980]]."
+  },
+  {
+   "title": "The scales of Zeus",
+   "text": "Zeus' golden scales appear at the turning points of Books 8 and 22, weighing the fates of armies and of Hector. They represent the inevitable working of fate and Zeus' will, and the visible moment when a man's destiny is decided."
+  },
+  {
+   "title": "The sceptre",
+   "text": "The staff held by speakers in the assembly and the sceptre of Agamemnon, passed down from Zeus through Hermes and Pelops, symbolise legitimate authority. Achilles' oath on the sceptre in Book 1, and his throwing it down, mark his rejection of Agamemnon's authority; Odysseus' use of it to beat Thersites in Book 2 shows its force."
+  },
+  {
+   "title": "The Achaean wall",
+   "text": "Built in Book 7 and broken through in Book 12, the wall around the Achaean ships is destined to be erased by the gods after the war. It symbolises the impermanence of human works and the contrast between physical monuments, which vanish, and the poem, which remains."
+  }
+ ],
+ "debates": [
+  {
+   "title": "The Homeric Question",
+   "text": [
+    "The Homeric Question asks who composed the Iliad and the Odyssey, when, how and in what form. Ancient scholars already discussed whether the same poet composed both epics. In 1795 Friedrich August Wolf argued that the poems had been assembled from shorter oral songs, launching a debate between 'analysts', who sought to identify earlier layers and later additions, and 'unitarians', who defended the poem's unity of design.",
+    "Today most scholars accept that the Iliad grew out of an oral tradition but disagree about how it became fixed. Some believe that a single poet dictated or wrote a monumental version; others, such as Gregory Nagy, see a gradual crystallisation over centuries of performance. Martin West argued for a single poet working with writing over a long period [[west2011]] [[west2011b]] [[nagy1979]] [[graziosi2002]]."
+   ],
+   "cite": [
+    "west2011",
+    "west2011b",
+    "nagy1979",
+    "graziosi2002",
+    "fowler2004"
+   ]
+  },
+  {
+   "title": "Oral-formulaic composition and its critics",
+   "text": [
+    "Milman Parry demonstrated that Homeric epithets and phrases form an economical system of formulas suited to oral composition in performance [[parry1971]]. Albert Lord's fieldwork among South Slavic singers showed how such poets compose long songs without writing [[lord1960]]. The Parry-Lord theory transformed the study of Homer and of oral poetry worldwide.",
+    "Critics have questioned whether the theory can explain the Iliad's exceptional length, coherence and artistry. Adam Parry, Milman's son, asked whether formulaic composition left room for individual meaning [[parry1966]]. Others noted that the formulas are often used with subtle point and that the poem displays a design that seems to require a single controlling mind [[kirk1985]] [[edwards1987]]."
+   ],
+   "cite": [
+    "parry1971",
+    "lord1960",
+    "parry1966",
+    "kirk1985",
+    "edwards1987"
+   ]
+  },
+  {
+   "title": "Date and the historical Troy",
+   "text": [
+    "Most scholars date the Iliad between the late eighth and the mid-seventh century BC. The older consensus favoured a date around 750–700 BC; Martin West, pointing to apparent echoes of Hesiod and to allusions that seem to reflect the world of the seventh century, placed it between about 680 and 640 BC [[west2011]]. Linguistic and archaeological arguments have been used on both sides, and the question is bound up with how and when the text was written down.",
+    "The excavations at Hisarlık by Heinrich Schliemann and later archaeologists revealed a city destroyed around 1200 BC, and Hittite documents mention a city called Wilusa. Joachim Latacz argued that these finds support the historicity of a Trojan war [[latacz2004]]. Denys Page earlier explored what historical memories might survive in the poem [[page1959]]. Many scholars remain cautious, noting that the poem reflects the social world of the poet's own time more than that of the Bronze Age."
+   ],
+   "cite": [
+    "west2011",
+    "latacz2004",
+    "page1959"
+   ]
+  },
+  {
+   "title": "Unity: the Doloneia and Book 24",
+   "text": [
+    "An ancient note records that Book 10 was composed separately by Homer and inserted into the Iliad later, and many modern scholars regard it as non-Homeric because of its language, tone and self-containment [[kirk1985]]. Casey Dué and Mary Ebbott have defended it as an example of a traditional ambush theme in oral epic poetry, which a performance tradition would naturally include [[due2010]].",
+    "The ending of the poem has also been questioned by analysts, who saw Book 24 as a later addition. Most modern critics, however, regard Book 24 as essential to the poem's design, completing the story of Achilles' wrath and mirroring Book 1 [[macleod1982]] [[taplin1992]]."
+   ],
+   "cite": [
+    "kirk1985",
+    "due2010",
+    "macleod1982",
+    "taplin1992"
+   ]
+  },
+  {
+   "title": "The gods: serious or comic?",
+   "text": [
+    "The Homeric gods quarrel, deceive, laugh and make love while men die. Since antiquity critics have been troubled by their apparent frivolity: Plato wanted Homer banned from his ideal state partly because of his depiction of the gods. Modern scholars have tried to understand the gods' role in the poem's meaning.",
+    "Jasper Griffin argued that the gods serve as a foil to mortal suffering: their ease and immortality make the seriousness of human life and death stand out [[griffin1980]]. Wolfgang Kullmann studied the relationship between gods and men across both epics [[kullmann1985]]. Others emphasise the gods' role as guardians of justice, oaths and suppliants."
+   ],
+   "cite": [
+    "griffin1980",
+    "kullmann1985"
+   ]
+  },
+  {
+   "title": "The heroic code and Achilles' refusal",
+   "text": [
+    "Achilles' rejection of Agamemnon's gifts in Book 9 is central to interpreting the poem. Some critics see it as a challenge to the heroic code itself, an awareness that material rewards cannot compensate for the loss of life [[whitman1958]]. Others see it as a violation of community values, leading to the tragedy of Patroclus' death [[redfield1975]].",
+    "Adam Parry argued that Achilles has no language to express his disillusion except the heroic language, so that his speech seems contradictory [[parry1956]]. Seth Schein emphasised Achilles' tragic understanding of mortality [[schein1984]]."
+   ],
+   "cite": [
+    "whitman1958",
+    "redfield1975",
+    "parry1956",
+    "schein1984"
+   ]
+  },
+  {
+   "title": "Weil's 'poem of force' and war",
+   "text": [
+    "Simone Weil's essay, written in 1939–40 and published in the Marseilles journal Cahiers du Sud in 1940–41 under the anagram 'Émile Novis', read the Iliad as a poem about force, the power that turns human beings into things, victims and victors alike [[weil1945]]. Written as France fell, the essay has shaped generations of readers who see the Iliad as the most clear-sighted of war poems, one that never mistakes force for virtue and extends the same bitterness to victors and vanquished.",
+    "Critics who resist Weil point out that the poem admires courage, skill and the beauty of armed men, and that its heroes find meaning, not only degradation, in battle; the Iliad mourns war without renouncing it. The psychiatrist Jonathan Shay compared Achilles to Vietnam veterans suffering from combat trauma, opening a new strand of interpretation [[shay1994]]."
+   ],
+   "cite": [
+    "weil1945",
+    "shay1994"
+   ]
+  },
+  {
+   "title": "The Shield of Achilles",
+   "text": [
+    "The description of the Shield in Book 18 has generated much discussion. Is it a realistic description of a work of art, a cosmic image, or a symbol of the poem? Oliver Taplin argued that the shield shows the world in which the war is set, and that its scenes of peace give perspective on the violence of the poem [[taplin1980]].",
+    "Others read the shield as an image of the universe, or as a commentary on the poem's themes of justice, community and death. Its relation to Achilles, who carries it into his most violent fighting, remains a fruitful question [[edwards1987]]."
+   ],
+   "cite": [
+    "taplin1980",
+    "edwards1987"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Il. 1.1–7",
+   "quote": "The wrath sing, goddess, of Peleus' son, Achilles, that destructive wrath which brought countless woes upon the Achaeans, and sent forth to Hades many valiant souls of heroes, and made them themselves spoil for dogs and every bird; thus the plan of Zeus came to fulfillment, from the time when first they parted in strife Atreus' son, king of men, and brilliant Achilles.",
+   "who": "The narrator",
+   "explanation": "The proem announces the subject of the poem: not the whole Trojan War, but the wrath of Achilles and its consequences. The narrator invokes the goddess (the Muse), presents the cost of the wrath in terms of the dead left unburied, and places the events within the plan of Zeus. The opening also sets the poem's tragic tone: its subject is not victory but suffering."
+  },
+  {
+   "ref": "Il. 6.146–149",
+   "quote": "Even as are the generations of leaves, such are those also of men. As for the leaves, the wind scattereth some upon the earth, but the forest, as it bourgeons, putteth forth others when the season of spring is come; even so of men one generation springeth up and another passeth away.",
+   "who": "Glaucus",
+   "explanation": "Asked about his ancestry by Diomedes, Glaucus first reflects on the transience of human generations. The simile compares human beings to leaves, renewed each spring but individually brief. It places the heroic world within the cycle of nature and introduces a theme of mortality that the poem develops throughout."
+  },
+  {
+   "ref": "Il. 9.410–416",
+   "quote": "For my mother the goddess, silver-footed Thetis, telleth me that twofold fates are bearing me toward the doom of death: if I abide here and war about the city of the Trojans, then lost is my home-return, but my renown shall be imperishable; but if I return home to my dear native land, lost then is my glorious renown, yet shall my life long endure, neither shall the doom of death come soon upon me.",
+   "who": "Achilles",
+   "explanation": "Achilles reveals the choice that defines him: glory in exchange for a short life, or a long life without fame. The opposition of kleos and nostos is the essence of the heroic condition. His decision to stay, later confirmed after Patroclus' death, makes him the tragic hero of the poem."
+  },
+  {
+   "ref": "Il. 12.322–328",
+   "quote": "Ah friend, if once escaped from this battle we were for ever to be ageless and immortal, neither should I fight myself amid the foremost, nor should I send thee into battle where men win glory; but now—for in any case fates of death beset us, fates past counting, which no mortal may escape or avoid—now let us go forward, whether we shall give glory to another, or another to us.",
+   "who": "Sarpedon",
+   "explanation": "Sarpedon explains the heroic code to Glaucus: if men were immortal, there would be no need to fight. But since death is inevitable, they must seek glory. Mortality is the foundation of heroic action."
+  },
+  {
+   "ref": "Il. 17.443–447",
+   "quote": "Ah unhappy pair, wherefore gave we you to king Peleus, to a mortal, while ye are ageless and immortal? Was it that among wretched men ye too should have sorrows? For in sooth there is naught, I ween, more miserable than man among all things that breathe and move upon earth.",
+   "who": "Zeus",
+   "explanation": "Zeus pities Achilles' immortal horses, which weep for Patroclus. His reflection on the misery of human life is one of the poem's most pessimistic statements, made all the more striking by being uttered by the king of the gods."
+  },
+  {
+   "ref": "Il. 18.98–100",
+   "quote": "Straightway may I die, seeing I was not to bear aid to my comrade at his slaying. Far, far from his own land hath he fallen, and had need of me to be a warder off of ruin.",
+   "who": "Achilles",
+   "explanation": "Achilles' response to Thetis' warning that his death will follow Hector's. He accepts death as the price of avenging Patroclus, whom he failed to protect. The choice of Book 9 is now made definitively, out of grief rather than ambition."
+  },
+  {
+   "ref": "Il. 21.106–110",
+   "quote": "Nay, friend, do thou too die; why lamentest thou thus? Patroclus also died, who was better far than thou. And seest thou not what manner of man am I, how comely and how tall? A good man was my father, and a goddess the mother that bare me; yet over me too hang death and mighty fate.",
+   "who": "Achilles",
+   "explanation": "Achilles' words to Lycaon combine cruelty with a strange solidarity. He kills a suppliant, but he also recognises that he himself is mortal. The passage anticipates the recognition between Achilles and Priam in Book 24."
+  },
+  {
+   "ref": "Il. 22.304–305",
+   "quote": "Nay, but not without a struggle let me die, neither ingloriously, but in the working of some great deed for the hearing of men that are yet to be.",
+   "who": "Hector",
+   "explanation": "Deceived by Athena, Hector realises that he is doomed. His response is to seek glory in death. The passage is the clearest example of how kleos functions as the answer to mortality."
+  },
+  {
+   "ref": "Il. 24.504–506",
+   "quote": "Lo, I am more piteous far than he, and have endured what no other mortal on the face of earth hath yet endured, to reach forth my hand to the face of him that hath slain my sons.",
+   "who": "Priam",
+   "explanation": "Priam's supplication of Achilles. He asks Achilles to remember his own father, and describes his act as one that no other mortal has endured. The gesture moves Achilles to tears and leads to the return of Hector's body."
+  },
+  {
+   "ref": "Il. 24.527–528",
+   "quote": "For two urns are set upon the floor of Zeus of gifts that he giveth, the one of ills, the other of blessings.",
+   "who": "Achilles",
+   "explanation": "Achilles consoles Priam with a parable of the two jars from which Zeus distributes good and evil. All mortals receive a mixture of good and evil, or only evil. The speech expresses a view of human life as shared suffering."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does the Iliad begin with the wrath of Achilles rather than the beginning of the Trojan War?",
+   "hint": "Consider how the narrow focus creates a tragic structure. Think about how the poem nonetheless includes the whole war through flashback, foreshadowing and set pieces like the Catalogue and the teichoskopia."
+  },
+  {
+   "q": "Is Achilles right to reject Agamemnon's offer in Book 9?",
+   "hint": "Weigh Achilles' arguments about honour and mortality against the appeals of Phoenix and Ajax. Think about the consequences of his refusal and how the poem judges them."
+  },
+  {
+   "q": "Compare Hector and Achilles as heroes.",
+   "hint": "Look at their motivations (shame, glory, family, friendship), their relationships with others, and their deaths. Consider why the poem ends with Hector's funeral."
+  },
+  {
+   "q": "What role do the gods play in the Iliad? Are they serious or comic?",
+   "hint": "Examine scenes such as the quarrel on Olympus, the wounding of Aphrodite, the deception of Zeus, and the death of Sarpedon. Consider how the gods illuminate the human condition."
+  },
+  {
+   "q": "How does the Iliad represent women?",
+   "hint": "Look at Helen, Andromache, Hecuba, Briseis and the goddesses. Consider their roles as prizes, mourners and voices of the costs of war."
+  },
+  {
+   "q": "Is the Iliad a celebration of war or a criticism of it?",
+   "hint": "Consider Simone Weil's reading of the poem as a poem of force, the similes of peace, the Shield of Achilles, and the poem's admiration for heroic courage."
+  },
+  {
+   "q": "What is the significance of the Shield of Achilles?",
+   "hint": "Describe the scenes on the shield and consider how they relate to the poem's themes. Think about why the shield is made at this point in the story."
+  },
+  {
+   "q": "How does Book 24 resolve the poem?",
+   "hint": "Compare it with Book 1: supplication, ransom, quarrel and reconciliation. Consider what Achilles learns, and why the poem ends with a funeral."
+  },
+  {
+   "q": "What does the Iliad suggest about friendship?",
+   "hint": "Focus on Achilles and Patroclus, but also consider Glaucus and Diomedes, Sarpedon and Glaucus, and the relationship between Achilles and Priam."
+  },
+  {
+   "q": "How does oral composition shape the style of the Iliad?",
+   "hint": "Look at epithets, formulas, typical scenes and similes. Consider how repetition creates meaning and how the poet varies traditional material."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "burgess2001",
+   "text": "Burgess, Jonathan S. The Tradition of the Trojan War in Homer and the Epic Cycle. Baltimore: Johns Hopkins University Press, 2001."
+  },
+  {
+   "id": "due2010",
+   "text": "Dué, Casey, and Mary Ebbott. Iliad 10 and the Poetics of Ambush: A Multitext Edition with Essays and Commentary. Washington, DC: Center for Hellenic Studies, 2010."
+  },
+  {
+   "id": "edwards1987",
+   "text": "Edwards, Mark W. Homer: Poet of the Iliad. Baltimore: Johns Hopkins University Press, 1987."
+  },
+  {
+   "id": "fowler2004",
+   "text": "Fowler, Robert, ed. The Cambridge Companion to Homer. Cambridge: Cambridge University Press, 2004."
+  },
+  {
+   "id": "graziosi2002",
+   "text": "Graziosi, Barbara. Inventing Homer: The Early Reception of Epic. Cambridge: Cambridge University Press, 2002."
+  },
+  {
+   "id": "griffin1980",
+   "text": "Griffin, Jasper. Homer on Life and Death. Oxford: Clarendon Press, 1980."
+  },
+  {
+   "id": "kirk1985",
+   "text": "Kirk, G. S., gen. ed. The Iliad: A Commentary. 6 vols. Cambridge: Cambridge University Press, 1985–1993. Vols. 1–2 by G. S. Kirk; vol. 3 by Bryan Hainsworth; vol. 4 by Richard Janko; vol. 5 by Mark W. Edwards; vol. 6 by Nicholas Richardson."
+  },
+  {
+   "id": "kullmann1985",
+   "text": "Kullmann, Wolfgang. \"Gods and Men in the Iliad and the Odyssey.\" Harvard Studies in Classical Philology 99 (1985): 1–23."
+  },
+  {
+   "id": "latacz2004",
+   "text": "Latacz, Joachim. Troy and Homer: Towards a Solution of an Old Mystery. Trans. Kevin Windle and Rosh Ireland. Oxford: Oxford University Press, 2004."
+  },
+  {
+   "id": "lord1960",
+   "text": "Lord, Albert B. The Singer of Tales. Cambridge, MA: Harvard University Press, 1960."
+  },
+  {
+   "id": "macleod1982",
+   "text": "Macleod, C. W., ed. Homer: Iliad Book XXIV. Cambridge: Cambridge University Press, 1982."
+  },
+  {
+   "id": "morrison1997",
+   "text": "Morrison, J. V. \"Kerostasia, the Dictates of Fate, and the Will of Zeus in the Iliad.\" Arethusa 30.2 (1997): 273–296."
+  },
+  {
+   "id": "nagy1979",
+   "text": "Nagy, Gregory. The Best of the Achaeans: Concepts of the Hero in Archaic Greek Poetry. Baltimore: Johns Hopkins University Press, 1979."
+  },
+  {
+   "id": "page1959",
+   "text": "Page, Denys L. History and the Homeric Iliad. Berkeley: University of California Press, 1959."
+  },
+  {
+   "id": "parry1956",
+   "text": "Parry, Adam. \"The Language of Achilles.\" Transactions and Proceedings of the American Philological Association 87 (1956): 1–7."
+  },
+  {
+   "id": "parry1966",
+   "text": "Parry, Adam. \"Have We Homer's Iliad?\" Yale Classical Studies 20 (1966): 177–216."
+  },
+  {
+   "id": "parry1971",
+   "text": "Parry, Milman. The Making of Homeric Verse: The Collected Papers of Milman Parry. Ed. Adam Parry. Oxford: Clarendon Press, 1971."
+  },
+  {
+   "id": "redfield1975",
+   "text": "Redfield, James M. Nature and Culture in the Iliad: The Tragedy of Hector. Chicago: University of Chicago Press, 1975."
+  },
+  {
+   "id": "schein1984",
+   "text": "Schein, Seth L. The Mortal Hero: An Introduction to Homer's Iliad. Berkeley: University of California Press, 1984."
+  },
+  {
+   "id": "shay1994",
+   "text": "Shay, Jonathan. Achilles in Vietnam: Combat Trauma and the Undoing of Character. New York: Atheneum, 1994."
+  },
+  {
+   "id": "taplin1980",
+   "text": "Taplin, Oliver. \"The Shield of Achilles within the Iliad.\" Greece & Rome 27.1 (1980): 1–21."
+  },
+  {
+   "id": "taplin1992",
+   "text": "Taplin, Oliver. Homeric Soundings: The Shaping of the Iliad. Oxford: Clarendon Press, 1992."
+  },
+  {
+   "id": "weil1945",
+   "text": "Weil, Simone. \"The Iliad, or the Poem of Force.\" Trans. Mary McCarthy. Politics 2.11 (1945): 321–331."
+  },
+  {
+   "id": "west2011",
+   "text": "West, M. L. The Making of the Iliad: Disquisition and Analytical Commentary. Oxford: Oxford University Press, 2011."
+  },
+  {
+   "id": "west2011b",
+   "text": "West, M. L. \"The Homeric Question Today.\" Proceedings of the American Philosophical Society 155.4 (2011): 383–393."
+  },
+  {
+   "id": "whitman1958",
+   "text": "Whitman, Cedric H. Homer and the Heroic Tradition. Cambridge, MA: Harvard University Press, 1958."
+  }
+ ]
+}

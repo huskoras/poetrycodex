@@ -1,0 +1,2962 @@
+{
+ "group": "iliad",
+ "title": "The Iliad",
+ "checked_on": "2026-10-19",
+ "status": "draft: awaiting the editor's approval",
+ "note": "Written by the editors in their own words from the poem itself and from public-domain reference works. Names are found as each translator spells them; a name shared by two people is marked 'which one?' and never guessed. Arthur Way writes Hera as 'Here', which cannot be told from the common word, so her lines in his translation are not listed.",
+ "sources": [
+  {
+   "cite": "William Smith (ed.), Dictionary of Greek and Roman Biography and Mythology (1849)",
+   "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0104"
+  },
+  {
+   "cite": "William Smith, A Smaller Classical Dictionary (1910 Everyman edition)",
+   "url": "https://en.wikisource.org/wiki/A_Smaller_Classical_Dictionary"
+  },
+  {
+   "cite": "Homer, Iliad, ed. and trans. A. T. Murray (1924), Perseus Digital Library",
+   "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0134"
+  }
+ ],
+ "key": "CAPITALS mark the stressed syllable. a as in cat · ah as in father · aw as in law · ay as in day · e as in bed · ee as in see · i as in sit · eye, or y after a consonant, as in by · o as in hot · oh as in go · oo as in moon · ow as in cow · uh as in about · ur as in fur · th as in thin · k and g always hard · s always as in so.",
+ "people": [
+  {
+   "id": "achilles",
+   "name": "Achilles",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Achilles",
+     "Pelides",
+     "Peleides",
+     "son of Peleus",
+     "Son of Peleus"
+    ]
+   },
+   "who": "The greatest fighter of the Achaeans, son of the mortal Peleus and the sea-goddess Thetis; his anger is the poem's subject.",
+   "more": "Dishonoured when Agamemnon takes his prize Briseis in Book 1, he withdraws from the fighting and asks Thetis to have Zeus give the Trojans the upper hand. He returns only after Hector kills his friend Patroclus, kills Hector in Book 22 and drags his body, and in Book 24 gives it back to Priam. He knows he is fated to die young at Troy.",
+   "say": "uh-KIL-eez",
+   "related": [
+    "peleus",
+    "thetis",
+    "patroclus",
+    "agamemnon",
+    "hector",
+    "briseis",
+    "myrmidons"
+   ]
+  },
+  {
+   "id": "agamemnon",
+   "name": "Agamemnon",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Agamemnon"
+    ]
+   },
+   "who": "King of Mycenae, son of Atreus, and commander-in-chief of the Achaean army at Troy.",
+   "more": "His refusal to ransom Chryseis brings Apollo's plague, and his seizure of Briseis in her place begins the quarrel with Achilles. A brave fighter (Book 11 is his day of glory) but an unsteady leader, he proposes going home more than once. In Book 9 he offers Achilles great gifts, which are refused, and in Book 19 the two are reconciled.",
+   "say": "ag-uh-MEM-non",
+   "related": [
+    "menelaus",
+    "atreus",
+    "achilles",
+    "chryseis",
+    "briseis",
+    "mycenae"
+   ]
+  },
+  {
+   "id": "menelaus",
+   "name": "Menelaus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Menelaus",
+     "Menelaüs"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Menelaos"
+    ]
+   },
+   "who": "King of Sparta, younger brother of Agamemnon, and husband of Helen, whose abduction by Paris began the war.",
+   "more": "In Book 3 he fights Paris in single combat to settle the war and is winning when Aphrodite snatches Paris away; in Book 4 the archer Pandarus wounds him and breaks the truce. In Book 17 he leads the fight to save the body of Patroclus.",
+   "say": "men-uh-LAY-us",
+   "related": [
+    "agamemnon",
+    "helen",
+    "paris",
+    "sparta",
+    "atreus"
+   ]
+  },
+  {
+   "id": "odysseus",
+   "name": "Odysseus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Odysseus",
+     "Ulysses",
+     "Ithacus",
+     "Laertiades",
+     "son of Laertes"
+    ]
+   },
+   "who": "King of Ithaca, son of Laertes, the shrewdest of the Achaean leaders; called Ulysses in the Latin form.",
+   "more": "He returns Chryseis to her father in Book 1, stops the army's rush for the ships in Book 2 and beats Thersites, speaks first in the embassy to Achilles in Book 9, and goes with Diomedes on the night raid of Book 10 that takes Dolon and kills Rhesus. In the funeral games he wrestles Ajax and wins the foot-race.",
+   "say": "oh-DIS-ee-us",
+   "say_also": {
+    "Ulysses": "yoo-LIS-eez"
+   },
+   "related": [
+    "laertes",
+    "diomedes",
+    "ithaca",
+    "dolon",
+    "thersites"
+   ]
+  },
+  {
+   "id": "ajax-telamon",
+   "name": "Ajax, son of Telamon",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Telamonian Ajax",
+     "Telamonian Aias",
+     "Ajax Telamon",
+     "son of Telamon",
+     "Son of Telamon",
+     "Telamonian",
+     "great Ajax",
+     "Great Ajax",
+     "greater Ajax"
+    ]
+   },
+   "who": "The 'Telamonian' or greater Ajax of Salamis, the bulwark of the Achaeans, second only to Achilles as a fighter.",
+   "more": "Huge and steady, known by his tower-like shield, he fights Hector to a draw in Book 7, joins the embassy to Achilles in Book 9, and in Book 15 defends the ships almost alone. His half-brother is the archer Teucer. Where a translation says only 'Ajax', this Codex asks which Ajax rather than guess.",
+   "say": "AY-jaks",
+   "related": [
+    "teucer",
+    "ajax-oileus",
+    "hector",
+    "achaeans"
+   ]
+  },
+  {
+   "id": "ajax-oileus",
+   "name": "Ajax, son of Oïleus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "son of Oileus",
+     "Son of Oileus",
+     "Oilean Ajax",
+     "Oilean",
+     "Oiliades",
+     "Ajax Oileus",
+     "lesser Ajax",
+     "Ajax the less",
+     "swift Ajax"
+    ]
+   },
+   "who": "The lesser Ajax, leader of the Locrians, small, quick and a fine spearman, often fighting beside the greater Ajax.",
+   "more": "Short and lightly armoured, he is the swiftest runner after Achilles. In the foot-race of Book 23 Athena trips him into the dung of the sacrificed cattle and Odysseus wins. The two Ajaxes are often named together as a pair.",
+   "say": "AY-jaks oh-EE-lee-us",
+   "related": [
+    "ajax-telamon",
+    "odysseus"
+   ]
+  },
+  {
+   "id": "diomedes",
+   "name": "Diomedes",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Diomedes",
+     "Diomed",
+     "Diomede",
+     "Tydides",
+     "Tydeides",
+     "son of Tydeus",
+     "Son of Tydeus"
+    ]
+   },
+   "who": "King of Argos, son of Tydeus, the youngest of the great Achaean leaders and their best fighter while Achilles stays away.",
+   "more": "Book 5 is his: with Athena's help he wounds Aphrodite and even the war-god Ares. In Book 6 he meets the Lycian Glaucus, finds that their grandfathers were guest-friends, and the two exchange armour instead of fighting, gold for bronze. In Book 10 he and Odysseus make the night raid.",
+   "say": "dy-uh-MEE-deez",
+   "related": [
+    "tydeus",
+    "sthenelus",
+    "glaucus",
+    "odysseus",
+    "athena",
+    "argos"
+   ]
+  },
+  {
+   "id": "nestor",
+   "name": "Nestor",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Nestor",
+     "Gerenian Nestor"
+    ]
+   },
+   "who": "The aged king of Pylos, son of Neleus, who has outlived two generations and gives the Achaeans long, wise counsel.",
+   "more": "He tries to make peace between Achilles and Agamemnon in Book 1, proposes the wall and ditch round the ships, and in Book 11 tells Patroclus the story of his own youthful deeds and urges him to borrow Achilles' armour, which leads to Patroclus' death. His son Antilochus fights beside him.",
+   "say": "NES-tor",
+   "related": [
+    "antilochus",
+    "pylos",
+    "patroclus"
+   ]
+  },
+  {
+   "id": "patroclus",
+   "name": "Patroclus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Patroclus",
+     "son of Menoetius",
+     "Son of Menoetius",
+     "Menoetiades"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Patroklos",
+     "son of Menoitios"
+    ],
+    "iliad-way": [
+     "son of Menoitius"
+    ]
+   },
+   "who": "Achilles' dearest companion, son of Menoetius, brought up with him in the house of Peleus.",
+   "more": "Moved by the Achaeans' losses, he goes into battle in Book 16 wearing Achilles' armour, drives the Trojans back and kills Sarpedon, but goes too far: Apollo strikes him, Euphorbus wounds him and Hector kills him. His death brings Achilles back to the war. His funeral and games fill Book 23.",
+   "say": "puh-TROH-klus",
+   "related": [
+    "achilles",
+    "menoetius",
+    "sarpedon",
+    "hector",
+    "euphorbus"
+   ]
+  },
+  {
+   "id": "idomeneus",
+   "name": "Idomeneus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Idomeneus",
+     "Idomenëus"
+    ],
+    "iliad-chapman": [
+     "Idomen"
+    ],
+    "iliad-pope": [
+     "Idomen"
+    ]
+   },
+   "who": "King of Crete, an older warrior and one of the most trusted Achaean leaders.",
+   "more": "Book 13 is largely his: with his squire Meriones he holds the Achaean left against the Trojans, kills Othryoneus, who had been promised Cassandra, and Asius, and boasts over them. He has a seat of honour at Agamemnon's councils.",
+   "say": "eye-DOM-in-ee-us",
+   "related": [
+    "meriones",
+    "crete"
+   ]
+  },
+  {
+   "id": "meriones",
+   "name": "Meriones",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Meriones",
+     "Merion"
+    ]
+   },
+   "who": "The squire and companion of Idomeneus, second in command of the Cretans.",
+   "more": "He lends Odysseus a helmet of boar's tusks for the night raid of Book 10, fights beside Idomeneus in Book 13, and helps carry Patroclus' body from the field in Book 17. In the games of Book 23 he wins the archery contest.",
+   "say": "muh-RY-uh-neez",
+   "related": [
+    "idomeneus",
+    "crete"
+   ]
+  },
+  {
+   "id": "teucer",
+   "name": "Teucer",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Teucer"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Teukros"
+    ]
+   },
+   "who": "The best archer among the Achaeans, half-brother of the greater Ajax, who shoots from behind Ajax's shield.",
+   "more": "In Book 8 he kills many Trojans from the cover of his brother's shield until Hector strikes him with a stone. In Book 15 Zeus snaps his bowstring as he aims at Hector.",
+   "say": "TOO-sur",
+   "related": [
+    "ajax-telamon"
+   ]
+  },
+  {
+   "id": "antilochus",
+   "name": "Antilochus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Antilochus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Antilochos"
+    ]
+   },
+   "who": "Nestor's son, a young and daring fighter and a friend of Achilles.",
+   "more": "He kills the first Trojan of the poem's battles in Book 4. In Book 18 he brings Achilles the news that Patroclus is dead. In the chariot race of Book 23 he gets past Menelaus by a reckless move, then yields the disputed prize with good grace.",
+   "say": "an-TIL-uh-kus",
+   "related": [
+    "nestor",
+    "achilles",
+    "menelaus"
+   ]
+  },
+  {
+   "id": "phoenix",
+   "name": "Phoenix",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Phoenix",
+     "Phœnix"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Phoinix"
+    ],
+    "iliad-way": [
+     "Phoinix"
+    ]
+   },
+   "who": "An old man of Peleus' household who helped to bring up Achilles and went with him to Troy.",
+   "more": "In the embassy of Book 9 he makes the longest speech, telling of his own exile and of Meleager, a hero who refused to fight until too late, to persuade Achilles to accept Agamemnon's gifts. Achilles keeps him in his own hut for the night.",
+   "say": "FEE-niks",
+   "related": [
+    "achilles",
+    "meleager",
+    "peleus"
+   ]
+  },
+  {
+   "id": "calchas",
+   "name": "Calchas",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Calchas",
+     "Kalchas"
+    ],
+    "iliad-hobbes": [
+     "Chalchas"
+    ]
+   },
+   "who": "The Achaeans' seer, who reads the will of the gods from birds.",
+   "more": "In Book 1, under Achilles' protection, he reveals that Apollo sent the plague because Agamemnon dishonoured the priest Chryses. In Book 2 Odysseus recalls his prophecy at Aulis that Troy would fall in the tenth year.",
+   "say": "KAL-kus",
+   "related": [
+    "chryses",
+    "agamemnon",
+    "aulis"
+   ]
+  },
+  {
+   "id": "machaon",
+   "name": "Machaon",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Machaon"
+    ]
+   },
+   "who": "A son of Asclepius and healer to the Achaean army, who also leads troops in battle.",
+   "more": "He tends Menelaus' arrow wound in Book 4. In Book 11 Paris wounds him and Nestor drives him from the field; Achilles, seeing him pass, sends Patroclus to ask who it was, and the errand sets Patroclus on the road to his death.",
+   "say": "muh-KAY-on",
+   "related": [
+    "podalirius",
+    "nestor",
+    "patroclus"
+   ]
+  },
+  {
+   "id": "podalirius",
+   "name": "Podalirius",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Podalirius"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Podaleirios"
+    ],
+    "iliad-way": [
+     "Podaleirius"
+    ]
+   },
+   "who": "Machaon's brother, the other son of Asclepius, also a healer.",
+   "more": "He leads troops from Thessaly in the Catalogue of Ships with his brother, and in Book 11 is said to be still fighting in the plain while Machaon lies wounded.",
+   "say": "pod-uh-LIR-ee-us",
+   "related": [
+    "machaon"
+   ]
+  },
+  {
+   "id": "thersites",
+   "name": "Thersites",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Thersites"
+    ]
+   },
+   "who": "The ugliest man at Troy, a common soldier who rails at the kings in the assembly of Book 2.",
+   "more": "He accuses Agamemnon of greed in words that echo Achilles' own complaint, and Odysseus beats him with the royal sceptre while the army laughs.",
+   "say": "thur-SY-teez",
+   "related": [
+    "odysseus",
+    "agamemnon"
+   ]
+  },
+  {
+   "id": "talthybius",
+   "name": "Talthybius",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Talthybius"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Talthybios"
+    ]
+   },
+   "who": "Agamemnon's herald.",
+   "more": "With Eurybates he is sent in Book 1 to take Briseis from Achilles' hut, a task they do in silence and shame. Later he fetches the lambs for the sworn truce of Book 3 and the boar for Agamemnon's oath in Book 19.",
+   "say": "tal-THIB-ee-us",
+   "related": [
+    "eurybates",
+    "agamemnon",
+    "briseis"
+   ]
+  },
+  {
+   "id": "eurybates",
+   "name": "Eurybates",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Eurybates"
+    ]
+   },
+   "who": "A herald; one Eurybates serves Agamemnon, another, an Ithacan, serves Odysseus.",
+   "more": "Agamemnon's Eurybates goes with Talthybius to fetch Briseis in Book 1. In Book 2 Odysseus' herald of the same name picks up the cloak Odysseus throws off as he runs to stop the flight to the ships.",
+   "say": "yoo-RIB-uh-teez",
+   "related": [
+    "talthybius",
+    "odysseus"
+   ]
+  },
+  {
+   "id": "menestheus",
+   "name": "Menestheus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Menestheus"
+    ]
+   },
+   "who": "Leader of the Athenians at Troy, praised in the Catalogue of Ships for marshalling chariots and men.",
+   "more": "In Book 12 he holds a stretch of the wall and sends for the two Ajaxes when Sarpedon and Glaucus attack it.",
+   "say": "muh-NES-thee-us",
+   "related": [
+    "ajax-telamon",
+    "sarpedon"
+   ]
+  },
+  {
+   "id": "automedon",
+   "name": "Automedon",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Automedon"
+    ]
+   },
+   "who": "Achilles' charioteer, who drives the immortal horses Xanthus and Balius.",
+   "more": "He drives Patroclus into battle in Book 16, fights over his body in Book 17, and drives Achilles in Book 19. He serves the food when Priam comes to Achilles' hut in Book 24.",
+   "say": "aw-TOM-uh-don",
+   "related": [
+    "achilles",
+    "patroclus",
+    "xanthus-horse"
+   ]
+  },
+  {
+   "id": "briseis",
+   "name": "Briseis",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Briseis",
+     "Briseïs",
+     "Brisëis",
+     "Brisis"
+    ]
+   },
+   "who": "A woman of Lyrnessus taken captive by Achilles, whose seizure by Agamemnon begins the quarrel.",
+   "more": "Achilles sacked her city and killed her husband and brothers. Taken from him in Book 1 and returned untouched in Book 19, she laments over Patroclus' body, remembering that he had promised to make her Achilles' wedded wife. Her name means 'daughter of Briseus'.",
+   "say": "bry-SEE-is",
+   "related": [
+    "achilles",
+    "agamemnon",
+    "patroclus"
+   ]
+  },
+  {
+   "id": "chryseis",
+   "name": "Chryseis",
+   "kind": "mortal",
+   "aliases": {
+    "default": [
+     "Chryseis",
+     "Chryseïs"
+    ]
+   },
+   "who": "Daughter of Chryses, priest of Apollo, captured and given to Agamemnon as his prize.",
+   "more": "Agamemnon refuses her father's ransom, and Apollo's plague follows. In Book 1 Odysseus takes her home to Chryse with a sacrifice for the god, and Agamemnon takes Briseis in her place.",
+   "say": "kry-SEE-is",
+   "related": [
+    "chryses",
+    "agamemnon",
+    "chryse",
+    "apollo"
+   ]
+  },
+  {
+   "id": "chryses",
+   "name": "Chryses",
+   "kind": "mortal",
+   "aliases": {
+    "default": [
+     "Chryses"
+    ]
+   },
+   "who": "Priest of Apollo at Chryse, father of Chryseis.",
+   "more": "When Agamemnon drives him off with insults in Book 1, he prays to Apollo, who sends a plague on the army for nine days. When his daughter is returned he prays again, and the plague ends.",
+   "say": "KRY-seez",
+   "related": [
+    "chryseis",
+    "apollo",
+    "chryse"
+   ]
+  },
+  {
+   "id": "sthenelus",
+   "name": "Sthenelus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Sthenelus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Sthenelos"
+    ]
+   },
+   "who": "Son of Capaneus and charioteer and companion of Diomedes.",
+   "more": "In Book 4 he answers Agamemnon's taunts angrily, boasting that the sons have done better than their fathers by taking Thebes. In Book 5 he drives off the horses of Aeneas as a prize for Diomedes.",
+   "say": "STHEN-uh-lus",
+   "related": [
+    "diomedes"
+   ]
+  },
+  {
+   "id": "eurypylus",
+   "name": "Eurypylus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Eurypylus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Eurypylos"
+    ]
+   },
+   "who": "A leader from Thessaly, son of Euaemon.",
+   "more": "Paris shoots him in the thigh in Book 11; Patroclus, on his way back from Nestor, takes him to his hut and dresses the wound, and stays with him until Book 15.",
+   "say": "yoo-RIP-uh-lus",
+   "related": [
+    "patroclus",
+    "paris"
+   ]
+  },
+  {
+   "id": "peleus",
+   "name": "Peleus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Peleus",
+     "Peleüs"
+    ]
+   },
+   "who": "King of Phthia, father of Achilles by the goddess Thetis; an old man left at home during the war.",
+   "more": "He is remembered rather than seen: his gifts from the gods (the armour, the horses, the ash spear) pass to Achilles, and in Book 24 Priam moves Achilles by bidding him remember his own father, growing old without a son beside him.",
+   "say": "PEE-lee-us",
+   "related": [
+    "achilles",
+    "thetis",
+    "phthia"
+   ]
+  },
+  {
+   "id": "tydeus",
+   "name": "Tydeus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Tydeus"
+    ]
+   },
+   "who": "Father of Diomedes, one of the Seven who attacked Thebes, small in stature but a ferocious fighter.",
+   "more": "Agamemnon and Athena both hold up his deeds at Thebes to spur his son on (Books 4 and 5). He died there before Diomedes was grown.",
+   "say": "TY-dee-us",
+   "related": [
+    "diomedes"
+   ]
+  },
+  {
+   "id": "atreus",
+   "name": "Atreus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Atreus"
+    ]
+   },
+   "who": "Father of Agamemnon and Menelaus, an earlier king of Mycenae.",
+   "more": "Book 2 traces the royal sceptre from Hephaestus to Zeus, to Hermes, to Pelops, to Atreus, to Thyestes and so to Agamemnon. 'Son of Atreus' (Atrides) may mean either brother; where the line does not say which, the Codex asks.",
+   "say": "AY-tree-us",
+   "related": [
+    "agamemnon",
+    "menelaus"
+   ]
+  },
+  {
+   "id": "laertes",
+   "name": "Laertes",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Laertes",
+     "Laërtes"
+    ]
+   },
+   "who": "Father of Odysseus, left behind in Ithaca.",
+   "more": "In the Iliad he appears only in his son's name, 'son of Laertes'.",
+   "say": "lay-UR-teez",
+   "related": [
+    "odysseus",
+    "ithaca"
+   ]
+  },
+  {
+   "id": "menoetius",
+   "name": "Menoetius",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Menoetius"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Menoitios"
+    ],
+    "iliad-way": [
+     "Menoitius"
+    ]
+   },
+   "who": "Father of Patroclus, who brought his son to Peleus' house after the boy killed a playmate in a quarrel.",
+   "more": "Nestor recalls in Book 11 that Menoetius told Patroclus to guide Achilles with good counsel, being the older of the two. Achilles mourns in Book 18 that he had promised Menoetius to bring his son home.",
+   "say": "muh-NEE-shee-us",
+   "related": [
+    "patroclus",
+    "peleus"
+   ]
+  },
+  {
+   "id": "protesilaus",
+   "name": "Protesilaus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Protesilaus",
+     "Protesilaüs"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Protesilaos"
+    ]
+   },
+   "who": "The first Achaean to leap ashore at Troy, killed at once by a Dardanian.",
+   "more": "The Catalogue of Ships says he left a wife tearing her cheeks at home and a house half-finished. In Book 15 the fiercest fighting surges round his ship, which Hector sets alight in Book 16.",
+   "say": "proh-tes-ih-LAY-us",
+   "related": [
+    "hector"
+   ]
+  },
+  {
+   "id": "philoctetes",
+   "name": "Philoctetes",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Philoctetes"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Philoktetes"
+    ],
+    "iliad-way": [
+     "Philoktetes"
+    ]
+   },
+   "who": "A master archer left behind on Lemnos with a festering snake-bite.",
+   "more": "The Catalogue of Ships notes that the Achaeans would soon remember him; later legend, not told in the Iliad, has him fetched to Troy to kill Paris with the bow of Heracles.",
+   "say": "fil-ok-TEE-teez",
+   "related": [
+    "lemnos",
+    "heracles"
+   ]
+  },
+  {
+   "id": "eumelus",
+   "name": "Eumelus",
+   "kind": "mortal",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Eumelus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Eumelos"
+    ]
+   },
+   "who": "Son of Admetus and Alcestis, owner of the finest mares in the army.",
+   "more": "In the chariot race of Book 23 he leads until Athena breaks his yoke, and comes in last; Achilles wants to give him the second prize, and Antilochus objects.",
+   "say": "yoo-MEE-lus",
+   "related": [
+    "antilochus",
+    "achilles"
+   ]
+  },
+  {
+   "id": "priam",
+   "name": "Priam",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Priam",
+     "Priamus"
+    ]
+   },
+   "who": "The old king of Troy, son of Laomedon, father of Hector, Paris and many other sons.",
+   "more": "Too old to fight, he watches from the walls with Helen in Book 3 and pleads with Hector not to face Achilles in Book 22. In Book 24, guided by Hermes, he goes by night to Achilles' hut, kisses the hands that killed his sons and ransoms Hector's body.",
+   "say": "PRY-um",
+   "related": [
+    "hector",
+    "hecuba",
+    "paris",
+    "laomedon",
+    "achilles",
+    "hermes"
+   ]
+  },
+  {
+   "id": "hector",
+   "name": "Hector",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Hector"
+    ]
+   },
+   "who": "Priam's eldest son, husband of Andromache and father of Astyanax, the chief defender of Troy.",
+   "more": "In Book 6 he says farewell to his wife and son on the walls. With Zeus' favour he drives the Achaeans to their ships and kills Patroclus in Book 16, but he refuses Polydamas' advice to withdraw, and in Book 22 Achilles kills him before the walls. The poem ends with his funeral.",
+   "say": "HEK-tur",
+   "related": [
+    "priam",
+    "andromache",
+    "astyanax",
+    "achilles",
+    "patroclus",
+    "polydamas",
+    "troy"
+   ]
+  },
+  {
+   "id": "paris",
+   "name": "Paris",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Paris",
+     "Alexander",
+     "Alexandros",
+     "Alexandrus"
+    ]
+   },
+   "who": "Priam's son, also called Alexander, who carried off Helen from Sparta and so caused the war.",
+   "more": "Handsome and an archer, he is mocked by Hector for avoiding battle. He fights Menelaus in Book 3 and is rescued by Aphrodite; later he wounds Diomedes, Machaon and Eurypylus with arrows. Hector, dying, foretells that Paris and Apollo will kill Achilles.",
+   "say": "PAR-is",
+   "related": [
+    "helen",
+    "menelaus",
+    "aphrodite",
+    "priam",
+    "hector"
+   ]
+  },
+  {
+   "id": "helen",
+   "name": "Helen",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Helen",
+     "Helena"
+    ]
+   },
+   "who": "Daughter of Zeus, wife of Menelaus, carried off to Troy by Paris; the war is fought over her.",
+   "more": "In Book 3 she names the Achaean leaders for Priam from the walls and weaves the battle into a tapestry. She blames herself bitterly, scorns Paris, and is the last of the three women to lament Hector in Book 24, remembering that he never spoke a harsh word to her.",
+   "say": "HEL-in",
+   "related": [
+    "paris",
+    "menelaus",
+    "priam",
+    "aphrodite"
+   ]
+  },
+  {
+   "id": "hecuba",
+   "name": "Hecuba",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Hecuba",
+     "Hecabe"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Hekabe"
+    ],
+    "iliad-way": [
+     "Hekabe"
+    ]
+   },
+   "who": "Queen of Troy, Priam's wife and Hector's mother.",
+   "more": "In Book 6 she leads the women's offering of a robe to Athena, who refuses it. In Book 22 she bares her breast to Hector from the wall, begging him to come inside, and she laments him in Book 24.",
+   "say": "HEK-yoo-buh",
+   "related": [
+    "priam",
+    "hector"
+   ]
+  },
+  {
+   "id": "andromache",
+   "name": "Andromache",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Andromache"
+    ]
+   },
+   "who": "Hector's wife, daughter of Eetion of Thebe, whose father and brothers were killed by Achilles.",
+   "more": "In Book 6 she begs Hector to fight from the walls: he is father, mother and brother to her now. In Book 22 she hears the wailing at her loom, runs to the wall and sees him dragged behind Achilles' chariot. She leads the laments in Book 24, foreseeing slavery for herself and death for her son.",
+   "say": "an-DROM-uh-kee",
+   "related": [
+    "hector",
+    "astyanax",
+    "eetion"
+   ]
+  },
+  {
+   "id": "astyanax",
+   "name": "Astyanax",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Astyanax",
+     "Scamandrius"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Skamandrios"
+    ]
+   },
+   "who": "The infant son of Hector and Andromache; Hector called him Scamandrius, the Trojans 'Astyanax', lord of the city.",
+   "more": "In Book 6 he cries in fright at the nodding horsehair crest of his father's helmet, and Hector laughs, takes it off and prays for him. Andromache foresees in Book 24 that he will be thrown from the walls.",
+   "say": "uh-STY-uh-naks",
+   "related": [
+    "hector",
+    "andromache"
+   ]
+  },
+  {
+   "id": "aeneas",
+   "name": "Aeneas",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Aeneas",
+     "Æneas"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Aineias"
+    ]
+   },
+   "who": "Son of Aphrodite and Anchises, leader of the Dardanians, second only to Hector among the Trojans.",
+   "more": "Wounded by Diomedes in Book 5, he is rescued by his mother and by Apollo. In Book 20 Poseidon saves him from Achilles, declaring that he and his sons are fated to rule the Trojans in time to come: the thread Virgil's Aeneid takes up.",
+   "say": "ih-NEE-us",
+   "related": [
+    "anchises",
+    "aphrodite",
+    "dardanians",
+    "poseidon"
+   ]
+  },
+  {
+   "id": "anchises",
+   "name": "Anchises",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Anchises"
+    ]
+   },
+   "who": "A Dardanian prince, loved by Aphrodite, and father of Aeneas.",
+   "more": "He belongs to the younger branch of Troy's royal house, descended from Tros through Assaracus.",
+   "say": "an-KY-seez",
+   "related": [
+    "aeneas",
+    "aphrodite"
+   ]
+  },
+  {
+   "id": "antenor",
+   "name": "Antenor",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Antenor"
+    ]
+   },
+   "who": "A Trojan elder and counsellor, husband of Theano, father of many sons who fight in the poem.",
+   "more": "In Book 3 he recalls entertaining Odysseus and Menelaus when they came on an embassy before the war. In Book 7 he urges the Trojans to give Helen back, and Paris refuses.",
+   "say": "an-TEE-nor",
+   "related": [
+    "theano",
+    "agenor",
+    "paris"
+   ]
+  },
+  {
+   "id": "polydamas",
+   "name": "Polydamas",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Polydamas"
+    ]
+   },
+   "who": "Son of Panthous, Hector's companion and the Trojans' voice of caution, born on the same night as Hector.",
+   "more": "Hector follows his advice twice in Books 12 and 13, but angrily rejects his warning about an omen in Book 12, and in Book 18, when Achilles has reappeared, scorns his counsel to withdraw inside the walls. In Book 22, waiting alone for Achilles, Hector remembers that Polydamas was right.",
+   "say": "puh-LID-uh-mus",
+   "related": [
+    "hector"
+   ]
+  },
+  {
+   "id": "deiphobus",
+   "name": "Deiphobus",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Deiphobus",
+     "Deïphobus",
+     "Deiphobos"
+    ]
+   },
+   "who": "A son of Priam, brother of Hector, one of the leading Trojan fighters.",
+   "more": "In Book 13 he fights Idomeneus and Meriones and is wounded. In Book 22 Athena takes his shape to persuade Hector to stand against Achilles, then vanishes, and Hector knows that the gods have deserted him.",
+   "say": "dee-IF-uh-bus",
+   "related": [
+    "hector",
+    "athena",
+    "priam"
+   ]
+  },
+  {
+   "id": "helenus",
+   "name": "Helenus",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Helenus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Helenos"
+    ]
+   },
+   "who": "A son of Priam, the best of the Trojan seers.",
+   "more": "In Book 6 he sends Hector back to the city to have the women pray to Athena, and in Book 7 he hears the gods' plan and tells Hector to challenge the bravest Achaean to single combat.",
+   "say": "HEL-in-us",
+   "related": [
+    "hector",
+    "priam"
+   ]
+  },
+  {
+   "id": "pandarus",
+   "name": "Pandarus",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Pandarus",
+     "son of Lycaon",
+     "Son of Lycaon"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Pandaros"
+    ]
+   },
+   "who": "An archer from Zeleia under Mount Ida, son of Lycaon, who breaks the truce by shooting Menelaus.",
+   "more": "Athena, in disguise, tempts him in Book 4 to shoot Menelaus for glory, and the truce sworn in Book 3 is broken. In Book 5 Diomedes kills him. (He is not the Pandarus of Chaucer and Shakespeare, who borrowed only his name.)",
+   "say": "PAN-duh-rus",
+   "related": [
+    "menelaus",
+    "diomedes",
+    "athena"
+   ]
+  },
+  {
+   "id": "glaucus",
+   "name": "Glaucus",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Glaucus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Glaukos"
+    ],
+    "iliad-way": [
+     "Glaukus"
+    ]
+   },
+   "who": "A Lycian prince, grandson of Bellerophon, who leads the Lycians with his cousin Sarpedon.",
+   "more": "In Book 6 he tells Diomedes that the generations of men are like leaves, and the two find they are guest-friends and exchange armour, his gold for Diomedes' bronze. He rebukes Hector in Book 17 for leaving Sarpedon's body. (His great-grandfather, Bellerophon's father, was also called Glaucus.)",
+   "say": "GLAW-kus",
+   "related": [
+    "sarpedon",
+    "diomedes",
+    "bellerophon",
+    "lycians"
+   ]
+  },
+  {
+   "id": "sarpedon",
+   "name": "Sarpedon",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Sarpedon"
+    ]
+   },
+   "who": "Son of Zeus and king of the Lycians, the greatest of Troy's allies.",
+   "more": "In Book 12 he tells Glaucus why kings must fight in front: since death comes anyway, let us win glory. In Book 16 Patroclus kills him; Zeus weeps tears of blood but does not save him, and Sleep and Death carry his body home to Lycia.",
+   "say": "sar-PEE-dun",
+   "related": [
+    "glaucus",
+    "zeus",
+    "patroclus",
+    "lycians",
+    "lycia"
+   ]
+  },
+  {
+   "id": "dolon",
+   "name": "Dolon",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Dolon"
+    ]
+   },
+   "who": "A Trojan scout, ugly but swift, who goes to spy on the Achaean camp in Book 10 for the promise of Achilles' horses.",
+   "more": "Odysseus and Diomedes catch him, get from him the layout of the Trojan camp and the news of Rhesus' arrival, and then Diomedes kills him though he begs for his life.",
+   "say": "DOH-lon",
+   "related": [
+    "odysseus",
+    "diomedes",
+    "rhesus"
+   ]
+  },
+  {
+   "id": "rhesus",
+   "name": "Rhesus",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Rhesus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Rhesos"
+    ]
+   },
+   "who": "A Thracian king, newly arrived as Troy's ally, with horses whiter than snow.",
+   "more": "On Dolon's information, Diomedes kills him and twelve of his men in their sleep in Book 10, and Odysseus drives off his horses.",
+   "say": "REE-sus",
+   "related": [
+    "dolon",
+    "diomedes",
+    "odysseus",
+    "thracians"
+   ]
+  },
+  {
+   "id": "cassandra",
+   "name": "Cassandra",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Cassandra"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Kassandra"
+    ],
+    "iliad-way": [
+     "Kassandra"
+    ]
+   },
+   "who": "The loveliest of Priam's daughters.",
+   "more": "In Book 13 she is promised to Othryoneus if he drives the Achaeans away; he is killed. In Book 24 she is the first to see Priam coming home with Hector's body and calls the city out. Her gift of prophecy belongs to later tellings, not the Iliad.",
+   "say": "kuh-SAN-druh",
+   "related": [
+    "priam",
+    "hector"
+   ]
+  },
+  {
+   "id": "laodice",
+   "name": "Laodice",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Laodice"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Laodike"
+    ],
+    "iliad-way": [
+     "Laodike"
+    ]
+   },
+   "who": "The fairest of Priam's daughters, wife of Antenor's son Helicaon.",
+   "more": "In Book 3 Iris takes her shape to fetch Helen to the walls. In Book 6 Hecuba meets Hector as she goes to see her.",
+   "say": "lay-OD-ih-see",
+   "related": [
+    "priam",
+    "helen"
+   ]
+  },
+  {
+   "id": "euphorbus",
+   "name": "Euphorbus",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Euphorbus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Euphorbos"
+    ]
+   },
+   "who": "A young Trojan, son of Panthous, the first to wound Patroclus after Apollo has stunned him.",
+   "more": "In Book 17 Menelaus kills him as he tries to strip Patroclus' body; his hair, bound with gold and silver, is soaked in blood.",
+   "say": "yoo-FOR-bus",
+   "related": [
+    "patroclus",
+    "menelaus"
+   ]
+  },
+  {
+   "id": "agenor",
+   "name": "Agenor",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Agenor"
+    ]
+   },
+   "who": "A Trojan warrior, son of Antenor.",
+   "more": "In Book 21 he alone stands against Achilles at the gate, deliberating like Hector later. Apollo saves him and takes his shape to lead Achilles away, so the Trojans can get inside the walls.",
+   "say": "uh-JEE-nor",
+   "related": [
+    "antenor",
+    "achilles",
+    "apollo"
+   ]
+  },
+  {
+   "id": "lycaon",
+   "name": "Lycaon, son of Priam",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Lycaon, son of Priam",
+     "Lycaon son of Priam"
+    ]
+   },
+   "who": "A young son of Priam whom Achilles had once captured and sold, and who returned to Troy only to meet him again.",
+   "more": "In Book 21 he clasps Achilles' knees and begs for life; Achilles, since Patroclus' death, will spare no one, and kills him. The same name belongs to the father of Pandarus, so a bare 'Lycaon' is marked 'which one?'.",
+   "say": "ly-KAY-on",
+   "related": [
+    "achilles",
+    "priam",
+    "pandarus"
+   ]
+  },
+  {
+   "id": "cebriones",
+   "name": "Cebriones",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Cebriones"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Kebriones"
+    ],
+    "iliad-way": [
+     "Kebriones"
+    ]
+   },
+   "who": "A bastard son of Priam and Hector's charioteer from Book 8.",
+   "more": "Patroclus kills him with a stone in Book 16 and mocks his fall as a diver's plunge; Hector and Patroclus fight over his body.",
+   "say": "seb-RY-uh-neez",
+   "related": [
+    "hector",
+    "patroclus"
+   ]
+  },
+  {
+   "id": "asteropaeus",
+   "name": "Asteropaeus",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Asteropaeus",
+     "Asteropæus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Asteropaios"
+    ],
+    "iliad-way": [
+     "Asteropaius"
+    ]
+   },
+   "who": "Leader of the Paeonians, grandson of the river Axius, who fights with a spear in each hand.",
+   "more": "In Book 21 he grazes Achilles' arm, the only wound Achilles takes in the poem, and is killed beside the river. Achilles later gives his sword as a prize in the games.",
+   "say": "as-tur-uh-PEE-us",
+   "related": [
+    "achilles",
+    "scamander"
+   ]
+  },
+  {
+   "id": "theano",
+   "name": "Theano",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Theano"
+    ]
+   },
+   "who": "Priestess of Athena at Troy and wife of Antenor.",
+   "more": "In Book 6 she lays the women's robe on the knees of Athena's image and prays, and the goddess refuses the prayer.",
+   "say": "thee-AY-noh",
+   "related": [
+    "antenor",
+    "athena",
+    "hecuba"
+   ]
+  },
+  {
+   "id": "idaeus",
+   "name": "Idaeus",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Idaeus",
+     "Idæus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Idaios"
+    ],
+    "iliad-way": [
+     "Idaius"
+    ]
+   },
+   "who": "Priam's herald.",
+   "more": "He parts Hector and Ajax at nightfall in Book 7 and carries the Trojans' offer to the Achaean camp. In Book 24 he drives the mule-cart with the ransom for Hector's body.",
+   "say": "eye-DEE-us",
+   "related": [
+    "priam"
+   ]
+  },
+  {
+   "id": "eetion",
+   "name": "Eetion",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Eetion",
+     "Eëtion",
+     "Aetion"
+    ]
+   },
+   "who": "King of Thebe under Mount Placus, father of Andromache, killed by Achilles when he sacked the city.",
+   "more": "Andromache tells Hector in Book 6 that Achilles killed her father but did not strip his body, burning him in his armour and raising a mound. Achilles took the lyre he plays in Book 9 from Eetion's city.",
+   "say": "ee-EE-shee-on",
+   "related": [
+    "andromache",
+    "achilles"
+   ]
+  },
+  {
+   "id": "dardanus",
+   "name": "Dardanus",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Dardanus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Dardanos"
+    ]
+   },
+   "who": "Son of Zeus and founder of the line of Trojan kings.",
+   "more": "Aeneas recites the family tree in Book 20: Dardanus, Erichthonius, Tros, and then the two branches, Ilus to Laomedon and Priam, and Assaracus to Anchises and Aeneas.",
+   "say": "DAR-duh-nus",
+   "related": [
+    "tros",
+    "aeneas",
+    "dardanians"
+   ]
+  },
+  {
+   "id": "tros",
+   "name": "Tros",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Tros"
+    ]
+   },
+   "who": "An early king, from whom the Trojans take their name; father of Ilus, Assaracus and Ganymede.",
+   "more": "Zeus gave him immortal horses in payment for his son Ganymede, whom the gods carried off to be cupbearer. (A Trojan named Tros is also killed by Achilles in Book 20.)",
+   "say": "TROS",
+   "related": [
+    "dardanus",
+    "ganymede",
+    "laomedon"
+   ]
+  },
+  {
+   "id": "laomedon",
+   "name": "Laomedon",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Laomedon"
+    ]
+   },
+   "who": "Father of Priam and former king of Troy, who cheated the gods.",
+   "more": "Poseidon reminds Apollo in Book 21 how the two of them served Laomedon for a year, building the walls and herding his cattle, and were sent off unpaid and threatened. Heracles sacked Troy in his time over another broken promise.",
+   "say": "lay-OM-uh-don",
+   "related": [
+    "priam",
+    "poseidon",
+    "apollo",
+    "heracles"
+   ]
+  },
+  {
+   "id": "ganymede",
+   "name": "Ganymede",
+   "kind": "mortal",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Ganymede",
+     "Ganymedes"
+    ],
+    "iliad-chapman": [
+     "Ganymed"
+    ]
+   },
+   "who": "A son of Tros, the most beautiful of mortals, carried off by the gods to be Zeus' cupbearer.",
+   "more": "Aeneas tells his story in Book 20, in the family tree of Troy's kings.",
+   "say": "GAN-ih-meed",
+   "related": [
+    "tros",
+    "zeus"
+   ]
+  },
+  {
+   "id": "zeus",
+   "name": "Zeus",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Zeus",
+     "Jove",
+     "Jupiter",
+     "Kronion",
+     "Saturnius",
+     "Thunderer",
+     "Cronides",
+     "Allfather"
+    ]
+   },
+   "who": "King of the gods, father of gods and men, whose plan the poem says was being fulfilled; Jove or Jupiter to the Romans.",
+   "more": "At Thetis' plea in Book 1 he nods his promise to honour Achilles by letting the Trojans win until the Achaeans make amends. He forbids the gods to fight in Book 8, is seduced and put to sleep by Hera in Book 14, weighs the fates of Achilles and Hector on golden scales in Book 22, and in Book 24 sends Thetis and Iris to arrange the ransom.",
+   "say": "ZOOS",
+   "say_also": {
+    "Jove": "JOHV",
+    "Jupiter": "JOO-pih-tur"
+   },
+   "related": [
+    "hera",
+    "thetis",
+    "cronos",
+    "olympus",
+    "ida"
+   ]
+  },
+  {
+   "id": "hera",
+   "name": "Hera",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Hera",
+     "Juno",
+     "Saturnia"
+    ]
+   },
+   "who": "Queen of the gods, wife and sister of Zeus, the bitterest enemy of Troy; Juno to the Romans.",
+   "more": "She hates the Trojans since Paris judged Aphrodite fairest. In Book 14 she borrows Aphrodite's charmed band and seduces Zeus on Mount Ida, so that Poseidon can help the Achaeans while he sleeps. In Book 21 she sends Hephaestus' fire against the river that is drowning Achilles.",
+   "say": "HEER-uh",
+   "say_also": {
+    "Juno": "JOO-noh"
+   },
+   "related": [
+    "zeus",
+    "athena",
+    "hephaestus",
+    "aphrodite"
+   ]
+  },
+  {
+   "id": "athena",
+   "name": "Athena",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Athena",
+     "Athene",
+     "Pallas",
+     "Minerva",
+     "Tritogeneia",
+     "Tritonia"
+    ]
+   },
+   "who": "Daughter of Zeus, goddess of war-craft and wisdom, champion of the Achaeans; Pallas, or Minerva to the Romans.",
+   "more": "She holds Achilles back by the hair from killing Agamemnon in Book 1, drives Diomedes on in Book 5, tempts Pandarus to break the truce, and in Book 22 tricks Hector by taking the shape of his brother Deiphobus. Theano's robe in Book 6 is offered to her in vain.",
+   "say": "uh-THEE-nuh",
+   "say_also": {
+    "Athene": "uh-THEE-nee",
+    "Pallas": "PAL-us",
+    "Minerva": "mih-NUR-vuh"
+   },
+   "related": [
+    "zeus",
+    "diomedes",
+    "achilles",
+    "deiphobus",
+    "theano"
+   ]
+  },
+  {
+   "id": "apollo",
+   "name": "Apollo",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Apollo",
+     "Phoebus",
+     "Smintheus"
+    ]
+   },
+   "who": "Son of Zeus and Leto, the archer god, protector of Troy; called Phoebus, 'the bright'.",
+   "more": "He sends the plague of Book 1 for his priest Chryses. He rescues Aeneas and Hector, strikes the armour from Patroclus' back in Book 16, lures Achilles away from the gates in Book 21, and in Book 24 protests to the gods at Achilles' treatment of Hector's body.",
+   "say": "uh-POL-oh",
+   "say_also": {
+    "Phoebus": "FEE-bus"
+   },
+   "related": [
+    "leto",
+    "artemis",
+    "chryses",
+    "hector",
+    "patroclus"
+   ]
+  },
+  {
+   "id": "aphrodite",
+   "name": "Aphrodite",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Aphrodite",
+     "Venus",
+     "Cytherea",
+     "Cypris"
+    ]
+   },
+   "who": "Goddess of love, daughter of Zeus and Dione, mother of Aeneas, and Paris' protector; Venus to the Romans.",
+   "more": "She snatches Paris from his duel with Menelaus in Book 3 and forces a reluctant Helen to his bed. Diomedes wounds her hand in Book 5 as she rescues Aeneas, and she flees to her mother. She lends Hera her embroidered band of desire in Book 14.",
+   "say": "af-ruh-DY-tee",
+   "say_also": {
+    "Venus": "VEE-nus"
+   },
+   "related": [
+    "paris",
+    "helen",
+    "aeneas",
+    "dione",
+    "ares"
+   ]
+  },
+  {
+   "id": "ares",
+   "name": "Ares",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Ares",
+     "Mars",
+     "Enyalius"
+    ]
+   },
+   "who": "The god of war's slaughter, son of Zeus and Hera, fighting for the Trojans; Mars to the Romans.",
+   "more": "In Book 5 Diomedes, with Athena driving his chariot, wounds him in the belly, and he bellows like ten thousand men and goes to complain to Zeus, who calls him the most hateful of the gods. In Book 21 Athena knocks him down with a boundary stone.",
+   "say": "AIR-eez",
+   "say_also": {
+    "Mars": "MARZ"
+   },
+   "related": [
+    "athena",
+    "diomedes",
+    "aphrodite"
+   ]
+  },
+  {
+   "id": "poseidon",
+   "name": "Poseidon",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Poseidon",
+     "Neptune",
+     "Earth-shaker",
+     "Earthshaker"
+    ]
+   },
+   "who": "God of the sea and of earthquakes, brother of Zeus, a supporter of the Achaeans; Neptune to the Romans.",
+   "more": "While Zeus looks away in Book 13 he rouses the Achaeans in the shape of the seer Calchas, and he claims in Book 15 an equal share of power with Zeus. Yet in Book 20 he saves the Trojan Aeneas from Achilles because Aeneas is fated to survive.",
+   "say": "puh-SY-dun",
+   "say_also": {
+    "Neptune": "NEP-tyoon"
+   },
+   "related": [
+    "zeus",
+    "aeneas",
+    "laomedon"
+   ]
+  },
+  {
+   "id": "hephaestus",
+   "name": "Hephaestus",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Hephaestus",
+     "Hephæstus",
+     "Vulcan",
+     "Mulciber"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Hephaistos"
+    ],
+    "iliad-way": [
+     "Hephaistus"
+    ]
+   },
+   "who": "The lame smith god, son of Hera; Vulcan to the Romans.",
+   "more": "He makes peace among the gods in Book 1, limping round as cupbearer while they laugh. In Book 18, at Thetis' request, he forges new armour for Achilles, with the great shield showing a city at peace and a city at war. In Book 21 his fire subdues the river Scamander.",
+   "say": "hih-FES-tus",
+   "say_also": {
+    "Vulcan": "VUL-kun"
+   },
+   "related": [
+    "thetis",
+    "hera",
+    "achilles",
+    "scamander"
+   ]
+  },
+  {
+   "id": "hermes",
+   "name": "Hermes",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Hermes",
+     "Mercury",
+     "Argeiphontes",
+     "Argicide"
+    ]
+   },
+   "who": "Son of Zeus, messenger and guide of the gods; Mercury to the Romans.",
+   "more": "In Book 24 Zeus sends him to guide Priam unseen through the Achaean camp to Achilles' hut, in the shape of a young Myrmidon, and to lead him safely back before dawn.",
+   "say": "HUR-meez",
+   "say_also": {
+    "Mercury": "MUR-kyuh-ree"
+   },
+   "related": [
+    "priam",
+    "zeus"
+   ]
+  },
+  {
+   "id": "thetis",
+   "name": "Thetis",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Thetis"
+    ]
+   },
+   "who": "A sea-goddess, daughter of the Old Man of the Sea, married against her will to the mortal Peleus; Achilles' mother.",
+   "more": "She rises from the sea to comfort her son in Book 1 and wins Zeus' promise by clasping his knees. In Book 18 she foretells that Achilles' death will soon follow Hector's, and fetches him new armour from Hephaestus. In Book 24 she bids him give back Hector's body.",
+   "say": "THEE-tis",
+   "related": [
+    "achilles",
+    "peleus",
+    "zeus",
+    "hephaestus"
+   ]
+  },
+  {
+   "id": "iris",
+   "name": "Iris",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Iris"
+    ]
+   },
+   "who": "The swift messenger of the gods, goddess of the rainbow.",
+   "more": "She carries Zeus' orders to Hera, Athena and Poseidon, fetches Helen to the walls in Book 3 in the shape of Laodice, rouses Achilles to show himself at the trench in Book 18, and goes to Priam and to Thetis in Book 24.",
+   "say": "EYE-ris",
+   "related": [
+    "zeus",
+    "helen",
+    "achilles"
+   ]
+  },
+  {
+   "id": "artemis",
+   "name": "Artemis",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Artemis",
+     "Diana"
+    ]
+   },
+   "who": "Apollo's twin sister, the huntress goddess; Diana to the Romans.",
+   "more": "In the battle of the gods in Book 21 she taunts Apollo for not fighting, and Hera boxes her ears with her own bow and quiver. She killed Niobe's daughters with her brother.",
+   "say": "AR-tuh-mis",
+   "say_also": {
+    "Diana": "dy-AN-uh"
+   },
+   "related": [
+    "apollo",
+    "leto",
+    "niobe"
+   ]
+  },
+  {
+   "id": "leto",
+   "name": "Leto",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Leto",
+     "Latona"
+    ]
+   },
+   "who": "Mother of Apollo and Artemis by Zeus; Latona to the Romans.",
+   "more": "With Artemis she heals Aeneas in Apollo's temple on Pergamus in Book 5. Achilles tells Priam in Book 24 how Niobe boasted of her twelve children against Leto's two, and lost them all.",
+   "say": "LEE-toh",
+   "say_also": {
+    "Latona": "luh-TOH-nuh"
+   },
+   "related": [
+    "apollo",
+    "artemis",
+    "niobe"
+   ]
+  },
+  {
+   "id": "dione",
+   "name": "Dione",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Dione"
+    ]
+   },
+   "who": "A goddess, in the Iliad the mother of Aphrodite by Zeus.",
+   "more": "In Book 5 she comforts the wounded Aphrodite with stories of other gods who suffered at mortal hands, and heals her hand.",
+   "say": "dy-OH-nee",
+   "related": [
+    "aphrodite"
+   ]
+  },
+  {
+   "id": "hades",
+   "name": "Hades",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Hades",
+     "Aidoneus",
+     "Pluto",
+     "Dis"
+    ]
+   },
+   "who": "Brother of Zeus and lord of the dead; also the name of his house beneath the earth, where the dead go.",
+   "more": "Poseidon says in Book 15 that the three brothers drew lots: Zeus the sky, Poseidon the sea, Hades the dark below. In Book 20 he leaps from his throne in fear that Poseidon's earthquake will split the earth open. Many translators use 'Hades' or 'Pluto' for the place.",
+   "say": "HAY-deez",
+   "say_also": {
+    "Pluto": "PLOO-toh"
+   },
+   "related": [
+    "zeus",
+    "poseidon",
+    "persephone"
+   ]
+  },
+  {
+   "id": "persephone",
+   "name": "Persephone",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Persephone",
+     "Proserpine"
+    ]
+   },
+   "who": "Queen of the dead, wife of Hades; Proserpine to the Romans.",
+   "more": "In Book 9 Phoenix tells how Althaea called on Hades and Persephone to bring death to her son Meleager.",
+   "say": "pur-SEF-uh-nee",
+   "related": [
+    "hades",
+    "meleager"
+   ]
+  },
+  {
+   "id": "cronos",
+   "name": "Cronos",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Cronos",
+     "Kronos",
+     "Saturn"
+    ]
+   },
+   "who": "Father of Zeus, Hera, Poseidon and Hades, overthrown by Zeus and held below the earth; Saturn to the Romans.",
+   "more": "Zeus is often called simply 'son of Cronos'. Hera recalls in Book 14 how Zeus thrust him beneath the earth and the sea.",
+   "say": "KROH-nos",
+   "say_also": {
+    "Saturn": "SAT-urn"
+   },
+   "related": [
+    "zeus",
+    "hera"
+   ]
+  },
+  {
+   "id": "themis",
+   "name": "Themis",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Themis"
+    ]
+   },
+   "who": "Goddess of right order, who calls the assemblies of the gods.",
+   "more": "She welcomes Hera back to Olympus in Book 15, and summons all the gods, even the rivers, to Zeus' assembly in Book 20.",
+   "say": "THEE-mis",
+   "related": [
+    "zeus",
+    "hera"
+   ]
+  },
+  {
+   "id": "hebe",
+   "name": "Hebe",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Hebe"
+    ]
+   },
+   "who": "Goddess of youth, daughter of Zeus and Hera, who serves nectar to the gods.",
+   "more": "In Book 4 she pours nectar for the gods as they watch Troy; in Book 5 she yokes Hera's chariot and bathes the wounded Ares.",
+   "say": "HEE-bee",
+   "related": [
+    "hera",
+    "ares"
+   ]
+  },
+  {
+   "id": "demeter",
+   "name": "Demeter",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Demeter",
+     "Ceres"
+    ]
+   },
+   "who": "Goddess of grain and harvest; Ceres to the Romans.",
+   "more": "She appears mostly in figures of speech: chaff whirled on Demeter's threshing-floors, men 'who eat Demeter's grain'. Zeus names her among his loves in Book 14.",
+   "say": "dih-MEE-tur",
+   "say_also": {
+    "Ceres": "SEER-eez"
+   },
+   "related": [
+    "zeus"
+   ]
+  },
+  {
+   "id": "dionysus",
+   "name": "Dionysus",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Dionysus",
+     "Dionysos",
+     "Bacchus"
+    ]
+   },
+   "who": "The god of wine, son of Zeus and Semele; Bacchus to the Romans.",
+   "more": "In Book 6 Diomedes tells how King Lycurgus once drove the god's nurses before him with an ox-goad, and how the young Dionysus fled in terror into the sea, to Thetis.",
+   "say": "dy-uh-NY-sus",
+   "say_also": {
+    "Bacchus": "BAK-us"
+   },
+   "related": [
+    "lycurgus",
+    "thetis"
+   ]
+  },
+  {
+   "id": "oceanus",
+   "name": "Oceanus",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Oceanus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Okeanos"
+    ]
+   },
+   "who": "The river that runs round the edge of the world, and its god, from whom all rivers and springs flow.",
+   "more": "Hera calls him the begetter of the gods in Book 14. He alone stays away from Zeus' assembly in Book 20, and the shield Hephaestus makes for Achilles has Ocean running round its rim.",
+   "say": "oh-SEE-uh-nus",
+   "related": [
+    "hera",
+    "hephaestus"
+   ]
+  },
+  {
+   "id": "boreas",
+   "name": "Boreas",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Boreas"
+    ]
+   },
+   "who": "The North Wind, from Thrace.",
+   "more": "In Book 23 Iris fetches him and the West Wind to fan Patroclus' pyre. Aeneas says in Book 20 that Boreas, in the form of a stallion, sired foals on the mares of Erichthonius that ran over the cornfields without bending the ears.",
+   "say": "BOR-ee-us",
+   "related": [
+    "patroclus",
+    "iris"
+   ]
+  },
+  {
+   "id": "muses",
+   "name": "The Muses",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Muses",
+     "Muse"
+    ]
+   },
+   "who": "Daughters of Zeus, goddesses of song, whom the poet asks to tell the story.",
+   "more": "The poem opens by asking the goddess to sing Achilles' anger. Before the Catalogue of Ships in Book 2 the poet calls on the Muses because they were present and know everything, while men hear only rumour; the same book tells of the singer Thamyris, whom they maimed for boasting he could outsing them.",
+   "say": "MYOO-ziz",
+   "related": [
+    "zeus"
+   ]
+  },
+  {
+   "id": "aurora",
+   "name": "Eos, the Dawn",
+   "kind": "god",
+   "aliases": {
+    "default": [
+     "Aurora"
+    ]
+   },
+   "who": "The goddess of the dawn, 'rosy-fingered' and 'saffron-robed'; Aurora to the Romans.",
+   "more": "She marks the passing of the poem's days, rising from the bed of Tithonus. Many translators write simply 'Dawn' or 'Morn', which this list does not try to find, since the words are also common.",
+   "say": "EE-os",
+   "say_also": {
+    "Aurora": "uh-ROR-uh"
+   },
+   "related": []
+  },
+  {
+   "id": "briareus",
+   "name": "Briareus",
+   "kind": "monster",
+   "aliases": {
+    "default": [
+     "Briareus",
+     "Aegaeon",
+     "Ægæon"
+    ],
+    "iliad-way": [
+     "Briareos"
+    ]
+   },
+   "who": "A hundred-handed giant, called Briareus by the gods and Aegaeon by men.",
+   "more": "Achilles reminds Thetis in Book 1 that she once brought him to Olympus to sit beside Zeus, so that the other gods were too frightened to bind Zeus.",
+   "say": "bry-AIR-ee-us",
+   "related": [
+    "thetis",
+    "zeus"
+   ]
+  },
+  {
+   "id": "chimaera",
+   "name": "Chimaera",
+   "kind": "monster",
+   "aliases": {
+    "default": [
+     "Chimaera",
+     "Chimæra"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Chimaira"
+    ],
+    "iliad-way": [
+     "Chimaira"
+    ]
+   },
+   "who": "A fire-breathing monster, lion in front, serpent behind, goat in the middle.",
+   "more": "Glaucus tells in Book 6 how his grandfather Bellerophon killed it in Lycia at the king's command, trusting in signs from the gods.",
+   "say": "ky-MEER-uh",
+   "related": [
+    "bellerophon",
+    "lycia"
+   ]
+  },
+  {
+   "id": "gorgon",
+   "name": "The Gorgon",
+   "kind": "monster",
+   "aliases": {
+    "default": [
+     "Gorgon",
+     "Gorgo"
+    ]
+   },
+   "who": "A monster whose face turned men to stone; her head is shown on the aegis and on shields.",
+   "more": "The Gorgon's head is on Athena's aegis in Book 5 and stares from the centre of Agamemnon's shield in Book 11. Hector's eyes are likened to the Gorgon's in Book 8.",
+   "say": "GOR-gun",
+   "related": [
+    "athena",
+    "agamemnon"
+   ]
+  },
+  {
+   "id": "xanthus-horse",
+   "name": "Xanthus and Balius",
+   "kind": "monster",
+   "aliases": {
+    "default": [
+     "Balius",
+     "Balios"
+    ]
+   },
+   "who": "Achilles' immortal horses, foals of the West Wind, given by the gods to Peleus.",
+   "more": "They weep for Patroclus in Book 17, standing still with their heads bowed. In Book 19 Hera gives Xanthus a voice to warn Achilles of his coming death, and the Furies silence him. (A bare 'Xanthus' may also mean the river Scamander, so the Codex asks which.)",
+   "say": "ZAN-thus and BAY-lee-us",
+   "related": [
+    "achilles",
+    "automedon",
+    "peleus"
+   ]
+  },
+  {
+   "id": "bellerophon",
+   "name": "Bellerophon",
+   "kind": "mortal",
+   "aliases": {
+    "default": [
+     "Bellerophon",
+     "Bellerophontes"
+    ]
+   },
+   "who": "A hero of an earlier age, grandfather of Glaucus, whose story Glaucus tells Diomedes in Book 6.",
+   "more": "Falsely accused by the wife of King Proetus, he was sent to Lycia with a folded tablet of deadly signs asking for his death; there he killed the Chimaera, fought the Solymi and the Amazons, married the king's daughter, and at last wandered alone, hated by the gods.",
+   "say": "buh-LER-uh-fon",
+   "related": [
+    "glaucus",
+    "chimaera",
+    "amazons",
+    "lycia"
+   ]
+  },
+  {
+   "id": "meleager",
+   "name": "Meleager",
+   "kind": "mortal",
+   "aliases": {
+    "default": [
+     "Meleager"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Meleagros"
+    ]
+   },
+   "who": "A hero of Calydon in an earlier generation, whose story Phoenix tells Achilles in Book 9.",
+   "more": "Angry with his mother, Meleager refused to fight for his city however many gifts were offered, and went out only when the enemy was already burning it, so that he saved it but got no gifts. Phoenix tells it as a warning.",
+   "say": "mel-ee-AY-jur",
+   "related": [
+    "phoenix",
+    "achilles",
+    "persephone"
+   ]
+  },
+  {
+   "id": "niobe",
+   "name": "Niobe",
+   "kind": "mortal",
+   "aliases": {
+    "default": [
+     "Niobe"
+    ]
+   },
+   "who": "A mother who boasted of her twelve children against Leto's two and lost them all to Apollo and Artemis.",
+   "more": "Achilles tells her story to Priam in Book 24 to persuade him to eat: even Niobe, weeping, remembered food. She was turned to stone on Mount Sipylus.",
+   "say": "NY-oh-bee",
+   "related": [
+    "leto",
+    "apollo",
+    "artemis",
+    "priam"
+   ]
+  },
+  {
+   "id": "heracles",
+   "name": "Heracles",
+   "kind": "mortal",
+   "aliases": {
+    "default": [
+     "Heracles",
+     "Herakles",
+     "Hercules",
+     "Alcides"
+    ]
+   },
+   "who": "The greatest hero of the generation before the war, son of Zeus and Alcmena; Hercules to the Romans.",
+   "more": "In Book 19 Agamemnon tells how Hera tricked Zeus so that Eurystheus, not Heracles, ruled at Argos and set him his labours. Earlier still he sacked Troy in Laomedon's time. His son Tlepolemus is killed by Sarpedon in Book 5.",
+   "say": "HER-uh-kleez",
+   "say_also": {
+    "Hercules": "HUR-kyuh-leez"
+   },
+   "related": [
+    "zeus",
+    "hera",
+    "eurystheus",
+    "laomedon"
+   ]
+  },
+  {
+   "id": "eurystheus",
+   "name": "Eurystheus",
+   "kind": "mortal",
+   "aliases": {
+    "default": [
+     "Eurystheus"
+    ]
+   },
+   "who": "King of Argos, born early by Hera's contrivance so that he, and not Heracles, ruled; he set Heracles his labours.",
+   "more": "Agamemnon tells the story in Book 19 to excuse his own folly: even Zeus was deceived by Ate, Blind Folly.",
+   "say": "yoo-RIS-thee-us",
+   "related": [
+    "heracles",
+    "hera",
+    "agamemnon"
+   ]
+  },
+  {
+   "id": "lycurgus",
+   "name": "Lycurgus",
+   "kind": "mortal",
+   "aliases": {
+    "default": [
+     "Lycurgus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Lykurgos"
+    ]
+   },
+   "who": "A Thracian king who fought against the god Dionysus and was blinded by Zeus for it.",
+   "more": "Diomedes tells the story in Book 6 to show that he will not fight a god knowingly. (Nestor's tale in Book 7 names a different Lycurgus, an Arcadian.)",
+   "say": "ly-KUR-gus",
+   "related": [
+    "dionysus",
+    "diomedes"
+   ]
+  },
+  {
+   "id": "chiron",
+   "name": "Chiron",
+   "kind": "mortal",
+   "aliases": {
+    "default": [
+     "Chiron",
+     "Cheiron"
+    ]
+   },
+   "who": "The wise and just Centaur who taught medicine to Asclepius and to Achilles.",
+   "more": "He gave Peleus the great ash spear that only Achilles can wield. Patroclus learned his remedies from Achilles, who had them from Chiron (Book 11).",
+   "say": "KY-ron",
+   "related": [
+    "achilles",
+    "peleus",
+    "centaurs"
+   ]
+  },
+  {
+   "id": "amazons",
+   "name": "The Amazons",
+   "kind": "people",
+   "aliases": {
+    "default": [
+     "Amazons"
+    ]
+   },
+   "who": "A race of warrior women, 'a match for men'.",
+   "more": "Priam remembers fighting them in Phrygia in his youth (Book 3), and Bellerophon killed many of them (Book 6).",
+   "say": "AM-uh-zonz",
+   "related": [
+    "priam",
+    "bellerophon"
+   ]
+  },
+  {
+   "id": "centaurs",
+   "name": "The Centaurs",
+   "kind": "people",
+   "aliases": {
+    "default": [
+     "Centaurs"
+    ]
+   },
+   "who": "A wild people of the mountains of Thessaly, in later art half man and half horse; Homer calls them 'shaggy beasts'.",
+   "more": "Nestor boasts in Book 1 of fighting beside the Lapiths against them. Achilles' teacher Chiron is called the most righteous of the Centaurs.",
+   "say": "SEN-torz",
+   "related": [
+    "chiron",
+    "nestor"
+   ]
+  },
+  {
+   "id": "achaeans",
+   "name": "The Achaeans",
+   "kind": "people",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Achaeans",
+     "Achaians",
+     "Argives",
+     "Danaans",
+     "Danai",
+     "Greeks",
+     "Grecians"
+    ]
+   },
+   "who": "The Greek army at Troy. Homer has no single word for 'Greeks'; he calls them Achaeans, Argives or Danaans.",
+   "more": "The three names are used interchangeably, mostly as the metre requires. Translators add others: Pope, Cowper and Derby say Greeks or Grecians, Way often says Achaia for the whole nation. The Catalogue of Ships in Book 2 lists their contingents, twenty-nine of them.",
+   "say": "uh-KEE-unz",
+   "say_also": {
+    "Argives": "AR-jyvz",
+    "Danaans": "DAN-ay-unz"
+   },
+   "related": [
+    "trojans",
+    "agamemnon",
+    "greece"
+   ]
+  },
+  {
+   "id": "trojans",
+   "name": "The Trojans",
+   "kind": "people",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Trojans"
+    ]
+   },
+   "who": "The people of Troy, and by extension the whole army fighting for the city with its allies.",
+   "more": "Homer contrasts the Trojans' many-tongued allies, shouting like cranes, with the Achaeans advancing in silence (Book 3). The Trojan catalogue follows the Achaean one at the end of Book 2.",
+   "say": "TROH-junz",
+   "related": [
+    "troy",
+    "priam",
+    "hector",
+    "dardanians",
+    "achaeans"
+   ]
+  },
+  {
+   "id": "dardanians",
+   "name": "The Dardanians",
+   "kind": "people",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Dardanians",
+     "Dardans"
+    ]
+   },
+   "who": "The people of the younger branch of Troy's royal house, led by Aeneas; the name is also used of all the Trojans.",
+   "more": "They take their name from Dardanus, son of Zeus, founder of the line.",
+   "say": "dar-DAY-nee-unz",
+   "related": [
+    "aeneas",
+    "dardanus",
+    "trojans"
+   ]
+  },
+  {
+   "id": "myrmidons",
+   "name": "The Myrmidons",
+   "kind": "people",
+   "side": "Achaean",
+   "aliases": {
+    "default": [
+     "Myrmidons",
+     "Myrmidon"
+    ]
+   },
+   "who": "Achilles' own men from Phthia, who sit out the fighting with him.",
+   "more": "In Book 16 Achilles marshals them in five companies, like wolves, and sends them out under Patroclus. They drive their chariots three times round Patroclus' body in mourning in Book 23.",
+   "say": "MUR-mih-donz",
+   "related": [
+    "achilles",
+    "patroclus",
+    "phthia"
+   ]
+  },
+  {
+   "id": "lycians",
+   "name": "The Lycians",
+   "kind": "people",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Lycians"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Lykians"
+    ]
+   },
+   "who": "Troy's most important allies, from Lycia in the far south of Asia Minor, led by Sarpedon and Glaucus.",
+   "more": "Sarpedon tells Glaucus in Book 12 that the Lycians honour their kings with the best seats and the fullest cups, so the kings must fight in the front rank.",
+   "say": "LISH-unz",
+   "related": [
+    "sarpedon",
+    "glaucus",
+    "lycia",
+    "pandarus"
+   ]
+  },
+  {
+   "id": "thracians",
+   "name": "The Thracians",
+   "kind": "people",
+   "side": "Trojan",
+   "aliases": {
+    "default": [
+     "Thracians"
+    ]
+   },
+   "who": "Allies of Troy from across the Hellespont, with top-knots of hair.",
+   "more": "Their newly arrived king Rhesus is killed in his sleep in Book 10.",
+   "say": "THRAY-shunz",
+   "related": [
+    "rhesus",
+    "hellespont"
+   ]
+  },
+  {
+   "id": "troy",
+   "name": "Troy",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Troy",
+     "Ilium",
+     "Ilion",
+     "Ilios",
+     "Ilius"
+    ]
+   },
+   "who": "The walled city of Priam near the Hellespont, called Ilium or Ilios after its founder Ilus.",
+   "more": "Its walls were built by Poseidon and Apollo for Laomedon. The poem never shows its fall, only foretells it; the action stays on the plain between the city, the river Scamander and the Achaean ships.",
+   "say": "TROY",
+   "say_also": {
+    "Ilium": "IL-ee-um"
+   },
+   "related": [
+    "trojans",
+    "priam",
+    "scaean-gates",
+    "pergamus",
+    "scamander"
+   ]
+  },
+  {
+   "id": "scaean-gates",
+   "name": "The Scaean Gates",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Scaean",
+     "Scæan",
+     "Skaian"
+    ]
+   },
+   "who": "The main gate of Troy facing the plain, beside the great oak tree.",
+   "more": "Priam and the elders watch the duel from the tower over it in Book 3; Hector meets Andromache there in Book 6; Achilles kills Hector outside it in Book 22, and Hector, dying, foretells that Paris and Apollo will kill Achilles at the same gate.",
+   "say": "SEE-un",
+   "related": [
+    "troy",
+    "hector",
+    "andromache"
+   ]
+  },
+  {
+   "id": "pergamus",
+   "name": "Pergamus",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Pergamus"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Pergamos"
+    ]
+   },
+   "who": "The high citadel of Troy, with Apollo's temple.",
+   "more": "Apollo carries the wounded Aeneas to his temple there in Book 5, where Leto and Artemis heal him.",
+   "say": "PUR-guh-mus",
+   "related": [
+    "troy",
+    "apollo"
+   ]
+  },
+  {
+   "id": "olympus",
+   "name": "Olympus",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Olympus"
+    ]
+   },
+   "who": "The mountain in Thessaly where the gods live in houses built by Hephaestus.",
+   "more": "The scenes among the gods are set there, unless Zeus watches from Mount Ida.",
+   "say": "uh-LIM-pus",
+   "related": [
+    "zeus",
+    "ida"
+   ]
+  },
+  {
+   "id": "ida",
+   "name": "Mount Ida",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Ida"
+    ]
+   },
+   "who": "The many-fountained mountain range above Troy, from whose peak Gargarus Zeus watches the battle.",
+   "more": "Hera seduces Zeus on its summit in Book 14. In Book 23 the Achaeans cut timber on its slopes for Patroclus' pyre.",
+   "say": "EYE-duh",
+   "related": [
+    "zeus",
+    "hera",
+    "troy"
+   ]
+  },
+  {
+   "id": "scamander",
+   "name": "Scamander",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Scamander",
+     "Skamander",
+     "Skamandros"
+    ]
+   },
+   "who": "The main river of the Trojan plain, called Xanthus by the gods, and its god.",
+   "more": "In Book 21 the river, choked with the dead Achilles has killed, rises against him and nearly drowns him until Hephaestus' fire drives it back. A bare 'Xanthus' may mean the river or Achilles' horse, so the Codex asks which.",
+   "say": "skuh-MAN-dur",
+   "related": [
+    "achilles",
+    "hephaestus",
+    "simois",
+    "troy"
+   ]
+  },
+  {
+   "id": "simois",
+   "name": "Simois",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Simois",
+     "Simoïs"
+    ]
+   },
+   "who": "The other river of the Trojan plain, which joins the Scamander.",
+   "more": "In Book 21 Scamander calls on his brother Simois to help him overwhelm Achilles.",
+   "say": "SIM-oh-is",
+   "related": [
+    "scamander",
+    "troy"
+   ]
+  },
+  {
+   "id": "hellespont",
+   "name": "The Hellespont",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Hellespont"
+    ]
+   },
+   "who": "The strait (the modern Dardanelles) near which Troy stands and the Achaean ships are beached.",
+   "more": "Hector imagines in Book 7 that sailors on the broad Hellespont will see the mound of the man he kills and remember him.",
+   "say": "HEL-is-pont",
+   "related": [
+    "troy",
+    "thracians"
+   ]
+  },
+  {
+   "id": "tenedos",
+   "name": "Tenedos",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Tenedos"
+    ]
+   },
+   "who": "An island off the coast near Troy, ruled over by Apollo in Chryses' prayer.",
+   "more": "Achilles sacked it before the poem begins; Nestor's servant Hecamede was taken there.",
+   "say": "TEN-ih-dos",
+   "related": [
+    "apollo",
+    "chryses"
+   ]
+  },
+  {
+   "id": "chryse",
+   "name": "Chryse",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Chryse"
+    ],
+    "iliad-buckley": [
+     "Chrysa"
+    ],
+    "iliad-chapman": [
+     "Chrysa"
+    ],
+    "iliad-cowper": [
+     "Chrysa"
+    ],
+    "iliad-derby": [
+     "Chrysa"
+    ],
+    "iliad-pope": [
+     "Chrysa"
+    ]
+   },
+   "who": "A coastal town near Troy, home of Apollo's priest Chryses.",
+   "more": "Odysseus sails Chryseis home there in Book 1 and offers a sacrifice to end the plague.",
+   "say": "KRY-see",
+   "related": [
+    "chryses",
+    "chryseis",
+    "odysseus"
+   ]
+  },
+  {
+   "id": "greece",
+   "name": "Greece",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Greece",
+     "Achaia",
+     "Hellas"
+    ]
+   },
+   "who": "The Achaeans' homeland. Homer's 'Hellas' is a district of Thessaly near Phthia, and 'Achaean land' means the Greek mainland.",
+   "more": "Translators of later times often say 'Greece' where Homer names the land of the Achaeans, or Argos in its widest sense.",
+   "say": "GREES",
+   "related": [
+    "achaeans",
+    "argos",
+    "phthia"
+   ]
+  },
+  {
+   "id": "argos",
+   "name": "Argos",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Argos"
+    ]
+   },
+   "who": "A city in the Peloponnese ruled by Diomedes; also used of Agamemnon's realm and of all Greece.",
+   "more": "Hera calls it, with Sparta and Mycenae, one of the three cities she loves best (Book 4). 'Pelasgian Argos' in the Catalogue is a region of Thessaly, Achilles' country.",
+   "say": "AR-gos",
+   "related": [
+    "diomedes",
+    "mycenae",
+    "greece"
+   ]
+  },
+  {
+   "id": "mycenae",
+   "name": "Mycenae",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Mycenae",
+     "Mycenæ"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Mykene"
+    ],
+    "iliad-chapman": [
+     "Mycene"
+    ]
+   },
+   "who": "Agamemnon's city, 'rich in gold', in the Peloponnese.",
+   "more": "In the Catalogue of Ships he brings a hundred ships from Mycenae and the cities round it, the largest contingent.",
+   "say": "my-SEE-nee",
+   "related": [
+    "agamemnon",
+    "argos"
+   ]
+  },
+  {
+   "id": "sparta",
+   "name": "Sparta",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Sparta",
+     "Lacedaemon",
+     "Lacedæmon"
+    ]
+   },
+   "who": "Menelaus' kingdom in the Peloponnese, called Lacedaemon, from which Paris took Helen.",
+   "more": "Helen looks in vain from the walls in Book 3 for her brothers Castor and Polydeuces; the poet says they already lie buried in Lacedaemon.",
+   "say": "SPAR-tuh",
+   "say_also": {
+    "Lacedaemon": "las-ih-DEE-mun"
+   },
+   "related": [
+    "menelaus",
+    "helen"
+   ]
+  },
+  {
+   "id": "pylos",
+   "name": "Pylos",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Pylos"
+    ],
+    "iliad-cowper": [
+     "Pylus"
+    ]
+   },
+   "who": "Nestor's kingdom on the west coast of the Peloponnese.",
+   "more": "Nestor's long tale in Book 11 is of a cattle raid and a war between the Pylians and their neighbours the Epeans in his youth.",
+   "say": "PY-los",
+   "related": [
+    "nestor"
+   ]
+  },
+  {
+   "id": "phthia",
+   "name": "Phthia",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Phthia"
+    ]
+   },
+   "who": "Achilles' homeland in Thessaly, ruled by his father Peleus.",
+   "more": "Achilles threatens in Book 1 and Book 9 to sail home to Phthia; Patroclus was brought there as a boy.",
+   "say": "THY-uh",
+   "related": [
+    "achilles",
+    "peleus",
+    "myrmidons"
+   ]
+  },
+  {
+   "id": "ithaca",
+   "name": "Ithaca",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Ithaca"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Ithaka"
+    ]
+   },
+   "who": "Odysseus' rocky island kingdom off the west coast of Greece.",
+   "more": "Helen points Odysseus out to Priam in Book 3 as the man reared in rugged Ithaca.",
+   "say": "ITH-uh-kuh",
+   "related": [
+    "odysseus",
+    "laertes"
+   ]
+  },
+  {
+   "id": "lemnos",
+   "name": "Lemnos",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Lemnos"
+    ]
+   },
+   "who": "An island in the northern Aegean, where Hephaestus fell when Zeus threw him from heaven.",
+   "more": "Philoctetes lies there sick. The Achaeans buy wine from Lemnos, and Achilles sold Priam's son Lycaon there as a slave.",
+   "say": "LEM-nos",
+   "related": [
+    "hephaestus",
+    "philoctetes",
+    "lycaon"
+   ]
+  },
+  {
+   "id": "crete",
+   "name": "Crete",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Crete"
+    ]
+   },
+   "who": "The great island of a hundred cities, kingdom of Idomeneus.",
+   "more": "Its people, the Cretans, fight under Idomeneus and Meriones. The dancing-floor on Achilles' shield is likened to the one Daedalus made at Cnossus.",
+   "say": "KREET",
+   "related": [
+    "idomeneus",
+    "meriones"
+   ]
+  },
+  {
+   "id": "lycia",
+   "name": "Lycia",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Lycia"
+    ],
+    "iliad-lang-leaf-myers": [
+     "Lykia"
+    ]
+   },
+   "who": "A land in the far south-west of Asia Minor, by the river Xanthus, home of Sarpedon and Glaucus.",
+   "more": "Sarpedon's body is carried back there by Sleep and Death in Book 16.",
+   "say": "LISH-ee-uh",
+   "related": [
+    "lycians",
+    "sarpedon",
+    "glaucus",
+    "bellerophon"
+   ]
+  },
+  {
+   "id": "aulis",
+   "name": "Aulis",
+   "kind": "place",
+   "aliases": {
+    "default": [
+     "Aulis"
+    ]
+   },
+   "who": "The harbour in Boeotia where the Achaean fleet gathered before sailing to Troy.",
+   "more": "Odysseus recalls in Book 2 the omen there: a snake ate eight sparrow chicks and their mother, which Calchas read as nine years of war and Troy's fall in the tenth.",
+   "say": "AW-lis",
+   "related": [
+    "calchas",
+    "odysseus"
+   ]
+  }
+ ],
+ "ambiguous": [
+  {
+   "alias": [
+    "Ajax",
+    "Aias"
+   ],
+   "ids": [
+    "ajax-telamon",
+    "ajax-oileus"
+   ],
+   "name": "Ajax",
+   "note": "Two Achaeans are called Ajax: the son of Telamon and the son of Oïleus. Where the line does not say which, the Codex does not guess."
+  },
+  {
+   "alias": [
+    "Ajaces",
+    "Aiantes",
+    "Ajaxes",
+    "the Ajaxes"
+   ],
+   "ids": [
+    "ajax-telamon",
+    "ajax-oileus"
+   ],
+   "both": true,
+   "name": "The two Ajaxes",
+   "note": "Both Ajaxes, named together."
+  },
+  {
+   "alias": [
+    "Atrides",
+    "Atreides",
+    "son of Atreus",
+    "Son of Atreus"
+   ],
+   "ids": [
+    "agamemnon",
+    "menelaus"
+   ],
+   "name": "Son of Atreus",
+   "note": "'Son of Atreus' may mean Agamemnon or Menelaus; the passage around the line usually tells which."
+  },
+  {
+   "alias": [
+    "Atridae",
+    "sons of Atreus",
+    "Sons of Atreus"
+   ],
+   "ids": [
+    "agamemnon",
+    "menelaus"
+   ],
+   "both": true,
+   "name": "The sons of Atreus",
+   "note": "Agamemnon and Menelaus together."
+  },
+  {
+   "alias": [
+    "Xanthus",
+    "Xanthos"
+   ],
+   "ids": [
+    "scamander",
+    "xanthus-horse"
+   ],
+   "name": "Xanthus",
+   "note": "Xanthus is the gods' name for the river Scamander, the name of one of Achilles' horses, of a river in Lycia, and of a Trojan killed in Book 5."
+  },
+  {
+   "alias": [
+    "Lycaon",
+    "Lykaon"
+   ],
+   "ids": [
+    "lycaon",
+    "pandarus"
+   ],
+   "name": "Lycaon",
+   "note": "Two men are called Lycaon: Priam's son, killed by Achilles in Book 21, and the father of the archer Pandarus."
+  },
+  {
+   "alias": [
+    "Oileus",
+    "Oïleus"
+   ],
+   "ids": [
+    "ajax-oileus"
+   ],
+   "name": "Oïleus",
+   "note": "Oïleus is the father of the lesser Ajax; a Trojan of the same name is killed by Agamemnon in Book 11."
+  },
+  {
+   "alias": [
+    "Telamon"
+   ],
+   "ids": [
+    "ajax-telamon",
+    "teucer"
+   ],
+   "name": "Telamon",
+   "note": "Telamon, king of Salamis, is the father of the greater Ajax and of Teucer."
+  }
+ ],
+ "exclude": [
+  "Grace",
+  "Hope",
+  "Here",
+  "Fate",
+  "Sleep",
+  "Death",
+  "Strife",
+  "Dawn",
+  "Morn",
+  "Fame"
+ ]
+}

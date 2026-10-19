@@ -1,0 +1,4023 @@
+{
+ "about": "Read with: passages the editors pair because one echoes, imitates, answers, sources or contrasts with the other. Each side names one text in one translation (ref) and its lines as this archive counts them (l), or its paragraphs in a prose translation (p); in Murray's Homer, l is the Greek line numbers. og gives the original's book and lines, so the pair also shows in every translation of that book. Notes are the editors' own, drafted from the study notes and public-domain commentaries; no modern criticism is quoted. Made by work/featuretest/echo/build.py.",
+ "pairs": [
+  {
+   "id": "iliad1-aeneid1-invocation",
+   "kind": "answer",
+   "a": {
+    "ref": "work:iliad-murray/0",
+    "label": "Iliad 1.1–7 (Murray)",
+    "l": "1-7",
+    "og": {
+     "group": "iliad",
+     "part": "Book I",
+     "l": "1-7",
+     "label": "Iliad 1.1–7"
+    },
+    "first": [
+     "The wrath sing, goddess, of Peleus' son, Achilles, that destructive wrath which brought countless woes upon the Achaeans, and sent forth to Hades many valiant souls of…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.1–11 (Dryden)",
+    "l": "1-18",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "1-11",
+     "label": "Aeneid 1.1–11"
+    },
+    "first": [
+     "Arms, and the man I sing, who, forc’d by fate,",
+     "And haughty Juno’s unrelenting hate,"
+    ]
+   },
+   "note": "Homer asks the goddess to sing a wrath; Virgil says 'I sing' of arms and a man, and only then turns to the Muse for causes. The Aeneid opens by naming both Homeric poems at once (arms for the Iliad, the man for the Odyssey) and by putting the poet's own voice first.",
+   "q": "What changes when the poet says 'I sing' instead of asking the Muse to sing?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid1-pl1-invocation",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.1–11 (Dryden)",
+    "l": "1-18",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "1-11",
+     "label": "Aeneid 1.1–11"
+    },
+    "first": [
+     "Arms, and the man I sing, who, forc’d by fate,",
+     "And haughty Juno’s unrelenting hate,"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/0",
+    "label": "Paradise Lost 1.1–26",
+    "l": "1-26",
+    "first": [
+     "Of Mans First Disobedience, and the Fruit",
+     "Of that Forbidden Tree, whose mortal tast"
+    ]
+   },
+   "note": "Milton keeps the epic order (subject, then the call to the Muse, then a question about causes) but his subject is 'Man's first disobedience', and his Muse is the spirit that taught Moses on Sinai. He says outright that he means to soar above the classical poets: 'things unattempted yet in prose or rhyme'.",
+   "q": "Milton promises to go beyond Homer and Virgil in the very form he borrows from them. Is that a contradiction?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad1-pl1-invocation",
+   "kind": "answer",
+   "a": {
+    "ref": "work:iliad-murray/0",
+    "label": "Iliad 1.1–7 (Murray)",
+    "l": "1-7",
+    "og": {
+     "group": "iliad",
+     "part": "Book I",
+     "l": "1-7",
+     "label": "Iliad 1.1–7"
+    },
+    "first": [
+     "The wrath sing, goddess, of Peleus' son, Achilles, that destructive wrath which brought countless woes upon the Achaeans, and sent forth to Hades many valiant souls of…"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/0",
+    "label": "Paradise Lost 1.1–26",
+    "l": "1-26",
+    "first": [
+     "Of Mans First Disobedience, and the Fruit",
+     "Of that Forbidden Tree, whose mortal tast"
+    ]
+   },
+   "note": "Both poems begin with a single fault and its deathly consequences: the wrath that sent many souls to Hades, the disobedience that 'brought death into the world'. Read together, the two openings show how Milton turns an epic of anger into an epic of the fall.",
+   "q": "Compare the first word or phrase of each poem. What does each poet choose to put first?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey1-aeneid1-man",
+   "kind": "answer",
+   "a": {
+    "ref": "work:odyssey-murray/0",
+    "label": "Odyssey 1.1–10 (Murray)",
+    "p": "1-1",
+    "og": {
+     "group": "odyssey",
+     "part": "Book I",
+     "l": "1-10",
+     "label": "Odyssey 1.1–10"
+    },
+    "first": [
+     "Tell me, O Muse, of the man of many devices, who wandered full many ways after he had sacked the sacred citadel of Troy. Many were the men whose cities he saw and whose…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.1–11 (Dryden)",
+    "l": "1-18",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "1-11",
+     "label": "Aeneid 1.1–11"
+    },
+    "first": [
+     "Arms, and the man I sing, who, forc’d by fate,",
+     "And haughty Juno’s unrelenting hate,"
+    ]
+   },
+   "note": "The Odyssey begins with 'the man' (andra) who wandered after Troy; the Aeneid's 'virum' answers it, but Virgil's man wanders toward a city still to be founded rather than back to a home. Both proems sum up a whole voyage in a few lines.",
+   "q": "Odysseus travels home; Aeneas travels to a place he has never seen. How do the two openings prepare for that difference?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid1-pl6-heavenly-minds",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.11 (Dryden)",
+    "l": "17-18",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "11",
+     "label": "Aeneid 1.11"
+    },
+    "first": [
+     "Can heav’nly minds such high resentment show,",
+     "Or exercise their spite in human woe?"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/5",
+    "label": "Paradise Lost 6.788",
+    "l": "788-788",
+    "first": [
+     "In heav'nly Spirits could such perverseness dwell?"
+    ]
+   },
+   "note": "Virgil's question 'tantaene animis caelestibus irae?' ('can heavenly minds hold such anger?') is turned by Milton into a line about the rebel angels: 'In heav'nly Spirits could such perverseness dwell?' Milton keeps the shape of the question but moves the blame from a goddess to fallen spirits.",
+   "q": "Virgil asks the question about a goddess, Milton about rebels. Does the line mean the same thing in both places?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad2-aeneid7-catalogue-invocation",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/1",
+    "label": "Iliad 2.484–493 (Murray)",
+    "l": "484-493",
+    "og": {
+     "group": "iliad",
+     "part": "Book II",
+     "l": "484-493",
+     "label": "Iliad 2.484–493"
+    },
+    "first": [
+     "Tell me now, ye Muses that have dwellings on Olympus— for ye are goddesses and are at hand and know all things, whereas we hear but a rumour and know not anything—who…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/6",
+    "label": "Aeneid 7.641–646 (Dryden)",
+    "l": "887-892",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VII",
+     "l": "641-646",
+     "label": "Aeneid 7.641–646"
+    },
+    "first": [
+     "And now the mighty labour is begun",
+     "Ye Muses, open all your Helicon."
+    ]
+   },
+   "note": "Before his catalogue of ships Homer asks the Muses to tell who came to Troy, because they know everything and he hears only rumour. Virgil makes the same appeal before his catalogue of the Italian forces, and he uses it again in Book 10 before the Etruscan ships.",
+   "q": "Why might a catalogue, of all passages, need a fresh call to the Muses?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad2-pl1-catalogue",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/1",
+    "label": "Iliad 2.484–493 (Murray)",
+    "l": "484-493",
+    "og": {
+     "group": "iliad",
+     "part": "Book II",
+     "l": "484-493",
+     "label": "Iliad 2.484–493"
+    },
+    "first": [
+     "Tell me now, ye Muses that have dwellings on Olympus— for ye are goddesses and are at hand and know all things, whereas we hear but a rumour and know not anything—who…"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/0",
+    "label": "Paradise Lost 1.376–380",
+    "l": "376-380",
+    "first": [
+     "Say, Muse, their Names then known, who first, who last,",
+     "Rous'd from the slumber, on that fiery Couch,"
+    ]
+   },
+   "note": "Milton's 'Say, Muse, their names then known' introduces a catalogue of the fallen angels in the manner of Homer's catalogue of ships. The leaders listed are the gods of the nations that the angels would later become.",
+   "q": "Milton's catalogue names demons as pagan gods. What does that do to the heroic form he is borrowing?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad6-aeneid6-leaves",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/5",
+    "label": "Iliad 6.146–149 (Murray)",
+    "l": "146-149",
+    "og": {
+     "group": "iliad",
+     "part": "Book VI",
+     "l": "146-149",
+     "label": "Iliad 6.146–149"
+    },
+    "first": [
+     "Even as are the generations of leaves, such are those also of men. As for the leaves, the wind scattereth some upon the earth, but the forest, as it bourgeons, putteth…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.305–312 (Dryden)",
+    "l": "422-432",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "305-312",
+     "label": "Aeneid 6.305–312"
+    },
+    "first": [
+     "An airy crowd came rushing where he stood,",
+     "Which fill’d the margin of the fatal flood:"
+    ]
+   },
+   "note": "Glaucus tells Diomedes that the generations of men are like leaves, scattered by the wind and grown again in spring. Virgil moves the leaves to the bank of Acheron, where the dead crowd to be ferried 'as many as the leaves that fall in the first frost of autumn', and adds a second simile of migrating birds.",
+   "q": "Homer's leaves grow again; Virgil's only fall. What has changed in the meaning of the image?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid6-inferno3-leaves",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.305–312 (Dryden)",
+    "l": "422-432",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "305-312",
+     "label": "Aeneid 6.305–312"
+    },
+    "first": [
+     "An airy crowd came rushing where he stood,",
+     "Which fill’d the margin of the fatal flood:"
+    ]
+   },
+   "b": {
+    "ref": "work:divine-comedy-longfellow/2",
+    "label": "Inferno 3.112–117 (Longfellow)",
+    "l": "112-117",
+    "og": {
+     "group": "divine-comedy",
+     "part": "Inferno: Canto III",
+     "l": "112-117",
+     "label": "Inferno 3.112–117"
+    },
+    "first": [
+     "As in the autumn-time the leaves fall off,",
+     "First one and then another, till the branch"
+    ]
+   },
+   "note": "Dante, guided by Virgil himself, rewrites Virgil's simile at the same river: the damned drop from the bank one by one 'as in the autumn-time the leaves fall off', and come at a signal 'as a bird unto its lure'. He keeps both of Virgil's images, leaves and birds, but makes the fall individual and the birds obedient.",
+   "q": "Virgil's birds fly to warmer lands; Dante's come to a falconer's lure. What does that change say about the souls?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid6-pl1-leaves",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.305–312 (Dryden)",
+    "l": "422-432",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "305-312",
+     "label": "Aeneid 6.305–312"
+    },
+    "first": [
+     "An airy crowd came rushing where he stood,",
+     "Which fill’d the margin of the fatal flood:"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/0",
+    "label": "Paradise Lost 1.301–304",
+    "l": "301-304",
+    "first": [
+     "His Legions, Angel Forms, who lay intrans't",
+     "Thick as Autumnal Leaves that strow the Brooks"
+    ]
+   },
+   "note": "Milton's fallen angels lie on the burning lake 'thick as autumnal leaves that strow the brooks in Vallombrosa'. The simile reaches back through Dante and Virgil to Homer, and Milton fixes it to a real valley near Florence, the city he had visited in 1638.",
+   "q": "Why might Milton place a simile about the damned in a real Tuscan valley?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid6-inferno3-charon",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.298–304 (Dryden)",
+    "l": "413-421",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "298-304",
+     "label": "Aeneid 6.298–304"
+    },
+    "first": [
+     "There Charon stands, who rules the dreary coast:",
+     "A sordid god: down from his hoary chin"
+    ]
+   },
+   "b": {
+    "ref": "work:divine-comedy-longfellow/2",
+    "label": "Inferno 3.82–99 (Longfellow)",
+    "l": "82-99",
+    "og": {
+     "group": "divine-comedy",
+     "part": "Inferno: Canto III",
+     "l": "82-99",
+     "label": "Inferno 3.82–99"
+    },
+    "first": [
+     "And lo! towards us coming in a boat",
+     "An old man, hoary with the hair of eld,"
+    ]
+   },
+   "note": "Virgil's Charon is a filthy old ferryman with eyes of flame, a god still vigorous in age. Dante takes him over almost feature for feature, the white hair and the eyes ringed with fire, and lets him refuse a living passenger until Virgil speaks the formula that silences him.",
+   "q": "Dante's Virgil commands Charon. What does it mean for Virgil's own creature to obey Virgil?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad23-aeneid6-unburied",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/22",
+    "label": "Iliad 23.71–74 (Murray)",
+    "l": "71-74",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXIII",
+     "l": "71-74",
+     "label": "Iliad 23.71–74"
+    },
+    "first": [
+     "Bury me with all speed, that I pass within the gates of Hades. Afar do the spirits keep me aloof, the phantoms of men that have done with toils, neither suffer they me…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.325–330 (Dryden)",
+    "l": "445-452",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "325-330",
+     "label": "Aeneid 6.325–330"
+    },
+    "first": [
+     "The ghosts rejected are th’ unhappy crew",
+     "Depriv’d of sepulchers and fun’ral due:"
+    ]
+   },
+   "note": "The ghost of Patroclus says the shades will not let him cross the river until he is buried. Virgil turns this into a law of his underworld: the unburied wander a hundred years on the near bank before Charon will take them.",
+   "q": "Homer gives one ghost's complaint; Virgil gives a rule. What is gained or lost?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad23-odyssey11-unburied",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/22",
+    "label": "Iliad 23.65–92 (Murray)",
+    "l": "65-92",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXIII",
+     "l": "65-92",
+     "label": "Iliad 23.65–92"
+    },
+    "first": [
+     "then there came to him the spirit of hapless Patroclus, in all things like his very self, in stature and fair eyes and in voice, and in like raiment was he clad withal…"
+    ]
+   },
+   "b": {
+    "ref": "work:odyssey-murray/10",
+    "label": "Odyssey 11.51–80 (Murray)",
+    "p": "4-6",
+    "og": {
+     "group": "odyssey",
+     "part": "Book XI",
+     "l": "51-80",
+     "label": "Odyssey 11.51–80"
+    },
+    "first": [
+     "“The first to come was the spirit of my comrade Elpenor. Not yet had he been buried beneath the broad-wayed earth, for we had left his corpse behind us in the hall of…"
+    ]
+   },
+   "note": "Patroclus' ghost comes to Achilles in a dream and asks for burial; Elpenor's ghost meets Odysseus first in the underworld and asks the same. In both scenes the newly dead claim a rite from the living before anything else can be said.",
+   "q": "Why do both poems let the least heroic need, burial, come first among the dead?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey11-aeneid6-elpenor-palinurus",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/10",
+    "label": "Odyssey 11.51–80 (Murray)",
+    "p": "4-6",
+    "og": {
+     "group": "odyssey",
+     "part": "Book XI",
+     "l": "51-80",
+     "label": "Odyssey 11.51–80"
+    },
+    "first": [
+     "“The first to come was the spirit of my comrade Elpenor. Not yet had he been buried beneath the broad-wayed earth, for we had left his corpse behind us in the hall of…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.337–371 (Dryden)",
+    "l": "461-500",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "337-371",
+     "label": "Aeneid 6.337–371"
+    },
+    "first": [
+     "Amidst the spirits, Palinurus press’d,",
+     "Yet fresh from life, a new-admitted guest,"
+    ]
+   },
+   "note": "Elpenor fell from Circe's roof and lies unburied; he begs Odysseus for a mound and an oar. Palinurus, Aeneas' helmsman, fell asleep at the helm and was murdered on the shore; he too begs for burial and is promised a place that will bear his name.",
+   "q": "Both men die by falling. What does each death say about the leader who lost them?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey11-aeneid6-silence",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/10",
+    "label": "Odyssey 11.543–564 (Murray)",
+    "p": "53-55",
+    "og": {
+     "group": "odyssey",
+     "part": "Book XI",
+     "l": "543-564",
+     "label": "Odyssey 11.543–564"
+    },
+    "first": [
+     "“And other spirits of those dead and gone stood sorrowing, and each asked of those dear to him. Alone of them all the spirit of Aias, son of Telamon, stood apart, still…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.450–476 (Dryden)",
+    "l": "610-640",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "450-476",
+     "label": "Aeneid 6.450–476"
+    },
+    "first": [
+     "Not far from these Phoenician Dido stood,",
+     "Fresh from her wound, her bosom bath’d in blood;"
+    ]
+   },
+   "note": "Ajax, still angry over the arms of Achilles, will not answer Odysseus in the underworld and walks away. Virgil gives the same silence to Dido: Aeneas pleads that he left her unwillingly, and she turns away without a word to her first husband Sychaeus.",
+   "q": "In each scene the hero speaks and the ghost does not. Who has the last word?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey11-aeneid6-embrace",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/10",
+    "label": "Odyssey 11.204–208 (Murray)",
+    "p": "19-19",
+    "og": {
+     "group": "odyssey",
+     "part": "Book XI",
+     "l": "204-208",
+     "label": "Odyssey 11.204–208"
+    },
+    "first": [
+     "“So she spoke, and I pondered in heart, and was fain to clasp the spirit of my dead mother. Thrice I sprang towards her, and my heart bade me clasp her, and thrice she…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.700–702 (Dryden)",
+    "l": "949-952",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "700-702",
+     "label": "Aeneid 6.700–702"
+    },
+    "first": [
+     "He said; and falling tears his face bedew:",
+     "Then thrice around his neck his arms he threw;"
+    ]
+   },
+   "note": "Three times Odysseus tries to embrace his mother's shade, and three times she slips from his arms 'like a shadow or a dream'. Virgil repeats the gesture, and the threefold attempt, when Aeneas meets his father Anchises.",
+   "q": "Virgil uses these lines twice in the Aeneid (also for Creusa in Book 2). Why might a gesture be repeated rather than varied?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey11-aeneid2-creusa",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/10",
+    "label": "Odyssey 11.204–208 (Murray)",
+    "p": "19-19",
+    "og": {
+     "group": "odyssey",
+     "part": "Book XI",
+     "l": "204-208",
+     "label": "Odyssey 11.204–208"
+    },
+    "first": [
+     "“So she spoke, and I pondered in heart, and was fain to clasp the spirit of my dead mother. Thrice I sprang towards her, and my heart bade me clasp her, and thrice she…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/1",
+    "label": "Aeneid 2.792–794 (Dryden)",
+    "l": "1076-1080",
+    "og": {
+     "group": "aeneid",
+     "part": "Book II",
+     "l": "792-794",
+     "label": "Aeneid 2.792–794"
+    },
+    "first": [
+     "I strove to speak: but horror tied my tongue;",
+     "And thrice about her neck my arms I flung,"
+    ]
+   },
+   "note": "The threefold embrace that fails first appears when Odysseus reaches for his mother. Virgil gives it to Aeneas as he reaches for the ghost of his wife Creusa, lost in the fall of Troy, who vanishes 'like light winds or a winged dream'.",
+   "q": "What is different about losing a wife rather than a mother in this scene?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad23-odyssey11-embrace",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/22",
+    "label": "Iliad 23.97–107 (Murray)",
+    "l": "97-107",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXIII",
+     "l": "97-107",
+     "label": "Iliad 23.97–107"
+    },
+    "first": [
+     "but the spirit like a vapour was gone beneath the earth, gibbering faintly. And seized with amazement Achilles sprang up, and smote his hands together, and spake a word…"
+    ]
+   },
+   "b": {
+    "ref": "work:odyssey-murray/10",
+    "label": "Odyssey 11.204–208 (Murray)",
+    "p": "19-19",
+    "og": {
+     "group": "odyssey",
+     "part": "Book XI",
+     "l": "204-208",
+     "label": "Odyssey 11.204–208"
+    },
+    "first": [
+     "“So she spoke, and I pondered in heart, and was fain to clasp the spirit of my dead mother. Thrice I sprang towards her, and my heart bade me clasp her, and thrice she…"
+    ]
+   },
+   "note": "Achilles reaches for Patroclus' ghost and grasps nothing; it goes beneath the earth 'like smoke'. Odysseus' failed embrace of his mother repeats the gesture inside the Odyssey's own underworld.",
+   "q": "Achilles' failure ends in wonder ('even in Hades there is something'). What does Odysseus learn from his?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad23-gilgamesh12-ghost",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/22",
+    "label": "Iliad 23.97–107 (Murray)",
+    "l": "97-107",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXIII",
+     "l": "97-107",
+     "label": "Iliad 23.97–107"
+    },
+    "first": [
+     "but the spirit like a vapour was gone beneath the earth, gibbering faintly. And seized with amazement Achilles sprang up, and smote his hands together, and spake a word…"
+    ]
+   },
+   "b": {
+    "ref": "work:gilgamish-thompson/11",
+    "label": "Gilgamesh, Tablet XII (Thompson)",
+    "l": "75-84",
+    "first": [
+     "Nergal, the warrior-hero, [gave ear to the speaking of Ea],",
+     "Oped, then, a hole in the earth, and the spirit of Enkidu issued"
+    ]
+   },
+   "note": "In the last tablet of Gilgamesh the spirit of Enkidu rises 'like a wind' through a hole in the earth, and the two friends embrace and talk of the underworld. Patroclus' ghost, which slips away like smoke, offers a close parallel between two poems about a hero mourning his companion.",
+   "q": "Gilgamesh and Enkidu are allowed to embrace; Achilles and Patroclus are not. What difference does it make?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad18-gilgamesh8-lion",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/17",
+    "label": "Iliad 18.316–322 (Murray)",
+    "l": "316-322",
+    "og": {
+     "group": "iliad",
+     "part": "Book XVIII",
+     "l": "316-322",
+     "label": "Iliad 18.316–322"
+    },
+    "first": [
+     "even as a bearded lion whose whelps some hunter of stags hath snatched away from out the thick wood; and the lion coming back thereafter grieveth sore, and through many…"
+    ]
+   },
+   "b": {
+    "ref": "work:gilgamish-thompson/7",
+    "label": "Gilgamesh, Tablet VIII (Thompson)",
+    "l": "13-19",
+    "first": [
+     "Natheless he raised not [his eyes, and] his heart, (when Gilgamish) felt (it),",
+     "Made no beat."
+    ]
+   },
+   "note": "Over Patroclus' body Achilles groans like a lion whose cubs a hunter has taken. Gilgamesh, over the dead Enkidu, roars 'like a lioness robbed of her whelps'. Both poems turn a hero's grief for a friend into the rage of a bereaved animal.",
+   "q": "Why might grief for a friend be pictured as a parent's loss?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey19-aeneid6-gates",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/18",
+    "label": "Odyssey 19.562–567 (Murray)",
+    "p": "58-58",
+    "og": {
+     "group": "odyssey",
+     "part": "Book XIX",
+     "l": "562-567",
+     "label": "Odyssey 19.562–567"
+    },
+    "first": [
+     "Then wise Penelope answered him again: “Stranger, dreams verily are baffling and unclear of meaning, and in no wise do they find fulfillment in all things for men. For…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.893–898 (Dryden)",
+    "l": "1235-1242",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "893-898",
+     "label": "Aeneid 6.893–898"
+    },
+    "first": [
+     "Two gates the silent house of Sleep adorn;",
+     "Of polish’d ivory this, that of transparent horn:"
+    ]
+   },
+   "note": "Penelope says there are two gates of dreams: true dreams come through horn, false ones through ivory. Virgil ends the visit to the underworld at these gates and sends Aeneas out through the ivory one, the gate of false dreams, which readers have puzzled over ever since.",
+   "q": "Why might Virgil send his hero out by the gate of false dreams?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey4-aeneid6-elysium",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/3",
+    "label": "Odyssey 4.561–569 (Murray)",
+    "p": "50-50",
+    "og": {
+     "group": "odyssey",
+     "part": "Book IV",
+     "l": "561-569",
+     "label": "Odyssey 4.561–569"
+    },
+    "first": [
+     "But for thyself, Menelaus, fostered of Zeus, it is not ordained that thou shouldst die and meet thy fate in horse-pasturing Argos, but to the Elysian plain and the…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.637–659 (Dryden)",
+    "l": "865-880",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "637-659",
+     "label": "Aeneid 6.637–659"
+    },
+    "first": [
+     "Possess’d the porch, and on the front above",
+     "He fix’d the fatal bough requir’d by Pluto’s love."
+    ]
+   },
+   "note": "Proteus promises Menelaus the Elysian plain at the end of the earth, where life is easiest and no snow falls. Virgil turns the place into a region of the underworld, with its own sun and stars, where the blessed sing and exercise.",
+   "q": "Homer's Elysium is for one fortunate man; Virgil's is for many. What kind of person gets in?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad14-aeneid6-sleep-death",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/13",
+    "label": "Iliad 14.231 (Murray)",
+    "l": "231-231",
+    "og": {
+     "group": "iliad",
+     "part": "Book XIV",
+     "l": "231-231",
+     "label": "Iliad 14.231"
+    },
+    "first": [
+     "There she met Sleep, the brother of Death; and she clasped him by the hand, and spake and addressed him: Sleep, lord of all gods and of all men, if ever thou didst…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.273–281 (Dryden)",
+    "l": "386-389",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "273-281",
+     "label": "Aeneid 6.273–281"
+    },
+    "first": [
+     "And pale Diseases, and repining Age,",
+     "Want, Fear, and Famine’s unresisted rage;"
+    ]
+   },
+   "note": "Homer calls Sleep the brother of Death. Virgil stations 'Death's half-brother, Sleep' at the entrance of the underworld, among Grief, Disease, Fear and Want.",
+   "q": "Is Sleep a comfort or a threat in each of these passages?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey12-aeneid1-remember",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/11",
+    "label": "Odyssey 12.208–212 (Murray)",
+    "p": "18-18",
+    "og": {
+     "group": "odyssey",
+     "part": "Book XII",
+     "l": "208-212",
+     "label": "Odyssey 12.208–212"
+    },
+    "first": [
+     "“‘Friends, hitherto we have been in no wise ignorant of sorrow; surely this evil that besets us now is no greater than when the Cyclops penned us in his hollow cave by…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.198–209 (Dryden)",
+    "l": "275-292",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "198-209",
+     "label": "Aeneid 1.198–209"
+    },
+    "first": [
+     "Thus while he dealt it round, the pious chief",
+     "With cheerful words allay’d the common grief:"
+    ]
+   },
+   "note": "Odysseus reminds his men that they escaped the Cyclops and says that 'some day we shall remember these things too'. Aeneas, after the storm, gives the same encouragement, 'perhaps one day it will please you to remember even this', but Virgil adds that he hides his own grief behind a hopeful face.",
+   "q": "Virgil adds two lines on what Aeneas feels but does not say. What does that addition do to the speech?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid1-pl1-vaunting",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.198–209 (Dryden)",
+    "l": "275-292",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "198-209",
+     "label": "Aeneid 1.198–209"
+    },
+    "first": [
+     "Thus while he dealt it round, the pious chief",
+     "With cheerful words allay’d the common grief:"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/0",
+    "label": "Paradise Lost 1.120–126",
+    "l": "120-126",
+    "first": [
+     "We may with more successful hope resolve",
+     "To wage by force or guile eternal Warr"
+    ]
+   },
+   "note": "Aeneas 'feigns hope in his face and presses his grief deep in his heart'. Milton gives Satan the same split between speech and feeling: 'so spake th' apostate Angel, though in pain, vaunting aloud, but racked with deep despair'.",
+   "q": "Both leaders hide their pain to keep their followers going. Does the parallel make Satan more heroic, or Aeneas more suspect?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey5-aeneid1-thrice-blessed",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/4",
+    "label": "Odyssey 5.306–312 (Murray)",
+    "p": "24-24",
+    "og": {
+     "group": "odyssey",
+     "part": "Book V",
+     "l": "306-312",
+     "label": "Odyssey 5.306–312"
+    },
+    "first": [
+     "“Ah me, wretched that I am! What is to befall me at the last? I fear me that verily all that the goddess said was true, when she declared that on the sea, before ever I…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.94–101 (Dryden)",
+    "l": "135-145",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "94-101",
+     "label": "Aeneid 1.94–101"
+    },
+    "first": [
+     "Struck with unusual fright, the Trojan chief,",
+     "With lifted hands and eyes, invokes relief;"
+    ]
+   },
+   "note": "In the storm Odysseus wishes he had died at Troy, where he would have had a funeral and fame: 'thrice blessed the Danaans who perished'. Aeneas' first words in the Aeneid repeat the wish: he could have fallen to Diomedes, where Hector and Sarpedon lie.",
+   "q": "Why might Virgil choose to introduce his hero with a wish to have died?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey10-aeneid1-aeolus",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/9",
+    "label": "Odyssey 10.1–27 (Murray)",
+    "p": "1-2",
+    "og": {
+     "group": "odyssey",
+     "part": "Book X",
+     "l": "1-27",
+     "label": "Odyssey 10.1–27"
+    },
+    "first": [
+     "“Then to the Aeolian isle we came, where dwelt Aeolus, son of Hippotas, dear to the immortal gods, in a floating island, and all around it is a wall of unbreakable…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.50–63 (Dryden)",
+    "l": "76-94",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "50-63",
+     "label": "Aeneid 1.50–63"
+    },
+    "first": [
+     "Thus rag’d the goddess; and, with fury fraught.",
+     "The restless regions of the storms she sought,"
+    ]
+   },
+   "note": "Homer's Aeolus is a friendly host who gives Odysseus the winds in a bag. Virgil's Aeolus is a gaoler who keeps the winds penned in a mountain, and Juno bribes him to loose them on Aeneas.",
+   "q": "The same god helps in one poem and harms in the other. What makes the difference?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey6-aeneid1-goddess",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/5",
+    "label": "Odyssey 6.149–169 (Murray)",
+    "p": "13-13",
+    "og": {
+     "group": "odyssey",
+     "part": "Book VI",
+     "l": "149-169",
+     "label": "Odyssey 6.149–169"
+    },
+    "first": [
+     "“I beseech thee, O queen,—a goddess art thou, or art thou mortal? If thou art a goddess, one of those who hold broad heaven, to Artemis, the daughter of great Zeus, do I…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.326–334 (Dryden)",
+    "l": "450-461",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "326-334",
+     "label": "Aeneid 1.326–334"
+    },
+    "first": [
+     "Thus Venus: thus her son replied again:",
+     "“None of your sisters have we heard or seen,"
+    ]
+   },
+   "note": "Odysseus greets Nausicaa as a goddess or a mortal, he cannot tell which. Aeneas greets a huntress in the same doubt; she is in fact his mother Venus in disguise, so the compliment is truer than he knows.",
+   "q": "Odysseus flatters a girl; Aeneas fails to recognize his mother. Which scene has more irony?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey6-aeneid1-artemis-diana",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/5",
+    "label": "Odyssey 6.102–109 (Murray)",
+    "p": "9-9",
+    "og": {
+     "group": "odyssey",
+     "part": "Book VI",
+     "l": "102-109",
+     "label": "Odyssey 6.102–109"
+    },
+    "first": [
+     "And even as Artemis, the archer, roves over the mountains, along the ridges of lofty Taygetus or Erymanthus, joying in the pursuit of boars and swift deer, and with her…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.498–504 (Dryden)",
+    "l": "698-708",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "498-504",
+     "label": "Aeneid 1.498–504"
+    },
+    "first": [
+     "The beauteous Dido, with a num’rous train",
+     "And pomp of guards, ascends the sacred fane."
+    ]
+   },
+   "note": "Nausicaa among her maidens is compared to Artemis among her nymphs. Virgil gives the same simile to Dido coming to the temple with her guards; ancient critics already argued over whether it fits a queen as well as it fits a girl.",
+   "q": "Is the simile apt for Dido? What does it suggest about her that the narrative does not yet say?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey6-aeneid1-ivory",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/5",
+    "label": "Odyssey 6.232–235 (Murray)",
+    "p": "17-17",
+    "og": {
+     "group": "odyssey",
+     "part": "Book VI",
+     "l": "232-235",
+     "label": "Odyssey 6.232–235"
+    },
+    "first": [
+     "And as when a man overlays silver with gold, a cunning workman whom Hephaestus and Pallas Athena have taught all manner of craft, and full of grace is the work he…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.588–593 (Dryden)",
+    "l": "823-833",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "588-593",
+     "label": "Aeneid 1.588–593"
+    },
+    "first": [
+     "Scarce had he spoken, when the cloud gave way,",
+     "The mists flew upward and dissolv’d in day."
+    ]
+   },
+   "note": "Athena makes Odysseus taller and lovelier, as a craftsman lays gold over silver. When Venus' mist parts and Aeneas is seen, Virgil uses the same craftsman's simile: ivory, silver or Parian marble set in gold.",
+   "q": "Both heroes are made beautiful by a goddess before meeting a woman. What is the effect of comparing a man to a work of art?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey7-aeneid1-mist",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/6",
+    "label": "Odyssey 7.14–17 (Murray)",
+    "p": "2-2",
+    "og": {
+     "group": "odyssey",
+     "part": "Book VII",
+     "l": "14-17",
+     "label": "Odyssey 7.14–17"
+    },
+    "first": [
+     "Then Odysseus roused himself to go to the city, and Athena, with kindly purpose, cast about him a thick mist, that no one of the great-hearted Phaeacians, meeting him…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.411–414 (Dryden)",
+    "l": "571-574",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "411-414",
+     "label": "Aeneid 1.411–414"
+    },
+    "first": [
+     "They march, obscure; for Venus kindly shrouds",
+     "With mists their persons, and involves in clouds,"
+    ]
+   },
+   "note": "Athena wraps Odysseus in a mist so that he can walk into the Phaeacian town unseen. Venus does the same for Aeneas and Achates as they walk into Carthage.",
+   "q": "What does the hero see, and learn, while he cannot be seen?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey8-aeneid1-weeping",
+   "kind": "answer",
+   "a": {
+    "ref": "work:odyssey-murray/7",
+    "label": "Odyssey 8.83–92 (Murray)",
+    "p": "7-7",
+    "og": {
+     "group": "odyssey",
+     "part": "Book VIII",
+     "l": "83-92",
+     "label": "Odyssey 8.83–92"
+    },
+    "first": [
+     "This song the famous minstrel sang; but Odysseus grasped his great purple cloak with his stout hands, and drew it down over his head, and hid his comely face; for he had…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.453–465 (Dryden)",
+    "l": "636-657",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "453-465",
+     "label": "Aeneid 1.453–465"
+    },
+    "first": [
+     "His wond’ring eyes, and round the temple gaz’d,",
+     "Admir’d the fortune of the rising town,"
+    ]
+   },
+   "note": "Odysseus hides his face and weeps when the bard sings of the quarrel at Troy. Aeneas weeps openly before the pictures of the Trojan war on Juno's temple at Carthage: 'there are tears for things, and mortal things touch the mind'.",
+   "q": "One hero hears his story sung, the other sees it painted. How does each take it?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad2-aeneid1-bees",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/1",
+    "label": "Iliad 2.87–93 (Murray)",
+    "l": "87-93",
+    "og": {
+     "group": "iliad",
+     "part": "Book II",
+     "l": "87-93",
+     "label": "Iliad 2.87–93"
+    },
+    "first": [
+     "Even as the tribes of thronging bees go forth from some hollow rock, ever coming on afresh, and in clusters over the flowers of spring fly in throngs, some here, some…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.430–436 (Dryden)",
+    "l": "596-610",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "430-436",
+     "label": "Aeneid 1.430–436"
+    },
+    "first": [
+     "Lay deep foundations for a theatre;",
+     "From marble quarries mighty columns hew,"
+    ]
+   },
+   "note": "Homer's Achaeans pour out to the assembly like swarming bees. Virgil's bees are at work: the Carthaginians building their city are like bees in early summer, storing honey and driving out the drones.",
+   "q": "Homer's bees are a crowd; Virgil's are a society. What does each simile admire?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid1-pl1-bees",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/0",
+    "label": "Aeneid 1.430–436 (Dryden)",
+    "l": "596-610",
+    "og": {
+     "group": "aeneid",
+     "part": "Book I",
+     "l": "430-436",
+     "label": "Aeneid 1.430–436"
+    },
+    "first": [
+     "Lay deep foundations for a theatre;",
+     "From marble quarries mighty columns hew,"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/0",
+    "label": "Paradise Lost 1.768–775",
+    "l": "768-775",
+    "first": [
+     "Brusht with the hiss of russling wings. As Bees",
+     "In spring time, when the Sun with Taurus rides,"
+    ]
+   },
+   "note": "Milton's devils crowd into Pandaemonium 'as bees in spring time'. The busy city-building bees of Carthage become a swarm in a hall that the fallen angels have just raised.",
+   "q": "Milton's bees build Hell's capital. Is the simile admiring or mocking?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad22-aeneid2-hector-ghost",
+   "kind": "answer",
+   "a": {
+    "ref": "work:iliad-murray/21",
+    "label": "Iliad 22.395–404 (Murray)",
+    "l": "395-404",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXII",
+     "l": "395-404",
+     "label": "Iliad 22.395–404"
+    },
+    "first": [
+     "He spake, and devised foul entreatment for goodly Hector. The tendons of both his feet behind he pierced from heel to ankle, and made fast therethrough thongs of oxhide…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/1",
+    "label": "Aeneid 2.268–279 (Dryden)",
+    "l": "350-364",
+    "og": {
+     "group": "aeneid",
+     "part": "Book II",
+     "l": "268-279",
+     "label": "Aeneid 2.268–279"
+    },
+    "first": [
+     "“’Twas in the dead of night, when sleep repairs",
+     "Our bodies worn with toils, our minds with cares,"
+    ]
+   },
+   "note": "Homer tells how Achilles pierced Hector's feet and dragged him in the dust. In the Aeneid Hector's ghost appears to Aeneas still carrying those wounds, 'how changed from that Hector' who came back in Achilles' armour.",
+   "q": "What does Virgil gain by showing the wounds Homer described, rather than the hero Homer praised?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid2-pl1-how-changed",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/1",
+    "label": "Aeneid 2.268–279 (Dryden)",
+    "l": "350-364",
+    "og": {
+     "group": "aeneid",
+     "part": "Book II",
+     "l": "268-279",
+     "label": "Aeneid 2.268–279"
+    },
+    "first": [
+     "“’Twas in the dead of night, when sleep repairs",
+     "Our bodies worn with toils, our minds with cares,"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/0",
+    "label": "Paradise Lost 1.84–87",
+    "l": "84-87",
+    "first": [
+     "If thou beest he; But O how fall'n! how chang'd",
+     "From him, who in the happy Realms of Light"
+    ]
+   },
+   "note": "Satan's first words to Beelzebub, 'If thou beest he; but O how fall'n! how chang'd', echo Aeneas on the ghost of Hector, 'quantum mutatus ab illo' (how changed from him). The line marks the angels' fall as Virgil marked Troy's.",
+   "q": "Why might Milton give Satan, of all speakers, Aeneas' words of grief?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad16-aeneid2-wolves",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/15",
+    "label": "Iliad 16.156–163 (Murray)",
+    "l": "156-163",
+    "og": {
+     "group": "iliad",
+     "part": "Book XVI",
+     "l": "156-163",
+     "label": "Iliad 16.156–163"
+    },
+    "first": [
+     "But Achilles went to and fro throughout the huts and let harness in their armour all the Myrmidons, and they rushed forth like ravening wolves in whose hearts is fury…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/1",
+    "label": "Aeneid 2.355–360 (Dryden)",
+    "l": "479-484",
+    "og": {
+     "group": "aeneid",
+     "part": "Book II",
+     "l": "355-360",
+     "label": "Aeneid 2.355–360"
+    },
+    "first": [
+     "“As hungry wolves, with raging appetite,",
+     "Scour thro’ the fields, nor fear the stormy night;"
+    ]
+   },
+   "note": "Homer's Myrmidons arm like ravening wolves after a kill. Aeneas' band in burning Troy rush out like wolves driven by hunger, with cubs waiting at home.",
+   "q": "Homer's wolves are fed; Virgil's are starving. What does the change say about each army?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad22-aeneid2-snake",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/21",
+    "label": "Iliad 22.93–96 (Murray)",
+    "l": "93-96",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXII",
+     "l": "93-96",
+     "label": "Iliad 22.93–96"
+    },
+    "first": [
+     "howbeit they could not persuade the heart of Hector, but he abode Achilles as he drew nigh in his mightiness. And as a serpent of the mountain awaiteth a man at his…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/1",
+    "label": "Aeneid 2.469–475 (Dryden)",
+    "l": "639-646",
+    "og": {
+     "group": "aeneid",
+     "part": "Book II",
+     "l": "469-475",
+     "label": "Aeneid 2.469–475"
+    },
+    "first": [
+     "Before the gate stood Pyrrhus, threat’ning loud,",
+     "With glitt’ring arms conspicuous in the crowd."
+    ]
+   },
+   "note": "Hector waiting for Achilles is like a snake at its hole, full of poison. Virgil gives the snake to Pyrrhus, Achilles' son, shining at Priam's door like a serpent that has cast its skin in spring.",
+   "q": "Homer's snake waits to defend; Virgil's attacks. How does the image move from Hector to his enemies?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad6-aeneid2-palace",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/5",
+    "label": "Iliad 6.242–250 (Murray)",
+    "l": "242-250",
+    "og": {
+     "group": "iliad",
+     "part": "Book VI",
+     "l": "242-250",
+     "label": "Iliad 6.242–250"
+    },
+    "first": [
+     "But when he was now come to the beauteous palace of Priam, adorned with polished colonnades —and in it were fifty chambers of polished stone, built each hard by the…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/1",
+    "label": "Aeneid 2.501–505 (Dryden)",
+    "l": "681-688",
+    "og": {
+     "group": "aeneid",
+     "part": "Book II",
+     "l": "501-505",
+     "label": "Aeneid 2.501–505"
+    },
+    "first": [
+     "These eyes beheld him when he march’d between",
+     "The brother kings: I saw th’ unhappy queen,"
+    ]
+   },
+   "note": "Homer describes Priam's palace with fifty chambers for his sons and their wives. Virgil returns to the same rooms as the Greeks break in: 'those fifty bedchambers, such a hope of descendants' fall to the enemy.",
+   "q": "Virgil names the fifty chambers as they are lost. What does that do to Homer's picture of plenty?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid2-pharsalia8-trunk",
+   "kind": "echo",
+   "a": {
+    "ref": "work:aeneid-dryden/1",
+    "label": "Aeneid 2.554–558 (Dryden)",
+    "l": "758-763",
+    "og": {
+     "group": "aeneid",
+     "part": "Book II",
+     "l": "554-558",
+     "label": "Aeneid 2.554–558"
+    },
+    "first": [
+     "Thus Priam fell, and shar’d one common fate",
+     "With Troy in ashes, and his ruin’d state:"
+    ]
+   },
+   "b": {
+    "ref": "work:pharsalia/7",
+    "label": "Pharsalia 8.698–711 (Ridley)",
+    "l": "840-847",
+    "og": {
+     "group": "pharsalia",
+     "part": "Book VIII",
+     "l": "698-711",
+     "label": "Pharsalia 8.698–711"
+    },
+    "first": [
+     "Years of unbroken victories balanced down",
+     "By one day's carnage!  In his happy time"
+    ]
+   },
+   "note": "Virgil's Priam ends as 'a huge trunk on the shore, a head torn from the shoulders, a body without a name'. Lucan's Pompey, murdered in Egypt, ends the same way on the beach, a trunk known by no face; the ancient commentator Servius already read Virgil's line as a glance at Pompey's death.",
+   "q": "Each poet ends a great man as a nameless body. Why the shore?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad5-aeneid2-mist",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/4",
+    "label": "Iliad 5.127–128 (Murray)",
+    "l": "127-128",
+    "og": {
+     "group": "iliad",
+     "part": "Book V",
+     "l": "127-128",
+     "label": "Iliad 5.127–128"
+    },
+    "first": [
+     "And the mist moreover have I taken from thine eyes that afore was upon them, to the end that thou mayest well discern both god and man. Wherefore now if any god come…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/1",
+    "label": "Aeneid 2.604–606 (Dryden)",
+    "l": "819-822",
+    "og": {
+     "group": "aeneid",
+     "part": "Book II",
+     "l": "604-606",
+     "label": "Aeneid 2.604–606"
+    },
+    "first": [
+     "Now cast your eyes around, while I dissolve",
+     "The mists and films that mortal eyes involve,"
+    ]
+   },
+   "note": "Athena takes the mist from Diomedes' eyes so that he can tell gods from men in battle. Venus does the same for Aeneas and shows him the gods themselves pulling Troy down.",
+   "q": "Diomedes is given sight to fight the gods; Aeneas to see that he cannot. How do the two scenes differ in purpose?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad4-aeneid2-tree",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/3",
+    "label": "Iliad 4.482–487 (Murray)",
+    "l": "482-487",
+    "og": {
+     "group": "iliad",
+     "part": "Book IV",
+     "l": "482-487",
+     "label": "Iliad 4.482–487"
+    },
+    "first": [
+     "and clean through his shoulder went the spear of bronze, and he fell to the ground in the dust like a poplar tree that hath grown up in the bottom land of a great marsh…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/1",
+    "label": "Aeneid 2.626–631 (Dryden)",
+    "l": "844-855",
+    "og": {
+     "group": "aeneid",
+     "part": "Book II",
+     "l": "626-631",
+     "label": "Aeneid 2.626–631"
+    },
+    "first": [
+     "Troy sunk in flames I saw, nor could prevent;",
+     "And Ilium from its old foundations rent;"
+    ]
+   },
+   "note": "The young Simoeisius falls like a poplar felled by a chariot-maker. Virgil enlarges the felled tree into a simile for Troy itself, an ancient ash on a mountain that farmers hack at until it crashes down.",
+   "q": "Homer's tree is one young man; Virgil's is a whole city. What happens to a simile when it is scaled up?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey12-aeneid3-scylla",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/11",
+    "label": "Odyssey 12.73–100 (Murray)",
+    "p": "7-8",
+    "og": {
+     "group": "odyssey",
+     "part": "Book XII",
+     "l": "73-100",
+     "label": "Odyssey 12.73–100"
+    },
+    "first": [
+     "Therein dwells Scylla, yelping terribly. Her voice is indeed but as the voice of a new-born whelp, but she herself is an evil monster, nor would anyone be glad at sight…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/2",
+    "label": "Aeneid 3.420–432 (Dryden)",
+    "l": "536-550",
+    "og": {
+     "group": "aeneid",
+     "part": "Book III",
+     "l": "420-432",
+     "label": "Aeneid 3.420–432"
+    },
+    "first": [
+     "Far on the right, her dogs foul Scylla hides:",
+     "Charybdis roaring on the left presides,"
+    ]
+   },
+   "note": "Circe describes Scylla's cave and Charybdis' whirlpool to Odysseus. Helenus warns Aeneas of the same two monsters, and Virgil gives Scylla the body of a girl that ends in dolphins' tails and wolves.",
+   "q": "Odysseus is told to sail past Scylla and lose six men; Aeneas is told to go the long way round. What does that say about each leader?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey9-aeneid3-cyclops",
+   "kind": "answer",
+   "a": {
+    "ref": "work:odyssey-murray/8",
+    "label": "Odyssey 9.375–394 (Murray)",
+    "p": "29-29",
+    "og": {
+     "group": "odyssey",
+     "part": "Book IX",
+     "l": "375-394",
+     "label": "Odyssey 9.375–394"
+    },
+    "first": [
+     "Then verily I thrust in the stake under the deep ashes until it should grow hot, and heartened all my comrades with cheering words, that I might see no man flinch…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/2",
+    "label": "Aeneid 3.616–638 (Dryden)",
+    "l": "811-840",
+    "og": {
+     "group": "aeneid",
+     "part": "Book III",
+     "l": "616-638",
+     "label": "Aeneid 3.616–638"
+    },
+    "first": [
+     "The cave, tho’ large, was dark; the dismal floor",
+     "Was pav’d with mangled limbs and putrid gore."
+    ]
+   },
+   "note": "Odysseus tells how he blinded the Cyclops. Virgil retells it from the other side: Achaemenides, a Greek left behind on the island, describes the giant's meals and his blinding to the Trojans, and begs his enemies to take him away.",
+   "q": "Virgil gives the story to a Greek whom Odysseus forgot. What does that do to Odysseus' glory?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid3-inferno13-bleeding-plant",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/2",
+    "label": "Aeneid 3.22–48 (Dryden)",
+    "l": "32-67",
+    "og": {
+     "group": "aeneid",
+     "part": "Book III",
+     "l": "22-48",
+     "label": "Aeneid 3.22–48"
+    },
+    "first": [
+     "Not far, a rising hillock stood in view;",
+     "Sharp myrtles on the sides, and cornels grew."
+    ]
+   },
+   "b": {
+    "ref": "work:divine-comedy-longfellow/12",
+    "label": "Inferno 13.31–51 (Longfellow)",
+    "l": "31-51",
+    "og": {
+     "group": "divine-comedy",
+     "part": "Inferno: Canto XIII",
+     "l": "31-51",
+     "label": "Inferno 13.31–51"
+    },
+    "first": [
+     "Then stretched I forth my hand a little forward,",
+     "And plucked a branchlet off from a great thorn;"
+    ]
+   },
+   "note": "Aeneas pulls at a myrtle and it bleeds and speaks: it is the murdered Polydorus. In the wood of the suicides Dante breaks a twig and the thorn-bush bleeds and speaks, and Virgil, his guide, says he would not have let him do it had Dante believed what he had read in Virgil's own verses.",
+   "q": "Dante's Virgil cites the Aeneid as evidence. What does it mean for a poem to be proof?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad11-aeneid4-deer",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/10",
+    "label": "Iliad 11.474–481 (Murray)",
+    "l": "474-481",
+    "og": {
+     "group": "iliad",
+     "part": "Book XI",
+     "l": "474-481",
+     "label": "Iliad 11.474–481"
+    },
+    "first": [
+     "Then found they Odysseus, dear to Zeus and round about the Trojans beset him, as tawny jackals in the mountains about a horned stag that hath been wounded, that a man…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/3",
+    "label": "Aeneid 4.68–73 (Dryden)",
+    "l": "93-100",
+    "og": {
+     "group": "aeneid",
+     "part": "Book IV",
+     "l": "68-73",
+     "label": "Aeneid 4.68–73"
+    },
+    "first": [
+     "Sick with desire, and seeking him she loves,",
+     "From street to street the raving Dido roves."
+    ]
+   },
+   "note": "Odysseus wounded among the Trojans is like a stag struck by a hunter's arrow, surrounded by jackals. Virgil turns the wounded deer into Dido in love, roaming the city with the arrow still in her side while the shepherd who shot it does not know.",
+   "q": "In Virgil the hunter does not know he has hit. Who is the shepherd?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid4-purgatorio30-flame",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/3",
+    "label": "Aeneid 4.23 (Dryden)",
+    "l": "29-31",
+    "og": {
+     "group": "aeneid",
+     "part": "Book IV",
+     "l": "23",
+     "label": "Aeneid 4.23"
+    },
+    "first": [
+     "And, to confess my frailty, to my shame,",
+     "Somewhat I find within, if not the same,"
+    ]
+   },
+   "b": {
+    "ref": "work:divine-comedy-longfellow/63",
+    "label": "Purgatorio 30.46–48 (Longfellow)",
+    "l": "46-48",
+    "og": {
+     "group": "divine-comedy",
+     "part": "Purgatorio: Canto XXX",
+     "l": "46-48",
+     "label": "Purgatorio 30.46–48"
+    },
+    "first": [
+     "To say unto Virgilius: “Not a drachm",
+     "Of blood remains in me, that does not tremble;"
+    ]
+   },
+   "note": "Dido confesses her love for Aeneas: 'I know the traces of the ancient flame' (agnosco veteris vestigia flammae). Dante, seeing Beatrice again, turns to tell Virgil the same words, 'I know the traces of the ancient flame', and finds that Virgil has gone.",
+   "q": "Dante quotes Virgil to Virgil at the moment Virgil leaves him. What does the quotation mean there?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid6-purgatorio30-lilies",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.883–886 (Dryden)",
+    "l": "1222-1226",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "883-886",
+     "label": "Aeneid 6.883–886"
+    },
+    "first": [
+     "Full canisters of fragrant lilies bring,",
+     "Mix’d with the purple roses of the spring;"
+    ]
+   },
+   "b": {
+    "ref": "work:divine-comedy-longfellow/63",
+    "label": "Purgatorio 30.19–21 (Longfellow)",
+    "l": "19-21",
+    "og": {
+     "group": "divine-comedy",
+     "part": "Purgatorio: Canto XXX",
+     "l": "19-21",
+     "label": "Purgatorio 30.19–21"
+    },
+    "first": [
+     "They all were saying, “Benedictus qui venis,”",
+     "And, scattering flowers above and round about,"
+    ]
+   },
+   "note": "Anchises ends his lament for the young Marcellus, 'give lilies with full hands'. Dante's angels scatter flowers before Beatrice with the same Latin words, 'Manibus o date lilia plenis', a funeral line turned to a welcome.",
+   "q": "A line of mourning becomes a line of greeting. What survives of its first meaning?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad4-aeneid4-fama",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/3",
+    "label": "Iliad 4.440–445 (Murray)",
+    "l": "440-445",
+    "og": {
+     "group": "iliad",
+     "part": "Book IV",
+     "l": "440-445",
+     "label": "Iliad 4.440–445"
+    },
+    "first": [
+     "These were urged on by Ares, and the Greeks by flashing-eyed Athene, and Terror, and Rout, and Discord that rageth incessantly, sister and comrade of man-slaying Ares…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/3",
+    "label": "Aeneid 4.173–177 (Dryden)",
+    "l": "251-258",
+    "og": {
+     "group": "aeneid",
+     "part": "Book IV",
+     "l": "173-177",
+     "label": "Aeneid 4.173–177"
+    },
+    "first": [
+     "The loud report thro’ Libyan cities goes.",
+     "Fame, the great ill, from small beginnings grows:"
+    ]
+   },
+   "note": "Homer's Strife is small at first, then plants her head in heaven while she walks the earth. Virgil gives the same growth to Rumour (Fama), who spreads the news of Dido and Aeneas: small with fear at first, she soon walks on the ground and hides her head in the clouds.",
+   "q": "Strife and Rumour grow the same way. What do they have in common?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid4-pl9-earth-felt",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/3",
+    "label": "Aeneid 4.166–170 (Dryden)",
+    "l": "241-246",
+    "og": {
+     "group": "aeneid",
+     "part": "Book IV",
+     "l": "166-170",
+     "label": "Aeneid 4.166–170"
+    },
+    "first": [
+     "Then first the trembling earth the signal gave,",
+     "And flashing fires enlighten all the cave;"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/8",
+    "label": "Paradise Lost 9.780–784",
+    "l": "780-784",
+    "first": [
+     "So saying, her rash hand in evil hour",
+     "Forth reaching to the Fruit, she pluck'd, she eat:"
+    ]
+   },
+   "note": "When Dido and Aeneas meet in the cave, Earth and Juno give the sign: lightning flashes and the nymphs cry out, and that day is 'the first cause of death'. When Eve eats the fruit, 'Earth felt the wound, and Nature from her seat, sighing through all her works, gave signs of woe'.",
+   "q": "Both passages make the natural world register a fault. Who is watching in each?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey5-aeneid4-mercury",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/4",
+    "label": "Odyssey 5.43–49 (Murray)",
+    "p": "5-5",
+    "og": {
+     "group": "odyssey",
+     "part": "Book V",
+     "l": "43-49",
+     "label": "Odyssey 5.43–49"
+    },
+    "first": [
+     "So he spoke, and the messenger, Argeiphontes, failed not to hearken. Straightway he bound beneath his feet his beautiful sandals, immortal, golden, which were wont to…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/3",
+    "label": "Aeneid 4.238–258 (Dryden)",
+    "l": "351-372",
+    "og": {
+     "group": "aeneid",
+     "part": "Book IV",
+     "l": "238-258",
+     "label": "Aeneid 4.238–258"
+    },
+    "first": [
+     "Hermes obeys; with golden pinions binds",
+     "His flying feet, and mounts the western winds:"
+    ]
+   },
+   "note": "Hermes binds on his golden sandals and takes his wand to carry Zeus' order to Calypso. Mercury does the same to carry Jupiter's order to Aeneas, and Virgil adds the giant figure of Atlas on the way.",
+   "q": "In Homer the message goes to the nymph who keeps the hero; in Virgil to the hero himself. What does that change?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid4-pl5-raphael",
+   "kind": "echo",
+   "a": {
+    "ref": "work:aeneid-dryden/3",
+    "label": "Aeneid 4.238–258 (Dryden)",
+    "l": "351-372",
+    "og": {
+     "group": "aeneid",
+     "part": "Book IV",
+     "l": "238-258",
+     "label": "Aeneid 4.238–258"
+    },
+    "first": [
+     "Hermes obeys; with golden pinions binds",
+     "His flying feet, and mounts the western winds:"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/4",
+    "label": "Paradise Lost 5.285–287",
+    "l": "285-287",
+    "first": [
+     "Skie-tinctur'd grain. Like Maia's son he stood,",
+     "And shook his Plumes, that Heav'nly fragrance filld"
+    ]
+   },
+   "note": "Raphael lands in Eden and shakes his plumes 'like Maia's son', that is, like Mercury. The messenger of Virgil's Jupiter becomes a comparison for the archangel sent to warn Adam.",
+   "q": "Mercury came to make a hero leave; Raphael comes to make Adam stay obedient. Is the comparison apt?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad16-aeneid4-rock",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/15",
+    "label": "Iliad 16.33–35 (Murray)",
+    "l": "33-35",
+    "og": {
+     "group": "iliad",
+     "part": "Book XVI",
+     "l": "33-35",
+     "label": "Iliad 16.33–35"
+    },
+    "first": [
+     "Wherein shall any other even yet to be born have profit of thee, if thou ward not off shameful ruin from the Argives? Pitiless one, thy father, meseems, was not the…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/3",
+    "label": "Aeneid 4.365–367 (Dryden)",
+    "l": "523-526",
+    "og": {
+     "group": "aeneid",
+     "part": "Book IV",
+     "l": "365-367",
+     "label": "Aeneid 4.365–367"
+    },
+    "first": [
+     "“False as thou art, and, more than false, forsworn!",
+     "Not sprung from noble blood, nor goddess-born,"
+    ]
+   },
+   "note": "Patroclus tells Achilles that the sea and the rocks bore him, so hard is his heart. Dido throws the same reproach at Aeneas: a goddess was not his mother, the Caucasus bore him and tigers nursed him.",
+   "q": "The accusation passes from a friend to a lover. Is it fairer in one mouth than in the other?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "argonautica3-aeneid4-night",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:argonautica-seaton/2",
+    "label": "Argonautica 3.744–769 (Seaton)",
+    "p": "68-68",
+    "og": {
+     "group": "argonautica",
+     "part": "Book III",
+     "l": "744-769",
+     "label": "Argonautica 3.744–769"
+    },
+    "first": [
+     "Then did night draw darkness over the earth; and on the sea sailors from their ships looked towards the Bear and the stars of Orion; and now the wayfarer and the warder…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/3",
+    "label": "Aeneid 4.522–532 (Dryden)",
+    "l": "758-773",
+    "og": {
+     "group": "aeneid",
+     "part": "Book IV",
+     "l": "522-532",
+     "label": "Aeneid 4.522–532"
+    },
+    "first": [
+     "“’Twas dead of night, when weary bodies close",
+     "Their eyes in balmy sleep and soft repose:"
+    ]
+   },
+   "note": "Apollonius describes the silence of night, the sailors, the dogs and the mothers asleep, while Medea alone lies awake for love of Jason. Virgil takes over the scene for Dido: all the world is at rest, but not the unhappy queen.",
+   "q": "Both poets set a woman's sleeplessness against a sleeping world. What does the contrast show?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad23-aeneid5-footrace",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/22",
+    "label": "Iliad 23.740–783 (Murray)",
+    "l": "740-783",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXIII",
+     "l": "740-783",
+     "label": "Iliad 23.740–783"
+    },
+    "first": [
+     "then Aias slipped as he ran—for Athene hampered him— where was strewn the filth from the slaying of the loud bellowing bulls that swift-footed Achilles had slain in…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/4",
+    "label": "Aeneid 5.315–339 (Dryden)",
+    "l": "427-439",
+    "og": {
+     "group": "aeneid",
+     "part": "Book V",
+     "l": "315-339",
+     "label": "Aeneid 5.315–339"
+    },
+    "first": [
+     "When eager Nisus, hapless in his haste,",
+     "Slipp’d first, and, slipping, fell upon the plain,"
+    ]
+   },
+   "note": "In the funeral games for Patroclus, Ajax son of Oileus slips in the dung of the sacrificed oxen and loses the race. In Virgil's games Nisus slips in the blood of the sacrifice, then trips the next runner so that his friend Euryalus can win.",
+   "q": "Homer's fall is comic; what is Virgil's? Think of how Nisus and Euryalus end in Book 9.",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "beowulf-mere-aeneid6-avernus",
+   "kind": "echo",
+   "a": {
+    "ref": "work:beowulf/20",
+    "label": "Beowulf, Fitt XX: Grendel's mere (Gummere)",
+    "l": "38-56",
+    "first": [
+     "by wolf-cliffs haunt they and windy headlands,",
+     "fenways fearful, where flows the stream"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.237–242 (Dryden)",
+    "l": "338-347",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "237-242",
+     "label": "Aeneid 6.237–242"
+    },
+    "first": [
+     "Deep was the cave; and, downward as it went",
+     "From the wide mouth, a rocky rough descent;"
+    ]
+   },
+   "note": "Hrothgar describes the mere where Grendel's mother lives: wolf-haunted cliffs, a stream plunging underground, frost-bound trees, fire on the water, a place a hunted stag would rather die than enter. Virgil's entrance to the underworld at Avernus is a deep cave by a black lake that no bird can fly over. Whether or not the Beowulf poet knew Virgil, both places mark the edge of the world of the dead.",
+   "q": "What details make each place feel forbidden?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad18-aeneid8-shield",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/17",
+    "label": "Iliad 18.478–489 (Murray)",
+    "l": "478-489",
+    "og": {
+     "group": "iliad",
+     "part": "Book XVIII",
+     "l": "478-489",
+     "label": "Iliad 18.478–489"
+    },
+    "first": [
+     "First fashioned he a shield, great and sturdy, adorning it cunningly in every part, and round about it set a bright rim, threefold and glittering, and therefrom made…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/7",
+    "label": "Aeneid 8.626–634 (Dryden)",
+    "l": "829-840",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VIII",
+     "l": "626-634",
+     "label": "Aeneid 8.626–634"
+    },
+    "first": [
+     "But most admires the shield’s mysterious mould,",
+     "And Roman triumphs rising on the gold:"
+    ]
+   },
+   "note": "Hephaestus makes Achilles a shield showing the whole world: earth, sky and sea, two cities, farming, dancing. Vulcan makes Aeneas a shield showing the future history of Rome, from the wolf and the twins to Augustus at Actium. Homer's shield is a picture of life; Virgil's is a prophecy its bearer cannot read.",
+   "q": "Aeneas lifts 'the fame and fortunes of his descendants' without understanding them. What does that tell us about him?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad18-aeneid8-mother-asks",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/17",
+    "label": "Iliad 18.428–461 (Murray)",
+    "l": "428-461",
+    "og": {
+     "group": "iliad",
+     "part": "Book XVIII",
+     "l": "428-461",
+     "label": "Iliad 18.428–461"
+    },
+    "first": [
+     "And Thetis made answer to him, shedding tears the while: Hephaestus, is there now any goddess, of all those that are in Olympus, that hath endured so many grievous woes…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/7",
+    "label": "Aeneid 8.370–386 (Dryden)",
+    "l": "486-511",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VIII",
+     "l": "370-386",
+     "label": "Aeneid 8.370–386"
+    },
+    "first": [
+     "When love’s fair goddess, anxious for her son,",
+     "(New tumults rising, and new wars begun,)"
+    ]
+   },
+   "note": "Thetis goes to Hephaestus and begs armour for her doomed son. Venus asks Vulcan, her husband, for arms for Aeneas, citing Thetis' own request as a precedent, and Virgil makes the request a seduction.",
+   "q": "Thetis begs as a suppliant; Venus persuades as a wife. How does that change the gift?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad12-aeneid8-spinner",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/11",
+    "label": "Iliad 12.433–435 (Murray)",
+    "l": "433-435",
+    "og": {
+     "group": "iliad",
+     "part": "Book XII",
+     "l": "433-435",
+     "label": "Iliad 12.433–435"
+    },
+    "first": [
+     "as a careful woman that laboureth with her hands at spinning, holdeth the balance and raiseth the weight and the wool in either scale, making them equal, that she may…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/7",
+    "label": "Aeneid 8.407–415 (Dryden)",
+    "l": "539-550",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VIII",
+     "l": "407-415",
+     "label": "Aeneid 8.407–415"
+    },
+    "first": [
+     "Now when the night her middle race had rode,",
+     "And his first slumber had refresh’d the god—"
+    ]
+   },
+   "note": "The battle at the wall hangs even, like the scales of an honest spinning-woman weighing wool to earn a meagre wage for her children. Virgil takes the poor working woman out of the battle and into a simile for Vulcan rising at night: he gets up as early as a housewife who spins by lamplight to keep her home honest.",
+   "q": "Homer's spinner measures a battle; Virgil's measures a god's working day. Which is more surprising?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad22-aeneid8-star",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/21",
+    "label": "Iliad 22.317–320 (Murray)",
+    "l": "317-320",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXII",
+     "l": "317-320",
+     "label": "Iliad 22.317–320"
+    },
+    "first": [
+     "As a star goeth forth amid stars in the darkness of night, the star of evening, that is set in heaven as the fairest of all; even so went forth a gleam from the keen…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/7",
+    "label": "Aeneid 8.589–591 (Dryden)",
+    "l": "776-781",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VIII",
+     "l": "589-591",
+     "label": "Aeneid 8.589–591"
+    },
+    "first": [
+     "Young Pallas shone conspicuous o’er the rest;",
+     "Gilded his arms, embroider’d was his vest."
+    ]
+   },
+   "note": "Achilles' spear-point gleams like the evening star as he aims at Hector's throat. Young Pallas rides out like the morning star, Venus' favourite, rising from the sea. Both stars shine on young men about to die.",
+   "q": "One is the evening star, the other the morning star. Does the change matter?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad1-aeneid9-nod",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/0",
+    "label": "Iliad 1.528–530 (Murray)",
+    "l": "528-530",
+    "og": {
+     "group": "iliad",
+     "part": "Book I",
+     "l": "528-530",
+     "label": "Iliad 1.528–530"
+    },
+    "first": [
+     "The son of Cronos spoke, and bowed his dark brow in assent, and the ambrosial locks waved from the king's immortal head; and he made great Olympus quake."
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/8",
+    "label": "Aeneid 9.104–106 (Dryden)",
+    "l": "120-124",
+    "og": {
+     "group": "aeneid",
+     "part": "Book IX",
+     "l": "104-106",
+     "label": "Aeneid 9.104–106"
+    },
+    "first": [
+     "To seal his sacred vow, by Styx he swore,",
+     "The lake of liquid pitch, the dreary shore,"
+    ]
+   },
+   "note": "Zeus nods to Thetis, and great Olympus shakes. Jupiter swears by the Styx to Cybele and nods, and 'with his nod the whole of Olympus trembled'. Virgil repeats the gesture in the same words.",
+   "q": "Why might the most famous gesture of Homer's Zeus be repeated without change?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad8-aeneid9-poppy",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/7",
+    "label": "Iliad 8.306–308 (Murray)",
+    "l": "300-304",
+    "og": {
+     "group": "iliad",
+     "part": "Book VIII",
+     "l": "306-308",
+     "label": "Iliad 8.306–308"
+    },
+    "first": [
+     "And he bowed his head to one side like a poppy that in a garden is laden with its fruit and the rains of spring; so bowed he to one side his head, laden with his helmet."
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/8",
+    "label": "Aeneid 9.433–437 (Dryden)",
+    "l": "579-584",
+    "og": {
+     "group": "aeneid",
+     "part": "Book IX",
+     "l": "433-437",
+     "label": "Aeneid 9.433–437"
+    },
+    "first": [
+     "Down fell the beauteous youth: the yawning wound",
+     "Gush’d out a purple stream, and stain’d the ground."
+    ]
+   },
+   "note": "Gorgythion's head droops to one side like a poppy weighed down by spring rain. Euryalus dies the same way, his neck falling on his shoulder like a flower cut by the plough or a poppy heavy with rain.",
+   "q": "Virgil adds a flower cut by the plough. Why two images where Homer had one?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad22-aeneid9-mother-lament",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/21",
+    "label": "Iliad 22.477–514 (Murray)",
+    "l": "477-514",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXII",
+     "l": "477-514",
+     "label": "Iliad 22.477–514"
+    },
+    "first": [
+     "But when she revived, and her spirit was returned into her breast, then she lifted up her voice in wailing, and spake among the women of Troy: Ah Hector, woe is me! to…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/8",
+    "label": "Aeneid 9.473–502 (Dryden)",
+    "l": "630-660",
+    "og": {
+     "group": "aeneid",
+     "part": "Book IX",
+     "l": "473-502",
+     "label": "Aeneid 9.473–502"
+    },
+    "first": [
+     "Soon hasty fame thro’ the sad city bears",
+     "The mournful message to the mother’s ears."
+    ]
+   },
+   "note": "Andromache hears the wailing, runs to the wall, and laments Hector, thinking of her orphaned son and the clothes she had woven for her husband. Euryalus' mother hears the news at her loom, runs to the wall and laments that she cannot wrap her son in the robe she made him.",
+   "q": "Both women think of cloth woven for the dead. Why that detail?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad22-aeneid10-sirius",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/21",
+    "label": "Iliad 22.25–32 (Murray)",
+    "l": "25-32",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXII",
+     "l": "25-32",
+     "label": "Iliad 22.25–32"
+    },
+    "first": [
+     "Him the old man Priam was first to behold with his eyes, as he sped all-gleaming over the plain, like to the star that cometh forth at harvest-time, and brightly do his…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/9",
+    "label": "Aeneid 10.270–275 (Dryden)",
+    "l": "376-383",
+    "og": {
+     "group": "aeneid",
+     "part": "Book X",
+     "l": "270-275",
+     "label": "Aeneid 10.270–275"
+    },
+    "first": [
+     "The Latians saw from far, with dazzled eyes,",
+     "The radiant crest that seem’d in flames to rise,"
+    ]
+   },
+   "note": "Priam sees Achilles coming like the dog-star, the brightest of stars and an evil sign that brings fever. Virgil gives the same baleful light to Aeneas arriving by sea, his helmet flaming like a blood-red comet or Sirius.",
+   "q": "Homer's Sirius is seen by the father of the victim; Virgil's by an enemy army. Who is the threat now?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid10-pl2-comet",
+   "kind": "echo",
+   "a": {
+    "ref": "work:aeneid-dryden/9",
+    "label": "Aeneid 10.270–275 (Dryden)",
+    "l": "376-383",
+    "og": {
+     "group": "aeneid",
+     "part": "Book X",
+     "l": "270-275",
+     "label": "Aeneid 10.270–275"
+    },
+    "first": [
+     "The Latians saw from far, with dazzled eyes,",
+     "The radiant crest that seem’d in flames to rise,"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/1",
+    "label": "Paradise Lost 2.706–711",
+    "l": "706-711",
+    "first": [
+     "So speaking and so threatning, grew ten fold",
+     "More dreadful and deform: on th' other side"
+    ]
+   },
+   "note": "Satan facing Death at Hell's gate burns 'like a comet' across the sky of Ophiuchus, shaking pestilence and war from his hair. Virgil's comet and Sirius over Aeneas lie behind the image.",
+   "q": "Virgil's comet marks a hero, Milton's an adversary. Is the image as menacing in both?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad16-aeneid10-sarpedon",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/15",
+    "label": "Iliad 16.431–461 (Murray)",
+    "l": "431-461",
+    "og": {
+     "group": "iliad",
+     "part": "Book XVI",
+     "l": "431-461",
+     "label": "Iliad 16.431–461"
+    },
+    "first": [
+     "And the son of crooked-counselling Cronos took pity when he saw them, and spake to Hera, his sister and his wife: Ah, woe is me, for that it is fated that Sarpedon…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/9",
+    "label": "Aeneid 10.464–473 (Dryden)",
+    "l": "648-666",
+    "og": {
+     "group": "aeneid",
+     "part": "Book X",
+     "l": "464-473",
+     "label": "Aeneid 10.464–473"
+    },
+    "first": [
+     "And thus to Heav’n and Hercules address’d:",
+     "“Alcides, once on earth Evander’s guest,"
+    ]
+   },
+   "note": "Zeus weeps tears of blood for his son Sarpedon, but lets him die. In Virgil, Hercules weeps for Pallas, and Jupiter comforts him by recalling Sarpedon: 'each has his day', but fame is the work of virtue.",
+   "q": "Jupiter cites Homer's scene as a precedent. What consolation does it give?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad17-aeneid10-blind",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/16",
+    "label": "Iliad 17.201–208 (Murray)",
+    "l": "201-208",
+    "og": {
+     "group": "iliad",
+     "part": "Book XVII",
+     "l": "201-208",
+     "label": "Iliad 17.201–208"
+    },
+    "first": [
+     "but thou art putting upon thee the immortal armour of a princely man before whom others besides thee are wont to quail. His comrade, kindly and valiant, hast thou slain…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/9",
+    "label": "Aeneid 10.501–505 (Dryden)",
+    "l": "696-703",
+    "og": {
+     "group": "aeneid",
+     "part": "Book X",
+     "l": "501-505",
+     "label": "Aeneid 10.501–505"
+    },
+    "first": [
+     "In an ill hour insulting Turnus tore",
+     "Those golden spoils, and in a worse he wore."
+    ]
+   },
+   "note": "Zeus watches Hector put on Achilles' armour and pities him: he does not know death is near. Virgil interrupts his story when Turnus takes Pallas' belt: 'the mind of men, ignorant of fate', will soon wish that prize away.",
+   "q": "Both poets speak over the hero's head when he takes a dead man's arms. Why that moment?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad21-aeneid10-captives",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/20",
+    "label": "Iliad 21.26–32 (Murray)",
+    "l": "26-32",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXI",
+     "l": "26-32",
+     "label": "Iliad 21.26–32"
+    },
+    "first": [
+     "These led he forth dazed like fawns, and bound their hands behind them with shapely thongs, which they themselves wore about their pliant tunics, and gave them to his…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/9",
+    "label": "Aeneid 10.517–520 (Dryden)",
+    "l": "721-724",
+    "og": {
+     "group": "aeneid",
+     "part": "Book X",
+     "l": "517-520",
+     "label": "Aeneid 10.517–520"
+    },
+    "first": [
+     "Four sons of Sulmo, four whom Ufens bred,",
+     "He took in fight, and living victims led,"
+    ]
+   },
+   "note": "Achilles takes twelve Trojan youths alive from the river to kill at Patroclus' pyre. Aeneas, in grief for Pallas, takes eight young men alive for the same purpose.",
+   "q": "Readers who see Aeneas as gentle find this hard. Should they?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad6-aeneid10-suppliant",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/5",
+    "label": "Iliad 6.45–65 (Murray)",
+    "l": "45-65",
+    "og": {
+     "group": "iliad",
+     "part": "Book VI",
+     "l": "45-65",
+     "label": "Iliad 6.45–65"
+    },
+    "first": [
+     "Then Adrastus clasped him by the knees and besought him: Take me alive, thou son of Atreus, and accept a worthy ransom; treasures full many lie stored in the palace of…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/9",
+    "label": "Aeneid 10.521–536 (Dryden)",
+    "l": "725-742",
+    "og": {
+     "group": "aeneid",
+     "part": "Book X",
+     "l": "521-536",
+     "label": "Aeneid 10.521–536"
+    },
+    "first": [
+     "At Magus next he threw: he stoop’d below",
+     "The flying spear, and shunn’d the promis’d blow;"
+    ]
+   },
+   "note": "Adrastus clasps Menelaus' knees and offers ransom; Agamemnon talks his brother out of mercy and kills the man himself. Magus clasps Aeneas' knees and offers silver and gold; Aeneas refuses because Turnus killed Pallas, and kills him.",
+   "q": "In Homer someone else hardens the victor's heart. In Virgil who does?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad1-aeneid10-aegaeon",
+   "kind": "contrast",
+   "a": {
+    "ref": "work:iliad-murray/0",
+    "label": "Iliad 1.401–404 (Murray)",
+    "l": "401-404",
+    "og": {
+     "group": "iliad",
+     "part": "Book I",
+     "l": "401-404",
+     "label": "Iliad 1.401–404"
+    },
+    "first": [
+     "But you came, goddess, and freed him from his bonds, when you had quickly called to high Olympus him of the hundred hands, whom the gods call Briareus, but all men…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/9",
+    "label": "Aeneid 10.565–570 (Dryden)",
+    "l": "791-798",
+    "og": {
+     "group": "aeneid",
+     "part": "Book X",
+     "l": "565-570",
+     "label": "Aeneid 10.565–570"
+    },
+    "first": [
+     "And, as Aegaeon, when with heav’n he strove,",
+     "Stood opposite in arms to mighty Jove;"
+    ]
+   },
+   "note": "In Homer the hundred-handed Briareus, called Aegaeon, protects Zeus against a revolt. Virgil compares Aeneas in his fury to Aegaeon fighting against Jupiter with fifty mouths and fifty shields.",
+   "q": "Virgil compares his pious hero to a monster that rebels against the king of the gods. Why?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad5-aeneid10-phantom",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/4",
+    "label": "Iliad 5.449–453 (Murray)",
+    "l": "449-453",
+    "og": {
+     "group": "iliad",
+     "part": "Book V",
+     "l": "449-453",
+     "label": "Iliad 5.449–453"
+    },
+    "first": [
+     "but Apollo of the silver bow fashioned a wraith in the likeness of Aeneas' self and in armour like to his; and over the wraith the Trojans and goodly Achaeans smote the…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/9",
+    "label": "Aeneid 10.636–642 (Dryden)",
+    "l": "900-906",
+    "og": {
+     "group": "aeneid",
+     "part": "Book X",
+     "l": "636-642",
+     "label": "Aeneid 10.636–642"
+    },
+    "first": [
+     "Of air condens’d a spectre soon she made;",
+     "And, what Aeneas was, such seem’d the shade."
+    ]
+   },
+   "note": "Apollo makes a phantom of Aeneas so that the Greeks and Trojans fight over it. Juno makes another phantom of Aeneas to lure Turnus away from the battle.",
+   "q": "The same trick saves Aeneas in Homer and Turnus in Virgil. What does that say about the two poems' sympathies?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad6-aeneid11-stallion",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/5",
+    "label": "Iliad 6.506–511 (Murray)",
+    "l": "506-511",
+    "og": {
+     "group": "iliad",
+     "part": "Book VI",
+     "l": "506-511",
+     "label": "Iliad 6.506–511"
+    },
+    "first": [
+     "Even as when a stalled horse that has fed his fill at the manger breaketh his halter and runneth stamping over the plain—being wont to bathe him in the fair-flowing…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/10",
+    "label": "Aeneid 11.492–497 (Dryden)",
+    "l": "743-752",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XI",
+     "l": "492-497",
+     "label": "Aeneid 11.492–497"
+    },
+    "first": [
+     "Freed from his keepers, thus, with broken reins,",
+     "The wanton courser prances o’er the plains,"
+    ]
+   },
+   "note": "Paris, rearmed, runs from the city like a stabled horse that breaks its halter and gallops to the river, proud of its beauty. Virgil gives the simile to Turnus going out to battle.",
+   "q": "Homer uses the simile for Paris. What does that suggest about Turnus?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad16-aeneid11-soul",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/15",
+    "label": "Iliad 16.855–857 (Murray)",
+    "l": "855-857",
+    "og": {
+     "group": "iliad",
+     "part": "Book XVI",
+     "l": "855-857",
+     "label": "Iliad 16.855–857"
+    },
+    "first": [
+     "Even as he thus spake the end of death enfolded him; and his soul fleeting from his limbs was gone to Hades, bewailing her fate, leaving manliness and youth. And to him…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/10",
+    "label": "Aeneid 11.827–831 (Dryden)",
+    "l": "1203-1210",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XI",
+     "l": "827-831",
+     "label": "Aeneid 11.827–831"
+    },
+    "first": [
+     "She said, and, sliding, sunk upon the plain:",
+     "Dying, her open’d hand forsakes the rein;"
+    ]
+   },
+   "note": "When Patroclus dies 'his soul flew from his limbs to Hades, lamenting its lot, leaving manhood and youth'. Virgil ends Camilla's life with a line he will use again for Turnus: 'and with a groan her life fled indignant to the shades'.",
+   "q": "Homer's soul laments; Virgil's is indignant. What is the difference?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad4-aeneid12-blush",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/3",
+    "label": "Iliad 4.141–147 (Murray)",
+    "l": "141-147",
+    "og": {
+     "group": "iliad",
+     "part": "Book IV",
+     "l": "141-147",
+     "label": "Iliad 4.141–147"
+    },
+    "first": [
+     "As when a woman staineth ivory with scarlet, some woman of Maeonia or Caria, to make a cheek-piece for horses, and it lieth in a treasure-chamber, though many horsemen…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/11",
+    "label": "Aeneid 12.64–69 (Dryden)",
+    "l": "100-107",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XII",
+     "l": "64-69",
+     "label": "Aeneid 12.64–69"
+    },
+    "first": [
+     "At this, a flood of tears Lavinia shed;",
+     "A crimson blush her beauteous face o’erspread,"
+    ]
+   },
+   "note": "Menelaus' blood runs down his thighs like purple dye on ivory that a woman of Maeonia stains for a horse's cheek-piece. Virgil uses the same image, ivory stained with crimson, for Lavinia's blush.",
+   "q": "A wound becomes a blush. What does the borrowed image bring with it?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad1-aeneid12-sceptre",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/0",
+    "label": "Iliad 1.234–239 (Murray)",
+    "l": "234-239",
+    "og": {
+     "group": "iliad",
+     "part": "Book I",
+     "l": "234-239",
+     "label": "Iliad 1.234–239"
+    },
+    "first": [
+     "by this staff, that shall never more put forth leaves or shoots since first it left its stump among the mountains, nor shall it again grow green, for the bronze has…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/11",
+    "label": "Aeneid 12.206–211 (Dryden)",
+    "l": "310-315",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XII",
+     "l": "206-211",
+     "label": "Aeneid 12.206–211"
+    },
+    "first": [
+     "Ev’n as this royal scepter” (for he bore",
+     "A scepter in his hand) “shall never more"
+    ]
+   },
+   "note": "Achilles swears by the sceptre, which will never again put out leaves now that it has been cut from the tree. Latinus swears by his sceptre in the same terms at the treaty with Aeneas.",
+   "q": "Both oaths are broken soon after. What does the dead wood say about promises?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad4-aeneid12-arrow",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/3",
+    "label": "Iliad 4.104–126 (Murray)",
+    "l": "104-126",
+    "og": {
+     "group": "iliad",
+     "part": "Book IV",
+     "l": "104-126",
+     "label": "Iliad 4.104–126"
+    },
+    "first": [
+     "Straightway he uncovered his polished bow of the horn of a wild ibex, that himself on a time had smitten beneath the breast as it came forth from a rock, he lying in…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/11",
+    "label": "Aeneid 12.318–323 (Dryden)",
+    "l": "481-484",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XII",
+     "l": "318-323",
+     "label": "Aeneid 12.318–323"
+    },
+    "first": [
+     "Thus while he spoke, unmindful of defence,",
+     "A winged arrow struck the pious prince."
+    ]
+   },
+   "note": "Pandarus breaks the truce by shooting Menelaus. In Virgil an arrow from an unknown hand wounds Aeneas and breaks his truce with the Latins; no one ever claims it.",
+   "q": "Why might Virgil leave the archer nameless?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad6-aeneid12-disce-puer",
+   "kind": "answer",
+   "a": {
+    "ref": "work:iliad-murray/5",
+    "label": "Iliad 6.476–481 (Murray)",
+    "l": "476-481",
+    "og": {
+     "group": "iliad",
+     "part": "Book VI",
+     "l": "476-481",
+     "label": "Iliad 6.476–481"
+    },
+    "first": [
+     "Zeus and ye other gods, grant that this my child may likewise prove, even as I, pre-eminent amid the Trojans, and as valiant in might, and that he rule mightily over…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/11",
+    "label": "Aeneid 12.435–440 (Dryden)",
+    "l": "642-652",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XII",
+     "l": "435-440",
+     "label": "Aeneid 12.435–440"
+    },
+    "first": [
+     "Then with a close embrace he strain’d his son,",
+     "And, kissing thro’ his helmet, thus begun:"
+    ]
+   },
+   "note": "Hector prays that his son may one day be called 'far better than his father'. Aeneas tells Ascanius to learn courage and toil from him, but good fortune from others, and to remember his father and his uncle Hector.",
+   "q": "Hector hopes his son will surpass him; Aeneas hopes his son will be luckier. What does each prayer reveal?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad13-aeneid12-mountain",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/12",
+    "label": "Iliad 13.754–755 (Murray)",
+    "l": "754-755",
+    "og": {
+     "group": "iliad",
+     "part": "Book XIII",
+     "l": "754-755",
+     "label": "Iliad 13.754–755"
+    },
+    "first": [
+     "So spake he, and set forth, in semblance like a snowy mountain, and with loud shouting sped he through the Trojans and allies. And they hasted one and all toward the…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/11",
+    "label": "Aeneid 12.697–703 (Dryden)",
+    "l": "1016-1023",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XII",
+     "l": "697-703",
+     "label": "Aeneid 12.697–703"
+    },
+    "first": [
+     "Soon leaves the taken works and mounted walls,",
+     "Greedy of war where greater glory calls."
+    ]
+   },
+   "note": "Hector charges like a snowy mountain. Virgil makes Aeneas as great as Athos, Eryx or Father Apennine, white with snow, as he comes to meet Turnus.",
+   "q": "Why compare a moving warrior to a mountain, the least moving thing there is?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad22-aeneid12-scales",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/21",
+    "label": "Iliad 22.209–213 (Murray)",
+    "l": "209-213",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXII",
+     "l": "209-213",
+     "label": "Iliad 22.209–213"
+    },
+    "first": [
+     "then he grasped the balance by the midst and raised it; and down sank the day of doom of Hector, and departed unto Hades; and Phoebus Apollo left him. But unto Peleus'…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/11",
+    "label": "Aeneid 12.725–727 (Dryden)",
+    "l": "1054-1057",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XII",
+     "l": "725-727",
+     "label": "Aeneid 12.725–727"
+    },
+    "first": [
+     "Jove sets the beam; in either scale he lays",
+     "The champions’ fate, and each exactly weighs."
+    ]
+   },
+   "note": "Zeus lifts his golden scales with the fates of Achilles and Hector, and Hector's sinks. Jupiter holds up the scales for Aeneas and Turnus, though Virgil does not say which side falls (Dryden's last line here is his own addition).",
+   "q": "Homer shows the result; Virgil does not. Why hold it back?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "aeneid12-pl4-scales",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:aeneid-dryden/11",
+    "label": "Aeneid 12.725–727 (Dryden)",
+    "l": "1054-1057",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XII",
+     "l": "725-727",
+     "label": "Aeneid 12.725–727"
+    },
+    "first": [
+     "Jove sets the beam; in either scale he lays",
+     "The champions’ fate, and each exactly weighs."
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/3",
+    "label": "Paradise Lost 4.996–1004",
+    "l": "996-1004",
+    "first": [
+     "Th' Eternal to prevent such horrid fray",
+     "Hung forth in Heav'n his golden Scales, yet seen"
+    ]
+   },
+   "note": "When Satan and Gabriel are about to fight, God hangs his golden scales in the sky (the constellation Libra) and weighs parting against fighting; the scale of fighting flies up and 'kicks the beam', and Gabriel tells Satan it shows how light his strength is. Milton reverses Homer: the rising scale is the loser.",
+   "q": "In Homer and Virgil the sinking scale means death; in Milton the rising one means defeat. Why the change?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad21-aeneid12-stone",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/20",
+    "label": "Iliad 21.403–406 (Murray)",
+    "l": "403-406",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXI",
+     "l": "403-406",
+     "label": "Iliad 21.403–406"
+    },
+    "first": [
+     "But she gave ground, and seized with her stout hand a stone that lay upon the plain, black and jagged and great, that men of former days had set to be the boundary mark…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/11",
+    "label": "Aeneid 12.896–902 (Dryden)",
+    "l": "1300-1311",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XII",
+     "l": "896-902",
+     "label": "Aeneid 12.896–902"
+    },
+    "first": [
+     "An antique stone he saw, the common bound",
+     "Of neighb’ring fields, and barrier of the ground;"
+    ]
+   },
+   "note": "Athena throws a huge boundary stone at Ares. Turnus lifts a boundary stone that twelve men of today could hardly raise, but cannot throw it home.",
+   "q": "The stone that a goddess throws becomes too heavy for Turnus. What does that show?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad22-aeneid12-dream",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/21",
+    "label": "Iliad 22.199–201 (Murray)",
+    "l": "199-201",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXII",
+     "l": "199-201",
+     "label": "Iliad 22.199–201"
+    },
+    "first": [
+     "And as in a dream a man availeth not to pursue one that fleeth before him— the one availeth not to flee, nor the other to pursue—even so Achilles availed not to overtake…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/11",
+    "label": "Aeneid 12.908–914 (Dryden)",
+    "l": "1312-1321",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XII",
+     "l": "908-914",
+     "label": "Aeneid 12.908–914"
+    },
+    "first": [
+     "And as, when heavy sleep has clos’d the sight,",
+     "The sickly fancy labours in the night;"
+    ]
+   },
+   "note": "Achilles cannot catch Hector, nor Hector escape, 'as in a dream one cannot pursue another who flees'. Virgil gives Turnus the dreamer's helplessness: in sleep we seem to want to run and cannot, and so it is with him.",
+   "q": "Homer's dream holds both men; Virgil's only Turnus. What has changed?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad24-aeneid12-supplication",
+   "kind": "answer",
+   "a": {
+    "ref": "work:iliad-murray/23",
+    "label": "Iliad 24.477–506 (Murray)",
+    "l": "477-506",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXIV",
+     "l": "477-506",
+     "label": "Iliad 24.477–506"
+    },
+    "first": [
+     "Unseen of these great Priam entered in, and coming close to Achilles, clasped in his hands his knees, and kissed his hands, the terrible, man-slaying hands that had…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/11",
+    "label": "Aeneid 12.930–938 (Dryden)",
+    "l": "1346-1359",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XII",
+     "l": "930-938",
+     "label": "Aeneid 12.930–938"
+    },
+    "first": [
+     "Now low on earth the lofty chief is laid,",
+     "With eyes cast upward, and with arms display’d,"
+    ]
+   },
+   "note": "Priam kisses Achilles' hands and asks him to remember his own father; Achilles weeps and gives back Hector's body. Turnus asks Aeneas to pity his father Daunus 'as you had Anchises'. Aeneas hesitates, then sees Pallas' belt and kills him.",
+   "q": "Turnus uses Priam's argument. Why does it work for Priam and not for him?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad22-aeneid12-death",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-murray/21",
+    "label": "Iliad 22.361–363 (Murray)",
+    "l": "361-363",
+    "og": {
+     "group": "iliad",
+     "part": "Book XXII",
+     "l": "361-363",
+     "label": "Iliad 22.361–363"
+    },
+    "first": [
+     "Even as he thus spake the end of death enfolded him and his soul fleeting from his limbs was gone to Hades, bewailing her fate, leaving manliness and youth. And to him…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/11",
+    "label": "Aeneid 12.950–952 (Dryden)",
+    "l": "1370-1377",
+    "og": {
+     "group": "aeneid",
+     "part": "Book XII",
+     "l": "950-952",
+     "label": "Aeneid 12.950–952"
+    },
+    "first": [
+     "“Traitor, dost thou, dost thou to grace pretend,",
+     "Clad, as thou art, in trophies of my friend?"
+    ]
+   },
+   "note": "Hector dies with the same lines Homer gave Patroclus: his soul goes down to Hades lamenting its lot. The Aeneid ends on Turnus' death, with the line used for Camilla: 'his life fled with a groan, indignant, to the shades'.",
+   "q": "The Aeneid stops at this line, with no funeral. What is left unresolved?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad1-pl1-mulciber",
+   "kind": "source",
+   "a": {
+    "ref": "work:iliad-murray/0",
+    "label": "Iliad 1.590–594 (Murray)",
+    "l": "580-589",
+    "og": {
+     "group": "iliad",
+     "part": "Book I",
+     "l": "590-594",
+     "label": "Iliad 1.590–594"
+    },
+    "first": [
+     "he caught me by the foot and hurled me from the heavenly threshold; the whole day long I was carried headlong, and at sunset I fell in Lemnos, and but little life was in…"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/0",
+    "label": "Paradise Lost 1.740–746",
+    "l": "740-746",
+    "first": [
+     "Men call'd him Mulciber; and how he fell",
+     "From Heav'n, they fabl'd, thrown by angry Jove"
+    ]
+   },
+   "note": "Hephaestus recalls how Zeus threw him from heaven: all day he fell and landed on Lemnos at sunset. Milton retells the fall of Mulciber, the architect of Pandaemonium, 'from morn to noon he fell, from noon to dewy eve', and then says the story is false.",
+   "q": "Milton tells the story beautifully and then calls it an error. Why tell it at all?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "iliad19-pl1-shield",
+   "kind": "echo",
+   "a": {
+    "ref": "work:iliad-murray/18",
+    "label": "Iliad 19.373–380 (Murray)",
+    "l": "373-380",
+    "og": {
+     "group": "iliad",
+     "part": "Book XIX",
+     "l": "373-380",
+     "label": "Iliad 19.373–380"
+    },
+    "first": [
+     "And about his shoulders he cast the silver-studded sword of bronze, and thereafter grasped the shield great and sturdy, wherefrom went forth afar a gleam as of the moon.…"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/0",
+    "label": "Paradise Lost 1.284–291",
+    "l": "284-291",
+    "first": [
+     "Was moving toward the shore; his ponderous shield",
+     "Ethereal temper, massy, large and round,"
+    ]
+   },
+   "note": "Achilles' new shield shines like the moon, or like a fire seen by sailors far out at sea. Satan's shield hangs on his shoulders 'like the moon, whose orb through optic glass the Tuscan artist views': Milton keeps Homer's moon and adds Galileo's telescope.",
+   "q": "What does the telescope add to Homer's comparison?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "met3-pl4-narcissus",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:metamorphoses-golding/2",
+    "label": "Metamorphoses 3.407–436 (Golding)",
+    "l": "509-532",
+    "og": {
+     "group": "metamorphoses",
+     "part": "Book III",
+     "l": "407-436",
+     "label": "Metamorphoses 3.407–436"
+    },
+    "first": [
+     "There was a spring withouten mudde as silver cleare and still,",
+     "Which neyther sheepeheirds, nor the Goates that fed upon the hill,"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/3",
+    "label": "Paradise Lost 4.449–469",
+    "l": "449-469",
+    "first": [
+     "That day I oft remember, when from sleep",
+     "I first awak't, and found my self repos'd"
+    ]
+   },
+   "note": "Narcissus bends over a clear pool and falls in love with the image he sees there. Eve, newly made, looks into a smooth lake and is drawn to a shape that returns her looks, until a voice tells her it is herself and leads her to Adam.",
+   "q": "Narcissus never learns; Eve is told. What does the voice change?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "met5-pl4-proserpina",
+   "kind": "source",
+   "a": {
+    "ref": "work:metamorphoses-golding/4",
+    "label": "Metamorphoses 5.385–395 (Golding)",
+    "l": "485-500",
+    "og": {
+     "group": "metamorphoses",
+     "part": "Book V",
+     "l": "385-395",
+     "label": "Metamorphoses 5.385–395"
+    },
+    "first": [
+     "Neare Enna walles there standes a Lake: Pergusa is the name.",
+     "Cayster heareth not mo songs of Swannes than doth the same."
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/3",
+    "label": "Paradise Lost 4.268–272",
+    "l": "268-272",
+    "first": [
+     "Led on th' Eternal Spring. Not that faire field",
+     "Of Enna, where Proserpin gathring flours"
+    ]
+   },
+   "note": "Ovid sets the rape of Proserpina in a meadow near Enna in Sicily, in perpetual spring, where she gathers violets and lilies. Milton says that Eden was lovelier than 'that fair field of Enna, where Proserpin gathering flowers, herself a fairer flower, by gloomy Dis was gathered'.",
+   "q": "Why compare Eden to the place of a famous abduction?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "hesiod-pandora-pl4-eve",
+   "kind": "answer",
+   "a": {
+    "ref": "work:works-and-days-evelyn-white/0",
+    "label": "Works and Days 60–105 (Evelyn-White)",
+    "p": "8-10",
+    "og": {
+     "group": "works-and-days",
+     "part": "Lines 1–120",
+     "l": "60-105",
+     "label": "Works and Days 60–105"
+    },
+    "first": [
+     "So he ordered. And they obeyed the lord Zeus the son of Cronos. Forthwith the famous Lame God moulded clay in the likeness of a modest maid, as the son of Cronos…"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/3",
+    "label": "Paradise Lost 4.712–719",
+    "l": "712-719",
+    "first": [
+     "What day the genial Angel to our Sire",
+     "Brought her in naked beauty more adorn'd,"
+    ]
+   },
+   "note": "Hesiod's Pandora is the first woman, made by the gods and given gifts by each of them, who opens the jar of evils. Milton compares Eve to 'Pandora, whom the gods endowed with all their gifts', and warns that she too will bring woe.",
+   "q": "Milton calls Eve 'more lovely than Pandora'. Is the comparison a compliment?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "fq1-pl2-error-sin",
+   "kind": "source",
+   "a": {
+    "ref": "work:faerie-queene/0",
+    "label": "The Faerie Queene I.i.14–15",
+    "l": "160-175",
+    "first": [
+     "But forth vnto the darksome hole he went,",
+     "And looked in: his glistring armor made"
+    ]
+   },
+   "b": {
+    "ref": "work:paradise-lost/1",
+    "label": "Paradise Lost 2.648–659",
+    "l": "648-659",
+    "first": [
+     "Impenitrable, impal'd with circling fire,",
+     "Yet unconsum'd. Before the Gates there sat"
+    ]
+   },
+   "note": "Spenser's Error is half serpent and half woman, with a brood of young that crawl back into her mouth. Milton's Sin, at the gate of Hell, is a woman to the waist and a scaly serpent below, with hell-hounds that creep back into her womb. Milton's monster is plainly Spenser's daughter.",
+   "q": "Spenser's monster is Error, Milton's is Sin. What is the difference, if both look alike?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "tasso16-fq2-rose",
+   "kind": "source",
+   "a": {
+    "ref": "work:jerusalem-delivered-fairfax/15",
+    "label": "Jerusalem Delivered 16.14–15 (Fairfax)",
+    "l": "105-120",
+    "og": {
+     "group": "jerusalem-delivered",
+     "part": "Book XVI",
+     "l": "14-15",
+     "label": "Jerusalem Delivered 16.14–15"
+    },
+    "first": [
+     "“The gently budding rose,” quoth she, “behold,",
+     "That first scant peeping forth with virgin beams,"
+    ]
+   },
+   "b": {
+    "ref": "work:faerie-queene/23",
+    "label": "The Faerie Queene II.xii.74–75",
+    "l": "662-679",
+    "first": [
+     "The whiles some one did chaunt this louely lay;                lxxiv",
+     "Ah see, who so faire thing doest faine to see,"
+    ]
+   },
+   "note": "In Armida's garden a bird sings that the rose is loveliest half open and soon fades: 'gather the rose of love, while yet thou mayest'. Spenser translates the song almost stanza for stanza into the Bower of Bliss, where Guyon hears it and destroys the garden.",
+   "q": "Spenser translates the song to tempt his hero. Does he make it less beautiful?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "fq2-herrick-rosebuds",
+   "kind": "echo",
+   "a": {
+    "ref": "work:faerie-queene/23",
+    "label": "The Faerie Queene II.xii.74–75",
+    "l": "662-679",
+    "first": [
+     "The whiles some one did chaunt this louely lay;                lxxiv",
+     "Ah see, who so faire thing doest faine to see,"
+    ]
+   },
+   "b": {
+    "ref": "herrick/209",
+    "label": "Herrick, 'To the Virgins, to make much of Time'",
+    "l": "1-16",
+    "first": [
+     "GAther ye Rose-buds while ye may,",
+     "Old Time is still a flying:"
+    ]
+   },
+   "note": "The song in the Bower of Bliss tells lovers to gather the rose while there is time. Herrick's 'Gather ye rose-buds while ye may' makes the same argument without the moral frame: no Guyon comes to tear the garden down.",
+   "q": "Spenser puts the song in a place to be destroyed. Where does Herrick put it?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "met1-hesiod-ages",
+   "kind": "source",
+   "a": {
+    "ref": "work:works-and-days-evelyn-white/0",
+    "label": "Works and Days 109–120 (Evelyn-White)",
+    "p": "12-12",
+    "og": {
+     "group": "works-and-days",
+     "part": "Lines 1–120",
+     "l": "109-120",
+     "label": "Works and Days 109–120"
+    },
+    "first": [
+     "First of all the deathless gods who dwell on Olympus made a golden race of mortal men who lived in the time of Cronos when he was reigning in heaven. And they lived like…"
+    ]
+   },
+   "b": {
+    "ref": "work:metamorphoses-golding/0",
+    "label": "Metamorphoses 1.89–112 (Golding)",
+    "l": "103-116",
+    "og": {
+     "group": "metamorphoses",
+     "part": "Book I",
+     "l": "89-112",
+     "label": "Metamorphoses 1.89–112"
+    },
+    "first": [
+     "Then sprang up first the golden age, which of it selfe maintainde",
+     "The truth and right of every thing unforct and unconstrainde."
+    ]
+   },
+   "note": "Hesiod tells of five races of men, golden, silver, bronze, the heroes and iron, each worse than the last; the golden race lived like gods, free from toil. Ovid's ages of the world (gold, silver, bronze, iron) follow Hesiod but leave out the heroes, and his golden age has no laws because none were needed.",
+   "q": "Ovid drops Hesiod's race of heroes. Why might an Augustan poet leave them out?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "met4-mnd5-pyramus",
+   "kind": "answer",
+   "a": {
+    "ref": "work:metamorphoses-golding/3",
+    "label": "Metamorphoses 4.65–80 (Golding)",
+    "l": "83-96",
+    "og": {
+     "group": "metamorphoses",
+     "part": "Book IV",
+     "l": "65-80",
+     "label": "Metamorphoses 4.65–80"
+    },
+    "first": [
+     "The wall that parted house from house had riven therein a crany",
+     "Which shronke at making of the wall. This fault not markt of any"
+    ]
+   },
+   "b": {
+    "ref": "work:a-midsummer-nights-dream-shakespeare/9",
+    "label": "A Midsummer Night's Dream, Act V, Scene 1: the play of Pyramus and Thisbe",
+    "l": "165-200",
+    "first": [
+     "In this same interlude it doth befall",
+     "That I, one Snout by name, present a wall:"
+    ]
+   },
+   "note": "Golding's Ovid tells how the two lovers whispered through a crack in the wall between their houses. Shakespeare's workmen stage the tale for the duke's wedding, with a man playing the wall and holding up his fingers for the chink.",
+   "q": "Shakespeare's comedy about lovers includes a tragedy played as farce. What does it say about the lovers in the main plot?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "met7-tempest5-elves",
+   "kind": "source",
+   "a": {
+    "ref": "work:metamorphoses-golding/6",
+    "label": "Metamorphoses 7.197–209 (Golding)",
+    "l": "263-277",
+    "og": {
+     "group": "metamorphoses",
+     "part": "Book VII",
+     "l": "197-209",
+     "label": "Metamorphoses 7.197–209"
+    },
+    "first": [
+     "Ye Charmes and Witchcrafts, and thou Earth which both with herbe and weed",
+     "Of mightie working furnishest the Wizardes at their neede:"
+    ]
+   },
+   "b": {
+    "ref": "work:tempest-shakespeare/9",
+    "label": "The Tempest, Act V, Scene 1: 'Ye elves of hills'",
+    "l": "41-59",
+    "first": [
+     "Ye elves of hills, brooks, standing lakes, and",
+     "groves;"
+    ]
+   },
+   "note": "Medea calls on the airs, winds, elves of hills and brooks, and boasts that she has darkened the sun and raised the dead. Prospero's farewell to his magic follows Golding's translation closely, then breaks off: 'But this rough magic I here abjure'.",
+   "q": "Prospero borrows a witch's boast to give up his power. Why her words?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "met15-sonnet60-waves",
+   "kind": "source",
+   "a": {
+    "ref": "work:metamorphoses-golding/14",
+    "label": "Metamorphoses 15.178–185 (Golding)",
+    "l": "199-207",
+    "og": {
+     "group": "metamorphoses",
+     "part": "Book XV",
+     "l": "178-185",
+     "label": "Metamorphoses 15.178–185"
+    },
+    "first": [
+     "The tyme itself continually is fleeting like a brooke.",
+     "For neyther brooke nor lyghtsomme tyme can tarrye still. But looke"
+    ]
+   },
+   "b": {
+    "ref": "shakespeare/59",
+    "label": "Shakespeare, Sonnet 60",
+    "l": "1-14",
+    "first": [
+     "Like as the waves make towards the pebbled shore,",
+     "So do our minutes hasten to their end;"
+    ]
+   },
+   "note": "Pythagoras in Ovid says time flows like a river: each wave is pushed by the one behind and pushes the one in front. Shakespeare opens Sonnet 60 with the same picture, 'Like as the waves make towards the pebbled shore, so do our minutes hasten to their end'.",
+   "q": "Ovid's speaker finds the flux of time consoling; does Shakespeare?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "met15-sonnet55-monument",
+   "kind": "source",
+   "a": {
+    "ref": "work:metamorphoses-golding/14",
+    "label": "Metamorphoses 15.871–879 (Golding)",
+    "l": "986-997",
+    "og": {
+     "group": "metamorphoses",
+     "part": "Book XV",
+     "l": "871-879",
+     "label": "Metamorphoses 15.871–879"
+    },
+    "first": [
+     "Now have I brought a woork to end which neither Joves feerce wrath,",
+     "Nor swoord, nor fyre, nor freating age with all the force it hath"
+    ]
+   },
+   "b": {
+    "ref": "shakespeare/54",
+    "label": "Shakespeare, Sonnet 55",
+    "l": "1-14",
+    "first": [
+     "Not marble, nor the gilded monuments",
+     "Of princes, shall outlive this powerful rhyme;"
+    ]
+   },
+   "note": "Ovid ends the Metamorphoses by claiming that neither Jove's anger, fire, sword nor time will destroy his work. Shakespeare makes the same boast for his verse ('nor Mars his sword nor war's quick fire shall burn the living record'), but gives the immortality to the person he loves.",
+   "q": "Who is made immortal in each poem?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "horace330-sonnet55-monument",
+   "kind": "source",
+   "a": {
+    "ref": "horace/84",
+    "label": "Horace, Odes 3.30 (Conington)",
+    "l": "1-16",
+    "first": [
+     "And now 'tis done: more durable than brass",
+     "My monument shall be, and raise its head"
+    ]
+   },
+   "b": {
+    "ref": "shakespeare/54",
+    "label": "Shakespeare, Sonnet 55",
+    "l": "1-14",
+    "first": [
+     "Not marble, nor the gilded monuments",
+     "Of princes, shall outlive this powerful rhyme;"
+    ]
+   },
+   "note": "Horace has built 'a monument more lasting than bronze' that rain, wind and the years cannot destroy. Shakespeare's 'Not marble nor the gilded monuments of princes shall outlive this powerful rhyme' takes up the same claim.",
+   "q": "Horace's monument is his poems; what is Shakespeare's?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "georgics4-met10-orpheus",
+   "kind": "echo",
+   "a": {
+    "ref": "work:georgics-dryden/3",
+    "label": "Georgics 4.485–503 (Dryden)",
+    "l": "700-711",
+    "og": {
+     "group": "georgics",
+     "part": "Book IV",
+     "l": "485-503",
+     "label": "Georgics 4.485–503"
+    },
+    "first": [
+     "He first, and close behind him follow'd she,",
+     "For such was Proserpine's severe Decree."
+    ]
+   },
+   "b": {
+    "ref": "work:metamorphoses-golding/9",
+    "label": "Metamorphoses 10.56–67 (Golding)",
+    "l": "60-70",
+    "og": {
+     "group": "metamorphoses",
+     "part": "Book X",
+     "l": "56-67",
+     "label": "Metamorphoses 10.56–67"
+    },
+    "first": [
+     "Desyrous for to see her he his eyes did backward move.",
+     "Immediatly shee slipped backe. He retching out his hands,"
+    ]
+   },
+   "note": "Virgil tells how Orpheus, almost at the light, looked back at Eurydice and lost her. Ovid tells the same story a generation later, more briefly and with a lighter touch: Eurydice cannot complain, except that she was loved.",
+   "q": "Virgil blames Orpheus' 'madness'; whom does Ovid blame?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "georgics4-lycidas-orpheus",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:georgics-dryden/3",
+    "label": "Georgics 4.520–527 (Dryden)",
+    "l": "759-765",
+    "og": {
+     "group": "georgics",
+     "part": "Book IV",
+     "l": "520-527",
+     "label": "Georgics 4.520–527"
+    },
+    "first": [
+     "Whom ev'n the salvage Beasts had spar'd, they kill'd,",
+     "And strew'd his mangl'd Limbs about the Field."
+    ]
+   },
+   "b": {
+    "ref": "milton/20",
+    "label": "Milton, 'Lycidas'",
+    "l": "58-63",
+    "first": [
+     "What could the Muse her self that Orpheus bore,",
+     "The Muse her self, for her inchanting son"
+    ]
+   },
+   "note": "Virgil's Orpheus is torn apart and his head, carried down the Hebrus, still calls Eurydice. Milton asks what the Muse could do for her own son Orpheus, whose 'gory visage down the stream was sent, down the swift Hebrus to the Lesbian shore'.",
+   "q": "Milton recalls Orpheus' death in a poem about a drowned friend. What does the comparison offer, or deny?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "theocritus1-lycidas-nymphs",
+   "kind": "imitation",
+   "a": {
+    "ref": "theocritus/0",
+    "label": "Theocritus, Idyll 1 (Calverley)",
+    "l": "68-75",
+    "first": [
+     "Where were ye, Nymphs, oh where, while Daphnis pined?",
+     "In fair Penëus' or in Pindus' glens?"
+    ]
+   },
+   "b": {
+    "ref": "milton/20",
+    "label": "Milton, 'Lycidas'",
+    "l": "50-57",
+    "first": [
+     "Where were ye Nymphs when the remorseless deep",
+     "Clos'd o're the head of your lov'd Lycidas?"
+    ]
+   },
+   "note": "Thyrsis asks where the nymphs were when Daphnis was dying, for they were not at their usual streams. Milton asks the same of the nymphs when Lycidas drowned, naming the haunts of British bards instead of Sicilian rivers, and then admits it would have made no difference.",
+   "q": "Milton adds 'Ay me, I fondly dream'. What does he correct in the old question?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "lucretius3-gray-elegy",
+   "kind": "source",
+   "a": {
+    "ref": "lucretius/3",
+    "label": "Lucretius 3.894–896 (Dryden)",
+    "l": "76-84",
+    "first": [
+     "But to be snatched from all the household joys,",
+     "From thy chaste wife, and thy dear prattling boys,"
+    ]
+   },
+   "b": {
+    "ref": "gray/0",
+    "label": "Gray, 'Elegy Written in a Country Churchyard'",
+    "l": "21-24",
+    "first": [
+     "For them no more the blazing hearth shall burn,",
+     "Or busy housewife ply her evening care;"
+    ]
+   },
+   "note": "Lucretius imagines mourners saying that the dead man's home and wife and children will greet him no more, and argues that such grief is foolish. Gray's stanza on the blazing hearth and the children who will not run to meet their father takes up the picture without the argument against it.",
+   "q": "Lucretius quotes the lament to refute it. Does Gray?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "catullus5-jonson-celia",
+   "kind": "imitation",
+   "a": {
+    "ref": "catullus/4",
+    "label": "Catullus 5 (Ellis)",
+    "l": "1-13",
+    "first": [
+     "Living, Lesbia, we should e'en be loving.",
+     "Sour severity, tongue of eld maligning,"
+    ]
+   },
+   "b": {
+    "ref": "jonson/41",
+    "label": "Jonson, 'Come, my Celia'",
+    "l": "1-18",
+    "first": [
+     "Come, my Celia, let us prove,",
+     "While we can, the sports of love,"
+    ]
+   },
+   "note": "Catullus tells Lesbia to live and love and ignore the old men's gossip, because suns can set and return but our brief light, once set, leaves one endless night. Jonson's song (from Volpone) translates the opening closely, then turns the poem toward secrecy and stolen pleasure.",
+   "q": "Catullus asks for kisses beyond counting; Jonson asks for kisses unseen. What has changed?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "catullus5-marvell-coy",
+   "kind": "answer",
+   "a": {
+    "ref": "catullus/4",
+    "label": "Catullus 5 (Ellis)",
+    "l": "1-13",
+    "first": [
+     "Living, Lesbia, we should e'en be loving.",
+     "Sour severity, tongue of eld maligning,"
+    ]
+   },
+   "b": {
+    "ref": "marvell/10",
+    "label": "Marvell, 'To his Coy Mistress'",
+    "l": "21-46",
+    "first": [
+     "But at my back I alwaies hear",
+     "Times winged Charriot hurrying near:"
+    ]
+   },
+   "note": "Catullus sets love against the one endless night after death. Marvell's lover argues the same case with more wit and more menace: 'the grave's a fine and private place, but none I think do there embrace'.",
+   "q": "Both lovers use death as an argument. Which is more persuasive, and to whom?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "marlowe-raleigh-reply",
+   "kind": "answer",
+   "a": {
+    "ref": "marlowe/50",
+    "label": "Marlowe, 'The Passionate Shepherd to His Love'",
+    "l": "1-24",
+    "first": [
+     "Come live with me and be my love,",
+     "And we will all the pleasures prove"
+    ]
+   },
+   "b": {
+    "ref": "raleigh/8",
+    "label": "Raleigh, 'The Nymph's Reply to the Shepherd'",
+    "l": "1-24",
+    "first": [
+     "If all the world and love were young,",
+     "And truth in every shepherd's tongue,"
+    ]
+   },
+   "note": "Marlowe's shepherd offers beds of roses and a gown of wool if she will come and be his love. Raleigh's nymph answers stanza by stanza: the flowers fade, the wool wears out, and the shepherd's promises would hold only 'if all the world and love were young'.",
+   "q": "Raleigh answers in Marlowe's own metre and stanza. Why fight on the other poet's ground?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "marlowe-donne-bait",
+   "kind": "answer",
+   "a": {
+    "ref": "marlowe/50",
+    "label": "Marlowe, 'The Passionate Shepherd to His Love'",
+    "l": "1-24",
+    "first": [
+     "Come live with me and be my love,",
+     "And we will all the pleasures prove"
+    ]
+   },
+   "b": {
+    "ref": "donne/97",
+    "label": "Donne, 'The Bait'",
+    "l": "1-28",
+    "first": [
+     "COme live with mee, and bee my love,",
+     "And wee will some new pleasures prove"
+    ]
+   },
+   "note": "Donne borrows Marlowe's first line and turns the pastoral invitation into an angling conceit: the woman needs no bait, for she is herself the bait, and the speaker admits he is caught.",
+   "q": "Who is the fish in Donne's poem?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "sappho31-catullus51",
+   "kind": "imitation",
+   "a": {
+    "ref": "sappho/1",
+    "label": "Sappho 31 (Wharton's fragment 2)",
+    "p": "1-1",
+    "first": [
+     "That man seems to me peer of gods, who sits in thy presence, and hears close to him thy sweet speech and lovely laughter; that indeed makes my heart flutter in my bosom.…"
+    ]
+   },
+   "b": {
+    "ref": "catullus/48",
+    "label": "Catullus 51 (Ellis)",
+    "l": "1-16",
+    "first": [
+     "He to me like unto the Gods appeareth,",
+     "He, if I dare speak it, ascends above them,"
+    ]
+   },
+   "note": "Sappho describes what happens to her body when she sees a man sitting close to the woman she loves: her tongue breaks, fire runs under her skin, her eyes see nothing, she is close to death. Catullus translates the poem almost line for line for Lesbia, then adds a last stanza in which he rebukes himself for idleness ('otium').",
+   "q": "Why might Catullus end a translation of Sappho with a stanza of his own about idleness?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "horace111-herrick-virgins",
+   "kind": "echo",
+   "a": {
+    "ref": "horace/105",
+    "label": "Horace, Odes 1.11, 'To Leuconoë' (Calverley)",
+    "l": "1-11",
+    "first": [
+     "SEEK not, for thou shalt not find it, what my end, what thine shall",
+     "be;"
+    ]
+   },
+   "b": {
+    "ref": "herrick/209",
+    "label": "Herrick, 'To the Virgins, to make much of Time'",
+    "l": "1-16",
+    "first": [
+     "GAther ye Rose-buds while ye may,",
+     "Old Time is still a flying:"
+    ]
+   },
+   "note": "Horace tells Leuconoë not to ask the astrologers how long she will live: 'pluck the day' (carpe diem) and trust the morrow as little as possible. Herrick's advice to the virgins makes the same argument through flowers and the setting sun.",
+   "q": "Horace speaks to one woman, Herrick to all young women. Does the advice change?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "chapman-odyssey5-keats",
+   "kind": "answer",
+   "a": {
+    "ref": "work:odyssey-chapman/4",
+    "label": "Odyssey 5.453–457 (Chapman)",
+    "l": "606-622",
+    "og": {
+     "group": "odyssey",
+     "part": "Book V",
+     "l": "453-457",
+     "label": "Odyssey 5.453–457"
+    },
+    "first": [
+     "To thy both flood and knees a man dismay’d",
+     "With varied suff’rance sues. Yield then some rest"
+    ]
+   },
+   "b": {
+    "ref": "keats/37",
+    "label": "Keats, 'On First Looking into Chapman's Homer'",
+    "l": "1-14",
+    "first": [
+     "Much have I traveled in the realms of gold,",
+     "And many goodly states and kingdoms seen;"
+    ]
+   },
+   "note": "Keats wrote his sonnet after a night spent reading Chapman's Homer with Charles Cowden Clarke; Clarke later recalled that they read the shipwreck of Odysseus in Book 5, with the line 'the sea had soaked his heart through'. The sonnet's discoverers, the astronomer and Cortez, stand for that first shock of reading.",
+   "q": "Keats never mentions Odysseus. Where in the sonnet do you hear the sea?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey9-tennyson-lotos",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:odyssey-murray/8",
+    "label": "Odyssey 9.82–104 (Murray)",
+    "p": "4-4",
+    "og": {
+     "group": "odyssey",
+     "part": "Book IX",
+     "l": "82-104",
+     "label": "Odyssey 9.82–104"
+    },
+    "first": [
+     "“Thence for nine days' space I was borne by direful winds over the teeming deep; but on the tenth we set foot on the land of the Lotus-eaters, who eat a flowery food.…"
+    ]
+   },
+   "b": {
+    "ref": "tennyson/178",
+    "label": "Tennyson, 'The Lotos-Eaters'",
+    "l": "45-56",
+    "first": [
+     "The mild-eyed melancholy Lotos-eaters came.",
+     "Branches they bore of that enchanted stem,"
+    ]
+   },
+   "note": "In a few lines Homer tells how those who ate the lotus lost all wish to go home. Tennyson expands the moment into a long poem of weariness in which the mariners argue that rest is better than return.",
+   "q": "Homer's Odysseus drags his men back to the ships. Who wins the argument in Tennyson?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "inferno26-tennyson-ulysses",
+   "kind": "source",
+   "a": {
+    "ref": "work:divine-comedy-longfellow/25",
+    "label": "Inferno 26.112–120 (Longfellow)",
+    "l": "112-120",
+    "og": {
+     "group": "divine-comedy",
+     "part": "Inferno: Canto XXVI",
+     "l": "112-120",
+     "label": "Inferno 26.112–120"
+    },
+    "first": [
+     "‘O brothers, who amid a hundred thousand",
+     "Perils,’ I said, ‘have come unto the West,"
+    ]
+   },
+   "b": {
+    "ref": "tennyson/190",
+    "label": "Tennyson, 'Ulysses'",
+    "l": "54-70",
+    "first": [
+     "I am a part of all that I have met;",
+     "Yet all experience is an arch wherethro’"
+    ]
+   },
+   "note": "Dante's Ulysses urges his old companions past the Pillars of Hercules: 'you were not made to live like brutes, but to follow virtue and knowledge'. Tennyson's Ulysses, old on Ithaca, wants 'to follow knowledge like a sinking star, beyond the utmost bound of human thought'.",
+   "q": "Dante puts this speech in Hell; Tennyson makes it heroic. Which reading do you find in the poem itself?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "odyssey11-inferno26-last-voyage",
+   "kind": "contrast",
+   "a": {
+    "ref": "work:odyssey-murray/10",
+    "label": "Odyssey 11.119–137 (Murray)",
+    "p": "12-12",
+    "og": {
+     "group": "odyssey",
+     "part": "Book XI",
+     "l": "119-137",
+     "label": "Odyssey 11.119–137"
+    },
+    "first": [
+     "“‘Thou askest of thy honey-sweet return, glorious Odysseus, but this shall a god make grievous unto thee; for I think not that thou shalt elude the Earth-shaker, seeing…"
+    ]
+   },
+   "b": {
+    "ref": "work:divine-comedy-longfellow/25",
+    "label": "Inferno 26.90–120 (Longfellow)",
+    "l": "90-120",
+    "og": {
+     "group": "divine-comedy",
+     "part": "Inferno: Canto XXVI",
+     "l": "90-120",
+     "label": "Inferno 26.90–120"
+    },
+    "first": [
+     "It uttered forth a voice, and said: “When I",
+     "From Circe had departed, who concealed me"
+    ]
+   },
+   "note": "Tiresias tells Odysseus he will go inland with an oar until he reaches men who have never seen the sea, and that a gentle death will come to him 'from the sea' in old age. Dante gives Ulysses a different end: a last voyage west into the open ocean, where he and his men drown in sight of a mountain.",
+   "q": "Homer's Odysseus will turn his back on the sea; Dante's sails into it. Which is the more fitting end?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "rapelock5-iliad12-sarpedon",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:iliad-pope/11",
+    "label": "Iliad 12.310–328 (Pope)",
+    "l": "371-396",
+    "og": {
+     "group": "iliad",
+     "part": "Book XII",
+     "l": "310-328",
+     "label": "Iliad 12.310–328"
+    },
+    "first": [
+     "“Why boast we, Glaucus! our extended reign,",
+     "Where Xanthus’ streams enrich the Lycian plain,"
+    ]
+   },
+   "b": {
+    "ref": "work:rape-of-the-lock/4",
+    "label": "Pope, The Rape of the Lock 5.9–34",
+    "l": "9-34",
+    "first": [
+     "'Say, why are beauties praised and honour'd most,",
+     "The wise man's passion, and the vain man's toast?"
+    ]
+   },
+   "note": "Sarpedon asks Glaucus why they are honoured at home if not to fight in the front rank, since death will come anyway. Pope, who had translated the speech himself, gives its shape to Clarissa: why are beauties praised unless good sense keeps what beauty gains, since beauty will fade anyway. He said so in a note added in 1717.",
+   "q": "The parody keeps Sarpedon's logic but changes the stakes. Is Clarissa's advice wise, or only sensible?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "wanderer-seafarer-sea",
+   "kind": "echo",
+   "a": {
+    "ref": "anonymous-old-english/4",
+    "label": "The Wanderer 45–57 (Newton and Thompson)",
+    "l": "45-57",
+    "first": [
+     "From his sleep then awakens the sorrowful wanderer;",
+     "He sees full before him the fallow waves,"
+    ]
+   },
+   "b": {
+    "ref": "anonymous-old-english/5",
+    "label": "The Seafarer, the opening (Gordon)",
+    "p": "1-1",
+    "first": [
+     "I can utter a true song about myself, tell of my travels, how in toilsome days I often suffered a time of hardship, how I have borne bitter sorrow in my breast, made…"
+    ]
+   },
+   "note": "The Wanderer wakes from a dream of his lord to grey waves, sea-birds bathing and hail falling with snow. The Seafarer begins with the same world: cold, hail, the cries of gannet and curlew instead of men's laughter. Both poems make the winter sea the place of a man cut off from his people.",
+   "q": "The Wanderer is driven to sea by loss; the Seafarer seems to choose it. Is that the difference between them?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "wanderer-seafarer-ubi-sunt",
+   "kind": "echo",
+   "a": {
+    "ref": "anonymous-old-english/4",
+    "label": "The Wanderer 92–110 (Newton and Thompson)",
+    "l": "92-109",
+    "first": [
+     "Where are the proud pleasure-seekers? Where are the palace and",
+     "Alas the bright wine-cup! Alas the burnie-warriors!"
+    ]
+   },
+   "b": {
+    "ref": "anonymous-old-english/5",
+    "label": "The Seafarer, from line 80 (Gordon)",
+    "p": "3-3",
+    "first": [
+     "The days have departed, all the pomps of earth's kingdom; kings, or emperors, or givers of gold, are not as of yore when they wrought among themselves greatest deeds of…"
+    ]
+   },
+   "note": "'Where are the proud pleasure-seekers?' the Wanderer asks, and mourns the bright wine-cup, the mailed warriors and the prince's pride. The Seafarer says the days are gone and the pomps of the earth's kingdom with them, and that gold buried with a man will not go with him.",
+   "q": "Both poems end by turning to God. Does the lament for the hall prepare for that, or resist it?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "beowulf-survivor-wanderer",
+   "kind": "echo",
+   "a": {
+    "ref": "work:beowulf/30",
+    "label": "Beowulf, Fitt XXX: the last survivor (Gummere)",
+    "l": "27-46",
+    "first": [
+     "\"Now hold thou, earth, since heroes may not,",
+     "what earls have owned! Lo, erst from thee"
+    ]
+   },
+   "b": {
+    "ref": "anonymous-old-english/4",
+    "label": "The Wanderer 92–110 (Newton and Thompson)",
+    "l": "92-109",
+    "first": [
+     "Where are the proud pleasure-seekers? Where are the palace and",
+     "Alas the bright wine-cup! Alas the burnie-warriors!"
+    ]
+   },
+   "note": "The last of a forgotten people buries his treasure: no one is left to polish the helmet or drink from the cup, no harp sounds, no hawk flies through the hall. The Wanderer mourns the wine-cup and the warriors of the hall. The two passages share a form, the lament over an empty hall (the 'ubi sunt', 'where are they?').",
+   "q": "The survivor hides the treasure that becomes the dragon's hoard. What does the lament prepare for in Beowulf?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  },
+  {
+   "id": "argonautica4-aeneid6-moon",
+   "kind": "imitation",
+   "a": {
+    "ref": "work:argonautica-seaton/3",
+    "label": "Argonautica 4.1477–1480 (Seaton)",
+    "p": "87-87",
+    "og": {
+     "group": "argonautica",
+     "part": "Book IV",
+     "l": "1477-1480",
+     "label": "Argonautica 4.1477–1480"
+    },
+    "first": [
+     "But that day Lynceus thought he saw Heracles all alone, far off, over measureless land, as a man at the month’s beginning sees, or thinks he sees, the moon through a…"
+    ]
+   },
+   "b": {
+    "ref": "work:aeneid-dryden/5",
+    "label": "Aeneid 6.450–454 (Dryden)",
+    "l": "610-616",
+    "og": {
+     "group": "aeneid",
+     "part": "Book VI",
+     "l": "450-454",
+     "label": "Aeneid 6.450–454"
+    },
+    "first": [
+     "Not far from these Phoenician Dido stood,",
+     "Fresh from her wound, her bosom bath’d in blood;"
+    ]
+   },
+   "note": "Lynceus, looking for Heracles across the desert, sees or thinks he sees him, as a man sees or thinks he sees the new moon through a cloud. Virgil uses the same words for Aeneas recognising Dido among the shades.",
+   "q": "A hero glimpsed at a distance becomes a lover glimpsed in the dark. What does the borrowed simile bring to the meeting?",
+   "checked_by": "Poetry Codex editors (first round, drafted from the study notes and checked against both texts)",
+   "checked_on": "2026-10-19"
+  }
+ ]
+}
