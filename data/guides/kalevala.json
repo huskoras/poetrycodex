@@ -1,0 +1,900 @@
+{
+ "work": "kalevala",
+ "title": "The Kalevala",
+ "author": "Elias Lönnrot (compiler), from Finnish and Karelian oral poetry",
+ "quoteEdition": "kalevala-kirby",
+ "unit": "Part",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Compiler",
+   "value": "Elias Lönnrot (1802–84), district physician at Kajaani and later Professor of Finnish at Helsinki, who assembled the poem from oral songs he and others had collected"
+  },
+  {
+   "label": "Sources",
+   "value": "Runes (runo-songs) sung by peasant singers, mostly in Viena (White Sea) Karelia on the Russian side of the border, also in Finnish Karelia, Ingria and Savo; chief singers included Arhippa Perttunen and Ontrei Malinen"
+  },
+  {
+   "label": "Editions",
+   "value": "The 'Old Kalevala' (1835, 32 runos, about 12,000 lines; its preface is dated 28 February, now Kalevala Day) and the 'New Kalevala' (1849, 50 runos, 22,795 lines), the standard text"
+  },
+  {
+   "label": "Language",
+   "value": "Finnish, with many Karelian dialect forms; Lönnrot normalised spelling and language for a reading public"
+  },
+  {
+   "label": "Metre",
+   "value": "The 'Kalevala metre': unrhymed trochaic tetrameter, eight-syllable lines, bound by alliteration and by parallelism, in which a line is restated in different words in the next"
+  },
+  {
+   "label": "Setting",
+   "value": "A mythical North: Kalevala (or Väinölä), the land of the heroes, set against Pohjola, the cold, dark 'North Farm' ruled by the witch Louhi; also Tuonela, the land of the dead"
+  },
+  {
+   "label": "Main characters",
+   "value": "Väinämöinen the old singer, Ilmarinen the smith, Lemminkäinen the reckless adventurer, Kullervo the slave-born avenger, Louhi, mistress of Pohjola, and the women Aino and Marjatta"
+  },
+  {
+   "label": "Central object",
+   "value": "The Sampo, a mysterious mill of plenty forged by Ilmarinen, stolen back from Pohjola and shattered in a sea battle"
+  },
+  {
+   "label": "Translations on this site",
+   "value": "W. F. Kirby (1907, the quotation text of this guide), in trochaic verse close to the Finnish line by line; and John Martin Crawford (1888), the first complete English version, made partly through Anton Schiefner's German"
+  },
+  {
+   "label": "Reception",
+   "value": "Foundational for Finnish national identity under Russian rule; inspired Sibelius, Akseli Gallen-Kallela, Longfellow's The Song of Hiawatha (1855) and J. R. R. Tolkien"
+  }
+ ],
+ "context": [
+  "The Kalevala is both very old and quite modern. Its materials are the runes, or sung poems, of the Finnish and Karelian peasantry, a tradition of oral poetry in the same eight-syllable metre that reaches back perhaps two thousand years and survived longest in the remote villages of Viena Karelia, on the White Sea side of the Russian border. Its shape, however, was given by one nineteenth-century man, Elias Lönnrot (1802–84), the son of a village tailor from Sammatti in southern Finland, who studied medicine at Turku and Helsinki and from 1833 served for twenty years as district physician in the small town of Kajaani in the north-east [[pentikainen1999]] [[dubois1995]].",
+  "Lönnrot made eleven collecting journeys between 1828 and 1844, many of them on foot, into Finnish and Russian Karelia, Ingria and Lapland. He was building on the work of earlier scholars, above all the Turku professor H. G. Porthan and the collector Zacharias Topelius the elder, who had already suggested that the scattered songs about Väinämöinen might be the remains of a lost epic. In the village of Vuonninen in 1833 he heard Ontrei Malinen, and at Latvajärvi in 1834 the old singer Arhippa Perttunen sang to him over several days, giving him thousands of lines. Such singers usually performed single episodes and charms, not long sequences; Lönnrot's task, as he saw it, was to fit them together [[pentikainen1999]] [[kuusi1977]] [[honko1990]].",
+  "The first result was the so-called Old Kalevala, published in two volumes (1835–36), the first with a preface dated 28 February, a date now kept in Finland as Kalevala Day. It had 32 runos. Lönnrot then published a collection of lyric songs, the Kanteletar (1840), and continued collecting, as did younger helpers such as D. E. D. Europaeus. The enlarged New Kalevala of 1849, in 50 runos and 22,795 lines, is the version normally read and translated. Lönnrot ordered the episodes, joined variants, invented connecting lines, transferred deeds from one hero to another and gave the whole a beginning in the Creation and an end in the coming of Christianity [[magoun1969]] [[honko1990]].",
+  "The poem appeared at a decisive moment. Finland had been part of the Swedish kingdom for centuries, but in 1809 it became an autonomous Grand Duchy of the Russian Empire. Educated Finns, who mostly spoke Swedish, began to ask what made them a nation, and the slogan attributed to A. I. Arwidsson captured the mood: we are no longer Swedes, we cannot become Russians, so let us be Finns. The Kalevala gave the Finnish language, until then mostly the speech of peasants, an epic of its own, comparable to Homer, and it became the central text of the movement that led, in 1917, to independence [[wilson1976]] [[anttonen2005]].",
+  "The poem's influence spread far beyond Finland. Jean Sibelius drew on it from his Kullervo symphony (1892) to the Lemminkäinen legends, Pohjola's Daughter, Luonnotar and Tapiola; the painter Akseli Gallen-Kallela gave its scenes their classic images, among them the Aino triptych, Lemminkäinen's Mother and The Defence of the Sampo [[goss2009]]. Through Anton Schiefner's German translation (1852) its metre reached Henry Wadsworth Longfellow, whose The Song of Hiawatha (1855) imitates it [[moyne1963]]. J. R. R. Tolkien read Kirby's translation as a young man, began a prose and verse retelling of the Kullervo cycle in 1914, and remade Kullervo as Túrin Turambar in his legendarium [[tolkien2015]]. The site offers two English versions: W. F. Kirby's (1907), quoted in this guide, and John Martin Crawford's (1888), the first complete version in English [[kirby1907]] [[crawford1888]]."
+ ],
+ "plot": [
+  "After a proem in which the singer invites a companion to sing the old songs with him, the poem begins with the Creation. Ilmatar, daughter of the air, floats for centuries on the primeval sea; a teal lays eggs on her knee, and from their broken shells come earth, sky, sun, moon and stars. Her son Väinämöinen, born already old, clears and sows the land. A young Lapp singer, Joukahainen, challenges him to a contest of wisdom, is sung into a swamp, and to save himself promises Väinämöinen his sister Aino, who drowns herself rather than marry an old man. Väinämöinen sets out to woo in Pohjola, the dark North ruled by Louhi; she promises him her daughter if he can forge the Sampo, a magic mill of plenty, and the smith Ilmarinen forges it, though the maiden refuses him for the time.",
+  "The reckless Lemminkäinen carries off the island girl Kyllikki, then goes to woo in Pohjola himself; set impossible tasks, he is killed at the river of Tuonela and hacked to pieces, but his mother rakes his body from the river and brings him back to life. Väinämöinen, needing three magic words to finish a boat, seeks them in the land of the dead and then in the belly of the buried giant Antero Vipunen. Väinämöinen and Ilmarinen race to Pohjola to woo the maiden; she chooses Ilmarinen, who performs Louhi's tasks, and a long sequence of runos describes the wedding feast, the bride's laments and instruction, and the homecoming. Lemminkäinen, uninvited, kills the master of Pohjola in a duel, hides on an island of women, and fails in a war of revenge.",
+  "Kullervo, son of Kalervo, survives the massacre of his family by his uncle Untamo and grows up a slave of terrible strength. Sold to Ilmarinen, he is mocked by Ilmarinen's wife, who bakes a stone into his bread; he drives wolves and bears home in place of her cattle and they kill her. He finds his surviving family, unknowingly seduces his lost sister, who drowns herself, takes revenge on Untamo, and kills himself on his own sword. The widowed Ilmarinen forges a bride of gold, which is cold to the touch, and then carries off Louhi's second daughter, who so insults him that he turns her into a seagull.",
+  "Hearing of Pohjola's prosperity, Väinämöinen, Ilmarinen and Lemminkäinen sail to steal the Sampo. Väinämöinen makes a kantele, a harp, from the jawbone of a great pike, and his music enchants the whole of creation; he sings the people of Pohjola to sleep and the Sampo is carried off. Louhi pursues them in the shape of a huge eagle, the Sampo is broken in the battle, and its fragments sink to enrich the sea or drift ashore to bring fortune to Finland. Louhi takes revenge with plague, a bear, and the theft of the sun and moon, but each time she is defeated. In the last runo the virgin Marjatta conceives by eating a cranberry and bears a son who is baptised King of Karelia; rebuked by the infant, Väinämöinen sails away in a copper boat, leaving his kantele and songs to his people."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Creation and Väinämöinen's Birth",
+   "lines": "Proem and Runos 1–2",
+   "section": 0,
+   "summary": [
+    "The singer opens by saying that he longs to sing, and calls on a dear companion to join hands with him so that the old songs may be passed on to the young. He names the songs he learned from his father and mother: of Väinämöinen's belt, Ilmarinen's forge, Lemminkäinen's sword, Joukahainen's crossbow and the Sampo.",
+    "Ilmatar, the virgin daughter of the air, grows weary of her solitude and sinks into the sea, where the wind and waves make her pregnant. For seven hundred years she drifts, unable to give birth. A teal seeking a nesting place lays six golden eggs and one of iron on her raised knee; when Ilmatar's knee grows hot she jerks it, and the eggs break. From their pieces come the earth, the sky, the sun, the moon, the stars and the clouds. Ilmatar then shapes headlands, bays and sea-beds. At last Väinämöinen, who has waited thirty summers in her womb, frees himself and swims ashore, already old.",
+    "In Runo 2 the field-spirit Sampsa Pellervoinen sows the bare land with trees. A great oak grows until it blots out sun and moon, and a tiny man rises from the sea, grows into a giant and fells it. Väinämöinen clears a forest for barley, leaving one birch for the birds; an eagle, grateful, strikes fire to burn the clearing, and the barley sprouts after Väinämöinen's prayer to Ukko, the god of the sky."
+   ],
+   "analysis": [
+    "The proem frames the whole poem as performance. In traditional singing two men often sat facing each other, hands joined, one leading and the other repeating, and Lönnrot places this scene at the head of his book to claim that the epic is the voice of the people, inherited from parents and passed to children. Yet the long introductory passage is itself largely his composition from traditional formulas, so the opening already raises the question of who is speaking: the folk, or their editor [[honko1990]] [[dubois1995]].",
+    "The creation from a world-egg is an ancient and widespread motif, found among other Finnic peoples and far beyond. In the oral variants it was usually Väinämöinen himself on whose knee the bird nested; Lönnrot gave the role to a female creator, Ilmatar, the daughter of the air, and so made the cosmos a woman's work before it became a hero's. The cosmogony also establishes the poem's way of explaining things by origins: once something's birth has been told, it can be controlled [[siikala2002]] [[pentikainen1999]].",
+    "Väinämöinen's first deeds are not battles but clearing and sowing. He is a culture hero, a founder of agriculture, and his authority rests on knowledge rather than strength. The prayer to Ukko and the eagle's gift of fire show a world in which nature, gods and men are in constant negotiation through ritual speech."
+   ],
+   "key": [
+    {
+     "ref": "Runo 1, 1–4",
+     "quote": "I am driven by my longing,\nAnd my understanding urges\nThat I should commence my singing;\nAnd begin my recitation.",
+     "note": "The traditional opening formula. The singer presents his song as an inner compulsion, and in the following lines as a shared, inherited tradition."
+    },
+    {
+     "ref": "Runo 1",
+     "quote": "From the cracked egg's lower fragment,\nNow the solid earth was fashioned,\nFrom the cracked egg's upper fragment,\nRose the lofty arch of heaven,",
+     "note": "The world-egg. The paired lines show the Kalevala metre's parallelism: each statement is answered by a matching one."
+    },
+    {
+     "ref": "Runo 1",
+     "quote": "Only born was Väinämöinen,\nAnd revealed the bard immortal,\nSprung from the divine Creatrix,\nBorn of Ilmatar, his mother.",
+     "note": "Väinämöinen is introduced first of all as a singer, the hero whose power lies in song."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Joukahainen and Aino",
+   "lines": "Runos 3–5",
+   "section": 3,
+   "summary": [
+    "The young Lapp singer Joukahainen, jealous of Väinämöinen's fame, drives out to challenge him. Their sledges collide, and Joukahainen boasts of his knowledge, which turns out to be a list of commonplaces and false claims to have taken part in the Creation. Väinämöinen sings in reply, and his song sinks the boaster into a swamp up to his armpits, changing his horse, sledge and weapons into features of the landscape. Joukahainen offers boats, horses, gold and grain, and at last his sister Aino, to be freed.",
+    "Aino, gathering birch twigs in the woods, meets Väinämöinen, who claims her as his bride. She tears off her ornaments and runs home in tears. Her mother, delighted at the match, urges her to dress in her finest clothes for the old man. Aino wanders into the wilderness, sees maidens bathing in a lake, climbs on a coloured rock that sinks beneath her, and drowns. A hare carries the news to her mother, whose tears flow into rivers on which birches grow and cuckoos sing.",
+    "In Runo 5 Väinämöinen fishes and catches a strange salmon. As he is about to cut it up, it leaps back into the water and reveals that it is Aino, come to be his companion, whom he failed to recognise. He tries in vain to catch her again. His mother speaks to him from her grave and tells him to seek a bride in Pohjola."
+   ],
+   "analysis": [
+    "The singing match is a contest of knowledge, not of arms, and it defines the poem's values. Joukahainen's knowledge is borrowed and superficial; Väinämöinen's is primal, the knowledge of origins, and therefore effective. Words in the Kalevala are acts: the old singer does not describe Joukahainen's defeat, he sings it into being [[kuusi1977]].",
+    "The story of Aino is largely Lönnrot's construction. He joined a ballad of a girl who drowns herself to avoid an unwanted marriage, which in tradition was not connected with Väinämöinen, to the singing contest, and the name Aino ('the only one') was taken from an epithet. The result was one of the most loved episodes in the poem and the subject of Gallen-Kallela's triptych [[magoun1963]] [[honko1990]]. It is also the first of the poem's many critiques of marriage from the bride's point of view: Aino's lament speaks of the fate of girls handed over to old men.",
+    "The episode gives Väinämöinen a comic and pathetic side. The all-wise singer is clumsy as a lover, fails to recognise his bride in the fish, and weeps like a child. The hero of wisdom is from the beginning a figure of loss."
+   ],
+   "key": [
+    {
+     "ref": "Runo 4",
+     "quote": "There the dove for ever vanished,\nThus the luckless maiden perished,",
+     "note": "Aino's drowning. The 'dove' is a traditional epithet for a girl; the lines are followed by her dying lament."
+    },
+    {
+     "ref": "Runo 4",
+     "quote": "Then the hare sprang quickly onward,\nSped the Long-ear with his story,\nOn his crooked legs he hastened,\nWith his cross-like mouth he hurried,",
+     "note": "The animal messenger, a common device. The epithets of the hare are a good example of the metre's piling of parallel lines."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Wooing in Pohjola and the Forging of the Sampo",
+   "lines": "Runos 6–10",
+   "section": 6,
+   "summary": [
+    "Joukahainen lies in wait with a crossbow and shoots Väinämöinen's horse from under him as he rides over the sea. Väinämöinen falls into the water and drifts for days until an eagle, remembering the birch he spared, carries him to the shores of Pohjola. There Louhi, the mistress of the North, finds him weeping, takes him in and promises him her daughter if he can forge a Sampo. He cannot, but promises to send the smith Ilmarinen.",
+    "On the way home Väinämöinen meets the Maiden of Pohjola sitting on a rainbow and weaving. She sets him impossible tasks, among them building a boat from the fragments of her spindle; working on it, he cuts his knee with his axe. In Runo 9 an old man stanches the flow of blood by reciting the charm on the origin of iron, telling how iron was born from the milk of three maidens and how it was tempered and turned to evil.",
+    "Ilmarinen refuses to go north, so Väinämöinen tricks him into climbing a spruce to fetch a moon, and raises a wind that carries him to Pohjola. After four days at the forge, during which a crossbow, a boat, a heifer and a plough come out of the fire and are rejected, Ilmarinen forges the Sampo. It grinds a chest of meal for eating, another for selling and a third for storing. Louhi locks it in a copper mountain, but her daughter refuses to marry the smith, who returns home disappointed."
+   ],
+   "analysis": [
+    "The geography of the poem is now set: Kalevala in the south, the home of the heroes, and Pohjola in the north, dark, cold and rich, and ruled by a woman. Pohjola is at once the hostile Other, a land of sorcery and danger, and the place of desirable brides and of wealth. Some scholars have related it to Lapland and to the Sámi, others to the northern otherworld of shamanic tradition [[siikala2002]] [[pentikainen1999]].",
+    "The origin of iron (Runo 9) shows how the poem preserves the incantations that were an essential part of the oral tradition. In Finnish magic, to know the birth of a thing was to have power over it; the healer must recite iron's origin before he can command the wound to close. Lönnrot built many such charms into the narrative, so that the epic is also an anthology of the people's magic [[kuusi1977]] [[siikala2002]].",
+    "The Sampo is introduced through a list of impossible ingredients and is never clearly described. It grinds grain, salt and coin, and it has a 'pictured' or 'many-coloured cover' (in Finnish, kirjokansi). Lönnrot made it the thread that holds the plot together: forged in Pohjola as a bride-price, it must one day be won back."
+   ],
+   "key": [
+    {
+     "ref": "Runo 7",
+     "quote": "But if you can forge a Sampo,\nWeld its many-coloured cover,\nFrom the tips of swan's white wing-plumes,\nFrom the milk of barren heifer,",
+     "note": "Louhi's bride-price. The Sampo's ingredients are impossible things, and its 'many-coloured cover' has been one of the most debated details of the poem."
+    },
+    {
+     "ref": "Runo 10",
+     "quote": "Forged with cunning art the Sampo,\nAnd on one side was a corn-mill,\nOn another side a salt-mill,\nAnd upon the third a coin-mill.",
+     "note": "The Sampo as a mill of plenty: food, salt and money, the foundations of prosperity."
+    },
+    {
+     "ref": "Runo 10",
+     "quote": "Chestfuls did it grind till evening,\nFirst for food it ground a chestful,\nAnd another ground for barter,",
+     "note": "The wealth the Sampo produces explains why Pohjola later prospers and why the heroes want it back."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Lemminkäinen's Death and his Mother's Love",
+   "lines": "Runos 11–15",
+   "section": 11,
+   "summary": [
+    "Lemminkäinen, also called Kaukomieli, a handsome, boastful warrior, carries off Kyllikki, the 'flower of the island' who has refused all suitors. They swear an oath: he will not go to war, and she will not go to the village dances. When she breaks her vow, he leaves her and resolves to woo in Pohjola. His mother warns him of death; he throws his hairbrush against the wall, saying that when it runs with blood, evil will have befallen him.",
+    "In Pohjola Lemminkäinen sings all the men out of the house except one old blind cowherd, whom he insults. Louhi sets him tasks: to catch the elk of Hiisi, the evil spirit, on skis; to bridle the fire-breathing gelding of Hiisi; and to shoot the swan on the river of Tuonela, the land of the dead. At the river the cowherd, waiting for him, kills him with a water-snake, and the son of Tuoni hacks his body to pieces and throws it into the river.",
+    "At home the brush runs with blood. His mother goes to Pohjola and forces Louhi to tell her what has happened. She has Ilmarinen forge a great rake, rakes the pieces from the river, joins them together with charms, and sends a bee to fetch healing honey, finally from the halls of God above the heavens. Lemminkäinen is restored to life, and his mother leads him home."
+   ],
+   "analysis": [
+    "Lemminkäinen is the most 'heroic' figure in the conventional sense, a warrior, seducer and boaster, and the poem treats him with irony. He ignores every warning and is killed by the man he despised. Lönnrot assembled his story from several heroes of the oral tradition, including a figure called Ahti, and the composite is restless and contradictory by design [[magoun1963]].",
+    "The centre of this part is not the hero but his mother. Her search for her son across the world, her questioning of trees, the road, the moon and the sun, and her raking of the black river of death give the Kalevala one of its most powerful images of love that refuses to accept death. Gallen-Kallela's painting Lemminkäinen's Mother (1897) made it an icon. The episode has been compared with the Egyptian myth of Isis gathering the body of Osiris, but its details belong to Finnish healing charms [[pentikainen1999]] [[siikala2002]].",
+    "The tasks follow a shamanic pattern: the hero travels to the edge of the otherworld and is dismembered, and the restoring of his body from its pieces resembles the initiatory death and rebirth described in northern shamanic traditions. Whether the Kalevala's heroes should be read as shamans is itself a scholarly question [[siikala2002]]."
+   ],
+   "key": [
+    {
+     "ref": "Runo 12",
+     "quote": "\"Ruin falls on Lemminkainen,\nEvil waits for him unhappy,\nWhen the brush with blood is running,",
+     "note": "Lemminkäinen's token of life, a familiar folklore device, sets up his mother's discovery of his death."
+    },
+    {
+     "ref": "Runo 15",
+     "quote": "Then did Lemminkainen's mother\nTake the mighty rake of iron,\nAnd she rushed to Tuoni's river,",
+     "note": "The mother's raking of the river of death, the poem's great image of love working against mortality."
+    },
+    {
+     "ref": "Runo 15",
+     "quote": "\"O thou bee, thou bird of honey,\nKing of all the woodland flowerets,\nGo thou forth to fetch me honey,",
+     "note": "The bee is sent to fetch healing honey; the honey from beyond the heavens finally restores the hero."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Väinämöinen in Tuonela and in Antero Vipunen",
+   "lines": "Runos 16–17",
+   "section": 16,
+   "summary": [
+    "Väinämöinen sings himself a boat but lacks three magic words to finish it. He goes to Tuonela, the land of the dead, to look for them. Tuoni's daughter ferries him across the black river, and he is offered beer full of frogs and worms. The people of Tuonela try to keep him by spreading nets of iron across the river, but he changes his shape and slips through them, 'like an otter in the reed-beds', 'like an iron snake'. Back in the world of the living he warns against wrongdoing, which leads men to Tuoni's realm.",
+    "A shepherd tells him that the words are to be found in the mouth of the giant Antero Vipunen, who lies dead and buried, with trees growing on him. Väinämöinen has iron shoes forged and goes to dig him up. Vipunen swallows him. Inside the giant's belly Väinämöinen makes a smithy out of his clothes and begins to hammer, causing Vipunen such pain that the giant curses and begs him to leave. To be rid of him, Vipunen opens his store of knowledge and sings all the words of origin for days on end. Väinämöinen takes the words, comes out, and finishes his boat."
+   ],
+   "analysis": [
+    "These two runos repeat the pattern of a journey to the otherworld in search of knowledge, and they show Väinämöinen most clearly as a seer of the shamanic type, whose power depends on visiting the dead. Anna-Leena Siikala has read such passages as reflexes of a tietäjä ('one who knows') tradition, the Finnish sage-healer who drew on spirits and the dead for his words [[siikala2002]].",
+    "The Vipunen episode is also comic. The great sage sits in a giant's stomach banging on an improvised anvil until the giant pays him to stop. The humour does not undercut the seriousness of the search for words; rather, it reflects the oral tradition's mixture of solemnity and burlesque."
+   ],
+   "key": [
+    {
+     "ref": "Runo 16",
+     "quote": "\"Bring a boat, O Tuoni's daughter,\nRow across, O child of Mana,\nThat the stream I may pass over.",
+     "note": "Väinämöinen at the river of death; Tuoni and Mana are names for the god of the dead and his realm."
+    },
+    {
+     "ref": "Runo 17",
+     "quote": "With his shirt he made a smithy,\nWith his shirt-sleeves made his bellows,\nWith the fur he made the wind-bag,",
+     "note": "The hero turns the giant's belly into a forge, a comic image of the craft by which knowledge is won."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "The Wedding at Pohjola",
+   "lines": "Runos 18–25",
+   "section": 18,
+   "summary": [
+    "Väinämöinen sails north to woo the Maiden of Pohjola again; Ilmarinen, warned by his sister Annikki, follows by sledge. The maiden chooses the young smith over the old singer, preferring a husband with skill to one with wealth. Louhi sets Ilmarinen tasks: to plough a field of vipers, to bridle the bear and wolf of Tuonela, and to catch the great pike of Tuoni's river. With the maiden's advice and his own craft he succeeds, and the betrothal is made.",
+    "Pohjola prepares the wedding. A great ox is slaughtered, and Runo 20 tells the origin of beer, brewed for the first time by Osmotar. The guests arrive, and Väinämöinen sings at the feast. The bride is reminded of everything she is leaving behind and laments; in Runo 23 she is instructed at great length in the duties of a wife in her husband's household, and an old woman tells the story of her own miserable marriage.",
+    "The couple depart, the bride weeping farewell to her home. At Ilmarinen's house they are welcomed with songs of praise; Väinämöinen sings, his sledge breaks, and he has to fetch an auger from Tuonela to repair it. The section ends in feasting."
+   ],
+   "analysis": [
+    "This long sequence, which some first-time readers find slow, is one of Lönnrot's most important additions. He built it from the wedding songs and laments of Karelian tradition, which were ritual songs sung at real weddings, and set them into the epic as an extended ceremony. The result preserves a whole folk custom inside the narrative, and shows how Lönnrot wanted the epic to be an encyclopedia of the life of the people as well as a story [[honko1990]] [[dubois1995]].",
+    "The laments and instructions speak frankly about the hardship of marriage for a woman taken from her family to a household where she must obey a mother-in-law. The bride's voice, and the old woman's story, set the rhetoric of praise against a sharp sense of loss. Thomas DuBois and others have stressed how much of the Kalevala's oral material came from women's song traditions, even though Lönnrot's chief informants were male singers [[dubois1995]].",
+    "The origin of beer in Runo 20, sung at the feast, follows the same logic as the origin of iron: the ritual drink is honoured by the telling of its birth."
+   ],
+   "key": [
+    {
+     "ref": "Runo 20",
+     "quote": "\"Ale of barley is concocted,\nAnd the drink with hops is flavoured,",
+     "note": "The origin of beer, told before the wedding feast. A ritual drink needs its myth of origin."
+    },
+    {
+     "ref": "Runo 22",
+     "quote": "\"Weep thou, weep thou, youthful maiden,\nWhen thou weepest, weep thou sorely.",
+     "note": "The bride is urged to lament. Wedding laments were a real ritual genre, and Lönnrot set them into the epic."
+    },
+    {
+     "ref": "Runo 23",
+     "quote": "Now the girl must be instructed,\nAnd the bride be taught her duty,",
+     "note": "The opening of the longest runo, the instruction of the bride, a compendium of household custom."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Lemminkäinen's Further Adventures",
+   "lines": "Runos 26–30",
+   "section": 26,
+   "summary": [
+    "Lemminkäinen, angry at not being invited to the wedding, sets out for Pohjola against his mother's warnings, and overcomes a fiery eagle, a pit of burning stones and a wall of serpents. He arrives uninvited, is offered beer full of snakes, and quarrels with the master of Pohjola. Their contest of magic turns into a sword-fight in the yard, and Lemminkäinen strikes off his host's head.",
+    "He flees home, and his mother sends him to hide on an island beyond nine lakes, where his father once sheltered in time of war. There he lives among the women of the island and makes love to them all, until the men return and plot to kill him. He escapes by sea, weeping at leaving, and finds his home burned down and his mother hiding in the forest.",
+    "Lemminkäinen then sets out with his comrade Tiera to take revenge on Pohjola. Louhi sends the Frost against them; their boat is frozen in the sea, and Lemminkäinen saves himself only by a charm against the Frost. The two return home on foot, cold and hungry, having achieved nothing."
+   ],
+   "analysis": [
+    "The second Lemminkäinen cycle adds comedy and pathos to his character. The killer who boasts of his deeds is also a son who runs home to his mother, a lover who weeps when he must leave his island, and a failed avenger. The episodes on the island (Saari) may preserve an older figure of Lemminkäinen as a lover, whose name some have linked with the Finnish word for love [[magoun1963]].",
+    "The killing of the master of Pohjola matters to the plot. It turns the rivalry between the two lands into open feud, and so prepares for the final war over the Sampo."
+   ],
+   "key": [
+    {
+     "ref": "Runo 28",
+     "quote": "To an island on its surface,\nWhere the cliffs arise from water.\nThere in former times your father\nHid, and kept himself in safety,",
+     "note": "The mother's advice. Even the reckless hero must be saved by his mother's knowledge."
+    },
+    {
+     "ref": "Runo 30",
+     "quote": "\"O my Frost, my boy so little,\nO thou foster-child I nurtured!",
+     "note": "Louhi sends the Frost against Lemminkäinen; nature itself is her weapon."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Kullervo",
+   "lines": "Runos 31–36",
+   "section": 31,
+   "summary": [
+    "Two brothers, Kalervo and Untamo, quarrel over fishing and pasture. Untamo massacres Kalervo's family and takes away a pregnant woman, who gives birth to Kullervo. The infant breaks his cradle in three days and vows revenge. Untamo tries to kill him by drowning, burning and hanging, but he survives each time. Every task he is given he ruins through excessive strength, and at last Untamo sells him to Ilmarinen as a slave.",
+    "Ilmarinen's wife, the former Maiden of Pohjola, sends him out to herd the cattle and bakes a stone into his bread. When his knife, his only keepsake of his father, breaks on the stone, Kullervo drives the cattle into the swamp, gathers wolves and bears in their place, and drives them home at evening; when she goes to milk them, they tear her apart. Kullervo flees and learns that his father, mother, brother and sister are alive near Lapland, though his sister is lost.",
+    "Sent to pay taxes, Kullervo meets a girl on the road, lures her into his sledge with gifts and seduces her; they then discover that she is his lost sister, and she throws herself into a torrent. Kullervo goes to war against Untamo and destroys his people, while his family, except his mother, show no grief at his going. Returning to find them all dead, he goes to the spot where he seduced his sister, asks his sword if it will kill him, and falls on it. Väinämöinen comments that a child should not be reared foolishly."
+   ],
+   "analysis": [
+    "The Kullervo cycle is the darkest part of the Kalevala and the one most often called tragic. Lönnrot composed it with unusual freedom, joining a ballad of an orphan slave, an Ingrian ballad of incest between a brother and sister, songs of revenge and the motif of a talking sword. Kullervo is unlike the other heroes: he is not a sage or a craftsman, and his strength brings only ruin. Many readers have found in him the most modern figure in the poem [[magoun1963]] [[dubois1995]].",
+    "The sequence is driven by a curse of origin. Kullervo is born into a feud, raised as a slave and denied love, and his ruin seems as much social as individual. The scene with the sword, which answers that it has drunk guiltless blood and will not refuse the guilty, gives his death a terrible dignity. Sibelius's choral symphony Kullervo (1892) and Tolkien's unfinished Story of Kullervo are both responses to this part of the poem, and Tolkien's Túrin Turambar, who unknowingly marries his sister and dies on a speaking sword, is its descendant [[goss2009]] [[tolkien2015]].",
+    "Väinämöinen's closing judgment, that children wrongly reared never gain understanding, has been read as a moral imposed on the material, and as a reminder that the epic is concerned with the order of community and upbringing."
+   ],
+   "key": [
+    {
+     "ref": "Runo 31",
+     "quote": "So they rocked the child in cradle,\nRocked it till his hair was tossing,",
+     "note": "Kullervo's infancy. Three days later he breaks the cradle; his strength is a portent from the start."
+    },
+    {
+     "ref": "Runo 36",
+     "quote": "And he asked the sword's opinion,\nIf it was disposed to slay him,",
+     "note": "Kullervo questions his own sword before his death, one of the most famous scenes in the poem."
+    },
+    {
+     "ref": "Runo 36",
+     "quote": "Children reared in crooked fashion,\nBoys thus rocked in stupid fashion,\nGrow not up with understanding,",
+     "note": "Väinämöinen's comment on Kullervo's fate, which places the tragedy in his upbringing."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Golden Bride, the Expedition and the Kantele",
+   "lines": "Runos 37–41",
+   "section": 37,
+   "summary": [
+    "Ilmarinen mourns his wife for months, then forges a woman of gold and silver. She is beautiful but cold: in bed he freezes on the side where she lies. He offers her to Väinämöinen, who refuses and warns young men never to bow to gold. Ilmarinen goes to Pohjola to ask for Louhi's younger daughter, is refused, and carries her off; she mocks him so cruelly that he sings her into a seagull. He tells Väinämöinen that Pohjola is prospering through the Sampo.",
+    "Väinämöinen and Ilmarinen resolve to take back the Sampo, and Lemminkäinen joins them. As they sail, the boat sticks fast on the back of a great pike. Väinämöinen kills it, and from its jawbone he makes the first kantele, the Finnish harp. No one else can play it.",
+    "When Väinämöinen plays, every creature comes to listen: the animals of the forest, the birds of the air, the fish of the waters, and the spirits of nature. All who hear him weep, and at last he weeps himself. His tears fall into the sea and become pearls, which a duck brings back to him."
+   ],
+   "analysis": [
+    "The golden bride is a parable of craft without life: the smith can make anything except love. Väinämöinen's refusal is one of the poem's clearest moral statements, and it prepares for the turn from the forging of objects to the making of music.",
+    "The kantele scene is one of the high points of the Kalevala and was central to its later reception. Väinämöinen's playing resembles that of Orpheus, but its meaning in the Finnish context is national: the kantele became a symbol of Finnish culture, and the image of the old singer whose music moves all creation was painted, sculpted and set to music throughout the nineteenth and twentieth centuries [[pentikainen1999]] [[goss2009]]. The poem here celebrates its own art, the power of song to bind together the human and natural worlds."
+   ],
+   "key": [
+    {
+     "ref": "Runo 40",
+     "quote": "\"What might perhaps be fashioned from them,\nFrom the pike's teeth be constructed,\nFrom the fragments of the jawbones,",
+     "note": "The first kantele is made from a fish's jaw: art is won from the wild."
+    },
+    {
+     "ref": "Runo 41",
+     "quote": "They were tears than cranberries larger,\nThey were tears than peas much larger,",
+     "note": "Väinämöinen's tears at his own music. Hyperbole and parallel comparison are typical of the metre."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "The Theft of the Sampo and the Sea Battle",
+   "lines": "Runos 42–44",
+   "section": 42,
+   "summary": [
+    "The three heroes reach Pohjola and demand a share of the Sampo. Louhi refuses, and Väinämöinen plays his kantele until all the people of Pohjola fall asleep. The heroes open the copper mountain, where the Sampo is rooted nine fathoms deep, and with a great ox they plough it free and carry it to their boat. Lemminkäinen, against advice, begins to sing; a crane, startled by his voice, flies to Pohjola and wakes Louhi.",
+    "Louhi raises a fog, a storm and the sea-monster Iku-Turso against them, and in the storm the kantele is lost overboard. Then she fits out a warship and pursues them. Väinämöinen sings a reef into the sea, and her ship is wrecked; she turns herself into a huge eagle, with the warriors on her wings and tail, and seizes the Sampo. In the struggle Väinämöinen strikes her with his rudder, and the Sampo falls and shatters.",
+    "Its larger pieces sink to the bottom and become the wealth of the sea; its smaller fragments drift ashore in Finland, where Väinämöinen gathers them and prays that they will bring prosperity. Louhi takes back only the lid, and her land falls into poverty. Väinämöinen searches the sea for his lost harp without success, and then makes a new kantele of birch wood, with pegs from an oak and strings from a maiden's hair."
+   ],
+   "analysis": [
+    "The sea battle is the climax of the epic plot and the centrepiece of Gallen-Kallela's Defence of the Sampo (1896), in which Louhi as eagle grapples with Väinämöinen. The scattering of the Sampo explains the riches of the sea and the fertility of Finland: the object is lost, but its blessing is distributed. Lönnrot placed this outcome where it could be read as a founding myth of national prosperity [[wilson1976]] [[pentikainen1999]].",
+    "The new kantele made of birch, which weeps because no one cares for it, links the instrument to the land itself. The first harp came from the depths; the second grows from Finnish soil."
+   ],
+   "key": [
+    {
+     "ref": "Runo 42",
+     "quote": "There in Pohjola's stone mountain,\nAnd within the hill of copper.\nNine the locks that there secured it,",
+     "note": "The Sampo is hidden deep in the earth, almost as if it were rooted there."
+    },
+    {
+     "ref": "Runo 43",
+     "quote": "Saw the fragments of the Sampo,\nSplinters of the pictured cover.",
+     "note": "Väinämöinen finds the fragments on the shore."
+    },
+    {
+     "ref": "Runo 43",
+     "quote": "\"From these seeds the plant is sprouting,\nLasting welfare is commencing,\nHere is ploughing, here is sowing,",
+     "note": "Väinämöinen's prayer over the fragments makes the Sampo the source of the land's future welfare."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Louhi's Revenge: Plague, Bear, Sun and Moon",
+   "lines": "Runos 45–49",
+   "section": 45,
+   "summary": [
+    "Louhi sends the diseases, the nine sons of the blind Loviatar, against Kalevala. Väinämöinen heals the people with a sauna, ointments and charms. She then sends a bear against their cattle. Väinämöinen kills the bear, and Runo 46 is a full bear feast, with songs that honour the bear, Otso, tell of his birth in the heavens, and send his spirit away with respect.",
+    "When Väinämöinen's music draws the sun and moon down to listen, Louhi seizes them and hides them in a mountain of stone, and steals fire from the homes of Kalevala. Darkness falls on the world. Ukko, the god of the sky, strikes a new spark, which falls to earth, burns through the land, and is swallowed by a series of fish. Väinämöinen and Ilmarinen catch the fish and recover the fire.",
+    "Ilmarinen forges a false sun and moon of gold and silver, but they do not shine. Väinämöinen goes to Pohjola, defeats its men and finds the sun and moon locked away. Ilmarinen begins to forge a collar to chain Louhi; frightened, she releases the sun and moon, and Väinämöinen greets them with a prayer."
+   ],
+   "analysis": [
+    "These runos bring the poem back to cosmic myth. After the theft of the Sampo, the struggle with Pohjola becomes a struggle over the conditions of life itself: health, cattle, fire and light. Louhi's attempt to bring permanent darkness is the counterpart of the creation in Runo 1.",
+    "The bear songs of Runo 46 are among the most important ethnographic materials in the poem. The bear was a sacred animal across the northern forest zone, and the songs, which ask the bear's pardon and claim that he died by accident, belong to a widespread ritual complex studied by folklorists and historians of religion [[pentikainen1999]] [[siikala2002]]. As elsewhere, Lönnrot preserved a ritual by embedding it in the story."
+   ],
+   "key": [
+    {
+     "ref": "Runo 46",
+     "quote": "\"O my Otso, O my darling,\nFair one with the paws of honey,",
+     "note": "The bear is addressed by a respectful name, as ritual required."
+    },
+    {
+     "ref": "Runo 47",
+     "quote": "In the moon's house heard they playing\nCame delight to the sun's window,",
+     "note": "Väinämöinen's music draws sun and moon down to listen, and so makes possible their theft."
+    },
+    {
+     "ref": "Runo 47",
+     "quote": "Louhi, Pohjola's old Mistress,\nOld and gap-toothed dame of Pohja,\nSet to work the sun to capture,",
+     "note": "Louhi's final revenge is cosmic: to steal light itself."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Marjatta and Väinämöinen's Departure",
+   "lines": "Runo 50 and Epilogue",
+   "section": 50,
+   "summary": [
+    "Marjatta, a pure young girl, refuses to eat any food that might be connected with sexual union. A cranberry on the hillside calls to her to pick it; she eats it and becomes pregnant. Her parents drive her out as a harlot. She seeks shelter in vain and gives birth to a son in a stable, where a horse warms her with its breath. The child is lost and found in a swamp.",
+    "An old man, Virokannas, is called to baptise the boy, but refuses until he has been judged. Väinämöinen judges that the fatherless child should be taken to the swamp and killed. The infant, only two weeks old, rebukes him for his own past misdeeds, among them causing young girls to drown in the sea, a reminder of Aino. The boy is baptised King of Karelia.",
+    "Väinämöinen, angry and shamed, sings himself a copper boat and sails away to the place where earth and sky meet, prophesying that he will be needed again to make another Sampo, another kantele and new light. He leaves behind his kantele and his songs for his people. In the closing lines the singer winds up his songs like a ball of yarn and declares that he has opened a path for future singers."
+   ],
+   "analysis": [
+    "The Marjatta runo draws on Karelian legend songs about the Virgin Mary and Christ, adapted from Christian apocrypha into the native metre. By placing it at the end, Lönnrot gave the epic a historical shape: the old order of Väinämöinen gives way to Christianity, embodied in a new king. The scene in which the child rebukes the sage reverses the poem's hierarchy of wisdom: the oldest singer is judged by the youngest [[pentikainen1999]] [[dubois1995]].",
+    "Yet the ending is ambiguous. Väinämöinen's departure is not a simple defeat; he promises to return, and his kantele and songs remain. Many Finnish readers have taken this as a promise that the old culture will survive, and some, in the age of national awakening, as a political prophecy. The closing epilogue, in which the singer calls himself a poor orphan who has nonetheless shown the way, returns to the frame of the proem, and has often been read as Lönnrot's own voice [[honko1990]]."
+   ],
+   "key": [
+    {
+     "ref": "Runo 50",
+     "quote": "From the hill there cried a berry,\nFrom the heath there cried a cranberry,\n\"O thou maiden, come and pluck me,",
+     "note": "The miraculous conception, adapted from legend songs of the Virgin Mary."
+    },
+    {
+     "ref": "Runo 50",
+     "quote": "Then the old man quickly crossed him,\nQuick baptized the child with water,\nAs the king of all Carelia,\nAnd the lord of all the mighty.",
+     "note": "The baptism of Marjatta's son as King of Karelia signals the coming of Christianity."
+    },
+    {
+     "ref": "Runo 50",
+     "quote": "\"May the time pass quickly o'er us,\nOne day passes, comes another,\nAnd again shall I be needed.",
+     "note": "Väinämöinen's parting prophecy that he will return."
+    },
+    {
+     "ref": "Runo 50 (Epilogue)",
+     "quote": "But let this be as it may be,\nI have shown the way to singers,",
+     "note": "The singer's last words, often read as Lönnrot's own statement about his work."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Väinämöinen",
+   "side": "Kalevala heroes",
+   "text": "Son of Ilmatar, born old, the 'eternal singer' and sage. His power lies in knowledge of origins and in song; he clears the land, wins contests of wisdom, travels to the dead in search of words, makes the kantele, and leads the theft of the Sampo. As a lover he always fails, and the poem shows him weeping, foolish and in the end rebuked and displaced. In the oral tradition he may once have been a god of water or a mythical first shaman."
+  },
+  {
+   "name": "Ilmarinen",
+   "side": "Kalevala heroes",
+   "text": "The 'eternal smith' who forged the sky and forges the Sampo. He wins the Maiden of Pohjola, loses her to Kullervo's revenge, forges a bride of gold, and joins the expedition for the Sampo. He is a figure of craft and practical skill, less wise than Väinämöinen and less wild than Lemminkäinen."
+  },
+  {
+   "name": "Lemminkäinen",
+   "side": "Kalevala heroes",
+   "text": "Also called Kaukomieli and Ahti, a handsome, boastful warrior and seducer. He abducts Kyllikki, dies in Pohjola and is restored to life by his mother, kills the master of Pohjola, hides on the island of women, and spoils the theft of the Sampo by singing at the wrong moment. Kirby spells him Lemminkainen."
+  },
+  {
+   "name": "Kullervo",
+   "side": "Kalevala heroes",
+   "text": "Son of Kalervo, born a slave after his family is massacred by his uncle Untamo. Of terrible strength and bitter temper, he ruins every task he is given, takes revenge on Ilmarinen's wife, seduces his own sister without knowing her, destroys Untamo's people and kills himself on his sword. He is the poem's tragic figure and the model for Tolkien's Túrin."
+  },
+  {
+   "name": "Louhi",
+   "side": "Pohjola",
+   "text": "The gap-toothed Mistress of Pohjola, a powerful sorceress who rules the North. She bargains her daughters for the Sampo, keeps it in a copper mountain, pursues the heroes in the shape of a giant eagle, and takes revenge with plague, a bear and the theft of the sun and moon. She is the heroes' great antagonist and one of the most formidable women in epic."
+  },
+  {
+   "name": "The Maiden of Pohjola",
+   "side": "Pohjola",
+   "text": "Louhi's elder daughter, the bride sought by all the heroes. She sets Väinämöinen impossible tasks, chooses Ilmarinen, and is lamented and instructed at her wedding. As Ilmarinen's wife she bakes a stone in Kullervo's bread and is killed by his wolves and bears."
+  },
+  {
+   "name": "The master of Pohjola",
+   "side": "Pohjola",
+   "text": "Louhi's husband, a minor figure, killed by Lemminkäinen in a duel after a contest of magic."
+  },
+  {
+   "name": "The blind cowherd",
+   "side": "Pohjola",
+   "text": "An old herdsman of Pohjola (in Finnish Märkähattu, 'wet-hat') whom Lemminkäinen insults; he waits at the river of Tuonela and kills the hero with a water-snake."
+  },
+  {
+   "name": "Ilmatar",
+   "side": "Women",
+   "text": "Daughter of the air and mother of Väinämöinen, who floats on the primeval sea and gives shape to the world after the eggs break on her knee. Lönnrot gave her this creative role, which in many oral variants belonged to Väinämöinen himself."
+  },
+  {
+   "name": "Aino",
+   "side": "Women",
+   "text": "Joukahainen's young sister, promised to the old Väinämöinen. She drowns herself rather than marry him, and returns as a salmon to mock his failure to know her. Her story is one of the best loved in the poem."
+  },
+  {
+   "name": "Lemminkäinen's mother",
+   "side": "Women",
+   "text": "A wise woman who warns her son, searches for him across the world, rakes his body from the river of death and restores him to life. She is the poem's image of a love that defies death."
+  },
+  {
+   "name": "Kyllikki",
+   "side": "Women",
+   "text": "The 'flower of the island', abducted by Lemminkäinen. When she breaks her vow not to go dancing in the village, he leaves her."
+  },
+  {
+   "name": "Kullervo's sister",
+   "side": "Women",
+   "text": "Lost while gathering berries, she is seduced by Kullervo before either knows the other, and throws herself into a torrent when she learns the truth."
+  },
+  {
+   "name": "Marjatta",
+   "side": "Women",
+   "text": "A pure virgin who conceives by eating a cranberry and bears a son in a stable; the child is baptised King of Karelia. She is modelled on the Virgin Mary of Karelian legend songs."
+  },
+  {
+   "name": "Joukahainen",
+   "side": "Others",
+   "text": "A young Lapp singer who challenges Väinämöinen, is sung into a swamp, promises his sister Aino, and later shoots Väinämöinen's horse from under him in revenge."
+  },
+  {
+   "name": "Antero Vipunen",
+   "side": "Others",
+   "text": "A dead giant sage buried under the earth, whose stomach holds all the words of origin. He swallows Väinämöinen and, tormented by his hammering, sings him the knowledge he seeks."
+  },
+  {
+   "name": "Untamo and Kalervo",
+   "side": "Others",
+   "text": "Brothers whose quarrel turns into a feud; Untamo destroys Kalervo's household and enslaves the infant Kullervo, who later annihilates Untamo's people."
+  },
+  {
+   "name": "Ukko",
+   "side": "Others",
+   "text": "The supreme god of the sky and thunder, invoked in prayer throughout the poem; he strikes the new spark of fire when the sun and moon are stolen."
+  },
+  {
+   "name": "Tuoni",
+   "side": "Others",
+   "text": "Lord of Tuonela (also called Manala), the land of the dead, across a black river. His daughter and son appear in the stories of Väinämöinen and Lemminkäinen."
+  },
+  {
+   "name": "Osmotar",
+   "side": "Others",
+   "text": "The woman who brews the first beer (Runo 20)."
+  },
+  {
+   "name": "Virokannas",
+   "side": "Others",
+   "text": "The old man who baptises Marjatta's son, after Väinämöinen's judgment is overturned by the infant."
+  }
+ ],
+ "themes": [
+  {
+   "title": "The power of the word",
+   "text": [
+    "In the Kalevala, song is the highest form of power. Väinämöinen defeats Joukahainen by singing, builds boats with words, heals wounds by reciting the origins of iron, and needs three missing words to complete his work. Knowledge of how a thing came to be gives power over it, and much of the poem consists of these charms of origin, preserved from the healing and magical practice of the tietäjä, the traditional sage [[siikala2002]] [[kuusi1977]].",
+    "The emphasis on song is also self-referential. The poem begins and ends with a singer speaking of his art, and the kantele is the instrument that moves the whole of creation. The Kalevala celebrates the tradition from which it is made."
+   ]
+  },
+  {
+   "title": "Craft, wealth and the Sampo",
+   "text": [
+    "Alongside the singer stands the smith. Ilmarinen forges the sky, the Sampo, the rake that saves Lemminkäinen, the golden bride and a false sun and moon. His craft creates wealth but cannot create life or love. The Sampo, the greatest product of craft, brings prosperity to whoever holds it and becomes the object of the poem's central struggle.",
+    "The fate of the Sampo makes wealth a common inheritance rather than a possession: shattered, it enriches the sea and the land. This ending fitted well with the nineteenth-century vision of the Finnish people as heirs to a shared treasure [[wilson1976]]."
+   ]
+  },
+  {
+   "title": "Marriage and women's lives",
+   "text": [
+    "Wooing drives much of the plot, but the poem keeps returning to marriage as seen by the bride: Aino's despair at being promised to an old man, the Maiden of Pohjola's laments, the instruction of the bride and the old woman's story of her own marriage, Kyllikki's abduction, the golden bride. Much of this material comes from Karelian women's songs and laments, and it gives the epic a range of voices unusual in heroic poetry [[dubois1995]].",
+    "The women of the Kalevala are also powerful in their own right. Ilmatar shapes the world, Louhi rules a land and outwits the heroes, and Lemminkäinen's mother brings her son back from death."
+   ]
+  },
+  {
+   "title": "North and South: Kalevala and Pohjola",
+   "text": [
+    "The opposition between Kalevala and Pohjola organises the epic. Pohjola is dark, cold and dangerous, ruled by a witch, the source of disease and frost; yet it also has the brides and the wealth that the heroes desire. The rivalry moves from courtship to feud to war, and ends with the transfer of prosperity from North to South.",
+    "Scholars have read the opposition in mythical terms, as a contrast between this world and an otherworld, and in historical ones, as an echo of conflicts between Finns and Sámi or between farming and hunting peoples. Lönnrot himself inclined to a historical reading of the heroes as ancient chieftains [[pentikainen1999]] [[honko1990]]."
+   ]
+  },
+  {
+   "title": "Death and the otherworld",
+   "text": [
+    "Tuonela, the land of the dead across a black river, is a constant presence. Väinämöinen goes there for words and for an auger, Lemminkäinen dies at its river, and Ilmarinen must catch its pike. The poem treats the boundary between life and death as crossable by those with knowledge, and its images of journeys to the dead have been connected with shamanic traditions of northern Eurasia [[siikala2002]]."
+   ]
+  },
+  {
+   "title": "The old order and the new",
+   "text": [
+    "The Kalevala moves from the Creation to the coming of Christianity. Its last runo replaces the old sage with a child king, and its final image is of Väinämöinen departing. The ending can be read as the triumph of the new faith, as a lament for the passing of the old culture, or as a promise of its return. The tension between these readings mirrors the situation of the Kalevala itself, an ancient pagan tradition gathered by a Lutheran doctor for a modern nation [[pentikainen1999]]."
+   ]
+  },
+  {
+   "title": "Fate, upbringing and tragedy",
+   "text": [
+    "Kullervo's story raises the question of whether character is fate or the product of circumstance. Born into feud and slavery, deprived of love, he becomes destructive, and Väinämöinen's comment blames his rearing. The cycle has been read as a study of the damage done by injustice, and as a tragedy in the Greek sense, in which a man unknowingly commits a crime against his own blood [[tolkien2015]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Parallelism",
+   "text": "Nearly every statement in the Kalevala is made twice, the second line repeating the first with different words: 'Born of Ilmatar, his mother'. This parallelism is the basic structural principle of the metre and of the poem; it slows the narration, gives it a ritual weight, and makes it suited to performance by two singers [[kuusi1977]]."
+  },
+  {
+   "title": "Origins (synty)",
+   "text": "The poem constantly tells the origin of things: the world, iron, beer, fire, the bear, the kantele. In Finnish folk belief, knowing the origin of something gave power over it, so these passages are both stories and spells [[siikala2002]]."
+  },
+  {
+   "title": "Impossible tasks",
+   "text": "Every wooing in Pohjola involves impossible tasks set by Louhi or her daughter: forging the Sampo, catching the elk of Hiisi, ploughing the field of vipers, catching the pike of Tuonela. The heroes succeed through craft, magic, or the help of the bride herself."
+  },
+  {
+   "title": "Journeys to Tuonela",
+   "text": "Heroes repeatedly cross to the land of the dead, by boat or on foot, to seek knowledge or perform tasks, and return or fail to return. The motif links the epic to shamanic journeys."
+  },
+  {
+   "title": "Mothers and their advice",
+   "text": "Mothers warn, advise and save their sons: Väinämöinen's mother speaks from the grave, Lemminkäinen's mother restores him to life, and Kullervo's mother alone grieves at his departure. Ignoring a mother's advice almost always leads to disaster."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The Sampo",
+   "text": "A magic object of uncertain form, which grinds grain, salt and money and brings prosperity to whoever holds it. It has been read as a mill, a world pillar, a sun symbol, a shield, a cult image and much else. In the poem it is the source of wealth and the object of the central conflict, and after its destruction a symbol of the welfare of the land."
+  },
+  {
+   "title": "The kantele",
+   "text": "The Finnish harp, made by Väinämöinen from a pike's jawbone and then from birch. Its music moves all creation, and Väinämöinen leaves it to his people when he departs. It became a national symbol of Finnish culture and of the Kalevala itself."
+  },
+  {
+   "title": "The world-egg",
+   "text": "The broken egg from which the cosmos is made, an image of creation from fragments. It has an unexpected parallel in Lönnrot's own method of making a whole from scattered songs."
+  },
+  {
+   "title": "The copper boat",
+   "text": "The vessel in which Väinämöinen departs at the end, sailing to the meeting of earth and sky. It symbolises both the end of the old era and the promise of return."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Collector or author? Lönnrot's role",
+   "text": [
+    "For much of the nineteenth century the Kalevala was presented as a genuine folk epic, the remains of an ancient poem that Lönnrot had restored, as philologists of the time believed Homer's poems had been assembled from popular songs. Lönnrot himself was more candid. In his prefaces he explained that because the singers arranged the episodes in different ways, he felt entitled to arrange them himself, and that he had joined variants and added lines where needed.",
+    "Modern scholarship generally treats the Kalevala as a 'national epic composed from folk poetry', a work by Lönnrot built from authentic oral materials. Comparison with the collected originals, published in the vast series Suomen Kansan Vanhat Runot, shows that only a small proportion of the lines are his own, but that the structure, the plot and many characters' roles are his. Lauri Honko argued that Lönnrot should be seen as a singer in his own right, a performer of the tradition in written form, while others stress his debt to romantic theories of epic [[honko1990]] [[honko2002]] [[dubois1995]] [[magoun1969]]."
+   ],
+   "cite": [
+    "honko1990",
+    "honko2002",
+    "dubois1995",
+    "magoun1969"
+   ]
+  },
+  {
+   "title": "What is the Sampo?",
+   "text": [
+    "The Sampo has generated more interpretations than any other element of the poem. Earlier scholars saw it as a mill of plenty, as the poem describes; others as a world pillar or axis supporting the heavens, a sun symbol, a decorated shield (one interpretation of its 'pictured cover'), a sacred idol, a ship, a treasure or a symbol of agriculture and settled life. Some have tied it to Viking-age trade or to particular objects.",
+    "No interpretation has won general agreement, partly because the oral songs themselves give contradictory pictures, and partly because Lönnrot used the Sampo to bind together materials of different origin. The very indeterminacy of the object may be part of its power [[pentikainen1999]] [[siikala2002]] [[kuusi1977]]."
+   ],
+   "cite": [
+    "pentikainen1999",
+    "siikala2002",
+    "kuusi1977"
+   ]
+  },
+  {
+   "title": "The Kalevala and Finnish nationalism",
+   "text": [
+    "The Kalevala became central to Finnish national identity in a way few epics have. It was taught in schools, celebrated on Kalevala Day, used to argue for the dignity of the Finnish language, and drawn on by artists in the 'Karelianist' movement of the 1890s, a time of growing Russian pressure on Finnish autonomy. William A. Wilson showed how the poem was read as history and used to support political programmes, and how some of these uses, especially in the 1920s and 1930s, were nationalist and expansionist [[wilson1976]].",
+    "Later scholars have examined the 'invention of tradition' involved and the ways in which folklore studies and the nation-state shaped each other. The poem's relationship with nationalism is thus a subject of scholarship in its own right [[anttonen2005]] [[wilson1976]]."
+   ],
+   "cite": [
+    "wilson1976",
+    "anttonen2005"
+   ]
+  },
+  {
+   "title": "Karelian origins and the border",
+   "text": [
+    "Most of the best songs Lönnrot used were collected in Viena Karelia (Archangel Karelia), a region of the Russian Empire inhabited by Orthodox Karelians, outside the Grand Duchy of Finland. The Finnish national epic was therefore largely sung by people who were not Finnish subjects. This fact gave Karelia a special place in Finnish imagination as the home of the old culture, and was later drawn into arguments about the Russian–Finnish border, especially after independence and in the wars of 1939–44 [[wilson1976]].",
+    "Contemporary scholarship emphasises that the songs belonged to many regional traditions, including Ingrian and Savo ones, and that the Karelian singers' own culture had its own identity, not simply a preservation of a Finnish past [[dubois1995]] [[kuusi1977]]."
+   ],
+   "cite": [
+    "wilson1976",
+    "dubois1995",
+    "kuusi1977"
+   ]
+  },
+  {
+   "title": "Kullervo as tragic hero",
+   "text": [
+    "Kullervo has often been called the most tragic figure in the Kalevala and compared with Oedipus or Hamlet. Some readers emphasise fate and the curse of the feud; others see a social tragedy of a slave deprived of love; others a psychological study of rage. Lönnrot composed the cycle from several songs, and its unity is largely his.",
+    "The episode has had a remarkable afterlife. Sibelius made it the subject of his first major work, and Tolkien, who called the Kullervo story the germ of his attempt to write legends of his own, reworked it in the story of Túrin. Verlyn Flieger's edition of Tolkien's Story of Kullervo documents this link [[tolkien2015]] [[goss2009]]."
+   ],
+   "cite": [
+    "tolkien2015",
+    "goss2009"
+   ]
+  },
+  {
+   "title": "Marjatta and the Christian ending",
+   "text": [
+    "The final runo has been read in sharply different ways. For some it is a Christian triumph, in which the pagan sage yields to the new king; for others it is a lament for the old culture, softened by Väinämöinen's promise of return. Some nineteenth-century readers found the ending awkward and felt that it broke the poem's pagan unity.",
+    "The material is traditional: Karelian singers had legend songs about Mary and her child in the same metre, and the baptism by Virokannas also has traditional roots. But the decision to end the epic with this scene was Lönnrot's, and it gives the poem a historical shape, from creation to Christianisation, modelled on the idea that the epic told the people's history [[pentikainen1999]] [[honko1990]]."
+   ],
+   "cite": [
+    "pentikainen1999",
+    "honko1990"
+   ]
+  },
+  {
+   "title": "Translating the Kalevala",
+   "text": [
+    "English translators have had to decide whether to keep the trochaic metre. Crawford (1888) and Kirby (1907) did, as Longfellow had done in imitation; the metre, natural in Finnish where every word is stressed on its first syllable, can sound monotonous in English. Magoun (1963) chose prose to be faithful to sense, Eino Friberg (1988) a loosened form of the original metre, and Keith Bosley (1989) a flexible syllabic verse [[crawford1888]] [[kirby1907]] [[magoun1963]] [[friberg1988]] [[bosley1989]].",
+    "Kirby's translation, reissued with an introduction by Michael Branch in 1985, remains valued for following the Finnish closely line by line, despite its archaic diction [[branch1985]]. The resemblance between the Kalevala metre and Hiawatha also led to an early controversy in which Longfellow was accused of plagiarism; Ernest Moyne's study set out the relationship [[moyne1963]]."
+   ],
+   "cite": [
+    "crawford1888",
+    "kirby1907",
+    "magoun1963",
+    "friberg1988",
+    "bosley1989",
+    "branch1985",
+    "moyne1963"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Runo 1, 1–4",
+   "quote": "I am driven by my longing,\nAnd my understanding urges\nThat I should commence my singing;\nAnd begin my recitation.",
+   "who": "The singer",
+   "explanation": "The opening of the poem presents singing as a compulsion and, in the following lines, as a shared inheritance. The singer is the poem's first character, and the Kalevala's subject is as much the tradition of song as the deeds of heroes."
+  },
+  {
+   "ref": "Runo 1",
+   "quote": "From the cracked egg's lower fragment,\nNow the solid earth was fashioned,\nFrom the cracked egg's upper fragment,\nRose the lofty arch of heaven,",
+   "who": "The narrator",
+   "explanation": "The world is made from the fragments of a broken egg. The parallel lines show the structure of the Kalevala metre, and the whole passage shows the poem's concern with origins."
+  },
+  {
+   "ref": "Runo 4",
+   "quote": "There the dove for ever vanished,\nThus the luckless maiden perished,",
+   "who": "The narrator",
+   "explanation": "Aino's drowning, one of the most famous moments in the poem. Her refusal of the old Väinämöinen introduces the theme of marriage from the bride's point of view."
+  },
+  {
+   "ref": "Runo 10",
+   "quote": "Forged with cunning art the Sampo,\nAnd on one side was a corn-mill,\nOn another side a salt-mill,\nAnd upon the third a coin-mill.",
+   "who": "The narrator",
+   "explanation": "The forging of the Sampo, the poem's central object. Its three mills, for food, salt and money, make it a source of wealth, which explains the later struggle for it."
+  },
+  {
+   "ref": "Runo 15",
+   "quote": "Then did Lemminkainen's mother\nTake the mighty rake of iron,\nAnd she rushed to Tuoni's river,",
+   "who": "The narrator",
+   "explanation": "The mother raking her son's body from the river of death is the poem's great image of love against death. Gallen-Kallela's painting made it one of the best-known scenes of the Kalevala."
+  },
+  {
+   "ref": "Runo 36",
+   "quote": "And he asked the sword's opinion,\nIf it was disposed to slay him,",
+   "who": "The narrator",
+   "explanation": "Kullervo asks his sword whether it will kill him. The talking sword, which agrees, gives his death a grim dignity and was taken over by Tolkien in the death of Túrin."
+  },
+  {
+   "ref": "Runo 36",
+   "quote": "Children reared in crooked fashion,\nBoys thus rocked in stupid fashion,\nGrow not up with understanding,",
+   "who": "Väinämöinen",
+   "explanation": "Väinämöinen's comment on Kullervo locates the tragedy in his upbringing, inviting a social reading of the cycle."
+  },
+  {
+   "ref": "Runo 41",
+   "quote": "They were tears than cranberries larger,\nThey were tears than peas much larger,",
+   "who": "The narrator",
+   "explanation": "Väinämöinen weeps at his own music. The scene celebrates the power of song over all creation, including the singer himself."
+  },
+  {
+   "ref": "Runo 43",
+   "quote": "\"From these seeds the plant is sprouting,\nLasting welfare is commencing,\nHere is ploughing, here is sowing,",
+   "who": "Väinämöinen",
+   "explanation": "Väinämöinen's prayer over the fragments of the Sampo turns its loss into a blessing for the land, an ending that suited the national reading of the poem."
+  },
+  {
+   "ref": "Runo 50",
+   "quote": "\"May the time pass quickly o'er us,\nOne day passes, comes another,\nAnd again shall I be needed.",
+   "who": "Väinämöinen",
+   "explanation": "Departing, Väinämöinen promises to return when he is needed. The ending can be read as the triumph of Christianity or as a promise that the old culture will survive."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Is the Kalevala a folk epic or a work by Elias Lönnrot?",
+   "hint": "Consider what Lönnrot collected, what he did with it, what he said in his prefaces, and how modern scholars describe the poem."
+  },
+  {
+   "q": "Why does the poem begin with the Creation and end with the birth of Marjatta's son?",
+   "hint": "Think about the poem as a history of the world and of a people, and about what kind of ending Lönnrot chose."
+  },
+  {
+   "q": "What kind of hero is Väinämöinen?",
+   "hint": "Compare his powers with those of warrior heroes such as Akhilleus or Beowulf, and look at his failures as well as his victories."
+  },
+  {
+   "q": "What is the Sampo, and why does its meaning matter?",
+   "hint": "Consider how the poem describes it, the range of interpretations, and what its destruction means for the two lands."
+  },
+  {
+   "q": "How does the poem present marriage and the lives of women?",
+   "hint": "Look at Aino, the wedding songs of Runos 22–23, Kyllikki, Louhi and Lemminkäinen's mother."
+  },
+  {
+   "q": "Why is song so powerful in the Kalevala?",
+   "hint": "Consider the singing contest, the charms of origin, the search for words, and the kantele."
+  },
+  {
+   "q": "Is Kullervo's tragedy caused by fate, society or character?",
+   "hint": "Look at his birth, upbringing, his treatment by Ilmarinen's wife, the encounter with his sister, and Väinämöinen's final comment."
+  },
+  {
+   "q": "How do Kalevala and Pohjola differ, and how are they connected?",
+   "hint": "Think about geography, wealth, women and the course of the conflict from courtship to war."
+  },
+  {
+   "q": "Why did the Kalevala matter so much to Finland in the nineteenth century?",
+   "hint": "Consider the political situation under Russia, the status of the Finnish language, and the uses of the poem by artists and politicians."
+  },
+  {
+   "q": "What is lost and what is gained in translating the Kalevala into English?",
+   "hint": "Compare Kirby's and Crawford's trochaic versions with what you know of the Finnish metre, and consider why later translators chose prose or freer verse."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "anttonen2005",
+   "text": "Anttonen, Pertti J. Tradition through Modernity: Postmodernism and the Nation-State in Folklore Scholarship. Studia Fennica Folkloristica 15. Helsinki: Finnish Literature Society, 2005."
+  },
+  {
+   "id": "bosley1989",
+   "text": "Bosley, Keith, trans. The Kalevala: An Epic Poem after Oral Tradition by Elias Lönnrot. The World's Classics. Oxford: Oxford University Press, 1989."
+  },
+  {
+   "id": "crawford1888",
+   "text": "Crawford, John Martin, trans. The Kalevala: The Epic Poem of Finland. 2 vols. New York: John B. Alden, 1888."
+  },
+  {
+   "id": "dubois1995",
+   "text": "DuBois, Thomas A. Finnish Folk Poetry and the Kalevala. New York: Garland, 1995."
+  },
+  {
+   "id": "friberg1988",
+   "text": "Friberg, Eino, trans. The Kalevala: Epic of the Finnish People. Edited by George C. Schoolfield. Helsinki: Otava, 1988."
+  },
+  {
+   "id": "goss2009",
+   "text": "Goss, Glenda Dawn. Sibelius: A Composer's Life and the Awakening of Finland. Chicago: University of Chicago Press, 2009."
+  },
+  {
+   "id": "honko1990",
+   "text": "Honko, Lauri, ed. Religion, Myth, and Folklore in the World's Epics: The Kalevala and Its Predecessors. Religion and Society 30. Berlin: Mouton de Gruyter, 1990."
+  },
+  {
+   "id": "honko2002",
+   "text": "Honko, Lauri, ed. The Kalevala and the World's Traditional Epics. Studia Fennica Folkloristica 12. Helsinki: Finnish Literature Society, 2002."
+  },
+  {
+   "id": "kirby1907",
+   "text": "Kirby, W. F., trans. Kalevala: The Land of the Heroes. 2 vols. Everyman's Library. London: J. M. Dent, 1907."
+  },
+  {
+   "id": "branch1985",
+   "text": "Kirby, W. F., trans. Kalevala: The Land of the Heroes. Introduction by M. A. Branch. London: Athlone Press, 1985."
+  },
+  {
+   "id": "kuusi1977",
+   "text": "Kuusi, Matti, Keith Bosley and Michael Branch, eds. and trans. Finnish Folk Poetry: Epic. An Anthology in Finnish and English. Helsinki: Finnish Literature Society, 1977."
+  },
+  {
+   "id": "magoun1963",
+   "text": "Magoun, Francis Peabody, Jr., trans. The Kalevala, or Poems of the Kaleva District. Compiled by Elias Lönnrot. Cambridge, MA: Harvard University Press, 1963."
+  },
+  {
+   "id": "magoun1969",
+   "text": "Magoun, Francis Peabody, Jr., trans. The Old Kalevala and Certain Antecedents. Compiled by Elias Lönnrot. Cambridge, MA: Harvard University Press, 1969."
+  },
+  {
+   "id": "moyne1963",
+   "text": "Moyne, Ernest J. Hiawatha and Kalevala: A Study of the Relationship between Longfellow's \"Indian Edda\" and the Finnish Epic. FF Communications 192. Helsinki: Suomalainen Tiedeakatemia, 1963."
+  },
+  {
+   "id": "pentikainen1999",
+   "text": "Pentikäinen, Juha Y. Kalevala Mythology. Translated and edited by Ritva Poom. Expanded edition. Bloomington: Indiana University Press, 1999. First English edition 1989."
+  },
+  {
+   "id": "siikala2002",
+   "text": "Siikala, Anna-Leena. Mythic Images and Shamanism: A Perspective on Kalevala Poetry. FF Communications 280. Helsinki: Suomalainen Tiedeakatemia, 2002."
+  },
+  {
+   "id": "tolkien2015",
+   "text": "Tolkien, J. R. R. The Story of Kullervo. Edited by Verlyn Flieger. London: HarperCollins, 2015."
+  },
+  {
+   "id": "wilson1976",
+   "text": "Wilson, William A. Folklore and Nationalism in Modern Finland. Bloomington: Indiana University Press, 1976."
+  }
+ ]
+}

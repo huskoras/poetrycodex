@@ -1,0 +1,926 @@
+{
+ "work": "song-of-roland",
+ "title": "The Song of Roland",
+ "author": "Anonymous (Old French; 'Turoldus')",
+ "quoteEdition": "song-of-roland-moncrieff",
+ "unit": "Part",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Manuscript",
+   "value": "The oldest and best copy is Oxford, Bodleian Library, MS Digby 23, written in Anglo-Norman French in England around 1125–50; later versions survive in Venice, Châteauroux, Paris, Lyon and Cambridge"
+  },
+  {
+   "label": "Composed",
+   "value": "Probably around 1100, in the years of the First Crusade (1095–99); the legend behind it is much older"
+  },
+  {
+   "label": "Author",
+   "value": "Unknown. The last line names a Turoldus, who may have been the poet, the reciter or the copyist"
+  },
+  {
+   "label": "Genre",
+   "value": "Chanson de geste ('song of deeds'): the oldest and most famous of the Old French heroic poems about Charlemagne and his barons"
+  },
+  {
+   "label": "Length",
+   "value": "4,002 lines in the Oxford manuscript, grouped in 291 stanzas called laisses"
+  },
+  {
+   "label": "Form",
+   "value": "Decasyllabic lines with a pause after the fourth syllable, bound within each laisse by assonance on the last stressed vowel; many laisses end with the mysterious mark AOI"
+  },
+  {
+   "label": "Historical basis",
+   "value": "The ambush of Charlemagne's rearguard by Basques in a Pyrenean pass on 15 August 778, in which 'Hruodlandus, prefect of the Breton March' was killed (Einhard, Life of Charlemagne, ch. 9)"
+  },
+  {
+   "label": "Setting",
+   "value": "Muslim Spain, the pass of Roncevaux (Rencesvals) in the Pyrenees, and Charlemagne's capital at Aix (Aachen)"
+  },
+  {
+   "label": "Protagonists",
+   "value": "Roland, Charlemagne's nephew; his companion Oliver; Charlemagne himself; and the traitor Ganelon, Roland's stepfather"
+  },
+  {
+   "label": "On this site",
+   "value": "C. K. Scott Moncrieff's verse translation (1919), quoted in this guide, and John O'Hagan's verse translation (1880)"
+  }
+ ],
+ "context": [
+  "The Song of Roland survives complete in its oldest form in a single small, plain manuscript, now Oxford, Bodleian Library, MS Digby 23. It was written in England in the second quarter of the twelfth century by an Anglo-Norman scribe, probably as a working copy rather than a showpiece. The Oxford text has 4,002 lines; other versions, in Venice and in later French manuscripts that turn the assonance into full rhyme, show that the poem was rewritten many times, and it was adapted early into German (the Rolandslied of the priest Konrad) and Norse (the Karlamagnús saga). The French scholar Francisque Michel printed the Oxford text for the first time in 1837. Modern editions and translations, such as those of Cesare Segre, Ian Short and Glyn Burgess, still start from it [[segre1971]] [[short1990]] [[burgess1990]].",
+  "The last line of the Oxford text names a certain Turoldus: 'Ci falt la geste que Turoldus declinet' ('Here ends the story that Turoldus declinet'). The verb can mean 'composes', 'recites', 'copies' or 'brings to an end', so we do not know whether Turoldus was the poet, a performer, the author of a source, or the scribe; several men of that name are known from Norman England, and none can be identified with confidence [[burger1977]] [[short1990]]. Equally obscure is the mark AOI, which stands at the end of about 180 laisses in the manuscript (171 in the text on this site). It has been read as a refrain, a musical cue, a shout or a scribal sign; no explanation has won general agreement.",
+  "Most scholars date the poem as we have it to around 1100. Its picture of a Christian emperor leading the Franks to holy war against the Saracens of Spain, with an archbishop promising paradise to those who die, fits the years of the First Crusade (1095–99) and the wars of the Christian kingdoms in Spain, where Toledo fell to Castile in 1085. There is also evidence that the legend existed earlier. A Latin note in a Spanish manuscript, the Nota Emilianense (third quarter of the eleventh century), already names Roland, Oliver and the disaster at Roncevaux, and the twelfth-century historians William of Malmesbury and Wace say that a song of Roland was sung before the battle of Hastings in 1066 [[menendezpidal1959]] [[legentil1969]].",
+  "Behind the legend lies a minor event. In 778 Charlemagne, then in his thirties, crossed into Spain at the invitation of rebel Muslim governors, failed to take Saragossa and turned back. Einhard's Life of Charlemagne records that as the army returned through the Pyrenees the Basques (Wascones) ambushed and destroyed the rearguard; among the dead were the royal steward Eggihard, the count of the palace Anselm, and 'Hruodlandus, prefect of the Breton March'. An epitaph for Eggihard gives the date, 15 August. Three centuries of story-telling turned Christian mountaineers into a Saracen army of four hundred thousand, a young king into an emperor more than two hundred years old, and an obscure count into his nephew and the greatest champion of Christendom [[thorpe1969]].",
+  "The poem is built of laisses, stanzas of any length from five to more than thirty lines, each held together by a single assonance (the same stressed vowel at the end of every line). The line is a decasyllable divided after the fourth syllable. The style is paratactic: short, end-stopped sentences, placed side by side with little subordination, and a large stock of repeated formulas. The poet often tells the same moment two or three times in successive laisses with different assonances, the so-called laisses similaires; the three requests to sound the horn (laisses LXXXIII–LXXXV) are the most famous example. These repetitions slow the action at its crises and give it the gravity of ritual [[auerbach1953]] [[rychner1955]]. Scott Moncrieff's translation of 1919, quoted here, keeps the laisse divisions, the AOI and something of the assonance; the site also holds John O'Hagan's more freely rhymed version of 1880 [[moncrieff1919]] [[ohagan1880]]. References below give the laisse number and, where it is certain, the line of the Oxford manuscript (for example, Roland 1093)."
+ ],
+ "plot": [
+  "After seven years of war Charlemagne has conquered all of Spain except Saragossa, held by the Saracen king Marsile. On the advice of his counsellor Blancandrin, Marsile offers false submission: tribute, hostages and his own conversion, if Charles will go home. In the Frankish council Roland urges war, but Ganelon, his stepfather, persuades the barons to accept the offer. When an envoy must be sent to Marsile, Roland names Ganelon, who takes it as a plot to have him killed. At Saragossa Ganelon agrees with Marsile to betray Roland: he will see to it that Roland commands the rearguard as Charles leaves Spain, and the Saracens will destroy it in the mountains.",
+  "The plan works. Roland, Oliver, Archbishop Turpin, the twelve peers and twenty thousand Franks hold the pass of Roncevaux while Charles crosses into France. When Oliver sees the vast Saracen host he begs Roland three times to sound his horn, the oliphant, to bring Charles back; Roland refuses, for fear of shame. The Franks win the first battle and much of the second, but are slowly destroyed. Too late, Roland sounds the horn; Charles hears and turns back, arresting Ganelon. Oliver dies, then Turpin, and finally Roland, who tries to break his sword Durendal so that no pagan shall have it and dies under a pine tree facing Spain. Angels carry his soul to paradise.",
+  "Charles arrives to find the dead. God stops the sun so that he can pursue the fleeing Saracens and drown them in the Ebro. But Marsile has summoned Baligant, the emir of Babylon and lord of all Islam, who now lands in Spain with a huge army. In a great battle Charlemagne kills Baligant in single combat with the help of the angel Gabriel, takes Saragossa and forces the conversion of its people. Marsile dies of his wounds and grief; his queen Bramimonde is taken to France as a captive, to be converted by persuasion.",
+  "At Aix, Roland's betrothed, Aude, dies of grief when she hears of his death. Ganelon is tried before the barons. He argues that he took open revenge on Roland and committed no treason, and the barons, afraid of his kinsman Pinabel, advise the emperor to let him go. Only Thierry of Anjou maintains that betraying a man in the king's service is treason against the king, and he proves his judgement in a trial by combat, killing the stronger Pinabel. Ganelon is torn apart by four horses and thirty of his kinsmen are hanged. Bramimonde is baptised. That night Gabriel summons the weary emperor to a new war, and the poem ends with Charles weeping: 'My life is hard indeed!'"
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Laisses I–XXV: Marsile's council; Ganelon chosen",
+   "lines": "Laisses I–XXV",
+   "section": 0,
+   "summary": [
+    "The poem opens with the war almost over. Charlemagne has spent seven years in Spain and taken every city except Saragossa, where King Marsile, 'Mahumet's man', holds out. In an orchard Marsile asks his lords for counsel, and the wise Blancandrin proposes a trick: offer Charles rich tribute, hostages (Blancandrin will send his own son) and the promise that Marsile will follow him to Aix at Michaelmas and become a Christian. Once the Franks have gone home, the promise can be broken, even if the hostages lose their heads.",
+    "Marsile's envoys find Charles in an orchard at Cordres, sitting on a golden throne with his white beard and flowering hair. He takes counsel next morning. Roland, his nephew, rejects the offer: Marsile has tricked them before and beheaded two Frankish envoys, Basan and Basile. Ganelon replies that it is pride to refuse a beaten enemy's surrender, and Duke Naimes supports him. The barons agree. Naimes, Roland, Oliver and Archbishop Turpin all offer to carry the reply and are refused; Roland then names his stepfather Ganelon.",
+    "Ganelon reacts with fury. He thinks the embassy is a death sentence, commends his son Baldwin to the emperor, and openly defies Roland, Oliver and the twelve peers before the whole court. Roland laughs. As Charles holds out his right-hand glove, the sign of the mission, Ganelon lets it fall, and the Franks murmur that great loss will come of it."
+   ],
+   "analysis": [
+    "The first laisse states the whole situation in nine lines: the long war, the one city left, and a king who serves Mahumet and calls on Apollin and cannot escape his fate. The poem gives the Saracens a confused pagan religion with three gods, Mahumet, Apollin and Tervagant, and sees them throughout in mirror image of the Franks: they too have councils, barons, wise men and fair horses. The two councils, Marsile's and Charles's, are deliberately parallel.",
+    "The council scene is where Erich Auerbach began his chapter on the poem in Mimesis. He noted how its speeches are placed side by side, like separate blocks, without the reasons and connections a classical historian would supply; we are not told why Ganelon is so angry or why Roland laughs. The meaning lies in gestures and formal acts: the offer to go, the naming, the glove held out and dropped [[auerbach1953]]. The quarrel between Roland and Ganelon is personal and feudal at once. By nominating his stepfather Roland seems to some readers to provoke him; by defying Roland, Oliver and the peers in public Ganelon makes the declaration that he will later claim made his revenge lawful [[mickel1989]].",
+    "Charlemagne is a figure of authority and slow deliberation. He bows his head before he speaks, overrules his favourites, and says little; the poem gives him the dignity of a patriarch rather than the energy of a war leader."
+   ],
+   "key": [
+    {
+     "ref": "Laisse I (Roland 1–9)",
+     "quote": "Charles the King, our Lord and Sovereign,\nFull seven years hath sojourned in Spain,\nConquered the land, and won the western main,",
+     "note": "The opening sets the story at the end of a long holy war. 'Our Lord' makes the audience Charles's people; the Old French says 'our great emperor'."
+    },
+    {
+     "ref": "Laisse XXI",
+     "quote": "There I will work a little trickery,\nThis mighty wrath of mine I'll thus let free.",
+     "note": "Ganelon announces his intention in front of the court. At his trial he will rely on exactly this public declaration of enmity."
+    },
+    {
+     "ref": "Laisse XXV",
+     "quote": "When he should take, it falls upon the ground.",
+     "note": "The dropped glove is an omen and a legal gesture at once: the Franks read it at once as a sign of coming disaster."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Laisses XXVI–L: Ganelon's embassy and the treason sworn",
+   "lines": "Laisses XXVI–L",
+   "section": 1,
+   "summary": [
+    "Ganelon rides off on his horse Tachebrun, with his sword Murgleis, while his knights lament. On the road he falls in with Blancandrin, and the two men, 'cunning and keen', sound each other out. Ganelon blames the war on Roland's pride and greed, and by the time they reach Saragossa they have agreed to seek Roland's death.",
+    "Before Marsile, Ganelon delivers Charles's terms so insultingly (adding that Roland will hold half of Spain and that Marsile, if he refuses, will be taken to Aix and executed) that the king seizes a gold-feathered dart to strike him and Ganelon half draws his sword. The Saracens restrain their king, and in private, in the orchard, Marsile and Ganelon come to terms. Marsile asks three times when Charles, who is said to be more than two hundred years old, will tire of war; three times Ganelon answers: never, while Roland lives. Together they work out the plan. Marsile will send rich tribute; Ganelon will get Roland appointed to the rearguard; the Saracens will attack it in the passes with overwhelming numbers.",
+    "Ganelon swears the treason on the relics in the hilt of his sword. The Saracen lords Valdabrun and Climborin give him a sword and a helmet, and Queen Bramimonde gives him two necklaces for his wife. Marsile hands over the keys of Saragossa and the treasure."
+   ],
+   "analysis": [
+    "The embassy shows Ganelon as a man of real ability. He is handsome, eloquent and fearless in the face of death, which makes his treason more disturbing. His conversation with Blancandrin is a small masterpiece of insinuation: each man tests the other until the unspoken word, Roland's death, is spoken.",
+    "The three questions about Charlemagne's age (laisses XL–XLII) are a clear case of laisses similaires. Each laisse repeats the same question with a different assonance and adds a small variation to Ganelon's answer. The repetition fixes the poem's central claim: Roland is the key to Charles's power, so to destroy Roland is to wound the empire. The figure of 'two hundred years' turns the historical king of 778 into a legendary patriarch whose age is a sign of his authority [[rychner1955]].",
+    "The gifts tie Ganelon into a relationship of exchange with the enemy. In a feudal world, gifts create obligations, and the poem dwells on their value: the treason is a contract as well as a crime. The parallel with Judas, who sold his master for silver, is never made explicit, but later Christian versions of the story make it [[brault1978]]."
+   ],
+   "key": [
+    {
+     "ref": "Laisse XL",
+     "quote": "He's very old, his time is nearly spent,\nTwo hundred years he's lived now, as 'tis said.",
+     "note": "Marsile's question. The legendary age of Charlemagne makes him a patriarch, almost a figure out of the Old Testament."
+    },
+    {
+     "ref": "Laisse XLII",
+     "quote": "\"Never,\" says Guene, \"so long as lives Rollanz,",
+     "note": "The third and decisive answer. Ganelon tells the enemy precisely where to strike."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Laisses LI–LXXV: The rearguard; Charlemagne's dreams; the Saracen peers",
+   "lines": "Laisses LI–LXXV",
+   "section": 2,
+   "summary": [
+    "Ganelon returns to Charles with the keys of Saragossa and a false story: Marsile's uncle the caliph, who opposed the peace, has drowned at sea, and Marsile will follow Charles to France to be baptised. The emperor gives thanks and orders the army home. That night he dreams twice: Ganelon seizes his ash spear and shatters it, and at Aix a bear and a leopard attack him while a hound defends him.",
+    "Next morning, when Charles asks who shall command the rearguard, Ganelon names Roland. Roland accepts proudly; he tells Ganelon that no one shall say that the emperor's bow fell from his hand, as the token fell from Ganelon's. He refuses the half of the army that Charles offers and keeps twenty thousand men, with Oliver, Turpin, Gautier de l'Hum and the twelve peers. As the main army crosses the high, dark passes towards Gascony, the Franks weep to see France again, and Charles weeps most of all, telling Naimes that his dream has shown him Ganelon's treachery.",
+    "Meanwhile Marsile gathers four hundred thousand men. One by one, twelve Saracen champions, beginning with his nephew Aelroth, step forward and boast that they will kill Roland and the peers at Roncevaux. They are a pagan mirror of the twelve peers."
+   ],
+   "analysis": [
+    "The narrator tells us early and often what will happen. 'God! what a grief. Franks know not what is fated': the audience knows the outcome from the start, and the suspense lies not in what will happen but in how the heroes will meet it. This dramatic irony is basic to the poem's effect.",
+    "Charlemagne's dreams are the first of four (two here, two before the war with Baligant). They are allegorical and partly obscure, and they show the emperor as a man who receives knowledge from God but cannot or will not act on it. Why he lets the rearguard go when he suspects treason has troubled readers: some see the hand of fate, others a picture of kingship bound by the counsel of its barons [[brault1978]] [[cook1987]].",
+    "The passage over the mountains (laisse LXVI) is one of the poem's great descriptive moments: high peaks, dark valleys, rock and torrent. The landscape is not described for its own sake but as the setting of grief, and the tears of the departing Franks look forward to the mourning that will follow."
+   ],
+   "key": [
+    {
+     "ref": "Laisse LV",
+     "quote": "God! what a grief.  Franks know not what is fated.",
+     "note": "The narrator's lament before the fact. The audience is always told more than the characters know."
+    },
+    {
+     "ref": "Laisse LVI",
+     "quote": "Guenes the count that spear from him doth seize,\nBrandishes it and twists it with such ease,\nThat flown into the sky the flinders seem.",
+     "note": "The first dream: the emperor's spear, his power and his army, broken by Ganelon."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Laisses LXXVI–C: Oliver's warning; the horn refused; battle joined",
+   "lines": "Laisses LXXVI–C",
+   "section": 3,
+   "summary": [
+    "The last of the Saracen champions make their boasts, and the pagan host arms. From a hilltop Oliver sees the enemy: the valleys are covered with them. He knows that Ganelon has betrayed them, and three times he begs Roland to sound the oliphant so that Charles will turn back. Three times Roland refuses: he would be called a fool, his kinsmen would be shamed and France would lose its honour; with Durendal he will make the pagans pay.",
+    "The narrator then pronounces the line that sums up the two friends: Roland is valiant and Oliver is wise. Archbishop Turpin preaches to the army from a hill, absolves the Franks and promises paradise to those who die. Roland rides out on his horse Veillantif, smiling at his men and fierce towards the enemy. Oliver gives up the argument, the Franks shout 'Monjoie!', and battle begins.",
+    "The first engagements are single combats. Roland kills Aelroth, who had insulted France; Oliver kills Falsaron; Turpin kills Corsablix; and peer after peer kills his Saracen counterpart, each victory followed by a short exulting speech. Only Margariz of Seville escapes."
+   ],
+   "analysis": [
+    "The horn scene (laisses LXXXIII–LXXXV) is the most celebrated sequence of laisses similaires. Oliver repeats his plea three times, and Roland refuses three times, each time more absolutely, with different assonances and slight changes of wording. The repetition gives the decision the weight of a vow and shows it hardening before our eyes [[duggan1973]].",
+    "The line 'Rollant est proz e Oliver est sage' (Roland 1093) is the centre of the long debate on Roland's character. Proz means valiant, brave, of worth; sage means wise, prudent. The next line insists that both have marvellous courage. Is Roland's refusal a heroic choice or the fault of excess (desmesure) that the poem condemns? Oliver's later reproach and Roland's own confession suggest a fault; the angels at his death suggest a saint [[jones1963]] [[cook1987]].",
+    "Turpin's sermon makes the war a crusade. The Franks fight for their lord and for Christendom, and the death they face is martyrdom; penance is to strike good blows. Earlier, in laisse LXXIX, Roland had put the moral law of the poem in its starkest form: pagans are wrong and Christians are right (Roland 1015)."
+   ],
+   "key": [
+    {
+     "ref": "Laisse LXXIX (Roland 1015)",
+     "quote": "Pagans are wrong: Christians are right indeed.\nEvil example will never come of me.",
+     "note": "The poem's most quoted line of holy war, joined to Roland's concern for the example he will leave."
+    },
+    {
+     "ref": "Laisse LXXXIV",
+     "quote": "Answers Rollanz: \"Never, by God, I say,\nFor my misdeed shall kinsmen hear the blame,\nNor France the Douce fall into evil fame!",
+     "note": "The second refusal. Roland's reason is honour: his own, his family's and France's."
+    },
+    {
+     "ref": "Laisse LXXXVII (Roland 1093)",
+     "quote": "Pride hath Rollanz, wisdom Olivier hath;\nAnd both of them shew marvellous courage;",
+     "note": "Moncrieff's 'Pride' renders proz, 'valiant'; the word choice already takes a side in the debate about Roland's fault."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Laisses CI–CXXV: The first battle; darkness over France",
+   "lines": "Laisses CI–CXXV",
+   "section": 4,
+   "summary": [
+    "The battle becomes general. Roland, Oliver, Turpin and the peers cut down huge numbers of pagans; Oliver fights with the stump of his broken lance until Roland tells him to draw his sword, Halteclere. The Franks win the first battle: of the hundred thousand pagans of the first army, hardly one survives.",
+    "At the same moment a terrible storm breaks over France: thunder, hail, an earthquake and darkness at midday from Mont-Saint-Michel to Besançon. People think the end of the world has come, but the narrator says it was the great mourning for Roland.",
+    "Marsile now leads the main army against the exhausted Franks. Losses mount. The peers Gerin, Gerier, Samson, Anseïs and others fall; Roland and Turpin avenge them. Turpin kills the Saracen Abisme, whose great wickedness the poem describes, and the Franks fight on, though they see they cannot survive."
+   ],
+   "analysis": [
+    "The battle narrative is built from a small number of repeated actions: the spur, the charge, the blow on the shield, the lance through the hauberk, the fall from the saddle, the taunt. Jean Rychner and Joseph Duggan saw this as the craft of an oral tradition, in which the poet composes with stock scenes and formulas; others hear in the repetitions a deliberate liturgical solemnity [[rychner1955]] [[duggan1973]].",
+    "The storm over France recalls the darkness and earthquake at the Crucifixion in the Gospels, and so begins the poem's identification of Roland's death with Christ's. Nature itself mourns him before anyone in France knows he is dead [[brault1978]].",
+    "The poem praises violence without embarrassment. Blows that split a man and his horse are marvels of vassalage. Peter Haidu argued that this violence is the poem's true subject, and that it shows a society in which force has not yet been brought under the control of the state [[haidu1993]]."
+   ],
+   "key": [
+    {
+     "ref": "Laisse CX",
+     "quote": "They spake no truth; they did not understand;\n'Twas the great day of mourning for Rollant.",
+     "note": "The cosmic storm over France is a sign of grief, like the darkness at Christ's death."
+    },
+    {
+     "ref": "Laisse CXI",
+     "quote": "In Chronicles of Franks is written down,\nWhat vassalage he had, our Emperour.",
+     "note": "Turpin appeals to written history; the heroes fight to be remembered."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Laisses CXXVI–CL: The horn sounded; Oliver's death",
+   "lines": "Laisses CXXVI–CL",
+   "section": 5,
+   "summary": [
+    "With only sixty Franks left, Roland decides to sound the horn. Now Oliver objects: it would be shameful to call for help after refusing, and the dead are Roland's fault, for 'vassalage by sense is not folly'. If he lives to see his sister Aude, Roland shall never lie in her arms. Turpin ends the quarrel: the horn cannot save them, but Charles will come to avenge them and bury them.",
+    "Roland blows so hard that blood bursts from his mouth and his temples split. Charles hears the sound thirty leagues away. Ganelon says it is nothing, that Roland is chasing a hare, but Naimes understands, and Charles has Ganelon seized and handed over to the cooks for abuse. The army turns back, its trumpets sounding.",
+    "At Roncevaux Roland cuts off Marsile's right hand and kills his son, and the king flees. But Marsile's uncle, the caliph, leads fresh troops, black men from Ethiopia, and strikes Oliver from behind. Mortally wounded, Oliver fights on; blinded by blood, he strikes Roland on the helmet without recognising him, and asks his pardon. He confesses his sins and dies, and Roland faints in the saddle with grief."
+   ],
+   "analysis": [
+    "The second horn debate reverses the first. Now Roland wants to sound the horn and Oliver forbids it. Oliver's words (Roland 1724–25: vasselage par sens nen est folie, 'true valour is wisdom, not folly', and mesure is worth more than recklessness) are the only explicit judgement of Roland in the poem, and they come from his dearest friend. Turpin's reply moves the question from strategy to piety: the horn now serves to ensure Christian burial and vengeance [[jones1963]] [[brault1978]].",
+    "The horn becomes a sign of physical agony, and Roland's death begins here, from the strain of sounding it. Charlemagne hears it three times, as Oliver had pleaded three times, and the poem's structure of threes reaches its turning point.",
+    "Oliver's death, with his blind blow and Roland's gentle question, is the emotional heart of the poem. The quarrel between the two friends ends in forgiveness, 'in such love'. The description of the caliph's black troops reflects the poem's crude imagery of the enemy, in which darkness of skin is made a sign of damnation; modern critics have studied it as part of the poem's construction of difference [[kinoshita2006]]."
+   ],
+   "key": [
+    {
+     "ref": "Laisse CXXXI (Roland 1724–25)",
+     "quote": "Vassalage comes by sense, and not folly;\nPrudence more worth is than stupidity.",
+     "note": "Oliver's verdict on Roland: true valour is governed by good sense."
+    },
+    {
+     "ref": "Laisse CXXXIV",
+     "quote": "Out of his mouth the clear blood leaped and ran,\nAbout his brain the very temples cracked.",
+     "note": "Roland's effort in sounding the horn will kill him; the horn is both his penance and his death."
+    },
+    {
+     "ref": "Laisse CXLIX",
+     "quote": "Upon these words, each to the other leans;\nAnd in such love you had their parting seen.",
+     "note": "The reconciliation of Roland and Oliver after the blind blow."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Laisses CLI–CLXXV: The last stand; Turpin and Durendal",
+   "lines": "Laisses CLI–CLXXV",
+   "section": 6,
+   "summary": [
+    "Only Roland, Turpin and Gautier de l'Hum remain. Gautier is killed and Turpin, wounded by four spears, fights on. The pagans hear Charles's trumpets and dare not close in; they shower Roland with missiles, kill Veillantif and flee. Roland goes over the field, gathers the bodies of the peers and lays them before Turpin to be blessed. When he faints at the sight of Oliver's body, the dying archbishop tries to fetch water for him from a stream and dies.",
+    "Roland feels death coming. He climbs to a hill under two trees and four blocks of marble, and falls in a faint. A Saracen who has smeared himself with blood and played dead tries to take Durendal; Roland kills him with the horn, splitting it. Then he tries three times to break his sword on the rock, so that no pagan shall have it. The steel rings but does not break. In three laments he recalls the conquests he made with it for Charles and the relics in its hilt.",
+    "At last he lies down under a pine on the green grass, with the sword and horn beneath him and his face turned to Spain, so that Charles will say he died a conqueror. He beats his breast, confesses his sins and holds out his right-hand glove to God."
+   ],
+   "analysis": [
+    "The laments over Durendal (laisses CLXXI–CLXXIII) are another set of laisses similaires. Each strike on the rock is followed by a speech; the first recalls the battles, the second lists the lands conquered for Charles, the third the relics in the hilt. The sword is a sacred object and an emblem of Roland's service; to let a pagan take it would be to dishonour both Charles and God [[brault1978]].",
+    "The posture of Roland's death is carefully staged: face towards the enemy, sword and horn beneath him, so that his body itself tells the story of victory. This concern for how he will be remembered connects the dying hero with the young man who refused the horn for fear of 'evil songs'. The confession and the offered glove, however, place him in the relation of vassal to a heavenly lord.",
+    "Turpin's death in an act of charity, going for water, shows the warrior-archbishop as a priest to the end. For modern readers his combination of slaughter and sacrament is the poem's clearest image of the crusading church [[vance1970]]."
+   ],
+   "key": [
+    {
+     "ref": "Laisse CLXXI",
+     "quote": "Good Durendal, unlucky is your plight!\nI've need of you no more; spent is my pride!",
+     "note": "Roland's first lament over his sword, as he tries and fails to break it."
+    },
+    {
+     "ref": "Laisse CLXXIV",
+     "quote": "Turning his head towards the pagan race,\nNow this he did, in truth, that Charles might say",
+     "note": "Roland arranges his dying body to show that he died a conqueror."
+    },
+    {
+     "ref": "Laisse CLXXV",
+     "quote": "Holds out his glove towards God, as he speaks\nAngels descend from heaven on that scene.",
+     "note": "The feudal gesture of the glove, offered now to God as to a lord."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Laisses CLXXVI–CC: Roland's death; vengeance; Baligant comes",
+   "lines": "Laisses CLXXVI–CC",
+   "section": 7,
+   "summary": [
+    "Roland dies remembering the lands he conquered, sweet France, his kin and Charlemagne, who raised him. He prays like a man in danger, recalling Lazarus and Daniel, and offers his glove; Gabriel takes it, and Saint Michael and the cherubim carry his soul to paradise.",
+    "Charles reaches Roncevaux and finds the field full of the dead. He leaves guards and pursues the pagans. At his prayer God stops the sun, and the Franks drive the fleeing army into the Ebro, where they drown. That night, sleeping in his armour, the emperor has two more dreams, sent by Gabriel: a storm and a host of beasts attacking his army, and a bear in chains whose thirty kinsmen demand his release, fought off by a hound.",
+    "Marsile reaches Saragossa with his hand cut off. His people turn on their gods, beat Apollin and throw Mahumet into a ditch for the dogs. Queen Bramimonde laments. The narrator now explains that seven years earlier Marsile had written for help to Baligant, the emir of Babylon, who has at last sailed from Alexandria with the armies of forty kingdoms. Baligant lands in Spain and sends envoys to Saragossa."
+   ],
+   "analysis": [
+    "Roland's death prayer uses the ancient Christian formula of the prayer for deliverance (the 'ordo commendationis animae'), naming the biblical figures God saved from death. His final thoughts move from conquest to home to his lord, and then to his soul: the poem's values are placed in order at the moment of death [[brault1978]].",
+    "The miracle of the sun recalls Joshua's battle at Gibeon in the Old Testament and makes Charles a leader of God's chosen people. His new dreams point forward to the battle with Baligant and to Ganelon's trial; the hound who fights the bear foreshadows Thierry against Pinabel.",
+    "The Saracens' abuse of their gods is presented as comedy, but it raises an important point: the poem imagines the enemy's religion as a version of Christianity's own structure, with idols in place of saints. Bramimonde's lament, which grants Charles both valour and 'very high folly', is the first sign of her independent voice [[kinoshita2006]]."
+   ],
+   "key": [
+    {
+     "ref": "Laisse CLXXVI",
+     "quote": "His right-hand glove, to God he offers it\nSaint Gabriel from's hand hath taken it.",
+     "note": "God accepts Roland's homage; the vassal's gesture becomes the moment of salvation."
+    },
+    {
+     "ref": "Laisse CLXXX",
+     "quote": "For Charlemagne a great marvel God planned:\nMaking the sun still in his course to stand.",
+     "note": "The miracle of the sun, modelled on Joshua 10."
+    },
+    {
+     "ref": "Laisse CLXXXVIII",
+     "quote": "That Emperour, with his blossoming beard,\nHath vassalage, and very high folly;",
+     "note": "Bramimonde's view of Charlemagne, mixing admiration and fear."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Laisses CCI–CCXXV: Charlemagne at Roncevaux; the armies marshalled",
+   "lines": "Laisses CCI–CCXXV",
+   "section": 8,
+   "summary": [
+    "Baligant visits the wounded Marsile, who gives him the glove and the right to Spain; he swears to make war on Charles. At dawn Charles returns to Roncevaux. He finds Roland's body under the pine, faces towards Spain, and faints with grief. In a series of laments he asks who will lead his armies now, imagines the questions he will face at Aix and the rebellion of his conquered peoples, and wishes to die and be buried with his men.",
+    "At Geoffrey of Anjou's request the Franks gather the dead, and bishops and monks bury them in a great common grave. The hearts of Roland, Oliver and Turpin are taken out and wrapped in silk, and their bodies are laid in marble coffins to be carried to France.",
+    "Baligant's envoys arrive with his challenge. Charles arms, prays to the God who saved Jonah and Daniel and mounts, and the Franks are drawn up in ten divisions, each of a different people: Franks, Bavarians, Germans, Normans, Bretons, Poitevins, Flemings and others."
+   ],
+   "analysis": [
+    "Charlemagne's laments (laisses CCVI–CCX) are among the most moving passages in the poem. Grief is shown through the body, in swoons, tears and the tearing of the beard, but the emperor's thoughts also turn to politics: without Roland the empire will fall apart. Personal and public loss cannot be separated [[cook1987]].",
+    "The burial gives the dead what Turpin promised: Christian rites, protection from wolves and dogs, and honour. The care of the bodies balances the violence of the battle and prepares for the transfer of Roland's horn and body to Blaye and Bordeaux, places on the pilgrim route to Santiago, where the relics of the legend were shown to pilgrims.",
+    "The listing of the ten Frankish divisions builds a picture of a Christian empire made of many peoples, under one emperor and one faith. Later the thirty divisions of Baligant's army will offer a mirror image: the whole pagan world against the whole Christian world."
+   ],
+   "key": [
+    {
+     "ref": "Laisse CCIX",
+     "quote": "Ah!  France the Douce, now art thou deserted!\nSuch grief I have that I would fain be dead.",
+     "note": "Charlemagne's lament over Roland, joining personal grief and fear for the realm."
+    },
+    {
+     "ref": "Laisse CCX",
+     "quote": "Among their souls let mine in glory be,\nAnd let my flesh upon their flesh be heaped.",
+     "note": "The emperor's wish to share the grave of his men."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Laisses CCXXVI–CCL: The battle against Baligant's host",
+   "lines": "Laisses CCXXVI–CCL",
+   "section": 9,
+   "summary": [
+    "Charles prays again, kneeling towards the east, for the strength to avenge his nephew, and leads out his army; the oliphant sounds above all the trumpets. Baligant, a grey-bearded giant of great dignity, arms in turn and draws up thirty divisions of the peoples of the pagan world, many of them grotesque: men with bristles like pigs, Huns, Avars and giants. His son Malprimes leads the first charge.",
+    "The battle is fought on a huge plain. The Frankish leaders Rabel and Guineman kill the first pagan champions; Malprimes is killed by Duke Naimes, and Baligant's brother Canabeus wounds Naimes, whom Charles rescues. The emperor encourages his men with a speech of thanks and loyalty, and they swear not to leave him. By evening the battle is still undecided."
+   ],
+   "analysis": [
+    "The Baligant episode turns a story of betrayal into a war between two worlds. Baligant is presented as a worthy enemy: 'Christian were he' he would be a true baron, the poem says of other pagans, and he too has a son, a standard and loyal men. The duel that follows is between two old kings, each the head of a religion [[legentil1969]].",
+    "Charles's speech of thanks to his men states the ideal of feudal reciprocity that Ganelon violated: the lord owes reward, the vassal service unto death. The Franks' oath not to leave him repairs the broken bond of Roncevaux.",
+    "Many critics have found this battle less vivid than Roncevaux, and some have thought the episode a later addition. Others answer that it is needed: Roncevaux shows the cost of the war, and the battle against Baligant shows Christendom's answer to it [[brault1978]] [[segre1971]]."
+   ],
+   "key": [
+    {
+     "ref": "Laisse CCXXVI",
+     "quote": "In Thy Mercy, if it please Thee, consent\nThat my nephew Rollant I may avenge.",
+     "note": "Charles's prayer before battle, which echoes Roland's own deathbed prayer."
+    },
+    {
+     "ref": "Laisse CCXLVI",
+     "quote": "My lands, my wealth, my body are yours to keep.",
+     "note": "The emperor's pledge to his men: the feudal bond stated from the lord's side."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Laisses CCLI–CCLXXV: Charles and Baligant; Saragossa; Aude; the trial opens",
+   "lines": "Laisses CCLI–CCLXXV",
+   "section": 10,
+   "summary": [
+    "The battle ends in single combat between the two old kings. Baligant offers Charles a fief if he will become his man; Charles demands that Baligant accept Christianity. Baligant wounds Charles in the head, and the emperor staggers, but Gabriel comes to him and asks what he is doing. Charles recovers and kills the emir. The pagans flee, and the Franks pursue them to Saragossa.",
+    "Marsile dies of grief and his soul is taken by devils. Bramimonde surrenders the city. The Franks break the idols in the 'synagogues and mahumeries' and baptise more than a hundred thousand people; those who refuse are hanged, burned or killed. Only the queen is taken to France as a captive, to be converted by love. On the way home Charles places the oliphant on the altar of Saint-Seurin at Bordeaux and buries Roland, Oliver and Turpin at Blaye.",
+    "At Aix, Aude, Oliver's sister and Roland's betrothed, asks where Roland is. Charles, weeping, offers her his son Louis instead. She answers that she will not live when Roland is dead, falls at his feet and dies. Ganelon is brought in chains, beaten and tied to a stake, and on Saint Silvester's day the trial begins. He admits that he sought Roland's death but denies treason, and his thirty kinsmen stand by him; his kinsman Pinabel promises to defend him."
+   ],
+   "analysis": [
+    "The duel of the two kings answers Roland's death. Gabriel's intervention mirrors his acceptance of Roland's glove: God guards the emperor in battle as he received the martyr in death. Charles's reply to Baligant's offer of vassalage states the poem's absolute division: there can be no peace or love with pagans except by conversion.",
+    "The mass conversion of Saragossa is described with satisfaction. Modern readers find it among the poem's hardest passages, but the poem itself sets beside it a different way: Bramimonde is to be won 'by love'. Sharon Kinoshita has argued that this contrast shows the poem thinking about how difference can be absorbed into the Christian, feudal order, through the conversion and marriage alliances of noble women [[kinoshita2006]] [[kay1995]].",
+    "Aude's death takes only two short laisses. She refuses Charles's offer of his son, as if a betrothal were a political matter, and dies of loyalty. Her end echoes the deaths of the heroes and shows the cost of Roncevaux at the heart of the court. Ganelon's defence, that he took open revenge after a public defiance, raises the legal question at the centre of the trial [[mickel1989]]."
+   ],
+   "key": [
+    {
+     "ref": "Laisse CCLX",
+     "quote": "No peace nor love may I to pagan lend.\nReceive the Law that God to us presents,",
+     "note": "Charles's answer to Baligant's offer of a fief: conversion or death."
+    },
+    {
+     "ref": "Laisse CCLXVI",
+     "quote": "By love the King will her conversion seek.",
+     "note": "Bramimonde alone is spared forced baptism."
+    },
+    {
+     "ref": "Laisse CCLXVIII",
+     "quote": "When Rollant's dead shall I alive remain!",
+     "note": "Aude's last words, refusing Charles's offer of his son."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Laisses CCLXXVI–CCXCI: Thierry and Pinabel; Ganelon's punishment; Bramimonde's baptism",
+   "lines": "Laisses CCLXXVI–CCXCI",
+   "section": 11,
+   "summary": [
+    "The barons, afraid of Pinabel's strength and eager for peace, advise Charles to pardon Ganelon: Roland is dead and nothing will bring him back. Charles calls them all felons and bows his head in grief. Then Thierry, brother of Geoffrey of Anjou, slight and dark, comes forward. Whatever Roland may have done to Ganelon, he says, he was in the emperor's service, and that protected him; Ganelon's betrayal of him is treason against the king. He judges that Ganelon should be hanged, and offers to prove it with his sword.",
+    "Pinabel takes up the challenge, and thirty of Ganelon's kinsmen stand as pledges. After mass and confession the two men fight in a meadow below Aix. Pinabel is the stronger, and offers Thierry peace and wealth; Thierry refuses. Wounded in the face, Thierry kills Pinabel with a blow through the helmet, and the Franks cry that God has shown the right.",
+    "The thirty pledges are hanged. Ganelon is tied to four wild horses and torn apart. Bramimonde, who has heard many sermons, asks for baptism and is christened Juliana in the baths of Aix. That night Gabriel appears to the sleeping emperor and calls him to a new war, to help King Vivien, whose city is besieged by pagans. Charles does not want to go. He weeps and tears his white beard, and with his complaint the poem ends."
+   ],
+   "analysis": [
+    "The trial is the poem's last great test of loyalty. The barons' readiness to free Ganelon shows how fragile the empire's justice is: they think of kin and peace, not of the king's honour. Thierry's argument makes a new principle explicit: a man in the king's service is protected by the king, so a private feud cannot excuse his betrayal. Some historians see the trial as a reflection of the growth of royal justice over private vengeance [[mickel1989]] [[haidu1993]].",
+    "Trial by combat is a judgement of God. The weaker Thierry beats the stronger Pinabel, as the hound beat the bear in Charles's dream, and the result is read as divine proof. The execution of the thirty kinsmen with Ganelon reflects the poem's view that treason infects a whole lineage: 'who betrays a man destroys himself and his friends'.",
+    "The ending is famously unheroic. After all his victories the emperor, alone in his chamber, is called to another war and complains that his life is hard. The poem closes not with triumph but with the endless labour of a Christian ruler, and with the name of Turoldus [[auerbach1953]] [[vance1970]]."
+   ],
+   "key": [
+    {
+     "ref": "Laisse CCLXXXVIII",
+     "quote": "Who betrays man, himself and 's friends undoes.",
+     "note": "The proverb that closes the punishment of Ganelon's kinsmen."
+    },
+    {
+     "ref": "Laisse CCXCI",
+     "quote": "\"God!\" said the King: \"My life is hard indeed!\"\nTears filled his eyes, he tore his snowy beard.",
+     "note": "The last words of Charlemagne: a new war, and the weariness of a ruler who can never rest."
+    },
+    {
+     "ref": "Laisse CCXCI (Roland 4002)",
+     "quote": "SO ENDS THE TALE WHICH TUROLD HATH CONCEIVED.",
+     "note": "Moncrieff's rendering of the famous last line, which makes Turoldus the poet; the Old French verb declinet is less certain."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Roland",
+   "side": "Franks",
+   "text": "Charlemagne's nephew (by his sister) and Ganelon's stepson, Count of the Breton March, the greatest of the twelve peers and the betrothed of Aude. He is brave, loyal, proud and joyful in battle. His sword is Durendal, his horn the oliphant, his horse Veillantif. His refusal to sound the horn leads to the destruction of the rearguard; he dies a martyr's death under a pine at Roncevaux, and angels carry his soul to paradise."
+  },
+  {
+   "name": "Oliver",
+   "side": "Franks",
+   "text": "Roland's companion and dearest friend, brother of Aude. 'Roland is valiant and Oliver is wise': he sees the enemy, understands the treason and begs Roland to sound the horn. He fights superbly with his sword Halteclere. Struck from behind by the caliph, he strikes Roland by mistake when blinded, and dies after confessing his sins."
+  },
+  {
+   "name": "Charlemagne (Charles)",
+   "side": "Franks",
+   "text": "Emperor of the Franks, Roland's uncle, said to be more than two hundred years old, with a white beard. He is a figure of wisdom, authority and grief, who receives visions and angelic help from God but cannot prevent the disaster. He avenges Roland on Marsile and Baligant and judges Ganelon. The poem ends with his weary complaint at being called to yet another war."
+  },
+  {
+   "name": "Ganelon (Guenes)",
+   "side": "Franks",
+   "text": "A great baron, Roland's stepfather and the husband of Charles's sister. Handsome, eloquent and brave, he takes his appointment as envoy as a plot to kill him and defies Roland in public. At Saragossa he plots with Marsile to destroy the rearguard. At his trial he claims open revenge, not treason; after Pinabel's defeat he is torn apart by horses."
+  },
+  {
+   "name": "Archbishop Turpin",
+   "side": "Franks",
+   "text": "Archbishop of Reims, who fights beside the peers and kills many pagans. He preaches the crusade, absolves the army, settles the quarrel over the horn and dies trying to fetch water for the fainting Roland. He is the poem's image of a warrior church."
+  },
+  {
+   "name": "Duke Naimes",
+   "side": "Franks",
+   "text": "Charlemagne's oldest and wisest counsellor. He supports Ganelon's advice for peace, understands the meaning of the horn, and fights bravely against Baligant's army, where Charles saves his life."
+  },
+  {
+   "name": "Aude (Alde)",
+   "side": "Franks",
+   "text": "Oliver's sister and Roland's betrothed. She appears only once: at Aix she asks for Roland, refuses Charlemagne's offer of his son Louis in his place, and dies at the emperor's feet."
+  },
+  {
+   "name": "Thierry (Tierri)",
+   "side": "Franks",
+   "text": "Brother of Geoffrey of Anjou, slight and dark. Alone among the barons he judges Ganelon guilty of treason, and he proves it by defeating the much stronger Pinabel in a trial by combat."
+  },
+  {
+   "name": "Pinabel",
+   "side": "Franks",
+   "text": "Ganelon's kinsman and champion, a strong and eloquent knight whom the barons fear. He is killed by Thierry, and his defeat proves Ganelon's guilt."
+  },
+  {
+   "name": "Gautier de l'Hum",
+   "side": "Franks",
+   "text": "A Frankish captain of the rearguard who returns from the hills after his men are destroyed and is one of the last three to die beside Roland and Turpin."
+  },
+  {
+   "name": "The twelve peers",
+   "side": "Franks",
+   "text": "Charlemagne's companions and champions: Roland, Oliver, Gerin, Gerier, Berenger, Otun, Samson, Engelier, Ivon, Ivoire, Anseïs and Gerard of Roussillon. All die at Roncevaux."
+  },
+  {
+   "name": "Geoffrey of Anjou",
+   "side": "Franks",
+   "text": "Charlemagne's standard-bearer, who leads the burial of the dead at Roncevaux; brother of Thierry."
+  },
+  {
+   "name": "Marsile (Marsilies)",
+   "side": "Saracens",
+   "text": "The Saracen king of Saragossa, who devises the false peace and the ambush with Ganelon. Roland cuts off his right hand. He flees to Saragossa, calls on Baligant, and dies of grief and wounds when the city falls; devils take his soul."
+  },
+  {
+   "name": "Blancandrin",
+   "side": "Saracens",
+   "text": "Marsile's wise counsellor, who proposes the false submission, sounds out Ganelon on the road, and leads him to treason."
+  },
+  {
+   "name": "Bramimonde (Bramimunde)",
+   "side": "Saracens",
+   "text": "Marsile's queen. She gives Ganelon jewels, laments her husband's wounds, mocks the pagan gods and praises the strength of Charles. After the fall of Saragossa she is taken to France and baptised Juliana, the poem's one convert by persuasion."
+  },
+  {
+   "name": "Baligant",
+   "side": "Saracens",
+   "text": "Emir of Babylon (Cairo), the ancient lord of the pagan world, said to have outlived Homer and Virgil. He brings the armies of forty kingdoms to Spain and is killed by Charlemagne in single combat."
+  },
+  {
+   "name": "Aelroth",
+   "side": "Saracens",
+   "text": "Marsile's nephew, the first of the twelve Saracen champions who boast that they will kill Roland. Roland kills him in the first combat."
+  },
+  {
+   "name": "The caliph (Marsile's uncle)",
+   "side": "Saracens",
+   "text": "Marsile's uncle and lord of Ethiopia, whose death Ganelon falsely reports. He leads the last pagan attack at Roncevaux and spears Oliver from behind."
+  },
+  {
+   "name": "Malprimes",
+   "side": "Saracens",
+   "text": "Baligant's son, who leads the first charge of the pagan army and is killed by Naimes."
+  },
+  {
+   "name": "Saint Gabriel",
+   "side": "Others",
+   "text": "The archangel who takes Roland's glove, sends Charlemagne his dreams, helps him in his duel with Baligant, and summons him to new war at the end of the poem."
+  },
+  {
+   "name": "Saint Michael and the cherubim",
+   "side": "Others",
+   "text": "The angels who carry Roland's soul to paradise."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Loyalty and treason",
+   "text": [
+    "The poem's world is held together by personal loyalty: of vassal to lord, of kinsman to kinsman, of companion to companion. Roland says that a man must suffer cold and heat for his lord and lose his blood and skin for him. Ganelon's crime is the betrayal of this bond, and the poem's last laisses are devoted to its punishment.",
+    "The trial complicates the picture. Ganelon is loyal to his own grievance and his kin are loyal to him; the barons are loyal to peace and to their own safety. Only Thierry sees that loyalty to the king must come before private feud, and the poem's conclusion depends on that hierarchy of loyalties [[mickel1989]]."
+   ]
+  },
+  {
+   "title": "Prowess and wisdom",
+   "text": [
+    "Roland and Oliver represent two virtues of the warrior, valour (proz) and good judgement (sage). The poem does not make one simply good and the other bad: both have marvellous courage, and both die well. But the argument about the horn shows what happens when valour is not governed by prudence, and Oliver's reproach states the ideal of mesure, measure or restraint [[jones1963]]."
+   ]
+  },
+  {
+   "title": "Holy war and martyrdom",
+   "text": [
+    "The war in Spain is a crusade. The Franks fight for Christ as well as for Charles; the archbishop promises paradise to those who die, the dead are martyrs, and angels carry Roland's soul to heaven. The poem's absolute claim, 'pagans are wrong and Christians are right', belongs to the ideology of the First Crusade, and its scenes of forced conversion are its consequence [[kinoshita2006]]."
+   ]
+  },
+  {
+   "title": "Honour, shame and memory",
+   "text": [
+    "Roland fears the 'evil song' that might be sung about him and wants Charles to say he died a conqueror. The heroes fight with an eye to how they will be remembered in the chronicles and songs, and the poem itself is the song that fulfils that wish. George Fenwick Jones argued that this concern with public honour and shame is closer to the values of a warrior society than to Christian humility [[jones1963]]."
+   ]
+  },
+  {
+   "title": "Grief and mourning",
+   "text": [
+    "For a poem of battle, the Song of Roland contains an extraordinary amount of weeping. Franks swoon by the thousand, Charles tears his beard, Roland faints over Oliver's body, and Aude dies of grief. Mourning is not weakness but a sign of love and of the greatness of what has been lost, and the cosmic storm over France makes nature itself a mourner [[cook1987]]."
+   ]
+  },
+  {
+   "title": "Kingship and its burdens",
+   "text": [
+    "Charlemagne is the poem's centre of authority, but he is also a lonely and suffering figure. He depends on counsel, he cannot save his nephew, and he has to be protected by angels. The final scene, in which he is sent to another war against his will, shows kingship as a duty imposed by God rather than a source of glory [[auerbach1953]] [[haidu1993]]."
+   ]
+  },
+  {
+   "title": "Divine justice",
+   "text": [
+    "God acts openly in the poem: he sends dreams, stops the sun, sends Gabriel to help Charles, and decides the trial by combat. The poem trusts that right will be shown in the end, but it also accepts that the righteous die, and that God's justice may come only after great loss."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Laisses similaires and repetition",
+   "text": "At its greatest moments the poem repeats an action or speech in two or three successive laisses with small variations: Marsile's questions about Charles's age, Oliver's pleas to sound the horn, Roland's attempts to break Durendal, Charles's laments. The repetitions slow time, intensify feeling and make the scenes into ritual [[rychner1955]] [[duggan1973]]."
+  },
+  {
+   "title": "Gestures and tokens",
+   "text": "Gloves, wands, bows and pledges carry legal and moral meaning. Ganelon drops the glove; Roland holds out his glove to God; Thierry and Pinabel give their gloves to the king as pledges. These gestures make inner states visible in a style that rarely describes them directly [[auerbach1953]]."
+  },
+  {
+   "title": "Dreams and portents",
+   "text": "Charlemagne's four dreams, the storm over France and the fallen glove all foretell what is coming. The audience always knows more than the characters, and the poem's interest is less in suspense than in how the heroes meet a fate already known."
+  },
+  {
+   "title": "Swoons and tears",
+   "text": "Fainting and weeping recur constantly, among Franks and Saracens alike. They show the depth of the bonds that the treason has broken and give the poem its strong elegiac colouring."
+  },
+  {
+   "title": "'Douce France'",
+   "text": "Sweet France is invoked again and again, by heroes and narrator, as the homeland the rearguard will never see again. The phrase gives the poem its sense of a shared homeland, and helped to make it a national epic in the nineteenth century [[paris1885]]."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The oliphant",
+   "text": "Roland's ivory horn is the symbol of the choice on which the poem turns. Unsounded, it stands for pride and honour; sounded, it costs Roland his life and calls the emperor back for vengeance. Broken on a Saracen's head, it is later placed on the altar at Bordeaux as a relic."
+  },
+  {
+   "title": "Durendal",
+   "text": "Roland's sword, given to Charles by an angel for his best captain, holds relics in its hilt and has won the emperor's lands. Its refusal to break, and Roland's refusal to let a pagan have it, make it an emblem of his service to Charles and to God."
+  },
+  {
+   "title": "Charlemagne's white beard",
+   "text": "The emperor's white beard and flowering hair, by which he swears and which he tears in grief, are signs of his age, his authority and his suffering. Even the Saracens speak of the old man of two hundred years."
+  },
+  {
+   "title": "The pine and the rock",
+   "text": "Roland dies under a pine, by blocks of marble, on a hill facing Spain. The tree and the rock on which his sword will not break mark the place as a sacred site, in the manner of a saint's shrine."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Where did the poem come from? Individualists and traditionalists",
+   "text": [
+    "The poem describes an event of 778, but the earliest text dates from around 1100. How did the story survive for three centuries? In the nineteenth century scholars such as Gaston Paris believed that the chansons de geste grew from songs composed soon after the events and handed down in a living popular tradition. Joseph Bédier's Les Légendes épiques (1908–13) attacked this view. He argued that the poems were the work of individual poets of the eleventh and twelfth centuries, who built their stories from the traditions of churches and monasteries along the pilgrim roads, such as Roncevaux and Blaye on the way to Santiago, in collaboration between clerics and jongleurs. The Song of Roland, for Bédier, was the masterpiece of one poet of genius [[bedier1908]].",
+    "Ramón Menéndez Pidal answered him in La Chanson de Roland y el neotradicionalismo (1959). He drew on evidence such as the Nota Emilianense to show that the legend was alive in songs long before 1100, and argued that the poem was one moment in a tradition that 'lives in variants', in which each singer reworked what he received. Most scholars now accept that the legend has a long prehistory and that the Oxford text is a version shaped by a gifted poet; the argument is about how much of the poem we owe to each [[menendezpidal1959]] [[legentil1969]]."
+   ],
+   "cite": [
+    "bedier1908",
+    "menendezpidal1959",
+    "legentil1969"
+   ]
+  },
+  {
+   "title": "Oral composition and the formula",
+   "text": [
+    "Jean Rychner's La Chanson de geste (1955) compared nine early chansons de geste and argued that they were composed for performance by jongleurs, with a technique based on formulas, stock scenes and the structure of the laisse; their repetitions, he argued, are the marks of an art of oral performance. Joseph Duggan, in The Song of Roland: Formulaic Style and Poetic Craft (1973), counted the repeated hemistichs (half-lines) in the Oxford text and in other chansons de geste, and argued that the Song of Roland's high density of formulas shows oral composition, while still admiring the poet's craft [[rychner1955]] [[duggan1973]].",
+    "Critics have objected that formulas can be used by literate poets, and that the Oxford text shows careful planning, numerical patterns and learned allusions. Andrew Taylor has questioned whether the Oxford manuscript was ever a performer's book, and whether the famous image of a jongleur singing the poem from it rests on real evidence [[taylor2001]]. The relation between oral tradition and written composition remains one of the central questions about the poem."
+   ],
+   "cite": [
+    "rychner1955",
+    "duggan1973",
+    "taylor2001"
+   ]
+  },
+  {
+   "title": "Roland's desmesure: pride or heroism?",
+   "text": [
+    "Does the poem condemn Roland? Many readers have seen in his refusal to sound the horn an example of desmesure, the excess that destroys the hero and his men. On this reading Oliver's words in laisse CXXXI ('vassalage by sense is not folly') express the poem's judgement, Roland's confession at death is repentance for this fault, and the twenty thousand dead are its cost. Some critics have read his death as a redemption from the sin of pride [[jones1963]] [[vance1970]].",
+    "Others deny that the poem blames him. Robert Francis Cook argued that the refusal is consistent with the poem's own values: Roland is the defender of honour and of the rearguard's duty, the narrator never calls him proud in a negative sense, and God receives him as a martyr. Gerard Brault reads Roland as a figure who passes from a kind of worldly excess to sanctity, and the poem as a structure that holds both views in tension [[cook1987]] [[brault1978]]. The famous line 'Roland is valiant and Oliver is wise' can support either reading."
+   ],
+   "cite": [
+    "jones1963",
+    "cook1987",
+    "brault1978",
+    "vance1970"
+   ]
+  },
+  {
+   "title": "The Baligant episode",
+   "text": [
+    "About a quarter of the Oxford text is taken up with the war against Baligant, the emir of Babylon. Since the nineteenth century some scholars have argued that this episode is a later addition: Baligant appears suddenly, his summons is explained only by a flashback of seven years, and the dramatic interest seems to have been exhausted with Roland's death. Its parallels with the First Crusade, with its hosts of eastern peoples, have also been taken as signs of a later layer.",
+    "Defenders of the episode's authenticity, including Pierre Le Gentil and Gerard Brault, point to its careful links with the rest of the poem: Charles's dreams foretell it, his prayers echo Roland's, and its symmetry turns the defeat of a rearguard into the victory of Christendom over the pagan world. The question is bound up with the poem's textual history, since the episode is present in nearly all versions [[legentil1969]] [[brault1978]] [[segre1971]]."
+   ],
+   "cite": [
+    "brault1978",
+    "segre1971",
+    "legentil1969"
+   ]
+  },
+  {
+   "title": "Ganelon's guilt and feudal law",
+   "text": [
+    "Ganelon's defence is not absurd. He defied Roland, Oliver and the peers openly before the emperor, and in a society that recognised the right of private vengeance after a public defiance, he could claim that what followed was revenge, not treason. Most of the barons accept this, or find it convenient to accept it. Thierry's answer, that Roland was protected by being in the king's service, turns the case into a crime against the king [[mickel1989]].",
+    "Historians of law have seen in the trial a reflection of tensions in the eleventh and twelfth centuries between the customs of feud and the growing claims of royal justice. Emanuel Mickel examined the legal and moral background of the charge in detail; Peter Haidu read the trial as the moment in which the poem imagines the birth of the state, which claims a monopoly of legitimate violence [[mickel1989]] [[haidu1993]]. Auerbach had already noticed that the poem never explains Ganelon's motives, but presents them as a fixed position in a ritual conflict [[auerbach1953]]."
+   ],
+   "cite": [
+    "mickel1989",
+    "haidu1993",
+    "auerbach1953"
+   ]
+  },
+  {
+   "title": "The crusade and the Saracens",
+   "text": [
+    "The poem's view of Islam is a fantasy: the Saracens worship idols of Mahumet, Apollin and Tervagant, and their religion is presented as an inverted image of Christianity. The poem's slogan, 'pagans are wrong and Christians are right', and the forced conversion of Saragossa make it one of the clearest literary expressions of crusade ideology, and its imagery of black and monstrous peoples has been studied as an early form of racial thinking.",
+    "Recent criticism has also stressed how much the Saracens resemble the Franks. They have the same feudal structures, the same virtues and vices; some are praised as fine barons who would be perfect if they were Christian. Sharon Kinoshita argued that the poem's absolute opposition is something it works hard to produce rather than a simple reflection of reality, and that Bramimonde's conversion by love shows another way of dealing with difference [[kinoshita2006]]. Sarah Kay and Simon Gaunt have read the chansons de geste as political fictions that use the enemy to think about the society of the Franks themselves [[kay1995]] [[gaunt2001]]."
+   ],
+   "cite": [
+    "kinoshita2006",
+    "kay1995",
+    "gaunt2001"
+   ]
+  },
+  {
+   "title": "A national epic: the poem in nineteenth-century France",
+   "text": [
+    "The Oxford manuscript was rediscovered in the 1830s, and Francisque Michel's first edition appeared in 1837. The poem quickly became a national symbol. In 1870, during the Franco-Prussian War, Gaston Paris lectured in Paris on the Song of Roland and French nationhood (printed in La Poésie du moyen âge in 1885), presenting it as proof that a French national feeling existed in the Middle Ages. Editions for schools followed, and Roland became the hero of a patriotic literature [[paris1885]].",
+    "The paradox is that the oldest copy was made in England, by an Anglo-Norman scribe, and that the Franks of the poem are a multinational army of Bavarians, Germans, Normans and Bretons. 'Douce France' in the poem means the empire of Charlemagne as much as the later nation. Modern scholarship has become cautious about the nationalist reading, and the history of the poem's reception has itself become a field of study [[segre1971]]."
+   ],
+   "cite": [
+    "paris1885",
+    "segre1971"
+   ]
+  },
+  {
+   "title": "Who was Turoldus?",
+   "text": [
+    "The last line of the Oxford text, 'Ci falt la geste que Turoldus declinet', has never been explained. If declinet means 'composes', Turoldus was the poet; if 'recites', a performer; if 'copies' or 'completes', a scribe or the author of the source. Many candidates bearing the Norman name Turold have been proposed, including a bishop of Bayeux and an abbot of Peterborough, but none can be proved. André Burger built a reading of the whole poem around the poet he called Turold, 'the poet of fidelity' [[burger1977]].",
+    "The question matters because it is bound up with the debates about origins and composition. If Turoldus was the poet of the Oxford version, the poem is the work of an individual author; if he was a reciter or copyist, the line tells us only about one stage in a longer tradition [[short1990]]."
+   ],
+   "cite": [
+    "burger1977",
+    "short1990"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Laisse I (Roland 1–9)",
+   "quote": "Save Sarraguce, that sits on high mountain.\nMarsile its King, who feareth not God's name,",
+   "who": "The narrator",
+   "explanation": "The opening laisse narrows the whole war to a single city and a single enemy king. Marsile's fate is announced at once: he does not fear God, and harm will come to him. The poem gives away its end at the start, and its interest lies in how the story unfolds."
+  },
+  {
+   "ref": "Laisse XLII",
+   "quote": "\"Never,\" says Guene, \"so long as lives Rollanz,",
+   "who": "Ganelon, to Marsile",
+   "explanation": "Ganelon's third answer to Marsile's question about when Charlemagne will end his wars. He identifies Roland as the key to the emperor's power and so tells the enemy where to strike. The answer joins personal hatred to political betrayal."
+  },
+  {
+   "ref": "Laisse LXXIX (Roland 1015)",
+   "quote": "Pagans are wrong: Christians are right indeed.",
+   "who": "Roland",
+   "explanation": "Roland's statement of the moral law of the war. It is the most often quoted line in discussions of the poem's crusading ideology, and it divides the world into two camps with no middle ground."
+  },
+  {
+   "ref": "Laisse LXXXV",
+   "quote": "\"Never, by God,\" then answers him Rollanz,\n\"Shall it be said by any living man,\nThat for pagans I took my horn in hand!",
+   "who": "Roland, to Oliver",
+   "explanation": "The third refusal to sound the horn. Roland's concern is what will be said of him: the horn would be a confession of fear. Whether this is heroism or pride is the poem's central interpretative problem."
+  },
+  {
+   "ref": "Laisse LXXXVII (Roland 1093)",
+   "quote": "Pride hath Rollanz, wisdom Olivier hath;",
+   "who": "The narrator",
+   "explanation": "Moncrieff's version of the most famous line in the poem, 'Rollant est proz e Oliver est sage'. The Old French proz means valiant rather than proud. The line defines the two friends by complementary virtues, and the next line insists that both are marvellously brave."
+  },
+  {
+   "ref": "Laisse LXXXIX",
+   "quote": "So, though you die, blest martyrs shall you live,\nThrones you shall win in the great Paradis.",
+   "who": "Archbishop Turpin",
+   "explanation": "Turpin's sermon before the battle makes the war a holy war and death in it martyrdom. The promise of paradise to warriors who die fighting pagans reflects the ideas of the age of the First Crusade."
+  },
+  {
+   "ref": "Laisse CXXXI (Roland 1724–25)",
+   "quote": "Vassalage comes by sense, and not folly;\nPrudence more worth is than stupidity.",
+   "who": "Oliver, to Roland",
+   "explanation": "Oliver's reproach when Roland at last wants to sound the horn. It is the only explicit criticism of Roland in the poem, and its ideal of measure, of courage governed by good sense, lies behind all readings of Roland's desmesure."
+  },
+  {
+   "ref": "Laisse CLXXVI",
+   "quote": "Remembering so many divers things:\nSo many lands where he went conquering,\nAnd France the Douce, the heroes of his kin,\nAnd Charlemagne, his lord who nourished him.",
+   "who": "The narrator",
+   "explanation": "Roland's last thoughts follow the order of his loyalties: conquests, homeland, kin, and his lord. Then he turns to God. The passage gathers the poem's values into a single moment."
+  },
+  {
+   "ref": "Laisse CCLXXVII",
+   "quote": "And if Rollant was forfeited to Guenes\nStill your service to him full warrant gave.",
+   "who": "Thierry, to Charlemagne",
+   "explanation": "Thierry's legal argument at the trial: whatever wrong Roland did Ganelon, the king's service protected him, so Ganelon's revenge is treason. The principle places royal authority above private feud."
+  },
+  {
+   "ref": "Laisse CCXCI",
+   "quote": "\"God!\" said the King: \"My life is hard indeed!\"",
+   "who": "Charlemagne",
+   "explanation": "The poem ends with the emperor's complaint as Gabriel calls him to new war. Victory brings no rest: the Christian king's labour never ends, and the epic closes in weariness and tears."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Roland name Ganelon as envoy, and why does Ganelon react as he does?",
+   "hint": "Consider the earlier fate of Basan and Basile, Ganelon's public defiance, Roland's laughter, and what Ganelon later says at his trial."
+  },
+  {
+   "q": "Is Roland right to refuse to sound the horn?",
+   "hint": "Compare Roland's reasons in laisses LXXXIII–LXXXV with Oliver's in laisse CXXXI, Turpin's judgement in laisse CXXXII, and the way Roland is received at his death."
+  },
+  {
+   "q": "What does the line 'Roland is valiant and Oliver is wise' tell us about the poem's idea of the hero?",
+   "hint": "Look at the next line, the second horn debate, and the reconciliation of the two friends."
+  },
+  {
+   "q": "How does the poem use repetition, especially laisses similaires?",
+   "hint": "Take one sequence (Marsile's questions, the horn, Durendal or Charles's laments) and note what changes from laisse to laisse."
+  },
+  {
+   "q": "In what ways is Roland's death presented as a martyrdom?",
+   "hint": "Think of the storm over France, the confession, the offered glove, the angels, and the parallels with Christ's death."
+  },
+  {
+   "q": "What kind of king is Charlemagne?",
+   "hint": "Consider his age, his dreams, his silence in council, his grief at Roncevaux, his dependence on angels, and the poem's last lines."
+  },
+  {
+   "q": "How are the Saracens portrayed? Are they simply the opposite of the Franks?",
+   "hint": "Compare the two councils, the twelve Saracen champions, Baligant's dignity, the treatment of the pagan gods, and Bramimonde."
+  },
+  {
+   "q": "Does the Baligant episode belong to the poem?",
+   "hint": "Weigh its links with Charles's dreams and prayers against the sudden appearance of Baligant and the change of focus from Roland to Charles."
+  },
+  {
+   "q": "Why do the barons want to free Ganelon, and why does Thierry win?",
+   "hint": "Think about Ganelon's claim of open revenge, the fear of Pinabel, the idea of the king's service, and the trial by combat as a judgement of God."
+  },
+  {
+   "q": "What is the role of women in the poem?",
+   "hint": "Look closely at Aude's death and Bramimonde's laments, gifts and conversion, and ask what each says about loyalty and belonging."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "auerbach1953",
+   "text": "Auerbach, Erich. Mimesis: The Representation of Reality in Western Literature. Translated by Willard R. Trask. Princeton: Princeton University Press, 1953. Chapter 5, 'Roland against Ganelon'."
+  },
+  {
+   "id": "brault1978",
+   "text": "Brault, Gerard J. The Song of Roland: An Analytical Edition. 2 vols. University Park: Pennsylvania State University Press, 1978."
+  },
+  {
+   "id": "burger1977",
+   "text": "Burger, André. Turold, poète de la fidélité: Essai d'explication de la Chanson de Roland. Geneva: Droz, 1977."
+  },
+  {
+   "id": "burgess1990",
+   "text": "Burgess, Glyn, trans. The Song of Roland. Harmondsworth: Penguin, 1990."
+  },
+  {
+   "id": "bedier1908",
+   "text": "Bédier, Joseph. Les Légendes épiques: Recherches sur la formation des chansons de geste. 4 vols. Paris: Champion, 1908–1913."
+  },
+  {
+   "id": "cook1987",
+   "text": "Cook, Robert Francis. The Sense of the Song of Roland. Ithaca: Cornell University Press, 1987."
+  },
+  {
+   "id": "duggan1973",
+   "text": "Duggan, Joseph J. The Song of Roland: Formulaic Style and Poetic Craft. Berkeley: University of California Press, 1973."
+  },
+  {
+   "id": "gaunt2001",
+   "text": "Gaunt, Simon. Retelling the Tale: An Introduction to Medieval French Literature. London: Duckworth, 2001."
+  },
+  {
+   "id": "haidu1993",
+   "text": "Haidu, Peter. The Subject of Violence: The Song of Roland and the Birth of the State. Bloomington: Indiana University Press, 1993."
+  },
+  {
+   "id": "jones1963",
+   "text": "Jones, George Fenwick. The Ethos of the Song of Roland. Baltimore: Johns Hopkins Press, 1963."
+  },
+  {
+   "id": "kay1995",
+   "text": "Kay, Sarah. The Chansons de geste in the Age of Romance: Political Fictions. Oxford: Clarendon Press, 1995."
+  },
+  {
+   "id": "kinoshita2006",
+   "text": "Kinoshita, Sharon. Medieval Boundaries: Rethinking Difference in Old French Literature. Philadelphia: University of Pennsylvania Press, 2006."
+  },
+  {
+   "id": "legentil1969",
+   "text": "Le Gentil, Pierre. The Chanson de Roland. Translated by Frances F. Beer. Cambridge, MA: Harvard University Press, 1969. First published Paris: Hatier, 1955."
+  },
+  {
+   "id": "menendezpidal1959",
+   "text": "Menéndez Pidal, Ramón. La Chanson de Roland y el neotradicionalismo (orígenes de la épica románica). Madrid: Espasa-Calpe, 1959."
+  },
+  {
+   "id": "mickel1989",
+   "text": "Mickel, Emanuel J. Ganelon, Treason, and the 'Chanson de Roland'. University Park: Pennsylvania State University Press, 1989."
+  },
+  {
+   "id": "ohagan1880",
+   "text": "O'Hagan, John, trans. The Song of Roland. London: C. Kegan Paul, 1880."
+  },
+  {
+   "id": "paris1885",
+   "text": "Paris, Gaston. La Poésie du moyen âge: Leçons et lectures. Paris: Hachette, 1885."
+  },
+  {
+   "id": "rychner1955",
+   "text": "Rychner, Jean. La Chanson de geste: Essai sur l'art épique des jongleurs. Geneva: Droz; Lille: Giard, 1955."
+  },
+  {
+   "id": "moncrieff1919",
+   "text": "Scott Moncrieff, C. K., trans. The Song of Roland. London: Chapman and Hall, 1919."
+  },
+  {
+   "id": "segre1971",
+   "text": "Segre, Cesare, ed. La Chanson de Roland. Milan and Naples: Ricciardi, 1971."
+  },
+  {
+   "id": "short1990",
+   "text": "Short, Ian, ed. and trans. La Chanson de Roland. Paris: Livre de Poche (Lettres gothiques), 1990."
+  },
+  {
+   "id": "taylor2001",
+   "text": "Taylor, Andrew. 'Was There a Song of Roland?' Speculum 76, no. 1 (2001): 28–65."
+  },
+  {
+   "id": "thorpe1969",
+   "text": "Thorpe, Lewis, trans. Einhard and Notker the Stammerer: Two Lives of Charlemagne. Harmondsworth: Penguin, 1969."
+  },
+  {
+   "id": "vance1970",
+   "text": "Vance, Eugene. Reading the Song of Roland. Englewood Cliffs, NJ: Prentice-Hall, 1970."
+  }
+ ]
+}
