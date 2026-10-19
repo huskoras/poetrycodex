@@ -3198,3 +3198,5 @@ a.ec-here { color: var(--accent); }
 .gd-box:hover > span[aria-hidden] { transform: translateX(3px); }
 .gd-box + .gd-box { margin-top: -.6rem; }
 .gd-quote blockquote { white-space: pre-line; }
+.gd-box .gd-box-t { font-weight: 600; font-size: 1.08rem; }
+.gd-box .gd-box-k { font-weight: 700; }

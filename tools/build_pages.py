@@ -723,6 +723,102 @@ def section_page(w, poet, grouped, i, others=()):
     return shell(page_title, description, canonical, body, image=share_image(poet), ld=ld)
 
 
+# ---------- study guides: /guide/<group>/ ----------
+# The app draws each guide from data/guides/<group>.json behind a hash route that search
+# engines cannot read; this writes the whole guide as one plain page, so the editors'
+# summaries, analyses, debates and bibliography can be found and cited.
+def guide_cite(text, bib):
+    import re as _re
+
+    def one(m):
+        b = bib.get(m.group(1))
+        if not b:
+            return ""
+        who = _re.split(r"[,.]", b)[0].strip()
+        yrs = _re.findall(r"\b(1[5-9]\d\d|20\d\d)\b", b)
+        return f"({esc(who)}{' ' + yrs[-1] if yrs else ''})"
+    out, last = [], 0
+    for m in _re.finditer(r"\[\[([\w-]+)\]\]", text or ""):
+        out.append(esc(text[last:m.start()]))
+        out.append(one(m))
+        last = m.end()
+    out.append(esc((text or "")[last:]))
+    return "".join(out)
+
+
+def guide_page(g, group):
+    bib = {b["id"]: b["text"] for b in g.get("bibliography") or []}
+    P = lambda paras: "".join(f"<p>{guide_cite(t, bib)}</p>" for t in (paras or []))
+    unit = g.get("unit") or "Book"
+    qe = g.get("quoteEdition")
+
+    def quote(q, extra=""):
+        return (f'<figure class="gd-quote"><blockquote>{esc(q.get("quote", ""))}</blockquote>'
+                f'<figcaption>{esc(q.get("who", "") + " · " if q.get("who") else "")}{esc(q.get("ref", ""))}</figcaption>'
+                f'{"<p>" + guide_cite(extra, bib) + "</p>" if extra else ""}</figure>')
+    glance = "".join(f'<div><dt>{esc(r["label"])}</dt><dd>{guide_cite(r["value"], bib)}</dd></div>'
+                     for r in g.get("glance") or [])
+    books = []
+    for b in g.get("books") or []:
+        read = ""
+        if qe:
+            sec = b.get("section") if b.get("section") is not None else b["n"] - 1
+            read = f'<p class="gd-read"><a href="/work/{esc(qe)}/{sec}/">Read the text</a></p>'
+        lines = f'<p class="gd-lines">{esc(b["lines"])}</p>' if b.get("lines") else ""
+        books.append(f'<section id="part-{b["n"]}"><h3 class="gd-h">{esc(unit)} {b["n"]}: {esc(b["title"])}</h3>{lines}'
+                     f'<h4 class="gd-h3">Summary</h4>{P(b.get("summary"))}'
+                     f'<h4 class="gd-h3">Analysis</h4>{P(b.get("analysis"))}'
+                     + "".join(quote(k, k.get("note", "")) for k in b.get("key") or []) + read + "</section>")
+    sides = []
+    for c in g.get("characters") or []:
+        if c.get("side") not in sides:
+            sides.append(c.get("side"))
+    chars = "".join(f'<h3 class="gd-h3">{esc(sd)}</h3><dl class="gd-chars">'
+                    + "".join(f'<div><dt>{esc(c["name"])}</dt><dd>{guide_cite(c["text"], bib)}</dd></div>'
+                              for c in g["characters"] if c.get("side") == sd) + "</dl>" for sd in sides)
+    themes = "".join(f'<h3 class="gd-h3">{esc(t["title"])}</h3>{P(t["text"])}' for t in g.get("themes") or [])
+    motifs = "".join(f'<h3 class="gd-h3">{esc(t["title"])}</h3>{P([t["text"]])}' for t in g.get("motifs") or [])
+    symbols = "".join(f'<h3 class="gd-h3">{esc(t["title"])}</h3>{P([t["text"]])}' for t in g.get("symbols") or [])
+    debates = "".join(f'<h3 class="gd-h3">{esc(t["title"])}</h3>{P(t["text"])}' for t in g.get("debates") or [])
+    quotes = "".join(quote(q, q.get("explanation", "")) for q in g.get("quotes") or [])
+    qs = "".join(f'<li><p>{esc(q["q"])}</p><p class="gd-hint">{guide_cite(q.get("hint", ""), bib)}</p></li>'
+                 for q in g.get("questions") or [])
+    bibl = "".join(f"<li>{esc(b['text'])}</li>" for b in g.get("bibliography") or [])
+    toc = " · ".join(f'<a href="#{a}">{t}</a>' for a, t in (("overview", "Overview"), ("parts", f"{unit} by {unit.lower()}"),
+                     ("characters", "Characters"), ("themes", "Themes"), ("debates", "Critical debates"),
+                     ("quotes", "Key passages"), ("questions", "Questions"), ("reading", "Further reading")))
+    body = f"""    <article class="detail gd-page">
+      <p class="detail-subject">Study guide</p>
+      <h1 class="detail-title">{esc(g["title"])}</h1>
+      <p class="detail-author">by {esc(g.get("author", ""))}</p>
+      <p class="read-in-archive"><a href="/#/guide/{esc(group)}">Open the interactive study guide →</a></p>
+      <nav class="gd-tabs" aria-label="Contents">{toc}</nav>
+      <section id="overview"><h2 class="gd-h">Overview</h2><dl class="gd-glance">{glance}</dl>
+      <h3 class="gd-h3">Context</h3>{P(g.get("context"))}<h3 class="gd-h3">Plot overview</h3>{P(g.get("plot"))}</section>
+      <section id="parts"><h2 class="gd-h">{esc(unit)} by {esc(unit.lower())}</h2>{"".join(books)}</section>
+      <section id="characters"><h2 class="gd-h">Characters</h2>{chars}</section>
+      <section id="themes"><h2 class="gd-h">Themes</h2>{themes}<h2 class="gd-h">Motifs</h2>{motifs}<h2 class="gd-h">Symbols</h2>{symbols}</section>
+      <section id="debates"><h2 class="gd-h">Critical debates</h2>{debates}</section>
+      <section id="quotes"><h2 class="gd-h">Key passages</h2>{quotes}</section>
+      <section id="questions"><h2 class="gd-h">Questions for study</h2><ol class="gd-qs">{qs}</ol></section>
+      <section id="reading"><h2 class="gd-h">Further reading</h2><ul class="gd-bib">{bibl}</ul></section>
+      <p class="gd-foot">Written by the Poetry Codex editors. Updated {esc(g.get("updated", ""))}.</p>
+    </article>"""
+    canonical = f"{SITE}/guide/{group}/"
+    title = f"{g['title']}: Study Guide"
+    first = (g.get("plot") or g.get("context") or [""])[0]
+    import re as _re
+    description = (f"Study guide to {g['title']} by {g.get('author', '')}: summary and analysis of every "
+                   f"{unit.lower()}, characters, themes, critical debates, key passages and further reading. "
+                   + _re.sub(r"\[\[[\w-]+\]\]", "", first))[:300]
+    ld = ld_json({"@type": "LearningResource", "name": title, "url": canonical, "inLanguage": "en",
+                  "learningResourceType": "Study guide", "isAccessibleForFree": True,
+                  "about": {"@type": "CreativeWork", "name": g["title"], "author": {"@type": "Person", "name": g.get("author", "")}},
+                  "publisher": {"@type": "Organization", "name": "Poetry Codex", "url": SITE + "/"}},
+                 breadcrumbs(("Study guides", None), (g["title"], None)))
+    return shell(title, description, canonical, body, ld=ld)
+
+
 def not_found_page():
     """404.html: GitHub Pages serves it for any address that does not exist."""
     body = r"""    <article class="detail not-found">
@@ -784,7 +880,7 @@ def main():
     idx = json.load(io.open(os.path.join(ROOT, "data", "index.json"), encoding="utf-8"))
 
     # Rebuild from scratch so a removed poem's page does not linger.
-    for d in ("poem", "poet", "work"):
+    for d in ("poem", "poet", "work", "guide"):
         shutil.rmtree(os.path.join(ROOT, d), ignore_errors=True)
 
     works_by_poet = {}
@@ -844,6 +940,17 @@ def main():
                 urls.append(f"{SITE}/work/{w['slug']}/{i}/")
                 section_count += 1
     write(os.path.join(ROOT, "work", "works.json"), works_manifest(idx.get("works") or []))
+
+    guide_count = 0
+    gdir = os.path.join(ROOT, "data", "guides")
+    for f in sorted(os.listdir(gdir)) if os.path.isdir(gdir) else []:
+        if f.endswith(".json"):
+            group = f[:-5]
+            g = json.load(io.open(os.path.join(gdir, f), encoding="utf-8"))
+            write(os.path.join(ROOT, "guide", group, "index.html"), guide_page(g, group))
+            urls.append(f"{SITE}/guide/{group}/")
+            guide_count += 1
+    print(f"study guides: {guide_count} pages")
 
     # Split into small child sitemaps behind one index. Google fetches each child
     # separately, so no single file is large, and a failure in one does not hide the rest.
