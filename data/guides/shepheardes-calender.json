@@ -1,0 +1,866 @@
+{
+ "work": "shepheardes-calender",
+ "title": "The Shepheardes Calender",
+ "author": "Edmund Spenser",
+ "quoteEdition": "shepheardes-calender",
+ "unit": "Part",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Published",
+   "value": "London, 1579: entered in the Stationers' Register on 5 December 1579 by the printer Hugh Singleton; four further quartos followed by 1597"
+  },
+  {
+   "label": "Author",
+   "value": "Edmund Spenser (c. 1552–1599), then in his late twenties, a Cambridge graduate (Pembroke Hall) recently secretary to John Young, Bishop of Rochester; his name appears nowhere in the book"
+  },
+  {
+   "label": "Signature",
+   "value": "The dedicatory poem 'To His Booke' is signed 'Immeritô', 'the unworthy one'; the volume is dedicated to Philip Sidney"
+  },
+  {
+   "label": "Apparatus",
+   "value": "An editor who signs himself 'E. K.' supplies an Epistle to Gabriel Harvey, a General Argument, an Argument before each eclogue and learned glosses after it"
+  },
+  {
+   "label": "Form",
+   "value": "Twelve pastoral eclogues, one for each month from January to December, each headed by a woodcut and closed by 'emblems' (mottoes) for the speakers"
+  },
+  {
+   "label": "Kinds",
+   "value": "E. K. sorts the eclogues as plaintive (January, June, November, December), recreative (March, April, August) and moral (February, May, July, September, October)"
+  },
+  {
+   "label": "Metre",
+   "value": "A deliberate display of variety: more than a dozen verse forms, from rough four-stress couplets to the April lay, a sestina in August and the ten-line elegy of November"
+  },
+  {
+   "label": "Language",
+   "value": "Studiously archaic and rustic, with words from Chaucer and northern dialect; Sidney and Jonson both objected to it"
+  },
+  {
+   "label": "Models",
+   "value": "Theocritus, Virgil's Eclogues, Mantuan, Marot, and Chaucer, whom the poem calls 'Tityrus'; the title recalls the popular almanac The Kalender of Shepherdes"
+  },
+  {
+   "label": "This edition",
+   "value": "The quote edition is a modernised text giving E. K.'s Arguments, the eclogues, the emblems and the Epilogue, but not the Epistle, the General Argument or the glosses; line numbers here count its verse lines"
+  }
+ ],
+ "context": [
+  "The Shepheardes Calender appeared at the end of 1579 as a handsome quarto without its author's name. Its dedicatory verses are signed 'Immeritô', and its editor, 'E. K.', speaks only of 'the new poet'. Readers in the know, however, soon understood that the poet was Edmund Spenser, a former sizar of Pembroke Hall, Cambridge, who had spent 1578 as secretary to John Young, Bishop of Rochester, and in 1579 was in the household of the Earl of Leicester, where he came to know Philip Sidney. The book announced, with unusual ceremony, the arrival of a major English poet [[hadfield2012]] [[oram1989]].",
+  "The ceremony lay above all in the presentation. A first book of English verse by an unknown writer was given the apparatus normally reserved for a classical author: an introductory Epistle addressed to Gabriel Harvey, Spenser's friend and former tutor at Cambridge; a General Argument explaining the design; a prose Argument before each eclogue; a commentary after each one, glossing hard words and identifying sources; a woodcut at the head of each month; and Latin, Italian, French or Greek mottoes ('emblems') at the close. The effect was to present a contemporary English poem as though it were already a classic, comparable to Virgil's Eclogues with their Renaissance commentaries [[luborsky1980]] [[mccabe1999]].",
+  "Pastoral, the poetry of shepherds, was the genre traditionally chosen by a young poet. Virgil had begun with the Eclogues before the Georgics and the Aeneid, and Renaissance readers saw in that sequence a model career, rising from low to high style. Spenser's book draws on the whole pastoral tradition, from Theocritus and Virgil to the Latin eclogues of Mantuan and the French eclogues of Clément Marot, and adds an English ancestor: Chaucer, whom it calls Tityrus, the name Virgil had used for himself. Its title also echoes The Kalender of Shepherdes, a popular almanac of moral and astronomical lore, so that the high literary tradition is joined to a homely English one [[cullen1970]] [[cheney1993]].",
+  "Pastoral had also long been a vehicle for comment on the church and the state, since the Christian pastor is literally a shepherd. Spenser used it for both. Several eclogues attack worldly and ambitious clergy in the language of radical Protestantism, praise a figure called Algrind who stands for Edmund Grindal, the Archbishop of Canterbury suspended by the Queen in 1577, and allude to the controversy over Elizabeth's proposed marriage to the French Catholic Francis, Duke of Alençon (later Anjou). The book's printer, Hugh Singleton, had a few months earlier printed John Stubbs's pamphlet against that marriage, The Discoverie of a Gaping Gulf, for which Stubbs and its distributor William Page lost their right hands in November 1579 [[mclane1961]] [[king1990]].",
+  "The book was a success. Further quartos appeared in 1581, 1586, 1591 and 1597, and Sidney praised it in his Defence of Poesy, while regretting its 'old rustic language'. Its central figure, Colin Clout, became Spenser's lasting persona: he returns in Colin Clouts Come Home Againe (1595) and on Mount Acidale in Book VI of The Faerie Queene. Later pastoral in English, from Drayton to Milton's Lycidas, was written in its shadow [[sidney2002]] [[alpers1996]]."
+ ],
+ "plot": [
+  "The Calender has no single story, but it is held together by the year and by the figure of Colin Clout, a young shepherd-poet in love with Rosalind, who does not return his love. In January Colin, in a frozen landscape, complains of his love and breaks his pipe. He appears again in June, lamenting to his friend Hobbinol that Rosalind has preferred another shepherd, Menalcas; in November, where he sings an elegy for Dido, a shepherdess of great family; and in December, where, an old man in the last month of his year, he reviews his life season by season and bids farewell to his flock, his friend and his love. Between these appearances other shepherds sing his songs (April, August) or speak of him with regret (September, October).",
+  "The other eclogues are debates and singing matches among shepherds. In February the old Thenot and the young Cuddie quarrel about age and youth, and Thenot tells the fable of the Oak and the Brier. In March two boys, Willy and Thomalin, talk of Cupid. In April Hobbinol sings Colin's lay in praise of Elisa, queen of shepherds. In August Willie and Perigot hold a singing contest judged by Cuddie, who then recites Colin's sestina.",
+  "Three eclogues treat the church. In May the strict Piers and the easy-going Palinode argue about the life fit for a shepherd, and Piers tells the fable of the Fox and the Kid. In July the humble Thomalin and the proud goatherd Morrell argue the merits of hills and lowlands, and Thomalin tells of the ill fate of the good shepherd Algrind. In September Diggon Davie returns from a far country with his flock lost, describes the corruption of its shepherds, and tells of the wolf in sheep's clothing that Roffy caught.",
+  "October stands apart: Piers urges the poet Cuddie to write, and Cuddie complains that poetry is neglected and unrewarded now that Maecenas and Augustus are dead. The book ends with an Epilogue in which the poet sends his 'little Calender' into the world, claiming that it will last till the world's end but should follow humbly behind Chaucer and the author of the ploughman poems."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Januarie: Colin's Complaint",
+   "lines": "Januarie",
+   "section": 0,
+   "summary": [
+    "A narrator introduces a shepherd's boy, Colin Clout, who leads his half-starved flock out on a sunny day at the end of winter. Pale and lovesick, he addresses the gods of love and Pan, and then the winter landscape: the barren ground, the leafless trees and his feeble flock all mirror his own state.",
+    "Colin explains the cause. On a visit to the neighbouring town he saw Rosalind, and since then he has known nothing but pain, for she scorns his songs. He is not moved by Hobbinol, who loves him and courts him with gifts; he passes those gifts on to Rosalind. Since his music cannot please her, he breaks his pipe and throws himself on the ground. At nightfall he drives his sheep home."
+   ],
+   "analysis": [
+    "January sets out the method of the whole book. The month, the landscape and the speaker's feelings are made to correspond, stanza by stanza, so that the calendar becomes a calendar of the mind. The stanza is a six-line pentameter form rhyming ababcc, which Spenser uses again in December to close the frame, and the eclogue is a solo complaint, the first of E. K.'s 'plaintive' kind [[oram1989]].",
+    "Breaking the pipe is the key gesture. Colin's failure in love becomes a failure of poetry, and the book that announces a new poet opens with that poet renouncing song. The paradox is deliberate: the Calender will spend a year showing how the pastoral poet can turn private complaint into public verse. Colin's emblem, 'Ancora speme' ('Hope is my anchor'), qualifies his despair. Hobbinol's love, rejected here, has been the subject of modern discussion; E. K.'s gloss defends it by appeal to classical friendship [[montrose1979]]."
+   ],
+   "key": [
+    {
+     "ref": "SC, Januarie 1–4",
+     "quote": "A shepheard's boy, (no better do him call,)\nWhen winter's wasteful spite was almost spent,\nAll in a sunshine day, as did befall,\nLed forth his flock, that had been long ypent:",
+     "note": "The poem's first lines: the self-effacing 'no better do him call' belongs to a book whose author signs himself 'the unworthy one'. 'Ypent' (penned up) is one of many archaic forms."
+    },
+    {
+     "ref": "SC, Januarie 71–72",
+     "quote": "Both Pipe and Muse shall sore the while abye.\"\nSo broke his oaten pipe, and down did lie.",
+     "note": "The broken pipe: a renunciation of poetry that the rest of the year will undo and December will echo."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Februarie: The Oak and the Brier",
+   "lines": "Februarie",
+   "section": 1,
+   "summary": [
+    "Cuddie, a young herdsman, complains of the bitter cold. Thenot, an old shepherd who has lived 'thrice thirty years', rebukes him: the world turns from good to bad and back, and a wise man bears the season patiently. Cuddie mocks Thenot's age, his bent back and his lustless flock, and boasts of his girl Phillis.",
+    "Thenot answers with a tale he learned from Tityrus. A great Oak, once king of the field and now old and decaying, stands beside a proud Brier covered in flowers. The Brier complains to the husbandman that the Oak oppresses him, and the husbandman, angry and unthinking, cuts the Oak down, though the axe seems reluctant to wound a tree so long hallowed by priests. Without its shelter, the Brier is beaten down by winter and trodden in the dirt. Cuddie interrupts before the moral and calls it a long and worthless tale."
+   ],
+   "analysis": [
+    "February is the first of the moral eclogues, a debate between youth and age set in the month that E. K.'s Argument compares to the last age of man. The metre is the rough four-stress couplet that Spenser derived from what he and his contemporaries heard in Chaucer, and its abrupt rhythm suits the quarrel. The attribution of the fable to Tityrus, glossed by E. K. as Chaucer, gives an English master a place in a classical form [[cullen1970]].",
+    "The fable of the Oak and the Brier invites allegorical reading. The Oak, 'sacred with many a mystery' and sprinkled with holy water, recalls the old religion and the old nobility; the Brier is an upstart courtier who wins the ear of his lord by flattery. Critics have proposed particular persons, but the political lesson is general: a rash master destroys what protected the realm, and the flatterer perishes with his victim. Cuddie's refusal to hear the end shows youth doing to Thenot exactly what the Brier did to the Oak [[mclane1961]] [[patterson1987]]."
+   ],
+   "key": [
+    {
+     "ref": "SC, Februarie 91–93",
+     "quote": "But shall I tell thee a tale of truth,\nWhich I cond of Tityrus in my youth,\nKeeping his sheep on the hills of Kent?",
+     "note": "Tityrus, Virgil's name for himself, here means Chaucer: Spenser claims an English pastoral ancestor, and places him in Kent, where much of the Calender is set."
+    },
+    {
+     "ref": "SC, Februarie 207–210",
+     "quote": "For it had been an ancient tree,\nSacred with many a mystery,\nAnd often cross'd with the priests' crew,\nAnd often hallowed with holy-water dew:",
+     "note": "The Oak's Catholic past. The next lines call such beliefs 'foolery', but the axe's reluctance gives the old tree a certain dignity."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "March: Cupid in the Bush",
+   "lines": "March",
+   "section": 2,
+   "summary": [
+    "Two shepherd boys, Willy and Thomalin, greet the coming spring and plan to wake Love, who they think is still sleeping. Thomalin says that Love is already abroad: he has seen him.",
+    "Out shooting birds on a holiday, Thomalin heard something rustling in an ivy bush and shot into it. Out sprang a naked winged boy with a golden quiver, who laughed and leapt from bough to bough while Thomalin shot all his arrows and threw stones at him. When Thomalin ran away, the boy shot him in the heel, and the wound now festers. Willy recognises Love from his father's story of catching the winged boy in a net. As the sky darkens they go home."
+   ],
+   "analysis": [
+    "March is a recreative eclogue, light in tone and set in a jingling tail-rhyme stanza that recalls Chaucer's Sir Thopas. Its story is borrowed from the second idyll of Bion, where a boy hunting birds meets Love, and E. K. explains the details: the wound in the heel, for example, signifies lust. Thomalin's shooting at a god he cannot see is the comedy of an innocent who discovers desire without understanding it [[oram1989]].",
+    "In the sequence of the year, March places the first stirrings of love in spring, just as January placed Colin's frozen despair in winter. The emblems make the point: Willy's says that to love and be wise is granted scarcely to the gods; Thomalin's that in love the gall exceeds the honey. Even the lightest eclogue keeps the book's grave view of love as a wound."
+   ],
+   "key": [
+    {
+     "ref": "SC, March 79–81",
+     "quote": "With that sprang forth a naked swain;\nWith spotted wings like peacock's train,\nAnd laughing lope to a tree;",
+     "note": "Love as a mischievous boy, after Bion. 'Lope' is an archaic past tense of 'leap'."
+    },
+    {
+     "ref": "SC, March 96–97",
+     "quote": "A shaft in earnest snatched,\nAnd hit me running in the heel:",
+     "note": "The god who 'erst seem'd but to play' strikes in earnest; the slight wound becomes the festering sore of love."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "April: The Lay of Elisa",
+   "lines": "April",
+   "section": 3,
+   "summary": [
+    "Thenot finds Hobbinol weeping and asks the cause. Hobbinol explains that Colin, the southern shepherd's boy whom he loved, has turned to Rosalind, the widow's daughter of the glen, and has broken his pipe and given up song. Thenot asks to hear one of Colin's songs, and Hobbinol recites the lay Colin once made in praise of 'fair Elisa, queen of shepheards all'.",
+    "The lay calls on the nymphs and Muses to praise Elisa, daughter of Pan and Syrinx. It describes her sitting on the green dressed in scarlet and ermine, crowned with flowers; the sun blushes to see another sun below, and the moon is outshone. Calliope and the Muses come to her with bay branches; the three Graces make room for her as a fourth; the Ladies of the Lake bring olive for peace. Shepherds' daughters are told to strew flowers before her. Finally Elisa is bidden to rise and the nymphs dismissed. Thenot and Hobbinol regret that so fine a singer is blinded by love, and go home."
+   ],
+   "analysis": [
+    "April is the showpiece of the Calender and one of the founding texts of the cult of Elizabeth. The lay is written in an elaborate stanza of long and very short lines, and its catalogues of flowers, its Muses and Graces and its heavenly parentage turn the Queen into a pastoral goddess. The flower in her crown mixes the red and white roses of Lancaster and York, and E. K. reads the olive of the Ladies of the Lake as the peace of her reign. The poet, through Colin, offers her a lamb as a shepherd's tribute [[montrose1980]].",
+    "The frame complicates the praise. The song is sung not by Colin but by Hobbinol, because its maker has abandoned poetry for love; the perfect poem of praise belongs to a past that cannot be repeated. In 1579 the praise of a virgin queen, 'the flower of virgins', also had a political edge: the court was debating Elizabeth's marriage to the Duke of Alençon, which many Protestants dreaded. To celebrate her as self-sufficient and unmarried was, at that moment, to take a side [[mclane1961]] [[montrose1983]]."
+   ],
+   "key": [
+    {
+     "ref": "SC, April 34–36",
+     "quote": "Of fair Elisa, queen of shepheards all,\nWhich once he made as by a spring he lay,\nAnd tuned it unto the waters' fall.",
+     "note": "Hobbinol introduces Colin's lay. The poem of praise survives only through a friend's memory."
+    },
+    {
+     "ref": "SC, April 55–58",
+     "quote": "See, where she sits upon the grassy green,\n(O seemly sight!)\nYclad in scarlet, like a maiden queen,\nAnd ermines white:",
+     "note": "The Queen as a pastoral 'maiden queen', in royal scarlet and ermine: the stanza joins court ceremony and the village green."
+    },
+    {
+     "ref": "SC, April 113–114",
+     "quote": "Wants not a fourth Grace, to make the dance even?\nLet that room to my Lady be yeven",
+     "note": "Elisa added to the three Graces, a compliment Spenser returns to in The Faerie Queene VI.x, where Colin pipes to the Graces and a fourth figure."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "May: Piers and Palinode",
+   "lines": "May",
+   "section": 4,
+   "summary": [
+    "Palinode, an older shepherd, envies the young folk who go maying, bringing home flowers and a May king and queen, and wishes he were with them. Piers replies that such follies suit boys but not shepherds, who are hirelings neglecting their flocks. Palinode says that shepherds should enjoy what God sends them while they live.",
+    "Piers recalls a time when shepherds had no inheritance but Pan himself; prosperity made them greedy and ambitious, and wolves crept in under the guise of shepherds. Palinode calls for concord between shepherds rather than quarrels. Piers refuses any fellowship between light and dark, and tells the fable of the Fox and the Kid: a mother goat warns her son not to open to the Fox, but the Fox comes disguised as a sick pedlar, tempts the Kid with a mirror and a bell, and carries him off. Palinode asks to borrow the tale for 'our Sir John', the parish priest, to preach on."
+   ],
+   "analysis": [
+    "E. K.'s Argument states the allegory openly: Piers and Palinode represent the Protestant and the Catholic pastor. May is a debate about the clergy's way of life, and especially about wealth, marriage and inheritance, and the May games that Palinode admires were themselves suspect to strict Protestants. Piers's history of the church, from a primitive poverty to a corruption bred by 'long prosperity', is the standard Protestant account of the medieval church [[king1990]].",
+    "The fable of the Fox and the Kid turns that history into a warning. The Fox's disguise as a poor pedlar, with his trifles and his pious oaths to 'sweet Saint Charity', suggests the Catholic missionaries and their devotional objects; the Kid is the unwary believer. Palinode's comic last speech, offering the fable to a priest who 'means well, but little can say', shows the need for a learned preaching ministry, a cause Grindal had championed [[mclane1961]]."
+   ],
+   "key": [
+    {
+     "ref": "SC, May 75–76",
+     "quote": "But shepheards (as Algrind used to say)\nMust not live alike as men of the lay.",
+     "note": "The first mention of Algrind, Grindal's anagram: clergy should not live as laymen do."
+    },
+    {
+     "ref": "SC, May 126–129",
+     "quote": "Then, under colour of shepheards, somewhile\nThere crept in wolves, full of fraud and guile,\nThat often devoured their own sheep,\nAnd often the shepheards that did them keep:",
+     "note": "The wolves in shepherds' clothing, from Matthew 7:15 and the anti-clerical pastoral of Mantuan."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "June: Colin and Hobbinol",
+   "lines": "June",
+   "section": 5,
+   "summary": [
+    "Hobbinol praises the pleasant place where he now lives, and Colin calls him happy for finding the paradise Adam lost, while he himself is pursued by fate. Hobbinol urges him to leave the hills for the dales, where fairies, Graces and Muses dance.",
+    "Colin replies that the pleasures of youth no longer suit him. He used to sing of love, but he will not presume to climb Parnassus; he pipes only to please himself, and his rough verses suit his care. Tityrus, who taught him, is dead; if he had a little of that master's skill, he would make the woods weep for him and send his complaints to the faithless Rosalind, who has accepted Menalcas in his place. Hobbinol laments with him, and they go home."
+   ],
+   "analysis": [
+    "June is a plaintive eclogue in an eight-line stanza on only two rhymes, a demanding form that Colin uses to claim, paradoxically, that his verses are rough. The setting at midsummer is a pastoral 'pleasant place', the locus amoenus, but Colin cannot enter it. His refusal of Parnassus is the modesty of a young poet who is in fact displaying his skill, and his praise of the dead Tityrus as master of love-complaint again makes Chaucer the source of English pastoral song [[cullen1970]] [[cheney1993]].",
+    "The eclogue also defines the friendship of Colin and Hobbinol, which E. K. links to Spenser and Harvey. Hobbinol offers a home and a refuge; Colin's restlessness keeps him out. The emblem, 'Gia speme spenta' ('hope is already spent'), answers the anchor of hope in January."
+   ],
+   "key": [
+    {
+     "ref": "SC, June 9–10",
+     "quote": "O happy Hobbinol, I bless thy state,\nThat Paradise hast found which Adam lost:",
+     "note": "The pastoral world as a lost Eden, available to the contented friend but not to the lover."
+    },
+    {
+     "ref": "SC, June 81–82",
+     "quote": "The god of shepheards, Tityrus, is dead,\nWho taught me homely, as I can, to make:",
+     "note": "Chaucer as Colin's master. 'To make' is the old word for writing poetry; 'maker' was the English for 'poet'."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "July: Thomalin and Morrell",
+   "lines": "July",
+   "section": 6,
+   "summary": [
+    "Morrell, a proud goatherd sitting on a hill, invites Thomalin, a shepherd in the lowlands, to come up. Thomalin refuses: great climbers fall hard, and the low dales are safer. Morrell defends hills as holy, citing St Michael's Mount, Mount Olivet, Sinai and the hill in Kent where the Medway rises.",
+    "Thomalin answers that he honours the hills only for the saints who lived on them, and they were humble shepherds: Abel, Moses, Aaron and Christ himself. Today's shepherds, by contrast, are dressed in purple and gold, and Palinode, returning from Rome, reports that the shepherds there take the fleece and the flesh while their sheep starve. Asked who Algrind is, Thomalin explains that he is a great shepherd who sat on a hill until an eagle, mistaking his bald head for chalk, dropped a shellfish on it; now he lies in long pain. Morrell hopes Algrind's fortune will mend, and they part."
+   ],
+   "analysis": [
+    "July is a moral eclogue in ballad stanza, setting high against low. E. K.'s Argument presents Morrell as a 'proud and ambitious' pastor; later readers have identified him with John Aylmer, Bishop of London, though the text does not name him. The contrast between the humble shepherds of the Bible and the luxurious prelates of the present belongs to a long tradition of Protestant satire [[king1990]] [[mclane1961]].",
+    "The story of Algrind is a cautious allusion to a public event. In 1577 Elizabeth suspended Archbishop Edmund Grindal for refusing to suppress the 'prophesyings', meetings for the training of preachers. The eagle, a royal bird, wounds a good shepherd by mistake, and Morrell's hope that 'his hap' will be better expresses the hope of Grindal's supporters. The fable of the eagle and the shellfish, told of the death of the poet Aeschylus, allowed Spenser to criticise the Queen's action without saying so [[hadfield2012]]."
+   ],
+   "key": [
+    {
+     "ref": "SC, July 97–100",
+     "quote": "To kirk the narre, from God more far,\nHas been an old-said saw;\nAnd he, that strives to touch a star,\nOft stumbles at a straw.",
+     "note": "Proverbs against ambition, in the rustic idiom ('kirk', 'narre') that Spenser cultivated."
+    },
+    {
+     "ref": "SC, July 221–224",
+     "quote": "For sitting so with bared scalp,\nAn eagle soared high,\nThat, weening his white head was chalk,\nA shell-fish down let fly;",
+     "note": "The fate of Algrind, the fable through which the Calender alludes to the suspension of Archbishop Grindal."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "August: The Singing Match",
+   "lines": "August",
+   "section": 7,
+   "summary": [
+    "Willie challenges Perigot to a singing match. Perigot is lovesick, but accepts. Willie stakes a carved maple bowl showing bears and tigers and a shepherd saving a lamb from a wolf; Perigot stakes a spotted lamb. Cuddie, a neatherd's boy, is chosen as judge.",
+    "Perigot sings, line by line, of how on a holy eve he saw a lovely girl tripping over the dale and was struck by the arrow of her glance, while Willie answers each line with a refrain. Cuddie declares a draw, giving each the other's pledge. He then recites a sestina that Colin made on his loss of Rosalind, in which six end-words (woe, sound, cries, part, sleep, augment) rotate through six stanzas and an envoy. The shepherds praise Colin and go home."
+   ],
+   "analysis": [
+    "August is the most openly imitative of the eclogues. E. K.'s Argument names the singing contests of Theocritus and Virgil's third and seventh eclogues as models, and the prize bowl, its carving described at length, is a traditional feature. The roundelay, with Willie's mocking refrains undercutting Perigot's lovesick lines, is a game of wit rather than a true contest [[alpers1996]].",
+    "Colin's sestina, the formal climax, is among the earliest sestinas in English. The form, invented by the Provençal troubadours and practised by Petrarch, forces the same words to return in every stanza, so that the lover's grief seems to go round in an endless circle. Once again Colin is present only in his songs, performed by others, and the book shows a shepherd-poet whose fame grows in his absence [[oram1989]]."
+   ],
+   "key": [
+    {
+     "ref": "SC, August 53–56",
+     "quote": "PER. It fell upon a holy eve,\nWIL. Hey, ho, holiday!\nPER. When holy Fathers wont to shrieve;\nWIL. Now ginneth this roundelay.",
+     "note": "The roundelay's alternation: Perigot sings, Willie answers with a refrain and a teasing comment."
+    },
+    {
+     "ref": "SC, August 151–152",
+     "quote": "Ye wasteful Woods! bear witness of my woe,\nWherein my plaints did oftentimes resound;",
+     "note": "The opening of Colin's sestina: 'woe' and 'resound' are two of the six end-words that recur in every stanza."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "September: Diggon Davie",
+   "lines": "September",
+   "section": 8,
+   "summary": [
+    "Hobbinol meets Diggon Davie, who returns ragged from a far country to which he drove his flock in hope of gain. His sheep are starved and lost. In that country, he says, shepherds rob one another and make merchandise of their good name; they are proud, greedy, idle or false, and have sold what Christ bought.",
+    "When Hobbinol asks him to speak plainly, Diggon says that the shepherds are blamed for caring more for wife and heir than for the poor, while great 'bulls of Bashan' tread down the weak. Hobbinol says there have been no wolves in England since the Saxon king, but Diggon answers that the foxes and disguised wolves are more dangerous. He tells how Roffy, a wise shepherd whose boy is Colin Clout, caught a wolf that wore sheep's clothing and mimicked his voice to lure out his dog Lowder. Hobbinol finds Diggon's demand for constant watchfulness too strict, but offers him a bed in his cottage."
+   ],
+   "analysis": [
+    "September is the harshest of the ecclesiastical eclogues. Its rough couplets and Diggon's Welsh-tinged speech ('Her was her') give it the voice of plain complaint, and E. K.'s Argument names the target, 'Popish prelates'. Some readers have identified Diggon Davie with Richard Davies, Bishop of St David's, and the far country with Wales or with Catholic Europe; the eclogue's description could also fit the English church [[mclane1961]].",
+    "Roffy, a name formed from Roffensis, the Latin style of the Bishop of Rochester, refers to John Young, whose secretary Spenser had been, and Colin Clout is named as his boy. The story of the wolf in sheep's clothing reflects fear of Catholic missionaries working secretly in England. Hobbinol's preference for patience over vigilance is a voice of moderation set against Diggon's alarm [[hadfield2012]] [[king1990]]."
+   ],
+   "key": [
+    {
+     "ref": "SC, September 104–105",
+     "quote": "Then, plainly to speak of shepheards' most what,\nBad is the best; (this English is flat)",
+     "note": "Diggon apologises for his blunt speech: the self-conscious rusticity of the book becomes a sign of honesty."
+    },
+    {
+     "ref": "SC, September 176–177",
+     "quote": "Colin Clout, I ween, be his self boy,\n(Ah, for Colin! he whilome my joy:)",
+     "note": "Colin attached to Roffy, as Spenser was to Bishop Young: one of the book's rare links between persona and biography."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "October: The Contempt of Poetry",
+   "lines": "October",
+   "section": 9,
+   "summary": [
+    "Piers urges the downcast Cuddie to sing again. Cuddie complains that he has piped long and gained nothing: the young enjoy his songs, but no one rewards him. Piers answers that praise is better than profit, and that the poet, like Orpheus, can rule the passions of the young.",
+    "Piers advises him to rise to epic: to sing of wars, of Elisa, or of the Earl of Leicester, 'the Worthy whom she loveth best'. Cuddie replies that Virgil could rise from pastoral to epic because he had Maecenas and Augustus; such patrons are dead, and poetry is now reduced to ribaldry. Piers bids Poetry fly back to heaven if it has no place in court or cottage. Cuddie says only Colin could make that flight, if love did not hold him down; Piers answers that love raises the mind. Cuddie, warming to his theme, says that wine makes the verse flow, but his courage cools, and he will stay in humble shade."
+   ],
+   "analysis": [
+    "October is the Calender's poem about poetry. E. K.'s Argument calls Cuddie 'the perfect pattern of a Poet' and refers to a lost treatise by Spenser, The English Poet, on poetry as a divine gift. The debate goes back to Theocritus' sixteenth idyll and Mantuan's fifth eclogue on the poverty of poets, and it rests on the Virgilian career, the 'rota' from the oaten reed of pastoral to the trumpet of epic, which the reference to the 'Romish Tityrus' makes explicit [[cheney1993]] [[helgerson1978]].",
+    "The eclogue weighs several sources of poetic power: civic usefulness, royal and aristocratic patronage, Platonic love, Bacchic inspiration and heavenly origin. None is settled, and Cuddie ends where he began, in 'humble shade'. Yet the advice to celebrate Leicester and the Queen is a bid for the patronage the book laments, and the hope that Colin will 'mount as high and sing as sweet as swan' predicts the epic Spenser would write [[montrose1979]] [[mccabe2002]]."
+   ],
+   "key": [
+    {
+     "ref": "SC, October 55–56",
+     "quote": "Indeed the Romish Tityrus, I hear,\nThrough his Mecænas left his oaten reed,",
+     "note": "Tityrus is here Virgil, who rose from pastoral to epic with the support of Maecenas: the career model the Calender imagines for its own poet."
+    },
+    {
+     "ref": "SC, October 83–84",
+     "quote": "Then make thee wings of thine aspiring wit,\nAnd, whence thou cam'st, fly back to heaven apace.",
+     "note": "Piers's answer to the neglect of poetry: if the world will not house it, poetry returns to its divine source."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "November: The Elegy for Dido",
+   "lines": "November",
+   "section": 10,
+   "summary": [
+    "Thenot asks Colin for a merry song, but Colin replies that winter calls for sadder matter. Thenot proposes a lament for Dido, the daughter of 'the great shepheard', and offers a lamb as a reward. Colin, protesting his rough verse, agrees.",
+    "The elegy calls on Melpomene, the Muse of tragedy, and on the shepherds of the Kentish downs to mourn. Dido was kind to the humble and loved by Lobbin; now nature itself mourns her, flowers fade, flocks refuse their food and the Muses carry cypress and elder. Each stanza ends with the refrain 'O heavy herse! ... O careful verse!' Then the song turns: Dido has broken the bonds of night and lives among the saints in the Elysian fields, and the refrain becomes 'O happy herse! ... O joyful verse!' Thenot wonders whether to weep or rejoice, and gives Colin the lamb."
+   ],
+   "analysis": [
+    "November was E. K.'s favourite eclogue: his Argument says it surpasses its model, Marot's lament for Louise of Savoy, and all the other eclogues in the book. Its ten-line stanza with a two-part refrain, and its structure of lament followed by consolation, make it the first great pastoral elegy in English and an ancestor of Milton's Lycidas. The turn from 'heavy' to 'happy' herse enacts the Christian movement from grief to hope [[alpers1996]] [[oram1989]].",
+    "Who Dido was is unknown, and E. K. says the author would not tell him. Suggestions have included a member of Leicester's family (if Lobbin is Leicester) and, in McLane's reading, Elizabeth herself, presented as lost to her people if she married Alençon. Colin's emblem, 'La mort ny mord' ('death does not bite'), was Marot's motto and seals the consolation [[mclane1961]]."
+   ],
+   "key": [
+    {
+     "ref": "SC, November 37–38",
+     "quote": "For dead is Dido, dead, alas! and drent,\nDido! the great shepheard his daughter sheen:",
+     "note": "Thenot names the subject. 'Drent' means drowned; 'the great shepheard his daughter' is the old genitive ('the great shepherd's daughter')."
+    },
+    {
+     "ref": "SC, November 165–166",
+     "quote": "She hath the bonds broke of eternal night,\nHer soul unbodied of the burdenous corse.",
+     "note": "The turn of the elegy from lament to consolation."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "December: Colin's Farewell",
+   "lines": "December",
+   "section": 11,
+   "summary": [
+    "Colin, sitting by a spring, addresses Pan. He compares his life to the seasons. In his spring he wandered freely, robbing nests and chasing hares, and learned his art from old Wrenock until he dared compare himself with Pan; then Love, 'better called Hate', checked him. His summer was scorched by a comet of passion. In his harvest he learned skills and lore, but none that could cure his wound, and his crop has failed.",
+    "Now winter has come: his face is furrowed, his head white with frost, and death will follow. He hangs his pipe on a tree, gathers his flock into the fold, and says farewell to his delights, his lambs, the woods, Hobbinol and Rosalind. An Epilogue follows: the poet has made a calendar to last till the world's dissolution, but sends it out to follow humbly behind Tityrus and the 'Pilgrim that the ploughman play'd'."
+   ],
+   "analysis": [
+    "December closes the frame begun in January, in the same stanza and with the same complaint to Pan, but the youth of the first eclogue has become an old man. The single year now stands for a whole life, and the calendar of months for the ages of man. The model is Marot's eclogue to the king, but Spenser turns its thanks for patronage into a lament. Hanging up the pipe, rather than breaking it, is a quieter and more final farewell to song [[cullen1970]] [[oram1989]].",
+    "The Epilogue reverses the humility of Colin's farewell. Echoing the classical poet's boast that his work will outlast bronze, it claims endurance 'till the world's dissolution', even as it sends the 'little Calender', like Chaucer's 'little book', to walk behind its masters. The pairing of Colin's death and the book's survival is the Calender's final statement about the poet's career [[cheney1993]]."
+   ],
+   "key": [
+    {
+     "ref": "SC, December 141–142",
+     "quote": "Here will I hang my pipe upon this tree,\nWas never pipe of reed did better sound:",
+     "note": "The pipe hung up, not broken: a farewell that is also a boast."
+    },
+    {
+     "ref": "SC, Epilogue 1–2",
+     "quote": "Lo! I have made a Calender for every year,\nThat steel in strength, and time in durance, shall outwear;",
+     "note": "The Epilogue's claim to permanence, after Horace's 'monument more lasting than bronze' and Ovid's close to the Metamorphoses."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Colin Clout",
+   "side": "Shepherds",
+   "text": "The young shepherd-poet at the centre of the book and Spenser's own persona; E. K. says the poet 'shadoweth himself' under this name, which he took from Skelton's satire Colin Clout. He speaks in January, June, November and December; his songs are performed by others in April and August; and he is remembered in September and October. In love with Rosalind, who rejects him, he breaks his pipe in January and hangs it up in December."
+  },
+  {
+   "name": "Rosalind",
+   "side": "Shepherds",
+   "text": "The 'country lass' Colin loves, called in April 'the widow's daughter of the glen'. She never appears. She scorns Colin's songs and prefers Menalcas. E. K. claims that her name, rightly ordered, reveals the real woman's name, but no identification has been accepted."
+  },
+  {
+   "name": "Hobbinol",
+   "side": "Shepherds",
+   "text": "Colin's devoted friend, whose love Colin does not return. He sings Colin's lay of Elisa in April, comforts Colin in June and welcomes Diggon Davie to his cottage in September. He is a voice of contentment and moderation."
+  },
+  {
+   "name": "Thenot",
+   "side": "Shepherds",
+   "text": "An old shepherd who tells the fable of the Oak and the Brier to the scornful Cuddie in February, hears the lay of Elisa in April, and in November asks Colin for the elegy for Dido."
+  },
+  {
+   "name": "Cuddie",
+   "side": "Shepherds",
+   "text": "A young herdsman who mocks old Thenot in February, judges the singing match and recites Colin's sestina in August, and in October appears as a discouraged poet complaining that poetry is unrewarded. Whether the same figure is meant in all three eclogues is uncertain."
+  },
+  {
+   "name": "Piers",
+   "side": "Shepherds",
+   "text": "A stern Protestant shepherd who in May rebukes Palinode and tells the fable of the Fox and the Kid, and in October urges Cuddie to write epic. The name recalls Piers Plowman."
+  },
+  {
+   "name": "Palinode",
+   "side": "Shepherds",
+   "text": "Piers's opponent in May, a worldly, pleasure-loving shepherd identified by E. K.'s Argument with the Catholic pastor. In July he is said to have returned from a pilgrimage to Rome. His name means a retraction or recantation."
+  },
+  {
+   "name": "Thomalin",
+   "side": "Shepherds",
+   "text": "In March a shepherd boy wounded by Cupid; in July a humble lowland shepherd who refuses Morrell's invitation to climb the hill and tells the story of Algrind."
+  },
+  {
+   "name": "Morrell",
+   "side": "Shepherds",
+   "text": "The proud goatherd of July who sits on a hill and defends high places as holy; E. K.'s Argument calls him a type of the ambitious pastor."
+  },
+  {
+   "name": "Willy, Willie and Perigot",
+   "side": "Shepherds",
+   "text": "Willy talks of Cupid with Thomalin in March. In August Willie and Perigot hold a singing match, Perigot singing of the girl whose glance wounded him and Willie answering with refrains."
+  },
+  {
+   "name": "Diggon Davie",
+   "side": "Shepherds",
+   "text": "The ruined shepherd of September who returns from a far country and denounces the corruption of its shepherds. He tells the story of Roffy and the wolf."
+  },
+  {
+   "name": "Elisa",
+   "side": "Figures behind the names",
+   "text": "The 'queen of shepheards all' of Colin's April lay, daughter of Pan and Syrinx, crowned and attended by Muses and Graces: Queen Elizabeth I, as E. K.'s Argument says. She is mentioned again in October."
+  },
+  {
+   "name": "Algrind",
+   "side": "Figures behind the names",
+   "text": "A good shepherd mentioned in May and July, wounded by a shellfish dropped by an eagle. The name is an anagram of Grindal: Edmund Grindal, Archbishop of Canterbury, suspended by the Queen in 1577."
+  },
+  {
+   "name": "Roffy",
+   "side": "Figures behind the names",
+   "text": "The wise shepherd of September who catches the wolf in sheep's clothing; Colin is his boy. The name comes from Roffensis, 'of Rochester', and refers to John Young, Bishop of Rochester, Spenser's employer in 1578."
+  },
+  {
+   "name": "Tityrus",
+   "side": "Figures behind the names",
+   "text": "In February, June and December the dead master-poet who taught Colin, glossed by E. K. as Chaucer; in October the 'Romish Tityrus', Virgil, who used that name for himself in his first eclogue."
+  },
+  {
+   "name": "Gabriel Harvey",
+   "side": "Figures behind the names",
+   "text": "Spenser's friend and former tutor at Pembroke Hall, Cambridge, to whom E. K.'s Epistle is addressed and whom E. K.'s glosses connect with Hobbinol. Their published correspondence of 1580 continues the friendship."
+  },
+  {
+   "name": "The White Bear",
+   "side": "Figures behind the names",
+   "text": "In October 'the Worthy whom she loveth best' is the one who 'first the White Bear to the stake did bring': Robert Dudley, Earl of Leicester, whose badge was the bear and ragged staff. Lobbin, Dido's mourner in November, may also be Leicester."
+  },
+  {
+   "name": "Dido",
+   "side": "Figures behind the names",
+   "text": "The dead 'great shepheard his daughter' mourned in November. E. K. says the author would not reveal who she was; proposals include a lady of Leicester's family and, in allegorical readings, Elizabeth."
+  },
+  {
+   "name": "Menalcas, Lobbin and Wrenock",
+   "side": "Figures behind the names",
+   "text": "Menalcas is the rival who wins Rosalind (June); Lobbin is Dido's grieving lover (November); Wrenock is the old shepherd who taught Colin his art (December), perhaps Richard Mulcaster, Spenser's headmaster at Merchant Taylors' School."
+  },
+  {
+   "name": "E. K.",
+   "side": "Others",
+   "text": "The unidentified editor and commentator who writes the Epistle, the General Argument, the Arguments and the glosses. He presents himself as a friend of the poet and of Harvey; he has been identified with Edward Kirke, a Cambridge contemporary, with Spenser himself, and with Harvey."
+  },
+  {
+   "name": "Immeritô",
+   "side": "Others",
+   "text": "The signature, 'the unworthy one', under the dedicatory poem 'To His Booke'. Spenser used it again in his letters to Harvey."
+  },
+  {
+   "name": "Philip Sidney",
+   "side": "Others",
+   "text": "The dedicatee, 'the president of noblesse and of chevalree' in the poem 'To His Booke'. In his Defence of Poesy he praised the Calender's poetry but objected to its archaic language."
+  },
+  {
+   "name": "Hugh Singleton",
+   "side": "Others",
+   "text": "The printer of the first quarto, a Protestant who had printed Stubbs's Gaping Gulf against the Alençon match earlier in 1579."
+  }
+ ],
+ "themes": [
+  {
+   "title": "The poet's vocation",
+   "text": [
+    "The Calender is a book about becoming a poet. Its central figure breaks his pipe in January and hangs it up in December; in between, others perform his songs and lament his silence. October debates directly whether poetry is worth writing when it brings no reward, and what should inspire it: profit, patrons, love, wine or heaven. The book's elaborate presentation, with editor and commentary, insists that a new English poet has arrived who deserves to be read like the classics [[helgerson1978]] [[cheney1993]].",
+    "The answer the book gives is double. Colin, the lover, ends in failure and old age; the Calender, the work, claims to last till the end of the world. The poet's personal defeat is turned into the poem's survival."
+   ]
+  },
+  {
+   "title": "Time and the year",
+   "text": [
+    "The structure is the calendar itself. Each eclogue is matched to its month in setting, mood and imagery, and E. K. explains the correspondences in his Arguments: winter for despair and old age, spring for awakening love, summer heat for passion and controversy, autumn for loss. In December the year becomes a human life, and the book becomes a meditation on mortality [[cullen1970]].",
+    "The almanac model gives this scheme a homely and moral cast, and the zodiac signs in the woodcuts set the shepherds' lives inside a cosmic order. The Epilogue claims that, if the poet has 'marked well the stars' revolution', his calendar will serve 'for every year'."
+   ]
+  },
+  {
+   "title": "Love and its cost",
+   "text": [
+    "Love in the Calender is mostly a wound. Colin's love for Rosalind silences his poetry, Thomalin is shot by Cupid, Perigot is struck by a glance, and Hobbinol's love for Colin is not returned. The emblems repeatedly weigh love's honey against its gall. Yet October allows that love may lift the mind 'above the starry sky', a Platonic idea that Spenser developed in his later poetry [[montrose1979]]."
+   ]
+  },
+  {
+   "title": "Church and conscience",
+   "text": [
+    "May, July and September use the ancient equation of pastor and shepherd to criticise the clergy: their wealth, worldliness and neglect of their flocks, and the dangers of disguised Catholic 'wolves' and 'foxes'. The figure of Algrind expresses sympathy for Archbishop Grindal and the cause of a preaching ministry. The satire is pointed but carefully veiled, using fables and pastoral names that allowed deniability [[king1990]] [[mclane1961]]."
+   ]
+  },
+  {
+   "title": "Praise and counsel",
+   "text": [
+    "The pastoral mode allowed a poet to address the powerful from below. April's praise of Elisa makes the Queen a goddess of the shepherds' world, but in 1579 that praise could also carry advice: to remain a virgin queen and a Protestant one. Louis Montrose has argued that Elizabethan pastoral was a way for gentlemen to speak of power and ambition under the guise of humble shepherds [[montrose1983]] [[montrose1980]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Debate and contest",
+   "text": "Most eclogues are dialogues between opposed speakers: age and youth, Protestant and Catholic, high and low, the discouraged and the hopeful poet. Singing matches and quarrels let the book present several views without wholly endorsing any."
+  },
+  {
+   "title": "Fables",
+   "text": "Old shepherds tell beast fables and parables: the Oak and the Brier (February), the Fox and the Kid (May), the eagle and Algrind (July), the wolf in sheep's clothing (September). The fables carry the political and religious meanings that could not safely be stated."
+  },
+  {
+   "title": "Songs within songs",
+   "text": "Colin's poems are often performed by others: Hobbinol sings the lay of Elisa, Cuddie recites the sestina. This creates a reputation for Colin within the book and shows poetry passing from mouth to mouth in a community."
+  },
+  {
+   "title": "Tityrus and the masters",
+   "text": "Repeated tributes to Tityrus, as Chaucer and as Virgil, and the Epilogue's bow to Langland's ploughman tradition place the new poet in a line of English and classical predecessors."
+  },
+  {
+   "title": "Emblems",
+   "text": "Each eclogue closes with mottoes, called emblems or posies, for its speakers, in Latin, Italian, French or Greek. They summarise each speaker's position and often answer each other, as Colin's anchor of hope in January is answered by 'hope is already spent' in June."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The pipe",
+   "text": "Colin's oaten pipe stands for his poetry. He breaks it in January, his friends mourn its silence in April, and he hangs it on a tree in December. The 'oaten reed' is also the conventional emblem of pastoral, which Virgil left for epic."
+  },
+  {
+   "title": "The flock",
+   "text": "A shepherd's sheep reflect his condition: Colin's flock pines with him in January, and in the church eclogues the flock is the congregation, starved or devoured by careless and greedy pastors."
+  },
+  {
+   "title": "Hill and dale",
+   "text": "In July the hill stands for ambition and worldly greatness, the dale for humility and safety. The opposition reappears when Piers urges Cuddie to climb and Cuddie stays in 'humble shade'."
+  },
+  {
+   "title": "Wolves and foxes",
+   "text": "Predators in disguise, drawn from the Gospels, signify false teachers, especially Catholic priests working secretly in England."
+  },
+  {
+   "title": "The Oak and the Brier",
+   "text": "The ancient, hallowed tree and the flowering upstart of February: tradition against novelty, the old nobility against the courtier, age against youth."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Who was E. K.?",
+   "text": [
+    "The editor who signs 'E. K.' has never been certainly identified. The traditional candidate is Edward Kirke (1553–1613), who was at Pembroke Hall with Spenser and Harvey. But E. K. knows a great deal about the poet's intentions and unpublished works, and sometimes professes ignorance in a way that looks coy, so many scholars have suspected that Spenser wrote some or all of the apparatus himself, perhaps with Harvey's help [[oram1989]] [[mccabe1999]].",
+    "Louis Waldman studied the humanist practice of disguised self-naming that might lie behind the initials, and Louise Schleiner argued that 'E. K.' could stand for 'Edmund Kent', Spenser presenting himself as the man of Kent. Others see E. K. as a collaborative mask. The question matters because it determines whether the glosses are an outsider's reading or part of the poem's own design [[waldman1988]] [[schleiner1990]]."
+   ],
+   "cite": [
+    "oram1989",
+    "mccabe1999",
+    "waldman1988",
+    "schleiner1990"
+   ]
+  },
+  {
+   "title": "The new poet and the Virgilian career",
+   "text": [
+    "E. K. introduces 'the new poet', and the book seems designed to launch a career. Richard Helgerson showed how Spenser presented himself as a poet by vocation rather than a gentleman amateur, and Patrick Cheney read the Calender as the first step in a career modelled on Virgil's progress from pastoral to epic, with October's image of the poet's 'famous flight' as its emblem. The Faerie Queene, whose opening imitates the verses once prefixed to the Aeneid, completes the pattern [[helgerson1978]] [[cheney1993]].",
+    "Others stress that the Calender is also a book about failure: Colin never rises from pastoral, and October ends with Cuddie in the shade. Louis Montrose read the career aspirations through the courtly system of patronage, in which poetry was a means of advancement as much as an end [[montrose1979]]."
+   ],
+   "cite": [
+    "helgerson1978",
+    "cheney1993",
+    "montrose1979"
+   ]
+  },
+  {
+   "title": "Religious politics and Grindal",
+   "text": [
+    "The ecclesiastical eclogues have been read as precise allegories. Paul McLane identified Algrind with Grindal, Roffy with John Young, Morrell with John Aylmer and Diggon Davie with Richard Davies, and saw the book as the work of a progressive Protestant critical of the Queen's church policy [[mclane1961]].",
+    "John N. King placed the Calender within a native tradition of Protestant satire going back to the Piers Plowman poems, and argued that Spenser's position was reformist rather than Puritan in the narrow sense. Critics differ on how radical the book is: it attacks worldly prelates but also gives voice to moderation in Hobbinol and to the old religion's dignity in the Oak [[king1990]] [[hadfield2012]]."
+   ],
+   "cite": [
+    "mclane1961",
+    "king1990",
+    "hadfield2012"
+   ]
+  },
+  {
+   "title": "The Alençon match and April",
+   "text": [
+    "In 1579 Elizabeth seemed close to marrying Francis, Duke of Alençon, a match opposed by Leicester and by many Protestants. Singleton had printed Stubbs's Gaping Gulf against it. McLane argued that the Calender is shot through with allusions to the marriage, and that Dido in November figures Elizabeth as dead to her people if she marries [[mclane1961]].",
+    "Montrose read April's virgin queen, praised as self-sufficient and heavenly, as part of the cult of Elizabeth that the anti-match party encouraged. Others think the topical allusions less systematic. Richard McCabe and Andrew Hadfield set the book's political risk in the context of Stubbs's punishment [[montrose1980]] [[mccabe2002]] [[hadfield2012]]."
+   ],
+   "cite": [
+    "mclane1961",
+    "montrose1980",
+    "mccabe2002",
+    "hadfield2012"
+   ]
+  },
+  {
+   "title": "Archaism: 'Spenser writ no language'",
+   "text": [
+    "E. K.'s Epistle defends the poet's old and rustic words as a revival of English, sounding of Chaucer. Sidney, in the Defence of Poesy, objected that Theocritus, Virgil and Sannazaro had not affected an old rustic language, and Ben Jonson later said that Spenser, in affecting the ancients, 'writ no language' [[sidney2002]] [[jonson2012]].",
+    "Modern critics see the archaism as a deliberate programme: a claim to native English roots, a link to Chaucer, a sign of the pastoral speaker's rusticity, and, in the church eclogues, an echo of the plain-speaking Protestant ploughman tradition. Its effect on readers, then and now, is a sense of language made strange [[king1990]] [[mccabe1999]]."
+   ],
+   "cite": [
+    "sidney2002",
+    "jonson2012",
+    "king1990",
+    "mccabe1999"
+   ]
+  },
+  {
+   "title": "The woodcuts and the book as object",
+   "text": [
+    "The 1579 quarto is a carefully designed book, with a woodcut for each month showing the speakers and the zodiac sign, a mix of typefaces separating verse and commentary, and the emblems. Ruth Samson Luborsky showed how the presentation alludes to editions of Virgil and to popular calendars, and argued that the design is part of the work's meaning [[luborsky1980]].",
+    "Modern editions that drop the woodcuts or the glosses, like the quote edition here, give a different poem from the one Elizabethan readers held. Recent scholarship treats the Calender as a book in which text, image and commentary interact [[mccabe1999]] [[lane1993]]."
+   ],
+   "cite": [
+    "luborsky1980",
+    "mccabe1999",
+    "lane1993"
+   ]
+  },
+  {
+   "title": "Pastoral and the poet's vocation",
+   "text": [
+    "October raises the question of what pastoral is for. Patrick Cullen distinguished in Renaissance pastoral a contrast between 'Arcadian' and 'Mantuanesque' modes, the idyllic and the satirical, and found both in the Calender. Paul Alpers argued that pastoral is a mode that represents the poet's own situation through shepherds' song and their conversations [[cullen1970]] [[alpers1996]].",
+    "Annabel Patterson and Robert Lane read the Calender's pastoral as a way of engaging with the institutions of Elizabethan society, while John Bernard saw in Spenser a lifelong pastoralism concerned with the poet's place in the world [[patterson1987]] [[lane1993]] [[bernard1989]]."
+   ],
+   "cite": [
+    "cullen1970",
+    "alpers1996",
+    "patterson1987",
+    "lane1993",
+    "bernard1989"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "SC, Januarie 71–72",
+   "quote": "Both Pipe and Muse shall sore the while abye.\"\nSo broke his oaten pipe, and down did lie.",
+   "who": "Colin Clout and the narrator",
+   "explanation": "Colin, rejected by Rosalind, breaks his pipe: the book of a new poet begins with the renunciation of poetry. The gesture sets up the year-long question of whether he will sing again, and it is echoed in December when he hangs his pipe on a tree."
+  },
+  {
+   "ref": "SC, Februarie 91–93",
+   "quote": "But shall I tell thee a tale of truth,\nWhich I cond of Tityrus in my youth,\nKeeping his sheep on the hills of Kent?",
+   "who": "Thenot",
+   "explanation": "Thenot attributes his fable to Tityrus, whom E. K. identifies with Chaucer. Spenser thereby gives English pastoral a native founder alongside Virgil, and places that founder in the Kentish landscape of the Calender."
+  },
+  {
+   "ref": "SC, April 55–58",
+   "quote": "See, where she sits upon the grassy green,\n(O seemly sight!)\nYclad in scarlet, like a maiden queen,\nAnd ermines white:",
+   "who": "Colin's lay, sung by Hobbinol",
+   "explanation": "The image of Elisa as a maiden queen, dressed in royal colours on the village green, joins court and countryside. Praised as a virgin at the height of the Alençon marriage negotiations, the Queen is also being advised."
+  },
+  {
+   "ref": "SC, May 126–127",
+   "quote": "Then, under colour of shepheards, somewhile\nThere crept in wolves, full of fraud and guile,",
+   "who": "Piers",
+   "explanation": "Piers's account of the decline of the church from primitive poverty uses the Gospel image of wolves in shepherds' clothing. It sums up the Protestant satire of May, July and September."
+  },
+  {
+   "ref": "SC, June 77–78",
+   "quote": "I wot my rhymes be rough, and rudely drest;\nThe fitter they my careful case to frame:",
+   "who": "Colin Clout",
+   "explanation": "Colin's modesty is part of the pastoral pose: the verses that call themselves rough are written in a demanding two-rhyme stanza. Rusticity becomes the proper dress for sincere complaint."
+  },
+  {
+   "ref": "SC, July 99–100",
+   "quote": "And he, that strives to touch a star,\nOft stumbles at a straw.",
+   "who": "Thomalin",
+   "explanation": "A proverb against ambition at the heart of July's contrast of hill and dale. The humble shepherd's rustic wisdom rebukes the proud prelate."
+  },
+  {
+   "ref": "SC, October 19–20",
+   "quote": "Cuddie, the praise is better than the price,\nThe glory eke much greater than the gain:",
+   "who": "Piers",
+   "explanation": "Piers answers Cuddie's complaint of poverty with the humanist idea that fame and moral influence are the poet's true reward. October tests that idea against the reality of patronage."
+  },
+  {
+   "ref": "SC, October 88–90",
+   "quote": "For Colin fits such famous flight to scan;\nHe, were he not with love so ill bedight,\nWould mount as high and sing as sweet as swan.",
+   "who": "Cuddie",
+   "explanation": "Only Colin could raise poetry to heaven, if love did not hold him down. The 'famous flight' gave Cheney the title of his study of Spenser's career, and the lines look ahead to the epic Spenser would attempt."
+  },
+  {
+   "ref": "SC, November 165–166",
+   "quote": "She hath the bonds broke of eternal night,\nHer soul unbodied of the burdenous corse.",
+   "who": "Colin Clout",
+   "explanation": "The turn of the November elegy from lament to consolation: Dido's soul is freed into heaven, and the refrain changes from 'heavy' to 'happy'. The pattern became standard in English pastoral elegy, as in Lycidas."
+  },
+  {
+   "ref": "SC, Epilogue 9–10",
+   "quote": "Dare not to match thy pipe with Tityrus his style,\nNor with the Pilgrim that the ploughman play'd a while;",
+   "who": "The poet, in the Epilogue",
+   "explanation": "The book's farewell combines a claim to permanence with deference to Chaucer and to the ploughman tradition associated with Piers Plowman. The new poet places himself in an English line."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does the book that introduces a 'new poet' begin with that poet breaking his pipe?",
+   "hint": "Compare January and December, and think about who sings Colin's songs in between."
+  },
+  {
+   "q": "How does the calendar structure shape the meaning of the individual eclogues?",
+   "hint": "Look at E. K.'s Arguments for February and December, and at the way landscape and season mirror feeling."
+  },
+  {
+   "q": "What does the presentation of the book, with E. K.'s apparatus and the woodcuts, add to the poems? Does it matter who E. K. was?",
+   "hint": "Consider how classical texts were printed in the Renaissance, and what changes if Spenser wrote the glosses himself."
+  },
+  {
+   "q": "Is April's lay simply flattery of the Queen?",
+   "hint": "Think about the date, the Alençon match, and the fact that the song is sung by Hobbinol, not Colin."
+  },
+  {
+   "q": "How do May, July and September use pastoral to discuss the church? Why use fables and pastoral names?",
+   "hint": "Look at Algrind, Roffy, the Fox and the Kid, and the fate of Stubbs and his pamphlet in 1579."
+  },
+  {
+   "q": "What different sources of poetic power are weighed in October, and does the eclogue choose between them?",
+   "hint": "Patronage, usefulness, love, wine, heaven: and where Cuddie ends."
+  },
+  {
+   "q": "Why did Spenser use archaic and rustic language, and was Sidney right to object?",
+   "hint": "Consider Chaucer, the ploughman tradition and the speakers' social position."
+  },
+  {
+   "q": "How does the November elegy move from grief to consolation?",
+   "hint": "Track the changes in the refrain and the change in the images of nature."
+  },
+  {
+   "q": "What role does Hobbinol play in Colin's story?",
+   "hint": "Look at January, April, June and December, and at E. K.'s link with Gabriel Harvey."
+  },
+  {
+   "q": "What kind of career does the Calender imagine for its poet?",
+   "hint": "Compare Virgil's 'Romish Tityrus' in October with the Epilogue's claim to last 'till the world's dissolution'."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "alpers1996",
+   "text": "Alpers, Paul. What Is Pastoral? Chicago: University of Chicago Press, 1996."
+  },
+  {
+   "id": "bernard1989",
+   "text": "Bernard, John D. Ceremonies of Innocence: Pastoralism in the Poetry of Edmund Spenser. Cambridge: Cambridge University Press, 1989."
+  },
+  {
+   "id": "cheney1993",
+   "text": "Cheney, Patrick. Spenser's Famous Flight: A Renaissance Idea of a Literary Career. Toronto: University of Toronto Press, 1993."
+  },
+  {
+   "id": "cullen1970",
+   "text": "Cullen, Patrick. Spenser, Marvell, and Renaissance Pastoral. Cambridge, MA: Harvard University Press, 1970."
+  },
+  {
+   "id": "hadfield2012",
+   "text": "Hadfield, Andrew. Edmund Spenser: A Life. Oxford: Oxford University Press, 2012."
+  },
+  {
+   "id": "hamilton1990",
+   "text": "Hamilton, A. C., gen. ed. The Spenser Encyclopedia. Toronto: University of Toronto Press; London: Routledge, 1990."
+  },
+  {
+   "id": "helgerson1978",
+   "text": "Helgerson, Richard. 'The New Poet Presents Himself: Spenser and the Idea of a Literary Career.' PMLA 93 (1978): 893–911."
+  },
+  {
+   "id": "johnson1990",
+   "text": "Johnson, Lynn Staley. The Shepheardes Calender: An Introduction. University Park: Pennsylvania State University Press, 1990."
+  },
+  {
+   "id": "jonson2012",
+   "text": "Jonson, Ben. Discoveries. Ed. Lorna Hutson. In The Cambridge Edition of the Works of Ben Jonson, gen. eds David Bevington, Martin Butler and Ian Donaldson, vol. 7. Cambridge: Cambridge University Press, 2012."
+  },
+  {
+   "id": "king1990",
+   "text": "King, John N. Spenser's Poetry and the Reformation Tradition. Princeton: Princeton University Press, 1990."
+  },
+  {
+   "id": "lane1993",
+   "text": "Lane, Robert. Shepheards Devises: Edmund Spenser's Shepheardes Calender and the Institutions of Elizabethan Society. Athens: University of Georgia Press, 1993."
+  },
+  {
+   "id": "luborsky1980",
+   "text": "Luborsky, Ruth Samson. 'The Allusive Presentation of The Shepheardes Calender.' Spenser Studies 1 (1980): 29–67."
+  },
+  {
+   "id": "mccabe1999",
+   "text": "McCabe, Richard A., ed. Edmund Spenser: The Shorter Poems. London: Penguin, 1999."
+  },
+  {
+   "id": "mccabe2002",
+   "text": "McCabe, Richard A. Spenser's Monstrous Regiment: Elizabethan Poetry and the Politics of Difference. Oxford: Oxford University Press, 2002."
+  },
+  {
+   "id": "mclane1961",
+   "text": "McLane, Paul E. Spenser's Shepheardes Calender: A Study in Elizabethan Allegory. Notre Dame, IN: University of Notre Dame Press, 1961."
+  },
+  {
+   "id": "montrose1979",
+   "text": "Montrose, Louis Adrian. ''The perfecte paterne of a Poete': The Poetics of Courtship in The Shepheardes Calender.' Texas Studies in Literature and Language 21 (1979): 34–67."
+  },
+  {
+   "id": "montrose1980",
+   "text": "Montrose, Louis Adrian. ''Eliza, Queene of shepheardes', and the Pastoral of Power.' English Literary Renaissance 10 (1980): 153–82."
+  },
+  {
+   "id": "montrose1983",
+   "text": "Montrose, Louis Adrian. ''Of Gentlemen and Shepherds': The Politics of Elizabethan Pastoral Form.' ELH 50 (1983): 415–59."
+  },
+  {
+   "id": "oram1989",
+   "text": "Oram, William A., Einar Bjorvand, Ronald Bond, Thomas H. Cain, Alexander Dunlop and Richard Schell, eds. The Yale Edition of the Shorter Poems of Edmund Spenser. New Haven: Yale University Press, 1989."
+  },
+  {
+   "id": "patterson1987",
+   "text": "Patterson, Annabel. Pastoral and Ideology: Virgil to Valéry. Berkeley: University of California Press, 1987."
+  },
+  {
+   "id": "schleiner1990",
+   "text": "Schleiner, Louise. 'Spenser's \"E. K.\" as Edmund Kent (Kenned / of Kent).' English Literary Renaissance 20 (1990): 374–407."
+  },
+  {
+   "id": "sidney2002",
+   "text": "Sidney, Philip. An Apology for Poetry (or The Defence of Poesy). Ed. Geoffrey Shepherd, rev. R. W. Maslen. 3rd ed. Manchester: Manchester University Press, 2002."
+  },
+  {
+   "id": "waldman1988",
+   "text": "Waldman, Louis. 'Spenser's Pseudonym \"E. K.\" and Humanist Self-Naming.' Spenser Studies 9 (1988): 21–31."
+  }
+ ]
+}
