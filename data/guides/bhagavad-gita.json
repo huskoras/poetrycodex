@@ -1,0 +1,875 @@
+{
+ "work": "bhagavad-gita",
+ "title": "The Bhagavad Gita",
+ "author": "Vyasa (traditional)",
+ "quoteEdition": "bhagavad-gita-arnold",
+ "unit": "Part",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Full title",
+   "value": "Bhagavadgītā, 'the song of the Lord' (Bhagavat, 'the blessed one', a title of Krishna); in its colophons it calls itself an upaniṣad and a treatise on yoga"
+  },
+  {
+   "label": "Attributed author",
+   "value": "Vyasa (Krishna Dvaipayana), the legendary compiler of the Vedas and author of the Mahabharata, who also appears in the epic as a character; the real authorship is anonymous and probably collective"
+  },
+  {
+   "label": "Place in the epic",
+   "value": "Book 6 of the Mahabharata, the Bhishma Parva, chapters 23–40 of the critical edition (sections 25–42 in Ganguli's translation)"
+  },
+  {
+   "label": "Date",
+   "value": "Uncertain; most scholars place its composition between about the second century BCE and the second century CE, with earlier and later layers"
+  },
+  {
+   "label": "Length",
+   "value": "700 verses in the standard text, in 18 chapters"
+  },
+  {
+   "label": "Language and metre",
+   "value": "Sanskrit, mostly in the śloka (two lines of sixteen syllables), with passages in the longer triṣṭubh metre, above all in the vision of chapter 11"
+  },
+  {
+   "label": "Setting",
+   "value": "The battlefield of Kurukshetra, between the drawn-up armies of the Pandavas and the Kauravas, just before the first day of the great war"
+  },
+  {
+   "label": "Frame",
+   "value": "The blind king Dhritarashtra asks his minister Sanjaya, who has been granted divine sight by Vyasa, to tell him what is happening on the field; Sanjaya reports the dialogue of Krishna and Arjuna"
+  },
+  {
+   "label": "Main teachings",
+   "value": "The deathless self; action without attachment to its fruits (niṣkāma karma); one's own duty (svadharma); the three paths of action, knowledge and devotion (karma, jñāna and bhakti); the three qualities of nature (guṇas); Krishna as the supreme God"
+  },
+  {
+   "label": "Quote edition",
+   "value": "Sir Edwin Arnold, The Song Celestial (1885), a verse translation in blank verse and lyric measures"
+  }
+ ],
+ "context": [
+  "The Bhagavad Gita is a dialogue of 700 verses set inside the Mahabharata, the great Sanskrit epic of the war between two branches of one royal family (see the guide to the Mahabharata). It occupies chapters 23–40 of the sixth book, the Bhishma Parva, in the Poona critical edition. The armies of the five Pandava brothers and of their cousins the Kauravas, led by Duryodhana, face each other on the plain of Kurukshetra. At the last moment Arjuna, the greatest archer among the Pandavas, asks his charioteer Krishna to drive between the lines, sees teachers, uncles and cousins ready to die, and refuses to fight. Krishna's answer, which grows from a warrior's rebuke into a revelation of God, is the Gita [[vanbuitenen1981]] [[malinar2007]].",
+  "The date of the poem cannot be fixed with any precision. It presupposes the Upanishads, from which it borrows verses, and the early philosophical schools of Sankhya and Yoga, and it shows the rise of devotion to a personal god. Most scholars place it between about the second century BCE and the second century CE, and many believe that it grew in stages: a core about duty and the self, later enlarged with the theology of Krishna as supreme God. Tradition ascribes it, like the whole epic, to the sage Vyasa. Whatever its origins, by the eighth century CE it was established as one of the three foundational texts of Vedanta philosophy, with the Upanishads and the Brahma Sutras [[edgerton1944]] [[brockington1998]].",
+  "The Gita's influence on Indian religion is hard to overstate. Shankara's commentary (c. eighth century), the oldest that survives, read it as teaching that liberation comes through knowledge of the identity of the self and the absolute, brahman. Ramanuja (eleventh to twelfth centuries) answered that it teaches loving devotion to a personal God who is distinct from, though inseparable from, souls and the world; Madhva (thirteenth century) went further and taught a strict dualism. In the modern period it became the scripture of reformers and nationalists. Bal Gangadhar Tilak, writing in a Mandalay prison, argued in his Gita Rahasya (1915) that it is a gospel of action; Aurobindo read it as a teaching of integral yoga; Gandhi, who called it his mother, translated it into Gujarati as Anasaktiyoga, 'the yoga of non-attachment' [[tilak1935]] [[aurobindo1926]] [[gandhi1946]] [[minor1986]].",
+  "In 1785 Charles Wilkins, a merchant of the East India Company who had learned Sanskrit at Benares, published the first English translation, with a preface by the Governor-General, Warren Hastings, who predicted that the work would survive the British dominion in India. It was quickly translated into French and German, August Wilhelm von Schlegel edited and translated it into Latin in 1823, and it became one of the books through which Europe and America discovered Indian thought. Emerson and Thoreau read it closely in the 1840s and 1850s, and Thoreau describes reading it at Walden. In the twentieth century J. Robert Oppenheimer, who had read it in Sanskrit, remembered a verse from its eleventh chapter at the first atomic test [[wilkins1785]] [[sharpe1985]] [[davis2015]] [[hijiya2000]].",
+  "This guide quotes Sir Edwin Arnold's verse translation, The Song Celestial (1885). Arnold (1832–1904), a journalist and poet who had been principal of the Deccan College at Poona, was already famous for The Light of Asia (1879), his poem on the life of the Buddha. He renders most of the Gita in blank verse and often moves into rhymed lyric stanzas where the Sanskrit moves into its longer metre; here and there he abridges, marking omissions with rows of dots. His Victorian diction ('Soothfastness' for sattva, 'Yog' for yoga) can feel remote, but his version was among the most widely read English Gitas for half a century: Gandhi first read the poem in it, in London in 1889. The site also holds Kisari Mohan Ganguli's complete prose Mahabharata (1883–96), whose Bhishma Parva gives a literal prose version of the Gita in sections 25–42 [[arnold1885]] [[ganguli1883]] [[davis2015]]."
+ ],
+ "plot": [
+  "The blind king Dhritarashtra asks Sanjaya what his sons and the sons of Pandu did on the field of Kurukshetra. Sanjaya describes Duryodhana reviewing the armies with his teacher Drona, the blowing of the conches, and Arjuna's request to Krishna to drive between the hosts. Seeing his kinsmen and teachers on both sides, Arjuna is overcome by grief; he argues that killing them would destroy families, their rites and their moral order, and he sinks down in his chariot, letting fall his bow.",
+  "Krishna first rebukes him and then teaches. The self (ātman) is never born and never dies, so there is nothing to mourn; a warrior's duty is to fight a just war; and one should act without desire for the fruits of action, with an even mind in success and failure. Arjuna asks why, if knowledge is higher than action, he must do this terrible deed. Over the next chapters Krishna explains that no one can be without action, that action done as sacrifice does not bind, and that knowledge and disciplined action lead to the same goal. He reveals that he himself is the supreme Lord, born again and again to restore righteousness, the source of all things, who loves those who love him.",
+  "Arjuna asks to see Krishna's divine form. Krishna grants him a divine eye, and Arjuna sees the whole universe in one body, blazing like a thousand suns, with the warriors of both armies rushing into its flaming mouths. Krishna declares that he is Time, the destroyer of worlds, and that the enemy is already slain; Arjuna is to be only his instrument. Terrified, Arjuna begs him to return to his familiar human shape, and Krishna does so, praising devotion as the way by which he can be known.",
+  "The last chapters return to doctrine: the distinction between the 'field' of matter and its 'knower', the three qualities of nature that bind the soul, the cosmic tree with its roots above, the divine and demonic natures in human beings, three kinds of faith, food, sacrifice and gift, and finally renunciation, caste duties and grace. Krishna's final word is a call to surrender: abandon every other duty and take refuge in him alone. Arjuna declares that his delusion is gone and that he will do as he is told, and Sanjaya ends by celebrating the wonderful conversation he has been allowed to hear."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Despair of Arjuna",
+   "lines": "Chapter I: Arjuna Vishada Yoga",
+   "section": 0,
+   "summary": [
+    "Dhritarashtra asks Sanjaya to describe the field. Duryodhana goes to his teacher Drona and lists the champions on both sides, and Bhishma, the old grandsire who commands the Kauravas, blows his conch; the Pandava heroes answer with theirs, Krishna and Arjuna from a chariot drawn by white horses. Arjuna asks Krishna to halt the chariot between the armies so that he can see whom he must fight.",
+    "There he sees grandfathers, teachers, uncles, brothers, sons and friends. His limbs fail, his mouth dries, and his bow slips from his hand. He argues that no kingdom is worth the death of kinsmen, that the killing will destroy the ancestral rites of families, corrupt their women and confuse the castes, and that it would be better to be killed unresisting. He sits down in the chariot and drops his weapons."
+   ],
+   "analysis": [
+    "The chapter is often skipped by readers in search of doctrine, but the Gita depends on it. Arjuna's despair is not cowardice; it is a moral argument made in the language of dharma itself, the duty to protect family, ancestors and the order of society. The teaching that follows has to answer a good man's objection, not a weak man's fear, and the weight of chapter 1 is what makes the problem real. Its physical symptoms, trembling, fever, a bow that will not stay in the hand, show that the crisis touches the whole person [[malinar2007]].",
+    "The frame matters too. The question is asked by a blind king whose sons are about to be destroyed, and it is answered by a minister who sees at a distance. Everything we hear is reported, and the Gita never quite lets us forget that it is a speech inside a war story, told to the father of the losing side."
+   ],
+   "key": [
+    {
+     "ref": "BG 1.28–30",
+     "quote": "My members fail, my tongue dries in my mouth,\nA shudder thrills my body, and my hair\nBristles with horror; from my weak hand slips\nGandiv, the goodly bow;",
+     "note": "Arjuna's collapse is described in bodily terms; Gandiva, his famous bow, slipping from his hand is the outward sign that the warrior cannot act."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Deathless Self and the Discipline of Action",
+   "lines": "Chapter II: Sankhya Yoga",
+   "section": 1,
+   "summary": [
+    "Krishna rebukes Arjuna's weakness; Arjuna replies that it is better to live on beggar's bread than to feast on his teachers' blood, and asks to be taught. Krishna begins: the wise grieve neither for the living nor for the dead, for the self in every body was never born and never dies, and passes from body to body as a man changes worn-out clothes. As a warrior, moreover, Arjuna has no higher duty than a righteous war, and to flee would bring disgrace.",
+    "Krishna then turns from this 'Sankhya' teaching to the discipline of yoga: act without desire for the fruits of action, treating success and failure alike, for equanimity is yoga. Arjuna asks what the person of steady wisdom is like. Krishna describes the sage who withdraws his senses as a tortoise draws in its limbs, who is free from craving, fear and anger, and who reaches the peace of brahman, called brahma-nirvāṇa."
+   ],
+   "analysis": [
+    "Chapter 2 contains, in miniature, much of the Gita. Its first argument (2.11–30) is metaphysical: what is real cannot cease to be, and the self is untouched by weapons, fire, water and wind. Its second (2.31–38) is social: a kṣatriya's own duty, svadharma, is to fight. Its third (2.39–72) is practical and becomes the Gita's most famous teaching: one has a right to the action alone, never to its fruits (2.47). The ideal is not inaction but action freed from desire, what later tradition calls niṣkāma karma [[edgerton1944]] [[zaehner1969]].",
+    "Arnold's renderings of 2.47 ('Let right deeds be / Thy motive, not the fruit which comes from them') and of the famous line on equanimity (2.48) are freer than more recent versions, which make the legal metaphor of the Sanskrit clearer: your entitlement extends to the action, not to the outcome. The chapter also first sets the Gita against a ritualism that performs Vedic sacrifice to gain heaven; Krishna compares such Vedic texts to a water-tank useful only for particular needs. Arnold's switch to rhymed stanzas at 2.5–8, 2.20, 2.22 and 2.70 follows the Sanskrit's own shift into the longer triṣṭubh metre."
+   ],
+   "key": [
+    {
+     "ref": "BG 2.47",
+     "quote": "Find full reward\nOf doing right in right! Let right deeds be\nThy motive, not the fruit which comes from them.",
+     "note": "Arnold's version of the Gita's most quoted verse, often given in English as 'thy business is with the action only, never with its fruits': the doctrine of action without attachment to results."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Yoga of Action",
+   "lines": "Chapter III: Karma Yoga",
+   "section": 2,
+   "summary": [
+    "Arjuna is confused: if understanding is better than action, why urge him to this dreadful deed? Krishna replies that there are two paths, knowledge for the contemplative and action for the active, but that no one can escape action merely by not acting; nature compels every creature to act. Action done as sacrifice does not bind. The creator made humans together with sacrifice, and the world turns on a wheel of exchange between gods and men; he who eats without offering is a thief.",
+    "Krishna gives his own example: he has nothing to gain, yet he acts, because if he did not, the worlds would fall into ruin. The wise should act for the welfare of the world (lokasaṃgraha) without unsettling the ignorant. It is better to do one's own duty badly than another's well. Asked what drives people to evil against their will, Krishna names desire and anger, the enemy that covers wisdom as smoke covers fire."
+   ],
+   "analysis": [
+    "Here the Gita takes the ritual idea of sacrifice (yajña) and widens it until every duty can be an offering. The argument answers two older ideals at once: the Vedic ritualist who acts for reward and the renouncer who tries to escape action altogether. Krishna's own activity as the model for human action prepares the theology of the later chapters, where God is the one who acts without being bound [[malinar2007]].",
+    "The verse on one's own duty, svadharma (3.35, repeated at 18.47), has been read in very different ways: as a defence of the duties of caste and birth, as a call to personal vocation, and by Gandhi as a warning against imitation of the West. It is one of the places where the Gita's social conservatism and its spiritual freedom are hardest to separate [[davis2015]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 3.35",
+     "quote": "Finally, this is better, that one do\nHis own task as he may, even though he fail,\nThan take tasks not his own, though they seem good.",
+     "note": "The principle of svadharma: one's own duty, however imperfectly done, is better than another's."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "The Yoga of Knowledge",
+   "lines": "Chapter IV: Jnana Karma Sannyasa Yoga",
+   "section": 3,
+   "summary": [
+    "Krishna says that he taught this yoga long ago to Vivasvat, the sun, who taught it to Manu, the first man, and to Ikshvaku, the first king; it was lost over time and is now taught again. When Arjuna objects that Krishna was born only recently, Krishna explains that he has had many births. Though unborn, he takes form by his own power whenever righteousness declines, to protect the good and destroy the wicked.",
+    "He then teaches the subtle relation between action and inaction: the wise see inaction in action and action in inaction. Every act can be offered as sacrifice, and he lists many kinds, from fire offerings to breath control. The highest sacrifice is knowledge, which burns up past actions as fire burns fuel and carries even the worst sinner over the sea of evil. Krishna urges Arjuna to cut his doubt with the sword of knowledge and stand up."
+   ],
+   "analysis": [
+    "Chapter 4 contains the classic statement of the avatāra doctrine (4.7–8), though the noun itself does not appear in the Gita: the supreme being descends into the world age after age. The idea would become central to Vaishnava theology, which counts Krishna among the descents of Vishnu. The lineage of teachers from the sun to the first kings presents the Gita as an ancient royal wisdom, a political as well as a spiritual teaching [[malinar2007]] [[vanbuitenen1981]].",
+    "Verse 4.24, where the offering, the fire, the offerer and the goal are all brahman, is recited as a grace before meals in many Hindu homes. It shows how the Gita turns ritual into a way of seeing: when every element of the act is God, the act ceases to bind."
+   ],
+   "key": [
+    {
+     "ref": "BG 4.7–8",
+     "quote": "When Righteousness\nDeclines, O Bharata! when Wickedness\nIs strong, I rise, from age to age, and take\nVisible shape, and move a man with men,",
+     "note": "The divine descent: whenever dharma declines, the Lord takes bodily form to restore it."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Renunciation and Action",
+   "lines": "Chapter V: Karma Sannyasa Yoga",
+   "section": 4,
+   "summary": [
+    "Arjuna asks again which is better, renouncing action or performing it. Krishna answers that both lead to the highest good, but that disciplined action is better than renunciation of action. The true renouncer neither hates nor desires; only the ignorant think that Sankhya and Yoga are different.",
+    "The disciplined person, thinking 'I do nothing at all' while seeing, eating and breathing, is untouched by action as a lotus leaf by water. Dwelling in the 'city of nine gates', the body, he neither acts nor causes action. The wise look with an equal eye on a learned Brahmin, a cow, an elephant, a dog and an outcaste. Such a one reaches the peace of brahman."
+   ],
+   "analysis": [
+    "The chapter shows the Gita's habit of reconciling rather than refuting: renunciation (sannyāsa) is not rejected but redefined as an inner state. The true renouncer is the one who gives up attachment, not the one who gives up work. This is the reading that Tilak and Gandhi would press against centuries of commentators who, following Shankara, had placed the life of the monk above the life of action [[tilak1935]] [[minor1986]].",
+    "The equal vision of 5.18, which places the Brahmin and the dog-eater side by side, has often been quoted as a criticism of caste prejudice. It describes the vision of the enlightened, however, not a social programme, and the same text elsewhere affirms caste duties."
+   ],
+   "key": [
+    {
+     "ref": "BG 5.18",
+     "quote": "The Brahman with his scrolls and sanctities,\nThe cow, the elephant, the unclean dog,\nThe Outcast gorging dog's meat, are all one.",
+     "note": "The equal vision of the sage, who sees the same self in the highest and lowest of beings."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "The Yoga of Meditation",
+   "lines": "Chapter VI: Dhyana Yoga",
+   "section": 5,
+   "summary": [
+    "The true renouncer and true yogi is the one who acts without depending on results. One must raise oneself by oneself, for the self is its own friend and its own enemy. Krishna describes the practice of meditation: a clean, solitary place, a seat neither too high nor too low, the body, neck and head held straight, the gaze fixed, the mind on him. Yoga is not for those who eat or sleep too much or too little.",
+    "The mind of the yogi is like a lamp in a windless place that does not flicker. He sees the self in all beings and all beings in the self, and sees Krishna everywhere. Arjuna objects that the mind is restless, as hard to control as the wind; Krishna agrees but says it can be tamed by practice and detachment. One who fails in yoga is not lost but is reborn in a good family and continues the path."
+   ],
+   "analysis": [
+    "This is the Gita's nearest approach to a manual of meditation, close in spirit to the Yoga Sutras though not identical with Patanjali's system. Its emphasis on moderation, against extreme fasting and wakefulness, is characteristic. The play on ātman, which means both 'self' and 'oneself', makes 6.5–6 hard to translate; Arnold's riddling 'Soul is Self's friend when Self doth rule o'er Self' shows the difficulty [[zaehner1969]].",
+    "Arjuna's honest objection that the mind is like the wind, and Krishna's reassurance to those who fail, give the chapter a humane tone. The ascent ends on devotion: the greatest yogi is the one who worships Krishna with faith, which prepares the shift of the next six chapters."
+   ],
+   "key": [
+    {
+     "ref": "BG 6.19",
+     "quote": "Steadfast a lamp burns sheltered from the wind;\nSuch is the likeness of the Yogi's mind\nShut from sense-storms and burning bright to Heaven.",
+     "note": "The classic image of the mind in meditation, steady as a flame in a windless place."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Knowledge and Realization",
+   "lines": "Chapter VII: Jnana Vijnana Yoga",
+   "section": 6,
+   "summary": [
+    "Krishna begins to speak of himself. He has a lower nature of eight parts, earth, water, fire, air, ether, mind, intellect and ego, and a higher nature, the life by which the world is sustained. Everything is strung on him like pearls on a thread. He is the taste in water, the light of sun and moon, the sacred syllable in the Vedas, the strength of the strong.",
+    "The world is deluded by the three qualities of nature and by his māyā, his creative power, which is hard to pass beyond; only those who take refuge in him cross it. Four kinds of people worship him: the distressed, the seeker of knowledge, the seeker of wealth and the wise; the wise is dearest. Even those who worship other gods receive their faith from him."
+   ],
+   "analysis": [
+    "From this chapter the Gita's centre of gravity shifts from the self to God. The 'I am' sentences, which grow into the litanies of chapters 9 and 10, present Krishna as the essence in things, the best of every kind. The teaching is inclusive: other gods and their worshippers are not condemned but placed within a hierarchy that leads to Krishna. Theistic commentators such as Ramanuja found here the basis of their view that God is both the material and the efficient cause of the world [[vanbuitenen1953]] [[malinar2007]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 7.7",
+     "quote": "All these hang on me\nAs hangs a row of pearls upon its string.",
+     "note": "God as the unseen thread that holds the many things of the world together."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "The Imperishable Brahman",
+   "lines": "Chapter VIII: Akshara Brahma Yoga",
+   "section": 7,
+   "summary": [
+    "Arjuna asks the meaning of terms used at the end of the last chapter: brahman, the supreme self, action, the domain of beings and of gods, and the lord of sacrifice; and how the Lord is known at the time of death. Krishna explains each and teaches that whatever one thinks of at death, to that one goes. Remember me always, he says, and fight.",
+    "The yogi who dies with mind fixed, breath drawn up and the syllable OM on his lips reaches the highest goal. Krishna describes the cosmic cycles: a day of Brahma lasts a thousand ages, and at its dawn all beings emerge, at its night they dissolve; beyond this cycle is the unmanifest, from which there is no return. He ends with the two paths of the dead, the bright and the dark."
+   ],
+   "analysis": [
+    "This is the Gita's chapter on death and time. It joins old Upanishadic teaching on the paths of the dead to the new devotion: the decisive thought at death should be of Krishna. The verse 'remember me and fight' (8.7) keeps the cosmic teaching tied to the battlefield. Arnold abridges the end of the chapter, marking the omitted verses on the two paths with a row of dots [[arnold1885]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 8.13",
+     "quote": "And, murmuring OM, the sacred syllable--\nEmblem of BRAHM--dies, meditating Me.",
+     "note": "Dying with the sacred syllable OM and the thought of Krishna leads to the highest goal."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Royal Secret",
+   "lines": "Chapter IX: Raja Vidya Raja Guhya Yoga",
+   "section": 8,
+   "summary": [
+    "Krishna now reveals the 'royal knowledge and royal secret'. All beings are in him, but he is not in them; they rest in him as the wind rests in space. At the end of an aeon all return to his nature, and he sends them forth again. Fools despise him in human form, but great souls worship him.",
+    "He is the ritual, the offering, the mantra and the fire; father, mother and grandfather of the world; immortality and death, being and non-being. Those who perform Vedic sacrifices for heaven enjoy it and return. But whoever offers him with love a leaf, a flower, a fruit or water, he accepts. He is the same to all beings, and even a great sinner who worships him is to be considered good; women, vaiśyas and śūdras too reach the highest goal by taking refuge in him."
+   ],
+   "analysis": [
+    "Chapter 9 is the doctrinal heart of the Gita's devotionalism, bhakti. Its paradoxes (all beings are in me and not in me) express a God who is both immanent and transcendent. The simple offering of a leaf or flower (9.26) sets against costly Vedic ritual a worship open to anyone, and 9.32 extends salvation explicitly to women and the lower classes, though in terms that also assume their inferiority. Scholars see here the voice of a new religion of devotion to a personal Lord, absorbing older ritual and philosophy [[malinar2007]] [[davis2015]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 9.26",
+     "quote": "Whoso shall offer Me in faith and love\nA leaf, a flower, a fruit, water poured forth,\nThat offering I accept, lovingly made\nWith pious will.",
+     "note": "Devotion needs no costly ritual: the humblest offering made with love is accepted."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "The Divine Manifestations",
+   "lines": "Chapter X: Vibhuti Yoga",
+   "section": 9,
+   "summary": [
+    "Krishna declares that neither gods nor sages know his origin, for he is the origin of them all; every quality in creatures, from intelligence and patience to fear and fearlessness, comes from him. Those who love him receive from him the lamp of knowledge. Arjuna praises him as the supreme brahman and asks to hear more of his powers.",
+    "Krishna lists his chief manifestations (vibhūtis): among the gods he is Vishnu, among lights the sun, among Vedas the Sāmaveda, among mountains Meru, among trees the sacred fig, among weapons the thunderbolt, among rivers the Ganges, among the measurers Time. He is also Krishna among the Vrishnis and Arjuna among the Pandavas. Wherever there is glory or power, it springs from a spark of his splendour."
+   ],
+   "analysis": [
+    "The long catalogue may seem tedious, but it has a purpose: it teaches Arjuna, and the reader, to see God in whatever is excellent, the best of each kind standing for the divine. It prepares the vision of the next chapter, in which all the forms will be seen at once. Arnold renders the whole chapter in long rhymed couplets, which give the litany the swing of a hymn [[arnold1885]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 10.20",
+     "quote": "I am the Spirit seated deep in every creature's heart;\nFrom Me they come; by Me they live; at My word they depart!",
+     "note": "The opening of Krishna's list of his manifestations: God as the inner self of every being."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "The Vision of the Universal Form",
+   "lines": "Chapter XI: Vishvarupa Darshana Yoga",
+   "section": 10,
+   "summary": [
+    "Arjuna asks to see Krishna's supreme form. Krishna gives him a divine eye, since human eyes cannot bear it, and Sanjaya describes the vision: a form with countless mouths and eyes, adorned with divine ornaments and weapons, brighter than a thousand suns rising at once in the sky, containing the whole universe. Arjuna, his hair on end, bows and praises what he sees: gods, sages and serpents within the body of God, without beginning, middle or end.",
+    "Then the vision turns terrible. Arjuna sees the sons of Dhritarashtra, Bhishma, Drona and Karna, with the champions of his own side, rushing into the flaming mouths and crushed between the teeth, like rivers into the sea or moths into fire. Krishna declares that he is Time, grown old, destroyer of worlds; the enemy is already slain, and Arjuna is to be only the instrument. Trembling, Arjuna begs forgiveness for having treated Krishna as a friend and asks to see his familiar form again; Krishna resumes it and says that only devotion can give such a sight."
+   ],
+   "analysis": [
+    "The theophany of chapter 11 is the Gita's dramatic climax and its most powerful poetry. It answers Arjuna's objection in chapter 1 not with argument but with vision: the death he fears is already the work of God, and he is asked to act as the instrument of a destiny greater than himself (11.33). The scene unites the creative and destructive aspects of the divine and makes the war itself an act of cosmic time. Its terror is as essential as its glory, and Arjuna's relief at seeing his friend again shows the cost of such knowledge [[zaehner1969]] [[malinar2007]].",
+    "The chapter has had a vivid modern afterlife. Oppenheimer recalled that at the Trinity test in July 1945 he thought of 11.32, which he quoted as 'Now I am become Death, the destroyer of worlds'. The Sanskrit word kāla means time, and most translators render it so; Arnold's 'Time who kills' is closer than Oppenheimer's famous paraphrase. The image of a thousand suns (11.12) also became a commonplace of atomic writing [[hijiya2000]] [[bird2005]]. Arnold renders the vision in rapid rhymed stanzas, following the Sanskrit's shift into the triṣṭubh metre."
+   ],
+   "key": [
+    {
+     "ref": "BG 11.32",
+     "quote": "Thou seest Me as Time who kills,\nTime who brings all to doom,\nThe Slayer Time, Ancient of Days, come hither to consume;",
+     "note": "Krishna's self-declaration as Time the destroyer, the verse Oppenheimer remembered as 'I am become Death'."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "The Yoga of Devotion",
+   "lines": "Chapter XII: Bhakti Yoga",
+   "section": 11,
+   "summary": [
+    "Arjuna asks which is better: worship of Krishna in his manifest form or meditation on the unmanifest, imperishable absolute. Krishna answers that both reach him, but the path to the unmanifest is harder for embodied beings; those who worship him with devotion he swiftly rescues from the sea of death.",
+    "He offers a ladder of practices: fix the mind on him; if that is impossible, practise concentration; if that fails, work for his sake; and if even that is too hard, give up the fruits of action. He ends with a series of portraits of the devotee who is dear to him: without hatred, compassionate, the same to friend and foe, in honour and dishonour, content with whatever comes."
+   ],
+   "analysis": [
+    "Chapter 12 is short but decisive for the theistic reading of the Gita: devotion to the personal God is said to be easier, and arguably better, than contemplation of the impersonal absolute. Non-dualist commentators had to read it carefully to preserve the primacy of knowledge. The graded series of practices shows the Gita's pastoral generosity: there is a way for everyone [[vanbuitenen1953]]. The refrain 'that man I love' in Arnold's version gives the closing portraits the rhythm of a litany."
+   ],
+   "key": [
+    {
+     "ref": "BG 12.12",
+     "quote": "for, though to know is more\nThan diligence, yet worship better is\nThan knowing, and renouncing better still.",
+     "note": "A scale of practices in which renouncing the fruits of action is placed highest, a verse commentators have struggled to reconcile."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "The Field and the Knower of the Field",
+   "lines": "Chapter XIII: Kshetra Kshetrajna Vibhaga Yoga",
+   "section": 12,
+   "summary": [
+    "Krishna calls the body the field (kṣetra) and the one who knows it the knower of the field (kṣetrajña); he himself is the knower in all fields. The field comprises the elements, the senses, mind, desire and aversion; true knowledge comprises humility, non-violence, patience, detachment and devotion to him.",
+    "He describes brahman, the object of knowledge: having hands and feet everywhere, eyes and faces on every side, beyond the senses yet shining through them, within and without all beings, the light of lights. Nature (prakṛti) and spirit (puruṣa) are both without beginning; nature acts, spirit experiences. One who sees the same supreme Lord in all beings, and sees that nature does all actions while the self does nothing, sees truly."
+   ],
+   "analysis": [
+    "This chapter draws most directly on the philosophy of Sankhya, with its two principles of matter and spirit, but subordinates both to the supreme God. The distinction between the field and its knower gives the Gita a vocabulary for consciousness that has attracted modern philosophers and psychologists. The description of brahman with hands and faces everywhere echoes the Śvetāśvatara Upanishad and shows how freely the Gita builds from older scripture [[edgerton1944]] [[zaehner1969]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 13.1",
+     "quote": "for this flesh ye see\nIs Kshetra, is the field where Life disports;\nAnd that which views and knows it is the Soul,\nKshetrajna.",
+     "note": "The body as the 'field' and the conscious self as its 'knower', the chapter's governing distinction."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "The Three Qualities",
+   "lines": "Chapter XIV: Gunatraya Vibhaga Yoga",
+   "section": 13,
+   "summary": [
+    "Krishna explains that great nature is the womb in which he places the seed of all beings. Nature has three qualities (guṇas): sattva, goodness or clarity, which binds by attachment to happiness and knowledge; rajas, passion or activity, which binds by attachment to action; and tamas, darkness or inertia, which binds by negligence and sleep. The qualities compete, and whichever prevails at death determines one's next birth.",
+    "Arjuna asks the marks of one who has gone beyond the qualities. Krishna answers: he is indifferent to their workings, the same in pleasure and pain, to whom a clod, a stone and gold are alike, the same to friend and foe; and he serves Krishna with unswerving devotion."
+   ],
+   "analysis": [
+    "The theory of the three guṇas, taken from Sankhya, becomes in the last chapters of the Gita a tool for classifying everything: faith, food, sacrifice, gifts, knowledge, action, pleasure. It explains why human beings act as they do without blaming the self, which remains a witness, and it describes freedom as transcendence of all three, even of goodness. Arnold's choice of 'Soothfastness' for sattva, an archaic word for truthfulness, is typical of his Victorian idiom and has not been followed by later translators [[arnold1885]] [[edgerton1944]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 14.5",
+     "quote": "Sattwan, Rajas, and Tamas, so are named\nThe qualities of Nature, \"Soothfastness,\"\n\"Passion,\" and \"Ignorance.\" These three bind down\nThe changeless Spirit in the changeful flesh.",
+     "note": "The three qualities of nature, which bind the unchanging spirit to the body."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "The Supreme Person",
+   "lines": "Chapter XV: Purushottama Yoga",
+   "section": 14,
+   "summary": [
+    "Krishna describes the eternal aśvattha, the sacred fig tree, with its roots above and branches below, whose leaves are the Vedic hymns. Its branches spread through the world, nourished by the qualities, and its roots below bind beings to action. This tree must be cut down with the strong axe of detachment, and the seeker must find the primal person from whom it came.",
+    "The soul, a portion of Krishna, takes up the senses as the wind carries scents from flowers. Krishna is the light of sun, moon and fire, the warmth of digestion, the one in the hearts of all. There are two persons in the world, the perishable and the imperishable, but beyond both is the supreme person, Purushottama, who is Krishna himself."
+   ],
+   "analysis": [
+    "The inverted tree, an image already found in the Katha Upanishad, represents the world of rebirth rooted in the divine. The chapter ends with one of the Gita's most theistic statements: the supreme person is higher than both the changing world and the unchanging self. For Vaishnava commentators this chapter shows that Krishna is above even the impersonal brahman. Arnold renders the passage on the tree in rhymed stanzas, again following a shift in the Sanskrit metre [[vanbuitenen1981]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 15.1",
+     "quote": "Men call the Aswattha,--the Banyan-tree,--\nWhich hath its boughs beneath, its roots above,--\nThe ever-holy tree.",
+     "note": "The cosmic tree of rebirth, rooted above in God, which must be felled with the axe of detachment. Arnold calls the aśvattha a banyan; it is the sacred fig."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Divine and Demonic Natures",
+   "lines": "Chapter XVI: Daivasura Sampad Vibhaga Yoga",
+   "section": 15,
+   "summary": [
+    "Krishna lists the qualities of those born to a divine destiny: fearlessness, purity, generosity, self-control, non-violence, truth, compassion, patience. Those born to a demonic destiny are marked by hypocrisy, arrogance, anger and harshness. Arjuna, he says, is born to the divine.",
+    "He describes the demonic in detail: they say the world has no truth, no basis and no God, and is produced only by lust. Driven by insatiable desire, they hoard wealth by unjust means, boast of their enemies slain and their sacrifices, and are cast down again and again into demonic births. Desire, anger and greed are the three gates of hell."
+   ],
+   "analysis": [
+    "The chapter's portrait of the demonic is one of the earliest descriptions in Indian literature of a materialist or nihilist outlook, though seen from outside and with hostility. Its vivid speeches of self-satisfaction ('this I have gained today') have a satirical edge. The threefold gate of hell is the moral counterpart of the three qualities of the previous chapters. Arnold omits the chapter's final verses, which commend obedience to scripture, marking the gap with dots [[arnold1885]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 16.21",
+     "quote": "The Doors of Hell\nAre threefold, whereby men to ruin pass,--\nThe door of Lust, the door of Wrath, the door\nOf Avarice.",
+     "note": "Desire, anger and greed as the three gates of hell."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "The Three Kinds of Faith",
+   "lines": "Chapter XVII: Shraddhatraya Vibhaga Yoga",
+   "section": 16,
+   "summary": [
+    "Arjuna asks about those who worship with faith but ignore the scriptures. Krishna answers that faith (śraddhā) takes the form of each person's nature: a person is made of faith, and as his faith is, so is he. The good worship gods, the passionate worship spirits and demons, the dark worship ghosts.",
+    "He classifies food, sacrifice, austerity and gifts according to the three qualities. Austerity of body, speech and mind is described; a gift is good when given out of duty to a worthy person at the right time and place without hope of return. He ends by explaining the formula OM TAT SAT, used to sanctify acts of sacrifice, austerity and gift."
+   ],
+   "analysis": [
+    "Chapter 17 applies the theory of the qualities to everyday religious life, even to diet. Its claim that a person is what his faith is (17.3) is psychological as well as moral: faith is not belief in propositions but the orientation of a whole nature. Arnold omits the closing section on OM TAT SAT [[edgerton1944]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 17.3",
+     "quote": "The faith of each believer, Indian Prince!\nConforms itself to what he truly is.",
+     "note": "Faith shaped by and revealing a person's essential nature."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "Liberation through Renunciation",
+   "lines": "Chapter XVIII: Moksha Sannyasa Yoga",
+   "section": 17,
+   "summary": [
+    "Arjuna asks the difference between sannyāsa, renunciation, and tyāga, relinquishment. Krishna answers that sacrifice, gift and austerity should not be abandoned but performed without attachment to their fruits. He lists the five factors of every action, so that no one should think himself the sole agent; one free from egoism, even if he kills, does not kill and is not bound. Knowledge, action, agent, understanding, steadiness and happiness are all classified by the three qualities, and the duties of Brahmins, kṣatriyas, vaiśyas and śūdras are said to arise from their natures.",
+    "By doing his own work as worship a person reaches perfection. The Lord dwells in the hearts of all beings, moving them as if mounted on a machine. Krishna tells Arjuna to reflect and do as he wishes, then gives his final and most secret word: abandon all duties and take refuge in me alone; I will free you from all evils. Arjuna says his delusion is destroyed and he will do Krishna's word. Sanjaya closes by rejoicing in the wonderful dialogue, and declares that where Krishna and Arjuna are, there will be fortune, victory and righteousness."
+   ],
+   "analysis": [
+    "The last chapter gathers the Gita's themes and adds its most debated verse. After eighteen chapters on duty, Krishna's 'abandon all dharmas and take refuge in me' (18.66) seems to place grace above every law; commentators have argued for centuries over whether it abolishes ritual and social obligation or presupposes them. The chapter also contains the verses on caste duties (18.41–48) that critics such as B. R. Ambedkar attacked, and the statement that one who acts without egoism does not truly kill (18.17), which bears directly on the question of violence [[davis2015]] [[minor1986]].",
+    "Krishna's freedom of choice, 'as you wish, so do' (18.63), sits beside the claim that the Lord moves all beings as on a machine and that Arjuna's nature will compel him to fight. The Gita does not resolve this tension between freedom and determination; it ends instead with a decision. Arjuna stands up to fight, and the epic resumes."
+   ],
+   "key": [
+    {
+     "ref": "BG 18.73",
+     "quote": "Trouble and ignorance are gone! the Light\nHath come unto me, by Thy favour, Lord!\nNow am I fixed! my doubt is fled away!\nAccording to Thy word, so will I do!",
+     "note": "Arjuna's final words, answering his refusal in chapter 1 and returning the dialogue to the war."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Krishna",
+   "side": "Speakers",
+   "text": "Prince of the Vrishni clan, cousin and friend of the Pandavas, who has refused to fight in the war but serves as Arjuna's charioteer. In the Gita he reveals himself as the supreme God, the source and end of all beings, who takes human birth to restore righteousness. He is the principal speaker, by turns stern, tender and terrifying, and is addressed by many names: Keshava, Madhusudana, Govinda, Janardana, Vasudeva."
+  },
+  {
+   "name": "Arjuna",
+   "side": "Speakers",
+   "text": "The third of the five Pandava brothers, son of Kunti (hence 'Partha', son of Pritha) and of the god Indra, and the greatest archer of his time, wielder of the bow Gandiva. His refusal to fight starts the dialogue; his questions shape it. He is both the hero of the epic and the model student, whose doubts the reader shares and whose final resolution the reader is invited to make."
+  },
+  {
+   "name": "Sanjaya",
+   "side": "Speakers",
+   "text": "Minister and charioteer of the blind king Dhritarashtra. Vyasa has given him divine sight so that he can see and report everything on the battlefield. He narrates the Gita and ends it with his own expression of joy at what he has heard and seen."
+  },
+  {
+   "name": "Dhritarashtra",
+   "side": "Speakers",
+   "text": "The blind king of the Kurus, father of Duryodhana and the hundred Kaurava brothers. He speaks only the first verse, asking what his sons and the Pandavas did on the field. His question frames the whole poem; his blindness has often been read as an emblem of moral and spiritual blindness."
+  },
+  {
+   "name": "Duryodhana",
+   "side": "On the battlefield",
+   "text": "Eldest son of Dhritarashtra and leader of the Kauravas, whose refusal to return the Pandavas' kingdom caused the war. In chapter 1 he reviews the armies with Drona, boasting of his champions and anxious about his own side."
+  },
+  {
+   "name": "Bhishma",
+   "side": "On the battlefield",
+   "text": "Great-uncle of both Kauravas and Pandavas and commander of the Kaurava army, bound by vows to fight for the throne. He is the first whom Arjuna names as a revered elder he cannot bring himself to shoot."
+  },
+  {
+   "name": "Drona",
+   "side": "On the battlefield",
+   "text": "The Brahmin teacher who trained both sets of princes in arms and loved Arjuna best of his pupils; he fights for the Kauravas. Arjuna's reluctance to kill his own teacher is central to his crisis."
+  },
+  {
+   "name": "Karna",
+   "side": "On the battlefield",
+   "text": "Champion of the Kauravas and Arjuna's great rival, secretly the eldest son of Kunti and so the brother of the Pandavas. In chapter 11 Arjuna sees him swallowed with Bhishma and Drona into Krishna's flaming mouths."
+  },
+  {
+   "name": "Bhima and Yudhishthira",
+   "side": "On the battlefield",
+   "text": "Arjuna's brothers: Bhima, the strongest of the Pandavas, who blows the great conch Paundra, and Yudhishthira, the eldest, son of Dharma, who blows the conch 'Endless Victory'. They appear only in the roll-call of chapter 1."
+  },
+  {
+   "name": "Vyasa",
+   "side": "Others",
+   "text": "The sage to whom tradition attributes the Mahabharata and the Gita, and who grants Sanjaya the divine sight to describe the war. Krishna names him in chapter 10 as the chief of sages, and Sanjaya credits him at the end with what he has heard."
+  },
+  {
+   "name": "Vivasvat, Manu and Ikshvaku",
+   "side": "Others",
+   "text": "The sun god, the first man and lawgiver, and the first king of the solar dynasty, to whom Krishna says he taught this yoga in ancient times (4.1). The lineage presents the Gita as a royal wisdom handed down from the beginning of the world."
+  },
+  {
+   "name": "Janaka",
+   "side": "Others",
+   "text": "The philosopher-king of Videha, father of Sita in the Ramayana, whom Krishna cites (3.20) as one who reached perfection through action, a model for a ruler who is also a sage."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Duty and the problem of the just war",
+   "text": [
+    "The Gita begins with a moral dilemma: Arjuna must choose between the duty of a warrior to fight a righteous war and the duty to protect kin, teachers and the order of society. Both are claims of dharma. Krishna's first answer appeals to svadharma, the duty that belongs to one's own birth and station: for a kṣatriya nothing is better than a lawful battle, and to flee would be both sin and disgrace.",
+    "The Gita does not stay at the level of social duty. It moves from what Arjuna should do to the frame of mind in which he should do it, and finally to the God for whose sake he should act. Whether this deepening justifies the fighting or transforms the battlefield into a symbol is one of the oldest questions in its interpretation [[malinar2007]] [[davis2015]]."
+   ]
+  },
+  {
+   "title": "Action without attachment",
+   "text": [
+    "The Gita's most distinctive ethical teaching is that one should act without desire for the fruits of action. Since no one can stop acting, freedom lies not in renouncing action but in renouncing attachment to results: success and failure, pleasure and pain are to be met with an even mind. Action so performed does not bind the soul to further rebirth.",
+    "This ideal, later called niṣkāma karma, made the Gita attractive to modern reformers who wanted a spirituality of public life rather than withdrawal. Tilak saw it as the Gita's central teaching; Gandhi read it as a discipline of selfless service; critics have asked whether indifference to results can coexist with responsibility for them [[tilak1935]] [[gandhi1946]]."
+   ]
+  },
+  {
+   "title": "The deathless self",
+   "text": [
+    "Krishna's first teaching is that the self is eternal. It is not born and does not die, cannot be cut, burned, wetted or dried, and passes from body to body as a man changes his clothes. The wise therefore grieve neither for the living nor the dead. This doctrine, drawn from the Upanishads, underpins the whole poem: Arjuna's fear of killing rests on a mistaken identification of persons with bodies.",
+    "The teaching is consoling and also disturbing, since it can be used to make killing seem unimportant. The Gita guards against this by linking the knowledge of the self to detachment from passion: only one free of hatred and greed can act rightly in the light of it."
+   ]
+  },
+  {
+   "title": "Three paths to liberation",
+   "text": [
+    "Later tradition finds in the Gita three paths, or yogas: the path of action (karma), the path of knowledge (jñāna) and the path of devotion (bhakti). The text itself uses yoga in many senses and does not neatly separate them; it repeatedly insists that apparent alternatives, Sankhya and Yoga, renunciation and action, lead to the same end.",
+    "Which path is primary has divided interpreters. Shankara held that knowledge alone liberates, action serving only to purify the mind; Ramanuja and the devotional schools gave first place to bhakti; modern activists stressed karma. The Gita's capacity to sustain all three readings is part of its enduring power [[minor1986]] [[robinson2006]]."
+   ]
+  },
+  {
+   "title": "Devotion and grace",
+   "text": [
+    "From chapter 7 onward Krishna speaks as the supreme God, who is the source of all beings, who descends to restore righteousness and who loves those who love him. Devotion is open to all: a leaf or flower offered in love is accepted, and women and low-caste people too reach the highest goal. The climax of the teaching is a promise of grace: take refuge in me alone, and I will free you from all evil.",
+    "The Gita is among the earliest great texts of bhakti, a religion of personal devotion that would transform Hinduism in later centuries. Its God is both the impersonal ground of being and a personal friend, which is why Arjuna's vision of the universal form ends with a plea to see again the face he knows [[zaehner1969]] [[malinar2007]]."
+   ]
+  },
+  {
+   "title": "God as time and destroyer",
+   "text": [
+    "The theophany of chapter 11 shows that the God of love is also the God of death. Krishna appears as Time, devouring the warriors of both armies, and tells Arjuna that the enemy is already slain. The vision unites creation and destruction in one divine reality and makes the war part of a cosmic process.",
+    "This vision explains why the Gita has seemed both sublime and frightening to its readers. It offers a perspective in which individual deaths are as moths in a flame; it also leaves Arjuna, and the reader, trembling at what such a perspective costs [[hijiya2000]]."
+   ]
+  },
+  {
+   "title": "Nature, spirit and the qualities",
+   "text": [
+    "The later chapters set out a cosmology drawn from Sankhya. The world is made of nature (prakṛti), composed of three qualities, sattva, rajas and tamas; the spirit (puruṣa) is its witness and knower. Human actions, foods, faiths and gifts are all classified by the qualities.",
+    "This scheme gives the Gita a way to explain why people act as they do, and to locate freedom: not in acting differently within the qualities, but in recognizing that they alone act and rising beyond them through knowledge and devotion [[edgerton1944]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Dialogue and question",
+   "text": "The Gita is shaped by Arjuna's questions. Each new turn of the teaching begins with a doubt or an objection (if knowledge is better than action, why fight? which is better, renunciation or action? who is brahman?), and the poem advances as a lesson from teacher to pupil, rooted in a friendship that the theophany both reveals and threatens."
+  },
+  {
+   "title": "Sacrifice",
+   "text": "The language of Vedic sacrifice (yajña) runs through the poem. The Gita does not reject ritual but reinterprets it: every action, breath and act of knowledge can be an offering, and the entire universe turns on a cycle of sacrifice. In the end Krishna himself is the ritual, the offering and its recipient."
+  },
+  {
+   "title": "Equanimity and the pairs of opposites",
+   "text": "Again and again the ideal person is described as the same in pleasure and pain, heat and cold, honour and dishonour, friend and foe, to whom clod, stone and gold are equal. The repeated portraits of the sage, the yogi and the devotee build a single ideal of steadiness."
+  },
+  {
+   "title": "Litanies of 'I am'",
+   "text": "Krishna's self-revelations take the form of lists: I am the taste in water, the light of sun and moon, the sacrifice and the mantra, Vishnu among the gods, Time among measurers. These litanies, culminating in chapters 9 and 10, prepare the single vision of all things in God in chapter 11."
+  },
+  {
+   "title": "Reported speech",
+   "text": "Everything in the Gita is spoken by Sanjaya to Dhritarashtra. The frame keeps the dialogue tied to the war and to the blind father who will lose his sons, and Sanjaya's closing words turn the narrator into the first witness of the teaching's power."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The chariot and charioteer",
+   "text": "Krishna drives Arjuna's chariot, and the scene recalls the Katha Upanishad's image of the body as a chariot driven by the intellect. Readers since antiquity have taken the chariot between the armies as a picture of the self guided by God in the midst of conflict."
+  },
+  {
+   "title": "The bow Gandiva",
+   "text": "Arjuna's divine bow slips from his hand in chapter 1 and is taken up again at the end. Its fall marks the collapse of his identity as a warrior; its recovery marks action restored."
+  },
+  {
+   "title": "The tortoise and the lamp",
+   "text": "The sage withdraws his senses from their objects as a tortoise draws in its limbs (2.58), and his mind is steady as a lamp in a windless place (6.19). Both images express inward control amid the turbulence of the world."
+  },
+  {
+   "title": "The inverted fig tree",
+   "text": "The aśvattha with roots above and branches below (15.1) stands for the world of rebirth, rooted in the divine and spreading through desire, which must be cut down with detachment."
+  },
+  {
+   "title": "The thousand suns",
+   "text": "Sanjaya says that if a thousand suns rose at once in the sky, their light might resemble the splendour of the universal form (11.12). The image of overwhelming, almost destructive light has become one of the most famous in the poem, not least through its association with the atomic bomb."
+  }
+ ],
+ "debates": [
+  {
+   "title": "The Gita and violence",
+   "text": [
+    "The Gita is spoken on a battlefield, and its argument persuades a reluctant warrior to fight. Read literally, it seems to teach that killing in a righteous war, done without hatred and in the knowledge that the self cannot die, is not sinful (2.19–21, 18.17). Some modern readers have found this troubling; others, including Tilak and later Hindu nationalists, embraced it as a justification of righteous force against injustice [[tilak1935]] [[davis2015]].",
+    "Gandhi read the poem as an allegory: the battlefield is the human heart, the Kauravas and Pandavas are the forces of evil and good, and the teaching of detachment, carried through, leads to non-violence. Critics answer that the epic context makes this reading difficult, since the war that follows is real and dreadful. Scholars such as Malinar emphasize the Gita's concern with kingship and the legitimate use of power within the epic's politics [[gandhi1946]] [[malinar2007]] [[minor1986]]."
+   ],
+   "cite": [
+    "tilak1935",
+    "davis2015",
+    "gandhi1946",
+    "malinar2007",
+    "minor1986"
+   ]
+  },
+  {
+   "title": "Unity and authorship",
+   "text": [
+    "Was the Gita composed as a single work, and was it part of the Mahabharata from the start? Nineteenth- and early twentieth-century German scholars thought it a patchwork. Richard Garbe argued in 1905 that an original theistic poem about Krishna, drawing on Sankhya and Yoga, was later reworked by Vedantic editors, and he tried to separate the strata; others proposed different cores and additions [[garbe1905]].",
+    "Franklin Edgerton replied that the Gita is a poem, not a philosophical system, and that its apparent contradictions reflect a mystical outlook that holds several views together rather than a series of interpolations. J. A. B. van Buitenen argued for its deep integration in the epic, and Angelika Malinar has since reconstructed a history of growth in which the Gita's theology develops in conversation with the epic's political themes [[edgerton1944]] [[vanbuitenen1981]] [[malinar2007]]."
+   ],
+   "cite": [
+    "garbe1905",
+    "edgerton1944",
+    "vanbuitenen1981",
+    "malinar2007"
+   ]
+  },
+  {
+   "title": "Non-dualist and theist readings",
+   "text": [
+    "The great commentators read the Gita according to the systems of Vedanta they founded. For Shankara the self and brahman are one; the world of distinctions, including the personal God, belongs to the level of appearance, and liberation comes from knowledge, to which action and devotion are preparatory. For Ramanuja God is a real personal being, the inner controller of souls and the world, which are his body, and loving devotion is the supreme means; Madhva taught an eternal difference between God and souls [[vanbuitenen1953]].",
+    "The Gita gives both sides material: passages on the unmanifest brahman and the equal vision of the sage, and others on the supreme person who is beyond even the imperishable (15.18) and who loves his devotees. R. C. Zaehner's commentary argued strongly for a theistic reading in which the Gita moves beyond impersonal absorption to personal love [[zaehner1969]] [[robinson2006]]."
+   ],
+   "cite": [
+    "vanbuitenen1953",
+    "zaehner1969",
+    "robinson2006"
+   ]
+  },
+  {
+   "title": "Colonial and nationalist reception",
+   "text": [
+    "The modern prominence of the Gita owes much to colonial history. Wilkins's translation of 1785, sponsored by Warren Hastings, presented it to Europe as the key to Hindu religion, and British orientalists and missionaries often treated it as a Hindu Bible. Indian reformers adopted that status and turned it to new purposes [[wilkins1785]] [[sharpe1985]].",
+    "Richard H. Davis's biography of the Gita traces how it became a national scripture in the late nineteenth and twentieth centuries: for Vivekananda a call to strength, for Tilak and Aurobindo a gospel of action for the freedom struggle, for Gandhi a guide to selfless service. Davis and others argue that the Gita's status as the single essential Hindu text is to a large degree a modern construction [[davis2015]] [[minor1986]] [[robinson2006]]."
+   ],
+   "cite": [
+    "wilkins1785",
+    "sharpe1985",
+    "davis2015",
+    "minor1986",
+    "robinson2006"
+   ]
+  },
+  {
+   "title": "Translation and Arnold's Victorian idiom",
+   "text": [
+    "Few texts have been translated into English so often. Wilkins's prose of 1785 was followed by Telang's scholarly version for the Sacred Books of the East (1882), Arnold's verse (1885), and in the twentieth century by Edgerton's literal rendering, Zaehner's annotated translation, Barbara Stoler Miller's spare version and Laurie Patton's, among many others. Each shapes the text: a choice between 'duty' and 'law', 'devotion' and 'love', 'self' and 'soul' carries a theology [[telang1882]] [[miller1986]] [[patton2008]].",
+    "Arnold's Song Celestial domesticated the Gita for Victorian readers, with biblical cadences, archaisms such as 'Soothfastness', and lyric stanzas that make it sound at times like a hymnal. Critics have faulted its looseness and its Christianizing tone; others value its poetry and its influence, for it was through Arnold that Gandhi first knew the poem in English [[arnold1885]] [[sharpe1985]]."
+   ],
+   "cite": [
+    "telang1882",
+    "miller1986",
+    "patton2008",
+    "arnold1885",
+    "sharpe1985"
+   ]
+  },
+  {
+   "title": "Oppenheimer and 'I am become Death'",
+   "text": [
+    "Oppenheimer, who had studied Sanskrit at Berkeley, said in a television interview of 1965 that after the first atomic test he remembered the line 'Now I am become Death, the destroyer of worlds'. The Sanskrit of 11.32 begins with kāla, time, which also connotes death; Oppenheimer's rendering is a personal paraphrase that differs from most translations [[hijiya2000]] [[bird2005]].",
+    "James Hijiya argued that the Gita offered Oppenheimer a way to think of duty done without attachment, a scientist's version of Arjuna's resolution, while others have seen in the quotation a gesture of guilt. The episode has done much to shape the Gita's image in popular culture, often detached from its context [[hijiya2000]]."
+   ],
+   "cite": [
+    "hijiya2000",
+    "bird2005"
+   ]
+  },
+  {
+   "title": "Caste and svadharma",
+   "text": [
+    "The Gita affirms the four social classes and says that Krishna created them according to qualities and actions (4.13), and that each should do the work born of his nature (18.41–48). Defenders have read this as a theory of vocation based on temperament rather than birth; critics, among them B. R. Ambedkar, saw in it a religious defence of caste hierarchy.",
+    "The poem also contains verses of radical inclusiveness, such as the equal vision of the sage (5.18) and the promise of salvation to women and śūdras (9.32). How to weigh these against each other remains contested in modern Indian debate [[davis2015]] [[minor1986]]."
+   ],
+   "cite": [
+    "davis2015",
+    "minor1986"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "BG 2.20",
+   "quote": "Never the spirit was born; the spirit shall cease to be never;\nNever was time it was not; End and Beginning are dreams!",
+   "who": "Krishna",
+   "explanation": "Krishna's teaching that the self is eternal, one of the verses the Gita shares with the Katha Upanishad. Arnold gives it a long, rolling dactylic line, marking the shift into a different metre in the Sanskrit."
+  },
+  {
+   "ref": "BG 2.22",
+   "quote": "Nay, but as when one layeth\n  His worn-out robes away,\nAnd taking new ones, sayeth,\n  \"These will I wear to-day!\"",
+   "who": "Krishna",
+   "explanation": "The famous image of rebirth as a change of clothes. The self moves from body to body, so death is not the end Arjuna fears."
+  },
+  {
+   "ref": "BG 2.48",
+   "quote": "equable\nIn good or evil: equability\nIs Yog, is piety!",
+   "who": "Krishna",
+   "explanation": "A definition of yoga as evenness of mind in success and failure, the basis of the teaching of action without attachment."
+  },
+  {
+   "ref": "BG 6.34",
+   "quote": "It were all one, I think,\nTo hold the wayward wind, as tame man's heart.",
+   "who": "Arjuna",
+   "explanation": "Arjuna's honest objection that the mind is too restless for the discipline Krishna describes. Krishna agrees that it is hard but says that practice and detachment can tame it."
+  },
+  {
+   "ref": "BG 9.32",
+   "quote": "O Pritha's Son! whoso will turn to Me,\nThough they be born from the very womb of Sin,\nWoman or man; sprung of the Vaisya caste\nOr lowly disregarded Sudra,--all",
+   "who": "Krishna",
+   "explanation": "Devotion opens salvation to those excluded from Vedic learning. The verse is both inclusive and revealing of the hierarchies it overcomes."
+  },
+  {
+   "ref": "BG 11.12",
+   "quote": "If there should rise\nSuddenly within the skies\nSunburst of a thousand suns\nFlooding earth with beams undeemed-of,",
+   "who": "Sanjaya",
+   "explanation": "Sanjaya's attempt to describe the splendour of the universal form. The image of a thousand suns later became associated with the first atomic explosion."
+  },
+  {
+   "ref": "BG 11.33–34",
+   "quote": "By Me they fall--not thee! the stroke of death is dealt them now,\nEven as they show thus gallantly; My instrument art thou!",
+   "who": "Krishna",
+   "explanation": "The enemy is already slain by God; Arjuna is only to be the instrument. The verse answers his fear of guilt and raises the question of human responsibility."
+  },
+  {
+   "ref": "BG 18.17",
+   "quote": "if one--\nHolding aloof from self--with unstained mind\nShould slay all yonder host, being bid to slay,\nHe doth not slay; he is not bound thereby!",
+   "who": "Krishna",
+   "explanation": "One of the verses at the centre of the debate about the Gita and violence: action without egoism does not bind, even when it kills."
+  },
+  {
+   "ref": "BG 18.63",
+   "quote": "Meditate!\nAnd--as thou wilt--then act!",
+   "who": "Krishna",
+   "explanation": "After all his teaching, Krishna leaves the decision to Arjuna, a striking acknowledgment of freedom just before the final call to surrender."
+  },
+  {
+   "ref": "BG 18.66",
+   "quote": "Rites and writ duties! Fly to Me alone!\nMake Me thy single refuge!",
+   "who": "Krishna",
+   "explanation": "The Gita's last and 'most secret' word, often called its charama śloka: abandon all other duties and take refuge in Krishna alone. Commentators have long argued whether it overturns or crowns the teaching of duty."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Is Arjuna's refusal to fight in chapter 1 a sign of weakness or a serious moral argument?",
+   "hint": "Look at his reasons: family, ancestral rites, social order. How does Krishna's first rebuke compare with the long teaching that follows?"
+  },
+  {
+   "q": "What does it mean to act without attachment to the fruits of action? Is it possible, or even desirable?",
+   "hint": "Consider 2.47–48 and chapter 3, and think about the difference between not caring about results and not being governed by them."
+  },
+  {
+   "q": "How does the Gita reconcile the life of action with the ideal of renunciation?",
+   "hint": "Compare chapters 3, 5 and 18, especially the distinction between sannyāsa and tyāga."
+  },
+  {
+   "q": "Why does Krishna begin with the immortality of the self? Does this argument justify killing?",
+   "hint": "Read 2.11–30 and set it beside 18.17. Who, according to the Gita, can act rightly on this knowledge?"
+  },
+  {
+   "q": "What is the function of the vision in chapter 11 within the argument of the whole poem?",
+   "hint": "Think about Arjuna's fears in chapter 1, Krishna as Time, and Arjuna's wish to see the familiar face again."
+  },
+  {
+   "q": "Which of the paths of knowledge, action and devotion does the Gita finally favour?",
+   "hint": "Compare 4.38, 12.12 and 18.66, and the different readings of Shankara, Ramanuja and Tilak."
+  },
+  {
+   "q": "How does the theory of the three qualities explain human behaviour, and what does it mean to go beyond them?",
+   "hint": "Look at chapters 14, 17 and 18; note that even goodness binds."
+  },
+  {
+   "q": "How did Gandhi read the Gita, and how persuasive is his allegorical interpretation?",
+   "hint": "Consider the battlefield as the heart, the epic context, and the war that follows in the Mahabharata."
+  },
+  {
+   "q": "What do Arnold's choices, such as 'Soothfastness', lyric stanzas and biblical diction, add to or take away from the Gita?",
+   "hint": "Compare a passage with a modern prose translation, or with Ganguli's version in the Bhishma Parva."
+  },
+  {
+   "q": "Why did the Gita become, in the nineteenth and twentieth centuries, the best-known Hindu scripture in the world?",
+   "hint": "Think about Wilkins and Hastings, Emerson and Thoreau, Tilak and Gandhi, and Davis's argument about its 'biography'."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "arnold1885",
+   "text": "Arnold, Edwin, trans. The Song Celestial, or Bhagavad-Gîtâ (from the Mahâbhârata). London: Trübner, 1885."
+  },
+  {
+   "id": "aurobindo1926",
+   "text": "Aurobindo, Sri. Essays on the Gita. Calcutta: Arya Publishing House, 1926 (first published serially in Arya, 1916–20)."
+  },
+  {
+   "id": "bird2005",
+   "text": "Bird, Kai, and Martin J. Sherwin. American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer. New York: Alfred A. Knopf, 2005."
+  },
+  {
+   "id": "brockington1998",
+   "text": "Brockington, John. The Sanskrit Epics. Handbuch der Orientalistik 2.12. Leiden: Brill, 1998."
+  },
+  {
+   "id": "davis2015",
+   "text": "Davis, Richard H. The Bhagavad Gita: A Biography. Princeton: Princeton University Press, 2015."
+  },
+  {
+   "id": "edgerton1944",
+   "text": "Edgerton, Franklin, trans. The Bhagavad Gītā. 2 vols. Harvard Oriental Series 38–39. Cambridge, MA: Harvard University Press, 1944."
+  },
+  {
+   "id": "gandhi1946",
+   "text": "Gandhi, M. K. The Gospel of Selfless Action, or The Gita According to Gandhi. Translated by Mahadev Desai. Ahmedabad: Navajivan Publishing House, 1946."
+  },
+  {
+   "id": "ganguli1883",
+   "text": "Ganguli, Kisari Mohan, trans. The Mahabharata of Krishna-Dwaipayana Vyasa. Published by Pratap Chandra Roy. Calcutta: Bharata Press, 1883–96."
+  },
+  {
+   "id": "garbe1905",
+   "text": "Garbe, Richard. Die Bhagavadgîtâ. Leipzig: H. Haessel, 1905."
+  },
+  {
+   "id": "hijiya2000",
+   "text": "Hijiya, James A. 'The Gita of J. Robert Oppenheimer.' Proceedings of the American Philosophical Society 144, no. 2 (2000): 123–67."
+  },
+  {
+   "id": "malinar2007",
+   "text": "Malinar, Angelika. The Bhagavadgītā: Doctrines and Contexts. Cambridge: Cambridge University Press, 2007."
+  },
+  {
+   "id": "miller1986",
+   "text": "Miller, Barbara Stoler, trans. The Bhagavad-Gita: Krishna's Counsel in Time of War. New York: Columbia University Press, 1986."
+  },
+  {
+   "id": "minor1986",
+   "text": "Minor, Robert N., ed. Modern Indian Interpreters of the Bhagavadgita. Albany: State University of New York Press, 1986."
+  },
+  {
+   "id": "patton2008",
+   "text": "Patton, Laurie L., trans. The Bhagavad Gita. London: Penguin Books, 2008."
+  },
+  {
+   "id": "robinson2006",
+   "text": "Robinson, Catherine A. Interpretations of the Bhagavad-Gītā and Images of the Hindu Tradition: The Song of the Lord. London: Routledge, 2006."
+  },
+  {
+   "id": "sharpe1985",
+   "text": "Sharpe, Eric J. The Universal Gītā: Western Images of the Bhagavadgītā. A Bicentenary Survey. London: Duckworth, 1985."
+  },
+  {
+   "id": "telang1882",
+   "text": "Telang, Kashinath Trimbak, trans. The Bhagavadgîtâ, with the Sanatsugâtîya and the Anugîtâ. Sacred Books of the East 8. Oxford: Clarendon Press, 1882."
+  },
+  {
+   "id": "tilak1935",
+   "text": "Tilak, Bal Gangadhar. Śrīmad Bhagavadgītā-Rahasya, or Karma-Yoga-Śāstra. Translated by Bhalchandra Sitaram Sukthankar. 2 vols. Poona: Tilak Bros., 1935–36 (Marathi original, 1915)."
+  },
+  {
+   "id": "vanbuitenen1953",
+   "text": "van Buitenen, J. A. B. Rāmānuja on the Bhagavadgītā: A Condensed Rendering of His Gītābhāṣya with Copious Notes and an Introduction. 's-Gravenhage: H. L. Smits, 1953."
+  },
+  {
+   "id": "vanbuitenen1981",
+   "text": "van Buitenen, J. A. B., trans. and ed. The Bhagavadgītā in the Mahābhārata: Text and Translation. Chicago: University of Chicago Press, 1981."
+  },
+  {
+   "id": "wilkins1785",
+   "text": "Wilkins, Charles, trans. The Bhăgvăt-Gēētā, or Dialogues of Krěěshnă and Ărjŏŏn; in Eighteen Lectures; with Notes. London: C. Nourse, 1785."
+  },
+  {
+   "id": "zaehner1969",
+   "text": "Zaehner, R. C., trans. The Bhagavad-Gītā, with a Commentary Based on the Original Sources. Oxford: Clarendon Press, 1969."
+  }
+ ]
+}
