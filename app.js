@@ -17,7 +17,8 @@
   // 60,000 elements, slow on a cheap phone. "Show more" adds the next PAGE.
   const PAGE = 60;
   let shown = PAGE;
-  let SORTED = [];           // every poem, by title (built once the index arrives)
+  let SORTED = null;         // every poem, by title (built on first use: sortedPoems())
+  let POEM_BY_ID = new Map(); // poem id -> index entry (built once the index arrives)
   const COLLATE = new Intl.Collator("en");
   let POETS = {};      // slug -> poet (index-level: metadata + counts, no full poems)
   let WORKS = {};      // slug -> work (index-level: metadata + section titles/stanzas, no text)
@@ -3697,7 +3698,7 @@
   // One version of several ("Cædmon's Hymn: West Saxon Version (Old English)" -> "West Saxon Version").
   const versionName = (t) => String(t || "").replace(/\s*\(Old English\)\s*$/i, "").replace(/^.*?:\s+/, "");
   // A poem's index entry; without the index, the poem itself if it has been fetched.
-  const indexPoem = (id) => (DATA && DATA.poems.find((q) => q.id === id)) || FX_READY.get("poem:" + id) || {};
+  const indexPoem = (id) => (DATA && POEM_BY_ID.get(id)) || FX_READY.get("poem:" + id) || {};
   // The control beside the text's label. kind: "poems" | "works"; key: the poem id or work slug.
   function parCtlHTML(kind, key, list) {
     if (!list.length) return "";
@@ -5242,10 +5243,11 @@
   // The request is started by a line in the <head> of index.html (window.pcHome), so it runs
   // while app.js is still loading; a <link rel=preload> did the same but the service worker
   // could not hand its copy to this fetch, and the file came down twice.
-  // Poem pages, books of works and contents pages never ask for the index by themselves
-  // (only the home page does, after its first paint): a reader who opens one poem gets that
-  // poem and not 9 MB of index. It is fetched when something needs it (the search box, the
-  // lists, Poets, Eras, a category, the shelf; see routeEarly and loadIndex's callers).
+  // Neither the home page nor poem pages, books of works and contents pages ask for the
+  // index by themselves: a reader who opens the home page or one poem gets that and not
+  // 10 MB of index. It is fetched when something needs it (the lists, Poets, Eras, a
+  // category, the shelf, About, the Oracle; see routeEarly and loadIndex's callers), and
+  // early, on the first hover or touch of a link to one of those (the listener after loadIndex).
   const homeFetch = (window.pcHome && typeof window.pcHome.then === "function")
     ? window.pcHome : fetch("data/home.json", { priority: "high" });
   homeFetch
@@ -5258,7 +5260,6 @@
       const fc = document.getElementById("foot-count");
       if (HOME && fc && !fc.textContent) fc.textContent = num(HOME.count);
       if (isHomeHash(location.hash) || isTodayHash(location.hash)) route(); // other pages already say "Opening the archive…"
-      if (isHomeHash(location.hash)) afterPaint(loadIndex);
     });
   setTimeout(() => {
     if (HOME || DATA || HOME_FAILED) return;
@@ -5266,9 +5267,10 @@
     if (isHomeHash(location.hash) || isTodayHash(location.hash)) { loadIndex(); route(); }
   }, 1500);
 
-  // The index (32 MB; reading it holds the page up for half a second or more on a phone) is
-  // fetched after the home page's first paint (drawn from home.json), and by any page that
-  // needs it (routeEarly). A poem, a book of a work or a contents page never fetches it by
+  // The index (38 MB; reading it holds the page up for half a second or more on a phone) is
+  // fetched only by a page that needs it (routeEarly), or when the reader reaches for a link
+  // to one (the intent listener after loadIndex). The home page, a poem, a book of a work or
+  // a contents page never fetches it by
   // itself: it is drawn from its shard (or work/works.json) and stays as it is; what only the
   // index can do there (the "Compare with another poem" picker) asks for it when used, and
   // whenIndex() runs its callbacks once it is in.
@@ -5300,9 +5302,11 @@
           if (!p.subjects) p.subjects = [p.primarySubject];
           if (p.collection === undefined) p.collection = null;
         });
-        // Sorted by title once; every list filters this and so keeps the order.
+        // The title sort key; the title-sorted list itself is built only when a list needs it
+        // (sortedPoems()), so loading the index does not hold the page up for the sort.
         d.poems.forEach((p) => { p._sk = sortKey(p.title); });
-        SORTED = d.poems.slice().sort((a, b) => COLLATE.compare(a._sk, b._sk));
+        SORTED = null;
+        POEM_BY_ID = new Map(d.poems.map((p) => [p.id, p]));
         const fc = document.getElementById("foot-count"); if (fc) fc.textContent = num(d.count);
         wireSearch();
         // A home page already drawn from home.json stays as it is, and where the reader has
@@ -5336,7 +5340,29 @@
         INDEX_WAITERS.splice(0).forEach((fn) => { try { fn(); } catch (err) { /* as above */ } });
       });
   }
-  const afterPaint = (fn) => requestAnimationFrame(() => setTimeout(fn, 60));
+  // Every poem by title, sorted on first use; every list filters this and so keeps the order.
+  function sortedPoems() {
+    if (!DATA) return [];
+    if (!SORTED) SORTED = DATA.poems.slice().sort((a, b) => COLLATE.compare(a._sk, b._sk));
+    return SORTED;
+  }
+  // The home page no longer fetches the index by itself (it is drawn from home.json). A reader
+  // who reaches for a page that needs it (Poets, Eras, the lists, a category, the shelf, About,
+  // the account) starts the download on the first hover, touch or focus of the link, so it is
+  // under way before the click lands. Hover is skipped when the reader has asked to save data.
+  {
+    const INTENT_SEL = 'a[href^="#/poets"], a[href^="#/eras"], a[href^="#/poems"], a[href^="#/category"], a[href^="#/topics"], a[href^="#/shelf"], a[href^="#/about"], a[href^="#/account"]';
+    const saveData = !!(navigator.connection && navigator.connection.saveData);
+    const onIntent = (e) => {
+      if (INDEX_STARTED) { drop(); return; }
+      if (e.type === "mouseover" && saveData) return;
+      const t = e.target;
+      if (t && t.closest && t.closest(INTENT_SEL)) { drop(); loadIndex(); }
+    };
+    const TYPES = ["pointerdown", "touchstart", "mouseover", "focusin"];
+    const drop = () => TYPES.forEach((ty) => document.removeEventListener(ty, onIntent, true));
+    TYPES.forEach((ty) => document.addEventListener(ty, onIntent, { capture: true, passive: true }));
+  }
   // A poem page drawn without the index, once it is in: the poem's form ("Sonnet") in its label.
   function upgradeEarly() {
     const m = location.hash.match(/^#\/poem\/([\w-]+\/\d+)(?:\?[\w=&-]*)?$/);
@@ -7074,7 +7100,7 @@
     if (!catName) { location.hash = "#/"; return; }
 
     const works = (DATA.works || []).filter((w) => POETS[w.authorSlug] && POETS[w.authorSlug].category === catName);
-    const poems = SORTED.filter((p) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
+    const poems = sortedPoems().filter((p) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
     const sub = `${num(poems.length)} poem${poems.length === 1 ? "" : "s"}.`;
     const lists = eraListsHTML(catName, slug);
 
@@ -7240,7 +7266,7 @@
   const formLabel = (f) => FORM_PLURAL[f] || f;
   function renderList() {
     const words = searchWords(query);
-    const results = rankResults(SORTED.filter((p) => matches(p, words)), words);
+    const results = rankResults(sortedPoems().filter((p) => matches(p, words)), words);
     const works = filterSubject !== "All" || filterForm !== "All" ? [] : (DATA.works || []).filter((w) => {
       if (!words.length) return true;
       if (w._hay === undefined) w._hay = fold([w.title, w.author, w.translator].join(" "));
@@ -9206,7 +9232,7 @@
                  translator: w.translator || "", first: "", prose: !!s.prose };
       }
     } else {
-      const p = DATA && DATA.poems.find((q) => q.id === x.ref);
+      const p = DATA && POEM_BY_ID.get(x.ref);
       if (!p) return null;
       info = { kind: "poem", title: p.title, author: p.author, translator: p.translator || "",
                first: String(p.excerpt || "").split("\n").map((l) => l.trim()).find(Boolean) || "" };
@@ -11234,7 +11260,7 @@ ${body}</body></html>`;
     const themes = p.subjects.length
       ? `<div class="themes">${p.subjects.map((s) => `<span class="theme-tag" data-sub="${esc(s)}">${esc(s)}</span>`).join("")}</div>` : "";
     const lang = langAttr(p.authorSlug, p.translator), tlang = textLangAttr(p.authorSlug, p.translator, p.text, p.id);
-    const form = DATA ? (DATA.poems.find((q) => q.id === p.id) || {}).form : "";   // index only (B3)
+    const form = DATA ? (POEM_BY_ID.get(p.id) || {}).form : "";   // index only (B3)
     EARLY_DRAWN = DATA ? "" : location.hash;   // drawn without the index, which it does not fetch
     EARLY_REDRAW = false;
     const cite = { author: p.author, title: p.title, translator: p.translator, path: `/poem/${slug}/${n}/`,

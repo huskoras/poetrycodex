@@ -1593,18 +1593,18 @@ textarea.ask-input {
 /* Poet links in the footer: plain text that crawlers can follow and readers can scan */
 .foot-poets { max-width: var(--wrap); margin: 0 auto; padding: 1.6rem 2rem 0;
   font-family: var(--sans); font-size: .74rem; line-height: 2.1; color: var(--faint); text-align: left; }
-.foot-poets a { color: var(--ink-soft); text-decoration: none; }
+/* One link to the static page of every poet (/poet/, written by tools/build_pages.py), where
+   crawlers find the poet pages; the list itself used to sit here, folded into a <details>. */
+.foot-poets a { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--ink-soft); text-decoration: none; }
+.foot-poets a::after { content: " \25b8"; }
 .foot-poets a:hover { color: var(--accent); text-decoration: underline; }
-/* Folded into one line (a closed <details>): the list stays in the page for crawlers, but a
-   page ends where it should. tools/build_pages.py rewrites only what lies between the
-   POET-LINKS markers inside it. */
-.foot-poets summary { cursor: pointer; list-style: none; font-family: var(--sans); font-size: .78rem;
-  font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
-.foot-poets summary::-webkit-details-marker { display: none; }
-.foot-poets summary::after { content: " \25b8"; }
-.foot-poets[open] summary::after { content: " \25be"; }
-.foot-poets summary:hover { color: var(--accent); }
-.foot-poets nav { margin-top: .8rem; }
+/* /poet/: every poet, earliest first, as one flowing list of names and dates. */
+.poet-hub { max-width: 900px; }
+.poet-hub .ph-list { margin-top: 1.6rem; font-family: var(--sans); font-size: .9rem; line-height: 2.1; color: var(--faint); }
+.poet-hub .ph-list a { font-family: var(--serif); font-size: 1.05rem; color: var(--ink); text-decoration: none; }
+.poet-hub .ph-list a:hover { color: var(--accent); text-decoration: underline; }
+.poet-hub .ph-dates { font-size: .78rem; color: var(--faint); }
 
 /* "Skip to the text": the first thing a keyboard reaches on the page, unseen otherwise. */
 .skip-link { position: absolute; left: .6rem; top: .6rem; z-index: 100; padding: .5rem .9rem;

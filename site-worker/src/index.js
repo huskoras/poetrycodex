@@ -15,7 +15,9 @@
 import { handleApi } from "./accounts.js";
 
 const CACHE_SECONDS = 300;          // HTML and data: a new publish is live within 5 minutes
-const ASSET_SECONDS = 86400;        // images, and app.js / styles.css (their ?v= changes on edit)
+const ASSET_SECONDS = 86400;        // images, fonts, and app.js / styles.css asked for without ?v=
+const VERSIONED_SECONDS = 31536000; // app.js?v=N / styles.css?v=N: a year, immutable (index.html bumps N on
+                                    // every edit, and scripts/publish.sh refuses a publish that forgets to)
 const TYPES = {
   html: "text/html; charset=utf-8", js: "text/javascript; charset=utf-8", css: "text/css; charset=utf-8",
   json: "application/json; charset=utf-8", xml: "application/xml; charset=utf-8", txt: "text/plain; charset=utf-8",
@@ -33,23 +35,35 @@ function keyFor(pathname) {
   return p;
 }
 
-function headersFor(key, object) {
+function headersFor(key, object, url) {
   const h = new Headers();
   object.writeHttpMetadata(h);
   const ext = (key.match(/\.([a-z0-9]+)$/i) || [])[1];
   if (ext && TYPES[ext.toLowerCase()]) h.set("content-type", TYPES[ext.toLowerCase()]);
   h.set("etag", object.httpEtag);
+  // Cloudflare strips the ETag from HTML on the way out; Last-Modified survives, so a browser
+  // asking again (If-Modified-Since) gets a 304 instead of the whole page.
+  if (object.uploaded) h.set("last-modified", object.uploaded.toUTCString());
+  const versioned = /^(app\.js|styles\.css)$/.test(key) && url && url.searchParams.has("v");
   const long = /\.(png|jpe?g|webp|gif|svg|ico|woff2)$/i.test(key) || /^(app\.js|styles\.css)$/.test(key);
-  h.set("cache-control", `public, max-age=${long ? ASSET_SECONDS : CACHE_SECONDS}`);
+  h.set("cache-control", versioned ? `public, max-age=${VERSIONED_SECONDS}, immutable`
+    : `public, max-age=${long ? ASSET_SECONDS : CACHE_SECONDS}`);
   h.set("x-content-type-options", "nosniff");
   return h;
 }
 
-async function serve(env, key, request, status = 200) {
+async function serve(env, key, request, url, status = 200) {
   const object = await env.SITE.get(key, { onlyIf: request.headers });
   if (object === null) return null;
-  const headers = headersFor(key, object);
+  const headers = headersFor(key, object, url);
   if (!("body" in object) || !object.body) return new Response(null, { status: 304, headers });
+  // If-Modified-Since is to the second, R2's upload time to the millisecond: should R2 hand
+  // back the body of a file not changed since that second, answer 304 here all the same.
+  const ims = !request.headers.get("if-none-match") && Date.parse(request.headers.get("if-modified-since") || "");
+  if (ims && object.uploaded && Math.floor(object.uploaded.getTime() / 1000) * 1000 <= ims) {
+    try { object.body.cancel(); } catch (e) { /* nothing to release */ }
+    return new Response(null, { status: 304, headers });
+  }
   return new Response(request.method === "HEAD" ? null : object.body, { status, headers });
 }
 
@@ -73,12 +87,14 @@ export default {
     }
     const cache = caches.default;
     const cacheKey = new Request(url.toString(), { method: "GET" });
-    if (request.method === "GET" && !request.headers.get("if-none-match")) {
+    // A conditional request goes past the edge cache to R2, whose onlyIf can answer 304 (the
+    // cached copy is kept without the request's headers and would always answer 200 in full).
+    if (request.method === "GET" && !request.headers.get("if-none-match") && !request.headers.get("if-modified-since")) {
       const hit = await cache.match(cacheKey);
       if (hit) return hit;
     }
     const key = keyFor(url.pathname);
-    let res = key ? await serve(env, key, request) : null;
+    let res = key ? await serve(env, key, request, url) : null;
     if (!res && key && !/\.[a-z0-9]+$/i.test(key)) {
       // A folder asked for without its slash: send the reader to the slashed address,
       // as GitHub Pages did, so relative links inside the page keep working.
@@ -90,7 +106,7 @@ export default {
     if (!res) {
       const nf = await env.SITE.get("404.html");
       res = nf
-        ? new Response(request.method === "HEAD" ? null : nf.body, { status: 404, headers: headersFor("404.html", nf) })
+        ? new Response(request.method === "HEAD" ? null : nf.body, { status: 404, headers: headersFor("404.html", nf, url) })
         : new Response("Not found", { status: 404 });
       return res;
     }

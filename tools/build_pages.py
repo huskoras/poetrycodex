@@ -11,6 +11,7 @@ HTML, and describe it to search engines with schema.org data (JSON-LD).
 Output (all regenerated; do not edit by hand):
     poem/<poet-slug>/<n>/index.html   — /poem/blake/27/
     poet/<poet-slug>/index.html       — /poet/blake/ (also for poets with works only)
+    poet/index.html                   — /poet/: every poet, earliest first (the home footer links here)
     work/<work-slug>/index.html       — /work/iliad-butler/   (contents)
     work/<work-slug>/<i>/index.html   — /work/iliad-butler/0/ (one book, canto, part)
     sitemap.xml + sitemap-<n>.xml
@@ -417,7 +418,7 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
   <footer class="site-foot">
     <div class="foot-bar">
       <span>© 2026 Poetry Codex. All texts are in the public domain.</span>
-      <span class="foot-privacy"><a href="/">Open the full archive</a> · <a href="/blog/">Blog</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a></span>
+      <span class="foot-privacy"><a href="/">Open the full archive</a> · <a href="/poet/">All poets, earliest first</a> · <a href="/blog/">Blog</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a></span>
     </div>
   </footer>
 </body>
@@ -1037,7 +1038,7 @@ def main():
     # Only the home page and the generated pages are listed: hash routes are not crawlable.
     # No <lastmod>: every build would stamp all of them "today", and a date that always
     # changes is one search engines learn to ignore.
-    urls = [f"{SITE}/"]
+    urls = [f"{SITE}/", f"{SITE}/poet/"]
     poem_count = poet_count = work_count = section_count = 0
 
     for poet_stub in idx["poets"]:
@@ -1055,7 +1056,7 @@ def main():
             "category": poet_stub.get("category"), "bio": poet_stub.get("bio") or [],
             "portrait": poet_stub.get("portrait"),
         }
-        POET_ROWS.append({"slug": slug, "name": poet["name"]})
+        POET_ROWS.append({"slug": slug, "name": poet["name"], "dates": poet.get("dates")})
         write(os.path.join(ROOT, "poet", slug, "index.html"), poet_page(poet, poems, works))
         urls.append(f"{SITE}/poet/{slug}/")
         poet_count += 1
@@ -1122,7 +1123,7 @@ def main():
         index.append("  <sitemap><loc>" + SITE + "/sitemap-" + str(n) + ".xml</loc></sitemap>")
     index.append("</sitemapindex>")
     write(os.path.join(ROOT, "sitemap.xml"), NL.join(index) + NL)
-    fill_home_poet_links(POET_ROWS)
+    write_poet_hub(POET_ROWS)
     write(os.path.join(ROOT, "404.html"), not_found_page())
     print("sitemap index: " + str(len(chunks)) + " child sitemaps")
 
@@ -1132,20 +1133,35 @@ def main():
     print(f"sitemap urls: {len(urls)}")
 
 
-def fill_home_poet_links(poets):
-    """Rewrite the poet-link block in index.html so crawlers can reach every poet."""
-    path = os.path.join(ROOT, "index.html")
-    text = io.open(path, encoding="utf-8").read()
-    start_m = "<!-- POET-LINKS:START -->"
-    end_m = "<!-- POET-LINKS:END -->"
-    a = text.index(start_m) + len(start_m)
-    b = text.index(end_m)
+def poet_hub_page(poets):
+    """/poet/: every poet as a plain link, earliest first (the order of data/index.json), so
+    crawlers reach every poet page from one page that the home page and every static page's
+    footer link to. The editor's ruling (21 Oct 2026): no count of poets anywhere on it."""
     links = " · ".join(
-        '<a href="/poet/' + p["slug"] + '/">' + esc(p["name"]) + "</a>" for p in poets
-    )
-    text = text[:a] + links + text[b:]
-    io.open(path, "w", encoding="utf-8", newline="\n").write(text)
-    print("home page: " + str(len(poets)) + " poet links")
+        f'<a href="/poet/{esc(p["slug"])}/">{esc(p["name"])}</a>'
+        + (f' <span class="ph-dates">{esc(p["dates"])}</span>' if p.get("dates") else "")
+        for p in poets)
+    canonical = f"{SITE}/poet/"
+    title = "All poets, earliest first"
+    description = ("Every poet in the Poetry Codex, from the oldest songs and epics to the early "
+                   "twentieth century, in order of time. Each name opens the poet's page of poems and works.")
+    body = f"""    <article class="detail poet-hub">
+      <p class="detail-subject">The poets of the Codex</p>
+      <h1 class="detail-title">{title}</h1>
+      <p class="page-sub">{esc(description)}</p>
+      <nav class="ph-list" aria-label="Poets">
+        {links}
+      </nav>
+    </article>"""
+    ld = ld_json({"@type": "CollectionPage", "name": title, "description": description, "url": canonical,
+                  "inLanguage": "en", "isPartOf": {"@type": "WebSite", "name": "Poetry Codex", "url": SITE + "/"}},
+                 breadcrumbs((title, None)))
+    return shell(title, description, canonical, body, og_type="website", ld=ld)
+
+
+def write_poet_hub(poets):
+    write(os.path.join(ROOT, "poet", "index.html"), poet_hub_page(poets))
+    print("poet hub page: " + str(len(poets)) + " poet links")
 
 
 if __name__ == "__main__":
