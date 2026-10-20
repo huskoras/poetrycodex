@@ -1,0 +1,660 @@
+{
+ "work": "lalla-rookh",
+ "title": "Lalla Rookh",
+ "author": "Thomas Moore",
+ "quoteEdition": "lalla-rookh",
+ "unit": "Part",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Thomas Moore (1779–1852), Irish poet, satirist, biographer and song-writer, best known before Lalla Rookh for the Irish Melodies (1808–1834)"
+  },
+  {
+   "label": "Published",
+   "value": "London: Longman, Hurst, Rees, Orme, and Brown, 22 May 1817, in quarto"
+  },
+  {
+   "label": "Genre",
+   "value": "Oriental verse romance: four narrative poems set inside a prose frame-tale, with extensive learned notes"
+  },
+  {
+   "label": "The frame",
+   "value": "The Mughal princess Lalla Rookh travels from Delhi to Kashmir to marry the young king of Bukhara; the poet Feramorz entertains her with the four tales, and the court chamberlain Fadladeen criticises each one"
+  },
+  {
+   "label": "The four tales",
+   "value": "The Veiled Prophet of Khorassan; Paradise and the Peri; The Fire-Worshippers; The Light of the Haram"
+  },
+  {
+   "label": "Metre",
+   "value": "Mostly rhymed couplets in iambic pentameter and tetrameter; The Light of the Haram and many of the inset songs use anapaestic measures"
+  },
+  {
+   "label": "Settings",
+   "value": "Eighth-century Khorasan and Transoxiana; India, Egypt and Syria; the Persian Gulf after the Arab conquest of Iran; Mughal Kashmir under Jahangir"
+  },
+  {
+   "label": "Payment",
+   "value": "£3,000 from Longman, agreed in 1814 before the poem was written: the highest sum yet paid for a single poem in English"
+  },
+  {
+   "label": "Afterlife",
+   "value": "Many editions and translations; set to music by Spontini, Schumann, Félicien David, Anton Rubinstein, Sterndale Bennett, Stanford and others"
+  },
+  {
+   "label": "This edition",
+   "value": "The four verse tales only, from Project Gutenberg #8187; the prose frame, the songs sung within the frame and Moore's notes are not included. Line numbers in this guide count the verse lines of each tale in this text"
+  }
+ ],
+ "context": [
+  "Thomas Moore was born in Dublin in 1779, the son of a Catholic grocer, and entered Trinity College Dublin in 1795, soon after the relief act of 1793 opened it to Catholics. There he knew young radicals of the United Irishmen, among them Robert Emmet, who was executed after the failed rising of 1803. Moore made his name in London with a translation of Anacreon (1800) and light amorous verse, and from 1808 with the Irish Melodies, songs set to traditional airs that turned Irish grievance into drawing-room music and made him, for English and Irish readers alike, the national poet of Ireland [[kellyr2008]] [[whitedevere1977]].",
+  "By 1812 Moore had resolved to write a long poem, and in 1814 the publishers Longman agreed to pay £3,000 for it, unseen, a sum without precedent for a single poem. Byron, whose Turkish tales were then selling in enormous numbers, encouraged him to set it in the East, and Moore, who never travelled east of Europe, spent several years reading for it in a cottage in Derbyshire. Lalla Rookh appeared on 22 May 1817 and sold extremely well; William St Clair's figures place it among the most commercially successful poems of the period [[moore1817]] [[stclair2004]] [[vail2001]] [[jones1937]].",
+  "The poem belongs to the Romantic vogue for the Orient that followed the work of Sir William Jones and other scholars of the East India Company, the movement Raymond Schwab called the 'Oriental Renaissance'. Moore's notes, omitted from this edition, cite Barthélemy d'Herbelot's Bibliothèque orientale (1697), the travels of Chardin, Tavernier and Bernier, and a long list of translations and histories; he took pride in their accuracy. Modern critics have asked what this display of learning was for. After Edward Said's Orientalism the poem has been read as a fantasy of the East made for Western consumption, but also, by Nigel Leask, Mohammed Sharafuddin and others, as a work that uses the East to think about politics, religion and empire at home [[herbelot1697]] [[schwab1984]] [[said1978]] [[leask1992]] [[sharafuddin1994]].",
+  "The four tales are held together by a prose frame, which this edition does not contain. Lalla Rookh ('tulip cheek'), daughter of the emperor Aurangzeb (Moore's Aurungzebe), travels from Delhi to Kashmir to marry the young king of Lesser Bukhara, whom she has never seen. To relieve the tedium of the journey, a young Kashmiri poet, Feramorz, recites the tales on successive evenings, and the princess falls in love with him. Each recital is followed by the verdicts of Fadladeen, the pompous Great Nazir or chamberlain of the harem, who finds fault with metre, diction, theology and politics; after The Fire-Worshippers he scents sedition. When the procession reaches Kashmir, the bridegroom is revealed to be Feramorz himself, and Fadladeen hastily discovers that he admired the poems all along. The frame lets Moore mock the reviewers, including the Edinburgh critic Francis Jeffrey, with whom he had nearly fought a duel in 1806, and it presents each tale as a performance before a listener [[vail2001]] [[kellyl2006]].",
+  "Lalla Rookh was translated into most European languages, illustrated many times (notably by John Tenniel in 1861), and adapted for the stage and the concert hall. In Berlin in 1821 the Prussian court staged a festival of tableaux and songs from the poem with music by Gaspare Spontini, who expanded it into the opera Nurmahal (1822). Robert Schumann's oratorio Das Paradies und die Peri (1843), Félicien David's opera Lalla-Roukh (1862), Anton Rubinstein's Feramors (1863), William Sterndale Bennett's overture Paradise and the Peri (1862) and Charles Villiers Stanford's opera The Veiled Prophet (first performed 1881) are among its many musical offspring. By the early twentieth century the poem had fallen from favour, and it is now read chiefly for what it reveals about Romantic Orientalism, Irish politics and the literary market [[stclair2004]] [[jordan1975]]."
+ ],
+ "plot": [
+  "In the frame, the princess Lalla Rookh sets out from Delhi with a splendid retinue to marry the king of Bukhara in the Vale of Kashmir. On the journey the young poet Feramorz tells her four stories in verse, and the chamberlain Fadladeen delivers a pedantic critique after each. The princess falls in love with the poet, and is in despair until she reaches Kashmir and finds that Feramorz and her royal bridegroom are the same man.",
+  "The first tale, The Veiled Prophet of Khorassan, tells how Mokanna, a false prophet who hides his face behind a silver veil, raises a revolt against the Caliph under the banner of freedom. The young warrior Azim joins him, only to find that his lost love Zelica, driven mad by grief, has been seduced by the impostor and bound to him by an oath. Mokanna is defeated, poisons his last followers and destroys himself in a cistern of burning liquid; Zelica, wearing his veil, throws herself on Azim's spear, and Azim spends the rest of his life praying at her grave.",
+  "Paradise and the Peri is a short allegory. A Peri, a spirit shut out of Eden, may be readmitted if she brings the gift most dear to Heaven. A patriot's last drop of blood and a dying bride's last sigh are not enough; the tear of a hardened criminal who repents at the sight of a child at prayer opens the gate.",
+  "The Fire-Worshippers is a tragedy of national resistance. Hinda, daughter of the Arab emir Al Hassan, who is crushing the last Zoroastrian rebels in Persia, loves a mysterious stranger who proves to be Hafed, the rebel leader. Betrayed by a traitor, Hafed and his men die in a last stand, and Hafed burns himself on the sacred fire; Hinda, watching from a boat, leaps into the sea. The last tale, The Light of the Haram, is a comedy of reconciliation: in Kashmir at the Feast of Roses, the emperor Selim (Jahangir) and his wife Nourmahal have quarrelled, and with the help of an enchantress's spell Nourmahal wins him back by singing to him in disguise."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Veiled Prophet of Khorassan",
+   "lines": "1–2141",
+   "section": 0,
+   "summary": [
+    "At Merou (Merv) in Khorasan the prophet Mokanna sits enthroned, his face hidden by a silver veil which, his followers say, conceals a brightness no mortal could bear. A young warrior, Azim, back from captivity among the Greeks, where he learned to love liberty, joins his army because it marches under the words 'Freedom to the World'. Watching from the harem gallery is Zelica, Azim's childhood love from Bukhara. Told that he was dead, she lost her reason and was recruited into Mokanna's harem, where in a charnel-house he bound her to him by an oath sealed with a cup of blood.",
+    "In private Mokanna reveals his contempt for mankind and for every religion, and commands Zelica to seduce Azim to his cause. When she refuses, he lifts his veil and shows her his deformed face. Azim, led through halls of luxury and temptation, resists every enchantment until he finds Zelica, veiled and in mourning; she confesses her fall and agrees to fly with him, but Mokanna's voice calls 'Thy oath! thy oath!' and she breaks away.",
+    "Azim joins the Caliph Mahadi (the Abbasid caliph al-Mahdi) and turns the battle against Mokanna, who retreats to the fortress of Neksheb, deceives his followers with a false moon raised from a well, and holds out until famine and fire break his army. At a last banquet he poisons his remaining followers, unveils himself in mockery and leaps into a cistern of burning drugs, so that his body will vanish and his legend live. Zelica puts on the veil and walks out to meet the besiegers; Azim runs her through before he recognises her, and she dies forgiven in his arms. Years later the aged Azim dies at her grave, after a vision that she is blessed."
+   ],
+   "analysis": [
+    "Moore took Mokanna from the historical al-Muqanna', 'the veiled one', who led a revolt in Khorasan and Transoxiana in the reign of al-Mahdi and died in his besieged fortress around 780. D'Herbelot's account supplied the veil, the false moon of Nakhshab and the death in a corrosive bath. Moore makes him a misanthrope who uses religion, liberty and sensual pleasure alike as instruments of power, and whose speeches against credulity, priestcraft and 'State Priests' point well beyond Islam [[herbelot1697]] [[sharafuddin1994]].",
+    "The political reading is pressing. Mokanna's white banner promises universal freedom, and an idealist who has breathed the air of Greece follows it into the service of a monster; when the veil is lifted, the beautiful promise hides a deformed reality. Jeffery Vail reads the tale as a verdict on Jacobin revolution, a liberty that betrays itself, to be set against the justified national rising of The Fire-Worshippers [[vail2005]] [[leask1992]].",
+    "Zelica is the emotional centre of the tale, a heroine whose fall comes from grief and madness rather than desire, and whose redemption comes through love and prayer. Her death under the veil turns Mokanna's emblem of deceit into a sign of self-sacrifice, and the closing image of the lovers sleeping side by side gives the darkest of the four tales a gentle, elegiac end."
+   ],
+   "key": [
+    {
+     "ref": "Veiled Prophet 7–9",
+     "quote": "There on that throne, to which the blind belief\nOf millions raised him, sat the Prophet-Chief,\nThe Great MOKANNA.",
+     "note": "The opening throne-scene: the phrase 'blind belief' announces at once the theme of credulity and imposture."
+    },
+    {
+     "ref": "Veiled Prophet 105–106",
+     "quote": "On the white flag MOKANNA'S host unfurled,\nThose words of sunshine, \"Freedom to the World,\"",
+     "note": "The slogan that wins Azim. Its revolutionary ring would have been unmistakable to readers in 1817."
+    },
+    {
+     "ref": "Veiled Prophet 781–782",
+     "quote": "He raised his veil--the Maid turned slowly round,\nLooked at him--shrieked--and sunk upon the ground!",
+     "note": "The unveiling before Zelica: the face is shown to her but not yet described to the reader."
+    },
+    {
+     "ref": "Veiled Prophet 1767–1768",
+     "quote": "But Faith, fanatic Faith, once wedded fast\nTo some dear falsehood hugs it to the last.",
+     "note": "The narrator's own reflection on fanaticism, one of the most quoted couplets of the poem."
+    },
+    {
+     "ref": "Veiled Prophet 2069–2070",
+     "quote": "And casting off the Veil in falling shows--\nOh!--'tis his ZELICA'S life-blood that flows!",
+     "note": "The climax: Zelica's death beneath the veil inverts the meaning of Mokanna's emblem."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Paradise and the Peri",
+   "lines": "1–521",
+   "section": 1,
+   "summary": [
+    "A Peri, one of a fallen race of spirits in Persian legend, weeps at the gate of Eden. The angel who keeps the gate tells her she may be forgiven if she brings 'the Gift that is most dear to Heaven'. She flies first to India, where Mahmud of Ghazni ('He of GAZNA') is laying waste the land, and catches the last drop of blood of a young warrior who dies defying the conqueror; but the crystal bar of Eden does not move.",
+    "In Egypt, ravaged by plague, she finds a young man who has crept away to die alone, and the betrothed bride who follows him, refuses to leave him and dies of the infection in his arms. The Peri brings the bride's last sigh of self-sacrificing love; again the gate stays closed.",
+    "In Syria, in the vale of Baalbek, she sees a child at play kneel at the call to prayer, and beside him a hardened criminal, his face marked by murder and sacrilege, who remembers his own innocent childhood and weeps in repentance. The Peri carries this tear to Heaven, the gate opens, and she sings her joy at entering Paradise."
+   ],
+   "analysis": [
+    "The tale is built on a simple, emphatic pattern of three trials, each in a different land and each offering a nobler gift: patriotic sacrifice, the love that dies for another, and repentance. The order matters. Moore places the patriot's blood, which the Peri calls holy, below the penitent's tear, and so ranks the political virtues that dominate the other tales beneath a religious one.",
+    "The Peri's journey is also a tour of a suffering world, in which conquest, plague and crime are seen from above by a spirit who weeps for man. The tale's lyric movement and its fable of redemption made it the most detachable part of the poem, and it was the source of Schumann's oratorio, the most enduring musical work to come from Lalla Rookh [[jordan1975]]."
+   ],
+   "key": [
+    {
+     "ref": "Paradise and the Peri 38–41",
+     "quote": "'Tis written in the Book of Fate,\n  The Peri yet may be forgiven\nWho brings to this Eternal gate\n  The Gift that is most dear to Heaven!",
+     "note": "The angel states the condition that drives the whole tale."
+    },
+    {
+     "ref": "Paradise and the Peri 130–131",
+     "quote": "\"'Tis the last libation Liberty draws\n\"From the heart that bleeds and breaks in her cause!\"",
+     "note": "The first gift: the blood of a patriot, valued highly but not highly enough."
+    },
+    {
+     "ref": "Paradise and the Peri 206–207",
+     "quote": "\"Some flowerets of Eden ye still inherit,\n  \"But the trail of the Serpent is over them all!\"",
+     "note": "The Peri's verdict on plague-stricken Egypt: the Fall still shadows earthly beauty."
+    },
+    {
+     "ref": "Paradise and the Peri 505–506",
+     "quote": "\"Joy, joy for ever! my task is done--\n\"The Gates are past and Heaven is won!",
+     "note": "The Peri's song of triumph once the penitent's tear has opened the gate."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Fire-Worshippers",
+   "lines": "1–2233",
+   "section": 2,
+   "summary": [
+    "Persia has fallen to the Arabs, and the emir Al Hassan rules from Harmozia (Hormuz) on the Gulf of Oman, hunting down the last Ghebers, the Zoroastrian worshippers of fire. His daughter Hinda lives in a tower above the sea, where a nameless lover climbs to her by night. When she begs him to join her father's army, he throws back his cloak to show the Gheber belt: he is one of the hated rebels, and first climbed the tower to kill Al Hassan. He leaves her. The rebels' leader, Hafed, holds with his last followers a ruined fire-temple on a mountain reachable only by a secret path through a chasm.",
+    "A Gheber traitor sells the path to Al Hassan for gold. Hinda is sent home by sea, but in a storm her ship is taken by Gheber fighters, and she is carried blindfold to the rebel mountain, where Hafed proves to be her lover. She warns him that he has been betrayed and begs him to escape with her; he sends her away in a boat under guard, promising that they will meet in a happier world.",
+    "The Arabs come through the glen. Hafed and his men ambush them in a flooded ravine and kill great numbers, but are overwhelmed. Hafed, wounded, carries his last dying comrade to the sacred fire, lights the funeral pile and leaps onto it. Hinda, watching from the boat, sees him against the flames and throws herself into the sea. A Peri of the ocean sings a lament for 'Araby's daughter'."
+   ],
+   "analysis": [
+    "This is the most political of the tales. In the preface to the collected edition of his works Moore acknowledged that the Irish cause had inspired it, and the parallels are close: a native people deprived of their religion and their land by conquerors of another faith, a resistance branded as rebellion, and a cause lost through an informer, as the United Irishmen were undone by informers in 1798. The Ghebers stand for the Irish Catholics and the Arab conquerors for English Protestant rule; Hafed has often been compared with Moore's friend Robert Emmet [[moore1841]] [[vail2005]] [[wright2007]].",
+    "Moore's narrator speaks openly for the rebels, defending even the word 'rebellion' and cursing the traitor. Yet the love story complicates the politics: Hinda is the gentlest figure in the poem, and the lovers' tragedy is that each is loyal to an enemy people. Fadladeen's charge of sedition in the frame shows Moore anticipating, and teasing, the political reading [[lennon2004]] [[leerssen1996]].",
+    "The sacred fire, still burning on a deserted altar after priests and worshippers have fled, becomes a figure for a faith and a nation that survive defeat, and Hafed's death in it joins the religious and the national cause."
+   ],
+   "key": [
+    {
+     "ref": "Fire-Worshippers 279–282",
+     "quote": "\"Oh! ever thus from childhood's hour\n\"I've seen my fondest hopes decay;\n\"I never loved a tree or flower,\n  \"But 'twas the first to fade away.",
+     "note": "Hinda's lament, so popular that it became a byword and was parodied, by Lewis Carroll among others, in the line about the 'dear gazelle' that follows."
+    },
+    {
+     "ref": "Fire-Worshippers 363–366",
+     "quote": "\"Yes--I am of that impious race,\n  \"Those Slaves of Fire who, morn and even,\n\"Hail their Creator's dwelling-place\n  \"Among the living lights of heaven:",
+     "note": "Hafed reveals his identity; Moore presents the fire-worshippers as worshipping the Creator through the lights of heaven, not as idolaters."
+    },
+    {
+     "ref": "Fire-Worshippers 550–553",
+     "quote": "Rebellion! foul, dishonoring word,\n  Whose wrongful blight so oft has stained\nThe holiest cause that tongue or sword\n  Of mortal ever lost or gained.",
+     "note": "The narrator's defence of the word 'rebellion': a passage with clear meaning for Irish readers after 1798."
+    },
+    {
+     "ref": "Fire-Worshippers 919–922",
+     "quote": "One miscreant who for gold betrayed\nThe pathway thro' the valley's shade\nTo those high towers where Freedom stood\nIn her last hold of flame and blood.",
+     "note": "The traitor who sells the path through the glen, the hinge of the tragedy."
+    },
+    {
+     "ref": "Fire-Worshippers 2194–2195",
+     "quote": "Farewell--farewell to thee. ARABY'S daughter!\n  (Thus warbled a PERI beneath the dark sea,)",
+     "note": "The opening of the closing song, sung by a sea-Peri over Hinda's grave."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "The Light of the Haram",
+   "lines": "1–742",
+   "section": 3,
+   "summary": [
+    "The Vale of Kashmir is celebrating the Feast of Roses. The emperor Selim, son of Akbar (the historical Jahangir), has come there with his beloved wife Nourmahal, 'the Light of the Haram', whose beauty lies in its constant play of mood. But a trivial quarrel has parted them, and on the night of the feast each is alone and miserable.",
+    "Nourmahal seeks help from the ageless enchantress Namouna, who weaves a wreath of moonlit flowers. Worn in sleep, it summons a Spirit of music from the fountain of Chindara, who promises that her lover shall sigh at her feet again. Nourmahal wakes with a lute and a voice of more than human sweetness.",
+    "At Selim's feast in the Shalimar gardens a Georgian singer celebrates ever-changing pleasure: if there is an Elysium on earth, 'It is this'. A masked singer takes up the same measure in praise of faithful love, and then sings an Arab maid's invitation to fly to the desert. Selim, overcome, cries out that if Nourmahal had sung this he would forgive her everything; the mask comes off and the lovers are reconciled."
+   ],
+   "analysis": [
+    "After two tragedies, Moore ends with a light, musical comedy of a lovers' quarrel. The historical Nur Jahan, first given the title Nur Mahal, 'Light of the Palace', was the most powerful woman of Jahangir's reign; Moore keeps the name and the setting of Mughal Kashmir but makes her a heroine of domestic romance, whose power is the charm of song [[sharafuddin1994]].",
+    "The tale is also a picture of Moore's own art. Its anapaestic measures and inset songs resemble the Irish Melodies, and its plot claims that music can mend what quarrels break. Its setting, Kashmir at the Feast of Roses, is the destination of the frame-tale, where Lalla Rookh will discover that her poet is her bridegroom: the last tale thus anticipates the happy ending that follows it."
+   ],
+   "key": [
+    {
+     "ref": "Light of the Haram 1–2",
+     "quote": "Who has not heard of the Vale of CASHMERE,\n  With its roses the brightest that earth ever gave,",
+     "note": "The opening apostrophe to Kashmir, in the rolling anapaests that distinguish this tale."
+    },
+    {
+     "ref": "Light of the Haram 118–119",
+     "quote": "If woman can make the worst wilderness dear,\nThink, think what a Heaven she must make of CASHMERE!",
+     "note": "The couplet on Selim's love for Nourmahal, often quoted apart from the poem."
+    },
+    {
+     "ref": "Light of the Haram 183–184",
+     "quote": "Alas!--how light a cause may move\nDissension between hearts that love!",
+     "note": "The narrator's moral: the slightest cause can divide lovers whom great trials had joined."
+    },
+    {
+     "ref": "Light of the Haram 669–672",
+     "quote": "Fly to the desert, fly with me,\nOur Arab's tents are rude for thee;\nBut oh! the choice what heart can doubt,\nOf tents with love or thrones without?",
+     "note": "The beginning of Nourmahal's winning song, sung in disguise."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Lalla Rookh",
+   "side": "The prose frame",
+   "text": "Daughter of the Mughal emperor Aurangzeb, betrothed to the young king of Bukhara. Her name means 'tulip cheek'. On her journey to Kashmir she falls in love with the poet Feramorz, believing she must give him up for a husband she has never met."
+  },
+  {
+   "name": "Feramorz (Aliris)",
+   "side": "The prose frame",
+   "text": "A young poet of Kashmir who recites the four tales to the princess. At the end he is revealed as Aliris, king of Bukhara, her bridegroom, who joined the procession in disguise to win her love for himself."
+  },
+  {
+   "name": "Fadladeen",
+   "side": "The prose frame",
+   "text": "Great Nazir or chamberlain of the harem, a self-important judge of everything from conserves of rose-leaves to epic poems. His solemn criticisms parody the reviewers of Moore's day; when the poet turns out to be a king, he discovers new merits in the verses."
+  },
+  {
+   "name": "Mokanna",
+   "side": "The Veiled Prophet",
+   "text": "The Veiled Prophet, a deformed impostor who claims divine light and preaches freedom while despising humanity. Based on the historical al-Muqanna'. He corrupts Zelica, makes war on the Caliph and destroys himself and his followers when defeated."
+  },
+  {
+   "name": "Azim",
+   "side": "The Veiled Prophet",
+   "text": "A young warrior of Bukhara, an idealist inspired by the memory of Greek liberty, who joins Mokanna believing in his cause, discovers the truth, and becomes the Caliph's champion. He kills Zelica unknowingly and spends his life praying for her."
+  },
+  {
+   "name": "Zelica",
+   "side": "The Veiled Prophet",
+   "text": "Azim's childhood love, driven mad by false news of his death, drawn into Mokanna's harem and bound by a charnel-house oath. Her final disguise in the veil and her death on Azim's spear bring her redemption."
+  },
+  {
+   "name": "The Caliph Mahadi",
+   "side": "The Veiled Prophet",
+   "text": "The Abbasid caliph al-Mahdi, who leads the 'Swords of God' against Mokanna and besieges him at Neksheb."
+  },
+  {
+   "name": "The Peri",
+   "side": "Paradise and the Peri",
+   "text": "A spirit of the fallen race of Peris, excluded from Eden, who searches the earth for the gift that will readmit her and finds it in a penitent's tear."
+  },
+  {
+   "name": "The Angel",
+   "side": "Paradise and the Peri",
+   "text": "The keeper of the gate of Eden, who sets the Peri her task and twice turns her gifts away."
+  },
+  {
+   "name": "The patriot, the lovers and the penitent",
+   "side": "Paradise and the Peri",
+   "text": "The human figures of the three episodes: an Indian warrior killed defying Mahmud of Ghazni; a plague victim in Egypt and the bride who dies with him; and a Syrian criminal who repents at the sight of a child at prayer."
+  },
+  {
+   "name": "Hafed",
+   "side": "The Fire-Worshippers",
+   "text": "Leader of the last Gheber rebels against Arab rule, feared by the Arabs as a demon and loved by Hinda, who knows him first only as a stranger. Betrayed, he dies on the sacred fire of the mountain temple. Often read as a figure of the Irish patriot."
+  },
+  {
+   "name": "Hinda",
+   "side": "The Fire-Worshippers",
+   "text": "Daughter of the emir Al Hassan, gentle and devout, who loves Hafed across the divide of faith and nation. She warns him of the betrayal and drowns herself when she sees him die."
+  },
+  {
+   "name": "Al Hassan",
+   "side": "The Fire-Worshippers",
+   "text": "The Arab emir of Harmozia, a fanatical persecutor of the Ghebers who loves his daughter but cannot see her grief. He uses the traitor to destroy Hafed."
+  },
+  {
+   "name": "The traitor",
+   "side": "The Fire-Worshippers",
+   "text": "A Gheber who survives the rebels' last sally and sells the secret path to the mountain stronghold for gold. Unnamed, he is the object of one of the narrator's most violent curses."
+  },
+  {
+   "name": "Nourmahal",
+   "side": "The Light of the Haram",
+   "text": "The 'Light of the Haram', wife of the emperor Selim, based on the historical Nur Jahan. Parted from him by a quarrel, she regains his love through an enchanted song."
+  },
+  {
+   "name": "Selim",
+   "side": "The Light of the Haram",
+   "text": "The emperor Jahangir, son of Akbar, who forgets his empire for Nourmahal and is reconciled to her at his feast in the Shalimar gardens."
+  },
+  {
+   "name": "Namouna",
+   "side": "The Light of the Haram",
+   "text": "An ageless enchantress who lives on the scent of flowers and weaves the moonlight wreath that summons the Spirit of music."
+  },
+  {
+   "name": "The Spirit of Chindara",
+   "side": "The Light of the Haram",
+   "text": "A spirit of music from the fountain of Chindara who visits Nourmahal in a dream and gives her lute and voice their magic."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Imposture, fanaticism and true faith",
+   "text": [
+    "The poem is preoccupied with the abuse of belief. Mokanna exploits credulity with a veil, a false moon and promises of paradise; Al Hassan kills in the name of the Koran; in the frame the critic Fadladeen exercises a petty tyranny of orthodoxy over poetry. Against these Moore sets a private, tender piety: the prayers of Zelica and Azim, the Peri's pity and the penitent's tear.",
+    "Because the impostor and the persecutor are Muslims, the poem has been read as hostile to Islam, but its satire of 'State Priests' and 'incredible creeds' is general, and readers have heard in it the Irish Catholic Moore's resentment of established religion [[sharafuddin1994]] [[leask1992]]."
+   ]
+  },
+  {
+   "title": "Liberty, rebellion and betrayal",
+   "text": [
+    "Freedom is the word on Mokanna's banner and the cause for which Hafed dies, and the poem distinguishes the false liberty of a demagogue from the true liberty of a people defending its land and faith. The patriot's blood in Paradise and the Peri is called holy. Betrayal is the recurring disaster: of his followers by Mokanna, and of Hafed by the informer.",
+    "These contrasts give the poem its political meaning in 1817, after the Napoleonic wars and in the long aftermath of the Irish rising of 1798 [[vail2005]] [[wright2007]]."
+   ]
+  },
+  {
+   "title": "Love across division",
+   "text": [
+    "All four tales are love stories in which an obstacle separates the lovers: Zelica's oath, Hinda's nation and religion, Nourmahal's quarrel, and in the frame the princess's betrothal. Two end in death, one in reconciliation, and the frame in a marriage that dissolves the obstacle entirely. Moore's women are often more faithful than his men, and love is repeatedly the means of moral redemption."
+   ]
+  },
+  {
+   "title": "Memory and lost innocence",
+   "text": [
+    "Characters are moved by the memory of childhood and first love: Zelica and Azim by the groves of Bukhara, the singer by the bower of roses by Bendemeer, the criminal by his own childhood prayers, Hinda by the gazelle that died. The elegy for a lost happier state links the personal and the national, for Iran too mourns its lost glory."
+   ]
+  },
+  {
+   "title": "The power of song",
+   "text": [
+    "Lalla Rookh is a poem about poetry and music in performance. Feramorz wins the princess by reciting; songs are set into every tale; Nourmahal's enchanted song reunites her with Selim. Moore, the author of the Irish Melodies, presents art as both seduction and healing, and the critic Fadladeen as its comic enemy."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Veils and masks",
+   "text": "Mokanna's silver veil, Zelica's mourning veil, Hinda's hidden beauty, Nourmahal's mask, and in the frame the disguise of the king as Feramorz: the poem repeatedly plays on concealment and revelation, sometimes of horror, sometimes of love."
+  },
+  {
+   "title": "Drops and tears",
+   "text": "A drop of blood, a sigh and a tear are the Peri's gifts; Zelica's tears thaw her frozen heart; the healing drop that falls on Egypt is compared to repentance. Small offerings carry great moral weight."
+  },
+  {
+   "title": "Gardens and flowers",
+   "text": "From Mokanna's harem to the Feast of Roses, the poem is filled with gardens, often places of temptation or false paradise set against the true Eden the Peri seeks."
+  },
+  {
+   "title": "Inset songs",
+   "text": "Each tale contains songs in contrasting metres, such as the bower of Bendemeer, the Spirit of Love, the lament for Araby's daughter and the Elysium songs, which were printed and sung separately and helped make the poem popular."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The Silver Veil",
+   "text": "Mokanna's veil promises divine light and hides deformity: an emblem of imposture, and in Vail's reading of revolutionary promises masking violence [[vail2005]]."
+  },
+  {
+   "title": "The sacred fire",
+   "text": "The fire of the Ghebers, still burning on the abandoned mountain altar, stands for a faith and a nation that outlast defeat; Hafed's death makes it a martyr's pyre."
+  },
+  {
+   "title": "The gate of Eden",
+   "text": "The crystal bar that opens only to the right gift marks the scale of values in Paradise and the Peri, placing repentance above even patriotic sacrifice."
+  },
+  {
+   "title": "The Feast of Roses",
+   "text": "The festival in Kashmir symbolises the renewal of love; Nourmahal's last words recall it, and the frame-tale ends in the same valley with the royal wedding."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Orientalism: learning or fantasy?",
+   "text": [
+    "Moore was proud of the accuracy of his local colour, and his notes display a great range of reading in travel writing and Oriental scholarship. Early readers praised this learning; later ones saw the poem as a costume drama in which the East is a storehouse of perfumes, jewels and harems.",
+    "Since Said, the debate has turned on the relation between knowledge and power. Nigel Leask placed Moore among the Romantics whose Eastern poems register the anxieties of empire; Mohammed Sharafuddin argued that Moore, like Southey and Byron, made a serious imaginative effort to enter Islamic culture, even when his sympathies were divided; Raymond Schwab's broader history shows how much of this material was new to Europe [[said1978]] [[leask1992]] [[sharafuddin1994]] [[schwab1984]]."
+   ],
+   "cite": [
+    "said1978",
+    "leask1992",
+    "sharafuddin1994",
+    "schwab1984"
+   ]
+  },
+  {
+   "title": "The Irish allegory of The Fire-Worshippers",
+   "text": [
+    "Moore's later preface acknowledged that the Irish cause inspired The Fire-Worshippers, and contemporaries noticed the parallel at once. The question is how far the allegory extends: whether Hafed is Emmet, whether the traitor recalls the informers of 1798, and whether Moore's sympathy for doomed rebellion is a call to action or an elegy that turns politics into sentiment.",
+    "Joseph Lennon has placed the poem in a long tradition of 'Irish Orientalism' that linked Ireland with the East; Julia M. Wright has read it alongside Irish writing about India as a reflection on colonial rule; Joep Leerssen's account of Irish cultural memory helps explain why lost causes appealed to Moore's readers [[moore1841]] [[lennon2004]] [[wright2007]] [[leerssen1996]]."
+   ],
+   "cite": [
+    "moore1841",
+    "lennon2004",
+    "wright2007",
+    "leerssen1996"
+   ]
+  },
+  {
+   "title": "Mokanna and the French Revolution",
+   "text": [
+    "Is the Veiled Prophet a political allegory too? Jeffery Vail argues that the poem pairs a condemnation of Jacobin revolution, embodied in Mokanna's false liberty and the violence behind his veil, with a defence of legitimate national revolt in The Fire-Worshippers, while the happy ending of the frame points towards reform. Others read Mokanna more generally, as a study of fanaticism and of the corruption of an idealist like Azim [[vail2005]] [[leask1992]]."
+   ],
+   "cite": [
+    "vail2005",
+    "leask1992"
+   ]
+  },
+  {
+   "title": "The frame and the critic",
+   "text": [
+    "The prose frame was long treated as padding, but it shapes how the tales are read. Fadladeen's criticisms anticipate objections to the poem's diction, morality and politics, and laugh at them in advance. The joke that the critic changes his mind when the poet proves to be a king is aimed at reviewers who judged by rank and party; Moore's biographers connect it with his old quarrel with Francis Jeffrey, who in the event reviewed the poem favourably [[vail2001]] [[kellyr2008]] [[jones1937]]."
+   ],
+   "cite": [
+    "vail2001",
+    "kellyr2008",
+    "jones1937"
+   ]
+  },
+  {
+   "title": "Moore and Byron",
+   "text": [
+    "Lalla Rookh was written in close dialogue with Byron's Eastern tales, which had made Byron the most successful poet of the age. Byron urged Moore towards the East and dedicated The Corsair (1814) to him. Critics have asked whether Moore's poem imitates Byron or answers him, offering, for example, redemptive and more sentimental counterparts to Byron's isolated, guilty heroes; Moore's letters and journal record the friendship from his side [[vail2001]] [[dowden1964]] [[dowden1983]] [[russell1853]]."
+   ],
+   "cite": [
+    "vail2001",
+    "dowden1964",
+    "dowden1983",
+    "russell1853"
+   ]
+  },
+  {
+   "title": "Popularity and reputation",
+   "text": [
+    "The commercial history of the poem is extraordinary: the record payment, the many editions, the translations, the operas and the illustrations. William St Clair's study of the book trade uses such evidence to show how literary reputations were made in the period. The question for criticism is why so successful a poem fell so far, and whether the reasons were literary, such as its ornament and sentiment, or a change in the politics and taste that had made it popular [[stclair2004]] [[jordan1975]] [[whitedevere1977]]."
+   ],
+   "cite": [
+    "stclair2004",
+    "jordan1975",
+    "whitedevere1977"
+   ]
+  },
+  {
+   "title": "Women and the harem",
+   "text": [
+    "Harems appear in three of the tales, and the poem dwells on the beauty of women gathered from every land. Some readers see this as typical Orientalist voyeurism; others note that Moore's heroines, Zelica, Hinda and Nourmahal, are moral agents whose fidelity redeems or outshines the men, and that the frame lets the princess's judgement prevail over the critic's [[leask1992]] [[sharafuddin1994]] [[kellyl2006]]."
+   ],
+   "cite": [
+    "leask1992",
+    "sharafuddin1994",
+    "kellyl2006"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Veiled Prophet 563–565",
+   "quote": "\"The heaven of each is but what each desires,\n\"And, soul or sense, whate'er the object be,\n\"Man would be man to all eternity!",
+   "who": "Mokanna",
+   "explanation": "The impostor's private creed: every heaven is only a projection of human desire. The speech shows Mokanna's contempt for the believers he leads, and it voices a scepticism that the poem condemns in his mouth without wholly refuting."
+  },
+  {
+   "ref": "Veiled Prophet 1029–1030",
+   "quote": "There's a bower of roses by BENDEMEER's stream,\n  And the nightingale sings round it all the day long;",
+   "who": "A singer in Mokanna's harem",
+   "explanation": "The opening of the most famous of the inset songs, sung to tempt Azim. Instead it reminds him of innocence and home; it was often set to music as a separate song."
+  },
+  {
+   "ref": "Veiled Prophet 2011–2012",
+   "quote": "\"Now mark how readily a wretch like me\n\"In one bold plunge commences Deity!\"",
+   "who": "Mokanna",
+   "explanation": "His last words before he leaps into the burning cistern. The sardonic phrase 'commences Deity' sums up his plan to make his disappearance the foundation of a cult."
+  },
+  {
+   "ref": "Veiled Prophet 2140–2141",
+   "quote": "And there upon the banks of that loved tide,\nHe and his ZELICA sleep side by side.",
+   "who": "The narrator",
+   "explanation": "The last lines of the first tale, after Azim's long life of prayer. The quiet close contrasts with the horrors of the siege."
+  },
+  {
+   "ref": "Paradise and the Peri 1–2",
+   "quote": "One morn a Peri at the gate\nOf Eden stood disconsolate;",
+   "who": "The narrator",
+   "explanation": "The opening of Paradise and the Peri, which introduces the exiled spirit whose search gives the tale its shape."
+  },
+  {
+   "ref": "Paradise and the Peri 300–301",
+   "quote": "One kiss the maiden gives, one last,\n  Long kiss, which she expires in giving!",
+   "who": "The narrator",
+   "explanation": "The death of the bride in plague-stricken Egypt. Her last sigh becomes the Peri's second, rejected, gift."
+  },
+  {
+   "ref": "Fire-Worshippers 607–608",
+   "quote": "His only talisman, the sword,\n  His only spell-word, Liberty!",
+   "who": "The narrator",
+   "explanation": "Hafed's only magic is courage and the cause of liberty: the narrator strips away the Arabs' tales of a demon-chief to reveal a patriot."
+  },
+  {
+   "ref": "Fire-Worshippers 2083",
+   "quote": "\"Now, Freedom's God! I come to Thee,\"",
+   "who": "Hafed",
+   "explanation": "Hafed's last words as he leaps onto the funeral pile. His death by fire unites the religion and the national cause of the Ghebers."
+  },
+  {
+   "ref": "Light of the Haram 615–616",
+   "quote": "And, oh! if there be an Elysium on earth,\n    It is this, it is this.",
+   "who": "A Georgian singer at Selim's feast",
+   "explanation": "The refrain of the song in praise of pleasure, which Nourmahal answers in the same measure with a song of constant love."
+  },
+  {
+   "ref": "Light of the Haram 742",
+   "quote": "\"Remember, love, the Feast of Roses!\"",
+   "who": "Nourmahal",
+   "explanation": "The last line of the four tales: the reconciled wife's playful reminder links the end of the poem to the festival of renewal."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Moore frame the four tales with the story of Lalla Rookh, Feramorz and Fadladeen?",
+   "hint": "Think about performance and audience, the satire of critics, and the final revelation of the poet's identity."
+  },
+  {
+   "q": "What does Mokanna's veil conceal, and how does its meaning change when Zelica wears it?",
+   "hint": "Compare the unveiling scenes with Zelica's death on Azim's spear."
+  },
+  {
+   "q": "Why is Azim drawn to Mokanna, and what does his story suggest about idealism?",
+   "hint": "Consider his experience in Greece and the banner 'Freedom to the World'."
+  },
+  {
+   "q": "Why are the patriot's blood and the lover's sigh not enough to open the gate of Eden?",
+   "hint": "Look at the order of the three gifts and what the penitent's tear represents."
+  },
+  {
+   "q": "How far can The Fire-Worshippers be read as an allegory of Ireland?",
+   "hint": "Think about conquest, religion, the word 'rebellion', the traitor, and Moore's own background."
+  },
+  {
+   "q": "How does the love of Hafed and Hinda complicate the politics of The Fire-Worshippers?",
+   "hint": "Consider Hinda's loyalty to her father and her faith, and the narrator's sympathy for her."
+  },
+  {
+   "q": "What role do the inset songs play in the poem?",
+   "hint": "Look at the Bendemeer song, the Elysium songs and the lament for Araby's daughter, and remember Moore's Irish Melodies."
+  },
+  {
+   "q": "Is the poem hostile to Islam, or to religious fanaticism in general?",
+   "hint": "Compare Mokanna, Al Hassan and the child at prayer in Paradise and the Peri."
+  },
+  {
+   "q": "Why does The Light of the Haram come last?",
+   "hint": "Consider its comic plot, its setting in Kashmir and the ending of the frame-tale."
+  },
+  {
+   "q": "What do the success of Lalla Rookh in 1817 and its later decline tell us about Romantic taste?",
+   "hint": "Think about Orientalism, Byron's Eastern tales, the book trade and the poem's musical afterlife."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "herbelot1697",
+   "text": "Herbelot, Barthélemy d'. Bibliothèque orientale, ou Dictionnaire universel contenant généralement tout ce qui regarde la connoissance des peuples de l'Orient. Paris: Compagnie des Libraires, 1697."
+  },
+  {
+   "id": "jones1937",
+   "text": "Jones, Howard Mumford. The Harp That Once—: A Chronicle of the Life of Thomas Moore. New York: Henry Holt, 1937."
+  },
+  {
+   "id": "jordan1975",
+   "text": "Jordan, Hoover H. Bolt Upright: The Life of Thomas Moore. 2 vols. Salzburg: Institut für Englische Sprache und Literatur, Universität Salzburg, 1975."
+  },
+  {
+   "id": "kellyl2006",
+   "text": "Kelly, Linda. Ireland's Minstrel: A Life of Tom Moore: Poet, Patriot and Byron's Friend. London: I. B. Tauris, 2006."
+  },
+  {
+   "id": "kellyr2008",
+   "text": "Kelly, Ronan. Bard of Erin: The Life of Thomas Moore. Dublin: Penguin Ireland, 2008."
+  },
+  {
+   "id": "leask1992",
+   "text": "Leask, Nigel. British Romantic Writers and the East: Anxieties of Empire. Cambridge: Cambridge University Press, 1992."
+  },
+  {
+   "id": "leerssen1996",
+   "text": "Leerssen, Joep. Remembrance and Imagination: Patterns in the Historical and Literary Representation of Ireland in the Nineteenth Century. Cork: Cork University Press in association with Field Day, 1996."
+  },
+  {
+   "id": "lennon2004",
+   "text": "Lennon, Joseph. Irish Orientalism: A Literary and Intellectual History. Syracuse, NY: Syracuse University Press, 2004."
+  },
+  {
+   "id": "moore1817",
+   "text": "Moore, Thomas. Lalla Rookh: An Oriental Romance. London: Longman, Hurst, Rees, Orme, and Brown, 1817."
+  },
+  {
+   "id": "russell1853",
+   "text": "Moore, Thomas. Memoirs, Journal, and Correspondence of Thomas Moore. Ed. Lord John Russell. 8 vols. London: Longman, Brown, Green, and Longmans, 1853–1856."
+  },
+  {
+   "id": "dowden1983",
+   "text": "Moore, Thomas. The Journal of Thomas Moore. Ed. Wilfred S. Dowden. 6 vols. Newark: University of Delaware Press, 1983–1991."
+  },
+  {
+   "id": "dowden1964",
+   "text": "Moore, Thomas. The Letters of Thomas Moore. Ed. Wilfred S. Dowden. 2 vols. Oxford: Clarendon Press, 1964."
+  },
+  {
+   "id": "moore1841",
+   "text": "Moore, Thomas. The Poetical Works of Thomas Moore, Collected by Himself. 10 vols. London: Longman, Orme, Brown, Green, and Longmans, 1840–1841."
+  },
+  {
+   "id": "said1978",
+   "text": "Said, Edward W. Orientalism. New York: Pantheon Books, 1978."
+  },
+  {
+   "id": "schwab1984",
+   "text": "Schwab, Raymond. The Oriental Renaissance: Europe's Rediscovery of India and the East, 1680–1880. Trans. Gene Patterson-Black and Victor Reinking. New York: Columbia University Press, 1984."
+  },
+  {
+   "id": "sharafuddin1994",
+   "text": "Sharafuddin, Mohammed. Islam and Romantic Orientalism: Literary Encounters with the Orient. London: I. B. Tauris, 1994."
+  },
+  {
+   "id": "stclair2004",
+   "text": "St Clair, William. The Reading Nation in the Romantic Period. Cambridge: Cambridge University Press, 2004."
+  },
+  {
+   "id": "vail2005",
+   "text": "Vail, Jeffery W. '\"The Standard of Revolt\": Revolution and National Independence in Moore's Lalla Rookh'. Romanticism on the Net 40 (November 2005). doi:10.7202/012459ar."
+  },
+  {
+   "id": "vail2001",
+   "text": "Vail, Jeffery W. The Literary Relationship of Lord Byron and Thomas Moore. Baltimore: Johns Hopkins University Press, 2001."
+  },
+  {
+   "id": "whitedevere1977",
+   "text": "White, Terence de Vere. Tom Moore: The Irish Poet. London: Hamish Hamilton, 1977."
+  },
+  {
+   "id": "wright2007",
+   "text": "Wright, Julia M. Ireland, India and Nationalism in Nineteenth-Century Literature. Cambridge: Cambridge University Press, 2007."
+  }
+ ]
+}

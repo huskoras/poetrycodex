@@ -1,0 +1,652 @@
+{
+ "work": "everyman",
+ "title": "Everyman",
+ "author": "Anonymous (Middle English)",
+ "quoteEdition": "everyman",
+ "updated": "2026-10-19",
+ "unit": "Part",
+ "sameSections": true,
+ "glance": [
+  {
+   "label": "Full title",
+   "value": "The Summoning of Everyman, the name the Messenger gives the play in the prologue; the early prints introduce it as a 'treatise' in the manner of a moral play"
+  },
+  {
+   "label": "Genre",
+   "value": "Morality play: an allegorical drama in which a figure standing for all humankind meets personified abstractions"
+  },
+  {
+   "label": "Date",
+   "value": "Probably written in the late fifteenth century or the very first years of the sixteenth; no manuscript survives"
+  },
+  {
+   "label": "Early texts",
+   "value": "Four early sixteenth-century printed editions: two fragments printed by Richard Pynson and two complete copies printed by John Skot"
+  },
+  {
+   "label": "Relation to Elckerlijc",
+   "value": "Closely parallel to the Dutch play Elckerlijc, printed in the 1490s; most scholars now regard the English play as a translation and adaptation of the Dutch"
+  },
+  {
+   "label": "Length and form",
+   "value": "921 lines of rhymed verse, mostly in couplets and quatrains, with lines of irregular length and stress"
+  },
+  {
+   "label": "Frame",
+   "value": "A Messenger's prologue (1–21) and a Doctor's epilogue (902–921) enclose the action, which runs from God's complaint to the Angel's welcome of Everyman's soul"
+  },
+  {
+   "label": "Setting",
+   "value": "No fixed place: the play moves from heaven to the 'house of salvation' and finally to the grave, along a journey that is both pilgrimage and death"
+  },
+  {
+   "label": "Text used here",
+   "value": "The modernised text in Ernest Rhys's Everyman's Library volume (1909); line numbers count the verse lines continuously and agree with the standard numbering of modern editions"
+  },
+  {
+   "label": "Modern revival",
+   "value": "First modern performance by William Poel's Elizabethan Stage Society at the Charterhouse, London, in July 1901; adapted by Hugo von Hofmannsthal as Jedermann (1911)"
+  }
+ ],
+ "context": [
+  "Everyman belongs to the kind of late medieval drama that modern critics call the morality play. Where the biblical cycle plays staged the history of salvation from Creation to Doomsday, the moralities staged the life of a single representative human being, surrounded by personified virtues, vices, faculties and forces. The surviving English examples are few. The Castle of Perseverance (early fifteenth century) follows Humanum Genus from birth to judgement; Wisdom and Mankind (both probably from the 1460s or 1470s) set their heroes between tempters and counsellors, and Mankind adds a good deal of rough comedy [[potter1975]] [[davenport1982]] [[beadle1994]] [[bevington1975]].",
+  "Everyman is unusual within this small group. It has no devils, no vices and no struggle over the hero's soul during his life. It begins at the moment when life is already over: God sends Death, and the whole play is the preparation for dying. This concentration gives it a severity, and an economy of means, unlike anything else in the English moralities, and it partly explains why it was the first of them to be revived on the modern stage [[mackenzie1914]] [[spivack1958]].",
+  "No manuscript of the play survives. It is known from four printed editions of the early sixteenth century, two (both fragments) from the press of Richard Pynson and two complete copies printed by John Skot [[greg1904]]. A Dutch play, Elckerlijc, follows the same action speech by speech and was printed in the 1490s; its author is traditionally identified as Peter of Diest, sometimes equated with the Carthusian Petrus Dorlandus. Which play came first was argued for half a century, but most scholars now accept that the English Everyman is a translation and adaptation of the Dutch [[cawley1961]] [[davidson2007]].",
+  "The story itself is older than either play. Its core is a parable told in the legend of Barlaam and Josaphat: a man summoned before a king appeals to three friends, of whom the one he loved most will do least for him and the one he neglected will go with him before the judge. The play turns this into a theology of dying. The audience of the late fifteenth century knew the ars moriendi, the 'craft of dying' set out in Latin treatises of the early fifteenth century, in block-books with woodcuts of the deathbed and its temptations, and in English versions such as the one Caxton printed in 1490. Everyman stages the same lessons: that death comes without warning, that worldly goods cannot follow the soul, and that the dying should turn to contrition, confession and the sacraments [[beaty1970]] [[binski1996]].",
+  "The play's religion is that of the Church in England on the eve of the Reformation. Everyman is saved by penance in its traditional parts (contrition, confession and satisfaction), by the Eucharist and by extreme unction, and he speaks of purgatory and prays to the Virgin. A long passage praises the priesthood and then condemns priests who sell the sacraments or live unchastely. Such material shows the orthodoxy of the play, and also its awareness of the criticism the Church faced in the decades before Henry VIII's break with Rome [[duffy1992]] [[ryan1957]]."
+ ],
+ "plot": [
+  "A Messenger asks the audience to attend to a 'moral play' that will show how transitory life is. God then speaks from heaven, complaining that mankind lives in worldly prosperity, forgetful of the Passion and given to the deadly sins. He summons Death and sends him to Everyman with the command to take a pilgrimage and bring a reckoning.",
+  "Death finds Everyman, who tries in vain to bribe him and to win a delay. He may, however, take any companion who will go with him. Fellowship swears to go with him even to hell, but refuses as soon as he hears where the journey leads. Kindred and Cousin refuse with excuses; Goods, lying locked in his chests, tells Everyman that love of wealth has made his account worse and that riches were only lent to him.",
+  "Everyman turns at last to Good-Deeds, who lies on the ground too weak to stand because of his sins. She gives him her sister Knowledge as a guide, who leads him to Confession. Everyman confesses, prays and scourges himself in penance; Good-Deeds rises up strong, and Knowledge gives him the garment of contrition. He is joined by Beauty, Strength, Discretion and Five-Wits, makes his will, and goes to a priest to receive the sacrament and extreme unction.",
+  "When Everyman reaches his grave, Beauty, Strength, Discretion and Five-Wits desert him one after another. Knowledge stays until the moment of death; only Good-Deeds goes with him into the grave. Everyman commends his soul to God and dies, and an Angel receives his soul into heaven. A Doctor closes the play by drawing the moral: all at last forsake Everyman except his good deeds."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Messenger's Prologue",
+   "lines": "1–21",
+   "section": 0,
+   "summary": [
+    "A Messenger calls for silence and reverence. He announces a 'moral play' called The Summoning of Everyman, which shows how short human life is. Its matter, he says, is precious, but its intent is still more gracious.",
+    "He gives the moral in advance. Sin seems sweet at the beginning but makes the soul weep at the end, when the body lies in clay. The audience will see Fellowship and Jollity, Strength, Pleasure and Beauty fade like a flower in May, and will hear the King of heaven call Everyman to a general reckoning."
+   ],
+   "analysis": [
+    "The prologue frames the play as a sermon as much as a drama. It tells the audience what will happen and what it means before a single character has appeared, so that suspense lies not in the outcome but in the way the lesson is made felt. The phrase 'By figure a moral play' announces the allegorical method: the persons on stage are figures for realities in the life of every spectator [[potter1975]].",
+    "The Messenger's list of what will 'fade' does not quite match the play. Jollity and Pleasure never appear, and Fellowship leaves before Strength and Beauty arrive. The prologue thus gives a general idea of the action rather than its exact order. Its central image, the flower in May, comes from the biblical comparison of human life to grass (Isaiah 40, Psalm 103) and points to the doctrine of transience on which the play rests [[cawley1961]].",
+    "Above all the prologue introduces the play's governing metaphor of the reckoning. The 'general reckoning' is the account every soul must give at death and at the Last Judgement, and the language of debt, account books and settlement runs through the whole drama [[kolve1972]]."
+   ],
+   "key": [
+    {
+     "ref": "Ev. 3–6",
+     "quote": "By figure a moral play--\nThe Summoning of Everyman called it is,\nThat of our lives and ending shows\nHow transitory we be all day.",
+     "note": "The play names its own genre and title. 'By figure' means by allegory: what happens to Everyman happens, in figure, to all of us."
+    },
+    {
+     "ref": "Ev. 16–18",
+     "quote": "Here shall you see how Fellowship and Jollity,\nBoth Strength, Pleasure, and Beauty,\nWill fade from thee as flower in May.",
+     "note": "The prologue reveals the plot in advance. The flower in May, at the height of its season, is the old image of life's brevity."
+    },
+    {
+     "ref": "Ev. 19–20",
+     "quote": "For ye shall hear, how our heaven king\nCalleth Everyman to a general reckoning:",
+     "note": "The key word 'reckoning' appears here for the first time; it will run through the whole play."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Summoning, the Desertions and the Grave",
+   "lines": "22–901",
+   "section": 1,
+   "summary": [
+    "God's complaint and Death's errand (22–183). God speaks from his majesty: mankind has forgotten the Passion, lives in the seven deadly sins and grows worse each year. Though he offered mercy, few ask for it, so he must do justice. He calls Death, his 'mighty messenger', and sends him to Everyman with the command to take a pilgrimage from which he cannot escape and to bring a 'sure reckoning'. Death meets Everyman walking gaily, his mind on pleasure and treasure. Everyman does not know him, then offers him a thousand pounds to put the matter off, then asks for twelve years, then for one more day. Death refuses every request: he takes no bribes and spares no one, and Everyman's life and goods were only lent to him. Death allows him one thing: he may take any companion who is bold enough to go with him.",
+    "Fellowship (184–312). Alone, Everyman remembers Fellowship, his companion in sport and play. Fellowship greets him warmly and promises extravagantly: he will die for him, and will not forsake him even on the road to hell. But when he learns that Death was the messenger and that no one returns from the journey, he refuses at once. He will go eating, drinking and whoring with Everyman, and will even help him murder a man, but he will not take a foot of this road.",
+    "Kindred, Cousin and Goods (313–475). Everyman turns to his kinsmen, trusting the proverb that 'kind will creep where it may not go'. Kindred and Cousin promise to live and die with him, then refuse. Cousin pleads a cramp in his toe and admits he has his own reckoning to settle; Kindred offers to lend his maid, who loves feasts and dancing. Everyman then calls on Goods, who lies piled in corners and locked in chests and cannot stir. Goods tells him that love of riches has blotted his account, that he was only lent for a season, and that he will now go on to deceive another owner. He laughs at Everyman's distress.",
+    "Good-Deeds, Knowledge and Confession (476–656). Ashamed of himself, Everyman goes to Good-Deeds. She lies cold on the ground, bound by his sins, and cannot stand; the book of his deeds is so blotted that he cannot read a letter of it. She offers him her sister Knowledge as a guide, who leads him to Confession in 'the house of salvation'. Confession gives him the 'precious jewel' of penance, a scourge. Everyman prays at length to God and to the Virgin, then scourges his flesh. At once Good-Deeds rises, cured, and Knowledge gives him a garment of sorrow called Contrition, wet with his tears.",
+    "The sacraments (657–787). Good-Deeds tells Everyman to take with him Discretion, Strength and Beauty, and Knowledge adds his Five-Wits; all promise to stay with him. Everyman makes his testament, giving half his goods in alms and leaving the other half to go where it rightly belongs. On Knowledge's advice he goes to a priest to receive the Eucharist and extreme unction. While he is away, Five-Wits praises the priesthood as higher than the angels, and Knowledge answers that this is true of good priests, but condemns those who sell the sacraments or live in lechery. Everyman returns, having received the sacraments.",
+    "The grave (788–901). Everyman grows faint and comes to the grave. Beauty leaves first, horrified at the thought of smothering there; Strength follows, then Discretion, and then Five-Wits. Knowledge says that she will stay until he dies but will not go with him into death. Only Good-Deeds remains. Everyman draws the lesson for the audience, commends his soul to God in the words of Christ on the cross, and dies. Knowledge hears the angels sing, and an Angel welcomes the soul to heaven as the 'elect spouse' of Jesus, with a reckoning 'crystal-clear'."
+   ],
+   "analysis": [
+    "The action has two movements. In the first, Everyman goes down: he appeals to one worldly support after another and is refused each time, until he is ashamed and in despair. In the second, beginning with his visit to Good-Deeds, he rises through penance and the sacraments towards salvation. The second desertion at the grave mirrors the first, but its meaning is now reversed: the failures of Beauty and Strength no longer bring despair, because Everyman has found the one companion who stays. Thomas Van Laan described this shape as a descending and then an ascending curve, and Lawrence Ryan showed how closely it follows the theology of penance [[vanlaan1963]] [[ryan1957]].",
+    "The first group of companions, Fellowship, Kindred, Cousin and Goods, stand for things outside Everyman: the friends, family and wealth of the world. The second group, Beauty, Strength, Discretion and Five-Wits (the five senses), are parts of himself, the powers of body and mind that he has a right to use but which cannot outlast the body. This ordering explains why the second group is welcomed and honoured and still leaves. John Conley showed how much the scenes owe to the medieval literature of false friendship, in which the friend of prosperity disappears in adversity [[conley1969]].",
+    "The scenes of desertion are among the most theatrical in early English drama. Fellowship's oaths become grotesque when he offers to help with murder; Cousin's cramp in his toe is broad comedy; Goods laughs at the man who made him his god. Yet each refusal is also a little piece of doctrine. Death and Goods use the same phrase, that life and riches were only 'lent', and Everyman answers both with the same baffled 'I had wend so'. The repetitions are part of the play's design, a pattern of promise and betrayal that the audience learns to expect [[davenport1982]].",
+    "Knowledge is the most discussed figure. She cannot be knowledge in general, since she leads Everyman to Confession and then leaves him at death. Most critics take her as the knowledge of one's sin and of the means of grace, or as acknowledgement in the sense of confession. Good-Deeds, by contrast, is not a list of meritorious acts: she is helpless until penance restores her, which shows that in the play's theology good works have value only within grace [[ryan1957]].",
+    "The passage on priesthood is the play's one sustained interruption of its action. It sets the highest claims for the priest, who can consecrate 'God's body' with five words, against the scandal of simony and clerical unchastity. The play does not resolve the tension: Five-Wits simply trusts that no such priests will be found, and Everyman returns having received 'the sacrament for my redemption'. At the end the hero dies with the words of Christ on the cross, and the Angel's welcome turns the grave into a wedding: the soul is the elect spouse of Christ [[duffy1992]] [[cawley1961]]."
+   ],
+   "key": [
+    {
+     "ref": "Ev. 63",
+     "quote": "Where art thou, Death, thou mighty messenger?",
+     "note": "God calls Death as the servant who carries out divine justice; Death will speak of himself as God's officer."
+    },
+    {
+     "ref": "Ev. 80–81",
+     "quote": "Lo, yonder I see Everyman walking;\nFull little he thinketh on my coming;",
+     "note": "The first sight of the hero: Everyman walks unaware, his mind on pleasure and treasure."
+    },
+    {
+     "ref": "Ev. 164–167",
+     "quote": "Nay, nay; it was but lent thee;\nFor as soon as thou art go,\nAnother awhile shall have it, and then go therefro\nEven as thou hast done.",
+     "note": "Death's answer states the doctrine that life and property are a loan. Goods will repeat the idea."
+    },
+    {
+     "ref": "Ev. 232–233",
+     "quote": "For, in faith, and thou go to Hell,\nI will not forsake thee by the way!",
+     "note": "Fellowship's promise is more extravagant than any other, and broken sooner."
+    },
+    {
+     "ref": "Ev. 316",
+     "quote": "For kind will creep where it may not go.",
+     "note": "A proverb: kinship will crawl where it cannot walk. The play tests it and finds it false."
+    },
+    {
+     "ref": "Ev. 442–443",
+     "quote": "My condition is man's soul to kill;\nIf I save one, a thousand I do spill;",
+     "note": "Goods speaks with the frankness of an allegorical figure: wealth destroys far more souls than it saves."
+    },
+    {
+     "ref": "Ev. 486–488",
+     "quote": "Here I lie cold in the ground;\nThy sins hath me sore bound,\nThat I cannot stir.",
+     "note": "Good-Deeds lies on the ground, too weak to move, as Goods lay piled and locked away: both are pictures of a neglected spiritual state."
+    },
+    {
+     "ref": "Ev. 522–523",
+     "quote": "Everyman, I will go with thee, and be thy guide,\nIn thy most need to go by thy side.",
+     "note": "Knowledge's offer. Everyman's Library, founded in 1906, took these lines as its motto."
+    },
+    {
+     "ref": "Ev. 841–844",
+     "quote": "O all thing faileth, save God alone;\nBeauty, Strength, and Discretion;\nFor when Death bloweth his blast,\nThey all run from me full fast.",
+     "note": "Everyman's lament at the grave as his own faculties desert him."
+    },
+    {
+     "ref": "Ev. 880",
+     "quote": "Into thy hands, Lord, my soul I commend;",
+     "note": "Everyman dies with Christ's last words from the cross (Luke 23:46), the prayer recommended to the dying."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Doctor's Epilogue",
+   "lines": "902–921",
+   "section": 2,
+   "summary": [
+    "A Doctor, a learned man of the Church, enters to draw the moral. He tells young and old to forsake pride and to remember that Beauty, Five-Wits, Strength and Discretion all forsake Everyman at the last, and only his Good-Deeds remain.",
+    "He adds a warning: if the good deeds are small, there is no help, for after death no one can make amends. A soul whose reckoning is not clear will hear God's sentence of damnation; one whose account is whole and sound will be crowned in heaven. He prays that the Trinity may bring all the hearers to that place, body and soul together."
+   ],
+   "analysis": [
+    "The Doctor balances the Messenger. The prologue announced the lesson; the epilogue repeats it, so that the action is enclosed within explicit teaching. The Doctor is probably a doctor of theology, and his speech has the form of the close of a sermon, ending in a prayer for the congregation [[potter1975]].",
+    "The epilogue is sterner than the play's ending. The Angel has just welcomed Everyman, but the Doctor reminds the audience that Everyman's salvation was not automatic. The Latin sentence he quotes comes from Christ's account of the Last Judgement in Matthew 25, the same chapter that contains the parable of the talents, where servants must account for what was lent to them. V. A. Kolve argued that this parable lies behind the play's whole language of loans and reckoning [[kolve1972]].",
+    "The closing hope that the hearers may live 'body and soul together' recalls the resurrection of the body at the Last Judgement. The play has separated body from soul in the grave; the epilogue looks beyond death to their reunion."
+   ],
+   "key": [
+    {
+     "ref": "Ev. 906–907",
+     "quote": "They all at the last do Everyman forsake,\nSave his Good-Deeds, there doth he take.",
+     "note": "The moral in its shortest form, repeating the lesson of the grave scene."
+    },
+    {
+     "ref": "Ev. 912–913",
+     "quote": "For after death amends may no man make,\nFor then mercy and pity do him forsake.",
+     "note": "The urgency of the play: repentance is possible only in this life."
+    },
+    {
+     "ref": "Ev. 914–915",
+     "quote": "If his reckoning be not clear when he do come,\nGod will say--ite maledicti in ignem æternum.",
+     "note": "'Depart, ye cursed, into everlasting fire' (Matthew 25:41), the sentence on the damned at the Last Judgement."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Everyman",
+   "side": "Humankind",
+   "text": "The representative human being, summoned by Death when he least expects it. He is not a villain but a man who has lived for pleasure, friends and riches and forgotten God. His journey from bribery and panic through shame and penance to a calm death is the whole play. His name makes the point that the audience is watching itself."
+  },
+  {
+   "name": "God",
+   "side": "Heaven",
+   "text": "Speaks only at the opening, from his majesty. He complains that mankind has forgotten the Passion and lives in sin, and decides on a reckoning. In the course of the play he is also called Adonai, Messias and even, strangely, 'the highest Jupiter of all'."
+  },
+  {
+   "name": "Death",
+   "side": "Heaven",
+   "text": "God's 'mighty messenger', who carries a dart and spares no one, pope or emperor. He refuses Everyman's bribe and every plea for delay, but allows him to look for a companion. He is stern rather than grotesque, an officer of justice and not a figure of horror."
+  },
+  {
+   "name": "Messenger",
+   "side": "Frame",
+   "text": "Speaks the prologue, calling the audience to attention and announcing the moral of the play."
+  },
+  {
+   "name": "Fellowship",
+   "side": "Worldly companions",
+   "text": "Everyman's companion in sport and play. He makes the loudest promises of loyalty and breaks them first, offering instead to share in drinking, women and even murder. He is the friend of prosperity who vanishes in adversity."
+  },
+  {
+   "name": "Kindred",
+   "side": "Worldly companions",
+   "text": "Everyman's family. He promises to stand by him in wealth and woe, then refuses, offering instead to lend his maid, who loves feasts and dancing."
+  },
+  {
+   "name": "Cousin",
+   "side": "Worldly companions",
+   "text": "Another kinsman, whose excuse, a cramp in his toe, is the play's broadest joke. He also gives the most sober reason for refusing: he has an unready reckoning of his own."
+  },
+  {
+   "name": "Goods",
+   "side": "Worldly companions",
+   "text": "Everyman's wealth, lying in corners, chests and bags, unable to move. Goods explains that he was only lent, that love of him has blotted Everyman's account, and that he will deceive his next owner the same way. He laughs at Everyman's ruin."
+  },
+  {
+   "name": "Good-Deeds",
+   "side": "Spiritual helpers",
+   "text": "Everyman's good works, neglected all his life. She first lies on the ground, bound by his sins and too weak to stand, but rises when he does penance. She is the only companion who goes with him into the grave and speaks for him before God."
+  },
+  {
+   "name": "Knowledge",
+   "side": "Spiritual helpers",
+   "text": "The sister of Good-Deeds and Everyman's guide, who leads him to Confession, gives him the garment of contrition and sends him to the priest. She stays with him until death but not beyond. Critics usually take her as the knowledge of sin and of the means of salvation."
+  },
+  {
+   "name": "Confession",
+   "side": "Spiritual helpers",
+   "text": "A 'holy man' who dwells in the house of salvation. He gives Everyman the jewel of penance, a scourge, and promises the oil of forgiveness."
+  },
+  {
+   "name": "Beauty",
+   "side": "Personal faculties",
+   "text": "Everyman's physical beauty. She promises to stay until death's hour, but is the first to leave at the grave, horrified by the thought of smothering there."
+  },
+  {
+   "name": "Strength",
+   "side": "Personal faculties",
+   "text": "Everyman's bodily strength. Strength promises to stand by him even in battle, then leaves at the grave and calls him a fool to complain."
+  },
+  {
+   "name": "Discretion",
+   "side": "Personal faculties",
+   "text": "Everyman's prudence or judgement. He advises deliberation, but follows Strength away from the grave, saying that where Strength goes he always follows."
+  },
+  {
+   "name": "Five-Wits",
+   "side": "Personal faculties",
+   "text": "The five senses. Five-Wits delivers the long praise of the priesthood, and is the last of the faculties to leave Everyman at the grave."
+  },
+  {
+   "name": "Angel",
+   "side": "Heaven",
+   "text": "Receives Everyman's soul into heaven as the elect spouse of Jesus, declaring his reckoning 'crystal-clear'."
+  },
+  {
+   "name": "Doctor",
+   "side": "Frame",
+   "text": "A learned churchman who speaks the epilogue, restating the moral and warning that after death no amends can be made."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Death and the reckoning",
+   "text": [
+    "The play is a dramatised preparation for death. Death comes suddenly, when Everyman has him 'least in mind', and offers no respite. What Death demands is not only the end of life but an account of it: the play's key word is 'reckoning', and its central image is the account book that Everyman must bring before God.",
+    "The commercial language is deliberate. Everyman thinks like a man of business: he offers Death a thousand pounds, asks for time to put his books in order, and hopes that money will 'make all right that is wrong'. The play takes his language and turns it to spiritual use, so that the final verdict is given in accounting terms: 'Thy reckoning is crystal-clear' [[kolve1972]]."
+   ]
+  },
+  {
+   "title": "Transience and the loan of life",
+   "text": [
+    "Everything Everyman has is only lent to him. Death says so of his life and goods; Goods says so of himself; Everyman's own faculties, at the grave, show that even his body is borrowed. The theme belongs to a wider culture of death in the late Middle Ages, in which tombs, paintings and poems reminded the living of the corpse they would become [[binski1996]].",
+    "The play does not reject the world. Beauty, Strength and the senses are welcomed as companions and are even necessary to the journey; Everyman gives half his goods in alms. What the play condemns is trust in these things as if they were his own."
+   ]
+  },
+  {
+   "title": "True and false friendship",
+   "text": [
+    "The first half of the play is a study in false friendship. Fellowship, Kindred and Cousin speak fair and fail in need, illustrating Everyman's proverb that 'in prosperity men friends may find, / Which in adversity be full unkind'. Their scenes draw on a long medieval and classical tradition about the friend who is tested by misfortune [[conley1969]].",
+    "Good-Deeds is the true friend who 'bideth truly'. The play's last lesson is that she is the one companion Everyman never valued, which turns a social theme into a religious one."
+   ]
+  },
+  {
+   "title": "Penance and the sacraments",
+   "text": [
+    "Everyman is saved through the Church. His turning point is not a private conversion but a confession, followed by the satisfaction of the scourge, the garment of contrition, a testament of alms, the Eucharist and extreme unction. Each step is a recognised part of the late medieval sacrament of penance and the rites for the dying [[ryan1957]] [[duffy1992]].",
+    "At the same time, the play insists on inward feeling: contrition is a garment 'wet with your tears', and Everyman weeps 'for very sweetness of love' when Good-Deeds returns. The outward rite and the inward change belong together."
+   ]
+  },
+  {
+   "title": "Grace and works",
+   "text": [
+    "Good-Deeds alone goes with Everyman to judgement, so the play can seem to teach salvation by works. But Good-Deeds can do nothing until Everyman repents and receives grace through penance. The play thus represents the Catholic teaching that good works are made effective by grace, a position that Protestant readers of the sixteenth century and after would find problematic [[ryan1957]]."
+   ]
+  },
+  {
+   "title": "Everyman as audience",
+   "text": [
+    "The hero's name makes him a mirror of the spectators, and the play constantly turns outwards: the Messenger and the Doctor address the hearers directly, and Everyman himself tells them to 'take example' from his desertion. The theatrical experience is meant to become an act of self-examination."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "The journey and pilgrimage",
+   "text": "Death's summons is described as a pilgrimage and a long journey from which no one returns. The metaphor gives the play its movement, from the street where Death finds Everyman to the house of salvation and the grave."
+  },
+  {
+   "title": "Promise and betrayal",
+   "text": "One companion after another makes a promise and breaks it. Fellowship says that 'Promise is duty' just before he breaks his; Strength leaves although Everyman reminds him that a promise is a debt."
+  },
+  {
+   "title": "'I had wend so'",
+   "text": "Everyman's repeated reply to Death and Goods ('I had supposed so') shows a man discovering that what he took for granted was false. The phrase marks the stages of his disillusionment."
+  },
+  {
+   "title": "Tears and weeping",
+   "text": "Everyman weeps first for fear, then in penance, and finally 'for very sweetness of love'. The change in his tears marks his change of heart."
+  },
+  {
+   "title": "Forsaking",
+   "text": "The word 'forsake' and its forms recur from Fellowship's first promise to the Doctor's moral, giving the play a refrain that the audience hears in every scene of desertion."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The book of account",
+   "text": "Everyman's account of his life, blotted by sin so that he cannot read a letter of it, and cleared by penance. It turns the abstract idea of judgement into a visible object."
+  },
+  {
+   "title": "The scourge of penance",
+   "text": "The 'precious jewel' Confession gives Everyman. His self-scourging imitates Christ's scourging and stands for the satisfaction that completes penance."
+  },
+  {
+   "title": "The garment of contrition",
+   "text": "A garment of sorrow, wet with tears, which Everyman must wear to his journey's end. It represents the inner repentance without which outward penance is empty."
+  },
+  {
+   "title": "The grave",
+   "text": "The 'cave' into which Everyman must creep. It is where his faculties abandon him, and the point at which the play's earthly action ends and the Angel's voice begins."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Everyman or Elckerlijc: which came first?",
+   "text": [
+    "The English play and the Dutch Elckerlijc correspond so closely that one must be a translation of the other. In 1892 Henri Logeman printed the two together and argued for the priority of the Dutch. Some later scholars defended the English play's originality, but detailed comparisons of the rhymes and phrasing, notably by E. R. Tigg and Henry de Vocht, showed that Everyman often keeps Dutch rhyme-words or renders Dutch phrases literally, while the evidence pointing the other way is much weaker [[logeman1892]] [[tigg1941]] [[devocht1947]].",
+    "Arthur Cawley's edition accepted the Dutch priority, and the parallel-text edition of Clifford Davidson, Martin Walsh and Ton Broos treats the question as settled. The consequence for criticism is significant: the English play is a skilful adaptation rather than an original composition, and some of what readers admire in it, including its structure and much of its doctrine, comes from the Dutch [[cawley1961]] [[davidson2007]] [[conley1985]]."
+   ],
+   "cite": [
+    "logeman1892",
+    "tigg1941",
+    "devocht1947",
+    "cawley1961",
+    "davidson2007",
+    "conley1985"
+   ]
+  },
+  {
+   "title": "Was Everyman performed?",
+   "text": [
+    "No records of a performance before 1901 survive, and the early prints call the work a 'treatise' in the manner of a moral play. Some scholars have concluded that it circulated mainly as devotional reading. Others point to its clear theatrical design, its entrances, exits and properties, and to the tradition that Elckerlijc won a prize at a competition of Brabant rhetoricians, and assume that it was acted, perhaps by a small company, though we do not know where or by whom [[cawley1961]] [[lester1981]] [[potter1975]]."
+   ],
+   "cite": [
+    "cawley1961",
+    "lester1981",
+    "potter1975"
+   ]
+  },
+  {
+   "title": "Who is Knowledge?",
+   "text": [
+    "Knowledge guides Everyman to Confession, gives him the garment of contrition and leaves him only at death. She cannot represent human learning or knowledge in general. Critics have taken her as self-knowledge, as knowledge of sin, as acknowledgement (confession) of sin, or as knowledge of the sacraments and the means of grace. In Lawrence Ryan's account of the play's doctrine of penance she is closely tied to the sinner's recognition of his sin, the first step towards contrition and confession [[ryan1957]]."
+   ],
+   "cite": [
+    "ryan1957"
+   ]
+  },
+  {
+   "title": "Structure: repetition or design?",
+   "text": [
+    "Older critics sometimes found the play monotonous, a series of interviews with the same result. Thomas Van Laan argued instead for a careful structure in which a descending movement, ending in Everyman's shame, is followed by an ascending one, and in which the second desertion reverses the meaning of the first. W. A. Davenport's study of the early moral plays discusses its design alongside the other surviving moralities [[vanlaan1963]] [[davenport1982]]."
+   ],
+   "cite": [
+    "vanlaan1963",
+    "davenport1982"
+   ]
+  },
+  {
+   "title": "Orthodoxy, works and the Reformation",
+   "text": [
+    "Because Good-Deeds alone goes with Everyman to judgement, the play has sometimes been called a play of salvation by works. Ryan argued that it is strictly orthodox: Good-Deeds is powerless until penance, and grace comes through the sacraments of the Church. The play's praise of priests and its attack on simony have also been read in relation to the religious tensions of early Tudor England, though the passage on corrupt priests is conventional and need not imply dissent [[ryan1957]] [[duffy1992]]."
+   ],
+   "cite": [
+    "ryan1957",
+    "duffy1992"
+   ]
+  },
+  {
+   "title": "Friendship and the parable of the three friends",
+   "text": [
+    "The plot goes back to the parable of the man and his three friends told in Barlaam and Josaphat. John Conley showed how the play combines this parable with the medieval doctrine of friendship, so that the scenes of desertion are not only allegories of death but also studies in the proverbial theme of the false friend [[conley1969]]."
+   ],
+   "cite": [
+    "conley1969"
+   ]
+  },
+  {
+   "title": "The ars moriendi and the culture of death",
+   "text": [
+    "Everyman has often been read alongside the ars moriendi, the manuals that taught the dying how to resist despair and trust in God's mercy. The play shares their concerns but not their form: it has no deathbed temptations and no devils, and it concentrates on the account and the sacraments rather than on the last struggle. Scholars of the period have placed it within a wider culture of death that includes the dance of death and the cadaver tomb [[beaty1970]] [[binski1996]] [[duffy1992]]."
+   ],
+   "cite": [
+    "beaty1970",
+    "binski1996",
+    "duffy1992"
+   ]
+  },
+  {
+   "title": "The modern revival",
+   "text": [
+    "William Poel's Elizabethan Stage Society staged the play in the courtyard of the Charterhouse in London in July 1901, the first known performance in modern times. Poel's production, revived with Ben Greet and taken on tour through Britain and America, gave the title role to a woman, Edith Wynne Matthison, and made Everyman the best-known medieval English play. Hugo von Hofmannsthal's German adaptation, Jedermann (1911), has been performed at the Salzburg Festival almost every year since 1920. The revival has shaped how readers imagine medieval drama, and it raised the question of how a strongly Catholic play could be staged for modern secular audiences [[speaight1954]]."
+   ],
+   "cite": [
+    "speaight1954"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Ev. 52–53",
+   "quote": "I hoped well that Everyman\nIn my glory should make his mansion,",
+   "who": "God",
+   "explanation": "God's speech is not only angry but disappointed. He had meant every human being to dwell with him in glory; the play's severity rests on this frustrated love."
+  },
+  {
+   "ref": "Ev. 115–116",
+   "quote": "I am Death, that no man dreadeth.\nFor every man I rest and no man spareth;",
+   "who": "Death",
+   "explanation": "Death's introduction. 'That no man dreadeth' is usually glossed 'who fears no one': Death stands above every human power, as he goes on to say of popes, emperors and kings."
+  },
+  {
+   "ref": "Ev. 122–123",
+   "quote": "Yea, a thousand pound shalt thou have,\nAnd defer this matter till another day.",
+   "who": "Everyman",
+   "explanation": "Everyman's first response is to bribe Death. He still thinks in terms of the world, in which money settles everything."
+  },
+  {
+   "ref": "Ev. 309–310",
+   "quote": "It is said, in prosperity men friends may find,\nWhich in adversity be full unkind.",
+   "who": "Everyman",
+   "explanation": "After Fellowship's refusal Everyman turns to a proverb about false friends. Every scene of the first half proves it true."
+  },
+  {
+   "ref": "Ev. 430",
+   "quote": "For my love is contrary to the love everlasting.",
+   "who": "Goods",
+   "explanation": "Goods states the opposition at the heart of the play: love of wealth and love of God cannot be held together."
+  },
+  {
+   "ref": "Ev. 506–507",
+   "quote": "Our Lord Jesus, help me!\nFor one letter here I can not see.",
+   "who": "Everyman",
+   "explanation": "The book of Everyman's deeds is so blotted that he cannot read it. The moment marks his lowest point, before Knowledge leads him to Confession."
+  },
+  {
+   "ref": "Ev. 543–544",
+   "quote": "Lo, this is Confession; kneel down and ask mercy,\nFor he is in good conceit with God almighty.",
+   "who": "Knowledge",
+   "explanation": "The turning point of the play. From here Everyman's journey becomes an ascent through penance and the sacraments."
+  },
+  {
+   "ref": "Ev. 867–869",
+   "quote": "Take example, all ye that this do hear or see,\nHow they that I loved best do forsake me,\nExcept my Good-Deeds that bideth truly.",
+   "who": "Everyman",
+   "explanation": "Everyman turns to the audience and becomes a preacher of his own story, making plain that the play is an exemplum."
+  },
+  {
+   "ref": "Ev. 870",
+   "quote": "All earthly things is but vanity:",
+   "who": "Good-Deeds",
+   "explanation": "Good-Deeds echoes Ecclesiastes ('vanity of vanities, all is vanity') to sum up the lesson of the desertions."
+  },
+  {
+   "ref": "Ev. 899–901",
+   "quote": "Now shalt thou into the heavenly sphere,\nUnto the which all ye shall come\nThat liveth well before the day of doom.",
+   "who": "Angel",
+   "explanation": "The Angel's welcome turns from Everyman to the audience: 'all ye' who live well will follow him."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does the play begin with God's speech and not with Everyman?",
+   "hint": "Consider God's complaint, the idea of justice after rejected mercy, and how the opening shapes the audience's view of the hero."
+  },
+  {
+   "q": "What is the significance of the word 'reckoning' and the image of the account book?",
+   "hint": "Look at Everyman's offers to Death, Goods' claim to have blotted the account, and the Angel's final verdict."
+  },
+  {
+   "q": "How does the play make the desertions of Fellowship, Kindred and Goods both comic and serious?",
+   "hint": "Think of Fellowship's offers, Cousin's toe and Goods' laughter, and of what each refusal teaches."
+  },
+  {
+   "q": "Why are Beauty, Strength, Discretion and Five-Wits welcomed as companions if they will also leave?",
+   "hint": "Distinguish between external goods and the faculties of body and mind, and consider what they are needed for."
+  },
+  {
+   "q": "Who or what is Knowledge, and why does she leave Everyman only at the moment of death?",
+   "hint": "Consider her role in leading him to Confession, and the various interpretations critics have proposed."
+  },
+  {
+   "q": "Does the play teach salvation by good works?",
+   "hint": "Look at the state of Good-Deeds before and after penance, and at the role of the sacraments."
+  },
+  {
+   "q": "What is the function of the debate about priests while Everyman is offstage?",
+   "hint": "Compare Five-Wits' praise and Knowledge's criticism, and think about the religious situation of early Tudor England."
+  },
+  {
+   "q": "How does the play use the theme of transience and the idea that life is 'lent'?",
+   "hint": "Compare Death's and Goods' speeches with the prologue's flower in May and the grave scene."
+  },
+  {
+   "q": "How does the relationship between Everyman and Elckerlijc affect the way we should read the English play?",
+   "hint": "Consider what it means for originality, authorship and the play's place in English literature."
+  },
+  {
+   "q": "Why might Everyman have appealed to audiences in 1901 and after, when the morality play had long been forgotten?",
+   "hint": "Think about the universality of its subject, its simplicity of staging, and the changes made by Poel and by Hofmannsthal."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "beadle1994",
+   "text": "Beadle, Richard, ed. The Cambridge Companion to Medieval English Theatre. Cambridge: Cambridge University Press, 1994."
+  },
+  {
+   "id": "beaty1970",
+   "text": "Beaty, Nancy Lee. The Craft of Dying: A Study in the Literary Tradition of the Ars Moriendi in England. New Haven: Yale University Press, 1970."
+  },
+  {
+   "id": "bevington1975",
+   "text": "Bevington, David, ed. Medieval Drama. Boston: Houghton Mifflin, 1975."
+  },
+  {
+   "id": "binski1996",
+   "text": "Binski, Paul. Medieval Death: Ritual and Representation. London: British Museum Press, 1996."
+  },
+  {
+   "id": "cawley1961",
+   "text": "Cawley, A. C., ed. Everyman. Old and Middle English Texts. Manchester: Manchester University Press, 1961."
+  },
+  {
+   "id": "conley1969",
+   "text": "Conley, John. 'The Doctrine of Friendship in Everyman.' Speculum 44 (1969): 374–82."
+  },
+  {
+   "id": "conley1985",
+   "text": "Conley, John, et al., trans. The Mirror of Everyman's Salvation. Amsterdam: Rodopi, 1985."
+  },
+  {
+   "id": "davenport1982",
+   "text": "Davenport, W. A. Fifteenth-Century English Drama: The Early Moral Plays and Their Literary Relations. Cambridge: D. S. Brewer, 1982."
+  },
+  {
+   "id": "davidson2007",
+   "text": "Davidson, Clifford, Martin W. Walsh and Ton J. Broos, eds. Everyman and Its Dutch Original, Elckerlijc. TEAMS Middle English Texts. Kalamazoo: Medieval Institute Publications, 2007."
+  },
+  {
+   "id": "devocht1947",
+   "text": "De Vocht, Henry. Everyman: A Comparative Study of Texts and Sources. Materials for the Study of the Old English Drama. Louvain: Librairie Universitaire, 1947."
+  },
+  {
+   "id": "duffy1992",
+   "text": "Duffy, Eamon. The Stripping of the Altars: Traditional Religion in England, c.1400–c.1580. New Haven: Yale University Press, 1992."
+  },
+  {
+   "id": "greg1904",
+   "text": "Greg, W. W., ed. Everyman, Reprinted from the Edition by John Skot Preserved at Britwell Court. Materialien zur Kunde des älteren englischen Dramas. Louvain: Uystpruyst, 1904."
+  },
+  {
+   "id": "kolve1972",
+   "text": "Kolve, V. A. 'Everyman and the Parable of the Talents.' In Medieval English Drama: Essays Critical and Contextual, ed. Jerome Taylor and Alan H. Nelson. Chicago: University of Chicago Press, 1972."
+  },
+  {
+   "id": "lester1981",
+   "text": "Lester, G. A., ed. Three Late Medieval Morality Plays: Mankind, Everyman, Mundus et Infans. New Mermaids. London: Ernest Benn, 1981."
+  },
+  {
+   "id": "logeman1892",
+   "text": "Logeman, Henri, ed. Elckerlijk, a Fifteenth Century Dutch Morality, and Everyman, a Nearly Contemporary Translation. Ghent: Clemm, 1892."
+  },
+  {
+   "id": "mackenzie1914",
+   "text": "Mackenzie, W. Roy. The English Moralities from the Point of View of Allegory. Boston: Ginn, 1914."
+  },
+  {
+   "id": "potter1975",
+   "text": "Potter, Robert. The English Morality Play: Origins, History and Influence of a Dramatic Tradition. London: Routledge & Kegan Paul, 1975."
+  },
+  {
+   "id": "ryan1957",
+   "text": "Ryan, Lawrence V. 'Doctrine and Dramatic Structure in Everyman.' Speculum 32 (1957): 722–35."
+  },
+  {
+   "id": "speaight1954",
+   "text": "Speaight, Robert. William Poel and the Elizabethan Revival. London: Heinemann, 1954."
+  },
+  {
+   "id": "spivack1958",
+   "text": "Spivack, Bernard. Shakespeare and the Allegory of Evil: The History of a Metaphor in Relation to His Major Villains. New York: Columbia University Press, 1958."
+  },
+  {
+   "id": "tigg1941",
+   "text": "Tigg, E. R. 'Is Elckerlijc Prior to Everyman?' Neophilologus 26 (1941): 121–41."
+  },
+  {
+   "id": "vanlaan1963",
+   "text": "Van Laan, Thomas F. 'Everyman: A Structural Analysis.' PMLA 78 (1963): 465–75."
+  }
+ ]
+}
