@@ -55,7 +55,7 @@ def rclone_env():
     return env
 TOP_FILES = {"index.html", "404.html", "app.js", "styles.css", "robots.txt", "site.webmanifest", "sw.js"}
 TOP_EXT = (".png", ".webp", ".ico", ".jpg", ".svg")
-DIRS = ("data/", "poem/", "poet/", "work/", "guide/", "poets/", "eras/", ".well-known/", "privacy/", "terms/")
+DIRS = ("data/", "poem/", "poet/", "work/", "guide/", "blog/", "poets/", "eras/", ".well-known/", "privacy/", "terms/")
 
 
 def published(path):

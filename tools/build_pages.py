@@ -454,6 +454,27 @@ def more_by(poet, poems, n, author):
             f'<ul class="poem-links">{"".join(items)}</ul></section>')
 
 
+def poem_notes_html(slug, n):
+    """The editors' study notes on a poem (data/glosses/poems/<slug>/<n>.json), as a plain list
+    under the text, so that search engines and readers without scripts see them too."""
+    f = os.path.join(ROOT, "data", "glosses", "poems", slug, f"{n}.json")
+    if not os.path.exists(f):
+        return ""
+    try:
+        notes = json.load(io.open(f, encoding="utf-8"))
+    except Exception:
+        return ""
+    items = []
+    for x in notes:
+        src = "; ".join(esc(s.get("cite", "")) for s in (x.get("sources") or []) if s.get("cite"))
+        items.append(f'<li><p class="sn-head"><strong>{esc(x.get("title", ""))}</strong>'
+                     f'{" <span class=sn-ref>" + esc(x.get("ref", "")) + "</span>" if x.get("ref") else ""}</p>'
+                     f'<p>{esc(x.get("body") or x.get("short", ""))}</p>'
+                     f'{"<p class=sn-src>" + src + "</p>" if src else ""}</li>')
+    return ('<section class="static-notes"><p class="section-label">Study notes by the editors</p><ol class="sn-list">'
+            + "".join(items) + "</ol></section>")
+
+
 def poem_page(poet, poems, n, p):
     title = p["title"]
     author = p["author"]
@@ -483,6 +504,7 @@ def poem_page(poet, poems, n, p):
       {text_block(p["text"], p.get("translator"), lang_attr)}
       {book_source(poem_source(slug, p))}
       {('<div class="rule-ornament">✦ ✦ ✦</div><p class="section-label">Codex Note</p><p class="note-block">' + esc(note) + '</p>') if note else ''}
+      {poem_notes_html(slug, n)}
       {cite_block(author, f"/poem/{slug}/{n}/", title=title, translator=p.get("translator"))}
       <p class="read-in-archive"><a href="/#/poem/{slug}/{n}">Read this poem with the Codex →</a></p>
       <nav class="pn-row">{prev_link}{next_link}</nav>
