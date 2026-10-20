@@ -1,0 +1,899 @@
+{
+ "work": "tempest-shakespeare",
+ "title": "The Tempest",
+ "author": "William Shakespeare",
+ "quoteEdition": "tempest-shakespeare",
+ "unit": "Scene",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "William Shakespeare (1564–1616), actor, sharer and principal playwright of the King's Men"
+  },
+  {
+   "label": "Genre",
+   "value": "Romance (one of the 'late plays'), in blank verse, prose and song, with a court-style masque in Act IV"
+  },
+  {
+   "label": "Written",
+   "value": "About 1610–11; performed before King James at Whitehall on 1 November 1611, and again at court during the celebrations for Princess Elizabeth's marriage in 1612–13"
+  },
+  {
+   "label": "Early text",
+   "value": "Only one: the First Folio of 1623, where it is the first play, printed from a careful transcript by the scribe Ralph Crane"
+  },
+  {
+   "label": "Setting",
+   "value": "A ship at sea, then an unnamed island somewhere between Tunis and Naples; the action runs in a single afternoon"
+  },
+  {
+   "label": "Sources",
+   "value": "No single plot source. Accounts of the 1609 wreck of the Sea Venture on Bermuda (especially William Strachey's letter), Montaigne's essay 'Of Cannibals' in John Florio's translation (1603), Medea's speech in Ovid's Metamorphoses, Virgil's Aeneid, and the conventions of Italian improvised comedy"
+  },
+  {
+   "label": "Length",
+   "value": "Among the shortest of Shakespeare's plays: five acts and nine scenes, with an Epilogue"
+  },
+  {
+   "label": "Main characters",
+   "value": "Prospero, the deposed Duke of Milan; his daughter Miranda; the spirit Ariel; Caliban; Ferdinand, Prince of Naples; Alonso, King of Naples; Antonio, Prospero's usurping brother; Sebastian; Gonzalo; Stephano and Trinculo"
+  },
+  {
+   "label": "Key scenes",
+   "value": "The storm (1.1), Prospero's story and the first meeting with Caliban (1.2), the plot against Alonso (2.1), Ariel as a harpy (3.3), the masque and 'Our revels now are ended' (4.1), Prospero's renunciation of magic and the reconciliation (5.1), the Epilogue"
+  },
+  {
+   "label": "Quote text",
+   "value": "The modernised text of Project Gutenberg's Complete Works, based on the First Folio"
+  }
+ ],
+ "context": [
+  "The Tempest was written around 1610–11 for the King's Men, Shakespeare's company, which by then performed both at the open-air Globe and at the indoor Blackfriars theatre. The Revels Accounts record a performance before King James at Whitehall on 1 November 1611, and the play was given again at court in the winter of 1612–13, when the King's daughter Elizabeth married Frederick, the Elector Palatine. It is one of a group of late plays, with Pericles, Cymbeline and The Winter's Tale, that critics call 'romances': stories of loss and recovery across long stretches of time, of children separated from parents and found again, of sea journeys, wonders and reconciliations [[vaughan1999]] [[orgel1987]].",
+  "The play first appeared in print in the First Folio of 1623, where the editors placed it first. Their copy was a fair transcript by the professional scribe Ralph Crane, which explains the unusually full and literary stage directions ('they heavily vanish', 'with a quaint device, the banquet vanishes'). Because there is no other early text, editors have fewer variants to weigh than in Hamlet or King Lear, but there are still famous cruxes, such as whether Ferdinand calls Prospero 'a wise' or 'a wife' in Act IV and who speaks the 'Abhorred slave' speech in Act I, Scene 2 [[orgel1987]] [[lindley2002]].",
+  "Unusually, Shakespeare had no main source for the plot. But the play is soaked in the news of its moment. In 1609 the Sea Venture, flagship of a fleet carrying colonists to Virginia, was separated from the fleet in a hurricane and driven onto Bermuda; everyone was given up for lost, but all the passengers survived, wintered on the island, and reached Jamestown in 1610. Several accounts followed, among them Silvester Jourdain's pamphlet and, above all, William Strachey's long letter dated July 1610, which circulated in manuscript before it was printed in 1625. Verbal and situational parallels (St Elmo's fire on the masts, the crew's despair, the island's reputation as a place of devils) persuade most scholars that Shakespeare read it [[strachey1625]] [[bullough1975]] [[vaughan2008]].",
+  "Other reading is equally visible. Gonzalo's dream of an ideal commonwealth in Act II, Scene 1 closely follows John Florio's 1603 translation of Montaigne's essay 'Of Cannibals', which praises the peoples of Brazil for living without trade, letters, magistrates or property [[montaigne1603]]. Prospero's farewell to his magic in Act V adapts the incantation of the witch Medea in Ovid's Metamorphoses, Book 7, which Shakespeare knew in Latin and in Arthur Golding's translation. The courtiers' talk of 'widow Dido' and the harpy at the banquet recall Virgil's Aeneid, another story of exile, shipwreck and a voyage from Carthage to Italy; and the clowning of Stephano and Trinculo owes something to the scenarios of the Italian commedia dell'arte [[kermode1954]] [[orgel1987]].",
+  "The play is also exceptional in form. With The Comedy of Errors, it is the only Shakespeare play that keeps the neoclassical 'unities'. Apart from the opening scene on the ship, all the action happens on one island, and it takes about as long as a performance: Prospero tells Ariel in Act I that the work must be done between two o'clock ('at least two glasses' past noon) and six, and in Act V Ariel reports that it is 'the sixth hour'. Everything that happened before, the usurpation, the voyage, the twelve years on the island, is narrated rather than shown. The effect is of a dramatist who controls time as tightly as his magician controls the island, and that resemblance between Prospero and the playwright has shaped much of the play's reception [[vaughan1999]]."
+ ],
+ "plot": [
+  "Twelve years before the play begins, Prospero, Duke of Milan, gave the running of his state to his brother Antonio so that he could devote himself to his books. Antonio, helped by Alonso, King of Naples, seized the dukedom and set Prospero and his three-year-old daughter Miranda adrift in a rotten boat. They reached an island where Prospero, using his learning in magic, freed the spirit Ariel from the tree in which the witch Sycorax had imprisoned him, and took control of Sycorax's son Caliban, whom he first taught and then enslaved.",
+  "Now Alonso, his son Ferdinand, his brother Sebastian, Antonio and the old counsellor Gonzalo are sailing home from the marriage of Alonso's daughter in Tunis. Prospero, with Ariel's help, raises a storm, wrecks their ship without harming anyone, and scatters the survivors round the island. Ferdinand, believing his father drowned, is led by Ariel's music to Prospero's cell, where he and Miranda fall in love at first sight. Prospero pretends to treat him as a spy and sets him to carry logs, to test the love he has planned.",
+  "Elsewhere Alonso searches grief-stricken for his son, while Antonio persuades Sebastian to murder the sleeping King and take the crown of Naples; Ariel wakes the sleepers just in time. Caliban meets Alonso's jester Trinculo and his drunken butler Stephano, worships Stephano as a god for his wine, and plots with them to kill Prospero and seize the island. At a magical banquet Ariel, disguised as a harpy, accuses Alonso, Antonio and Sebastian of their crime against Prospero and drives them to distraction. Prospero blesses the betrothal of Ferdinand and Miranda with a masque of goddesses, but breaks it off when he remembers Caliban's plot, which he then defeats by setting spirit-hounds on the conspirators.",
+  "In the last act Prospero, moved by Ariel's description of the suffering prisoners, chooses forgiveness over vengeance. He renounces his magic, appears to the courtiers in his own person as Duke of Milan, forgives his enemies, recovers his dukedom, and reveals Ferdinand and Miranda playing chess. Alonso repents, the ship is found unharmed, Caliban is sent to tidy the cell, and Prospero promises to free Ariel once he has given them calm seas home. Alone on stage in the Epilogue, Prospero, now without his charms, asks the audience to release him with their applause."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Act I, Scene 1: The storm",
+   "lines": "Act I, Scene 1 (the whole scene)",
+   "section": 1,
+   "summary": [
+    "On a ship caught in a violent storm, the Master and the Boatswain struggle to keep the vessel off the rocks. The King of Naples and his courtiers come on deck and get in the way. The Boatswain orders them back to their cabins: the waves, he says, do not care for the name of king. Sebastian and Antonio curse him; the old counsellor Gonzalo jokes that the man looks born to be hanged, not drowned.",
+    "The mariners cry that all is lost and go to prayers. Amid offstage shouts of 'We split, we split!' Antonio and Sebastian go to sink with the King, and Gonzalo wishes he could trade a thousand furlongs of sea for an acre of barren ground."
+   ],
+   "analysis": [
+    "The play opens with noise and confusion, and with a political question. At sea, the skilled worker commands and the King is a passenger; titles mean nothing to the 'roarers'. The scene shows the characters' natures quickly: Gonzalo's patient humour, the coarse abuse of Antonio and Sebastian. It also raises the question the whole play will answer about authority: who can really 'command these elements to silence'? The audience does not yet know that someone can.",
+    "Staging the storm was itself a feat. At the indoor Blackfriars, thunder and the cries of sailors would have filled a small, candlelit space, and the scene's realism makes the next scene's revelation, that the wreck was an illusion, all the more surprising [[gurr1989]]."
+   ],
+   "key": [
+    {
+     "ref": "Tempest 1.1",
+     "quote": "What cares these roarers for the name of king?",
+     "note": "The Boatswain's retort: the waves (the 'roarers') ignore rank. The line opens the play's inquiry into what makes authority real."
+    },
+    {
+     "ref": "Tempest 1.1",
+     "quote": "if you can\ncommand these elements to silence, and work the peace of the present,\nwe will not hand a rope more.",
+     "note": "A challenge to Gonzalo that Prospero will meet: the next scene shows a man who can command the elements."
+    },
+    {
+     "ref": "Tempest 1.1",
+     "quote": "Let’s all sink wi’ th’ King.",
+     "note": "Antonio's words sound loyal, but the next act shows him plotting the King's death."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Act I, Scene 2: Prospero's story, Ariel, Caliban and Ferdinand",
+   "lines": "Act I, Scene 2 (the whole scene)",
+   "section": 2,
+   "summary": [
+    "On the island Miranda begs her father to calm the storm if his art has raised it. Prospero assures her that no one has been harmed and, laying aside his magic mantle, tells her for the first time who they are. He was Duke of Milan; absorbed in his 'secret studies', he let his brother Antonio govern, and Antonio, allied with Alonso of Naples, usurped him. Prospero and the three-year-old Miranda were put to sea in a rotten boat, and survived thanks to the food, clothes and books that Gonzalo had secretly supplied. Now fortune has brought his enemies near, and he must act. He charms Miranda to sleep.",
+    "Ariel reports how he performed the storm, burning as fire all over the ship; all are safe and scattered about the island, and the ship is hidden in harbour. When Ariel asks for the freedom he was promised, Prospero angrily reminds him how the witch Sycorax imprisoned him in a cloven pine for twelve years until Prospero freed him, and threatens to peg him in an oak. Ariel submits, and Prospero promises to free him in two days. Prospero and Miranda then visit Caliban, Sycorax's son. Caliban claims the island as his inheritance and recalls how he loved Prospero at first and showed him its springs and fertile places; Prospero answers that Caliban tried to rape Miranda, and they exchange curses and threats.",
+    "Ariel, invisible, leads Ferdinand onstage with songs, including 'Full fathom five', which tells him his father lies drowned. Miranda and Ferdinand fall in love at once. Prospero, pleased in asides, pretends to suspect Ferdinand as a spy, freezes his drawn sword with a charm, and leads him off as a prisoner while Miranda pleads for him."
+   ],
+   "analysis": [
+    "This long scene is the play's foundation: it gives the back-story the unity of time requires, and introduces the three relationships, father and daughter, master and spirit, master and slave, on which everything turns. Prospero's repeated 'Dost thou attend me?' reveals his anxiety as a storyteller, and his account of the usurpation admits his own neglect of 'worldly ends'. His memory reaches into 'the dark backward and abysm of time' (1.2.50), but Miranda's memories of women who tended her are faint, and the story the audience hears is entirely his [[orgel1984]].",
+    "Ariel and Caliban are paired and contrasted. Both serve Prospero, both were connected to Sycorax, and both want freedom; but Ariel is a spirit of air and fire, while Caliban is 'earth'. Caliban's speech claiming the island, 'This island’s mine, by Sycorax my mother', and his answer that he has learned language only to curse (1.2.363–5) have made him the centre of modern debate. Critics have read his complaint as the voice of the colonised and Prospero's charge of attempted rape as a justification of rule; others insist that the play does not take one side [[greenblatt1990]] [[brown1985]] [[skura1989]]. The Folio gives the harsh 'Abhorred slave' speech to Miranda; editors from the eighteenth century onwards often gave it to Prospero, as this text does, though most recent editions restore it to Miranda [[vaughan1999]].",
+    "Ariel's songs bring the dangerous realism of the storm into a world of enchantment. 'Full fathom five' imagines death as transformation, bones turned to coral, eyes to pearls, and states the play's hope that loss can become 'something rich and strange'. Prospero's sudden harshness to Ferdinand is explained in an aside: 'too light winning / Make the prize light'."
+   ],
+   "key": [
+    {
+     "ref": "Tempest 1.2.50",
+     "quote": "In the dark backward and abysm of time?",
+     "note": "Prospero asks what Miranda remembers. The phrase makes the past a deep, dark gulf from which he alone can recover the story."
+    },
+    {
+     "ref": "Tempest 1.2",
+     "quote": "Hell is empty,\nAnd all the devils are here.",
+     "note": "Ferdinand's cry as he leaps overboard, reported by Ariel: in the storm the ship seemed a hell."
+    },
+    {
+     "ref": "Tempest 1.2",
+     "quote": "This island’s mine, by Sycorax my mother,\nWhich thou tak’st from me.",
+     "note": "Caliban's claim of inheritance, the starting point of colonial readings of the play."
+    },
+    {
+     "ref": "Tempest 1.2.363–5",
+     "quote": "You taught me language, and my profit on ’t\nIs, I know how to curse.",
+     "note": "Caliban turns the master's gift against him. Greenblatt took this exchange as the title of his study of linguistic colonialism."
+    },
+    {
+     "ref": "Tempest 1.2.397",
+     "quote": "Full fathom five thy father lies.\nOf his bones are coral made.\nThose are pearls that were his eyes.",
+     "note": "Ariel's song to Ferdinand: a false report of death that also promises transformation."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act II, Scene 1: Gonzalo's commonwealth and the plot against Alonso",
+   "lines": "Act II, Scene 1 (the whole scene)",
+   "section": 3,
+   "summary": [
+    "Elsewhere on the island, Gonzalo tries to comfort Alonso, who believes Ferdinand drowned, while Sebastian and Antonio mock every word the old man says. Gonzalo marvels that their clothes are as fresh as when they wore them at the wedding of Alonso's daughter Claribel to the King of Tunis; Sebastian bluntly blames Alonso for marrying her to an African and so causing the voyage. Gonzalo imagines how he would govern the island: a commonwealth without trade, magistrates, letters, property, work or weapons, where nature would provide everything. The two cynics point out that he would still be king of it.",
+    "Ariel's music sends everyone to sleep except Antonio and Sebastian. Antonio, step by step, persuades Sebastian that Ferdinand is dead, that Claribel is too far away to inherit, and that Sebastian should kill his brother and take the crown, as Antonio once took Milan. As they draw their swords, Ariel wakes Gonzalo with a song. The conspirators explain their drawn weapons with a story of bellowing lions, and the party moves on to search for Ferdinand."
+   ],
+   "analysis": [
+    "Gonzalo's commonwealth is lifted, often word for word, from Florio's translation of Montaigne's 'Of Cannibals', where the absence of 'traffic', 'magistrate' and 'letters' describes the peoples of Brazil [[montaigne1603]]. Montaigne used the New World to criticise Europe; Shakespeare puts the idea in the mouth of a kind but muddled old man and lets cynics expose its contradiction ('The latter end of his commonwealth forgets the beginning'). Whether the play endorses the dream, laughs at it, or tests it against the realities of power is one of its central questions [[kermode1954]] [[hulme1986]].",
+    "The temptation of Sebastian repeats Prospero's story in the present: a younger brother is urged to seize power from an elder. Antonio's language is a masterpiece of insinuation, full of images of sleep and waking, ebbing and flowing; his line 'what’s past is prologue' (2.1.253) treats history as a mere preface to ambition. His denial of conscience ('I feel not / This deity in my bosom') marks him as the one character the play's forgiveness cannot reach. The Claribel story, a European princess married to a North African king, places the play in the Mediterranean as well as the Atlantic world [[kastan1999]]."
+   ],
+   "key": [
+    {
+     "ref": "Tempest 2.1",
+     "quote": "Letters should not be known; riches, poverty,\nAnd use of service, none; contract, succession,",
+     "note": "Gonzalo's ideal state, adapted from Florio's Montaigne, abolishes the institutions on which Prospero's own power rests."
+    },
+    {
+     "ref": "Tempest 2.1",
+     "quote": "The latter end of his commonwealth forgets the beginning.",
+     "note": "Antonio catches the contradiction: Gonzalo would rule a state with 'no sovereignty'."
+    },
+    {
+     "ref": "Tempest 2.1.253",
+     "quote": "Whereof what’s past is prologue, what to come\nIn yours and my discharge.",
+     "note": "Antonio presents murder as the next act of a play; the theatrical metaphor runs throughout The Tempest."
+    },
+    {
+     "ref": "Tempest 2.1",
+     "quote": "Ay, sir; where lies that? If ’twere a kibe,\n’Twould put me to my slipper: but I feel not\nThis deity in my bosom:",
+     "note": "Antonio dismisses conscience as less troublesome than a chilblain on the heel."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act II, Scene 2: Caliban, Trinculo and Stephano",
+   "lines": "Act II, Scene 2 (the whole scene)",
+   "section": 4,
+   "summary": [
+    "Caliban, carrying wood, curses Prospero and describes the spirits that pinch, bite and hiss at him. Thinking the approaching Trinculo is another of them, he falls flat under his cloak. Trinculo, a jester, wonders whether this strange creature is a man or a fish, and reflects that in England it could be exhibited for money. When thunder returns he creeps under the cloak for shelter.",
+    "Stephano, Alonso's butler, enters drunk and singing, having floated ashore on a cask of wine. He finds what looks like a four-legged monster with two voices, gives it wine, and pulls Trinculo out. Caliban, overwhelmed by the 'celestial liquor', takes Stephano for a god dropped from the moon, swears to be his subject, offers to show him the island's riches, and sings drunkenly of his freedom from Prospero."
+   ],
+   "analysis": [
+    "This comic scene parodies the play's serious action. Caliban, who once showed Prospero 'all the qualities o’ th’ isle', now offers the same knowledge to a drunken butler and exchanges one master for another while singing 'Freedom, high-day!'. The joke is bitter: his idea of liberty is a new servitude. Trinculo's remark that the English 'will lay out ten to see a dead Indian' alludes to the Native Americans brought to England and displayed in the period, a reminder of the colonial world just offstage [[vaughan1991]].",
+    "The scene also shows the instability of Caliban's identity. He is called fish, monster, moon-calf and islander, but the strangers never agree what he is, and the play's own text gives no consistent description of his appearance. His verse, meanwhile, is precise and full of the island's natural detail, while the Europeans speak prose [[vaughan1991]]."
+   ],
+   "key": [
+    {
+     "ref": "Tempest 2.2",
+     "quote": "When they will not give a doit to relieve a lame\nbeggar, they will lay out ten to see a dead Indian.",
+     "note": "Trinculo's satire on English curiosity points to the real exhibition of Native Americans in Jacobean England."
+    },
+    {
+     "ref": "Tempest 2.2",
+     "quote": "That’s a brave god, and bears celestial liquor.\nI will kneel to him.",
+     "note": "Caliban's first sight of wine. 'Brave', meaning splendid, will echo in Miranda's 'brave new world'."
+    },
+    {
+     "ref": "Tempest 2.2",
+     "quote": "I prithee, let me bring thee where crabs grow;\nAnd I with my long nails will dig thee pig-nuts;",
+     "note": "Caliban's intimate knowledge of the island, offered now to a new master."
+    },
+    {
+     "ref": "Tempest 2.2",
+     "quote": "’Ban ’Ban, Cacaliban,\nHas a new master—Get a new man.",
+     "note": "A drunken song of liberation that is really a change of masters."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act III, Scene 1: Ferdinand and Miranda",
+   "lines": "Act III, Scene 1 (the whole scene)",
+   "section": 5,
+   "summary": [
+    "Ferdinand carries logs, the task Prospero has imposed, and finds the labour sweet because he serves Miranda. She comes to him, begs him to rest, and offers to carry the logs herself, believing her father is busy at his studies; in fact he watches them unseen.",
+    "Ferdinand asks her name, which she tells him against her father's command. They declare their love, and Miranda, putting aside 'bashful cunning', offers herself frankly: 'I am your wife if you will marry me'. They pledge their hands. Prospero, alone, rejoices and returns to his book."
+   ],
+   "analysis": [
+    "The scene answers Caliban's: Ferdinand also carries logs for Prospero, but he does so willingly, and his 'wooden slavery' is a test of love, not a punishment. The parallel invites us to ask what separates the prince's service from the slave's. The name 'Miranda' (Latin, 'she who is to be wondered at') is played on in Ferdinand's 'Admir’d Miranda'.",
+    "Miranda is often thought of as passive, but here she breaks her father's command, proposes marriage herself, and speaks with a directness that the courtly Ferdinand lacks. Yet Prospero's asides remind us that the meeting he watches is the one he designed, and some critics see the courtship as his dynastic plan: through Miranda's marriage to the heir of Naples, Milan will be joined to the kingdom that once took its independence [[orgel1984]] [[kastan1999]]."
+   ],
+   "key": [
+    {
+     "ref": "Tempest 3.1",
+     "quote": "some kinds of baseness\nAre nobly undergone; and most poor matters\nPoint to rich ends.",
+     "note": "Ferdinand's view of his task: humble work becomes noble when done for love."
+    },
+    {
+     "ref": "Tempest 3.1",
+     "quote": "Admir’d Miranda!\nIndeed, the top of admiration;",
+     "note": "A pun on her name, from Latin mirari, to wonder at."
+    },
+    {
+     "ref": "Tempest 3.1",
+     "quote": "I am your wife if you will marry me;\nIf not, I’ll die your maid:",
+     "note": "Miranda's frank proposal, prompted by 'plain and holy innocence'."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act III, Scene 2: The conspiracy against Prospero",
+   "lines": "Act III, Scene 2 (the whole scene)",
+   "section": 6,
+   "summary": [
+    "Stephano, Trinculo and Caliban, now drunk, argue about rank. Caliban repeats his suit: Prospero is a tyrant who cheated him of the island by sorcery. The invisible Ariel interrupts with 'Thou liest', in Trinculo's voice, and Stephano beats Trinculo for it. Caliban explains how to kill Prospero during his afternoon sleep, stressing that they must first seize and burn his books, and promises Stephano Miranda as his queen.",
+    "Stephano agrees to be king of the island. They try to sing a round, and Ariel plays the tune on a pipe and drum. Stephano and Trinculo are frightened, but Caliban reassures them in a speech about the island's music and his dreams. They follow the sound offstage."
+   ],
+   "analysis": [
+    "The plot parodies both usurpations, Antonio's in Milan and Sebastian's planned one in Naples: a butler means to make himself king, with a jester and a slave as 'viceroys'. Caliban understands the source of Prospero's power better than anyone: 'Burn but his books'. Without them, he says, Prospero is 'but a sot, as I am'. The idea that power rests on learning, and that it can be taken away, links the comic plot to the play's serious concerns.",
+    "At the centre of the scene comes Caliban's 'Be not afeard' (3.2.135–43), one of the most beautiful speeches in the play. The creature called a monster by everyone speaks with the most delicate sensibility about the island's 'sounds, and sweet airs' and his longing for dreams of riches. The speech has been central to readings that refuse to see Caliban only as a brute, and to adaptations that make him the poet of the island [[vaughan1991]] [[lamming1960]]."
+   ],
+   "key": [
+    {
+     "ref": "Tempest 3.2",
+     "quote": "Remember\nFirst to possess his books; for without them\nHe’s but a sot, as I am,",
+     "note": "Caliban locates Prospero's power in his books, which Prospero himself will give up in Act V."
+    },
+    {
+     "ref": "Tempest 3.2.135–6",
+     "quote": "Be not afeard. The isle is full of noises,\nSounds, and sweet airs, that give delight, and hurt not.",
+     "note": "Caliban's lyrical answer to fear shows a sensibility that the other characters deny him."
+    },
+    {
+     "ref": "Tempest 3.2",
+     "quote": "The clouds methought would open and show riches\nReady to drop upon me; that, when I wak’d,\nI cried to dream again.",
+     "note": "A dream of wealth and longing that ends in tears on waking."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act III, Scene 3: The banquet and the harpy",
+   "lines": "Act III, Scene 3 (the whole scene)",
+   "section": 7,
+   "summary": [
+    "Alonso, exhausted, gives up hope of finding his son. Antonio and Sebastian agree in asides to kill him that night. To strange music, spirit 'Shapes' bring in a banquet, dance with gestures of welcome and invite the King to eat, while Prospero watches unseen. The courtiers marvel; Gonzalo praises the gentle manners of these 'islanders', and Sebastian says he will now believe in unicorns and the phoenix.",
+    "As they move to eat, thunder sounds and Ariel appears as a harpy; the banquet vanishes. Ariel tells Alonso, Antonio and Sebastian that they are 'three men of sin', that the sea has taken Ferdinand as punishment for their crime against Prospero, and that only 'heart-sorrow' and a clear life can save them. Prospero praises Ariel's performance. Alonso, hearing Prospero's name in the thunder, rushes off to drown himself; Antonio and Sebastian rush out to fight the spirits, and Gonzalo sends the younger lords after them."
+   ],
+   "analysis": [
+    "The harpies of Virgil's Aeneid (Book 3) foul the Trojans' feast and prophesy hunger; Shakespeare's harpy is a dramatised judgement, staged by Prospero with spectacular machinery. Ariel's speech is the moral centre of the revenge plot: it names the crime, interprets the storm as divine justice, and sets out the condition of mercy, 'heart-sorrow, / And a clear life ensuing'. Only Alonso truly responds; his guilt hears the sea and wind speak Prospero's name.",
+    "Gonzalo's praise of the gentle 'islanders', 'more gentle, kind, than of / Our human generation', again echoes Montaigne's argument that so-called savages may be better than civilised Europeans, and Prospero's aside agrees that some of the courtiers 'Are worse than devils'. Travellers' tales of men 'whose heads stood in their breasts' remind us of how the period imagined the newly discovered world [[montaigne1603]] [[hulme1986]]."
+   ],
+   "key": [
+    {
+     "ref": "Tempest 3.3",
+     "quote": "Their manners are more gentle, kind, than of\nOur human generation you shall find\nMany, nay, almost any.",
+     "note": "Gonzalo finds the spirit 'islanders' kinder than Europeans, as Montaigne found the Brazilians."
+    },
+    {
+     "ref": "Tempest 3.3",
+     "quote": "You are three men of sin,",
+     "note": "Ariel's charge to Alonso, Antonio and Sebastian, spoken in the guise of a harpy."
+    },
+    {
+     "ref": "Tempest 3.3",
+     "quote": "is nothing but heart-sorrow,\nAnd a clear life ensuing.",
+     "note": "The condition of mercy: repentance and a reformed life."
+    },
+    {
+     "ref": "Tempest 3.3",
+     "quote": "The name of Prosper: it did bass my trespass.",
+     "note": "Alonso hears his guilt sounded in the thunder, like the bass in music."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act IV, Scene 1: The masque and 'Our revels now are ended'",
+   "lines": "Act IV, Scene 1 (the whole scene)",
+   "section": 8,
+   "summary": [
+    "Prospero gives Miranda to Ferdinand, explaining that his harshness was a test, and warns him sternly not to break her 'virgin knot' before the marriage rites. He calls on Ariel's spirits to present a masque for the couple. Iris, messenger of Juno, summons Ceres, goddess of harvest; Ceres agrees to come only when she hears that Venus and Cupid, whose 'wanton charm' failed, are absent. Juno arrives, and the goddesses sing blessings of fertility and plenty. Nymphs and reapers begin a dance.",
+    "Suddenly Prospero remembers Caliban's plot and stops the masque; the spirits 'heavily vanish'. Seeing Ferdinand alarmed, he speaks of how the vision, and the world itself, will dissolve, then confesses that his mind is troubled. Ariel describes how he led the drunken conspirators through briars into a stinking pool. Prospero has fine clothes hung on a line as bait; Stephano and Trinculo, ignoring Caliban's pleas to do the murder first, fight over the garments, and spirits in the shape of hounds hunt all three away. Prospero declares that his enemies are now at his mercy."
+   ],
+   "analysis": [
+    "The masque imitates the court entertainments that Ben Jonson and Inigo Jones were creating for James I: allegorical goddesses, music, dance and spectacle celebrating a marriage. Its subject, chastity rewarded by fertility, matches Prospero's anxious warnings to Ferdinand. The idea that it was added for Princess Elizabeth's wedding in 1613 has little evidence to support it. In a court masque disorder is usually shown and banished in an 'antimasque' before the main show; here the threat of Caliban breaks in afterwards and ends the celebration, a reversal critics have read as the return of what the vision tried to exclude [[barker1985]] [[lindley2002]].",
+    "'Our revels now are ended' (4.1.148–58) is Prospero's most famous speech. It moves from the spirits who played the masque to the 'cloud-capp’d towers' and 'the great globe itself', which may glance at the Globe theatre, and finally to human life, 'rounded with a sleep'. The speech is often quoted as a calm philosophy, but it is spoken by a man 'vex’d' and 'troubled', whose anger at Caliban has shaken him. Miranda has never seen him 'touch’d with anger so distemper’d'. The tension between that serene vision and his rage at the 'born devil' prepares for his choice in Act V [[vaughan1999]].",
+    "Prospero's verdict on Caliban, 'A devil, a born devil, on whose nature / Nurture can never stick', sets out the play's debate between nature and nurture. His contempt is answered by Caliban's sharp sense in the following episode, where he alone ignores the 'trash' of stolen clothes."
+   ],
+   "key": [
+    {
+     "ref": "Tempest 4.1.148–50",
+     "quote": "Our revels now are ended. These our actors,\nAs I foretold you, were all spirits and\nAre melted into air, into thin air:",
+     "note": "The masque's end becomes an image of the end of all shows, and of the world."
+    },
+    {
+     "ref": "Tempest 4.1.156–8",
+     "quote": "We are such stuff\nAs dreams are made on, and our little life\nIs rounded with a sleep.",
+     "note": "Human life is surrounded by sleep as the island is by sea; 'on' means 'of'."
+    },
+    {
+     "ref": "Tempest 4.1",
+     "quote": "A devil, a born devil, on whose nature\nNurture can never stick;",
+     "note": "Prospero's despairing judgement on Caliban sets out the play's contrast of nature and nurture."
+    },
+    {
+     "ref": "Tempest 4.1",
+     "quote": "Never till this day\nSaw I him touch’d with anger so distemper’d.",
+     "note": "Miranda's observation reminds us that the speech that follows comes from a disturbed mind."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act V, Scene 1: Forgiveness, renunciation and restoration",
+   "lines": "Act V, Scene 1 (the whole scene)",
+   "section": 9,
+   "summary": [
+    "At six o'clock, in his magic robes, Prospero hears from Ariel that the King and his party are held captive and distracted, and that Gonzalo weeps. Ariel says that if Prospero saw them his feelings would turn tender. Prospero, moved, declares that 'the rarer action is / In virtue than in vengeance' and sends Ariel to release them. Alone, he invokes the spirits of the island, recalls the powers of his art, and vows to give it up: he will break his staff and drown his book.",
+    "The courtiers enter his charmed circle. Prospero, dressed now as Duke of Milan, reveals himself, embraces Alonso and Gonzalo, privately warns Sebastian and Antonio that he knows of their plot, and forgives Antonio while demanding his dukedom back. Alonso restores it and asks pardon. Prospero reveals Ferdinand and Miranda playing chess; father and son are reunited, and Miranda, seeing the courtiers, exclaims 'O brave new world'. The Boatswain reports the ship miraculously intact. Ariel drives in Caliban, Stephano and Trinculo in their stolen clothes; Prospero acknowledges Caliban as 'mine', and Caliban vows to 'seek for grace'. Prospero invites the company to his cell for the night, promises them calm seas to Naples, and gives Ariel his freedom."
+   ],
+   "analysis": [
+    "The turning point is brief and comes from an unexpected source: the spirit, who is not human, teaches the man compassion. Prospero's choice of reason over fury is conditional, 'they being penitent', yet Antonio never speaks a word of repentance, and his silence leaves the reconciliation open. 'Ye elves of hills' (5.1.33–57) closely adapts Medea's invocation in Ovid. That Prospero borrows a witch's words at the moment of renouncing magic has made critics ask whether his 'rough magic' was ever as innocent as the white magic of a learned 'magus' [[kermode1954]] [[yates1975]] [[orgel1987]].",
+    "The final scene follows the pattern of romance: what was thought lost is found, the dead return, and the sea that seemed cruel was 'merciful'. Miranda's 'O brave new world' (5.1.183–4) is full of wonder, but Prospero's dry 'Tis new to thee' reminds us that the 'goodly creatures' include two would-be murderers. Gonzalo's speech tells the story as providential comedy: 'all of us ourselves, / When no man was his own'.",
+    "Prospero's 'this thing of darkness I / Acknowledge mine' (5.1.275–6) is among the most debated lines in the play. It can mean simply that Caliban is his servant, or it can be heard as an admission of responsibility, even of kinship with the darkness in himself. The play does not say what becomes of Caliban, or of the island, when the Europeans sail away [[brown1985]] [[vaughan1991]]."
+   ],
+   "key": [
+    {
+     "ref": "Tempest 5.1.27–8",
+     "quote": "the rarer action is\nIn virtue than in vengeance:",
+     "note": "The play's moral climax: Prospero turns from revenge to forgiveness."
+    },
+    {
+     "ref": "Tempest 5.1",
+     "quote": "But this rough magic\nI here abjure;",
+     "note": "Prospero renounces his art at the height of his power."
+    },
+    {
+     "ref": "Tempest 5.1",
+     "quote": "I’ll break my staff,\nBury it certain fathoms in the earth,\nAnd deeper than did ever plummet sound\nI’ll drown my book.",
+     "note": "The vow recalls Alonso's wish to lie in the sea 'deeper than e’er plummet sounded'."
+    },
+    {
+     "ref": "Tempest 5.1.183–4",
+     "quote": "O brave new world\nThat has such people in ’t!",
+     "note": "Miranda's wonder at the court party, answered by her father's 'Tis new to thee'."
+    },
+    {
+     "ref": "Tempest 5.1.275–6",
+     "quote": "this thing of darkness I\nAcknowledge mine.",
+     "note": "Prospero's ambiguous acknowledgement of Caliban."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Epilogue: Prospero asks for release",
+   "lines": "Epilogue (the whole speech, 20 lines)",
+   "section": 10,
+   "summary": [
+    "Prospero, alone on stage, tells the audience that his charms are overthrown and that he has only his own weak strength. He has his dukedom and has pardoned the deceiver; now he is confined on the bare island by the audience's 'spell'. He asks them to release him with their applause ('the help of your good hands') and to fill his sails with their kind breath. Without spirits and art, he says, he will end in despair unless he is relieved by prayer, and he asks that, as they hope for pardon for their own sins, they set him free."
+   ],
+   "analysis": [
+    "Epilogues asking for applause were common, but this one reverses the play's power relations: the magician who controlled everyone is now the prisoner, and the audience holds the power to free him. The rhymed tetrameter couplets mark the change from the blank verse of the play. The closing lines, with their language of prayer, mercy and indulgence, extend the play's theme of forgiveness to the audience, which must now forgive the actor as Prospero forgave his enemies.",
+    "Since the nineteenth century, when the poet Thomas Campbell and then Edward Dowden popularised the idea, Prospero's renunciation and this epilogue have often been read as Shakespeare's own farewell to the stage, the magician-dramatist breaking his staff [[dowden1875]]. The reading is attractive but must be treated with caution: Shakespeare went on to collaborate with John Fletcher on Henry VIII, The Two Noble Kinsmen and the lost Cardenio, and nothing outside the play suggests that he saw it as a farewell [[orgel1987]] [[vaughan1999]]."
+   ],
+   "key": [
+    {
+     "ref": "Tempest Epilogue",
+     "quote": "Now my charms are all o’erthrown,\nAnd what strength I have’s mine own,\nWhich is most faint.",
+     "note": "The magician, now an actor without his art, stands powerless before the audience."
+    },
+    {
+     "ref": "Tempest Epilogue",
+     "quote": "But release me from my bands\nWith the help of your good hands.",
+     "note": "Applause, the clapping of hands, will break the 'spell' and free him."
+    },
+    {
+     "ref": "Tempest Epilogue",
+     "quote": "As you from crimes would pardon’d be,\nLet your indulgence set me free.",
+     "note": "The last couplet makes forgiveness mutual: the audience must pardon as it hopes to be pardoned."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Prospero",
+   "side": "Milan / the island",
+   "text": "The rightful Duke of Milan, deposed twelve years before by his brother and now master of the island through his books and magic. He is a loving but controlling father, a stern and sometimes harsh master to Ariel and Caliban, and the author of nearly everything that happens in the play. His anger and his anxiety are as real as his wisdom. In the end he chooses forgiveness over revenge, gives up his magic, and returns to Milan, where 'every third thought' shall be his grave. His role as the director of illusions has long invited comparison with the dramatist himself."
+  },
+  {
+   "name": "Miranda",
+   "side": "Milan / the island",
+   "text": "Prospero's daughter, about fifteen, who has seen no man but her father and Caliban. Compassionate from her first speech, which pities the drowning sailors, she falls in love with Ferdinand at once, disobeys her father to tell him her name, and proposes marriage herself. Her name means 'to be wondered at', and wonder is her characteristic response to the world, most famously in 'O brave new world'."
+  },
+  {
+   "name": "Ariel",
+   "side": "The island",
+   "text": "A spirit of air, once imprisoned by Sycorax in a pine and released by Prospero, whom he now serves in return for a promise of freedom. Ariel performs the storm, the music, the harpy and the masque, and is quick, playful and eager to please, but he longs for liberty and asks 'Do you love me, master?'. It is Ariel who prompts Prospero to pity. His relationship with Prospero is affectionate yet unequal, and he is freed at the very end."
+  },
+  {
+   "name": "Caliban",
+   "side": "The island",
+   "text": "Son of the witch Sycorax, who claims the island as his inheritance. Prospero first taught and cherished him, then enslaved him after he tried to rape Miranda. He curses, plots murder and worships a drunkard, yet he speaks some of the play's most beautiful verse about the island. Called a 'monster' and 'thing of darkness', he has become the focus of debates about colonialism, race and humanity, and the hero of many modern adaptations. He ends by promising to 'seek for grace'."
+  },
+  {
+   "name": "Ferdinand",
+   "side": "Naples",
+   "text": "Son and heir of Alonso, King of Naples. Believing his father drowned, he is led by Ariel's music to Miranda and loves her at first sight. He accepts Prospero's test of log-carrying with good grace and promises to respect Miranda's chastity. He is courteous and conventional, a figure of the young prince of romance."
+  },
+  {
+   "name": "Alonso",
+   "side": "Naples",
+   "text": "King of Naples, who helped Antonio depose Prospero. Grieving for the son he believes lost, he is the only one of the 'three men of sin' who truly repents. He restores Prospero's dukedom, asks pardon, and welcomes Miranda as a daughter."
+  },
+  {
+   "name": "Antonio",
+   "side": "Milan",
+   "text": "Prospero's younger brother, the usurping Duke of Milan. Witty, cynical and persuasive, he mocks Gonzalo, denies that he has a conscience, and tempts Sebastian to murder Alonso. Prospero forgives him, but Antonio says nothing in reply, and his silence is one of the unresolved notes at the end of the play."
+  },
+  {
+   "name": "Sebastian",
+   "side": "Naples",
+   "text": "Alonso's brother, who blames the King for the voyage and is easily persuaded by Antonio to plan his murder. Like Antonio, he is a mocker, and he shows no sign of repentance."
+  },
+  {
+   "name": "Gonzalo",
+   "side": "Naples",
+   "text": "An honest old counsellor who, when Prospero was cast adrift, supplied him with food, clothes and his books. Kindly, talkative and optimistic, he is mocked by Antonio and Sebastian but remains loyal. He imagines an ideal commonwealth drawn from Montaigne and, at the end, sees the whole story as providential."
+  },
+  {
+   "name": "Stephano",
+   "side": "Naples",
+   "text": "Alonso's drunken butler, who reaches the island on a cask of wine. Caliban takes him for a god, and he plans to kill Prospero and become king of the island, but he is distracted by fine clothes. He parodies the play's would-be usurpers."
+  },
+  {
+   "name": "Trinculo",
+   "side": "Naples",
+   "text": "Alonso's jester, who shelters from the storm under Caliban's cloak and joins Stephano and Caliban in their plot. He mocks Caliban constantly and is beaten when Ariel imitates his voice."
+  },
+  {
+   "name": "Sycorax",
+   "side": "The island (offstage)",
+   "text": "A witch from Algiers ('Argier'), banished to the island while pregnant with Caliban. She died before Prospero arrived, after imprisoning Ariel in a pine. Known only from Prospero's hostile account, she is a dark double of Prospero as a magician ruling the island, and some critics see her as the absent mother whose story the play suppresses."
+  },
+  {
+   "name": "The Boatswain",
+   "side": "The ship",
+   "text": "The practical, outspoken sailor of the first scene, who tells the King that the waves care nothing for rank. He returns in Act V to report that the ship is miraculously restored."
+  },
+  {
+   "name": "Adrian and Francisco",
+   "side": "Naples",
+   "text": "Lords attending Alonso. Francisco tries to comfort the King by describing how he saw Ferdinand swimming strongly to shore."
+  },
+  {
+   "name": "Iris, Ceres and Juno",
+   "side": "The masque",
+   "text": "Goddesses of the rainbow, the harvest and marriage, played by Prospero's spirits in the masque of Act IV. They bless the betrothed couple with fertility and plenty."
+  },
+  {
+   "name": "Claribel",
+   "side": "Naples (offstage)",
+   "text": "Alonso's daughter, whose marriage to the King of Tunis was the occasion of the voyage. She never appears, but Antonio's argument that she is too far away to inherit drives the plot against Alonso."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Power, authority and service",
+   "text": [
+    "The Tempest is full of masters and servants. Prospero rules his daughter, his spirit and his slave; Antonio usurped Prospero; Sebastian plans to usurp Alonso; Caliban wishes to make Stephano his king. The play asks what makes authority legitimate: inheritance (Prospero's and Caliban's claims), knowledge (Prospero's books), force, or consent. Comic and serious plots mirror each other, so that each act of usurpation is seen against the others.",
+    "Service takes many forms: Ariel works for the promise of freedom, Caliban under compulsion, Ferdinand for love, and Gonzalo out of loyalty. The play's ending frees Ariel and returns Prospero to his dukedom, but it leaves open what becomes of Caliban and the island."
+   ]
+  },
+  {
+   "title": "Nature and nurture, art and nature",
+   "text": [
+    "Prospero's judgement of Caliban as a 'born devil, on whose nature / Nurture can never stick' poses the question of whether education can change what a being is. Miranda, also raised by Prospero, is the model of what nurture achieves. Caliban, however, learns language and uses it both to curse and to speak some of the play's finest poetry.",
+    "Prospero's 'art' controls nature, raising storms and commanding the elements, and the island seems to some characters a paradise of nature and to others a barren place. Gonzalo's dream of a commonwealth where 'nature should bring forth ... all abundance' adds an ideal of nature without art, which the play treats with both sympathy and irony [[kermode1954]]."
+   ]
+  },
+  {
+   "title": "Revenge, repentance and forgiveness",
+   "text": [
+    "The play has the shape of a revenge drama, with a wronged man who has his enemies at his mercy, but it turns at the last moment to forgiveness. Prospero's choice, 'the rarer action is / In virtue than in vengeance', is the moral climax, and the Epilogue extends the logic of pardon to the audience.",
+    "Forgiveness in the play is incomplete. Alonso repents; Antonio stays silent; Sebastian calls Prospero a devil. The ending invites us to consider whether forgiveness depends on repentance, and whether a reconciliation can be complete when one party withholds it."
+   ]
+  },
+  {
+   "title": "Illusion, theatre and art",
+   "text": [
+    "Nearly everything the castaways experience is staged by Prospero and performed by Ariel and the spirits: the storm, the music, the banquet, the harpy, the masque, the hounds. The play is full of the language of theatre ('prologue', 'revels', 'actors', 'pageant'), and Prospero speaks like a director. 'Our revels now are ended' compares the dissolving masque to the transience of the world itself.",
+    "This self-consciousness explains the long tradition of reading Prospero as a figure of the artist, or of Shakespeare himself. The Epilogue, where the magician becomes an actor asking for applause, makes the connection explicit while also showing the artist's dependence on his audience [[orgel1987]]."
+   ]
+  },
+  {
+   "title": "Freedom and bondage",
+   "text": [
+    "Ariel wants 'my liberty'; Caliban sings 'Freedom, high-day!' while taking a new master; Ferdinand calls his log-carrying a 'wooden slavery' and finds his prison spacious enough; Prospero in the Epilogue asks to be set free. The play repeatedly asks what freedom is, and whether it means release from service, from passion, or from the need for power.",
+    "Prospero himself is bound: by his anger, by his project, and in the end by the audience. His renunciation of magic is also a kind of liberation, for himself as well as for Ariel."
+   ]
+  },
+  {
+   "title": "The New World and the encounter with strangers",
+   "text": [
+    "Although the island lies in the Mediterranean, between Tunis and Naples, the play is full of the language of the Atlantic voyages: the 'still-vex’d Bermoothes', the 'dead Indian', Setebos (a Patagonian god in accounts of Magellan's voyage), and Gonzalo's 'plantation', the period word for a colony. The meeting of Prospero and Caliban, and of Caliban and Stephano, dramatises first contact, gift and exchange, teaching and exploitation [[hulme1986]] [[vaughan1991]].",
+    "Wonder is the characteristic response to the new. Miranda's 'O brave new world', Sebastian's belief in unicorns, and Trinculo's monster-show all show how strangers are seen through the beholder's expectations."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Music and sound",
+   "text": "The Tempest has more music than any other Shakespeare play. Ariel's songs lead Ferdinand, wake Gonzalo, and charm the conspirators; solemn music accompanies the banquet and the restoration of the courtiers' senses. Caliban's 'the isle is full of noises' makes the island itself a musical place. Music in the play both soothes and controls, healing the mind and leading it where Prospero wishes [[lindley2002]]."
+  },
+  {
+   "title": "Sleep and dreams",
+   "text": "Miranda falls asleep at her father's command; the courtiers sleep while Antonio plots in 'a sleepy language'; Caliban wakes and cries to dream again; the mariners are found 'dead of sleep'; and Prospero speaks of life as 'rounded with a sleep'. The line between sleeping and waking, illusion and reality, is never secure."
+  },
+  {
+   "title": "Wonder and the word 'brave'",
+   "text": "Miranda's name means 'to be wondered at', and the play is full of amazement: the 'brave vessel', Caliban's 'brave god', 'O brave new world'. 'Brave' means splendid or fine, and its repetition by very different speakers shows how wonder can be innocent, foolish or ironic."
+  },
+  {
+   "title": "Sea-change and drowning",
+   "text": "Ariel's 'sea-change / Into something rich and strange' turns the drowning the characters fear into transformation. Alonso wants to lie 'mudded' with his son; Prospero will drown his book 'deeper than did ever plummet sound'. The sea that seems to destroy proves 'merciful' in the end."
+  },
+  {
+   "title": "Time and the hour",
+   "text": "Prospero's project runs to a timetable: 'two glasses' past noon at the start, 'the sixth hour' at the end, with several references to 'three hours' or 'three glasses' in between. The pressure of the hour, and the 'most auspicious star' Prospero must not miss, gives the romance the urgency of a deadline."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "Prospero's books, staff and mantle",
+   "text": "The instruments of his art. He lays aside his 'magic garment' to tell his story as a father; Caliban knows that the books are the source of his power; and he renounces magic by breaking his staff and drowning his book. Their loss marks his return to the human, political world."
+  },
+  {
+   "title": "The tempest",
+   "text": "The storm is both real and illusory: terrifying to those on the ship, harmless in fact. It stands for the upheaval of fortune that strips the characters of rank and comfort, and for the power of art to move an audience and then reveal that 'there’s no harm done'."
+  },
+  {
+   "title": "The island",
+   "text": "Neither clearly Mediterranean nor clearly Atlantic, the island is described as paradise and as barren, as Caliban's home and as Prospero's prison. Each character sees it differently, and it works as a place where identities are tested and changed."
+  },
+  {
+   "title": "The chessboard",
+   "text": "Ferdinand and Miranda are discovered playing chess, a game of kings and queens and of strategy. The image suggests both the courtly world they will now enter and the dynastic game Prospero has been playing; Miranda's teasing 'you play me false' hints that politics will follow them."
+  },
+  {
+   "title": "The cloven pine and the oak",
+   "text": "Sycorax imprisoned Ariel in a pine; Prospero threatens to peg him in an oak. The images of confinement in trees link the two magicians and suggest that Prospero's rule repeats Sycorax's more than he admits."
+  }
+ ],
+ "debates": [
+  {
+   "title": "The Bermuda pamphlets and the date of the play",
+   "text": [
+    "Since the early nineteenth century scholars have connected The Tempest with the wreck of the Sea Venture on Bermuda in 1609 and the accounts of it: Silvester Jourdain's A Discovery of the Barmudas (1610), the Virginia Company's True Declaration (1610), and William Strachey's 'True Reportory', a letter dated 15 July 1610, which circulated in manuscript and was printed by Samuel Purchas in 1625. The parallels, including St Elmo's fire playing on the rigging, the crew's despair, the island's reputation as the 'Ile of Divels' and the unexpected survival of all aboard, have been taken to show that Shakespeare read Strachey's letter, which would date the play to between late 1610 and November 1611 [[strachey1625]] [[bullough1975]] [[vaughan1999]].",
+    "This consensus has been challenged, notably by Roger Stritmatter and Lynne Kositsky, who argued that the parallels are commonplace in travel writing and that Shakespeare need not have known the letter; their wider aim was to free the play from a date incompatible with the authorship theory they favour. Alden T. Vaughan reviewed the evidence and concluded that Strachey's influence remains highly probable, and most editors agree [[stritmatter2007]] [[vaughan2008]]."
+   ],
+   "cite": [
+    "strachey1625",
+    "bullough1975",
+    "vaughan1999",
+    "stritmatter2007",
+    "vaughan2008"
+   ]
+  },
+  {
+   "title": "Montaigne's 'Of Cannibals' and Gonzalo's commonwealth",
+   "text": [
+    "Gonzalo's speech in Act II, Scene 1 is the clearest proven borrowing in the play: it reproduces whole phrases of John Florio's 1603 translation of Montaigne's essay, in which the peoples of Brazil are said to have 'no kinde of traffike, no knowledge of Letters' and 'no name of magistrate' [[montaigne1603]]. Montaigne's essay turns the idea of the savage against Europe: the cannibals, he argues, are less barbarous than the Europeans who torture in the name of religion.",
+    "Critics disagree on how Shakespeare uses the essay. Some see the play as sharing Montaigne's scepticism about European civilisation, and point to Gonzalo's praise of the gentle 'islanders' and Prospero's remark that some courtiers are 'worse than devils'. Others note that Shakespeare gives the utopia to a figure of fun and lets cynics expose it, and that Caliban, whose name has been read as an anagram of 'cannibal', is far from Montaigne's noble Brazilians. Frank Kermode read the play as a reflection on nature and art in which the pastoral dream is tested rather than endorsed [[kermode1954]] [[hulme1986]]."
+   ],
+   "cite": [
+    "montaigne1603",
+    "kermode1954",
+    "hulme1986"
+   ]
+  },
+  {
+   "title": "Prospero's magic: white magic, power, or something darker?",
+   "text": [
+    "Prospero is a learned magician who controls spirits through study, the kind of 'magus' Renaissance thinkers distinguished from the witch, whose power came from the devil. Frances Yates linked him to the Hermetic and occult philosophy of the period and to John Dee, the Elizabethan mathematician and magus; Frank Kermode saw his art as a disciplined, virtuous power opposed to Sycorax's black magic [[yates1975]] [[kermode1954]].",
+    "Other critics have stressed the darker side. Prospero's renunciation speech borrows the words of Ovid's witch Medea, and he claims to have raised the dead, the most forbidden act of magic. His art is also a political instrument of surveillance, punishment and control, and he threatens Ariel and torments Caliban with it. Stephen Orgel argued that the play's magic is inseparable from Prospero's desire for power, and that giving it up is a real sacrifice [[orgel1987]]."
+   ],
+   "cite": [
+    "yates1975",
+    "kermode1954",
+    "orgel1987"
+   ]
+  },
+  {
+   "title": "Colonial readings: Prospero, Caliban and the discourse of colonialism",
+   "text": [
+    "From the late 1970s, critics read The Tempest in the light of English colonisation in Virginia and Ireland. Stephen Greenblatt's essay 'Learning to Curse' examined Caliban's claim that language has taught him only to curse as a case study in how Europeans saw the languages of native peoples. Paul Brown argued that the play both expresses and exposes the 'discourse of colonialism', showing in Prospero's need to justify his rule the anxieties of that discourse. Francis Barker and Peter Hulme read the interruption of the masque as the moment when the play's suppressed colonial history breaks in [[greenblatt1990]] [[brown1985]] [[barker1985]].",
+    "Peter Hulme's broader study placed the play among the European texts that represented the native Caribbean. These readings have made it impossible to see Caliban only as a monster, and have changed how the play is taught and staged [[hulme1986]]."
+   ],
+   "cite": [
+    "greenblatt1990",
+    "brown1985",
+    "barker1985",
+    "hulme1986"
+   ]
+  },
+  {
+   "title": "Caribbean and Latin American appropriations: Césaire and Fernández Retamar",
+   "text": [
+    "Before the academic colonial readings, writers from colonised countries had already claimed the play. The French psychoanalyst Octave Mannoni, writing about Madagascar, coined the idea of a 'Prospero complex' of colonial paternalism, in a book translated as Prospero and Caliban (1956). The Barbadian novelist George Lamming, in The Pleasures of Exile (1960), identified with Caliban as the colonial writer who must use the master's language [[mannoni1956]] [[lamming1960]].",
+    "Aimé Césaire's Une tempête (1969), an 'adaptation for a Black theatre', makes Caliban a Black slave who rejects his slave name and demands to be called 'X', and Ariel a mixed-race servant who prefers gradual reform. In 1971 the Cuban poet and critic Roberto Fernández Retamar, in his essay 'Calibán', took Caliban as the symbol of Latin American culture, in opposition to the Uruguayan José Enrique Rodó, who in Ariel (1900) had made the spirit the emblem of a Latin American spiritual ideal. Rob Nixon traced these Caribbean and African appropriations and their decline after the 1970s [[cesaire1969]] [[fernandezretamar1989]] [[nixon1987]]."
+   ],
+   "cite": [
+    "mannoni1956",
+    "lamming1960",
+    "cesaire1969",
+    "fernandezretamar1989",
+    "nixon1987"
+   ]
+  },
+  {
+   "title": "Limits of the colonial reading",
+   "text": [
+    "Not all critics accept that colonialism is the play's main subject. Meredith Anne Skura argued that the colonial reading overlooks the psychological and personal dimensions of the Prospero–Caliban relationship and the differences between the play and actual colonial writing in 1611. David Scott Kastan stressed that the play's plot is about European dynastic politics: the marriage of Milan and Naples, Claribel's marriage in Tunis, and the Mediterranean setting [[skura1989]] [[kastan1999]].",
+    "Alden T. Vaughan and Virginia Mason Vaughan traced how Caliban has been seen over four centuries: as a monster, a fish, a 'missing link' after Darwin, a native American, an African, and a symbol of the colonised. Their history shows how much the character's meaning depends on the age that reads him, and why both colonial and anti-colonial readings belong to the play's history [[vaughan1991]]."
+   ],
+   "cite": [
+    "skura1989",
+    "kastan1999",
+    "vaughan1991"
+   ]
+  },
+  {
+   "title": "Miranda, Sycorax and the absent mothers",
+   "text": [
+    "The play has almost no women: Miranda is the only woman on the island, and the mothers (Prospero's wife, Sycorax, Claribel's mother) are absent or dead. Stephen Orgel's essay 'Prospero's Wife' asked what this absence means, and argued that Prospero's control of the story, including the story of Sycorax, which we hear only from him, reflects a fantasy of male authority without women [[orgel1984]].",
+    "Feminist critics have also examined Miranda's role in the plot, as the object of Caliban's attempted rape, of Prospero's dynastic plans and of Ferdinand's courtship, while noting her independence in Act III. The question of whether the 'Abhorred slave' speech belongs to her, as in the Folio, or to Prospero, as many editors assumed, affects how strong a character she seems [[orgel1987]] [[vaughan1999]]."
+   ],
+   "cite": [
+    "orgel1984",
+    "orgel1987",
+    "vaughan1999"
+   ]
+  },
+  {
+   "title": "The masque, Blackfriars and the farewell to the stage",
+   "text": [
+    "The Tempest was probably written with the indoor Blackfriars theatre in mind. Andrew Gurr argued that it was designed for the intervals between acts used there (Prospero and Ariel leave together at the end of Act IV and enter together at the start of Act V, which makes sense only with a break between), and noted the musical and spectacular resources of the playhouse. The masque reflects the court masques of James's reign, and its interruption has been read both as a dramatic device and as a statement about the fragility of such shows [[gurr1989]] [[lindley2002]].",
+    "The Victorian idea that Prospero's farewell to his art is Shakespeare's farewell to the stage, popularised by Edward Dowden, remains the most famous biographical reading of any Shakespeare play. Modern editors are cautious: the play was not his last, and the comparison of the magician with the playwright is a reading of its themes rather than a fact about his life [[dowden1875]] [[orgel1987]] [[vaughan1999]]."
+   ],
+   "cite": [
+    "gurr1989",
+    "lindley2002",
+    "dowden1875",
+    "orgel1987",
+    "vaughan1999"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Tempest 1.2.363–5",
+   "quote": "You taught me language, and my profit on ’t\nIs, I know how to curse.",
+   "who": "Caliban",
+   "explanation": "Caliban answers Prospero's claim to have educated him by turning language against its teacher. The lines are central to colonial readings of the play."
+  },
+  {
+   "ref": "Tempest 1.2",
+   "quote": "This island’s mine, by Sycorax my mother,\nWhich thou tak’st from me.",
+   "who": "Caliban",
+   "explanation": "Caliban's claim by inheritance challenges Prospero's right to rule the island."
+  },
+  {
+   "ref": "Tempest 1.2.397",
+   "quote": "Full fathom five thy father lies.\nOf his bones are coral made.\nThose are pearls that were his eyes.",
+   "who": "Ariel",
+   "explanation": "Ariel's song tells Ferdinand that his father is drowned, but turns death into a beautiful 'sea-change'."
+  },
+  {
+   "ref": "Tempest 2.1.253",
+   "quote": "Whereof what’s past is prologue, what to come\nIn yours and my discharge.",
+   "who": "Antonio",
+   "explanation": "Antonio urges Sebastian to murder: what has happened is only the preface to the deed they must now perform."
+  },
+  {
+   "ref": "Tempest 3.2.135–6",
+   "quote": "Be not afeard. The isle is full of noises,\nSounds, and sweet airs, that give delight, and hurt not.",
+   "who": "Caliban",
+   "explanation": "The 'monster' reassures the frightened Europeans with a lyrical description of the island's music."
+  },
+  {
+   "ref": "Tempest 4.1.148–50",
+   "quote": "Our revels now are ended. These our actors,\nAs I foretold you, were all spirits and\nAre melted into air, into thin air:",
+   "who": "Prospero",
+   "explanation": "Prospero ends the masque and begins his meditation on the transience of shows, the world, and life."
+  },
+  {
+   "ref": "Tempest 4.1.156–8",
+   "quote": "We are such stuff\nAs dreams are made on, and our little life\nIs rounded with a sleep.",
+   "who": "Prospero",
+   "explanation": "Human life is as insubstantial as a dream and is surrounded by the sleep of death."
+  },
+  {
+   "ref": "Tempest 5.1.27–8",
+   "quote": "the rarer action is\nIn virtue than in vengeance:",
+   "who": "Prospero",
+   "explanation": "Prospero's decision to forgive rather than take revenge, the moral turning point of the play."
+  },
+  {
+   "ref": "Tempest 5.1.183–4",
+   "quote": "O brave new world\nThat has such people in ’t!",
+   "who": "Miranda",
+   "explanation": "Miranda's wonder at seeing the courtiers, answered by her father's ironic 'Tis new to thee'."
+  },
+  {
+   "ref": "Tempest Epilogue",
+   "quote": "As you from crimes would pardon’d be,\nLet your indulgence set me free.",
+   "who": "Prospero",
+   "explanation": "The play's last words ask the audience to grant the actor the pardon that Prospero has granted his enemies."
+  }
+ ],
+ "questions": [
+  {
+   "q": "What does the first scene suggest about authority, and how does the rest of the play answer the Boatswain's challenge to 'command these elements'?",
+   "hint": "Compare the King's helplessness at sea with Prospero's control of the storm, and his renunciation of that control at the end."
+  },
+  {
+   "q": "Compare Ariel and Caliban as servants of Prospero. What does each want, and how does Prospero treat each?",
+   "hint": "Consider the stories of Sycorax, the promises of freedom, and the threats of punishment in Act I, Scene 2."
+  },
+  {
+   "q": "Is Prospero a sympathetic figure? Find evidence for his wisdom and for his harshness.",
+   "hint": "Look at his treatment of Miranda in 1.2, of Ferdinand, of Caliban, and his anger in 4.1."
+  },
+  {
+   "q": "How does the play use Montaigne's 'Of Cannibals'? Does it endorse Gonzalo's commonwealth or mock it?",
+   "hint": "Consider who speaks the utopia, who mocks it, and how the courtiers behave."
+  },
+  {
+   "q": "How do the comic scenes with Stephano, Trinculo and Caliban mirror the serious plots?",
+   "hint": "Think about usurpation, kingship, and the worship of a false master."
+  },
+  {
+   "q": "What is the function of the masque in Act IV, and why does Prospero interrupt it?",
+   "hint": "Consider its themes of chastity and fertility, and what breaks in when it ends."
+  },
+  {
+   "q": "Read 'Our revels now are ended' in its context. Is it a calm philosophical statement or the speech of a troubled man?",
+   "hint": "Note what comes immediately before and after: the plot of Caliban, and Prospero's admission that he is 'vex’d'."
+  },
+  {
+   "q": "How complete is the reconciliation at the end of the play?",
+   "hint": "Who repents, who says nothing, and what happens to Caliban and the island?"
+  },
+  {
+   "q": "How have colonial and postcolonial readings changed our understanding of Caliban? What are their strengths and limits?",
+   "hint": "Think of Césaire's Une tempête and Fernández Retamar's 'Calibán', and of critics who stress the play's Mediterranean setting."
+  },
+  {
+   "q": "Should the Epilogue be read as Shakespeare's farewell to the stage?",
+   "hint": "Consider what the speech says about art, power and pardon, and the evidence that Shakespeare continued writing."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "barker1985",
+   "text": "Barker, Francis, and Peter Hulme. 'Nymphs and Reapers Heavily Vanish: The Discursive Con-texts of The Tempest.' In Alternative Shakespeares, edited by John Drakakis, 191–205. London and New York: Methuen, 1985."
+  },
+  {
+   "id": "brown1985",
+   "text": "Brown, Paul. '\"This thing of darkness I acknowledge mine\": The Tempest and the Discourse of Colonialism.' In Political Shakespeare: New Essays in Cultural Materialism, edited by Jonathan Dollimore and Alan Sinfield, 48–71. Manchester: Manchester University Press, 1985."
+  },
+  {
+   "id": "bullough1975",
+   "text": "Bullough, Geoffrey, ed. Narrative and Dramatic Sources of Shakespeare. Vol. 8, Romances: Cymbeline, The Winter's Tale, The Tempest. London: Routledge and Kegan Paul; New York: Columbia University Press, 1975."
+  },
+  {
+   "id": "cesaire1969",
+   "text": "Césaire, Aimé. Une tempête: d'après 'La Tempête' de Shakespeare. Adaptation pour un théâtre nègre. Paris: Éditions du Seuil, 1969."
+  },
+  {
+   "id": "dowden1875",
+   "text": "Dowden, Edward. Shakspere: A Critical Study of His Mind and Art. London: Henry S. King, 1875."
+  },
+  {
+   "id": "fernandezretamar1989",
+   "text": "Fernández Retamar, Roberto. Caliban and Other Essays. Translated by Edward Baker. Minneapolis: University of Minnesota Press, 1989. The essay 'Calibán' first appeared in Casa de las Américas 68 (1971)."
+  },
+  {
+   "id": "greenblatt1990",
+   "text": "Greenblatt, Stephen. Learning to Curse: Essays in Early Modern Culture. New York and London: Routledge, 1990."
+  },
+  {
+   "id": "gurr1989",
+   "text": "Gurr, Andrew. 'The Tempest's Tempest at Blackfriars.' Shakespeare Survey 41 (1989): 91–102."
+  },
+  {
+   "id": "hulme1986",
+   "text": "Hulme, Peter. Colonial Encounters: Europe and the Native Caribbean, 1492–1797. London and New York: Methuen, 1986."
+  },
+  {
+   "id": "kastan1999",
+   "text": "Kastan, David Scott. Shakespeare after Theory. New York and London: Routledge, 1999."
+  },
+  {
+   "id": "kermode1954",
+   "text": "Kermode, Frank, ed. The Tempest. By William Shakespeare. The Arden Shakespeare. London: Methuen, 1954."
+  },
+  {
+   "id": "lamming1960",
+   "text": "Lamming, George. The Pleasures of Exile. London: Michael Joseph, 1960."
+  },
+  {
+   "id": "lindley2002",
+   "text": "Lindley, David, ed. The Tempest. By William Shakespeare. The New Cambridge Shakespeare. Cambridge: Cambridge University Press, 2002."
+  },
+  {
+   "id": "mannoni1956",
+   "text": "Mannoni, O. Prospero and Caliban: The Psychology of Colonization. Translated by Pamela Powesland. London: Methuen, 1956. First published as Psychologie de la colonisation (Paris: Éditions du Seuil, 1950)."
+  },
+  {
+   "id": "montaigne1603",
+   "text": "Montaigne, Michel de. The Essayes or Morall, Politike and Millitarie Discourses. Translated by John Florio. London: Valentine Sims for Edward Blount, 1603. Book 1, chapter 30, 'Of the Caniballes'."
+  },
+  {
+   "id": "nixon1987",
+   "text": "Nixon, Rob. 'Caribbean and African Appropriations of The Tempest.' Critical Inquiry 13, no. 3 (1987): 557–78."
+  },
+  {
+   "id": "orgel1984",
+   "text": "Orgel, Stephen. 'Prospero's Wife.' Representations 8 (1984): 1–13."
+  },
+  {
+   "id": "orgel1987",
+   "text": "Orgel, Stephen, ed. The Tempest. By William Shakespeare. The Oxford Shakespeare. Oxford: Clarendon Press, 1987."
+  },
+  {
+   "id": "skura1989",
+   "text": "Skura, Meredith Anne. 'Discourse and the Individual: The Case of Colonialism in The Tempest.' Shakespeare Quarterly 40, no. 1 (1989): 42–69."
+  },
+  {
+   "id": "strachey1625",
+   "text": "Strachey, William. 'A True Reportory of the Wracke and Redemption of Sir Thomas Gates, Knight.' In Samuel Purchas, Purchas His Pilgrimes, vol. 4. London: William Stansby for Henry Fetherstone, 1625. Written as a letter dated 15 July 1610."
+  },
+  {
+   "id": "stritmatter2007",
+   "text": "Stritmatter, Roger, and Lynne Kositsky. 'Shakespeare and the Voyagers Revisited.' Review of English Studies, n.s., 58 (2007): 447–72."
+  },
+  {
+   "id": "vaughan1991",
+   "text": "Vaughan, Alden T., and Virginia Mason Vaughan. Shakespeare's Caliban: A Cultural History. Cambridge: Cambridge University Press, 1991."
+  },
+  {
+   "id": "vaughan1999",
+   "text": "Vaughan, Virginia Mason, and Alden T. Vaughan, eds. The Tempest. By William Shakespeare. The Arden Shakespeare, Third Series. Walton-on-Thames: Thomas Nelson and Sons, 1999."
+  },
+  {
+   "id": "vaughan2008",
+   "text": "Vaughan, Alden T. 'William Strachey's \"True Reportory\" and Shakespeare: A Closer Look at the Evidence.' Shakespeare Quarterly 59, no. 3 (2008): 245–73."
+  },
+  {
+   "id": "yates1975",
+   "text": "Yates, Frances A. Shakespeare's Last Plays: A New Approach. London: Routledge and Kegan Paul, 1975."
+  }
+ ]
+}

@@ -5186,11 +5186,13 @@
     "French",
     "Nordic",
     "German",
+    "Dutch & Flemish",
     "Spanish & Portuguese",
     "Chinese & Japanese",
     "Celtic",
     "Russian & Slavic",
     "Hungarian",
+    "Indigenous Americas & Pacific",
   ];
   const CATEGORY_SLUGS = {
     "Ancient Greek & Roman": "ancient-greek-roman",
@@ -5217,6 +5219,8 @@
     "Celtic": "celtic",
     "Russian & Slavic": "russian-slavic",
     "Hungarian": "hungarian",
+    "Dutch & Flemish": "dutch-flemish",
+    "Indigenous Americas & Pacific": "indigenous-americas-pacific",
   };
   const SLUG_TO_CATEGORY = Object.fromEntries(Object.entries(CATEGORY_SLUGS).map(([k, v]) => [v, k]));
   const EPICS_SLUG = "epics";
@@ -5567,7 +5571,7 @@
   // overview, book-by-book summary and analysis, characters, themes, the critical debates,
   // key passages (quoted from the recommended translation), questions and a bibliography.
   // Paragraphs cite with [[bibId]], drawn as (Author year) linked to the bibliography.
-  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost", "beowulf", "divine-comedy", "gilgamesh", "faerie-queene", "mahabharata", "ramayana", "shahnameh", "koroglu", "nibelungenlied", "song-of-roland", "kalevala", "sir-gawain", "orlando-furioso", "jerusalem-delivered", "lusiads", "metamorphoses", "poetic-edda", "tain", "canterbury-tales", "idylls-of-the-king", "el-cid", "argonautica", "pharsalia", "gondibert", "paradise-regained", "song-of-hiawatha", "theogony", "igor-tale", "rape-of-the-lock", "the-prelude", "don-juan", "aurora-leigh", "the-ring-and-the-book", "childe-harold", "endymion", "ossian-fingal", "evangeline", "bhagavad-gita", "samson-agonistes", "shepheardes-calender", "comus", "essay-on-man", "maud-tennyson", "the-seasons-thomson", "the-task", "thebaid", "buddhacarita", "marmion", "lady-of-the-lake", "davideis-cowley", "hero-and-leander-chapman", "sepmaine", "christs-victorie-and-triumph", "troilus-and-criseyde", "piers-plowman", "pearl", "georgics", "works-and-days", "prometheus-unbound-shelley", "faust-part-1", "manfred-byron", "hudibras", "gita-govinda", "lay-of-the-last-minstrel", "meghaduta", "doctor-faustus", "everyman", "sordello", "lalla-rookh", "empedocles-on-etna-arnold", "kudrun", "pan-tadeusz", "parzival", "masnavi", "shakuntala", "laili-majnun", "nala-damayanti", "raghuvamsa", "kumarasambhava", "oberon", "konrad-wallenrod", "bustan", "hamlet-shakespeare", "king-lear-shakespeare", "macbeth-shakespeare", "othello-shakespeare", "oedipus-the-king", "antigone"]);
+  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost", "beowulf", "divine-comedy", "gilgamesh", "faerie-queene", "mahabharata", "ramayana", "shahnameh", "koroglu", "nibelungenlied", "song-of-roland", "kalevala", "sir-gawain", "orlando-furioso", "jerusalem-delivered", "lusiads", "metamorphoses", "poetic-edda", "tain", "canterbury-tales", "idylls-of-the-king", "el-cid", "argonautica", "pharsalia", "gondibert", "paradise-regained", "song-of-hiawatha", "theogony", "igor-tale", "rape-of-the-lock", "the-prelude", "don-juan", "aurora-leigh", "the-ring-and-the-book", "childe-harold", "endymion", "ossian-fingal", "evangeline", "bhagavad-gita", "samson-agonistes", "shepheardes-calender", "comus", "essay-on-man", "maud-tennyson", "the-seasons-thomson", "the-task", "thebaid", "buddhacarita", "marmion", "lady-of-the-lake", "davideis-cowley", "hero-and-leander-chapman", "sepmaine", "christs-victorie-and-triumph", "troilus-and-criseyde", "piers-plowman", "pearl", "georgics", "works-and-days", "prometheus-unbound-shelley", "faust-part-1", "manfred-byron", "hudibras", "gita-govinda", "lay-of-the-last-minstrel", "meghaduta", "doctor-faustus", "everyman", "sordello", "lalla-rookh", "empedocles-on-etna-arnold", "kudrun", "pan-tadeusz", "parzival", "masnavi", "shakuntala", "laili-majnun", "nala-damayanti", "raghuvamsa", "kumarasambhava", "oberon", "konrad-wallenrod", "bustan", "hamlet-shakespeare", "king-lear-shakespeare", "macbeth-shakespeare", "othello-shakespeare", "oedipus-the-king", "antigone", "agamemnon", "medea", "bacchae", "prometheus-bound", "tempest-shakespeare", "romeo-and-juliet-shakespeare"]);
   const GUIDE_FILES = {};
   const GUIDE_PARTS = [["overview", "Overview"], ["books", "Book by book"], ["characters", "Characters"],
     ["themes", "Themes & symbols"], ["debates", "Critical debates"], ["quotes", "Key passages"],

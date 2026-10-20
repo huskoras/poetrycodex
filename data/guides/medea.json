@@ -1,0 +1,906 @@
+{
+ "work": "medea",
+ "title": "Medea",
+ "author": "Euripides",
+ "quoteEdition": "medea-way",
+ "unit": "Part",
+ "sameSections": false,
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Euripides (c. 480–406 BC), the youngest of the three great Athenian tragedians; about 90 plays are attributed to him, of which 17 tragedies (18 with the disputed Rhesus) and one satyr play, Cyclops, survive"
+  },
+  {
+   "label": "First performed",
+   "value": "431 BC at the City Dionysia in Athens, in the spring in which the Peloponnesian War broke out; the ancient summary (hypothesis) records that Euripides came third, after Euphorion and Sophocles"
+  },
+  {
+   "label": "The production",
+   "value": "Medea was staged in a group of four plays with Philoctetes, Dictys and the satyr play Theristai (The Reapers), all now lost apart from fragments"
+  },
+  {
+   "label": "Genre",
+   "value": "Tragedy in Greek verse: spoken iambic trimeters for the episodes, lyric metres for the choral odes and laments, chanted anapaests for the Nurse and for several transitions"
+  },
+  {
+   "label": "Setting",
+   "value": "Before the house of Jason and Medea at Corinth, on the day Medea learns that she is to be banished"
+  },
+  {
+   "label": "Structure",
+   "value": "Prologue, parodos, five episodes alternating with five choral odes (stasima), and exodos; 1,419 lines in the standard numbering"
+  },
+  {
+   "label": "Main characters",
+   "value": "Medea; Jason; the Nurse; the Tutor of the children; Creon, king of Corinth; Aegeus, king of Athens; a Messenger; Medea's two sons; a Chorus of Corinthian women"
+  },
+  {
+   "label": "Background myth",
+   "value": "The voyage of the Argo: Medea, princess of Colchis and granddaughter of the Sun, helped Jason win the Golden Fleece, killed her brother, and had Pelias of Iolcus killed by his own daughters"
+  },
+  {
+   "label": "Key ideas",
+   "value": "Marriage and betrayal, oaths, exile and the foreigner, cleverness (sophia), the place of women, revenge, the divided self, the silence of the gods"
+  },
+  {
+   "label": "Quoted translation",
+   "value": "Arthur S. Way, The Tragedies of Euripides in English Verse, vol. I (1894); references use the standard Greek line numbers, so they are approximate for the English, which runs longer than the Greek"
+  }
+ ],
+ "context": [
+  "Euripides was born around 480 BC and died in 406, probably in Macedonia, where he had gone at the invitation of King Archelaus. He competed at the City Dionysia, the great spring festival of Dionysus at Athens, for half a century, but won first prize only four times in his lifetime (a fifth victory came after his death). Ancient comedy, above all Aristophanes, mocked him as a clever talker who brought beggars, adulterous queens and argumentative slaves onto the tragic stage, and the image stuck: Euripides was remembered as the tragedian of ideas, of rhetoric, and of women, an image modern criticism has spent much effort testing [[michelini1987]].",
+  "Medea was produced in 431 BC, in the archonship of Pythodorus, in the same spring in which the Theban attack on Plataea opened the Peloponnesian War between Athens and Sparta. Corinth, where the play is set, was Sparta's ally and Athens' bitter commercial rival, and Athens is the city that will receive the murderess. The ancient summary of the play, which goes back to the Alexandrian scholar Aristophanes of Byzantium, says that Euripides was placed third of three: Euphorion, the son of Aeschylus, won, and Sophocles came second. The judges' verdict was on the whole group of four plays, not on Medea alone, and we know almost nothing of the other three [[mastronarde2002]] [[page1938]].",
+  "The story behind the play is the voyage of the Argo, told most fully in the Hellenistic epic of Apollonius of Rhodes (see the site's guide to the Argonautica). Jason, sent by his uncle Pelias to fetch the Golden Fleece from Colchis at the eastern end of the Black Sea, succeeded only because the king's daughter Medea fell in love with him. With her magic he yoked the fire-breathing bulls, sowed the dragon's teeth and took the Fleece from the sleepless serpent; in her flight she killed her brother Apsyrtus; at Iolcus she persuaded the daughters of Pelias to cut up their father in the belief that she could make him young again. Exiled for that crime, the couple settled in Corinth with their two sons. Euripides' audience knew all this, and the play's first lines summon it in a single long wish [[hunter1989]] [[griffiths2006]].",
+  "What the audience may not have expected was the ending. Earlier Corinthian tradition told of the death of Medea's children in other ways: in one version she hid them in the sanctuary of Hera hoping to make them immortal and they died; in another the Corinthians killed them in revenge for the death of their king. Euripides, as far as our evidence goes, was the first to make Medea kill her sons deliberately, to punish their father. An ancient report that the playwright Neophron wrote a Medea which Euripides adapted is uncertain, and most scholars think Neophron's play came later. Either way, Euripides' version became the canonical one: after 431 Medea was, for all later literature and art, the mother who killed her children [[mastronarde2002]] [[page1938]] [[clauss1997]].",
+  "The play has never stopped being performed and rewritten. Ennius adapted it for the Roman stage, Ovid wrote a lost Medea, and Seneca's Medea (also on this site, in Frank Justus Miller's translation) turned it into a drama of a witch who glories in her crimes [[boyle2014]]. Corneille, Cherubini, Grillparzer, Anouilh, Pasolini, Christa Wolf and many others returned to it; in Edwardian Britain Medea's speech on the wrongs of women is said to have been recited at suffragist meetings, and in recent decades the play has been staged again and again as a drama of migration, racism and the abandoned wife [[hall2000]]. Arthur Way's rhymed and archaising version of 1894, quoted here, belongs to the Victorian moment just before that revival."
+ ],
+ "plot": [
+  "At Corinth the old Nurse of Medea's children wishes that the Argo had never sailed. Jason has left Medea to marry the daughter of Creon, the king, and Medea lies in the house refusing food, calling on the gods who witnessed Jason's oaths; the Nurse fears she will do something terrible, and the children's Tutor brings word that Creon intends to banish Medea and her sons. Medea's cries are heard from inside. A Chorus of Corinthian women arrives in sympathy; Medea comes out and wins their promise of silence with a speech on the wretched lot of women. Creon orders her into exile at once, but she begs a single day's delay and he reluctantly grants it. Alone with the Chorus, she announces that in that day she will kill the king, his daughter and Jason.",
+  "Jason comes to offer money for her exile, and the two have a furious debate: Medea lists all she did for him, Jason argues that he owes his rescue to Aphrodite, that Medea has gained by living among Greeks, and that the new marriage will benefit the whole family. Then, by chance, Aegeus king of Athens passes through on his way from the oracle at Delphi, still childless. Medea promises him children through her drugs, and he swears an oath to give her refuge in Athens. With her escape secured, she reveals her full plan: she will send a poisoned robe and crown to the bride by the hands of her sons, and then kill the children themselves to leave Jason with nothing.",
+  "Medea summons Jason, pretends to be reconciled, and persuades him to let the boys carry her gifts to the princess so that they may be spared exile. The Tutor returns with news that the gifts were accepted. In a long monologue Medea wavers between love for her sons and her purpose, and decides for revenge. A Messenger describes how the robe and diadem burned the princess alive and how Creon, embracing her body, died entangled with her. Medea goes inside; the children's cries are heard as she kills them, while the Chorus hesitates at the door.",
+  "Jason arrives to save his sons from the Corinthians' vengeance and learns that they are dead. As he tries to break open the doors, Medea appears above the house in a chariot drawn by dragons, the gift of her grandfather the Sun, with the bodies of the children. She refuses to give them to him for burial, announces that she will bury them in the sanctuary of Hera Akraia and found a ritual of atonement at Corinth, prophesies Jason's inglorious death, and departs for Athens. The Chorus closes with a reflection on the unexpected ways of the gods."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Prologue: The Nurse and the Tutor",
+   "lines": "1–130",
+   "section": 1,
+   "summary": [
+    "The Nurse, alone before the house, opens with a wish that runs backwards through the whole myth: if only the Argo had never passed the Clashing Rocks, if only the pine had never been cut on Mount Pelion, then Medea would never have sailed for love of Jason, never have had Pelias killed, and never have come to Corinth. Now Jason has married the king's daughter. Medea lies without food, weeping, deaf to friends 'like a rock or sea-wave', calling on the oaths and on the gods, hating even her children. The Nurse fears that she may kill the royal couple, or herself.",
+    "The Tutor brings the boys back from their games, with a piece of gossip overheard by the spring of Peirene: Creon intends to banish Medea and her sons. The two slaves agree that Jason has abandoned his family. The Nurse sends the children indoors and warns the Tutor to keep them away from their mother. Medea is heard crying from within, cursing her children and their father; the Nurse, in chanted anapaests, fears for the boys and praises a modest life over the dangerous greatness of the powerful."
+   ],
+   "analysis": [
+    "Euripides' prologues usually explain the situation directly, and this one does so through the most sympathetic of witnesses. The Nurse and Tutor give us the household's view: a wife wronged, a husband who has broken sworn oaths, and children who have done nothing. Medea's case is established before she is seen, and so is the fear she inspires. The Nurse's comparisons, a bull, a lioness, a storm-cloud gathering lightning, prepare us for something non-human in her rage [[mastronarde2002]].",
+    "The most chilling detail is how early the children are drawn into the danger. The Nurse notes that Medea 'loathes her babes'; the offstage cries curse them along with their father. No first-time spectator could know what will happen, but the prologue has already joined the two things the play will fuse: Medea's anger at Jason and the bodies of her sons [[easterling1977]]."
+   ],
+   "key": [
+    {
+     "ref": "Med. 1–2",
+     "quote": "Would God that Argo's hull had never flown\nThrough those blue Clashing Rocks to Kolchis-land,",
+     "note": "The play begins with the Argonaut story, but as a wish that it had never happened. The voyage that epic celebrates is seen from its end, as the beginning of a household's ruin."
+    },
+    {
+     "ref": "Med. 16",
+     "quote": "Now all is hatred : love is sickness-stricken.",
+     "note": "A one-line summary of the situation. In Greek the 'dearest' things (ta philtata) are now 'sick'; the vocabulary of philia, love and kinship, runs through the whole play."
+    },
+    {
+     "ref": "Med. 36–37",
+     "quote": "She loathes her babes, joys not beholding them.\nI fear her, lest some mischief she devise.",
+     "note": "The first hint of the children's danger, spoken by the person who loves them most."
+    },
+    {
+     "ref": "Med. 95",
+     "quote": "To foes may she work ill, and not to friends !",
+     "note": "The Nurse's prayer appeals to the traditional Greek rule of helping friends and harming enemies. The tragedy will show Medea following that rule to the point where her own children count as instruments against an enemy."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Parodos: The Women of Corinth",
+   "lines": "131–213",
+   "section": 1,
+   "summary": [
+    "The Chorus of Corinthian women enters, drawn by the sound of Medea's crying, and asks the Nurse for news. The parodos is unusual in form: the women's lyric stanzas alternate with the Nurse's anapaests and with Medea's own cries from inside the house. Medea longs for death by lightning, calls on Themis and Artemis to see how Jason has broken his oaths, and remembers with shame that she betrayed her father and killed her brother on her flight.",
+    "The Chorus urge her not to waste herself in grief over a husband: Zeus will see justice done. They ask the Nurse to bring her out. The Nurse goes, but first reflects that poets have composed songs for feasts, where no one needs them, and never found a music to cure grief."
+   ],
+   "analysis": [
+    "The Chorus are Corinthian citizens, not foreigners or slaves, yet from the start they take Medea's side, and their sympathy is founded on the oaths: the gods who guarantee them have been insulted. That sympathy will make them her accomplices by silence. Their position is delicate, since Medea's enemies are their own king and his daughter, and Euripides makes the most of it in the scenes to come [[mastronarde2002]].",
+    "The Nurse's reflection on music is a small, characteristic Euripidean surprise: a servant voicing a theory of poetry. It also asks a question the play will answer in its own way, since tragedy is exactly the kind of song that turns to grief rather than feasting [[mossman2011]]."
+   ],
+   "key": [
+    {
+     "ref": "Med. 112–114",
+     "quote": "O ye children accursed from the womb,\nHence to destruction, ye brood of a loathed one forsaken, forsaken !",
+     "note": "Medea's first words about her sons, heard from offstage, are a curse. They will be fulfilled to the letter."
+    },
+    {
+     "ref": "Med. 166–167",
+     "quote": "O father, O city, whom erst I forsook, for undoing, undoing,\nAnd for shame, when the blood of my brother I spilt on the path of my flight !",
+     "note": "Medea remembers her own past crimes. Her violence did not begin at Corinth, and she knows it."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "First Episode: Medea, the Women and Creon",
+   "lines": "214–409",
+   "section": 1,
+   "summary": [
+    "Medea comes out and addresses the Corinthian women with poise. A foreigner, she says, must adapt to the city's ways. Then she broadens her own case into a speech on the condition of all women: they must buy a husband with a dowry and take a master for their body; they cannot divorce without disgrace; they must learn the ways of a stranger's house; if the marriage fails, death is better. Men say women live safely at home while men fight; but she would rather stand in the battle line three times than give birth once. Unlike the Chorus she has no city, no family, no refuge. She asks only for their silence if she finds a way to punish Jason, and they promise it.",
+    "Creon enters and orders her into exile at once with her sons. He is honest about his reason: he fears her cleverness and her threats against his daughter. Medea answers that a reputation for wisdom brings only envy, and pleads, then kneels as a suppliant. Creon refuses until she asks for one day to prepare for exile, for the children's sake. Against his better judgement, he grants it. When he has gone, Medea tells the Chorus that she flattered him only to gain time: in this day she will kill the king, his daughter and her husband, by poison, her own art, and she calls on Hekate and on her ancestor the Sun."
+   ],
+   "analysis": [
+    "Medea's speech to the women of Corinth (230–251) is the most famous statement of women's grievances in ancient literature. It is not simply a modern manifesto put into an ancient mouth: its points, dowry, the bride moved into a stranger's household, the husband's freedom to seek company outside, reflect real features of Athenian marriage, and its rhetoric is designed to win over this particular audience. But its force is unmistakable, and the comparison of childbirth with battle claims for women a courage equal to the male heroic ideal [[foley2001]] [[mcdermott1989]].",
+    "The scene with Creon shows Medea's other face. She speaks to him as a submissive suppliant, and then, once he leaves, she reveals that the whole performance was a manipulation. The pattern, an outward show of weakness followed by a frank aside to the Chorus, will recur with Jason. Creon's single concession, made out of a father's pity, is the hinge of the plot; he even says that he knows he is making a mistake. Her speech on cleverness (sophia) also introduces one of the play's key words: Medea is sophē, clever, and everyone fears her for it [[knox1977]]."
+   ],
+   "key": [
+    {
+     "ref": "Med. 230–231",
+     "quote": "Surely, of creatures that have life and wit,\nWe women are of all things wretchedest,",
+     "note": "The opening of the great speech. Medea moves from her own case to that of 'we women', which binds the Chorus to her."
+    },
+    {
+     "ref": "Med. 250–251",
+     "quote": "Falsely they deem : twice would I under shield\nStand, rather than bear childbirth peril once.",
+     "note": "The best-known lines in the play. In Greek Medea says she would stand in the battle line 'three times' (tris); Way's 'twice' weakens the figure. The claim sets childbirth beside war as the female equivalent of heroic danger."
+    },
+    {
+     "ref": "Med. 255–256",
+     "quote": "But I, lone, cityless, and outraged thus\nOf him who kidnapped me from foreign shores,",
+     "note": "Medea's isolation as a foreigner: no city, no father, no brother. Her word for herself, apolis, 'without a city', was one of the worst conditions a Greek could imagine."
+    },
+    {
+     "ref": "Med. 282–283",
+     "quote": "I fear thee — need is none to cloak my words—\nLest on my child thou wreak some ill past cure.",
+     "note": "Creon's candour. He banishes Medea not as a tyrant but as a frightened father, which makes his fatal concession the more human."
+    },
+    {
+     "ref": "Med. 355–356",
+     "quote": "Now, if remain thou must, remain one day —\nToo short for thee to do the deeds I dread.",
+     "note": "The irony is plain to every spectator: the single day is the time-span of the play."
+    },
+    {
+     "ref": "Med. 406–409",
+     "quote": "Thou, sprung from royal father, from the Sun !\nThou know'st means. Yea, our woman-nature 'tis —\nSay they — to be most helpless for all good,\nBut fashioners most cunning of all ill.",
+     "note": "Medea spurs herself on by recalling her descent from the Sun, then turns the conventional slander against women into a weapon."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "First Stasimon: The Rivers Run Backwards",
+   "lines": "410–445",
+   "section": 1,
+   "summary": [
+    "The Chorus sing that the world has turned upside down: sacred rivers flow back to their sources, men's oaths are worthless, and so women's reputation will change; the old songs of women's faithlessness will fall silent. If Apollo had given women the gift of song, they would have answered men with a song of their own. In the second pair of stanzas they turn to Medea: she sailed from her father's home through the Clashing Rocks and now lives in a foreign land, deserted, about to be driven out, while the respect for oaths has fled from Greece."
+   ],
+   "analysis": [
+    "The ode is the play's most explicit reflection on gender and poetry. Since men have proved faithless, the Chorus argue, the tradition that made women the faithless sex has lost its authority. It is a striking moment of self-awareness in a genre written and performed by men, and it can be read either as a genuine challenge to the poetic tradition or as an irony, given what Medea is about to do [[rabinowitz1993]] [[mcdermott1989]].",
+    "The image of rivers running uphill is a traditional sign of impossibility (adynaton). Here the impossible has happened: oaths, the bonds that hold human society together under the gods, have been broken by a Greek hero. The Chorus's sympathy is still entirely with Medea."
+   ],
+   "key": [
+    {
+     "ref": "Med. 410–411",
+     "quote": "Upward aback to their fountains the sacred rivers are stealing ;\nJustice is turned to injustice, the order of old to confusion :",
+     "note": "The opening adynaton: the moral world has been turned upside down by broken oaths."
+    },
+    {
+     "ref": "Med. 421–422",
+     "quote": "And the strains of the singers of old generations for shame shall falter,\nWhich sang evermore of the treason of woman, her faithlessness ever.",
+     "note": "The Chorus challenge the male poetic tradition. The play itself will both confirm and question their hope."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Second Episode: Medea and Jason",
+   "lines": "446–626",
+   "section": 1,
+   "summary": [
+    "Jason arrives and blames Medea for her own exile: if she had accepted the rulers' decisions quietly she could have stayed, and he has tried to calm their anger. He offers her money for the journey. Medea answers with a speech of accusation. She saved his life at Colchis, killed the serpent, betrayed her father, and had Pelias killed for his sake; now he has left her, though she has borne him sons. Where can she go? Not to her father, not to the daughters of Pelias. She asks Zeus why he gave men a test for false gold but none for false men.",
+    "Jason replies like a trained speaker. Aphrodite, not Medea, saved him, since it was love that compelled her; in any case she has gained more than she gave, living among Greeks under law and enjoying fame. The marriage was not lust but prudence: as a penniless exile he wished to raise their sons in comfort and give them royal brothers. Women think only of the bed; it would be better if children could be had without them. The Chorus find him unjust. Medea answers that he should have told her of the marriage. Jason renews his offer of help and letters of introduction to friends abroad; she refuses everything, and he leaves."
+   ],
+   "analysis": [
+    "This is a formal agōn, a debate in paired speeches of the kind Athenian audiences knew from the law courts and the assembly. Medea's speech is an indictment built on facts and on the oaths; Jason's reply is a demonstration of sophistic technique, with numbered points and a claim to have been 'wise', 'temperate' and a 'friend'. He is not a monster, and some of his arguments, about the insecurity of exiles and the advantages of a royal connection, would have sounded reasonable to many Athenians. But his coldness, his claim that Medea owes her fame to him, and his wish that women did not exist make him impossible to like [[mastronarde2002]] [[allan2002]].",
+    "Jason's claim that Medea has gained by coming from a 'barbarian' land to Greece, where she learned justice and law, is the play's sharpest statement of the Greek-barbarian contrast. The irony is that it is the Greek who has broken his oaths, while the barbarian appeals to the gods who guard them. The scene also tightens the knot: Jason speaks of his care for the children, and Medea learns how much they matter to him [[hall1989]]."
+   ],
+   "key": [
+    {
+     "ref": "Med. 476–477",
+     "quote": "I saved thee, as they know, what Greeks soe'er\nEntered with thee the self-same Argo's hull,",
+     "note": "Medea's case begins with the Argonaut past. In Greek the line is famous for its hissing repetition of s-sounds (esōsa s', hōs isasin Hellēnōn hosoi)."
+    },
+    {
+     "ref": "Med. 516–517",
+     "quote": "O Zeus, ah wherefore hast thou given to men\nPlain signs for gold which is but counterfeit,",
+     "note": "The image of the touchstone: gold can be tested, men cannot. Medea's indictment ends as a complaint against the gods."
+    },
+    {
+     "ref": "Med. 536–538",
+     "quote": "First, then, in Hellas dwell'st thou, in the stead\nOf land barbaric, knowest justice, learnest\nTo live by law without respect of force.",
+     "note": "Jason's argument from Greek superiority. Its self-satisfaction exposes him, since he himself has broken the law of oaths."
+    },
+    {
+     "ref": "Med. 573–575",
+     "quote": "Would that mortals otherwise\nCould get them babes, that womankind were not,\nAnd so no curse had lighted upon men.",
+     "note": "Jason ends with a wish that echoes Hesiod's misogyny and Hippolytus' later tirade. It tells us much about why he cannot understand Medea."
+    },
+    {
+     "ref": "Med. 586–587",
+     "quote": "Thou shouldest, if not base, have wed this bride\nWith my consent, not hid it from thy friends.",
+     "note": "Medea's one-line answer exposes the secrecy of Jason's 'prudent' plan."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Second Stasimon: Love in Measure",
+   "lines": "627–662",
+   "section": 1,
+   "summary": [
+    "The Chorus pray to be spared the excess of love: Aphrodite is the most gracious of goddesses when she comes in measure, but may she never shoot them with her desire-poisoned arrows or drive them into quarrels over a marriage bed. They pray never to lose their homeland, since exile is the worst of sorrows, and they condemn the man who does not honour his friends."
+   ],
+   "analysis": [
+    "The ode generalises from what we have just seen. Love brought Medea to Greece, and love unchecked has turned to hatred. The prayer for moderation (sōphrosynē) is typical of tragic choruses, but the Chorus's thought of exile is drawn directly from Medea's situation. Their final curse on the man who betrays friends is aimed at Jason, and prepares for the arrival of a friend who will not fail her [[mastronarde2002]]."
+   ],
+   "key": [
+    {
+     "ref": "Med. 627–630",
+     "quote": "Love bringeth nor glory nor honour to men when it cometh restraining\nNot its unscanted excess : but if Kypris, in measure raining\nHer joy, cometh down, there is none other Goddess so winsome as she.",
+     "note": "The ode's theme: love in measure is a blessing, love in excess a destroyer."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Third Episode: Aegeus",
+   "lines": "663–823",
+   "section": 1,
+   "summary": [
+    "Aegeus, king of Athens, enters on his way from Delphi, where he has consulted Apollo about his childlessness; the oracle told him not to 'loose the wine-skin's foot' until he returns home, and he is going to Troezen to ask the wise king Pittheus what it means. Medea tells him of Jason's betrayal and her banishment, and begs for refuge, promising that her drugs will end his childlessness. Aegeus agrees to protect her if she comes to Athens by her own means, and at her request swears an oath by Earth and the Sun that he will never give her up.",
+    "Once he has gone, Medea reveals her full plan to the Chorus. She will feign reconciliation with Jason, send her sons with a poisoned robe and golden crown to the princess, and then kill the children, so that Jason will be left with neither old sons nor new. The Chorus beg her not to do it; she answers that this will hurt Jason most. She sends the Nurse to fetch him."
+   ],
+   "analysis": [
+    "The Aegeus scene was criticised in antiquity. Aristotle names it as an example of an irrational element in a plot, since Aegeus arrives by pure coincidence [[aristotle1995]]. Modern critics have defended it in several ways: it provides the refuge without which Medea's revenge would be suicidal; it shows a man who honours oaths and a man who longs for children, both in contrast with Jason; and it is Aegeus' desperation for sons that, on one reading, shows Medea how to destroy a man completely [[page1938]] [[mastronarde2002]].",
+    "The scene also points beyond the play. Aegeus is Theseus' father, and the riddling oracle will be fulfilled at Troezen, where Theseus is conceived. In later legend Medea married Aegeus and tried to poison Theseus. By 431 Athens itself was the city that would receive her, a point the third stasimon will turn into an uncomfortable question."
+   ],
+   "key": [
+    {
+     "ref": "Med. 679",
+     "quote": "The wine-skin's prominent foot I should not loose.",
+     "note": "The riddling oracle given to Aegeus: a warning against sexual intercourse before he returns home. Its fulfilment will be the birth of Theseus."
+    },
+    {
+     "ref": "Med. 717–718",
+     "quote": "For I will end thy childlessness, will cause\nThy seed to grow to sons ; such drugs I know.",
+     "note": "Medea's magic offers life here, just before she plans death. Her power over generation is the play's darkest irony."
+    },
+    {
+     "ref": "Med. 792–793",
+     "quote": "for I will slay my children,\nYea, mine : no man shall pluck them from mine hand.",
+     "note": "The first explicit statement of the infanticide. Way's 'Yea, mine' keeps the shock of the Greek, where the word 'mine' stands emphatically at the start of the next line."
+    },
+    {
+     "ref": "Med. 809–810",
+     "quote": "Grim to my foes, and kindly to my friends,\nFor of such is the life most glorious.",
+     "note": "Medea states the heroic code of helping friends and harming enemies, in the language of a warrior concerned for glory (eukleia)."
+    },
+    {
+     "ref": "Med. 816",
+     "quote": "Woman, wilt have the heart to slay thy sons ?",
+     "note": "The Chorus's horrified question. Medea's answer, in the next line, is the play's whole rationale for the deed: so Jason will suffer most."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Third Stasimon: In Praise of Athens",
+   "lines": "824–865",
+   "section": 1,
+   "summary": [
+    "The Chorus celebrate Athens: the descendants of Erechtheus live in a sacred land never conquered, nurtured on wisdom, in shining air, where the Muses were born and Aphrodite breathes gentle winds over the river Cephisus. Then they turn to Medea. How can such a holy city receive a woman who has killed her children? They plead with her by her knees not to do it, and ask where she will find the courage to look at her sons and kill them."
+   ],
+   "analysis": [
+    "The praise of Athens, unusual in a play set elsewhere, must have pleased the original audience, but its point is double-edged. The city of wisdom and the Muses has just promised refuge to a murderess, through the oath of its king. Euripides makes the Athenian spectators confront their own city's part in the story, on the eve of a war with Corinth's allies [[mossman2011]].",
+    "The second half anticipates the great monologue: the Chorus imagine the moment when Medea will look into her children's eyes and be unable to keep from tears. In Way's text Medea is marked as re-entering during this ode; in the Greek she probably remains on stage after sending for Jason."
+   ],
+   "key": [
+    {
+     "ref": "Med. 846–850",
+     "quote": "How then should the hallowed city,\nThe city of sacred waters,\nWhich shields with her guardian hand\nAll friends that would fare through her land,\nReceive a murderess banned,",
+     "note": "The ode's turn from praise to horror: Athens' holiness is incompatible with the deed it is about to shelter."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Fourth Episode: The False Reconciliation",
+   "lines": "866–975",
+   "section": 1,
+   "summary": [
+    "Jason returns. Medea, as she planned, apologises: she has thought it over and seen that she was mad to rage against a husband who was marrying for the good of the family. She calls the children out to embrace their father, but breaks down in tears at the sight, which she passes off as a woman's weakness. Jason, pleased, approves her change of heart and promises a fine future to the boys. Medea asks him to persuade his bride to let the children stay in Corinth, and offers to help by sending her a robe and golden crown, heirlooms from the Sun. Jason thinks the gifts unnecessary but agrees, and the boys go with him carrying them."
+   ],
+   "analysis": [
+    "The scene is a masterpiece of double meaning. Every phrase of Medea's apology plays on Jason's own arguments, and he swallows them because they flatter him; his complacent remark that it is natural for women to be angry shows how little he has learned. Her tears when the boys embrace their father are genuine, and the audience, who know the plan, hear her words about their future as a lament [[easterling1977]].",
+    "The moment when Medea says that 'gifts sway the Gods' and that gold outweighs words reverses her contempt for Jason's money in the agōn. The children are now carriers of death, and they are innocent of what they carry. The audience have watched Medea use her sons as instruments of revenge before she has killed them."
+   ],
+   "key": [
+    {
+     "ref": "Med. 889–890",
+     "quote": "But we are — women : needs not harsher word.",
+     "note": "Medea uses the stereotype of female weakness as a disguise, the same stereotype she attacked before the Chorus."
+    },
+    {
+     "ref": "Med. 901–902",
+     "quote": "Ah children, will ye thus, through many a year\nLiving, still reach him loving arms ?",
+     "note": "Her tears break through the deception. The question has a hidden meaning that only Medea and the audience understand."
+    },
+    {
+     "ref": "Med. 964–965",
+     "quote": "Nay, speak not so : gifts sway the Gods, they say.\nGold weigheth more with men than words untold.",
+     "note": "A proverb turned to murderous use. The gifts are the instrument of Medea's revenge."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Fourth Stasimon: The Gifts Are Given",
+   "lines": "976–1001",
+   "section": 1,
+   "summary": [
+    "The Chorus now have no hope for the children. The bride will accept the golden diadem and robe, put on the adornment of Hades and go to her death. Jason, an unhappy bridegroom, is bringing destruction on his sons and his bride without knowing it. And they mourn for Medea, the mother who is preparing to kill her children because her husband has left her."
+   ],
+   "analysis": [
+    "The short ode works like a prophecy of the messenger speech, and the image of the bride dressed for Hades joins wedding and funeral, a pairing that runs through the play. The Chorus's sympathy is now divided three ways, between the bride, Jason and Medea, but it is still sympathy: they mourn the killer as well as her victims [[mastronarde2002]]."
+   ],
+   "key": [
+    {
+     "ref": "Med. 980–981",
+     "quote": "And to set the adorning of Hades about her tresses golden\nShe shall take it her hands between.",
+     "note": "The bride's adornment as grave-clothes: marriage turned into death."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Fifth Episode: The Great Monologue and the Messenger",
+   "lines": "1002–1250",
+   "section": 1,
+   "summary": [
+    "The Tutor brings back the boys with the good news that the princess has accepted the gifts and the children are reprieved. Medea's groans puzzle him; she sends him indoors. Then, alone with her sons and the Chorus, she speaks the great monologue. She mourns the life she will not see them live, the marriages she will not prepare, the care in her old age she will never have. Their smiles undo her: she will take them with her into exile. Then the thought of her enemies' laughter returns, and she hardens again. She wavers again and again before deciding. Her last words are that she understands the evils she is about to do, but her passion (thumos) is stronger than her reasoning.",
+    "The Chorus reflect in anapaests that the childless are happier than parents, who live in constant worry and may lose their children at last. A Messenger arrives and urges Medea to flee: the princess and Creon are dead. She asks for every detail. He tells how the princess, at first disdainful of the boys, was won over by the robe and crown, put them on and admired herself in the mirror; then she changed colour, foamed at the mouth, and burst into flames as the crown spurted fire and the robe ate her flesh. Creon threw himself on the corpse and stuck to it; as he struggled to rise his flesh tore from his bones. Medea, resolved, goes inside to kill the children before others can do it more cruelly."
+   ],
+   "analysis": [
+    "The monologue (1021–1080) is the most discussed speech in Greek tragedy. It shows a mind divided against itself, in which the mother's love and the wronged wife's pride speak alternately, and its closing lines were already debated in antiquity: the Stoic Chrysippus cited them as a picture of passion overwhelming reason, and modern scholars have connected them with the Socratic paradox that no one does wrong knowingly. The text itself is disputed: some editors have deleted all or part of 1056–1080 as an interpolation, and the meaning of the final lines (is thumos stronger than her plans, or than her better thoughts?) is contested [[reeve1972]] [[gill1996]] [[mastronarde2002]] [[foley2001]].",
+    "The messenger speech is the longest and most horrifying in surviving tragedy. Its realism, the mirror, the mincing steps, the flesh melting like resin, is unlike anything in Aeschylus or Sophocles, and its pity falls on the victims, especially the old king who dies clasping his child. Medea's delight in it is the moment when many readers' sympathy finally turns. Yet her last speech before going in is not exultant: 'they are dear', she says, 'and I a wretched woman' [[easterling1977]]."
+   ],
+   "key": [
+    {
+     "ref": "Med. 1040–1041",
+     "quote": "Woe ! woe ! why gaze your eyes on me, my darlings ?\nWhy smile to me the latest smile of all ?",
+     "note": "The children's smiles, the most touching detail in the monologue. The boys are silent on stage throughout and do not understand what is happening."
+    },
+    {
+     "ref": "Med. 1078–1080",
+     "quote": "Now, now, I learn what horrors I intend :\nBut passion overmastereth sober thought :\nAnd this is cause of direst ills to men.",
+     "note": "The famous conclusion. Way's 'passion' renders thumos, and 'sober thought' the disputed word bouleumata, which may mean her 'plans' or her 'deliberations'."
+    },
+    {
+     "ref": "Med. 1161–1162",
+     "quote": "And by a shining mirror ranged her tresses,\nSmiling at her own phantom image there.",
+     "note": "The princess's vanity, observed with cruel precision just before the poison works."
+    },
+    {
+     "ref": "Med. 1200–1201",
+     "quote": "The flesh-flakes from her bones, like the pine's tears,\n'Neath that mysterious drug's devourings melted, —",
+     "note": "The flesh dripping like resin from a pine; the simile recalls the pine of Pelion in the play's first lines."
+    },
+    {
+     "ref": "Med. 1240–1241",
+     "quote": "They needs must die : and, since it needs must be,\nEven I will give them death, who gave them life.",
+     "note": "Medea's final reasoning: the Corinthians will kill the boys anyway, so she will kill them herself. The argument repeats lines from the monologue (1062–1063)."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Fifth Stasimon: The Children's Cries",
+   "lines": "1251–1292",
+   "section": 1,
+   "summary": [
+    "The Chorus call on Earth and on the Sun, Medea's ancestor, to look down and stop her before she kills. Then the children's cries are heard from inside: they cannot escape their mother's hands. The Chorus ask whether they should go in, but do not. They call her a rock or iron, and recall the only other mother they know of who killed her children, Ino, driven mad by Hera, who leapt into the sea with her sons."
+   ],
+   "analysis": [
+    "Greek tragedy did not show violent death on stage, and here the killing is heard, not seen, as the boys cry out in the spoken metre between the Chorus's lyrics. The Chorus's failure to act is conventional, but the convention is exposed: they ask whether to intervene and remain where they are, as they have kept their promise of silence throughout [[mastronarde2002]].",
+    "The Ino parallel is revealing for what it does not match. Ino killed her children in god-sent madness; Medea kills hers in full knowledge. The ode thus underlines the novelty of Euripides' version, a deliberate infanticide by a sane mother [[easterling1977]]."
+   ],
+   "key": [
+    {
+     "ref": "Med. 1251–1254",
+     "quote": "O Earth, O all-revealing splendour\nOf the Sun, look down on a woman accurst,\nOr ever she slake the murder-thirst\nOf a mother whose hands would smite the tender",
+     "note": "An appeal to the Sun, who will answer in his own way by sending the chariot of escape."
+    },
+    {
+     "ref": "Med. 1271",
+     "quote": "What shall I do ? — How flee my mother's hands ?",
+     "note": "One of the children's only lines, spoken from inside the house."
+    },
+    {
+     "ref": "Med. 1282–1283",
+     "quote": "Of one have I heard that laid hands on her loved ones of old, one only,\nEven Ino distraught of the Gods, when Zeus' bride drave her, lonely",
+     "note": "The single precedent the Chorus can find, and it does not fit."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Exodos: The Chariot of the Sun",
+   "lines": "1293–1419",
+   "section": 1,
+   "summary": [
+    "Jason rushes in to save his sons from the vengeance of Creon's family, and learns from the Chorus that Medea has killed them. As he orders the doors broken open, Medea appears above the house in a chariot given her by the Sun (the Greek text does not describe it, but ancient tradition and vase-painting give it serpents, Way's 'dragons'), with the children's bodies. Jason curses her as a lioness (Way: 'tigress') and a monster worse than Scylla, and says that no Greek woman would have dared such a deed. Medea answers that she has wounded his heart as he deserved.",
+    "In a rapid exchange they blame each other for the deaths. Medea refuses to give him the bodies: she will bury them in the sanctuary of Hera Akraia, where the Corinthians will hold a festival of atonement for ever, and she will go to Athens to live with Aegeus. She prophesies that Jason will die struck on the head by a timber of the rotting Argo. Jason begs to touch his sons' bodies and is refused. The Chorus close with lines on the unexpected outcomes the gods bring about."
+   ],
+   "analysis": [
+    "The final scene reverses the play's whole visual logic. Medea, who has been on the ground pleading, now stands above, on the crane or the roof of the stage-building, in the position normally given to gods who appear at the end of Euripidean plays to settle the action and found cults. She does exactly what such gods do: she announces a ritual and prophesies the future. Aristotle disapproved of an ending brought about 'by the machine' rather than the plot [[aristotle1995]], but the image is the play's last argument: the Sun saves his granddaughter, and no god punishes her [[knox1977]] [[mastronarde2002]].",
+    "The exchange with Jason is bitter and mutually destructive. He now speaks as a father in grief, and his wish to touch the bodies is moving; she has her revenge, but tells him that she suffers too ('grief is gain, so thou laugh not'). The final choral lines, which appear with small variations at the end of several Euripidean plays, may have been added later; their bland generality leaves the audience to judge for themselves [[page1938]]."
+   ],
+   "key": [
+    {
+     "ref": "Med. 1321–1322",
+     "quote": "Such chariot hath my father's sire, the Sun,\nGiven me, a defence from foeman's hand.",
+     "note": "The dragon chariot is the Sun's gift. Medea's divine ancestry, mentioned throughout, now becomes visible."
+    },
+    {
+     "ref": "Med. 1339–1340",
+     "quote": "There is no Grecian woman that had dared\nThis :",
+     "note": "Jason's last resort is the Greek-barbarian contrast. The play has given the audience reason to doubt it."
+    },
+    {
+     "ref": "Med. 1360",
+     "quote": "For thine heart have I wrung, as well behoved.",
+     "note": "The aim of the revenge, achieved. In Greek Medea says she has 'touched' (gripped) his heart."
+    },
+    {
+     "ref": "Med. 1361",
+     "quote": "Ha, but thou sorrowest too, thou shar'st mine ills !",
+     "note": "Jason's reply, and Medea's answer that grief is worth it if he cannot laugh, show that the revenge costs her too."
+    },
+    {
+     "ref": "Med. 1386–1387",
+     "quote": "By Argo's wreckage smitten on the skull,",
+     "note": "Medea's prophecy of Jason's death. The ship of the play's first line returns at its end."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Medea",
+   "side": "Colchis",
+   "text": "Princess of Colchis, granddaughter of the Sun, a skilled user of drugs and magic, wife of Jason and mother of two sons. Betrayed by Jason's new marriage and faced with exile, she plans and carries out the murder of the princess, her father and her own children. She is intelligent, eloquent, proud and capable of manipulating every man she meets; she speaks the language of a Homeric hero concerned with honour and the laughter of enemies, and also the language of a loving mother. The play never lets us settle on a single view of her: victim, avenger, barbarian, heroine and near-goddess."
+  },
+  {
+   "name": "Jason",
+   "side": "Corinth",
+   "text": "Leader of the Argonauts, who owed his success to Medea and has now married the daughter of Creon. He defends the marriage as a prudent decision for the family's security and presents himself as rational and generous. His arguments are clever but his self-satisfaction, his ingratitude and his contempt for women condemn him in the eyes of the Chorus. Only at the end, as a bereaved father, does he win some pity."
+  },
+  {
+   "name": "The Nurse",
+   "side": "Household",
+   "text": "An old household slave, devoted to Medea, who has cared for her children. She speaks the prologue, sympathises with her mistress, fears her temper and foresees disaster. She is the first of the play's ordinary people whose loyalty and decency frame the action."
+  },
+  {
+   "name": "The Tutor",
+   "side": "Household",
+   "text": "The old slave who looks after the boys (Way's 'Children's Guardian'). He brings the news of Creon's decree and later the news that the gifts were accepted; his cynical remark that everyone loves himself more than his neighbour sums up Jason's behaviour."
+  },
+  {
+   "name": "Creon",
+   "side": "Corinth",
+   "text": "King of Corinth, father of Jason's new bride. He banishes Medea from fear for his daughter, but yields to her plea for one day, knowing as he does so that he may be making a mistake. He dies horribly embracing his daughter's burning body."
+  },
+  {
+   "name": "The princess",
+   "side": "Corinth",
+   "text": "Creon's daughter and Jason's new bride, never seen and never named in the play (later writers call her Glauce or Creusa). The Messenger shows her as vain and disdainful of Medea's children, but her death is the most pitiful thing he describes."
+  },
+  {
+   "name": "Aegeus",
+   "side": "Athens",
+   "text": "King of Athens, son of Pandion, childless and on his way from Delphi. He swears to give Medea refuge, in return for her promise to cure his childlessness. He is courteous, pious and honest, a contrast to Jason, and his visit gives Medea her escape."
+  },
+  {
+   "name": "The Messenger",
+   "side": "Household",
+   "text": "One of Jason's servants, who narrates the deaths of the princess and Creon in the longest messenger speech in surviving tragedy and urges Medea to flee."
+  },
+  {
+   "name": "The children",
+   "side": "Household",
+   "text": "Medea and Jason's two young sons, unnamed. They appear in several scenes but speak only when they cry out from inside the house as they are killed. They are the play's innocent centre, used by both parents as arguments and by their mother as instruments of revenge."
+  },
+  {
+   "name": "The Chorus",
+   "side": "Corinth",
+   "text": "Women of Corinth who sympathise with Medea, keep her secret at her request and support her revenge on Jason, but beg her not to kill her children. Their odes reflect on oaths, love, Athens and the fate of women, and they remain silent witnesses to the murders."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Oaths, marriage and betrayal",
+   "text": [
+    "Medea's grievance is not only that Jason has taken a new wife but that he has broken oaths sworn by the gods. Again and again she, the Nurse and the Chorus appeal to the oaths and to the clasp of the right hand; the Chorus sing that respect for oaths has fled from Greece. Jason never answers this charge. Aegeus' oath, sworn on stage, shows what such a promise should be.",
+    "Marriage itself is shown with unusual frankness. Medea's speech on women's lot treats the wife as a stranger bought into a household; Jason treats marriage as a political and economic alliance. The play's imagery repeatedly fuses wedding and funeral, from the bridal crown that kills to Medea's mourning for the weddings her sons will never have [[foley2001]] [[rabinowitz1993]]."
+   ]
+  },
+  {
+   "title": "The foreigner",
+   "text": [
+    "Medea is a barbarian, a woman from the far edge of the Greek world, without city or family in Greece. Her isolation is the source of her helplessness and part of the source of her rage. Jason insists that she has been civilised by coming to Greece, and in the end calls her a monster such as no Greek woman would be.",
+    "Yet the play complicates the contrast. Medea speaks Greek, appeals to Greek gods and Greek values, and is admired by the Corinthian women; Jason, the Greek, is the oath-breaker. Whether the play confirms or exposes Greek prejudice about barbarians has been debated, and the answer may be both [[hall1989]] [[allan2002]]."
+   ]
+  },
+  {
+   "title": "Cleverness (sophia)",
+   "text": [
+    "Everyone fears Medea because she is clever. Creon banishes her for it; she complains that a reputation for wisdom brings only envy. Jason prides himself on his own cleverness in speech, and the Chorus condemn his 'words tricked out full cunningly'. The play is full of the rhetoric of the Athenian law courts and the sophists, and it examines what such skill is for.",
+    "Medea's intelligence is the tool of her revenge: she plans, deceives, calculates and anticipates every obstacle. The Messenger's closing reflection, that those who seem wise and clever in speech are the most foolish of all, applies to Jason and perhaps to her [[knox1977]]."
+   ]
+  },
+  {
+   "title": "Revenge and honour",
+   "text": [
+    "Medea thinks like a hero of epic. She refuses to be laughed at by her enemies, insists on helping friends and harming foes, and seeks a glorious name. These are the values of Akhilleus and Ajax, and Euripides gives them to a woman whose only field of action is the household [[knox1977]] [[burnett1973]].",
+    "The cost of revenge is the play's great subject. To wound Jason as deeply as possible, Medea must destroy what she herself loves most, and she knows it. The tragedy lies less in the deaths of the princess and Creon than in the self-destruction that her code of honour demands."
+   ]
+  },
+  {
+   "title": "Passion and reason",
+   "text": [
+    "The monologue's last lines, in which Medea says she understands the evils she is about to do but that her thumos is stronger, have made the play a classic text on the divided self. Medea is not mad, like Ino or Heracles; she acts in full knowledge.",
+    "Ancient philosophers, especially the Stoics, read the scene as a lesson in what happens when passion defeats reason; modern critics have asked whether the conflict is between passion and reason at all, or between two passions, love for her children and anger at Jason [[gill1996]] [[foley2001]]."
+   ]
+  },
+  {
+   "title": "Children",
+   "text": [
+    "The children are on stage for much of the play and say almost nothing. Every adult uses them: Medea to win a day from Creon, Jason to justify his marriage, Medea again to carry the poison. Aegeus' longing for children and the Chorus's anapaests on the troubles of parenthood surround the infanticide with reflections on what children mean.",
+    "At the end parents quarrel over the bodies. Medea says she killed them to hurt their father; Jason says she killed them for the sake of a bed. Neither speaks for the boys themselves [[easterling1977]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "The Argo",
+   "text": "The play begins with a wish that the Argo had never sailed and ends with a prophecy that Jason will be killed by a piece of its wreckage. The heroic voyage is seen from its ruinous end, and the Clashing Rocks return in the choral odes as the gate Medea passed on her way to Greece."
+  },
+  {
+   "title": "Supplication",
+   "text": "Medea kneels as a suppliant to Creon and to Aegeus, and the Chorus beg her by her knees not to kill her children. Supplication was a sacred bond in Greek religion; Medea uses it as a weapon, and the play shows how the forms of piety can serve deception."
+  },
+  {
+   "title": "Laughter of enemies",
+   "text": "Medea's fear of being laughed at recurs at every turning point and finally decides the monologue. It is the language of epic and Sophoclean heroes, who cannot bear to be mocked [[knox1977]]."
+  },
+  {
+   "title": "Animal images",
+   "text": "The Nurse compares Medea to a bull and a lioness with cubs; Jason at the end calls her a lioness (Way's 'tigress') and Scylla. The images make her more than human or less than human, and they culminate in the serpent chariot."
+  },
+  {
+   "title": "Wedding and funeral",
+   "text": "The poisoned robe and crown are wedding gifts that become grave-clothes; Medea mourns that she will never hold the wedding torch for her sons; the Chorus imagine the bride dressed for Hades. Marriage is the cause of every death in the play."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The robe and diadem",
+   "text": "Heirlooms from the Sun, beautiful and lethal. They embody Medea's descent and her magic, and they turn the conventional gifts of marriage into instruments of murder."
+  },
+  {
+   "title": "The dragon chariot",
+   "text": "The chariot of the Sun, drawn by winged serpents, lifts Medea above Jason and out of human reach. It symbolises her divine ancestry and the absence of any punishment for her crime, and it places her where the gods stand at the end of other plays."
+  },
+  {
+   "title": "The Sun",
+   "text": "Medea's grandfather, invoked in oaths and prayers, giver of the poisoned gifts and the chariot. The Chorus call on the Sun to stop her; he rescues her instead."
+  },
+  {
+   "title": "The door of the house",
+   "text": "The children are killed behind the door that the Chorus do not open and that Jason tries to break down. The house, the woman's domain, becomes the place of slaughter, and the door is the boundary between what can be shown and what can only be heard."
+  },
+  {
+   "title": "Gold",
+   "text": "Medea asks why Zeus gave a test for false gold but not for false men; Jason offers gold; Medea says gold weighs more than words. Gold is both the measure of value and the substance of the killing crown."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Did Euripides invent the infanticide?",
+   "text": [
+    "Earlier versions of the myth seem to have made the Corinthians responsible for the children's deaths, or told of Medea's failed attempt to make them immortal. Ancient scholars recorded a story that the Corinthians paid Euripides to shift the guilt onto Medea, which is surely gossip, and a claim that he took the plot from Neophron's Medea.",
+    "Most modern scholars accept that the deliberate infanticide is Euripides' innovation, or at least that his play made it canonical, and that Neophron's surviving fragments come from a later play. If so, the first audience did not know the outcome, and the play's hints, the curses on the children, the Chorus's fears, would have been genuinely suspenseful [[page1938]] [[mastronarde2002]] [[griffiths2006]]."
+   ],
+   "cite": [
+    "page1938",
+    "mastronarde2002",
+    "griffiths2006"
+   ]
+  },
+  {
+   "title": "The great monologue: text and meaning",
+   "text": [
+    "Medea's speech at 1021–1080 has been suspected by editors. Some have deleted 1056–1080, or parts of it, because of repetitions and apparent contradictions: she seems to speak to the children after sending them indoors, and to give two different reasons for the killing. Others defend the whole as a portrait of a mind in turmoil, and modern editions differ in what they bracket [[reeve1972]] [[mastronarde2002]] [[diggle1984]] [[kovacs1994]].",
+    "The closing lines raise a further question. Do they describe a conflict between passion and reason, or between two sets of desires? Do they reply to Socrates' view that no one does wrong knowingly? Ancient Stoics used them as a textbook example; modern readers have seen in them a psychology of the self more complex than any theory [[gill1996]] [[foley2001]]."
+   ],
+   "cite": [
+    "reeve1972",
+    "mastronarde2002",
+    "diggle1984",
+    "kovacs1994",
+    "gill1996",
+    "foley2001"
+   ]
+  },
+  {
+   "title": "Medea as hero",
+   "text": [
+    "Bernard Knox argued that Medea is presented in the mould of the Sophoclean hero: she speaks of honour, refuses compromise, fears the laughter of enemies and keeps her purpose against all advice. The tragedy, on this reading, is the application of the male heroic code by a woman in a domestic world, where its only possible victims are her own family [[knox1977]].",
+    "Others have read the play within the conventions of revenge drama, in which the punishment of an oath-breaker has a real claim to justice, and the gods who guard oaths do nothing to stop it [[burnett1973]]. Against both readings, critics point to the horror of the infanticide and the play's refusal to offer moral comfort [[mossman2011]]."
+   ],
+   "cite": [
+    "knox1977",
+    "burnett1973",
+    "mossman2011"
+   ]
+  },
+  {
+   "title": "Barbarian or Greek?",
+   "text": [
+    "Medea is a foreigner, and Jason at the end blames her deeds on her barbarian nature. Some critics have taken this to be the play's view: Medea's savagery is what a Greek audience expected of the East. Edith Hall's study of the barbarian in tragedy shows how such stereotypes worked, and how tragedy both used and questioned them [[hall1989]].",
+    "Many readers note that Medea's values are thoroughly Greek and that her case is presented sympathetically for most of the play. On this view the barbarian label is Jason's evasion, not the play's verdict, and Medea's 'otherness' is as much a product of her isolation as of her origins [[allan2002]] [[mastronarde2002]]."
+   ],
+   "cite": [
+    "hall1989",
+    "allan2002",
+    "mastronarde2002"
+   ]
+  },
+  {
+   "title": "Feminist play or misogynist play?",
+   "text": [
+    "Medea's speech on women's lot and the Chorus's song about the old slanders on women have made the play a landmark of feminist thought, recited at suffragist meetings and staged as a protest against the treatment of wives [[hall2000]]. On this reading Euripides gave a voice to women's grievances unheard elsewhere in Greek literature.",
+    "Others argue that the play finally confirms the misogynist stereotype it voices: the clever woman is a murderess, and the mother kills her children. Feminist critics have also analysed how the play exchanges and controls women's bodies, and how Medea's power remains defined by male categories [[rabinowitz1993]] [[mcdermott1989]] [[foley2001]]."
+   ],
+   "cite": [
+    "hall2000",
+    "rabinowitz1993",
+    "mcdermott1989",
+    "foley2001"
+   ]
+  },
+  {
+   "title": "Is the infanticide psychologically convincing?",
+   "text": [
+    "Some older critics found the killing incredible, a melodramatic device. P. E. Easterling argued, on the contrary, that Euripides takes great pains to make it intelligible: Medea's pride, her isolation, the fear that the Corinthians will kill the children anyway, and her need to destroy Jason completely combine into a terrible logic [[easterling1977]].",
+    "The question matters because it decides whether the play is a study of a recognisable human being or of a monster. Easterling's view, that Medea is frighteningly human, has become the dominant one [[gill1996]]."
+   ],
+   "cite": [
+    "easterling1977",
+    "gill1996"
+   ]
+  },
+  {
+   "title": "The Aegeus scene and the ending",
+   "text": [
+    "Aristotle criticised the play twice: for the improbable arrival of Aegeus, and for an ending brought about by the stage machine instead of the plot [[aristotle1995]]. Many modern critics defend both. Aegeus provides Medea's escape and a moral contrast with Jason; and his childlessness may suggest to her the deepest way of hurting a man [[page1938]] [[mastronarde2002]].",
+    "The ending, in which Medea appears like a god and founds a cult, has been read as a sign that the gods endorse her, as a sign of her inhumanity, or as Euripides' deliberate refusal to resolve the moral questions the play has raised [[knox1977]] [[mossman2011]]."
+   ],
+   "cite": [
+    "aristotle1995",
+    "page1938",
+    "mastronarde2002",
+    "knox1977",
+    "mossman2011"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Med. 1–2",
+   "quote": "Would God that Argo's hull had never flown\nThrough those blue Clashing Rocks to Kolchis-land,",
+   "who": "The Nurse",
+   "explanation": "The play's first words recall the heroic voyage as a disaster. The Argonaut story, celebrated in epic, is seen from the point of view of a ruined household."
+  },
+  {
+   "ref": "Med. 230–231",
+   "quote": "Surely, of creatures that have life and wit,\nWe women are of all things wretchedest,",
+   "who": "Medea",
+   "explanation": "The start of Medea's speech on the condition of women, a key text for feminist readings. It also wins her the Chorus's complicity."
+  },
+  {
+   "ref": "Med. 250–251",
+   "quote": "Falsely they deem : twice would I under shield\nStand, rather than bear childbirth peril once.",
+   "who": "Medea",
+   "explanation": "Childbirth is set beside war as the female form of heroic courage. Euripides' Greek says 'three times'; Way's version softens the number."
+  },
+  {
+   "ref": "Med. 516–517",
+   "quote": "O Zeus, ah wherefore hast thou given to men\nPlain signs for gold which is but counterfeit,",
+   "who": "Medea",
+   "explanation": "There is no touchstone for false men. The image condemns Jason and questions the gods' arrangement of the world."
+  },
+  {
+   "ref": "Med. 573–574",
+   "quote": "Would that mortals otherwise\nCould get them babes, that womankind were not,",
+   "who": "Jason",
+   "explanation": "Jason's misogynist wish, a cliché of Greek thought, shows his contempt for the very relationships he claims to protect."
+  },
+  {
+   "ref": "Med. 792–793",
+   "quote": "for I will slay my children,\nYea, mine : no man shall pluck them from mine hand.",
+   "who": "Medea",
+   "explanation": "The infanticide is announced for the first time. 'Mine' insists on her possession of the children, the ground of both her love and her crime."
+  },
+  {
+   "ref": "Med. 1078–1080",
+   "quote": "Now, now, I learn what horrors I intend :\nBut passion overmastereth sober thought :\nAnd this is cause of direst ills to men.",
+   "who": "Medea",
+   "explanation": "The end of the great monologue, quoted by philosophers since antiquity as the classic picture of passion defeating reason."
+  },
+  {
+   "ref": "Med. 1240–1241",
+   "quote": "They needs must die : and, since it needs must be,\nEven I will give them death, who gave them life.",
+   "who": "Medea",
+   "explanation": "Medea's final justification. The mother who gave them life will take it, so that hostile hands will not."
+  },
+  {
+   "ref": "Med. 1321–1322",
+   "quote": "Such chariot hath my father's sire, the Sun,\nGiven me, a defence from foeman's hand.",
+   "who": "Medea",
+   "explanation": "Medea's escape in the chariot of the Sun places her beyond human justice and in the position of a god."
+  },
+  {
+   "ref": "Med. 1416–1417",
+   "quote": "Manifold things unhoped-for the Gods to accomplishment bring.\nAnd the things that we looked for, the Gods deign not to fulfil them ;",
+   "who": "The Chorus",
+   "explanation": "The closing lines, shared with several Euripidean plays. Their generality leaves the audience to draw its own conclusions."
+  }
+ ],
+ "questions": [
+  {
+   "q": "How does the prologue shape our sympathies before Medea appears?",
+   "hint": "Consider who speaks (two slaves), what they say about Jason and the oaths, and the hints of danger to the children (1–130)."
+  },
+  {
+   "q": "What is Medea arguing in her speech to the women of Corinth, and why does she make it?",
+   "hint": "Look at 214–266: the dowry, divorce, childbirth and war, her lack of city and kin, and her request for silence."
+  },
+  {
+   "q": "Who wins the debate between Medea and Jason?",
+   "hint": "Compare the structure of their speeches (465–575), Jason's arguments from Aphrodite, Greek civilisation and prudence, and the Chorus's verdict."
+  },
+  {
+   "q": "Why does Euripides include the Aegeus scene, and was Aristotle right to criticise it?",
+   "hint": "Think about Medea's escape, Aegeus' childlessness, his oath, and the moment Medea reveals her plan to kill the children (663–823)."
+  },
+  {
+   "q": "How does the third stasimon's praise of Athens complicate the play's relation to its first audience?",
+   "hint": "Read 824–865 alongside Aegeus' oath and the historical moment of 431 BC."
+  },
+  {
+   "q": "Trace Medea's shifts of decision in the great monologue. What finally decides her?",
+   "hint": "Count the reversals in 1021–1080, and weigh the laughter of enemies, the danger from the Corinthians and her love for the boys."
+  },
+  {
+   "q": "What is the effect of the messenger speech, and of Medea's response to it?",
+   "hint": "Look at the realism of the details (1136–1230), the pity for Creon, and her demand for a slow and full account."
+  },
+  {
+   "q": "How does the play use the Greek-barbarian contrast?",
+   "hint": "Compare Jason at 536–538 and 1339–1343 with Medea's appeals to oaths and to Greek gods."
+  },
+  {
+   "q": "What does the dragon chariot mean? Does the ending endorse Medea?",
+   "hint": "Think about the deus ex machina in other plays, the Sun's role throughout, and the cult of Hera Akraia (1317–1419)."
+  },
+  {
+   "q": "Compare Euripides' Medea with Seneca's Medea (also on this site). How do the two playwrights treat the infanticide and the audience's sympathy?",
+   "hint": "Look at the ending of each play, the presence of Medea's magic, and whether the Roman Medea doubts her purpose as the Greek one does."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "allan2002",
+   "text": "Allan, William. Euripides: Medea. Duckworth Companions to Greek and Roman Tragedy. London: Duckworth, 2002."
+  },
+  {
+   "id": "aristotle1995",
+   "text": "Aristotle. Poetics. Edited and translated by Stephen Halliwell. In Aristotle: Poetics; Longinus: On the Sublime; Demetrius: On Style. Loeb Classical Library 199. Cambridge, MA: Harvard University Press, 1995."
+  },
+  {
+   "id": "boyle2014",
+   "text": "Boyle, A. J., ed. and trans. Seneca: Medea. Oxford: Oxford University Press, 2014."
+  },
+  {
+   "id": "burnett1973",
+   "text": "Burnett, Anne Pippin. 'Medea and the Tragedy of Revenge.' Classical Philology 68 (1973): 1–24."
+  },
+  {
+   "id": "clauss1997",
+   "text": "Clauss, James J., and Sarah Iles Johnston, eds. Medea: Essays on Medea in Myth, Literature, Philosophy, and Art. Princeton: Princeton University Press, 1997."
+  },
+  {
+   "id": "diggle1984",
+   "text": "Diggle, James, ed. Euripidis Fabulae. Vol. 1. Oxford Classical Texts. Oxford: Clarendon Press, 1984."
+  },
+  {
+   "id": "easterling1977",
+   "text": "Easterling, P. E. 'The Infanticide in Euripides' Medea.' Yale Classical Studies 25 (1977): 177–191."
+  },
+  {
+   "id": "foley2001",
+   "text": "Foley, Helene P. Female Acts in Greek Tragedy. Princeton: Princeton University Press, 2001."
+  },
+  {
+   "id": "gill1996",
+   "text": "Gill, Christopher. Personality in Greek Epic, Tragedy, and Philosophy: The Self in Dialogue. Oxford: Clarendon Press, 1996."
+  },
+  {
+   "id": "griffiths2006",
+   "text": "Griffiths, Emma. Medea. Gods and Heroes of the Ancient World. London: Routledge, 2006."
+  },
+  {
+   "id": "hall1989",
+   "text": "Hall, Edith. Inventing the Barbarian: Greek Self-Definition through Tragedy. Oxford: Clarendon Press, 1989."
+  },
+  {
+   "id": "hall2000",
+   "text": "Hall, Edith, Fiona Macintosh, and Oliver Taplin, eds. Medea in Performance 1500–2000. Oxford: Legenda, 2000."
+  },
+  {
+   "id": "hunter1989",
+   "text": "Hunter, R. L., ed. Apollonius of Rhodes: Argonautica Book III. Cambridge Greek and Latin Classics. Cambridge: Cambridge University Press, 1989."
+  },
+  {
+   "id": "knox1977",
+   "text": "Knox, Bernard M. W. 'The Medea of Euripides.' Yale Classical Studies 25 (1977): 193–225."
+  },
+  {
+   "id": "kovacs1994",
+   "text": "Kovacs, David, ed. and trans. Euripides: Cyclops, Alcestis, Medea. Loeb Classical Library 12. Cambridge, MA: Harvard University Press, 1994."
+  },
+  {
+   "id": "mastronarde2002",
+   "text": "Mastronarde, Donald J., ed. Euripides: Medea. Cambridge Greek and Latin Classics. Cambridge: Cambridge University Press, 2002."
+  },
+  {
+   "id": "mcdermott1989",
+   "text": "McDermott, Emily A. Euripides' Medea: The Incarnation of Disorder. University Park: Pennsylvania State University Press, 1989."
+  },
+  {
+   "id": "michelini1987",
+   "text": "Michelini, Ann Norris. Euripides and the Tragic Tradition. Madison: University of Wisconsin Press, 1987."
+  },
+  {
+   "id": "mossman2011",
+   "text": "Mossman, Judith, ed. and trans. Euripides: Medea. Aris & Phillips Classical Texts. Oxford: Aris & Phillips, 2011."
+  },
+  {
+   "id": "page1938",
+   "text": "Page, D. L., ed. Euripides: Medea. Oxford: Clarendon Press, 1938."
+  },
+  {
+   "id": "rabinowitz1993",
+   "text": "Rabinowitz, Nancy Sorkin. Anxiety Veiled: Euripides and the Traffic in Women. Ithaca: Cornell University Press, 1993."
+  },
+  {
+   "id": "reeve1972",
+   "text": "Reeve, M. D. 'Euripides, Medea 1021–1080.' Classical Quarterly 22 (1972): 51–61."
+  }
+ ]
+}

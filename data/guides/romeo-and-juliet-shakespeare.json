@@ -1,0 +1,1340 @@
+{
+ "work": "romeo-and-juliet-shakespeare",
+ "title": "The Tragedy of Romeo and Juliet",
+ "author": "William Shakespeare",
+ "quoteEdition": "romeo-and-juliet-shakespeare",
+ "updated": "2026-10-19",
+ "unit": "Scene",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "William Shakespeare (1564–1616), actor, sharer and principal playwright of the Lord Chamberlain's Men"
+  },
+  {
+   "label": "Genre",
+   "value": "Tragedy of love, in blank verse, rhymed verse and prose, with sonnets set into the dialogue"
+  },
+  {
+   "label": "Written",
+   "value": "Probably about 1595–96, in the same years as A Midsummer Night's Dream and Richard II"
+  },
+  {
+   "label": "Early texts",
+   "value": "The short First Quarto (Q1, 1597), the fuller Second Quarto (Q2, 1599) on which most editions are based, and the First Folio (1623), which reprints a later quarto"
+  },
+  {
+   "label": "Main source",
+   "value": "Arthur Brooke's narrative poem The Tragicall Historye of Romeus and Juliet (1562), itself from a French version of an Italian novella by Matteo Bandello"
+  },
+  {
+   "label": "Setting",
+   "value": "Verona, with one scene in Mantua; mid-July, about a fortnight before Lammas Eve (31 July)"
+  },
+  {
+   "label": "Time span",
+   "value": "About four days, from a Sunday morning to the dawn of the following Thursday; Brooke's story takes months"
+  },
+  {
+   "label": "Main characters",
+   "value": "Romeo, son of Montague; Juliet, daughter of Capulet; Mercutio; Tybalt; Benvolio; Juliet's Nurse; Friar Lawrence; Capulet and Lady Capulet; Count Paris; Prince Escalus"
+  },
+  {
+   "label": "Key scenes",
+   "value": "The brawl (1.1), Queen Mab (1.4), the shared sonnet (1.5), the balcony (2.2), the deaths of Mercutio and Tybalt (3.1), the parting at dawn (3.5), the potion (4.3), the tomb (5.3)"
+  },
+  {
+   "label": "Quote text",
+   "value": "The modernised text of Project Gutenberg's Complete Works, which follows Q2 in the main and spells the Friar's name 'Lawrence' (many modern editions print 'Laurence')"
+  }
+ ],
+ "context": [
+  "Romeo and Juliet belongs to the middle of the 1590s, when Shakespeare was writing for the Lord Chamberlain's Men and moving between comedy, history and lyric poetry. The First Quarto's title page says the play had been acted by 'the L. of Hunsdon his Servants', the name the company carried between July 1596 and March 1597, and most scholars date the writing to about 1595–96. It sits beside A Midsummer Night's Dream, whose comic 'Pyramus and Thisbe' plays the story of lovers who die through a misunderstanding for laughs, and beside the lyric experiments of Shakespeare's sonnets and Venus and Adonis [[evans1984]] [[gibbons1980]].",
+  "The story was old and well known. Versions appear in Italian novellas by Masuccio Salernitano (1476) and Luigi da Porto (about 1530), who first set it in Verona and named the lovers Romeo and Giulietta; Matteo Bandello retold it in 1554, and Pierre Boaistuau adapted Bandello into French in 1559. Shakespeare's main source was the English poem by Arthur Brooke, The Tragicall Historye of Romeus and Juliet (1562), some three thousand lines in the long-lined couplets called poulter's measure. He may also have known William Painter's prose version in The Palace of Pleasure (1567) [[bullough1957]].",
+  "Shakespeare kept Brooke's plot almost step by step, but changed its shape and its sympathies. Brooke's action runs over months; Shakespeare's runs over four days, and the speed itself becomes part of the tragedy. Brooke's Juliet is sixteen; Shakespeare's is not yet fourteen. Brooke's preface presents the story as a warning against lovers who neglect their parents' advice and the counsel of their elders; the play gives the lovers its best poetry and lays much of the blame on the feud and on chance. Shakespeare also built up minor figures: Mercutio, a mere name with cold hands in Brooke, becomes the play's great wit, and the Nurse becomes one of his most vivid comic voices [[bullough1957]] [[levenson2000]].",
+  "The play survives in two independent early texts. The First Quarto (Q1, 1597) is roughly three quarters the length of the Second Quarto (Q2, 1599), which announces itself as 'newly corrected, augmented, and amended'. Q2 is usually thought to derive from Shakespeare's own draft and is the basis of modern editions; Q1 has been explained as a reconstruction from memory by actors, as an abridged acting version, or as both, and its vivid stage directions are often taken as a record of early performance. A later quarto (Q3, 1609) lies behind the text of the First Folio (1623) [[hosley1953]] [[erne2007]] [[weis2012]].",
+  "The play has never left the stage, though for long stretches it was performed in altered forms. Thomas Otway turned it into a Roman play, Caius Marius (1679), and David Garrick's version (1748) cut Rosaline and let Juliet wake before Romeo dies. Charlotte Cushman played Romeo opposite her sister in London in 1845; John Gielgud and Laurence Olivier alternated Romeo and Mercutio in 1935; Franco Zeffirelli's Old Vic production (1960) and film (1968) made the lovers convincingly young. The story has been reimagined as music and dance (Berlioz, Gounod, Tchaikovsky, Prokofiev), as the musical West Side Story (1957), and in Baz Luhrmann's film William Shakespeare's Romeo + Juliet (1996) [[levenson1987]] [[loehlin2002]]."
+ ],
+ "plot": [
+  "In Verona an old feud divides the houses of Montague and Capulet. After a street brawl the Prince threatens death to anyone who breaks the peace again. Romeo, Montague's son, is pining for Rosaline, who has vowed to stay chaste. Capulet agrees that Count Paris may court his daughter Juliet, not yet fourteen, and holds a feast. Romeo and his friends Benvolio and Mercutio go masked; Romeo sees Juliet, they speak a sonnet together and kiss, and only then learn that their families are enemies.",
+  "That night Romeo climbs into the Capulet orchard and hears Juliet, at her window, declare her love. They agree to marry. Friar Lawrence consents in the hope of ending the feud, the Nurse carries messages, and the two are married in secret the next afternoon. Within the hour Juliet's cousin Tybalt kills Mercutio, and Romeo, enraged, kills Tybalt. The Prince banishes Romeo to Mantua.",
+  "Romeo spends his wedding night with Juliet and leaves at dawn. Her father, unaware of the marriage, orders her to marry Paris on Thursday and threatens to throw her out when she refuses; the Nurse advises her to forget Romeo. The Friar gives Juliet a potion that will make her seem dead for two and forty hours and promises to send for Romeo. When Capulet moves the wedding forward a day, Juliet drinks the potion that night, and on the wedding morning her family finds her 'dead' and carries her to the Capulet vault.",
+  "The Friar's letter never reaches Romeo, because the messenger is shut in by plague searchers. Romeo's servant brings the news of Juliet's death; Romeo buys poison and rides to Verona. At the tomb he kills Paris, drinks the poison beside Juliet and dies. She wakes, finds him dead, refuses the Friar's offer of escape and stabs herself. The Friar explains everything to the Prince, and Montague and Capulet, at last reconciled, promise to raise golden statues of each other's child."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Prologue: The sonnet that tells the ending",
+   "lines": "Prologue (lines 1–14)",
+   "section": 1,
+   "summary": [
+    "A Chorus steps forward and, in fourteen lines, tells the audience the whole story: two equally noble households in Verona are at feud; from them come two 'star-cross'd' lovers whose deaths will end their parents' quarrel; and the play will show this in 'two hours'. The Chorus closes by asking for a patient hearing."
+   ],
+   "analysis": [
+    "The Prologue is a Shakespearean sonnet, three quatrains and a couplet rhyming ababcdcdefefgg. Opening a tragedy with the form of the love sonnet tells us at once that this will be a play about love written in the language of love poetry, and that the lovers' story is already shaped, finished and told before they appear. By giving away the ending the Chorus shifts our attention from what will happen to how and why it happens [[levin1960]].",
+    "The key words pull in two directions. 'Star-cross'd' and 'death-mark'd' suggest a destiny written in the heavens; 'civil blood makes civil hands unclean' and 'their parents' rage' place the cause in human hatred. The play never settles which explanation matters more, and that tension is the root of the long debate about fate and responsibility [[dickey1957]]. The Prologue is printed in both Q1 and Q2 but omitted from the First Folio [[evans1984]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet, Prologue 1–2",
+     "quote": "Two households, both alike in dignity,\nIn fair Verona, where we lay our scene,",
+     "note": "'Dignity' means rank: the houses are equals, so neither side of the feud can be simply blamed."
+    },
+    {
+     "ref": "Romeo and Juliet, Prologue 6",
+     "quote": "A pair of star-cross’d lovers take their life;",
+     "note": "'Star-cross'd' means thwarted by the stars. 'Take their life' means both 'are born' and, ominously, 'kill themselves'."
+    },
+    {
+     "ref": "Romeo and Juliet, Prologue 12",
+     "quote": "Is now the two hours’ traffic of our stage;",
+     "note": "A rare reference to playing time in the period; 'traffic' means business or dealings."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Act I, Scene 1: The street brawl and Romeo's lovesickness",
+   "lines": "Act I, Scene 1 (the whole scene)",
+   "section": 2,
+   "summary": [
+    "Two Capulet servants, Sampson and Gregory, swap bawdy jokes and provoke two Montague servants by biting their thumbs at them. A fight breaks out. Benvolio, a Montague, tries to part them; Tybalt, a Capulet, attacks him; citizens join in, and the old heads of the houses call for their swords while their wives hold them back. Prince Escalus stops the riot and declares that anyone who disturbs the streets again will pay with his life.",
+    "Romeo's parents and Benvolio then talk about Romeo, who has been wandering at dawn and shutting himself up in darkened rooms. When Romeo arrives, he tells Benvolio that he loves a woman who has sworn to remain chaste. Benvolio advises him to look at other beauties; Romeo says that nothing can teach him to forget."
+   ],
+   "analysis": [
+    "The scene moves from low to high: servants' puns, a brawl, the Prince's verse sentence, and finally Romeo's Petrarchan lament. The feud is shown first as a pointless habit, kept alive by the servants and by Tybalt's eagerness, while the fathers are old men whose wives mock their swords. Sampson's jokes join fighting and sex, a link the play will keep returning to; Coppélia Kahn reads the feud as a ritual through which young men prove their manhood [[kahn1981]].",
+    "Romeo's love for Rosaline, who never appears, is a love of words. His speech is a string of oxymorons ('O brawling love! O loving hate!') drawn from the conventions of Petrarchan poetry, in which the lover suffers for a cold and distant lady. The style is deliberately overdone, and yet the paradoxes of love and hate describe the play's real situation more exactly than Romeo knows [[levin1960]] [[mahood1957]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 1.1",
+     "quote": "What, drawn, and talk of peace? I hate the word\nAs I hate hell, all Montagues, and thee:",
+     "note": "Tybalt's first speech defines him: he hates the very word that the Prince and Benvolio try to impose."
+    },
+    {
+     "ref": "Romeo and Juliet 1.1",
+     "quote": "If ever you disturb our streets again,\nYour lives shall pay the forfeit of the peace.",
+     "note": "The Prince's sentence sets the legal trap that will close on Romeo in Act III."
+    },
+    {
+     "ref": "Romeo and Juliet 1.1",
+     "quote": "Feather of lead, bright smoke, cold fire, sick health!",
+     "note": "Romeo's oxymorons are the stock language of the lovesick sonneteer."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act I, Scene 2: Paris's suit and the invitation list",
+   "lines": "Act I, Scene 2 (the whole scene)",
+   "section": 3,
+   "summary": [
+    "Count Paris asks Capulet for Juliet's hand. Capulet says she is not yet fourteen and should wait two more summers, but tells Paris to woo her and to come to his feast that night. He hands a servant a list of guests to invite. The servant cannot read and asks the first passer-by, who happens to be Romeo. The list includes 'My fair niece Rosaline', and Benvolio persuades Romeo to go to the feast so that he can compare Rosaline with other beauties."
+   ],
+   "analysis": [
+    "Capulet at this point seems a mild and careful father: his consent depends on Juliet's 'scope of choice'. The contrast with his rage in Act III, when he will force a marriage within days, is one of the play's measures of how quickly events change people. Paris's reply, that younger girls are already mothers, is answered by Capulet's warning that those made mothers early are soon 'marr'd'.",
+    "Chance enters the plot through an illiterate servant: Romeo learns of the feast only because he happens to be in the street. Shakespeare takes the episode from Brooke but sharpens its accidental quality, the first of many small coincidences on which the story turns [[bullough1957]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 1.2",
+     "quote": "My child is yet a stranger in the world,\nShe hath not seen the change of fourteen years;",
+     "note": "Juliet's youth is stressed from the start; Shakespeare made her younger than Brooke's heroine."
+    },
+    {
+     "ref": "Romeo and Juliet 1.2",
+     "quote": "Younger than she are happy mothers made.",
+     "note": "Paris's argument for early marriage, which Capulet at first resists."
+    },
+    {
+     "ref": "Romeo and Juliet 1.2",
+     "quote": "And I will make thee think thy swan a crow.",
+     "note": "Benvolio's promise comes true, though not as he intends."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act I, Scene 3: The Nurse's memories and the marriage question",
+   "lines": "Act I, Scene 3 (the whole scene)",
+   "section": 4,
+   "summary": [
+    "Lady Capulet calls for Juliet and tries to speak with her privately, then asks the Nurse to stay. The Nurse launches into a long, rambling memory of Juliet's weaning: it happened eleven years ago, on the day of an earthquake, and the toddler fell on her face and her late husband made a bawdy joke about it. Lady Capulet then asks Juliet what she thinks of marriage and recommends Paris in an elaborate comparison of him to a fine book. Juliet answers cautiously that she will look at him, but no further than her mother allows."
+   ],
+   "analysis": [
+    "This is the scene that establishes the Nurse. Her speech is in verse but has the rhythms of real talk: repetitions, digressions, interruptions of herself, and a joke told three times. Stanley Wells has shown how carefully this apparent 'inconsequentiality' is made, and how it gives her a whole life of memories, a dead daughter, Susan, and a dead husband, around the girl she nursed [[wells1980]].",
+    "The scene also sets out three generations of women. Lady Capulet was a mother at about Juliet's age and treats marriage as a social arrangement; the Nurse sees it in bodily terms ('Women grow by men'); Juliet's dutiful answer is the last time she speaks as an obedient daughter. The Nurse's line about the earthquake has been used to date the play to 1591, after an English earthquake of 1580, but most editors treat it as too slight to bear that weight [[evans1984]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 1.3",
+     "quote": "Thou wast the prettiest babe that e’er I nurs’d:",
+     "note": "The Nurse's love for Juliet is physical and maternal; she has been closer to her than her mother."
+    },
+    {
+     "ref": "Romeo and Juliet 1.3",
+     "quote": "It is an honour that I dream not of.",
+     "note": "Juliet's first answer about marriage, polite and distant."
+    },
+    {
+     "ref": "Romeo and Juliet 1.3",
+     "quote": "I’ll look to like, if looking liking move:",
+     "note": "Juliet's careful wordplay promises obedience. Within hours, looking will move her far beyond what her mother intends."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act I, Scene 4: Mercutio and Queen Mab",
+   "lines": "Act I, Scene 4 (the whole scene)",
+   "section": 5,
+   "summary": [
+    "Romeo, Benvolio, Mercutio and other masked young men are on their way to the Capulet feast. Romeo refuses to dance and says he will only carry a torch. He mentions a dream he has had; Mercutio replies that dreamers lie, and launches into a long, dazzling speech about Queen Mab, the tiny fairy who drives her chariot over sleepers and makes each one dream of his own desires: lovers of love, lawyers of fees, soldiers of cutting throats. The speech grows darker and more sexual until Romeo stops him. As they go in, Romeo says he fears some consequence 'yet hanging in the stars' that will begin with this night."
+   ],
+   "analysis": [
+    "The Queen Mab speech is a set piece of fantastic miniaturism: a chariot made of a hazelnut, a whip of cricket's bone. Mab seems to be largely Shakespeare's own invention as the 'fairies' midwife', who delivers men of their dreams. The speech shows Mercutio's restless wit, but its turn from delicate whimsy to soldiers, nightmares and sexual menace suggests something feverish beneath it. Mercutio himself calls dreams 'the children of an idle brain', and his scepticism about love and dreams sets him against Romeo [[porter1988]].",
+    "Romeo's closing premonition is the first of several in which the lovers seem to foresee their end. Whether such moments show fate at work or only the lovers' own fearfulness is part of the larger question of how far the tragedy is destined [[dickey1957]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 1.4",
+     "quote": "O, then, I see Queen Mab hath been with you.\nShe is the fairies’ midwife, and she comes",
+     "note": "The opening of Mercutio's speech, a reply to Romeo's claim that dreams can be true."
+    },
+    {
+     "ref": "Romeo and Juliet 1.4",
+     "quote": "True, I talk of dreams,\nWhich are the children of an idle brain,",
+     "note": "Mercutio's dismissal of dreams, and by extension of Romeo's romantic seriousness."
+    },
+    {
+     "ref": "Romeo and Juliet 1.4",
+     "quote": "Some consequence yet hanging in the stars,\nShall bitterly begin his fearful date\nWith this night’s revels;",
+     "note": "Romeo's foreboding echoes the Prologue's 'star-cross'd' lovers."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act I, Scene 5: The feast and the shared sonnet",
+   "lines": "Act I, Scene 5 (the whole scene)",
+   "section": 6,
+   "summary": [
+    "At the feast Capulet welcomes the masked guests and reminisces with an old cousin. Romeo sees Juliet and is struck by her beauty. Tybalt recognises Romeo's voice and wants to kill him, but Capulet, who has heard Romeo well spoken of, forbids any disturbance and humiliates Tybalt, who withdraws promising revenge. Romeo approaches Juliet; their first exchange forms a sonnet, and they kiss twice. The Nurse interrupts, and each learns from her who the other is."
+   ],
+   "analysis": [
+    "Romeo's first sight of Juliet abandons the language he used for Rosaline. Instead of paradoxes of suffering he finds images of light against darkness, which Caroline Spurgeon identified as the play's governing imagery [[spurgeon1935]]. Beside it runs Tybalt's threat, so that love and hatred are born in the same moment and the same room.",
+    "The lovers' first fourteen lines make a perfect Shakespearean sonnet, built on the metaphor of a pilgrim (Romeo, whose name suggests a pilgrim to Rome) and a saint's shrine; it ends in a kiss, and a fresh quatrain begins at once. The form shows two people composing a poem together, with Juliet matching and then teasing Romeo's conceits ('You kiss by the book'). Critics have read the shared sonnet as a moment where Petrarchan convention, usually a man addressing a silent woman, becomes a dialogue [[levin1960]] [[whittier1989]].",
+    "The scene closes with discovery. Romeo's 'My life is my foe's debt' and Juliet's rhymed lament at learning his name state the play's central paradox in a single couplet."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 1.5",
+     "quote": "O, she doth teach the torches to burn bright!",
+     "note": "Romeo's first words about Juliet: she outshines the light itself."
+    },
+    {
+     "ref": "Romeo and Juliet 1.5",
+     "quote": "If I profane with my unworthiest hand\nThis holy shrine, the gentle sin is this,",
+     "note": "The first lines of the shared sonnet, which uses the religious language of pilgrims and saints."
+    },
+    {
+     "ref": "Romeo and Juliet 1.5",
+     "quote": "You kiss by the book.",
+     "note": "Juliet's wry comment: Romeo kisses expertly, or as if following a manual."
+    },
+    {
+     "ref": "Romeo and Juliet 1.5",
+     "quote": "My only love sprung from my only hate!\nToo early seen unknown, and known too late!",
+     "note": "Juliet's couplet compresses the tragedy's love-hate paradox into a rhyme."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act II, Chorus: Old desire and young affection",
+   "lines": "Act II, Chorus (lines 1–14)",
+   "section": 7,
+   "summary": [
+    "The Chorus returns with a second sonnet. Romeo's old love for Rosaline is dead and his new love is returned; but Juliet belongs to the enemy house, and the lovers have few means of meeting. Passion, the Chorus says, will give them power and opportunity."
+   ],
+   "analysis": [
+    "The second Chorus tells us little that we have not seen, and many productions cut it; it does not appear in Q1. Its value lies in its tone, which treats Romeo's change of heart with a slight irony, and in its final line, which balances 'extremities' against 'extreme sweet' and so restates the play's pattern of opposites [[evans1984]]. After this, the Chorus never appears again, and the play's later sonnets are spoken by the characters themselves."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet, Act 2 Chorus",
+     "quote": "Now old desire doth in his deathbed lie,\nAnd young affection gapes to be his heir;",
+     "note": "The image of inheritance treats Romeo's change of love with gentle mockery."
+    },
+    {
+     "ref": "Romeo and Juliet, Act 2 Chorus",
+     "quote": "But passion lends them power, time means, to meet,\nTempering extremities with extreme sweet.",
+     "note": "The closing couplet: danger and sweetness are mixed together."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act II, Scene 1: Mercutio's mock conjuration",
+   "lines": "Act II, Scene 1 (the whole scene)",
+   "section": 8,
+   "summary": [
+    "Romeo, leaving the feast, climbs the wall of the Capulet orchard. Benvolio and Mercutio look for him. Mercutio, still thinking he loves Rosaline, pretends to raise him like a spirit by calling on Rosaline's eyes, lips and thighs, with a stream of obscene jokes. They give up and go home."
+   ],
+   "analysis": [
+    "This short scene places Mercutio's crude, bodily view of love immediately before the balcony scene, so that the audience hears the two ideas of love side by side. Mercutio does not know that Rosaline is forgotten, and his bawdy is aimed at the wrong woman; Romeo, hidden beyond the wall, is already in a different world. The wall itself becomes the scene's symbol, separating the street of male banter from the private garden [[porter1988]] [[kahn1981]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 2.1",
+     "quote": "Can I go forward when my heart is here?\nTurn back, dull earth, and find thy centre out.",
+     "note": "Romeo calls his body 'dull earth' drawn back to its centre, Juliet."
+    },
+    {
+     "ref": "Romeo and Juliet 2.1",
+     "quote": "If love be blind, love cannot hit the mark.",
+     "note": "Mercutio's pun turns Cupid's arrow into a sexual joke."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act II, Scene 2: The balcony scene",
+   "lines": "Act II, Scene 2 (the whole scene)",
+   "section": 9,
+   "summary": [
+    "In the orchard Romeo sees Juliet appear at a window above and compares her to the sun. Not knowing he is there, she wishes that he were not a Montague and that names did not matter. Romeo answers her, and she is startled and embarrassed that he has overheard. She warns him that her kinsmen will kill him if they find him, asks if he truly loves her, and stops him from swearing by the inconstant moon. She worries that their contract is too sudden. Called inside by the Nurse, she returns twice, and they agree that she will send a messenger at nine the next morning to learn when and where they will marry."
+   ],
+   "analysis": [
+    "Shakespeare's text says only that Juliet 'appears above at a window'; the 'balcony' comes from later staging. The scene is built on height and distance: Romeo below in the dark, Juliet above in light. His speech is full of celestial images (sun, stars, angel), while hers is direct, practical and searching. She is the one who thinks about danger, names and marriage, and who refuses the ready-made vows of love poetry. Her 'What's in a name?' raises the play's question of whether identity is given by family or chosen by the self [[belsey2014]].",
+    "Juliet's fear that the contract is 'too rash, too unadvis'd, too sudden' names the play's central worry about haste, and her image of lightning, gone before one can name it, anticipates the brevity of their love. Yet her lines on love as boundless as the sea are the most confident statement of love's value in the play. Q2 at the end of this scene gives Romeo four lines on the 'grey-eyed morn' that it repeats, with variants, at the start of the next scene for the Friar, an apparent sign of Shakespeare's revisions in his draft; the quote text gives them to the Friar [[gibbons1980]] [[weis2012]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 2.2.2–3",
+     "quote": "But soft, what light through yonder window breaks?\nIt is the east, and Juliet is the sun!",
+     "note": "Romeo's opening turns Juliet into the source of light; the light-dark imagery continues."
+    },
+    {
+     "ref": "Romeo and Juliet 2.2.33",
+     "quote": "O Romeo, Romeo, wherefore art thou Romeo?",
+     "note": "'Wherefore' means 'why', not 'where': Juliet asks why he must be Romeo, a Montague."
+    },
+    {
+     "ref": "Romeo and Juliet 2.2.43–44",
+     "quote": "What’s in a name? That which we call a rose\nBy any other name would smell as sweet;",
+     "note": "Juliet argues that names are arbitrary labels; the rest of the play tests whether this is true in Verona."
+    },
+    {
+     "ref": "Romeo and Juliet 2.2",
+     "quote": "It is too rash, too unadvis’d, too sudden,\nToo like the lightning,",
+     "note": "Juliet's misgiving introduces the motif of haste and the image of lightning."
+    },
+    {
+     "ref": "Romeo and Juliet 2.2",
+     "quote": "My bounty is as boundless as the sea,\nMy love as deep;",
+     "note": "Love imagined as a gift that increases as it is given."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Act II, Scene 3: Friar Lawrence's herbs",
+   "lines": "Act II, Scene 3 (the whole scene)",
+   "section": 10,
+   "summary": [
+    "At dawn Friar Lawrence gathers herbs and reflects in rhyming couplets that every plant contains both good and harm, as men contain grace and rude will. Romeo arrives, not having slept, and the Friar assumes he has been with Rosaline. Romeo explains that he now loves Juliet and asks to be married that day. The Friar scolds him for changing so fast, but agrees, hoping the marriage will turn the households' rancour to love."
+   ],
+   "analysis": [
+    "The Friar's speech is the play's moral key: the same flower holds 'poison' and 'medicine', and virtue misapplied turns to vice. His sleeping draught will prove the point, as a remedy that becomes a cause of death. His sententious couplets mark him as the voice of measured wisdom, yet he too acts at once and for a political motive, the reconciliation of the families [[dickey1957]].",
+    "His last line, 'they stumble that run fast', sums up the warning against haste, but the plot will show that slowness is equally fatal: the Friar's letter arrives too late, and he reaches the tomb a minute after Romeo has died. Many modern editions spell his name 'Laurence'; the Gutenberg text uses 'Lawrence'."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 2.3",
+     "quote": "Virtue itself turns vice being misapplied,\nAnd vice sometime’s by action dignified.",
+     "note": "The Friar's principle of double natures applies to his own medicine and to the lovers' passion."
+    },
+    {
+     "ref": "Romeo and Juliet 2.3",
+     "quote": "Young men’s love then lies\nNot truly in their hearts, but in their eyes.",
+     "note": "The Friar's sceptical response to Romeo's sudden change from Rosaline to Juliet."
+    },
+    {
+     "ref": "Romeo and Juliet 2.3",
+     "quote": "Wisely and slow; they stumble that run fast.",
+     "note": "A proverb that states the play's warning against haste."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Act II, Scene 4: Wit in the streets and the Nurse's errand",
+   "lines": "Act II, Scene 4 (the whole scene)",
+   "section": 11,
+   "summary": [
+    "Benvolio and Mercutio learn that Tybalt has sent Romeo a challenge. Mercutio mocks Tybalt as a fashionable duellist who fights by the rules of fencing manuals. Romeo arrives in high spirits, and he and Mercutio fence with puns. The Nurse comes looking for Romeo, and Mercutio teases her crudely before leaving. The Nurse warns Romeo not to deceive Juliet; Romeo tells her that Juliet should come to Friar Lawrence's cell that afternoon to be married, and that his man will bring a rope ladder for the night."
+   ],
+   "analysis": [
+    "Romeo's quick, bawdy exchange with Mercutio shows him restored to his friends' world: love has made him sociable instead of melancholy. Mercutio's scorn for Tybalt's fencing style (the 'passado', the 'punto reverso') sets up their fatal duel, and his mocking of Petrarchan poetry ('the numbers that Petrarch flowed in') attacks the language of love that Romeo has already left behind [[porter1988]].",
+    "The Nurse's prose speeches, full of self-importance, good sense and muddled grammar, show her loyalty to Juliet as well as her vanity. The rope ladder and the Nurse's errand mark the turn from talk to action; within a few hours, the marriage will be made [[wells1980]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 2.4",
+     "quote": "More than Prince of cats.",
+     "note": "Tybalt's name recalls Tybert, the cat in the Reynard the Fox stories."
+    },
+    {
+     "ref": "Romeo and Juliet 2.4",
+     "quote": "Now is he for the numbers that Petrarch flowed in.",
+     "note": "Mercutio mocks the love poetry of Petrarch and his imitators."
+    },
+    {
+     "ref": "Romeo and Juliet 2.4",
+     "quote": "Two may keep counsel, putting one away?",
+     "note": "The Nurse's proverb about secrets: two can keep one if the third is absent."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Act II, Scene 5: Juliet waits for news",
+   "lines": "Act II, Scene 5 (the whole scene)",
+   "section": 12,
+   "summary": [
+    "Juliet has been waiting three hours for the Nurse, who left at nine. When the Nurse returns, she complains about her aching bones and her breathlessness, praises Romeo's looks, and asks whether Juliet has dined, while Juliet begs for the news. At last the Nurse tells her to go to Friar Lawrence's cell, where a husband is waiting."
+   ],
+   "analysis": [
+    "This is a comic scene about time: Juliet's impatience against the Nurse's leisurely teasing. Juliet's soliloquy contrasts love's speed (thoughts, doves, Cupid's wings) with the slowness of the old. The Nurse's delays are partly play, partly physical tiredness, and partly a way of enjoying the importance her secret gives her. The comedy darkens in retrospect, because later Juliet will again wait for the Nurse's news, and it will be of death [[snyder1979]] [[wells1980]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 2.5",
+     "quote": "Love’s heralds should be thoughts,\nWhich ten times faster glides than the sun’s beams,",
+     "note": "Juliet wishes for a messenger as quick as thought."
+    },
+    {
+     "ref": "Romeo and Juliet 2.5",
+     "quote": "Jesu, what haste? Can you not stay a while?",
+     "note": "The Nurse's question touches the play's central theme."
+    },
+    {
+     "ref": "Romeo and Juliet 2.5",
+     "quote": "Then hie you hence to Friar Lawrence’ cell;\nThere stays a husband to make you a wife.",
+     "note": "The Nurse at last delivers the news."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Act II, Scene 6: The secret wedding",
+   "lines": "Act II, Scene 6 (the whole scene)",
+   "section": 13,
+   "summary": [
+    "In his cell the Friar prays that heaven will bless the marriage. Romeo says that no sorrow can outweigh one minute with Juliet and that death may do what it likes once she is his. The Friar warns him that violent delights have violent ends and urges him to love moderately. Juliet arrives; the lovers exchange speeches about their joy, and the Friar leads them away to be married."
+   ],
+   "analysis": [
+    "The wedding itself takes place offstage. The scene consists mostly of warnings and boasts: Romeo's defiance of 'love-devouring death' tempts fate in the audience's hearing, and the Friar's image of fire and powder (gunpowder) that 'as they kiss consume' anticipates the speed of the coming catastrophe. Juliet's reply to Romeo's request for eloquence, that true wealth cannot be counted, sets her characteristic plainness against his rhetoric [[levin1960]].",
+    "In Brooke there is a long gap between wedding and disaster; Shakespeare places the killing of Tybalt within an hour. The structure gives the comic first half its ending, a marriage, and immediately turns it towards tragedy [[snyder1979]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 2.6",
+     "quote": "Then love-devouring death do what he dare,\nIt is enough I may but call her mine.",
+     "note": "Romeo's defiance of death becomes terrible irony."
+    },
+    {
+     "ref": "Romeo and Juliet 2.6",
+     "quote": "These violent delights have violent ends,\nAnd in their triumph die; like fire and powder,\nWhich as they kiss consume.",
+     "note": "The Friar's warning links love, kissing and destruction."
+    },
+    {
+     "ref": "Romeo and Juliet 2.6",
+     "quote": "Too swift arrives as tardy as too slow.",
+     "note": "Haste defeats itself: the play's paradox of time."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Act III, Scene 1: Mercutio and Tybalt die",
+   "lines": "Act III, Scene 1 (the whole scene)",
+   "section": 14,
+   "summary": [
+    "On a hot afternoon Benvolio urges Mercutio to go indoors to avoid a fight. Tybalt arrives looking for Romeo; Mercutio provokes him. Romeo comes in, newly married, and refuses Tybalt's challenge, speaking of a love for him that he cannot explain. Mercutio, disgusted at this 'vile submission', draws on Tybalt. Romeo steps between them, and Tybalt stabs Mercutio under Romeo's arm. Mercutio curses both houses and dies offstage. Romeo, blaming Juliet's beauty for making him 'effeminate', kills Tybalt in revenge, cries that he is 'fortune's fool', and flees. The Prince, hearing Benvolio's account and the demands of Lady Capulet and Montague, banishes Romeo."
+   ],
+   "analysis": [
+    "This is the turning point of the play: in a few minutes the comedy of the first two acts becomes tragedy. Susan Snyder describes the first half as following the pattern of comedy, where obstacles can be overcome, and the death of Mercutio as the moment that pattern breaks and choice narrows into necessity [[snyder1979]]. John Dryden recorded a tradition that Shakespeare said he had to kill Mercutio in the third act or be killed by him, a tribute to the character's power to draw attention [[porter1988]].",
+    "Romeo's action is a choice between two codes. His peace-making speech belongs to his new private identity as Juliet's husband; his revenge belongs to the public code of honour, in which a man must answer an insult and avenge a friend. Kahn reads his words about being made 'effeminate' as the feud's code reclaiming him [[kahn1981]]. Mercutio's 'A plague o' both your houses', repeated three times, turns blame from the stars to the feud. The scene's heat ('these hot days') makes the blood that stirs literal [[dickey1957]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 3.1",
+     "quote": "For now these hot days, is the mad blood stirring.",
+     "note": "Benvolio links the season's heat to violence."
+    },
+    {
+     "ref": "Romeo and Juliet 3.1",
+     "quote": "Romeo, the love I bear thee can afford\nNo better term than this: Thou art a villain.",
+     "note": "Tybalt's insult, which Romeo, now his kinsman by marriage, refuses."
+    },
+    {
+     "ref": "Romeo and Juliet 3.1",
+     "quote": "I am hurt.\nA plague o’ both your houses. I am sped.",
+     "note": "Mercutio's curse falls on Montagues and Capulets alike."
+    },
+    {
+     "ref": "Romeo and Juliet 3.1",
+     "quote": "Thy beauty hath made me effeminate\nAnd in my temper soften’d valour’s steel.",
+     "note": "Romeo blames love for his failure to fight, and turns back to the code of honour."
+    },
+    {
+     "ref": "Romeo and Juliet 3.1",
+     "quote": "O, I am fortune’s fool!",
+     "note": "Romeo sees himself as the plaything of fortune, just after a choice of his own."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Act III, Scene 2: 'Gallop apace' and the word 'banished'",
+   "lines": "Act III, Scene 2 (the whole scene)",
+   "section": 15,
+   "summary": [
+    "Juliet, alone, longs for night to come and bring Romeo to her bed. The Nurse enters wringing her hands and lamenting someone's death, and Juliet at first thinks Romeo is dead. When she learns that Romeo has killed Tybalt and been banished, she breaks into contradictory insults against him, then turns on the Nurse when the Nurse curses Romeo. She decides that the word 'banished' is worse than ten thousand Tybalts' deaths. The Nurse promises to bring Romeo to her that night."
+   ],
+   "analysis": [
+    "Juliet's soliloquy is an epithalamium, a wedding song spoken by the bride, and unusually frank about her desire. She calls on the horses of the sun to gallop and on night to come; the mention of Phaeton, who lost control of the sun's chariot and was destroyed, darkens the speech. The image of Romeo cut 'in little stars' imagines him transfigured after death, a hint of the ending [[spurgeon1935]].",
+    "The Nurse's confused report repeats the comic delays of 2.5 in a tragic key. Juliet's string of oxymorons ('Beautiful tyrant, fiend angelical') recalls Romeo's in 1.1, but now they express a real conflict between love for her husband and loyalty to her family. Her choice of Romeo over Tybalt is the first step in her separation from the Nurse and from her house [[mahood1957]] [[levenson2000]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 3.2",
+     "quote": "Gallop apace, you fiery-footed steeds,\nTowards Phoebus’ lodging.",
+     "note": "Juliet urges the sun's horses westward to bring on her wedding night."
+    },
+    {
+     "ref": "Romeo and Juliet 3.2",
+     "quote": "Take him and cut him out in little stars,\nAnd he will make the face of heaven so fine\nThat all the world will be in love with night,",
+     "note": "Juliet imagines Romeo transformed into stars, joining love, night and death."
+    },
+    {
+     "ref": "Romeo and Juliet 3.2",
+     "quote": "Beautiful tyrant, fiend angelical,\nDove-feather’d raven, wolvish-ravening lamb!",
+     "note": "Oxymorons that express Juliet's divided feelings on learning of Tybalt's death."
+    },
+    {
+     "ref": "Romeo and Juliet 3.2",
+     "quote": "Shall I speak ill of him that is my husband?",
+     "note": "Juliet's loyalty decisively moves from her family to her husband."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Act III, Scene 3: Romeo in the Friar's cell",
+   "lines": "Act III, Scene 3 (the whole scene)",
+   "section": 16,
+   "summary": [
+    "Hiding in the Friar's cell, Romeo hears that he has been banished, not sentenced to death, and says banishment is worse than death because it separates him from Juliet. He rejects the Friar's 'philosophy' and throws himself on the floor. The Nurse arrives and describes Juliet's weeping; Romeo tries to stab himself. The Friar stops him and, in a long speech, rebukes him for unmanly despair, reminds him of his good fortune, and sets out a plan: Romeo will spend the night with Juliet, go to Mantua, and wait until the marriage can be announced and a pardon obtained."
+   ],
+   "analysis": [
+    "The scene mirrors 3.2: in both, a lover receives the news of banishment and responds with extravagant despair, but Romeo's grief is more self-pitying than Juliet's. His insistence on the word 'banished' echoes her speech, so that the two scenes form a pair. The Friar's counsel is wise and his plan reasonable, but it depends on time, patience and luck, the three things the play keeps withholding [[dickey1957]].",
+    "The Friar's 'Art thou a man?' speech judges Romeo's tears as womanish and his fury as bestial, using the period's ideas of manhood as reasoned self-control. His alternative to the feud's version of manhood is philosophical restraint, but Romeo's attempted suicide shows how close love and self-destruction already are [[kahn1981]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 3.3",
+     "quote": "There is no world without Verona walls,\nBut purgatory, torture, hell itself.",
+     "note": "For Romeo, exile from Juliet is exile from the world."
+    },
+    {
+     "ref": "Romeo and Juliet 3.3",
+     "quote": "Thou cutt’st my head off with a golden axe,\nAnd smilest upon the stroke that murders me.",
+     "note": "Romeo rejects the mercy of banishment as a disguised death."
+    },
+    {
+     "ref": "Romeo and Juliet 3.3",
+     "quote": "Thou canst not speak of that thou dost not feel.",
+     "note": "Youth's reply to age: the Friar's wisdom is useless to someone in Romeo's state."
+    },
+    {
+     "ref": "Romeo and Juliet 3.3",
+     "quote": "Art thou a man? Thy form cries out thou art.\nThy tears are womanish,",
+     "note": "The Friar invokes manhood as self-mastery to stop Romeo's suicide."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Act III, Scene 4: Capulet sets the wedding day",
+   "lines": "Act III, Scene 4 (the whole scene)",
+   "section": 17,
+   "summary": [
+    "Late on Monday night Paris visits the grieving Capulets. Capulet suddenly decides that Juliet will be ruled by him and promises her to Paris; he first suggests Wednesday, then settles on Thursday, with only a few friends because of Tybalt's recent death. He tells his wife to inform Juliet before she goes to bed."
+   ],
+   "analysis": [
+    "This brief scene is one of the play's turning points, and its irony is sharp: while the father arranges the marriage below, the daughter is upstairs on her wedding night with Romeo. Capulet's change from the patient father of 1.2 is unexplained, but it fits the play's pattern of sudden reversals; his 'Do you like this haste?' and his remark that it is so late it will soon be early make time itself feel compressed. The scene also shows how a father could dispose of a daughter's hand in the period, without consulting her [[callaghan1994]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 3.4",
+     "quote": "I think she will be rul’d\nIn all respects by me;",
+     "note": "Capulet assumes his daughter's obedience."
+    },
+    {
+     "ref": "Romeo and Juliet 3.4",
+     "quote": "Monday! Ha, ha! Well, Wednesday is too soon,\nA Thursday let it be;",
+     "note": "The fixing of the day sets the deadline for the rest of the tragedy."
+    },
+    {
+     "ref": "Romeo and Juliet 3.4",
+     "quote": "it is so very very late that we\nMay call it early by and by.",
+     "note": "Night and morning blur together, as they will in the next scene."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "Act III, Scene 5: The lark, the quarrel and the Nurse's betrayal",
+   "lines": "Act III, Scene 5 (the whole scene)",
+   "section": 18,
+   "summary": [
+    "At dawn Juliet tries to persuade Romeo that the bird they hear is the nightingale, not the lark, so that he can stay; he agrees to stay and die, and she then urges him to go. He climbs down, and she sees him below 'as one dead in the bottom of a tomb'. Lady Capulet comes in, thinks Juliet is weeping for Tybalt, promises to have Romeo poisoned in Mantua, and announces the marriage to Paris on Thursday. Juliet refuses. Capulet arrives and, in a violent rage, threatens to drag her to church or turn her into the streets; her mother will not help her. The Nurse advises her to marry Paris, since Romeo is as good as dead. Juliet pretends to agree, and when alone curses the Nurse and resolves to go to the Friar, or die."
+   ],
+   "analysis": [
+    "The dawn parting is an aubade, a lovers' dawn song, and its debate about the birds briefly lets the lovers invent their own time. The shift from Juliet's 'It is not yet near day' to her 'Hie hence' and Romeo's 'More dark and dark our woes' turns light into the enemy. Juliet's vision of Romeo in the tomb is the strongest of the play's forebodings [[spurgeon1935]].",
+    "In the rest of the scene Juliet is stripped of every adult support. Her ambiguous replies to her mother allow her to grieve for Romeo while seeming to hate him. Capulet's fury, with its insults and threat of disinheritance, exposes the power that patriarchal marriage gave to fathers; feminist critics see here the clearest statement of the forces the lovers' private union defies [[callaghan1994]] [[kahn1981]]. The Nurse's advice to marry Paris is practical, and in its way loving, but it breaks her bond with Juliet; 'Ancient damnation!' marks Juliet's isolation and her new self-reliance [[wells1980]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 3.5",
+     "quote": "It was the nightingale, and not the lark,",
+     "note": "Juliet tries to hold back the day by renaming the bird."
+    },
+    {
+     "ref": "Romeo and Juliet 3.5",
+     "quote": "Night’s candles are burnt out, and jocund day\nStands tiptoe on the misty mountain tops.",
+     "note": "Romeo's image of dawn; the stars are 'candles' that have burned down."
+    },
+    {
+     "ref": "Romeo and Juliet 3.5",
+     "quote": "Methinks I see thee, now thou art so low,\nAs one dead in the bottom of a tomb.",
+     "note": "Juliet's vision foreshadows the last scene."
+    },
+    {
+     "ref": "Romeo and Juliet 3.5",
+     "quote": "I think it best you married with the County.",
+     "note": "The Nurse's advice ends Juliet's trust in her."
+    },
+    {
+     "ref": "Romeo and Juliet 3.5",
+     "quote": "If all else fail, myself have power to die.",
+     "note": "The scene ends with Juliet already contemplating suicide."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "title": "Act IV, Scene 1: The Friar's potion",
+   "lines": "Act IV, Scene 1 (the whole scene)",
+   "section": 19,
+   "summary": [
+    "Paris is at the Friar's cell arranging the wedding when Juliet arrives; she parries his courtesies with guarded wordplay. Once he leaves, she draws a knife and says she will kill herself unless the Friar finds a remedy. He offers a desperate plan: she must agree to marry Paris, then on Wednesday night drink a potion that will make her seem dead for 'two and forty hours'. She will be laid in the Capulet vault, and the Friar will send letters to bring Romeo, who will take her to Mantua. Juliet seizes the vial."
+   ],
+   "analysis": [
+    "Juliet's exchanges with Paris are a duel of meanings: every line she speaks is true in a sense he cannot hear. Her 'What must be shall be', a proverb of resignation, is answered by the Friar's ironic 'That's a certain text'. Her list of horrors she would endure rather than marry Paris (charnel-house, new-made grave, a dead man's shroud) prepares for the tomb [[levenson2000]].",
+    "The Friar's plan is the play's most elaborate attempt to cheat time. It depends on the potion, on a messenger, and on his own arrival at the tomb; in Brooke the plan was similar, but Shakespeare's compression makes it far more hazardous. The Friar's faith in his art, the knowledge of plants he displayed in 2.3, now holds the lovers' lives [[bullough1957]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 4.1",
+     "quote": "What must be shall be.",
+     "note": "Juliet's proverb, spoken to Paris, sounds like fate but conceals her resolution."
+    },
+    {
+     "ref": "Romeo and Juliet 4.1",
+     "quote": "O, bid me leap, rather than marry Paris,\nFrom off the battlements of yonder tower,",
+     "note": "Juliet's list of dangers she would rather face shows her courage."
+    },
+    {
+     "ref": "Romeo and Juliet 4.1",
+     "quote": "Thou shalt continue two and forty hours,\nAnd then awake as from a pleasant sleep.",
+     "note": "The Friar's timetable; the play's time scheme does not fit it exactly."
+    },
+    {
+     "ref": "Romeo and Juliet 4.1",
+     "quote": "Give me, give me! O tell not me of fear!",
+     "note": "Juliet's eager acceptance of the potion."
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "title": "Act IV, Scene 2: Juliet's false submission",
+   "lines": "Act IV, Scene 2 (the whole scene)",
+   "section": 20,
+   "summary": [
+    "Capulet is busy with wedding preparations, sending servants to invite guests and hire cooks. Juliet returns from the Friar's cell, kneels and asks her father's pardon, saying she will be ruled by him. Delighted, Capulet moves the wedding forward from Thursday to Wednesday, the next morning, and resolves to stay up all night to prepare."
+   ],
+   "analysis": [
+    "The scene is comic in its domestic bustle, but Capulet's small decision, to move the wedding a day earlier, wrecks the Friar's timetable: Juliet must drink the potion a night sooner, and so wake sooner, while the letter to Romeo has not yet reached him. No one in the play notices the significance. It is a clear example of how the tragedy grows from ordinary haste rather than from any cosmic design [[dickey1957]] [[snyder1979]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 4.2",
+     "quote": "Henceforward I am ever rul’d by you.",
+     "note": "Juliet's pretended submission echoes her father's assumption in 3.4."
+    },
+    {
+     "ref": "Romeo and Juliet 4.2",
+     "quote": "I’ll have this knot knit up tomorrow morning.",
+     "note": "Capulet's fatal change of day."
+    },
+    {
+     "ref": "Romeo and Juliet 4.2",
+     "quote": "My heart is wondrous light\nSince this same wayward girl is so reclaim’d.",
+     "note": "Capulet's relief is full of dramatic irony."
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "title": "Act IV, Scene 3: Juliet takes the potion",
+   "lines": "Act IV, Scene 3 (the whole scene)",
+   "section": 21,
+   "summary": [
+    "Juliet sends away the Nurse and her mother for the night. Alone, she considers her fears: that the potion might fail, so that she must marry Paris (she lays a dagger beside her in case); that it might be poison given by the Friar to hide his part in the first marriage; that she might wake in the tomb before Romeo comes and suffocate, or go mad among the bones and Tybalt's rotting body. She seems to see Tybalt's ghost seeking Romeo, then drinks to Romeo and falls on her bed."
+   ],
+   "analysis": [
+    "This soliloquy is Juliet's greatest test of courage, and it is spoken in complete solitude: 'My dismal scene I needs must act alone.' The theatrical metaphor reminds us that she is now the author of her own fate. Her fears move from rational doubt to imaginative horror, and the spoken image of the vault prepares the audience for the last scene. Many critics have seen in this speech the moment when Juliet grows from girl to tragic heroine [[levenson2000]] [[granvillebarker1930]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 4.3",
+     "quote": "My dismal scene I needs must act alone.",
+     "note": "Juliet's isolation, expressed as a theatrical role."
+    },
+    {
+     "ref": "Romeo and Juliet 4.3",
+     "quote": "What if it be a poison, which the Friar\nSubtly hath minister’d to have me dead,",
+     "note": "Juliet doubts even the Friar, and then decides to trust him."
+    },
+    {
+     "ref": "Romeo and Juliet 4.3",
+     "quote": "Romeo, Romeo, Romeo, here’s drink! I drink to thee.",
+     "note": "She drinks the potion as a toast to her husband, anticipating his 'Here's to my love!' in 5.3."
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "title": "Act IV, Scene 4: Wedding preparations at dawn",
+   "lines": "Act IV, Scene 4 (the whole scene)",
+   "section": 22,
+   "summary": [
+    "At three in the morning the Capulet household is busy with cooking. Capulet bustles about, joking with servants, while the Nurse teases him for doing women's work. As day breaks, music announces Paris's arrival, and Capulet sends the Nurse to wake Juliet."
+   ],
+   "analysis": [
+    "A short comic interlude of household detail: keys, spices, dates and quinces, logs for the fire. Its cheerfulness, set against what the audience knows lies in Juliet's chamber, creates suspense and irony. It shows Capulet as a busy, affectionate host, which makes his grief in the next scene more pitiable [[snyder1979]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 4.4",
+     "quote": "The curfew bell hath rung, ’tis three o’clock.",
+     "note": "The time references keep the audience aware of the clock."
+    },
+    {
+     "ref": "Romeo and Juliet 4.4",
+     "quote": "Make haste; the bridegroom he is come already.",
+     "note": "Capulet's last word in the scene is the play's theme: haste."
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "title": "Act IV, Scene 5: Juliet found 'dead'",
+   "lines": "Act IV, Scene 5 (the whole scene)",
+   "section": 23,
+   "summary": [
+    "The Nurse finds Juliet apparently dead. Lady Capulet, Capulet and Paris join in a chorus of lamentation. The Friar rebukes them, saying Juliet is now in heaven, and tells them to take her to church. Capulet orders the wedding festivities turned into a funeral. The scene ends with comic banter between the servant Peter and the musicians hired for the wedding."
+   ],
+   "analysis": [
+    "The laments are formal and repetitive ('O woe! O woeful, woeful, woeful day'), and critics have debated whether they are meant to be moving, absurd, or both. Because the audience knows Juliet is alive, the mourning sounds excessive and conventional, and in a sense rehearses the real grief to come. Capulet's image of Death as his son-in-law gives the play's love-death theme its most grotesque form [[levenson2000]] [[snyder1979]].",
+    "The scene with the musicians, often cut in performance, is a deliberate shift into comedy. Q2 heads Peter's entry with the name of the clown Will Kemp, showing that the company's leading comic actor played the part [[gibbons1980]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 4.5",
+     "quote": "Death lies on her like an untimely frost\nUpon the sweetest flower of all the field.",
+     "note": "Capulet's lament uses the image of the flower that runs through the play."
+    },
+    {
+     "ref": "Romeo and Juliet 4.5",
+     "quote": "Death is my son-in-law, death is my heir;",
+     "note": "Death personified as bridegroom, a central motif."
+    },
+    {
+     "ref": "Romeo and Juliet 4.5",
+     "quote": "All things that we ordained festival\nTurn from their office to black funeral:",
+     "note": "Wedding and funeral exchange places, as they do throughout the play."
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "title": "Act V, Scene 1: Mantua: the news and the apothecary",
+   "lines": "Act V, Scene 1 (the whole scene)",
+   "section": 24,
+   "summary": [
+    "In Mantua Romeo wakes cheerful after a dream that Juliet found him dead and revived him with kisses. His servant Balthasar arrives with news that Juliet is dead and buried. Romeo defies the stars and resolves to go to Verona that night and lie with Juliet in death. He remembers a poor apothecary nearby, persuades him with forty ducats to sell poison despite the law, and sets out."
+   ],
+   "analysis": [
+    "Romeo's dream is cruelly ironic: what he dreamed will nearly come true, but reversed. His cry 'Then I defy you, stars!' is ambiguous: it can be read as a rebellion against fate or as the hasty act that fulfils it. He acts at once, without waiting for word from the Friar, and his speed is decisive [[dickey1957]].",
+    "The apothecary scene is an image of poverty and death. Romeo's reflection that gold is a worse poison than the drug, because it does more harm in the world, shows a new bitterness, and the shop full of stuffed creatures and empty boxes is a small picture of the tomb to come."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 5.1",
+     "quote": "My bosom’s lord sits lightly in his throne;",
+     "note": "Romeo's happiness just before the news, a classic moment of tragic irony."
+    },
+    {
+     "ref": "Romeo and Juliet 5.1",
+     "quote": "Is it even so? Then I defy you, stars!",
+     "note": "Romeo's defiance of fate."
+    },
+    {
+     "ref": "Romeo and Juliet 5.1",
+     "quote": "Well, Juliet, I will lie with thee tonight.",
+     "note": "The phrase joins love and death."
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "title": "Act V, Scene 2: Friar John's undelivered letter",
+   "lines": "Act V, Scene 2 (the whole scene)",
+   "section": 25,
+   "summary": [
+    "Friar John tells Friar Lawrence that he could not deliver the letter to Romeo: he was shut in a house by officials who suspected plague. Friar Lawrence realises the danger, sends for a crowbar, and hurries to the tomb to be there when Juliet wakes, planning to keep her in his cell until Romeo can be reached."
+   ],
+   "analysis": [
+    "The plague quarantine is the plot's purest accident, and it comes from Brooke. For an Elizabethan audience it was a familiar reality: the London theatres had been closed by plague in 1592–94. The Friar's cry of 'Unhappy fortune!' places the blame on chance, but the failure also follows from his secret plan, which depended on a single messenger [[bullough1957]] [[evans1984]]."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 5.2",
+     "quote": "So fearful were they of infection.",
+     "note": "Fear of plague, not fate, stops the letter."
+    },
+    {
+     "ref": "Romeo and Juliet 5.2",
+     "quote": "Unhappy fortune! By my brotherhood,\nThe letter was not nice, but full of charge,",
+     "note": "'Nice' means trivial; the letter was urgent."
+    },
+    {
+     "ref": "Romeo and Juliet 5.2",
+     "quote": "Poor living corse, clos’d in a dead man’s tomb.",
+     "note": "The Friar's image of Juliet as a living corpse."
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "title": "Act V, Scene 3: The tomb",
+   "lines": "Act V, Scene 3 (the whole scene)",
+   "section": 26,
+   "summary": [
+    "At night Paris comes to strew flowers on Juliet's tomb. Romeo arrives with Balthasar, whom he sends away with a letter for his father, and begins to break open the tomb. Paris challenges him as a grave-robber; Romeo begs him to go, but they fight and Paris is killed. Romeo lays Paris in the tomb, gazes at Juliet, wonders at her beauty, addresses Tybalt, kisses her and drinks the poison. The Friar arrives just afterwards. Juliet wakes; the Friar, hearing the watch, urges her to flee to a convent, then leaves in fear. Juliet kisses Romeo's lips for poison and, hearing the watch, stabs herself with his dagger.",
+    "The watch gathers the Prince, the Capulets and Montague, whose wife has died of grief. The Friar tells the whole story; Balthasar and Paris's page confirm it, and Romeo's letter proves it. The Prince condemns the families' hatred, Capulet and Montague take hands, and each promises a golden statue of the other's child. The Prince speaks the final lines."
+   ],
+   "analysis": [
+    "The last scene gathers the play's images into one place. The tomb is a 'womb of death' and a bridal chamber, a 'palace of dim night' made bright by Juliet's beauty. Romeo's last speech returns to the stars ('the yoke of inauspicious stars') and to the sea of love from 2.2, now turned into a shipwreck. The audience sees what he cannot: that Juliet's lips are still crimson because she is alive. The timing is the play's cruellest: had he waited moments, or had the Friar come sooner, there would be no tragedy [[spurgeon1935]] [[dickey1957]].",
+    "Juliet's death is swift and decisive, in a few lines, after Romeo's long speech. Her refusal of the Friar's offer and her suicide with Romeo's dagger complete the pattern of love and death that the lovers' language has prepared since 1.5. Productions from Otway and Garrick to the nineteenth century often let Juliet wake before Romeo died, but Shakespeare denies them that last meeting [[levenson1987]].",
+    "The ending is a public reckoning. The Friar's long summary has been criticised as redundant, but it allows the city to learn what the audience knows. The Prince's verdict, 'All are punish'd', spreads the blame to himself for 'winking' at the feud. The golden statues have been read both as a true reconciliation and as a sign that the fathers still compete in wealth and turn their children into monuments, possessions of the families from which they tried to escape."
+   ],
+   "key": [
+    {
+     "ref": "Romeo and Juliet 5.3",
+     "quote": "Good gentle youth, tempt not a desperate man.",
+     "note": "Romeo's plea to Paris; he no longer wants to fight."
+    },
+    {
+     "ref": "Romeo and Juliet 5.3",
+     "quote": "And shake the yoke of inauspicious stars\nFrom this world-wearied flesh. Eyes, look your last.",
+     "note": "Romeo imagines suicide as freedom from fate."
+    },
+    {
+     "ref": "Romeo and Juliet 5.3",
+     "quote": "Thy drugs are quick. Thus with a kiss I die.",
+     "note": "Romeo dies with a kiss, joining love and death."
+    },
+    {
+     "ref": "Romeo and Juliet 5.3",
+     "quote": "Yea, noise? Then I’ll be brief. O happy dagger.",
+     "note": "Juliet acts at once; 'happy' means fortunate, ready to hand."
+    },
+    {
+     "ref": "Romeo and Juliet 5.3",
+     "quote": "See what a scourge is laid upon your hate,\nThat heaven finds means to kill your joys with love!",
+     "note": "The Prince interprets the deaths as heaven's punishment of the feud."
+    },
+    {
+     "ref": "Romeo and Juliet 5.3",
+     "quote": "For never was a story of more woe\nThan this of Juliet and her Romeo.",
+     "note": "The closing couplet turns the events into a story to be told."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Romeo",
+   "side": "Montagues",
+   "text": "Only son of Montague, probably in his late teens. At first a melancholy, self-dramatising lover of Rosaline who speaks in Petrarchan clichés, he is transformed by meeting Juliet, though he remains impulsive in everything. He tries to make peace with Tybalt, then kills him in a rage; he despairs in the Friar's cell, and he buys poison the moment he hears Juliet is dead. His poetry grows from conventional to intense, and his last speech in the tomb is among the finest in the play."
+  },
+  {
+   "name": "Juliet",
+   "side": "Capulets",
+   "text": "Only daughter of Capulet, two weeks short of fourteen. She begins as a dutiful child, but from the balcony scene on she is the more practical and clear-sighted of the lovers: she distrusts vows, thinks of marriage, and sees the danger. Abandoned by her parents and finally by the Nurse, she takes the potion alone and kills herself without hesitation. Her development from girl to tragic heroine is the play's great arc."
+  },
+  {
+   "name": "Mercutio",
+   "side": "Neither house",
+   "text": "Kinsman of the Prince and friend of Romeo, a brilliant, bawdy, restless talker. His Queen Mab speech and his mockery of love, Tybalt and the Nurse fill the first half with energy. He fights Tybalt when Romeo will not, is killed under Romeo's arm, and dies cursing both houses. His name suggests the god Mercury and the 'mercurial' temperament."
+  },
+  {
+   "name": "Tybalt",
+   "side": "Capulets",
+   "text": "Lady Capulet's nephew, a skilled and fashionable duellist who lives for the feud. He wants to kill Romeo at the feast, sends him a challenge, kills Mercutio, and is killed by Romeo. Mercutio calls him 'Prince of cats', after the cat Tybert in the Reynard stories."
+  },
+  {
+   "name": "Benvolio",
+   "side": "Montagues",
+   "text": "Montague's nephew and Romeo's cousin and friend, whose name means 'well-wishing'. He tries to keep the peace in 1.1 and 3.1, and gives the Prince a careful, if slightly partial, account of the fatal fight. He disappears from the play after Act III."
+  },
+  {
+   "name": "The Nurse",
+   "side": "Capulets",
+   "text": "Juliet's nurse since infancy, who lost her own daughter, Susan. Garrulous, bawdy, affectionate and practical, she carries messages between the lovers and arranges the rope ladder. After Romeo's banishment she advises Juliet to marry Paris, and so loses her trust. One of Shakespeare's great comic roles."
+  },
+  {
+   "name": "Friar Lawrence",
+   "side": "Neither house",
+   "text": "A Franciscan friar, Romeo's confessor, learned in herbs. He marries the lovers secretly, hoping to end the feud, counsels Romeo against despair, and gives Juliet the sleeping potion. His plans are wise in conception but depend on time and luck; at the tomb he flees, then tells the whole story to the Prince. Many editions spell his name 'Laurence'."
+  },
+  {
+   "name": "Capulet",
+   "side": "Capulets",
+   "text": "Juliet's father, an old man fond of feasting and nostalgic for his youth. At first he wants Juliet to wait two years and to consent to her husband; later he insists on the marriage to Paris within days and threatens to disown her. He is genial, impulsive and tyrannical by turns, and he makes peace with Montague at the end."
+  },
+  {
+   "name": "Lady Capulet",
+   "side": "Capulets",
+   "text": "Juliet's mother, much younger than her husband; she was a mother at about Juliet's age. Formal and distant with her daughter, she wants Romeo poisoned for killing Tybalt and refuses to help Juliet against her father."
+  },
+  {
+   "name": "Montague and Lady Montague",
+   "side": "Montagues",
+   "text": "Romeo's parents. Montague is worried about his son's melancholy but cannot reach him. Lady Montague dies of grief at Romeo's exile, as Montague reports in the last scene. Montague promises to raise a golden statue of Juliet."
+  },
+  {
+   "name": "Paris",
+   "side": "Neither house",
+   "text": "A young count, kinsman of the Prince, who seeks Juliet's hand through her father. He is courteous and conventional, and genuinely mourns her. He is killed by Romeo at the tomb and asks to be laid beside Juliet."
+  },
+  {
+   "name": "Prince Escalus",
+   "side": "Verona",
+   "text": "Ruler of Verona, who tries to stop the feud by threatening death, then commutes Romeo's sentence to banishment. He loses two kinsmen, Mercutio and Paris, and at the end acknowledges his own fault in 'winking' at the families' discord."
+  },
+  {
+   "name": "Rosaline",
+   "side": "Capulets",
+   "text": "Capulet's niece, Romeo's first love, who has vowed to remain chaste. She never appears or speaks, and exists only through Romeo's laments and his friends' jokes."
+  },
+  {
+   "name": "Balthasar",
+   "side": "Montagues",
+   "text": "Romeo's servant, who brings him the news of Juliet's 'death' in Mantua and goes with him to the tomb."
+  },
+  {
+   "name": "Peter",
+   "side": "Capulets",
+   "text": "Servant to the Nurse, a clown part probably played by Will Kemp."
+  },
+  {
+   "name": "The Apothecary",
+   "side": "Mantua",
+   "text": "A starving chemist in Mantua who sells Romeo poison against the law, for forty ducats."
+  },
+  {
+   "name": "Friar John",
+   "side": "Neither house",
+   "text": "A Franciscan who is sent with the Friar's letter to Romeo but is quarantined for plague and cannot deliver it."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Love and its languages",
+   "text": [
+    "The play is full of different ideas of love, each with its own language. Romeo's love for Rosaline speaks in Petrarchan oxymorons; Mercutio and the servants reduce love to sex in bawdy puns; Lady Capulet and Paris treat it as a matter of fitting marriage; the Nurse sees it in bodily and practical terms. Against all of these the lovers create a new language together, beginning with the shared sonnet and growing more direct [[levin1960]] [[mahood1957]].",
+    "Their love is presented as transforming and boundless, but also as dangerously absolute. It shuts out the world, makes everything else seem worthless, and turns easily to death. Critics disagree about whether the play celebrates such love or examines it; some see in it an early form of the modern ideology of romantic love [[callaghan1994]] [[belsey2014]]."
+   ]
+  },
+  {
+   "title": "Haste and time",
+   "text": [
+    "Shakespeare compressed Brooke's months into four days, and the play is full of clocks and days: nine in the morning, noon, three o'clock, Monday, Wednesday, Thursday. Everyone hurries. Romeo and Juliet fall in love, marry and die in less than a week; Capulet moves the wedding forward; Romeo poisons himself the moment he hears the news [[bullough1957]] [[halio1998]].",
+    "The Friar warns that 'they stumble that run fast', but the plot shows that delay is equally fatal: a letter is held up, the Friar arrives late, Juliet wakes a minute too late. Time in the play is both the lovers' enemy and the medium of their intensity [[dickey1957]]."
+   ]
+  },
+  {
+   "title": "Fate, fortune and choice",
+   "text": [
+    "The Prologue speaks of 'star-cross'd' lovers, and the lovers keep feeling that the stars are against them; Romeo calls himself 'fortune's fool' and defies the stars. Yet the disaster also comes from choices: the feud, the secrecy, Romeo's revenge, Capulet's insistence, the Friar's risky plan. The play leaves open how far the tragedy is fated and how far it is caused by human passion and error [[dickey1957]] [[snyder1979]]."
+   ]
+  },
+  {
+   "title": "The feud, honour and manhood",
+   "text": [
+    "The feud is never explained; it is an 'ancient grudge' kept alive by servants and young men. It is bound up with a code of honour in which a man must fight when insulted. Mercutio and Tybalt die for this code, and Romeo, after trying to escape it, becomes its agent. Kahn sees the feud as a way that patriarchal society forms young men, and the lovers' union as an attempt to escape it [[kahn1981]] [[porter1988]]."
+   ]
+  },
+  {
+   "title": "Parents and children, youth and age",
+   "text": [
+    "The old men in the play remember their dancing days; the young live at speed. Parents arrange marriages for their children and expect obedience; Capulet's fury when Juliet refuses Paris shows the power of the father in the period. The lovers' tragedy depends on their inability to tell their elders the truth, and the elders' counsel, from the Friar or the Nurse, proves inadequate [[kahn1981]] [[callaghan1994]]."
+   ]
+  },
+  {
+   "title": "Names and identity",
+   "text": [
+    "Juliet's 'What's in a name?' raises the question of whether a person is defined by family. Romeo offers to give up his name, and later asks the Friar where in his body his name 'lodges' so that he can cut it out. The play shows that names cannot be given up so easily: the names Montague and Capulet are what kill the lovers, and their names are what survive them in the closing couplet [[belsey2014]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Light and darkness",
+   "text": "The lovers meet at night and love in darkness; Romeo sees Juliet as the sun, a torch, a jewel against night; dawn separates them. The imagery of brief light in darkness, lightning, stars and torches, is the play's dominant pattern [[spurgeon1935]]."
+  },
+  {
+   "title": "Death as bridegroom",
+   "text": "Juliet says her grave is likely to be her wedding bed; Capulet calls Death his son-in-law; Romeo imagines death keeping Juliet as his paramour. Wedding and funeral keep changing places."
+  },
+  {
+   "title": "Stars and fortune",
+   "text": "From the 'star-cross'd' lovers of the Prologue to Romeo's 'inauspicious stars', the stars stand for a destiny that the characters feel but cannot know."
+  },
+  {
+   "title": "Dreams and premonitions",
+   "text": "Romeo's dream before the feast, Mercutio's Queen Mab, Juliet's vision of Romeo in the tomb, and Romeo's dream in Mantua all point forward to the ending."
+  },
+  {
+   "title": "Haste",
+   "text": "Words of speed and delay (haste, apace, slow, too soon, too late) run through the dialogue and make the passage of time felt."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The orchard wall and the window",
+   "text": "The wall Romeo climbs separates the public street from the private garden, and the window above marks the distance between the lovers. Both are boundaries that love crosses at risk of death."
+  },
+  {
+   "title": "The Friar's herbs and the potion",
+   "text": "The Friar's plants contain both poison and medicine; his potion is a remedy that leads to death, and Romeo calls his poison a 'cordial'. They stand for the double nature of all things in the play, including love."
+  },
+  {
+   "title": "The tomb",
+   "text": "The Capulet monument is both the family's ancient vault and the lovers' bridal chamber. In it the play's themes of family, love and death come together."
+  },
+  {
+   "title": "The rope ladder",
+   "text": "The 'cords' that bring Romeo to Juliet's bed become, after his banishment, an image of her lost hope."
+  },
+  {
+   "title": "The golden statues",
+   "text": "The statues the fathers promise to raise turn the lovers into public monuments. They can be read as a sign of reconciliation or of the families' continuing pride."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Tragedy of fate or tragedy of character?",
+   "text": [
+    "The Prologue's 'star-cross'd lovers' and the play's many forebodings suggest a tragedy of destiny. Older moral criticism, by contrast, saw the lovers' haste as a fault: Franklin Dickey argued that Elizabethan audiences would have seen in them a warning against passion that overrules reason, as Brooke's preface had said [[dickey1957]].",
+    "Most modern critics find the play more mixed. Chance plays a large part (the illiterate servant, the plague, the timing in the tomb), and so do the feud and the parents. Brian Gibbons and others stress that the tragedy depends on the coincidence of private passion, social violence and accident, without letting any one of them explain it fully [[gibbons1980]] [[evans1984]]."
+   ],
+   "cite": [
+    "dickey1957",
+    "gibbons1980",
+    "evans1984"
+   ]
+  },
+  {
+   "title": "A tragedy made from comedy",
+   "text": [
+    "The first half of the play has the elements of romantic comedy: young lovers, obstructing parents, bawdy servants, a comic Nurse and a witty friend. Susan Snyder argued that the play is built on a comic structure that turns to tragedy with Mercutio's death, so that the world of choice and possibility becomes one of necessity. The comic world dies with Mercutio [[snyder1979]].",
+    "The view helps explain the play's unusual mix of tones and its place between Shakespeare's comedies and his later tragedies. Critics have also noted how much the comic characters, especially the Nurse, remain in the tragic second half [[wells1980]]."
+   ],
+   "cite": [
+    "snyder1979",
+    "wells1980"
+   ]
+  },
+  {
+   "title": "Q1 and Q2: which text?",
+   "text": [
+    "Q1 (1597) is much shorter than Q2 (1599). For much of the twentieth century it was classed as a 'bad quarto', a text reconstructed from memory by actors; Q2 was thought to be printed from Shakespeare's own draft and became the basis of editions. Richard Hosley argued that editors had been misled into adopting too many Q1 readings [[hosley1953]].",
+    "More recent scholars take Q1 seriously as a text of the play in performance. Lukas Erne's edition presents it as a shorter, faster acting version, and Jill Levenson's Oxford edition prints both Q1 and Q2. Q1's stage directions, such as the Nurse wringing her hands, are often used as evidence of early staging [[erne2007]] [[levenson2000]] [[weis2012]]."
+   ],
+   "cite": [
+    "hosley1953",
+    "erne2007",
+    "levenson2000",
+    "weis2012"
+   ]
+  },
+  {
+   "title": "Sonnets and Petrarchan language",
+   "text": [
+    "The play contains several sonnets (the two Choruses, the lovers' first exchange) and many fragments of sonnet form. Harry Levin showed how the play sets formal patterns, such as rhyme, symmetry and conventional conceits, against the more natural language of the lovers, which breaks out of convention [[levin1960]].",
+    "Others have taken the argument further. M. M. Mahood studied the play's puns, which join love and death; Gayle Whittier argued that the play turns the sonnet into flesh, so that the lovers' bodies become the poem, and back again into gold at the end [[mahood1957]] [[whittier1989]]."
+   ],
+   "cite": [
+    "levin1960",
+    "mahood1957",
+    "whittier1989"
+   ]
+  },
+  {
+   "title": "Masculinity and the feud",
+   "text": [
+    "Coppélia Kahn's psychoanalytic and feminist reading sees the feud as the means by which the fathers' society turns sons into men, through violence and sexual boasting. Romeo is caught between this code and his love for Juliet, and his killing of Tybalt shows the code reclaiming him [[kahn1981]].",
+    "Mercutio has been central to such readings. Joseph Porter traced the character's history from Brooke to the play and showed how Shakespeare made him the voice of male friendship and of a scepticism about love; critics have also explored the intensity of his attachment to Romeo [[porter1988]]."
+   ],
+   "cite": [
+    "kahn1981",
+    "porter1988"
+   ]
+  },
+  {
+   "title": "The ideology of romantic love",
+   "text": [
+    "The play is often treated as the archetype of romantic love. Dympna Callaghan argued that this view is historical, not natural: the play helped to shape an ideology of individual, passionate love that suited new ideas of marriage and the family in early modern England [[callaghan1994]].",
+    "Catherine Belsey has explored the play's language of names and desire, showing how its lovers try and fail to escape the symbolic order of names and families [[belsey2014]]."
+   ],
+   "cite": [
+    "callaghan1994",
+    "belsey2014"
+   ]
+  },
+  {
+   "title": "The play on stage and screen",
+   "text": [
+    "For two centuries after the Restoration the play was performed in adaptations: Otway's Caius Marius, then Garrick's version, which removed Rosaline and added a final scene in which Juliet wakes before Romeo dies. The full text returned only in the nineteenth century, and productions have long debated how young the lovers should be and how much bawdy to keep [[levenson1987]].",
+    "Twentieth-century productions and films, from Gielgud's 1935 production to Zeffirelli's film (1968) and Luhrmann's Romeo + Juliet (1996), have reinterpreted the feud as social conflict and the lovers as modern teenagers. James Loehlin's production history traces these changes [[loehlin2002]] [[granvillebarker1930]]."
+   ],
+   "cite": [
+    "levenson1987",
+    "loehlin2002",
+    "granvillebarker1930"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Romeo and Juliet, Prologue 6",
+   "quote": "A pair of star-cross’d lovers take their life;",
+   "who": "Chorus",
+   "explanation": "The Prologue presents the lovers as thwarted by the stars, the phrase that has shaped the play's reputation as a tragedy of fate."
+  },
+  {
+   "ref": "Romeo and Juliet 1.5",
+   "quote": "My only love sprung from my only hate!\nToo early seen unknown, and known too late!",
+   "who": "Juliet",
+   "explanation": "Juliet's couplet compresses the play's central paradox, love born from hate."
+  },
+  {
+   "ref": "Romeo and Juliet 2.2.33",
+   "quote": "O Romeo, Romeo, wherefore art thou Romeo?",
+   "who": "Juliet",
+   "explanation": "Juliet asks why Romeo must be a Montague, not where he is; the line opens the play's questioning of names."
+  },
+  {
+   "ref": "Romeo and Juliet 2.2.43–44",
+   "quote": "What’s in a name? That which we call a rose\nBy any other name would smell as sweet;",
+   "who": "Juliet",
+   "explanation": "Juliet argues that a name is arbitrary and that Romeo's identity lies in himself, not in his family."
+  },
+  {
+   "ref": "Romeo and Juliet 2.3",
+   "quote": "Wisely and slow; they stumble that run fast.",
+   "who": "Friar Lawrence",
+   "explanation": "The Friar's proverb states the play's warning against haste, though slowness will prove fatal too."
+  },
+  {
+   "ref": "Romeo and Juliet 2.6",
+   "quote": "These violent delights have violent ends,\nAnd in their triumph die; like fire and powder,\nWhich as they kiss consume.",
+   "who": "Friar Lawrence",
+   "explanation": "The Friar's image of gunpowder anticipates the speed and violence of the coming catastrophe."
+  },
+  {
+   "ref": "Romeo and Juliet 3.1",
+   "quote": "I am hurt.\nA plague o’ both your houses. I am sped.",
+   "who": "Mercutio",
+   "explanation": "Mercutio's curse blames both families for his death and marks the turn from comedy to tragedy."
+  },
+  {
+   "ref": "Romeo and Juliet 3.1",
+   "quote": "O, I am fortune’s fool!",
+   "who": "Romeo",
+   "explanation": "After killing Tybalt, Romeo sees himself as the plaything of fortune, though he has just made his own choice."
+  },
+  {
+   "ref": "Romeo and Juliet 3.5",
+   "quote": "Night’s candles are burnt out, and jocund day\nStands tiptoe on the misty mountain tops.",
+   "who": "Romeo",
+   "explanation": "In the dawn parting, light becomes the lovers' enemy."
+  },
+  {
+   "ref": "Romeo and Juliet 5.3",
+   "quote": "For never was a story of more woe\nThan this of Juliet and her Romeo.",
+   "who": "Prince",
+   "explanation": "The closing couplet turns the lovers into a story for others to tell."
+  }
+ ],
+ "questions": [
+  {
+   "q": "How does the Prologue's sonnet shape the audience's experience of the play?",
+   "hint": "Think about what is lost and gained by knowing the ending, and about the competing explanations it gives for the lovers' deaths."
+  },
+  {
+   "q": "Compare Romeo's language about Rosaline in 1.1 with his language about Juliet in 1.5 and 2.2.",
+   "hint": "Look at oxymoron and convention in the first, light imagery and dialogue in the second."
+  },
+  {
+   "q": "What does the shared sonnet in 1.5 tell us about the relationship between Romeo and Juliet?",
+   "hint": "Notice who speaks which lines, the religious imagery, and Juliet's 'You kiss by the book'."
+  },
+  {
+   "q": "What role does Mercutio play, and why must he die?",
+   "hint": "Consider Queen Mab, his views of love, his mockery of Tybalt, and Snyder's idea of the play's turn from comedy."
+  },
+  {
+   "q": "Is Romeo responsible for the deaths in 3.1?",
+   "hint": "Consider his attempt at peace, his intervention in the fight, and his choice to kill Tybalt."
+  },
+  {
+   "q": "How does the Nurse change over the course of the play, and why does Juliet reject her?",
+   "hint": "Compare 1.3, 2.5 and 3.5, and her advice to marry Paris."
+  },
+  {
+   "q": "Is Friar Lawrence a wise counsellor or a dangerous meddler?",
+   "hint": "Weigh his speech on herbs, his motives in marrying the lovers, his plan, and his flight from the tomb."
+  },
+  {
+   "q": "How does Shakespeare make the audience feel the pressure of time?",
+   "hint": "Collect references to days and hours, and compare his four days with Brooke's months."
+  },
+  {
+   "q": "Is the play a tragedy of fate, of character, or of society?",
+   "hint": "Consider the stars, the lovers' haste, the feud and the parents, and the role of chance."
+  },
+  {
+   "q": "How should we read the ending, with its golden statues?",
+   "hint": "Think about reconciliation, the Prince's 'All are punish'd', and the lovers becoming monuments."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "belsey2014",
+   "text": "Belsey, Catherine. Romeo and Juliet: Language and Writing. Arden Student Skills. London: Bloomsbury Arden Shakespeare, 2014."
+  },
+  {
+   "id": "bullough1957",
+   "text": "Bullough, Geoffrey, ed. Narrative and Dramatic Sources of Shakespeare. Vol. 1, Early Comedies, Poems, Romeo and Juliet. London: Routledge and Kegan Paul; New York: Columbia University Press, 1957."
+  },
+  {
+   "id": "callaghan1994",
+   "text": "Callaghan, Dympna. 'The Ideology of Romantic Love: The Case of Romeo and Juliet.' In Dympna Callaghan, Lorraine Helms and Jyotsna Singh, The Weyward Sisters: Shakespeare and Feminist Politics, 59–101. Oxford: Blackwell, 1994."
+  },
+  {
+   "id": "dickey1957",
+   "text": "Dickey, Franklin M. Not Wisely But Too Well: Shakespeare's Love Tragedies. San Marino, CA: Huntington Library, 1957."
+  },
+  {
+   "id": "erne2007",
+   "text": "Erne, Lukas, ed. The First Quarto of Romeo and Juliet. The New Cambridge Shakespeare: The Early Quartos. Cambridge: Cambridge University Press, 2007."
+  },
+  {
+   "id": "evans1984",
+   "text": "Evans, G. Blakemore, ed. Romeo and Juliet. By William Shakespeare. The New Cambridge Shakespeare. Cambridge: Cambridge University Press, 1984. Updated edition, 2003."
+  },
+  {
+   "id": "gibbons1980",
+   "text": "Gibbons, Brian, ed. Romeo and Juliet. By William Shakespeare. The Arden Shakespeare, Second Series. London and New York: Methuen, 1980."
+  },
+  {
+   "id": "granvillebarker1930",
+   "text": "Granville-Barker, Harley. Prefaces to Shakespeare. Second Series. London: Sidgwick and Jackson, 1930."
+  },
+  {
+   "id": "halio1998",
+   "text": "Halio, Jay L. Romeo and Juliet: A Guide to the Play. Greenwood Guides to Shakespeare. Westport, CT: Greenwood Press, 1998."
+  },
+  {
+   "id": "hosley1953",
+   "text": "Hosley, Richard. 'The Corrupting Influence of the Bad Quarto on the Received Text of Romeo and Juliet.' Shakespeare Quarterly 4, no. 1 (1953): 11–33."
+  },
+  {
+   "id": "kahn1981",
+   "text": "Kahn, Coppélia. Man's Estate: Masculine Identity in Shakespeare. Berkeley: University of California Press, 1981."
+  },
+  {
+   "id": "levenson1987",
+   "text": "Levenson, Jill L. Romeo and Juliet. Shakespeare in Performance. Manchester: Manchester University Press, 1987."
+  },
+  {
+   "id": "levenson2000",
+   "text": "Levenson, Jill L., ed. Romeo and Juliet. By William Shakespeare. The Oxford Shakespeare. Oxford: Oxford University Press, 2000."
+  },
+  {
+   "id": "levin1960",
+   "text": "Levin, Harry. 'Form and Formality in Romeo and Juliet.' Shakespeare Quarterly 11, no. 1 (1960): 3–11."
+  },
+  {
+   "id": "loehlin2002",
+   "text": "Loehlin, James N., ed. Romeo and Juliet. Shakespeare in Production. Cambridge: Cambridge University Press, 2002."
+  },
+  {
+   "id": "mahood1957",
+   "text": "Mahood, M. M. Shakespeare's Wordplay. London: Methuen, 1957."
+  },
+  {
+   "id": "porter1988",
+   "text": "Porter, Joseph A. Shakespeare's Mercutio: His History and Drama. Chapel Hill: University of North Carolina Press, 1988."
+  },
+  {
+   "id": "snyder1979",
+   "text": "Snyder, Susan. The Comic Matrix of Shakespeare's Tragedies: Romeo and Juliet, Hamlet, Othello, and King Lear. Princeton: Princeton University Press, 1979."
+  },
+  {
+   "id": "spurgeon1935",
+   "text": "Spurgeon, Caroline F. E. Shakespeare's Imagery and What It Tells Us. Cambridge: Cambridge University Press, 1935."
+  },
+  {
+   "id": "weis2012",
+   "text": "Weis, René, ed. Romeo and Juliet. By William Shakespeare. The Arden Shakespeare, Third Series. London: Bloomsbury Arden Shakespeare, 2012."
+  },
+  {
+   "id": "wells1980",
+   "text": "Wells, Stanley. 'Juliet's Nurse: The Uses of Inconsequentiality.' In Shakespeare's Styles: Essays in Honour of Kenneth Muir, edited by Philip Edwards, Inga-Stina Ewbank and G. K. Hunter, 51–66. Cambridge: Cambridge University Press, 1980."
+  },
+  {
+   "id": "whittier1989",
+   "text": "Whittier, Gayle. 'The Sonnet's Body and the Body Sonnetized in Romeo and Juliet.' Shakespeare Quarterly 40, no. 1 (1989): 27–41."
+  }
+ ]
+}

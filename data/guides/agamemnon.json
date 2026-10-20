@@ -1,0 +1,883 @@
+{
+ "work": "agamemnon",
+ "title": "Agamemnon",
+ "author": "Aeschylus",
+ "quoteEdition": "agamemnon-morshead",
+ "updated": "2026-10-19",
+ "unit": "Part",
+ "sameSections": false,
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Aeschylus (c. 525/524–456/455 BC), of Eleusis in Attica, the earliest of the three great Athenian tragedians; he fought against the Persians at Marathon, and seven plays under his name survive"
+  },
+  {
+   "label": "First performed",
+   "value": "Spring 458 BC at the City Dionysia in Athens, as the first play of the Oresteia, which won first prize"
+  },
+  {
+   "label": "The trilogy",
+   "value": "Agamemnon, Libation Bearers (Choephori) and Eumenides, followed by a lost satyr play, Proteus; the Oresteia is the only Greek tragic trilogy that survives complete"
+  },
+  {
+   "label": "Genre",
+   "value": "Tragedy in Greek verse: spoken iambic trimeters for the episodes, chanted anapaests and sung lyric metres for the choral odes and laments"
+  },
+  {
+   "label": "Setting",
+   "value": "Before the palace of the Atreidae at Argos, on the day the news of Troy's fall arrives and the king comes home (Morshead's stage note places it at Mycenae)"
+  },
+  {
+   "label": "Structure",
+   "value": "Prologue, a very long parodos, four episodes separated by three stasima, the murder scene, and an exodos with Clytemnestra and Aegisthus; about 1,673 lines in the standard numbering"
+  },
+  {
+   "label": "Main characters",
+   "value": "Clytemnestra; Agamemnon, king of Argos; Cassandra, the captive Trojan prophetess; Aegisthus; a Watchman; a Herald; a Chorus of Argive elders"
+  },
+  {
+   "label": "Key ideas",
+   "value": "Justice (dike) as retribution, the inherited curse, learning through suffering (pathei mathos), sacrifice corrupted into murder, persuasion and deceit, gender and power"
+  },
+  {
+   "label": "Quoted translation",
+   "value": "E. D. A. Morshead, The House of Atreus (1881), in blank verse with rhymed lyrics; references use the standard Greek line numbers and are approximate for the English"
+  }
+ ],
+ "context": [
+  "Aeschylus was born about 525 BC and grew up in an Athens that was turning itself into a democracy. He fought at Marathon in 490, and probably at Salamis in 480; his epitaph, which ancient tradition says he wrote himself, mentions the battle and not the plays. He is said to have written some eighty or ninety works, and won the tragic competition at least thirteen times. Of the seven surviving plays under his name, the Oresteia of 458 BC is the last and greatest. He died at Gela in Sicily two or three years later [[herington1986]] [[sommerstein2010]].",
+  "Tragedies at the City Dionysia were entered in sets of three, followed by a comic satyr play. Aeschylus often made the three tragedies one continuous story, and the Oresteia is the only such connected trilogy to survive. In Agamemnon, Clytemnestra kills her husband on his return from Troy. In the Libation Bearers their son Orestes comes home and kills his mother and her lover Aegisthus, at the command of Apollo. In the Eumenides the Furies, the spirits who avenge kindred blood, pursue Orestes to Athens, where Athena sets up the court of the Areopagus to try him; the votes are found to be equal, which by Athena's ruling means acquittal, and she persuades the angry Furies to accept a place of honour in the city. The cycle of revenge is replaced by the judgement of a court [[goldhill1992]] [[sommerstein2008]].",
+  "Behind the play lies the curse on the house of Atreus. Atreus and his brother Thyestes quarrelled over the throne of Argos; Thyestes seduced Atreus' wife, and Atreus, pretending reconciliation, served Thyestes the flesh of his own children at a feast. Thyestes cursed the whole line. Of his children only the infant Aegisthus survived, and he grows up to seek revenge on Atreus' son Agamemnon. Agamemnon, in turn, has his own crime: at Aulis, to gain a wind for the fleet against Troy, he sacrificed his daughter Iphigenia. In Homer's Odyssey Aegisthus is the chief killer and Clytemnestra his accomplice; Aeschylus makes the queen the planner and the striker, and gives her a mother's grievance as well as a lover [[fraenkel1950]] [[raeburn2011]].",
+  "The play was written for an open-air theatre with a chorus of twelve citizens, masked, singing and dancing in the orchestra, and three speaking actors who shared the other roles among them. The Oresteia is probably the earliest surviving drama to use a stage building (skene) with a central door, and Aeschylus makes that door a symbol: through it the king walks on crimson cloth to his death, Cassandra goes knowing she will be killed, and from it the bodies are revealed [[taplin1977]]. The choral odes are longer and denser than in any later tragedy, and the play's meaning is carried as much by their recurring images as by its action [[lebeck1971]].",
+  "The guide quotes the translation of Edward Delaval Hughes Morshead (1849–1912), a master at Winchester College, first published as The House of Atreus in 1881. Morshead renders the spoken scenes in blank verse and the choral lyrics in rhymed stanzas, in a deliberately archaic Victorian idiom ('thou', 'wot', 'sooth'). He is generally faithful to the sense but expands the compressed Greek; where a modern translation is needed for close study, students may compare a modern version, such as the facing-text Loeb edition [[sommerstein2008]]."
+ ],
+ "plot": [
+  "On the palace roof at Argos a Watchman, who has waited a year for a beacon signalling the fall of Troy, sees the fire at last. The Chorus of old men who stayed behind ten years ago enter and recall the expedition's beginning: the omen of two eagles tearing a pregnant hare, the anger of Artemis, the contrary winds at Aulis, and Agamemnon's sacrifice of his daughter Iphigenia. Clytemnestra tells them that Troy fell in the night and describes the chain of beacons that carried the news. A Herald arrives to confirm the victory and to report that a storm has scattered the returning fleet; Menelaus is lost.",
+  "Agamemnon enters in a chariot with Cassandra, a daughter of Priam, as his captive. Clytemnestra welcomes him with an extravagant speech and asks him to walk into the palace on precious crimson tapestries. He refuses, fearing the envy of the gods, but she wins the argument, and he walks in on them. Cassandra, left outside, breaks her silence in visionary songs: she sees the children of Thyestes eaten in the house, foretells the murder of Agamemnon in his bath and her own death, and prophesies an avenger. Then she walks into the palace.",
+  "Agamemnon's death cries are heard. Clytemnestra appears over the bodies of the king and Cassandra and boasts of the killing: she trapped him in a robe like a net and struck him three times. In a long lyric exchange with the horrified Chorus she defends the act as just revenge for Iphigenia and as the work of the ancient spirit of vengeance in the house. Aegisthus enters to claim his part, telling the story of the Thyestean feast. The Chorus defy him and call on Orestes to return; swords are drawn, but Clytemnestra stops the fight, and the couple go into the palace as rulers of Argos."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Prologue: The Watchman and the Beacon",
+   "lines": "1–39",
+   "section": 1,
+   "summary": [
+    "A Watchman lies on the palace roof, where he has spent a year of nights looking for a fire signal that will announce the capture of Troy. He has been set there by the queen, whom he describes as a woman with a man's resolving heart. He cannot sleep for fear, and when he tries to sing to keep awake, he weeps for the house, which is no longer well governed as it was.",
+    "Suddenly the beacon blazes. He cries out for joy, plans to wake the queen, and imagines clasping his master's hand. But he breaks off: 'a great ox has stepped on my tongue', he says, using a proverb for enforced silence. If the house itself could speak, it would tell the story plainly; he speaks only to those who already know."
+   ],
+   "analysis": [
+    "The opening moves from darkness to light, from waiting to joy, and then at once to unease. That pattern, a hope expressed and immediately shadowed, is repeated throughout the play. The Watchman's dark hints about the house, and his description of the queen's 'man-counselling' heart (androboulon), introduce the two concerns that dominate everything that follows: the hidden crime within the palace, and a woman who acts with masculine power [[goldhill1992]] [[zeitlin1978]].",
+    "The scene also establishes the beacon as an image. The light that should mean deliverance will bring no rescue from the house's troubles, and the trilogy will end in a torchlight procession in Athens that truly does bring light out of darkness. Throughout the Oresteia Aeschylus repeats words and images in this way, so that they change their meaning as the story develops [[lebeck1971]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 1",
+     "quote": "I pray the gods to quit me of my toils,",
+     "note": "The trilogy opens with a prayer for release from toil (ponoi); the same wish for an end of sufferings recurs until the Eumenides."
+    },
+    {
+     "ref": "Ag. 10–11",
+     "quote": "Troy town is ta’en: such issue holds in hope\nShe in whose woman’s breast beats heart of man.",
+     "note": "The first description of Clytemnestra stresses the unwomanly will that will drive the plot."
+    },
+    {
+     "ref": "Ag. 36–38",
+     "quote": "Treads hard the ox o’ the adage.\n                                  Had it voice,\nThe home itself might soothliest tell its tale;",
+     "note": "The Watchman's silence hints at the queen's adultery and the house's past; speech and its suppression will be central to the play."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Parodos: The Omen, the Hymn to Zeus, and Iphigenia",
+   "lines": "40–257",
+   "section": 1,
+   "summary": [
+    "The Chorus of Argive elders, too old to have gone to Troy, enter chanting. Ten years ago the two sons of Atreus sailed with a thousand ships to punish Paris for taking Helen, like vultures screaming over a plundered nest whom Zeus sends an avenging Fury. They describe their own weakness, and ask Clytemnestra why she is making sacrifices throughout the city.",
+    "In the long sung ode that follows they recall the omen at the start of the war: two eagles, one black and one white-tailed, tore apart a pregnant hare. The prophet Calchas read the eagles as the two kings, who would take Troy, but warned that Artemis was angry at the feast and might demand 'another sacrifice'. The refrain 'sing sorrow, sorrow, but may the good prevail' runs through the song.",
+    "The elders break off for a hymn to Zeus, who has laid down that men learn through suffering. Then they tell the story of Aulis: contrary winds held the fleet, Calchas named the remedy, and Agamemnon, torn between his daughter and his duty to the army, 'put on the yoke-strap of necessity' and agreed to kill Iphigenia. Gagged so that she could not curse the house, her saffron robe falling to the ground, she looked at each of the sacrificers with eyes that pleaded. What came next, the elders say, they did not see and will not tell."
+   ],
+   "analysis": [
+    "This is the longest choral entry in Greek tragedy, and it sets out the moral problem of the whole play. Agamemnon's expedition is just, ordered by Zeus as protector of hospitality against Paris. But its price is the death of his child, and the omen suggests that the destruction of Troy, with its innocent young, will itself cause divine anger. Whether Agamemnon was compelled or chose freely, and whether Artemis' demand was punishment or test, are among the most debated questions in the study of Greek tragedy [[lloydjones1962]] [[peradotto1969]] [[nussbaum1986]].",
+    "The 'Hymn to Zeus' (160–183) is the play's theological centre. Zeus, who overthrew earlier gods, has set down the law that wisdom comes by suffering (pathei mathos), and that there is a 'violent grace' from the gods enthroned. The phrase does not promise comfort: in this play those who suffer learn, if at all, too late. But it anticipates the trilogy's movement towards understanding [[lloydjones1983]] [[goldhill1992]].",
+    "The sacrifice of Iphigenia is told as the perversion of a ritual. The girl who once sang the hymn at her father's feasts becomes the victim at his altar, lifted like a young goat. Sacrifice turned to murder becomes one of the trilogy's governing images, and Clytemnestra will describe her husband's killing in the same terms [[zeitlin1965]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 119–120",
+     "quote": "Far from the fields that she should range no more,\n  Big with her unborn brood, a mother-hare.",
+     "note": "The omen of the eagles and the hare: a sign of victory that is also a sign of guilt, since the young are destroyed with the mother."
+    },
+    {
+     "ref": "Ag. 177",
+     "quote": "Men shall learn wisdom, by affliction schooled.",
+     "note": "Morshead's rendering of pathei mathos, 'learning through suffering', the law that Zeus has laid down."
+    },
+    {
+     "ref": "Ag. 218",
+     "quote": "Thus on his neck he took\n      Fate’s hard compelling yoke;",
+     "note": "The decisive image of Agamemnon's choice: he accepts necessity, but the Greek suggests he also changes his mind, becoming reckless."
+    },
+    {
+     "ref": "Ag. 239",
+     "quote": "So, trailing on the earth her robe of saffron dye,",
+     "note": "Iphigenia's robe falls as she is lifted: the first of the play's fatal fabrics."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "First Episode: Clytemnestra and the Beacon Speech",
+   "lines": "258–354",
+   "section": 1,
+   "summary": [
+    "The leader of the Chorus addresses the queen respectfully. Clytemnestra announces that the Argives have taken Troy in the night just past. The elders doubt her: was it a dream, a rumour? She replies impatiently that she is no credulous girl.",
+    "She explains that Hephaestus' fire was sent from Mount Ida and passed, beacon by beacon, across the Aegean and through Greece: Lemnos, Athos, Macistus, Messapion, Cithaeron, Aegiplanctus, Arachnaeus, and finally the palace roof. Then she imagines the scene in Troy at that moment: the captives mourning over their dead, the victors sleeping in the Trojans' houses. She warns that the conquerors must respect the gods and temples of the city, or they may not return home safe. The elders, persuaded, prepare to give thanks."
+   ],
+   "analysis": [
+    "Clytemnestra's first scene shows her mastery of words. The beacon speech is a virtuoso narrative, likened to a relay race with torches, in which she has organised the whole communication from Troy to Argos; the woman at home controls a system that spans the Greek world. The elders' prejudice that women believe rumours and dreams is turned against them [[goldhill1984]] [[zeitlin1978]].",
+    "Her description of Troy is double. On the surface it is a pious warning; underneath it hopes for exactly the sacrilege it warns against, since a king who offends the gods will be easier to kill. 'Vinegar and oil' that will not mix is an image of the two peoples in Troy, but also of the speaker's words and meaning. The audience knows from the epic tradition that the Greeks did desecrate Troy's temples, as the Herald will confirm [[fraenkel1950]] [[denniston1957]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 264–265",
+     "quote": "As saith the adage, From the womb of Night\nSpring forth, with promise fair, the young child Light.",
+     "note": "The proverb of a good dawn born from mother night: Clytemnestra's welcome is full of images of birth and motherhood."
+    },
+    {
+     "ref": "Ag. 281–282",
+     "quote": "From Ida’s top Hephaestus, lord of fire,\nSent forth his sign;",
+     "note": "The opening of the beacon speech, which maps the chain of fires across the Aegean."
+    },
+    {
+     "ref": "Ag. 322–323",
+     "quote": "Within one cup pour vinegar and oil,\nAnd look! unblent, unreconciled, they war.",
+     "note": "Two substances that cannot mix: victors and victims in Troy, and the surface and depth of the queen's speech."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "First Stasimon: The Net of Zeus and the Sin of Paris",
+   "lines": "355–487",
+   "section": 1,
+   "summary": [
+    "After a short chant of thanksgiving to Zeus and Night, who have thrown a net over Troy, the Chorus sing of divine justice. Zeus strikes those who trample sacred things; excessive wealth leads to ruin, and the wrongdoer, like a child chasing a bird, brings disaster on his city. Such was Paris, who disgraced the table of his host by stealing Helen; they imagine Menelaus' grief, haunted by her image and her dreams.",
+    "The song then turns to Argos. War, 'the money-changer of bodies', sends home urns of ash instead of men. The citizens mutter angrily against the sons of Atreus, who fought 'for another man's wife'; the elders fear that the gods watch those who kill many, and they pray never to be a city-sacker. In the epode they begin to doubt the queen's news: perhaps the beacon lied."
+   ],
+   "analysis": [
+    "The ode begins as a celebration of Troy's punishment and ends as an indictment of the victors. The language of just retribution, applied first to Paris, is turned towards Agamemnon: he too has spent his people's lives for a woman, and the anger of the people is 'a curse' upon him. This is the typical method of the Aeschylean chorus, whose general reflections suddenly apply to the present [[lloydjones1983]] [[gagarin1976]].",
+    "The image of Ares as a merchant who trades bodies for gold dust is one of the most powerful anti-war passages in Greek literature. Its political force would not have been lost on an Athenian audience in 458, when the city was at war on several fronts; the casualty lists of Athens' war dead were displayed in public [[podlecki1966]] [[macleod1982]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 357–358",
+     "quote": "On towers of Ilion, free no more,\nHast flung the mighty mesh of war,",
+     "note": "The net that Zeus casts over Troy will reappear as the robe in which Clytemnestra traps Agamemnon."
+    },
+    {
+     "ref": "Ag. 438",
+     "quote": "War’s money-changer, giving dust for gold,",
+     "note": "Ares weighs bodies on his scales and sends back only ash: the cost of the war at home."
+    },
+    {
+     "ref": "Ag. 450–451",
+     "quote": "Yea, jealous wrath creeps on against th’ Atrides’ name.",
+     "note": "The people's anger against their kings prepares for the murder and for the play's politics."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Second Episode: The Herald",
+   "lines": "489–680",
+   "section": 1,
+   "summary": [
+    "A Herald arrives from the army, overwhelmed to see his homeland after ten years. He greets the gods of Argos and proclaims Agamemnon's victory: Troy is destroyed with 'the mattock of Zeus', its altars and shrines overturned. He describes the hardship of the campaign, the cold and the wet, and declares that the joy outweighs the pain. The elders hint that they too have suffered, and that silence is the only remedy for some troubles.",
+    "Clytemnestra returns triumphant. She was mocked for believing the beacons, but she was right; she sends a message that the king should hurry home to find a faithful wife, 'a watchdog of the house', who has not broken the seal on his property. She leaves. The Chorus ask about Menelaus, and the reluctant Herald describes how a terrible storm wrecked the fleet on the return; the sea was 'flowering with corpses'. Agamemnon's ship survived; Menelaus is missing."
+   ],
+   "analysis": [
+    "The Herald is the voice of the ordinary soldier, simple and sincere, and his joy is real. But his report, without his knowing it, accuses his king: the destruction of the altars and shrines of Troy is exactly what Clytemnestra warned against. The storm that destroyed the fleet is the anger of the gods (in the tradition, of Athena for the sacrilege of the Greeks) [[denniston1957]] [[raeburn2011]].",
+    "Clytemnestra's message is full of dramatic irony. Each phrase of fidelity, the watchdog, the unbroken seal, her ignorance of 'pleasure from another man', can be heard in a second, sinister sense; the Chorus, as they say themselves, understand her words through 'clear interpreters'. The absence of Menelaus is also important: the trilogy omits him, but it allows the play to focus on the house of Agamemnon alone [[goldhill1984]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 525–526",
+     "quote": "With the great axe of Zeus who righteth wrong—",
+     "note": "The victory is presented as Zeus' justice, but the following lines describe sacrilege."
+    },
+    {
+     "ref": "Ag. 606–607",
+     "quote": "A wife no other than he left her, true\nAnd faithful as a watch-dog to his home,",
+     "note": "Clytemnestra's message of fidelity, double in meaning; Cassandra will later call her a hateful dog."
+    },
+    {
+     "ref": "Ag. 659",
+     "quote": "Th’ Aegaean sea-field flecked with flowers of death,",
+     "note": "A grotesque image of the storm that destroyed the returning fleet."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Second Stasimon: Helen and the Lion Cub",
+   "lines": "681–781",
+   "section": 1,
+   "summary": [
+    "The Chorus reflect on Helen's name, which seems to contain the destruction she brought: 'destroyer of ships, destroyer of men, destroyer of cities' in the Greek wordplay. The wedding song sung for her in Troy became a lament. They tell a parable: a man raised a lion cub in his house, fondled by the children, gentle to the old; but when it grew up it showed its nature and filled the house with blood.",
+    "So Helen came to Troy, a spirit of windless calm, the soft arrow of the eyes, and turned into a Fury. The elders then reject the old saying that great prosperity by itself brings ruin. It is the impious act, they say, that breeds more such acts; justice shines in smoky huts and turns away from gilded halls built by tainted hands."
+   ],
+   "analysis": [
+    "The lion cub parable is applicable to many figures in the trilogy: Helen in Troy, Paris in his father's house, Agamemnon (the 'lion' who leapt the wall of Troy), Aegisthus (later a 'cowardly lion'), and Orestes, who will grow up to bring blood into the house. Since Knox's classic study readers have followed it from figure to figure; its refusal to fix one meaning is typical of the ode's imagery [[knox1952]] [[lebeck1971]].",
+    "The elders' moral claim is important for the theology of the play. Against the old view that the gods are jealous of prosperity as such, they insist that disaster follows only from wrongdoing, and that crimes beget crimes in the next generation. This is the closest the Chorus come to a doctrine of inherited guilt in which each new act is also free and culpable [[lloydjones1983]] [[dodds1973]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 689",
+     "quote": "Well named, at once, the Bride and Bane;",
+     "note": "Morshead's attempt at Aeschylus' puns on Helen's name (helenaus, helandros, heleptolis)."
+    },
+    {
+     "ref": "Ag. 717–718",
+     "quote": "Troy! thou hast fed and freed to roam\nA lion-cub within thy home!",
+     "note": "The parable of the lion cub, whose application spreads to almost every character in the trilogy."
+    },
+    {
+     "ref": "Ag. 758–760",
+     "quote": "Woe springs from wrong, the plant is like the seed—",
+     "note": "The Chorus' moral principle: impiety, not prosperity, generates ruin."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Third Episode: Agamemnon's Return and the Carpet Scene",
+   "lines": "782–974",
+   "section": 1,
+   "summary": [
+    "Agamemnon enters in his chariot, with Cassandra beside him. The Chorus greet him with careful words: they admit that they once thought him wrong to go to war for Helen, and warn him that some citizens are loyal only in appearance. Agamemnon, still in the chariot, thanks the gods, who voted unanimously for Troy's destruction, and describes the 'Argive beast' that leapt the city wall. He promises to consult the assembly and to 'cut or burn' whatever is sick in the city.",
+    "Clytemnestra comes out with her maids. She tells, before the elders, of her sufferings in his absence: the rumours of his death, her attempts at suicide, her sleepless nights. She explains that their son Orestes has been sent to Strophius in Phocis for his safety. Then she greets her husband with a flood of extravagant images, and orders the maids to spread crimson tapestries so that justice may lead him into a home he never expected.",
+    "Agamemnon refuses: such honours belong to gods, and he fears envy. In a fast exchange of single lines Clytemnestra overcomes his objections: would not Priam have walked on them? Does the people's talk matter? She asks him to give way. He removes his shoes, asks her to receive the stranger kindly, and walks into the palace over the precious cloth. Clytemnestra declares that the sea is inexhaustible, and the house rich in dye, and prays to Zeus the Fulfiller to fulfil her prayers."
+   ],
+   "analysis": [
+    "The carpet scene is the central scene of the play and one of the most famous in all drama. On the level of action, Clytemnestra makes Agamemnon commit an act of hubris, wasting the wealth of the house and accepting honours fit for a god or an Eastern tyrant, so that he goes to his death as a guilty man. Why he gives in so quickly has been explained in many ways: weariness, vanity, a husband's indulgence of his wife, or a fatal character revealed by a small choice [[easterling1973]] [[denniston1957]] [[fraenkel1950]].",
+    "The purple cloth, the colour of blood, makes a visual image of the play's themes. Agamemnon walks on fabric as Iphigenia's saffron robe fell to the earth; he 'tramples' the wealth of the house as he trampled Troy; and the cloth prefigures the robe in which he will be killed. The red path leading to the dark door is one of the great stage images of the theatre [[taplin1977]] [[goldhill1992]].",
+    "The scene is also a contest between man and woman. Agamemnon declares that 'it is not a woman's part to desire battle', but loses the battle of words. Clytemnestra's last prayer to 'Zeus Teleios', the Fulfiller, a title also associated with marriage, ironically confuses the god of fulfilment with the fulfilment of murder [[zeitlin1978]] [[winningtoningram1983]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 909–911",
+     "quote": "Swift, swift, with purple strew his passage fair,\nThat justice lead him to a home, at last,\nHe scarcely looked to see.",
+     "note": "Clytemnestra's command: 'justice' (Dike) and 'a home he never expected' mean something quite different to her."
+    },
+    {
+     "ref": "Ag. 925",
+     "quote": "And bid thee honour me as man, not god.",
+     "note": "Agamemnon knows the danger, which makes his surrender more striking."
+    },
+    {
+     "ref": "Ag. 935",
+     "quote": "What, think’st thou, in thy place had Priam done?",
+     "note": "The decisive argument: the comparison with the defeated Eastern king."
+    },
+    {
+     "ref": "Ag. 958",
+     "quote": "A Sea there is—and who shall stay its springs?",
+     "note": "Clytemnestra's answer to waste: the wealth of the sea and of the house cannot be exhausted, any more than blood."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Third Stasimon: Fear Without a Name",
+   "lines": "975–1034",
+   "section": 1,
+   "summary": [
+    "Alone with the silent Cassandra, the Chorus sing of a fear they cannot explain. They have seen the army return; yet their heart sings the 'lyreless dirge of the Fury'. Great prosperity, like a ship, may strike a hidden reef unless some of the cargo is thrown overboard in time.",
+    "But blood, once shed on the ground, cannot be recalled by any charm; Zeus himself struck down Asclepius for raising the dead. If the gods had not ordered things otherwise, the elders say, their tongue would pour out what their heart knows."
+   ],
+   "analysis": [
+    "This short ode shows the Chorus' typical position: they sense the truth but cannot say it, and know the principle without being able to act on it. Their intuition hears the song of the Furies, the spirits who will become the Chorus of the third play [[winningtoningram1983]].",
+    "The saying that blood once spilled cannot be called back is the logic of revenge itself: since no act can be undone, each killing demands another. The trilogy will search for some other way of answering bloodshed [[goldhill1992]] [[lloydjones1983]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 990–992",
+     "quote": "The inner spirit sings a boding song,\n    Self-prompted, sings the Furies’ strain—",
+     "note": "The 'lyreless song of the Erinys': the Furies are already present in the music of the play."
+    },
+    {
+     "ref": "Ag. 1018–1021",
+     "quote": "But blood of man once spilled,\n    Once at his feet shed forth, and darkening the plain,—\n      Nor chant nor charm can call it back again.",
+     "note": "The principle that drives the cycle of revenge."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Fourth Episode: Cassandra",
+   "lines": "1035–1330",
+   "section": 1,
+   "summary": [
+    "Clytemnestra returns to order Cassandra inside, telling her that slavery in an old-established house is not so hard. Cassandra does not answer, and the queen leaves in anger. Then Cassandra bursts into wild song, calling on Apollo, 'my destroyer'. In a lyric exchange with the bewildered Chorus she sees the house's history: the slaughtered children of Thyestes, their flesh eaten by their father. She sees the present: a wife preparing a bath for her husband, a net, a cow goring a bull. She laments her own death and compares herself to the nightingale.",
+    "Then she speaks in plain verse. She explains that Apollo gave her prophecy in return for her love; she cheated him, and he punished her by making no one believe her. She describes the Furies who live in the house, drunk on human blood. She names the plot of a 'cowardly lion' and a 'lioness who sleeps with the wolf', and foretells that a son will return to avenge his father by killing his mother. She throws off her prophetic insignia, knowing that she is going to her death. At the door she recoils from the smell of blood, then goes in, after a final reflection on the fragility of human fortune."
+   ],
+   "analysis": [
+    "The Cassandra scene is the longest single episode of the play, and it delays the murder with a scene of vision. Cassandra sees past, present and future together, and makes the house's history explicit: what the Watchman could not say, she says plainly. Her prophecy joins the Thyestean feast, the murder of Agamemnon and the vengeance of Orestes into a single chain [[knox1952]] [[goldhill1992]].",
+    "Dramatically, her long silence during the carpet scene is a powerful effect; Aeschylus was famous for silent figures. Her change from frantic lyric to calm iambic speech moves from madness to clarity. She is also the play's great victim: a Trojan princess, a slave, and a woman who refused a god. Her dignity in going to her death, knowing everything, contrasts with Agamemnon, who knew nothing [[taplin1977]].",
+    "Cassandra's role also introduces the gods of the trilogy. Apollo, who destroyed her, will order Orestes to kill his mother; the Furies whom she sees in the house will appear on stage in the Eumenides [[sommerstein2010]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 1080–1081",
+     "quote": "Apollo, Apollo!\nGod of all ways, but only Death’s to me,",
+     "note": "Cassandra's first words play on Apollo's name and the verb 'to destroy' (apollumi)."
+    },
+    {
+     "ref": "Ag. 1186–1187",
+     "quote": "Within this house a choir abidingly\n  Chants in harsh unison the chant of ill;",
+     "note": "The Furies as a chorus living in the house, prefiguring the Chorus of the Eumenides."
+    },
+    {
+     "ref": "Ag. 1258–1259",
+     "quote": "Lo, how the woman-thing, the lioness\nCouched with the wolf—her noble mate afar—",
+     "note": "Animal images for Clytemnestra and Aegisthus, against the 'noble lion' Agamemnon."
+    },
+    {
+     "ref": "Ag. 1327–1329",
+     "quote": "Ah state of mortal man! in time of weal,\nA line, a shadow! and if ill fate fall,\nOne wet sponge-sweep wipes all our trace away—",
+     "note": "Cassandra's last words: good fortune is a shadow, bad fortune erases everything like a wet sponge on a drawing."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "The Murder: Cries from the Palace",
+   "lines": "1331–1371",
+   "section": 1,
+   "summary": [
+    "The Chorus chant briefly about insatiable prosperity: if Agamemnon must pay for the blood shed long ago, who can boast of a destiny free from harm? Agamemnon's voice is heard from within: he has been struck a mortal blow, and then a second.",
+    "The Chorus divide into twelve voices, each speaking two lines. Some want to call the citizens, some to rush in, some to wait for certainty; the fear of tyranny is expressed. In the end they agree only that they must find out how things stand with the king."
+   ],
+   "analysis": [
+    "As in all Greek tragedy, the violence happens offstage, and it is represented by sound: two cries from behind the door. The scene that follows, in which the Chorus split into individual voices and debate helplessly, has sometimes been thought comic, but it dramatises the paralysis of the citizens of Argos and their fear of a tyranny that is about to arrive [[taplin1977]] [[raeburn2011]].",
+    "The elders' fear of 'tyranny' gives the murder a political meaning. Agamemnon's death is not only a family revenge but a coup, which will put Aegisthus and the queen in power [[griffith1995]] [[macleod1982]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 1343",
+     "quote": "O I am sped—a deep, a mortal blow.",
+     "note": "The king's only words after the carpet scene, heard from inside the house."
+    },
+    {
+     "ref": "Ag. 1364–1365",
+     "quote": "Death is a gentler lord than tyranny.",
+     "note": "The political note of the scene: the elders fear the rule of the usurpers."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Exodos: Clytemnestra over the Bodies",
+   "lines": "1372–1576",
+   "section": 1,
+   "summary": [
+    "The palace opens to reveal Clytemnestra standing over the bodies of Agamemnon, in the bath, and Cassandra. She declares that her earlier words were lies spoken to an enemy: she threw a robe around him like a fishing net, struck him twice, and when he fell gave him a third blow for Zeus of the underworld. His blood spattered her and she rejoiced like a cornfield in the spring rain.",
+    "The Chorus are horrified and threaten her with exile and the curse of the people. She retorts that they did nothing when Agamemnon sacrificed his daughter like a sheep. She swears by Justice for her child, by Ate and the Fury, that she has no fear while Aegisthus is in her house, and insults the dead Cassandra as Agamemnon's concubine.",
+    "In a long lyric exchange the Chorus lament the king and blame Helen; Clytemnestra rejects their accusations. When they name the 'spirit of the house', she seizes on it: it was not she who killed him but the ancient avenger (alastor) of Atreus' crime, taking her shape. The Chorus reply that she cannot be innocent, but admit that the avenger may have helped her. In the end both agree on the law of Zeus: the doer must suffer. Clytemnestra offers to make a pact with the spirit of the house, giving up wealth, if only the madness of mutual killing may leave the family."
+   ],
+   "analysis": [
+    "Clytemnestra's speech over the bodies is a terrifying inversion of religious language. Her three blows parody the three libations of a feast; the blood that falls on her is described as fertilising rain; the killing is a 'sacrifice' to the Fury. Her boasting confirms everything the Chorus feared, and makes Agamemnon's death an obscene parody of the sacrifice at Aulis [[zeitlin1965]] [[goldhill1984]].",
+    "Yet her arguments are serious. Her claim that the elders never condemned the sacrifice of Iphigenia has real weight, and her love for her daughter is genuine. The play gives the killer a hearing and makes the audience face the logic of retaliation: each killer has a just grievance, and each act of justice is also a crime. The shifting of responsibility to the house's spirit, which the Chorus partially accept, poses the problem of guilt that the Oresteia must solve [[lesky1966]] [[winningtoningram1983]].",
+    "The exchange ends in a principle on which both agree: 'the doer suffers' (pathein ton erxanta, 1564). It is the law of Zeus, but in this form it can only produce endless killing. Clytemnestra's wish to buy off the spirit of the house is futile; the audience knows that Orestes is coming [[lloydjones1983]] [[gagarin1976]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 1389–1390",
+     "quote": "And the dark sprinklings of the rain of blood\nFell upon me;",
+     "note": "Murder described as fertility: one of the most shocking images in Greek tragedy."
+    },
+    {
+     "ref": "Ag. 1404–1406",
+     "quote": "My husband once—and him this hand of mine,\nA right contriver, fashioned for his death.\nBehold the deed!",
+     "note": "Clytemnestra claims the act as her own work and as justice."
+    },
+    {
+     "ref": "Ag. 1415–1416",
+     "quote": "My daughter’s life as that of sheep or goat,",
+     "note": "The mother's case: the elders who condemn her said nothing about the sacrifice of Iphigenia."
+    },
+    {
+     "ref": "Ag. 1562–1564",
+     "quote": "The slayer of to-day shall die to-morrow—\n    The wage of wrong is woe.",
+     "note": "Morshead's version of the law that the doer must suffer, which governs the whole trilogy."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Exodos, Last Scene: Aegisthus",
+   "lines": "1577–1673",
+   "section": 1,
+   "summary": [
+    "Aegisthus enters with armed guards, greeting the 'day of justice'. He tells the story of the curse: Atreus drove his father Thyestes into exile, then invited him back and served him the flesh of his children. Thyestes cursed the house of Pelops. Aegisthus, the youngest child, was exiled with his father, and justice has brought him back to plot the king's death.",
+    "The Chorus scorn him as a coward who planned the murder but let a woman do it, and threaten him with stoning by the people. He replies with threats of prison and hunger. When they call him a woman and hope for Orestes' return, swords are drawn. Clytemnestra intervenes: there has been enough bloodshed. Aegisthus and the Chorus exchange final insults, and the queen takes her lover into the palace: they will rule the house well."
+   ],
+   "analysis": [
+    "Aegisthus' speech provides the last link in the chain of the curse, and his claim to justice is as strong in its way as Clytemnestra's. But his entrance lowers the tone of the play. He is a usurper with bodyguards, the stock tyrant of Athenian political thought, and the Chorus of free citizens resist him openly as they could not resist the queen [[griffith1995]] [[podlecki1966]].",
+    "The end of the play is no ending. The couple's rule rests on force, the Chorus look to Orestes, and Clytemnestra's wish for peace sounds hollow after what the audience has seen. The second play will begin at Agamemnon's tomb with Orestes' return; only in the Eumenides, when the court of the Areopagus judges the matricide, is the chain of revenge broken [[goldhill1992]] [[sommerstein2008]]."
+   ],
+   "key": [
+    {
+     "ref": "Ag. 1577",
+     "quote": "Dawn of the day of rightful vengeance, hail!",
+     "note": "Aegisthus claims his day as the day of justice."
+    },
+    {
+     "ref": "Ag. 1580",
+     "quote": "This man lie wound in robes the Furies wove,",
+     "note": "The robe that killed Agamemnon is imagined as woven by the Furies."
+    },
+    {
+     "ref": "Ag. 1625",
+     "quote": "Thou womanish man, waiting till war did cease,",
+     "note": "The Chorus' contempt reverses the play's gender roles: the woman is the warrior, the man stays at home."
+    },
+    {
+     "ref": "Ag. 1672–1673",
+     "quote": "I and thou will rule the palace and will order all things well.",
+     "note": "The play's last words promise an order that the next play will destroy."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Clytemnestra",
+   "side": "House of Atreus",
+   "text": "Queen of Argos, daughter of Tyndareus and Leda, sister of Helen. She has ruled the city during the war, and taken Agamemnon's cousin Aegisthus as her lover. Commanding, eloquent and a superb deceiver, she controls almost every scene in which she appears, manipulating the Chorus, the Herald and her husband. She kills Agamemnon in revenge for their daughter Iphigenia, and boasts of the deed. Aeschylus gives her both the grievance of a mother and the ambition of a ruler; the trilogy makes her the most powerful and the most disturbing of its characters."
+  },
+  {
+   "name": "Agamemnon",
+   "side": "House of Atreus",
+   "text": "King of Argos, elder son of Atreus, commander of the Greek army at Troy. He returns victorious after ten years with the captive Cassandra. At Aulis he sacrificed his daughter Iphigenia for the expedition; at Troy his army destroyed the city's temples. On stage he is dignified, cautious and somewhat cold, and is easily persuaded to walk on the tapestries. He is killed in his bath."
+  },
+  {
+   "name": "Cassandra",
+   "side": "Trojans",
+   "text": "Daughter of Priam, king of Troy, given to Agamemnon as his prize. Apollo gave her the gift of prophecy but, when she refused him, made her prophecies unbelieved. Silent through the carpet scene, she then sings and speaks visions of the house's past and future, and goes knowingly to her death. She is the play's most pitiable figure and its clearest voice of truth."
+  },
+  {
+   "name": "Aegisthus",
+   "side": "House of Atreus",
+   "text": "Son of Thyestes, the only surviving child of the brother whom Atreus fed with his own children. He planned the murder with Clytemnestra but did not take part in it. He appears only in the last scene, as a blustering tyrant supported by armed men."
+  },
+  {
+   "name": "The Chorus",
+   "side": "Argive elders",
+   "text": "Twelve old men of Argos, too old to go to war ten years before. They sing the great odes that tell the story of the expedition and reflect on justice and the gods. Loyal to Agamemnon but critical of his war, they sense disaster without being able to name or prevent it; after the murder they confront Clytemnestra and defy Aegisthus."
+  },
+  {
+   "name": "The Watchman",
+   "side": "Household",
+   "text": "A servant on the palace roof who has watched a year for the beacon. His joy and his fearful silence open the play and set its tone."
+  },
+  {
+   "name": "The Herald",
+   "side": "Army",
+   "text": "A soldier sent ahead by Agamemnon. He announces the fall of Troy with simple joy, recalls the miseries of the siege, and reluctantly reports the storm that scattered the fleet."
+  },
+  {
+   "name": "Iphigenia",
+   "side": "House of Atreus (absent)",
+   "text": "Daughter of Agamemnon and Clytemnestra, sacrificed at Aulis. She does not appear, but the parodos makes her death the central event behind the play, and her mother's memory of her drives the murder."
+  },
+  {
+   "name": "Orestes",
+   "side": "House of Atreus (absent)",
+   "text": "Son of Agamemnon and Clytemnestra, sent away as a child to Strophius in Phocis. Cassandra prophesies his return, and the Chorus call for it at the end. He is the hero of the Libation Bearers and the Eumenides."
+  },
+  {
+   "name": "Menelaus and Helen",
+   "side": "Absent",
+   "text": "Agamemnon's brother and his wife, whose abduction by Paris caused the war. Menelaus is lost at sea in the storm; Helen is the subject of the Chorus' bitter reflections in the second stasimon and the exodos."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Justice as retribution",
+   "text": [
+    "The Greek word dike, justice, appears again and again in the play, and almost every character claims it. Zeus sends the sons of Atreus against Paris as a punishment; Agamemnon calls the fall of Troy a just verdict of the gods; Clytemnestra kills him by 'the Justice of my child'; Aegisthus calls his triumph 'the day of justice'. In this world justice means retribution: the doer must suffer, as the Chorus say, and that is the law of Zeus.",
+    "The trouble is that each act of retribution is itself a crime that demands a new one. Justice in this form cannot end; it becomes the curse. The trilogy as a whole moves from private revenge to public judgement, and from the Furies' blood-law to the court of the Areopagus in the Eumenides. Agamemnon presents the problem in its most acute form [[lloydjones1983]] [[gagarin1976]] [[goldhill1992]]."
+   ]
+  },
+  {
+   "title": "Learning through suffering",
+   "text": [
+    "The 'Hymn to Zeus' states that Zeus has set men on the road to understanding by the law that 'learning comes through suffering' (pathei mathos). In Agamemnon the principle is grim: those who suffer learn only when it is too late, and the Chorus' wisdom never enables them to act. But the trilogy as a whole suggests a larger meaning, in which a community, through generations of suffering, learns to replace vendetta with law [[lloydjones1983]] [[dodds1973]].",
+    "The phrase has become one of the most quoted ideas of Greek tragedy. It is worth noting that the Greek speaks of a 'violent grace' (charis biaios) of the gods: learning is not given gently, and the play does not soften the cost [[raeburn2011]]."
+   ]
+  },
+  {
+   "title": "The curse and human responsibility",
+   "text": [
+    "The house of Atreus is haunted by an inherited curse, from the Thyestean feast through Agamemnon's sacrifice to his murder. Clytemnestra claims that the spirit of vengeance in the house acted through her. Yet the play never lets the curse remove responsibility. Agamemnon chooses to kill his daughter, Clytemnestra plans and boasts of the murder, and the Chorus insist that she is guilty. Divine causation and human choice work together, a combination that Lesky called 'double motivation' [[lesky1966]] [[lloydjones1962]] [[winningtoningram1983]]."
+   ]
+  },
+  {
+   "title": "Gender and power",
+   "text": [
+    "From the Watchman's first description, Clytemnestra is a woman with a 'man-counselling' heart, and she overturns every expectation of the female role: she rules, commands, speaks in public, argues, and kills. Agamemnon is defeated by her in argument and killed in a bath, wrapped in cloth; Aegisthus is mocked as a woman. The play's anxiety about female power is central to the trilogy, which ends with the triumph of male authority in Athena's verdict for the father [[zeitlin1978]] [[winningtoningram1983]] [[goldhill1984]]."
+   ]
+  },
+  {
+   "title": "Words, persuasion and deceit",
+   "text": [
+    "Clytemnestra wins by language. Her beacon speech persuades the Chorus, her welcome conceals murder, her argument defeats Agamemnon; afterwards she proudly says she lied. Cassandra, by contrast, speaks the truth and is not believed. Peitho, persuasion, is in Agamemnon a destructive power; in the Eumenides Athena will use it to reconcile the Furies. The play is also full of messages and signs, beacons, omens, rumours and prophecies, whose meaning is always uncertain [[goldhill1984]] [[lebeck1971]]."
+   ]
+  },
+  {
+   "title": "War and its cost",
+   "text": [
+    "The Trojan War is just in the Chorus' eyes, but its price is enormous: a daughter's life, ten years' absence, thousands of dead returned as ash, the temples of Troy destroyed, a fleet lost at sea. The second half of the first stasimon, in which the people of Argos mutter against the kings who sent their sons to die 'for another man's wife', makes the play a meditation on the cost of victory [[podlecki1966]] [[macleod1982]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Nets and fabrics",
+   "text": "Zeus throws a net over Troy; Iphigenia's robe falls; Agamemnon walks on crimson cloth; Clytemnestra traps him in a robe 'like a fishing net'; Aegisthus calls it a garment woven by the Furies. The net becomes the image of fate, deceit and murder, and in the Libation Bearers Orestes will display the robe itself [[lebeck1971]] [[goldhill1984]]."
+  },
+  {
+   "title": "Corrupted sacrifice",
+   "text": "Iphigenia is killed like an animal at the altar; Clytemnestra's sacrifices throughout the city hide her plan; Cassandra goes to her death as a victim 'to the altar'; the murder is described as a sacrifice to the Fury. Rituals of piety become rituals of killing [[zeitlin1965]]."
+  },
+  {
+   "title": "Light and darkness",
+   "text": "The beacon in the night, the 'dawn born from night', the sunlight that the Herald and Cassandra greet: light promises salvation but brings disaster. The trilogy ends with a torchlit procession in Athens [[lebeck1971]]."
+  },
+  {
+   "title": "Animals",
+   "text": "Eagles and the pregnant hare, vultures robbed of their young, the lion cub, the lion that leapt the walls of Troy, the cow and the bull, the lioness and the wolf, the dog. The animal images express the bestiality of violence and link the characters across generations [[knox1952]] [[peradotto1969]]."
+  },
+  {
+   "title": "Silence and speech",
+   "text": "The Watchman's 'ox on the tongue', the gagging of Iphigenia, Cassandra's long silence and her unbelieved speech, the Chorus who cannot say what they know: the play is constantly concerned with what cannot be spoken."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The beacon",
+   "text": "The chain of fires from Troy to Argos represents the queen's power and the uncertain truth of signs; it is also a light that does not save."
+  },
+  {
+   "title": "The crimson tapestries",
+   "text": "Woven treasures dyed with purple, the colour of blood and royalty: walking on them, Agamemnon commits hubris, and the path leads to his death [[taplin1977]]."
+  },
+  {
+   "title": "The palace door",
+   "text": "The door of the stage building is the threshold of the house of death, through which Agamemnon and Cassandra pass and from which the bodies are displayed. Cassandra calls it the gate of Hades."
+  },
+  {
+   "title": "The bath and the robe",
+   "text": "The ritual bath of welcome becomes the place of murder, and the robe a net. Domestic hospitality turns into a trap."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Was Agamemnon guilty at Aulis?",
+   "text": [
+    "The central interpretive question of the parodos is whether Agamemnon had any choice at Aulis. Hugh Lloyd-Jones argued that Zeus, through Artemis, imposed an inescapable necessity; Agamemnon was trapped by the curse and the god's will, and his guilt lay in the inherited curse and in the destructiveness of the war itself, which Artemis foresees in the omen [[lloydjones1962]].",
+    "Others insist that the Chorus' language describes a real decision. Albin Lesky showed that Aeschylus combines necessity and personal choice: Agamemnon 'puts on the yoke of necessity', but then his mind changes and he becomes eager for the deed [[lesky1966]]. Martha Nussbaum sees in the scene a classic case of tragic conflict between two obligations, in which the tragedy lies not in the choice itself but in Agamemnon's failure to feel the horror of what he has chosen [[nussbaum1986]]."
+   ],
+   "cite": [
+    "lloydjones1962",
+    "lesky1966",
+    "nussbaum1986"
+   ]
+  },
+  {
+   "title": "Why is Artemis angry?",
+   "text": [
+    "The parodos says that Artemis is angry with the eagles for their feast on the pregnant hare, and requires another sacrifice. The anger is puzzling: the eagles represent the kings, and the omen comes from Zeus. Some scholars regard Artemis' anger as directed at the coming destruction of Troy, which the omen prefigures; others, following John Peradotto, connect it to the character of Agamemnon himself, as it is symbolised by the eagle [[peradotto1969]].",
+    "Eduard Fraenkel, Denniston and Page, and later commentators have pointed out that Aeschylus does not mention the other versions of the myth, in which Agamemnon offended Artemis by killing a sacred deer. The play's silence is deliberate: the reason for the goddess's anger is left in the omen, and the responsibility is laid in the human decision [[fraenkel1950]] [[denniston1957]] [[lloydjones1983]]."
+   ],
+   "cite": [
+    "peradotto1969",
+    "fraenkel1950",
+    "denniston1957",
+    "lloydjones1983"
+   ]
+  },
+  {
+   "title": "Why does Agamemnon walk on the tapestries?",
+   "text": [
+    "The carpet scene has been read in many ways. For some it reveals an arrogant, vain king, who is easily seduced into an act that he himself calls appropriate only for the gods. For others, the king is weary and wishes to avoid a quarrel, and the scene reveals the power of the queen rather than the faults of the husband. P. E. Easterling argued that Aeschylus does not construct psychological 'character' in a modern way, and that the scene shows the meaning of the act rather than motivation [[easterling1973]].",
+    "Oliver Taplin stressed the visual significance of the scene: the red path from the chariot to the door makes the meaning visible, connecting the king's entry with his death [[taplin1977]]. Simon Goldhill has analysed the scene as a struggle over language and the meaning of signs [[goldhill1984]]."
+   ],
+   "cite": [
+    "easterling1973",
+    "taplin1977",
+    "goldhill1984"
+   ]
+  },
+  {
+   "title": "The justice of Zeus",
+   "text": [
+    "Is the world of the Oresteia governed by a just god? Hugh Lloyd-Jones argued that the Zeus of Aeschylus is the traditional god of early Greek thought, whose justice is the punishment of wrong, and that Aeschylus did not invent a new or more moral Zeus [[lloydjones1983]]. E. R. Dodds, in contrast, saw in the trilogy a vision of moral and political progress, in which divine justice moves from vendetta to a civic order [[dodds1973]].",
+    "Michael Gagarin argued that the trilogy's conception of justice develops from a principle of reciprocal retribution to a balanced order in the Eumenides [[gagarin1976]]. The debate is about the whole trilogy, but Agamemnon gives it its terms: the Hymn to Zeus, pathei mathos, and the law that 'the doer suffers'."
+   ],
+   "cite": [
+    "lloydjones1983",
+    "dodds1973",
+    "gagarin1976"
+   ]
+  },
+  {
+   "title": "Clytemnestra and the politics of gender",
+   "text": [
+    "Froma Zeitlin's influential essay read the Oresteia as a myth of the defeat of female power: Clytemnestra's rule represents a threat to the social order, which the trilogy resolves by establishing the authority of the father and of the male city, sealed in Athena's vote in the Eumenides [[zeitlin1978]]. R. P. Winnington-Ingram had earlier argued that Clytemnestra's resentment comes as much from her frustrated ambition, as a woman with a man's spirit, as from grief for her daughter [[winningtoningram1983]].",
+    "Recent critics have discussed how far the play sympathises with Clytemnestra. Her case for Iphigenia is strong and never answered by the Chorus; but her boasting and her adultery make her monstrous in Greek eyes. The ambivalence is perhaps the play's point [[goldhill1992]] [[sommerstein2010]]."
+   ],
+   "cite": [
+    "zeitlin1978",
+    "winningtoningram1983",
+    "goldhill1992",
+    "sommerstein2010"
+   ]
+  },
+  {
+   "title": "Politics in the Oresteia",
+   "text": [
+    "The Oresteia was performed in 458 BC, only a few years after the reforms of Ephialtes (462/461) removed most of the political powers of the Council of the Areopagus, and after Athens made an alliance with Argos. The Eumenides, which presents the foundation of the Areopagus as a homicide court and praises the alliance with Argos, has been read as a political intervention [[podlecki1966]] [[dodds1973]].",
+    "C. W. Macleod argued that the trilogy's politics are general rather than partisan: it is concerned with the nature of the city and its justice rather than with a particular policy [[macleod1982]]. Mark Griffith has examined how the trilogy deals with aristocratic power and the relationship between the elite and the people [[griffith1995]]. In Agamemnon itself, the people's anger against the kings and the fear of tyranny introduce these concerns."
+   ],
+   "cite": [
+    "podlecki1966",
+    "macleod1982",
+    "griffith1995",
+    "dodds1973"
+   ]
+  },
+  {
+   "title": "Imagery and the language of the trilogy",
+   "text": [
+    "Aeschylus' language is famously dense, and much modern criticism has concentrated on its patterns of imagery. Anne Lebeck traced the development of recurrent images, nets, birds, blood, light, through the trilogy [[lebeck1971]]. Froma Zeitlin showed how the motif of corrupted sacrifice links the murder of Iphigenia, of Agamemnon and of Clytemnestra [[zeitlin1965]]. B. M. W. Knox's essay on the lion in the house followed one image through its many applications [[knox1952]].",
+    "Simon Goldhill took this approach further, examining the play's concern with language itself, with the ambiguity of words and the uncertainty of signs and messages [[goldhill1984]]. These studies show that meaning in Aeschylus lies not only in the plot but in the network of repeated words."
+   ],
+   "cite": [
+    "lebeck1971",
+    "zeitlin1965",
+    "knox1952",
+    "goldhill1984"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Ag. 10–11",
+   "quote": "Troy town is ta’en: such issue holds in hope\nShe in whose woman’s breast beats heart of man.",
+   "who": "The Watchman",
+   "explanation": "The first description of Clytemnestra, as a woman who plans with a man's will. The theme of gender and power is announced in the first lines of the trilogy."
+  },
+  {
+   "ref": "Ag. 177",
+   "quote": "Men shall learn wisdom, by affliction schooled.",
+   "who": "The Chorus",
+   "explanation": "The law of Zeus in the Hymn to Zeus: pathei mathos, 'learning through suffering'. The phrase sums up the moral experience of the trilogy."
+  },
+  {
+   "ref": "Ag. 228",
+   "quote": "Pity me, Father!",
+   "who": "The Chorus, recalling Iphigenia",
+   "explanation": "Iphigenia's plea to her father is reported, not spoken; her voice is silenced by the gag, as the elders describe. The memory of her lies behind everything that follows."
+  },
+  {
+   "ref": "Ag. 322–323",
+   "quote": "Within one cup pour vinegar and oil,\nAnd look! unblent, unreconciled, they war.",
+   "who": "Clytemnestra",
+   "explanation": "An image of the conquered city in which victors and victims cannot mix, and of a speech whose surface and meaning are opposed."
+  },
+  {
+   "ref": "Ag. 717–718",
+   "quote": "Troy! thou hast fed and freed to roam\nA lion-cub within thy home!",
+   "who": "The Chorus",
+   "explanation": "The parable of the lion cub, raised in a house as a pet and later destroying it, is applicable to Helen and to almost every character in the trilogy."
+  },
+  {
+   "ref": "Ag. 909–911",
+   "quote": "Swift, swift, with purple strew his passage fair,\nThat justice lead him to a home, at last,\nHe scarcely looked to see.",
+   "who": "Clytemnestra",
+   "explanation": "The command that begins the carpet scene. The double meanings of 'justice' and the 'unexpected home' make it a death sentence."
+  },
+  {
+   "ref": "Ag. 935",
+   "quote": "What, think’st thou, in thy place had Priam done?",
+   "who": "Clytemnestra",
+   "explanation": "The question that defeats Agamemnon, comparing the Greek victor to the Eastern king he has destroyed."
+  },
+  {
+   "ref": "Ag. 1327–1329",
+   "quote": "Ah state of mortal man! in time of weal,\nA line, a shadow! and if ill fate fall,\nOne wet sponge-sweep wipes all our trace away—",
+   "who": "Cassandra",
+   "explanation": "Cassandra's farewell to life: human happiness is a sketch, a shadow, and misfortune wipes it out. It is one of the great statements of tragic pessimism."
+  },
+  {
+   "ref": "Ag. 1389–1390",
+   "quote": "And the dark sprinklings of the rain of blood\nFell upon me;",
+   "who": "Clytemnestra",
+   "explanation": "The killer rejoices in her husband's blood like a field in spring rain, perverting images of fertility and blessing."
+  },
+  {
+   "ref": "Ag. 1562–1564",
+   "quote": "The slayer of to-day shall die to-morrow—\n    The wage of wrong is woe.",
+   "who": "The Chorus",
+   "explanation": "The law that the doer must suffer, on which both the Chorus and Clytemnestra agree, is also the law that will destroy her."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Did Agamemnon have a choice at Aulis?",
+   "hint": "Read the parodos (184–257): the omen, Calchas' words, Agamemnon's speech, and the 'yoke of necessity'. Compare Lloyd-Jones and Nussbaum."
+  },
+  {
+   "q": "Why does Agamemnon agree to walk on the tapestries?",
+   "hint": "Read the stichomythia (931–943). Consider his reasons for refusing and what Clytemnestra's arguments appeal to."
+  },
+  {
+   "q": "How does Clytemnestra use language to control others?",
+   "hint": "Compare the beacon speech, the message to the Herald, the welcome speech, and her speech over the body."
+  },
+  {
+   "q": "What is the meaning of 'learning through suffering' in this play?",
+   "hint": "Who learns, and what? Look at the Chorus, Agamemnon, Cassandra and Clytemnestra, and think about the trilogy as a whole."
+  },
+  {
+   "q": "Is Clytemnestra's act justified?",
+   "hint": "Weigh her arguments in the exodos: Iphigenia, the spirit of the house, Agamemnon's concubines. How do the Chorus answer?"
+  },
+  {
+   "q": "What is the function of Cassandra's scene?",
+   "hint": "Consider its placement before the murder, the shift from lyric to speech, her account of the past and future, and her relation to Apollo."
+  },
+  {
+   "q": "How does the Chorus' attitude to Agamemnon and the war change during the play?",
+   "hint": "Compare the parodos, the first stasimon, their greeting to the king and their lament over his body."
+  },
+  {
+   "q": "Trace the image of the net through the play. What does it signify?",
+   "hint": "Look at the first stasimon, Cassandra's visions, Clytemnestra's description of the murder and Aegisthus' speech."
+  },
+  {
+   "q": "How are the themes of gender and power presented?",
+   "hint": "Consider the Watchman's description of the queen, the carpet scene, the Chorus' insults to Aegisthus, and the end of the trilogy."
+  },
+  {
+   "q": "How does the play prepare for the rest of the trilogy?",
+   "hint": "Look for references to Orestes, the Furies and the law of retribution, and think about how the Eumenides answers the questions raised here."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "denniston1957",
+   "text": "Denniston, J. D., and Denys Page, eds. Aeschylus: Agamemnon. Oxford: Clarendon Press, 1957."
+  },
+  {
+   "id": "dodds1973",
+   "text": "Dodds, E. R. The Ancient Concept of Progress and Other Essays on Greek Literature and Belief. Oxford: Clarendon Press, 1973."
+  },
+  {
+   "id": "easterling1973",
+   "text": "Easterling, P. E. 'Presentation of Character in Aeschylus.' Greece & Rome 20 (1973): 3–19."
+  },
+  {
+   "id": "fraenkel1950",
+   "text": "Fraenkel, Eduard, ed. Aeschylus: Agamemnon. 3 vols. Oxford: Clarendon Press, 1950."
+  },
+  {
+   "id": "gagarin1976",
+   "text": "Gagarin, Michael. Aeschylean Drama. Berkeley: University of California Press, 1976."
+  },
+  {
+   "id": "goldhill1992",
+   "text": "Goldhill, Simon. Aeschylus: The Oresteia. Landmarks of World Literature. Cambridge: Cambridge University Press, 1992."
+  },
+  {
+   "id": "goldhill1984",
+   "text": "Goldhill, Simon. Language, Sexuality, Narrative: The Oresteia. Cambridge: Cambridge University Press, 1984."
+  },
+  {
+   "id": "griffith1995",
+   "text": "Griffith, Mark. 'Brilliant Dynasts: Power and Politics in the Oresteia.' Classical Antiquity 14 (1995): 62–129."
+  },
+  {
+   "id": "herington1986",
+   "text": "Herington, John. Aeschylus. New Haven: Yale University Press, 1986."
+  },
+  {
+   "id": "knox1952",
+   "text": "Knox, Bernard M. W. 'The Lion in the House (Agamemnon 717–36 [Murray]).' Classical Philology 47 (1952): 17–25."
+  },
+  {
+   "id": "lebeck1971",
+   "text": "Lebeck, Anne. The Oresteia: A Study in Language and Structure. Washington, DC: Center for Hellenic Studies, 1971."
+  },
+  {
+   "id": "lesky1966",
+   "text": "Lesky, Albin. 'Decision and Responsibility in the Tragedy of Aeschylus.' Journal of Hellenic Studies 86 (1966): 78–85."
+  },
+  {
+   "id": "lloydjones1962",
+   "text": "Lloyd-Jones, Hugh. 'The Guilt of Agamemnon.' Classical Quarterly n.s. 12 (1962): 187–99."
+  },
+  {
+   "id": "lloydjones1983",
+   "text": "Lloyd-Jones, Hugh. The Justice of Zeus. 2nd ed. Sather Classical Lectures 41. Berkeley: University of California Press, 1983."
+  },
+  {
+   "id": "macleod1982",
+   "text": "Macleod, C. W. 'Politics and the Oresteia.' Journal of Hellenic Studies 102 (1982): 124–44."
+  },
+  {
+   "id": "nussbaum1986",
+   "text": "Nussbaum, Martha C. The Fragility of Goodness: Luck and Ethics in Greek Tragedy and Philosophy. Cambridge: Cambridge University Press, 1986."
+  },
+  {
+   "id": "peradotto1969",
+   "text": "Peradotto, John J. 'The Omen of the Eagles and the Ethos of Agamemnon.' Phoenix 23 (1969): 237–63."
+  },
+  {
+   "id": "podlecki1966",
+   "text": "Podlecki, Anthony J. The Political Background of Aeschylean Tragedy. Ann Arbor: University of Michigan Press, 1966."
+  },
+  {
+   "id": "raeburn2011",
+   "text": "Raeburn, David, and Oliver Thomas. The Agamemnon of Aeschylus: A Commentary for Students. Oxford: Oxford University Press, 2011."
+  },
+  {
+   "id": "sommerstein2010",
+   "text": "Sommerstein, Alan H. Aeschylean Tragedy. 2nd ed. London: Bristol Classical Press, 2010."
+  },
+  {
+   "id": "sommerstein2008",
+   "text": "Sommerstein, Alan H., ed. and trans. Aeschylus II: Oresteia. Loeb Classical Library 146. Cambridge, MA: Harvard University Press, 2008."
+  },
+  {
+   "id": "taplin1977",
+   "text": "Taplin, Oliver. The Stagecraft of Aeschylus: The Dramatic Use of Exits and Entrances in Greek Tragedy. Oxford: Clarendon Press, 1977."
+  },
+  {
+   "id": "winningtoningram1983",
+   "text": "Winnington-Ingram, R. P. Studies in Aeschylus. Cambridge: Cambridge University Press, 1983."
+  },
+  {
+   "id": "zeitlin1978",
+   "text": "Zeitlin, Froma I. 'The Dynamics of Misogyny: Myth and Mythmaking in the Oresteia.' Arethusa 11 (1978): 149–84."
+  },
+  {
+   "id": "zeitlin1965",
+   "text": "Zeitlin, Froma I. 'The Motif of the Corrupted Sacrifice in Aeschylus' Oresteia.' Transactions and Proceedings of the American Philological Association 96 (1965): 463–508."
+  }
+ ]
+}
