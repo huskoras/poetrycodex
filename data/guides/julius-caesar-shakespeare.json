@@ -1,0 +1,1039 @@
+{
+ "work": "julius-caesar-shakespeare",
+ "title": "The Tragedy of Julius Caesar",
+ "author": "William Shakespeare",
+ "quoteEdition": "julius-caesar-shakespeare",
+ "unit": "Scene",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "William Shakespeare (1564–1616), actor, sharer and principal playwright of the Lord Chamberlain's Men"
+  },
+  {
+   "label": "Written",
+   "value": "1599. It is not in Francis Meres's list of Shakespeare's plays (1598), and the Swiss traveller Thomas Platter saw a play about Julius Caesar on Bankside on 21 September 1599"
+  },
+  {
+   "label": "First printed",
+   "value": "The First Folio of 1623, the only early text; there is no quarto, and the Folio text is unusually clean"
+  },
+  {
+   "label": "Genre",
+   "value": "Tragedy, and the first of Shakespeare's Roman tragedies, followed by Antony and Cleopatra and Coriolanus"
+  },
+  {
+   "label": "Setting",
+   "value": "Rome in 44 BC, then the camp near Sardis and the plains of Philippi in Macedonia (42 BC)"
+  },
+  {
+   "label": "Main source",
+   "value": "Thomas North's English translation (1579) of Plutarch's Lives, especially the Lives of Caesar, Brutus and Antony"
+  },
+  {
+   "label": "Form",
+   "value": "Mostly blank verse in a clear, restrained style; Casca, the commoners and Brutus's funeral oration are in prose"
+  },
+  {
+   "label": "Structure",
+   "value": "Five acts (the Folio marks acts only); modern editions, followed here, divide it into 18 scenes. The assassination falls at the centre, in 3.1"
+  },
+  {
+   "label": "Key speeches",
+   "value": "Cassius's persuasion of Brutus (1.2), Brutus's orchard soliloquy (2.1), the two funeral orations (3.2), the quarrel (4.3)"
+  },
+  {
+   "label": "Central questions",
+   "value": "Is killing a would-be tyrant justified? Who is the hero, Caesar or Brutus? How do words move a crowd?"
+  }
+ ],
+ "context": [
+  "Julius Caesar was probably one of the first plays performed at the Globe, the new playhouse that Shakespeare's company built on Bankside in 1599. On 21 September of that year the Swiss traveller Thomas Platter crossed the Thames and saw, in a playhouse with a thatched roof, 'the tragedy of the first Emperor Julius Caesar' acted by about fifteen players, followed by a dance. His account, written in German, is usually taken to refer to Shakespeare's play at the Globe, though the identification cannot be proved [[chambers1923]] [[shapiro2005]].",
+  "Shakespeare's source was Plutarch's Parallel Lives in the English version of Sir Thomas North (1579), translated from Jacques Amyot's French. He drew on the Lives of Caesar, Brutus and Antony, and his debt is close in places, down to phrases and details such as Portia's wound, Caesar's epilepsy and the death of Cinna the poet. But he also compressed time (the triumph, the Lupercal and the assassination happen within a few weeks; the two battles of Philippi become one day) and invented much, including Cassius's tales of Caesar's weakness and the whole of Antony's funeral oration [[north1579]] [[bullough1964]] [[spencer1964]] [[macCallum1910]].",
+  "Caesar was a figure of enormous authority for Elizabethan readers: the conqueror of Gaul, the author of the Commentaries read in grammar schools, the founder of the Roman empire. He was also a model of the ambitious tyrant. Brutus was similarly double. Dante had placed him with Cassius in the mouth of Satan as a traitor to his lord, while classical writers praised him as the last defender of Roman liberty. Renaissance political thought argued endlessly whether a tyrant might lawfully be killed, and the play enters that debate without settling it [[miola1985]] [[hadfield2005]].",
+  "The play was written in an anxious year. Elizabeth I was sixty-six, unmarried and without a named heir, and the question of who would follow her could not be discussed openly. In 1599 the Earl of Essex led an army to Ireland amid rumours about his ambitions, and the authorities were watchful of books about deposition: John Hayward's history of Henry IV, dedicated to Essex, drew the authorities' suspicion that year. A play about the murder of a ruler who might become a king, and the civil war that followed, spoke to these fears from the safe distance of ancient Rome [[shapiro2005]] [[hadfield2005]].",
+  "Julius Caesar has also long been the Shakespeare play most often studied in schools, valued for its clarity and its rhetoric. Its style is plain and controlled, with few of the difficult images of the later tragedies. Its great set-pieces are speeches of persuasion, and the play is in many ways a study of how political speech works: on a friend, on a crowd, and on the speaker himself [[vickers1968]] [[wills2011]]."
+ ],
+ "plot": [
+  "Rome celebrates Julius Caesar's triumph over the sons of his rival Pompey, while some fear he will make himself king. At the feast of the Lupercal a soothsayer warns him to beware the Ides of March. Cassius, who resents Caesar, works on the honour of his friend Marcus Brutus, a man respected by all, while Caesar refuses a crown offered by Mark Antony three times. On a night of storms and portents, Cassius gathers conspirators and plants forged letters to persuade Brutus.",
+  "Brutus decides that Caesar must die for the sake of the republic, and joins the conspiracy, but insists that Antony be spared. His wife Portia demands to share his secret. On the morning of the Ides, Caesar's wife Calphurnia, terrified by dreams and omens, persuades him to stay home, but the conspirator Decius flatters him into going. At the Capitol the conspirators stab Caesar to death. Antony submits to them and wins permission to speak at the funeral.",
+  "In the Forum, Brutus justifies the killing in a speech of calm reason, and the crowd applauds. Antony follows, praising Caesar while seeming to praise his killers, showing the body and reading Caesar's generous will, until the people riot. They tear apart an innocent poet who shares a conspirator's name. Brutus and Cassius flee. Antony, Caesar's young heir Octavius and Lepidus form a triumvirate and condemn their enemies to death.",
+  "At Sardis, Brutus and Cassius quarrel bitterly over money and honour, then are reconciled. Brutus reveals that Portia has killed herself. That night Caesar's ghost appears to Brutus and promises to meet him at Philippi. In the battle there, Cassius, mistakenly believing all is lost, has his servant kill him. Brutus fights on, and when he is defeated, runs on his own sword. Antony praises him as 'the noblest Roman of them all'."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Act I, Scene 1: The tribunes scatter the crowd",
+   "lines": "1.1 (the whole scene)",
+   "section": 1,
+   "summary": [
+    "On a Roman street the tribunes Flavius and Marullus confront a crowd of working men who have taken a holiday to see Caesar's triumph. A cobbler answers them with puns ('a mender of bad soles'). Marullus rebukes the people for forgetting Pompey, whom they once cheered, and for celebrating a victory over Pompey's sons. Once the crowd has gone, the tribunes resolve to strip Caesar's statues of their decorations, although it is the feast of the Lupercal."
+   ],
+   "analysis": [
+    "The play opens not with Caesar but with the people, and with a quarrel about how they should feel about him. The joking cobbler runs rings round his social superiors, yet he and his fellows are silenced by Marullus's rhetoric and 'vanish tongue-tied'. In miniature this is the action of the whole play: a crowd is moved this way and that by whoever speaks to it last. The tribunes' fear of Caesar is stated in an image of a bird that must be plucked before it soars out of reach, the first of many images of Caesar as something more than a man.",
+    "Shakespeare compresses history here. Caesar's triumph over Pompey's sons took place in October 45 BC, while the Lupercalia fell on 15 February 44 BC; the play makes them one day, so that the crown offered at the Lupercal follows hard on the triumph [[bullough1964]] [[humphreys1984]]. The tribunes' fate, reported in 1.2, also comes from Plutarch [[north1579]]."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 1.1",
+     "quote": "You blocks, you stones, you worse than senseless things!",
+     "note": "Marullus's contempt for the crowd. Antony will later use the same terms with the opposite purpose: 'You are not wood, you are not stones, but men'."
+    },
+    {
+     "ref": "Julius Caesar 1.1",
+     "quote": "These growing feathers pluck’d from Caesar’s wing\nWill make him fly an ordinary pitch,",
+     "note": "A falconry image ('pitch' is the height a hawk reaches). The republicans' fear is that Caesar will rise beyond the reach of other men."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Act I, Scene 2: Cassius works on Brutus",
+   "lines": "1.2 (the whole scene)",
+   "section": 2,
+   "summary": [
+    "Caesar passes in procession to the Lupercalian race, telling Antony to touch the childless Calphurnia as he runs. A soothsayer twice warns him to 'beware the Ides of March'; Caesar dismisses him as a dreamer. Left alone with Brutus, Cassius notes his friend's recent coldness and offers to be his 'glass', showing Brutus the worth that Rome sees in him. As shouts are heard from offstage, Cassius tells how he once saved Caesar from drowning in the Tiber and watched him shake with fever in Spain, and asks why such a man should 'bestride the narrow world / Like a Colossus'. Brutus admits that he fears the people will choose Caesar as king, and promises to consider what Cassius has said.",
+    "Caesar returns, angry, and tells Antony that he distrusts the 'lean and hungry' Cassius. Casca then describes, in sardonic prose, how Antony offered Caesar a crown three times, how Caesar refused it each time more reluctantly, and how he fell down in an epileptic fit. Alone, Cassius reveals that he will throw forged letters into Brutus's windows to work on his sense of honour."
+   ],
+   "analysis": [
+    "This is the play's great scene of persuasion, and the first of many in which we watch rhetoric at work. Cassius does not argue that Caesar is a tyrant. He argues that Caesar is an ordinary, even a weak, man, and that Romans who bow to him are shamed. His appeals are to equality ('I was born free as Caesar'), to ancestry (the Brutus who expelled the Tarquins), and to Brutus's idea of himself. The swimming contest has no source in Plutarch, and the fever story turns Plutarch's plain report of Caesar's illness in Spain into an image of weakness; both show us Cassius's envy as well as his republicanism [[bullough1964]] [[miola1983]].",
+    "The crown-offering happens offstage, and we receive it only through the shouts and through Casca's mocking report, which turns the event into theatre: the people clap and hiss Caesar 'as they use to do the players'. The scene also gives us a Caesar who is deaf in one ear (a detail with no source in Plutarch) and epileptic, yet who speaks of himself in the third person: 'for always I am Caesar'. The gap between the public name and the private body is the play's central puzzle about him [[daniell1998]].",
+    "Cassius's closing soliloquy is a cold piece of calculation: 'who so firm that cannot be seduc'd?' It tells the audience, and not Brutus, that the letters Brutus will find in 2.1 are forgeries."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 1.2",
+     "quote": "Beware the Ides of March.",
+     "note": "The soothsayer's warning, repeated twice. The Ides (15 March) becomes the fixed point towards which the first half of the play moves."
+    },
+    {
+     "ref": "Julius Caesar 1.2",
+     "quote": "Why, man, he doth bestride the narrow world\nLike a Colossus, and we petty men\nWalk under his huge legs, and peep about\nTo find ourselves dishonourable graves.",
+     "note": "The Colossus of Rhodes was believed to straddle the harbour mouth. Cassius makes Caesar monstrous in size and Romans small, an image of political inequality."
+    },
+    {
+     "ref": "Julius Caesar 1.2",
+     "quote": "The fault, dear Brutus, is not in our stars,\nBut in ourselves, that we are underlings.",
+     "note": "Cassius denies that fate decides men's condition. The play will test this claim against omens, ghosts and the Philippi of Act V."
+    },
+    {
+     "ref": "Julius Caesar 1.2",
+     "quote": "Yond Cassius has a lean and hungry look;\nHe thinks too much: such men are dangerous.",
+     "note": "Caesar's shrewd reading of Cassius, which shows him a good judge of men even as he insists that he fears nothing."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act I, Scene 3: The night of storms",
+   "lines": "1.3 (the whole scene)",
+   "section": 3,
+   "summary": [
+    "That night, in a violent storm, Casca meets Cicero and describes the prodigies he has seen: a slave whose hand burned without harm, a lion near the Capitol, men all in fire walking the streets, an owl hooting at noon. Cicero answers that men interpret things as they please. Cassius enters, his doublet open to the lightning, and tells Casca that the heavens are warning against Caesar, a man 'prodigious grown'. He declares he will kill himself rather than live in bondage. Casca joins the conspiracy, and Cassius sends Cinna to plant his forged papers where Brutus will find them."
+   ],
+   "analysis": [
+    "The omens come from Plutarch's Life of Caesar, but Shakespeare makes their meaning the question [[north1579]]. Casca reads them as divine warnings; Cicero, in a single sceptical sentence, notes that men 'construe things after their fashion'; Cassius turns them into propaganda against Caesar. The audience is left to wonder whether the storm signals divine anger at tyranny, at the murder that is being planned, or at nothing at all [[miola1983]].",
+    "Cassius's speech on suicide ('Cassius from bondage will deliver Cassius') introduces a Roman idea that recurs throughout the play: that a free man can always end his own life rather than submit. It will be fulfilled literally at Philippi. Casca's closing lines spell out why Brutus is needed: his reputation will make the conspiracy look like virtue."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 1.3",
+     "quote": "Cassius from bondage will deliver Cassius:",
+     "note": "The Roman ideal of suicide as the last freedom, stated early. Cassius and Brutus both end their lives this way in Act V."
+    },
+    {
+     "ref": "Julius Caesar 1.3",
+     "quote": "His countenance, like richest alchemy,\nWill change to virtue and to worthiness.",
+     "note": "Casca on Brutus. The conspirators need his name as alchemists need their stone, to turn base metal into gold."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act II, Scene 1: Brutus joins the conspiracy",
+   "lines": "2.1 (the whole scene)",
+   "section": 4,
+   "summary": [
+    "Unable to sleep, Brutus reasons in his orchard that Caesar must die, not for anything he has done but for what the crown might make him. His servant Lucius brings a letter found at the window: 'Brutus, thou sleep'st: awake and see thyself.' The conspirators arrive before dawn. Brutus takes their hands, but refuses an oath, rejects the idea of bringing in Cicero, and overrules Cassius's proposal to kill Antony as well: they must be 'sacrificers, but not butchers'. Decius promises to bring Caesar to the Capitol by flattery.",
+    "When the others leave, Portia comes to Brutus and kneels to ask what troubles him. She reminds him that she is Cato's daughter, and shows him a wound she has given herself in the thigh to prove her constancy. Brutus promises to tell her everything. He is interrupted by the sick Caius Ligarius, who throws off his illness to follow him."
+   ],
+   "analysis": [
+    "Brutus's soliloquy ('It must be by his death') is one of the most discussed speeches in the play. He begins with the conclusion and then looks for reasons, admits that Caesar has never let passion rule his reason, and finally decides to 'fashion' the argument: Caesar must be thought of as a serpent's egg. Many readers see here an honourable mind deceiving itself; others, a principled argument for prevention of tyranny that the play takes seriously [[schanzer1963]] [[miola1985]]. Either way, Brutus is moved by forged letters he believes to be the voice of Rome.",
+    "In the council scene Brutus takes command and makes every decision that will ruin the conspiracy: no oath, no Cicero, and no killing of Antony. His language of ritual sacrifice, of carving Caesar 'as a dish fit for the gods', shows his wish to keep the deed pure, and also his blindness to what it will look like. Gail Kern Paster has shown how the play's language of blood connects this idea of a bloodless 'spirit' with Roman ideas of manhood [[paster1989]].",
+    "Portia's scene gives the conspiracy a domestic face. Her claim to share Brutus's 'secrets' as his wife, not his 'harlot', and her self-wounding, come from Plutarch's Life of Brutus [[north1579]]. In the Folio, Brutus asks Lucius whether tomorrow is 'the first of March'; the edition used here prints the editorial emendation 'Ides', which is accepted in most modern editions [[humphreys1984]]."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 2.1",
+     "quote": "It must be by his death: and for my part,\nI know no personal cause to spurn at him,\nBut for the general.",
+     "note": "Brutus begins with the verdict. 'The general' is the common good, the public cause that sets him apart from the envious conspirators."
+    },
+    {
+     "ref": "Julius Caesar 2.1",
+     "quote": "And therefore think him as a serpent’s egg\nWhich hatch’d, would, as his kind grow mischievous;\nAnd kill him in the shell.",
+     "note": "The argument from prevention. Caesar is to be killed for what he might become, not for what he is."
+    },
+    {
+     "ref": "Julius Caesar 2.1",
+     "quote": "Let us be sacrificers, but not butchers, Caius.",
+     "note": "Brutus's wish to make the killing a ritual. Antony will later call the conspirators 'butchers' over Caesar's body (3.1)."
+    },
+    {
+     "ref": "Julius Caesar 2.1",
+     "quote": "Portia is Brutus’ harlot, not his wife.",
+     "note": "Portia's claim to equal partnership in marriage, and to a share in public life that the Roman world of the play denies to women."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act II, Scene 2: Calphurnia's dream",
+   "lines": "2.2 (the whole scene)",
+   "section": 5,
+   "summary": [
+    "In his house, on the morning of the Ides, Caesar hears that Calphurnia has cried out three times in her sleep that he was being murdered. She begs him to stay at home, citing the portents of the night. Caesar insists that the valiant die only once, and even when the augurers report a sacrifice without a heart he declares that he is more dangerous than danger itself. At last he agrees to stay, for her sake. Decius arrives, reinterprets Calphurnia's dream of a statue spouting blood as a sign of Rome's renewal, and tells him that the Senate means to give him a crown that day. Caesar goes, welcoming the conspirators as friends."
+   ],
+   "analysis": [
+    "The scene shows Caesar at home, where his public self and his private uncertainties meet. He speaks some of his noblest lines about death, yet he changes his mind three times in a few minutes, and he is moved finally by flattery and by fear of ridicule. Decius has promised in 2.1 to manage him by telling him he hates flatterers, and we watch it happen. Shakespeare keeps the audience divided: Caesar's courage is real, and so is his vanity [[schanzer1963]].",
+    "Calphurnia's dream, with its image of Romans bathing their hands in Caesar's blood, will come true in 3.1 more literally than either interpretation suggests. Both readings, hers and Decius's, are partly right, which is typical of the play's treatment of signs."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 2.2",
+     "quote": "When beggars die, there are no comets seen;\nThe heavens themselves blaze forth the death of princes.",
+     "note": "Calphurnia's belief that nature responds to the fate of great men. A comet was in fact said to have appeared after Caesar's death."
+    },
+    {
+     "ref": "Julius Caesar 2.2",
+     "quote": "Cowards die many times before their deaths;\nThe valiant never taste of death but once.",
+     "note": "Caesar's Stoic courage, and perhaps also a pose: he is acting the part of Caesar even in his own house."
+    },
+    {
+     "ref": "Julius Caesar 2.2",
+     "quote": "Signifies that from you great Rome shall suck\nReviving blood,",
+     "note": "Decius's flattering interpretation. The 'reviving blood' will in fact feed the civil war and the empire of Octavius."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act II, Scene 3: Artemidorus's warning",
+   "lines": "2.3 (the whole scene)",
+   "section": 6,
+   "summary": [
+    "Near the Capitol, Artemidorus reads aloud a letter he has written to warn Caesar of the conspiracy, naming every conspirator. He plans to hand it to Caesar as a petition."
+   ],
+   "analysis": [
+    "The short scene raises the suspense: the plot could still be exposed. Artemidorus's comment that virtue cannot live free from the 'teeth of emulation' (envy) offers yet another view of the conspiracy, as the work of envy rather than of principle. In the edition used here, his verse lines after the letter are printed as continuous prose."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 2.3",
+     "quote": "“Caesar, beware of Brutus; take heed of Cassius; come not near Casca;",
+     "note": "Brutus's name stands first in the list. To an outsider, his is the name that matters most."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act II, Scene 4: Portia's anxiety",
+   "lines": "2.4 (the whole scene)",
+   "section": 7,
+   "summary": [
+    "At Brutus's house, Portia sends Lucius to the Capitol without being able to say why. She has learned the secret and can hardly keep it. She meets the soothsayer, who is going to try once more to warn Caesar, and nearly gives herself away."
+   ],
+   "analysis": [
+    "The scene shows the cost of the conspiracy from the side of those who must wait. Portia's sense of a 'man's mind' trapped in 'a woman's might' recalls her self-wounding in 2.1 and prepares for the report of her death in 4.3 [[kahn1997]]. Her strained, broken speech also slows the action at the moment when everything is about to happen."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 2.4",
+     "quote": "I have a man’s mind, but a woman’s might.\nHow hard it is for women to keep counsel!",
+     "note": "Portia judges herself by the Roman masculine standard of constancy, and finds herself failing it."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act III, Scene 1: The assassination",
+   "lines": "3.1 (the whole scene)",
+   "section": 8,
+   "summary": [
+    "On his way into the Senate, Caesar brushes aside Artemidorus's letter, saying that what concerns himself shall be served last. Popilius Lena wishes the conspirators well, and for a moment Cassius fears they have been discovered. Trebonius draws Antony away. Metellus Cimber kneels to beg for his banished brother's recall; Brutus and Cassius join him. Caesar refuses, declaring himself 'constant as the northern star'. Casca stabs first, then the others, and last Brutus. Caesar dies with the words 'Et tu, Brute?'",
+    "The conspirators bathe their hands in Caesar's blood and imagine their deed being acted 'in States unborn'. Antony sends a servant to ask for safe conduct, then arrives, shakes each bloody hand, and asks to speak at the funeral. Against Cassius's advice, Brutus agrees. Alone with the body, Antony prophesies civil war and vengeance. A servant announces that Octavius is approaching Rome."
+   ],
+   "analysis": [
+    "The assassination takes place at the exact centre of the play. Caesar's last speeches are his most arrogant: he compares himself to the pole star and to Olympus. Some critics hear in them the tyranny the conspirators feared; others hear a man claiming the constancy of the law. Ben Jonson mocked a line that he remembered as 'Caesar did never wrong, but with just cause'; the Folio's reading is different, and many scholars believe the line was revised after Jonson's criticism [[humphreys1984]] [[daniell1998]]. (The edition used here has 'Caesar dost not wrong' where the Folio has 'doth'.)",
+    "'Et tu, Brute?' is not in Plutarch, who says that Caesar stopped resisting when he saw Brutus among his attackers, and Suetonius records a Greek phrase. The Latin words had already appeared on the English stage before Shakespeare [[bullough1964]] [[spevack1988]]. The bathing of hands in blood fulfils Calphurnia's dream, and Cassius's metatheatrical lines about future performances remind the audience in the Globe that they are themselves watching one of them.",
+    "Antony's entrance turns the scene. He shakes the conspirators' hands while speaking openly to the corpse, plays the part of the bereaved friend, and secures the right to speak. Brutus's two mistakes, sparing Antony in 2.1 and now allowing the funeral oration, become clear in the soliloquy that closes the scene, where the gentle mourner reveals a voice of revenge."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 3.1",
+     "quote": "But I am constant as the northern star,\nOf whose true-fix’d and resting quality\nThere is no fellow in the firmament.",
+     "note": "Caesar's claim to be unmoved and unique. Seconds later the fixed star is a body on the floor."
+    },
+    {
+     "ref": "Julius Caesar 3.1",
+     "quote": "Et tu, Brute?—Then fall, Caesar!",
+     "note": "Caesar's last words, in Latin: 'You too, Brutus?' He speaks of himself in the third person to the end."
+    },
+    {
+     "ref": "Julius Caesar 3.1",
+     "quote": "How many ages hence\nShall this our lofty scene be acted over\nIn States unborn, and accents yet unknown!",
+     "note": "Cassius imagines future performances. The audience of 1599, hearing an 'accent yet unknown' to Rome, is part of the fulfilment."
+    },
+    {
+     "ref": "Julius Caesar 3.1",
+     "quote": "Cry havoc and let slip the dogs of war,",
+     "note": "From Antony's soliloquy over the body. 'Havoc' was the cry that permitted soldiers to pillage without mercy."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act III, Scene 2: The funeral orations",
+   "lines": "3.2 (the whole scene)",
+   "section": 9,
+   "summary": [
+    "In the Forum, Brutus addresses the citizens in prose. He loved Caesar, he says, but loved Rome more; Caesar was ambitious, and so he slew him. He offers to die by the same dagger if Rome needs it. The crowd cheers, and one citizen cries, 'Let him be Caesar.' Brutus leaves, asking the people to hear Antony.",
+    "Antony begins 'Friends, Romans, countrymen', and claims he comes to bury Caesar, not to praise him. He repeats that Brutus is 'an honourable man' until the phrase becomes an accusation, recalls Caesar's refusal of the crown, weeps, and mentions Caesar's will, which he says he will not read. He descends, shows the people Caesar's torn mantle and then the body itself, and only then reads the will: every citizen receives seventy-five drachmas and the use of Caesar's gardens. The crowd runs to burn the conspirators' houses. Antony learns that Octavius has arrived and that Brutus and Cassius have fled."
+   ],
+   "analysis": [
+    "The two speeches are the most famous contrast in Shakespeare. Brutus speaks in balanced, symmetrical prose, full of antithesis and parallel clauses ('as he was valiant, I honour him; but, as he was ambitious, I slew him'). It is the rhetoric of reason and of his own integrity: he asks to be believed 'for mine honour'. Plutarch had remarked on the brief, 'Laconian' style of Brutus's Greek letters and on the florid 'Asiatic' style of Antony, and Shakespeare turns those remarks into drama [[north1579]] [[vickers1968]] [[wills2011]].",
+    "Antony speaks in verse and works through the emotions. He uses irony (the repeated 'honourable'), pauses to weep, withholds the will to make the people demand it, and stages a show: the mantle, the wounds as 'poor poor dumb mouths', the body unveiled. He claims to be 'no orator, as Brutus is', which is the oldest of orator's tricks. Garry Wills reads the speech as a demonstration of classical rhetoric adapted for the stage, its effect depending on movement and timing as much as words [[wills2011]].",
+    "The crowd's response is the play's harshest judgement on popular politics, or on the speakers who exploit it. The same people who want to crown Brutus as a new Caesar a few minutes later swear to burn his house. Their cry 'Let him be Caesar' shows that they have not understood his republican argument at all [[patterson1989]]."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 3.2",
+     "quote": "Not that I loved Caesar less,\nbut that I loved Rome more.",
+     "note": "The core of Brutus's case, in perfect antithesis. It puts public duty before private love."
+    },
+    {
+     "ref": "Julius Caesar 3.2",
+     "quote": "Let him be Caesar.",
+     "note": "A citizen's response to Brutus's speech against one-man rule. The crowd can imagine politics only as the rule of a great man."
+    },
+    {
+     "ref": "Julius Caesar 3.2",
+     "quote": "Friends, Romans, countrymen, lend me your ears;\nI come to bury Caesar, not to praise him.",
+     "note": "Antony's opening, which disclaims exactly what he is about to do. Note how the three terms of address move from personal to political."
+    },
+    {
+     "ref": "Julius Caesar 3.2",
+     "quote": "This was the most unkindest cut of all;",
+     "note": "A double superlative for emphasis. 'Unkind' also means 'unnatural', against kinship, since Brutus was 'Caesar's angel'."
+    },
+    {
+     "ref": "Julius Caesar 3.2",
+     "quote": "Now let it work. Mischief, thou art afoot,\nTake thou what course thou wilt!",
+     "note": "Antony's private satisfaction after the crowd has gone. The mourning friend was also a calculating politician."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Act III, Scene 3: Cinna the poet",
+   "lines": "3.3 (the whole scene)",
+   "section": 10,
+   "summary": [
+    "Cinna the poet, who has dreamed of feasting with Caesar, goes out against his will to attend the funeral. The mob surrounds him and fires questions at him. When he gives his name as Cinna, they cry that he is a conspirator. He protests that he is Cinna the poet, not Cinna the conspirator, but they tear him to pieces anyway for his 'bad verses' and rush on to burn the conspirators' houses."
+   ],
+   "analysis": [
+    "This short scene, taken from Plutarch, shows what Antony's speech has released [[north1579]]. The comic rhythm of the citizens' questions turns into murder without any change of tone, and the mob kills a man for a name. In the theatre the scene is often one of the most frightening in the play. It is also a scene about words: the poet dies because a name has become a sign of guilt, and the mob's joke about his verses suggests the fate of poetry when rhetoric rules [[patterson1989]] [[wilson2002]]."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 3.3",
+     "quote": "I am Cinna the poet, I am Cinna the poet.",
+     "note": "His plea for his own identity, which the mob refuses to hear."
+    },
+    {
+     "ref": "Julius Caesar 3.3",
+     "quote": "It is no matter, his name’s Cinna; pluck but his name out of his heart,\nand turn him going.",
+     "note": "The crowd's logic. A name has replaced a person, and violence follows the words that Antony has set loose."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Act IV, Scene 1: The proscription",
+   "lines": "4.1 (the whole scene)",
+   "section": 11,
+   "summary": [
+    "Antony, Octavius and Lepidus, now ruling as the triumvirate, sit at a table marking down the names of enemies to be killed. Lepidus agrees to his brother's death, Antony to his nephew's. Antony sends Lepidus to fetch Caesar's will so that they can reduce the legacies. When Lepidus leaves, Antony scorns him as a beast of burden. Octavius defends Lepidus mildly, and the two agree to march against Brutus and Cassius."
+   ],
+   "analysis": [
+    "The scene shows the new order founded on the murder of Caesar. The cold bargaining over relatives' lives and the plan to cut the bequests Antony used so effectively in 3.2 strip away the passion of the funeral scene. Antony's contempt for Lepidus also anticipates the next struggle for power, between Antony and Octavius, which Shakespeare would dramatise in Antony and Cleopatra. Brutus's fear of what the rule of one man would bring is fulfilled by Caesar's avengers [[miola1983]] [[cantor1976]]."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 4.1",
+     "quote": "These many then shall die; their names are prick’d.",
+     "note": "To 'prick' is to mark a name on a list. The proscription is the opposite of Brutus's ritual 'sacrifice'."
+    },
+    {
+     "ref": "Julius Caesar 4.1",
+     "quote": "He shall but bear them as the ass bears gold,",
+     "note": "Antony on Lepidus, a man to be used and then turned out to graze. Power has become an exchange of tools."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Act IV, Scene 2: Brutus and Cassius meet at Sardis",
+   "lines": "4.2 (the whole scene)",
+   "section": 12,
+   "summary": [
+    "In camp near Sardis, Brutus learns from Lucilius that Cassius received him with cool formality, and reflects on friendships that are cooling. Cassius arrives and at once accuses Brutus of having wronged him. Brutus stops him: they must not quarrel before their armies, but in his tent."
+   ],
+   "analysis": [
+    "The short scene sets up the quarrel and shows the strain on the conspiracy once Caesar is gone. Brutus's image of 'hollow men' who make a fine show but fail in the trial recalls his habit of judging others by the ideals of 'plain and simple faith'. Both men care about appearances, and about what the soldiers will see."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 4.2",
+     "quote": "When love begins to sicken and decay\nIt useth an enforced ceremony.",
+     "note": "Brutus on the signs of cooling friendship, a theme the quarrel scene will explore."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Act IV, Scene 3: The quarrel and the ghost",
+   "lines": "4.3 (the whole scene)",
+   "section": 13,
+   "summary": [
+    "In Brutus's tent, Cassius complains that Brutus has condemned Lucius Pella for bribery despite his letters on the man's behalf. Brutus accuses Cassius of having an 'itching palm' and of refusing him money to pay his legions. The quarrel grows until Cassius offers Brutus his dagger and his bare breast. Brutus relents, and they are reconciled. A poet tries to make peace and is thrown out. Brutus then reveals that Portia is dead: she 'swallow'd fire'. When Messala arrives and reports her death, Brutus receives the news as if for the first time, with Stoic calm.",
+    "Messala brings news that the triumvirs have killed a hundred senators, Cicero among them. Brutus overrules Cassius's sensible plan to wait for the enemy, and they agree to march to Philippi. Late at night, while Lucius plays and falls asleep, the Ghost of Caesar appears to Brutus and calls itself 'thy evil spirit'. It tells him he will see it again at Philippi."
+   ],
+   "analysis": [
+    "The quarrel scene was admired by early audiences and is still often regarded as one of Shakespeare's finest pieces of dialogue: Leonard Digges, in verses printed in 1640, praised the quarrel above Jonson's Roman plays [[humphreys1984]]. It shows the two men at their pettiest and most human. Brutus, who killed Caesar 'for justice' sake', now has to demand money that his principles will not let him raise himself, and Cassius's love for his friend is plainer than his politics.",
+    "The double revelation of Portia's death is one of the play's best-known textual problems. Brutus tells Cassius, then appears to hear the news from Messala as if he did not know. Many editors believe that the Folio preserves two versions of the episode, one meant to replace the other; others argue that Brutus is deliberately performing his Stoicism in public [[humphreys1984]] [[spevack1988]] [[daniell1998]]. Either way, the scene shows the cost of the Roman ideal of constancy.",
+    "Brutus's famous speech on the 'tide in the affairs of men' is a fine piece of language, but in the play it serves a bad military decision. The ghost scene is quiet and eerie, framed by the sleeping boy and his song. In Plutarch's Life of Brutus the spirit is unnamed; Shakespeare makes it Caesar's [[north1579]] [[bullough1964]]."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 4.3",
+     "quote": "I had rather be a dog, and bay the moon,\nThan such a Roman.",
+     "note": "Brutus measures Cassius against his ideal of Rome. The quarrel is about what it means to be a Roman."
+    },
+    {
+     "ref": "Julius Caesar 4.3",
+     "quote": "No man bears sorrow better. Portia is dead.",
+     "note": "Brutus reveals his private grief as a Stoic demonstration. The short sentence after the boast hits hard."
+    },
+    {
+     "ref": "Julius Caesar 4.3",
+     "quote": "There is a tide in the affairs of men,\nWhich, taken at the flood, leads on to fortune;",
+     "note": "Brutus's argument for attacking at once. The image is persuasive, but Cassius's practical reasons were better."
+    },
+    {
+     "ref": "Julius Caesar 4.3",
+     "quote": "Thy evil spirit, Brutus.",
+     "note": "The ghost's self-description. It may be Caesar's spirit, Brutus's own bad angel, or both."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Act V, Scene 1: The parley at Philippi",
+   "lines": "5.1 (the whole scene)",
+   "section": 14,
+   "summary": [
+    "On the plains of Philippi the two armies face each other. Octavius openly defies Antony's order of battle. The generals exchange insults: Antony recalls how the conspirators flattered Caesar before stabbing him, and Octavius vows not to sheathe his sword until Caesar's 'three and thirty wounds' are avenged. Cassius tells Messala that it is his birthday, and that the eagles which followed the army have been replaced by ravens and kites. He and Brutus discuss what they will do if they lose, and take a solemn farewell."
+   ],
+   "analysis": [
+    "The parley is a battle of words before the battle of swords, and it brings back the play's concern with rhetoric: 'Words before blows'. Octavius's quiet insistence on taking the right wing shows who will be the master of the future. Plutarch gives Caesar twenty-three wounds; the play's 'three and thirty' increases the number [[north1579]] [[humphreys1984]].",
+    "Cassius, who once followed the philosopher Epicurus in rejecting omens, now half believes in them, and Brutus contradicts himself on suicide: he blames Cato for killing himself, but will never be led in triumph through Rome. The farewell between the two friends, with its repetitions, is one of the most moving moments in the play."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 5.1",
+     "quote": "Words before blows: is it so, countrymen?",
+     "note": "Brutus opens the parley. The play's two great forces, persuasion and violence, are brought together on the battlefield."
+    },
+    {
+     "ref": "Julius Caesar 5.1",
+     "quote": "Never, till Caesar’s three and thirty wounds\nBe well aveng’d;",
+     "note": "Octavius states the theme of revenge. Plutarch gives twenty-three wounds."
+    },
+    {
+     "ref": "Julius Caesar 5.1",
+     "quote": "For ever, and for ever, farewell, Cassius.\nIf we do meet again, why, we shall smile;\nIf not, why then this parting was well made.",
+     "note": "The farewell. Cassius repeats it almost word for word, a sign that the quarrel is fully healed."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Act V, Scene 2: Brutus orders the attack",
+   "lines": "5.2 (the whole scene)",
+   "section": 15,
+   "summary": [
+    "In the battle, Brutus sends Messala with orders for the legions on the other wing to attack at once, because he sees weakness in Octavius's troops."
+   ],
+   "analysis": [
+    "This brief scene makes Brutus's decision vivid. As Titinius reports in 5.3, the attack is made too early, and Brutus's soldiers fall to plunder while Cassius is surrounded by Antony."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 5.2",
+     "quote": "Ride, ride, Messala, ride, and give these bills\nUnto the legions on the other side.",
+     "note": "Brutus's urgency. 'Bills' are written orders."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Act V, Scene 3: The death of Cassius",
+   "lines": "5.3 (the whole scene)",
+   "section": 16,
+   "summary": [
+    "Cassius's men are in flight and his camp is burning. He sends Titinius to discover whether certain troops are friends or enemies, and asks Pindarus to watch from a hill, since his own sight was always poor. Pindarus mistakenly reports that Titinius has been captured. Believing his best friend taken, Cassius has Pindarus kill him with the sword that killed Caesar. Titinius returns with a victory wreath from Brutus, finds Cassius dead, and kills himself. Brutus arrives, mourns 'the last of all the Romans', and returns to the fight."
+   ],
+   "analysis": [
+    "Cassius dies on his birthday, by a misunderstanding, with the sword that killed Caesar. His death is the result of error, as Messala says in his speech on 'Error, Melancholy's child', but also of Cassius's readiness to believe the worst. Shakespeare follows Plutarch closely here [[north1579]] [[bullough1964]].",
+    "Brutus's words, 'O Julius Caesar, thou art mighty yet!', state the central irony of the second half of the play. The conspirators killed Caesar's body but could not kill his spirit, which now turns their swords against themselves. Titinius's death shows Roman friendship in its most extreme form."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 5.3",
+     "quote": "Caesar, thou art reveng’d,\nEven with the sword that kill’d thee.",
+     "note": "Cassius's last words. The same weapon closes the circle opened on the Ides."
+    },
+    {
+     "ref": "Julius Caesar 5.3",
+     "quote": "O hateful Error, Melancholy’s child!",
+     "note": "Messala's lament for the mistake that killed Cassius. Melancholy breeds false perceptions."
+    },
+    {
+     "ref": "Julius Caesar 5.3",
+     "quote": "O Julius Caesar, thou art mighty yet!\nThy spirit walks abroad, and turns our swords\nIn our own proper entrails.",
+     "note": "Brutus recognises that the 'spirit of Caesar' he wished to destroy in 2.1 has survived the body."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Act V, Scene 4: Young Cato and Lucilius",
+   "lines": "5.4 (the whole scene)",
+   "section": 17,
+   "summary": [
+    "As Brutus's forces fight on, young Cato proclaims himself the son of Marcus Cato and is killed. Lucilius pretends to be Brutus in order to draw the enemy away from him, and is captured. Antony recognises the trick, praises Lucilius's loyalty, and orders him to be treated kindly."
+   ],
+   "analysis": [
+    "The scene is a small display of Roman loyalty and courage. Lucilius's impersonation of Brutus is a final act of service, and his claim that Brutus will be found 'like himself' anticipates the end. Antony's generosity prepares for his tribute in 5.5."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 5.4",
+     "quote": "He will be found like Brutus, like himself.",
+     "note": "Lucilius's faith that Brutus will remain true to his own nature and never be taken alive."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "Act V, Scene 5: The death of Brutus",
+   "lines": "5.5 (the whole scene)",
+   "section": 18,
+   "summary": [
+    "With his few remaining friends, Brutus asks Clitus, Dardanius and Volumnius in turn to help him kill himself; all refuse. He tells Volumnius that Caesar's ghost appeared to him again in the night. At last Strato holds the sword while Brutus runs on it, saying that he killed Caesar with less willing heart. Antony and Octavius arrive. Antony declares Brutus 'the noblest Roman of them all', the only conspirator who acted for the common good, and Octavius orders an honourable burial."
+   ],
+   "analysis": [
+    "Brutus dies as he lived, insisting on his own honour: he thanks his friends for their loyalty and claims more glory in defeat than the victors gain in their 'vile conquest'. His last couplet addresses Caesar directly, as if the murder and the suicide were one act of justice.",
+    "Antony's tribute is famous, and it sums up a view of Brutus that has dominated criticism: an idealist among the envious. But it is spoken by the man who, in 3.2, turned 'honourable' into an insult, and the last word goes to Octavius, the future emperor. Whether the play endorses Antony's judgement is one of its open questions [[miola1985]] [[hadfield2005]]."
+   ],
+   "key": [
+    {
+     "ref": "Julius Caesar 5.5",
+     "quote": "Caesar, now be still:\nI kill’d not thee with half so good a will.",
+     "note": "Brutus's last words, a couplet that links his death to Caesar's and offers it as a kind of atonement."
+    },
+    {
+     "ref": "Julius Caesar 5.5",
+     "quote": "This was the noblest Roman of them all.",
+     "note": "Antony's verdict on Brutus. The superlative echoes the language of honour that runs through the play."
+    },
+    {
+     "ref": "Julius Caesar 5.5",
+     "quote": "His life was gentle, and the elements\nSo mix’d in him that Nature might stand up\nAnd say to all the world, “This was a man!”",
+     "note": "The 'elements' are the four humours. A perfectly balanced temperament was the Renaissance ideal of a virtuous man."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Julius Caesar",
+   "side": "Caesar's party",
+   "text": "The greatest man in Rome, recently returned in triumph from victory over Pompey's sons. Shakespeare presents him in two lights at once: in public he speaks of himself as 'Caesar', constant and fearless; in private he is deaf, epileptic, superstitious and easily flattered. He appears in only three scenes and dies at the centre of the play, but his spirit, and his name, dominate the second half. Whether he would have become a tyrant is the question the play never answers."
+  },
+  {
+   "name": "Marcus Brutus",
+   "side": "Conspirators",
+   "text": "A Roman nobleman, descended from the Brutus who expelled the last king of Rome, loved by Caesar and respected by the people. He joins the conspiracy out of principle, believing that Caesar's power must be stopped before it becomes tyranny. He is honourable, Stoic and idealistic, but also self-deceiving and politically naive: every practical decision he makes, from sparing Antony to fighting at Philippi, proves fatal. Many readers consider him the play's true tragic hero."
+  },
+  {
+   "name": "Caius Cassius",
+   "side": "Conspirators",
+   "text": "The organiser of the conspiracy, a lean, sharp-sighted soldier who resents Caesar's greatness. He is a brilliant persuader and a realist: his advice to kill Antony and to keep him from speaking is right. Yet he gives way to Brutus again and again, out of love as much as respect. His quarrel and reconciliation with Brutus in 4.3 show a warmer man than his politics suggest. He dies by his own command, on his birthday, through a mistake."
+  },
+  {
+   "name": "Mark Antony",
+   "side": "Caesar's party",
+   "text": "Caesar's friend, thought by Brutus to be a mere lover of sports and revels. After the murder he shows himself a master politician: he makes peace with the conspirators, wins the right to speak, and with his funeral oration turns Rome against them. In Act IV he is a ruthless member of the triumvirate, cutting Caesar's legacies and condemning his own nephew. At the end he speaks the generous tribute to Brutus."
+  },
+  {
+   "name": "Octavius Caesar",
+   "side": "Caesar's party",
+   "text": "Caesar's adopted son and heir, a young man who arrives in Rome after the murder. He speaks little, but firmly, and at Philippi already refuses to follow Antony's orders. He has the last word in the play. Audiences knew him as the future Augustus, first emperor of Rome."
+  },
+  {
+   "name": "Casca",
+   "side": "Conspirators",
+   "text": "A blunt, sardonic conspirator who reports the crown-offering in prose and is terrified by the storm. He strikes the first blow at Caesar ('Speak, hands, for me!')."
+  },
+  {
+   "name": "Portia",
+   "side": "Brutus's household",
+   "text": "Brutus's wife, the daughter of Cato, the Stoic enemy of Caesar. She demands to share her husband's secrets as an equal, proves her constancy by wounding herself, and suffers terribly while waiting for news on the Ides. Her death by swallowing fire is reported in 4.3."
+  },
+  {
+   "name": "Calphurnia",
+   "side": "Caesar's party",
+   "text": "Caesar's wife. Childless, she is told to stand in Antony's way during the Lupercal race. Her dream of Caesar's statue running with blood and her pleas almost keep him at home on the Ides."
+  },
+  {
+   "name": "Decius Brutus",
+   "side": "Conspirators",
+   "text": "A conspirator who knows how to flatter Caesar, and who brings him to the Capitol by reinterpreting Calphurnia's dream. (His historical name was Decimus Brutus; 'Decius' comes from North's Plutarch.)"
+  },
+  {
+   "name": "Cinna, Metellus Cimber, Trebonius and Caius Ligarius",
+   "side": "Conspirators",
+   "text": "The other conspirators. Cinna plants the forged letters, Metellus Cimber kneels with the petition that lets the conspirators surround Caesar, Trebonius draws Antony away, and the sick Ligarius throws off his illness to follow Brutus."
+  },
+  {
+   "name": "Lepidus",
+   "side": "Triumvirs",
+   "text": "The third member of the triumvirate, a 'slight unmeritable man' in Antony's eyes, useful only for errands."
+  },
+  {
+   "name": "Cicero",
+   "side": "Senators",
+   "text": "The great orator, who appears briefly in 1.3 to doubt the omens. Brutus refuses to include him in the conspiracy. He is killed in the proscription."
+  },
+  {
+   "name": "The Soothsayer and Artemidorus",
+   "side": "Rome",
+   "text": "Two men who try to warn Caesar. The Soothsayer twice tells him to beware the Ides of March; Artemidorus, a teacher of rhetoric, writes a letter naming the conspirators that Caesar refuses to read."
+  },
+  {
+   "name": "Flavius and Marullus",
+   "side": "Rome",
+   "text": "Tribunes of the people who rebuke the crowd for celebrating Caesar's triumph and are later 'put to silence' for removing decorations from his statues."
+  },
+  {
+   "name": "Cinna the poet",
+   "side": "Rome",
+   "text": "An innocent poet torn apart by the mob in 3.3 because he shares a name with one of the conspirators."
+  },
+  {
+   "name": "The Citizens (Plebeians)",
+   "side": "Rome",
+   "text": "The common people of Rome, at first witty and independent, later swayed by every speaker. They cheer Brutus, then riot for Antony and kill Cinna the poet. Their behaviour raises the question of whether the play despises the people or the politicians who manipulate them."
+  },
+  {
+   "name": "Lucius",
+   "side": "Brutus's household",
+   "text": "Brutus's young servant, who keeps falling asleep. Brutus's gentle treatment of him in 2.1 and 4.3 shows his tenderness."
+  },
+  {
+   "name": "Titinius, Messala, Pindarus, Lucilius, Strato and young Cato",
+   "side": "Brutus and Cassius's army",
+   "text": "Friends, officers and servants of Brutus and Cassius. Pindarus, Cassius's former slave, kills his master at his command; Titinius kills himself beside Cassius's body; Lucilius pretends to be Brutus to save him; Strato holds the sword on which Brutus dies."
+  },
+  {
+   "name": "The Ghost of Caesar",
+   "side": "Supernatural",
+   "text": "Appears to Brutus at Sardis, calling itself 'thy evil spirit', and again, by Brutus's report, at Philippi."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Tyranny, liberty and the republic",
+   "text": [
+    "The conspirators kill Caesar in the name of 'Liberty! Freedom!', and the play takes their cause seriously. The Roman republic was a government shared among many, and Caesar's rule threatened to make it the property of one man. Brutus's appeal to his ancestor who expelled the Tarquins and Cassius's insistence on equality give voice to republican ideas that had a real presence in late Elizabethan England [[hadfield2005]].",
+    "But the play also shows that the killing does not bring liberty. It brings riot, proscription and civil war, and finally the rule of Octavius, a more absolute Caesar than the first. The play leaves open whether the fault lies in the deed, in the way it was done, or in a people who, as the cry 'Let him be Caesar' suggests, were no longer fit to be free [[miola1985]] [[cantor1976]]."
+   ]
+  },
+  {
+   "title": "Rhetoric and persuasion",
+   "text": [
+    "Julius Caesar is a play about the power of words. Cassius persuades Brutus, Brutus persuades himself, Decius persuades Caesar, Brutus and Antony persuade the crowd. In each case we see the technique as well as the effect. The contrast between Brutus's reasoned prose and Antony's emotional verse in 3.2 has made the play a classic text for teaching rhetoric [[vickers1968]] [[wills2011]].",
+    "The play is also suspicious of rhetoric. Its most successful speaker is the one who claims to be 'no orator', and the effects of his speech are the murder of an innocent poet and civil war. Words can make Caesar a god, a tyrant, or a 'bleeding piece of earth'."
+   ]
+  },
+  {
+   "title": "Honour and the Roman self",
+   "text": [
+    "The characters constantly measure themselves against an ideal of Roman virtue: constancy, courage, a willingness to die rather than submit. Brutus loves 'the name of honour more than I fear death', Portia wounds herself to prove her constancy, and the suicides at Philippi are presented as Roman acts [[miola1983]] [[kahn1997]].",
+    "The ideal is admirable, but the play shows its cost. Brutus's concern for his own honour makes him refuse an oath, spare Antony and trust the crowd. Antony's ironic repetition of 'honourable' in 3.2 empties the word of meaning, and yet he uses it again in praising Brutus at the end."
+   ]
+  },
+  {
+   "title": "Public self and private self",
+   "text": [
+    "Caesar speaks of himself as if he were a monument: 'for always I am Caesar'. Yet he is deaf, falls in fits and nearly drowned in the Tiber. Brutus hides his inner conflict from Portia and his grief from the army. The play repeatedly shows a gap between the public role and the private person, and its characters are constantly acting, as Brutus advises: 'bear it as our Roman actors do' [[schanzer1963]] [[daniell1998]]."
+   ]
+  },
+  {
+   "title": "Fate, omens and free will",
+   "text": [
+    "The play is full of portents: the soothsayer, the storm, Calphurnia's dream, the heartless sacrifice, the eagles replaced by ravens, the ghost. All of them come true. Yet the characters interpret them according to their wishes, as Cicero warns, and Cassius insists that 'the fault ... is not in our stars, / But in ourselves'. The play holds the two views in tension: human choices produce the catastrophe, and yet it seems foretold."
+   ]
+  },
+  {
+   "title": "Friendship and love",
+   "text": [
+    "Political choices in the play are also personal betrayals: Brutus kills the man who loved him, and Antony's public grief springs from private love. The friendship of Brutus and Cassius, tested in the quarrel scene and sealed in their farewell, is the play's most moving relationship. Titinius dies for Cassius, Lucilius risks death for Brutus, and Brutus's last words praise the loyalty of his friends."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Blood",
+   "text": "Blood is the play's central image: Calphurnia's dream of the bleeding statue, Brutus's wish to kill Caesar's spirit without spilling blood, the conspirators bathing their hands, Antony's display of the wounds, and the 'red blood' of Cassius at sunset [[paster1989]]."
+  },
+  {
+   "title": "Names",
+   "text": "Cassius weighs the names 'Brutus' and 'Caesar'; Caesar speaks of himself as 'Caesar'; Cinna the poet dies for his name; Lucilius takes Brutus's name to save him. 'Caesar' becomes a title, as it did in history."
+  },
+  {
+   "title": "Sleep and sleeplessness",
+   "text": "Brutus cannot sleep after Cassius 'did whet me against Caesar', Caesar's sleep is disturbed by his wife's dreams, and the sleeping boy Lucius is a picture of innocence."
+  },
+  {
+   "title": "Theatre and acting",
+   "text": "Casca compares the people to an audience at the theatre, Brutus urges the conspirators to act like Roman actors, and Cassius imagines the murder being performed in future ages, as it was at the Globe."
+  },
+  {
+   "title": "Omens and dreams",
+   "text": "Portents run through the play from the soothsayer's first warning to Cassius's ravens, inviting both belief and scepticism."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The crown",
+   "text": "The crown that Caesar refuses three times symbolises the kingship the republic feared. The play never shows it on stage; we learn of it only through shouts and Casca's report, as a rumour of power."
+  },
+  {
+   "title": "Caesar's mantle and wounds",
+   "text": "In 3.2 Antony makes the torn cloak and the body speak for him, turning wounds into 'dumb mouths'. They are the symbol of the deed, and Antony's best argument."
+  },
+  {
+   "title": "The northern star",
+   "text": "Caesar's image for his own constancy, a fixed point in a moving sky. It is a symbol of the absolute ruler and of the law, spoken moments before his fall."
+  },
+  {
+   "title": "The storm",
+   "text": "The storm of 1.3 symbolises disorder in the state and in the heavens, and the 'civil strife' that will follow."
+  },
+  {
+   "title": "The ghost",
+   "text": "Caesar's ghost symbolises the survival of his spirit after his death: what the conspirators could not kill."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Whose tragedy: Caesar's or Brutus's?",
+   "text": [
+    "The play is named after a man who dies halfway through, and from the eighteenth century many readers have regarded Brutus as its real hero: the noble idealist whose inner conflict and fall form the tragic structure. In this view Caesar is little more than the occasion of the tragedy [[macCallum1910]].",
+    "Others answer that the play is Caesar's because his spirit dominates the second half, and that the title points to the problem of a man who is both a person and a name. Ernest Schanzer called Julius Caesar a 'problem play' because it seems designed to divide the audience's sympathies between Caesar and his killers, and much later criticism has accepted that the division is deliberate [[schanzer1963]] [[miola1983]]."
+   ],
+   "cite": [
+    "macCallum1910",
+    "schanzer1963",
+    "miola1983"
+   ]
+  },
+  {
+   "title": "Does the play justify tyrannicide?",
+   "text": [
+    "Robert Miola has shown how the play enters a long Renaissance debate about tyrannicide, in which Brutus could be a hero or a traitor, and how Shakespeare lets both positions speak [[miola1985]]. Political philosophers such as Allan Bloom read the play as a study of the decline of republican virtue in Rome [[bloom1964]].",
+    "Andrew Hadfield has argued that Shakespeare was more engaged with republican ideas than older criticism allowed, and that the play's interest in the institutions of the republic would have spoken to political readers in 1599 [[hadfield2005]]. Others stress the play's grim view of what follows the murder, and see it as a warning against the violent removal of rulers, in keeping with the official teaching of obedience in Elizabethan England [[miola1985]]."
+   ],
+   "cite": [
+    "miola1985",
+    "bloom1964",
+    "hadfield2005"
+   ]
+  },
+  {
+   "title": "The play and the succession crisis",
+   "text": [
+    "James Shapiro places the play in the political world of 1599: an ageing queen without an heir, Essex's Irish campaign, and the censorship of histories about deposition. A play about a ruler's murder and the struggle for power that followed would have seemed topical, though Shakespeare's Roman setting allowed him to avoid direct comment [[shapiro2005]].",
+    "Critics disagree about how pointed the topicality was. Some find in Caesar a figure for the queen, in the crown-offering a reminder of debates about monarchy, and in the crowd scenes the anxieties of a London often troubled by unrest; others warn that such readings are hard to prove [[hadfield2005]] [[wilson2002]]."
+   ],
+   "cite": [
+    "shapiro2005",
+    "hadfield2005",
+    "wilson2002"
+   ]
+  },
+  {
+   "title": "The two orations and the art of rhetoric",
+   "text": [
+    "Brian Vickers analysed Brutus's oration as a masterpiece of symmetrical prose, whose very balance makes it seem cold beside Antony's verse [[vickers1968]]. Garry Wills reads both speeches in the light of classical rhetorical theory, and argues that Antony's success depends on his stagecraft: his movements, pauses and props [[wills2011]].",
+    "A long tradition sees Brutus's speech as a failure of rhetoric, too abstract for its audience. Others note that it succeeds completely in its moment, and that it is Antony's later speech, not any flaw in Brutus's, that turns the crowd. The real lesson may be that the last speaker wins."
+   ],
+   "cite": [
+    "vickers1968",
+    "wills2011"
+   ]
+  },
+  {
+   "title": "The crowd",
+   "text": [
+    "The plebeians have often been read as evidence of Shakespeare's contempt for the common people, fickle and violent. Annabel Patterson challenged this view, noting the wit of the cobbler in 1.1 and arguing that the play is sceptical of the patricians who use the people as much as of the people themselves [[patterson1989]].",
+    "Richard Wilson and others have related the opening scene to the regulation of holidays and popular festivity in Elizabethan London, and the play's crowds to the playhouse audience itself [[wilson2002]]."
+   ],
+   "cite": [
+    "patterson1989",
+    "wilson2002"
+   ]
+  },
+  {
+   "title": "Portia's two deaths",
+   "text": [
+    "In 4.3 Brutus tells Cassius of Portia's death and then appears to learn of it from Messala. Many editors think the Folio preserves both an original version and a revision, with one meant to be cut. Others defend the passage as it stands: Brutus, having confided in his friend, performs his Stoic composure for Messala and the army [[humphreys1984]] [[spevack1988]] [[daniell1998]].",
+    "The choice matters for the interpretation of Brutus. In the first reading the text is accidental; in the second it shows a man for whom even grief becomes a public demonstration of Roman virtue."
+   ],
+   "cite": [
+    "humphreys1984",
+    "spevack1988",
+    "daniell1998"
+   ]
+  },
+  {
+   "title": "Gender and Roman virtue",
+   "text": [
+    "Coppélia Kahn has argued that Roman 'virtue' in the play is identified with manliness, and that the men constantly fear being thought womanish, as when Cassius says 'Our yoke and sufferance show us womanish'. Portia's self-wounding shows a woman trying to claim that virtue through the body [[kahn1997]].",
+    "Gail Kern Paster has examined the play's language of blood, showing how the conspirators' wish to make Caesar's death a clean sacrifice depends on ideas of the male body, how Caesar's bleeding body is imagined in terms associated with women, and how Portia's voluntary wound answers it [[paster1989]]."
+   ],
+   "cite": [
+    "kahn1997",
+    "paster1989"
+   ]
+  },
+  {
+   "title": "Date, the Globe and the calendar",
+   "text": [
+    "Thomas Platter's account of a play about Caesar on 21 September 1599 is the earliest record of a performance, and it is generally identified with Shakespeare's play at the new Globe [[chambers1923]]. Steve Sohmer has argued further that the play was written for the opening of the Globe and that its references to dates, such as the Folio's 'first of March', play on the differences between the Julian calendar used in England and the Gregorian calendar used in Catholic Europe [[sohmer1999]].",
+    "Sohmer's specific claims about the opening date are speculative and have not won general acceptance, but they have encouraged attention to the play's interest in time, calendars and festivals [[shapiro2005]]."
+   ],
+   "cite": [
+    "chambers1923",
+    "sohmer1999",
+    "shapiro2005"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Julius Caesar 1.2",
+   "quote": "The fault, dear Brutus, is not in our stars,\nBut in ourselves, that we are underlings.",
+   "who": "Cassius",
+   "explanation": "Cassius tells Brutus that men are responsible for their own condition, and that Romans who submit to Caesar have only themselves to blame. The line challenges the play's many omens, and its own ending, where Caesar's spirit seems to direct events."
+  },
+  {
+   "ref": "Julius Caesar 1.2",
+   "quote": "Yond Cassius has a lean and hungry look;\nHe thinks too much: such men are dangerous.",
+   "who": "Caesar",
+   "explanation": "Caesar's judgement of Cassius, spoken to Antony. It shows Caesar as an acute reader of men, and also shows that he links thinking with danger, as a ruler might."
+  },
+  {
+   "ref": "Julius Caesar 2.1",
+   "quote": "It must be by his death: and for my part,\nI know no personal cause to spurn at him,\nBut for the general.",
+   "who": "Brutus",
+   "explanation": "The opening of Brutus's soliloquy in the orchard. He has reached a verdict and now seeks reasons. The 'general' good is his justification, and it sets him apart from the conspirators who act from envy."
+  },
+  {
+   "ref": "Julius Caesar 2.2",
+   "quote": "Cowards die many times before their deaths;\nThe valiant never taste of death but once.",
+   "who": "Caesar",
+   "explanation": "Caesar dismisses Calphurnia's fears. The lines express a Stoic courage and are among his noblest, but they also show him performing the role of 'Caesar' even in his own house."
+  },
+  {
+   "ref": "Julius Caesar 3.1",
+   "quote": "Et tu, Brute?—Then fall, Caesar!",
+   "who": "Caesar",
+   "explanation": "Caesar's last words when he sees Brutus among his murderers. The betrayal by a friend, not the wounds, is what defeats him, as Antony later says."
+  },
+  {
+   "ref": "Julius Caesar 3.1",
+   "quote": "Cry havoc and let slip the dogs of war,",
+   "who": "Antony",
+   "explanation": "From Antony's soliloquy over Caesar's body, prophesying civil war. The meek mourner who shook the conspirators' hands now speaks for revenge."
+  },
+  {
+   "ref": "Julius Caesar 3.2",
+   "quote": "Not that I loved Caesar less,\nbut that I loved Rome more.",
+   "who": "Brutus",
+   "explanation": "The core of Brutus's prose oration in the Forum. Its balanced antithesis expresses his reasoned patriotism, putting duty to the state above personal love."
+  },
+  {
+   "ref": "Julius Caesar 3.2",
+   "quote": "Friends, Romans, countrymen, lend me your ears;\nI come to bury Caesar, not to praise him.",
+   "who": "Antony",
+   "explanation": "The opening of Antony's funeral oration. He disclaims the very thing he is about to do, and goes on to turn the crowd against the conspirators while seeming to respect them."
+  },
+  {
+   "ref": "Julius Caesar 4.3",
+   "quote": "There is a tide in the affairs of men,\nWhich, taken at the flood, leads on to fortune;",
+   "who": "Brutus",
+   "explanation": "Brutus persuades Cassius to march to Philippi. The image of fortune as a tide is memorable, but it serves a decision that leads to defeat."
+  },
+  {
+   "ref": "Julius Caesar 5.5",
+   "quote": "This was the noblest Roman of them all.",
+   "who": "Antony",
+   "explanation": "Antony's tribute over Brutus's body: Brutus alone of the conspirators acted for the common good. It is generous, but it comes from the man who made 'honourable' an insult in 3.2."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Who is the hero of Julius Caesar, and why is the play named after Caesar?",
+   "hint": "Count Caesar's scenes and lines, then consider the ghost and Brutus's 'thou art mighty yet' in 5.3."
+  },
+  {
+   "q": "How does Cassius persuade Brutus in 1.2? What does he appeal to?",
+   "hint": "Look at the stories of the Tiber and the fever, the weighing of names, and the mention of the earlier Brutus."
+  },
+  {
+   "q": "Is Brutus's reasoning in the orchard soliloquy (2.1) convincing?",
+   "hint": "Notice that he admits Caesar has not let passion rule his reason. What does he decide to 'fashion'?"
+  },
+  {
+   "q": "Compare the two funeral orations in 3.2. Why does Antony's succeed?",
+   "hint": "Consider prose and verse, the repetition of 'honourable', the will, the mantle, and the order in which the speeches are given."
+  },
+  {
+   "q": "What do the omens and portents contribute to the play?",
+   "hint": "Compare how Casca, Cicero, Cassius, Calphurnia and Decius interpret them."
+  },
+  {
+   "q": "What is the function of the scene of Cinna the poet (3.3)?",
+   "hint": "Think about names, the crowd, and the consequences of Antony's speech."
+  },
+  {
+   "q": "What does the quarrel scene (4.3) reveal about Brutus and Cassius?",
+   "hint": "Look at what they quarrel about, how they make up, and how the news of Portia's death affects them."
+  },
+  {
+   "q": "How are women presented in a play so concerned with Roman manhood?",
+   "hint": "Consider Portia's wound and her words in 2.4, and Calphurnia's dream and its interpretations."
+  },
+  {
+   "q": "Is the play for or against the assassination?",
+   "hint": "Weigh the conspirators' cry of 'Liberty!' against the proscription of 4.1 and the ending."
+  },
+  {
+   "q": "How does the play reflect the political situation of England in 1599?",
+   "hint": "Think about the ageing queen, the succession, and why a dramatist might set such a story in ancient Rome."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "bloom1964",
+   "text": "Bloom, Allan, with Harry V. Jaffa. Shakespeare's Politics. New York: Basic Books, 1964."
+  },
+  {
+   "id": "bullough1964",
+   "text": "Bullough, Geoffrey, ed. Narrative and Dramatic Sources of Shakespeare. Vol. 5, The Roman Plays. London: Routledge and Kegan Paul; New York: Columbia University Press, 1964."
+  },
+  {
+   "id": "cantor1976",
+   "text": "Cantor, Paul A. Shakespeare's Rome: Republic and Empire. Ithaca: Cornell University Press, 1976."
+  },
+  {
+   "id": "chambers1923",
+   "text": "Chambers, E. K. The Elizabethan Stage. 4 vols. Oxford: Clarendon Press, 1923."
+  },
+  {
+   "id": "daniell1998",
+   "text": "Daniell, David, ed. Julius Caesar. By William Shakespeare. The Arden Shakespeare, Third Series. Walton-on-Thames: Thomas Nelson, 1998."
+  },
+  {
+   "id": "hadfield2005",
+   "text": "Hadfield, Andrew. Shakespeare and Republicanism. Cambridge: Cambridge University Press, 2005."
+  },
+  {
+   "id": "humphreys1984",
+   "text": "Humphreys, Arthur, ed. Julius Caesar. By William Shakespeare. The Oxford Shakespeare. Oxford: Clarendon Press, 1984."
+  },
+  {
+   "id": "kahn1997",
+   "text": "Kahn, Coppélia. Roman Shakespeare: Warriors, Wounds, and Women. London: Routledge, 1997."
+  },
+  {
+   "id": "macCallum1910",
+   "text": "MacCallum, M. W. Shakespeare's Roman Plays and Their Background. London: Macmillan, 1910."
+  },
+  {
+   "id": "miola1983",
+   "text": "Miola, Robert S. Shakespeare's Rome. Cambridge: Cambridge University Press, 1983."
+  },
+  {
+   "id": "miola1985",
+   "text": "Miola, Robert S. \"Julius Caesar and the Tyrannicide Debate.\" Renaissance Quarterly 38.2 (1985): 271–289."
+  },
+  {
+   "id": "north1579",
+   "text": "Plutarch. The Lives of the Noble Grecians and Romanes. Translated by Thomas North from the French of Jacques Amyot. London: Thomas Vautrollier and John Wight, 1579."
+  },
+  {
+   "id": "paster1989",
+   "text": "Paster, Gail Kern. \"'In the Spirit of Men There Is No Blood': Blood as Trope of Gender in Julius Caesar.\" Shakespeare Quarterly 40.3 (1989): 284–298."
+  },
+  {
+   "id": "patterson1989",
+   "text": "Patterson, Annabel. Shakespeare and the Popular Voice. Oxford: Basil Blackwell, 1989."
+  },
+  {
+   "id": "schanzer1963",
+   "text": "Schanzer, Ernest. The Problem Plays of Shakespeare: A Study of Julius Caesar, Measure for Measure, Antony and Cleopatra. London: Routledge and Kegan Paul, 1963."
+  },
+  {
+   "id": "shapiro2005",
+   "text": "Shapiro, James. 1599: A Year in the Life of William Shakespeare. London: Faber and Faber, 2005."
+  },
+  {
+   "id": "sohmer1999",
+   "text": "Sohmer, Steve. Shakespeare's Mystery Play: The Opening of the Globe Theatre 1599. Manchester: Manchester University Press, 1999."
+  },
+  {
+   "id": "spencer1964",
+   "text": "Spencer, T. J. B., ed. Shakespeare's Plutarch. Harmondsworth: Penguin, 1964."
+  },
+  {
+   "id": "spevack1988",
+   "text": "Spevack, Marvin, ed. Julius Caesar. By William Shakespeare. The New Cambridge Shakespeare. Cambridge: Cambridge University Press, 1988."
+  },
+  {
+   "id": "vickers1968",
+   "text": "Vickers, Brian. The Artistry of Shakespeare's Prose. London: Methuen, 1968."
+  },
+  {
+   "id": "wills2011",
+   "text": "Wills, Garry. Rome and Rhetoric: Shakespeare's Julius Caesar. New Haven: Yale University Press, 2011."
+  },
+  {
+   "id": "wilson2002",
+   "text": "Wilson, Richard, ed. Julius Caesar. New Casebooks. Basingstoke: Palgrave, 2002."
+  }
+ ]
+}

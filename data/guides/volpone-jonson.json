@@ -1,0 +1,1109 @@
+{
+ "work": "volpone-jonson",
+ "title": "Volpone; or, The Fox",
+ "author": "Ben Jonson",
+ "quoteEdition": "volpone-jonson",
+ "unit": "Scene",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Ben Jonson (1572–1637), bricklayer's stepson, former soldier and actor, classical scholar and the most learned English dramatist of his age"
+  },
+  {
+   "label": "Genre",
+   "value": "Satirical comedy in blank verse with prose passages; a 'comedy of humours' built on the frame of a beast fable"
+  },
+  {
+   "label": "First performed",
+   "value": "By the King's Men at the Globe, probably early in 1606 (the 1616 Folio says 'acted in the year 1605', an Old Style date); later acted at Oxford and Cambridge"
+  },
+  {
+   "label": "Early texts",
+   "value": "Quarto of 1607, published by Thomas Thorpe, with commendatory verses and Jonson's epistle to the two universities; revised text in Jonson's Works (Folio) of 1616"
+  },
+  {
+   "label": "Setting",
+   "value": "Venice, within a single day, from Volpone's morning greeting to his gold to the court's sentence that evening"
+  },
+  {
+   "label": "Sources",
+   "value": "Roman satire on legacy-hunting (Horace, Satires 2.5; Petronius; Lucian's Dialogues of the Dead), Aesop's fable of the fox and the crow, the Reynard tradition, and Italian commedia dell'arte"
+  },
+  {
+   "label": "Text on this site",
+   "value": "Project Gutenberg text following the 1607 quarto as reprinted, divided by place into long scenes in the manner of nineteenth-century editions such as William Gifford's. The Folio and modern editions begin a new scene at each important entrance (Act I has five scenes, Act V twelve), so references here give the site's scene first and the modern scene where it helps"
+  },
+  {
+   "label": "Main characters",
+   "value": "Volpone (the Fox); Mosca (the Fly), his parasite; the legacy-hunters Voltore, Corbaccio and Corvino; Celia and Bonario; Sir Politic and Lady Would-be; Peregrine"
+  },
+  {
+   "label": "Famous lines",
+   "value": "'Good morning to the day; and next, my gold'; 'Come, my Celia, let us prove'; 'Mischiefs feed / Like beasts, till they be fat, and then they bleed'"
+  }
+ ],
+ "context": [
+  "Ben Jonson wrote Volpone at the height of his powers, between the failure of his Roman tragedy Sejanus (1603) and the great run of comedies that followed it: Epicoene (1609), The Alchemist (1610) and Bartholomew Fair (1614). He was then in his early thirties, a Londoner of humble birth who had worked as a bricklayer, fought in the Low Countries, killed a fellow actor in a duel and escaped hanging by pleading benefit of clergy. In 1605 he had been imprisoned for his share in Eastward Ho, a comedy that mocked the Scots at the court of the new king, James I. In the autumn of the same year he was drawn into the aftermath of the Gunpowder Plot: he had dined with some of the conspirators shortly before its discovery and was then employed by the Privy Council to find a priest who might give information [[riggs1989]] [[donaldson2011]] [[dutton2008]].",
+  "The Prologue boasts that the play was written in five weeks, 'From his own hand, without a co-adjutor'. It was acted by the King's Men, Shakespeare's company, at the Globe, and the Folio of 1616 names Richard Burbage, John Heminges, Henry Condell and John Lowin among its principal actors. Its success carried it to Oxford and Cambridge, and when Jonson printed it in quarto in 1607 he dedicated it to 'the most noble and most equal sisters, the two famous universities'. The quarto also carried commendatory poems by friends, among them Francis Beaumont, George Chapman and, in Latin, John Donne [[herford1925]] [[parker1983]] [[bevington2012]].",
+  "The epistle to the universities is one of Jonson's key critical statements. He argues that no one can be a good poet without first being a good man, attacks the obscenity and profanity of the contemporary stage, and presents himself as a reformer of comedy on classical lines. He also defends his ending. He knows, he says, that a strict critic could object that the catastrophe is not comic, since comedies should end in joy; but he chose to punish his rogues so that no one could say that the stage never punishes vice. That apology shows that Jonson himself saw the severity of the ending as a problem to be justified, and critics have argued about it ever since [[parker1983]] [[creaser1978]].",
+  "The play joins two traditions. From Roman satire Jonson took the figure of the captator, the legacy-hunter who courts a rich, childless old man in hope of his will: Horace makes Tiresias teach Ulysses the art in Satires 2.5, Petronius sets a whole city of legacy-hunters in Croton, and Lucian mocks them in his Dialogues of the Dead. From the beast fable he took the fox who feigns death to catch the birds that come to feed on him, and Aesop's fox who flatters the crow into dropping its cheese. Italian names make the fable plain: Volpone is the Fox, Mosca the Fly, Voltore the Vulture, Corbaccio the Raven and Corvino the Crow. Venice, which English readers knew as a rich, cunning and sexually free republic, provides the setting, and Jonson takes local colour from books such as Lewis Lewkenor's translation of Gasparo Contarini's Commonwealth and Government of Venice (1599), which Sir Politic claims to have read [[duncan1979]] [[parker1983]] [[kernan1962]].",
+  "Volpone is also a comedy of humours, the kind of play Jonson had made his own in Every Man in His Humour (1598) and Every Man Out of His Humour (1599). In the old physiology a humour was one of the bodily fluids whose balance governed temperament; Jonson used the word for a ruling passion or affectation that bends a whole character in one direction. Each legacy-hunter is possessed by greed, Sir Politic by the itch to seem a statesman, Lady Would-be by the wish to seem cultivated. The Prologue claims that the play observes 'The laws of time, place, persons', the unities that Renaissance critics derived from Aristotle and Horace: the action takes a single day, stays in one city, and keeps its characters consistent. Jonson presents himself as the learned craftsman of 'quick comedy refined', and the play is the best evidence for that claim [[barton1984]] [[partridge1958]] [[leggatt1981]]."
+ ],
+ "plot": [
+  "Volpone, a rich and childless Venetian nobleman, pretends to be dying so that three greedy men will compete to be named his heir. His parasite Mosca receives their gifts and persuades each one in turn that he alone will inherit. Voltore, a lawyer, brings a piece of plate; Corbaccio, a deaf old miser, brings gold and agrees to disinherit his own son Bonario in Volpone's favour; Corvino, a merchant, brings a pearl and a diamond. Mosca then describes the beauty of Corvino's wife Celia, whom her jealous husband keeps shut away. Meanwhile an English knight, Sir Politic Would-be, a self-important amateur of state secrets, meets a young English traveller, Peregrine, in Venice.",
+  "Disguised as the mountebank Scoto of Mantua, Volpone sells his oil beneath Celia's window, and she throws down her handkerchief. Corvino drives him away and threatens his wife, but when Mosca reports that the doctors have prescribed a young woman to warm Volpone's bed, Corvino offers Celia himself in hope of the inheritance. Mosca also brings Bonario to Volpone's house to overhear his father disinheriting him. Left alone with Celia, Volpone throws off his sickness, sings to her and tries to seduce and then to rape her. Bonario rushes in and rescues her.",
+  "Mosca turns the danger round. In the Venetian court Voltore pleads that Celia and Bonario are adulterous conspirators; Corbaccio disowns his son, Corvino calls his wife a whore, Lady Would-be swears that Celia is the courtesan she suspected with her husband, and Volpone is carried in on a couch as proof of his helplessness. The innocent pair are taken into custody. In the subplot Peregrine, believing that Sir Politic tried to set his wife on him, takes revenge by frightening the knight into hiding under a tortoise shell.",
+  "Delighted with his triumph, Volpone has his death announced and hides to watch the legacy-hunters discover that Mosca is his heir. He then disguises himself as a court officer to mock them in the streets. But Mosca, now in possession of the house and the keys, intends to keep the fortune. When Voltore, enraged, confesses the truth to the court, and Mosca refuses to admit that his master is alive, Volpone throws off his disguise rather than let his servant win. The court sentences all the guilty: Mosca to the galleys, Volpone to prison and the loss of his wealth, Voltore to banishment from his profession, Corbaccio to a monastery and Corvino to public humiliation, while Celia is sent home to her father with her dowry trebled."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Argument: an acrostic on the Fox",
+   "lines": "The Argument (seven lines)",
+   "section": 1,
+   "summary": [
+    "Seven lines summarise the plot before it begins: Volpone, rich and childless, feigns sickness and offers his estate to the hopes of several heirs; his parasite takes their presents and deceives them; new plots are laid and exposed; and in the end 'all are sold'. The first letters of the lines spell VOLPONE."
+   ],
+   "analysis": [
+    "The acrostic was a classical device; Plautus's comedies carry acrostic arguments, and Jonson's use of it announces at once that this is learned comedy on Roman lines. The compressed final line, 'Each tempts the other again, and all are sold', already hints that the deceivers will be undone by their own overreaching, not by outside force [[parker1983]]."
+   ],
+   "key": [
+    {
+     "ref": "The Argument",
+     "quote": "Volpone, childless, rich, feigns sick, despairs,\nOffers his state to hopes of several heirs,",
+     "note": "The whole premise in two lines. 'State' means estate, wealth; the heirs live on 'hopes'."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Prologue: 'quick comedy refined'",
+   "lines": "Prologue",
+   "section": 2,
+   "summary": [
+    "The Prologue, spoken for 'our poet', answers critics who say that Jonson only rails and that he takes a year over each play: this one, it claims, was written in five weeks and by Jonson alone. It promises no slapstick of broken eggs and custards, no stolen jokes and no wild, unmotivated action, but a 'quick comedy refined' that keeps the laws of time, place and persons and mixes 'profit with your pleasure'."
+   ],
+   "analysis": [
+    "The verse, mostly in jaunty pairs of long and short lines, is deliberately rough, but the programme is serious. The aim of mixing profit with pleasure comes from Horace's Art of Poetry, and the boast about the unities places the play in the line of classical comedy as Renaissance critics understood it. The closing image, of salt that rubs the cheeks red with laughter, promises satire with its sting softened, a promise the ending will strain [[barton1984]] [[leggatt1981]]."
+   ],
+   "key": [
+    {
+     "ref": "Prologue",
+     "quote": "The laws of time, place, persons he observeth,\nFrom no needful rule he swerveth.",
+     "note": "Jonson's claim to classical correctness: one day, one city, consistent characters."
+    },
+    {
+     "ref": "Prologue",
+     "quote": "'Tis known, five weeks fully penn'd it,",
+     "note": "The famous boast of speed, aimed at rivals who mocked Jonson as a slow, laborious writer."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act I, Scene 1: the hymn to gold and the first three birds",
+   "lines": "Act I, Scene 1 (the whole act; I.i–v in the Folio and modern editions)",
+   "section": 3,
+   "summary": [
+    "Volpone wakes and greets first the day and then his gold, which Mosca reveals behind a curtain like a saint in a shrine. In a mock-religious hymn he worships it as the soul of the world, brighter than the sun, the 'dumb God' that buys honour, wisdom and virtue. He boasts that he gains his wealth by no trade or usury but by cunning: men and women bring him presents in hope of being named heir to a man with no family. Mosca's household entertainment follows: the dwarf Nano and the hermaphrodite Androgyno perform a comic interlude on the soul of Pythagoras, which has passed through many bodies and now rests happily in a fool, and the eunuch Castrone sings in praise of fools.",
+    "The clients arrive one by one, and Volpone, in furs and nightcaps, with ointment in his eyes, plays the dying man. Voltore the advocate brings an antique piece of plate and is told that he is sole heir. Corbaccio, deaf and decrepit, offers an opiate (which Volpone suspects is poison) and a bag of gold; Mosca persuades him to make a will naming Volpone his heir, disinheriting his son, in the hope that Volpone will return the favour. Corvino the merchant brings a pearl and a diamond, joins Mosca in shouting insults into the 'deaf' patient's ear and is sent away believing himself the heir.",
+    "Finally Mosca reports that Lady Would-be wishes to visit, and contrasts her with Corvino's wife Celia, a beauty kept under constant guard. Volpone resolves to see her, if only at her window, and in disguise."
+   ],
+   "analysis": [
+    "The opening hymn is the play's keynote. Volpone parodies the language of worship, with shrine, saint, relics and adoration, and fuses it with the classical myth of the golden age, so that gold replaces both God and the order of nature. 'Even hell, with thee to boot, / Is made worth heaven'. The speech is magnificent, and the play wants us to enjoy its energy while noticing its inversion of values. Volpone's claim that he lives by no trade is equally telling: he has made a theatre out of avarice and plays the leading role in it [[partridge1958]] [[knights1937]].",
+    "The interlude of the transmigrating soul, often cut in performance, is a key to the design. The soul descends from Apollo through philosophers and courtesans into an ass and a Puritan and settles in a fool, a comic history of degeneration that matches the play's movement of men into beasts. Harry Levin showed how it draws on Lucian's dialogue The Dream, or the Cock, in which a cobbler's cock claims to carry the soul of Pythagoras [[levin1943]] [[duncan1979]].",
+    "The three visits follow one pattern with variations, a structure close to farce. Each client is a distinct humour: Voltore's professional vanity, Corbaccio's senile self-deception (he hears every symptom as 'good'), Corvino's nervous mixture of greed and squeamishness. Mosca is the artist of the scene, improvising each lie to fit its victim. Volpone draws the moral himself, 'What a rare punishment / Is avarice to itself!', without seeing that it applies to him."
+   ],
+   "key": [
+    {
+     "ref": "Act I, Scene 1 (I.i)",
+     "quote": "Good morning to the day; and next, my gold:\nOpen the shrine, that I may see my Saint.",
+     "note": "The opening lines (I.i.1–2). The order of the greeting is the joke: the day comes first, but only just."
+    },
+    {
+     "ref": "Act I, Scene 1 (I.i)",
+     "quote": "Riches, the dumb God, that giv'st all men tongues;\nThat canst do nought, and yet mak'st men do all things;",
+     "note": "Gold as an idol, powerless in itself but commanding everyone. The paradoxes imitate the style of praise poetry."
+    },
+    {
+     "ref": "Act I, Scene 1 (I.ii)",
+     "quote": "Vulture, kite,\nRaven, and gorcrow, all my birds of prey,",
+     "note": "Volpone names the beast fable outright: the clients are carrion birds waiting for a corpse. A gorcrow is a carrion crow."
+    },
+    {
+     "ref": "Act I, Scene 1 (I.iv)",
+     "quote": "What a rare punishment\nIs avarice to itself!",
+     "note": "The moral of the play, spoken by its most avaricious character."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act II, Scene 1: Sir Politic, Peregrine and the mountebank",
+   "lines": "Act II, Scene 1 (II.i–iii in the Folio and modern editions)",
+   "section": 4,
+   "summary": [
+    "In St Mark's Square, Sir Politic Would-be, an English knight living in Venice, meets the young traveller Peregrine. He insists that he has come abroad not out of curiosity but for his wife's 'humour', and he reads every scrap of London gossip, a raven nesting in a royal ship, a lion's whelp born in the Tower, porpoises in the Thames, as an omen or a foreign plot. He even claims that the dead tavern fool Stone was a spy who received secret messages in cabbages. Peregrine, amused, feeds him further prodigies and resolves to keep him for sport.",
+    "Mosca and Nano set up a platform under Celia's window, and Volpone appears disguised as Scoto of Mantua, a famous mountebank. In a long prose oration he abuses rival quacks, praises health as 'the blessing of the rich, the riches of the poor', lists the diseases his oil cures, lowers the price from eight crowns to sixpence and offers a special gift to anyone who throws him a handkerchief. Celia throws hers from the window. Volpone begins to praise a powder that kept Venus young, but Corvino bursts in, beats him off and accuses the scene of making him a figure of commedia dell'arte. Sir Politic, convinced it is a plot against him, goes home to guard himself."
+   ],
+   "analysis": [
+    "The mountebank scene is Jonson's great set piece of verbal performance. Volpone, an actor by temperament, is at his happiest on a stage, and the speech is a brilliant parody of the patter of street doctors, with its Italian terms, invented credentials and comic list of diseases. The joke has a sharper point: Scoto sells a worthless cure for sickness, as Volpone sells a worthless promise of inheritance, and both trade on the fears and appetites of their audience. Jonas Barish showed how Jonson builds a prose of extraordinary variety from such voices [[barish1960]] [[parker1983]].",
+    "Sir Politic is the English version of the Venetian folly. Where the legacy-hunters pursue gold, he pursues the reputation of a statesman, and his credulity is the comic counterpart of theirs. Peregrine's aside, that such a knight on the English stage would be thought a malicious invention, is Jonson's wink at his own art. Corvino's rage introduces the language of commedia: he calls himself the old Pantalone and his wife the servant girl Franceschina, unaware that he is about to play the jealous fool to the end [[barish1953]] [[kernan1962]]."
+   ],
+   "key": [
+    {
+     "ref": "Act II, Scene 1 (II.i)",
+     "quote": "Sir, to a wise man, all the world's his soil:",
+     "note": "Sir Politic's grand opening, a proverb of the cosmopolitan traveller, immediately undercut by his silliness."
+    },
+    {
+     "ref": "Act II, Scene 1 (II.ii)",
+     "quote": "O health!\nhealth! the blessing of the rich, the riches of the poor!",
+     "note": "The mountebank's lyric moment: a true sentiment put to fraudulent use."
+    },
+    {
+     "ref": "Act II, Scene 1 (II.i)",
+     "quote": "O, this knight,\nWere he well known, would be a precious thing\nTo fit our English stage:",
+     "note": "Peregrine's aside; Jonson jokes that Sir Politic is too absurd to be believed as fiction."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act II, Scene 2: 'O, I am wounded!'",
+   "lines": "Act II, Scene 2 (II.iv in modern editions)",
+   "section": 5,
+   "summary": [
+    "Back at home, Volpone tells Mosca that Corvino's blows meant nothing: Cupid has shot him from Celia's eyes and he burns with desire. He gives Mosca his keys and his treasure to use as he will if he can bring him to her. Mosca promises success and, in an aside, hopes to escape Volpone's 'Epilogue'."
+   ],
+   "analysis": [
+    "Volpone speaks of love in the inflated terms of Petrarchan poetry, fire, furnace and wounding eyes, but his passion is a new form of possession: Celia is wanted as his gold is wanted, and he offers to 'coin' himself to get her. The handing over of the keys matters to the plot; it is the first sign of the trust that Mosca will exploit in Act V."
+   ],
+   "key": [
+    {
+     "ref": "Act II, Scene 2 (II.iv)",
+     "quote": "But angry Cupid, bolting from her eyes,\nHath shot himself into me like a flame;",
+     "note": "Conventional love language, mock-heroically applied to a feigned invalid who has just been beaten."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act II, Scene 3: Corvino offers his wife",
+   "lines": "Act II, Scene 3 (II.v–vii in modern editions)",
+   "section": 6,
+   "summary": [
+    "Corvino drags Celia in at sword-point, accuses her of flirting with the mountebank and threatens her with violence. He will wall up the window, chalk a line she may not cross, and keep her 'backwards' in the house. Mosca arrives with the news that Volpone has recovered thanks to Scoto's oil, and that the doctors advise a young woman to lie with him; the rivals are competing to supply one. Mosca hints that a doctor has offered his own daughter.",
+    "Corvino reasons himself into a decision: honour, he decides, is the same for wife and daughter, and if a doctor can offer his daughter, he can offer his wife and secure the inheritance. Sending Mosca ahead, he turns to the weeping Celia, tells her that his jealousy was only a test, and orders her to put on her finest clothes for a feast at Volpone's."
+   ],
+   "analysis": [
+    "The scene is a study in the logic of greed. Corvino's jealousy and his willingness to prostitute his wife look like opposites, but both treat her as property, to be locked up or lent out according to profit. The speed of his conversion is the comedy, and its ugliness is the satire. Mosca never proposes Celia; he lets Corvino reach the idea himself and then praises him for it [[leggatt1981]] [[barton1984]].",
+    "Corvino's threat to 'make thee an anatomy' and read a lecture on her body in public reveals the violence beneath his concern for reputation, and anticipates his public slander of her in the court."
+   ],
+   "key": [
+    {
+     "ref": "Act II, Scene 3 (II.v)",
+     "quote": "Death of mine honour, with the city's fool!\nA juggling, tooth-drawing, prating mountebank!",
+     "note": "Corvino's furious opening. His 'honour' will prove negotiable within the same scene."
+    },
+    {
+     "ref": "Act II, Scene 3 (II.vi)",
+     "quote": "In the point of honour,\nThe cases are all one of wife and daughter.",
+     "note": "Corvino's self-persuasion, a mock-legal argument that turns his wife into a commodity."
+    },
+    {
+     "ref": "Act II, Scene 3 (II.v)",
+     "quote": "Thy lodging shall be backwards; thy walks backwards;",
+     "note": "The repeated 'backwards' carries a coarse double meaning as well as the image of imprisonment."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act III, Scene 1: Mosca's soliloquy and the trap for Bonario",
+   "lines": "Act III, Scene 1 (III.i–ii in modern editions)",
+   "section": 7,
+   "summary": [
+    "Alone in the street, Mosca admits that success has made him fall in love with himself. He celebrates the true parasite, not the common flatterer or fawning courtier, but the 'fine elegant rascal' who can change shape and voice as quickly as thought, and who is born to the art.",
+    "Bonario, Corbaccio's son, meets him and treats him with contempt. Mosca weeps, protests his honesty and poverty, and wins the young man's pity. He then reveals that Corbaccio is about to disinherit him and offers to let him hear it with his own ears. Bonario, incredulous but shaken, follows."
+   ],
+   "analysis": [
+    "This is Mosca's moment of self-knowledge and the hinge of the play. Until now he has seemed Volpone's instrument; here he claims a nature and an art of his own, and the claim prepares for his bid for independence in Act V. His description of the parasite who can 'change a visor, swifter than a thought' is also a description of the actor, and of the play's whole world of role-playing [[barton1984]] [[watson1987]].",
+    "With Bonario, Mosca performs exactly the speech he has just described. The young man's line, 'This cannot be a personated passion', is ironic: it is nothing else. Bonario's virtue is real, but it is also inexperience, and the play will test whether goodness can survive in a world of performers."
+   ],
+   "key": [
+    {
+     "ref": "Act III, Scene 1 (III.i)",
+     "quote": "I fear, I shall begin to grow in love\nWith my dear self, and my most prosperous parts,",
+     "note": "The opening of the soliloquy; the servant's pride foreshadows his fall."
+    },
+    {
+     "ref": "Act III, Scene 1 (III.i)",
+     "quote": "almost\nAll the wise world is little else, in nature,\nBut parasites, or sub-parasites.",
+     "note": "Mosca's satire on society at large: everyone feeds on someone."
+    },
+    {
+     "ref": "Act III, Scene 1 (III.ii)",
+     "quote": "This cannot be a personated passion.--",
+     "note": "Bonario is deceived by a performance, the fault that ruins all the dupes."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act III, Scene 2: the fools' debate and Lady Would-be",
+   "lines": "Act III, Scene 2 (in modern editions roughly III.iii–v)",
+   "section": 8,
+   "summary": [
+    "Waiting for Mosca, Volpone calls for his entertainers, and Nano argues in doggerel that a dwarf deserves precedence over the fool and the eunuch. Lady Would-be arrives. She scolds her waiting-women over her dress, then sits by Volpone's couch and pours out remedies, learning, and literary opinions: on music and Plato, on Petrarch, Tasso, Dante, Guarini and Aretino, on philosophy and the passions. Volpone, who complains that before he feigned diseases and now he has one, cannot stop her.",
+    "Mosca rescues him by telling the lady that her husband is rowing with a courtesan on the canal. She rushes off to pursue them. Mosca reports that Corbaccio is coming with his will, and Volpone, revived, waits in hope of Celia."
+   ],
+   "analysis": [
+    "Lady Would-be is a satire on borrowed culture. Her speech is a heap of fashionable names and half-understood ideas, and her flood of words parodies the learned eloquence that Jonson himself valued. She is also another legacy-hunter, and her visit shows how greed takes social and cultural forms. Volpone's agony is the joke: the actor who feigns illness is undone by a real torment, an apt punishment in a comedy of humours [[barish1960]] [[leggatt1981]].",
+    "Nano's argument that men call a dwarf 'a pretty little ape' because he imitates greater men in a ridiculous fashion is a small comment on the whole play, where imitation and mimicry are the means of survival."
+   ],
+   "key": [
+    {
+     "ref": "Act III, Scene 2 (III.iv)",
+     "quote": "Before I fain'd diseases, now I have one.",
+     "note": "Volpone's aside on Lady Would-be's talk: the deceiver suffers a real affliction."
+    },
+    {
+     "ref": "Act III, Scene 2 (III.iv)",
+     "quote": "Says that your highest female grace is silence.",
+     "note": "Volpone's rejoinder, alluding to Sophocles (Ajax 293); it does not stop her."
+    },
+    {
+     "ref": "Act III, Scene 2 (III.iii)",
+     "quote": "And why a pretty ape, but for pleasing imitation\nOf greater men's actions, in a ridiculous fashion?",
+     "note": "Nano's doggerel defence of the dwarf, a joke about imitation in a play full of imitators."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act III, Scene 3: Bonario hidden",
+   "lines": "Act III, Scene 3 (a short linking scene; III.vi in modern editions)",
+   "section": 9,
+   "summary": [
+    "Mosca hides Bonario in a closet where he can overhear his father, then leaves at the sound of knocking. Bonario still cannot believe his father capable of such cruelty."
+   ],
+   "analysis": [
+    "Jonson keeps the machinery moving fast. The placing of an onlooker in hiding sets up the coincidence on which the plot turns: Bonario, brought to witness one wrong, will witness a worse one."
+   ],
+   "key": [
+    {
+     "ref": "Act III, Scene 3",
+     "quote": "Cannot my thought imagine this a truth.",
+     "note": "Bonario's innocence: he cannot imagine evil, which makes him both admirable and vulnerable."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Act III, Scene 4: Corvino comes too soon",
+   "lines": "Act III, Scene 4 (a short linking scene)",
+   "section": 10,
+   "summary": [
+    "Corvino arrives with Celia before Mosca has sent for him, afraid that his rivals will forestall him. Mosca, alarmed, tells them to wait and goes out; Corvino begins to explain to Celia why she has been brought."
+   ],
+   "analysis": [
+    "The early arrival is the accident that wrecks Mosca's timing. Mosca's aside, that no man ever hurried so to be made a cuckold, sums up Corvino's comic degradation."
+   ],
+   "key": [
+    {
+     "ref": "Act III, Scene 4",
+     "quote": "Prevent! did e'er man haste so, for his horns?",
+     "note": "Mosca's aside. Horns were the emblem of the cuckold; 'prevent' means forestall."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Act III, Scene 5: Bonario sent away",
+   "lines": "Act III, Scene 5 (a short linking scene)",
+   "section": 11,
+   "summary": [
+    "Mosca tells Bonario that his father will be half an hour late and sends him to wait at the end of a gallery with some books, out of earshot. Bonario agrees but begins to distrust him."
+   ],
+   "analysis": [
+    "Mosca thinks he has removed the witness, but Bonario's doubt keeps him close enough to intervene. The plot depends on a servant who, for once, has not calculated everything."
+   ],
+   "key": [
+    {
+     "ref": "Act III, Scene 5",
+     "quote": "I do doubt this fellow.",
+     "note": "Bonario's first suspicion, which saves Celia."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Act III, Scene 6: 'Come, my Celia' and the rescue",
+   "lines": "Act III, Scene 6 (III.vii–ix in modern editions)",
+   "section": 12,
+   "summary": [
+    "Corvino forces Celia to Volpone's bedside, and when she pleads for her chastity he dismisses honour as 'a breath' and threatens her with horrible punishments if she refuses. Mosca persuades him to leave her alone with the patient. Volpone leaps from his couch, boasts of his youth and his acting, and sings 'Come, my Celia, let us prove'. He offers her pearls, jewels and fantastic luxuries, and imagines them acting out Ovid's love stories and changing shapes in endless pleasure. Celia begs him to kill her or to disfigure her rather than take her honour. He seizes her, and Bonario rushes from hiding, denounces him and leads her away.",
+    "Volpone despairs and Mosca, wounded by Bonario's sword, offers to die. But Corbaccio arrives with his will, and Mosca tells him that his son came to kill him. Voltore, who has overheard, accuses Mosca of double-dealing; Mosca explains that he plotted Bonario's disinheritance for Voltore's sake and that Bonario has carried Celia off to accuse Volpone of rape. Voltore takes charge of the defence and calls them all to the Scrutineo, the court."
+   ],
+   "analysis": [
+    "This is the play's central confrontation and the point where comedy almost turns into something darker. Volpone's song adapts Catullus's 'Vivamus, mea Lesbia' into a seducer's argument that only discovery makes sin, and Jonson later printed it in The Forest as a song to Celia. His catalogue of pleasures, like the hymn to gold, is gorgeous and self-condemning: love becomes a sequence of costumes and consumption. Celia's answer is plain, devout and unpersuadable, and the clash of styles is the clash of values [[barton1984]] [[watson1987]].",
+    "Critics have found Celia and Bonario stiff and allegorical, figures of chastity and filial piety in a world of vivid rogues. Yet their rhetoric is effective in its place: Celia's speech, with its broken clauses and appeal to anything 'that yet sounds man about you', opposes conscience to performance, and Bonario's rescue is the only act in the play performed without calculation. Corvino's line that honour is 'a mere term / Invented to awe fools' shows how far greed has emptied the language of value [[leggatt1981]] [[partridge1958]].",
+    "Mosca's recovery is a dazzling piece of improvisation. Within minutes he turns Voltore's suspicion into an alliance and a defeat into a lawsuit. The gold remains on stage throughout, and Bonario calls it what it is: 'this dross, thy idol'."
+   ],
+   "key": [
+    {
+     "ref": "Act III, Scene 6 (III.vii)",
+     "quote": "Honour! tut, a breath:\nThere's no such thing, in nature: a mere term\nInvented to awe fools.",
+     "note": "Corvino denies the value he raved about in Act II; greed has dissolved his morality."
+    },
+    {
+     "ref": "Act III, Scene 6 (III.vii)",
+     "quote": "Come, my Celia, let us prove,\nWhile we can, the sports of love,",
+     "note": "The opening of the song, after Catullus 5; 'prove' means try, experience."
+    },
+    {
+     "ref": "Act III, Scene 6 (III.vii)",
+     "quote": "Yet feed your wrath, sir, rather than your lust,",
+     "note": "Celia asks to be punished rather than violated; her plain moral speech resists Volpone's eloquence."
+    },
+    {
+     "ref": "Act III, Scene 6 (III.viii)",
+     "quote": "Let us die like Romans,\nSince we have lived like Grecians.",
+     "note": "Mosca's mock-heroic offer of suicide; 'Grecians' means merry, dissolute livers."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Act IV, Scene 1: Sir Politic's projects and Lady Would-be's mistake",
+   "lines": "Act IV, Scene 1 (IV.i–iii in modern editions)",
+   "section": 13,
+   "summary": [
+    "Sir Politic instructs Peregrine in the art of travel: be grave, keep secrets, never tell a truth to strangers, profess no religion and learn the use of the silver fork. He outlines his money-making projects, a contract to supply Venice with red herrings, a scheme to restrict tinder-boxes, and a device for detecting plague in ships with onions and bellows, and lets Peregrine read his diary, a solemn record of trivial acts. Lady Would-be arrives, takes Peregrine for the courtesan Mosca spoke of, disguised in man's clothes, and abuses him.",
+    "Mosca enters and tells her that the courtesan has been arrested and is before the Senate; the gentleman only landed that morning. Lady Would-be apologises and leaves with him for the court. Peregrine, convinced that Sir Politic used his wife to entrap him, resolves on revenge."
+   ],
+   "analysis": [
+    "The subplot reaches its fullest comic development. Sir Politic's projects parody the 'projectors' of Jacobean England, men who sought patents and pensions with schemes for public benefit, and his advice to travellers parodies a whole genre of travel instruction. His diary, which records that he bought toothpicks and urinated at St Mark's, is a superb image of a mind that confuses the trivial with the significant. Jonas Barish argued that the Would-bes mirror the main plot in miniature: they too imitate, and their folly is the English, harmless reflection of Venetian vice [[barish1953]] [[gibbons1968]].",
+    "Peregrine's misreading of the situation, 'sir Politick Bawd', shows that even the clear-sighted observer can be wrong when he assumes the worst; his revenge in Act V answers one kind of deception with another."
+   ],
+   "key": [
+    {
+     "ref": "Act IV, Scene 1 (IV.i)",
+     "quote": "And then, for your religion, profess none,\nBut wonder at the diversity, of all:",
+     "note": "Sir Politic's travel advice; he names Machiavelli and Bodin as authorities for a policy of religious indifference."
+    },
+    {
+     "ref": "Act IV, Scene 1 (IV.i)",
+     "quote": "I cheapen'd sprats; and at St. Mark's I urined.",
+     "note": "The climax of the diary. 'Cheapened' means bargained for."
+    },
+    {
+     "ref": "Act IV, Scene 1 (IV.iii)",
+     "quote": "Sir Politick Would-be? no; sir Politick Bawd.",
+     "note": "Peregrine's mistaken conclusion, which motivates the tortoise trick."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Act IV, Scene 2: the first trial",
+   "lines": "Act IV, Scene 2 (IV.iv–vi in modern editions)",
+   "section": 14,
+   "summary": [
+    "In the Scrutineo the legacy-hunters rehearse their lie. The four Avocatori, the magistrates, are at first shocked by the charges against Volpone. Voltore then makes a powerful speech: Celia is a known adulteress, Bonario her lover; Corvino forgave her; Corbaccio disinherited his son for his vices; and Bonario came to Volpone's house to murder his father and, failing, dragged the old invalid from his bed and wounded his servant. Corbaccio disowns his son, Corvino calls his wife a whore in obscene terms, and Celia faints. Mosca shows his wound, and Lady Would-be identifies Celia as the woman she saw with her husband.",
+    "When Bonario and Celia can offer only their consciences and heaven as witnesses, the court calls this insolence. Volpone is carried in on a couch, and Voltore displays his helpless body as proof that he could not have attempted rape. The court sends Celia and Bonario into custody and apologises to Volpone. Afterwards Mosca flatters each of the legacy-hunters privately and persuades Lady Would-be not to visit, promising that she will now be first in the will."
+   ],
+   "analysis": [
+    "The trial is Jonson's satire on justice. The court is not corrupt, but it is credulous: it is persuaded by rhetoric, by numbers and by appearances, exactly as the legacy-hunters are. Voltore's speech is a model of forensic oratory turned to lies, and its success shows that eloquence without virtue is the most dangerous skill in the play. Bonario's reply, that testimony carries no weight 'Where multitude, and clamour overcomes', is the bitterest line in the play [[leggatt1981]] [[dutton2008]].",
+    "The scene is also cruel comedy. Corvino's public self-declaration as a cuckold, done to save his reputation, is a paradox of the kind Jonson loves: Mosca tells him it is better to profess himself a cuckold than to have the truth proved. The Fourth Avocatore's sudden interest in Mosca as a husband for his daughter, later in Act V, shows that the judges themselves are not immune to wealth."
+   ],
+   "key": [
+    {
+     "ref": "Act IV, Scene 2 (IV.v)",
+     "quote": "Upon my faith and credit with your virtues,\nHe is not able to endure the air.",
+     "note": "Voltore swears to a falsehood with the language of honour."
+    },
+    {
+     "ref": "Act IV, Scene 2 (IV.vi)",
+     "quote": "Not in your courts,\nWhere multitude, and clamour overcomes.",
+     "note": "Bonario's protest when the court rejects conscience and heaven as witnesses."
+    },
+    {
+     "ref": "Act IV, Scene 2 (IV.vi)",
+     "quote": "Damn'd deeds are done with greatest confidence.",
+     "note": "Voltore's closing maxim, true of himself and his allies."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Act V, Scene 1: the false death and the inventory",
+   "lines": "Act V, Scene 1 (V.i–iii in modern editions)",
+   "section": 15,
+   "summary": [
+    "Volpone, shaken by the public trial, drinks wine to drive out his fear and congratulates Mosca on their masterpiece. Instead of resting, he decides to 'vex them all' further: Nano and Castrone are to spread the news that he is dead, Mosca is to put on a gown and play the heir, and Volpone will hide behind a curtain to watch. Volpone writes Mosca's name into a blank will.",
+    "Voltore, Corbaccio, Corvino and Lady Would-be arrive in turn. Mosca sits taking an inventory of the goods, reads out lists of carpets and linen, and tosses them the will. As they discover that he is the heir, he humiliates each one: he reminds Lady Would-be of the sexual offer she made him, calls Corvino a declared cuckold, threatens Corbaccio with exposure for perjury and hired poisoning, and thanks Voltore for his plate. Volpone, delighted, sends Mosca out in a nobleman's robes to torment them further and plans his own disguise as a commandadore, a court officer."
+   ],
+   "analysis": [
+    "This is the turning point, and it comes from within. Volpone and Mosca agree that they cannot go beyond their masterpiece, and then immediately try to. The impulse is not greed but delight in performance, what Volpone calls the 'rare meal of laughter'. Stephen Greenblatt argued that the play keeps offering endings and that Volpone, like a dramatist who cannot stop, refuses each one; Ian Donaldson has shown how the motif of feigned death and false resurrection runs through the play [[greenblatt1976]] [[donaldson1971]].",
+    "The inventory scene is one of the funniest in English comedy. The list of goods, read in flat inventory language, cuts across the legacy-hunters' rising panic, and Mosca's scorn speaks the truth about each of them. But in giving Mosca the will, the house and the keys, Volpone has made himself legally dead, and the closing proverb of the scene is grimly ironic."
+   ],
+   "key": [
+    {
+     "ref": "Act V, Scene 1 (V.ii)",
+     "quote": "O, more than if I had enjoy'd the wench:\nThe pleasure of all woman-kind's not like it.",
+     "note": "Volpone values the pleasure of deceiving above sex; his deepest appetite is for performance."
+    },
+    {
+     "ref": "Act V, Scene 1 (V.iii)",
+     "quote": "Go home, and die, and stink.",
+     "note": "Mosca to Corbaccio: the parasite speaks plainly at last, and the line is shocking in its contempt."
+    },
+    {
+     "ref": "Act V, Scene 1 (V.iii)",
+     "quote": "The Fox fares ever best when he is curst.",
+     "note": "A proverb that Volpone takes as a promise; the play will prove it false."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Act V, Scene 2: the politic tortoise",
+   "lines": "Act V, Scene 2 (V.iv in modern editions)",
+   "section": 16,
+   "summary": [
+    "Peregrine, disguised as a merchant, visits Sir Politic and tells him that the young man he met is a spy who has reported to the Senate that the knight plans to sell Venice to the Turks; officers are coming to search his papers. Sir Politic, terrified, explains that he only talked so for discourse's sake, and hides under a tortoise shell he has prepared for such emergencies. Peregrine's companions, playing officers, poke and threaten the 'tortoise' until they pull off the shell. Peregrine reveals himself and leaves. Sir Politic, ashamed, decides to leave Venice for ever, 'Creeping with house on back'."
+   ],
+   "analysis": [
+    "The subplot ends in pure farce and a perfect emblem. The would-be politician is turned into a creature from the beast fable, a tortoise rather than a bird of prey, and his punishment fits his folly: public ridicule rather than law. Barish's reading of the double plot sees here a comic parallel to Volpone's fate: both men are trapped by their own fantasies and both are unmasked. Many critics also connect Sir Politic's terror of plots and searched papers with the atmosphere of London after the Gunpowder Plot [[barish1953]] [[dutton2008]]."
+   ],
+   "key": [
+    {
+     "ref": "Act V, Scene 2 (V.iv)",
+     "quote": "O, I shall be the fable of all feasts,",
+     "note": "Sir Politic's fear of becoming a story; his punishment is laughter."
+    },
+    {
+     "ref": "Act V, Scene 2 (V.iv)",
+     "quote": "And I to shun this place and clime for ever;\nCreeping with house on back: and think it well,\nTo shrink my poor head in my politic shell.",
+     "note": "The subplot's closing couplets: the knight accepts his animal emblem."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Act V, Scene 3: the Fox-trap",
+   "lines": "Act V, Scene 3 (V.v in modern editions)",
+   "section": 17,
+   "summary": [
+    "Volpone, dressed as a commandadore, and Mosca, dressed as a clarissimo, a Venetian nobleman, admire each other's disguises. Volpone goes out to the court. Alone, Mosca sends the household entertainers away, takes the keys and decides to keep his master 'dead' unless he agrees to share the fortune."
+   ],
+   "analysis": [
+    "Mosca's brief soliloquy turns the plot. The disguises are significant: the parasite now wears the dress of a nobleman, and the nobleman that of a minor official. Mosca reasons that cheating a cheat is no sin, and he names his trap after the fox's own trick."
+   ],
+   "key": [
+    {
+     "ref": "Act V, Scene 3 (V.v)",
+     "quote": "My Fox\nIs out of his hole,",
+     "note": "The hunting image: once outside his den, the fox can be trapped."
+    },
+    {
+     "ref": "Act V, Scene 3 (V.v)",
+     "quote": "Let his sport pay for it, this is call'd the Fox-trap.",
+     "note": "Mosca's decision: Volpone's love of sport becomes the cause of his ruin."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "Act V, Scene 4: Volpone mocks Corbaccio, Corvino and Voltore",
+   "lines": "Act V, Scene 4 (V.vi–vii in modern editions)",
+   "section": 18,
+   "summary": [
+    "In the street, Corbaccio and Corvino agree to stick to their story. Volpone, as the commandadore, pretends to congratulate each of them on inheriting Volpone's wealth, and mocks them as they deny it. When Voltore arrives, Volpone asks him for the lease of a small house that he describes as a decayed brothel, and Voltore leaves in a fury."
+   ],
+   "analysis": [
+    "Volpone cannot resist the extra joke, and each joke is dangerous. The disguise lets him say aloud what he thinks of his victims, but it also sharpens their anger, especially Voltore's. His jibe about the brothel whose fabric decayed with its owner's body plays on the fiction of his own death."
+   ],
+   "key": [
+    {
+     "ref": "Act V, Scene 4 (V.vi)",
+     "quote": "Thus do all gamesters, at all games, dissemble:\nNo man will seem to win.",
+     "note": "Volpone's gambling image; the play is a game of concealment."
+    },
+    {
+     "ref": "Act V, Scene 4 (V.vii)",
+     "quote": "his body and that house\nDecay'd, together.",
+     "note": "Volpone jokes about his own supposed decay."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "title": "Act V, Scene 5: the fable of the fox and the crow",
+   "lines": "Act V, Scene 5 (V.viii–ix in modern editions)",
+   "section": 19,
+   "summary": [
+    "Mosca passes in his nobleman's robes and Corbaccio and Corvino rage at him. Volpone, still disguised, taunts Corvino with Aesop's fable: the crow who sang and dropped his cheese for the fox. Corvino threatens to beat him. Voltore calls Mosca a 'flesh-fly' and warns that his winter will come. Volpone mocks the lawyer for being outwitted by a parasite and assures him, mockingly, that he must be the heir."
+   ],
+   "analysis": [
+    "Here the fable becomes explicit. Volpone tells the story that the play has been enacting and casts himself as the fox who laughs at the crow's emptiness. His triumph is his mistake: Voltore's humiliation drives him to confess. The flesh-fly image, a fly that feeds on carrion, gives Mosca his place in the bestiary [[duncan1979]]."
+   ],
+   "key": [
+    {
+     "ref": "Act V, Scene 5 (V.viii)",
+     "quote": "Should not have sung your shame; and dropt your cheese,\nTo let the Fox laugh at your emptiness.",
+     "note": "Volpone retells Aesop's fable to Corvino, the Crow."
+    },
+    {
+     "ref": "Act V, Scene 5 (V.ix)",
+     "quote": "Well, flesh-fly, it is summer with you now;\nYour winter will come on.",
+     "note": "Voltore names Mosca's animal and threatens the change of season."
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "title": "Act V, Scene 6: Voltore confesses",
+   "lines": "Act V, Scene 6 (V.x in modern editions)",
+   "section": 20,
+   "summary": [
+    "In court Voltore throws himself on the judges' mercy and confesses that he lied, naming the parasite as the instrument of everything. Volpone, aside, realises that he is caught in his own noose and goes out, supposedly to fetch Mosca. Corvino claims that Voltore is mad or possessed, out of envy because the servant has inherited; Corbaccio calls both the advocate and the parasite knaves. The court sends for Mosca, now treated as a man of great estate."
+   ],
+   "analysis": [
+    "The plot's machinery reverses: the lawyer whose lies convicted the innocent is now driven by rage to tell the truth. Jonson does not make his confession a conversion; it comes from wounded pride. The Avocatori's confusion, 'This same's a labyrinth!', describes the effect of a world in which every witness lies."
+   ],
+   "key": [
+    {
+     "ref": "Act V, Scene 6 (V.x)",
+     "quote": "I am caught\nIn mine own noose--",
+     "note": "Volpone's first recognition that his jest has trapped him."
+    },
+    {
+     "ref": "Act V, Scene 6 (V.x)",
+     "quote": "This same's a labyrinth!",
+     "note": "The magistrates lost in the maze of lies."
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "title": "Act V, Scene 7: 'To make a snare for mine own neck!'",
+   "lines": "Act V, Scene 7 (V.xi in modern editions)",
+   "section": 21,
+   "summary": [
+    "In the street Volpone curses his own wantonness in devising the false death. Nano, Androgyno and Castrone tell him that Mosca has sent them out and taken the keys. Volpone sends them to find him and goes back to the court, hoping to win Voltore back with new hopes."
+   ],
+   "analysis": [
+    "The soliloquy is Volpone's nearest approach to self-knowledge: he sees that he could not bear his fortune soberly and needed his 'crotchets' and 'conundrums'. But he does not change; he only plans another trick. The humour that rules him is the love of play itself."
+   ],
+   "key": [
+    {
+     "ref": "Act V, Scene 7 (V.xi)",
+     "quote": "To make a snare for mine own neck! and run\nMy head into it, wilfully! with laughter!",
+     "note": "Volpone recognises the self-destructive pleasure that drives him."
+    },
+    {
+     "ref": "Act V, Scene 7 (V.xi)",
+     "quote": "What a vile wretch was I, that could not bear\nMy fortune soberly?",
+     "note": "Insight without reform."
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "title": "Act V, Scene 8: the Fox uncased and the sentences",
+   "lines": "Act V, Scene 8 (V.xii in modern editions)",
+   "section": 22,
+   "summary": [
+    "Volpone, as the commandadore, whispers to Voltore that his master lives and that he is still the heir. Voltore falls down and pretends to be possessed, and Volpone describes the devil leaving him in the shape of a blue toad with bat's wings; Voltore then says that his written confession is false. Mosca arrives in state, and the Fourth Avocatore thinks him a fit match for his daughter. Volpone whispers that he should say his master is living, but Mosca pretends not to know him and bargains for half the fortune, then more. When the court orders the 'officer' whipped, Volpone throws off his disguise and reveals the whole truth.",
+    "The court frees Celia and Bonario and passes sentence. Mosca, a commoner who has impersonated a gentleman, is to be whipped and sent to the galleys for life. Volpone's wealth goes to the hospital of the Incurabili, and he is to lie in prison in irons until he is really sick and lame. Voltore is banished from his profession and the state; Corbaccio's estate passes to Bonario and he is confined to a monastery; Corvino is to be rowed round Venice wearing asses' ears and set in the pillory, and must send Celia home to her father with her dowry trebled. The First Avocatore draws the moral."
+   ],
+   "analysis": [
+    "The ending is the play's greatest critical problem. The dénouement is not brought about by virtue or by the court, which has been deceived throughout, but by the falling out of thieves: Volpone prefers ruin to defeat by his servant. Each punishment fits its crime with a poetic exactness, from the feigned invalid made truly sick to the cuckold crowned with ass's ears. Yet the severity is far beyond the usual comic ending; nobody marries, and even Celia is returned to her father rather than united with Bonario. Jonson defended this in his epistle as a demonstration that the stage can punish vice [[greenblatt1976]] [[parker1983]] [[creaser1978]].",
+    "The class logic of the sentences is pointed. Mosca is punished most harshly for having worn a gentleman's habit 'Being a fellow of no birth or blood', while Volpone, 'By blood and rank a gentleman', escapes the galleys. The Fourth Avocatore's matchmaking shows that the judges themselves feel the pull of wealth. The bench's moral, that the vicious possess wealth 'as sick men possess fevers', restates the play's medical metaphor of greed as disease [[dutton2008]] [[gibbons1968]].",
+    "Volpone's last words in the play, 'This is call'd mortifying of a Fox', are a pun: to mortify is to humble, to subdue the flesh, and also, in cookery, to hang game until it is tender. Even in defeat he makes a joke, and the comic spirit survives the sentence."
+   ],
+   "key": [
+    {
+     "ref": "Act V, Scene 8 (V.xii)",
+     "quote": "The Fox shall here uncase.",
+     "note": "Volpone's decision to reveal himself; 'uncase' means take off his disguise, and also skin a fox."
+    },
+    {
+     "ref": "Act V, Scene 8 (V.xii)",
+     "quote": "These possess wealth, as sick men possess fevers,\nWhich trulier may be said to possess them.",
+     "note": "The court's diagnosis of avarice as disease."
+    },
+    {
+     "ref": "Act V, Scene 8 (V.xii)",
+     "quote": "This is call'd mortifying of a Fox.",
+     "note": "Volpone's final pun on his sentence."
+    },
+    {
+     "ref": "Act V, Scene 8 (V.xii)",
+     "quote": "Mischiefs feed\nLike beasts, till they be fat, and then they bleed.",
+     "note": "The closing couplet: the vicious fatten like beasts for slaughter."
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "title": "Epilogue: 'clap your hands'",
+   "lines": "Epilogue",
+   "section": 23,
+   "summary": [
+    "Volpone steps forward. Though the Fox has been punished by the laws, he hopes that he has done no wrong to the audience; if he has, they may censure him, and if not, they should 'fare jovially' and applaud."
+   ],
+   "analysis": [
+    "The epilogue softens the severity of the sentence. The actor who played the Fox appeals to the audience as a new court, and the applause he asks for becomes a kind of acquittal. Jonson thus ends with the theatre's pleasure as well as with justice, the double aim set out in the Prologue [[barton1984]]."
+   ],
+   "key": [
+    {
+     "ref": "Epilogue",
+     "quote": "The seasoning of a play, is the applause.",
+     "note": "The opening line, a culinary image that matches the play's language of feeding."
+    },
+    {
+     "ref": "Epilogue",
+     "quote": "If not, fare jovially, and clap your hands.",
+     "note": "The audience is asked to judge and to forgive."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Volpone",
+   "side": "Volpone's household",
+   "text": "A Venetian magnifico, rich, childless and in perfect health, who has spent three years pretending to be dying so that legacy-hunters will shower him with gifts. His name means 'big fox'. He worships gold, but what he loves most is performance: he plays the invalid, the mountebank, the lover and the court officer with equal relish. His appetite for one more trick leads him to give away his power to Mosca, and he chooses to expose himself rather than be beaten by his servant."
+  },
+  {
+   "name": "Mosca",
+   "side": "Volpone's household",
+   "text": "Volpone's parasite, his 'fly'. He manages the legacy-hunters, invents every lie and adapts it to its victim, and in his soliloquy in Act III claims to be an artist born. Servant and master depend on each other, and when Volpone pretends to die, Mosca tries to keep the inheritance for himself. He is punished more harshly than his master because he is a commoner who wore a gentleman's robes."
+  },
+  {
+   "name": "Voltore",
+   "side": "Legacy-hunters",
+   "text": "An advocate, the 'vulture', who smells a carcass from afar. His gift is eloquence for hire, and in the first trial his speech persuades the court to condemn the innocent. Outwitted and humiliated by Mosca, he confesses out of rage, then retracts his confession by pretending to be possessed. He is banished from his profession."
+  },
+  {
+   "name": "Corbaccio",
+   "side": "Legacy-hunters",
+   "text": "A deaf, decrepit old miser, the 'raven', who hopes to outlive Volpone and hears every report of his symptoms as good news. He offers Volpone poison disguised as a sleeping draught and disinherits his son in Volpone's favour. He is sentenced to a monastery, where he will be taught to die well, and his estate passes to his son."
+  },
+  {
+   "name": "Corvino",
+   "side": "Legacy-hunters",
+   "text": "A merchant, the 'crow', violently jealous of his young wife, whom he keeps locked away. When his hope of inheritance is at stake, he forces her to Volpone's bed, and in court he calls her a whore to save his reputation. His punishment, to be rowed through Venice in asses' ears and pilloried, exposes him publicly as the fool he is."
+  },
+  {
+   "name": "Celia",
+   "side": "The innocent",
+   "text": "Corvino's wife, whose name means 'heavenly'. She is chaste, pious and constantly threatened: by her husband's jealousy, by his greed and by Volpone's lust. Her refusal of Volpone is the moral centre of Act III. Critics have found her more emblem than person, but her plain, broken speech is a deliberate contrast to the eloquence of the deceivers."
+  },
+  {
+   "name": "Bonario",
+   "side": "The innocent",
+   "text": "Corbaccio's son, whose name means 'good'. Honest and quick to anger, he despises Mosca but is easily moved by his tears. He rescues Celia from Volpone and suffers false accusation in court without resisting his father's authority. He inherits his father's estate."
+  },
+  {
+   "name": "Sir Politic Would-be",
+   "side": "English visitors",
+   "text": "An English knight in Venice (spelt 'Politick' in this text) who wants to be thought a man of state secrets and grand projects. He reads plots into every rumour, keeps a diary of trivia and proposes absurd schemes. His punishment is ridicule: hiding under a tortoise shell, he becomes the fable of all feasts. He is often taken as a satire on the English traveller and the Jacobean 'projector'."
+  },
+  {
+   "name": "Lady Would-be",
+   "side": "English visitors",
+   "text": "Sir Politic's wife, a torrent of fashionable learning and remedies. She visits Volpone in hope of the inheritance, offers herself to Mosca, mistakes Peregrine for a courtesan in disguise and perjures herself in court against Celia. She illustrates how greed and vanity take English, social forms."
+  },
+  {
+   "name": "Peregrine",
+   "side": "English visitors",
+   "text": "A young English traveller, whose name means pilgrim or traveller and also suggests the peregrine falcon. He sees through Sir Politic at once and enjoys feeding his credulity. Believing that the knight used his wife to entrap him, he punishes him with the tortoise trick. He is the nearest the play has to a sane observer, although he too is mistaken."
+  },
+  {
+   "name": "Nano, Androgyno and Castrone",
+   "side": "Volpone's household",
+   "text": "Volpone's dwarf, hermaphrodite and eunuch, kept for entertainment and rumoured to be his children. Their interlude on the transmigrating soul of Pythagoras and their songs in praise of fools comment on the play's themes. Their unnatural roles reflect Volpone's household, where nothing grows and nothing is born."
+  },
+  {
+   "name": "The Avocatori",
+   "side": "Venetian court",
+   "text": "Four magistrates of Venice who try the case. They are honest but credulous, persuaded first by Voltore's rhetoric and then confused by the reversal; the Fourth Avocatore even thinks of marrying his daughter to the newly rich Mosca. They deliver the severe sentences and the final moral."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Greed as religion and disease",
+   "text": [
+    "The play opens with a hymn to gold, in which Volpone worships his treasure as saint and god, and closes with a court that describes wealth as a fever that possesses its owner. Between these two images every character except Celia and Bonario is defined by appetite. The legacy-hunters sacrifice their honour, their children and their wives to the hope of inheritance; Volpone sacrifices his safety to the pleasure of fleecing them. Jonson's satire shows greed as an idolatry that replaces every natural bond and as a sickness that destroys its host [[knights1937]] [[partridge1958]].",
+    "L. C. Knights placed Volpone in the context of the economic changes of Jacobean England, where new forms of money-making unsettled older ideas of order. The play does not describe that world directly, but its vision of a society bound together only by acquisition expresses a deeply traditional moral judgment [[knights1937]]."
+   ]
+  },
+  {
+   "title": "Performance, disguise and the theatre",
+   "text": [
+    "Volpone is an actor who boasts of having played Antinous before the King of France, and his triumphs are performances: the invalid on the couch, Scoto on his platform, the singing lover, the court officer. Mosca praises the parasite who can 'change a visor, swifter than a thought'. Even the court is a theatre, persuaded by Voltore's performance and by the display of Volpone's body. The play makes us admire the skill of deception and then shows what it costs [[barton1984]] [[greenblatt1976]] [[harp2000]].",
+    "The theatrical theme also turns on the audience. We enjoy Volpone and Mosca as the legacy-hunters enjoy their hopes, and the epilogue asks us to judge the Fox ourselves. Jonson both exploits and examines the pleasure we take in clever villains."
+   ]
+  },
+  {
+   "title": "Men turned into beasts",
+   "text": [
+    "The names make the characters into animals from the beast fable, and the imagery keeps the transformation before us: birds of prey, a fly, a fox, a tortoise, an ass. The interlude of Pythagoras's soul, descending from Apollo to a fool, is a comic version of the same descent. In a world ruled by appetite, human beings lose the qualities that distinguish them from animals, and the final couplet compares crimes to beasts fattened for the slaughter [[partridge1958]] [[levin1943]]."
+   ]
+  },
+  {
+   "title": "Justice and the law",
+   "text": [
+    "Venice was famous for its laws and its republican government, but the court in Volpone is easily misled. In Act IV the innocent are condemned because they can offer only their consciences as witnesses; in Act V the truth comes out not through judicial wisdom but through the quarrel of the guilty. The sentences are severe and exact, but the play leaves an uneasy sense that justice has been lucky. Richard Dutton links the play's interest in testimony and conspiracy to the trials that followed the Gunpowder Plot [[dutton2008]] [[leggatt1981]]."
+   ]
+  },
+  {
+   "title": "Parasites and dependence",
+   "text": [
+    "Mosca's soliloquy claims that almost all the world is made of parasites and sub-parasites. Each character lives off another: the legacy-hunters off Volpone, Volpone off them, Mosca off Volpone and the dupes alike, the Would-bes off the reputation of learning. The master-servant relationship at the centre of the play is one of mutual dependence that collapses when one partner tries to stand alone [[barton1984]] [[watson1987]]."
+   ]
+  },
+  {
+   "title": "Honour, marriage and the selling of women",
+   "text": [
+    "Celia is the play's measure of value. Her husband locks her away as a treasure, offers her to Volpone as a commodity and slanders her in court as a whore; Volpone offers to buy her with jewels and fantasies. Her insistence that her innocence is 'all I can think wealthy' sets a non-commercial value against the play's universal pricing. The ending, which sends her home with a trebled dowry, still describes her in financial terms [[leggatt1981]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Feigned and real sickness",
+   "text": "Volpone's pretended illness, Corbaccio's real decrepitude, Scoto's miracle oil, Lady Would-be's remedies and the court's diagnosis of greed as fever make medicine a running metaphor. The sentence that Volpone lie in irons until he is truly sick closes the circle."
+  },
+  {
+   "title": "Wills and inheritance",
+   "text": "Wills are written, forged, shown and snatched throughout the play: Corbaccio's will disinheriting his son, Volpone's blank will with Mosca's name, the will tossed carelessly to the dupes. In a household without children, inheritance becomes a game rather than a bond between generations."
+  },
+  {
+   "title": "Feeding and devouring",
+   "text": "Carrion birds, a fly that feeds on flesh, the fantasies of eating parrots' heads and nightingales' tongues, Mosca's suggestion that Corbaccio be sold as mummy: images of eating mark a world in which people consume one another."
+  },
+  {
+   "title": "Disguise and costume",
+   "text": "Volpone changes from invalid to mountebank to commandadore; Mosca dresses as a clarissimo; Peregrine disguises himself as a merchant; Sir Politic hides under a shell. Clothes mark rank in Venice, and the court punishes Mosca partly for wearing a gentleman's habit."
+  },
+  {
+   "title": "Laughter",
+   "text": "Volpone and Mosca laugh at their victims, the audience laughs at them all, and Volpone's need for 'a rare meal of laughter' destroys him. Laughter is both the play's pleasure and its trap."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The gold in the shrine",
+   "text": "Revealed behind a curtain in the first scene and present in the room where Celia is assaulted, Volpone's treasure is an idol in the religious sense. Bonario calls it 'this dross, thy idol'."
+  },
+  {
+   "title": "The fox",
+   "text": "From Aesop and the Reynard tradition the fox carries cunning, flattery and the trick of feigning death. Volpone takes the image as his identity and is finally 'uncased' and 'mortified', both words of the hunt and the kitchen."
+  },
+  {
+   "title": "Celia's window and handkerchief",
+   "text": "The window is Celia's only access to the world and the place of her supposed fault; the handkerchief she throws to Scoto becomes, in Corvino's mind, evidence of adultery. Both suggest how little freedom she has."
+  },
+  {
+   "title": "The tortoise shell",
+   "text": "Sir Politic's 'engine' turns him into an emblem of the cautious, self-enclosed politician who carries his house on his back. It is the subplot's equivalent of the fox's skin."
+  },
+  {
+   "title": "The asses' ears",
+   "text": "Corvino's sentence to wear asses' ears instead of cuckold's horns literalises the play's judgment on him as a fool, and recalls Mosca's earlier image of an ass hooded in scholar's purple."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Is the ending too harsh for comedy?",
+   "text": [
+    "Jonson himself raised the question in his epistle to the universities, admitting that strict critics would find his catastrophe insufficiently comic and justifying it by the duty to punish vice. Many readers since have felt that the sentences break the comic mood, especially Volpone's imprisonment and the absence of any marriage or reconciliation. Others argue that the severity is the logical outcome of a satiric design in which the characters condemn themselves [[parker1983]] [[creaser1978]].",
+    "Stephen Greenblatt suggested that the play deliberately frustrates our expectation of an ending: it offers several moments at which the action might stop, and Volpone's refusal to stop is the source both of its energy and of its catastrophe. Ian Donaldson's study of the play's imagery of death and rebirth shows how Volpone's feigned death and comic resurrection are finally answered by a sentence that buries him alive. The epilogue then appeals beyond the court to the audience [[greenblatt1976]] [[donaldson1971]]."
+   ],
+   "cite": [
+    "parker1983",
+    "creaser1978",
+    "greenblatt1976",
+    "donaldson1971"
+   ]
+  },
+  {
+   "title": "Does the Sir Politic subplot belong?",
+   "text": [
+    "Older criticism often treated the Would-bes as an irrelevance, an English farce attached to a Venetian satire, and productions frequently cut them. Jonas Barish's essay 'The Double Plot in Volpone' (1953) changed the debate by showing that the subplot parodies the main plot: Sir Politic and Lady Would-be imitate Venetian vices in a harmless, foolish form, and the tortoise scene mirrors Volpone's unmasking [[barish1953]].",
+    "Later critics have extended the argument. The subplot introduces the theme of imitation, mocks the English fashion for Italian travel and connects the play with English anxieties about plots and spies. Most now see the double plot as a deliberate design, although some still find that the subplot's tone of farce weakens the satire's intensity [[gibbons1968]] [[dutton2008]] [[leggatt1981]]."
+   ],
+   "cite": [
+    "barish1953",
+    "gibbons1968",
+    "dutton2008",
+    "leggatt1981"
+   ]
+  },
+  {
+   "title": "Moral satire or celebration of the rogue?",
+   "text": [
+    "Jonson presented himself as a moralist who mixes profit with pleasure, and the epistle insists on the poet's moral function. Yet audiences have always delighted in Volpone and Mosca, whose energy and invention dominate the play. T. S. Eliot argued that Jonson's characters should be judged not as studies of real people but as the creations of a consistent comic world, whose force lies in its art of surfaces [[eliot1920]].",
+    "Critics such as Edward Partridge showed how the imagery of the play undermines the rogues even as they speak, so that their brilliance and their degradation are inseparable. Anne Barton and Alexander Leggatt read the play as a work in which admiration and judgment are held together: we are seduced as the dupes are, and then made to see the cost [[partridge1958]] [[barton1984]] [[leggatt1981]]."
+   ],
+   "cite": [
+    "eliot1920",
+    "partridge1958",
+    "barton1984",
+    "leggatt1981"
+   ]
+  },
+  {
+   "title": "Celia and Bonario",
+   "text": [
+    "Celia and Bonario have often been called the play's weakness: allegorical figures of virtue, stiff in speech and unconvincing in a world of vivid rogues. Coleridge was among those who regretted that there was no character in the play whom the audience could love. Defenders argue that their simplicity is part of the design. Their language is plain because truth needs no ornament, and their helplessness in court shows how a society governed by performance treats those who refuse to perform [[leggatt1981]] [[barton1984]].",
+    "Recent criticism has also read Celia in terms of gender and property. She is passed between husband, would-be lover and court as an object of exchange, and the play's ending returns her to her father without asking what she wants. Whether Jonson criticises this treatment or simply reproduces it is a live question [[watson1987]] [[parker1983]]."
+   ],
+   "cite": [
+    "leggatt1981",
+    "barton1984",
+    "watson1987",
+    "parker1983"
+   ]
+  },
+  {
+   "title": "Classical imitation and the Lucianic tradition",
+   "text": [
+    "Jonson was the most deliberately classical dramatist of his time, and Volpone is full of borrowings: the legacy-hunters from Horace, Petronius and Lucian, the song from Catullus, Volpone's luxuries from Pliny and Ovid. Douglas Duncan placed the play in the tradition of Lucian, the Greek satirist whose ironic dialogues mock human folly from a detached viewpoint, and Harry Levin traced the Pythagoras interlude to Lucian's Dream, or the Cock [[duncan1979]] [[levin1943]].",
+    "Robert N. Watson argued that Jonson's comedies are also parodies of other dramatic forms, from revenge tragedy to romantic comedy, and that the deceivers in Volpone fail when they try to impose one genre on a world that belongs to another. On this reading, Volpone's attempt to play the romantic seducer and the tragic hero is part of the satire [[watson1987]]."
+   ],
+   "cite": [
+    "duncan1979",
+    "levin1943",
+    "watson1987"
+   ]
+  },
+  {
+   "title": "Volpone, Venice and Jacobean politics",
+   "text": [
+    "The play was written and performed in the months after the Gunpowder Plot of November 1605, when Jonson himself was questioned and employed by the authorities. Richard Dutton has argued that its concern with plots, testimony, false confession and conspiracy reflects that crisis, and that its Venetian setting allowed Jonson to comment on English politics at a safe distance. Sir Politic's fear of searched papers and his talk of selling the state to the Turk can read as a comic echo of the panic [[dutton2008]].",
+    "Other critics are cautious about detailed topical readings, preferring to see Venice as a conventional image of wealth, cunning and moral danger drawn from books such as Contarini's Commonwealth. Biographers such as David Riggs and Ian Donaldson show how closely Jonson's life in these years was tied to state surveillance, and how his comedies turn suspicion itself into a subject for laughter [[riggs1989]] [[donaldson2011]] [[kernan1962]]."
+   ],
+   "cite": [
+    "dutton2008",
+    "riggs1989",
+    "donaldson2011",
+    "kernan1962"
+   ]
+  },
+  {
+   "title": "Comedy of humours or something else?",
+   "text": [
+    "Jonson's earlier comedies of humours present characters dominated by a single passion, and the legacy-hunters fit that pattern. But Volpone and Mosca are more mobile figures, defined by their capacity to change shape. Critics have therefore asked whether the play leaves the humours formula behind, combining it with the beast fable, the morality play and the Roman comedy of the clever slave [[barton1984]] [[partridge1958]].",
+    "Brian Gibbons included Volpone in his study of Jacobean city comedy, the satirical drama of greed and urban life written by Jonson, Marston and Middleton, while noting that its Venetian setting gives it a grander scale. Jonas Barish's study of Jonson's prose showed how each character's speech style expresses his humour, from Lady Would-be's chatter to Sir Politic's officialese [[gibbons1968]] [[barish1960]]."
+   ],
+   "cite": [
+    "barton1984",
+    "partridge1958",
+    "gibbons1968",
+    "barish1960"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Act I, Scene 1 (I.i)",
+   "quote": "Good morning to the day; and next, my gold:\nOpen the shrine, that I may see my Saint.",
+   "who": "Volpone",
+   "explanation": "The opening lines establish the play's inversion of values. Volpone greets the day and then, in religious language, his gold, which Mosca reveals behind a curtain. The hymn that follows treats wealth as a god, and the whole play tests what such worship does to human relations."
+  },
+  {
+   "ref": "Act I, Scene 1 (I.i)",
+   "quote": "Riches, the dumb God, that giv'st all men tongues;\nThat canst do nought, and yet mak'st men do all things;",
+   "who": "Volpone",
+   "explanation": "A paradox at the heart of the satire: gold is powerless in itself, yet commands speech and action. The lines anticipate the play's world, in which advocates speak, husbands sell wives and fathers disown sons for money."
+  },
+  {
+   "ref": "Act I, Scene 1 (I.iv)",
+   "quote": "What a rare punishment\nIs avarice to itself!",
+   "who": "Volpone",
+   "explanation": "Volpone laughs at Corbaccio, who imagines he will outlive the 'dying' man. The moral is true, but it applies equally to the speaker, whose greed for pleasure will ruin him. The line shows the play's habit of letting characters pronounce judgments on themselves without knowing it."
+  },
+  {
+   "ref": "Act III, Scene 1 (III.i)",
+   "quote": "And change a visor, swifter than a thought!",
+   "who": "Mosca",
+   "explanation": "From Mosca's praise of the true parasite. A visor is a mask, and the line describes Mosca's own art of instant transformation, which is also the actor's art. It prepares for his attempt to replace his master."
+  },
+  {
+   "ref": "Act III, Scene 6 (III.vii)",
+   "quote": "Come, my Celia, let us prove,\nWhile we can, the sports of love,",
+   "who": "Volpone",
+   "explanation": "Volpone's seduction song, adapted from Catullus's poem to Lesbia. The carpe diem argument is beautiful in itself, but in this context it serves lust and deception, and its later lines argue that sin lies only in discovery. Jonson printed the song separately in The Forest (1616)."
+  },
+  {
+   "ref": "Act III, Scene 6 (III.vii)",
+   "quote": "Honour! tut, a breath:\nThere's no such thing, in nature: a mere term\nInvented to awe fools.",
+   "who": "Corvino",
+   "explanation": "The jealous husband who threatened to kill his wife for a glance now dismisses honour entirely because it stands between him and an inheritance. The speech shows how greed empties moral language."
+  },
+  {
+   "ref": "Act IV, Scene 2 (IV.vi)",
+   "quote": "Damn'd deeds are done with greatest confidence.",
+   "who": "Voltore",
+   "explanation": "The advocate ends his false speech against Celia and Bonario with a maxim that condemns himself and his allies. The court accepts it as an argument against the innocent, a sign of how justice can be turned upside down by rhetoric."
+  },
+  {
+   "ref": "Act V, Scene 1 (V.iii)",
+   "quote": "The Fox fares ever best when he is curst.",
+   "who": "Volpone",
+   "explanation": "A proverb Volpone uses to welcome the curses of his victims. It expresses his confidence that their hatred measures his success, but it is spoken just as he gives Mosca the power to destroy him."
+  },
+  {
+   "ref": "Act V, Scene 8 (V.xii)",
+   "quote": "This is call'd mortifying of a Fox.",
+   "who": "Volpone",
+   "explanation": "Volpone's response to his sentence. 'Mortify' means to humble and to subdue the flesh, and was also used of hanging game until tender. His wit survives his ruin, which is one reason audiences find it hard to judge him."
+  },
+  {
+   "ref": "Act V, Scene 8 (V.xii)",
+   "quote": "Mischiefs feed\nLike beasts, till they be fat, and then they bleed.",
+   "who": "First Avocatore",
+   "explanation": "The final couplet of the play proper, linking the beast imagery to the punishment: the vicious fatten themselves like animals until they are slaughtered. It is the court's moral, but the epilogue that follows gives the last word to the Fox."
+  }
+ ],
+ "questions": [
+  {
+   "q": "How does Volpone's opening hymn to gold establish the values of the play's world?",
+   "hint": "Look at the religious vocabulary (shrine, saint, relic) and the reference to the golden age; ask what gold replaces."
+  },
+  {
+   "q": "Is Mosca Volpone's servant, partner or rival? Trace the changes in their relationship.",
+   "hint": "Compare Act I, Mosca's soliloquy in Act III, and the scenes after Volpone hands over the will and keys in Act V."
+  },
+  {
+   "q": "What do the animal names contribute to the play's satire?",
+   "hint": "Consider the beast fable of the fox feigning death, Aesop's crow and cheese, and the 'flesh-fly' and 'tortoise' images."
+  },
+  {
+   "q": "How does the mountebank scene reflect the main plot?",
+   "hint": "Compare Scoto's selling of a false cure with Volpone's selling of false hopes, and note the audience on stage."
+  },
+  {
+   "q": "Are Celia and Bonario dramatically effective, or simply symbols of virtue?",
+   "hint": "Look at Celia's speeches in the seduction scene and Bonario's protest in court; think about why their style differs from the rogues'."
+  },
+  {
+   "q": "What is the function of the Sir Politic Would-be subplot?",
+   "hint": "Consider parody and imitation, Englishness and travel, and the parallel between the tortoise scene and Volpone's unmasking."
+  },
+  {
+   "q": "Why does Volpone stage his own death in Act V when he has already triumphed?",
+   "hint": "Think about his love of performance and laughter, and his soliloquy in Act V, Scene 7."
+  },
+  {
+   "q": "How far does the court represent justice? Compare the two trials.",
+   "hint": "Who is believed in Act IV and why? What finally reveals the truth in Act V?"
+  },
+  {
+   "q": "Is the ending appropriate for a comedy? Use Jonson's own defence in his epistle.",
+   "hint": "Weigh the exactness of the punishments against the absence of marriage or reconciliation; consider the epilogue."
+  },
+  {
+   "q": "In what ways does Volpone observe the 'laws of time, place, persons' claimed in the Prologue?",
+   "hint": "Track the single day from morning to evening, the Venetian settings, and the consistency of each character's humour."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "barish1953",
+   "text": "Barish, Jonas A. 'The Double Plot in Volpone.' Modern Philology 51 (1953): 83–92."
+  },
+  {
+   "id": "barish1960",
+   "text": "Barish, Jonas A. Ben Jonson and the Language of Prose Comedy. Cambridge, MA: Harvard University Press, 1960."
+  },
+  {
+   "id": "barton1984",
+   "text": "Barton, Anne. Ben Jonson, Dramatist. Cambridge: Cambridge University Press, 1984."
+  },
+  {
+   "id": "bevington2012",
+   "text": "Bevington, David, Martin Butler and Ian Donaldson, gen. eds. The Cambridge Edition of the Works of Ben Jonson. 7 vols. Cambridge: Cambridge University Press, 2012."
+  },
+  {
+   "id": "creaser1978",
+   "text": "Creaser, John W., ed. Volpone, or The Fox. By Ben Jonson. London Medieval and Renaissance Series. London: Hodder and Stoughton; New York: New York University Press, 1978."
+  },
+  {
+   "id": "donaldson1971",
+   "text": "Donaldson, Ian. 'Volpone: Quick and Dead.' Essays in Criticism 21 (1971): 121–34."
+  },
+  {
+   "id": "donaldson2011",
+   "text": "Donaldson, Ian. Ben Jonson: A Life. Oxford: Oxford University Press, 2011."
+  },
+  {
+   "id": "duncan1979",
+   "text": "Duncan, Douglas. Ben Jonson and the Lucianic Tradition. Cambridge: Cambridge University Press, 1979."
+  },
+  {
+   "id": "dutton2008",
+   "text": "Dutton, Richard. Ben Jonson, Volpone and the Gunpowder Plot. Cambridge: Cambridge University Press, 2008."
+  },
+  {
+   "id": "eliot1920",
+   "text": "Eliot, T. S. 'Ben Jonson.' In The Sacred Wood: Essays on Poetry and Criticism. London: Methuen, 1920."
+  },
+  {
+   "id": "gibbons1968",
+   "text": "Gibbons, Brian. Jacobean City Comedy: A Study of Satiric Plays by Jonson, Marston and Middleton. London: Rupert Hart-Davis, 1968."
+  },
+  {
+   "id": "greenblatt1976",
+   "text": "Greenblatt, Stephen J. 'The False Ending in Volpone.' Journal of English and Germanic Philology 75 (1976): 90–104."
+  },
+  {
+   "id": "harp2000",
+   "text": "Harp, Richard, and Stanley Stewart, eds. The Cambridge Companion to Ben Jonson. Cambridge: Cambridge University Press, 2000."
+  },
+  {
+   "id": "herford1925",
+   "text": "Herford, C. H., Percy Simpson and Evelyn Simpson, eds. Ben Jonson. 11 vols. Oxford: Clarendon Press, 1925–52."
+  },
+  {
+   "id": "kernan1962",
+   "text": "Kernan, Alvin B., ed. Volpone. By Ben Jonson. The Yale Ben Jonson. New Haven: Yale University Press, 1962."
+  },
+  {
+   "id": "knights1937",
+   "text": "Knights, L. C. Drama and Society in the Age of Jonson. London: Chatto and Windus, 1937."
+  },
+  {
+   "id": "leggatt1981",
+   "text": "Leggatt, Alexander. Ben Jonson: His Vision and His Art. London: Methuen, 1981."
+  },
+  {
+   "id": "levin1943",
+   "text": "Levin, Harry. 'Jonson's Metempsychosis.' Philological Quarterly 22 (1943): 231–39."
+  },
+  {
+   "id": "parker1983",
+   "text": "Parker, R. B., ed. Volpone, or The Fox. By Ben Jonson. The Revels Plays. Manchester: Manchester University Press, 1983; rev. ed. 1999."
+  },
+  {
+   "id": "partridge1958",
+   "text": "Partridge, Edward B. The Broken Compass: A Study of the Major Comedies of Ben Jonson. London: Chatto and Windus, 1958."
+  },
+  {
+   "id": "riggs1989",
+   "text": "Riggs, David. Ben Jonson: A Life. Cambridge, MA: Harvard University Press, 1989."
+  },
+  {
+   "id": "watson1987",
+   "text": "Watson, Robert N. Ben Jonson's Parodic Strategy: Literary Imperialism in the Comedies. Cambridge, MA: Harvard University Press, 1987."
+  }
+ ]
+}

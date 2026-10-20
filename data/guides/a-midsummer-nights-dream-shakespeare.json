@@ -1,0 +1,860 @@
+{
+ "work": "a-midsummer-nights-dream-shakespeare",
+ "title": "A Midsummer Night's Dream",
+ "author": "William Shakespeare",
+ "quoteEdition": "a-midsummer-nights-dream-shakespeare",
+ "unit": "Scene",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "William Shakespeare (1564–1616), actor, sharer and principal playwright of the Lord Chamberlain's Men"
+  },
+  {
+   "label": "Genre",
+   "value": "Romantic comedy, in blank verse, rhymed couplets, songs, short-lined fairy verse and prose"
+  },
+  {
+   "label": "Written",
+   "value": "Probably 1595–96, in the same creative period as Romeo and Juliet and Richard II; listed by Francis Meres in 1598"
+  },
+  {
+   "label": "Early texts",
+   "value": "The First Quarto (Q1, 1600), a reprint falsely dated 1600 but printed in 1619 (Q2), and the First Folio (F, 1623), which was set from Q2 with some theatrical changes"
+  },
+  {
+   "label": "Setting",
+   "value": "Duke Theseus's Athens and a wood a few miles outside it, over a night and two days before and after the Duke's wedding"
+  },
+  {
+   "label": "Sources",
+   "value": "No single source: Ovid's Metamorphoses (Pyramus and Thisbe, in Latin and in Arthur Golding's 1567 translation), Chaucer's Knight's Tale, Plutarch's Life of Theseus, Apuleius's Golden Ass, and English fairy lore about Robin Goodfellow"
+  },
+  {
+   "label": "Plot strands",
+   "value": "Four, woven together: the court (Theseus and Hippolyta), the four young lovers, the fairies (Oberon, Titania and Puck), and the Athenian workmen or 'mechanicals' (Bottom, Quince and their company)"
+  },
+  {
+   "label": "Main characters",
+   "value": "Theseus, Hippolyta, Egeus; Hermia, Lysander, Helena, Demetrius; Oberon, Titania, Puck; Bottom, Quince, Flute, Snout, Snug, Starveling"
+  },
+  {
+   "label": "Key scenes",
+   "value": "Hermia before the Duke (1.1), the casting of Pyramus and Thisbe (1.2), the fairy quarrel and the love-juice (2.1), Bottom's translation (3.1), the lovers' quarrel (3.2), the awakenings and Bottom's dream (4.1), the wedding play and the fairy blessing (5.1)"
+  },
+  {
+   "label": "Quote text",
+   "value": "The modernised text of Project Gutenberg's Complete Works of Shakespeare"
+  }
+ ],
+ "context": [
+  "A Midsummer Night's Dream was probably written in 1595 or 1596, when Shakespeare was in his early thirties and writing for the Lord Chamberlain's Men, the company in which he was an actor and a shareholder. It belongs to the same lyrical phase of his career as Romeo and Juliet, Richard II and Love's Labour's Lost, and it shares with Romeo and Juliet a story of young lovers defying a parent. Francis Meres named it among Shakespeare's comedies in 1598, and the First Quarto of 1600 says on its title page that it had been 'sundry times publickely acted' by the company. The Folio of 1623 reprints the play with changes that seem to reflect stage practice: in its last scene, for example, Egeus takes over the lines of Philostrate, the master of the revels [[foakes1984]] [[holland1994]].",
+  "Because the play ends with a wedding night and a fairy blessing on the marriage beds, many critics have supposed that it was written for an aristocratic wedding at which Queen Elizabeth may have been present. Two weddings are usually proposed: that of William Stanley, Earl of Derby, and Elizabeth Vere in January 1595, and that of Thomas Berkeley and Elizabeth Carey in February 1596. There is no documentary evidence for either, and the title page speaks only of public performance. Most modern editors treat the wedding theory as possible but unproven, and note that the play works perfectly well in an ordinary theatre [[brooks1979]] [[chaudhuri2017]] [[wiles1993]].",
+  "Shakespeare invented the plot himself, but he built it from many pieces. The frame of Theseus, Duke of Athens, and his conquered Amazon bride Hippolyta comes from Chaucer's Knight's Tale, which also gave him rival lovers and a May-morning observance [[benson1987]]; Theseus's past loves, named by Oberon, come from Plutarch's Life of Theseus in Thomas North's translation. The story of Pyramus and Thisbe, which the workmen perform, is in Book 4 of Ovid's Metamorphoses, which Shakespeare knew in Latin and in Arthur Golding's English translation of 1567 [[forey2002]]. Ovid's whole poem, a book of changes of shape, lies behind the play's interest in transformation, and the name Titania is an epithet Ovid gives to Diana, among other goddesses descended from the Titans. Bottom's ass's head may owe something to Apuleius's Golden Ass, and Oberon's name to the romance of Huon of Bordeaux [[bullough1957]] [[bate1993]] [[thompson1978]].",
+  "The fairies combine learned and popular traditions. Puck, or Robin Goodfellow, is a figure of English village belief, a household spirit who spoils the milk and misleads travellers at night; Shakespeare makes him the servant of a fairy king and queen drawn partly from romance and classical myth. His fairies are also unusually small and benign: in much contemporary belief fairies were dangerous, and they stole children, as the quarrel over the Indian boy remembers. Shakespeare's tiny, flower-loving elves had a long influence on later ideas of fairyland [[briggs1959]] [[lamb2000]].",
+  "The title links the play to Midsummer Eve (23 June), a night of bonfires, folk magic and licensed disorder, when maidens were said to dream of their future husbands. Yet the action is explicitly set around May Day: Lysander once met Hermia and Helena 'To do observance to a morn of May', and Theseus supposes the lovers rose early 'to observe / The rite of May'. The title may point less to a date than to the kind of experience the play offers: a midsummer madness, a holiday dream. That festive background is the starting point of one of the most influential readings of Shakespearean comedy [[barber1959]] [[laroque1991]]."
+ ],
+ "plot": [
+  "Theseus, Duke of Athens, is four days from his wedding to Hippolyta, the Amazon queen he has defeated in war. Egeus brings his daughter Hermia before him: she refuses to marry Demetrius, her father's choice, because she loves Lysander. Theseus tells her that by Athenian law she must obey, or die, or become a nun. Hermia and Lysander agree to escape through the wood to his aunt's house beyond the reach of the law. They tell their plan to Hermia's friend Helena, who loves Demetrius, and Helena, hoping for his thanks, tells Demetrius. Meanwhile a group of Athenian workmen, led by Peter Quince, plan to rehearse a play, Pyramus and Thisbe, in the same wood, hoping to perform it at the Duke's wedding. Nick Bottom the weaver is cast as Pyramus.",
+  "The wood is ruled by Oberon and Titania, the king and queen of the fairies, who are quarrelling over a changeling boy; their discord has thrown the seasons into confusion. To punish Titania, Oberon sends his servant Puck for a magic flower whose juice, laid on sleeping eyes, makes the sleeper dote on the first creature seen on waking. Having watched Demetrius spurn Helena, Oberon also tells Puck to anoint the eyes of 'the Athenian'. Puck anoints Lysander by mistake, and Lysander wakes in love with Helena. Puck then gives Bottom an ass's head; his fellows flee, and Titania, under the charm, wakes and falls in love with him.",
+  "Oberon tries to put things right by anointing Demetrius, who wakes in love with Helena too. Now both young men pursue Helena, who thinks they are mocking her, and the two women quarrel bitterly. Oberon has Puck lead the men apart in the dark until all four lovers fall asleep, and Puck cures Lysander's eyes. Oberon, having gained the boy, releases Titania. At dawn Theseus, Hippolyta and Egeus, out hunting, find the sleeping lovers. Lysander loves Hermia again, Demetrius now loves Helena, and Theseus overrules Egeus: the two couples will be married with him that day. Bottom wakes alone and marvels at his dream, then rejoins his friends in Athens.",
+  "After the triple wedding, Theseus chooses the workmen's play for the evening's entertainment against the advice of his master of the revels. Pyramus and Thisbe is performed with a talking Wall, a Moonshine with a lantern and a gentle Lion, while the courtiers mock it. When the newly married couples have gone to bed, the fairies enter the palace to bless the marriages and their children, and Puck asks the audience to forgive the players and to think of the play as a dream."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Act I, Scene 1: Hermia defies the law of Athens",
+   "lines": "Act I, Scene 1 (the whole scene)",
+   "section": 1,
+   "summary": [
+    "Theseus and Hippolyta look forward to their wedding at the new moon, four days away. Theseus reminds her that he won her love with his sword but will wed her 'in another key'. Egeus enters with his daughter Hermia and her two suitors. He has chosen Demetrius for her, but Hermia loves Lysander, and Egeus claims the 'ancient privilege of Athens' to have her put to death if she disobeys. Theseus tells Hermia that her father should be to her 'as a god', and gives her until his wedding day to choose between marriage to Demetrius, death, and a life as a nun. Lysander points out that Demetrius has already courted Helena, who still loves him.",
+    "Left alone, Lysander and Hermia lament that 'The course of true love never did run smooth', and agree to meet the next night in the wood outside the city and flee to Lysander's aunt, beyond the Athenian law. They confide in Helena. Alone, Helena reflects on love's blindness and decides to tell Demetrius of the flight, so as to win at least his company."
+   ],
+   "analysis": [
+    "The first scene sets out the play's problem in the language of law and power. Hermia's desire collides with paternal authority, and the Duke, whose own marriage follows a conquest, upholds that authority. Theseus's image of the daughter as 'a form in wax' imprinted by her father makes the patriarchal claim vivid, and Hermia's answer, 'I would my father look'd but with my eyes', introduces a motif that runs through the whole play: the question of whose eyes see truly. Feminist and historicist critics have stressed that the comedy begins with a threat of death and a conquered queen, and that its happy ending is bought within these structures [[montrose1983]].",
+    "The lovers speak in a stylised, often rhyming verse. Lysander and Hermia's duet on the obstacles to love, and the line-by-line exchange between Hermia and Helena, are deliberately patterned, almost like a duet in an opera. The formality makes the young people hard to tell apart, which is part of the joke: Lysander and Demetrius are equally worthy, as Lysander himself says, and nothing but preference divides them. Helena's soliloquy, 'Love looks not with the eyes, but with the mind', is a small treatise on irrational love that the wood will soon act out [[young1966]]."
+   ],
+   "key": [
+    {
+     "ref": "MND 1.1",
+     "quote": "Hippolyta, I woo’d thee with my sword,\nAnd won thy love doing thee injuries;",
+     "note": "The Duke's marriage begins in conquest: Hippolyta is an Amazon queen he has defeated, a fact the play never lets us quite forget."
+    },
+    {
+     "ref": "MND 1.1",
+     "quote": "I would my father look’d but with my eyes.",
+     "note": "Hermia's reply to Theseus introduces the play's concern with eyes, judgement and the right to choose."
+    },
+    {
+     "ref": "MND 1.1",
+     "quote": "The course of true love never did run smooth.",
+     "note": "Lysander's proverbial line names the comic pattern of obstacles overcome."
+    },
+    {
+     "ref": "MND 1.1",
+     "quote": "Love looks not with the eyes, but with the mind;\nAnd therefore is wing’d Cupid painted blind.",
+     "note": "Helena explains why love is blind; the love-juice will turn her paradox into literal stage action."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Act I, Scene 2: The mechanicals cast their play",
+   "lines": "Act I, Scene 2 (the whole scene)",
+   "section": 2,
+   "summary": [
+    "At Peter Quince's house a group of Athenian craftsmen meet to cast a play for the Duke's wedding night: 'The most lamentable comedy and most cruel death of Pyramus and Thisbe'. Nick Bottom the weaver is to play Pyramus, the lover who kills himself for love, though he would rather play a tyrant and gives a sample of ranting verse. Francis Flute the bellows-mender must play Thisbe, despite his beard coming. Bottom offers to play Thisbe and the lion as well, but Quince persuades him that only he can play the 'sweet-faced' Pyramus. They agree to rehearse in the palace wood by moonlight the next night."
+   ],
+   "analysis": [
+    "The workmen are given prose, the language of ordinary people on Shakespeare's stage, in contrast with the verse of the court and the lovers. Their names come from their trades: a quince is a wedge used in carpentry, a bottom is the core on which a weaver's thread is wound, a flute may be the fluted pipe of a bellows. They are comic in their mistakes of language and their literal-mindedness, but the scene is affectionate as well as funny. These men take theatre seriously, worry about frightening the ladies, and hope to win the Duke's favour. Annabel Patterson has argued that the play gives artisans an unusually sympathetic place, at a time when craftsmen's gatherings could alarm the authorities [[patterson1989]].",
+    "Bottom is already the play's great comic creation: confident, eager to play every part, and at home in any situation. His 'Ercles' vein' parodies the bombastic style of an older generation of drama, and the title of the workmen's play, a 'lamentable comedy' with a 'cruel death', recalls the clumsy mixed genres of earlier Elizabethan plays such as Thomas Preston's Cambises [[brooks1979]]."
+   ],
+   "key": [
+    {
+     "ref": "MND 1.2",
+     "quote": "Marry, our play is The most lamentable comedy and most cruel death of\nPyramus and Thisbe.",
+     "note": "The self-contradictory title is the first joke about genre: tragedy and comedy will indeed meet in this play."
+    },
+    {
+     "ref": "MND 1.2",
+     "quote": "A lover, that kills himself most gallantly for love.",
+     "note": "Quince's summary of Pyramus is also a deflating summary of a tragic love story like Romeo and Juliet."
+    },
+    {
+     "ref": "MND 1.2",
+     "quote": "Nay, faith, let not me play a woman. I have a beard coming.",
+     "note": "A reminder that on Shakespeare's stage all women's parts, including Hermia and Titania, were played by boys."
+    },
+    {
+     "ref": "MND 1.2",
+     "quote": "I will roar you an ’twere any nightingale.",
+     "note": "Bottom's comic confusion of opposites, a roaring lion as gentle as a dove or a nightingale."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act II, Scene 1: The fairy quarrel and the love-juice",
+   "lines": "Act II, Scene 1 (the whole scene)",
+   "section": 3,
+   "summary": [
+    "In the wood a fairy meets Puck, Robin Goodfellow, who describes his mischief among country people. Oberon and Titania enter and quarrel. Each accuses the other of love for Hippolyta or Theseus. Titania describes how their dissension has disordered nature: floods, rotting crops, diseased flocks and seasons that 'alter'. The cause of the quarrel is a little Indian boy, the child of Titania's dead votaress, whom Oberon wants as his page and Titania refuses to give up.",
+    "Oberon sends Puck for the flower 'love-in-idleness', struck once by Cupid's arrow when it missed a 'fair vestal, thronèd by the west'. He plans to put its juice on Titania's eyes so that she will dote on some beast, and to take the boy while she is distracted. Invisible, he watches Demetrius, who has come to the wood in search of Hermia, cruelly reject Helena, who follows him. When Puck returns, Oberon describes Titania's bower ('I know a bank where the wild thyme blows') and tells Puck to anoint the eyes of the disdainful youth in 'Athenian garments'."
+   ],
+   "analysis": [
+    "With this scene we enter what Northrop Frye called the 'green world', the forest or countryside of Shakespeare's comedies where the rules of the city are suspended and the characters are changed before returning to society. The fairy verse, in short rhyming lines, has a quickness that sets it apart from the court [[frye1957]] [[frye1965]]. Yet the wood is not simply a refuge. Titania's great speech on the disordered seasons, which some critics connect with the wet summers of the mid-1590s, shows that fairy discord has real effects on human life: 'We are their parents and original.'",
+    "Oberon's account of the vestal 'thronèd by the west', who passes on 'In maiden meditation, fancy-free', has long been read as a compliment to Elizabeth I, the Virgin Queen. Louis Montrose reads the passage, and the whole play, as a negotiation with the power of a female monarch: Cupid's arrow cannot touch the queen, but its force is redirected into a flower that will subdue Titania and the lovers. The story of the Indian boy, told by Titania with great tenderness, has prompted readings of mothers and children and, more recently, of trade and empire [[montrose1983]] [[hendricks1996]].",
+    "Helena's reversal of Ovid, 'Apollo flies, and Daphne holds the chase', shows the lovers' world turned upside down: here the woman pursues. Her abject image of herself as Demetrius's spaniel is painful, and her protest that 'We cannot fight for love as men may do' is one of the play's sharpest comments on the constraints of gender."
+   ],
+   "key": [
+    {
+     "ref": "MND 2.1",
+     "quote": "I am that merry wanderer of the night.",
+     "note": "Puck introduces himself as the Robin Goodfellow of English folklore."
+    },
+    {
+     "ref": "MND 2.1",
+     "quote": "And this same progeny of evils comes\nFrom our debate, from our dissension;\nWe are their parents and original.",
+     "note": "Titania traces the disorder of nature to the fairy rulers' quarrel."
+    },
+    {
+     "ref": "MND 2.1",
+     "quote": "And the imperial votress passed on,\nIn maiden meditation, fancy-free.",
+     "note": "The vestal immune to Cupid's arrow is usually taken as an allusion to Queen Elizabeth."
+    },
+    {
+     "ref": "MND 2.1",
+     "quote": "But she, being mortal, of that boy did die;\nAnd for her sake do I rear up her boy,\nAnd for her sake I will not part with him.",
+     "note": "Titania's loyalty to her dead friend gives the quarrel a human weight."
+    },
+    {
+     "ref": "MND 2.1",
+     "quote": "We cannot fight for love as men may do.\nWe should be woo’d, and were not made to woo.",
+     "note": "Helena names the double bind of a woman who pursues."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act II, Scene 2: Titania charmed and Lysander mistaken",
+   "lines": "Act II, Scene 2 (the whole scene)",
+   "section": 4,
+   "summary": [
+    "Titania's fairies sing her to sleep with a lullaby against snakes and spiders. Oberon squeezes the flower on her eyelids, wishing that she will wake to 'some vile thing'. Lysander and Hermia, lost in the wood, lie down to sleep; Hermia insists that he lie further off, as modesty requires. Puck finds Lysander, sees his Athenian clothes, and takes him for the disdainful youth, anointing his eyes.",
+    "Demetrius runs past, leaving Helena behind. She finds Lysander and wakes him; he instantly loves her and abandons Hermia, explaining that reason has led him to the worthier maid. Helena thinks he is mocking her and leaves; he follows. Hermia wakes from a nightmare in which a serpent ate her heart while Lysander smiled, finds herself alone, and goes in search of him."
+   ],
+   "analysis": [
+    "The scene shows the love-juice at work and makes its arbitrariness comic. Lysander, who a moment before swore eternal loyalty to Hermia, now claims that 'The will of man is by his reason sway’d', a claim the audience knows to be false; Bottom will later remark that reason and love keep little company. The charm does not create something new so much as expose the changeability of young desire already shown in Act I, where Demetrius moved from Helena to Hermia without any magic at all [[young1966]].",
+    "Hermia's dream of the serpent is the first of the play's many dreams, and it is strikingly accurate: as she sleeps, her lover is in fact abandoning her. Critics interested in dreams in Shakespeare have seen in it an image of fear and desire that the comic plot both reveals and contains [[garber1974]]."
+   ],
+   "key": [
+    {
+     "ref": "MND 2.2",
+     "quote": "Do it for thy true love take;\nLove and languish for his sake.",
+     "note": "Oberon's spell on Titania, in the short trochaic lines used for fairy magic."
+    },
+    {
+     "ref": "MND 2.2",
+     "quote": "Lysander riddles very prettily.",
+     "note": "Hermia's witty refusal to share his bed shows her as more than the play's victim."
+    },
+    {
+     "ref": "MND 2.2",
+     "quote": "Who will not change a raven for a dove?\nThe will of man is by his reason sway’d,",
+     "note": "Lysander rationalises a passion produced by magic; 'raven' mocks the dark-haired Hermia."
+    },
+    {
+     "ref": "MND 2.2",
+     "quote": "Methought a serpent eat my heart away,\nAnd you sat smiling at his cruel prey.",
+     "note": "Hermia's dream tells the truth about what has just happened."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act III, Scene 1: Bottom translated",
+   "lines": "Act III, Scene 1 (the whole scene)",
+   "section": 5,
+   "summary": [
+    "Near the sleeping Titania the workmen meet to rehearse. Bottom raises problems: the ladies will be frightened by Pyramus's sword and by the lion. They agree on a prologue explaining that Pyramus is really Bottom, and that the lion is Snug the joiner; someone must also play Moonshine and someone Wall. Puck watches the rehearsal. When Bottom exits and returns, Puck has given him an ass's head, and his terrified fellows flee. 'Bless thee, Bottom! bless thee! Thou art translated,' cries Quince.",
+    "Bottom, thinking they are trying to frighten him, sings to show he is not afraid. Titania wakes and falls in love with him at first sight. She declares that he shall stay in the wood, promises to purge his 'mortal grossness', and calls four fairies, Peaseblossom, Cobweb, Moth and Mustardseed, to wait on him. Bottom greets each of them with unruffled courtesy, and Titania has him led to her bower."
+   ],
+   "analysis": [
+    "The rehearsal comedy turns on the workmen's anxious literalism. They fear that the audience will be unable to tell fiction from reality, so they want every illusion explained away. Their worry is a comic version of real debates about the theatre's power over its audience, and it prepares for the play's final reflections on imagination [[young1966]]. 'Translated' here means transformed, and Bottom's change is the play's most Ovidian moment: a man takes the head of a beast, as Lucius becomes an ass in Apuleius [[bate1993]].",
+    "The meeting of the Fairy Queen and the ass-headed weaver is the comic centre of the play. Bottom remains entirely himself, polite, practical and hungry, while Titania speaks rapturous verse; the contrast between her poetry and his prose is the joke. Jan Kott read the scene very differently, as an image of dark animal sexuality and of the erotic fantasies released in the night; his reading influenced Peter Brook's famous production of 1970. Most critics find this too bleak, and note that the play gives no sign that the pairing is anything but innocently absurd [[kott1964]].",
+    "Bottom's remark that 'reason and love keep little company together nowadays' sums up the play's view of love more precisely than any of the lovers manage. The fool, here, is the wise man."
+   ],
+   "key": [
+    {
+     "ref": "MND 3.1",
+     "quote": "there is not a\nmore fearful wild-fowl than your lion living",
+     "note": "Bottom's comic mistakes of language: a lion is no 'wild-fowl', and 'fearful' here means frightening."
+    },
+    {
+     "ref": "MND 3.1",
+     "quote": "What hempen homespuns have we swaggering here,",
+     "note": "Puck's contemptuous view of the workmen, dressed in coarse home-made cloth."
+    },
+    {
+     "ref": "MND 3.1",
+     "quote": "Bless thee, Bottom! bless thee! Thou art translated.",
+     "note": "'Translated' means transformed; Bottom's change is a comic metamorphosis in Ovid's manner."
+    },
+    {
+     "ref": "MND 3.1",
+     "quote": "say the truth, reason and love keep little company together nowadays.",
+     "note": "Bottom's homely wisdom states one of the play's central themes."
+    },
+    {
+     "ref": "MND 3.1",
+     "quote": "And I will purge thy mortal grossness so\nThat thou shalt like an airy spirit go.",
+     "note": "Titania's promise sets fairy airiness against the solid flesh of the weaver."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act III, Scene 2: The lovers' night of confusion",
+   "lines": "Act III, Scene 2 (the whole scene)",
+   "section": 6,
+   "summary": [
+    "Puck tells Oberon delightedly that Titania loves an ass. Demetrius enters pursuing Hermia, who accuses him of murdering Lysander and leaves him; he sleeps. Oberon realises Puck's mistake, anoints Demetrius's eyes, and sends Puck to bring Helena. Lysander enters wooing Helena; Demetrius wakes and woos her too. Helena believes both men are mocking her, and that Hermia has joined the plot. She reminds Hermia of their childhood friendship, two girls sewing one flower 'Like to a double cherry'.",
+    "Hermia, bewildered and then furious, decides that Helena has won Lysander with her height, and the quarrel collapses into insults about tall and short. The men go off to fight. Oberon tells Puck to cover the night with fog, lead the rivals astray by imitating their voices, and, when they sleep, put the antidote on Lysander's eyes. Puck leads all four lovers round the wood until they fall asleep exhausted near each other, and cures Lysander, assuring the audience that 'Jack shall have Jill'."
+   ],
+   "analysis": [
+    "This long scene, the longest in the play, is a feat of comic construction. The four lovers are put through every possible combination of desire, and the charm now produces the reverse of Act I: both men love Helena and neither loves Hermia. Puck's comment, 'Lord, what fools these mortals be!', invites the audience to share the fairies' amused detachment, but the suffering of the women is real. Helena's speech on her friendship with Hermia is one of the most moving in the play, and it shows that the night threatens not only romantic bonds but an earlier love between women, which marriage will replace [[garber1974]].",
+    "The quarrel also reveals the lovers more clearly than anywhere else. Hermia, small and dark, and Helena, tall and fair, finally become distinct characters, in a burst of prose-like verse full of physical comedy. The scene's comedy depends on a contrast of levels: the audience and the fairies know what is happening; the lovers do not. When Oberon describes how they will wake to think all this 'a dream and fruitless vision', the play prepares its own transformation from confusion into memory [[young1966]].",
+    "Puck's speech on the ghosts that 'Troop home to churchyards' at dawn, and Oberon's reply that 'we are spirits of another sort', draw a careful line. Shakespeare's fairies are not the damned spirits of the night; they can stay in the morning light, and they are on the side of love and fertility [[briggs1959]]."
+   ],
+   "key": [
+    {
+     "ref": "MND 3.2",
+     "quote": "My mistress with a monster is in love.",
+     "note": "Puck's report begins this scene of comic reversals."
+    },
+    {
+     "ref": "MND 3.2",
+     "quote": "Lord, what fools these mortals be!",
+     "note": "The fairy view of human love: an amused spectator's judgement that the audience is invited to share."
+    },
+    {
+     "ref": "MND 3.2",
+     "quote": "So we grew together,\nLike to a double cherry, seeming parted,\nBut yet a union in partition,",
+     "note": "Helena's image of her childhood friendship with Hermia, now broken by the men's rivalry."
+    },
+    {
+     "ref": "MND 3.2",
+     "quote": "And though she be but little, she is fierce.",
+     "note": "The friendship collapses into comedy about height."
+    },
+    {
+     "ref": "MND 3.2",
+     "quote": "Jack shall have Jill;\nNought shall go ill;",
+     "note": "Puck promises the comic ending in the language of the country proverb."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act IV, Scene 1: Awakenings and Bottom's dream",
+   "lines": "Act IV, Scene 1 (the whole scene)",
+   "section": 7,
+   "summary": [
+    "Titania caresses Bottom, who asks the fairies to scratch his head and wants hay to eat; they fall asleep in each other's arms. Oberon tells Puck that he has obtained the changeling boy and begins to pity Titania. He releases her from the charm, and she wakes to loathe the ass she loved. Puck removes Bottom's ass's head. Reconciled, the fairy king and queen dance and leave as the morning lark sings.",
+    "Theseus and Hippolyta arrive with their hounds for a May-morning hunt and find the four lovers asleep. Woken by horns, the young people kneel. Lysander confesses the elopement and Egeus demands the law, but Demetrius explains that his love for Hermia has melted and that he loves Helena, to whom he was first betrothed. Theseus overrules Egeus and declares that both couples shall be married with him. The dazed lovers follow him to the temple, recounting their dreams. Bottom wakes alone and tries, and fails, to describe his 'most rare vision'."
+   ],
+   "analysis": [
+    "The scene marks the turn from night to day and from the wood back towards the city, the movement Frye described in the green-world pattern. The hunting music of Theseus's hounds, 'So musical a discord, such sweet thunder' in Hippolyta's phrase, is an image of the harmony the comedy now achieves out of conflict. Theseus's overruling of Egeus is decisive: the law that threatened Hermia with death in Act I is simply set aside. Many critics have noticed that Demetrius alone is never released from the charm, so that one of the four marriages rests on magic, though the play suggests that it restores his first and 'natural' love [[frye1957]] [[barber1959]].",
+    "The lovers' words on waking ('Methinks I see these things with parted eye, / When everything seems double') hold together dream and waking, error and truth. Bottom's speech is the most famous comic soliloquy in the play. Unable to describe his experience, he garbles a passage of St Paul (1 Corinthians 2:9) about the hidden wisdom of God, mixing up the senses: 'The eye of man hath not heard'. The joke is at Bottom's expense, but it also gives the fool a glimpse of a mystery beyond words. The pun on his name, a dream that 'hath no bottom', suggests a depth that cannot be measured [[garber1974]] [[young1966]]."
+   ],
+   "key": [
+    {
+     "ref": "MND 4.1",
+     "quote": "Methought I was enamour’d of an ass.",
+     "note": "Titania's waking line turns the night into a dream; the fairy marriage is restored."
+    },
+    {
+     "ref": "MND 4.1",
+     "quote": "So musical a discord, such sweet thunder.",
+     "note": "Hippolyta's paradox about the hounds anticipates the 'concord of this discord' of Act V."
+    },
+    {
+     "ref": "MND 4.1",
+     "quote": "Egeus, I will overbear your will;",
+     "note": "The Duke sets aside the law and the father: comedy's resolution depends on authority changing its mind."
+    },
+    {
+     "ref": "MND 4.1",
+     "quote": "And I have found Demetrius like a jewel,\nMine own, and not mine own.",
+     "note": "Helena's lover is hers, yet won by chance, like found treasure."
+    },
+    {
+     "ref": "MND 4.1",
+     "quote": "it shall be\ncalled ‘Bottom’s Dream’, because it hath no bottom",
+     "note": "Bottom's pun on his own name gives his dream a mysterious depth."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act IV, Scene 2: Bottom returns to his fellows",
+   "lines": "Act IV, Scene 2 (the whole scene)",
+   "section": 8,
+   "summary": [
+    "In Athens the workmen despair: without Bottom, the only man fit to play Pyramus, their play cannot go on. Snug brings news that the Duke and two other couples have been married. Bottom arrives, promises to tell them wonders but then refuses to tell them anything, and urges them to get ready, for their play has been 'preferred' for performance."
+   ],
+   "analysis": [
+    "This short prose scene restores Bottom to the ordinary world. His friends' affection for him is touching, and Flute's reckoning of the 'sixpence a day' pension Bottom has lost shows the hopes of reward that ride on the performance. Bottom's refusal to tell his story keeps the wood's experience private and unspeakable, as in his soliloquy. His practical instructions, clean linen and no onions or garlic, return us to the solid comedy of the theatre [[patterson1989]]."
+   ],
+   "key": [
+    {
+     "ref": "MND 4.2",
+     "quote": "A paramour is, God bless us, a thing of naught.",
+     "note": "Flute corrects Quince, who has said 'paramour' (lover) for 'paragon': an unintended joke after Bottom's night with the Fairy Queen."
+    },
+    {
+     "ref": "MND 4.2",
+     "quote": "Bottom! O most courageous day! O most happy hour!",
+     "note": "Quince's delight at Bottom's return; 'courageous' is another happy misuse of words."
+    },
+    {
+     "ref": "MND 4.2",
+     "quote": "Masters, I am to discourse wonders: but ask me not what;",
+     "note": "Bottom cannot tell what he has seen; the wonder remains unspoken."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act V, Scene 1: Pyramus and Thisbe, the fairy blessing and the Epilogue",
+   "lines": "Act V, Scene 1 (the whole scene, with Puck's Epilogue)",
+   "section": 9,
+   "summary": [
+    "After the weddings, Hippolyta remarks on the strangeness of the lovers' story. Theseus dismisses it as the product of imagination, which the lunatic, the lover and the poet share; Hippolyta replies that the story, told consistently by all four, 'grows to something of great constancy'. Choosing from a list of entertainments, Theseus picks the workmen's 'tedious brief scene' of Pyramus and Thisbe, although Philostrate warns that it is worthless, because 'never anything can be amiss / When simpleness and duty tender it.'",
+    "Quince delivers a prologue so badly punctuated that it says the opposite of what he means, then explains the whole story in advance. Snout as Wall, Snug as Lion and Starveling as Moonshine explain who they are; Pyramus and Thisbe speak through Wall's chink, the lion frightens Thisbe and mauls her cloak, and Pyramus, finding it, stabs himself in a flood of alliteration. Thisbe returns, laments in ludicrous rhymes and kills herself. The courtiers comment wittily throughout. The workmen end with a rustic dance, a Bergomask, and Theseus sends the couples to bed as midnight strikes.",
+    "Puck enters with a broom to sweep the house. Oberon, Titania and their train sing and dance a blessing on the three marriages and the children to be born of them, promising that they will be free of any birth defect. Alone, Puck speaks the Epilogue: if the 'shadows' have offended, the audience should think it has only slept and dreamed, and he asks for their applause."
+   ],
+   "analysis": [
+    "Theseus's speech on 'The lunatic, the lover, and the poet' is the play's most famous statement about imagination. It is ironic in several ways. The Duke, himself a figure out of 'antique fables', dismisses the fairies whom the audience has seen; and in mocking the poet's 'fine frenzy' he gives the finest account in the play of how poetry 'gives to airy nothing / A local habitation and a name'. Hippolyta's reply suggests that a shared experience may be more than fancy. Critics have long debated whether the play endorses Theseus's reason or Hippolyta's openness to wonder [[dent1964]] [[young1966]].",
+    "Pyramus and Thisbe is a parody on several levels. It mocks old-fashioned theatrical verse, with its heavy alliteration, padded rhymes and ranting apostrophes; it mocks the Ovidian love-tragedy, the kind of story the young lovers might have lived out if the wood had not saved them; and it echoes Romeo and Juliet, with its feuding parents, wall and double suicide. The players' confusion of fiction and reality, explaining that the lion is only Snug, comically exposes the conventions on which all theatre depends. The courtiers' jokes, and Hippolyta's 'This is the silliest stuff that ever I heard', invite the audience to laugh, but Theseus's reply, that 'The best in this kind are but shadows', applies to Shakespeare's actors as well [[bate1993]] [[young1966]].",
+    "The ending returns to the fairies, and so to the world the Duke has just dismissed. Their blessing, like an epithalamium or wedding song, turns the comedy towards fertility and the next generation; for Barber it completes a festive movement 'through release to clarification', in which holiday misrule ends in renewed social order. Montrose notes that the blessing consecrates patriarchal marriage and the begetting of heirs, the very order that a virgin queen could not provide. Puck's Epilogue asks the audience to treat the whole play as a dream, and to give their hands in applause; the 'serpent's tongue' he hopes to escape is the hissing of a displeased audience [[barber1959]] [[montrose1983]] [[chaudhuri2017]]."
+   ],
+   "key": [
+    {
+     "ref": "MND 5.1",
+     "quote": "The lunatic, the lover, and the poet\nAre of imagination all compact:",
+     "note": "Theseus groups the poet with the madman and the lover; the play itself complicates his dismissal."
+    },
+    {
+     "ref": "MND 5.1",
+     "quote": "And as imagination bodies forth\nThe forms of things unknown, the poet’s pen\nTurns them to shapes, and gives to airy nothing\nA local habitation and a name.",
+     "note": "A sceptic's account of poetry that is itself a fine piece of poetry."
+    },
+    {
+     "ref": "MND 5.1",
+     "quote": "And grows to something of great constancy;",
+     "note": "Hippolyta's reply allows that the shared story may be more than illusion."
+    },
+    {
+     "ref": "MND 5.1",
+     "quote": "Whereat with blade, with bloody blameful blade,\nHe bravely broach’d his boiling bloody breast;",
+     "note": "The Prologue's alliteration parodies the style of older English verse drama."
+    },
+    {
+     "ref": "MND 5.1",
+     "quote": "The best in this kind are but shadows; and the worst are no worse, if\nimagination amend them.",
+     "note": "Theseus's generous view of actors, which applies to Shakespeare's company too."
+    },
+    {
+     "ref": "MND 5.1",
+     "quote": "If we shadows have offended,\nThink but this, and all is mended,",
+     "note": "Puck's Epilogue: the actors are 'shadows', and the play itself a dream."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Theseus",
+   "side": "Court",
+   "text": "Duke of Athens, the hero of Greek legend who killed the Minotaur and defeated the Amazons. In the play he is a dignified, rational ruler who upholds the harsh Athenian law in Act I, then sets it aside in Act IV. He is sceptical of the lovers' story and of poetry, yet he is generous to the workmen's play. Oberon's list of his past conquests reminds us of a darker legendary career."
+  },
+  {
+   "name": "Hippolyta",
+   "side": "Court",
+   "text": "Queen of the Amazons, defeated by Theseus and now to be his wife. She says little, but what she says is pointed: she answers Theseus's dismissal of the lovers' story, and mocks the workmen's play. Productions differ on whether she is a willing bride or a captive."
+  },
+  {
+   "name": "Egeus",
+   "side": "Court",
+   "text": "Hermia's father, who demands that she marry Demetrius or die according to the law. He is overruled by Theseus and disappears from the action; in the Folio text he reappears in the last scene, taking Philostrate's lines."
+  },
+  {
+   "name": "Philostrate",
+   "side": "Court",
+   "text": "Theseus's master of the revels, who organises the wedding entertainments and advises against the workmen's play."
+  },
+  {
+   "name": "Hermia",
+   "side": "Lovers",
+   "text": "Egeus's daughter, small and dark, who defies her father and the law for Lysander. She is spirited and witty, insists on modesty in the wood, and, when both men turn against her, is bewildered and then fiercely angry."
+  },
+  {
+   "name": "Lysander",
+   "side": "Lovers",
+   "text": "Hermia's beloved, who plans their escape. Anointed by mistake, he abandons her for Helena and insults her cruelly, until the antidote restores him."
+  },
+  {
+   "name": "Helena",
+   "side": "Lovers",
+   "text": "Tall and fair, Hermia's childhood friend, who loves Demetrius despite his scorn. She betrays the lovers' flight to win his company. When both men suddenly woo her she believes it a cruel joke; her speech on friendship is among the most moving in the play."
+  },
+  {
+   "name": "Demetrius",
+   "side": "Lovers",
+   "text": "Egeus's choice for Hermia, who once courted Helena and abandoned her. Anointed by Oberon, he returns to Helena, and he is the only lover who remains under the charm at the end."
+  },
+  {
+   "name": "Oberon",
+   "side": "Fairies",
+   "text": "King of the fairies. He quarrels with Titania over the changeling boy and punishes her with the love-juice, but he also takes pity on Helena and ensures that the lovers are rightly paired. At the end he blesses the marriages."
+  },
+  {
+   "name": "Titania",
+   "side": "Fairies",
+   "text": "Queen of the fairies, who refuses to give up the son of her dead votaress. Charmed by Oberon, she dotes on the ass-headed Bottom. Her speech on the disordered seasons is one of the play's great passages of verse."
+  },
+  {
+   "name": "Puck",
+   "side": "Fairies",
+   "text": "Robin Goodfellow, the mischievous spirit of English folklore, Oberon's servant and jester. His mistake with the love-juice drives the lovers' plot, and he enjoys the chaos. He speaks the Epilogue."
+  },
+  {
+   "name": "Peaseblossom, Cobweb, Moth and Mustardseed",
+   "side": "Fairies",
+   "text": "Titania's tiny attendants, who wait on Bottom. Their names come from the small things of the garden and the kitchen."
+  },
+  {
+   "name": "Nick Bottom",
+   "side": "Mechanicals",
+   "text": "A weaver, the star of the workmen's company, who wants to play every part. Transformed with an ass's head, he is adored by the Fairy Queen and remains completely himself. His confident, kindly absurdity and his speech on his 'dream' make him one of Shakespeare's greatest comic characters."
+  },
+  {
+   "name": "Peter Quince",
+   "side": "Mechanicals",
+   "text": "A carpenter, the organiser and author of the workmen's play, who speaks its disastrous Prologue."
+  },
+  {
+   "name": "Francis Flute",
+   "side": "Mechanicals",
+   "text": "A bellows-mender, who reluctantly plays Thisbe."
+  },
+  {
+   "name": "Snout, Snug and Starveling",
+   "side": "Mechanicals",
+   "text": "Tom Snout the tinker plays Wall, Snug the joiner plays Lion, and Robin Starveling the tailor plays Moonshine, each explaining his part to the audience."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Love's irrationality",
+   "text": [
+    "The play treats love as a force that does not follow reason or merit. Helena says in the first scene that love 'looks not with the eyes, but with the mind', and the love-juice turns this into a mechanism: one drop and a lover's affections change completely. The young men's passions shift arbitrarily, and Titania loves an ass. The play laughs at this but does not condemn it; it suggests that all lovers are a little mad, and that the happy ending depends on chance and on magic as much as on choice [[young1966]].",
+    "Bottom's comment that reason and love keep little company sums up the theme, and Theseus's grouping of 'The lunatic, the lover, and the poet' in Act V extends it to imagination in general."
+   ]
+  },
+  {
+   "title": "Authority, law and gender",
+   "text": [
+    "The comedy begins with a father's power of life and death over his daughter and a duke's marriage to a conquered queen. In the wood, Oberon asserts his authority over Titania by humiliating her, and the women are the chief sufferers of the night's confusion. The ending restores order through marriage, under the rule of husbands and the Duke. Feminist and historicist critics have explored how the play both exposes and confirms this patriarchal order, especially in a kingdom ruled by an unmarried queen [[montrose1983]] [[montrose1996]]."
+   ]
+  },
+  {
+   "title": "Dreams and imagination",
+   "text": [
+    "Dreams run through the play: Hermia's nightmare, Titania's 'visions', the lovers' sense on waking that everything seems double, and Bottom's dream that has no bottom. The play's title and its Epilogue invite us to see the whole performance as a dream. Theseus distrusts imagination, Hippolyta finds constancy in it, and the workmen fear it so much that they explain every illusion away. The play asks what kind of truth fiction can hold [[garber1974]] [[dent1964]]."
+   ]
+  },
+  {
+   "title": "Transformation",
+   "text": [
+    "Like Ovid's Metamorphoses, which it draws on, the play is full of changes of shape and feeling: Bottom 'translated' into an ass, the lovers' sudden changes of heart, the seasons altered by the fairies' quarrel, the night turned into a dream. Some transformations are temporary and undone; others, like Demetrius's restored love for Helena, last. The play makes metamorphosis a figure for love itself and for the transforming power of theatre [[bate1993]]."
+   ]
+  },
+  {
+   "title": "Theatre and illusion",
+   "text": [
+    "A play about the making of a play, the Dream shows the mechanicals' rehearsals and performance, and the court's response, while the fairies act as invisible stage managers of the lovers' plot. The workmen's anxious literalism, explaining that the lion is only Snug, exposes the conventions on which every performance depends. Theseus's remark that the best actors 'are but shadows', and Puck's Epilogue to 'we shadows', ask the real audience to be as generous as the Duke [[young1966]]."
+   ]
+  },
+  {
+   "title": "Festivity and order",
+   "text": [
+    "The play draws on the customs of May Day and Midsummer Eve, holidays of release from everyday rules. Its movement from court to wood and back, from law to licence and then to marriage, follows the pattern of festive misrule. In Barber's account the holiday does not overthrow order but renews it, allowing the characters to pass 'through release to clarification' [[barber1959]] [[laroque1991]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Eyes and seeing",
+   "text": "From Hermia's wish that her father could see with her eyes to the love-juice laid on sleeping eyelids, the play keeps returning to vision. Love changes what the eyes see, and the antidote restores 'wonted sight'."
+  },
+  {
+   "title": "Sleep and waking",
+   "text": "Every major change in the wood happens to sleepers. Characters fall asleep in one state and wake in another, and on waking they cannot be sure what was real."
+  },
+  {
+   "title": "Contrasting kinds of verse and prose",
+   "text": "Each group has its own language: the dignified blank verse of the court, the patterned rhymes of the lovers, the short rhyming lines of the fairies, and the prose of the workmen, whose own play is in comically bad verse."
+  },
+  {
+   "title": "Paired opposites",
+   "text": "The play is full of paradoxes: 'musical a discord', 'hot ice and wondrous strange snow', 'tedious brief', 'very tragical mirth'. They point to its larger aim of making a concord out of discord."
+  },
+  {
+   "title": "The changeling",
+   "text": "The Indian boy never speaks or appears in the text's stage directions, but the quarrel over him sets the fairy plot in motion and ties the fairies to questions of motherhood, possession and the wider world."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The moon",
+   "text": "The moon presides over the play: the wedding is timed by it, Hermia is threatened with chanting to the 'cold fruitless moon' as a nun, the fairies revel by its light, and the workmen bring it on stage as a man with a lantern. It stands for chastity, change and the night world of imagination."
+  },
+  {
+   "title": "The wood",
+   "text": "Outside the city and its laws, the wood is the place of transformation, confusion and release, Frye's 'green world'. It is also a place of danger, where Demetrius threatens Helena and Hermia dreams of a serpent."
+  },
+  {
+   "title": "Love-in-idleness",
+   "text": "The pansy turned purple by Cupid's misdirected arrow embodies the arbitrary power of love. Its antidote, 'Dian's bud', represents chastity restoring clear sight."
+  },
+  {
+   "title": "The ass's head",
+   "text": "Bottom's head is the visible sign of folly and of human animality, but he wears it with dignity. The image plays on the proverb of the man who makes an ass of himself, and on the figure of Lucius in Apuleius."
+  },
+  {
+   "title": "The wall",
+   "text": "In Pyramus and Thisbe a man playing Wall separates the lovers, a comic image of the obstacles, especially parents, that divide lovers in the main plot. Bottom's 'the wall is down that parted their fathers' completes the joke."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Festive comedy: holiday and social order",
+   "text": [
+    "C. L. Barber's Shakespeare's Festive Comedy (1959) connected the play with the customs of Elizabethan holidays, especially May games and Midsummer Eve. He argued that comedy, like festival, moves 'through release to clarification': the characters are freed from everyday restraints, and the play then puts them back into a renewed social order with a clearer understanding of their own desires. The approach has been developed by François Laroque and others, who show how closely the play's time and imagery follow the festive calendar [[barber1959]] [[laroque1991]].",
+    "Critics have questioned whether festival really reinforces order, or whether it can also contest it. Later historicist readings ask whose interests the festive pattern serves, and point to the hierarchies the ending confirms [[montrose1996]]."
+   ],
+   "cite": [
+    "barber1959",
+    "laroque1991",
+    "montrose1996"
+   ]
+  },
+  {
+   "title": "Frye's green world",
+   "text": [
+    "Northrop Frye identified a recurring structure in Shakespearean comedy: the action begins in a normal world of law and constraint, moves into a 'green world' such as a forest, where characters are transformed, and returns to the normal world with its conflicts resolved. A Midsummer Night's Dream is one of his central examples. The idea helps students see the shape of the play, from Athens to the wood and back [[frye1957]] [[frye1965]].",
+    "Critics have since complicated the picture by pointing out that the wood is not a simple place of freedom: it has its own ruler, its own quarrels and its own cruelties."
+   ],
+   "cite": [
+    "frye1957",
+    "frye1965"
+   ]
+  },
+  {
+   "title": "Montrose: Elizabeth and the shaping fantasies",
+   "text": [
+    "Louis Montrose's essay 'Shaping Fantasies' (1983) read the play in the context of the cult of Elizabeth I, the Virgin Queen. He argued that it stages male fantasies about female power: the Amazon is defeated and wed, Titania is humiliated and made to give up the boy, and Cupid's arrow, which cannot touch the imperial votaress, is redirected to control other women. For Montrose the play both pays tribute to the queen and contains her power within a patriarchal order of marriage and inheritance [[montrose1983]] [[montrose1996]].",
+    "His essay became a landmark of New Historicist criticism, and it shaped later feminist readings of the play."
+   ],
+   "cite": [
+    "montrose1983",
+    "montrose1996"
+   ]
+  },
+  {
+   "title": "Kott and the dark Dream",
+   "text": [
+    "The Polish critic Jan Kott, in Shakespeare Our Contemporary (English translation 1964), rejected the Victorian image of a pretty fairy play. He read it as the most erotic of Shakespeare's plays, full of animal sexuality, violence and nightmare, and saw Titania's night with Bottom as an image of brutal desire. His essay influenced Peter Brook's 1970 production for the Royal Shakespeare Company, which staged the play in a white box with acrobatics [[kott1964]].",
+    "Many scholars think Kott overstates the darkness and ignores the comedy, but his reading made later directors and critics take the play's threats and cruelties seriously."
+   ],
+   "cite": [
+    "kott1964"
+   ]
+  },
+  {
+   "title": "Theseus and imagination",
+   "text": [
+    "Is Theseus the voice of the play's wisdom or its target? Some critics take his speech on the lunatic, the lover and the poet as a reasonable account of the power and danger of imagination. Others point out that the audience has seen the fairies he denies, that his own story belongs to legend, and that Hippolyta's reply allows more truth to the lovers' experience. The debate turns on how far the play is a defence of poetry and theatre [[dent1964]] [[young1966]]."
+   ],
+   "cite": [
+    "dent1964",
+    "young1966"
+   ]
+  },
+  {
+   "title": "Fairies, folklore and popular culture",
+   "text": [
+    "Shakespeare's fairies blend learned sources with English rural belief. K. M. Briggs showed how much the Robin Goodfellow of the play owes to popular tradition, and how Shakespeare made the fairies smaller and kinder than they had been. Mary Ellen Lamb has argued that fairy lore belonged to the culture of servants and the lower classes, and that the play brings it under the control of a court and a learned author [[briggs1959]] [[lamb2000]]."
+   ],
+   "cite": [
+    "briggs1959",
+    "lamb2000"
+   ]
+  },
+  {
+   "title": "The Indian boy, race and empire",
+   "text": [
+    "The changeling child of an Indian votaress has drawn increasing attention. Margo Hendricks has read the 'spicèd Indian air' and the trade imagery of Titania's speech in relation to early modern ideas of race and of England's growing interest in Eastern trade, arguing that the fairy world is shaped by a fantasy of empire [[hendricks1996]].",
+    "Other readers emphasise the friendship between Titania and the boy's mother, and see the quarrel as a struggle between female bonds and male possession [[montrose1983]]."
+   ],
+   "cite": [
+    "hendricks1996",
+    "montrose1983"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "MND 1.1",
+   "quote": "The course of true love never did run smooth.",
+   "who": "Lysander",
+   "explanation": "Lysander, comforting Hermia after Theseus's judgement, states the comic principle that lovers must overcome obstacles. The play will test it on all four lovers."
+  },
+  {
+   "ref": "MND 1.1",
+   "quote": "Love looks not with the eyes, but with the mind;\nAnd therefore is wing’d Cupid painted blind.",
+   "who": "Helena",
+   "explanation": "Alone, Helena reflects on why Demetrius prefers Hermia. Love judges by fancy, not sight; the love-juice will literally turn this idea into action."
+  },
+  {
+   "ref": "MND 2.1",
+   "quote": "And this same progeny of evils comes\nFrom our debate, from our dissension;\nWe are their parents and original.",
+   "who": "Titania",
+   "explanation": "Titania blames the disorder of the seasons on her quarrel with Oberon, linking the fairy rulers to the natural world and its harvests."
+  },
+  {
+   "ref": "MND 2.1",
+   "quote": "And the imperial votress passed on,\nIn maiden meditation, fancy-free.",
+   "who": "Oberon",
+   "explanation": "Oberon describes the vestal whom Cupid's arrow could not touch. The passage is usually read as a compliment to Queen Elizabeth."
+  },
+  {
+   "ref": "MND 3.1",
+   "quote": "Bless thee, Bottom! bless thee! Thou art translated.",
+   "who": "Quince",
+   "explanation": "Seeing Bottom with the ass's head, Quince uses 'translated' in its old sense of transformed. The metamorphosis is the comic centre of the play."
+  },
+  {
+   "ref": "MND 3.2",
+   "quote": "Lord, what fools these mortals be!",
+   "who": "Puck",
+   "explanation": "Puck, watching the lovers, sums up the fairies' amused view of human passion, which the audience is invited to share."
+  },
+  {
+   "ref": "MND 3.2",
+   "quote": "So we grew together,\nLike to a double cherry, seeming parted,\nBut yet a union in partition,",
+   "who": "Helena",
+   "explanation": "Believing Hermia has joined the men in mocking her, Helena recalls their childhood friendship. The image shows what the night's rivalries threaten to destroy."
+  },
+  {
+   "ref": "MND 4.1",
+   "quote": "it shall be\ncalled ‘Bottom’s Dream’, because it hath no bottom",
+   "who": "Bottom",
+   "explanation": "Waking alone, Bottom cannot describe his experience. His pun on his own name suggests a depth in the dream that he can feel but not express."
+  },
+  {
+   "ref": "MND 5.1",
+   "quote": "The lunatic, the lover, and the poet\nAre of imagination all compact:",
+   "who": "Theseus",
+   "explanation": "Theseus dismisses the lovers' story as imagination, the faculty that madmen, lovers and poets share. The irony is that his speech is itself great poetry."
+  },
+  {
+   "ref": "MND 5.1",
+   "quote": "If we shadows have offended,\nThink but this, and all is mended,",
+   "who": "Puck",
+   "explanation": "The opening of the Epilogue. Puck calls the actors 'shadows' and invites the audience to treat the play as a dream, and to forgive it with their applause."
+  }
+ ],
+ "questions": [
+  {
+   "q": "How does the first scene establish the conflict between desire and authority, and how is that conflict resolved in Act IV?",
+   "hint": "Look at Egeus's appeal to the law, Theseus's image of the father as a god, and his decision to 'overbear' Egeus's will."
+  },
+  {
+   "q": "What are the four plot strands of the play, and how does Shakespeare connect them?",
+   "hint": "Think about the wedding as a common occasion, the wood as a common place, Puck as a link, and Bottom's meeting with Titania."
+  },
+  {
+   "q": "How does the play use the contrast between Athens and the wood? Is the wood simply a place of freedom?",
+   "hint": "Consider Frye's 'green world', but also the fairies' quarrel, Oberon's power and the dangers the lovers meet."
+  },
+  {
+   "q": "Is the love-juice the cause of the lovers' confusion, or only an image of something already true about them?",
+   "hint": "Compare Demetrius's change of heart before the play begins with Lysander's after Puck's mistake, and consider Helena's speech on love's blindness."
+  },
+  {
+   "q": "How do the two women, Hermia and Helena, respond to the night in the wood? What does the quarrel scene reveal about their friendship?",
+   "hint": "Look at Helena's 'double cherry' speech and the insults about height."
+  },
+  {
+   "q": "What kind of character is Bottom, and why might the play give the fool a 'most rare vision'?",
+   "hint": "Consider his behaviour with Titania, his garbled echo of St Paul, and his refusal to tell his friends what happened."
+  },
+  {
+   "q": "In what ways is Pyramus and Thisbe a parody, and of what?",
+   "hint": "Think about its verse style, its Ovidian story, its likeness to Romeo and Juliet, and the workmen's ideas about illusion."
+  },
+  {
+   "q": "Compare Theseus's and Hippolyta's views of the lovers' story at the start of Act V. Which does the play seem to support?",
+   "hint": "Remember that the audience has seen the fairies, and look at Hippolyta's phrase 'something of great constancy'."
+  },
+  {
+   "q": "How have critics read the play in relation to Queen Elizabeth and to the power of women?",
+   "hint": "Consider the 'imperial votress', the conquered Amazon, Titania's humiliation, and Montrose's argument."
+  },
+  {
+   "q": "Why does the play end with the fairies and with Puck's Epilogue rather than with the court?",
+   "hint": "Think about the blessing on the marriages, the return of the world Theseus denied, and the idea of the play as a dream."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "barber1959",
+   "text": "Barber, C. L. Shakespeare's Festive Comedy: A Study of Dramatic Form and Its Relation to Social Custom. Princeton: Princeton University Press, 1959."
+  },
+  {
+   "id": "bate1993",
+   "text": "Bate, Jonathan. Shakespeare and Ovid. Oxford: Clarendon Press, 1993."
+  },
+  {
+   "id": "benson1987",
+   "text": "Benson, Larry D., gen. ed. The Riverside Chaucer. 3rd edn. Boston: Houghton Mifflin, 1987."
+  },
+  {
+   "id": "briggs1959",
+   "text": "Briggs, K. M. The Anatomy of Puck: An Examination of Fairy Beliefs among Shakespeare's Contemporaries and Successors. London: Routledge and Kegan Paul, 1959."
+  },
+  {
+   "id": "brooks1979",
+   "text": "Brooks, Harold F., ed. A Midsummer Night's Dream. By William Shakespeare. The Arden Shakespeare, Second Series. London: Methuen, 1979."
+  },
+  {
+   "id": "bullough1957",
+   "text": "Bullough, Geoffrey, ed. Narrative and Dramatic Sources of Shakespeare. Vol. 1: Early Comedies, Poems, Romeo and Juliet. London: Routledge and Kegan Paul; New York: Columbia University Press, 1957."
+  },
+  {
+   "id": "chaudhuri2017",
+   "text": "Chaudhuri, Sukanta, ed. A Midsummer Night's Dream. By William Shakespeare. The Arden Shakespeare, Third Series. London: Bloomsbury, 2017."
+  },
+  {
+   "id": "dent1964",
+   "text": "Dent, R. W. 'Imagination in A Midsummer Night's Dream'. Shakespeare Quarterly 15.2 (1964): 115–29."
+  },
+  {
+   "id": "foakes1984",
+   "text": "Foakes, R. A., ed. A Midsummer Night's Dream. By William Shakespeare. The New Cambridge Shakespeare. Cambridge: Cambridge University Press, 1984."
+  },
+  {
+   "id": "forey2002",
+   "text": "Forey, Madeleine, ed. Ovid's Metamorphoses. Translated by Arthur Golding. London: Penguin, 2002."
+  },
+  {
+   "id": "frye1957",
+   "text": "Frye, Northrop. Anatomy of Criticism: Four Essays. Princeton: Princeton University Press, 1957."
+  },
+  {
+   "id": "frye1965",
+   "text": "Frye, Northrop. A Natural Perspective: The Development of Shakespearean Comedy and Romance. New York: Columbia University Press, 1965."
+  },
+  {
+   "id": "garber1974",
+   "text": "Garber, Marjorie B. Dream in Shakespeare: From Metaphor to Metamorphosis. New Haven: Yale University Press, 1974."
+  },
+  {
+   "id": "hendricks1996",
+   "text": "Hendricks, Margo. '“Obscured by dreams”: Race, Empire, and Shakespeare's A Midsummer Night's Dream'. Shakespeare Quarterly 47.1 (1996): 37–60."
+  },
+  {
+   "id": "holland1994",
+   "text": "Holland, Peter, ed. A Midsummer Night's Dream. By William Shakespeare. The Oxford Shakespeare. Oxford: Clarendon Press, 1994."
+  },
+  {
+   "id": "kott1964",
+   "text": "Kott, Jan. Shakespeare Our Contemporary. Translated by Bolesław Taborski. Garden City, NY: Doubleday, 1964."
+  },
+  {
+   "id": "lamb2000",
+   "text": "Lamb, Mary Ellen. 'Taken by the Fairies: Fairy Practices and the Production of Popular Culture in A Midsummer Night's Dream'. Shakespeare Quarterly 51.3 (2000): 277–312."
+  },
+  {
+   "id": "laroque1991",
+   "text": "Laroque, François. Shakespeare's Festive World: Elizabethan Seasonal Entertainment and the Professional Stage. Translated by Janet Lloyd. Cambridge: Cambridge University Press, 1991."
+  },
+  {
+   "id": "montrose1983",
+   "text": "Montrose, Louis Adrian. '“Shaping Fantasies”: Figurations of Gender and Power in Elizabethan Culture'. Representations 2 (1983): 61–94."
+  },
+  {
+   "id": "montrose1996",
+   "text": "Montrose, Louis. The Purpose of Playing: Shakespeare and the Cultural Politics of the Elizabethan Theatre. Chicago: University of Chicago Press, 1996."
+  },
+  {
+   "id": "patterson1989",
+   "text": "Patterson, Annabel. Shakespeare and the Popular Voice. Oxford: Basil Blackwell, 1989."
+  },
+  {
+   "id": "thompson1978",
+   "text": "Thompson, Ann. Shakespeare's Chaucer: A Study in Literary Origins. Liverpool: Liverpool University Press, 1978."
+  },
+  {
+   "id": "wiles1993",
+   "text": "Wiles, David. Shakespeare's Almanac: A Midsummer Night's Dream, Marriage and the Elizabethan Calendar. Cambridge: D. S. Brewer, 1993."
+  },
+  {
+   "id": "young1966",
+   "text": "Young, David P. Something of Great Constancy: The Art of A Midsummer Night's Dream. New Haven: Yale University Press, 1966."
+  }
+ ]
+}
