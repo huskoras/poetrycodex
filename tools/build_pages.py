@@ -66,7 +66,7 @@ VIEW_PREFS = ('<script>'+'window.pcSetTheme=function(n){var d=document.documentE
 
 
 def esc(s):
-    return html.escape(s or "", quote=True)
+    return html.escape("" if s is None else str(s), quote=True)  # a year stored as a number must not stop the build
 
 
 def trimmed_lines(text):
