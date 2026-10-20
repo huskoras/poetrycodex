@@ -1,0 +1,912 @@
+{
+ "work": "oberon",
+ "title": "Oberon",
+ "author": "Christoph Martin Wieland",
+ "quoteEdition": "oberon-sotheby",
+ "updated": "2026-10-19",
+ "unit": "Canto",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Christoph Martin Wieland (1733–1813), poet, novelist, translator of Shakespeare and editor of Der Teutsche Merkur, resident at Weimar from 1772"
+  },
+  {
+   "label": "Published",
+   "value": "1780, first in fourteen cantos in Der Teutsche Merkur; revised by Wieland and redivided into twelve cantos for later editions"
+  },
+  {
+   "label": "Genre",
+   "value": "Verse romance; Wieland's subtitle calls it a 'romantisches Heldengedicht', a romantic heroic poem"
+  },
+  {
+   "label": "Form",
+   "value": "Free eight-line stanzas, adapted from Italian ottava rima, in iambic lines of varying length with a varied order of rhymes"
+  },
+  {
+   "label": "Translation quoted",
+   "value": "William Sotheby, Oberon: A Poem, from the German of Wieland (1798; revised 2nd ed. 1805): twelve cantos of nine-line stanzas, usually rhymed abbaccddc and closed by an alexandrine"
+  },
+  {
+   "label": "Setting",
+   "value": "The age of Charlemagne: Paris and Bordeaux, Lebanon, Bagdad, the Mediterranean, a desert island, and Tunis"
+  },
+  {
+   "label": "Sources",
+   "value": "The thirteenth-century chanson de geste Huon de Bordeaux, known to Wieland in a French adaptation; Shakespeare's A Midsummer Night's Dream; Chaucer's Merchant's Tale"
+  },
+  {
+   "label": "Main characters",
+   "value": "Huon of Bordeaux; Rezia, the caliph's daughter, baptised Amanda; Sherasmin, his squire; Fatma, her nurse; Oberon and Titania"
+  },
+  {
+   "label": "Central theme",
+   "value": "The testing of a freely chosen love by temptation, suffering and death, on which the reconciliation of the fairy king and queen depends"
+  },
+  {
+   "label": "Afterlife",
+   "value": "Admired by Goethe; translated into English by Sotheby and by John Quincy Adams; the basis of Weber's opera Oberon (London, 1826)"
+  }
+ ],
+ "context": [
+  "Christoph Martin Wieland was born in 1733 near Biberach in Swabia, the son of a Pietist pastor. After an early period of religious and Platonic enthusiasm, spent partly in Zurich as the protégé of the critic Johann Jakob Bodmer, he became the most elegant and worldly German writer of his generation: the author of the novel Agathon (1766–67), of graceful verse tales such as Musarion (1768), and of prose translations of twenty-two plays of Shakespeare (1762–66), the first substantial German Shakespeare. In 1772 he was called to Weimar as tutor to the young Duke Carl August, and in 1773 he founded the journal Der Teutsche Merkur, which he edited for many years. His reputation for sensual frivolity made him a target of the younger generation, and in 1773 members of the Göttingen Hainbund burned his writings in protest, but his ironic grace and his command of verse made him a model for German poets [[sengle1949]] [[vanabbe1961]] [[starnes1987]].",
+  "Oberon, written in 1778–80 and published in the Merkur in 1780, is the masterpiece of his maturity. Its story comes from the chanson de geste Huon de Bordeaux, composed in the thirteenth century, in which the young duke Huon, having killed Charlemagne's son, is sent to the emir of Babylon on a deadly errand and succeeds through the help of Auberon, a dwarf fairy king. The chanson had survived in French prose versions and, in English, in Lord Berners' translation of about 1534; Wieland knew it from a modern French adaptation by the Comte de Tressan in the Bibliothèque universelle des romans (1778) [[koch1880]] [[rossi1975]] [[berners1882]]. To this he added two further sources: the quarrel of Oberon and Titania from Shakespeare's A Midsummer Night's Dream, a play he had translated, and the pear-tree story of Chaucer's Merchant's Tale, in which two gods argue over a deceived husband [[brooks1979]] [[chaucer1987]].",
+  "The combination is Wieland's invention. In his poem Oberon has quarrelled with Titania and sworn not to see her again until a pair of lovers prove faithful through every trial; Huon and the caliph's daughter Rezia, brought together by Oberon himself, become the pair on whose constancy his happiness depends. The old feudal adventure is thus made the frame of a story of love tested by temptation, suffering and death. Wieland called the poem a 'romantisches Heldengedicht', a heroic poem in the manner of romance, and he wrote it in a free version of Ariosto's eight-line stanza, with lines of varying length and a flexible order of rhymes. Like Ariosto, he combines adventure and fantasy with a narrator who comments, digresses and smiles at his own material [[mccarthy1979]] [[jorgensen1994]].",
+  "The poem's success was immediate. Goethe, writing to Lavater in 1780, predicted that it would be loved and admired as a masterpiece of poetic art as long as poetry remained poetry and gold remained gold. Wieland revised it several times, reducing the original fourteen cantos to twelve. It became one of the most widely read German poems of the age and was soon translated into the main European languages; the German text is available in modern editions of his works [[sengle1949]] [[heinz2008]] [[wieland1964]].",
+  "In England it was known chiefly through the verse translation of William Sotheby (1757–1833), published in 1798 and revised in 1805, the version quoted in this guide. Sotheby turned Wieland's free stanza into a regular nine-line stanza closing with an alexandrine, like Spenser's, and abridged some passages, notably the bawdy pear-tree tale in Canto VI. His version was much reviewed and reprinted, and it made Oberon familiar to the English Romantic generation; John Quincy Adams, who had translated the poem while American minister in Berlin (1799–1801), set his version aside when Sotheby's appeared [[stockley1929]] [[wieland1940]] [[beyer1963]]. Through Sotheby the poem reached the stage: James Robinson Planché based on it the English libretto of Carl Maria von Weber's last opera, Oberon, or The Elf King's Oath, first performed at Covent Garden in April 1826, a few weeks before the composer's death in London [[warrack1976]]."
+ ],
+ "plot": [
+  "Huon, young Duke of Guyenne, has killed Charlemagne's son Scharlot in self-defence, not knowing who he was. The emperor spares his life only on condition that he go to Bagdad, behead the man sitting at the caliph's left hand at a feast, kiss the caliph's daughter three times as his bride, and bring back four of the caliph's teeth and a lock of his beard. In Lebanon Huon meets Sherasmin, his father's old squire, who becomes his companion. In an enchanted wood they encounter Oberon, the fairy king, who appears as a beautiful child and gives Huon an ivory horn, which makes all who hear it dance or summons Oberon in need, and a goblet that fills with wine only for the pure. On the way Huon wins a magic ring from a giant and dreams of a woman he has never seen; the caliph's daughter Rezia, in Bagdad, has dreamt of him.",
+  "At the wedding feast where Rezia is to marry the Druse prince Babekan, Huon beheads Babekan, kisses Rezia, and puts the ring on her finger. With the help of the horn and of Oberon, who lets Rezia choose freely between her father and her lover, they escape in a swan-drawn car. Oberon gives Huon the caliph's beard and teeth and forbids the lovers to consummate their union before the Pope has blessed it. On the voyage Rezia is baptised as Amanda, and Sherasmin tells how Oberon and Titania quarrelled over a deceived husband and how Oberon swore never to see his queen again until a pair of lovers should prove faithful through every trial.",
+  "After sending Sherasmin to France, Huon and Amanda break the vow. A storm rises, the fairy gifts vanish, and when Huon is chosen by lot to be thrown overboard Amanda leaps into the sea with him. Saved by the ring, they are cast on a desert island, where they live through hunger until a hermit, Alphonso, takes them into his hidden garden. There, under Titania's secret care, Amanda gives birth to a son, Huonet, and Huon keeps a long vow of abstinence. When the hermit dies, Titania hides the child for his safety; pirates carry Amanda off to Tunis, and Huon is left bound to a tree.",
+  "Rescued by a fay and carried to Tunis, Huon finds Sherasmin and Fatma working as gardeners and enters the sultan's harem garden in disguise. He resists the seductions of the sultana Almansaris, while Amanda resists the sultan Almansor; falsely accused, Huon is condemned to the stake, and Amanda, refusing to save him by becoming Almansor's queen, is condemned with him. At the pyre the horn returns, the flames die, and all Tunis dances. The lovers are carried to Oberon and Titania, now reconciled through their constancy, who crown them and restore their child. They wake near Paris; Huon wins a tournament for his own lands and presents his bride and the caliph's beard and teeth to Charlemagne, who embraces him."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The ride into romance; Huon's exile and Sherasmin",
+   "lines": "Canto I (73 stanzas)",
+   "section": 0,
+   "summary": [
+    "The poet calls on the Muses to saddle the hippogriff once more and carry him into the land of romance. In a rush of visions he glimpses the end of the story before its beginning: a knight who wins a sultan's daughter with the help of an ivory horn, lovers warned not to taste forbidden fruit before the Pope has blessed them, a storm, a desert island, a parting, and the fairy Oberon weeping over the punishment he has himself imposed. Then he checks his own excitement, bids the Muse lie down and speak calmly, and begins the tale at its source.",
+    "Huon, the young Duke of Guyenne and son of Duke Segewin of Bordeaux, has been absolved by the Pope and has visited the Holy Sepulchre; now he is riding for Babylon on a mission that, the narrator remarks, no knight of the present age would undertake. Lost at night in a forest of Lebanon, amid the roaring of lions, he finds a cave and its wild-looking occupant, Sherasmin, his father's old squire, who has lived there alone for sixteen years since closing his master's eyes. Over wine and honey Huon tells his story. Slandered at court by Amory of Hohenblat, he was ambushed on his way to Charlemagne in the wood of Montlery and killed a stranger who had attacked his young brother Gerhardine: the stranger proved to be Scharlot, the emperor's son. Huon then killed Amory in a judicial combat, but because Amory died without confessing, Charles's grief was unappeased. At the barons' pleading he spared Huon's life on terms meant to kill him: in Bagdad, at the caliph's feast, he must behead the man sitting at the caliph's left, kiss the caliph's daughter three times as his bride, and beg four of the caliph's back teeth and a lock of his grey beard. Huon accepted on the spot. Sherasmin swears to go with him to the end."
+   ],
+   "analysis": [
+    "The eight opening stanzas are a bold piece of narrative design. By showing us the lovers' fall, the shipwreck and the island before Huon has even met his guide, the narrator turns suspense into foreknowledge: the question is not what will happen but how and why. The invocation of the hippogriff, Ariosto's winged horse, announces the poem's ancestry in Italian romance, and the narrator's sudden self-correction, from prophetic rapture to an easy conversational manner, sets the double tone of the whole work: visionary enthusiasm watched by a smiling, sceptical intelligence [[sengle1949]] [[mccarthy1979]].",
+    "The long retrospective tale condenses the opening of the thirteenth-century chanson de geste Huon de Bordeaux, in which the hero's killing of Charlot and the emperor's impossible commission begin the action [[rossi1975]] [[huon2003]]. Wieland keeps the feudal world of the old poem, with its slanders, ambushes and trial by combat, but he makes Charles a grieving father as much as a tyrant, and he has the narrator smile at the absurdity of the task. Sherasmin, the elderly squire whose loyalty is matched by his garrulity and his common sense, is Wieland's most original addition to the story: a Sancho Panza to Huon's earnest knight, whose devotion will be tested no less than the lovers' fidelity."
+   ],
+   "key": [
+    {
+     "ref": "I.1",
+     "quote": "Yet once again, ye Muses ! once again\nSaddle the Hyppogryf ! and wing my way\nWhere regions of romance their charms display.",
+     "note": "The invocation borrows Ariosto's hippogriff as the vehicle of romance: the poem declares at once that it belongs to the Italian tradition of chivalric fantasy."
+    },
+    {
+     "ref": "I.67",
+     "quote": "Four of his grinders at my bidding send,\n\" And of his beard a lock with silver hair o'ergrown.",
+     "note": "Charlemagne's commission, taken from Huon de Bordeaux, is cruel in intent and grotesque in detail; the poem never forgets that it is both."
+    },
+    {
+     "ref": "I.70",
+     "quote": "A Frank I am ; impossible, or not,\n\" I dare th' adventure freely on the spot —",
+     "note": "Huon accepts out of pride and despair as much as obedience; his concern for the letter of his word will shape his conduct at Bagdad."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The enchanted wood: Oberon's horn and goblet",
+   "lines": "Canto II (55 stanzas)",
+   "section": 1,
+   "summary": [
+    "Huon and Sherasmin descend from Lebanon, scatter a band of Arab raiders, and spend a day among peasants in a fertile valley, where Huon plays with the children and finds that his gold means nothing to people who do not know its use. At dusk they reach a forest which Sherasmin begs his master to avoid: a goblin is said to keep his court there and to turn travellers into beasts, and a herd of weeping deer seems to confirm the warning. Huon rides on, and Sherasmin passes the silent night with a comic monologue on the ghosts and headless phantoms that he fears more than any armed enemy.",
+    "At the centre of the maze a castle appears and from it a silver car drawn by leopards, carrying a boy more beautiful than Cupid. Sherasmin seizes Huon's bridle and flees, through a sudden storm in which a gentle voice keeps calling Huon back, until the pair burst into a convent of nuns of St Agatha, crowded with monks of St Anthony after a procession. The fairy follows. When he blows his ivory horn, everyone with a guilty conscience must dance: Sherasmin capers with a toothless old nun while Huon alone stands still. The fairy names himself Oberon, declares that he has loved Huon from childhood for his purity of heart, and gives him two gifts. The horn, blown softly, makes all who hear it dance; blown loud, it summons Oberon instantly from any distance. The golden goblet fills with wine for an honest mouth and burns the lips of the guilty. Oberon warns Huon, with tears, that he is a child of Adam and that endless woe can spring from a moment's lust, and vanishes."
+   ],
+   "analysis": [
+    "The canto moves from pastoral to satire to fairy-tale. The valley of contented shepherds, who neither know nor want money, is a small Rousseauesque idyll that anticipates the island paradise of later cantos. The dancing friars and nuns belong to a different tradition, the anticlerical comedy of the Enlightenment: the horn exposes hypocrisy by making it ridiculous. In the chanson de geste Auberon is a dwarf king of uncanny power, and his horn and his cup that serves only the good are already there [[rossi1975]] [[berners1882]]; Wieland makes him a beautiful child, closer to the elfin world of Shakespeare's Dream, which he had himself translated [[pascal1937]].",
+    "Oberon's gifts are moral instruments. Both horn and goblet test the heart, and the goblet will reappear in Canto IV to unmask the Saracen who refuses to thank the Christian God. Oberon's final warning, with its talk of transient lust, plants the condition on which the whole second half of the poem turns. Sherasmin's terror and his rejuvenation by the fairy wine make him the comic register of the supernatural: he reacts to wonders as an ordinary man would, so that the reader can enjoy them without being asked to believe [[warning1975]]."
+   ],
+   "key": [
+    {
+     "ref": "II.28",
+     "quote": "A boy more beauteous than the god of love\nIn smiling Cytherea's soft embrace,\nSat in the silver car with heav'nly grace,",
+     "note": "Oberon's first appearance: the dwarf king of the old romance has become a radiant child, a Cupid of the fairy world."
+    },
+    {
+     "ref": "II.50",
+     "quote": "Pure wine, self-springing from a thousand veins,\n\" If touch'd by guileless mouth ; but if base lip\n\" Dare with rash taste the conscious nectar sip,",
+     "note": "The goblet that fills only for the guiltless comes from the medieval Huon; here it becomes one of the poem's tests of the heart."
+    },
+    {
+     "ref": "II.52",
+     "quote": "But, ah ! thou art a child of Adam's kind,\n\" Form'd of soft clay, and to the future blind !\n\" Woes without end oft spring from transient lust :",
+     "note": "Oberon's warning foreshadows the lovers' fall in Canto VII and states the poem's central ethical concern."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Angulaffer's tower and the dream of the beloved",
+   "lines": "Canto III (66 stanzas)",
+   "section": 2,
+   "summary": [
+    "A prince of Lebanon and his knights, encamped in a valley, stop every passing knight to joust: the prince's bride was carried off on her wedding night by the giant Angulaffer, who has made himself invulnerable with a ring stolen from Oberon, and the defeated must swear to rescue her. Huon unhorses the whole company, declines their oath, and rides alone to the giant's iron tower. Steel automata guard its gate, threshing the air with flails, but they freeze as he charges through with his eyes shut. Inside he meets the captive, Angela, daughter of Balazin, who explains that whenever the giant tries to force her the Virgin casts him into a deathlike sleep.",
+    "Huon refuses to kill a sleeping man, takes the ring, wakes Angulaffer and kills him in fair fight. The prince, Alexis, now gallops up with his knights, ashamed to have left the deed to a stranger. A banquet rises from the ground by the power of the ring, fifty maidens are released from the giant's harem, and Huon rides away. That night, in a tent spread by invisible hands, he hears fairy music and dreams of a woman like a goddess who lights his heart for the first time; a storm tears her from his arms and hurls her into the waves while he stands frozen and unable to save her. He wakes in anguish and asks Sherasmin whether dreams reveal the will of heaven."
+   ],
+   "analysis": [
+    "The episode of Angulaffer is a classic romance adventure, and the narrator treats it with gentle mockery: the reader's imagination has prepared a Titan, but the giant proves to be a mere seven feet tall and lies asleep in the pose of a Greek statue of Hercules. Huon's indifference to the beautiful Angela is explained by 'I know not what magnetic sway' drawing him to Babylon, a joke at the expense of romance conventions that is also a sign that his destiny is already fixed. The ring he wins here, which the narrator later identifies as Solomon's seal, will save his life more than once [[koch1880]].",
+    "The dream is the poem's hinge. It awakens Huon to love before he has seen Rezia, and it shows, in the form of prophecy, the storm and the sea that will part them. Wieland's lovers are joined first in imagination, by a vision that each receives separately; the question of whether such dreams are sent by heaven or by the fairy, or are merely 'mere dreams', runs through the following cantos [[mccarthy1979]]. The fairy music, and the contemporary soprano Mara whom the narrator names, show how freely the poem mixes the medieval with the modern."
+   ],
+   "key": [
+    {
+     "ref": "III.26",
+     "quote": "But now, scarce seven feet growth, a mortal meets his eye.",
+     "note": "The narrator deflates the expected Titan: Wieland's irony works by measuring romance against ordinary scale."
+    },
+    {
+     "ref": "III.57",
+     "quote": "Near him a woman like a goddess stands,",
+     "note": "The first sight of the beloved comes in a dream: love in Oberon begins in the imagination before it meets its object."
+    },
+    {
+     "ref": "III.63",
+     "quote": "' Think'st thou not, friend, that dreams, at times, declare\n' The will of heaven to man, and future scenes disclose ?'",
+     "note": "Huon's question frames the poem's interest in dreams as revelation, a question the sceptical Sherasmin answers very differently."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Dreams compared; the road to Bagdad",
+   "lines": "Canto IV (64 stanzas)",
+   "section": 3,
+   "summary": [
+    "Huon describes the woman of his dream with all the eloquence of first love, insisting that she lives and is meant for him. Sherasmin answers with a comic catalogue of his own nightmares, a bear that grows as he stares at it, a giant nose that pokes from a window, a cold hand that tickles his ribs, and advises his master to believe the pleasant part of the dream and forget the rest. As they ride along the Euphrates each dreams his own dream: Huon of rescuing his goddess from dragons and Merlin's tomb, Sherasmin of the banks of the Garonne where he was born.",
+    "Huon saves a richly dressed Saracen from a lion, with the help of the ring and Sherasmin's club. When the stranger is offered the goblet with a word of thanks to the Christian God, the wine vanishes and the metal burns him; he steals Huon's horse and gallops off. Reaching Bagdad at dusk, the travellers are lodged by an old woman who turns out to be the mother of Fatma, nurse to the caliph's daughter Rezia. She tells them that Rezia must marry Babekan, prince of the Druses, the next day, and that the princess loathes him because of a dream: a beautiful dwarf in a lion-drawn car rescued her from Babekan's hounds and seated her beside a golden-haired knight. Babekan, she adds, rode out to kill a monster to win Rezia's favour and came home secretly on a strange horse. Huon recognises that his dream and Rezia's answer each other; Sherasmin proposes simply carrying off the bride, but Huon insists that every point of the emperor's command must be fulfilled."
+   ],
+   "analysis": [
+    "Sherasmin's nightmares are a fine example of the poem's comic realism: they give the experience of dreaming in homely, physical detail, and they question Huon's romantic faith without destroying it. The narrator gives both men their reveries on the road, and the squire's longing for his native Gascony, which returns in Canto VI, adds a note of homesickness to the poem's restless movement eastward [[vanabbe1961]].",
+    "The canto is built on recognitions that the reader makes before the characters do. The Saracen exposed by the goblet is clearly Babekan, whose cowardice in the monster-hunt the old woman unknowingly reports; Rezia's dream mirrors Huon's, with Oberon as its author. The old woman, a gossip who eavesdrops at a cracked door, belongs to comedy; Huon's refusal to take the easy course belongs to romance. His insistence that 'not an iota' of the command shall fail is admirable and absurd at once, and the narrator lets us feel both [[sengle1949]]."
+   ],
+   "key": [
+    {
+     "ref": "IV.11",
+     "quote": "' Sir, after all, a dream is but a dream :",
+     "note": "Sherasmin's common sense, set against Huon's visionary certainty, keeps the poem's wonders at an ironic distance."
+    },
+    {
+     "ref": "IV.46",
+     "quote": "\" And long, long locks that beam'd of golden hue,",
+     "note": "Rezia's dream-knight has Huon's golden hair, the detail by which the two dreams are matched and by which she will recognise him in Canto V."
+    },
+    {
+     "ref": "IV.63",
+     "quote": "\" Huon beyond his life his fame esteems !",
+     "note": "Huon's honour requires him to perform Charles's command to the letter, even when a simpler course would win him the bride."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "The wedding feast at Bagdad",
+   "lines": "Canto V (86 stanzas)",
+   "section": 4,
+   "summary": [
+    "Rezia spends the night in despair, a dagger hidden in her bosom, until Oberon sends her another dream of the golden-haired knight; at dawn Fatma brings news that he is in the city, and Rezia is dressed for the wedding radiant with hope. Huon wakes to find an emir's caftan, turban and jewelled sabre laid out beside his straw, and a fairy steed at the door. He passes the guarded gates as an honoured guest and enters the banquet hall, where he recognises the man at the caliph's left as the Saracen of the lion and the goblet, Babekan, and strikes off his head. His turban falls, his golden hair is revealed, and Rezia knows him. He kisses her twice, places the giant's ring on her finger as a wedding ring, and kisses her a third time.",
+    "The caliph orders his death; Rezia shields him with her own body. Huon blows the horn softly, and the whole court, from the caliph and the grand vizier to eunuchs, harem women and gardeners, dances until it drops. Huon then kneels before the exhausted caliph and politely asks for four teeth and a lock of beard, offering instead to accept the caliph's conversion to Christianity. In the renewed fighting Sherasmin blows the horn loudly; thunder and darkness strike the pagans senseless, and Oberon appears. He tells Rezia that she is free to choose, now and never again, between her father's throne and a life of danger with Huon, and offers to restore everything as it was. She hides her face on Huon's breast. Oberon blesses them and his swan-drawn car carries the lovers, Sherasmin and Fatma through the night towards Askalon."
+   ],
+   "analysis": [
+    "This is the poem's great set piece. Its broad outline comes from the chanson de geste, though Wieland has transferred the scene from the emir of Babylon to the court of a caliph of Bagdad [[rossi1975]]. The beheading of Babekan is made bearable by the earlier revelation of his baseness; the dance of the whole court, the caliph seizing his vizier by the beard, turns the oriental court into a scene of comic opera. The narrator protests that words fail him to describe the caliph's rage, and then describes it at length.",
+    "Rezia is far from a passive prize. She recognises Huon from her dream, stands between him and the swords, and when Oberon gives her a free choice she makes it. Wieland's addition of this choice, absent from the medieval model, turns an abduction into a marriage of consent and gives the heroine a moral weight equal to the hero's [[mccarthy1979]] [[heinz2008]]. The journey through the night sky in a car drawn by swans, the birds of Venus, closes the first half of the poem in a mood of rapture that the second half will sternly test."
+   ],
+   "key": [
+    {
+     "ref": "V.36",
+     "quote": "Off at the instant flies the heathen's head !",
+     "note": "The literal fulfilment of the first part of Charles's command, delivered with brutal brevity in the middle of the wedding feast."
+    },
+    {
+     "ref": "V.44",
+     "quote": "\" Back ! — to that breast — here, here the passage lies !\n\" No other way than through the midst of mine !\"—",
+     "note": "Rezia shields Huon from her father's emirs: the heroine acts, and her courage anticipates her trials in the last cantos."
+    },
+    {
+     "ref": "V.70",
+     "quote": "\" Fate leaves her free to choose — but now — and never more.",
+     "note": "Oberon insists that Rezia's union with Huon must be her free choice; consent is the foundation of the fidelity to be tested."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "The vow of chastity; Amanda; the tale of the pear tree",
+   "lines": "Canto VI (48 stanzas)",
+   "section": 5,
+   "summary": [
+    "At Askalon Oberon gives Huon a jewelled casket holding the caliph's beard and teeth, plucked by an invisible sprite while the caliph lay senseless, so that Huon's honour is saved without offending Rezia. He sends the party by ship to Lepanto, Salerno and Rome, and lays on them a solemn condition: until Pope Sylvester has blessed their marriage they must live as brother and sister, or he will abandon them. On the voyage the condition becomes a torment. Huon begs Rezia to veil herself, then instructs her in his simple Christian faith, his paternoster and creed; a priest of St Basil baptises her, and Rezia becomes Amanda, leaving her old name, rank and country behind with joy.",
+    "Sherasmin, watching the lovers drift towards danger, tries to distract them with a story. Sotheby omits nearly the whole of it, as his own note says; what remains is its ending, in which Oberon and Titania, invisible witnesses of a scene in a pear tree where a young wife deceives her old husband Gangolfo, quarrel over it. Oberon swears to restore the husband's sight and expose the guilt; Titania swears that the woman will find an excuse. Enraged, Oberon swears never to meet his queen again, on earth, in air or sea, until a pair of lovers remain faithful through every trial, endure the sea's rage and prefer death by fire to a throne. Since then he has wandered alone, tormenting lovers. Huon, delighted, declares that he and Amanda will be that pair."
+   ],
+   "analysis": [
+    "The canto ties the human plot to the fairy plot. The pear-tree story is Wieland's version of Chaucer's Merchant's Tale, in which Pluto and Proserpina, watching January and May, argue in just this way [[chaucer1987]]; Wieland replaces the classical deities with Oberon and Titania, whose quarrel he takes from Shakespeare's Dream but whose cause he invents [[koch1880]] [[brooks1979]]. The effect is to make Oberon's harshness intelligible: his warning to the lovers is not arbitrary, for his own happiness depends on a faithful pair, and their trials will be the means of his reconciliation.",
+    "Huon's preaching is the narrator's occasion for irony: no theologian, the knight teaches what little he knows and confirms it by offering to prove it with the sword, and Rezia believes because she loves. Yet the renaming that follows is treated with real tenderness: 'Rezia is dead', and the new Amanda (in Latin, 'she who is to be loved') exists only for love. Oberon's oath, stated in full, is a precise programme for the rest of the poem, and the canto ends by warning that the lovers' whole fate hangs on a single hair [[sengle1949]]."
+   ],
+   "key": [
+    {
+     "ref": "VI.9",
+     "quote": "\" As brother and as sister chaste remain !",
+     "note": "Oberon's condition: the old romance's ban on consummation before marriage becomes the trial on which the poem turns."
+    },
+    {
+     "ref": "VI.31",
+     "quote": "Rezia is dead — Amanda lives to prove\nSource, centre, circle of existence, love !",
+     "note": "Baptism and renaming make Rezia a new person whose whole being is love; the line is an emotional climax rather than a theological one."
+    },
+    {
+     "ref": "VI.42",
+     "quote": "\" Till, mark'd by fate itself, a youthful pair,\n\" Warm'd by pure love, and faith's undying flame,\n\" In weal or wo eternally the same,",
+     "note": "Oberon's oath sets the conditions for his reunion with Titania, which Huon and Amanda will fulfil point by point."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "The fall, the storm and the desert island",
+   "lines": "Canto VII (93 stanzas)",
+   "section": 6,
+   "summary": [
+    "At Lepanto Huon, weary of Sherasmin's watchfulness, sends him with the casket on a ship to Marseilles, to report to Charlemagne. The parting grieves the old man, and Huon at once regrets losing his counsellor. On the second ship Huon keeps apart from Amanda, who weeps at his coldness, until one calm night, the crew asleep in drink, his sigh brings her to his side and they become lovers. At once the sky darkens and a terrible storm breaks; Oberon passes in fury, unheard, and the horn and goblet vanish. The captain has lots drawn to find the guilty man; Huon draws the lot of death, confesses, and asks only that Amanda be spared. As he goes to the side she flings her arms round him and leaps with him into the sea. The storm stops, and the ship, with Fatma aboard, sails safely to harbour.",
+    "The magic ring on Amanda's finger, Solomon's seal, keeps them alive, and the waves cast them on a volcanic island. They find a cave, but no food; a golden fruit that Huon brings in triumph proves rotten within. Huon prays, finds a spring and later a grove of dates. Amanda, consoling him, insists that their sufferings are trials rather than punishments, and that she would choose her lot again; he swears eternal fidelity. Months of hunger follow as the dates fail; Amanda is pregnant. At last Huon climbs the rocky barrier that cuts off the island's interior, and the path begins to lead him down towards gentler ground."
+   ],
+   "analysis": [
+    "The fall is told with remarkable sympathy. The narrator does not condemn the lovers; he cries out to them to forbear, and then shows them deaf to thunder, wrapped in each other. The storm and the casting of lots recall Jonah, and Huon's confession is that of a man who knows he has broken his word but cannot think love itself a sin. Amanda's leap into the sea is the poem's supreme act of fidelity, and it fulfils, unknown to her, the first term of Oberon's oath, that the pair should keep faith when ocean rolls over them [[mccarthy1979]].",
+    "On the island the poem turns from romance to something like a robinsonade, and the mouldy fruit of gold, held up in the evening light like the fruit of the tree of knowledge, is a deliberate echo of Eve's temptation. Amanda's speech, in which she treats suffering as a trial sent by a loving providence, gives the second half of the poem its religious seriousness. Wieland's ethical ideal here, love deepened by suffering and freely chosen renunciation, is close to the sentimental moral philosophy of his age, and critics have seen in it the core of the poem's seriousness beneath its play [[jorgensen1994]] [[sengle1949]]."
+   ],
+   "key": [
+    {
+     "ref": "VII.13",
+     "quote": "They meet — the heav'ns are darken'd, quench'd each star!",
+     "note": "The lovers' union and the storm are simultaneous: the breach of the vow is answered at once by the fairy's punishment."
+    },
+    {
+     "ref": "VII.22",
+     "quote": "\" Is love a sin ? may Heaven forgive the crime !",
+     "note": "Huon admits his fault but cannot repent of love itself, the moral tension of the whole poem in one line."
+    },
+    {
+     "ref": "VII.67",
+     "quote": "' Not punishments but trials press around ;",
+     "note": "Amanda reinterprets their suffering as trial rather than punishment, turning Oberon's vengeance into the means of their perfection."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "The hermit Alphonso and the birth of Huonet",
+   "lines": "Canto VIII (79 stanzas)",
+   "section": 7,
+   "summary": [
+    "Beyond the rocks Huon finds a sheltered valley and an old hermit, Alphonso, who at first takes him for a ghost. The hermit brings Amanda to his garden by a secret path. He had been a courtier of the King of Leon, ruined by a fall from favour; he had then lived ten happy years with his wife, three sons and a friend, until plague and grief took them all. Fleeing here with one faithful servant, now dead, he has lived in peace for over thirty years, and in his solitude has come to feel the divine presence in all creation. When Huon confesses everything, the hermit advises repentance through self-denial, and Huon swears to live chastely with Amanda; he keeps the vow for more than a hundred weeks.",
+    "The narrator describes the life of the little household: Huon fells trees and builds Amanda a hut, Amanda draws water and cooks, the hermit tends his garden and tells stories of his youth, Huon plays a lute he has found. Winter passes and spring returns. The narrator now reveals that Titania, repentant since the quarrel and exiled from Oberon by his oath, fled seven years earlier to this island and created the paradise in which the hermit lives; she has watched the lovers since their arrival, hoping they are the destined pair. Amanda enters a grotto that no one has been able to approach, and there, in a trance in which three sylphs and a woman crowned with roses attend her, gives birth to a son. Titania places the child in her arms and vanishes. Huon finds them together."
+   ],
+   "analysis": [
+    "Alphonso's story is an inset tale of the vanity of courts and the consolations of nature, and his piety, a feeling of God in creation rather than doctrine, links the poem to the religious sentiment of the later Enlightenment. The narrator, after a stanza of near-mystical description, declares that the subject exceeds his power to speak, one of several moments in which the playful voice falls silent before something it treats as sacred [[warning1975]] [[vanabbe1961]].",
+    "Titania's entry into the human plot completes the poem's symmetry. The fairy queen whose quarrel began all the trouble has become a penitent in exile, and her care for Amanda turns the island into a place of hidden grace. The birth in Titania's grotto, painless and dreamlike, is the poem's most purely fairy-tale scene, and the narrator ends it by drawing a curtain. Huon's long continence, 'the noblest victory Huon ever gain'd', is the inner reparation for his fall; the idyll it makes possible is happy but, as the next canto shows, not where his story can end."
+   ],
+   "key": [
+    {
+     "ref": "VIII.37",
+     "quote": "\" Son ! by self-punishment thy guilt atone !",
+     "note": "The hermit's counsel: Huon's repentance takes the form of voluntary self-denial, the reversal of his fall."
+    },
+    {
+     "ref": "VIII.38",
+     "quote": "More than an hundred weeks alone self-rein'd —\nThe noblest victory Huon ever gain'd.",
+     "note": "The narrator ranks Huon's victory over himself above all his feats of arms, a key statement of the poem's values."
+    },
+    {
+     "ref": "VIII.73",
+     "quote": "The gracious elfine queen soft-smiling deigns appear.",
+     "note": "Titania, repentant and watchful, takes a direct part in the lovers' story for the first time, at the birth of their son."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Sherasmin's wanderings; the hermit's death; Amanda carried off",
+   "lines": "Canto IX (63 stanzas)",
+   "section": 8,
+   "summary": [
+    "The narrative returns to the others. Fatma's ship was driven to Tunis, where the captain sold her as a slave to the sultan's gardener. Sherasmin, landing at Marseilles, reaches the hill above Paris and stops: his 'better genius' persuades him that to present a casket of goat's hair and old teeth without Huon himself would only enrage the emperor. He rides instead to Rome, searches for Huon in vain for six weeks, then wanders for over two years as a beggar pilgrim, refusing to sell a single jewel from Oberon's casket. At last at Tunis a slave woman at the gardener's door brings him bread and wine: it is Fatma. She tells him of the lovers' leap into the sea, and the two settle down as gardeners to wait.",
+    "On the island three years pass, and the young parents, for all their happiness, long for a life of action in the world. One evening under the stars the hermit speaks of death and of the life beyond. That night Titania reads in the stars a danger hanging over Amanda, steals the sleeping child and sends him with her three sylphs to her bower, giving each a rosebud: when the roses turn the colour of lilies, she will be reconciled with Oberon. At dawn Huon and Amanda find the hermit dead, his face transfigured; when they come out of his cell the paradise has vanished into bare rock, and the child is gone. Searching for him, Amanda meets a crew of pirates who have landed for water. Their captain values her at ten thousand ducats as a gift for Almansor, Sultan of Tunis. They seize her; Huon kills seven of them with a club but is overpowered, dragged into the wood and bound to a tree to die slowly."
+   ],
+   "analysis": [
+    "The canto shows Wieland's interlace technique, learned from Ariosto: the story leaves the island to follow the minor characters and brings them, by chance or providence, to Tunis, where all the threads will meet. Sherasmin's debate with his own genius is comic, but his refusal to touch the fairy's jewels for bread is the squire's own test of fidelity, passed without witnesses [[warning1975]].",
+    "The hermit's death and the vanishing of the paradise mark the end of the pastoral interlude. The garden existed for Alphonso's sake, or by Titania's art, and the lovers must now return to the world of history and danger. The theft of the child is cruel only in appearance: the reader knows that Titania is protecting him, and the device of the rosebuds that must turn to lilies, Titania's own token of reconciliation, links the human and fairy plots in a single sign. The pirates' crude valuation of Amanda introduces the theme of the last cantos, beauty as merchandise in the slave markets and harems of North Africa [[heinz2008]]."
+   ],
+   "key": [
+    {
+     "ref": "IX.8",
+     "quote": "\" This embassy is void of common sense :",
+     "note": "Sherasmin's 'better genius' talks him out of going to Charlemagne: the comic voice of prudence, which proves sound."
+    },
+    {
+     "ref": "IX.33",
+     "quote": "Stole the unconscious boy, who sweetly smiling slept,",
+     "note": "Titania takes the child to protect him from the danger she has read in the stars; the apparent loss is a hidden kindness."
+    },
+    {
+     "ref": "IX.63",
+     "quote": "Arm, leg, and neck, and shoulders, to a tree.",
+     "note": "Huon bound and abandoned: the lowest point of his fortunes, from which the fairy powers will begin to raise him."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Rescue to Tunis; Huon becomes Hassan the gardener",
+   "lines": "Canto X (54 stanzas)",
+   "section": 9,
+   "summary": [
+    "Titania, kept back from Huon by an invisible hand, finds on the sand the ring that fell from Amanda's finger in the struggle, and greets it as the talisman of her reunion with Oberon. On board the pirate ship the captain treats Amanda with fearful respect, as a prize destined for his sultan, and gives her a veil. She longs only for death, until Titania comes to her in a dream and tells her that her husband and son are alive. Far away on a mountain at the sources of the Nile, Oberon watches Huon's suffering in a cloud like a mirror. A favourite fay begs him to relent; Oberon answers that even spirits are slaves of fate, but sends the fay to carry Huon to Tunis, to the door of Ibrahim, the sultan's gardener.",
+    "There Huon wakes to see Sherasmin coming out with a spade. The old squire passes him off as his nephew Hassan of Aleppo, a shipwrecked merchant, and reports that Fatma is Ibrahim's slave and that he still has the casket. Huon wants a horse and sword at once to search the slave markets for Amanda, but falls into a fever, which Sherasmin cures with herbs. Fatma then brings news from a woman of the harem: a ship had been struck by lightning off the coast that evening, and a single beautiful woman, borne unharmed over the waves, had been brought ashore to Sultan Almansor and his favourite Almansaris. Huon is sure it is Amanda. Sherasmin bribes Ibrahim with a diamond, and Huon is taken on as a gardener in the harem garden."
+   ],
+   "analysis": [
+    "Wieland gives a glimpse of the fairy king's inner life: Oberon is not indifferent to Huon's suffering, but bound by his own oath and by fate, which governs spirits as well as mortals. The idea that the supernatural powers themselves obey a higher law makes the poem's machinery more than decorative; it raises, lightly, the question of how providence, fate and the gods of romance relate to one another [[jorgensen1994]].",
+    "The lightning that destroys the pirate ship while sparing Amanda is a kind of justice, and the reunion of master and squire at a gardener's door is one of the poem's happiest coincidences. Huon's disguise as Hassan begins the last movement, in which the knight must prove himself not by arms but by constancy, in the most dangerous of places for a man in love with another, a sultan's harem. The scene-setting of Tunis, with its slave markets, gardeners and harem gossip, draws on the literary orient of the eighteenth century rather than on knowledge of North Africa [[mccarthy1979]]."
+   ],
+   "key": [
+    {
+     "ref": "X.2",
+     "quote": "Darts on a ring of gold that glitters on the sand.",
+     "note": "Titania recovers the ring, Solomon's seal, which will become the emblem of the fairy couple's reunion."
+    },
+    {
+     "ref": "X.17",
+     "quote": "\" No not a leaflet falls a wretch to aid !",
+     "note": "Huon, bound to the tree, rails at a creation indifferent to his pain, just before he is rescued."
+    },
+    {
+     "ref": "X.20",
+     "quote": "' Blind to futurity earth's children stray,'\nThe king replies. ' Ourselves, each fay and spright,\n' Are slaves, thou know'st, to fate's resistless might!—",
+     "note": "Oberon confesses that the fairy powers are themselves bound by fate, which makes his severity a matter of law rather than whim."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "The harem garden: Almansaris",
+   "lines": "Canto XI (65 stanzas)",
+   "section": 10,
+   "summary": [
+    "Huon spends his days tending flowers for the harem and his nights watching in vain for a glimpse of Amanda. On the fourth evening he meets Almansaris, the sultana, in the garden. Wieland describes her beauty with a connoisseur's eye, as a model surpassing the masterpieces of Greek sculpture; she is struck at once by the handsome gardener and, when he obeys her command to leave, begins to burn with love. Her confidante Nadina encourages her. Meanwhile Amanda, called Zoradine in the harem, has captivated Sultan Almansor, but treats him with a cold dignity that only inflames him. Almansaris, outwardly friendly, has her rival lodged apart in a summer house.",
+    "Fatma suggests that Huon send Amanda a message in the oriental language of flowers. He makes a nosegay bound with one of his golden hairs and marked with an A and an H. Nadina intercepts it and takes it for a declaration from Hassan to Almansaris. Fatma, deceived in turn, tells Huon that a slave will lead him to his bride at midnight. Instead he is led to the sultana's splendid apartments, where Almansaris, surrounded by twelve nymphs, tries to seduce him with a banquet, the golden cup, a voluptuous dance and finally a song of love sung to her lute. Huon, recalling Amanda's first kiss and renewing his vow in his heart, seizes the lute and sings of his fidelity to another. Almansaris, humiliated, has him thrown out. Huon resolves to storm the palace, but Sherasmin and Fatma persuade him to wait three days while they prepare a ship for flight."
+   ],
+   "analysis": [
+    "Here the poem tests Huon by the second term of Oberon's oath, the resistance to 'joys that seduce'. Almansaris is a figure of the seductive enchantress familiar from Renaissance romance, Ariosto's Alcina and Tasso's Armida among them, and the descriptions of her beauty, with their references to Greek sculptors and painters, are among the most sensuous in the poem [[sengle1949]]. Wieland's reputation as a frivolous and sensual writer, which made him a target of the young poets of the Göttingen Hainbund, owed much to scenes of this kind; here, however, sensuality is the obstacle that fidelity overcomes.",
+    "The comedy of the misread nosegay, in which the same initials can stand for Amanda and Huon or for Almansaris and Hassan, shows the narrator's pleasure in error and coincidence. The contest between the two lutes, the sultana's song of desire and Huon's song of constancy, is one of the poem's emblematic scenes: art is used to seduce and to resist, and the knight's victory is won not with the sword but with music and memory. Amanda, meanwhile, undergoes a parallel test in her resistance to Almansor [[mccarthy1979]]."
+   ],
+   "key": [
+    {
+     "ref": "XI.9",
+     "quote": "Thy lip, Erigone ! and Helen's breast ;",
+     "note": "The narrator builds Almansaris's beauty out of classical models: she is an ideal of art and a danger to the soul."
+    },
+    {
+     "ref": "XI.36",
+     "quote": "Almansaris and Hassan, clear as day—",
+     "note": "Nadina's misreading of the A and H on the nosegay, a comic misunderstanding that leads Huon into the sultana's trap."
+    },
+    {
+     "ref": "XI.60",
+     "quote": "And thunders from the strings with prophet fire :",
+     "note": "Huon takes the sultana's lute to sing his fidelity, defeating seduction with its own instrument."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "The fiery trial and the reconciliation",
+   "lines": "Canto XII (93 stanzas)",
+   "section": 11,
+   "summary": [
+    "Almansaris, torn between love and vengeance, lures Huon to a grotto where she is bathing and embraces him; at that moment Almansor enters by chance, and she cries out that the gardener has assaulted her. Huon will not defend himself at the cost of a woman's shame, and is condemned to be burned at dawn. In the dungeon Almansaris offers to have the sultan killed and to make Huon king if he will be hers; he refuses. Fatma reaches Amanda with the news. Amanda throws herself at Almansor's feet, makes him swear by Allah to grant her one wish, asks for Hassan's life and reveals that he is her husband. Almansor offers to pardon Huon if she will become his queen; she scornfully refuses, and is condemned to burn with him.",
+    "Bound face to face at the stake, the lovers prefer death to a throne. As the torches are lowered, thunder breaks, the flames die, their cords burn away, and the ivory horn is seen hanging from Huon's neck. Sherasmin, in black armour, rides in to defend them; Huon blows the horn and all Tunis, sultan, sultana and slaves, dances. The swan car carries the lovers away to a palace of light, where Oberon, no longer a child but in the full bloom of youth and wearing the ring, stands beside Titania, reconciled; together they crown the lovers with myrtle, and Titania restores their son. They wake at dawn near Paris, with horses, armour and robes beside them. Sherasmin learns that Charlemagne is holding a tournament whose prize is Huon's own lands. Huon enters unknown, overthrows the champion, the heir of Doolin of Mayence, and presents himself to the emperor with the caliph's beard and teeth and his bride. Charles embraces him."
+   ],
+   "analysis": [
+    "The last canto fulfils the final term of Oberon's oath: the faithful pair prefer truth amid torturing fires to pleasure on a proffered throne, and both are offered the throne, Huon by Almansaris and Amanda by Almansor. The symmetry is exact, and it makes the heroine's trial the equal of the hero's. Amanda's speech to the sultan, in which she declares that she too knows how to die, gives her the poem's last heroic words [[mccarthy1979]] [[heinz2008]].",
+    "The resolution gathers all the poem's threads. The horn returns, the comic dance of Canto V is replayed as punishment, Sherasmin's courage is rewarded, the fairy couple are reunited, and the child returns. Oberon's transformation from child to youth suggests that his own sulky estrangement has ended in maturity. The final scene returns to the world of the chanson de geste, the tournament and the court of Charlemagne, and closes the frame opened in Canto I: the impossible commission has been fulfilled, but what has really been accomplished is the lovers' fidelity, which the old feudal story could not have imagined [[rossi1975]] [[sengle1949]]."
+   ],
+   "key": [
+    {
+     "ref": "XII.27",
+     "quote": "\" Faith and unshaken love till death I swore :\n\" True, to Amanda true, her Huon shall expire.",
+     "note": "In prison Huon accepts death rather than infidelity, the knight's last and hardest test."
+    },
+    {
+     "ref": "XII.51",
+     "quote": "Barbarian ! vain thy rage — I also know to die.",
+     "note": "Amanda's defiance of Almansor makes her the moral equal of her husband: she, too, prefers death to a throne gained by betrayal."
+    },
+    {
+     "ref": "XII.70",
+     "quote": "No more in sweet disguise, a lovely child ;\nOn youth's full bloom eternal beauty smil'd,",
+     "note": "Reconciled with Titania, Oberon appears in his true form: the end of his estrangement is also his coming of age."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Huon",
+   "side": "Christians",
+   "text": "Duke of Guyenne, son of Duke Segewin of Bordeaux, a young knight of great beauty and purity of heart. Exiled for killing Charlemagne's son, he accepts an impossible commission and fulfils it to the letter. His one fault, the breaking of Oberon's command in Canto VII, is the beginning of his real trial: through suffering, labour, self-denial and the refusal of Almansaris he becomes the faithful lover whom Oberon's oath requires."
+  },
+  {
+   "name": "Rezia / Amanda",
+   "side": "Bagdad, then Christians",
+   "text": "Daughter of the caliph of Bagdad. She falls in love with Huon in a dream, chooses him freely over her father's throne, and is baptised Amanda on the voyage. Her leap into the sea with Huon, her patience on the island and her refusal of Almansor's throne make her the moral centre of the poem's second half. In the harem at Tunis she is called Zoradine."
+  },
+  {
+   "name": "Sherasmin",
+   "side": "Christians",
+   "text": "Old squire of Huon's father, found living as a hermit in Lebanon. Brave, loyal, talkative, superstitious about goblins and sceptical about dreams, he is the poem's comic voice of common sense. His long search for Huon, his refusal to spend the fairy jewels and his rescue of the lovers in black armour show a fidelity of his own."
+  },
+  {
+   "name": "Fatma",
+   "side": "Bagdad, then Christians",
+   "text": "Rezia's nurse, devoted to her charge. Separated from the lovers after the storm, she is sold as a slave at Tunis, where she is reunited with Sherasmin and helps bring about the final rescue, though her misplaced trust nearly ruins Huon in Canto XI."
+  },
+  {
+   "name": "Oberon",
+   "side": "Fairies",
+   "text": "King of the fairies, who appears as a beautiful child with a lily wand and an ivory horn. He loves Huon for his purity and helps him, but punishes the lovers' disobedience with a severity he himself regrets. His own happiness depends on them: he has sworn not to meet Titania again until a faithful pair have passed every trial. At the end he appears in the full bloom of youth."
+  },
+  {
+   "name": "Titania",
+   "side": "Fairies",
+   "text": "Queen of the fairies. Her defence of a deceitful wife provoked Oberon's oath; repentant, she has lived in exile on the desert island, where she created the hermit's paradise, watches over the lovers, assists at Amanda's childbirth and protects their son."
+  },
+  {
+   "name": "Charlemagne (Charles)",
+   "side": "Christians",
+   "text": "The emperor, a grieving and vindictive father, who imposes on Huon a commission designed to kill him and holds the tournament for his forfeited lands; he embraces Huon at the end."
+  },
+  {
+   "name": "Scharlot",
+   "side": "Christians",
+   "text": "Charlemagne's son, a treacherous prince who attacks Huon's young brother Gerhardine in disguise and is killed by Huon in the wood of Montlery."
+  },
+  {
+   "name": "Amory of Hohenblat",
+   "side": "Christians",
+   "text": "Huon's enemy at court, who slanders him and accuses him of murder; Huon kills him in a judicial combat before he can confess."
+  },
+  {
+   "name": "Babekan",
+   "side": "Bagdad",
+   "text": "Prince of the Druses, Rezia's intended husband. Saved from a lion by Huon, he blasphemes the Christian God and steals Huon's horse; Huon beheads him at the wedding feast as the man at the caliph's left."
+  },
+  {
+   "name": "The caliph of Bagdad",
+   "side": "Bagdad",
+   "text": "Rezia's father, called both caliph and sultan by Sotheby, who is made to dance by the horn and loses his teeth and beard to an invisible sprite."
+  },
+  {
+   "name": "Angulaffer",
+   "side": "Others",
+   "text": "A giant who holds the princess Angela captive in an iron tower, protected by a ring stolen from Oberon. Huon wakes him rather than kill him asleep, and kills him in fair fight."
+  },
+  {
+   "name": "Alphonso",
+   "side": "Others",
+   "text": "A Spanish hermit, once a courtier of the King of Leon, who has lived for over thirty years in a hidden garden on the desert island after losing his family. He shelters the lovers and counsels Huon to repent through self-denial; his death ends their idyll. Sotheby once calls him Alonzo."
+  },
+  {
+   "name": "Huonet",
+   "side": "Christians",
+   "text": "Son of Huon and Amanda, born in Titania's grotto, stolen by Titania for his protection and restored by her at the end."
+  },
+  {
+   "name": "Almansor",
+   "side": "Tunis",
+   "text": "Sultan of Tunis, who falls in love with Amanda (Zoradine) and condemns both lovers to the stake when she refuses him."
+  },
+  {
+   "name": "Almansaris",
+   "side": "Tunis",
+   "text": "Almansor's sultana, a beautiful and passionate seductress who falls in love with Huon in his disguise as the gardener Hassan, tries to seduce him, accuses him falsely, and offers him her husband's throne."
+  },
+  {
+   "name": "Nadina",
+   "side": "Tunis",
+   "text": "Almansaris's confidante and flatterer, whose misreading of Huon's flower message leads him into the sultana's power; the narrator compares her to the demon Asmodeus."
+  },
+  {
+   "name": "Ibrahim",
+   "side": "Tunis",
+   "text": "The sultan's gardener at Tunis, master of Fatma and Sherasmin, who is bribed to take Huon into the harem garden as his nephew."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Fidelity tested",
+   "text": [
+    "Oberon's oath in Canto VI gives the poem its structure. He will be reconciled with Titania only when a pair of lovers remain faithful through good and ill, under the sea's rage, and when they prefer truth amid torturing fires to pleasure on an offered throne. The second half of the poem fulfils these conditions one by one: the storm and the leap into the sea (Canto VII), years of hardship on the island (Cantos VII–IX), the temptations of the harem (Cantos XI–XII), and the pyre at which both lovers refuse a throne.",
+    "Fidelity in Oberon is not merely chastity. It is the constancy of a love that has been freely chosen and survives every change of fortune, and it is shown by Sherasmin and Fatma as well as by the lovers. The medieval story of a knight's obedience to his lord becomes, in Wieland's hands, the story of a marriage proved by trial [[mccarthy1979]] [[jorgensen1994]]."
+   ]
+  },
+  {
+   "title": "Desire and its discipline",
+   "text": [
+    "The poem is frank about desire. Huon's struggle on the voyage, the lovers' surrender, the sultana's seductions and Huon's temptation in the grotto are described with a sensuousness that made Wieland's contemporaries uneasy. Yet desire is never simply condemned: the narrator pities the lovers in their fall, and Huon himself cannot believe love a sin.",
+    "What the poem values is desire governed by freely accepted restraint. Huon's 'noblest victory' is over himself, and his resistance to Almansaris is won by memory and a renewed vow, not by coldness. The ideal is close to the moral philosophy of the later Enlightenment, in which virtue is the harmony of feeling and reason rather than the suppression of the senses [[sengle1949]] [[heinz2008]]."
+   ]
+  },
+  {
+   "title": "Providence, fate and the fairy powers",
+   "text": [
+    "Oberon and Titania direct the action, but they are not free agents: Oberon tells his fay that spirits too are slaves to fate, and he cannot break his own oath. Above the fairy machinery stands a Christian providence, invoked by Amanda and the hermit, who read the lovers' sufferings as trials sent by a loving father.",
+    "The poem never decides finally between these explanations. Amanda says the author of their woes may be called heaven, the fairy or fortune, and the narrator treats each with seriousness and a smile. This openness lets Oberon be a fairy tale and a moral fable at once [[jorgensen1994]]."
+   ]
+  },
+  {
+   "title": "Dream and reality",
+   "text": [
+    "Huon and Rezia fall in love in dreams before they meet, and each recognises the other from the dream. Dreams return throughout: Sherasmin's comic nightmares, Rezia's dream sent by Oberon, Amanda's trance at the birth of her son, Titania's comforting visit on the pirate ship, and the lovers' final 'holy dream' in Oberon's palace, from which they wake near Paris.",
+    "Wieland plays with the relation between the visionary and the real from the invocation onward, where the narrator sees the future in rapture before deciding to tell it calmly. The poem's wonders are offered to the imagination with full awareness that they are imagined [[warning1975]]."
+   ]
+  },
+  {
+   "title": "Honour and the letter of the oath",
+   "text": [
+    "Huon's sense of honour drives the first half: he will perform Charlemagne's command 'word for word', refuses to kill a sleeping giant, and insists on asking the caliph for his teeth even after he has won the bride. The narrator admires this and finds it slightly absurd.",
+    "The poem sets oaths against each other: Huon's rash promise to Charles, Oberon's rash oath against Titania, the lovers' vow of chastity, Huon's vows of fidelity on the island and in the harem, Almansor's oath by Allah. Some are kept, one is broken, all have consequences; fidelity to one's word is shown as both a virtue and a burden."
+   ]
+  },
+  {
+   "title": "Nature, retreat and the world",
+   "text": [
+    "The poem has several pastoral retreats: the moneyless shepherds of Canto II, the hermit's garden, the life of labour and simple pleasures on the island. These reflect the eighteenth-century idealisation of nature and simplicity associated with Rousseau.",
+    "Yet retreat is not the poem's goal. The young parents long for 'nobler ends' of action, the garden vanishes when the hermit dies, and the poem ends at Charlemagne's court. The idyll is a school of virtue rather than a permanent home [[sengle1949]]."
+   ]
+  },
+  {
+   "title": "East and West",
+   "text": [
+    "The action moves from France through the Islamic East and back. Bagdad and Tunis are pictured with the trappings of the eighteenth-century literary orient, with caliphs and sultans, harems and slave markets, and Islam is the object of the medieval romance's crusading hostility and the narrator's irony.",
+    "Within this convention the poem is more various than it first appears: Rezia, a Muslim princess, becomes its heroine, and Babekan and Almansor are condemned for cowardice and tyranny rather than for their faith alone. Modern readers will notice both the stereotypes and the cosmopolitan sympathy with which Wieland plays against them [[heinz2008]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "The compulsory dance",
+   "text": "Oberon's horn forces the guilty and the hostile to dance until they drop: monks and nuns in Canto II, the caliph's court in Canto V, all Tunis in Canto XII. The motif turns danger into comedy and exposes hypocrisy and tyranny by making them ridiculous."
+  },
+  {
+   "title": "Dreams and visions",
+   "text": "Prophetic and consoling dreams link the lovers and the fairy powers, and the poem begins and ends in visionary states: the narrator's rapture in the invocation and the lovers' 'holy dream' in Oberon's palace."
+  },
+  {
+   "title": "Storms",
+   "text": "Storms accompany the fairy king's appearances and anger: the tempest in the enchanted wood, the thunder at Bagdad, the storm that answers the lovers' fall, the lightning that destroys the pirate ship, and the thunder at the stake that quenches the fire."
+  },
+  {
+   "title": "Renaming and disguise",
+   "text": "Rezia becomes Amanda at her baptism and Zoradine in the harem; Huon becomes Hassan the gardener; Huon enters the caliph's hall as an emir and the final tournament as an unknown knight. Changes of name mark changes of state, and the disguises test whether the lovers remain themselves."
+  },
+  {
+   "title": "Oaths and vows",
+   "text": "The plot is driven by oaths: Huon's to Charlemagne, Oberon's against Titania, the vow of chastity, Huon's vows of fidelity, Almansor's oath by Allah. The poem studies what binding oneself means."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The ivory horn",
+   "text": "Oberon's gift, which makes enemies dance or summons the fairy king. Its loss after the lovers' fall and its reappearance on Huon's neck at the stake mark the withdrawal and return of the fairy's favour."
+  },
+  {
+   "title": "The golden goblet",
+   "text": "It fills with wine for the honest and burns the guilty: an emblem of the poem's concern with inner truth, which unmasks Babekan in Canto IV and vanishes with the horn after the fall."
+  },
+  {
+   "title": "The ring",
+   "text": "Won from the giant Angulaffer and identified as Solomon's seal, it serves as Huon's wedding ring for Rezia, saves the lovers from the sea, is lost on the island, and is recovered by Titania; at the end it shines on Oberon's hand, the sign of the fairy marriage restored."
+  },
+  {
+   "title": "The casket of beard and teeth",
+   "text": "The grotesque proof of Huon's commission, carried unspent through years of poverty by Sherasmin. It stands for the old feudal obligation, faithfully discharged, beside which the poem's real achievement, the lovers' constancy, is shown to be greater."
+  },
+  {
+   "title": "Lilies, roses and myrtle",
+   "text": "Oberon carries a lily wand and leaves a lily fragrance; Titania wears roses, and her rosebuds will turn the colour of lilies when the fairy couple are reconciled. The myrtle crown, sacred to Venus, rewards the faithful lovers."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Romance or heroic poem?",
+   "text": [
+    "Wieland's subtitle, 'romantisches Heldengedicht', placed the poem between epic and romance. In the eighteenth century 'romantisch' meant belonging to the world of medieval and Renaissance romance, and Wieland's models were Ariosto and the Italian romance-epic, with their mixture of adventure, love, magic and narratorial irony, rather than Homer or Virgil [[mccarthy1979]] [[jorgensen1994]].",
+    "Critics have debated how far the poem's serious second half, with its religious tone and its ethic of trial and renunciation, transforms the playful romance of the first cantos. Some read the whole as a unified progress from adventure to moral seriousness; others value it chiefly for its grace and wit and find the sentimental passages less successful [[sengle1949]] [[vanabbe1961]]."
+   ],
+   "cite": [
+    "mccarthy1979",
+    "jorgensen1994",
+    "sengle1949",
+    "vanabbe1961"
+   ]
+  },
+  {
+   "title": "Three sources, one plot",
+   "text": [
+    "Wieland's critics have long studied how he combined the chanson de geste of Huon, Shakespeare's fairy quarrel and Chaucer's pear-tree tale. Max Koch's early study traced the sources in detail, and later scholarship on the medieval Huon has clarified what Wieland kept: the commission, the horn and cup, the ban on consummation and its breach [[koch1880]] [[rossi1975]].",
+    "The question is whether the joining is organic. Oberon's oath makes the fairy plot depend on the human one, and the lovers' trials fulfil its terms exactly; most readers have found this one of the poem's most successful inventions, while others have thought the inset pear-tree story an awkward hinge [[heinz2008]] [[chaucer1987]] [[brooks1979]]."
+   ],
+   "cite": [
+    "koch1880",
+    "rossi1975",
+    "heinz2008",
+    "chaucer1987",
+    "brooks1979"
+   ]
+  },
+  {
+   "title": "The narrator: irony and feeling",
+   "text": [
+    "Oberon's narrator is a constant presence: he addresses the reader, deflates the giant, apologises for his inability to describe the caliph's rage, and draws a curtain over the birth of Huonet. Studies of the narrative voice have stressed its debt to Ariosto and its role in keeping the marvellous at an ironic distance [[warning1975]].",
+    "Yet the same voice weeps with the lovers and falls silent before the hermit's piety. Critics differ over whether irony and sentiment are in tension or are the two sides of a single humane attitude, sceptical about marvels but serious about feeling [[sengle1949]] [[mccarthy1979]]."
+   ],
+   "cite": [
+    "warning1975",
+    "sengle1949",
+    "mccarthy1979"
+   ]
+  },
+  {
+   "title": "Oberon's severity and the morality of the trial",
+   "text": [
+    "Oberon's punishment of the lovers, for a single breach of a command that the narrator presents with sympathy, has seemed to many readers disproportionate. The poem itself raises the question: Oberon weeps at the punishment and confesses that he too is bound by fate.",
+    "Some critics read the trials as a theodicy in miniature, in which suffering refines a love that would otherwise remain sensual; others see a tension between the poem's frank enjoyment of the senses and its demand for renunciation, a tension characteristic of Wieland's work as a whole [[jorgensen1994]] [[heinz2008]] [[starnes1987]]."
+   ],
+   "cite": [
+    "jorgensen1994",
+    "heinz2008",
+    "starnes1987"
+   ]
+  },
+  {
+   "title": "Rezia and the women of the poem",
+   "text": [
+    "Rezia is an active heroine. She chooses Huon freely when Oberon offers her the alternative, shields him with her body, leaps into the sea with him, and defies Almansor at the cost of her life. Her trial in the harem exactly parallels Huon's, so that the faithful pair are equal partners [[mccarthy1979]].",
+    "At the same time the poem's women are drawn from types: the devoted nurse, the deceitful wife of the pear tree, the oriental seductress Almansaris. Readers have asked whether Rezia's virtue is defined chiefly by her contrast with these figures, and how the poem's sensuous descriptions of women's bodies sit with its praise of female constancy [[heinz2008]]."
+   ],
+   "cite": [
+    "mccarthy1979",
+    "heinz2008"
+   ]
+  },
+  {
+   "title": "Sotheby's translation",
+   "text": [
+    "Sotheby's version was praised in its day and long remained the standard English Oberon. It is not literal: Sotheby replaced Wieland's flexible stanza with a regular nine-line stanza ending in an alexandrine, expanded and smoothed many passages, and cut most of the pear-tree story in Canto VI, presumably for reasons of propriety [[wieland1805]] [[stockley1929]].",
+    "The comparison with John Quincy Adams's closer translation, made in 1799–1801 and published only in 1940, shows how far Sotheby made the poem into an English poem in the Spenserian line, more solemn and less nimble than Wieland's German [[wieland1940]]. For students reading in English, the guide's quotations are Sotheby's, not Wieland's."
+   ],
+   "cite": [
+    "wieland1805",
+    "stockley1929",
+    "wieland1940"
+   ]
+  },
+  {
+   "title": "Oberon and English Romanticism",
+   "text": [
+    "Sotheby's translation appeared in the year of Lyrical Ballads, and Werner Beyer argued in two books that it left deep traces on English Romantic poetry: on Coleridge and Wordsworth in the late 1790s, and, through its enchanted landscapes and its theme of love tested by suffering, on Keats's Endymion and later poems [[beyer1963]] [[beyer1947]].",
+    "Beyer's claims of direct influence have been received with caution, since many of the parallels he found could derive from common sources in Spenser and the romance tradition. The documented facts are narrower: the translation was widely read, reviewed and reprinted, and the poem was among the best known German works in England [[stockley1929]]."
+   ],
+   "cite": [
+    "beyer1963",
+    "beyer1947",
+    "stockley1929"
+   ]
+  },
+  {
+   "title": "From poem to opera",
+   "text": [
+    "Weber's Oberon, composed for Covent Garden to an English libretto by Planché based on Sotheby, keeps the frame of the fairy quarrel and the lovers' trials but turns the poem into a spectacle of scenes, songs and stage effects. Weber had misgivings about the libretto's loose dramatic structure, and the opera's reputation has rested largely on its overture and on Rezia's great aria 'Ocean, thou mighty monster' [[warrack1976]].",
+    "The opera shows how the poem was read in the 1820s: as a fairy romance of the Orient and the sea, rather than as an ironic verse narrative. It also helped to keep Oberon's name alive in England long after Wieland's poem had ceased to be widely read."
+   ],
+   "cite": [
+    "warrack1976"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "I.1",
+   "quote": "Yet once again, ye Muses ! once again\nSaddle the Hyppogryf ! and wing my way\nWhere regions of romance their charms display.",
+   "who": "The narrator",
+   "explanation": "The opening invokes Ariosto's hippogriff, placing the poem in the line of Italian romance and announcing a flight of fancy that the narrator will both enjoy and gently mock."
+  },
+  {
+   "ref": "II.52",
+   "quote": "But, ah ! thou art a child of Adam's kind,\n\" Form'd of soft clay, and to the future blind !\n\" Woes without end oft spring from transient lust :",
+   "who": "Oberon to Huon",
+   "explanation": "Oberon's affectionate warning states the danger that will bring about the lovers' fall and their long trial."
+  },
+  {
+   "ref": "IV.11",
+   "quote": "' Sir, after all, a dream is but a dream :",
+   "who": "Sherasmin",
+   "explanation": "The squire's comic scepticism answers Huon's faith in his dream; the poem holds both attitudes in balance."
+  },
+  {
+   "ref": "V.70",
+   "quote": "\" Fate leaves her free to choose — but now — and never more.",
+   "who": "Oberon",
+   "explanation": "Oberon gives Rezia a free choice between her throne and Huon; her consent turns the medieval abduction into a marriage of love."
+  },
+  {
+   "ref": "VI.31",
+   "quote": "Rezia is dead — Amanda lives to prove\nSource, centre, circle of existence, love !",
+   "who": "The narrator",
+   "explanation": "At her baptism Rezia becomes Amanda, a new self defined wholly by love."
+  },
+  {
+   "ref": "VI.42",
+   "quote": "\" Till, mark'd by fate itself, a youthful pair,\n\" Warm'd by pure love, and faith's undying flame,\n\" In weal or wo eternally the same,",
+   "who": "Oberon to Titania (in Sherasmin's tale)",
+   "explanation": "The oath that links the fairy plot to the human one: Oberon's reconciliation depends on the constancy of a mortal pair."
+  },
+  {
+   "ref": "VII.22",
+   "quote": "\" Is love a sin ? may Heaven forgive the crime !",
+   "who": "Huon",
+   "explanation": "Condemned by lot to die for breaking his vow, Huon accepts his guilt but cannot condemn love itself."
+  },
+  {
+   "ref": "VII.67",
+   "quote": "' Not punishments but trials press around ;",
+   "who": "Amanda",
+   "explanation": "Amanda reads their sufferings as trials sent by a loving providence, the interpretation the rest of the poem confirms."
+  },
+  {
+   "ref": "VIII.38",
+   "quote": "More than an hundred weeks alone self-rein'd —\nThe noblest victory Huon ever gain'd.",
+   "who": "The narrator",
+   "explanation": "Self-mastery is ranked above every feat of arms: the knight's true heroism is moral."
+  },
+  {
+   "ref": "XII.51",
+   "quote": "Barbarian ! vain thy rage — I also know to die.",
+   "who": "Amanda to Almansor",
+   "explanation": "Refusing the sultan's throne, Amanda joins Huon at the stake and fulfils the last term of Oberon's oath."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Wieland begin the poem with a vision of its later events?",
+   "hint": "Consider the first eight stanzas of Canto I, the shift from rapture to calm narration, and what the reader then watches for."
+  },
+  {
+   "q": "How does Wieland change the Oberon of Huon de Bordeaux and of Shakespeare's Dream?",
+   "hint": "Compare the dwarf king of the chanson and Shakespeare's jealous Oberon with Wieland's child-king who weeps, punishes, and is himself bound by an oath."
+  },
+  {
+   "q": "What is the function of Sherasmin in the poem?",
+   "hint": "Look at his fear of goblins (Canto II), his nightmares (Canto IV), his debate with his genius (Canto IX), and his rescue of the lovers (Canto XII)."
+  },
+  {
+   "q": "Is Oberon's punishment of the lovers just?",
+   "hint": "Weigh the narrator's sympathy in Canto VII, Huon's confession, Amanda's 'trials, not punishments', and Oberon's words on fate in Canto X."
+  },
+  {
+   "q": "How exactly do the lovers fulfil the terms of Oberon's oath?",
+   "hint": "Set the oath in Canto VI beside the leap into the sea, the island, the harem and the pyre."
+  },
+  {
+   "q": "How active is Rezia/Amanda as a heroine?",
+   "hint": "Consider her dream, her choice in Canto V, her leap in Canto VII, her speech on the island, and her defiance of Almansor in Canto XII."
+  },
+  {
+   "q": "What role do dreams play in the poem's structure?",
+   "hint": "Trace the dreams of Huon and Rezia, Sherasmin's nightmares, Amanda's trance in the grotto, and the lovers' final 'holy dream'."
+  },
+  {
+   "q": "Why does the island idyll end?",
+   "hint": "Think about the parents' longing for action in Canto IX, the hermit's death, and the vanishing of the garden."
+  },
+  {
+   "q": "How does the poem treat the Islamic East?",
+   "hint": "Consider Bagdad and Tunis, Babekan and Almansor, the harem scenes, and the fact that the heroine is a caliph's daughter."
+  },
+  {
+   "q": "What is gained and lost in Sotheby's English version?",
+   "hint": "Note the regular nine-line stanza with its closing alexandrine, the abridged tale in Canto VI, and the guide's remarks on Wieland's freer stanza."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "berners1882",
+   "text": "Berners, John Bourchier, Lord, trans. The Boke of Duke Huon of Burdeux. Edited by S. L. Lee. Early English Text Society, Extra Series 40, 41, 43, 50. London: Trübner, 1882–1887."
+  },
+  {
+   "id": "beyer1947",
+   "text": "Beyer, Werner W. Keats and the Daemon King. New York: Oxford University Press, 1947."
+  },
+  {
+   "id": "beyer1963",
+   "text": "Beyer, Werner W. The Enchanted Forest. Oxford: Basil Blackwell, 1963."
+  },
+  {
+   "id": "chaucer1987",
+   "text": "Chaucer, Geoffrey. The Riverside Chaucer. General editor Larry D. Benson. 3rd ed. Boston: Houghton Mifflin, 1987."
+  },
+  {
+   "id": "heinz2008",
+   "text": "Heinz, Jutta, ed. Wieland-Handbuch: Leben – Werk – Wirkung. Stuttgart: Metzler, 2008."
+  },
+  {
+   "id": "huon2003",
+   "text": "Huon de Bordeaux: Chanson de geste du XIIIe siècle. Edited by William W. Kibler and François Suard. Paris: Champion, 2003."
+  },
+  {
+   "id": "jorgensen1994",
+   "text": "Jørgensen, Sven-Aage, Herbert Jaumann, John A. McCarthy and Horst Thomé. Christoph Martin Wieland: Epoche – Werk – Wirkung. Munich: Beck, 1994."
+  },
+  {
+   "id": "koch1880",
+   "text": "Koch, Max. Das Quellenverhältniss von Wielands Oberon. Marburg: Elwert, 1880."
+  },
+  {
+   "id": "mccarthy1979",
+   "text": "McCarthy, John A. Christoph Martin Wieland. Twayne's World Authors Series. Boston: Twayne, 1979."
+  },
+  {
+   "id": "pascal1937",
+   "text": "Pascal, Roy. Shakespeare in Germany, 1740–1815. Cambridge: Cambridge University Press, 1937."
+  },
+  {
+   "id": "rossi1975",
+   "text": "Rossi, Marguerite. Huon de Bordeaux et l'évolution du genre épique au XIIIe siècle. Paris: Champion, 1975."
+  },
+  {
+   "id": "sengle1949",
+   "text": "Sengle, Friedrich. Wieland. Stuttgart: Metzler, 1949."
+  },
+  {
+   "id": "brooks1979",
+   "text": "Shakespeare, William. A Midsummer Night's Dream. Edited by Harold F. Brooks. The Arden Shakespeare. London: Methuen, 1979."
+  },
+  {
+   "id": "starnes1987",
+   "text": "Starnes, Thomas C. Christoph Martin Wieland: Leben und Werk. 3 vols. Sigmaringen: Thorbecke, 1987."
+  },
+  {
+   "id": "stockley1929",
+   "text": "Stockley, V. German Literature as Known in England, 1750–1830. London: Routledge, 1929."
+  },
+  {
+   "id": "vanabbe1961",
+   "text": "Van Abbé, Derek. Christoph Martin Wieland (1733–1813): A Literary Biography. London: Harrap, 1961."
+  },
+  {
+   "id": "warning1975",
+   "text": "Warning, Gerda. Die Funktion des Erzählers in Wielands „Oberon“ und Puškins „Ruslan und Ljudmila“. Clausthal-Zellerfeld: Bönecke, 1975."
+  },
+  {
+   "id": "warrack1976",
+   "text": "Warrack, John. Carl Maria von Weber. 2nd ed. Cambridge: Cambridge University Press, 1976."
+  },
+  {
+   "id": "wieland1805",
+   "text": "Wieland, Christoph Martin. Oberon: A Poem, from the German of Wieland. Translated by William Sotheby. 2nd ed. 2 vols. London: Cadell and Davies, 1805."
+  },
+  {
+   "id": "wieland1940",
+   "text": "Wieland, Christoph Martin. Oberon: A Poetical Romance in Twelve Books. Translated by John Quincy Adams. Edited by A. B. Faust. New York: F. S. Crofts, 1940."
+  },
+  {
+   "id": "wieland1964",
+   "text": "Wieland, Christoph Martin. Werke. Edited by Fritz Martini and Hans Werner Seiffert. 5 vols. Munich: Hanser, 1964–1968."
+  }
+ ]
+}

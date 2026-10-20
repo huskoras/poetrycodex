@@ -1,0 +1,706 @@
+{
+ "work": "kumarasambhava",
+ "title": "The Birth of the War-God (Kumārasambhava)",
+ "author": "Kālidāsa",
+ "quoteEdition": "birth-of-the-war-god-griffith",
+ "updated": "2026-10-19",
+ "unit": "Canto",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Kālidāsa, the most celebrated poet and dramatist of classical Sanskrit, probably active around 400 CE under the Gupta kings; the Aihole inscription of 634 CE already names him as a famous poet"
+  },
+  {
+   "label": "Language and genre",
+   "value": "Sanskrit verse; a mahākāvya, or 'great poem', the courtly epic of descriptive set pieces, elaborate figures and varied metres"
+  },
+  {
+   "label": "Subject",
+   "value": "How the goddess Pārvatī (Umā), daughter of the Himalaya, wins the ascetic god Śiva as her husband, so that their son Kumāra (Skanda) may be born to destroy the demon Tāraka"
+  },
+  {
+   "label": "Extent",
+   "value": "Seventeen cantos in the printed vulgate; the first eight are generally accepted as Kālidāsa's, and cantos IX–XVII, which tell of Kumāra's birth and victory, are widely regarded as a later continuation"
+  },
+  {
+   "label": "This edition",
+   "value": "Ralph T. H. Griffith's verse translation of the first seven cantos, in rhymed couplets, first published in 1853 and revised for Trübner's Oriental Series in 1879; it condenses and paraphrases freely"
+  },
+  {
+   "label": "Setting",
+   "value": "The Himalaya and its peaks; Brahmā's heaven and Indra's world; Śiva's hermitage grove; the mountain city of Himālaya; Mount Kailāsa"
+  },
+  {
+   "label": "Main figures",
+   "value": "Pārvatī (Umā); Śiva; Himālaya and his queen Menā; Kāma, god of love, his wife Rati and his friend Spring (Vasanta); Indra, Brahmā and the gods; the demon Tāraka; the Seven Sages and Arundhatī"
+  },
+  {
+   "label": "Key episodes",
+   "value": "Pārvatī's birth and beauty (I); the gods' appeal to Brahmā (II); the burning of Kāma (III); Rati's lament (IV); Pārvatī's austerities and the disguised suitor (V); the betrothal (VI); the wedding (VII)"
+  },
+  {
+   "label": "Other works",
+   "value": "The Raghuvaṃśa (a second mahākāvya), the Meghadūta (The Cloud Messenger), and three plays: Abhijñānaśākuntala, Vikramorvaśīya and Mālavikāgnimitra"
+  },
+  {
+   "label": "Key translations",
+   "value": "Griffith (1853; 2nd ed. 1879); Hank Heifetz, The Origin of the Young God (cantos I–VIII, 1985); David Smith, The Birth of Kumára, Clay Sanskrit Library (all seventeen cantos, 2005)"
+  }
+ ],
+ "context": [
+  "Almost nothing certain is known of Kālidāsa's life. Indian legend made him a dull youth turned great poet by the grace of the goddess Kālī, and placed him among the 'nine jewels' at the court of a king Vikramāditya; neither story can be trusted. The evidence of his works, their language and their echoes in later poetry and inscriptions points to the Gupta age, and most scholars place him around 400 CE, perhaps in the reigns of Candragupta II and Kumāragupta I. A firm limit is given by the Aihole inscription of 634 CE, whose poet boasts of rivalling Kālidāsa and Bhāravi [[mirashi1969]] [[keith1928]]. Besides the Kumārasambhava, Kālidāsa is credited with a second long poem, the Raghuvaṃśa, the short Meghadūta, and three plays, of which Śakuntalā became the most famous Sanskrit work in Europe [[miller1984]].",
+  "The Kumārasambhava is a mahākāvya, the genre that Sanskrit critics later treated as the summit of poetry. A great poem in this sense tells a story drawn from legend, divided into cantos (sargas), and gives full scope to set descriptions: mountains, seasons, sunrise and moonrise, love in union and in separation, councils, embassies, weddings and wars. Its pleasure lies less in plot than in the poet's ornament, above all simile and the fanciful conceit (utprekṣā), and in the emotional flavour, rasa, that the whole is designed to produce. Kālidāsa's two epics became models for the genre, and his verses were quoted for centuries by anthologists and theorists [[lienhard1984]] [[warder1977]] [[ingalls1965]].",
+  "The myth behind the title is old. The Sanskrit epics tell how the gods, oppressed by demons, needed a general who could only be born from Śiva's seed, and how that seed passed through Agni, the river Gaṅgā and the six Kṛttikās before Skanda, also called Kumāra ('the Boy') and Kārttikeya, was born [[goldman1984]] [[vanbuitenen1975]]. The cult of Skanda as war-god flourished in northern India in the centuries before Kālidāsa, and it may not be chance that two Gupta rulers bore the names Kumāragupta and Skandagupta [[mann2012]]. Kālidāsa's originality was to shift the weight of the story from the war to the marriage: what the poem as we have it narrates is not a birth but a courtship, in which an ascetic god must be brought to love and a young woman must make herself worthy of him [[oflaherty1973]].",
+  "The poem's extent is a famous problem. Printed editions contain seventeen cantos, but the great commentator Mallinātha, whose glosses accompany most traditional editions, wrote only on the first eight, and the later cantos are found in fewer manuscripts and are not quoted by the classical theorists. Most scholars therefore accept cantos I–VIII as Kālidāsa's and regard IX–XVII, which describe the birth of Kumāra and his war against Tāraka, as the work of a later hand [[kale1995]] [[heifetz1985]] [[smith2005]]. The eighth canto, which describes the love-making of Śiva and Pārvatī after the wedding, is itself controversial, not for its authorship but for its subject.",
+  "Ralph Thomas Hotchkin Griffith (1826–1906), a Sanskritist who spent most of his career at the Government College at Benares and later translated the Rāmāyaṇa and the Vedic hymns, published The Birth of the War-God in 1853 and revised it for Trübner's Oriental Series in 1879 [[griffith1879]]. He rendered only the first seven cantos and stopped at the wedding, before the eighth canto's description of the divine honeymoon. His version is in English rhymed couplets, and it is a paraphrase rather than a verse-for-verse translation: Griffith compresses, expands, and adds Victorian turns of phrase and moral reflection of his own. It should be read as an English poem of its age, and for the sense of particular verses students should compare a modern translation such as Heifetz's or Smith's [[heifetz1985]] [[smith2005]]."
+ ],
+ "plot": [
+  "The demon Tāraka, made almost invincible by a boon of the creator Brahmā, has conquered the three worlds and humiliated the gods. Brahmā tells them that only a son of Śiva can defeat him. But Śiva, since the death of his first wife Satī, lives as a solitary ascetic on a Himalayan peak, indifferent to love. Satī herself has been reborn as Pārvatī, also called Umā, the beautiful daughter of the mountain-king Himālaya and his queen Menā, and the sage Nārada has foretold that she will be Śiva's bride. Her father sends her to wait on the god in his hermitage.",
+  "Indra, king of the gods, enlists Kāma, the god of love, to break Śiva's meditation. With his wife Rati and his friend Spring, Kāma enters the grove and makes the season bloom out of time. At the moment when Pārvatī offers Śiva a rosary, Kāma looses his flower arrow; Śiva feels a stir of passion, masters it, sees the archer, and burns him to ashes with the fire of his third eye. Pārvatī is carried home by her father, humiliated. Rati laments her husband and prepares to die on his pyre, until a voice from heaven promises that Kāma will receive his body again once Śiva marries.",
+  "Pārvatī concludes that beauty alone cannot win such a husband and resolves to win him by tapas, ascetic austerity. Against her mother's pleas she goes to the mountains, wears bark, sits between fires in summer and lies in the rain and snow, and at last refuses even fallen leaves, earning the name Aparṇā. A young Brahmin student visits her, learns her purpose and pours scorn on Śiva as a homeless, snake-wreathed haunter of cremation grounds. Pārvatī defends the god with passion and turns to leave, and the visitor reveals himself as Śiva, declaring himself her slave.",
+  "Śiva sends the Seven Sages and Arundhatī, wife of Vasiṣṭha, to ask Himālaya for his daughter. Himālaya consults Menā with a glance and gives his consent, and the wedding is fixed for the fourth day. In canto VII Pārvatī is bathed and adorned, Śiva's terrible ornaments are transformed into wedding finery, and he rides in procession with the gods to Himālaya's city, where the women crowd to the windows to see him. The couple walk around the sacred fire, the gods bless them, and at their plea Śiva agrees to restore Kāma. Griffith's version ends as the bride is led to the bridal chamber; in the Sanskrit, canto VIII goes on to describe their love-making."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Umā's Nativity",
+   "lines": "Sanskrit canto I (abridged)",
+   "section": 0,
+   "summary": [
+    "The poem opens with the Himalaya, a mountain that is also a god and a king. Kālidāsa describes its snows, minerals and caves, the elephants, yaks and lions of its slopes, the heavenly musicians and nymphs who play there, and the Gaṅgā that flows from it. The creator has made it lord of mountains with a share in sacrifice. Himālaya marries Menā, who bears a son, Maināka, the one mountain that kept its wings when Indra cut the wings from the others, and then a daughter.",
+    "This daughter is Satī reborn. In her former life she was Śiva's wife, but her father Dakṣa insulted the god and she gave up her body in protest. Her birth is greeted with signs of heavenly favour. She is called Pārvatī, 'daughter of the mountain', and earns the name Umā when her mother tries to dissuade her from austerity. As she grows, memories of her former life return. The poet then devotes a long sequence to her beauty, from feet to hair. Nārada foretells that she will become Śiva's wife, but Himālaya hesitates to offer her unasked. Meanwhile Śiva, mourning Satī, practises austerities on a Himalayan peak with his attendants and his bull. Himālaya sends Pārvatī to serve him, and the god accepts her service without being moved."
+   ],
+   "analysis": [
+    "The opening is among the most quoted in Sanskrit. To begin a poem about the gods with a mountain is a statement of method: the natural world is itself divine, and its sublimity prepares the reader for the union of Śiva, the ascetic of the heights, with the mountain's daughter. The description is built of the miniature scenes and conceits for which Kālidāsa was admired, and Griffith turns them into a sequence of polished couplets, sometimes moralising more explicitly than the Sanskrit [[griffith1879]].",
+    "The head-to-foot portrait of Pārvatī is a convention of court poetry, but Kālidāsa gives it a narrative function. Her beauty is perfect and yet, as the canto's end makes clear, it does not move the god, and the poem will have to discover what can. Griffith's own diction is frankly sensuous here, more than Victorian readers might expect, though he also smooths over some of the bolder comparisons [[heifetz1985]]. The pun on the name Umā, from the mother's cry 'u mā' ('O, do not!'), introduces at the very start the conflict between a parent's tenderness and a daughter's will to undergo austerity."
+   ],
+   "key": [
+    {
+     "ref": "KS, Canto I (Griffith)",
+     "quote": "Far in the north HIMÁLAYA, lifting high\nHis towery summits till they cleave the sky,\nSpans the wide land from east to western sea,\nLord of the hills, instinct with deity.",
+     "note": "Griffith's version of the celebrated first verse, in which the mountain is called a being whose soul is divine and a measuring rod stretched between the eastern and western oceans."
+    },
+    {
+     "ref": "KS, Canto I (Griffith)",
+     "quote": "But when her mother, filled with anxious care\nAt her stern penance, cried Forbear! Forbear!\nTo a new title was the warning turned,\nAnd UMÁ was the name the maiden earned.",
+     "note": "Griffith renders the Sanskrit pun on 'u mā' ('O, do not!') by its sense, so that the English reader learns the etymology without the sound play."
+    },
+    {
+     "ref": "KS, Canto I (Griffith)",
+     "quote": "The hermit welcomed with a courteous brow\nThat gentle enemy of hermit vow.",
+     "note": "Śiva admits Pārvatī to his service as if she were no danger; the paradox of the 'gentle enemy' states the problem of the next two cantos."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Address to Brahmā",
+   "lines": "Sanskrit canto II (abridged)",
+   "section": 1,
+   "summary": [
+    "Oppressed by the demon Tāraka, the gods go to Brahmā led by Indra. They praise him in a long hymn as the single being who divided himself into three persons as creator, preserver and destroyer, who is both the primal matter and the spirit that watches it, the sacrifice and the sacrificer. Brahmā welcomes them and asks why their weapons and splendour are dimmed: Indra's thunderbolt, Varuṇa's noose, Kubera's mace and Yama's staff.",
+    "Bṛhaspati, the gods' preceptor, describes Tāraka's tyranny. The sun and moon serve him, the seasons bring flowers to his gardens, the sea ripens pearls for him, Indra sends him flowers from the heavenly tree, and he plunders the sacrifices and the heavenly Gaṅgā. The gods ask for a general. Brahmā replies that he cannot destroy a demon he has himself favoured with a boon, just as one should not cut down a poisonous tree one has planted. Only a son of Śiva can defeat Tāraka, and only Pārvatī can attract the god, as a magnet draws iron. The gods depart, and Indra goes to seek out Kāma."
+   ],
+   "analysis": [
+    "Canto II supplies the cosmic motive for the love story. The gods' hymn draws on the philosophical vocabulary of the age, including the Sāṃkhya pairing of nature and the detached spirit, and it presents Brahmā in terms elsewhere used of the supreme deity. Griffith's phrase about the 'Three Persons' imports a Christian theological word into a Hindu idea of the trimūrti, a reminder that his translation interprets as it renders [[griffith1879]] [[keith1928]].",
+    "The canto is also an example of Kālidāsa's wit in similes drawn from learned disciplines. Brahmā asks whether the gods' power has been overruled 'as a general law is set aside by a special rule', a comparison from the technical language of grammar and law. Bṛhaspati's catalogue of nature's servility to Tāraka is a satire on tyranny through the conventions of royal panegyric: everything that should praise a king serves a demon [[smith2005]]."
+   ],
+   "key": [
+    {
+     "ref": "KS, Canto II (Griffith)",
+     "quote": "Have ye now yielded to some stronger might,\nEven as on earth a general law may be\nMade powerless by a special text's decree?",
+     "note": "Brahmā's simile comes from the scholastic principle that a specific rule overrides a general one."
+    },
+    {
+     "ref": "KS, Canto II (Griffith)",
+     "quote": "And well ye know that e'en a poisonous tree\nBy him who planted it unharmed should be.",
+     "note": "The creator explains his helplessness: a boon once given binds the giver, so the remedy must come from elsewhere."
+    },
+    {
+     "ref": "KS, Canto II (Griffith)",
+     "quote": "Perchance, the Mountain-child, with magnet's force,\nMay turn the iron from its steadfast course,",
+     "note": "The magnet and iron image sets the terms of the plot: Śiva's will is iron, and Pārvatī must draw it."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Death of Love",
+   "lines": "Sanskrit canto III (abridged)",
+   "section": 2,
+   "summary": [
+    "Kāma comes before Indra and offers to bend any enemy to his will, even Śiva. Indra sends him to the Himalaya, where Pārvatī serves the god, and Kāma sets out with his wife Rati and his friend Spring. Spring arrives out of season in the ascetic's grove: the aśoka blooms without the touch of a woman's foot, the mango puts out its shoots, bees and cuckoos sing, and every creature turns to love. Even the hermits feel the change, but Śiva does not.",
+    "Nandin, Śiva's doorkeeper, silences the grove. Kāma creeps near and sees Śiva seated in yogic posture, motionless as a windless lamp, absorbed in the supreme self, and his bow falls from his hands. Then Pārvatī comes, adorned with spring flowers, and Kāma takes heart. Śiva emerges from meditation and blesses her with a husband who will love only her. As she offers him a rosary of lotus seeds, Kāma shoots. Śiva's composure wavers for a moment as he gazes at her lips. He masters himself, sees Kāma poised to shoot, and the fire from his third eye burns the god of love to ashes, despite the gods' cry for mercy. Śiva leaves the place, and Himālaya carries away his grief-stricken daughter."
+   ],
+   "analysis": [
+    "The canto is built as a contest between two powers, desire and ascetic concentration, and its art lies in the contrast of tempo. The long, luxuriant description of the false spring, with its paired animals and lovers, is suddenly stilled by Nandin's gesture, and then by the portrait of Śiva in meditation, one of the classic images of yogic stillness in Sanskrit literature [[oflaherty1973]].",
+    "The burning of Kāma is decisive, but it is not simply a victory of asceticism. Śiva does feel desire, and the god of love is destroyed, not abolished: the rest of the poem will show desire reborn in a form compatible with dharma, through Pārvatī's own tapas and through marriage. Wendy Doniger O'Flaherty has shown how the myths of Śiva hold asceticism and eroticism in tension rather than opposition, and Kālidāsa's canto is the most refined literary expression of that tension [[oflaherty1973]]. Griffith ends the canto with the elephant lifting a lily, a simile for Himālaya bearing Pārvatī away, which keeps the Sanskrit's tender closing image."
+   ],
+   "key": [
+    {
+     "ref": "KS, Canto III (Griffith)",
+     "quote": "Calm as a full cloud resting on a hill,\nA waveless lake when every breeze is still,\nLike a torch burning in a sheltered spot,\nSo still was he, unmoving, breathing not.",
+     "note": "Three similes for perfect concentration; the lamp in a windless place is a traditional image for the steady mind of the yogi."
+    },
+    {
+     "ref": "KS, Canto III (Griffith)",
+     "quote": "Rash as some giddy moth that wooes the flame,\nLOVE seized the moment, and prepared to aim.",
+     "note": "The moth simile anticipates Kāma's fate in fire before it happens."
+    },
+    {
+     "ref": "KS, Canto III (Griffith)",
+     "quote": "Alas! that angry eye's resistless flashes\nHave scorched the gentle King of Love to ashes!",
+     "note": "The climax comes as an exclamation after the gods' vain plea, so that the event is reported as already past."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Rati's Lament",
+   "lines": "Sanskrit canto IV (abridged)",
+   "section": 3,
+   "summary": [
+    "Rati wakes from her swoon to find herself a widow and Kāma a heap of ashes. She calls on him, recalls their love games, the flowers with which she bound him and the garland he was weaving for her, and imagines the world without love: the moon will rise dim, the cuckoo will lose its message, lovers will find no guide. When Spring appears, her grief breaks out again. She asks him to build a pyre so that she may follow her husband, as the lightning goes with the cloud and the moonlight with the moon.",
+    "As she is about to die, a voice from the sky tells her to live. Kāma's death was a punishment, for he once stirred the creator himself with improper desire; but when Śiva, won by Pārvatī's austerities, marries her, he will give Kāma back his body. Comforted, Rati waits for that day, as the pale moon waits by day for the night."
+   ],
+   "analysis": [
+    "Rati's lament is the poem's great passage in the mode of karuṇa, pathos. It is built on the conventions of the funeral lament, with apostrophe, memory, and the conceit that all nature shares the mourner's loss, and it is also a portrait of a marriage of equals in pleasure. In the terms of Sanskrit poetics it may also be read as love in separation, a stage that heightens the union to come [[warder1977]].",
+    "The voice from heaven alludes to the myth of Brahmā's desire for his own daughter, which Griffith renders discreetly ('his fair child's influence'). Rati's resolve to die on the pyre reflects the ideal of the wife who follows her husband in death, which she supports with examples from nature, the lotus and the moon, the lightning and the cloud [[smith2005]]. The promise of Kāma's return ties the lament to the main plot: love's restoration depends on the success of Pārvatī's penance."
+   ],
+   "key": [
+    {
+     "ref": "KS, Canto IV (Griffith)",
+     "quote": "Too soon her gentle soul returned to know\nThe pangs of widowhood--that word of woe.",
+     "note": "The canto begins with Rati's awakening, and Griffith adds the explicit naming of widowhood."
+    },
+    {
+     "ref": "KS, Canto IV (Griffith)",
+     "quote": "There on the turf his dumb cold ashes lay,\nWhose soul that fiery flash had scorched away.",
+     "note": "The contrast between the living lover Rati remembers and the ashes before her drives the whole lament."
+    },
+    {
+     "ref": "KS, Canto IV (Griffith)",
+     "quote": "The Gods, like clouds, are fierce and gentle too,\nNow hurl the bolt, now drop sweet heavenly dew.",
+     "note": "The heavenly voice offers a theodicy in a single simile: the same power punishes and restores."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Umā's Reward",
+   "lines": "Sanskrit canto V (abridged)",
+   "section": 4,
+   "summary": [
+    "Pārvatī curses her beauty for failing her and resolves to win Śiva by austerity. Her mother Menā tries to dissuade her, but with her father's permission she goes to a mountain peak, puts aside her jewels for a garment of bark and a girdle of grass, tends the trees and the fawns, and keeps the fires and the rites like a seasoned ascetic. She increases her penance: in summer she sits between four fires with the sun overhead, in the rains she lies on bare rock, in winter in water and snow, and at last she gives up even fallen leaves as food, so that she is called Aparṇā.",
+    "A young Brahmin ascetic with matted hair and staff visits her. He praises her, asks why one so fortunate should undertake such penance, and, when her companion reveals that she wants Śiva, he mocks the god: a man with snakes for bracelets and an elephant's hide for clothes, who rides a bull, smears himself with ashes and haunts cremation grounds, and whose birth no one knows. Pārvatī answers in anger that small minds cannot understand the great, that Śiva's poverty is the source of all wealth and his inauspicious ornaments are holy, and that she loves him whatever his faults. As she turns to go, the visitor takes his true form: he is Śiva, and he declares himself her slave, bought by her austerities."
+   ],
+   "analysis": [
+    "Canto V is the turning point and, for many readers, the poem's heart. Pārvatī ceases to be an object of description and becomes an agent who wins her husband by the same discipline that gives sages their power. Gary Tubb has argued that this makes her the true hero of the poem, the figure whose effort and triumph give it its shape [[tubb1984]]. The famous verse of the first raindrops, falling on her eyelashes, her lip and her breast, joins the erotic and the ascetic in a single image: the body that endures the rain is also the body the poet admires.",
+    "The dialogue with the disguised Śiva is a test, and also a statement of theology. The student's mockery lists exactly the paradoxical attributes of Śiva in Hindu tradition, and Pārvatī's reply turns each of them into a sign of transcendence. Her final lines on the guilt of anyone who listens to slander give the scene a moral close. The revelation, with Pārvatī poised between going and staying 'like a river checked by a rock', is one of Kālidāsa's best-known moments, and Griffith keeps both its simile and its suspended gesture [[heifetz1985]] [[griffith1879]]."
+   ],
+   "key": [
+    {
+     "ref": "KS, Canto V (Griffith)",
+     "quote": "The first clear rain-drops falling on her brow,\nGem it one moment with their light, and now\nKissing her sweet lip find a welcome rest\nIn the deep valley of the lady's breast;",
+     "note": "Griffith's version of the celebrated raindrop verse, in which the drops trace a path down the body of the motionless ascetic."
+    },
+    {
+     "ref": "KS, Canto V (Griffith)",
+     "quote": "A husband, lady? O forbear the thought,\nA priceless jewel seeks not, but is sought.",
+     "note": "The disguised Śiva's maxim teases Pārvatī: she should be sought, not seek."
+    },
+    {
+     "ref": "KS, Canto V (Griffith)",
+     "quote": "One foot uplifted, shall she turn away?\nUnmoved the other, shall the maiden stay?",
+     "note": "The moment of revelation is caught in a frozen stride, between departure and return."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Umā's Espousals",
+   "lines": "Sanskrit canto VI (abridged)",
+   "section": 5,
+   "summary": [
+    "Pārvatī asks Śiva, through a friend, to seek her hand from her father. Śiva summons the Seven Sages with Arundhatī, the model of the faithful wife. Seeing her, he too longs for marriage, and the poet reflects that wedded love is a path to virtue. The sages praise Śiva and ask his will; he tells them that he seeks Pārvatī as a bride for the gods' sake, so that a son may be born to defeat Tāraka, and sends them as his messengers.",
+    "They fly to Himālaya's city, a place more splendid than heaven, and the mountain-king receives them with humble joy. The sage Aṅgiras speaks on Śiva's behalf, praising the mountain as a support of the earth and asking for his daughter for the Lord of the world. Pārvatī, standing by her father, counts the petals of the lotus she holds. Himālaya looks to Menā, sees her assent in her eyes, and gives his daughter. The wedding is set for the fourth day, and Śiva waits impatiently."
+   ],
+   "analysis": [
+    "The canto moves the story from myth to ritual. Kālidāsa follows the forms of a proper Hindu betrothal, with messengers, the father's consent and the mother's role, and gives each the dignity of a court ceremony. The choice of Arundhatī as companion of the embassy is pointed: she embodies the conjugal fidelity that the marriage will sanctify, and her presence is what first turns the ascetic's mind to marriage [[smith2005]].",
+    "The petal-counting is one of the most praised details in Sanskrit poetry. Pārvatī's silent gesture says more than speech, and later theorists cited verses like this as examples of meaning suggested rather than stated, the doctrine of dhvani [[ingalls1990]]. Griffith turns the gesture into a couplet ('in sweet maiden guile') and adds, at the canto's end, a closing moral of his own: if the Lord of heaven cannot rest for love, how much less a mortal [[griffith1879]]."
+   ],
+   "key": [
+    {
+     "ref": "KS, Canto VI (Griffith)",
+     "quote": "What hath such power to lead the soul above\nBy virtue's pleasant path as wedded love!",
+     "note": "The poem's argument in a couplet: the ascetic god is brought to marriage as the form of love that leads to virtue."
+    },
+    {
+     "ref": "KS, Canto VI (Griffith)",
+     "quote": "And numbered o'er with seeming care the while\nHer lotus' petals in sweet maiden guile.",
+     "note": "Pārvatī's modest reaction to the proposal, a celebrated instance of emotion shown through gesture alone."
+    },
+    {
+     "ref": "KS, Canto VI (Griffith)",
+     "quote": "Oh, if the Lord of Heaven could find no rest,\nThink, think how Love, strong Love, can tear a mortal's breast!",
+     "note": "The canto ends on Śiva's impatience; the generalising exclamation is Griffith's emphasis."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Umā's Bridal",
+   "lines": "Sanskrit canto VII (abridged)",
+   "section": 6,
+   "summary": [
+    "On the auspicious day, Himālaya's city is decorated and his kinswomen embrace the bride. Pārvatī is anointed, bathed, dressed in white silk and adorned; her mother marks her forehead and ties the wedding thread, though her tears get in the way. Meanwhile on Kailāsa, Śiva's ornaments become fit for a wedding of their own accord: the skull becomes a crown, the elephant hide a silken robe, the ashes fragrant unguent, the snakes jewels. He rides his bull with the Mothers and Kālī in his train, and Brahmā, Viṣṇu, Indra and the gods join the procession.",
+    "At Himālaya's city, the women run to the windows half-dressed to see the bridegroom pass and praise Pārvatī's choice. Śiva is led to the bride. Their hands are joined, they walk three times around the fire, she offers parched grain, and Śiva shows her the pole star as a model of constancy. Brahmā blesses her with heroic sons, the goddess of speech blesses the couple, and nymphs perform a dramatic dance. The gods ask Śiva to restore Kāma, and he grants it. The couple are left alone, and Griffith ends with the shy bride turning her face away."
+   ],
+   "analysis": [
+    "The wedding canto is a magnificent sequence of ritual and spectacle. Its humour lies in the transformations of Śiva, whose terrifying attributes become bridal finery, and in the famous scene of the women at the windows, a set piece that Kālidāsa also used, in almost the same verses, in the seventh canto of the Raghuvaṃśa [[warder1977]] [[lienhard1984]]. The repetition has been explained in different ways, as a poet reusing his own work or as evidence of the conventional character of such descriptions.",
+    "The restoration of Kāma closes the poem's moral arc: desire, destroyed when it tried to overcome asceticism by force, is restored within marriage at the gods' plea. In the Sanskrit, the wedding is followed by canto VIII, which describes the couple's love-making through a long succession of seasons. Griffith ends before it, and his final couplets on the bride's modesty make the wedding a fitting close for a Victorian reader, though not for Kālidāsa's design [[heifetz1985]] [[griffith1879]]."
+   ],
+   "key": [
+    {
+     "ref": "KS, Canto VII (Griffith)",
+     "quote": "One from her maiden tore her foot away\nOn which the dye, all wet and streaming, lay,",
+     "note": "A detail from the scene of the women at the windows, whose haste leaves footprints of red dye across the room."
+    },
+    {
+     "ref": "KS, Canto VII (Griffith)",
+     "quote": "Seest thou the brightness of yon polar star?\nLike that unchanging ray thy faith must shine.\"\nSobbing, she whispered, \"Yes, for ever thine.\"",
+     "note": "In the wedding rite the groom shows the bride the pole star; Griffith adds her vow of fidelity."
+    },
+    {
+     "ref": "KS, Canto VII (Griffith)",
+     "quote": "Well pleased, he smiled, and gracious answer gave:\nŚIVA himself now yields him KÁMA'S slave.",
+     "note": "Śiva's consent to restore Kāma, and the reversal of roles, completes the story begun in canto III."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Pārvatī (Umā, Aparṇā)",
+   "side": "Himālaya's household",
+   "text": "Daughter of the mountain-king and Menā, and in a former life Śiva's wife Satī. The first canto presents her as perfect beauty, but the poem's real interest is her development from object of admiration to agent: after Kāma's death she wins Śiva by her own tapas and by her proud defence of him. Her modesty, her anger and her steadiness are all shown through gesture and speech."
+  },
+  {
+   "name": "Śiva",
+   "side": "The gods",
+   "text": "The great ascetic god, three-eyed, blue-throated, crowned with the crescent moon, wreathed with snakes and smeared with ashes. Mourning Satī, he meditates on a Himalayan peak, and he destroys Kāma when love tries to take him by surprise. He is won not by desire but by Pārvatī's austerity, and in canto V he tests her in disguise. In the wedding cantos he appears as a gracious bridegroom whose terrifying attributes become ornaments."
+  },
+  {
+   "name": "Himālaya",
+   "side": "Himālaya's household",
+   "text": "The mountain-king, at once a range of peaks and a royal person with a city, a queen and kinsmen. He is a loving father who does not dare to offer his daughter to Śiva unasked and who receives the Seven Sages with humility. Kālidāsa's opening description makes him the poem's first hero."
+  },
+  {
+   "name": "Menā",
+   "side": "Himālaya's household",
+   "text": "Himālaya's queen and Pārvatī's mother. She opposes her daughter's austerities ('u mā', 'O, do not!'), gives her consent to the marriage with a look, and weeps as she dresses her for the wedding."
+  },
+  {
+   "name": "Kāma",
+   "side": "The gods",
+   "text": "The god of love, armed with a bow of flowers strung with bees, and his arrows of blossoms. Eager to serve Indra, he boasts that even Śiva must yield to him, and is burned to ashes by the god's third eye. His destruction and promised return frame the second half of the poem."
+  },
+  {
+   "name": "Rati",
+   "side": "The gods",
+   "text": "Kāma's wife, whose name means 'delight' or 'love's pleasure'. Her lament over his ashes in canto IV is the poem's great expression of grief, and the voice from heaven persuades her to live in hope of his restoration."
+  },
+  {
+   "name": "Spring (Vasanta, Madhu)",
+   "side": "The gods",
+   "text": "Kāma's friend and ally, who makes the season bloom out of time in Śiva's grove. In canto IV he comforts Rati and is asked to build her pyre."
+  },
+  {
+   "name": "Indra",
+   "side": "The gods",
+   "text": "King of the gods, the thousand-eyed wielder of the thunderbolt, humiliated by Tāraka. He leads the gods to Brahmā and commissions Kāma's fatal errand."
+  },
+  {
+   "name": "Brahmā",
+   "side": "The gods",
+   "text": "The four-faced creator, praised by the gods in canto II as the source of all things. Bound by the boon he gave Tāraka, he cannot destroy him himself and reveals that only a son of Śiva can."
+  },
+  {
+   "name": "Tāraka",
+   "side": "The demons",
+   "text": "The demon whose boon makes him master of the three worlds. He never appears in the first seven cantos; his power is known only through Bṛhaspati's description, and his defeat lies beyond the part of the poem Griffith translated."
+  },
+  {
+   "name": "Bṛhaspati",
+   "side": "The gods",
+   "text": "The gods' preceptor and speaker ('the Most Eloquent' in Griffith), who describes Tāraka's tyranny to Brahmā in canto II."
+  },
+  {
+   "name": "Nārada",
+   "side": "Sages",
+   "text": "The wandering sage who prophesies in canto I that Pārvatī will become Śiva's wife, sharing half his body."
+  },
+  {
+   "name": "Nandin",
+   "side": "Śiva's household",
+   "text": "Śiva's attendant and doorkeeper, who silences the grove with a gesture in canto III and in canto VII supports the god as he mounts his bull."
+  },
+  {
+   "name": "The Seven Sages, Arundhatī and Aṅgiras",
+   "side": "Sages",
+   "text": "The seven ancient seers, identified with the stars of the Great Bear, who carry Śiva's proposal to Himālaya. They are accompanied by Arundhatī, Vasiṣṭha's wife, model of the faithful wife; Aṅgiras speaks for them."
+  },
+  {
+   "name": "Kumāra (Skanda)",
+   "side": "The gods",
+   "text": "The son of Śiva and Pārvatī, the war-god of the title, who is to kill Tāraka. In the eight cantos generally accepted as Kālidāsa's he is not yet born; his birth and victory are told only in the later cantos IX–XVII."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Asceticism and desire",
+   "text": [
+    "The poem stages a conflict between tapas, the heat of ascetic discipline, and kāma, desire. Śiva represents the first in its purest form, and when desire attacks him by surprise it is destroyed. Yet the poem does not conclude that asceticism is simply superior. Desire is necessary to the world, since the gods need a son, and it returns in a new form once it has been purified by Pārvatī's own tapas and by marriage [[oflaherty1973]].",
+    "This resolution is typical of Kālidāsa, whose works repeatedly reconcile the values of renunciation and of worldly life. Daniel Ingalls described the poet as the voice of an age confident that pleasure, wealth and duty could be held together in balance [[ingalls1976]]."
+   ]
+  },
+  {
+   "title": "Beauty and its limits",
+   "text": [
+    "Pārvatī's beauty is described with every resource of poetry, and it fails. In canto V she curses it as useless, and she wins Śiva only when she has set aside her jewels and exposed her body to fire and rain. The poem thus questions the very ornament it delights in, while keeping its delight: even in her penance, the poet admires her.",
+    "This double attitude extends to the poem's own style. Kālidāsa's descriptions are ornamental, yet they are always tied to feeling and action, so that ornament serves the story rather than replacing it."
+   ]
+  },
+  {
+   "title": "Marriage as cosmic order",
+   "text": [
+    "The wedding of Śiva and Pārvatī is the union of the father and mother of the world, as Aṅgiras says in canto VI, and on it depends the safety of the gods. Kālidāsa therefore describes it with the full ritual of a human Hindu wedding, so that a domestic ceremony becomes an image of cosmic harmony. Arundhatī's presence, the pole star and the priestly blessing all make marital fidelity the poem's central value [[smith2005]]."
+   ]
+  },
+  {
+   "title": "The divine in nature",
+   "text": [
+    "The poem's first hero is a mountain, and throughout it nature takes part in the action: spring comes out of season, the grove falls silent at Nandin's gesture, the earth trembles when Śiva wakes, the mountain's caves echo Himālaya's welcome. Kālidāsa's world is one in which landscape, gods and feeling are continuous, which is why his similes so often move between the human and the natural."
+   ]
+  },
+  {
+   "title": "Women's agency",
+   "text": [
+    "The poem is driven by its women. Pārvatī chooses her husband and wins him; Rati determines to die and is persuaded to live; Menā resists and then consents; Arundhatī moves Śiva towards marriage; the women at the windows give their verdict on the bridegroom. Tubb's reading of Pārvatī as the poem's hero has made this aspect central to modern criticism [[tubb1984]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "The seasons",
+   "text": "Spring in canto III, the cycle of summer heat, rain and winter in canto V, and the autumn imagery of the wedding canto mark the stages of the story. In the Sanskrit, canto VIII measures the couple's love in seasons that pass like a single night."
+  },
+  {
+   "title": "Messengers and go-betweens",
+   "text": "Much of the action is done through intermediaries: Nārada's prophecy, Indra's commission to Kāma, Pārvatī's companion who speaks for her, the Seven Sages who carry the proposal, the friend who carries Pārvatī's request in canto VI. The decorum of indirect speech is part of the poem's courtly world."
+  },
+  {
+   "title": "Ornaments put on and taken off",
+   "text": "Pārvatī lays aside her jewels for bark in canto V and is adorned again in canto VII; Śiva's snakes and skull become jewels for his wedding. Changes of ornament mark changes of state."
+  },
+  {
+   "title": "The gaze",
+   "text": "Eyes govern the poem: Himālaya's insatiable gaze on his daughter, Śiva's gaze on Pārvatī's lips, the fire of the third eye, Menā's glance of assent, the women's eyes at the windows, and the bride and groom who hardly dare to look at each other."
+  },
+  {
+   "title": "Heavenly voices",
+   "text": "At critical moments a voice from the sky intervenes: the gods' vain cry for mercy before Kāma is burned and the voice that stops Rati from dying."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "Śiva's third eye",
+   "text": "The fire of the eye in Śiva's forehead is the destructive power of ascetic concentration. In canto VII it becomes a mere mark of beauty on the bridegroom's forehead."
+  },
+  {
+   "title": "Kāma's flower bow",
+   "text": "A bow of flowers strung with bees, with arrows of blossoms: love's power is gentle in its instruments and irresistible in its effects, except against Śiva."
+  },
+  {
+   "title": "The ashes",
+   "text": "Kāma's ashes, which Rati embraces, and the ashes of the cremation ground with which Śiva smears himself, connect love, death and asceticism; Pārvatī insists that the ashes Śiva touches become holy."
+  },
+  {
+   "title": "The lotus",
+   "text": "The poem's commonest image of beauty, it is also the toy Pārvatī holds when the sages ask for her hand and the plant whose place she takes in the winter streams."
+  },
+  {
+   "title": "The pole star",
+   "text": "Shown to the bride during the wedding, the unmoving star (Dhruva) is the emblem of steadfast marriage."
+  },
+  {
+   "title": "The rosary",
+   "text": "Pārvatī's offering of a rosary of lotus seeds is the moment Kāma shoots; later her hands are worn by telling her own rosary. The object marks her passage from serving an ascetic to becoming one."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Did Kālidāsa write cantos IX–XVII?",
+   "text": [
+    "The seventeen-canto text printed in many editions continues the story through the birth of Kumāra and his war with Tāraka. But Mallinātha comments only on cantos I–VIII, the later cantos are rarer in the manuscripts, and the classical theorists do not cite them. Most scholars therefore regard IX–XVII as a later continuation by a less accomplished poet [[kale1995]] [[keith1928]].",
+    "The later cantos were first printed in 1866 by an editor who presented them as genuine, and the question is not wholly closed. David Smith's complete translation lets readers judge the later cantos for themselves [[smith2005]]."
+   ],
+   "cite": [
+    "kale1995",
+    "keith1928",
+    "smith2005"
+   ]
+  },
+  {
+   "title": "Is the poem complete at canto VIII?",
+   "text": [
+    "A poem called 'the birth of Kumāra' that ends before Kumāra is born seems unfinished, and a popular legend says that Kālidāsa was cursed by Pārvatī for describing her love-making and could not go on. Some scholars accept that the work was left incomplete.",
+    "Others argue that the eight cantos form an artistic whole: the marriage, the restoration of Kāma and the promise of heroic sons already imply the birth, which Sanskrit poetics would allow the poet to suggest rather than narrate. Pratap Bandyopadhyay has re-examined the evidence for and against completion in a study devoted to the question, and Heifetz's translation of the eight cantos presents them as a satisfying whole [[bandyopadhyay1986]] [[heifetz1985]]."
+   ],
+   "cite": [
+    "bandyopadhyay1986",
+    "heifetz1985"
+   ]
+  },
+  {
+   "title": "The propriety of canto VIII",
+   "text": [
+    "The eighth canto's description of the love-making of Śiva and Pārvatī troubled some traditional readers, since the couple are the parents of the world. Ānandavardhana, the ninth-century theorist of suggestion, cited this description as an example of impropriety, a fault that is concealed by the poet's genius [[ingalls1990]].",
+    "Commentators were divided, and some are reported to have passed over the canto. Modern translators such as Heifetz include it as an integral part of the poem, and many critics see in it the natural fulfilment of a design in which love within marriage resolves the conflict between asceticism and desire [[heifetz1985]]. Griffith's decision to stop at canto VII shows the same problem from a Victorian angle [[griffith1879]]."
+   ],
+   "cite": [
+    "ingalls1990",
+    "heifetz1985",
+    "griffith1879"
+   ]
+  },
+  {
+   "title": "Who is the hero?",
+   "text": [
+    "Sanskrit poetics expected a mahākāvya to have a hero of noble character, and Śiva seems the obvious candidate. Gary Tubb argued instead that Pārvatī is the poem's true hero: it is her effort and her tapas that drive the action and bring about its resolution, and her story is shaped like a hero's quest [[tubb1984]].",
+    "Tubb compared the poem with a later play on the same subject, the Pārvatīpariṇaya, to show how Kālidāsa's emphasis differs. The reading has encouraged attention to the poem's female figures more generally [[tubb1984]] [[smith2005]]."
+   ],
+   "cite": [
+    "tubb1984",
+    "smith2005"
+   ]
+  },
+  {
+   "title": "Asceticism and eroticism in the myth of Śiva",
+   "text": [
+    "Kālidāsa's poem is a literary version of a myth told in many forms in the epics and the Purāṇas. Wendy Doniger O'Flaherty showed that these myths do not simply oppose the ascetic and the erotic Śiva but hold the two in a cycle, in which heat stored by austerity is released as desire and desire returns to austerity [[oflaherty1973]].",
+    "Read in that light, the burning of Kāma and his restoration are two phases of one movement, and Pārvatī's tapas is the means by which desire is reconciled to discipline. Critics differ on how far Kālidāsa shares the theology of his sources and how far he adapts the myth to the courtly ideals of his age [[ingalls1976]]."
+   ],
+   "cite": [
+    "oflaherty1973",
+    "ingalls1976"
+   ]
+  },
+  {
+   "title": "The poem and the Gupta court",
+   "text": [
+    "Kālidāsa's date is not certain, but the dominant view places him in the Gupta age. Some scholars have linked the choice of subject with the dynasty: a poem on the birth of the war-god Kumāra might suit a court whose kings were named Kumāragupta and Skandagupta, and whose coinage shows devotion to Skanda [[mirashi1969]] [[mann2012]].",
+    "Such connections remain conjectural. More broadly, Sheldon Pollock has described the kāvya of this period as part of a culture in which Sanskrit poetry expressed and shaped royal power [[pollock2006]]."
+   ],
+   "cite": [
+    "mirashi1969",
+    "mann2012",
+    "pollock2006"
+   ]
+  },
+  {
+   "title": "Griffith's translation",
+   "text": [
+    "Griffith's Birth of the War-God belongs to the first generation of English verse translations from Sanskrit. His rhymed couplets give the poem a recognisable English form but impose their own rhetoric: he abridges the descriptive sequences, expands moments of feeling, adds generalising morals, and uses Christian or biblical vocabulary, such as the 'Three Persons' of the gods' hymns [[griffith1879]].",
+    "Modern translators have tried other methods: Heifetz a free-verse English that follows the Sanskrit verse by verse, and Smith a literal version for the Clay Sanskrit Library with facing text [[heifetz1985]] [[smith2005]]. Comparing their versions with Griffith's shows how translation choices shape a reader's sense of Kālidāsa."
+   ],
+   "cite": [
+    "griffith1879",
+    "heifetz1985",
+    "smith2005"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "KS, Canto I (Griffith)",
+   "quote": "Far in the north HIMÁLAYA, lifting high\nHis towery summits till they cleave the sky,",
+   "who": "The poet",
+   "explanation": "The opening of the poem makes a mountain its first subject and calls it divine. The description of the Himalaya prepares for the marriage of the mountain's daughter to the god who lives on its peaks."
+  },
+  {
+   "ref": "KS, Canto II (Griffith)",
+   "quote": "Perchance, the Mountain-child, with magnet's force,\nMay turn the iron from its steadfast course,",
+   "who": "Brahmā",
+   "explanation": "The creator names the only remedy for the gods' distress: Pārvatī's attraction must overcome Śiva's ascetic resolve."
+  },
+  {
+   "ref": "KS, Canto III (Griffith)",
+   "quote": "Strong is the Trident-bearing God, yet he,\nThe mighty ŚIVA, e'en, must yield to me.",
+   "who": "Kāma",
+   "explanation": "Love's boast to Indra is the hubris that leads to his destruction; the poem will show that Śiva yields only to love joined with austerity."
+  },
+  {
+   "ref": "KS, Canto III (Griffith)",
+   "quote": "Calm as a full cloud resting on a hill,\nA waveless lake when every breeze is still,",
+   "who": "The poet",
+   "explanation": "Śiva in meditation, seen through Kāma's eyes; the stillness of the god is set against the turbulent spring Kāma has brought."
+  },
+  {
+   "ref": "KS, Canto IV (Griffith)",
+   "quote": "Sure woman's heart is stony: can it be\nThat I still live while this is all of thee?",
+   "who": "Rati",
+   "explanation": "Rati reproaches herself for surviving her husband, a turn typical of the lament, which leads to her resolve to die on his pyre."
+  },
+  {
+   "ref": "KS, Canto V (Griffith)",
+   "quote": "APARNÁ--Lady of the unbroken fast--\nHave sages called her, saints who knew the past.",
+   "who": "The poet",
+   "explanation": "Pārvatī's austerity earns her a new name, as her mother's protest earned her the name Umā; names in the poem record her deeds."
+  },
+  {
+   "ref": "KS, Canto V (Griffith)",
+   "quote": "Still clings my heart to him, its chosen lord,\nNor fails nor falters at thy treacherous word.",
+   "who": "Pārvatī",
+   "explanation": "The climax of her defence of Śiva: even granting all the student's charges, she will not change. Her constancy is what wins the god."
+  },
+  {
+   "ref": "KS, Canto V (Griffith)",
+   "quote": "Won by thy penance, and thy holy vows,\nThy willing slave ŚIVA before thee bows.",
+   "who": "Śiva",
+   "explanation": "The ascetic god, who burned Love, now declares himself the slave of the woman whose tapas has matched his own."
+  },
+  {
+   "ref": "KS, Canto VI (Griffith)",
+   "quote": "Her Lord is Father of the world, and she\nOf all that liveth shall the mother be.",
+   "who": "Aṅgiras",
+   "explanation": "The sage's proposal gives the marriage its cosmic meaning: the union of the world's parents."
+  },
+  {
+   "ref": "KS, Canto VII (Griffith)",
+   "quote": "\"This flame be witness of your wedded life:\nBe just, thou husband, and be true, thou wife!\"",
+   "who": "The priest",
+   "explanation": "The fire as witness is central to the Hindu wedding; Griffith gives the blessing the moral balance of an English marriage formula."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Kālidāsa begin a poem about gods with a long description of a mountain?",
+   "hint": "Consider Himālaya as father and king, and the link between his peaks and Śiva's hermitage in canto I."
+  },
+  {
+   "q": "Pārvatī's beauty is lavishly described in canto I, yet it fails to win Śiva. What does the poem suggest beauty can and cannot do?",
+   "hint": "Compare the portrait in canto I with the opening of canto V, where she curses her beauty."
+  },
+  {
+   "q": "Is the burning of Kāma a victory of asceticism over desire?",
+   "hint": "Look at Śiva's momentary passion in canto III, the heavenly voice in canto IV and Kāma's restoration in canto VII."
+  },
+  {
+   "q": "How does Rati's lament use the natural world to express grief?",
+   "hint": "Note the moon, the cuckoo, the creeper and the lightning in canto IV."
+  },
+  {
+   "q": "What does Pārvatī achieve by tapas that she could not achieve by beauty? Does the poem make her its hero?",
+   "hint": "Read canto V with Tubb's argument in mind."
+  },
+  {
+   "q": "Why does Śiva come to Pārvatī in disguise, and what does her answer reveal about her and about him?",
+   "hint": "List the student's charges against Śiva and set them beside Pārvatī's replies."
+  },
+  {
+   "q": "How does the poem use ritual, especially in cantos VI and VII?",
+   "hint": "Consider the embassy of the sages, Menā's glance, the circling of the fire and the pole star."
+  },
+  {
+   "q": "What is the effect of the scene of the women at the windows in canto VII?",
+   "hint": "Think about the change of perspective and the tone of the women's praise, and note that the passage also appears in the Raghuvaṃśa."
+  },
+  {
+   "q": "Is the Kumārasambhava complete without the birth of Kumāra?",
+   "hint": "Consider the title, the legend of the curse, the gods' plea in canto VII and the arguments about cantos VIII–XVII."
+  },
+  {
+   "q": "Where does Griffith's translation seem to add a Victorian voice of its own?",
+   "hint": "Look at the end of canto VI, the 'Three Persons' of cantos II and VII, and his decision to stop before canto VIII."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "bandyopadhyay1986",
+   "text": "Bandyopadhyay, Pratap. 'Did Kālidāsa Complete the Kumārasambhava?' Journal of the American Oriental Society 106, no. 3 (1986): 559–64."
+  },
+  {
+   "id": "goldman1984",
+   "text": "Goldman, Robert P., trans. The Rāmāyaṇa of Vālmīki: An Epic of Ancient India. Vol. 1, Bālakāṇḍa. Princeton: Princeton University Press, 1984."
+  },
+  {
+   "id": "griffith1879",
+   "text": "Griffith, Ralph T. H., trans. The Birth of the War-God: A Poem by Kalidasa. 2nd ed. Trübner's Oriental Series. London: Trübner, 1879."
+  },
+  {
+   "id": "heifetz1985",
+   "text": "Heifetz, Hank, trans. The Origin of the Young God: Kālidāsa's Kumārasaṃbhava. Berkeley: University of California Press, 1985."
+  },
+  {
+   "id": "ingalls1965",
+   "text": "Ingalls, Daniel H. H., trans. An Anthology of Sanskrit Court Poetry: Vidyākara's Subhāṣitaratnakoṣa. Harvard Oriental Series 44. Cambridge, MA: Harvard University Press, 1965."
+  },
+  {
+   "id": "ingalls1976",
+   "text": "Ingalls, Daniel H. H. 'Kālidāsa and the Attitudes of the Golden Age.' Journal of the American Oriental Society 96, no. 1 (1976): 15–26."
+  },
+  {
+   "id": "ingalls1990",
+   "text": "Ingalls, Daniel H. H., Jeffrey Moussaieff Masson and M. V. Patwardhan, trans. The Dhvanyāloka of Ānandavardhana with the Locana of Abhinavagupta. Harvard Oriental Series 49. Cambridge, MA: Harvard University Press, 1990."
+  },
+  {
+   "id": "kale1995",
+   "text": "Kale, M. R., ed. and trans. Kumārasambhava of Kālidāsa, Cantos I–VIII, with the Commentary of Mallinātha. Reprint. Delhi: Motilal Banarsidass, 1995."
+  },
+  {
+   "id": "keith1928",
+   "text": "Keith, A. Berriedale. A History of Sanskrit Literature. Oxford: Clarendon Press, 1928."
+  },
+  {
+   "id": "lienhard1984",
+   "text": "Lienhard, Siegfried. A History of Classical Poetry: Sanskrit, Pali, Prakrit. A History of Indian Literature 3.1. Wiesbaden: Otto Harrassowitz, 1984."
+  },
+  {
+   "id": "mann2012",
+   "text": "Mann, Richard D. The Rise of Mahāsena: The Transformation of Skanda-Kārttikeya in North India from the Kuṣāṇa to Gupta Empires. Leiden: Brill, 2012."
+  },
+  {
+   "id": "miller1984",
+   "text": "Miller, Barbara Stoler, ed. Theater of Memory: The Plays of Kālidāsa. New York: Columbia University Press, 1984."
+  },
+  {
+   "id": "mirashi1969",
+   "text": "Mirashi, V. V., and N. R. Navlekar. Kālidāsa: Date, Life, and Works. Bombay: Popular Prakashan, 1969."
+  },
+  {
+   "id": "oflaherty1973",
+   "text": "O'Flaherty, Wendy Doniger. Asceticism and Eroticism in the Mythology of Śiva. London: Oxford University Press, 1973."
+  },
+  {
+   "id": "pollock2006",
+   "text": "Pollock, Sheldon. The Language of the Gods in the World of Men: Sanskrit, Culture, and Power in Premodern India. Berkeley: University of California Press, 2006."
+  },
+  {
+   "id": "smith2005",
+   "text": "Smith, David, trans. The Birth of Kumára by Kali·dasa. Clay Sanskrit Library. New York: New York University Press and JJC Foundation, 2005."
+  },
+  {
+   "id": "tubb1984",
+   "text": "Tubb, Gary A. 'Heroine as Hero: Pārvatī in the Kumārasaṃbhava and the Pārvatīpariṇaya.' Journal of the American Oriental Society 104, no. 2 (1984): 219–36."
+  },
+  {
+   "id": "vanbuitenen1975",
+   "text": "van Buitenen, J. A. B., trans. The Mahābhārata. Vol. 2, Book 2: The Book of the Assembly Hall; Book 3: The Book of the Forest. Chicago: University of Chicago Press, 1975."
+  },
+  {
+   "id": "warder1977",
+   "text": "Warder, A. K. Indian Kāvya Literature. Vol. 3, The Early Medieval Period (Śūdraka to Viśākhadatta). Delhi: Motilal Banarsidass, 1977."
+  }
+ ]
+}

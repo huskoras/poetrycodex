@@ -1,0 +1,818 @@
+{
+ "work": "bustan",
+ "title": "The Bustan (The Orchard)",
+ "author": "Sa'di of Shiraz",
+ "quoteEdition": "bustan-edwards",
+ "updated": "2026-10-19",
+ "unit": "Chapter",
+ "glance": [
+  {
+   "label": "Poet",
+   "value": "Abu Muhammad Musharrif al-Din Muslih ibn Abd Allah, known as Sa'di of Shiraz (born about 1210, though dates as early as the 1180s have been proposed; died 1291 or 1292)"
+  },
+  {
+   "label": "Title",
+   "value": "Bustan, 'The Orchard' or 'The Fruit Garden'; Sa'di himself seems to have called it the Sa'di-nama, 'the Book of Sa'di'"
+  },
+  {
+   "label": "Completed",
+   "value": "655 AH (1257 CE), as the prologue states"
+  },
+  {
+   "label": "Dedicatee",
+   "value": "Abu Bakr ibn Sa'd ibn Zangi (ruled 1226-1260), Salghurid atabeg of Fars"
+  },
+  {
+   "label": "Language and form",
+   "value": "Persian verse in rhyming couplets (masnavi), in the mutaqarib metre of Firdawsi's Shahnama; about four thousand couplets"
+  },
+  {
+   "label": "Structure",
+   "value": "A prologue and ten chapters: justice, benevolence, love, humility, resignation, contentment, education, gratitude, repentance, prayer"
+  },
+  {
+   "label": "Genre",
+   "value": "Didactic poem: moral counsel and short exemplary tales in the adab tradition, with elements of the mirror for princes and of Sufi ethics"
+  },
+  {
+   "label": "Companion work",
+   "value": "The Gulistan (Rose Garden), in prose mixed with verse, completed a year later (1258)"
+  },
+  {
+   "label": "Translation used here",
+   "value": "A. Hart Edwards, The Bustan of Sadi (1911): an English prose rendering of selected passages, not a complete translation"
+  }
+ ],
+ "context": [
+  "Sa'di of Shiraz is, with Firdawsi, Rumi and Hafiz, one of the four poets most often named as the masters of classical Persian literature. Very little is known of his life beyond what his own works say, and they say a great deal that cannot be checked. He was born in Shiraz, probably around 1210, studied in Baghdad at the Nizamiyya college (he mentions it in the Bustan), and spent many years away from home, in Iraq, Syria and the Hijaz and, by his own account, much further afield. He returned to Shiraz in the 1250s, completed the Bustan in 1257 and the Gulistan in 1258, and lived there, honoured as a sage and poet, until his death in 1291 or 1292 [[masse1919]] [[katouzian2006]] [[browne1906]].",
+  "Sa'di's lifetime coincided with the Mongol conquests, which destroyed Baghdad and the Abbasid caliphate in 1258, the year after the Bustan was completed. Fars was spared the worst of the destruction because its ruler, the Salghurid atabeg Abu Bakr ibn Sa'd ibn Zangi, submitted to the Mongols and paid tribute. Sa'di dedicated the Bustan to Abu Bakr and the Gulistan partly to his son Sa'd; his pen-name is usually explained by his attachment to this dynasty. The poem's praise of a just king who protects his people should be read against this background of a small state surviving by prudence in a time of catastrophe [[bosworth1996]] [[katouzian2006]].",
+  "The Bustan is a masnavi, a long poem in rhyming couplets, written in the same metre as Firdawsi's Shahnama. Unlike Firdawsi's epic or the romances of Nizami, it has no continuous story: it is a book of counsel, arranged in ten chapters on moral subjects, each made of reflections, maxims and short exemplary tales. Its models include earlier didactic poems such as Sana'i's Hadiqat al-haqiqa and Nizami's Makhzan al-asrar, and behind them a long tradition of Persian and Arabic wisdom literature and advice to kings [[rypka1968]] [[arberry1958]] [[fouchecour1986]].",
+  "The moral world of the Bustan is that of adab, the ideal of cultivated conduct that joined good manners, ethical discipline and literary refinement, and of the Sufi ethics that had spread through Persian culture by the thirteenth century. Sa'di was associated with Sufi circles and reveres the great saints, but the Bustan is addressed to kings, merchants, householders and students as well as to mystics, and its saints are models of humility and generosity rather than guides to esoteric doctrine. Its combination of piety, worldly prudence and wit made it, with the Gulistan, a school text across the Persian-speaking world, from the Ottoman empire to Mughal India, for some six centuries [[debruijn1997]] [[schimmel1975]] [[yohannan1987]].",
+  "The text quoted in this guide is A. Hart Edwards's version of 1911, published in John Murray's 'Wisdom of the East' series. Edwards renders Sa'di's verse as English prose, in a biblical style, and gives a selection rather than the whole: the prologue is much shortened, and each chapter keeps only part of its stories and reflections. His version is readable and faithful in spirit, but readers who need the complete poem, or its verse texture, should turn to G. M. Wickens's full translation of 1974 [[edwards1911]] [[wickens1974]]."
+ ],
+ "plot": [
+  "The Bustan has no plot. Its prologue praises God and the Prophet, explains that Sa'di, returning from long travels, brings his friends a book instead of the sugar travellers bring from Egypt, and dedicates the work to Abu Bakr, the ruler of Fars. The ten chapters that follow are the 'ten doors' of a palace of instruction, each devoted to a virtue or a practice of the moral and religious life.",
+  "The order of the chapters moves, broadly, from public to private and from this world towards God. Justice and benevolence concern rulers and the wealthy and their duties to others; love and humility describe the inner dispositions of the devotee; resignation and contentment teach acceptance of what God allots; education concerns the discipline of the self, the tongue and the household; gratitude, repentance and prayer bring the reader finally to stand before God.",
+  "Within each chapter the method is the same. Sa'di states a principle, illustrates it with one or more short stories, and draws a lesson in maxims that are often more memorable than the tales. The stories come from every source: Sasanian kings and Arab caliphs, Sufi saints, animals and objects in fable (the moth and the candle, the vulture and the kite), and anecdotes told in the first person about the poet's own travels and childhood.",
+  "The first-person stories give the book a loose frame. Sa'di appears as student at the Nizamiyya, as a child taught his ablutions, as a guest in Turkey, a friend in Isfahan and Damascus, a scholar who humbles a qadi, and a traveller who unmasks the idol of Somnath. Whether or not these adventures happened, they make the poem the testimony of an experienced man, offering the 'fruit' of a long life."
+ ],
+ "books": [
+  {
+   "n": 0,
+   "title": "Prologue: Praise, the Reason for the Book, and the Dedication",
+   "lines": "Edwards's prose selection: 3 headed stories and discourses; the Persian praises of the Prophet and of the prince Sa'd are much reduced",
+   "summary": [
+    "The Bustan opens, as Persian masnavis conventionally do, with praise of God: the Creator who sustains the world, who spreads a feast for friend and foe alike, who turns the fire of His friend Abraham into a garden and drowns His enemies in the Nile, and whom neither the 'bird of thought' nor the 'hand of understanding' can reach. Praise of the Prophet Muhammad follows, as the only guide on the road of purity.",
+    "Sa'di then explains why he wrote the book. He has travelled through many lands and 'gleaned an ear of corn from every harvest', but found no people like the devout of Shiraz, and he would not come home empty-handed: as travellers bring sugar from Egypt, he brings words. He has built a 'Palace of Wealth' with ten doors of instruction, completed in the year 655 (1257), and he asks the reader to treat its weaker verses as the padding inside a silk robe. A short dedication names the Salghurid atabeg Abu Bakr, son of Sa'd, so that posterity may say that Sa'di lived in his time."
+   ],
+   "analysis": [
+    "The prologue sets out the poem's whole programme in a few images. The returning traveller with a gift of 'sugar' makes the book a fruit of experience offered to a home community, and the ten 'doors' announce an ordered treatise rather than a miscellany. The pun on gardens and fruit runs through Sa'di's language here and gave the work its later title: Sa'di's own manuscripts appear to have called it the Sa'di-nama, 'the Book of Sa'di', and the name Bustan, 'the Orchard' or 'the Garden', became attached to it afterwards [[wickens1974]] [[katouzian2006]].",
+    "The dedication is carefully balanced. Sa'di claims he does not wish to praise kings, yet he inscribes the book to Abu Bakr ibn Sa'd ibn Zangi (ruled 1226-1260), the atabeg who kept Fars at peace by accepting Mongol overlordship. In the Persian the prologue is considerably longer: it includes an account of the Prophet's night journey and a separate eulogy of the prince Sa'd, Abu Bakr's son. Edwards reduces all this to a few paragraphs, so the English reader meets the panegyric only in outline [[edwards1911]] [[bosworth1996]].",
+    "The humility formula about silk and cotton, and the appeal to the reader to pardon the bad for the sake of the good, is conventional, but it also anticipates the book's ethics: generosity in judging others is itself one of the virtues the chapters will teach."
+   ],
+   "key": [
+    {
+     "ref": "Prologue, 'On the Reason for the Writing of the Book' (Edwards)",
+     "quote": "When I built this Palace of Wealth, I furnished it with ten doors of instruction.",
+     "note": "The architectural image of the ten chapters."
+    },
+    {
+     "ref": "Prologue, 'On the Reason for the Writing of the Book' (Edwards)",
+     "quote": "It was in the year 655 that this famous treasury became full of the pearls of eloquence.",
+     "note": "The date of completion: 655 of the Hijra, that is 1257."
+    },
+    {
+     "ref": "Prologue, 'Concerning Atābak Abu Bakr, Son of Sád' (Edwards)",
+     "quote": "Although not desiring to write in praise of kings, I have inscribed this book to the name of a certain one",
+     "note": "The dedication to the Salghurid ruler of Fars, hedged with a disclaimer."
+    }
+   ],
+   "section": 0
+  },
+  {
+   "n": 1,
+   "title": "Chapter I: Concerning Justice, Counsel, and the Administration of Government",
+   "lines": "Edwards's prose selection: 11 headed stories and discourses",
+   "summary": [
+    "The first chapter is a mirror for princes. After a prayer for Abu Bakr, Sa'di tells the king to come to worship like a darwesh and to pray by night if he rules by day. The dying Sasanian king Nushiravan counsels his son Hurmuz that the people are the root and the king the tree; a short discourse urges kings to honour merchants and travellers, who carry their reputation abroad, and to care for old servants.",
+    "Stories follow. A foreign vizier, slandered by his predecessor for gazing at two young slaves, saves himself by explaining that he looks at them with the envy of an old man who has lost his teeth. A just king refuses to wear brocade because the treasury belongs to the army; a herdsman rebukes Darius for failing to recognise his own servant; Edwards's 'Abdul Aziz' (the Umayyad caliph Umar ibn Abd al-Aziz) sells a priceless pearl to feed his people in a drought; a devotee tells King Tukla that religion lies in serving the people, not in the prayer-rug. The chapter ends with a famine in Damascus, where a rich friend grows thin from grief at others' suffering, and with a bully who falls into a pit and receives a stone instead of help."
+   ],
+   "analysis": [
+    "Sa'di's political teaching is practical rather than theoretical. Kingship is justified by the welfare of the subjects, and the ruler's piety is measured by his justice, not by his devotions; the story of Tukla, whom the devotee sends back to his throne, makes the point that withdrawal from the world would be a dereliction for a king. These ideas draw on the long Persian tradition of advice to rulers, in which Sasanian kings such as Nushiravan stand as models of justice beside Muslim caliphs [[lambton1981]] [[fouchecour1986]].",
+    "The chapter's stories also teach political prudence. The tale of the slandered vizier is a lesson in deliberation, and its embedded fable of the Devil painted ugly by his enemies shows Sa'di's taste for a witty turn that reverses expectation. The herdsman who can tell one horse among a hundred thousand reproaches a king who cannot tell friend from foe; the moral, that 'the wisdom of the shepherd' should not exceed that of the king, turns the familiar image of the ruler as shepherd into a test.",
+    "The Damascus famine is the first of the first-person stories that give the Bustan its autobiographical colour. Its lesson, that one cannot be at ease on the shore while friends are drowning, extends the ethic of justice from kings to every person of means, and prepares for the chapter on benevolence."
+   ],
+   "key": [
+    {
+     "ref": "Chapter I, 'Nushīravān’s Counsel to His Son' (Edwards)",
+     "quote": "The people are as the root and the king as the tree; and the tree, O son, gains strength from the root.",
+     "note": "The organic image of the polity that governs the chapter."
+    },
+    {
+     "ref": "Chapter I, 'Story of How Tukla Was Rebuked By A Devotee' (Edwards)",
+     "quote": "Religion consists alone in the service of the people; it finds no place in the rosary, or prayer-rug, or tattered garment.",
+     "note": "Piety for a ruler is defined as justice; the devotee sends the king back to his duty."
+    },
+    {
+     "ref": "Chapter I, 'Story of Darius and the Herdsman' (Edwards)",
+     "quote": "Ruin brings sorrow to that kingdom where the wisdom of the shepherd exceeds that of the king.",
+     "note": "The herdsman's rebuke turns the pastoral image of kingship against a careless king."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 2,
+   "title": "Chapter II: Concerning Benevolence",
+   "lines": "Edwards's prose selection: 11 headed stories and discourses",
+   "summary": [
+    "The second chapter (ihsan, 'doing good') urges generosity while one still has the key to one's treasury. A husband refuses to take his custom from a dishonest baker; a soldier's wife asks what use the Sultan's fast is when its breaking would feed her children; a poor man who cannot pay a prisoner's debt goes to prison in his place; a man who waters a thirsty dog with his hat is forgiven his sins. A rich man who drives away a beggar loses his fortune, and his former slave, now serving a generous master, finds him at the door begging.",
+    "The famous tale of the fox and the tiger follows: a man who sees a crippled fox fed on a tiger's leavings decides to wait for God's provision, nearly starves, and is told by a voice to be the tiger, not the fox. Sa'di and his companions are kept hungry by a pious miser in Turkey. Two stories celebrate the pre-Islamic Arab Hatim Tai, who kills his famous horse to feed his guests and offers his own head to a man sent to murder him. The chapter then warns against misplaced kindness, in the tale of a man whose wife pleads for the bees in their roof until she is stung, and closes with a discourse on orphans in which Sa'di recalls his own father's early death."
+   ],
+   "analysis": [
+    "Benevolence in the Bustan is a social virtue with a religious reward. Again and again the stories link charity in this world to mercy at the Judgment, and Sa'di's preference for active giving over idle devotion is consistent: the miser who prays all night is condemned, and the fox parable rejects a passive reliance on providence (tawakkul) in favour of work whose fruits can be shared with the needy [[fouchecour1986]] [[katouzian2006]].",
+    "The chapter also shows the tension that runs through Sa'di's ethics. Next to the praise of doing good even to the evil, the story of the bees and the maxims that follow it argue that 'forbearance with the wicked but increases their iniquity'. Sa'di is not a systematic moralist; he gives advice suited to situations, and the reader is expected to discern which applies. Critics have read this either as worldly pragmatism or as the flexibility of the adab tradition, in which wisdom lies in knowing the right occasion [[yohannan1987]] [[katouzian2006]].",
+    "Hatim Tai, the legendary generous Arab, was already proverbial in Persian; Sa'di uses him because his liberality is absolute and disarms even envy. The second Hatim story, in which the would-be murderer says he was killed by 'the sword of kindness', shows the chapter's ideal at its height."
+   ],
+   "key": [
+    {
+     "ref": "Chapter II, opening (Edwards)",
+     "quote": "If thou art wise, incline towards the essential truth, for that remains, while the things that are external pass away.",
+     "note": "The opening principle: what is given away endures; what is hoarded passes."
+    },
+    {
+     "ref": "Chapter II, 'Story of A Fool and A Fox' (Edwards)",
+     "quote": "Be the rending tiger, and pose not as a paralytic fox.",
+     "note": "The voice from the mosque wall rejects idle trust in providence."
+    },
+    {
+     "ref": "Chapter II, 'Story of Hātim and the Messenger Sent to Kill Him' (Edwards)",
+     "quote": "with the sword of kindness and bounty he killed me.",
+     "note": "The would-be assassin's report to the king of Yemen."
+    },
+    {
+     "ref": "Chapter II, 'Story Illustrative of Misdirected Kindness' (Edwards)",
+     "quote": "How can one do good to the evil? Forbearance with the wicked but increases their iniquity.",
+     "note": "The counterweight to the chapter's praise of kindness."
+    }
+   ],
+   "section": 2
+  },
+  {
+   "n": 3,
+   "title": "Chapter III: Concerning Love",
+   "lines": "Edwards's prose selection: 10 headed stories and discourses",
+   "summary": [
+    "The third chapter turns from social virtue to love ('ishq), and especially to the love of God. Its opening describes the lovers of God as mendicants who flee worldly sovereignty, who drink the 'wine of anguish' in silence, who burn like moths, and who, though their beloved is within them, still seek Him. A discourse on constancy argues from human love to divine: if earthly passion makes a lover give his life at his beloved's command, it is no wonder that travellers on God's road are drowned in the 'Ocean of Reality'.",
+    "Short tales illustrate the lover's state: a dancer's skirt is singed by a candle and her lover says the fire has consumed his whole life; a son who has gone into the desert for God will own no other friendship; a beggar who refuses to leave the door of a mosque dies after a year, sure that it has opened. Sultan Mahmud of Ghazni explains that he loves his slave Ayaz for his virtues, and Ayaz alone stays by the king when the others scramble for spilled pearls. The chapter ends with the fire-fly that does not shine before the sun and with two dialogues of the moth and the candle, the second of which ends when someone snuffs the candle out."
+   ],
+   "analysis": [
+    "The chapter belongs to the Persian Sufi tradition in which human love is a 'bridge' (in the Arabic phrase, al-majaz qantarat al-haqiqa, the metaphorical is the bridge to the real) towards the love of God. Sa'di keeps the two kinds of love close: the discourse on constancy is addressed to a human lover, and the Mahmud and Ayaz story, a favourite of Persian poets, is a tale of a king's love for a slave that is also an image of the devotee's service [[schimmel1975]] [[debruijn1997]].",
+    "Recent scholarship has stressed how seriously Sa'di takes beauty itself. The line about lovers so enamoured of 'the Painter' that they ignore His designs can be read as world-denying, but elsewhere in his work, especially the ghazals, the contemplation of human beauty is a way of beholding the divine; Ingenito has argued that Sa'di's poetry is built on a theory of looking (nazar) that joins the erotic and the spiritual [[ingenito2020]].",
+    "The moth and the candle are the chapter's best-known figures. In the first dialogue the moth defends its self-destruction as love's necessity; in the second the candle answers that it suffers more, standing upright until it is consumed. The candle's sudden extinction, with the comment 'Such is the end of love!', is both a joke and a statement of the annihilation (fana) that love demands."
+   ],
+   "key": [
+    {
+     "ref": "Chapter III, opening (Edwards)",
+     "quote": "Like moths, they burn themselves in the fire of love. Their beloved is in their breasts, yet do they seek Him; though near a fountain, their lips are parched.",
+     "note": "The paradox of the lover who seeks what is already within."
+    },
+    {
+     "ref": "Chapter III, 'Discourse Concerning Constancy' (Edwards)",
+     "quote": "So enamoured are they of the beauty of the Painter that they care not for the beauty of His designs.",
+     "note": "Love for the Creator eclipses love for created forms."
+    },
+    {
+     "ref": "Chapter III, 'Another Story on the Same Subject' (Edwards)",
+     "quote": "Before the night had passed, some one put the candle out, exclaiming: “Such is the end of love!”",
+     "note": "The close of the moth-and-candle dialogue."
+    }
+   ],
+   "section": 3
+  },
+  {
+   "n": 4,
+   "title": "Chapter IV: Concerning Humility",
+   "lines": "Edwards's prose selection: 17 headed stories and discourses",
+   "summary": [
+    "Humility (tawazu') is argued from creation: man is made of dust, the demons of fire, and the dust prostrated itself while the fire was proud. A raindrop ashamed before the sea is taken into an oyster and becomes a royal pearl. A young man asked to sweep a mosque disappears, because the only dirt he saw there was himself; Bayazid Bistami, showered with ashes, says he deserves the fires of hell. A long story tells of a ragged scholar pushed to the lowest seat in a qadi's court who wins the debate, refuses the qadi's turban with a speech on the emptiness of outward show, and is identified at the end as Sa'di.",
+    "Many briefer tales follow. A sour-faced man cannot sell honey; a pious man endures a drunkard's blows; a hermit bitten by a dog will not bite back; a master keeps a wicked slave to train his own patience; the Sufi Ma'ruf Karkhi nurses an abusive, dying traveller. A pious man thanks a slanderer for naming only a few of his faults; the astronomer Kushyar refuses to teach a man too full of himself to learn; a devotee barks like a dog at God's door. The chapter closes with a slave who wins pardon by forgiving the king who orders his death, with Hatim's feigned deafness, and with the sage Luqman, who, put to dig ditches as a slave, resolves never again to overwork his own servant."
+   ],
+   "analysis": [
+    "This is one of the richest chapters in Edwards's selection and the clearest statement of the Bustan's ideal person: self-effacing, patient, quick to see his own faults and slow to see others'. Many of its exemplars are Sufi saints of Baghdad and Khurasan, and the stories of Bayazid and Ma'ruf Karkhi show how Sa'di uses hagiographic material for a general, not only a mystical, audience [[schimmel1975]] [[arberry1958]].",
+    "Yet the chapter's most vivid story is not wholly humble. The scholar in the qadi's court is moved by anger, wins by eloquence, and walks out leaving his name, Sa'di, behind him; the narrator even adds a startling maxim about striking a fallen enemy. The story has been read as self-portrait and self-advertisement, and it shows how Sa'di's persona combines moral teaching with pride in his own art [[katouzian2006]] [[yohannan1987]].",
+    "Several tales concern the treatment of servants and slaves. The master who keeps his bad slave and Luqman's resolution both turn humility into a rule of conduct towards inferiors: 'If thou be sorrowed by those above thee, be not harsh with thine inferiors.' The ethic accepts the social hierarchy of its time while trying to soften its use."
+   ],
+   "key": [
+    {
+     "ref": "Chapter IV, 'Story of A Raindrop' (Edwards)",
+     "quote": "It was exalted, for it was humble. Knocking at the door of extinction, it became existent.",
+     "note": "The raindrop becomes a pearl: self-abasement as the way to true being."
+    },
+    {
+     "ref": "Chapter IV, 'Story of the Darwesh and the Proud Cādi' (Edwards)",
+     "quote": "Is pure water different whether it be contained in a goblet of gold or an earthen ewer?",
+     "note": "The ragged scholar refuses the qadi's turban."
+    },
+    {
+     "ref": "Chapter IV, 'Story of the Darwesh and the Proud Cādi' (Edwards)",
+     "quote": "Some one said: “We know no one in this city so eloquent as Sadi.”",
+     "note": "The twist that names the hero as the poet himself."
+    }
+   ],
+   "section": 4
+  },
+  {
+   "n": 5,
+   "title": "Chapter V: Concerning Resignation",
+   "lines": "Edwards's prose selection: 9 headed stories and discourses",
+   "summary": [
+    "The fifth chapter (rida, acceptance of God's decree) teaches that fortune comes from God, not strength: the ant does not suffer for its weakness nor the tiger eat by its might. Sa'di visits an old friend in Isfahan, once a fearsome warrior, who has abandoned fighting since a defeat by the 'Tartars', when his skill was useless against an unfavourable star. A doctor predicts a villager's death and dies that night himself; a villager hangs his dead donkey's head on a vine against the Evil Eye; one man loses a coin that another finds by chance.",
+    "Further tales and maxims make the same point: the poor husband who cannot become rich like his neighbour Bakhtyar, the darwesh who tells his ugly wife not to paint her face, the vulture whose keen eyes see the grain but not the trap, and the camel who says she would never carry loads if the bridle were in her hands. The chapter ends, in Edwards's arrangement, with a short discourse on hypocrisy: prayer performed only for the eyes of men is 'the key to hell'."
+   ],
+   "analysis": [
+    "The warrior of Isfahan is one of the few places where the Mongol conquests, which overwhelmed Iran in Sa'di's lifetime, enter the Bustan directly. The old soldier's account of a battle against the 'Tartars' gives the doctrine of fate a historical weight: courage and skill could not prevent the disaster, and Sa'di's counsel of resignation is in part a response to an age of catastrophe [[katouzian2006]] [[rypka1968]].",
+    "The chapter is also where Sa'di's fatalism is most open to question. Maxims such as 'wild beasts cannot become men; education is wasted upon them' seem to contradict the chapter on education, and the fox parable in Chapter II had told the reader to strive. Sa'di's position is less a philosophy than a set of attitudes for different moments: effort when action is possible, acceptance when it is not. The final lines, where Sa'di tells himself to look for aid from God alone, turn resignation from passivity into trust [[fouchecour1986]].",
+    "The discourse on hypocrisy links resignation to sincerity. Both reject the attempt to secure one's fortune by outward means, whether by strength or by a reputation for piety."
+   ],
+   "key": [
+    {
+     "ref": "Chapter V, 'Story of A Darwesh and His Wife' (Edwards)",
+     "quote": "Since one cannot escape the arrows of Fate, resignation is the only shield.",
+     "note": "The chapter's thesis in a single maxim."
+    },
+    {
+     "ref": "Chapter V, 'Story of A Vulture and A Kite' (Edwards)",
+     "quote": "“Caution,” said the captive vulture, “availeth not with Destiny.”",
+     "note": "The keen-eyed bird caught by the trap it did not see."
+    },
+    {
+     "ref": "Chapter V, 'Discourse Concerning Hypocrisy' (Edwards)",
+     "quote": "That prayer is the key to hell which thou performest only before the eyes of men.",
+     "note": "Sincerity, not display, is the measure of worship."
+    }
+   ],
+   "section": 5
+  },
+  {
+   "n": 6,
+   "title": "Chapter VI: Concerning Contentment",
+   "lines": "Edwards's prose selection: 10 headed stories and discourses",
+   "summary": [
+    "Contentment (qana'at) is presented as the condition of true worship: 'He knows not God nor performs His worship who is not contented with his lot.' The opening maxims attack gluttony and the pampering of the body; a falcon cannot fly with the stone of avarice tied to its wing. A covetous man prostrates himself before the king of Khwarazm, and his son asks whether Mecca is no longer his place of prayer; a feverish pious man would rather die than ask a sour-faced man for conserve of roses; a glutton falls from a date-palm in Basra.",
+    "A recluse thanks the Amir of Tartary for a silk robe but prefers his patched habit; a poor man who goes to a feast to beg for meat has his arm broken and returns to his bread and onions; a cat wounded at a noble's palace decides that the mice in an old woman's hut are good enough. A wife reminds her anxious husband that He who gave the child teeth will give it bread; a holy man builds a house no taller than himself; a sheikh who inherits a throne and grows warlike soon begs a devotee for prayers. A discourse on riches closes the chapter: generosity, not wealth, makes a person rich."
+   ],
+   "analysis": [
+    "The chapter is closely related to the teaching of the Gulistan, whose third chapter treats the same virtue, and to the Sufi ideal of poverty (faqr). Sa'di's contentment is not world-hatred: it is freedom from dependence on others, the dignity of the person who 'needs not to write to any one, I am thy slave and servant'. The independence of the darwesh is set against the servility of the courtier [[thackston2008]] [[schimmel1975]]. Readers who compare the two books will find the same themes treated in the Gulistan's lighter mixture of prose and verse; its first two chapters, on the conduct of kings and the morals of darweshes, are close counterparts to the Bustan's first and sixth chapters [[arberry1945]] [[rehatsek1964]].",
+    "Many of the stories are comic and domestic, and they show Sa'di's gift for compressing a moral into a scene: the cat's reflection, or the glutton killed by 'the weight of his stomach'. The comparison of a king with a cotton-carder in death, and the claim that the villager sleeps better than the king, belong to a common stock of Persian wisdom, but Sa'di gives them a characteristic sharpness [[arberry1958]].",
+    "The sheikh who becomes king, and whom a devotee mocks by asking why he did not keep to half a loaf, is a mirror image of King Tukla in Chapter I: the king should not abandon his throne for retreat, nor the recluse his retreat for a throne."
+   ],
+   "key": [
+    {
+     "ref": "Chapter VI, opening (Edwards)",
+     "quote": "Contentment maketh a man rich—tell this to the avaricious.",
+     "note": "The paradox on which the chapter rests."
+    },
+    {
+     "ref": "Chapter VI, opening (Edwards)",
+     "quote": "How can the falcon fly to the sky when the stone of avarice is tied to its wing?",
+     "note": "Greed as a weight on the soul's flight."
+    },
+    {
+     "ref": "Chapter VI, 'Story of An Ambitious Cat' (Edwards)",
+     "quote": "the mice in the ruined hut of the old woman are good enough for me.",
+     "note": "The wounded cat's lesson, comic but exact."
+    }
+   ],
+   "section": 6
+  },
+  {
+   "n": 7,
+   "title": "Chapter VII: Concerning Education",
+   "lines": "Edwards's prose selection: 17 headed stories and discourses",
+   "summary": [
+    "The seventh chapter (tarbiyat, training or education) begins with the self: the body is a city in which the self is king and Reason the wise minister, while lust and wantonness are its thieves. Discourses on silence follow, with stories of a king whose secret spread in a day, a mendicant in Egypt revered until he spoke, and a man throttled for an impertinent word. Sa'di then treats slander at length: a sage rebukes a backbiter; a speaker claims thieving is better than slander; Sa'di's tutor at the Nizamiyya in Baghdad warns him that complaining of a jealous classmate is itself backbiting; a man teaching the boy Sa'di his ablutions slanders the village elder; a Sufi who has never fought infidels attacks only Muslims with his tongue.",
+    "Short sections define when slander is lawful (against a tyrant, the shameless and the cheat), condemn tale-bearers, and tell how Faridun's vizier turned an accusation into proof of loyalty. A discourse on wives gives harsh advice on keeping women at home; another, on sons, urges a father to give his son knowledge and a trade and to keep him from bad company. The chapter ends with Sa'di rebuked by a holy man for mocking a preacher's faulty speech: thorns and roses grow together."
+   ],
+   "analysis": [
+    "The chapter shows how wide the concept of adab is. Adab means at once good manners, moral discipline, and literary culture; the chapter moves from the government of the soul to the government of the tongue and the household, assuming that education is the shaping of character as a whole. Its image of the self as a city with Reason as vizier adapts a figure from ethical philosophy to the language of kingship used in Chapter I [[fouchecour1986]] [[lambton1981]].",
+    "The autobiographical anecdotes, especially the reference to the Nizamiyya college of Baghdad, are among the main sources for Sa'di's education, though biographers caution that the poet shapes such memories for moral effect [[masse1919]] [[katouzian2006]].",
+    "The discourse on wives is the most troubling passage in Edwards's selection for a modern reader: it advises beating a wife who goes to the bazaar and taking 'a new wife each Spring'. It should be read as an expression of the patriarchal assumptions of thirteenth-century advice literature, which Sa'di largely shares, and alongside the chapter's praise of the good-natured wife who is 'the dispeller of thy sorrows'. Students may also note that the aphorism about the almanac is a jest in a long tradition of misogynist proverbs, not a legal ruling."
+   ],
+   "key": [
+    {
+     "ref": "Chapter VII, opening (Edwards)",
+     "quote": "Thy earthly body is a city, containing both good and evil; thou art the King, and Reason is thy wise minister.",
+     "note": "The government of the self as the foundation of education."
+    },
+    {
+     "ref": "Chapter VII, 'Story Concerning the Keeping of Secrets' (Edwards)",
+     "quote": "Speech is a demon confined in the well of the mind: leave it not free on thy palate and tongue.",
+     "note": "One of the chapter's many maxims on silence."
+    },
+    {
+     "ref": "Chapter VII, 'Sadi Rebuked for His Fault-Finding' (Edwards)",
+     "quote": "Thorns and roses grow together; why regardest thou only the thorns?",
+     "note": "The holy man's rebuke, which closes the chapter on a note of charity in judgment."
+    }
+   ],
+   "section": 7
+  },
+  {
+   "n": 8,
+   "title": "Chapter VIII: Concerning Gratitude",
+   "lines": "Edwards's prose selection: 9 headed stories and discourses",
+   "summary": [
+    "The chapter on gratitude (shukr) opens with Sa'di's confession that he cannot thank God for every hair of his body. A mother brings her ungrateful son the cradle he once slept in and reminds him that he could not then drive the flies from his face. A discourse on 'the art of the Most High God' lists the gifts of creation, from sun and moon to honey and dates; another, on the condition of the weak, teaches that only the sick know the length of the night.",
+    "The stories show gratitude learned by comparison. King Tughral of Shiraz promises his fur coat to a shivering Hindu sentry and forgets it in the arms of a slave; a bound thief tells a complaining man to thank God his hands are free; a pious man struck by someone who takes him for a Jew gives his robe to his assailant in thanks that he is not one; a donkey tells a man left on the road to be grateful that he is not a donkey. The chapter closes with the long story of Somnath, in which Sa'di, travelling in India, exposes the mechanism by which a priest makes an ivory idol raise its arm, throws the priest down a well, and flees."
+   ],
+   "analysis": [
+    "The opening reflections are among the most lyrical in the Bustan, and the theme of gratitude allows Sa'di to celebrate the natural world as a system of gifts. The mother's speech with the cradle is a small masterpiece of moral rhetoric, making the son's past helplessness and future death into arguments for thankfulness now [[arberry1958]].",
+    "The Somnath story is the most debated episode in the poem. Somnath, on the coast of Gujarat, was the temple sacked by Mahmud of Ghazni in 1025, and Sa'di's account of a visit there, with its mechanical idol, its 'Brahmin' who is also a 'fire-worshipper' expounding the Zend, and its violent ending, has struck most scholars as a literary fiction rather than a travel record. Its moral, however, is clear: as the idol's arm was moved by a hidden rope, so the hand of the believer is moved by God, and no one should take credit for his good works [[masse1919]] [[katouzian2006]] [[browne1906]].",
+    "Several stories in the chapter rely on contemporary religious prejudice: the man thankful not to be a Jew, the Muslim thankful not to wear the idolater's thread. They are presented as aids to gratitude, but they also show the limits of the poem's humanism, a point that modern readers and teachers should address directly."
+   ],
+   "key": [
+    {
+     "ref": "Chapter VIII, opening (Edwards)",
+     "quote": "Every hair of my body is a gift from Him; how could I thank Him for every hair?",
+     "note": "The impossibility of adequate thanks."
+    },
+    {
+     "ref": "Chapter VIII, 'Discourse Concerning the Art of the Most High God' (Edwards)",
+     "quote": "Render thanks each moment from thy heart, for gratitude is not the work of the tongue alone.",
+     "note": "Gratitude as an inner disposition, not a formula."
+    },
+    {
+     "ref": "Chapter VIII, 'Story of Sadi and the Idolaters' (Edwards)",
+     "quote": "Men of sanctity stretch not out their hands themselves: the Fates invisibly pull the strings.",
+     "note": "The moral Sa'di draws from the idol worked by a rope."
+    }
+   ],
+   "section": 8
+  },
+  {
+   "n": 9,
+   "title": "Chapter IX: Concerning Repentance",
+   "lines": "Edwards's prose selection: 12 headed stories and discourses",
+   "summary": [
+    "The ninth chapter (tawba) addresses a man of seventy who has slept through his life and made no preparation for the next world. In 'An Old Man's Lament' an old man refuses to join Sa'di and his young friends in their revels, because the dawn of age has spread over his cheeks; maxims urge the young to worship while they have strength. A camel-driver wakes Sa'di in the desert of Faid on the pilgrim road, warning that the caravan will leave him behind.",
+    "A sage rebukes a man who rends his clothes for the dead; a pious man who finds a gold brick dreams all night of houses and servants until an old man making bricks from the mud of a grave reminds him that his own dust will become bricks. Sa'di recalls exchanging a gold ring for a date as a child, and losing his father in a crowd at the festival; a man rears a wolf that kills him; a cheat curses the Devil whom he obeys; a drunk burns his own harvest. A final discourse promises that the tears of repentance wash away every sin."
+   ],
+   "analysis": [
+    "Repentance in the Bustan is framed above all by time. The chapter's images of the caravan, the drum of departure, the bird of the soul, and the harvest that must be sown before winter turn the doctrine of tawba into an urgent call to use the present moment. The maxim that 'yesterday has gone and to-morrow has not come' sums up a conviction shared by many Persian poets, that only the present belongs to us [[schimmel1975]] [[debruijn1997]].",
+    "The childhood memories give the chapter its tenderness. The ring traded for a date is an emblem of a life squandered on trifles, and the father who pulls the lost child's ear becomes an image of the spiritual guide whose skirt the disciple must not let go. As elsewhere, these anecdotes are told for their moral, and they should not be read as simple autobiography [[katouzian2006]].",
+    "The gold brick story is one of Sa'di's finest satires on fantasy and greed: the man's imagined house, with its marble foundations and garden-room, is built and furnished in a few lines, and demolished by the image of the brick-maker at the grave."
+   ],
+   "key": [
+    {
+     "ref": "Chapter IX, 'Admonition' (Edwards)",
+     "quote": "Thy life is a bird, and its name is Breath. When the bird has flown from its cage it cometh not back to captivity.",
+     "note": "The fragility of life as the ground of repentance."
+    },
+    {
+     "ref": "Chapter IX, 'Story Concerning Sorrow for the Dead' (Edwards)",
+     "quote": "Since yesterday has gone and to-morrow has not come, take account of this one moment that now is.",
+     "note": "The present moment as the only time for amendment."
+    },
+    {
+     "ref": "Chapter IX, 'Moral From An Incident in Sadi’s Childhood' (Edwards)",
+     "quote": "When a child knows not the value of a ring he will part with it for a sweetmeat.",
+     "note": "The childhood memory turned into a parable of wasted life."
+    }
+   ],
+   "section": 9
+  },
+  {
+   "n": 10,
+   "title": "Chapter X: Concerning Prayer",
+   "lines": "Edwards's prose selection: 2 headed stories and discourses; the Persian closing prayers and conclusion are not included",
+   "summary": [
+    "The last chapter (munajat, intimate prayer to God) is the shortest in Edwards's selection. Sa'di invites the reader to raise his hands in prayer while they still have strength, and prays in his own voice for mercy, for protection from shame before others, and for the 'shadow of Thy mercy'. He then recalls the lament of a distracted worshipper at Mecca, who asks God to keep him from his own passions and to light the lamp of faith before him.",
+    "The chapter, and Edwards's book, ends with the story of an idol-worshipper who, after years of vain supplication to his idol, threatens to ask God instead, and is answered at once. A pious man is astonished, and a voice from heaven explains that if God too refused him there would be no difference between an idol and the Eternal."
+   ],
+   "analysis": [
+    "The Bustan ends, as it began, with God, and its closing chapter turns the counsels of the previous nine into the language of supplication. The prayers stress shame, dependence and hope rather than merit; the Mecca worshipper's line, 'If I am weak, my refuge is strong', gathers up the teaching on humility and resignation [[schimmel1975]].",
+    "The final story is a bold conclusion. God answers the prayer of an idolater who has not yet converted, simply because he has turned to Him; the door of mercy, a recurrent image in the poem, is literally never shut. In the Persian the chapter continues with further prayers and a conclusion of the book; Edwards stops with this tale, which gives his selection a strong ending but hides how the original closes [[wickens1974]] [[edwards1911]]."
+   ],
+   "key": [
+    {
+     "ref": "Chapter X, opening (Edwards)",
+     "quote": "Come, let us raise our hands in prayer, for to-morrow they will be powerless in the dust.",
+     "note": "The chapter's opening invitation, with its reminder of death."
+    },
+    {
+     "ref": "Chapter X, 'A Worshipper’s Lament' (Edwards)",
+     "quote": "Why should I weep because of my condition? If I am weak, my refuge is strong.",
+     "note": "The prayer at Mecca: weakness as the ground of trust."
+    },
+    {
+     "ref": "Chapter X, 'Story of An Idolater' (Edwards)",
+     "quote": "If at the shrine of God he were likewise spurned, what difference would there be between an idol and Him Who is eternal?",
+     "note": "The voice from heaven explains why the idolater's prayer was answered."
+    }
+   ],
+   "section": 10
+  }
+ ],
+ "characters": [
+  {
+   "name": "Sa'di (the speaker)",
+   "side": "Frame of the poem",
+   "text": "The poet speaks throughout as counsellor, storyteller and witness, and appears in many tales: as a student in Baghdad, a child, a traveller in Syria, Turkey and India, and the ragged scholar who outargues a qadi. His persona combines piety, humour and a good deal of pride in his own eloquence."
+  },
+  {
+   "name": "Abu Bakr ibn Sa'd ibn Zangi",
+   "side": "Dedicatee",
+   "text": "The Salghurid atabeg of Fars (ruled 1226-1260), to whom the poem is dedicated and for whom Sa'di prays at the start of Chapter I. Historically he preserved Fars by submitting to the Mongols; in the poem he is the just king whose shadow protects his people."
+  },
+  {
+   "name": "Nushiravan and Hurmuz",
+   "side": "Kings and rulers",
+   "text": "The Sasanian king Khusraw Anushirvan, proverbial in Persian literature for justice, counsels his son Hormizd on his deathbed to cherish the poor. Pre-Islamic kings such as Nushiravan, Darius and Faridun appear in the Bustan as exemplars of good or bad government."
+  },
+  {
+   "name": "Umar ibn Abd al-Aziz (Edwards's 'Abdul Aziz')",
+   "side": "Kings and rulers",
+   "text": "The Umayyad caliph, remembered for piety, who sells a priceless pearl to relieve his people in a drought, preferring 'a stoneless ring' to a sorrowing people."
+  },
+  {
+   "name": "Hatim Tai",
+   "side": "Exemplars of generosity",
+   "text": "A pre-Islamic Arab chief whose liberality was proverbial. He kills his famous horse to feed his guests and offers his head to an assassin; in Chapter IV he feigns deafness so as to hear the truth about himself."
+  },
+  {
+   "name": "Mahmud of Ghazni and Ayaz",
+   "side": "Figures of love",
+   "text": "The Ghaznavid sultan and his devoted slave, a classic pair in Persian poetry. Mahmud loves Ayaz for his virtues, and Ayaz alone stays with the king when the others scramble for spilled pearls: an image of the devotee who seeks the master, not his gifts."
+  },
+  {
+   "name": "The moth and the candle",
+   "side": "Figures of love",
+   "text": "In two dialogues the moth defends its fatal love, and the candle answers that its own suffering is greater; the candle's extinction ends the exchange. They became a favourite emblem of self-annihilating love."
+  },
+  {
+   "name": "Bayazid Bistami and Ma'ruf Karkhi",
+   "side": "Saints and Sufis",
+   "text": "Two early Sufi masters. Bayazid, covered with ashes, says he deserves hell-fire; Ma'ruf nurses a dying traveller who abuses him. Both show humility and forbearance as the marks of sanctity."
+  },
+  {
+   "name": "Luqman",
+   "side": "Saints and sages",
+   "text": "The sage of the Qur'an and of proverbial lore, mistaken for a slave and set to dig ditches, who forgives his master and resolves to treat his own servant gently. His sayings are quoted elsewhere in the poem."
+  },
+  {
+   "name": "The ragged scholar in the qadi's court",
+   "side": "Saints and sages",
+   "text": "A poorly dressed doctor of law, pushed to the lowest seat, who wins the debate, refuses the qadi's turban and leaves; he is revealed to be Sa'di. The story is both a lesson in humility and a piece of self-portraiture."
+  },
+  {
+   "name": "The Brahmin of Somnath",
+   "side": "Opponents",
+   "text": "The priest of the ivory idol in Chapter VIII, who works its arm with a hidden rope. Sa'di unmasks him and throws him into a well. The figure is a literary construction, mixing Hindu and Zoroastrian features."
+  },
+  {
+   "name": "The voice of God and the angels",
+   "side": "The divine",
+   "text": "A voice from a mosque wall, an angel, or a voice from heaven intervenes in several stories to correct a human judgment, most strikingly at the end of the poem, when God answers an idolater's prayer."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Justice and the duties of rulers",
+   "text": [
+    "The Bustan begins with kingship, and its political teaching is simple and demanding: the king exists for his people, as the tree lives by its root. Justice, care for the poor, protection of merchants and travellers, and deliberation before punishment are the ruler's piety. Sa'di stands in the tradition of Persian advice literature, but he speaks with unusual directness to the powerful [[lambton1981]] [[fouchecour1986]].",
+    "The same ethic is extended to everyone who has power over others: masters over slaves, the rich over the poor, parents over children. Many tales concern the right treatment of inferiors, and the maxims on remembering one's own suffering, as Luqman does, turn justice into a matter of imaginative sympathy."
+   ]
+  },
+  {
+   "title": "Generosity and the service of others",
+   "text": [
+    "Generosity is perhaps the poem's central virtue. It is praised in kings, in Hatim Tai, in a poor man who goes to prison for a debtor, and in a man who waters a dog. Sa'di repeatedly sets it above private devotion: 'Excellence is attained by generosity, not by vigils in the night.'",
+    "Generosity is also tied to a vision of the afterlife. What one gives remains, while what one keeps passes from one's hands; the poem's commercial and agricultural metaphors (stock, profit, harvest, seed) make charity an investment in the world to come [[katouzian2006]]."
+   ]
+  },
+  {
+   "title": "Love, human and divine",
+   "text": [
+    "The chapter on love describes the lovers of God in images drawn from human passion: wine, the beloved's beauty, the moth and the candle. Sa'di moves easily between human and divine love, arguing that the intensity of the one makes the other credible [[schimmel1975]] [[ingenito2020]].",
+    "Love in the Bustan is less a doctrine than a state: absorption in the beloved, indifference to blame, willingness to suffer and to be consumed. It is the most mystical of the poem's themes, and it gives the more practical counsels elsewhere their spiritual horizon."
+   ]
+  },
+  {
+   "title": "Humility, contentment and resignation",
+   "text": [
+    "Three chapters teach the self-limitation that Sa'di considers the basis of all virtue: humility before others, contentment with one's lot, and acceptance of God's decree. The raindrop that becomes a pearl because it thought itself nothing is the governing image.",
+    "These virtues are presented as forms of freedom. The contented darwesh does not have to bow to kings; the humble man is not wounded by insult; the resigned man is not destroyed by misfortune. In an age of Mongol conquest and political instability, such teaching had obvious force [[katouzian2006]] [[debruijn1997]]."
+   ]
+  },
+  {
+   "title": "Speech, silence and the discipline of the self",
+   "text": [
+    "Sa'di was a master of words, and the Bustan is much concerned with their use. The chapter on education praises silence, warns against revealing secrets, and condemns slander and tale-bearing at length, while the poet himself repeatedly celebrates the 'sweet tongue' that wins hearts.",
+    "Behind these counsels lies the idea of the self as a city to be governed by Reason. Education is not only the acquisition of knowledge but the training of desire and of the tongue, and it begins in childhood, as Sa'di's own memories of his teachers show [[fouchecour1986]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "The traveller's report",
+   "text": "Many stories begin with 'I have heard' or with a scene from Sa'di's travels. The poem presents its wisdom as gathered from many lands and people, and the returning traveller with a gift for his friends frames the whole book."
+  },
+  {
+   "title": "The king and the darwesh",
+   "text": "Kings and poor devotees are constantly compared: the king should pray like a beggar, the darwesh is freer than the king, and both are equal in death. The pairing tests the meaning of true wealth and power."
+  },
+  {
+   "title": "Reversal of fortune",
+   "text": "Rich men become beggars and slaves become masters; the proud fall and the humble rise. Such reversals illustrate both divine justice and the instability of worldly goods."
+  },
+  {
+   "title": "The door",
+   "text": "God's door of mercy, the door of repentance, the doors of the ten chapters: the image recurs throughout, usually to insist that the door of God is never closed to the one who knocks."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The orchard or garden",
+   "text": "The book's title and its prologue make it a garden of fruit gathered from experience; the garden is also the world, where every cypress is uprooted in time."
+  },
+  {
+   "title": "The moth and the candle",
+   "text": "The lover who is consumed by the beloved; the candle's own burning and its extinction make love both suffering and annihilation."
+  },
+  {
+   "title": "The pearl",
+   "text": "Value hidden or produced in humility: the raindrop becomes a royal pearl, and Abdul Aziz sells his pearl for his people. Pearls stand for both eloquence and true worth."
+  },
+  {
+   "title": "The caravan",
+   "text": "Life as a journey with a fixed hour of departure; the sleeper left behind by the caravan is the soul that has neglected repentance."
+  },
+  {
+   "title": "Dust and fire",
+   "text": "Man is made of dust and the demons of fire; dust stands for humility and fire for pride, and the grave returns all human pride to dust."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Autobiography or fiction: Sa'di's travels",
+   "text": [
+    "Sa'di presents himself as a much-travelled man, and older biographies built a long itinerary from the anecdotes in the Bustan and Gulistan, taking him from North Africa to Kashgar and India. Henri Massé's study of 1919 already tested these claims against history and found many of them doubtful [[masse1919]].",
+    "Most modern scholars treat the travel stories as literary devices: the first person lends authority to a moral, and the details are chosen for effect rather than accuracy. Some anecdotes, such as his study in Baghdad, are generally accepted; others, such as the visit to Somnath, are widely regarded as fiction. The debate matters for how we read the poem's persona, which may be better understood as a constructed figure of the experienced sage [[katouzian2006]] [[yohannan1987]]."
+   ],
+   "cite": [
+    "masse1919",
+    "katouzian2006",
+    "yohannan1987"
+   ]
+  },
+  {
+   "title": "The Somnath episode",
+   "text": [
+    "The story of the idol in Chapter VIII, in which Sa'di poses as a convert, discovers the priest's trick and kills him, has troubled readers. Its geography and religion are confused (the priest is called both a Brahmin and a fire-worshipper and expounds the Zend), and its violence sits uneasily with the poem's praise of gentleness [[browne1906]].",
+    "Critics have read it as a fable about divine agency, given a famous setting because Somnath was a symbol of Mahmud of Ghazni's conquest; as an expression of contemporary religious hostility; or as a deliberately ironic self-portrait of the narrator's hypocrisy. Its moral, that God moves the believer's hand, is clear, but the means by which the narrator reaches it remain open to judgment [[katouzian2006]]."
+   ],
+   "cite": [
+    "browne1906",
+    "katouzian2006"
+   ]
+  },
+  {
+   "title": "Sufi or moralist?",
+   "text": [
+    "Sa'di was associated with Sufi circles, venerated the great saints, and wrote a chapter on mystical love; Persian tradition has long counted him among the Sufi poets. Some scholars stress this dimension and read the Bustan as a guide to the spiritual path [[schimmel1975]] [[debruijn1997]].",
+    "Others see him above all as a worldly moralist, more interested in conduct in society than in mystical experience, and contrast him with Rumi or Attar. Arberry's survey describes him as a poet of practical wisdom whose Sufism is ethical rather than speculative. The two views need not exclude each other, since Sufi ethics in the thirteenth century was itself largely a teaching of adab and conduct [[arberry1958]] [[debruijn1997]]."
+   ],
+   "cite": [
+    "schimmel1975",
+    "debruijn1997",
+    "arberry1958"
+   ]
+  },
+  {
+   "title": "Pragmatism and contradiction in Sa'di's ethics",
+   "text": [
+    "Readers have often noticed that the Bustan gives conflicting advice: do good to the evil, but forbearance with the wicked increases their wickedness; trust in God, but strive like the tiger; forgive, but 'dash out his brains' when the enemy has fallen. Some critics have taken this as cynicism or opportunism [[yohannan1987]].",
+    "Others argue that the contradictions are a feature of the wisdom tradition to which Sa'di belongs, in which counsel is fitted to occasions and the wise person knows which maxim applies. Fouchécour's survey of Persian moral notions shows how Sa'di's works gather and refine a long inheritance of ethical sayings; Katouzian defends Sa'di as a humane realist rather than a systematic philosopher [[fouchecour1986]] [[katouzian2006]]."
+   ],
+   "cite": [
+    "yohannan1987",
+    "fouchecour1986",
+    "katouzian2006"
+   ]
+  },
+  {
+   "title": "Counsel to kings under Mongol rule",
+   "text": [
+    "The first chapter belongs to the genre of the mirror for princes, and the poem is dedicated to a ruler who had submitted to the Mongols. Scholars have asked whether Sa'di's advice is conventional praise or genuine criticism of the powerful [[lambton1981]] [[bosworth1996]].",
+    "The directness of many stories (the king rebuked by a herdsman, the king who forgets the shivering sentry) suggests that Sa'di used the conventions of counsel to speak plainly about the abuse of power. At the same time, his ethic of prudence and acceptance has been read as an accommodation to an age when resistance was hopeless [[katouzian2006]]."
+   ],
+   "cite": [
+    "lambton1981",
+    "bosworth1996",
+    "katouzian2006"
+   ]
+  },
+  {
+   "title": "Beauty and desire",
+   "text": [
+    "Sa'di's love poetry, and passages such as the story of Mahmud and Ayaz or the vizier's gaze at the slaves in Chapter I, raise the question of how human and especially male beauty relates to love of God. Older critics tended to read such passages either as purely allegorical or as worldly [[meisami1987]].",
+    "Ingenito has argued that Sa'di developed a coherent aesthetics of 'beholding beauty', in which looking at the beautiful is a form of contemplating the divine, drawing on philosophical and Sufi theories of vision. This reading makes the chapter on love central to Sa'di's whole work rather than a mystical interlude [[ingenito2020]]."
+   ],
+   "cite": [
+    "meisami1987",
+    "ingenito2020"
+   ]
+  },
+  {
+   "title": "Translating and abridging the Bustan",
+   "text": [
+    "Victorian and Edwardian English versions often presented the Bustan in prose and in selection, emphasising its moral sayings and smoothing over passages that seemed strange or offensive. Edwards's 1911 version, which this guide quotes, is of this kind: it keeps the shape of the ten chapters but omits much of each [[edwards1911]].",
+    "Wickens's complete translation of 1974 aimed to convey the whole poem, including its wit and its harshness, in a more modern English, and remains the version most cited by scholars. Comparing the two shows how much the image of Sa'di as a gentle sage depended on the choices of his translators [[wickens1974]] [[arberry1958]]."
+   ],
+   "cite": [
+    "edwards1911",
+    "wickens1974",
+    "arberry1958"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Prologue, 'On the Reason for the Writing of the Book' (Edwards)",
+   "quote": "The sugar that I bring is not that which is eaten, but what knowers of truth take away with respect.",
+   "who": "Sa'di (the narrator)",
+   "explanation": "The returning traveller's gift: the book is offered as sweetness of a spiritual kind, the fruit of experience."
+  },
+  {
+   "ref": "Chapter I, 'Nushīravān’s Counsel to His Son' (Edwards)",
+   "quote": "The shepherd should not sleep while the wolf is among the sheep.",
+   "who": "Nushiravan to his son Hurmuz",
+   "explanation": "The ruler as shepherd who must watch over his people: the core image of the chapter on justice."
+  },
+  {
+   "ref": "Chapter I, 'Story of Abdul Aziz and the Pearl' (Edwards)",
+   "quote": "Happy is he who sets the ease of others above his own.",
+   "who": "Sa'di (the narrator)",
+   "explanation": "The moral of the caliph who sells his pearl to feed the hungry; it sums up the poem's social ethic."
+  },
+  {
+   "ref": "Chapter II, 'Story of A Devout Miser' (Edwards)",
+   "quote": "Excellence is attained by generosity, not by vigils in the night.",
+   "who": "Sa'di (the narrator)",
+   "explanation": "Active charity is set above private devotion, a recurrent theme of the Bustan."
+  },
+  {
+   "ref": "Chapter III, 'Story of A Moth and A Candle' (Edwards)",
+   "quote": "I have love in my heart, and this flame is as a flower to me.",
+   "who": "The moth",
+   "explanation": "The moth's defence of its fatal love: what reason calls destruction, love calls a garden."
+  },
+  {
+   "ref": "Chapter IV, 'Story Illustrative of Pious Men Regarding Themselves With Contempt' (Edwards)",
+   "quote": "Humility is the only ritual for a devotee.",
+   "who": "Sa'di (the narrator)",
+   "explanation": "Humility is placed above outward forms of worship."
+  },
+  {
+   "ref": "Chapter IV, 'Story Illustrating Forbearance for the Sake of Friends' (Edwards)",
+   "quote": "Alone in my heart there dwelleth affection for my loved one; thus, it contains no room for malice.",
+   "who": "A lover taunted by his enemies",
+   "explanation": "Love leaves no room for resentment: a link between the chapters on love and humility."
+  },
+  {
+   "ref": "Chapter VII, 'Discourse on Slander' (Edwards)",
+   "quote": "If thou speak evil of any one, thou art sinful, even though what thou sayest be true.",
+   "who": "Sa'di (the narrator)",
+   "explanation": "Sa'di's strict view of backbiting: truth does not excuse it."
+  },
+  {
+   "ref": "Chapter IX, 'Story Concerning Sorrow for the Dead' (Edwards)",
+   "quote": "In this garden of the world there is not a cypress that has grown which the wind of death has not uprooted.",
+   "who": "Sa'di (the narrator)",
+   "explanation": "The garden of the title becomes the world under death, the ground for repentance."
+  },
+  {
+   "ref": "Chapter X, opening (Edwards)",
+   "quote": "Think not that he who supplicates before the Door of Mercy, which is never shut, will turn away in hopelessness.",
+   "who": "Sa'di (the narrator)",
+   "explanation": "The door of mercy, a recurrent image, opens the closing chapter on prayer."
+  }
+ ],
+ "questions": [
+  {
+   "q": "How does the prologue present the purpose and design of the Bustan?",
+   "hint": "Consider the traveller's gift of sugar, the 'Palace of Wealth' with ten doors, the silk and cotton, and the dedication to Abu Bakr."
+  },
+  {
+   "q": "What does Chapter I teach about the relation between a king's piety and his justice?",
+   "hint": "Compare the king who prays like a darwesh, Nushiravan's counsel, and the devotee's rebuke to Tukla."
+  },
+  {
+   "q": "Is the Bustan's advice consistent? Choose two stories that seem to contradict each other and explain how Sa'di might reconcile them.",
+   "hint": "The fox and the tiger against Chapter V on fate; the bees against the stories of doing good to the evil."
+  },
+  {
+   "q": "How does Sa'di relate human love to the love of God in Chapter III?",
+   "hint": "Look at the discourse on constancy, Mahmud and Ayaz, and the two dialogues of the moth and the candle."
+  },
+  {
+   "q": "What role does Sa'di's own persona play in the poem?",
+   "hint": "Consider the first-person anecdotes: Damascus, the qadi's court, the Nizamiyya, Isfahan, Somnath, the childhood memories."
+  },
+  {
+   "q": "Is the story of the scholar in the qadi's court a lesson in humility, or something else?",
+   "hint": "Think about his anger, his eloquence, his refusal of the turban, the maxim about the fallen enemy, and the final naming of Sa'di."
+  },
+  {
+   "q": "How should a modern reader approach the Somnath episode?",
+   "hint": "Consider its historical setting, its confused details, its violence and the moral Sa'di draws from it."
+  },
+  {
+   "q": "What does the Bustan mean by contentment, and how is it different from poverty or passivity?",
+   "hint": "Compare the falcon and the stone of avarice, the recluse and the silk robe, the cat, and the sheikh who became king."
+  },
+  {
+   "q": "How do images of time and journeying shape the chapter on repentance?",
+   "hint": "The caravan and the drum, the bird of the soul, the harvest, the gold brick and the brick-maker at the grave."
+  },
+  {
+   "q": "What is lost, and what is gained, in Edwards's prose selection of the Bustan?",
+   "hint": "Think about verse and prose, abridgement, the shortened prologue and ending, and his biblical English."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "arberry1945",
+   "text": "Arberry, A. J., trans. Kings and Beggars: The First Two Chapters of Sa'di's Gulistan. London: Luzac, 1945."
+  },
+  {
+   "id": "arberry1958",
+   "text": "Arberry, A. J. Classical Persian Literature. London: George Allen and Unwin, 1958."
+  },
+  {
+   "id": "bosworth1996",
+   "text": "Bosworth, Clifford Edmund. The New Islamic Dynasties: A Chronological and Genealogical Manual. Edinburgh: Edinburgh University Press, 1996."
+  },
+  {
+   "id": "browne1906",
+   "text": "Browne, Edward G. A Literary History of Persia. Vol. 2: From Firdawsi to Sa'di. London: T. Fisher Unwin, 1906."
+  },
+  {
+   "id": "debruijn1997",
+   "text": "de Bruijn, J. T. P. Persian Sufi Poetry: An Introduction to the Mystical Use of Classical Persian Poems. Richmond, Surrey: Curzon, 1997."
+  },
+  {
+   "id": "edwards1911",
+   "text": "Edwards, A. Hart, trans. The Bustan of Sadi. Wisdom of the East. London: John Murray, 1911."
+  },
+  {
+   "id": "fouchecour1986",
+   "text": "Fouchécour, Charles-Henri de. Moralia: Les notions morales dans la littérature persane du 3e/9e au 7e/13e siècle. Paris: Éditions Recherche sur les Civilisations, 1986."
+  },
+  {
+   "id": "ingenito2020",
+   "text": "Ingenito, Domenico. Beholding Beauty: Sa'di of Shiraz and the Aesthetics of Desire in Medieval Persian Poetry. Leiden: Brill, 2020."
+  },
+  {
+   "id": "katouzian2006",
+   "text": "Katouzian, Homa. Sa'di: The Poet of Life, Love and Compassion. Oxford: Oneworld, 2006."
+  },
+  {
+   "id": "lambton1981",
+   "text": "Lambton, Ann K. S. State and Government in Medieval Islam: An Introduction to the Study of Islamic Political Theory. Oxford: Oxford University Press, 1981."
+  },
+  {
+   "id": "masse1919",
+   "text": "Massé, Henri. Essai sur le poète Saadi, suivi d'une bibliographie. Paris: Paul Geuthner, 1919."
+  },
+  {
+   "id": "meisami1987",
+   "text": "Meisami, Julie Scott. Medieval Persian Court Poetry. Princeton: Princeton University Press, 1987."
+  },
+  {
+   "id": "rehatsek1964",
+   "text": "Rehatsek, Edward, trans. The Gulistan or Rose Garden of Sa'di. Ed. W. G. Archer. London: George Allen and Unwin, 1964."
+  },
+  {
+   "id": "rypka1968",
+   "text": "Rypka, Jan, et al. History of Iranian Literature. Ed. Karl Jahn. Dordrecht: D. Reidel, 1968."
+  },
+  {
+   "id": "schimmel1975",
+   "text": "Schimmel, Annemarie. Mystical Dimensions of Islam. Chapel Hill: University of North Carolina Press, 1975."
+  },
+  {
+   "id": "thackston2008",
+   "text": "Thackston, Wheeler M., trans. The Gulistan (Rose Garden) of Sa'di: Bilingual English and Persian Edition with Vocabulary. Bethesda, MD: Ibex Publishers, 2008."
+  },
+  {
+   "id": "wickens1974",
+   "text": "Wickens, G. M., trans. Morals Pointed and Tales Adorned: The Bustan of Sa'di. Toronto: University of Toronto Press, 1974."
+  },
+  {
+   "id": "yohannan1987",
+   "text": "Yohannan, John D. The Poet Sa'di: A Persian Humanist. Lanham, MD: University Press of America, 1987."
+  }
+ ]
+}

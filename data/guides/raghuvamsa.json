@@ -1,0 +1,1042 @@
+{
+ "work": "raghuvamsa",
+ "title": "The Raghuvaṃśa",
+ "author": "Kālidāsa",
+ "quoteEdition": "raghuvamsa-johnstone",
+ "updated": "2026-10-19",
+ "unit": "Canto",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Kālidāsa, the most celebrated poet and dramatist of classical Sanskrit, also author of the Kumārasambhava, the Meghadūta and the play Abhijñānaśākuntala"
+  },
+  {
+   "label": "Date",
+   "value": "Uncertain; most scholars place Kālidāsa in the Gupta period, around the late fourth or early fifth century CE, perhaps at the court of Candragupta II"
+  },
+  {
+   "label": "Language and genre",
+   "value": "Sanskrit verse; a mahākāvya ('great poem'), the courtly epic, of which it became a model"
+  },
+  {
+   "label": "Length",
+   "value": "Nineteen cantos (sargas), about 1,560 stanzas in a range of metres"
+  },
+  {
+   "label": "Subject",
+   "value": "The kings of the solar dynasty of Ayodhyā, from Dilīpa through Raghu, Aja, Daśaratha and Rāma to the decadent Agnivarṇa"
+  },
+  {
+   "label": "Structure",
+   "value": "Cantos I–IX: Rāma's ancestors; X–XV: the story of Rāma, retold from the Rāmāyaṇa; XVI–XIX: Rāma's descendants and the decline of the line"
+  },
+  {
+   "label": "Setting",
+   "value": "Ayodhyā (Kosala) on the river Sarayū, with journeys across the whole of India, to Laṅkā and to the heavens"
+  },
+  {
+   "label": "Commentaries",
+   "value": "Vallabhadeva (Kashmir, tenth century), the earliest; Mallinātha's Sañjīvanī (South India, fourteenth–fifteenth century), the most widely read; and others"
+  },
+  {
+   "label": "This edition",
+   "value": "P. de Lacy Johnstone's blank-verse translation (1902). References give the canto and line numbers of this translation, not the stanza numbers of the Sanskrit; Johnstone's spelling of names is kept in quotations (ç for ś)"
+  },
+  {
+   "label": "Ending",
+   "value": "The poem breaks off with the death of Agnivarṇa and his pregnant widow on the throne; whether this is the intended ending is debated"
+  }
+ ],
+ "context": [
+  "Almost nothing is known for certain about Kālidāsa. Indian tradition makes him one of the 'nine jewels' at the court of a king Vikramāditya of Ujjayinī, and many legends about him are late. His works show a poet at home at a court, learned in grammar, philosophy, law and the arts, and especially devoted to Śiva. Most modern scholars place him in the Gupta age, around 400 CE, and his love of Ujjayinī in the Meghadūta suggests a connection with that city. The evidence for this date is indirect: the language and style of his works, a reference to him in an inscription of 634 CE at Aihole, and possible allusions to Gupta kings and events in the poems themselves [[mirashi1969]] [[keith1928]].",
+  "The Raghuvaṃśa ('Raghu's lineage') belongs to the genre of the mahākāvya, a long poem in cantos composed for an educated courtly audience. The genre took its form from Aśvaghoṣa in the first or second century CE and was later defined by theorists such as Daṇḍin, around 700, who listed its required features: a hero of noble birth, a subject drawn from epic or history, and descriptions of cities, seas, mountains, seasons, sunrise and moonrise, gardens, water-sports, love, weddings, the birth of sons, councils, embassies, marches and battles. Later critics placed the Raghuvaṃśa and Kālidāsa's Kumārasambhava at the head of the five great mahākāvyas, with the Kirātārjunīya of Bhāravi, the Śiśupālavadha of Māgha and the Naiṣadhīyacarita of Śrīharṣa [[lienhard1984]] [[smith1985]] [[peterson2003]].",
+  "The poem's unusual feature is that its hero is a dynasty, not a single man. Its sources include the genealogies of the solar line in the Purāṇas and Vālmīki's Rāmāyaṇa, the epic of Rāma, which takes up six of the nineteen cantos. Kālidāsa supposes that his readers know the Rāmāyaṇa well, and so he treats it selectively, compressing some books into a few verses and expanding others into whole cantos. The poem is at once a history of a royal house, a model of kingship and a series of descriptive and emotional set pieces [[brockington1984]] [[pollock2006]].",
+  "The Raghuvaṃśa became one of the most studied works of Sanskrit literature. It was a school text for centuries, and it attracted a large number of commentaries. The earliest surviving one is that of Vallabhadeva of Kashmir in the tenth century, whose text often differs from the version used by later commentators. The most widely read is the Sañjīvanī ('reviving herb') of Mallinātha, a South Indian scholar of the fourteenth or fifteenth century, who said that he wrote nothing without a basis in authority. Most printed editions, and most translations including Johnstone's, follow Mallinātha's text [[goodall2003]] [[nandargikar1897]] [[kale1922]].",
+  "European scholarship discovered the poem early. Adolf Friedrich Stenzler published the Sanskrit text with a Latin translation in 1832, and English, German, French and Italian translations followed. P. de Lacy Johnstone's blank-verse translation (1902) was one of the first complete English versions; it is faithful in outline but expands and paraphrases freely, and it shortens the erotic passages of the last canto. A new edition and translation of Vallabhadeva's text by Csaba Dezső, Dominic Goodall and Harunaga Isaacson appeared in 2024 [[stenzler1832]] [[johnstone1902]] [[dezso2024]]."
+ ],
+ "plot": [
+  "King Dilīpa of Ayodhyā has no son because he once failed to honour the divine cow Surabhi. On the advice of his priest Vasiṣṭha he serves Surabhi's daughter Nandinī in the forest and offers his own life to save her from a lion; the test passed, she grants him a son, Raghu. Raghu fights Indra to defend his father's horse sacrifice, conquers the four quarters of India and gives away all his wealth. His son Aja wins the princess Indumatī at her svayaṃvara and defeats the rival kings, but she dies when a heavenly garland falls on her, and Aja dies of grief.",
+  "Aja's son Daśaratha accidentally kills a hermit's son while hunting and is cursed to die of grief for his own son. Viṣṇu agrees to be born as Daśaratha's son Rāma to destroy the demon Rāvaṇa. Rāma breaks Śiva's bow and marries Sītā, overcomes Paraśurāma and is then exiled through the scheming of his stepmother Kaikeyī. Daśaratha dies, Sītā is abducted by Rāvaṇa, and Rāma, with the monkey Sugrīva and Hanumān, kills Rāvaṇa and flies home with Sītā in the aerial car Puṣpaka.",
+  "Rāma becomes king, but when his people murmur that Sītā lived in Rāvaṇa's house, he sends her, pregnant, to the forest. She is taken in by the poet Vālmīki and bears twins, Kuśa and Lava. Years later the boys sing the Rāmāyaṇa at Rāma's horse sacrifice, and Sītā, asked to prove her purity once more, is taken back by the Earth. Rāma ascends to heaven with his people.",
+  "Kuśa rebuilds the abandoned Ayodhyā and marries the serpent princess Kumudvatī. Their son Atithi is an ideal ruler, but his descendants pass in a brief list until the child king Sudarśana and his son Agnivarṇa, who abandons government for pleasure and dies of consumption without an heir. The poem ends with his pregnant queen ruling the kingdom for her unborn child."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Dilīpa goes to Vasiṣṭha's hermitage",
+   "lines": "Canto I",
+   "section": 0,
+   "summary": [
+    "The poem opens with a prayer to Śiva and Pārvatī, the parents of the world, joined like word and meaning. The poet then calls himself a dwarf reaching for fruit beyond a giant's grasp and a man setting out on a raft across the ocean, yet he takes courage from the poets of old, who have bored a path through the jewel so that a thread can follow. He announces his subject: the kings of the solar line descended from Manu, who were pure from birth, ruled the earth to its oceans, collected wealth in order to give it away and ended their lives as ascetics.",
+    "The first king described is Dilīpa, an ideal ruler in body, mind and conduct, married to Queen Sudakṣiṇā. Their one sorrow is that they have no son, and without a son the ancestors will receive no offerings. The couple drive through the forest to the hermitage of the family priest Vasiṣṭha. He explains that Dilīpa once failed to honour the divine cow Surabhi, who cursed him with childlessness. The remedy is to serve Nandinī, Surabhi's daughter, who lives in the hermitage. That night the king and queen sleep in a hut on a bed of grass."
+   ],
+   "analysis": [
+    "The opening verses state the poet's programme. The image of word and meaning joined in the divine couple (1.1 in the Sanskrit) was read by later critics as an emblem of poetry itself, and the humility topos of the dwarf and the raft became one of the most quoted passages of Sanskrit literature. The list of the kings' virtues sets out the ideal of the whole dynasty: study in youth, pleasure in maturity, renunciation in old age. The rest of the poem measures each ruler against it [[ingalls1976]].",
+    "The canto also shows Kālidāsa's way of telling a story through description. The journey to the hermitage, with its peacocks, deer and wayside villages, and the evening scene in the grove are given at least as much space as the plot. Both are set pieces that the theorists later expected in a mahākāvya [[smith1985]] [[lienhard1984]]."
+   ],
+   "key": [
+    {
+     "ref": "Canto I, ll. 1–4",
+     "quote": "The Lord Supreme and Pârvatî I praise,\nThe parents of all worlds, close-joined in one\nAs word with sense, and pray for gift of speech\nWith mighty meaning fraught.",
+     "note": "The benediction. In the Sanskrit, Śiva and Pārvatī are compared to word and meaning, which cannot be separated: a prayer for eloquence and a statement about poetry at the same time."
+    },
+    {
+     "ref": "Canto I, ll. 21–23",
+     "quote": "Wealth they amassed to scatter; sparing words,\nNe'er spake they falsely; fame in war they sought,\nNot gain,—and wedded love for noble seed.",
+     "note": "Part of the catalogue of the dynasty's virtues, which serves as the standard for every king who follows, down to the last."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Nandinī grants the king's desire",
+   "lines": "Canto II",
+   "section": 1,
+   "summary": [
+    "For twenty-one days Dilīpa tends the cow Nandinī. He sends away his guards and follows her like a shadow: he stands when she stands, walks when she walks and drinks when she drinks, while the queen meets them at the forest's edge each evening. The forest honours him, as if he were walking in his own kingdom.",
+    "On the twenty-second day a lion seizes the cow in a glen of the Himalaya. When the king reaches for an arrow, his hand sticks fast to it. The lion speaks: he is Kumbhodara, a servant of Śiva, set to guard a sacred deodar tree, and the cow is his rightful food. Dilīpa offers his own body in her place. The lion argues that a king's life is worth more than one cow; Dilīpa replies that a Kṣatriya exists to protect, and that fame is worth more than life. He throws himself before the lion, and flowers rain down on him. The lion was an illusion created by Nandinī to test him. She grants him a son, and the king drinks her milk only after her calf has drunk and the sage has given his leave. The royal couple return to the capital, and the queen conceives."
+   ],
+   "analysis": [
+    "The canto turns a simple folk motif, the hero who offers his life for an animal, into a debate about kingship. The lion's arguments are prudent and political: the king's life protects many, and a cow can be replaced. Dilīpa's answer appeals to the meaning of the word kṣatra (protection from harm) and to fame. Kālidāsa makes the test one of loyalty and of honour rather than of strength, because the king's weapon is useless against Śiva's servant [[ingalls1976]].",
+    "The cow-service is also a model of the ascetic discipline the kings of the line must combine with rule. A king who herds a cow on foot, without his guards, shows that royal power rests on obedience to dharma and to the Brahmin priest. That relation between king and preceptor is one of the main threads of the poem [[ali2004]]."
+   ],
+   "key": [
+    {
+     "ref": "Canto II, ll. 158–161",
+     "quote": "The Warrior's name\nHe only worthy bears who saves from harm:\n'Tis proverb-lore: whoe'er betrays that trust\nWould forfeit Royal state and earn foul scorn.",
+     "note": "Dilīpa's definition of the Kṣatriya. In the Sanskrit it rests on a popular etymology of kṣatra as protection 'from harm'."
+    },
+    {
+     "ref": "Canto II, ll. 174–175",
+     "quote": "Scarce value fleeting life, but Fame we prize\nBeyond all other.",
+     "note": "The value of fame over life, which recurs throughout the poem, and is turned to tragic effect when Rāma gives up Sītā for the sake of his reputation in Canto XIV."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Raghu's birth and his fight with Indra",
+   "lines": "Canto III",
+   "section": 2,
+   "summary": [
+    "Sudakṣiṇā's pregnancy is described with her cravings and her husband's tenderness. At the birth of a son the omens are favourable, and the king names him Raghu, the 'swift-moving', hoping he will pass quickly through his studies and quickly defeat his enemies. Raghu learns the Veda and archery, is married, and becomes his father's partner in rule.",
+    "Dilīpa performs ninety-nine horse sacrifices; a hundredth would give him a status equal to Indra's, so Indra steals the horse. Raghu, who guards it, sees the god with the help of Nandinī and challenges him. Indra says he must protect his title of 'Lord of a Hundred Sacrifices'. In the battle that follows, Raghu cuts Indra's bowstring and his banner, and is struck down by the thunderbolt but rises again. Indra admires his courage. He will not return the horse, but he grants that Dilīpa will have the full reward of the sacrifice. Dilīpa hands over the kingdom to Raghu and retires with his queen to the forest."
+   ],
+   "analysis": [
+    "The scenes of pregnancy, birth, naming and education follow the life-cycle rites of a Brahmanical household, and Kālidāsa turns each into a short descriptive set piece. Such scenes became expected elements of the mahākāvya [[smith1985]].",
+    "The fight with Indra shows the young hero at his best and keeps the dynasty within limits. Raghu is brave enough to wound a god but wise enough to ask for what can be given. The canto also introduces the pattern of retirement that closes most reigns in the poem: the old king gives up the throne and becomes a hermit, as the opening catalogue promised."
+   ],
+   "key": [
+    {
+     "ref": "Canto III, ll. 68–70",
+     "quote": "\"May this child through Sacred Lore\nPass quickly, warring swiftly smite his foes!\"\nHe named him Raghu, \"swiftly-moving \" Prince.",
+     "note": "The naming of Raghu. The Sanskrit verse plays on a derivation of the name from a verb of motion; the dynasty will carry the name."
+    },
+    {
+     "ref": "Canto III, ll. 214–216",
+     "quote": "Thou only hast withstood my mighty Bolt,\nWhich mountains could not face! well-pleased I grant\nWhate'er thou wilt, except the Victim horse.",
+     "note": "Indra's tribute to Raghu, who has survived the thunderbolt that cut off the wings of the mountains."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Raghu conquers the world",
+   "lines": "Canto IV",
+   "section": 3,
+   "summary": [
+    "Raghu takes the throne and governs so well that his people forget their grief for his father. When autumn comes, the season for war, he sets out on his digvijaya, the conquest of the quarters. He moves clockwise around India: east to the Suhmas and the Vaṅgas of Bengal, across the Kapiśā to Kaliṅga and Mount Mahendra, south along the coast past the Kāverī to the Pāṇḍyas and the Malaya hills, west across the Sahya range to the Keralas and the Persians, north to the Hūṇas, the Kambojas and the Himalaya, and east again to Prāgjyotiṣa and Kāmarūpa in Assam.",
+    "Kings submit and pay tribute; those who resist are defeated and then restored. Raghu returns home and performs the viśvajit sacrifice, in which a king gives away all his wealth. He sends the defeated kings home with honour."
+   ],
+   "analysis": [
+    "The digvijaya is a standard element of royal biography and epic, and this canto is its classic poetic form. Kālidāsa follows the regions in their proper order and makes each of them recognisable by its products, plants and people: the betel and coconut of Kaliṅga, the pepper and cardamom of the south, the saffron and walnut trees of the north-west. The conquered kings are 'uprooted and replanted', as the dharmaśāstra recommends for a righteous conqueror (dharmavijayin) [[ali2004]].",
+    "Historians have compared Raghu's campaign with the conquests of the Gupta emperor Samudragupta in his Allahabad pillar inscription, and the mention of the Hūṇas has been used to date the poem. The earliest commentator, Vallabhadeva, places the Hūṇas on the Vaṅkṣu (the Oxus), while Mallinātha's text reads Sindhu (the Indus), the reading Johnstone translates. Neither parallel gives a secure date [[mirashi1969]] [[goodall2003]]."
+   ],
+   "key": [
+    {
+     "ref": "Canto IV, ll. 113–115",
+     "quote": "The King—with lawful triumph—took his fame,\nBut not his country, from Mahendra's king,\nAnd set him free;",
+     "note": "The righteous conquest: Raghu takes the defeated king's glory and leaves him his land."
+    },
+    {
+     "ref": "Canto IV, ll. 179–181",
+     "quote": "His mighty acts,\nWrought on their husbands, Hûna dames proclaimed,—\nRecorded on their cheeks in angry scars.",
+     "note": "The Hūṇa women tear their cheeks in mourning, a grim conceit. The passage is central to the arguments about the poem's date."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Kautsa's fee; Aja is born",
+   "lines": "Canto V",
+   "section": 4,
+   "summary": [
+    "After the viśvajit sacrifice Raghu has nothing left but earthen vessels. The young Brahmin Kautsa comes to him to ask for the fee he owes his teacher Varatantu, fourteen crores of gold, but sees the earthen pot and prepares to leave. Raghu will not let a suppliant go away unsatisfied. He plans to attack Kubera, the god of wealth, but at dawn a rain of gold fills his treasury. Raghu tries to give it all to Kautsa, who will take only what he needs. Kautsa blesses the king with a son.",
+    "The son, Aja, grows up to equal his father. An envoy invites him to the svayaṃvara (bride's self-choice) of Indumatī, sister of King Bhoja of Vidarbha. On the journey, on the banks of the Narmadā, a wild elephant attacks the camp. Aja wounds it and it becomes Priyaṃvada, a gandharva who had been cursed. In gratitude he gives Aja a magical weapon that puts enemies to sleep. At Vidarbha, bards wake Aja on the morning of the ceremony with a song of dawn."
+   ],
+   "analysis": [
+    "Kautsa's visit is a contest of generosity, in which the king and the student each refuse to take more than they should. It shows Raghu after the conquest of the world in the role the opening canto gave the dynasty, as one who gathers wealth only to give it away. The earthen vessel becomes Raghu's emblem: Sunandā mentions it again in Canto VI.",
+    "The canto ends with a vaitālika song, the dawn-song of the court bards, a conventional piece of court poetry that lets Kālidāsa describe the natural and royal world waking together."
+   ],
+   "key": [
+    {
+     "ref": "Canto V, ll. 6–7",
+     "quote": "gave his gift\nIn earthen vessel, for his gold was done.",
+     "note": "The earthen vessel, Raghu's mark of generosity."
+    },
+    {
+     "ref": "Canto V, ll. 52–53",
+     "quote": "The rain-bird craves not rain from emptied clouds,\nNor missing grieves!",
+     "note": "Kautsa compares the king to a cloud that has rained out its water. The cātaka bird of Indian poetry drinks only raindrops."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Indumatī's choice",
+   "lines": "Canto VI",
+   "section": 5,
+   "summary": [
+    "The suitor kings sit on raised thrones in the hall. Aja outshines them all. As the princess is carried in, the kings betray their nerves in small gestures: one twirls a lotus, another plays with his necklace, another traces lines on the footstool with his toe.",
+    "Indumatī's attendant Sunandā leads her past the kings one by one and praises each in turn: the king of Magadha, the lord of Aṅga, the king of Avanti near the shrine of Mahākāla at Ujjayinī, the king of Anūpa on the Revā, Suṣeṇa of the Śūrasenas on the Yamunā, the king of Kaliṅga on the sea, and the Pāṇḍya king in the south. Each speech promises a landscape as well as a husband. Indumatī passes each without a word. When she reaches Aja, Sunandā tells the history of his dynasty, and the princess places the wedding garland around his neck. The people rejoice, and the rejected kings look on in anger."
+   ],
+   "analysis": [
+    "The svayaṃvara is a set piece of epic tradition (as in the stories of Nala and Damayantī and of Draupadī), and Kālidāsa's version became the classic model. The canto is a survey of India in a new key: the digvijaya of Canto IV showed the subcontinent conquered, while this one shows it as a series of possible lives, each with its rivers, gardens and pleasures.",
+    "The most famous verse in the canto (6.67 in the Sanskrit) compares Indumatī to a moving lamp-flame on a royal highway that lights up each mansion as it passes and leaves it in darkness again. Later tradition admired the simile so much that it gave Kālidāsa the nickname Dīpaśikhā-Kālidāsa ('Kālidāsa of the lamp-flame') [[keith1928]] [[warder1977]]."
+   ],
+   "key": [
+    {
+     "ref": "Canto VI, ll. 219–222",
+     "quote": "Now as the Maid went by, each suitor-King,\nLit for a moment by her dazzling eyes,\nLike wayside tower by passing lamp, sank back\nIn deepest gloom.",
+     "note": "Johnstone's version of the lamp-flame simile, the poem's most celebrated image."
+    },
+    {
+     "ref": "Canto VI, ll. 35–38",
+     "quote": "That perfect woman, Brahmâ's last best work,\nThe goal of countless hearts, drew all their souls\nOut through their eyes,—the lumpish clay alone\nRemained behind.",
+     "note": "The suitors are struck as Indumatī enters: a hyperbole of the kind the theorists called atiśayokti."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "The wedding and the battle with the rival kings",
+   "lines": "Canto VII",
+   "section": 6,
+   "summary": [
+    "As Aja leads his bride to the palace, the women of the city rush to the windows: one with her hair unbound, one with her feet still wet with lac, one with only one eye made up, one holding her dress together. The wedding is performed before the sacred fire.",
+    "On the way home, the rejected kings ambush the couple. Aja leaves Indumatī in the care of a trusted minister and fights; the battle is described in grim detail, with dust, blood and severed heads. At last Aja uses the weapon of sleep, stuns the whole army and writes on their banners that he has spared their lives. He returns to Ayodhyā, and Raghu hands over the kingdom to him."
+   ],
+   "analysis": [
+    "The scene of women crowding to the windows to see the hero became a fixed topos of the mahākāvya. Aśvaghoṣa had already used it in the Buddhacarita, and the two versions are often compared. The question of which poet came first is part of the debate about Kālidāsa's date [[warder1977]].",
+    "The battle shows the warrior's side of the ideal king, but it ends without slaughter. Aja wins by a weapon of sleep and leaves his enemies alive, and the canto keeps the dynasty's policy of a righteous victory."
+   ],
+   "key": [
+    {
+     "ref": "Canto VII, ll. 174–176",
+     "quote": "\"Your glory Raghu's son\nHas taken from you, but your lives he spares\nOf his mere mercy!\"",
+     "note": "The message Aja writes on his enemies' banners, an act of contempt and of mercy at once."
+    },
+    {
+     "ref": "Canto VII, ll. 35–37",
+     "quote": "Their eyes, fixed full on him alone,\nDrank in the Prince's charms, as though their hearts\nAnd senses all were merged and lost in sight.",
+     "note": "The women at the windows, a stock scene that this canto made famous."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Aja's lament for Indumatī",
+   "lines": "Canto VIII",
+   "section": 7,
+   "summary": [
+    "Raghu retires to a hermitage near the city and dies there, absorbed in meditation, while Aja rules the earth. Indumatī bears Aja a son, Daśaratha. One day, as the couple walk in a garden, a garland falls from the lute of the sage Nārada as he passes through the sky, lands on Indumatī's breast and kills her.",
+    "Aja's lament, the longest speech in the poem, follows: if flowers can kill, what can be safe? He recalls her voice, her walk, the creepers she cared for, the girdle of flowers she left unfinished, and calls her his housewife, counsellor, friend and pupil in the arts. Vasiṣṭha sends a disciple to explain that Indumatī was a nymph, Hariṇī, cursed to be born on earth until she should see a heavenly garland. The consolation does not reach the king. He survives for eight years for the sake of his son, then fasts to death at the confluence of the Gaṅgā and the Sarayū and is reunited with her in heaven."
+   ],
+   "analysis": [
+    "Aja's lament (Aja-vilāpa) is one of the great elegies of Sanskrit literature, and most of the canto is composed in the gentle vaitālīya metre. The comparisons with the natural world, which elsewhere express the king's power, are turned here into images of fragility: snow on a lotus, a creeper that falls while the tree stands. Kālidāsa uses the same kind of lament for Rati, the wife of Kāma, in Canto IV of the Kumārasambhava [[lienhard1984]].",
+    "The canto sets dharma and grief against each other. The sage's message expresses the philosophical consolation that death frees the soul, but the poet lets the reader feel that it fails. Aja's death for love introduces into the dynasty the theme of attachment to pleasure and to a person, which will have a darker form in the last king [[ingalls1976]]."
+   ],
+   "key": [
+    {
+     "ref": "Canto VIII, ll. 145–146",
+     "quote": "If Fate by touch of flowers can kill, what dart\nMay not be deadly when He seeks to slay?",
+     "note": "The opening of Aja's lament."
+    },
+    {
+     "ref": "Canto VIII, ll. 213–215",
+     "quote": "House-mistress, Friend, Beloved, Counsellor,\nIn all Love's arts apt pupil! cruel Death,\nBereaving me of thee, bereaves of all!",
+     "note": "One of the most quoted verses of the lament, naming all the roles Indumatī filled in Aja's life."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Daśaratha's reign and the fatal hunt",
+   "lines": "Canto IX",
+   "section": 8,
+   "summary": [
+    "Daśaratha rules with the virtues of his ancestors and marries the princesses of Kosala, Kekaya and Magadha. Spring arrives, described in a long and elaborate passage of flowers, bees, cuckoos and lovers on swings. Then the king goes hunting. He spares deer that remind him of his wives' eyes and does not shoot a peacock because its tail recalls his queen's hair.",
+    "Absorbed in the chase, he follows a stag alone to the banks of the Tamasā and hears a sound like an elephant drinking. He shoots at the sound and kills a hermit's son who was filling a water-pot. He carries the dying boy to his blind parents. The father curses him to die, like himself, of grief for a son. Daśaratha accepts the curse as a blessing, since he has no son, and returns home with the curse fixed in his heart."
+   ],
+   "analysis": [
+    "In the Sanskrit, much of this canto is a showpiece of yamaka, the play of repeated syllables, which no translation can keep. The spring and the hunt are both among the descriptive subjects of the mahākāvya, but the poet shows that hunting, one of the 'vices of kings' in the treatises on statecraft, can lead a good king to a terrible act.",
+    "The episode of the hermit boy comes from the Ayodhyākāṇḍa of Vālmīki's Rāmāyaṇa, where Daśaratha tells it on his deathbed. Kālidāsa moves it forward in time, and it becomes the hinge of the poem, joining the history of the dynasty to the story of Rāma [[goldman1984]]."
+   ],
+   "key": [
+    {
+     "ref": "Canto IX, ll. 252–254",
+     "quote": "That act the Law forbids to virtuous Kings,\nYet he transgressed:—when passion blinds, a Sage,\nThough versed in Sacred Lore, will tread ill paths.",
+     "note": "The narrator's judgement on the shot: the first serious fault committed by a king of the line."
+    },
+    {
+     "ref": "Canto IX, ll. 271–272",
+     "quote": "When age comes on thee, for thy son\nThou too shalt die of grief, as now I die!",
+     "note": "The hermit's curse, which will be fulfilled when Rāma goes into exile."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Viṣṇu becomes incarnate as Rāma",
+   "lines": "Canto X",
+   "section": 9,
+   "summary": [
+    "Daśaratha is still without a son and performs a sacrifice to obtain one. At the same time, the gods, oppressed by the demon Rāvaṇa, go to Viṣṇu, who lies on the serpent Śeṣa in the cosmic ocean, with Lakṣmī holding his feet. They praise him in a long hymn as the one who creates, preserves and destroys, one in essence and various in form.",
+    "Viṣṇu promises to be born as Daśaratha's son, because Rāvaṇa's boon protects him from gods but not from men. A divine being rises from the sacrificial fire with a dish of rice and milk. Daśaratha divides it between Kausalyā and Kaikeyī, who each give part to Sumitrā. Kausalyā bears Rāma, Kaikeyī Bharata, and Sumitrā the twins Lakṣmaṇa and Śatrughna. The brothers grow up in pairs: Rāma with Lakṣmaṇa, Bharata with Śatrughna."
+   ],
+   "analysis": [
+    "The hymn to Viṣṇu is a stotra in the manner of the Purāṇas and the Bhagavad Gītā, setting out paradoxes of a god beyond qualities who takes on form. It gives the Rāma cantos a theological frame and makes Rāma explicitly an avatāra, as the later parts of Vālmīki's poem do [[brockington1984]].",
+    "Kālidāsa compresses the opening book of the Rāmāyaṇa into a single canto and passes over most of its stories of ancestors and sages. From now on, his retelling is selective: he assumes that his readers know the epic, and he chooses the scenes that allow him to describe and to reflect [[goldman1984]] [[richman1991]]."
+   ],
+   "key": [
+    {
+     "ref": "Canto X, ll. 45–47",
+     "quote": "As rain from Heaven is one, yet forms diverse\nIn various lands assumes, so Thou, unchanged\nIn essence, workest various;",
+     "note": "From the gods' hymn to Viṣṇu: the many forms of the one god compared to rain that takes the taste of different lands."
+    },
+    {
+     "ref": "Canto X, ll. 185–186",
+     "quote": "One Essence, self-divided, manifold,\nLike moonbeams shimmering on a quiet lake.",
+     "note": "The god divided among the four sons, the incarnation expressed through a natural image."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Rāma's youth, his marriage and his victory over Paraśurāma",
+   "lines": "Canto XI",
+   "section": 10,
+   "summary": [
+    "The sage Viśvāmitra asks Daśaratha to lend him the young Rāma and Lakṣmaṇa to protect his sacrifice. Rāma kills the demoness Tāṭakā and the demons Mārīca and Subāhu, and his foot restores Ahalyā, the wife of Gautama, who had been turned to stone. At Mithilā, King Janaka has promised his daughter Sītā to the man who can string Śiva's bow; Rāma strings it and breaks it. The four brothers marry Sītā, Ūrmilā and the two daughters of Kuśadhvaja.",
+    "On the journey home, ill omens appear and Paraśurāma, the Brahmin warrior who has destroyed the Kṣatriyas twenty-one times, blocks the way. He is angry that a Kṣatriya named Rāma has broken Śiva's bow and challenges him to string the bow of Viṣṇu. Rāma does it easily, and Paraśurāma recognises him as Viṣṇu and loses his power. Rāma's arrow closes the way to heaven that Paraśurāma had earned."
+   ],
+   "analysis": [
+    "The canto follows the first book of the Rāmāyaṇa closely but in a lighter key. The young brothers walk without tiring, the hermits gaze at them as they would at lakes and trees, and Rāma breaks Śiva's bow with no more effort than Kāma needs to bend his bow of flowers. With a touch of humour, Kālidāsa lets Janaka worry that the boy is too young [[goldman1984]].",
+    "The meeting of the two Rāmas sets the Kṣatriya and Brahmin powers face to face. The Brahmin who destroyed the warriors yields to a warrior who is God, and the scene confirms the order of the world under the solar kings."
+   ],
+   "key": [
+    {
+     "ref": "Canto XI, ll. 165–167",
+     "quote": "not using more\nOf strength (it seemed) than Love puts forth to string\nHis own soft bow of flowers.",
+     "note": "Rāma strings Śiva's bow. The comparison with Kāma's bow mixes heroism with grace."
+    },
+    {
+     "ref": "Canto XI, ll. 302–304",
+     "quote": "while one in splendour grew\nAnd waned the other fast, like Sun and Moon,\nWhen sets the Sun and rises the Full Moon.",
+     "note": "The defeat of Paraśurāma. Kālidāsa often uses the paired sun and moon for two powers in balance or in succession."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Exile, the abduction of Sītā and the death of Rāvaṇa",
+   "lines": "Canto XII",
+   "section": 11,
+   "summary": [
+    "As Daśaratha prepares to crown Rāma, Kaikeyī claims two promises he once made her: Rāma is exiled for fourteen years, and her son Bharata will be king. Rāma accepts the exile calmly and goes to the forest with Sītā and Lakṣmaṇa. Daśaratha dies of grief, as the hermit's curse foretold. Bharata refuses the crown, goes to Rāma in the forest and, when Rāma will not return, rules from Nandigrāma in Rāma's name, with his sandals as a pledge.",
+    "The canto then races through the forest books of the Rāmāyaṇa: the demon Virādha, the encounter with Śūrpaṇakhā and the slaughter of Khara and Dūṣaṇa, the golden deer, Rāvaṇa's abduction of Sītā, the vulture Jaṭāyu, the alliance with the monkey king Sugrīva, Hanumān's journey to Laṅkā, the building of the bridge and the war. Lakṣmaṇa is wounded and healed, Kumbhakarṇa killed, and finally Rāma, in Indra's chariot, cuts off Rāvaṇa's ten heads with the arrow of Brahmā. Sītā passes through the fire, and Rāma returns in the aerial car Puṣpaka."
+   ],
+   "analysis": [
+    "Here Kālidāsa compresses five books of the epic into a single canto of about a hundred verses. His method is to touch each famous episode with a single image, often a comparison, and to leave the narration to the reader's memory of Vālmīki. Critics have seen this as a sign of the poem's courtly audience, which knew the epic well and enjoyed the art of allusion [[brockington1984]] [[lienhard1984]].",
+    "The canto also keeps the moral emphasis of the earlier cantos. Rāma's calm in exile and Bharata's refusal of the throne are the moments the poet dwells on, rather than the fighting."
+   ],
+   "key": [
+    {
+     "ref": "Canto XII, ll. 25–27",
+     "quote": "The people marked his aspect all unchanged,\nBoth when he wore the robes of royal state,\nAnd when the bark-dress.",
+     "note": "Rāma's equanimity: the same face in royal robes and in a hermit's bark garment."
+    },
+    {
+     "ref": "Canto XII, ll. 247–248",
+     "quote": "Much lovedst thou sleep, my foe!\nAnd wert untimely roused in evil hour.",
+     "note": "Rāma's ironic epitaph for Kumbhakarṇa, the giant who slept for months at a time."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "The aerial journey home",
+   "lines": "Canto XIII",
+   "section": 12,
+   "summary": [
+    "Rāma and Sītā fly home from Laṅkā in Puṣpaka, and Rāma describes the land below. He shows her the ocean with its whales and its bridge, the forest where he searched for her and found her anklet, the creepers that pointed the way she had been carried, the lake Pampā, the Godāvarī and the hermitages of the sages Agastya, Śarabhaṅga, Sutīkṣṇa and Atri, Mount Citrakūṭa, and the confluence of the Gaṅgā and the Yamunā at Prayāga.",
+    "As they approach Ayodhyā, Bharata comes out on foot to meet them, dressed as an ascetic. Rāma introduces Sugrīva and Vibhīṣaṇa, Bharata embraces Lakṣmaṇa, and the monkeys and demons take human form and ride on elephants into the city."
+   ],
+   "analysis": [
+    "The aerial journey is the poem's great descriptive canto and one of the finest landscape poems in Sanskrit. It is also a journey back through the story: each place recalls a scene of separation and suffering, now seen from above in the moment of reunion. Rāma's memories turn the epic into a love poem told by the husband to the wife [[warder1977]].",
+    "Vālmīki's Yuddhakāṇḍa contains a shorter version of the journey, and Kālidāsa makes it the centre of his retelling. The motif of a view of India from the air, with places named one after another, is close to his Meghadūta, in which a cloud carries a message across the same land [[ryder1912]]."
+   ],
+   "key": [
+    {
+     "ref": "Canto XIII, ll. 77–79",
+     "quote": "These creepers, dumb yet pitying, bent their arms\nTo show the path by which the Râkshasa\nHad borne thee,",
+     "note": "Nature shares human grief, a typical move of Kālidāsa's descriptive art."
+    },
+    {
+     "ref": "Canto XIII, ll. 193–196",
+     "quote": "there see, peerless Queen!\nWhere Gangâ rolls her flood, by Jamnâ cleft.\nThose souls, men say, that cast the mortal coil,\nWashed in the confluent waters of these twain,",
+     "note": "The confluence of the white Gaṅgā and the dark Yamunā at Prayāga, described in the Sanskrit with a famous run of images of black and white."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Rāma's coronation and the abandonment of Sītā",
+   "lines": "Canto XIV",
+   "section": 13,
+   "summary": [
+    "Rāma is consecrated as king and reigns in happiness with Sītā, who becomes pregnant and expresses the wish to visit the hermitages by the Gaṅgā once more. From the palace roof Rāma asks a spy what the people say. They praise everything he does except that he took back a wife who had lived in Rāvaṇa's house. After long hesitation Rāma decides that his fame and the purity of his line come first. He tells his brothers, then orders Lakṣmaṇa to take Sītā to the forest under the pretext of her wish, and to leave her there.",
+    "On the far bank of the Gaṅgā Lakṣmaṇa tells her the truth. Sītā falls to the ground in a faint, but she does not blame Rāma. She sends him a message: he saw her proved pure by fire, yet abandons her because of mere words; she will live only for his child and then practise austerities so that in another life he will be her husband again; as a king he must protect her as he does all his subjects. The sage Vālmīki, whose compassion for a bird shot by a hunter gave birth to poetry, takes her into his hermitage. Rāma weeps but rules on alone."
+   ],
+   "analysis": [
+    "This is the moral crisis of the poem. Kālidāsa follows the Uttarakāṇḍa, the last book of Vālmīki's Rāmāyaṇa, but sharpens the conflict. Rāma knows Sītā is innocent, and he says so; he gives her up only for his reputation, the same value of fame that Dilīpa praised in Canto II. The narrator's sympathy is plainly with Sītā [[goldman2017]] [[pollock1993]].",
+    "Sītā's message is one of the most admired speeches in Sanskrit poetry because of its restraint. She blames her own deeds in past lives, but her questions to the king still accuse him. Vālmīki's words, 'yet for his cruel dealing with thee, Queen, I greatly blame him', make the poet of the Rāmāyaṇa himself a judge of its hero. Readers ancient and modern have found the canto central to the debate about whether the poem praises or questions the ideal of kingship [[richman1991]]."
+   ],
+   "key": [
+    {
+     "ref": "Canto XIV, ll. 159–160",
+     "quote": "The Queen I know is stainless, yet I dread\nMy people's blaming:",
+     "note": "Rāma admits Sītā's innocence even as he resolves to send her away."
+    },
+    {
+     "ref": "Canto XIV, ll. 242–244",
+     "quote": "Thyself hast seen me purified by Fire,\nYet now forsakest, fearing scandal's breath,—\nMere words: does this beseem Thy noble race?",
+     "note": "The opening of Sītā's message to Rāma, a reproach made with perfect courtesy."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Lava and Kuśa; Sītā's return to the earth; the passing of Rāma",
+   "lines": "Canto XV",
+   "section": 14,
+   "summary": [
+    "Śatrughna is sent to kill the demon Lavaṇa and founds the city of Mathurā. On the way, at Vālmīki's hermitage, Sītā gives birth to twins, Kuśa and Lava. Vālmīki teaches them the Rāmāyaṇa. When a Brahmin's son dies young, Rāma learns that the cause is a Śūdra, Śambūka, who is practising austerities to which he is not entitled, and beheads him; the child comes back to life.",
+    "At Rāma's horse sacrifice, the twins sing Vālmīki's poem, and the assembly sees that they resemble the king. Vālmīki asks Rāma to take Sītā back. Rāma asks that she prove her purity to the people. Before the city, Sītā calls on the Earth, her mother, to receive her if she has been faithful; the ground opens and the goddess Earth carries her away. Rāma's sons and nephews receive kingdoms. Death comes to Rāma in the form of an ascetic. Lakṣmaṇa breaks into their secret meeting to save the kingdom from the anger of the sage Durvāsas and gives up his life in atonement. Rāma ascends to heaven with the people of Ayodhyā, who follow him through the river Sarayū."
+   ],
+   "analysis": [
+    "The canto completes the Uttarakāṇḍa and ends the divine story. Kālidāsa keeps the Śambūka episode, which modern readers find the most troubling in the Rāma tradition, without comment: the king's punishment of a Śūdra who seeks heaven is presented as the restoration of dharma [[goldman2017]] [[pollock1993]].",
+    "Sītā's descent into the earth is the second and final test of her purity, and this time Rāma loses her for ever. The performance of the Rāmāyaṇa by the twins, before their own father, makes the epic part of its own plot, and lets Kālidāsa pay homage to Vālmīki as the first poet."
+   ],
+   "key": [
+    {
+     "ref": "Canto XV, ll. 239–242",
+     "quote": "All-fostering Goddess Earth!\nIf I in word, in thought, in deed have still\nHeld to my Lord, nor strayed from duty's path\nOne hair's-breadth,—hide me in thy loving arms!",
+     "note": "Sītā's last oath. Her purity is proved and she is taken from the world."
+    },
+    {
+     "ref": "Canto XV, ll. 153–156",
+     "quote": "Çambuka, Çûdra, I\nThus seek high place in Heaven.\" But Râma knew\n'Twas sin he practised, who transgressed the Law\nForbidding him to aspire;",
+     "note": "The Śambūka episode, in which the ideal king defends the order of castes by the sword."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Kuśa returns to Ayodhyā and marries Kumudvatī",
+   "lines": "Canto XVI",
+   "section": 15,
+   "summary": [
+    "Kuśa rules from his own city, Kuśāvatī. One night the goddess of the abandoned Ayodhyā appears to him, dressed like a woman whose husband is away, and describes her ruin: empty houses, jackals in the streets, buffaloes wounding the lotus ponds, tigers on the bathing steps, painted elephants torn by lions, spiders in the windows. Kuśa returns with his army, crossing the Vindhyas and the Gaṅgā, and the city is rebuilt.",
+    "In summer the king sports in the river Sarayū with the women of his court, and during the play he loses the jewelled bracelet that Agastya once gave to Rāma. When the fishermen fail to find it, Kuśa aims a Garuḍa arrow at the river. The serpent prince Kumuda comes up with the bracelet and with his sister Kumudvatī, who had caught it while playing ball. Kuśa marries her, and the serpents are freed from fear of Garuḍa."
+   ],
+   "analysis": [
+    "The lament of Ayodhyā is a personified city in mourning, a figure the poet had used for the abandoned Laṅkā and for the earth. It is also the most vivid image of decay in the poem before its last canto. The city's description anticipates the decline of the dynasty itself.",
+    "The summer and the water-sports (jalakrīḍā) are standard set pieces of the mahākāvya, listed among its subjects by the theorist Daṇḍin. Kālidāsa makes the king's description of the bathing women into a poem about poetry: 'here we may see whatever the poet's mind compares with women's beauty' [[gerow1977]] [[smith1985]]."
+   ],
+   "key": [
+    {
+     "ref": "Canto XVI, ll. 45–47",
+     "quote": "Now jackals fiery-mouthed\nHaunt the roads howling, seeking prey,—where girls\nWith gleam of tuneful anklets lately thronged.",
+     "note": "The deserted Ayodhyā, a vision of the city without its king."
+    },
+    {
+     "ref": "Canto XVI, ll. 228–229",
+     "quote": "Here may we see whate'er the poet's mind\nCompares with women's beauties:",
+     "note": "Kuśa watches his queens bathing. The poem comments on its own stock comparisons."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "The wise rule of Atithi",
+   "lines": "Canto XVII",
+   "section": 16,
+   "summary": [
+    "Kumudvatī bears Kuśa a son, Atithi. Kuśa is killed fighting the demon Durjaya as Indra's ally, and Kumudvatī follows him in death. The ministers consecrate Atithi in an elaborate ceremony, described rite by rite: the waters from sacred rivers, the release of prisoners and caged birds, the anointing and the dressing of the king.",
+    "The rest of the canto is a portrait of an ideal ruler in the terms of the political treatises. Atithi conquers the 'six inner enemies' (the passions), combines the four means of policy, holds the three powers of the king, uses spies, balances dharma, artha and kāma, keeps his counsels secret and fights only enemies of equal strength. Merchants travel safely and the gods reward his horse sacrifice."
+   ],
+   "analysis": [
+    "This canto is the most didactic in the poem, a treatise on kingship in verse that uses the vocabulary of the Arthaśāstra and the law books. It shows the dynasty at its height, after Rāma, and it serves as the last full statement of the royal ideal before the decline [[ali2004]] [[pollock2006]].",
+    "Some readers have found the canto dry, but it is designed to contrast with what follows. Atithi's control of his senses is exactly the virtue that Agnivarṇa will lack."
+   ],
+   "key": [
+    {
+     "ref": "Canto XVII, ll. 134–136",
+     "quote": "Youth, power, and beauty,—each alone breeds pride;\nAnd all in him were met, yet his great heart\nSwelled not with pride unduly.",
+     "note": "Atithi's self-control: the moral centre of the canto."
+    },
+    {
+     "ref": "Canto XVII, ll. 142–143",
+     "quote": "'Gainst banded foes within, the passions six,\nHe waged unceasing war.",
+     "note": "The 'six enemies' (desire, anger, greed, delusion, pride and envy) of the treatises on kingship."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "The later kings",
+   "lines": "Canto XVIII",
+   "section": 17,
+   "summary": [
+    "Atithi's son Niṣadha succeeds him, and the canto then passes quickly through some twenty kings: Nala, Nabhas, Puṇḍarīka, Kṣemadhanvan, Devānīka, Ahīnagu, Pāriyātra, Śila and their successors, down to Dhruvasandhi. Each king receives a verse or two: his virtues, his son and his death or retirement.",
+    "Dhruvasandhi is killed by a lion while hunting, and his only son Sudarśana is crowned at the age of six. The poet describes the child king with tenderness: his feet do not reach the footstool, he clings to the elephant driver, he learns politics from conversation before he can write. He grows into an archer and a young man, and his ministers bring him portraits of princesses to choose from."
+   ],
+   "analysis": [
+    "In the Sanskrit, this canto is a royal genealogy (vaṃśa) in compressed form, with many plays on the kings' names. It shows the passage of time and the dynasty's continuity, but also its thinning: the long reigns of the earlier cantos give way to a list, and two of the last kings die young or by accident.",
+    "The child king Sudarśana gives a moment of charm before the end. The image of the dynasty as a night with a young moon or a forest with a single lion cub recalls the poem's early hopes and prepares for their failure."
+   ],
+   "key": [
+    {
+     "ref": "Canto XVIII, ll. 139–140",
+     "quote": "Thus Raghu's line, whose chief was now a child,\nShowed like the night while still the Moon is young,",
+     "note": "The dynasty with a child king, compared with a night lit only by a crescent moon."
+    },
+    {
+     "ref": "Canto XVIII, ll. 157–159",
+     "quote": "Kings laid their crowns in homage at his foot,\nWhich, tinged with red and hanging from the Throne\nA little way, scarce touched the golden stool.",
+     "note": "The child on the throne, an image of royal majesty in a small body."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "title": "Agnivarṇa's reign and death",
+   "lines": "Canto XIX",
+   "section": 18,
+   "summary": [
+    "Sudarśana retires to the Naimiṣa forest and leaves the kingdom to his son Agnivarṇa (Johnstone's 'Agnivarma'). After a few years of rule, Agnivarṇa hands affairs over to his ministers and gives himself to pleasure. When the people demand to see him, he shows only his foot from a palace window. He passes through the seasons in music, drinking and love with many women.",
+    "Disease brought on by excess wastes him away. He dies without a son. The ministers cremate him secretly in the palace garden and announce that he is performing a rite to obtain a son. They place his pregnant queen on the throne, and the poem ends with her ruling on behalf of the unborn heir."
+   ],
+   "analysis": [
+    "The last canto reverses the ideal set out in Canto I. Instead of pleasure in its proper stage of life, Agnivarṇa lives only for pleasure. Instead of retiring as an ascetic, he dies of consumption. Instead of a son to continue the line, there is only an unborn child. The canto has been read as a moral warning, as a picture of courtly decadence, and as Kālidāsa's most daring use of erotic description, since the Sanskrit devotes much of its space to the king's pleasures [[ali2004]] [[ingalls1976]].",
+    "Johnstone's translation of this canto is much shorter than the original. He passes quickly over the erotic stanzas that the Sanskrit develops at length, so readers of this edition should be aware that the decadence is muted. The open ending, with the queen on the throne, has led many readers to ask whether the poem is unfinished (see Debates) [[keith1928]] [[warder1977]]."
+   ],
+   "key": [
+    {
+     "ref": "Canto XIX, ll. 27–28",
+     "quote": "'twas but one foot he showed,\nHung from the palace-window;",
+     "note": "Agnivarṇa's foot at the window, the poem's image of a king who has withdrawn from his people."
+    },
+    {
+     "ref": "Canto XIX, ll. 50–52",
+     "quote": "His race was like the sky when wanes the Moon,\nOr as a lake when only mud is left—\nIts waters dried, or as a dying lamp.",
+     "note": "The dynasty in decline, described with the same natural images that once expressed its glory."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Dilīpa",
+   "side": "The early kings",
+   "text": "The first king described in the poem, an ideal of virtue and self-control. His service of the cow Nandinī and his offer of his life to the lion show that royal power depends on dharma and on the blessing of the Brahmin priest. He retires to the forest after his ninety-nine sacrifices."
+  },
+  {
+   "name": "Sudakṣiṇā",
+   "side": "The early kings",
+   "text": "Dilīpa's queen, who shares his penance and bears Raghu. Her pregnancy is one of the poem's tender domestic scenes."
+  },
+  {
+   "name": "Vasiṣṭha",
+   "side": "Sages and gods",
+   "text": "The family priest of the solar kings, son of Brahmā. He diagnoses Dilīpa's childlessness, sends consolation to Aja and restrains Rāma when the Earth takes Sītā. He stands for the alliance of Brahmin wisdom and royal power."
+  },
+  {
+   "name": "Nandinī",
+   "side": "Sages and gods",
+   "text": "The wish-granting cow of Vasiṣṭha's hermitage, daughter of Surabhi. She tests Dilīpa with an illusory lion and grants him a son."
+  },
+  {
+   "name": "Raghu",
+   "side": "The early kings",
+   "text": "Dilīpa's son, from whom the dynasty takes its name. A hero who wounds Indra, conquers the quarters of the world and then gives away everything he has, so that he is left with earthen vessels. He ends his life as an ascetic in a grove near the city."
+  },
+  {
+   "name": "Indra",
+   "side": "Sages and gods",
+   "text": "King of the gods, who steals Dilīpa's sacrificial horse to protect his title of 'lord of a hundred sacrifices'. He fights Raghu, admires his courage, and later sends his chariot to help Rāma against Rāvaṇa."
+  },
+  {
+   "name": "Kautsa",
+   "side": "Sages and gods",
+   "text": "A young Brahmin who comes to Raghu for his teacher's fee. His meeting with the king is a contest in generosity."
+  },
+  {
+   "name": "Aja",
+   "side": "The early kings",
+   "text": "Raghu's son, a handsome prince who wins Indumatī at her svayaṃvara and defeats the rival kings with a weapon of sleep. After her death his grief becomes the poem's great lament, and he dies to rejoin her."
+  },
+  {
+   "name": "Indumatī",
+   "side": "The early kings",
+   "text": "Princess of Vidarbha and sister of King Bhoja, who chooses Aja among the assembled kings. She is really a heavenly nymph under a curse, and she dies when a garland from heaven touches her."
+  },
+  {
+   "name": "Sunandā",
+   "side": "The early kings",
+   "text": "Indumatī's attendant at the svayaṃvara, whose speeches describe each suitor and his kingdom. Her eloquence makes Canto VI a tour of India."
+  },
+  {
+   "name": "Daśaratha",
+   "side": "Rāma's family",
+   "text": "Aja's son and Rāma's father. A great king who kills a hermit's son by mistake while hunting and is cursed to die of grief for a son. He dies after Rāma's exile."
+  },
+  {
+   "name": "Rāma",
+   "side": "Rāma's family",
+   "text": "Daśaratha's eldest son, Viṣṇu incarnate, the hero of Cantos X–XV. Kālidāsa presents him as an ideal king and devoted husband who nevertheless abandons the pregnant Sītā for the sake of his reputation. He kills Rāvaṇa, restores order, and returns to heaven at the end of his reign."
+  },
+  {
+   "name": "Sītā",
+   "side": "Rāma's family",
+   "text": "Daughter of King Janaka and of the Earth, wife of Rāma. She follows him into exile, is abducted by Rāvaṇa and passes through fire, and is still sent away by Rāma. Her message to him and her final appeal to the Earth make her the poem's moral voice."
+  },
+  {
+   "name": "Lakṣmaṇa",
+   "side": "Rāma's family",
+   "text": "Rāma's devoted younger brother, his companion in exile, who obeys even the order to abandon Sītā. He gives up his life to save his brother's word."
+  },
+  {
+   "name": "Bharata",
+   "side": "Rāma's family",
+   "text": "Kaikeyī's son, who refuses to profit from his mother's scheme and rules only as Rāma's deputy, with Rāma's sandals as a sign of his claim."
+  },
+  {
+   "name": "Kaikeyī",
+   "side": "Rāma's family",
+   "text": "Daśaratha's second queen, who claims two promises from her husband and sends Rāma into exile. Rāma later forgives her."
+  },
+  {
+   "name": "Paraśurāma",
+   "side": "Sages and gods",
+   "text": "The Brahmin warrior, son of the sage Jamadagni, who destroyed the Kṣatriyas twenty-one times. He challenges the young Rāma and recognises him as Viṣṇu."
+  },
+  {
+   "name": "Rāvaṇa",
+   "side": "Enemies",
+   "text": "The ten-headed demon king of Laṅkā, protected by a boon of Brahmā from all except men. His defeat is the purpose of Viṣṇu's incarnation."
+  },
+  {
+   "name": "Vālmīki",
+   "side": "Sages and gods",
+   "text": "The 'first poet', author of the Rāmāyaṇa, who shelters Sītā in his hermitage, raises her sons and teaches them his poem. He openly blames Rāma for his treatment of Sītā."
+  },
+  {
+   "name": "Kuśa and Lava",
+   "side": "Rāma's descendants",
+   "text": "Rāma and Sītā's twin sons, born in Vālmīki's hermitage, who sing the Rāmāyaṇa at their father's sacrifice. Kuśa later rules and returns to Ayodhyā."
+  },
+  {
+   "name": "Kumudvatī",
+   "side": "Rāma's descendants",
+   "text": "Sister of the serpent prince Kumuda, who finds Kuśa's lost bracelet in the river and becomes his wife. She is the mother of Atithi."
+  },
+  {
+   "name": "The goddess of Ayodhyā",
+   "side": "Rāma's descendants",
+   "text": "The personified city, who appears to Kuśa at night and describes her desolation to persuade him to come back."
+  },
+  {
+   "name": "Atithi",
+   "side": "Rāma's descendants",
+   "text": "Kuśa's son, presented as the perfect ruler according to the political treatises."
+  },
+  {
+   "name": "Sudarśana",
+   "side": "Rāma's descendants",
+   "text": "The child king crowned at six after his father is killed by a lion; an image of continuity before the end."
+  },
+  {
+   "name": "Agnivarṇa",
+   "side": "Rāma's descendants",
+   "text": "The last king of the poem (Johnstone's 'Agnivarma'), who gives the government to his ministers and his life to pleasure, dies of consumption without an heir and leaves his pregnant queen on the throne."
+  }
+ ],
+ "themes": [
+  {
+   "title": "The ideal of kingship",
+   "text": [
+    "The poem is a portrait gallery of kings, measured against the ideal set out in its opening verses: kings who protect their subjects, honour Brahmins, gather wealth to give it away, marry for the sake of offspring and retire as ascetics. Dilīpa's penance, Raghu's conquest and generosity, Rāma's sacrifice of private happiness and Atithi's mastery of statecraft each show one side of the ideal [[ali2004]].",
+    "Kālidāsa's kings are also measured by what they lose. Daśaratha's hunt, Rāma's abandonment of Sītā and Agnivarṇa's indulgence show the dangers inherent in royal power, and the poem never states its ideal without also showing its cost [[ingalls1976]]."
+   ]
+  },
+  {
+   "title": "The three aims of life",
+   "text": [
+    "Classical Indian thought speaks of three aims of life: dharma (duty and righteousness), artha (wealth and power) and kāma (love and pleasure), with mokṣa (liberation) beyond them. Kālidāsa's ideal kings keep the three in balance, and the poem's emphasis on this harmony has been read as typical of the confident culture of the Gupta age [[ingalls1976]].",
+    "The dynasty's decline can be described as a loss of that balance. Aja's love for Indumatī is so strong that he dies of it; Agnivarṇa gives himself only to kāma and destroys his body and his line."
+   ]
+  },
+  {
+   "title": "Fame and reputation",
+   "text": [
+    "Again and again, the kings of the line value their fame above their lives and their happiness. Dilīpa offers his body to keep his name as a protector, Raghu shames Kubera into raining gold, and Rāma sends away Sītā because of public talk. The poem makes the reader feel the beauty of this ideal and also its cruelty."
+   ]
+  },
+  {
+   "title": "Love and separation",
+   "text": [
+    "The great emotional scenes of the poem are scenes of separation: Aja's lament for Indumatī, Rāma's memories of his search for Sītā, Sītā's message from the forest and her final departure. Kālidāsa is the master of vipralambha śṛṅgāra, the mood of love in separation, and the Raghuvaṃśa uses it to mark the human cost of the dynasty's history [[lienhard1984]]."
+   ]
+  },
+  {
+   "title": "Continuity and decline",
+   "text": [
+    "The story of a dynasty is a story of time. Each canto passes from father to son, and the regular pattern of birth, coronation and retirement makes the poem a kind of ritual of continuity. In the last cantos the pattern breaks: kings pass in a list, die young or by accident, and the last dies without a son. The poem ends on an unborn heir, a hope without a hero."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "The life-cycle rites",
+   "text": "Birth, naming, education, marriage, coronation and funeral rites recur in every reign. They give the poem its structure and show that the dynasty lives according to sacred law."
+  },
+  {
+   "title": "Retirement to the forest",
+   "text": "Almost every good king hands over the kingdom to his son and becomes a hermit, following the ideal of the four stages of life. Aja and Agnivarṇa, who die of love and of pleasure, break this pattern."
+  },
+  {
+   "title": "Curses and boons",
+   "text": "Much of the plot is driven by curses and boons: Surabhi's curse on Dilīpa, the curses on Priyaṃvada and Indumatī, the hermit's curse on Daśaratha, Rāvaṇa's boon from Brahmā. They tie human events to a moral order that works over long periods."
+  },
+  {
+   "title": "Set descriptions",
+   "text": "The poem contains the standard descriptions of the mahākāvya: the seasons (autumn in IV, spring in IX, summer in XVI), the dawn-song (V), the svayaṃvara (VI), the women at the windows (VII), battles (VII, XII), the view from the air (XIII), and the water-sports (XVI)."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The sun and the moon",
+   "text": "The dynasty descends from the sun, and Kālidāsa constantly compares his kings to the sun and the moon. The waxing and waning moon becomes an image of the dynasty's fortunes, from the young prince 'like a crescent' to the line 'like the sky when wanes the Moon' in the last canto."
+  },
+  {
+   "title": "The lamp",
+   "text": "Images of lamps run through the poem: Indumatī as a moving lamp-flame, the child Raghu dimming the lamps of the birth chamber, Rāma as the 'lamp of Raghu's line', and Agnivarṇa dying 'as dies a lamp before the chilling blast'."
+  },
+  {
+   "title": "The earthen vessel",
+   "text": "The clay vessel in which Raghu offers Kautsa the guest's welcome after giving away all his wealth becomes a sign of royal generosity and of the right use of power."
+  },
+  {
+   "title": "The Earth as bride and mother",
+   "text": "Kings 'marry' the Earth at their coronation, and Sītā is the daughter of the Earth, who receives her back at the end. The double image links the political and the personal: the king who rejects Sītā remains married to the land."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Kālidāsa's date and the Gupta context",
+   "text": [
+    "No external evidence dates Kālidāsa precisely. Proposals have ranged from the first century BCE, linked to the legend of a king Vikramāditya who founded the Vikrama era in 57 BCE, to the sixth century CE. Most modern scholars favour the Gupta period, perhaps the reign of Candragupta II (about 375–415), who took the title Vikramāditya [[mirashi1969]] [[keith1928]].",
+    "The Raghuvaṃśa contributes to this argument. Raghu's conquest has been compared with the campaigns of Samudragupta, and the mention of the Hūṇas in Canto IV, if it refers to the Huns who reached Central Asia and north-western India in the late fourth and fifth centuries, would support a Gupta date. The commentators' variant readings (Vaṅkṣu or Sindhu) show how uncertain this evidence is [[goodall2003]] [[warder1977]]."
+   ],
+   "cite": [
+    "mirashi1969",
+    "keith1928",
+    "warder1977",
+    "goodall2003"
+   ]
+  },
+  {
+   "title": "A dynasty as hero",
+   "text": [
+    "The theorists required that a mahākāvya have a single noble hero, but the Raghuvaṃśa follows some thirty kings. Critics have discussed whether the poem has a unity of design, or whether it is a series of separate episodes linked by genealogy.",
+    "Defenders of its unity point to the patterns that run across reigns: the ideal of Canto I, the recurring rites, the parallels between Dilīpa and Agnivarṇa at the beginning and the end, and the Rāma cantos at the centre. On this reading the dynasty itself, the vaṃśa, is the hero, and the poem's subject is time [[smith1985]] [[lienhard1984]]."
+   ],
+   "cite": [
+    "smith1985",
+    "lienhard1984",
+    "peterson2003"
+   ]
+  },
+  {
+   "title": "Is the poem unfinished?",
+   "text": [
+    "The poem ends abruptly, with Agnivarṇa's widow ruling for an unborn child. Some scholars have thought that Kālidāsa died before finishing it or that later cantos were lost, and a late tradition speaks of more than nineteen cantos. None of the commentators, however, knows any text beyond Canto XIX.",
+    "Other critics read the ending as deliberate: a dynasty that began with a childless king and a prayer for a son ends with a dead king and a son not yet born. The ending then completes a circle and leaves the future open, and the decadence of the last king is the poem's warning about the fate of power [[keith1928]] [[warder1977]] [[ali2004]]."
+   ],
+   "cite": [
+    "keith1928",
+    "warder1977",
+    "ali2004"
+   ]
+  },
+  {
+   "title": "Kālidāsa and the Rāmāyaṇa",
+   "text": [
+    "The Rāma cantos raise the question of how a classical poet should retell an epic. Kālidāsa compresses some parts drastically and expands others, especially the aerial journey and the abandonment of Sītā. Critics have asked whether he is summarising Vālmīki for an audience that knew the epic, or reinterpreting it [[brockington1984]] [[goldman1984]].",
+    "The treatment of Sītā is central to this question. Kālidāsa's Rāma admits her innocence, and his Vālmīki blames Rāma. Some readers see an implicit criticism of the epic hero, others a celebration of royal self-sacrifice in which the king gives up even his beloved wife for the sake of his subjects. The poem belongs to a long series of retellings in which the Rāma story was continually reshaped [[richman1991]] [[pollock1993]]."
+   ],
+   "cite": [
+    "brockington1984",
+    "goldman1984",
+    "goldman2017",
+    "richman1991",
+    "pollock1993"
+   ]
+  },
+  {
+   "title": "Kingship, caste and the Śambūka episode",
+   "text": [
+    "The killing of the Śūdra ascetic Śambūka in Canto XV, taken from the Uttarakāṇḍa, has become one of the most debated episodes in the Rāma tradition. In the poem it is presented as a righteous act that restores a dead child to life. Modern readers, and the dramatist Bhavabhūti, whose Rāma strikes with open reluctance, have found it a troubling sign of the violence of the social order the ideal king protects [[goldman2017]] [[richman1991]].",
+    "Historians of political thought have read the Raghuvaṃśa as a key text of the courtly ideology of the Gupta and post-Gupta periods, in which the king's duty is to maintain the order of the varṇas and the moral world. The poem's elegance and its political content are inseparable [[pollock2006]] [[ali2004]]."
+   ],
+   "cite": [
+    "goldman2017",
+    "richman1991",
+    "pollock2006",
+    "ali2004"
+   ]
+  },
+  {
+   "title": "Vallabhadeva, Mallinātha and the text",
+   "text": [
+    "The Raghuvaṃśa survives in many manuscripts, and its text differs between regions. Vallabhadeva's tenth-century Kashmiri commentary preserves the oldest form of the text known, with many readings that differ from those of Mallinātha, whose fourteenth- or fifteenth-century text became the vulgate in printed editions [[goodall2003]].",
+    "Dominic Goodall and Harunaga Isaacson have argued that Vallabhadeva's text is often closer to what Kālidāsa wrote, and that Mallinātha sometimes smoothed difficult readings. The new Murty Classical Library edition follows Vallabhadeva. Johnstone, like most older translators, follows the vulgate, so his translation sometimes differs in detail from modern editions [[dezso2024]] [[nandargikar1897]]."
+   ],
+   "cite": [
+    "goodall2003",
+    "dezso2024",
+    "nandargikar1897",
+    "kale1922"
+   ]
+  },
+  {
+   "title": "Kālidāsa's style and its later reputation",
+   "text": [
+    "Later Sanskrit critics praised Kālidāsa above all for prasāda (clarity) and for the aptness of his similes; the saying upamā kālidāsasya ('simile belongs to Kālidāsa') made him the master of comparison. The Raghuvaṃśa became the model of the vaidarbha style, the clear and graceful manner associated with Vidarbha, as opposed to the more elaborate styles of later poets [[gerow1977]] [[lienhard1984]].",
+    "Modern critics have stressed that this clarity is itself an art. Kālidāsa's descriptions are carefully chosen to reveal character and feeling, and his apparent simplicity hides a dense system of allusion to the epics, the Veda and the law books [[warder1977]] [[smith1985]]."
+   ],
+   "cite": [
+    "gerow1977",
+    "lienhard1984",
+    "warder1977",
+    "smith1985"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Canto I, ll. 7–11",
+   "quote": "Than one who ventures on a raft to cross\nSome pathless sea? For, dullard though I am,\nI seek a poet's fame, and risk men's jeers,\nA dwarf who stretches tiny arms to grasp",
+   "who": "The poet",
+   "explanation": "The modest opening of the poem. The poet compares himself to a man crossing the sea on a raft and a dwarf reaching for high fruit. These conventional images of humility became famous in their own right, and they also show the size of the task: to sing a whole dynasty."
+  },
+  {
+   "ref": "Canto II, ll. 174–175",
+   "quote": "Scarce value fleeting life, but Fame we prize\nBeyond all other.",
+   "who": "Dilīpa",
+   "explanation": "Dilīpa's reply to the lion, who has argued that a king's life is more precious than a cow. The king's sense of honour, his fame as a protector, outweighs prudence. The same principle will lead Rāma to give up Sītā."
+  },
+  {
+   "ref": "Canto IV, ll. 113–115",
+   "quote": "The King—with lawful triumph—took his fame,\nBut not his country, from Mahendra's king,\nAnd set him free;",
+   "who": "The narrator",
+   "explanation": "Raghu's conquest is righteous: he takes the defeated king's submission and glory but leaves him his kingdom. The passage expresses the ideal of the dharmavijaya, the conquest according to dharma."
+  },
+  {
+   "ref": "Canto VI, ll. 219–222",
+   "quote": "Now as the Maid went by, each suitor-King,\nLit for a moment by her dazzling eyes,\nLike wayside tower by passing lamp, sank back\nIn deepest gloom.",
+   "who": "The narrator",
+   "explanation": "The poem's most famous simile. Indumatī passes the suitors like a lamp carried along a street at night, lighting each house for a moment. The image captures her beauty, the suitors' hope and disappointment, and the movement of the scene."
+  },
+  {
+   "ref": "Canto VIII, ll. 213–215",
+   "quote": "House-mistress, Friend, Beloved, Counsellor,\nIn all Love's arts apt pupil! cruel Death,\nBereaving me of thee, bereaves of all!",
+   "who": "Aja",
+   "explanation": "Aja names the many roles his wife played in his life. Each is a part of the ideal of marriage, and the list shows that her death takes away not only a lover but the whole of his household life."
+  },
+  {
+   "ref": "Canto IX, ll. 252–254",
+   "quote": "That act the Law forbids to virtuous Kings,\nYet he transgressed:—when passion blinds, a Sage,\nThough versed in Sacred Lore, will tread ill paths.",
+   "who": "The narrator",
+   "explanation": "The narrator comments on Daśaratha's fatal shot. Even a good and learned king can be blinded by passion, here the passion of the hunt. The fault brings the curse that links the history of the dynasty to the tragedy of Rāma."
+  },
+  {
+   "ref": "Canto XIII, ll. 77–79",
+   "quote": "These creepers, dumb yet pitying, bent their arms\nTo show the path by which the Râkshasa\nHad borne thee,",
+   "who": "Rāma",
+   "explanation": "Rāma shows Sītā the forest from the aerial car. The plants and animals that helped him in his search are remembered with tenderness, and the landscape becomes a record of the couple's love."
+  },
+  {
+   "ref": "Canto XIV, ll. 159–160",
+   "quote": "The Queen I know is stainless, yet I dread\nMy people's blaming:",
+   "who": "Rāma",
+   "explanation": "Rāma confesses that Sītā is innocent while resolving to send her away. The king's duty to his reputation and his subjects' opinion overrides justice to his wife, and the poem lets the reader see the contradiction."
+  },
+  {
+   "ref": "Canto XIV, ll. 242–244",
+   "quote": "Thyself hast seen me purified by Fire,\nYet now forsakest, fearing scandal's breath,—\nMere words: does this beseem Thy noble race?",
+   "who": "Sītā",
+   "explanation": "Sītā's message to Rāma. She reminds him of the fire ordeal, calls the people's talk 'mere words', and asks whether such conduct is worthy of his lineage, turning against him the ideal of the dynasty itself."
+  },
+  {
+   "ref": "Canto XIX, ll. 50–52",
+   "quote": "His race was like the sky when wanes the Moon,\nOr as a lake when only mud is left—\nIts waters dried, or as a dying lamp.",
+   "who": "The narrator",
+   "explanation": "The decline of the dynasty under Agnivarṇa. The images of moon, water and lamp that once expressed the glory of the line now express its exhaustion, and the poem closes its circle."
+  }
+ ],
+ "questions": [
+  {
+   "q": "What ideal of kingship is set out in the opening catalogue of the dynasty's virtues, and how closely do the kings that follow live up to it?",
+   "hint": "Compare Canto I, ll. 15–27, with the reigns of Raghu (IV–V), Rāma (XIV) and Agnivarṇa (XIX)."
+  },
+  {
+   "q": "Why does Dilīpa offer his life for the cow, and what do the lion's counter-arguments reveal about the poem's view of royal duty?",
+   "hint": "Look at the exchange in Canto II, ll. 141–178, and at the role of fame."
+  },
+  {
+   "q": "How does Kālidāsa use geography in the conquest of Canto IV and in the svayaṃvara of Canto VI? What image of India do the two cantos create together?",
+   "hint": "Note the regions, rivers and products mentioned in each canto and the order in which they appear."
+  },
+  {
+   "q": "Is Aja's grief for Indumatī presented as admirable, or as a failure of a king's self-control?",
+   "hint": "Compare the lament (VIII, ll. 145–222) with the sage's consolation and the king's response (ll. 297–308)."
+  },
+  {
+   "q": "Why might Kālidāsa have placed the story of Daśaratha's fatal hunt at the end of Canto IX rather than later, as in the Rāmāyaṇa?",
+   "hint": "Think about the link between the history of the dynasty and the Rāma cantos."
+  },
+  {
+   "q": "Which parts of the Rāmāyaṇa does Kālidāsa compress, and which does he expand? What do his choices tell us about his interests and his audience?",
+   "hint": "Compare the length of Canto XII with Cantos XIII and XIV."
+  },
+  {
+   "q": "How does the poem judge Rāma's decision to abandon Sītā? Consider the voices of Rāma, Sītā, Lakṣmaṇa and Vālmīki.",
+   "hint": "Canto XIV, ll. 159–169, 242–269 and 287–316."
+  },
+  {
+   "q": "What does the lament of the goddess of Ayodhyā in Canto XVI add to the poem's treatment of time and decline?",
+   "hint": "Compare the description of the ruined city with the decline of the dynasty in Cantos XVIII–XIX."
+  },
+  {
+   "q": "Is the ending of the poem incomplete, or deliberate? Make the case for each position.",
+   "hint": "Compare the end of Canto XIX with the beginning of Canto I: a childless king and a prayer for a son."
+  },
+  {
+   "q": "The Raghuvaṃśa has a dynasty, not a single person, as its hero. What does this choice make possible, and what does it cost?",
+   "hint": "Think about unity, patterns repeated across reigns, and the Rāma cantos at the centre of the poem."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "ali2004",
+   "text": "Ali, Daud. Courtly Culture and Political Life in Early Medieval India. Cambridge: Cambridge University Press, 2004."
+  },
+  {
+   "id": "brockington1984",
+   "text": "Brockington, J. L. Righteous Rāma: The Evolution of an Epic. Delhi: Oxford University Press, 1984."
+  },
+  {
+   "id": "gerow1977",
+   "text": "Gerow, Edwin. Indian Poetics. A History of Indian Literature 5.3. Wiesbaden: Otto Harrassowitz, 1977."
+  },
+  {
+   "id": "goldman2017",
+   "text": "Goldman, Robert P., and Sally J. Sutherland Goldman, trans. The Rāmāyaṇa of Vālmīki: An Epic of Ancient India. Vol. 7, Uttarakāṇḍa. Princeton: Princeton University Press, 2017."
+  },
+  {
+   "id": "goldman1984",
+   "text": "Goldman, Robert P., trans. The Rāmāyaṇa of Vālmīki: An Epic of Ancient India. Vol. 1, Bālakāṇḍa. Princeton: Princeton University Press, 1984."
+  },
+  {
+   "id": "goodall2003",
+   "text": "Goodall, Dominic, and Harunaga Isaacson, eds. The Raghupañcikā of Vallabhadeva, Being the Earliest Commentary on the Raghuvaṃśa of Kālidāsa. Vol. 1. Groningen: Egbert Forsten, 2003."
+  },
+  {
+   "id": "ingalls1976",
+   "text": "Ingalls, Daniel H. H. 'Kālidāsa and the Attitudes of the Golden Age.' Journal of the American Oriental Society 96, no. 1 (1976): 15–26."
+  },
+  {
+   "id": "johnstone1902",
+   "text": "Johnstone, P. de Lacy, trans. The Raghuvança: The Story of Raghu's Line. London: J. M. Dent, 1902."
+  },
+  {
+   "id": "kale1922",
+   "text": "Kale, M. R., ed. The Raghuvaṃśa of Kālidāsa, with the Commentary (the Sañjīvinī) of Mallinātha. Cantos I–X. Bombay: P. S. Rege, 1922."
+  },
+  {
+   "id": "keith1928",
+   "text": "Keith, A. Berriedale. A History of Sanskrit Literature. Oxford: Clarendon Press, 1928."
+  },
+  {
+   "id": "dezso2024",
+   "text": "Kālidāsa. The Lineage of the Raghus. Edited and translated by Csaba Dezső, Dominic Goodall and Harunaga Isaacson. Murty Classical Library of India. Cambridge, MA: Harvard University Press, 2024."
+  },
+  {
+   "id": "lienhard1984",
+   "text": "Lienhard, Siegfried. A History of Classical Poetry: Sanskrit, Pali, Prakrit. A History of Indian Literature 3.1. Wiesbaden: Otto Harrassowitz, 1984."
+  },
+  {
+   "id": "mirashi1969",
+   "text": "Mirashi, V. V., and N. R. Navlekar. Kālidāsa: Date, Life, and Works. Bombay: Popular Prakashan, 1969."
+  },
+  {
+   "id": "nandargikar1897",
+   "text": "Nandargikar, Gopal Raghunath, ed. The Raghuvaṃśa of Kālidāsa, with the Commentary of Mallinātha. 3rd ed. Bombay: Radhabai Atmaram Sagoon, 1897."
+  },
+  {
+   "id": "peterson2003",
+   "text": "Peterson, Indira Viswanathan. Design and Rhetoric in a Sanskrit Court Epic: The Kirātārjunīya of Bhāravi. Albany: State University of New York Press, 2003."
+  },
+  {
+   "id": "pollock1993",
+   "text": "Pollock, Sheldon. 'Rāmāyaṇa and Political Imagination in India.' Journal of Asian Studies 52, no. 2 (1993): 261–97."
+  },
+  {
+   "id": "pollock2006",
+   "text": "Pollock, Sheldon. The Language of the Gods in the World of Men: Sanskrit, Culture, and Power in Premodern India. Berkeley: University of California Press, 2006."
+  },
+  {
+   "id": "richman1991",
+   "text": "Richman, Paula, ed. Many Rāmāyaṇas: The Diversity of a Narrative Tradition in South Asia. Berkeley: University of California Press, 1991."
+  },
+  {
+   "id": "ryder1912",
+   "text": "Ryder, Arthur W., trans. Kalidasa: Translations of Shakuntala and Other Works. Everyman's Library. London: J. M. Dent; New York: E. P. Dutton, 1912."
+  },
+  {
+   "id": "smith1985",
+   "text": "Smith, David. Ratnākara's Haravijaya: An Introduction to the Sanskrit Court Epic. Delhi: Oxford University Press, 1985."
+  },
+  {
+   "id": "stenzler1832",
+   "text": "Stenzler, Adolf Friedrich, ed. and trans. Raghuvansa: Kalidasae carmen, Sanskrite et Latine. London: Oriental Translation Fund of Great Britain and Ireland, 1832."
+  },
+  {
+   "id": "warder1977",
+   "text": "Warder, A. K. Indian Kāvya Literature. Vol. 3, The Early Medieval Period (Śūdraka to Viśākhadatta). Delhi: Motilal Banarsidass, 1977."
+  }
+ ]
+}
