@@ -1,0 +1,1092 @@
+{
+ "work": "piers-plowman",
+ "title": "Piers Plowman",
+ "author": "William Langland",
+ "quoteEdition": "piers-plowman",
+ "updated": "2026-10-19",
+ "unit": "Passus",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "William Langland (fl. c. 1360s–1380s), known almost entirely from the poem itself and a few manuscript notes"
+  },
+  {
+   "label": "Composed",
+   "value": "A-text probably late 1360s or early 1370s; B-text c. 1377–79; C-text in the 1380s, perhaps left unfinished at the poet's death"
+  },
+  {
+   "label": "Versions",
+   "value": "Three main versions, A, B and C, plus the disputed short Z-text; this guide follows the B-text"
+  },
+  {
+   "label": "Genre",
+   "value": "Allegorical dream vision combining social satire, sermon, debate and spiritual quest"
+  },
+  {
+   "label": "Metre",
+   "value": "Unrhymed alliterative long line, divided by a caesura into two half-lines"
+  },
+  {
+   "label": "Language",
+   "value": "Middle English of the south-west Midlands, with many Latin quotations from Scripture and the liturgy"
+  },
+  {
+   "label": "Structure",
+   "value": "B-text: Prologue and twenty passus; the Visio (Prologue–Passus VII) and the Vita de Dowel, Dobet and Dobest (Passus VIII–XX)"
+  },
+  {
+   "label": "Setting",
+   "value": "The Malvern Hills and London, and an allegorical England of the later fourteenth century"
+  },
+  {
+   "label": "Manuscripts",
+   "value": "More than fifty manuscripts survive; first printed by Robert Crowley in 1550"
+  },
+  {
+   "label": "Text used here",
+   "value": "B-text ed. Thomas Wright (1842), from Trinity College Cambridge MS B.15.17, printed in half-lines; the Prologue is not included in this archive's text"
+  }
+ ],
+ "context": [
+  "Piers Plowman is the great English religious poem of the later Middle Ages. It survives in more than fifty manuscripts, one of the largest numbers for any Middle English poem, and it was read by clerics, lawyers, civil servants and gentry in Langland's lifetime and long after. It is at once a satire on the corruption of Church and state, a sermon on penance and charity, and the story of a single seeker, the dreamer Will, who wants to know how to save his soul [[simpson2007]] [[cole2014]].",
+  "Almost nothing is known of the author. A note in a C-text manuscript (Trinity College Dublin MS 212) records that 'William de Langlond' was the son of Stacy de Rokayle, a gentleman of Shipton-under-Wychwood in Oxfordshire. The poem itself names its dreamer Will and once 'Longe-wille', and in the C-text presents him as a married clerk in minor orders living precariously in London. Whether these details are autobiography or fiction is debated, but most scholars now accept a single author named William Langland [[kane1965]] [[hanna1993]] [[adams2013]].",
+  "The poem exists in three main versions. The A-text (Prologue and eleven passus) breaks off in the middle of the search for Dowel; the B-text, about three times as long, revises A and continues it to the end; the C-text revises B throughout, adding and cutting passages, among them the addition of the dreamer's 'apologia' for his way of life and the omission of the tearing of the pardon. A shorter version, the Z-text, has been argued to be an early draft. The relation of the versions, and how far scribes and early readers mixed them, has been studied intensively since the nineteenth century [[skeat1886]] [[kane1960]] [[kanedonaldson1975]] [[russellkane1997]] [[brewer1996]] [[warner2011]].",
+  "Langland writes in the alliterative long line, the native English metre descended from Old English verse. Each line has two halves, linked by alliteration on the stressed syllables, most often on the pattern aa / ax. The verse is flexible and close to speech, and Langland uses it for argument and satire as well as vision. His text is also deeply bilingual: hundreds of Latin quotations from the Bible, the liturgy and the Fathers are woven into the English [[cable1991]] [[galloway2006]].",
+  "The text quoted here is the B-text as edited by Thomas Wright in 1842 from Trinity College Cambridge MS B.15.17, the manuscript that also serves as base for the editions of Kane and Donaldson and of Schmidt. Wright printed each long line as two short lines, so that one 'line' of the quotations in this guide is a half-line; his spelling is kept unchanged. References are given by version and passus (B.I, B.II and so on). This archive's text begins with Passus I; the Prologue, with the vision of the field full of folk, is summarised in the guide but not quoted [[wright1842]] [[schmidt1995]]."
+ ],
+ "plot": [
+  "In the Prologue the dreamer Will falls asleep on the Malvern Hills and sees a field full of folk between the tower of Truth and the dungeon of Wrong. Holy Church explains the vision and teaches that Truth is the best treasure (Passus I). Will then sees Lady Meed, who is to marry False; the case is taken to the king, who tries to marry her to Conscience; Conscience refuses, and Reason persuades the king to rule by justice (II–IV).",
+  "In a second dream Reason preaches to the field, and the seven deadly sins confess. Pilgrims set out to find Truth, and Piers the Plowman offers to guide them once his half-acre is ploughed. The workers grow idle until Hunger forces them to labour. Truth sends Piers a pardon, which a priest says is no pardon at all; Piers tears it and resolves to turn to prayer (V–VII).",
+  "Awake, Will sets out to find Dowel, Dobet and Dobest. He consults a series of teachers, Thought, Wit, Study, Clergy, Scripture and Imaginatif, and has visions of Fortune, Trajan and the wonders of Kynde. At the feast of Conscience he meets Patience and Haukyn the Active Man, who repents (VIII–XIV). Anima teaches him about charity; through the Tree of Charity and the figures of Abraham (Faith), Moses (Hope) and the Good Samaritan he moves towards the Passion, and he sees Christ joust in Piers's armour and harrow hell (XV–XVIII).",
+  "In the last visions Christ founds the Church; Grace makes Piers his ploughman and builds the barn of Unity. Antichrist attacks, the friars betray Unity, and Contrition is drugged by Friar Flatterer. The poem ends as Conscience sets out on a new pilgrimage to find Piers the Plowman, and the dreamer wakes (XIX–XX)."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Passus I: Holy Church and Truth",
+   "lines": "B-text, Passus I",
+   "section": 0,
+   "summary": [
+    "The archive's text opens where the dreamer's first vision is already under way. In the Prologue (not included in this text), Will has fallen asleep on the Malvern Hills and seen a tower on a hill, a deep dungeon in a dale, and between them a 'fair field full of folk': ploughmen, merchants, minstrels, beggars, hermits, friars, pardoners, lawyers and a king, all busy at their work and their schemes. Passus I begins as a lady in linen comes down from the tower to explain what he has seen.",
+    "She tells him that Truth, the father of faith, lives in the tower and has given human beings what they need, food, clothing and drink, to be used 'in measure'. The dungeon is the castle of Care, where Wrong, the father of falsehood, lives. Will kneels and asks who she is: she is Holy Church, who received him at baptism. He asks how he may save his soul, and she answers that 'when all treasures are tried, Truth is the best'.",
+    "When Will protests that he has no 'kynde knowyng' of truth, she rebukes him and explains that it is a knowledge in the heart which teaches love of God above oneself. She tells of the fall of Lucifer, teaches that knights and kings must serve truth, and ends with a meditation on love as the 'treacle' (healing medicine) of heaven and the plant of peace, warning that chastity and faith without charity are worthless."
+   ],
+   "analysis": [
+    "Holy Church's first lesson sets the poem's terms. Truth (Middle English treuthe) means at once God, fidelity to one's word, honest dealing, and correct doctrine; the pun is the hinge on which the whole poem's social and spiritual concerns turn. The cosmic geography of tower, dungeon and field gives an image of the world as a moral space in which every human occupation stands between salvation and damnation [[simpson2007]].",
+    "Will's objection is equally important. He does not want to be told what truth is but to know it 'kyndely', naturally and from the inside. The tension between instruction received from authorities and knowledge that is felt and lived drives the rest of the poem, and explains why so many later teachers fail to satisfy him. The passus also introduces Langland's habit of weaving Latin texts from Scripture and the liturgy into the English verse, a macaronic texture typical of the whole poem [[galloway2006]]."
+   ],
+   "key": [
+    {
+     "ref": "B.I",
+     "quote": "What this mountaigne by-meneth\nAnd the merke dale,\nAnd the feld ful of folk,\nI shal yow faire shewe.",
+     "note": "Holy Church promises to interpret the Prologue's vision. In this edition each alliterative long line is printed as two short lines, so the quotation is two long lines: note the alliteration on m and on f."
+    },
+    {
+     "ref": "B.I",
+     "quote": "For truthe telleth that love\nIs triacle of hevene.",
+     "note": "Love is the 'treacle', the universal antidote of medieval medicine. Holy Church's discourse moves from truth to love, anticipating the poem's eventual movement from law to charity."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Passus II: Lady Meed and the Marriage Charter",
+   "lines": "B-text, Passus II",
+   "section": 1,
+   "summary": [
+    "Will asks Holy Church to teach him how to recognise falsehood. She tells him to look to his left, where he sees a woman splendidly dressed in fur and scarlet, crowned and ringed with jewels. This is Meed the maid, Holy Church's rival, who is to be married the next day to False. Holy Church warns him against her and leaves.",
+    "A crowd of guests gathers for the wedding: jurors, summoners, sheriffs, beadles, bailiffs, brokers, notaries and the rest. Favel (Flattery) has arranged the match, and Simony and Civil (the civil law) read out a charter that endows the couple with the lands of the deadly sins. Theology objects that Meed, being the daughter of Amends, should be married only where Truth allows, and insists that the matter go before the king at Westminster.",
+    "The whole company sets out for London on the backs of corrupt officials. The king, hearing of it, orders False and his associates to be arrested. Dread overhears and warns them; they scatter. Liar is sheltered by pardoners, physicians, grocers, minstrels and finally the friars. Only Meed, trembling and weeping, is taken before the king."
+   ],
+   "analysis": [
+    "Meed is one of Langland's greatest creations. Her name means 'reward' in the widest sense: wages, gifts, bribes, payment and recompense. She is therefore not simply evil, which is why the poem cannot dispose of her easily; the question she poses is how money and reward can be made to serve justice rather than corrupt it. Her gorgeous clothing, which recalls the Whore of Babylon of Revelation, makes her both seductive and ominous [[simpson2007]] [[galloway2006]].",
+    "The mock marriage charter parodies a real legal document, with its witnesses, its grant of lands and its formula of tenure. Langland's satire is precise about institutions: it names the officials of the church courts and the secular law who live on fees and gifts. The ride to London on the backs of sheriffs and summoners turns the satire into a comic pageant."
+   ],
+   "key": [
+    {
+     "ref": "B.II",
+     "quote": "\"That is Mede the mayde,\" quod she,\n\"Hath noyed me ful ofte,",
+     "note": "Holy Church identifies Meed as a personal enemy. The rivalry between the two ladies frames the Visio as a choice between two kinds of loyalty."
+    },
+    {
+     "ref": "B.II",
+     "quote": "Purfiled with pelure\nThe fyneste upon erthe,\nY-corouned with a coroune,\nThe kyng hath noon bettre;",
+     "note": "Meed's dress is described in the language of luxury and fashion. The comparison with the king's crown already hints at her power over the realm."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Passus III: Meed at Court",
+   "lines": "B-text, Passus III",
+   "section": 2,
+   "summary": [
+    "At Westminster Meed is received courteously. Justices and clerks promise her their help; a friar hears her confession and absolves her for a fee, asking her to pay for a window in his church in return. Langland interrupts with warnings to mayors and officials who take gifts from those who sell food to the poor.",
+    "The king proposes to marry Meed to Conscience. Conscience refuses, denouncing her as the corrupter of popes, judges, sheriffs and juries. Meed replies with a clever defence: reward is necessary to kings, soldiers, servants, priests and craftsmen, and she accuses Conscience of having made the king lose Normandy through a cowardly peace. The court is impressed.",
+    "Conscience answers by distinguishing two kinds of meed: the reward God gives the just in heaven, and the corrupt reward that is paid before it is earned. Wages for labour are not meed at all but 'measurable hire'. He ends with a prophecy of a coming reign of Reason and Love in which swords will be beaten into ploughshares and every man will work. Meed retorts with a Latin text in her favour, and Conscience completes the verse to turn it against her."
+   ],
+   "analysis": [
+    "The debate between Meed and Conscience is one of the most intellectually ambitious passages in Middle English literature. Meed's speech is persuasive because much of what she says is true; a society does run on payment. Conscience's reply depends on distinctions borrowed from grammar and law, and the C-text expands it with a famous grammatical allegory of 'direct' and 'indirect' relation [[galloway2006]] [[simpson2007]].",
+    "The reference to the Normandy campaign and the peace of 1360 is one of several topical allusions that help to date the B-text to the later 1370s. Conscience's millennial prophecy, with its echo of Isaiah, shows how quickly Langland's satire turns to apocalyptic hope [[kerbyfulton1990]]."
+   ],
+   "key": [
+    {
+     "ref": "B.III",
+     "quote": "\"That laborers and lowe folk\nTaken of hire maistres,\nIt is no manere mede,\nBut a mesurable hire.",
+     "note": "Conscience separates honest wages from meed. The phrase 'measurable hire' sums up the poem's ideal of an economy governed by measure."
+    },
+    {
+     "ref": "B.III",
+     "quote": "\"Ech man to pleye with a plow,\nPykoise or spade,\nSpynne or sprede donge,",
+     "note": "In Conscience's vision of the renewed kingdom, swords become ploughs and everyone labours. The plough here prepares for the entry of Piers the Plowman."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Passus IV: Reason, Peace and Wrong",
+   "lines": "B-text, Passus IV",
+   "section": 3,
+   "summary": [
+    "The king orders Conscience and Meed to be reconciled. Conscience refuses unless Reason advises it, and rides to fetch him. Reason comes to court with his servants, and Wit and Wisdom are already there.",
+    "Peace enters Parliament with a petition against Wrong, who has taken his wife, raped Rose, stolen his geese and horse, and beaten him. Wrong, frightened, tries to buy his way out with the help of Wisdom and Wit, and Meed offers Peace a present of gold to settle the case. Peace, now paid, asks the king to have mercy.",
+    "Reason refuses to show mercy until the whole social order is reformed: until lords love truth, clerks preach as they live, and Meed no longer has power in the courts. The king is persuaded, Meed is discredited, and the king asks Reason and Conscience to stay with him for the rest of his life."
+   ],
+   "analysis": [
+    "Passus IV closes the first vision with an image of what a reformed kingdom might look like. Peace's petition is modelled on the bills of complaint presented in late fourteenth-century Parliaments, and Wrong's offer of money shows how private settlement could short-circuit the law [[galloway2006]].",
+    "The ending is deliberately provisional. The king's declaration that he will live with Reason and Conscience solves the problem of Meed in principle, but the poem has not shown how it could be done, and the next vision begins with the people of the field rather than the court. Readers have long noted that the Visio keeps moving from public institutions to individual conscience and back [[simpson2007]] [[burrow1993]]."
+   ],
+   "key": [
+    {
+     "ref": "B.IV",
+     "quote": "And thanne com Pees into parlement,\nAnd putte forth a bille,\nHow Wrong ayeins his wille\nHadde his wif taken,",
+     "note": "Peace presents a bill in Parliament. The allegory is grounded in legal procedure: personifications act like litigants."
+    },
+    {
+     "ref": "B.IV",
+     "quote": "\"And I graunte,\" quod the kyng,\n\"Goddes forbode ellis!\nAls longe as oure lyf lasteth,\nLyve we togideres.\"",
+     "note": "The king's promise to keep Reason and Conscience at his side ends the first dream on a note of hope that the poem will not let stand for long."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Passus V: Reason's Sermon and the Seven Sins",
+   "lines": "B-text, Passus V",
+   "section": 4,
+   "summary": [
+    "Will wakes, wishing he had slept longer, and falls asleep again. He sees the field full of folk once more and Reason, with a cross, preaching to the whole realm: the pestilences and the great wind are punishments for sin, and every estate must amend.",
+    "Moved by the sermon, the deadly sins come to confession before Repentance. Pernelle Proud-heart, Lechery, Envy, Wrath, Covetousness, Gluttony and Sloth each describe themselves in vivid detail. Gluttony, on his way to church, is lured into Beton the brewster's tavern and drinks until he collapses; Sloth confesses that he cannot say his Paternoster properly but knows rhymes of Robin Hood. Robert the Robber begs for mercy like the thief on the cross. Repentance prays for all, and Hope blows a horn.",
+    "A thousand people set out to seek Truth, but none knows the way. A palmer covered with souvenirs of pilgrimage has never heard of such a saint. Then a ploughman puts forth his head: he is Piers, a long-time servant of Truth, and he describes the way to Truth's castle as an allegorical journey through the Ten Commandments, ending at a gate kept by Grace. Some of the pilgrims, a cutpurse, an ape-keeper and a 'common woman', decide that the road is not for them."
+   ],
+   "analysis": [
+    "Langland's confession of the sins is one of the comic and realistic high points of English medieval poetry. Each sin is both an abstraction and a recognisable person, with a trade, a parish and a life history, so that confession becomes a portrait of fourteenth-century England. Gluttony's tavern, with its named drinkers and its game of 'new fair', is as alive as anything in Chaucer [[simpson2007]].",
+    "The appearance of Piers is the turning point of the Visio. After so many authorities, the guide to Truth is a labourer, who knows Truth 'as kyndely as clerk doth his bokes'. The way he describes is not an outward pilgrimage but an inner journey through obedience and love; the poem thus criticises the commercial culture of pilgrimage while redirecting its energies [[burrow1993]]."
+   ],
+   "key": [
+    {
+     "ref": "B.V",
+     "quote": "I kan noght parfitly my pater-noster,\nAs the preest it syngeth;\nBut I kan rymes of Robyn Hood,\nAnd Randolf erl of Chestre;",
+     "note": "Sloth's confession contains one of the earliest references to Robin Hood rhymes in English. The joke is serious: popular entertainment has displaced the basic prayers of the faith."
+    },
+    {
+     "ref": "B.V",
+     "quote": "\"Peter!\" quod a plowman,\nAnd putte forth his hed,",
+     "note": "Piers enters the poem abruptly, swearing by Saint Peter. His name (Piers is a form of Peter) links the ploughman with the apostle, a connection the poem will develop."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Passus VI: The Ploughing of the Half-Acre",
+   "lines": "B-text, Passus VI",
+   "section": 5,
+   "summary": [
+    "The pilgrims complain that the way is hard without a guide. Piers replies that he has a half-acre to plough by the highway, and that if they help him he will lead them afterwards. He sets everyone to work: ladies are to sew vestments, the knight is to protect him from wasters and to hunt the beasts that damage his crops, and the rest are to plough, dig and weed. Piers makes his will as if setting out on pilgrimage.",
+    "At first all goes well, but at midday some of the workers sit down to drink and sing 'How, trolly lolly'. Others pretend to be crippled. Waster and a Breton refuse to work, and the knight's courteous warning has no effect. Piers calls on Hunger, who seizes Waster by the belly. At once everyone works hard, and even hermits take up spades.",
+    "Piers asks Hunger how he should deal with beggars. Hunger advises charity to the truly needy and hard food for the able-bodied, and cites Genesis on labour 'in sudore'. When harvest comes and food is plentiful, however, the labourers grow idle and demanding again, refusing to eat stale food. The passus ends with an obscure prophecy that famine will return."
+   ],
+   "analysis": [
+    "The half-acre is the Visio's most concrete image of a Christian society. Ploughing replaces pilgrimage: before seeking Truth, people must do the work of their estate. The scene has often been read against the labour crisis that followed the Black Death, when the Statute of Labourers attempted to fix wages and restrict mobility; Hunger's advice echoes contemporary debates about 'sturdy beggars' [[justice1997]] [[simpson2007]].",
+    "Yet the passus also exposes the limits of Piers's authority. Order is restored only by Hunger, a natural force, and lasts only as long as hunger does. The episode raises a question the poem never fully settles: can a society be made just by coercion, and what does charity owe to those who will not work?"
+   ],
+   "key": [
+    {
+     "ref": "B.VI",
+     "quote": "I have an half acre to erie\nBy the heighe weye;\nHadde I eryed this half acre,\nAnd sowen it after,",
+     "note": "Piers redefines the pilgrimage to Truth: the first step is to plough. The half-acre by the highway becomes an image of the whole social order."
+    },
+    {
+     "ref": "B.VI",
+     "quote": "Hunger in haste thoo\nHente Wastour by the wombe,",
+     "note": "Hunger takes Waster by the belly. Langland's personifications are physical and violent, and the alliteration (h, w) gives the moment its force."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Passus VII: The Pardon",
+   "lines": "B-text, Passus VII",
+   "section": 6,
+   "summary": [
+    "Truth hears of Piers's labour and sends him a pardon 'a pena et a culpa', from punishment and from guilt, for himself and his heirs. Kings, knights and bishops who rule justly share in it; merchants receive it only in the margin, lawyers who take money from the poor are left out, and false beggars are excluded.",
+    "A priest asks to read the pardon. It contains only two lines, from the Athanasian Creed: those who have done good shall go into eternal life, those who have done evil into eternal fire. The priest declares that he can find no pardon here. Piers 'for pure tene' (out of sheer anger or vexation) tears it in two, quotes Psalm 23, and vows to cease his sowing and turn to prayer and penance, citing 'ne soliciti sitis', 'be not anxious'. The priest mocks his learning, they quarrel, and Will wakes.",
+    "Awake on the Malvern Hills, Will reflects on dreams, citing Daniel and Joseph, and on the value of pardons. He concludes that papal indulgences have power, but that on the Day of Judgement doing well will count for more than a sackful of bulls."
+   ],
+   "analysis": [
+    "The tearing of the pardon is the most debated moment in the poem. Some readers see Piers rejecting the pardon itself; others, that he rejects the priest's legalism or the commercial culture of indulgences, or that he accepts the pardon's demand and tears up the hope of being saved by anything other than doing well. Others again stress that the scene marks Piers's own conversion from active labour to a life of penance [[frank1957]] [[simpson2007]] [[burrow1993]].",
+    "Langland himself seems to have found the scene problematic: the C-text omits the tearing altogether. The disappearance of the gesture is one of the clearest instances of authorial revision, and it has often been connected with the use of Piers's name and language in the rising of 1381 [[justice1994]]."
+   ],
+   "key": [
+    {
+     "ref": "B.VII",
+     "quote": "Et qui bona egerunt, ibunt in vitam eternam.",
+     "note": "The text of the pardon, from the Athanasian Creed. Its content is not forgiveness but a statement of the law of reward, which is why the priest finds no pardon in it."
+    },
+    {
+     "ref": "B.VII",
+     "quote": "And Piers for pure tene\nPulled it a-tweyne,",
+     "note": "Piers tears the pardon. 'Tene' means vexation, anger or grief; the word leaves the motive open, and critics have read the gesture in very different ways."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Passus VIII: The Search for Dowel Begins",
+   "lines": "B-text, Passus VIII",
+   "section": 7,
+   "summary": [
+    "Dressed in russet, Will wanders all summer looking for Dowel. Two Franciscan friars tell him that Dowel lives with them. When he objects that even the just man sins seven times a day, one explains through the parable of a man in a rocking boat: he may stumble but does not fall, because the boat (charity) keeps him safe. Will is not satisfied.",
+    "Lying under a tree, he falls asleep and dreams. A tall man very like himself, called Thought, defines Dowel, Dobet and Dobest. Dowel is the honest labouring life; Dobet adds teaching, almsgiving and patience; Dobest bears a bishop's crozier to drive the wicked away. Dowel and Dobet have crowned a king to protect them. Will is still dissatisfied, and Thought leads him to Wit."
+   ],
+   "analysis": [
+    "Passus VIII begins the second great section of the poem, the Vita, and replaces the social quest for Truth with a personal quest for the meaning of three terms. 'Dowel' grows directly out of the pardon's 'qui bona egerunt': if salvation depends on doing well, Will must know what doing well is. The terms have been read as the active, contemplative and mixed lives, as stages of spiritual growth, or as the ascending offices of lay people, clergy and bishops; Langland's teachers keep redefining them [[frank1957]] [[simpson2007]].",
+    "Thought, who looks like Will, is the first of a series of faculties of the mind (Thought, Wit, Study, Imaginatif, Anima) that make the Vita an inward journey. The friars' complacency introduces a satire that will grow until, in the last passus, the friars destroy the Church from within."
+   ],
+   "key": [
+    {
+     "ref": "B.VIII",
+     "quote": "\"Do-wel and Do-bet,\nAnd Do-best the thridde,\" quod he,\n\"Arn thre fair vertues,\nAnd ben noght fer to fynde.",
+     "note": "Thought gives the first definition of the poem's three key terms. The confident tone contrasts with Will's growing confusion as definition follows definition."
+    },
+    {
+     "ref": "B.VIII",
+     "quote": "Two freres I mette,\nMaistres of the menours,\nMen of grete witte.",
+     "note": "The Franciscans, highly educated 'masters', are the first authorities Will consults in the Vita. Their learning will not give him the knowledge he wants."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Passus IX: Wit and the Castle of Kynde",
+   "lines": "B-text, Passus IX",
+   "section": 8,
+   "summary": [
+    "Wit tells Will that Dowel lives in a castle made by Kynde (Nature, and in the poem God as creator) of earth, air, wind and water. In it lives the lady Anima, the soul, whom an enemy wishes to seize. Dowel, Dobet and Dobest protect her, and the constable of the castle is Inwit, conscience or reason, with his sons Seewell, Saywell, Hearwell, Workwell and Godfrey Gowell.",
+    "Wit then discusses how Inwit fails in fools, children and the poor, and how the Church and society should care for them. He turns to marriage, condemns unequal and mercenary unions and the offspring of Cain, and ends with a new definition: Dowel is to fear God, Dobet to suffer, and Dobest comes from both and brings down the proud."
+   ],
+   "analysis": [
+    "Wit's allegory of the castle of the body uses a familiar medieval form to make the search for Dowel a matter of the soul's defence. 'Kynde' is one of Langland's richest words: it can mean nature, kind, kinship, natural feeling, and God himself as Creator. The poem's ideal of 'kynde knowyng' now acquires a theological basis [[simpson2007]].",
+    "The long section on marriage and lawful birth seems a digression, but it reflects the poem's concern with order and legitimacy, the same concern that animated the dispute over whom Meed should marry."
+   ],
+   "key": [
+    {
+     "ref": "B.IX",
+     "quote": "In a castel that Kynde made\nOf four kynnes thynges;",
+     "note": "The body as a castle made of the four elements. The pun on 'Kynde' and 'kynnes' (kinds) is typical of Langland's wordplay."
+    },
+    {
+     "ref": "B.IX",
+     "quote": "And Do-bet to suffre,\nAnd so cometh Do-best of bothe,",
+     "note": "Wit's final definition makes suffering, patient endurance, the content of Dobet, an idea that Patience will develop in Passus XIII and XIV."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Passus X: Dame Study, Clergy and Scripture",
+   "lines": "B-text, Passus X",
+   "section": 9,
+   "summary": [
+    "Wit's wife, Dame Study, is angry that he has taught such a fool. She attacks those who debate the Trinity at feasts while the poor starve at the gate, and lords who eat privately in their chambers. Softened by Wit's humility, she sends Will to her cousin Clergy (learning) and his wife Scripture.",
+    "Clergy gives yet another definition of Dowel and launches a satire of corrupt religious, prophesying that a king will one day reform the monks. Will, however, challenges the value of learning. Solomon and Aristotle, he argues, were wise yet are thought to be damned, while the thief on the cross, Mary Magdalene and David were saved. The simple and unlearned seem to reach heaven more easily than clerks, who keep 'Christ's treasure', the souls of men, and yet fall into sin."
+   ],
+   "analysis": [
+    "The Study episode is a critique of theological speculation divorced from charity, and it reflects the intellectual climate of the later fourteenth century, when questions of predestination and grace were hotly debated in the universities. Will's argument about Solomon and Aristotle raises the problem of salvation outside the Church, which will return with Trajan [[simpson2007]] [[cole2014]].",
+    "Clergy's prophecy of a king who will chastise the abbots was read in the sixteenth century as a prophecy of Henry VIII's dissolution of the monasteries, one reason Protestant readers valued the poem [[benson2004]]."
+   ],
+   "key": [
+    {
+     "ref": "B.X",
+     "quote": "Thanne hadde Wit a wif,\nWas hote dame Studie,\nThat lene was of lere,\nAnd of liche bothe;",
+     "note": "Study is lean in face and body, an image of the scholar's austerity, and her anger is comic as well as fierce."
+    },
+    {
+     "ref": "B.X",
+     "quote": "As clerkes of holy chirche\nThat kepen Cristes tresor,",
+     "note": "Will's argument ends with the scandal that the guardians of souls, the clergy, fall into sin as deeply as the unlearned, or more."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Passus XI: Fortune, Trajan and the Vision of Kynde",
+   "lines": "B-text, Passus XI",
+   "section": 10,
+   "summary": [
+    "Scripture rebukes Will in Latin: many know many things but do not know themselves. Weeping with anger, he falls into a dream within the dream. Fortune carries him to the land of longing and shows him the world in a mirror called Middle-earth; he follows Concupiscence of the Flesh and Covetousness of the Eyes for forty-five years, until Old Age warns him. He falls out with the friars, who court him while he is prosperous and despise him when he says that people should be buried in their own parish.",
+    "The Roman emperor Trajan breaks in, 'broken out of hell'. He tells how he, a pagan, was saved not by prayers or masses but by his love and truth, through the tears of Pope Gregory. The passus then praises poverty and patience, and argues that all people are Christ's brothers.",
+    "Kynde (Nature) leads Will to a mountain called Middle-earth to see the wonders of creation. He marvels that Reason governs the beasts and birds but not man. When he rebukes Reason for this, Reason replies that God suffers patiently, and that Will should do so too. Shamed, Will wakes from the inner dream, sees a figure beside him, and follows him to ask his name."
+   ],
+   "analysis": [
+    "Trajan is the poem's most startling answer to the question of the virtuous heathen. The legend of Gregory's intercession for Trajan was well known, but Langland gives it a radical emphasis: the emperor was saved by 'pure truth', by love and justice, without baptism. How far the poem endorses the speaker, and where exactly his speech ends, has long been debated [[simpson2007]] [[cole2014]].",
+    "The vision of Kynde on the mountain is one of the few moments of pure wonder in the poem. Will sees nature ordered by reason and asks why humanity alone is disordered; the answer, patience, redirects the theodicy of the inner dream back to his own conduct."
+   ],
+   "key": [
+    {
+     "ref": "B.XI",
+     "quote": "And in a mirour that highte middel-erthe\nShe made me to biholde.",
+     "note": "Fortune's mirror shows the world as an object of desire. 'Middle-earth' (the human world between heaven and hell) is also the name of the mountain from which Kynde later shows Will creation."
+    },
+    {
+     "ref": "B.XI",
+     "quote": "\"Lawe, withouten love,\" quod Trojanus,\n\"Ley ther a bene,",
+     "note": "Trajan says that law without love is not worth a bean. The line sums up a principle the poem will carry through to the debate of the four daughters of God in Passus XVIII."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Passus XII: Imaginatif",
+   "lines": "B-text, Passus XII",
+   "section": 11,
+   "summary": [
+    "The stranger is Imaginatif, the faculty of memory and reflection, who has followed Will for forty-five years. He reproaches him for wasting his time 'meddling with makings', writing poetry, when there are books enough to tell what Dowel is. Will defends himself: if anyone could tell him plainly what Dowel, Dobet and Dobest were, he would stop writing and pray.",
+    "Imaginatif then defends what Will has attacked. Clergy and kynde wit both come of God; learning, though it cannot save by itself, is like a mirror and a lamp for the soul. The thief on the cross was saved, but sits low in heaven; the righteous pagan may be saved by other forms of baptism than water. Imaginatif concludes that Trajan was saved by truth, and vanishes."
+   ],
+   "analysis": [
+    "Passus XII is the poem's most explicit reflection on its own making. Imaginatif's charge, and Will's reply, have been read as Langland's defence of poetry as a means of seeking, rather than possessing, the knowledge of salvation. The episode is central to the view that the poem is a process of thinking in verse rather than a finished statement [[burrow1993]] [[justice1997]].",
+    "Imaginatif's patient replies correct the anti-intellectual extremes of Passus X–XI. Learning is not useless but limited; grace is needed to complete it. This balance prepares for the turn from argument to love in the next visions [[simpson2007]]."
+   ],
+   "key": [
+    {
+     "ref": "B.XII",
+     "quote": "\"Iam Ymaginatif,\" quod he,\n\"Ydel was I nevere,",
+     "note": "Imaginatif names himself. In medieval faculty psychology the imagination forms images from experience and allows the mind to reflect on the past and anticipate the future."
+    },
+    {
+     "ref": "B.XII",
+     "quote": "\"Clergie and kynde wit\nCometh of sighte and techyng;",
+     "note": "Imaginatif distinguishes learning, which comes from teaching, from natural knowledge, which comes from seeing; both are gifts of God."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Passus XIII: The Feast of Conscience and Haukyn",
+   "lines": "B-text, Passus XIII",
+   "section": 12,
+   "summary": [
+    "Will wakes and wanders for many years as a mendicant, then dreams again. Conscience invites him to dinner with Clergy and a Doctor of Divinity, a friar, who eats rich dishes while Will and Patience, dressed as a pilgrim, are served penitential food of psalms and scriptural texts. The doctor preaches abstinence but gorges himself, and Will longs to challenge him.",
+    "Asked to define Dowel, the doctor says Dowel is to do as clerks teach. Patience offers a riddle of his own: Disce (learn), Doce (teach), Dilige (love), love being taught him by a lady called Love. Conscience, moved, leaves the feast to go on pilgrimage with Patience, saying farewell to Clergy.",
+    "On their way they meet Haukyn the Active Man, a wafer-seller and minstrel, who claims to provide the bread of the world. His coat, the coat of baptism, is stained with every kind of sin, and Conscience courteously asks why he has not washed it."
+   ],
+   "analysis": [
+    "The feast is a brilliant satirical set piece, contrasting the learned friar's gluttony with the spiritual food of Patience. It also marks a change in Will's teachers: from faculties of the mind and authorities of learning to virtues that must be lived. Conscience's departure from Clergy suggests that learning alone cannot lead to Dowel [[simpson2007]].",
+    "Haukyn is a figure of the active life of lay people in the world. His sins are presented through the stains on his coat, a vivid image that recalls the confession of the sins in Passus V and shows how the active life is constantly soiled by the business of getting a living [[burrow1993]]."
+   ],
+   "key": [
+    {
+     "ref": "B.XIII",
+     "quote": "Disce, and Do-wel;\nDoce, and Do-bet;\nDilige, and Do-best;",
+     "note": "Patience's triad redefines the three terms as learning, teaching and loving. It is one of the clearest summaries of the poem's ascending scheme."
+    },
+    {
+     "ref": "B.XIII",
+     "quote": "Thus Haukyn the actif man\nHadde y-soiled his cote,",
+     "note": "Haukyn's coat, the garment of baptism, carries the marks of his sins. The image unites the personal and the social: the stains are those of trade and talk."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Passus XIV: Patience and Poverty",
+   "lines": "B-text, Passus XIV",
+   "section": 13,
+   "summary": [
+    "Haukyn excuses himself: he has only one coat, which he sleeps in, and a household to feed. Conscience teaches him the three parts of penance, contrition, confession and satisfaction. Patience offers him spiritual bread, 'fiat voluntas tua', and argues that God provides for all creatures.",
+    "Patience praises patient poverty in a long discourse, ending with a Latin definition of poverty as 'a hateful good', a removal of cares and a possession without challenge. Haukyn, understanding at last, wishes he had died after baptism, laments his sins and weeps, and the dreamer wakes."
+   ],
+   "analysis": [
+    "Passus XIV completes the Vita de Dowel. Patience's praise of poverty is not a social programme but a spiritual ideal, rooted in the Franciscan tradition that the friars of the poem have betrayed. Haukyn's tears are one of the few moments of full repentance in the poem [[simpson2007]].",
+    "The ideal of patient poverty also addresses the problem of the half-acre. Piers's vow to cease sowing and not be anxious ('ne soliciti sitis') in Passus VII is here developed into a doctrine of trust in God's provision. Critics differ over whether this resolves the earlier tension between labour and contemplation or simply restates it [[frank1957]]."
+   ],
+   "key": [
+    {
+     "ref": "B.XIV",
+     "quote": "Ergo paupertas est odibile bonum.",
+     "note": "Patience's Latin conclusion: 'therefore poverty is a hateful good'. The paradox is from a well-known medieval definition attributed to the philosopher Secundus."
+    },
+    {
+     "ref": "B.XIV",
+     "quote": "And cride mercy faste,\nAnd wepte and wailede;\nAnd therwith I awakede.",
+     "note": "Haukyn's weeping wakes the dreamer. The vision ends not with understanding but with grief, the beginning of contrition."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Passus XV: Anima and Charity",
+   "lines": "B-text, Passus XV",
+   "section": 14,
+   "summary": [
+    "After waking, Will becomes half-mad, scorned as a fool because he will not honour rich people. Asleep again, he meets a strange creature without tongue or teeth: Anima, the soul, who explains her many names, Animus, Mens, Memoria, Ratio, Sensus, Conscience, Amor, Liberum Arbitrium and Spiritus, according to her functions.",
+    "Will asks what Charity is. Anima replies that it is found neither in the rich nor in the learned, but can be known only through Piers the Plowman, and identifies Piers with Christ ('Petrus, i. Christus', as this text has it). Earlier in the conversation the dreamer is named 'Longe-wille'. Anima then denounces the corruption of the clergy, the friars and the endowment of the Church, blaming the Donation of Constantine for poisoning it, and ends by urging the conversion of Jews and Saracens."
+   ],
+   "analysis": [
+    "Passus XV begins the Vita de Dobet. The identification of Piers with Christ marks a decisive change: Piers is no longer simply a ploughman but a figure through whom the divine can be seen in human form. The character of Piers develops through the poem, from labourer to teacher to the human nature of Christ to the founder of the Church; his identity has been debated throughout modern criticism [[simpson2007]] [[cole2014]].",
+    "The line in which the dreamer calls himself 'Longe-wille' has long been taken as an authorial signature: read together with 'Wille' and 'land', it spells Langland's name. It is the main internal evidence for the poet's identity [[kane1965]]."
+   ],
+   "key": [
+    {
+     "ref": "B.XV",
+     "quote": "\"I have lyved in londe,\" quod he,\n\"My name is Longe-wille;",
+     "note": "In this text the line is assigned to 'he', though in many manuscripts and modern editions the dreamer speaks it ('quod I'). 'Lond' and 'Longe-wille' have been read as a cryptogram of the poet's name."
+    },
+    {
+     "ref": "B.XV",
+     "quote": "\"The whiles I quikne the cors,\" quod he,\n\"Called am I Anima;",
+     "note": "Anima lists the names the soul takes according to its functions. The scholastic catalogue reflects Langland's interest in the faculties of the mind."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Passus XVI: The Tree of Charity and Abraham",
+   "lines": "B-text, Passus XVI",
+   "section": 15,
+   "summary": [
+    "Anima describes the Tree of Charity, rooted in the heart: mercy is the root, pity the trunk, the leaves are faithful words and the blossoms gentle speech, and its name is Patience. When Will hears Piers named, he swoons into an inner dream in which Piers shows him the tree, propped by three props, the Trinity, against the winds of the world, the flesh and the devil.",
+    "Will asks for an apple. Piers shakes the tree, and the fruit, Adam, Abraham, Isaiah, Samson, John the Baptist and the other patriarchs and prophets, falls and is carried off by the devil to hell. Piers, 'for pure tene', strikes at the devil with the prop called the Son. The dream then moves swiftly through the Annunciation, the life of Christ and the Passion.",
+    "Will wakes and searches for Piers. He meets Abraham, who calls himself Faith and is a herald seeking a knight. Abraham explains the Trinity by analogy with human families and tells how he received three men and gave them food; he carries in his bosom the souls of the patriarchs waiting for deliverance. As they talk, Will sees another man running towards them."
+   ],
+   "analysis": [
+    "The Tree of Charity is one of the most complex allegories in the poem, shifting between a moral image of the virtues and a historical image of salvation history. The inner dream allows Langland to move from the timeless allegory to the Gospel narrative, and Piers's blow with the second prop becomes the Incarnation itself [[simpson2007]].",
+    "The phrase 'for pure tene' repeats the words used for Piers's tearing of the pardon in Passus VII, linking the two great gestures of the poem. Abraham, Moses (Spes) and the Samaritan in Passus XVII present Faith, Hope and Charity as a sequence of historical revelations: the faith of the patriarchs, the law of Moses and the love of Christ."
+   ],
+   "key": [
+    {
+     "ref": "B.XVI",
+     "quote": "\"It is a ful trie tree,\" quod he,\n\"Trewely to telle;\nMercy is the more therof,\nThe myddul stok is ruthe;",
+     "note": "Anima begins the allegory of the Tree of Charity. 'More' means root, and 'ruthe' pity."
+    },
+    {
+     "ref": "B.XVI",
+     "quote": "\"Iam Feith,\" quod that freke,\n\"It falleth noght to lye,",
+     "note": "Abraham names himself as Faith. The personification is both an abstract virtue and a figure from sacred history."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Passus XVII: Hope and the Good Samaritan",
+   "lines": "B-text, Passus XVII",
+   "section": 16,
+   "summary": [
+    "The runner is Spes (Hope), Moses, who carries the law on stone, 'love God and your neighbour'. As Faith and Hope argue over which teaching is better, they meet a man wounded by thieves on the road from Jerusalem to Jericho. Both pass him by. A Samaritan on a mule dismounts, binds his wounds with wine and oil, and carries him to a grange called 'Lex Christi', where he lodges him at an inn.",
+    "The Samaritan tells Will that neither Faith nor Hope can cure the man without his blood. He explains the Trinity through the image of a hand, in which the Father is the fist, the Son the finger and the Holy Spirit the palm, and through the image of a torch, in which wax, wick and flame make one light. The sin against the Holy Spirit is unkindness, the quenching of the flame of love. The Samaritan then rides off on his mule, and Will wakes."
+   ],
+   "analysis": [
+    "The parable of the Good Samaritan is here made the centre of salvation history: the wounded man is humanity, Faith and Hope (the old law) cannot heal it, and the Samaritan (Christ, charity) can. Langland's treatment combines Gospel narrative, allegory and the traditional patristic interpretation of the parable [[simpson2007]].",
+    "The Samaritan's analogies of hand and torch are among the most memorable passages of popular theology in English. Their emphasis on 'kyndenesse' and 'unkyndenesse' gives the moral centre of the poem: the worst sin is a failure of natural love, of fellow feeling, since that quenches the Holy Spirit."
+   ],
+   "key": [
+    {
+     "ref": "B.XVII",
+     "quote": "Thanne seighe we a Samaritan\nSittynge on a mule,",
+     "note": "The Samaritan enters the poem riding towards Jerusalem. In Passus XVIII he will become the knight who jousts in Jerusalem."
+    },
+    {
+     "ref": "B.XVII",
+     "quote": "\"The fader was first as a fust,\nWith o fynger foldynge;",
+     "note": "The Samaritan's image of the Trinity as a hand: the fist, the finger and the palm are three yet one."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "Passus XVIII: The Passion and the Harrowing of Hell",
+   "lines": "B-text, Passus XVIII",
+   "section": 17,
+   "summary": [
+    "Weary and wet-shod, Will goes forth like a careless wanderer and sleeps until Palm Sunday. He sees one like the Samaritan and in part like Piers riding barefoot on an ass to Jerusalem 'to joust'. Faith explains that Jesus will joust in Piers's arms, in his helmet and coat of mail, 'humana natura'. Will then sees the trial, crucifixion and death of Christ, and the blind knight Longinus, who pierces his side and is healed by his blood.",
+    "Will descends into darkness and witnesses the debate of the four daughters of God. Mercy and Truth, Righteousness and Peace argue whether humanity can be saved; Truth and Righteousness say no, Mercy and Peace that Christ's death will save them. A voice commands the gates of hell to open, and Satan, Lucifer and the devils argue whether they hold mankind justly.",
+    "Christ enters hell and defends his right: as humanity was deceived by guile, so it is won back by guile; he will drink the 'drink of love' and save his kin. He releases the souls of the righteous. The four daughters are reconciled, kiss and sing, and the Easter bells wake the dreamer, who calls his wife Kit and daughter Calote to creep to the cross."
+   ],
+   "analysis": [
+    "Passus XVIII is widely regarded as the poetic summit of Piers Plowman. Langland fuses chivalric romance, the cycle drama, the debate poem and liturgical drama in a single movement. Christ as a knight jousting in Piers's armour expresses the doctrine of the Incarnation: God fights in human nature [[simpson2007]] [[cole2014]].",
+    "Christ's speech in hell raises the question of universal salvation: he promises mercy to his 'kin' and suggests that he may save more than the strict doctrine allows. Critics differ on how far Langland goes; but the passus ends in joy rather than doctrine, with the reconciliation of the four daughters and the dreamer's family at the Easter liturgy [[frank1957]]."
+   ],
+   "key": [
+    {
+     "ref": "B.XVIII",
+     "quote": "This Jhesus of his gentries\nWol juste in Piers armes,\nIn his helm and in his haubergeon,\nHumana natura;",
+     "note": "Faith explains the jousting knight. Piers's 'arms' are human nature; Christ fights incognito in them, as a knight in a romance."
+    },
+    {
+     "ref": "B.XVIII",
+     "quote": "\"For I that am lord of lif,\nLove is my drynke;",
+     "note": "Christ's speech in hell turns his thirst on the cross into a thirst for human souls, the 'drink of love'."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "title": "Passus XIX: Pentecost and the Barn of Unity",
+   "lines": "B-text, Passus XIX",
+   "section": 18,
+   "summary": [
+    "Will wakes, writes down his dream, and goes to Mass. During the offertory he falls asleep and sees Piers, bloody and bearing a cross, and asks whether it is Jesus or Piers. Conscience explains: these are Piers's arms, but the one who comes is Christ, Knight, King and Conqueror. He tells the life of Christ as Dowel, Dobet and Dobest.",
+    "Will sees the Holy Spirit descending at Pentecost. Grace gives everyone gifts and crafts and appoints Piers as his steward and ploughman to 'till truth'. Piers ploughs with four oxen, the evangelists, and harrows with four horses, the Latin Fathers, and sows the seeds of the cardinal virtues. Grace builds him a barn called Unity, Holy Church.",
+    "Pride gathers an army against Unity. Conscience calls all Christians into the barn and invites them to communion, but only if they 'pay what they owe' ('redde quod debes'). A brewer refuses, a lewd vicar complains of the cardinals, and a lord and a king take what they want. Will wakes."
+   ],
+   "analysis": [
+    "Passus XIX begins the Vita de Dobest, and moves from the life of Christ to the history of the Church. The image of Piers as ploughman returns, now on a cosmic scale: the half-acre has become the field of Christendom. The repetition of the agricultural imagery shows how carefully Langland built his poem [[simpson2007]] [[burrow1993]].",
+    "The communion scene makes 'redde quod debes' the poem's final demand: restitution, paying what one owes, is the condition of forgiveness. The refusal of the brewer, the vicar, the lord and the king shows that the Church's unity depends on a justice that society refuses to practise."
+   ],
+   "key": [
+    {
+     "ref": "B.XIX",
+     "quote": "Grace gaf Piers a teeme\nOf foure grete oxen.",
+     "note": "The ploughing of the half-acre returns as a spiritual allegory. The four oxen are the evangelists, Luke, Mark, Matthew and John."
+    },
+    {
+     "ref": "B.XIX",
+     "quote": "And called that hous Unitee,\nHoly chirche on Englisshe.",
+     "note": "Grace's barn, made from Christ's cross and passion, is the Church as the community of believers."
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "title": "Passus XX: Antichrist and the Siege of Unity",
+   "lines": "B-text, Passus XX",
+   "section": 19,
+   "summary": [
+    "Will wakes, depressed, and meets Need, who argues that need has no law: a man may take what he needs to live. Will falls asleep again and sees Antichrist overturning the crop of Truth. Friars and religious welcome him, and most people follow his banner. Conscience calls on Kynde to defend Unity.",
+    "Kynde sends diseases, Old Age and Death against humanity. Old Age passes over the dreamer's head, making him bald, deaf and impotent. Will asks Kynde what craft is best to learn, and Kynde answers: 'Learn to love'.",
+    "Unity is besieged by the sins. Conscience calls the friars to help, but they cannot do their work properly. When Contrition is sick, the people ask for a gentler physician, Friar Flatterer, also known as Sir Penetrans-domos. He enters Unity and drugs Contrition, who forgets to weep for his sins. Conscience, abandoned, sets out on pilgrimage to seek Piers the Plowman and cries out for Grace, and the dreamer wakes."
+   ],
+   "analysis": [
+    "The ending of Piers Plowman is one of the most striking in medieval literature. After the triumph of the Harrowing of Hell and the founding of the Church, the poem ends with the Church collapsing from within and Conscience setting out once more on a search. The ending has been read as apocalyptic, as a call for reform, or as a recognition that the quest for Truth must begin again in every generation [[bloomfield1962]] [[kerbyfulton1990]].",
+    "Need's argument at the opening has often been read as dangerous: it echoes the friars' defence of mendicancy and the rebels' claims of 1381, and it complicates the poem's ideal of restitution [[justice1994]]. Kynde's answer, 'Learn to love', is the closest the poem comes to a definitive statement."
+   ],
+   "key": [
+    {
+     "ref": "B.XX",
+     "quote": "\"Lerne to love,\" quod Kynde,\n\"And leef of alle othere.\"",
+     "note": "Kynde's advice to the aged dreamer is the shortest answer in the poem to the question that has driven it. It is spoken amid the ruin of Unity."
+    },
+    {
+     "ref": "B.XX",
+     "quote": "And siththe he gradde after Grace,\nTil I gan awake.",
+     "note": "The last lines of the poem: Conscience cries out for Grace and the dreamer wakes. The poem ends not with a vision of heaven but with a renewed search."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Will",
+   "side": "The dreamer",
+   "text": "The narrator and dreamer, restless, argumentative and often foolish. He falls asleep repeatedly to dream, and his quest for Truth and Dowel gives the poem its structure. His name is also that of the faculty of the will; he is once called 'Longe-wille', and has a wife Kit and a daughter Calote. Whether he is a portrait of the poet is debated."
+  },
+  {
+   "name": "Piers the Plowman",
+   "side": "Visio and Vita",
+   "text": "A ploughman who appears in Passus V to guide the pilgrims to Truth. He organises the ploughing of the half-acre, receives and tears the pardon, and then disappears for much of the Vita. He returns as a mysterious figure associated with Christ ('Petrus, i. Christus'), in whose armour Christ jousts, and as the founder of the Church in Passus XIX. The poem ends with a search for him."
+  },
+  {
+   "name": "Holy Church",
+   "side": "Visio",
+   "text": "The lady in linen who explains the vision of the field in Passus I and teaches that Truth is the best treasure and that love is the medicine of heaven. She is Meed's rival."
+  },
+  {
+   "name": "Lady Meed",
+   "side": "Visio",
+   "text": "Reward, payment, bribery: a beautiful and richly dressed woman whom False wishes to marry and the king to marry to Conscience. Her defence of herself in Passus III is persuasive, and the poem's treatment of her raises the question of how money can serve justice."
+  },
+  {
+   "name": "Conscience",
+   "side": "Visio and Vita",
+   "text": "The king's adviser who refuses to marry Meed, later host of the feast in Passus XIII, and in the last passus the defender of Unity. His departure on pilgrimage to find Piers ends the poem."
+  },
+  {
+   "name": "Reason",
+   "side": "Visio",
+   "text": "Counsellor of the king who refuses to show mercy to Wrong without reform, and preacher of the sermon to the field in Passus V. In Passus XI Will rebukes him for not governing man as he governs the beasts."
+  },
+  {
+   "name": "Hunger",
+   "side": "Visio",
+   "text": "The personification of famine, called by Piers to force the wasters to work on the half-acre. His advice about beggars reflects contemporary debates about labour and charity."
+  },
+  {
+   "name": "The Seven Deadly Sins",
+   "side": "Visio",
+   "text": "Pride, Lechery, Envy, Wrath, Covetousness, Gluttony and Sloth, who confess before Repentance in Passus V. Each is presented as a vivid individual, such as Gluttony in Beton's tavern or Sloth with his rhymes of Robin Hood."
+  },
+  {
+   "name": "Wit, Study, Clergy and Scripture",
+   "side": "Vita",
+   "text": "Personifications of learning who instruct Will about Dowel in Passus IX–XI. Dame Study is Wit's wife; Clergy (learning) and Scripture are husband and wife. Their teaching provokes Will's doubts about the value of learning for salvation."
+  },
+  {
+   "name": "Imaginatif",
+   "side": "Vita",
+   "text": "The faculty of memory and reflection, who in Passus XII reproaches Will for writing poetry and defends the value of learning and the possibility of salvation for the righteous heathen."
+  },
+  {
+   "name": "Patience",
+   "side": "Vita",
+   "text": "The pilgrim who shares Will's penitential meal at the feast in Passus XIII, offers the triad Disce, Doce, Dilige, and teaches Haukyn the value of patient poverty."
+  },
+  {
+   "name": "Haukyn the Active Man",
+   "side": "Vita",
+   "text": "A wafer-seller and minstrel whose coat is stained with sins, representing the active life of lay people in the world. His tears at the end of Passus XIV mark his repentance."
+  },
+  {
+   "name": "Anima",
+   "side": "Vita",
+   "text": "The soul, with its many names according to its functions, who teaches Will about charity and the corruption of the clergy in Passus XV and describes the Tree of Charity in Passus XVI."
+  },
+  {
+   "name": "Abraham (Faith), Moses (Spes) and the Samaritan",
+   "side": "Vita",
+   "text": "Figures of Faith, Hope and Charity in Passus XVI–XVII. Abraham and Moses pass by a wounded man; the Samaritan heals him and explains the Trinity. The Samaritan is identified with Christ, who jousts in Jerusalem in Passus XVIII."
+  },
+  {
+   "name": "Trajan",
+   "side": "Vita",
+   "text": "The Roman emperor, a pagan saved by his truth and justice through the prayers of Pope Gregory, who breaks into Passus XI to show that love and truth can save outside the Church."
+  },
+  {
+   "name": "Kynde",
+   "side": "Vita",
+   "text": "Nature, and God as creator. Kynde shows Will the wonders of creation in Passus XI and sends Old Age and Death against humanity in Passus XX, where he tells the dreamer to 'learn to love'."
+  },
+  {
+   "name": "Need",
+   "side": "Vita",
+   "text": "The figure who meets Will at the opening of Passus XX and argues that necessity has no law. His speech has been read as a dangerous argument for the right of the needy, and of the friars, to take what they lack."
+  },
+  {
+   "name": "Antichrist and Friar Flatterer",
+   "side": "Vita",
+   "text": "The enemies of Unity in Passus XX. Antichrist overturns the crop of Truth; Friar Flatterer, alias Sir Penetrans-domos, enters the barn of Unity and drugs Contrition, so that the Church falls from within."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Truth",
+   "text": [
+    "Truth (treuthe) is the poem's central word. It means God, fidelity, honesty, justice and doctrine, and Langland plays constantly on these senses. The quest for Truth in the Visio is both a social and a spiritual one: a just society and a saved soul require the same virtue.",
+    "The Vita deepens the theme, moving from truth as fidelity to the law towards truth as love. Trajan is saved by his truth, and the four daughters of God, Truth among them, are reconciled by Christ's love [[simpson2007]]."
+   ]
+  },
+  {
+   "title": "Reward, money and justice",
+   "text": [
+    "Lady Meed raises the question of how society should reward work and service. The poem distinguishes heavenly reward from corrupt payment and both from the 'measurable hire' of wages. In Passus XIX the theme returns as 'redde quod debes', the demand that every Christian pay what he owes before he can be forgiven.",
+    "The poem's economic thought is rooted in the crisis of labour after the Black Death and in debates about poverty, mendicancy and almsgiving [[justice1997]] [[galloway2006]]."
+   ]
+  },
+  {
+   "title": "Labour and the estates",
+   "text": [
+    "The ploughing of the half-acre presents an ideal of a society in which each estate does its proper work. The ideal is constantly frustrated by wasters, false beggars and corrupt clergy, and the poem asks what to do with those who will not work.",
+    "Piers's turn from labour to prayer, and Patience's praise of poverty, set the active life against the life of contemplation. In Passus XIX labour returns transformed, as the spiritual ploughing of the Church [[simpson2007]]."
+   ]
+  },
+  {
+   "title": "Learning and kynde knowyng",
+   "text": [
+    "Will wants a 'kynde knowyng', a natural, experiential knowledge of truth, and repeatedly finds that the authorities he consults cannot give it to him. The Vita examines the value of learning, Clergy and Scripture, and asks whether the learned are any closer to salvation than the simple.",
+    "Imaginatif's answer is balanced: learning is a gift of God and a light, but it cannot save without grace and love. The theme is also a reflection on the poem itself as a form of seeking [[burrow1993]]."
+   ]
+  },
+  {
+   "title": "Salvation and the righteous heathen",
+   "text": [
+    "Langland is unusually concerned with those outside the Church: Solomon and Aristotle, the thief on the cross, Trajan, the Jews and Saracens. The poem's answers vary, but its sympathies move towards a wide mercy, most strikingly in Trajan's salvation and Christ's speech in hell.",
+    "How far Langland goes towards universal salvation has been much debated, but the theme shows his willingness to test official doctrine against the demands of justice and love [[cole2014]]."
+   ]
+  },
+  {
+   "title": "The Church and its reform",
+   "text": [
+    "The poem's satire of the clergy, especially of the friars, is relentless. Friars absolve for money, preach for gain, and in the end betray Unity. Bishops, priests and monks are attacked for neglect and luxury, and the Donation of Constantine is blamed for poisoning the Church.",
+    "Yet the poem is not anticlerical in principle. It looks for reform from within, and its prophetic passages hope for a renewed clergy and a just king [[kerbyfulton1990]] [[bloomfield1962]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Dreaming and waking",
+   "text": "The B-text is built from eight dreams, two of them containing an inner dream (Passus XI and XVI). The waking intervals, in which Will wanders, reflects, writes and goes to Mass, matter as much as the dreams; the poem ends with a waking, not a vision."
+  },
+  {
+   "title": "Pilgrimage and the quest",
+   "text": "The poem begins with a search for Truth and ends with Conscience's pilgrimage to find Piers. Langland is critical of pilgrimage as a commercial practice but uses the quest as the governing form of his poem."
+  },
+  {
+   "title": "Personification and debate",
+   "text": "Abstract qualities (Meed, Conscience, Reason, Hunger, Patience) become characters who argue, eat, fight and travel. Much of the poem consists of dialogue and debate, a form well suited to its exploratory method."
+  },
+  {
+   "title": "Latin quotation",
+   "text": "Hundreds of Latin quotations from the Bible, the liturgy and the Fathers interrupt and support the English verse. They give authority to the speakers, but often become the subject of argument, as in the pardon scene and the dispute between Meed and Conscience."
+  },
+  {
+   "title": "Food and feasting",
+   "text": "Meals recur throughout the poem: the tavern of Gluttony, the food of the half-acre, the feast of Conscience with its penitential dishes, and the communion of Unity. Eating marks the boundary between need and excess and between bodily and spiritual nourishment."
+  },
+  {
+   "title": "Ploughing",
+   "text": "The ploughing of the half-acre returns at the end in the spiritual ploughing of Piers with the four evangelists and the four doctors of the Church, so that the poem's central image is transformed from labour to grace."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The tower and the dungeon",
+   "text": "In the Prologue's vision the tower of Truth on the hill and the dungeon of Wrong in the valley frame the field full of folk, an image of human life between heaven and hell."
+  },
+  {
+   "title": "Meed's clothing",
+   "text": "Meed's scarlet, fur, jewels and crown signify wealth and power, and recall the Whore of Babylon of Revelation."
+  },
+  {
+   "title": "The half-acre",
+   "text": "Piers's half-acre by the highway is a microcosm of society, in which each estate has its task; its cultivation and neglect show the health or sickness of the commonwealth."
+  },
+  {
+   "title": "The pardon",
+   "text": "Truth's pardon, consisting only of the words 'those who have done good shall go into eternal life', and the threat that follows, represents the law of reward. Its tearing is the poem's most enigmatic gesture."
+  },
+  {
+   "title": "Haukyn's coat",
+   "text": "The coat of baptism stained with sins symbolises the active life and its constant soiling by the business of the world."
+  },
+  {
+   "title": "The Tree of Charity",
+   "text": "The tree rooted in the heart, propped by the Trinity and bearing the patriarchs and prophets as fruit, symbolises both the growth of charity in the soul and the history of salvation."
+  },
+  {
+   "title": "The hand and the torch",
+   "text": "The Samaritan's images of the Trinity, the fist, finger and palm of a hand, and the wax, wick and flame of a torch, make the doctrine concrete and stress that unkindness quenches the Holy Spirit."
+  },
+  {
+   "title": "The barn of Unity",
+   "text": "The barn built by Grace to hold Piers's harvest is the Church as the community of believers; its siege and betrayal from within end the poem."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Authorship",
+   "text": [
+    "Until the early twentieth century the poem was usually attributed to a single author, William Langland. In 1906 John Manly argued that the A, B and C texts were the work of different authors, pointing to a 'lost leaf' that he thought explained a confusion in Passus V of the A-text. The argument set off a long debate.",
+    "George Kane's study of the evidence for authorship in 1965 restored the consensus for a single poet, and most scholars now accept that one man, William Langland, wrote and revised all three versions. Robert Adams has since examined the Rokele family records connected with the Dublin note [[manly1906]] [[kane1965]] [[hanna1993]] [[adams2013]]."
+   ],
+   "cite": [
+    "manly1906",
+    "kane1965",
+    "hanna1993",
+    "adams2013"
+   ]
+  },
+  {
+   "title": "The versions and their editing",
+   "text": [
+    "Skeat's parallel-text edition established the sequence A, B, C. The Athlone edition of Kane, Donaldson and Russell attempted to reconstruct each version by detailed analysis of scribal error, a method that has been both admired and challenged. The short Z-text, first edited in 1983, is accepted by some scholars as Langland's earliest draft and rejected by others.",
+    "More recently Lawrence Warner has argued that the early transmission of B and C was more tangled than the simple A–B–C model suggests, and Charlotte Brewer's history of the editing of the poem shows how editorial assumptions have shaped its reading [[skeat1886]] [[kanedonaldson1975]] [[russellkane1997]] [[schmidt1995]] [[brewer1996]] [[warner2011]]."
+   ],
+   "cite": [
+    "skeat1886",
+    "kanedonaldson1975",
+    "russellkane1997",
+    "schmidt1995",
+    "brewer1996",
+    "warner2011"
+   ]
+  },
+  {
+   "title": "The tearing of the pardon",
+   "text": [
+    "Why does Piers tear the pardon? Readers have argued that he rejects the pardon itself, the priest's interpretation, the system of indulgences, or the idea of salvation by works; or that he tears up a merely legal document in favour of its spirit, the call to do well.",
+    "The C-text's omission of the scene adds a further question: whether Langland found the gesture too open to misreading [[frank1957]] [[simpson2007]] [[burrow1993]] [[justice1994]]."
+   ],
+   "cite": [
+    "frank1957",
+    "simpson2007",
+    "burrow1993",
+    "justice1994"
+   ]
+  },
+  {
+   "title": "Dowel, Dobet and Dobest",
+   "text": [
+    "The three terms are defined differently by almost every teacher Will consults. Critics have read them as the active, contemplative and mixed lives, as stages of the spiritual life, as offices in the Church, or as successive revelations in salvation history.",
+    "Robert Worth Frank argued that the terms should be understood in relation to a scheme of salvation, and more recent critics stress that the shifting definitions are the point: the poem enacts a process of learning rather than providing a doctrine [[frank1957]] [[simpson2007]] [[burrow1993]]."
+   ],
+   "cite": [
+    "frank1957",
+    "simpson2007",
+    "burrow1993"
+   ]
+  },
+  {
+   "title": "Piers Plowman and 1381",
+   "text": [
+    "In the rising of 1381, letters attributed to the rebel priest John Ball and his associates, preserved by the chroniclers, called on 'Piers Plowman' to go to his work and used phrases such as 'do well and better'. The rebels evidently knew the poem or at least its language.",
+    "Steven Justice argued that the rebels read Langland's poem as a programme for action, and that some C-text revisions respond to this appropriation; Anne Hudson re-examined the relation of the poem and the revolt. Others are more cautious about how direct the connection was [[justice1994]] [[hudson1994]] [[dobson1983]] [[justice1997]]."
+   ],
+   "cite": [
+    "justice1994",
+    "hudson1994",
+    "dobson1983",
+    "justice1997"
+   ]
+  },
+  {
+   "title": "Apocalypse and reform",
+   "text": [
+    "The poem's prophetic passages and its ending with Antichrist have been read as apocalyptic. Morton Bloomfield saw the poem as a 'fourteenth-century apocalypse' concerned with the perfection of Christian society, and Kathryn Kerby-Fulton placed it in a tradition of reformist prophecy.",
+    "Others read the ending less as prophecy than as a moral recognition that the Church must constantly be reformed [[bloomfield1962]] [[kerbyfulton1990]] [[simpson2007]]."
+   ],
+   "cite": [
+    "bloomfield1962",
+    "kerbyfulton1990",
+    "simpson2007"
+   ]
+  },
+  {
+   "title": "Audience and reception",
+   "text": [
+    "Who read Piers Plowman? The manuscripts point to readers among the clergy, lawyers, civil servants and gentry, and the poem was soon imitated in a 'Piers Plowman tradition' of satirical and reforming poems. Its Protestant afterlife began with Robert Crowley's printed editions of 1550.",
+    "C. David Benson has argued for reading the poem less as the record of a single author's mind than as a work engaged with the public culture of late medieval England, its sermons, images and civic life [[benson2004]] [[justice1997]] [[warner2011]]."
+   ],
+   "cite": [
+    "benson2004",
+    "justice1997",
+    "warner2011"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "B.I",
+   "quote": "What this mountaigne by-meneth\nAnd the merke dale,\nAnd the feld ful of folk,\nI shal yow faire shewe.",
+   "who": "Holy Church",
+   "explanation": "Holy Church promises to explain the Prologue's vision of the tower, the dungeon and the field full of folk. The lines set up the poem's method: a vision followed by interpretation, in an allegorical world in which every place has a meaning."
+  },
+  {
+   "ref": "B.I",
+   "quote": "Whan alle tresors ben tried,\nTreuthe is the beste.",
+   "who": "Holy Church",
+   "explanation": "Holy Church's refrain, repeated three times in Passus I. Truth is the best treasure, and the poem's search for it begins here."
+  },
+  {
+   "ref": "B.III",
+   "quote": "\"That laborers and lowe folk\nTaken of hire maistres,\nIt is no manere mede,\nBut a mesurable hire.",
+   "who": "Conscience",
+   "explanation": "Conscience distinguishes honest wages from Meed's corrupt reward. The lines show Langland's concern with economic justice and his use of careful distinctions in argument."
+  },
+  {
+   "ref": "B.V",
+   "quote": "I kan noght parfitly my pater-noster,\nAs the preest it syngeth;\nBut I kan rymes of Robyn Hood,",
+   "who": "Sloth",
+   "explanation": "Sloth's confession, one of the earliest references to Robin Hood rhymes, is both comic and serious: popular songs have replaced the basic prayer of the faith."
+  },
+  {
+   "ref": "B.VII",
+   "quote": "And Piers for pure tene\nPulled it a-tweyne,",
+   "who": "The narrator",
+   "explanation": "Piers tears the pardon sent by Truth. The gesture is the poem's great crux, and the C-text omits it."
+  },
+  {
+   "ref": "B.XI",
+   "quote": "\"Lawe, withouten love,\" quod Trojanus,\n\"Ley ther a bene,",
+   "who": "Trajan",
+   "explanation": "The pagan emperor saved by his truth declares that law without love is worth no more than a bean. The line looks forward to the reconciliation of justice and mercy in Passus XVIII."
+  },
+  {
+   "ref": "B.XIII",
+   "quote": "Disce, and Do-wel;\nDoce, and Do-bet;\nDilige, and Do-best;",
+   "who": "Patience (reporting the teaching of Love)",
+   "explanation": "Patience's riddle redefines the three key terms as learning, teaching and loving, an ascending scheme that the doctor of divinity cannot match."
+  },
+  {
+   "ref": "B.XVIII",
+   "quote": "This Jhesus of his gentries\nWol juste in Piers armes,\nIn his helm and in his haubergeon,\nHumana natura;",
+   "who": "Faith",
+   "explanation": "Christ will joust in Piers's armour, human nature. The chivalric image expresses the doctrine of the Incarnation and links Piers with Christ."
+  },
+  {
+   "ref": "B.XVIII",
+   "quote": "\"For I that am lord of lif,\nLove is my drynke;",
+   "who": "Christ",
+   "explanation": "In hell Christ turns his thirst on the cross into a thirst for souls. The speech is the emotional climax of the poem."
+  },
+  {
+   "ref": "B.XX",
+   "quote": "\"Lerne to love,\" quod Kynde,\n\"And leef of alle othere.\"",
+   "who": "Kynde",
+   "explanation": "Kynde's advice to the old and broken dreamer is the poem's simplest answer to the question of how to live and be saved."
+  }
+ ],
+ "questions": [
+  {
+   "q": "What does 'truth' mean in Piers Plowman, and how does its meaning change over the course of the poem?",
+   "hint": "Think about Holy Church's teaching in Passus I, the pardon from Truth, Trajan's 'pure truth' and the daughter of God called Truth in Passus XVIII."
+  },
+  {
+   "q": "Why can the poem not simply condemn Lady Meed?",
+   "hint": "Consider Meed's defence of herself in Passus III and Conscience's distinctions between kinds of meed and 'measurable hire'."
+  },
+  {
+   "q": "What does the ploughing of the half-acre suggest about Langland's view of society?",
+   "hint": "Look at how Piers assigns roles to each estate, the failure of the knight, the role of Hunger and the relapse after harvest."
+  },
+  {
+   "q": "Why does Piers tear the pardon, and why might Langland have omitted the scene in the C-text?",
+   "hint": "Consider the text of the pardon, the priest's response, Piers's resolution, and the events of 1381."
+  },
+  {
+   "q": "How do the definitions of Dowel, Dobet and Dobest change from teacher to teacher, and what does this tell us about the poem's method?",
+   "hint": "Compare Thought, Wit, Clergy, the doctor of divinity, Patience and Conscience in Passus XIX."
+  },
+  {
+   "q": "How does Langland treat the question of salvation for those outside the Church?",
+   "hint": "Consider Will's argument about Solomon and Aristotle, Trajan, Imaginatif's replies and Christ's speech in hell."
+  },
+  {
+   "q": "What is the significance of the dreamer's name, Will?",
+   "hint": "Think about the faculty of the will, 'Longe-wille' in Passus XV, and the question of whether the dreamer is the poet."
+  },
+  {
+   "q": "How does Piers change in the course of the poem?",
+   "hint": "Trace him from the ploughman of Passus V through 'Petrus, i. Christus' and the jousting in Piers's arms to the founder of the Church and the object of Conscience's search."
+  },
+  {
+   "q": "How does the alliterative long line shape the poem's style?",
+   "hint": "Look at the half-lines in this edition, the patterns of alliteration, and the way the verse moves between argument, satire and vision."
+  },
+  {
+   "q": "Is the ending of the poem pessimistic?",
+   "hint": "Weigh the collapse of Unity and the betrayal by the friars against Kynde's advice, 'Learn to love', and Conscience's renewed pilgrimage."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "adams2013",
+   "text": "Adams, Robert. Langland and the Rokele Family: The Gentry Background to Piers Plowman. Dublin: Four Courts Press, 2013."
+  },
+  {
+   "id": "benson2004",
+   "text": "Benson, C. David. Public Piers Plowman: Modern Scholarship and Late Medieval English Culture. University Park: Pennsylvania State University Press, 2004."
+  },
+  {
+   "id": "bloomfield1962",
+   "text": "Bloomfield, Morton W. Piers Plowman as a Fourteenth-Century Apocalypse. New Brunswick, NJ: Rutgers University Press, 1962."
+  },
+  {
+   "id": "brewer1996",
+   "text": "Brewer, Charlotte. Editing Piers Plowman: The Evolution of the Text. Cambridge: Cambridge University Press, 1996."
+  },
+  {
+   "id": "burrow1993",
+   "text": "Burrow, J. A. Langland's Fictions. Oxford: Clarendon Press, 1993."
+  },
+  {
+   "id": "cable1991",
+   "text": "Cable, Thomas. The English Alliterative Tradition. Philadelphia: University of Pennsylvania Press, 1991."
+  },
+  {
+   "id": "cole2014",
+   "text": "Cole, Andrew, and Andrew Galloway, eds. The Cambridge Companion to Piers Plowman. Cambridge: Cambridge University Press, 2014."
+  },
+  {
+   "id": "dobson1983",
+   "text": "Dobson, R. B., ed. The Peasants' Revolt of 1381. 2nd ed. London: Macmillan, 1983."
+  },
+  {
+   "id": "frank1957",
+   "text": "Frank, Robert Worth, Jr. Piers Plowman and the Scheme of Salvation: An Interpretation of Dowel, Dobet, and Dobest. New Haven: Yale University Press, 1957."
+  },
+  {
+   "id": "galloway2006",
+   "text": "Galloway, Andrew. The Penn Commentary on Piers Plowman. Vol. 1, C Prologue–Passus 4; B Prologue–Passus 4; A Prologue–Passus 4. Philadelphia: University of Pennsylvania Press, 2006."
+  },
+  {
+   "id": "hanna1993",
+   "text": "Hanna, Ralph, III. William Langland. Authors of the Middle Ages 3. Aldershot: Variorum, 1993."
+  },
+  {
+   "id": "hudson1994",
+   "text": "Hudson, Anne. \"Piers Plowman and the Peasants' Revolt: A Problem Revisited.\" Yearbook of Langland Studies 8 (1994): 85–106."
+  },
+  {
+   "id": "justice1994",
+   "text": "Justice, Steven. Writing and Rebellion: England in 1381. Berkeley: University of California Press, 1994."
+  },
+  {
+   "id": "justice1997",
+   "text": "Justice, Steven, and Kathryn Kerby-Fulton, eds. Written Work: Langland, Labor, and Authorship. Philadelphia: University of Pennsylvania Press, 1997."
+  },
+  {
+   "id": "kane1960",
+   "text": "Kane, George, ed. Piers Plowman: The A Version. Will's Visions of Piers Plowman and Do-Well. London: Athlone Press, 1960."
+  },
+  {
+   "id": "kane1965",
+   "text": "Kane, George. Piers Plowman: The Evidence for Authorship. London: Athlone Press, 1965."
+  },
+  {
+   "id": "kanedonaldson1975",
+   "text": "Kane, George, and E. Talbot Donaldson, eds. Piers Plowman: The B Version. Will's Visions of Piers Plowman, Do-Well, Do-Better and Do-Best. London: Athlone Press, 1975."
+  },
+  {
+   "id": "kerbyfulton1990",
+   "text": "Kerby-Fulton, Kathryn. Reformist Apocalypticism and Piers Plowman. Cambridge: Cambridge University Press, 1990."
+  },
+  {
+   "id": "manly1906",
+   "text": "Manly, John M. \"The Lost Leaf of 'Piers the Plowman'.\" Modern Philology 3 (1906): 359–66."
+  },
+  {
+   "id": "russellkane1997",
+   "text": "Russell, George, and George Kane, eds. Piers Plowman: The C Version. Will's Visions of Piers Plowman, Do-Well, Do-Better and Do-Best. London: Athlone Press, 1997."
+  },
+  {
+   "id": "schmidt1995",
+   "text": "Schmidt, A. V. C., ed. The Vision of Piers Plowman: A Critical Edition of the B-Text Based on Trinity College Cambridge MS B.15.17. 2nd ed. London: J. M. Dent, 1995."
+  },
+  {
+   "id": "simpson2007",
+   "text": "Simpson, James. Piers Plowman: An Introduction. 2nd rev. ed. Exeter: University of Exeter Press, 2007."
+  },
+  {
+   "id": "skeat1886",
+   "text": "Skeat, Walter W., ed. The Vision of William concerning Piers the Plowman in Three Parallel Texts, together with Richard the Redeless. 2 vols. Oxford: Clarendon Press, 1886."
+  },
+  {
+   "id": "warner2011",
+   "text": "Warner, Lawrence. The Lost History of Piers Plowman: The Earliest Transmission of Langland's Work. Philadelphia: University of Pennsylvania Press, 2011."
+  },
+  {
+   "id": "wright1842",
+   "text": "Wright, Thomas, ed. The Vision and the Creed of Piers Ploughman. 2 vols. London: William Pickering, 1842."
+  }
+ ]
+}

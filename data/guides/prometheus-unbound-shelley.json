@@ -1,0 +1,856 @@
+{
+ "work": "prometheus-unbound-shelley",
+ "title": "Prometheus Unbound",
+ "author": "Percy Bysshe Shelley",
+ "quoteEdition": "prometheus-unbound-shelley",
+ "updated": "2026-10-19",
+ "unit": "Part",
+ "glance": [
+  {
+   "label": "Full title",
+   "value": "Prometheus Unbound: A Lyrical Drama in Four Acts"
+  },
+  {
+   "label": "Author",
+   "value": "Percy Bysshe Shelley (1792–1822)"
+  },
+  {
+   "label": "Written",
+   "value": "Act I in the autumn of 1818 at Este, near Padua; Acts II and III in Rome in the spring of 1819; Act IV, an addition to a drama first conceived in three acts, in Florence towards the end of 1819"
+  },
+  {
+   "label": "Published",
+   "value": "London: C. and J. Ollier, 1820, in a volume entitled Prometheus Unbound … with Other Poems, which also contained 'Ode to the West Wind', 'To a Skylark', 'The Cloud' and 'Ode to Liberty'"
+  },
+  {
+   "label": "Form",
+   "value": "A 'lyrical drama' meant for reading rather than performance: blank-verse dialogue interspersed with choral and solo lyrics in a great variety of metres"
+  },
+  {
+   "label": "Length",
+   "value": "Four acts; Act I is a single long scene, Acts II and III have five and four scenes, Act IV is a single scene of lyric celebration. The whole runs to roughly 2,600 lines"
+  },
+  {
+   "label": "Setting",
+   "value": "A ravine in the 'Indian Caucasus', a vale, a forest, a mountain pinnacle, the cave of Demogorgon, Jupiter's heaven, the island of Atlantis and a forest cave; the time is mythical"
+  },
+  {
+   "label": "Main source",
+   "value": "Aeschylus' Prometheus Bound and the lost sequel Prometheus Unbound (Prometheus Lyomenos), known only from fragments; also Milton's Paradise Lost, Plato, the Bible and contemporary science"
+  },
+  {
+   "label": "Text in this archive",
+   "value": "Hutchinson's Oxford text (1914) via Project Gutenberg, in eleven sections (Act I, Act II scenes 1–5, Act III scenes 1–4, Act IV). Shelley's Preface, the list of characters, the Greek epigraph and the line numbers are not included; references in this guide therefore give act and scene only"
+  }
+ ],
+ "context": [
+  "Shelley left England for Italy in March 1818 and never returned. The years that followed were the most productive of his life: within about eighteen months he wrote Julian and Maddalo, The Cenci, The Mask of Anarchy, 'Ode to the West Wind' and Prometheus Unbound, which he regarded as his finest work. The first act was written at Este in the autumn of 1818, in a villa lent by Byron; the second and third, as the Preface records, among the overgrown ruins of the Baths of Caracalla in Rome in the spring of 1819. Shelley first thought the drama complete in three acts. The fourth, a sustained lyric celebration, was composed in Florence late in 1819, and Mary Shelley's note of 1839 records that it was conceived and added some months after the first three [[holmes1974]] [[cameron1974]] [[reiman2002]].",
+  "The starting point is Greek tragedy. Aeschylus' Prometheus Bound (whose authorship has been questioned by some scholars) shows the Titan nailed to a rock for giving fire to mortals, defying Zeus and refusing to reveal a secret on which Zeus's power depends: that the sea-nymph Thetis is destined to bear a son greater than his father. The sequel, Prometheus Unbound, survives only in fragments, but ancient testimony suggests that Heracles shot the eagle, Prometheus disclosed the secret, and the god and the Titan were reconciled; Thetis was then married to the mortal Peleus and became the mother of Akhilleus [[griffith1977]] [[griffith1983]].",
+  "Shelley's Preface explains why he would not follow this plot. He was unwilling, he says, to end with the champion of humanity reconciled to its oppressor; such a conclusion would empty the Titan's long endurance of its moral meaning. He compares Prometheus with Milton's Satan, the only comparable figure in modern poetry, and argues that Prometheus is the more poetic character because he is free of Satan's ambition, envy and desire for revenge. The Preface also defends the poem's imagery, much of it drawn from the operations of the mind, disclaims didactic intent, and admits frankly to a passion for reforming the world [[reiman2002]] [[wasserman1971]].",
+  "The political background matters. Shelley wrote during the post-war repression in Britain, and the year of Acts II–IV was also the year of the Peterloo massacre (16 August 1819) and of his prose A Philosophical View of Reform. His thinking about change had been shaped by William Godwin, his father-in-law, whose Political Justice (1793) argued that tyranny rests on opinion and will fall when minds are enlightened, and that coercion and punishment only reproduce the evils they oppose. Prometheus Unbound translates this conviction into myth: the tyrant falls not because he is defeated in battle but because the mind that sustained him has changed [[godwin1793]] [[dawson1980]] [[scrivener1982]].",
+  "The poem is also deeply learned. Shelley mixes Greek myth with Platonic philosophy, Zoroastrian and Manichaean dualism, Christian imagery, Milton and Dante, and the natural science of his day, including electricity, astronomy and geology. Readers have found the result either a visionary synthesis or a cloud of abstraction; the critical history of the poem, from Victorian admiration through modernist hostility to the close philosophical readings of the 1960s and later, is largely a history of how that synthesis has been valued [[curran1975]] [[butler1981]] [[grabo1930]]."
+ ],
+ "plot": [
+  "Act I opens in a ravine of ice in the Indian Caucasus, where Prometheus has hung for three thousand years, nailed to a precipice by Jupiter, with the Oceanids Panthea and Ione at his feet. He no longer hates his torturer and wishes to recall the curse he once pronounced. Since he cannot remember it, the Earth, his mother, tells him to summon a phantom from the shadow world; the Phantasm of Jupiter repeats the curse, and Prometheus repents of it. Mercury arrives with the Furies and asks him once more to reveal the secret that threatens Jupiter's throne; he refuses. The Furies torment him with visions of human suffering, including the crucifixion of Christ and the failure of the French Revolution. Spirits of the human mind then console him with prophecies of love, and Panthea leaves to rejoin her sister Asia.",
+  "Act II follows Asia, Prometheus' beloved, who has been exiled to an Indian vale. Panthea tells her two dreams, and a voice calling 'Follow! Follow!' leads both sisters through an enchanted forest to a mountain pinnacle and down into the cave of Demogorgon, a shapeless power seated in darkness. Asia questions him about who made the world and who is the master of Jupiter; his answers are cryptic, but when she asks when Prometheus will be free, the chariots of the Hours appear. Demogorgon departs in one, and Asia rises in another, transfigured, while a voice hails her as 'Life of Life'.",
+  "Act III begins in heaven. Jupiter, newly married to Thetis, boasts that their child will soon complete his omnipotence; instead Demogorgon arrives, announces himself as Jupiter's child and successor, and drags him into the abyss. Ocean and Apollo report the fall. On the Caucasus, Hercules unbinds Prometheus, who is reunited with Asia and plans to withdraw with her to a cave where they will live in contemplation. The Spirit of the Hour sounds a shell of prophecy, and in the last scene describes the transformation of humanity: thrones are empty, fear and servility have vanished, and man stands free, though still subject to chance, death and mutability.",
+  "Act IV is a cosmic festival with almost no action. Spectral Hours of the past bury Time; new Hours and Spirits of the human mind sing of a liberated world; Panthea and Ione describe visions of the Moon and the Earth, whose spirits then sing a long duet of love and renewal. Finally Demogorgon rises again and addresses the whole universe, telling it how freedom was won and how, should tyranny ever return, it may be overcome once more."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Act I: The Titan on the precipice",
+   "lines": "Act I (the whole act)",
+   "section": 0,
+   "summary": [
+    "At night, in an icy ravine of the Indian Caucasus, Prometheus addresses Jupiter in a long monologue. He describes his tortures, the glaciers, the chains, the eagle that tears at his heart, and the endless hours, but he also announces a change in himself: he pities his enemy and hates him no more, and he wishes to recall the curse he once breathed against him. The mountains, springs, air and whirlwinds, the Voices of the natural world, remember that curse with awe but will not repeat it, and the Earth explains that she dares not speak in the language of the living for fear of Jupiter.",
+    "The Earth tells of a shadow world beneath the grave where the phantoms of all things dwell, and Prometheus summons the Phantasm of Jupiter to speak the words. The phantom, unwillingly possessed, pronounces the curse: a sufferer's defiance of an omnipotent tyrant, ending with the wish that Jupiter should be seen at last for what he is. Prometheus replies that he repents of it and wishes no living thing to suffer pain. The Earth and the Echoes mistake this for surrender and lament that the Titan is vanquished.",
+    "Mercury now arrives, reluctant and pitying, with the Furies. He urges Prometheus to reveal the secret of Jupiter's fate and be released; Prometheus refuses. The Furies torment him with visions of humanity's suffering under the very hopes he gave it: Christ crucified and his religion turned to persecution, and the French Revolution collapsing into bloodshed and tyranny. The worst torture is the Fury's account of a world where the good lack power and the powerful lack goodness. When the Furies vanish, the Earth summons gentle spirits from the human mind who sing of self-sacrifice, poetry and love. Panthea leaves for the vale where Asia waits, and Prometheus ends by naming love as his only hope."
+   ],
+   "analysis": [
+    "The decisive event of the whole drama happens within the first few hundred lines: Prometheus withdraws his curse. Everything that follows, including Jupiter's fall, can be read as a consequence of this inner change. The curse bound Prometheus to Jupiter as much as Jupiter to him, because hatred reproduces the tyranny it resists; once the Titan ceases to hate, the tyrant's power over him is broken in principle, though it will take three more acts to be broken in fact. This is the poem's most Godwinian idea, and critics from Wasserman onward have treated the retraction as the key to its psychology [[wasserman1965]] [[godwin1793]].",
+    "The device of having the curse spoken by Jupiter's own phantom is pointed. The words of defiance sound exactly like the words of a tyrant, and Prometheus hears in them the image of his enemy. Several readers have taken this as a sign that Jupiter is in some sense a projection of Prometheus' own mind, a power that exists only because it has been granted and hated; others resist so complete an internalisation and stress that suffering in the play is also physical and historical [[bloom1959]] [[hogle1988]].",
+    "The Furies' visions are historical. Shelley treats Christianity and the French Revolution as two great movements of liberation that turned into their opposites, and the Fury's sharpest torment is not pain but despair at the way good intentions are confused to ill. The consoling spirits answer not with arguments but with lyric images of self-sacrifice and of the poet who feeds on dreams, and the act ends by turning towards Asia. The structure moves from monologue through dialogue to chorus, establishing the alternation of dramatic speech and song that defines the lyrical drama [[cameron1974]] [[tetreault1987]]."
+   ],
+   "key": [
+    {
+     "ref": "PU I",
+     "quote": "No change, no pause, no hope! Yet I endure.",
+     "note": "Prometheus' endurance is the virtue the whole drama celebrates; the line returns in spirit in Demogorgon's last speech."
+    },
+    {
+     "ref": "PU I",
+     "quote": "It doth repent me: words are quick and vain;\nGrief for awhile is blind, and so was mine.\nI wish no living thing to suffer pain.",
+     "note": "The retraction of the curse, the turning point of the play, spoken in three plain lines after the rhetoric of the Phantasm."
+    },
+    {
+     "ref": "PU I",
+     "quote": "The good want power, but to weep barren tears.\nThe powerful goodness want: worse need for them.\nThe wise want love; and those who love want wisdom;\nAnd all best things are thus confused to ill.",
+     "note": "The Fury's worst torture is an analysis of political despair, not a physical pain."
+    },
+    {
+     "ref": "PU I",
+     "quote": "Most vain all hope but love; and thou art far,\nAsia!",
+     "note": "The act closes by naming love and Asia, preparing for the shift of focus in Act II."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Act II, Scene 1: Asia and the dreams",
+   "lines": "Act II, Scene 1 (the whole scene)",
+   "section": 1,
+   "summary": [
+    "At dawn in a lovely Indian vale, Asia greets the coming of spring and waits impatiently for her sister Panthea. When Panthea arrives she explains why she is late: she has had two dreams. In the first, Prometheus appeared to her transfigured and his love overwhelmed her; the second she has forgotten.",
+    "Asia asks Panthea to lift her eyes so that she may read the dream in them, and sees there the image of Prometheus smiling. Then a shape appears between them and cries 'Follow! Follow!' Panthea recognises her second dream. The sisters remember images of that dream, among them the words 'follow, follow' printed on the leaves of an almond tree, and Echoes take up the call. Asia and Panthea set out to follow the voices."
+   ],
+   "analysis": [
+    "The scene moves the drama from the frozen ravine to a world in the act of thawing, and from the suffering male hero to the female figure whose journey will set the cosmos in motion. Asia's opening speech to the spring makes her the counterpart of the season: the vale is said elsewhere to have been desolate before her coming, and her presence transforms it [[baker1948]] [[gelpi1992]].",
+    "Knowledge here comes through dreams, eyes and echoes rather than argument. Asia reads Prometheus in Panthea's gaze, and the summons that sends her to Demogorgon is a dream that speaks. The scene dramatises a Romantic theory of inspiration in which the mind is drawn by an impulse it does not fully understand, an idea that Shelley develops in the Defence of Poetry and that critics have connected with Plato's account of love in the Symposium [[wasserman1971]] [[keach1984]]."
+   ],
+   "key": [
+    {
+     "ref": "PU II.i",
+     "quote": "There is a change: beyond their inmost depth\nI see a shade, a shape: ’tis He, arrayed\nIn the soft light of his own smiles",
+     "note": "Asia reads Prometheus in Panthea's eyes; vision is transmitted from mind to mind."
+    },
+    {
+     "ref": "PU II.i",
+     "quote": "Follow! Follow!",
+     "note": "The Dream's summons, repeated by the Echoes, starts the descent that leads to Demogorgon."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act II, Scene 2: The enchanted forest",
+   "lines": "Act II, Scene 2 (the whole scene)",
+   "section": 2,
+   "summary": [
+    "Asia and Panthea pass through a dense forest of rocks and caverns. Two semichoruses of spirits describe the darkened path, the nightingales and the streams of sound that draw those who are destined to follow them, as if by an irresistible current, towards the realm of Demogorgon.",
+    "Two young Fauns, who have been listening, discuss where these invisible singers live. One suggests that they dwell in the bubbles that rise from the beds of lakes and burst into the air; the other mentions old Silenus, who will forget to milk his goats when he hears such songs, and the sort of prophecy the Fauns themselves love to hear."
+   ],
+   "analysis": [
+    "The shortest scenes of the drama are often its most purely lyrical. The spirits' songs explain, in their own idiom, the doctrine of necessity: the travellers believe they move freely, yet they are borne along by a music that compels them. Shelley's early philosophy owed much to the necessitarian thought of Godwin and the French materialists, but here necessity is gentle and seductive rather than mechanical [[curran1975]] [[scrivener1982]].",
+    "The Fauns bring a pastoral, almost comic note, a reminder of the satyr-play and the Greek countryside. Their speculation about spirits living in bubbles is a playful piece of natural philosophy, and it widens the play's world: even the minor creatures of myth are listening for change [[wallace1997]]."
+   ],
+   "key": [
+    {
+     "ref": "PU II.ii",
+     "quote": "The path through which that lovely twain\nHave passed, by cedar, pine, and yew,",
+     "note": "The semichorus follows the sisters' journey into darkness."
+    },
+    {
+     "ref": "PU II.ii",
+     "quote": "Canst thou imagine where those spirits live\nWhich make such delicate music in the woods?",
+     "note": "The First Faun's question introduces a pastoral interlude of speculation about the invisible."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act II, Scene 3: The pinnacle",
+   "lines": "Act II, Scene 3 (the whole scene)",
+   "section": 3,
+   "summary": [
+    "The sisters reach a pinnacle of rock among the mountains, above the portal of Demogorgon's realm, from which an oracular vapour rises. Asia praises the sublime prospect of mist, forest, snow and avalanche, and compares the moment to the slow accumulation of thought that suddenly brings down a great change.",
+    "A song of spirits rises from the depths and calls them downward, through the shade of sleep and the boundary of life and death, to the throne of Demogorgon, promising that what binds the Titan will be loosened. The sisters descend."
+   ],
+   "analysis": [
+    "The landscape is a mental landscape. The avalanche, gathered flake by flake until a single sound sets it loose, is an image of how revolutions of opinion happen: slowly, invisibly, then all at once. The oracular vapour that lonely youths drink and that inspires them to prophecy links the scene to Delphi and to Shelley's idea of the poet as a vessel for truths he only half understands [[wasserman1965]] [[keach1984]].",
+    "The song 'To the deep, to the deep' is one of the most rhythmically insistent lyrics in the drama, and its downward movement is the formal counterpart of the descent into the unconscious or into the source of power, depending on how one reads Demogorgon [[bloom1959]]."
+   ],
+   "key": [
+    {
+     "ref": "PU II.iii",
+     "quote": "Hither the sound has borne us—to the realm\nOf Demogorgon, and the mighty portal,\nLike a volcano’s meteor-breathing chasm,",
+     "note": "Panthea's opening places the sisters at the threshold of a volcanic underworld."
+    },
+    {
+     "ref": "PU II.iii",
+     "quote": "To the deep, to the deep,\nDown, down!",
+     "note": "The spirits' song drives the descent with short, falling lines."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act II, Scene 4: The cave of Demogorgon",
+   "lines": "Act II, Scene 4 (the whole scene)",
+   "section": 4,
+   "summary": [
+    "In the cave, Panthea sees a mighty darkness filling the seat of power, without form or outline. Asia questions it. Demogorgon says that God made the living world, with all its thought, passion, reason and imagination; asked who made terror, madness, crime and remorse, he answers only that he reigns. Asia then tells the history of the world: under Saturn the earth knew peace but no knowledge; Prometheus gave Jupiter power on the single condition that man be free; Jupiter betrayed that trust; and Prometheus gave mankind hope, love, fire, the arts, medicine, speech and science, for which he was chained.",
+    "Asia asks who is the master of Jupiter. Demogorgon replies that the deep truth cannot be imaged, and that all things are subject to Fate, Time, Occasion, Chance and Change except eternal Love. When she asks when Prometheus will be freed, he points to the chariots of the Hours. A terrible charioteer comes for Demogorgon, who mounts and rises; a gentler Spirit of the Hour, with a dove-like face, waits to carry Asia and Panthea upward."
+   ],
+   "analysis": [
+    "Demogorgon is the drama's great enigma. His name comes from late classical and Renaissance mythography: it is usually explained as a corruption of 'demiurge', and the figure appears in Boccaccio's genealogy of the gods, in Spenser and in Milton's account of Chaos, where Satan meets 'the dreaded name / Of Demogorgon'. Shelley makes him a shapeless, impersonal power. Critics have read him as Necessity, as the potentiality of change, as the people, or as the unknowable ground of being; the scene itself refuses to decide, since Demogorgon answers Asia's questions largely by returning them to her [[wasserman1965]] [[curran1975]] [[bloom1959]].",
+    "Asia's speech on the history of mankind is the intellectual centre of the drama. It turns the Prometheus myth into a story of civilisation in which knowledge and suffering grow together, and it ends with a sceptical question: who rules the ruler? Demogorgon's answer that the deep truth is imageless is both a statement of philosophical scepticism and a defence of the poem's own method, which offers images while admitting that they cannot contain the truth [[oneill1989]] [[wasserman1971]].",
+    "The scene's turning point is quiet. Asia already knows the answers she seeks, as she says, and her questioning functions as a kind of awakening. When she asks about the hour of release, the answer is the arrival of the Hours themselves: the moment has come because the necessary change has happened in the minds of Prometheus and Asia [[hogle1988]]."
+   ],
+   "key": [
+    {
+     "ref": "PU II.iv",
+     "quote": "I see a mighty darkness\nFilling the seat of power, and rays of gloom\nDart round, as light from the meridian sun.",
+     "note": "Panthea's description of Demogorgon: a darkness that radiates like light, defined by negation."
+    },
+    {
+     "ref": "PU II.iv",
+     "quote": "Gave wisdom, which is strength, to Jupiter,\nAnd with this law alone, ‘Let man be free,’\nClothed him with the dominion of wide Heaven.",
+     "note": "Asia's history: Jupiter's power was a trust from Prometheus, granted on one condition and betrayed."
+    },
+    {
+     "ref": "PU II.iv",
+     "quote": "He gave man speech, and speech created thought,\nWhich is the measure of the universe;",
+     "note": "Among Prometheus' gifts language comes first, a characteristically Shelleyan claim for the creative power of words."
+    },
+    {
+     "ref": "PU II.iv",
+     "quote": "Fate, Time, Occasion, Chance and Change? To these\nAll things are subject but eternal Love.",
+     "note": "Demogorgon's most quoted answer sets love outside the realm of mutability."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act II, Scene 5: The transfiguration of Asia",
+   "lines": "Act II, Scene 5 (the whole scene)",
+   "section": 5,
+   "summary": [
+    "The chariot pauses in a cloud on a snowy mountain. The Spirit of the Hour says the horses must rest. Panthea notices that Asia has changed: she shines with a radiance like that of Venus newly risen from the sea, and Panthea can hardly bear to look at her. Asia replies that love is as common as light and makes the reptile equal to the god.",
+    "A voice in the air sings the lyric 'Life of Life', hailing Asia as a light too bright to behold. Asia answers with the lyric 'My soul is an enchanted boat', in which she floats on the music of the singer through a journey that runs backward through age, manhood, youth and infancy, beyond death and birth, into a paradise of light."
+   ],
+   "analysis": [
+    "The climax of Act II is a transfiguration, not a battle. Asia has long been read as the embodiment of love or of the ideal, a counterpart to Prometheus' will and mind; Baker's and Bloom's readings, and later feminist and psychoanalytic studies, have made her the true agent of the drama's second half. Barbara Gelpi's study stresses the maternal and natural associations Shelley gives her [[baker1948]] [[bloom1959]] [[gelpi1992]].",
+    "The two lyrics are among the most admired and the most criticised passages in Shelley. 'Life of Life' piles up images of light that cancel one another, as if to show that what it describes cannot be seen; Leavis cited this kind of writing as evidence of Shelley's weak grasp of the concrete, while later critics such as Keach and O'Neill have analysed it as a deliberate poetics of the evanescent. The backward voyage of 'My soul is an enchanted boat' reverses the ordinary movement from birth to death, a figure for the regeneration about to begin [[leavis1936]] [[keach1984]] [[oneill1989]]."
+   ],
+   "key": [
+    {
+     "ref": "PU II.v",
+     "quote": "Common as light is love,\nAnd its familiar voice wearies not ever.",
+     "note": "Asia's statement of love's universality, before the two great lyrics."
+    },
+    {
+     "ref": "PU II.v",
+     "quote": "Life of Life! thy lips enkindle\nWith their love the breath between them;",
+     "note": "The Voice in the Air begins its hymn to Asia, an image of radiance that the eye cannot hold."
+    },
+    {
+     "ref": "PU II.v",
+     "quote": "My soul is an enchanted boat,\nWhich, like a sleeping swan, doth float\nUpon the silver waves of thy sweet singing;",
+     "note": "Asia's reply turns music into the medium of a visionary voyage."
+    },
+    {
+     "ref": "PU II.v",
+     "quote": "We have passed Age’s icy caves,\nAnd Manhood’s dark and tossing waves,",
+     "note": "The voyage runs backward through the stages of life towards a new beginning."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act III, Scene 1: The fall of Jupiter",
+   "lines": "Act III, Scene 1 (the whole scene)",
+   "section": 6,
+   "summary": [
+    "In heaven, Jupiter sits enthroned among the gods. He tells them to rejoice: he is now omnipotent except for the soul of man, which still burns towards heaven in reproach and doubt. He has begotten a fatal child with Thetis, who will soon rise from the throne of Demogorgon and trample out that last spark. He calls for nectar and celebrates his coming triumph.",
+    "The car of the Hour arrives and Demogorgon descends towards the throne. Asked who he is, he answers 'Eternity', declares that he is Jupiter's child as Jupiter was Saturn's, and summons him to follow into the abyss. Jupiter pleads, curses and struggles, and falls with Demogorgon into darkness."
+   ],
+   "analysis": [
+    "Shelley reworks the Aeschylean secret. In Greek myth the danger was that a son of Thetis would surpass his father, and Zeus avoided it by marrying her to a mortal. Shelley's Jupiter has married Thetis and confidently awaits a son; the child who comes is Demogorgon, a power that is no one's instrument. The irony is that the tyrant's own act of generation brings his end, and that the overthrow requires no secret at all, because Prometheus has already freed himself from the relationship the secret represented [[wasserman1965]] [[curran1975]].",
+    "The scene is short and almost anticlimactic, and that is the point. Power that rests on fear collapses once fear is gone; Jupiter's fall needs no hero. Demogorgon also tells him that the tyranny of heaven cannot be retained or taken up by anyone after him, so that the cycle in which each usurper is overthrown by his son, as Saturn was by Jupiter, is broken [[cameron1974]] [[dawson1980]]."
+   ],
+   "key": [
+    {
+     "ref": "PU III.i",
+     "quote": "Rejoice! henceforth I am omnipotent.",
+     "note": "Jupiter's opening boast, spoken at the moment of his fall: dramatic irony at its plainest."
+    },
+    {
+     "ref": "PU III.i",
+     "quote": "Eternity. Demand no direr name.",
+     "note": "Demogorgon's self-definition: an answer that names a condition rather than a person."
+    },
+    {
+     "ref": "PU III.i",
+     "quote": "I am thy child, as thou wert Saturn’s child;\nMightier than thee: and we must dwell together\nHenceforth in darkness.",
+     "note": "The prophecy of the more powerful son is fulfilled, but by a power outside the divine succession."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act III, Scene 2: Ocean and Apollo",
+   "lines": "Act III, Scene 2 (the whole scene)",
+   "section": 7,
+   "summary": [
+    "At the mouth of a great river on the island of Atlantis, Ocean reclines on the shore and Apollo stands beside him. Apollo describes how Jupiter fell from heaven like an eagle struck by lightning and sank into the abyss, and says that the sun will now shine without eclipse.",
+    "Ocean replies that his seas will no longer be stained with blood; ships will pass over waters marked only by light, music and the scent of flowers. Apollo departs to drive his chariot, and Ocean returns to his realm, where the sea nymphs await him."
+   ],
+   "analysis": [
+    "This brief scene works like a messenger scene in Greek tragedy, reporting off-stage events, but it also extends the revolution from heaven to nature. Ocean's vision of seas free from blood refers to naval war and the slave trade, and the island of Atlantis, the lost land of Plato's myth, places the speakers at the edge of history [[cameron1974]] [[butler1981]].",
+    "The calm, measured blank verse of Ocean and Apollo contrasts with the violence of the previous scene. The old Olympian order of sun and sea survives Jupiter's fall but is changed; Shelley's gods of nature remain, while the god of power goes [[webb1977]]."
+   ],
+   "key": [
+    {
+     "ref": "PU III.ii",
+     "quote": "Henceforth the fields of heaven-reflecting sea\nWhich are my realm, will heave, unstained with blood,",
+     "note": "Ocean's opening announces the end of war at sea."
+    },
+    {
+     "ref": "PU III.ii",
+     "quote": "Tracking their path no more by blood and groans,\nAnd desolation, and the mingled voice\nOf slavery and command;",
+     "note": "The sea routes of empire and the slave trade will no longer be marked by suffering."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act III, Scene 3: The unbinding",
+   "lines": "Act III, Scene 3 (the whole scene)",
+   "section": 8,
+   "summary": [
+    "On the Caucasus, Hercules unbinds Prometheus and hails him as the greatest of beings. Prometheus thanks him and turns to Asia, Panthea and Ione. He describes a cave where he and Asia will live, hung with icicles and filled with the sound of birds and bees, where they will talk of time and change while remaining unchanged themselves, and where the arts of mankind will visit them as offerings.",
+    "Prometheus asks Ione to give the Spirit of the Hour the curved shell that Proteus gave to Asia as a wedding gift, so that the Spirit may blow it over the world as a sign of renewal. He kisses the Earth, who revives and describes how her creatures will now share their nourishment in peace and how death will become a gentle embrace. The Earth summons the Spirit of the Earth to guide the company to a temple and cave beside a fountain."
+   ],
+   "analysis": [
+    "Hercules' role is the only trace of Aeschylus' Prometheus Unbound in the action, and Shelley reduces it to a gesture: strength frees the Titan only after the real liberation has occurred. The scene then turns away from politics towards contemplation. Prometheus and Asia do not rule the new world; they withdraw from it to a cave which, unlike Plato's cave of shadows, is a place of art and thought [[wallace1997]] [[wasserman1965]].",
+    "The Earth's speech links the moral revolution to nature. Disease, poison and despair were in her system while Jupiter ruled; now they drain away. The image of death as a mother folding her child suggests that the transformed world does not abolish mortality but changes its meaning, a theme that the Spirit of the Hour takes up in the next scene [[gelpi1992]] [[oneill1989]]."
+   ],
+   "key": [
+    {
+     "ref": "PU III.iii",
+     "quote": "Where we will sit and talk of time and change,\nAs the world ebbs and flows, ourselves unchanged.\nWhat can hide man from mutability?",
+     "note": "Prometheus imagines a contemplative life above change; his question admits that it cannot be fully escaped."
+    },
+    {
+     "ref": "PU III.iii",
+     "quote": "And death shall be the last embrace of her\nWho takes the life she gave, even as a mother,\nFolding her child, says, ‘Leave me not again.’",
+     "note": "The Earth's image of death as a maternal embrace."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Act III, Scene 4: The renewed world",
+   "lines": "Act III, Scene 4 (the whole scene)",
+   "section": 9,
+   "summary": [
+    "In a forest near the cave, Ione and Panthea see the Spirit of the Earth, a winged child, who runs to Asia and tells her how, after the shell was sounded, the ugly creatures of the world became beautiful and men lost their look of hatred and fear. Asia tells the Spirit that it will never be parted from her.",
+    "The Spirit of the Hour arrives and describes what it saw as it flew over the world after sounding the shell: thrones without kings, men walking together as equals, no fawning or trampling, no lies smiling on the lips. Women are free and frank. The images of the old gods and powers stand in ruins, like monuments to a forgotten faith. The Spirit ends with a vision of man as sceptreless and free, king over himself, yet still subject to chance, death and mutability."
+   ],
+   "analysis": [
+    "The Spirit of the Hour's speech is the drama's political manifesto. The new humanity is defined almost entirely by negatives: no thrones, no classes, no nations, no worship. The poem imagines liberty less as a new institution than as the disappearance of the habits of mind that sustained the old ones, a vision that critics have connected with Godwin's anarchism and with the radical republicanism of Shelley's prose [[scrivener1982]] [[dawson1980]] [[godwin1793]].",
+    "The closing qualification is crucial. Man is free from guilt and pain because these were made by his will, but he is not exempt from chance, death and change. Shelley's utopia is therefore not paradise but a human condition purified of self-inflicted evil. Some readers have found this the drama's natural conclusion and Act IV a superfluous addition; others think the sober ending of Act III needed the lyrical expansion that followed [[oneill1989]] [[wasserman1971]]."
+   ],
+   "key": [
+    {
+     "ref": "PU III.iv",
+     "quote": "And behold, thrones were kingless, and men walked\nOne with the other even as spirits do,\nNone fawned, none trampled;",
+     "note": "The Spirit of the Hour's report begins with the end of monarchy and servility."
+    },
+    {
+     "ref": "PU III.iv",
+     "quote": "The loathsome mask has fallen, the man remains\nSceptreless, free, uncircumscribed, but man\nEqual, unclassed, tribeless, and nationless,",
+     "note": "Liberty is defined by a string of negatives: what man is freed from."
+    },
+    {
+     "ref": "PU III.iv",
+     "quote": "From chance, and death, and mutability,\nThe clogs of that which else might oversoar\nThe loftiest star of unascended heaven,\nPinnacled dim in the intense inane.",
+     "note": "The limits of the new man, and the act's famous last line."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Act IV: The cosmic celebration",
+   "lines": "Act IV (the whole act)",
+   "section": 10,
+   "summary": [
+    "While Panthea and Ione sleep near the cave of Prometheus, a train of dark forms passes: the dead Hours of the past, carrying the corpse of Time to his tomb in eternity. New Hours and Spirits of the human mind arrive and join in choruses of joy, celebrating the arts, sciences and loves of a liberated humanity and resolving to build new worlds.",
+    "Panthea and Ione wake and describe two visions. In the first, a chariot carries a winged infant, the spirit of the Moon, white and pale. In the second, a sphere of many interlocking orbs, spinning with music and light, carries the sleeping Spirit of the Earth, whose beams reveal the buried history of the planet: wrecked ships, ruined cities, the bones of extinct monsters. The Earth and the Moon then sing a long duet in which the Earth rejoices in the transformation of man and the Moon, warmed by the Earth's love, comes back to life.",
+    "At the end Demogorgon rises and addresses the whole universe: the Earth, the Moon, the dead, the elements, the spirits and man. He tells them that the day of liberation has come and that, should the destructive power ever break free again, these are the spells by which it may be bound once more: to suffer, forgive, defy, love, endure and hope."
+   ],
+   "analysis": [
+    "Act IV was written after Shelley had thought the drama complete, and it has divided readers. For some it is a magnificent lyric coda that extends the moral revolution to the physical universe; for others it is formless and repetitive. Its structure resembles that of a masque or an oratorio rather than a play, and Shelley's own subtitle, a lyrical drama, makes room for this movement from action to song [[tetreault1987]] [[curran1975]].",
+    "The visions of the Moon and the Earth draw on contemporary science. Grabo showed that the spinning sphere and the beams of the Spirit of the Earth reflect Shelley's reading on electricity, magnetism and astronomy, and the description of fossils and buried cities shows his interest in geology. The love duet of Earth and Moon turns gravitational attraction into a figure of desire [[grabo1930]] [[grabo1935]].",
+    "Demogorgon's final speech brings the drama back to ethics. The new order is not guaranteed; tyranny may return, and the virtues that overcame it must be practised again. The closing stanzas therefore restate the lesson of Act I, the endurance and forgiveness of Prometheus, as a universal programme, and the final line identifies that programme with life, joy, empire and victory [[wasserman1965]] [[oneill1989]]."
+   ],
+   "key": [
+    {
+     "ref": "PU IV",
+     "quote": "We bear Time to his tomb in eternity.",
+     "note": "The dead Hours of the past carry Time itself to burial."
+    },
+    {
+     "ref": "PU IV",
+     "quote": "Man, oh, not men! a chain of linked thought,\nOf love and might to be divided not,",
+     "note": "The Earth imagines humanity as a single mind, not a multitude of individuals."
+    },
+    {
+     "ref": "PU IV",
+     "quote": "Language is a perpetual Orphic song,\nWhich rules with Daedal harmony a throng\nOf thoughts and forms, which else senseless and shapeless were.",
+     "note": "Language as the ordering power of the renewed world, linked to Orpheus and to Daedalus the craftsman."
+    },
+    {
+     "ref": "PU IV",
+     "quote": "To suffer woes which Hope thinks infinite;\nTo forgive wrongs darker than death or night;\nTo defy Power, which seems omnipotent;\nTo love, and bear; to hope till Hope creates",
+     "note": "Demogorgon's last stanza, the drama's moral summary."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Prometheus",
+   "side": "Prometheus and his allies",
+   "text": "The Titan who gave knowledge and the arts to mankind and gave Jupiter his power on condition that man be free. Chained to a precipice in the Indian Caucasus for three thousand years, he withdraws his curse against Jupiter at the start of the play, refuses to reveal the secret of Jupiter's fate, endures the Furies' torments and is freed by Hercules in Act III. Shelley's Preface calls him the type of the highest moral and intellectual perfection; critics have read him as the mind of mankind."
+  },
+  {
+   "name": "Asia",
+   "side": "Prometheus and his allies",
+   "text": "An Oceanid, the beloved of Prometheus, exiled to an Indian vale during his punishment. In Act II she follows a dream to the cave of Demogorgon, questions him about the origin of evil, and is transfigured into a radiant figure of love. Her name may reflect a Greek tradition, recorded by Herodotus, that the continent was named after the wife of Prometheus."
+  },
+  {
+   "name": "Panthea",
+   "side": "Prometheus and his allies",
+   "text": "An Oceanid, Asia's sister, who watches over Prometheus in Act I and carries his love to Asia in Act II. Her dreams transmit visions between the lovers, and in Act IV she describes the visions of the Moon and the Earth."
+  },
+  {
+   "name": "Ione",
+   "side": "Prometheus and his allies",
+   "text": "The youngest of the three Oceanid sisters, who watches with Panthea at Prometheus' feet and shares her visions in Act IV. She is more timid than Panthea, and in Act III she carries the shell of Proteus to the Spirit of the Hour."
+  },
+  {
+   "name": "The Earth",
+   "side": "Prometheus and his allies",
+   "text": "Prometheus' mother, the living spirit of the planet, who suffered with him under Jupiter. She explains the shadow world and the curse in Act I, revives at her son's touch in Act III, and in Act IV sings a duet of rejoicing with the Moon."
+  },
+  {
+   "name": "Hercules",
+   "side": "Prometheus and his allies",
+   "text": "The hero who unbinds Prometheus at the start of Act III. In Aeschylus' lost sequel he shot the eagle; Shelley gives him only a few lines, since strength frees the Titan only after the inner liberation is complete."
+  },
+  {
+   "name": "The Spirit of the Hour",
+   "side": "Spirits",
+   "text": "The spirit who drives Asia's chariot in Act II and, in Act III, sounds the shell of Proteus over the world and describes the transformed humanity it then saw."
+  },
+  {
+   "name": "The Spirit of the Earth",
+   "side": "Spirits",
+   "text": "A winged child, devoted to Asia, who guides the lovers to their cave and reports on the beauty of the renewed creation. In Act IV it sleeps within the spinning sphere described by Panthea."
+  },
+  {
+   "name": "The Moon",
+   "side": "Spirits",
+   "text": "In Act IV, a voice that answers the Earth in a long love duet, coming back to life in the warmth of the Earth's joy."
+  },
+  {
+   "name": "Demogorgon",
+   "side": "Powers",
+   "text": "A shapeless power that sits in darkness in a cave beneath the mountains. He answers Asia's questions cryptically, descends upon Jupiter as his 'child' in Act III and drags him into the abyss, and speaks the final address of the drama. His meaning, Necessity, potentiality, the people or something else, is the most contested question in the poem."
+  },
+  {
+   "name": "Jupiter",
+   "side": "Powers",
+   "text": "The tyrant of heaven, who owes his power to Prometheus and has betrayed the condition on which it was given. He appears in person only in Act III, Scene 1, where he boasts of his coming omnipotence and falls. His Phantasm repeats the curse in Act I."
+  },
+  {
+   "name": "Mercury",
+   "side": "Powers",
+   "text": "Jupiter's messenger, who comes in Act I to persuade Prometheus to reveal the secret. He is reluctant and compassionate, a servant of tyranny who sees its wrongs but obeys."
+  },
+  {
+   "name": "The Furies",
+   "side": "Powers",
+   "text": "Jupiter's agents of torture in Act I, who torment Prometheus with visions of the failure of human hopes: the corruption of Christianity, the collapse of the French Revolution and the paralysis of the good."
+  },
+  {
+   "name": "Thetis",
+   "side": "Powers",
+   "text": "The sea-nymph whose marriage to Jupiter, in Shelley's version, produces not the heir he expects but his downfall. In Greek myth the prophecy about her son is what led to her marriage with Peleus and the birth of Akhilleus."
+  },
+  {
+   "name": "Ocean and Apollo",
+   "side": "Powers",
+   "text": "The old gods of sea and sun who report the fall of Jupiter in Act III, Scene 2, and look forward to a world free of war."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Liberation through inner change",
+   "text": [
+    "The drama's central claim is that tyranny is sustained by the minds of those it oppresses. Prometheus' first act is not to resist Jupiter but to stop hating him; once the curse is withdrawn, the logic of the action leads inexorably to Jupiter's fall. This is a political theory dramatised as myth, close to Godwin's argument that institutions change when opinion changes [[godwin1793]] [[wasserman1965]].",
+    "The poem is not purely psychological, however. Its suffering is physical, its history includes Christ and the French Revolution, and its renewed world has empty thrones and freed slaves. Readers have argued about how far the drama's inwardness is a substitute for political action and how far it is an analysis of what makes political action succeed or fail [[cameron1974]] [[dawson1980]]."
+   ]
+  },
+  {
+   "title": "Love as a cosmic power",
+   "text": [
+    "Love is the one thing Demogorgon exempts from change, and it is the principle by which the universe is renewed. In Asia it takes personal form; in the duet of Earth and Moon it becomes a law of nature. Shelley's idea of love owes much to Plato's Symposium, which he translated in 1818, and to the Neoplatonic tradition in which love binds the cosmos [[baker1948]] [[wasserman1971]].",
+    "Asia's transfiguration shows that love is not merely an emotion but a mode of knowledge and action. It is she, not Prometheus, who makes the journey to the source of power, and it is her question that brings the Hour of liberation [[gelpi1992]] [[bloom1959]]."
+   ]
+  },
+  {
+   "title": "Forgiveness and endurance",
+   "text": [
+    "The virtues the drama celebrates are passive in appearance: endurance, pity, forgiveness, hope. Demogorgon's last speech lists them as the spells that can bind destruction should it break loose again. The poem thus rejects revenge, the dynamic of action that it associates with Jupiter and with Milton's Satan [[reiman2002]] [[oneill1989]].",
+    "This ethic has Christian overtones, and the Furies' vision of the crucified Christ makes the connection explicit. Yet Shelley distinguishes the suffering of Christ from the persecuting religion founded in his name, and his Prometheus redeems no one but himself, by changing his own will [[curran1975]]."
+   ]
+  },
+  {
+   "title": "Language, poetry and the imagination",
+   "text": [
+    "Prometheus gave man speech, and speech created thought; in Act IV language is 'a perpetual Orphic song' that orders the world. The poem's faith in words as a creative power is matched by a scepticism about their limits: 'the deep truth is imageless'. Much recent criticism has explored this tension between the drama's claims for language and its awareness that images cannot capture what they point to [[keach1984]] [[hogle1988]]."
+   ]
+  },
+  {
+   "title": "Time, change and mutability",
+   "text": [
+    "The play begins with endless hours and ends with the burial of Time. Yet even the renewed man is subject to chance, death and mutability, and Prometheus' cave is a place for talking about change. Shelley's utopia is therefore not a release from time but a transformation of its meaning, a point the closing qualification of Act III makes with care [[oneill1989]] [[wasserman1971]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Echoes and voices",
+   "text": "Sound carries the action: the Voices of the elements remember the curse, Echoes repeat the Earth's lament, the Dream calls 'Follow! Follow!', the spirits sing the sisters down into Demogorgon's cave and the shell of Proteus announces renewal. The drama is organised around listening."
+  },
+  {
+   "title": "Veils and masks",
+   "text": "Truth in the play is hidden behind veils: Asia's radiance is veiled, Demogorgon is a veiled form, and the Spirit of the Hour declares that the 'painted veil' of life has been torn aside and the 'loathsome mask' has fallen. Liberation is imagined as unveiling."
+  },
+  {
+   "title": "Dreams and visions",
+   "text": "Panthea's dreams, the Earth's shadow world, the Furies' visions and the visions of Act IV make the drama a sequence of seeings. Knowledge passes from mind to mind as images rather than arguments."
+  },
+  {
+   "title": "Thaw and spring",
+   "text": "The ice of the Caucasus in Act I gives way to the spring of Asia's vale, the avalanche of Act II and the warmth that revives the Moon in Act IV. The seasonal cycle mirrors the moral one."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The chains and the precipice",
+   "text": "Prometheus' bonds represent not only Jupiter's tyranny but the self-binding of hatred. They are loosened by Hercules only after the curse that tied the Titan to his enemy has been withdrawn."
+  },
+  {
+   "title": "The curse",
+   "text": "Spoken by Jupiter's own phantom, the curse is the symbol of the mutual dependence of tyrant and rebel. Its retraction is the drama's central act."
+  },
+  {
+   "title": "The cave",
+   "text": "Caves recur: Demogorgon's cave of power, the Earth's caverns, and the cave where Prometheus and Asia will live. The last, filled with art and thought, reverses Plato's cave of illusion."
+  },
+  {
+   "title": "The shell of Proteus",
+   "text": "Asia's wedding gift, sounded by the Spirit of the Hour, is the trumpet of a new world: an emblem of poetry as the voice that announces and accomplishes change."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Aeschylus and the refusal of reconciliation",
+   "text": [
+    "Shelley's Preface frames the drama as a deliberate departure from Aeschylus, whose lost sequel seems to have reconciled Prometheus and Zeus. The Greek fragments are too scanty for certainty, and scholars disagree about how the Aeschylean trilogy ended and even about whether the surviving Prometheus Bound is by Aeschylus. Shelley's poem is therefore a response not to a known text but to a reconstructed one [[griffith1977]] [[griffith1983]].",
+    "Critics have asked what is gained by Shelley's change. For Wasserman and Curran, the refusal of reconciliation reflects a vision in which good and evil cannot be compromised; for Wallace and Webb, it is part of a larger Romantic reinvention of Greek tragedy as a myth of liberation rather than of balance [[wasserman1965]] [[curran1975]] [[wallace1997]] [[webb1977]]."
+   ],
+   "cite": [
+    "griffith1977",
+    "griffith1983",
+    "wasserman1965",
+    "curran1975",
+    "wallace1997",
+    "webb1977"
+   ]
+  },
+  {
+   "title": "The retraction of the curse",
+   "text": [
+    "Why does Prometheus repent of the curse, and why does it matter? For Wasserman, the curse represents the mind's enslavement to the hatred that sustains Jupiter; its retraction frees the mind and makes the tyrant's fall inevitable. Bloom reads it as the turn from an 'I–It' relation of mastery and hatred to an 'I–Thou' relation of love [[wasserman1965]] [[bloom1959]].",
+    "Others stress the paradox that Prometheus does not reveal the secret and remains in chains for two more acts; his change is necessary but not sufficient. Hogle reads the retraction as a release from fixed patterns of thought into a process of continual transformation, while political critics connect it with Godwin's opposition to revenge and violence [[hogle1988]] [[scrivener1982]] [[godwin1793]]."
+   ],
+   "cite": [
+    "wasserman1965",
+    "bloom1959",
+    "hogle1988",
+    "scrivener1982",
+    "godwin1793"
+   ]
+  },
+  {
+   "title": "Who or what is Demogorgon?",
+   "text": [
+    "Demogorgon has been read as Necessity (the impersonal law of cause and effect that Shelley had celebrated in Queen Mab), as the potentiality of change, as the people rising against their masters, as eternity, and as the unknowable ground of being. Each reading finds support in the text, and none explains everything [[wasserman1965]] [[curran1975]] [[cameron1974]].",
+    "Some critics take the indeterminacy as the point. Demogorgon is described almost entirely by negation, and he returns Asia's questions to her; the 'imageless' truth he names may be a principle of the drama's form as much as of its philosophy. O'Neill and Hogle emphasise the poem's scepticism, while Bloom sees Demogorgon as an amoral force that the drama must contain [[oneill1989]] [[hogle1988]] [[bloom1959]]."
+   ],
+   "cite": [
+    "wasserman1965",
+    "curran1975",
+    "cameron1974",
+    "oneill1989",
+    "hogle1988",
+    "bloom1959"
+   ]
+  },
+  {
+   "title": "Asia and the gender of the drama",
+   "text": [
+    "Older criticism made Asia an allegory of Love, Nature or Intellectual Beauty, the female complement to Prometheus' male will. Baker's and Bloom's readings gave her a central role in the action, since it is she who descends to Demogorgon [[baker1948]] [[bloom1959]].",
+    "Feminist criticism has asked whether the drama's idealisation of Asia frees or confines her. Gelpi relates Asia and the Earth to Romantic ideas of maternity and to the acquisition of language, while others note that the renewed world of Act III, Scene 4 explicitly includes the liberation of women [[gelpi1992]] [[morton2006]]."
+   ],
+   "cite": [
+    "baker1948",
+    "bloom1959",
+    "gelpi1992",
+    "morton2006"
+   ]
+  },
+  {
+   "title": "Act IV: completion or addition?",
+   "text": [
+    "Mary Shelley's note recording that Act IV was added months after the drama seemed complete has encouraged some readers to treat it as a superfluous coda that weakens the dramatic ending of Act III. Others defend it as the necessary extension of a moral revolution into cosmic and scientific terms, without which the drama would end on the qualified note of mutability [[reiman2002]] [[grabo1930]].",
+    "Recent critics have considered the act's form: an oratorio of voices rather than a dramatic action. Tetreault and Curran read it as the fulfilment of the lyrical drama's tendency to dissolve dialogue into song, and it has been compared to the Renaissance masque, which also ends in harmonious celebration [[tetreault1987]] [[curran1975]]."
+   ],
+   "cite": [
+    "reiman2002",
+    "grabo1930",
+    "tetreault1987",
+    "curran1975"
+   ]
+  },
+  {
+   "title": "Godwin, Satan and the politics of the poem",
+   "text": [
+    "The drama's politics have been read in very different ways. Cameron saw it as an allegory of contemporary politics and of the radical reform movement; Dawson places it alongside A Philosophical View of Reform and stresses Shelley's gradualism; Scrivener connects it with Godwin's philosophical anarchism [[cameron1974]] [[dawson1980]] [[scrivener1982]].",
+    "The Preface's contrast with Milton's Satan is central to these debates. Shelley admired Satan's resistance but rejected his ambition and revenge; Prometheus is a Satan without the will to power. Butler places this choice within the wider Romantic rewriting of Milton and Greek myth for radical purposes [[butler1981]] [[reiman2002]]."
+   ],
+   "cite": [
+    "cameron1974",
+    "dawson1980",
+    "scrivener1982",
+    "butler1981",
+    "reiman2002"
+   ]
+  },
+  {
+   "title": "The lyrical drama and Shelley's style",
+   "text": [
+    "Prometheus Unbound was never meant for the stage, and Shelley's subtitle signals a hybrid form. Critics have related it to Greek tragedy, to the masque, to Calderón and to the oratorio. Tetreault shows how the drama's dialogue repeatedly yields to lyric, as if the form itself enacted the passage from conflict to harmony [[tetreault1987]] [[curran1975]].",
+    "The style has been the poem's most controversial feature. Leavis charged Shelley with a vagueness in which images dissolve into feeling; Keach and O'Neill have replied with close analyses of Shelley's control of syntax, sound and imagery and of the deliberate evanescence of his figures [[leavis1936]] [[keach1984]] [[oneill1989]]."
+   ],
+   "cite": [
+    "tetreault1987",
+    "curran1975",
+    "leavis1936",
+    "keach1984",
+    "oneill1989"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "PU I",
+   "quote": "It doth repent me: words are quick and vain;\nGrief for awhile is blind, and so was mine.\nI wish no living thing to suffer pain.",
+   "who": "Prometheus",
+   "explanation": "The retraction of the curse is the drama's pivot. After the Phantasm of Jupiter has repeated Prometheus' old words of defiance, the Titan answers with three plain, rhymed lines: his anger was blind, and he now wishes no suffering to anyone, including his enemy. The rest of the action unfolds from this change of will."
+  },
+  {
+   "ref": "PU I",
+   "quote": "The good want power, but to weep barren tears.\nThe powerful goodness want: worse need for them.\nThe wise want love; and those who love want wisdom;\nAnd all best things are thus confused to ill.",
+   "who": "A Fury",
+   "explanation": "The Fury's most painful torture is not physical but political: the diagnosis of a world in which virtue, power, wisdom and love are always separated. The chiastic lines enact the confusion they describe, and the passage looks back to the failure of the French Revolution, which the Furies have just shown."
+  },
+  {
+   "ref": "PU II.iv",
+   "quote": "He gave man speech, and speech created thought,\nWhich is the measure of the universe;",
+   "who": "Asia",
+   "explanation": "In Asia's history of the world, language is Prometheus' first gift, and thought follows from it. The claim that thought measures the universe reflects Shelley's idealism; it also anticipates the hymn to language in Act IV."
+  },
+  {
+   "ref": "PU II.iv",
+   "quote": "Is wanting, the deep truth is imageless;",
+   "who": "Demogorgon",
+   "explanation": "Demogorgon's answer to Asia's question about who rules Jupiter is a statement of scepticism: ultimate truth cannot be put into images. The line is often read as a comment on the poem itself, which multiplies images while admitting their limits."
+  },
+  {
+   "ref": "PU II.iv",
+   "quote": "Fate, Time, Occasion, Chance and Change? To these\nAll things are subject but eternal Love.",
+   "who": "Demogorgon",
+   "explanation": "Love alone stands outside the sway of fate and mutability. The lines give the drama's philosophical foundation in the form of a riddle: Demogorgon tells Asia what she already knows."
+  },
+  {
+   "ref": "PU II.v",
+   "quote": "My soul is an enchanted boat,\nWhich, like a sleeping swan, doth float\nUpon the silver waves of thy sweet singing;",
+   "who": "Asia",
+   "explanation": "Asia's lyric begins a voyage carried by music. The boat, the swan and the silver waves are images of passive, blissful motion, and the voyage runs backward through the stages of life towards a new beginning."
+  },
+  {
+   "ref": "PU III.i",
+   "quote": "Rejoice! henceforth I am omnipotent.",
+   "who": "Jupiter",
+   "explanation": "Jupiter's boast at the opening of his only scene is answered within minutes by his fall. The line is a classic piece of dramatic irony and also suggests that tyranny is most confident at the point of collapse."
+  },
+  {
+   "ref": "PU III.iv",
+   "quote": "The loathsome mask has fallen, the man remains\nSceptreless, free, uncircumscribed, but man\nEqual, unclassed, tribeless, and nationless,",
+   "who": "The Spirit of the Hour",
+   "explanation": "The vision of the renewed humanity is built from negatives: the free man has no sceptre, class, tribe or nation. The repeated 'but man' insists that freedom does not make him a god."
+  },
+  {
+   "ref": "PU IV",
+   "quote": "Language is a perpetual Orphic song,\nWhich rules with Daedal harmony a throng\nOf thoughts and forms, which else senseless and shapeless were.",
+   "who": "The Earth",
+   "explanation": "In the renewed world, language is the ordering music that gives form to thought. Orpheus moved stones and beasts by song; Daedalus was the master craftsman. The lines are a high point of Shelley's faith in poetry's creative power."
+  },
+  {
+   "ref": "PU IV",
+   "quote": "To suffer woes which Hope thinks infinite;\nTo forgive wrongs darker than death or night;\nTo defy Power, which seems omnipotent;\nTo love, and bear; to hope till Hope creates",
+   "who": "Demogorgon",
+   "explanation": "Demogorgon's final stanza summarises the drama's ethic: endurance, forgiveness, defiance, love and hope. The verbs are infinitives, not commands or descriptions, as if offering a programme to every future generation."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Shelley refuse to follow Aeschylus in reconciling Prometheus with Jupiter?",
+   "hint": "Consider the Preface, the character of Prometheus, and what reconciliation would imply about the relation between oppressor and oppressed."
+  },
+  {
+   "q": "What is the significance of having the curse repeated by the Phantasm of Jupiter?",
+   "hint": "Think about the resemblance between the curser and the cursed, and what Prometheus learns by hearing his own words in his enemy's mouth."
+  },
+  {
+   "q": "How do the Furies' visions in Act I connect the myth to history?",
+   "hint": "Look at the references to Christ and the French Revolution, and at the Fury's speech about the good who lack power."
+  },
+  {
+   "q": "Who or what is Demogorgon? Argue for one interpretation and acknowledge the evidence against it.",
+   "hint": "Consider his name and sources, his answers to Asia, his descent on Jupiter, and his final speech."
+  },
+  {
+   "q": "Why is Asia, rather than Prometheus, the protagonist of Act II?",
+   "hint": "Think about the drama's structure, the theme of love, and the relationship between will and desire."
+  },
+  {
+   "q": "What does Demogorgon mean by saying 'the deep truth is imageless'? How does this affect the way we read the poem's imagery?",
+   "hint": "Consider Shelley's scepticism and the many images of veils, light and shadow."
+  },
+  {
+   "q": "Why is Jupiter's fall in Act III so brief?",
+   "hint": "Compare the length and intensity of Act III, Scene 1 with Act I, and ask what the drama implies about the basis of tyranny."
+  },
+  {
+   "q": "How does the Spirit of the Hour's account of the renewed world define freedom?",
+   "hint": "Notice the negatives, the treatment of women, and the qualification that man remains subject to chance, death and mutability."
+  },
+  {
+   "q": "Is Act IV a necessary part of the drama or a later addition that weakens it?",
+   "hint": "Consider Mary Shelley's note that it was added months after the first three acts, the act's lyric form, its scientific imagery and Demogorgon's final speech."
+  },
+  {
+   "q": "How does Prometheus differ from Milton's Satan, and why does Shelley insist on the difference?",
+   "hint": "Use the Preface's comparison, the retraction of the curse, and the theme of revenge."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "baker1948",
+   "text": "Baker, Carlos. Shelley's Major Poetry: The Fabric of a Vision. Princeton: Princeton University Press, 1948."
+  },
+  {
+   "id": "bloom1959",
+   "text": "Bloom, Harold. Shelley's Mythmaking. New Haven: Yale University Press, 1959."
+  },
+  {
+   "id": "butler1981",
+   "text": "Butler, Marilyn. Romantics, Rebels and Reactionaries: English Literature and Its Background, 1760–1830. Oxford: Oxford University Press, 1981."
+  },
+  {
+   "id": "cameron1974",
+   "text": "Cameron, Kenneth Neill. Shelley: The Golden Years. Cambridge, MA: Harvard University Press, 1974."
+  },
+  {
+   "id": "curran1975",
+   "text": "Curran, Stuart. Shelley's Annus Mirabilis: The Maturing of an Epic Vision. San Marino, CA: Huntington Library, 1975."
+  },
+  {
+   "id": "dawson1980",
+   "text": "Dawson, P. M. S. The Unacknowledged Legislator: Shelley and Politics. Oxford: Clarendon Press, 1980."
+  },
+  {
+   "id": "gelpi1992",
+   "text": "Gelpi, Barbara Charlesworth. Shelley's Goddess: Maternity, Language, Subjectivity. New York: Oxford University Press, 1992."
+  },
+  {
+   "id": "godwin1793",
+   "text": "Godwin, William. An Enquiry Concerning Political Justice, and Its Influence on General Virtue and Happiness. 2 vols. London: G. G. J. and J. Robinson, 1793."
+  },
+  {
+   "id": "grabo1930",
+   "text": "Grabo, Carl. A Newton among Poets: Shelley's Use of Science in Prometheus Unbound. Chapel Hill: University of North Carolina Press, 1930."
+  },
+  {
+   "id": "grabo1935",
+   "text": "Grabo, Carl. Prometheus Unbound: An Interpretation. Chapel Hill: University of North Carolina Press, 1935."
+  },
+  {
+   "id": "griffith1977",
+   "text": "Griffith, Mark. The Authenticity of 'Prometheus Bound'. Cambridge: Cambridge University Press, 1977."
+  },
+  {
+   "id": "griffith1983",
+   "text": "Griffith, Mark, ed. Aeschylus: Prometheus Bound. Cambridge Greek and Latin Classics. Cambridge: Cambridge University Press, 1983."
+  },
+  {
+   "id": "hogle1988",
+   "text": "Hogle, Jerrold E. Shelley's Process: Radical Transference and the Development of His Major Works. New York: Oxford University Press, 1988."
+  },
+  {
+   "id": "holmes1974",
+   "text": "Holmes, Richard. Shelley: The Pursuit. London: Weidenfeld and Nicolson, 1974."
+  },
+  {
+   "id": "keach1984",
+   "text": "Keach, William. Shelley's Style. New York: Methuen, 1984."
+  },
+  {
+   "id": "leavis1936",
+   "text": "Leavis, F. R. Revaluation: Tradition and Development in English Poetry. London: Chatto and Windus, 1936."
+  },
+  {
+   "id": "morton2006",
+   "text": "Morton, Timothy, ed. The Cambridge Companion to Shelley. Cambridge: Cambridge University Press, 2006."
+  },
+  {
+   "id": "oneill1989",
+   "text": "O'Neill, Michael. The Human Mind's Imaginings: Conflict and Achievement in Shelley's Poetry. Oxford: Clarendon Press, 1989."
+  },
+  {
+   "id": "reiman2002",
+   "text": "Reiman, Donald H., and Neil Fraistat, eds. Shelley's Poetry and Prose. 2nd ed. Norton Critical Edition. New York: W. W. Norton, 2002."
+  },
+  {
+   "id": "scrivener1982",
+   "text": "Scrivener, Michael Henry. Radical Shelley: The Philosophical Anarchism and Utopian Thought of Percy Bysshe Shelley. Princeton: Princeton University Press, 1982."
+  },
+  {
+   "id": "tetreault1987",
+   "text": "Tetreault, Ronald. The Poetry of Life: Shelley and Literary Form. Toronto: University of Toronto Press, 1987."
+  },
+  {
+   "id": "wallace1997",
+   "text": "Wallace, Jennifer. Shelley and Greece: Rethinking Romantic Hellenism. Basingstoke: Macmillan, 1997."
+  },
+  {
+   "id": "wasserman1965",
+   "text": "Wasserman, Earl R. Shelley's Prometheus Unbound: A Critical Reading. Baltimore: Johns Hopkins Press, 1965."
+  },
+  {
+   "id": "wasserman1971",
+   "text": "Wasserman, Earl R. Shelley: A Critical Reading. Baltimore: Johns Hopkins University Press, 1971."
+  },
+  {
+   "id": "webb1977",
+   "text": "Webb, Timothy. Shelley: A Voice Not Understood. Manchester: Manchester University Press, 1977."
+  }
+ ]
+}
