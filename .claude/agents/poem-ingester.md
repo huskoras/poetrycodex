@@ -30,7 +30,7 @@ report `status: "skipped"` with the reason. Never pad, never guess, never fabric
 - **Spot-check at least 5 poems** against the source (first, last, three from the middle):
   does the title match the text, is the poem complete, is the stanza structure intact?
   Record the result in your report.
-- Only verse. Plays, prose and letters are out even when the source bundles them. Exception (owner's ruling, 17 Oct 2026): a verse play or poetic prose work in the poetry tradition (e.g. Shakespeare's history plays, Blake's Marriage of Heaven and Hell) may come in as a WORK when an editor's item explicitly assigns it; never on an ingester's own initiative. Novels, history and ordinary prose stay out.
+- Only verse. Plays, prose and letters are out even when the source bundles them. Exception (owner's ruling, 17 Oct 2026): a verse play or poetic prose work in the poetry tradition (e.g. Shakespeare's history plays, Blake's Marriage of Heaven and Hell) may come in as a WORK when an editor's item explicitly assigns it; never on an ingester's own initiative. Novels, history and ordinary prose stay out. Second exception (owner's ruling, 20 Oct 2026): the ANCIENT SOURCES of Greece and Rome (and the ancient Near East) come in whole, whether verse or prose: drama, history, biography, philosophy, oratory and letters (e.g. Herodotus, Thucydides, Plutarch, Livy, Tacitus, Plato, Aristophanes, Plautus), each as a WORK in a pre-1931 English translation with a named translator, when an editor's item assigns it.
 - Keep the source's spelling. Normalise long-s (ſ → s). Keep stanza breaks as a blank line.
 
 ## What you write

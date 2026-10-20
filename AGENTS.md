@@ -484,7 +484,7 @@ Everything here is **public domain**, and it must stay that way.
    textual-variant apparatus, transcriber's notes, publisher pages, tables of contents,
    biographies, letters, prose essays, or stage plays. Several sources bundle plays with
    poems (Shakespeare, Jonson, Marlowe, Greene, Lodge) — take the verse only.
-   Exception (owner's ruling, 17 Oct 2026): a verse play or poetic prose work in the poetry tradition (e.g. Shakespeare's history plays, Blake's Marriage of Heaven and Hell) may come in as a WORK when an editor's item explicitly assigns it; never on an ingester's own initiative. Novels, history and ordinary prose stay out.
+   Exception (owner's ruling, 17 Oct 2026): a verse play or poetic prose work in the poetry tradition (e.g. Shakespeare's history plays, Blake's Marriage of Heaven and Hell) may come in as a WORK when an editor's item explicitly assigns it; never on an ingester's own initiative. Novels, history and ordinary prose stay out. Second exception (owner's ruling, 20 Oct 2026): the ANCIENT SOURCES of Greece and Rome (and the ancient Near East) come in whole, whether verse or prose: drama, history, biography, philosophy, oratory and letters (e.g. Herodotus, Thucydides, Plutarch, Livy, Tacitus, Plato, Aristophanes, Plautus), each as a WORK in a pre-1931 English translation with a named translator, when an editor's item assigns it.
 5. **Images:** portraits from Wikipedia/Wikimedia (public domain). For anonymous poets,
    use a *relevant historical artifact* instead of a portrait (Beowulf Poet → Sutton Hoo
    helmet; Gawain Poet → Cotton Nero A.x manuscript; El Cid → the Tizona sword) and say
