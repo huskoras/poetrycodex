@@ -1,0 +1,894 @@
+{
+ "work": "oedipus-the-king",
+ "title": "Oedipus the King (Oedipus Tyrannus)",
+ "author": "Sophocles",
+ "quoteEdition": "oedipus-the-king-campbell",
+ "updated": "2026-10-19",
+ "unit": "Part",
+ "sameSections": false,
+ "glance": [
+  {
+   "label": "Greek title",
+   "value": "Oidipous Tyrannos. The epithet 'Tyrannos' (ruler, especially one who has come to power from outside the line of succession) seems to have been added later to tell the play apart from Oedipus at Colonus; Aristotle calls it simply 'Oedipus'. The Latin form is Oedipus Rex"
+  },
+  {
+   "label": "Author",
+   "value": "Sophocles of Athens (c. 497/6–406/5 BC), author of over a hundred and twenty plays, of which seven tragedies survive complete"
+  },
+  {
+   "label": "First performed",
+   "value": "At the City Dionysia in Athens; the year is not recorded. Most scholars place it between about 436 and 425 BC, and many link the opening plague with the plague that struck Athens from 430. An ancient note says that Sophocles won only second prize with it"
+  },
+  {
+   "label": "Length",
+   "value": "1,530 lines in the standard Greek numbering, which this guide uses. Campbell's verse translation does not follow the Greek line for line, so the numbers will not match its lines exactly"
+  },
+  {
+   "label": "Setting",
+   "value": "Before the royal palace of Thebes, in a single day; the action never leaves the doorway of the house"
+  },
+  {
+   "label": "Form",
+   "value": "Greek tragedy: spoken scenes (episodes) in iambic verse alternate with sung and danced odes (stasima) by a chorus of fifteen Theban elders; three speaking actors share all the roles"
+  },
+  {
+   "label": "Structure",
+   "value": "Prologue, parodos (entry song), four episodes each followed by a stasimon, and the exodos (final scene)"
+  },
+  {
+   "label": "The myth before the play",
+   "value": "An oracle warns Laius of Thebes that his son will kill him; the baby is exposed on Mount Cithaeron with pierced ankles, saved, and raised as the son of the king and queen of Corinth. Grown up, Oedipus kills Laius at a crossroads without knowing him, frees Thebes from the Sphinx, and marries the widowed queen, his mother Jocasta"
+  },
+  {
+   "label": "The Theban plays",
+   "value": "Antigone (probably c. 442–441 BC), Oedipus the King (c. 430s–420s) and Oedipus at Colonus (produced in 401, after Sophocles' death) were written decades apart for different festivals; they are not a trilogy"
+  },
+  {
+   "label": "Quote edition",
+   "value": "Lewis Campbell's verse translation (first published 1883; World's Classics revision of 1906). Quotations keep his spelling, including 'Tirésias' and 'Thebè'"
+  }
+ ],
+ "context": [
+  "Sophocles wrote for the theatre of Dionysus in Athens, where tragedies were staged in competition at the spring festival of the City Dionysia. Each competing poet offered three tragedies and a satyr play, and the audience numbered many thousands of citizens. Unlike Aeschylus, who often linked his three tragedies into one continuous story, Sophocles usually wrote each play as a self-contained action. Oedipus the King was therefore composed to stand alone, and almost everything a first reader needs to know about the earlier story is revealed, piece by piece, within it.",
+  "The story of Oedipus was old long before Sophocles. In the Odyssey (11.271–280) Odysseus sees in the underworld Epikaste, as Homer calls Jocasta, who married her own son after he had killed his father; the gods soon made it known, she hanged herself, and Oedipus went on ruling in Thebes in misery. Lost epics about Thebes told more, and Aeschylus had staged the fortunes of the family in a connected group of plays in 467 BC (Laius, Oedipus and the surviving Seven against Thebes). What seems to be Sophocles' own is the shape of the action: the discovery is turned into an investigation, run by Oedipus himself, in which every step he takes to save the city brings him closer to the truth about himself [[gantz1993]].",
+  "The year of the first performance is not known. Bernard Knox argued that the plague with which the play opens would have recalled the epidemic that killed perhaps a third of the Athenian population from 430 BC onwards, and he dated the play to about 425; others think the plague is traditional material and prefer a date in the 430s. The connection with Athens is in any case suggestive rather than certain. Knox also showed how much of the play's language belongs to the Athens of its day: the vocabulary of lawcourt inquiry, of medicine and of mathematics, and the figure of the 'tyrannos', the self-made ruler whose power depends on his own intelligence [[knox1956]] [[knox1957]].",
+  "Oedipus the King has been, since Aristotle, the most admired of all Greek tragedies. In the Poetics Aristotle returns to it again and again as his model of the well-made plot, in which reversal and recognition coincide, and the play has shaped European ideas of tragedy ever since. It was rewritten by Seneca, by Dryden and Lee, by Voltaire and by Cocteau, set to music by Stravinsky and filmed by Pasolini, and in 1900 Sigmund Freud made it the cornerstone of his theory of the unconscious [[halliwell1995]] [[freud1953]].",
+  "Students should also know that Oedipus the King, Oedipus at Colonus and Antigone are often printed together as 'the Theban plays', but they were never a trilogy. They were written at intervals across nearly forty years; Antigone, which tells the latest part of the story, was probably the first to be written, and Oedipus at Colonus was staged only after Sophocles' death. The three plays do not always agree in details, and each should be read as a separate work [[easterling1997]] [[jebb1893]]. Line numbers in this guide follow the standard Greek numbering of modern editions; quotations come from Lewis Campbell's verse translation, which does not keep to that numbering line by line [[lloyd-jones1990]] [[finglass2018]] [[campbell1906]]."
+ ],
+ "plot": [
+  "Thebes is dying of a plague that blights the crops, the herds and the births of children. King Oedipus, who saved the city years before by answering the riddle of the Sphinx, has sent his brother-in-law Creon to Apollo's oracle at Delphi. Creon reports that the plague will end only when the killers of the former king, Laius, are driven out or put to death. Oedipus promises to find them and solemnly curses the unknown murderer.",
+  "The blind prophet Teiresias, summoned to help, at first refuses to speak; provoked by Oedipus' anger, he declares that Oedipus himself is the murderer and that he lives in shame with his nearest kin. Oedipus accuses Teiresias and Creon of a plot to seize the throne. Jocasta, his queen, ends the quarrel and tries to comfort him by showing that oracles fail: Laius was told he would die at his son's hands, yet the child was exposed on the mountain and Laius was killed by robbers where three roads meet. The mention of the crossroads makes Oedipus remember a man he killed on his way from Delphi, and he sends for the only surviving witness, a herdsman.",
+  "A messenger from Corinth arrives with news that King Polybus, whom Oedipus believes to be his father, has died of old age. Oedipus rejoices that the oracle which said he would kill his father has proved false, but the messenger, meaning to free him from his remaining fear of marrying his mother, reveals that Polybus and Merope were not his parents: he himself received the baby, with pierced ankles, from a shepherd of Laius on Mount Cithaeron. Jocasta understands, begs Oedipus to stop, and rushes into the palace. The old Theban shepherd, brought in and threatened, confirms that he received the child from Jocasta's hands to be destroyed because of a prophecy, and that he gave it away out of pity.",
+  "A second messenger reports that Jocasta has hanged herself and that Oedipus, finding her body, has blinded himself with the brooches from her dress. Oedipus comes out, blind, and laments with the chorus. Creon, now in charge of the city, treats him with restraint, refuses to exile him until the god has been consulted again, and allows him to embrace his young daughters, Antigone and Ismene, before he is led into the house. The chorus ends with the warning that no mortal should be called happy until he has reached the end of his life without pain."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Prologue: the plague and the oracle",
+   "lines": "1–150",
+   "section": 1,
+   "summary": [
+    "Suppliants, young and old, kneel at the altars before the palace with branches wound in wool. Oedipus comes out to them in person and asks why they have come. The priest of Zeus describes the plague that is destroying Thebes: the crops wither, the cattle die, women give birth to dead children, and a fiery god of pestilence empties the city. He reminds Oedipus that he once freed Thebes from the Sphinx, and asks him to be its saviour again.",
+    "Oedipus answers that he has already acted: he has sent Creon to Delphi to ask Apollo what will save the city. Creon arrives wearing a crown of laurel and reports that the land holds a pollution that must be driven out: the murderers of Laius, the king before Oedipus, must be banished or killed. Laius was killed on a journey to Delphi; one survivor said that robbers attacked him; the Sphinx then distracted the city from any search. Oedipus promises to bring the matter to light, and the suppliants rise."
+   ],
+   "analysis": [
+    "The opening establishes Oedipus at the height of his power and goodness. He is a king who comes out to his people himself, who has already anticipated their request, and who feels the city's suffering as his own. Sophocles makes him sympathetic before he makes him fall. Yet the priest's words also mark a limit: Oedipus is honoured as the first of men, not as a god, and the play will test exactly that difference [[knox1957]].",
+    "Dramatic irony begins at once. Oedipus says that in avenging Laius he serves his own cause, since the killer may one day strike at him too; the audience, knowing the myth, hears every word twice. The plague also ties the private crime to the public world: the sterility of land and women corresponds to the hidden disorder in the royal family, which the Greeks would understand as a pollution (miasma) on the city [[vernant1988]].",
+    "Note how Creon's story of the 'robbers' is told as a plural. Oedipus at once speaks of 'the robber', in the singular, and the question of one killer or many becomes a thread in the investigation. Some critics have made much of the fact that it is never fully resolved [[goodhart1978]] [[ahl1991]]."
+   ],
+   "key": [
+    {
+     "ref": "OT 1",
+     "quote": "Nurslings of Cadmus, children of my care,",
+     "note": "Oedipus addresses the citizens as his children. The father-child language is warm and royal, and also deeply ironic in a play about a man who does not know his own parents."
+    },
+    {
+     "ref": "OT 8",
+     "quote": "Your Oedipus,--a name well known to men.",
+     "note": "Oedipus' confidence in his fame. His name, and what it means, will become the centre of the play."
+    },
+    {
+     "ref": "OT 25–27",
+     "quote": "Earth's buds are nipped, withering the germs within,\nOur cattle lose their increase, and our wives\nHave fruitless travail;",
+     "note": "The plague attacks fertility in field, herd and household. A crime against the family is felt as a failure of birth itself."
+    },
+    {
+     "ref": "OT 132",
+     "quote": "But I will track this evil to the spring\nAnd clear it to the day.",
+     "note": "Oedipus' vow to bring the truth to light. Images of hunting and tracking, and of darkness and light, run through the whole play."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Parodos: the chorus prays for help",
+   "lines": "151–215",
+   "section": 1,
+   "summary": [
+    "The chorus of Theban elders enters singing. They do not yet know the oracle's answer and address the 'voice' from Delphi with fear and hope. They call on Athena, Artemis and Apollo, the three gods who protect against harm, to come as they have come before.",
+    "The middle stanzas describe the plague in vivid lyric detail: the dead lie unburied, women wail at the altars, souls fly one after another to the 'western' realm of the dead. The song ends with a prayer that Zeus, Apollo and Dionysus, the god of Thebes, will drive away the destroying god, here imagined as Ares, the god of war."
+   ],
+   "analysis": [
+    "The parodos widens the scene from the palace to the whole city. Where the prologue was a dialogue of reason and decision, the chorus expresses the community's fear and helplessness. The elders call on many gods; Oedipus, who enters as they finish, says 'your prayers are answered', as if he could stand in for the gods himself. The play will show how wrong that is.",
+    "The final appeal to Dionysus, the Theban god, to blaze against the destroyer 'whom all in Heaven disown' also reminds us that this is a festival performance in honour of Dionysus. The chorus's song is both a part of the story and a ritual act before the Athenian audience [[goldhill1986]]."
+   ],
+   "key": [
+    {
+     "ref": "Parodos",
+     "quote": "Soul after soul is known to wing her flight,\nSwifter than quenchless flame, to the far realm of Night.",
+     "note": "The dead depart like birds or sparks. Lyric metaphor turns statistics into an image of loss."
+    },
+    {
+     "ref": "Parodos",
+     "quote": "And thought finds not a sword to fray\n  This hated pestilence from hearth or hall.",
+     "note": "The elders say that thought cannot help. The play's hero relies on thought above all."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "First Episode: the proclamation and Teiresias",
+   "lines": "216–462",
+   "section": 1,
+   "summary": [
+    "Oedipus addresses the citizens with a formal proclamation. Anyone who knows the murderer must speak; the killer himself, if he confesses, will merely go into exile; no one may shelter, speak to or share sacrifices with the guilty man. Oedipus curses the murderer and adds that if he should be found in his own house, the curse should fall on himself. He declares that he will fight for Laius as if for his own father.",
+    "The chorus suggests consulting Teiresias, and Oedipus has already sent for him. The blind prophet arrives but refuses to speak, wishing he had not come. Oedipus, enraged by his silence, accuses him of planning the murder. Teiresias then tells him plainly that he is the polluter of the land and the murderer he seeks, and that he lives in shame with his nearest kin. Oedipus decides that Teiresias is in the pay of Creon, who wants his throne, and mocks the prophet for having failed to solve the Sphinx's riddle, which he himself answered by thought alone. Before leaving, Teiresias foretells in riddling terms that the murderer is a Theban by birth, brother and father to his children, son and husband to his mother, and that he will leave the city blind and a beggar."
+   ],
+   "analysis": [
+    "The proclamation is a masterpiece of irony: every clause of the curse will come home to its speaker. It also shows Oedipus as a ruler of law and procedure, using the language of public inquiry. His insistence on searching for the truth is admirable; it is also what destroys him [[knox1957]].",
+    "The quarrel with Teiresias sets two kinds of knowledge against each other. Oedipus trusts human intelligence, the skill that defeated the Sphinx; Teiresias speaks with the authority of Apollo. The scene is built on the paradox of sight and blindness: the blind man sees the truth, the man with eyes cannot. Oedipus' taunt that Teiresias is blind 'in eyes and ears and mind' will be turned against him at the end [[segal2001]] [[bushnell1988]].",
+    "Why does Oedipus not take Teiresias' plain statements seriously? Partly because they are too monstrous to believe, partly because his anger has already found a political explanation. The scene also shows a recurring pattern in Oedipus' character: quickness of mind that becomes haste of judgement. Whether this is a 'flaw' that causes his fall is one of the play's great debates (see Debates)."
+   ],
+   "key": [
+    {
+     "ref": "OT 249–251",
+     "quote": "Next, I pray Heaven, should he or they be housed\nWith mine own knowledge in my home, that I\nMay suffer all I imprecate on them.",
+     "note": "Oedipus curses himself without knowing it. The audience hears the verdict before the trial has begun."
+    },
+    {
+     "ref": "OT 316–317",
+     "quote": "Ah! terrible is knowledge to the man\nWhom knowledge profits not.",
+     "note": "Teiresias' first words state the play's central idea: knowledge can destroy the one who has it."
+    },
+    {
+     "ref": "OT 362",
+     "quote": "I say thou art the murderer whom thou seekest.",
+     "note": "The whole truth is spoken early, plainly and in public. The suspense of the play lies not in what is true but in how and when Oedipus will understand it."
+    },
+    {
+     "ref": "OT 397–398",
+     "quote": "The stranger Oedipus, not led by birds,\nBut ravelling out the secret by my thought:",
+     "note": "Oedipus contrasts his own reason with the prophet's bird-signs. His pride in intelligence is both his glory and his blindness."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "First Stasimon: who is the murderer?",
+   "lines": "463–512",
+   "section": 1,
+   "summary": [
+    "The chorus imagines the unknown murderer fleeing like a wild bull through forests and caves, pursued by Apollo and the Fates. In the second half of the ode they turn to Teiresias' words, which have shaken them. They cannot accept or reject them; they know of no quarrel between the house of Laius and the royal family of Corinth that would give Oedipus a motive.",
+    "They conclude that while Zeus and Apollo know everything, a human prophet may be wrong, and that they will not condemn Oedipus until the charge is proved. They remember how he proved his wisdom against the Sphinx, and they remain loyal to him."
+   ],
+   "analysis": [
+    "The chorus stands for the ordinary citizen: pious, cautious and loyal. Its doubt about the reliability of human prophets is reasonable in itself, but it already shows how the play will test belief in oracles. The ode also prepares the audience to see Oedipus as the hunted animal it describes, without the chorus knowing it [[winnington-ingram1980]].",
+    "Notice that the chorus thinks only of a feud between Thebes and Corinth: it still takes Oedipus to be a Corinthian. Its loyalty depends on the very facts that are about to be overturned."
+   ],
+   "key": [
+    {
+     "ref": "OT 485–486",
+     "quote": "Gainsay I cannot, nor yet think him true.",
+     "note": "The elders' suspense mirrors the audience's position: belief and disbelief are held together."
+    },
+    {
+     "ref": "OT 500–504",
+     "quote": "A man through wit\nMay pass another's wisdom in the race.\nBut never, till I see the word fulfilled,\nWill I confirm their clamour 'gainst the King.",
+     "note": "Sensible caution, which still trusts human 'wit'. The play will show that the prophecy was 'fulfilled' long ago."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Second Episode: Creon, Jocasta and the crossroads",
+   "lines": "513–862",
+   "section": 1,
+   "summary": [
+    "Creon comes to defend himself against the charge of treason. Oedipus accuses him to his face. Creon argues that he has no motive: he already shares power with Oedipus and Jocasta without the burdens of kingship, and no sensible man would exchange safe influence for anxious rule. Oedipus will not listen and wants him dead. Jocasta comes out of the palace and, with the chorus, persuades Oedipus to let Creon go; Oedipus yields, but grudgingly.",
+    "Jocasta asks the reason for the quarrel. When she learns that a prophet has accused Oedipus, she tells him not to believe in prophecy: an oracle once told Laius that he would die at the hands of his son, yet the baby, its ankles pinned, was exposed on the mountain, and Laius was killed by robbers 'where three roads meet'. The detail of the crossroads disturbs Oedipus. He questions her about the place, the time, Laius' appearance and his companions, and then tells his own story: his upbringing in Corinth, the drunken man who called him a foundling, his visit to Delphi, the oracle that he would kill his father and marry his mother, his flight from Corinth, and the old man he killed with his staff at a crossroads. One hope remains: if the surviving witness still says 'robbers', in the plural, Oedipus cannot be the killer. Jocasta sends for the man."
+   ],
+   "analysis": [
+    "Creon's speech is a model of calm reasoning and stands in contrast to Oedipus' suspicion. It also shows the political world of the play. Oedipus thinks like a 'tyrannos' whose power was won and must be defended; Creon thinks like a man of the established family who enjoys influence without danger [[knox1957]]. The lyric exchange in which the chorus pleads for Creon reminds us that the city, not the king alone, has a voice.",
+    "Jocasta's attempt to comfort Oedipus is the hinge of the plot. She means to prove that oracles are worthless, and in doing so she gives him the first piece of evidence that convicts him. The irony is double: she discredits Apollo's 'ministers' with a story that is itself the oracle's fulfilment. From this point the investigation of a murder becomes an investigation of Oedipus' own identity [[vernant1988]].",
+    "Oedipus' account of his past is the longest speech in the play, and it is the first time the audience hears the full prehistory. It is important that he left Corinth precisely in order to avoid the oracle: every act of caution led him towards Thebes. Students should also note his fierce temper at the crossroads, which the play neither excuses nor dwells on [[dodds1966]]."
+   ],
+   "key": [
+    {
+     "ref": "OT 584–586",
+     "quote": "Who would choose rule accompanied with fear\nBefore safe slumbers with an equal sway?",
+     "note": "Creon's argument from self-interest. Reasonable, cool, and perhaps a little too comfortable, it contrasts with Oedipus' passionate engagement."
+    },
+    {
+     "ref": "OT 709",
+     "quote": "No mortal thing is touched by soothsaying.",
+     "note": "Jocasta's scepticism, spoken with good intentions. The play will test it to destruction."
+    },
+    {
+     "ref": "OT 715–716",
+     "quote": "Laius was slain, by robbers from abroad,\nSaith Rumour, in a cross-way!",
+     "note": "The crucial detail is dropped in passing. A word meant to reassure becomes the first clue."
+    },
+    {
+     "ref": "OT 813",
+     "quote": "I slew them every one.",
+     "note": "Oedipus' plain admission of the killing at the crossroads. He believes he killed strangers; the audience knows otherwise."
+    },
+    {
+     "ref": "OT 845",
+     "quote": "One man and many cannot be the same.",
+     "note": "Oedipus' last hope rests on a point of logic. The play never directly answers it, which some critics find significant."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Second Stasimon: purity and pride",
+   "lines": "863–910",
+   "section": 1,
+   "summary": [
+    "The chorus prays to live in purity, according to the eternal laws born in heaven, which no mortal made and which never sleep. It warns that 'hybris', violent arrogance, breeds the tyrant, and that it climbs to the heights only to fall into ruin.",
+    "The elders ask the gods to punish anyone who acts with contempt for justice and the gods. Their ode ends with a startling worry: if oracles are not fulfilled, why should they dance in honour of the gods? They pray to Zeus to make good the old prophecies to Laius, because faith in Apollo is fading."
+   ],
+   "analysis": [
+    "This is one of the most debated odes in Greek tragedy. Whom does the chorus mean by the 'tyrant' who is born of pride? It has heard Oedipus threaten Creon and Jocasta mock prophecy, and some readers take the ode as a judgement on Oedipus; others think it is a general reflection, or a response chiefly to Jocasta's scepticism, which threatens the whole basis of religion [[winnington-ingram1980]] [[dawe2006]].",
+    "The chorus's question, 'Why should I dance?', has an extraordinary effect in the theatre. The chorus is dancing at a religious festival as it asks it. The stability of the gods' order, of the city's worship and of the drama itself is at stake in whether the oracle comes true [[goldhill1986]] [[vernant1988]]."
+   ],
+   "key": [
+    {
+     "ref": "OT 873",
+     "quote": "Pride breeds the tyrant: monstrous birth!",
+     "note": "A famous line in the Greek ('hybris phuteuei tyrannon'). The word 'tyrannos' links it to the play's title, though whether it is aimed at Oedipus is disputed."
+    },
+    {
+     "ref": "OT 895–896",
+     "quote": "If honour to such lives be given,\nWhat needs our choir to hymn the power of Heaven?",
+     "note": "The chorus questions its own role. If prophecies fail, worship, including this dance, loses its meaning."
+    },
+    {
+     "ref": "OT 909–910",
+     "quote": "Apollo's glory groweth pale,\nAnd holiest rites are prone to faint and fail.",
+     "note": "The chorus fears for religion itself. The plot will 'answer' it in the most terrible way."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Third Episode: the messenger from Corinth",
+   "lines": "911–1085",
+   "section": 1,
+   "summary": [
+    "Jocasta, though she has mocked prophecy, comes out to pray at Apollo's altar for relief from Oedipus' fear. At once a messenger arrives from Corinth: Polybus is dead, and the Corinthians want Oedipus as their king. Jocasta sends for Oedipus in triumph. He learns that Polybus died of old age and sickness, and he too declares the oracles worthless. Only one fear is left: his mother Merope is still alive.",
+    "Jocasta urges him to live at random, as chance decides, and reminds him that many men have dreamt of sleeping with their mothers. The messenger, hoping to remove the fear and earn a reward, reveals that Polybus was not his father: he himself, as a shepherd on Cithaeron, received the baby from a herdsman of Laius and gave it to the childless king. The baby's ankles had been pierced, and from them came the name 'Oedipus'. The chorus thinks the herdsman is the same man already summoned. Jocasta, who now understands, begs Oedipus to stop searching and, when he refuses, cries out to him and rushes into the palace. Oedipus thinks she is ashamed that he may prove to be of low birth, and calls himself the child of Fortune."
+   ],
+   "analysis": [
+    "This is the scene Aristotle cites in Poetics chapter 11 as his example of peripeteia, reversal: the messenger comes to cheer Oedipus and free him from fear, and by revealing who he is does the opposite. Good news turns into catastrophe within a few lines, and the reversal leads straight on to recognition [[halliwell1995]] [[halliwell1986]].",
+    "The scene is full of misunderstanding. Jocasta prays to the very god she has just mocked; the messenger thinks he is giving comfort; Oedipus mistakes Jocasta's horror for snobbery. Jocasta's line about dreams of sleeping with one's mother was later quoted by Freud as evidence that the play touches a universal wish [[freud1953]].",
+    "Oedipus' speech as 'son of Fortune' (Tyche) is his last moment of exaltation. He accepts uncertain origins with a kind of heroic freedom: if he is no one's son, he is the son of chance and of time. The chorus will soon tell him what time has truly revealed [[knox1964]]."
+   ],
+   "key": [
+    {
+     "ref": "OT 919",
+     "quote": "To thee, for thou art nearest, Lykian God,",
+     "note": "Jocasta prays to Apollo, whose statue stands by the door. The answer to her prayer arrives at once, in the person of the messenger."
+    },
+    {
+     "ref": "OT 946",
+     "quote": "Voices of prophecy, where are ye now?",
+     "note": "Jocasta's moment of triumph over the oracles, which the next few hundred lines will undo."
+    },
+    {
+     "ref": "OT 981–982",
+     "quote": "Many a man ere now in dreams hath lain\nWith her who bare him.",
+     "note": "Jocasta means this as reassurance. Freud made it the key text of the 'Oedipus complex'."
+    },
+    {
+     "ref": "OT 1034",
+     "quote": "Thy feet were pierced. 'Twas I unfastened them.",
+     "note": "The physical sign of identity. Oedipus' name was traditionally explained as 'swollen foot'."
+    },
+    {
+     "ref": "OT 1068",
+     "quote": "Never may'st thou discover who thou art!",
+     "note": "Jocasta knows the truth and begs him to stop searching. Her last words to him are a wish for ignorance."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Third Stasimon: Cithaeron, mother of Oedipus",
+   "lines": "1086–1109",
+   "section": 1,
+   "summary": [
+    "In a short and joyful ode, the chorus imagines that Oedipus may be the child of a god and a mountain nymph: of Pan, of Apollo, of Hermes (the lord of Mount Cyllene) or of Dionysus. They promise to honour Mount Cithaeron, where he was found, as his nurse and mother."
+   ],
+   "analysis": [
+    "The ode is placed at the darkest point of the action for maximum contrast: the chorus is carried away by Oedipus' hope just as Jocasta has gone to her death. Sophocles often uses such a 'joy before disaster' ode. The fantasy of divine birth is the last expression of the play's question whether Oedipus is more than human [[winnington-ingram1980]] [[segal2001]].",
+    "Cithaeron will be named again in Oedipus' despair at the end. Here it is a kindly mother; later it is the place that should have been his tomb."
+   ],
+   "key": [
+    {
+     "ref": "Third Stasimon",
+     "quote": "Cithaeron, when all night the moon rides high,\n      Loud thy praise shall be confessed,",
+     "note": "The mountain, in reality the place where Oedipus was left to die, is celebrated as his nurse."
+    },
+    {
+     "ref": "Third Stasimon",
+     "quote": "Who, dear sovereign, gave thee birth,\n      Of the long lived nymphs of earth?",
+     "note": "The question the whole play has been asking, here given a fantastic answer."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Fourth Episode: the Theban shepherd",
+   "lines": "1110–1185",
+   "section": 1,
+   "summary": [
+    "The old herdsman of Laius is brought in. The Corinthian messenger recognises him and reminds him of the summers they spent with their flocks on Cithaeron, and of the baby he gave him. The herdsman tries to silence him. Oedipus threatens him with torture, and step by step forces out the truth: the baby came from Laius' house, Jocasta herself gave it to him to destroy because of a prophecy that the child would kill its father, and he gave it away out of pity.",
+    "Oedipus understands everything. Crying out that all has come true, he prays never again to see the light, and rushes into the palace."
+   ],
+   "analysis": [
+    "This is the moment of anagnorisis, recognition, which Aristotle defines as a change from ignorance to knowledge. The scene is short, quick and relentless. Its stichomythia, line-for-line exchange, drives the inquiry forward like an interrogation, and the old servant's reluctance makes each answer cost more [[halliwell1995]].",
+    "Oedipus is never told outright that he killed Laius: the herdsman (who, in the Greek, is also the survivor from the crossroads) is not asked about the number of attackers. The recognition comes through his birth, and Oedipus draws the inference himself. Frederick Ahl and Sandor Goodhart argued that the play leaves the murder unproved; most critics reply that the audience is meant to see the truth as complete [[ahl1991]] [[goodhart1978]] [[finglass2018]].",
+    "Pity runs through the scene: the herdsman's pity saved the baby and so made the disaster possible. Human kindness, like Oedipus' care for Thebes, becomes part of the destruction."
+   ],
+   "key": [
+    {
+     "ref": "OT 1157",
+     "quote": "I gave it him. Would I had died that hour!",
+     "note": "The servant's admission. His wish to have died echoes the curses and death-wishes that fill the play's last scenes."
+    },
+    {
+     "ref": "OT 1169",
+     "quote": "Ah me! Now comes the horror to my tongue!",
+     "note": "The servant hesitates on the brink of the final truth. Oedipus' reply (that he must hear it) sums up his character."
+    },
+    {
+     "ref": "OT 1182",
+     "quote": "Horrible! All fulfilled, as sunlight clear!",
+     "note": "The recognition. The imagery of light, applied to the truth, prepares for Oedipus' blindness."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Fourth Stasimon: the nothingness of human life",
+   "lines": "1186–1222",
+   "section": 1,
+   "summary": [
+    "The chorus sings that the generations of mortals are as nothing: no one's happiness is more than a seeming that fades away. Oedipus is the proof. He rose highest of all men when he defeated the Sphinx, and now no one is more wretched.",
+    "The elders lament that the same marriage-bed received the father and the son, and that time, which sees all, has found him out. They wish they had never seen him, yet they acknowledge that he once gave them back their lives."
+   ],
+   "analysis": [
+    "The ode turns Oedipus' fate into a lesson about human life in general. This is the play's most explicit statement of its view that human greatness is fragile and that happiness can be judged only at the end. Yet it does not condemn Oedipus: the last lines remember his service to the city with gratitude [[knox1957]] [[segal2001]].",
+    "Time is the true discoverer here, not Oedipus. The investigator has been investigated."
+   ],
+   "key": [
+    {
+     "ref": "OT 1186–1188",
+     "quote": "O mortal tribes of men,\n      How near to nothingness\nI count you while your lives remain!",
+     "note": "The chorus generalises from Oedipus to all humanity. He is a 'paradigm', an example for everyone."
+    },
+    {
+     "ref": "OT 1213",
+     "quote": "Time hath detected thine unwitting deed,\n    Time, who discovers all with eyes of fire,",
+     "note": "Time, not human cleverness, brings the truth to light. Note that the chorus calls the deed 'unwitting'."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Exodos: Jocasta's death, the blinding and the end",
+   "lines": "1223–1530",
+   "section": 1,
+   "summary": [
+    "A messenger comes from the palace. Jocasta has hanged herself in the bridal chamber, calling on Laius. Oedipus broke in demanding a sword and searching for 'his wife, no, his mother'; when he found her hanging he took her down, tore the golden brooches from her dress and struck them again and again into his eyes, crying that they would no longer see the evil he had suffered and done. He now asks to be shown to all Thebes and driven from the land.",
+    "Oedipus comes out, blind. In a lyric exchange with the chorus he says that Apollo brought these sufferings about, but that his own hand struck the blow. He explains why he blinded himself rather than die: he could not face his parents in Hades, his children or his city. He curses the man who saved him on Cithaeron and laments the crossroads and the marriage. Creon arrives, now ruler, without reproach. He refuses to exile Oedipus until Apollo is consulted again, and lets him hold his daughters, Antigone and Ismene, for whom Oedipus grieves and whom he entrusts to Creon. Oedipus is led indoors. The chorus (or its leader) closes the play with the warning that no one should be called happy until he has died free from pain."
+   ],
+   "analysis": [
+    "Greek tragedy rarely shows violence on stage, and the blinding is reported, as Jocasta's death is. The effect is to put the full emphasis on what the audience does see: the blind Oedipus, whose mask now shows the bloodied eyes. The messenger's remark that 'self-chosen' sorrows are worst marks the blinding as Oedipus' own act, in contrast with the unknowing crimes of the past [[dodds1966]].",
+    "Oedipus' distinction, 'Apollo did this, but my own hand struck', is central to any discussion of fate and free will. The oracles foretold the killing and the marriage; they said nothing of the investigation or the blinding. Oedipus insists on his responsibility even for what he did not know, and in doing so recovers a kind of greatness [[knox1964]] [[dodds1966]].",
+    "The ending is quiet and unresolved. Creon's caution, the children and Oedipus' obedience bring him back into the family and the city as a broken man, not a hero of myth. Some editors have suspected that parts of this last scene, especially the final lines of the chorus, were added or altered after Sophocles; the question remains open [[dawe2006]] [[finglass2018]]."
+   ],
+   "key": [
+    {
+     "ref": "OT 1230–1231",
+     "quote": "Of all ill,\nSelf-chosen sorrows are the worst to bear.",
+     "note": "The messenger distinguishes the past crimes, done unknowingly, from the deeds now done by choice."
+    },
+    {
+     "ref": "OT 1250",
+     "quote": "Husband from husband, children from a child.",
+     "note": "Jocasta's lament as the messenger reports it, compressed into a riddle-like line. The confusion of family roles is the play's horror."
+    },
+    {
+     "ref": "OT 1329–1332",
+     "quote": "Apollo, dear my friends, Apollo brought to pass\nIn dreadful wise, this my calamitous woe.\nBut I,--no being else,--I with this hand destroyed them.",
+     "note": "The play's key statement on fate and freedom: the god caused the suffering, but the blinding is Oedipus' own act."
+    },
+    {
+     "ref": "OT 1398–1399",
+     "quote": "O cross road in the covert of the glen,\nO thicket in the gorge where three ways met,",
+     "note": "Oedipus addresses the scene of the killing. The crossroads has become a symbol of the choices that led him to his fate."
+    },
+    {
+     "ref": "OT 1528–1530",
+     "quote": "I will call no mortal happy, while he holds his house of clay,\nTill without one pang of sorrow, all his hours have passed away.",
+     "note": "The final moral, an old Greek saying associated with Solon in Herodotus. Its authenticity has been doubted, but it sums up the play's view of human fortune."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Oedipus",
+   "side": "The royal house",
+   "text": "King of Thebes, believed to be the son of Polybus and Merope of Corinth, in truth the son of Laius and Jocasta. He came to Thebes as a stranger, answered the riddle of the Sphinx and was given the throne and the widowed queen. Intelligent, energetic, devoted to his city and quick to anger, he leads the search for Laius' murderer and discovers that he himself is the killer and his wife's son. He blinds himself and asks to be exiled."
+  },
+  {
+   "name": "Jocasta",
+   "side": "The royal house",
+   "text": "Queen of Thebes, widow of Laius, wife and mother of Oedipus, and sister of Creon. She tries to calm Oedipus by proving that oracles fail, and in doing so supplies the clue of the crossroads. She understands the truth before he does, begs him to stop the search, and hangs herself in the palace."
+  },
+  {
+   "name": "Creon",
+   "side": "The royal house",
+   "text": "Jocasta's brother, who brings back the oracle from Delphi. Accused of plotting with Teiresias, he defends himself with calm arguments. At the end he becomes ruler of Thebes and treats the blind Oedipus with restraint and some kindness, though he insists on consulting the god before acting. He is a different and more sympathetic figure than the Creon of Antigone."
+  },
+  {
+   "name": "Teiresias",
+   "side": "Servant of Apollo",
+   "text": "The blind prophet of Apollo (spelled 'Tirésias' by Campbell). He knows the whole truth but at first refuses to speak; provoked, he names Oedipus as the murderer and foretells his fate in riddling terms. His blindness and insight are set against Oedipus' sight and ignorance."
+  },
+  {
+   "name": "The Chorus of Theban elders",
+   "side": "The city",
+   "text": "Fifteen old men of Thebes who sing and dance the odes and speak through their leader in the scenes. Loyal to Oedipus, devout and cautious, they express the city's fear, doubt and pity, and draw general lessons from his fall."
+  },
+  {
+   "name": "Priest of Zeus",
+   "side": "The city",
+   "text": "Leader of the suppliants in the prologue. He describes the plague and appeals to Oedipus as the first of men and the city's saviour."
+  },
+  {
+   "name": "The Messenger from Corinth",
+   "side": "Corinth",
+   "text": "An old man (called 'Corinthian Shepherd' by Campbell) who brings news of Polybus' death and, hoping for a reward, reveals that he received the infant Oedipus on Cithaeron and gave him to Polybus. His good intentions produce the reversal."
+  },
+  {
+   "name": "The Theban Shepherd",
+   "side": "The house of Laius",
+   "text": "An old slave of Laius who was ordered to expose the baby and, out of pity, gave it to the Corinthian. He is also the only survivor of the attack at the crossroads. Under threat of torture he reveals the truth."
+  },
+  {
+   "name": "The Second Messenger",
+   "side": "The palace",
+   "text": "A servant from the house who reports Jocasta's suicide and Oedipus' self-blinding."
+  },
+  {
+   "name": "Antigone and Ismene",
+   "side": "The royal house",
+   "text": "Oedipus' young daughters, who appear without speaking in the final scene. Oedipus grieves for their future and entrusts them to Creon."
+  },
+  {
+   "name": "Laius",
+   "side": "Offstage",
+   "text": "The former king of Thebes, father of Oedipus, who tried to escape an oracle by having his son exposed and was killed at a crossroads on his way to Delphi."
+  },
+  {
+   "name": "Polybus and Merope",
+   "side": "Offstage",
+   "text": "The king and queen of Corinth who raised Oedipus as their own son. Polybus' death is the news that begins the final unravelling."
+  },
+  {
+   "name": "The Sphinx",
+   "side": "Offstage",
+   "text": "The winged female monster ('stern songstress' in Campbell) who plagued Thebes with her riddle until Oedipus answered it. Her defeat is the source of Oedipus' fame and of his marriage."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Knowledge and ignorance",
+   "text": [
+    "Oedipus is defined by his intelligence. He solved the riddle no one else could, and he trusts his mind to solve the riddle of Laius' death. The play shows that this same intelligence, used with complete honesty, uncovers a truth that destroys him. Teiresias' first words, that knowledge is terrible when it does not profit the knower, state the theme at once.",
+    "The tension is never simply resolved. The play does not say that ignorance is better: Jocasta's wish that Oedipus may never know who he is cannot be his choice. Knox and Segal see Oedipus' determination to know as both his tragedy and his heroism, a model of human inquiry with its glory and its limits [[knox1957]] [[segal2001]]."
+   ]
+  },
+  {
+   "title": "Sight and blindness",
+   "text": [
+    "The play is built on a paradox. The blind Teiresias sees the truth; Oedipus, with his eyes open, does not. When at last he sees, he blinds himself. The language of light, darkness, revealing and hiding runs through the whole play and gives its action a visible shape on stage.",
+    "Blindness at the end is both punishment and a kind of insight. Oedipus can no longer see the world, but he finally sees himself. Readers should notice, though, that he gives his own practical reasons for the act: he cannot bear to look at his parents, his children or his city [[bushnell1988]] [[segal2001]]."
+   ]
+  },
+  {
+   "title": "Fate, oracles and human freedom",
+   "text": [
+    "The oracles to Laius and to Oedipus come true, and the attempts to escape them (the exposure of the baby, Oedipus' flight from Corinth) are the very means by which they are fulfilled. This has led many readers to call the play a 'tragedy of fate'.",
+    "Yet the oracles concern only the killing and the marriage, which happened long before the play began. The action on stage, the search, the anger, the persistence and the blinding, is Oedipus' own. Dodds argued that the play shows not a puppet of fate but a man who chooses to discover the truth, and Knox that Sophocles keeps divine foreknowledge and human freedom side by side without letting one cancel the other [[dodds1966]] [[knox1957]]."
+   ]
+  },
+  {
+   "title": "The ruler and the city",
+   "text": [
+    "Oedipus is a good king: he cares for his people and acts for them. But his power is that of a 'tyrannos', gained by his own merit and dependent on it, and he reacts to threats with suspicion. The city suffers because of a pollution in its ruler, and the remedy is his removal.",
+    "Vernant showed how Oedipus combines two opposite figures of Greek thought, the godlike king and the scapegoat (pharmakos) who is driven out to cleanse the community. The same man is the saviour and the curse of Thebes [[vernant1988]]."
+   ]
+  },
+  {
+   "title": "Identity and origins",
+   "text": [
+    "Oedipus' question, 'Who am I?', becomes literally a question about his parents. The play suggests that identity cannot be made by one's own efforts alone: the man who called himself the child of Fortune is found to be the son of Laius and Jocasta. The confusion of family roles, which Oedipus lists in his despair, is the deepest horror of the story [[segal1981]]."
+   ]
+  },
+  {
+   "title": "The instability of human happiness",
+   "text": [
+    "The fourth stasimon and the closing lines turn Oedipus into an example for all humanity: the greatest of men can become the most wretched in a day, and no life can be judged happy until it is over. This traditional Greek wisdom gives the particular catastrophe a universal meaning [[knox1957]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Riddles",
+   "text": "Oedipus' fame rests on solving the riddle of the Sphinx (traditionally, the creature that walks on four, two and three feet is man). Teiresias speaks in riddles, and Oedipus himself proves to be the greatest riddle. The play suggests that the man who could answer the riddle of 'man' could not see that it applied to himself [[vernant1988]]."
+  },
+  {
+   "title": "One and many",
+   "text": "Was Laius killed by one man or many? Oedipus relies on the logic of number, and the play's horror is a confusion of number: one man who is both son and husband, father and brother."
+  },
+  {
+   "title": "Hunting and tracking",
+   "text": "Oedipus vows to 'track' the killer, the chorus imagines the murderer as a hunted animal, and the investigator turns out to be the hunted. Knox showed how the language of search and discovery shapes the whole action [[knox1957]]."
+  },
+  {
+   "title": "The ship of state",
+   "text": "The city is a storm-tossed ship and Oedipus its pilot. Jocasta later calls him the 'pilot' who is distraught. The traditional image of the ruler as helmsman marks both his responsibility and his danger."
+  },
+  {
+   "title": "Time and revelation",
+   "text": "Creon says that time alone shows the just man; Oedipus calls himself the kinsman of the months; the chorus says that all-seeing Time has found him out. Time is the force that brings hidden things to light."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "Oedipus' feet",
+   "text": "The pierced ankles that give him his name (popularly 'swollen foot') are the bodily proof of his identity. The name also echoes the Greek 'oida', 'I know', a pun Knox and others have traced through the play [[knox1957]]."
+  },
+  {
+   "title": "The crossroads",
+   "text": "The place 'where three roads meet' is where Oedipus killed his father, and the detail that first alerts him. It has become an emblem of decisive choice, although at the time Oedipus did not know what he was choosing."
+  },
+  {
+   "title": "Mount Cithaeron",
+   "text": "The wild mountain where the baby was exposed and saved. It stands outside the city and its laws, and Oedipus' wish to return there at the end makes it both cradle and grave."
+  },
+  {
+   "title": "The plague",
+   "text": "The sickness of land, herds and women is the outward sign of a hidden pollution. It links the private crime of the royal house to the life of the whole community."
+  },
+  {
+   "title": "Jocasta's brooches",
+   "text": "Oedipus blinds himself with the golden pins from the dress of his wife and mother. The instrument binds the punishment to the marriage itself."
+  },
+  {
+   "title": "Teiresias' staff",
+   "text": "The blind prophet is led in by a boy; Oedipus will go out of Thebes as a blind beggar feeling his way with a staff, as Teiresias foretells. The prophet's present is the king's future."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Hamartia: did Oedipus have a 'tragic flaw'?",
+   "text": [
+    "In Poetics chapter 13 Aristotle says that the best tragic hero is a man neither supremely good nor wicked who falls through some hamartia, and names Oedipus as an example. Later critics often translated hamartia as 'tragic flaw' and found it in Oedipus' anger, pride or haste [[halliwell1995]].",
+    "Most modern scholars think the word means a mistake, especially an error of fact, rather than a moral failing: Oedipus' hamartia is that he did not know who his parents were. Dodds, in an influential essay, rejected the idea that the play punishes a fault and argued that Oedipus is great precisely in his search for truth [[dodds1966]] [[halliwell1986]]."
+   ],
+   "cite": [
+    "halliwell1995",
+    "dodds1966",
+    "halliwell1986"
+   ]
+  },
+  {
+   "title": "Fate and free will",
+   "text": [
+    "Is Oedipus the victim of an inescapable destiny? The oracles are fulfilled, and many readers since antiquity have seen the play as a tragedy of fate. Others point out that the play never shows the gods making Oedipus act, and that the action on stage is driven by his own choices [[dodds1966]] [[knox1957]].",
+    "Some critics read the gods as just, others as indifferent or cruel; Winnington-Ingram explored the darker possibilities, and R. Drew Griffith argued that Apollo actively punishes Laius' family. The play itself seems to hold both views: Apollo brought the suffering, but Oedipus struck the blow [[winnington-ingram1980]] [[griffith1996]]."
+   ],
+   "cite": [
+    "dodds1966",
+    "knox1957",
+    "winnington-ingram1980",
+    "griffith1996"
+   ]
+  },
+  {
+   "title": "Aristotle's model plot: reversal and recognition",
+   "text": [
+    "For Aristotle the Oedipus is the ideal example of a complex plot: the reversal (peripeteia) produced by the Corinthian messenger coincides with the recognition (anagnorisis), and the whole action follows necessity or probability. He adds that the plot should arouse pity and fear even when only heard told, as the Oedipus does [[halliwell1995]].",
+    "Aristotle also notes an improbability (alogon): that Oedipus does not know how Laius died. He excuses it as lying outside the play itself. Modern critics have asked whether Aristotle's formal reading neglects the religious and political dimensions of the play [[halliwell1986]] [[goldhill1986]]."
+   ],
+   "cite": [
+    "halliwell1995",
+    "halliwell1986",
+    "goldhill1986"
+   ]
+  },
+  {
+   "title": "Freud and the Oedipus complex",
+   "text": [
+    "In The Interpretation of Dreams (1900) Freud argued that the play moves modern audiences because it reveals a universal childhood wish to possess the mother and remove the father; he quoted Jocasta's line about dreams of sleeping with one's mother as Sophocles' own hint. The 'Oedipus complex' became a central idea of psychoanalysis [[freud1953]] [[rudnytsky1987]].",
+    "Classicists have pointed out that Oedipus in the play has no such desire: he flees Corinth to avoid it and acts throughout in ignorance. Vernant argued that Freud's reading tells us more about modern psychology than about Greek tragedy, while others see the play's power as genuinely related to fantasies of origin and family [[vernant1988]]."
+   ],
+   "cite": [
+    "freud1953",
+    "rudnytsky1987",
+    "vernant1988"
+   ]
+  },
+  {
+   "title": "Did Oedipus really kill Laius?",
+   "text": [
+    "The only witness said Laius was killed by 'robbers', and Oedipus says one man cannot be many. When the shepherd arrives, no one asks him about the killing. Sandor Goodhart and Frederick Ahl argued that the play deliberately leaves the murder unproved, and that Oedipus convicts himself on the basis of his birth alone [[goodhart1978]] [[ahl1991]].",
+    "Most scholars reject this reading: Oedipus' own account of the crossroads matches Jocasta's in place, time, the number of travellers and Laius' appearance, and the play treats the truth as revealed. The debate is nonetheless a good lesson in how the play makes the audience rely on what it already knows [[finglass2018]] [[dawe2006]]."
+   ],
+   "cite": [
+    "goodhart1978",
+    "ahl1991",
+    "finglass2018",
+    "dawe2006"
+   ]
+  },
+  {
+   "title": "Oedipus, Athens and the plague",
+   "text": [
+    "Knox argued that Oedipus embodies the confidence and energy of Periclean Athens, a city of inquiry and power, and that the plague recalls the epidemic of 430 BC. On this view the play is also a warning to Athens about the limits of human intelligence [[knox1956]] [[knox1957]].",
+    "Others are more cautious: the date is uncertain, plagues belong to the myth, and direct political allusion is hard to prove. Most would agree that the play draws on the intellectual world of fifth-century Athens without being an allegory of it [[easterling1997]]."
+   ],
+   "cite": [
+    "knox1956",
+    "knox1957",
+    "easterling1997"
+   ]
+  },
+  {
+   "title": "Structure, myth and the scapegoat",
+   "text": [
+    "Structuralist and anthropological critics read the play through the shape of the myth. Lévi-Strauss treated the Oedipus myth as a set of oppositions, between overvaluing and undervaluing kinship, and Vernant and Vidal-Naquet saw Oedipus as both the godlike king and the pharmakos, the polluted victim expelled for the city's sake [[levi-strauss1955]] [[vernant1988]].",
+    "These readings explain why the play's reversals feel so complete: the same man is solver and riddle, hunter and hunted, saviour and plague. Critics such as Segal combined them with close reading of the play's language [[segal1981]]."
+   ],
+   "cite": [
+    "levi-strauss1955",
+    "vernant1988",
+    "segal1981"
+   ]
+  },
+  {
+   "title": "The ending: authentic or altered?",
+   "text": [
+    "Some editors have suspected that the final scene was expanded or altered after Sophocles' death, and many doubt the closing lines of the chorus, which repeat a well-known maxim. Dawe, in particular, regarded several passages of the exodos as later additions [[dawe2006]].",
+    "Others defend the ending as Sophoclean, pointing to its dramatic logic: Creon's caution and Oedipus' return into the house leave his fate open, in keeping with Sophocles' habit of quiet endings. Recent commentators weigh the evidence passage by passage [[finglass2018]]."
+   ],
+   "cite": [
+    "dawe2006",
+    "finglass2018"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "OT 132",
+   "quote": "But I will track this evil to the spring\nAnd clear it to the day.",
+   "who": "Oedipus",
+   "explanation": "Oedipus' promise to bring the truth to light is admirable and doomed. The images of tracking and of daylight will return as he discovers that he himself is the 'evil' he hunts."
+  },
+  {
+   "ref": "OT 316–317",
+   "quote": "Ah! terrible is knowledge to the man\nWhom knowledge profits not.",
+   "who": "Teiresias",
+   "explanation": "The prophet's first words sum up the play's theme: the search for knowledge, which Oedipus values above all, brings him only suffering."
+  },
+  {
+   "ref": "OT 362",
+   "quote": "I say thou art the murderer whom thou seekest.",
+   "who": "Teiresias",
+   "explanation": "The truth is spoken plainly within the first third of the play. Oedipus cannot hear it, and the drama lies in the slow process by which he comes to understand."
+  },
+  {
+   "ref": "OT 371",
+   "quote": "Blind as thou art in eyes and ears and mind.",
+   "who": "Oedipus",
+   "explanation": "Oedipus mocks Teiresias' blindness. By the end, the insult will describe the speaker better than the prophet."
+  },
+  {
+   "ref": "OT 873",
+   "quote": "Pride breeds the tyrant: monstrous birth!",
+   "who": "Chorus",
+   "explanation": "The chorus's warning against hybris links pride to the 'tyrannos' of the title. Whether it judges Oedipus, or speaks more generally, is one of the play's open questions."
+  },
+  {
+   "ref": "OT 981–982",
+   "quote": "Many a man ere now in dreams hath lain\nWith her who bare him.",
+   "who": "Jocasta",
+   "explanation": "Meant to reassure, these words became the foundation of Freud's theory of the Oedipus complex."
+  },
+  {
+   "ref": "OT 1068",
+   "quote": "Never may'st thou discover who thou art!",
+   "who": "Jocasta",
+   "explanation": "Jocasta's final wish for Oedipus is ignorance. It is the one thing he cannot accept."
+  },
+  {
+   "ref": "OT 1186–1188",
+   "quote": "O mortal tribes of men,\n      How near to nothingness\nI count you while your lives remain!",
+   "who": "Chorus",
+   "explanation": "The chorus makes Oedipus an example of the frailty of human happiness, the play's universal lesson."
+  },
+  {
+   "ref": "OT 1329–1332",
+   "quote": "Apollo, dear my friends, Apollo brought to pass\nIn dreadful wise, this my calamitous woe.\nBut I,--no being else,--I with this hand destroyed them.",
+   "who": "Oedipus",
+   "explanation": "The god caused his suffering, but the blinding was his own act. The lines hold together fate and responsibility."
+  },
+  {
+   "ref": "OT 1528–1530",
+   "quote": "I will call no mortal happy, while he holds his house of clay,\nTill without one pang of sorrow, all his hours have passed away.",
+   "who": "Chorus",
+   "explanation": "The traditional closing maxim (call no man happy until he is dead). Campbell's long rhymed lines render the final trochaic verses; some editors doubt that they are Sophocles'."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Is Oedipus to blame for what happens to him?",
+   "hint": "Distinguish between what he did before the play (the killing, the marriage) and what he does in it (the search, the anger, the blinding), and consider Aristotle's word hamartia."
+  },
+  {
+   "q": "How does Sophocles create suspense when the audience already knows the story?",
+   "hint": "Think about dramatic irony: Oedipus' curse, his promise to fight for Laius 'as if' for his father, and Jocasta's attempts to comfort him."
+  },
+  {
+   "q": "Why does Teiresias refuse to speak at first, and why does Oedipus not believe him when he does?",
+   "hint": "Look at Oedipus' pride in his own intelligence and his rapid turn to a political explanation."
+  },
+  {
+   "q": "What does the play suggest about oracles and the gods?",
+   "hint": "Consider Jocasta's scepticism, her prayer to Apollo, the chorus's question 'what needs our choir...', and Oedipus' words about Apollo at the end."
+  },
+  {
+   "q": "Explain Aristotle's idea of reversal and recognition with reference to the Corinthian messenger.",
+   "hint": "What does the messenger intend, and what does he actually achieve? How quickly does recognition follow?"
+  },
+  {
+   "q": "How is the imagery of sight and blindness developed through the play?",
+   "hint": "Trace it from the Teiresias scene to the blinding, and ask what Oedipus 'sees' at the end."
+  },
+  {
+   "q": "What role does the chorus play?",
+   "hint": "Compare its loyalty in the first stasimon, its anxiety in the second, its joy in the third and its judgement in the fourth."
+  },
+  {
+   "q": "Is Jocasta a sceptic, a believer or something else?",
+   "hint": "Look at what she says about prophecy, what she does at Apollo's altar, and when she understands the truth."
+  },
+  {
+   "q": "How convincing is Freud's reading of the play?",
+   "hint": "Compare the desire Freud describes with what Oedipus actually wants and does in the play."
+  },
+  {
+   "q": "Why does the play end with Creon and the children rather than with the blinding?",
+   "hint": "Consider what the final scene shows about Oedipus' character, about Creon, and about the uncertainty of the future."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "ahl1991",
+   "text": "Ahl, Frederick. Sophocles' Oedipus: Evidence and Self-Conviction. Ithaca: Cornell University Press, 1991."
+  },
+  {
+   "id": "bushnell1988",
+   "text": "Bushnell, Rebecca W. Prophesying Tragedy: Sign and Voice in Sophocles' Theban Plays. Ithaca: Cornell University Press, 1988."
+  },
+  {
+   "id": "campbell1906",
+   "text": "Campbell, Lewis, trans. Sophocles: The Seven Plays in English Verse. World's Classics. London: Oxford University Press, 1906."
+  },
+  {
+   "id": "dawe2006",
+   "text": "Dawe, R. D., ed. Sophocles: Oedipus Rex. Cambridge Greek and Latin Classics. Cambridge: Cambridge University Press, 1982; rev. ed. 2006."
+  },
+  {
+   "id": "dodds1966",
+   "text": "Dodds, E. R. \"On Misunderstanding the Oedipus Rex.\" Greece & Rome 13 (1966): 37–49."
+  },
+  {
+   "id": "easterling1997",
+   "text": "Easterling, P. E., ed. The Cambridge Companion to Greek Tragedy. Cambridge: Cambridge University Press, 1997."
+  },
+  {
+   "id": "finglass2018",
+   "text": "Finglass, P. J., ed. Sophocles: Oedipus the King. Cambridge: Cambridge University Press, 2018."
+  },
+  {
+   "id": "freud1953",
+   "text": "Freud, Sigmund. The Interpretation of Dreams. Translated by James Strachey. Standard Edition of the Complete Psychological Works, vols. 4–5. London: Hogarth Press, 1953."
+  },
+  {
+   "id": "gantz1993",
+   "text": "Gantz, Timothy. Early Greek Myth: A Guide to Literary and Artistic Sources. Baltimore: Johns Hopkins University Press, 1993."
+  },
+  {
+   "id": "goldhill1986",
+   "text": "Goldhill, Simon. Reading Greek Tragedy. Cambridge: Cambridge University Press, 1986."
+  },
+  {
+   "id": "goodhart1978",
+   "text": "Goodhart, Sandor. \"Lēistas Ephaske: Oedipus and Laius' Many Murderers.\" Diacritics 8, no. 1 (1978): 55–71."
+  },
+  {
+   "id": "griffith1996",
+   "text": "Griffith, R. Drew. The Theatre of Apollo: Divine Justice and Sophocles' Oedipus the King. Montreal: McGill-Queen's University Press, 1996."
+  },
+  {
+   "id": "halliwell1986",
+   "text": "Halliwell, Stephen. Aristotle's Poetics. London: Duckworth, 1986."
+  },
+  {
+   "id": "halliwell1995",
+   "text": "Halliwell, Stephen, ed. and trans. Aristotle: Poetics. In Aristotle: Poetics; Longinus: On the Sublime; Demetrius: On Style. Loeb Classical Library 199. Cambridge, MA: Harvard University Press, 1995."
+  },
+  {
+   "id": "jebb1893",
+   "text": "Jebb, R. C., ed. and trans. Sophocles: The Plays and Fragments. Part I: The Oedipus Tyrannus. Cambridge: Cambridge University Press, 1883; 3rd ed. 1893."
+  },
+  {
+   "id": "knox1956",
+   "text": "Knox, Bernard M. W. \"The Date of the Oedipus Tyrannus of Sophocles.\" American Journal of Philology 77 (1956): 133–147."
+  },
+  {
+   "id": "knox1957",
+   "text": "Knox, Bernard M. W. Oedipus at Thebes. New Haven: Yale University Press, 1957."
+  },
+  {
+   "id": "knox1964",
+   "text": "Knox, Bernard M. W. The Heroic Temper: Studies in Sophoclean Tragedy. Berkeley: University of California Press, 1964."
+  },
+  {
+   "id": "levi-strauss1955",
+   "text": "Lévi-Strauss, Claude. \"The Structural Study of Myth.\" Journal of American Folklore 68 (1955): 428–444."
+  },
+  {
+   "id": "lloyd-jones1990",
+   "text": "Lloyd-Jones, Hugh, and N. G. Wilson, eds. Sophoclis Fabulae. Oxford Classical Texts. Oxford: Clarendon Press, 1990."
+  },
+  {
+   "id": "rudnytsky1987",
+   "text": "Rudnytsky, Peter L. Freud and Oedipus. New York: Columbia University Press, 1987."
+  },
+  {
+   "id": "segal1981",
+   "text": "Segal, Charles. Tragedy and Civilization: An Interpretation of Sophocles. Cambridge, MA: Harvard University Press, 1981."
+  },
+  {
+   "id": "segal2001",
+   "text": "Segal, Charles. Oedipus Tyrannus: Tragic Heroism and the Limits of Knowledge. 2nd ed. New York: Oxford University Press, 2001."
+  },
+  {
+   "id": "vernant1988",
+   "text": "Vernant, Jean-Pierre, and Pierre Vidal-Naquet. Myth and Tragedy in Ancient Greece. Translated by Janet Lloyd. New York: Zone Books, 1988."
+  },
+  {
+   "id": "winnington-ingram1980",
+   "text": "Winnington-Ingram, R. P. Sophocles: An Interpretation. Cambridge: Cambridge University Press, 1980."
+  }
+ ]
+}

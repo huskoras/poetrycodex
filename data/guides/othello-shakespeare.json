@@ -1,0 +1,929 @@
+{
+ "work": "othello-shakespeare",
+ "title": "Othello",
+ "author": "William Shakespeare",
+ "quoteEdition": "othello-shakespeare",
+ "updated": "2026-10-19",
+ "unit": "Scene",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "William Shakespeare (1564–1616), actor, sharer and principal playwright of the King's Men, the company of which King James I became patron in 1603"
+  },
+  {
+   "label": "Genre",
+   "value": "Domestic tragedy in blank verse and prose; unusually for Shakespeare's tragedies, it turns on a private marriage rather than the fate of a kingdom"
+  },
+  {
+   "label": "Written",
+   "value": "Usually dated 1603–4, between Hamlet and King Lear; some scholars, including E. A. J. Honigmann, argue for 1601–2"
+  },
+  {
+   "label": "First recorded performance",
+   "value": "1 November 1604, at the Banqueting House in Whitehall before King James, recorded in the Revels Accounts as 'The Moor of Venis' by 'Shaxberd'; Richard Burbage created the title role"
+  },
+  {
+   "label": "Early texts",
+   "value": "The First Quarto (Q1, 1622) and the First Folio (F, 1623); F has about 160 lines not in Q1, and Q1 keeps oaths that F removes"
+  },
+  {
+   "label": "Source",
+   "value": "A novella in Giovanni Battista Giraldi Cinthio's collection Gli Hecatommithi (1565), decade 3, story 7"
+  },
+  {
+   "label": "Setting",
+   "value": "Venice (Act I) and the Venetian garrison island of Cyprus, threatened by an Ottoman fleet (Acts II–V)"
+  },
+  {
+   "label": "Main characters",
+   "value": "Othello; Desdemona; Iago; Emilia; Cassio; Roderigo; Brabantio; Bianca"
+  },
+  {
+   "label": "Text on this site",
+   "value": "The modernised Project Gutenberg text, which follows the Folio in the main and includes the Folio-only passages; it is divided into fifteen scenes. Line references in this guide follow the standard modern (Arden/Riverside) numbering and may differ by a line or two in other editions"
+  },
+  {
+   "label": "Famous for",
+   "value": "Iago, the most articulate villain in English drama; the temptation scene (3.3); the handkerchief; and its central place in debates about race on the English stage"
+  }
+ ],
+ "context": [
+  "Othello was probably written in 1603 or 1604, in the same years as Measure for Measure and shortly after Hamlet. Its first recorded performance was given at court on 1 November 1604, when the King's Men played 'The Moor of Venis' in the Banqueting House at Whitehall; the Revels Accounts give the author as 'Shaxberd'. Richard Burbage, the company's leading actor, played Othello, and the role remained one of the most admired of his career. The date is not certain: Honigmann, noting borrowings from Philemon Holland's translation of Pliny (1601), argued that the play could be as early as 1601–2, while others point to Richard Knolles's Generall Historie of the Turkes (1603) as a source for the Ottoman background [[honigmann1997]] [[neill2006]].",
+  "Shakespeare's source was an Italian novella, the seventh story of the third decade of Giraldi Cinthio's Gli Hecatommithi (1565). No English translation existed, so he read it in Italian or in Gabriel Chappuys's French version (1584). In Cinthio a Moorish captain of Venice marries a virtuous lady, Disdemona (the only named character), and takes her to Cyprus; his ensign, who desires her and whose love turns to hatred when she ignores him, persuades the Moor that she is unfaithful with a corporal, using a handkerchief stolen by the ensign's small daughter. The Moor and the ensign beat her to death with a stocking full of sand and bring down the ceiling to make the death look like an accident. Shakespeare compressed the action into a few days, invented Roderigo, Brabantio and the senate scene, added the Turkish war, gave the ensign's wife a voice, and made the murder a quiet, intimate act in the marriage bed [[bullough1973]].",
+  "The play is built on two places. Venice, for English readers, was the model of a rich, well-ordered republic: Lewis Lewkenor's translation of Contarini, The Commonwealth and Government of Venice (1599), praised its laws and its practice of hiring foreign generals to command its armies, so that an outsider like Othello could be indispensable to the state while remaining a stranger in its drawing rooms. Cyprus was Venice's frontier outpost in the eastern Mediterranean, held from 1489 until the Ottomans conquered it in 1570–71, a defeat followed by the Christian naval victory at Lepanto (1571). Shakespeare's audience knew that the island had been lost; in the play the Turkish fleet is simply drowned by a storm, and the war that should have tested Othello gives way to a war inside his own garrison and mind [[vitkus1997]] [[neill2006]].",
+  "Othello is 'the Moor of Venice'. In English usage around 1600 'Moor' was a loose word: it could mean a North African, a Muslim, or any dark-skinned African, and writers often used 'Moor', 'blackamoor' and 'negro' interchangeably. Englishmen had recently seen the Moroccan embassy of 1600, and John Pory's translation of Leo Africanus, A Geographical Historie of Africa (1600), described African peoples in terms that seem to colour Othello's account of his travels. There were also Black men and women living in London, and in 1596 the Privy Council issued letters ordering 'blackamoors' to be removed from the realm. The play leaves no doubt that its hero is black: his enemies call him 'thick-lips' and 'an old black ram', and he himself says 'Haply, for I am black'. He is also a Christian convert and a servant of a Christian state, whose last act is to identify himself with the 'circumcised dog' he once killed [[jones1965]] [[hall1995]] [[loomba2002]] [[bartels1990]].",
+  "Othello survives in two early texts. The First Quarto was published in 1622 by the bookseller Thomas Walkley, six years after Shakespeare's death; the First Folio followed in 1623. The Folio contains about 160 lines that are not in the Quarto, among them Roderigo's speech to Brabantio in 1.1, Othello's 'Pontic Sea' simile in 3.3, Desdemona's Willow Song and Emilia's defence of wives in 4.3, and several of Emilia's lines in the last scene. The Quarto, for its part, keeps oaths such as 'Zounds' that were cut from the Folio after the 1606 Act to Restrain Abuses of Players. Honigmann argued that both texts derive from Shakespeare's own manuscripts and that the Folio reflects his revision; most modern editions, like the text on this site, combine the two [[honigmann1996]] [[honigmann1997]]."
+ ],
+ "plot": [
+  "In Venice, at night, Iago tells Roderigo, a foolish gentleman who is paying him to win Desdemona, that he hates Othello, the Moorish general, for promoting Michael Cassio to the lieutenancy over him. Together they wake Desdemona's father, the senator Brabantio, with crude news that she has eloped with Othello. Brabantio accuses Othello of bewitching her, but the Duke and senators, who need Othello to defend Cyprus against a Turkish fleet, hear his account of the courtship and Desdemona's own declaration of love. The marriage stands, and Desdemona is allowed to follow her husband to Cyprus in the care of Iago and his wife Emilia.",
+  "A storm destroys the Turkish fleet, and the Venetians reunite joyfully on Cyprus. On the night of the victory celebrations Iago makes Cassio drunk and provokes a brawl; Othello dismisses Cassio from his post. Iago then advises Cassio to ask Desdemona to plead for him, while he himself prepares to persuade Othello that she pleads because she is Cassio's lover.",
+  "In the long scene of temptation (3.3), Iago turns Othello's trust into torment with hints, silences and pretended reluctance. When Desdemona drops the handkerchief that was Othello's first gift to her, Emilia picks it up and gives it to her husband, who plants it in Cassio's lodging. Othello demands proof, accepts Iago's invented report of Cassio's dream as evidence, and swears revenge. He questions Desdemona about the handkerchief, falls into a fit, watches a conversation between Iago and Cassio that he misreads as Cassio's boasting, strikes Desdemona before the visiting Venetian envoy Lodovico, and treats her as a whore.",
+  "Iago sets Roderigo to kill Cassio in the dark; Cassio is only wounded, and Iago stabs Roderigo to silence him. Othello smothers Desdemona in her bed. She revives briefly and, asked who has done this, answers that she did it herself. Emilia, learning that her husband is the source of the slander and that the handkerchief was the 'proof', exposes him; Iago kills her and is captured. Othello, understanding at last, asks to be remembered truly, stabs himself and dies on the bed beside his wife. Iago refuses to explain himself, and Cassio is left to govern Cyprus."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Act I, Scene 1: Iago and Roderigo wake Brabantio",
+   "lines": "Act I, Scene 1 (the whole scene)",
+   "section": 1,
+   "summary": [
+    "The play opens in the middle of a quarrel in a Venice street at night. Roderigo, who has been paying Iago to help him win Desdemona, is angry that he was not told of her marriage. Iago swears that he hates the Moor: Othello has made the 'arithmetician' Michael Cassio his lieutenant, a Florentine with no battle experience, while Iago, a proven soldier, must remain his 'ancient', or ensign. Iago explains that he serves Othello only to serve himself, and that his outward show is a mask.",
+    "The two men shout up at the window of the senator Brabantio. Iago, hidden in the dark, tells him in obscene animal images that his daughter is in bed with the Moor; Roderigo, who gives his name, adds that she has run away with 'a lascivious Moor'. Brabantio finds her gone, believes the worst, and rouses his household to arrest Othello. Iago slips away, since it would not be safe for him to be seen acting against his general."
+   ],
+   "analysis": [
+    "Shakespeare begins not with his hero but with his hero's enemies, and for the first scene Othello is never named, only called 'the Moor', 'his Moorship', 'the thick-lips'. The audience therefore meets him first as a racial caricature in the mouths of others, and the rest of the act sets that caricature against the man himself. The opening also establishes Iago's method: he works by voices in the dark, by images that make the listener see what is not there, and by letting others act on his words while he withdraws.",
+    "Iago's grievance about the lieutenancy is the first of several motives he offers, and it is a plausible one; the play will later supply others, and critics have argued ever since about whether any of them is the real one. What he says about himself here is more disturbing than any motive: he defines himself as pure seeming, a man whose real heart is never shown [[bradley1904]] [[spivack1958]]."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 1.1.64–65",
+     "quote": "But I will wear my heart upon my sleeve\nFor daws to peck at: I am not what I am.",
+     "note": "Iago's creed. 'I am not what I am' inverts God's name in Exodus 3:14 ('I am that I am'), a hint of the diabolic that the play develops later."
+    },
+    {
+     "ref": "Oth. 1.1.88–89",
+     "quote": "Even now, now, very now, an old black ram\nIs tupping your white ewe.",
+     "note": "Iago turns the marriage into a farmyard coupling of black and white animals. His language works on Brabantio's fears of race, age and sexuality all at once."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Act I, Scene 2: Othello faces his accusers",
+   "lines": "Act I, Scene 2 (the whole scene)",
+   "section": 2,
+   "summary": [
+    "Iago, now at Othello's side, pretends that he almost killed Roderigo for slandering him, and warns him that Brabantio will try to have the marriage annulled. Othello is calm: his services to the state, he says, will speak louder than the senator's complaints, and he comes of royal blood. Cassio arrives with a summons from the Duke, for news has come of a Turkish threat to Cyprus.",
+    "Brabantio and his men then appear with weapons. Othello stops the fight with a single line, and Brabantio accuses him of having used magic and drugs to charm a girl who had refused the wealthy young men of Venice. Othello agrees to go with him to the Duke, who is sitting in council that very night."
+   ],
+   "analysis": [
+    "This is the audience's first sight of Othello, and it overturns the image Iago created. Instead of a beast he is a man of dignity, self-command and measured speech, sure of his worth and of his love. His confidence, however, is a sign of how little he knows the man beside him: Iago has just been insulting him in the street and now plays the loyal officer.",
+    "Brabantio's speech makes explicit what Iago had implied. He cannot believe that his daughter would choose 'the sooty bosom' of such a thing as Othello unless she had been bewitched; for him the marriage is against nature. The charge of witchcraft will be answered in the next scene, but the belief that the match is unnatural is one Iago will later turn against Othello himself [[loomba2002]]."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 1.2.31–32",
+     "quote": "My parts, my title, and my perfect soul\nShall manifest me rightly.",
+     "note": "Othello trusts that what he is will be visible to others. The tragedy shows how easily appearances, and his own sight, can be manipulated."
+    },
+    {
+     "ref": "Oth. 1.2.59",
+     "quote": "Keep up your bright swords, for the dew will rust them.",
+     "note": "A line of effortless authority and wit: Othello disarms a night brawl without drawing his own sword. Compare the very different brawl he must stop in 2.3."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act I, Scene 3: The council chamber",
+   "lines": "Act I, Scene 3 (the whole scene)",
+   "section": 3,
+   "summary": [
+    "The Duke and senators are sorting out conflicting reports about a Turkish fleet; it finally becomes clear that it is heading for Cyprus, and Othello must sail to defend it. Brabantio interrupts with his accusation. Othello asks the council to send for Desdemona, and meanwhile tells how he won her: Brabantio often invited him to the house and asked him to tell the story of his life, his battles, his captivity and slavery, and the strange lands and peoples he had seen. Desdemona listened eagerly and gave him 'a world of sighs'; she loved him for his dangers, and he loved her for pitying them. 'This only is the witchcraft I have us'd.'",
+    "Desdemona arrives and, before the senate, says that just as her mother chose her husband over her father, she now owes her duty to the Moor. Brabantio gives her up bitterly. She asks to go with Othello to Cyprus rather than stay behind, and the Duke agrees. Othello leaves her in the care of 'honest Iago' and his wife. Brabantio's parting warning is that a daughter who deceived her father may deceive her husband.",
+    "Left alone with Roderigo, who is ready to drown himself, Iago mocks love as mere lust and tells him again and again to 'put money in thy purse': the marriage will not last, and Roderigo shall enjoy Desdemona. Alone, Iago states that he hates the Moor, that there is a rumour Othello has slept with his wife, and that he will act on the suspicion as if it were certain. He plans to make Othello believe that Cassio is too familiar with Desdemona."
+   ],
+   "analysis": [
+    "Othello's speech to the senate is one of the great narrative speeches in Shakespeare. Its 'round unvarnish'd tale' is in fact highly crafted, and its strangeness, the cannibals and 'men whose heads / Do grow beneath their shoulders', recalls travel writing such as Leo Africanus and Mandeville. The point is that Othello's identity is a story, told and believed, and that Desdemona fell in love with the teller and the tale. Greenblatt argued that this dependence on narrative is precisely what Iago will exploit, by inserting a different story into Othello's mind [[greenblatt1980]].",
+    "Desdemona is far from passive here. She speaks publicly, before the senate, of her love and her desire to share Othello's life, including the 'rites' of marriage, and she chooses the dangers of a garrison over the safety of Venice. The Duke's verdict, 'Your son-in-law is far more fair than black', is meant as praise, but it shows that even Othello's defenders think of his worth as being in spite of his colour.",
+    "The scene ends by moving from the public world of law to Iago's private world of appetite. His prose to Roderigo reduces love to 'a lust of the blood and a permission of the will', and his first soliloquy, ending in rhyme, presents the plot as a birth from hell. The motive he offers here, the rumour about Emilia, contradicts nothing and proves nothing; he will 'do as if for surety' on mere suspicion, exactly what he will teach Othello to do [[bradley1904]]."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 1.3.167–69",
+     "quote": "She lov’d me for the dangers I had pass’d,\nAnd I lov’d her that she did pity them.\nThis only is the witchcraft I have us’d.",
+     "note": "The answer to Brabantio's charge of magic. Love has grown from story and sympathy; the balanced lines make the marriage sound mutual and complete."
+    },
+    {
+     "ref": "Oth. 1.3.180",
+     "quote": "I do perceive here a divided duty:",
+     "note": "Desdemona speaks with composure and legal precision before the senate, transferring her duty from father to husband as her mother had done."
+    },
+    {
+     "ref": "Oth. 1.3.399–402",
+     "quote": "The Moor is of a free and open nature\nThat thinks men honest that but seem to be so,\nAnd will as tenderly be led by the nose\nAs asses are.",
+     "note": "Iago describes the very virtue, trust, that he means to turn into a weakness. The final half-line drops from praise to contempt."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act II, Scene 1: Arrival in Cyprus",
+   "lines": "Act II, Scene 1 (the whole scene)",
+   "section": 4,
+   "summary": [
+    "On the harbour at Cyprus, Montano, the governor, and his officers watch a great storm that has scattered and drowned the Turkish fleet. Cassio's ship arrives first, then the ship carrying Desdemona, Emilia, Iago and Roderigo; Othello's ship is still at sea. While they wait, Iago entertains Desdemona with cynical rhymes about women, and Cassio greets her with courtly gallantry, taking her hand. Iago, watching, comments aside that he will use these small courtesies to snare him.",
+    "Othello lands and greets Desdemona with overwhelming joy: if he were to die now, he would die perfectly happy. When the couple leave, Iago tells Roderigo that Desdemona is already tiring of the Moor and loves Cassio, and persuades him to pick a quarrel with Cassio while he is on watch that night. In a second soliloquy Iago says that he suspects Othello, and even Cassio, of having slept with Emilia, and that he will be revenged 'wife for wife', or else drive Othello into a jealousy that judgement cannot cure."
+   ],
+   "analysis": [
+    "The storm does the work of war: the enemy disappears without a battle, and the play's conflict moves from the public to the domestic. Cassio's speech on the storm sparing 'the divine Desdemona' makes her almost a goddess, while Iago's verses insist that every woman is a whore or a fool. These two views of women, idealising and degrading, are the poles between which Othello will be made to swing [[snow1980]].",
+    "Othello's greeting is the high point of his happiness, and its language of death and absolute content is shadowed with foreboding. Iago's soliloquy, by contrast, is a jumble of motives: lust, revenge for an imagined adultery, envy of Cassio, delight in mischief. He himself admits his plan is ''Tis here, but yet confus'd'; part of the scene's interest is watching him improvise his scheme from whatever lies to hand [[greenblatt1980]]."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 2.1.189–90",
+     "quote": "If it were now to die,\n’Twere now to be most happy,",
+     "note": "Othello's joy is so complete that he imagines death as its fitting end. The audience, knowing Iago's plans, hears the words as a prophecy."
+    },
+    {
+     "ref": "Oth. 2.1",
+     "quote": "For that I do suspect the lusty Moor\nHath leap’d into my seat. The thought whereof\nDoth, like a poisonous mineral, gnaw my inwards,",
+     "note": "Iago's sexual jealousy, real or performed, is described in the language of poison that he will later use for what he does to Othello."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act II, Scene 2: The Herald's proclamation",
+   "lines": "Act II, Scene 2 (the whole scene)",
+   "section": 5,
+   "summary": [
+    "A herald reads Othello's proclamation in the street: the Turkish fleet has been destroyed, and the island is to celebrate both the victory and the general's marriage with dancing, bonfires and free feasting from five o'clock until eleven."
+   ],
+   "analysis": [
+    "This tiny prose scene marks the turn from war to peace and fixes the time of the following night's events. The festivity Othello authorises, with all the 'offices' open, is exactly the setting in which Iago can make Cassio drunk."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 2.2",
+     "quote": "Heaven bless the isle of Cyprus\nand our noble general Othello!",
+     "note": "A public blessing on the island and its general just before both are disturbed by violence from within."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act II, Scene 3: Cassio's disgrace",
+   "lines": "Act II, Scene 3 (the whole scene)",
+   "section": 6,
+   "summary": [
+    "Othello sets Cassio in charge of the watch and retires with Desdemona. Iago, knowing that Cassio has 'very poor and unhappy brains for drinking', persuades him to drink with the Cypriot gentlemen and sings drinking songs. Once Cassio is drunk, Roderigo provokes him; Cassio chases him and wounds Montano, who tries to intervene. Iago sends Roderigo to ring the alarm bell.",
+    "Othello enters, furious, and orders Iago to say who began the fight. Iago tells the truth in a way that seems reluctant to harm Cassio, and Othello dismisses Cassio from the lieutenancy. Cassio laments that he has lost his reputation, the immortal part of himself. Iago tells him that reputation is a worthless idea and advises him to appeal to Desdemona, who can persuade her husband to anything. Alone, Iago asks who can call him a villain when his advice is so honest, then reveals that he will use Desdemona's pleading to persuade Othello she lusts after Cassio."
+   ],
+   "analysis": [
+    "The brawl is a small version of the whole play: Venetians fighting each other on an island where the external enemy has vanished. Othello's rebuke, 'Are we turn'd Turks', shows him defending Christian order, but his rising anger, 'my blood begins my safer guides to rule', is the first sign of the passion Iago will unleash. Vitkus has argued that the play is haunted by the fear of 'turning Turk', of conversion and moral collapse, and that Othello's own fall is imagined in these terms [[vitkus1997]].",
+    "The word 'honest' is attached to Iago over and over, by Othello, Cassio and Iago himself. Empson traced the many shades of the word in the play, from 'truthful' to 'frank' to 'one of the lads', and showed how Iago exploits them; the soliloquy 'And what's he then, that says I play the villain?' even invites the audience to admire the honesty of his advice [[empson1951]]. Iago's image of turning Desdemona's 'virtue into pitch' joins the plot to the play's imagery of black and white."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 2.3.170–71",
+     "quote": "Are we turn’d Turks, and to ourselves do that\nWhich heaven hath forbid the Ottomites?",
+     "note": "Heaven has drowned the Turks; now the Christians do the Turks' work on themselves. 'Turning Turk' meant apostasy as well as barbarity."
+    },
+    {
+     "ref": "Oth. 2.3.262–64",
+     "quote": "Reputation, reputation, reputation! O, I have lost my reputation! I\nhave lost the immortal part of myself, and what remains is bestial.",
+     "note": "Cassio speaks of reputation as the soul. Iago dismisses it here, but in 3.3 he will tell Othello the opposite."
+    },
+    {
+     "ref": "Oth. 2.3.360–62",
+     "quote": "So will I turn her virtue into pitch,\nAnd out of her own goodness make the net\nThat shall enmesh them all.",
+     "note": "The plot in a sentence: Iago will use Desdemona's kindness to Cassio as the evidence against her."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act III, Scene 1: Cassio's morning appeal",
+   "lines": "Act III, Scene 1 (the whole scene)",
+   "section": 7,
+   "summary": [
+    "Early next morning Cassio brings musicians to play beneath Othello's window, as was the custom after a wedding night. A Clown sent by Othello pays them to stop, with bawdy jokes about their instruments. Cassio asks Iago to arrange a meeting with Desdemona, and Emilia tells him that Desdemona is already pleading for him and that Othello means to restore him when he can."
+   ],
+   "analysis": [
+    "The scene is light in tone, but the Clown's jokes about wind instruments carry a sexual undertone that reminds us how the marriage has become a public spectacle. Cassio's dependence on 'honest' Iago, and his remark that he never knew a Florentine 'more kind and honest', is pure dramatic irony; Iago's offer to draw Othello out of the way makes him the director of the meeting he will later misrepresent."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 3.1",
+     "quote": "Masters, play here, I will content your pains,\nSomething that’s brief; and bid “Good morrow, general.”",
+     "note": "A courtly gesture that will be read against Cassio. Music, a sign of harmony, is silenced at Othello's request."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act III, Scene 2: Othello inspects the fortifications",
+   "lines": "Act III, Scene 2 (the whole scene)",
+   "section": 8,
+   "summary": [
+    "Othello gives Iago letters for the senate and goes with some gentlemen to inspect the island's defences."
+   ],
+   "analysis": [
+    "A few lines only, but they show Othello absorbed in public duty and trusting Iago with his business, and they move him off stage so that Desdemona can meet Cassio alone in the next scene."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 3.2",
+     "quote": "This fortification, gentlemen, shall we see’t?",
+     "note": "Othello attends to the island's walls; the real attack will come through the ear, not over the fortifications."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act III, Scene 3: The temptation",
+   "lines": "Act III, Scene 3 (the whole scene)",
+   "section": 9,
+   "summary": [
+    "In the castle garden Desdemona promises Cassio that she will give her husband no rest until he is restored. Cassio leaves as Othello and Iago approach, and Iago murmurs, 'Ha, I like not that.' Desdemona pleads for Cassio with playful persistence, and Othello, delighted with her, promises to deny her nothing. When she leaves he exclaims that if he ever ceases to love her, 'Chaos is come again.'",
+    "Iago begins his work with questions and echoes: did Cassio know of the courtship? Is he honest? He hints that he has thoughts too vile to utter, warns Othello against jealousy, the 'green-ey'd monster', and then suggests that Venetian women are skilled in hidden sins and that Desdemona, who deceived her father, may deceive her husband. He even implies that her choice of a black husband was itself unnatural. Left alone, Othello begins to doubt: perhaps because he is black, or older, or lacks courtly manners, she has turned from him.",
+    "Desdemona returns, and when she tries to bind his aching head with her handkerchief he pushes it away and it falls. Emilia picks it up and gives it to Iago, who has often asked her to steal it; he will leave it in Cassio's lodging. Othello returns in torment, bids farewell to his whole life as a soldier, and seizes Iago by the throat, demanding 'the ocular proof'. Iago answers that he cannot show him the act itself, but tells of hearing Cassio talk in his sleep of Desdemona, and claims to have seen Cassio wipe his beard with her handkerchief. Othello swears vengeance, and the two men kneel together in a parody of a marriage vow. Othello orders Cassio's death and makes Iago his lieutenant."
+   ],
+   "analysis": [
+    "The temptation scene is the centre of the play and one of the most studied scenes in drama. Iago almost never states an accusation; he withholds, repeats, and lets Othello supply the meaning, so that Othello seems to discover the 'truth' for himself. The process is gradual in the text, yet it takes place within a single scene, and part of the critical debate is whether Othello's collapse is too sudden to be credible or whether it reveals something already latent in him [[bradley1904]] [[leavis1937]].",
+    "Iago's technique depends on what Othello is: a stranger to Venetian society who must take Iago's word for what Venetian women are like, and a black man who has been told all his life that such a marriage is unnatural. When Othello says 'Haply, for I am black', the play shows the language of racial contempt entering his own mind. Many recent critics see this internalisation as the play's deepest insight into racism [[neill1989]] [[loomba2002]] [[hall1995]].",
+    "The scene also turns on the problem of knowledge. Othello wants certainty, 'I'll see before I doubt; when I doubt, prove', but what Iago offers is a story about a dream and a report of a handkerchief. 'Ocular proof' of adultery is impossible, and Iago's grossest speech, on the impossibility of seeing the lovers 'as prime as goats', fills that gap with images. The kneeling vow, ending 'I am your own for ever', marks Iago's possession of Othello; the 'Pontic Sea' speech, found only in the Folio, gives Othello's resolve its grandeur [[honigmann1996]]."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 3.3.90–92",
+     "quote": "Excellent wretch! Perdition catch my soul,\nBut I do love thee! And when I love thee not,\nChaos is come again.",
+     "note": "Othello's love holds his world in order. The lines are spoken just before Iago begins, and they predict exactly what will follow."
+    },
+    {
+     "ref": "Oth. 3.3.165–67",
+     "quote": "O, beware, my lord, of jealousy;\nIt is the green-ey’d monster which doth mock\nThe meat it feeds on.",
+     "note": "Iago plants the idea of jealousy by warning against it. The monster that feeds on itself becomes the play's image of a passion without real cause."
+    },
+    {
+     "ref": "Oth. 3.3.263–66",
+     "quote": "Haply, for I am black,\nAnd have not those soft parts of conversation\nThat chamberers have, or for I am declin’d\nInto the vale of years,—",
+     "note": "Othello begins to see himself through the eyes of those who think the marriage unnatural."
+    },
+    {
+     "ref": "Oth. 3.3.359–60",
+     "quote": "Villain, be sure thou prove my love a whore;\nBe sure of it. Give me the ocular proof,",
+     "note": "Othello demands visible evidence of something that cannot be seen; Iago will supply a handkerchief and a story instead."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Act III, Scene 4: The handkerchief",
+   "lines": "Act III, Scene 4 (the whole scene)",
+   "section": 10,
+   "summary": [
+    "Desdemona, worried that she has lost the handkerchief, sends the Clown to find Cassio. Othello enters, takes her hand and calls it moist and 'liberal', a sign of a hot, loose nature. He asks for the handkerchief and tells her its history: an Egyptian charmer gave it to his mother to keep his father's love; a sibyl two hundred years old sewed it, from silk of hallowed worms dyed in liquid from embalmed maidens' hearts. To lose it would be perdition. Desdemona, frightened, says it is not lost, and tries to change the subject to Cassio. Othello repeats 'The handkerchief!' and storms out.",
+    "Emilia, who knows where it is and says nothing, remarks bitterly that men are all stomachs and women their food. Cassio and Iago arrive; Desdemona says her advocacy is out of tune, and Iago goes to see what has angered Othello. Cassio then meets his mistress Bianca, gives her the handkerchief he has found in his room, and asks her to copy the embroidery."
+   ],
+   "analysis": [
+    "The handkerchief, a trifle in Cinthio, becomes in Othello's speech a talisman of magic and love, linking his marriage to his mother's and his Egyptian or African past. In the last scene he will call it 'an antique token / My father gave my mother', and critics debate whether the magical history is meant to be believed or is part of his attempt to frighten Desdemona. Boose read the strawberry-spotted cloth as an emblem of the wedding sheets and the proof of virginity, which helps explain why its loss counts for so much [[boose1975]].",
+    "This is the first time Desdemona tells a lie, and a small one, out of fear. Emilia's silence is the more troubling, since one word from her would end the plot. Her remark that jealous souls are jealous 'for they are jealous', not for any cause, is a precise diagnosis of what is happening to Othello."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 3.4",
+     "quote": "’Tis true. There’s magic in the web of it.\nA sibyl, that had number’d in the world\nThe sun to course two hundred compasses,\nIn her prophetic fury sew’d the work;",
+     "note": "The handkerchief becomes a sacred object, and Othello's speech brings back the exotic world of his tale to the senate."
+    },
+    {
+     "ref": "Oth. 3.4",
+     "quote": "But jealous for they are jealous: ’tis a monster\nBegot upon itself, born on itself.",
+     "note": "Emilia, without knowing it, explains Othello's state better than he can: jealousy needs no cause."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Act IV, Scene 1: The eavesdropping and the blow",
+   "lines": "Act IV, Scene 1 (the whole scene)",
+   "section": 11,
+   "summary": [
+    "Iago torments Othello with lurid hints of Desdemona in bed with Cassio, until Othello, in broken prose, falls into an epileptic fit. When Cassio passes, Iago sends him away and tells Othello to hide and watch while he makes Cassio talk about Desdemona. In fact he asks Cassio about Bianca, and Othello, who can see but not hear clearly, takes Cassio's laughter as boasting. Bianca then arrives and throws the handkerchief back at Cassio, saying it must be some other woman's token. Othello resolves to kill Desdemona that night; Iago suggests strangling her in the bed she has 'contaminated', and promises to deal with Cassio himself.",
+    "Lodovico arrives from Venice with letters recalling Othello and making Cassio governor. When Desdemona speaks kindly of Cassio, Othello strikes her in front of the envoy. She leaves obediently when he orders her out, and he leaves raving, 'Goats and monkeys!' Lodovico asks in amazement whether this can be the noble Moor the senate admired."
+   ],
+   "analysis": [
+    "Othello's fall is now visible in his speech. The magnificent verse of the earlier acts breaks into fragmented prose and obscene repetition, and his fit makes literal the 'chaos' he predicted. The eavesdropping, in which Othello sees a scene but misreads it entirely, is a cruel dramatisation of the 'ocular proof' he demanded: what he sees confirms what Iago has told him to see [[greenblatt1980]].",
+    "Yet in the middle of his rage Othello can still say 'the pity of it', the clearest sign that his love has not died. The public blow, before a Venetian envoy, is the moment at which Othello's private disorder becomes a scandal for the state; Lodovico's question shows the noble Moor being seen as Iago wishes everyone to see him [[potter2002]]."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 4.1",
+     "quote": "Nay, that’s certain. But yet the pity of it, Iago! O Iago, the pity of\nit, Iago!",
+     "note": "A moment of grief that cuts through the hatred. Iago at once turns it back to rage."
+    },
+    {
+     "ref": "Oth. 4.1.264–68",
+     "quote": "Is this the noble Moor, whom our full senate\nCall all in all sufficient? Is this the nature\nWhom passion could not shake? whose solid virtue\nThe shot of accident nor dart of chance\nCould neither graze nor pierce?",
+     "note": "Venice's view of Othello as self-mastered and unshakeable is shattered. Iago's reply is simply 'He is much chang'd.'"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Act IV, Scene 2: The 'brothel' scene",
+   "lines": "Act IV, Scene 2 (the whole scene)",
+   "section": 12,
+   "summary": [
+    "Othello questions Emilia, who swears that Desdemona is innocent; he decides she is a simple bawd. He then summons Desdemona and treats her room like a brothel and Emilia like its keeper. He weeps, calls her a whore, and leaves money for Emilia's 'pains'. Desdemona, stunned, asks Emilia to lay her wedding sheets on her bed. Emilia rails against the unknown 'cogging, cozening slave' who must have slandered her mistress, not knowing it is her husband; Iago tells her to speak lower. Desdemona kneels to Iago and asks him how to win back her lord.",
+    "Roderigo then confronts Iago: he has given him jewels for Desdemona and has had nothing. Iago turns his anger by telling him that Othello is leaving for Mauritania unless something detains him, and that the best way to keep Desdemona in Cyprus is to kill Cassio. Roderigo agrees to ambush him."
+   ],
+   "analysis": [
+    "Othello's language is now a terrible mixture of tenderness and filth; he sees Desdemona as a lovely book on which the word 'whore' has been written. Desdemona cannot even repeat the word. Her request for the wedding sheets is a quiet affirmation of the marriage as she understands it, and it prepares for the deathbed of the final scene [[snow1980]].",
+    "Emilia guesses the truth in general terms without seeing that it applies to her own husband, and the audience's knowledge makes her speech almost unbearable. Iago's handling of Roderigo shows how far he must now improvise to keep his plot alive."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 4.2.71–72",
+     "quote": "Was this fair paper, this most goodly book,\nMade to write “whore” upon? What committed?",
+     "note": "Desdemona's beauty is imagined as a white page; Othello believes that someone has written on it what he must read."
+    },
+    {
+     "ref": "Oth. 4.2",
+     "quote": "I took you for that cunning whore of Venice\nThat married with Othello.",
+     "note": "Othello now speaks of himself in the third person, as a stranger deceived by a Venetian woman, the very story Iago told about Venice in 3.3."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Act IV, Scene 3: The Willow Song",
+   "lines": "Act IV, Scene 3 (the whole scene)",
+   "section": 13,
+   "summary": [
+    "After supper with Lodovico, Othello orders Desdemona to go to bed and dismiss Emilia. While Emilia helps her undress, Desdemona asks to be shrouded in her wedding sheets if she dies first, and remembers her mother's maid Barbary, who was abandoned by her lover and died singing a song of 'willow'. She sings it now. She asks Emilia whether there are women who betray their husbands; Emilia says that she would, for the whole world. Then, in a long speech, Emilia argues that if wives fall it is their husbands' fault, since women have the same senses, desires and frailties as men."
+   ],
+   "analysis": [
+    "This quiet scene between two women is the calm before the murder, and it is the only time in the play that women speak together without men present. Much of it, including the Willow Song and Emilia's speech on the equality of the sexes, appears only in the Folio, and its presence changes the balance of the play considerably [[honigmann1996]].",
+    "Desdemona's innocence and Emilia's realism are set side by side. Desdemona cannot believe that any woman would commit such a wrong; Emilia, who has endured Iago, can. Her argument that husbands teach their wives their faults has made her a central figure in feminist readings, and it prepares for her courage in the last scene [[newman1987]] [[snow1980]]."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 4.3",
+     "quote": "She was in love, and he she lov’d prov’d mad\nAnd did forsake her. She had a song of “willow”,",
+     "note": "The story of Barbary (her name recalls the Barbary coast of North Africa) foreshadows Desdemona's own fate."
+    },
+    {
+     "ref": "Oth. 4.3",
+     "quote": "Let husbands know\nTheir wives have sense like them: they see, and smell\nAnd have their palates both for sweet and sour,",
+     "note": "Emilia insists that women share the same appetites as men, a radical claim in a play obsessed with female chastity."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Act V, Scene 1: The ambush in the dark",
+   "lines": "Act V, Scene 1 (the whole scene)",
+   "section": 14,
+   "summary": [
+    "In a dark street Iago places Roderigo to ambush Cassio. Either outcome suits him, he reflects, but Cassio must die: he has 'a daily beauty in his life' that makes Iago ugly. Roderigo attacks and misses; Cassio wounds him, and Iago, from behind, wounds Cassio in the leg. Othello hears Cassio's cries, believes Iago has kept his word, and goes to kill Desdemona. Lodovico and Gratiano arrive; Iago returns with a light, stabs Roderigo to silence him, and blames the attack on Bianca, who has come running to Cassio."
+   ],
+   "analysis": [
+    "The confusion in the dark is a fitting image of the whole plot, in which no one sees clearly but Iago. His comment on Cassio's 'daily beauty' is among the most revealing lines he speaks: it suggests that his hatred is at bottom a resentment of goodness itself, which is why Coleridge and later critics saw something beyond ordinary motive in him [[coleridge1930]]. His closing aside admits that everything now depends on this night."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 5.1.19–20",
+     "quote": "He hath a daily beauty in his life\nThat makes me ugly.",
+     "note": "Envy of virtue as such. Iago measures himself by others and cannot bear what he sees."
+    },
+    {
+     "ref": "Oth. 5.1.128–29",
+     "quote": "This is the night\nThat either makes me or fordoes me quite.",
+     "note": "Iago's gamble. The word 'fordoes' (destroys) points to the reversal in the final scene."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Act V, Scene 2: The death of Desdemona",
+   "lines": "Act V, Scene 2 (the whole scene)",
+   "section": 15,
+   "summary": [
+    "Othello enters the bedchamber where Desdemona lies asleep. He says that he kills her for 'the cause', as an act of justice so that she will betray no more men, and compares putting out her life to putting out the candle. He kisses her and weeps. She wakes, and he tells her to confess her sins and pray. She denies everything and begs to live, if only for one night or one prayer; he smothers her. Emilia knocks with news of the attack on Cassio. Desdemona revives long enough to say she dies guiltless and, when Emilia asks who did it, answers 'Nobody; I myself', and dies.",
+    "Othello confesses that he killed her because Iago told him she was false with Cassio. Emilia calls him a fool and a devil and cries out for help. When Iago arrives with Montano and Gratiano, she forces the truth out: the handkerchief was found by her and given to her husband. Othello attacks Iago, who stabs Emilia and flees; she dies singing a line of Desdemona's willow song and swearing that her mistress was chaste.",
+    "Iago is brought back as a prisoner. Othello wounds him, and asks Cassio's pardon; letters found on Roderigo confirm the plot. Asked why he did it, Iago says he will never speak again. Othello asks the Venetians to report him truly, as one who 'loved not wisely, but too well', and as a man who once struck down a 'turban'd Turk' in Aleppo who had insulted Venice; at that word he stabs himself and dies on the bed, kissing Desdemona. Lodovico gives Cassio authority over Iago's punishment and leaves to report the tragedy to Venice."
+   ],
+   "analysis": [
+    "Othello enters as a priest performing a sacrifice rather than a murderer, and the beauty of his verse makes the scene almost unbearable. The candle image ('Put out the light') joins the light-and-dark imagery to the question of whether life, once extinguished, can be restored. Desdemona's last words have been read as a lie told to protect her husband, as an act of forgiveness, or, by some critics, as a sign of her internalised guilt [[snow1980]].",
+    "Emilia's revolt is the moral turning point. She disobeys her husband, refuses to be silent, and dies for telling the truth, and it is she who reveals the handkerchief, the play's 'proof'. Iago's refusal to speak makes his motives finally unknowable; the play does not explain him [[bradley1904]].",
+    "Othello's last speech has divided critics more than any other in the play. Bradley heard in it the return of the noble hero; T. S. Eliot thought that Othello was 'cheering himself up', escaping reality by turning himself into a figure of romance; Leavis saw the speech as the final self-dramatisation of a self-deceived man [[eliot1932]] [[leavis1937]]. Postcolonial critics have pointed to its last image, in which Othello kills himself as if he were the 'circumcised dog', the Turkish enemy of the state: the outsider who defended Venice now destroys the outsider in himself [[vitkus1997]] [[loomba2002]]. The Folio reads 'base Judean', the Quarto 'base Indian', a famous textual crux [[honigmann1997]]."
+   ],
+   "key": [
+    {
+     "ref": "Oth. 5.2.7",
+     "quote": "Put out the light, and then put out the light:",
+     "note": "The candle and Desdemona's life. The first light can be relit; the second, as Othello sees, cannot."
+    },
+    {
+     "ref": "Oth. 5.2.124",
+     "quote": "Nobody; I myself. Farewell.",
+     "note": "Desdemona's dying words: a lie that protects Othello, and perhaps an act of love beyond his understanding."
+    },
+    {
+     "ref": "Oth. 5.2.303–4",
+     "quote": "Demand me nothing. What you know, you know.\nFrom this time forth I never will speak word.",
+     "note": "The master of words falls silent. Iago's refusal to explain leaves his motive one of the great unanswered questions of drama."
+    },
+    {
+     "ref": "Oth. 5.2.344–48",
+     "quote": "Of one that loved not wisely, but too well;\nOf one not easily jealous, but being wrought,\nPerplex’d in the extreme; of one whose hand,\nLike the base Judean, threw a pearl away\nRicher than all his tribe;",
+     "note": "Othello composes his own epitaph. Whether it is true, or a final self-deception, is a central critical debate."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Othello",
+   "side": "Protagonist",
+   "text": "A Moor, a Christian convert, and the general of Venice's armies, who has fought since he was seven and claims royal descent. Dignified, eloquent and trusting, he is a stranger to Venetian society, and his marriage to Desdemona makes him vulnerable to Iago's slanders. Critics have seen him as a noble hero destroyed by a demonic enemy (Bradley), a self-dramatising egotist whose love was always fragile (Leavis), or a black man brought to see himself through the racial fears of the society he serves."
+  },
+  {
+   "name": "Desdemona",
+   "side": "Othello's wife",
+   "text": "Brabantio's daughter, who marries Othello secretly and defends her choice before the senate. She is neither naive nor merely passive: she is frank about her desire, persistent in her suit for Cassio, and steadfast in her love even after Othello strikes and insults her. Her loyalty to the end, including her dying attempt to clear her husband, has been read both as heroic constancy and as the result of a society that taught wives obedience."
+  },
+  {
+   "name": "Iago",
+   "side": "Antagonist",
+   "text": "Othello's ensign ('ancient'), twenty-eight years old, with a reputation for honesty. He offers several reasons for his hatred: Cassio's promotion, the suspicion that Othello and Cassio have slept with his wife, desire for Desdemona, envy of Cassio's goodness. None seems to explain the intensity of his malice, and he refuses to explain himself at the end. He is the play's chief improviser, a brilliant reader of other people, and the descendant of the Vice of the morality plays who shares his plans with the audience."
+  },
+  {
+   "name": "Emilia",
+   "side": "Iago's wife",
+   "text": "Desdemona's attendant. Worldly and outspoken, she gives the handkerchief to Iago without thinking of its consequences and keeps silent when Desdemona is questioned. In the last scene she defies her husband and tells the truth, and is killed for it. Her speech on the equality of wives and husbands (4.3) has made her one of the play's most discussed characters."
+  },
+  {
+   "name": "Michael Cassio",
+   "side": "Othello's lieutenant",
+   "text": "A young Florentine officer, courteous and well educated, chosen by Othello as lieutenant over Iago. He is weak with drink and anxious about his reputation, and he treats his mistress Bianca with some contempt. Iago uses his friendship with Desdemona as the ground of the slander. He survives to govern Cyprus."
+  },
+  {
+   "name": "Roderigo",
+   "side": "Iago's dupe",
+   "text": "A rich, foolish Venetian gentleman in love with Desdemona, who gives Iago money and jewels in the hope of winning her. He is the instrument of the opening alarm, the brawl and the ambush, and Iago kills him when he becomes dangerous. Letters found on his body help reveal the plot."
+  },
+  {
+   "name": "Brabantio",
+   "side": "Desdemona's father",
+   "text": "A Venetian senator who once welcomed Othello to his house but cannot accept him as a son-in-law. He accuses Othello of witchcraft and warns him that Desdemona may deceive him as she deceived her father. In the last scene we learn that grief at the marriage has killed him."
+  },
+  {
+   "name": "Bianca",
+   "side": "Cassio's mistress",
+   "text": "A courtesan in Cyprus who loves Cassio. Her return of the handkerchief in 4.1 provides the 'proof' Othello sees with his own eyes. Iago tries to blame her for the attack on Cassio. Her name means 'white', and her presence as the one 'whore' in the play sharpens the injustice of the name Othello gives Desdemona."
+  },
+  {
+   "name": "The Duke of Venice",
+   "side": "Ruler of Venice",
+   "text": "Presides over the council in 1.3. Needing Othello for the war, he accepts his account of the courtship and supports the marriage."
+  },
+  {
+   "name": "Lodovico",
+   "side": "Venetian envoy",
+   "text": "A kinsman of Brabantio, sent from Venice to recall Othello. He witnesses Othello striking Desdemona, and in the final scene restores order and speaks for the state."
+  },
+  {
+   "name": "Gratiano",
+   "side": "Brabantio's brother",
+   "text": "Arrives with Lodovico and brings the news of Brabantio's death; he inherits Othello's fortune."
+  },
+  {
+   "name": "Montano",
+   "side": "Governor of Cyprus",
+   "text": "Othello's predecessor in Cyprus, wounded by Cassio in the brawl. He helps capture Iago."
+  },
+  {
+   "name": "The Clown",
+   "side": "Othello's servant",
+   "text": "A servant who jokes with the musicians in 3.1 and with Desdemona in 3.4; his wordplay on 'lie' anticipates the play's lies."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Jealousy, proof and knowledge",
+   "text": [
+    "Othello is often called a tragedy of jealousy, but it is more exactly a tragedy about how we come to know, or think we know, another person. Othello demands 'ocular proof', yet the infidelity he fears cannot be seen, and what he receives instead are hints, a dream, a handkerchief, and a conversation half overheard. The play shows how quickly a mind that needs certainty will accept counterfeit evidence when the alternative is uncertainty.",
+    "Emilia's definition of jealousy as a monster 'begot upon itself' identifies the problem: jealousy creates its own evidence. Iago's genius is to understand this and to give Othello's imagination the materials it needs. The philosopher Stanley Cavell read the play as a study of scepticism: Othello cannot bear the uncertainty of knowing another person, and the 'proof' he seeks is a way of avoiding what he cannot accept [[cavell1987]]."
+   ]
+  },
+  {
+   "title": "Race and the outsider",
+   "text": [
+    "Othello is valued by Venice as a general but treated as an alien when he marries a senator's daughter. The play's language of black and white, from Iago's 'old black ram' to the Duke's 'far more fair than black', shows a society that associates blackness with sin, sexuality and the devil even when it praises the black man. The tragedy is not only that others think this way but that Othello comes to accept it: 'Haply, for I am black'.",
+    "Whether the play challenges or reinforces these prejudices has been debated since Rymer. Recent critics have shown how it draws on early modern ideas of Moors and Africans, how it links racial anxiety with sexual anxiety, and how Othello's final image of himself as the 'circumcised dog' reveals the cost of his assimilation [[neill1989]] [[loomba2002]] [[hall1995]] [[newman1987]]."
+   ]
+  },
+  {
+   "title": "Honesty, seeming and reputation",
+   "text": [
+    "'I am not what I am,' says Iago, and the play constantly tests the gap between appearance and reality. Iago is called 'honest' again and again, by characters who mean different things by the word, and he uses that reputation as his chief weapon. Iago himself tells Othello that 'men should be what they seem', and Othello, who takes men at their word, is the ideal victim of a man who is all seeming.",
+    "Reputation is equally unstable. Cassio thinks it his immortal part; Iago tells him it is nothing, then tells Othello that a good name is 'the immediate jewel' of the soul. Desdemona's reputation, destroyed by words, becomes the real object of the slander [[empson1951]]."
+   ]
+  },
+  {
+   "title": "Love, marriage and the place of women",
+   "text": [
+    "The marriage begins as a free choice made against a father's will and defended in public. Desdemona's frank desire and Emilia's view of wives as equal partners show women claiming a voice in a society that treats them as property, as when Iago shouts 'thieves!' at Brabantio's window. The play's men, by contrast, swing between idealising women and degrading them as whores.",
+    "Feminist critics have argued that the tragedy is driven by male anxiety about female sexuality, and that Othello's need to possess Desdemona completely makes him unable to bear her independence [[snow1980]] [[newman1987]]. All three women of the play, Desdemona, Emilia and Bianca, are called whores, and none is guilty of the betrayal laid at her door."
+   ]
+  },
+  {
+   "title": "Storytelling and identity",
+   "text": [
+    "Othello wins Desdemona by telling his life, and dies telling it again. His identity is something narrated, to the senate, to his wife, and finally to the Venetians who will carry his story home. Iago defeats him by telling a better story, one in which Othello is a cuckold and Desdemona a 'cunning whore of Venice'.",
+    "Greenblatt's account of Iago's 'improvisation' sees him as a master of entering and rewriting other people's narratives, and the play itself as a reflection on the power of fiction to shape the self [[greenblatt1980]]."
+   ]
+  },
+  {
+   "title": "Order, chaos and the Turkish threat",
+   "text": [
+    "The play moves from Venice, a city of law, to Cyprus, a garrison on the frontier with the Ottoman empire. The external enemy is destroyed by a storm, but the danger moves inside: the brawl, Othello's fit and the murder are all forms of 'turning Turk', a falling away from Christian civility.",
+    "Othello's suicide, in which he acts as both the Venetian servant and the Turkish enemy, brings this theme to a terrible resolution [[vitkus1997]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Animals",
+   "text": "Iago fills the play with beasts: rams and ewes, a Barbary horse, goats and monkeys, asses led by the nose. His animal images reduce love to sexual appetite and human beings to brutes, and Othello's adoption of them ('Goats and monkeys!') shows how far Iago's language has taken possession of him."
+  },
+  {
+   "title": "Black and white, light and dark",
+   "text": "The play opens at night and ends by candlelight. Iago uses the contrast of black and white to make the marriage seem monstrous; the Duke calls Othello 'far more fair than black'; Emilia calls him 'the blacker devil'. Othello's 'Put out the light' joins the imagery to the act of murder."
+  },
+  {
+   "title": "Poison and medicine",
+   "text": "Iago pours 'pestilence' into Othello's ear and speaks of jealousy as a 'poisonous mineral' and of 'dangerous conceits' that burn like sulphur. No 'drowsy syrups' can restore Othello's sleep. The imagery presents slander as a slow-acting drug in the blood."
+  },
+  {
+   "title": "Heaven and hell",
+   "text": "Iago calls his plot a birth from 'hell and night' and boasts of the 'divinity of hell'; Othello calls Desdemona a 'fair devil', and Emilia turns the word on him. In the end Othello looks at Iago's feet for the devil's cloven hooves. The language of damnation gives the domestic story a cosmic dimension."
+  },
+  {
+   "title": "Honesty",
+   "text": "The words 'honest' and 'honesty' recur more than fifty times, applied above all to Iago. Each repetition increases the irony and shows how a single word can carry trust, condescension and deceit at once [[empson1951]]."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The handkerchief",
+   "text": "Othello's first gift to Desdemona, embroidered with strawberries. To Othello it is a magical token of love handed down from his mother; to Iago a tool; to Cassio and Bianca a pretty pattern to copy. It becomes the 'proof' of adultery, a trifle 'light as air' made to bear the weight of a life. Its strawberries on white have been read as an image of the bloodstained wedding sheets [[boose1975]]."
+  },
+  {
+   "title": "The wedding sheets and the bed",
+   "text": "Desdemona asks for her wedding sheets in 4.2 and to be shrouded in them in 4.3; Othello kills her in the bed, and Lodovico orders 'the tragic loading of this bed' to be hidden. The bed, the place of marriage, becomes the scene of the slander and the tomb [[neill1989]]."
+  },
+  {
+   "title": "The storm",
+   "text": "The tempest that drowns the Turkish fleet spares the Venetians, but it also marks the move into a world where order is fragile. Othello's joy after the storm ('If after every tempest come such calms') is the calm before an inner storm."
+  },
+  {
+   "title": "The Willow Song",
+   "text": "Barbary's song of a woman forsaken, sung by Desdemona before her death and echoed by the dying Emilia. It gives the women a shared voice of lament and links Desdemona's fate to a tradition of abandoned women."
+  },
+  {
+   "title": "The sword",
+   "text": "Othello's command 'Keep up your bright swords' shows his authority; by the end he has lost it to a 'puny whipster', fetches another, and turns it on himself. The sword traces his fall from public command to private self-destruction."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Iago's motives: 'motiveless malignity'?",
+   "text": [
+    "Iago gives many reasons for his hatred: Cassio's promotion, suspicion of Othello and Cassio with Emilia, his own desire for Desdemona, and envy of Cassio's 'daily beauty'. Coleridge, noting that these reasons keep changing and that Iago himself does not seem to believe them, described his soliloquies as 'the motive-hunting of a motiveless malignity'. For Coleridge, Iago is a being of intellect without moral feeling, almost a devil in human form [[coleridge1930]].",
+    "Bradley accepted that Iago's stated motives are not the real ones and found the real one in a desire to feel power and superiority, the satisfaction of an artist working on others [[bradley1904]]. Spivack argued that Iago's peculiar mixture of motives and gleeful confiding in the audience comes from the Vice of the morality plays, the allegorical tempter whose evil needed no motive, given a realistic disguise in a newer kind of drama [[spivack1958]]. Others have found in Iago a man of sexual jealousy and racial hatred whose motives are all too ordinary."
+   ],
+   "cite": [
+    "coleridge1930",
+    "bradley1904",
+    "spivack1958"
+   ]
+  },
+  {
+   "title": "Bradley, Eliot and Leavis: the noble hero?",
+   "text": [
+    "A. C. Bradley's Shakespearean Tragedy (1904) presented Othello as the most romantic of Shakespeare's heroes: a noble, trusting man, 'not easily jealous', destroyed by a villain of genius. In his account the final speech restores Othello's greatness [[bradley1904]].",
+    "T. S. Eliot objected that in that speech Othello is 'cheering himself up', escaping from reality into a flattering picture of himself [[eliot1932]]. F. R. Leavis's essay 'Diabolic Intellect and the Noble Hero' (1937) attacked Bradley directly. For Leavis, Iago is little more than a device; the tragedy lies in Othello himself, in a self-regarding, self-dramatising nobility whose love was always partly self-love and which collapses at the first touch of suspicion. Leavis's reading is often said to have shaped John Dexter's 1964 National Theatre production, with Laurence Olivier as Othello [[leavis1937]]. Many critics since have tried to keep both views in play, acknowledging Othello's self-deception without denying his grandeur."
+   ],
+   "cite": [
+    "bradley1904",
+    "eliot1932",
+    "leavis1937"
+   ]
+  },
+  {
+   "title": "Race: from Rymer to postcolonial readings",
+   "text": [
+    "Thomas Rymer's A Short View of Tragedy (1693) mocked the play as implausible and degrading: that a Venetian lady should love a 'blackamoor' was against nature, and the moral of the tragedy was merely a warning to wives to look after their linen. His attack shows how racial assumptions shaped criticism from the start [[rymer1693]]. In the nineteenth century Coleridge insisted that Othello must be imagined as a light-skinned Moor rather than a 'negro', for it would be monstrous to think of Desdemona loving a black African [[coleridge1930]].",
+    "Twentieth-century scholarship reversed these assumptions. Eldred Jones studied the images of Africans on the English Renaissance stage [[jones1965]]; Karen Newman, Michael Neill, Kim Hall and Ania Loomba showed how the play links blackness with sexual monstrosity and how its hero is undone by the racial fears of his society, which he internalises [[newman1987]] [[neill1989]] [[hall1995]] [[loomba2002]]. Emily Bartels traced the shifting meanings of 'Moor' [[bartels1990]]. Some Black writers and actors have asked whether the play, by making its only black protagonist jealous and violent, confirms the stereotypes it exposes; the essays collected by Mythili Kaul give a range of answers [[kaul1997]]."
+   ],
+   "cite": [
+    "rymer1693",
+    "coleridge1930",
+    "jones1965",
+    "newman1987",
+    "neill1989",
+    "hall1995",
+    "loomba2002",
+    "bartels1990",
+    "kaul1997"
+   ]
+  },
+  {
+   "title": "The stage history of Othello's colour",
+   "text": [
+    "For three centuries Othello was played by white actors in dark make-up. From 1814 Edmund Kean played a lighter, 'tawny' Othello, a fashion that reflected the period's discomfort with a black hero. The African American actor Ira Aldridge played the role in London from the 1820s, including at Covent Garden in 1833, and later across Europe [[potter2002]].",
+    "Paul Robeson's performances, in London in 1930 with Peggy Ashcroft as Desdemona, and on Broadway in 1943–44 in Margaret Webster's production, which ran longer than any previous Shakespeare play on Broadway, made the casting of a black actor in the role central to the play's meaning. Robeson, a political activist, saw Othello's tragedy as that of a black man in a white society [[duberman1988]]. Laurence Olivier's blacked-up performance in 1964, admired by many at the time, now seems to most viewers an embarrassment. Since the 1980s it has become almost unthinkable for a white actor to play Othello in a mainstream production, although some Black actors have questioned whether they should take the part at all [[potter2002]]."
+   ],
+   "cite": [
+    "potter2002",
+    "duberman1988"
+   ]
+  },
+  {
+   "title": "Greenblatt and the improvisation of power",
+   "text": [
+    "In Renaissance Self-Fashioning (1980), Stephen Greenblatt read Iago as a master of 'improvisation', the ability to capitalise on the unforeseen and to transform given materials into one's own scenario. Iago succeeds because he can enter Othello's own narrative of himself and reshape it from within.",
+    "Greenblatt connected this power with the European ability to enter and manipulate other cultures, and with the orthodox Christian teaching that excessive passion even in marriage is sinful, which made Othello vulnerable to the suggestion that his love for Desdemona was itself a kind of adultery. The essay was a founding text of New Historicism and remains one of the most influential readings of the play [[greenblatt1980]]."
+   ],
+   "cite": [
+    "greenblatt1980"
+   ]
+  },
+  {
+   "title": "Desdemona, Emilia and the women of the play",
+   "text": [
+    "Older criticism often treated Desdemona as an innocent, passive victim. Feminist critics have emphasised instead her boldness in 1.3, her sexual frankness and her persistence, and have asked why such a woman becomes so submissive later on [[snow1980]] [[newman1987]].",
+    "Edward Snow argued that the tragedy springs from male anxiety about female sexuality, which makes Othello unable to accept a wife who desires him. Emilia, with her worldly realism and her final defiance of Iago, has been read as the play's moral voice and as a spokeswoman for the equality of the sexes in a speech that appears only in the Folio [[snow1980]] [[honigmann1996]]. Lynda Boose's study of the handkerchief linked the play's central object to rituals of marriage and virginity [[boose1975]]."
+   ],
+   "cite": [
+    "snow1980",
+    "newman1987",
+    "honigmann1996",
+    "boose1975"
+   ]
+  },
+  {
+   "title": "Quarto and Folio",
+   "text": [
+    "The Quarto (1622) and Folio (1623) differ in about a thousand readings and in about 160 lines found only in the Folio. Were the Folio lines added by Shakespeare in revision, or cut from the text behind the Quarto, perhaps for performance? The answer affects our view of the characters, since the Folio-only passages include the Willow Song, Emilia's defence of wives and Othello's Pontic Sea speech.",
+    "Honigmann argued that both texts descend from Shakespeare's manuscripts, the Quarto from an earlier draft and the Folio from a revised fair copy, and that the Folio additions strengthen Emilia and Desdemona; other scholars have preferred to see the Quarto as an abridged theatrical text. Editors also must choose between readings such as 'Judean' and 'Indian' in 5.2 [[honigmann1996]] [[honigmann1997]] [[neill2006]]."
+   ],
+   "cite": [
+    "honigmann1996",
+    "honigmann1997",
+    "neill2006"
+   ]
+  },
+  {
+   "title": "Double time",
+   "text": [
+    "The action in Cyprus seems to last little more than a day and a half: the couple land, the brawl happens that night, the temptation takes place the next day, and the murder that night. Yet many references imply a much longer period, during which Cassio could have had an affair with Desdemona and Bianca complains that he has been away for a week. In the nineteenth century John Wilson called these two clocks 'short time' and 'long time'.",
+    "Most critics see the double time scheme as a deliberate dramatic device: short time gives the play its relentless pace and makes it impossible for Othello to check Iago's story, while long time makes the accusation plausible to the audience. The effect is that the adultery is never possible, but always believable [[honigmann1997]] [[neill2006]]."
+   ],
+   "cite": [
+    "honigmann1997",
+    "neill2006"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Oth. 1.1.64–65",
+   "quote": "But I will wear my heart upon my sleeve\nFor daws to peck at: I am not what I am.",
+   "who": "Iago",
+   "explanation": "Iago tells Roderigo that his outward show of service is a mask. The phrase 'wear my heart upon my sleeve' has become proverbial, but here it is what Iago will never do."
+  },
+  {
+   "ref": "Oth. 1.3.167–69",
+   "quote": "She lov’d me for the dangers I had pass’d,\nAnd I lov’d her that she did pity them.\nThis only is the witchcraft I have us’d.",
+   "who": "Othello",
+   "explanation": "Othello's account of the courtship before the senate. His love, and Desdemona's, began in a story; his identity is something told and believed."
+  },
+  {
+   "ref": "Oth. 1.3.399–402",
+   "quote": "The Moor is of a free and open nature\nThat thinks men honest that but seem to be so,\nAnd will as tenderly be led by the nose\nAs asses are.",
+   "who": "Iago",
+   "explanation": "Iago's soliloquy at the end of Act I. He recognises Othello's trusting nature and plans to exploit it."
+  },
+  {
+   "ref": "Oth. 3.3.90–92",
+   "quote": "Excellent wretch! Perdition catch my soul,\nBut I do love thee! And when I love thee not,\nChaos is come again.",
+   "who": "Othello",
+   "explanation": "Othello's love is the order of his world. These lines come just before Iago's temptation begins, and the rest of the play makes them come true."
+  },
+  {
+   "ref": "Oth. 3.3.165–67",
+   "quote": "O, beware, my lord, of jealousy;\nIt is the green-ey’d monster which doth mock\nThe meat it feeds on.",
+   "who": "Iago",
+   "explanation": "Iago warns Othello against jealousy in order to put the idea into his mind. The 'monster' image returns with Emilia in 3.4."
+  },
+  {
+   "ref": "Oth. 3.3.322–24",
+   "quote": "Trifles light as air\nAre to the jealous confirmations strong\nAs proofs of holy writ.",
+   "who": "Iago",
+   "explanation": "Iago explains how he will use the handkerchief: a trifle will become proof. The lines sum up the play's study of jealousy and evidence."
+  },
+  {
+   "ref": "Oth. 3.3.348–50",
+   "quote": "Farewell the tranquil mind! Farewell content!\nFarewell the plumed troops and the big wars\nThat make ambition virtue!",
+   "who": "Othello",
+   "explanation": "Othello bids farewell to his whole identity as a soldier. The loss of faith in Desdemona means the loss of himself: 'Othello's occupation's gone!'"
+  },
+  {
+   "ref": "Oth. 5.1.19–20",
+   "quote": "He hath a daily beauty in his life\nThat makes me ugly.",
+   "who": "Iago",
+   "explanation": "Iago on Cassio. His hatred seems at bottom a resentment of goodness itself."
+  },
+  {
+   "ref": "Oth. 5.2.1–3",
+   "quote": "It is the cause, it is the cause, my soul,\nLet me not name it to you, you chaste stars!\nIt is the cause.",
+   "who": "Othello",
+   "explanation": "Othello prepares to kill Desdemona as an act of justice. He cannot name the 'cause', her supposed adultery; the repetition suggests a man trying to convince himself."
+  },
+  {
+   "ref": "Oth. 5.2.344–48",
+   "quote": "Of one that loved not wisely, but too well;\nOf one not easily jealous, but being wrought,\nPerplex’d in the extreme; of one whose hand,\nLike the base Judean, threw a pearl away\nRicher than all his tribe;",
+   "who": "Othello",
+   "explanation": "Othello's last speech, asking to be remembered truly. Critics disagree whether it is a recovery of nobility or a final self-deception."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Shakespeare keep Othello off stage for most of the first scene and let us hear about him only from Iago and Roderigo?",
+   "hint": "Compare the images of 'the Moor' in 1.1 with the man who speaks in 1.2 and 1.3."
+  },
+  {
+   "q": "Is Othello's speech to the senate (1.3) really a 'round unvarnish'd tale'? What does it tell us about how he sees himself?",
+   "hint": "Look at its rhetoric and at what Desdemona loved in the story."
+  },
+  {
+   "q": "Which of Iago's stated motives, if any, do you find convincing? Why might Shakespeare have given him so many?",
+   "hint": "Compare the soliloquies at the ends of 1.3, 2.1 and 2.3 with 5.1.19–20 and his last words."
+  },
+  {
+   "q": "How does Iago persuade Othello in 3.3 without ever making a direct accusation?",
+   "hint": "Track his questions, echoes, pauses and warnings, and the moment when Othello starts finishing his thoughts for him."
+  },
+  {
+   "q": "What part does Othello's race play in his tragedy? Does the play challenge or confirm the prejudices of its characters?",
+   "hint": "Compare Iago's and Brabantio's language with 'Haply, for I am black' (3.3) and the final speech."
+  },
+  {
+   "q": "Why does the handkerchief matter so much? Consider its different meanings for each character who handles it.",
+   "hint": "Compare Othello's two accounts of its origin (3.4 and 5.2) and Bianca's reaction in 4.1."
+  },
+  {
+   "q": "How does Emilia change in the course of the play, and why does she keep silent about the handkerchief until the end?",
+   "hint": "Consider 3.3, 3.4, 4.3 and her defiance of Iago in 5.2."
+  },
+  {
+   "q": "Is Desdemona a passive victim? Trace her speech and actions from the senate scene to her death.",
+   "hint": "Look at 1.3, her suit for Cassio in 3.3, and 'Nobody; I myself' in 5.2."
+  },
+  {
+   "q": "Is Othello's last speech a recovery of his nobility or a final act of self-dramatisation?",
+   "hint": "Weigh Bradley's view against Eliot's and Leavis's, and consider the image of the 'turban'd Turk'."
+  },
+  {
+   "q": "What is the effect of moving the action from Venice to Cyprus, and of the Turkish fleet being destroyed by a storm?",
+   "hint": "Think about what happens to order and to Othello's role as general once there is no enemy to fight."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "bartels1990",
+   "text": "Bartels, Emily C. 'Making More of the Moor: Aaron, Othello, and Renaissance Refashionings of Race.' Shakespeare Quarterly 41, no. 4 (1990): 433–54."
+  },
+  {
+   "id": "boose1975",
+   "text": "Boose, Lynda E. 'Othello's Handkerchief: \"The Recognizance and Pledge of Love\".' English Literary Renaissance 5, no. 3 (1975): 360–74."
+  },
+  {
+   "id": "bradley1904",
+   "text": "Bradley, A. C. Shakespearean Tragedy: Lectures on Hamlet, Othello, King Lear, Macbeth. London: Macmillan, 1904."
+  },
+  {
+   "id": "bullough1973",
+   "text": "Bullough, Geoffrey, ed. Narrative and Dramatic Sources of Shakespeare. Vol. 7, Major Tragedies: Hamlet, Othello, King Lear, Macbeth. London: Routledge and Kegan Paul; New York: Columbia University Press, 1973."
+  },
+  {
+   "id": "cavell1987",
+   "text": "Cavell, Stanley. Disowning Knowledge in Six Plays of Shakespeare. Cambridge: Cambridge University Press, 1987."
+  },
+  {
+   "id": "coleridge1930",
+   "text": "Coleridge, Samuel Taylor. Coleridge's Shakespearean Criticism. Edited by Thomas Middleton Raysor. 2 vols. London: Constable, 1930."
+  },
+  {
+   "id": "duberman1988",
+   "text": "Duberman, Martin Bauml. Paul Robeson. New York: Alfred A. Knopf, 1988."
+  },
+  {
+   "id": "eliot1932",
+   "text": "Eliot, T. S. 'Shakespeare and the Stoicism of Seneca' (1927). In Selected Essays, 1917–1932. London: Faber and Faber, 1932."
+  },
+  {
+   "id": "empson1951",
+   "text": "Empson, William. 'Honest in Othello.' In The Structure of Complex Words. London: Chatto and Windus, 1951."
+  },
+  {
+   "id": "greenblatt1980",
+   "text": "Greenblatt, Stephen. Renaissance Self-Fashioning: From More to Shakespeare. Chicago: University of Chicago Press, 1980."
+  },
+  {
+   "id": "hall1995",
+   "text": "Hall, Kim F. Things of Darkness: Economies of Race and Gender in Early Modern England. Ithaca: Cornell University Press, 1995."
+  },
+  {
+   "id": "honigmann1996",
+   "text": "Honigmann, E. A. J. The Texts of 'Othello' and Shakespearian Revision. London: Routledge, 1996."
+  },
+  {
+   "id": "honigmann1997",
+   "text": "Honigmann, E. A. J., ed. Othello. By William Shakespeare. The Arden Shakespeare, Third Series. Walton-on-Thames: Thomas Nelson, 1997."
+  },
+  {
+   "id": "jones1965",
+   "text": "Jones, Eldred. Othello's Countrymen: The African in English Renaissance Drama. London: Oxford University Press for Fourah Bay College, 1965."
+  },
+  {
+   "id": "kaul1997",
+   "text": "Kaul, Mythili, ed. Othello: New Essays by Black Writers. Washington, DC: Howard University Press, 1997."
+  },
+  {
+   "id": "leavis1937",
+   "text": "Leavis, F. R. 'Diabolic Intellect and the Noble Hero: A Note on Othello.' Scrutiny 6, no. 3 (1937): 259–83. Reprinted in The Common Pursuit. London: Chatto and Windus, 1952."
+  },
+  {
+   "id": "loomba2002",
+   "text": "Loomba, Ania. Shakespeare, Race, and Colonialism. Oxford Shakespeare Topics. Oxford: Oxford University Press, 2002."
+  },
+  {
+   "id": "neill1989",
+   "text": "Neill, Michael. 'Unproper Beds: Race, Adultery, and the Hideous in Othello.' Shakespeare Quarterly 40, no. 4 (1989): 383–412."
+  },
+  {
+   "id": "neill2006",
+   "text": "Neill, Michael, ed. Othello, the Moor of Venice. By William Shakespeare. The Oxford Shakespeare. Oxford: Oxford University Press, 2006."
+  },
+  {
+   "id": "newman1987",
+   "text": "Newman, Karen. '\"And wash the Ethiop white\": Femininity and the Monstrous in Othello.' In Shakespeare Reproduced: The Text in History and Ideology, edited by Jean E. Howard and Marion F. O'Connor, 143–62. New York: Methuen, 1987."
+  },
+  {
+   "id": "potter2002",
+   "text": "Potter, Lois. Othello. Shakespeare in Performance. Manchester: Manchester University Press, 2002."
+  },
+  {
+   "id": "rymer1693",
+   "text": "Rymer, Thomas. A Short View of Tragedy; Its Original, Excellency, and Corruption. With Some Reflections on Shakespear, and Other Practitioners for the Stage. London: Richard Baldwin, 1693."
+  },
+  {
+   "id": "snow1980",
+   "text": "Snow, Edward A. 'Sexual Anxiety and the Male Order of Things in Othello.' English Literary Renaissance 10, no. 3 (1980): 384–412."
+  },
+  {
+   "id": "spivack1958",
+   "text": "Spivack, Bernard. Shakespeare and the Allegory of Evil: The History of a Metaphor in Relation to His Major Villains. New York: Columbia University Press, 1958."
+  },
+  {
+   "id": "vitkus1997",
+   "text": "Vitkus, Daniel J. 'Turning Turk in Othello: The Conversion and Damnation of the Moor.' Shakespeare Quarterly 48, no. 2 (1997): 145–76."
+  }
+ ]
+}

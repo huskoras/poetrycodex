@@ -1,0 +1,1182 @@
+{
+ "work": "king-lear-shakespeare",
+ "title": "King Lear",
+ "author": "William Shakespeare",
+ "quoteEdition": "king-lear-shakespeare",
+ "unit": "Scene",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "William Shakespeare (1564–1616), actor, sharer and principal playwright of the King's Men"
+  },
+  {
+   "label": "Genre",
+   "value": "Tragedy, in blank verse and prose"
+  },
+  {
+   "label": "Written",
+   "value": "About 1605–06, after the printing of the old play King Leir (1605) and of Harsnett's Declaration (1603)"
+  },
+  {
+   "label": "First recorded performance",
+   "value": "At court in Whitehall on St Stephen's night (26 December) 1606, according to the Quarto title page"
+  },
+  {
+   "label": "Texts",
+   "value": "Two early versions: the Quarto of 1608 (Q1, 'True Chronicle Historie') and the Folio of 1623 (F, 'The Tragedie of King Lear'). The Folio lacks about 300 lines found in the Quarto and adds about 100"
+  },
+  {
+   "label": "Setting",
+   "value": "Legendary, pre-Christian Britain: Lear's court, the castles of Albany and Gloucester, the heath, and the coast at Dover"
+  },
+  {
+   "label": "Sources",
+   "value": "The chronicle story of Leir in Holinshed and earlier writers, the anonymous play King Leir, and, for the Gloucester plot, Sidney's Arcadia"
+  },
+  {
+   "label": "Structure",
+   "value": "Five acts and twenty-six scenes in the conflated text used here, with two parallel plots: Lear and his daughters, Gloucester and his sons"
+  },
+  {
+   "label": "Main themes",
+   "value": "Nature and the natural bond; sight and blindness; 'nothing'; justice and the gods; power and need"
+  },
+  {
+   "label": "This edition",
+   "value": "The conflated text of the Project Gutenberg Complete Works, which combines Quarto and Folio passages. References give act and scene"
+  }
+ ],
+ "context": [
+  "King Lear was written in about 1605–06, after Hamlet, Othello and probably Measure for Measure, and shortly before Macbeth. It was performed before King James at Whitehall on 26 December 1606 by the King's Men, Shakespeare's company, and the leading role was probably taken by Richard Burbage. The years around its composition were anxious ones: plague closed the theatres for long periods, the Gunpowder Plot of November 1605 was followed by trials and executions, and James was pressing Parliament to unite England and Scotland as 'Great Britain'. A play about a king who divides Britain, and the disasters that follow, had an obvious topical edge [[shapiro2015]].",
+  "The story of Lear is ancient. Geoffrey of Monmouth told it in his twelfth-century history of the kings of Britain, and it was retold by Holinshed in his Chronicles (1587), by Spenser in The Faerie Queene (2.10), in The Mirror for Magistrates, and in an anonymous play, The True Chronicle History of King Leir, performed in the 1590s and printed in 1605. In all these versions the love test, the banishment of the youngest daughter and the ingratitude of the elder two are present, but Lear is restored to his throne with Cordelia's help. Shakespeare added Lear's madness, the storm, the Fool, and the death of Cordelia [[bullough1973]].",
+  "He also added a second plot. In Sir Philip Sidney's prose romance Arcadia (1590) a Paphlagonian king is deceived by his bastard son, blinded, and led by the legitimate son he had wronged. Shakespeare turned this into the story of Gloucester, Edgar and Edmund, so that the play has two fathers who misjudge their children, two good children cast out, and two kinds of suffering, madness and blindness. For Poor Tom's devils he used Samuel Harsnett's attack on Catholic exorcism, A Declaration of Egregious Popish Impostures (1603) [[bullough1973]] [[brownlow1993]].",
+  "The play survives in two early texts. The Quarto of 1608, printed by Nicholas Okes for Nathaniel Butter, is badly printed in places, and much of its verse is set as prose [[blayney1982]]. The Folio of 1623, in the collected plays published by Shakespeare's fellow actors, omits about 300 lines found in the Quarto, including the mock trial and the whole of 4.3, and adds about 100, including the Fool's prophecy and Lear's last words. From the eighteenth century until the 1980s editors combined the two into a single 'conflated' text, as this edition does. Since the work of Urkowitz, Warren and Taylor, many scholars regard Quarto and Folio as two versions of the play, the second probably revised by Shakespeare himself, and the Oxford Complete Works of 1986 printed both [[urkowitz1980]] [[taylor1983]] [[wells1986]].",
+  "For much of its history the play was not acted as Shakespeare wrote it. Nahum Tate's adaptation (1681) cut the Fool, gave Cordelia a love affair with Edgar, and ended with Lear restored; it held the stage until 1838 [[spencer1965]]. The nineteenth-century Romantics admired the play as a poem too vast for the theatre, and A. C. Bradley called it Shakespeare's greatest achievement, though not his best play. After the Second World War it came to be seen as the most modern of his tragedies, a vision of cruelty and absurdity in a universe without justice, and it is now often ranked above Hamlet [[bradley1904]] [[kott1964]]."
+ ],
+ "plot": [
+  "Lear, King of Britain, old and wishing to give up the cares of rule, divides his kingdom among his daughters according to how much each professes to love him. Goneril and Regan flatter him; Cordelia, the youngest, refuses, and is disinherited and married without a dowry to the King of France. Kent, who defends her, is banished, but returns in disguise to serve the King. Meanwhile Gloucester's illegitimate son Edmund forges a letter that turns his father against his legitimate brother Edgar, who flees and disguises himself as a mad beggar, Poor Tom.",
+  "Goneril and Regan, now married to the Dukes of Albany and Cornwall, reduce Lear's train of knights and finally shut him out in a storm. On the heath, accompanied by his Fool and the disguised Kent, Lear goes mad, and in a hovel he meets Poor Tom. Gloucester, who tries to help the King, is betrayed by Edmund; Cornwall puts out his eyes and Regan turns him out to 'smell his way to Dover'. A servant mortally wounds Cornwall.",
+  "Edgar, still disguised, leads his blind father to Dover, cures him of a wish to kill himself by pretending that he has survived a fall from the cliff, and kills Goneril's steward Oswald. Cordelia lands at Dover with a French army and is reconciled with her father. Goneril and Regan both desire Edmund, and Albany, now disgusted by his wife, learns of her plot to murder him.",
+  "The British forces, led by Edmund, defeat the French, and Lear and Cordelia are taken prisoner. Edmund secretly orders their deaths. Edgar defeats Edmund in single combat; Goneril poisons Regan and kills herself; the dying Edmund tries to save Lear and Cordelia, but too late. Lear enters with Cordelia dead in his arms, and dies over her body. Kent prepares to follow his master, and Edgar and Albany are left with the kingdom."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Act I, Scene 1: The love test and the division of the kingdom",
+   "lines": "Act I, Scene 1 (the whole scene)",
+   "section": 1,
+   "summary": [
+    "Kent and Gloucester discuss the coming division of the kingdom, and Gloucester introduces his illegitimate son Edmund with coarse jokes about his conception. Lear enters with his court and a map. He announces that he will shake off the cares of rule and divide Britain among his three daughters, giving the largest share to the one who says she loves him most. Goneril and Regan answer with extravagant speeches. Cordelia, the youngest and his favourite, says in an aside 'Love, and be silent', and when her turn comes answers 'Nothing'. She loves him 'According to my bond; no more nor less', and points out that a husband will claim half her love.",
+    "Lear disowns her in a fury and divides her third between her sisters, keeping a hundred knights and the name of king, and proposing to live with each daughter by turns. Kent protests bluntly and is banished on pain of death. Cordelia's two suitors are called in: Burgundy refuses her without a dowry, but the King of France takes her for her own worth. Left alone, Goneril and Regan agree that their father's rashness, made worse by age, must be managed at once."
+   ],
+   "analysis": [
+    "The first scene is often called improbable, but its abruptness is the point. Lear stages a public ceremony in which love is measured and paid for in land, and the play's first great word is Cordelia's 'Nothing'. Lear's reply, 'Nothing will come of nothing', states a principle of exchange that the rest of the play will test against his own losses. Cordelia's 'bond' is the language of natural and filial obligation, not of a contract; her sisters offer more than any bond could require, and their very excess is a warning [[cavell1969]].",
+    "The opening exchange about Edmund matters as much as the love test. Gloucester jokes about his son's 'good sport' in his presence, and the play's second family is introduced through a father's careless shame. In Folio Lear speaks of crawling 'toward death' and of preventing 'future strife'; these lines, absent from the Quarto, make the division look like prudent policy rather than whim, an early example of the differences between the two texts [[taylor1983]] [[foakes1997]]. Audiences in 1606 would also have heard a play about the folly of dividing Britain while King James was urging the union of England and Scotland [[shapiro2015]]."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 1.1",
+     "quote": "Nothing will come of nothing: speak again.",
+     "note": "Lear's warning to Cordelia. The proverb (from the Latin ex nihilo nihil fit) will return to him through the Fool, and the word 'nothing' runs through the whole play."
+    },
+    {
+     "ref": "King Lear 1.1",
+     "quote": "Unhappy that I am, I cannot heave\nMy heart into my mouth: I love your majesty\nAccording to my bond; no more nor less.",
+     "note": "Cordelia refuses to turn love into rhetoric. 'Bond' means the natural tie of child to parent, owed and complete."
+    },
+    {
+     "ref": "King Lear 1.1",
+     "quote": "Come not between the dragon and his wrath.",
+     "note": "Lear silences Kent. The dragon was the emblem of ancient British kings, and Lear sees himself as a creature of pure anger."
+    },
+    {
+     "ref": "King Lear 1.1",
+     "quote": "Fairest Cordelia, that art most rich, being poor;\nMost choice forsaken; and most lov’d, despis’d!",
+     "note": "France sees value where Lear sees none. His paradoxes reverse the logic of the love test."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Act I, Scene 2: Edmund's plot against Edgar",
+   "lines": "Act I, Scene 2 (the whole scene)",
+   "section": 2,
+   "summary": [
+    "Edmund, alone, invokes Nature as his goddess and asks why custom and law should make him inferior to his legitimate brother Edgar. He has forged a letter in which Edgar seems to propose that they kill their father and share his estate. He lets Gloucester catch him hiding it, feigns reluctance, and offers to arrange a test of Edgar's intentions. Gloucester, already shaken by Kent's banishment and France's departure, blames the 'late eclipses in the sun and moon'.",
+    "When his father has gone, Edmund mocks the habit of blaming the stars for our own faults. Edgar enters; Edmund tells him that their father is enraged against him and advises him to go armed. The scene ends with Edmund's satisfaction at 'A credulous father! and a brother noble'."
+   ],
+   "analysis": [
+    "Edmund's soliloquy introduces the play's central quarrel over the meaning of 'nature'. For Lear and Gloucester nature is a sacred order of kinship and degree; for Edmund it is a force that rewards strength and appetite, and law is mere 'custom'. His contempt for astrology sounds modern and rational, and he is the most witty and attractive speaker of the first act. The audience is drawn into complicity with him before it sees what his freedom costs [[danby1949]] [[elton1966]].",
+    "The scene is also a miniature of the main plot. A father misjudges his children on the strength of words, rejects the loyal one and trusts the false. Gloucester is as quick to condemn Edgar as Lear was to condemn Cordelia, and neither father asks for evidence."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 1.2",
+     "quote": "Thou, Nature, art my goddess; to thy law\nMy services are bound.",
+     "note": "Edmund's opening words echo Cordelia's 'bond' and put a different nature in its place."
+    },
+    {
+     "ref": "King Lear 1.2",
+     "quote": "And my invention thrive, Edmund the base\nShall top the legitimate. I grow, I prosper.\nNow, gods, stand up for bastards!",
+     "note": "The end of the soliloquy, with its swagger and its pun on 'base'."
+    },
+    {
+     "ref": "King Lear 1.2",
+     "quote": "This is the excellent foppery of the world, that, when we are\nsick in fortune, often the surfeits of our own behaviour, we\nmake guilty of our disasters the sun, the moon, and the stars;",
+     "note": "Edmund's prose mockery of his father's superstition. The play does not settle whether he is right."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act I, Scene 3: Goneril prepares to provoke her father",
+   "lines": "Act I, Scene 3 (the whole scene)",
+   "section": 3,
+   "summary": [
+    "Lear is living with Goneril and Albany. Goneril complains to her steward Oswald that her father struck one of her gentlemen and that his knights are riotous. She tells Oswald to treat Lear with 'weary negligence' so that a quarrel may come to a head, and resolves to write to Regan to make her follow the same course."
+   ],
+   "analysis": [
+    "This short scene shows that the conflict is planned. Goneril's grievances may be partly real, and productions sometimes show Lear's knights as genuinely disorderly, but her aim is to 'breed from hence occasions'. Her verdict that old men must be treated like children sums up the reversal of parent and child that the Fool will soon describe."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 1.3",
+     "quote": "Idle old man,\nThat still would manage those authorities\nThat he hath given away!",
+     "note": "Goneril states the contradiction in Lear's plan: he wants to give away power and keep its respect."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act I, Scene 4: Kent returns in disguise and the Fool appears",
+   "lines": "Act I, Scene 4 (the whole scene)",
+   "section": 4,
+   "summary": [
+    "Kent, disguised as a plain serving-man (later called Caius), offers himself to Lear and is taken on after he trips up the insolent Oswald. The Fool enters, offers Kent his coxcomb for following a man out of favour, and needles Lear with riddles and songs about his folly in giving his kingdom away. Lear threatens him with the whip but cannot silence him.",
+    "Goneril arrives and complains of the knights. She asks Lear to 'disquantity' his train by fifty and to keep only men fit for his age. Lear, stunned, asks 'Who is it that can tell me who I am?' and the Fool answers 'Lear's shadow'. In rage he calls for his horses, curses Goneril with sterility in terrible words, and leaves for Regan, confident of a kinder welcome. Albany protests that he is ignorant of the cause. Goneril sends Oswald with a letter to Regan."
+   ],
+   "analysis": [
+    "The Fool is Shakespeare's addition to the Lear story. He speaks the truth that Kent was banished for speaking, but in a form that a king may tolerate: riddles, proverbs, scraps of ballad. His constant subject is the folly of a father who 'mad'st thy daughters thy mothers', and his questions about 'nothing' turn Lear's own words against him. The part was probably written for Robert Armin, the company's clown, who specialised in witty, melancholy fools [[foakes1997]].",
+    "The scene also begins Lear's crisis of identity. Stripped of the deference due to a king, he asks who he is, and the question will not be answered until he wakes in Cordelia's presence. His curse on Goneril, which calls on Nature to make her barren, is one of the most violent speeches in the play: he cannot yet see that it is directed at his own blood [[kahn1986]]."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 1.4",
+     "quote": "Truth’s a dog must to kennel; he must be whipped out, when\nthe Lady Brach may stand by the fire and stink.",
+     "note": "The Fool's image of the court: honest speech is whipped out of doors while flattery (the 'brach', or bitch hound) lies by the fire."
+    },
+    {
+     "ref": "King Lear 1.4",
+     "quote": "Who is it that can tell me who I am?",
+     "note": "Lear's question about his identity, answered by the Fool with 'Lear’s shadow'."
+    },
+    {
+     "ref": "King Lear 1.4",
+     "quote": "How sharper than a serpent’s tooth it is\nTo have a thankless child! Away, away!",
+     "note": "The end of Lear's curse on Goneril, one of the play's most quoted lines."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act I, Scene 5: Lear fears madness",
+   "lines": "Act I, Scene 5 (the whole scene)",
+   "section": 5,
+   "summary": [
+    "Lear sends Kent ahead with letters. The Fool chatters about snails that keep their houses and about the seven stars, while Lear's mind drifts back to Cordelia ('I did her wrong') and to the thought of taking back his kingdom by force. He prays not to go mad."
+   ],
+   "analysis": [
+    "The scene is brief and quiet, a pause between two confrontations. The Fool's jokes press on the point of 1.4: a snail has a house to put its head in, and Lear has given his away. Lear's sudden, half-heard admission that he wronged Cordelia, and his prayer against madness, show the first signs of self-knowledge beneath his rage."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 1.5",
+     "quote": "O, let me not be mad, not mad, sweet heaven!\nKeep me in temper; I would not be mad!",
+     "note": "Lear's first fear of madness, at the end of the first act."
+    },
+    {
+     "ref": "King Lear 1.5",
+     "quote": "If thou wert my fool, nuncle, I’d have thee beaten for being\nold before thy time.",
+     "note": "The Fool's verdict on a man who grew old before he grew wise."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act II, Scene 1: Edgar flees and Edmund is rewarded",
+   "lines": "Act II, Scene 1 (the whole scene)",
+   "section": 6,
+   "summary": [
+    "At Gloucester's castle the courtier Curan tells Edmund that Cornwall and Regan are coming, and that there are rumours of war between Cornwall and Albany. Edmund persuades Edgar to flee, stages a mock fight, and wounds his own arm. He tells Gloucester that Edgar urged him to murder their father and attacked him when he refused. Gloucester has Edgar proclaimed an outlaw and promises Edmund his lands. Cornwall and Regan arrive; Regan suggests that Edgar was a companion of Lear's riotous knights, and Cornwall takes Edmund into his service."
+   ],
+   "analysis": [
+    "Edmund's improvisation is swift and theatrical; he directs the scene while appearing to be its victim. Gloucester's 'loyal and natural boy' turns the play's key word inside out, since Edmund is 'natural' in the sense of illegitimate. The arrival of Cornwall and Regan joins the two plots: the wicked children of both families recognise one another at once."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 2.1",
+     "quote": "Persuade me to the murder of your lordship;\nBut that I told him the revenging gods\n’Gainst parricides did all their thunders bend;",
+     "note": "Edmund's invented account of Edgar's temptation, full of pious language he does not believe."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act II, Scene 2: Kent in the stocks",
+   "lines": "Act II, Scene 2 (the whole scene)",
+   "section": 7,
+   "summary": [
+    "Kent meets Oswald outside Gloucester's castle and abuses him in a torrent of insults before drawing on him. Cornwall and Regan part them. Kent answers Cornwall with mocking plainness, and Cornwall has him put in the stocks, a humiliating punishment for the messenger of a king, despite Gloucester's protests. Left alone at night, Kent reads a letter from Cordelia, who knows of his disguise and promises to remedy matters, and he falls asleep."
+   ],
+   "analysis": [
+    "Kent's insults are comic, but the scene turns on a serious point of order: to stock the king's messenger is to insult the king. Cornwall's sneer that blunt men hide 'more craft' than flatterers inverts the love test, where plainness was the mark of truth. The letter from Cordelia is the first hint that help may come from France, and Kent's closing appeal to Fortune to 'turn thy wheel' introduces one of the play's governing images."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 2.2",
+     "quote": "Sir, I am too old to learn:\nCall not your stocks for me: I serve the King;",
+     "note": "Kent invokes the king's authority, which Cornwall no longer respects."
+    },
+    {
+     "ref": "King Lear 2.2",
+     "quote": "Fortune, good night: smile once more, turn thy wheel!",
+     "note": "Kent's last words before sleeping in the stocks. Fortune's wheel returns in Lear's 'wheel of fire' and Edmund's 'wheel is come full circle'."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act II, Scene 3: Edgar becomes Poor Tom",
+   "lines": "Act II, Scene 3 (the whole scene)",
+   "section": 8,
+   "summary": [
+    "Edgar, hunted and alone, decides to disguise himself as a Bedlam beggar, one of the half-naked madmen who wandered the countryside begging and wounding themselves with pins and thorns. He will grime his face and call himself Poor Tom."
+   ],
+   "analysis": [
+    "This short soliloquy introduces the play's most extreme disguise. Edgar chooses 'the basest and most poorest shape' a man can take. His last line, 'Edgar I nothing am', links him with Cordelia's 'nothing': the true children are reduced to nothing while the false inherit."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 2.3",
+     "quote": "That’s something yet: Edgar I nothing am.",
+     "note": "Edgar's farewell to his own name. As Poor Tom he at least is 'something'."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act II, Scene 4: Lear between his daughters",
+   "lines": "Act II, Scene 4 (the whole scene)",
+   "section": 9,
+   "summary": [
+    "Lear arrives at Gloucester's castle and finds Kent in the stocks. He cannot believe that Regan and Cornwall did it, and feels a rising 'mother' (hysteria) in his chest. Regan and Cornwall refuse to see him, pleading that they are tired; when at last they come, Regan urges him to return to Goneril and ask her pardon. Goneril arrives, and Regan takes her hand.",
+    "The sisters then bargain away his followers. Regan will take him only with twenty-five knights; Goneril offers fifty, then asks what need he has of any; Regan asks 'What need one?' Lear answers 'O, reason not the need', breaks off his threats of revenge, and goes out into the rising storm with the Fool, Kent and Gloucester, refusing to weep. Cornwall orders the doors to be shut against him."
+   ],
+   "analysis": [
+    "This is the climax of the first movement of the play. The love test of 1.1 is replayed in reverse: there Lear measured love by quantity, and now his daughters measure his needs by the same arithmetic, counting his knights down to nothing. His reply is one of the great statements of what human beings need beyond necessity. If nature is allowed no more than it needs, 'Man’s life is cheap as beast’s' [[mack1965]].",
+    "Lear's struggle against tears, his appeal to the gods for patience, and his half-finished threats show a mind under intolerable pressure. His 'Hysterica passio' was a recognised disorder, thought to rise from the womb, and critics have read his struggle to repress it as a struggle against the feminine part of himself [[kahn1986]]. The closing of Gloucester's doors gives the storm its meaning: Lear is literally put out of the house."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 2.4",
+     "quote": "O, how this mother swells up toward my heart!\nHysterica passio, down, thou climbing sorrow,",
+     "note": "Lear names his rising grief as 'the mother', a disease of the womb in Renaissance medicine."
+    },
+    {
+     "ref": "King Lear 2.4",
+     "quote": "O, reason not the need: our basest beggars\nAre in the poorest thing superfluous:\nAllow not nature more than nature needs,",
+     "note": "Lear's answer to his daughters' arithmetic: human life always exceeds bare need."
+    },
+    {
+     "ref": "King Lear 2.4",
+     "quote": "And let not women’s weapons, water-drops,\nStain my man’s cheeks!",
+     "note": "Lear fights against tears, which he still regards as unmanly."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Act III, Scene 1: Kent sends news to Dover",
+   "lines": "Act III, Scene 1 (the whole scene)",
+   "section": 10,
+   "summary": [
+    "On the heath, in the storm, Kent meets a Gentleman who tells him that Lear is raging against the elements with only the Fool for company. Kent reveals that there is division between Albany and Cornwall, and that a French force is secretly landing. He sends the Gentleman to Dover with a ring as a token for Cordelia and goes in search of the King."
+   ],
+   "analysis": [
+    "The scene sets the political situation and gives a first, reported picture of Lear in the storm, striving 'in his little world of man' to outscorn the wind and rain. The Quarto and Folio differ here: Quarto speaks of a French army already landed, while Folio speaks of servants of Albany and Cornwall who spy for France. The conflated text in this edition prints both, which makes Kent's speech hard to follow [[taylor1983]]."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 3.1",
+     "quote": "Contending with the fretful elements;\nBids the wind blow the earth into the sea,",
+     "note": "The Gentleman's report of Lear before we see him in the storm."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Act III, Scene 2: Lear in the storm",
+   "lines": "Act III, Scene 2 (the whole scene)",
+   "section": 11,
+   "summary": [
+    "Lear commands the winds, rain and thunder to destroy the world and its 'ingrateful' race. The Fool urges him to go back and beg his daughters' blessing. Lear says the elements owe him nothing and are servile ministers of his daughters. Kent finds them and leads them toward a hovel. Lear, for the first time, notices someone else's suffering: 'Art cold?' he asks the Fool. Left alone, the Fool speaks a mock prophecy in the manner of Merlin."
+   ],
+   "analysis": [
+    "The storm speech is the most famous passage of the play. Lear tries to make the weather an instrument of his will, and then sees that it is indifferent to him. Some productions have given the storm overwhelming sound; others, following Charles Lamb's view that the scene cannot be staged, let Lear's voice create it. Either way, the storm without matches the storm within his mind [[bradley1904]].",
+    "Lear's self-pity ('More sinn’d against than sinning') is quickly followed by his first moment of tenderness toward another. The Fool's prophecy, found only in the Folio, ends with a joke about chronology: Merlin will make this prophecy, 'for I live before his time'. It reminds the audience that this is a legendary, pre-Christian Britain [[foakes1997]]."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 3.2",
+     "quote": "Blow, winds, and crack your cheeks! Rage! blow!\nYou cataracts and hurricanoes, spout\nTill you have drench’d our steeples, drown’d the cocks!",
+     "note": "The opening of Lear's storm speech. 'Cocks' are the weathercocks on steeples."
+    },
+    {
+     "ref": "King Lear 3.2",
+     "quote": "More sinn’d against than sinning.",
+     "note": "Lear's judgement on himself, half true and half self-pity."
+    },
+    {
+     "ref": "King Lear 3.2",
+     "quote": "My wits begin to turn.\nCome on, my boy. How dost, my boy? Art cold?\nI am cold myself.",
+     "note": "As his reason begins to fail, Lear notices another's suffering for the first time."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Act III, Scene 3: Gloucester confides in Edmund",
+   "lines": "Act III, Scene 3 (the whole scene)",
+   "section": 12,
+   "summary": [
+    "Gloucester tells Edmund that Cornwall and Regan have forbidden him to help Lear, that there is division between the dukes, and that he has a letter about a power already landed. He means to help the King secretly, even if he dies for it. Alone, Edmund resolves to tell Cornwall everything: 'The younger rises when the old doth fall.'"
+   ],
+   "analysis": [
+    "Gloucester's decision is the turning point of his story. The weak, credulous father becomes brave, and his courage is at once betrayed by the son he trusted. Edmund's couplet states the generational theme of the play with chilling neatness."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 3.3",
+     "quote": "The younger rises when the old doth fall.",
+     "note": "Edmund's motto. The 'old' Lear and Gloucester fall together."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Act III, Scene 4: Poor Tom in the hovel",
+   "lines": "Act III, Scene 4 (the whole scene)",
+   "section": 13,
+   "summary": [
+    "At the hovel Lear refuses to enter, saying that the storm in his mind takes away all other feeling. He sends the Fool in first and prays for the 'poor naked wretches' who have no shelter, confessing that he has taken 'too little care of this'. The Fool runs out in terror: there is a spirit inside. It is Edgar as Poor Tom, who babbles of the foul fiend and of the sins of his supposed past life as a servingman.",
+    "Lear is sure that Tom's daughters have brought him to this. Seeing the near-naked beggar as 'the thing itself', he begins to tear off his own clothes. Gloucester arrives with a torch and offers shelter, not knowing that Tom is his son, and says that his own son has sought his life. Lear insists on keeping his 'philosopher' with him."
+   ],
+   "analysis": [
+    "The prayer for the 'poor naked wretches' is the moral centre of Lear's suffering. A king who once measured love by land now sees that his kingdom left the poor unprotected, and asks 'pomp' to take physic and feel what wretches feel. It is a political as well as a spiritual awakening, and critics have read it either as a moment of redemption or as proof that pity comes only to those who have lost power [[bradley1904]] [[dollimore1984]].",
+    "Poor Tom's language of devils comes from Samuel Harsnett's A Declaration of Egregious Popish Impostures (1603), an attack on Catholic exorcists, from which Shakespeare took the names Flibbertigibbet, Modo, Mahu and others. Edgar plays possession knowing it to be theatre, as Harsnett said the exorcists did [[brownlow1993]] [[greenblatt1988]]. For Lear, however, Tom is real: the image of 'unaccommodated man', a 'poor, bare, forked animal'."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 3.4",
+     "quote": "Poor naked wretches, wheresoe’er you are,\nThat bide the pelting of this pitiless storm,",
+     "note": "The opening of Lear's prayer for the poor."
+    },
+    {
+     "ref": "King Lear 3.4",
+     "quote": "O, I have ta’en\nToo little care of this! Take physic, pomp;\nExpose thyself to feel what wretches feel,",
+     "note": "Lear's confession: power must take medicine by feeling what the poor feel."
+    },
+    {
+     "ref": "King Lear 3.4",
+     "quote": "unaccommodated man is no more\nbut such a poor, bare, forked animal as thou art.",
+     "note": "Lear's view of Poor Tom: man without clothes and comforts, reduced to a two-legged animal."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Act III, Scene 5: Edmund betrays his father",
+   "lines": "Act III, Scene 5 (the whole scene)",
+   "section": 14,
+   "summary": [
+    "Edmund shows Cornwall the letter that proves Gloucester's contact with France. Cornwall makes him Earl of Gloucester and sends him to find his father, promising to be 'a dearer father' to him."
+   ],
+   "analysis": [
+    "Edmund's hypocrisy reaches its height as he pretends to suffer from the conflict between 'loyalty' and 'blood'. Cornwall's offer of a new father completes the inversion of the family that Edmund's soliloquy in 1.2 began."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 3.5",
+     "quote": "How malicious is my fortune, that I must repent to be just!",
+     "note": "Edmund's mock lament as he betrays his father."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Act III, Scene 6: The mock trial",
+   "lines": "Act III, Scene 6 (the whole scene)",
+   "section": 15,
+   "summary": [
+    "In an outhouse near Gloucester's castle Lear, Kent, the Fool and Poor Tom take shelter. Lear, now mad, holds a trial of Goneril and Regan, with Tom and the Fool as justices and a joint-stool standing in for Goneril. He asks the court to 'anatomize Regan' and see what breeds about her heart. Gloucester returns to warn that there is a plot against the King's life and that he must be carried to Dover. The Fool speaks his last line. Alone, Edgar reflects that his own pain seems lighter when he sees the King's."
+   ],
+   "analysis": [
+    "The trial (found only in the Quarto) is both grotesque comedy and a serious inquiry into justice. A madman, a fool and a pretended madman try two absent daughters, and the question 'Is there any cause in nature that makes these hard hearts?' is one the play never answers [[knight1930]]. The Folio cuts the trial, perhaps because the revised play wished to move faster through Lear's madness; this is one of the main pieces of evidence in the revision debate [[urkowitz1980]] [[taylor1983]].",
+    "The Fool's 'And I’ll go to bed at noon' (only in Folio) is his last line, and he is not seen again. The play never explains his disappearance. Some critics link it to Lear's later 'my poor fool is hang’d', which most readers take to refer to Cordelia; it has also been suggested that the same boy actor played both parts, but there is no evidence for this."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 3.6",
+     "quote": "Is there any cause in nature that makes these hard\nhearts?",
+     "note": "Lear's question at the mock trial, a philosophical question in a mad scene."
+    },
+    {
+     "ref": "King Lear 3.6",
+     "quote": "When we our betters see bearing our woes,\nWe scarcely think our miseries our foes.",
+     "note": "Edgar's closing soliloquy, found only in the Quarto."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Act III, Scene 7: The blinding of Gloucester",
+   "lines": "Act III, Scene 7 (the whole scene)",
+   "section": 16,
+   "summary": [
+    "Cornwall sends Goneril to Albany with news of the French landing and sends Edmund with her, so that he need not see what is done to his father. Gloucester is captured, bound to a chair and questioned. He defies Regan, declaring that he sent the King to Dover so that he would not see her pluck out his eyes. Cornwall gouges out one of Gloucester's eyes. A servant draws his sword and wounds Cornwall, and Regan kills him from behind. Cornwall puts out the second eye. Gloucester calls for Edmund and learns that Edmund betrayed him; he realises that Edgar was wronged. Regan has him thrust out of the gates to 'smell his way to Dover'. In the Quarto two servants agree to help him and apply flax and egg-whites to his face."
+   ],
+   "analysis": [
+    "This is the most terrible scene in Shakespeare, and it is staged in full view. Gloucester's vow that he will see 'winged vengeance' fall on such children is answered by the destruction of his eyes, and the scene makes literal the play's metaphors of sight and blindness: he sees the truth about his sons only at the moment he loses his sight. Dr Johnson thought the act 'too horrid' for the stage, and many productions have looked for ways to distance it [[johnson1765]].",
+    "The servant who will not stand by is the first person in the play to resist the new order with force, and he is nameless. His intervention, and the compassion of the servants in the Quarto, show ordinary goodness surviving at the lowest level of the social order as it fails at the top [[dollimore1984]]."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 3.7",
+     "quote": "I am tied to the stake, and I must stand the course.",
+     "note": "Gloucester compares himself to a bear tied to a stake for baiting, a popular sport near the Globe."
+    },
+    {
+     "ref": "King Lear 3.7",
+     "quote": "Lest it see more, prevent it. Out, vile jelly!\nWhere is thy lustre now?",
+     "note": "Cornwall puts out the second eye."
+    },
+    {
+     "ref": "King Lear 3.7",
+     "quote": "Go thrust him out at gates, and let him smell\nHis way to Dover.",
+     "note": "Regan's cruelty, delivered with a cold pun."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Act IV, Scene 1: Edgar meets his blind father",
+   "lines": "Act IV, Scene 1 (the whole scene)",
+   "section": 17,
+   "summary": [
+    "Edgar, still disguised, thinks he has reached the bottom of fortune, and is then confronted by his blinded father, led by an Old Man. 'The worst is not / So long as we can say ‘This is the worst.’' Gloucester says he stumbled when he saw, and that the gods kill men for sport as boys kill flies. He asks the beggar to lead him to the edge of a high cliff at Dover."
+   ],
+   "analysis": [
+    "Gloucester's 'As flies to wanton boys' is the darkest statement of the play's theology, but it is not the play's last word on the gods, and Gloucester himself will later revise it. Edgar's lines show a different discovery: there is no bottom to suffering. His decision not to reveal himself, here and for many scenes afterwards, has divided critics. Is he protecting his father from despair or keeping him in it [[cavell1969]]?",
+    "The episode comes from Sidney's Arcadia, in which a Paphlagonian king, blinded by his bastard son Plexirtus, is led by his rejected legitimate son Leonatus and asks to be taken to the top of a rock so that he may throw himself down [[bullough1973]]."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 4.1",
+     "quote": "I have no way, and therefore want no eyes;\nI stumbled when I saw.",
+     "note": "Gloucester's paradox: blind, he understands what he could not see before."
+    },
+    {
+     "ref": "King Lear 4.1",
+     "quote": "As flies to wanton boys are we to the gods,\nThey kill us for their sport.",
+     "note": "Gloucester's despairing view of the gods, often quoted as the play's view; the play qualifies it."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "Act IV, Scene 2: Albany turns against Goneril",
+   "lines": "Act IV, Scene 2 (the whole scene)",
+   "section": 18,
+   "summary": [
+    "Goneril arrives home with Edmund and learns from Oswald that Albany is strangely changed: he smiled at the news of the French landing and called Oswald a sot. She sends Edmund back to Cornwall with a token and a kiss, promising him her favour. Albany enters and denounces the sisters as 'Tigers, not daughters' and Goneril as a fiend; she calls him a 'Milk-liver’d man'. A messenger reports that Cornwall has died of the servant's wound and tells Albany of Gloucester's blinding. Albany vows to revenge Gloucester. Goneril, in an aside, fears that the widowed Regan will now take Edmund."
+   ],
+   "analysis": [
+    "Albany has been a weak and silent husband, and now finds his voice. His speech on what will follow if heaven does not intervene, humanity preying upon itself 'Like monsters of the deep', is one of the bleakest prophecies in the play. The Quarto gives Albany much more of this rebuke than the Folio, and his larger role in the Quarto is a key point in the argument that Shakespeare revised the play [[warren1978]]."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 4.2",
+     "quote": "O Goneril!\nYou are not worth the dust which the rude wind\nBlows in your face!",
+     "note": "Albany's first open condemnation of his wife."
+    },
+    {
+     "ref": "King Lear 4.2",
+     "quote": "Humanity must perforce prey on itself,\nLike monsters of the deep.",
+     "note": "Albany's vision of a world in which the gods do not punish evil."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "title": "Act IV, Scene 3: Cordelia's grief (Quarto only)",
+   "lines": "Act IV, Scene 3 (the whole scene)",
+   "section": 19,
+   "summary": [
+    "Kent learns from a Gentleman that the King of France has returned home on urgent business, leaving his marshal in command. The Gentleman describes how Cordelia received Kent's letters with tears and smiles like 'sunshine and rain at once'. Kent says that Lear, now at Dover, is too ashamed of his unkindness to see her."
+   ],
+   "analysis": [
+    "This scene appears only in the Quarto, and some modern editions of the Folio text do not print it. It gives a description of Cordelia's sorrow in elaborate, almost emblematic verse, preparing for her return. Kent's reflection that 'The stars above us govern our conditions' answers Edmund's scorn of astrology in 1.2: how else could one father beget such different daughters?"
+   ],
+   "key": [
+    {
+     "ref": "King Lear 4.3",
+     "quote": "The stars above us govern our conditions;\nElse one self mate and make could not beget",
+     "note": "Kent's explanation of the difference between Cordelia and her sisters."
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "title": "Act IV, Scene 4: Cordelia searches for her father",
+   "lines": "Act IV, Scene 4 (the whole scene)",
+   "section": 20,
+   "summary": [
+    "Cordelia, with a Doctor and soldiers, hears that Lear has been seen singing aloud, crowned with weeds. She sends soldiers to find him. The Doctor says that rest may cure him. A messenger reports that the British powers are marching, and Cordelia says that she has come not for ambition but for love of her father."
+   ],
+   "analysis": [
+    "Cordelia's first appearance since 1.1 is brief. Her catalogue of weeds in Lear's crown (fumiter, hemlock, nettles, darnel) is a mock coronation for a king of nature. Her insistence that 'No blown ambition doth our arms incite' answers the political problem of a French invasion of Britain, which an English audience might otherwise resent."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 4.4",
+     "quote": "Crown’d with rank fumiter and furrow weeds,\nWith harlocks, hemlock, nettles, cuckoo-flowers,",
+     "note": "Cordelia's description of the mad king's crown of weeds."
+    },
+    {
+     "ref": "King Lear 4.4",
+     "quote": "O dear father,\nIt is thy business that I go about;",
+     "note": "Cordelia echoes the words of Jesus in Luke 2:49, about being about his father's business."
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "title": "Act IV, Scene 5: Regan and Oswald",
+   "lines": "Act IV, Scene 5 (the whole scene)",
+   "section": 21,
+   "summary": [
+    "Regan questions Oswald about Goneril's letter to Edmund and tries to read it. She tells him that she and Edmund have an understanding, and that as a widow she has a better claim to him. She promises a reward to anyone who kills the blind Gloucester."
+   ],
+   "analysis": [
+    "The rivalry between the sisters for Edmund now drives the plot toward its end. Regan's admission that it was a mistake to let Gloucester live, since his presence moves 'All hearts against us', shows the cold calculation behind her cruelty."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 4.5",
+     "quote": "All hearts against us. Edmund, I think, is gone\nIn pity of his misery, to dispatch\nHis nighted life;",
+     "note": "Regan's grim irony about Edmund's 'pity' for his father."
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "title": "Act IV, Scene 6: Dover cliff and the mad king",
+   "lines": "Act IV, Scene 6 (the whole scene)",
+   "section": 22,
+   "summary": [
+    "Edgar tells his father that they are climbing the cliff at Dover and describes a dizzying view of crows, fishermen and boats far below. Gloucester gives him a purse, prays, and falls forward on the flat ground. Edgar, now speaking as a peasant, tells him that he has fallen from the height and survived by a miracle, and that the beggar who left him was a fiend. Gloucester resolves to bear affliction.",
+    "Lear enters, mad and crowned with wild flowers. He talks of soldiers, of lechery, and of justice: a dog is obeyed in office, and robes and furred gowns hide all. Gloucester recognises his voice and asks to kiss his hand; Lear says 'it smells of mortality'. Cordelia's gentlemen arrive and Lear runs from them. Oswald finds Gloucester and tries to kill him for the reward, but Edgar, in his peasant's dialect, kills him with a cudgel and finds Goneril's letter urging Edmund to murder Albany."
+   ],
+   "analysis": [
+    "The 'Dover cliff' episode is one of the strangest in Shakespeare. The audience, on a bare stage, depends on Edgar's words for the view, and so is placed for a moment in the position of the blind Gloucester. Edgar's trick aims to cure despair by a staged miracle; whether it is loving or presumptuous is much debated [[kott1964]]. Kott read the scene as a pantomime of suicide in an empty world, close to the theatre of Samuel Beckett.",
+    "Lear's mad speeches are the play's most radical social criticism. A beggar runs from a farmer's dog, a beadle whips a whore he lusts for himself, the usurer hangs the cozener. Edgar's comment, 'Reason in madness!', invites us to hear a truth that the sane king never saw. The meeting of the mad king and the blind earl is the point where the two plots meet in a single image of suffering [[bradley1904]] [[elton1966]]."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 4.6",
+     "quote": "How fearful\nAnd dizzy ’tis to cast one’s eyes so low!",
+     "note": "The start of Edgar's imaginary view from Dover cliff."
+    },
+    {
+     "ref": "King Lear 4.6",
+     "quote": "Ay, every inch a king.\nWhen I do stare, see how the subject quakes.",
+     "note": "The mad Lear, crowned with weeds, claims his kingship."
+    },
+    {
+     "ref": "King Lear 4.6",
+     "quote": "Robes and furr’d gowns hide all. Plate sin with gold,\nAnd the strong lance of justice hurtless breaks;",
+     "note": "Lear on the injustice of justice: wealth protects the guilty."
+    },
+    {
+     "ref": "King Lear 4.6",
+     "quote": "Thou must be patient; we came crying hither:",
+     "note": "Lear's wisdom in madness: we come into the world weeping."
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "title": "Act IV, Scene 7: Lear and Cordelia reconciled",
+   "lines": "Act IV, Scene 7 (the whole scene)",
+   "section": 23,
+   "summary": [
+    "In the French camp Cordelia thanks Kent, who asks to keep his disguise a little longer. Lear, asleep in fresh clothes, is carried in. The Doctor calls for music, and Cordelia kisses him. When he wakes he thinks he is in hell and she a soul in bliss. He kneels to her, calls himself 'a very foolish fond old man', and says that if she has poison for him he will drink it, since she has cause to hate him. She answers 'No cause, no cause.' He asks her to forget and forgive."
+   ],
+   "analysis": [
+    "The reconciliation is the emotional centre of the play. The king who demanded speeches of love in 1.1 now speaks plainly, uncertain even of his own hands, and Cordelia's 'No cause' gives freely what he once tried to buy. The scene of waking in new garments, with music, has often been read in Christian terms as a resurrection [[bradley1904]]. Its tenderness makes the ending harder to bear."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 4.7",
+     "quote": "You do me wrong to take me out o’ the grave.\nThou art a soul in bliss; but I am bound\nUpon a wheel of fire, that mine own tears\nDo scald like molten lead.",
+     "note": "Lear wakes believing he is in hell. The wheel of fire was a punishment of the damned."
+    },
+    {
+     "ref": "King Lear 4.7",
+     "quote": "I am a very foolish fond old man,\nFourscore and upward, not an hour more nor less;",
+     "note": "Lear's humble self-description. 'Fond' means foolish as well as loving."
+    },
+    {
+     "ref": "King Lear 4.7",
+     "quote": "No cause, no cause.",
+     "note": "Cordelia's forgiveness, as brief as her 'Nothing' in 1.1."
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "title": "Act V, Scene 1: Before the battle",
+   "lines": "Act V, Scene 1 (the whole scene)",
+   "section": 24,
+   "summary": [
+    "In the British camp Regan questions Edmund about Goneril. Albany arrives with Goneril and agrees to fight the French invaders, though not Lear. Edgar, disguised, gives Albany Goneril's letter and asks him to sound a trumpet for a champion if he wins. Alone, Edmund weighs the two sisters he has sworn to love and decides that, if Lear and Cordelia are captured, they shall never see Albany's pardon."
+   ],
+   "analysis": [
+    "Edmund's soliloquy is the counterpart of his first one. Then he was a witty outsider; now he weighs two queens like moves in a game ('Both? One? Or neither?'), and his decision about the prisoners sets up the catastrophe."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 5.1",
+     "quote": "To both these sisters have I sworn my love;\nEach jealous of the other, as the stung\nAre of the adder.",
+     "note": "Edmund's coolly comic view of the sisters' rivalry."
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "title": "Act V, Scene 2: The battle is lost",
+   "lines": "Act V, Scene 2 (the whole scene)",
+   "section": 25,
+   "summary": [
+    "The French army passes over the stage. Edgar leaves Gloucester under a tree. An alarum sounds, and Edgar returns: Lear has lost and he and Cordelia are taken. Gloucester wishes to stay and rot there. Edgar rebukes him: men must endure their going hence as their coming hither. 'Ripeness is all.'"
+   ],
+   "analysis": [
+    "The battle that decides the play is over in a few lines, and we see none of it. Edgar's answer to his father's despair echoes Lear's 'we came crying hither' and becomes one of the play's watchwords. 'Ripeness' means readiness, accepting death when it comes, as in Hamlet's 'the readiness is all'."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 5.2",
+     "quote": "Men must endure\nTheir going hence, even as their coming hither;\nRipeness is all.",
+     "note": "Edgar's stoic counsel to his father."
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "title": "Act V, Scene 3: The catastrophe",
+   "lines": "Act V, Scene 3 (the whole scene)",
+   "section": 26,
+   "summary": [
+    "Edmund sends Lear and Cordelia to prison. Lear is content: they will sing like birds in a cage and laugh at the court. Edmund secretly gives a captain a written order to kill them. Albany praises Edmund's valour but arrests him for treason, and Regan, who claims Edmund as her husband, falls sick. A trumpet sounds and an unknown knight, Edgar, accuses Edmund and defeats him in single combat. Edgar reveals himself and tells how he led his father, revealed himself to him only before the battle, and how Gloucester's heart 'Burst smilingly'.",
+    "A Gentleman runs in with a bloody knife: Goneril has poisoned Regan and killed herself. Kent arrives to bid his master farewell, and Albany cries 'Great thing of us forgot!' The bodies of the sisters are brought out. Edmund, dying, says 'Yet Edmund was belov’d', and tries to do some good by revoking his order. It is too late. Lear enters with Cordelia dead in his arms. He looks for breath with a feather and a looking-glass, tells how he killed the slave who was hanging her, and barely recognises Kent. News of Edmund's death is 'but a trifle here'. Lear dies looking at Cordelia's lips. Albany offers rule to Kent and Edgar; Kent says he must follow his master, and the last speech (given to Edgar in Folio and Albany in Quarto) closes the play."
+   ],
+   "analysis": [
+    "The ending is the most debated in Shakespeare. In every earlier version of the story Lear is restored to his throne; Shakespeare kills Cordelia, and he makes her death arbitrary, the result of a delay while the survivors talk. Dr Johnson was so shocked that he could not reread the last scenes until he had to edit them, and for over 150 years audiences saw Nahum Tate's adaptation (1681), in which Cordelia lives and marries Edgar [[johnson1765]] [[spencer1965]]. Shakespeare's ending returned to the London stage only with Macready's production of 1838 [[mack1965]].",
+    "Lear's last words are differently given in the two texts. In the Folio he dies saying 'Look there, look there!', as if he sees life on Cordelia's lips; in the Quarto he groans and asks his heart to break. Bradley argued that Lear dies of joy, believing her alive, and that the play could be called 'The Redemption of King Lear'; later critics have found in the same lines the cruellest of illusions [[bradley1904]] [[kott1964]]. Kent's 'Is this the promis’d end?' and Edgar's 'Or image of that horror?' ask whether this is the Last Judgement, and the play gives no answer.",
+    "The last speech refuses consolation. Its plea to 'Speak what we feel, not what we ought to say' returns to the problem of the love test, where Goneril and Regan said what they ought and Cordelia what she felt. The survivors are young and few, and the kingdom is still divided [[taylor1983]]."
+   ],
+   "key": [
+    {
+     "ref": "King Lear 5.3",
+     "quote": "We two alone will sing like birds i’ the cage:\nWhen thou dost ask me blessing I’ll kneel down\nAnd ask of thee forgiveness.",
+     "note": "Lear's vision of happiness in prison."
+    },
+    {
+     "ref": "King Lear 5.3",
+     "quote": "The gods are just, and of our pleasant vices\nMake instruments to plague us:",
+     "note": "Edgar's moral judgement on his father's fate, which many readers find too harsh."
+    },
+    {
+     "ref": "King Lear 5.3",
+     "quote": "Howl, howl, howl, howl! O, you are men of stone.",
+     "note": "Lear's entrance with Cordelia's body."
+    },
+    {
+     "ref": "King Lear 5.3",
+     "quote": "Thou’lt come no more,\nNever, never, never, never, never!\nPray you undo this button. Thank you, sir.",
+     "note": "Lear's last speech, which moves from grief to a small courtesy."
+    },
+    {
+     "ref": "King Lear 5.3",
+     "quote": "The weight of this sad time we must obey;\nSpeak what we feel, not what we ought to say.",
+     "note": "The closing speech, Edgar's in the Folio and Albany's in the Quarto."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Lear",
+   "side": "King of Britain",
+   "text": "An old king, 'Fourscore and upward', who gives away his kingdom but wishes to keep the name and respect of a king. Proud, impulsive and terrible in anger, he demands love as a public performance and cannot recognise it when it is plain. Cast out by the daughters he endowed, he goes mad in the storm and, in madness, sees the injustice of the world he ruled. Reconciled with Cordelia, he loses her at once and dies over her body."
+  },
+  {
+   "name": "Cordelia",
+   "side": "Lear's youngest daughter",
+   "text": "The daughter who will not flatter. Her 'Nothing' in the love test is both integrity and a kind of pride, and she suffers for it. As Queen of France she returns with an army to restore her father, forgives him freely, and is hanged in prison on Edmund's order. She speaks little, but her presence dominates the play."
+  },
+  {
+   "name": "Goneril",
+   "side": "Lear's eldest daughter, wife of Albany",
+   "text": "The first to profess boundless love and the first to humiliate her father. Energetic and contemptuous of her mild husband, she falls in love with Edmund, plots Albany's murder, poisons her sister and kills herself when her plot is discovered."
+  },
+  {
+   "name": "Regan",
+   "side": "Lear's second daughter, wife of Cornwall",
+   "text": "Outbids her sister in the love test and then in cruelty. She plucks Gloucester's beard, kills the servant who wounds her husband, and turns the blinded earl out of doors. Widowed, she claims Edmund and is poisoned by Goneril."
+  },
+  {
+   "name": "Earl of Gloucester",
+   "side": "Father of Edgar and Edmund",
+   "text": "A courtier, credulous and superstitious, who believes Edmund's forgery and condemns Edgar unheard. He finds courage in helping the King and is blinded for it. Led by his disguised son to Dover, he despairs, is saved from suicide, and dies of mingled joy and grief when Edgar reveals himself."
+  },
+  {
+   "name": "Edgar",
+   "side": "Gloucester's legitimate son",
+   "text": "Trusting and slow at first, he is driven out by his brother's plot and survives as Poor Tom, a mad beggar. He guides his blind father, kills Oswald, defeats Edmund in single combat, and in the Folio speaks the play's last lines. His long concealment from his father has been read both as loving care and as a failure of trust."
+  },
+  {
+   "name": "Edmund",
+   "side": "Gloucester's illegitimate son",
+   "text": "Clever, charming and without scruple, he worships a Nature that knows nothing of custom or law. He ruins his brother, betrays his father, becomes Earl of Gloucester and the lover of both sisters, and orders the deaths of Lear and Cordelia. Dying, he takes comfort that he was loved and tries, too late, to do some good."
+  },
+  {
+   "name": "Earl of Kent",
+   "side": "Lear's loyal counsellor",
+   "text": "Banished for defending Cordelia, he returns disguised as a plain servant, Caius, and serves Lear through the storm. His bluntness lands him in the stocks. At the end, unrecognised, he says he must follow his master in death."
+  },
+  {
+   "name": "The Fool",
+   "side": "Lear's jester",
+   "text": "Shakespeare's addition to the story. He tells Lear the truth through riddles, songs and jokes, mourns the banished Cordelia, and follows his master into the storm. He disappears after 3.6 without explanation."
+  },
+  {
+   "name": "Duke of Albany",
+   "side": "Goneril's husband",
+   "text": "Mild and slow to act, he grows into the moral voice of the later acts, condemns his wife's cruelty, and is left, with Edgar, to restore order. His role is larger in the Quarto than in the Folio."
+  },
+  {
+   "name": "Duke of Cornwall",
+   "side": "Regan's husband",
+   "text": "A violent man who puts Kent in the stocks and puts out Gloucester's eyes. He is mortally wounded by his own servant."
+  },
+  {
+   "name": "Oswald",
+   "side": "Goneril's steward",
+   "text": "An insolent, servile courtier, the object of Kent's abuse. He carries the sisters' letters, tries to kill Gloucester for a reward, and is killed by Edgar."
+  },
+  {
+   "name": "King of France",
+   "side": "Cordelia's husband",
+   "text": "Takes Cordelia without a dowry because he values her for herself. He does not appear after the first scene; in the Quarto he is said to have returned to France on urgent business."
+  },
+  {
+   "name": "Duke of Burgundy",
+   "side": "Cordelia's other suitor",
+   "text": "Refuses Cordelia when she loses her dowry, a living example of love measured by land."
+  },
+  {
+   "name": "Cornwall's servant",
+   "side": "Unnamed",
+   "text": "The servant who cannot watch the blinding without protest. He wounds Cornwall and is killed by Regan."
+  },
+  {
+   "name": "Old Man, Curan, Doctor, Gentlemen",
+   "side": "Minor characters",
+   "text": "Gloucester's aged tenant, who leads him after the blinding; a courtier who reports rumours of war; Cordelia's physician, who cures Lear with sleep; and the gentlemen who carry news between the camps."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Nature",
+   "text": [
+    "The words 'nature' and 'natural' occur more often in King Lear than in any other play by Shakespeare. For Lear, nature is a moral order that binds children to parents and subjects to kings; ingratitude is 'unnatural', and his daughters are 'unnatural hags'. For Edmund, nature is the force of appetite and strength that makes custom and law look like arbitrary restraints. The play sets these two ideas against each other and does not let either win easily [[danby1949]].",
+    "The storm extends the question to the natural world. Lear hopes the elements will avenge him and finds that they are indifferent; on the heath he sees in Poor Tom what man is by nature, a 'poor, bare, forked animal'. Yet the play also shows a natural goodness that survives without reward, in Kent, Cordelia, Edgar and the servant who resists Cornwall."
+   ]
+  },
+  {
+   "title": "Sight and blindness",
+   "text": [
+    "The play is full of the language of seeing. Lear tells Kent to get out of his sight, and Kent answers 'See better, Lear'. Gloucester, who never saw through Edmund, sees the truth only when he is blinded. 'I stumbled when I saw.'",
+    "The mad Lear tells the blind Gloucester that a man may see how the world goes with no eyes, and in the reconciliation scene Lear cannot trust his own eyes to know Cordelia. Seeing is a matter of understanding, of recognising other people, and the play's cruelty lies partly in how late its fathers learn to see."
+   ]
+  },
+  {
+   "title": "Nothing",
+   "text": [
+    "'Nothing' is the first answer Cordelia gives and the word on which the first scene turns. Lear's 'Nothing will come of nothing' becomes a refrain: the Fool asks him whether he can make no use of nothing, and calls him 'an O without a figure', a zero. Edgar's 'Edgar I nothing am' and Lear's bare 'forked animal' push the theme further.",
+    "The play asks what remains when everything is taken away: land, followers, clothes, sight, reason. It answers in two ways at once. Sometimes nothing remains but suffering; sometimes what remains is love that asks for nothing, as in Cordelia's 'No cause, no cause'."
+   ]
+  },
+  {
+   "title": "Justice and the gods",
+   "text": [
+    "The characters pray to the gods constantly and get no clear answer. Gloucester thinks the gods kill us for sport; Edgar thinks they are just and use our vices to plague us; Albany sees their justice in the deaths of Cornwall and the sisters, and then prays 'The gods defend her!' just before Lear enters with Cordelia's body. Readers have argued whether the play is Christian in spirit, with Cordelia as a figure of grace, or a deliberate refusal of providence [[elton1966]].",
+    "Human justice fares no better. The mock trial in 3.6 and Lear's speeches on the beadle and the whore in 4.6 show justice as a form of power, with 'Robes and furr’d gowns' hiding the guilt of those who judge."
+   ]
+  },
+  {
+   "title": "Power, property and need",
+   "text": [
+    "Lear's mistake is to think he can give away power and keep its privileges. Once he has given away his land, his authority rests on nothing but the willingness of others, and his daughters' counting down of his knights shows how quickly respect becomes a matter of arithmetic. His 'O, reason not the need' is the play's answer to a world where everything is measured.",
+    "Materialist critics have argued that the play is less about the redemption of a soul than about the way power and property shape human values: Lear learns pity for the poor only when he is poor himself [[dollimore1984]]."
+   ]
+  },
+  {
+   "title": "Madness and wisdom",
+   "text": [
+    "Three kinds of madness meet on the heath: the professional folly of the Fool, the pretended madness of Poor Tom, and the real madness of the King. Each, in its way, tells the truth that the sane world will not hear.",
+    "Edgar's 'Reason in madness!' describes the mad Lear of 4.6, who sees more clearly than the sane king of 1.1. The play's movement from madness to recovery in 4.7 gives Lear a moment of clear-sighted humility before the final blow."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Clothing and nakedness",
+   "text": "Clothes mark rank: Lear's daughters are gorgeously dressed, Oswald is a tailor-made man, and Lear's royal robes stand for the office he gave away. On the heath Lear tears off his 'lendings' to become like Poor Tom, and he wakes in 4.7 in fresh garments. His last request is that someone undo a button."
+  },
+  {
+   "title": "Animals",
+   "text": "The play is crowded with animals: the dragon, the pelican daughters, the serpent's tooth, the wolf, the tiger, the vulture, the monsters of the deep. Human beings who abandon the bonds of nature become beasts, and man without accommodation is a 'forked animal'."
+  },
+  {
+   "title": "The wheel",
+   "text": "Kent asks Fortune to turn her wheel; Lear is bound upon a 'wheel of fire'; Edmund says 'The wheel is come full circle'. The image joins the medieval idea of fortune's rise and fall with the torments of the damned."
+  },
+  {
+   "title": "Kneeling",
+   "text": "Lear mockingly kneels to Regan to beg for clothes and food; in 4.7 he tries to kneel to Cordelia in earnest; in 5.3 he imagines kneeling to ask her forgiveness in prison. The gesture records his journey from pride to humility."
+  },
+  {
+   "title": "Letters",
+   "text": "The plot is driven by letters: Edmund's forgery, Goneril's letters to Regan, Cordelia's letter to Kent, Gloucester's dangerous letter from France, Goneril's letter to Edmund, and Edmund's written order for the deaths of Lear and Cordelia. Written words deceive as easily as the spoken flattery of 1.1."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The map",
+   "text": "Lear's map in 1.1 turns the kingdom into an object to be divided by measurement. It stands for the illusion that love, like land, can be weighed and distributed."
+  },
+  {
+   "title": "The storm",
+   "text": "The storm is real weather, a sign of cosmic disorder, and an image of Lear's mind. 'The tempest in my mind', he says, 'Doth from my senses take all feeling else'."
+  },
+  {
+   "title": "Gloucester's eyes",
+   "text": "The blinding makes literal the play's language of sight and insight. Gloucester's lost eyes are the price of seeing the truth about his sons."
+  },
+  {
+   "title": "The crown of weeds",
+   "text": "In 4.4 and 4.6 Lear wears a crown of wild flowers and weeds. It is a mock crown for a king without a kingdom, but also a crown of nature, worn by a man who has become nature's subject."
+  },
+  {
+   "title": "The feather and the looking-glass",
+   "text": "In 5.3 Lear tests Cordelia's breath with a mirror and a feather. They are the last of the play's tests of truth, and the most painful, since they turn on the difference between what Lear sees and what is there."
+  }
+ ],
+ "debates": [
+  {
+   "title": "One play or two? Quarto and Folio",
+   "text": [
+    "For two centuries editors treated the Quarto (1608) and Folio (1623) as imperfect copies of a lost original and combined them into one text. In 1980 Steven Urkowitz argued that the Folio's cuts and additions were purposeful theatrical revisions, and in 1983 Gary Taylor and Michael Warren edited The Division of the Kingdoms, a collection of essays arguing that the Quarto represents Shakespeare's first version and the Folio his revision of a few years later. Warren showed in particular how the roles of Albany and Edgar differ in the two texts [[urkowitz1980]] [[warren1978]] [[taylor1983]].",
+    "The revision hypothesis was quickly influential: the Oxford Complete Works of 1986 printed both texts, and the New Cambridge edition of 1992 is based on the Folio [[wells1986]] [[halio1992]]. It has not convinced everyone. R. A. Foakes's Arden edition prints a conflated text, marking Quarto-only and Folio-only passages, and Brian Vickers has argued that the differences arise largely from conditions in the Quarto's printing house rather than from a revising author [[foakes1997]] [[vickers2016]] [[blayney1982]]."
+   ],
+   "cite": [
+    "urkowitz1980",
+    "warren1978",
+    "taylor1983",
+    "wells1986",
+    "halio1992",
+    "foakes1997",
+    "vickers2016",
+    "blayney1982"
+   ]
+  },
+  {
+   "title": "Redemption or despair?",
+   "text": [
+    "A. C. Bradley's lectures of 1904 read the play as a story of purification through suffering. Lear loses everything but learns humility and love; Bradley suggested it might be called 'The Redemption of King Lear', and argued that Lear dies in an ecstasy of joy, believing that Cordelia lives [[bradley1904]].",
+    "Later critics found this too consoling. Jan Kott, writing in Poland after the war, read the play alongside Beckett's Endgame as a grotesque in which the gods are absent, the characters play out their parts in an empty world, and suffering teaches nothing. His essay influenced Peter Brook's austere production of 1962. G. Wilson Knight had already pointed to the play's mixture of tragedy with the comedy of the grotesque [[kott1964]] [[knight1930]]."
+   ],
+   "cite": [
+    "bradley1904",
+    "kott1964",
+    "knight1930"
+   ]
+  },
+  {
+   "title": "Christian or pagan?",
+   "text": [
+    "The play is set in a pagan Britain, and its characters swear by Apollo, Jupiter and Hecate. Many twentieth-century critics nonetheless read it as Christian in spirit, with Cordelia as a figure of redemptive love and the reconciliation as a kind of resurrection.",
+    "William R. Elton's King Lear and the Gods (1966) argued that the characters represent the range of Renaissance pagan belief, from piety to atheism, and that the action progressively undermines faith in a providential order. The play's last scene, where Albany's prayer for Cordelia is answered by her death, is the strongest evidence for his view [[elton1966]]."
+   ],
+   "cite": [
+    "elton1966"
+   ]
+  },
+  {
+   "title": "Two ideas of nature",
+   "text": [
+    "John F. Danby argued that the play dramatises a conflict between two ideas of nature current in Shakespeare's time: a benevolent, ordered nature of the kind described by Richard Hooker, and the competitive, appetitive nature later theorised by Hobbes, embodied by Edmund. The good characters belong to a world that is passing, the bad to a new world of individual self-interest [[danby1949]].",
+    "This reading connects the play's family drama to large changes in early modern society, and it has influenced historicist critics who see in Edmund the energies of a new social order [[dollimore1984]]."
+   ],
+   "cite": [
+    "danby1949",
+    "dollimore1984"
+   ]
+  },
+  {
+   "title": "Power, property and humanism",
+   "text": [
+    "Jonathan Dollimore's Radical Tragedy (1984) challenged both Christian and humanist readings. He argued that the play does not show human nature redeemed by suffering, but shows how far human values depend on power and property. Pity appears only among the dispossessed, and the ending offers no restoration of meaning [[dollimore1984]].",
+    "Stephen Greenblatt's study of Harsnett's attack on exorcism similarly argued that the play borrows the language of possession only to empty it of belief, leaving the audience with a theatre of suffering that has no sacred meaning [[greenblatt1988]]."
+   ],
+   "cite": [
+    "dollimore1984",
+    "greenblatt1988"
+   ]
+  },
+  {
+   "title": "Love, shame and the avoidance of love",
+   "text": [
+    "Stanley Cavell argued that Lear's love test is not a demand for love but an attempt to avoid it. Lear can accept flattery because it costs him nothing, but Cordelia's real love would require him to be seen and known, and he is ashamed. The same avoidance explains Edgar's delay in revealing himself to his father, and Lear's flight from Cordelia's men in 4.6 [[cavell1969]].",
+    "Feminist critics have looked at the absence of a mother in both families. Coppélia Kahn read Lear's 'mother' rising in his chest as the return of a repressed dependence on women, and his rage against his daughters as a struggle against the feminine part of himself [[kahn1986]]."
+   ],
+   "cite": [
+    "cavell1969",
+    "kahn1986"
+   ]
+  },
+  {
+   "title": "The ending and Tate's King Lear",
+   "text": [
+    "Nahum Tate's adaptation of 1681 gave the story a happy ending: Lear regains his throne, Cordelia marries Edgar, and the Fool is cut. Samuel Johnson defended Tate's choice, saying that he had been so shocked by Cordelia's death that he could hardly bear to reread the last scenes [[spencer1965]] [[johnson1765]].",
+    "Shakespeare's ending returned to the stage in the nineteenth century, and twentieth-century critics came to see the death of Cordelia as essential to the play's meaning. Maynard Mack traced the stage history and argued that the play's power depends on refusing the consolation that Tate offered; others still find the ending almost unbearable, which may be its point [[mack1965]]."
+   ],
+   "cite": [
+    "spencer1965",
+    "johnson1765",
+    "mack1965"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "King Lear 1.1",
+   "quote": "Nothing will come of nothing: speak again.",
+   "who": "Lear",
+   "explanation": "Lear's warning to Cordelia when she refuses to flatter him. The principle that nothing comes of nothing governs his idea of love as an exchange, and the word 'nothing' returns throughout the play as he loses everything."
+  },
+  {
+   "ref": "King Lear 1.2",
+   "quote": "Thou, Nature, art my goddess; to thy law\nMy services are bound.",
+   "who": "Edmund",
+   "explanation": "Edmund rejects the laws and customs that make him a bastard and worships a Nature of force and appetite. His speech opens the play's debate about what is 'natural'."
+  },
+  {
+   "ref": "King Lear 1.4",
+   "quote": "How sharper than a serpent’s tooth it is\nTo have a thankless child! Away, away!",
+   "who": "Lear",
+   "explanation": "The end of Lear's curse on Goneril, which calls on Nature to make her barren. It expresses his sense that filial ingratitude is a crime against nature itself."
+  },
+  {
+   "ref": "King Lear 2.4",
+   "quote": "O, reason not the need: our basest beggars\nAre in the poorest thing superfluous:",
+   "who": "Lear",
+   "explanation": "Lear's answer when his daughters ask why he needs any knights at all. He argues that human life is more than bare need, a truth he will have to learn again on the heath."
+  },
+  {
+   "ref": "King Lear 3.2",
+   "quote": "Blow, winds, and crack your cheeks! Rage! blow!",
+   "who": "Lear",
+   "explanation": "The opening of the storm speech, in which Lear commands the elements to destroy the world. The storm outside mirrors the storm in his mind."
+  },
+  {
+   "ref": "King Lear 3.4",
+   "quote": "O, I have ta’en\nToo little care of this! Take physic, pomp;\nExpose thyself to feel what wretches feel,",
+   "who": "Lear",
+   "explanation": "Lear recognises that as king he neglected the poor. His sympathy is the beginning of a new self-knowledge, but it comes only once he has lost his power."
+  },
+  {
+   "ref": "King Lear 4.1",
+   "quote": "As flies to wanton boys are we to the gods,\nThey kill us for their sport.",
+   "who": "Gloucester",
+   "explanation": "The blinded Gloucester's despairing view of the gods. It is the bleakest statement of the play's theology, though Gloucester himself later learns to endure."
+  },
+  {
+   "ref": "King Lear 4.6",
+   "quote": "A man may see how the world goes with no eyes.",
+   "who": "Lear",
+   "explanation": "The mad Lear to the blind Gloucester. In madness Lear sees the corruption of justice and authority more clearly than he did as king."
+  },
+  {
+   "ref": "King Lear 4.7",
+   "quote": "I am a very foolish fond old man,\nFourscore and upward, not an hour more nor less;",
+   "who": "Lear",
+   "explanation": "Lear wakes from madness and humbles himself before Cordelia. The plain speech contrasts with the ceremonies of the first scene."
+  },
+  {
+   "ref": "King Lear 5.3",
+   "quote": "Thou’lt come no more,\nNever, never, never, never, never!",
+   "who": "Lear",
+   "explanation": "Lear over Cordelia's body. A line made of a single repeated word expresses a grief beyond rhetoric; the five 'nevers' appear in the Folio."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Cordelia refuse to take part in the love test, and is she right to do so?",
+   "hint": "Consider her word 'bond', her point about husbands, and whether her silence is integrity, pride or both."
+  },
+  {
+   "q": "How does the Gloucester plot mirror the Lear plot, and how does it differ from it?",
+   "hint": "Compare the two fathers' errors, their good and bad children, and the kinds of suffering (madness and blindness) each endures."
+  },
+  {
+   "q": "What does 'nature' mean to Lear, to Edmund and to Kent?",
+   "hint": "Look at 1.2, Lear's curse in 1.4, his speech in 2.4, and Kent's lines about the stars in 4.3."
+  },
+  {
+   "q": "What is the role of the Fool, and why might he disappear after Act III?",
+   "hint": "Think about what he tells Lear, how he tells it, and who replaces him as Lear's companion."
+  },
+  {
+   "q": "What does Lear learn on the heath? Is his suffering redemptive?",
+   "hint": "Compare his prayer for the 'poor naked wretches' with Bradley's and Kott's views of the play."
+  },
+  {
+   "q": "Why does Edgar not reveal himself to his father until the end?",
+   "hint": "Look at 4.1 and 4.6, Edgar's account in 5.3, and Cavell's idea of the avoidance of love."
+  },
+  {
+   "q": "How does the play use the language of sight and blindness?",
+   "hint": "Follow it from 'See better, Lear' in 1.1 to the blinding in 3.7 and the mad scene in 4.6."
+  },
+  {
+   "q": "What view of the gods does the play take?",
+   "hint": "Compare Gloucester in 4.1, Edgar in 5.3 and Albany's prayers in the last scene."
+  },
+  {
+   "q": "How do the Quarto and Folio versions differ, and does it matter which one we read?",
+   "hint": "Consider the mock trial in 3.6, the scene 4.3, Albany's role, and Lear's last words."
+  },
+  {
+   "q": "Why did Nahum Tate give the play a happy ending, and why did Shakespeare's ending eventually return to the stage?",
+   "hint": "Think about Johnson's reaction to Cordelia's death and about what is lost in Tate's version."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "blayney1982",
+   "text": "Blayney, Peter W. M. The Texts of King Lear and Their Origins. Vol. 1, Nicholas Okes and the First Quarto. Cambridge: Cambridge University Press, 1982."
+  },
+  {
+   "id": "bradley1904",
+   "text": "Bradley, A. C. Shakespearean Tragedy: Lectures on Hamlet, Othello, King Lear, Macbeth. London: Macmillan, 1904."
+  },
+  {
+   "id": "brownlow1993",
+   "text": "Brownlow, F. W. Shakespeare, Harsnett, and the Devils of Denham. Newark: University of Delaware Press, 1993."
+  },
+  {
+   "id": "bullough1973",
+   "text": "Bullough, Geoffrey, ed. Narrative and Dramatic Sources of Shakespeare. Vol. 7, Major Tragedies: Hamlet, Othello, King Lear, Macbeth. London: Routledge and Kegan Paul; New York: Columbia University Press, 1973."
+  },
+  {
+   "id": "cavell1969",
+   "text": "Cavell, Stanley. 'The Avoidance of Love: A Reading of King Lear.' In Must We Mean What We Say? A Book of Essays, 267–353. New York: Charles Scribner's Sons, 1969."
+  },
+  {
+   "id": "danby1949",
+   "text": "Danby, John F. Shakespeare's Doctrine of Nature: A Study of King Lear. London: Faber and Faber, 1949."
+  },
+  {
+   "id": "dollimore1984",
+   "text": "Dollimore, Jonathan. Radical Tragedy: Religion, Ideology and Power in the Drama of Shakespeare and His Contemporaries. Brighton: Harvester Press, 1984."
+  },
+  {
+   "id": "elton1966",
+   "text": "Elton, William R. King Lear and the Gods. San Marino, CA: Huntington Library, 1966."
+  },
+  {
+   "id": "foakes1997",
+   "text": "Foakes, R. A., ed. King Lear. By William Shakespeare. The Arden Shakespeare, Third Series. Walton-on-Thames: Thomas Nelson, 1997."
+  },
+  {
+   "id": "greenblatt1988",
+   "text": "Greenblatt, Stephen. Shakespearean Negotiations: The Circulation of Social Energy in Renaissance England. Berkeley: University of California Press, 1988."
+  },
+  {
+   "id": "halio1992",
+   "text": "Halio, Jay L., ed. The Tragedy of King Lear. By William Shakespeare. The New Cambridge Shakespeare. Cambridge: Cambridge University Press, 1992."
+  },
+  {
+   "id": "johnson1765",
+   "text": "Johnson, Samuel, ed. The Plays of William Shakespeare. 8 vols. London: J. and R. Tonson et al., 1765."
+  },
+  {
+   "id": "kahn1986",
+   "text": "Kahn, Coppélia. 'The Absent Mother in King Lear.' In Rewriting the Renaissance: The Discourses of Sexual Difference in Early Modern Europe, edited by Margaret W. Ferguson, Maureen Quilligan and Nancy J. Vickers, 33–49. Chicago: University of Chicago Press, 1986."
+  },
+  {
+   "id": "knight1930",
+   "text": "Knight, G. Wilson. The Wheel of Fire: Interpretations of Shakespearian Tragedy. London: Oxford University Press, 1930."
+  },
+  {
+   "id": "kott1964",
+   "text": "Kott, Jan. Shakespeare Our Contemporary. Translated by Bolesław Taborski. Garden City, NY: Doubleday, 1964."
+  },
+  {
+   "id": "mack1965",
+   "text": "Mack, Maynard. King Lear in Our Time. Berkeley: University of California Press, 1965."
+  },
+  {
+   "id": "shapiro2015",
+   "text": "Shapiro, James. The Year of Lear: Shakespeare in 1606. New York: Simon and Schuster, 2015."
+  },
+  {
+   "id": "spencer1965",
+   "text": "Spencer, Christopher, ed. Five Restoration Adaptations of Shakespeare. Urbana: University of Illinois Press, 1965."
+  },
+  {
+   "id": "taylor1983",
+   "text": "Taylor, Gary, and Michael Warren, eds. The Division of the Kingdoms: Shakespeare's Two Versions of King Lear. Oxford: Clarendon Press, 1983."
+  },
+  {
+   "id": "urkowitz1980",
+   "text": "Urkowitz, Steven. Shakespeare's Revision of King Lear. Princeton: Princeton University Press, 1980."
+  },
+  {
+   "id": "vickers2016",
+   "text": "Vickers, Brian. The One King Lear. Cambridge, MA: Harvard University Press, 2016."
+  },
+  {
+   "id": "warren1978",
+   "text": "Warren, Michael J. 'Quarto and Folio King Lear and the Interpretation of Albany and Edgar.' In Shakespeare, Pattern of Excelling Nature, edited by David Bevington and Jay L. Halio, 95–107. Newark: University of Delaware Press, 1978."
+  },
+  {
+   "id": "wells1986",
+   "text": "Wells, Stanley, and Gary Taylor, gen. eds. William Shakespeare: The Complete Works. Oxford: Clarendon Press, 1986."
+  }
+ ]
+}

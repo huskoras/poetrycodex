@@ -1,0 +1,918 @@
+{
+ "work": "antigone",
+ "title": "Antigone",
+ "author": "Sophocles",
+ "quoteEdition": "antigone-campbell",
+ "updated": "2026-10-19",
+ "unit": "Part",
+ "sameSections": false,
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Sophocles (c. 496–406/405 BC), of the deme of Colonus near Athens; of more than 120 plays seven survive complete"
+  },
+  {
+   "label": "First performed",
+   "value": "Probably about 442–441 BC at the City Dionysia in Athens; an ancient tradition links Sophocles' election as a general in the Samian War of 441–440 to the play's success"
+  },
+  {
+   "label": "Genre",
+   "value": "Tragedy in Greek verse: spoken iambic trimeters for the episodes, lyric metres for the choral odes and laments"
+  },
+  {
+   "label": "Setting",
+   "value": "Before the royal palace at Thebes, on the day after the Argive army of the Seven has been defeated"
+  },
+  {
+   "label": "Structure",
+   "value": "Prologue, parodos, five episodes alternating with five choral odes (stasima), and exodos; 1,353 lines in the standard numbering"
+  },
+  {
+   "label": "Main characters",
+   "value": "Antigone; her sister Ismene; Creon, king of Thebes; his son Haemon; the prophet Teiresias; Creon's wife Eurydice; a Chorus of Theban elders"
+  },
+  {
+   "label": "The 'Theban plays'",
+   "value": "Antigone, Oedipus the King and Oedipus at Colonus treat the same family but were written decades apart and do not form a trilogy; Antigone is the earliest"
+  },
+  {
+   "label": "Key ideas",
+   "value": "Burial of the dead, the unwritten laws, family against city, gender and power, stubbornness and learning too late"
+  },
+  {
+   "label": "Quoted translation",
+   "value": "Lewis Campbell, verse translation first published 1883, revised for the World's Classics in 1906; references use the standard Greek line numbers, so they are approximate for the English"
+  }
+ ],
+ "context": [
+  "Sophocles was born around 496 BC at Colonus, just outside Athens, and died in 406 or 405 BC. He was the most successful tragedian of his century, winning first prize at the City Dionysia many times, and he also held public office: he served as one of the city's treasurers and as a general (stratēgos) with Pericles in the war against Samos of 441–440. An ancient summary of the play, attributed to the Alexandrian scholar Aristophanes of Byzantium, says that he was elected general because of the success of Antigone. The story may be invented, but it is one reason the play is usually dated to about 442 or 441 BC [[griffith1999]] [[ehrenberg1954]].",
+  "Greek tragedies were performed in the theatre of Dionysus at Athens in a competition at the god's spring festival. Each tragedian presented three tragedies and a satyr play; the cast were male citizens, wearing masks, with no more than three speaking actors, who could take several parts each, and a chorus of twelve or (as Sophocles is said to have introduced) fifteen. The play alternates spoken episodes with sung and danced choral odes, and that rhythm of action and reflection is the shape this guide follows.",
+  "The story belongs to the Theban cycle of myth. After Oedipus discovered that he had killed his father and married his mother, Jocasta, his sons Eteocles and Polyneices quarrelled over the throne. In the commonest version they agreed to rule in alternate years, but Eteocles refused to give up power; Polyneices went to Argos, married the daughter of King Adrastus and led seven champions against the seven gates of Thebes. The brothers killed each other in single combat, and the attack failed. Aeschylus had treated this war in Seven against Thebes (467 BC), whose last scene, in which Antigone resolves to bury Polyneices, is widely thought to have been added later under the influence of Sophocles' play. Antigone's defiance may well be Sophocles' own contribution to the myth; in another version, dramatised in Euripides' Suppliant Women, it is the Athenian king Theseus who forces the Thebans to bury the Argive dead [[griffith1999]] [[jebb1888]].",
+  "Burial mattered intensely to the Greeks. The dead needed at least a symbolic covering of earth and the rites of lament and libation to pass to the underworld, and to leave a body to the dogs was the ultimate outrage, as the Iliad already shows in the fate of Hector's body. Yet cities did refuse burial within their territory to traitors and temple-robbers, and Athenian law allowed such corpses to be cast out beyond the borders. Creon's decree was therefore extreme rather than unheard of, which is why the play's moral balance has been so fiercely debated [[sourvinou1989]] [[cairns2016]].",
+  "Antigone has had an afterlife unmatched by almost any other ancient play. Hegel made it the central example of his theory of tragedy; Hölderlin translated it in 1804; Mendelssohn wrote music for a famous production at Potsdam in 1841. In the twentieth century it was rewritten by Jean Anouilh in occupied Paris and by Bertolt Brecht after the fall of Hitler, and it has been staged in South Africa, Latin America, Ireland and many other places as a play about resistance to state power. George Steiner's Antigones (1984) traces this history, and the play has become a central text of feminist, psychoanalytic and political philosophy [[steiner1984]] [[mee2011]]."
+ ],
+ "plot": [
+  "On the morning after the defeat of the Argive army, Antigone tells her sister Ismene that their uncle Creon, the new king of Thebes, has forbidden the burial of their brother Polyneices, who died attacking the city, while their other brother Eteocles, its defender, is to be buried with honour. Antigone resolves to bury Polyneices despite the penalty of death; Ismene refuses to help. Creon announces his decree to the elders of the city, but a guard reports that someone has already sprinkled dust on the body.",
+  "Antigone is caught performing the rites a second time. Before Creon she defends her act by appeal to the unwritten laws of the gods, and Creon condemns her to death, together with Ismene, who now claims a share in the deed. Creon's son Haemon, engaged to Antigone, pleads with his father, reporting that the whole city pities her; the argument ends in a violent quarrel, and Haemon leaves in fury. Creon spares Ismene but decrees that Antigone will be walled up alive in a rock tomb.",
+  "Antigone, led to her death, laments that she goes to the underworld unmarried and unmourned, and argues that a brother is the one relative who can never be replaced. The blind prophet Teiresias then warns Creon that the gods are angry: the unburied body has polluted the altars. Creon accuses him of corruption, and Teiresias prophesies that he will pay with the death of his own child. Terrified, Creon gives way, buries Polyneices and goes to release Antigone.",
+  "He is too late. In the tomb Antigone has hanged herself; Haemon, embracing her body, tries to kill his father and then kills himself. When the news reaches the palace, Creon's wife Eurydice kills herself at the altar, cursing her husband. Creon is left alone, acknowledging that he is responsible for the deaths of his family, and the Chorus ends with the lesson that the proud learn wisdom only through suffering, in old age."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Prologue: Two Sisters at Dawn",
+   "lines": "1–99",
+   "summary": [
+    "Before dawn, outside the palace of Thebes, Antigone brings her sister Ismene out of the house so that no one can overhear them. The Argive army that besieged the city fled during the night, and their two brothers, Eteocles and Polyneices, have killed each other at one of the seven gates. Their uncle Creon, now king, has decreed that Eteocles, who defended the city, will be buried with full honours, while Polyneices, who attacked it, is to be left unburied and unmourned, food for dogs and birds. Anyone who disobeys will be stoned to death.",
+    "Antigone asks Ismene to help her bury their brother. Ismene, horrified, reminds her of the family's disasters: Oedipus blinded himself, their mother hanged herself, and the brothers died by each other's hand. Two women alone, she says, cannot fight against men and the power of the city; she will ask the dead to forgive her and obey. Antigone rejects her coldly: she will bury Polyneices herself and die gloriously for it, and she would rather Ismene shouted the plan aloud than kept it secret. The scene ends with the sisters divided."
+   ],
+   "analysis": [
+    "The prologue sets out the conflict before Creon has appeared. We hear his decree first through Antigone's bitter report, so that the audience meets it as an outrage before it hears the king's reasons. Antigone's opening line insists on shared blood; within a hundred lines she has broken with the only sister she has left. The play's concern with kinship is therefore present from the first word, and so is its suggestion that loyalty to the dead can cut one off from the living [[griffith1999]].",
+    "Ismene is not simply timid. Her speech states the realistic view of a woman's position in the Greek city and draws a lesson from the family's history: excess has destroyed every member of the house. Antigone, by contrast, measures everything against the dead and the gods below. Her phrase 'holy crime' (in the Greek a paradox, hosia panourgēsasa, roughly 'having done a holy villainy', 74) shows that she knows exactly what her act is in the city's terms and claims that it is holy all the same [[knox1964]]."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 1–2",
+     "quote": "Own sister of my blood, one life with me,\nIsmenè, have the tidings caught thine ear?",
+     "note": "Campbell's first line renders an untranslatable Greek phrase that stresses common birth: the play opens on the bond of blood."
+    },
+    {
+     "ref": "Ant. 61–62",
+     "quote": "We needs must bear in mind we are but women,\nNever created to contend with men;",
+     "note": "Ismene's realism about gender and power, which Creon will later turn into contempt."
+    },
+    {
+     "ref": "Ant. 73–74",
+     "quote": "Dear to him will my soul be as we rest\nIn death, when I have dared this holy crime.",
+     "note": "Antigone imagines lying beside her brother in death, in language close to that of love: one of the first hints of her 'marriage' to the dead."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 2,
+   "title": "Parodos: The Song of Victory",
+   "lines": "100–161",
+   "summary": [
+    "The Chorus of Theban elders enters at sunrise singing a hymn to the sun that has seen the Argive army flee. In lyric stanzas they describe the attacker as a white-feathered eagle screaming over the city, his spears like open jaws around the gates, until Thebes, the dragon, turned him back. Zeus struck down with lightning the boasting warrior who was already raising the victory cry on the wall (Capaneus, though he is not named). Of the seven captains at the seven gates, all left their armour as trophies to Zeus, except the two brothers who killed each other.",
+    "The song ends by calling on the city to forget the war in night-long dances led by Bacchus (Dionysus), the god born at Thebes. Then the leader announces the approach of Creon, the new king, who has summoned the elders to a council."
+   ],
+   "analysis": [
+    "The parodos gives the public, civic view of the events the sisters have just discussed in private. For the elders the war is a deliverance and Polyneices a terrible invader; the pair of brothers appear only as a single 'horror-burdened pair', equal in death. The ode prepares us to hear Creon's decree as a reasonable expression of the city's relief, which complicates the sympathies the prologue has created [[griffith1999]].",
+    "Two details look forward. Zeus' punishment of the boastful attacker introduces the play's concern with pride and its fall, which the last lines of the play will repeat. And the closing call to Dionysus, the god of Thebes, will return in the fifth stasimon, when the Chorus calls on him again, this time to heal a city polluted by Creon's own decree."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 100",
+     "quote": "Beam of the mounting Sun!",
+     "note": "The first word of the Greek ode, aktis, 'ray', makes the sunrise of the city's deliverance the setting for the whole tragedy, which is played out in one day."
+    },
+    {
+     "ref": "Ant. 127",
+     "quote": "Zeus hates the boastful tongue:",
+     "note": "A general maxim about pride, spoken of the enemy, that the play will turn against the city's own ruler."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 3,
+   "title": "First Episode: Creon's Edict and the Guard",
+   "lines": "162–331",
+   "summary": [
+    "Creon addresses the elders. The gods have brought the ship of state safely through the storm; since the sons of Oedipus are dead, power has passed to him as next of kin. No man, he says, can be known until he has been tested in power. He will never value a friend above his country, because it is the city that carries us all. He then repeats his decree: Eteocles will be buried with honour, Polyneices left as carrion. The elders accept that he has the right to make such a law, though without enthusiasm.",
+    "A guard arrives, comically reluctant, and after much hesitation reports that someone has sprinkled dust on the corpse and performed the rites, leaving no trace; no animal has touched the body. The Chorus suggests that the gods may have done it. Creon furiously rejects the idea, claiming that discontented citizens have bribed the guards, and delivers a tirade against money. He threatens the guard with torture and death unless the culprit is found. The guard leaves, privately resolving never to return."
+   ],
+   "analysis": [
+    "Creon's first speech is not the speech of a tyrant. Its principles (that the city's safety comes first, that private loyalty must give way to public duty, that a leader must speak out) were familiar in Athenian civic discourse, and in 343 BC the orator Demosthenes quoted a long passage of it (175–190) as a model of civic sentiment. The problem is the application: the decree extends the punishment of a traitor beyond death, and the speech slides from 'the city' to 'my' will [[knox1964]] [[sourvinou1989]].",
+    "The guard is one of the few characters in Greek tragedy who is close to comic. His self-protective chatter lowers the tone and exposes Creon's suspicion. Creon's attack on money is revealing: unable to imagine that anyone could act from piety, he assumes a political plot. The Chorus's question whether the gods were involved is left open, and the mysterious first burial, which leaves no mark on the ground, has been debated ever since (see Debates)."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 162–163",
+     "quote": "My friends, the noble vessel of our State,\nAfter sore shaking her, the Gods have sped\nOn a smooth course once more.",
+     "note": "The 'ship of state', a metaphor as old as the poet Alcaeus. Creon presents himself as the city's helmsman; Teiresias will later remind him of it."
+    },
+    {
+     "ref": "Ant. 182–183",
+     "quote": "He too hath no high place in mine esteem,\nWho sets his friend before his fatherland.",
+     "note": "Creon's ethic: the city before personal ties. The word for 'friend' (philos) also means kin, which is exactly where Antigone places her loyalty."
+    },
+    {
+     "ref": "Ant. 278–279",
+     "quote": "Some Power divine hath interposed in this.",
+     "note": "The elders' first, cautious hint that the gods may disagree with the king."
+    },
+    {
+     "ref": "Ant. 295–296",
+     "quote": "For nought hath grown\nCurrent among mankind so mischievous\nAs money.",
+     "note": "Creon sees bribery behind every opposition, a suspicion he will turn on Teiresias too."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 4,
+   "title": "First Stasimon: The Ode on Man",
+   "lines": "332–375",
+   "summary": [
+    "Alone on stage, the Chorus sings the most famous ode in Greek tragedy. Many things are wonderful and terrible (deina), it begins, but nothing is more so than man. He crosses the stormy sea, wears away the earth with the plough, traps birds, beasts and fish, and tames the horse and the mountain bull. He has taught himself speech, thought and the habits that make cities, and how to shelter from frost and rain. He has a resource for everything except death; he has even found cures for disease.",
+    "But this skill can lead him to good or to evil. The man who honours the laws of the land and the justice of the gods sworn by oath stands high in his city; the man who dares to do wrong becomes cityless. The Chorus prays that such a man may never share its hearth or its thoughts. Its last words greet Antigone, who is brought in under guard."
+   ],
+   "analysis": [
+    "The ode belongs to the fifth-century debate about the origins of civilisation, associated with the sophist Protagoras, which told the story of human progress through invention rather than as a decline from a golden age. Its key word, deinos, means both 'wonderful' and 'terrible', 'clever' and 'dangerous'; translators have to choose, and Campbell's 'wonder' loses the darker sense. The ode celebrates human mastery while marking its limits: death, and the laws of the gods [[segal1981]] [[griffith1999]].",
+    "Its final stanza is ambiguous. The elders are thinking of the unknown person who has defied the decree, whom they assume to be a criminal; but the description of the man who 'weaves in' both the laws of the land and the justice of the gods fits neither Antigone, who honours the gods but defies the city, nor Creon, who honours the city but will offend the gods. The words hupsipolis apolis ('high in the city, cityless', 370) have become a touchstone for philosophical readings, above all Heidegger's [[heidegger2000]] [[nussbaum1986]]."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 332–333",
+     "quote": "Many a wonder lives and moves, but the wonder of all is man,\nThat courseth over the grey ocean, carried of Southern gale,",
+     "note": "Polla ta deina: the opening of the ode. 'Wonder' renders a word that also means 'terror'."
+    },
+    {
+     "ref": "Ant. 361",
+     "quote": "From Death alone he shall not find reprieve;",
+     "note": "The single limit to human resourcefulness, in a play that is about the treatment of the dead."
+    },
+    {
+     "ref": "Ant. 370",
+     "quote": "High in the State he moves but outcast he,",
+     "note": "Hupsipolis apolis: the alternatives the play will test on both Creon and Antigone."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 5,
+   "title": "Second Episode: The Unwritten Laws",
+   "lines": "376–581",
+   "summary": [
+    "The guard returns, delighted, with Antigone as his prisoner. He describes how the guards swept the dust from the corpse and sat upwind of the stench; at noon a whirlwind filled the plain with dust, and when it cleared Antigone was seen wailing over the bare body like a bird that finds its nest empty. She sprinkled dust again and poured three libations, and when seized she denied nothing.",
+    "Creon asks whether she knew of the decree. She did, she answers: but it was not Zeus or Justice that proclaimed it, and she did not think a mortal's edicts strong enough to override the unwritten and unfailing laws of the gods, which are not of today or yesterday. She will die anyway; to die early is gain. Creon replies that the hardest iron breaks first, and that if she goes unpunished, she is the man and he is not. In a rapid exchange of single lines (stichomythia) she insists that death makes no distinctions between the brothers, and he that an enemy remains an enemy after death; she answers that her nature is to share in love, not hatred.",
+    "Ismene, brought out weeping, now claims a share in the deed and asks to die with her sister. Antigone refuses her with scorn: Ismene chose life, she chose death. When Ismene asks whether Creon will kill his own son's bride, Creon answers brutally that there are other fields to plough. He orders both sisters taken inside."
+   ],
+   "analysis": [
+    "Antigone's speech on the unwritten laws (450–470) is the most quoted passage of the play and a founding text of the idea that there is a law above the law of states. It is worth noticing how specific its claim is: the laws she has in mind concern the duties owed to the dead and to kin, enforced by the gods below. She speaks less of universal human rights than of religious obligations that no city could abolish [[griffith1999]] [[cairns2016]].",
+    "The scene also reveals the two characters' tempers. The Chorus calls Antigone 'raw' (ōmos) like her father; Creon's images of hardened steel and the bit for a horse are images of breaking. His language is obsessed with gender: being defeated by a woman would unman him. Antigone's line about love (523) has been read as the moral centre of the play, but she speaks it immediately before repudiating her living sister, a contradiction many critics have noted [[knox1964]] [[foley2001]].",
+    "The second burial raises a question: why does Antigone return, and why was she not seen the first time? The whirlwind that hides her is described by the guard as a 'god-sent' plague (theia nosos, 421), so the play again lets the possibility of divine help hover without confirming it."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 450–451",
+     "quote": "I heard it not from Heaven, nor came it forth\nFrom Justice, where she reigns with Gods below.",
+     "note": "Antigone denies that Creon's decree has any divine authority. 'Justice' (Dikē) is placed among the gods of the underworld."
+    },
+    {
+     "ref": "Ant. 454–457",
+     "quote": "The infallible, unwritten laws of Heaven.\nNot now or yesterday they have their being,\nBut everlastingly,",
+     "note": "The unwritten laws (agrapta nomima): the classic statement of a law higher than any human decree."
+    },
+    {
+     "ref": "Ant. 484–485",
+     "quote": "she then is a man,\nAnd I am none.",
+     "note": "For Creon the contest with Antigone is also a contest of gender."
+    },
+    {
+     "ref": "Ant. 523",
+     "quote": "Love, and not hatred, is the part for me.",
+     "note": "Literally 'I was not born to join in hating but in loving': the Greek verbs coin compounds meaning 'to share hatred' and 'to share love'."
+    },
+    {
+     "ref": "Ant. 555",
+     "quote": "Life was the choice you made. Mine was to die.",
+     "note": "Antigone refuses to let Ismene share her death, and with it her glory."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 6,
+   "title": "Second Stasimon: The Curse on the House",
+   "lines": "582–625",
+   "summary": [
+    "The Chorus reflects on the house of Labdacus. When the gods shake a family, ruin passes on from generation to generation, like a swell driven by Thracian winds that churns up black sand from the depths. The last root of hope in the house of Oedipus is now being cut down by the 'bloody dust' of the gods below, by foolish speech and a Fury in the mind.",
+    "No human transgression can restrain the power of Zeus, who neither sleeps nor ages. A law holds for all time: nothing great enters mortal life without ruin. Hope helps many but deceives many more; and it is a wise old saying that evil seems good to the one whom a god is leading to destruction."
+   ],
+   "analysis": [
+    "The ode reads Antigone's fate through the old idea of an inherited curse, which links her to Oedipus and to Aeschylus' treatment of the family in his Theban trilogy of 467 BC. The elders see her as the last flower of a doomed line; her own choice almost disappears in their account [[winnington1980]].",
+    "Yet the final stanza, on the delusion that makes evil look good, applies as well to the man who is about to enter. Sophocles often lets a chorus utter general truths whose real target the audience sees before the singers do, and much of the play's irony works this way [[griffith1999]]."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 582",
+     "quote": "Blest is the life that never tasted woe.",
+     "note": "A traditional opening: the happiness of those who escape the gods' attention."
+    },
+    {
+     "ref": "Ant. 620–623",
+     "quote": "Wise was the famous word of one who said,\n'Evil oft seemeth goodness to the mind",
+     "note": "The old saying about divine delusion (atē), which the coming scene will apply to Creon."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 7,
+   "title": "Third Episode: Haemon",
+   "lines": "626–780",
+   "summary": [
+    "Haemon, Creon's son and Antigone's betrothed, enters. He begins with respect: he is his father's and will follow his guidance. Creon praises obedient sons and warns him against a bad wife. Since Antigone alone in the city has disobeyed, he will not be shown a liar. Whatever ruler the city sets up must be obeyed in small things and great, just and unjust; nothing is worse than anarchy, and he will never be defeated by a woman.",
+    "Haemon answers carefully. He hears what people say in the shadows: the whole city mourns for Antigone and thinks she deserves a golden honour, not death. He begs his father not to think that his own view alone is right. Trees that bend in a torrent keep their branches, while those that resist are torn up; the sailor who never slackens his sheet capsizes. The Chorus urges each to learn from the other.",
+    "Creon explodes. Should a man his age be taught by a boy? Is the city to tell him how to rule? Haemon replies that no city belongs to one man; Creon would rule well over a desert. The exchange grows bitter; Creon calls his son a woman's slave and orders Antigone killed before his eyes. Haemon leaves, saying his father will never see him again. Creon decides to spare Ismene and to shut Antigone alive in a rock tomb with a little food, to avoid pollution of the city."
+   ],
+   "analysis": [
+    "This is the turning point of Creon's story. Haemon's speech is a model of persuasion, offering his father a way to change his mind without losing face, and it introduces a new argument: Creon is not the voice of the city, because the city itself silently supports Antigone. Creon's reply ('Is the city not held to be the ruler's?', 738) shows how far his idea of the state has shrunk to his own will. Haemon's retort about the desert is a democratic Athenian's view of tyranny [[knox1964]] [[griffith1999]].",
+    "The metaphors of bending and breaking, tree and sail, answer Creon's own images of steel and the bit. The two men speak the same language of rule and obedience, but Haemon draws from it the lesson that the strong must yield. Creon's choice of punishment, burial alive with a token of food, is designed to avoid technical pollution; it will turn out to be a second offence against the gods, placing a living person below the earth [[segal1981]]."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 666–667",
+     "quote": "What power soe'er\nThe city hath ordained, must be obeyed\nIn little things and great things, right or wrong.",
+     "note": "Creon's doctrine of absolute obedience, stated without qualification."
+    },
+    {
+     "ref": "Ant. 712–714",
+     "quote": "The plant that yields where torrent waters flow\nSaves every little twig, when the stout tree\nIs torn away and dies.",
+     "note": "Haemon's image of yielding, the opposite of Creon's hardened steel."
+    },
+    {
+     "ref": "Ant. 737",
+     "quote": "One only makes not up a city, father.",
+     "note": "In Greek, 'that is no city which belongs to one man'."
+    },
+    {
+     "ref": "Ant. 739",
+     "quote": "Nobly you'd govern as the desert's king.",
+     "note": "The bitterest line of the exchange: a ruler who ignores his people rules nobody."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 8,
+   "title": "Third Stasimon: Ode to Love",
+   "lines": "781–800",
+   "summary": [
+    "The Chorus sings a short hymn to Eros, the god of desire, unconquered in battle, who keeps watch on the soft cheeks of a girl and ranges over sea and wild places. No god or mortal escapes him, and whoever has him is mad. He drags the minds of just men into injustice; he has stirred up this quarrel between kinsmen. Desire shining from the eyes of a bride is victorious and sits enthroned beside the great laws, for Aphrodite plays her game invincibly."
+   ],
+   "analysis": [
+    "The elders explain Haemon's revolt as the work of erotic passion. The explanation is partial: Haemon argued about justice and the city, not about love, and he never speaks of desire. But the ode adds a new force to the play's conflict of laws. Eros sits 'beside the great laws' (797–800) as a power equal to them, and the play's marriage imagery, which grows denser in the next episode, belongs to this power [[griffith1999]] [[winnington1980]]."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 781",
+     "quote": "Love, never foiled in fight!",
+     "note": "Erōs anikate machan: the god of desire as an unbeaten warrior."
+    },
+    {
+     "ref": "Ant. 797–800",
+     "quote": "Compeer of mighty Law\nThronèd, commanding.",
+     "note": "Desire enthroned beside the laws: a third power in the play's conflict."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 9,
+   "title": "Fourth Episode: Antigone's Last Journey",
+   "lines": "801–943",
+   "summary": [
+    "Antigone is led in on her way to the tomb, and the Chorus admits that it cannot hold back its tears. In a lyric lament (kommos) with the elders she bids farewell to the light: she goes alive to the house of death, unmarried, to be the bride of Acheron, the river of the dead. The Chorus replies that she goes with glory, 'by her own law' (autonomos), the only mortal to go alive to Hades. She compares herself to Niobe, turned to stone on Mount Sipylus; the elders remind her that Niobe was a goddess, and she feels mocked. They say she has struck against the throne of Justice and pays for her father's ordeal; her self-willed temper has destroyed her.",
+    "Creon enters and orders her taken away. Antigone addresses the tomb as her bridal chamber and hopes to be welcome to her father, mother and brother, whose bodies she washed and honoured. Then she makes a startling argument: she would not have defied the city for a husband or a child, since a husband or a child could be replaced, but with her parents dead no other brother can ever be born. She asks what law of the gods she has broken, and if she is wrong she will know it in death; if they are wrong, may they suffer no more than she. She is led away calling on Thebes and its gods to witness what she suffers for her piety."
+   ],
+   "analysis": [
+    "In this scene the defiant heroine becomes a mourner of herself. Greek women performed the lament for the dead; Antigone, who has no one to lament her, sings her own funeral song, and the images of marriage and death, the wedding to Hades and the tomb as bridal chamber, reach their fullest development. Many critics see her loneliness here, abandoned even by the Chorus, as the emotional climax of her role [[foley2001]] [[segal1981]].",
+    "The argument about the irreplaceable brother (904–920) is one of the most disputed passages in Greek literature. It closely resembles a story in Herodotus (3.119), in which the wife of Intaphernes chooses to save her brother rather than her husband or children for the same reason. Goethe hoped it would be proved spurious, and Jebb deleted it; but Aristotle quotes it in the Rhetoric (3.16), so it was in the text by the fourth century, and most recent editors keep it [[jebb1888]] [[griffith1999]] [[lloydjones1990]]. Butler and others have made it central to their readings of Antigone's kinship (see Debates)."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 816",
+     "quote": "The Lord of Acheron's unlovely shore\nShall be mine only husband evermore.",
+     "note": "Antigone's marriage to death, the dominant image of her lament."
+    },
+    {
+     "ref": "Ant. 821",
+     "quote": "But by a law of thine own,--",
+     "note": "Autonomos: 'living by her own law'. The word, later central to political thought, is here ambiguous praise."
+    },
+    {
+     "ref": "Ant. 875",
+     "quote": "A self-willed passion was thine overthrow.",
+     "note": "The Chorus's verdict: her self-chosen temper (autognōtos orga) destroyed her."
+    },
+    {
+     "ref": "Ant. 891–892",
+     "quote": "O grave! my bridal chamber, prison-house\nEterne, deep-hollowed,",
+     "note": "The tomb as marriage chamber."
+    },
+    {
+     "ref": "Ant. 909–910",
+     "quote": "A husband lost might be replaced; a son,\nIf son were lost to me, might yet be born;",
+     "note": "The opening of the disputed argument about the irreplaceable brother."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 10,
+   "title": "Fourth Stasimon: Prisoners of Fate",
+   "lines": "944–987",
+   "summary": [
+    "As Antigone is led away, the Chorus sings of three mythical figures imprisoned like her. Danae, though of noble birth and visited by Zeus as a shower of gold, was shut in a bronze chamber; the power of fate is terrible, and neither wealth nor war nor towers nor ships can escape it. Lycurgus, king of the Edonians, was shut in a rocky prison by Dionysus for mocking the god and opposing his worship. Last, on the shores of the Black Sea, the two sons of Phineus were blinded by their stepmother with a shuttle; their mother, Cleopatra, daughter of the North Wind and descended from the Athenian Erechtheus, was also held by the long-lived Fates."
+   ],
+   "analysis": [
+    "The ode is notoriously difficult. Its myths are told allusively, and the third story, with its blinded children and wronged mother, is so obscure that scholars still argue about why it is here. What the examples share is enclosure: noble prisoners shut away in darkness. Danae was innocent; Lycurgus was punished for defying a god, and so suggests Creon more than Antigone; the sons of Phineus suffered through a family's crime [[griffith1999]] [[winnington1980]].",
+    "The ode thus refuses a simple moral. It offers consolation (even the highest-born suffered so) and warning (those who oppose the gods are imprisoned), and its reference to blindness prepares directly for the entry of the blind prophet."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 944",
+     "quote": "Even Danaë's beauty left the lightsome day.",
+     "note": "Danae, shut in a bronze chamber, is the first of the ode's mythical prisoners."
+    },
+    {
+     "ref": "Ant. 951",
+     "quote": "Fated misfortune hath a power so fell:",
+     "note": "The power of fate (moira) is called deina, the word of the Ode on Man."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 11,
+   "title": "Fifth Episode: Teiresias",
+   "lines": "988–1114",
+   "summary": [
+    "The blind prophet Teiresias is led in by a boy. He reminds Creon that he has always steered the city well by following his advice, and warns him that he stands again on the razor's edge. At his seat of augury he heard the birds screaming and tearing one another; then his sacrifice would not burn, and the thigh-bones oozed and spat in the fire. The cause is Creon's decree: the altars are polluted by the flesh of Polyneices carried there by dogs and birds, and the gods refuse the city's prayers. Everyone makes mistakes, he says; stubbornness is folly. Do not stab the dead.",
+    "Creon accuses him of being bribed: even if Zeus' eagles carried the body to his throne, he would not allow the burial, since no man can pollute the gods. Stung, Teiresias prophesies. Before long Creon will give a corpse of his own flesh in exchange, because he has thrust a living soul below the earth and kept a dead one above it, robbed of the gods below. The Furies lie in wait; his house will soon be filled with lament, and the cities whose dead were left unburied will rise against him. He leaves.",
+    "Shaken, Creon asks the Chorus what to do. They tell him to release the girl and bury the dead, quickly. Creon gives way: he will go himself with his men, since he is now afraid that it is best to keep the established laws all one's life."
+   ],
+   "analysis": [
+    "Teiresias states the theological meaning of the play with a precision no one else achieves. Creon's offence is a confusion of the two worlds: the living are placed in the realm of the dead, the dead kept in the world of the living. The gods of the underworld have been robbed of what is theirs, and the gods above refuse sacrifice. This is the judgement on which much of the case against Creon rests [[segal1981]] [[sourvinou1989]].",
+    "Creon's collapse is sudden. The figure who would not yield to Antigone, to Haemon or to the hint of the elders yields within lines to the prophet's threat. His last words before leaving, about keeping the established laws, concede the central point of Antigone's speech. But the order in which he acts (burying Polyneices first and only then going to the tomb) proves fatal; the Chorus had named the girl first [[griffith1999]]."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 1028–1030",
+     "quote": "The obstinate man still earns the name of fool.\nUrge not contention with the dead, nor stab\nThe fallen. What valour is 't to slay the slain?",
+     "note": "Teiresias names Creon's fault: self-will (authadia)."
+    },
+    {
+     "ref": "Ant. 1040–1041",
+     "quote": "No, not if heaven's own eagle chose to snatch\nAnd bear him to the throne supreme for food,",
+     "note": "Creon's most blasphemous moment, placing his decree above the will of Zeus."
+    },
+    {
+     "ref": "Ant. 1069",
+     "quote": "Entombing shamefully a living soul,",
+     "note": "Part of the prophet's charge: the living buried, the dead unburied."
+    },
+    {
+     "ref": "Ant. 1096–1097",
+     "quote": "To yield is dreadful: but resistingly\nTo face the blow of fate, is full of dread.",
+     "note": "Creon begins to yield. The key word is again deinos."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 12,
+   "title": "Fifth Stasimon: Hymn to Dionysus",
+   "lines": "1115–1154",
+   "summary": [
+    "Hoping for deliverance, the Chorus calls on Dionysus, the god of many names, son of Zeus and Semele, the Theban bride. He rules over Italy and Eleusis and haunts Thebes by the river Ismenus, where the dragon's teeth were sown. The torch-flame sees him on the twin peaks of Parnassus and at the Castalian spring, and he comes from the ivy-covered slopes of Nysa to visit Thebes. Thebes honours him above all cities, with his mother who was struck by lightning; now that the city is gripped by violent sickness, let him come with healing step over Parnassus or the sea, leader of the dance of the fire-breathing stars, with his frenzied Maenads."
+   ],
+   "analysis": [
+    "The joyful dance-song placed just before the catastrophe is a favourite device of Sophocles; the same pattern appears in Oedipus the King and Ajax. Here the hymn recalls the end of the parodos and turns the victory celebration into a prayer for purification. The disease (nosos) of the city is the pollution caused by its ruler's decree [[griffith1999]].",
+    "Dionysus is also the god of the theatre in which the play was performed at his festival, and a god of the boundary between life and death. His appearance in the play's last song has encouraged readings that link the tragedy to his cult; it also ensures that the audience hears the messenger's news in the shadow of a hope that will not be fulfilled [[segal1981]]."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 1115",
+     "quote": "O God of many a name!",
+     "note": "Polyōnume: the hymn begins with the god's many titles and cult sites."
+    },
+    {
+     "ref": "Ant. 1140–1145",
+     "quote": "Come then with healing for the violent woe\nThat o'er our peopled land doth largely flow,",
+     "note": "The prayer for a healing god who will purify the city."
+    }
+   ],
+   "section": 1
+  },
+  {
+   "n": 13,
+   "title": "Exodos: Creon's Ruin",
+   "lines": "1155–1353",
+   "summary": [
+    "A messenger arrives: no human life is secure. Creon, once enviable, is now a living corpse. Haemon is dead by his own hand. Eurydice, Creon's wife, comes out from the palace, having heard the cry, and asks to hear everything. The messenger tells how they first buried what was left of Polyneices, washing the body, burning it and raising a mound. Then they went to the tomb, where Creon heard his son's voice. Inside they found Antigone hanged by a noose of linen, and Haemon embracing her body. Haemon spat in his father's face, lunged at him with his sword and missed, then turned it on himself, and died holding Antigone, his blood on her pale cheek: married at last in the house of the dead. Eurydice goes back into the palace without a word.",
+    "Creon returns carrying Haemon's body and laments his own folly. A second messenger brings news that Eurydice has stabbed herself at the altar, cursing Creon as the killer of her sons Megareus and Haemon. Her body is revealed. Creon, crushed, admits that he alone is to blame and begs to be led away, a man who is no more than nothing. The Chorus closes: wisdom is the first part of happiness, and the gods must be honoured; great words of the proud are paid for with great blows, and teach wisdom in old age."
+   ],
+   "analysis": [
+    "Antigone dies offstage and is not mentioned in the final lament; the last two hundred lines belong to Creon. This shape has led critics since the nineteenth century to ask whether he, not Antigone, is the tragic protagonist, and to describe the play as a 'diptych' whose two halves concern two different heroes [[winnington1980]] [[griffith1999]]. Creon's punishment fits his offence precisely: the man who placed the city above his family loses his family, and the ruler who wanted to be the city is left with nothing.",
+    "The messenger's speech completes the marriage-in-death imagery: Haemon and Antigone are united in the tomb in a grim parody of a wedding. Eurydice, who appears only to hear the news and go silently in, extends the catastrophe to the whole house, and her curse brings up Megareus (called Menoeceus in other versions), the son who died for the city in the war. Creon learns, as the Chorus says, too late (1270), and the final words make the Greek link between suffering and understanding [[cairns2016]]."
+   ],
+   "key": [
+    {
+     "ref": "Ant. 1166–1167",
+     "quote": "I count him not to live, but reckon him\nA living corse.",
+     "note": "The messenger's verdict on Creon: he is now a breathing corpse, the condition he imposed on Antigone reversed."
+    },
+    {
+     "ref": "Ant. 1251–1256",
+     "quote": "There is a danger, even in too much silence.",
+     "note": "The messenger echoes the Chorus's fear of Eurydice's silence. It proves deadly."
+    },
+    {
+     "ref": "Ant. 1270",
+     "quote": "Alas for him who sees the right too late!",
+     "note": "The Chorus sums up Creon's tragedy: justice recognised too late."
+    },
+    {
+     "ref": "Ant. 1348–1353",
+     "quote": "High boastings of the proud\nBring sorrow to the height to punish pride:--\nA lesson men shall learn when they are old.",
+     "note": "The play's closing moral, ironically addressed to an old man who has learned it at the cost of everything."
+    }
+   ],
+   "section": 1
+  }
+ ],
+ "characters": [
+  {
+   "name": "Antigone",
+   "side": "House of Oedipus",
+   "text": "Daughter of Oedipus and Jocasta, betrothed to Haemon. She buries her brother Polyneices in defiance of Creon's decree and defends her act as obedience to the unwritten laws of the gods and to her duty to her dead kin. She is fearless, proud and absolute, harsh to her sister and certain of her glory; the Chorus calls her 'raw' like her father. In her last scene, going alive to her tomb, she laments the marriage and children she will never have. Readers have made her a saint of conscience, a fanatic, an embodiment of the family against the state and a figure of radical kinship."
+  },
+  {
+   "name": "Ismene",
+   "side": "House of Oedipus",
+   "text": "Antigone's sister. In the prologue she refuses to help, arguing that women cannot fight against men and the power of the city. Later she tries to share Antigone's guilt and death and is rejected. She survives the play and disappears from it after the third episode. Some recent critics have read her not as a coward but as a different, quieter kind of resistance [[honig2013]]."
+  },
+  {
+   "name": "Creon",
+   "side": "Thebes",
+   "text": "Brother of Jocasta and uncle of Antigone, king of Thebes after the death of Oedipus' sons. He begins as a statesman with sound principles about the priority of the city, but he applies them with growing rigidity, sees conspiracy and bribery everywhere, and identifies the city with his own will. His contempt for women and for youth makes him deaf to Antigone and to Haemon. Broken by Teiresias' prophecy, he yields too late and loses his son and his wife. He speaks more lines than anyone else, and his fall occupies the end of the play."
+  },
+  {
+   "name": "Haemon",
+   "side": "Thebes",
+   "text": "Son of Creon and Eurydice, engaged to Antigone. He reasons respectfully with his father, reporting the city's sympathy for Antigone and urging him to yield, and only loses his temper when Creon refuses to listen. He never speaks to Antigone on stage. He dies in her tomb by his own sword after attacking his father."
+  },
+  {
+   "name": "Teiresias",
+   "side": "Thebes",
+   "text": "The blind prophet of Thebes, guided by a boy, who appears in many Theban stories (including Oedipus the King). He reads in the birds and the failed sacrifice the anger of the gods, explains Creon's offence against both the living and the dead, and, when insulted, prophesies the death of Creon's son."
+  },
+  {
+   "name": "Eurydice",
+   "side": "Thebes",
+   "text": "Creon's wife. She appears only once, near the end, to hear the messenger's account of Haemon's death; she leaves in silence and kills herself at the altar, cursing Creon as the killer of her sons."
+  },
+  {
+   "name": "The Guard",
+   "side": "Thebes",
+   "text": "One of the soldiers set to watch the corpse (Campbell's 'Watchman'). His self-protective, garrulous speeches provide the play's rare comedy. He reports the first burial and later brings in Antigone, whom he caught performing the rites again."
+  },
+  {
+   "name": "The Chorus",
+   "side": "Thebes",
+   "text": "Fifteen elders of Thebes, summoned by Creon as his council. They celebrate the victory, sing the great odes on man, the curse of the house, love, the mythical prisoners and Dionysus, and comment on the action. They are loyal to the king and cautious, wavering between respect for his authority and pity for Antigone, and it is their advice that finally moves Creon to act."
+  },
+  {
+   "name": "The Messengers",
+   "side": "Thebes",
+   "text": "A first messenger reports the deaths in the tomb to Eurydice and the elders; a second, from the palace, reports Eurydice's suicide. Their speeches bring the offstage violence before the audience, as was customary in Greek tragedy."
+  },
+  {
+   "name": "Polyneices and Eteocles",
+   "side": "House of Oedipus",
+   "text": "The dead brothers, who never appear. Eteocles held Thebes and refused to share the throne; Polyneices led the Argive army against his own city. They killed each other at the seventh gate. Creon treats one as patriot and the other as traitor; for Antigone they are equally her brothers."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Divine law and human law",
+   "text": [
+    "The play is famous as a conflict between two kinds of law. Creon's decree is a nomos, a law of the city, proclaimed by its lawful ruler for the city's safety. Antigone appeals to the 'unwritten laws' of the gods, which require the burial of the dead and the honouring of kin, and which she claims no mortal can override (450–470). Teiresias' prophecy and the catastrophe confirm that the gods were offended by the exposure of the corpse.",
+    "But the play does not set divine against human law in a simple way. Creon too invokes Zeus and believes he is defending the gods of the city against a man who attacked their temples. The Ode on Man praises the person who honours both the laws of the land and the justice of the gods. Both principles are legitimate, and the tragedy comes from each being pursued to an extreme that destroys the other [[griffith1999]] [[cairns2016]]."
+   ]
+  },
+  {
+   "title": "Family and city",
+   "text": [
+    "The Greek word philos means both 'friend' and 'kin', and the play is built on its two meanings. For Creon a philos is defined by loyalty to the city: an enemy of Thebes cannot be a friend, even in death. For Antigone, philia is a matter of blood, and a brother remains a brother whatever he has done. The household (oikos) and the city (polis) were the two great institutions of Greek life, and Athenian tragedy repeatedly stages the tension between them.",
+    "Creon's own fate inverts his priorities. The ruler who put the city first destroys his own household and is told by Haemon that he no longer speaks for the city at all. Hegel made this conflict between family and state the core of his famous interpretation [[hegel1977]] [[paolucci1962]]."
+   ]
+  },
+  {
+   "title": "Gender and power",
+   "text": [
+    "Creon insists again and again that he will not be ruled or defeated by a woman, and he accuses Haemon of being a woman's slave. Ismene begins from the premise that women cannot fight men. Antigone's act, a woman's public defiance of the ruler, is a scandal in a culture where respectable women were not supposed to act or even be spoken of in public, though the care and lament of the dead was traditionally their task.",
+    "The play has therefore become a key text for thinking about women and the state. Some see Antigone as acting from within women's traditional sphere of mourning; others as crossing into men's public speech and becoming 'manly'; others, like Butler, as unsettling the very categories of kinship and gender on which the state relies [[foley2001]] [[butler2000]] [[soderback2010]]."
+   ]
+  },
+  {
+   "title": "The wonder and limits of humanity",
+   "text": [
+    "The Ode on Man celebrates human mastery over nature, but the play surrounds it with signs of human limits: death, the gods, the inability to see one's own error. Creon's confidence in his own judgement and his rational case for the decree are exposed as blindness, while the blind prophet sees. Even Antigone, so sure of the gods' approval, wonders at the end which of the gods she can call on.",
+    "The word deinos, 'wonderful' and 'terrible', recurs at decisive moments: of man, of the power of fate, of the guard's fear, of Creon's dread of yielding. The play suggests that the same cleverness that builds cities can destroy them [[segal1981]] [[nussbaum1986]]."
+   ]
+  },
+  {
+   "title": "Stubbornness and learning too late",
+   "text": [
+    "Both protagonists are inflexible. Antigone is called raw, self-willed and 'a law to herself'; Creon is told by his son and by the prophet that the man who never bends is broken. The images of steel that shatters, trees uprooted and ships capsized make the point visually. Antigone dies without retreat, and her refusal is part of her heroic stature. Creon yields, but only when it is too late to save anyone.",
+    "The last words of the Chorus connect wisdom with suffering in old age, recalling the Aeschylean idea that men learn through what they suffer. The play's bitter twist is that the lesson arrives when it can no longer be used [[knox1964]] [[winnington1980]]."
+   ]
+  },
+  {
+   "title": "The dead and the living",
+   "text": [
+    "The play's crisis is the confusion of two worlds. Polyneices, who belongs below the earth, is kept above it; Antigone, who belongs among the living, is buried alive. Antigone's loyalty is to the dead, 'with whom I must dwell for ever', and she speaks of herself as already dead. Creon, at the end, is called a living corpse. The rites of burial, the boundary between the upper and the lower world, and the right ordering of both are what the gods defend [[segal1981]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Marriage to death",
+   "text": "Antigone, betrothed to Haemon, goes to her tomb as a bride: she will marry Acheron, the tomb is her bridal chamber, and Haemon dies embracing her, a marriage completed in the house of Hades. The motif draws on Greek songs for girls who died unmarried, and it turns the play's conflict of laws into a story of lost youth and lost children [[segal1981]]."
+  },
+  {
+   "title": "Bending and breaking",
+   "text": "Creon speaks of the hardest iron shattering and of the small bit that tames a horse; Haemon of trees that bend in the flood and sails that must be slackened; Teiresias of the folly of stubbornness. The question of who will yield runs through every confrontation."
+  },
+  {
+   "title": "The ship of state",
+   "text": "Creon opens as the helmsman of the city brought safely through the storm, and Haemon and Teiresias use nautical images against him. The metaphor makes the ruler's judgement a matter of life and death for all aboard."
+  },
+  {
+   "title": "Sight and blindness",
+   "text": "Oedipus' self-blinding stands behind the play; the sons of Phineus are blinded in the fourth stasimon; Teiresias, blind, sees the truth Creon cannot. Creon's last words ask where he can look. Seeing correctly, morally as much as physically, is what the characters fail to do."
+  },
+  {
+   "title": "Money and suspicion",
+   "text": "Creon suspects bribery behind every opposition: the guards, the dissenting citizens and the prophet are all, he believes, bought. His inability to imagine motives other than profit is a mark of the tyrant in Greek thought."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The body of Polyneices",
+   "text": "The unburied corpse, never seen on stage, is the centre of the play. To Creon it is a public sign of the fate of traitors; to Antigone it is her brother; to Teiresias a source of pollution spreading to the city's altars. Its fate measures what a society owes to the dead, even to its enemies."
+  },
+  {
+   "title": "The dust",
+   "text": "Antigone's burial is a sprinkling of dust, enough to satisfy the gods. The whirlwind of dust that hides her, and the 'bloody dust' of the gods below in the second stasimon, give the same substance a mysterious and fatal meaning."
+  },
+  {
+   "title": "The rock tomb",
+   "text": "Antigone's prison is both grave and bridal chamber, a space between the living and the dead. Creon's choice of this punishment, designed to avoid pollution, becomes the visible form of his crime: a living woman placed below the earth."
+  },
+  {
+   "title": "Birds",
+   "text": "The carrion birds that feed on Polyneices, Antigone crying like a mother bird over an empty nest, the screaming birds of Teiresias' augury and the 'eagles of Zeus' in Creon's blasphemy connect the natural world, the treatment of the dead and the will of the gods."
+  },
+  {
+   "title": "Dionysus",
+   "text": "The god of Thebes, invoked in the first and last odes, stands for the city's joy and its hope of healing. As god of the theatre and of the boundary between life and death, he presides over the tragedy itself."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Hegel: the collision of two rights",
+   "text": [
+    "The most influential interpretation of Antigone is Hegel's. In the Phenomenology of Spirit (1807) he treats the play as the expression of a stage in the history of spirit, in which ethical life is divided between the 'divine law' of the family, represented by woman and concerned with the dead, and the 'human law' of the community, represented by man and the state. Antigone and Creon each embody one of these powers fully and therefore violate the other [[hegel1977]].",
+    "In his Lectures on Aesthetics Hegel calls Antigone one of the most perfect works of art, and uses it to define tragedy as a collision between two equally justified ethical powers, each one-sided; the tragic resolution destroys the individuals but restores the harmony of the whole. The reading has been criticised for making Creon's case stronger than the play allows and for fixing women in the family. But nearly every later philosophical reading of the play, from Kierkegaard and Lacan to Irigaray and Butler, begins as an argument with Hegel [[paolucci1962]] [[steiner1984]]."
+   ],
+   "cite": [
+    "hegel1977",
+    "paolucci1962",
+    "steiner1984"
+   ]
+  },
+  {
+   "title": "Is Creon simply wrong?",
+   "text": [
+    "Many readers, following the play's end, treat Antigone as right and Creon as a tyrant. Bernard Knox, in an influential study, saw both as examples of the Sophoclean hero who will not yield, but found Antigone vindicated by the gods [[knox1964]].",
+    "Christiane Sourvinou-Inwood argued that a fifth-century Athenian audience would not have started from modern sympathies. Creon's opening speech expresses civic values Athenians shared, denying burial to traitors had parallels in Athenian practice, and a woman acting against the city's ruler would have seemed deeply transgressive. In her view the play gradually shifts the audience's judgement through the reactions of the Chorus, Haemon and Teiresias. Others reply that the extremity of exposing a corpse to dogs, and the play's religious language, would always have counted against Creon [[sourvinou1989]] [[griffith1999]] [[cairns2016]]."
+   ],
+   "cite": [
+    "knox1964",
+    "sourvinou1989",
+    "griffith1999",
+    "cairns2016"
+   ]
+  },
+  {
+   "title": "The double burial",
+   "text": [
+    "Why does Antigone bury Polyneices twice? The first burial leaves no trace, no footprint or wheel-mark, and the guards and the Chorus wonder whether a god did it; the second is seen and punished. Some scholars have argued that the gods performed the first burial, or that Ismene did; others that Antigone returned because the first covering had been swept away and the rites needed completing; others that the question is irrelevant to the dramatic logic, which needs Antigone to be caught.",
+    "Most editors now accept that Antigone performed both, and that the mystery of the first burial is deliberate: Sophocles lets the possibility of divine approval hover, as he does with the god-sent whirlwind, without allowing anyone in the play to know [[griffith1999]] [[jebb1888]]."
+   ],
+   "cite": [
+    "griffith1999",
+    "jebb1888"
+   ]
+  },
+  {
+   "title": "The irreplaceable brother (904–920)",
+   "text": [
+    "Antigone's claim that she would not have defied the city for a husband or children, because they could be replaced but a brother cannot, has troubled readers since Goethe, who told Eckermann in 1827 that he wished a scholar would prove the lines spurious. Jebb removed them from his text, finding the reasoning unworthy of the heroine and borrowed from Herodotus' story of the wife of Intaphernes.",
+    "Against this, Aristotle cites the passage in the Rhetoric, so it was in the text by the fourth century, and most modern editors defend it. Some find in it a sign of Antigone's isolation and her obsession with the house of her birth; others a culturally intelligible argument about kinship; for Butler it reveals that her 'law' cannot be generalised and points to the strangeness of her family [[lloydjones1990]] [[griffith1999]] [[butler2000]]."
+   ],
+   "cite": [
+    "jebb1888",
+    "lloydjones1990",
+    "griffith1999",
+    "butler2000"
+   ]
+  },
+  {
+   "title": "Who is the tragic hero?",
+   "text": [
+    "The play is named after Antigone, but Creon has more lines, is on stage far longer and is the figure who experiences reversal and recognition in the Aristotelian sense. Antigone disappears from the play after line 943. Critics have therefore argued that the tragedy is really Creon's, or that it is a 'diptych' in two halves, like Ajax and Women of Trachis.",
+    "Others answer that the two figures are bound together: each is destroyed by the same conflict, and Antigone's heroic constancy and Creon's belated yielding are two answers to the same demand. Winnington-Ingram's reading emphasises the passions that drive both, and their shared resemblance to the stubborn family of the Labdacids [[winnington1980]] [[knox1964]]."
+   ],
+   "cite": [
+    "winnington1980",
+    "knox1964"
+   ]
+  },
+  {
+   "title": "The Ode on Man and the philosophers",
+   "text": [
+    "The first stasimon has attracted philosophers as much as the play itself. Heidegger, in his lectures of 1935 published as Introduction to Metaphysics, translated deinon as 'the uncanny' (das Unheimliche) and read the ode as an account of human being as violent, homeless and at odds with the overwhelming power of Being; hupsipolis apolis became for him a statement of the human situation [[heidegger2000]].",
+    "Martha Nussbaum read the play as a study of practical reason: Creon and Antigone both simplify the world of competing values so as to avoid conflict, and the ode's praise of human resourcefulness masks the vulnerability of a life lived among many goods. Charles Segal related the ode to the play's concern with the boundaries of civilisation and the wild [[nussbaum1986]] [[segal1981]]."
+   ],
+   "cite": [
+    "heidegger2000",
+    "nussbaum1986",
+    "segal1981"
+   ]
+  },
+  {
+   "title": "Antigone in feminist and political thought",
+   "text": [
+    "Against Hegel, feminist philosophers have asked why Antigone must stand for the family and women for the private sphere. Luce Irigaray, in Speculum of the Other Woman (1974), read Hegel's account as a confinement of woman to the realm of blood and death; Lacan's seminar on the ethics of psychoanalysis (1959–60) made Antigone the figure of a desire that does not give way, placed 'between two deaths' [[irigaray1985]] [[lacan1992]].",
+    "Judith Butler's Antigone's Claim (2000) argues that Antigone does not represent kinship at all, but its crisis: the daughter of an incestuous union, whose brother is also her father's son, she loves her brother in a way that exceeds the norms of family and state alike, and she defies the state in the state's own language of sovereign assertion. Butler links her to those whose relationships and griefs are not publicly recognised. Bonnie Honig has argued for a more political Antigone, attentive to the politics of lament and to her solidarity with Ismene; Tina Chanter has raised the question of slavery in the play and its reception [[butler2000]] [[honig2013]] [[chanter2011]] [[soderback2010]]."
+   ],
+   "cite": [
+    "irigaray1985",
+    "lacan1992",
+    "butler2000",
+    "honig2013",
+    "chanter2011",
+    "soderback2010"
+   ]
+  },
+  {
+   "title": "Anouilh, Brecht and the modern Antigones",
+   "text": [
+    "Jean Anouilh's Antigone was first performed in Paris in February 1944, under German occupation. His Creon is a weary pragmatist who explains that someone has to steer the ship and says yes to life's compromises; his Antigone refuses his offer of ordinary happiness and chooses death almost without reasons. Because Creon is given strong arguments, the play passed the censors and was read by some as sympathetic to the collaborationist regime and by others as a celebration of resistance; the ambiguity is part of its fame [[steiner1984]].",
+    "Bertolt Brecht's Die Antigone des Sophokles (Chur, Switzerland, 1948), based on Hölderlin's translation, begins with a prologue set in Berlin in April 1945, where two sisters find their brother hanged as a deserter. Brecht turns Creon into the leader of a war of plunder against Argos and Antigone into the first to break ranks with a criminal regime. Later versions, such as Athol Fugard's The Island (1973), set in a South African prison, and Seamus Heaney's The Burial at Thebes (2004), show how the play has become a common language for resistance and its costs [[steiner1984]] [[mee2011]] [[wilmer2010]]."
+   ],
+   "cite": [
+    "steiner1984",
+    "mee2011",
+    "wilmer2010"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Ant. 1–2",
+   "quote": "Own sister of my blood, one life with me,\nIsmenè, have the tidings caught thine ear?",
+   "who": "Antigone",
+   "explanation": "The opening words insist on the sisters' common blood. The theme of kinship, and its limits, is announced at once; within a hundred lines Antigone will have broken with her sister."
+  },
+  {
+   "ref": "Ant. 182–183",
+   "quote": "He too hath no high place in mine esteem,\nWho sets his friend before his fatherland.",
+   "who": "Creon",
+   "explanation": "Creon's statement of political principle: the city comes before personal attachments. The principle is respectable in itself; the tragedy lies in how rigidly he applies it, and in the fact that the word philos means kin as well as friend."
+  },
+  {
+   "ref": "Ant. 332–333",
+   "quote": "Many a wonder lives and moves, but the wonder of all is man,\nThat courseth over the grey ocean, carried of Southern gale,",
+   "who": "The Chorus",
+   "explanation": "The opening of the Ode on Man. The Greek word translated 'wonder', deinos, also means terrible and dangerous, and the ode celebrates human skill while marking its limits in death and the laws of the gods."
+  },
+  {
+   "ref": "Ant. 454–457",
+   "quote": "The infallible, unwritten laws of Heaven.\nNot now or yesterday they have their being,\nBut everlastingly,",
+   "who": "Antigone",
+   "explanation": "The heart of Antigone's defence before Creon: the gods' unwritten laws are eternal and outrank the decree of any mortal ruler. The passage has become a classic statement of a law higher than the state's."
+  },
+  {
+   "ref": "Ant. 523",
+   "quote": "Love, and not hatred, is the part for me.",
+   "who": "Antigone",
+   "explanation": "Answering Creon's claim that an enemy remains hateful in death, Antigone says that her nature is to join in love. The line is often taken as her moral creed, though she says it just before rejecting her living sister."
+  },
+  {
+   "ref": "Ant. 737",
+   "quote": "One only makes not up a city, father.",
+   "who": "Haemon",
+   "explanation": "Haemon tells his father that a city that belongs to one man is no city. The line exposes the tyrannical turn in Creon's thinking and states a basic principle of Greek, and especially Athenian, political thought."
+  },
+  {
+   "ref": "Ant. 712–714",
+   "quote": "The plant that yields where torrent waters flow\nSaves every little twig, when the stout tree\nIs torn away and dies.",
+   "who": "Haemon",
+   "explanation": "Haemon's image of yielding answers Creon's images of iron and the bit. It states the theme of bending and breaking on which both protagonists are destroyed."
+  },
+  {
+   "ref": "Ant. 909–910",
+   "quote": "A husband lost might be replaced; a son,\nIf son were lost to me, might yet be born;",
+   "who": "Antigone",
+   "explanation": "The beginning of Antigone's disputed argument that only a brother is irreplaceable. Its authenticity and meaning are among the most debated questions in the play."
+  },
+  {
+   "ref": "Ant. 1028–1030",
+   "quote": "The obstinate man still earns the name of fool.\nUrge not contention with the dead, nor stab\nThe fallen. What valour is 't to slay the slain?",
+   "who": "Teiresias",
+   "explanation": "The prophet's advice names Creon's fault, self-will, and the absurdity of making war on a corpse. Creon's angry rejection of it seals his fate."
+  },
+  {
+   "ref": "Ant. 1270",
+   "quote": "Alas for him who sees the right too late!",
+   "who": "The Chorus",
+   "explanation": "The Chorus's comment on Creon's lament over his son. It sums up his tragedy: he recognises justice only when the recognition can no longer save anyone."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Is Creon's decree simply tyrannical, or does it have a legitimate basis?",
+   "hint": "Look at his first speech (162–210), the situation of a city just saved from attack, Greek practice regarding traitors, and the way the Chorus, Haemon and Teiresias respond."
+  },
+  {
+   "q": "What exactly are the 'unwritten laws' Antigone appeals to?",
+   "hint": "Read 450–470 closely. Are they universal moral principles or specific religious duties to the dead and to kin? Who enforces them?"
+  },
+  {
+   "q": "Why does the play contain two burials of Polyneices?",
+   "hint": "Compare the guard's two reports, the Chorus's suggestion of divine action and the whirlwind. What does the ambiguity add?"
+  },
+  {
+   "q": "Is Ismene a foil to Antigone, or a character in her own right?",
+   "hint": "Consider her arguments in the prologue, her offer to share the guilt and Antigone's rejection of it. What kind of courage does she show?"
+  },
+  {
+   "q": "How does the Ode on Man relate to the action around it?",
+   "hint": "Think about the double meaning of deinos, the final stanza's 'high in the city, cityless', and whom the elders think they are describing."
+  },
+  {
+   "q": "What role does gender play in the conflict between Antigone and Creon?",
+   "hint": "Collect Creon's remarks about women, Ismene's argument in the prologue and the Chorus's responses. Is Antigone acting as a woman or against women's roles?"
+  },
+  {
+   "q": "How does Haemon try to persuade his father, and why does he fail?",
+   "hint": "Look at the structure of his speech, his report of public opinion, the images of tree and sail, and the moment when the dialogue turns to anger."
+  },
+  {
+   "q": "How should we understand Antigone's argument about the irreplaceable brother (904–920)?",
+   "hint": "Weigh the arguments for and against its authenticity, the parallel in Herodotus, and what it tells us about her relation to her family."
+  },
+  {
+   "q": "Who is the tragic hero of the play, Antigone or Creon?",
+   "hint": "Count who is on stage and when; consider who undergoes a reversal and recognition; think about why the play is named after Antigone."
+  },
+  {
+   "q": "Why has Antigone been rewritten so often in modern times, and what do Anouilh and Brecht change?",
+   "hint": "Think about occupation, dictatorship and resistance; how each version presents Creon's arguments; and what Butler or Honig suggest about why the play speaks to political crises."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "butler2000",
+   "text": "Butler, Judith. Antigone's Claim: Kinship Between Life and Death. New York: Columbia University Press, 2000."
+  },
+  {
+   "id": "cairns2016",
+   "text": "Cairns, Douglas. Sophocles: Antigone. Bloomsbury Companions to Greek and Roman Tragedy. London: Bloomsbury, 2016."
+  },
+  {
+   "id": "chanter2011",
+   "text": "Chanter, Tina. Whose Antigone? The Tragic Marginalization of Slavery. Albany: State University of New York Press, 2011."
+  },
+  {
+   "id": "ehrenberg1954",
+   "text": "Ehrenberg, Victor. Sophocles and Pericles. Oxford: Basil Blackwell, 1954."
+  },
+  {
+   "id": "foley2001",
+   "text": "Foley, Helene P. Female Acts in Greek Tragedy. Princeton: Princeton University Press, 2001."
+  },
+  {
+   "id": "griffith1999",
+   "text": "Griffith, Mark, ed. Sophocles: Antigone. Cambridge Greek and Latin Classics. Cambridge: Cambridge University Press, 1999."
+  },
+  {
+   "id": "hegel1977",
+   "text": "Hegel, G. W. F. Phenomenology of Spirit. Translated by A. V. Miller. Oxford: Clarendon Press, 1977."
+  },
+  {
+   "id": "heidegger2000",
+   "text": "Heidegger, Martin. Introduction to Metaphysics. Translated by Gregory Fried and Richard Polt. New Haven: Yale University Press, 2000."
+  },
+  {
+   "id": "honig2013",
+   "text": "Honig, Bonnie. Antigone, Interrupted. Cambridge: Cambridge University Press, 2013."
+  },
+  {
+   "id": "irigaray1985",
+   "text": "Irigaray, Luce. Speculum of the Other Woman. Translated by Gillian C. Gill. Ithaca: Cornell University Press, 1985."
+  },
+  {
+   "id": "jebb1888",
+   "text": "Jebb, R. C., ed. Sophocles: The Plays and Fragments. Part III: The Antigone. Cambridge: Cambridge University Press, 1888."
+  },
+  {
+   "id": "knox1964",
+   "text": "Knox, Bernard M. W. The Heroic Temper: Studies in Sophoclean Tragedy. Berkeley: University of California Press, 1964."
+  },
+  {
+   "id": "lacan1992",
+   "text": "Lacan, Jacques. The Ethics of Psychoanalysis, 1959–1960. The Seminar of Jacques Lacan, Book VII. Edited by Jacques-Alain Miller, translated by Dennis Porter. New York: W. W. Norton, 1992."
+  },
+  {
+   "id": "lloydjones1990",
+   "text": "Lloyd-Jones, Hugh, and N. G. Wilson. Sophoclea: Studies on the Text of Sophocles. Oxford: Clarendon Press, 1990."
+  },
+  {
+   "id": "mee2011",
+   "text": "Mee, Erin B., and Helene P. Foley, eds. Antigone on the Contemporary World Stage. Oxford: Oxford University Press, 2011."
+  },
+  {
+   "id": "nussbaum1986",
+   "text": "Nussbaum, Martha C. The Fragility of Goodness: Luck and Ethics in Greek Tragedy and Philosophy. Cambridge: Cambridge University Press, 1986."
+  },
+  {
+   "id": "paolucci1962",
+   "text": "Paolucci, Anne, and Henry Paolucci, eds. Hegel on Tragedy. Garden City, NY: Doubleday, 1962."
+  },
+  {
+   "id": "segal1981",
+   "text": "Segal, Charles. Tragedy and Civilization: An Interpretation of Sophocles. Cambridge, MA: Harvard University Press, 1981."
+  },
+  {
+   "id": "soderback2010",
+   "text": "Söderbäck, Fanny, ed. Feminist Readings of Antigone. Albany: State University of New York Press, 2010."
+  },
+  {
+   "id": "sourvinou1989",
+   "text": "Sourvinou-Inwood, Christiane. 'Assumptions and the Creation of Meaning: Reading Sophocles' Antigone.' Journal of Hellenic Studies 109 (1989): 134–48."
+  },
+  {
+   "id": "steiner1984",
+   "text": "Steiner, George. Antigones. Oxford: Clarendon Press, 1984."
+  },
+  {
+   "id": "wilmer2010",
+   "text": "Wilmer, S. E., and Audronė Žukauskaitė, eds. Interrogating Antigone in Postmodern Philosophy and Criticism. Oxford: Oxford University Press, 2010."
+  },
+  {
+   "id": "winnington1980",
+   "text": "Winnington-Ingram, R. P. Sophocles: An Interpretation. Cambridge: Cambridge University Press, 1980."
+  }
+ ]
+}
