@@ -3200,3 +3200,9 @@ a.ec-here { color: var(--accent); }
 .gd-quote blockquote { white-space: pre-line; }
 .gd-box .gd-box-t { font-weight: 600; font-size: 1.08rem; }
 .gd-box .gd-box-k { font-weight: 700; }
+/* blog */
+.blog-body { max-width: 42rem; }
+.blog-body p, .blog-body li { line-height: 1.75; font-size: 1.06rem; }
+.blog-body h2 { font-size: 1.45rem; margin: 2.2rem 0 .8rem; }
+.blog-body h3 { font-size: 1.15rem; margin: 1.6rem 0 .5rem; }
+.blog-quote { margin: 1.2rem 0; padding-left: 1.1rem; border-left: 3px solid #cf4f28; font-style: italic; line-height: 1.65; }

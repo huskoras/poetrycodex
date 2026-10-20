@@ -1,0 +1,849 @@
+{
+ "work": "buddhacarita",
+ "title": "The Buddhacarita",
+ "author": "Aśvaghoṣa",
+ "quoteEdition": "buddhacarita-cowell",
+ "updated": "2026-10-19",
+ "unit": "Part",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Aśvaghoṣa, a Buddhist monk and poet from Sāketa (Ayodhyā) in northern India, by tradition a Brahmin by birth and a convert to Buddhism"
+  },
+  {
+   "label": "Date",
+   "value": "Probably 1st–2nd century CE; Chinese and Tibetan tradition makes him a contemporary and adviser of the Kushan emperor Kaniṣka"
+  },
+  {
+   "label": "Language and genre",
+   "value": "Sanskrit verse; a mahākāvya, or 'great poem', the courtly epic genre later perfected by Kālidāsa, of which the Buddhacarita and the Saundarananda are the earliest complete examples"
+  },
+  {
+   "label": "Original extent",
+   "value": "Twenty-eight cantos, from the Buddha's birth to the distribution of his relics after his death, preserved complete only in a Tibetan translation and a fifth-century Chinese version"
+  },
+  {
+   "label": "Surviving Sanskrit",
+   "value": "Cantos I–XIII and the first part of XIV (to about verse 31), ending with the enlightenment; the opening of canto I is also lost in the oldest manuscript"
+  },
+  {
+   "label": "This edition",
+   "value": "E. B. Cowell's prose translation in Sacred Books of the East 49 (1894), seventeen books from late Nepalese manuscripts; the end of Book XIV and Books XV–XVII are a supplement by the Nepalese pandit Amṛtānanda, written in the nineteenth century"
+  },
+  {
+   "label": "Setting",
+   "value": "Kapilavastu and the Lumbinī garden in the Śākya country; the hermitages of the Ganges plain; Rājagṛha in Magadha; the river Nairañjanā and the Bodhi tree at Gayā; in the supplement, the Deer Park at Vārāṇasī"
+  },
+  {
+   "label": "Main figures",
+   "value": "Siddhārtha the Bodhisattva; his father Śuddhodana; his wife Yaśodharā; the groom Chandaka and the horse Kanthaka; the sage Asita; King Bimbisāra; the teacher Arāḍa; Māra, god of desire and death"
+  },
+  {
+   "label": "Other works",
+   "value": "The Saundarananda (the conversion of the Buddha's half-brother Nanda), and fragments of a Buddhist drama, the Śāriputraprakaraṇa, found in Central Asia"
+  },
+  {
+   "label": "Key translations",
+   "value": "Cowell (1894); E. H. Johnston (cantos I–XIV, 1936; later cantos from the Tibetan, 1937); Patrick Olivelle, Clay Sanskrit Library (2008); Charles Willemen, from the Chinese (2009)"
+  }
+ ],
+ "context": [
+  "Aśvaghoṣa is the first Sanskrit court poet whose works survive in substantial form. The colophons of his poems call him a monk, a teacher and a great poet from Sāketa, the city of Ayodhyā, son of a woman named Suvarṇākṣī. Later Buddhist tradition adds that he was a learned Brahmin who was defeated in debate by a Buddhist teacher and converted, and Chinese and Tibetan sources make him a counsellor at the court of Kaniṣka, the Kushan emperor of the late first or early second century CE. These stories cannot be confirmed, but his poems show exactly what they claim: a deep knowledge of Brahmanical learning, the epics and the law books, joined to a monk's command of Buddhist doctrine [[johnston1936]] [[olivelle2008]].",
+  "The Buddhacarita, the 'Acts' or 'Life' of the Buddha, is a mahākāvya, a long ornate poem in cantos, written in a range of classical metres and full of the figures of speech that Sanskrit critics called alaṃkāra, 'ornament': similes, puns, elaborate descriptions of cities, women, gardens and battles. With his other long poem, the Saundarananda, it is the oldest surviving example of the form. Kālidāsa, writing perhaps three centuries later, brought the court epic to its classical height, and several passages in his poems seem to echo Aśvaghoṣa's. Aśvaghoṣa therefore stands near the beginning of a literary tradition that he may well have inherited rather than invented [[warder1974]] [[lienhard1984]].",
+  "The poem originally had twenty-eight cantos. It began with the Buddha's birth and ended after his death, with the division of his relics and the first council of his followers. Only the first fourteen cantos survive in Sanskrit, and the fourteenth is broken off soon after the night of enlightenment. The whole poem is preserved in a Tibetan translation and in a Chinese version of the fifth century, and these allowed E. H. Johnston to translate the later cantos into English in 1937. The Chinese pilgrim Yijing, who travelled in India in the seventh century, reported that the poem was widely read and recited [[johnston1936]] [[willemen2009]] [[beal1883]].",
+  "E. B. Cowell, Professor of Sanskrit at Cambridge, edited the Sanskrit text in 1893 and translated it the next year for the series Sacred Books of the East. His manuscripts were recent Nepalese copies that ended with a supplement: a Nepalese scholar, Amṛtānanda, unable to find the rest of the poem, had completed Book XIV and added three books of his own, carrying the story to the first sermon and the Buddha's return to Kapilavastu. Cowell translated these with the rest and noted their origin. Readers of this edition should treat Books I to the middle of XIV as Aśvaghoṣa and the remainder as a late Nepalese continuation in a very different style. References in this guide follow Cowell's verse numbers, which differ in places from Johnston's critical text [[cowell1893]] [[cowell1894]].",
+  "Aśvaghoṣa said plainly why he wrote poetry. At the end of the Saundarananda he explains that the poem was composed not for pleasure but for the sake of peace, and that he had used the form of kāvya the way a doctor mixes a bitter medicine with honey, so that readers drawn by the sweetness would swallow the truth. The Buddhacarita works on the same principle. Its charm is real, but every ornament leads towards the teaching that all the pleasures it describes are passing, and that release from birth, old age and death is the only goal worth pursuing [[johnston1928]] [[covill2007]] [[olivelle2008]]."
+ ],
+ "plot": [
+  "In the splendid city of Kapilavastu, King Śuddhodana of the Śākyas and his queen Māyā receive the future Buddha, who enters her womb in the form of a white elephant and is born from her side in the Lumbinī garden. He takes seven steps and announces that this is his last birth. The Brahmins foretell that he will become either a universal emperor or a Buddha, and the aged seer Asita weeps because he will not live to hear the boy's teaching. Māyā dies, and the prince is raised by her sister Gautamī. His anxious father marries him to Yaśodharā and surrounds him with every pleasure, hoping to keep him from the religious life; a son, Rāhula, is born.",
+  "When the prince drives out to the city gardens, the gods put before him an old man, a sick man and a corpse. Shaken, he refuses the advances of the women in the pleasure grove and the worldly advice of his friend Udāyin. Meditating under a rose-apple tree, he meets a mendicant who is a god in disguise and resolves to leave home. His father refuses permission, but one night the gods cast the palace women into an ungainly sleep, and the prince, disgusted by the sight, rides out on his horse Kanthaka with the groom Chandaka. In the forest he cuts off his hair, exchanges his clothes with a hunter and sends Chandaka home, where the queen, Yaśodharā and the king break into lamentation.",
+  "The prince visits ascetics who torture their bodies to win heaven and finds their aims too small. He rejects the pleas of his father's counsellor and priest, who follow him into the forest, and the offer of half a kingdom made by King Bimbisāra of Magadha, answering with a long condemnation of sensual pleasure. He studies with the teacher Arāḍa, whose doctrine of the liberated soul he finds incomplete, and with Udraka, and then practises extreme fasting for six years. Recognising that starvation is not the way, he accepts a meal of milk from the herdsman's daughter Nandabalā and sits down under the Bodhi tree, vowing not to rise until he has reached his goal.",
+  "Māra, the god of desire, attacks him first with the arrow of love and then with a monstrous army; the Bodhisattva remains unmoved, and a heavenly voice rebukes Māra, who flees. Through the three watches of the night the Bodhisattva remembers his past lives, sees the deaths and rebirths of all beings, and understands the chain of dependent origination and the four noble truths. At dawn he becomes the Buddha. Here Aśvaghoṣa's Sanskrit breaks off. In Cowell's supplementary books the Buddha spends weeks of meditation by the tree, resists Māra's daughters, travels to Vārāṇasī, preaches the first sermon to the five mendicants, gathers great disciples and returns to Kapilavastu to convert his family."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Birth of the Holy One",
+   "lines": "Book I",
+   "section": 0,
+   "summary": [
+    "The poem opens with a salutation to the Buddha and a description of Kapilavastu, a city so splendid that it rivals heaven and can only compete with its own houses. Its king, Śuddhodana of the solar race, rules with justice and balance, and his queen Māyā is a model of virtue. The Bodhisattva descends from the Tuṣita heaven and enters her womb in the form of a white six-tusked elephant. In the Lumbinī garden, as she holds a flowering bough, he is born from her side without pain, takes seven steps and declares that this is his last birth. Gods attend him, the earth shakes and flowers fall from a cloudless sky.",
+    "The Brahmins reassure the king that a son may surpass his ancestors, and the great seer Asita arrives through the air. Seeing the marks of a great man on the child, he weeps: not from fear for the boy, but because he himself will die before hearing the teaching that will deliver the world. The king rejoices, but begins to fear that his son will leave him for the religious life."
+   ],
+   "analysis": [
+    "Book I sets out the poem's double nature at once. The city description, with its punning conceits about Indra and the lotuses, is pure kāvya, while the birth narrative follows Buddhist tradition, including the miraculous birth compared to those of epic kings born from thigh, hand and forehead. Cowell's text begins at the first verse, but the oldest manuscript lacks the opening, and the verses of the Brahmins (46–51) are the end of a speech whose beginning is lost [[johnston1936]].",
+    "Asita's speech gives the first full statement of the Buddha's mission in a run of images that will recur through the poem: the boat of knowledge, the stream of the Law, the rain on a burning world, the door of desire broken open. His tears establish the emotional pattern of the work, in which joy at the Buddha's coming is always mixed with grief at what it costs."
+   ],
+   "key": [
+    {
+     "ref": "BC 1.34",
+     "quote": "'I am born for supreme knowledge, for the welfare of the world,--thus this is my last birth,'",
+     "note": "The newborn's declaration, after his seven steps, joins the two goals of the poem: his own release and the good of all beings."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Life in the Palace",
+   "lines": "Book II",
+   "section": 1,
+   "summary": [
+    "The prince's birth brings prosperity: the kingdom flourishes, enemies become friends and crime disappears, so the king names him Sarvārthasiddha. Queen Māyā, unable to bear such joy, dies and goes to heaven, and her sister raises the boy. He learns quickly and behaves with a gravity beyond his years. Remembering Asita's words, the king turns him towards pleasure, marries him to Yaśodharā and lodges him in secluded palaces where singing-women entertain him through every season.",
+    "The king meanwhile lives a life of self-restraint and piety, offering sacrifices for his son's long life. Yaśodharā bears a son, Rāhula. The canto ends by explaining that all Bodhisattvas taste the pleasures of the world and leave for the forest once a son is born."
+   ],
+   "analysis": [
+    "Book II contrasts two lives in the palace: the son's, surrounded by pleasure in order to keep him from religion, and the father's, a model of the righteous householder king. The irony is pointed out directly: a king who loves religion keeps his son from it (2.55).",
+    "The final verse, on the pattern of all Bodhisattvas, shows Aśvaghoṣa placing his hero's story inside a cosmic order. The birth of Rāhula fulfils the debt to the family line, and so prepares for the departure."
+   ],
+   "key": [
+    {
+     "ref": "BC 2.53",
+     "quote": "He endured the kingdom for the sake of his son, his son for his family, his family for fame, fame for heaven, heaven for the soul",
+     "note": "A chain of purposes characteristic of Aśvaghoṣa's style: the king's piety is real, but it remains within the world of rebirth."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Prince's Perturbation",
+   "lines": "Book III",
+   "section": 2,
+   "summary": [
+    "Hearing of the spring groves, the prince asks to go out. The king clears the road of all who are old, sick or maimed, and the city turns out to see him; women crowd to the windows and rooftops in their haste. But the gods of the Pure Abodes create an old man, and the charioteer, his mind clouded by the gods, explains old age and admits that it will come to the prince too. Shaken, the prince returns home.",
+    "On a second drive the gods create a sick man, and on a third a corpse carried to the burning-ground. Each time the prince asks whether this evil is peculiar to one man or common to all, and each time he marvels that the world can rejoice while such a fate is before it. After the corpse the charioteer does not turn back, but drives on to the Padmakhaṇḍa grove, full of women."
+   ],
+   "analysis": [
+    "The window scene (3.13–24) is the most famous set piece of early kāvya and has close parallels in Kālidāsa. Its comedy of jostling women and slipping girdles is the brightest point of the poem, and it sits directly before the old man, so that the city's delight becomes the measure of its blindness [[warder1974]].",
+    "The charioteer's answers, repeated with variation three times, have the formal weight of a ritual. The prince's real discovery is not that people age and die, but that they live as though they did not know it."
+   ],
+   "key": [
+    {
+     "ref": "BC 3.30",
+     "quote": "'That is old age by which he is broken down,--the ravisher of beauty, the ruin of vigour, the cause of sorrow, the destruction of delights, the bane of memories, the enemy of the senses.",
+     "note": "The charioteer's list of epithets gives old age the formal treatment kāvya usually reserves for gods or heroes."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "The Women Rejected",
+   "lines": "Book IV",
+   "section": 3,
+   "summary": [
+    "In the grove the women gaze at the prince, too awed to act, until Udāyin, the priest's son, rouses them with stories of great seers undone by women. They try every art: stumbling against him, whispering, slipping their garments, pointing to the mango, the aśoka and the ruddy goose that follows its mate like a slave. The prince neither smiles nor rejoices, thinking only that all must die, and wonders that they cannot see that youth is fleeting.",
+    "Udāyin then speaks to him as a friend, urging him to court the women even by guile, and lists gods and seers who pursued love. The prince replies that he does not despise the world, but cannot delight in it while old age, disease and death exist; greatness cannot lie where there is destruction. The women return to the city with broken hopes, and the king spends a sleepless night."
+   ],
+   "analysis": [
+    "The seduction is a carefully built set piece in which each woman's gesture is a small poem. Aśvaghoṣa lets the reader enjoy it fully, which gives force to the prince's refusal. The women's spring speech (4.44–52) is itself a little lyric of love, ending with the wish that the prince had the birds' intoxication rather than a thinker's thought.",
+    "Udāyin's speech belongs to the tradition of worldly policy, and his exempla are drawn from Brahmanical myth. The prince answers him not with contempt but with reasoning, setting the pattern for every later debate [[olivelle2008]]."
+   ],
+   "key": [
+    {
+     "ref": "BC 4.98",
+     "quote": "I can find no peace, no self-command, much less can I find pleasure, while I see the world as it were ablaze with fire.",
+     "note": "The prince's reply to Udāyin introduces the image of the burning world, central to Buddhist preaching."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "The Flight",
+   "lines": "Book V",
+   "section": 4,
+   "summary": [
+    "Riding out on Kanthaka with his companions, the prince sees a ploughed field, with insects killed and men and oxen worn by labour, and is filled with compassion. Under a rose-apple tree he enters the first stage of meditation. A mendicant appears, explains that he has left home to seek liberation and flies away: he was a god. Returning, the prince asks his father for leave to become a wandering ascetic. When the king refuses, he offers to stay if his father can guarantee him against death, disease, old age and misfortune; the king cannot, and sets guards around him.",
+    "That night the gods cast the palace women into deep sleep. Seeing them sprawled with their instruments and ornaments in disorder, the prince is filled with disgust and resolves to leave. He wakes Chandaka, mounts Kanthaka, and the gates open of their own accord. Looking back at the city, he vows not to return until he has seen the further shore of birth and death."
+   ],
+   "analysis": [
+    "The canto moves from compassion in the field to disgust in the palace. The scene of the sleeping women (5.47–62) is the counterpart to the seduction of Book IV: the same beauty is shown as graceless and like death, and a simile compares the company to a lake of broken lotuses. Aśvaghoṣa wants the reader to share the prince's revulsion, though modern readers have also noted the harshness of his verdict on women (5.64).",
+    "The prince's four conditions to his father (5.35) turn the argument of Book III into a demand that no king can meet. His farewell to Kanthaka, asking the horse to strive for the good of the world, extends compassion even to animals."
+   ],
+   "key": [
+    {
+     "ref": "BC 5.84",
+     "quote": "'Till I have seen the further shore of birth and death I will never again enter the city called after Kapila.'",
+     "note": "The lion's roar of the departing prince: the image of crossing the ocean of existence takes the form of a vow."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Chandaka Dismissed",
+   "lines": "Book VI",
+   "section": 5,
+   "summary": [
+    "At sunrise the prince reaches the hermitage of the descendant of Bhṛgu. He thanks Chandaka for his loyalty, gives him his ornaments and a jewel for the king, and dictates a message: he has gone not out of anger or desire for heaven but to end old age and death, and there is no wrong time for dharma. Chandaka pleads with him to think of his father, foster-mother, wife and son.",
+    "The prince replies that every union ends in separation, like birds on a tree or passing clouds. Kanthaka licks his feet and weeps. The prince cuts off his hair with his sword, the gods carry it to heaven, and a god in the form of a hunter exchanges his dark red robe for the prince's fine clothes. Chandaka returns home in despair."
+   ],
+   "analysis": [
+    "The canto is a scene of farewells. Chandaka's speech names each of the prince's kin in turn, and the prince's answer reduces family love to the general law of impermanence. The shaving of the head and change of clothes mark the ritual passage from prince to mendicant.",
+    "The exchange with the hunter carries a quiet irony: the robe that signals a saint was worn by a killer who used it to gain the confidence of animals, and the prince gives up his white householder's dress in return."
+   ],
+   "key": [
+    {
+     "ref": "BC 6.46",
+     "quote": "As birds go to their roosting-tree and then depart, so the meeting of beings inevitably ends in separation.",
+     "note": "One of a series of images of parting with which the prince consoles Chandaka."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Entry into the Penance Grove",
+   "lines": "Book VII",
+   "section": 6,
+   "summary": [
+    "The prince enters the hermitage, where people and animals stop to gaze at him. He asks an ascetic about the penances practised there and is told of men who live like birds or deer, eat only what grows in water, or lie in water to be scratched by tortoises, all to win heaven. The prince reflects that this is pain sought for the sake of pain, and that heaven itself is impermanent; the mind controls the body, and water cannot wash away sin.",
+    "After a few nights he decides to leave. The ascetics beg him to stay, but he explains that they seek heaven while he seeks to end rebirth. A Brahmin lying in the ashes praises his choice of liberation over heaven and sends him to the sage Arāḍa at Vindhyakoṣṭha, predicting that he will go beyond even Arāḍa's doctrine."
+   ],
+   "analysis": [
+    "The list of penances is partly satirical, and the prince's critique is sharp: if mortification of the body is merit, then comfort is sin, and religion in this world earns irreligion as its fruit. Aśvaghoṣa sets Buddhist emphasis on the mind against the externals of ritual and pilgrimage.",
+    "The canto also shows the respect that runs through the debates. The prince praises the ascetics as true upholders of ancient dharma even as he leaves them; the difference is in goal, not in sincerity (7.48–49)."
+   ],
+   "key": [
+    {
+     "ref": "BC 7.31",
+     "quote": "therefore I count as a place of pilgrimage only the virtues of a virtuous man, water without doubt is only water.'",
+     "note": "The prince's critique of ritual bathing ends with a deliberately plain line after much argument."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Lamentations in the Palace",
+   "lines": "Book VIII",
+   "section": 7,
+   "summary": [
+    "Chandaka and Kanthaka take eight days to make the journey back that took one night. The city is like a sky without the sun. When Kanthaka neighs in the stable the women rush out, thinking the prince has returned, and then break into lamentation. Gautamī mourns over his shorn hair and tender feet. Yaśodharā accuses Chandaka of betraying his master and Kanthaka of carrying off her treasure in silence.",
+    "Chandaka answers that the gods compelled them, citing the opened gates and sleeping guards. Yaśodharā laments that her husband has abandoned his lawful wife, who should share his religious life, and their infant son. The king falls to the ground like the banner of Indra after a festival and laments like Daśaratha for Rāma. His counsellor and priest calm him and agree to go in search of the prince."
+   ],
+   "analysis": [
+    "Book VIII is Aśvaghoṣa's fullest exercise in the poetry of grief, modelled on the laments of the Rāmāyaṇa, and its similes of cows, ospreys and ruddy geese bereft of mates are drawn from epic convention. The canto gives the abandoned family their say before the hero's arguments resume.",
+    "Yaśodharā's speech raises a serious objection from within Brahmanical dharma, in which husband and wife are consecrated together in sacrifice. Her lament exposes the cost of renunciation in a way the poem never fully answers [[hiltebeitel2011]]."
+   ],
+   "key": [
+    {
+     "ref": "BC 8.61",
+     "quote": "where is his religion, who wishes to follow penance without his lawful wife to share it with him?",
+     "note": "Yaśodharā's question appeals to the Brahmanical ideal of the married couple sharing religious merit."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Deputation to the Prince",
+   "lines": "Book IX",
+   "section": 8,
+   "summary": [
+    "The counsellor and the priest find the prince sitting under a tree. The priest delivers the king's message: religion can be practised in the city, many kings have won liberation as householders, and the prince should rule first and go to the forest at the proper time. He describes the grief of Gautamī, Yaśodharā and Rāhula. The prince replies that he loves his father, but separation is inevitable and kingship is the home of illusion; the golden palace seems to him on fire.",
+    "The minister then argues that the next life is uncertain, that some hold all things arise by nature or from God, and that kings such as Rāma returned from the forest. The prince answers that he will not accept a disputed theory on another's word but will find the truth himself, and that those who broke their vows are no authority. He would rather enter a blazing fire than return with his purpose unfulfilled."
+   ],
+   "analysis": [
+    "The two envoys present two different challenges: the priest argues from duty and affection, the minister from philosophical scepticism. The minister's survey of materialist, naturalist and theistic views gives a glimpse of the intellectual world of early India, and the prince's answer insists on personal verification (9.63–66).",
+    "Cowell's text shows a gap after 9.41, where his manuscripts were defective; Johnston restored much of the passage from the older manuscript and the Tibetan [[johnston1936]]."
+   ],
+   "key": [
+    {
+     "ref": "BC 9.69",
+     "quote": "'I would enter the blazing fire, but not my house with my purpose unfulfilled.'",
+     "note": "The prince's final refusal to the envoys, given the force of an oath."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Bimbisāra's Visit",
+   "lines": "Book X",
+   "section": 9,
+   "summary": [
+    "The prince crosses the Ganges and comes to Rājagṛha, the capital of Magadha, where people stop to stare at the beautiful mendicant begging his food. King Śreṇya Bimbisāra hears of him and climbs Mount Pāṇḍava to visit him. Speaking out of old friendship with the Śākya house, the king offers him half of his kingdom, or an alliance to conquer his enemies.",
+    "He urges the prince to pursue the three aims of life, pleasure, wealth and dharma, each at its proper age: pleasure in youth, wealth in middle age, religion in old age. If religion is truly his aim, let him offer sacrifices as his ancestors did. The prince remains as firm as Mount Kailāsa."
+   ],
+   "analysis": [
+    "Bimbisāra is the most sympathetic of the tempters: his offer is generous, and his speech is a faithful summary of the Brahmanical doctrine of the three aims and the stages of life. His contrast between the young and the old is clever and attractive.",
+    "The canto is short, and its chief function is to set up the prince's great reply in Book XI. The narrator's description of the speech in 11.1 as 'hostile' under a 'friendly face' gives the Buddhist judgement on even well-meant worldly advice."
+   ],
+   "key": [
+    {
+     "ref": "BC 10.34",
+     "quote": "therefore they say that pleasures belong to the young man, wealth to the middle-aged, and religion to the old.",
+     "note": "Bimbisāra's version of the Brahmanical scheme of life, which the prince will reject."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "The Passions Spurned",
+   "lines": "Book XI",
+   "section": 10,
+   "summary": [
+    "The prince thanks Bimbisāra for his friendship, but explains that he fears the objects of sense more than serpents or thunderbolts. Pleasures never satisfy: kings who rule the earth want the ocean beyond, and Māndhātṛ and Nahuṣa fell from heaven unsatisfied. In a series of verses he compares pleasures to a torch of hay, an angry serpent, a dry bone, flesh fought over by dogs, fruit at the top of a tree and a dream.",
+    "Pleasures, he argues, are only remedies for pain, like water for thirst or clothes for cold, and a king's burdens are greater than a slave's. He rejects animal sacrifice as cruelty and refuses to wait for old age, since death is a hunter who strikes at any time. He goes on to seek Arāḍa, and the king asks him to return and show favour once he has reached his goal."
+   ],
+   "analysis": [
+    "Book XI is the doctrinal heart of the first half of the poem, a sustained argument against kāma in the language of Buddhist preaching. The long refrain 'what man of self-control could find satisfaction in these pleasures' (11.23–33) turns a list of similes into an incantation.",
+    "The argument that pleasures are merely remedies for pain (11.36–43) is subtle and characteristic of Aśvaghoṣa, who uses the habits of Indian philosophical debate to reach a moral conclusion."
+   ],
+   "key": [
+    {
+     "ref": "BC 11.12",
+     "quote": "mankind are never satiated with pleasures, as the ocean with the waters that fall into it.",
+     "note": "An image of insatiable desire that sums up the prince's case against Bimbisāra's offer."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "The Visit to Arāḍa",
+   "lines": "Book XII",
+   "section": 11,
+   "summary": [
+    "Arāḍa welcomes the prince and explains his doctrine: existence consists of the evolvents and their evolutes, and the soul, the knower of the field, is bound by ignorance, past action and desire. By distinguishing the manifest from the unmanifest and passing through the stages of contemplation, the soul escapes from the body like a bird from a cage. The prince objects that as long as the soul remains, it retains the seed of rebirth; only abandonment of everything is true release.",
+    "He visits Udraka, whose highest state of 'neither named nor un-named' also returns to the world, and then settles on the bank of the Nairañjanā with five mendicants, fasting for six years until he is skin and bone. Realising that a starved body cannot reach calm, he bathes, accepts milk from the herdsman's daughter Nandabalā, and goes to the Aśvattha tree. The serpent king Kāla foretells his success, and he sits down, vowing not to rise until he has reached his goal."
+   ],
+   "analysis": [
+    "Arāḍa's teaching is one of the earliest detailed accounts of Sāṃkhya-like philosophy in Indian literature, and Johnston's study of it is still important. The prince's rejection rests on the Buddhist denial of a permanent self: any remaining soul, however refined, carries the seed of rebirth [[johnston1936]].",
+    "The memory of the meditation under the rose-apple tree (12.98) links the canto to Book V and prepares the middle way. The pace of the narrative quickens as the hero nears the tree."
+   ],
+   "key": [
+    {
+     "ref": "BC 12.98",
+     "quote": "'This is not the way to passionlessness, nor to perfect knowledge, nor to liberation; that was certainly the true way which I found at the root of the Gambu tree.",
+     "note": "The rejection of extreme asceticism, recalling the prince's first meditation under the rose-apple (jambu) tree in Book V."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "The Defeat of Māra",
+   "lines": "Book XIII",
+   "section": 12,
+   "summary": [
+    "Māra, the god of desire, who is also called Kāmadeva, the flower-arrowed, fears that the sage will empty his realm. With his sons and daughters he approaches the tree and urges the Bodhisattva, as a kṣatriya, to return to his duty and conquer the worlds. When this fails he shoots the arrow that once pierced Śiva, but the sage does not even notice it. Māra then summons his army of monsters with the faces of animals, carrying weapons and severed heads.",
+    "The earth shakes and the sky darkens. The demons' missiles hang in the air or turn into lotus petals and flowers, and their arms are paralysed. A heavenly voice tells Māra that he cannot shake the sage any more than the wind can shake Mount Meru, calling him the great physician and the tree of knowledge. Māra withdraws, his army flees, and the night grows clear."
+   ],
+   "analysis": [
+    "Aśvaghoṣa fuses the Buddhist Māra with the Hindu god of love, so that the battle under the tree completes the series of temptations by desire. The grotesque catalogue of the army (13.18–27) is a set piece of the marvellous, balanced by similes that turn each failed attack into a moral lesson.",
+    "The Bodhisattva wins without fighting. His only weapon is stillness, and the poem makes this paradox of a heroic victory through inaction its climax."
+   ],
+   "key": [
+    {
+     "ref": "BC 13.36",
+     "quote": "the great sage remained unalarmed and untroubled, sporting with them as if they had been only rude children.",
+     "note": "The Bodhisattva's calm turns the epic battle scene upside down: the terrors of the army are reduced to the play of children."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "The Enlightenment",
+   "lines": "Book XIV",
+   "section": 13,
+   "summary": [
+    "In the first watch of the night the Bodhisattva remembers his former births and feels compassion for beings who roll on through rebirth like a wheel. In the second watch he receives the divine eye and sees all beings pass according to their deeds into the hells, into animal births, among the hungry ghosts and into heaven. In the last watch he traces the chain of conditions from old age and death back to ignorance, understands how each link ceases when its cause ceases, and grasps the four noble truths.",
+    "He becomes the Buddha. In Cowell's continuation, which begins at about verse 32 and is the work of Amṛtānanda, the gods debate whether to strew flowers, the Buddha addresses the Bodhisattvas from a throne in the air, and beings of every heaven come to praise him."
+   ],
+   "analysis": [
+    "The account of the three watches follows the canonical scheme closely and turns abstract doctrine into vision, with hells described in graphic detail. The formula of dependent origination is worked into verse with remarkable economy [[eltschinger2019]].",
+    "This is the last book of Aśvaghoṣa's Sanskrit to survive, and the difference in style when the supplement begins is clear: the later verses are full of Mahāyāna terms and lists of titles, without the argument and imagery of the earlier cantos [[johnston1936]]."
+   ],
+   "key": [
+    {
+     "ref": "BC 14.6",
+     "quote": "'All existence is insubstantial, like the fruit of a plantain.'",
+     "note": "The plantain, a stem of sheaths with no hard core, is a classic Buddhist image of things without essence."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "The Weeks after Enlightenment (supplement)",
+   "lines": "Book XV",
+   "section": 14,
+   "summary": [
+    "In Amṛtānanda's continuation the Buddha spends four weeks by the Bodhi tree in meditation. Māra urges him to enter nirvāṇa at once, and his three daughters, Lust, Thirst and Delight, try to tempt him first as young women and then as old ones, until they are made truly old by his power and forgiven. Māra returns disguised as a Śākya elder, urging him to go home and rule; he is sent away.",
+    "The Buddha is sheltered from a storm by the serpent king Mucilinda, receives offerings from the merchants Trapuṣa and Bhallika and from gods, and resolves to teach. Learning that Arāḍa and Udraka are dead, he travels to Vārāṇasī, flies over the Ganges when the ferryman demands a fee, and wins over the five mendicants in the Deer Park."
+   ],
+   "analysis": [
+    "This book reworks episodes known from the Lalitavistara and other later biographies, and its pious, crowded narration lacks Aśvaghoṣa's ornament and argument. It is valuable as evidence of how the Buddha's life was told in nineteenth-century Nepalese Buddhism [[cowell1894]].",
+    "The genuine canto XV, preserved in Tibetan and Chinese, deals with the turning of the wheel of the Law; readers should consult Johnston's or Willemen's translations for it [[willemen2009]]."
+   ],
+   "key": [
+    {
+     "ref": "BC 15.12",
+     "quote": "'I will first establish in perfect wisdom worlds as numerous as the sand, and then I will enter Nirvâna,'",
+     "note": "The Buddha's reply to Māra states the compassionate purpose of teaching before final release."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "The First Sermon (supplement)",
+   "lines": "Book XVI",
+   "section": 15,
+   "summary": [
+    "The Buddha preaches to the assembly at Vārāṇasī. He condemns the two extremes of pleasure and self-torment, proclaims the four noble truths and the eightfold path, criticises rival theories of karma, nature and God, and explains the chain of causation. The five ascetics and countless gods and humans gain insight.",
+    "Asked by Maitreya what kind of wheel he has turned, the Buddha describes the Law in negations, as beyond existence and non-existence, and gives a long list of the titles and virtues of a Buddha. He ends by promising rewards to those who hear, copy, worship and spread this teaching, which he calls the Mahāyāna."
+   ],
+   "analysis": [
+    "The core of the sermon follows the canonical first sermon on the middle way, but the latter part belongs to the world of later Mahāyāna scripture, with its lists of eightfold rewards and its praise of the book itself as an object of worship.",
+    "Set beside Aśvaghoṣa's cantos, the book shows how far a later continuator could depart from the original in doctrine as well as style; the original Buddhacarita contains no explicit Mahāyāna teaching [[johnston1936]]."
+   ],
+   "key": [
+    {
+     "ref": "BC 16.3",
+     "quote": "'These are the two extremes, O mendicants, in the self-control of the religious ascetic,",
+     "note": "The opening of the middle way, the doctrine the prince had discovered in practice in Book XII."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Conversions and the Return to Kapilavastu (supplement)",
+   "lines": "Book XVII",
+   "section": 16,
+   "summary": [
+    "In long crowded verses the Buddha gathers disciples: the Kāśyapa brothers with their thousand followers, Śāriputra and Maudgalyāyana, Ānanda and many others. He enlightens King Bimbisāra, ordains the first women, receives five hundred reformed robbers and tours Magadha and Śrāvastī.",
+    "Śuddhodana sends Chandaka and Udāyin to him, and the Buddha returns to Kapilavastu in the twelfth year, works miracles, instructs his father, ordains Rāhula and the women of the family, and visits Lumbinī. The poem ends with the author's request that scholars correct his omissions and not laugh at his childish speech."
+   ],
+   "analysis": [
+    "The closing verse is Amṛtānanda's own modest signature, and it asks the reader's indulgence in terms that contrast sharply with Aśvaghoṣa's confident art. The book reads as a summary chronicle rather than a poem.",
+    "Cowell's decision to translate the supplement preserved a document of Nepalese Buddhism, but it long gave English readers a misleading idea of the end of Aśvaghoṣa's work, whose real conclusion tells of the Buddha's death and the division of his relics [[johnston1936]] [[olivelle2008]]."
+   ],
+   "key": [
+    {
+     "ref": "BC 17.31",
+     "quote": "my childish speech is not to be laughed at, but to be listened to with pleasure.",
+     "note": "The continuator's closing apology, a conventional gesture of modesty."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Siddhārtha (the Bodhisattva, the Buddha)",
+   "side": "The Buddha's family and court",
+   "text": "The prince of the Śākyas, named Sarvārthasiddha ('he who accomplishes every aim') at birth, who becomes the Buddha. Aśvaghoṣa makes him at once a perfect kāvya hero, beautiful, royal and compared constantly to the sun, the moon, Indra and a lion, and a being who has prepared for this last life through countless ages. His inner life is shown in arguments: with Udāyin, with his father, with Chandaka, with the counsellor and priest, with Bimbisāra and with Arāḍa. He is courteous and grateful but never moved from his resolve."
+  },
+  {
+   "name": "Śuddhodana",
+   "side": "The Buddha's family and court",
+   "text": "King of the Śākyas at Kapilavastu, a model of righteous rule. Torn between pride in his son and fear of Asita's prophecy, he does everything to bind the prince to the palace. His collapse when Chandaka returns alone (Book VIII), compared to Daśaratha's grief for Rāma, is one of the poem's great scenes of lament."
+  },
+  {
+   "name": "Māyā",
+   "side": "The Buddha's family and court",
+   "text": "Śuddhodana's chief queen, whose name the poet glosses as if she were free of māyā, deceit. She bears the Bodhisattva without pain in the Lumbinī garden and dies soon after, 'unable to sustain the joy', going to heaven."
+  },
+  {
+   "name": "Gautamī (Mahāprajāpatī)",
+   "side": "The Buddha's family and court",
+   "text": "Māyā's sister and the king's queen, who raises the prince as her own. Her lament over his shorn hair and tender feet in Book VIII is a mother's grief; in the supplement she is among the first women to enter the order."
+  },
+  {
+   "name": "Yaśodharā",
+   "side": "The Buddha's family and court",
+   "text": "The prince's wife and mother of Rāhula. Her lament in Book VIII is the poem's sharpest challenge to the hero: she accuses Chandaka and Kanthaka, and asks what kind of religion abandons a lawful wife who should share her husband's merit."
+  },
+  {
+   "name": "Rāhula",
+   "side": "The Buddha's family and court",
+   "text": "The prince's infant son, whose birth fulfils the duty to continue the family and, by the pattern of all Bodhisattvas, frees his father to leave. He is the object of the most painful appeals to the prince."
+  },
+  {
+   "name": "Chandaka",
+   "side": "The Buddha's family and court",
+   "text": "The prince's groom (Cowell's Khamdaka or Khandaka), who saddles Kanthaka on the night of departure and is sent home with the prince's jewels and message. His loyalty, grief and defence of himself before Yaśodharā make him one of the most human figures in the poem."
+  },
+  {
+   "name": "Kanthaka",
+   "side": "The Buddha's family and court",
+   "text": "The prince's white horse (Cowell's Kamthaka), who carries him silently out of the city with the Yakṣas bearing up his hoofs. He licks his master's feet in farewell and neighs with grief on returning to the palace."
+  },
+  {
+   "name": "Udāyin",
+   "side": "The Buddha's family and court",
+   "text": "Son of the family priest and the prince's appointed companion, an expert in worldly policy. In Book IV he urges the women to seduce the prince and then lectures him on the uses of pleasure, citing seers and gods who yielded to love."
+  },
+  {
+   "name": "The counsellor and the family priest",
+   "side": "The Buddha's family and court",
+   "text": "The king's minister and priest, sent to bring the prince home (Book IX). The priest pleads the family's grief and the example of householder kings who won liberation; the minister argues that the next world is uncertain. Both are answered and turn back in tears."
+  },
+  {
+   "name": "Asita",
+   "side": "Teachers and rivals",
+   "text": "The aged seer who comes through the air to see the newborn prince, recognises the marks of a great man and weeps because he will die before hearing the Buddha's teaching. His prophecy shapes the father's fears for the rest of the poem."
+  },
+  {
+   "name": "Śreṇya Bimbisāra",
+   "side": "Teachers and rivals",
+   "text": "King of Magadha at Rājagṛha, a friend of the Śākya house. He visits the young mendicant on Mount Pāṇḍava and offers him half his kingdom, setting out the classical doctrine of the three aims of life. The prince's refusal fills Book XI; in the supplement Bimbisāra becomes a lay follower."
+  },
+  {
+   "name": "Arāḍa Kālāma",
+   "side": "Teachers and rivals",
+   "text": "The famous teacher of meditation whose doctrine, close to early Sāṃkhya, Aśvaghoṣa sets out at length in Book XII. He teaches the stages of contemplation that free the soul from body; the prince objects that as long as a soul remains there is no true release."
+  },
+  {
+   "name": "Udraka Rāmaputra",
+   "side": "Teachers and rivals",
+   "text": "A second teacher, whose highest attainment is the state of 'neither named nor un-named'. The prince leaves him because that state too returns to the world."
+  },
+  {
+   "name": "The five mendicants",
+   "side": "Teachers and rivals",
+   "text": "Ascetics who attend the Bodhisattva during his six years of fasting and leave him in contempt when he eats. In the supplement they are the first to hear his teaching at Vārāṇasī."
+  },
+  {
+   "name": "Nandabalā",
+   "side": "Teachers and rivals",
+   "text": "The daughter of the chief herdsman, who, prompted by the gods, offers the starving Bodhisattva milk on the bank of the Nairañjanā. Her gift marks his turn from asceticism to the middle way."
+  },
+  {
+   "name": "The gods of the Pure Abodes",
+   "side": "Gods and powers",
+   "text": "The Śuddhādhivāsa gods, beings already free of passion, who create the old man, the sick man and the corpse, deceive the charioteer, cast the palace women into sleep and open the gates. They make the prince's awakening a matter of cosmic plan as well as personal discovery."
+  },
+  {
+   "name": "Māra",
+   "side": "Gods and powers",
+   "text": "The lord of desire and death, identified by Aśvaghoṣa with Kāmadeva, the flower-arrowed god of love. With his sons and daughters and a grotesque army he tries to drive the Bodhisattva from his seat, and is defeated by unmoving calm. In the supplement he returns in disguise and sends his daughters again."
+  },
+  {
+   "name": "Kāla",
+   "side": "Gods and powers",
+   "text": "The serpent king who wakes at the sound of the Bodhisattva's steps and prophesies that he will become the Buddha that very day."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Old age, sickness and death",
+   "text": [
+    "The poem's moral world is built on the three evils the prince sees on the road. Again and again he names them together as the reason no pleasure can satisfy: if old age, disease and death did not exist, he tells Udāyin, he too would delight in the senses (4.86). What shocks him is less the facts themselves than the indifference of a world that sees them and goes on laughing.",
+    "Aśvaghoṣa turns this insight into a principle of style. Every beautiful description in the poem carries the shadow of decay, and many of the most ornate passages, such as the sleeping women of Book V, are designed to show beauty and its ruin in the same image."
+   ]
+  },
+  {
+   "title": "Renunciation and the claims of family",
+   "text": [
+    "The Buddhacarita does not pretend that leaving home is painless. Book VIII is given over to the grief of those left behind, and Yaśodharā's charge that her husband has abandoned his duty as a householder is never simply dismissed. The prince answers with an argument about separation: since death will part everyone in the end, a voluntary parting for the sake of release is better than one imposed by time (5.38; 6.43–48; 9.31–35).",
+    "Behind this lies a debate between Buddhism and Brahmanical dharma, which assigned religion to old age and required a man to pay his debts to ancestors, seers and gods. Aśvaghoṣa states that position fairly through the king, the priest and Bimbisāra, and then has his hero overturn it [[hiltebeitel2011]]."
+   ]
+  },
+  {
+   "title": "Desire and the senses",
+   "text": [
+    "Desire is the enemy in every form the poem gives it: the women of the pleasure grove, Udāyin's advice, Bimbisāra's three aims of life, and finally Māra himself, whom Aśvaghoṣa identifies with Kāma, the god of love. The long series of similes in Book XI, comparing pleasures to a torch of hay, a serpent, a bone, a dream and a hot coal, is the poem's most concentrated statement of the theme.",
+    "The answer is not hatred of the world but mastery of the mind. The prince argues that the body is only a log without thought (7.27), and the true pilgrimage place is virtue, not water."
+   ]
+  },
+  {
+   "title": "The middle way",
+   "text": [
+    "The prince rejects pleasure in the palace and pain in the hermitages. He finds the penance of the forest ascetics aimed only at heaven, a reward that itself decays, and after six years of fasting he concludes that a starved body cannot reach calm (12.98–103). The milk of Nandabalā is the turning point.",
+    "In Cowell's supplement this becomes explicit doctrine in the first sermon's 'two extremes' (16.3–7), but in Aśvaghoṣa's own cantos it is shown through narrative: each stage rejects an extreme until the hero sits, nourished and resolved, under the tree."
+   ]
+  },
+  {
+   "title": "Compassion and the healer",
+   "text": [
+    "The Buddha's goal is never only his own release. Asita foresees him carrying the world across the ocean of misery in the boat of knowledge (1.75), and the heavenly voice that rebukes Māra calls him the great physician who toils for the remedy of knowledge (13.61). His first sight of the ploughed field, with insects killed by the plough, moves him to grief as for his own kindred (5.5).",
+    "The images of doctor, guide, lamp and ferryman recur through the poem and connect it with Aśvaghoṣa's description of his own poetry as medicine."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Laments",
+   "text": "The poem gives full scope to grief: the king after the first sights, Chandaka in the forest, the women, Gautamī, Yaśodharā and the king in Book VIII. These speeches follow the conventions of epic lament, with examples from the Rāmāyaṇa and Mahābhārata, and they let the poet show the cost of renunciation before he shows its reward."
+  },
+  {
+   "title": "Debates and refusals",
+   "text": "Much of the action takes the form of argument. The prince is offered pleasure, kingship, sacrifice, ascetic heaven and a doctrine of the soul, and answers each with reasoned refusal. Aśvaghoṣa, a former Brahmin, gives the opposing views real force, which makes the hero's replies the more persuasive."
+  },
+  {
+   "title": "Divine intervention",
+   "text": "Gods create the four sights, bewilder the charioteer, put the women to sleep, open the gates, give the hunter's robe and carry the shorn hair to heaven. Chandaka uses these signs to argue that the departure was the ordering of fate (8.46–49)."
+  },
+  {
+   "title": "Mythological exempla",
+   "text": "Characters constantly argue from precedent: Udāyin lists seers who yielded to women, the priest lists householder kings who won liberation, the prince lists kings never satisfied by pleasure. The catalogues place the Buddha inside the whole Brahmanical tradition even as he leaves it."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The house on fire",
+   "text": "The prince tells his father that no one should hold back a man escaping from a burning house (5.37), and later says the golden palace seems to him on fire (9.41). The image, familiar from Buddhist preaching, turns the palace of pleasures into a place of danger."
+  },
+  {
+   "title": "The tree",
+   "text": "Trees mark each stage of the journey: the bough Māyā grasps at the birth, the rose-apple under which the prince first meditates, the tree beneath which he answers the king's envoys, and the Bodhi tree, which the heavenly voice describes as a tree of knowledge whose fruit is the Law (13.65)."
+  },
+  {
+   "title": "Ocean and further shore",
+   "text": "Existence is an ocean whose waves are old age and death, and the Buddha is the boat or ferryman who carries beings across. The prince vows not to return until he has seen 'the further shore of birth and death' (5.84)."
+  },
+  {
+   "title": "The sun and moon",
+   "text": "The prince is compared to the sun and moon almost on every page, as kāvya convention requires for a royal hero. The comparisons also carry a doctrinal point: he is the light that will dispel the darkness of ignorance."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Poetry as a vehicle for doctrine",
+   "text": [
+    "Aśvaghoṣa is unusually explicit about his purpose. The close of the Saundarananda says the poem was written for the sake of peace, not delight, and compares its poetic form to honey mixed with bitter medicine; the last canto of the Buddhacarita, preserved in Tibetan, presents the poem as an offering for the good of the world. Critics have debated whether this makes the poetry a mere sweetener, or whether Aśvaghoṣa's art is itself a means of teaching.",
+    "Linda Covill and Patrick Olivelle both stress how carefully the ornament is chosen: similes and descriptions are built so that their beauty serves the argument, and the reader is led to feel the attraction of the world before seeing through it [[covill2007]] [[olivelle2008]]."
+   ],
+   "cite": [
+    "covill2007",
+    "olivelle2008",
+    "johnston1936"
+   ]
+  },
+  {
+   "title": "The erotic set pieces and renunciation",
+   "text": [
+    "The women's seduction in Book IV and the sleeping women in Book V are among the most sensual passages in early Sanskrit literature. Some readers have found them at odds with a monk's poem; others see them as essential to its method. The erotic scene arouses the reader's desire, and the scene of sleep then turns the same bodies into images of disorder and death, so that the reader undergoes the prince's disillusionment rather than only hearing about it.",
+    "The prince's verdict on women in 5.64 is harsh, and modern readers have asked how far the poem's lesson about impermanence is carried by a misogynist convention inherited from Indian ascetic literature. The sympathetic treatment of Yaśodharā's grief in Book VIII complicates any simple answer [[olivelle2008]]."
+   ],
+   "cite": [
+    "olivelle2008",
+    "lienhard1984"
+   ]
+  },
+  {
+   "title": "Aśvaghoṣa and the earlier biographies",
+   "text": [
+    "The legend of the Buddha's life existed in many forms before Aśvaghoṣa, in the Vinaya texts of the monastic schools, in sūtras and in works such as the Mahāvastu and the Lalitavistara. The Lalitavistara in its surviving form is probably later than the Buddhacarita, but both draw on shared traditions, and comparison shows what is distinctive in Aśvaghoṣa: the gods' creation of the four sights, the long debates, the Sāṃkhya-like teaching of Arāḍa and the focus on the hero's reasoning [[thomas1927]] [[bays1983]] [[strong2001]].",
+    "Vincent Eltschinger's studies have shown how closely Aśvaghoṣa followed canonical scriptures in particular episodes, reworking sūtra and Vinaya material into kāvya while keeping its doctrinal content [[eltschinger2013]] [[eltschinger2019]]."
+   ],
+   "cite": [
+    "thomas1927",
+    "bays1983",
+    "strong2001",
+    "eltschinger2013",
+    "eltschinger2019"
+   ]
+  },
+  {
+   "title": "Aśvaghoṣa and Kālidāsa",
+   "text": [
+    "Scholars since Cowell have noticed close parallels between the two poets. The best-known is the scene of women crowding to the windows to see the prince pass (3.13–24), which has striking counterparts in Kālidāsa's Raghuvaṃśa and Kumārasaṃbhava. Most specialists think Kālidāsa knew and adapted Aśvaghoṣa, though some prefer to explain the parallels as a common stock of kāvya conventions.",
+    "The question matters for the history of Sanskrit literature: if Aśvaghoṣa already writes with mature technique, the court epic must have had a history before him that is now lost [[warder1974]] [[lienhard1984]]."
+   ],
+   "cite": [
+    "warder1974",
+    "lienhard1984",
+    "johnston1936"
+   ]
+  },
+  {
+   "title": "The incomplete text and Cowell's manuscripts",
+   "text": [
+    "Cowell's edition rested on recent Nepalese paper copies that included Amṛtānanda's supplement and many corruptions. Johnston, using an older palm-leaf manuscript from Nepal and the Tibetan translation, produced a far more reliable text in 1935–36 and criticised many of Cowell's readings, while acknowledging that Cowell had done what was possible with his materials. Johnston also showed that the Sanskrit original ends in Book XIV.",
+    "Readers of Cowell must therefore keep two things in mind: his text of Books I–XIV contains readings later corrected, and his Books XV–XVII are not by Aśvaghoṣa at all. The genuine later cantos survive in Tibetan and Chinese, and tell a different story, carrying the Buddha's life through his ministry, death and relics [[johnston1936]] [[cowell1893]] [[willemen2009]]."
+   ],
+   "cite": [
+    "johnston1936",
+    "cowell1893",
+    "cowell1894",
+    "willemen2009"
+   ]
+  },
+  {
+   "title": "Aśvaghoṣa's date and school",
+   "text": [
+    "The link with Kaniṣka places Aśvaghoṣa in the late first or early second century CE, and the style of the poems is consistent with that date, but the tradition is late. Even the dates of Kaniṣka himself have long been disputed.",
+    "His school affiliation is also debated. Later East Asian tradition counted him a Mahāyāna patriarch and credited him with the Awakening of Faith, a work now regarded as much later. His own poems show no clear Mahāyāna doctrine, and scholars have connected him variously with the Sarvāstivāda, the Bahuśrutika and early Yogācāra; Eltschinger's work on his canonical sources has given the debate a firmer textual base [[johnston1936]] [[eltschinger2013]] [[olivelle2008]]."
+   ],
+   "cite": [
+    "johnston1936",
+    "eltschinger2013",
+    "olivelle2008"
+   ]
+  },
+  {
+   "title": "Dharma: Buddhist and Brahmanical",
+   "text": [
+    "The word dharma runs through the poem in two senses: the social and religious duty of Brahmanical law, which the king, the priest and Bimbisāra defend, and the Buddha's Law of liberation. Alf Hiltebeitel reads the Buddhacarita as a deliberate response to the Brahmanical texts on dharma and to the epics, in which Aśvaghoṣa appropriates their vocabulary and examples to argue for a higher dharma [[hiltebeitel2011]].",
+    "Olivelle similarly emphasises that the opponents' speeches are faithful to the law books, so that the poem stages a real intellectual confrontation [[olivelle2008]]."
+   ],
+   "cite": [
+    "hiltebeitel2011",
+    "olivelle2008"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "BC 1.75",
+   "quote": "'He will deliver by the boat of knowledge the distressed world, borne helplessly along, from the ocean of misery which throws up sickness as its foam, tossing with the waves of old age, and rushing with the dreadful onflow of death.",
+   "who": "Asita",
+   "explanation": "The seer's prophecy introduces the great image of the ocean of existence, whose waves are the three evils the prince will soon see. The Buddha is the boat that carries beings to the further shore."
+  },
+  {
+   "ref": "BC 3.36",
+   "quote": "'Old age thus strikes down all alike, our memory, comeliness, and valour; and yet the world is not disturbed, even when it sees such a fate visibly impending.",
+   "who": "The prince",
+   "explanation": "After the first sight the prince is struck less by old age itself than by the world's indifference to it. This astonishment at human heedlessness drives the whole poem."
+  },
+  {
+   "ref": "BC 4.89",
+   "quote": "'He who himself subject to death, disease, and old age, can sport undisturbed with those whose very nature implies death, disease, and old age, such a man is on a level with birds and beasts.",
+   "who": "The prince, to Udāyin",
+   "explanation": "The reply to Udāyin's defence of pleasure turns on shared mortality: lover and beloved are both subject to the same evils, so heedless pleasure is unworthy of a thinking being."
+  },
+  {
+   "ref": "BC 5.37",
+   "quote": "it is not right to lay hold of one who would escape from a house that is on fire.",
+   "who": "The prince, to his father",
+   "explanation": "When his father cannot guarantee him against death, the prince uses the image of the burning house, which makes leaving home an escape rather than a desertion."
+  },
+  {
+   "ref": "BC 7.27",
+   "quote": "therefore to control the thought is alone befitting,--without the thought the body is like a log.",
+   "who": "The prince",
+   "explanation": "Against the penances of the forest ascetics the prince sets the Buddhist primacy of the mind. Discipline of the body without discipline of thought is pointless."
+  },
+  {
+   "ref": "BC 9.64",
+   "quote": "what wise man would go by another's belief? Mankind are like the blind directed in the darkness by the blind.",
+   "who": "The prince, to the minister",
+   "explanation": "The prince refuses to settle the question of the next life on authority. The image of the blind leading the blind expresses the Buddhist demand for truth known through one's own effort."
+  },
+  {
+   "ref": "BC 11.62",
+   "quote": "'When death stands ready like a hunter, with old age as his weapon, and diseases scattered about as his arrows,",
+   "who": "The prince, to Bimbisāra",
+   "explanation": "Answering the king's advice to wait for old age before turning to religion, the prince pictures death as a hunter who may strike at any age. The image reverses the stages of life."
+  },
+  {
+   "ref": "BC 12.69",
+   "quote": "'I have heard this thy doctrine, subtil and pre-eminently auspicious, but I hold that it cannot be final, because it does not teach us how to abandon this soul itself in the various bodies.",
+   "who": "The prince, to Arāḍa",
+   "explanation": "The prince's courteous rejection of Arāḍa states the Buddhist objection to any doctrine of a permanent self: as long as a soul remains, release is incomplete."
+  },
+  {
+   "ref": "BC 13.61",
+   "quote": "he, the great physician, ought not to be hindered, who undergoes all his labours for the sake of the remedy knowledge.",
+   "who": "The heavenly voice, to Māra",
+   "explanation": "The image of the Buddha as physician links the battle under the tree to the poem's purpose. Aśvaghoṣa used the same image for his own poetry, as medicine sweetened with honey."
+  },
+  {
+   "ref": "BC 14.65",
+   "quote": "'This is pain, this also is the origin of pain in the world of living beings; this also is the stopping of pain; this is that course which leads to its stopping.'",
+   "who": "The Bodhisattva",
+   "explanation": "The four noble truths, the culmination of the enlightenment in the last surviving Sanskrit canto, are given in their plainest form after the long chain of causation."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Aśvaghoṣa make the gods create the old man, the sick man and the corpse? What does this add to, or take away from, the prince's discovery?",
+   "hint": "Compare 3.26, 3.29 and 3.56 with Chandaka's defence in 8.46–49, and think about the Bodhisattva's 'previous destiny' in 2.56."
+  },
+  {
+   "q": "How does the poem use the women of the palace in Books IV and V? Is the sleeping-women scene a condemnation of women or of desire?",
+   "hint": "Set the images of 5.48–62 beside the prince's conclusion in 5.64–65, and then read Yaśodharā's lament in Book VIII."
+  },
+  {
+   "q": "Udāyin, the king, the priest, the minister and Bimbisāra all argue that the prince should stay. Which argument is strongest, and how does he answer it?",
+   "hint": "Consider the three aims of life (10.28–34), the uncertainty of the next world (9.45–46) and the prince's reply in 9.63–66."
+  },
+  {
+   "q": "What does Yaśodharā's lament add to the poem? Does the poem answer her?",
+   "hint": "Look at 8.61–68 and at the prince's message about separation in Book VI."
+  },
+  {
+   "q": "Why does the prince reject the forest ascetics and then Arāḍa? What is wrong, in his view, with each path?",
+   "hint": "Compare 7.20–31 and 7.48 with 12.69–80; ask what kind of goal each offers."
+  },
+  {
+   "q": "How does Aśvaghoṣa present Māra? What is the effect of identifying him with the god of love?",
+   "hint": "See 13.2–17, the grotesque army of 13.18–27 and the speech of the heavenly voice in 13.57–69."
+  },
+  {
+   "q": "Aśvaghoṣa compared his poetry to medicine mixed with honey. Find a passage in the Buddhacarita where ornament clearly serves doctrine, and one where it seems to exist for its own sake.",
+   "hint": "Try the descriptions of Kapilavastu in Book I, the window scene in Book III and the similes of Book XI."
+  },
+  {
+   "q": "How do the similes and comparisons in the poem portray the prince? What kinds of hero do they make him resemble?",
+   "hint": "Notice how often he is compared to Indra, the sun, a lion or an elephant, and how he is set against Rāma and other epic heroes."
+  },
+  {
+   "q": "Read the account of the enlightenment in Book XIV. How does Aśvaghoṣa turn a doctrine such as dependent origination into poetry?",
+   "hint": "Look at the three watches of the night (14.2–9, 14.35) and the chain of conditions in 14.37–65."
+  },
+  {
+   "q": "How do Cowell's supplementary books (end of XIV to XVII) differ from Aśvaghoṣa's cantos in style and outlook?",
+   "hint": "Compare the long epithets and lists of rewards in Book XVI and the crowded prose-like verses of Book XVII with the argument and ornament of Books III–XIII."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "bays1983",
+   "text": "Bays, Gwendolyn, trans. The Voice of the Buddha: The Beauty of Compassion (The Lalitavistara Sūtra). 2 vols. Berkeley: Dharma Publishing, 1983."
+  },
+  {
+   "id": "beal1883",
+   "text": "Beal, Samuel, trans. The Fo-sho-hing-tsan-king: A Life of Buddha by Aśvaghosha Bodhisattva. Sacred Books of the East 19. Oxford: Clarendon Press, 1883."
+  },
+  {
+   "id": "covill2007",
+   "text": "Covill, Linda, trans. Handsome Nanda by Ashva·ghosha. Clay Sanskrit Library. New York: New York University Press and JJC Foundation, 2007."
+  },
+  {
+   "id": "cowell1893",
+   "text": "Cowell, E. B., ed. The Buddha-karita of Asvaghosha. Anecdota Oxoniensia, Aryan Series 1.7. Oxford: Clarendon Press, 1893."
+  },
+  {
+   "id": "cowell1894",
+   "text": "Cowell, E. B., trans. 'The Buddha-karita of Asvaghosha.' In Buddhist Mahâyâna Texts, edited by E. B. Cowell, F. Max Müller and J. Takakusu. Sacred Books of the East 49. Oxford: Clarendon Press, 1894."
+  },
+  {
+   "id": "eltschinger2013",
+   "text": "Eltschinger, Vincent. 'Aśvaghoṣa and His Canonical Sources I: Preaching Selflessness to King Bimbisāra and the Magadhans (Buddhacarita 16.73–93).' Journal of Indian Philosophy 41 (2013): 167–94."
+  },
+  {
+   "id": "eltschinger2019",
+   "text": "Eltschinger, Vincent. 'Aśvaghoṣa and His Canonical Sources (III): The Night of Awakening (Buddhacarita 14.1–87).' Journal of Indian Philosophy 47 (2019): 195–233."
+  },
+  {
+   "id": "hiltebeitel2011",
+   "text": "Hiltebeitel, Alf. Dharma: Its Early History in Law, Religion, and Narrative. New York: Oxford University Press, 2011."
+  },
+  {
+   "id": "johnston1928",
+   "text": "Johnston, E. H., ed. The Saundarananda of Aśvaghoṣa. London: Oxford University Press, 1928."
+  },
+  {
+   "id": "johnston1936",
+   "text": "Johnston, E. H., ed. and trans. The Buddhacarita, or Acts of the Buddha. 2 parts. Lahore: University of the Panjab, 1935–36. Reprint, Delhi: Motilal Banarsidass, 1984."
+  },
+  {
+   "id": "lienhard1984",
+   "text": "Lienhard, Siegfried. A History of Classical Poetry: Sanskrit, Pali, Prakrit. A History of Indian Literature 3.1. Wiesbaden: Otto Harrassowitz, 1984."
+  },
+  {
+   "id": "olivelle2008",
+   "text": "Olivelle, Patrick, trans. Life of the Buddha by Ashva·ghosha. Clay Sanskrit Library. New York: New York University Press and JJC Foundation, 2008."
+  },
+  {
+   "id": "strong2001",
+   "text": "Strong, John S. The Buddha: A Short Biography. Oxford: Oneworld, 2001."
+  },
+  {
+   "id": "thomas1927",
+   "text": "Thomas, Edward J. The Life of Buddha as Legend and History. London: Kegan Paul, Trench, Trubner, 1927."
+  },
+  {
+   "id": "warder1974",
+   "text": "Warder, A. K. Indian Kāvya Literature. Vol. 2, Origins and Formation of the Classical Kāvya. Delhi: Motilal Banarsidass, 1974."
+  },
+  {
+   "id": "willemen2009",
+   "text": "Willemen, Charles, trans. Buddhacarita: In Praise of Buddha's Acts. BDK English Tripiṭaka. Berkeley: Numata Center for Buddhist Translation and Research, 2009."
+  }
+ ]
+}

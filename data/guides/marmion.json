@@ -1,0 +1,789 @@
+{
+ "work": "marmion",
+ "title": "Marmion",
+ "author": "Sir Walter Scott",
+ "quoteEdition": "marmion",
+ "unit": "Part",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Full title",
+   "value": "Marmion: A Tale of Flodden Field"
+  },
+  {
+   "label": "Published",
+   "value": "22 February 1808, Edinburgh, by Archibald Constable (with William Miller and John Murray in London), in a quarto edition"
+  },
+  {
+   "label": "Payment",
+   "value": "Constable paid Scott 1,000 guineas for the copyright before the poem was finished, an unprecedented sum for a poem"
+  },
+  {
+   "label": "Form",
+   "value": "Verse romance in six cantos, mostly in octosyllabic (four-stress) couplets with irregular rhymes and stanzas of varying length; songs and ballads included"
+  },
+  {
+   "label": "Frame",
+   "value": "Each canto is preceded by a verse epistle to a friend: William Stewart Rose, John Marriott, William Erskine, James Skene, George Ellis and Richard Heber"
+  },
+  {
+   "label": "Setting",
+   "value": "August–September 1513: Norham Castle, Whitby and Lindisfarne, Gifford, Crichton, Edinburgh, Tantallon Castle and the field of Flodden"
+  },
+  {
+   "label": "Historical event",
+   "value": "The battle of Flodden, 9 September 1513, at which an English army under the Earl of Surrey defeated and killed James IV of Scotland"
+  },
+  {
+   "label": "Sources",
+   "value": "Scottish chronicles, especially Robert Lindsay of Pitscottie; ballads; Border tradition; Scott's own extensive notes on history and antiquities"
+  },
+  {
+   "label": "Reception",
+   "value": "A best-seller; reviewed severely by Francis Jeffrey in the Edinburgh Review and mocked by Byron, but widely loved and quoted"
+  },
+  {
+   "label": "Famous lines",
+   "value": "'Lochinvar'; 'O, what a tangled web we weave'; 'Charge, Chester, charge!'; 'Mine own romantic town'"
+  }
+ ],
+ "context": [
+  "Walter Scott (1771–1832) was an Edinburgh lawyer, Sheriff-Depute of Selkirkshire and an editor of Border ballads before he became the most popular poet in Britain. His Minstrelsy of the Scottish Border (1802–03) collected and restored old ballads, and The Lay of the Last Minstrel (1805), a romance told by an aged minstrel, made him famous. Marmion was his second long poem, written mainly at Ashestiel in Ettrick Forest in 1806–07 [[johnson1970]] [[sutherland1995]] [[grierson1938]].",
+  "The poem was a publishing event. Archibald Constable offered Scott 1,000 guineas for it before he had seen much of it, and the first edition, a handsome quarto priced at a guinea and a half, appeared on 22 February 1808 and sold out within weeks; many editions followed. Byron mocked the bargain, and later historians of the book trade have used Marmion as an example of the huge sales and the high prices of the romantic verse romance [[stclair2004]] [[lockhart1837]].",
+  "The story is set in the weeks before the battle of Flodden in 1513, when James IV, keeping the old alliance with France, invaded England while Henry VIII was campaigning in France. The English army under Thomas Howard, Earl of Surrey, defeated the Scots on Branxton Hill, near Flodden; James and a large part of the Scottish nobility were killed. For Scots it became a symbol of national catastrophe, remembered in laments such as 'The Flowers of the Forest' [[barr2001]].",
+  "Scott combines this history with an invented plot of seduction, forgery and revenge, and frames the six cantos with six verse letters to friends. The letters speak of his life in the Borders and in Edinburgh, of his childhood, of the Napoleonic war and of the art of romance. The published poem also carried long notes on history, customs and places. The mixture of romance, history and personal epistle confused some reviewers, but it is also the source of the poem's richness [[mcintosh2018]] [[hayden1970]].",
+  "Marmion helped establish the figure of the Scottish romantic poet across Europe, and it prepared many of the methods of Scott's historical novels. After Byron's Childe Harold (1812) took the public's attention, Scott turned to prose fiction; Waverley (1814) opened the series that made him the most widely read novelist in Europe [[duncan2007]] [[millgate1984]]."
+ ],
+ "plot": [
+  "Lord Marmion, a proud English knight, is sent by Henry VIII as an envoy to James IV of Scotland in 1513. At Norham Castle he takes as his guide a mysterious Palmer, a pilgrim from the Holy Land. Meanwhile the Abbess of Whitby sails to Lindisfarne with Clara de Clare, an heiress who has fled to the convent to avoid marrying Marmion. In a vault beneath the abbey Constance de Beverley, a nun who left her convent to follow Marmion as his page, is tried for plotting to poison Clara. She confesses that Marmion destroyed Clara's betrothed, Ralph de Wilton, by forged letters accusing him of treason, gives up the proof, and is walled up alive.",
+  "On the road into Scotland Marmion is troubled by remorse; at an inn at Gifford he hears a legend of a phantom knight and rides out at night to challenge it, and is unhorsed by an opponent who looks like the dead De Wilton. Sir David Lindsay escorts him to Edinburgh, where he sees the Scottish army and the court of James IV at Holyrood. James refuses peace, and sends Marmion to wait at Tantallon Castle under the guard of the Earl of Angus, taking with him Clara and the Whitby nuns, who have been captured at sea.",
+  "The Abbess has given Constance's papers to the Palmer, who is De Wilton in disguise. At Tantallon he reveals himself to Clara, and Angus, persuaded of his innocence, knights him. Marmion quarrels with Angus, escapes, and rides to Flodden, where the English and Scottish armies meet on 9 September 1513. He is mortally wounded; Clara brings him water, and he learns that Constance is dead. He dies urging on the English. The Scots are defeated and James IV is killed. De Wilton, who has fought bravely, recovers his lands and marries Clara, and Marmion lies in an unknown grave on the field."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Epistle to William Stewart Rose",
+   "lines": "Introduction to Canto I",
+   "section": 0,
+   "summary": [
+    "Scott writes from Ashestiel, his rented house in Ettrick Forest, in November. The burn below the garden is swollen, the heather is gone from the hills, and his children ask when summer will return. He answers that the flowers will come back, but that some losses cannot be repaired, and turns from the season to the public mourning of 1805–06.",
+    "The epistle becomes an elegy for national leaders: Nelson, whose 'thunder' fell silent at Trafalgar; William Pitt, who died in January 1806; and his great opponent Charles James Fox, who died that September. The two statesmen lie side by side in Westminster Abbey, and Scott asks that their quarrel be buried with them. He then excuses himself for offering only an old romance in such times, and appeals to his friend Rose, a translator of medieval romance, and to the example of Spenser, Milton and Dryden, who all thought Arthurian story worthy of great poetry."
+   ],
+   "analysis": [
+    "The first epistle sets out the double structure of the whole poem. Each canto of the tale of 1513 is preceded by a letter in the present of 1806–08, written in the same octosyllabic couplets but in a relaxed, conversational voice. The seasonal frame (autumn turning to winter) and the elegies for war leaders place the reader in Britain during the Napoleonic wars, so that a story of national defeat is told to a nation that fears invasion [[mcintosh2018]] [[sutherland1995]].",
+    "The pairing of Pitt and Fox is political as well as moving. Scott was a Tory and Pitt's admirer, and his generous tribute to the Whig Fox shows the poem reaching for a national unity above party at a time of war [[lockhart1837]] [[johnson1970]]. The closing defence of romance as a serious form, with its list of great precedents, answers in advance the charge that the poem is a mere entertainment."
+   ],
+   "key": [
+    {
+     "ref": "Marmion Intro. I",
+     "quote": "Drop upon Fox's grave the tear,\n'Twill trickle to his rival's bier;",
+     "note": "Pitt and Fox, rivals in life, share one elegy: the tears for one reach the other. The image proposes reconciliation in national grief."
+    },
+    {
+     "ref": "Marmion Intro. I",
+     "quote": "The mightiest chiefs of British song\nScorn'd not such legends to prolong:",
+     "note": "Scott claims Spenser, Milton and Dryden as precedents for the medieval romance he is about to write."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Castle",
+   "lines": "Canto I",
+   "section": 1,
+   "summary": [
+    "The sun sets over Norham Castle on the Tweed, the English border fortress. A troop of horsemen approaches: Lord Marmion, an English knight sent by Henry VIII on an embassy to James IV of Scotland. His armour, his crest of a falcon and his motto ('Who checks at me, to death is dight') are described in detail, together with his squires, Fitz-Eustace and Blount, and his men-at-arms. The captain of Norham, Sir Hugh the Heron, receives him with feasting.",
+    "Heron teases Marmion about a page boy who used to ride in his train and is now missing; Marmion suppresses his anger. He asks for a guide into Scotland, and is offered a Palmer, a pilgrim lately returned from the Holy Land, who is staying at the castle. The Palmer is tall and gaunt, and fixes on Marmion a look that troubles him. Next morning Marmion sets out with the Palmer as guide."
+   ],
+   "analysis": [
+    "The opening canto shows Scott's gift for the set-piece: castle, banner, armour and ceremony are given with an antiquary's precision, and the many proper names (Horncliff, Twisell, Ford) anchor the romance in a real landscape. The detailed blazon of Marmion's arms belongs to the same habit of mind as the poem's historical notes [[mcintosh2018]].",
+    "The canto also plants the mysteries that drive the plot. Heron's jest about the missing page points to Constance, and the Palmer's commanding look, without explanation, tells the reader that the guide knows more than he says. Marmion is presented first as a perfect knight in appearance, with only hints of hidden guilt; the gap between surface and truth is the poem's main subject."
+   ],
+   "key": [
+    {
+     "ref": "Marmion 1.1",
+     "quote": "Day set on Norham's castled steep,\nAnd Tweed's fair river, broad and deep,",
+     "note": "The famous opening: a sunset over a border fortress, setting the poem's mood of splendour shadowed by coming darkness."
+    },
+    {
+     "ref": "Marmion 1.6",
+     "quote": "The golden legend bore aright,\nWho checks at me, to death is dight.",
+     "note": "Marmion's motto, a hawking image (to 'check' is to swerve after other prey), announces his pride and menace."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Epistle to John Marriott",
+   "lines": "Introduction to Canto II",
+   "section": 2,
+   "summary": [
+    "The second epistle, to the Reverend John Marriott, tutor in the household of the Duke of Buccleuch, describes the bare hills of Ettrick Forest where an ancient royal hunting forest once grew. Scott imagines an old tree recalling the great hunts of the past, and lists the streams and estates of the district.",
+    "He then leads the reader to St Mary's Loch, a still and lonely lake with a ruined chapel and a burial ground. There, he says, he could imagine living as a hermit if age had calmed his passions and his ties to life were broken. The mood is one of solitude and the presence of the dead, and the epistle closes by praising Marriott's own Border poems."
+   ],
+   "analysis": [
+    "The lake and its ruined chapel prepare for the convent of the next canto. Scott's meditation on retreat from the world, and on the dead lying near the living, is the reflective counterpart of the hideous enclosure of Constance in Canto II, where withdrawal from the world becomes a punishment.",
+    "The epistle shows the role of place in Scott's imagination: the landscape is read as a layered record of history, legend and loss. Critics have seen this as an antiquarian way of seeing that later shaped the openings of the Waverley novels [[duncan2007]] [[goslee1988]]."
+   ],
+   "key": [
+    {
+     "ref": "Marmion Intro. II",
+     "quote": "Nought living meets the eye or ear,\nBut well I ween the dead are near;",
+     "note": "At St Mary's Loch the silence becomes the presence of the dead: the epistle's version of the poem's sense of history."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "The Convent",
+   "lines": "Canto II",
+   "section": 3,
+   "summary": [
+    "A ship carries the Abbess of St Hilda's convent at Whitby, with her nuns, along the Northumbrian coast to Lindisfarne (Holy Island). Among them is Clara de Clare, a young novice who has fled to the convent to escape a forced marriage to Marmion. At Lindisfarne the nuns of Whitby and of St Cuthbert exchange legends of their saints. Below, in a secret vault, a council of three religious superiors sits in judgment.",
+    "Before them stand two prisoners: a monk, and a girl in a page's clothes wearing Marmion's falcon badge. She is Constance de Beverley, a nun who broke her vows to follow Marmion as his page for three years. When he abandoned her for Clara, whose lands he wanted, she plotted with the monk to poison Clara. Before her sentence she confesses: Marmion accused his rival, Ralph de Wilton, of treason with forged letters and defeated him in judicial combat. She hands over a packet of proof, prophesies the destruction of the monasteries, and is walled up alive with the monk."
+   ],
+   "analysis": [
+    "The canto is the poem's Gothic centre. The calm of the voyage and the charming saints' legends give way to an underground trial in a vault, with the niche, the stones and the mortar already prepared. Scott's note cites a walled-up female skeleton found at Coldingham to support the custom, but critics have noted how much the scene owes to the Gothic novel and to Protestant fantasies about convents [[gamer2000]] [[mcintosh2018]].",
+    "Constance is the most passionate figure in the poem. Her speech refuses to beg, condemns 'bloody Rome' and predicts Henry VIII's dissolution of the monasteries, so that the old world's cruelty is shown to be doomed. Her fate also exposes Marmion's guilt: the hero of Canto I has seduced and betrayed her, and his crime against De Wilton, a forgery, is revealed through her. The narrator later adds that Marmion himself let the Church take her (3.15), so the punishment is partly his doing."
+   ],
+   "key": [
+    {
+     "ref": "Marmion 2.20",
+     "quote": "Before them stood a guilty pair;\nBut, though an equal fate they share,\nYet one alone deserves our care.",
+     "note": "The narrator separates Constance from the base monk: she is guilty, but she is the subject of sympathy."
+    },
+    {
+     "ref": "Marmion 2.30",
+     "quote": "And come he slow, or come he fast,\nIt is but Death who comes at last.",
+     "note": "Constance faces her sentence without asking for mercy."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Epistle to William Erskine",
+   "lines": "Introduction to Canto III",
+   "section": 4,
+   "summary": [
+    "The third epistle is addressed to William Erskine, an advocate and Scott's closest literary adviser, who had urged him to choose classical or modern subjects and to observe the rules of regular composition. Scott answers him by imagining his advice: a poem on a living hero, or a revival of tragedy in the manner of the ancients.",
+    "He replies that his taste was formed in childhood at Sandy-Knowe, his grandparents' farm under Smailholm Tower, where he heard Border ballads and tales of raids from the old people round the fire. He describes the crags, the tower and the family circle, and says that a poet so raised cannot write the classical poem his friend wants."
+   ],
+   "analysis": [
+    "This is Scott's most personal epistle and his defence of his own method. The 'measure wild' of romance is justified by the experience of childhood and by the oral culture of the Borders. The passage became a key text for later accounts of Scott's development, and Lockhart's biography leans on it [[lockhart1837]] [[johnson1970]].",
+    "The argument with Erskine also stages the critical debate of the time about the regular and the irregular in poetry. Scott presents his freedom of form as a native inheritance rather than a lack of discipline [[curran1986]] [[goslee1988]]."
+   ],
+   "key": [
+    {
+     "ref": "Marmion Intro. III",
+     "quote": "Thus while I ape the measure wild\nOf tales that charm'd me yet a child,",
+     "note": "Scott ties his irregular romance metre to the ballads and tales of his childhood."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "The Hostel, or Inn",
+   "lines": "Canto III",
+   "section": 5,
+   "summary": [
+    "Marmion and his band ride into Scotland and stop at an inn at Gifford. Round the fire Fitz-Eustace sings a sad song ('Where shall the lover rest'), which contrasts the true lover's peaceful grave with the dishonoured end of the traitor. The song strikes Marmion, and the narrator describes his remorse over Constance: tired of her threats, and angry at her attempt on Clara's life, he had secretly let the Church seize her, believing she would only be confined in a convent. The Palmer stares at him as he listens.",
+    "The innkeeper then tells a local legend: Alexander III of Scotland, before his war with the Norsemen, was sent by the wizard Lord Gifford to an old earthwork at midnight, where he fought an elfin knight who appeared in the guise of his worst enemy. The Elfin Warrior is said still to wait on the hill for any knight who dares the challenge. That night Marmion wakes Fitz-Eustace, says that the tale has stirred his mind, and rides out alone; he returns later, muddy and shaken."
+   ],
+   "analysis": [
+    "The inn is a place of ballad and story, and the canto sets songs and tales within the narrative in a manner learnt from the Border ballads. Fitz-Eustace's song works as a curse in disguise: it judges Marmion while seeming to entertain him [[goslee1988]].",
+    "The narrator's comment on remorse gives the key to Marmion's character: he is not a mean villain but a proud one who suffers. The night ride introduces a supernatural possibility that the poem later explains: the phantom knight was De Wilton, the Palmer, in borrowed armour. Scott thus offers the thrill of the uncanny and then a rational account, a technique of the Gothic novels of Ann Radcliffe that he would use again [[gamer2000]]."
+   ],
+   "key": [
+    {
+     "ref": "Marmion 3.13",
+     "quote": "High minds, of native pride and force,\nMost deeply feel thy pangs, Remorse!\nFear, for their scourge, mean villains have,\nThou art the torturer of the brave!",
+     "note": "The narrator's analysis of Marmion: remorse torments the proud, while mean villains merely fear."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Epistle to James Skene",
+   "lines": "Introduction to Canto IV",
+   "section": 6,
+   "summary": [
+    "The fourth epistle is written to James Skene of Rubislaw, an artist and Scott's fellow officer in the Edinburgh volunteer cavalry. It opens with the old minstrel's question 'Where is the life which late we led?' and reflects on change: summer is gone, and the shepherd caught in winter storms on the hills knows the hardship of the season.",
+    "Scott remembers the eleven years of their friendship and their rides as volunteers, and the grief that came to Skene just after his wedding, when his father-in-law, the banker Sir William Forbes, died. He then recalls their summer walks and winter evenings together. The epistle accepts change as the condition of life and ends with friendship as its consolation."
+   ],
+   "analysis": [
+    "The theme of time and loss in the epistle prepares for the tragic turn of the tale, which now moves towards Edinburgh and the army. The shepherd in the snowstorm is a small tragedy of rural life, one of several scenes in the epistles that show Scott's sympathy with ordinary Border people.",
+    "The mention of volunteer service links the epistles with the national emergency of 1803–08. The poet who describes Scotland's army in 1513 was himself drilling against a French invasion, and critics have read the poem as a work of wartime British patriotism [[davis1998]] [[sutherland1995]]."
+   ],
+   "key": [
+    {
+     "ref": "Marmion Intro. IV",
+     "quote": "An ancient Minstrel sagely said,\n'Where is the life which late we led?'",
+     "note": "The epistle's opening question, borrowed from old song, about the passing of time."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "The Camp",
+   "lines": "Canto IV",
+   "section": 7,
+   "summary": [
+    "In the morning Marmion's men notice his strange condition and his horse covered in mud. On the road they are met by Sir David Lindsay of the Mount, Lion King-at-Arms, who escorts Marmion to Crichton Castle and keeps him there, courteously but firmly, so that he cannot see the Scottish army before the King decides to receive him. Lindsay tells how a strange figure appeared to James IV in the church at Linlithgow and warned him not to go to war.",
+    "Marmion answers with his own story: on Gifford moor he fought the elfin knight, was unhorsed, and saw in the moonlight the face of an enemy he believed long dead. Then the party rides towards Edinburgh. From Blackford Hill they see the Scottish army encamped below, with the city and its castle beyond, and the Firth of Forth. Fitz-Eustace is so moved by the view that he cries out in delight."
+   ],
+   "analysis": [
+    "The meeting with Lindsay, poet and herald, adds a historical figure who represents Scottish learning and satire. Scott's note admits that Lindsay was too young in 1513 to hold the office he gives him: a small sign of the poem's open, playful relation to history [[mcintosh2018]]. The apparition at Linlithgow comes from the sixteenth-century chronicle of Pitscottie, and gives James's war a sense of doom.",
+    "The view from Blackford Hill is one of the most celebrated passages in Scott's poetry. The narrator speaks of Edinburgh as 'Mine own romantic town', merging his own voice with the time of the action, and the English youth's outburst makes national feeling admirable even in an enemy. The passage helped make Edinburgh a romantic city for later tourists [[duncan2007]]."
+   ],
+   "key": [
+    {
+     "ref": "Marmion 4.30",
+     "quote": "Mine own romantic town!",
+     "note": "The narrator breaks into the story to claim Edinburgh as his own: past and present, story and author meet."
+    },
+    {
+     "ref": "Marmion 4.30",
+     "quote": "Cried, 'Where's the coward that would not dare\n  To fight for such a land!'",
+     "note": "Fitz-Eustace, an English squire, is moved by the Scottish landscape."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Epistle to George Ellis",
+   "lines": "Introduction to Canto V",
+   "section": 8,
+   "summary": [
+    "The fifth epistle, written from Edinburgh in December, is addressed to George Ellis, the scholar of medieval romance whose Specimens of Early English Metrical Romances (1805) Scott admired. It contrasts the medieval city enclosed in walls with the modern Edinburgh of the New Town, without walls but defended by its volunteers.",
+    "Scott then asks Ellis to teach him the true art of romance, praises his learning and his wit, and admires the patience with which he bears illness. He closes by inviting him to listen to the next part of the tale, which will take him to the court of James IV."
+   ],
+   "analysis": [
+    "Edinburgh appears here twice: as the city of 1513 and as the city of 1808, now open and elegant but still ready to defend itself. The epistle's comparison of the city with Spenser's armed heroine Britomart plays on the old and the new in a way typical of Scott's historical imagination [[duncan2007]].",
+    "Ellis was an English Tory and a co-founder of the Anti-Jacobin; Scott's warm address to him is one sign of the British, rather than narrowly Scottish, audience the poem has in mind [[davis1998]] [[johnson1970]]."
+   ],
+   "key": [
+    {
+     "ref": "Marmion Intro. V",
+     "quote": "Still as of yore, Queen of the North!\nStill canst thou send thy children forth.",
+     "note": "Modern Edinburgh, though without walls, is as ready to defend itself as the city of the past."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "The Court",
+   "lines": "Canto V",
+   "section": 9,
+   "summary": [
+    "Marmion enters the Scottish camp and city. He notes the different troops of the army, the Lowland spearmen, the Borderers and the Highlanders, and attends a feast at Holyrood Palace. James IV is described as brave, charming and impulsive, and is under the spell of Lady Heron, wife of the captain of Norham. She sings the ballad of young Lochinvar, who carries off his love from her wedding to another man. James refuses Marmion's proposals for peace, insults the old Earl of Angus, and sends Marmion to wait at Tantallon Castle under the guard of Angus himself.",
+    "The nuns of Whitby have been captured at sea by a Scottish ship and are in Edinburgh. The King orders Marmion to escort them, and Clara, back to England. The Abbess meets the Palmer secretly and gives him the papers Constance left, which prove De Wilton's innocence, to deliver to Wolsey. At midnight a ghostly herald proclaims from the Mercat Cross a summons of the doomed to the tribunal of Pluto, naming many of the Scottish nobles and Marmion. The army moves south, and Marmion takes Clara to Tantallon against her will."
+   ],
+   "analysis": [
+    "The court scenes show Scott balancing romance and history. James IV is a romantic monarch whose chivalry and gallantry lead his country to disaster, and Scott's portrait is affectionate and critical at once. 'Lochinvar', sung by a seductive woman, is a ballad of bold love that Scott wrote in imitation of the Border style; it quickly became one of his most quoted poems [[goslee1988]].",
+    "The papers and the ghostly summons move the plot towards justice and death. The summons, like the Linlithgow apparition, comes from Pitscottie's chronicle, and it reminds readers that the brilliant court is already marked for Flodden. Douglas of Angus, old, proud and opposed to the war, becomes a figure of Scottish honour against Marmion's English intrigue [[mcintosh2018]]."
+   ],
+   "key": [
+    {
+     "ref": "Marmion 5.12",
+     "quote": "So faithful in love, and so dauntless in war,\nThere never was knight like the young Lochinvar.",
+     "note": "The refrain of Lady Heron's song, a ballad of daring love sung at a court rushing to war."
+    },
+    {
+     "ref": "Marmion 5.9",
+     "quote": "And, oh! he had that merry glance,\n  That seldom lady's heart resists.",
+     "note": "James IV's charm, the quality that makes him attractive and dangerous."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Epistle to Richard Heber",
+   "lines": "Introduction to Canto VI",
+   "section": 10,
+   "summary": [
+    "The last epistle is written at Christmas from Mertoun House, the seat of Scott's kinsman Scott of Harden, to Richard Heber, the great book collector. It celebrates the old Christmas customs: the yule log, the boar's head, the carols, the mummers, and the feast at which lord and servant once sat together.",
+    "Scott regrets that much of this world is lost, but says that some of its customs remain in the Borders. He turns to legends of omens and ghosts, recalls the peasants' tale of a demon guarding treasure in the vaults of the castle of Franchemont near Spa, and defends his use of the superstitions recorded by the chronicler Pitscottie in the previous cantos."
+   ],
+   "analysis": [
+    "The Christmas epistle is the warmest of the six and a lasting source for the Victorian cult of 'merry England'. Its picture of social harmony at the old feast is an idealised feudalism, which critics have linked with Scott's Tory politics and his nostalgia for a hierarchical society [[duncan2007]] [[trumpener1997]].",
+    "The defence of Pitscottie's marvels is also a statement about history and romance: Scott keeps the supernatural tales because they belong to the beliefs of the past, not because he asks the reader to believe them [[mcintosh2018]]."
+   ],
+   "key": [
+    {
+     "ref": "Marmion Intro. VI",
+     "quote": "England was merry England, when\nOld Christmas brought his sports again.",
+     "note": "Scott's image of the old Christmas as a time of social harmony, much quoted by later writers."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "The Battle",
+   "lines": "Canto VI",
+   "section": 11,
+   "summary": [
+    "At Tantallon Clara finds armour left in the chapel and meets the Palmer, who reveals himself as Ralph de Wilton. He tells his story: defeated in the false combat and left for dead, he wandered in disguise; it was he who fought Marmion on Gifford moor. Angus, having read the papers, knights De Wilton at the altar, and Clara buckles on his spurs. Marmion takes his leave of Angus with a quarrel ('The hand of Douglas is his own'), escapes over the closing drawbridge, and learns from his squires that the Palmer was De Wilton.",
+    "The English and Scottish armies meet at Flodden on 9 September 1513. Marmion leaves Clara on a hill with Blount and Fitz-Eustace and rides into the battle. He is brought back mortally wounded. Clara brings him water from a well; he learns from her that Constance is dead, and dies crying 'Charge, Chester, charge! On, Stanley, on!' The Scots fight in a ring around their King till nightfall, and James and his nobles fall. Marmion's body is lost; De Wilton fights bravely, recovers his lands and marries Clara."
+   ],
+   "analysis": [
+    "The final canto unites the private plot and the national catastrophe. De Wilton is restored by a Scottish noble, Marmion dies in an English victory, and the deaths of James IV and the Scottish nobility make the battle a lament for Scotland. The famous lines on the Scottish spearmen, holding their 'dark impenetrable wood', give the defeated a heroism that the victors do not have [[barr2001]] [[davis1998]].",
+    "Marmion's death combines remorse and martial glory. He dies without confessing, ignoring the monk, but he dies as a soldier, and the poem's narrator lets him keep his courage while denying him a known grave. The tone is set by the saying, at 6.17, that deceit weaves a 'tangled web', and the last stanza's comic aside to 'that dull elf' who cannot imagine the happy ending returns the reader to the playful narrator of the epistles [[goslee1988]]."
+   ],
+   "key": [
+    {
+     "ref": "Marmion 6.17",
+     "quote": "O, what a tangled web we weave,\nWhen first we practise to deceive!",
+     "note": "Marmion's own reflection on his schemes, now a proverb."
+    },
+    {
+     "ref": "Marmion 6.32",
+     "quote": "Charge, Chester, charge!  On, Stanley, on!'\nWere the last words of Marmion.",
+     "note": "Marmion dies as a soldier, with a battle cry rather than a prayer."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "L'Envoy: To the Reader",
+   "lines": "L'Envoy",
+   "section": 12,
+   "summary": [
+    "A short farewell addressed to the poem's readers. The poet wishes each class of reader what suits them: wisdom and integrity to statesmen, with a compliment to Pitt; a garland to the soldier; faithful lovers to ladies; knowledge to the scholar; and rest to the old.",
+    "Finally he turns to the schoolboy who has spent his playtime reading the poem, wishes him an easy task and a holiday, and bids everyone good night."
+   ],
+   "analysis": [
+    "The envoy closes the poem in the voice of the epistles: social, humorous and modest. After the slaughter of Flodden it restores the comfortable present of the reader, as the frame does throughout the poem.",
+    "The final address to the schoolboy recognises the young readers who made Scott's romances popular, and suggests his view of the poem as entertainment as well as history [[stclair2004]]."
+   ],
+   "key": [
+    {
+     "ref": "Marmion, L'Envoy",
+     "quote": "To thee, dear school-boy, whom my lay\nHas cheated of thy hour of play,",
+     "note": "The poet's affectionate farewell to his youngest readers."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Lord Marmion",
+   "side": "English",
+   "text": "An English knight and favourite of Henry VIII, sent as envoy to James IV. He is brave, skilful and proud, but has seduced and abandoned Constance, and destroyed his rival De Wilton by forging letters in order to win Clara and her lands. Scott makes him a mixture of noble and base qualities, tormented by remorse but never repentant, who dies heroically at Flodden."
+  },
+  {
+   "name": "Ralph de Wilton (the Palmer)",
+   "side": "English",
+   "text": "Clara's betrothed, falsely accused of treason by Marmion's forgery and defeated in judicial combat. Left for dead, he returns disguised as a Palmer, a pilgrim from the Holy Land, and guides Marmion into Scotland. He is the phantom knight of Gifford moor. Knighted again by Angus, he fights at Flodden, recovers his name and marries Clara."
+  },
+  {
+   "name": "Fitz-Eustace",
+   "side": "English",
+   "text": "Marmion's young squire, loyal and generous. He sings the song at the inn, admires the view of Edinburgh, guards Clara at Flodden and carries a body to Lichfield believing it Marmion's. He represents the unspoilt ideals of chivalry."
+  },
+  {
+   "name": "Henry Blount",
+   "side": "English",
+   "text": "Marmion's second squire, plainer and rougher than Fitz-Eustace, who looks after the practical side of the journey and fights at Flodden."
+  },
+  {
+   "name": "Sir Hugh the Heron",
+   "side": "English",
+   "text": "Captain of Norham Castle, who receives Marmion at the beginning. His wife is at James IV's court."
+  },
+  {
+   "name": "Thomas Howard, Earl of Surrey",
+   "side": "English",
+   "text": "The English commander at Flodden, praised in the poem for his skill; with him are the Stanleys and other English commanders."
+  },
+  {
+   "name": "James IV",
+   "side": "Scots",
+   "text": "King of Scotland, brave, generous and charming, but rash and too easily swayed by women and by his love of chivalry. He refuses peace, ignores warnings and dies at Flodden in the ring of his spearmen."
+  },
+  {
+   "name": "Archibald Douglas, Earl of Angus",
+   "side": "Scots",
+   "text": "The old Earl of Angus, nicknamed 'Bell-the-Cat', a great noble who opposes the war. He hosts Marmion at Tantallon, knights De Wilton, and refuses to take Marmion's hand. His pride in the Douglas line is one of the poem's images of Scottish honour."
+  },
+  {
+   "name": "Sir David Lindsay of the Mount",
+   "side": "Scots",
+   "text": "The Scottish poet and herald, Lion King-at-Arms, who escorts Marmion to Edinburgh and tells of the apparition at Linlithgow. Scott admits in his notes that he has made Lindsay older than he was in 1513."
+  },
+  {
+   "name": "Constance de Beverley",
+   "side": "Women of the poem",
+   "text": "A nun who broke her vows for Marmion and followed him for three years disguised as his page. Abandoned for Clara, she plotted to poison her rival, and is walled up alive at Lindisfarne. Proud and passionate, she reveals Marmion's crimes and leaves the evidence that saves De Wilton."
+  },
+  {
+   "name": "Clara de Clare",
+   "side": "Women of the poem",
+   "text": "A young heiress, betrothed to De Wilton, who flees to the convent to escape marriage to Marmion. Gentle and steadfast, she is taken to Tantallon against her will, buckles De Wilton's spurs and tends the dying Marmion at Flodden. She marries De Wilton at the end."
+  },
+  {
+   "name": "The Abbess of Whitby",
+   "side": "Women of the poem",
+   "text": "The noble and strict head of St Hilda's convent, who sits in judgment on Constance, receives her papers, and passes them to the Palmer in Edinburgh."
+  },
+  {
+   "name": "Lady Heron",
+   "side": "Women of the poem",
+   "text": "The wife of the captain of Norham, a charming and calculating woman at James IV's court. She sings 'Lochinvar'; tradition held that the King's attachment to her delayed his army."
+  },
+  {
+   "name": "The narrator",
+   "side": "Others",
+   "text": "In the cantos he is a minstrel who comments on the action; in the epistles he is Scott himself, writing to his friends. The movement between these voices is one of the poem's distinctive features."
+  },
+  {
+   "name": "The six friends",
+   "side": "Others",
+   "text": "William Stewart Rose, translator of romance; John Marriott, a clergyman and tutor; William Erskine, advocate and literary adviser; James Skene, artist and fellow volunteer; George Ellis, editor of medieval romances; and Richard Heber, book collector. Each epistle is addressed to one of them."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Deception and its consequences",
+   "text": [
+    "The plot is built on lies: Marmion's forged letters, Constance's disguise as a page, the Palmer's disguise, and the King's deceptive court. The saying in Canto VI, 'O, what a tangled web we weave, / When first we practise to deceive!', is spoken by Marmion himself as his schemes collapse.",
+    "Truth comes out through documents and witnesses: Constance's packet, the Abbess, the Palmer. The poem moves from concealment to exposure, and Marmion's punishment is less a public judgment than the revelation of what he has been."
+   ]
+  },
+  {
+   "title": "Chivalry and its corruption",
+   "text": [
+    "The poem loves the outward forms of chivalry: armour, heraldry, tournaments, knighting. But Marmion shows that knightly splendour can hide falseness, and that a judicial combat can give victory to the guilty, as Constance bitterly says.",
+    "De Wilton's restoration and Fitz-Eustace's loyalty show the ideal surviving. The question of what makes a true knight, deeds or character, runs through the poem and was at the centre of the reviewers' objections to Marmion as a hero [[hayden1970]]."
+   ]
+  },
+  {
+   "title": "National loss and memory",
+   "text": [
+    "Flodden is the poem's destination from the first canto, and the private story moves under its shadow. The final battle is told with sympathy for the defeated Scots, whose bravery and loss are remembered in 'tradition, legend, tune, and song'.",
+    "In the epistles the same theme appears in the present: dead statesmen, ruined chapels, changing customs. Memory, in song, chronicle and landscape, is the poet's work [[duncan2007]] [[davis1998]]."
+   ]
+  },
+  {
+   "title": "Time, ruin and the antiquarian landscape",
+   "text": [
+    "The poem constantly measures the past against the present: Crichton and Lennel are ruins, Marmion's tomb was destroyed in the civil war, and the well of Sybil Grey has vanished. Places hold history, and the poet reads them as an antiquary.",
+    "This sense of layered time links the poem with Scott's notes and his later novels, in which history is felt as distance and continuity at once [[mcintosh2018]] [[millgate1984]]."
+   ]
+  },
+  {
+   "title": "Friendship and the poet's present",
+   "text": [
+    "The epistles create a world of friends, homes, seasons and conversation. They give the poem a second subject, the modern life of a Scottish gentleman and writer, and they make the romance a gift exchanged among friends.",
+    "Critics now see this frame as an important experiment in combining narrative and personal poetry, and as a way of presenting the author to his public [[goslee1988]] [[ferris1991]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Disguise",
+   "text": "Constance as a page, De Wilton as a Palmer and a phantom knight, Marmion as a noble knight with a hidden past: the poem's characters are often not what they seem, and its climaxes are moments of recognition."
+  },
+  {
+   "title": "Omens and the supernatural",
+   "text": "The phantom knight of Gifford, the apparition at Linlithgow, the midnight summons at Edinburgh's Cross and the dying Marmion's vision all point towards doom. Scott takes several from Pitscottie and leaves their truth open or explains them rationally."
+  },
+  {
+   "title": "Songs and inset tales",
+   "text": "Fitz-Eustace's song, Lady Heron's 'Lochinvar', the host's tale and Lindsay's tale break the narrative into a medley of voices, imitating the ballad culture that Scott collected [[goslee1988]]."
+  },
+  {
+   "title": "Letters and papers",
+   "text": "Forged letters ruin De Wilton; Constance's packet and the Abbess's gift restore him; King James's letters send Marmion to Tantallon. Written documents carry truth and falsehood, as in a legal case."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The falcon crest",
+   "text": "Marmion's crest and badge, a falcon with the motto 'Who checks at me, to death is dight', stands for his pride and predatory nature. Constance wears it on her page's doublet, a sign of her bond to him."
+  },
+  {
+   "title": "The Palmer's cowl",
+   "text": "The pilgrim's dress of the disguised De Wilton signifies penance, exile and the hidden presence of justice, which watches Marmion throughout the journey."
+  },
+  {
+   "title": "The ring of spearmen",
+   "text": "The Scottish spearmen, holding their 'dark impenetrable wood' around the King at Flodden, become an image of loyal national resistance in defeat."
+  },
+  {
+   "title": "Sybil Grey's well",
+   "text": "The spring by a simple cross from which Clara brings Marmion water is a place of mercy amid slaughter. The narrator says that the cross and its font are gone, though the spring still flows over the unmarked grave where Marmion really lies."
+  }
+ ],
+ "debates": [
+  {
+   "title": "History and romance",
+   "text": [
+    "Marmion is both a historical poem and a romance of invention. Scott took the war, the court, Flodden and many legends from chronicles and tradition, and supported them with long notes on castles, customs, weapons and the battle. But the central plot and its characters are his own, and he openly bends history, making Sir David Lindsay older than he was.",
+    "Some critics treat the notes as mere learning; others see in the mixture of text and notes a new way of writing about the past, in which romance and documentation answer each other. That method is often seen as the beginning of Scott's historical novel [[mcintosh2018]] [[millgate1984]] [[duncan2007]]."
+   ],
+   "cite": [
+    "mcintosh2018",
+    "millgate1984",
+    "duncan2007"
+   ]
+  },
+  {
+   "title": "Marmion as villain-hero",
+   "text": [
+    "Marmion is a hero who forges documents and betrays a woman. Jeffrey complained that forgery is a low, commercial crime that does not belong to a knight, and Byron mocked him in English Bards and Scotch Reviewers (1809) as 'Not quite a felon, yet but half a knight' [[jeffrey1808]] [[byron1809]].",
+    "Later readers have connected Marmion with the gloomy, guilty heroes that Byron himself soon made famous, and argued that Scott's mixed hero is a deliberate study of pride, remorse and courage. The question is whether the poem condemns Marmion or admires him in spite of itself [[oliver2005]] [[hayden1970]]."
+   ],
+   "cite": [
+    "jeffrey1808",
+    "byron1809",
+    "oliver2005",
+    "hayden1970"
+   ]
+  },
+  {
+   "title": "Jeffrey's review and the epistles",
+   "text": [
+    "Francis Jeffrey's long review in the Edinburgh Review (April 1808) praised the battle and some descriptions, but criticised the plot, the hero, the antiquarian detail and the epistles, which he found to have no connection with the story. He also complained that the poem did little for Scottish national feeling. The review offended Scott and contributed to his support of the rival Quarterly Review in 1809 [[jeffrey1808]] [[lockhart1837]].",
+    "Modern criticism has generally defended the epistles as an essential part of the design, linking the seasons of the poet's year with the movement of the tale and the personal with the historical. They are now often regarded as among Scott's finest verse [[goslee1988]] [[curran1986]]."
+   ],
+   "cite": [
+    "jeffrey1808",
+    "lockhart1837",
+    "goslee1988",
+    "curran1986"
+   ]
+  },
+  {
+   "title": "Scottish national identity and the Union",
+   "text": [
+    "Marmion tells of Scotland's greatest defeat by England, a century before the union of crowns and three before the parliamentary Union of 1707, for a British audience at war with France. Some critics see it as a poem of reconciliation, in which Scottish heroism is honoured inside a British story; English characters admire Scotland, and Scott's epistles celebrate British unity.",
+    "Others stress the elegy for lost independence and the importance of Scottish tradition in the work. The poem has been read as a key text in the cultural negotiation between Scottish identity and Britishness after the Union [[davis1998]] [[trumpener1997]] [[duncan2007]]."
+   ],
+   "cite": [
+    "davis1998",
+    "trumpener1997",
+    "duncan2007"
+   ]
+  },
+  {
+   "title": "Gender: Constance and Clara",
+   "text": [
+    "The poem's two women are opposites: Constance, passionate, transgressive and punished, and Clara, gentle, patient and rewarded. Constance's disguise as a page and her fierce speech make her one of the most vivid figures in the poem, while Clara's part is largely to suffer and to nurse.",
+    "Feminist critics have read the contrast as typical of Scott's romance, in which female desire is punished and female virtue is made passive, though Constance's voice resists that design. The ministering-angel passage of Canto VI has become a much-quoted (and much-criticised) formula for domestic femininity [[ferris1991]] [[robertson2012]]."
+   ],
+   "cite": [
+    "ferris1991",
+    "robertson2012"
+   ]
+  },
+  {
+   "title": "From verse to the novel",
+   "text": [
+    "Marmion made Scott rich and famous as a poet, but within a few years Byron's poems had overtaken his, and Scott turned to prose fiction with Waverley (1814). Critics have asked whether the verse romances were a preparation for the novels, or a separate achievement that the novels' fame obscured.",
+    "Recent work on Scott's poetry, including the new critical edition, argues for the poems' own interest: their form, their frames and their popularity in their time. Their methods of historical scene-setting, and their combination of personal voice and public history, nevertheless prepared the novels [[millgate1984]] [[mcintosh2018]] [[goslee1988]]."
+   ],
+   "cite": [
+    "millgate1984",
+    "mcintosh2018",
+    "goslee1988"
+   ]
+  },
+  {
+   "title": "Popularity and the book market",
+   "text": [
+    "The 1,000 guineas paid before publication made Marmion a symbol of the commercial power of romantic poetry. Byron's satire made the price part of its legend, suggesting that Scott wrote for money.",
+    "Studies of the book trade have shown how high prices, quarto editions and later cheaper reprints made the poem one of the most widely read works of the period, and how its reception shaped the market for later verse romances [[stclair2004]] [[sutherland1995]]."
+   ],
+   "cite": [
+    "stclair2004",
+    "sutherland1995"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Marmion 1.1",
+   "quote": "Day set on Norham's castled steep,\nAnd Tweed's fair river, broad and deep,",
+   "who": "The narrator",
+   "explanation": "The poem opens on the English border fortress at sunset. The image of fading light over a castle sets the elegiac tone of a story that will end in national defeat, and shows Scott's characteristic attention to real places."
+  },
+  {
+   "ref": "Marmion 2.20",
+   "quote": "Before them stood a guilty pair;\nBut, though an equal fate they share,\nYet one alone deserves our care.",
+   "who": "The narrator",
+   "explanation": "Constance and the monk are tried together, but the narrator turns all our sympathy to Constance, a sinner whose passion and courage make her heroic."
+  },
+  {
+   "ref": "Marmion 3.13",
+   "quote": "High minds, of native pride and force,\nMost deeply feel thy pangs, Remorse!",
+   "who": "The narrator",
+   "explanation": "An analysis of Marmion's guilt. He is not a mean villain who only fears punishment, but a proud man who suffers from conscience, which makes him a more interesting and more ambiguous hero."
+  },
+  {
+   "ref": "Marmion 4.30",
+   "quote": "Mine own romantic town!",
+   "who": "The narrator",
+   "explanation": "From Blackford Hill the narrator sees Edinburgh and speaks in his own person. The line joins the poet's present with the historical scene and has become a famous description of the city."
+  },
+  {
+   "ref": "Marmion 4.30",
+   "quote": "Cried, 'Where's the coward that would not dare\n  To fight for such a land!'",
+   "who": "Fitz-Eustace",
+   "explanation": "An English squire is so moved by the Scottish landscape that he expresses its patriotism himself. The paradox of an enemy praising Scotland suits the poem's aim of reconciling the two nations."
+  },
+  {
+   "ref": "Marmion 5.12",
+   "quote": "So faithful in love, and so dauntless in war,\nThere never was knight like the young Lochinvar.",
+   "who": "Lady Heron",
+   "explanation": "The refrain of the ballad sung at James's court. Its hero carries off his love in daring style, a romantic ideal that contrasts with Marmion's calculating pursuit of Clara."
+  },
+  {
+   "ref": "Marmion 6.14",
+   "quote": "To beard the lion in his den,\n  The Douglas in his hall?",
+   "who": "Archibald Douglas, Earl of Angus",
+   "explanation": "The old earl's furious reply when Marmion insults him at Tantallon. The phrase 'to beard the lion in his den' became proverbial."
+  },
+  {
+   "ref": "Marmion 6.17",
+   "quote": "O, what a tangled web we weave,\nWhen first we practise to deceive!",
+   "who": "Marmion",
+   "explanation": "Marmion realises that the Palmer was De Wilton and that his schemes are unravelling. The couplet sums up the moral of the plot and has become one of the most widely quoted proverbs in English."
+  },
+  {
+   "ref": "Marmion 6.30",
+   "quote": "O, Woman! in our hours of ease,\nUncertain, coy, and hard to please,",
+   "who": "The narrator",
+   "explanation": "The opening of the address to woman as a 'ministering angel', spoken as Clara runs for water for the dying Marmion. It shows the poem's idealisation of female care."
+  },
+  {
+   "ref": "Marmion 6.34",
+   "quote": "The stubborn spear-men still made good\nTheir dark impenetrable wood,",
+   "who": "The narrator",
+   "explanation": "The Scottish spearmen hold their ring round the King till darkness. The heroism of the defeated becomes the poem's final image of Scotland."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Scott frame each canto with a verse epistle to a friend?",
+   "hint": "Consider the seasons, the Napoleonic background, the poet's childhood and his defence of romance, and Jeffrey's objection that the epistles are unrelated to the tale."
+  },
+  {
+   "q": "Is Marmion a villain, a hero or both?",
+   "hint": "Look at the description of his armour, his remorse at the inn, the forged letters, his quarrel with Angus and his death; recall Byron's 'half a knight'."
+  },
+  {
+   "q": "What is the function of Constance's trial in Canto II?",
+   "hint": "Think about the Gothic setting, what her confession reveals, her prophecy about Rome, and the contrast with Clara."
+  },
+  {
+   "q": "How does the poem treat the supernatural?",
+   "hint": "Compare the phantom knight of Gifford, the Linlithgow apparition and the summons at the Cross; how many are explained, and how does the Heber epistle defend them?"
+  },
+  {
+   "q": "What does the view of Edinburgh in Canto IV show about the narrator?",
+   "hint": "Notice the change of voice in 'Mine own romantic town' and Fitz-Eustace's response."
+  },
+  {
+   "q": "How is James IV presented?",
+   "hint": "Consider his charm, his love of chivalry, Lady Heron and his refusal of the warnings and of peace."
+  },
+  {
+   "q": "What does 'Lochinvar' contribute to Canto V?",
+   "hint": "Who sings it, to whom, and how does its picture of love compare with Marmion's pursuit of Clara?"
+  },
+  {
+   "q": "How does the poem represent the battle of Flodden from both English and Scottish points of view?",
+   "hint": "Look at Marmion's death, the Scottish spearmen and the lament 'Of Flodden's fatal field'."
+  },
+  {
+   "q": "Compare Constance and Clara.",
+   "hint": "Think about disguise, desire, voice and punishment, and about the 'ministering angel' passage."
+  },
+  {
+   "q": "In what ways does Marmion anticipate Scott's historical novels?",
+   "hint": "Consider the notes, the mixture of invented and historical characters, the attention to place, and the narrator who stands between past and present."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "barr2001",
+   "text": "Barr, Niall. Flodden 1513: The Scottish Invasion of Henry VIII's England. Stroud: Tempus, 2001."
+  },
+  {
+   "id": "byron1809",
+   "text": "Byron, George Gordon, Lord. English Bards and Scotch Reviewers: A Satire. London: James Cawthorn, 1809."
+  },
+  {
+   "id": "curran1986",
+   "text": "Curran, Stuart. Poetic Form and British Romanticism. New York: Oxford University Press, 1986."
+  },
+  {
+   "id": "davis1998",
+   "text": "Davis, Leith. Acts of Union: Scotland and the Literary Negotiation of the British Nation, 1707–1830. Stanford: Stanford University Press, 1998."
+  },
+  {
+   "id": "duncan2007",
+   "text": "Duncan, Ian. Scott's Shadow: The Novel in Romantic Edinburgh. Princeton: Princeton University Press, 2007."
+  },
+  {
+   "id": "ferris1991",
+   "text": "Ferris, Ina. The Achievement of Literary Authority: Gender, History, and the Waverley Novels. Ithaca: Cornell University Press, 1991."
+  },
+  {
+   "id": "gamer2000",
+   "text": "Gamer, Michael. Romanticism and the Gothic: Genre, Reception, and Canon Formation. Cambridge: Cambridge University Press, 2000."
+  },
+  {
+   "id": "goslee1988",
+   "text": "Goslee, Nancy Moore. Scott the Rhymer. Lexington: University Press of Kentucky, 1988."
+  },
+  {
+   "id": "grierson1938",
+   "text": "Grierson, H. J. C. Sir Walter Scott, Bart.: A New Life Supplementary to, and Corrective of, Lockhart's Biography. London: Constable, 1938."
+  },
+  {
+   "id": "hayden1970",
+   "text": "Hayden, John O., ed. Scott: The Critical Heritage. London: Routledge & Kegan Paul, 1970."
+  },
+  {
+   "id": "jeffrey1808",
+   "text": "Jeffrey, Francis. Review of Marmion: A Tale of Flodden Field, by Walter Scott. Edinburgh Review 12, no. 23 (April 1808): 1–35."
+  },
+  {
+   "id": "johnson1970",
+   "text": "Johnson, Edgar. Sir Walter Scott: The Great Unknown. 2 vols. New York: Macmillan; London: Hamish Hamilton, 1970."
+  },
+  {
+   "id": "lockhart1837",
+   "text": "Lockhart, John Gibson. Memoirs of the Life of Sir Walter Scott, Bart. 7 vols. Edinburgh: Robert Cadell; London: John Murray and Whittaker, 1837–38."
+  },
+  {
+   "id": "mcintosh2018",
+   "text": "McIntosh, Ainsley, ed. Marmion: A Tale of Flodden Field, by Walter Scott. The Edinburgh Edition of Walter Scott's Poetry. Edinburgh: Edinburgh University Press, 2018."
+  },
+  {
+   "id": "millgate1984",
+   "text": "Millgate, Jane. Walter Scott: The Making of the Novelist. Toronto: University of Toronto Press, 1984."
+  },
+  {
+   "id": "oliver2005",
+   "text": "Oliver, Susan. Scott, Byron and the Poetics of Cultural Encounter. Basingstoke: Palgrave Macmillan, 2005."
+  },
+  {
+   "id": "robertson2012",
+   "text": "Robertson, Fiona, ed. The Edinburgh Companion to Sir Walter Scott. Edinburgh: Edinburgh University Press, 2012."
+  },
+  {
+   "id": "stclair2004",
+   "text": "St Clair, William. The Reading Nation in the Romantic Period. Cambridge: Cambridge University Press, 2004."
+  },
+  {
+   "id": "sutherland1995",
+   "text": "Sutherland, John. The Life of Walter Scott: A Critical Biography. Oxford: Blackwell, 1995."
+  },
+  {
+   "id": "trumpener1997",
+   "text": "Trumpener, Katie. Bardic Nationalism: The Romantic Novel and the British Empire. Princeton: Princeton University Press, 1997."
+  }
+ ]
+}

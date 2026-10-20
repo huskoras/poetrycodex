@@ -417,7 +417,7 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
   <footer class="site-foot">
     <div class="foot-bar">
       <span>© 2026 Poetry Codex. All texts are in the public domain.</span>
-      <span class="foot-privacy"><a href="/">Open the full archive</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a></span>
+      <span class="foot-privacy"><a href="/">Open the full archive</a> · <a href="/blog/">Blog</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a></span>
     </div>
   </footer>
 </body>
@@ -819,6 +819,126 @@ def guide_page(g, group):
     return shell(title, description, canonical, body, ld=ld)
 
 
+# ---------- the blog: /blog/ and /blog/<slug>/ ----------
+# Articles by the editors, kept as Markdown in data/blog/<slug>.md with a small front-matter
+# block (title, description, date, author, slug). Only the Markdown the editors use is read:
+# headings (##, ###), paragraphs, block quotes (>), lists (- or 1.), **bold**, *italic* and
+# [links](url).
+def md_inline(t):
+    import re as _re
+    t = esc(t)
+    t = _re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", lambda m: f'<a href="{m.group(2)}">{m.group(1)}</a>', t)
+    t = _re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
+    t = _re.sub(r"(?<![*\w])\*([^*\n]+)\*(?!\w)", r"<em>\1</em>", t)
+    return t
+
+
+def md_html(src):
+    out, para, lst, quote = [], [], None, []
+
+    def flush():
+        nonlocal para, lst, quote
+        if para:
+            out.append("<p>" + md_inline(" ".join(para)) + "</p>")
+            para = []
+        if lst:
+            tag, items = lst
+            out.append(f"<{tag}>" + "".join(f"<li>{md_inline(i)}</li>" for i in items) + f"</{tag}>")
+            lst = None
+        if quote:
+            out.append('<blockquote class="blog-quote">' + "<br>".join(md_inline(q) for q in quote) + "</blockquote>")
+            quote = []
+    import re as _re
+    for line in src.splitlines():
+        st = line.strip()
+        if not st:
+            flush()
+            continue
+        m = _re.match(r"(#{2,4})\s+(.*)", st)
+        if m:
+            flush()
+            lvl = len(m.group(1))
+            out.append(f"<h{lvl}>{md_inline(m.group(2))}</h{lvl}>")
+            continue
+        if st.startswith(">"):
+            if para or lst:
+                flush()
+            quote.append(st.lstrip("> ").rstrip())
+            continue
+        m = _re.match(r"(?:[-*]|\d+\.)\s+(.*)", st)
+        if m:
+            if para or quote:
+                flush()
+            tag = "ol" if st[0].isdigit() else "ul"
+            if not lst:
+                lst = (tag, [])
+            lst[1].append(m.group(1))
+            continue
+        if lst or quote:
+            flush()
+        para.append(st)
+    flush()
+    return "\n".join(out)
+
+
+def blog_posts():
+    import re as _re
+    bdir = os.path.join(ROOT, "data", "blog")
+    posts = []
+    for f in sorted(os.listdir(bdir)) if os.path.isdir(bdir) else []:
+        if not f.endswith(".md"):
+            continue
+        raw = io.open(os.path.join(bdir, f), encoding="utf-8").read().replace("\r\n", "\n")
+        meta, body = {}, raw
+        m = _re.match(r"---\n(.*?)\n---\n", raw, _re.S)
+        if m:
+            for line in m.group(1).splitlines():
+                if ":" in line:
+                    k, v = line.split(":", 1)
+                    meta[k.strip()] = v.strip().strip('"')
+            body = raw[m.end():]
+        meta.setdefault("slug", f[:-3])
+        meta["body"] = body
+        posts.append(meta)
+    posts.sort(key=lambda x: x.get("date", ""), reverse=True)
+    return posts
+
+
+def blog_page(post):
+    canonical = f"{SITE}/blog/{post['slug']}/"
+    body = f"""    <article class="detail blog-post">
+      <p class="detail-subject"><a href="/blog/">Notes from the Codex</a></p>
+      <h1 class="detail-title">{esc(post.get("title", ""))}</h1>
+      <p class="detail-author">{esc(post.get("author", "The Poetry Codex editors"))} · {esc(post.get("date", ""))}</p>
+      <div class="blog-body">
+{md_html(post["body"])}
+      </div>
+      <p class="read-in-archive"><a href="/blog/">More notes from the Codex →</a></p>
+    </article>"""
+    ld = ld_json({"@type": "BlogPosting", "headline": post.get("title", ""), "description": post.get("description", ""),
+                  "datePublished": post.get("date", ""), "url": canonical, "inLanguage": "en",
+                  "author": {"@type": "Organization", "name": "Poetry Codex"},
+                  "publisher": {"@type": "Organization", "name": "Poetry Codex", "url": SITE + "/"}},
+                 breadcrumbs(("Notes from the Codex", f"{SITE}/blog/"), (post.get("title", ""), None)))
+    return shell(post.get("title", ""), post.get("description", ""), canonical, body, ld=ld)
+
+
+def blog_index(posts):
+    rows = "\n".join(
+        f'<li><a href="/blog/{esc(p["slug"])}/"><span class="pl-title">{esc(p.get("title", ""))}</span>'
+        f'<span class="pl-sub">{esc(p.get("date", ""))} · {esc(p.get("description", ""))}</span></a></li>' for p in posts)
+    body = f"""    <article class="detail">
+      <p class="detail-subject">The Poetry Codex blog</p>
+      <h1 class="detail-title">Notes from the Codex</h1>
+      <p class="detail-author">Articles by the editors on reading the world's poetry</p>
+      <ul class="poem-links">
+{rows}
+      </ul>
+    </article>"""
+    return shell("Notes from the Codex", "Articles by the Poetry Codex editors on reading the world's poetry: translations, epics, poets and how to study them.",
+                 f"{SITE}/blog/", body, og_type="website")
+
+
 def not_found_page():
     """404.html: GitHub Pages serves it for any address that does not exist."""
     body = r"""    <article class="detail not-found">
@@ -880,7 +1000,7 @@ def main():
     idx = json.load(io.open(os.path.join(ROOT, "data", "index.json"), encoding="utf-8"))
 
     # Rebuild from scratch so a removed poem's page does not linger.
-    for d in ("poem", "poet", "work", "guide"):
+    for d in ("poem", "poet", "work", "guide", "blog"):
         shutil.rmtree(os.path.join(ROOT, d), ignore_errors=True)
 
     works_by_poet = {}
@@ -951,6 +1071,14 @@ def main():
             urls.append(f"{SITE}/guide/{group}/")
             guide_count += 1
     print(f"study guides: {guide_count} pages")
+    posts = blog_posts()
+    if posts:
+        write(os.path.join(ROOT, "blog", "index.html"), blog_index(posts))
+        urls.append(f"{SITE}/blog/")
+        for post in posts:
+            write(os.path.join(ROOT, "blog", post["slug"], "index.html"), blog_page(post))
+            urls.append(f"{SITE}/blog/{post['slug']}/")
+    print(f"blog: {len(posts)} posts")
 
     # Split into small child sitemaps behind one index. Google fetches each child
     # separately, so no single file is large, and a failure in one does not hide the rest.
