@@ -1,0 +1,816 @@
+{
+ "work": "hudibras",
+ "title": "Hudibras",
+ "author": "Samuel Butler",
+ "quoteEdition": "hudibras",
+ "unit": "Part",
+ "updated": "2026-10-19",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Samuel Butler (baptised 1613 at Strensham, Worcestershire; died 1680 in London), a clerk, secretary and steward in the service of several great households"
+  },
+  {
+   "label": "Published",
+   "value": "Part I dated 1663 (on sale by late December 1662); Part II dated 1664; Part III dated 1678. The 1674 edition added notes and the Heroical Epistle to Sidrophel; Part III brought the two epistles between the Knight and his Lady"
+  },
+  {
+   "label": "Form",
+   "value": "Mock-heroic narrative in three parts of three cantos each, every canto headed by a short verse Argument, with three verse epistles"
+  },
+  {
+   "label": "Metre",
+   "value": "Iambic tetrameter (octosyllabic) couplets, full of double and triple comic rhymes: the measure later called 'hudibrastic'"
+  },
+  {
+   "label": "Setting",
+   "value": "A market town and its countryside in the west of England during the Civil Wars of the 1640s; Part III, Canto II moves to London in the collapse of 1659–60"
+  },
+  {
+   "label": "Model",
+   "value": "Cervantes' Don Quixote, available in Thomas Shelton's English translation (1612, 1620): a deluded knight, a squire, a lady and a series of humiliating adventures"
+  },
+  {
+   "label": "Hero",
+   "value": "Sir Hudibras, a Presbyterian justice of the peace and colonel who rides out to suppress popular sports; his name comes from Sir Huddibras in Spenser's Faerie Queene (II.ii)"
+  },
+  {
+   "label": "Targets",
+   "value": "Presbyterians and Independents, the 'saints' of the Revolution; also scholastic logic, astrology, occult learning, lawyers and every kind of intellectual pretension"
+  },
+  {
+   "label": "Reception",
+   "value": "An immediate Restoration success, admired by Charles II and much quoted at court; Pepys first disliked it and then bought it again because everyone praised it"
+  },
+  {
+   "label": "Quote edition",
+   "value": "The London edition of 1805 (Project Gutenberg #4937); line numbers here are counted in that text, without the Arguments"
+  }
+ ],
+ "context": [
+  "Samuel Butler was born into a farming family at Strensham in Worcestershire and baptised there on 14 February 1613. He never went to university and spent most of his life in the service of others: in the household of the Countess of Kent at Wrest in Bedfordshire, where John Aubrey says he came to know the lawyer and scholar John Selden; according to tradition in the service of the Parliamentarian Sir Samuel Luke; and, after the Restoration, as secretary to the Earl of Carbery, Lord President of Wales, who made him steward of Ludlow Castle in 1661. His surviving prose 'Characters' and notebooks show a sceptical, widely read mind, hostile to enthusiasm in religion and to pretension in learning [[aubrey2015]] [[butler1970]] [[butler1979]].",
+  "Hudibras was published in three instalments: Part I (dated 1663) at the end of 1662, Part II (dated 1664) a year later, and Part III (dated 1678) at the end of 1677. Much of the first two parts may have been drafted during the Interregnum, when it could not have been printed, but the poem appeared only after Charles II's return, and it reads the Civil War from the safe distance of the Restoration. Its subtitle, 'Written in the Time of the Late Wars', keeps that double perspective [[wilders1967]] [[debeer1928]]. The first part was an immediate success. Pepys bought it in December 1662, found it silly and sold it at a loss, then bought it again two months later because it was the book everyone praised. Contemporary report has Charles II quoting it constantly, and in the 1670s Butler received a royal grant; yet he died in modest circumstances in 1680, and when a monument was raised to him in Westminster Abbey in 1721 it provoked the gibe that the poet had asked for bread and been given a stone [[pepys1970]] [[johnson2006]].",
+  "The plan comes from Cervantes. Don Quixote had been in English since Thomas Shelton's translation (Part I, 1612; both parts, 1620), and Butler borrows its main machinery: a knight who sets out to reform the world, a squire who argues with him, a lady to be won, and a string of beatings, imprisonments and enchantments. But where Don Quixote is mad from reading romances, Hudibras is driven by the ideology of the Puritan Revolution. His knight-errantry is the reforming zeal of the godly, and his enemies are bear-baiters, fiddlers, a shaming ritual and an astrologer [[paulson1998]] [[richards1937]].",
+  "The religious politics are exact. Hudibras is a Presbyterian, loyal to the Solemn League and Covenant and to government of the church by synods and classes; his squire Ralpho is an Independent, a tailor who trusts in 'gifts' and the 'new light' of private inspiration and despises human learning. Their endless disputes reproduce the quarrel that divided the Parliamentarian side in the 1640s, when Presbyterians and Independents fought over church government, toleration and control of the army. Butler presents the conflict as a family feud in which both parties are equally absurd [[hill1972]] [[wasserman1976]].",
+  "The poem's verse is as famous as its matter. Butler wrote in rapid four-beat couplets, freely rhyming polysyllables, Latin tags and broken words ('ecclesiastick' with 'a stick', 'philosopher' with 'Ross over'), so that the rhyme itself becomes a joke at the expense of its subject. The manner was widely imitated, and 'hudibrastic' entered English as the name for this kind of burlesque verse, from Ned Ward's Hudibras Redivivus to John Trumbull's American M'Fingal [[bond1932]] [[jack1952]]."
+ ],
+ "plot": [
+  "Part I introduces Sir Hudibras, a Presbyterian knight and justice of the peace, with his learning, religion, beard, breeches, weapons and starved horse, and his squire Ralpho, a tailor and Independent visionary. Riding out to reform abuses, they meet a crowd gathered for a bear-baiting in a western market town. Hudibras harangues the rabble, defeats the butcher Talgol, scatters the crowd and locks the one-legged fiddler Crowdero in the stocks. The rabble rallies under the Amazonian Trulla, who overthrows the knight; Crowdero is freed, and Hudibras and Ralpho are put in the stocks themselves, where they quarrel over whether synods are worse than bear-gardens.",
+  "Part II turns from war to love. A rich widow, whose fortune Hudibras courts, visits him in the stocks and agrees to release him on condition that he undergo a whipping to prove his love. Once free, he argues that a saint may break an oath and tries to make Ralpho take the whipping for him; the dispute is interrupted by a skimmington, a noisy procession that mocks a husband beaten by his wife, and the knight and squire are pelted with rotten eggs. Hudibras then consults the astrologer Sidrophel and his assistant Whachum about his chances with the widow, decides they are cheats, beats them, believes he has killed Sidrophel and rides off, leaving Ralpho to take the blame. A mock-heroic epistle to Sidrophel follows.",
+  "Part III completes the humiliation. Ralpho reaches the widow first and tells her the truth, so that when Hudibras swears he has whipped himself and fought off devils she exposes his lies; her servants, disguised as furies, beat him in the dark, and a mysterious 'spirit' makes him confess the hypocrisies of the saints before carrying him away. A long middle canto leaves the story to show the Presbyterian and Independent leaders quarrelling in the last days of the Commonwealth until the London crowd burns rumps in the streets and they flee.",
+  "In the final canto Hudibras discovers that his rescuer was Ralpho, flees in terror of pursuit, and consults a corrupt lawyer about suing the widow for her fortune. On the lawyer's advice he writes her a letter. The poem ends with that letter, in which the deposed knight complains of his banishment from her favour, and with the Lady's answer, a scornful defence of women's power over men. The marriage never takes place and the story is left without a conclusion."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Part I, Canto I: The Knight and His Squire",
+   "lines": "1–928",
+   "section": 0,
+   "summary": [
+    "The poem opens on the outbreak of the Civil War, when men fought 'for Dame Religion' without knowing why, and the pulpit became a war drum. Sir Hudibras leaves home to go 'a colonelling'. The narrator describes him at length: a justice of the peace and soldier, learned in Greek and Latin, logic, rhetoric, mathematics and metaphysics, able to settle any absurd question of the schools, and a Presbyterian of the most militant kind.",
+    "The portrait moves on to his beard, his breeches stuffed with provisions, his rusty sword and dagger and his decrepit horse, and then to his squire Ralph, called Ralpho when the metre allows. Ralpho is a tailor whose knowledge comes not from study but from 'gifts' and the 'new light' of inspiration, and who is learned in occult philosophy, astrology and the Rosicrucian mysteries.",
+    "After an invocation of the muse who inspired the worst Puritan poets, the two arrive at a town where a bear-baiting is about to begin. Hudibras declares the sport heathen and antichristian and resolves to suppress it; Ralpho agrees, but argues that bear-baiting is no less lawful than the synods of the Presbyterians, and the two begin the first of their disputes. The canto ends as they ride into action, the adventure, as the Argument says, broken off 'in the middle'."
+   ],
+   "analysis": [
+    "The opening lines set the poem's tone: a war of religion reduced to a brawl, its causes unknown to those who fight it. Butler's portrait of Hudibras inverts the epic catalogue of a hero's virtues. Every accomplishment is turned into a liability: his learning is a store of useless distinctions, his logic can prove anything, and he cannot open his mouth without a trope flying out. The comic engine of the poem is already visible, a mind that applies all the apparatus of scholastic learning to the trivial and the base [[wasserman1976]] [[snider1994]].",
+    "The famous passage on Hudibras's religion is the clearest statement of the poem's satire. The 'errant saints' build their faith 'upon / The holy text of pike and gun' and prove their doctrine by force; their reformation is always 'doing, never done'; they condemn the sins they do not wish to commit. Butler's target is less a particular doctrine than a habit of mind, the perverse need to find something always amiss [[hill1972]].",
+    "Ralpho is a different kind of fool. Where the knight is a pedant, the squire is an enthusiast whose 'new light' needs no study at all. The opposition maps on to the division of the godly into Presbyterians, with their learned ministry and synods, and Independents and sectaries, with their trust in private inspiration. The first dispute about bear-baiting and synods shows how the pair will spend the poem: allies in reforming others, enemies in every argument with each other. A missing name in Hudibras's boast, rhymed with 'Mamaluke', was early read as Sir Samuel Luke [[wilders1967]]."
+   ],
+   "key": [
+    {
+     "ref": "Hud. I.i.1–2",
+     "quote": "When civil dudgeon first grew high,\nAnd men fell out they knew not why?",
+     "note": "The poem's first couplet reduces the Civil War to a quarrel ('dudgeon') without reasons; the question mark is in the quote edition."
+    },
+    {
+     "ref": "Hud. I.i.199–200",
+     "quote": "And prove their doctrine orthodox\nBy apostolic blows and knocks;",
+     "note": "The godly settle theology by force. The rhyme of 'orthodox' and 'knocks' is a model of the poem's comic method."
+    },
+    {
+     "ref": "Hud. I.i.482–484",
+     "quote": "Some call it GIFTS, and some NEW-LIGHT;\nA liberal art, that costs no pains\nOf study, industry, or brains.",
+     "note": "Ralpho's inspired knowledge: a 'liberal art' that needs no learning, Butler's scornful image of sectarian enthusiasm."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Part I, Canto II: The Battle of the Bear",
+   "lines": "1–1178",
+   "section": 1,
+   "summary": [
+    "After a digression on love and war as the two subjects of romance, the narrator gives an epic catalogue of the bear-baiting party: Crowdero the one-legged fiddler, Orsin the bear-ward, Talgol the butcher, Magnano the tinker and his woman Trulla, Cerdon the cobbler and Colon the ostler. Each is introduced with mock-heroic pomp and a burlesque genealogy.",
+    "Hudibras makes a long speech forbidding the sport as a relic of paganism and popery and a danger to the cause. The crowd replies with blows. In a series of single combats parodying epic battle, the knight fights Talgol, Ralpho is caught in the scuffle, the bear breaks loose and throws the crowd into panic, and the rabble scatter. Hudibras captures Crowdero, takes his fiddle as a trophy and locks him in the stocks, the 'wooden bastile' of the Argument."
+   ],
+   "analysis": [
+    "The catalogue of warriors parodies the catalogues of Homer and Virgil, and many names have a learned joke inside them: Orsin, for instance, takes his name from the Latin for bear, and Crowdero his from the crowd, an old name for the fiddle. Eighteenth-century 'keys' identified these figures with real people, and editors have treated such identifications with caution [[wilders1967]] [[richards1937]].",
+    "Hudibras's speech against bear-baiting is a pastiche of Puritan political rhetoric, with its appeals to the Covenant and the cause and its fear of popish plots. The joke is that the speaker brings the language of a national crusade to a village amusement. When the battle comes, Butler keeps the forms of epic (similes, divine interventions, single combats) and fills them with excrement, bruises and broken fiddles. The canto's last lines, on justice that 'winks at crimes' and punishes the innocent, show how the narrator moves easily from slapstick to cool moral observation."
+   ],
+   "key": [
+    {
+     "ref": "Hud. I.ii.1–2",
+     "quote": "THERE was an ancient sage philosopher,\nThat had read ALEXANDER Ross over,",
+     "note": "A typical hudibrastic rhyme ('philosopher' / 'Ross over') at the expense of Alexander Ross, a prolific Scottish controversialist."
+    },
+    {
+     "ref": "Hud. I.ii.1177–1178",
+     "quote": "So Justice, while she winks at crimes,\nStumbles on innocence sometimes.",
+     "note": "The guilty man is released and the harmless fiddler imprisoned: the canto closes on a sententious couplet of the kind that made the poem quotable."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Part I, Canto III: Trulla's Victory and the Stocks",
+   "lines": "1–1382",
+   "section": 2,
+   "summary": [
+    "Fortune turns. The scattered rabble rallies and returns to rescue Crowdero. In a second series of combats Hudibras is attacked by Trulla, the tinker's woman, who overthrows him, takes his sword and spurs and makes him her prisoner. The crowd free the fiddler and put the knight and his squire in the stocks in his place; Trulla leads the triumph.",
+    "In the stocks, Hudibras consoles himself with the philosophy of patience and the examples of suffering heroes. Ralpho returns to their earlier argument and declares that synods are 'mystical bear-gardens', whips of the Inquisition and worse than any bear. Hudibras defends the Presbyterian system and the use of human learning, and Ralpho attacks logic and the schools as a 'pagan, heathenish invention'. The knight promises to refute him at a better time and place."
+   ],
+   "analysis": [
+    "The opening reflection on Fortune, with its comic ballad allusion, prepares for the reversal by which the conqueror becomes the conquered. That Hudibras is defeated by a woman matters to the poem's later development: the Lady, the skimmington and the Lady's final answer all return to the theme of a world in which women rule men, which Butler links to the disorder of the Revolution [[underdown1985]].",
+    "The dispute in the stocks is the first full statement of the Presbyterian–Independent quarrel. Ralpho's attack on synods and on human learning echoes the sectarian polemic of the 1640s, and Hudibras's defence echoes the Presbyterian clergy; but Butler gives the best lines to neither. Ralpho's couplet on rules derived from truth rather than truth from rules sounds like good sense, yet he uses it to defend inspiration against all reasoning. The narrator's scepticism includes both the scholastic and the enthusiast [[snider1994]] [[quintana1951]]."
+   ],
+   "key": [
+    {
+     "ref": "Hud. I.iii.1–2",
+     "quote": "Ah me! what perils do environ\nThe man that meddles with cold iron!",
+     "note": "The mock-solemn opening turns to Fortune's 'dog-trick'; the rhyme 'environ' / 'iron' is one of the poem's best known."
+    },
+    {
+     "ref": "Hud. I.iii.1095–1098",
+     "quote": "Synods are mystical bear-gardens,\nWhere elders, deputies, church-wardens,\nAnd other members of the court,\nManage the Babylonish sport;",
+     "note": "Ralpho the Independent turns Hudibras's attack on bear-baiting against the Presbyterian synods."
+    },
+    {
+     "ref": "Hud. I.iii.1357–1358",
+     "quote": "As if rules were not in the schools\nDeriv'd from truth, but truth from rules.",
+     "note": "Ralpho's case against the logic of the schools: a sound point put to an unsound use."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Part II, Canto I: The Lady's Visit",
+   "lines": "1–924",
+   "section": 3,
+   "summary": [
+    "The narrator announces a change from war to love 'in a romantic method', and describes Fame, the monster that spreads the news of Hudibras's disgrace. The news reaches a wealthy widow whose fortune the knight has long pursued; she comes to the stocks to see him.",
+    "Their long conversation is a parody of courtly wooing. Hudibras protests his love in the language of romance, and the Lady answers with sharp wit, mocking his passion and observing that his real interest is her money. When he swears he will do anything for her, she proposes that he submit to a whipping, as lovers in romances undergo penance. He agrees, citing heroes and saints who were whipped. She releases him on parole, and he postpones the whipping until morning."
+   ],
+   "analysis": [
+    "Part II opens a new kind of plot, closer to the courtship scenes of Don Quixote and to Restoration comedy. The Lady is the poem's only character who sees clearly; her dry replies expose the knight's mixture of romance and greed. Hudibras's eulogy of money, in which worth means 'so much money as 'twill bring', makes the hypocrisy explicit [[paulson1998]] [[miner1974]].",
+    "The whipping is the central comic device of Part II. Self-flagellation suggests both the penance of the lover in romance and the mortifications of religious zeal, and the Puritan knight's reluctance to perform it becomes the test of his sincerity. The question the poem asks, whether a saint is bound by his vow, leads straight to the casuistry of the next canto."
+   ],
+   "key": [
+    {
+     "ref": "Hud. II.i.465–466",
+     "quote": "For what is worth in any thing,\nBut so much money as 'twill bring?",
+     "note": "Hudibras's praise of riches: the lover's real motive, put as a general maxim."
+    },
+    {
+     "ref": "Hud. II.i.843–844",
+     "quote": "Love is a boy by poets stil'd;\nThen spare the rod and spoil the child.",
+     "note": "Hudibras turns a proverb and the figure of Cupid into an argument for the whipping he will never take."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Part II, Canto II: Oaths and the Skimmington",
+   "lines": "1–888",
+   "section": 4,
+   "summary": [
+    "Hudibras, freed, considers how to avoid the whipping. He argues that oaths are only words, that the saints may claim a dispensation to break them, and that the punishment might be suffered by proxy; he asks Ralpho to take the lashes for him. Ralpho refuses, replies that it would be more proper for him to whip the knight, and the quarrel nearly ends in blows.",
+    "They are interrupted by a noisy procession: a skimmington or 'riding', in which a man said to be ruled by his wife is mocked by a crowd with a petticoat for a banner, pots and pans, horns and rotten eggs, while the 'Amazon' and her husband ride on one horse. Hudibras interprets it as a pagan triumph out of ancient authors; Ralpho tells him it is merely an English custom. When the knight attacks the procession, he and Ralpho are pelted with eggs and filth and retreat, Hudibras deciding to tell the widow that he has done his penance."
+   ],
+   "analysis": [
+    "The casuistry of oaths is the heart of Butler's satire on the saints. The Solemn League and Covenant and the Engagement had made oath-taking a central issue of the period, and the Royalist charge that the godly took and broke oaths at will was common. In Hudibras's argument the godly claim a privilege to forswear themselves whenever the cause requires it [[wasserman1976]] [[hill1972]].",
+    "The skimmington is drawn from real popular custom: social historians have used such 'ridings' as evidence of community anxiety about female rule in the household [[underdown1985]]. Butler's comedy works on two levels. Hudibras's learned reading of the procession as a Roman triumph is pedantry; Ralpho's plain explanation is correct. Yet the procession, with its world turned upside down, also mirrors the larger inversion of order that the poem associates with the Revolution."
+   ],
+   "key": [
+    {
+     "ref": "Hud. II.ii.107–108",
+     "quote": "Oaths are but words, and words but wind;\nToo feeble implements to bind;",
+     "note": "The knight's case that a saint may forswear himself, the poem's sharpest charge against Puritan casuistry."
+    },
+    {
+     "ref": "Hud. II.ii.697–698",
+     "quote": "Is but a riding, us'd of course\nWhen the grey mare's the better horse;",
+     "note": "Ralpho deflates the knight's classical learning with a plain account of an English shaming custom."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Part II, Canto III: Sidrophel the Astrologer",
+   "lines": "1–1190",
+   "section": 5,
+   "summary": [
+    "The narrator reflects that the pleasure of being cheated is as great as the pleasure of cheating, and describes the many kinds of fortune-teller who profit from human credulity. Hudibras, uncertain of the widow, accepts Ralpho's advice to consult Sidrophel, a 'cunning man' who sells opinions of the moon and finds lost spoons and strayed cattle.",
+    "Sidrophel and his assistant Whachum are described with all their instruments. Hudibras and Sidrophel debate the science of astrology at length, with Hudibras now playing the sceptic; Sidrophel tries to impress him with tricks, and Whachum gives away their methods. Concluding that they are cheats, Hudibras beats both and, believing he has killed him, rides away, deciding to leave Ralpho to be blamed and tried."
+   ],
+   "analysis": [
+    "Astrology was a serious and controversial business in the 1640s and 1650s, when almanac-makers such as William Lilly and John Booker were political figures, and Butler names both. Sidrophel has often been identified with Lilly, but since Lilly is mentioned separately, some scholars have preferred other models, including the virtuoso Sir Paul Neile of the Royal Society. The canto connects the satire on religious enthusiasm with a satire on credulous science [[thomas1971]] [[curry1989]] [[wilders1967]].",
+    "The debate between knight and astrologer is one of the poem's most learned passages, full of references to Paracelsus, Agrippa, Kelly and the Rosicrucians. The reversal is pointed: the knight who believes in the 'light' of the saints now mocks occult knowledge, and he too is shown to be a cheat. His decision to abandon Ralpho completes the canto's picture of a world of deceivers and deceived."
+   ],
+   "key": [
+    {
+     "ref": "Hud. II.iii.1–2",
+     "quote": "Doubtless the pleasure is as great\nOf being cheated as to cheat;",
+     "note": "The canto's opening maxim on credulity: the dupe is a willing partner in the fraud."
+    },
+    {
+     "ref": "Hud. II.iii.106–108",
+     "quote": "A cunning man, hight SIDROPHEL,\nThat deals in destiny's dark counsels,\nAnd sage opinions of the Moon sells;",
+     "note": "Ralpho introduces the astrologer; 'hight' is a Spenserian archaism for 'called'."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "An Heroical Epistle of Hudibras to Sidrophel",
+   "lines": "1–130",
+   "section": 6,
+   "summary": [
+    "In a short verse letter, Hudibras addresses Sidrophel, who has survived his beating. He mocks the astrologer's ears, his deafness to public opinion and his supposed learning, and offers a 'desp'rate med'cine' for his crazy brain. The letter is a stream of insult, threat and mock praise."
+   ],
+   "analysis": [
+    "The epistle was added to the poem in the 1674 edition and is often read as an attack on a member of the Royal Society, with its interest in instruments and experiments; Butler's prose satire The Elephant in the Moon makes a similar attack on virtuosi. Its relation to the narrative is loose, which suggests that it was written separately and attached later [[wilders1967]] [[snider1994]].",
+    "The reference to William Prynne's ears, cut off for his pamphlets against the stage and the bishops, is typical of the poem's dense contemporary allusion. The epistle shows the poem moving away from narrative towards free-standing satire on persons and ideas."
+   ],
+   "key": [
+    {
+     "ref": "Epistle to Sidrophel 1–2",
+     "quote": "WELL! SIDROPHEL, though 'tis in vain\nTo tamper with your crazy brain,",
+     "note": "The epistle's opening: the knight writes as a physician offering a cure for madness."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Part III, Canto I: The Masquerade",
+   "lines": "1–1606",
+   "section": 7,
+   "summary": [
+    "Knight and squire each resolve to abandon the other. Ralpho goes to the widow ahead of his master and tells her what has happened. When Hudibras arrives, he claims that he has whipped himself and been attacked by Sidrophel and his assistant transformed into devils. The Lady, who knows the truth, questions him; he offers to swear to his story and pleads his love, and she replies with a cutting account of his interest in her estate.",
+    "As he speaks, a noise is heard, and the Lady's servants, disguised as furies and goblins, burst in, beat him and vanish. Left in the dark, Hudibras hears a voice he takes for a spirit; it reproaches him with his adventures and makes him confess the secret principles of the saints, their hypocrisy and their greed. The 'spirit' then carries him off on its back and mounts him on his horse, and they flee."
+   ],
+   "analysis": [
+    "Part III was published fifteen years after Part I, and its comedy has a darker, more satirical edge. The masquerade parodies the scenes of enchantment and torment in Don Quixote, and the interrogation in the dark turns the poem's comic plot into a confessional trial in which Hudibras himself states what Butler thinks of the saints [[paulson1998]] [[wasserman1976]].",
+    "The Lady's reply to Hudibras's protestations is one of the poem's central speeches. She treats love as a market in which the knight bids for her fortune, and she answers his arguments with the irony of a Restoration comic heroine. Her speech prepares for her final epistle on the power of women over men [[miner1974]]."
+   ],
+   "key": [
+    {
+     "ref": "Hud. III.i.1–4",
+     "quote": "'Tis true, no lover has that pow'r\nT' enforce a desperate amour,\nAs he that has two strings t' his bow,\nAnd burns for love and money too;",
+     "note": "The canto's opening reflection: the knight's 'love' is driven by the widow's estate."
+    },
+    {
+     "ref": "Hud. III.i.1349–1350",
+     "quote": "Night is the sabbath of mankind,\nTo rest the body and the mind,",
+     "note": "The 'spirit' begins its reproach. Hudibras, beaten in the dark, is denied the rest that night should bring."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Part III, Canto II: The Saints and the Rump",
+   "lines": "1–1690",
+   "section": 8,
+   "summary": [
+    "The story of Hudibras is suspended. The narrator traces how the war bred a swarm of sects 'the maggots of corrupted texts' and how Presbyterians and Independents, allies against the king, fell to fighting each other for power and plunder. After the death of Oliver Cromwell, the leaders of the saints meet in a secret cabal to plot their survival as the Commonwealth collapses.",
+    "Among them is a politician who has served and betrayed every government in turn; others make speeches on their dangers and their wealth. News arrives that the London crowd is burning rumps in the streets in derision of the Rump Parliament, and the assembly breaks up in panic, each member trampling the others in the rush to escape."
+   ],
+   "analysis": [
+    "This canto is the poem's most direct political history, covering the period from the death of Cromwell in September 1658 to the burning of rumps in London in February 1660, when General Monck's declaration for a free parliament signalled the end of the Rump. Butler moves from a mock-heroic adventure set in the 1640s to a satirical chronicle of the Restoration crisis [[sutherland1969]] [[wilders1967]].",
+    "The politician 'with more heads than a beast in vision' has been widely taken as a portrait of Anthony Ashley Cooper, later Earl of Shaftesbury, who served the Commonwealth and the restored king in turn; the identification is likely but not stated in the text. The canto's place in the poem has been debated. Some critics see it as a digression that breaks the narrative; others see it as the poem's climax, showing the historical consequences of Hudibras's ideology [[miner1974]] [[seidel1979]]."
+   ],
+   "key": [
+    {
+     "ref": "Hud. III.ii.8–10",
+     "quote": "Religion spawn'd a various rout\nOf petulant Capricious sects,\nThe maggots of corrupted texts,",
+     "note": "Sects bred from the 'corruption' of scripture: the image of spontaneous generation carries the satire."
+    },
+    {
+     "ref": "Hud. III.ii.361–362",
+     "quote": "H' had seen three Governments run down,\nAnd had a hand in ev'ry one;",
+     "note": "The turncoat politician, often identified with Shaftesbury."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Part III, Canto III: Flight and the Lawyer",
+   "lines": "1–788",
+   "section": 9,
+   "summary": [
+    "Reflecting on the power of fear, the narrator follows Hudibras as he flees, convinced he is pursued. In the morning he discovers that his rescuing 'spirit' was Ralpho, who had hidden in the Lady's house. Ralpho persuades him that flight was the better part of valour.",
+    "Ralpho advises the knight to give up wooing by force and to sue the widow on her promise, with himself and two of her servants as witnesses. Hudibras at first calls this the unwisest course, but, hearing that Sidrophel means to sue him, decides to take counsel. He consults a corrupt old lawyer who has served under every government, and who advises him first to ply the Lady with love letters in hope of drawing from her something that can be used in court. Hudibras pays his fee and writes."
+   ],
+   "analysis": [
+    "Fear, not courage, rules this canto, and its maxims on running away became proverbial. The scene with the lawyer extends the satire from religion to the law: the courts, like the pulpit, are shown as a trade in which words are turned to profit. The lawyer who has been 'both friend and foe to crimes' under every government belongs with the politician of the previous canto [[wasserman1976]].",
+    "The canto ends the narrative without a resolution. Hudibras's turn to the law shows the Puritan knight-errant becoming a litigant, and the poem's last episodes, in which nothing is settled, suit Butler's sceptical view of human affairs. Whether Butler intended a fourth part is unknown [[wilders1967]] [[quintana1951]]."
+   ],
+   "key": [
+    {
+     "ref": "Hud. III.iii.243–244",
+     "quote": "For those that fly may fight again,\nWhich he can never do that's slain.",
+     "note": "Ralpho's defence of flight: the source of a phrase often misquoted as 'he who fights and runs away'."
+    },
+    {
+     "ref": "Hud. III.iii.547–548",
+     "quote": "He that complies against his will,\nIs of his own opinion still;",
+     "note": "The knight's maxim on forced compliance, one of the poem's most quoted couplets, here used to justify lying."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "An Heroical Epistle of Hudibras to His Lady",
+   "lines": "1–360",
+   "section": 10,
+   "summary": [
+    "Hudibras writes to the widow as a fallen hero, banished from her favour like Nebuchadnezzar turned out to grass. He admits that his vow to be whipped is still unperformed but insists that delay is not violation; argues that great men may break their word for weighty reasons where base men forswear themselves for gain; and warns her that recovering his ears by course of law would bring her little honour."
+   ],
+   "analysis": [
+    "The epistle combines the voice of Ovid's Heroides with the language of legal pleading. Hudibras's argument that his vow remains valid even though unfulfilled is a final example of his casuistry, and the letter's legalism carries out the lawyer's advice in the preceding canto [[jack1952]]."
+   ],
+   "key": [
+    {
+     "ref": "Epistle to his Lady 1–2",
+     "quote": "I who was once as great as CAESAR,\nAm now reduc'd to NEBUCHADNEZZAR;",
+     "note": "The knight casts himself as a fallen conqueror; the triple rhyme deflates his self-pity."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "The Lady's Answer to the Knight",
+   "lines": "1–382",
+   "section": 11,
+   "summary": [
+    "The Lady replies that it is no news that Hudibras is a beast turned to grass; she reminds him that she freed him from the stocks after Trulla won his sword and spurs, and recalls his broken promises. She then delivers a long defence of the power of women, who rule men in love, in marriage, in trade and in politics, and who make fools of men in plays. Her letter leaves no hope for his suit."
+   ],
+   "analysis": [
+    "The Lady's answer gives the poem's last word to a woman. Her account of female dominion inverts the misogyny of the skimmington and the defeat by Trulla, and she speaks with an authority the knight never has. Some readers take her speech as satire on women; others as one of Butler's most sympathetic voices, using the same sceptical wit as the narrator [[wasserman1976]] [[underdown1985]]."
+   ],
+   "key": [
+    {
+     "ref": "Lady's Answer 1–2",
+     "quote": "THAT you're a beast, and turn'd to grass,\nIs no strange news, nor ever was;",
+     "note": "The Lady takes up the knight's own image of Nebuchadnezzar and turns it against him."
+    },
+    {
+     "ref": "Lady's Answer 307–308",
+     "quote": "We rule in ev'ry publique meeting,\nAnd make men do what we judge fitting;",
+     "note": "The defence of women's power, the poem's last major speech."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Sir Hudibras",
+   "side": "The knight",
+   "text": "A Presbyterian knight, colonel and justice of the peace, learned in logic and the schools, a pedant, a coward when tested and a hypocrite in love. His name comes from Spenser's Sir Huddibras, and his career from Don Quixote. Tradition connects him with Sir Samuel Luke, though Butler's knight is a type of the Presbyterian zealot rather than a portrait."
+  },
+  {
+   "name": "Ralpho (Ralph)",
+   "side": "The squire",
+   "text": "A tailor and Independent, inspired by 'gifts' and 'new light', learned in astrology and occult philosophy, hostile to synods and to human learning. He is the knight's companion and constant opponent, and in the end the one who exposes and rescues him."
+  },
+  {
+   "name": "The Lady",
+   "side": "The widow",
+   "text": "A rich widow courted by Hudibras for her estate. Witty and clear-sighted, she visits him in the stocks, imposes the whipping, exposes his lies, has him beaten by her servants and answers his final letter with a defence of women's power. She is the poem's version of Cervantes' Dulcinea, made shrewd."
+  },
+  {
+   "name": "Sidrophel",
+   "side": "The astrologer",
+   "text": "A 'cunning man' and 'Rosy-Crucian' who sells horoscopes and finds lost goods. He debates astrology with Hudibras and is beaten by him. He has been identified with William Lilly and with the virtuoso Sir Paul Neile; neither identification is certain."
+  },
+  {
+   "name": "Whachum",
+   "side": "The astrologer's assistant",
+   "text": "Sidrophel's clerk and accomplice, who gives away their tricks; beaten with his master."
+  },
+  {
+   "name": "Crowdero",
+   "side": "The bear-baiting party",
+   "text": "A one-legged fiddler, whose name comes from 'crowd', an old word for fiddle. Captured by Hudibras and locked in the stocks, he is rescued by the rabble."
+  },
+  {
+   "name": "Orsin",
+   "side": "The bear-baiting party",
+   "text": "The bear-ward, owner of the bear; his name comes from the Latin for bear."
+  },
+  {
+   "name": "Talgol",
+   "side": "The bear-baiting party",
+   "text": "A butcher and 'mortal foe to cows', whose fight with Hudibras parodies epic single combat."
+  },
+  {
+   "name": "Magnano",
+   "side": "The bear-baiting party",
+   "text": "A tinker, 'great in martial fame', and Trulla's lover."
+  },
+  {
+   "name": "Trulla",
+   "side": "The bear-baiting party",
+   "text": "Magnano's woman, an Amazon of the rabble, who overthrows Hudibras and takes his sword and spurs. Her victory begins the poem's theme of women's rule."
+  },
+  {
+   "name": "Cerdon",
+   "side": "The bear-baiting party",
+   "text": "A cobbler, one of the rabble's champions."
+  },
+  {
+   "name": "Colon",
+   "side": "The bear-baiting party",
+   "text": "An ostler, another of the rabble."
+  },
+  {
+   "name": "The politician",
+   "side": "The saints' cabal (III.ii)",
+   "text": "A turncoat who has served every government; widely taken as a portrait of Anthony Ashley Cooper, later Earl of Shaftesbury."
+  },
+  {
+   "name": "The lawyer",
+   "side": "Part III, Canto III",
+   "text": "A corrupt old counsel who has profited under every regime and advises Hudibras to turn his courtship into a lawsuit."
+  },
+  {
+   "name": "Sir Samuel Luke",
+   "side": "Historical figure",
+   "text": "Presbyterian MP for Bedford, governor of Newport Pagnell and Parliament's scoutmaster-general in the 1640s. Early lives of Butler say the poet served in his household, and the missing name rhymed with 'Mamaluke' in Part I, Canto I was read as his; the identification is traditional, not certain."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Religious zeal and hypocrisy",
+   "text": [
+    "The poem's central theme is the hypocrisy of the 'saints': men who claim the authority of conscience and inspiration while pursuing power and money. Hudibras's religion is a habit of opposition; his casuistry allows him to break oaths and lie; the cabal of Part III shows the leaders of the saints as plunderers. Butler's satire attacks less a set of doctrines than the uses to which doctrine is put [[hill1972]] [[wasserman1976]]."
+   ]
+  },
+  {
+   "title": "The vanity of learning",
+   "text": [
+    "Hudibras's logic, rhetoric, mathematics and metaphysics are presented as empty skills that can prove anything and settle nothing; Ralpho's inspired knowledge, astrology and occult philosophy are worse. Sidrophel adds credulous science. Behind the comedy lies a sceptical view, shared with Butler's prose notebooks, of the limits of human reason and the danger of systems [[snider1994]] [[quintana1951]] [[butler1979]]."
+   ]
+  },
+  {
+   "title": "Romance and its parody",
+   "text": [
+    "Like Don Quixote, Hudibras measures its hero against the codes of chivalric romance: the knight-errant, the squire, the lady, the enchanted castle, the vow and the penance. The gap between the code and the conduct is the source of the comedy, and the romance trappings expose the pretensions of Puritan reformers who see themselves as heroes of a holy war [[paulson1998]] [[richards1937]]."
+   ]
+  },
+  {
+   "title": "The world turned upside down",
+   "text": [
+    "The poem repeatedly shows authority inverted: the rabble defeats the knight, a woman takes his sword, the skimmington parades a henpecked husband, a tailor instructs a scholar, sects multiply. Butler associates these inversions with the Revolution, though the Lady's final speech complicates any simple restoration of order [[underdown1985]] [[hill1972]]."
+   ]
+  },
+  {
+   "title": "Money and interest",
+   "text": [
+    "Love in the poem is a pursuit of fortune, religion a means of plunder, law a trade. The knight's eulogy of riches and the Lady's market view of courtship make interest the hidden motive of action, a theme that links Butler to Restoration comedy and to Hobbesian views of human nature [[miner1974]]."
+   ]
+  },
+  {
+   "title": "Oaths and casuistry",
+   "text": [
+    "The many oaths of the Civil War period, the Covenant above all, made the question of whether an oath binds a public issue. Hudibras's argument that 'oaths are but words' and his claim that saints may be dispensed from them are Butler's most pointed political charges, repeated in the Lady's scene and in the final letter [[wasserman1976]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Disputation",
+   "text": "Nearly every episode turns into a debate: on bear-baiting and synods, logic, oaths, whipping by proxy, astrology, love and law. The disputes never conclude, and their pedantic form is part of the joke."
+  },
+  {
+   "title": "Beatings and imprisonment",
+   "text": "The knight is beaten, pelted, locked in the stocks and drubbed in the dark. The repeated physical humiliation deflates every claim to heroism."
+  },
+  {
+   "title": "Mock-heroic machinery",
+   "text": "Invocations, catalogues, epic similes, single combats, Fame and allegorical figures are drawn from Homer, Virgil and Spenser and applied to market-town brawls [[jack1952]] [[richards1937]]."
+  },
+  {
+   "title": "Maxims",
+   "text": "Butler's narrator punctuates the action with sententious couplets ('He that complies against his will...') that have outlived the poem's satire and entered the stock of English proverbs."
+  },
+  {
+   "title": "Light",
+   "text": "The 'new light' of the sectaries, the dark lantern of the spirit, the false light of astrology and the darkness of the masquerade form a running pattern of images about false illumination."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The stocks",
+   "text": "The 'wooden bastile' in which Crowdero and then Hudibras and Ralpho are held. It stands for the reversals of fortune and justice in the poem and is the knight's 'enchanted castle'."
+  },
+  {
+   "title": "The bear and the bear-garden",
+   "text": "The bear-baiting that Hudibras sets out to suppress becomes, in Ralpho's argument, an image of the synods themselves, and so of the violence of religious controversy."
+  },
+  {
+   "title": "The whipping",
+   "text": "The penance the knight promises and evades: a test of sincerity that exposes his hypocrisy, and a parody both of romance and of religious mortification."
+  },
+  {
+   "title": "The rumps",
+   "text": "The rumps burned in the London streets in 1660 mock the Rump Parliament and stand for the collapse of the saints' rule."
+  }
+ ],
+ "debates": [
+  {
+   "title": "The original of Hudibras",
+   "text": [
+    "From the early eighteenth century the knight was identified with Sir Samuel Luke, the Presbyterian commander in whose household Butler is said to have served, on the strength of the rhyme with 'Mamaluke' in Part I, Canto I and the early lives. Other candidates have been suggested, and modern editors treat Hudibras as a composite type rather than a portrait.",
+    "John Wilders' edition sets out the evidence and its limits; George Wasserman stresses the knight's representative character as a Presbyterian zealot. The keys that assign real originals to the minor characters are later and unreliable [[wilders1967]] [[wasserman1976]]."
+   ],
+   "cite": [
+    "wilders1967",
+    "wasserman1976"
+   ]
+  },
+  {
+   "title": "When was the poem written?",
+   "text": [
+    "Part I appeared in late 1662, but its satire on the Civil War parties suggests that some of it was drafted during the 1650s. Part III, published in 1677–78, turns to the events of 1659–60 and has a darker tone. Biographical research on Butler's later life, including his service at Ludlow and his relation to the court, bears on how far the poem was a Restoration commission or an independent work [[debeer1928]] [[wilders1967]]."
+   ],
+   "cite": [
+    "debeer1928",
+    "wilders1967"
+   ]
+  },
+  {
+   "title": "Burlesque or satire?",
+   "text": [
+    "Dryden, in his Discourse concerning satire (1693), admired Butler's wit but judged the short line and double rhymes unworthy of the highest satire, preferring the heroic couplet. Samuel Johnson's Life of Butler praised the poem's learning and wit while regretting its length and its dependence on forgotten controversy [[dryden1974]] [[johnson2006]].",
+    "Twentieth-century critics revalued the form. Ian Jack treated Hudibras as the great English example of low burlesque, with a serious satiric purpose; E. A. Richards placed it in the European burlesque tradition; Richmond Bond traced its imitators [[jack1952]] [[richards1937]] [[bond1932]]."
+   ],
+   "cite": [
+    "dryden1974",
+    "johnson2006",
+    "jack1952",
+    "richards1937",
+    "bond1932"
+   ]
+  },
+  {
+   "title": "Butler's scepticism",
+   "text": [
+    "Is Hudibras a party poem against the Puritans, or a wider satire on all claims to knowledge? Ricardo Quintana saw Butler as a sceptic of the Restoration who distrusted every system; Alvin Snider places him with Bacon and Milton in a seventeenth-century argument about the origins of authority and knowledge. The prose Characters and notebooks support the broader reading [[quintana1951]] [[snider1994]] [[butler1979]]."
+   ],
+   "cite": [
+    "quintana1951",
+    "snider1994",
+    "butler1979"
+   ]
+  },
+  {
+   "title": "Allegory and structure",
+   "text": [
+    "Ellen Douglass Leyburn read the poem as satiric allegory, in which the characters stand for parties and ideas; others find its structure loose, a series of episodes held together by tone rather than plot. The suspension of the narrative in Part III, Canto II is central to this argument: digression or culmination? Michael Seidel reads the poem in the tradition of satire that inherits and degrades its forms [[leyburn1953]] [[seidel1979]] [[miner1974]]."
+   ],
+   "cite": [
+    "leyburn1953",
+    "seidel1979",
+    "miner1974"
+   ]
+  },
+  {
+   "title": "Sidrophel and the new science",
+   "text": [
+    "Sidrophel has been read both as a satire on astrologers like William Lilly and as a satire on the Royal Society's virtuosi. The history of astrology in this period shows that the boundary between the two was not clear, and that astrology was politically charged during the Civil War [[thomas1971]] [[curry1989]] [[wilders1967]]."
+   ],
+   "cite": [
+    "thomas1971",
+    "curry1989",
+    "wilders1967"
+   ]
+  },
+  {
+   "title": "Hudibras and Don Quixote",
+   "text": [
+    "Butler takes the frame of Don Quixote but changes its spirit: Cervantes' knight is deluded but often noble, Butler's knight is a hypocrite. Ronald Paulson's study of the English reception of Cervantes places Hudibras at the start of a tradition that later produced gentler English Quixotes in the novels of Fielding, Smollett and Sterne [[paulson1998]]."
+   ],
+   "cite": [
+    "paulson1998"
+   ]
+  },
+  {
+   "title": "Women in the poem",
+   "text": [
+    "Trulla, the skimmington and the Lady all show women dominating men. The skimmington belongs to a real practice of popular shaming that historians have read as a sign of anxiety about female authority; the Lady's answer, with its account of women's power, may either confirm that anxiety or mock male pretensions [[underdown1985]] [[wasserman1976]]."
+   ],
+   "cite": [
+    "underdown1985",
+    "wasserman1976"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Hud. I.i.1–2",
+   "quote": "When civil dudgeon first grew high,\nAnd men fell out they knew not why?",
+   "who": "The narrator",
+   "explanation": "The opening reduces the Civil War to a quarrel without reasons. The colloquial 'dudgeon' and 'fell out' set the low style that the poem will sustain against its high subject."
+  },
+  {
+   "ref": "Hud. I.i.215–216",
+   "quote": "Compound for sins they are inclin'd to,\nBy damning those they have no mind to:",
+   "who": "The narrator, on the Presbyterians",
+   "explanation": "The most famous lines of the religion portrait: the saints condemn the sins they do not want to commit in order to excuse those they do. The double rhyme ('inclin'd to' / 'mind to') makes the moral point a joke."
+  },
+  {
+   "ref": "Hud. I.i.463–464",
+   "quote": "(For rhyme the rudder is of verses,\nWith which like ships they steer their courses.)",
+   "who": "The narrator",
+   "explanation": "A self-conscious comment on the poem's method, prompted by the choice between 'Ralph' and 'Ralpho'. In Hudibras the rhyme does often steer the sense."
+  },
+  {
+   "ref": "Hud. I.i.505–506",
+   "quote": "'Tis a dark-lanthorn of the Spirit,\nWhich none see by but those that bear it:",
+   "who": "The narrator, on Ralpho's 'new light'",
+   "explanation": "Private inspiration as a lantern that gives light only to its carrier: Butler's image of the sectaries' claim to a knowledge no one else can check."
+  },
+  {
+   "ref": "Hud. I.iii.1–2",
+   "quote": "Ah me! what perils do environ\nThe man that meddles with cold iron!",
+   "who": "The narrator",
+   "explanation": "The mock-tragic opening of the canto in which Hudibras is defeated by Trulla. The rhyme and the ballad tone mark the turn of Fortune's wheel as farce."
+  },
+  {
+   "ref": "Hud. II.i.465–466",
+   "quote": "For what is worth in any thing,\nBut so much money as 'twill bring?",
+   "who": "Hudibras",
+   "explanation": "The knight's praise of riches betrays the motive of his courtship. The couplet anticipates the Lady's view of love as a market."
+  },
+  {
+   "ref": "Hud. II.ii.107–108",
+   "quote": "Oaths are but words, and words but wind;\nToo feeble implements to bind;",
+   "who": "Hudibras",
+   "explanation": "The casuist's case for breaking oaths. In an age of Covenants and Engagements, this was the charge Royalists most often brought against the saints."
+  },
+  {
+   "ref": "Hud. II.iii.1–2",
+   "quote": "Doubtless the pleasure is as great\nOf being cheated as to cheat;",
+   "who": "The narrator",
+   "explanation": "The opening of the Sidrophel canto: credulity is a pleasure, and the cheat depends on the willing dupe."
+  },
+  {
+   "ref": "Hud. III.iii.243–244",
+   "quote": "For those that fly may fight again,\nWhich he can never do that's slain.",
+   "who": "Ralpho",
+   "explanation": "The squire's defence of running away, later remembered in many variant forms. The maxim is wise and cowardly at once."
+  },
+  {
+   "ref": "Hud. III.iii.547–548",
+   "quote": "He that complies against his will,\nIs of his own opinion still;",
+   "who": "Hudibras",
+   "explanation": "One of the most quoted couplets in English, here a justification for deceit. Out of context it states a truth about coerced conformity that the age of oaths knew well."
+  }
+ ],
+ "questions": [
+  {
+   "q": "How does Butler adapt Don Quixote, and what does he change?",
+   "hint": "Compare the motives of the two knights, the roles of the squires and the treatment of the ladies."
+  },
+  {
+   "q": "Why does Butler make Hudibras a Presbyterian and Ralpho an Independent?",
+   "hint": "Think about the divisions on the Parliamentarian side in the 1640s and what the disputes of knight and squire reveal."
+  },
+  {
+   "q": "How does the octosyllabic couplet and its comic rhyme serve the satire?",
+   "hint": "Look at rhymes like 'orthodox' / 'knocks' and 'philosopher' / 'Ross over'. What does the form do to the subject?"
+  },
+  {
+   "q": "Is Hudibras a satire on the Puritans only, or on all claims to knowledge?",
+   "hint": "Consider the treatment of logic, astrology, law and the Royal Society, and Butler's prose writings."
+  },
+  {
+   "q": "What role do women play in the poem?",
+   "hint": "Consider Trulla, the skimmington and the Lady's final answer."
+  },
+  {
+   "q": "How does the poem treat oaths, and why did the question matter in the 1640s and 1650s?",
+   "hint": "Think about the Covenant and the Engagement, and Hudibras's arguments in Part II and Part III."
+  },
+  {
+   "q": "Is Part III, Canto II a digression or the poem's climax?",
+   "hint": "Consider the shift from the 1640s to 1659–60 and the relation of the cabal to Hudibras."
+  },
+  {
+   "q": "Why was the poem so popular at the court of Charles II?",
+   "hint": "Think about the date of publication, the targets of the satire and the political uses of laughter after 1660."
+  },
+  {
+   "q": "How is the mock-heroic used in the bear-baiting cantos?",
+   "hint": "Look at the catalogue, the speeches and the battles, and at their epic models."
+  },
+  {
+   "q": "Does the poem have an ending?",
+   "hint": "Consider the lawyer, the letters and whether Butler might have planned a fourth part."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "aubrey2015",
+   "text": "Aubrey, John. Brief Lives with An Apparatus for the Lives of our English Mathematical Writers. Ed. Kate Bennett. 2 vols. Oxford: Oxford University Press, 2015."
+  },
+  {
+   "id": "bond1932",
+   "text": "Bond, Richmond P. English Burlesque Poetry, 1700–1750. Cambridge, MA: Harvard University Press, 1932."
+  },
+  {
+   "id": "butler1970",
+   "text": "Butler, Samuel. Characters. Ed. Charles W. Daves. Cleveland: Press of Case Western Reserve University, 1970."
+  },
+  {
+   "id": "wilders1967",
+   "text": "Butler, Samuel. Hudibras. Ed. John Wilders. Oxford: Clarendon Press, 1967."
+  },
+  {
+   "id": "butler1979",
+   "text": "Butler, Samuel. Prose Observations. Ed. Hugh de Quehen. Oxford: Clarendon Press, 1979."
+  },
+  {
+   "id": "curry1989",
+   "text": "Curry, Patrick. Prophecy and Power: Astrology in Early Modern England. Princeton: Princeton University Press, 1989."
+  },
+  {
+   "id": "debeer1928",
+   "text": "de Beer, E. S. 'The Later Life of Samuel Butler.' Review of English Studies 4 (1928): 159–66."
+  },
+  {
+   "id": "dryden1974",
+   "text": "Dryden, John. 'A Discourse concerning the Original and Progress of Satire.' In The Works of John Dryden, vol. 4, Poems 1693–1696, ed. A. B. Chambers, William Frost and Vinton A. Dearing. Berkeley: University of California Press, 1974."
+  },
+  {
+   "id": "hill1972",
+   "text": "Hill, Christopher. The World Turned Upside Down: Radical Ideas during the English Revolution. London: Temple Smith, 1972."
+  },
+  {
+   "id": "jack1952",
+   "text": "Jack, Ian. Augustan Satire: Intention and Idiom in English Poetry, 1660–1750. Oxford: Clarendon Press, 1952."
+  },
+  {
+   "id": "johnson2006",
+   "text": "Johnson, Samuel. The Lives of the Most Eminent English Poets. Ed. Roger Lonsdale. 4 vols. Oxford: Clarendon Press, 2006."
+  },
+  {
+   "id": "leyburn1953",
+   "text": "Leyburn, Ellen Douglass. '\"Hudibras\" Considered as Satiric Allegory.' Huntington Library Quarterly 16 (1953): 141–60."
+  },
+  {
+   "id": "miner1974",
+   "text": "Miner, Earl. The Restoration Mode from Milton to Dryden. Princeton: Princeton University Press, 1974."
+  },
+  {
+   "id": "paulson1998",
+   "text": "Paulson, Ronald. Don Quixote in England: The Aesthetics of Laughter. Baltimore: Johns Hopkins University Press, 1998."
+  },
+  {
+   "id": "pepys1970",
+   "text": "Pepys, Samuel. The Diary of Samuel Pepys. Ed. Robert Latham and William Matthews. 11 vols. London: G. Bell, 1970–83."
+  },
+  {
+   "id": "quintana1951",
+   "text": "Quintana, Ricardo. 'Samuel Butler: A Restoration Figure in a Modern Light.' ELH 18 (1951): 7–31."
+  },
+  {
+   "id": "richards1937",
+   "text": "Richards, Edward Ames. Hudibras in the Burlesque Tradition. New York: Columbia University Press, 1937."
+  },
+  {
+   "id": "seidel1979",
+   "text": "Seidel, Michael. Satiric Inheritance: Rabelais to Sterne. Princeton: Princeton University Press, 1979."
+  },
+  {
+   "id": "snider1994",
+   "text": "Snider, Alvin. Origin and Authority in Seventeenth-Century England: Bacon, Milton, Butler. Toronto: University of Toronto Press, 1994."
+  },
+  {
+   "id": "sutherland1969",
+   "text": "Sutherland, James. English Literature of the Late Seventeenth Century. Oxford History of English Literature 6. Oxford: Clarendon Press, 1969."
+  },
+  {
+   "id": "thomas1971",
+   "text": "Thomas, Keith. Religion and the Decline of Magic. London: Weidenfeld and Nicolson, 1971."
+  },
+  {
+   "id": "underdown1985",
+   "text": "Underdown, David. 'The Taming of the Scold: The Enforcement of Patriarchal Authority in Early Modern England.' In Order and Disorder in Early Modern England, ed. Anthony Fletcher and John Stevenson, 116–36. Cambridge: Cambridge University Press, 1985."
+  },
+  {
+   "id": "wasserman1976",
+   "text": "Wasserman, George R. Samuel \"Hudibras\" Butler. Boston: Twayne, 1976."
+  }
+ ]
+}
