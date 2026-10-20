@@ -1,0 +1,752 @@
+{
+ "work": "shakuntala",
+ "title": "Shakuntala (Abhijnanashakuntalam)",
+ "author": "Kalidasa",
+ "quoteEdition": "shakuntala-ryder",
+ "updated": "2026-10-19",
+ "unit": "Act",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Kalidasa, the most admired poet and dramatist of classical Sanskrit. Nothing certain is known of his life; most scholars place him in the Gupta period, roughly the late fourth or fifth century AD"
+  },
+  {
+   "label": "Sanskrit title",
+   "value": "Abhijñānaśākuntalam, 'the play of Shakuntala and the token of recognition'; Ryder renders it 'Shakuntala and the ring of recognition'"
+  },
+  {
+   "label": "Genre",
+   "value": "Nāṭaka, the Sanskrit heroic play on a story from legend: seven acts in prose and verse, with Sanskrit for the king and Brahmans and Prakrit for women, the clown and lower characters"
+  },
+  {
+   "label": "Source",
+   "value": "The story of Shakuntala and Duḥṣanta in the first book (Ādiparvan) of the Mahabharata, to which Kalidasa added the curse of Durvasas and the lost ring"
+  },
+  {
+   "label": "Dominant mood",
+   "value": "Śṛṅgāra rasa, the erotic mood, in its two forms of love in union (Acts I–III) and love in separation (Acts IV–VI), resolved in Act VII"
+  },
+  {
+   "label": "Setting",
+   "value": "Kanva's hermitage on the river Malini, at the foot of the Himalayas; Dushyanta's palace at Hastinapura; the celestial hermitage of Kashyapa on Gold Peak (Hemakūṭa)"
+  },
+  {
+   "label": "Main characters",
+   "value": "King Dushyanta; Shakuntala; her friends Anusuya and Priyamvada; Father Kanva; Gautami; Madhavya the clown; the sage Durvasas; the nymph Mishrakeshi; Matali, Indra's charioteer; Kashyapa and Aditi; the boy All-tamer, later Bharata"
+  },
+  {
+   "label": "Text on this site",
+   "value": "Arthur W. Ryder's translation (Everyman's Library, 1912), Prologue and seven acts; Ryder turns Kalidasa's verses into rhymed English stanzas and keeps the prose as prose. References are by act"
+  },
+  {
+   "label": "European reception",
+   "value": "First translated into English by William Jones as Sacontalá; or, The Fatal Ring (Calcutta, 1789), and from Jones into German by Georg Forster (1791); praised by Herder and Goethe"
+  },
+  {
+   "label": "Famous passages",
+   "value": "The departure from the hermitage (Act IV); Durvasas's curse (Act IV); the rejection scene (Act V); the portrait (Act VI); the boy with the lion cub (Act VII)"
+  }
+ ],
+ "context": [
+  "Kalidasa is to Sanskrit what Virgil is to Latin: the classic against whom later poets measured themselves. Three plays survive under his name (Mālavikāgnimitra, Vikramorvaśīya and Abhijñānaśākuntalam), together with two court epics, the Raghuvaṃśa and the Kumārasambhava, and the lyric Meghadūta. Legend makes him one of the 'nine jewels' at the court of a King Vikramāditya, often identified with the Gupta ruler Chandragupta II (reigned c. 375–415), but the legend is late and the dates remain a matter of inference from style, allusion and the history of the language [[mirashi1969]] [[warder1977]]. Shakuntala is generally thought to be his mature work.",
+  "The play belongs to the world of kāvya, the polished literature of the royal courts. Its audience, the Director tells us in the Prologue, is 'very discriminating', and it expects learned allusion, a fixed repertory of images and above all the right emotional flavour. Sanskrit dramatic theory, codified in the Nāṭyaśāstra attributed to the sage Bharata, held that a play exists to produce rasa, an aesthetic relish of emotion shared by the cultivated spectator. Shakuntala is built around the erotic rasa, śṛṅgāra, with pathos, heroism, wonder and comedy as subordinate moods [[keith1924]] [[gerow1977]] [[masson1970]].",
+  "Kalidasa took his plot from the Mahabharata, where Shakuntala's story explains the birth of Bharata, the ancestor of the epic's warring clans and the king from whom India takes its Sanskrit name, Bhārata. In the epic, Shakuntala is a forthright woman who bargains for her son's succession, and the king who later denies her does so knowingly, to protect his reputation, until a voice from heaven vindicates her. Kalidasa transformed the story by adding the curse of the irascible sage Durvasas and the ring that will break it. The king now forgets through no fault of his own, and the drama turns from a quarrel about paternity into a study of love, memory and recognition [[vanbuitenen1973]] [[thapar1999]].",
+  "The play survives in several recensions, conventionally called the Devanāgarī, Bengali, Kashmiri and South Indian versions, which differ considerably in length and wording; the love scene of Act III varies most. Translations therefore do not always agree [[pischel1877]] [[vasudeva2006]]. Arthur W. Ryder (1877–1938), professor of Sanskrit at Berkeley, published his version in 1912 for Everyman's Library. His rhymed stanzas belong to their period, but they preserve the play's alternation of prose dialogue and lyric verse, which matters because the verses carry most of its feeling [[ryder1912]].",
+  "Shakuntala was the first Sanskrit work to make a strong impression in Europe. William Jones, a judge of the Supreme Court in Calcutta, learned Sanskrit with Indian scholars and published his English version in 1789; Georg Forster's German translation from Jones followed in 1791. Herder wrote about the play, Goethe praised it in a famous epigram, and the opening of Faust owes something to its prologue. For the Romantics Shakuntala became an image of innocence and of nature in harmony with the spirit. That image tells us as much about Europe as about Kalidasa, and modern scholarship has studied both [[cannon1990]] [[figueira1991]] [[schwab1984]] [[willson1964]]."
+ ],
+ "plot": [
+  "After a benediction and a short prologue, King Dushyanta of the line of Puru, hunting a deer, enters the hermitage of the sage Kanva. Kanva is away, and his foster-daughter Shakuntala, child of the royal sage Kaushika and the nymph Menaka, is receiving guests. The king watches her with her friends Anusuya and Priyamvada, falls in love, and introduces himself as an officer of the king. He stays to protect the hermitage from demons, sends his companion Madhavya back to the city with a story that his love was only a jest, and wins Shakuntala, who has fallen ill for love of him. They marry by mutual consent (the gāndharva rite), and he returns to his capital, leaving a ring engraved with his name.",
+  "Absorbed in thoughts of him, Shakuntala fails to greet the sage Durvasas, who curses her: her lover will forget her. Her friends persuade him to soften the curse; it will end when the king sees a token he gave her. They keep this secret. Kanva returns, learns from a heavenly voice that Shakuntala is pregnant, and sends her to her husband, in a farewell in which the whole hermitage seems to mourn. At court the king, his memory clouded, does not recognise her. The ring has slipped from her finger at a sacred bathing place on the way; he rejects her, and as she cries out for the earth to swallow her a shining form in a woman's shape carries her away.",
+  "A fisherman finds the ring in the belly of a carp. At the sight of it the king remembers everything and falls into remorse; he forbids the spring festival, pines over a portrait he has painted of Shakuntala, and despairs because he has no heir. Indra's charioteer Matali rouses him by a trick and takes him to heaven to fight demons. Returning victorious, the king stops at the hermitage of Kashyapa and Aditi, the parents of the gods, where he sees a bold small boy playing with a lion cub. Signs gather: the boy bears the marks of an emperor, is of Puru's line, and his protective amulet does not harm the king. Shakuntala appears, the two are reconciled, Kashyapa explains the curse, and the boy is named Bharata, the future ruler of the whole earth."
+ ],
+ "books": [
+  {
+   "n": 0,
+   "title": "Prologue: the benediction and the Director",
+   "lines": "Prologue (benediction and prologue)",
+   "section": 0,
+   "summary": [
+    "The play opens with a benediction (nāndī) that asks Shiva to bless the audience through his eight visible forms: water, fire, the sacrificing priest, sun and moon, ether, earth and air. The Director (the sūtradhāra, literally 'holder of the strings') then calls an actress from the dressing-room and announces a new play by 'the famous Kalidasa', Shakuntala and the ring of recognition, for an audience he calls very discriminating.",
+    "He asks her to sing of the summer that has just begun. Her song describes girls plucking siris (śirīṣa) blossoms to deck their hair, gently, because the bees have kissed them first. The Director is so charmed that he forgets which play he has announced, and the actress has to remind him. He excuses himself in a couplet: her song carried him away as the deer lured the hero of the play."
+   ],
+   "analysis": [
+    "The prologue (prastāvanā) is a standard part of Sanskrit drama, but Kalidasa makes it do thematic work. The Director's sudden forgetting of the play he has just named, and the actress's reminder, is a miniature of the whole plot, in which a man enchanted by beauty forgets what he knows and must be reminded. The deer in the closing couplet leads directly into Act I, where the king enters in pursuit of one. The audience is asked to watch for that pattern of distraction and recovery from the very first speech [[miller1984]].",
+    "The prologue also states the play's aesthetic contract. The Director's modest verse, that skill is not proved until the wise are satisfied, appeals to the sahṛdaya, the 'one with a responsive heart' of later Sanskrit criticism, who is capable of tasting rasa. The summer song, delicate and slightly erotic, sets the mood of śṛṅgāra before the story begins [[gerow1977]] [[masson1970]].",
+    "The benediction places the play under Shiva, the ascetic god whose eight forms embrace the whole created world. The pairing of ascetic power and erotic beauty that runs through the play, in the hermitage where a king falls in love, is announced in this opening invocation."
+   ],
+   "key": [
+    {
+     "ref": "Shakuntala, Prologue",
+     "quote": "Your charming song had carried me away\nAs the deer enticed the hero of our play.",
+     "note": "The Director's excuse for forgetting the play's title. Forgetting through enchantment is the theme of the whole drama, and the deer leads straight into Act I."
+    },
+    {
+     "ref": "Shakuntala, Prologue",
+     "quote": "Until the wise are satisfied,\n  I cannot feel that skill is shown;",
+     "note": "An appeal to the cultivated spectator. Sanskrit theory located the play's success in the trained sensibility of its audience."
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Act I: The hunt and the hermitage",
+   "lines": "Act I (the whole act)",
+   "section": 1,
+   "summary": [
+    "King Dushyanta pursues a deer in his chariot until a hermit stops him: the deer belongs to the hermitage, and a king's weapons are meant to protect the helpless, not strike the innocent. The king obeys at once and is blessed with the wish that he may beget a son to rule the world. He learns that Kanva has gone to Somatirtha to avert an evil fate that threatens his daughter Shakuntala, who has been left to welcome guests. Leaving his chariot, jewels and bow, he enters the grove on foot, and feels his arm throb, an omen of love.",
+    "Hidden behind a tree, he watches Shakuntala and her friends Anusuya and Priyamvada watering the trees. He sees the jasmine-vine that has 'chosen' the mango-tree as husband and hears the friends tease Shakuntala about marriage. When a bee pesters her, the girls joke that she should call on Dushyanta, the protector of the groves, and the king steps forward. He pretends to be a royal officer on a tour of inspection. Anusuya tells him that Shakuntala is the daughter of the royal sage Kaushika and the nymph Menaka, abandoned and raised by Kanva; the king rejoices, because a girl of warrior (kṣatriya) blood may marry a king. He gives the friends a ring to cancel a small debt Shakuntala owes them; they read the king's name on it. An elephant, terrified by the royal hunting party, breaks into the grove, the girls leave, and the king goes, his mind straining back towards her."
+   ],
+   "analysis": [
+    "The act is built on a reversal. The king enters as a hunter, the deer as his prey, and the hermit's rebuke recalls him to his duty as protector. Kalidasa's audience would know that kings hunted and that hunting was also numbered among royal vices. Throughout the act the language of the chase is transferred to love: the king hides and watches, and Shakuntala, like the deer, is approached by stealth. The play sets the king's desire inside the frame of dharma from the start, and his first act in the grove is an act of restraint.",
+    "The hermitage (āśrama) is portrayed as a world in which nature and ritual are one: tame deer, rice dropped by parrots, trees washed by streams and darkened by sacrificial smoke. Shakuntala belongs to it completely. She treats the trees as sisters and the creeper as a bride, and the friends' playful match-making among the plants anticipates her own marriage. The king, by contrast, compares her with 'city maids', and his eye is that of the courtly connoisseur. The tension between these two ways of seeing will run through the play [[thapar1999]].",
+    "Two details look forward. The king's question about caste (can he lawfully desire her?) is settled by her parentage, but his maxim that a blameless heart can decide right and wrong where reason is blind is just the sort of confidence the curse will later undo. The ring also makes an early appearance, passing through the friends' hands with the king's name on it, so that the audience knows what it is long before it becomes the token of recognition."
+   ],
+   "key": [
+    {
+     "ref": "Shakuntala, Act I",
+     "quote": "Restore your arrow to the quiver;\n  To you were weapons lent\nThe broken-hearted to deliver,\n  Not strike the innocent.",
+     "note": "The hermit's rebuke defines kingship as protection. Dushyanta's prompt obedience establishes him as a king who honours dharma."
+    },
+    {
+     "ref": "Shakuntala, Act I",
+     "quote": "The motions of a blameless heart decide\n  Of right and wrong, when reason leaves us blind.",
+     "note": "The king trusts his desire as a moral guide. The curse will soon show how fallible a king's heart and memory can be."
+    },
+    {
+     "ref": "Shakuntala, Act I",
+     "quote": "It is my body leaves my love, not I;\n  My body moves away, but not my mind;",
+     "note": "The act's closing image of divided body and mind. The verse ends with silken banners carried against the wind."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Act II: The clown and the king's dilemma",
+   "lines": "Act II (the whole act)",
+   "section": 2,
+   "summary": [
+    "Madhavya, the king's Brahman companion and the play's clown (vidūṣaka), complains about the hardships of the hunt: bad water, irregular meals, no sleep. He pretends to be crippled to win a day's rest. The king, who no longer wants to hunt near the hermitage, agrees, overrules his general's praise of hunting, and orders the soldiers to keep away from the grove, for ascetics hide a fire that can blaze out if they are wronged. Alone with Madhavya, he describes Shakuntala in a series of rapturous verses, while the clown deflates him with jokes about dates and tamarind.",
+    "Two hermit youths arrive to ask the king to stay and protect the sacrifices from demons while Kanva is away, and he gladly accepts. At the same moment a messenger brings a command from the queen-mother to attend a ceremony in the capital in four days. Caught between two duties, the king sends Madhavya in his place. Afraid that the talkative Brahman will gossip in the palace, he tells him that his love for the hermit-girl was only a joke."
+   ],
+   "analysis": [
+    "The vidūṣaka is a stock figure of Sanskrit drama: a Brahman, yet greedy, cowardly and comic, who speaks Prakrit rather than Sanskrit and is the hero's confidant. His appetite and his common sense set off the king's idealising passion, and his irreverence makes the king's verses sound more extravagant still. Scholars have debated his origins, from a ritual adversary of the hero to a figure of popular entertainment, but his function in this play is clear: he keeps the erotic mood from cloying and lets the audience laugh at the lover without despising him [[kuiper1979]] [[bhat1959]].",
+    "The king's verses on Shakuntala, a pearl wrought in the Creator's mind and a flower whose fragrance no one has tasted, are among the finest descriptive stanzas in the play, and their excess is deliberate. In Sanskrit poetics the beloved is seen through the lover's mood; the stanzas tell us about his rasa as much as about her beauty [[gerow1977]].",
+    "The dilemma at the end of the act introduces conflicting duty, a central concern of kingship. Its resolution has fateful consequences: by telling Madhavya that the affair was a jest, the king removes the one witness who could have reminded him. In Act VI Madhavya says exactly this. Kalidasa provides both a supernatural cause of the forgetting (the curse) and a human one (the king's own discretion), and the play keeps both in view."
+   ],
+   "key": [
+    {
+     "ref": "Shakuntala, Act II",
+     "quote": "Two inconsistent duties sever\n  My mind with cruel shock,",
+     "note": "The king's conflict between his duty to the hermits and his mother's command, compared to a river split by a rock."
+    },
+    {
+     "ref": "Shakuntala, Act II",
+     "quote": "The light words I uttered were spoken in jest.",
+     "note": "The king's lie to Madhavya. It explains why the clown, in Act VI, never reminded him of Shakuntala."
+    },
+    {
+     "ref": "Shakuntala, Act II",
+     "quote": "She is God's vision, of pure thought\n  Composed in His creative mind;",
+     "note": "Part of the king's praise of Shakuntala to the clown. The stanza says as much about the lover's idealising imagination as about her."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act III: The love-making",
+   "lines": "Act III (the whole act)",
+   "section": 3,
+   "summary": [
+    "A pupil reports that since the king's arrival the sacrifices have gone undisturbed, and that Shakuntala is ill from the heat. The king, wounded by Love's flower-arrows, follows her footprints to a bower on the Malini and hides to watch her. Her friends fan her and guess the truth; she confesses that she loves the king. Priyamvada proposes a love-letter, which Shakuntala scratches with her nails on a lotus-leaf. The king steps out. When Anusuya reminds him that kings have many wives, he promises that only two will support his throne: Shakuntala and the sea-girt earth.",
+    "The friends leave on the pretext of finding a lost fawn. Shakuntala tries to go, and the king, arguing that many hermit maidens have married by the simple voluntary rite with their fathers' later blessing, detains her. She hides, he finds her lotus bracelet, she returns for it, he fastens it on her arm and blows pollen from her eye, and draws her face to his. A voice warns the 'sheldrake bride' that night is falling: Gautami is coming. Shakuntala leaves with her, and the king, left with the crushed flowers, the bracelet and the letter, reproaches himself for his hesitation until the hermits call him to fight the demons of the evening sacrifice."
+   ],
+   "analysis": [
+    "This is the act of śṛṅgāra in union (sambhoga), and almost every element of the love-sickness convention appears: fever, pallor, wasting, sleeplessness, the lotus-leaves and sandal-salve applied to cool the lover, the letter in a leaf. Kalidasa treats the conventions with tenderness and light irony, for the king watches Shakuntala suffer and is delighted that her illness is love. Because the scene varies most between the recensions, readers comparing translations will find more or less of it [[pischel1877]] [[keith1924]].",
+    "The marriage itself happens offstage, between the acts; Act IV opens by stating that Shakuntala has been 'properly married by the voluntary ceremony'. The gāndharva marriage was recognised in the law books as valid for warriors, but it had no witnesses, and that is the dramatic point. When the king forgets, there is nobody to testify, and the ring is the only proof. Readers have also noticed the king's pressure in this scene, holding her dress and arguing her out of her scruples; the play presents it as ardour, but it prepares the questions of trust raised in Act V [[thapar1999]].",
+    "The cry to the 'sheldrake bride' refers to the cakravāka, a bird believed to be separated from its mate every night. It is a conventional image of separated lovers, and here it marks the end of union. The king's promise that he will have only two consorts, Shakuntala and the earth, links love with kingship in a way the final act will fulfil."
+   ],
+   "key": [
+    {
+     "ref": "Shakuntala, Act III",
+     "quote": "Though many queens divide my court,\n  But two support the throne;\nYour friend will find a rival in\n  The sea-girt earth alone.",
+     "note": "The king's promise to Shakuntala's friends. Kingship is imagined as a marriage to the earth, and Shakuntala as its equal."
+    },
+    {
+     "ref": "Shakuntala, Act III",
+     "quote": "For many a hermit maiden who\n  By simple, voluntary rite\nDispensed with priest and witness, yet\n  Found favour in her father's sight.",
+     "note": "The king's argument for the gāndharva marriage. The absence of witnesses is exactly what makes his later forgetting so damaging."
+    },
+    {
+     "ref": "Shakuntala, Act III",
+     "quote": "Why was I not a little bolder?",
+     "note": "The king's comic self-reproach after the interrupted kiss, in Ryder's light, almost Cavalier idiom."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act IV: The curse and the departure",
+   "lines": "Act IV (the whole act)",
+   "section": 4,
+   "summary": [
+    "In an interlude (viṣkambhaka), Anusuya and Priyamvada are gathering flowers. The king has returned to the city. A voice calls for welcome; Shakuntala, lost in thought of her husband, does not hear, and the guest, the irascible sage Durvasas, pronounces a curse: her lover will forget her, or remember her only as a story told. Anusuya runs after him and wins a softening: the curse will end when her lover sees a token of recognition he has given her. The friends remember the engraved ring and decide to tell no one, not even Shakuntala.",
+    "At dawn, a pupil describes the setting moon and rising sun. Anusuya grieves that no message has come from the king, but Kanva, warned by a voice from heaven that Shakuntala carries the king's child, has rejoiced and decided to send her to her husband at once. The trees of the grove give her a silk dress and jewels; Kanva prays to them to speed her on her way. Shakuntala takes leave of the spring-creeper, of the pregnant doe and the fawn she raised, and of her friends. Kanva gives her his counsel for married life and a message for the king, and as she disappears among the trees he feels a calm, as of one who has returned a pledge entrusted to him."
+   ],
+   "analysis": [
+    "The curse is the hinge of Kalidasa's reshaping of the epic. It is delivered offstage, heard only by the friends, and kept from Shakuntala, so that the heroine walks into the rejection scene unaware of the danger. Durvasas embodies the dangerous power of ascetics that the king himself described in Act II, the hidden fire in the hermit-bower. The curse also turns a moral lapse into a metaphysical one: Shakuntala's fault is a failure of attention, a lapse of hospitality caused by love itself [[miller1984]].",
+    "The departure is the most celebrated act of the play. A traditional Sanskrit saying ranks drama as the most delightful form of poetry, Shakuntala as the finest drama, its fourth act as the finest act, and four verses in it as the finest of all. Here the mood shifts towards pathos (karuṇa), and the grief is shared by the whole hermitage: the doe drops her grass, the peahen stops dancing, the fawn tugs at Shakuntala's dress. The sympathy of nature is not decoration but an expression of the bond between the girl and the place that made her [[thapar1999]] [[warder1977]].",
+    "Kanva is the play's figure of wisdom. A celibate ascetic, he discovers in himself a father's pain at parting, and his advice to Shakuntala (obey her elders, be kind to rival wives, never be angry with her husband even if he proves unfaithful) states the ideal of the dutiful wife with a frankness modern readers may find uncomfortable. His closing verse, that a daughter is held in trust for another, expresses a view of marriage as the restoration of a pledge."
+   ],
+   "key": [
+    {
+     "ref": "Shakuntala, Act IV",
+     "quote": "Your lover shall forget you though reminded,\n  Or think of you as of a story told.",
+     "note": "Durvasas's curse, heard offstage. The phrase 'as of a story told' is uncannily apt in a play that is itself a story retold."
+    },
+    {
+     "ref": "Shakuntala, Act IV",
+     "quote": "The grass drops from the feeding doe;\nThe peahen stops her dance;\nPale, trembling leaves are falling slow,\nThe tears of clinging plants.",
+     "note": "Priyamvada's verse on the grief of the hermitage. Nature shares the human emotion, a hallmark of Kalidasa's art."
+    },
+    {
+     "ref": "Shakuntala, Act IV",
+     "quote": "A girl is held in trust, another's treasure;\nTo arms of love my child to-day is given;\nAnd now I feel a calm and sacred pleasure;\nI have restored the pledge that came from heaven.",
+     "note": "Kanva's last words in the act. A daughter belongs in her husband's house, and his grief gives way to the calm of a duty fulfilled."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act V: The rejection",
+   "lines": "Act V (the whole act)",
+   "section": 5,
+   "summary": [
+    "In the palace, an aged chamberlain reflects on the burdens of office, and the king, weary from the judgment-seat, hears a song from the music-room in which Queen Hansavati reproaches a bee for forsaking the mango-blossom. He is filled with a longing he cannot explain. Kanva's hermits are announced, and the king receives them at the fire-sanctuary. Shakuntala, veiled, notices her right eye throbbing, a bad omen for a woman.",
+    "Sharngarava delivers Kanva's message: the king has married Kanva's daughter and must now receive her, for she is with child. The king, his memory clouded by the curse, denies the marriage, and fears that to accept a pregnant woman would make him an adulterer. Shakuntala tries to show the ring, but it has slipped from her finger while she worshipped at the Ganges. She reminds him of a scene with the fawn in the bower, and he answers with a cruel jibe about women's cunning. In anger she calls him a hypocrite. The hermits leave her, saying that a wife belongs to her husband. The chaplain proposes that she stay in his house until the child is born, to see whether the child bears the imperial marks foretold for the king's first son. As she goes out weeping and calling on the earth to open, a shining form in a woman's shape seizes her and vanishes. The king, bewildered, half believes what he cannot remember."
+   ],
+   "analysis": [
+    "The rejection scene is where Kalidasa's play comes closest to its epic source, and the contrast is instructive. In the Mahabharata, Shakuntala delivers a long and fierce speech on the rights of wives and sons, and the king admits at the end that he knew her all along. Here the king is sincere: he cannot remember, and his scruple about another man's wife is itself a mark of virtue. Shakuntala's anger is brief but strong, and her fall into silence and grief makes the scene one of pathos rather than argument [[vanbuitenen1973]] [[thapar1999]].",
+    "The opening song and the king's strange melancholy are among the subtlest touches in the play. The verse on 'recollections / Of things not seen on earth' suggests that beauty awakens latent impressions of loves from earlier lives, and later Sanskrit criticism prized the stanza. It shows that the curse has blotted out memory but not the heart: the king's feelings remember what his mind cannot. The scene thus turns the curse into a study of the difference between knowing and feeling [[miller1984]] [[masson1970]].",
+    "The hermits' harshness is also part of the design. Sharngarava's view of the court as a house on fire, and his insistence that a wife must stay with her husband, set ascetic rigour against royal law, and Shakuntala is caught between them. Her disappearance into heaven, carried off by a form of light, moves the story beyond the human world, and the king's last lines show memory beginning to stir."
+   ],
+   "key": [
+    {
+     "ref": "Shakuntala, Act V",
+     "quote": "There must be recollections\nOf things not seen on earth,\nDeep nature's predilections,\nLoves earlier than birth.",
+     "note": "The king's unexplained longing on hearing a song. Feeling survives where memory has failed."
+    },
+    {
+     "ref": "Shakuntala, Act V",
+     "quote": "Not knowing whether I be mad\nOr falsehood be in her,\nShall I desert a faithful wife\nOr turn adulterer?",
+     "note": "The king's dilemma, posed in terms of dharma. Under the curse he chooses the safer sin, as it seems to him."
+    },
+    {
+     "ref": "Shakuntala, Act V",
+     "quote": "O mother earth, give me a grave!",
+     "note": "Shakuntala's cry as she is led away, echoing the Ramayana's Sita, who returns into the earth at the end of her trials."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act VI: The ring, the portrait and the king's remorse",
+   "lines": "Act VI (the whole act)",
+   "section": 6,
+   "summary": [
+    "Two policemen and their chief drag in a fisherman accused of stealing the king's ring. He found it, he says, in the belly of a carp. They take it to the palace and return with a reward, for at the sight of the ring the king 'broke down'. In the palace garden the nymph Mishrakeshi, a friend of Shakuntala's mother, arrives invisibly to observe the king. She learns that he has forbidden the spring festival: once the ring brought back his memory, he fell into remorse, and even the mango-blossoms and the cuckoo seem to hold back.",
+    "The king, in the dress of mourning, talks to Madhavya about his folly, reproaches the ring for slipping from Shakuntala's finger, and has a portrait of her brought, which he has painted himself. He wants to add the scenery she loved, the Malini, the swans and the deer, and grows so absorbed that he orders a bee painted near her face to go away, until Madhavya reminds him that it is only a picture. A minister's report about a merchant who died childless reminds him that he has no heir and his ancestors will lack offerings; he faints. A scream for help from Madhavya, seized by an invisible being, rouses him; the attacker is Matali, Indra's charioteer, who has used the trick to shake the king out of despair and to summon him to fight the demons."
+   ],
+   "analysis": [
+    "The act begins with a Prakrit interlude (praveśaka) among low characters, the policemen and the fisherman, whose bargaining and drinking provide comic relief after the tragedy of Act V. The fisherman's verse about inherited trade is a reminder that the play's world includes those who live outside palace and hermitage. The ring's journey through a fish echoes a folktale motif found in many cultures, the treasure lost in water and recovered from a fish's belly [[keith1924]].",
+    "The rest of the act is love in separation (vipralambha śṛṅgāra), and Kalidasa turns it into a meditation on art and illusion. The portrait scene, in which the king first criticises his own painting, then adds a landscape, then forgets that it is a picture, dramatises the power and the limits of representation. Mishrakeshi, hidden in the vines, is an audience within the play who sees the king's grief as Shakuntala cannot. The king's verse about seeking water in a mirage after spurning a river is a precise image of remorse [[miller1984]].",
+    "The theme of the heir also returns. The merchant's case makes the king's private loss a public and religious matter, for in brahmanical thought a man without a son cannot give his ancestors the offerings they need. Matali's rough intervention restores the king to his warrior's role; separation has emptied him, and he must act again before he can be reunited."
+   ],
+   "key": [
+    {
+     "ref": "Shakuntala, Act VI",
+     "quote": "You can't give up a lowdown trade\nThat your ancestors began;",
+     "note": "The fisherman's defence of his calling. His comic dignity opens the act with a voice from outside the court."
+    },
+    {
+     "ref": "Shakuntala, Act VI",
+     "quote": "I treated her with scorn and loathing ever;\nNow o'er her pictured charms my heart will burst:\nA traveller I, who scorned the mighty river.\nAnd seeks in the mirage to quench his thirst.",
+     "note": "The king's remorse before the portrait. The image of water and mirage measures what he has thrown away."
+    },
+    {
+     "ref": "Shakuntala, Act VI",
+     "quote": "The royal line that flowed\nA river pure and grand,\nDies in the childless king,\nLike streams in desert sand.",
+     "note": "The king's despair at having no son. It prepares directly for the discovery of the boy in Act VII."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act VII: Reunion in Kashyapa's hermitage",
+   "lines": "Act VII (the whole act)",
+   "section": 7,
+   "summary": [
+    "Returning from victory in Indra's chariot, the king and Matali pass through the paths of the wind and descend to Gold Peak, the mountain hermitage of Kashyapa, son of Marichi and father of the gods. While Matali announces him, the king sees a small boy dragging a lion cub from its mother and trying to count its teeth; two hermit-women call him All-tamer. The king feels a father's love, notices the webbed fingers that mark a future emperor, and learns that the boy is of Puru's line and that his mother was related to a nymph. A clay peacock called a shakunta makes the boy ask for his mother. When the king picks up the boy's fallen amulet, which turns into a serpent if anyone but his parents touches it, the women run to tell Shakuntala.",
+    "Shakuntala enters, pale, in plain dress, her hair in the single braid of a wife separated from her husband. The king falls at her feet, she forgives him, and she sees the ring on his hand. Kashyapa and Aditi receive them, and Kashyapa explains that the king's forgetting was caused by Durvasas's curse, which would end only when the ring was seen. He prophesies that the boy, All-tamer, will be known as Bharata and will rule the world. A pupil is sent to tell Kanva, and the play ends with the king's prayer for the welfare of the land and his own release from rebirth."
+   ],
+   "analysis": [
+    "The final act moves from earth to heaven and back, and the reunion takes place in a hermitage higher than Kanva's, so that the play ends where it began, in a sacred grove, but on a cosmic scale. The king's descent, with plains melting from the mountains and rivers coming into view, is one of the play's great descriptive passages, and the extreme ascetic, half buried in an ant-hill, recalls the austerity that framed Shakuntala's own birth.",
+    "Recognition (abhijñāna) proceeds by signs: a throbbing arm, the boy's likeness to the king, the webbed fingers, the family name, the pun on shakunta, and the amulet. The ring, which the title makes the instrument of recognition, has already done its work; this second recognition depends on the bond of blood and the evidence of the heart. The king's simile of the man who doubts an elephant while it passes, yet believes its footprints, sums up his whole experience of knowing too late [[miller1984]].",
+    "Kashyapa's explanation removes the blame from both partners, and the play closes in harmony. Modern readers have asked whether the reconciliation is too easy, and whether Shakuntala's forgiveness reflects the ideal of the submissive wife. The play's own answer lies in the long penance of separation that both have endured, signalled by her single braid and his remorse. The naming of Bharata connects the private love story to the founding of the dynasty and of the land that bears his name [[thapar1999]]."
+   ],
+   "key": [
+    {
+     "ref": "Shakuntala, Act VII",
+     "quote": "The pale, worn face, the careless dress,\nThe single braid,\nShow her still true, me pitiless,\nThe long vow paid.",
+     "note": "The king's first sight of Shakuntala in Kashyapa's hermitage. Her appearance is the sign of a faithful wife in separation."
+    },
+    {
+     "ref": "Shakuntala, Act VII",
+     "quote": "Like one who doubts an elephant,\nThough seeing him stride by,\nAnd yet believes when he has seen\nThe footprints left; so I.",
+     "note": "The king's image for his own blindness: he disbelieved the living woman and believed only the token."
+    },
+    {
+     "ref": "Shakuntala, Act VII",
+     "quote": "As Bharata he shall be known,\nFor he will bear the world alone.",
+     "note": "Kashyapa's prophecy. Ryder's 'bear' renders the Sanskrit play on the name Bharata, the one who supports the world."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Dushyanta",
+   "side": "The king",
+   "text": "King of the line of Puru, a great warrior and Indra's ally against the demons, ruling from Hastinapura. He is courteous, devout and capable of restraint, yet impulsive in love and given to rapturous description. Under Durvasas's curse he forgets and rejects his wife; once the ring restores his memory he falls into deep remorse. Kalidasa makes him far more sympathetic than the calculating king of the Mahabharata, though readers continue to ask how far the curse excuses him."
+  },
+  {
+   "name": "Shakuntala",
+   "side": "The heroine",
+   "text": "Daughter of the royal sage Kaushika (Vishvamitra) and the nymph Menaka, abandoned at birth and raised by Kanva in his hermitage. She loves the trees and creatures of the grove as kin. Shy and modest in the first acts, she shows real anger when she is rejected, and her endurance in separation earns her the reunion of Act VII. Her name is linked in the epic with the birds (śakunta) that sheltered her as a baby, a link the last act plays on."
+  },
+  {
+   "name": "Anusuya and Priyamvada",
+   "side": "Shakuntala's friends",
+   "text": "Hermit girls of Kanva's grove. Anusuya is the more serious and thoughtful, Priyamvada the more playful, a teaser and match-maker. They help bring the lovers together, soften Durvasas's curse and keep it secret, and remind Shakuntala at the parting to show the king his ring. They do not appear after Act IV."
+  },
+  {
+   "name": "Kanva",
+   "side": "The hermitage",
+   "text": "The sage who heads the hermitage on the Malini and who brought up Shakuntala. Absent in the first acts on a pilgrimage to avert her ill fortune, he returns to approve the marriage, learning of it from a voice from heaven. His farewell to her in Act IV, with its mixture of ascetic calm and a father's grief, is one of the emotional centres of the play."
+  },
+  {
+   "name": "Gautami",
+   "side": "The hermitage",
+   "text": "The elderly woman of the hermitage who acts as Shakuntala's mother and escort. She interrupts the lovers in Act III, accompanies Shakuntala to court, lifts her veil in Act V and defends her honesty against the king."
+  },
+  {
+   "name": "Madhavya",
+   "side": "The court",
+   "text": "The king's companion and the play's clown (vidūṣaka): a Brahman obsessed with food and comfort, cowardly, witty and loyal. He deflates the king's romantic raptures, but because the king told him the affair was a jest, he does not remind him of Shakuntala. In Act VI Matali seizes him to rouse the king."
+  },
+  {
+   "name": "Durvasas",
+   "side": "The curse",
+   "text": "A sage famous in Indian legend for his temper. He appears only as a voice offstage in Act IV, cursing Shakuntala for failing to welcome him. Kalidasa's addition to the epic story, he makes the king's forgetting the work of fate rather than policy."
+  },
+  {
+   "name": "Sharngarava and Sharadvata",
+   "side": "The hermitage",
+   "text": "Kanva's pupils, who escort Shakuntala to court. Sharngarava is fierce and outspoken, accusing the king of treachery; Sharadvata is calmer. Both see the city as a place of moral danger, and both leave Shakuntala at court, insisting that a wife's place is with her husband."
+  },
+  {
+   "name": "Mishrakeshi",
+   "side": "Heaven",
+   "text": "A nymph (apsaras), friend of Shakuntala's mother Menaka, who watches the king invisibly in Act VI. Her asides interpret his grief for the audience and confirm that his remorse is sincere."
+  },
+  {
+   "name": "Matali",
+   "side": "Heaven",
+   "text": "The charioteer of Indra, king of the gods. He rouses the king from despair by pretending to attack Madhavya, carries him to fight the demons, and brings him to Kashyapa's hermitage."
+  },
+  {
+   "name": "Kashyapa and Aditi",
+   "side": "Heaven",
+   "text": "Kashyapa, son of Marichi, and his wife Aditi are the parents of the gods, living in a celestial hermitage on Gold Peak. Kashyapa performs the boy's birth-rites, explains the curse and prophesies Bharata's empire."
+  },
+  {
+   "name": "All-tamer (Bharata)",
+   "side": "The son",
+   "text": "The son of Dushyanta and Shakuntala, born in Kashyapa's hermitage. Fearless and wilful, he plays with lion cubs. His imperial birthmarks, his family and his amulet lead to the recognition, and Kashyapa names him Bharata, the future emperor of the whole earth."
+  },
+  {
+   "name": "The fisherman and the police",
+   "side": "The city",
+   "text": "The comic characters of the interlude to Act VI. The fisherman finds the ring in a carp, is arrested as a thief and then rewarded; the policemen bully him, then happily share his reward."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Love in union and in separation",
+   "text": [
+    "Sanskrit poetics divides the erotic rasa into love in union (sambhoga) and love in separation (vipralambha), and the play is built on that division. Acts I–III move towards union; Acts IV–VI explore separation, first as parting, then as forgetting, then as remorse; Act VII brings the two together at a higher level. Kalidasa's achievement is to make the second half as rich as the first, so that separation becomes the deeper experience of love [[gerow1977]] [[masson1970]].",
+    "The love of the first acts is immediate and physical, expressed through glances, fever and touch. The love of the later acts is mediated by memory, tokens, pictures and grief. Readers often feel that the lovers of Act VII, chastened by suffering, are worthier of each other than the lovers of Act III."
+   ]
+  },
+  {
+   "title": "Memory, forgetting and recognition",
+   "text": [
+    "The title names a token of recognition, and the plot turns on forgetting. The theme appears in the prologue, when the Director forgets the play's title, and is developed through Durvasas's curse, the lost ring, the king's unexplained longing in Act V, and his remorse once memory returns. Barbara Stoler Miller's title for Kalidasa's plays, Theater of Memory, reflects how central the theme is [[miller1984]].",
+    "The play distinguishes kinds of memory. The king's intellect forgets, but his feelings stir at the song and at the sight of Shakuntala; the ring restores knowledge, but only remorse and penance restore the relationship. Recognition in the last act comes through the son, a living sign that no curse can obscure."
+   ]
+  },
+  {
+   "title": "Kingship and dharma",
+   "text": [
+    "Dushyanta is presented as an ideal king: protector of hermitages, ally of the gods, just in judgment. His desire is tested against his duty at every stage, from the hermit's rebuke in Act I to the dilemma of Act II and the scruple of Act V, when he will not take another man's wife. The play suggests that a king's private life is never merely private: his love for Shakuntala is also the question of the dynasty's succession.",
+    "Kalidasa's courtly art is bound up with the ideology of kingship it celebrates, and Sheldon Pollock has argued that Sanskrit kāvya served as the language in which royal power imagined itself across the subcontinent [[pollock2006]]. The play's last prayer, that kingship may benefit the land, states the ideal plainly."
+   ]
+  },
+  {
+   "title": "Nature and the hermitage",
+   "text": [
+    "The hermitage is a world where people, plants and animals share one moral order: deer are safe, trees are sisters, the creeper marries the mango. Shakuntala is the human expression of that harmony, and its grief at her departure is the emotional climax of Act IV. The court, by contrast, is a world of rivalry, protocol and suspicion.",
+    "European readers from Herder onwards took this as a picture of innocent nature. In the play itself, the hermitage is also a place of ritual power and danger, home of Durvasas as well as of Kanva, and its harmony depends on ascetic discipline [[thapar1999]] [[figueira1991]]."
+   ]
+  },
+  {
+   "title": "Fate, curse and responsibility",
+   "text": [
+    "Kalidasa's chief innovation, the curse, raises the question of responsibility. Is the king guilty? Kashyapa tells him no, and he is relieved; Shakuntala, too, is relieved that he did not reject her of his own will. Yet the king himself feels that he 'scorned his duty', and his lie to Madhavya in Act II contributed to the disaster. The play allows fate and human fault to work together.",
+    "Shakuntala's own fault, her inattention to a guest, arises from her love. The play suggests that intense love has its own dangers, a forgetfulness of the world that the world will avenge."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Bees and flowers",
+   "text": "Bees appear in the prologue song, in the bee that frightens Shakuntala in Act I, in the song that rebukes the fickle bee in Act V, and in the painted bee in Act VI. They stand for the lover who hovers, tastes and moves on, and they track the king's passage from desire to forgetfulness to remorse."
+  },
+  {
+   "title": "The deer and the fawn",
+   "text": "The play begins with a hunted deer and returns repeatedly to the hermitage deer: the fawn Shakuntala adopted, which tugs at her dress as she leaves, and whose memory she invokes in vain at court. The deer links innocence with vulnerability, and the king's first act of restraint with his final reunion."
+  },
+  {
+   "title": "Vines and the mango tree",
+   "text": "The jasmine-vine that 'chooses' the mango-tree, the spring-creeper Kanva tended, the vine stripped from a sandal-tree in Shakuntala's lament: the image of the clinging vine and its supporting tree recurs as a figure for marriage and for Shakuntala's bond with the hermitage."
+  },
+  {
+   "title": "Throbbing limbs and omens",
+   "text": "The king's arm throbs as he enters the grove (Act I) and again in Kashyapa's hermitage (Act VII), a good omen for a man; Shakuntala's right eye throbs as she approaches the king's court (Act V), a bad omen for a woman. These signs frame the plot and remind the audience that its events are fated."
+  },
+  {
+   "title": "Moon, sun and the cakravāka",
+   "text": "Images of the moon and sun, of night lilies and day lilies, and of the cakravāka birds separated each night run through the play as figures of union and separation. In the final act eclipse gives way to light as memory returns."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The ring",
+   "text": "Engraved with the king's name, the ring is the 'token of recognition' of the title. It cancels a debt in Act I, seals the marriage, is lost in the Ganges, is found in a fish and restores the king's memory. It stands for the external proof that love should not need, as Mishrakeshi observes in Act VI."
+  },
+  {
+   "title": "The lotus bracelet and lotus-leaf letter",
+   "text": "The lotus-fibre bracelet that slips from Shakuntala's wasted arm and the love-letter scratched with her nails in a lotus-leaf are the frail tokens of the union in Act III, natural and perishable in contrast to the engraved ring."
+  },
+  {
+   "title": "The portrait",
+   "text": "The king's painting of Shakuntala in Act VI is a token of memory and an image of art itself. It can make her seem present, but it cannot replace her; the king's confusion of the picture with life shows the force and the limits of representation."
+  },
+  {
+   "title": "The amulet",
+   "text": "The charm called Invincible, given to the boy by Kashyapa, becomes a serpent at the touch of anyone but his parents. In Act VII it is the decisive sign of paternity, a natural and divine counterpart to the ring."
+  },
+  {
+   "title": "The single braid",
+   "text": "Shakuntala's hair in a single braid in Act VII is the traditional sign of a wife separated from her husband, a visible mark of fidelity and penance."
+  }
+ ],
+ "debates": [
+  {
+   "title": "From epic to drama: what does the curse change?",
+   "text": [
+    "Kalidasa's addition of the curse and the ring is the central question in comparing the play with its Mahabharata source. In the epic, the king knowingly denies Shakuntala to avoid scandal, and Shakuntala argues her case with great force; in the play, the king's memory is clouded by a curse, and the heroine is gentler. Romila Thapar has traced the story from epic to drama to colonial and nationalist readings, arguing that the changes reflect a courtly society's idealisation of kingship and of the modest wife [[thapar1999]] [[vanbuitenen1973]].",
+    "Others stress that the curse deepens rather than weakens the drama. It moves the focus from the question of proof to the inward experience of forgetting and remorse, and it allows both lovers to remain sympathetic. Miller reads the play as a drama of memory in which the curse externalises the forgetfulness that passion itself brings [[miller1984]]."
+   ],
+   "cite": [
+    "thapar1999",
+    "vanbuitenen1973",
+    "miller1984"
+   ]
+  },
+  {
+   "title": "Rasa and the unity of the play",
+   "text": [
+    "Sanskrit theory requires a single dominant rasa, supported by others. Shakuntala's dominant rasa is śṛṅgāra, but the pathos of Act IV, the comedy of the clown and the fishermen, the heroic action of Act VI and the wonder of Act VII have led critics to ask how the moods combine. The theory of rasa developed by Abhinavagupta in the eleventh century, studied by Masson and Patwardhan, gives the terms for this discussion [[masson1970]] [[gerow1977]].",
+    "European critics in the nineteenth century, judging by Aristotelian standards, sometimes found the plot loose or the ending too fortunate. Later scholars answered that a Sanskrit play is not built on tragic conflict but on the development and resolution of a mood, and that the happy ending is required by the form [[keith1924]] [[byrski1974]]."
+   ],
+   "cite": [
+    "masson1970",
+    "gerow1977",
+    "keith1924",
+    "byrski1974"
+   ]
+  },
+  {
+   "title": "The recensions and the text",
+   "text": [
+    "The play exists in several recensions that differ in length and wording. In 1877 Richard Pischel edited the Bengali recension and argued that it best preserved Kalidasa's text; others have preferred the shorter Devanāgarī version. No edition has settled the matter, and modern translators choose among the versions [[pischel1877]] [[keith1924]].",
+    "The choice matters for interpretation, especially in Act III, where the love scene is longer and more explicit in some versions. Recent translations, such as those of W. J. Johnson and Somadeva Vasudeva, explain their textual choices, and readers comparing translations should check which recension they follow [[johnson2001]] [[vasudeva2006]]."
+   ],
+   "cite": [
+    "pischel1877",
+    "keith1924",
+    "johnson2001",
+    "vasudeva2006"
+   ]
+  },
+  {
+   "title": "The vidūṣaka: origins and function",
+   "text": [
+    "The clown Madhavya belongs to a stock type whose origins are debated. F. B. J. Kuiper linked the vidūṣaka to the god Varuṇa and to a cosmogonic opposition between the hero and his comic counterpart that, he argued, underlies the origins of Sanskrit drama; G. K. Bhat surveyed the type across Sanskrit drama and stressed its theatrical functions [[kuiper1979]] [[bhat1959]].",
+    "In Shakuntala the clown is both comic foil and plot device. His Prakrit speech and bodily appetites mark him off from the Sanskrit-speaking king, and his absence from the rejection scene, together with the king's lie that the affair was a jest, is one of the play's human explanations for the king's forgetting."
+   ],
+   "cite": [
+    "kuiper1979",
+    "bhat1959"
+   ]
+  },
+  {
+   "title": "Jones, Goethe and the European Shakuntala",
+   "text": [
+    "William Jones's English translation of 1789, and Georg Forster's German version of 1791, made the play famous in Europe. Jones called Kalidasa the Shakespeare of India and toned down some of the play's erotic passages for European readers. Herder wrote enthusiastically about the play, and Goethe's epigram, written in 1791, names Shakuntala as the one word that holds the blossom of spring and the fruit of autumn, heaven and earth together [[jones1789]] [[forster1791]] [[cannon1990]].",
+    "Goethe's Prelude on the Stage (Vorspiel auf dem Theater), which opens Faust (1808) with a dialogue among the Director, the Poet and the Merry Person, is widely thought to imitate the Sanskrit prologue. Dorothy Figueira and Raymond Schwab have shown how the Romantics turned Shakuntala into an ideal of nature and innocence that served their own needs; A. Leslie Willson traced the same idealisation in German thought [[goethe1808]] [[figueira1991]] [[schwab1984]] [[willson1964]]."
+   ],
+   "cite": [
+    "jones1789",
+    "forster1791",
+    "cannon1990",
+    "goethe1808",
+    "figueira1991",
+    "schwab1984",
+    "willson1964"
+   ]
+  },
+  {
+   "title": "Shakuntala's character and the ideal of the wife",
+   "text": [
+    "Shakuntala's character has been read in very different ways. Some readers see a heroine of complete innocence, shaped by the hermitage; others point to her desire, her quick tongue with her friends and her anger in Act V. Comparison with the bold Shakuntala of the Mahabharata suggests that Kalidasa made his heroine more modest and more dependent, in line with the court's ideal of womanhood [[thapar1999]].",
+    "Kanva's advice to obey and endure, the hermits' insistence that a wife belongs to her husband, and the final forgiveness have been read as an endorsement of patriarchal norms, and also as a portrayal of the cost of those norms, which the play makes the audience feel. The question has been central to modern Indian readings of the play, from Rabindranath Tagore's essay on its inner meaning to feminist criticism [[thapar1999]] [[miller1984]]."
+   ],
+   "cite": [
+    "thapar1999",
+    "miller1984"
+   ]
+  },
+  {
+   "title": "The date and setting of Kalidasa",
+   "text": [
+    "Kalidasa's date has been placed anywhere from the first century BC to the sixth century AD. Most scholars now favour the Gupta period, on the evidence of style, the development of kāvya and the traditional association with a King Vikramāditya, identified with Chandragupta II, but certainty is impossible [[mirashi1969]] [[warder1977]].",
+    "The question matters because it shapes how we read the play's picture of kingship and society. If the play belongs to the Gupta court, its ideal king and its harmony of court and hermitage can be read as a reflection of that culture's self-image [[pollock2006]] [[thapar1999]]."
+   ],
+   "cite": [
+    "mirashi1969",
+    "warder1977",
+    "pollock2006",
+    "thapar1999"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Shakuntala, Act I",
+   "quote": "The sage who yokes her artless charm\n  With pious pain and grief,\nWould try to cut the toughest vine\n  With a soft, blue lotus-leaf.",
+   "who": "Dushyanta",
+   "explanation": "The king's first comment on Shakuntala in her bark dress. He sees her through courtly eyes, as too delicate for the hermitage, a view the play will both share and qualify."
+  },
+  {
+   "ref": "Shakuntala, Act I",
+   "quote": "To beauty such as this\n  No woman could give birth;\nThe quivering lightning flash\n  Is not a child of earth.",
+   "who": "Dushyanta",
+   "explanation": "The king on learning that Shakuntala's mother was a nymph. Her half-divine birth prepares for her removal to heaven in Act V."
+  },
+  {
+   "ref": "Shakuntala, Act II",
+   "quote": "There lurks a hidden fire in each\n  Religious hermit-bower;\nCool sun-stones kindle if assailed\n  By any foreign power.",
+   "who": "Dushyanta",
+   "explanation": "The king's warning to his soldiers. The latent power of ascetics will break out in Durvasas's curse."
+  },
+  {
+   "ref": "Shakuntala, Act IV",
+   "quote": "Obey your elders; and be very kind\nTo rivals; never be perversely blind\nAnd angry with your husband, even though he\nShould prove less faithful than a man might be;",
+   "who": "Kanva",
+   "explanation": "Part of Kanva's counsel to Shakuntala on her departure, a classic statement of the ideal of the dutiful wife, and ironic in view of the rejection that follows."
+  },
+  {
+   "ref": "Shakuntala, Act V",
+   "quote": "He had a honey face and a heart of stone.",
+   "who": "Shakuntala",
+   "explanation": "Shakuntala's bitter judgment on the king who has rejected her. Her anger is brief and vivid, and the play does not dismiss it."
+  },
+  {
+   "ref": "Shakuntala, Act V",
+   "quote": "like a yawning well covered over with grass!",
+   "who": "Shakuntala",
+   "explanation": "Part of her retort that the king hides behind virtue. The image of a concealed pit is drawn from the forest world she comes from."
+  },
+  {
+   "ref": "Shakuntala, Act VI",
+   "quote": "Things lifeless know not beauty;\nBut I--I scorned my duty,\nThe sweetest task of all.",
+   "who": "Dushyanta",
+   "explanation": "The king reproaches the ring, then himself. He takes on the blame that Kashyapa will later lift from him."
+  },
+  {
+   "ref": "Shakuntala, Act VI",
+   "quote": "When I was happy in the sight,\nAnd when my heart was warm,\nYou brought sad memories back, and made\nMy love a painted form.",
+   "who": "Dushyanta",
+   "explanation": "The king's reproach to Madhavya for reminding him that the portrait is only a picture. Art can comfort only while illusion lasts."
+  },
+  {
+   "ref": "Shakuntala, Act VII",
+   "quote": "Reflections are not seen in dusty glass,\nWhich, cleaned, will mirror all the things that pass.",
+   "who": "Kashyapa",
+   "explanation": "Kashyapa's explanation of the curse. The king's mind was a clouded mirror; cleaned, it shows the truth again."
+  },
+  {
+   "ref": "Shakuntala, Act VII",
+   "quote": "May kingship benefit the land,\nAnd wisdom grow in scholars' band;\nMay Shiva see my faith on earth\nAnd make me free of all rebirth.",
+   "who": "Dushyanta",
+   "explanation": "The closing benediction (bharatavākya), which returns to Shiva, invoked in the opening benediction, and turns from love to the welfare of the realm."
+  }
+ ],
+ "questions": [
+  {
+   "q": "How does the Director's forgetting in the Prologue anticipate the plot of the play?",
+   "hint": "Compare his couplet about the deer with Durvasas's curse in Act IV and the king's state in Act V."
+  },
+  {
+   "q": "What does the hermit's rebuke in Act I tell us about the ideal of kingship in the play?",
+   "hint": "Look at the verses on the weapons 'lent' to the king and at how often he is called a protector."
+  },
+  {
+   "q": "Why does Kalidasa add the curse of Durvasas to the Mahabharata story, and what does it gain and lose?",
+   "hint": "Consider the king's responsibility, Shakuntala's character, and the shift from a dispute about proof to a drama of memory."
+  },
+  {
+   "q": "What is the role of Madhavya the clown, and how does his absence from Act V matter?",
+   "hint": "Look at the end of Act II and at what Madhavya says to the king in Act VI."
+  },
+  {
+   "q": "How does nature share in human feeling in Act IV, and why is that act so highly prized?",
+   "hint": "Look at the trees' gifts, the doe and peahen, the fawn and Kanva's farewell verses."
+  },
+  {
+   "q": "Is the king's behaviour in Act V excusable? Consider both what he says and what he feels.",
+   "hint": "Compare his dilemma about another man's wife with his jibe about the cuckoo, and with the song at the start of the act."
+  },
+  {
+   "q": "How does the play use tokens and signs (the ring, the bracelet, the portrait, the amulet) to explore memory and proof?",
+   "hint": "Mishrakeshi says that true love should not need a token. Does the play agree?"
+  },
+  {
+   "q": "How does the play combine śṛṅgāra with other moods such as pathos, comedy, heroism and wonder?",
+   "hint": "Assign each act a dominant mood and ask how the transitions are managed."
+  },
+  {
+   "q": "Why is the son so important to the plot and to the king's grief?",
+   "hint": "Consider the hermit's first blessing in Act I, the merchant's case in Act VI and Kashyapa's prophecy in Act VII."
+  },
+  {
+   "q": "Why did Shakuntala appeal so strongly to Goethe and the European Romantics, and what did they overlook?",
+   "hint": "Think about the image of innocent nature, and compare it with the ritual and political world of the play."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "bhat1959",
+   "text": "Bhat, G. K. The Vidūṣaka. Ahmedabad: New Order Book Co., 1959."
+  },
+  {
+   "id": "byrski1974",
+   "text": "Byrski, M. Christopher. Concept of Ancient Indian Theatre. New Delhi: Munshiram Manoharlal, 1974."
+  },
+  {
+   "id": "cannon1990",
+   "text": "Cannon, Garland. The Life and Mind of Oriental Jones: Sir William Jones, the Father of Modern Linguistics. Cambridge: Cambridge University Press, 1990."
+  },
+  {
+   "id": "figueira1991",
+   "text": "Figueira, Dorothy Matilda. Translating the Orient: The Reception of Śākuntala in Nineteenth-Century Europe. Albany: State University of New York Press, 1991."
+  },
+  {
+   "id": "forster1791",
+   "text": "Forster, Georg, trans. Sakontala oder der entscheidende Ring: Ein indisches Schauspiel von Kalidas. Mainz and Leipzig: Johann Peter Fischer, 1791."
+  },
+  {
+   "id": "gerow1977",
+   "text": "Gerow, Edwin. Indian Poetics. A History of Indian Literature 5.3. Wiesbaden: Otto Harrassowitz, 1977."
+  },
+  {
+   "id": "goethe1808",
+   "text": "Goethe, Johann Wolfgang von. Faust: Eine Tragödie. Tübingen: J. G. Cotta, 1808."
+  },
+  {
+   "id": "johnson2001",
+   "text": "Johnson, W. J., trans. The Recognition of Śakuntalā: A Play in Seven Acts. By Kālidāsa. Oxford World's Classics. Oxford: Oxford University Press, 2001."
+  },
+  {
+   "id": "jones1789",
+   "text": "Jones, William, trans. Sacontalá; or, The Fatal Ring: An Indian Drama. By Cálidás. Calcutta: Joseph Cooper, 1789."
+  },
+  {
+   "id": "keith1924",
+   "text": "Keith, A. Berriedale. The Sanskrit Drama in Its Origin, Development, Theory and Practice. Oxford: Clarendon Press, 1924."
+  },
+  {
+   "id": "kuiper1979",
+   "text": "Kuiper, F. B. J. Varuṇa and Vidūṣaka: On the Origin of the Sanskrit Drama. Amsterdam: North-Holland, 1979."
+  },
+  {
+   "id": "masson1970",
+   "text": "Masson, J. L., and M. V. Patwardhan. Aesthetic Rapture: The Rasādhyāya of the Nāṭyaśāstra. 2 vols. Poona: Deccan College Postgraduate and Research Institute, 1970."
+  },
+  {
+   "id": "miller1984",
+   "text": "Miller, Barbara Stoler, ed. Theater of Memory: The Plays of Kālidāsa. New York: Columbia University Press, 1984."
+  },
+  {
+   "id": "mirashi1969",
+   "text": "Mirashi, V. V., and N. R. Navlekar. Kālidāsa: Date, Life, and Works. Bombay: Popular Prakashan, 1969."
+  },
+  {
+   "id": "pischel1877",
+   "text": "Pischel, Richard, ed. Kâlidâsa's Çakuntalâ: The Bengâlî Recension, with Critical Notes. Kiel: Schwers, 1877."
+  },
+  {
+   "id": "pollock2006",
+   "text": "Pollock, Sheldon. The Language of the Gods in the World of Men: Sanskrit, Culture, and Power in Premodern India. Berkeley: University of California Press, 2006."
+  },
+  {
+   "id": "ryder1912",
+   "text": "Ryder, Arthur W., trans. Kalidasa: Translations of Shakuntala and Other Works. Everyman's Library. London: J. M. Dent; New York: E. P. Dutton, 1912."
+  },
+  {
+   "id": "schwab1984",
+   "text": "Schwab, Raymond. The Oriental Renaissance: Europe's Rediscovery of India and the East, 1680–1880. Translated by Gene Patterson-Black and Victor Reinking. New York: Columbia University Press, 1984."
+  },
+  {
+   "id": "thapar1999",
+   "text": "Thapar, Romila. Śakuntalā: Texts, Readings, Histories. New Delhi: Kali for Women, 1999."
+  },
+  {
+   "id": "vanbuitenen1973",
+   "text": "van Buitenen, J. A. B., trans. and ed. The Mahābhārata. Vol. 1, The Book of the Beginning. Chicago: University of Chicago Press, 1973."
+  },
+  {
+   "id": "vasudeva2006",
+   "text": "Vasudeva, Somadeva, trans. The Recognition of Shakúntala. By Kālidāsa. Clay Sanskrit Library. New York: New York University Press and JJC Foundation, 2006."
+  },
+  {
+   "id": "warder1977",
+   "text": "Warder, A. K. Indian Kāvya Literature. Vol. 3, The Early Medieval Period (Śūdraka to Viśākhadatta). Delhi: Motilal Banarsidass, 1977."
+  },
+  {
+   "id": "willson1964",
+   "text": "Willson, A. Leslie. A Mythical Image: The Ideal of India in German Romanticism. Durham, NC: Duke University Press, 1964."
+  }
+ ]
+}

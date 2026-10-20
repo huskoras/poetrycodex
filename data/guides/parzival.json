@@ -1,0 +1,952 @@
+{
+ "work": "parzival",
+ "title": "Parzival",
+ "author": "Wolfram von Eschenbach",
+ "quoteEdition": "parzival-weston",
+ "updated": "2026-10-19",
+ "unit": "Book",
+ "sameSections": true,
+ "glance": [
+  {
+   "label": "Composed",
+   "value": "c. 1200–1210; a reference in Book VII to the trampled vineyards of Erfurt, devastated in the siege of 1203, gives the one firm point of reference for dating"
+  },
+  {
+   "label": "Author",
+   "value": "Wolfram von Eschenbach, a Franconian knight-poet (fl. c. 1195–1220), also the author of Willehalm, the Titurel fragments and a small body of lyric"
+  },
+  {
+   "label": "Genre",
+   "value": "Courtly verse romance (höfischer Roman) on the Grail; a family chronicle and a religious narrative as well as an Arthurian adventure story"
+  },
+  {
+   "label": "Language and form",
+   "value": "Middle High German, in four-stress rhyming couplets"
+  },
+  {
+   "label": "Length",
+   "value": "About 24,800 lines, printed since Karl Lachmann (1833) in 827 sections of thirty lines and divided into sixteen books"
+  },
+  {
+   "label": "Main source",
+   "value": "Chrétien de Troyes, Le Conte du Graal (Perceval), unfinished at about 9,200 lines; Wolfram names instead a Provençal master 'Kyot'"
+  },
+  {
+   "label": "Setting",
+   "value": "Anjou, Wales and Arthur's Britain, the Grail castle Munsalvæsche, the magic castle Schastel marveile, and an Orient that runs from Zazamanc to Baghdad"
+  },
+  {
+   "label": "Protagonists",
+   "value": "Parzival, the Grail seeker; Gawan, the model Arthurian knight, whose adventures fill about a third of the poem"
+  },
+  {
+   "label": "Text quoted",
+   "value": "Jessie L. Weston's verse translation (1894), the first complete Parzival in English, in long rhyming couplets"
+  },
+  {
+   "label": "Spelling of names",
+   "value": "This guide uses the usual Middle High German forms (Gahmuret, Condwiramurs, Cundrie, Trevrizent, Munsalvæsche, Feirefiz, Gawan); Weston writes Gamuret, Kondwiramur, Kondrie, Trevrezent, Monsalväsch, Feirefis and Gawain"
+  }
+ ],
+ "context": [
+  "Almost everything we know about Wolfram von Eschenbach comes from his own works. He calls himself a knight by calling ('schildes ambet ist mîn art', the office of the shield is my birthright), names places in Franconia and its neighbourhood, among them Eschenbach near Ansbach (since 1917 called Wolframs-Eschenbach), and mentions patrons and acquaintances, notably Landgrave Hermann I of Thuringia, whose court at the Wartburg is joked about in Book VI. Parzival was composed in stages over roughly the first decade of the thirteenth century; it was followed by the unfinished crusading epic Willehalm and the strophic Titurel fragments, which take up the story of Sigune and Schionatulander [[bumke2004]] [[heinzle2011]].",
+  "Wolfram's principal source was the Conte du Graal (or Perceval) of Chrétien de Troyes, composed in the 1180s for Philip of Flanders and left unfinished, breaking off in the middle of Gauvain's adventures [[roach1959]] [[bryant1982]]. Wolfram follows Chrétien's sequence of episodes, often closely, in Books III to XIII, but he gives the hero a two-book prehistory, the story of his father Gahmuret, and supplies an ending of his own in Books XIV to XVI. He also transforms what he takes over: he names the nameless, builds the scattered characters into two great interlocking families, turns Chrétien's mysterious graal (a serving dish) into a stone, and makes the hermit's instruction in Book IX the theological centre of the poem.",
+  "Yet Wolfram never names Chrétien until the epilogue, and then only to say that the Frenchman may have told the story wrongly. His authority, he insists, is 'Kyot the Provençal', who wrote in French and found the story of the Grail in Toledo, in an Arabic book by the heathen astronomer Flegetanis. No such author or book is known, and most scholars regard Kyot as a fiction, though the question has been argued for a century and a half [[lofmark1981]] [[bumke2004]].",
+  "The poem was a medieval success: it survives in more than eighty manuscripts and fragments, more than any other German romance, and was printed at Strasbourg as early as 1477 [[schirok1982]]. Modern study begins with Karl Lachmann's edition of 1833, whose division into sixteen books, following the large initials of the St Gall manuscript, and into thirty-line sections, is still the standard way of citing the text [[lachmann1833]]. The best modern edition with commentary is Eberhard Nellmann's [[nellmann1994]]; English readers have the prose translations of A. T. Hatto and Cyril Edwards [[hatto1980]] [[edwards2006]].",
+  "Jessie L. Weston, whose translation this guide quotes, published her Parzival in 1894, early in a career devoted to the Grail legends; her later book From Ritual to Romance, with its theory of a pagan fertility rite behind the Grail story, was one of the sources of T. S. Eliot's The Waste Land [[weston1894]] [[weston1920]]. Her long, archaising couplets are free: she expands, compresses and sometimes rearranges, so that her lines cannot be matched one for one with Lachmann's numbering. References in this guide therefore give the book only."
+ ],
+ "plot": [
+  "Gahmuret, a younger son of the house of Anjou who inherits nothing, seeks fame in the East. In the African kingdom of Zazamanc he raises a siege and marries its black queen, Belakane, but he leaves her secretly, and she bears a son, Feirefiz, whose skin is mottled black and white. Back in the West Gahmuret wins the Welsh queen Herzeleide at a tournament, but soon returns to the East and is killed in battle. Herzeleide gives birth to Parzival and, determined to keep him from knighthood, raises him in the forest of Soltane in ignorance of his name and lineage.",
+  "When the boy meets knights in the wood he leaves for Arthur's court in a fool's costume, kills the Red Knight Ither for his armour (not knowing that Ither is his kinsman), and is trained in courtly manners by the old prince Gurnemanz, who advises him among other things not to ask too many questions. He relieves the besieged city of Queen Condwiramurs and marries her. Leaving to visit his mother, who in fact died of grief the day he left, he comes to the Grail castle, Munsalvæsche, sees the suffering king Anfortas and the procession of the Grail, and fails to ask what ails his host. Publicly cursed for this by the Grail messenger Cundrie at the moment of his welcome into the Round Table, he renounces God and rides off alone to find the Grail again.",
+  "The narrative now follows Gawan through a sequence of adventures: the defence of Bearosche for the child Obilot, a compromising love scene with Antikonie, and the long courtship of the scornful duchess Orgeluse, for whose sake he conquers the enchanted castle of Klingsor and frees the captive queens of his own family. Parzival reappears only briefly, except in Book IX, where on Good Friday he comes to the hermit Trevrizent, his maternal uncle, learns the secrets of the Grail and of his own guilt, and is reconciled to God.",
+  "In the last books Parzival fights unrecognised against Gawan and then against his own half-brother Feirefiz, who has come west with an army; the two recognise one another when Parzival's sword breaks. Cundrie returns to announce that Parzival has been called to the Grail. At Munsalvæsche he asks the question, Anfortas is healed, and Parzival becomes Grail King, reunited with Condwiramurs and their twin sons. Feirefiz is baptised to marry the Grail bearer, Repanse de Schoye; their son will be Prester John. The poem closes with the story of Parzival's son Loherangrin, the knight of the swan."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Gahmuret and Belakane",
+   "lines": "Lachmann 1–58",
+   "section": 0,
+   "summary": [
+    "A dense, deliberately obscure prologue opens the poem. Doubt (zwîvel) lodged near the heart brings the soul to grief; the man who is wholly faithless is black, the steadfast man white, but the waverer is mottled like a magpie and may still be saved. The narrator compares his own story to a hare that bolts before a slow reader can catch it, and adds a lesson for women on true and false praise.",
+    "The story begins with Gahmuret, younger son of King Gandin of Anjou. Under the law of primogeniture his elder brother Galoes inherits everything, and Gahmuret, refusing to live as a dependant, sets out to win honour. He serves the Baruc of Baghdad, then arrives at Patelamunt in Zazamanc, besieged because its queen, Belakane, is blamed for the death of her suitor Isenhart. Gahmuret defeats the besiegers, marries Belakane and becomes king.",
+    "Restless for knighthood, he soon leaves her by night on a ship, writing a letter in which he says that he would have stayed had she been baptised, and tells her of his lineage. Belakane, grieving, bears a son, Feirefiz Angevin, whose skin is both black and white."
+   ],
+   "analysis": [
+    "The magpie image of the prologue reappears in the body of Feirefiz at the end of the book, and both point to the poem's central question of how a person mixed of good and bad, faith and doubt, may be judged. Scholars have long debated whether the prologue concerns the hero alone, the audience, or the narrator's poetics; its very difficulty seems part of its point, warning against the slow reader who wants a fixed meaning [[groos1995]] [[bumke2004]].",
+    "Wolfram begins not with the hero but with his father, and with a social problem familiar to his audience, the landless younger son. Gahmuret's love for Belakane is presented with real tenderness and without any suggestion that her colour makes her less beautiful in his eyes; the poem returns to his desertion of her in Book XV, when the son born of it rides into Parzival's life."
+   ],
+   "key": [
+    {
+     "ref": "Book I (prologue)",
+     "quote": "If unfaith in the heart find dwelling, then the soul it shall reap but woe;\nAnd shaming alike and honour are his who such doubt shall show,\nFor it standeth in evil contrast with a true man's dauntless might,\nAs one seeth the magpie's plumage, which at one while is black and white.",
+     "note": "The first lines of the poem. Weston's 'unfaith' and 'doubt' translate Wolfram's zwîvel, a word that covers wavering, despair and doubt of God; the magpie's mixed plumage becomes the emblem of a mind divided between heaven and hell."
+    },
+    {
+     "ref": "Book I",
+     "quote": "Then the queen at the time appointed bare a son, who was dark and light,\nFor in him had God wrought a wonder, at one while was he black and white.",
+     "note": "Feirefiz literally embodies the magpie image of the prologue. The phrase 'at one while' echoes the opening, linking a moral metaphor to a body and preparing for the brothers' meeting in Book XV."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Gahmuret and Herzeleide",
+   "lines": "Lachmann 58–116",
+   "section": 1,
+   "summary": [
+    "Gahmuret lands in Spain and comes to Kanvoleis in Waleis, where the young widowed queen Herzeleide has offered her hand and her lands to the winner of a tournament. He excels at the preliminary vespers, and the tournament proper is cancelled. Three women now claim him: Herzeleide, Queen Ampflise of France, who loved him first, and, in absence, Belakane. A judgement decides in Herzeleide's favour, and Gahmuret marries her on condition that he may go to a tournament every month.",
+    "When the Baruc is attacked again, Gahmuret rides East to his aid and is killed: a heathen had softened his diamond helmet with goat's blood, and Ipomidon's spear pierced it. The news reaches Herzeleide, pregnant and haunted by a dream in which a dragon tears itself from her womb. Fourteen days later she gives birth to Parzival and nurses him herself."
+   ],
+   "analysis": [
+    "Book II completes the double prehistory of the hero, who inherits from his father's Angevin line a drive to knighthood and from his mother's line the Grail kindred, though neither he nor the reader yet knows it. The narrator marks the turn explicitly: with the birth, his tale proper begins.",
+    "Herzeleide's grief is described with images of the Virgin nursing Christ, which give her a dignity that Chrétien's widow never has. In Lachmann's numbering this book ends with the narrator's so-called self-defence (Selbstverteidigung), in which he quarrels with a woman who wronged him, declares that knighthood is his calling, and famously claims he knows not a single letter; Weston prints this passage at the head of Book III [[bumke2004]] [[groos1995]]."
+   ],
+   "key": [
+    {
+     "ref": "Book II",
+     "quote": "Now 'tis cast the die of the venture, and here doth my tale begin,\nFor now is he born who henceforward this song for his own shall win.",
+     "note": "The narrator distinguishes the hero's story from the long prologue of his father's life, and claims a design for the whole work."
+    },
+    {
+     "ref": "Book II",
+     "quote": "And no joy did she know, the mother, save ever her babe to kiss,\nAnd with soft words she spake to him ever, 'Bon fils, Cher fils, Beau fils.'",
+     "note": "These French endearments are the only name the boy knows until Sigune tells him who he is in Book III; his identity begins as his mother's love."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Forest, Ither and Gurnemanz",
+   "lines": "Lachmann 116–179",
+   "section": 2,
+   "summary": [
+    "Herzeleide withdraws with her people to the forest of Soltane, forbidding any mention of knighthood. The boy makes his own bows and shoots birds, then weeps at their song; when she has the birds trapped he asks her to leave them in peace, and she tells him about God, who is brighter than the day, and the devil, who is black. Meeting four knights in shining armour, he takes their leader for God. Herzeleide, unable to keep him, sends him off dressed as a fool, with confused advice, and dies of grief as he rides away.",
+    "On the way he robs the sleeping duchess Jeschute of a ring, a brooch and a kiss, bringing her husband Orilus's anger upon her; he meets his cousin Sigune mourning her dead lover Schionatulander, and she tells him his name and lineage. At Arthur's court he demands the armour of Ither, the Red Knight, who has just insulted the queen, kills him with a javelin, and rides on in the red armour over his fool's clothes. The old prince Gurnemanz teaches him to fight, to dress and to behave, and gives him a set of rules, including the advice not to ask many questions."
+   ],
+   "analysis": [
+    "The forest upbringing makes Parzival's ignorance a result of a mother's love and fear rather than simple rusticity. Herzeleide's lesson on light and darkness reworks the prologue's black and white, and the boy's literal-minded obedience to every piece of advice, from his mother and then from Gurnemanz, is the comic and fatal pattern of the early books.",
+    "Ither's death is presented as a grave wrong, though Parzival does not understand it; the courtly world laments him, and only in Book IX will Parzival learn that he has killed his own kin. The book therefore lays down the elements of his later guilt: his mother's death, Ither's death and the rule against questions [[green1982]] [[wapnewski1955]]."
+   ],
+   "key": [
+    {
+     "ref": "Book III",
+     "quote": "But the boy looked up in wonder, 'God, Mother? Who may God be?'\n'My son, He is light beyond all light, brighter than summer's day,",
+     "note": "The boy's first religious instruction. Defining God as light leads at once to his mistaking the shining knights for gods."
+    },
+    {
+     "ref": "Book III",
+     "quote": "Nor be thou so swift to question--Yet I would not that thou withhold\nAn answer good and fitting to the speech one with thee would hold.",
+     "note": "Gurnemanz's sensible counsel of discretion, meant for social life, becomes the obstacle at Munsalvæsche in Book V."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Condwiramurs",
+   "lines": "Lachmann 179–223",
+   "section": 3,
+   "summary": [
+    "Parzival comes to Pelrapeire, a starving city besieged by King Clamide and his seneschal Kingrun, who seek to force its queen, Condwiramurs, into marriage. At night she comes to his bedside in tears to ask for help, and they lie together chastely. He defeats Kingrun and then Clamide, sending both to Arthur's court as prisoners in honour of Cunneware, the lady beaten by Keie for laughing at him.",
+    "Parzival marries Condwiramurs; for the first nights the marriage remains unconsummated, until he recalls the teaching that man and wife are one. He rules the land well, but after a time he asks leave to see how his mother fares, and rides away."
+   ],
+   "analysis": [
+    "Condwiramurs (the name is usually explained as 'conduire amour', to lead love) is the poem's model of married love, and Parzival's fidelity to her never wavers, even when he has abandoned God. Wolfram treats their chaste nights with humour and delicacy; their love is courtly and marital at once, and it later anchors his quest.",
+    "Clamide and Kingrun go to Arthur's court and so prepare for Parzival's return to the Round Table in Book VI. The book also shows that Parzival, though brave, is still learning: he obeys rules rather than understanding them."
+   ],
+   "key": [
+    {
+     "ref": "Book IV",
+     "quote": "Thus he whom men called the Red Knight, a maiden he left the queen,\nYet surely she deemed in the morning his wife she o'er night had been,",
+     "note": "The comedy of the wedding nights: Parzival's innocence is the same unknowing quality that will fail him at the Grail castle."
+    },
+    {
+     "ref": "Book IV",
+     "quote": "Then he thought of his mother's counsel, and how Gurnemanz spake of yore,\nThat man and wife should as one be, and the doubt vexed his soul no more,",
+     "note": "Parzival can act only once he remembers a rule given by others; the pattern of obedience without understanding continues."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Munsalvæsche",
+   "lines": "Lachmann 224–279",
+   "section": 4,
+   "summary": [
+    "Riding at random, Parzival meets a fisherman on a lake who directs him to his castle. At Munsalvæsche he is received with honour, but the hall is full of grief. A squire runs through the hall carrying a bleeding lance, and all weep. Then a procession of maidens enters, the last of them the queen Repanse de Schoye bearing the Grail, which provides every guest with food and drink. The host, Anfortas, lies wrapped in furs by the fire and is plainly in agony; he gives Parzival a sword. Remembering Gurnemanz, Parzival asks nothing.",
+    "In the morning the castle is empty. As Parzival rides out the drawbridge is raised behind him, and a squire mocks him as a goose for not asking. In the forest he finds Sigune again, now holding Schionatulander's embalmed body in a linden tree; she tells him what he has missed and curses him. He then meets Jeschute, still punished by Orilus, defeats Orilus and swears to her innocence, reconciling the couple."
+   ],
+   "analysis": [
+    "The failed question is the hinge of the poem. Wolfram makes clear that Parzival's silence comes from good manners wrongly applied, but the narrator and Sigune present it as a failure of compassion: he should have asked out of pity, and the question would have healed the king. Critics debate how far a youth who does not know what he is seeing can be blamed, and whether his failure is sin or a lack of understanding (tumpheit) [[wapnewski1955]] [[green1982]].",
+    "Wolfram's Grail procession is more elaborate and more numerical than Chrétien's, with carefully counted maidens, colours, candles and precious objects, yet he still withholds what the Grail is. The audience shares Parzival's ignorance until Book IX, a choice the narrator himself defends there as part of his source's design."
+   ],
+   "key": [
+    {
+     "ref": "Book V",
+     "quote": "Root and blossom of Paradise garden, that thing which men call 'The Grail,'\nThe crown of all earthly wishes, fair fulness that ne'er shall fail!",
+     "note": "The Grail's first appearance. It is described as the sum of all earthly abundance, but nothing is said of its nature; only in Book IX is it called a stone."
+    },
+    {
+     "ref": "Book V",
+     "quote": "Ah! woe to the guest that asked not, I am sorrowful for his sake,\nWhen his hand clasped the sword 'twas a token that his silence he well might break.",
+     "note": "The narrator intervenes to lament the failure. The gift of the sword was an invitation to speak, and Parzival misses its meaning."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "The Blood in the Snow and Cundrie",
+   "lines": "Lachmann 280–337",
+   "section": 5,
+   "summary": [
+    "Arthur has set out to find the Red Knight. Near the camp, early in the morning, a falcon strikes a goose and three drops of blood fall on the snow; the red and white remind Parzival of Condwiramurs's face, and he falls into a love trance. Segramors and Keie ride out against him, and he unseats both without waking, breaking Keie's arm and so avenging Cunneware. Gawan covers the blood with a cloth, releases him, and brings him to Arthur, who receives him into the Round Table.",
+    "At the feast the hideous, learned Grail messenger Cundrie rides in and curses Parzival before the court for his failure to ask the question, and tells him of a half-brother in the East. Kingrimursel then accuses Gawan of murdering his lord, summoning him to a judicial combat. The fellowship breaks up: Parzival declares that he will serve God no more and sets out to find the Grail, while Gawan rides off to clear his name."
+   ],
+   "analysis": [
+    "The blood-drop scene, inherited from Chrétien but greatly expanded, has become a test case for medieval ideas of perception and memory: Parzival sees, and loses himself in seeing, while the courtiers around him see only an armed stranger. Bumke has read the episode as a demonstration of the difference between perception and understanding that runs through the whole poem [[bumke2001]].",
+    "Cundrie's curse arrives at the moment of Parzival's greatest worldly honour, and it divides the poem in two. His response, to renounce a God who has disgraced him, is not unbelief but a kind of feudal anger against a lord who has failed his vassal; it leads straight to Book IX."
+   ],
+   "key": [
+    {
+     "ref": "Book VI",
+     "quote": "I find ever thy face so gracious, my lady, Kondwiramur,\nRed as blood-drops and white as the snowdrift, it rejoiceth me evermore!'",
+     "note": "Parzival reads the colours as a likeness of his wife. Wolfram's narrator praises his loyalty: the love that distracts him is faithful married love."
+    },
+    {
+     "ref": "Book VI",
+     "quote": "Henceforth I renounce His service; doth He hate me, His hate I'll face!",
+     "note": "Parzival's quarrel with God, spoken to Gawan. He understands God as a lord who owes help in return for service, the error Trevrizent will correct."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Gawan and Obilot",
+   "lines": "Lachmann 338–397",
+   "section": 6,
+   "summary": [
+    "The narrator turns to Gawan. On his way to the judicial combat he comes upon an army besieging Bearosche, where Duke Lyppaut is attacked by his young overlord King Meljanz, whose love has been rejected by Lyppaut's elder daughter Obie. Obie insults Gawan; her small sister Obilot asks him to be her knight, and he accepts.",
+    "Obilot sends him a sleeve from her dress as a token, and he fights for the town. Among the besiegers fights an unknown Red Knight, Parzival, who captures several knights and bids them either win Meljanz's release or seek the Grail for him. Gawan captures Meljanz and gives him to Obilot, who hands him to her sister; Obie and Meljanz are reconciled and married."
+   ],
+   "analysis": [
+    "The first Gawan book transposes the adult forms of courtly love service into a child's game, and the result is both comic and moving. Obilot's speech of devotion mimics a lady's love-service perfectly, and Gawan's grave acceptance shows his courtliness at its finest.",
+    "The episode also places Parzival in the background of Gawan's world: he fights on the other side, unrecognised, which anticipates their later combat. The relation between the two heroes' paths is a central question for the poem's structure [[wynn1984]] [[hasty1999]]."
+   ],
+   "key": [
+    {
+     "ref": "Book VII",
+     "quote": "Thy friend will I be and comrade, and whatever chance betide,\nA roof 'gainst misfortune's stormcloud, safe dwelling wherein to hide.",
+     "note": "Obilot's offer of love and protection to Gawan, spoken with a child's earnestness in the language of a great lady."
+    },
+    {
+     "ref": "Book VII",
+     "quote": "If your childhood shall thus be powerful, what then of your maidenhood?",
+     "note": "Gawan's playful compliment to the little girls: courtly charm in his mouth is never cynical."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Antikonie",
+   "lines": "Lachmann 398–432",
+   "section": 7,
+   "summary": [
+    "At Schanpfanzun, where the judicial combat is to take place, King Vergulaht, who is Gawan's host and also his accuser's lord, sends him to his sister Antikonie. The two quickly embrace, and they are discovered. The townspeople attack; Antikonie and Gawan defend themselves in a tower, he using a chessboard as a shield while she hurls the heavy chessmen.",
+    "Kingrimursel, who had guaranteed Gawan's safety, takes his side. After debate in the council, the combat is postponed for a year, and Gawan is sent instead to seek the Grail on Vergulaht's behalf, a task Parzival had laid on the king after defeating him."
+   ],
+   "analysis": [
+    "This is Wolfram's version of a comic episode in Chrétien, and his narrator enjoys the spectacle of the princess fighting beside the knight. At the same time he worries about the ethics of hospitality and the conduct of a king who lets his guest be attacked, and the council debate gives a sense of political deliberation.",
+    "In this book the narrator first names Kyot, as the source who gave the name of the counsellor Liddamus. The claim comes almost casually, in the middle of a Gawan episode, which suggests that the Kyot fiction was designed to cover Wolfram's departures from Chrétien [[lofmark1981]] [[bumke2004]]."
+   ],
+   "key": [
+    {
+     "ref": "Book VIII",
+     "quote": "At length did she chance on some chess-men, and a chess-board, wide and fair,\nThat hung by a ring of iron; to Gawain she brought it there,",
+     "note": "The comic transposition of courtly play into battle. Chess, the game of kings and queens, becomes literal warfare."
+    },
+    {
+     "ref": "Book VIII",
+     "quote": "And I rede ye to wit that Kiot of old was a Provençal,\nWho found writ in a book of the heathen this story of Parzival.",
+     "note": "The first mention of Kyot. In Wolfram's text the name occurs here, long after the poem has begun; Weston also uses Kiot for the uncle of Condwiramurs, a different figure."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Trevrizent",
+   "lines": "Lachmann 433–502",
+   "section": 8,
+   "summary": [
+    "The book opens with a dialogue between the narrator and Lady Adventure. Parzival finds Sigune walled up in a hermit's cell beside her dead lover's coffin; she forgives him and sends him after Cundrie's track. He defeats a Grail knight and takes his horse. Then he meets a grey knight, Kahenis, walking barefoot with his family, who rebukes him for riding armed on Good Friday and directs him to a hermit.",
+    "Parzival stays fifteen days with Trevrizent, who turns out to be his mother's brother and Anfortas's brother. Trevrizent teaches him that God is faithful and cannot be forced, explains the Grail, a stone that sustains its knightly order, renewed every Good Friday by a wafer brought by a dove, and tells the story of Anfortas's wound, received in a joust in the service of a love not permitted by the Grail. Parzival confesses that he is the one who failed to ask; Trevrizent tells him that Ither was his kinsman and that his mother died of grief. Parzival is absolved and leaves reconciled to God."
+   ],
+   "analysis": [
+    "Book IX is the theological centre of the poem, and much of its doctrine has been debated: the nature of Parzival's sins, the role of Trevrizent's teaching, and the strange statements about the Grail and the neutral angels, which Trevrizent himself retracts in Book XVI. Wolfram makes the hermit a layman who has been a knight, a teacher of humility rather than a priest [[wapnewski1955]] [[groos1995]].",
+    "This is also the book of Kyot. The narrator explains why he withheld the Grail's secret: Kyot found the story in Toledo, in an Arabic manuscript of the astronomer Flegetanis, a descendant of Solomon, and then sought the history of the Grail family in Latin chronicles. The passage makes the Grail a meeting of heathen learning, Jewish lineage and Christian faith [[lofmark1981]] [[mertens2003]]."
+   ],
+   "key": [
+    {
+     "ref": "Book IX",
+     "quote": "For Kiot of old, the master whom men spake of in days of yore,\nFar off in Toledo's city, found in Arabic writ the lore\nBy men cast aside and forgotten, the tale of the wondrous Grail;",
+     "note": "Wolfram's account of his source. Toledo was the great centre for translation of Arabic science into Latin, which gives the fiction its plausibility."
+    },
+    {
+     "ref": "Book IX",
+     "quote": "Men call it Lapis Exilis--by its magic the wondrous bird,\nThe Phoenix, becometh ashes, and yet doth such virtue flow",
+     "note": "The Grail is a stone. The manuscripts read lapsit exillis (Lachmann 469,7); Weston, like many before her, normalises this to lapis exilis, one of several proposed readings."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Orgeluse",
+   "lines": "Lachmann 503–552",
+   "section": 9,
+   "summary": [
+    "Gawan continues his quest. He tends a wounded knight, Urjans, who repays him by stealing his horse; it later emerges that Gawan had once had Urjans punished for rape. Near Logroys he meets the duchess Orgeluse, the most beautiful woman he has ever seen, and offers her his service; she treats him with contempt, makes him fetch her horse and ride a wretched nag, and mocks every effort he makes.",
+    "Gawan endures this scorn, defeats Lischoys Gwelljus, who attacks him on Orgeluse's behalf, and comes to the ferryman Plippalinot. Across the water stands Schastel marveile, a castle in which many ladies are held captive."
+   ],
+   "analysis": [
+    "Orgeluse (the name suggests orgueil, pride) is the most complex female figure in the Gawan part. Her cruelty is later explained by grief for her husband Cidegast, killed by Gramoflanz, and by her search for a champion to avenge him; her testing of Gawan becomes a story about the proof of love under humiliation.",
+    "The Urjans episode shows Gawan as an upholder of justice, and his patience with Orgeluse contrasts with the hot temper of Keie and the self-absorption of other knights. Gawan learns nothing in the sense that Parzival does, but he is shown at full stretch."
+   ],
+   "key": [
+    {
+     "ref": "Book X",
+     "quote": "The charm that desire awakeneth, a balm for the eyes of care,\nFor no heart but was drawn toward her, and no mouth but would speak her fair!",
+     "note": "Orgeluse's introduction. Her beauty is described as irresistible, which sets up the long humiliation of the man who loves her."
+    },
+    {
+     "ref": "Book X",
+     "quote": "But Orgelusé, that lovely lady, bare herself in no friendly wise,",
+     "note": "Understatement typical of Wolfram's narrator: the gap between her beauty and her behaviour is the point of the episode."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Schastel Marveile",
+   "lines": "Lachmann 553–582",
+   "section": 10,
+   "summary": [
+    "Gawan spends the night with the ferryman and his daughter Bene, and learns that the castle opposite has been bewitched by Klingsor. He insists on attempting the adventure. In the hall he finds the Lit marveile, a bed on wheels that charges about the polished floor; once he is on it, stones and crossbow bolts rain down upon him, and then a peasant releases a lion, which Gawan kills.",
+    "He is found, almost dead, by the ladies of the castle. The old queen Arnive cares for him; she and the other captives, among them, though he does not yet know it, his grandmother, mother and sisters, are now free."
+   ],
+   "analysis": [
+    "This is the most fantastic of the poem's adventures and the counterpart of Parzival's failed visit to Munsalvæsche: where Parzival had to ask, Gawan has to endure. The two castles of women, one sacred and one magical, make a symmetrical pair in the poem's structure.",
+    "Wolfram expands Chrétien's episode with comic detail. Arnive's role as healer and wise counsellor prepares for her revelations about Klingsor in Book XIII."
+   ],
+   "key": [
+    {
+     "ref": "Book XI",
+     "quote": "For now full five hundred cross-bows were bended, their bolts they sped,\nAnd each one was aimed at the hero as he lay on the Wonder-Bed.",
+     "note": "The ordeal of the Lit marveile. Its exaggeration is part of the comedy and the wonder."
+    },
+    {
+     "ref": "Book XI",
+     "quote": "And he who would seek for comfort he ne'er on such couch should lie!",
+     "note": "The narrator's dry joke on the 'wonder bed', which is no place for rest."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "The Garland and Gramoflanz",
+   "lines": "Lachmann 583–626",
+   "section": 11,
+   "summary": [
+    "The book opens with the narrator's reflection on how Gawan's wounds and his love for Orgeluse torment him. Gawan sees, in a magic pillar of the castle, Orgeluse approaching with a knight, Florand, whom he defeats. Orgeluse then asks him to fetch a garland from a tree guarded by King Gramoflanz, which means leaping the dangerous ravine Li gweiz prelljus.",
+    "Gawan's horse falls into the river, but he survives, takes the garland and meets Gramoflanz, who refuses to fight a single opponent and challenges him to a combat before Arthur's court. Gramoflanz explains that he killed Orgeluse's husband Cidegast and that he loves Gawan's sister Itonje. When Gawan returns, Orgeluse repents of her treatment of him and explains her grief and her purpose."
+   ],
+   "analysis": [
+    "The garland episode completes Orgeluse's tests and turns her cruelty into a story of loyalty to a dead husband. It also brings together the strands of family relationship that Wolfram uses throughout: the man Gawan must fight loves his sister.",
+    "Orgeluse's account of her past reveals that Anfortas once served her and was wounded for her sake, linking Gawan's story to the Grail story. Wolfram constantly weaves such connections so that the two halves are never fully separate [[wynn1984]]."
+   ],
+   "key": [
+    {
+     "ref": "Book XII",
+     "quote": "Then she quoth, 'Thou shalt win me a garland of fresh leaves from off a tree,\nAnd I for the gift will praise thee--If thou doest this deed for me\nThou shalt find in my love rewarding!'",
+     "note": "Orgeluse sets her last task. The prize is love, but the danger is real."
+    },
+    {
+     "ref": "Book XII",
+     "quote": "Then thy garland, tho' death it bring me, shall lack not a single leaf!'",
+     "note": "Gawan accepts the challenge with courtly hyperbole."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Klingsor",
+   "lines": "Lachmann 627–678",
+   "section": 12,
+   "summary": [
+    "Gawan sends a message summoning Arthur, and Orgeluse agrees to marry him. A feast is held at Schastel marveile. Arnive tells Gawan the story of Klingsor, a duke of Capua caught in adultery with Queen Iblis of Sicily and castrated by her husband, King Ibert; in revenge against the world he learned magic in Persida and built the castle to hold noble women captive.",
+    "Arthur's court arrives, and the scenes of meeting and recognition begin, as Gawan reveals himself to his mother, grandmother and sisters."
+   ],
+   "analysis": [
+    "Klingsor's castration makes him a dark mirror of Anfortas, whose wound in the groin also came from a forbidden love; magic and the Grail are opposed powers, both bound to the theme of sexuality and its control. Wagner made this link central in Parsifal.",
+    "Chrétien's romance breaks off at about this point. Wolfram's narrative from here on is his own, and he uses it to unite the poem's families and bring Parzival back to the centre."
+   ],
+   "key": [
+    {
+     "ref": "Book XIII",
+     "quote": "And he left with his knife such token of shame on the traitor knight\nThat henceforward the love of woman it rejoiceth him never more!",
+     "note": "Klingsor's mutilation. His magic arises from a sexual wound and his hatred of love."
+    },
+    {
+     "ref": "Book XIII",
+     "quote": "Say, wherefore by mighty magic hath Klingsor this palace made?",
+     "note": "Gawan's question to Arnive. Unlike Parzival, Gawan asks, and receives the history of what he has seen."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Parzival and Gawan",
+   "lines": "Lachmann 679–733",
+   "section": 13,
+   "summary": [
+    "Before the combat with Gramoflanz, Gawan meets a knight wearing a garland from Gramoflanz's tree and assumes he is his opponent. They fight until Gawan is nearly beaten, when some pages call out Gawan's name; the stranger, Parzival, throws away his sword and laments that he has fought his cousin.",
+    "Parzival then fights Gramoflanz in Gawan's place, and wins. Arthur mediates: Gramoflanz marries Itonje, Gawan marries Orgeluse, and other marriages follow. Parzival is welcomed back into the Round Table, but alone among the rejoicing company he cannot rest without Condwiramurs and the Grail, and he leaves at dawn."
+   ],
+   "analysis": [
+    "The combat between the two heroes brings the two halves of the poem together. Their fight is, as Gawan says, a fight against oneself; kinship and friendship override every other bond. Parzival's lament shows that he still thinks of himself as unlucky, born under a hostile star.",
+    "The wave of marriages ends the Arthurian part in social harmony, and Parzival's departure marks his difference from that world: he has a further goal [[hasty1999]]."
+   ],
+   "key": [
+    {
+     "ref": "Book XIV",
+     "quote": "'Tis myself whom I here have vanquished, and my joy shall have taken flight.",
+     "note": "Parzival's lament on discovering that he has fought Gawan. The idea that a fight between kin is a fight against oneself returns in Book XV."
+    },
+    {
+     "ref": "Book XIV",
+     "quote": "Then out quoth Gawain, 'So, 'tis fitting, here Folly her goal hath found,",
+     "note": "Gawan accepts the reversal with wry courtesy; the 'folly' is the absurdity of their fight."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Feirefiz",
+   "lines": "Lachmann 734–786",
+   "section": 14,
+   "summary": [
+    "Riding through a forest, Parzival meets a magnificent heathen knight, Feirefiz, who has come west with an army in search of his father. They fight; the narrator prays for Parzival as both men call upon their loves. When Parzival's sword, taken from Ither, breaks on Feirefiz's helmet, Feirefiz refuses to strike an unarmed man. They exchange names and recognise one another as brothers, sons of Gahmuret.",
+    "They go to Arthur's court together. Cundrie arrives, this time to announce that the Grail has called Parzival to be its king and that he may bring a companion. He chooses Feirefiz."
+   ],
+   "analysis": [
+    "The fight between the brothers is the climax of the poem's chain of combats between kinsmen, and the narrator calls them 'one', as husband and wife are one. Feirefiz, generous and courteous, is the best knight outside Christendom, and the encounter has been read both as a statement of the equality of virtue across religions and as preparation for his conversion [[groos1995]] [[heinzle2011]].",
+    "Cundrie's announcement inverts her curse in Book VI. Parzival's calling comes after his reconciliation with God in Book IX and his proof of loyalty in Books XIV and XV, but the narrator suggests that it remains an act of grace."
+   ],
+   "key": [
+    {
+     "ref": "Book XV",
+     "quote": "For my brother and I are one body, e'en as husband and wife are one!",
+     "note": "The narrator's own interruption during the combat, applying the teaching on marriage to the bond of blood."
+    },
+    {
+     "ref": "Book XV",
+     "quote": "Quoth the Waleis, 'As written parchment, both black and white is he,\nFor so hath Ekuba told me.'",
+     "note": "Parzival recalls what he has heard of his brother's colouring. The image of a written page connects Feirefiz to the motif of reading and interpretation."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "The Question and Loherangrin",
+   "lines": "Lachmann 787–827",
+   "section": 15,
+   "summary": [
+    "Parzival and Feirefiz come to Munsalvæsche, where Anfortas is begging to die. Parzival prays and asks, 'What ails you, uncle?' and Anfortas is healed. Condwiramurs comes with their twin sons, Loherangrin and Kardeiz; Kardeiz is made king of Parzival's secular lands. On the way to the Grail they find Sigune dead at her lover's coffin and bury her with him. Trevrizent admits that he lied about the neutral angels.",
+    "Feirefiz cannot see the Grail because he is a heathen, but he falls in love with Repanse de Schoye. He is baptised, sees the Grail, marries her and returns to the East, where their son becomes Prester John. The narrator tells briefly the story of Loherangrin, who comes in a swan-drawn boat to marry the duchess of Brabant but must leave when she asks his name. He concludes by naming Chrétien and Kyot again and by asking for a woman's favour."
+   ],
+   "analysis": [
+    "The question finally asked is short and simple (Lachmann 795,29), and the healing is immediate. Its power lies not in the formula but in Parzival's compassion and in the long process that has prepared him to ask it. Wolfram's ending unites the Grail family, the Arthurian world and the East through marriage and conversion.",
+    "Loherangrin's story ends the poem with another question, this time forbidden: the Grail's knights may not be asked their origins. Wagner would make this the theme of Lohengrin. The final claims about Chrétien and Kyot frame the whole work as a correction of the French [[bumke2004]] [[heinzle2011]]."
+   ],
+   "key": [
+    {
+     "ref": "Book XVI",
+     "quote": "Then he stood upright, and he turned him to the monarch, and thus he spake:\n'What aileth thee here, mine uncle?'",
+     "note": "The question that heals Anfortas. In Wolfram's text: 'œheim, waz wirret dir?'"
+    },
+    {
+     "ref": "Book XVI",
+     "quote": "If Chrêtien of Troyes, the master, hath done to this tale a wrong,\nThen Kiot may well be wrathful, for he taught us aright the song,",
+     "note": "The only time Wolfram names Chrétien. He presents the French poet as having told the story incorrectly, and Kyot as his corrective."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Parzival",
+   "side": "Grail family and Anjou",
+   "text": "Son of Gahmuret and Herzeleide, raised in the forest in ignorance of knighthood. His path runs from naive obedience through killing his kinsman Ither, the failed question at Munsalvæsche, Cundrie's curse and a long quarrel with God, to penance with Trevrizent and his calling as Grail King. Unlike Chrétien's Perceval, he is faithful throughout to his wife, Condwiramurs."
+  },
+  {
+   "name": "Gahmuret",
+   "side": "Anjou",
+   "text": "Parzival's father, a younger son of the house of Anjou. A brilliant knight, he marries the African queen Belakane and then the Welsh queen Herzeleide, abandoning each for the pursuit of honour. He dies fighting in the East, the victim of treachery."
+  },
+  {
+   "name": "Herzeleide",
+   "side": "Grail family",
+   "text": "Parzival's mother, Gahmuret's second wife and a sister of Anfortas and Trevrizent. Her love and fear lead her to raise her son in the forest, and she dies of grief when he leaves. The poem praises her as a model of fidelity and maternal love."
+  },
+  {
+   "name": "Belakane",
+   "side": "The East",
+   "text": "The black queen of Zazamanc, Gahmuret's first wife and the mother of Feirefiz. Her grief at his departure is treated with sympathy; Gahmuret cites her lack of baptism as his reason for leaving."
+  },
+  {
+   "name": "Feirefiz",
+   "side": "The East",
+   "text": "Parzival's half-brother, the son of Gahmuret and Belakane, whose skin is mottled black and white. A rich and courteous heathen prince, he matches Parzival in combat. He is baptised for love of Repanse de Schoye and becomes the father of Prester John."
+  },
+  {
+   "name": "Condwiramurs",
+   "side": "Pelrapeire",
+   "text": "Queen of Pelrapeire, whom Parzival rescues and marries. She remains the object of his faithful love throughout his wanderings, and she joins him as queen at Munsalvæsche with their sons Loherangrin and Kardeiz."
+  },
+  {
+   "name": "Gurnemanz",
+   "side": "Arthurian world",
+   "text": "An old prince who trains Parzival in arms and manners. His advice not to ask too many questions, sound for social life, leads to the failure at the Grail castle. His sons have died in knightly combat."
+  },
+  {
+   "name": "Sigune",
+   "side": "Grail family",
+   "text": "Parzival's cousin, mourning her lover Schionatulander, who was killed in her service. She appears four times, each time in a more ascetic state, and gives Parzival his name, his lineage and his first reproach. She dies at her lover's coffin."
+  },
+  {
+   "name": "Anfortas",
+   "side": "Grail family",
+   "text": "The Grail King, Parzival's uncle, wounded in the genitals by a poisoned lance in a joust for a love not sanctioned by the Grail. He suffers terribly and is kept alive by the sight of the Grail until Parzival asks the question."
+  },
+  {
+   "name": "Trevrizent",
+   "side": "Grail family",
+   "text": "Anfortas's brother and Parzival's uncle, a former knight who has become a hermit to atone for his brother's sin. In Book IX he teaches Parzival about God, the Grail and his own guilt, and later admits that he lied about the neutral angels."
+  },
+  {
+   "name": "Cundrie",
+   "side": "Grail messenger",
+   "text": "The learned and hideous messenger of the Grail, with a boar's tusks and bear's ears. She curses Parzival in Book VI and announces his calling in Book XV. Wolfram gives her great learning, including the planets' names in Arabic. A different Cundrie is Gawan's sister."
+  },
+  {
+   "name": "Gawan",
+   "side": "Arthurian world",
+   "text": "Arthur's nephew and the model of courtly knighthood, whose adventures occupy Books VII–VIII and X–XIV. Patient, loyal and attractive to women, he wins Orgeluse and frees the women of Schastel marveile. He is Parzival's cousin and friend."
+  },
+  {
+   "name": "Orgeluse",
+   "side": "Gawan's adventures",
+   "text": "Duchess of Logroys, beautiful and scornful, who tests Gawan with insults and dangerous tasks. Her conduct is explained by grief for her husband Cidegast and her desire for vengeance on Gramoflanz. She once accepted Anfortas's love service."
+  },
+  {
+   "name": "Obilot",
+   "side": "Gawan's adventures",
+   "text": "The child daughter of Lyppaut of Bearosche, who chooses Gawan as her knight and sends him her sleeve. Her role is a charming miniature of courtly love service."
+  },
+  {
+   "name": "Antikonie",
+   "side": "Gawan's adventures",
+   "text": "Sister of King Vergulaht, whose encounter with Gawan is interrupted by an attack; she defends him by throwing chess pieces. Wolfram praises her virtue despite the compromising scene."
+  },
+  {
+   "name": "Gramoflanz",
+   "side": "Gawan's adventures",
+   "text": "A proud king who killed Orgeluse's husband, guards a tree whose garland Gawan takes, and loves Gawan's sister Itonje. He is finally reconciled and married to her."
+  },
+  {
+   "name": "Klingsor",
+   "side": "Magic",
+   "text": "A magician, once duke of Capua, castrated for adultery with the queen of Sicily. In revenge he holds noble women captive at Schastel marveile. He never appears; his story is told by Arnive."
+  },
+  {
+   "name": "Arnive",
+   "side": "Gawan's family",
+   "text": "The aged queen at Schastel marveile, Arthur's mother and Gawan's grandmother. She nurses Gawan and recounts Klingsor's history."
+  },
+  {
+   "name": "Ither",
+   "side": "Arthurian world",
+   "text": "The Red Knight, king of Kukumerlant (Weston's Cumberland), killed by Parzival for his armour. He is Parzival's kinsman, and his death is one of Parzival's two great sins, as Trevrizent explains."
+  },
+  {
+   "name": "Repanse de Schoye",
+   "side": "Grail family",
+   "text": "The Grail bearer, sister of Anfortas and Herzeleide. She marries Feirefiz after his baptism and becomes the mother of Prester John."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Doubt, faith and grace",
+   "text": [
+    "The poem opens with zwîvel, the doubt that makes the soul as mixed as a magpie's feathers, and much of it is the story of a man who doubts God. Parzival's renunciation in Book VI is not atheism but resentment of a lord who seems to have betrayed him; Trevrizent teaches him that God is faithful, cannot be compelled, and offers love to those who seek it in humility.",
+    "The poem never resolves whether Parzival earns the Grail or receives it by grace. Trevrizent says no one can win it by force, yet Parzival does in a sense defy that rule; Wolfram's ending suggests a combination of persistent loyalty and divine favour [[wapnewski1955]] [[groos1995]]."
+   ]
+  },
+  {
+   "title": "Compassion and the question",
+   "text": [
+    "The question Parzival fails to ask is a question of compassion, not curiosity. Its failure shows that courtly training without understanding is not enough. When he asks at last, the words are simple and the effect immediate: true compassion heals.",
+    "By contrast, Gawan's role is to endure and to serve; he asks questions freely, and the poem's other question, the forbidden one of Loherangrin's wife, shows that questions can also destroy."
+   ]
+  },
+  {
+   "title": "Kinship and lineage",
+   "text": [
+    "Wolfram builds a vast network of family relations linking the Grail dynasty, the house of Anjou and Arthur's court. Almost every major figure turns out to be related to Parzival, and the most important combats are between kinsmen who do not know each other.",
+    "The poem treats kinship as a moral bond: killing a kinsman is sin, recognising a brother ends hatred. The unity of the families at the end represents a social and spiritual order."
+   ]
+  },
+  {
+   "title": "Love and marriage",
+   "text": [
+    "Unlike much courtly literature, Parzival places married love at its centre. Parzival's fidelity to Condwiramurs is constant, and the narrator's commentary repeatedly praises faithfulness in love.",
+    "Other loves in the poem, such as Gahmuret's desertions, Anfortas's forbidden service and Klingsor's adultery, contrast with this ideal. Gawan's adventures are full of women and love, but they too end in marriage."
+   ]
+  },
+  {
+   "title": "Christian and heathen",
+   "text": [
+    "The poem's East is rich, courteous and honourable. Belakane, the Baruc and Feirefiz are admired; Feirefiz is Parzival's equal in battle and in virtue. At the same time the Grail remains invisible to the unbaptised, and the ending requires Feirefiz's conversion.",
+    "Readers have seen in this both an unusual openness for its time and the limits of that openness. The Kyot fiction also traces the Grail's story back to heathen and Jewish learning [[groos1995]] [[heinzle2011]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Black and white",
+   "text": "The magpie of the prologue, Herzeleide's lesson on light and darkness, the blood on the snow and Feirefiz's skin all use the contrast of colours, linking moral judgement to perception."
+  },
+  {
+   "title": "Questions",
+   "text": "Questions recur throughout: Parzival's naive questions as a boy, his failure at Munsalvæsche, Gawan's ready questions, the healing question, and the forbidden question in the Loherangrin story."
+  },
+  {
+   "title": "Combat between kinsmen",
+   "text": "Parzival kills Ither and fights Gawan and Feirefiz without knowing them; each combat reveals or tests a family bond."
+  },
+  {
+   "title": "The narrator's voice",
+   "text": "Wolfram's narrator constantly interrupts with jokes, digressions, comments on his own poverty and his relations with women, and claims about his source, so that the act of storytelling becomes part of the story."
+  },
+  {
+   "title": "Fool's clothing and armour",
+   "text": "Parzival's fool's costume beneath Ither's red armour shows his early state: knightly appearance concealing ignorance."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The Grail",
+   "text": "In Wolfram a stone, provider of food and drink, preserver of life and youth, renewed by a dove's wafer every Good Friday. It chooses its servants by inscription and is invisible to the unbaptised."
+  },
+  {
+   "title": "The bleeding lance",
+   "text": "Carried through the hall at Munsalvæsche, it is the poisoned weapon that wounded Anfortas. When the planet Saturn brings frost, the lance is laid in the wound to draw out the cold, and so it bleeds."
+  },
+  {
+   "title": "The blood drops in the snow",
+   "text": "Three red drops on white snow recall Condwiramurs's face, symbolising faithful love and the power of memory and perception."
+  },
+  {
+   "title": "The magpie",
+   "text": "Emblem in the prologue of the mixed soul, partly good and partly bad, which may still be saved."
+  },
+  {
+   "title": "The swan",
+   "text": "The swan that brings and takes Loherangrin marks the mystery surrounding the Grail's servants."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Who was Kyot?",
+   "text": [
+    "Wolfram names Kyot as his source and dismisses Chrétien as unreliable. Attempts to identify Kyot, for instance with the poet Guiot de Provins, have not convinced most scholars, partly because Guiot was not a Provençal and wrote nothing of the kind. Most now regard Kyot as a fiction designed to authorise Wolfram's departures from Chrétien and to give the Grail a learned, Oriental origin.",
+    "The case has been carefully analysed by Lofmark, who places it within the medieval convention of citing authorities, and by Bumke, who summarises a long debate [[lofmark1981]] [[bumke2004]] [[nellmann1994]]."
+   ],
+   "cite": [
+    "lofmark1981",
+    "bumke2004",
+    "nellmann1994"
+   ]
+  },
+  {
+   "title": "What is the Grail?",
+   "text": [
+    "Wolfram's Grail is a stone, named lapsit exillis in the manuscripts, a phrase interpreted as lapis exilis (small or humble stone), lapis ex caelis (stone from heaven), or lapsit ex illis (it fell from them), among others. It has been compared with the Alexander legends' stone of paradise, with the philosopher's stone and with the Ka'ba.",
+    "Theories about the Grail's origins range from Celtic myth to Christian liturgy; Loomis argued for Celtic sources, while others emphasise Christian or Oriental elements. Recent scholarship sees Wolfram's Grail as a deliberate literary creation [[loomis1963]] [[barber2004]] [[mertens2003]] [[groos1995]]."
+   ],
+   "cite": [
+    "loomis1963",
+    "barber2004",
+    "mertens2003",
+    "groos1995"
+   ]
+  },
+  {
+   "title": "Parzival's guilt",
+   "text": [
+    "Trevrizent names two great sins: the killing of Ither and the death of Herzeleide; the failed question is a further fault. Scholars disagree whether these are sins in the full theological sense, given that Parzival did not know what he was doing, or whether the poem distinguishes between guilt and ignorance (tumpheit).",
+    "Wapnewski read the poem as a religious drama of sin and penance; Green emphasised the gradual process of recognition, by which Parzival learns to understand what he has done [[wapnewski1955]] [[green1982]] [[kratz1973]]."
+   ],
+   "cite": [
+    "wapnewski1955",
+    "green1982",
+    "kratz1973"
+   ]
+  },
+  {
+   "title": "The neutral angels",
+   "text": [
+    "In Book IX Trevrizent says that angels who stood neutral in Lucifer's rebellion were sent to earth to guard the Grail; in Book XVI he says he lied to divert Parzival from his quest. Theologically, neutral angels were an unorthodox idea, and the retraction has been variously explained.",
+    "Some critics see it as a correction of doctrine, others as part of Trevrizent's attempt to discourage Parzival from seeking the Grail by force [[wapnewski1955]] [[groos1995]]."
+   ],
+   "cite": [
+    "wapnewski1955",
+    "groos1995"
+   ]
+  },
+  {
+   "title": "Structure and the Gawan books",
+   "text": [
+    "About a third of the poem follows Gawan, and critics have debated whether these books are a digression or an integral counterpart to Parzival's story. Gawan represents an Arthurian ideal which Parzival must both achieve and transcend; the two heroes' paths cross repeatedly, and the parallels between Schastel marveile and Munsalvæsche suggest a carefully planned structure.",
+    "Studies of the poem's composition argue that Wolfram planned the interlocking of the two plots, while others emphasise its growth in stages [[wynn1984]] [[hasty1999]] [[heinzle2011]]."
+   ],
+   "cite": [
+    "wynn1984",
+    "hasty1999",
+    "heinzle2011"
+   ]
+  },
+  {
+   "title": "Wolfram's narrator and his literacy",
+   "text": [
+    "The narrator claims to be a knight rather than a poet and says he knows no letters. Some have taken this literally, others as an ironic pose, given the poem's learned knowledge of astronomy, medicine and geography. The claim also positions Wolfram against learned poets like Hartmann von Aue.",
+    "The narrator's constant interventions, jokes and digressions have become central to modern readings of the poem [[groos1995]] [[bumke2004]]."
+   ],
+   "cite": [
+    "groos1995",
+    "bumke2004"
+   ]
+  },
+  {
+   "title": "Wagner's Parsifal",
+   "text": [
+    "Wagner read Wolfram in 1845 and returned to the material repeatedly, producing Lohengrin (1850) and Parsifal (1882). His version transforms the story: Kundry combines Cundrie and other figures, the Grail becomes the cup of the Last Supper, and Parsifal is the 'pure fool, made wise through compassion'.",
+    "Scholars debate how far Wagner's work reflects or distorts Wolfram's poem, and how its religious and ideological meanings should be understood [[beckett1981]] [[kinderman2013]]."
+   ],
+   "cite": [
+    "beckett1981",
+    "kinderman2013"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Book I (prologue)",
+   "quote": "If unfaith in the heart find dwelling, then the soul it shall reap but woe;\nAnd shaming alike and honour are his who such doubt shall show,",
+   "who": "The narrator",
+   "explanation": "The opening lines of the poem introduce doubt as the danger to the soul, and the mixture of shame and honour as the human condition."
+  },
+  {
+   "ref": "Book III",
+   "quote": "That this is no book he readeth, for no maker of books am I!\nBut a singer of strange adventures, and of knightly prowess high:",
+   "who": "The narrator",
+   "explanation": "From the self-defence, which Weston places at the head of Book III. The narrator presents himself as a knight and performer rather than a learned author, a pose central to the debate about his literacy."
+  },
+  {
+   "ref": "Book V",
+   "quote": "Then he quoth, 'Nay, I asked no question!'",
+   "who": "Parzival to Sigune",
+   "explanation": "Parzival admits his failure innocently, not yet understanding its meaning; Sigune's curse follows."
+  },
+  {
+   "ref": "Book VI",
+   "quote": "When thou sawest the fisher sit there, joyless, of comfort reft,\nWhy didst thou not loose his sighing? Why was he in bondage left?'",
+   "who": "Cundrie",
+   "explanation": "Cundrie's public curse before Arthur's court. The question is framed as a failure to release a suffering man from his bondage."
+  },
+  {
+   "ref": "Book IX",
+   "quote": "Say, which of the twain wilt thou choose here, shall thy guerdon be Love or Hate?",
+   "who": "Trevrizent",
+   "explanation": "Trevrizent presents God's love and wrath as a choice for the sinner, the core of his teaching on repentance."
+  },
+  {
+   "ref": "Book IX",
+   "quote": "Since the knight thou hast slain in thy folly, thy flesh and thy blood was he!",
+   "who": "Trevrizent",
+   "explanation": "Trevrizent reveals that Ither was Parzival's kinsman, turning a youthful deed into a grave sin."
+  },
+  {
+   "ref": "Book IX",
+   "quote": "Thy mother she died of sorrow in the day thou her side didst leave,",
+   "who": "Trevrizent",
+   "explanation": "The second revelation of guilt. Parzival learns that his departure killed his mother."
+  },
+  {
+   "ref": "Book XV",
+   "quote": "And hatred and wrath were slain here in a brotherly embrace.",
+   "who": "The narrator",
+   "explanation": "The reconciliation of Parzival and Feirefiz. The violence of combat is turned against hatred itself."
+  },
+  {
+   "ref": "Book XVI",
+   "quote": "And Feirefis spake that he saw naught, nor knew what It was 'the Grail';",
+   "who": "The narrator",
+   "explanation": "Feirefiz cannot see the Grail because he is not baptised, a limit to the poem's openness toward the heathen."
+  },
+  {
+   "ref": "Book XVI",
+   "quote": "The friendly swan, it sought him, and a little boat did bring,\nAnd he sailed thence, and left as tokens his sword, and his horn, and ring.",
+   "who": "The narrator",
+   "explanation": "Loherangrin's departure from Brabant after the forbidden question, the story Wagner later turned into Lohengrin."
+  }
+ ],
+ "questions": [
+  {
+   "q": "What does the magpie image in the prologue suggest about the way the poem judges human beings?",
+   "hint": "Consider the mixture of black and white, the prologue's warning about slow readers, and Feirefiz's appearance."
+  },
+  {
+   "q": "Why does Parzival fail to ask the question at Munsalvæsche, and how far is he to blame?",
+   "hint": "Think about Gurnemanz's advice, Parzival's ignorance, the narrator's comments and Trevrizent's judgement."
+  },
+  {
+   "q": "How does Herzeleide's love shape her son's upbringing and fate?",
+   "hint": "Consider the forest, the birds, her teaching about God, the fool's costume and her death."
+  },
+  {
+   "q": "What is the function of the Kyot passages?",
+   "hint": "Compare the claims in Books VIII, IX and XVI and the treatment of Chrétien."
+  },
+  {
+   "q": "How does Wolfram's Grail differ from Chrétien's, and what is the effect of making it a stone?",
+   "hint": "Consider its powers, its inscription, its servants and its invisibility to the heathen."
+  },
+  {
+   "q": "What does Parzival learn from Trevrizent?",
+   "hint": "Think about God's faithfulness, humility, the Grail lore and the revelations of his guilt."
+  },
+  {
+   "q": "Is Gawan's story a digression or an essential part of the poem?",
+   "hint": "Compare Schastel marveile with Munsalvæsche, and the two heroes' meetings."
+  },
+  {
+   "q": "How does the poem present the heathen East and Feirefiz?",
+   "hint": "Consider Belakane, the Baruc, the brothers' combat and Feirefiz's baptism."
+  },
+  {
+   "q": "How does the poem use combat between kinsmen?",
+   "hint": "Compare the killing of Ither with the fights against Gawan and Feirefiz."
+  },
+  {
+   "q": "How did Wagner transform Wolfram's story in Parsifal?",
+   "hint": "Consider Kundry, the Grail as chalice, the 'pure fool', and the role of compassion."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "barber2004",
+   "text": "Barber, Richard. The Holy Grail: Imagination and Belief. London: Allen Lane, 2004."
+  },
+  {
+   "id": "beckett1981",
+   "text": "Beckett, Lucy. Richard Wagner: Parsifal. Cambridge Opera Handbooks. Cambridge: Cambridge University Press, 1981."
+  },
+  {
+   "id": "bumke2001",
+   "text": "Bumke, Joachim. Die Blutstropfen im Schnee: Über Wahrnehmung und Erkenntnis im 'Parzival' Wolframs von Eschenbach. Tübingen: Niemeyer, 2001."
+  },
+  {
+   "id": "bumke2004",
+   "text": "Bumke, Joachim. Wolfram von Eschenbach. 8th ed. Sammlung Metzler 36. Stuttgart: Metzler, 2004."
+  },
+  {
+   "id": "roach1959",
+   "text": "Chrétien de Troyes. Le Roman de Perceval ou Le Conte du Graal. Edited by William Roach. 2nd ed. Textes littéraires français 71. Geneva: Droz, 1959."
+  },
+  {
+   "id": "bryant1982",
+   "text": "Chrétien de Troyes. Perceval: The Story of the Grail. Translated by Nigel Bryant. Cambridge: D. S. Brewer, 1982."
+  },
+  {
+   "id": "edwards2006",
+   "text": "Edwards, Cyril, trans. Wolfram von Eschenbach: Parzival and Titurel. Oxford World's Classics. Oxford: Oxford University Press, 2006."
+  },
+  {
+   "id": "green1982",
+   "text": "Green, D. H. The Art of Recognition in Wolfram's Parzival. Cambridge: Cambridge University Press, 1982."
+  },
+  {
+   "id": "groos1995",
+   "text": "Groos, Arthur. Romancing the Grail: Genre, Science, and Quest in Wolfram's Parzival. Ithaca: Cornell University Press, 1995."
+  },
+  {
+   "id": "hasty1999",
+   "text": "Hasty, Will, ed. A Companion to Wolfram's Parzival. Columbia, SC: Camden House, 1999."
+  },
+  {
+   "id": "hatto1980",
+   "text": "Hatto, A. T., trans. Wolfram von Eschenbach: Parzival. Harmondsworth: Penguin, 1980."
+  },
+  {
+   "id": "heinzle2011",
+   "text": "Heinzle, Joachim, ed. Wolfram von Eschenbach: Ein Handbuch. 2 vols. Berlin: De Gruyter, 2011."
+  },
+  {
+   "id": "kinderman2013",
+   "text": "Kinderman, William. Wagner's Parsifal. New York: Oxford University Press, 2013."
+  },
+  {
+   "id": "kratz1973",
+   "text": "Kratz, Henry. Wolfram von Eschenbach's Parzival: An Attempt at a Total Evaluation. Bern: Francke, 1973."
+  },
+  {
+   "id": "lachmann1833",
+   "text": "Lachmann, Karl, ed. Wolfram von Eschenbach. Berlin: G. Reimer, 1833."
+  },
+  {
+   "id": "lofmark1981",
+   "text": "Lofmark, Carl. The Authority of the Source in Middle High German Narrative Poetry. London: Institute of Germanic Studies, University of London, 1981."
+  },
+  {
+   "id": "loomis1963",
+   "text": "Loomis, Roger Sherman. The Grail: From Celtic Myth to Christian Symbol. Cardiff: University of Wales Press; New York: Columbia University Press, 1963."
+  },
+  {
+   "id": "mertens2003",
+   "text": "Mertens, Volker. Der Gral: Mythos und Literatur. Stuttgart: Reclam, 2003."
+  },
+  {
+   "id": "nellmann1994",
+   "text": "Nellmann, Eberhard, ed. Wolfram von Eschenbach: Parzival. Translated by Dieter Kühn. 2 vols. Bibliothek des Mittelalters 8. Frankfurt am Main: Deutscher Klassiker Verlag, 1994."
+  },
+  {
+   "id": "schirok1982",
+   "text": "Schirok, Bernd. Parzivalrezeption im Mittelalter. Erträge der Forschung 174. Darmstadt: Wissenschaftliche Buchgesellschaft, 1982."
+  },
+  {
+   "id": "wapnewski1955",
+   "text": "Wapnewski, Peter. Wolframs Parzival: Studien zur Religiosität und Form. Heidelberg: Carl Winter, 1955."
+  },
+  {
+   "id": "weston1920",
+   "text": "Weston, Jessie L. From Ritual to Romance. Cambridge: Cambridge University Press, 1920."
+  },
+  {
+   "id": "weston1894",
+   "text": "Weston, Jessie L., trans. Parzival: A Knightly Epic, by Wolfram von Eschenbach. 2 vols. London: David Nutt, 1894."
+  },
+  {
+   "id": "wynn1984",
+   "text": "Wynn, Marianne. Wolfram's Parzival: On the Genesis of Its Poetry. Frankfurt am Main: Peter Lang, 1984."
+  }
+ ]
+}
