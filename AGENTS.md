@@ -38,6 +38,12 @@ sections (cantos/books/fitts).
   gzipped): poet metadata + counts, slim poem *index entries* (title/subject/3-line
   excerpt, no full text; see §3), work metadata + section titles (no section text) and
   subject tallies. This is a generated build artifact — never hand-edit it.
+- `data/index-core.json` — **core index** (since 21 Oct 2026, speed batch 2; ~1.9 MB, ~370 KB
+  gzipped), written by `build_index.py` beside `data/index.json`: counts, subjects, every poet
+  without bio/credit, every work without its note, no poems. Poets, Eras, About and a poet
+  page's header load only this; everything else (and the Oracle) still loads `data/index.json`,
+  which is no longer fetched on the home page (it loads on the first hover/tap of a list link
+  or the search box). Generated: never hand-edit; commit it with `data/index.json`.
 - `data/poets/<slug>.json` — **source of truth** for one poet: identity fields +
   every one of that poet's poems, **full text included**. Fetched lazily the first
   time a poem by that poet is opened, then cached in memory for the session.

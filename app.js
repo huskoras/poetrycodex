@@ -10,6 +10,10 @@
     }
   }
   let DATA = null;
+  // data/index-core.json (tools/build_index.py): the counts, the subjects, every poet without
+  // bio and credit, every work without its note; no poems. Poets, Eras, About and a poet's
+  // header and works are drawn from it before (or without) the full index (loadCore).
+  let CORE = null;
   let query = "";            // the search as typed (folded only when matching)
   let filterSubject = "All";
   let filterForm = "All";    // "Sonnet", "Ode"… (the `form` that build_index.py reads off titles)
@@ -5245,9 +5249,10 @@
   // could not hand its copy to this fetch, and the file came down twice.
   // Neither the home page nor poem pages, books of works and contents pages ask for the
   // index by themselves: a reader who opens the home page or one poem gets that and not
-  // 10 MB of index. It is fetched when something needs it (the lists, Poets, Eras, a
-  // category, the shelf, About, the Oracle; see routeEarly and loadIndex's callers), and
-  // early, on the first hover or touch of a link to one of those (the listener after loadIndex).
+  // 10 MB of index. It is fetched when something needs it (the lists, a category, the shelf,
+  // a poet's poems, the Oracle; see routeEarly and loadIndex's callers), and early, on the
+  // first hover or touch of a link to one of those (the listener after loadIndex). Poets, Eras
+  // and About need only the small core index (loadCore).
   const homeFetch = (window.pcHome && typeof window.pcHome.then === "function")
     ? window.pcHome : fetch("data/home.json", { priority: "high" });
   homeFetch
@@ -5286,12 +5291,8 @@
         DATA = d;
         d.poets.forEach((p) => { POETS[p.slug] = p; });
         (d.works || []).forEach((w) => { WORKS[w.slug] = w; });
-        d.poets.forEach((p) => {
-          if (!p.category) return;
-          const s = (CATEGORY_STATS[p.category] = CATEGORY_STATS[p.category] || { poems: 0, works: 0 });
-          s.poems += p.poemCount || 0;
-          s.works += p.workCount || 0;
-        });
+        CATEGORY_STATS = categoryStats(d.poets);   // afresh: the core may have counted them already
+        POET_LIST = null;                          // built again from the full records
         // Since C2 the index leaves out what it can derive: the poet's slug (the first half of
         // the id), the author (the poet's name), subjects when only the primary one, and empty
         // collection / translator. Filled back in here, so the rest of the app is unchanged; an
@@ -5340,6 +5341,54 @@
         INDEX_WAITERS.splice(0).forEach((fn) => { try { fn(); } catch (err) { /* as above */ } });
       });
   }
+  function categoryStats(poets) {
+    const stats = {};
+    poets.forEach((p) => {
+      if (!p.category) return;
+      const s = (stats[p.category] = stats[p.category] || { poems: 0, works: 0 });
+      s.poems += p.poemCount || 0;
+      s.works += p.workCount || 0;
+    });
+    return stats;
+  }
+  // The core index (speed fix 6a): a small fraction of the full one. Poets, Eras, About and a
+  // poet's header and works are drawn from it (routeEarly), so a reader who opens them does not
+  // wait for, or download, the full index; a poet's poems and bio still come with the full
+  // index, which that page asks for at the same time. Everything else, the Oracle included,
+  // waits for loadIndex() as before. When the full index comes it replaces POETS, WORKS and
+  // CATEGORY_STATS with its own records. If the core is missing or broken, those pages wait
+  // for the full index, as they always did.
+  let CORE_STARTED = false, CORE_FAILED = false;
+  function coreKind(h) {
+    if (/^#\/poet\/[\w-]+$/.test(h)) return "poet";
+    if (h.startsWith("#/poets")) return "poets";
+    if (h.startsWith("#/eras")) return "eras";
+    if (h.startsWith("#/about")) return "about";
+    return "";
+  }
+  function loadCore() {
+    if (CORE_STARTED || DATA) return;
+    CORE_STARTED = true;
+    fetch("data/index-core.json")
+      .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then((d) => {
+        if (DATA) return;                       // the full index came first: nothing to do
+        if (!d || !Array.isArray(d.poets) || !Array.isArray(d.works) || typeof d.count !== "number") throw new Error("bad core");
+        CORE = d;
+        d.poets.forEach((p) => { POETS[p.slug] = p; });
+        d.works.forEach((w) => { WORKS[w.slug] = w; });
+        CATEGORY_STATS = categoryStats(d.poets);
+        const fc = document.getElementById("foot-count");
+        if (fc && !fc.textContent) fc.textContent = num(d.count);
+        if (coreKind(location.hash || "")) route();
+      })
+      .catch(() => {
+        CORE_FAILED = true;
+        if (!DATA && coreKind(location.hash || "")) loadIndex();   // the page already says "Opening the archive…"
+      });
+  }
+  // The index a page drawn from the core reads: the full one once it is in.
+  const coreData = () => DATA || CORE;
   // Every poem by title, sorted on first use; every list filters this and so keeps the order.
   function sortedPoems() {
     if (!DATA) return [];
@@ -5347,17 +5396,22 @@
     return SORTED;
   }
   // The home page no longer fetches the index by itself (it is drawn from home.json). A reader
-  // who reaches for a page that needs it (Poets, Eras, the lists, a category, the shelf, About,
-  // the account) starts the download on the first hover, touch or focus of the link, so it is
-  // under way before the click lands. Hover is skipped when the reader has asked to save data.
+  // who reaches for a page that needs it (the lists, a category, the shelf, the account) starts
+  // the download on the first hover, touch or focus of the link, so it is under way before the
+  // click lands; a link to Poets, Eras or About starts only the core index. Hover is skipped
+  // when the reader has asked to save data.
   {
-    const INTENT_SEL = 'a[href^="#/poets"], a[href^="#/eras"], a[href^="#/poems"], a[href^="#/category"], a[href^="#/topics"], a[href^="#/shelf"], a[href^="#/about"], a[href^="#/account"]';
+    // Poets, Eras and About need only the core index (loadCore); the rest the full one.
+    const CORE_SEL = 'a[href^="#/poets"], a[href^="#/eras"], a[href^="#/about"]';
+    const INTENT_SEL = CORE_SEL + ', a[href^="#/poems"], a[href^="#/category"], a[href^="#/topics"], a[href^="#/shelf"], a[href^="#/account"]';
     const saveData = !!(navigator.connection && navigator.connection.saveData);
     const onIntent = (e) => {
       if (INDEX_STARTED) { drop(); return; }
       if (e.type === "mouseover" && saveData) return;
-      const t = e.target;
-      if (t && t.closest && t.closest(INTENT_SEL)) { drop(); loadIndex(); }
+      const t = e.target, a = t && t.closest && t.closest(INTENT_SEL);
+      if (!a) return;
+      if (a.matches(CORE_SEL) && !CORE_FAILED) loadCore();
+      else { drop(); loadIndex(); }
     };
     const TYPES = ["pointerdown", "touchstart", "mouseover", "focusin"];
     const drop = () => TYPES.forEach((ty) => document.removeEventListener(ty, onIntent, true));
@@ -6600,6 +6654,28 @@
     }
     // The reader's notes and highlights need only the texts they are on.
     if (/^#\/notes(?:$|[?/])/.test(h)) { setRoute("shelf", "sub"); jumpTo(st ? st.y : 0); renderNotes(); return; }
+    // Poets, Eras, About and a poet's page are drawn from the core index (loadCore). They stay
+    // as they are when the full index comes, except a poet's page, which is drawn again in
+    // place with its poems and bio; of the four only that page asks for the full index.
+    const kind = coreKind(h);
+    if (kind && !CORE_FAILED) {
+      setRoute(kind === "poet" ? "poets" : kind, "sub");
+      if (kind === "poet") loadIndex();
+      if (!CORE) {
+        loadCore();                               // its arrival routes again
+        app.innerHTML = `<p class="loading">Opening the archive…</p>`;
+        return;
+      }
+      EARLY_DRAWN = h; EARLY_REDRAW = kind === "poet";
+      if (kind === "poet") renderPoet(h.slice("#/poet/".length));
+      else if (kind === "poets") renderPoets();
+      else if (kind === "eras") renderEras();
+      else renderAbout();
+      syncSearchInput();
+      jumpTo(st ? st.y : 0);
+      restoreY = st ? st.y : 0;
+      return;
+    }
     loadIndex();
     const nav = EARLY_NAV.find(([re]) => re.test(h));
     setRoute(nav ? nav[1] : "", "sub");
@@ -6816,7 +6892,7 @@
   // ---------- HOME: browse by era ----------
   // The era grid, shared by the home page and #/eras. The counts come from the index, or,
   // for the home page drawn before it arrives, from home.json.
-  function eraGridHTML(eraStats = CATEGORY_STATS, nEpics = epicCount(DATA.works)) {
+  function eraGridHTML(eraStats = CATEGORY_STATS, nEpics = epicCount(coreData().works)) {
     const tiles = CATEGORY_ORDER.map((cat) => {
       const stats = eraStats[cat] || { poems: 0, works: 0 };
       return `
@@ -6852,7 +6928,7 @@
       </div>
       <p class="doors-or">Browse by era</p>
       ${eraGridHTML()}
-      <div class="browse-all"><a href="#/poems" class="read-link">Or browse all ${num(DATA.count)} poems \u2192</a></div>`;
+      <div class="browse-all"><a href="#/poems" class="read-link">Or browse all ${num(coreData().count)} poems \u2192</a></div>`;
     wireSearch();
   }
 
@@ -7366,7 +7442,7 @@
   const POET_PAGE = 120;
   let POET_LIST = null;      // the poets with poems or works, by surname (built once)
   function poetList() {
-    if (!POET_LIST) POET_LIST = DATA.poets.filter((p) => p.poemCount || p.workCount)
+    if (!POET_LIST) POET_LIST = coreData().poets.filter((p) => p.poemCount || p.workCount)
       .sort((a, b) => COLLATE.compare(poetSortName(a), poetSortName(b)));
     return POET_LIST;
   }
@@ -7397,7 +7473,7 @@
     if (!counts[letter]) letter = letters.find((l) => counts[l]) || "A";
     setTitle("Poets");
     app.innerHTML = `
-      <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">${num(all.length)} poets from Homer to the early twentieth century, by surname.</p>
+      <div class="page-head"><h1 class="page-title">Poets</h1><p class="page-sub">Poets from Homer to the early twentieth century, by surname.</p>
         <p class="tr-also"><a href="#/translators">The translators, A–Z</a></p></div>
       <div class="poet-tools">
         <nav class="az-strip" aria-label="Poets by surname">${letters.map((l) => counts[l]
@@ -7507,8 +7583,11 @@
   function renderPoet(slug) {
     const poet = POETS[slug];
     if (!poet) { location.hash = "#/poets"; return; }
-    const poems = DATA.poems.filter((p) => p.authorSlug === slug);
-    const works = (DATA.works || []).filter((w) => w.authorSlug === slug)
+    // Drawn from the core index the page has its header and works at once; the poems and bio
+    // come with the full index, when it is drawn again in place (routeEarly, loadIndex).
+    if (DATA) { EARLY_DRAWN = ""; EARLY_REDRAW = false; }
+    const poems = DATA ? DATA.poems.filter((p) => p.authorSlug === slug) : null;
+    const works = (coreData().works || []).filter((w) => w.authorSlug === slug)
       .map((w, k) => [w, k]).sort((a, b) => (isRecommended(b[0]) - isRecommended(a[0])) || a[1] - b[1]).map((x) => x[0]);
     setTitle(poet.name);
     const started = works.filter((w) => readingOf(w.slug))
@@ -7544,7 +7623,8 @@
         </div>
         ${slug === "homer" ? AGATE_HTML : ""}
         ${worksHTML}
-        ${poems.length || !works.length ? `<section class="poet-poems">
+        ${!poems ? (poet.poemCount || !works.length ? `<p class="loading">Loading…</p>` : "")
+          : poems.length || !works.length ? `<section class="poet-poems">
           <h2>Poems · ${num(poems.length)}</h2>
           ${poems.length ? `<div class="cite-row poet-offline">${offlineHTML("poet:" + slug)}</div>` : ""}
           <ul class="poem-links">
@@ -8672,7 +8752,7 @@
         <p>Poetry Codex is a reading archive of poetry in the public domain — and the foundation of a
         larger project: a critical engine able to read these poems through the full range of methods
         that literary scholarship has developed over the past two centuries.</p>
-        <p>The archive currently holds <strong>${DATA.count.toLocaleString("en-US")} poems</strong> in ${CATEGORY_ORDER.length} traditions, from the ancient world,
+        <p>The archive currently holds <strong>${coreData().count.toLocaleString("en-US")} poems</strong> in ${CATEGORY_ORDER.length} traditions, from the ancient world,
         the Greek and Roman epics and Anglo-Saxon verse through the Middle Ages, the Renaissance, the
         Romantics and the Victorians to the early twentieth century. Every text is reproduced in full
         and is free of copyright.</p>

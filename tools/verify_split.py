@@ -22,6 +22,8 @@ Checks:
   - required fields present, no empty poem/section texts
   - every non-null portrait path exists on disk
   - every poet's category is one of the categories declared in app.js
+  - data/index-core.json holds every index poet and work, in order, with the same
+    counts and section titles (poets without bio/credit, works without note, no poems)
 """
 import json
 import os
@@ -180,6 +182,45 @@ def main():
     else:
         errors.append("data/legacy_index.json is missing (old #/poem/<n> links would break)")
 
+    # ---- core index (data/index-core.json, speed fix 6a) ----
+    # Poets, Eras, About and a poet's header are drawn from it: every poet and work in the
+    # index must be in it, in the same order, with the same counts and section titles.
+    core_path = os.path.join(DATA, "index-core.json")
+    if not os.path.exists(core_path):
+        errors.append("data/index-core.json is missing (run tools/build_index.py)")
+    else:
+        core = load(core_path)
+        for k in ("count", "workCount"):
+            if core.get(k) != idx.get(k):
+                errors.append(f"index-core {k} {core.get(k)} != index {idx.get(k)}")
+        if core.get("subjects") != idx.get("subjects"):
+            errors.append("index-core subjects differ from index")
+        if "poems" in core:
+            errors.append("index-core carries poems (it should not)")
+        c_poets, c_works = core.get("poets") or [], core.get("works") or []
+        if [p.get("slug") for p in c_poets] != [p["slug"] for p in idx["poets"]]:
+            errors.append(f"index-core poets ({len(c_poets)}) are not the index poets ({len(idx['poets'])}) in index order")
+        c_by = {p.get("slug"): p for p in c_poets}
+        for p in idx["poets"]:
+            c = c_by.get(p["slug"])
+            if c is None:
+                continue
+            want = {k: v for k, v in p.items() if k not in ("bio", "credit")}
+            if c != want:
+                diff = sorted(k for k in set(c) | set(want) if c.get(k) != want.get(k))
+                errors.append(f"index-core poet {p['slug']}: differs from index in {diff}")
+        if [w.get("slug") for w in c_works] != [w["slug"] for w in idx.get("works", [])]:
+            errors.append(f"index-core works ({len(c_works)}) are not the index works ({len(idx.get('works', []))}) in index order")
+        cw_by = {w.get("slug"): w for w in c_works}
+        for w in idx.get("works", []):
+            c = cw_by.get(w["slug"])
+            if c is None:
+                continue
+            want = {k: v for k, v in w.items() if k != "note"}
+            if c != want:
+                diff = sorted(k for k in set(c) | set(want) if c.get(k) != want.get(k))
+                errors.append(f"index-core work {w['slug']}: differs from index in {diff}")
+
     # ---- categories must exist in app.js ----
     cats = app_categories()
     if cats is None:
@@ -196,6 +237,8 @@ def main():
     print(f"works:          {len(work_files)} ({total_sections} sections)")
     print(f"subjects:       {len(subject_counts)}")
     print(f"index.json:     {os.path.getsize(os.path.join(DATA, 'index.json')) / 1024:.1f} KB")
+    if os.path.exists(core_path):
+        print(f"index-core.json: {os.path.getsize(core_path) / 1024:.1f} KB")
 
     if errors:
         print(f"\n{len(errors)} ERROR(S):")

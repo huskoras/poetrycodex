@@ -33,6 +33,13 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 POETS_DIR = os.path.join(ROOT, "data", "poets")
 WORKS_DIR = os.path.join(ROOT, "data", "works")
 INDEX_PATH = os.path.join(ROOT, "data", "index.json")
+# The core index (speed fix 6a, Oct 2026): what the Poets, Eras and About pages and a poet's
+# header and works list need, so they open without the full index: the counts, the subjects,
+# every poet without bio / credit and every work without its note (section titles and sizes
+# kept). No poems. data/index.json is still written in full: the Oracle and the tools read it.
+CORE_PATH = os.path.join(ROOT, "data", "index-core.json")
+CORE_POET_DROP = ("bio", "credit")
+CORE_WORK_DROP = ("note",)
 LEGACY_INDEX_PATH = os.path.join(ROOT, "data", "legacy_index.json")
 
 EXCERPT_LINES = 3
@@ -79,6 +86,27 @@ def make_excerpt(text):
     if len(lines) > EXCERPT_LINES:
         excerpt += " …"
     return excerpt
+
+
+def write_compact(path, obj):
+    """Compact JSON, one poet / work / poem per line: indent=1 spent about a third of the
+    file on spaces, and a line per record keeps git diffs readable."""
+    def dumps(o):
+        return json.dumps(o, ensure_ascii=False, separators=(",", ":"))
+    out = ["{"]
+    keys = list(obj)
+    for k, key in enumerate(keys):
+        tail = "," if k < len(keys) - 1 else ""
+        v = obj[key]
+        if isinstance(v, list) and v:
+            out.append(dumps(key) + ":[")
+            out.append(",\n".join(dumps(x) for x in v))
+            out.append("]" + tail)
+        else:
+            out.append(dumps(key) + ":" + dumps(v) + tail)
+    out.append("}")
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(out) + "\n")
 
 
 def build():
@@ -190,28 +218,20 @@ def build():
         "poems": index_poems,
     }
 
-    # Compact JSON, one poet / work / poem per line: indent=1 spent about a third of the
-    # file on spaces, and a line per record keeps git diffs readable.
-    def dumps(o):
-        return json.dumps(o, ensure_ascii=False, separators=(",", ":"))
-    out = ["{"]
-    keys = list(index)
-    for k, key in enumerate(keys):
-        tail = "," if k < len(keys) - 1 else ""
-        v = index[key]
-        if isinstance(v, list) and v:
-            out.append(dumps(key) + ":[")
-            out.append(",\n".join(dumps(x) for x in v))
-            out.append("]" + tail)
-        else:
-            out.append(dumps(key) + ":" + dumps(v) + tail)
-    out.append("}")
-    with open(INDEX_PATH, "w", encoding="utf-8", newline="\n") as f:
-        f.write("\n".join(out) + "\n")
+    write_compact(INDEX_PATH, index)
+    core = {
+        "count": index["count"],
+        "workCount": index["workCount"],
+        "subjects": subjects,
+        "poets": [{k: v for k, v in p.items() if k not in CORE_POET_DROP} for p in index_poets],
+        "works": [{k: v for k, v in w.items() if k not in CORE_WORK_DROP} for w in index_works],
+    }
+    write_compact(CORE_PATH, core)
 
     size = os.path.getsize(INDEX_PATH)
     print(f"Wrote {INDEX_PATH} ({size / 1024:.1f} KB)")
     print(f"  poets={len(index_poets)} poems={len(index_poems)} works={len(index_works)}")
+    print(f"Wrote {CORE_PATH} ({os.path.getsize(CORE_PATH) / 1024:.1f} KB)")
 
 
 if __name__ == "__main__":
