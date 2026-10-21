@@ -1,0 +1,878 @@
+{
+ "work": "alchemist-jonson",
+ "title": "The Alchemist",
+ "author": "Ben Jonson",
+ "quoteEdition": "alchemist-jonson",
+ "unit": "Scene",
+ "updated": "2026-10-21",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Ben Jonson (1572–1637), bricklayer's stepson, soldier, actor, classical scholar and the leading writer of satirical comedy in Jacobean London"
+  },
+  {
+   "label": "Genre",
+   "value": "Satirical city comedy in blank verse with passages of prose; a comedy of humours and of intrigue, built on the Roman model of the clever trickster"
+  },
+  {
+   "label": "First performed",
+   "value": "By the King's Men in 1610 (the 1616 Folio says 'acted in the year 1610 by the King's Majesty's Servants'); the company took it to Oxford the same year. It was probably written for their indoor playhouse at Blackfriars"
+  },
+  {
+   "label": "Early texts",
+   "value": "Quarto of 1612, with an address 'To the Reader'; revised text in Jonson's Works (Folio) of 1616"
+  },
+  {
+   "label": "Setting",
+   "value": "Lovewit's house in the Blackfriars district of London, and the street outside its door, during an outbreak of plague in 1610"
+  },
+  {
+   "label": "The unities",
+   "value": "One place, one day and one action: the play runs roughly in the time of its performance (the Prologue's 'two short hours') and ends when the master of the house comes home"
+  },
+  {
+   "label": "Sources",
+   "value": "Roman comedy (Plautus's Mostellaria supplies the returning master and the lying servant), the vast literature of alchemy, rogue pamphlets on London cony-catching, and contemporary scandals of alchemists and fortune-tellers"
+  },
+  {
+   "label": "Text on this site",
+   "value": "Project Gutenberg text edited by Felix E. Schelling, divided by place into thirteen long scenes after the Argument and Prologue. The Folio and modern editions begin a new scene at each important entrance (Act II has six scenes, Act IV seven), so references here give the site's scene first and the modern scene where it helps"
+  },
+  {
+   "label": "Main characters",
+   "value": "The three partners Subtle, Face and Dol Common; their gulls Dapper, Drugger, Sir Epicure Mammon, Kastril, Dame Pliant and the Puritans Tribulation Wholesome and Ananias; the sceptic Surly; Lovewit, master of the house"
+  },
+  {
+   "label": "Famous lines",
+   "value": "'The venture tripartite'; 'here's the rich Peru'; 'I will have all my beds blown up, not stuft'; 'All's heathen but the Hebrew'"
+  }
+ ],
+ "context": [
+  "Ben Jonson wrote The Alchemist in 1610, at the centre of the decade in which he produced his greatest comedies: Volpone (1606), Epicoene (1609), The Alchemist and Bartholomew Fair (1614). He had come a long way from his beginnings as a bricklayer's stepson in Westminster. He had fought in the Low Countries, acted and written for the playhouses, killed a fellow actor in a duel, and spent periods in prison; by 1610 he was also the principal author of the court masques of James I. In about the same year he returned to the Church of England after a dozen years as a Catholic convert, a detail worth remembering when one reads his savage portrait of two Puritans [[riggs1989]] [[donaldson2011]].",
+  "The play was acted by the King's Men, Shakespeare's company, which had begun to use the indoor theatre in the Blackfriars precinct in 1609. Jonson himself lived in Blackfriars, and the play is set there too: Subtle reminds Face that his master's house is 'here in the Friars'. The audience in the playhouse was therefore watching a fiction about its own neighbourhood. The year was one of plague, and the London theatres were closed for long stretches whenever the weekly death toll rose; the King's Men toured, and the play was acted at Oxford in 1610 [[barroll1991]] [[herford1925]] [[mares1967]].",
+  "Plague is the premise of the plot. Lovewit, a gentleman of Blackfriars, has fled the infected city for the country and left his house in the care of his butler Jeremy. Jeremy, under the name Captain Face, has let it to Subtle, a penniless alchemist and astrologer, and to Dol Common, a prostitute, and the three have formed a partnership to cheat all comers. The house, empty because of the sickness, becomes a workshop of fraud; at the end the returning master is told that it has been 'visited' by the plague, the very excuse Face invents to keep him out. The confined, anxious, money-hungry city of the plague year is never far away [[barroll1991]] [[paster1985]].",
+  "Alchemy was not a quaint superstition in 1610. Serious men pursued the transmutation of metals and the elixir of life; Elizabeth I had taken an interest in the claims of John Dee and Edward Kelley, and the language of the art was full of learned Latin, chemical process and mystical allegory. Jonson read deeply in that literature, and Subtle and Face speak its jargon with remarkable accuracy. But the play is less interested in whether alchemy works than in what people want from it. Each visitor to the house brings a private dream of transformation, and Subtle sells each one a version of the philosopher's stone [[duncan1946]] [[holmyard1957]] [[nicholl1980]].",
+  "The Alchemist was a favourite on the stage after the Restoration, and David Garrick made the timid tobacconist Abel Drugger one of his most famous comic roles in the eighteenth century. Its reputation among critics rests above all on its construction. Samuel Taylor Coleridge ranked it with Sophocles' Oedipus the King and Fielding's Tom Jones as one of the three most perfect plots ever devised, and many modern critics have followed him in admiring the way Jonson keeps a dozen intrigues running at once and brings them all to a single crisis at the door of one house [[coleridge1835]] [[barton1984]] [[cave1999]]."
+ ],
+ "plot": [
+  "During a plague outbreak in London, Lovewit has left his house in Blackfriars in the care of his butler Jeremy. Jeremy, calling himself Captain Face, has brought in Subtle, a down-at-heel alchemist, and Dol Common, a prostitute, and the three have agreed to share the profits of cheating. The play opens with Face and Subtle quarrelling over who is the more important partner, until Dol forces them to make peace. Their first customers arrive: Dapper, a lawyer's clerk who wants a familiar spirit to help him gamble, and Abel Drugger, a tobacconist who wants advice on how to lay out his new shop so that it will prosper.",
+  "The greatest gull is Sir Epicure Mammon, a knight who believes that Subtle is about to complete the philosopher's stone and who has already spent heavily on the work. He arrives with his sceptical friend Pertinax Surly and pours out fantasies of the luxury and lust the stone will buy him. Face, disguised as Subtle's assistant 'Lungs', and Subtle, playing a pious philosopher, keep him at a pitch of expectation; Dol is introduced to him as a noble lady driven mad by study. Two Puritans from the separatist congregation in Amsterdam, the deacon Ananias and the pastor Tribulation Wholesome, also have money invested and are persuaded that the stone will finance their cause. Drugger brings a young country heir, Kastril, who wants to learn the art of quarrelling, and his sister Dame Pliant, a rich widow whom Face and Subtle both hope to marry.",
+  "Surly returns disguised as a Spanish nobleman to expose the cheats. Face and Subtle, who think the Spaniard speaks no English, insult him to his face and push Dame Pliant towards him; he tells her the truth and wins her trust. In the meantime Dol performs her mad scene for Mammon, who is caught in her company; Subtle stages an explosion in the laboratory and announces that the work has been ruined by Mammon's sin. When Surly reveals himself, Face turns the other gulls against him, and Kastril, Drugger and Ananias drive him from the house. The tricksters' triumph seems complete.",
+  "Then Lovewit comes home. The neighbours tell him of crowds at his door; Face, shaved and back in his butler's livery, claims the house has been shut because of the plague. Lovewit is not deceived for long, and Face, seeing that the game is up, makes a bargain: in return for pardon he offers his master the widow. Face cheats his partners of the profits, and Subtle and Dol flee over the back wall. When the gulls return with officers, Lovewit, now married to Dame Pliant, keeps the goods, sends everyone away and forgives his clever servant. Face ends the play by putting himself on the judgment of the audience."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Argument: an acrostic on the play",
+   "lines": "The Argument (twelve lines)",
+   "section": 1,
+   "summary": [
+    "Twelve lines tell the whole story in advance: a master leaves his house for fear of the plague; his servant falls in with a cheater and his woman, and they set up shop together; they draw many customers by casting horoscopes, telling fortunes and promising the stone, until everything ends in smoke. The first letters of the lines spell THE ALCHEMIST."
+   ],
+   "analysis": [
+    "As in Volpone, the acrostic argument imitates the learned practice of Roman comedy and announces a play of classical design. The last line, in which the stone, the cheats and all their work 'in fume are gone', anticipates both the explosion of Act IV and the final dispersal of the partners, and it uses the alchemist's own vocabulary of smoke and vapour to pass judgment on him [[mares1967]]."
+   ],
+   "key": [
+    {
+     "ref": "The Argument",
+     "quote": "The sickness hot, a master quit, for fear,\nHis house in town, and left one servant there;",
+     "note": "The plague is the first thing we hear of. 'Hot' means raging; the empty house and the unsupervised servant are its consequences."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Prologue: 'Our scene is London'",
+   "lines": "Prologue",
+   "section": 2,
+   "summary": [
+    "The Prologue asks the audience to wish away the play's 'two short hours' with goodwill, and insists that its scene is London because no country breeds better material for comedy: whores, bawds, squires and impostors, whose manners are now called humours. The author, it says, aims to correct rather than to wound, and hopes that remedies that are pleasant will be accepted."
+   ],
+   "analysis": [
+    "Three Jonsonian commitments are stated at once: the unity of time (the action will take about as long as the performance), the local realism of city comedy, and the moral claim of satire to cure by laughter. The closing lines warn spectators that they may recognise their own follies on the stage, a challenge rather than an apology [[gibbons1968]] [[barton1984]]."
+   ],
+   "key": [
+    {
+     "ref": "Prologue",
+     "quote": "Our scene is London, 'cause we would make known,\nNo country's mirth is better than our own:",
+     "note": "Jonson's earlier comedies were often set in Italy; here he claims the home city as the best stage for comedy."
+    },
+    {
+     "ref": "Prologue",
+     "quote": "Whose manners, now call'd humours, feed the stage;",
+     "note": "A wry nod to the fashionable word 'humours', which Jonson's own early comedies had made popular."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act I, Scene 1: the quarrel, Dapper and Drugger",
+   "lines": "Act I, Scene 1 (the whole act; I.i–iv in the Folio and modern editions)",
+   "section": 3,
+   "summary": [
+    "The play opens in mid-quarrel. Face, in a captain's uniform, threatens Subtle with his sword; Subtle reminds Face that he was once a humble butler, and Face reminds Subtle that he found him starving at Pie Corner and gave him a house to work in. Dol snatches the sword, smashes Subtle's vial and shames them back into partnership: their 'venture tripartite' depends on equality. Face assures the others that Lovewit will stay away while the plague lasts.",
+    "The first customer is Dapper, a lawyer's clerk, who wants a familiar spirit to win at dice and horse races. Subtle pretends reluctance, then tells him that he is nephew to the Queen of Fairy, who will appear to him if he fasts and prepares himself. Next comes Abel Drugger, a tobacconist setting up a shop, whom Subtle dazzles with astrology and the reading of faces. Dol brings news that Sir Epicure Mammon is on his way, and the act ends with the partners preparing for their richest dupe."
+   ],
+   "analysis": [
+    "The opening quarrel is a brilliant exposition: in the course of insulting each other, Face and Subtle tell the audience who they are, how they met and what they are doing. It also states the play's central problem, since a partnership of rogues is held together only by self-interest, and the question of who is master will return at the end. Dol's speech gives the comic community its ironic constitution, a little commonwealth of thieves [[barton1984]] [[leggatt1981]].",
+    "Dapper and Drugger represent the small change of the con. Each wants a modest magic, luck at gaming or a lucky shop sign, and each reveals how readily ordinary Londoners hand over money for the promise of control over chance. Subtle's 'metoposcopy', the art of reading the forehead, parodies the learned sciences of the day by sounding exactly like them [[mares1967]]."
+   ],
+   "key": [
+    {
+     "ref": "Act I, Scene 1",
+     "quote": "The venture tripartite? all things in common?",
+     "note": "Dol's phrase for the partnership. A 'venture' is a commercial undertaking; the three-way deal is a parody of a trading company or even a godly commonwealth."
+    },
+    {
+     "ref": "Act I, Scene 1",
+     "quote": "O, fear not him. While there dies one a week\nO' the plague, he's safe, from thinking toward London.",
+     "note": "Face sets the time limit of the plot. As long as the weekly bills of mortality show plague deaths, the master will stay away."
+    },
+    {
+     "ref": "Act I, Scene 1",
+     "quote": "In metoposcopy, which I do work by;\nA certain star in the forehead, which you see not.",
+     "note": "Subtle's pseudo-science reads Drugger's fortune in his face, an invisible star that only the expert can see."
+    },
+    {
+     "ref": "Act I, Scene 1",
+     "quote": "Your master's worship's house here in the Friars,",
+     "note": "Subtle places the action in Blackfriars, the district of the theatre where the play was probably first acted."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act II, Scene 1: Mammon, Surly and the Puritan deacon",
+   "lines": "Act II, Scene 1 (the whole act; II.i–vi in the Folio and modern editions)",
+   "section": 4,
+   "summary": [
+    "Sir Epicure Mammon arrives with Surly, announcing that today the stone will be finished and he will make all his friends rich. He boasts of the cures, the youth and the power the elixir will give him, and of books of alchemy written by Moses, Solomon and Adam. Face enters as Lungs, the sooty assistant who blows the furnace, and Mammon's fantasies rise to a hymn of luxury: beds of air, rooms of mirrors, dishes studded with jewels and a harem of wives and concubines.",
+    "Subtle appears as a grave and holy philosopher who warns Mammon against impure motives, and defends his art against Surly's scorn with a learned account of how metals grow in the earth. Surly answers with a list of the art's bewildering terms. Dol shows herself briefly and Face tells Mammon she is a lord's sister driven mad by study. Then Ananias the deacon arrives from the brethren of Amsterdam; Subtle and Face bewilder him with alchemical jargon and Subtle refuses to deal with him until his pastor comes. Finally Drugger brings news of a rich young widow and her quarrelsome brother."
+   ],
+   "analysis": [
+    "Mammon is the play's most magnificent creation. His speeches turn the language of alchemy, which promised the purification of base matter, into a vision of insatiable appetite, and Jonson gives them a sensuous energy that both seduces and appals. His name joins Epicurus, the philosopher of pleasure, to Mammon, the biblical god of riches; his dream is a parody of the Renaissance dream of mastery over nature [[partridge1958]] [[barton1984]] [[eliot1920]].",
+    "The dispute between Subtle and Surly is a real argument, and Subtle wins it on points: his theory of the generation of metals rests on respectable Aristotelian ideas of matter and growth, while Surly can only mock. Edgar Hill Duncan showed how closely Jonson followed the alchemical treatises of his time. The comedy lies in the fact that perfect technical command serves a perfect fraud [[duncan1946]] [[holmyard1957]]."
+   ],
+   "key": [
+    {
+     "ref": "Act II, Scene 1",
+     "quote": "Come on, sir. Now, you set your foot on shore\nIn Novo Orbe; here's the rich Peru:",
+     "note": "Mammon's first lines make the house a New World of gold, linking the dream of alchemy to the colonial dream of easy wealth."
+    },
+    {
+     "ref": "Act II, Scene 1",
+     "quote": "I will have all my beds blown up, not stuft;\nDown is too hard:",
+     "note": "The start of Mammon's great fantasy of luxury, so refined that even feathers are too rough for him."
+    },
+    {
+     "ref": "Act II, Scene 1",
+     "quote": "Your toad, your crow, your dragon, and your panther;",
+     "note": "From Surly's catalogue of alchemical terms. The symbolic names of the stages of the work sound to him like nonsense designed to confuse."
+    },
+    {
+     "ref": "Act II, Scene 1",
+     "quote": "'Tis a stone,\nAnd not a stone; a spirit, a soul, and a body:",
+     "note": "Face, in the role of the trained assistant, recites a paradox from the alchemical writers about the philosopher's stone."
+    },
+    {
+     "ref": "Act II, Scene 1",
+     "quote": "All's heathen but the Hebrew.",
+     "note": "Ananias rejects Subtle's Greek and Latin as heathen. The literal-minded Puritan becomes, for a moment, the only person in the room unimpressed by jargon."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act III, Scene 1: the saints in the lane",
+   "lines": "Act III, Scene 1 (III.i in modern editions)",
+   "section": 5,
+   "summary": [
+    "Outside the house, Ananias complains to his pastor that the alchemist is a heathen who bears the mark of the beast. Tribulation Wholesome reproves him: the godly must use any means that will advance their cause, and the stone is needed to restore their silenced ministers and to win over the magistrates. Ananias is convinced, and they knock at the door."
+   ],
+   "analysis": [
+    "A short scene of exquisite casuistry. Tribulation justifies dealing with a man he thinks profane by appealing to providence, which can use 'children of perdition' as instruments, and by excusing Subtle's temper as the effect of fire and fumes. The Puritan habit of finding scriptural reasons for worldly interest is the target, and Jonson lets the pastor condemn himself through the elegance of his reasoning [[collinson1995]] [[dessen1971]]."
+   ],
+   "key": [
+    {
+     "ref": "Act III, Scene 1",
+     "quote": "the sanctified cause\nShould have a sanctified course.",
+     "note": "Ananias's honest scruple, that holy ends require holy means. Tribulation will argue him out of it at once."
+    },
+    {
+     "ref": "Act III, Scene 1",
+     "quote": "The children of perdition are oft-times\nMade instruments even of the greatest works:",
+     "note": "Tribulation's doctrine of convenient providence: God may work through sinners, so the brethren may do business with one."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act III, Scene 2: the Puritans, Surly's plot and the Queen of Fairy",
+   "lines": "Act III, Scene 2 (III.ii–v in modern editions)",
+   "section": 6,
+   "summary": [
+    "Subtle receives the penitent Puritans and lists the political advantages the stone will bring them, then satirises every habit of their sect: their courting of rich widows, their feasts before fasts, their scruples about starch and hair, their railing against plays and their allegorical names. They agree to buy the 'orphans' goods' and to consider whether coining money would be lawful.",
+    "Face reports that he has met a Spanish count who wants to visit the house, and the partners agree to use the rich widow as bait. Dapper returns for his audience with the Fairy Queen; Drugger brings Kastril, the angry boy, who wants to learn the duello, and Subtle impresses him with a display of the art of quarrelling. Finally Subtle, disguised as a priest of Fairy, blindfolds Dapper, has him pinched and stripped of his money, and, when Mammon knocks, gags him with gingerbread and shuts him in the privy."
+   ],
+   "analysis": [
+    "Subtle's attack on the brethren is one of the most quotable satires on Puritanism in the period. Some of it reflects real controversies, such as the separatists' refusal of set forms and their hostility to the theatre; much of it is the stock caricature of the stage Puritan. Jonson's rogues know their customers so well that they can mock them openly and still keep their trust [[collinson1995]] [[barish1981]].",
+    "The Dapper episode turns the house into a fairground of tricks, with a blindfold, a ritual undressing and a farcical imprisonment. The pace increases as customers begin to overlap, and the partners must hide one visitor to receive another. This multiplication of business, carefully timed, is the heart of Jonson's plot construction [[enck1957]] [[mares1967]]."
+   ],
+   "key": [
+    {
+     "ref": "Act III, Scene 2",
+     "quote": "Nor call yourselves\nBy names of Tribulation, Persecution,",
+     "note": "Subtle mocks the Puritan custom of taking names from virtues or spiritual states, the source of the pastor's own name."
+    },
+    {
+     "ref": "Act III, Scene 2",
+     "quote": "Rail against plays, to please the alderman\nWhose daily custard you devour;",
+     "note": "A theatrical joke at the expense of the anti-theatrical preachers, who flatter their wealthy City patrons."
+    },
+    {
+     "ref": "Act III, Scene 2",
+     "quote": "Bells are profane; a tune may be religious.",
+     "note": "Ananias at his most absurd: a scruple so fine that it splits sound itself into godly and ungodly kinds."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act IV, Scene 1: Mammon and Dol, Kastril's lesson, the Spaniard",
+   "lines": "Act IV, Scene 1 (IV.i–iii in modern editions)",
+   "section": 7,
+   "summary": [
+    "Face presents Dol to Mammon as a great lady of noble descent who is mad for learning, warning him never to mention divinity in her presence. Mammon courts her with promises of a fabulous life once the stone is complete. Subtle teaches Kastril how to quarrel and gives his sister, Dame Pliant, a fortune that makes her expect a great match. Then Surly enters disguised as a Spanish don. Believing that he understands no English, Face and Subtle mock him openly, and they quarrel over which of them shall have the widow."
+   ],
+   "analysis": [
+    "Dol is the most versatile actor of the three. As a lady of rank she plays up to Mammon's snobbery and his learning, and her ironic reply that he works on 'the ambition of our sex' lets the audience share the joke. The Spaniard scene turns the play's comedy of language against the cheats: they speak freely because they think they are not understood, and the audience knows that the silent stranger understands every word [[barton1984]] [[leggatt1981]]."
+   ],
+   "key": [
+    {
+     "ref": "Act IV, Scene 1",
+     "quote": "You are pleased, sir,\nTo work on the ambition of our sex.",
+     "note": "Dol, playing the lady, answers Mammon's dream of showering her with gold. The line flatters him and mocks him at once."
+    },
+    {
+     "ref": "Act IV, Scene 1",
+     "quote": "'Slud, he does look too fat to be a Spaniard.",
+     "note": "Face eyes the disguised Surly with suspicion but misses the truth, one of many near-discoveries that keep the plot taut."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act IV, Scene 2: a Spanish countess",
+   "lines": "Act IV, Scene 2 (IV.iv in modern editions)",
+   "section": 8,
+   "summary": [
+    "Face and Subtle persuade Kastril and Dame Pliant that she is destined to marry the Spanish count and become a countess. She objects that she has not been able to abide Spaniards since the Armada of 1588, three years before she was born, but her brother threatens her into obedience. Face sings the praises of everything Spanish, and the widow is handed over to the disguised Surly."
+   ],
+   "analysis": [
+    "The widow is treated as a commodity throughout, passed from one man's scheme to another's. Face and Subtle each want her and each plans to cheat the other, which shows the partnership already straining. The patriotic joke about Spain had a sharp edge in 1610, when English attitudes to Spain were divided after the peace of 1604 [[haynes1992]] [[mares1967]]."
+   ],
+   "key": [
+    {
+     "ref": "Act IV, Scene 2",
+     "quote": "To be a countess, say you, a Spanish countess, sir?",
+     "note": "Kastril's delight at the title sums up the social ambition that the cheats exploit in nearly all their customers."
+    },
+    {
+     "ref": "Act IV, Scene 2",
+     "quote": "Truly I shall never brook a Spaniard.",
+     "note": "Dame Pliant's single piece of resistance, true to the anti-Spanish memories of her generation."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act IV, Scene 3: Dol's fit and the explosion",
+   "lines": "Act IV, Scene 3 (IV.v in modern editions)",
+   "section": 9,
+   "summary": [
+    "Mammon has broken the rule and spoken of divinity, and Dol breaks into a fit of raving, reciting a mass of biblical chronology borrowed from the writings of the Hebraist Hugh Broughton. Face and Mammon struggle to quiet her. Subtle enters and discovers Mammon with the lady, rebukes him for impure thoughts and warns that the work will suffer. At once there is a loud explosion: the furnace and all the vessels are destroyed. Subtle falls into a swoon, Face lists the wreckage, and Mammon, convinced that his own lust has spoiled the stone, departs in despair."
+   ],
+   "analysis": [
+    "The explosion is the play's central coup de théâtre. It frees the partners of their most profitable but most dangerous customer, and it does so by turning his own theology of the art against him: the stone requires a pure operator, and Mammon has proved impure. His cry about his voluptuous mind is the closest the play comes to a confession, and it is extracted by fraud. The scene also gathers the play's recurring image of everything going up in smoke [[partridge1958]] [[mebane1989]]."
+   ],
+   "key": [
+    {
+     "ref": "Act IV, Scene 3",
+     "quote": "O, sir, we are defeated! all the works\nAre flown in fumo, every glass is burst;",
+     "note": "'In fumo', into smoke: Face announces the collapse of the alchemical work in mock-tragic style."
+    },
+    {
+     "ref": "Act IV, Scene 3",
+     "quote": "O, my voluptuous mind! I am justly punish'd.",
+     "note": "Mammon accepts the moral logic of alchemy and blames himself, the gull's final service to his deceivers."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Act IV, Scene 4: Surly unmasked and expelled",
+   "lines": "Act IV, Scene 4 (IV.vi–vii in modern editions)",
+   "section": 10,
+   "summary": [
+    "Alone with Dame Pliant, Surly reveals who he is and tells her the truth about the house; he hopes to win her honestly. When Subtle comes in and tries to pick his pockets, Surly throws off his disguise, knocks him down and denounces Face. But Face rallies the other gulls against him: Kastril quarrels with Surly as an impostor, Drugger claims Surly owes him money, and Ananias denounces his Spanish clothes as idolatrous. Surly is driven out. Face, Subtle and Dol are planning their next move when Dol brings word that Lovewit has come home."
+   ],
+   "analysis": [
+    "This is the play's most daring reversal. The only man who sees through the fraud is defeated by the people he wants to save, who prefer their illusions to his truth. Critics disagree about Surly: he is the voice of common sense, but he is a gamester himself, and his own scheme involves a disguise and the hope of a rich wife. His failure suggests that in Jonson's London honesty is no match for performance [[barton1984]] [[haynes1992]]."
+   ],
+   "key": [
+    {
+     "ref": "Act IV, Scene 4",
+     "quote": "There's no such thing intended: a good cart,\nAnd a clean whip shall ease you of that fear.",
+     "note": "Surly promises Subtle the punishment of bawds, carted through the streets and whipped."
+    },
+    {
+     "ref": "Act IV, Scene 4",
+     "quote": "Depart, proud Spanish fiend!",
+     "note": "Ananias, the most literal believer in the play, drives out the one honest man in the name of religion."
+    },
+    {
+     "ref": "Act IV, Scene 4",
+     "quote": "Hieronimo's old cloak, ruff, and hat will serve;",
+     "note": "A theatrical in-joke: the costume of the hero of Kyd's Spanish Tragedy is to be borrowed from the players."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Act V, Scene 1: Lovewit returns",
+   "lines": "Act V, Scene 1 (V.i–iii in modern editions)",
+   "section": 11,
+   "summary": [
+    "Lovewit arrives with a crowd of neighbours, who tell him of visitors at all hours: lords, ladies, citizens' wives, tobacco men. Face, shaved and in his butler's livery, comes out as Jeremy and tells his master that the house has been shut for three weeks because the cat caught the plague. The story falls apart when Mammon and Surly come to accuse the 'doctor' and the 'captain', and when Dapper's voice is heard from the privy. Face asks to speak privately and offers his master a rich young widow in return for forgiveness."
+   ],
+   "analysis": [
+    "Lovewit's name is his character: he loves wit, and he is curious, amused and quick to see his own advantage. His arrival brings the outside world, in the form of the neighbours, into a play that has been confined to the house. The plague, which made the fiction possible, now returns as Face's last lie, and the lie fails because the master has the authority to open the door [[leggatt1981]] [[barroll1991]]."
+   ],
+   "key": [
+    {
+     "ref": "Act V, Scene 1",
+     "quote": "Another Pimlico!",
+     "note": "A neighbour compares the crowds at the house to Pimlico, a popular resort for cakes and ale on the edge of London."
+    },
+    {
+     "ref": "Act V, Scene 1",
+     "quote": "I love a teeming wit as I love my nourishment:",
+     "note": "Lovewit announces the taste that will decide the ending: he admires invention as he admires good food."
+    },
+    {
+     "ref": "Act V, Scene 1",
+     "quote": "The house, sir, has been visited.",
+     "note": "Face uses the official euphemism for a house struck by plague, which would have been shut up and marked."
+    },
+    {
+     "ref": "Act V, Scene 1",
+     "quote": "Sir, you were wont to affect mirth and wit",
+     "note": "Face appeals to his master's known temperament. His survival depends on reading Lovewit as skilfully as he read the gulls."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Act V, Scene 2: the partnership dissolved",
+   "lines": "Act V, Scene 2 (V.iv in modern editions)",
+   "section": 12,
+   "summary": [
+    "Subtle releases Dapper from the privy and Dol, dressed as the Queen of Fairy, receives him and promises him luck at play; he leaves happy. Drugger is sent for a Spanish costume, which Face will use to dress Lovewit for the marriage. Subtle and Dol, believing Face has betrayed them, plan to run away together with the takings. But Face returns, demands the keys, and announces that his master knows everything and will keep the goods. The officers are at the door. Face offers to help his partners over the back wall, and they curse him and flee."
+   ],
+   "analysis": [
+    "The scene completes the theme of the first: the quarrel over primacy, settled by Dol in Act I, is decided here by the arrival of a real master. Face, who began as a servant, ends as the only partner with a place in the legitimate world. The legal language of the 'indenture tripartite', a contract in three parts, gives the rogues' alliance a mock-official end [[barton1984]] [[mares1967]]."
+   ],
+   "key": [
+    {
+     "ref": "Act V, Scene 2",
+     "quote": "here\nDetermines the indenture tripartite\n'Twixt Subtle, Dol, and Face.",
+     "note": "'Determines' means terminates. Face ends the partnership in the language of a legal contract."
+    },
+    {
+     "ref": "Act V, Scene 2",
+     "quote": "My fine flitter-mouse,\nMy bird o' the night!",
+     "note": "Subtle's endearments to Dol (a 'flitter-mouse' is a bat), as the two plan to cheat Face."
+    },
+    {
+     "ref": "Act V, Scene 2",
+     "quote": "You are a precious fiend!",
+     "note": "Subtle's tribute to Face, half outrage and half admiration for a superior trickster."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Act V, Scene 3: Lovewit's settlement and Face's appeal",
+   "lines": "Act V, Scene 3 (V.v in modern editions)",
+   "section": 13,
+   "summary": [
+    "Lovewit, wearing the Spanish costume and newly married to Dame Pliant, opens the door to the angry crowd of gulls and officers. He invites them to search the house, where they find only bare walls and a broken furnace. Mammon is told that he can recover his goods only by proving in law that he was cheated; the Puritans are threatened with a cudgel; Surly learns that he has lost the widow; Drugger is beaten away; and Kastril is won over by his new brother-in-law's spirit. Lovewit forgives Face, and Face steps forward to speak the epilogue."
+   ],
+   "analysis": [
+    "The ending is famously morally ambiguous. No one is punished by law; the cleverest rogue keeps his place, and the master profits from his servant's crimes. Lovewit's address to the spectators admits that he has bent an old man's gravity for the sake of a young wife and a good brain. Face's epilogue puts himself 'on you, that are my country', using the legal formula by which a prisoner chose trial by jury: the audience is asked to acquit him by applauding. The play thus ends in a contract between the trickster and the theatre [[barton1984]] [[dessen1971]] [[leggatt1981]]."
+   ],
+   "key": [
+    {
+     "ref": "Act V, Scene 3",
+     "quote": "The empty walls worse than I left them, smoak'd,\nA few crack'd pots, and glasses, and a furnace:",
+     "note": "All that remains of the alchemical enterprise. The smoke-stained room is the play's final image of an illusion gone up in fumes."
+    },
+    {
+     "ref": "Act V, Scene 3",
+     "quote": "That master\nThat had received such happiness by a servant,",
+     "note": "Lovewit justifies his indulgence: gratitude, with a little stretching of his own integrity, outweighs strict justice."
+    },
+    {
+     "ref": "Act V, Scene 3",
+     "quote": "My part a little fell in this last scene,\nYet 'twas decorum.",
+     "note": "Face, as actor, admits that his role shrank at the end, but insists that a servant's subordination was fitting."
+    },
+    {
+     "ref": "Act V, Scene 3",
+     "quote": "I put my self\nOn you, that are my country:",
+     "note": "The legal formula for choosing trial by jury. Applause is the acquittal Face asks for."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Subtle",
+   "side": "The partners",
+   "text": "The alchemist: a starving charlatan when Face found him, now a doctor in velvet cap and gown who can play the grave philosopher, the astrologer, the fortune-teller and the priest of Fairy. His mastery of the jargon of alchemy is real, and his insight into each customer's desire is uncanny. He is vain and quarrelsome, claims to be the true author of the enterprise, and is finally outplayed by Face."
+  },
+  {
+   "name": "Face",
+   "side": "The partners",
+   "text": "Lovewit's butler Jeremy, who becomes Captain Face to bring in customers and Lungs, the sooty laboratory assistant, to impress Mammon. He is the play's supreme improviser, changing identity and story at a moment's notice. When his master returns, he sacrifices his partners and survives, and he speaks the epilogue as the play's winner."
+  },
+  {
+   "name": "Dol Common",
+   "side": "The partners",
+   "text": "A prostitute and the third member of the 'venture tripartite'. She keeps the peace between Face and Subtle in the opening scene and plays a noble lady, a madwoman and the Queen of Fairy. Her name means a woman common to all; she is the practical intelligence of the partnership, and is left with nothing at the end."
+  },
+  {
+   "name": "Sir Epicure Mammon",
+   "side": "The gulls",
+   "text": "A wealthy knight who has invested in the stone and lives in fantasy of its rewards: eternal youth, endless sex, jewelled dishes, the power to make his friends rich and to cure the plague. His poetry of desire is the play's richest language. He is ruined by his belief that the work depends on his virtue."
+  },
+  {
+   "name": "Pertinax Surly",
+   "side": "The sceptic",
+   "text": "A gamester and Mammon's friend, who believes nothing he cannot see. He disguises himself as a Spanish nobleman to expose the cheats and wins the trust of Dame Pliant, but the other gulls drive him out and Lovewit marries the widow. He is right about everything and gains nothing."
+  },
+  {
+   "name": "Tribulation Wholesome",
+   "side": "The gulls",
+   "text": "Pastor of the exiled English separatist congregation in Amsterdam. He reasons with great subtlety that the godly may use ungodly means if the cause requires it, and he is ready to consider whether coining money may be lawful. His name is one of the virtue-names that Subtle mocks."
+  },
+  {
+   "name": "Ananias",
+   "side": "The gulls",
+   "text": "Deacon of the same congregation, a zealot who distrusts everything that is not in Scripture and calls Greek and Latin heathen. His name recalls the Ananias of Acts 5, who kept back part of the money he had pledged to the church and was struck dead for lying. He is the loudest of the gulls who drive away Surly."
+  },
+  {
+   "name": "Dapper",
+   "side": "The gulls",
+   "text": "A lawyer's clerk who wants a familiar spirit to help him win at gambling. He is told that he is the Fairy Queen's nephew, is robbed blindfold, gagged with gingerbread and locked in the privy, and leaves at the end perfectly satisfied."
+  },
+  {
+   "name": "Abel Drugger",
+   "side": "The gulls",
+   "text": "A tobacconist setting up a shop, timid and grateful, who wants an astrologically lucky shop sign. He brings the widow and her brother to the house and hopes to marry the widow himself. David Garrick made the part famous on the eighteenth-century stage."
+  },
+  {
+   "name": "Kastril",
+   "side": "The gulls",
+   "text": "The 'angry boy', a young country heir who has come to London to learn to quarrel like a gentleman. He bullies his sister into a match with the 'Spanish count', helps drive out Surly, and ends delighted with Lovewit as a brother-in-law who stands up to him."
+  },
+  {
+   "name": "Dame Pliant",
+   "side": "The gulls",
+   "text": "Kastril's sister, a rich widow of nineteen, whose name describes her character. She is fought over by Face, Subtle, Drugger and Surly, and is finally married to Lovewit. She hardly speaks, which is part of Jonson's point about the trade in women."
+  },
+  {
+   "name": "Lovewit",
+   "side": "The household",
+   "text": "Master of the house, who fled the plague and returns unexpectedly. Witty, tolerant and pragmatic, he forgives Face, marries the widow and keeps the goods. Whether he represents comic good sense or the cynical triumph of the strongest is one of the play's central questions."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Transformation and desire",
+   "text": [
+    "Alchemy promised to turn base metal into gold and the old into the young. Every customer at Lovewit's house wants a similar change: Dapper to become lucky, Drugger to prosper, Kastril to become a gentleman, Dame Pliant to become a countess, the Puritans to rule, Mammon to become a god of pleasure. The play shows these desires as the true raw material that Subtle works on, and his real art is the transmutation of other people's wishes into his own cash [[partridge1958]] [[mebane1989]].",
+    "The only transformations that actually occur are theatrical. Face becomes Captain, Lungs and Jeremy again; Dol becomes lady, madwoman and queen; Surly becomes a Spaniard and Lovewit wears the same costume to win the widow. Change of identity is real only as performance."
+   ]
+  },
+  {
+   "title": "Fraud, credulity and self-deception",
+   "text": [
+    "Jonson's cheats rarely need to lie outright. They read each customer's longing and give it back to him in a grander form, and the gulls do the rest. Dapper pays to be humiliated and goes away happy; Mammon blames his own sin for the explosion; Ananias drives away the one man who would save his money. The play argues that fraud depends on collaboration, and that the deepest deception is self-deception [[leggatt1981]] [[dessen1971]]."
+   ]
+  },
+  {
+   "title": "Language and jargon",
+   "text": [
+    "The Alchemist is a festival of specialised languages: alchemical Latin, astrological terms, the duelling code, legal formulas, Puritan scriptural cant and Broughton's biblical chronology. Each jargon is a way of claiming authority, and Jonson shows how easily it impresses those who do not understand it. Surly's list of alchemical terms and Ananias's rejection of 'heathen Greek' are two forms of resistance, mockery and fundamentalism, and neither succeeds [[barish1960]] [[duncan1946]]."
+   ]
+  },
+  {
+   "title": "The city, money and the plague",
+   "text": [
+    "The play belongs to the genre of city comedy, which examined the greed and social mobility of London. Its world is a market in which everything has a price, including a widow and a spirit. The plague that empties the house is also an image of the infection of greed; in this city, the sick are the credulous and the fortunate are the shameless [[gibbons1968]] [[knights1937]] [[paster1985]]."
+   ]
+  },
+  {
+   "title": "Religion and hypocrisy",
+   "text": [
+    "Mammon speaks of his project in the language of piety, Subtle poses as a holy man, and the Puritans use providence to justify investment and even counterfeiting. Jonson treats religious language as one more jargon available for hire. The satire of the brethren is the most specific, but the play is equally hard on the knight who wants a harem of concubines and imagines himself a second Solomon [[collinson1995]] [[barton1984]]."
+   ]
+  },
+  {
+   "title": "Masters and servants",
+   "text": [
+    "The play begins with a servant playing a captain and ends with him a servant again, and the question of who is master runs through it: Face and Subtle quarrel over primacy, the gulls are mastered by their deceivers, and Lovewit's return restores the legal hierarchy. Yet the servant's wit has made the master's fortune, and the final settlement is a partnership of convenience between them [[haynes1992]] [[leggatt1981]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Smoke and fumes",
+   "text": "From the Argument's 'in fume are gone' to the explosion and the smoke-stained walls, smoke is the substance of the play's illusions. It is also the substance of tobacco, Drugger's trade, and of the vapours that Tribulation says intoxicate the alchemist's brain."
+  },
+  {
+   "title": "Knocking at the door",
+   "text": "The door of the house is the play's chief stage device. Every knock brings a new customer or a new danger, and the partners must hide one visitor before admitting another; in the final act the knocking of Lovewit and the officers brings the comedy to its crisis."
+  },
+  {
+   "title": "Disguise and costume",
+   "text": "Face's uniform and livery, Subtle's velvet gown, Dol's rich dress and fairy robes, Surly's Spanish suit and Lovewit's borrowed Hieronimo costume: costume is identity in a world where nobody is what he says he is."
+  },
+  {
+   "title": "Time and the clock",
+   "text": "Appointments, hours and the progress of the work are constantly mentioned, and the partners are always racing against time. The tight time scheme of the plot is part of its comedy."
+  },
+  {
+   "title": "Animal names",
+   "text": "The characters insult each other with animal names: dog, cur, baboon, whelp, bat, owl, locust. As in Volpone, Jonson hints that greed reduces human beings to the level of beasts."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The philosopher's stone",
+   "text": "The object everyone wants and no one sees. It stands for the dream of a single secret that would bring wealth, health, youth and power at once, and for the endless deferral on which the cheat depends."
+  },
+  {
+   "title": "The furnace",
+   "text": "The heart of the laboratory, tended by Face as Lungs. Its fire is the sign of the work's progress, and its destruction in Act IV is the sign of collapse. Lovewit finds it at last among the debris."
+  },
+  {
+   "title": "Lovewit's house",
+   "text": "A single house stands for London itself, a place of commerce and illusion that is emptied by the plague and filled by fraud. It is also, in effect, a theatre, with an audience of gulls and a company of three actors."
+  },
+  {
+   "title": "The Queen of Fairy",
+   "text": "The imaginary aunt Dapper longs to meet, played by Dol. She is the purest example of a fantasy that costs its believer money and delivers only humiliation."
+  },
+  {
+   "title": "The Spanish costume",
+   "text": "First Surly's disguise, then Lovewit's wedding clothes. The same costume passes from the honest man to the master, and the widow passes with it."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Does the ending reward vice?",
+   "text": [
+    "The ending does not punish the guilty. Subtle and Dol escape over the wall, Face is forgiven, and Lovewit keeps the goods and the widow. Some critics have seen this as a failure of Jonson's moral design, or a cynical reflection of a society in which the powerful profit from the clever. Others argue that Jonson deliberately suspends satiric justice for the sake of comic festivity, and that the gulls are punished enough by their own exposure [[dessen1971]] [[leggatt1981]].",
+    "Anne Barton pointed to the play's connection with the Roman comedy of the clever slave, in which the servant who helps his master is pardoned. Face's epilogue, which puts his case to the audience as a jury, suggests that the final judgment belongs to the spectators, who have enjoyed his wit and have, in a sense, been his accomplices [[barton1984]]."
+   ],
+   "cite": [
+    "dessen1971",
+    "leggatt1981",
+    "barton1984"
+   ]
+  },
+  {
+   "title": "Is Surly the moral centre?",
+   "text": [
+    "Surly is the only character who sees the truth, and his name suggests the roughness of the plain-speaking critic. But he is a gamester, his disguise is itself a trick, and he hopes to profit by marrying the widow. His defeat by the gulls whom he tries to save has been read both as Jonson's satire on a credulous world and as a judgment on a sceptic who lacks the wit and the charm to persuade [[barton1984]] [[haynes1992]].",
+    "The debate matters because it decides how we read the ending. If Surly is the norm, Lovewit's victory is a defeat for honesty; if he is another self-interested player, the play has no moral centre at all, only a hierarchy of wit [[leggatt1981]]."
+   ],
+   "cite": [
+    "barton1984",
+    "haynes1992",
+    "leggatt1981"
+   ]
+  },
+  {
+   "title": "How seriously did Jonson take alchemy?",
+   "text": [
+    "Edgar Hill Duncan's study of Jonson's sources showed that the alchemical vocabulary of the play is accurate and drawn from respectable treatises. Jonson clearly knew the literature well. The question is whether the play satirises alchemy itself as nonsense, or only its abuse by charlatans and the greedy [[duncan1946]] [[holmyard1957]].",
+    "John Mebane argued that Jonson, unlike some contemporaries, was deeply suspicious of the occult claims of Renaissance magic, and that the play attacks the whole aspiration to remake the world through secret knowledge. Charles Nicholl traced the use of alchemy as a metaphor in the drama of the period and suggested that its language of transformation could carry spiritual meaning even when it was mocked [[mebane1989]] [[nicholl1980]]."
+   ],
+   "cite": [
+    "duncan1946",
+    "holmyard1957",
+    "mebane1989",
+    "nicholl1980"
+   ]
+  },
+  {
+   "title": "Is the satire of the Puritans fair?",
+   "text": [
+    "Tribulation and Ananias have often been read as crude caricatures, and Jonson's portrait draws on a stock figure of the stage Puritan that was already familiar in 1610. Patrick Collinson argued that the theatre played an important part in creating the stereotype of 'the Puritan' as a hypocrite, a figure whom the playwrights helped to invent as much as they observed [[collinson1995]].",
+    "Jonas Barish's study of anti-theatrical writing shows why the players had reason to hate the preachers who attacked them. Subtle's jibe about railing against plays is a professional reply. Yet Jonson's satire also has a theological edge: the Puritans' faith in providence becomes a licence for greed, and their literalism makes them easy prey [[barish1981]]."
+   ],
+   "cite": [
+    "collinson1995",
+    "barish1981"
+   ]
+  },
+  {
+   "title": "One of the most perfect plots?",
+   "text": [
+    "Coleridge ranked the play with Oedipus and Tom Jones as one of the three most perfect plots ever planned. Critics who have followed him point to the strict observance of the unities of time, place and action, the careful timing of entrances and exits, and the way every intrigue converges on the return of Lovewit [[coleridge1835]] [[enck1957]].",
+    "Others have questioned the praise. The plot is not a single action leading to a tragic recognition, as in Sophocles, but a series of tricks, and its unity comes from the house and the partnership rather than from a single story. Edward Partridge argued that its coherence lies in its imagery as much as in its plot, since the language of alchemy runs through every episode and binds it together [[partridge1958]] [[barton1984]]."
+   ],
+   "cite": [
+    "coleridge1835",
+    "enck1957",
+    "partridge1958",
+    "barton1984"
+   ]
+  },
+  {
+   "title": "Alchemy as an image of theatre",
+   "text": [
+    "Many critics have seen Subtle's art as an image of Jonson's own: the alchemist transforms base materials and the playwright turns the follies of London into comedy. The partners write scenarios, cast parts, change costumes and play to an audience, and their house is a theatre in miniature. The analogy makes the play a reflection on the power and the dishonesty of illusion [[barton1984]] [[cave1999]].",
+    "If the tricksters are figures of the dramatist, the ending, in which Face throws himself on the audience's mercy, suggests that the theatre itself is a kind of benign fraud, which gives pleasure for money and asks to be forgiven [[mares1967]] [[leggatt1981]]."
+   ],
+   "cite": [
+    "barton1984",
+    "cave1999",
+    "mares1967",
+    "leggatt1981"
+   ]
+  },
+  {
+   "title": "Plague, city and society",
+   "text": [
+    "L. C. Knights read Jonson's comedies in relation to the economic changes of the early seventeenth century, in which new forms of acquisition threatened older ideals. Brian Gibbons placed the play within the genre of city comedy, and Gail Kern Paster examined how such plays imagine the city as a place of appetite and danger [[knights1937]] [[gibbons1968]] [[paster1985]].",
+    "Leeds Barroll's study of the plague and the playhouses reminds us that the plague year was also a crisis for the players themselves, whose theatres were closed. A comedy about an empty house in a plague-stricken city, written for a company that could not play, has an irony that its first audiences would have felt [[barroll1991]]."
+   ],
+   "cite": [
+    "knights1937",
+    "gibbons1968",
+    "paster1985",
+    "barroll1991"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "The Argument",
+   "quote": "The sickness hot, a master quit, for fear,\nHis house in town, and left one servant there;",
+   "who": "The Argument",
+   "explanation": "The first lines of the play name the plague as the cause of everything that follows. The master's flight leaves the house empty and the servant free, and the comedy grows in that vacuum."
+  },
+  {
+   "ref": "Act I, Scene 1",
+   "quote": "The venture tripartite? all things in common?",
+   "who": "Dol Common",
+   "explanation": "Dol reminds her quarrelling partners that their enterprise is a partnership of equals. The commercial word 'venture' and the communal ideal of 'all things in common' make the gang a parody of a joint-stock company and of a godly commonwealth; the final act dissolves it."
+  },
+  {
+   "ref": "Act II, Scene 1",
+   "quote": "Come on, sir. Now, you set your foot on shore\nIn Novo Orbe; here's the rich Peru:",
+   "who": "Sir Epicure Mammon",
+   "explanation": "Mammon greets the house as a New World of gold. The image links alchemy to the colonial fantasies of the age and establishes Mammon as a conquistador of the imagination."
+  },
+  {
+   "ref": "Act II, Scene 1",
+   "quote": "I will have all my beds blown up, not stuft;\nDown is too hard:",
+   "who": "Sir Epicure Mammon",
+   "explanation": "The opening of Mammon's great fantasy of luxury. The comic hyperbole reveals an appetite so refined that it becomes absurd, and the air that fills his beds anticipates the vapour into which his dreams will vanish."
+  },
+  {
+   "ref": "Act II, Scene 1",
+   "quote": "Your toad, your crow, your dragon, and your panther;",
+   "who": "Surly",
+   "explanation": "From Surly's mocking list of alchemical terms. To the sceptic, the symbolic language of the art is a catalogue of nonsense; to the believer it is the proof of its depth. The line captures the play's interest in jargon as power."
+  },
+  {
+   "ref": "Act II, Scene 1",
+   "quote": "'Tis a stone,\nAnd not a stone; a spirit, a soul, and a body:",
+   "who": "Face",
+   "explanation": "Face, playing Subtle's trained assistant, recites the alchemists' paradox of the philosopher's stone. Its contradictions are part of its appeal: the stone can be anything the customer wishes it to be."
+  },
+  {
+   "ref": "Act III, Scene 1",
+   "quote": "the sanctified cause\nShould have a sanctified course.",
+   "who": "Ananias",
+   "explanation": "The deacon's honest scruple that holy ends require holy means. Tribulation at once argues him out of it, and the scene shows how easily religious principle yields to interest."
+  },
+  {
+   "ref": "Act IV, Scene 3",
+   "quote": "O, my voluptuous mind! I am justly punish'd.",
+   "who": "Sir Epicure Mammon",
+   "explanation": "After the explosion Mammon blames his own lust for the ruin of the work. The confession is sincere, but it is produced by a fraud, and it saves his deceivers the trouble of explaining their failure."
+  },
+  {
+   "ref": "Act V, Scene 2",
+   "quote": "here\nDetermines the indenture tripartite\n'Twixt Subtle, Dol, and Face.",
+   "who": "Face",
+   "explanation": "Face ends the partnership in the language of a legal contract. The servant returns to his master and leaves his partners to escape over the wall; the alliance of equals proves to have been one more trick."
+  },
+  {
+   "ref": "Act V, Scene 3",
+   "quote": "I put my self\nOn you, that are my country:",
+   "who": "Face",
+   "explanation": "In the epilogue Face uses the legal formula by which an accused man chose trial by jury. The audience becomes his jury, and its applause will be his acquittal, a final joke on the audience's complicity in the pleasures of fraud."
+  }
+ ],
+ "questions": [
+  {
+   "q": "How does the plague shape the plot, the setting and the mood of the play?",
+   "hint": "Consider the Argument, Face's remarks about the weekly deaths, Mammon's promise to cure the plague, and Face's lie that the house was 'visited'."
+  },
+  {
+   "q": "What does each of the gulls want, and how does Subtle exploit that desire?",
+   "hint": "Compare Dapper, Drugger, Kastril, Dame Pliant, Mammon and the Puritans; ask what kind of transformation each hopes for."
+  },
+  {
+   "q": "How does Jonson observe the unities of time, place and action, and what does the play gain from them?",
+   "hint": "Look at the Prologue's 'two short hours', the single house and street, and the convergence of all the intrigues in Act V."
+  },
+  {
+   "q": "Is Sir Epicure Mammon a figure of satire, of poetry, or both?",
+   "hint": "Read his speeches in Act II closely and compare the energy of his language with the moral judgments made on him."
+  },
+  {
+   "q": "How does the opening quarrel prepare for the ending?",
+   "hint": "Compare the dispute over primacy in Act I with Face's dissolution of the partnership in Act V."
+  },
+  {
+   "q": "How fair is Jonson's portrait of the Puritans?",
+   "hint": "Consider Tribulation's reasoning in Act III, Scene 1, Subtle's catalogue of their practices, and the role of Ananias in driving away Surly."
+  },
+  {
+   "q": "Why does Surly fail, and what does his failure suggest about the play's world?",
+   "hint": "Look at his motives, his disguise, his relationship with Dame Pliant and the gulls' reaction to his revelation."
+  },
+  {
+   "q": "What is the significance of the language of alchemy in the play?",
+   "hint": "Consider Subtle's lecture to Surly, Face's catechism before Ananias, and the imagery of smoke and transformation."
+  },
+  {
+   "q": "Does the ending satisfy comic justice?",
+   "hint": "Weigh Lovewit's speech to the spectators and Face's epilogue against the punishments in Volpone."
+  },
+  {
+   "q": "Do you agree with Coleridge that The Alchemist has one of the most perfect plots ever planned?",
+   "hint": "Think about the timing of entrances, the near-discoveries, and how much of the play's unity depends on a single house."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "barish1960",
+   "text": "Barish, Jonas A. Ben Jonson and the Language of Prose Comedy. Cambridge, MA: Harvard University Press, 1960."
+  },
+  {
+   "id": "barish1981",
+   "text": "Barish, Jonas. The Antitheatrical Prejudice. Berkeley: University of California Press, 1981."
+  },
+  {
+   "id": "barroll1991",
+   "text": "Barroll, J. Leeds. Politics, Plague, and Shakespeare's Theater: The Stuart Years. Ithaca: Cornell University Press, 1991."
+  },
+  {
+   "id": "barton1984",
+   "text": "Barton, Anne. Ben Jonson, Dramatist. Cambridge: Cambridge University Press, 1984."
+  },
+  {
+   "id": "bevington2012",
+   "text": "Bevington, David, Martin Butler and Ian Donaldson, gen. eds. The Cambridge Edition of the Works of Ben Jonson. 7 vols. Cambridge: Cambridge University Press, 2012."
+  },
+  {
+   "id": "cave1999",
+   "text": "Cave, Richard, Elizabeth Schafer and Brian Woolland, eds. Ben Jonson and Theatre: Performance, Practice and Theory. London: Routledge, 1999."
+  },
+  {
+   "id": "coleridge1835",
+   "text": "Coleridge, Samuel Taylor. Specimens of the Table Talk of the Late Samuel Taylor Coleridge. Ed. H. N. Coleridge. 2 vols. London: John Murray, 1835."
+  },
+  {
+   "id": "collinson1995",
+   "text": "Collinson, Patrick. 'The Theatre Constructs Puritanism.' In The Theatrical City: Culture, Theatre and Politics in London, 1576–1649, ed. David L. Smith, Richard Strier and David Bevington, 157–69. Cambridge: Cambridge University Press, 1995."
+  },
+  {
+   "id": "dessen1971",
+   "text": "Dessen, Alan C. Jonson's Moral Comedy. Evanston: Northwestern University Press, 1971."
+  },
+  {
+   "id": "donaldson2011",
+   "text": "Donaldson, Ian. Ben Jonson: A Life. Oxford: Oxford University Press, 2011."
+  },
+  {
+   "id": "duncan1946",
+   "text": "Duncan, Edgar Hill. 'Jonson's Alchemist and the Literature of Alchemy.' PMLA 61 (1946): 699–710."
+  },
+  {
+   "id": "eliot1920",
+   "text": "Eliot, T. S. 'Ben Jonson.' In The Sacred Wood: Essays on Poetry and Criticism. London: Methuen, 1920."
+  },
+  {
+   "id": "enck1957",
+   "text": "Enck, John J. Jonson and the Comic Truth. Madison: University of Wisconsin Press, 1957."
+  },
+  {
+   "id": "gibbons1968",
+   "text": "Gibbons, Brian. Jacobean City Comedy: A Study of Satiric Plays by Jonson, Marston and Middleton. London: Rupert Hart-Davis, 1968."
+  },
+  {
+   "id": "haynes1992",
+   "text": "Haynes, Jonathan. The Social Relations of Jonson's Theater. Cambridge: Cambridge University Press, 1992."
+  },
+  {
+   "id": "herford1925",
+   "text": "Herford, C. H., Percy Simpson and Evelyn Simpson, eds. Ben Jonson. 11 vols. Oxford: Clarendon Press, 1925–52."
+  },
+  {
+   "id": "holmyard1957",
+   "text": "Holmyard, E. J. Alchemy. Harmondsworth: Penguin Books, 1957."
+  },
+  {
+   "id": "knights1937",
+   "text": "Knights, L. C. Drama and Society in the Age of Jonson. London: Chatto and Windus, 1937."
+  },
+  {
+   "id": "leggatt1981",
+   "text": "Leggatt, Alexander. Ben Jonson: His Vision and His Art. London: Methuen, 1981."
+  },
+  {
+   "id": "mares1967",
+   "text": "Mares, F. H., ed. The Alchemist. By Ben Jonson. The Revels Plays. London: Methuen, 1967."
+  },
+  {
+   "id": "mebane1989",
+   "text": "Mebane, John S. Renaissance Magic and the Return of the Golden Age: The Occult Tradition and Marlowe, Jonson, and Shakespeare. Lincoln: University of Nebraska Press, 1989."
+  },
+  {
+   "id": "nicholl1980",
+   "text": "Nicholl, Charles. The Chemical Theatre. London: Routledge and Kegan Paul, 1980."
+  },
+  {
+   "id": "partridge1958",
+   "text": "Partridge, Edward B. The Broken Compass: A Study of the Major Comedies of Ben Jonson. London: Chatto and Windus, 1958."
+  },
+  {
+   "id": "paster1985",
+   "text": "Paster, Gail Kern. The Idea of the City in the Age of Shakespeare. Athens: University of Georgia Press, 1985."
+  },
+  {
+   "id": "riggs1989",
+   "text": "Riggs, David. Ben Jonson: A Life. Cambridge, MA: Harvard University Press, 1989."
+  }
+ ]
+}

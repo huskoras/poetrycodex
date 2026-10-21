@@ -1,0 +1,1180 @@
+{
+ "work": "as-you-like-it-shakespeare",
+ "title": "As You Like It",
+ "author": "William Shakespeare",
+ "quoteEdition": "as-you-like-it-shakespeare",
+ "unit": "Scene",
+ "updated": "2026-10-21",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "William Shakespeare (1564–1616), actor, shareholder and principal playwright of the Lord Chamberlain's Men"
+  },
+  {
+   "label": "Genre",
+   "value": "Pastoral romantic comedy, in prose and blank verse, with more songs than any other Shakespeare play"
+  },
+  {
+   "label": "Written",
+   "value": "About 1599–1600, probably for the newly built Globe; entered in the Stationers' Register in August 1600"
+  },
+  {
+   "label": "First printed",
+   "value": "First Folio, 1623; no earlier quarto survives"
+  },
+  {
+   "label": "Main source",
+   "value": "Thomas Lodge's prose romance Rosalynde (1590), itself drawn from the medieval Tale of Gamelyn"
+  },
+  {
+   "label": "Setting",
+   "value": "A French duchy and the Forest of Arden, which recalls both the Ardennes and the Warwickshire forest near Stratford"
+  },
+  {
+   "label": "Protagonist",
+   "value": "Rosalind, who as the youth Ganymede teaches Orlando how to love; the largest female role in Shakespeare"
+  },
+  {
+   "label": "Shakespeare's additions",
+   "value": "Jaques, Touchstone, Audrey, William and Sir Oliver Martext, none of whom appear in Lodge"
+  },
+  {
+   "label": "Famous lines",
+   "value": "\"All the world's a stage\"; \"Sweet are the uses of adversity\"; \"Under the greenwood tree\""
+  },
+  {
+   "label": "Companion plays",
+   "value": "Much Ado About Nothing and Twelfth Night, the mature comedies of 1598–1601"
+  }
+ ],
+ "context": [
+  "As You Like It was probably written in 1599 or early 1600, the year in which the Lord Chamberlain's Men moved into the new Globe theatre on the south bank of the Thames. It was entered in the Stationers' Register on 4 August 1600 with a note that it was 'to be staied', and it was first printed in the First Folio of 1623. It stands between Much Ado About Nothing and Twelfth Night in the group of comedies that most critics regard as Shakespeare's finest in the form, and it shares with Henry V and Julius Caesar a year of extraordinary productivity [[shapiro2005]] [[dusinberre2006]] [[brissenden1993]].",
+  "Its main source is Thomas Lodge's Rosalynde: Euphues' Golden Legacy (1590), a prose romance in the elaborate style of Lyly, which Lodge says he wrote on a voyage to the Canaries. Lodge in turn reworked the medieval Tale of Gamelyn, a rough story of a wronged younger brother who becomes an outlaw. Shakespeare kept Lodge's plot almost entire, including Ganymede, Aliena and the pastoral lovers (Lodge's Montanus becomes Silvius), but he cut the violence, softened the villains and added Jaques, Touchstone, Audrey and William, the commentators who make the play a debate as well as a romance [[bullough1958]].",
+  "The play belongs to the pastoral tradition, which runs from Theocritus and Virgil's Eclogues through Sannazaro's Arcadia and Montemayor's Diana to Sidney's Arcadia and Spenser's Shepheardes Calender. Pastoral imagines a simple life of shepherds as a criticism of court and city, and it was often a vehicle for love poetry and for veiled comment on politics. Shakespeare uses the conventions and tests them: his shepherds include a stylised lover (Silvius), a working countryman (Corin) and an illiterate goatherd (Audrey), and his courtiers discover that the forest is cold [[greg1906]] [[empson1935]] [[alpers1996]].",
+  "Two changes in the company help to explain the play's character. Robert Armin, a clown famed for wit and song, joined around 1599 after the departure of Will Kemp, and Touchstone was almost certainly written for him. The company also had a boy actor capable of the long and difficult role of Rosalind, the largest female part in Shakespeare. The play's songs, one of which survives in a setting by Thomas Morley, suggest that it was designed to show off musical talent [[wiles1987]] [[seng1967]].",
+  "Through the eighteenth and nineteenth centuries the play was a favourite of actresses, from Peg Woffington to Helen Faucit and Ellen Terry, and Rosalind became a model of the witty and loving heroine. Twentieth-century criticism found in it a balanced comedy of perspectives, a festive ritual and a myth of the green world; more recent criticism has explored its sexual politics, its economics of inheritance and land, and the theatrical play of gender in Rosalind's disguise [[barber1959]] [[frye1965]] [[montrose1981]] [[gay1994]]."
+ ],
+ "plot": [
+  "Orlando, youngest son of the late Sir Rowland de Boys, has been denied his education and inheritance by his elder brother Oliver. At the court of Duke Frederick, who has usurped and banished his elder brother Duke Senior, Orlando defeats the champion wrestler Charles and falls in love with Rosalind, the banished duke's daughter, who has stayed at court with her cousin Celia, Frederick's daughter. Frederick banishes Rosalind; Celia goes with her, Rosalind disguised as a youth called Ganymede and Celia as a shepherdess called Aliena, with the fool Touchstone. Warned that Oliver plans to kill him, Orlando also flees, with the old servant Adam.",
+  "In the Forest of Arden, the exiled Duke lives with his followers, among them the melancholy Jaques. Rosalind and Celia buy a cottage and a flock, and Orlando joins the Duke's company and hangs love poems to Rosalind on the trees. Rosalind, as Ganymede, offers to cure him of love by playing Rosalind and letting him woo her. Meanwhile the shepherd Silvius loves the scornful Phoebe, who falls in love with Ganymede, and Touchstone courts the goatherd Audrey.",
+  "Oliver, sent by Frederick to find Orlando, is saved by his brother from a lioness and is reconciled to him; he falls in love with Celia at first sight. When Orlando says he can no longer live by pretending, Rosalind promises that she will produce the real Rosalind by magic.",
+  "At the end, in the presence of Hymen, god of marriage, Rosalind appears in her own clothes and is married to Orlando; Celia marries Oliver, Phoebe accepts Silvius, and Touchstone marries Audrey. News comes that Frederick has been converted by a hermit and has restored the dukedom. Jaques chooses to join Frederick in religious retirement, and Rosalind speaks the epilogue."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Act I, Scene 1: Orlando against Oliver",
+   "lines": "Act I, Scene 1 (the whole scene)",
+   "section": 1,
+   "summary": [
+    "In the orchard of Oliver's house, Orlando complains to the old servant Adam that his eldest brother has kept him like a farm animal since their father, Sir Rowland de Boys, died: the middle brother Jaques is at school, while Orlando is denied the education and the small inheritance their father's will promised him. Oliver enters, the two quarrel, and Orlando seizes him by the throat and demands his portion. Oliver contemptuously agrees and dismisses Adam as an 'old dog'.",
+    "Charles, Duke Frederick's wrestler, brings the news of the court: the old Duke has been usurped by his younger brother and lives in exile in the Forest of Arden, while his daughter Rosalind stays at court for love of her cousin Celia. Charles has heard that Orlando means to challenge him at tomorrow's wrestling. Oliver encourages him to break Orlando's neck, and then confesses in soliloquy that he hates his brother without knowing why."
+   ],
+   "analysis": [
+    "The play opens not in Arden but in a world of property, primogeniture and resentment. Orlando's grievance is precise: the custom by which the eldest son inherits leaves him nothing but his 'blood', and he insists that blood should still count. Louis Montrose has shown how much of the comedy grows from this social problem of the younger son, a real anxiety among the Elizabethan gentry, which the ending will solve by marriage and restored estates [[montrose1981]].",
+    "The scene also sets up the play's double pattern of brothers: Oliver wrongs Orlando as Frederick has wronged the old Duke. Charles's report of the exiles, who 'fleet the time carelessly, as they did in the golden world', introduces the pastoral myth before we see the forest, and in a deliberately mixed form, since Robin Hood belongs to English ballad rather than to classical Arcadia [[young1972]]."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 1.1",
+     "quote": "The spirit\nof my father grows strong in me, and I will no longer endure it.",
+     "note": "Orlando claims his inheritance of character, if not of land: the father's spirit 'mutinies' in the neglected son."
+    },
+    {
+     "ref": "As You Like It 1.1",
+     "quote": "there they live like the old Robin Hood of England. They\nsay many young gentlemen flock to him every day and fleet the time\ncarelessly, as they did in the golden world.",
+     "note": "Charles's report joins English outlaw legend to the classical golden age, the first picture of Arden."
+    },
+    {
+     "ref": "As You Like It 1.1",
+     "quote": "Yet he's gentle, never schooled and yet learned",
+     "note": "Oliver's unwilling praise of Orlando, which he cannot explain away: his hatred is jealousy of a natural nobility."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Act I, Scene 2: The wrestling",
+   "lines": "Act I, Scene 2 (the whole scene)",
+   "section": 2,
+   "summary": [
+    "Celia tries to cheer Rosalind, who grieves for her banished father, and the cousins play at a witty debate on the gifts of Fortune and Nature. Touchstone, the court fool, joins them with a riddle about a knight's oath, and the foppish courtier Le Beau describes how Charles has broken the ribs of three brothers. Orlando arrives to wrestle; the princesses try to dissuade him, but he says he has nothing to lose.",
+    "Orlando throws Charles. When Duke Frederick learns he is the son of Sir Rowland, an enemy of his, he turns cold and leaves. Rosalind, whose father loved Sir Rowland, gives Orlando a chain from her neck. He is too overcome to answer her. Le Beau warns him to leave before the Duke's anger falls on him, and tells him that the Duke has lately turned against Rosalind as well."
+   ],
+   "analysis": [
+    "The banter about Fortune and Nature is more than decoration. It names the question the plot will test: whether one's place in the world is decided by luck and inheritance or by inborn quality. Orlando's victory over Charles is a first answer, and Rosalind's gift of the chain, given 'one out of suits with Fortune', marks the start of love between two people whom Fortune has wronged.",
+    "Love at first sight is shown as a kind of overthrow. Rosalind's 'you have wrestled well and overthrown / More than your enemies' plays on the match, and Orlando, tongue-tied, calls himself a 'quintain', a wooden post for tilting practice. The couple's first meeting thus leaves him speechless and her eloquent, an imbalance that the forest scenes will make into a whole comic method [[barber1959]]."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 1.2",
+     "quote": "Fortune reigns\nin gifts of the world, not in the lineaments of Nature.",
+     "note": "Rosalind distinguishes worldly fortune from natural gifts, the play's central distinction."
+    },
+    {
+     "ref": "As You Like It 1.2",
+     "quote": "Wear this for me—one out of suits with Fortune,\nThat could give more but that her hand lacks means.",
+     "note": "Her gift of the chain; 'out of suits with' means out of favour with, with a pun on the livery of a servant."
+    },
+    {
+     "ref": "As You Like It 1.2",
+     "quote": "Sir, you have wrestled well and overthrown\nMore than your enemies.",
+     "note": "Rosalind's half-declaration of love, couched in the language of the match."
+    },
+    {
+     "ref": "As You Like It 1.2",
+     "quote": "O poor Orlando, thou art overthrown.",
+     "note": "Orlando, the victor, finds himself thrown by love."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act I, Scene 3: Rosalind banished",
+   "lines": "Act I, Scene 3 (the whole scene)",
+   "section": 3,
+   "summary": [
+    "Rosalind confesses to Celia that she has fallen in love with Orlando. Duke Frederick bursts in and banishes her on pain of death, saying only that she is her father's daughter and that he does not trust her. Celia pleads for her and, when her father refuses, declares that she will share Rosalind's exile.",
+    "The cousins decide to seek Rosalind's father in Arden. Since young women travelling alone are in danger, Rosalind will dress as a man and call herself Ganymede, and Celia will go as a poor shepherdess named Aliena. They will take Touchstone with them, together with their jewels."
+   ],
+   "analysis": [
+    "Celia's loyalty is the strongest bond in the first act. Her description of the cousins as inseparable, like 'Juno's swans', gives the friendship between women a weight that the later marriages never quite replace, and critics interested in female friendship and desire have drawn attention to it [[traub1992]]. Her new name, Aliena, 'the estranged one', is a small sign of what she gives up.",
+    "Rosalind's choice of disguise is decisive for the whole play. She will wear 'a swashing and a martial outside' while keeping a woman's fear within, a split between inner and outer self that the play explores with great wit. The name Ganymede, the beautiful boy whom Jove carried off to be his cupbearer, was familiar from Ovid and from Lodge, and carried homoerotic associations an Elizabethan audience would have recognised [[orgel1996]] [[bate1993]]."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 1.3",
+     "quote": "We still have slept together,\nRose at an instant, learned, played, ate together,\nAnd wheresoe'er we went, like Juno's swans,\nStill we went coupled and inseparable.",
+     "note": "Celia's account of a childhood friendship that her father cannot divide."
+    },
+    {
+     "ref": "As You Like It 1.3",
+     "quote": "We'll have a swashing and a martial outside,",
+     "note": "Rosalind's plan for her disguise: a swaggering exterior over a hidden woman's fear."
+    },
+    {
+     "ref": "As You Like It 1.3",
+     "quote": "To liberty, and not to banishment.",
+     "note": "Celia's closing couplet turns exile into freedom, preparing the way for the forest."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act II, Scene 1: The Duke in Arden",
+   "lines": "Act II, Scene 1 (the whole scene)",
+   "section": 4,
+   "summary": [
+    "In the Forest of Arden, the exiled Duke Senior praises the simple life to his followers. The winter wind, he says, is an honest counsellor compared with the flattering court, and adversity teaches better than prosperity. Proposing a hunt, he regrets that the deer, the forest's native citizens, must be killed in their own home.",
+    "A lord reports that the melancholy Jaques has been seen weeping over a wounded stag by a stream, moralising on its abandonment by the herd, and railing that the Duke's party are worse usurpers than Frederick. The Duke goes to find him, since he loves to debate with Jaques in his sullen moods."
+   ],
+   "analysis": [
+    "Duke Senior's speech is the classic statement of the pastoral ideal in English drama: life 'exempt from public haunt' reads lessons in nature. Yet the scene undercuts its own idealism. The forest is cold, the exiles must hunt to eat, and their hunting is described, through Jaques, as another usurpation. The pastoral is offered and questioned in the same breath, which is the play's characteristic manner [[alpers1996]] [[young1972]].",
+    "Jaques is introduced by report before he appears, as a figure of sentimental melancholy whose tears add to a stream that needs none. His sympathy for the deer is genuine and also a little absurd, and the double response he invites runs through the whole play [[jenkins1955]]."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 2.1",
+     "quote": "Sweet are the uses of adversity,\nWhich, like the toad, ugly and venomous,\nWears yet a precious jewel in his head;",
+     "note": "The Duke's moral: suffering, like the toad believed to carry a healing stone, hides a hidden good."
+    },
+    {
+     "ref": "As You Like It 2.1",
+     "quote": "Finds tongues in trees, books in the running brooks,\nSermons in stones, and good in everything.",
+     "note": "Nature as a book of moral instruction, the pastoral idea in a single line."
+    },
+    {
+     "ref": "As You Like It 2.1",
+     "quote": "And yet it irks me the poor dappled fools,\nBeing native burghers of this desert city,",
+     "note": "The Duke's scruple about the hunt: the deer are the forest's true citizens, and the exiles are intruders."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act II, Scene 2: Frederick discovers the flight",
+   "lines": "Act II, Scene 2 (the whole scene)",
+   "section": 5,
+   "summary": [
+    "Duke Frederick discovers that Celia and Rosalind have fled, together with Touchstone. A lord reports that the women were overheard praising the young wrestler, and the Duke orders Orlando, or failing him Oliver, to be brought to him."
+   ],
+   "analysis": [
+    "The brief scene keeps the court in view and shows Frederick's tyranny growing. Its function is mainly to link the plots: his suspicion of Orlando will fall on Oliver in 3.1 and drive him, too, into the forest. The detail that the princesses' bed was found 'untreasured' gives the escape a touch of romance."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 2.2",
+     "quote": "They found the bed untreasured of their mistress.",
+     "note": "The discovery of Celia's flight, phrased as the loss of a treasure."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act II, Scene 3: Adam's loyalty",
+   "lines": "Act II, Scene 3 (the whole scene)",
+   "section": 6,
+   "summary": [
+    "Adam meets Orlando outside Oliver's house and warns him that Oliver means to burn his lodging with him inside it. Orlando has no money and no place to go. Adam gives him his life's savings of five hundred crowns and offers to come with him as his servant, though he is nearly eighty. Orlando accepts, praising the faithful service of old times."
+   ],
+   "analysis": [
+    "Adam embodies the 'antique world' of loyal service without thought of reward, contrasted with the self-interest of Oliver and of 'these times'. The scene introduces an ideal of the past that the forest seems to promise, and it gives Orlando a moral seriousness beyond his role as lover. A tradition dating from the eighteenth century holds that Shakespeare himself played Adam; it cannot be proved, but it shows how fond audiences have been of the part [[dusinberre2006]]."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 2.3",
+     "quote": "The constant service of the antique world,\nWhen service sweat for duty, not for meed.",
+     "note": "Orlando's praise of Adam: loyalty from an older age, when servants worked for duty, not for pay."
+    },
+    {
+     "ref": "As You Like It 2.3",
+     "quote": "From seventeen years till now almost fourscore\nHere lived I, but now live here no more.",
+     "note": "Adam's leave-taking of the house he has served for over sixty years."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act II, Scene 4: Arrival in Arden",
+   "lines": "Act II, Scene 4 (the whole scene)",
+   "section": 7,
+   "summary": [
+    "Rosalind, Celia and Touchstone arrive in Arden exhausted. They overhear the young shepherd Silvius telling the older shepherd Corin how much he loves the scornful Phoebe; his speech reminds Rosalind of her own love, and Touchstone recalls a ridiculous love affair of his own with a milkmaid.",
+    "Rosalind asks Corin for food and shelter. Corin explains that his master is churlish and is selling his cottage and flock; Rosalind and Celia buy them and engage Corin as their shepherd."
+   ],
+   "analysis": [
+    "The scene sets three views of love side by side: Silvius's conventional pastoral devotion, Rosalind's real but self-aware passion, and Touchstone's earthy parody. Each comments on the others, and Touchstone's conclusion that all nature in love is 'mortal in folly' is a comic truth Rosalind accepts.",
+    "Corin's account of his 'churlish' master, who cares little for hospitality, brings the economics of the real countryside into the pastoral dream: shepherds here work for wages and land is bought and sold. The play's Arden is an imaginative space but not a timeless one [[montrose1981]]. The name also had a local meaning: the Forest of Arden lay in Warwickshire near Stratford, and Shakespeare's mother was Mary Arden, though Lodge's forest is the Ardennes."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 2.4",
+     "quote": "Ay, now am I in Arden, the more fool I! When I was at home I was in a\nbetter place, but travellers must be content.",
+     "note": "Touchstone's first verdict on the forest: the pastoral seen by a man who misses his comforts."
+    },
+    {
+     "ref": "As You Like It 2.4",
+     "quote": "Thou hast not loved.\nO Phoebe, Phoebe, Phoebe!",
+     "note": "The end of Silvius's lament, a parody of the despairing shepherd of pastoral verse."
+    },
+    {
+     "ref": "As You Like It 2.4",
+     "quote": "We that are true lovers run\ninto strange capers. But as all is mortal in nature, so is all nature\nin love mortal in folly.",
+     "note": "Touchstone's mock philosophy of love, which the play takes more seriously than he does."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act II, Scene 5: \"Under the greenwood tree\"",
+   "lines": "Act II, Scene 5 (the whole scene)",
+   "section": 8,
+   "summary": [
+    "The lord Amiens sings 'Under the greenwood tree', a song inviting all who love the simple life into the forest. Jaques demands more verses, saying he can suck melancholy out of a song as a weasel sucks eggs. He then adds a mocking stanza of his own, which calls those who leave wealth and ease for the forest fools."
+   ],
+   "analysis": [
+    "This is the first of the play's songs, more numerous than in any other Shakespeare comedy. The song sets out the pastoral ideal in its purest form, a life with no enemy 'But winter and rough weather', and Jaques's parody immediately questions it, so that the music both expresses and undercuts the forest myth [[seng1967]]. The scene also shows Jaques's pleasure in his own melancholy, his chosen pose."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 2.5",
+     "quote": "Here shall he see\nNo enemy\nBut winter and rough weather.",
+     "note": "The refrain of Amiens's song: the forest's only enemies are natural ones, unlike the court's."
+    },
+    {
+     "ref": "As You Like It 2.5",
+     "quote": "I can suck melancholy out of a song",
+     "note": "Jaques's relish for sadness, a sign of the fashionable melancholy he cultivates."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act II, Scene 6: Adam faints",
+   "lines": "Act II, Scene 6 (the whole scene)",
+   "section": 9,
+   "summary": [
+    "Orlando and Adam reach the forest. Adam can go no further for hunger and lies down to die. Orlando cheers him with tender jokes, promises to bring him food, and carries him into shelter."
+   ],
+   "analysis": [
+    "A short scene of great feeling, written mostly in prose. Orlando's care for Adam proves the gentleness Oliver denied him, and his determination to find food 'or be food' for the forest's beasts prepares the violent entrance of the next scene."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 2.6",
+     "quote": "Hold death awhile at the arm's end.",
+     "note": "Orlando's encouragement to the dying Adam: affection as a defence against death."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Act II, Scene 7: \"All the world's a stage\"",
+   "lines": "Act II, Scene 7 (the whole scene)",
+   "section": 10,
+   "summary": [
+    "Jaques arrives laughing at the Duke's table: he has met a fool in the forest, Touchstone, who moralised on time with a sundial, and he wishes he too could wear motley and speak freely to cure the world's sickness. The Duke replies that a satirist who has sinned himself would only spread disease. Orlando bursts in with drawn sword, demanding food; the Duke's courtesy shames him, and he goes to fetch Adam.",
+    "While he is gone, the Duke remarks that the world is a theatre with sadder scenes than theirs, and Jaques responds with his speech on the seven ages of man, from infant to second childhood. Orlando returns carrying Adam, Amiens sings 'Blow, blow, thou winter wind', and the Duke, learning that Orlando is Sir Rowland's son, welcomes him."
+   ],
+   "analysis": [
+    "The speech on the seven ages draws on an old commonplace, the world as a stage (the Globe, opened in 1599, is said to have taken a Latin version of it for its motto), and on traditional schemes of the ages of man. Jaques gives each age a precise and unflattering portrait, ending in 'mere oblivion'. Its pessimism is answered at once by the stage: Orlando enters carrying old Adam, an image of love and loyalty in old age that the speech had left out [[jenkins1955]] [[shapiro2005]].",
+    "Jaques's desire for the fool's licence to satirise belongs to a moment when verse satire was in fashion and also under suspicion; the bishops banned and burned satirical books in June 1599, around the time the play was written. The Duke's rebuke, that the satirist has been a libertine himself, touches the moral ambiguity of the satirist's role [[shapiro2005]]. 'Blow, blow, thou winter wind' then gives the scene's harshest wisdom to music: nature is kinder than human ingratitude."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 2.7",
+     "quote": "A fool, a fool! I met a fool i' th' forest,\nA motley fool.",
+     "note": "Jaques's delight at meeting Touchstone, the first sign of his envy of the fool's freedom."
+    },
+    {
+     "ref": "As You Like It 2.7",
+     "quote": "And so from hour to hour we ripe and ripe,\nAnd then from hour to hour we rot and rot,\nAnd thereby hangs a tale.",
+     "note": "Touchstone's sermon on time as Jaques reports it, with a probable bawdy pun on 'hour' and 'whore'."
+    },
+    {
+     "ref": "As You Like It 2.7",
+     "quote": "All the world's a stage,\nAnd all the men and women merely players;",
+     "note": "The opening of the seven ages speech, built on an ancient commonplace."
+    },
+    {
+     "ref": "As You Like It 2.7",
+     "quote": "Blow, blow, thou winter wind,\nThou art not so unkind\nAs man's ingratitude.",
+     "note": "Amiens's song, which sets winter against human unkindness, the theme of the exiles' lives."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Act III, Scene 1: Oliver dispossessed",
+   "lines": "Act III, Scene 1 (the whole scene)",
+   "section": 11,
+   "summary": [
+    "Duke Frederick, suspecting Oliver of helping Orlando escape, seizes his lands and orders him to find his brother within a year, alive or dead. Oliver protests that he never loved his brother, which only confirms Frederick's contempt."
+   ],
+   "analysis": [
+    "This sharp little court scene completes the pattern of dispossession: the wrongdoer is himself wronged by a greater tyrant, and Oliver, stripped of his estate, must go to the forest too. Frederick's reply to Oliver's protest is one of the play's best ironies."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 3.1",
+     "quote": "I never loved my brother in my life.",
+     "note": "Oliver's self-defence, which damns him in Frederick's eyes."
+    },
+    {
+     "ref": "As You Like It 3.1",
+     "quote": "Seek him with candle. Bring him dead or living",
+     "note": "Frederick's order, echoing the biblical search for the lost coin."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Act III, Scene 2: Verses on the trees",
+   "lines": "Act III, Scene 2 (the whole scene)",
+   "section": 12,
+   "summary": [
+    "Orlando hangs love poems to Rosalind on the trees and wanders off to carve her name on their bark. Touchstone and Corin debate court life and country life: Touchstone argues with comic logic that a shepherd who has never been at court must be damned, and Corin replies with the simple dignity of a working man. Rosalind finds one of the poems and reads it; Touchstone parodies it. Celia reads another and teases Rosalind with the news that their author is Orlando.",
+    "Orlando and Jaques exchange insults and part. Rosalind, as Ganymede, accosts Orlando and tells him that love is a madness which she can cure. She offers to play Rosalind if he will come every day to woo her, so that she may cure him by her changeable moods. He agrees."
+   ],
+   "analysis": [
+    "The longest scene in the play shows its method most fully. Touchstone's parody of the 'Rosalind' verses and his debate with Corin set Orlando's love in a crossfire of comment, and the poems themselves, full of strained rhymes, are a gentle satire on Petrarchan verse [[gardner1959]]. Corin's statement of his life, earning what he eats and envying no man, is the most dignified defence of the pastoral in the play, and it is spoken by a real shepherd rather than a courtier [[montrose1981]].",
+    "Rosalind's disguise now becomes a means of education. By pretending to be a boy who will pretend to be Rosalind, she can test Orlando's love, teach him to speak rather than write verses, and express her own feelings in safety. The complex layers of the role, a boy actor playing a woman playing a boy playing a woman, have been central to modern discussions of gender in Shakespeare [[howard1988]] [[orgel1996]]."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 3.2",
+     "quote": "Hang there, my verse, in witness of my love.",
+     "note": "Orlando turns the forest into a page for his poetry."
+    },
+    {
+     "ref": "As You Like It 3.2",
+     "quote": "Truly, shepherd, in respect of itself, it is a good life; but in\nrespect that it is a shepherd's life, it is naught.",
+     "note": "Touchstone's mock evaluation of the pastoral, a parody of courtly logic-chopping."
+    },
+    {
+     "ref": "As You Like It 3.2",
+     "quote": "Sir, I am a true labourer. I earn that I eat, get that I wear",
+     "note": "Corin's answer, the plain voice of country work."
+    },
+    {
+     "ref": "As You Like It 3.2",
+     "quote": "Do you not know I am a woman? When I think, I must speak.",
+     "note": "Rosalind's impatience with Celia's teasing, spoken in doublet and hose."
+    },
+    {
+     "ref": "As You Like It 3.2",
+     "quote": "Love is merely a madness, and, I tell you, deserves as well a dark\nhouse and a whip as madmen do;",
+     "note": "Ganymede's diagnosis, the basis of the mock cure."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Act III, Scene 3: Touchstone and Audrey",
+   "lines": "Act III, Scene 3 (the whole scene)",
+   "section": 13,
+   "summary": [
+    "Touchstone woos Audrey, a goatherd, with jokes she does not understand, while Jaques listens unseen. Touchstone tells her he wishes the gods had made her poetical, since the truest poetry is the most feigning. He has arranged to marry her by Sir Oliver Martext, a hedge-priest whose marriage might not be binding, but Jaques intervenes and persuades him to wait for a proper wedding."
+   ],
+   "analysis": [
+    "Touchstone's courtship is a comic counterpart to Orlando's: sexual, frank and cynical where Orlando's is idealistic. His claim that lovers who write poetry 'feign' parodies the defence of poetry as fiction made by Sidney and others. Two learned jokes, Ovid exiled among the Goths and a man struck dead by 'a great reckoning in a little room', allude to classical exile and, very probably, to Christopher Marlowe's death in a tavern dispute over a bill in 1593 [[bate1993]] [[shapiro2005]].",
+    "The part of Touchstone was probably written for Robert Armin, who had joined the Lord Chamberlain's Men around 1599 in place of the more physical clown Will Kemp. Armin's skill was wit and song, and Touchstone's wordplay reflects that change [[wiles1987]]."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 3.3",
+     "quote": "as the most capricious poet, honest\nOvid, was among the Goths.",
+     "note": "A pun on 'goats' and 'Goths', comparing his exile among goatherds to Ovid's exile on the Black Sea."
+    },
+    {
+     "ref": "As You Like It 3.3",
+     "quote": "a great reckoning in a little room.",
+     "note": "Probably an allusion to Marlowe's death in a tavern, killed in a quarrel over the bill."
+    },
+    {
+     "ref": "As You Like It 3.3",
+     "quote": "No, truly; for the truest poetry is the most feigning,",
+     "note": "Touchstone's paradox: poetry is fiction, and lovers' poetry is the greatest fiction of all."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Act III, Scene 4: Orlando is late",
+   "lines": "Act III, Scene 4 (the whole scene)",
+   "section": 14,
+   "summary": [
+    "Rosalind is upset that Orlando has failed to keep his appointment. Celia teases her by finding fault with his looks and his constancy. Rosalind mentions that she met her father in the forest and did not reveal herself. Corin invites them to watch the scene between Silvius and the scornful Phoebe."
+   ],
+   "analysis": [
+    "Rosalind, who mocks lovers in public, is a lover herself in private. Celia's ironic support, agreeing with each complaint until Rosalind defends Orlando, shows the friendship between the cousins as a source of comedy. Her offhand meeting with her father, mentioned without emotion, shows how little the forest's main plot concerns the dukes."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 3.4",
+     "quote": "His very hair is of the dissembling colour.",
+     "note": "Rosalind's half-serious complaint: red hair was associated with Judas, the betrayer."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Act III, Scene 5: Phoebe falls for Ganymede",
+   "lines": "Act III, Scene 5 (the whole scene)",
+   "section": 15,
+   "summary": [
+    "Silvius begs Phoebe not to be cruel, and Phoebe mocks the conventional language of lovers. Rosalind, coming forward, scolds Phoebe for her pride and tells her to accept a good man's love while she can, since she is not beautiful enough to be choosy. Phoebe instantly falls in love with Ganymede. Left with Silvius, she uses him as a messenger to send Ganymede a letter."
+   ],
+   "analysis": [
+    "The scene is a parody of pastoral convention: the cruel mistress and the despairing shepherd are taken straight from pastoral romance and made comic. Rosalind's harsh advice to Phoebe is practical, unromantic and very funny. Yet her disguise has its own consequences: Phoebe, rejecting the conventions of love, falls in love at first sight with a woman, adding another layer of comedy and desire to the plot [[traub1992]].",
+    "Phoebe's quotation of 'Dead shepherd', a line from Marlowe's Hero and Leander, is the most open tribute Shakespeare ever paid to a contemporary poet. It pays tribute to Marlowe, the dead shepherd of the pastoral world, and shows how the play builds on recent English verse [[shapiro2005]]."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 3.5",
+     "quote": "The common executioner,\nWhose heart th' accustomed sight of death makes hard,",
+     "note": "Silvius's comparison: even the executioner begs pardon before he strikes."
+    },
+    {
+     "ref": "As You Like It 3.5",
+     "quote": "Sell when you can; you are not for all markets.",
+     "note": "Rosalind's blunt advice to Phoebe, in the language of the market."
+    },
+    {
+     "ref": "As You Like It 3.5",
+     "quote": "Dead shepherd, now I find thy saw of might:\n\"Who ever loved that loved not at first sight?\"",
+     "note": "Phoebe quotes Marlowe's Hero and Leander, a tribute to the poet killed in 1593."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Act IV, Scene 1: The mock wooing",
+   "lines": "Act IV, Scene 1 (the whole scene)",
+   "section": 16,
+   "summary": [
+    "Rosalind talks with Jaques, who explains that his melancholy is his own, distilled from his travels; she mocks him for selling his lands to see other men's. Orlando arrives an hour late, and she scolds him for his lateness. In the role of Rosalind, she plays the part of his beloved, testing his love with every mood: she refuses him, mocks the heroes of love stories and warns him that wives change after marriage.",
+    "Celia, playing the priest, performs a mock wedding. Orlando leaves for two hours to attend the Duke, promising to return. Rosalind confesses to Celia how deeply she is in love."
+   ],
+   "analysis": [
+    "This is the play's central scene and Rosalind's greatest. Her wit is critical of romantic love: she says 'men have died from time to time... but not for love', and warns that 'men are April when they woo, December when they wed'. At the same time the mock wedding, spoken in the present tense, is nearly a real betrothal, and her confession to Celia shows that the critic of love is herself deeply in love. The disguise allows her to say both things at once [[barber1959]] [[gay1994]].",
+    "Rosalind's teaching is a form of realism about marriage, and feminist critics have debated how far her disguise gives her real power over the plot and how far it is a temporary licence that marriage ends. Critics have also stressed the pleasure an Elizabethan audience took in the boy actor's skill at the role [[howard1988]] [[rackin1987]]."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 4.1",
+     "quote": "it is a melancholy of mine own, compounded of many simples,\nextracted from many objects,",
+     "note": "Jaques defines his melancholy as personal, compounded like a medicine from many ingredients."
+    },
+    {
+     "ref": "As You Like It 4.1",
+     "quote": "Men have died from time to time and worms have eaten them, but\nnot for love.",
+     "note": "Rosalind's deflation of the romantic myth that lovers die of love."
+    },
+    {
+     "ref": "As You Like It 4.1",
+     "quote": "men are April when\nthey woo, December when they wed.",
+     "note": "Her warning about marriage, in the play's language of seasons."
+    },
+    {
+     "ref": "As You Like It 4.1",
+     "quote": "O coz, coz, coz, my pretty little coz, that thou didst know how many\nfathom deep I am in love!",
+     "note": "Her confession to Celia after Orlando leaves."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Act IV, Scene 2: The deer song",
+   "lines": "Act IV, Scene 2 (the whole scene)",
+   "section": 17,
+   "summary": [
+    "Jaques and some lords celebrate the man who killed a deer, crowning him with its horns and singing a song about horns."
+   ],
+   "analysis": [
+    "The brief scene fills the two hours of Orlando's absence. Its song, about the horns of the cuckold, joins the hunt to the play's continual jokes about adultery. It is a reminder that marriage, the goal of comedy, brings its own fears, and it gives the forest a rough masculine side."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 4.2",
+     "quote": "Take thou no scorn to wear the horn.\nIt was a crest ere thou wast born.",
+     "note": "The hunters' song, celebrating the horn as an ancient crest while joking about cuckoldry."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "Act IV, Scene 3: Oliver's conversion",
+   "lines": "Act IV, Scene 3 (the whole scene)",
+   "section": 18,
+   "summary": [
+    "Orlando is late again. Silvius brings Phoebe's letter, which Rosalind reads aloud, mocking its love poem. Oliver arrives with a bloody handkerchief and tells how Orlando found a ragged man asleep under a tree, threatened by a snake and a lioness. Recognising his brother, Orlando turned away twice, but kindness overcame revenge, and he fought the lioness and saved him. The sleeper was Oliver, who has been converted by his brother's kindness and reconciled with him.",
+    "Orlando was wounded, and has sent Oliver with the handkerchief stained with his blood to excuse his absence. Rosalind faints, then claims she was only pretending. Oliver tells her to 'counterfeit to be a man'."
+   ],
+   "analysis": [
+    "Oliver's narrative is the most romance-like episode of the play, with a snake and a lioness in an English forest. It shows the forest's power to change people: Oliver's conversion, from hatred to love, is sudden and complete, and his phrase 'Twas I; but 'tis not I' expresses the idea of a new self. Critics have sometimes found the conversion too easy, but it belongs to the logic of romance, in which the forest heals [[frye1965]].",
+    "Rosalind's faint is the moment when her disguise slips. The blood shows her love more truly than words, and her attempt to say she was pretending, which Oliver does not believe, is both comic and moving. Her lines 'I should have been a woman by right' bring her two selves together."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 4.3",
+     "quote": "She Phoebes me.",
+     "note": "Rosalind turns Phoebe's name into a verb, meaning to treat with scorn."
+    },
+    {
+     "ref": "As You Like It 4.3",
+     "quote": "'Twas I; but 'tis not I. I do not shame\nTo tell you what I was, since my conversion\nSo sweetly tastes, being the thing I am.",
+     "note": "Oliver describes his conversion as a change of self."
+    },
+    {
+     "ref": "As You Like It 4.3",
+     "quote": "Well then, take a good heart, and counterfeit to be a man.",
+     "note": "Oliver's suspicion of Ganymede's faint."
+    },
+    {
+     "ref": "As You Like It 4.3",
+     "quote": "I should have been a woman by right.",
+     "note": "Rosalind's double-edged reply: her womanhood shows through the disguise."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "title": "Act V, Scene 1: Touchstone and William",
+   "lines": "Act V, Scene 1 (the whole scene)",
+   "section": 19,
+   "summary": [
+    "Touchstone and Audrey meet William, a young countryman who loves her. Touchstone questions him with mock-learned words and then drives him off with threats of death in elaborate legal language. Corin calls them away."
+   ],
+   "analysis": [
+    "The scene shows Touchstone at his most unpleasant, a courtier bullying a countryman for a woman. His proverbial 'The fool doth think he is wise' shows his self-awareness, but his treatment of William has made some readers uneasy. The name William may be a private joke of Shakespeare's about himself, though this cannot be proved."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 5.1",
+     "quote": "It is meat and drink to me to see a clown.",
+     "note": "Touchstone, a professional fool, relishes meeting a natural one."
+    },
+    {
+     "ref": "As You Like It 5.1",
+     "quote": "The fool doth think\nhe is wise, but the wise man knows himself to be a fool.",
+     "note": "A proverb that sums up the play's idea of folly and wisdom."
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "title": "Act V, Scene 2: \"And so am I for Phoebe\"",
+   "lines": "Act V, Scene 2 (the whole scene)",
+   "section": 20,
+   "summary": [
+    "Oliver tells Orlando he has fallen in love with Aliena at first sight and will marry her and give Orlando his estate. Orlando tells Ganymede he cannot live by pretending any longer. Ganymede promises to produce the real Rosalind by magic the next day. Silvius and Phoebe arrive, and the four lovers speak a formal round of declarations, ending with Ganymede's promise to satisfy everyone tomorrow."
+   ],
+   "analysis": [
+    "The love of Oliver and Celia, so quick that Rosalind compares it to Caesar's 'I came, saw, and overcame', is one of the comedy's frank conventions. Orlando's 'I can live no longer by thinking' marks the end of the game: imagination has served its turn and must give way to reality. The round of declarations, a formal pattern like a dance, presents love as a comic chain of desire, each lover pursuing someone who pursues another [[barber1959]]."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 5.2",
+     "quote": "I can live no longer by thinking.",
+     "note": "Orlando ends the game of make-believe."
+    },
+    {
+     "ref": "As You Like It 5.2",
+     "quote": "It is to be all made of sighs and tears,\nAnd so am I for Phoebe.",
+     "note": "Silvius's definition of love and the first refrain of the lovers' chain."
+    },
+    {
+     "ref": "As You Like It 5.2",
+     "quote": "And so am I for Ganymede.",
+     "note": "Phoebe's refrain, whose comedy depends on the audience's knowledge of the disguise."
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "title": "Act V, Scene 3: \"It was a lover and his lass\"",
+   "lines": "Act V, Scene 3 (the whole scene)",
+   "section": 21,
+   "summary": [
+    "Touchstone and Audrey meet two pages, who sing 'It was a lover and his lass', a song of spring, love and the shortness of life. Touchstone complains that the song has no matter."
+   ],
+   "analysis": [
+    "The song is one of the few of Shakespeare's songs whose contemporary musical setting survives, in Thomas Morley's First Book of Ayres of 1600 [[seng1967]]. It celebrates love in springtime and the passing of time, joining the play's carpe diem theme to the coming marriages. Its rustic scene, lovers lying between the acres of rye, makes the pastoral earthy and cheerful."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 5.3",
+     "quote": "It was a lover and his lass,\nWith a hey, and a ho, and a hey nonino,",
+     "note": "The opening of the pages' song."
+    },
+    {
+     "ref": "As You Like It 5.3",
+     "quote": "Sweet lovers love the spring.",
+     "note": "The song's refrain: love belongs to the season of youth."
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "title": "Act V, Scene 4: Hymen and the four weddings",
+   "lines": "Act V, Scene 4 (the whole scene)",
+   "section": 22,
+   "summary": [
+    "Everyone gathers for the weddings. Rosalind makes each lover repeat his or her promise and leaves with Celia. Touchstone entertains the Duke with an account of the seven degrees of the lie and the virtue of 'if'. Hymen, god of marriage, enters with Rosalind and Celia in their own clothes. Rosalind gives herself to her father and to Orlando; Phoebe, seeing Ganymede is a woman, accepts Silvius; and Hymen marries the four couples.",
+    "Jaques de Boys, the middle brother, arrives with news that Duke Frederick, marching on the forest, met a holy man and was converted, giving the crown back to his brother. Duke Senior promises to restore all lands and fortunes. Jaques decides to join Frederick in religious retirement, bequeathing each couple a blessing, and leaves before the dance."
+   ],
+   "analysis": [
+    "The last scene completes the comic pattern with ceremony: four couples, a god of marriage, music and dance. Hymen's lines on 'earthly things made even' describe the comedy's work of reconciliation. Whether he is a god or a courtier in costume is never explained, and productions have played the masque with full seriousness or with irony. Frederick's conversion, abrupt and reported, belongs to the same world of romance as Oliver's [[frye1965]] [[gardner1959]].",
+    "Touchstone's speech on the lie, a parody of courtesy books on duelling, ends with praise of the word 'if', which is the comedy's own method: Rosalind's pretences and Hymen's conditions all depend on it. Jaques's refusal to join the dance keeps a note of melancholy in the happiest ending of the comedies, and leaves room for those who do not share it [[jenkins1955]]."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It 5.4",
+     "quote": "Your \"if\" is the only peacemaker; much virtue in \"if.\"",
+     "note": "Touchstone's praise of the hypothetical, which also describes the play's comic method."
+    },
+    {
+     "ref": "As You Like It 5.4",
+     "quote": "He uses his folly like a stalking-horse, and under the presentation of\nthat he shoots his wit.",
+     "note": "The Duke's description of Touchstone: folly as cover for wit."
+    },
+    {
+     "ref": "As You Like It 5.4",
+     "quote": "Then is there mirth in heaven\nWhen earthly things made even\nAtone together.",
+     "note": "Hymen's opening: 'atone' means to be at one, reconciled."
+    },
+    {
+     "ref": "As You Like It 5.4",
+     "quote": "If there be truth in sight, you are my Rosalind.",
+     "note": "Orlando's recognition, conditional like so much in the play."
+    },
+    {
+     "ref": "As You Like It 5.4",
+     "quote": "I am for other than for dancing measures.",
+     "note": "Jaques leaves the dance, the one character who refuses the comic ending."
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "title": "Epilogue: Rosalind's farewell",
+   "lines": "Epilogue (the whole speech)",
+   "section": 23,
+   "summary": [
+    "Rosalind steps forward to speak the epilogue, admitting that it is unusual for the lady to do so. She charges the women to like as much of the play as pleases them, for the love they bear to men, and the men, for the love they bear to women. 'If I were a woman', she says, she would kiss as many of the men as pleased her, and she asks them to bid her farewell when she curtsies."
+   ],
+   "analysis": [
+    "The epilogue is unique in Shakespeare: a female character speaks it, and in the middle of it the boy actor reminds the audience that he is not a woman. The line 'If I were a woman' breaks the illusion the play has built, returning to the boy beneath the costume, and shows the play's interest in the theatre as a place where gender is played. Critics have read it as a final turn of the play's irony, a joke on the audience's desires, or a moment in which gender is seen as performance [[howard1988]] [[rackin1987]] [[orgel1996]].",
+    "The speech also uses the proverb 'good wine needs no bush', the ivy bush hung outside a tavern, to make a light joke on the need for epilogues, and its appeal to the audience's love brings the play's theme of love into the playhouse."
+   ],
+   "key": [
+    {
+     "ref": "As You Like It Epilogue",
+     "quote": "If it be true that good\nwine needs no bush, 'tis true that a good play needs no epilogue.",
+     "note": "A proverb from the sign of the tavern, turned to the theatre."
+    },
+    {
+     "ref": "As You Like It Epilogue",
+     "quote": "I charge you, O women, for the love you bear to men, to like as much of\nthis play as please you.",
+     "note": "Rosalind's charge to the women in the audience."
+    },
+    {
+     "ref": "As You Like It Epilogue",
+     "quote": "If I were a woman, I\nwould kiss as many of you as had beards that pleased me,",
+     "note": "The boy actor reveals himself, the play's final joke on gender."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Rosalind",
+   "side": "Exiles in Arden",
+   "text": "Daughter of the banished Duke Senior, who stays at court for love of Celia until Frederick banishes her. Disguised as the youth Ganymede, she takes charge of the forest plot: she tests and teaches Orlando, scolds Phoebe and arranges the weddings. Witty, generous and deeply in love, she is at once the play's sharpest critic of romantic love and its most passionate lover. She speaks the epilogue."
+  },
+  {
+   "name": "Orlando",
+   "side": "De Boys family",
+   "text": "Youngest son of Sir Rowland, wronged by his brother Oliver. Brave, loyal and good-hearted, he defeats Charles, cares for old Adam and saves Oliver from a lioness. In love he writes bad verses and must be taught by Ganymede to see love clearly; he is a natural gentleman whom the play rewards with a wife and an estate."
+  },
+  {
+   "name": "Celia",
+   "side": "Court of Duke Frederick",
+   "text": "Frederick's daughter and Rosalind's devoted cousin, who gives up her place to share Rosalind's exile and takes the name Aliena. Witty and ironic, she teases Rosalind about her love, but falls just as suddenly in love with Oliver."
+  },
+  {
+   "name": "Touchstone",
+   "side": "Exiles in Arden",
+   "text": "The court fool, who goes with the princesses to Arden. A touchstone tests gold, and he tests everyone's pretensions with parody, logic-chopping and bawdy wit. He courts and marries Audrey with frank cynicism. Probably written for the clown Robert Armin."
+  },
+  {
+   "name": "Jaques",
+   "side": "Exiles in Arden",
+   "text": "A melancholy lord with the exiled Duke, who weeps over a wounded deer, longs for the fool's licence to satirise the world and speaks the 'seven ages of man'. A traveller and former libertine, he stands apart from the comic action, and at the end he refuses to join the dance and goes to join the converted Frederick. Shakespeare's own addition to Lodge's story."
+  },
+  {
+   "name": "Duke Senior",
+   "side": "Exiles in Arden",
+   "text": "The rightful duke, banished by his younger brother. He makes a philosophy of his exile, praising the forest's lessons and welcoming strangers with courtesy. At the end he regains his dukedom and promises to share his good fortune with his followers."
+  },
+  {
+   "name": "Duke Frederick",
+   "side": "Court of Duke Frederick",
+   "text": "The usurping younger brother, suspicious and tyrannical. He banishes Rosalind, seizes Oliver's lands and marches on the forest, but is converted by a hermit and gives up his crown, a change reported, not shown."
+  },
+  {
+   "name": "Oliver",
+   "side": "De Boys family",
+   "text": "Orlando's elder brother, who withholds his inheritance and plots his death out of a jealousy he cannot explain. Dispossessed by Frederick, he goes to the forest, is saved by Orlando and converted, and falls in love with Celia at first sight."
+  },
+  {
+   "name": "Adam",
+   "side": "De Boys family",
+   "text": "The old servant of Sir Rowland's house, nearly eighty, who gives Orlando his savings and goes with him into exile. He embodies the loyal service of the 'antique world'."
+  },
+  {
+   "name": "Silvius",
+   "side": "Forest dwellers",
+   "text": "A young shepherd hopelessly in love with Phoebe, a lover from the pastoral convention who sighs and suffers. He marries Phoebe at the end."
+  },
+  {
+   "name": "Phoebe",
+   "side": "Forest dwellers",
+   "text": "A shepherdess who scorns Silvius and falls in love with Ganymede. Her promise to marry Silvius if she refuses Ganymede allows Rosalind to arrange the ending."
+  },
+  {
+   "name": "Corin",
+   "side": "Forest dwellers",
+   "text": "An old shepherd who works for a churlish master and becomes Rosalind's and Celia's servant. In debate with Touchstone he gives a plain and dignified account of the working countryman's life."
+  },
+  {
+   "name": "Audrey",
+   "side": "Forest dwellers",
+   "text": "A simple goatherd courted and married by Touchstone. She does not understand his jokes but knows what she wants."
+  },
+  {
+   "name": "William",
+   "side": "Forest dwellers",
+   "text": "A young countryman who loves Audrey and is driven off by Touchstone with mock-learned threats."
+  },
+  {
+   "name": "Amiens",
+   "side": "Exiles in Arden",
+   "text": "A lord with the Duke, who sings 'Under the greenwood tree' and 'Blow, blow, thou winter wind'."
+  },
+  {
+   "name": "Charles, Le Beau and Sir Oliver Martext",
+   "side": "Minor figures",
+   "text": "Charles is Frederick's wrestler, whom Orlando defeats; Le Beau is a foppish courtier who warns Orlando to leave; Sir Oliver Martext is a hedge-priest whose marriage of Touchstone and Audrey Jaques prevents."
+  },
+  {
+   "name": "Hymen and Jaques de Boys",
+   "side": "Minor figures",
+   "text": "Hymen, god of marriage, presides over the final weddings. Jaques de Boys, the middle de Boys brother, arrives at the end to bring news of Frederick's conversion."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Court and country",
+   "text": [
+    "The play sets the court, with its envy and tyranny, against the forest, where exiles find freedom and honesty. This contrast is the heart of the pastoral tradition, and the Duke's praise of Arden states it fully. Yet the play never simply idealises the country: the forest is cold, the exiles kill deer, shepherds work for churlish masters, and Touchstone mocks the whole idea. The court is criticised, but the exiles go back to it [[young1972]] [[alpers1996]].",
+    "Shakespeare stages the debate rather than settling it. Touchstone and Corin argue the case comically, Jaques undercuts the Duke, and the play's title, which leaves the judgement to its audience, suggests that the reader must weigh the perspectives for themselves."
+   ]
+  },
+  {
+   "title": "Love and its follies",
+   "text": [
+    "The play presents several kinds of love: the romantic love of Rosalind and Orlando, the conventional pastoral love of Silvius, the instant passion of Oliver and Celia, and the bodily desire of Touchstone and Audrey. Each is set against the others, so that no single view of love prevails.",
+    "Rosalind is the play's critic of love and its greatest lover. She mocks the clichés of romantic love while being deeply in love herself, and she teaches Orlando that real love must survive the moods and changes of real people. Her realism is a deeper romanticism [[barber1959]] [[leggatt1974]]."
+   ]
+  },
+  {
+   "title": "Disguise, gender and performance",
+   "text": [
+    "Rosalind's disguise as Ganymede allows her a freedom of speech and action that her female role denied her. On the Elizabethan stage the part was played by a boy, so that a boy played a woman playing a boy who plays a woman. The play's jokes and its epilogue keep these layers in view.",
+    "Modern critics have argued about whether the disguise subverts gender roles or reaffirms them in the end, when Rosalind gives herself to her father and husband. Whatever the answer, the play makes gender something that can be performed, and it draws pleasure from the confusion of desire that results [[howard1988]] [[rackin1987]] [[orgel1996]] [[belsey1985]]."
+   ]
+  },
+  {
+   "title": "Fortune, nature and inheritance",
+   "text": [
+    "The first act's debate on Fortune and Nature introduces a central question: whether people are shaped by luck and inheritance or by their own nature. Orlando, deprived of his fortune, proves his nobility by nature, and the play rewards him with an estate.",
+    "This theme had a social edge in Elizabethan England, where primogeniture left younger sons without land. The comedy solves Orlando's problem through marriage to the Duke's heir, a solution that Montrose reads as a fantasy of social reconciliation [[montrose1981]]."
+   ]
+  },
+  {
+   "title": "Time",
+   "text": [
+    "Time runs through the play in different speeds. Touchstone's sundial measures the ripening and rotting of life; Jaques's seven ages show the whole course of human life; Rosalind explains to Orlando how time ambles, trots, gallops and stands still according to the person; and the pages' song celebrates spring and the shortness of youth.",
+    "The forest seems to stand outside time ('there's no clock in the forest', Orlando says), but the play keeps reminding us that the pastoral holiday must end and that marriage and age lie ahead."
+   ]
+  },
+  {
+   "title": "Theatre and the world",
+   "text": [
+    "Jaques's 'All the world's a stage' makes the theatrical metaphor explicit, but the play is full of roles and performances: Rosalind's disguise, Celia's mock priest, Touchstone's professional folly, Hymen's masque. The epilogue brings the theatre into the open, reminding the audience that they have watched a play performed by actors [[shapiro2005]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Songs",
+   "text": "The play has more songs than any other Shakespeare play: 'Under the greenwood tree', 'Blow, blow, thou winter wind', 'What shall he have that killed the deer?', 'It was a lover and his lass' and Hymen's wedding song. They express the pastoral mood and comment on it, and they show off the musical talents of the company [[seng1967]]."
+  },
+  {
+   "title": "Brothers",
+   "text": "Two pairs of brothers, Oliver and Orlando and Frederick and Duke Senior, mirror each other: in each a brother wrongs a brother, and in each the wrong is undone by a conversion in the forest."
+  },
+  {
+   "title": "Conversion",
+   "text": "Oliver and Frederick are both converted suddenly: Oliver by his brother's kindness, Frederick by a hermit. These changes belong to the logic of romance, in which the forest heals and transforms [[frye1965]]."
+  },
+  {
+   "title": "Hunting and the deer",
+   "text": "The deer appears in the Duke's scruples about hunting, Jaques's weeping over the wounded stag and the song of the horns. It joins the theme of usurpation to the jokes on cuckoldry."
+  },
+  {
+   "title": "Writing and verses",
+   "text": "Orlando's poems on the trees, Phoebe's letter and Touchstone's parodies make love poetry an object of comedy: the play laughs at its conventions while using them."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The Forest of Arden",
+   "text": "A place of exile, freedom, testing and transformation. It is both a literary Arcadia and a real English forest, and it represents the 'green world' into which comedy's characters escape and from which they return renewed [[frye1965]]."
+  },
+  {
+   "title": "Rosalind's chain",
+   "text": "The chain Rosalind gives Orlando after the wrestling is the first sign of love and of the bond between two people Fortune has wronged."
+  },
+  {
+   "title": "The bloody handkerchief",
+   "text": "Oliver brings Orlando's blood-stained handkerchief, which makes Rosalind faint. It is the sign of a love that breaks through her disguise."
+  },
+  {
+   "title": "Motley",
+   "text": "The fool's coat of mixed colours, which Jaques envies, symbolises the licence to speak the truth and the mixture of wisdom and folly."
+  },
+  {
+   "title": "Horns",
+   "text": "Antlers of the deer and the cuckold's horns: a symbol of the hunt and of the fear of betrayal in marriage."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Is the play a celebration or a critique of pastoral?",
+   "text": [
+    "Older criticism tended to read the play as a celebration of the pastoral ideal, the forest as a place of renewal. Others emphasised its critique of pastoral convention through Touchstone and Jaques. Most critics now agree that the play holds both perspectives together, using the pastoral as a means to test life and love [[greg1906]] [[empson1935]] [[young1972]] [[alpers1996]]."
+   ],
+   "cite": [
+    "greg1906",
+    "empson1935",
+    "young1972",
+    "alpers1996"
+   ]
+  },
+  {
+   "title": "How did Shakespeare transform Lodge?",
+   "text": [
+    "Shakespeare took the plot from Lodge's Rosalynde, but cut the violence and the elaborate rhetoric and added Jaques and Touchstone. Critics have debated whether these additions turned a romance into a comedy of perspectives, and whether the play loses or gains by keeping Lodge's improbable conversions [[bullough1958]] [[jenkins1955]]."
+   ],
+   "cite": [
+    "bullough1958",
+    "jenkins1955"
+   ]
+  },
+  {
+   "title": "Does Rosalind's disguise subvert gender?",
+   "text": [
+    "Feminist critics have argued that Rosalind's disguise gives her power and freedom, and that the play shows gender as performance. Others note that the play ends by returning her to father and husband, so that the freedom is temporary. The boy actor and the epilogue complicate either reading [[howard1988]] [[rackin1987]] [[belsey1985]] [[gay1994]]."
+   ],
+   "cite": [
+    "howard1988",
+    "rackin1987",
+    "belsey1985",
+    "gay1994"
+   ]
+  },
+  {
+   "title": "Homoerotic desire in Arden",
+   "text": [
+    "The name Ganymede, Orlando's wooing of a boy, and Phoebe's love for a woman in disguise have been read as expressions of homoerotic desire. Critics have argued that the play allows such desires to circulate before marriage closes them off [[traub1992]] [[orgel1996]]."
+   ],
+   "cite": [
+    "traub1992",
+    "orgel1996"
+   ]
+  },
+  {
+   "title": "What is Jaques?",
+   "text": [
+    "Jaques has been read as a satirist, a malcontent, a sentimental melancholic, and even as a critic of the comic ending. His refusal to join the dance has been interpreted as a mark of wisdom or of self-isolation. His connection to the fashion for satire in 1599 has also been noted [[jenkins1955]] [[shapiro2005]]."
+   ],
+   "cite": [
+    "jenkins1955",
+    "shapiro2005"
+   ]
+  },
+  {
+   "title": "Festive comedy or social history?",
+   "text": [
+    "Barber read the play as festive comedy, a holiday release that clarifies the everyday world. Frye saw it as a green-world myth of renewal. Montrose reads it as a response to social pressures: primogeniture, landholding and the anxieties of younger sons [[barber1959]] [[frye1965]] [[montrose1981]]."
+   ],
+   "cite": [
+    "barber1959",
+    "frye1965",
+    "montrose1981"
+   ]
+  },
+  {
+   "title": "Where does the play stand among the comedies?",
+   "text": [
+    "As You Like It is often grouped with Much Ado About Nothing and Twelfth Night as the mature comedies. Critics have debated whether it is the most balanced of the three, or the least dramatic, since its plot is largely resolved by the end of the second act. Its heroine is often compared with Viola and Beatrice, and its forest with the wood of A Midsummer Night's Dream [[gardner1959]] [[leggatt1974]] [[frye1965]]."
+   ],
+   "cite": [
+    "gardner1959",
+    "leggatt1974",
+    "frye1965"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "As You Like It 2.1",
+   "quote": "Sweet are the uses of adversity,",
+   "who": "Duke Senior",
+   "explanation": "The Duke's philosophy of exile: hardship teaches what the court could not."
+  },
+  {
+   "ref": "As You Like It 2.1",
+   "quote": "Finds tongues in trees, books in the running brooks,\nSermons in stones, and good in everything.",
+   "who": "Duke Senior",
+   "explanation": "Nature as moral teacher, the pastoral ideal in its purest form."
+  },
+  {
+   "ref": "As You Like It 2.4",
+   "quote": "Ay, now am I in Arden, the more fool I!",
+   "who": "Touchstone",
+   "explanation": "The fool's verdict on the forest, an instant deflation of the pastoral."
+  },
+  {
+   "ref": "As You Like It 2.7",
+   "quote": "All the world's a stage,\nAnd all the men and women merely players;\nThey have their exits and their entrances,\nAnd one man in his time plays many parts,",
+   "who": "Jaques",
+   "explanation": "The opening of the seven ages speech: life as a theatre and human beings as actors."
+  },
+  {
+   "ref": "As You Like It 2.7",
+   "quote": "Sans teeth, sans eyes, sans taste, sans everything.",
+   "who": "Jaques",
+   "explanation": "The end of the seven ages, second childhood, which Orlando's entrance with Adam immediately answers."
+  },
+  {
+   "ref": "As You Like It 3.2",
+   "quote": "Love is merely a madness,",
+   "who": "Rosalind",
+   "explanation": "Ganymede's diagnosis of Orlando's love."
+  },
+  {
+   "ref": "As You Like It 3.3",
+   "quote": "the truest poetry is the most feigning,",
+   "who": "Touchstone",
+   "explanation": "A paradox about poetry and lovers that parodies the defence of fiction."
+  },
+  {
+   "ref": "As You Like It 3.5",
+   "quote": "\"Who ever loved that loved not at first sight?\"",
+   "who": "Phoebe",
+   "explanation": "Phoebe quotes Marlowe's Hero and Leander, a tribute to the dead poet."
+  },
+  {
+   "ref": "As You Like It 4.1",
+   "quote": "Men have died from time to time and worms have eaten them, but\nnot for love.",
+   "who": "Rosalind",
+   "explanation": "Rosalind's demolition of the romantic myth of dying for love."
+  },
+  {
+   "ref": "As You Like It 5.4",
+   "quote": "much virtue in \"if.\"",
+   "who": "Touchstone",
+   "explanation": "The praise of the hypothetical, which describes the play's comic method."
+  }
+ ],
+ "questions": [
+  {
+   "q": "How does the play present the contrast between court and forest? Does it idealise the pastoral life?",
+   "hint": "Consider the Duke's speech in 2.1, Touchstone's verdicts, Corin's master and the return to court."
+  },
+  {
+   "q": "What does Rosalind gain by her disguise as Ganymede?",
+   "hint": "Think about freedom of speech, the testing of Orlando and the safety of saying what she feels."
+  },
+  {
+   "q": "How do the different pairs of lovers comment on one another?",
+   "hint": "Compare Rosalind and Orlando, Silvius and Phoebe, Touchstone and Audrey, Oliver and Celia."
+  },
+  {
+   "q": "What is the function of Jaques in the play? Why does he refuse to join the dance?",
+   "hint": "Look at 2.1, 2.7, 4.1 and the end of 5.4; consider melancholy, satire and the comic ending."
+  },
+  {
+   "q": "Discuss the seven ages of man speech in its dramatic context.",
+   "hint": "What comes before and immediately after it? How does Adam answer Jaques?"
+  },
+  {
+   "q": "How does Touchstone test the other characters?",
+   "hint": "Consider his debates with Corin, his courting of Audrey, his treatment of William and his speech on the lie."
+  },
+  {
+   "q": "What role do the songs play?",
+   "hint": "Look at what each song says and who sings it: 'Under the greenwood tree', 'Blow, blow', the deer song, 'It was a lover'."
+  },
+  {
+   "q": "How does Shakespeare change Lodge's Rosalynde?",
+   "hint": "Think about additions (Jaques, Touchstone), cuts (violence) and the tone of the comedy."
+  },
+  {
+   "q": "What is the effect of the epilogue?",
+   "hint": "Consider the boy actor, the appeal to the audience and the play's theme of gender as performance."
+  },
+  {
+   "q": "Compare As You Like It with another comedy of Shakespeare's.",
+   "hint": "Twelfth Night (disguise, a melancholic outsider), A Midsummer Night's Dream (the green world) or Much Ado (wit and love)."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "alpers1996",
+   "text": "Alpers, Paul. What Is Pastoral? Chicago: University of Chicago Press, 1996."
+  },
+  {
+   "id": "barber1959",
+   "text": "Barber, C. L. Shakespeare's Festive Comedy: A Study of Dramatic Form and Its Relation to Social Custom. Princeton: Princeton University Press, 1959."
+  },
+  {
+   "id": "bate1993",
+   "text": "Bate, Jonathan. Shakespeare and Ovid. Oxford: Clarendon Press, 1993."
+  },
+  {
+   "id": "belsey1985",
+   "text": "Belsey, Catherine. \"Disrupting Sexual Difference: Meaning and Gender in the Comedies.\" In Alternative Shakespeares, edited by John Drakakis, 166–190. London: Methuen, 1985."
+  },
+  {
+   "id": "brissenden1993",
+   "text": "Brissenden, Alan, ed. As You Like It. The Oxford Shakespeare. Oxford: Oxford University Press, 1993."
+  },
+  {
+   "id": "bullough1958",
+   "text": "Bullough, Geoffrey, ed. Narrative and Dramatic Sources of Shakespeare. Vol. 2, The Comedies, 1597–1603. London: Routledge and Kegan Paul, 1958."
+  },
+  {
+   "id": "dusinberre2006",
+   "text": "Dusinberre, Juliet, ed. As You Like It. The Arden Shakespeare, Third Series. London: Thomson Learning, 2006."
+  },
+  {
+   "id": "empson1935",
+   "text": "Empson, William. Some Versions of Pastoral. London: Chatto and Windus, 1935."
+  },
+  {
+   "id": "frye1965",
+   "text": "Frye, Northrop. A Natural Perspective: The Development of Shakespearean Comedy and Romance. New York: Columbia University Press, 1965."
+  },
+  {
+   "id": "gardner1959",
+   "text": "Gardner, Helen. \"As You Like It.\" In More Talking of Shakespeare, edited by John Garrett, 17–32. London: Longmans, 1959."
+  },
+  {
+   "id": "gay1994",
+   "text": "Gay, Penny. As She Likes It: Shakespeare's Unruly Women. London: Routledge, 1994."
+  },
+  {
+   "id": "greg1906",
+   "text": "Greg, W. W. Pastoral Poetry and Pastoral Drama: A Literary Inquiry, with Special Reference to the Pre-Restoration Stage in England. London: A. H. Bullen, 1906."
+  },
+  {
+   "id": "howard1988",
+   "text": "Howard, Jean E. \"Crossdressing, the Theatre, and Gender Struggle in Early Modern England.\" Shakespeare Quarterly 39 (1988): 418–440."
+  },
+  {
+   "id": "jenkins1955",
+   "text": "Jenkins, Harold. \"As You Like It.\" Shakespeare Survey 8 (1955): 40–51."
+  },
+  {
+   "id": "leggatt1974",
+   "text": "Leggatt, Alexander. Shakespeare's Comedy of Love. London: Methuen, 1974."
+  },
+  {
+   "id": "montrose1981",
+   "text": "Montrose, Louis Adrian. \"'The Place of a Brother' in As You Like It: Social Process and Comic Form.\" Shakespeare Quarterly 32 (1981): 28–54."
+  },
+  {
+   "id": "orgel1996",
+   "text": "Orgel, Stephen. Impersonations: The Performance of Gender in Shakespeare's England. Cambridge: Cambridge University Press, 1996."
+  },
+  {
+   "id": "rackin1987",
+   "text": "Rackin, Phyllis. \"Androgyny, Mimesis, and the Marriage of the Boy Heroine on the English Renaissance Stage.\" PMLA 102 (1987): 29–41."
+  },
+  {
+   "id": "seng1967",
+   "text": "Seng, Peter J. The Vocal Songs in the Plays of Shakespeare: A Critical History. Cambridge, MA: Harvard University Press, 1967."
+  },
+  {
+   "id": "shapiro2005",
+   "text": "Shapiro, James. 1599: A Year in the Life of William Shakespeare. London: Faber and Faber, 2005."
+  },
+  {
+   "id": "traub1992",
+   "text": "Traub, Valerie. Desire and Anxiety: Circulations of Sexuality in Shakespearean Drama. London: Routledge, 1992."
+  },
+  {
+   "id": "wiles1987",
+   "text": "Wiles, David. Shakespeare's Clown: Actor and Text in the Elizabethan Playhouse. Cambridge: Cambridge University Press, 1987."
+  },
+  {
+   "id": "young1972",
+   "text": "Young, David. The Heart's Forest: A Study of Shakespeare's Pastoral Plays. New Haven: Yale University Press, 1972."
+  }
+ ]
+}

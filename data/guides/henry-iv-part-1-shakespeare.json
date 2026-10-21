@@ -1,0 +1,1089 @@
+{
+ "work": "henry-iv-part-1-shakespeare",
+ "title": "The First Part of King Henry the Fourth",
+ "author": "William Shakespeare",
+ "quoteEdition": "henry-iv-part-1-shakespeare",
+ "unit": "Scene",
+ "updated": "2026-10-21",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "William Shakespeare (1564–1616), actor, shareholder and playwright of the Lord Chamberlain's Men"
+  },
+  {
+   "label": "Genre",
+   "value": "History play, mixing blank verse for the court and the rebels with prose for the tavern"
+  },
+  {
+   "label": "Date",
+   "value": "Written c. 1596–97; entered for publication in February 1598 and printed that year"
+  },
+  {
+   "label": "Setting",
+   "value": "England and Wales, 1402–1403: the court in London, the Boar's Head tavern in Eastcheap, the road at Gad's Hill, the rebels' bases, and the battlefield of Shrewsbury"
+  },
+  {
+   "label": "Main source",
+   "value": "Raphael Holinshed's Chronicles (1587), with Samuel Daniel's The Civil Wars (1595) and the anonymous play The Famous Victories of Henry V"
+  },
+  {
+   "label": "Protagonists",
+   "value": "Prince Hal, heir to the throne; Sir John Falstaff; Hotspur (Harry Percy); King Henry IV"
+  },
+  {
+   "label": "Major conflict",
+   "value": "The Percy family's rebellion against the king they helped to crown, and Hal's choice between the tavern and his father's court"
+  },
+  {
+   "label": "Climax",
+   "value": "The Battle of Shrewsbury (5.4), where Hal saves his father and kills Hotspur in single combat"
+  },
+  {
+   "label": "Sequel",
+   "value": "The Second Part of King Henry the Fourth, which ends with Hal crowned as Henry V and Falstaff rejected"
+  },
+  {
+   "label": "Name controversy",
+   "value": "Falstaff was first called Sir John Oldcastle; the name was changed after protests from Oldcastle's descendants, the Lords Cobham"
+  }
+ ],
+ "context": [
+  "Henry IV, Part 1 belongs to Shakespeare's second group of English history plays, the 'second tetralogy': Richard II, the two parts of Henry IV and Henry V. Written around 1596–97, it follows directly from Richard II, in which Henry Bolingbroke deposed his cousin and took the crown. The guilt of that act, and the debts Henry owes to the nobles who helped him, drive the political plot of this play. Its sequel, Part 2, carries the story to Henry's death and Hal's accession; scholars still debate whether Shakespeare planned the two parts together or wrote the second after the first succeeded [[hunter1954]] [[jenkins1956]] [[hawkins1982]].",
+  "Shakespeare's main source was the second edition of Raphael Holinshed's Chronicles (1587), which he used for the rebellion of the Percys, the quarrel over the Scottish prisoners, the alliance with Glendower and Mortimer, and the battle of Shrewsbury [[holinshed1587]] [[bullough1962]]. He changed history freely. In Holinshed, Hotspur was older than Henry IV himself; Shakespeare makes him Hal's age so that the two can be rivals. Holinshed does not say who killed Hotspur; Shakespeare gives the deed to Hal. The rescue of the King from Douglas comes from Samuel Daniel's poem The Civil Wars, and the legend of the wild prince who reforms comes from popular tradition and from the old play The Famous Victories of Henry V [[saccio1977]].",
+  "The comic plot is largely Shakespeare's own. Its central figure, Sir John Falstaff, was originally named Sir John Oldcastle after a real knight in the old play, a friend of Henry V who was executed in 1417 as a Lollard heretic and later honoured by Protestants as a martyr. Oldcastle's descendants, the Brooke family, Lords Cobham, objected, and the name was changed, probably after Shakespeare's first performances. Traces remain: Hal calls Falstaff 'my old lad of the castle' in 1.2, and the epilogue to Part 2 insists that 'Oldcastle died a martyr, and this is not the man' [[taylor1985]] [[taylor1987]] [[corbin1991]].",
+  "The play was one of the most popular of its age. It was reprinted in quarto again and again before the First Folio of 1623, and Falstaff became a celebrity whose name was quoted in letters and who, according to a later legend, Queen Elizabeth wished to see in love, which led to The Merry Wives of Windsor. Modern editions are based on the first quarto of 1598 [[bevington1987]].",
+  "Criticism has long turned on three questions. The first is Falstaff: is he a coward and a parasite, or the play's great voice of life and wit? The second is Hal: is his reformation a sincere redemption or a political performance? The third is the play's view of history: does it support the Tudor idea of order restored, or does it show authority as theatre and honour as an empty word [[tillyard1944]] [[greenblatt1988]] [[rackin1990]]?"
+ ],
+ "plot": [
+  "King Henry IV, who took the crown from Richard II, longs for peace and a crusade but faces rebellion on his borders. His son and heir, Prince Hal, spends his time in the taverns of Eastcheap with Sir John Falstaff, a fat, old, witty knight, and his band of petty thieves. Meanwhile Harry Percy, known as Hotspur, the brave son of the Earl of Northumberland, defeats the Scots and then quarrels with the King over his prisoners. His uncle Worcester draws him into a plot with the Scottish Earl of Douglas, the Welsh leader Owen Glendower and Edmund Mortimer.",
+  "Hal agrees to a joke: Falstaff and his friends will rob travellers at Gad's Hill, and Hal and Poins, in disguise, will rob them in turn. Falstaff runs away and later tells a ridiculous story of fighting off dozens of attackers. When Hal is called to court, he and Falstaff act out his interview with his father in a play improvised in the tavern. In soliloquy, Hal has already told the audience that he will throw off his companions in time.",
+  "The rebels meet, divide England on a map and quarrel among themselves. The King rebukes Hal, who promises to redeem himself by defeating Hotspur. Falstaff takes command of a troop of ragged conscripts. At Shrewsbury, Northumberland and Glendower fail to arrive, and Worcester hides the King's offer of pardon from Hotspur. Before the battle, Falstaff decides that honour is only a word.",
+  "In the battle Hal saves his father from Douglas and kills Hotspur in single combat. Falstaff, who has played dead to escape Douglas, rises, stabs Hotspur's body and claims the kill, and Hal lets the lie stand. Worcester and Vernon are executed, Douglas is released, and the King divides his army to deal with the rebels who remain, which leads into Part 2."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Act I, Scene 1: A king without peace",
+   "lines": "Act I, Scene 1 (the whole scene)",
+   "section": 1,
+   "summary": [
+    "King Henry, worn out by civil strife, announces that England will at last unite in a crusade to the Holy Land. Westmoreland brings bad news: Edmund Mortimer has been defeated and captured by the Welsh rebel Owen Glendower. A second report is happier. Harry Percy, called Hotspur, son of the Earl of Northumberland, has routed the Scots under the Earl of Douglas at Holmedon and taken many noble prisoners.",
+    "The King envies Northumberland such a son and wishes that a fairy had swapped the babies in their cradles, for his own heir, Prince Harry, lives in riot. Yet Hotspur refuses to hand over his prisoners, and the King postpones the crusade and summons the Percys to court."
+   ],
+   "analysis": [
+    "The opening speech sets the play's political tone. Henry took the crown from Richard II, and his longed-for crusade is both a penance for that guilt and a policy for keeping restless nobles busy abroad. Each time it is announced it is postponed; in 2 Henry IV he will die in a room called Jerusalem. Critics who read the histories as a providential sequence see the civil wars of these plays as the price of Richard's deposition [[tillyard1944]]; others stress how coolly the King calculates [[saccio1977]].",
+    "The scene also sets up the play's central comparison. Before we meet either young man, the father has paired Hal and Hotspur as rivals, one the model of honour and the other its stain. The rest of the drama tests whether that judgement is right."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 1.1",
+     "quote": "So shaken as we are, so wan with care,\nFind we a time for frighted peace to pant,",
+     "note": "The first line of the play. The peace the King hopes for is short of breath, and it will not last the scene."
+    },
+    {
+     "ref": "1 Henry IV 1.1",
+     "quote": "See riot and dishonour stain the brow\nOf my young Harry.",
+     "note": "The King's verdict on his son, the view the prince will spend the play overturning."
+    },
+    {
+     "ref": "1 Henry IV 1.1",
+     "quote": "And called mine Percy, his Plantagenet!",
+     "note": "The fantasy of the exchanged children makes Hal and Hotspur doubles from the start."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Act I, Scene 2: Hal, Falstaff and the plan for Gad's Hill",
+   "lines": "Act I, Scene 2 (the whole scene)",
+   "section": 2,
+   "summary": [
+    "In the prince's London lodging, Hal and Sir John Falstaff trade insults about time, drink, thieving and the gallows. Falstaff asks Hal not to hang thieves when he is king and calls himself one of the moon's gentlemen. Poins arrives with a plan: travellers carrying money will pass Gad's Hill early next morning, and the friends will rob them. Hal at first refuses, then agrees to a second scheme. He and Poins will let Falstaff and the others commit the robbery, then rob the robbers in disguise and enjoy the lies Falstaff tells afterwards.",
+    "Left alone, Hal speaks the soliloquy 'I know you all'. He will tolerate his companions for a while, he says, like the sun letting clouds hide it, so that his reformation will shine all the brighter when he casts them off."
+   ],
+   "analysis": [
+    "The prose exchange introduces Falstaff as a master of wit who turns every charge into a joke, and Hal as his equal in repartee. Falstaff's request that thieves be called 'Diana's foresters' gives the tavern world its own festive language, set against the timed and dutiful world of the court [[barber1959]].",
+    "The soliloquy is the most debated speech in the play. Some readers take it as Shakespeare's reassurance to an audience who knew that the wild prince became the hero of Agincourt; others hear a cold politician planning to use his friends [[greenblatt1988]]. The imagery is that of money and debt: Hal will 'pay the debt' he never promised and win credit by the contrast. The closing phrase, 'Redeeming time', joins the language of salvation to that of the counting-house."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 1.2",
+     "quote": "let us be Diana’s foresters, gentlemen of the shade, minions of the moon;",
+     "note": "Falstaff renames highway robbery as service to the goddess of the moon and hunt, a joke on the King's 'night' and 'day'."
+    },
+    {
+     "ref": "1 Henry IV 1.2",
+     "quote": "I know you all, and will awhile uphold\nThe unyok’d humour of your idleness.",
+     "note": "Hal's first words alone. The 'all' includes the audience, who have just been enjoying the companions he dismisses."
+    },
+    {
+     "ref": "1 Henry IV 1.2",
+     "quote": "My reformation, glitt’ring o’er my fault,\nShall show more goodly and attract more eyes\nThan that which hath no foil to set it off.",
+     "note": "Reform as display: a jewel looks brighter against a dark setting."
+    },
+    {
+     "ref": "1 Henry IV 1.2",
+     "quote": "I’ll so offend, to make offence a skill,\nRedeeming time, when men think least I will.",
+     "note": "The couplet echoes St Paul's 'redeeming the time' (Ephesians 5:16)."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act I, Scene 3: Hotspur's prisoners and the Percy plot",
+   "lines": "Act I, Scene 3 (the whole scene)",
+   "section": 3,
+   "summary": [
+    "The King quarrels with the Percys. When Worcester reminds him that their family helped him to the throne, Henry sends him from the room. Hotspur explains that he refused to give up his prisoners because a perfumed courtier demanded them on the battlefield while he was faint from his wounds. The King answers that Hotspur still keeps them back in order to force him to ransom Mortimer, Hotspur's brother-in-law, whom Henry calls a traitor. He orders the prisoners sent at once and leaves.",
+    "Hotspur explodes. Northumberland and Worcester remind him that Mortimer was named heir by Richard II, which is why the King fears him. Worcester reveals a plot: the Scottish prisoners will be freed to win Douglas, the Archbishop of York will join them, and Mortimer and Glendower will rise in Wales."
+   ],
+   "analysis": [
+    "Hotspur's speech about the 'popinjay' shows him at his most attractive and most comic, a soldier who despises courtly manners. In his outburst about plucking 'bright honour from the pale-faced moon', honour is something to be seized and kept for oneself, 'without corrival'. Worcester and his father can hardly get a word in: his impatience is both his charm and his danger [[jenkins1956]].",
+    "The scene shows that the rebellion grows out of the deposition of Richard II. The Percys made Henry king and now feel cheated; they call him 'this vile politician, Bolingbroke'. Shakespeare follows Holinshed in confusing two Edmund Mortimers, the captured soldier and the young Earl of March who was Richard's heir [[bullough1962]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 1.3",
+     "quote": "To be so pester’d with a popinjay,",
+     "note": "Hotspur's contempt for the scented courtier; a popinjay is a parrot."
+    },
+    {
+     "ref": "1 Henry IV 1.3",
+     "quote": "By Heaven, methinks it were an easy leap\nTo pluck bright honour from the pale-faced moon,",
+     "note": "Hotspur's honour is a prize to be grabbed, high above the earth."
+    },
+    {
+     "ref": "1 Henry IV 1.3",
+     "quote": "And that same sword-and-buckler Prince of Wales,",
+     "note": "Hotspur sneers at Hal as a common brawler, the play's first comparison from Hotspur's side."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act II, Scene 1: Carriers at Rochester",
+   "lines": "Act II, Scene 1 (the whole scene)",
+   "section": 4,
+   "summary": [
+    "Before dawn in an inn-yard at Rochester, two carriers grumble about fleas, a dead ostler and the price of oats as they load their horses for London. Gadshill, the thief who gives his name to the robbery, borrows a lantern and is refused. He learns from the inn's chamberlain, his informer, that a rich franklin and others will travel the road that morning.",
+    "Gadshill boasts that he keeps company with men of rank who will protect him, and that the robbers walk invisible."
+   ],
+   "analysis": [
+    "This short scene of ordinary working men is one of Shakespeare's most vivid pictures of common English life, and it widens the world of the play beyond court and tavern. The carriers have no part in the plot; they are there to make the kingdom felt as a real place with real victims [[rackin1990]].",
+    "Gadshill's claim that 'great oneyers' support him is a comic version of the play's larger theme. Robbery is protected by rank, and the heir to the throne is about to take part in it."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 2.1",
+     "quote": "We steal as in a castle, cock-sure;",
+     "note": "Gadshill's confidence: a thief protected by the great is as safe as a man in his own castle."
+    },
+    {
+     "ref": "1 Henry IV 2.1",
+     "quote": "we have the receipt of fern-seed, we walk invisible.",
+     "note": "Fern-seed was believed to make its carrier invisible, a folk joke about thieves who are never caught."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act II, Scene 2: The robbery at Gad's Hill",
+   "lines": "Act II, Scene 2 (the whole scene)",
+   "section": 5,
+   "summary": [
+    "On the road near Gad's Hill, Poins has hidden Falstaff's horse, and the fat knight complains bitterly of having to walk. The thieves put on their masks, rob the travellers and bind them, while Falstaff abuses the victims as young and fat. As the robbers sit down to share the money, Hal and Poins, in buckram suits, attack them. The others run at once, and Falstaff, after a blow or two, runs too, leaving the money behind.",
+    "Hal and Poins ride away laughing, picturing Falstaff sweating to death as he goes."
+   ],
+   "analysis": [
+    "The robbery is farce, but it matters. The heir to the throne takes part in a crime against his father's subjects, although he later returns the money. Hal never takes anything from the travellers; he robs only thieves, a distinction the play is careful to keep. Critics have compared this joke to the more serious deceptions of the battlefield, where the King too will appear in disguise [[greenblatt1988]].",
+    "Falstaff's cry that the victims 'hate us youth' is typical of his comedy, which delights in claims that are plainly untrue. He is old and fat and claims to be young; the joke is in the shamelessness."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 2.2",
+     "quote": "Ah, whoreson caterpillars, bacon-fed knaves, they hate us youth.",
+     "note": "Falstaff, the oldest man on the road, robs the travellers in the name of youth."
+    },
+    {
+     "ref": "1 Henry IV 2.2",
+     "quote": "Falstaff sweats to death,\nAnd lards the lean earth as he walks along.",
+     "note": "Hal's picture of the fleeing knight, basting the ground with his own fat."
+    },
+    {
+     "ref": "1 Henry IV 2.2",
+     "quote": "How the fat rogue roared!",
+     "note": "Poins enjoys the joke, which will be completed in 2.4."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act II, Scene 3: Hotspur and Lady Percy",
+   "lines": "Act II, Scene 3 (the whole scene)",
+   "section": 6,
+   "summary": [
+    "At Warkworth, Hotspur reads a letter from a nobleman who refuses to join the rebellion, calling the plan dangerous and its friends uncertain. Hotspur argues with the absent writer, insults him and decides to set out that night. His wife, Lady Percy, enters and asks why he has stopped eating and sleeping and talks of battles in his dreams.",
+    "Hotspur will not tell her his plans, teases her and promises only that she will follow him."
+   ],
+   "analysis": [
+    "The letter scene reveals Hotspur's mind in motion: he answers every objection with a burst of contempt, and the fine phrase about plucking 'this flower, safety' from 'this nettle, danger' sums up his courage and his refusal to calculate. The audience may notice that the letter-writer's doubts are sensible ones and will prove correct.",
+    "Lady Percy's speech is one of the play's few views of the cost of war from the household. Feminist critics see in her and in Lady Mortimer a domestic world that the history plays push to the edges, and Hotspur's teasing shows that his world of honour has little room for women [[howard1997]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 2.3",
+     "quote": "out of this nettle, danger, we pluck this flower, safety.",
+     "note": "Hotspur's answer to the cautious letter-writer, one of the play's most quoted phrases."
+    },
+    {
+     "ref": "1 Henry IV 2.3",
+     "quote": "Thy stomach, pleasure, and thy golden sleep?",
+     "note": "Lady Percy lists what her husband has lost to his plotting."
+    },
+    {
+     "ref": "1 Henry IV 2.3",
+     "quote": "Well, I will back him straight. O Esperance!",
+     "note": "'Esperance' (hope) was the Percy battle-cry."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act II, Scene 4: The tavern, the lies and the play extempore",
+   "lines": "Act II, Scene 4 (the whole scene)",
+   "section": 7,
+   "summary": [
+    "At the Boar's Head in Eastcheap, Hal boasts of having learned the drawers' slang and plays a trick on Francis, a young waiter, calling 'Anon, anon' between Hal and Poins. Falstaff arrives, curses cowards, and tells how he fought off a growing number of men in buckram: two, then four, then seven, then eleven, and three more in Kendal green, though it was too dark to see. Hal reveals the truth. Falstaff answers that he knew them all along and ran from instinct, as a lion will not touch a true prince.",
+    "A messenger summons Hal to court: the rebellion has begun. Falstaff proposes a rehearsal of Hal's interview with his father. Falstaff plays the King and praises Falstaff; then they change roles, and Hal, as King, denounces Falstaff as a 'misleader of youth'. Falstaff, as Hal, pleads 'banish plump Jack, and banish all the world'; Hal answers 'I do, I will'. The Sheriff arrives in pursuit of the robbers, Hal protects Falstaff, and the scene ends with Hal reading Falstaff's tavern bill as he sleeps."
+   ],
+   "analysis": [
+    "The longest scene in the play is its comic centre and turns on acting. The buckram story is a performance that Falstaff knows will be exposed, and his escape through 'instinct' is the real joke. Since Maurice Morgann, critics have debated whether Falstaff is a coward or a man too clever to fight for nothing [[morgann1777]] [[wilson1943]].",
+    "The play extempore rehearses the end of 2 Henry IV, when Hal, newly crowned, rejects Falstaff. Hal's 'I do, I will' moves from the present tense of the game into the future, and many productions mark the change with a pause. Barber reads the scene as a saturnalian mock-king whose dismissal clears the way for real rule [[barber1959]]; others find in it the moment the friendship becomes conditional [[auden1962]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 2.4",
+     "quote": "O monstrous! Eleven buckram men grown out of two!",
+     "note": "Hal's comment on Falstaff's arithmetic, which grows with each telling."
+    },
+    {
+     "ref": "1 Henry IV 2.4",
+     "quote": "I was now a coward on instinct.",
+     "note": "Falstaff's escape: he claims that he recognised the true prince and could not strike him."
+    },
+    {
+     "ref": "1 Henry IV 2.4",
+     "quote": "that reverend Vice, that grey iniquity, that father ruffian, that vanity in years?",
+     "note": "Hal, playing the King, names Falstaff after the Vice of the old morality plays."
+    },
+    {
+     "ref": "1 Henry IV 2.4",
+     "quote": "Banish plump Jack, and banish all the world.",
+     "note": "Falstaff's plea; Hal's reply, 'I do, I will', looks ahead to the rejection in Part 2."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act III, Scene 1: The rebels divide England",
+   "lines": "Act III, Scene 1 (the whole scene)",
+   "section": 8,
+   "summary": [
+    "At Bangor, Hotspur, Worcester, Mortimer and Glendower meet to plan the rising. Glendower claims that the earth shook at his birth and that he can call spirits; Hotspur mocks him. They divide the kingdom on a map into three parts, and Hotspur objects that the river Trent cuts a piece out of his share. Glendower offers to change its course, then yields, at which Hotspur loses interest.",
+    "Mortimer's Welsh wife cannot speak English and he cannot speak Welsh; she sings to him in Welsh while Hotspur teases Lady Percy and refuses to let her sing."
+   ],
+   "analysis": [
+    "The rebels quarrel even before they fight. The map of a divided England, three parts for three leaders, shows what the rebellion would mean for the kingdom. Hotspur's mockery of Glendower is funny but tactless, and Mortimer and Worcester warn him that he is damaging the alliance [[jenkins1956]].",
+    "The Welsh song and the untranslated Welsh lines make this the play's most lyrical moment and its most foreign. Critics have read Wales as a space of feminine and magical power that the English history must master or exclude [[howard1997]] [[rackin1990]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 3.1",
+     "quote": "I can call spirits from the vasty deep.",
+     "note": "Glendower's boast of magic power."
+    },
+    {
+     "ref": "1 Henry IV 3.1",
+     "quote": "Why, so can I, or so can any man,\nBut will they come when you do call for them?",
+     "note": "Hotspur's reply deflates the magician in a single question."
+    },
+    {
+     "ref": "1 Henry IV 3.1",
+     "quote": "A huge half-moon, a monstrous cantle out.",
+     "note": "Hotspur complains that the Trent takes a slice from his share; 'cantle' means a portion."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act III, Scene 2: Father and son",
+   "lines": "Act III, Scene 2 (the whole scene)",
+   "section": 9,
+   "summary": [
+    "The King sends his lords away and rebukes Hal privately. He compares the prince to Richard II, who cheapened himself by mixing with common people, and himself to the young Bolingbroke, who kept himself rare and won the crowd's wonder. He says Hotspur has more right to the throne than Hal, and fears that his son will fight against him.",
+    "Hal asks for pardon and promises to redeem himself on Percy's head: Hotspur has been gathering glory for him, which he will take at Shrewsbury. The King, moved, gives him a command. Blunt brings news that the rebels have gathered at Shrewsbury."
+   ],
+   "analysis": [
+    "The King's advice repeats the logic of Hal's soliloquy in 1.2. Both men understand power as a performance whose effect depends on rarity. The difference is that Hal has already planned what his father thinks he must be taught. New historicist critics read the scene as a lesson in the theatre of royal authority [[greenblatt1988]] [[kastan1986]].",
+    "Hal's promise uses the language of trade. Percy is his 'factor', an agent buying glory on his behalf, and Hal will call him to account. The image makes honour a commodity, which will be exchanged in the fight in 5.4."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 3.2",
+     "quote": "I will redeem all this on Percy’s head,\nAnd, in the closing of some glorious day,\nBe bold to tell you that I am your son,",
+     "note": "Hal's vow, which repeats the word 'redeem' from his soliloquy."
+    },
+    {
+     "ref": "1 Henry IV 3.2",
+     "quote": "Percy is but my factor, good my lord,",
+     "note": "Honour as trade: Hotspur has been collecting it for Hal."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Act III, Scene 3: Falstaff called to war",
+   "lines": "Act III, Scene 3 (the whole scene)",
+   "section": 10,
+   "summary": [
+    "At the Boar's Head, Falstaff complains that he is wasting away and teases Bardolph about his red nose. He accuses the Hostess, Mistress Quickly, of letting his pocket be picked of a valuable ring; she answers that he owes her money and that Hal has called the ring copper. Hal enters and reveals that the pocket held only tavern bills and a bit of sugar-candy.",
+    "Hal tells Falstaff that the stolen money has been paid back and that he has a command of infantry. The prince leaves for war, and Falstaff calls for breakfast."
+   ],
+   "analysis": [
+    "The scene shows Hal moving out of the tavern. He has made peace with his father and repaid the robbery, and he brings Falstaff into the war. Falstaff's jokes about his own body and his debts continue, but they now sound against the background of the coming battle.",
+    "Falstaff's argument that he has more flesh than other men and so more frailty is a parody of Christian theology: since Adam fell in innocence, what hope is there for Jack Falstaff in a wicked age? The comedy borrows the language of sin and grace that runs through Hal's plans [[bloom1998]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 3.3",
+     "quote": "Do I not bate? Do I not dwindle?",
+     "note": "Falstaff, the fattest man in England, worries that he is wasting away."
+    },
+    {
+     "ref": "1 Henry IV 3.3",
+     "quote": "Thou seest I have more flesh than another man and therefore more frailty.",
+     "note": "A joke on the 'frailty of the flesh' of Christian moral teaching."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Act IV, Scene 1: The rebels at Shrewsbury",
+   "lines": "Act IV, Scene 1 (the whole scene)",
+   "section": 11,
+   "summary": [
+    "In the rebel camp, Hotspur and Douglas praise each other. A letter brings bad news: Northumberland is sick and will not come. Hotspur turns this into good news, since victory without him will be greater. Vernon reports that the King's army is coming, and describes the prince armed and mounted, a vision of chivalry.",
+    "Hotspur interrupts the praise of his rival, longs to meet Hal in single combat, and hears that Glendower cannot come for another fourteen days."
+   ],
+   "analysis": [
+    "Vernon's description of Hal is the first sign that the rumours about the prince are wrong. The heavy armour, the leap into the saddle and the image of Mercury and Pegasus present him as a classical hero. Hotspur cannot bear to hear it.",
+    "The rebels' cause weakens before the battle. Northumberland's 'sickness' looks like caution, and Glendower's delay leaves the army short. Hotspur's optimism grows as his real chances shrink."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 4.1",
+     "quote": "I saw young Harry with his beaver on,\nHis cuisses on his thighs, gallantly arm’d,\nRise from the ground like feather’d Mercury,",
+     "note": "Vernon's report of the transformed prince; a beaver is the visor of a helmet, cuisses are thigh armour."
+    },
+    {
+     "ref": "1 Henry IV 4.1",
+     "quote": "And witch the world with noble horsemanship.",
+     "note": "The climax of the description: Hal will charm the world as Hotspur hoped to."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Act IV, Scene 2: Falstaff's recruits",
+   "lines": "Act IV, Scene 2 (the whole scene)",
+   "section": 12,
+   "summary": [
+    "On a road near Coventry, Falstaff confesses to the audience that he has abused the King's licence to press soldiers. He conscripted men of property who paid him to be released, and filled their places with beggars, servants and released prisoners, so ragged that he will not march through Coventry with them.",
+    "Hal and Westmoreland pass and comment on the wretched troops. Falstaff answers that they are good enough to be killed."
+   ],
+   "analysis": [
+    "The scene is comic but bitter. Falstaff's corruption has real victims, and his phrase 'food for powder' (cannon fodder) is one of the sharpest comments on war in Shakespeare. It is hard to keep laughing once one knows that nearly all these men will die at Shrewsbury.",
+    "Critics divided over Falstaff's morality cite this scene on both sides. For some it proves him a parasite of the state; for others it tells the truth about what armies are made of, a truth the heroic speeches leave out [[wilson1943]] [[bloom1998]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 4.2",
+     "quote": "I have misused the King’s press damnably.",
+     "note": "Falstaff confesses at once; the 'press' is the right to conscript men."
+    },
+    {
+     "ref": "1 Henry IV 4.2",
+     "quote": "food for powder, food for powder, they’ll fill a pit as well as better.",
+     "note": "The original 'cannon fodder'."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Act IV, Scene 3: The King's offer",
+   "lines": "Act IV, Scene 3 (the whole scene)",
+   "section": 13,
+   "summary": [
+    "The rebel leaders argue about whether to attack at once. Sir Walter Blunt arrives from the King with an offer: if they name their grievances, they will be met and the rebels pardoned. Hotspur tells the story of how the Percys helped Bolingbroke when he returned from exile, claiming only his duchy, and how he then took the crown, killed Richard and treated his helpers with suspicion.",
+    "Hotspur says that Worcester will bring an answer in the morning."
+   ],
+   "analysis": [
+    "Hotspur's long account of Henry's rise is the rebels' version of history. It is partial but not false, and it reminds the audience that Henry is a usurper. The Percys' grievance is that they were used and then cast aside [[saccio1977]].",
+    "Blunt's offer is generous and probably sincere. The tragedy of the rebellion, as the next act shows, is that it will never reach Hotspur."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 4.3",
+     "quote": "The King is kind, and well we know the King",
+     "note": "Hotspur's ironic praise before he tells his story of royal ingratitude."
+    },
+    {
+     "ref": "1 Henry IV 4.3",
+     "quote": "He came but to be Duke of Lancaster,",
+     "note": "The Percys' charge: Bolingbroke swore he came only to reclaim his inheritance."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Act IV, Scene 4: The Archbishop of York",
+   "lines": "Act IV, Scene 4 (the whole scene)",
+   "section": 14,
+   "summary": [
+    "In York, the Archbishop sends letters to his allies. He fears the outcome of the battle at Shrewsbury, since Northumberland, Glendower and Mortimer are absent and the King's army is strong.",
+    "He expects that the King, if he wins, will turn against him next, and prepares for that."
+   ],
+   "analysis": [
+    "This short scene is a bridge to the second part of the story. The Archbishop's rebellion will be the main plot of 2 Henry IV, so the scene shows that Shrewsbury will not end the civil war. Critics who think Shakespeare planned both parts at once cite such links; others argue that Part 2 was written only after Part 1 proved a success [[hunter1954]] [[jenkins1956]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 4.4",
+     "quote": "Tomorrow, good Sir Michael, is a day\nWherein the fortune of ten thousand men\nMust bide the touch;",
+     "note": "The Archbishop's sense of a decisive day; 'touch' is the touchstone that tests gold."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Act V, Scene 1: The parley and the catechism",
+   "lines": "Act V, Scene 1 (the whole scene)",
+   "section": 15,
+   "summary": [
+    "Near Shrewsbury, Worcester comes to the King's camp. The King asks why he has rebelled; Worcester repeats the Percys' grievance. Hal praises Hotspur and offers to settle the quarrel in single combat. The King renews his offer of pardon and sends Worcester back.",
+    "Alone with Falstaff, Hal tells him he owes God a death. Falstaff, left alone, delivers his catechism on honour: honour cannot set a broken leg or heal a wound, it is only a word, air, and belongs to the dead. He will have none of it."
+   ],
+   "analysis": [
+    "Hal's offer of single combat shows his new public role and his generosity to his rival; it also shows his confidence. Falstaff's quip about the rebellion, 'Rebellion lay in his way, and he found it', mocks Worcester's claim that he never sought the quarrel.",
+    "The catechism, in the question-and-answer form of a church lesson, is the play's sharpest challenge to the values of Hotspur and the court. Falstaff empties honour of meaning just before men die for it. Some critics see him as a voice of life and good sense against a deadly code [[bloom1998]]; others see the speech as a coward's excuse that the play exposes [[wilson1943]] [[tillyard1944]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 5.1",
+     "quote": "Rebellion lay in his way, and he found it.",
+     "note": "Falstaff's interruption makes rebellion an accident, like a purse lying in the road."
+    },
+    {
+     "ref": "1 Henry IV 5.1",
+     "quote": "What is honour? A word.",
+     "note": "The heart of the catechism."
+    },
+    {
+     "ref": "1 Henry IV 5.1",
+     "quote": "Honour is a mere scutcheon. And so ends my catechism.",
+     "note": "A scutcheon is a painted coat of arms carried at funerals: honour belongs to the dead."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Act V, Scene 2: Worcester's deception",
+   "lines": "Act V, Scene 2 (the whole scene)",
+   "section": 16,
+   "summary": [
+    "Worcester decides not to tell Hotspur of the King's offer, because he believes that the King will never trust the Percys again. Hotspur, he fears, might be forgiven as a hot-headed youth, but Worcester and Northumberland would pay. He tells Hotspur that the King is set on battle.",
+    "Vernon reports Hal's challenge, praising his modesty. Hotspur is scornful but excited. He hears that the enemy is coming and urges his men to fight."
+   ],
+   "analysis": [
+    "The scene turns the battle into a tragedy of misinformation. Worcester's suspicion is not foolish, for Henry has already broken faith once, but his silence costs thousands of lives. His decision mirrors the King's own politics of mistrust.",
+    "Hotspur's speech about the shortness of life is one of his finest. It joins his love of honour to a sense of mortality that the catechism had treated as a reason to run away."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 5.2",
+     "quote": "O no, my nephew must not know, Sir Richard,\nThe liberal and kind offer of the King.",
+     "note": "Worcester's fatal choice."
+    },
+    {
+     "ref": "1 Henry IV 5.2",
+     "quote": "O gentlemen, the time of life is short!\nTo spend that shortness basely were too long",
+     "note": "Hotspur's answer to mortality is to spend life bravely."
+    },
+    {
+     "ref": "1 Henry IV 5.2",
+     "quote": "Now, Esperance! Percy! And set on.",
+     "note": "The Percy battle-cry as the army advances."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Act V, Scene 3: Counterfeit kings",
+   "lines": "Act V, Scene 3 (the whole scene)",
+   "section": 17,
+   "summary": [
+    "Douglas meets Sir Walter Blunt, who is dressed in the King's coat, and kills him, believing that he has killed the King; he has already killed Lord Stafford in the same disguise. Hotspur tells him the truth. Falstaff finds Blunt's body and jokes about 'grinning honour'.",
+    "Hal finds Falstaff idle and asks for his sword. Falstaff offers his pistol, which turns out to be a case holding a bottle of sack, and Hal throws it at him."
+   ],
+   "analysis": [
+    "The King's practice of dressing nobles in his armour multiplies false kings across the field. Douglas's frustration makes the question of who the real king is literal, and it recalls Hal's play extempore, where kingship was a matter of costume [[kastan1986]].",
+    "Falstaff's comment on Blunt's corpse repeats the catechism in visual form: honour is a dead man's grin. The bottle in the pistol case is the tavern still refusing to take the war seriously, and Hal's anger shows that he no longer finds it funny."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 5.3",
+     "quote": "Because some tell me that thou art a king.",
+     "note": "Douglas hunts the King among his doubles."
+    },
+    {
+     "ref": "1 Henry IV 5.3",
+     "quote": "I like not such grinning honour as Sir Walter hath.",
+     "note": "Falstaff's epitaph on Blunt."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "Act V, Scene 4: Hal and Hotspur",
+   "lines": "Act V, Scene 4 (the whole scene)",
+   "section": 18,
+   "summary": [
+    "Douglas finds the real King and nearly kills him, but Hal arrives and drives the Scot away, proving his loyalty. Hotspur enters, and the two Harrys meet at last. While they fight, Douglas attacks Falstaff, who falls down as if dead. Hal kills Hotspur, whose last words are left unfinished, and speaks a generous epitaph over him, then sees Falstaff and says farewell to him too.",
+    "When Hal leaves, Falstaff gets up, justifies counterfeiting death, stabs Hotspur's body in the thigh and carries it off, claiming to have killed him. Hal agrees to support the lie."
+   ],
+   "analysis": [
+    "The single combat completes the play's design. Hal fulfils his vow and takes Hotspur's 'proud titles'; the rival doubles of 1.1 become one prince. Shakespeare invented the meeting: Holinshed reports that Hotspur was killed, no one knows by whom, and makes him much older than Hal [[bullough1962]] [[saccio1977]]. The rescue of the King draws on Samuel Daniel's poem The Civil Wars.",
+    "Falstaff's resurrection is the play's great comic reply to its heroic climax. His argument that counterfeiting dying is the 'perfect image of life' turns the theme of counterfeits on its head, and his line about discretion and valour has become proverbial. Hal's willingness to 'gild' the lie may be generosity, or a sign that he can afford to give away the credit [[greenblatt1988]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 5.4",
+     "quote": "Two stars keep not their motion in one sphere,\nNor can one England brook a double reign,\nOf Harry Percy and the Prince of Wales.",
+     "note": "Hal's challenge: the rivalry set up in 1.1 must end with one of them dead."
+    },
+    {
+     "ref": "1 Henry IV 5.4",
+     "quote": "O Harry, thou hast robb’d me of my youth!",
+     "note": "Hotspur's dying lament is for his lost honour, not his life."
+    },
+    {
+     "ref": "1 Henry IV 5.4",
+     "quote": "Ill-weaved ambition, how much art thou shrunk!",
+     "note": "Hal's epitaph begins with the image of a cloth that has shrunk."
+    },
+    {
+     "ref": "1 Henry IV 5.4",
+     "quote": "The better part of valour is discretion,",
+     "note": "Falstaff's justification for playing dead."
+    },
+    {
+     "ref": "1 Henry IV 5.4",
+     "quote": "For my part, if a lie may do thee grace,\nI’ll gild it with the happiest terms I have.",
+     "note": "Hal lets Falstaff keep the credit for Hotspur's death."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "title": "Act V, Scene 5: Victory and unfinished business",
+   "lines": "Act V, Scene 5 (the whole scene)",
+   "section": 19,
+   "summary": [
+    "The King has won. He condemns Worcester and Vernon to death for not passing on his offer. Hal asks that Douglas, who was captured after falling from a hill, be set free without ransom, and gives the honour of releasing him to his brother John.",
+    "The King divides his forces: Prince John and Westmoreland will march against Northumberland and the Archbishop, while he and Hal go to Wales to fight Glendower and Mortimer. The rebellion is broken but not ended."
+   ],
+   "analysis": [
+    "The ending is a victory and a pause. The King's first line puts the official moral, but the scene ends with more war to come, which leads directly into 2 Henry IV. Critics who see the two parts as one design point to this open ending [[hunter1954]] [[hawkins1982]].",
+    "Hal's release of Douglas is chivalrous, and his gift of the honour to his brother shows that he can now give honour away as well as win it. He is no longer the prodigal of the tavern."
+   ],
+   "key": [
+    {
+     "ref": "1 Henry IV 5.5",
+     "quote": "Thus ever did rebellion find rebuke.",
+     "note": "The King's moral on the battle."
+    },
+    {
+     "ref": "1 Henry IV 5.5",
+     "quote": "Up to his pleasure, ransomless and free.",
+     "note": "Hal's chivalrous release of Douglas."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Prince Hal (Henry, Prince of Wales)",
+   "side": "The court and the tavern",
+   "text": "The King's eldest son and heir, later Henry V. He spends his days with Falstaff, trading wit and playing jokes, but tells the audience in his first soliloquy that he will throw off these companions at the right time. At Shrewsbury he saves his father's life and kills Hotspur. Whether he is a prodigal truly reformed or a politician who planned his own reform is the play's central question about him."
+  },
+  {
+   "name": "Sir John Falstaff",
+   "side": "The tavern",
+   "text": "A fat, old, impoverished knight, Hal's companion, thief, liar and wit. He turns every accusation into a joke and every danger into a reason to run away. His speech on honour and his fake death at Shrewsbury challenge the heroic values of the court. Originally named Sir John Oldcastle."
+  },
+  {
+   "name": "Hotspur (Henry Percy)",
+   "side": "The rebels",
+   "text": "Son of the Earl of Northumberland, a brave, impetuous soldier who lives for honour. Funny, impatient and tactless, he mocks courtiers and Glendower alike and loves his wife in a rough, teasing way. He leads the rebellion and is killed by Hal at Shrewsbury."
+  },
+  {
+   "name": "King Henry IV",
+   "side": "The court",
+   "text": "Henry Bolingbroke, who deposed Richard II. Anxious, guilty and politic, he longs for a crusade, distrusts the Percys, and fears that his son is unworthy. He uses doubles in his armour at Shrewsbury."
+  },
+  {
+   "name": "Thomas Percy, Earl of Worcester",
+   "side": "The rebels",
+   "text": "Hotspur's uncle and the brains of the rebellion. He hides the King's offer of pardon from Hotspur and is executed after the battle."
+  },
+  {
+   "name": "Henry Percy, Earl of Northumberland",
+   "side": "The rebels",
+   "text": "Hotspur's father, who helped Henry to the throne. He falls sick, or claims to, and fails to join the battle."
+  },
+  {
+   "name": "Edmund Mortimer",
+   "side": "The rebels",
+   "text": "Hotspur's brother-in-law, captured by Glendower and married to his daughter. Shakespeare follows Holinshed in merging him with the Earl of March, Richard II's heir."
+  },
+  {
+   "name": "Owen Glendower",
+   "side": "The rebels",
+   "text": "The Welsh leader, proud, learned and believed to have magical powers. He quarrels with Hotspur and does not arrive at Shrewsbury in time."
+  },
+  {
+   "name": "Archibald, Earl of Douglas",
+   "side": "The rebels",
+   "text": "The Scottish warrior defeated by Hotspur and then his ally. At Shrewsbury he kills several men dressed as the King, and is released by Hal after the battle."
+  },
+  {
+   "name": "Sir Richard Vernon",
+   "side": "The rebels",
+   "text": "A rebel who describes Hal's transformation and who is executed with Worcester."
+  },
+  {
+   "name": "Lady Percy (Kate)",
+   "side": "The rebels",
+   "text": "Hotspur's wife, who fears for him and is teased by him."
+  },
+  {
+   "name": "Lady Mortimer",
+   "side": "The rebels",
+   "text": "Glendower's daughter and Mortimer's wife, who speaks and sings only in Welsh."
+  },
+  {
+   "name": "Poins",
+   "side": "The tavern",
+   "text": "Hal's companion who devises the trick at Gad's Hill."
+  },
+  {
+   "name": "Bardolph, Peto and Gadshill",
+   "side": "The tavern",
+   "text": "Falstaff's companions in robbery. Bardolph's red nose is a running joke."
+  },
+  {
+   "name": "Mistress Quickly",
+   "side": "The tavern",
+   "text": "The Hostess of the Boar's Head, to whom Falstaff owes money."
+  },
+  {
+   "name": "Sir Walter Blunt",
+   "side": "The court",
+   "text": "A loyal knight who carries the King's offer to the rebels and is killed at Shrewsbury while dressed as the King."
+  },
+  {
+   "name": "Prince John of Lancaster and the Earl of Westmoreland",
+   "side": "The court",
+   "text": "The King's younger son and a loyal nobleman, who will march against the Archbishop in Part 2."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Honour",
+   "text": [
+    "The play sets three views of honour side by side. For Hotspur it is a prize to be seized, a personal possession that he will share with no one. For Falstaff it is 'a word', 'air', a painted shield at a funeral. For Hal it is something that can be won, transferred and even given away, as he takes Hotspur's honours in 5.4 and gives his brother the honour of freeing Douglas in 5.5.",
+    "The play does not choose one view. Hotspur's honour gets him killed, Falstaff's realism leads him to fraud, and Hal's practical honour looks like the most successful but also the most calculated [[bloom1998]] [[jenkins1956]]."
+   ]
+  },
+  {
+   "title": "Reformation and redemption",
+   "text": [
+    "Hal's soliloquy promises a 'reformation' that will redeem time, and the play's language of redemption joins Christian ideas of salvation with financial ideas of paying debts. Hal's career follows the pattern of the prodigal son, and Falstaff himself invokes the parable when he describes his ragged soldiers in 4.2. The question is whether his change is a conversion or a planned performance [[greenblatt1988]] [[kris1948]]."
+   ]
+  },
+  {
+   "title": "Kingship and legitimacy",
+   "text": [
+    "Henry IV took the crown by force, and the rebels' claim is that he owes them for it. The play shows a king who rules by policy, disguise and the management of appearances, and a prince who learns the same arts. Some critics read the plays as a lesson in the Tudor doctrine of order; others see them as revealing kingship to be a kind of theatre [[tillyard1944]] [[kastan1986]]."
+   ]
+  },
+  {
+   "title": "Fathers and sons",
+   "text": [
+    "The play is full of fathers: the King, Northumberland, and Falstaff, Hal's substitute father in the tavern. The King wishes that Hotspur were his son; in the play extempore Falstaff plays the King and Hal plays his father in turn. Psychoanalytic critics have read Hal's struggle as a conflict between two fathers, the guilty king and the indulgent old knight [[kris1948]] [[auden1962]]."
+   ]
+  },
+  {
+   "title": "Counterfeits and acting",
+   "text": [
+    "The play is full of performances and fakes: the disguises at Gad's Hill, the play extempore, the King's doubles at Shrewsbury, Falstaff's fake death. Falstaff's speech in 5.4 plays on the word 'counterfeit', and Hal's whole career is a performance. The play asks what is true and false in a world where kings, too, are actors [[greenblatt1988]] [[kastan1986]]."
+   ]
+  },
+  {
+   "title": "Time",
+   "text": [
+    "From Hal's first question to Falstaff, which asks what he has to do with the time of day, to Hotspur's dying words that time itself 'must have a stop', the play keeps returning to time. The court is ruled by schedules and deadlines; the tavern lives outside them. Hal's promise to 'redeem time' makes him the master of both [[barber1959]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Robbery and debt",
+   "text": "Robbery runs through the play, from Gad's Hill to Bolingbroke's 'theft' of the crown and Hal's taking of Hotspur's honours. Debt runs with it: Falstaff owes the Hostess, the King owes the Percys, and Hal promises to pay a debt he never made."
+  },
+  {
+   "title": "Doubles",
+   "text": "The play pairs its characters: Hal and Hotspur, two Harrys; the King and Falstaff, two fathers; the court and the tavern. The King's doubles at Shrewsbury make the motif literal."
+  },
+  {
+   "title": "Prose and verse",
+   "text": "Court and rebels speak mostly blank verse, the tavern prose. Hal moves between them, and his ability to speak both is a sign of his range."
+  },
+  {
+   "title": "Sun and moon",
+   "text": "Hal compares himself to the sun hidden by clouds; Falstaff and his thieves serve the moon. Hotspur would pluck honour from the moon."
+  },
+  {
+   "title": "Play-acting",
+   "text": "Hal and Falstaff play roles in 2.4, Glendower performs his magic, and the King's knights wear his coat. Acting is the play's way of thinking about power."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "Falstaff's body",
+   "text": "Falstaff's enormous body stands for appetite, the flesh and the life the play's heroic world denies. The jokes about it are also jokes about mortality."
+  },
+  {
+   "title": "The map in 3.1",
+   "text": "The map divided into three parts stands for the kingdom torn apart by rebellion, and the quarrel over the Trent shows how the rebels' greed will undo them."
+  },
+  {
+   "title": "The King's coats",
+   "text": "The coats worn by Blunt and others make kingship a costume that any man can put on, and that may be the death of whoever wears it."
+  },
+  {
+   "title": "Sack",
+   "text": "Falstaff's sweet Spanish wine is the symbol of the tavern; Hal's discovery of the tavern bill and the bottle in the pistol case show the gap between the tavern and the battlefield."
+  },
+  {
+   "title": "The crown",
+   "text": "Though rarely seen, the crown is the play's hidden centre: Henry's guilt over winning it and Hal's right to inherit it shape every scene."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Is Falstaff a coward?",
+   "text": [
+    "Maurice Morgann's essay of 1777 argued that Falstaff is not a coward but a man of courage and sense who refuses to die for nothing, and that the audience feels this even when the plot suggests the opposite. This started the modern criticism of character in Shakespeare [[morgann1777]].",
+    "J. Dover Wilson replied that Falstaff is the Vice of the morality plays, a tempter whom Hal must reject, while A. C. Bradley regretted the rejection as a betrayal of the play's spirit of freedom [[wilson1943]] [[bradley1909]]. Harold Bloom has made Falstaff the supreme example of Shakespeare's 'invention of the human' [[bloom1998]]."
+   ],
+   "cite": [
+    "morgann1777",
+    "wilson1943",
+    "bradley1909",
+    "bloom1998"
+   ]
+  },
+  {
+   "title": "Hal's soliloquy: sincerity or policy?",
+   "text": [
+    "Older critics read 'I know you all' as Shakespeare's guarantee to his audience that the wild prince was always the hero of tradition. Later readers find it chilling, a sign that Hal uses his friends as a foil for his own glory.",
+    "Stephen Greenblatt's 'Invisible Bullets' reads the prince as a master of political theatre who exploits the tavern world while appearing to enjoy it, and argues that the play contains subversion only to strengthen authority [[greenblatt1988]]. Psychoanalytic readers see the speech as a defence against guilt toward a usurping father [[kris1948]]."
+   ],
+   "cite": [
+    "greenblatt1988",
+    "kris1948"
+   ]
+  },
+  {
+   "title": "Holinshed and the uses of history",
+   "text": [
+    "Comparing the play with Holinshed shows how Shakespeare shaped history for the stage. He made Hotspur young so that he could be Hal's rival, invented their duel, and gave the comic plot more space than any chronicle could justify [[bullough1962]] [[holinshed1587]].",
+    "Tillyard read the history plays as dramatising the 'Tudor myth' of order lost and restored; later critics have stressed Shakespeare's scepticism about providential history and his interest in how history is made by those who tell it [[tillyard1944]] [[rackin1990]] [[saccio1977]]."
+   ],
+   "cite": [
+    "bullough1962",
+    "holinshed1587",
+    "tillyard1944",
+    "rackin1990",
+    "saccio1977"
+   ]
+  },
+  {
+   "title": "Oldcastle or Falstaff?",
+   "text": [
+    "Falstaff was first called Oldcastle, and the change was forced on Shakespeare by the Cobham family. Gary Taylor argued that the play should be printed with the original name, as Shakespeare first wrote it, and the 1986 Oxford Complete Works did so [[taylor1985]] [[taylor1987]].",
+    "Others, including David Scott Kastan, argue that the play as it was printed and performed, with Falstaff, is the version that history and Shakespeare accepted, and that the change was part of the play's life in the theatre [[kastan1999]]. The rival Oldcastle play written in reply shows the stakes of the quarrel for Protestant memory [[corbin1991]]."
+   ],
+   "cite": [
+    "taylor1985",
+    "taylor1987",
+    "kastan1999",
+    "corbin1991"
+   ]
+  },
+  {
+   "title": "One play or two?",
+   "text": [
+    "Did Shakespeare plan both parts of Henry IV from the start? Harold Jenkins argued that he changed his mind midway through Part 1, which is why Hal's reformation seems almost complete at Shrewsbury and must be staged again in Part 2 [[jenkins1956]].",
+    "G. K. Hunter compared the two parts to other Elizabethan two-part plays, which repeat the same pattern rather than continue it, and Sherman Hawkins argued for a single design across both [[hunter1954]] [[hawkins1982]]."
+   ],
+   "cite": [
+    "jenkins1956",
+    "hunter1954",
+    "hawkins1982"
+   ]
+  },
+  {
+   "title": "Festive comedy and the tavern",
+   "text": [
+    "C. L. Barber read the tavern scenes as a version of holiday misrule, in which a mock king rules for a time before order returns. On this view the rejection of Falstaff is the necessary end of the festival [[barber1959]].",
+    "W. H. Auden, by contrast, saw Falstaff as a figure of love outside the world of power, whose rejection condemns that world [[auden1962]]."
+   ],
+   "cite": [
+    "barber1959",
+    "auden1962"
+   ]
+  },
+  {
+   "title": "Women, Wales and the nation",
+   "text": [
+    "Feminist critics have noted how few women appear in the history plays and how they are placed at the margins of the nation: Lady Percy in the household, Lady Mortimer in Wales and in a language the English cannot understand [[howard1997]].",
+    "Phyllis Rackin argues that the history plays define English masculine history by excluding what is foreign and feminine, and that the Welsh scene in 3.1 is a place where that exclusion becomes visible [[rackin1990]]."
+   ],
+   "cite": [
+    "howard1997",
+    "rackin1990"
+   ]
+  },
+  {
+   "title": "Authority as theatre",
+   "text": [
+    "New historicist critics see the play as a study of authority displayed. The King's lecture on keeping himself rare, his doubles at Shrewsbury and Hal's planned reform all treat power as a performance [[greenblatt1988]].",
+    "David Scott Kastan has argued that by showing kingship on stage the theatre demystifies it, making the monarch a role that actors can play [[kastan1986]]."
+   ],
+   "cite": [
+    "greenblatt1988",
+    "kastan1986"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "1 Henry IV 1.2",
+   "quote": "I know you all, and will awhile uphold\nThe unyok’d humour of your idleness.\nYet herein will I imitate the sun,",
+   "who": "Hal",
+   "explanation": "The opening of Hal's soliloquy. Alone for the first time, he announces that his idleness is a strategy and that his friends are clouds that will make his rising sun more admired."
+  },
+  {
+   "ref": "1 Henry IV 1.2",
+   "quote": "I’ll so offend, to make offence a skill,\nRedeeming time, when men think least I will.",
+   "who": "Hal",
+   "explanation": "The closing couplet makes his faults a craft and his reformation a surprise to be timed. The biblical 'redeeming the time' gives the plan a religious colour."
+  },
+  {
+   "ref": "1 Henry IV 1.3",
+   "quote": "By Heaven, methinks it were an easy leap\nTo pluck bright honour from the pale-faced moon,",
+   "who": "Hotspur",
+   "explanation": "Hotspur's honour is heroic and private, something to seize and keep without rivals. The extravagance of the image makes him both splendid and absurd."
+  },
+  {
+   "ref": "1 Henry IV 2.3",
+   "quote": "out of this nettle, danger, we pluck this flower, safety.",
+   "who": "Hotspur",
+   "explanation": "Hotspur dismisses a cautious letter: safety can only be won by facing danger. The phrase shows his courage and his refusal to calculate."
+  },
+  {
+   "ref": "1 Henry IV 2.4",
+   "quote": "Banish plump Jack, and banish all the world.",
+   "who": "Falstaff",
+   "explanation": "In the play extempore, Falstaff, playing Hal, defends himself. To banish him would be to banish life itself, and Hal's reply looks ahead to the rejection in Part 2."
+  },
+  {
+   "ref": "1 Henry IV 2.4",
+   "quote": "I do, I will.",
+   "who": "Hal",
+   "explanation": "Four words that leave the game behind. Hal speaks as the King, but the future tense belongs to the prince who will one day banish Falstaff."
+  },
+  {
+   "ref": "1 Henry IV 3.2",
+   "quote": "I will redeem all this on Percy’s head,",
+   "who": "Hal",
+   "explanation": "Hal's vow to his father. He will pay back his debt of honour by taking Hotspur's."
+  },
+  {
+   "ref": "1 Henry IV 5.1",
+   "quote": "What is honour? A word. What is in that word, “honour”? What is that “honour”? Air.",
+   "who": "Falstaff",
+   "explanation": "The catechism empties the heroic code of meaning on the eve of battle. Its question-and-answer form parodies a church lesson."
+  },
+  {
+   "ref": "1 Henry IV 5.4",
+   "quote": "Two stars keep not their motion in one sphere,\nNor can one England brook a double reign,",
+   "who": "Hal",
+   "explanation": "Hal's challenge to Hotspur: the rivalry the King set up in 1.1 must end with one Harry."
+  },
+  {
+   "ref": "1 Henry IV 5.4",
+   "quote": "The better part of valour is discretion,",
+   "who": "Falstaff",
+   "explanation": "Falstaff, risen from his fake death, defends survival. The line has become a proverb, usually quoted with the words reversed."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Is Hal's soliloquy in 1.2 sincere, calculating or both? How does it affect your view of the tavern scenes that follow?",
+   "hint": "Look at the images of sun, debt and metal, and at how Hal treats Falstaff and Francis in 2.4."
+  },
+  {
+   "q": "Compare the views of honour held by Hotspur, Falstaff and Hal.",
+   "hint": "Set 1.3 and 5.2 beside the catechism in 5.1 and Hal's epitaph in 5.4."
+  },
+  {
+   "q": "What does the play extempore in 2.4 reveal about Hal and Falstaff's relationship?",
+   "hint": "Consider who plays whom, and the change of tense in 'I do, I will'."
+  },
+  {
+   "q": "Is Falstaff a coward?",
+   "hint": "Weigh the buckram story, the catechism and his fake death against his wit and the play's view of war."
+  },
+  {
+   "q": "How does Shakespeare use the Gad's Hill robbery to comment on the political plot?",
+   "hint": "Think about Bolingbroke's taking of the crown and Hal's taking of Hotspur's honours."
+  },
+  {
+   "q": "How did Shakespeare change Holinshed, and why?",
+   "hint": "Consider Hotspur's age, the single combat and the comic plot."
+  },
+  {
+   "q": "What role do women play in this history play?",
+   "hint": "Look at Lady Percy in 2.3 and the Welsh scene in 3.1."
+  },
+  {
+   "q": "How do the rebels undermine their own cause?",
+   "hint": "Consider the map in 3.1, Northumberland's sickness, Glendower's delay and Worcester's silence in 5.2."
+  },
+  {
+   "q": "What difference does the original name 'Oldcastle' make to how we read Falstaff?",
+   "hint": "Think of the historical Oldcastle as a Protestant martyr, and the jokes about Falstaff's religious language."
+  },
+  {
+   "q": "How does the play treat counterfeits, from the disguises at Gad's Hill to the King's doubles at Shrewsbury?",
+   "hint": "Read Falstaff's speech on counterfeiting in 5.4 alongside Douglas's hunt for the real king in 5.3 and 5.4."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "auden1962",
+   "text": "Auden, W. H. \"The Prince's Dog.\" In The Dyer's Hand and Other Essays. New York: Random House, 1962."
+  },
+  {
+   "id": "barber1959",
+   "text": "Barber, C. L. Shakespeare's Festive Comedy: A Study of Dramatic Form and Its Relation to Social Custom. Princeton: Princeton University Press, 1959."
+  },
+  {
+   "id": "bevington1987",
+   "text": "Bevington, David, ed. Henry IV, Part 1. The Oxford Shakespeare. Oxford: Oxford University Press, 1987."
+  },
+  {
+   "id": "bloom1998",
+   "text": "Bloom, Harold. Shakespeare: The Invention of the Human. New York: Riverhead Books, 1998."
+  },
+  {
+   "id": "bradley1909",
+   "text": "Bradley, A. C. \"The Rejection of Falstaff.\" In Oxford Lectures on Poetry. London: Macmillan, 1909."
+  },
+  {
+   "id": "bullough1962",
+   "text": "Bullough, Geoffrey, ed. Narrative and Dramatic Sources of Shakespeare. Vol. 4, Later English History Plays. London: Routledge and Kegan Paul; New York: Columbia University Press, 1962."
+  },
+  {
+   "id": "corbin1991",
+   "text": "Corbin, Peter, and Douglas Sedge, eds. The Oldcastle Controversy: Sir John Oldcastle, Part I and The Famous Victories of Henry V. The Revels Plays Companion Library. Manchester: Manchester University Press, 1991."
+  },
+  {
+   "id": "greenblatt1988",
+   "text": "Greenblatt, Stephen. \"Invisible Bullets.\" In Shakespearean Negotiations: The Circulation of Social Energy in Renaissance England, 21–65. Berkeley: University of California Press, 1988."
+  },
+  {
+   "id": "hawkins1982",
+   "text": "Hawkins, Sherman H. \"Henry IV: The Structural Problem Revisited.\" Shakespeare Quarterly 33 (1982): 278–301."
+  },
+  {
+   "id": "holinshed1587",
+   "text": "Holinshed, Raphael. The Chronicles of England, Scotland, and Ireland. 2nd ed. London, 1587."
+  },
+  {
+   "id": "howard1997",
+   "text": "Howard, Jean E., and Phyllis Rackin. Engendering a Nation: A Feminist Account of Shakespeare's English Histories. London: Routledge, 1997."
+  },
+  {
+   "id": "hunter1954",
+   "text": "Hunter, G. K. \"Henry IV and the Elizabethan Two-Part Play.\" Review of English Studies, n.s. 5 (1954): 236–248."
+  },
+  {
+   "id": "jenkins1956",
+   "text": "Jenkins, Harold. The Structural Problem in Shakespeare's Henry the Fourth. London: Methuen, 1956."
+  },
+  {
+   "id": "kastan1986",
+   "text": "Kastan, David Scott. \"Proud Majesty Made a Subject: Shakespeare and the Spectacle of Rule.\" Shakespeare Quarterly 37 (1986): 459–475."
+  },
+  {
+   "id": "kastan1999",
+   "text": "Kastan, David Scott. \"'Killed with Hard Opinions': Oldcastle and Falstaff and the Reformed Text of 1 Henry IV.\" In Shakespeare After Theory. New York: Routledge, 1999."
+  },
+  {
+   "id": "kris1948",
+   "text": "Kris, Ernst. \"Prince Hal's Conflict.\" Psychoanalytic Quarterly 17 (1948): 487–506."
+  },
+  {
+   "id": "morgann1777",
+   "text": "Morgann, Maurice. An Essay on the Dramatic Character of Sir John Falstaff. London: T. Davies, 1777."
+  },
+  {
+   "id": "rackin1990",
+   "text": "Rackin, Phyllis. Stages of History: Shakespeare's English Chronicles. Ithaca: Cornell University Press, 1990."
+  },
+  {
+   "id": "saccio1977",
+   "text": "Saccio, Peter. Shakespeare's English Kings: History, Chronicle, and Drama. New York: Oxford University Press, 1977."
+  },
+  {
+   "id": "taylor1985",
+   "text": "Taylor, Gary. \"The Fortunes of Oldcastle.\" Shakespeare Survey 38 (1985): 85–100."
+  },
+  {
+   "id": "taylor1987",
+   "text": "Taylor, Gary. \"William Shakespeare, Richard James and the House of Cobham.\" Review of English Studies, n.s. 38 (1987): 334–354."
+  },
+  {
+   "id": "tillyard1944",
+   "text": "Tillyard, E. M. W. Shakespeare's History Plays. London: Chatto and Windus, 1944."
+  },
+  {
+   "id": "wilson1943",
+   "text": "Wilson, J. Dover. The Fortunes of Falstaff. Cambridge: Cambridge University Press, 1943."
+  }
+ ]
+}
