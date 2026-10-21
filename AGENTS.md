@@ -92,6 +92,9 @@ sections (cantos/books/fitts).
   verse work sections (headings and Arguments are not counted).
   `poem/`, `poet/`, `work/` and `404.html` are generated — never edit them by hand. Run it
   after `build_index.py` on every content change.
+  It also generates `guide/` (each guide, plus the `/guide/` hub of every guide by tradition,
+  linked from every static page's footer) and `llms.txt` (from the guides, blog and works) —
+  never edit `llms.txt` by hand; change `llms_txt()` in `build_pages.py`.
 - `tools/build_parallel.py` — regenerates `data/parallel.json` (which original faces which
   translation, line by line, for the facing-page view; §4) from `data/parallel-oe.json`.
 - `robots.txt` — allows everything and points to the sitemap. `CNAME` — `poetrycodex.com`.

@@ -14,7 +14,11 @@ Output (all regenerated; do not edit by hand):
     poet/index.html                   — /poet/: every poet, earliest first (the home footer links here)
     work/<work-slug>/index.html       — /work/iliad-butler/   (contents)
     work/<work-slug>/<i>/index.html   — /work/iliad-butler/0/ (one book, canto, part)
+    guide/<group>/index.html          — /guide/iliad/: one study guide in full (data/guides/<group>.json)
+    guide/index.html                  — /guide/: every study guide, by tradition (the footer links here)
+    blog/index.html, blog/<slug>/     — the editors' articles (data/blog/<slug>.md)
     sitemap.xml + sitemap-<n>.xml
+    llms.txt                          — the site described for AI assistants, from the guides, blog and works
     404.html                          — shown for any address that does not exist
 
 A reader who lands on one of these pages gets the poem in full, with a link
@@ -411,7 +415,7 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
   <footer class="site-foot">
     <div class="foot-bar">
       <span>© 2026 Poetry Codex. All texts are in the public domain.</span>
-      <span class="foot-privacy"><a href="/">Open the full archive</a> · <a href="/poet/">All poets, earliest first</a> · <a href="/blog/">Blog</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a></span>
+      <span class="foot-privacy"><a href="/">Open the full archive</a> · <a href="/poet/">All poets, earliest first</a> · <a href="/guide/">Study guides</a> · <a href="/blog/">Blog</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:admin@poetrycodex.com">admin@poetrycodex.com</a></span>
     </div>
   </footer>
 </body>
@@ -1078,6 +1082,7 @@ def main():
     write(os.path.join(ROOT, "work", "works.json"), works_manifest(idx.get("works") or []))
 
     guide_count = 0
+    guides = []   # (group, guide) for the /guide/ hub and llms.txt
     gdir = os.path.join(ROOT, "data", "guides")
     for f in sorted(os.listdir(gdir)) if os.path.isdir(gdir) else []:
         if f.endswith(".json"):
@@ -1085,8 +1090,12 @@ def main():
             g = json.load(io.open(os.path.join(gdir, f), encoding="utf-8"))
             write(os.path.join(ROOT, "guide", group, "index.html"), guide_page(g, group))
             urls.append(f"{SITE}/guide/{group}/")
+            guides.append((group, g))
             guide_count += 1
-    print(f"study guides: {guide_count} pages")
+    guide_sets = guide_groups(guides, idx)
+    write(os.path.join(ROOT, "guide", "index.html"), guide_hub_page(guide_sets))
+    urls.insert(2, f"{SITE}/guide/")
+    print(f"study guides: {guide_count} pages + the /guide/ hub")
     posts = blog_posts()
     if posts:
         write(os.path.join(ROOT, "blog", "index.html"), blog_index(posts))
@@ -1118,6 +1127,7 @@ def main():
     write(os.path.join(ROOT, "sitemap.xml"), NL.join(index) + NL)
     write_poet_hub(POET_ROWS)
     write(os.path.join(ROOT, "404.html"), not_found_page())
+    write_llms_txt(idx, guide_sets, posts)
     print("sitemap index: " + str(len(chunks)) + " child sitemaps")
 
     print(f"poet pages: {poet_count}")
@@ -1156,6 +1166,144 @@ def write_poet_hub(poets):
     write(os.path.join(ROOT, "poet", "index.html"), poet_hub_page(poets))
     print("poet hub page: " + str(len(poets)) + " poet links")
 
+
+# ---------- /guide/ hub and llms.txt ----------
+def category_order():
+    """CATEGORY_ORDER from app.js, so the guide hub follows the home page's order of traditions."""
+    src = io.open(os.path.join(ROOT, "app.js"), encoding="utf-8").read()
+    m = re.search(r"const CATEGORY_ORDER = \[(.*?)\];", src, re.S)
+    return re.findall(r'"([^"]+)"', m.group(1)) if m else []
+
+
+def strip_article(title):
+    return re.sub(r"^(The|A|An) ", "", title or "").lower()
+
+
+def guide_groups(guides, idx):
+    """The guides grouped by the tradition (poet category) of the work's author, in the home
+    page's order; a guide whose work cannot be found goes under "Other works" at the end."""
+    cat_of = {p["slug"]: p.get("category") for p in idx["poets"]}
+    works = idx.get("works") or []
+    sets = {}
+    for group, g in guides:
+        keys = {group, g.get("work"), g.get("quoteEdition")}
+        w = next((w for w in works if w.get("workGroup") in keys or w["slug"] in keys), None)
+        cat = (cat_of.get(w["authorSlug"]) if w else None) or "Other works"
+        sets.setdefault(cat, []).append((group, g))
+    order = category_order()
+    cats = sorted(sets, key=lambda c: (order.index(c) if c in order else len(order), c))
+    return [(c, sorted(sets[c], key=lambda gg: strip_article(gg[1].get("title")))) for c in cats]
+
+
+def guide_hub_page(guide_sets):
+    """/guide/: every study guide as a plain link, by tradition. No count of poets anywhere on it
+    (the editor's ruling of 21 Oct 2026, as for /poet/)."""
+    sections = []
+    for cat, items in guide_sets:
+        rows = "\n".join(
+            f'          <li><a href="/guide/{esc(group)}/"><span class="pl-title">{esc(g.get("title", ""))}</span>'
+            + (f'<span class="pl-sub">{esc(g["author"])}</span>' if g.get("author") else "") + "</a></li>"
+            for group, g in items)
+        sections.append(f"""      <section class="poet-poems">
+        <h2>{esc(cat)}</h2>
+        <ul class="poem-links">
+{rows}
+        </ul>
+      </section>""")
+    canonical = f"{SITE}/guide/"
+    title = "Study guides"
+    description = ("The Poetry Codex study guides to the great poems, epics and plays: summary and analysis of "
+                   "every book, characters, themes, critical debates, key passages, questions and a scholarly "
+                   "bibliography, written by the editors.")
+    body = f"""    <article class="detail guide-hub">
+      <p class="detail-subject">Reading the great works</p>
+      <h1 class="detail-title">{title}</h1>
+      <p class="page-sub">{esc(description)}</p>
+{chr(10).join(sections)}
+    </article>"""
+    ld = ld_json({"@type": "CollectionPage", "name": title, "description": description, "url": canonical,
+                  "inLanguage": "en", "isPartOf": {"@type": "WebSite", "name": "Poetry Codex", "url": SITE + "/"}},
+                 breadcrumbs((title, None)))
+    return shell(title, description, canonical, body, og_type="website", ld=ld)
+
+
+# Work types counted as prose in the "Ancient sources in prose" list of llms.txt.
+ANCIENT_PROSE_TYPES = {"History", "Biography", "Philosophical dialogue", "Oration", "Letters", "Treatise",
+                       "Philosophy", "Philosophical treatise", "Chronicle", "Philosophical essays", "Essays",
+                       "Dialogue", "Encyclopaedia", "Literary criticism", "Travel writing", "Mythography",
+                       "Character sketches", "Law code", "Wisdom literature", "Autobiography",
+                       "Philosophical memoir", "Satirical prose"}
+ANCIENT_CATS = ("Ancient Greek & Roman", "Ancient Near East")
+
+
+def llms_txt(idx, guide_sets, posts):
+    """llms.txt (https://llmstxt.org): the site described for AI assistants. Generated, so it
+    lists every guide and article and never falls behind the archive. It says no more about who
+    makes the site than the About page does, names no one, and gives no count of poets."""
+    works = idx.get("works") or []
+    cat_of = {p["slug"]: p.get("category") for p in idx["poets"]}
+    count = idx.get("count") or 0
+    held = f"over {count // 1000 * 1000:,} poems" if count >= 1000 else "thousands of poems"
+    L = ["# Poetry Codex", "",
+         f"> Poetry Codex (https://poetrycodex.com) is a free, advertisement-free reading archive of the world's "
+         f"poetry in the public domain. It holds {held} and the great epics in their classic translations, from "
+         f"Gilgamesh, Homer and the Mahabharata to the early twentieth century, with the ancient sources of "
+         f"Greece and Rome in prose and verse, and study guides and line-by-line study notes written by its "
+         f"editors. Every text is reproduced in full and is in the public domain; translations were published "
+         f"before 1931 and name their translator. The editors' guides and notes are original.",
+         "", "## What is here", "",
+         f"- Poems: {SITE}/poem/<poet>/<n>/ (one page per poem, with its source, translator and date)",
+         f"- Poets: {SITE}/poet/<poet>/ (biography and list of works); every poet, earliest first: {SITE}/poet/",
+         f"- Long works and epics, with every book or canto on its own page: {SITE}/work/<work>/",
+         f"- Study guides (summary and analysis of every book, characters, themes, critical debates, key passages, "
+         f"questions and a scholarly bibliography): {SITE}/guide/",
+         f"- Articles by the editors: {SITE}/blog/",
+         f"- Sitemap of all pages: {SITE}/sitemap.xml",
+         "", "## Study guides", "", f"All guides on one page: {SITE}/guide/"]
+    for cat, items in guide_sets:
+        L += ["", f"### {cat}", ""]
+        for group, g in items:
+            by = f" ({g['author']})" if g.get("author") else ""
+            L.append(f"- {g.get('title', '')}{by}: {SITE}/guide/{group}/")
+    if posts:
+        L += ["", "## Articles", "", f"- Notes from the Codex (the editors' blog): {SITE}/blog/"]
+        for p in posts:
+            L.append(f"- {p.get('title', '')}: {SITE}/blog/{p['slug']}/")
+
+    # The major works: one line per epic of twelve books or more (one translation stands for its
+    # group), and one line per ancient author of prose (their poet page lists all their works).
+    groups = {}
+    for w in works:
+        groups.setdefault(w.get("workGroup") or w["slug"], []).append(w)
+    epics, prose = [], {}
+    for g, ws in groups.items():
+        w = next((x for x in ws if x["slug"] == g), ws[0])
+        t = (w.get("type") or "").lower()
+        if "epic" in t and "mock" not in t and max(len(x.get("sections") or []) for x in ws) >= 12:
+            epics.append(w)
+        elif cat_of.get(w["authorSlug"]) in ANCIENT_CATS and w.get("type") in ANCIENT_PROSE_TYPES:
+            prose.setdefault(w["authorSlug"], [w["author"], []])[1].append(w["title"])
+    if epics or prose:
+        L += ["", "## Major works"]
+    if epics:
+        L += ["", "### Epics (twelve books or more)", ""]
+        for w in sorted(epics, key=lambda w: strip_article(w["title"])):
+            L.append(f"- {w['title']} ({w['author']}): {SITE}/work/{w['slug']}/")
+    if prose:
+        L += ["", "### Ancient sources in prose (history, philosophy, oratory, biography, letters)", ""]
+        for slug, (author, titles) in sorted(prose.items(), key=lambda kv: kv[1][0].lower()):
+            shown = "; ".join(titles[:4]) + ("; and others" if len(titles) > 4 else "")
+            L.append(f"- {author}: {shown}: {SITE}/poet/{slug}/")
+    L += ["", "## Citing", "",
+          "Each poem page gives its source edition and translator. To cite the editors' study guides: "
+          "\"Poetry Codex editors, '<Title>: Study Guide', Poetry Codex, <URL>, accessed <date>.\""]
+    return "\n".join(L) + "\n"
+
+
+def write_llms_txt(idx, guide_sets, posts):
+    text = llms_txt(idx, guide_sets, posts)
+    write(os.path.join(ROOT, "llms.txt"), text)
+    print("llms.txt: " + str(text.count("\n")) + " lines")
 
 if __name__ == "__main__":
     main()

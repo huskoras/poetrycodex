@@ -1,113 +1,306 @@
 # Poetry Codex
 
-> Poetry Codex (https://poetrycodex.com) is a free, advertisement-free archive of the world's poetry in the public domain, edited by an international group of academics. It holds over 100,000 poems and the great epics in their classic translations, from Gilgamesh, Homer and the Mahabharata to the modern poets, with study guides and line-by-line study notes written by its editors. Every text is in the public domain; the editors' guides and notes are original.
+> Poetry Codex (https://poetrycodex.com) is a free, advertisement-free reading archive of the world's poetry in the public domain. It holds over 115,000 poems and the great epics in their classic translations, from Gilgamesh, Homer and the Mahabharata to the early twentieth century, with the ancient sources of Greece and Rome in prose and verse, and study guides and line-by-line study notes written by its editors. Every text is reproduced in full and is in the public domain; translations were published before 1931 and name their translator. The editors' guides and notes are original.
 
 ## What is here
 
 - Poems: https://poetrycodex.com/poem/<poet>/<n>/ (one page per poem, with its source, translator and date)
-- Poets: https://poetrycodex.com/poet/<poet>/ (biography and list of works)
+- Poets: https://poetrycodex.com/poet/<poet>/ (biography and list of works); every poet, earliest first: https://poetrycodex.com/poet/
 - Long works and epics, with every book or canto on its own page: https://poetrycodex.com/work/<work>/
-- Study guides (summary and analysis of every book, characters, themes, critical debates, key passages, questions and a scholarly bibliography): https://poetrycodex.com/guide/<work>/
+- Study guides (summary and analysis of every book, characters, themes, critical debates, key passages, questions and a scholarly bibliography): https://poetrycodex.com/guide/
+- Articles by the editors: https://poetrycodex.com/blog/
 - Sitemap of all pages: https://poetrycodex.com/sitemap.xml
 
 ## Study guides
 
+All guides on one page: https://poetrycodex.com/guide/
+
+### Ancient Greek & Roman
+
 - The Aeneid (Virgil): https://poetrycodex.com/guide/aeneid/
+- Agamemnon (Aeschylus): https://poetrycodex.com/guide/agamemnon/
 - Antigone (Sophocles): https://poetrycodex.com/guide/antigone/
 - The Argonautica (Apollonius of Rhodes): https://poetrycodex.com/guide/argonautica/
-- Aurora Leigh (Elizabeth Barrett Browning): https://poetrycodex.com/guide/aurora-leigh/
-- Beowulf: https://poetrycodex.com/guide/beowulf/
-- The Bhagavad Gita (Vyasa (traditional)): https://poetrycodex.com/guide/bhagavad-gita/
-- The Buddhacarita (Aśvaghoṣa): https://poetrycodex.com/guide/buddhacarita/
-- The Bustan (The Orchard) (Sa'di of Shiraz): https://poetrycodex.com/guide/bustan/
+- The Bacchae (Euripides): https://poetrycodex.com/guide/bacchae/
+- The Georgics (Virgil): https://poetrycodex.com/guide/georgics/
+- The Iliad (Homer): https://poetrycodex.com/guide/iliad/
+- Medea (Euripides): https://poetrycodex.com/guide/medea/
+- Metamorphoses (Ovid): https://poetrycodex.com/guide/metamorphoses/
+- The Odyssey (Homer): https://poetrycodex.com/guide/odyssey/
+- Oedipus the King (Oedipus Tyrannus) (Sophocles): https://poetrycodex.com/guide/oedipus-the-king/
+- The Pharsalia (The Civil War) (Lucan): https://poetrycodex.com/guide/pharsalia/
+- Prometheus Bound (Attributed to Aeschylus): https://poetrycodex.com/guide/prometheus-bound/
+- The Thebaid (Statius): https://poetrycodex.com/guide/thebaid/
+- Theogony (Hesiod): https://poetrycodex.com/guide/theogony/
+- Works and Days (Hesiod): https://poetrycodex.com/guide/works-and-days/
+
+### Ancient Near East
+
+- The Epic of Gilgamesh (Anonymous (Babylonian); Sîn-lēqi-unninni): https://poetrycodex.com/guide/gilgamesh/
+
+### Anglo-Saxon
+
+- Beowulf (Anonymous (Old English)): https://poetrycodex.com/guide/beowulf/
+
+### Medieval
+
 - The Canterbury Tales (Geoffrey Chaucer): https://poetrycodex.com/guide/canterbury-tales/
-- Childe Harold's Pilgrimage (Lord Byron): https://poetrycodex.com/guide/childe-harold/
+- Everyman (Anonymous (Middle English)): https://poetrycodex.com/guide/everyman/
+- Pearl (Anonymous (the 'Pearl' or 'Gawain' poet)): https://poetrycodex.com/guide/pearl/
+- Piers Plowman (William Langland): https://poetrycodex.com/guide/piers-plowman/
+- The Poem of the Cid (Anonymous (Old Spanish; 'Per Abbat')): https://poetrycodex.com/guide/el-cid/
+- Sir Gawain and the Green Knight (Anonymous (the 'Pearl' or 'Gawain' poet)): https://poetrycodex.com/guide/sir-gawain/
+- Troilus and Criseyde (Geoffrey Chaucer): https://poetrycodex.com/guide/troilus-and-criseyde/
+
+### Tudor & Elizabethan
+
+- The Faerie Queene (Edmund Spenser): https://poetrycodex.com/guide/faerie-queene/
+- Hero and Leander (Christopher Marlowe and George Chapman): https://poetrycodex.com/guide/hero-and-leander-chapman/
+- King Lear (William Shakespeare): https://poetrycodex.com/guide/king-lear-shakespeare/
+- The Merchant of Venice (William Shakespeare): https://poetrycodex.com/guide/merchant-of-venice-shakespeare/
+- A Midsummer Night's Dream (William Shakespeare): https://poetrycodex.com/guide/a-midsummer-nights-dream-shakespeare/
+- Othello (William Shakespeare): https://poetrycodex.com/guide/othello-shakespeare/
+- The Shepheardes Calender (Edmund Spenser): https://poetrycodex.com/guide/shepheardes-calender/
+- The Tempest (William Shakespeare): https://poetrycodex.com/guide/tempest-shakespeare/
+- The Tragedy of Hamlet, Prince of Denmark (William Shakespeare): https://poetrycodex.com/guide/hamlet-shakespeare/
+- The Tragedy of Julius Caesar (William Shakespeare): https://poetrycodex.com/guide/julius-caesar-shakespeare/
+- The Tragedy of Macbeth (William Shakespeare): https://poetrycodex.com/guide/macbeth-shakespeare/
+- The Tragedy of Romeo and Juliet (William Shakespeare): https://poetrycodex.com/guide/romeo-and-juliet-shakespeare/
+- The Tragical History of Doctor Faustus (Christopher Marlowe): https://poetrycodex.com/guide/doctor-faustus/
+- Twelfth Night; or, What You Will (William Shakespeare): https://poetrycodex.com/guide/twelfth-night-shakespeare/
+
+### Metaphysical & Cavalier
+
 - Christ's Victorie and Triumph (Giles Fletcher the Younger): https://poetrycodex.com/guide/christs-victorie-and-triumph/
 - Comus (A Masque Presented at Ludlow Castle) (John Milton): https://poetrycodex.com/guide/comus/
 - Davideis (Abraham Cowley): https://poetrycodex.com/guide/davideis-cowley/
-- The Divine Comedy (Dante Alighieri): https://poetrycodex.com/guide/divine-comedy/
-- The Tragical History of Doctor Faustus (Christopher Marlowe): https://poetrycodex.com/guide/doctor-faustus/
-- Don Juan (Lord Byron): https://poetrycodex.com/guide/don-juan/
-- The Poem of the Cid: https://poetrycodex.com/guide/el-cid/
-- Empedocles on Etna (Matthew Arnold): https://poetrycodex.com/guide/empedocles-on-etna-arnold/
-- Endymion (John Keats): https://poetrycodex.com/guide/endymion/
-- An Essay on Man (Alexander Pope): https://poetrycodex.com/guide/essay-on-man/
-- Evangeline (Henry Wadsworth Longfellow): https://poetrycodex.com/guide/evangeline/
-- Everyman: https://poetrycodex.com/guide/everyman/
-- The Faerie Queene (Edmund Spenser): https://poetrycodex.com/guide/faerie-queene/
-- Faust, Part One (Johann Wolfgang von Goethe): https://poetrycodex.com/guide/faust-part-1/
-- The Georgics (Virgil): https://poetrycodex.com/guide/georgics/
-- The Epic of Gilgamesh: https://poetrycodex.com/guide/gilgamesh/
-- Gita Govinda (Jayadeva): https://poetrycodex.com/guide/gita-govinda/
+- The Duchess of Malfi (John Webster): https://poetrycodex.com/guide/duchess-of-malfi-webster/
 - Gondibert (Sir William Davenant): https://poetrycodex.com/guide/gondibert/
-- The Tragedy of Hamlet, Prince of Denmark (William Shakespeare): https://poetrycodex.com/guide/hamlet-shakespeare/
-- Hero and Leander (Christopher Marlowe and George Chapman): https://poetrycodex.com/guide/hero-and-leander-chapman/
 - Hudibras (Samuel Butler): https://poetrycodex.com/guide/hudibras/
-- Idylls of the King (Alfred, Lord Tennyson): https://poetrycodex.com/guide/idylls-of-the-king/
-- The Lay of Igor's Campaign: https://poetrycodex.com/guide/igor-tale/
-- The Iliad (Homer): https://poetrycodex.com/guide/iliad/
-- Jerusalem Delivered (Torquato Tasso): https://poetrycodex.com/guide/jerusalem-delivered/
-- The Kalevala (Elias Lönnrot (compiler), from Finnish and Karelian oral poetry): https://poetrycodex.com/guide/kalevala/
-- King Lear (William Shakespeare): https://poetrycodex.com/guide/king-lear-shakespeare/
-- Konrad Wallenrod (Adam Mickiewicz): https://poetrycodex.com/guide/konrad-wallenrod/
-- Köroğlu (The Adventures of Kurroglou): https://poetrycodex.com/guide/koroglu/
-- Kudrun: https://poetrycodex.com/guide/kudrun/
-- The Birth of the War-God (Kumārasambhava) (Kālidāsa): https://poetrycodex.com/guide/kumarasambhava/
-- The Lady of the Lake (Sir Walter Scott): https://poetrycodex.com/guide/lady-of-the-lake/
-- Laili and Majnun (Nizami Ganjavi): https://poetrycodex.com/guide/laili-majnun/
-- Lalla Rookh (Thomas Moore): https://poetrycodex.com/guide/lalla-rookh/
-- The Lay of the Last Minstrel (Sir Walter Scott): https://poetrycodex.com/guide/lay-of-the-last-minstrel/
-- The Lusiads (Luís Vaz de Camões): https://poetrycodex.com/guide/lusiads/
-- The Tragedy of Macbeth (William Shakespeare): https://poetrycodex.com/guide/macbeth-shakespeare/
-- The Mahabharata (Vyasa (traditional)): https://poetrycodex.com/guide/mahabharata/
-- Manfred (George Gordon, Lord Byron): https://poetrycodex.com/guide/manfred-byron/
-- Marmion (Sir Walter Scott): https://poetrycodex.com/guide/marmion/
-- The Masnavi (Masnavi-yi Ma‘navi) (Jalal al-Din Rumi): https://poetrycodex.com/guide/masnavi/
-- Maud (Alfred, Lord Tennyson): https://poetrycodex.com/guide/maud-tennyson/
-- The Cloud Messenger (Meghaduta) (Kalidasa): https://poetrycodex.com/guide/meghaduta/
-- Metamorphoses (Ovid): https://poetrycodex.com/guide/metamorphoses/
-- Nala and Damayanti (Vyasa (traditional)): https://poetrycodex.com/guide/nala-damayanti/
-- The Nibelungenlied: https://poetrycodex.com/guide/nibelungenlied/
-- Oberon (Christoph Martin Wieland): https://poetrycodex.com/guide/oberon/
-- The Odyssey (Homer): https://poetrycodex.com/guide/odyssey/
-- Oedipus the King (Oedipus Tyrannus) (Sophocles): https://poetrycodex.com/guide/oedipus-the-king/
-- Orlando Furioso (Ludovico Ariosto): https://poetrycodex.com/guide/orlando-furioso/
-- Fingal (Ossian) (James Macpherson ('Ossian')): https://poetrycodex.com/guide/ossian-fingal/
-- Othello (William Shakespeare): https://poetrycodex.com/guide/othello-shakespeare/
-- Pan Tadeusz (Adam Mickiewicz): https://poetrycodex.com/guide/pan-tadeusz/
 - Paradise Lost (John Milton): https://poetrycodex.com/guide/paradise-lost/
 - Paradise Regained (John Milton): https://poetrycodex.com/guide/paradise-regained/
-- Parzival (Wolfram von Eschenbach): https://poetrycodex.com/guide/parzival/
-- Pearl: https://poetrycodex.com/guide/pearl/
-- The Pharsalia (The Civil War) (Lucan): https://poetrycodex.com/guide/pharsalia/
-- Piers Plowman (William Langland): https://poetrycodex.com/guide/piers-plowman/
-- The Poetic Edda: https://poetrycodex.com/guide/poetic-edda/
-- Prometheus Unbound (Percy Bysshe Shelley): https://poetrycodex.com/guide/prometheus-unbound-shelley/
-- The Raghuvaṃśa (Kālidāsa): https://poetrycodex.com/guide/raghuvamsa/
-- The Ramayana (Valmiki): https://poetrycodex.com/guide/ramayana/
-- The Rape of the Lock (Alexander Pope): https://poetrycodex.com/guide/rape-of-the-lock/
 - Samson Agonistes (John Milton): https://poetrycodex.com/guide/samson-agonistes/
-- The Divine Weeks (La Sepmaine) (Guillaume de Salluste Du Bartas): https://poetrycodex.com/guide/sepmaine/
-- The Shahnameh (Book of Kings) (Ferdowsi): https://poetrycodex.com/guide/shahnameh/
-- Shakuntala (Abhijnanashakuntalam) (Kalidasa): https://poetrycodex.com/guide/shakuntala/
-- The Shepheardes Calender (Edmund Spenser): https://poetrycodex.com/guide/shepheardes-calender/
-- Sir Gawain and the Green Knight: https://poetrycodex.com/guide/sir-gawain/
-- The Song of Hiawatha (Henry Wadsworth Longfellow): https://poetrycodex.com/guide/song-of-hiawatha/
-- The Song of Roland: https://poetrycodex.com/guide/song-of-roland/
-- Sordello (Robert Browning): https://poetrycodex.com/guide/sordello/
-- The Táin (Táin Bó Cúailnge): https://poetrycodex.com/guide/tain/
-- The Prelude (William Wordsworth): https://poetrycodex.com/guide/the-prelude/
-- The Ring and the Book (Robert Browning): https://poetrycodex.com/guide/the-ring-and-the-book/
+- Volpone; or, The Fox (Ben Jonson): https://poetrycodex.com/guide/volpone-jonson/
+
+### Restoration & Augustan
+
+- An Essay on Man (Alexander Pope): https://poetrycodex.com/guide/essay-on-man/
+- Fingal (Ossian) (James Macpherson ('Ossian')): https://poetrycodex.com/guide/ossian-fingal/
+- The Rape of the Lock (Alexander Pope): https://poetrycodex.com/guide/rape-of-the-lock/
 - The Seasons (James Thomson): https://poetrycodex.com/guide/the-seasons-thomson/
 - The Task (William Cowper): https://poetrycodex.com/guide/the-task/
-- The Thebaid (Statius): https://poetrycodex.com/guide/thebaid/
-- Theogony (Hesiod): https://poetrycodex.com/guide/theogony/
-- Troilus and Criseyde (Geoffrey Chaucer): https://poetrycodex.com/guide/troilus-and-criseyde/
-- Works and Days (Hesiod): https://poetrycodex.com/guide/works-and-days/
+
+### Romantic
+
+- Childe Harold's Pilgrimage (Lord Byron): https://poetrycodex.com/guide/childe-harold/
+- Don Juan (Lord Byron): https://poetrycodex.com/guide/don-juan/
+- Endymion (John Keats): https://poetrycodex.com/guide/endymion/
+- The Lady of the Lake (Sir Walter Scott): https://poetrycodex.com/guide/lady-of-the-lake/
+- Lalla Rookh (Thomas Moore): https://poetrycodex.com/guide/lalla-rookh/
+- The Lay of the Last Minstrel (Sir Walter Scott): https://poetrycodex.com/guide/lay-of-the-last-minstrel/
+- Manfred (George Gordon, Lord Byron): https://poetrycodex.com/guide/manfred-byron/
+- Marmion (Sir Walter Scott): https://poetrycodex.com/guide/marmion/
+- The Prelude (William Wordsworth): https://poetrycodex.com/guide/the-prelude/
+- Prometheus Unbound (Percy Bysshe Shelley): https://poetrycodex.com/guide/prometheus-unbound-shelley/
+
+### Victorian
+
+- Aurora Leigh (Elizabeth Barrett Browning): https://poetrycodex.com/guide/aurora-leigh/
+- Empedocles on Etna (Matthew Arnold): https://poetrycodex.com/guide/empedocles-on-etna-arnold/
+- Idylls of the King (Alfred, Lord Tennyson): https://poetrycodex.com/guide/idylls-of-the-king/
+- Maud (Alfred, Lord Tennyson): https://poetrycodex.com/guide/maud-tennyson/
+- The Ring and the Book (Robert Browning): https://poetrycodex.com/guide/the-ring-and-the-book/
+- Sordello (Robert Browning): https://poetrycodex.com/guide/sordello/
+
+### American
+
+- Evangeline (Henry Wadsworth Longfellow): https://poetrycodex.com/guide/evangeline/
+- The Song of Hiawatha (Henry Wadsworth Longfellow): https://poetrycodex.com/guide/song-of-hiawatha/
+
+### Turkish & Ottoman
+
+- Köroğlu (The Adventures of Kurroglou) (Anonymous (Turkic oral tradition)): https://poetrycodex.com/guide/koroglu/
+
+### Arabic & Persian
+
+- The Bustan (The Orchard) (Sa'di of Shiraz): https://poetrycodex.com/guide/bustan/
+- Laili and Majnun (Nizami Ganjavi): https://poetrycodex.com/guide/laili-majnun/
+- The Masnavi (Masnavi-yi Ma‘navi) (Jalal al-Din Rumi): https://poetrycodex.com/guide/masnavi/
+- The Shahnameh (Book of Kings) (Ferdowsi): https://poetrycodex.com/guide/shahnameh/
+
+### Indian
+
+- The Bhagavad Gita (Vyasa (traditional)): https://poetrycodex.com/guide/bhagavad-gita/
+- The Birth of the War-God (Kumārasambhava) (Kālidāsa): https://poetrycodex.com/guide/kumarasambhava/
+- The Buddhacarita (Aśvaghoṣa): https://poetrycodex.com/guide/buddhacarita/
+- The Cloud Messenger (Meghaduta) (Kalidasa): https://poetrycodex.com/guide/meghaduta/
+- Gita Govinda (Jayadeva): https://poetrycodex.com/guide/gita-govinda/
+- The Mahabharata (Vyasa (traditional)): https://poetrycodex.com/guide/mahabharata/
+- Nala and Damayanti (Vyasa (traditional)): https://poetrycodex.com/guide/nala-damayanti/
+- The Raghuvaṃśa (Kālidāsa): https://poetrycodex.com/guide/raghuvamsa/
+- The Ramayana (Valmiki): https://poetrycodex.com/guide/ramayana/
+- Shakuntala (Abhijnanashakuntalam) (Kalidasa): https://poetrycodex.com/guide/shakuntala/
+
+### Italian
+
+- The Divine Comedy (Dante Alighieri): https://poetrycodex.com/guide/divine-comedy/
+- Jerusalem Delivered (Torquato Tasso): https://poetrycodex.com/guide/jerusalem-delivered/
+- Orlando Furioso (Ludovico Ariosto): https://poetrycodex.com/guide/orlando-furioso/
+
+### French
+
+- The Divine Weeks (La Sepmaine) (Guillaume de Salluste Du Bartas): https://poetrycodex.com/guide/sepmaine/
+- The Song of Roland (Anonymous (Old French; 'Turoldus')): https://poetrycodex.com/guide/song-of-roland/
+
+### Nordic
+
+- The Kalevala (Elias Lönnrot (compiler), from Finnish and Karelian oral poetry): https://poetrycodex.com/guide/kalevala/
+- The Poetic Edda (Anonymous (Old Norse)): https://poetrycodex.com/guide/poetic-edda/
+
+### German
+
+- Faust, Part One (Johann Wolfgang von Goethe): https://poetrycodex.com/guide/faust-part-1/
+- Kudrun (Anonymous (Middle High German)): https://poetrycodex.com/guide/kudrun/
+- The Nibelungenlied (Anonymous (Middle High German)): https://poetrycodex.com/guide/nibelungenlied/
+- Oberon (Christoph Martin Wieland): https://poetrycodex.com/guide/oberon/
+- Parzival (Wolfram von Eschenbach): https://poetrycodex.com/guide/parzival/
+
+### Spanish & Portuguese
+
+- The Lusiads (Luís Vaz de Camões): https://poetrycodex.com/guide/lusiads/
+
+### Celtic
+
+- The Táin (Táin Bó Cúailnge) (Anonymous (Old and Middle Irish)): https://poetrycodex.com/guide/tain/
+
+### Russian & Slavic
+
+- Konrad Wallenrod (Adam Mickiewicz): https://poetrycodex.com/guide/konrad-wallenrod/
+- The Lay of Igor's Campaign (Anonymous (Old East Slavic)): https://poetrycodex.com/guide/igor-tale/
+- Pan Tadeusz (Adam Mickiewicz): https://poetrycodex.com/guide/pan-tadeusz/
 
 ## Articles
 
 - Notes from the Codex (the editors' blog): https://poetrycodex.com/blog/
+- The World's Great Epics: A Reading List: https://poetrycodex.com/blog/great-epics-reading-list/
+- How to Read Paradise Lost: A Beginner's Guide: https://poetrycodex.com/blog/how-to-read-paradise-lost/
+- Ten Turkish Poems Every Reader Should Know: https://poetrycodex.com/blog/ten-turkish-poems/
+- What Is an Epic? From Gilgamesh to Gondibert: https://poetrycodex.com/blog/what-is-an-epic/
+- Where to Begin with Classical Indian Poetry: https://poetrycodex.com/blog/where-to-begin-indian-poetry/
+- Which Translation of Dante's Divine Comedy Should You Read?: https://poetrycodex.com/blog/which-dante-translation/
+- Which Translation of the Iliad Should You Read?: https://poetrycodex.com/blog/which-iliad-translation/
+- Which Translation of the Odyssey Should You Read?: https://poetrycodex.com/blog/which-odyssey-translation/
+
+## Major works
+
+### Epics (twelve books or more)
+
+- The Adventures of Kurroglou (Köroğlu): https://poetrycodex.com/work/adventures-of-kurroglou-chodzko/
+- The Aeneid (Virgil): https://poetrycodex.com/work/aeneid-conington/
+- Albion's England (William Warner): https://poetrycodex.com/work/albions-england/
+- The Apostle (Sándor Petőfi): https://poetrycodex.com/work/the-apostle-loew/
+- The Athenaid (Richard Glover): https://poetrycodex.com/work/glover-athenaid/
+- Beowulf (Beowulf Poet): https://poetrycodex.com/work/beowulf/
+- The Bruce (John Barbour): https://poetrycodex.com/work/bruce-barbour/
+- The Buddha-karita (Asvaghosha): https://poetrycodex.com/work/buddhacarita-cowell/
+- Childe John (Sándor Petőfi): https://poetrycodex.com/work/childe-john-loew/
+- The Curse of Kehama (Robert Southey): https://poetrycodex.com/work/curse-of-kehama/
+- The Dawn in Britain (Charles M. Doughty): https://poetrycodex.com/work/dawn-in-britain/
+- The Divine Comedy (Dante Alighieri): https://poetrycodex.com/work/divine-comedy-cary/
+- The Divine Weeks (Guillaume de Salluste Du Bartas): https://poetrycodex.com/work/divine-weeks-sylvester/
+- Don Juan (Lord Byron): https://poetrycodex.com/work/don-juan/
+- The Dynasts: Part First (Thomas Hardy): https://poetrycodex.com/work/dynasts-part-1-hardy/
+- Elene (Cynewulf): https://poetrycodex.com/work/elene/
+- The Epic Songs of Russia (Anonymous (Russian Byliny)): https://poetrycodex.com/work/epic-songs-of-russia-hapgood/
+- The Faerie Queene (Edmund Spenser): https://poetrycodex.com/work/faerie-queene/
+- The Fall of Troy (Quintus Smyrnaeus): https://poetrycodex.com/work/fall-of-troy-way/
+- Fridthjof's Saga (Esaias Tegnér): https://poetrycodex.com/work/fridthjofs-saga-holcomb/
+- Genesis (Anonymous (Old English)): https://poetrycodex.com/work/genesis/
+- The Gods of the North (Adam Oehlenschläger): https://poetrycodex.com/work/gods-of-the-north-frye/
+- Gudrun (Anonymous (Middle High German)): https://poetrycodex.com/work/gudrun-nichols/
+- Idylls of the King (Alfred, Lord Tennyson): https://poetrycodex.com/work/idylls-of-the-king/
+- The Iliad (Homer): https://poetrycodex.com/work/iliad-buckley/
+- Jerusalem Delivered (Torquato Tasso): https://poetrycodex.com/work/jerusalem-delivered-fairfax/
+- The Kalevala (Elias Lönnrot): https://poetrycodex.com/work/kalevala-crawford/
+- King Arthur (Edward Bulwer Lytton): https://poetrycodex.com/work/king-arthur-lytton/
+- Madoc (Robert Southey): https://poetrycodex.com/work/madoc/
+- Maha-bharata (Vyasa): https://poetrycodex.com/work/mahabharata-dutt/
+- The Man in the Panther's Skin (Shota Rustaveli): https://poetrycodex.com/work/man-in-the-panthers-skin-wardrop/
+- Master Thaddeus; or, The Last Foray in Lithuania (Adam Mickiewicz): https://poetrycodex.com/work/pan-tadeusz-biggs/
+- Metamorphoses (Ovid): https://poetrycodex.com/work/metamorphoses/
+- Mirèio (Frédéric Mistral): https://poetrycodex.com/work/mireio-preston/
+- Nala and Damayanti (Vyasa): https://poetrycodex.com/work/nala-damayanti-milman/
+- The Nibelungenlied (Anonymous (Middle High German)): https://poetrycodex.com/work/nibelungenlied-lettsom/
+- Oberon (Christoph Martin Wieland): https://poetrycodex.com/work/oberon-sotheby/
+- The Odyssey (Homer): https://poetrycodex.com/work/odyssey-butcher-lang/
+- An Old Babylonian Version of the Gilgamesh Epic (Anonymous Babylonian Poets): https://poetrycodex.com/work/gilgamesh-jastrow-clay/
+- Orlando Furioso in English Heroical Verse (Ludovico Ariosto): https://poetrycodex.com/work/orlando-furioso-harington/
+- Paradise Lost (John Milton): https://poetrycodex.com/work/paradise-lost/
+- Parzival: A Knightly Epic (Wolfram von Eschenbach): https://poetrycodex.com/work/parzival-weston/
+- Pharonnida (William Chamberlayne): https://poetrycodex.com/work/pharonnida/
+- Poly-Olbion (Michael Drayton): https://poetrycodex.com/work/poly-olbion/
+- Punica (Silius Italicus): https://poetrycodex.com/work/punica-ross/
+- The Raghuvamsa (The Story of Raghu's Line) (Kalidasa): https://poetrycodex.com/work/raghuvamsa-johnstone/
+- The Ramayana (Valmiki): https://poetrycodex.com/work/ramayana-dutt/
+- The Shahnama of Firdausi (Firdausi): https://poetrycodex.com/work/shahnama-warner/
+- The Song of Hiawatha (Henry Wadsworth Longfellow): https://poetrycodex.com/work/song-of-hiawatha/
+- The Song of Roland (Anonymous (Old French)): https://poetrycodex.com/work/song-of-roland-moncrieff/
+- The Story of Sigurd the Volsung and the Fall of the Niblungs (William Morris): https://poetrycodex.com/work/sigurd-the-volsung/
+- The Tale of the Armament of Igor (Anonymous (The Lay of Igor's Campaign)): https://poetrycodex.com/work/lay-of-igor-magnus/
+- Thebaid (Statius): https://poetrycodex.com/work/thebaid-mozley/
+- The Táin (Anonymous (Old Irish)): https://poetrycodex.com/work/tain-hutton/
+- Who Can Be Happy and Free in Russia? (Nikolay Nekrasov): https://poetrycodex.com/work/who-can-be-happy-and-free-in-russia-soskice/
+
+### Ancient sources in prose (history, philosophy, oratory, biography, letters)
+
+- Aeschines the Orator: The Speeches of Aeschines: https://poetrycodex.com/poet/aeschines-orator/
+- Ammianus Marcellinus: The Roman History: https://poetrycodex.com/poet/ammianus-marcellinus/
+- Apollodorus: The Library and Epitome: https://poetrycodex.com/poet/apollodorus/
+- Appian of Alexandria: The Roman History: The Civil Wars; The Roman History: Preface and Foreign Wars: https://poetrycodex.com/poet/appian/
+- Aristotle: The Athenian Constitution; Categories; On the Soul (De Anima); Metaphysics; and others: https://poetrycodex.com/poet/aristotle/
+- Arrian: The Anabasis of Alexander: https://poetrycodex.com/poet/arrian/
+- Athenaeus: The Deipnosophists, Volume I: Books 1–5: https://poetrycodex.com/poet/athenaeus/
+- Augustine of Hippo: Select Letters: https://poetrycodex.com/poet/augustine/
+- Cassius Dio: Dio's Rome, Volume 1: Epitome of Books 1–21: https://poetrycodex.com/poet/cassius-dio/
+- Cicero: On the Ends of Good and Evil (De Finibus); On Duties (De Officiis); On the Orator (De Oratore); The Letters of Cicero, Volume I; and others: https://poetrycodex.com/poet/cicero/
+- Clement of Rome: The First Epistle of Clement to the Corinthians; The Second Epistle of Clement to the Corinthians: https://poetrycodex.com/poet/clement-of-rome/
+- Cornelius Nepos: Lives of Eminent Commanders: https://poetrycodex.com/poet/cornelius-nepos/
+- Demosthenes: On the Chersonese (Or. VIII): https://poetrycodex.com/poet/demosthenes/
+- Diodorus Siculus: The Historical Library: https://poetrycodex.com/poet/diodorus-siculus/
+- Diogenes Laertius: Lives of Eminent Philosophers: https://poetrycodex.com/poet/diogenes-laertius/
+- Epictetus: The Works of Epictetus: Discourses, Enchiridion and Fragments: https://poetrycodex.com/poet/epictetus/
+- Flavius Josephus: Against Apion; The Antiquities of the Jews; The Wars of the Jews; or, The History of the Destruction of Jerusalem; The Life of Flavius Josephus: https://poetrycodex.com/poet/josephus/
+- Hammurabi: The Code of Hammurabi: https://poetrycodex.com/poet/hammurabi/
+- Herodotus: The Histories: https://poetrycodex.com/poet/herodotus/
+- Ignatius of Antioch: Epistles: https://poetrycodex.com/poet/ignatius-of-antioch/
+- Isaeus: Speeches: https://poetrycodex.com/poet/isaeus/
+- Isocrates: Discourses, Volume I: https://poetrycodex.com/poet/isocrates/
+- Julius Caesar: The Civil War; The Gallic War: https://poetrycodex.com/poet/julius-caesar/
+- Livy: The History of Rome, Books XXVII–XXXVI: https://poetrycodex.com/poet/livy/
+- Longinus: On the Sublime: https://poetrycodex.com/poet/longinus/
+- Lucius Annaeus Seneca: Moral Letters to Lucilius, Volume I (Letters 1–65); Minor Dialogues; On Benefits: https://poetrycodex.com/poet/seneca/
+- Lysias: Speeches: https://poetrycodex.com/poet/lysias/
+- Marcus Aurelius: Meditations: https://poetrycodex.com/poet/marcus-aurelius/
+- Pausanias: Description of Greece, vol. 1 (Books I-VI): https://poetrycodex.com/poet/pausanias/
+- Plato: Apology; Charmides; Cratylus; Critias; and others: https://poetrycodex.com/poet/plato/
+- Pliny the Elder: The Natural History: https://poetrycodex.com/poet/pliny-elder/
+- Pliny the Younger: Letters: https://poetrycodex.com/poet/pliny-younger/
+- Plotinus: The First Ennead: https://poetrycodex.com/poet/plotinus/
+- Plutarch: Parallel Lives: Demetrius and Antony; Parallel Lives, Part I; Essays and Miscellanies (Moralia), Volume I: https://poetrycodex.com/poet/plutarch/
+- Polybius: The Histories, Books I–IX: https://poetrycodex.com/poet/polybius/
+- Polycarp of Smyrna: The Epistle of Polycarp to the Philippians: https://poetrycodex.com/poet/polycarp/
+- Ptah-hotep: The Instruction of Ptah-hotep and the Instruction of Ke'gemni: https://poetrycodex.com/poet/ptahhotep/
+- Quintilian: The Institutio Oratoria: https://poetrycodex.com/poet/quintilian/
+- Quintus Curtius Rufus: The History of the Wars of Alexander: https://poetrycodex.com/poet/curtius-rufus/
+- Sallust: The Conspiracy of Catiline; The Jugurthine War: https://poetrycodex.com/poet/sallust/
+- Scriptores Historiae Augustae: Aelius: https://poetrycodex.com/poet/historia-augusta/
+- Suetonius: The Lives of the Twelve Caesars: https://poetrycodex.com/poet/suetonius/
+- Tacitus: The Life and Death of Julius Agricola; The Annals; A Dialogue on Oratory; Germania; and others: https://poetrycodex.com/poet/tacitus/
+- The Apostolic Fathers: The Epistle to Diognetus: https://poetrycodex.com/poet/apostolic-fathers/
+- Theophrastus: The Characters: https://poetrycodex.com/poet/theophrastus/
+- Thucydides the Historian: The History of the Grecian War: https://poetrycodex.com/poet/thucydides/
+- Vitruvius: The Ten Books on Architecture: https://poetrycodex.com/poet/vitruvius/
+- Xenophon: Anabasis; The Apology; Cyropaedia: The Education of Cyrus; The Economist; and others: https://poetrycodex.com/poet/xenophon/
 
 ## Citing
 

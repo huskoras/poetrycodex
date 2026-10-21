@@ -53,7 +53,7 @@ def rclone_env():
                     "RCLONE_CONFIG_R2_ENDPOINT": f"https://{ACCOUNT_ID}.r2.cloudflarestorage.com",
                     "RCLONE_CONFIG_R2_ACL": "private", "RCLONE_CONFIG_R2_NO_CHECK_BUCKET": "true"})
     return env
-TOP_FILES = {"index.html", "404.html", "app.js", "styles.css", "robots.txt", "site.webmanifest", "sw.js"}
+TOP_FILES = {"index.html", "404.html", "llms.txt", "app.js", "styles.css", "robots.txt", "site.webmanifest", "sw.js"}
 TOP_EXT = (".png", ".webp", ".ico", ".jpg", ".svg")
 DIRS = ("data/", "fonts/", "poem/", "poet/", "work/", "guide/", "blog/", "poets/", "eras/", ".well-known/", "privacy/", "terms/")
 
