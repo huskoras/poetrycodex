@@ -1,0 +1,31 @@
+{
+ "slug": "wang-kuan",
+ "name": "Wang Kuan",
+ "dates": "1035–1100",
+ "era": "Song dynasty",
+ "category": "Chinese & Japanese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Wang Kuan (王觀; Wang Guan; 1035–1100) was a writer of ci, the Chinese song lyrics composed to set tunes, in the Song dynasty.",
+  "The single ci here is from the chinese-poetry dataset of Zhu Zumou's 1924 anthology Three Hundred Song Lyrics (宋词三百首), in simplified characters, with the tune name as title."
+ ],
+ "order": 69.961,
+ "language": "Classical Chinese",
+ "poems": [
+  {
+   "id": "wang-kuan/0",
+   "title": "生查子 (Sheng cha zi)",
+   "authorSlug": "wang-kuan",
+   "author": "Wang Kuan",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "宋詞三百首 (Three Hundred Song Lyrics)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "关山魂梦长，塞雁音书少。\n两鬓可怜青，一夜相思老。\n归傍碧纱窗，说与人人道。\n真个别离难，不似相逢好。"
+  }
+ ]
+}

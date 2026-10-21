@@ -1,0 +1,45 @@
+{
+ "slug": "sun-ti",
+ "name": "Sun Ti",
+ "dates": "696–761",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "language": "Classical Chinese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Sun Ti (孫逖, 696–761) was a T’ang poet.",
+  "The poems here are from the Qianjiashi (千家詩, Poems of a Thousand Poets), the Song-Ming schoolroom anthology of Tang and Song verse attributed to Xie Fangde and Wang Xiang, taken from the chinese-poetry dataset (MIT); the original characters are given as printed there."
+ ],
+ "order": 63.0145,
+ "poems": [
+  {
+   "id": "sun-ti/0",
+   "title": "觀永樂公主入番 (Guan yong le gong zhu ru fan)",
+   "authorSlug": "sun-ti",
+   "author": "Sun Ti",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "邊地鶯花少，年來未覺新。\n美人天上落，龍塞始應春。"
+  },
+  {
+   "id": "sun-ti/1",
+   "title": "宿雲門寺閣 (Su yun men si ge)",
+   "authorSlug": "sun-ti",
+   "author": "Sun Ti",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "香閣東山下，煙花象外幽。\n懸燈千嶂夕，卷幔五湖秋。\n畫壁餘鴻雁，紗窗宿鬥牛。\n更疑天路近，夢與白雲遊。"
+  }
+ ]
+}

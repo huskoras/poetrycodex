@@ -1,0 +1,31 @@
+{
+ "slug": "liu-han",
+ "name": "Liu Han",
+ "dates": "Sung dynasty",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "language": "Classical Chinese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Liu Han (劉翰) was a Sung poet; the sources give no dates.",
+  "The poems here are from the Qianjiashi (千家詩, Poems of a Thousand Poets), the Song-Ming schoolroom anthology of Tang and Song verse attributed to Xie Fangde and Wang Xiang, taken from the chinese-poetry dataset (MIT); the original characters are given as printed there."
+ ],
+ "order": 75.88905,
+ "poems": [
+  {
+   "id": "liu-han/0",
+   "title": "立秋 (Li qiu)",
+   "authorSlug": "liu-han",
+   "author": "Liu Han",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "乳鴉啼散玉屏空，一枕新涼一扇風。\n睡起秋聲無覓處，滿階梧葉月明中。"
+  }
+ ]
+}

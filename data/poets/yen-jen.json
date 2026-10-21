@@ -1,0 +1,31 @@
+{
+ "slug": "yen-jen",
+ "name": "Yen Jen",
+ "dates": "Southern Sung dynasty",
+ "era": "Song dynasty",
+ "category": "Chinese & Japanese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Yen Jen (嚴仁; Yan Ren; Southern Sung dynasty) was a writer of ci, the Chinese song lyrics composed to set tunes, in the Song dynasty.",
+  "The single ci here is from the chinese-poetry dataset of Zhu Zumou's 1924 anthology Three Hundred Song Lyrics (宋词三百首), in simplified characters, with the tune name as title."
+ ],
+ "order": 77.985212,
+ "language": "Classical Chinese",
+ "poems": [
+  {
+   "id": "yen-jen/0",
+   "title": "玉楼春 (Yu lou chun)",
+   "authorSlug": "yen-jen",
+   "author": "Yen Jen",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "宋詞三百首 (Three Hundred Song Lyrics)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "春风只在园西畔。\n荠菜花繁胡蝶乱。\n冰池晴绿照还空，香径落红吹已断。\n意长翻恨游丝短。\n尽日相思罗带缓。\n宝奁明月不欺人，明日归来君试看。"
+  }
+ ]
+}

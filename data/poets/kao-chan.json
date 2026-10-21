@@ -1,0 +1,31 @@
+{
+ "slug": "kao-chan",
+ "name": "Kao Ch’an",
+ "dates": "T’ang dynasty",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "language": "Classical Chinese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Kao Ch’an (高蟾) was a T’ang poet; the sources give no dates.",
+  "The poems here are from the Qianjiashi (千家詩, Poems of a Thousand Poets), the Song-Ming schoolroom anthology of Tang and Song verse attributed to Xie Fangde and Wang Xiang, taken from the chinese-poetry dataset (MIT); the original characters are given as printed there."
+ ],
+ "order": 63.37667,
+ "poems": [
+  {
+   "id": "kao-chan/0",
+   "title": "上高侍郎 (Shang gao shi lang)",
+   "authorSlug": "kao-chan",
+   "author": "Kao Ch’an",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "天上碧桃和露種，日邊紅杏倚雲栽。\n芙蓉生在秋江上，不向東風怨未開。"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "slug": "lin-chen",
+ "name": "Lin Chen",
+ "dates": "Sung dynasty",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "language": "Classical Chinese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Lin Chen (林稹) was a Sung poet; the sources give no dates.",
+  "The poems here are from the Qianjiashi (千家詩, Poems of a Thousand Poets), the Song-Ming schoolroom anthology of Tang and Song verse attributed to Xie Fangde and Wang Xiang, taken from the chinese-poetry dataset (MIT); the original characters are given as printed there."
+ ],
+ "order": 75.88907,
+ "poems": [
+  {
+   "id": "lin-chen/0",
+   "title": "冷泉亭 (Leng quan ting)",
+   "authorSlug": "lin-chen",
+   "author": "Lin Chen",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "一泓清可沁詩脾，冷暖年來只自知。\n流出西湖載歌舞，回頭不似在山時。"
+  }
+ ]
+}

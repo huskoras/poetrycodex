@@ -1,0 +1,31 @@
+{
+ "slug": "li-ang",
+ "name": "Li Ang",
+ "dates": "T’ang dynasty",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "language": "Classical Chinese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Li Ang (李昂) was a T’ang poet; the sources give no dates.",
+  "The poems here are from the Qianjiashi (千家詩, Poems of a Thousand Poets), the Song-Ming schoolroom anthology of Tang and Song verse attributed to Xie Fangde and Wang Xiang, taken from the chinese-poetry dataset (MIT); the original characters are given as printed there."
+ ],
+ "order": 63.25822,
+ "poems": [
+  {
+   "id": "li-ang/0",
+   "title": "宮中題 (Gong zhong ti)",
+   "authorSlug": "li-ang",
+   "author": "Li Ang",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "輦路生秋草，上林花滿枝。\n憑高何限意，無復侍臣知。"
+  }
+ ]
+}

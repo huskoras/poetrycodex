@@ -1,0 +1,31 @@
+{
+ "slug": "lei-chen",
+ "name": "Lei Chen",
+ "dates": "Sung dynasty",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "language": "Classical Chinese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Lei Chen (雷震) was a Sung poet; the sources give no dates.",
+  "The poems here are from the Qianjiashi (千家詩, Poems of a Thousand Poets), the Song-Ming schoolroom anthology of Tang and Song verse attributed to Xie Fangde and Wang Xiang, taken from the chinese-poetry dataset (MIT); the original characters are given as printed there."
+ ],
+ "order": 75.88904,
+ "poems": [
+  {
+   "id": "lei-chen/0",
+   "title": "村晚 (Cun wan)",
+   "authorSlug": "lei-chen",
+   "author": "Lei Chen",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "草滿池塘水滿陂，山銜落日浸寒漪。\n牧童歸去橫牛背，短笛無腔信口吹。"
+  }
+ ]
+}

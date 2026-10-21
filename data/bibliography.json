@@ -71601,5 +71601,1499 @@
   },
   "confidence": "probable",
   "note": "Solomon and Saturn (Old English; the poetic dialogues, Cambridge, Corpus Christi College MS 422 and MS 41), ASPR VI (The Anglo-Saxon Minor Poems). The site's text was matched against the sacred-texts page a13.htm: 15 of 15 sampled line pairs (3 from each of the 5 sections) were found. The digital text is the hand-keyed e-text 'The Complete Corpus of Anglo-Saxon Poetry' on sacred-texts.com (credited in the language-resource catalogue record to Greg Hidley and O. D. Macrae-Gibson, per the project's scouting file); it reproduces the ASPR text, and Krapp's and Dobbie's introductions, apparatus and notes are not reproduced on the site. The live sacred-texts.com site refuses scripted fetches, so the page was read through the Internet Archive Wayback copy of 2020. The title page of the printed volume was not seen: the imprint and year are those of the library catalogue records (New York: Columbia University Press; a London issue by Routledge and Kegan Paul is also catalogued) and of the ASPR volume list, hence 'probable'."
+ },
+ {
+  "gid": 10318,
+  "match": {
+   "poets": [
+    "omar-khayyam"
+   ],
+   "collection": "رباعیات خیام (Ruba'iyat of Khayyam)"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Omar Khayyam",
+  "translator": "",
+  "title": "Ruba'iyat (the 178 quatrains of the Ganjoor core set)",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "Ganjoor",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "Ganjoor (ganjoor.net)",
+   "id": "khayyam/robaee",
+   "url": "https://ganjoor.net/khayyam/robaee"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Ganjoor (ganjoor.net)",
+  "url": "https://ganjoor.net/khayyam/robaee",
+  "note": "Persian text of the 178 quatrains of the Ganjoor /khayyam/robaee set, read from the Ganjoor khayyam.gdb database (178 of 178 numbered quatrains). Text: ganjoor.net. Classical text; the print source behind the Ganjoor set was not seen."
+ },
+ {
+  "gid": 10319,
+  "match": {
+   "poets": [
+    "hafiz"
+   ],
+   "collection": "دیوان حافظ: غزلیات (Divan of Hafez: Ghazals)"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Hafiz",
+  "translator": "",
+  "title": "Divan: the 495 ghazals (Ganjoor /hafez/ghazal)",
+  "volume": "",
+  "edition": "Qazvini-Ghani, 1941",
+  "place": "",
+  "publisher": "Ganjoor",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "Ganjoor (ganjoor.net)",
+   "id": "hafez/ghazal",
+   "url": "https://ganjoor.net/hafez/ghazal"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Ganjoor (ganjoor.net)",
+  "url": "https://ganjoor.net/hafez/ghazal",
+  "note": "Persian text of the 495 ghazals of the Ganjoor /hafez/ghazal set (sh1-sh495), read from the Ganjoor hafez.gdb database; the 118 attributed poems are left out. Ganjoor follows the Qazvini-Ghani edition. Text: ganjoor.net. Classical text; the print source behind the Ganjoor set was not seen."
+ },
+ {
+  "gid": 10320,
+  "match": {
+   "poets": [
+    "chu-yuan",
+    "sung-yu"
+   ],
+   "collection": "楚辭 (Songs of Chu)"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Qu Yuan; Song Yu",
+  "translator": "",
+  "title": "Chuci (楚辭): the poems of Qu Yuan and Song Yu",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "楚辞/chuci.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E6%A5%9A%E8%BE%9E/chuci.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E6%A5%9A%E8%BE%9E/chuci.json",
+  "note": "Chinese text of the 25 Chuci pieces the dataset gives to Qu Yuan (Li sao, the eleven Jiu ge, Tian wen, the nine Jiu zhang, Yuan you, Bu ju, Yu fu) and the two it gives to Song Yu (Jiu bian, Zhao hun), in the dataset's simplified characters, from 楚辞/chuci.json (MIT licence). The printed base edition behind the dataset was not seen; the Han imitations in the same file are left out. The attribution of Bu ju, Yu fu, Yuan you and Zhao hun follows the dataset."
+ },
+ {
+  "gid": 10321,
+  "match": {
+   "poets": [
+    "classical-chinese-anonymous"
+   ],
+   "collection": "古詩十九首 (Nineteen Old Poems)"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous; compiled in the Wenxuan of Xiao Tong (Zhao Ming, 501-531)",
+  "translator": "",
+  "title": "古詩十九首 (Nineteen Old Poems), transcribed from the Wenxuan text",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "Project Gutenberg",
+  "year": "2013",
+  "series": "",
+  "digital": {
+   "name": "Project Gutenberg",
+   "id": "43009",
+   "url": "https://www.gutenberg.org/ebooks/43009"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Project Gutenberg",
+  "url": "https://www.gutenberg.org/ebooks/43009",
+  "note": "Gutenberg #43009 (produced by Si-ying Huang, posted 22 Dec 2013; title 'Gushi shijiu shou 古詩十九首', author field given as 蕭統). Its front matter names no modern annotated edition. Mechanical conversion errors corrected against Werneror's Poetry data (魏晋.csv): 萬餘裏 to 萬餘里, 鬥 to 斗 (twice), 淩風 to 凌風; the Gutenberg line 卡人王子喬，難可蜿等期 (poem 15) was left as printed, though Werneror reads 仙人 and 与; other variants against Werneror were not altered. The Gutenberg file itself does not give the printed source."
+ },
+ {
+  "gid": 10322,
+  "match": {
+   "poets": [
+    "li-yu"
+   ],
+   "collection": "南唐二主詞"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Li Yu (Li Houzhu)",
+  "translator": "",
+  "title": "南唐二主詞 (the ci of Li Yu, from the Five Dynasties poetry data)",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "五代诗词/nantang/poetrys.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E4%BA%94%E4%BB%A3%E8%AF%97%E8%AF%8D/nantang/poetrys.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E4%BA%94%E4%BB%A3%E8%AF%97%E8%AF%8D/nantang/poetrys.json",
+  "note": "The 41 ci the dataset gives to 李煜 in nantang/poetrys.json (MIT licence), in its simplified characters with a few traditional ones as supplied (e.g. 後); the four ci of Li Jing in the same file are left out, and the dataset's notes are not reproduced. The printed edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10323,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 周南"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 周南",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10324,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 召南"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 召南",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10325,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 邶风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 邶风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10326,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 鄘风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 鄘风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10327,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 卫风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 卫风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10328,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 王风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 王风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10329,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 郑风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 郑风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10330,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 齐风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 齐风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10331,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 魏风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 魏风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10332,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 唐风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 唐风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10333,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 秦风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 秦风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10334,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 陈风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 陈风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10335,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 桧风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 桧风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10336,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 曹风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 曹风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10337,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "国风 · 豳风"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 国风 · 豳风",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10338,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "小雅 · 鹿鸣之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 小雅 · 鹿鸣之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10339,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "小雅 · 南有嘉鱼之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 小雅 · 南有嘉鱼之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10340,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "小雅 · 鸿雁之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 小雅 · 鸿雁之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10341,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "小雅 · 节南山之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 小雅 · 节南山之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10342,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "小雅 · 谷风之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 小雅 · 谷风之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10343,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "小雅 · 甫田之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 小雅 · 甫田之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10344,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "小雅 · 鱼藻之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 小雅 · 鱼藻之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10345,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "大雅 · 文王之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 大雅 · 文王之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10346,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "大雅 · 生民之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 大雅 · 生民之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10347,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "大雅 · 荡之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 大雅 · 荡之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10348,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "周颂 · 清庙之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 周颂 · 清庙之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10349,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "周颂 · 臣工之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 周颂 · 臣工之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10350,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "周颂 · 闵予小子之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 周颂 · 闵予小子之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10351,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "鲁颂 · 駉之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 鲁颂 · 駉之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10352,
+  "match": {
+   "poets": [
+    "shi-jing"
+   ],
+   "collection": "商颂 · 那之什"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Anonymous (Shi Jing, the Book of Songs)",
+  "translator": "",
+  "title": "Shijing (305 odes in simplified characters), 商颂 · 那之什",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "chinese-poetry project",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "shijing.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F/shijing.json",
+  "note": "Chinese text of the odes in this part of the Shijing, read from shijing.json in the MIT-licensed chinese-poetry dataset (305 odes in simplified characters; the character forms are kept as in the source). Anonymous classical text, public domain; the print edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10353,
+  "match": {
+   "poets": [
+    "emperor-tenji",
+    "empress-jito",
+    "kakinomoto-no-hitomaro",
+    "yamabe-no-akahito",
+    "sarumaru-no-dayu",
+    "otomo-no-yakamochi",
+    "abe-no-nakamaro",
+    "kisen",
+    "ono-no-komachi",
+    "semimaru",
+    "ono-no-takamura",
+    "henjo",
+    "emperor-yozei",
+    "minamoto-no-toru",
+    "emperor-koko",
+    "ariwara-no-yukihira",
+    "ariwara-no-narihira",
+    "fujiwara-no-toshiyuki",
+    "ise-no-miyasudokoro",
+    "prince-motoyoshi",
+    "sosei",
+    "funya-no-yasuhide",
+    "oe-no-chisato",
+    "kanke",
+    "fujiwara-no-sadakata",
+    "fujiwara-no-tadahira",
+    "fujiwara-no-kanesuke",
+    "minamoto-no-muneyuki",
+    "oshikochi-no-mitsune",
+    "mibu-no-tadamine",
+    "sakanoue-no-korenori",
+    "harumichi-no-tsuraki",
+    "ki-no-tomonori",
+    "fujiwara-no-okikaze",
+    "ki-no-tsurayuki",
+    "kiyohara-no-fukayabu",
+    "funya-no-asayasu",
+    "ukon",
+    "minamoto-no-hitoshi",
+    "taira-no-kanemori",
+    "mibu-no-tadami",
+    "kiyohara-no-motosuke",
+    "fujiwara-no-atsutada",
+    "fujiwara-no-asatada",
+    "fujiwara-no-koretada",
+    "sone-no-yoshitada",
+    "egyo",
+    "minamoto-no-shigeyuki",
+    "onakatomi-no-yoshinobu",
+    "fujiwara-no-yoshitaka",
+    "fujiwara-no-sanekata",
+    "fujiwara-no-michinobu",
+    "fujiwara-no-michitsuna-no-haha",
+    "takashina-no-takako",
+    "fujiwara-no-kinto",
+    "izumi-shikibu",
+    "murasaki-shikibu",
+    "daini-no-sanmi",
+    "akazome-emon",
+    "koshikibu-no-naishi",
+    "ise-no-taifu",
+    "sei-shonagon",
+    "fujiwara-no-michimasa",
+    "fujiwara-no-sadayori",
+    "sagami",
+    "gyoson",
+    "suo-no-naishi",
+    "emperor-sanjo",
+    "tachibana-no-nagayasu",
+    "ryozen",
+    "minamoto-no-tsunenobu",
+    "yushi-naishinno-ke-no-kii",
+    "oe-no-masafusa",
+    "minamoto-no-shunrai",
+    "fujiwara-no-mototoshi",
+    "fujiwara-no-tadamichi",
+    "emperor-sutoku",
+    "minamoto-no-kanemasa",
+    "fujiwara-no-akisuke",
+    "taikenmonin-no-horikawa",
+    "tokudaiji-sanesada",
+    "fujiwara-no-atsuyori",
+    "fujiwara-no-shunzei",
+    "fujiwara-no-kiyosuke",
+    "shune",
+    "saigyo",
+    "fujiwara-no-sadanaga",
+    "kokamonin-no-betto",
+    "princess-shikishi",
+    "inpumonin-no-tayu",
+    "kujo-yoshitsune",
+    "nijoin-no-sanuki",
+    "minamoto-no-sanetomo",
+    "asukai-masatsune",
+    "jien",
+    "saionji-kintsune",
+    "fujiwara-no-teika",
+    "fujiwara-no-ietaka",
+    "emperor-go-toba",
+    "emperor-juntoku"
+   ],
+   "collection": "小倉百人一首 (Ogura Hyakunin Isshu)"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Fujiwara no Teika (compiler)",
+  "translator": "",
+  "title": "Ogura Hyakunin Isshu (the 100 poems, ja.wikisource)",
+  "volume": "",
+  "edition": "Fujiwara no Teika, Ogura Hyakunin Isshu",
+  "place": "",
+  "publisher": "Wikisource",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "Wikisource (CC BY-SA)",
+   "id": "小倉百人一首",
+   "url": "https://ja.wikisource.org/wiki/小倉百人一首"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://ja.wikisource.org/wiki/小倉百人一首",
+  "note": "Japanese text of the 100 tanka from the single table of ja.wikisource 小倉百人一首 (Textquality 100%), read 22 Oct 2026; kimariji marking, bracketed historical-kana readings and the karuta column left out. Selection c. 1235 by Fujiwara no Teika. Classical text; the print source behind the Wikisource transcription was not seen."
+ },
+ {
+  "gid": 10354,
+  "match": {
+   "poets": [
+    "chang-shih",
+    "chang-wei",
+    "chang-wen-chien",
+    "chang-yen",
+    "chang-yu",
+    "chang-yueh",
+    "chao-chia",
+    "chao-ting",
+    "chao-wu-chiu",
+    "chen-tzu-ang",
+    "cheng-hao",
+    "cheng-hui",
+    "chi-wu-chien",
+    "chia-chih",
+    "chia-tao",
+    "chien-chi",
+    "chiu-wei",
+    "chou-pi-ta",
+    "chu-fang",
+    "chu-hsi",
+    "chu-kuang-hsi",
+    "chu-shu-chen",
+    "classical-chinese-anonymous",
+    "fan-cheng-ta",
+    "han-yu",
+    "ho-chih-chang",
+    "hsieh-fang-te",
+    "hsu-yuan-chieh",
+    "hsuan-tsung",
+    "hsueh-ying",
+    "huang-fu-jan",
+    "huang-ting-chien",
+    "hung-tzu-kuei",
+    "kao-chan",
+    "kao-chu-ching",
+    "kao-pien",
+    "kao-shih",
+    "keng-wei",
+    "lei-chen",
+    "li-ang",
+    "li-chi",
+    "li-chia-yu",
+    "li-chiao",
+    "li-po",
+    "li-pu",
+    "li-shang-yin",
+    "li-she",
+    "li-shih-chih",
+    "lin-chen",
+    "lin-hung",
+    "lin-sheng",
+    "ling-hu-chu",
+    "liu-chi-sun",
+    "liu-han",
+    "liu-ko-chuang",
+    "liu-yu-hsi",
+    "lo-ping-wang",
+    "lu-mei-po",
+    "lu-yu",
+    "meng-hao-jan",
+    "mu-tung",
+    "ou-yang-hsiu",
+    "pai-yu-chan",
+    "po-chu-i",
+    "seng-chih-an",
+    "seng-hui-hung",
+    "shao-yung",
+    "shen-chuan-chi",
+    "shih-chu-mo",
+    "ssu-kung-shu",
+    "ssu-ma-kuang",
+    "su-ting",
+    "su-tung-po",
+    "sun-ti",
+    "sung-chih-wen",
+    "tai-fu-ku",
+    "tai-min",
+    "tai-shang-yin-che",
+    "tai-shu-lun",
+    "ting-hsien-chih",
+    "tou-shu-hsiang",
+    "tsai-chueh",
+    "tsai-hsiang",
+    "tsao-pin",
+    "tsen-tsan",
+    "tseng-chi",
+    "tsu-yung",
+    "tsui-tu",
+    "tu-fu",
+    "tu-hsiao-shan",
+    "tu-mu",
+    "tu-shen-yen",
+    "wang-an-shih",
+    "wang-chang-ling",
+    "wang-chi",
+    "wang-chi-sung",
+    "wang-chia",
+    "wang-chien",
+    "wang-ling",
+    "wang-wei",
+    "wang-yu-cheng",
+    "wei-ying-wu",
+    "yang-chiung",
+    "yang-chu-yuan",
+    "yang-pu",
+    "yang-wan-li",
+    "yeh-shao-weng",
+    "yeh-tsai",
+    "yen-shu"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Xie Fangde / Wang Xiang (compilers of the Qianjiashi primer)",
+  "translator": "",
+  "title": "千家詩 (Poems of a Thousand Poets)",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "蒙學/qianjiashi.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%92%99%E5%AD%A6/qianjiashi.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT)",
+  "url": "https://raw.githubusercontent.com/chinese-poetry/chinese-poetry/master/%E8%92%99%E5%AD%A6/qianjiashi.json",
+  "note": "Classical Chinese originals of the Song-Ming primer Qianjiashi, read from the chinese-poetry dataset file 蒙學/qianjiashi.json (219 records). Poems already taken from the Tangshi sanbai shou, the two Ming poems and the poems beyond the 180-poem cap are not included. Only title, author and text were taken. The title page of a printed edition was not seen, so the edition and date are left blank."
+ },
+ {
+  "gid": 10355,
+  "match": {
+   "poets": [
+    "chang-hsiao-hsiang",
+    "chang-hsien",
+    "chang-liang-neng",
+    "chang-lun",
+    "chang-tzu",
+    "chang-yen-sung",
+    "chang-yuan-kan",
+    "chao-chi",
+    "chao-chung-chih",
+    "chao-ling-chih",
+    "chao-pu-chih",
+    "chao-tuan-li",
+    "chen-ko",
+    "chen-liang",
+    "chen-yu-i",
+    "cheng-kou",
+    "chiang-chieh",
+    "chiang-kuei",
+    "chien-wei-yen",
+    "chin-kuan",
+    "chou-mi",
+    "chou-pang-yen",
+    "chou-tzu-chih",
+    "chu-fu",
+    "chu-ssu-fa",
+    "chung-shu",
+    "fan-cheng-ta",
+    "fan-chung-yen",
+    "han-chen",
+    "han-liu",
+    "han-yuan-chi",
+    "ho-chu",
+    "hsin-chi-chi",
+    "huang-hsiao-mai",
+    "huang-kung-shao",
+    "kung-i",
+    "li-chia",
+    "li-chih-i",
+    "li-ching-chao",
+    "li-chung-yuan",
+    "li-ping",
+    "li-yu-sung",
+    "li-yuan-ying",
+    "liao-shih-mei",
+    "liu-chen-weng",
+    "liu-i-chih",
+    "liu-ko-chuang",
+    "liu-kuo",
+    "liu-yung",
+    "lu-jui",
+    "lu-sung",
+    "lu-tsu-kao",
+    "lu-wei-lao",
+    "lu-yu",
+    "mao-pang",
+    "mo-chi-yung",
+    "ou-yang-hsiu",
+    "pan-fen",
+    "pan-hsi-pai",
+    "peng-yuan-sun",
+    "shih-ta-tsu",
+    "shih-yen",
+    "shu-tan",
+    "su-kuo",
+    "su-tung-po",
+    "sung-chi",
+    "tien-wei",
+    "tsai-shen",
+    "tsao-tsu",
+    "wang-an-kuo",
+    "wang-an-shih",
+    "wang-i-sun",
+    "wang-kuan",
+    "wang-tsao",
+    "wu-wen-ying",
+    "yao-yun-wen",
+    "yeh-meng-te",
+    "yen-chi-tao",
+    "yen-jen",
+    "yen-shu",
+    "yu-kuo-pao",
+    "yuan-chu-hua",
+    "yueh-fei"
+   ],
+   "collection": "宋詞三百首 (Three Hundred Song Lyrics)"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Zhu Zumou (selection)",
+  "translator": "",
+  "title": "宋词三百首 (Three Hundred Song Lyrics), 280 ci (chinese-poetry 宋词/宋词三百首.json)",
+  "volume": "",
+  "edition": "Zhu Zumou's selection, 1924",
+  "place": "",
+  "publisher": "chinese-poetry (MIT)",
+  "year": "1924",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry (GitHub)",
+   "id": "宋词/宋词三百首.json",
+   "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E5%AE%8B%E8%AF%8D/%E5%AE%8B%E8%AF%8D%E4%B8%89%E7%99%BE%E9%A6%96.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT); selection Zhu Zumou 1924; text 全宋词 (bare)",
+  "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/%E5%AE%8B%E8%AF%8D/%E5%AE%8B%E8%AF%8D%E4%B8%89%E7%99%BE%E9%A6%96.json",
+  "note": "Original Chinese text in simplified characters; only title, author and text taken. Text of Tang Guizhang's Quan Song ci as bare punctuated text, admitted only inside this pre-modern selection."
+ },
+ {
+  "gid": 10356,
+  "match": {
+   "poets": [
+    "chang-chi",
+    "chang-chi-i",
+    "chang-chiao",
+    "chang-chien",
+    "chang-chiu-ling",
+    "chang-hsu",
+    "chang-hu",
+    "chang-pi",
+    "chen-tao",
+    "chen-tzu-ang",
+    "cheng-tien",
+    "chi-wu-chien",
+    "chia-tao",
+    "chien-chi",
+    "chin-chang-hsu",
+    "chin-tao-yu",
+    "chiu-wei",
+    "chu-ching-yu",
+    "chuan-te-yu",
+    "classical-chinese-anonymous",
+    "han-hung",
+    "han-wo",
+    "han-yu",
+    "ho-chih-chang",
+    "hsu-hun",
+    "hsuan-tsung",
+    "hsueh-feng",
+    "huang-fu-jan",
+    "kao-shih",
+    "ku-kuang",
+    "li-chi",
+    "li-i",
+    "li-po",
+    "li-shang-yin",
+    "li-tuan",
+    "liu-chang-ching",
+    "liu-chung-yung",
+    "liu-fang-ping",
+    "liu-shen-hsu",
+    "liu-tsung-yuan",
+    "liu-yu-hsi",
+    "lo-ping-wang",
+    "lu-lun",
+    "ma-tai",
+    "meng-chiao",
+    "meng-hao-jan",
+    "pei-ti",
+    "po-chu-i",
+    "seng-chiao-jan",
+    "shen-chuan-chi",
+    "ssu-kung-shu",
+    "sung-chih-wen",
+    "tai-shu-lun",
+    "tsen-tsan",
+    "tsu-yung",
+    "tsui-hao",
+    "tsui-shu",
+    "tsui-tu",
+    "tu-fu",
+    "tu-hsun-ho",
+    "tu-mu",
+    "tu-shen-yen",
+    "wang-chang-ling",
+    "wang-chien",
+    "wang-chih-huan",
+    "wang-han",
+    "wang-po",
+    "wang-wan",
+    "wang-wei",
+    "wei-chuang",
+    "wei-ying-wu",
+    "wen-ting-yun",
+    "yuan-chen",
+    "yuan-chieh"
+   ],
+   "collection": "唐詩三百首 (Three Hundred Tang Poems)"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Sun Zhu (compiler, 1763); poets of the Tang dynasty",
+  "translator": "",
+  "title": "唐詩三百首 (Three Hundred Tang Poems), originals from the chinese-poetry dataset",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "",
+  "year": "1763",
+  "series": "",
+  "digital": {
+   "name": "chinese-poetry dataset (MIT)",
+   "id": "蒙学/tangshisanbaishou.json",
+   "url": "https://raw.githubusercontent.com/chinese-poetry/chinese-poetry/master/%E8%92%99%E5%AD%A6/tangshisanbaishou.json"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "chinese-poetry dataset (MIT); selection Sun Zhu 1763",
+  "url": "https://raw.githubusercontent.com/chinese-poetry/chinese-poetry/master/%E8%92%99%E5%AD%A6/tangshisanbaishou.json",
+  "note": "All 320 records of 蒙学/tangshisanbaishou.json in traditional characters (Sun Zhu's 1763 selection, public domain; dataset MIT); only title, author and text were taken, and the dataset's variant notes in brackets were removed. Du Fu's 贈衛八處士 is left out because the dataset holds only 8 of its 24 lines. The printed edition behind the dataset was not seen."
  }
 ]

@@ -1,0 +1,31 @@
+{
+ "slug": "mu-tung",
+ "name": "Mu-t’ung",
+ "dates": "Sung dynasty",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "language": "Classical Chinese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Mu-t’ung (牧童, “the Herd-boy”) is the name under which a Sung verse of reply is handed down in the primer; the sources give no dates.",
+  "The poems here are from the Qianjiashi (千家詩, Poems of a Thousand Poets), the Song-Ming schoolroom anthology of Tang and Song verse attributed to Xie Fangde and Wang Xiang, taken from the chinese-poetry dataset (MIT); the original characters are given as printed there."
+ ],
+ "order": 75.88908,
+ "poems": [
+  {
+   "id": "mu-tung/0",
+   "title": "答鍾弱翁 (Da zhong ruo weng)",
+   "authorSlug": "mu-tung",
+   "author": "Mu-t’ung",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "草鋪橫野六七裏，笛弄晚風三四聲。\n歸來飽飯黃昏後，不脫蓑衣臥月明。"
+  }
+ ]
+}

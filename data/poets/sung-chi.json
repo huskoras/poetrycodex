@@ -1,0 +1,31 @@
+{
+ "slug": "sung-chi",
+ "name": "Sung Ch’i",
+ "dates": "998–1061",
+ "era": "Song dynasty",
+ "category": "Chinese & Japanese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Sung Ch’i (宋祁; Song Qi; 998–1061) was a writer of ci, the Chinese song lyrics composed to set tunes, in the Song dynasty.",
+  "The single ci here is from the chinese-poetry dataset of Zhu Zumou's 1924 anthology Three Hundred Song Lyrics (宋词三百首), in simplified characters, with the tune name as title."
+ ],
+ "order": 67.0007,
+ "language": "Classical Chinese",
+ "poems": [
+  {
+   "id": "sung-chi/0",
+   "title": "玉楼春 (Yu lou chun)",
+   "authorSlug": "sung-chi",
+   "author": "Sung Ch’i",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "宋詞三百首 (Three Hundred Song Lyrics)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "东城渐觉风光好。\n皱波纹迎客棹。\n绿杨烟外晓寒轻，红杏枝头春意闹。\n浮生长恨欢娱少。\n肯爱千金轻一笑。\n为君持酒劝斜阳，且向花间留晚照。"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "slug": "chu-hsi",
+ "name": "Chu Hsi",
+ "dates": "1130–1200",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "language": "Classical Chinese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Chu Hsi (朱熹, 1130–1200) was a Sung poet.",
+  "The poems here are from the Qianjiashi (千家詩, Poems of a Thousand Poets), the Song-Ming schoolroom anthology of Tang and Song verse attributed to Xie Fangde and Wang Xiang, taken from the chinese-poetry dataset (MIT); the original characters are given as printed there."
+ ],
+ "order": 74.6098,
+ "poems": [
+  {
+   "id": "chu-hsi/0",
+   "title": "春日 (Chun ri)",
+   "authorSlug": "chu-hsi",
+   "author": "Chu Hsi",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "勝日尋芳泗水濱，無邊光景一時新。\n等閒識得東風面，萬紫千紅總是春。"
+  },
+  {
+   "id": "chu-hsi/1",
+   "title": "題榴花 (Ti liu hua)",
+   "authorSlug": "chu-hsi",
+   "author": "Chu Hsi",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "五月榴花照眼明，枝間時見子初成。\n可憐此地無車馬，顛倒蒼苔落絳英。"
+  },
+  {
+   "id": "chu-hsi/2",
+   "title": "觀書有感 其一 (Guan shu you gan qi yi)",
+   "authorSlug": "chu-hsi",
+   "author": "Chu Hsi",
+   "primarySubject": "The Mind",
+   "subjects": [
+    "The Mind"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "半畝方塘一鑑開，天光雲影共徘徊。\n問渠那得清如許，爲有源頭活水來。"
+  },
+  {
+   "id": "chu-hsi/3",
+   "title": "泛舟 (Fan zhou)",
+   "authorSlug": "chu-hsi",
+   "author": "Chu Hsi",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "昨夜江邊春水生，艨艟鉅艦一毛輕。\n向來枉費推移力，此日中流自在行。"
+  }
+ ]
+}

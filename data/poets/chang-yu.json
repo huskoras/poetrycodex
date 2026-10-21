@@ -1,0 +1,31 @@
+{
+ "slug": "chang-yu",
+ "name": "Chang Yu",
+ "dates": "T’ang dynasty",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "language": "Classical Chinese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Chang Yu (張佑) was a T’ang poet; the sources give no dates.",
+  "The poems here are from the Qianjiashi (千家詩, Poems of a Thousand Poets), the Song-Ming schoolroom anthology of Tang and Song verse attributed to Xie Fangde and Wang Xiang, taken from the chinese-poetry dataset (MIT); the original characters are given as printed there."
+ ],
+ "order": 63.31277,
+ "poems": [
+  {
+   "id": "chang-yu/0",
+   "title": "題鬆汀驛 (Ti song ting yi)",
+   "authorSlug": "chang-yu",
+   "author": "Chang Yu",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "The primer names the author as Zhang You (張佑); the poem is usually given to Zhang Hu (張祜).",
+   "language": "Classical Chinese",
+   "text": "山色遠含空，蒼茫澤國東。\n海明先見日，江白迥聞風。\n鳥道高原去，人煙小徑通。\n那知舊遺逸，不在五湖中。"
+  }
+ ]
+}

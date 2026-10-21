@@ -1,0 +1,31 @@
+{
+ "slug": "tai-min",
+ "name": "Tai Min",
+ "dates": "Sung dynasty",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "language": "Classical Chinese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Tai Min (戴敏) was a Sung poet; the sources give no dates.",
+  "The poems here are from the Qianjiashi (千家詩, Poems of a Thousand Poets), the Song-Ming schoolroom anthology of Tang and Song verse attributed to Xie Fangde and Wang Xiang, taken from the chinese-poetry dataset (MIT); the original characters are given as printed there."
+ ],
+ "order": 75.88903,
+ "poems": [
+  {
+   "id": "tai-min/0",
+   "title": "夏日 (Xia ri)",
+   "authorSlug": "tai-min",
+   "author": "Tai Min",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "千家詩 (Poems of a Thousand Poets)",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "乳鴨池塘水淺深，熟梅天氣半晴陰。\n東園載酒西園醉，摘盡枇杷一樹金。"
+  }
+ ]
+}
