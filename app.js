@@ -4096,15 +4096,8 @@
   const themeFamily = (t) => t === "paper" ? "light" : t === "black" ? "dark" : t;
   const legacyGet = (key) => { try { return localStorage.getItem(key) || ""; } catch (e) { return ""; } };
   const legacySet = (key, v) => { try { if (v) localStorage.setItem(key, v); else localStorage.removeItem(key); } catch (e) { /* private window */ } };
-  let LEGIBLE = false;
-  function loadLegible() {
-    if (LEGIBLE) return;
-    LEGIBLE = true;
-    const l = document.createElement("link");
-    l.rel = "stylesheet";
-    l.href = "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap";
-    document.head.appendChild(l);
-  }
+  // Atkinson Hyperlegible needs no loader: its @font-face rules (styles.css, files in fonts/) make
+  // the browser fetch it the first time text is set in it, that is once Legible is chosen.
   function applyReadPrefs() {
     const root = document.documentElement;
     const put = (name, v) => { if (v) root.dataset[name] = v; else delete root.dataset[name]; };
@@ -4112,7 +4105,6 @@
     put("theme", themeFamily(theme));
     put("tone", theme === "paper" || theme === "black" ? theme : "");
     ["text", "font", "lh", "measure"].forEach((k) => put(k, readPref(k)));
-    if (readPref("font") === "legible") loadLegible();
   }
   // change: {theme: "paper", …}; fromAccount: taken from the account, so not sent back.
   function setReadPref(change, fromAccount) {
@@ -7409,9 +7401,28 @@
     });
   }
 
-  // ---------- portrait fallback (monogram) ----------
+  // ---------- portraits (and the monogram when there is none) ----------
+  // Each poets/<slug>.jpg has two WebP copies beside it, -320.webp and -640.webp (made by
+  // tools/make_webp.py, never wider than the JPEG). The browser takes the one that fits the
+  // card or the poet page's 300px column at the screen's pixel density. If a copy is missing
+  // (a portrait added since make_webp.py last ran), the image falls back to the JPEG.
+  // width/height only reserve the space before the image arrives: a card is square (CSS
+  // crops it), and on the poet page 320 × 427 is the usual 3 : 4 of a portrait, corrected by
+  // the image itself once it loads.
+  const portraitWebp = (src) => /^poets\/[^/]+\.jpg$/i.test(src) ? src.replace(/\.jpg$/i, "") : "";
+  const PORTRAIT_SIZES = {
+    card: "(max-width: 520px) calc(100vw - 2rem), (max-width: 800px) calc(50vw - 2.6rem), (max-width: 1050px) calc(33vw - 2.2rem), 280px",
+    page: "300px" };
+  function portraitImg(p, cls, kind, lazy) {
+    const jpg = esc(p.portrait), base = esc(portraitWebp(p.portrait));
+    const tail = `alt="Portrait of ${esc(p.name)}"${lazy ? ` loading="lazy"` : ""} />`;
+    if (!base) return `<img${cls ? ` class="${cls}"` : ""} src="${jpg}" ${tail}`;
+    return `<img${cls ? ` class="${cls}"` : ""} src="${base}-320.webp" srcset="${base}-320.webp 320w, ${base}-640.webp 640w" ` +
+      `sizes="${PORTRAIT_SIZES[kind]}" width="320" height="${kind === "card" ? 320 : 427}" ` +
+      `onerror="this.onerror=null;this.removeAttribute('srcset');this.src='${jpg}'" ${tail}`;
+  }
   function portraitImgHTML(p, cls) {
-    if (p.portrait) return `<img class="${cls}" src="${esc(p.portrait)}" alt="Portrait of ${esc(p.name)}" loading="lazy" />`;
+    if (p.portrait) return portraitImg(p, cls, "card", true);
     const initial = esc(p.name.trim().charAt(0));
     return `<div class="${cls} pc-monogram" aria-label="No confirmed portrait of ${esc(p.name)}"><span>${initial}</span></div>`;
   }
@@ -7608,7 +7619,7 @@
         <button class="back" id="back">← All poets</button>
         <div class="poet-top">
           <figure class="portrait-wrap" style="margin:0">
-            ${poet.portrait ? `<img src="${esc(poet.portrait)}" alt="Portrait of ${esc(poet.name)}" />` : portraitImgHTML(poet, "pc-monogram-lg")}
+            ${poet.portrait ? portraitImg(poet, "", "page", false) : portraitImgHTML(poet, "pc-monogram-lg")}
             <figcaption class="portrait-credit">${esc(poet.credit)}</figcaption>
           </figure>
           <div>
@@ -11714,7 +11725,11 @@ ${body}</body></html>`;
     } else {
       const poet = POETS[slug], glossed = await glossedPoems();
       add(`data/sources/${encodeURIComponent(slug)}.json`);
-      if (poet && poet.portrait) add(poet.portrait);
+      if (poet && poet.portrait) {
+        add(poet.portrait);
+        const base = portraitWebp(poet.portrait);
+        if (base) { add(base + "-320.webp"); add(base + "-640.webp"); }
+      }
       (DATA ? DATA.poems : []).filter((p) => p.authorSlug === slug).forEach((p) => {
         if (glossed.has(p.id)) add(`data/glosses/poems/${p.id}.json`);
         parList("poems", p.id).forEach((e) => add(`data/poets/${encodeURIComponent(e.with.split("/")[0])}.json`));

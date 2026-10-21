@@ -44,6 +44,9 @@ sections (cantos/books/fitts).
   page's header load only this; everything else (and the Oracle) still loads `data/index.json`,
   which is no longer fetched on the home page (it loads on the first hover/tap of a list link
   or the search box). Generated: never hand-edit; commit it with `data/index.json`.
+- `fonts/` — the site's own typefaces (since 21 Oct 2026, speed batch 3; woff2 + OFL licences; no
+  Google Fonts request anywhere). `poets/<slug>-320.webp` / `-640.webp` beside each portrait JPEG:
+  after adding or shrinking portraits run `python tools/make_webp.py` (until then the JPEG is used).
 - `data/poets/<slug>.json` — **source of truth** for one poet: identity fields +
   every one of that poet's poems, **full text included**. Fetched lazily the first
   time a poem by that poet is opened, then cached in memory for the session.
