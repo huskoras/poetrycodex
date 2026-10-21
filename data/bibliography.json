@@ -73095,5 +73095,666 @@
   "text": "chinese-poetry dataset (MIT); selection Sun Zhu 1763",
   "url": "https://raw.githubusercontent.com/chinese-poetry/chinese-poetry/master/%E8%92%99%E5%AD%A6/tangshisanbaishou.json",
   "note": "All 320 records of 蒙学/tangshisanbaishou.json in traditional characters (Sun Zhu's 1763 selection, public domain; dataset MIT); only title, author and text were taken, and the dataset's variant notes in brackets were removed. Du Fu's 贈衛八處士 is left out because the dataset holds only 8 of its 24 lines. The printed edition behind the dataset was not seen."
+ },
+ {
+  "gid": 10357,
+  "match": {
+   "poets": [
+    "bhartrihari"
+   ],
+   "collection": "नीतिशतकम् (Nitishataka)",
+   "translator": ""
+  },
+  "type": "edition",
+  "author_or_editor": "Bhartrihari",
+  "translator": "",
+  "title": "भर्तृहरिशतकत्रयी (Shatakatraya), Sanskrit original: Wikisource transcription",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "Wikisource (CC BY-SA)",
+   "id": "भर्तृहरिशतकत्रयी",
+   "url": "https://sa.wikisource.org/wiki/%E0%A4%AD%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A5%83%E0%A4%B9%E0%A4%B0%E0%A4%BF%E0%A4%B6%E0%A4%A4%E0%A4%95%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AF%E0%A5%80"
+  },
+  "confidence": "unknown",
+  "note": "Text: Wikisource (CC BY-SA) transcription of the Sanskrit; the page names no printed edition. Text public domain. This recension has 109 verses (Niti 1-109)."
+ },
+ {
+  "gid": 10358,
+  "match": {
+   "poets": [
+    "bhartrihari"
+   ],
+   "collection": "शृङ्गारशतकम् (Shringarashataka)",
+   "translator": ""
+  },
+  "type": "edition",
+  "author_or_editor": "Bhartrihari",
+  "translator": "",
+  "title": "भर्तृहरिशतकत्रयी (Shatakatraya), Sanskrit original: Wikisource transcription",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "Wikisource (CC BY-SA)",
+   "id": "भर्तृहरिशतकत्रयी",
+   "url": "https://sa.wikisource.org/wiki/%E0%A4%AD%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A5%83%E0%A4%B9%E0%A4%B0%E0%A4%BF%E0%A4%B6%E0%A4%A4%E0%A4%95%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AF%E0%A5%80"
+  },
+  "confidence": "unknown",
+  "note": "Text: Wikisource (CC BY-SA) transcription of the Sanskrit; the page names no printed edition. Text public domain. This recension has 102 verses."
+ },
+ {
+  "gid": 10359,
+  "match": {
+   "poets": [
+    "bhartrihari"
+   ],
+   "collection": "वैराग्यशतकम् (Vairagyashataka)",
+   "translator": ""
+  },
+  "type": "edition",
+  "author_or_editor": "Bhartrihari",
+  "translator": "",
+  "title": "भर्तृहरिशतकत्रयी (Shatakatraya), Sanskrit original: Wikisource transcription",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "",
+  "year": "",
+  "series": "",
+  "digital": {
+   "name": "Wikisource (CC BY-SA)",
+   "id": "भर्तृहरिशतकत्रयी",
+   "url": "https://sa.wikisource.org/wiki/%E0%A4%AD%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A5%83%E0%A4%B9%E0%A4%B0%E0%A4%BF%E0%A4%B6%E0%A4%A4%E0%A4%95%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AF%E0%A5%80"
+  },
+  "confidence": "unknown",
+  "note": "Text: Wikisource (CC BY-SA) transcription of the Sanskrit; the page names no printed edition. Text public domain. This recension has 105 verses, with interpolated verses marked * kept as printed."
+ },
+ {
+  "gid": 10360,
+  "match": {
+   "poets": [
+    "baudelaire"
+   ],
+   "collection": "Les Fleurs du mal (1861)"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Charles Baudelaire",
+  "translator": "",
+  "title": "Les Fleurs du mal (1861): Au lecteur",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "Poulet-Malassis et de Broise",
+  "year": "1861",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Les_Fleurs_du_mal_(1861)",
+   "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)",
+  "note": "French text from the fr.wikisource transcription of the second edition (Poulet-Malassis et de Broise, 1861), page by page from its subpage for each poem; section names follow the transcribed table of contents. The scan itself and its title page were not seen. This string holds the opening poem Au lecteur, which belongs to no section."
+ },
+ {
+  "gid": 10361,
+  "match": {
+   "poets": [
+    "baudelaire"
+   ],
+   "collection": "Spleen et Idéal"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Charles Baudelaire",
+  "translator": "",
+  "title": "Les Fleurs du mal (1861): Spleen et Idéal",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "Poulet-Malassis et de Broise",
+  "year": "1861",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Les_Fleurs_du_mal_(1861)",
+   "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)",
+  "note": "French text from the fr.wikisource transcription of the second edition (Poulet-Malassis et de Broise, 1861), page by page from its subpage for each poem; section names follow the transcribed table of contents. The scan itself and its title page were not seen. Section Spleen et Idéal. Poems that Wikisource gives only in the posthumous 1868 edition are taken from its 1868 transcription and filed under the section that edition assigns them."
+ },
+ {
+  "gid": 10362,
+  "match": {
+   "poets": [
+    "baudelaire"
+   ],
+   "collection": "Tableaux parisiens"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Charles Baudelaire",
+  "translator": "",
+  "title": "Les Fleurs du mal (1861): Tableaux parisiens",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "Poulet-Malassis et de Broise",
+  "year": "1861",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Les_Fleurs_du_mal_(1861)",
+   "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)",
+  "note": "French text from the fr.wikisource transcription of the second edition (Poulet-Malassis et de Broise, 1861), page by page from its subpage for each poem; section names follow the transcribed table of contents. The scan itself and its title page were not seen. Section Tableaux parisiens. Poems that Wikisource gives only in the posthumous 1868 edition are taken from its 1868 transcription and filed under the section that edition assigns them."
+ },
+ {
+  "gid": 10363,
+  "match": {
+   "poets": [
+    "baudelaire"
+   ],
+   "collection": "Le Vin"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Charles Baudelaire",
+  "translator": "",
+  "title": "Les Fleurs du mal (1861): Le Vin",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "Poulet-Malassis et de Broise",
+  "year": "1861",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Les_Fleurs_du_mal_(1861)",
+   "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)",
+  "note": "French text from the fr.wikisource transcription of the second edition (Poulet-Malassis et de Broise, 1861), page by page from its subpage for each poem; section names follow the transcribed table of contents. The scan itself and its title page were not seen. Section Le Vin."
+ },
+ {
+  "gid": 10364,
+  "match": {
+   "poets": [
+    "baudelaire"
+   ],
+   "collection": "Fleurs du mal"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Charles Baudelaire",
+  "translator": "",
+  "title": "Les Fleurs du mal (1861): Fleurs du mal",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "Poulet-Malassis et de Broise",
+  "year": "1861",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Les_Fleurs_du_mal_(1861)",
+   "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)",
+  "note": "French text from the fr.wikisource transcription of the second edition (Poulet-Malassis et de Broise, 1861), page by page from its subpage for each poem; section names follow the transcribed table of contents. The scan itself and its title page were not seen. Section Fleurs du mal. Poems that Wikisource gives only in the posthumous 1868 edition are taken from its 1868 transcription and filed under the section that edition assigns them."
+ },
+ {
+  "gid": 10365,
+  "match": {
+   "poets": [
+    "baudelaire"
+   ],
+   "collection": "Révolte"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Charles Baudelaire",
+  "translator": "",
+  "title": "Les Fleurs du mal (1861): Révolte",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "Poulet-Malassis et de Broise",
+  "year": "1861",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Les_Fleurs_du_mal_(1861)",
+   "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)",
+  "note": "French text from the fr.wikisource transcription of the second edition (Poulet-Malassis et de Broise, 1861), page by page from its subpage for each poem; section names follow the transcribed table of contents. The scan itself and its title page were not seen. Section Révolte."
+ },
+ {
+  "gid": 10366,
+  "match": {
+   "poets": [
+    "baudelaire"
+   ],
+   "collection": "La Mort"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Charles Baudelaire",
+  "translator": "",
+  "title": "Les Fleurs du mal (1861): La Mort",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "Poulet-Malassis et de Broise",
+  "year": "1861",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Les_Fleurs_du_mal_(1861)",
+   "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)",
+  "note": "French text from the fr.wikisource transcription of the second edition (Poulet-Malassis et de Broise, 1861), page by page from its subpage for each poem; section names follow the transcribed table of contents. The scan itself and its title page were not seen. Section La Mort."
+ },
+ {
+  "gid": 10367,
+  "match": {
+   "poets": [
+    "baudelaire"
+   ],
+   "collection": "Les Épaves"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Charles Baudelaire",
+  "translator": "",
+  "title": "Les Épaves (1866)",
+  "volume": "",
+  "edition": "",
+  "place": "",
+  "publisher": "",
+  "year": "1866",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Épaves_(Baudelaire,_1866)",
+   "url": "https://fr.wikisource.org/wiki/%C3%89paves_(Baudelaire,_1866)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/%C3%89paves_(Baudelaire,_1866)",
+  "note": "French text of the eleven poems found only in Les Épaves (1866), among them the six poems condemned in 1857, from the fr.wikisource transcription (Épaves (Baudelaire, 1866)). Épaves poems that Baudelaire also printed in the 1868 edition are filed with that edition's text instead. The scan and its title page were not seen."
+ },
+ {
+  "gid": 10368,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre I"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre I",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book I of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
+ },
+ {
+  "gid": 10369,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre II"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre II",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book II of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
+ },
+ {
+  "gid": 10370,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre III"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre III",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book III of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
+ },
+ {
+  "gid": 10371,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre IV"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre IV",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book IV of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
+ },
+ {
+  "gid": 10372,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre V"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre V",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book V of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
+ },
+ {
+  "gid": 10373,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre VI"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre VI",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book VI of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
+ },
+ {
+  "gid": 10374,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre VII"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre VII",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book VII of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
+ },
+ {
+  "gid": 10375,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre VIII"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre VIII",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book VIII of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
+ },
+ {
+  "gid": 10376,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre IX"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre IX",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book IX of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
+ },
+ {
+  "gid": 10377,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre X"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre X",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book X of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
+ },
+ {
+  "gid": 10378,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre XI"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre XI",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book XI of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
+ },
+ {
+  "gid": 10379,
+  "match": {
+   "poets": [
+    "la-fontaine"
+   ],
+   "collection": "Fables, livre XII"
+  },
+  "type": "online-edition",
+  "author_or_editor": "Jean de La Fontaine",
+  "translator": "",
+  "title": "Fables de La Fontaine (éd. 1874), livre XII",
+  "volume": "",
+  "edition": "",
+  "place": "Paris",
+  "publisher": "Bernardin-Béchet, Libraire-Éditeur",
+  "year": "1874",
+  "series": "",
+  "digital": {
+   "name": "fr.wikisource.org",
+   "id": "Fables_de_La_Fontaine_(éd._1874)",
+   "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)"
+  },
+  "confidence": "probable",
+  "sure": false,
+  "text": "Wikisource (CC BY-SA)",
+  "url": "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)",
+  "note": "French text of Book XII of the Fables, from the fr.wikisource transcription of the Bernardin-Béchet edition (Paris, 1874). Footnotes and note markers of that edition are left out. The scan and its title page were not seen. Text public domain."
  }
 ]
