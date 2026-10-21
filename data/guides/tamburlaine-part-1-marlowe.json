@@ -1,0 +1,940 @@
+{
+ "work": "tamburlaine-part-1-marlowe",
+ "title": "Tamburlaine the Great, Part 1",
+ "author": "Christopher Marlowe",
+ "quoteEdition": "tamburlaine-part-1-marlowe",
+ "unit": "Scene",
+ "updated": "2026-10-21",
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Christopher Marlowe (1564–1593), shoemaker's son from Canterbury and Cambridge graduate, who made his name in London with this play"
+  },
+  {
+   "label": "Genre",
+   "value": "Heroic drama of conquest in blank verse, with a few passages of prose; often called a tragedy, though its hero ends the play in triumph"
+  },
+  {
+   "label": "Written and first performed",
+   "value": "About 1587, by the Lord Admiral's Men, with Edward Alleyn in the title role; Part 2 followed within a year"
+  },
+  {
+   "label": "First printed",
+   "value": "1590, in a single octavo with Part 2, published anonymously by Richard Jones, who cut some comic material; Marlowe's authorship rests on external evidence"
+  },
+  {
+   "label": "Setting",
+   "value": "Persia, Asia Minor (Bithynia), and the Egyptian Soldan's lands around Damascus, in the late fourteenth century"
+  },
+  {
+   "label": "Historical basis",
+   "value": "The career of Timur (1336–1405), the Central Asian conqueror who defeated the Ottoman sultan Bayezid I at Ankara in 1402"
+  },
+  {
+   "label": "Main sources",
+   "value": "Pedro Mexía's Silva de varia lección (1540), read in Thomas Fortescue's English version The Foreste (1571); Petrus Perondinus's Latin life of Tamerlane (1553); Ortelius's atlas, Theatrum Orbis Terrarum (1570)"
+  },
+  {
+   "label": "Verse",
+   "value": "Unrhymed iambic pentameter, which the Prologue sets against the 'jigging veins' of rhymed popular drama; Ben Jonson later praised 'Marlowe's mighty line'"
+  },
+  {
+   "label": "Structure",
+   "value": "A Prologue and five acts in seventeen scenes, moving through three campaigns: Persia (Acts I–II), the Turks (Act III), Egypt and Damascus (Acts IV–V)"
+  },
+  {
+   "label": "Sequel",
+   "value": "Tamburlaine the Great, Part 2, which carries the story to the deaths of Zenocrate and Tamburlaine, is held on Poetry Codex as a separate work"
+  }
+ ],
+ "context": [
+  "Christopher Marlowe was born in Canterbury in 1564, the son of a shoemaker, and studied at Corpus Christi College, Cambridge, on a scholarship meant for future clergymen. He took his MA in 1587, the year in which Tamburlaine seems to have reached the London stage. The play, acted by the Lord Admiral's Men with the young Edward Alleyn as its hero, was an immediate and lasting success. Its popularity produced a second part within a year, and both were printed together in 1590 without the author's name. Marlowe was killed at Deptford in 1593, and in six years he had changed what English tragedy could sound like [[riggs2004]] [[cheney2004]].",
+  "The historical Timur (1336–1405), known in Persian as Timur-i Lang, 'Timur the Lame', from which Europe made 'Tamerlane', was a Turco-Mongol chieftain of the Barlas tribe from near Kesh in Transoxiana. From his capital at Samarkand he built an empire stretching from Anatolia to northern India. He sacked Damascus, then held by the Mamluk sultans of Egypt, in 1401, and on 28 July 1402 he defeated the Ottoman sultan Bayezid I, called Yıldırım, 'the Thunderbolt', near Ankara. Bayezid, who had been blockading Constantinople, died in captivity the next year. Timur was no shepherd but a member of his tribe's lesser nobility: the play's 'Scythian shepherd' comes from European tradition, which loved the tale of a man of nothing who humbled the greatest monarch of the age.",
+  "Marlowe's sources were humanist histories rather than Eastern chronicles. Pedro Mexía's Spanish miscellany, translated by Thomas Fortescue as The Foreste (1571), gave him the shepherd origin, the three coloured tents of white, red and black, and Bajazeth kept in a cage and used as a footstool; the Latin life of Tamerlane by Petrus Perondinus (1553) added the terrible, magnetic hero. For geography he used Abraham Ortelius's atlas, and the play's long marches can be traced across its maps. Marlowe also reshaped history freely: he makes the defeat of Bajazeth come before the siege of Damascus, invents the Egyptian princess Zenocrate, and ends with marriage and a truce rather than death [[thomas1994]] [[cunningham1981]].",
+  "The play arrived on a stage dominated by rhymed fourteeners, clowning and jigs. Blank verse already existed in English, in Surrey's translation of the Aeneid and in the academic tragedy Gorboduc (1561), but Marlowe made it the voice of the popular theatre. His line is usually end-stopped, swollen with sonorous place names, catalogues and comparisons to the gods, and driven forward by rhetorical amplification. Contemporaries felt its force immediately: rivals mocked its bombast, Shakespeare's Pistol parodied it, and Jonson's phrase 'Marlowe's mighty line' became its permanent name [[levin1952]] [[wright1988]] [[steane1964]].",
+  "Part 1 ends at the height of Tamburlaine's fortune: he has made himself king of Persia, emperor of Africa, and husband-to-be of Zenocrate, and declares a truce with all the world. Part 2, written after the first part's success, shows the cost of that triumph: Zenocrate's death, the killing of his own son, the burning of the Koran, and the conqueror's death from sickness. Critics argue over whether the two plays form one design or whether Part 2 is a sequel that reinterprets the first. Reading Part 1 on its own, as Elizabethan audiences first did, means facing a play that refuses to punish its hero [[battenhouse1941]] [[cunningham1981]]."
+ ],
+ "plot": [
+  "The weak king Mycetes of Persia sends his captain Theridamas to capture Tamburlaine, a Scythian shepherd turned bandit, while his brother Cosroe accepts the crown from discontented nobles. Tamburlaine, who has just seized the Egyptian princess Zenocrate and her treasure, wins over Theridamas by speech alone. He joins Cosroe, defeats Mycetes, and then, having tasted the idea of being king, turns on Cosroe and kills him, taking the Persian crown for himself.",
+  "The Ottoman emperor Bajazeth, besieging Constantinople, warns Tamburlaine to keep out of Africa. Meanwhile Zenocrate discovers that she loves her captor, and the Median lord Agydas, who urges her to resist, is driven to suicide by Tamburlaine's silent anger. Tamburlaine meets Bajazeth in Bithynia, defeats him and his tributary kings, and takes Bajazeth and his empress Zabina prisoner, while Zenocrate and Zabina trade insults over the battle.",
+  "Tamburlaine marches on Damascus, a city of Zenocrate's father, the Soldan of Egypt. He carries Bajazeth in a cage, uses him as a footstool, and taunts him at a banquet, crowning his followers kings of Argier, Fez and Morocco. Zenocrate pleads for her father's city, but Tamburlaine keeps his custom of the white, red and black tents. When the Governor sends out four virgins to beg for mercy on the day of black, he has them killed and the city sacked.",
+  "Alone, Tamburlaine reflects on beauty and on Zenocrate's grief. Bajazeth and Zabina, left in despair, dash out their brains against the cage. Tamburlaine defeats the Soldan and the King of Arabia, Zenocrate's former betrothed, who dies in her presence; he spares the Soldan, restores his lands, crowns Zenocrate Queen of Persia, and proclaims a truce with all the world. The story continues in Part 2, held separately as tamburlaine-part-2-marlowe."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "Prologue: a new kind of play",
+   "lines": "Prologue (the whole speech)",
+   "section": 0,
+   "summary": [
+    "In eight lines the Prologue tells the audience what they are leaving behind and what they will see. Instead of the 'jigging veins of rhyming mother-wits' and the jokes that clowns are paid to make, they will be taken to the 'stately tent of war' to hear the Scythian Tamburlaine threatening the world in 'high astounding terms' and scourging kingdoms with his sword.",
+    "The speaker ends by offering the play as a 'tragic glass', a mirror, and leaves the audience free to 'applaud his fortunes' as they please."
+   ],
+   "analysis": [
+    "The Prologue is a manifesto. It rejects both the jingle of rhymed popular verse and the clown's improvisation, and it promises that the hero will conquer through language as much as through arms: we shall 'hear' him before we see him fight. The play's own verse proves the point in these very lines.",
+    "The last couplet is carefully neutral. A 'glass' was the usual image for a moral example, but this one gives no lesson. The audience must decide whether to admire or condemn, and the whole history of the play's criticism follows from that refusal to judge [[levin1952]] [[cunningham1981]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., Prologue",
+     "quote": "From jigging veins of rhyming mother-wits,\nAnd such conceits as clownage keeps in pay,",
+     "note": "The rejected old style: rhymed verse by untrained native wits and the clown's paid jokes."
+    },
+    {
+     "ref": "1 Tamb., Prologue",
+     "quote": "View but his picture in this tragic glass,\nAnd then applaud his fortunes as you please.",
+     "note": "The play as a mirror without a moral: judgement is left to the audience."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Act I, Scene 1: the foolish king and the new crown",
+   "lines": "Act I, Scene 1 (the whole scene)",
+   "section": 1,
+   "summary": [
+    "At the Persian court King Mycetes complains about Tamburlaine, a 'sturdy Scythian thief' who robs merchants on the borders, but he is too inarticulate to explain his own grievance and asks his brother Cosroe to do it for him. Cosroe instead mocks the king's folly and laments Persia's decline. Mycetes sends Theridamas with a thousand horse to capture Tamburlaine.",
+    "When Mycetes leaves, Cosroe reveals that Persian nobles and captains plan to crown him. Ortygius and Ceneus enter with a crown, list his new titles from Media to the Caspian, and hail him emperor. Cosroe accepts and resolves to join the army of Theridamas."
+   ],
+   "analysis": [
+    "The play begins without its hero and with a king who cannot speak. Mycetes's opening admission that his grief 'requires a great and thundering speech' he cannot supply sets up the central idea: in this world, the power to command depends on the power of words. The play's first scene is a comic study of a vacuum waiting to be filled.",
+    "Cosroe's coronation also matters. Crowns here are not sacred: they are handed over by nobles and soldiers who want pay and glory. The ease with which Persia changes kings prepares the audience to accept Tamburlaine's later seizure of the same crown."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 1.1",
+     "quote": "Yet insufficient to express the same,\nFor it requires a great and thundering speech:",
+     "note": "Mycetes's confession of verbal weakness, ironic in a play whose hero is all 'thundering speech'."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Act I, Scene 2: the shepherd, the princess and the captain",
+   "lines": "Act I, Scene 2 (the whole scene)",
+   "section": 2,
+   "summary": [
+    "Tamburlaine enters with Zenocrate, daughter of the Soldan of Egypt, whom he has captured with her treasure. He tells her he is a lord by his deeds and a shepherd by birth, throws off his shepherd's clothes for armour, and woos her with promises of empire. When a thousand Persian horsemen under Theridamas arrive, he does not fight: he displays his gold and speaks.",
+    "His speech to Theridamas, promising that they will reign as 'consuls of the earth', wins the Persian captain over. Theridamas defects with all his men, and the Median lords and Zenocrate submit, she unwillingly."
+   ],
+   "analysis": [
+    "This is the first and greatest display of persuasion as conquest. Tamburlaine claims to hold the Fates in chains and turn Fortune's wheel, and the claim seems to come true on stage because Theridamas yields to it. The scene also introduces the friendship of Tamburlaine, Techelles and Usumcasane, whose loyalty is rewarded throughout with crowns.",
+    "The changing of costume dramatizes the play's social argument. Tamburlaine does not deny his birth; he insists that deeds make nobility. Zenocrate's final line, 'I must be pleas'd perforce', reminds us that his first conquest of love is also an abduction, a fact the play never fully forgets [[bartels1993]] [[greenblatt1980]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 1.2",
+     "quote": "I am a lord, for so my deeds shall prove;\nAnd yet a shepherd by my parentage.",
+     "note": "Tamburlaine's self-definition: nobility as achievement, not inheritance."
+    },
+    {
+     "ref": "1 Tamb., 1.2",
+     "quote": "I hold the Fates bound fast in iron chains,\nAnd with my hand turn Fortune's wheel about;",
+     "note": "The boast that reverses the medieval image of Fortune turning men on her wheel."
+    },
+    {
+     "ref": "1 Tamb., 1.2",
+     "quote": "Won with thy words, and conquer'd with thy looks,",
+     "note": "Theridamas yields to language and presence, not to force."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Act II, Scene 1: Menaphon's portrait",
+   "lines": "Act II, Scene 1 (the whole scene)",
+   "section": 3,
+   "summary": [
+    "Cosroe, marching to join Theridamas and Tamburlaine, asks Menaphon what the Scythian looks like. Menaphon gives a long description: tall, broad-shouldered, pale, with fiery eyes, curling amber hair and long sinewy arms. Cosroe promises to make Tamburlaine his regent once they defeat Mycetes."
+   ],
+   "analysis": [
+    "Menaphon's blazon turns the hero into an emblem. His body is 'lift upwards' like his desire, his eyes hold 'a heaven of heavenly bodies', and his hair curls like that of Akhilleus in Homer. The description echoes Mexía's and Perondinus's accounts of Tamerlane but magnifies them into a figure of destiny.",
+    "There is dramatic irony in Cosroe's confidence. He calls Tamburlaine 'his fortune's master', without imagining that the man will soon master Cosroe's fortune too."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 2.1",
+     "quote": "Of stature tall, and straightly fashioned,\nLike his desire, lift upwards and divine;",
+     "note": "The physical body as an image of aspiration."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Act II, Scene 2: Mycetes prepares for battle",
+   "lines": "Act II, Scene 2 (the whole scene)",
+   "section": 4,
+   "summary": [
+    "Mycetes rages against his brother and Tamburlaine and leaves the planning to Meander, who proposes to scatter gold on the battlefield so that the greedy Tartars will stop to gather it and can be slaughtered. A spy reports that the Scythian army is larger than the king's."
+   ],
+   "analysis": [
+    "Meander's classical simile of the dragon's-teeth warriors puzzles Mycetes, whose reply, 'tis a pretty toy to be a poet', shows a king to whom eloquence is a mere ornament. The contrast with Tamburlaine, for whom poetry is a weapon, could not be sharper.",
+    "The plan to buy victory with gold also misjudges the enemy. Tamburlaine's men, as the play has shown, are moved by promises of crowns, not by scattered coins."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 2.2",
+     "quote": "And 'tis a pretty toy to be a poet.",
+     "note": "Mycetes dismisses poetry as a trifle, in a play where words win kingdoms."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Act II, Scene 3: Tamburlaine before the battle",
+   "lines": "Act II, Scene 3 (the whole scene)",
+   "section": 5,
+   "summary": [
+    "Cosroe asks Tamburlaine what will come of their attempt. Tamburlaine answers that the fates have sworn to 'royalize' his deeds and describes an army greater than Xerxes's, whose bullets and lances will threaten the gods. Theridamas comments on his 'working words'. A messenger announces the enemy, and Tamburlaine leads the charge."
+   ],
+   "analysis": [
+    "The scene repeats the pattern of the play: speech first, then action that seems to fulfil it. Theridamas's remark tells the audience how to watch Tamburlaine, as a man whose words 'work', but also hints that action must 'top his speech' if the words are to be believed.",
+    "Cosroe still thinks Tamburlaine serves him. The phrase 'more than needs to make an emperor', spoken in the scene's last lines, already carries a double sense."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 2.3",
+     "quote": "You see, my lord, what working words he hath;",
+     "note": "Theridamas names the play's central power: language that acts."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Act II, Scene 4: Mycetes hides his crown",
+   "lines": "Act II, Scene 4 (the whole scene)",
+   "section": 6,
+   "summary": [
+    "Alone on the battlefield, Mycetes curses the inventor of war and decides to hide his crown in a hole so that no one will know him as king. Tamburlaine finds him, takes the crown, mocks him in a short exchange, and then hands it back for the moment, promising to take it from him in battle."
+   ],
+   "analysis": [
+    "This is the play's most openly comic scene, and possibly a survivor of the comic material the printer says he removed. Mycetes treats the crown as an object to be hidden, while Tamburlaine treats it as a prize to be won; the episode makes the crown the play's central stage property.",
+    "Tamburlaine's lending of the crown is a calculated insult. He will not take it by theft: he wants it as a trophy of open conquest."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 2.4",
+     "quote": "Accurs'd be he that first invented war!",
+     "note": "The coward king's cry, an ironic echo of a commonplace in a play that glorifies war."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Act II, Scene 5: 'Is it not passing brave to be a king?'",
+   "lines": "Act II, Scene 5 (the whole scene)",
+   "section": 7,
+   "summary": [
+    "After the victory Cosroe crowns himself, names Tamburlaine regent, and leaves for Persepolis. Meander's flattering phrase 'ride in triumph through Persepolis' catches Tamburlaine's imagination. He asks his friends whether they would be kings, and decides, half as a jest, to take the Persian crown from Cosroe. He sends Techelles to challenge Cosroe to battle."
+   ],
+   "analysis": [
+    "A single line, repeated and savoured, turns ambition into a plan. Tamburlaine's betrayal of his ally is not hidden or excused; it is presented as a sudden, almost playful choice, made because the idea of kingship is beautiful. Theridamas's claim that a king is more glorious than a god shows the company's values plainly.",
+    "Critics have seen in this scene either the exhilarating self-creation of the Renaissance individual or the cynicism of a world where loyalty means nothing once a better offer appears [[greenblatt1980]] [[dollimore1984]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 2.5",
+     "quote": "Is it not passing brave to be a king,\nAnd ride in triumph through Persepolis?",
+     "note": "The play's most famous refrain: kingship as splendid spectacle."
+    },
+    {
+     "ref": "1 Tamb., 2.5",
+     "quote": "To be a king is half to be a god.",
+     "note": "Usumcasane's line, which Theridamas immediately outbids."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Act II, Scene 6: Cosroe's outrage",
+   "lines": "Act II, Scene 6 (the whole scene)",
+   "section": 8,
+   "summary": [
+    "Cosroe and his lords prepare to fight Tamburlaine. Cosroe compares him to the giants who piled up mountains against Jupiter; Meander suggests that some divine or infernal power mixed in his conception; Ortygius calls on them to resist him whatever star governs him."
+   ],
+   "analysis": [
+    "The enemies give the most vivid account of Tamburlaine's transgression. They can only explain him as superhuman, devilish or monstrous, and their uncertainty about his origin mirrors the audience's own. The giants' revolt against heaven is a recurring image, and here it carries a warning that the play will not, in Part 1, enforce."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 2.6",
+     "quote": "What means this devilish shepherd, to aspire\nWith such a giantly presumption,",
+     "note": "Cosroe sees Tamburlaine as a new Titan rebelling against heaven."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Act II, Scene 7: the aspiring mind",
+   "lines": "Act II, Scene 7 (the whole scene)",
+   "section": 9,
+   "summary": [
+    "Cosroe, mortally wounded, curses Tamburlaine and Theridamas. Tamburlaine justifies himself by the example of Jove, who overthrew his father Saturn, and by nature, which teaches all men to have 'aspiring minds'. Cosroe dies, and Tamburlaine puts on his crown, acclaimed by his followers as king of Persia."
+   ],
+   "analysis": [
+    "This is the play's most quoted speech. It moves from the war of the four elements within the body to the soul's power to measure the heavens and climb 'after knowledge infinite', and then lands on 'the sweet fruition of an earthly crown'. Readers disagree over whether that last line is a deliberate anticlimax, exposing the narrowness of Tamburlaine's desire, or a genuine climax, in which the crown represents the fullest possible earthly achievement [[levin1952]] [[steane1964]].",
+    "The justification is pagan: Jove's revolt against Saturn becomes a precedent, not a sin. Tamburlaine's closing joke, that the crown sits more surely on his head than if the gods had held a parliament, sets force above all forms of legitimacy."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 2.7",
+     "quote": "Nature, that fram'd us of four elements\nWarring within our breasts for regiment,\nDoth teach us all to have aspiring minds:",
+     "note": "Restlessness grounded in the physiology of the four elements."
+    },
+    {
+     "ref": "1 Tamb., 2.7",
+     "quote": "That perfect bliss and sole felicity,\nThe sweet fruition of an earthly crown.",
+     "note": "The disputed climax of the aspiring-mind speech."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Act III, Scene 1: Bajazeth at Constantinople",
+   "lines": "Act III, Scene 1 (the whole scene)",
+   "section": 10,
+   "summary": [
+    "Bajazeth, emperor of the Turks, with the kings of Fez, Morocco and Argier, is besieging Constantinople. He sends a basso, an envoy, to forbid Tamburlaine to set foot in Africa or Greece, and describes his plans to cut off the city's water and batter its walls."
+   ],
+   "analysis": [
+    "Bajazeth is introduced in a scene that parallels Tamburlaine's own: a great ruler surrounded by kings, speaking in titles and hyperbole. The difference is that his greatness is inherited and catalogued, while Tamburlaine's is made. The siege of Constantinople is historical, and English audiences would have known that the city fell to the Ottomans in 1453; the play shows Tamburlaine interrupting a conquest that history merely postponed [[vitkus2003]] [[burton2005]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 3.1",
+     "quote": "Dread lord of Afric, Europe, and Asia,\nGreat king and conqueror of Graecia,",
+     "note": "Bajazeth's titles, inherited greatness set against Tamburlaine's self-made claims."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Act III, Scene 2: Zenocrate and Agydas",
+   "lines": "Act III, Scene 2 (the whole scene)",
+   "section": 11,
+   "summary": [
+    "Agydas finds Zenocrate pale and troubled and learns that she now loves Tamburlaine and fears he no longer cares for her. He reminds her of her betrothed, the King of Arabia, and warns her that Tamburlaine will talk only of slaughter. Tamburlaine overhears, takes Zenocrate away without a word, and glares at Agydas. Techelles brings Agydas a dagger; he understands the message and stabs himself."
+   ],
+   "analysis": [
+    "The scene charts Zenocrate's change from captive to lover, which the play presents as real but leaves open to question. Tamburlaine's silence is its most frightening moment: a hero defined by speech now commands by looks and a naked blade. Agydas's long simile of the seaman before a storm shows how deeply Tamburlaine's mere presence works on others.",
+    "Techelles and Usumcasane praise the suicide as 'manly' and give Agydas an honourable burial, an early sign of the cruelty concealed under the code of honour [[kuriyama1980]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 3.2",
+     "quote": "Who, when he shall embrace you in his arms,\nWill tell how many thousand men he slew;",
+     "note": "Agydas's warning about Tamburlaine as lover."
+    },
+    {
+     "ref": "1 Tamb., 3.2",
+     "quote": "For words are vain where working tools present\nThe naked action of my threaten'd end:",
+     "note": "For once Tamburlaine needs no words: the dagger speaks."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Act III, Scene 3: the defeat of Bajazeth",
+   "lines": "Act III, Scene 3 (the whole scene)",
+   "section": 12,
+   "summary": [
+    "Tamburlaine and Bajazeth meet in Bithynia, exchange boasts and insults, and seat their consorts, Zenocrate and Zabina, on thrones to wait for the result. While the battle is fought offstage the two women quarrel, each promising to make the other a servant. Tamburlaine returns victorious; his captains bring the crowns of the three tributary kings; Zabina's crown is given to Zenocrate; and Bajazeth and Zabina are bound and led away."
+   ],
+   "analysis": [
+    "The scene is built on symmetry. The two emperors match boast with boast, and the women's quarrel mirrors the men's battle, until the victory makes the symmetry collapse. Tamburlaine calls himself 'the scourge and wrath of God' and promises to free the Christian galley-slaves, which made him, for an English audience, an ambiguous ally against the Turk.",
+    "His speech planning a fleet from Persepolis to Mexico and around the British shore shows his ambition reaching the map of Marlowe's own world. Bajazeth's cry to 'sleepy Mahomet' begins the play's questioning of whether any god watches over these events [[bartels1993]] [[burton2005]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 3.3",
+     "quote": "I that am term'd the scourge and wrath of God,\nThe only fear and terror of the world,",
+     "note": "Tamburlaine adopts the medieval title 'scourge of God' (flagellum Dei)."
+    },
+    {
+     "ref": "1 Tamb., 3.3",
+     "quote": "And dar'st thou bluntly call me Tamburlaine?",
+     "note": "Tamburlaine turns Bajazeth's own insult back on him, word for word."
+    },
+    {
+     "ref": "1 Tamb., 3.3",
+     "quote": "O Mahomet! O sleepy Mahomet!",
+     "note": "The defeated emperor's sense that his god has failed him."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Act IV, Scene 1: the Soldan of Egypt",
+   "lines": "Act IV, Scene 1 (the whole scene)",
+   "section": 13,
+   "summary": [
+    "At Memphis the Soldan of Egypt hears that Tamburlaine is besieging Damascus and holds Zenocrate as his concubine. A messenger describes the enormous Scythian army and Tamburlaine's custom: on the first day his tents are white, offering mercy; on the second red, threatening the deaths of all who bear arms; on the third black, meaning death to everyone."
+   ],
+   "analysis": [
+    "The three colours, taken from Mexía, give the second half of the play its clock. Once they are announced, every delay at Damascus brings the city nearer to the black day. The Soldan's contempt for a 'peasant' who 'usurps the glorious name of war' shows that the old order still cannot imagine what Tamburlaine is."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 4.1",
+     "quote": "Black are his colours, black pavilion;",
+     "note": "The third day of the siege: no mercy for anyone."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Act IV, Scene 2: the footstool",
+   "lines": "Act IV, Scene 2 (the whole scene)",
+   "section": 14,
+   "summary": [
+    "Bajazeth is brought in a cage. Tamburlaine forces him to lie down and steps on his back to mount his throne, celebrating himself as the scourge who treads on emperors. Zabina protests and Bajazeth curses him. Tamburlaine orders that Bajazeth be kept in his cage, fed with scraps, and carried in triumph wherever he goes. Before Damascus he announces the meaning of his white tents, and refuses Zenocrate's plea for mercy for her father's city."
+   ],
+   "analysis": [
+    "The footstool is the play's most famous image of humiliation and the clearest staging of a world turned upside down: the hereditary emperor is literally under the shepherd's feet. Tamburlaine imagines himself as a sun fixed at its meridian, a cosmic image that also hints at the decline that follows noon.",
+    "Bajazeth's warning that 'ambitious pride' will make Tamburlaine fall belongs to the old tragedy of Fortune, which the play keeps invoking and keeps refusing to fulfil in Part 1."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 4.2",
+     "quote": "And be the footstool of great Tamburlaine,\nThat I may rise into my royal throne.",
+     "note": "The emperor as stepping-stone to the shepherd's throne."
+    },
+    {
+     "ref": "1 Tamb., 4.2",
+     "quote": "The ages that shall talk of Tamburlaine,\nEven from this day to Plato's wondrous year,\nShall talk how I have handled Bajazeth:",
+     "note": "Cruelty as a bid for lasting fame."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Act IV, Scene 3: the Soldan and the King of Arabia",
+   "lines": "Act IV, Scene 3 (the whole scene)",
+   "section": 15,
+   "summary": [
+    "The Soldan joins forces with the King of Arabia, Zenocrate's betrothed, to relieve Damascus. They hear of Bajazeth's captivity and vow revenge for it and for Zenocrate's dishonour, and Capolin reports their combined army."
+   ],
+   "analysis": [
+    "The scene is brief and formal, a counterweight to Tamburlaine's camp. The Soldan's comparisons to Meleager and the Calydonian boar make Tamburlaine a monster to be hunted, but the audience already knows that such heroic expectations have failed every enemy so far. Again he is called 'the scourge of God', now by a foe who means it as an insult."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 4.3",
+     "quote": "The scum of men, the hate and scourge of God,",
+     "note": "The Soldan's version of the title Tamburlaine had claimed with pride."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Act IV, Scene 4: the banquet of crowns",
+   "lines": "Act IV, Scene 4 (the whole scene)",
+   "section": 16,
+   "summary": [
+    "Tamburlaine, dressed in scarlet, holds a banquet before Damascus. He taunts the caged Bajazeth with food on the point of his sword and jokes with his captains about Bajazeth eating his own flesh or his wife. Zenocrate pleads again for her father; Tamburlaine replies that he will redraw the map of the world in their names, but promises only to spare the Soldan's person. A course of crowns is served, and he crowns Theridamas, Techelles and Usumcasane kings of Argier, Fez and Morocco."
+   ],
+   "analysis": [
+    "The banquet mixes the grotesque and the ceremonial. The prose of the taunting, unusual in the play, lowers the tone to the brutal humour of the camp, while the verse of the crowning returns to high rhetoric. Tamburlaine's claim that 'virtue is the fount whence honour springs' is the play's clearest statement of nobility by merit, spoken over a starving captive.",
+    "His image of reducing the world 'with this pen' to a map shows how closely his conquests follow the new cartography of Ortelius [[cunningham1981]] [[riggs2004]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 4.4",
+     "quote": "I will confute those blind geographers\nThat make a triple region in the world,",
+     "note": "Tamburlaine as map-maker, rejecting the old three-continent world."
+    },
+    {
+     "ref": "1 Tamb., 4.4",
+     "quote": "For virtue is the fount whence honour springs,\nAnd they are worthy she investeth kings.",
+     "note": "Nobility as a reward for valour, not birth."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "Act V, Scene 1: Damascus, the deaths of Bajazeth and Zabina, and the crowning of Zenocrate",
+   "lines": "Act V, Scene 1 (the whole scene)",
+   "section": 17,
+   "summary": [
+    "The Governor of Damascus sends four virgins with laurel branches to plead for mercy. Tamburlaine, in black, shows them Death sitting on his sword-point and has them killed and hoisted on the walls. Alone, he reflects on Zenocrate's tears and on beauty, which no poet's words can fully express, and concludes that virtue alone makes true nobility. Left alone, Bajazeth and Zabina despair; Bajazeth dashes his brains out against the cage, and Zabina, raving, does the same.",
+    "Zenocrate laments the slaughter of the virgins and the deaths of the Turkish emperor and empress and prays that her lover be pardoned. The Soldan and the King of Arabia are defeated; Arabia dies at her feet. Tamburlaine spares the Soldan, restores his kingdom, and crowns Zenocrate Queen of Persia. He declares a truce with all the world and orders the funerals to be followed by his marriage."
+   ],
+   "analysis": [
+    "The longest scene of the play sets its extremes side by side. The killing of the virgins is Tamburlaine's most terrible act, and it is followed directly by his most lyrical speech, on beauty as the 'one thought, one grace, one wonder' beyond words. The juxtaposition is the crux of every reading: is the beauty speech a softening of the tyrant, or proof that tenderness and cruelty live in the same imagination?",
+    "Zenocrate's refrain 'Behold the Turk and his great emperess!' turns the suicides into a lesson about the fragility of earthly power, a lesson she directs, gently, at her own lover. Yet the play ends not with his fall but with marriage and peace. The tragedy of Fortune has been staged on Bajazeth; for Tamburlaine it is postponed to Part 2 [[cole1962]] [[kuriyama1980]] [[bartels1993]]."
+   ],
+   "key": [
+    {
+     "ref": "1 Tamb., 5.1",
+     "quote": "For there sits Death; there sits imperious Death,\nKeeping his circuit by the slicing edge.",
+     "note": "Tamburlaine's reply to the virgins: Death as his servant."
+    },
+    {
+     "ref": "1 Tamb., 5.1",
+     "quote": "One thought, one grace, one wonder, at the least,\nWhich into words no virtue can digest.",
+     "note": "The limit of language, admitted by the play's master of words."
+    },
+    {
+     "ref": "1 Tamb., 5.1",
+     "quote": "Behold the Turk and his great emperess!",
+     "note": "Zenocrate's refrain over the bodies of Bajazeth and Zabina."
+    },
+    {
+     "ref": "1 Tamb., 5.1",
+     "quote": "For Tamburlaine takes truce with all the world.",
+     "note": "The play's ending in triumph, which Part 2 will undo."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Tamburlaine",
+   "side": "Protagonist",
+   "text": "A Scythian shepherd who rises by eloquence, charisma and force to be king of Persia, conqueror of the Turks and master of Egypt. He is generous to friends, devoted to Zenocrate, and utterly merciless to anyone who resists. He believes himself the agent of the stars and the 'scourge of God', and he speaks in the high, sonorous verse that made Marlowe famous. The play neither punishes nor fully endorses him."
+  },
+  {
+   "name": "Zenocrate",
+   "side": "Tamburlaine's camp",
+   "text": "Daughter of the Soldan of Egypt, captured by Tamburlaine on her way to her betrothed. She comes to love her captor, and their love is the one tender bond in the play, but she pleads for her father's city and is horrified by the deaths of the virgins and of Bajazeth and Zabina. Her laments supply the play's nearest thing to a moral conscience. She is crowned Queen of Persia at the end."
+  },
+  {
+   "name": "Theridamas",
+   "side": "Tamburlaine's camp",
+   "text": "Mycetes's chief captain, sent to capture Tamburlaine, who is won over by his words and becomes his most trusted follower. He is crowned king of Argier."
+  },
+  {
+   "name": "Techelles and Usumcasane",
+   "side": "Tamburlaine's camp",
+   "text": "Tamburlaine's first companions, Scythians who follow him from the start for the promise of crowns. Bluff, loyal and brutal in their humour, they are crowned kings of Fez and Morocco."
+  },
+  {
+   "name": "Mycetes",
+   "side": "Persia",
+   "text": "The foolish king of Persia, who cannot express his own grievance and tries to hide his crown in a hole during the battle. A comic figure whose incompetence makes the Persian throne available."
+  },
+  {
+   "name": "Cosroe",
+   "side": "Persia",
+   "text": "Mycetes's ambitious brother, crowned by the discontented nobles. He allies with Tamburlaine to overthrow his brother and is then overthrown and killed by him."
+  },
+  {
+   "name": "Meander, Menaphon, Ortygius and Ceneus",
+   "side": "Persia",
+   "text": "Persian lords. Meander advises Mycetes and then serves Cosroe; Menaphon gives the famous description of Tamburlaine; Ortygius and Ceneus bring Cosroe the crown."
+  },
+  {
+   "name": "Bajazeth",
+   "side": "Ottoman Empire",
+   "text": "Emperor of the Turks, based on the historical Bayezid I. Proud of his inherited titles and vast army, he is defeated, caged, used as a footstool and starved, and finally kills himself against the bars of his cage. His curses and despair give him an unexpected tragic stature."
+  },
+  {
+   "name": "Zabina",
+   "side": "Ottoman Empire",
+   "text": "Bajazeth's empress, who quarrels with Zenocrate before the battle and shares her husband's captivity. Her mad prose speech before her suicide is one of the most striking moments of the play."
+  },
+  {
+   "name": "Kings of Fez, Morocco and Argier",
+   "side": "Ottoman Empire",
+   "text": "Bajazeth's tributary kings, killed in battle; their crowns go to Tamburlaine's captains."
+  },
+  {
+   "name": "The Soldan of Egypt",
+   "side": "Egypt and Arabia",
+   "text": "Zenocrate's father, the ruler of Egypt and Damascus, who marches to rescue her. Defeated, he is spared for her sake and accepts Tamburlaine as son-in-law."
+  },
+  {
+   "name": "The King of Arabia",
+   "side": "Egypt and Arabia",
+   "text": "Zenocrate's first betrothed (called Alcidamus in Act I), who joins the Soldan and dies of his wounds in her presence."
+  },
+  {
+   "name": "Agydas and Magnetes",
+   "side": "Media",
+   "text": "Median lords escorting Zenocrate. Agydas tries to turn her against Tamburlaine and is driven to suicide by his silent anger."
+  },
+  {
+   "name": "The Governor of Damascus and the Virgins",
+   "side": "Damascus",
+   "text": "The Governor holds out too long and then sends four virgins to plead for mercy on the day of the black tents; they are killed and the city sacked."
+  },
+  {
+   "name": "Anippe, Ebea, Capolin and Philemus",
+   "side": "Minor figures",
+   "text": "Zenocrate's maid, Zabina's maid, an Egyptian lord, and a messenger."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Aspiration and the aspiring mind",
+   "text": [
+    "The play's driving force is desire without limit. Tamburlaine's speech over the dying Cosroe grounds this desire in nature itself: the elements war within us and the soul climbs after 'knowledge infinite'. Marlowe gives this restlessness the full splendour of his verse, and the audience feels its attraction.",
+    "Yet the object of so much aspiration is a crown, and much of the criticism of the play turns on whether that is a glorious or a disappointing end. Harry Levin's phrase for Marlowe's heroes, 'overreachers', captures the ambiguity: they reach beyond human limits, but the reaching may be its own reward [[levin1952]] [[greenblatt1980]]."
+   ]
+  },
+  {
+   "title": "Words as power",
+   "text": [
+    "Tamburlaine conquers Theridamas without a blow and wins Zenocrate by promises. His enemies, by contrast, are poor speakers (Mycetes), merely formal (the Soldan), or eloquent only in defeat (Bajazeth). The play makes rhetoric the first instrument of power, and the Prologue's promise of 'high astounding terms' is fulfilled as action.",
+    "The limits of words also matter. Agydas dies before a dagger that needs no speech, and in his beauty speech Tamburlaine himself admits a 'wonder' that words cannot digest."
+   ]
+  },
+  {
+   "title": "Kingship, legitimacy and the crown",
+   "text": [
+    "Crowns are passed round the stage like props: offered to Cosroe, hidden by Mycetes, lent and taken by Tamburlaine, served as a course at the banquet, and placed on Zenocrate's head. Kingship has no sacred basis here; it belongs to whoever can seize and hold it.",
+    "For an Elizabethan audience taught that rebellion against an anointed king was a sin, the spectacle of a shepherd who makes and unmakes kings without divine punishment was startling. Critics have read the play as a celebration of self-made power or as a demystification of monarchy [[dollimore1984]] [[shepherd1986]]."
+   ]
+  },
+  {
+   "title": "Birth and virtue",
+   "text": [
+    "Tamburlaine insists that he is a lord by deeds and a shepherd by birth, and he rewards his low-born followers with crowns because 'virtue is the fount whence honour springs'. The beauty speech ends with the same claim, that virtue alone fashions true nobility. Coming from a shoemaker's son, the argument has been read as Marlowe's own [[riggs2004]].",
+    "But 'virtue' here means something close to the Italian virtù: valour, force and will. The play's nobility of merit is also a nobility of the sword."
+   ]
+  },
+  {
+   "title": "Beauty, love and cruelty",
+   "text": [
+    "Zenocrate is Tamburlaine's one tenderness, and his love for her is sincere. Yet she is first his captive, and her pleas for Damascus are refused. The play places its most lyrical speech immediately after its most cruel act, forcing the audience to hold the two together.",
+    "Zenocrate's laments give the play a voice of pity that it never fully adopts but never silences [[kuriyama1980]] [[bartels1993]]."
+   ]
+  },
+  {
+   "title": "Fortune, the heavens and the scourge of God",
+   "text": [
+    "Medieval tragedy taught that Fortune raises men only to throw them down. Tamburlaine boasts that he turns Fortune's wheel himself, and in Part 1 he is right: Fortune's victims are Mycetes, Cosroe and Bajazeth. He calls himself the 'scourge of God', a title that could mean an instrument of divine punishment, destined to be thrown away when his work is done.",
+    "Whether the heavens approve him, use him, or are absent altogether is left open. Bajazeth's 'sleepy Mahomet' and Zabina's cry that there is 'no Mahomet, no God' raise questions that Part 2 takes further [[battenhouse1941]] [[cole1962]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Crowns",
+   "text": "More than any other object, crowns pass from hand to hand: Cosroe's crown, Mycetes's hidden crown, the crowns of Bajazeth's kings, the banquet of crowns, and Zenocrate's coronation. Each exchange marks a shift of power and shows kingship as something won, given or taken."
+  },
+  {
+   "title": "The white, red and black tents",
+   "text": "Tamburlaine's custom of signalling mercy, partial slaughter and total destruction by the colours of his tents and dress gives the Damascus scenes their relentless time-scheme. Zabina's mad cry of 'white, red, black' shows how deeply the system has entered his victims' minds."
+  },
+  {
+   "title": "Gods, giants and Titans",
+   "text": "Tamburlaine compares himself to Jove overthrowing Saturn; his enemies compare him to the giants who piled mountains against heaven. The same myth serves as justification and as warning."
+  },
+  {
+   "title": "Maps and marches",
+   "text": "The verse is full of place names, from the Caspian to Mexico and the 'Straits of Jubalter'. Tamburlaine plans fleets and routes like a reader of an atlas and promises to redraw the map in his own and Zenocrate's names."
+  },
+  {
+   "title": "Eating and hunger",
+   "text": "The banquet, the scraps fed to Bajazeth, the jokes about cannibalism and Bajazeth's starving body make hunger the image of utter subjection, in contrast to Tamburlaine's appetite for kingdoms."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The cage and the footstool",
+   "text": "Bajazeth's cage and his use as a footstool, both from Mexía, make the reversal of rank visible on stage. The hereditary emperor becomes an exhibit, and the cage at last becomes the means of his death."
+  },
+  {
+   "title": "The shepherd's weeds and the armour",
+   "text": "Tamburlaine's casting off of his shepherd's clothes for armour in his first scene symbolizes his self-creation: identity is something one can put on."
+  },
+  {
+   "title": "Death on the sword-point",
+   "text": "Tamburlaine's image of 'imperious Death' sitting on his sword makes him the master of Death, not its subject. It is the boast that Part 2 will most directly overturn."
+  },
+  {
+   "title": "The pen and the map",
+   "text": "The pen with which Tamburlaine will 'reduce' the world to a map links conquest with writing and with the new cartography, and perhaps also with the playwright's own power to create worlds."
+  },
+  {
+   "title": "The sun at noon",
+   "text": "Tamburlaine as 'the chiefest lamp of all the earth', 'fixed now in the meridian line', is an image of triumph at its height, and, to an audience aware of the sun's course, of the decline that must follow."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Hero or monster: does the play judge Tamburlaine?",
+   "text": [
+    "Early twentieth-century critics, such as Una Ellis-Fermor, read the play as an expression of Marlowe's own soaring aspiration, and the hero as a figure of Renaissance energy. Roy Battenhouse answered in 1941 that the two parts, taken together, form an orthodox moral design in which Tamburlaine is a 'scourge of God' used by heaven and finally destroyed [[ellisfermor1930]] [[battenhouse1941]].",
+    "Most later critics have found the play more divided than either view allows. Harry Levin saw Marlowe's heroes as 'overreachers' whose grandeur and folly are inseparable; Douglas Cole stressed the suffering the play makes visible; recent readers emphasize that Part 1, at least, withholds the punishment a moral reading requires [[levin1952]] [[cole1962]] [[cunningham1981]]."
+   ],
+   "cite": [
+    "ellisfermor1930",
+    "battenhouse1941",
+    "levin1952",
+    "cole1962",
+    "cunningham1981"
+   ]
+  },
+  {
+   "title": "'The sweet fruition of an earthly crown': climax or anticlimax?",
+   "text": [
+    "The aspiring-mind speech rises from the elements to the heavens and then lands on a crown. Some critics hear deliberate bathos, Marlowe exposing the gap between the soul's infinite reach and the narrow goal of power. Others argue that for Tamburlaine the crown is no lowering of aim but the very form that infinite desire takes in the world [[levin1952]] [[steane1964]].",
+    "Stephen Greenblatt placed the speech within a Renaissance culture of restless self-fashioning, in which desire is endlessly renewed and never satisfied, so that each crown is only the next step [[greenblatt1980]]."
+   ],
+   "cite": [
+    "levin1952",
+    "steane1964",
+    "greenblatt1980"
+   ]
+  },
+  {
+   "title": "Subversion and the politics of the play",
+   "text": [
+    "Was Tamburlaine dangerous? Robert Greene's jibe in 1588 at the 'atheist Tamburlan' daring God out of heaven suggests that some contemporaries thought so. Cultural materialist critics have read the play as exposing the ideology of divine kingship: if a shepherd can become a king by force, monarchy rests on power rather than sanctity [[dollimore1984]] [[shepherd1986]].",
+    "Others reply that the play's spectacle of conquest fed Elizabethan dreams of expansion and was safe precisely because it was set in the East, where tyranny was expected [[bartels1993]]."
+   ],
+   "cite": [
+    "dollimore1984",
+    "shepherd1986",
+    "bartels1993"
+   ]
+  },
+  {
+   "title": "The Turks, Islam and the East",
+   "text": [
+    "Bajazeth's empire was the great power of Marlowe's day, and England was opening trade and diplomatic contacts with the Ottomans in the 1580s. Critics have asked how the play represents Turks and Muslims. Tamburlaine frees Christian galley-slaves and humiliates the sultan, which flattered English fears; yet the play also gives Bajazeth and Zabina a dignity in suffering that complicates any simple hostility [[vitkus2003]] [[burton2005]].",
+    "Emily Bartels argued that the play's 'strangeness' is a mirror for English imperial ambition: Tamburlaine's map-making and conquests reflect European rather than Eastern desires, and the boundary between civilized and barbarous is constantly blurred [[bartels1993]]."
+   ],
+   "cite": [
+    "vitkus2003",
+    "burton2005",
+    "bartels1993"
+   ]
+  },
+  {
+   "title": "Zenocrate: conscience, captive or ornament?",
+   "text": [
+    "Zenocrate has been read as the play's moral centre, whose pity tempers Tamburlaine; as a captive whose love is a form of submission; and as a decorative figure who justifies the hero's tenderness. Her laments over Damascus and the Turkish captives are the play's longest expressions of doubt about conquest, but they change nothing [[kuriyama1980]] [[hopkins2008]].",
+    "Psychoanalytic and feminist readers have connected her with Tamburlaine's fear of 'effeminate' feeling in the beauty speech, which he masters by turning beauty into another conquest [[kuriyama1980]]."
+   ],
+   "cite": [
+    "kuriyama1980",
+    "hopkins2008"
+   ]
+  },
+  {
+   "title": "Structure: episodic pageant or design?",
+   "text": [
+    "The play has often been called episodic: a series of conquests, each repeating the pattern of boast, battle and triumph. David Bevington related its structure to the popular Tudor drama of successive episodes, adapted from the morality play's sequence of temptations and victims [[bevington1962]].",
+    "Defenders of its design point to the ordered progression of enemies, each more powerful than the last (a fool, a usurper, an emperor, a sultan), and to the clock of the three colours, which gives the second half its suspense [[cunningham1981]] [[thomas1994]]."
+   ],
+   "cite": [
+    "bevington1962",
+    "cunningham1981",
+    "thomas1994"
+   ]
+  },
+  {
+   "title": "Reception: from bombast to revival",
+   "text": [
+    "The play's success was immediate. Henslowe's diary records frequent revivals of both parts by the Admiral's Men in 1594–95, with Edward Alleyn as the hero, and imitations of conquering, ranting heroes followed for a decade. Its style was mocked as quickly as it was copied: Thomas Nashe sneered at the 'drumming decasyllabon' of the new blank verse, Shakespeare's Pistol garbles a line from Part 2, and Jonson later scorned the 'scenical strutting' of the Tamerlanes even while praising 'Marlowe's mighty line' [[foakes2002]] [[cheney2004]].",
+    "After the seventeenth century the play was hardly acted for three hundred years and was read as a great but crude poem. Modern revivals have rediscovered its theatrical power: Tyrone Guthrie's Old Vic production with Donald Wolfit (1951), Peter Hall's with Albert Finney at the National Theatre (1976), and Terry Hands's for the Royal Shakespeare Company with Antony Sher (1992). Directors usually join and cut the two parts, and the questions of how to stage the cage, the slaughter of the virgins and the play's Muslim characters have kept it controversial [[cunningham1981]] [[hopkins2008]]."
+   ],
+   "cite": [
+    "foakes2002",
+    "cheney2004",
+    "cunningham1981",
+    "hopkins2008"
+   ]
+  },
+  {
+   "title": "One play or two?",
+   "text": [
+    "The Prologue to Part 2 says that the 'general welcomes' given to the first part brought the poet to write a second, which suggests that Part 1 was conceived as complete. If so, its ending in triumph is not a pause but a conclusion, and the moral reckoning of Part 2 is a later reinterpretation.",
+    "Others argue that the 'scourge of God' theme, the sun at noon and the warnings of Fortune already point to a fall and that the two parts should be read as a single ten-act tragedy. Editors usually print them together, but the question of how much Part 1 knows about Part 2 remains open [[battenhouse1941]] [[cunningham1981]]."
+   ],
+   "cite": [
+    "battenhouse1941",
+    "cunningham1981"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "1 Tamb., Prologue",
+   "quote": "Threatening the world with high astounding terms,",
+   "who": "Prologue",
+   "explanation": "The promise of a new theatrical language. Tamburlaine's threats are made first of all in words, and the 'astounding' terms are those of Marlowe's blank verse."
+  },
+  {
+   "ref": "1 Tamb., 1.2",
+   "quote": "I am a lord, for so my deeds shall prove;\nAnd yet a shepherd by my parentage.",
+   "who": "Tamburlaine",
+   "explanation": "Tamburlaine to Zenocrate. He does not hide his low birth but makes deeds the measure of rank, the principle behind his whole career."
+  },
+  {
+   "ref": "1 Tamb., 1.2",
+   "quote": "I hold the Fates bound fast in iron chains,\nAnd with my hand turn Fortune's wheel about;",
+   "who": "Tamburlaine",
+   "explanation": "To Theridamas. The traditional tragic image of Fortune's wheel is reversed: the hero turns it rather than being turned by it."
+  },
+  {
+   "ref": "1 Tamb., 2.5",
+   "quote": "Is it not passing brave to be a king,\nAnd ride in triumph through Persepolis?",
+   "who": "Tamburlaine",
+   "explanation": "Taking up Meander's phrase, Tamburlaine decides to seize Cosroe's crown. Kingship is desired as splendour and spectacle, and the line's music does the persuading."
+  },
+  {
+   "ref": "1 Tamb., 2.7",
+   "quote": "Still climbing after knowledge infinite,\nAnd always moving as the restless spheres,",
+   "who": "Tamburlaine",
+   "explanation": "From the aspiring-mind speech over the dying Cosroe. The soul's restlessness is compared to the perpetual motion of the heavens, before the speech descends to 'an earthly crown'."
+  },
+  {
+   "ref": "1 Tamb., 3.3",
+   "quote": "I that am term'd the scourge and wrath of God,\nThe only fear and terror of the world,",
+   "who": "Tamburlaine",
+   "explanation": "Tamburlaine claims the medieval title of the conqueror as divine instrument. The title cuts both ways: a scourge punishes on God's behalf but is itself discarded."
+  },
+  {
+   "ref": "1 Tamb., 4.2",
+   "quote": "Great Tamburlaine, great in my overthrow,\nAmbitious pride shall make thee fall as low,",
+   "who": "Bajazeth",
+   "explanation": "Bajazeth, under Tamburlaine's feet, speaks the language of the old tragedy of Fortune. In Part 1 the prophecy remains unfulfilled."
+  },
+  {
+   "ref": "1 Tamb., 4.4",
+   "quote": "For virtue is the fount whence honour springs,\nAnd they are worthy she investeth kings.",
+   "who": "Tamburlaine",
+   "explanation": "Crowning his low-born captains. The play's doctrine of nobility by merit, spoken over the starving Bajazeth."
+  },
+  {
+   "ref": "1 Tamb., 5.1",
+   "quote": "If all the pens that ever poets held\nHad fed the feeling of their masters' thoughts,",
+   "who": "Tamburlaine",
+   "explanation": "The opening of the beauty speech, spoken just after the slaughter of the virgins. Even all of poetry combined would leave one wonder unexpressed."
+  },
+  {
+   "ref": "1 Tamb., 5.1",
+   "quote": "Ah, Tamburlaine my love, sweet Tamburlaine,\nThat fight'st for sceptres and for slippery crowns,",
+   "who": "Zenocrate",
+   "explanation": "Zenocrate over the bodies of Bajazeth and Zabina. 'Slippery crowns' answers 'the sweet fruition of an earthly crown' with the moral of Fortune's fall."
+  }
+ ],
+ "questions": [
+  {
+   "q": "What does the Prologue reject, and what does it promise? How far does the rest of the play keep those promises?",
+   "hint": "Think about rhymed verse, clowning, the word 'hear', and the open-ended 'applaud his fortunes as you please'."
+  },
+  {
+   "q": "How does Tamburlaine win Theridamas in Act I, Scene 2, and what does this scene suggest about the relation between language and power?",
+   "hint": "Compare Mycetes's inability to speak in 1.1 and Theridamas's comment on 'working words' in 2.3."
+  },
+  {
+   "q": "Is 'the sweet fruition of an earthly crown' a climax or an anticlimax?",
+   "hint": "Trace the movement of the speech in 2.7 from the elements to the spheres to the crown, and decide whether the last line is undercut."
+  },
+  {
+   "q": "How does the play treat the legitimacy of kings? Consider every moment in which a crown changes hands.",
+   "hint": "Cosroe's coronation, Mycetes hiding his crown, Tamburlaine crowning himself, the banquet of crowns, Zenocrate's coronation."
+  },
+  {
+   "q": "Compare Tamburlaine and Bajazeth. In what ways are they alike, and how does the play differentiate them?",
+   "hint": "Look at their boasts in 3.3, their titles, and the source of their power."
+  },
+  {
+   "q": "What role do Zenocrate's speeches play in the work's moral design?",
+   "hint": "Her change of heart in 3.2, her pleas in 4.2 and 4.4, and her lament in 5.1 with its refrain."
+  },
+  {
+   "q": "Why does Marlowe place the beauty speech immediately after the killing of the virgins?",
+   "hint": "Consider whether the speech softens Tamburlaine, or shows that beauty and cruelty belong to the same imagination; notice his worry about 'effeminate' thoughts."
+  },
+  {
+   "q": "How does the play represent the Ottoman Turks and Islam? Is its attitude simply hostile?",
+   "hint": "Consider Tamburlaine's promise to free Christian galley-slaves, Bajazeth's appeals to Mahomet, and the dignity given to Bajazeth and Zabina in their final speeches."
+  },
+  {
+   "q": "Does Part 1 punish its hero? What does its ending suggest about the need for a Part 2?",
+   "hint": "Look at the warnings of Fortune, the 'scourge of God' title, and the final 'truce with all the world'."
+  },
+  {
+   "q": "What are the features of Marlowe's 'mighty line'? Choose one speech and analyse its rhythm, imagery and rhetoric.",
+   "hint": "Look for end-stopping, place names, mythological comparison, catalogues and repetition; 2.7 or 4.2 make good examples."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "bartels1993",
+   "text": "Bartels, Emily C. Spectacles of Strangeness: Imperialism, Alienation, and Marlowe. Philadelphia: University of Pennsylvania Press, 1993."
+  },
+  {
+   "id": "battenhouse1941",
+   "text": "Battenhouse, Roy W. Marlowe's Tamburlaine: A Study in Renaissance Moral Philosophy. Nashville: Vanderbilt University Press, 1941."
+  },
+  {
+   "id": "bevington1962",
+   "text": "Bevington, David M. From 'Mankind' to Marlowe: Growth of Structure in the Popular Drama of Tudor England. Cambridge, MA: Harvard University Press, 1962."
+  },
+  {
+   "id": "burton2005",
+   "text": "Burton, Jonathan. Traffic and Turning: Islam and English Drama, 1579–1624. Newark: University of Delaware Press, 2005."
+  },
+  {
+   "id": "cheney2004",
+   "text": "Cheney, Patrick, ed. The Cambridge Companion to Christopher Marlowe. Cambridge: Cambridge University Press, 2004."
+  },
+  {
+   "id": "cole1962",
+   "text": "Cole, Douglas. Suffering and Evil in the Plays of Christopher Marlowe. Princeton: Princeton University Press, 1962."
+  },
+  {
+   "id": "cunningham1981",
+   "text": "Cunningham, J. S., ed. Tamburlaine the Great. By Christopher Marlowe. The Revels Plays. Manchester: Manchester University Press, 1981."
+  },
+  {
+   "id": "dollimore1984",
+   "text": "Dollimore, Jonathan. Radical Tragedy: Religion, Ideology and Power in the Drama of Shakespeare and His Contemporaries. Brighton: Harvester Press, 1984."
+  },
+  {
+   "id": "ellisfermor1930",
+   "text": "Ellis-Fermor, U. M., ed. Tamburlaine the Great, in Two Parts. By Christopher Marlowe. London: Methuen, 1930."
+  },
+  {
+   "id": "foakes2002",
+   "text": "Foakes, R. A., ed. Henslowe's Diary. 2nd ed. Cambridge: Cambridge University Press, 2002."
+  },
+  {
+   "id": "greenblatt1980",
+   "text": "Greenblatt, Stephen. Renaissance Self-Fashioning: From More to Shakespeare. Chicago: University of Chicago Press, 1980."
+  },
+  {
+   "id": "hopkins2008",
+   "text": "Hopkins, Lisa. Christopher Marlowe, Renaissance Dramatist. Edinburgh: Edinburgh University Press, 2008."
+  },
+  {
+   "id": "kuriyama1980",
+   "text": "Kuriyama, Constance Brown. Hammer or Anvil: Psychological Patterns in Christopher Marlowe's Plays. New Brunswick, NJ: Rutgers University Press, 1980."
+  },
+  {
+   "id": "levin1952",
+   "text": "Levin, Harry. The Overreacher: A Study of Christopher Marlowe. Cambridge, MA: Harvard University Press, 1952."
+  },
+  {
+   "id": "riggs2004",
+   "text": "Riggs, David. The World of Christopher Marlowe. London: Faber and Faber, 2004."
+  },
+  {
+   "id": "shepherd1986",
+   "text": "Shepherd, Simon. Marlowe and the Politics of Elizabethan Theatre. Brighton: Harvester Press, 1986."
+  },
+  {
+   "id": "steane1964",
+   "text": "Steane, J. B. Marlowe: A Critical Study. Cambridge: Cambridge University Press, 1964."
+  },
+  {
+   "id": "thomas1994",
+   "text": "Thomas, Vivien, and William Tydeman, eds. Christopher Marlowe: The Plays and Their Sources. London: Routledge, 1994."
+  },
+  {
+   "id": "vitkus2003",
+   "text": "Vitkus, Daniel. Turning Turk: English Theater and the Multicultural Mediterranean, 1570–1630. New York: Palgrave Macmillan, 2003."
+  },
+  {
+   "id": "wright1988",
+   "text": "Wright, George T. Shakespeare's Metrical Art. Berkeley: University of California Press, 1988."
+  }
+ ]
+}
