@@ -4,6 +4,8 @@ Run after every publish (after the rebuild commit), from the repository root:
 
     python tools/sync_r2.py            # upload what changed, delete what was removed
     python tools/sync_r2.py --dry-run  # show what would happen, change nothing
+    python tools/sync_r2.py --mark-synced  # record HEAD as already uploaded (after a verified full sync)
+    python tools/sync_r2.py --full     # ignore the upload manifest: checksum every file and list the bucket
 
 It uses rclone with a remote named "r2" (an S3 remote for Cloudflare R2). The keys are the
 owner's R2 API token, which he saves once in his own terminal, so they never pass through
@@ -30,6 +32,7 @@ import tempfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUCKET = "r2:poetrycodex-site"
 ACCOUNT_ID = "1f203135a377d2295a7c788481062f11"   # the Cloudflare account (not a secret)
+MANIFEST = os.environ.get("R2_MANIFEST", os.path.join(os.path.dirname(ROOT), "work", "r2-manifest.json"))
 
 
 def saved_env(name):
@@ -110,33 +113,78 @@ def main():
         r = subprocess.run([sys.executable, "-I", os.path.join(ROOT, "tools", "build_shards.py"), "--root", src], cwd=ROOT)
         if r.returncode:
             sys.exit("build_shards failed")
-        for sub in ("c", "ws"):
+        # The list pages and the search index (tools/build_lists.py, data/l/ and data/s/) are
+        # derived the same way, from the committed data/index.json of that copy.
+        r = subprocess.run([sys.executable, "-I", os.path.join(ROOT, "tools", "build_lists.py"), "--root", src], cwd=ROOT)
+        if r.returncode:
+            sys.exit("build_lists failed")
+        for sub in ("c", "ws", "l", "s"):
             base = os.path.join(src, "data", sub)
             for dirpath, _, names in os.walk(base):
                 for n in names:
                     files.append(os.path.relpath(os.path.join(dirpath, n), src).replace(os.sep, "/"))
         files.sort()
         print(f"{len(files)} files with the shards", flush=True)
-        common = ["--transfers", "32", "--checkers", "64", "--fast-list", "--stats", "30s", "--stats-one-line"]
+        common = ["--transfers", "32", "--checkers", "64", *(["--bwlimit", os.environ["R2_BWLIMIT"]] if os.environ.get("R2_BWLIMIT") else []), "--fast-list", "--stats", "30s", "--stats-one-line"]
         if dry:
             common.append("--dry-run")
+        # Cost control (22 Oct 2026): R2 bills every write/list (Class A) and every read/HEAD
+        # (Class B). A manifest of what was uploaded last time (path -> sha1, kept outside the
+        # repo) lets a normal publish upload only the changed files with --no-check-dest (no
+        # per-file HEAD) and delete only what disappeared, without listing the bucket.
+        # --full, or a missing manifest, falls back to the old checksum sync + listing once.
+        import hashlib, json
+        def sha(path):
+            h = hashlib.sha1()
+            with open(path, "rb") as fh:
+                for block in iter(lambda: fh.read(1 << 20), b""):
+                    h.update(block)
+            return h.hexdigest()
+        now = {f: sha(os.path.join(src, f)) for f in files}
+        if "--mark-synced" in sys.argv:
+            # The bucket is known to match HEAD (a full sync just finished): record it without
+            # touching R2 at all.
+            tmpm = MANIFEST + ".tmp"
+            with open(tmpm, "w", encoding="utf-8") as fh:
+                json.dump(now, fh)
+            os.replace(tmpm, MANIFEST)
+            print(f"Manifest written for {len(now)} files; nothing uploaded.")
+            return
+        prev = None
+        if "--full" not in sys.argv and os.path.exists(MANIFEST):
+            with open(MANIFEST, encoding="utf-8") as fh:
+                prev = json.load(fh)
+        # A list's _.json and the search manifest name the pages and the index version they
+        # need, so they go up with the pages, after the files they name.
+        later = lambda f: f.endswith(".html") or f == "sw.js" or (f.startswith("data/l/") and f.endswith("/_.json")) or f == "data/s/manifest.json"
+        if prev is None:
+            print("No manifest (or --full): full checksum sync and bucket listing.", flush=True)
+            send, extra = files, ["--checksum", "--no-traverse"]
+        else:
+            send = [f for f in files if prev.get(f) != now[f]]
+            extra = ["--no-traverse", "--no-check-dest"]
+            print(f"{len(send)} changed or new files to upload (manifest of {len(prev)})", flush=True)
         # Two passes: everything a page loads (app.js?v=N, styles.css, data, images) first, the
         # pages themselves and sw.js after, so no reader is sent a new page while the files it
         # names are still the old ones (a browser would keep that old copy under the new ?v=N).
-        later = lambda f: f.endswith(".html") or f == "sw.js"
-        for n, part in enumerate(([f for f in files if not later(f)], [f for f in files if later(f)])):
+        for n, part in enumerate(([f for f in send if not later(f)], [f for f in send if later(f)])):
+            if not part:
+                continue
             lst = os.path.join(tmp, f"files-{n}.txt")
             with open(lst, "w", encoding="utf-8", newline="\n") as fh:
                 fh.write("\n".join(part) + "\n")
-            r = run(["rclone", "copy", "--files-from", lst, "--checksum", "--no-traverse", *common, src, BUCKET])
+            r = run(["rclone", "copy", "--files-from", lst, *extra, *common, src, BUCKET])
             if r.returncode:
                 sys.exit(r.returncode)
         # Delete what the site no longer has (a renamed or removed page).
-        have = run(["rclone", "lsf", "-R", "--files-only", "--fast-list", BUCKET], capture_output=True, text=True)
-        if have.returncode:
-            sys.exit(have.returncode)
         keep = set(files)
-        gone = [k for k in have.stdout.splitlines() if k and k not in keep]
+        if prev is None:
+            have = run(["rclone", "lsf", "-R", "--files-only", "--fast-list", BUCKET], capture_output=True, text=True)
+            if have.returncode:
+                sys.exit(have.returncode)
+            gone = [k for k in have.stdout.splitlines() if k and k not in keep]
+        else:
+            gone = [k for k in prev if k not in keep]
         print(f"{len(gone)} files to delete from the bucket")
         if gone:
             dl = os.path.join(tmp, "gone.txt")
@@ -145,6 +193,11 @@ def main():
             r = run(["rclone", "delete", "--files-from", dl, *common, BUCKET])
             if r.returncode:
                 sys.exit(r.returncode)
+        if not dry:
+            tmpm = MANIFEST + ".tmp"
+            with open(tmpm, "w", encoding="utf-8") as fh:
+                json.dump(now, fh)
+            os.replace(tmpm, MANIFEST)
     print("R2 is in step with the repository." if not dry else "Dry run finished; nothing was changed.")
 
 

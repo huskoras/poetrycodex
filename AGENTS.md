@@ -523,6 +523,19 @@ Everything here is **public domain**, and it must stay that way.
    domain **and** the English translation published before 1931; the translation is what
    the site shows, with `translator` set. Prefer sources where the original is also
    available in clean text.
+3d. **World originals (owner's goal, 21 Oct 2026: "the single greatest poetry database … even a
+   million poems"; ruling by Hazlitt under the owner's delegation):** poems may now come in in
+   their ORIGINAL LANGUAGE for every tradition, on the Turkish rule: the poet died before 1956
+   (anonymous, classical and ancient texts are free), and the text is taken from a clean
+   public-domain edition or an openly licensed digitisation of public-domain texts (Wikisource,
+   Gutenberg and its national sister projects, archive.org scans under the two-scan rule, the
+   open classical corpora such as the chinese-poetry / Quan Tangshi datasets, Ganjoor-type
+   transcriptions of classical Persian, Aozora Bunko for Japanese). Never take a modern critical
+   edition's apparatus, a modern translation, or a living editor's normalisation that is itself
+   copyright. Each poem records `"language"` (ISO name, e.g. "French", "Classical Chinese") and,
+   where a pre-1931 English translation exists, it may be linked or added as its own record with
+   `translator`. Category = the tradition (French, German, Chinese & Japanese, …). Quality rules
+   stand: no OCR-garbled text, no apparatus, no duplicates (grep first lines across all files).
 4. **Poems only.** Never ingest as "poems": editors' introductions, footnotes, glossaries,
    textual-variant apparatus, transcriber's notes, publisher pages, tables of contents,
    biographies, letters, prose essays, or stage plays. Several sources bundle plays with

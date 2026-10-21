@@ -37,7 +37,11 @@ import json
 import os
 import re
 import shutil
+import sys
 import unicodedata
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from textlang import lang_code, needs_dir_auto  # noqa: E402  (a poem's language and writing direction)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://poetrycodex.com"
@@ -320,9 +324,25 @@ def cite_block(author, path, title="", work="", translator=""):
             f'      </section>')
 
 
-def text_lang(category, translator):
-    """Turkish and Ottoman poems in the original are Turkish; everything else is English."""
-    return "tr" if category == "Turkish & Ottoman" and not (translator or "").strip() else "en"
+def text_lang(category, translator, language=None):
+    """The language a text is in: a translation is English; an original with a `language`
+    (AGENTS.md rule 3d: on the poem or its poet; tools/textlang.py) is in that language;
+    Turkish and Ottoman poems in the original are Turkish; everything else is English."""
+    if (translator or "").strip():
+        return "en"
+    if language and lang_code(language):
+        return lang_code(language)
+    return "tr" if category == "Turkish & Ottoman" else "en"
+
+
+def lang_attrs(lang, text="", language=None):
+    """' lang="…"' for a text not in English, and, for a poem that has a `language` field
+    (the new world originals, rule 3d), dir="auto" when that language or the text is right to
+    left (the browser then sets each block from its first letter), as langAttr in app.js.
+    Poems without the field keep exactly the markup they had (a changed page is a paid R2
+    write: the owner's rule of 22 Oct 2026)."""
+    rtl = bool(language) and needs_dir_auto(lang, text)
+    return (f' lang="{lang}"' if lang != "en" else "") + (' dir="auto"' if rtl else "")
 
 
 def share_image(poet):
@@ -451,8 +471,8 @@ def more_by(poet, poems, n, author):
     items = []
     for j in picks:
         q = poems[j]
-        lang = text_lang(poet.get("category"), q.get("translator"))
-        la = f' lang="{lang}"' if lang != "en" else ""
+        lang = text_lang(poet.get("category"), q.get("translator"), q.get("language") or poet.get("language"))
+        la = lang_attrs(lang, q["title"], q.get("language") or poet.get("language"))
         items.append(f'<li><a href="/poem/{poet["slug"]}/{j}/"><span class="pl-title"{la}>{esc(q["title"])}</span></a></li>')
     return (f'<section class="poet-poems more-by"><h2>More by {esc(author)}</h2>'
             f'<ul class="poem-links">{"".join(items)}</ul></section>')
@@ -521,8 +541,8 @@ def poem_page(poet, poems, n, p):
     author = p["author"]
     slug = poet["slug"]
     subj = p.get("primarySubject") or ""
-    lang = text_lang(poet.get("category"), p.get("translator"))
-    lang_attr = f' lang="{lang}"' if lang != "en" else ""
+    lang = text_lang(poet.get("category"), p.get("translator"), p.get("language") or poet.get("language"))
+    lang_attr = lang_attrs(lang, title + " " + (p["text"] or "")[:1000], p.get("language") or poet.get("language"))
     themes = "".join(
         f'<span class="theme-tag">{esc(s)}</span>' for s in (p.get("subjects") or [])
     )
@@ -1181,9 +1201,9 @@ def main():
             urls.append(f"{SITE}/blog/{post['slug']}/")
     print(f"blog: {len(posts)} posts")
 
-    # Split into small child sitemaps behind one index. Google fetches each child
-    # separately, so no single file is large, and a failure in one does not hide the rest.
-    CHUNK = 1000
+    # Child sitemaps of 25,000 URLs (the limit is 50,000) behind one index, so Google reads
+    # the whole site in a handful of fetches (at 1,000 a file it had read 9 of ~137 in two weeks).
+    CHUNK = 25000
     chunks = [urls[i:i + CHUNK] for i in range(0, len(urls), CHUNK)]
     for old in [f for f in os.listdir(ROOT) if f.startswith("sitemap-") and f.endswith(".xml")]:
         os.remove(os.path.join(ROOT, old))
@@ -1204,6 +1224,7 @@ def main():
     write_poet_hub(POET_ROWS)
     write(os.path.join(ROOT, "404.html"), not_found_page())
     write_llms_txt(idx, guide_sets, posts)
+    update_home_meta(idx)
     print("sitemap index: " + str(len(chunks)) + " child sitemaps")
 
     print(f"poet pages: {poet_count}")
@@ -1381,6 +1402,27 @@ def write_llms_txt(idx, guide_sets, posts):
     text = llms_txt(idx, guide_sets, posts)
     write(os.path.join(ROOT, "llms.txt"), text)
     print("llms.txt: " + str(text.count("\n")) + " lines")
+
+def update_home_meta(idx):
+    """Keep the poem count in index.html's description and link-preview tags current
+    (rounded down to the thousand below a multiple of 5,000; never a count of poets)."""
+    n = idx.get("count") or len(idx.get("poems", []))
+    shown = f"{(n // 5000) * 5000:,}"
+    desc = (f"A free reading archive of poetry in the public domain: more than {shown} poems, from Homer "
+            "and Anglo-Saxon verse to the early twentieth century, with the great epics, ancient histories "
+            "and plays, study guides and line notes.")
+    og = (f"More than {shown} poems, from Homer and Anglo-Saxon verse to the early twentieth century. "
+          "Every text in the public domain, with study guides, line notes and the great epics in many translations.")
+    path = os.path.join(ROOT, "index.html")
+    with open(path, encoding="utf-8", newline="") as f:
+        old = f.read()
+    new = re.sub(r'(<meta name="description" content=")[^"]*(")', lambda m: m.group(1) + html.escape(desc, quote=True) + m.group(2), old, count=1)
+    for prop in ("og:description", "twitter:description"):
+        new = re.sub(r'(<meta (?:property|name)="' + prop + r'" content=")[^"]*(")', lambda m: m.group(1) + html.escape(og, quote=True) + m.group(2), new, count=1)
+    if new != old:
+        with open(path, "w", encoding="utf-8", newline="") as f:
+            f.write(new)
+    print("index.html meta: more than " + shown + " poems")
 
 if __name__ == "__main__":
     main()
