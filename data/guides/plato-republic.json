@@ -1,0 +1,901 @@
+{
+ "work": "plato-republic",
+ "title": "The Republic",
+ "author": "Plato",
+ "quoteEdition": "plato-republic-jowett",
+ "updated": "2026-10-21",
+ "glance": [
+  {
+   "label": "Composed",
+   "value": "Probably in the 380s or 370s BC, in the middle of Plato's career; some scholars think Book I was written earlier as a separate dialogue"
+  },
+  {
+   "label": "Dramatic date",
+   "value": "Uncertain: the conversation is set during the Peloponnesian War, sometime between the 420s and 411 BC, at a festival of the Thracian goddess Bendis"
+  },
+  {
+   "label": "Genre",
+   "value": "Philosophical dialogue, narrated in the first person by Socrates"
+  },
+  {
+   "label": "Greek title",
+   "value": "Politeia ('constitution' or 'way of life of a city'); the ancient subtitle is 'or On Justice'"
+  },
+  {
+   "label": "Setting",
+   "value": "The house of Cephalus, a wealthy resident alien, in the Piraeus, the harbour town of Athens"
+  },
+  {
+   "label": "Length",
+   "value": "Ten books, a division made by ancient editors; cited by Stephanus pages 327a–621d"
+  },
+  {
+   "label": "Main speakers",
+   "value": "Socrates, Glaucon and Adeimantus (Plato's brothers), Thrasymachus, Polemarchus, Cephalus"
+  },
+  {
+   "label": "Central question",
+   "value": "What is justice, and is the just life happier than the unjust, even if the just man has a reputation for injustice?"
+  },
+  {
+   "label": "Famous images",
+   "value": "The Ring of Gyges, the ship of state, the sun, the divided line, the Cave, the many-headed beast, the Myth of Er"
+  },
+  {
+   "label": "Translation quoted",
+   "value": "Benjamin Jowett, third edition (Oxford, 1892)"
+  }
+ ],
+ "context": [
+  "Plato (c. 427–347 BC) was born into a distinguished Athenian family and as a young man joined the circle around Socrates. He saw the oligarchy of the Thirty in 404 BC, in which some of his relatives took part, and the restored democracy which in 399 BC tried and executed Socrates on charges of impiety and corrupting the young. Plato wrote no treatises in his own voice: his works are dialogues, in most of which Socrates leads the conversation. Around 387 BC he founded the Academy, a school just outside Athens that lasted, in one form or another, for centuries.",
+  "The Republic is usually placed among Plato's 'middle' dialogues, after the short 'Socratic' works that test definitions and end in puzzlement, and before late works such as the Laws. Its first book has exactly the shape of those early dialogues, and some scholars have argued that it was first composed on its own; the remaining nine books then answer the question that Book I leaves unresolved. Here Socrates no longer simply questions others: he sets out, at length, a theory of the soul, of the ideal city and of the Forms, the eternal realities that Plato holds to be the true objects of knowledge [[annas1981]] [[schofield2006]].",
+  "The setting is carefully chosen. Socrates has gone down to the Piraeus, the busy port of Athens, to see a new festival for Bendis, a Thracian goddess. The house where the talk takes place belongs to Cephalus, a rich arms manufacturer from Syracuse living in Athens as a resident alien; his sons Polemarchus and Lysias (the future speech-writer) are present. Plato's first readers knew that the Thirty would later seize the family's fortune and put Polemarchus to death, so a conversation about justice is held under the shadow of a great injustice. Glaucon and Adeimantus, who carry the argument from Book II onward, were Plato's own brothers [[nails2002]].",
+  "The title in Greek, Politeia, means the constitution or ordering of a city, and in a wider sense a whole way of life. The dialogue is therefore not only a work of political theory. It asks how a human soul should be ordered, what education should form it, what can be known and how, and what place poetry, music and myth should hold in a good life. Because Homer and the tragic poets were the main educators of Greece, the Republic contains the most famous critique of poetry in the Western tradition, in Books II–III and again in Book X [[havelock1963]] [[halliwell2002]].",
+  "References to the Republic are given by the page numbers and section letters (a–e) of the Greek edition of Plato published by Henri Estienne (Stephanus) in Paris in 1578, which most translations print in their margins; the Republic runs from 327a to 621d, with the book number usually given first (so 7.514a is the opening of the Cave). Jowett's translation, quoted here, is a Victorian classic: graceful and still widely read, though freer than modern versions and sometimes softening Plato's terms. The standard Greek text is now that of Slings [[slings2003]] [[jowett1892]]."
+ ],
+ "plot": [
+  "Socrates and Glaucon, returning from a festival in the Piraeus, are persuaded to stay at the house of Cephalus. Asked what justice is, Cephalus suggests telling the truth and paying back what one owes; his son Polemarchus proposes helping friends and harming enemies; the sophist Thrasymachus bursts in to claim that justice is simply the interest of the stronger. Socrates refutes each in turn, but ends Book I admitting that he still does not know what justice is.",
+  "In Book II Glaucon and Adeimantus press the challenge harder. People, they say, value justice only for its rewards and reputation; give a man the Ring of Gyges, which makes him invisible, and he will behave unjustly. They ask Socrates to show that justice is good in itself, for the soul that has it. To find justice 'writ large', Socrates builds a city in speech: first a simple city of workers, then a 'luxurious' city that needs soldiers, the guardians. Books II–IV describe their education in music, poetry and gymnastics, the 'noble lie' of the metals, and the three classes of rulers, auxiliaries and producers. Justice in the city turns out to be each class doing its own work; justice in the soul, the harmony of reason, spirit and appetite.",
+  "Books V–VII answer three 'waves' of objection: that women can be guardians, that guardians should hold wives and children in common, and that the city can come into being only if philosophers become kings. This leads to the account of the philosopher, of knowledge and opinion, and of the Form of the Good, presented through the images of the sun, the divided line and the Cave, together with the long education that would produce philosopher-rulers.",
+  "Books VIII–IX describe the decline of the ideal city and soul through timocracy, oligarchy and democracy to tyranny, and conclude that the tyrant, the most unjust of men, is also the most wretched. Book X returns to poetry, banishing imitative poetry on new grounds, offers a proof that the soul is immortal, and ends with the Myth of Er, a soldier who returns from death to tell how souls are judged and choose their next lives."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "What Is Justice? Cephalus, Polemarchus, Thrasymachus",
+   "summary": [
+    "Socrates narrates how he went down to the Piraeus with Glaucon to see the festival of Bendis and was detained, half playfully, by Polemarchus and his friends. At the house of Polemarchus' father, the aged Cephalus, he asks what it is like to be old. Cephalus replies that age has freed him from the passions, and that his wealth chiefly helps him to die without having cheated anyone or owing sacrifices to the gods. Socrates turns this into a definition: is justice telling the truth and paying back what you owe? He objects that no one would return weapons to a friend who has gone mad. Cephalus leaves to attend to the sacrifices, handing on the argument to his son.",
+    "Polemarchus defends the poet Simonides' saying that justice is giving each his due, which he interprets as doing good to friends and harm to enemies. Socrates draws out a series of difficulties: justice seems to be useful only when things are not in use, the just man turns out to be a kind of thief, we may be mistaken about who our friends are, and harming anyone makes him worse, so that the just man would make others unjust. Justice, Socrates concludes, can never consist in harming anyone.",
+    "Thrasymachus, a professional teacher of rhetoric, has been waiting impatiently and now attacks. Justice, he declares, is the interest of the stronger: rulers make laws to suit themselves and call obedience just. Pressed, he refines his position: the ruler 'in the strict sense' never errs about his interest; justice is 'another's good', a fool's virtue, while injustice on a grand scale, tyranny, brings power and happiness. Socrates argues that every true art serves its subject, not its practitioner; that the just man is wise and good while the unjust is ignorant; that even a band of thieves needs some justice to act together; and that justice is the excellence of the soul, without which it cannot live well. Thrasymachus subsides, but Socrates is dissatisfied: he has argued about whether justice is profitable before knowing what it is."
+   ],
+   "analysis": [
+    "Book I is a miniature of the early Socratic dialogues: a question of the form 'What is X?', a series of definitions offered by people who think they know, and refutation (elenchus) leading to puzzlement (aporia). The three speakers form a careful sequence. Cephalus represents conventional, comfortable morality, inherited rather than examined; Polemarchus represents the traditional poetic wisdom of Greece; Thrasymachus represents the new, aggressive realism of the sophists, which treats morality as a mask for power. Each is more intellectually serious, and more dangerous, than the one before.",
+    "Thrasymachus is not easily dismissed, and many readers find Socrates' arguments against him weaker than his challenge. His claim that justice is 'another's good' anticipates later theories of ideology, and Socrates' replies often depend on analogies with crafts such as medicine and navigation that Thrasymachus could reasonably reject. Plato seems aware of this: the dissatisfaction Socrates voices at the end is the reason the dialogue continues for nine more books [[annas1981]] [[reeve1988]].",
+    "The opening words, 'I went down', have been read as programmatic. Socrates descends to the harbour, a place of trade, foreigners and democratic politics, as the philosopher in the Cave must 'go down' again to the prisoners, and as Er goes down to the world of the dead in Book X. The dialogue thus begins and ends with a descent [[strauss1964]] [[bloom1968]]."
+   ],
+   "key": [
+    {
+     "ref": "Rep. 1.327a",
+     "quote": "I went down yesterday to the Piraeus with Glaucon the son of Ariston, that I might offer up my prayers to the goddess",
+     "note": "The first sentence. The verb of descent, the festival of a foreign goddess and the presence of Plato's brother set the scene for a conversation held away from the centre of Athens."
+    },
+    {
+     "ref": "Rep. 1.329c",
+     "quote": "I feel as if I had escaped from a mad and furious master.",
+     "note": "Cephalus quotes the aged Sophocles on being freed from sexual desire. The image of desire as a tyrant inside the soul returns in full force in Books VIII–IX."
+    },
+    {
+     "ref": "Rep. 1.338c",
+     "quote": "I proclaim that justice is nothing else than the interest of the stronger.",
+     "note": "Thrasymachus' thesis, the most famous statement of moral cynicism in ancient philosophy."
+    },
+    {
+     "ref": "Rep. 1.354b–c",
+     "quote": "And the result of the whole discussion has been that I know nothing at all.",
+     "note": "Socratic ignorance closes the book, as it closes many early dialogues; here, however, it opens the way to a constructive answer."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Ring of Gyges and the Founding of the City",
+   "summary": [
+    "Glaucon is not satisfied with Thrasymachus' surrender. He distinguishes goods valued for themselves, goods valued for their results, and goods valued for both, and asks Socrates to show that justice belongs to the highest class. To sharpen the challenge, he restates the popular view: justice is a compromise among the weak, who agree not to wrong one another because they cannot wrong others with impunity. No one is just willingly. As proof he tells the story of Gyges, a Lydian shepherd who found a ring that made him invisible when he turned its collet inward; he used it to seduce the queen, murder the king and seize the throne. Anyone with such a ring, Glaucon says, would do the same. He then imagines a perfectly unjust man with a reputation for justice and a perfectly just man with a reputation for injustice, who is whipped, racked and finally impaled.",
+    "Adeimantus adds that even the defenders of justice, parents and poets, praise it only for its rewards in this life and the next, and that the poets teach that the gods can be bought off with sacrifices. He asks Socrates to praise justice for what it does to the soul of its possessor, leaving aside reputation altogether.",
+    "Socrates proposes to look for justice first in a city, where it will be written in larger letters, and then in the individual. A city arises from human needs, since no one is self-sufficient, and the principle of specialisation, one person one job, organises it. The first, simple city of farmers, builders and weavers lives in health and peace; Glaucon scorns it as a 'city of pigs'. Socrates then allows a luxurious, 'fevered' city, which will need more land, and so war, and so a class of professional soldiers, the guardians. These must be gentle to friends and fierce to enemies, like well-bred dogs, and their education must begin with the stories they hear as children. Socrates lays down the first rules for poets: the gods must be represented as good, as the cause only of good things, and as unchanging and truthful."
+   ],
+   "analysis": [
+    "Glaucon's challenge defines the task of the rest of the dialogue. The Ring of Gyges is a thought experiment: it removes the external consequences of action (punishment, reputation) and asks what remains. If justice is good only because we fear being caught, the ring dissolves it. Socrates must therefore show that justice is good for the soul in itself. The figure of the just man tortured and impaled for a reputation he does not deserve has often been compared with the fate of Socrates himself, and, by Christian readers, with the crucifixion.",
+    "The city-soul analogy introduced here is the central methodological move of the work. Socrates assumes that justice in a city and in a person are the same in form, so that the larger case can illuminate the smaller. Whether this assumption is justified, and whether the analogy works in both directions, is one of the great critical questions about the Republic [[williams1973]] [[ferrari2003]].",
+    "The critique of poetry begins not as aesthetics but as education and theology. Because children absorb stories before they can reason, and Homer and Hesiod are the stories every Greek knows, the founders must supervise the poets. Hesiod's tale of Cronus castrating his father, the gods' battles and deceptions in Homer, and Zeus disguised as a beggar are all to be excluded, not because they are badly made but because they teach falsehoods about the divine [[burnyeat1999]]."
+   ],
+   "key": [
+    {
+     "ref": "Rep. 2.359d",
+     "quote": "Gyges was a shepherd in the service of the king of Lydia; there was a great storm, and an earthquake made an opening in the earth at the place where he was feeding his flock.",
+     "note": "The beginning of the Ring of Gyges. A version of the story of Gyges, founder of the Lydian dynasty, is told differently by Herodotus (1.8–12), where there is no magic ring."
+    },
+    {
+     "ref": "Rep. 2.360a",
+     "quote": "when he turned the collet inwards he became invisible, when outwards he reappeared.",
+     "note": "Invisibility stands for freedom from consequences: the question is whether anyone would remain just if no one could ever see what he did."
+    },
+    {
+     "ref": "Rep. 2.372d",
+     "quote": "if you were providing for a city of pigs, how else would you feed the beasts?",
+     "note": "Glaucon's objection to the simple city forces Socrates to admit luxury, war and the guardians, and thus the whole political project of the dialogue."
+    },
+    {
+     "ref": "Rep. 2.380c",
+     "quote": "that God is not the author of all things, but of good only.",
+     "note": "The first 'law' for poets, which rules out Homer's picture of Zeus distributing evils from his jars (Iliad 24.527–533)."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Poetry, Music and the Noble Lie",
+   "summary": [
+    "Socrates continues to censor the poets in the interest of courage and self-control. Descriptions of the underworld as terrible must go, including the line in which the ghost of Akhilleus says he would rather be a labourer on earth than king among the dead, since they will make soldiers fear death. Heroes must not lament: Homer's pictures of Akhilleus rolling in ashes for Patroclus or of Priam grovelling in the dung are to be struck out, along with the 'unquenchable laughter' of the gods and any tale of heroes taking bribes.",
+    "Socrates then turns from content to form. All poetry is narration, either 'simple' narration in the poet's own voice, narration through imitation (mimesis), in which the poet speaks as if he were his characters, or a mixture of both, as in epic. He demonstrates by rewriting the opening of the Iliad as prose narrative. The guardians should imitate only good men, if they imitate at all, because imitation repeated from youth becomes second nature. A versatile poet who can imitate anything will be honoured, anointed with myrrh, crowned with wool, and sent to another city. The same principles govern music: only the Dorian and Phrygian modes, simple instruments and orderly rhythms are kept, because rhythm and harmony shape the soul. Gymnastics, medicine and the training of judges are discussed in turn.",
+    "Finally Socrates chooses the rulers from among the guardians: the eldest and best, who have been tested from childhood and have always held to the conviction that they must do what is best for the city. The others become auxiliaries. To secure loyalty, he proposes a 'noble lie' (Jowett: 'one royal lie'): the citizens were formed in the earth, who is their mother, and God mixed gold into the rulers, silver into the auxiliaries and bronze and iron into the farmers and craftsmen. Children will usually resemble their parents, but a golden child born to bronze parents must be raised up, and a bronze child born to golden parents lowered. The guardians will live in common, with no private property, gold or silver."
+   ],
+   "analysis": [
+    "For a reader of poetry, Book III is crucial and unsettling. Plato's Socrates is a superb reader of Homer, quoting him exactly and understanding his power; it is precisely because poetry shapes character so deeply that he wants to control it. His distinction between narration and imitation is the starting point of all later theory of narrative voice, from Aristotle's Poetics to modern narratology. His prose paraphrase of Iliad 1 is also, deliberately, flat and lifeless, an implicit admission of what dramatic voice achieves [[halliwell2002]].",
+    "The key insight is psychological: we become what we imitate. Recitation in ancient Greece meant performing, taking on the voice and gestures of a character, and the young learnt by memorising and reciting. Havelock argued that Plato is attacking a whole oral culture in which poetry was the encyclopedia of conduct and knowledge was absorbed by emotional identification rather than analysis [[havelock1963]].",
+    "The noble lie has provoked more discomfort than almost anything else in the Republic. Is Plato licensing political propaganda? Some interpreters stress that the Greek pseudos covers fiction as well as lies, and that the myth is meant to express a truth (that citizens are kin and suited to different tasks) in a form all can accept; others see it as evidence of the authoritarian character of the city [[popper1945]] [[schofield2006]]. Note that Socrates hopes the rulers too will believe it."
+   ],
+   "key": [
+    {
+     "ref": "Rep. 3.386c",
+     "quote": "I would rather be a serf on the land of a poor and portionless man than rule over all the dead who have come to nought.",
+     "note": "The words of Akhilleus' ghost in Odyssey 11.489–491, the first passage Socrates proposes to delete. Plato censors Homer at his most moving."
+    },
+    {
+     "ref": "Rep. 3.392d",
+     "quote": "And narration may be either simple narration, or imitation, or a union of the two?",
+     "note": "The founding distinction of narrative theory: the poet may speak as himself, as his characters, or alternate between the two."
+    },
+    {
+     "ref": "Rep. 3.398a",
+     "quote": "And so when we have anointed him with myrrh, and set a garland of wool upon his head, we shall send him away to another city.",
+     "note": "The versatile poet is honoured as sacred and exiled at the same time, an ambivalence that runs through Plato's treatment of poetry."
+    },
+    {
+     "ref": "Rep. 3.401d",
+     "quote": "rhythm and harmony find their way into the inward places of the soul, on which they mightily fasten",
+     "note": "Music educates below the level of argument, by shaping what the soul finds graceful or ugly."
+    },
+    {
+     "ref": "Rep. 3.415a",
+     "quote": "Some of you have the power of command, and in the composition of these he has mingled gold",
+     "note": "The myth of the metals, the content of the 'noble lie'."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "The Virtues and the Three Parts of the Soul",
+   "summary": [
+    "Adeimantus objects that the guardians, with no property or pleasures, will not be happy. Socrates replies that the aim is the happiness of the whole city, not of one class, just as a painter does not colour the eyes of a statue purple because eyes are the finest part. The city must be neither rich nor poor, must not grow beyond the size compatible with unity, and must guard above all against innovation in education and music, since changes in musical styles shake the fundamental laws.",
+    "With the city founded, Socrates looks for its virtues. Wisdom belongs to the rulers, who deliberate for the whole; courage to the auxiliaries, who preserve the right belief about what is to be feared; temperance (sōphrosynē) to the whole city, as agreement among all classes about who should rule. Justice, the remainder, is the principle laid down at the start: each person and class doing its own work and not meddling in that of others.",
+    "To transfer this to the individual, Socrates argues that the soul has three parts. Since the same thing cannot do or suffer opposite things in the same respect at the same time, a thirsty man who refuses to drink must contain both a desiring element (appetite) and a reasoning one that restrains it. The story of Leontius, who could not stop himself from looking at the corpses of executed criminals and cursed his own eyes, shows a third element, spirit (thymos), the seat of anger and honour, which sides with reason against appetite. Justice in the soul is the condition in which reason rules, spirit supports it, and appetite obeys: a kind of inner harmony. Injustice is civil war in the soul. Socrates is about to describe the four forms of vice when he is interrupted."
+   ],
+   "analysis": [
+    "Book IV gives Socrates' first answer to Glaucon. Justice is not primarily a matter of outward acts but an internal order of the soul, which then expresses itself in action. This reverses the terms of the debate: Thrasymachus and Glaucon thought of justice as a relation to others that might cost the agent; Socrates defines it as a state of the agent that is his own health. The question remains whether a soul just in this Platonic sense will reliably refrain from theft, adultery and betrayal, the acts we ordinarily call unjust. This is the problem known as 'Sachs's fallacy' [[sachs1963]] [[annas1981]].",
+    "The tripartite soul is one of Plato's most influential ideas, and it explains much of the Republic's treatment of poetry. Spirit is the part that responds to honour, shame and heroic anger: in other words, the part that the Iliad addresses. Leontius' disgusted fascination with corpses is also a model of the pleasure we take in tragic spectacle, a link Plato will exploit in Book X [[ferrari2007]].",
+    "The insistence that innovation in music threatens the laws may seem strange today, but it follows from Book III. If music shapes character, then a change in popular styles is a change in the citizens' souls, and so, eventually, in the constitution."
+   ],
+   "key": [
+    {
+     "ref": "Rep. 4.420b",
+     "quote": "our aim in founding the State was not the disproportionate happiness of any one class, but the greatest happiness of the whole",
+     "note": "A central and much-debated principle; critics such as Popper see in it the subordination of the individual to the state."
+    },
+    {
+     "ref": "Rep. 4.433a",
+     "quote": "justice was doing one’s own business, and not being a busybody",
+     "note": "Justice in the city: each class performs the function for which it is naturally suited."
+    },
+    {
+     "ref": "Rep. 4.443d",
+     "quote": "the just man does not permit the several elements within him to interfere with one another",
+     "note": "Justice in the soul, compared in the same passage to the harmony of the high, low and middle notes of a musical scale."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "The Three Waves: Women, the Family, and the Philosopher-King",
+   "summary": [
+    "Polemarchus and Adeimantus stop Socrates and insist that he explain a remark he had passed over: that friends will hold women and children in common. Socrates compares the objections he must face to waves. The first wave is the claim that women should share the guardians' education and duties. Since the only relevant difference between the sexes is that women bear and men beget children, and since natural aptitudes for every art are found in both, though women are on average weaker, women with the right nature should be trained as guardians and rulers, exercising naked alongside men in the gymnasium.",
+    "The second, larger wave is the abolition of the family among the guardians. Marriages are to be arranged by the rulers through rigged lotteries, so that the best mate with the best; children will be raised in common nurseries, and no parent will know his own child. All guardians of the same generation will call one another brothers and sisters, and the city will be as unified as a single body that feels pain in one finger. Socrates also lays down rules of war: Greeks should not enslave Greeks or ravage their land.",
+    "Glaucon now demands to know whether such a city is possible. Socrates faces the greatest wave: the city can come into being only if philosophers become kings, or kings become philosophers. To defend this paradox he defines the philosopher as one who loves the whole of wisdom and who knows the Forms, such as beauty itself, rather than the many beautiful things. Those who love only sights and sounds have opinion, not knowledge: they live as if in a dream, taking likenesses for realities. Knowledge is of what is, ignorance of what is not, and opinion of what both is and is not, the changing world of particulars."
+   ],
+   "analysis": [
+    "Book V has been read both as the founding text of Western feminism and as profoundly hostile to women. Socrates argues, against almost all Greek opinion, that women can be rulers; but the argument serves the efficiency of the city rather than any idea of women's rights, it abolishes the household that was the main sphere of Greek women's lives, and it repeatedly states that women are in general inferior [[okin1979]] [[annas1981]].",
+    "The image of the waves (kymata) gives the book its structure and its comic tone: Socrates expects to be drowned in laughter. Plato repeatedly signals that these proposals are shocking, and some readers, following Leo Strauss, take this as a sign that the ideal city is meant to show the limits of politics rather than to be built [[strauss1964]] [[bloom1968]].",
+    "The distinction between knowledge and opinion at the end of the book introduces the 'theory of Forms', or at least the version of it most familiar to later readers. Its central claim is that what can truly be known must be stable and unchanging, unlike the objects of the senses, which are beautiful in one respect and ugly in another. This is the epistemological ground for the claim that philosophers should rule."
+   ],
+   "key": [
+    {
+     "ref": "Rep. 5.457c–d",
+     "quote": "the wives of our guardians are to be common, and their children are to be common, and no parent is to know his own child, nor any child his parent.",
+     "note": "The second wave. The aim is to remove the private loyalties that might divide the guardians against one another."
+    },
+    {
+     "ref": "Rep. 5.473c–d",
+     "quote": "Until philosophers are kings, or the kings and princes of this world have the spirit and power of philosophy, and political greatness and wisdom meet in one, and those commoner natures who pursue either to the exclusion of the other are compelled to stand aside, cities will never have rest from their evils",
+     "note": "The central paradox of the Republic, the 'greatest of the waves'."
+    },
+    {
+     "ref": "Rep. 5.476c",
+     "quote": "is not the dreamer, sleeping or waking, one who likens dissimilar things, who puts the copy in the place of the real object?",
+     "note": "The non-philosopher mistakes images for realities, an idea that the Cave will dramatise in Book VII."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "The Philosopher, the Ship of State, the Sun and the Line",
+   "summary": [
+    "Socrates lists the qualities of the philosophic nature: love of truth, temperance, magnanimity, courage, a good memory, quickness to learn and a sense of proportion. Adeimantus objects that in practice philosophers are either useless or vicious. Socrates answers with a parable. The people of a city are like a ship's owner, large but deaf and short-sighted; the politicians are sailors who quarrel over the helm though they have never learnt navigation, drug the owner and seize the ship, and call the true navigator, who studies the stars and seasons, a useless star-gazer. The philosopher is useless only because the city will not use him. Those gifted natures who become vicious are corrupted by the crowd, the 'greatest of sophists', which shapes them by its applause and blame.",
+    "The rulers must be trained up to 'the greatest study', the Form of the Good, which makes everything else useful and beneficial. Socrates declines to say what the Good is, and offers instead an account of its 'child', the sun. As the sun gives visible things both their visibility and their growth, and gives the eye its power to see, so the Good gives the objects of knowledge their intelligibility and their very being, and gives the mind its power to know; yet the Good is 'beyond being' in dignity and power.",
+    "Socrates then asks Glaucon to imagine a line divided into two unequal parts, standing for the visible and the intelligible, and each part divided again in the same ratio. The lowest section holds images (shadows and reflections), the next the physical objects of which they are images. In the intelligible part, the lower section holds the objects of mathematical reasoning, which proceeds from assumptions and uses visible diagrams, and the highest holds the Forms, grasped by dialectic, which rises from assumptions to a first principle that is not assumed. To the four sections correspond four states of mind: imagination (eikasia), belief (pistis), thought (dianoia) and understanding (noēsis)."
+   ],
+   "analysis": [
+    "The ship of state is one of the most enduring political images in Western literature (it has a long prehistory in Greek lyric, notably Alcaeus). It expresses Plato's central objection to democracy: governing is a skill, like navigation, and should be entrusted to those who have it, not to those who are best at winning the favour of the crowd. The parable also defends Socrates, whom Athens treated as a useless talker and then put to death.",
+    "The sun and the line are the most difficult passages in the Republic, and their interpretation is still disputed. The sun analogy makes the Good the source both of knowledge and of being, which later Platonists, especially Plotinus, developed into a theology of the One. The line divides cognition by its objects; scholars disagree about whether each section is a distinct type of object or a distinct way of looking at objects, and whether the line is meant to correspond point by point to the stages of the Cave [[annas1981]] [[cross1964]] [[adam1902]].",
+    "For literary readers, the lowest section of the line is significant: shadows and reflections, images of images, are the lowest objects of cognition. Book X will place poetry and painting there."
+   ],
+   "key": [
+    {
+     "ref": "Rep. 6.488a",
+     "quote": "Imagine then a fleet or a ship in which there is a captain who is taller and stronger than any of the crew, but he is a little deaf and has a similar infirmity in sight",
+     "note": "The ship of state. The 'captain' or shipowner stands for the Athenian demos."
+    },
+    {
+     "ref": "Rep. 6.488e–489a",
+     "quote": "Will he not be called by them a prater, a star-gazer, a good-for-nothing?",
+     "note": "The insults are those commonly aimed at philosophers, as in Aristophanes' Clouds."
+    },
+    {
+     "ref": "Rep. 6.509b",
+     "quote": "the good is not essence, but far exceeds essence in dignity and power.",
+     "note": "The Good is beyond being (epekeina tēs ousias), a phrase of enormous importance for later Neoplatonism. Glaucon responds with comic amazement."
+    },
+    {
+     "ref": "Rep. 6.509d",
+     "quote": "Now take a line which has been cut into two unequal parts, and divide each of them again in the same proportion",
+     "note": "The divided line, a map of the levels of reality and of cognition."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "The Cave and the Education of the Philosopher",
+   "summary": [
+    "Socrates offers an image of human nature 'enlightened or unenlightened'. Prisoners are chained from childhood in an underground cave, able to look only at its back wall. Behind them a fire burns, and between fire and prisoners runs a raised road with a low wall, along which people carry statues and figures of animals; the prisoners see only the shadows of these objects and hear echoes of voices, and take the shadows for reality. If one prisoner were released and turned round, he would be dazzled and confused; dragged up the steep ascent into the sunlight, he would at first see only shadows and reflections, then things themselves, then the night sky, and at last the sun, which he would understand to be the cause of the seasons and of all he used to see. He would pity his former companions. If he went back down, his eyes would fail in the darkness, the prisoners would laugh at him, and if they could lay hands on him, they would kill him.",
+    "Education, Socrates concludes, is not putting knowledge into the soul like sight into blind eyes, but turning the whole soul around (periagōgē) from becoming towards being. The philosophers who have seen the Good must not be allowed to remain above; they must go down again in turn and rule, because the city has educated them for the sake of the whole. The best city is the one whose rulers least want to rule.",
+    "Socrates then sets out the curriculum for future rulers: arithmetic, plane geometry, solid geometry, astronomy and harmonics, each studied not for practical use but to draw the soul towards abstract truth. These are a 'prelude' to dialectic, the art of question and answer that reaches the Good itself. Dialectic must not be taught to the young, who would treat argument as a game and lose all conviction. After gymnastic training until twenty, mathematics until thirty, dialectic for five years and fifteen years of practical service, the best, men and women alike, will at fifty contemplate the Good and take their turn at ruling."
+   ],
+   "analysis": [
+    "The Cave is the most famous image in Western philosophy. It combines the sun (the Good as the source of light and being) with the line (the levels of cognition), but adds two things they lack: the drama of liberation, painful and resisted, and the return. The killing of the returning prisoner points unmistakably to the death of Socrates. Read politically, the cave is the city, whose citizens 'fight with one another about shadows only', and its shadows are the images of justice manufactured by law courts, rhetoric and, Book X will suggest, poetry [[annas1981]] [[ferrari2007]].",
+    "The image has a strong literary prehistory. Its descent into and ascent from an underground world recalls Homer's Odyssey 11 and the mystery cults; its staging, with figures carried before a fire to cast shadows, recalls puppet shows. Plato, the great critic of images, uses an unforgettable image to teach that images deceive, a paradox that runs through the whole dialogue.",
+    "The 'return to the cave' raises a serious difficulty. If the philosophers' happiness lies in contemplation, the requirement that they rule seems to sacrifice their good to the city's, which conflicts with the dialogue's claim that justice is always in the interest of the just person. Socrates says that the demand is 'just' and that they will accept it, but scholars have long debated whether his answer is consistent [[kraut1997]] [[reeve1988]]."
+   ],
+   "key": [
+    {
+     "ref": "Rep. 7.514a",
+     "quote": "Behold! human beings living in a underground den, which has a mouth open towards the light and reaching all along the den; here they have been from their childhood, and have their legs and necks chained so that they cannot move",
+     "note": "The opening of the Allegory of the Cave."
+    },
+    {
+     "ref": "Rep. 7.515a",
+     "quote": "You have shown me a strange image, and they are strange prisoners.\n\nLike ourselves, I replied",
+     "note": "Glaucon's reaction and Socrates' answer: the prisoners are not others but us."
+    },
+    {
+     "ref": "Rep. 7.515e",
+     "quote": "And suppose once more, that he is reluctantly dragged up a steep and rugged ascent, and held fast until he is forced into the presence of the sun himself",
+     "note": "Education is painful and initially unwilling: the soul must be compelled to see."
+    },
+    {
+     "ref": "Rep. 7.518c",
+     "quote": "the power and capacity of learning exists in the soul already",
+     "note": "Education as turning the soul around rather than filling it, a principle that links the Republic to the theory of recollection in the Meno and Phaedo."
+    },
+    {
+     "ref": "Rep. 7.520c",
+     "quote": "each of you, when his turn comes, must go down to the general underground abode, and get the habit of seeing in the dark.",
+     "note": "The philosopher's descent, echoing 'I went down' in the first sentence of the dialogue."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "The Decline of Cities and Souls",
+   "summary": [
+    "Socrates returns to the four types of bad constitution he had been about to describe at the end of Book IV. Each corresponds to a type of person, and each arises from the decay of the one before. Invoking the Muses in mock-epic style, he explains that even the best city must eventually decline, because the rulers will miscalculate the 'nuptial number' that governs good breeding, and children of inferior metal will rise to power.",
+    "The first decline produces timocracy, a regime of honour like Sparta, in which the spirited part rules; the timocratic man is ambitious and fond of war, and secretly loves money. When wealth becomes the measure of honour, timocracy becomes oligarchy, the rule of the rich, divided into two cities, rich and poor; the oligarchic man is a miser ruled by necessary appetites. When the poor rise up, democracy follows, a regime of freedom where everyone lives as he likes: a 'bazaar of constitutions', charming, varied and disorderly. The democratic man treats all desires as equal and indulges whichever happens to come, by turns drinking, dieting, exercising and philosophising.",
+    "Excess of freedom brings its opposite. In democracy, demagogues stir up the people against the rich, and the people choose a champion; the champion, once he has tasted blood, becomes a tyrant. He purges the best citizens, surrounds himself with a bodyguard of freed slaves and must always be starting wars. Tyranny, the worst constitution, arises from the most extreme liberty."
+   ],
+   "analysis": [
+    "Books VIII–IX complete the answer to Glaucon by showing what injustice looks like as it grows. The sequence is not a historical account but a psychological and political typology: each stage marks a further step in the overthrow of reason by the lower parts of the soul. The analysis of how one regime, through its own defining aim (honour, wealth, freedom), produces the conditions of its downfall is one of the most acute passages of ancient political thought, and it deeply influenced Aristotle's Politics and later theories of constitutional cycles [[schofield2006]].",
+    "Plato's portrait of democracy is satirical but recognisably Athenian: equality 'to equals and unequals alike', tolerance of every way of life, teachers who fear their pupils, even animals that refuse to give way on the street. Modern defenders of democracy have answered it ever since, most forcefully Popper [[popper1945]]. Readers should also notice how often the description of the democratic soul uses the language of the theatre and of variety, the qualities that Book III attributed to the versatile poet."
+   ],
+   "key": [
+    {
+     "ref": "Rep. 8.545d–e",
+     "quote": "Shall we imagine them in solemn mockery, to play and jest with us as if we were children, and to address us in a lofty tragic vein, making believe to be in earnest?",
+     "note": "Socrates parodies the epic invocation of the Muses (Iliad 1.6, 16.112), mixing poetic manner and philosophical content."
+    },
+    {
+     "ref": "Rep. 8.557d",
+     "quote": "he who has a mind to establish a State, as we have been doing, must go to a democracy as he would to a bazaar at which they sell them",
+     "note": "Democracy contains every kind of life, including the philosopher's: the irony is that only there could the Republic itself have been conceived."
+    },
+    {
+     "ref": "Rep. 8.558c",
+     "quote": "full of variety and disorder, and dispensing a sort of equality to equals and unequals alike.",
+     "note": "Plato's famous gibe at democratic equality."
+    },
+    {
+     "ref": "Rep. 8.564a",
+     "quote": "And so tyranny naturally arises out of democracy, and the most aggravated form of tyranny and slavery out of the most extreme form of liberty?",
+     "note": "The paradox that unchecked freedom turns into its opposite."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Tyrant and the Happiness of the Just",
+   "summary": [
+    "Socrates describes the tyrannical man. In everyone there are lawless desires that appear in dreams, when reason sleeps. In the son of a democratic father these are let loose by corrupters who implant in him a master passion, eros, which rules him like a tyrant. He spends everything, then steals, robs temples and kills; and if such men are numerous they make one of themselves tyrant of the city. The tyrant, who seems the freest and happiest of men, is in truth the most enslaved, fearful, friendless and wretched.",
+    "Socrates gives three proofs that the just life is happier. First, by the comparison of cities and souls: as tyranny is the most miserable city, the tyrannical soul is the most miserable. Second, each part of the soul has its own pleasures (of learning, of honour, of gain), and only the philosopher has experienced all three and can judge them. Third, the pleasures of the philosopher are true and pure, while the others are mixtures of pain and relief, like shadows; by a playful calculation, the king lives 729 times more pleasantly than the tyrant.",
+    "Finally Socrates builds an image of the soul: a many-headed beast (appetite), a lion (spirit) and a man (reason), all enclosed in the outward form of a man. Injustice feeds the beast and starves the man; justice makes the man master, with the lion as his ally. Glaucon remarks that the city they have founded exists nowhere on earth. Socrates replies that perhaps a pattern of it is laid up in heaven for anyone who wishes to see it and to found a city in himself."
+   ],
+   "analysis": [
+    "Book IX answers the challenge of Book II directly: the tyrant possesses the Ring of Gyges in political form, power without accountability, and Socrates argues that he is the most miserable of men because his soul is in the worst order. The argument from pleasure is more original than it first appears, since it distinguishes true pleasures from the mere relief of pain, a theme taken further in the Philebus [[annas1981]].",
+    "The ending of the book changes the status of the ideal city. Whether or not it can be realised in politics, it serves as a 'pattern' (paradeigma) by which an individual can order his own soul. This passage has encouraged readings of the Republic as above all a work of moral psychology, in which the city is a large-scale image of the soul [[ferrari2003]]."
+   ],
+   "key": [
+    {
+     "ref": "Rep. 9.587e",
+     "quote": "living 729 times more pleasantly, and the tyrant more painfully by this same interval.",
+     "note": "A deliberately whimsical piece of arithmetic (9 cubed), which Jowett's note connects with the number of days and nights in the year."
+    },
+    {
+     "ref": "Rep. 9.589b",
+     "quote": "He should watch over the many-headed monster like a good husbandman, fostering and cultivating the gentle qualities, and preventing the wild ones from growing",
+     "note": "Reason does not destroy appetite but tames and cultivates it."
+    },
+    {
+     "ref": "Rep. 9.592b",
+     "quote": "In heaven, I replied, there is laid up a pattern of it, methinks, which he who desires may behold, and beholding, may set his own house in order.",
+     "note": "The ideal city as an inner model, whatever its political possibility; a passage that later influenced Stoic and Christian ideas of a heavenly city."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "The Quarrel with Poetry and the Myth of Er",
+   "summary": [
+    "Socrates returns to poetry, saying that the division of the soul shows more clearly why imitative poetry must be excluded. Imitation is explained by the example of beds. There is the Form of the bed, made by God; the bed made by the carpenter, who looks to the Form; and the bed painted by the painter, who copies only the appearance of the carpenter's bed from one angle. The painter, like a man turning a mirror round, makes appearances, not realities, and is 'third from the king and from the truth'. The tragic poets, and Homer their leader, are imitators in the same way: they seem to know about generalship, medicine and the good life, but no city was ever better governed, no war won, and no school founded because of Homer.",
+    "Worse, imitation appeals to the inferior part of the soul. Poetry depicts men in grief and passion because these are easy to imitate and delightful to watch, and so it encourages in the audience the lamentation and laughter that reason would restrain in real life. It 'feeds and waters the passions'. This is the gravest charge: even good people are corrupted by sympathising with the heroes' sorrows. Only hymns to the gods and praises of good men will be admitted. Yet Socrates, confessing his own love of Homer, invites poetry to return from exile if she or her defenders, speaking in prose, can show that she is not only pleasant but useful; until then, the listener must repeat the argument to himself as a charm against her spell.",
+    "Socrates then turns to the rewards of justice. He argues that the soul is immortal, since nothing can destroy it, not even its own evil, injustice. Then, now that justice has been shown good in itself, he restores the rewards it brings from gods and men in this life, and tells what happens after death. Er, a Pamphylian soldier killed in battle, revives on his funeral pyre and reports what he saw: the souls are judged, the just going up into heaven and the unjust down into the earth for a thousand years, the incurable tyrants are cast into Tartarus, and all come to a place where they see the spindle of Necessity, on which the heavens turn, with the Sirens and the three Fates. There, each soul chooses its next life from lots set before it. The first to choose seizes a tyranny without looking closely and finds that he is fated to eat his own children. Orpheus chooses to be a swan, Ajax a lion, Agamemnon an eagle, and Odysseus, cured of ambition, searches long for the quiet life of a private man. The souls drink from the river of Forgetfulness and are born again. The dialogue ends with Socrates urging his hearers to hold to the upward way."
+   ],
+   "analysis": [
+    "Book X contains the most famous attack on poetry in Western literature and is essential reading for any student of poetry. The argument has two strands. The metaphysical strand places poetry at two removes from reality, a copy of a copy; the psychological strand, more powerful, claims that poetry gains its effects by stimulating the emotions and so weakening reason's rule in the soul. It is notable that Socrates speaks from inside the experience he condemns: he admits his 'awe and love' of Homer and describes the pleasure of tragic sympathy with sharp precision [[murdoch1977]] [[halliwell1988]].",
+    "Book X seems to go beyond Book III, which allowed the imitation of good men, and readers have long debated whether the two books are consistent. One view is that 'imitation' in Book X is used in a wider, more technical sense, made possible by the theory of Forms and the divided soul introduced in between [[nehamas1999]] [[burnyeat1999]]. Socrates' call for a defence of poetry in prose was answered first by Aristotle, whose Poetics treats mimesis as natural and instructive and tragic emotion as a source of katharsis, and later by Sidney, Shelley and many others.",
+    "The Myth of Er, ending a work that has attacked poets as purveyors of false stories, is itself a poetic myth, introduced as a tale told 'not to Alcinous', a pun on the long story Odysseus tells the Phaeacian king in Odyssey 9–12. Its central lesson is moral responsibility: each soul chooses its own life, and 'God is justified'. Odysseus' choice of an obscure life suggests that the philosophic soul can redeem even the heroic tradition, choosing wisely after long suffering. Philosophy, it seems, may expel the poets but cannot do without myth [[annas1982]] [[halliwell1988]]."
+   ],
+   "key": [
+    {
+     "ref": "Rep. 10.595b",
+     "quote": "all poetical imitations are ruinous to the understanding of the hearers, and that the knowledge of their true nature is the only antidote to them.",
+     "note": "The opening charge of Book X. The 'antidote' (pharmakon) is philosophical understanding of what poetry is."
+    },
+    {
+     "ref": "Rep. 10.597b",
+     "quote": "Beds, then, are of three kinds, and there are three artists who superintend them: God, the maker of the bed, and the painter?",
+     "note": "The three beds: Form, artefact and image."
+    },
+    {
+     "ref": "Rep. 10.597e",
+     "quote": "And the tragic poet is an imitator, and therefore, like all other imitators, he is thrice removed from the king and from the truth?",
+     "note": "Counting inclusively in the Greek way, the imitator is 'third' from the Form."
+    },
+    {
+     "ref": "Rep. 10.606d",
+     "quote": "poetry feeds and waters the passions instead of drying them up; she lets them rule, although they ought to be controlled",
+     "note": "The psychological charge, which Aristotle's theory of katharsis seems designed to answer."
+    },
+    {
+     "ref": "Rep. 10.607b",
+     "quote": "there is an ancient quarrel between philosophy and poetry",
+     "note": "Plato presents his critique as part of a long rivalry between two claims to wisdom."
+    },
+    {
+     "ref": "Rep. 10.617e",
+     "quote": "Your genius will not be allotted to you, but you will choose your genius",
+     "note": "Lachesis' proclamation in the Myth of Er: each soul chooses its own guardian spirit (daimōn) and therefore its own life."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Socrates",
+   "side": "Speaker",
+   "text": "The Athenian philosopher (469–399 BC), who narrates the whole dialogue the day after it took place. In Book I he is the familiar questioner who claims to know nothing; from Book II he becomes the architect of the city in speech and the expounder of the soul, the Forms and the Good. Readers continue to debate how far this Socrates is the historical man and how far a spokesman for Plato's own views."
+  },
+  {
+   "name": "Glaucon",
+   "side": "Speaker",
+   "text": "Plato's elder brother, ambitious, spirited and musically gifted, Socrates' main partner from Book II onward. He restates the case for injustice with the Ring of Gyges, rejects the 'city of pigs', and is the listener to whom the sun, line and Cave are explained. His eagerness for luxury and honour makes him a natural audience for an argument about the right ordering of desire."
+  },
+  {
+   "name": "Adeimantus",
+   "side": "Speaker",
+   "text": "Plato's other brother, more sober and practical than Glaucon. He insists that Socrates praise justice for itself rather than its rewards, objects that the guardians will not be happy, and raises the charge that philosophers are useless or wicked, prompting the parable of the ship. He is Socrates' partner for much of the discussion of education and of the degenerate constitutions."
+  },
+  {
+   "name": "Cephalus",
+   "side": "Speaker",
+   "text": "An aged and wealthy resident alien from Syracuse, host of the gathering in Book I. Gracious and pious, he values his money because it lets him die free of debts to men and gods. His comfortable morality is the starting point for the inquiry, but he leaves to attend to his sacrifices as soon as it becomes philosophical."
+  },
+  {
+   "name": "Polemarchus",
+   "side": "Speaker",
+   "text": "Son of Cephalus and 'heir of the argument'. He defends Simonides' view that justice is helping friends and harming enemies, and is persuaded that justice can never harm anyone. Plato's readers knew that he was later executed by the Thirty Tyrants in 404 BC."
+  },
+  {
+   "name": "Thrasymachus",
+   "side": "Speaker",
+   "text": "A sophist and teacher of rhetoric from Chalcedon, known historically for his work on prose rhythm and emotional appeal. He bursts into the discussion 'like a wild beast', demands payment for his answer, and argues that justice is the interest of the stronger and injustice the more profitable life. Silenced but not convinced, he remains present for the rest of the dialogue and is later said to have become Socrates' friend."
+  },
+  {
+   "name": "Cleitophon",
+   "side": "Speaker",
+   "text": "A supporter of Thrasymachus who briefly intervenes in Book I to suggest that justice is what the stronger believes to be in his interest. A short dialogue bearing his name survives among Plato's works."
+  },
+  {
+   "name": "Lysias, Euthydemus, Niceratus, Charmantides",
+   "side": "Silent listeners",
+   "text": "Members of the company who do not speak: Lysias and Euthydemus are Cephalus' other sons (Lysias became a famous speech-writer), and Niceratus is the son of the general Nicias. Their presence reminds the reader of the political world beyond the house, much of which would soon be destroyed."
+  },
+  {
+   "name": "Gyges",
+   "side": "Figure in a story",
+   "text": "In Glaucon's tale, a Lydian shepherd who finds a ring of invisibility in a chasm opened by an earthquake and uses it to seduce the queen, kill the king and take his throne. He embodies the claim that anyone freed from consequences would act unjustly."
+  },
+  {
+   "name": "Leontius",
+   "side": "Figure in a story",
+   "text": "An Athenian in Socrates' anecdote in Book IV, who cannot resist looking at corpses by the city wall and rebukes his own eyes. His inner conflict is evidence for the spirited part of the soul."
+  },
+  {
+   "name": "Er",
+   "side": "Figure in a myth",
+   "text": "Son of Armenius, a Pamphylian soldier killed in battle, who revives on his funeral pyre twelve days later and reports the judgement of souls and their choice of new lives. His story ends the Republic."
+  },
+  {
+   "name": "Lachesis and the Fates",
+   "side": "Figures in a myth",
+   "text": "In the Myth of Er, the three daughters of Necessity (Lachesis, Clotho, Atropos) sing of the past, present and future as they turn the spindle of the universe. Lachesis' spokesman proclaims that the responsibility for each life lies with the chooser."
+  },
+  {
+   "name": "Homer",
+   "side": "Poet discussed",
+   "text": "Constantly quoted and criticised, Homer is the dialogue's chief opponent and its most respected rival: 'the greatest of poets and first of tragedy writers', whose portrayals of grieving heroes and quarrelling gods are to be censored, and who is finally excluded from the city, with evident regret."
+  },
+  {
+   "name": "Simonides",
+   "side": "Poet discussed",
+   "text": "The lyric poet (c. 556–468 BC) whose saying that justice is 'giving each what is owed' Polemarchus defends in Book I; Socrates mockingly treats him as a riddler whose meaning must be interpreted."
+  },
+  {
+   "name": "Odysseus",
+   "side": "Figure in a myth",
+   "text": "In the Myth of Er his soul, choosing last, searches for and gladly takes the life of an ordinary private man, his ambition cured by memory of his labours. The great hero of cunning becomes an emblem of wise choice."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Justice and happiness",
+   "text": [
+    "The Republic sets out to prove that justice is better than injustice not only for its consequences but in itself, so that the just person is happier even if he suffers the worst reputation and punishment. Socrates answers by redefining justice as the right order of the soul, which he presents as a kind of health. Injustice, by contrast, is a disorder in which the soul is at war with itself and enslaved to its appetites.",
+    "The tyrant of Book IX is the dialogue's final evidence: he has unlimited power, the Ring of Gyges made real, yet he is the most fearful and unfree of men. Whether Socrates' argument succeeds in connecting this inner justice with the ordinary justice of not stealing or lying is one of the most debated questions in ancient philosophy."
+   ]
+  },
+  {
+   "title": "City and soul",
+   "text": [
+    "The whole structure of the Republic rests on an analogy between the city and the individual. The three classes of rulers, auxiliaries and producers correspond to the three parts of the soul, reason, spirit and appetite, and the virtues of each correspond. In Books VIII–IX the analogy is extended to the degenerate types of constitution and character.",
+    "The analogy works both ways: cities are shaped by the characters of their citizens, and characters by the cities that educate them. This is why education, culture and poetry occupy so much of a work nominally about justice."
+   ]
+  },
+  {
+   "title": "Education and the formation of character",
+   "text": [
+    "Books II–III and VII contain two educational programmes. The first, for the young guardians, works through stories, music and physical training, shaping feelings and habits before reason develops. The second, for the future philosophers, uses mathematics and dialectic to turn the soul from the world of change towards eternal truth.",
+    "The Cave defines education not as filling an empty mind but as turning the soul around. Plato's insistence that what we hear and imitate in youth shapes what we become underlies both his censorship of poetry and his long influence on theories of education."
+   ]
+  },
+  {
+   "title": "Knowledge, opinion and the Forms",
+   "text": [
+    "The philosopher is defined in Book V as one who loves and knows the Forms, the unchanging realities (beauty itself, justice itself) of which the things we see are changing likenesses. The sun, line and Cave arrange reality into levels, from shadows and images up to the Form of the Good, which is the source of all truth and being.",
+    "These passages make the Republic a central text of metaphysics and epistemology as well as of politics. They also explain why Plato thinks rulers should be philosophers: only those who know what justice and goodness truly are can reliably bring them about."
+   ]
+  },
+  {
+   "title": "Poetry, imitation and the emotions",
+   "text": [
+    "Poetry is criticised twice. In Books II–III the poets are censored for telling false and harmful stories about gods and heroes and for encouraging the young to imitate bad characters. In Book X, imitative poetry is excluded because it copies appearances, at two removes from the truth, and because it gratifies the emotional part of the soul at the expense of reason.",
+    "Plato's critique is not ignorant hostility. Socrates admits Homer's power over him and leaves the door open for poetry's return if it can show itself useful. The Republic thereby founded the long tradition of 'defences of poetry' and set the terms, mimesis, emotion, truth and moral effect, in which poetry has been discussed ever since."
+   ]
+  },
+  {
+   "title": "Philosophy and political power",
+   "text": [
+    "The claim that cities will have no rest from evils until philosophers rule is the dialogue's central paradox. Plato's philosopher does not want to rule, and must be compelled to return to the cave; for that very reason he can be trusted with power.",
+    "The tension between the life of contemplation and the duty of governing, and between the philosopher and the city that killed Socrates, runs through the work. Some readers see the Republic as a blueprint for reform, others as a demonstration of the limits of politics."
+   ]
+  },
+  {
+   "title": "Appearance and reality",
+   "text": [
+    "From Glaucon's challenge, which separates being just from seeming just, to the Cave, where prisoners take shadows for realities, and Book X, where painters and poets make appearances, the Republic is preoccupied with the gap between how things seem and how they are. Justice must be shown valuable for what it is, not for what it seems.",
+    "The dialogue's own reliance on images, myths and analogies (the ring, the ship, the Cave, the beast, Er) adds a paradox: Plato teaches distrust of images through images, and the most philosophical passages are among the most poetic."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Descent and ascent",
+   "text": "The dialogue opens with 'I went down' to the Piraeus and ends with Er's journey to the world of the dead and Socrates' exhortation to keep to 'the heavenly way'. In between, Gyges descends into a chasm, the prisoner climbs out of the Cave and the philosopher must go back down. Movement downwards and upwards structures the work and gives its argument the shape of a journey of the soul."
+  },
+  {
+   "title": "Light, sight and the sun",
+   "text": "Images of seeing dominate the central books: the sun gives light and sight, the prisoners see shadows, the freed prisoner is dazzled, the philosopher contemplates the Good. Knowledge is constantly figured as vision, an association that Western philosophy has never fully abandoned."
+  },
+  {
+   "title": "The craft analogy",
+   "text": "Socrates repeatedly compares justice and ruling to crafts such as medicine, navigation and cobbling. The analogy underlies the refutation of Thrasymachus, the principle of 'one person, one job', the ship of state and the image of the philosopher-ruler as an expert. Critics often note that it assumes what it needs to prove: that ruling is a skill like any other."
+  },
+  {
+   "title": "Waves and laughter",
+   "text": "Socrates frames his most radical proposals in Book V as waves that threaten to drown him in laughter, and the returning prisoner in the Cave is laughed at. Laughter marks the gap between philosophy and common opinion, and the dialogue's comic awareness of its own strangeness."
+  },
+  {
+   "title": "Music and harmony",
+   "text": "Musical language runs through the Republic: the education in modes and rhythms, the just soul compared to the high, low and middle notes of a scale, the warning that musical innovation shakes the laws, the study of harmonics, and the Sirens in the Myth of Er, each singing one note so that together they make a single harmony."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The Ring of Gyges",
+   "text": "A ring that makes its wearer invisible, symbolising the possibility of acting without consequences. It poses the dialogue's question in its sharpest form: would anyone be just if he could never be caught? Readers have often compared it with the One Ring of Tolkien's Lord of the Rings."
+  },
+  {
+   "title": "The Cave",
+   "text": "The underground prison with its fire, its parade of objects and its wall of shadows stands for the human condition without philosophy, and especially for the city, whose citizens mistake images of justice for justice itself. The sunlit world above stands for the realm of Forms, and the sun for the Good."
+  },
+  {
+   "title": "The ship of state",
+   "text": "A ship whose owner is deaf and short-sighted and whose sailors fight over the helm without knowing navigation. It symbolises democratic politics as Plato saw it and the philosopher's position as the unheeded true navigator."
+  },
+  {
+   "title": "The many-headed beast",
+   "text": "In Book IX the soul is pictured as a monster with many heads, a lion and a man inside the shape of a human being. The beast is appetite, endlessly various; the image makes vivid what it would mean for the 'inner man' to rule or to be devoured."
+  },
+  {
+   "title": "The spindle of Necessity",
+   "text": "In the Myth of Er, the axis of light on which the whole universe turns, with eight nested whorls for the heavenly spheres, attended by Sirens and Fates. It joins cosmic order to moral choice: within the fixed order of necessity, each soul chooses its own life."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Does the city-soul analogy work?",
+   "text": [
+    "The Republic's method assumes that justice is the same in a city and in a person, so that the parts of one correspond to the parts of the other. Bernard Williams argued that the analogy runs into difficulties: if a city is just when each of its parts is just, and the parts are people with three-part souls, then the 'appetitive' lower class should itself be governed by appetite, which threatens the harmony Socrates needs.",
+    "Others reply that Plato never meant a strict one-to-one mapping. G. R. F. Ferrari argues that the relation is a proportional analogy, not a causal claim that cities are made of corresponding souls, and that the image is primarily a tool for understanding the soul [[williams1973]] [[ferrari2003]] [[annas1981]]."
+   ],
+   "cite": [
+    "williams1973",
+    "ferrari2003",
+    "annas1981"
+   ]
+  },
+  {
+   "title": "Sachs's fallacy: Platonic and ordinary justice",
+   "text": [
+    "Glaucon asks Socrates to show that justice, in the ordinary sense of not stealing, lying or murdering, pays. Socrates instead shows that a soul ordered by reason is happy. In a famous article, David Sachs argued that the argument commits a fallacy of irrelevance: Socrates never proves that a person who is just in his inner sense will avoid ordinary unjust acts, or that the ordinarily just person has a harmonious soul.",
+    "Defenders reply that the philosopher, loving truth and order and free of appetites for gain, will have no motive to commit ordinary injustice, and that the Republic's account of education is meant to forge exactly this link. The debate has shaped modern discussion of the whole dialogue [[sachs1963]] [[annas1981]] [[kraut1997]]."
+   ],
+   "cite": [
+    "sachs1963",
+    "annas1981",
+    "kraut1997"
+   ]
+  },
+  {
+   "title": "Is the Republic totalitarian?",
+   "text": [
+    "In The Open Society and Its Enemies (1945), written in the shadow of fascism and Stalinism, Karl Popper attacked Plato as the ancestor of totalitarianism: the Republic subordinates individual happiness to the state, abolishes the family among the rulers, censors art, uses propaganda in the form of the noble lie, and fixes citizens in classes.",
+    "Many scholars think Popper anachronistic, pointing out that the ruling class has no property or private power, that the noble lie expresses a kinship of citizens, and that the regime aims at the virtue and happiness of all. The question of how far Plato's ideal city is compatible with freedom remains open [[popper1945]] [[schofield2006]] [[annas1981]]."
+   ],
+   "cite": [
+    "popper1945",
+    "schofield2006",
+    "annas1981"
+   ]
+  },
+  {
+   "title": "Why does Plato banish the poets?",
+   "text": [
+    "Explanations differ widely. Eric Havelock argued that Plato attacks not poetry in our sense but the whole oral culture of Greece, in which Homer served as an encyclopedia of conduct, absorbed by emotional identification; philosophy required a new literate, analytical mind. Alexander Nehamas compared Plato's critique to modern worries about television, as an attack on the dominant popular entertainment of his day.",
+    "Others stress the inner contest. Iris Murdoch, herself a novelist and philosopher, read the critique as a serious moral argument about art's capacity to console and deceive. Stephen Halliwell emphasises Plato's deep ambivalence and the tradition of thought on mimesis it opened, and Myles Burnyeat showed how pervasive poetry was in Athenian culture, so that controlling it meant reshaping society [[havelock1963]] [[nehamas1999]] [[murdoch1977]] [[halliwell2002]] [[burnyeat1999]]."
+   ],
+   "cite": [
+    "havelock1963",
+    "nehamas1999",
+    "murdoch1977",
+    "halliwell2002",
+    "burnyeat1999"
+   ]
+  },
+  {
+   "title": "Are Books III and X consistent?",
+   "text": [
+    "Book III allows the guardians to imitate good men, and permits a poet who imitates only the virtuous; Book X opens by congratulating the founders on excluding 'imitative poetry' altogether and argues that all imitation is far from the truth. Some have taken Book X as a later addition or a change of mind.",
+    "Most recent scholars find a development rather than a contradiction: Book X uses 'imitation' in a broader sense, defined by the Forms and the divided soul introduced in Books IV–VII, and it targets poetry as audiences experience it rather than poetry as the guardians might perform it [[nehamas1999]] [[halliwell1988]] [[burnyeat1999]]."
+   ],
+   "cite": [
+    "nehamas1999",
+    "halliwell1988",
+    "burnyeat1999"
+   ]
+  },
+  {
+   "title": "Is the ideal city meant seriously?",
+   "text": [
+    "Leo Strauss and his student Allan Bloom argued that the Republic is ironic: the city in speech, with its communism, female guardians and philosopher-kings, is deliberately shown to be against nature and impossible, and the dialogue teaches the limits of political idealism. On this view Socrates' 'waves' of laughter are a signal to the reader.",
+    "Most other interpreters, following Socrates' own statements in Books V–VII, take the proposals as serious though difficult, and point to Plato's own attempts to influence politics in Syracuse. The 'pattern laid up in heaven' at the end of Book IX suggests a middle position: the city is an ideal to measure ourselves by, whether or not it is ever built [[strauss1964]] [[bloom1968]] [[burnyeat1999]] [[schofield2006]]."
+   ],
+   "cite": [
+    "strauss1964",
+    "bloom1968",
+    "burnyeat1999",
+    "schofield2006"
+   ]
+  },
+  {
+   "title": "How do the sun, the line and the Cave fit together?",
+   "text": [
+    "Socrates says that the Cave should be 'applied' to what was said before, but the details are hard to match. Does each of the four stages of the prisoner's journey correspond to a section of the line? If so, what are the 'shadows' of ordinary life that most people mistake for reality, and why are ordinary citizens placed in the lowest state, which the line reserves for images and reflections?",
+    "Some commentators read the Cave as a strict allegory of the line, others as a looser image of moral and political enlightenment. The question is bound up with how Plato's theory of Forms and of the Good is to be understood [[adam1902]] [[cross1964]] [[annas1981]]."
+   ],
+   "cite": [
+    "adam1902",
+    "cross1964",
+    "annas1981"
+   ]
+  },
+  {
+   "title": "Philosophy and myth: the Myth of Er",
+   "text": [
+    "After nine books of argument, the Republic ends with a myth. Some readers see this as a concession to the unphilosophical, for whom the rewards of justice must be dramatised; others see myth as a legitimate form of philosophical thought where argument cannot reach. The paradox is sharpened by the fact that Book X has just banished the poets.",
+    "Julia Annas compared the Republic's myth with Plato's other myths of judgement and argued that its emphasis on choice and responsibility fits the moral psychology of the whole work; Halliwell's commentary explores its relation to Homer's underworld [[annas1982]] [[halliwell1988]]."
+   ],
+   "cite": [
+    "annas1982",
+    "halliwell1988"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Rep. 1.338c",
+   "quote": "I proclaim that justice is nothing else than the interest of the stronger.",
+   "who": "Thrasymachus",
+   "explanation": "The challenge that drives the whole dialogue. Thrasymachus argues that rulers make laws in their own interest and call obedience 'justice', so that justice benefits the powerful and harms the just who practise it. Socrates refutes him in Book I, but the refutation is so unsatisfying that the rest of the Republic is needed to answer him."
+  },
+  {
+   "ref": "Rep. 2.360a",
+   "quote": "when he turned the collet inwards he became invisible, when outwards he reappeared.",
+   "who": "Glaucon, telling the story of Gyges",
+   "explanation": "The Ring of Gyges is a thought experiment that removes the consequences of injustice. If people are just only because they fear being seen and punished, the ring would make anyone unjust. Socrates must therefore show that justice is good for its possessor even when no one is watching."
+  },
+  {
+   "ref": "Rep. 3.398a",
+   "quote": "And so when we have anointed him with myrrh, and set a garland of wool upon his head, we shall send him away to another city.",
+   "who": "Socrates",
+   "explanation": "The poet who can imitate anything is honoured with the rites due to a sacred figure and expelled from the ideal city. The sentence captures Plato's double attitude to poetry, reverence for its power and fear of its effects, and it anticipates the fuller exclusion of Book X."
+  },
+  {
+   "ref": "Rep. 4.443d",
+   "quote": "the just man does not permit the several elements within him to interfere with one another",
+   "who": "Socrates",
+   "explanation": "Socrates' definition of justice in the individual. Justice is an inner harmony in which reason, spirit and appetite each do their own work. The definition shifts justice from outward behaviour to the condition of the soul, which allows Socrates to argue that it is good for the just person."
+  },
+  {
+   "ref": "Rep. 5.473c–d",
+   "quote": "Until philosophers are kings, or the kings and princes of this world have the spirit and power of philosophy, and political greatness and wisdom meet in one, and those commoner natures who pursue either to the exclusion of the other are compelled to stand aside, cities will never have rest from their evils",
+   "who": "Socrates",
+   "explanation": "The 'greatest wave', the most paradoxical proposal of the Republic. Only the union of philosophical knowledge and political power can make a city good. The claim leads directly to the central books on the nature of the philosopher, the Forms and the Good."
+  },
+  {
+   "ref": "Rep. 7.514a",
+   "quote": "Behold! human beings living in a underground den, which has a mouth open towards the light and reaching all along the den; here they have been from their childhood, and have their legs and necks chained so that they cannot move",
+   "who": "Socrates",
+   "explanation": "The opening of the Cave, the image of human nature 'enlightened or unenlightened'. The prisoners who take shadows for reality are, Socrates says, 'like ourselves'. The allegory depicts education as a painful turning and ascent towards the truth, and the philosopher's return as a duty and a danger."
+  },
+  {
+   "ref": "Rep. 9.592b",
+   "quote": "In heaven, I replied, there is laid up a pattern of it, methinks, which he who desires may behold, and beholding, may set his own house in order.",
+   "who": "Socrates",
+   "explanation": "Whether or not the ideal city can exist on earth, it serves as a model for the individual soul. The passage reframes the political project of the dialogue as an ethical one, and has influenced later ideas of an inner or heavenly city."
+  },
+  {
+   "ref": "Rep. 10.606d",
+   "quote": "poetry feeds and waters the passions instead of drying them up; she lets them rule, although they ought to be controlled",
+   "who": "Socrates",
+   "explanation": "The central psychological charge against poetry. By making us enjoy grief and laughter on the stage, poetry strengthens the emotional part of the soul against reason. Aristotle's Poetics, with its idea of katharsis, is often read as a reply."
+  },
+  {
+   "ref": "Rep. 10.607b",
+   "quote": "there is an ancient quarrel between philosophy and poetry",
+   "who": "Socrates",
+   "explanation": "Socrates presents the exclusion of poetry as one episode in a long rivalry. Philosophy and poetry both claim to teach how to live, and the Republic stages their contest while leaving open a return for poetry if it can defend itself."
+  },
+  {
+   "ref": "Rep. 10.617e",
+   "quote": "Your genius will not be allotted to you, but you will choose your genius",
+   "who": "The spokesman of Lachesis, in the Myth of Er",
+   "explanation": "The souls about to be reborn are told that they, not the gods, are responsible for the lives they choose. The myth closes the dialogue by making the choice of justice the most important choice a soul can make, in this life and beyond it."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does the Republic begin with three inadequate definitions of justice in Book I?",
+   "hint": "Compare Cephalus, Polemarchus and Thrasymachus as representatives of different kinds of moral thinking. Consider why Socrates is dissatisfied at the end, and how Glaucon's challenge in Book II restates Thrasymachus' position."
+  },
+  {
+   "q": "What does the Ring of Gyges show, and does Socrates ever answer it?",
+   "hint": "Think about the difference between being just and seeming just. Look at Socrates' account of justice in the soul in Book IV and his portrait of the tyrant in Book IX."
+  },
+  {
+   "q": "Is the analogy between the city and the soul convincing?",
+   "hint": "List the correspondences between classes and parts of the soul. Ask whether the analogy explains the soul, or whether it shapes the city to fit a theory of the soul."
+  },
+  {
+   "q": "Why does Socrates censor Homer in Books II–III, and what does this tell us about Greek education?",
+   "hint": "Consider the role of memorisation and recitation, the stories about gods and the underworld, and the claim that we become what we imitate."
+  },
+  {
+   "q": "Explain the difference between narration and imitation in Book III. Why does it matter to Plato?",
+   "hint": "Look at Socrates' prose paraphrase of Iliad 1 and at what happens to a performer who speaks in the voice of a character."
+  },
+  {
+   "q": "How do the sun, the divided line and the Cave relate to one another?",
+   "hint": "Map the four sections of the line onto the stages of the prisoner's ascent. Consider what each image adds that the others lack, especially the return to the Cave."
+  },
+  {
+   "q": "Why must the philosophers return to the Cave, and is it fair to require it?",
+   "hint": "Weigh Socrates' argument that they owe their education to the city against the claim that justice is always good for the just person."
+  },
+  {
+   "q": "Is Plato's treatment of women in Book V progressive?",
+   "hint": "Consider the argument from natural aptitude, the abolition of the family and the repeated claim that women are on average weaker. Ask what the proposals are meant to achieve."
+  },
+  {
+   "q": "What are the two arguments against poetry in Book X, and how might a poet reply?",
+   "hint": "Separate the metaphysical argument (three beds) from the psychological one (poetry feeds the passions). Consider Aristotle's Poetics or a later defence such as Sidney's or Shelley's."
+  },
+  {
+   "q": "Why does a dialogue that banishes poets end with a myth?",
+   "hint": "Look at how the Myth of Er treats Homeric heroes, especially Odysseus, and at its emphasis on choice and responsibility. Consider whether philosophy can do without stories."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "adam1902",
+   "text": "Adam, James, ed. The Republic of Plato. 2 vols. Cambridge: Cambridge University Press, 1902."
+  },
+  {
+   "id": "annas1981",
+   "text": "Annas, Julia. An Introduction to Plato's Republic. Oxford: Clarendon Press, 1981."
+  },
+  {
+   "id": "annas1982",
+   "text": "Annas, Julia. 'Plato's Myths of Judgement.' Phronesis 27, no. 2 (1982): 119–143."
+  },
+  {
+   "id": "bloom1968",
+   "text": "Bloom, Allan, trans. The Republic of Plato. Translated with Notes and an Interpretive Essay. New York: Basic Books, 1968."
+  },
+  {
+   "id": "burnyeat1999",
+   "text": "Burnyeat, M. F. 'Culture and Society in Plato's Republic.' In The Tanner Lectures on Human Values, vol. 20, edited by Grethe B. Peterson, 215–324. Salt Lake City: University of Utah Press, 1999."
+  },
+  {
+   "id": "cross1964",
+   "text": "Cross, R. C., and A. D. Woozley. Plato's Republic: A Philosophical Commentary. London: Macmillan, 1964."
+  },
+  {
+   "id": "ferrari2003",
+   "text": "Ferrari, G. R. F. City and Soul in Plato's Republic. Sankt Augustin: Academia Verlag, 2003. Reprint, Chicago: University of Chicago Press, 2005."
+  },
+  {
+   "id": "ferrari2007",
+   "text": "Ferrari, G. R. F., ed. The Cambridge Companion to Plato's Republic. Cambridge: Cambridge University Press, 2007."
+  },
+  {
+   "id": "halliwell1988",
+   "text": "Halliwell, Stephen, ed. and trans. Plato: Republic 10. Warminster: Aris & Phillips, 1988."
+  },
+  {
+   "id": "halliwell2002",
+   "text": "Halliwell, Stephen. The Aesthetics of Mimesis: Ancient Texts and Modern Problems. Princeton: Princeton University Press, 2002."
+  },
+  {
+   "id": "havelock1963",
+   "text": "Havelock, Eric A. Preface to Plato. Cambridge, MA: Harvard University Press, 1963."
+  },
+  {
+   "id": "jowett1892",
+   "text": "Jowett, Benjamin, trans. The Republic. In The Dialogues of Plato, 3rd ed., vol. 3. Oxford: Clarendon Press, 1892."
+  },
+  {
+   "id": "kraut1997",
+   "text": "Kraut, Richard, ed. Plato's Republic: Critical Essays. Lanham, MD: Rowman & Littlefield, 1997."
+  },
+  {
+   "id": "murdoch1977",
+   "text": "Murdoch, Iris. The Fire and the Sun: Why Plato Banished the Artists. Oxford: Clarendon Press, 1977."
+  },
+  {
+   "id": "nails2002",
+   "text": "Nails, Debra. The People of Plato: A Prosopography of Plato and Other Socratics. Indianapolis: Hackett, 2002."
+  },
+  {
+   "id": "nehamas1999",
+   "text": "Nehamas, Alexander. Virtues of Authenticity: Essays on Plato and Socrates. Princeton: Princeton University Press, 1999."
+  },
+  {
+   "id": "okin1979",
+   "text": "Okin, Susan Moller. Women in Western Political Thought. Princeton: Princeton University Press, 1979."
+  },
+  {
+   "id": "popper1945",
+   "text": "Popper, Karl R. The Open Society and Its Enemies. Vol. 1, The Spell of Plato. London: Routledge, 1945."
+  },
+  {
+   "id": "reeve1988",
+   "text": "Reeve, C. D. C. Philosopher-Kings: The Argument of Plato's Republic. Princeton: Princeton University Press, 1988."
+  },
+  {
+   "id": "sachs1963",
+   "text": "Sachs, David. 'A Fallacy in Plato's Republic.' Philosophical Review 72, no. 2 (1963): 141–158."
+  },
+  {
+   "id": "schofield2006",
+   "text": "Schofield, Malcolm. Plato: Political Philosophy. Oxford: Oxford University Press, 2006."
+  },
+  {
+   "id": "slings2003",
+   "text": "Slings, S. R., ed. Platonis Rempublicam. Oxford Classical Texts. Oxford: Clarendon Press, 2003."
+  },
+  {
+   "id": "strauss1964",
+   "text": "Strauss, Leo. The City and Man. Chicago: Rand McNally, 1964."
+  },
+  {
+   "id": "williams1973",
+   "text": "Williams, Bernard. 'The Analogy of City and Soul in Plato's Republic.' In Exegesis and Argument: Studies in Greek Philosophy Presented to Gregory Vlastos, edited by E. N. Lee, A. P. D. Mourelatos and R. M. Rorty, 196–206. Assen: Van Gorcum, 1973."
+  }
+ ]
+}

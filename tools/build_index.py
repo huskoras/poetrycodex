@@ -44,6 +44,17 @@ LEGACY_INDEX_PATH = os.path.join(ROOT, "data", "legacy_index.json")
 
 EXCERPT_LINES = 3
 
+# Retired records (Hazlitt's duplicate rulings, 21 Oct 2026). A poem whose "dupOf" is set is a
+# second copy of a text held elsewhere: "<poetSlug>/<n>" (another poem) or "work:<slug>#<i>"
+# (section i of a long work). It stays in its poet file at its place, so no later id moves,
+# but it is left out of everything that lists poems: poems[], count, the subject tallies,
+# poemCount, and so search.json, the suggest files and home.json, which are built from this
+# index. A poet file with a top-level "mergedInto": "<poetSlug>" is a whole poet retired into
+# another (each of its poems carries its own dupOf): it is left out of poets[] altogether.
+# The index keeps two small maps for redirects, "retired" {poem id: dupOf} and "merged"
+# {poet slug: target slug}, in index.json and index-core.json alike; app.js sends the old
+# address on with them and build_pages.py writes a redirect page at each old URL.
+
 # Forms (B3): the "Form" row on #/poems. A poem gets one only when its title names the form
 # ("Sonnet 18", "Ode to Psyche", "Tam Samson's Elegy", "Burns: an Ode", "Elegy Written in a
 # Country Churchyard"), when its book is a sonnet sequence ("Sonnets from the Portuguese"),
@@ -132,10 +143,18 @@ def build():
     index_poets = []
     index_poems = []
     subject_tally = {}
+    retired = {}   # poem id -> dupOf
+    merged = {}    # poet slug -> mergedInto
 
     for poet in poets_raw:
         slug = poet["slug"]
-        poet_poems = poet.get("poems", [])
+        for pm in poet.get("poems", []):
+            if pm.get("dupOf"):
+                retired[pm["id"]] = pm["dupOf"]
+        if poet.get("mergedInto"):
+            merged[slug] = poet["mergedInto"]
+            continue
+        poet_poems = [pm for pm in poet.get("poems", []) if not pm.get("dupOf")]
         index_poets.append({
             "slug": slug,
             "name": poet["name"],
@@ -216,6 +235,8 @@ def build():
         "subjects": subjects,
         "works": index_works,
         "poems": index_poems,
+        "retired": retired,
+        "merged": merged,
     }
 
     write_compact(INDEX_PATH, index)
@@ -225,12 +246,15 @@ def build():
         "subjects": subjects,
         "poets": [{k: v for k, v in p.items() if k not in CORE_POET_DROP} for p in index_poets],
         "works": [{k: v for k, v in w.items() if k not in CORE_WORK_DROP} for w in index_works],
+        "retired": retired,
+        "merged": merged,
     }
     write_compact(CORE_PATH, core)
 
     size = os.path.getsize(INDEX_PATH)
     print(f"Wrote {INDEX_PATH} ({size / 1024:.1f} KB)")
-    print(f"  poets={len(index_poets)} poems={len(index_poems)} works={len(index_works)}")
+    print(f"  poets={len(index_poets)} poems={len(index_poems)} works={len(index_works)}"
+          f" retired={len(retired)} merged poets={len(merged)}")
     print(f"Wrote {CORE_PATH} ({os.path.getsize(CORE_PATH) / 1024:.1f} KB)")
 
 

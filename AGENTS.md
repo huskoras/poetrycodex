@@ -192,6 +192,37 @@ else's id. Appending a poem to the *same* poet's file is safe (new poem gets the
 `n`); inserting one in the middle of an existing poet's array would shift later ids, so
 prefer appending. `#/poem/<authorSlug>/<n>` is the URL.
 
+**Retired records: `dupOf` and `mergedInto` (21 Oct 2026, Hazlitt's duplicate rulings).** A
+record that is only a second copy of a text held elsewhere is never deleted or popped off the
+end (that would move ids, or let the next append give an old link a different poem). It is
+*retired* instead, with one optional field:
+- Poem field `"dupOf"`: `"<poetSlug>/<n>"` (the poem that stays) or `"work:<workSlug>#<i>"`
+  (section `i` of a long work, 0-based). The poem stays in its file at its place, so its id
+  still equals its position, and its text is kept (a ruling can be undone). But it is left out
+  of everything that lists poems: `build_index.py` leaves it out of `poems[]`, `count`, the
+  subject tallies and `poemCount` in `data/index.json` and `index-core.json`, so it is also
+  absent from `search.json`, the suggest files and `home.json` (poem of the day, random pool),
+  which are built from the index; `build_parallel.py` skips a facing-page pair that names it.
+  `build_pages.py` writes no page for it: `/poem/<slug>/<n>/` becomes a small redirect page
+  (meta refresh, `rel=canonical` to the target, a plain link) and is left out of the sitemap,
+  the poet's list, Previous / Next and "More by". In the app `#/poem/<slug>/<n>` goes on to the
+  target with `location.replace`, and so does an old `#/poem/<legacyNumber>` whose poem is
+  retired. `verify_split.py` checks that the target exists and is not itself retired.
+- Poet-file top-level `"mergedInto": "<poetSlug>"`: the whole poet is retired into another
+  (same poet, two files). The poet is left out of the indexes, Poets and Eras, the sitemap and
+  the `/poet/` list; `/poet/<slug>/` and `#/poet/<slug>` redirect to the target poet. Every poem
+  in the file must carry its own `dupOf` (verify_split fails otherwise), and the poet must have
+  no works left (move them first).
+- The index and the core index carry the redirect maps `"retired": {poem id: dupOf}` and
+  `"merged": {slug: slug}`; the shards (`data/c/`) carry `dupOf` on the poem itself.
+- **Set these only with `python tools/retire.py rulings.json`** (`--dry-run` to check first).
+  `rulings.json` is a list of `{"from": "lazarus/103", "to": "ibn-gabirol/0"}`,
+  `{"from": "pope/54", "to": "work:essay-on-man#0"}`, `{"poet": "macdonagh", "mergedInto":
+  "macdonagh_t"}`; `"to": null` / `"mergedInto": null` undoes one. It checks every rule before
+  writing anything, edits only that one line of each file (indent, line endings and every
+  other byte kept), and re-reads each file just before writing it. Then rebuild as after any
+  content change (`build_index.py`, `verify_split.py`, `build_pages.py`, …).
+
 **`data/works/<slug>.json`** (source of truth for one long work, full text):
 ```json
 { "slug": "iliad-butler", "title": "The Iliad", "subtitle": "...",

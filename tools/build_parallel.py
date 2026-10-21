@@ -82,13 +82,25 @@ def section(s):
     return rec
 
 
+def retired_ids():
+    """Poem ids retired with dupOf (data/index.json "retired", written by build_index.py)."""
+    try:
+        return json.load(io.open(os.path.join(ROOT, "data", "index.json"), encoding="utf-8")).get("retired") or {}
+    except (OSError, ValueError):
+        return {}
+
+
 def main():
     d = json.load(io.open(SRC, encoding="utf-8"))
     poems, works = {}, {}
+    retired = retired_ids()   # a retired poem has no page of its own to face anything on
     for p in d.get("poems", []):
         oe = p["oe_id"]
         for t in p.get("translations", []):
             if t.get("confidence") not in ("high", "medium"):
+                continue
+            if oe in retired or t["id"] in retired:
+                print(f"parallel: skipped {oe} <> {t['id']}: retired (point the pair at {retired.get(oe) or retired.get(t['id'])})")
                 continue
             rec = {"orig": oe, "lang": LANG, "mode": t.get("mode") or "blocks",
                    "map": seg_map(t.get("exceptions"))}

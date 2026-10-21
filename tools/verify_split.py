@@ -24,6 +24,10 @@ Checks:
   - every poet's category is one of the categories declared in app.js
   - data/index-core.json holds every index poet and work, in order, with the same
     counts and section titles (poets without bio/credit, works without note, no poems)
+  - retired records: a poem with "dupOf" keeps its id at its place but is in no index list;
+    its target ("<slug>/<n>" or "work:<slug>#<i>") exists and is not itself retired; a poet
+    file with "mergedInto" is left out of the index, names a live poet, and every one of its
+    poems carries a dupOf; the index's "retired" / "merged" maps match the files
 """
 import json
 import os
@@ -36,6 +40,8 @@ DATA = os.path.join(ROOT, "data")
 
 POEM_FIELDS = ("id", "title", "authorSlug", "author", "primarySubject", "subjects", "text")
 POET_FIELDS = ("slug", "name", "dates", "category", "bio", "poemCount", "workCount")
+DUP_POEM = re.compile(r"^([\w-]+)/(\d+)$")       # dupOf "<poetSlug>/<n>"
+DUP_WORK = re.compile(r"^work:([\w-]+)#(\d+)$")  # dupOf "work:<workSlug>#<sectionIndex>"
 
 
 def load(*parts):
@@ -59,18 +65,38 @@ def main():
 
     # ---- poets & poems ----
     poet_files = sorted(f for f in os.listdir(os.path.join(DATA, "poets")) if f.endswith(".json"))
-    if len(poet_files) != len(idx["poets"]):
-        errors.append(f"poet files {len(poet_files)} != index poets {len(idx['poets'])}")
 
     all_ids, total_poems = set(), 0
     subject_counts = Counter()
     poems_by_id = {}
+    retired, merged = {}, {}   # poem id -> dupOf, poet slug -> mergedInto (from the files)
+    live_poet_files = 0
 
     for fn in poet_files:
         slug = fn[:-5]
-        poems = load(DATA, "poets", fn).get("poems", [])
+        pf = load(DATA, "poets", fn)
+        all_poems = pf.get("poems", [])
+        into = pf.get("mergedInto")
+        if into:
+            merged[slug] = into
+        for n, p in enumerate(all_poems):
+            if p.get("dupOf"):
+                retired[f"{slug}/{n}"] = p["dupOf"]
+            elif into:
+                errors.append(f"{slug}/{n}: poet is mergedInto {into!r} but the poem has no dupOf")
+        poems = [p for p in all_poems if not p.get("dupOf")]
         total_poems += len(poems)
         ip = idx_poets.get(slug)
+        if into:
+            if ip is not None:
+                errors.append(f"{slug}: poet is mergedInto {into!r} but still has an index entry")
+            # ids still equal their places in a merged poet's file
+            for n, p in enumerate(all_poems):
+                if p.get("id") != f"{slug}/{n}":
+                    errors.append(f"{slug}/{n}: id is {p.get('id')!r}, expected {slug}/{n}")
+                all_ids.add(p.get("id"))
+            continue
+        live_poet_files += 1
         if ip is None:
             errors.append(f"{slug}: poet file has no index entry")
             continue
@@ -82,7 +108,15 @@ def main():
         if ip.get("portrait") and not os.path.exists(os.path.join(ROOT, ip["portrait"])):
             errors.append(f"{slug}: portrait file missing: {ip['portrait']}")
 
-        for n, p in enumerate(poems):
+        for n, p in enumerate(all_poems):
+            if p.get("dupOf"):
+                # retired: only its place is checked here (its target below)
+                if p.get("id") != f"{slug}/{n}":
+                    errors.append(f"{slug}/{n}: id is {p.get('id')!r}, expected {slug}/{n}")
+                if p.get("id") in all_ids:
+                    errors.append(f"duplicate poem id {p.get('id')}")
+                all_ids.add(p.get("id"))
+                continue
             for f in POEM_FIELDS:
                 if f not in p:
                     errors.append(f"{slug}/{n}: missing field '{f}'")
@@ -101,6 +135,8 @@ def main():
             if p.get("primarySubject"):
                 subject_counts[p["primarySubject"]] += 1
 
+    if len(idx["poets"]) != live_poet_files:
+        errors.append(f"poet files {live_poet_files} (not merged) != index poets {len(idx['poets'])}")
     if idx.get("count") != total_poems:
         errors.append(f"index count {idx.get('count')} != {total_poems} poems in poet files")
     if len(idx.get("poems", [])) != total_poems:
@@ -182,6 +218,36 @@ def main():
     else:
         errors.append("data/legacy_index.json is missing (old #/poem/<n> links would break)")
 
+    # ---- retired records (dupOf / mergedInto) ----
+    work_sections = {}
+    for fn in work_files:
+        work_sections[fn[:-5]] = len(load(DATA, "works", fn).get("sections", []))
+    for pid, target in retired.items():
+        mp, mw = DUP_POEM.match(str(target)), DUP_WORK.match(str(target))
+        if mp:
+            if target == pid:
+                errors.append(f"{pid}: dupOf points at itself")
+            elif target not in poems_by_id:
+                errors.append(f"{pid}: dupOf {target!r} is "
+                              + ("itself retired" if target in retired else "not a poem"))
+            elif mp.group(1) in merged:
+                errors.append(f"{pid}: dupOf {target!r} is in a merged poet's file")
+        elif mw:
+            i, n_secs = int(mw.group(2)), work_sections.get(mw.group(1))
+            if n_secs is None:
+                errors.append(f"{pid}: dupOf {target!r}: no work {mw.group(1)!r}")
+            elif i >= n_secs:
+                errors.append(f"{pid}: dupOf {target!r}: the work has {n_secs} sections")
+        else:
+            errors.append(f"{pid}: dupOf {target!r} is not \"<slug>/<n>\" or \"work:<slug>#<i>\"")
+    for slug, into in merged.items():
+        if into not in idx_poets:
+            errors.append(f"{slug}: mergedInto {into!r} is not a live poet")
+    if idx.get("retired", {}) != retired:
+        errors.append(f"index retired map ({len(idx.get('retired', {}))}) != dupOf in the files ({len(retired)})")
+    if idx.get("merged", {}) != merged:
+        errors.append(f"index merged map {idx.get('merged', {})} != mergedInto in the files {merged}")
+
     # ---- core index (data/index-core.json, speed fix 6a) ----
     # Poets, Eras, About and a poet's header are drawn from it: every poet and work in the
     # index must be in it, in the same order, with the same counts and section titles.
@@ -195,6 +261,9 @@ def main():
                 errors.append(f"index-core {k} {core.get(k)} != index {idx.get(k)}")
         if core.get("subjects") != idx.get("subjects"):
             errors.append("index-core subjects differ from index")
+        for k in ("retired", "merged"):
+            if core.get(k, {}) != idx.get(k, {}):
+                errors.append(f"index-core {k} map differs from index")
         if "poems" in core:
             errors.append("index-core carries poems (it should not)")
         c_poets, c_works = core.get("poets") or [], core.get("works") or []
@@ -233,7 +302,9 @@ def main():
 
     # ---- report ----
     print(f"poets:          {len(poet_files)}")
-    print(f"poems:          {total_poems}")
+    print(f"poems:          {total_poems}" + (f" (+ {len(retired)} retired)" if retired else ""))
+    if merged:
+        print(f"merged poets:   {len(merged)}")
     print(f"works:          {len(work_files)} ({total_sections} sections)")
     print(f"subjects:       {len(subject_counts)}")
     print(f"index.json:     {os.path.getsize(os.path.join(DATA, 'index.json')) / 1024:.1f} KB")

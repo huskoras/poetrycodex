@@ -21,6 +21,11 @@ Output (all regenerated; do not edit by hand):
     llms.txt                          — the site described for AI assistants, from the guides, blog and works
     404.html                          — shown for any address that does not exist
 
+A retired poem (one with "dupOf", see build_index.py) gets no page of its own: its address
+gets a small redirect page (meta refresh + canonical + a plain link) to the text it is a copy
+of, and it is left out of the sitemap, the poet's list, Previous / Next and "More by". A merged
+poet ("mergedInto") gets the same at /poet/<slug>/, pointing at the poet it was merged into.
+
 A reader who lands on one of these pages gets the poem in full, with a link
 into the archive for the rest of the experience. Run after any content change:
 
@@ -435,7 +440,8 @@ MORE_BY = 5
 def more_by(poet, poems, n, author):
     """Up to MORE_BY links to other poems by the same poet, spread through their list and the
     same on every build (the poems either side are already linked as Previous / Next)."""
-    others = [j for j in range(len(poems)) if abs(j - n) > 1] or [j for j in range(len(poems)) if j != n]
+    shown = [j for j in range(len(poems)) if live(poems, j)]
+    others = [j for j in shown if abs(j - n) > 1] or [j for j in shown if j != n]
     if not others:
         return ""
     k = min(MORE_BY, len(others))
@@ -473,6 +479,43 @@ def poem_notes_html(slug, n):
             + "".join(items) + "</ol></section>")
 
 
+DUP_TARGET = re.compile(r"^(?:([\w-]+)/(\d+)|work:([\w-]+)#(\d+))$")
+
+
+def dup_path(value):
+    """The site path of a dupOf target: /poem/<slug>/<n>/ or /work/<slug>/<i>/ (None if malformed)."""
+    m = DUP_TARGET.match(value or "")
+    if not m:
+        return None
+    return f"/poem/{m.group(1)}/{m.group(2)}/" if m.group(1) else f"/work/{m.group(3)}/{m.group(4)}/"
+
+
+def live(poems, j):
+    """Poem j of the list is shown on the site (not retired with dupOf)."""
+    return 0 <= j < len(poems) and not poems[j].get("dupOf")
+
+
+def redirect_page(path, title, what="text"):
+    """The page left at a retired address: sends the reader (and search engines) to path."""
+    url = SITE + path
+    name = esc(title) if title else esc(url)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{name} · Poetry Codex</title>
+  <link rel="canonical" href="{esc(url)}" />
+  <meta http-equiv="refresh" content="0; url={esc(path)}" />
+  <script>location.replace({json.dumps(path)});</script>
+</head>
+<body>
+  <p>This {what} is now at <a href="{esc(path)}">{name}</a>.</p>
+</body>
+</html>
+"""
+
+
 def poem_page(poet, poems, n, p):
     title = p["title"]
     author = p["author"]
@@ -487,10 +530,13 @@ def poem_page(poet, poems, n, p):
     desc_src = note or (p["text"] or "").replace("\n", " ")
     description = (f"{title} by {author}. " + desc_src)[:300]
 
-    prev_link = (f'<a class="pn prev" href="/poem/{slug}/{n-1}/">← {esc(poems[n-1]["title"])}</a>'
-                 if n > 0 else '<span></span>')
-    next_link = (f'<a class="pn next" href="/poem/{slug}/{n+1}/">{esc(poems[n+1]["title"])} →</a>'
-                 if n < len(poems) - 1 else '<span></span>')
+    # Previous / Next skip retired poems (dupOf): they are redirects, not poems of this poet.
+    pv = next((j for j in range(n - 1, -1, -1) if live(poems, j)), None)
+    nx = next((j for j in range(n + 1, len(poems)) if live(poems, j)), None)
+    prev_link = (f'<a class="pn prev" href="/poem/{slug}/{pv}/">← {esc(poems[pv]["title"])}</a>'
+                 if pv is not None else '<span></span>')
+    next_link = (f'<a class="pn next" href="/poem/{slug}/{nx}/">{esc(poems[nx]["title"])} →</a>'
+                 if nx is not None else '<span></span>')
 
     body = f"""    <article class="detail">
       <p class="detail-subject">{esc(subj)}</p>
@@ -569,12 +615,13 @@ def poet_page(poet, poem_list, works):
 {rows}
       </ol>"""
     poems_block = ""
-    if poem_list:
+    shown = [(i, p) for i, p in enumerate(poem_list) if not p.get("dupOf")]
+    if shown:
         rows = "\n".join(
             f'<li><a href="/poem/{slug}/{i}/">{esc(p["title"])}</a></li>'
-            for i, p in enumerate(poem_list))
+            for i, p in shown)
         poems_block = f"""
-      <p class="section-label">Poems ({len(poem_list):,})</p>
+      <p class="section-label">Poems ({len(shown):,})</p>
       <ol class="poet-poems">
 {rows}
       </ol>"""
@@ -1037,6 +1084,7 @@ def main():
     # changes is one search engines learn to ignore.
     urls = [f"{SITE}/", f"{SITE}/poet/"]
     poem_count = poet_count = work_count = section_count = 0
+    titles = {}   # live poem id -> title (for the redirect pages of retired poems)
 
     for poet_stub in idx["poets"]:
         slug = poet_stub["slug"]
@@ -1045,7 +1093,10 @@ def main():
         if os.path.exists(pf):
             poems = json.load(io.open(pf, encoding="utf-8")).get("poems") or []
         works = works_by_poet.get(slug, [])
-        if not poems and not works:
+        for n, p in enumerate(poems):
+            if not p.get("dupOf"):
+                titles[f"{slug}/{n}"] = p["title"]
+        if not any(not p.get("dupOf") for p in poems) and not works:
             continue
 
         poet = {
@@ -1059,6 +1110,8 @@ def main():
         poet_count += 1
 
         for n, p in enumerate(poems):
+            if p.get("dupOf"):
+                continue          # a redirect page is written below, and no sitemap entry
             write(os.path.join(ROOT, "poem", slug, str(n), "index.html"),
                   poem_page(poet, poems, n, p))
             urls.append(f"{SITE}/poem/{slug}/{n}/")
@@ -1080,6 +1133,29 @@ def main():
                 urls.append(f"{SITE}/work/{w['slug']}/{i}/")
                 section_count += 1
     write(os.path.join(ROOT, "work", "works.json"), works_manifest(idx.get("works") or []))
+
+    # Retired poems and merged poets: a redirect page at the old address, not in the sitemap.
+    works_by_slug = {w["slug"]: w for w in idx.get("works") or []}
+    redirect_count = 0
+    for pid, target in (idx.get("retired") or {}).items():
+        path = dup_path(target)
+        if not path:
+            continue                       # verify_split.py reports a malformed dupOf
+        if target.startswith("work:"):
+            wslug, i = target[5:].split("#")
+            w, i = works_by_slug.get(wslug) or {}, int(i)
+            secs = w.get("sections") or []
+            title = (w.get("title", "") + (" · " + secs[i]["title"] if i < len(secs) else "")) if w else ""
+        else:
+            title = titles.get(target, "")
+        slug, n = pid.rsplit("/", 1)
+        write(os.path.join(ROOT, "poem", slug, n, "index.html"), redirect_page(path, title, "poem"))
+        redirect_count += 1
+    poets_by_slug = {p["slug"]: p for p in idx["poets"]}
+    for slug, into in (idx.get("merged") or {}).items():
+        write(os.path.join(ROOT, "poet", slug, "index.html"),
+              redirect_page(f"/poet/{into}/", (poets_by_slug.get(into) or {}).get("name", ""), "poet"))
+        redirect_count += 1
 
     guide_count = 0
     guides = []   # (group, guide) for the /guide/ hub and llms.txt
@@ -1134,6 +1210,7 @@ def main():
     print(f"poem pages: {poem_count}")
     print(f"work pages: {work_count} (+ {section_count} sections)")
     print(f"sitemap urls: {len(urls)}")
+    print(f"redirect pages (retired poems, merged poets): {redirect_count}")
 
 
 def poet_hub_page(poets):

@@ -6,7 +6,9 @@ to show one poem. These shards hold just what one poem page or one work-section 
 
   data/c/<poet>/<k>.json   poems k*50 .. k*50+49 of that poet, the poet's stub (name, dates,
                            category, portrait), the poet's poem count, and the titles just
-                           before and after the shard (for Previous / Next)
+                           before and after the shard (for Previous / Next); a retired
+                           poem (dupOf) is skipped there, and "beforeAt" / "afterAt" then
+                           give the place of the poem named
   data/ws/<work>/<i>.json  section i of that work (with its text), the work's metadata, its
                            number of sections and the titles before and after (Previous / Next)
 
@@ -49,11 +51,18 @@ def main():
         stub = {k: poet.get(k) for k in STUB if k in poet}
         for k in range(0, (len(poems) + SHARD - 1) // SHARD):
             a, b = k * SHARD, min(len(poems), (k + 1) * SHARD)
-            dump(os.path.join(data, "c", poet["slug"], f"{k}.json"), {
-                "poet": stub, "total": len(poems), "start": a,
-                "before": poems[a - 1]["title"] if a > 0 else None,
-                "after": poems[b]["title"] if b < len(poems) else None,
-                "poems": poems[a:b]})
+            # Previous / Next across the shard's edges: the nearest poem that is not retired.
+            pv = next((j for j in range(a - 1, -1, -1) if not poems[j].get("dupOf")), None)
+            nx = next((j for j in range(b, len(poems)) if not poems[j].get("dupOf")), None)
+            rec = {"poet": stub, "total": len(poems), "start": a,
+                   "before": poems[pv]["title"] if pv is not None else None,
+                   "after": poems[nx]["title"] if nx is not None else None,
+                   "poems": poems[a:b]}
+            if pv is not None and pv != a - 1:
+                rec["beforeAt"] = pv
+            if nx is not None and nx != b:
+                rec["afterAt"] = nx
+            dump(os.path.join(data, "c", poet["slug"], f"{k}.json"), rec)
             n_poem += 1
     for f in sorted(os.listdir(os.path.join(data, "works"))):
         if not f.endswith(".json"):

@@ -142,8 +142,8 @@
       notePoet(slug, s.poet);
       const poems = new Array(s.total);
       s.poems.forEach((p, j) => { poems[s.start + j] = p; });
-      if (s.before != null) poems[s.start - 1] = { title: s.before };
-      if (s.after != null) poems[s.start + s.poems.length] = { title: s.after };
+      if (s.before != null) poems[s.beforeAt != null ? s.beforeAt : s.start - 1] = { title: s.before };
+      if (s.after != null) poems[s.afterAt != null ? s.afterAt : s.start + s.poems.length] = { title: s.after };
       return { slug, poems };
     });
   }
@@ -5381,6 +5381,18 @@
   }
   // The index a page drawn from the core reads: the full one once it is in.
   const coreData = () => DATA || CORE;
+  // Retired records (tools/build_index.py): a poem kept in its poet file only as a copy of a
+  // text held elsewhere ("dupOf": "<poet>/<n>" or "work:<slug>#<i>"), and a poet merged into
+  // another ("mergedInto"). Both indexes carry them as "retired" {id: dupOf} and "merged"
+  // {slug: slug}; the poem itself carries dupOf in its poet file and shard. Their old addresses
+  // are sent on to the text that stays, with location.replace (Back does not return to them).
+  const retiredOf = (id) => { const d = coreData(); return (d && d.retired && d.retired[id]) || ""; };
+  const mergedOf = (slug) => { const d = coreData(); return (d && d.merged && d.merged[slug]) || ""; };
+  function dupHash(target) {
+    const m = /^work:([\w-]+)#(\d+)$/.exec(target || "");
+    return m ? "#/work/" + m[1] + "/" + m[2] : "#/poem/" + target;
+  }
+  const replaceHash = (hash) => location.replace(location.href.split("#")[0] + hash);
   // Every poem by title, sorted on first use; every list filters this and so keeps the order.
   function sortedPoems() {
     if (!DATA) return [];
@@ -5643,7 +5655,7 @@
   // overview, book-by-book summary and analysis, characters, themes, the critical debates,
   // key passages (quoted from the recommended translation), questions and a bibliography.
   // Paragraphs cite with [[bibId]], drawn as (Author year) linked to the bibliography.
-  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost", "beowulf", "divine-comedy", "gilgamesh", "faerie-queene", "mahabharata", "ramayana", "shahnameh", "koroglu", "nibelungenlied", "song-of-roland", "kalevala", "sir-gawain", "orlando-furioso", "jerusalem-delivered", "lusiads", "metamorphoses", "poetic-edda", "tain", "canterbury-tales", "idylls-of-the-king", "el-cid", "argonautica", "pharsalia", "gondibert", "paradise-regained", "song-of-hiawatha", "theogony", "igor-tale", "rape-of-the-lock", "the-prelude", "don-juan", "aurora-leigh", "the-ring-and-the-book", "childe-harold", "endymion", "ossian-fingal", "evangeline", "bhagavad-gita", "samson-agonistes", "shepheardes-calender", "comus", "essay-on-man", "maud-tennyson", "the-seasons-thomson", "the-task", "thebaid", "buddhacarita", "marmion", "lady-of-the-lake", "davideis-cowley", "hero-and-leander-chapman", "sepmaine", "christs-victorie-and-triumph", "troilus-and-criseyde", "piers-plowman", "pearl", "georgics", "works-and-days", "prometheus-unbound-shelley", "faust-part-1", "manfred-byron", "hudibras", "gita-govinda", "lay-of-the-last-minstrel", "meghaduta", "doctor-faustus", "everyman", "sordello", "lalla-rookh", "empedocles-on-etna-arnold", "kudrun", "pan-tadeusz", "parzival", "masnavi", "shakuntala", "laili-majnun", "nala-damayanti", "raghuvamsa", "kumarasambhava", "oberon", "konrad-wallenrod", "bustan", "hamlet-shakespeare", "king-lear-shakespeare", "macbeth-shakespeare", "othello-shakespeare", "oedipus-the-king", "antigone", "agamemnon", "medea", "bacchae", "prometheus-bound", "tempest-shakespeare", "romeo-and-juliet-shakespeare", "a-midsummer-nights-dream-shakespeare", "twelfth-night-shakespeare", "merchant-of-venice-shakespeare", "julius-caesar-shakespeare", "duchess-of-malfi-webster", "volpone-jonson"]);
+  const GUIDES = new Set(["iliad", "aeneid", "odyssey", "paradise-lost", "beowulf", "divine-comedy", "gilgamesh", "faerie-queene", "mahabharata", "ramayana", "shahnameh", "koroglu", "nibelungenlied", "song-of-roland", "kalevala", "sir-gawain", "orlando-furioso", "jerusalem-delivered", "lusiads", "metamorphoses", "poetic-edda", "tain", "canterbury-tales", "idylls-of-the-king", "el-cid", "argonautica", "pharsalia", "gondibert", "paradise-regained", "song-of-hiawatha", "theogony", "igor-tale", "rape-of-the-lock", "the-prelude", "don-juan", "aurora-leigh", "the-ring-and-the-book", "childe-harold", "endymion", "ossian-fingal", "evangeline", "bhagavad-gita", "samson-agonistes", "shepheardes-calender", "comus", "essay-on-man", "maud-tennyson", "the-seasons-thomson", "the-task", "thebaid", "buddhacarita", "marmion", "lady-of-the-lake", "davideis-cowley", "hero-and-leander-chapman", "sepmaine", "christs-victorie-and-triumph", "troilus-and-criseyde", "piers-plowman", "pearl", "georgics", "works-and-days", "prometheus-unbound-shelley", "faust-part-1", "manfred-byron", "hudibras", "gita-govinda", "lay-of-the-last-minstrel", "meghaduta", "doctor-faustus", "everyman", "sordello", "lalla-rookh", "empedocles-on-etna-arnold", "kudrun", "pan-tadeusz", "parzival", "masnavi", "shakuntala", "laili-majnun", "nala-damayanti", "raghuvamsa", "kumarasambhava", "oberon", "konrad-wallenrod", "bustan", "hamlet-shakespeare", "king-lear-shakespeare", "macbeth-shakespeare", "othello-shakespeare", "oedipus-the-king", "antigone", "agamemnon", "medea", "bacchae", "prometheus-bound", "tempest-shakespeare", "romeo-and-juliet-shakespeare", "a-midsummer-nights-dream-shakespeare", "twelfth-night-shakespeare", "merchant-of-venice-shakespeare", "julius-caesar-shakespeare", "duchess-of-malfi-webster", "volpone-jonson", "herodotus-histories", "thucydides-peloponnesian-war", "plato-republic", "julius-caesar-gallic-war", "marcus-aurelius-meditations", "tacitus-annals", "plato-symposium", "plato-apology", "livy-history-of-rome"]);
   const GUIDE_FILES = {};
   const GUIDE_PARTS = [["overview", "Overview"], ["books", "Book by book"], ["characters", "Characters"],
     ["themes", "Themes & symbols"], ["debates", "Critical debates"], ["quotes", "Key passages"],
@@ -6733,7 +6745,8 @@
       const go = (map) => {
         if (location.hash !== h) return;   // the reader has moved on meanwhile
         const id = map && map[oldI];
-        if (id) location.replace(location.href.split("#")[0] + "#/poem/" + id);
+        // an old number whose poem has since been retired goes straight to the text that stays
+        if (id) replaceHash(retiredOf(id) ? dupHash(retiredOf(id)) : "#/poem/" + id);
         else app.innerHTML = `<p class="empty">That poem could not be found.</p>`;
       };
       if (DATA.legacyIndex) go(DATA.legacyIndex);
@@ -7592,6 +7605,7 @@
       </figure>`;
 
   function renderPoet(slug) {
+    if (mergedOf(slug)) { replaceHash("#/poet/" + mergedOf(slug)); return; }   // a poet merged into another
     const poet = POETS[slug];
     if (!poet) { location.hash = "#/poets"; return; }
     // Drawn from the core index the page has its header and works at once; the poems and bio
@@ -10958,6 +10972,8 @@ ${body}</body></html>`;
   // id format: "<authorSlug>/<n>" where n is the poem's index within that
   // poet's own poems array (stable across content edits to OTHER poets).
   function renderDetail(slug, n) {
+    const dup = retiredOf(slug + "/" + n);
+    if (dup) { replaceHash(dupHash(dup)); return; }
     if (DATA && !POETS[slug]) { location.hash = "#/"; return; }
     if (EARLY_DRAWN !== location.hash) renderLoading();   // a page drawn before the index is redrawn in place
     const requestedHash = location.hash;
@@ -10965,6 +10981,7 @@ ${body}</body></html>`;
       if (location.hash !== requestedHash) return null; // route changed while fetching
       const p = poetFile.poems[n];
       if (!p) { location.hash = "#/poet/" + slug; return null; }
+      if (p.dupOf) { replaceHash(dupHash(p.dupOf)); return null; }   // before the index: from the shard
       // A reader who keeps facing pages on gets them at once: the other text comes first.
       // With several to choose from, all of them (their buttons are named from them when
       // the index is not in; they are short and mostly in the same shard).
@@ -11326,7 +11343,7 @@ ${body}</body></html>`;
   // those its shard holds (up to 50 around it), the same three every time.
   function poetNextHTML(poems, n, p) {
     const pool = [];
-    poems.forEach((q, j) => { if (j !== n && q && q.text && q.id) pool.push(q); });
+    poems.forEach((q, j) => { if (j !== n && q && q.text && q.id && !q.dupOf) pool.push(q); });
     if (!pool.length) return "";
     let h = 0;
     for (const ch of p.id || "") h = (h * 31 + ch.charCodeAt(0)) >>> 0;
@@ -11358,6 +11375,13 @@ ${body}</body></html>`;
                    year: citeYear(p.translator, ""), lang: citeLang(p.authorSlug, p.translator, p.title) };
     const entry = { id: slug + "/" + n, kind: "poem", title: p.title, author: p.author, translator: p.translator || "" };
     const par = parList("poems", p.id);
+    // Previous / Next: the nearest poem that is not retired (dupOf); a hole in a shard's list
+    // stands for retired poems the shard skipped (build_shards.py: beforeAt / afterAt).
+    const near = (dir) => {
+      for (let j = n + dir; j >= 0 && j < poems.length; j += dir) if (poems[j] && !poems[j].dupOf) return j;
+      return -1;
+    };
+    const pv = near(-1), nx = near(1);
     const long = lineCount(p.text) > LONG_POEM;   // a long poem keeps its place, like a book
     setTitle(p.title + " — " + p.author);
     app.innerHTML = `
@@ -11382,8 +11406,8 @@ ${body}</body></html>`;
         <p class="note-block">${esc(p.note)}</p>` : ""}
         ${citeHTML(cite, entry)}
         <div class="detail-nav">
-          <button ${n === 0 ? "disabled" : ""} data-go="${n - 1}"><span class="dir">← Previous</span>${n > 0 ? esc(poems[n - 1].title) : ""}</button>
-          <button class="next" ${n === poems.length - 1 ? "disabled" : ""} data-go="${n + 1}"><span class="dir">Next →</span>${n < poems.length - 1 ? esc(poems[n + 1].title) : ""}</button>
+          <button ${pv < 0 ? "disabled" : ""} data-go="${pv}"><span class="dir">← Previous</span>${pv >= 0 ? esc(poems[pv].title) : ""}</button>
+          <button class="next" ${nx < 0 ? "disabled" : ""} data-go="${nx}"><span class="dir">Next →</span>${nx >= 0 ? esc(poems[nx].title) : ""}</button>
         </div>
         ${DATA ? relatedHTML(p) : poetNextHTML(poems, n, p)}
       </article>`;

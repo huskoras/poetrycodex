@@ -1,0 +1,795 @@
+{
+ "work": "julius-caesar-gallic-war",
+ "title": "The Gallic War",
+ "author": "Julius Caesar",
+ "quoteEdition": "julius-caesar-gallic-war-mcdevitte",
+ "updated": "2026-10-21",
+ "glance": [
+  {
+   "label": "Latin title",
+   "value": "Commentarii de Bello Gallico (Commentaries on the Gallic War)"
+  },
+  {
+   "label": "Author",
+   "value": "Gaius Julius Caesar (100–44 BC), Books I–VII; Book VIII by his officer Aulus Hirtius (died 43 BC)"
+  },
+  {
+   "label": "Written",
+   "value": "Books I–VII probably 52–51 BC, either at a stroke or year by year (disputed); Book VIII after Caesar's death in 44 BC"
+  },
+  {
+   "label": "Genre",
+   "value": "Commentarius: a plain, apparently factual military report, written in the third person"
+  },
+  {
+   "label": "Period covered",
+   "value": "58–50 BC, one book per campaigning year (Book VIII covers 51–50 BC)"
+  },
+  {
+   "label": "Setting",
+   "value": "Gaul (modern France, Belgium, Switzerland and the Rhineland), with expeditions across the Rhine and into Britain"
+  },
+  {
+   "label": "Main figures",
+   "value": "Caesar, his legate Labienus, the Helvetii, Ariovistus, the Belgae and Nervii, the Veneti, Ambiorix, Vercingetorix"
+  },
+  {
+   "label": "Climax",
+   "value": "The siege of Alesia and the surrender of Vercingetorix (52 BC, Book VII)"
+  },
+  {
+   "label": "Standard reference",
+   "value": "BG book.chapter (e.g. BG 1.1, BG 7.89)"
+  },
+  {
+   "label": "Translation quoted",
+   "value": "W. A. McDevitte and W. S. Bohn, Bohn's Classical Library (1869)"
+  }
+ ],
+ "context": [
+  "Gaius Julius Caesar was consul in 59 BC. As his reward he received a five-year command, later extended, over Cisalpine Gaul (northern Italy) and Illyricum, to which the senate added Transalpine Gaul, the Roman 'Province' in the south of modern France. Over the next eight years he turned this command into the conquest of all Gaul between the Pyrenees, the Alps, the Rhine and the Atlantic. The war made him rich, gave him a battle-hardened army devoted to him personally, and kept his name before the Roman public while his rivals manoeuvred at home. It ended in 50 BC; in January 49 he crossed the Rubicon and began the civil war against Pompey and the senate [[gelzer1968]] [[goldsworthy2006]].",
+  "The Gallic War belongs to a Roman genre called the commentarius: a set of notes or memoranda, the kind of report a magistrate might send home or keep for a later historian to work up into proper literary history. Caesar's commentaries keep the outward marks of the genre. They are written in a lean, precise Latin, avoid ornament, report events year by year, and refer to their author only as 'Caesar', in the third person. Yet ancient readers already saw that the plainness was an art. Cicero praised them as 'naked, upright and lovely', stripped of rhetorical dress, and observed that sensible historians would not dare to rewrite them; Hirtius, in his preface to Book VIII, makes the same point [[adcock1956]] [[kraus2009]].",
+  "When and how the work was published is disputed. One view holds that Caesar wrote all seven books in the winter of 52–51 BC, after Alesia, when he needed to justify his command to a Roman audience before his return to politics; another holds that each book was written and circulated soon after the year it describes, as a kind of annual dispatch to the public; a third combines the two. The evidence of the text itself (changes in style, small inconsistencies, the way later books seem not to know earlier facts) has been read in both directions [[wiseman1998]] [[welch1998]].",
+  "Gaul before Caesar was not a wilderness. Its peoples lived in organised states (civitates) with councils, magistrates, coinage and large fortified towns (oppida) such as Bibracte and Gergovia, and they were linked to the Mediterranean by trade in wine and metals. The great states competed for primacy, above all the Aedui, 'brothers' and allies of Rome, against the Arverni and the Sequani. Rome had held the southern Province since the 120s BC, and the memory of the Cimbri and Teutones, northern invaders defeated by Marius in 102–101 BC, still shaped Roman fear of the peoples beyond the Alps. Caesar exploits both the rivalries and the fear [[woolf1998]] [[goudineau1990]].",
+  "The text quoted in this guide is the Victorian translation by W. A. McDevitte and W. S. Bohn (1869), which follows the Latin closely and marks with square brackets the words the translators supplied. Like most translations it includes Book VIII, written after Caesar's death by his officer Aulus Hirtius to bridge the gap between the Gallic War and the Civil War; Hirtius says so himself in a preface addressed to Caesar's agent Balbus. References in this guide are to book and chapter in the standard numbering of the Latin text."
+ ],
+ "plot": [
+  "In 58 BC the Helvetii, a people of the Swiss plateau, set out to migrate westward through Gaul. Caesar blocks their path at Geneva, destroys one of their cantons at the Saone, defeats them near Bibracte and sends the survivors home. He then turns on Ariovistus, a German king settled in Gaul at the invitation of the Sequani, and drives him back over the Rhine. In 57 he conquers the warlike Belgae of the north-east, nearly losing a battle to the Nervii at the Sambre; in 56 he crushes the seafaring Veneti of Brittany while his lieutenants subdue Normandy and Aquitania.",
+  "In 55 he massacres two German peoples, the Usipetes and Tencteri, who had crossed the lower Rhine, bridges the Rhine in ten days to show the Germans Roman power, and makes a brief reconnaissance into Britain. In 54 he returns to Britain with a large army, crosses the Thames and receives the submission of Cassivellaunus. That winter the Gauls strike back: Ambiorix of the Eburones destroys a legion and a half under Sabinus and Cotta, and the Nervii besiege Quintus Cicero until Caesar relieves him.",
+  "In 53 Caesar punishes the rebels, crosses the Rhine a second time and hunts Ambiorix through the Ardennes; the book is interrupted by a long account of the customs of the Gauls and Germans. In 52 nearly all Gaul rises under Vercingetorix, a young Arvernian noble. After a campaign of scorched earth, the storming of Avaricum, a Roman defeat at Gergovia and the defection of the Aedui, Vercingetorix is shut up in Alesia. Caesar surrounds the town with two lines of fortification, beats off a vast relieving army, and receives Vercingetorix's surrender.",
+  "Book VIII, by Hirtius, narrates the mopping-up campaigns of 51 BC against the Bituriges, Carnutes and Bellovaci, the siege of Uxellodunum, where Caesar cuts off the hands of the defenders, the final submission of Commius, and the political manoeuvres of 50 BC that lead toward civil war."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Helvetii and Ariovistus (58 BC)",
+   "summary": [
+    "The book opens with a famous survey: Gaul is divided into three parts, inhabited by the Belgae, the Aquitani and the Celts or Gauls, and the bravest are the Belgae, because they are farthest from the luxuries of the Province. The Helvetii, urged on by the ambitious noble Orgetorix, decide to leave their cramped homeland. Orgetorix plots to make himself king with the help of the Sequanian Casticus and the Aeduan Dumnorix, and dies under suspicion, but the migration goes ahead. The Helvetii burn their towns and ask leave to pass through the Province. Caesar stalls them, fortifies the Rhone from Lake Geneva to the Jura, and refuses.",
+    "When the Helvetii take the northern route through the lands of the Sequani and Aedui, Caesar follows. At the Saone he destroys the Tigurini, the canton that had killed the consul Lucius Cassius in 107 BC. The Helvetian envoy Divico warns him of the old Roman defeat; Caesar demands hostages, and Divico replies that the Helvetii take hostages rather than give them. After difficulties over grain, caused in part by the treachery of Dumnorix, whom Caesar spares for the sake of his brother Diviciacus, Caesar defeats the Helvetii near Bibracte and orders the survivors home. Lists in Greek characters found in their camp give 368,000 emigrants, of whom 110,000 return.",
+    "The Gallic leaders, led by Diviciacus, then beg Caesar to free them from Ariovistus, king of the Suebi, who has settled 120,000 Germans in Gaul and treats the Sequani as subjects. Ariovistus had been recognised as 'king and friend' by the senate during Caesar's own consulship. Caesar negotiates, is rebuffed, and marches. At Vesontio (Besançon) rumours of the Germans' size and ferocity cause a panic; Caesar quells it by a speech and the threat to march with the Tenth legion alone. A parley with Ariovistus breaks down, and the Germans, who had been told by their matrons not to fight before the new moon, are forced into battle and routed back to the Rhine."
+   ],
+   "analysis": [
+    "The first chapter is less a description than a claim. By defining 'all Gaul' as a single country with clear borders, Caesar creates the object he will conquer; by placing the Germans across the Rhine, he draws a frontier that did not quite exist on the ground. The theme of the first two campaigns is announced in that geography: the Helvetii threaten to break out of their place, the Germans threaten to break into Gaul, and Caesar presents himself as the guardian of a natural order [[krebs2006]] [[riggsby2006]].",
+    "Book I is also a careful exercise in justification. Caesar had no instruction from the senate to fight the Helvetii, and Ariovistus was officially a friend of the Roman people. The narrative answers these difficulties without arguing them openly: it recalls the disgrace of Cassius, makes the Helvetii arrogant and the Germans savage, gives the Gauls themselves the speeches that ask for intervention, and lets Caesar's public and private motives coincide, as when the vengeance on the Tigurini also avenges his wife's grandfather. Critics since Rambaud have studied how such arrangement shapes judgement without any statement that is plainly false [[rambaud1953]] [[collins1972]].",
+    "The panic at Vesontio shows another side of the self-portrait. Fear spreads from the inexperienced young officers who followed Caesar 'from motives of friendship' to the veterans; the general alone remains calm, and his speech, given in indirect discourse, restores order by appealing to honour and to his own record. The relation between general and army, and especially between Caesar and the Tenth legion, will run through the whole work."
+   ],
+   "key": [
+    {
+     "ref": "BG 1.1",
+     "quote": "All Gaul is divided into three parts, one of which the Belgae inhabit, the Aquitani another, those who in their own language are called Celts, in ours Gauls, the third.",
+     "note": "The most famous sentence in Latin prose. It defines Gaul as a unity and distinguishes 'their language' from 'ours', setting up the opposition between the observer and the observed that runs through the work."
+    },
+    {
+     "ref": "BG 1.12",
+     "quote": "In this Caesar avenged not only the public, but also his own personal wrongs",
+     "note": "The destruction of the Tigurini repays both the state's old defeat and Caesar's family grievance. The sentence fuses Caesar's interest with Rome's, a central move of the whole narrative."
+    },
+    {
+     "ref": "BG 1.14",
+     "quote": "the Helvetii had been so trained by their ancestors that they were accustomed to receive, not to give, hostages; of that fact the Roman people were witness.",
+     "note": "Divico's proud retort gives the enemy a voice and a memory of Roman humiliation. Caesar can afford to report it, because the narrative will refute it in battle."
+    },
+    {
+     "ref": "BG 1.40",
+     "quote": "But that, if no one else should follow, yet he would go with only the tenth legion, of which he had no misgivings, and it should be his praetorian cohort.",
+     "note": "The end of the speech at Vesontio. By shaming the army and honouring one legion, Caesar turns panic into rivalry. The Tenth becomes the emblem of loyal Roman valour in later books."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "The Belgae and the Nervii (57 BC)",
+   "summary": [
+    "Rumours reach Caesar that the Belgae, alarmed at a Roman army wintering in Gaul, are forming a league. He raises two new legions and moves north so quickly that the Remi, the nearest Belgic people, submit at once and become his firmest allies. From them he learns that most of the Belgae are of German descent and that they alone had kept out the Cimbri and Teutones. The Belgic army besieges the Remic town of Bibrax and then faces Caesar across the Aisne, but after a failed attempt to cross the river and with supplies running short, the coalition breaks up and each people goes home. Caesar receives the surrender of the Suessiones, the Bellovaci (for whom Diviciacus pleads) and the Ambiani.",
+    "The Nervii, a fierce people who allow no merchants into their territory and no wine, lie in ambush by the river Sambre. As the Romans are fortifying their camp they burst out of the woods. Caesar has to do everything at once; the legions fight in scattered groups, the right wing is close to collapse, and Caesar seizes a shield from a soldier and goes into the front line. The Tenth legion, sent back by Labienus from the captured enemy camp, turns the battle, and the Nervii fight on until almost none remain.",
+    "The Aduatuci, descendants of the Cimbri and Teutones, shut themselves in a hill-town, mock the Romans' siege tower as too heavy to move, then surrender when it advances. That night they attack with hidden weapons; after the attack is beaten off Caesar sells the whole population, 53,000 people, into slavery. Publius Crassus reports the submission of the Atlantic states, peoples beyond the Rhine send envoys, and the senate decrees a thanksgiving of fifteen days, a length never granted before."
+   ],
+   "analysis": [
+    "The battle at the Sambre is the work's great study in crisis. Caesar admits that the army was taken by surprise, but he frames the near-disaster so that it reveals the professionalism of the soldiers, who do not wait for orders, and the courage of the general, who restores the line in person. The passage moves in short clauses at high speed and then slows to name individual centurions, such as the badly wounded Publius Sextius Baculus. Lendon has shown how Caesar's battle descriptions combine Greek tactical theory with Roman ideas of individual virtus [[lendon1999]].",
+    "The ethnographic notes on the Belgae and Nervii repeat the principle of the first chapter: hardness and courage decrease with nearness to Roman commerce and luxury. This makes the enemy worthy of the conquest, and it also carries a quiet warning about Rome itself. The Aduatuci episode, ending with a cold statistic of 53,000 sold, shows how the text records violence in the neutral language of accounts; the reader must notice for himself what the numbers mean."
+   ],
+   "key": [
+    {
+     "ref": "BG 2.15",
+     "quote": "there was no access for merchants to them",
+     "note": "The Nervii keep out traders and wine for fear that they will weaken their courage. Their isolation from the Mediterranean economy is the sign, and the cause, of their ferocity."
+    },
+    {
+     "ref": "BG 2.25",
+     "quote": "having therefore snatched a shield from one of the soldiers in the rear (for he himself had come without a shield), he advanced to the front of the line, and addressing the centurions by name",
+     "note": "The general as soldier. The parenthesis about the shield explains the haste of the moment; the naming of centurions displays the personal bond on which the army depends."
+    },
+    {
+     "ref": "BG 2.33",
+     "quote": "The number of 53,000 persons was reported to him by those who had bought them.",
+     "note": "A whole people enslaved, reported through the dealers' figures. The source of the number, the slave-traders who followed the army, reveals the commercial side of the conquest."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Alps, the Veneti and Aquitania (56 BC)",
+   "summary": [
+    "Servius Galba, sent to open the Alpine pass of the Great St Bernard, is attacked in his winter camp at Octodurus by mountain peoples and saves his legion only by a desperate sally. On the Atlantic coast, the Veneti of southern Brittany, masters of the sea trade with Britain, detain Roman officers sent to requisition grain and draw neighbouring states into revolt. Caesar orders a fleet built on the Loire. The Venetic strongholds stand on headlands cut off at high tide, and their tall oak ships with leather sails are too strong for Roman rams.",
+    "The war is decided in a single naval battle. Decimus Brutus's crews cut the enemy's halyards with sharp hooks on long poles, bringing down their sails; the wind drops, and the becalmed ships are boarded one by one, with Caesar and the army watching from the cliffs. Because the Veneti had violated the sanctity of envoys, Caesar puts their senate to death and sells the rest into slavery. Meanwhile Sabinus defeats the Unelli by feigning fear, Publius Crassus conquers Aquitania, and Caesar's late-season campaign against the Morini and Menapii is frustrated by forests and rain."
+   ],
+   "analysis": [
+    "Book III shows Caesar's war widening into a struggle with the landscape itself: mountains, tides, the Ocean and forests. The Veneti are formidable not because they are barbarous but because their technology is perfectly adapted to their sea; Rome wins by improvisation and by luck with the wind. The detailed account of their ships is one of many passages in which Caesar records Gallic skill with respect.",
+    "The justification for the punishment of the Veneti is the detention of 'ambassadors', but the men detained were officers sent to collect grain. Readers have long noted the gap between the event and the legal category applied to it. Book III also contains two of the work's generalisations about the Gauls, their love of liberty and their volatility. These sit uneasily together: the same desire for freedom that makes them sympathetic is presented as the fickleness that makes them dangerous [[gardner1983]] [[barlow1998]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 3.10",
+     "quote": "all men likewise, by nature, love liberty and hate the condition of slavery",
+     "note": "A striking concession at the moment Caesar decides to break the coastal revolt. The love of liberty is universal, so it must be forestalled before it spreads."
+    },
+    {
+     "ref": "BG 3.16",
+     "quote": "having, therefore, put to death all their senate, he sold the rest for slaves.",
+     "note": "Exemplary punishment, justified as a lesson about the rights of envoys. The short, flat clause is typical of the way the commentaries report severity."
+    },
+    {
+     "ref": "BG 3.19",
+     "quote": "for as the temper of the Gauls is impetuous and ready to undertake wars, so their mind is weak, and by no means resolute in enduring calamities.",
+     "note": "The stereotype of the Gaul, quick to begin and quick to despair, which Caesar inherited from Greek and Roman ethnography. Vercingetorix's resistance in Book VII will strain it."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "The Rhine and the First Crossing to Britain (55 BC)",
+   "summary": [
+    "Two German peoples, the Usipetes and Tencteri, driven from their lands by the Suebi, cross the lower Rhine. Caesar describes the Suebi: a hundred cantons, a citizen army that alternates between war and farming, no private land, little clothing, cold baths in the rivers, and a policy of keeping wide wastelands around their borders. The German envoys ask for land; Caesar refuses and advances. After a cavalry skirmish he detains a second embassy of German chiefs, attacks their leaderless camp, and pursues the fleeing families to the junction of the Meuse and Rhine, where most of them drown. He gives the enemy's number as 430,000 and claims no Roman dead.",
+    "Caesar then decides to cross the Rhine, judging it unworthy of his dignity and that of the Roman people to go over in boats. In ten days his engineers build a timber bridge on piles driven at an angle against the current. He spends eighteen days in Germany, burning the villages of the Sugambri, and returns, destroying the bridge behind him.",
+    "Late in the summer he sails to Britain with two legions. The Britons line the cliffs; the troops hesitate to leap into deep water until the eagle-bearer of the Tenth jumps in. After the landing, a storm and a spring tide wreck many ships, the Britons renew the fight with their chariots, and Caesar, having repaired the fleet, returns to Gaul before the equinox. The senate decrees twenty days of thanksgiving."
+   ],
+   "analysis": [
+    "The Usipetes episode is the most controversial in the work. Caesar presents the attack as a response to German treachery, but his own account shows that he detained envoys and fell on a camp of families. In Rome Cato proposed that Caesar be handed over to the Germans for violating a truce, as Plutarch reports. Caesar's narrative does not mention the debate; the closing statistics of an enormous enemy and no Roman losses read as triumph to some and as an admission to others [[riggsby2006]] [[powell1998]].",
+    "The bridge and the British expedition are less military operations than demonstrations. Each crossing takes the Roman army where none had gone, the Rhine into the land of the Germans and the Ocean into an island that many Romans thought lay at the edge of the world. Caesar describes the bridge with an engineer's precision, making technical mastery itself a display of Roman power. The aquilifer's leap gives the Ocean crossing its human emblem: duty to the commonwealth and to the general, spoken in one breath.",
+    "Book IV also contains one of the rare places where the narrator speaks as 'I', referring back to what he has 'above related'. Such moments remind the reader that the third-person 'Caesar' and the first-person narrator are the same man, and that the apparent detachment is a chosen manner rather than true distance [[kraus2009]]."
+   ],
+   "key": [
+    {
+     "ref": "BG 4.15",
+     "quote": "for the number of the enemy amounted to 430,000, returned to their camp, all safe to a man, very few being even wounded.",
+     "note": "The startling contrast between enemy numbers and Roman losses. Whether the figure is credible, and what it says about the nature of the fighting, remains debated."
+    },
+    {
+     "ref": "BG 4.17",
+     "quote": "to cross by ships he neither deemed to be sufficiently safe, nor considered consistent with his own dignity or that of the Roman people.",
+     "note": "Dignitas, Caesar's and Rome's, is the stated reason for the bridge. The pairing again joins the general's prestige to the state's."
+    },
+    {
+     "ref": "BG 4.25",
+     "quote": "Leap, fellow soldiers, unless you wish to betray your eagle to the enemy. I, for my part, will perform my duty to the commonwealth and my general.",
+     "note": "The one direct speech of the British landing, given to an unnamed standard-bearer. Loyalty to the republic and to Caesar appear as one duty."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Britain Again and the Winter of Revolt (54 BC)",
+   "summary": [
+    "Caesar builds a new fleet of broad, low ships and crosses to Britain with five legions and two thousand cavalry. Leaving the Aeduan Dumnorix behind, he has him killed when he tries to slip away from the army. In Britain a storm again damages the fleet, but Caesar advances, forces the Thames, and fights the British war-leader Cassivellaunus, who abandons pitched battle for guerrilla raids with chariots. The Trinobantes and other peoples submit, Cassivellaunus's stronghold is stormed, and Caesar imposes hostages and tribute before returning to Gaul. He includes a short description of Britain: its triangular shape, its tin and iron, its people who dye themselves blue with woad.",
+    "Because the harvest was poor, the legions winter in separate camps. Ambiorix, king of the Eburones, attacks the camp of Sabinus and Cotta and then, claiming friendship, advises them to leave before the Germans arrive. After a heated council Sabinus prevails over Cotta, the troops march out, and they are ambushed in a valley. Sabinus is killed while negotiating; Cotta dies fighting; the survivors kill themselves in the camp at night.",
+    "The Nervii then besiege Quintus Cicero, brother of the orator, whose men hold out against towers and fire-darts; the rival centurions Pulfio and Varenus (Pullo and Vorenus in the Latin) save each other in a sortie. A Gallic slave carries a message to Caesar on a javelin. Caesar marches with two small legions, draws the Gauls onto bad ground and routs them. Labienus later kills Indutiomarus of the Treveri, and Gaul is quieter, though not at peace."
+   ],
+   "analysis": [
+    "The disaster of Sabinus and Cotta is the only major Roman defeat in Books I–VI, and Caesar was not present. His account places the blame carefully: Sabinus trusts an enemy, overrides a better colleague and loses his nerve, while Cotta does everything a commander should. The council scene, with its rival speeches, is a small tragedy of judgement, and its lesson flatters the absent general, whose rule is never to trust a Gaul's word against his own information [[welch1998]].",
+    "The contrast with Cicero's defence is deliberate. Where Sabinus negotiates, Cicero refuses to accept terms from an armed enemy; where Sabinus's men are scattered, Cicero's work through the night repairing towers. The story of Pulfio and Varenus, centurions who compete for promotion and end by rescuing each other, gives the book a miniature of Roman virtus in its best form: rivalry turned to mutual safeguard."
+   ],
+   "key": [
+    {
+     "ref": "BG 5.14",
+     "quote": "All the Britons, indeed, dye themselves with wood, which occasions a bluish colour, and thereby have a more terrible appearance in fight.",
+     "note": "'Wood' translates the Latin vitrum, usually taken as woad. The brief British ethnography follows the same pattern as the Gallic: the coast is more civilised, the interior wilder."
+    },
+    {
+     "ref": "BG 5.37",
+     "quote": "being surrounded by degrees, he is slain.",
+     "note": "The death of Sabinus during a parley, told in the present tense and in a passive voice that refuses him any heroism."
+    },
+    {
+     "ref": "BG 5.44",
+     "quote": "Fortune so dealt with both in this rivalry and conflict, that the one competitor was a succour and a safeguard to the other",
+     "note": "The moral of the Pulfio and Varenus episode. Fortune, a force Caesar invokes often, here produces a balanced, almost comic symmetry."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Gauls and Germans: The Great Digression (53 BC)",
+   "summary": [
+    "Caesar raises new legions, borrowing one from Pompey, and moves before winter ends against the Nervii, Senones, Carnutes, Menapii and Treveri. To punish the Germans who had helped the Treveri he bridges the Rhine a second time, near the first site. The Suebi withdraw into their forests, and before describing the pursuit of Ambiorix Caesar pauses for a long comparison of the customs of the Gauls and the Germans.",
+    "The Gauls, he says, are divided by faction in every state and family. Only two orders count: the Druids and the knights; the common people are little better than slaves. The Druids judge disputes, teach young men thousands of verses which they may not write down, and believe that souls pass from body to body after death. The Gauls worship Mercury above all, then Apollo, Mars, Jupiter and Minerva; they offer human sacrifices, sometimes burning victims inside huge wicker figures, and claim descent from Dis. The Germans have no Druids and few sacrifices; they worship only what they can see, the sun, fire and the moon, prize chastity, own no private land, and value wide deserts around their borders. The Hercynian forest, nine days' journey across, holds a one-horned stag, elks without joints that sleep leaning against trees, and the huge wild ox called the urus.",
+    "The narrative resumes: Caesar ravages the land of the Eburones and invites the neighbouring peoples to plunder it. Catuvolcus, Ambiorix's fellow king, poisons himself with yew. A raiding party of Sugambri crosses the Rhine and nearly takes the Roman base at Atuatuca, held by Quintus Cicero, where the invalid centurion Publius Sextius Baculus saves the gate. Ambiorix escapes. At a council at Durocortorum Caesar has Acco, leader of the Senones, executed in the old Roman manner."
+   ],
+   "analysis": [
+    "The digression (BG 6.11–28) is the work's fullest ethnography and its most discussed passage. Its information on the Druids, on Gallic gods (named by their Roman equivalents, the so-called interpretatio Romana) and on German society is invaluable, though much of it probably draws on earlier Greek writers, especially the philosopher Posidonius, as well as on Caesar's own observation [[tierney1960]]. Caesar himself mentions Eratosthenes and 'some other Greeks' in connection with the Hercynian forest.",
+    "The arrangement is as important as the content. The Gauls are shown as a society with priests, laws, gods and an aristocracy, recognisably like Rome; the Germans as a simpler, harder people, without agriculture, cities or settled property. The contrast justifies Caesar's policy in this very book: Gaul can be absorbed into the Roman world, but Germany beyond the Rhine is to be held off, not conquered. Critics have argued that the Rhine frontier is in part a construction of the text, giving rhetorical form to the limits of Caesar's ambition [[krebs2006]] [[schadee2008]] [[riggsby2006]].",
+    "The animal chapters (6.25–28) are strange in tone, and some editors have suspected that they were added by a later hand. Others defend them as an essential part of the picture: the farther one goes from Rome, the more marvellous the world becomes, until at the edge of knowledge, in a forest that no one has crossed, the categories of the natural world themselves dissolve."
+   ],
+   "key": [
+    {
+     "ref": "BG 6.11",
+     "quote": "Since we have come to this place, it does not appear to be foreign to our subject to lay before the reader an account of the manners of Gaul and Germany",
+     "note": "The narrator steps forward to announce a digression, addressing the reader in a historian's voice. The ethnography is offered as a deliberate part of the design."
+    },
+    {
+     "ref": "BG 6.14",
+     "quote": "souls do not become extinct, but pass after death from one body to another",
+     "note": "The Druids' doctrine of transmigration, which Caesar explains in practical terms as an aid to courage in battle. Greek writers had compared it with Pythagorean teaching."
+    },
+    {
+     "ref": "BG 6.16",
+     "quote": "Others have figures of vast size, the limbs of which formed of osiers they fill with living men",
+     "note": "The wicker images of human sacrifice. Whether this is reliable report or inherited horror-story is disputed; it certainly serves to mark Gallic religion as barbarous."
+    },
+    {
+     "ref": "BG 6.21",
+     "quote": "They rank in the number of the gods those alone whom they behold, and by whose instrumentality they are obviously benefited, namely, the sun, fire, and the moon",
+     "note": "The Germans as a people of nature, without priests or temples. The contrast with the elaborate Gallic religion is the organising principle of the digression."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Vercingetorix and Alesia (52 BC)",
+   "summary": [
+    "With Caesar in Italy and Rome in turmoil after the murder of Clodius, the Gallic chiefs meet secretly. The Carnutes massacre Roman traders at Cenabum (Orléans), and the news is shouted across the country in a day. Vercingetorix, son of an Arvernian who had been killed for seeking kingship, is expelled from Gergovia by the nobles, raises an army of the poor, is saluted king and is given the supreme command by a league of states. Caesar crosses the Cevennes through six feet of snow, joins his legions and takes Vellaunodunum, Cenabum and Noviodunum.",
+    "Vercingetorix changes strategy: the Gauls will burn their own towns and farms and starve the Romans of forage. The Bituriges beg him to spare Avaricum (Bourges), their most beautiful town; he reluctantly agrees, and after a long siege in cold rain the Romans storm it and spare no one, so that of forty thousand scarcely eight hundred escape. Caesar then besieges Gergovia, the Arvernian capital, but an assault goes beyond his orders and is driven back with the loss of forty-six centurions. Caesar reproaches the soldiers' rashness. The Aedui, Rome's oldest allies, revolt; a council of all Gaul at Bibracte confirms Vercingetorix as commander, while Labienus fights his way back from the region of Lutetia (Paris).",
+    "After a failed cavalry attack on the Roman column, Vercingetorix withdraws to the hill-town of Alesia. Caesar encloses it with a circuit of eleven miles of ditches, ramparts, towers and hidden traps, and then with an outer line of fourteen miles facing outward. Inside, as food runs out, the Arvernian Critognatus proposes that they live on the bodies of the old; instead the Mandubii, the townspeople, are expelled, and Caesar refuses to let them through his lines. A relieving army of about a quarter of a million Gauls arrives and attacks three times. In the final struggle Caesar, recognised by the colour of his cloak, leads reserves to the threatened point while cavalry fall on the enemy's rear. The next day Vercingetorix offers himself to his people, to be killed or surrendered; the Gauls hand him over and lay down their arms before Caesar, seated at the head of his lines."
+   ],
+   "analysis": [
+    "Book VII is the longest and most dramatic of the commentaries and is often read as their climax. For the first time the Gauls have a leader who equals Caesar in strategy and eloquence. Caesar gives Vercingetorix long speeches, reports his scorched-earth plan with evident respect, and shows him defending himself skilfully against charges of treason. A worthy enemy magnifies the victory, but the portrait also lends real dignity to the Gallic cause of 'general freedom' [[barlow1998]] [[goldsworthy2006]].",
+    "The speech of Critognatus is the darkest moment of the work. Caesar introduces it as an example of 'singular and detestable cruelty', yet it contains the most powerful indictment of Roman imperialism in the text: the Cimbri ravaged Gaul and left, but the Romans come to stay and impose 'perpetual slavery'. Like the speech of Calgacus in Tacitus' Agricola, it lets the enemy speak a truth the narrator does not refute. The expulsion of the Mandubii, told in three sentences ending in Caesar's refusal, leaves the reader to judge.",
+    "Alesia is also the supreme display of Roman engineering, described with the precision Caesar earlier gave to the Rhine bridge. The double ring of fortifications, the trenches filled with water, the sharpened stakes and concealed pits nicknamed 'lilies' and 'spurs', turn the siege into a contest between Gallic numbers and Roman labour. Excavations at Alise-Sainte-Reine under Napoleon III in the 1860s and a Franco-German project in 1991–1997 have confirmed much of Caesar's account, while also showing where it simplifies [[redde2003]].",
+    "The last scenes are composed with great restraint. Caesar's red cloak makes his presence visible at the decisive moment, and the surrender is told almost without comment: Caesar sits, the chieftains are brought, Vercingetorix is handed over. Readers learn from other sources that he was kept in Rome for six years, displayed in Caesar's triumph of 46 BC and then executed; Caesar's text, written before that, ends with the senate decreeing twenty days of thanksgiving."
+   ],
+   "key": [
+    {
+     "ref": "BG 7.14",
+     "quote": "the interests of private property must be neglected for the sake of the general safety",
+     "note": "Vercingetorix's scorched-earth strategy, reported in indirect speech. Its demand for sacrifice by the whole community shows a new kind of Gallic leadership."
+    },
+    {
+     "ref": "BG 7.28",
+     "quote": "they spared neither those worn out with years, women, or children.",
+     "note": "The sack of Avaricum. Caesar attributes the massacre to his soldiers' anger at Cenabum and their exhaustion, without endorsing or condemning it."
+    },
+    {
+     "ref": "BG 7.52",
+     "quote": "because they thought that they knew more than their general concerning victory, and the issue of actions",
+     "note": "After Gergovia Caesar blames the defeat on the soldiers' excess of zeal. The general's authority is preserved by turning a failure of plan into a failure of discipline."
+    },
+    {
+     "ref": "BG 7.77",
+     "quote": "which being reduced to the form of a province, stripped of its rights and laws, and subjected to Roman despotism, is oppressed by perpetual slavery.",
+     "note": "The climax of Critognatus's speech, pointing to the Roman Province as a warning. The most explicit anti-Roman argument in the work is given space by Caesar himself."
+    },
+    {
+     "ref": "BG 7.89",
+     "quote": "They surrender Vercingetorix, and lay down their arms.",
+     "note": "The surrender, told in a single plain sentence. (The quoted edition prints no chapter marker for 7.89, so this sentence appears at the end of the passage numbered 7.88.)"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "The Final Campaigns, by Hirtius (51–50 BC)",
+   "summary": [
+    "Book VIII was not written by Caesar. In a preface addressed to Lucius Cornelius Balbus, Aulus Hirtius, one of Caesar's officers and later consul in 43 BC, explains that he has filled the gap between Caesar's Gallic and Civil War commentaries, and that he has also completed the account of the later wars; he apologises for setting his writing beside Caesar's, whose elegance and speed of composition he praises.",
+    "The narrative covers 51 BC, when the remaining Gallic states try to resist in many places at once rather than in a single army. Caesar marches in midwinter against the Bituriges and the Carnutes; the Bellovaci under Correus and the Atrebatian Commius fight a cunning campaign of ambushes, until Correus dies refusing to surrender. Caninius and Fabius pursue the rebels Drappes and Lucterius to Uxellodunum, a hill-town in the south-west; Caesar arrives, cuts the defenders off from their water by a mine under the spring, and when they surrender has the hands of all who bore arms cut off. Labienus defeats the Treveri, and Commius, after a last skirmish with Mark Antony's cavalry, submits on condition that he never has to see a Roman again.",
+    "The book closes with 50 BC: Caesar's visit to the towns of Cisalpine Gaul, where he is greeted with enthusiasm, the senate's demands that he give up two legions for a war against Parthia, which are then kept in Italy, and the growing conflict with his enemies in Rome. It ends on the eve of the civil war."
+   ],
+   "analysis": [
+    "Hirtius's preface is an important early piece of criticism. It confirms that the commentaries were thought of as raw material for historians, and it testifies that they were so polished that historians were rather 'deprived' of material than supplied with it. It also tells us that Caesar wrote them quickly and easily, a claim that bears on the debate about how and when they were composed [[adcock1956]] [[grillo2018]].",
+    "Hirtius imitates Caesar's manner, including the third-person 'Caesar', but his voice is more openly partisan and more personal; he refers to himself, to 'our Caesar', and to what 'I have related'. His justification of the mutilations at Uxellodunum, that Caesar's clemency was so well known that no one could think him cruel by nature, makes explicit the image of clementia that Caesar's own books build only by implication. Book VIII thus lets us see, by contrast, how much Caesar achieves by saying less."
+   ],
+   "key": [
+    {
+     "ref": "BG 8 pref.",
+     "quote": "I have compiled a continuation of the Commentaries of our Caesar's Wars in Gaul, not indeed to be compared to his writings",
+     "note": "Hirtius declares his authorship and his modesty. The phrase 'our Caesar' shows that he writes as a member of Caesar's circle."
+    },
+    {
+     "ref": "BG 8 pref.",
+     "quote": "they can only appreciate the elegance and correctness with which he finished them, while we know with what ease and expedition.",
+     "note": "An insider's testimony to the speed of Caesar's writing, one of the few pieces of evidence about how the commentaries were made."
+    },
+    {
+     "ref": "BG 8.44",
+     "quote": "Accordingly he cut off the hands of those who had borne arms against him. Their lives he spared, that the punishment of their rebellion might be the more conspicuous.",
+     "note": "Exemplary terror justified by a reputation for mercy. The punishment was meant to be seen, and so, in its way, is the text that reports it."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Gaius Julius Caesar",
+   "side": "Romans",
+   "text": "Proconsul of Gaul, commander of the legions, and author of the work, though he names himself only in the third person. The narrative presents him as swift, far-sighted, calm in crisis, merciful when he can be and severe when he must be, always acting for the dignity of the Roman people. He appears in the front line at the Sambre, at Alesia in his red cloak, and in countless councils and speeches. Behind the figure on the page stands an ambitious politician whose command depended on Roman opinion."
+  },
+  {
+   "name": "Titus Labienus",
+   "side": "Romans",
+   "text": "Caesar's most trusted legate, often given independent command. He sends the Tenth to save the day at the Sambre, kills Indutiomarus, and fights his way back from Lutetia in 52 BC. Readers who know the sequel remember that he went over to Pompey in the civil war and died fighting Caesar at Munda in 45 BC."
+  },
+  {
+   "name": "Quintus Tullius Cicero",
+   "side": "Romans",
+   "text": "Younger brother of the orator and one of Caesar's legates. He holds his winter camp against the Nervii in 54 BC, refusing to negotiate with an armed enemy, and later nearly loses the base at Atuatuca to German raiders."
+  },
+  {
+   "name": "Quintus Titurius Sabinus and Lucius Aurunculeius Cotta",
+   "side": "Romans",
+   "text": "Joint commanders of the legion and a half destroyed by Ambiorix in 54 BC. Caesar's account makes Sabinus the man who trusted the enemy and lost his nerve, and Cotta the commander who argued correctly and died bravely."
+  },
+  {
+   "name": "Publius Licinius Crassus",
+   "side": "Romans",
+   "text": "Son of the triumvir Crassus, a young officer who subdues the Atlantic states and conquers Aquitania. He was killed with his father at Carrhae in 53 BC."
+  },
+  {
+   "name": "Decimus Junius Brutus",
+   "side": "Romans",
+   "text": "Commander of the fleet against the Veneti in 56 BC. Later he was among the conspirators who killed Caesar."
+  },
+  {
+   "name": "Pulfio and Varenus",
+   "side": "Romans",
+   "text": "Two rival centurions (Titus Pullo and Lucius Vorenus in the Latin) whose sortie during the siege of Cicero's camp ends with each saving the other. They are the best-known private soldiers in Latin literature."
+  },
+  {
+   "name": "Orgetorix",
+   "side": "Gauls",
+   "text": "Helvetian noble who persuades his people to migrate and plots to make himself king. Brought to trial, he dies, possibly by suicide, before the migration begins."
+  },
+  {
+   "name": "Divico",
+   "side": "Gauls",
+   "text": "Aged Helvetian leader who had defeated Cassius in 107 BC. His proud exchange with Caesar about hostages gives the Helvetii a voice of their own."
+  },
+  {
+   "name": "Diviciacus and Dumnorix",
+   "side": "Gauls",
+   "text": "Aeduan brothers. Diviciacus (Divitiacus in the translation), a Druid and friend of Rome, pleads for Roman help against Ariovistus and for mercy for other Gauls. Dumnorix, popular, ambitious and hostile to Rome, is spared once for his brother's sake and killed in 54 BC when he tries to desert."
+  },
+  {
+   "name": "Ariovistus",
+   "side": "Germans",
+   "text": "King of the Suebi, settled in Gaul at the request of the Sequani and recognised as friend of the Roman people in 59 BC. In a sharp exchange he claims the right of conquest, as Rome does in its own province. Defeated in 58 BC, he escapes across the Rhine in a small boat."
+  },
+  {
+   "name": "Ambiorix",
+   "side": "Gauls",
+   "text": "King of the Eburones, who tricks Sabinus and Cotta into leaving their camp and destroys their force. Caesar hunts him through the Ardennes and devastates his people, but he is never caught."
+  },
+  {
+   "name": "Cassivellaunus",
+   "side": "Britons",
+   "text": "British war-leader in 54 BC, whose territory lay north of the Thames. He turns from pitched battle to raids with chariots, but submits after his allies desert him."
+  },
+  {
+   "name": "Commius",
+   "side": "Gauls",
+   "text": "Atrebatian whom Caesar made king and used as an envoy to Britain; he later joins the great revolt, commands the relieving army at Alesia, and in Book VIII is among the last to submit, on condition that he never come into a Roman's presence."
+  },
+  {
+   "name": "Vercingetorix",
+   "side": "Gauls",
+   "text": "Young Arvernian noble who leads the great revolt of 52 BC. He imposes discipline and a new strategy of scorched earth, holds a coalition together after defeats, and defeats Caesar at Gergovia. Besieged at Alesia, he offers himself as the price of his people's surrender. In modern France he became a national hero."
+  },
+  {
+   "name": "Critognatus",
+   "side": "Gauls",
+   "text": "Arvernian noble at Alesia whose speech urges the starving garrison to eat the bodies of the useless rather than surrender, and denounces Roman rule as perpetual slavery."
+  },
+  {
+   "name": "Aulus Hirtius",
+   "side": "Author",
+   "text": "Caesar's officer and political ally, author of Book VIII and probably of the Alexandrian War. Consul in 43 BC, he was killed fighting Mark Antony at Mutina."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Self-presentation and the Third Person",
+   "text": [
+    "Caesar writes of 'Caesar' as though he were someone else. The effect is to give the general's actions the authority of plain report: Caesar decides, orders, marches and judges, and the narrator merely records. Motives are stated briefly as facts ('Caesar thought...', 'he considered...'), and the reader is rarely invited to doubt them. The grammatical distance makes self-praise unnecessary; the deeds speak, and the voice that arranges them seems to have no interest of its own [[rambaud1953]] [[kraus2009]].",
+    "This modesty is itself a rhetorical strategy. The commentaries were read in Rome by the senators and voters whose opinion decided Caesar's future, and their portrait of a commander who acts lawfully, quickly and for the common good was a political argument. Recent scholarship treats the work less as falsification than as skilled reporting, which shapes the reader's judgement through selection, order and emphasis [[welch1998]] [[riggsby2006]] [[grillo2018]]."
+   ]
+  },
+  {
+   "title": "Roman and Barbarian",
+   "text": [
+    "The work constantly measures peoples against one another: Belgae against Celts, Gauls against Germans, coastal Britons against inland ones. The scale is distance from Roman civilisation, which brings comfort and order but also softness. The Gauls are therefore at once inferior and worth absorbing, the Germans fiercer and best kept beyond the Rhine. This ethnographic frame justifies conquest, but it also allows the enemy admiration and voice [[krebs2006]] [[schadee2008]] [[woolf1998]]."
+   ]
+  },
+  {
+   "title": "Speed and Technical Mastery",
+   "text": [
+    "Celeritas, speed, is Caesar's characteristic quality on the page. He marches before the enemy expects him, crosses in one day the river that took the Helvetii twenty, bridges the Rhine in ten days and appears where he is needed. Alongside speed goes engineering: the Rhone wall, the Rhine bridge, the new fleets, the siege terraces at Avaricum and the double ring at Alesia. Roman power is shown as organised labour and intelligence, not just courage."
+   ]
+  },
+  {
+   "title": "Liberty and Slavery",
+   "text": [
+    "The Gauls speak repeatedly of libertas, the freedom of their states and of Gaul as a whole, and Caesar concedes that all men love liberty by nature. Their leaders, above all Vercingetorix and Critognatus, describe Roman rule as slavery. The work thus contains its own counter-argument. Caesar's reply is implied rather than stated: Gallic liberty means faction, oppression of the poor by the nobles, and German invasion, from which Rome offers protection."
+   ]
+  },
+  {
+   "title": "Clemency and Terror",
+   "text": [
+    "Caesar often spares the defeated, returns prisoners and accepts surrender, and the clementia for which he was later famous is already visible. But mercy is a policy, matched by exemplary severity: the senate of the Veneti executed, the Aduatuci sold, Avaricum sacked, the hands cut off at Uxellodunum. The text records both in the same even tone, and asks to be judged by their results."
+   ]
+  },
+  {
+   "title": "Fortune",
+   "text": [
+    "Fortuna appears at turning points: in the luck of the wind against the Veneti, in the storms that wreck the fleet off Britain, in the rivalry of Pulfio and Varenus, and in Vercingetorix's words that he must 'yield to fortune'. Caesar acknowledges chance, which makes the narrative credible, while showing that a great commander masters it by preparation and speed."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Hostages",
+   "text": "The giving and taking of hostages, usually the children of nobles, marks every stage of submission and revolt. Divico's boast that the Helvetii take hostages rather than give them, the Aedui's murder of the hostages Caesar had left with them in Book VII, and the endless lists of hostages demanded make the motif a measure of power."
+  },
+  {
+   "title": "Councils and Reported Speech",
+   "text": "Most speeches are given in indirect discourse, which keeps the narrator's voice in control. Councils, Roman and Gallic, are the scenes where decisions are argued: Vesontio, the debate of Sabinus and Cotta, the Gallic assemblies at Bibracte and Alesia. Direct speech is reserved for rare moments of great intensity."
+  },
+  {
+   "title": "Crossings",
+   "text": "Rivers and seas structure the narrative: the Rhone and Saone in Book I, the Aisne and Sambre in Book II, the Rhine bridged twice and the Ocean crossed twice. Each crossing is a test of Roman capacity and a step beyond a boundary."
+  },
+  {
+   "title": "Numbers",
+   "text": "Caesar quantifies everything: emigrants, enemy armies, the dead, the enslaved, the miles of fortification, the days of thanksgiving. The numbers give an air of precision; some are certainly exaggerated, and their meaning is often left to the reader."
+  },
+  {
+   "title": "The Corn Supply",
+   "text": "Frumentum, grain, recurs constantly. The army's need for food dictates winter quarters, campaigns and alliances, and Vercingetorix's strategy in Book VII is aimed directly at it. The motif keeps the narrative close to the realities of ancient war."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The Eagle",
+   "text": "The legionary standard, carried into the sea off Britain by the aquilifer of the Tenth and thrown inside the rampart by the dying Petrosidius in Book V. It stands for the honour and continuity of the legion."
+  },
+  {
+   "title": "The Rhine",
+   "text": "The river is the work's great boundary between Gaul and Germany, a line Caesar draws, defends and twice crosses only to cut the bridge behind him. It symbolises the limit that defines the conquest."
+  },
+  {
+   "title": "Caesar's Cloak",
+   "text": "At Alesia the enemy recognise Caesar's arrival by the colour of his robe, the red cloak of a Roman commander. It makes the general visible to both armies at the decisive moment."
+  },
+  {
+   "title": "The Double Wall at Alesia",
+   "text": "Caesar's two rings of fortification, one facing the besieged and one the relieving army, place the Romans between two Gauls. They symbolise both Roman mastery and the danger of being surrounded by the whole country."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Truth and Distortion",
+   "text": [
+    "How far can Caesar be trusted? The question was asked in antiquity: Suetonius reports that Asinius Pollio thought the commentaries composed with too little care and too little regard for truth. In 1953 Michel Rambaud argued that Caesar systematically deformed events through selection, emphasis, order and the suppression of awkward facts, while rarely saying anything verifiably false [[rambaud1953]].",
+    "Later scholarship has modified this picture. Some stress that Caesar's audience, including officers who served with him and wrote letters home, limited what he could invent; others argue that the commentaries are best read as political instruments shaped for a particular readership. Most now accept that the work is a skilled piece of advocacy built on a generally reliable framework of events [[welch1998]] [[collins1972]] [[riggsby2006]]."
+   ],
+   "cite": [
+    "rambaud1953",
+    "welch1998",
+    "collins1972",
+    "riggsby2006"
+   ]
+  },
+  {
+   "title": "The Commentarius and the Third Person",
+   "text": [
+    "Was Caesar writing raw notes for historians, as the genre implied, or finished literature disguised as notes? Cicero and Hirtius both observed that no historian could improve on the commentaries, which suggests that the plainness was deliberate. The use of the third person has been read as a convention of official reports, as a device of objectivity, and as a way of turning Caesar into a character whose deeds speak for him [[adcock1956]] [[kraus2009]] [[grillo2018]].",
+    "Scholars have also studied the style closely: the restricted vocabulary, the avoidance of rare words, the use of the historic present and of long periodic sentences in reported speech. Gotoff and others have argued that this style is a sophisticated artistic choice, not an absence of art [[gotoff1984]]."
+   ],
+   "cite": [
+    "adcock1956",
+    "kraus2009",
+    "grillo2018",
+    "gotoff1984"
+   ]
+  },
+  {
+   "title": "When Were the Books Published?",
+   "text": [
+    "One school argues that Books I–VII were written together in 52–51 BC, as a single defence of the whole command; another that each book was sent to Rome after its campaigning season, keeping Caesar's achievements in the public eye year by year. Wiseman has argued for serial publication, connecting the books with the thanksgivings decreed by the senate and with Caesar's need to address the Roman people during his absence [[wiseman1998]]. Hirtius's remark on the speed of composition is cited by both sides."
+   ],
+   "cite": [
+    "wiseman1998",
+    "adcock1956"
+   ]
+  },
+  {
+   "title": "Ethnography: Observation or Tradition?",
+   "text": [
+    "How much of the ethnography in Books IV, V and VI is first-hand? Much of the material on the Gauls corresponds to fragments of Posidonius, the Greek philosopher who travelled in southern Gaul a generation earlier, and the Hercynian marvels belong to a long Greek tradition of wonders at the edge of the world [[tierney1960]]. Yet Caesar also had access to informants, hostages, traders and allies such as Diviciacus.",
+    "Recent work focuses less on sources than on function. Krebs and Schadee show that Caesar's geography and ethnography serve his political argument, defining a conquerable Gaul and an unconquerable Germany, and that the digression in Book VI explains, precisely when Caesar is retreating from Germany, why he does not go further [[krebs2006]] [[schadee2008]] [[riggsby2006]]. The authenticity of the animal chapters (6.25–28) remains disputed."
+   ],
+   "cite": [
+    "tierney1960",
+    "krebs2006",
+    "schadee2008",
+    "riggsby2006"
+   ]
+  },
+  {
+   "title": "The Violence of the Conquest",
+   "text": [
+    "Ancient writers already gave appalling figures: Plutarch says Caesar fought three million men, killed a million and enslaved as many; Pliny the Elder records 1,192,000 enemy dead in his wars. Modern scholars treat such numbers with caution but agree that the conquest was catastrophic for Gaul. The massacre of the Usipetes and Tencteri, which provoked Cato's call to hand Caesar over to the Germans, is the most debated episode, and some modern historians have used the word genocide [[goldsworthy2006]] [[powell1998]].",
+    "Another question is how Caesar's text manages violence: by the neutral tone, by the logic of punishment and example, and by placing atrocities in the hands of angry soldiers or treacherous enemies. Readers disagree on whether this reflects Roman values that saw nothing to hide, or a careful management of potentially damaging facts [[riggsby2006]] [[osgood2009]]."
+   ],
+   "cite": [
+    "goldsworthy2006",
+    "powell1998",
+    "riggsby2006",
+    "osgood2009"
+   ]
+  },
+  {
+   "title": "Vercingetorix and the Uses of Gaul",
+   "text": [
+    "Caesar's Vercingetorix is a formidable adversary, and modern France made him a national symbol. Napoleon III, who wrote a history of Caesar, sponsored the excavations at Alise-Sainte-Reine and set up a colossal statue of the Gallic chief there in 1865. Historians have since studied the gap between the Arvernian aristocrat of Caesar's text and the national hero of the nineteenth century, and the extent to which Caesar's own portrait was shaped to magnify his victory [[goudineau1990]] [[barlow1998]]."
+   ],
+   "cite": [
+    "goudineau1990",
+    "barlow1998"
+   ]
+  },
+  {
+   "title": "Where Was Alesia?",
+   "text": [
+    "The traditional site, Mont Auxois above Alise-Sainte-Reine in Burgundy, was excavated under Napoleon III, and Roman weapons, coins and ditches were found. Alternative sites, especially Chaux-des-Crotenay in the Jura, have had passionate defenders. The Franco-German excavations of 1991–1997 confirmed the Roman siege-works at Alise and showed that they match Caesar's description in outline, though not in every detail: the works were less regular and complete than the text suggests [[redde2003]] [[riceholmes1911]]."
+   ],
+   "cite": [
+    "redde2003",
+    "riceholmes1911"
+   ]
+  },
+  {
+   "title": "Gallic Menace and Roman Audience",
+   "text": [
+    "Caesar's justification for war repeatedly draws on Roman fear of northern invaders, from the Gauls who sacked Rome in 390 BC to the Cimbri and Teutones. Gardner argued that the 'Gallic menace' is a central theme of the commentaries' propaganda, carefully stoked to make each campaign appear defensive [[gardner1983]]. Others note that the work also flatters its readers' sense of Roman superiority and of a mission to bring order to a divided Gaul [[osgood2009]] [[woolf1998]]."
+   ],
+   "cite": [
+    "gardner1983",
+    "osgood2009",
+    "woolf1998"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "BG 1.1",
+   "quote": "All Gaul is divided into three parts, one of which the Belgae inhabit, the Aquitani another, those who in their own language are called Celts, in ours Gauls, the third.",
+   "who": "The narrator",
+   "explanation": "The opening sentence creates the country it describes. It treats Gaul as a whole with fixed divisions, distinguishes the Gauls' own name from the Roman one, and adopts the calm survey of a geographer. Before a single battle, the reader has been placed in the position of a Roman observer looking at a land to be organised."
+  },
+  {
+   "ref": "BG 1.12",
+   "quote": "In this Caesar avenged not only the public, but also his own personal wrongs",
+   "who": "The narrator",
+   "explanation": "The sentence shows how naturally Caesar fuses his own interests with Rome's. The Tigurini had killed a Roman consul and also the grandfather of Caesar's father-in-law; one victory answers both debts. The third-person narration makes the point sound like a neutral fact rather than self-justification."
+  },
+  {
+   "ref": "BG 1.40",
+   "quote": "But that, if no one else should follow, yet he would go with only the tenth legion, of which he had no misgivings, and it should be his praetorian cohort.",
+   "who": "Caesar, to his centurions at Vesontio (reported)",
+   "explanation": "Caesar ends the panic before the march against Ariovistus by shaming the army and exalting one legion. The speech shows his understanding of the soldiers' pride, and the episode makes the general the one fixed point in a frightened army."
+  },
+  {
+   "ref": "BG 3.10",
+   "quote": "all men likewise, by nature, love liberty and hate the condition of slavery",
+   "who": "The narrator, giving Caesar's reasoning",
+   "explanation": "A remarkable admission in a work that justifies conquest. The universal love of liberty is the reason the coastal revolt must be crushed quickly, before others imitate it. The sentence makes Gallic resistance understandable even as it explains why Caesar must defeat it."
+  },
+  {
+   "ref": "BG 4.25",
+   "quote": "Leap, fellow soldiers, unless you wish to betray your eagle to the enemy. I, for my part, will perform my duty to the commonwealth and my general.",
+   "who": "The eagle-bearer of the Tenth legion",
+   "explanation": "At the first landing in Britain, an unnamed standard-bearer shames the hesitating soldiers into the sea. The direct speech, rare in Caesar, marks the moment's importance. Duty to the republic and duty to Caesar are presented as one and the same."
+  },
+  {
+   "ref": "BG 6.11",
+   "quote": "Since we have come to this place, it does not appear to be foreign to our subject to lay before the reader an account of the manners of Gaul and Germany",
+   "who": "The narrator",
+   "explanation": "The introduction of the great ethnographic digression. The narrator speaks as a historian addressing his reader, and the comparison of Gauls and Germans that follows explains, at this point in the story, why Caesar will absorb Gaul and leave Germany alone."
+  },
+  {
+   "ref": "BG 6.14",
+   "quote": "souls do not become extinct, but pass after death from one body to another",
+   "who": "The narrator, describing the Druids",
+   "explanation": "Caesar's report of Druidic belief in transmigration is one of the most important ancient sources for Celtic religion. Typically, he explains the doctrine by its practical effect: men who do not fear death fight more bravely."
+  },
+  {
+   "ref": "BG 7.77",
+   "quote": "which being reduced to the form of a province, stripped of its rights and laws, and subjected to Roman despotism, is oppressed by perpetual slavery.",
+   "who": "Critognatus, at Alesia",
+   "explanation": "The end of the speech that Caesar calls cruel and detestable. Its argument is political: Rome, unlike earlier invaders, comes to stay. By reporting it at length, Caesar gives the strongest case against his own conquest a place in his narrative."
+  },
+  {
+   "ref": "BG 7.78",
+   "quote": "But Caesar, placing guards on the rampart, forbade them to be admitted.",
+   "who": "The narrator",
+   "explanation": "The Mandubii, expelled from Alesia, beg to be taken as slaves and fed. Caesar's refusal, given without explanation, condemns them to starve between the lines. The silence of the narrative is part of its force; readers must decide whether it conceals or exposes."
+  },
+  {
+   "ref": "BG 8.44",
+   "quote": "Accordingly he cut off the hands of those who had borne arms against him. Their lives he spared, that the punishment of their rebellion might be the more conspicuous.",
+   "who": "Hirtius, narrating Uxellodunum",
+   "explanation": "Hirtius presents the mutilation of the defenders as a necessary example, introduced by an appeal to Caesar's well-known mercy. The passage shows the logic of exemplary terror and, by its explicit apology, how differently Hirtius writes from Caesar."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Caesar refer to himself in the third person, and how does this affect the reader's judgement of his actions?",
+   "hint": "Consider the conventions of the commentarius, the effect of stating motives as facts, and the rare passages where the narrator says 'I'. Compare Hirtius's more personal voice in Book VIII."
+  },
+  {
+   "q": "How does the opening chapter's division of Gaul prepare the reader for the narrative that follows?",
+   "hint": "Think about the creation of 'all Gaul' as a single object, the scale of bravery and distance from the Province, and the placing of the Germans beyond the Rhine."
+  },
+  {
+   "q": "How does Caesar justify his war against the Helvetii and against Ariovistus?",
+   "hint": "Look at the memory of Cassius, the requests of the Gauls, Ariovistus's status as a friend of Rome, and the private motive at the Saone."
+  },
+  {
+   "q": "Compare the ethnographies of the Gauls and the Germans in Book VI. What purposes does the comparison serve at that point in the narrative?",
+   "hint": "Consider religion, property and social order, and the fact that Caesar has just crossed the Rhine and is about to withdraw again."
+  },
+  {
+   "q": "What do the Rhine bridge and the crossings to Britain achieve, militarily and symbolically?",
+   "hint": "Weigh their limited strategic results against the language of dignity, the engineering detail and the Roman image of the Ocean as the edge of the world."
+  },
+  {
+   "q": "How does Caesar present the disaster of Sabinus and Cotta, and what lessons does the narrative draw from it?",
+   "hint": "Compare the two commanders in the council, the role of Ambiorix's deception, and the contrasting defence of Quintus Cicero."
+  },
+  {
+   "q": "How is Vercingetorix portrayed? Does the narrative's respect for him serve Caesar's interests or undermine them?",
+   "hint": "Consider his strategy, his speeches, his defence against the charge of treason and his surrender. Think about how a worthy enemy magnifies a victory."
+  },
+  {
+   "q": "Why does Caesar include the speech of Critognatus, and how should we read it?",
+   "hint": "Note the narrator's condemnation of its cruelty and the strength of its argument about Roman rule. Compare enemy speeches in later Roman historians such as Tacitus."
+  },
+  {
+   "q": "How does the text describe violence against civilians, and what is the effect of its tone?",
+   "hint": "Examine the Aduatuci, the Usipetes, Avaricum and the Mandubii. Who is said to be responsible in each case? What is said and what is left out?"
+  },
+  {
+   "q": "How does Book VIII differ from Caesar's own books, and what does Hirtius's preface tell us about how the commentaries were read?",
+   "hint": "Look at Hirtius's praise of Caesar's style and speed, his use of 'I' and 'our Caesar', and his explicit defence of Caesar's mercy at Uxellodunum."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "adcock1956",
+   "text": "Adcock, F. E. Caesar as Man of Letters. Cambridge: Cambridge University Press, 1956."
+  },
+  {
+   "id": "barlow1998",
+   "text": "Barlow, Jonathan. \"Noble Gauls and Their Other in Caesar's Propaganda.\" In Julius Caesar as Artful Reporter: The War Commentaries as Political Instruments, edited by Kathryn Welch and Anton Powell. London: Duckworth and the Classical Press of Wales, 1998."
+  },
+  {
+   "id": "collins1972",
+   "text": "Collins, John H. \"Caesar as Political Propagandist.\" In Aufstieg und Niedergang der römischen Welt I.1, edited by Hildegard Temporini, 922–966. Berlin: De Gruyter, 1972."
+  },
+  {
+   "id": "gardner1983",
+   "text": "Gardner, Jane F. \"The 'Gallic Menace' in Caesar's Propaganda.\" Greece & Rome 30, no. 2 (1983): 181–189."
+  },
+  {
+   "id": "gelzer1968",
+   "text": "Gelzer, Matthias. Caesar: Politician and Statesman. Translated by Peter Needham. Oxford: Blackwell, 1968."
+  },
+  {
+   "id": "goldsworthy2006",
+   "text": "Goldsworthy, Adrian. Caesar: Life of a Colossus. New Haven: Yale University Press, 2006."
+  },
+  {
+   "id": "gotoff1984",
+   "text": "Gotoff, Harold C. \"Towards a Practical Criticism of Caesar's Prose Style.\" Illinois Classical Studies 9 (1984): 1–18."
+  },
+  {
+   "id": "goudineau1990",
+   "text": "Goudineau, Christian. César et la Gaule. Paris: Errance, 1990."
+  },
+  {
+   "id": "griffin2009",
+   "text": "Griffin, Miriam, ed. A Companion to Julius Caesar. Chichester: Wiley-Blackwell, 2009."
+  },
+  {
+   "id": "grillo2018",
+   "text": "Grillo, Luca, and Christopher B. Krebs, eds. The Cambridge Companion to the Writings of Julius Caesar. Cambridge: Cambridge University Press, 2018."
+  },
+  {
+   "id": "kraus2009",
+   "text": "Kraus, Christina S. \"Bellum Gallicum.\" In A Companion to Julius Caesar, edited by Miriam Griffin, 159–174. Chichester: Wiley-Blackwell, 2009."
+  },
+  {
+   "id": "krebs2006",
+   "text": "Krebs, Christopher B. \"'Imaginary Geography' in Caesar's Bellum Gallicum.\" American Journal of Philology 127, no. 1 (2006): 111–136."
+  },
+  {
+   "id": "lendon1999",
+   "text": "Lendon, J. E. \"The Rhetoric of Combat: Greek Military Theory and Roman Culture in Julius Caesar's Battle Descriptions.\" Classical Antiquity 18, no. 2 (1999): 273–329."
+  },
+  {
+   "id": "osgood2009",
+   "text": "Osgood, Josiah. \"The Pen and the Sword: Writing and Conquest in Caesar's Gaul.\" Classical Antiquity 28, no. 2 (2009): 328–358."
+  },
+  {
+   "id": "powell1998",
+   "text": "Powell, Anton. \"Julius Caesar and the Presentation of Massacre.\" In Julius Caesar as Artful Reporter: The War Commentaries as Political Instruments, edited by Kathryn Welch and Anton Powell. London: Duckworth and the Classical Press of Wales, 1998."
+  },
+  {
+   "id": "raaflaub2017",
+   "text": "Raaflaub, Kurt A., ed. The Landmark Julius Caesar: The Complete Works. New York: Pantheon, 2017."
+  },
+  {
+   "id": "rambaud1953",
+   "text": "Rambaud, Michel. L'art de la déformation historique dans les Commentaires de César. Paris: Les Belles Lettres, 1953."
+  },
+  {
+   "id": "redde2003",
+   "text": "Reddé, Michel. Alésia: l'archéologie face à l'imaginaire. Paris: Errance, 2003."
+  },
+  {
+   "id": "riceholmes1911",
+   "text": "Rice Holmes, T. Caesar's Conquest of Gaul. 2nd ed. Oxford: Clarendon Press, 1911."
+  },
+  {
+   "id": "riggsby2006",
+   "text": "Riggsby, Andrew M. Caesar in Gaul and Rome: War in Words. Austin: University of Texas Press, 2006."
+  },
+  {
+   "id": "schadee2008",
+   "text": "Schadee, Hester. \"Caesar's Construction of Northern Europe: Inquiry, Contact and Corruption in De Bello Gallico.\" Classical Quarterly 58, no. 1 (2008): 158–180."
+  },
+  {
+   "id": "tierney1960",
+   "text": "Tierney, J. J. \"The Celtic Ethnography of Posidonius.\" Proceedings of the Royal Irish Academy 60C (1959–1960): 189–275."
+  },
+  {
+   "id": "welch1998",
+   "text": "Welch, Kathryn, and Anton Powell, eds. Julius Caesar as Artful Reporter: The War Commentaries as Political Instruments. London: Duckworth and the Classical Press of Wales, 1998."
+  },
+  {
+   "id": "wiseman1998",
+   "text": "Wiseman, T. P. \"The Publication of De Bello Gallico.\" In Julius Caesar as Artful Reporter: The War Commentaries as Political Instruments, edited by Kathryn Welch and Anton Powell, 1–9. London: Duckworth and the Classical Press of Wales, 1998."
+  },
+  {
+   "id": "woolf1998",
+   "text": "Woolf, Greg. Becoming Roman: The Origins of Provincial Civilization in Gaul. Cambridge: Cambridge University Press, 1998."
+  }
+ ]
+}

@@ -1,0 +1,718 @@
+{
+ "work": "plato-symposium",
+ "title": "Symposium",
+ "author": "Plato",
+ "quoteEdition": "plato-symposium-jowett",
+ "updated": "2026-10-21",
+ "unit": "Speech",
+ "sameSections": false,
+ "glance": [
+  {
+   "label": "Author",
+   "value": "Plato (c. 427–347 BC), Athenian philosopher, follower of Socrates and founder of the Academy; all his known dialogues survive"
+  },
+  {
+   "label": "Written",
+   "value": "Probably between about 385 and 370 BC; an apparent allusion at 193a to the Spartan break-up of Mantinea (385 BC) gives a likely lower limit"
+  },
+  {
+   "label": "Dramatic dates",
+   "value": "The supper takes place in 416 BC, the day after the tragic poet Agathon's first victory; Apollodorus retells it about 400 BC, shortly before the trial and death of Socrates"
+  },
+  {
+   "label": "Genre",
+   "value": "Philosophical dialogue in Attic prose, narrated at second hand; a set of encomia (speeches of praise) framed as a drinking party, or symposion"
+  },
+  {
+   "label": "Setting",
+   "value": "The house of Agathon in Athens, through one night of talk and drinking, ending at dawn"
+  },
+  {
+   "label": "Structure",
+   "value": "A double frame (Apollodorus reporting Aristodemus), seven speeches in praise of Love (Eros), and the riotous end of the party; Stephanus pages 172a–223d"
+  },
+  {
+   "label": "Speakers",
+   "value": "Phaedrus, Pausanias, Eryximachus, Aristophanes, Agathon, Socrates (reporting the priestess Diotima) and Alcibiades"
+  },
+  {
+   "label": "Key ideas",
+   "value": "Love as lack and desire; the ladder of love from bodies to beauty itself; love and immortality; pederasty and its codes; philosophy as erotic pursuit; the person of Socrates"
+  },
+  {
+   "label": "Quoted translation",
+   "value": "Benjamin Jowett, The Dialogues of Plato (3rd ed., Oxford, 1892); references use the standard Stephanus page and section numbers"
+  }
+ ],
+ "context": [
+  "The Symposium is Plato's most literary dialogue and, with the Phaedrus, his fullest treatment of love. It takes its name from the symposion, the drinking party that followed dinner among well-born Athenian men: guests reclined in pairs on couches, poured libations, chose a 'master' to fix the strength and amount of the wine, and entertained themselves with songs, games, flute-girls and speeches. The genre of the sympotic dialogue, of which Plato's is the first great example, was later imitated by Xenophon, Plutarch and Athenaeus [[murray1990]] [[hunter2004]].",
+  "The guests are real people. Agathon was the leading tragic poet of the younger generation; Aristophanes the comic poet who had mocked Socrates in the Clouds (423 BC); Eryximachus a doctor; Phaedrus a devotee of rhetoric who also gives his name to another dialogue; Pausanias was Agathon's long-standing lover. Alcibiades, the brilliant and unstable politician, was within a year to lead the Sicilian Expedition and to be accused of profaning the Mysteries and mutilating the Herms. Plato's first readers knew how these lives would end, and the party is shadowed by that knowledge [[nails2002]].",
+  "Love between an adult man (the erastes, lover) and a youth (the eromenos, beloved) was an accepted and much-regulated part of upper-class Athenian life, and most of the speeches take it as their model of love. The rules of courtship, the shame of yielding for money or advantage, and the idea that the lover improves the beloved are the background to the speeches of Phaedrus and Pausanias, and to the reversal that Alcibiades describes [[dover1978]] [[halperin1990]].",
+  "The dialogue is carefully built. It is told at two removes: a companion asks Apollodorus for the story, and Apollodorus repeats what he heard from Aristodemus, who was there. The speeches rise in ambition from myth and convention, through science and comedy, to the poet's showpiece and Socrates' account of what he learned from Diotima; then Alcibiades breaks in, drunk, and praises not Love but Socrates. Readers have long argued about how these parts fit together, and whether the earlier speeches are refuted or absorbed by the later ones [[dover1980]] [[rowe1998]].",
+  "Diotima's teaching, the 'ascent' from the love of one body to the vision of beauty itself, is one of the founding texts of Western thought about love, beauty and the soul. Through Plotinus and Marsilio Ficino, whose commentary of 1469 gave Europe the phrase 'Platonic love', it shaped Renaissance poetry and art, and it remains central to modern philosophical debates about whether love is for persons or for the qualities they possess [[ficino1985]] [[vlastos1973]]."
+ ],
+ "plot": [
+  "On the road into Athens, Apollodorus, a fervent follower of Socrates, tells an unnamed companion the story of a famous supper held years before at the house of Agathon, as he heard it from Aristodemus. Aristodemus met Socrates, unusually washed and wearing sandals, on his way to Agathon's party, and came along uninvited. Socrates stopped on the way, lost in thought, and arrived only halfway through dinner. Since the guests are still suffering from the previous day's celebrations, they agree not to drink hard, send away the flute-girl, and accept the doctor Eryximachus' proposal that each should make a speech in praise of Love.",
+  "Phaedrus praises Love as the oldest of the gods and the source of courage and honour, especially between lover and beloved. Pausanias distinguishes a heavenly Love, which aims at the soul and virtue, from a common Love of the body, and explains the subtle Athenian customs of courtship. Eryximachus extends the two Loves to the whole of nature, medicine, music and the seasons. Aristophanes, cured of his hiccups, tells the myth of the round, double humans whom Zeus split in two, so that each of us now searches for our other half. Agathon gives an ornate hymn to Love as the youngest, most beautiful and most virtuous of the gods.",
+  "Socrates first questions Agathon and makes him admit that love desires what it lacks, and so cannot itself be beautiful. He then reports what the Mantinean priestess Diotima taught him: that Love is a spirit between mortal and divine, the child of Resource and Poverty; that love is the desire to possess the good forever, and therefore to 'give birth in beauty'; and that the lover, rightly led, can climb from the beauty of one body to all bodies, to souls, laws and knowledge, and at last to a sudden vision of beauty itself.",
+  "At this point the drunken Alcibiades bursts in with a band of revellers. Made to speak, he praises Socrates, comparing him to the statues of Silenus that hide images of gods inside, and tells how he tried and failed to seduce him, and how Socrates endured cold and hunger and showed courage on campaign. After further jealous banter, a second crowd of revellers turns the party into a drinking bout. At dawn Aristodemus wakes to find Socrates arguing to Agathon and Aristophanes that the same man could write both tragedy and comedy; when they fall asleep he leaves and spends the day as usual."
+ ],
+ "books": [
+  {
+   "n": 1,
+   "title": "The Frame: Apollodorus and the Arrival at Agathon's",
+   "lines": "172a–178a",
+   "section": 0,
+   "summary": [
+    "Apollodorus explains to a companion, a wealthy man of business, that he has recently told the story to Glaucon and is well rehearsed. The supper took place long ago, when Agathon won his first victory with a tragedy; Apollodorus heard it from Aristodemus, a barefoot admirer of Socrates, and checked some points with Socrates himself. Apollodorus confesses that before he met Socrates he was wretched, and he now pities everyone who is not doing philosophy; his friends call him 'the madman'.",
+    "Aristodemus' story begins with Socrates, bathed and in sandals, inviting him to the party unasked. On the way Socrates falls behind in thought and stands in a neighbour's porch; he arrives late, and Agathon asks him to recline beside him so that he may 'touch' his wisdom. Socrates replies that wisdom cannot flow from one person to another like water through wool. The guests agree to moderate drinking, dismiss the flute-girl, and adopt Eryximachus' motion, inspired by Phaedrus' complaint that no poet has properly hymned Love, that each should speak in praise of Love from left to right."
+   ],
+   "analysis": [
+    "The frame puts distance between the reader and the event. The story has passed through several mouths, and Apollodorus admits that neither he nor Aristodemus remembered everything. This chain of report, like the chain of teachers and pupils in Diotima's speech, makes the story itself an object of desire: everyone wants to hear about Socrates, and the reader is placed among his lovers. The dates matter too: the party is set in 416, at the height of Athenian confidence, and told around 400, when Alcibiades was dead and Socrates' trial was near [[nails2002]] [[hunter2004]].",
+    "The opening scenes already present the Socrates whom Alcibiades will describe at the end: absorbed in thought, indifferent to time and comfort, ironic about his own wisdom. The exchange about wisdom passing by touch introduces the central question of the evening, how one person can make another better, and the joke about Agathon's victory before 'thirty thousand Hellenes' sets up the contest between poetry and philosophy, of which Dionysus, Socrates says, will be the judge."
+   ],
+   "key": [
+    {
+     "ref": "Symp. 173a",
+     "quote": "I thought that I ought to do anything rather than be a philosopher.",
+     "note": "Apollodorus describes his life before Socrates as a kind of conversion story, the first of several in the dialogue."
+    },
+    {
+     "ref": "Symp. 175d",
+     "quote": "How I wish, said Socrates, taking his place as he was desired, that wisdom could be infused by touch, out of the fuller into the emptier man",
+     "note": "Socrates denies that wisdom can be handed over physically, a claim that Alcibiades' failed seduction will later test."
+    },
+    {
+     "ref": "Symp. 177d",
+     "quote": "I mean to propose that each of us in turn, going from left to right, shall make a speech in honour of Love.",
+     "note": "Eryximachus sets the rules of the evening; the order of speakers becomes part of the dialogue's design."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Phaedrus: The Oldest God and the Army of Lovers",
+   "lines": "178a–180b",
+   "section": 0,
+   "summary": [
+    "Phaedrus argues that Love is one of the oldest gods, citing Hesiod, Parmenides and Acusilaus, since no parents of Love are recorded. Love is also the greatest benefactor of men, because nothing so well instils a sense of shame at disgrace and ambition for honour. A lover would rather be seen by anyone than by his beloved when acting like a coward, so an army of lovers and beloveds would be almost invincible.",
+    "Love alone makes people willing to die for another. Alcestis died for her husband Admetus and was sent back from the dead; Orpheus, who tried to enter Hades alive instead of dying, was given only a phantom of his wife. Akhilleus, who chose to avenge Patroclus knowing that he would die, was honoured even more and sent to the Islands of the Blest, because the gods most admire a beloved who returns the lover's devotion."
+   ],
+   "analysis": [
+    "Phaedrus' speech is conventional and built from poetic authorities, as befits a lover of literature. Its central idea, that love produces virtue by making us ashamed before the beloved, ties eros to the competitive ethic of honour. It is a starting point that Diotima will revise: she too will connect love to virtue and to the desire for undying fame, citing the same examples of Alcestis and Akhilleus, but will explain why love has that effect [[dover1980]].",
+    "His insistence that Akhilleus was the beloved, not the lover, of Patroclus shows how readily Greeks read Homer through the conventions of pederasty, and how uncertain those readings were; Aeschylus had made the opposite assumption. The army of lovers recalls the Sacred Band of Thebes, though that unit was probably formed after the dialogue's dramatic date [[dover1978]]."
+   ],
+   "key": [
+    {
+     "ref": "Symp. 178e–179a",
+     "quote": "And if there were only some way of contriving that a state or an army should be made up of lovers and their loves, they would be the very best governors of their own city",
+     "note": "Love as a source of civic and military virtue, through shame and rivalry in honour."
+    },
+    {
+     "ref": "Symp. 179b",
+     "quote": "Love will make men dare to die for their beloved--love alone; and women as well as men.",
+     "note": "The example of Alcestis, a woman, broadens the claim beyond the male pairs the speech assumes."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Pausanias: Heavenly and Common Love",
+   "lines": "180c–185c",
+   "section": 0,
+   "summary": [
+    "Pausanias objects that Phaedrus praised Love without distinction. There are two Aphrodites, the elder 'Heavenly' one, daughter of Uranus without a mother, and the younger 'Common' one, daughter of Zeus and Dione, and so there are two Loves. Common Love is directed at women as well as boys and at bodies rather than souls, and cares only for gratification. Heavenly Love turns to young men whose minds are developing, and seeks a lifelong bond.",
+    "Pausanias then analyses the customs of different cities. In Elis and Boeotia it is simply honourable to gratify a lover; in Ionia, under barbarian rule, it is shameful, because tyrants fear bonds of friendship. Athenian custom is complex: it encourages lovers yet protects boys with tutors. The solution is that gratifying a lover is honourable only when done for the sake of virtue and wisdom, so that the 'two laws' of pederasty and philosophy meet in one."
+   ],
+   "analysis": [
+    "Pausanias' speech is the most socially revealing in the dialogue, a careful account of the code of Athenian courtship, and it has been central to modern studies of Greek sexuality. Its claim that a beloved may honourably yield in exchange for education is also self-interested: Pausanias was Agathon's lover, and the dialogue lets us see the convenience of his theory [[dover1978]] [[foucault1985]].",
+    "His contrast between love of body and love of soul anticipates Diotima, but in a limited form. For Pausanias, virtue is a kind of payment for favours; for Diotima, the lover's task is to generate virtue himself, and physical gratification drops out of view. The rhetorical polish of the speech, with its balanced antitheses, is gently mocked by Apollodorus' pun on his name, 'Pausanias came to a pause' [[rowe1998]]."
+   ],
+   "key": [
+    {
+     "ref": "Symp. 180d",
+     "quote": "For we all know that Love is inseparable from Aphrodite, and if there were only one Aphrodite there would be only one Love; but as there are two goddesses there must be two Loves.",
+     "note": "The basic distinction of the speech, which Eryximachus will extend to the whole of nature."
+    },
+    {
+     "ref": "Symp. 183d–e",
+     "quote": "Evil is the vulgar lover who loves the body rather than the soul, inasmuch as he is not even stable, because he loves a thing which is in itself unstable",
+     "note": "Stability and permanence as marks of good love, a theme Diotima will develop into the love of what is everlasting."
+    },
+    {
+     "ref": "Symp. 185b",
+     "quote": "Thus noble in every case is the acceptance of another for the sake of virtue.",
+     "note": "The conclusion that justifies the beloved's 'yielding', provided the aim is virtue."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Eryximachus: Love in Medicine and the Cosmos",
+   "lines": "185c–188e",
+   "section": 0,
+   "summary": [
+    "Aristophanes, whose turn it is, has hiccups, and Eryximachus speaks first while prescribing a cure: hold the breath, gargle, or sneeze. Eryximachus accepts Pausanias' two Loves but argues, from his art, that they are found not only in human souls but in all bodies and all things. Medicine is the knowledge of the body's loves; the good doctor encourages the healthy love, discourages the diseased one, and reconciles opposites such as hot and cold, wet and dry.",
+    "The same principle governs music, which brings high and low notes into harmony (correcting Heraclitus' saying that the one agrees by differing), and rhythm. The seasons are healthy when the elements love one another in moderation, and plague and blight come from disordered love. Prophecy and sacrifice are a kind of medicine for the loves between gods and men. The love that aims at the good with temperance and justice is the most powerful of all."
+   ],
+   "analysis": [
+    "Eryximachus speaks the language of the new sciences of the fifth century, and his speech widens the scope of eros from human relationships to a cosmic principle of attraction and harmony, recalling the Love and Strife of Empedocles. His pedantry is part of the comedy, and the hiccups that interrupt the order of speakers deflate his solemn account of bodily harmony; Aristophanes duly mocks him when he is cured by sneezing [[hunter2004]].",
+    "Yet the speech is more than parody. It introduces the idea that love can be directed and educated by an expert, that it aims at order and the good, and that it links the human and the divine. Diotima's Love, the 'spirit' that carries messages between gods and men, takes up the role that Eryximachus gives to prophecy and sacrifice [[rosen1968]]."
+   ],
+   "key": [
+    {
+     "ref": "Symp. 186c–d",
+     "quote": "the best physician is he who is able to separate fair love from foul, or to convert one into the other",
+     "note": "Love as something an expert can manage: the first suggestion in the dialogue that love needs a guide."
+    },
+    {
+     "ref": "Symp. 187a",
+     "quote": "for he says that The One is united by disunion, like the harmony of the bow and the lyre",
+     "note": "Eryximachus quotes and corrects Heraclitus, showing the speech's roots in Presocratic natural philosophy."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Aristophanes: The Myth of the Other Half",
+   "lines": "189a–193e",
+   "section": 0,
+   "summary": [
+    "Aristophanes, cured, proposes to praise Love in a different way, by explaining human nature. Once there were three sexes, male, female and androgynous, each a round creature with four arms, four legs and two faces, offspring of the sun, earth and moon. In their strength and pride they attacked the gods, and Zeus, unwilling to destroy them, cut each in two 'like a sorb-apple', and had Apollo turn their faces and tie up the skin at the navel.",
+    "The halves longed for one another so much that they died of hunger in each other's arms, until Zeus moved their genitals to the front so that they could at least unite and find relief. Each of us is now a 'tally', half of a whole, always searching for our other half; those from the original males love males, and so on. If Hephaestus offered to weld two lovers into one, neither would refuse. Love is the name for the desire and pursuit of the whole, and if we are pious he will restore us to our original nature."
+   ],
+   "analysis": [
+    "Aristophanes' myth is the most famous speech of the dialogue and the most moving of those before Socrates. Under its grotesque comedy lies a serious and sad picture of love as the desire for a lost wholeness, a longing that lovers themselves cannot explain. Unlike the earlier speeches it treats love as directed at a unique individual, one's own other half, and it includes female and male-female couples in its account [[nussbaum1986]] [[hunter2004]].",
+    "Diotima will answer him directly: lovers do not seek their other half unless it is good, for people will cut off their own limbs if they are diseased. The disagreement matters for the whole dialogue. Aristophanes sees love as a wound and a return to the past; Diotima sees it as an aspiration toward the good and the future. Plato's choice to give the comic poet such a powerful speech, despite the Clouds, has been read as a tribute and as a deliberate rivalry between comedy and philosophy [[nightingale1995]]."
+   ],
+   "key": [
+    {
+     "ref": "Symp. 189e",
+     "quote": "In the second place, the primeval man was round, his back and sides forming a circle",
+     "note": "The comic image of the original humans, rolling along like tumblers."
+    },
+    {
+     "ref": "Symp. 191d",
+     "quote": "Each of us when separated, having one side only, like a flat fish, is but the indenture of a man, and he is always looking for his other half.",
+     "note": "The origin of the modern idea of the 'other half'; the Greek word is symbolon, a token broken in two for later matching."
+    },
+    {
+     "ref": "Symp. 192e–193a",
+     "quote": "And the reason is that human nature was originally one and we were a whole, and the desire and pursuit of the whole is called love.",
+     "note": "Aristophanes' definition of love as longing for wholeness, which Diotima will correct."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Agathon: Hymn to the Youngest God",
+   "lines": "193e–197e",
+   "section": 0,
+   "summary": [
+    "After some banter between Socrates and Agathon about whether a poet who faced a theatre of thousands should fear a few wise friends, Agathon begins. The others, he says, praised Love's gifts to men; he will first describe Love himself. Love is the most beautiful and happiest of the gods, because he is the youngest, and the violent deeds of the old myths were done under Necessity, not Love. He is tender, dwelling in soft souls; supple, graceful, and living among flowers.",
+    "Love also has every virtue: justice, since no one is forced to serve him; temperance, since he masters all pleasures; courage, since he conquers Ares; and wisdom, since he is a poet and makes others poets, and taught the gods their arts. The speech ends in a cascade of rhythmical phrases calling Love the giver of peace and friendship, and is greeted with loud applause."
+   ],
+   "analysis": [
+    "Agathon's speech is a showpiece in the style of the sophist Gorgias, full of balanced clauses, rhymes and wordplay, and Socrates' reply makes the comparison explicit with a pun on the Gorgon's head. Its weakness is that it attributes to Love whatever is beautiful, confusing the lover with the beloved: Love is young and lovely because Agathon himself, the celebrated young beauty, is the beloved of the party [[dover1980]].",
+    "Yet the speech supplies the premises for what follows. Agathon is the first to set out a proper order for an encomium, nature first and then gifts, and Socrates adopts it; and his remark that Love set the gods' affairs in order through love of beauty gives Socrates the thread he pulls to show that love lacks beauty [[sheffield2006]]."
+   ],
+   "key": [
+    {
+     "ref": "Symp. 196e",
+     "quote": "And at the touch of him every one becomes a poet, even though he had no music in him before",
+     "note": "Agathon quotes Euripides; love as the source of poetry is an idea that Diotima will reinterpret as creative 'begetting'."
+    },
+    {
+     "ref": "Symp. 197c",
+     "quote": "Therefore, Phaedrus, I say of Love that he is the fairest and best in himself, and the cause of what is fairest and best in all other things.",
+     "note": "The summary claim of the speech, which Socrates immediately dismantles."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Socrates and Diotima: Love's Nature and the Ascent to Beauty",
+   "lines": "198a–212c",
+   "section": 0,
+   "summary": [
+    "Socrates says that he had naively thought an encomium should tell the truth, whereas the others have only made Love appear as fine as possible; he will speak the truth in his own way. Questioning Agathon, he shows that love is always love of something, that one desires what one lacks, and so, since Love desires beauty, Love is not beautiful. He then reports how the Mantinean priestess Diotima once taught him the same lesson. Love is neither beautiful nor ugly, neither god nor mortal, but a great spirit (daimon) carrying messages between gods and men; he is the son of Resource (Poros) and Poverty (Penia), barefoot and homeless, yet scheming, resourceful and a lifelong lover of wisdom.",
+    "Love, Diotima continues, is the desire to possess the good forever, and its work is 'giving birth in beauty', in body or in soul. Mortals share in immortality by leaving offspring, and the ambitious seek undying fame; those pregnant in soul beget wisdom and virtue, like poets and lawgivers. In the 'greater mysteries' a lover rightly guided moves from one beautiful body to all bodies, then to beautiful souls, practices and laws, and the branches of knowledge, until he suddenly beholds beauty itself, eternal and unmixed. Only there can he bring forth true virtue and become dear to the gods. Socrates says he is persuaded and tries to persuade others."
+   ],
+   "analysis": [
+    "The speech has two movements. The question-and-answer with Agathon is a classic Socratic refutation, and it changes the terms of the evening: love is not a beautiful god but a condition of need and striving. Diotima's portrait of Love as a barefoot, resourceful seeker after wisdom is plainly a portrait of Socrates himself, and Love's intermediate status between wisdom and ignorance is the condition of the philosopher [[sheffield2006]] [[hunter2004]].",
+    "The ascent is the climax of the dialogue and the source of its main philosophical disputes. It presents the Form of beauty, 'itself by itself', in language borrowed from the Eleusinian Mysteries, and it turns eros into the engine of philosophical education. Whether the lover abandons individuals as he climbs, or loves them better in the light of what he has seen, is the dialogue's most debated question. That a woman teaches Socrates about love, using the imagery of pregnancy and birth, has also drawn much comment [[vlastos1973]] [[halperin1990]] [[price1989]]."
+   ],
+   "key": [
+    {
+     "ref": "Symp. 201c",
+     "quote": "Say rather, beloved Agathon, that you cannot refute the truth; for Socrates is easily refuted.",
+     "note": "Socrates turns his victory into a claim about truth rather than about himself."
+    },
+    {
+     "ref": "Symp. 202e",
+     "quote": "He is a great spirit (daimon), and like all spirits he is intermediate between the divine and the mortal.",
+     "note": "Love as an intermediary, bridging the gap between gods and men."
+    },
+    {
+     "ref": "Symp. 206b",
+     "quote": "The object which they have in view is birth in beauty, whether of body or soul.",
+     "note": "Diotima's central and surprising definition of love's activity: not possession but creation."
+    },
+    {
+     "ref": "Symp. 211b",
+     "quote": "but beauty absolute, separate, simple, and everlasting, which without diminution and without increase, or any change, is imparted to the ever-growing and perishing beauties of all other things",
+     "note": "The vision at the top of the ladder: the Form of beauty, in which all beautiful things share."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Alcibiades: In Praise of Socrates",
+   "lines": "212c–223d",
+   "section": 0,
+   "summary": [
+    "Alcibiades arrives drunk, crowned with ivy and violets, to garland Agathon, and is startled to find himself beside Socrates; the two exchange jealous accusations. Made to speak, he refuses to praise anyone but Socrates, and compares him to the statues of Silenus that open to reveal images of gods, and to the satyr Marsyas, whose music enchants. Socrates' words alone have shamed him and made him feel that his life of politics is not worth living.",
+    "Believing Socrates to be in love with his beauty, Alcibiades once tried to seduce him, and spent a whole night under his cloak, only to rise 'as from the couch of a father or an elder brother'. He describes Socrates' endurance of cold and hunger at Potidaea, his standing all night in thought, and his courage in saving Alcibiades' life and in the retreat from Delium. Socrates is unlike any other man, and his arguments, absurd outside, are divine within. The party then dissolves in a second invasion of revellers; at dawn Socrates is arguing that the same poet can write comedy and tragedy, and walks away to spend his day as usual."
+   ],
+   "analysis": [
+    "Alcibiades' speech brings the abstract vision back to a particular person, and it does so in the voice of a lover who has failed. Socrates has inverted the roles of courtship: the old, ugly man has become the beloved, and the beautiful youth the frustrated pursuer. Alcibiades is the dialogue's great example of a soul that glimpsed the 'golden images' but could not climb, and Plato's readers knew of his later betrayal of Athens [[nussbaum1986]] [[nails2002]].",
+    "The speech also answers Diotima's portrait of Love as barefoot, enduring and resourceful by showing Socrates as exactly such a figure in real life. Its image of the Silenus statue, coarse outside and divine within, describes Socrates' speech and perhaps Plato's dialogues too. The final scene, with the claim that comedy and tragedy belong to one art, has been read as a comment on the Symposium itself, which combines both [[nightingale1995]] [[hunter2004]]."
+   ],
+   "key": [
+    {
+     "ref": "Symp. 215a–b",
+     "quote": "I say, that he is exactly like the busts of Silenus, which are set up in the statuaries' shops, holding pipes and flutes in their mouths; and they are made to open in the middle, and have images of gods inside them.",
+     "note": "The central image of the speech: a grotesque exterior hiding divine contents."
+    },
+    {
+     "ref": "Symp. 216b",
+     "quote": "And he is the only person who ever made me ashamed",
+     "note": "Shame, the force Phaedrus praised in love, here comes from philosophy and fails to change Alcibiades' life."
+    },
+    {
+     "ref": "Symp. 223d",
+     "quote": "the genius of comedy was the same with that of tragedy, and that the true artist in tragedy was an artist in comedy also",
+     "note": "Socrates' last argument, made to a tragic and a comic poet as they fall asleep."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Socrates",
+   "side": "Guests",
+   "text": "The Athenian philosopher, about fifty-three at the time of the party. He claims to understand nothing but 'matters of love', refutes Agathon and reports the teaching of Diotima. In the frame and in Alcibiades' speech he appears absorbed in thought, indifferent to cold, hunger and wine, ironic, courageous and unseducible: the living image of the Love that Diotima describes."
+  },
+  {
+   "name": "Diotima",
+   "side": "Reported",
+   "text": "A priestess or wise woman of Mantinea who, Socrates says, once instructed him in the art of love and postponed the plague at Athens by ten years. She speaks only through Socrates' report. Whether she is historical or Plato's invention is unknown; she gives the dialogue's account of Love as a spirit, of 'birth in beauty' and of the ascent to beauty itself."
+  },
+  {
+   "name": "Alcibiades",
+   "side": "Guests",
+   "text": "The brilliant, wealthy and notorious Athenian politician and general, Socrates' most famous admirer. He arrives drunk at the end and praises Socrates instead of Love, telling of his failed attempt at seduction and of Socrates' conduct in war. Within months of the dramatic date he would lead the Sicilian Expedition, be condemned for sacrilege and defect to Sparta."
+  },
+  {
+   "name": "Agathon",
+   "side": "Guests",
+   "text": "The host, a young and handsome tragic poet celebrating his first victory. His ornate speech praises Love as young, beautiful and good; Socrates' questions show that he 'did not understand what he was saying', which he admits with good grace. At the end he is one of the last two listeners to Socrates."
+  },
+  {
+   "name": "Aristophanes",
+   "side": "Guests",
+   "text": "The comic poet, author of the Clouds, which had caricatured Socrates. His hiccups disrupt the order of speeches, and his myth of the split humans is the most memorable speech before Socrates'. He tries to reply to Diotima's criticism but is interrupted by Alcibiades."
+  },
+  {
+   "name": "Phaedrus",
+   "side": "Guests",
+   "text": "A young Athenian enthusiast for speeches and literature, 'the father of the thought' that Love deserves praise. He gives the first speech, on Love as the oldest god and the source of honour and self-sacrifice, and acts as a kind of president of the contest."
+  },
+  {
+   "name": "Pausanias",
+   "side": "Guests",
+   "text": "Agathon's long-term lover. His speech distinguishes heavenly from common Love and explains the customs of courtship in Greek cities, justifying a beloved's favours when given in exchange for virtue and wisdom."
+  },
+  {
+   "name": "Eryximachus",
+   "side": "Guests",
+   "text": "A physician, son of the doctor Acumenus. He proposes the speeches, prescribes the cure for Aristophanes' hiccups and gives a scientific account of love as a principle of harmony in bodies, music, the seasons and religion."
+  },
+  {
+   "name": "Aristodemus",
+   "side": "Narrators",
+   "text": "A small, barefoot admirer of Socrates from the deme of Cydathenaeum, who went to the party uninvited and is the source of the whole account. He falls asleep in the final drinking and wakes at dawn to hear the end of Socrates' argument."
+  },
+  {
+   "name": "Apollodorus",
+   "side": "Narrators",
+   "text": "An intense, emotional follower of Socrates, nicknamed 'the madman', who tells the story to an unnamed companion. His devotion and his scorn for those who do not do philosophy give the frame its tone; he reappears weeping at Socrates' death in the Phaedo."
+  }
+ ],
+ "themes": [
+  {
+   "title": "Love as lack and desire",
+   "text": [
+    "Socrates' main correction to the earlier speakers is that love is not itself beautiful or good, but the desire for what one lacks. This turns Love from a perfect god into a needy, striving spirit, and it explains why love is restless and why it can be educated: one desires the beautiful because one does not have it.",
+    "Diotima develops this into a general theory of motivation. All people desire the good and happiness, and 'love' in the narrow sense is only one form of that universal desire, as 'poetry' is the name of one kind of making. The lover wants not just the good but to possess it forever [[sheffield2006]]."
+   ]
+  },
+  {
+   "title": "Love, creation and immortality",
+   "text": [
+    "Diotima's most original idea is that love's aim is to 'give birth in beauty'. Mortal creatures cannot stay the same, so they share in immortality by replacing themselves, through children, through fame, or through works of the mind. Poets, lawgivers like Lycurgus and Solon, and teachers who form a young person's soul leave 'children' fairer and more lasting than human offspring.",
+    "The language of pregnancy and labour, applied to men, gives the speech a striking reversal: the lover is already pregnant and is drawn to beauty as the occasion to bring forth. This has been read both as an appropriation of female experience and as a deliberate challenge to male models of desire [[halperin1990]] [[irigaray1993]]."
+   ]
+  },
+  {
+   "title": "The ascent to beauty itself",
+   "text": [
+    "The 'ladder of love' leads from one beautiful body to all bodies, from bodies to souls, from souls to laws and institutions, from these to knowledge, and finally to a sudden vision of beauty itself, unchanging and pure. It is the dialogue's fullest statement of Plato's theory of Forms, presented not as an argument but as an initiation.",
+    "The ascent makes love the beginning of philosophy. Desire is not to be suppressed but redirected and enlarged, and the lover who reaches the summit gives birth not to images of virtue but to true virtue. How the steps relate to one another, and what becomes of the earlier loves, remain open questions [[price1989]] [[vlastos1973]]."
+   ]
+  },
+  {
+   "title": "Greek pederasty and its codes",
+   "text": [
+    "Every speaker except Aristophanes takes the love of an older man for a youth as the norm, and Pausanias describes its rules in detail. The dialogue thus gives precious evidence for the ideals and anxieties of Athenian sexual culture: the honour of the beloved, the danger of yielding for gain, and the idea that the relationship should educate.",
+    "The dialogue also transforms those codes. Diotima's lover begins with a beautiful body but does not seek gratification, and Alcibiades' story shows Socrates reversing the roles entirely, so that the beautiful youth becomes the pursuer [[dover1978]] [[foucault1985]]."
+   ]
+  },
+  {
+   "title": "The person of Socrates",
+   "text": [
+    "The Symposium is as much a portrait of Socrates as an inquiry into love. The frame, Diotima's description of Love and Alcibiades' speech all converge on the same figure: barefoot, enduring, ironic, absorbed in thought, both lover and beloved of everyone around him. He embodies the intermediate condition of the philosopher, who loves wisdom because he lacks it.",
+    "Alcibiades' Silenus image suggests that the truth about Socrates lies hidden beneath an unpromising surface, and that one must 'open' him to see it. The dialogue implicitly defends Socrates, against the charge that he corrupted Alcibiades, by showing that he refused him [[nussbaum1986]] [[kahn1996]]."
+   ]
+  },
+  {
+   "title": "Poetry, rhetoric and philosophy",
+   "text": [
+    "The party celebrates a tragic victory, and the speakers include a tragedian and a comic poet. Socrates distinguishes his truthful speech from the others' rhetoric of appearance, and Diotima ranks the 'children' of Homer and Hesiod below the vision of beauty. Yet Plato's own work is an elaborate literary construction, full of myth, parody and drama.",
+    "The closing argument that one artist should master both tragedy and comedy has been read as Plato's claim that philosophical writing absorbs and surpasses the poetic genres [[nightingale1995]]."
+   ]
+  }
+ ],
+ "motifs": [
+  {
+   "title": "Shoes and bare feet",
+   "text": "Socrates is unusually wearing sandals for the party; Aristodemus goes barefoot like his master; Love in Diotima's account has no shoes; at Potidaea Socrates walks on ice barefoot. The detail links the frame, the myth and Alcibiades' speech into one portrait of the philosopher."
+  },
+  {
+   "title": "Standing still in thought",
+   "text": "Socrates stops in a neighbour's porch on the way to the party and arrives late; at Potidaea he stands thinking from one dawn to the next. These trances show his absorption in inquiry and anticipate the 'vision' at the top of Diotima's ladder."
+  },
+  {
+   "title": "Drinking and sobriety",
+   "text": "The guests agree not to drink hard; Alcibiades forces them to drink; the second band of revellers makes everyone drunk. Through all of it Socrates drinks without being affected, an image of his self-mastery and of the philosopher's ability to take part in pleasure without being ruled by it."
+  },
+  {
+   "title": "Mysteries and initiation",
+   "text": "Diotima speaks of 'lesser' and 'greater' mysteries and of a final revelation; Alcibiades orders the uninitiated to close their ears. The language of the Eleusinian Mysteries presents philosophy as a sacred initiation, with a sharp irony given that Alcibiades was later accused of profaning those Mysteries [[nails2002]]."
+  },
+  {
+   "title": "Pregnancy and birth",
+   "text": "Diotima repeatedly describes the lover as pregnant in body or soul, labouring to give birth in the presence of beauty. The metaphor connects her theory to Socrates' description of himself elsewhere as a midwife of ideas."
+  }
+ ],
+ "symbols": [
+  {
+   "title": "The Silenus statues",
+   "text": "Alcibiades compares Socrates and his speech to hollow figures of Silenus, ugly and comic outside, containing images of gods within. The image became a commonplace in Renaissance humanism, for example in Erasmus and Rabelais, for wisdom hidden under a lowly surface."
+  },
+  {
+   "title": "The ladder",
+   "text": "The steps of Diotima's ascent, from one body to beauty itself, give Western thought its image of love as a climb toward the divine, taken up by Plotinus, Ficino and the poets of the Renaissance [[ficino1985]]."
+  },
+  {
+   "title": "The split humans and the tally",
+   "text": "Aristophanes' round creatures cut in half, each half a 'tally' seeking its match, symbolise love as the longing for a lost completeness, an image still alive in the language of 'soulmates' and 'other halves'."
+  },
+  {
+   "title": "The garlands",
+   "text": "Alcibiades enters to crown Agathon, the victor in tragedy, but takes back some of the ribbons to crown Socrates, the victor 'in conversation' over all mankind. The gesture answers Agathon's early challenge that Dionysus should judge between his wisdom and Socrates'."
+  },
+  {
+   "title": "Poros and Penia",
+   "text": "Love's parents, Resource and Poverty, stand for the double nature of desire: always lacking, always inventive in pursuit. The myth of their union at Aphrodite's birthday feast turns a philosophical analysis into an allegory."
+  }
+ ],
+ "debates": [
+  {
+   "title": "Do we love persons or their qualities?",
+   "text": [
+    "Gregory Vlastos argued in an influential essay that Plato's theory of love is ethically deficient. The ascent teaches the lover to value a person only as a bearer of beauty and goodness, so that individuals become 'stepping stones' to the Form, and love for the whole, unique person, faults and all, has no place in it [[vlastos1973]].",
+    "Replies have been many. A. W. Price and Frisbee Sheffield argue that the lover does not abandon other people but loves and educates them more truly, since the ascent is a process of 'begetting' virtue in company with a beloved. Others note that the dialogue itself raises Vlastos' objection through Aristophanes and Alcibiades, who insist on love for a particular person [[price1989]] [[sheffield2006]]."
+   ],
+   "cite": [
+    "vlastos1973",
+    "price1989",
+    "sheffield2006"
+   ]
+  },
+  {
+   "title": "Why does Alcibiades come last?",
+   "text": [
+    "Martha Nussbaum read Alcibiades' speech as Plato's deliberate counterweight to Diotima. Alcibiades speaks for a love of one irreplaceable person, known through experience and passion, and his failure and suffering show what the ascent costs; the dialogue thus stages a real conflict between two kinds of value rather than a simple victory for philosophy [[nussbaum1986]].",
+    "Others see the speech as confirmation of Diotima: Alcibiades describes a man who has reached the vision and lives by it, and his own failure illustrates the danger of loving the person of Socrates rather than what Socrates loves. Commentators such as Rowe and Hunter stress that Plato's audience would read the episode in the light of Alcibiades' later career [[rowe1998]] [[hunter2004]]."
+   ],
+   "cite": [
+    "nussbaum1986",
+    "rowe1998",
+    "hunter2004"
+   ]
+  },
+  {
+   "title": "Why is Diotima a woman?",
+   "text": [
+    "David Halperin asked why Plato gives the dialogue's highest teaching on love to a woman in an all-male symposium. His answer is that Plato uses a feminine voice, and the imagery of pregnancy and birth, to describe a male, reciprocal, creative kind of desire; the 'feminine' is appropriated rather than represented [[halperin1990]].",
+    "Luce Irigaray read Diotima more positively, as a figure whose idea of love as an intermediary is undermined when the speech turns to immortality through offspring and to the Forms. Whether Diotima was a historical person is unknown; most scholars regard her as Plato's invention, though some defend her historicity [[irigaray1993]] [[lesher2006]]."
+   ],
+   "cite": [
+    "halperin1990",
+    "irigaray1993",
+    "lesher2006"
+   ]
+  },
+  {
+   "title": "Are the earlier speeches refuted or absorbed?",
+   "text": [
+    "One reading sees the first five speeches as a series of errors, each superseded, which Socrates finally corrects. Another, increasingly common, sees each speech as containing a partial truth that Diotima's account takes up: Phaedrus' link between love and virtue, Pausanias' distinction of good and bad love, Eryximachus' cosmic scope, Aristophanes' sense of lack, Agathon's connection of love and beauty [[dover1980]] [[sheffield2006]].",
+    "Readers in the tradition of Leo Strauss and Stanley Rosen treat the speeches as a philosophical drama, attending to the speakers' characters, the order of speaking and the hiccups, and finding in Aristophanes a serious rival to Socrates [[strauss2001]] [[rosen1968]]."
+   ],
+   "cite": [
+    "dover1980",
+    "sheffield2006",
+    "strauss2001",
+    "rosen1968"
+   ]
+  },
+  {
+   "title": "Greek homosexuality and the evidence of the dialogue",
+   "text": [
+    "K. J. Dover's Greek Homosexuality used the speeches of Pausanias and Alcibiades, with vase-paintings and oratory, to reconstruct the Athenian code of courtship, stressing the asymmetry between active lover and passive beloved. Michel Foucault built on this to describe Greek sexual ethics as a matter of self-mastery rather than prohibition [[dover1978]] [[foucault1985]].",
+    "Later scholars have challenged the stress on asymmetry and penetration. James Davidson argued that Greek love was more varied and more emotional, and that the Symposium's ideal of lifelong partnership was more than philosophical fantasy [[davidson2007]]."
+   ],
+   "cite": [
+    "dover1978",
+    "foucault1985",
+    "davidson2007"
+   ]
+  },
+  {
+   "title": "The dramatic frame and the date of the dialogue",
+   "text": [
+    "Why does Plato tell the story at second or third hand, and set the telling about 400 BC? Many critics connect the frame with the dialogue's interest in transmission and memory, and with the shadow of 415 BC, when Alcibiades and others were accused of profaning the Mysteries, as well as of Socrates' trial in 399 [[nails2002]] [[hunter2004]].",
+    "The date of composition rests largely on Aristophanes' reference to the Arcadians being 'dispersed', usually taken as an anachronistic allusion to the Spartan break-up of Mantinea in 385 BC; this places the Symposium in Plato's middle period, near the Phaedo and the Republic [[dover1980]] [[kahn1996]]."
+   ],
+   "cite": [
+    "nails2002",
+    "hunter2004",
+    "dover1980",
+    "kahn1996"
+   ]
+  },
+  {
+   "title": "From the Symposium to 'Platonic love'",
+   "text": [
+    "The modern phrase 'Platonic love' goes back to Marsilio Ficino's Latin commentary on the Symposium (1469), which read the speeches in a Neoplatonic and Christian light and made Diotima's ascent a path from earthly to divine love. Through Ficino the dialogue shaped Renaissance love poetry, from Bembo and Castiglione to Spenser [[ficino1985]].",
+    "Modern scholars have stressed how far this tradition departs from Plato. In the dialogue the ascent begins from erotic attraction to a beautiful youth, and Plato's 'Platonic love' is not chaste friendship but desire redirected, not denied [[hunter2004]] [[corrigan2004]]."
+   ],
+   "cite": [
+    "ficino1985",
+    "hunter2004",
+    "corrigan2004"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "ref": "Symp. 179b",
+   "quote": "Love will make men dare to die for their beloved--love alone; and women as well as men.",
+   "who": "Phaedrus",
+   "explanation": "The first speech grounds the praise of Love in heroic self-sacrifice, with Alcestis as its first example. Diotima will later reinterpret such deaths as a desire for undying fame."
+  },
+  {
+   "ref": "Symp. 183e",
+   "quote": "whereas the love of the noble disposition is life-long, for it becomes one with the everlasting",
+   "who": "Pausanias",
+   "explanation": "Good love is marked by stability and permanence. The idea that love seeks what is everlasting will be taken much further by Diotima."
+  },
+  {
+   "ref": "Symp. 190d",
+   "quote": "He spoke and cut men in two, like a sorb-apple which is halved for pickling, or as you might divide an egg with a hair",
+   "who": "Aristophanes",
+   "explanation": "Homely comic similes describe the divine punishment that created the human condition of incompleteness and longing."
+  },
+  {
+   "ref": "Symp. 192e–193a",
+   "quote": "the desire and pursuit of the whole is called love",
+   "who": "Aristophanes",
+   "explanation": "The most famous definition in the dialogue before Socrates', presenting love as nostalgia for a lost unity; Diotima answers that we love only what is good."
+  },
+  {
+   "ref": "Symp. 198e",
+   "quote": "for the original proposal seems to have been not that each of you should really praise Love, but only that you should appear to praise him",
+   "who": "Socrates",
+   "explanation": "Socrates separates truthful speech from rhetoric that aims at appearances, and redefines the contest of the evening."
+  },
+  {
+   "ref": "Symp. 201b",
+   "quote": "Agathon replied: I fear that I did not understand what I was saying.",
+   "who": "Agathon",
+   "explanation": "The admission that ends the refutation; the poet discovers that his fine speech did not rest on understanding."
+  },
+  {
+   "ref": "Symp. 203d",
+   "quote": "a philosopher at all times, terrible as an enchanter, sorcerer, sophist",
+   "who": "Diotima (reported by Socrates)",
+   "explanation": "Love, the child of Poverty and Resource, is described in terms that fit Socrates himself, barefoot, homeless and always pursuing wisdom."
+  },
+  {
+   "ref": "Symp. 206a",
+   "quote": "'Then love,' she said, 'may be described generally as the love of the everlasting possession of the good?'",
+   "who": "Diotima (reported by Socrates)",
+   "explanation": "The general definition of love on which the rest of Diotima's teaching is built: desire for the good, and for having it forever."
+  },
+  {
+   "ref": "Symp. 211c",
+   "quote": "using these as steps only, and from one going on to two, and from two to all fair forms, and from fair forms to fair practices, and from fair practices to fair notions",
+   "who": "Diotima (reported by Socrates)",
+   "explanation": "The ladder of love in summary. The phrase 'as steps only' lies at the centre of the debate about whether the lover leaves individuals behind."
+  },
+  {
+   "ref": "Symp. 221c",
+   "quote": "his absolute unlikeness to any human being that is or ever has been is perfectly astonishing",
+   "who": "Alcibiades",
+   "explanation": "Alcibiades insists on the uniqueness of Socrates, the one person who cannot be compared to anyone, against Diotima's lesson that all beauty is one."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Plato tell the story through Apollodorus and Aristodemus rather than directly?",
+   "hint": "Consider the dates of the party and of its retelling, the admissions of imperfect memory (178a), and the idea of passing on wisdom in Socrates' remark at 175d."
+  },
+  {
+   "q": "What does each of the first five speeches contribute to Diotima's account of love?",
+   "hint": "Compare Phaedrus on virtue and honour, Pausanias on two Loves, Eryximachus on harmony, Aristophanes on lack, and Agathon on beauty with Diotima's teaching (201d–212a)."
+  },
+  {
+   "q": "How does Aristophanes' myth differ from Diotima's view of what lovers seek?",
+   "hint": "Set 192e–193a against Diotima's reply at 205d–e about the 'other half', and think about past and future, wholeness and the good."
+  },
+  {
+   "q": "What exactly does Socrates show in his questioning of Agathon, and is the argument sound?",
+   "hint": "Follow the steps at 199c–201c: love is of something, desire is of what one lacks, Love desires beauty. Is it true that we cannot desire what we have?"
+  },
+  {
+   "q": "Why is Love described as a daimon, and as the child of Poros and Penia?",
+   "hint": "Look at 202d–204b and the parallels between Love's appearance and habits and those of Socrates in the frame and in Alcibiades' speech."
+  },
+  {
+   "q": "What does Diotima mean by 'birth in beauty', and why does she link love to immortality?",
+   "hint": "Read 206b–209e on bodily and spiritual pregnancy, change in the mortal creature, and the 'children' of poets and lawgivers."
+  },
+  {
+   "q": "Does the lover who climbs Diotima's ladder stop loving individual people?",
+   "hint": "Consider the phrase 'using these as steps only' (211c), Vlastos' criticism, and the role of the guide and the beloved in the ascent (210a–d)."
+  },
+  {
+   "q": "Why does Alcibiades praise Socrates instead of Love, and how does his speech relate to Diotima's?",
+   "hint": "Think about the Silenus image (215a–b, 221d–222a), the reversal of lover and beloved (217a–219d), and Alcibiades' later history."
+  },
+  {
+   "q": "How does the Symposium reflect and transform Athenian conventions of pederasty?",
+   "hint": "Compare Pausanias' account of custom (182a–185b) with Diotima's ascent and with Socrates' behaviour toward Alcibiades."
+  },
+  {
+   "q": "What is the significance of the final scene, in which Socrates argues that the same poet could write tragedy and comedy?",
+   "hint": "Who are his listeners (223c–d)? Consider the mixture of comic and serious elements throughout the dialogue, including Aristophanes' speech and Alcibiades' entrance."
+  }
+ ],
+ "bibliography": [
+  {
+   "id": "corrigan2004",
+   "text": "Corrigan, Kevin, and Elena Glazov-Corrigan. Plato's Dialectic at Play: Argument, Structure, and Myth in the Symposium. University Park: Pennsylvania State University Press, 2004."
+  },
+  {
+   "id": "davidson2007",
+   "text": "Davidson, James. The Greeks and Greek Love: A Radical Reappraisal of Homosexuality in Ancient Greece. London: Weidenfeld & Nicolson, 2007."
+  },
+  {
+   "id": "dover1978",
+   "text": "Dover, K. J. Greek Homosexuality. London: Duckworth, 1978."
+  },
+  {
+   "id": "dover1980",
+   "text": "Dover, Kenneth, ed. Plato: Symposium. Cambridge Greek and Latin Classics. Cambridge: Cambridge University Press, 1980."
+  },
+  {
+   "id": "ficino1985",
+   "text": "Ficino, Marsilio. Commentary on Plato's Symposium on Love. Translated by Sears Jayne. Dallas: Spring Publications, 1985."
+  },
+  {
+   "id": "foucault1985",
+   "text": "Foucault, Michel. The Use of Pleasure. The History of Sexuality, vol. 2. Translated by Robert Hurley. New York: Pantheon, 1985."
+  },
+  {
+   "id": "halperin1990",
+   "text": "Halperin, David M. One Hundred Years of Homosexuality and Other Essays on Greek Love. New York: Routledge, 1990."
+  },
+  {
+   "id": "hunter2004",
+   "text": "Hunter, Richard. Plato's Symposium. Oxford Approaches to Classical Literature. Oxford: Oxford University Press, 2004."
+  },
+  {
+   "id": "irigaray1993",
+   "text": "Irigaray, Luce. \"Sorcerer Love: A Reading of Plato's Symposium, Diotima's Speech.\" In An Ethics of Sexual Difference, translated by Carolyn Burke and Gillian C. Gill, 20–33. Ithaca: Cornell University Press, 1993."
+  },
+  {
+   "id": "kahn1996",
+   "text": "Kahn, Charles H. Plato and the Socratic Dialogue: The Philosophical Use of a Literary Form. Cambridge: Cambridge University Press, 1996."
+  },
+  {
+   "id": "lesher2006",
+   "text": "Lesher, J. H., Debra Nails, and Frisbee C. C. Sheffield, eds. Plato's Symposium: Issues in Interpretation and Reception. Hellenic Studies 22. Washington, DC: Center for Hellenic Studies, 2006."
+  },
+  {
+   "id": "murray1990",
+   "text": "Murray, Oswyn, ed. Sympotica: A Symposium on the Symposion. Oxford: Clarendon Press, 1990."
+  },
+  {
+   "id": "nails2002",
+   "text": "Nails, Debra. The People of Plato: A Prosopography of Plato and Other Socratics. Indianapolis: Hackett, 2002."
+  },
+  {
+   "id": "nightingale1995",
+   "text": "Nightingale, Andrea Wilson. Genres in Dialogue: Plato and the Construct of Philosophy. Cambridge: Cambridge University Press, 1995."
+  },
+  {
+   "id": "nussbaum1986",
+   "text": "Nussbaum, Martha C. The Fragility of Goodness: Luck and Ethics in Greek Tragedy and Philosophy. Cambridge: Cambridge University Press, 1986."
+  },
+  {
+   "id": "price1989",
+   "text": "Price, A. W. Love and Friendship in Plato and Aristotle. Oxford: Clarendon Press, 1989."
+  },
+  {
+   "id": "rosen1968",
+   "text": "Rosen, Stanley. Plato's Symposium. New Haven: Yale University Press, 1968."
+  },
+  {
+   "id": "rowe1998",
+   "text": "Rowe, C. J., ed. and trans. Plato: Symposium. Warminster: Aris & Phillips, 1998."
+  },
+  {
+   "id": "sheffield2006",
+   "text": "Sheffield, Frisbee C. C. Plato's Symposium: The Ethics of Desire. Oxford: Oxford University Press, 2006."
+  },
+  {
+   "id": "strauss2001",
+   "text": "Strauss, Leo. On Plato's Symposium. Edited by Seth Benardete. Chicago: University of Chicago Press, 2001."
+  },
+  {
+   "id": "vlastos1973",
+   "text": "Vlastos, Gregory. \"The Individual as an Object of Love in Plato.\" In Platonic Studies, 3–42. Princeton: Princeton University Press, 1973."
+  }
+ ]
+}
