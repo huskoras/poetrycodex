@@ -36,7 +36,7 @@
        (a rel=preload copy could not be handed over through the service worker, and came down twice). -->
   <script>try{window.pcHome=fetch("data/home.json",{priority:"high"});window.pcHome.catch(function(){})}catch(e){}</script>
   <!-- The app, fetched at once and run after the page has been read (defer): the inline scripts above and in the body run first. -->
-  <script defer src="app.js?v=148"></script>
+  <script defer src="app.js?v=149"></script>
 </head>
 <body>
   <script>document.body.dataset.route=/^(#\/?(\?.*)?)?$/.test(location.hash)?"home":"sub"</script>

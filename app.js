@@ -5243,6 +5243,7 @@
     "Dutch & Flemish",
     "Spanish & Portuguese",
     "Chinese & Japanese",
+    "Korean",
     "Celtic",
     "Russian & Slavic",
     "Hungarian",
@@ -5270,6 +5271,7 @@
     "German": "german",
     "Spanish & Portuguese": "spanish-portuguese",
     "Chinese & Japanese": "chinese-japanese",
+    "Korean": "korean",
     "Celtic": "celtic",
     "Russian & Slavic": "russian-slavic",
     "Hungarian": "hungarian",
@@ -7834,7 +7836,7 @@
   // The surname: the last word of the name ("John Keats"), less "of Lesbos", "(attributed)",
   // ", Earl of Surrey" and "Jr."; a name with no surname to invert (Homer, "Anonymous …",
   // the traditions that put the family name first or have none) files under its first word.
-  const FIRST_WORD_CATS = new Set(["Ancient Near East", "Turkish & Ottoman", "Arabic & Persian", "Hebrew", "Indian", "Chinese & Japanese"]);
+  const FIRST_WORD_CATS = new Set(["Ancient Near East", "Turkish & Ottoman", "Arabic & Persian", "Hebrew", "Indian", "Chinese & Japanese", "Korean"]);
   function poetSortName(p) {
     if (p._sn !== undefined) return p._sn;
     let n = String(p.name || "").trim();
