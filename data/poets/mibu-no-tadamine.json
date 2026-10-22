@@ -35,9 +35,471 @@
     "Love"
    ],
    "collection": "小倉百人一首 (Ogura Hyakunin Isshu)",
-   "note": "Classical Japanese; from the 古今集",
+   "note": "Classical Japanese; from the 古今集 Also Kokinshū 625.",
    "language": "Japanese",
    "text": "有明の つれなく見えし 別れより\n暁ばかり 憂きものはなし"
+  },
+  {
+   "id": "mibu-no-tadamine/2",
+   "title": "Kokinshū 11: 春きぬと人はいへともうくひすの (Haru kinu to hito wa iedomo uguisu no)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春歌上. 詞書: はるのはしめのうた",
+   "language": "Japanese",
+   "text": "春きぬと人はいへともうくひすのなかぬかきりはあらしとそ思ふ"
+  },
+  {
+   "id": "mibu-no-tadamine/3",
+   "title": "Kokinshū 157: くるるかと見れはあけぬるなつのよを (Kururu ka to mireba akenuru natsu no yo o)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 3, 夏歌. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "くるるかと見れはあけぬるなつのよをあかすとやなく山郭公"
+  },
+  {
+   "id": "mibu-no-tadamine/4",
+   "title": "Kokinshū 163: むかしへや今もこひしき郭公 (Mukashi e ya ima mo koishiki hototogisu)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 3, 夏歌. 詞書: はやくすみける所にてほとときすのなきけるをききてよめる",
+   "language": "Japanese",
+   "text": "むかしへや今もこひしき郭公ふるさとにしもなきてきつらむ"
+  },
+  {
+   "id": "mibu-no-tadamine/5",
+   "title": "Kokinshū 183: けふよりはいまこむ年のきのふをそ (Kyō yori wa ima komu toshi no kinō o zo)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋歌上. 詞書: やうかの日よめる",
+   "language": "Japanese",
+   "text": "けふよりはいまこむ年のきのふをそいつしかとのみまちわたるへき"
+  },
+  {
+   "id": "mibu-no-tadamine/6",
+   "title": "Kokinshū 194: 久方の月の桂も秋は猶 (Hisakata no tsuki no katsura mo aki wa nao)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋歌上. 詞書: これさたのみこの家の歌合によめる",
+   "language": "Japanese",
+   "text": "久方の月の桂も秋は猶もみちすれはやてりまさるらむ"
+  },
+  {
+   "id": "mibu-no-tadamine/7",
+   "title": "Kokinshū 214: 山里は秋こそことにわひしけれ (Yamazato wa aki koso koto ni wabishikere)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋歌上. 詞書: これさたのみこの家の歌合のうた",
+   "language": "Japanese",
+   "text": "山里は秋こそことにわひしけれしかのなくねにめをさましつつ"
+  },
+  {
+   "id": "mibu-no-tadamine/8",
+   "title": "Kokinshū 235: 人の見る事やくるしきをみなへし (Hito no miru koto ya kurushiki ominaeshi)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋歌上. 詞書: 朱雀院のをみなへしあはせによみてたてまつりける",
+   "language": "Japanese",
+   "text": "人の見る事やくるしきをみなへし秋きりにのみたちかくるらむ"
+  },
+  {
+   "id": "mibu-no-tadamine/9",
+   "title": "Kokinshū 236: ひとりのみなかむるよりは女郎花 (Hitori nomi nagamuru yori wa ominaeshi)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋歌上. 詞書: 朱雀院のをみなへしあはせによみてたてまつりける",
+   "language": "Japanese",
+   "text": "ひとりのみなかむるよりは女郎花わかすむやとにうゑて見ましを"
+  },
+  {
+   "id": "mibu-no-tadamine/10",
+   "title": "Kokinshū 258: 秋の夜のつゆをはつゆとおきなから (Aki no yo no tsuyu o ba tsuyu to okinagara)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋歌下. 詞書: これさたのみこの家の歌合によめる",
+   "language": "Japanese",
+   "text": "秋の夜のつゆをはつゆとおきなからかりの涙やのへをそむらむ"
+  },
+  {
+   "id": "mibu-no-tadamine/11",
+   "title": "Kokinshū 263: あめふれはかさとり山のもみちはは (Ame fureba Kasatori-yama no momijiba wa)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋歌下. 詞書: これさたのみこの家の歌合によめる",
+   "language": "Japanese",
+   "text": "あめふれはかさとり山のもみちははゆきかふ人のそてさへそてる"
+  },
+  {
+   "id": "mibu-no-tadamine/12",
+   "title": "Kokinshū 296: 神なひのみむろの山を秋ゆけは (Kamunabi no Mimuro no yama o aki yukeba)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋歌下. 詞書: これさたのみこの家の歌合のうた",
+   "language": "Japanese",
+   "text": "神なひのみむろの山を秋ゆけは錦たちきる心地こそすれ"
+  },
+  {
+   "id": "mibu-no-tadamine/13",
+   "title": "Kokinshū 306: 山田もる秋のかりいほにおくつゆは (Yamada moru aki no kariho ni oku tsuyu wa)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋歌下. 詞書: 是貞のみこの家の歌合のうた",
+   "language": "Japanese",
+   "text": "山田もる秋のかりいほにおくつゆはいなおほせ鳥の涙なりけり"
+  },
+  {
+   "id": "mibu-no-tadamine/14",
+   "title": "Kokinshū 327: みよしのの山の白雪ふみわけて (Miyoshino no yama no shirayuki fumiwakete)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 6, 冬歌. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "みよしのの山の白雪ふみわけて入りにし人のおとつれもせぬ"
+  },
+  {
+   "id": "mibu-no-tadamine/15",
+   "title": "Kokinshū 328: 白雪のふりてつもれる山さとは (Shirayuki no furite tsumoreru yamazato wa)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 6, 冬歌. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "白雪のふりてつもれる山さとはすむ人さへや思ひきゆらむ"
+  },
+  {
+   "id": "mibu-no-tadamine/16",
+   "title": "Kokinshū 425: たもとよりはなれて玉をつつまめや (Tamoto yori hanarete tama o tsutsumame ya)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 10, 物名. 詞書: 返し（うつせみ）",
+   "language": "Japanese",
+   "text": "たもとよりはなれて玉をつつまめやこれなむそれとうつせ見むかし"
+  },
+  {
+   "id": "mibu-no-tadamine/17",
+   "title": "Kokinshū 462: 夏草のうへはしけれるぬま水の (Natsukusa no ue wa shigereru numamizu no)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 10, 物名. 詞書: かたの",
+   "language": "Japanese",
+   "text": "夏草のうへはしけれるぬま水のゆくかたのなきわか心かな"
+  },
+  {
+   "id": "mibu-no-tadamine/18",
+   "title": "Kokinshū 478: かすかののゆきまをわけておひいてくる (Kasuga no no yukima o wakete oiidekuru)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 11, 恋歌一. 詞書: かすかのまつりにまかれりける時に、物見にいてたりける女のもとに家をたつねてつかはせりける",
+   "language": "Japanese",
+   "text": "かすかののゆきまをわけておひいてくる草のはつかに見えしきみはも"
+  },
+  {
+   "id": "mibu-no-tadamine/19",
+   "title": "Kokinshū 566: かきくらしふる白雪のしたきえに (Kakikurashi furu shirayuki no shitagie ni)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋歌二. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "かきくらしふる白雪のしたきえにきえて物思ふころにもあるかな"
+  },
+  {
+   "id": "mibu-no-tadamine/20",
+   "title": "Kokinshū 586: 秋風にかきなすことのこゑにさへ (Akikaze ni kakinasu koto no koe ni sae)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋歌二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "秋風にかきなすことのこゑにさへはかなく人のこひしかるらむ"
+  },
+  {
+   "id": "mibu-no-tadamine/21",
+   "title": "Kokinshū 592: たきつせにねさしととめぬうき草の (Takitsuse ni nezashi todomenu ukigusa no)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋歌二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "たきつせにねさしととめぬうき草のうきたるこひも我はするかな"
+  },
+  {
+   "id": "mibu-no-tadamine/22",
+   "title": "Kokinshū 601: 風ふけは峰にわかるる白雲の (Kaze fukeba mine ni wakaruru shirakumo no)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋歌二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "風ふけは峰にわかるる白雲のたえてつれなき君か心か"
+  },
+  {
+   "id": "mibu-no-tadamine/23",
+   "title": "Kokinshū 602: 月影にわか身をかふる物ならは (Tsukikage ni waga mi o kauru mono naraba)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋歌二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "月影にわか身をかふる物ならはつれなき人もあはれとや見む"
+  },
+  {
+   "id": "mibu-no-tadamine/24",
+   "title": "Kokinshū 609: いのちにもまさりてをしくある物は (Inochi ni mo masarite oshiku aru mono wa)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋歌二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "いのちにもまさりてをしくある物は見はてぬゆめのさむるなりけり"
+  },
+  {
+   "id": "mibu-no-tadamine/25",
+   "title": "Kokinshū 628: みちのくに有りといふなるなとり河 (Michinoku ni ari to iu naru Natorigawa)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋歌三. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "みちのくに有りといふなるなとり河なきなとりてはくるしかりけり"
+  },
+  {
+   "id": "mibu-no-tadamine/26",
+   "title": "Kokinshū 835: ぬるかうちに見るをのみやは夢といはむ (Nuru ga uchi ni miru o nomi ya wa yume to iwamu)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 16, 哀傷歌. 詞書: あひしれりける人のみまかりにける時によめる",
+   "language": "Japanese",
+   "text": "ぬるかうちに見るをのみやは夢といはむはかなき世をもうつつとは見す"
+  },
+  {
+   "id": "mibu-no-tadamine/27",
+   "title": "Kokinshū 836: せをせけはふちとなりてもよとみけり (Se o sekeba fuchi to narite mo yodomikeri)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 16, 哀傷歌. 詞書: あねの身まかりにける時によめる",
+   "language": "Japanese",
+   "text": "せをせけはふちとなりてもよとみけりわかれをとむるしからみそなき"
+  },
+  {
+   "id": "mibu-no-tadamine/28",
+   "title": "Kokinshū 839: 時しもあれ秋やは人のわかるへき (Toki shi mo are aki ya wa hito no wakarubeki)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 16, 哀傷歌. 詞書: きのとものりか身まかりにける時よめる",
+   "language": "Japanese",
+   "text": "時しもあれ秋やは人のわかるへきあるを見るたにこひしきものを"
+  },
+  {
+   "id": "mibu-no-tadamine/29",
+   "title": "Kokinshū 841: ふち衣はつるるいとはわひ人の (Fujigoromo hazururu ito wa wabibito no)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 16, 哀傷歌. 詞書: ちちかおもひにてよめる",
+   "language": "Japanese",
+   "text": "ふち衣はつるるいとはわひ人の涙の玉のをとそなりける"
+  },
+  {
+   "id": "mibu-no-tadamine/30",
+   "title": "Kokinshū 843: すみそめの君かたもとは雲なれや (Sumizome no kimi ga tamoto wa kumo nare ya)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 16, 哀傷歌. 詞書: おもひに侍りける人をとふらひにまかりてよめる",
+   "language": "Japanese",
+   "text": "すみそめの君かたもとは雲なれやたえす涙の雨とのみふる"
+  },
+  {
+   "id": "mibu-no-tadamine/31",
+   "title": "Kokinshū 917: すみよしとあまはつくともなかゐすな (Sumiyoshi to ama wa tsuku tomo nakai suna)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 17, 雑歌上. 詞書: あひしれりける人の住吉にまうてけるによみてつかはしける",
+   "language": "Japanese",
+   "text": "すみよしとあまはつくともなかゐすな人忘草おふといふなり"
+  },
+  {
+   "id": "mibu-no-tadamine/32",
+   "title": "Kokinshū 928: おちたきつたきのみなかみとしつもり (Ochitagitsu taki no minakami toshi tsumori)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 17, 雑歌上. 詞書: ひえの山なるおとはのたきを見てよめる",
+   "language": "Japanese",
+   "text": "おちたきつたきのみなかみとしつもりおいにけらしなくろきすちなし"
+  },
+  {
+   "id": "mibu-no-tadamine/33",
+   "title": "Kokinshū 1004: 君か世にあふさか山のいはし水 (Kimi ga yo ni Ōsakayama no iwashimizu)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 19, 雑体. 詞書: 短歌：ふるうたにくはへてたてまつれるなかうた（反歌）",
+   "language": "Japanese",
+   "text": "君か世にあふさか山のいはし水こかくれたりと思ひけるかな"
+  },
+  {
+   "id": "mibu-no-tadamine/34",
+   "title": "Kokinshū 1036: かくれぬのしたよりおふるねぬなはの (Kakurenu no shita yori ouru nenunawa no)",
+   "authorSlug": "mibu-no-tadamine",
+   "author": "Mibu no Tadamine",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 19, 雑体. 詞書: 誹諧歌：題しらす",
+   "language": "Japanese",
+   "text": "かくれぬのしたよりおふるねぬなはのねぬなはたてしくるないとひそ"
   }
  ]
 }

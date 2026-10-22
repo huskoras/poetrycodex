@@ -35,9 +35,625 @@
     "Nature"
    ],
    "collection": "小倉百人一首 (Ogura Hyakunin Isshu)",
-   "note": "Classical Japanese; from the 古今集",
+   "note": "Classical Japanese; from the 古今集 Also Kokinshū 84.",
    "language": "Japanese",
    "text": "久方の 光のどけき 春の日に\nしづごころなく 花の散るらむ"
+  },
+  {
+   "id": "ki-no-tomonori/2",
+   "title": "Kokinshū 13: 花のかを (Hana no ka o)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春上. 詞書: 寛平御時きさいの宮のうたあはせのうた",
+   "language": "Japanese",
+   "text": "花のかを風のたよりにたくへてそ鶯さそふしるへにはやる"
+  },
+  {
+   "id": "ki-no-tomonori/3",
+   "title": "Kokinshū 38: 君ならて (Kimi narade)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春上. 詞書: むめの花ををりて人におくりける",
+   "language": "Japanese",
+   "text": "君ならて誰にか見せむ梅花色をもかをもしる人そしる"
+  },
+  {
+   "id": "ki-no-tomonori/4",
+   "title": "Kokinshū 57: いろもかも (Iro mo ka mo)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春上. 詞書: さくらの花のもとにて年のおいぬることをなけきてよめる",
+   "language": "Japanese",
+   "text": "いろもかもおなしむかしにさくらめと年ふる人そあらたまりける"
+  },
+  {
+   "id": "ki-no-tomonori/5",
+   "title": "Kokinshū 60: 三吉野の (Miyoshino no)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春上. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "三吉野の山へにさけるさくら花雪かとのみそあやまたれける"
+  },
+  {
+   "id": "ki-no-tomonori/6",
+   "title": "Kokinshū 142: おとは山 (Otowayama)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 3, 夏. 詞書: おとは山をこえける時に郭公のなくをききてよめる",
+   "language": "Japanese",
+   "text": "おとは山けさこえくれは郭公こすゑはるかに今そなくなる"
+  },
+  {
+   "id": "ki-no-tomonori/7",
+   "title": "Kokinshū 153: 五月雨に (Samidare ni)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 3, 夏. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "五月雨に物思ひをれは郭公夜ふかくなきていつちゆくらむ"
+  },
+  {
+   "id": "ki-no-tomonori/8",
+   "title": "Kokinshū 154: 夜やくらき (Yo ya kuraki)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 3, 夏. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "夜やくらき道やまとへるほとときすわかやとをしもすきかてになく"
+  },
+  {
+   "id": "ki-no-tomonori/9",
+   "title": "Kokinshū 177: 天河 (Ama no kawa)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋上. 詞書: 寛平御時、なぬかの夜うへにさふらふをのことも歌たてまつれとおほせられける時に、人にかはりてよめる",
+   "language": "Japanese",
+   "text": "天河あさせしら浪たとりつつわたりはてねはあけそしにける"
+  },
+  {
+   "id": "ki-no-tomonori/10",
+   "title": "Kokinshū 207: 秋風に (Akikaze ni)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋上. 詞書: これさたのみこの家の歌合のうた",
+   "language": "Japanese",
+   "text": "秋風にはつかりかねそきこゆなるたかたまつさをかけてきつらむ"
+  },
+  {
+   "id": "ki-no-tomonori/11",
+   "title": "Kokinshū 265: たかための (Taka tame no)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋下. 詞書: やまとのくににまかりける時、さほ山にきりのたてりけるを見てよめる",
+   "language": "Japanese",
+   "text": "たかための錦なれはか秋きりのさほの山辺をたちかくすらむ"
+  },
+  {
+   "id": "ki-no-tomonori/12",
+   "title": "Kokinshū 270: 露なから (Tsuyu nagara)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋下. 詞書: これさたのみこの家の歌合のうた",
+   "language": "Japanese",
+   "text": "露なからをりてかささむきくの花おいせぬ秋のひさしかるへく"
+  },
+  {
+   "id": "ki-no-tomonori/13",
+   "title": "Kokinshū 274: 花見つつ (Hana mitsutsu)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋下. 詞書: 菊の花のもとにて人の人まてるかたをよめる",
+   "language": "Japanese",
+   "text": "花見つつ人まつ時はしろたへの袖かとのみそあやまたれける"
+  },
+  {
+   "id": "ki-no-tomonori/14",
+   "title": "Kokinshū 275: ひともとと (Hitomoto to)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋下. 詞書: おほさはの池のかたにきくうゑたるをよめる",
+   "language": "Japanese",
+   "text": "ひともとと思ひしきくをおほさはの池のそこにもたれかうゑけむ"
+  },
+  {
+   "id": "ki-no-tomonori/15",
+   "title": "Kokinshū 337: 雪ふれは (Yuki fureba)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 6, 冬. 詞書: ゆきのふりけるを見てよめる",
+   "language": "Japanese",
+   "text": "雪ふれは木ことに花そさきにけるいつれを梅とわきてをらまし"
+  },
+  {
+   "id": "ki-no-tomonori/16",
+   "title": "Kokinshū 405: したのおひの (Shita no obi no)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 8, 離別. 詞書: みちにあへりける人のくるまにものをいひつきて、わかれける所にてよめる",
+   "language": "Japanese",
+   "text": "したのおひのみちはかたかたわかるとも行きめくりてもあはむとそ思ふ"
+  },
+  {
+   "id": "ki-no-tomonori/17",
+   "title": "Kokinshū 431: みよしのの (Miyoshino no)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 10, 物名. 詞書: をかたまの木",
+   "language": "Japanese",
+   "text": "みよしののよしののたきにうかひいつるあわをかたまのきゆと見つらむ"
+  },
+  {
+   "id": "ki-no-tomonori/18",
+   "title": "Kokinshū 437: 白露を (Shiratsuyu o)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 10, 物名. 詞書: をみなへし",
+   "language": "Japanese",
+   "text": "白露を玉にぬくやとささかにの花にも葉にもいとをみなへし"
+  },
+  {
+   "id": "ki-no-tomonori/19",
+   "title": "Kokinshū 438: あさ露を (Asatsuyu o)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 10, 物名. 詞書: をみなへし",
+   "language": "Japanese",
+   "text": "あさ露をわけそほちつつ花見むと今その山をみなへしりぬる"
+  },
+  {
+   "id": "ki-no-tomonori/20",
+   "title": "Kokinshū 440: 秋ちかう (Aki chikau)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 10, 物名. 詞書: きちかうの花",
+   "language": "Japanese",
+   "text": "秋ちかうのはなりにけり白露のおけるくさはも色かはりゆく"
+  },
+  {
+   "id": "ki-no-tomonori/21",
+   "title": "Kokinshū 442: わかやとの (Waga yado no)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 10, 物名. 詞書: りうたむのはな",
+   "language": "Japanese",
+   "text": "わかやとの花ふみしたくとりうたむのはなけれはやここにしもくる"
+  },
+  {
+   "id": "ki-no-tomonori/22",
+   "title": "Kokinshū 561: よひのまも (Yoi no ma mo)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "よひのまもはかなく見ゆる夏虫に迷ひまされるこひもするかな"
+  },
+  {
+   "id": "ki-no-tomonori/23",
+   "title": "Kokinshū 562: ゆふされは (Yūsareba)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "ゆふされは蛍よりけにもゆれともひかり見ねはや人のつれなき"
+  },
+  {
+   "id": "ki-no-tomonori/24",
+   "title": "Kokinshū 563: ささのはに (Sasa no ha ni)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "ささのはにおく霜よりもひとりぬるわか衣手そさえまさりける"
+  },
+  {
+   "id": "ki-no-tomonori/25",
+   "title": "Kokinshū 564: わかやとの (Waga yado no)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "わかやとの菊のかきねにおくしものきえかへりてそこひしかりける"
+  },
+  {
+   "id": "ki-no-tomonori/26",
+   "title": "Kokinshū 565: 河のせに (Kawa no se ni)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "河のせになひくたまものみかくれて人にしられぬこひもするかな"
+  },
+  {
+   "id": "ki-no-tomonori/27",
+   "title": "Kokinshū 593: よひよひに (Yoiyoi ni)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "よひよひにぬきてわかぬるかり衣かけておもはぬ時のまもなし"
+  },
+  {
+   "id": "ki-no-tomonori/28",
+   "title": "Kokinshū 594: あつまちの (Azumaji no)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "あつまちのさやの中山なかなかになにしか人を思ひそめけむ"
+  },
+  {
+   "id": "ki-no-tomonori/29",
+   "title": "Kokinshū 595: しきたへの (Shikitae no)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "しきたへの枕のしたに海はあれと人を見るめはおひすそ有りける"
+  },
+  {
+   "id": "ki-no-tomonori/30",
+   "title": "Kokinshū 596: 年をへて (Toshi o hete)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "年をへてきえぬおもひは有りなからよるのたもとは猶こほりけり"
+  },
+  {
+   "id": "ki-no-tomonori/31",
+   "title": "Kokinshū 607: 事にいてて (Koto ni idete)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "事にいてていはぬはかりそみなせ河したにかよひてこひしきものを"
+  },
+  {
+   "id": "ki-no-tomonori/32",
+   "title": "Kokinshū 615: いのちやは (Inochi ya wa)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "いのちやはなにそはつゆのあた物をあふにしかへはをしからなくに"
+  },
+  {
+   "id": "ki-no-tomonori/33",
+   "title": "Kokinshū 661: 紅の (Kurenai no)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "紅の色にはいてしかくれぬのしたにかよひてこひはしぬとも"
+  },
+  {
+   "id": "ki-no-tomonori/34",
+   "title": "Kokinshū 667: したにのみ (Shita ni nomi)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "したにのみこふれはくるし玉のをのたえてみたれむ人なとかめそ"
+  },
+  {
+   "id": "ki-no-tomonori/35",
+   "title": "Kokinshū 668: わかこひを (Waga koi o)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "わかこひをしのひかねてはあしひきの山橘の色にいてぬへし"
+  },
+  {
+   "id": "ki-no-tomonori/36",
+   "title": "Kokinshū 684: 春霞 (Haru gasumi)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 14, 恋四. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "春霞たなひく山のさくら花見れともあかぬ君にもあるかな"
+  },
+  {
+   "id": "ki-no-tomonori/37",
+   "title": "Kokinshū 715: 蝉のこゑ (Semi no koe)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 14, 恋四. 詞書: 寛平御時きさいの宮の歌合のうた",
+   "language": "Japanese",
+   "text": "蝉のこゑきけはかなしな夏衣うすくや人のならむと思へは"
+  },
+  {
+   "id": "ki-no-tomonori/38",
+   "title": "Kokinshū 753: 雲もなく (Kumo mo naku)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 15, 恋五. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "雲もなくなきたるあさの我なれやいとはれてのみ世をはへぬらむ"
+  },
+  {
+   "id": "ki-no-tomonori/39",
+   "title": "Kokinshū 787: 秋風は (Akikaze wa)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 15, 恋五. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "秋風は身をわけてしもふかなくに人の心のそらになるらむ"
+  },
+  {
+   "id": "ki-no-tomonori/40",
+   "title": "Kokinshū 792: 水のあわの (Mizu no awa no)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 15, 恋五. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "水のあわのきえてうき身といひなから流れて猶もたのまるるかな"
+  },
+  {
+   "id": "ki-no-tomonori/41",
+   "title": "Kokinshū 827: うきなから (Uki nagara)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 15, 恋五. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "うきなからけぬるあわともなりななむ流れてとたにたのまれぬ身は"
+  },
+  {
+   "id": "ki-no-tomonori/42",
+   "title": "Kokinshū 833: ねても見ゆ (Nete mo miyu)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 16, 哀傷. 詞書: 藤原敏行朝臣の身まかりにける時によみてかの家につかはしける",
+   "language": "Japanese",
+   "text": "ねても見ゆねても見えけりおほかたは空蝉の世そ夢には有りける"
+  },
+  {
+   "id": "ki-no-tomonori/43",
+   "title": "Kokinshū 854: ことならは (Koto naraba)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 16, 哀傷. 詞書: これたかのみこの、ちちの侍りけむ時によめりけむうたともとこひけれは、かきておくりけるおくによみてかけりける",
+   "language": "Japanese",
+   "text": "ことならは事のはさへもきえななむ見れは涙のたきまさりけり"
+  },
+  {
+   "id": "ki-no-tomonori/44",
+   "title": "Kokinshū 876: 蝉のはの (Semi no ha no)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 17, 雑上. 詞書: 方たかへに人の家にまかれりける時に、あるしのきぬをきせたりけるをあしたにかへすとてよみける",
+   "language": "Japanese",
+   "text": "蝉のはのよるの衣はうすけれとうつりかこくもにほひぬるかな"
+  },
+  {
+   "id": "ki-no-tomonori/45",
+   "title": "Kokinshū 991: ふるさとは (Furusato wa)",
+   "authorSlug": "ki-no-tomonori",
+   "author": "Ki no Tomonori",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 18, 雑下. 詞書: つくしに侍りける時にまかりかよひつつこうちける人のもとに、京にかへりまうてきてつかはしける",
+   "language": "Japanese",
+   "text": "ふるさとは見しこともあらすをののえのくちし所そこひしかりける"
   }
  ]
 }

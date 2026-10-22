@@ -35,9 +35,415 @@
     "Nature"
    ],
    "collection": "小倉百人一首 (Ogura Hyakunin Isshu)",
-   "note": "Classical Japanese; from the 古今集",
+   "note": "Classical Japanese; from the 古今集 Also Kokinshū 294.",
    "language": "Japanese",
    "text": "ちはやぶる 神代も聞かず 龍田川\nから紅に 水くくるとは"
+  },
+  {
+   "id": "ariwara-no-narihira/2",
+   "title": "Kokinshū 53: 世中に (Yo no naka ni)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春上. 詞書: なきさの院にてさくらを見てよめる",
+   "language": "Japanese",
+   "text": "世中にたえてさくらのなかりせは春の心はのとけからまし"
+  },
+  {
+   "id": "ariwara-no-narihira/3",
+   "title": "Kokinshū 63: けふこすは (Kyō kozu wa)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春上. 詞書: 返し",
+   "language": "Japanese",
+   "text": "けふこすはあすは雪とそふりなましきえすはありとも花と見ましや"
+  },
+  {
+   "id": "ariwara-no-narihira/4",
+   "title": "Kokinshū 133: ぬれつつそ (Nuretsutsu zo)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 2, 春下. 詞書: やよひのつこもりの日、あめのふりけるにふちの花ををりて人につかはしける",
+   "language": "Japanese",
+   "text": "ぬれつつそしひてをりつる年の内に春はいくかもあらしと思へは"
+  },
+  {
+   "id": "ariwara-no-narihira/5",
+   "title": "Kokinshū 268: うゑしうゑは (Ueshi ue wa)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋下. 詞書: 人のせんさいにきくにむすひつけてうゑけるうた",
+   "language": "Japanese",
+   "text": "うゑしうゑは秋なき時やさかさらむ花こそちらめねさへかれめや"
+  },
+  {
+   "id": "ariwara-no-narihira/6",
+   "title": "Kokinshū 349: さくら花 (Sakura bana)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 7, 賀. 詞書: ほりかはのおほいまうちきみの四十賀、九条の家にてしける時によめる",
+   "language": "Japanese",
+   "text": "さくら花ちりかひくもれおいらくのこむといふなる道まかふかに"
+  },
+  {
+   "id": "ariwara-no-narihira/7",
+   "title": "Kokinshū 410: 唐衣 (Karagoromo)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 9, 羈旅. 詞書: あつまの方へ友とする人ひとりふたりいさなひていきけり、みかはのくにやつはしといふ所にいたれりけるに、その河のほとりにかきつはたいとおもしろくさけりけるを見て、木のかけにおりゐて、かきつはたといふいつもしをくのかしらにすゑてたひの心をよまむとてよめる",
+   "language": "Japanese",
+   "text": "唐衣きつつなれにしつましあれははるはるきぬるたひをしそ思ふ"
+  },
+  {
+   "id": "ariwara-no-narihira/8",
+   "title": "Kokinshū 411: 名にしおはは (Na ni shi owaba)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 9, 羈旅. 詞書: むさしのくにとしもつふさのくにとの中にあるすみた河のほとりにいたりてみやこのいとこひしうおほえけれは、しはし河のほとりにおりゐて、思ひやれはかきりなくとほくもきにけるかなと思ひわひてなかめをるに、わたしもりはや舟にのれ日くれぬといひけれは舟にのりてわたらむとするに、みな人ものわひしくて京におもふ人なくしもあらす、さるをりにしろきとりのはしとあしとあかき河のほとりにあそひけり、京には見えぬとりなりけれはみな人見しらす、わたしもりにこれはなにとりそととひけれは、これなむみやことりといひけるをききてよめる",
+   "language": "Japanese",
+   "text": "名にしおははいさ事とはむ宮ことりわか思ふ人はありやなしやと"
+  },
+  {
+   "id": "ariwara-no-narihira/9",
+   "title": "Kokinshū 418: かりくらし (Karikurashi)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 9, 羈旅. 詞書: これたかのみこのともにかりにまかりける時に、あまの河といふ所の河のほとりにおりゐてさけなとのみけるついてに、みこのいひけらく、かりしてあまのかはらにいたるといふ心をよみてさかつきはさせといひけれはよめる",
+   "language": "Japanese",
+   "text": "かりくらしたなはたつめにやとからむあまのかはらに我はきにけり"
+  },
+  {
+   "id": "ariwara-no-narihira/10",
+   "title": "Kokinshū 476: 見すもあらす (Mizu mo arazu)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 11, 恋一. 詞書: 右近のむまはのひをりの日、むかひにたてたりけるくるまのしたすたれより女のかほのほのかに見えけれは、よむてつかはしける",
+   "language": "Japanese",
+   "text": "見すもあらす見もせぬ人のこひしくはあやなくけふやなかめくらさむ"
+  },
+  {
+   "id": "ariwara-no-narihira/11",
+   "title": "Kokinshū 616: おきもせす (Oki mo sezu)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: やよひのついたちよりしのひに人にものらいひてのちに、雨のそほふりけるによみてつかはしける",
+   "language": "Japanese",
+   "text": "おきもせすねもせてよるをあかしては春の物とてなかめくらしつ"
+  },
+  {
+   "id": "ariwara-no-narihira/12",
+   "title": "Kokinshū 618: あさみこそ (Asami koso)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: かの女にかはりて返しによめる",
+   "language": "Japanese",
+   "text": "あさみこそ袖はひつらめ涙河身さへ流るときかはたのまむ"
+  },
+  {
+   "id": "ariwara-no-narihira/13",
+   "title": "Kokinshū 622: 秋ののに (Aki no no ni)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "秋ののにささわけしあさの袖よりもあはてこしよそひちまさりける"
+  },
+  {
+   "id": "ariwara-no-narihira/14",
+   "title": "Kokinshū 632: ひとしれぬ (Hito shirenu)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: ひむかしの五条わたりに人をしりおきてまかりかよひけり、しのひなる所なりけれはかとよりしもえいらてかきのくつれよりかよひけるを、たひかさなりけれはあるしききつけてかのみちに夜ことに人をふせてまもらすれは、いきけれとえあはてのみかへりてよみてやりける",
+   "language": "Japanese",
+   "text": "ひとしれぬわかかよひちの関守はよひよひことにうちもねななむ"
+  },
+  {
+   "id": "ariwara-no-narihira/15",
+   "title": "Kokinshū 644: ねぬる夜の (Nenuru yo no)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: 人にあひてあしたによみてつかはしける",
+   "language": "Japanese",
+   "text": "ねぬる夜の夢をはかなみまとろめはいやはかなにもなりまさるかな"
+  },
+  {
+   "id": "ariwara-no-narihira/16",
+   "title": "Kokinshū 646: かきくらす (Kakikurasu)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: 返し",
+   "language": "Japanese",
+   "text": "かきくらす心のやみに迷ひにき夢うつつとは世人さためよ"
+  },
+  {
+   "id": "ariwara-no-narihira/17",
+   "title": "Kokinshū 705: かすかすに (Kazu kazu ni)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 14, 恋四. 詞書: 藤原敏行朝臣のなりひらの朝臣の家なりける女をあひしりてふみつかはせりけることはに、いままうてく、あめのふりけるをなむ見わつらひ侍るといへりけるをききて、かの女にかはりてよめりける",
+   "language": "Japanese",
+   "text": "かすかすにおもひおもはすとひかたみ身をしる雨はふりそまされる"
+  },
+  {
+   "id": "ariwara-no-narihira/18",
+   "title": "Kokinshū 707: おほぬさと (Ōnusa to)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 14, 恋四. 詞書: 返し",
+   "language": "Japanese",
+   "text": "おほぬさと名にこそたてれなかれてもつひによるせはありてふものを"
+  },
+  {
+   "id": "ariwara-no-narihira/19",
+   "title": "Kokinshū 747: 月やあらぬ (Tsuki ya aranu)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 15, 恋五. 詞書: 五条のきさいの宮のにしのたいにすみける人にほいにはあらてものいひわたりけるを、む月のとをかあまりになむほかへかくれにける、あり所はききけれとえ物もいはて、又のとしのはるむめの花さかりに月のおもしろかりける夜、こそをこひてかのにしのたいにいきて月のかたふくまてあはらなるいたしきにふせりてよめる",
+   "language": "Japanese",
+   "text": "月やあらぬ春や昔の春ならぬわか身ひとつはもとの身にして"
+  },
+  {
+   "id": "ariwara-no-narihira/20",
+   "title": "Kokinshū 785: ゆきかへり (Yukikaeri)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 15, 恋五. 詞書: 返し",
+   "language": "Japanese",
+   "text": "ゆきかへりそらにのみしてふる事はわかゐる山の風はやみなり"
+  },
+  {
+   "id": "ariwara-no-narihira/21",
+   "title": "Kokinshū 861: つひにゆく (Tsui ni yuku)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 16, 哀傷. 詞書: やまひしてよわくなりにける時よめる",
+   "language": "Japanese",
+   "text": "つひにゆくみちとはかねてききしかときのふけふとはおもはさりしを"
+  },
+  {
+   "id": "ariwara-no-narihira/22",
+   "title": "Kokinshū 868: 紫の (Murasaki no)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 17, 雑上. 詞書: めのおとうとをもて侍りける人にうへのきぬをおくるとてよみてやりける",
+   "language": "Japanese",
+   "text": "紫の色こき時はめもはるに野なる草木そわかれさりける"
+  },
+  {
+   "id": "ariwara-no-narihira/23",
+   "title": "Kokinshū 871: おほはらや (Ōhara ya)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 17, 雑上. 詞書: 二条のきさきのまた東宮のみやすんところと申しける時に、おほはらのにまうてたまひける日よめる",
+   "language": "Japanese",
+   "text": "おほはらやをしほの山もけふこそは神世の事も思ひいつらめ"
+  },
+  {
+   "id": "ariwara-no-narihira/24",
+   "title": "Kokinshū 879: おほかたは (Ōkata wa)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Time & Brevity",
+   "subjects": [
+    "Time & Brevity"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 17, 雑上. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "おほかたは月をもめてしこれそこのつもれは人のおいとなるもの"
+  },
+  {
+   "id": "ariwara-no-narihira/25",
+   "title": "Kokinshū 884: あかなくに (Akanaku ni)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 17, 雑上. 詞書: これたかのみこのかりしけるともにまかりて、やとりにかへりて夜ひとよさけをのみ物かたりをしけるに、十一日の月もかくれなむとしけるをりに、みこ、ゑひてうちへいりなむとしけれはよみ侍りける",
+   "language": "Japanese",
+   "text": "あかなくにまたきも月のかくるるか山のはにけていれすもあらなむ"
+  },
+  {
+   "id": "ariwara-no-narihira/26",
+   "title": "Kokinshū 901: 世中に (Yo no naka ni)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 17, 雑上. 詞書: 返し",
+   "language": "Japanese",
+   "text": "世中にさらぬ別のなくもかな千世もとなけく人のこのため"
+  },
+  {
+   "id": "ariwara-no-narihira/27",
+   "title": "Kokinshū 923: ぬきみたる (Nukimidaru)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 17, 雑上. 詞書: 布引の滝の本にて人人あつまりて歌よみける時によめる",
+   "language": "Japanese",
+   "text": "ぬきみたる人こそあるらし白玉のまなくもちるか袖のせはきに"
+  },
+  {
+   "id": "ariwara-no-narihira/28",
+   "title": "Kokinshū 969: 今そしる (Ima zo shiru)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 18, 雑下. 詞書: 紀のとしさたか阿波のすけにまかりける時に、むまのはなむけせむとてけふといひおくれりける時に、ここかしこにまかりありきて夜ふくるまて見えさりけれはつかはしける",
+   "language": "Japanese",
+   "text": "今そしるくるしき物と人またむさとをはかれすとふへかりけり"
+  },
+  {
+   "id": "ariwara-no-narihira/29",
+   "title": "Kokinshū 970: わすれては (Wasurete wa)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 18, 雑下. 詞書: 惟喬のみこのもとにまかりかよひけるを、かしらおろしてをのといふ所に侍りけるに、正月にとふらはむとてまかりたりけるに、ひえの山のふもとなりけれは雪いとふかかりけり、しひてかのむろにまかりいたりてをかみけるに、つれつれとしていと物かなしくて、かへりまうてきてよみておくりける",
+   "language": "Japanese",
+   "text": "わすれては夢かとそ思ふおもひきや雪ふみわけて君を見むとは"
+  },
+  {
+   "id": "ariwara-no-narihira/30",
+   "title": "Kokinshū 971: 年をへて (Toshi o hete)",
+   "authorSlug": "ariwara-no-narihira",
+   "author": "Ariwara no Narihira",
+   "primarySubject": "Relationships",
+   "subjects": [
+    "Relationships"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 18, 雑下. 詞書: 深草のさとにすみ侍りて、京へまうてくとてそこなりける人によみておくりける",
+   "language": "Japanese",
+   "text": "年をへてすみこしさとをいてていなはいとと深草のとやなりなむ"
   }
  ]
 }

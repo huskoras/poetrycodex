@@ -7,7 +7,8 @@
  "portrait": null,
  "credit": null,
  "bio": [
-  "Poet of the Hyakunin Isshu (no. 12); Porter’s note gives the dates as: d. 890."
+  "Poet of the Hyakunin Isshu (no. 12); Porter’s note gives the dates as: d. 890.",
+  "The Kokinshū poems given here are the Japanese originals, from Wikisource."
  ],
  "order": 63.2505,
  "poems": [
@@ -35,9 +36,205 @@
     "Living"
    ],
    "collection": "小倉百人一首 (Ogura Hyakunin Isshu)",
-   "note": "Classical Japanese; from the 古今集",
+   "note": "Classical Japanese; from the 古今集. Also Kokinshū 872.",
    "language": "Japanese",
    "text": "天つ風 雲のかよひぢ 吹きとぢよ\nをとめの姿 しばし留めむ"
+  },
+  {
+   "id": "henjo/2",
+   "title": "Kokinshū 27: あさみとりいとよりかけてしらつゆを (Asamidori ito yorikakete shiratsuyu o)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春歌上. 詞書: 西大寺のほとりの柳をよめる",
+   "language": "Japanese",
+   "text": "あさみとりいとよりかけてしらつゆをたまにもぬける春の柳か"
+  },
+  {
+   "id": "henjo/3",
+   "title": "Kokinshū 119: よそに見てかへらむ人にふちの花は (Yoso ni mite kaeran hito ni fuji no hana wa)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 2, 春歌下. 詞書: しかよりかへりけるをうなともの花山にいりてふちの花のもとにたちよりてかへりけるに、よみておくりける",
+   "language": "Japanese",
+   "text": "よそに見てかへらむ人にふちの花はひまつはれよえたはをるとも"
+  },
+  {
+   "id": "henjo/4",
+   "title": "Kokinshū 165: はちすはのにこりにしまぬ心もて (Hachisuba no nigori ni shimanu kokoro mote)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 3, 夏歌. 詞書: はちすのつゆを見てよめる",
+   "language": "Japanese",
+   "text": "はちすはのにこりにしまぬ心もてなにかはつゆを玉とあさむく"
+  },
+  {
+   "id": "henjo/5",
+   "title": "Kokinshū 226: 名にめててをれるはかりそをみなへし (Na ni medete oreru bakari zo ominaeshi)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋歌上. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "名にめててをれるはかりそをみなへし我おちにきと人にかたるな"
+  },
+  {
+   "id": "henjo/6",
+   "title": "Kokinshū 248: さとはあれて人はふりにしやとなれや (Sato wa arete hito wa furinishi yado nare ya)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋歌上. 詞書: 仁和のみかとみこにおはしましける時、ふるのたき御覧せむとておはしましけるみちに遍昭かははの家にやとりたまへりける時に、庭を秋ののにつくりておほむ物かたりのついてによみてたてまつりける",
+   "language": "Japanese",
+   "text": "さとはあれて人はふりにしやとなれや庭もまかきも秋ののらなる"
+  },
+  {
+   "id": "henjo/7",
+   "title": "Kokinshū 292: わひ人のわきてたちよるこの本は (Wabibito no wakite tachiyoru konomoto wa)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋歌下. 詞書: うりむゐんの木のかけにたたすみてよみける",
+   "language": "Japanese",
+   "text": "わひ人のわきてたちよるこの本はたのむかけなくもみちちりけり"
+  },
+  {
+   "id": "henjo/8",
+   "title": "Kokinshū 348: ちはやふる神やきりけむつくからに (Chihayaburu kami ya kirikemu tsukukara ni)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 7, 賀歌. 詞書: 仁和のみかとのみこにおはしましける時に、御をはのやそちの賀にしろかねをつゑにつくれりけるを見て、かの御をはにかはりてよみける",
+   "language": "Japanese",
+   "text": "ちはやふる神やきりけむつくからにちとせの坂もこえぬへらなり"
+  },
+  {
+   "id": "henjo/9",
+   "title": "Kokinshū 392: ゆふくれのまかきは山と見えななむ (Yūgure no magaki wa yama to mienanamu)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 8, 離別歌. 詞書: 人の花山にまうてきて、ゆふさりつかたかへりなむとしける時によめる",
+   "language": "Japanese",
+   "text": "ゆふくれのまかきは山と見えななむよるはこえしとやとりとるへく"
+  },
+  {
+   "id": "henjo/10",
+   "title": "Kokinshū 394: 山かせにさくらふきまきみたれなむ (Yamakaze ni sakura fukimaki midarenamu)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 8, 離別歌. 詞書: うりむゐんのみこの舎利会に山にのはりてかへりけるに、さくらの花のもとにてよめる",
+   "language": "Japanese",
+   "text": "山かせにさくらふきまきみたれなむ花のまきれにたちとまるへく"
+  },
+  {
+   "id": "henjo/11",
+   "title": "Kokinshū 435: ちりぬれはのちはあくたになる花を (Chirinureba nochi wa akuta ni naru hana o)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 10, 物名. 詞書: くたに",
+   "language": "Japanese",
+   "text": "ちりぬれはのちはあくたになる花を思ひしらすもまとふてふかな"
+  },
+  {
+   "id": "henjo/12",
+   "title": "Kokinshū 770: わかやとは道もなきまてあれにけり (Waga yado wa michi mo naki made arenikeri)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 15, 恋歌五. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "わかやとは道もなきまてあれにけりつれなき人をまつとせしまに"
+  },
+  {
+   "id": "henjo/13",
+   "title": "Kokinshū 771: 今こむといひてわかれし朝より (Ima kon to iite wakareshi ashita yori)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 15, 恋歌五. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "今こむといひてわかれし朝より思ひくらしのねをのみそなく"
+  },
+  {
+   "id": "henjo/14",
+   "title": "Kokinshū 847: みな人は花の衣になりぬなり (Minahito wa hana no koromo ni narinu nari)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 16, 哀傷歌. 詞書: ふかくさのみかとの御時に蔵人頭にてよるひるなれつかうまつりけるを、諒闇になりにけれは、さらに世にもましらすしてひえの山にのほりてかしらおろしてけり、その又のとしみなひと御ふくぬきて、あるはかうふりたまはりなとよろこひけるをききてよめる",
+   "language": "Japanese",
+   "text": "みな人は花の衣になりぬなりこけのたもとよかわきたにせよ"
+  },
+  {
+   "id": "henjo/15",
+   "title": "Kokinshū 1016: 秋ののになまめきたてるをみなへし (Aki no no ni namameki tateru ominaeshi)",
+   "authorSlug": "henjo",
+   "author": "Henjō",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 19, 雑体. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "秋ののになまめきたてるをみなへしあなかしかまし花もひと時"
   }
  ]
 }

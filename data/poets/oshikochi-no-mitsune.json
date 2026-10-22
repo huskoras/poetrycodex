@@ -35,9 +35,793 @@
     "Nature"
    ],
    "collection": "小倉百人一首 (Ogura Hyakunin Isshu)",
-   "note": "Classical Japanese; from the 古今集",
+   "note": "Classical Japanese; from the 古今集 Also Kokinshū 277.",
    "language": "Japanese",
    "text": "心あてに 折らばや折らむ 初霜の\n置きまどはせる 白菊の花"
+  },
+  {
+   "id": "oshikochi-no-mitsune/2",
+   "title": "Kokinshū 30: 春くれはかりかへるなり白雲の (Haru kureba kari kaeru nari shirakumo no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春上. 詞書: かりのこゑをききてこしへまかりにける人を思ひてよめる",
+   "language": "Japanese",
+   "text": "春くれはかりかへるなり白雲のみちゆきふりにことやつてまし"
+  },
+  {
+   "id": "oshikochi-no-mitsune/3",
+   "title": "Kokinshū 40: 月夜にはそれとも見えす梅花 (Tsukiyo ni wa sore to mo miezu ume no hana)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春上. 詞書: 月夜に梅花ををりてと人のいひけれは、をるとてよめる",
+   "language": "Japanese",
+   "text": "月夜にはそれとも見えす梅花かをたつねてそしるへかりける"
+  },
+  {
+   "id": "oshikochi-no-mitsune/4",
+   "title": "Kokinshū 41: 春の夜のやみはあやなし梅花 (Haru no yo no yami wa ayanashi ume no hana)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春上. 詞書: はるのよ梅花をよめる",
+   "language": "Japanese",
+   "text": "春の夜のやみはあやなし梅花色こそ見えねかやはかくるる"
+  },
+  {
+   "id": "oshikochi-no-mitsune/5",
+   "title": "Kokinshū 67: わかやとの花見かてらにくる人は (Waga yado no hana mikatera ni kuru hito wa)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 1, 春上. 詞書: さくらの花のさけりけるを見にまうてきたりける人によみておくりける",
+   "language": "Japanese",
+   "text": "わかやとの花見かてらにくる人はちりなむのちそこひしかるへき"
+  },
+  {
+   "id": "oshikochi-no-mitsune/6",
+   "title": "Kokinshū 86: 雪とのみふるたにあるをさくら花 (Yuki to nomi furu dani aru o sakurabana)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 2, 春下. 詞書: さくらのちるをよめる",
+   "language": "Japanese",
+   "text": "雪とのみふるたにあるをさくら花いかにちれとか風の吹くらむ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/7",
+   "title": "Kokinshū 104: 花見れは心さへにそうつりける (Hana mireba kokoro sae ni zo utsurikeru)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 2, 春下. 詞書: うつろへる花を見てよめる",
+   "language": "Japanese",
+   "text": "花見れは心さへにそうつりけるいろにはいてし人もこそしれ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/8",
+   "title": "Kokinshū 110: しるしなきねをもなくかなうくひすの (Shirushi naki ne o mo naku ka na uguisu no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 2, 春下. 詞書: 鶯の花の木にてなくをよめる",
+   "language": "Japanese",
+   "text": "しるしなきねをもなくかなうくひすのことしのみちる花ならなくに"
+  },
+  {
+   "id": "oshikochi-no-mitsune/9",
+   "title": "Kokinshū 120: わかやとにさける藤波たちかへり (Waga yado ni sakeru fujinami tachikaeri)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 2, 春下. 詞書: 家にふちの花のさけりけるを、人のたちとまりて見けるをよめる",
+   "language": "Japanese",
+   "text": "わかやとにさける藤波たちかへりすきかてにのみ人の見るらむ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/10",
+   "title": "Kokinshū 127: あつさゆみ春たちしより年月の (Azusayumi haru tachishi yori toshitsuki no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 2, 春下. 詞書: はるのとくすくるをよめる",
+   "language": "Japanese",
+   "text": "あつさゆみ春たちしより年月のいるかことくもおもほゆるかな"
+  },
+  {
+   "id": "oshikochi-no-mitsune/11",
+   "title": "Kokinshū 132: ととむへき物とはなしにはかなくも (Todomubeki mono to wa nashi ni hakanaku mo)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 2, 春下. 詞書: やよひのつこもりの日、花つみよりかへりける女ともを見てよめる",
+   "language": "Japanese",
+   "text": "ととむへき物とはなしにはかなくもちる花ことにたくふこころか"
+  },
+  {
+   "id": "oshikochi-no-mitsune/12",
+   "title": "Kokinshū 134: けふのみと春をおもはぬ時たにも (Kyō nomi to haru o omowanu toki dani mo)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 2, 春下. 詞書: 亭子院の歌合のはるのはてのうた",
+   "language": "Japanese",
+   "text": "けふのみと春をおもはぬ時たにも立つことやすき花のかけかは"
+  },
+  {
+   "id": "oshikochi-no-mitsune/13",
+   "title": "Kokinshū 161: ほとときすこゑもきこえす山ひこは (Hototogisu koe mo kikoezu yamabiko wa)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 3, 夏. 詞書: さふらひにてをのことものさけたうへけるに、めして郭公まつうたよめとありけれはよめる",
+   "language": "Japanese",
+   "text": "ほとときすこゑもきこえす山ひこはほかになくねをこたへやはせぬ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/14",
+   "title": "Kokinshū 164: 郭公我とはなしに卯花の (Hototogisu ware to wa nashi ni u no hana no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 3, 夏. 詞書: 郭公のなきけるをききてよめる",
+   "language": "Japanese",
+   "text": "郭公我とはなしに卯花のうき世中になきわたるらむ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/15",
+   "title": "Kokinshū 167: ちりをたにすゑしとそ思ふさきしより (Chiri o dani sueshi to zo omou saki shi yori)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 3, 夏. 詞書: となりよりとこなつの花をこひにおこせたりけれは、をしみてこのうたをよみてつかはしける",
+   "language": "Japanese",
+   "text": "ちりをたにすゑしとそ思ふさきしよりいもとわかぬるとこ夏のはな"
+  },
+  {
+   "id": "oshikochi-no-mitsune/16",
+   "title": "Kokinshū 168: 夏と秋と行きかふそらのかよひちは (Natsu to aki to yukikau sora no kayoiji wa)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 3, 夏. 詞書: みな月のつこもりの日よめる",
+   "language": "Japanese",
+   "text": "夏と秋と行きかふそらのかよひちはかたへすすしき風やふくらむ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/17",
+   "title": "Kokinshū 179: 年ことにあふとはすれとたなはたの (Toshi goto ni au to wa sure do tanabata no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋上. 詞書: なぬかの日の夜よめる",
+   "language": "Japanese",
+   "text": "年ことにあふとはすれとたなはたのぬるよのかすそすくなかりける"
+  },
+  {
+   "id": "oshikochi-no-mitsune/18",
+   "title": "Kokinshū 180: 織女にかしつる糸の打ちはへて (Tanabata ni kashitsuru ito no uchihaete)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋上. 詞書: なぬかの日の夜よめる",
+   "language": "Japanese",
+   "text": "織女にかしつる糸の打ちはへて年のをなかくこひやわたらむ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/19",
+   "title": "Kokinshū 190: かくはかりをしと思ふ夜をいたつらに (Kaku bakari oshi to omou yo o itazura ni)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋上. 詞書: かむなりのつほに人人あつまりて秋のよをしむ歌よみけるついてによめる",
+   "language": "Japanese",
+   "text": "かくはかりをしと思ふ夜をいたつらにねてあかすらむ人さへそうき"
+  },
+  {
+   "id": "oshikochi-no-mitsune/20",
+   "title": "Kokinshū 213: うき事を思ひつらねてかりかねの (Uki koto o omoi tsuranete karigane no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋上. 詞書: かりのなきけるをききてよめる",
+   "language": "Japanese",
+   "text": "うき事を思ひつらねてかりかねのなきこそわたれ秋のよなよな"
+  },
+  {
+   "id": "oshikochi-no-mitsune/21",
+   "title": "Kokinshū 219: 秋はきのふるえにさける花見れは (Aki hagi no furue ni sakeru hana mireba)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋上. 詞書: むかしあひしりて侍りける人の、秋ののにあひて物かたりしけるついてによめる",
+   "language": "Japanese",
+   "text": "秋はきのふるえにさける花見れは本の心はわすれさりけり"
+  },
+  {
+   "id": "oshikochi-no-mitsune/22",
+   "title": "Kokinshū 233: つまこふるしかそなくなる女郎花 (Tsuma kouru shika zo naku naru ominaeshi)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋上. 詞書: 朱雀院のをみなへしあはせによみてたてまつりける",
+   "language": "Japanese",
+   "text": "つまこふるしかそなくなる女郎花おのかすむのの花としらすや"
+  },
+  {
+   "id": "oshikochi-no-mitsune/23",
+   "title": "Kokinshū 234: 女郎花ふきすきてくる秋風は (Ominaeshi fukisugite kuru akikaze wa)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 4, 秋上. 詞書: 朱雀院のをみなへしあはせによみてたてまつりける",
+   "language": "Japanese",
+   "text": "女郎花ふきすきてくる秋風はめには見えねとかこそしるけれ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/24",
+   "title": "Kokinshū 304: 風ふけはおつるもみちは水きよみ (Kaze fukeba ochiru momijiba mizu kiyomi)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋下. 詞書: 池のほとりにてもみちのちるをよめる",
+   "language": "Japanese",
+   "text": "風ふけはおつるもみちは水きよみちらぬかけさへそこに見えつつ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/25",
+   "title": "Kokinshū 305: 立ちとまり見てをわたらむもみちはは (Tachidomari mite o wataramu momijiba wa)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋下. 詞書: 亭子院の御屏風のゑに、河わたらむとする人のもみちのちる木のもとにむまをひかへてたてるをよませたまひけれは、つかうまつりける",
+   "language": "Japanese",
+   "text": "立ちとまり見てをわたらむもみちはは雨とふるとも水はまさらし"
+  },
+  {
+   "id": "oshikochi-no-mitsune/26",
+   "title": "Kokinshū 313: 道しらはたつねもゆかむもみちはを (Michi shiraba tazune mo yukamu momijiba o)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 5, 秋下. 詞書: おなし（なか月）つこもりの日よめる",
+   "language": "Japanese",
+   "text": "道しらはたつねもゆかむもみちはをぬさとたむけて秋はいにけり"
+  },
+  {
+   "id": "oshikochi-no-mitsune/27",
+   "title": "Kokinshū 329: ゆきふりて人もかよはぬみちなれや (Yuki furite hito mo kayowanu michi nare ya)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 6, 冬. 詞書: 雪のふれるを見てよめる",
+   "language": "Japanese",
+   "text": "ゆきふりて人もかよはぬみちなれやあとはかもなく思ひきゆらむ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/28",
+   "title": "Kokinshū 338: わかまたぬ年はきぬれと冬草の (Waga matanu toshi wa kinure do fuyukusa no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Nature",
+   "subjects": [
+    "Nature"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 6, 冬. 詞書: 物へまかりける人をまちてしはすのつこもりによめる",
+   "language": "Japanese",
+   "text": "わかまたぬ年はきぬれと冬草のかれにし人はおとつれもせす"
+  },
+  {
+   "id": "oshikochi-no-mitsune/29",
+   "title": "Kokinshū 382: かへる山なにそはありてあるかひは (Kaeru yama nani zo wa arite aru kai wa)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 8, 離別. 詞書: あひしれりける人のこしのくににまかりて、としへて京にまうてきて又かへりける時によめる",
+   "language": "Japanese",
+   "text": "かへる山なにそはありてあるかひはきてもとまらぬ名にこそありけれ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/30",
+   "title": "Kokinshū 383: よそにのみこひやわたらむしら山の (Yoso ni nomi koi ya wataramu shirayama no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 8, 離別. 詞書: こしのくにへまかりける人によみてつかはしける",
+   "language": "Japanese",
+   "text": "よそにのみこひやわたらむしら山の雪見るへくもあらぬわか身は"
+  },
+  {
+   "id": "oshikochi-no-mitsune/31",
+   "title": "Kokinshū 399: わかるれとうれしくもあるかこよひより (Wakaruredo ureshiku mo aru ka koyoi yori)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 8, 離別. 詞書: かねみのおほきみにはしめて物かたりして、わかれける時によめる",
+   "language": "Japanese",
+   "text": "わかるれとうれしくもあるかこよひよりあひ見ぬさきになにをこひまし"
+  },
+  {
+   "id": "oshikochi-no-mitsune/32",
+   "title": "Kokinshū 414: きえはつる時しなけれはこしちなる (Kiehatsuru toki shi nakereba koshiji naru)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 9, 羈旅. 詞書: こしのくにへまかりける時しら山を見てよめる",
+   "language": "Japanese",
+   "text": "きえはつる時しなけれはこしちなる白山の名は雪にそありける"
+  },
+  {
+   "id": "oshikochi-no-mitsune/33",
+   "title": "Kokinshū 416: 夜をさむみおくはつ霜をはらひつつ (Yo o samumi oku hatsushimo o harai tsutsu)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 9, 羈旅. 詞書: かひのくにへまかりける時みちにてよめる",
+   "language": "Japanese",
+   "text": "夜をさむみおくはつ霜をはらひつつ草の枕にあまたたひねぬ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/34",
+   "title": "Kokinshū 481: はつかりのはつかにこゑをききしより (Hatsukari no hatsuka ni koe o kikishi yori)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 11, 恋一. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "はつかりのはつかにこゑをききしより中そらにのみ物を思ふかな"
+  },
+  {
+   "id": "oshikochi-no-mitsune/35",
+   "title": "Kokinshū 580: 秋きりのはるる時なき心には (Akigiri no haruru toki naki kokoro ni wa)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "秋きりのはるる時なき心にはたちゐのそらもおもほえなくに"
+  },
+  {
+   "id": "oshikochi-no-mitsune/36",
+   "title": "Kokinshū 584: ひとりして物をおもへは秋のよの (Hitori shite mono o omoeba aki no yo no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "ひとりして物をおもへは秋のよのいなはのそよといふ人のなき"
+  },
+  {
+   "id": "oshikochi-no-mitsune/37",
+   "title": "Kokinshū 600: 夏虫をなにかいひけむ心から (Natsumushi o nani ka iikemu kokoro kara)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "夏虫をなにかいひけむ心から我も思ひにもえぬへらなり"
+  },
+  {
+   "id": "oshikochi-no-mitsune/38",
+   "title": "Kokinshū 608: 君をのみ思ひねにねし夢なれは (Kimi o nomi omoine ni neshi yume nareba)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "君をのみ思ひねにねし夢なれはわか心から見つるなりけり"
+  },
+  {
+   "id": "oshikochi-no-mitsune/39",
+   "title": "Kokinshū 611: わかこひはゆくへもしらすはてもなし (Waga koi wa yukue mo shirazu hate mo nashi)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "わかこひはゆくへもしらすはてもなし逢ふを限と思ふはかりそ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/40",
+   "title": "Kokinshū 612: 我のみそかなしかりけるひこほしも (Ware nomi zo kanashikarikeru hikoboshi mo)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "我のみそかなしかりけるひこほしもあはてすくせる年しなけれは"
+  },
+  {
+   "id": "oshikochi-no-mitsune/41",
+   "title": "Kokinshū 614: たのめつつあはて年ふるいつはりに (Tanometsutsu awade toshi furu itsuwari ni)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 12, 恋二. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "たのめつつあはて年ふるいつはりにこりぬ心を人はしらなむ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/42",
+   "title": "Kokinshū 636: なかしとも思ひそはてぬ昔より (Nagashi to mo omoi zo hatenu mukashi yori)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "なかしとも思ひそはてぬ昔より逢ふ人からの秋のよなれは"
+  },
+  {
+   "id": "oshikochi-no-mitsune/43",
+   "title": "Kokinshū 662: 冬の池にすむにほ鳥のつれもなく (Fuyu no ike ni sumu niodori no tsure mo naku)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "冬の池にすむにほ鳥のつれもなくそこにかよふと人にしらすな"
+  },
+  {
+   "id": "oshikochi-no-mitsune/44",
+   "title": "Kokinshū 663: ささのはにおくはつしもの夜をさむみ (Sasa no ha ni oku hatsushimo no yo o samumi)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 13, 恋三. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "ささのはにおくはつしもの夜をさむみしみはつくとも色にいてめや"
+  },
+  {
+   "id": "oshikochi-no-mitsune/45",
+   "title": "Kokinshū 686: かれはてむのちをはしらて夏草の (Karehatemu nochi o wa shirade natsukusa no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 14, 恋四. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "かれはてむのちをはしらて夏草の深くも人のおもほゆるかな"
+  },
+  {
+   "id": "oshikochi-no-mitsune/46",
+   "title": "Kokinshū 750: わかことく我をおもはむ人もかな (Waga gotoku ware o omowamu hito mo gana)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 15, 恋五. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "わかことく我をおもはむ人もかなさてもやうきと世を心みむ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/47",
+   "title": "Kokinshū 794: 吉野河よしや人こそつらからめ (Yoshinogawa yoshi ya hito koso tsurakarame)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 15, 恋五. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "吉野河よしや人こそつらからめはやくいひてし事はわすれし"
+  },
+  {
+   "id": "oshikochi-no-mitsune/48",
+   "title": "Kokinshū 840: 神な月時雨にぬるるもみちはは (Kannazuki shigure ni nururu momijiba wa)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 16, 哀傷. 詞書: ははかおもひにてよめる",
+   "language": "Japanese",
+   "text": "神な月時雨にぬるるもみちははたたわひ人のたもとなりけり"
+  },
+  {
+   "id": "oshikochi-no-mitsune/49",
+   "title": "Kokinshū 929: 風ふけと所もさらぬ白雲は (Kaze fukedo tokoro mo saranu shirakumo wa)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 17, 雑上. 詞書: おなしたきをよめる",
+   "language": "Japanese",
+   "text": "風ふけと所もさらぬ白雲はよをへておつる水にそ有りける"
+  },
+  {
+   "id": "oshikochi-no-mitsune/50",
+   "title": "Kokinshū 956: 世をすてて山にいる人山にても (Yo o sutete yama ni iru hito yama ni te mo)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 18, 雑下. 詞書: 山のほうしのもとへつかはしける",
+   "language": "Japanese",
+   "text": "世をすてて山にいる人山にても猶うき時はいつちゆくらむ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/51",
+   "title": "Kokinshū 957: 今更になにおひいつらむ竹のこの (Imasara ni nani oiizuramu take no ko no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 18, 雑下. 詞書: 物思ひける時いときなきこを見てよめる",
+   "language": "Japanese",
+   "text": "今更になにおひいつらむ竹のこのうきふししけき世とはしらすや"
+  },
+  {
+   "id": "oshikochi-no-mitsune/52",
+   "title": "Kokinshū 976: 水のおもにおふるさ月のうき草の (Mizu no omo ni ouru satsuki no ukikusa no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 18, 雑下. 詞書: ともたちのひさしうまうてこさりけるもとによみてつかはしける",
+   "language": "Japanese",
+   "text": "水のおもにおふるさ月のうき草のうき事あれやねをたえてこぬ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/53",
+   "title": "Kokinshū 977: 身をすててゆきやしにけむ思ふより (Mi o sutete yuki ya shinikemu omou yori)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 18, 雑下. 詞書: 人をとはてひさしうありけるをりに、あひうらみけれはよめる",
+   "language": "Japanese",
+   "text": "身をすててゆきやしにけむ思ふより外なる物は心なりけり"
+  },
+  {
+   "id": "oshikochi-no-mitsune/54",
+   "title": "Kokinshū 978: 君か思ひ雪とつもらはたのまれす (Kimi ga omoi yuki to tsumoraba)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 18, 雑下. 詞書: むねをかのおほよりかこしよりまうてきたりける時に、雪のふりけるを見ておのかおもひはこのゆきのことくなむつもれるといひけるをりによめる",
+   "language": "Japanese",
+   "text": "君か思ひ雪とつもらはたのまれす春よりのちはあらしとおもへは"
+  },
+  {
+   "id": "oshikochi-no-mitsune/55",
+   "title": "Kokinshū 1015: むつこともまたつきなくにあけぬめり (Mutsugoto mo mada tsukinaku ni akenumeri)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 19, 雑体. 詞書: 題しらす",
+   "language": "Japanese",
+   "text": "むつこともまたつきなくにあけぬめりいつらは秋のなかしてふよは"
+  },
+  {
+   "id": "oshikochi-no-mitsune/56",
+   "title": "Kokinshū 1035: 蝉の羽のひとへにうすき夏衣 (Semi no ha no hitoe ni usuki natsugoromo)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 19, 雑体. 詞書: 誹諧歌：題しらす",
+   "language": "Japanese",
+   "text": "蝉の羽のひとへにうすき夏衣なれはよりなむ物にやはあらぬ"
+  },
+  {
+   "id": "oshikochi-no-mitsune/57",
+   "title": "Kokinshū 1067: わひしらにましらななきそあしひきの (Wabishira ni mashira na nakiso ashihiki no)",
+   "authorSlug": "oshikochi-no-mitsune",
+   "author": "Ōshikōchi no Mitsune",
+   "primarySubject": "Living",
+   "subjects": [
+    "Living"
+   ],
+   "collection": "古今和歌集 (Kokin wakashū)",
+   "note": "Kokinshū book 19, 雑体. 詞書: 誹諧歌：法皇にし河におはしましたりける日、さる山のかひにさけふといふことを題にてよませたまうける",
+   "language": "Japanese",
+   "text": "わひしらにましらななきそあしひきの山のかひあるけふにやはあらぬ"
   }
  ]
 }
