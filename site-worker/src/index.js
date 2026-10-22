@@ -9,13 +9,20 @@
 //   anything missing -> 404.html with status 404
 //   www.poetrycodex.com/... -> 301 to poetrycodex.com/...
 //   /api/...         -> reader accounts (src/accounts.js), from the D1 database
-// Responses are kept in Cloudflare's edge cache for a few minutes, so most visits never reach
-// R2; a publish shows everywhere within CACHE_SECONDS.
+// Responses are kept in Cloudflare's edge cache, so most visits never reach R2; a publish shows
+// everywhere within CACHE_SECONDS (EDGE_PAGE_SECONDS for the poem, poet and work pages).
+//
+// Cost (22 Oct 2026): R2 bills every read (Class B) past 10 million a month, and crawlers
+// reading 100,000+ pages made most of them. So: the edge keeps the static pages a day; a
+// revisit that asks "changed since?" is answered from the edge copy; misses (404) are kept
+// an hour; query strings do not split the cache; SEO-tool scrapers are refused before R2.
 
 import { handleApi } from "./accounts.js";
 
 const CACHE_SECONDS = 300;          // HTML and data: a new publish is live within 5 minutes
 const ASSET_SECONDS = 86400;        // images, fonts, and app.js / styles.css asked for without ?v=
+const EDGE_PAGE_SECONDS = 86400;    // poem/, poet/, work/ ... pages at the edge (browsers still get CACHE_SECONDS)
+const NOT_FOUND_SECONDS = 3600;     // a 404 at the edge, so probes for missing files do not read R2 again
 const VERSIONED_SECONDS = 31536000; // app.js?v=N / styles.css?v=N: a year, immutable (index.html bumps N on
                                     // every edit, and scripts/publish.sh refuses a publish that forgets to)
 const TYPES = {
@@ -25,6 +32,10 @@ const TYPES = {
   webp: "image/webp", gif: "image/gif", svg: "image/svg+xml", ico: "image/x-icon", pdf: "application/pdf",
   woff2: "font/woff2",
 };
+
+// Crawlers of SEO tools and bulk scrapers: no use to readers or search, many thousands of reads.
+const REFUSED_BOTS = /AhrefsBot|SemrushBot|MJ12bot|DotBot|PetalBot|DataForSeoBot|BLEXBot|MegaIndex|serpstatbot|Barkrowler|Bytespider|ImagesiftBot|SeekportBot|Seekport|ZoominfoBot|Timpibot|omgili|Scrapy|python-requests|Go-http-client|AwarioBot|magpie-crawler/i;
+const PAGE_DIRS = /^\/(poem|poet|work|guide|blog|eras|poets|privacy|terms)\//;
 
 function keyFor(pathname) {
   let p;
@@ -46,8 +57,11 @@ function headersFor(key, object, url) {
   if (object.uploaded) h.set("last-modified", object.uploaded.toUTCString());
   const versioned = /^(app\.js|styles\.css)$/.test(key) && url && url.searchParams.has("v");
   const long = /\.(png|jpe?g|webp|gif|svg|ico|woff2)$/i.test(key) || /^(app\.js|styles\.css)$/.test(key);
+  const page = url && PAGE_DIRS.test(url.pathname);
   h.set("cache-control", versioned ? `public, max-age=${VERSIONED_SECONDS}, immutable`
-    : `public, max-age=${long ? ASSET_SECONDS : CACHE_SECONDS}`);
+    : long ? `public, max-age=${ASSET_SECONDS}`
+    : page ? `public, max-age=${CACHE_SECONDS}, s-maxage=${EDGE_PAGE_SECONDS}`
+    : `public, max-age=${CACHE_SECONDS}`);
   h.set("x-content-type-options", "nosniff");
   return h;
 }
@@ -85,13 +99,31 @@ export default {
     if (request.method !== "GET" && request.method !== "HEAD") {
       return new Response("Method not allowed", { status: 405, headers: { allow: "GET, HEAD" } });
     }
+    if (REFUSED_BOTS.test(request.headers.get("user-agent") || "")) {
+      return new Response("Forbidden", { status: 403, headers: { "cache-control": "no-store" } });
+    }
     const cache = caches.default;
-    const cacheKey = new Request(url.toString(), { method: "GET" });
-    // A conditional request goes past the edge cache to R2, whose onlyIf can answer 304 (the
-    // cached copy is kept without the request's headers and would always answer 200 in full).
-    if (request.method === "GET" && !request.headers.get("if-none-match") && !request.headers.get("if-modified-since")) {
-      const hit = await cache.match(cacheKey);
-      if (hit) return hit;
+    // The query string does not choose the file (only ?v= on app.js / styles.css matters), so
+    // ?utm_... and the like must not make a fresh edge copy and a fresh R2 read.
+    const ckUrl = new URL(url.toString());
+    const v = ckUrl.searchParams.get("v");
+    ckUrl.search = v && /^\/(app\.js|styles\.css)$/.test(ckUrl.pathname) ? `?v=${encodeURIComponent(v)}` : "";
+    const cacheKey = new Request(ckUrl.toString(), { method: "GET" });
+    const hit = await cache.match(cacheKey);
+    if (hit) {
+      // A revisit asking "changed since?" (crawlers mostly) is answered from the edge copy:
+      // 304 when the copy is no newer than the reader's, else the copy in full.
+      const ims = Date.parse(request.headers.get("if-modified-since") || "");
+      const lm = Date.parse(hit.headers.get("last-modified") || "");
+      const inm = request.headers.get("if-none-match");
+      const et = hit.headers.get("etag");
+      if ((inm && et && inm === et) || (!inm && ims && lm && lm <= ims)) {
+        return new Response(null, { status: 304, headers: hit.headers });
+      }
+      if (hit.status === 404 || request.method === "HEAD") {
+        return new Response(request.method === "HEAD" ? null : hit.body, { status: hit.status, headers: hit.headers });
+      }
+      return hit;
     }
     const key = keyFor(url.pathname);
     let res = key ? await serve(env, key, request, url) : null;
@@ -105,12 +137,16 @@ export default {
     }
     if (!res) {
       const nf = await env.SITE.get("404.html");
-      res = nf
-        ? new Response(request.method === "HEAD" ? null : nf.body, { status: 404, headers: headersFor("404.html", nf, url) })
-        : new Response("Not found", { status: 404 });
-      return res;
+      const h = nf ? headersFor("404.html", nf, url) : new Headers({ "content-type": "text/plain; charset=utf-8" });
+      h.set("cache-control", `public, max-age=${CACHE_SECONDS}, s-maxage=${NOT_FOUND_SECONDS}`);
+      h.delete("last-modified");
+      res = new Response(nf ? nf.body : "Not found", { status: 404, headers: h });
+      if (request.method === "GET") ctx.waitUntil(cache.put(cacheKey, res.clone()));
+      return request.method === "HEAD" ? new Response(null, { status: 404, headers: h }) : res;
     }
     if (request.method === "GET" && res.status === 200) ctx.waitUntil(cache.put(cacheKey, res.clone()));
+    // A conditional miss or a HEAD answered by R2 (304, or no body) is not kept; the next plain
+    // GET fills the edge copy.
     return res;
   },
 };
