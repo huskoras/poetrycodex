@@ -24,14 +24,24 @@ import os
 import shutil
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from build_index import poem_form  # noqa: E402  (the "Sonnet" in a poem page's label)
+
 SHARD = 50                       # poems per shard; app.js uses the same number (POEM_SHARD)
-STUB = ("slug", "name", "dates", "era", "category", "portrait", "credit", "order")
+STUB = ("slug", "name", "dates", "era", "category", "portrait", "credit", "order", "language")
 
 
 def dump(path, obj):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with io.open(path, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(obj, fh, ensure_ascii=False, separators=(",", ":"))
+
+
+def with_form(p):
+    """The poem with its form ("Sonnet", as build_index.py gives it), so a poem page drawn from
+    its shard has the form in its label without the archive index."""
+    f = poem_form(p.get("title") or "", p.get("text") or "", p.get("collection")) if not p.get("dupOf") else None
+    return dict(p, form=f) if f else p
 
 
 def main():
@@ -57,7 +67,7 @@ def main():
             rec = {"poet": stub, "total": len(poems), "start": a,
                    "before": poems[pv]["title"] if pv is not None else None,
                    "after": poems[nx]["title"] if nx is not None else None,
-                   "poems": poems[a:b]}
+                   "poems": [with_form(p) for p in poems[a:b]]}
             if pv is not None and pv != a - 1:
                 rec["beforeAt"] = pv
             if nx is not None and nx != b:

@@ -168,6 +168,8 @@ def build():
             "poemCount": len(poet_poems),
             "workCount": work_count_by_slug.get(slug, 0),
         })
+        if poet.get("language"):
+            index_poets[-1]["language"] = poet["language"]
         for pm in poet_poems:
             # Slim entries (C2): the poet's slug is the first half of the id and the author is
             # the poet's name (verify_split.py checks both), so neither is repeated 14,000 times;
@@ -191,6 +193,12 @@ def build():
             form = poem_form(pm["title"], pm["text"], pm.get("collection"))
             if form:
                 entry["form"] = form
+            # The language the text is written in (AGENTS.md rule 3d: "French", "Classical
+            # Chinese"), on the poem or, for all of a poet's poems, on the poet file. app.js and
+            # build_pages.py give the text lang="…" (and dir="auto" for Arabic, Persian, Hebrew).
+            lang = pm.get("language") or poet.get("language")
+            if lang:
+                entry["language"] = lang
             index_poems.append(entry)
             subject_tally[pm["primarySubject"]] = subject_tally.get(pm["primarySubject"], 0) + 1
 

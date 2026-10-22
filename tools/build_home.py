@@ -34,11 +34,16 @@ import io
 import json
 import os
 import re
+import sys
 import time
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from textlang import lang_code  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 DAYS = 400                      # how far ahead the poem of the day is written out
+BACK = 30                       # and how far back (TODAY_BACK in app.js)
 STRIDE = 7919                   # the prime in poemOfTheDay() (app.js)
 EPIC = re.compile(r"\b(epic|heroic (?:poems?|lays?))\b", re.I | re.A)   # isEpicWork() in app.js
 
@@ -70,17 +75,22 @@ def main():
     if not pool:
         pool = [p for p in idx["poems"] if fits(p)]
 
-    start = int(time.time() // 86400)
+    # From BACK days ago (the "Earlier poems of the day" on #/today, TODAY_BACK in app.js), so
+    # that page needs no index either.
+    start = int(time.time() // 86400) - BACK
     potd = []
     if pool:
-        for day in range(start, start + DAYS):
+        for day in range(start, start + BACK + DAYS):
             p = pool[(day * STRIDE) % len(pool)]
             slug = p.get("authorSlug") or p["id"][: p["id"].rindex("/")]
             poet = poets.get(slug) or {}
             translator = p.get("translator") or ""
-            tr = poet.get("category") == "Turkish & Ottoman" and not translator.strip()
+            # lang: as langAttr in app.js (a translation is English; else the poem's or poet's
+            # `language`, or Turkish for a Turkish & Ottoman poem)
+            lang = "" if translator.strip() else (lang_code(p.get("language") or poet.get("language"))
+                                                  or ("tr" if poet.get("category") == "Turkish & Ottoman" else ""))
             potd.append([p["id"], p["title"], p.get("author") or poet.get("name") or "",
-                         translator, p["excerpt"], "tr" if tr else ""])
+                         translator, p["excerpt"], lang])
 
     home = {
         "count": idx["count"],

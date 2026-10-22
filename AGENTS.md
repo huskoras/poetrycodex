@@ -44,6 +44,20 @@ sections (cantos/books/fitts).
   page's header load only this; everything else (and the Oracle) still loads `data/index.json`,
   which is no longer fetched on the home page (it loads on the first hover/tap of a list link
   or the search box). Generated: never hand-edit; commit it with `data/index.json`.
+- **Scale phase 1 (22 Oct 2026, `work/scale/design.md`): the app never fetches `data/index.json`.**
+  Its "index" (`DATA`) is now `index-core.json`. Lists, search, a poet's poems, Surprise me and
+  "Read next" read small derived files written by `tools/build_lists.py` (after build_index):
+  `data/l/<list>/_.json` + content-named pages (`all`, `s-<subject>`, `f-<form>`,
+  `sf-<subject>-<form>`, `c-<category>`), `data/l/p/<poet>.json` (bio, credit, titles),
+  `data/l/t/<translator>.json`, `data/l/counts.json`, and the search index `data/s/`
+  (manifest, word files `t/k<key>.json`, doc blocks `d/<k>.json`). Like the shards they are NOT
+  in git (`.gitignore`): `sync_r2.py` builds them on the copy it uploads; run
+  `python tools/build_lists.py` yourself to test locally (`--check-js` checks app.js splits
+  words exactly as `tools/textlang.py` does: keep the two tokenisers in step). The poem of the day
+  comes only from `home.json` (30 days back, 400 ahead). `index.json` and `search.json` are still
+  built and published for the Oracle Worker. A poem or poet may carry `"language"` (rule 3d);
+  it becomes `lang="…"` (and `dir="auto"` for right-to-left scripts) via `LANG_CODES` in app.js
+  and tools/textlang.py; static pages get it only for poems with that field.
 - `fonts/` — the site's own typefaces (since 21 Oct 2026, speed batch 3; woff2 + OFL licences; no
   Google Fonts request anywhere). `poets/<slug>-320.webp` / `-640.webp` beside each portrait JPEG:
   after adding or shrinking portraits run `python tools/make_webp.py` (until then the JPEG is used).

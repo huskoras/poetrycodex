@@ -3,6 +3,7 @@
 //
 //   pages (HTML)             network first; the kept copy if the network is slow (3 s) or down
 //   app.js, styles.css (?v=) kept until the ?v= number changes (index.html bumps it)
+//   data/l/, data/s/         not touched (lists and the search index: many small files)
 //   data/*.json, images      the kept copy at once, refreshed in the background
 //                            (stale-while-revalidate): the 32 MB index comes from the
 //                            reader's own disk, and the next visit has the newer one
@@ -70,6 +71,11 @@ self.addEventListener("fetch", (e) => {
     e.respondWith(caches.match(req).then((hit) => hit || fromNetwork(req)));
     return;
   }
+  // The list pages and the search index (data/l/, data/s/; tools/build_lists.py) are many small
+  // files, renamed on every publish (a list's _.json and the search manifest name the current
+  // ones): the browser's own cache is enough, and a kept copy of a list could name pages that
+  // are gone. Left to the network.
+  if (/^\/data\/(l|s)\//.test(url.pathname)) return;
   if (/^\/(data|poets)\//.test(url.pathname) || /\.(webp|png|jpg|ico|json)$/.test(url.pathname)) {
     e.respondWith(staleWhileRevalidate(req));
   }

@@ -21,8 +21,9 @@
   // 60,000 elements, slow on a cheap phone. "Show more" adds the next PAGE.
   const PAGE = 60;
   let shown = PAGE;
-  let SORTED = null;         // every poem, by title (built on first use: sortedPoems())
-  let POEM_BY_ID = new Map(); // poem id -> index entry (built once the index arrives)
+  // poem id -> what the app has seen of it (an entry of a list page, a poet's page file or a
+  // shard): title, poet, subject, form, first line. There is no list of every poem any more.
+  let POEM_BY_ID = new Map();
   const COLLATE = new Intl.Collator("en");
   let POETS = {};      // slug -> poet (index-level: metadata + counts, no full poems)
   let WORKS = {};      // slug -> work (index-level: metadata + section titles/stanzas, no text)
@@ -419,7 +420,7 @@
   }
   // The language of the text on the page: Turkish originals "tr", the Old English originals
   // ("The Wanderer (Old English)", untranslated) "ang", everything else English.
-  const citeLang = (slug, translator, title) => langAttr(slug, translator) ? "tr"
+  const citeLang = (slug, translator, title) => isTurkishText(slug, translator) ? "tr"
     : !String(translator || "").trim() && (POETS[slug] || {}).category === "Anglo-Saxon"
       && /\(Old English\)\s*$/.test(title || "") ? "ang" : "en";
   function metaCitation(o) {
@@ -1599,7 +1600,7 @@
     let dict = "en";
     if (own && (cat === "Anglo-Saxon" || (!cat && /[æðÆÐ]/.test(sample)))) dict = "ang";
     else if (own && (cat === "Medieval" || (!cat && looksArchaic(sample)))) dict = "enm";
-    else if (langAttr(authorSlug, translator) || (own && !cat && /[ğışĞİŞ]/.test(sample))) dict = "tr";
+    else if (isTurkishText(authorSlug, translator) || (own && !cat && /[ğışĞİŞ]/.test(sample))) dict = "tr";
     SEL_CTX = { cite, dict, text, translator };   // the text: "Learn by heart" on a selected passage
   }
   const lookupDict = () => (SEL_CTX && SEL_CTX.dict) || "en";
@@ -3473,11 +3474,66 @@
     if (next) next.focus();
   });
 
-  // Turkish & Ottoman poems with no translator are in Turkish (screen readers, hyphenation);
-  // the page around them stays English. Same rule as text_lang in tools/build_pages.py.
-  const langAttr = (authorSlug, translator) =>
-    POETS[authorSlug] && POETS[authorSlug].category === "Turkish & Ottoman" && !String(translator || "").trim()
-      ? ' lang="tr"' : "";
+  // The language of a text (screen readers, hyphenation, the right font); the page around it
+  // stays English. A translation is English. An original with a `language` on the poem or on
+  // its poet (AGENTS.md rule 3d: "French", "Classical Chinese") is in that language; Turkish &
+  // Ottoman poems with no translator are in Turkish. A right-to-left language (Arabic, Persian,
+  // Hebrew…), or a text with letters of those scripts, also gets dir="auto": the browser then
+  // runs each block from its first letter. Same rules as text_lang / lang_attrs in
+  // tools/build_pages.py and LANG_CODES in tools/textlang.py.
+  const LANG_CODES = {
+    "english": "en", "old english": "ang", "anglo-saxon": "ang", "middle english": "enm", "scots": "sco",
+    "middle scots": "sco", "latin": "la", "medieval latin": "la", "neo-latin": "la", "greek": "el",
+    "modern greek": "el", "ancient greek": "grc", "classical greek": "grc", "homeric greek": "grc",
+    "byzantine greek": "grc", "french": "fr", "old french": "fro", "middle french": "frm", "occitan": "oc",
+    "provençal": "oc", "provencal": "oc", "old occitan": "pro", "german": "de", "middle high german": "gmh",
+    "old high german": "goh", "low german": "nds", "old norse": "non", "icelandic": "is", "danish": "da",
+    "swedish": "sv", "norwegian": "no", "faroese": "fo", "dutch": "nl", "middle dutch": "dum", "flemish": "nl",
+    "frisian": "fy", "afrikaans": "af", "italian": "it", "sicilian": "scn", "spanish": "es", "castilian": "es",
+    "old spanish": "osp", "portuguese": "pt", "galician": "gl", "galician-portuguese": "roa", "catalan": "ca",
+    "romanian": "ro", "russian": "ru", "ukrainian": "uk", "belarusian": "be", "polish": "pl", "czech": "cs",
+    "slovak": "sk", "serbian": "sr", "croatian": "hr", "serbo-croatian": "sh", "bosnian": "bs", "slovene": "sl",
+    "slovenian": "sl", "bulgarian": "bg", "macedonian": "mk", "old church slavonic": "cu",
+    "church slavonic": "cu", "hungarian": "hu", "finnish": "fi", "estonian": "et", "latvian": "lv",
+    "lithuanian": "lt", "welsh": "cy", "middle welsh": "wlm", "irish": "ga", "old irish": "sga",
+    "scottish gaelic": "gd", "gaelic": "gd", "breton": "br", "cornish": "kw", "manx": "gv", "turkish": "tr",
+    "ottoman turkish": "ota", "ottoman": "ota", "azerbaijani": "az", "chagatai": "chg", "arabic": "ar",
+    "classical arabic": "ar", "persian": "fa", "classical persian": "fa", "farsi": "fa", "urdu": "ur",
+    "pashto": "ps", "kurdish": "ku", "hebrew": "he", "biblical hebrew": "hbo", "medieval hebrew": "he",
+    "yiddish": "yi", "ladino": "lad", "aramaic": "arc", "syriac": "syr", "sanskrit": "sa", "prakrit": "pra",
+    "pali": "pi", "hindi": "hi", "braj": "bra", "awadhi": "awa", "bengali": "bn", "punjabi": "pa",
+    "marathi": "mr", "gujarati": "gu", "tamil": "ta", "telugu": "te", "kannada": "kn", "malayalam": "ml",
+    "chinese": "zh", "classical chinese": "lzh", "literary chinese": "lzh", "mandarin": "zh",
+    "japanese": "ja", "classical japanese": "ja", "korean": "ko", "vietnamese": "vi", "tibetan": "bo",
+    "mongolian": "mn", "thai": "th", "lao": "lo", "khmer": "km", "burmese": "my", "malay": "ms",
+    "javanese": "jv", "armenian": "hy", "classical armenian": "xcl", "georgian": "ka", "akkadian": "akk",
+    "sumerian": "sux", "egyptian": "egy", "coptic": "cop", "ge'ez": "gez", "amharic": "am", "swahili": "sw",
+    "esperanto": "eo", "basque": "eu", "albanian": "sq", "maltese": "mt", "nahuatl": "nah", "quechua": "qu",
+    "hawaiian": "haw", "maori": "mi", "māori": "mi",
+  };
+  const RTL_LANGS = new Set(["ar", "fa", "ur", "ps", "ku", "he", "hbo", "yi", "lad", "arc", "syr", "ota", "chg"]);
+  const RTL_RE = /[\u0590-\u08ff\ufb1d-\ufdff\ufe70-\ufefc]/;
+  function langCode(language) {
+    const v = String(language || "").trim();
+    if (!v) return "";
+    if (/^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$/.test(v)) return v;
+    return LANG_CODES[v.toLowerCase()] || "";
+  }
+  // The language code of a text ("" for English).
+  function langOf(authorSlug, translator, language) {
+    if (String(translator || "").trim()) return "";
+    const poet = POETS[authorSlug];
+    const own = langCode(language || (poet && poet.language));
+    if (own) return own === "en" ? "" : own;
+    return poet && poet.category === "Turkish & Ottoman" ? "tr" : "";
+  }
+  const dirAuto = (lang, text) => (RTL_LANGS.has(String(lang || "").split("-")[0]) || RTL_RE.test(text || "")) ? ' dir="auto"' : "";
+  // ' lang="…"' (and dir="auto") for a title, card or line: text is what will be shown.
+  const langAttr = (authorSlug, translator, language, text) => {
+    const l = langOf(authorSlug, translator, language);
+    return (l ? ` lang="${l}"` : "") + dirAuto(l, text);
+  };
+  const isTurkishText = (authorSlug, translator) => langOf(authorSlug, translator) === "tr";
   // The language of a text itself (its titles stay with langAttr): screen readers then read
   // Old English, Chaucer or the Latin Dies irae in the right voice. Only an untranslated text
   // can be other than English: Turkish as above; Old English (an Anglo-Saxon or Medieval text
@@ -3489,8 +3545,9 @@
   const SCOTS = new Set(["barbour", "blind-hary", "henryson", "douglas_g", "lancelot-of-the-laik"]);
   const CAT_LANG = { German: "de", French: "fr", Italian: "it" };
   // id: a poem's id, or "work:<slug>" for a book of a long work.
-  function textLang(authorSlug, translator, text, id) {
-    if (langAttr(authorSlug, translator)) return "tr";
+  function textLang(authorSlug, translator, text, id, language) {
+    const own = langOf(authorSlug, translator, language);
+    if (own) return own;
     if (String(translator || "").trim()) return "";
     if (TEXT_LANG_IDS[id]) return TEXT_LANG_IDS[id];
     // A page drawn before the index is in knows no category: the text alone then decides.
@@ -3504,9 +3561,9 @@
     if (cat === "Ancient Greek & Roman") return /[Ͱ-Ͽἀ-῿]/.test(sample) ? "grc" : "";
     return CAT_LANG[cat] || "";
   }
-  const textLangAttr = (authorSlug, translator, text, id) => {
-    const l = textLang(authorSlug, translator, text, id);
-    return l ? ` lang="${l}"` : "";
+  const textLangAttr = (authorSlug, translator, text, id, language) => {
+    const l = textLang(authorSlug, translator, text, id, language);
+    return (l ? ` lang="${l}"` : "") + dirAuto(l, String(text || "").slice(0, 2000));
   };
 
   // ---------- poem text ----------
@@ -5277,29 +5334,20 @@
   function loadIndex() {
     if (INDEX_STARTED) return;
     INDEX_STARTED = true;
-    fetch("data/index.json", { priority: "low" })   // after the home file and any shard
+    // The core index (data/index-core.json, ~400 KB compressed): counts, subjects, every
+    // poet and every work, no poems. Since the scale work (Oct 2026) the app never fetches the
+    // full data/index.json: lists, search, a poet's poems, the poem of the day and "Surprise
+    // me" read their own small files (tools/build_lists.py). DATA is this core.
+    fetch("data/index-core.json", { priority: "low" })   // after the home file and any shard
       .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then((d) => {
+        if (!d || !Array.isArray(d.poets) || !Array.isArray(d.works) || typeof d.count !== "number") throw new Error("bad index");
         DATA = d;
+        CORE = d;
         d.poets.forEach((p) => { POETS[p.slug] = p; });
         (d.works || []).forEach((w) => { WORKS[w.slug] = w; });
-        CATEGORY_STATS = categoryStats(d.poets);   // afresh: the core may have counted them already
-        POET_LIST = null;                          // built again from the full records
-        // Since C2 the index leaves out what it can derive: the poet's slug (the first half of
-        // the id), the author (the poet's name), subjects when only the primary one, and empty
-        // collection / translator. Filled back in here, so the rest of the app is unchanged; an
-        // older index that still has them all works the same.
-        d.poems.forEach((p) => {
-          if (!p.authorSlug) p.authorSlug = p.id.slice(0, p.id.lastIndexOf("/"));
-          if (!p.author) p.author = (POETS[p.authorSlug] || {}).name || "";
-          if (!p.subjects) p.subjects = [p.primarySubject];
-          if (p.collection === undefined) p.collection = null;
-        });
-        // The title sort key; the title-sorted list itself is built only when a list needs it
-        // (sortedPoems()), so loading the index does not hold the page up for the sort.
-        d.poems.forEach((p) => { p._sk = sortKey(p.title); });
-        SORTED = null;
-        POEM_BY_ID = new Map(d.poems.map((p) => [p.id, p]));
+        CATEGORY_STATS = categoryStats(d.poets);
+        POET_LIST = null;
         const fc = document.getElementById("foot-count"); if (fc) fc.textContent = num(d.count);
         wireSearch();
         // A home page already drawn from home.json stays as it is, and where the reader has
@@ -5358,29 +5406,335 @@
     if (h.startsWith("#/about")) return "about";
     return "";
   }
-  function loadCore() {
-    if (CORE_STARTED || DATA) return;
-    CORE_STARTED = true;
-    fetch("data/index-core.json")
-      .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then((d) => {
-        if (DATA) return;                       // the full index came first: nothing to do
-        if (!d || !Array.isArray(d.poets) || !Array.isArray(d.works) || typeof d.count !== "number") throw new Error("bad core");
-        CORE = d;
-        d.poets.forEach((p) => { POETS[p.slug] = p; });
-        d.works.forEach((w) => { WORKS[w.slug] = w; });
-        CATEGORY_STATS = categoryStats(d.poets);
-        const fc = document.getElementById("foot-count");
-        if (fc && !fc.textContent) fc.textContent = num(d.count);
-        if (coreKind(location.hash || "")) route();
-      })
-      .catch(() => {
-        CORE_FAILED = true;
-        if (!DATA && coreKind(location.hash || "")) loadIndex();   // the page already says "Opening the archive…"
-      });
-  }
+  // The core and the index are now one file (loadIndex).
+  function loadCore() { loadIndex(); }
   // The index a page drawn from the core reads: the full one once it is in.
   const coreData = () => DATA || CORE;
+  // ---------- lists and search without the archive index (tools/build_lists.py) ----------
+  // data/index.json grows with every poem (40 MB at 116,000), so no reader page fetches it
+  // any more (the Oracle engine on the Worker still reads it). A list page reads the pages of
+  // its list it shows: data/l/<list>/_.json names the pages ([file, poems on it]) and each page
+  // (about 450 poems, ~35 KB compressed) holds their index entries. The lists: "all" (by
+  // title), "s-<subject>", "f-<form>", "sf-<subject>-<form>", "c-<category>". A poet's page
+  // reads data/l/p/<poet>.json (bio, credit and the poem titles), a translator's page
+  // data/l/t/<slug>.json. Page files are named by their content, so they never change; a page
+  // that has gone (a publish since the list was read) makes the list be read again, once.
+  const LIST_META = new Map(), LIST_PAGES = new Map();
+  const catKey = (c) => "c-" + String(c || "").normalize("NFKD").replace(/[^\x00-\x7f]/g, "").toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  const bust = (url, fresh) => fresh ? url + (url.includes("?") ? "&" : "?") + "r=" + Date.now() : url;
+  function getJSON(url) {
+    return fetch(url).then((r) => {
+      if (r.status === 404) { const e = new Error("404"); e.missing = true; throw e; }
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    });
+  }
+  // An entry as the rest of the app knows it: the poet's slug and name, subjects, collection.
+  function fillEntry(e) {
+    if (!e.authorSlug) e.authorSlug = e.id.slice(0, e.id.lastIndexOf("/"));
+    if (!e.author) e.author = (POETS[e.authorSlug] || {}).name || "";
+    if (!e.subjects) e.subjects = [e.primarySubject];
+    if (e.collection === undefined) e.collection = null;
+    const had = POEM_BY_ID.get(e.id);
+    if (!had || (e.excerpt && !had.excerpt)) POEM_BY_ID.set(e.id, e);
+    return e;
+  }
+  // {n, pages: [{f, n, at}], items?, start?}; a list that does not exist is an empty list.
+  function listMeta(name, fresh) {
+    if (fresh || !LIST_META.has(name)) {
+      const p = getJSON(bust(`data/l/${name}/_.json`, fresh)).then((m) => {
+        let at = 0;
+        m.pages = (m.p || []).map(([f, n]) => { const pg = { f, n, at }; at += n; return pg; });
+        if (m.items) m.items = m.items.map(fillEntry);
+        if (m.start) m.start = m.start.map(fillEntry);
+        return m;
+      }, (e) => { if (e.missing) return { n: 0, pages: [], items: [] }; throw e; });
+      LIST_META.set(name, p);
+      p.catch(() => { if (LIST_META.get(name) === p) LIST_META.delete(name); });
+    }
+    return LIST_META.get(name);
+  }
+  function listPage(name, m, k) {
+    const pg = m.pages[k], key = name + "/" + pg.f;
+    if (!LIST_PAGES.has(key)) {
+      const p = getJSON(`data/l/${name}/${pg.f}.json`).then((a) => a.map(fillEntry));
+      LIST_PAGES.set(key, p);
+      p.catch(() => LIST_PAGES.delete(key));
+    }
+    return LIST_PAGES.get(key);
+  }
+  // Entries from .. to - 1 of a list (fewer at its end).
+  async function listSlice(name, from, to, again) {
+    const m = await listMeta(name, again);
+    if (m.items) return m.items.slice(from, to);
+    const ks = [];
+    m.pages.forEach((pg, k) => { if (pg.at < to && pg.at + pg.n > from) ks.push(k); });
+    try {
+      const got = await Promise.all(ks.map((k) => listPage(name, m, k)));
+      const out = [];
+      got.forEach((a, j) => { const at = m.pages[ks[j]].at; a.forEach((e, i) => { if (at + i >= from && at + i < to) out.push(e); }); });
+      return out;
+    } catch (e) {
+      if (e.missing && !again) return listSlice(name, from, to, true);   // published since: read the list again
+      throw e;
+    }
+  }
+  // A list as {n, get(from, to)} for the "Show more" button.
+  async function listSource(name) {
+    const m = await listMeta(name);
+    return { n: m.n, meta: m, get: (a, b) => listSlice(name, a, b) };
+  }
+  // The name of the #/poems list for the subject and form chosen.
+  function poemsListName() {
+    const s = filterSubject !== "All" ? subjectKey(filterSubject) : "", f = filterForm !== "All" ? filterForm : "";
+    return s && f ? `sf-${s}-${f}` : s ? "s-" + s : f ? "f-" + f : "all";
+  }
+  // data/l/counts.json: the forms with their counts (the Form chips).
+  let LIST_COUNTS = null;
+  function listCounts() {
+    return LIST_COUNTS || (LIST_COUNTS = getJSON("data/l/counts.json").catch(() => { LIST_COUNTS = null; return { forms: [], sf: {} }; }));
+  }
+  // A poet's page file: {bio, credit, poems: [slim entries, with "first" (the first line)]}.
+  const POET_LISTS = new Map(), POET_LIST_DONE = new Map();
+  function loadPoetList(slug) {
+    if (!POET_LISTS.has(slug)) {
+      const p = getJSON(`data/l/p/${encodeURIComponent(slug)}.json`).then((d) => {
+        d.poems = (d.poems || []).map(fillEntry);
+        POET_LIST_DONE.set(slug, d);
+        return d;
+      });
+      POET_LISTS.set(slug, p);
+      p.catch(() => POET_LISTS.delete(slug));
+    }
+    return POET_LISTS.get(slug);
+  }
+  // What the archive knows of these poems (title, poet, first line), for reading lists: one
+  // poet file a poet.
+  const POET_TRIED = new Set();   // poets whose file was asked for (found or not)
+  const poemInfoMissing = (ids) => ids.filter((id) => !/^work:/.test(id) && !POEM_BY_ID.has(id) && !POET_TRIED.has(id.split("/")[0]));
+  function ensurePoemInfo(ids) {
+    const slugs = [...new Set(poemInfoMissing(ids).map((id) => id.split("/")[0]))];
+    slugs.forEach((s) => POET_TRIED.add(s));
+    return Promise.all(slugs.map((s) => loadPoetList(s).catch(() => null)));
+  }
+  // A translator's poems (data/l/t/<slug>.json) and how many each has (t/_counts.json).
+  const TR_LISTS = new Map();
+  let TR_COUNTS = null;
+  function loadTrList(slug) {
+    if (!TR_LISTS.has(slug)) {
+      const p = getJSON(`data/l/t/${encodeURIComponent(slug)}.json`).then((a) => a.map(fillEntry), (e) => { if (e.missing) return []; throw e; });
+      TR_LISTS.set(slug, p);
+      p.catch(() => TR_LISTS.delete(slug));
+    }
+    return TR_LISTS.get(slug);
+  }
+  function loadTrCounts() {
+    return TR_COUNTS || (TR_COUNTS = getJSON("data/l/t/_counts.json").catch(() => { TR_COUNTS = null; return {}; }));
+  }
+
+  // ----- the search index: data/s/ -----
+  // Every poem is filed under the words of its title, of its poet's and translator's names, and
+  // of its opening lines (and book), in tools/build_lists.py. Each poem has a fixed number from
+  // its id (32 bits), so a publish rewrites only the files of the words it touched (R2 bills
+  // every file written). data/s/manifest.json names the word files (keys) and how many bits of
+  // the number pick a document block. A word file data/s/t/k<key>.json holds, for each word,
+  // the poems it is in, field by field (see sxSearch), as base-36 gaps between their numbers
+  // ("" none, 0 too common to be indexed there); data/s/d/<k>.json gives the id, title and poet
+  // of the poems of block k. A search reads one word file a word (a few for a word typed in
+  // part) and one block for each poem it shows.
+  // The words are cut as tools/textlang.py cuts them: keep the two in step (build_lists.py
+  // --check-js compares them).
+  // <search-tokens>
+  const SEARCH_STRIP = /[̀-֑ͯ-ׇֽֿׁׂׅׄؐ-ًؚ-ٰٟۖ-ۜ۟-۪ۤۧۨ-ۭـ​-‍­'‘’ʼʾʿ`׳״]/g;
+  const SEARCH_LETTERS = { "æ": "ae", "œ": "oe", "þ": "th", "ð": "d", "ø": "o", "ł": "l", "ß": "ss", "ı": "i", "đ": "d",
+    "ƿ": "w", "ς": "σ", "ٱ": "ا", "ي": "ی", "ى": "ی", "ك": "ک", "ة": "ه", "ە": "ه",
+    "ך": "כ", "ם": "מ", "ן": "נ", "ף": "פ", "ץ": "צ" };
+  const SEARCH_LETTER_RE = new RegExp("[" + Object.keys(SEARCH_LETTERS).join("") + "]", "g");
+  const SEARCH_WORD_CHAR = /[\p{L}\p{N}\p{M}]/u;
+  const SEARCH_MAX_TOKEN = 32;
+  // Scripts written without spaces between words: Han, kana, Thai, Lao, Khmer, Burmese.
+  const bigramChar = (cp) => (cp >= 0x3400 && cp <= 0x4DBF) || (cp >= 0x4E00 && cp <= 0x9FFF) || (cp >= 0xF900 && cp <= 0xFAFF)
+    || (cp >= 0x20000 && cp <= 0x3134F) || (cp >= 0x3040 && cp <= 0x30FF) || (cp >= 0x31F0 && cp <= 0x31FF)
+    || (cp >= 0x3005 && cp <= 0x3007) || (cp >= 0x0E00 && cp <= 0x0EFF) || (cp >= 0x1780 && cp <= 0x17FF)
+    || (cp >= 0x1000 && cp <= 0x109F);
+  const searchNorm = (s) => String(s || "").toLowerCase().normalize("NFKD").replace(SEARCH_STRIP, "")
+    .replace(SEARCH_LETTER_RE, (c) => SEARCH_LETTERS[c]).normalize("NFC");
+  function searchRuns(s) {
+    const out = [];
+    let cur = [], kind = null;
+    for (const ch of s) {
+      const k = bigramChar(ch.codePointAt(0)) ? "b" : SEARCH_WORD_CHAR.test(ch) ? "w" : null;
+      if (k !== kind && cur.length) { out.push([kind, cur]); cur = []; }
+      kind = k;
+      if (k) cur.push(ch);
+    }
+    if (cur.length && kind) out.push([kind, cur]);
+    return out;
+  }
+  function indexTokens(text) {
+    const out = new Set();
+    for (const [kind, run] of searchRuns(searchNorm(text))) {
+      if (kind === "w") out.add(run.slice(0, SEARCH_MAX_TOKEN).join(""));
+      else {
+        run.forEach((c) => out.add(c));
+        for (let i = 0; i + 1 < run.length; i++) out.add(run[i] + run[i + 1]);
+      }
+    }
+    return out;
+  }
+  function queryTokens(text) {
+    const out = [];
+    for (const [kind, run] of searchRuns(searchNorm(text))) {
+      if (kind === "w") out.push(run.slice(0, SEARCH_MAX_TOKEN).join(""));
+      else if (run.length === 1) out.push(run[0]);
+      else for (let i = 0; i + 1 < run.length; i++) out.push(run[i] + run[i + 1]);
+    }
+    return out;
+  }
+  const keyChar = (ch) => /^[a-z0-9]$/.test(ch) ? ch : "-" + ch.codePointAt(0).toString(16).padStart(5, "0");
+  function termKey(term, depth) {
+    const cps = Array.from(term), cp = cps[0].codePointAt(0);
+    if (bigramChar(cp)) return "x" + (cp % 256).toString(16).padStart(2, "0");
+    return cps.slice(0, depth).map(keyChar).join("");
+  }
+  // </search-tokens>
+  let SX_MAN = null;
+  function sxManifest(fresh) {
+    if (fresh || !SX_MAN) {
+      SX_MAN = getJSON(bust("data/s/manifest.json", fresh)).then((m) => {
+        m.keySet = new Set(m.keys);
+        return m;
+      });
+      SX_MAN.catch(() => { SX_MAN = null; });
+    }
+    return SX_MAN;
+  }
+  const SX_FILES = new Map();
+  function sxFile(man, key, fresh) {
+    const url = `data/s/t/k${key}.json`;
+    if (fresh || !SX_FILES.has(url)) {
+      const p = getJSON(bust(url, fresh));
+      SX_FILES.set(url, p);
+      p.catch(() => SX_FILES.delete(url));
+    }
+    return SX_FILES.get(url);
+  }
+  // A block of documents: their number (base 36) -> [id, title, poet].
+  const SX_BLOCKS = new Map();
+  function sxBlock(k, fresh) {
+    const url = `data/s/d/${k}.json`;
+    if (fresh || !SX_BLOCKS.has(url)) {
+      const p = getJSON(bust(url, fresh)).then((rows) => new Map(rows.map((r) => [parseInt(r[0], 36), r.slice(1)])));
+      SX_BLOCKS.set(url, p);
+      p.catch(() => SX_BLOCKS.delete(url));
+    }
+    return SX_BLOCKS.get(url);
+  }
+  const sxBlockOf = (man, d) => man.bits ? Math.floor(d / 2 ** (32 - man.bits)) : 0;
+  // The file a word is in: the longest of its beginnings that names a file.
+  function sxKeyOf(man, term) {
+    const L = Array.from(term).length;
+    for (let d = Math.min(man.depth, L); d >= Math.min(2, L); d--) {
+      const k = termKey(term, d);
+      if (man.keySet.has(k)) return k;
+    }
+    return null;
+  }
+  // The files that may hold words beginning with `term` (at most SX_PREFIX_FILES of them).
+  const SX_PREFIX_FILES = 6, SX_PREFIX_WORDS = 300;
+  function sxPrefixKeys(man, term) {
+    const own = sxKeyOf(man, term), L = Array.from(term).length;
+    if (L < 2 || bigramChar(term.codePointAt(0))) return own ? [own] : [];
+    const kp = termKey(term, L), more = man.keys.filter((k) => k !== own && k.startsWith(kp));
+    const keys = (own ? [own] : []).concat(more);
+    return keys.length > SX_PREFIX_FILES ? (own ? [own] : []) : keys;
+  }
+  function sxDecode(s) {
+    const out = [];
+    if (!s) return out;
+    let d = 0;
+    for (const x of s.split(".")) { d += parseInt(x, 36); out.push(d); }
+    return out;
+  }
+  // The fields of a word's row: 0-2 the title (0 the poem has a Codex Note, 1 a short title,
+  // 2 the rest), 3 the poet's and translator's names, 4 the opening lines and the book.
+  const SX_TITLE = 0b00111, SX_NAMES = 0b01111;
+  // The documents matching a search, best first: every word must be somewhere; all words in
+  // the title come first, then all in the title or the names, then the rest; a word matched
+  // only as the beginning of a longer one counts a little less; then a poem with a Codex Note,
+  // then a short title. A word in so many titles that it is not indexed there ("the") is left
+  // out of the search. -> {man, docs} or null (no search index on this copy of the site).
+  async function sxSearch(q, fresh) {
+    let man;
+    try { man = await sxManifest(fresh); } catch (e) { return null; }
+    const terms = [...new Set(queryTokens(q))];
+    if (!terms.length) return { man, docs: [] };
+    try {
+      const per = await Promise.all(terms.map(async (t) => {
+        const files = await Promise.all(sxPrefixKeys(man, t).map((k) => sxFile(man, k, fresh)));
+        const hit = new Map();
+        let stop = false, words = 0;
+        const add = (row, prefix) => {
+          row.forEach((s, f) => {
+            if (!s) return;
+            const bit = 1 << (f + (prefix ? 5 : 0));
+            for (const d of sxDecode(s)) hit.set(d, (hit.get(d) || 0) | bit);
+          });
+        };
+        files.forEach((file) => {
+          for (const w in file) {
+            if (w === t) { if (file[w][0] === 0) stop = true; else add(file[w], false); }
+            else if (words < SX_PREFIX_WORDS && w.startsWith(t) && !bigramChar(t.codePointAt(0))) { words++; add(file[w], true); }
+          }
+        });
+        return { hit, stop };
+      }));
+      const live = per.filter((x) => !x.stop);
+      if (!live.length || live.some((x) => !x.hit.size)) return { man, docs: [] };
+      live.sort((a, b) => a.hit.size - b.hit.size);
+      const scored = [];
+      for (const [d, b0] of live[0].hit) {
+        let title = true, names = true, prefix = 0, any = 0, ok = true;
+        for (let i = 0; i < live.length; i++) {
+          const b = i ? live[i].hit.get(d) : b0;
+          if (!b) { ok = false; break; }
+          const e = (b | (b >> 5)) & 31;   // the fields, exact or begun
+          any |= e;
+          if (!(e & SX_TITLE)) title = false;
+          if (!(e & SX_NAMES)) names = false;
+          if (!(b & 31)) prefix++;
+        }
+        if (!ok) continue;
+        const cls = any & 1 ? 0 : any & 2 ? 1 : 2;
+        scored.push([((title ? 0 : names ? 1 : 2) * 64 + prefix) * 4 + cls, d]);
+      }
+      scored.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+      return { man, docs: scored.map((x) => x[1]) };
+    } catch (e) {
+      if (e.missing && !fresh) return sxSearch(q, true);   // files renamed by a publish meanwhile
+      throw e;
+    }
+  }
+  // [[title, poet, id], ...] for docs from .. to - 1 of a search (a poem whose block no longer
+  // has it, after a publish, is left out).
+  async function sxRows(res, from, to) {
+    const want = res.docs.slice(from, to);
+    const ks = [...new Set(want.map((d) => sxBlockOf(res.man, d)))];
+    const by = new Map(await Promise.all(ks.map(async (k) => [k, await sxBlock(k).catch(() => new Map())])));
+    return want.map((d) => { const r = by.get(sxBlockOf(res.man, d)).get(d); return r ? [r[1], r[2], r[0]] : null; }).filter(Boolean);
+  }
+  // Poems for the search box and the results page: {total, rows (the first `limit`), more(from, to)}.
+  // Within the first rows the title that is the search itself comes first. Without the search
+  // index (an older copy of the site) the title files of data/suggest/p/ are used, as before.
+  async function searchPoems(qRaw, limit) {
+    const res = await sxSearch(qRaw);
+    if (!res) return null;
+    let rows = await sxRows(res, 0, limit);
+    const qf = titleFold(qRaw);
+    rows = rows.map((r, k) => [titleFold(r[0]) === qf ? 0 : 1, k, r]).sort((a, b) => a[0] - b[0] || a[1] - b[1]).map((x) => x[2]);
+    return { total: res.docs.length, rows, more: (a, b) => sxRows(res, a, b) };
+  }
   // Retired records (tools/build_index.py): a poem kept in its poet file only as a copy of a
   // text held elsewhere ("dupOf": "<poet>/<n>" or "work:<slug>#<i>"), and a poet merged into
   // another ("mergedInto"). Both indexes carry them as "retired" {id: dupOf} and "merged"
@@ -5393,12 +5747,6 @@
     return m ? "#/work/" + m[1] + "/" + m[2] : "#/poem/" + target;
   }
   const replaceHash = (hash) => location.replace(location.href.split("#")[0] + hash);
-  // Every poem by title, sorted on first use; every list filters this and so keeps the order.
-  function sortedPoems() {
-    if (!DATA) return [];
-    if (!SORTED) SORTED = DATA.poems.slice().sort((a, b) => COLLATE.compare(a._sk, b._sk));
-    return SORTED;
-  }
   // The home page no longer fetches the index by itself (it is drawn from home.json). A reader
   // who reaches for a page that needs it (the lists, a category, the shelf, the account) starts
   // the download on the first hover, touch or focus of the link, so it is under way before the
@@ -5468,26 +5816,31 @@
       .sort((a, b) => a[0] - b[0] || b[1].weight - a[1].weight || a[1].label.length - b[1].label.length).map((x) => x[1]);
     const works = ranked.filter((e) => e.k === "w").slice(0, limits.works);
     const poets = ranked.filter((e) => e.k === "p").slice(0, limits.poets);
-    let poems = [];
-    const long = words.filter((w) => w.length >= 3).sort((a, b) => b.length - a.length)[0];
-    if (long) {
-      const rows = await sgShard(long.slice(0, 3));
-      const qs = sgFold(qRaw);
-      const seen = new Set();
-      poems = rows.map((r) => {
-        const t = fold(r[0]), ts = sgFold(r[0]);
-        let s;
-        if (ts === qs || t === q) s = 0;
-        else if (ts.startsWith(qs) || t.startsWith(q)) s = 1;
-        else if (t.includes(q)) s = 2;
-        else if (sgHasAll(t, words)) s = 3;
-        else if (sgHasAll(t + " " + fold(r[1]), words)) s = 4;
-        else return null;
-        return [s, r];
-      }).filter(Boolean).sort((a, b) => a[0] - b[0] || a[1][0].length - b[1][0].length)
-        .map((x) => x[1]).filter((r) => !seen.has(r[2]) && seen.add(r[2])).slice(0, limits.poems);
+    let poems = [], poemHits = null;
+    const hits = await searchPoems(qRaw, limits.poems).catch(() => null);
+    if (hits) { poems = hits.rows; poemHits = hits; }
+    else {
+      // No search index (an older copy of the site): the title files of data/suggest/p/.
+      const long = words.filter((w) => w.length >= 3).sort((a, b) => b.length - a.length)[0];
+      if (long) {
+        const rows = await sgShard(long.slice(0, 3));
+        const qs = sgFold(qRaw);
+        const seen = new Set();
+        poems = rows.map((r) => {
+          const t = fold(r[0]), ts = sgFold(r[0]);
+          let s;
+          if (ts === qs || t === q) s = 0;
+          else if (ts.startsWith(qs) || t.startsWith(q)) s = 1;
+          else if (t.includes(q)) s = 2;
+          else if (sgHasAll(t, words)) s = 3;
+          else if (sgHasAll(t + " " + fold(r[1]), words)) s = 4;
+          else return null;
+          return [s, r];
+        }).filter(Boolean).sort((a, b) => a[0] - b[0] || a[1][0].length - b[1][0].length)
+          .map((x) => x[1]).filter((r) => !seen.has(r[2]) && seen.add(r[2])).slice(0, limits.poems);
+      }
     }
-    return { works, poets, poems };
+    return { works, poets, poems, poemHits };
   }
   const poemHref = (id) => "#/poem/" + id;
   // ----- the dropdown under a search box -----
@@ -5549,7 +5902,7 @@
     if (!qRaw.trim()) { app.innerHTML = `<div class="page-head"><h1 class="page-title">Search</h1><p class="page-sub">Type a poem, a poet or a work in the box above.</p></div>`; return; }
     app.innerHTML = `<p class="loading">Searching…</p>`;
     const h = location.hash;
-    const r = await sgFind(qRaw, { works: 40, poets: 40, poems: 400 });
+    const r = await sgFind(qRaw, { works: 40, poets: 40, poems: SR_PAGE });
     if (location.hash !== h) return;
     const top = [...r.works, ...r.poets].find((e) => sgScoreCore(e, fold(qRaw), sgWords(qRaw)) <= 1.5);
     const topW = top && top.k === "w" ? await topWorkHTML(top) : "";
@@ -5563,26 +5916,30 @@
     const rest = (list) => list.filter((e) => e !== top);
     const row = (href, t, s, k) => `<li><a class="sr-row" href="${esc(href)}"><span class="sr-t">${t}</span><span class="sr-s">${s}</span>${k ? `<span class="sr-k">${k}</span>` : ""}</a></li>`;
     const works = rest(r.works), poets = rest(r.poets), poems = r.poems;
+    const poemTotal = r.poemHits ? r.poemHits.total : poems.length;
     const none = !top && !works.length && !poets.length && !poems.length;
     app.innerHTML = `
       <div class="sr">
         <div class="page-head"><p class="sr-label">Search</p><h1 class="page-title">“${esc(qRaw)}”</h1>
           <p class="page-sub">${none ? "Nothing found. Try fewer words, or another spelling." :
             [r.works.length && `${num(r.works.length)} work${r.works.length === 1 ? "" : "s"}`, r.poets.length && `${num(r.poets.length)} poet${r.poets.length === 1 ? "" : "s"}`,
-             poems.length && `${poems.length >= 400 ? "400+" : num(poems.length)} poem${poems.length === 1 ? "" : "s"}`].filter(Boolean).join(" · ")}</p></div>
+             poemTotal && `${num(poemTotal)} poem${poemTotal === 1 ? "" : "s"}`].filter(Boolean).join(" · ")}</p></div>
         ${topHTML}
         ${works.length ? `<section class="sr-sec"><h2 class="section-label">Works</h2><ul class="sr-list">${works.map((e) => row(e.href, esc(e.label), esc(e.sub), esc(e.extra))).join("")}</ul></section>` : ""}
         ${poets.length ? `<section class="sr-sec"><h2 class="section-label">Poets</h2><ul class="sr-list sr-cols">${poets.slice(0, 12).map((e) => row(e.href, esc(e.label), esc(e.sub), "")).join("")}</ul></section>` : ""}
         ${poems.length ? `<section class="sr-sec"><h2 class="section-label">Poems</h2><ul class="sr-list" id="sr-poems">${poems.slice(0, SR_PAGE).map((p) => row(poemHref(p[2]), esc(p[0]), esc(p[1]), "")).join("")}</ul>
-          ${poems.length > SR_PAGE ? `<div class="more-row"><button class="more-btn sr-more" type="button">Show more poems</button></div>` : ""}</section>` : ""}
+          ${poemTotal > SR_PAGE ? `<div class="more-row"><button class="more-btn sr-more" type="button">Show more poems</button></div>` : ""}</section>` : ""}
       </div>`;
     let shownP = SR_PAGE;
     const more = app.querySelector(".sr-more");
-    if (more) more.addEventListener("click", () => {
+    if (more) more.addEventListener("click", async () => {
       const ul = document.getElementById("sr-poems");
-      ul.insertAdjacentHTML("beforeend", poems.slice(shownP, shownP + SR_PAGE).map((p) => row(poemHref(p[2]), esc(p[0]), esc(p[1]), "")).join(""));
+      more.disabled = true;
+      const next = r.poemHits ? await r.poemHits.more(shownP, shownP + SR_PAGE).catch(() => []) : poems.slice(shownP, shownP + SR_PAGE);
+      more.disabled = false;
+      ul.insertAdjacentHTML("beforeend", next.map((p) => row(poemHref(p[2]), esc(p[0]), esc(p[1]), "")).join(""));
       shownP += SR_PAGE;
-      if (shownP >= poems.length) more.parentNode.remove();
+      if (shownP >= poemTotal || !next.length) more.parentNode.remove();
     });
     restoreScroll();
   }
@@ -5856,11 +6213,12 @@
   const trSortName = (t) => t.sort || citeName(t.name);
   const trDates = (t) => t.born && t.died ? `${t.born}–${t.died}` : t.died ? "died " + t.died : t.born ? "born " + t.born : "";
   // What one person translated here: {works: [index entries], poems: [index entries]}.
-  function trHoldings(t) {
+  // The poems come from the translator's own list (data/l/t/<slug>.json, loadTrList).
+  function trHoldings(t, poems) {
     const mine = new Set(t.match || []);
     return {
       works: DATA.works.filter((w) => w.translator && mine.has(w.translator)),
-      poems: DATA.poems.filter((p) => p.translator && mine.has(p.translator)),
+      poems: poems || [],
     };
   }
   const TR_POEMS_SHOWN = 8;   // poems listed under each original author before "Show all"
@@ -5871,8 +6229,10 @@
     if (location.hash !== h) return;
     const t = TRANSLATORS.bySlug.get(slug);
     if (!t) { app.innerHTML = `<p class="empty">There is no page for this translator. <a href="#/translators">All translators</a></p>`; setTitle("Translator"); return; }
+    const trPoems = await loadTrList(t.slug).catch(() => []);
+    if (location.hash !== h) return;
     setTitle(t.name + " · Translator");
-    const { works, poems } = trHoldings(t);
+    const { works, poems } = trHoldings(t, trPoems);
     // Grouped by the original's author, the author with most here first.
     const groups = new Map();
     const group = (slug, name) => {
@@ -5930,9 +6290,12 @@
     app.innerHTML = `<p class="loading">Loading…</p>`;
     const h = location.hash;
     await loadTranslators();
+    const nPoems = await loadTrCounts();
     if (location.hash !== h) return;
     setTitle("Translators");
-    const counted = TRANSLATORS.list.map((t) => ({ t, k: trSortName(t), ...trHoldings(t) }))
+    // Each translator's number of poems from data/l/t/_counts.json (an array of that length
+    // stands in for the poems, which this page only counts).
+    const counted = TRANSLATORS.list.map((t) => ({ t, k: trSortName(t), ...trHoldings(t, { length: nPoems[t.slug] || 0 }) }))
       .filter((x) => x.works.length || x.poems.length)
       .sort((a, b) => COLLATE.compare(fold(a.k), fold(b.k)));
     const letterOf = (x) => { const c = fold(x.k).charAt(0).toUpperCase(); return c >= "A" && c <= "Z" ? c : "#"; };
@@ -6350,7 +6713,7 @@
     }
     if (!o.html) throw new Error("lines");
     o.prose = prose; o.greek = greek;
-    o.lang = textLangAttr(o.authorSlug, o.translator, text, side.ref);
+    o.lang = textLangAttr(o.authorSlug, o.translator, text, side.ref, o.language);
     o.lineHref = o.href + (units.length ? "?l=" + (units[0] === units[1] ? units[0] : units[0] + "-" + units[1]) : "");
     o.cite = { author: o.author, work: m ? o.title : "", title: m ? o.part : o.title, translator: o.translator, path: o.path, loc: o.loc };
     return o;
@@ -6778,9 +7141,10 @@
       // "#/poems?q=keats" (the 404 page's search box) opens the archive already searched.
       const q = h.match(/[?&]q=([^&]*)/);
       if (q) {
-        try { query = decodeURIComponent(q[1].replace(/\+/g, " ")).trim(); } catch (e) { query = ""; }
-        filterSubject = "All"; filterForm = "All";
-        history.replaceState(null, "", "#/poems");
+        let v = "";
+        try { v = decodeURIComponent(q[1].replace(/\+/g, " ")).trim(); } catch (e) { v = ""; }
+        location.replace("#/search?q=" + encodeURIComponent(v));
+        return;
       }
       setRoute("poems", "sub"); renderList();
     }
@@ -6831,9 +7195,9 @@
   const cardHTML = (p) => `
     <a class="card" href="#/poem/${esc(p.id)}">
       <div class="card-subject">${esc(p.primarySubject)}</div>
-      <h2 class="card-title"${langAttr(p.authorSlug, p.translator)}>${esc(p.title)}</h2>
+      <h2 class="card-title"${langAttr(p.authorSlug, p.translator, p.language, p.title)}>${esc(p.title)}</h2>
       <div class="card-author">${esc(p.author)}</div>
-      <p class="card-excerpt"${langAttr(p.authorSlug, p.translator)}>${esc(clipExcerpt(p.excerpt))}</p>
+      <p class="card-excerpt"${langAttr(p.authorSlug, p.translator, p.language, p.excerpt)}>${esc(clipExcerpt(p.excerpt))}</p>
     </a>`;
   // Search results by how well they match: the exact title first, then titles that hold the
   // search (poems that carry a Codex Note ahead, then titles that start with it, then the
@@ -6859,6 +7223,8 @@
   function pagedCards(poems) {
     return poems.slice(0, shown).map(cardHTML).join("");
   }
+  // A list of cards that comes page by page: {n, get(from, to) -> Promise<entries>}, or an array.
+  const asSource = (a) => Array.isArray(a) ? { n: a.length, get: (x, y) => Promise.resolve(a.slice(x, y)) } : a;
   function moreHTML(total) {
     const left = total - shown;
     return left > 0 ? `<div class="more-row"><button class="more-btn" type="button">Show ${Math.min(PAGE, left)} more<span class="more-left"> · ${num(left)} left</span></button></div>` : "";
@@ -6866,18 +7232,23 @@
   // Adds the next PAGE cards in place (no redraw, so the page does not move) and hands
   // keyboard focus to the first of them.
   function bindMore(poems) {
+    const src = asSource(poems);
     const btn = app.querySelector(".more-btn");
     if (!btn) return;
     const grid = app.querySelector(".grid");
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", async () => {
       const last = grid.lastElementChild;
-      const from = shown;
-      shown += PAGE;
-      grid.insertAdjacentHTML("beforeend", poems.slice(from, shown).map(cardHTML).join(""));
+      const from = shown, here = location.hash;
+      btn.disabled = true;
+      let got;
+      try { got = await src.get(from, from + PAGE); } catch (e) { btn.disabled = false; return; }
+      if (location.hash !== here) return;
+      shown = from + PAGE;
+      grid.insertAdjacentHTML("beforeend", got.map(cardHTML).join(""));
       const row = btn.parentNode;
-      if (poems.length > shown) row.outerHTML = moreHTML(poems.length);
+      if (src.n > shown) row.outerHTML = moreHTML(src.n);
       else row.remove();
-      bindMore(poems);
+      bindMore(src);
       const first = last ? last.nextElementSibling : grid.firstElementChild;
       if (first) first.focus({ preventScroll: true });
       saveView();
@@ -6944,16 +7315,8 @@
   // tools/build_home.py writes the next 400 days of it into home.json by the same rule:
   // change both together.
   const utcDay = () => Math.floor(Date.now() / 864e5);
-  let POTD_POOL = null;
-  function poemOfTheDay(day = utcDay()) {
-    if (!POTD_POOL) {
-      const fits = (p) => p.excerpt && p.excerpt.split("\n").every((l) => l.length <= 90);
-      POTD_POOL = DATA.poems.filter((p) => p.hasNote && fits(p));
-      if (!POTD_POOL.length) POTD_POOL = DATA.poems.filter(fits);
-    }
-    if (!POTD_POOL.length) return null;
-    return POTD_POOL[(day * 7919) % POTD_POOL.length];
-  }
+  // (The app no longer has every poem to work it out from: home.json, written by
+  // tools/build_home.py from 30 days back to 400 days ahead, is the only source.)
   // A day's row of home.json (today's by default), as an object like an index entry (plus
   // `lang`), or null. home.json starts on the day it was built and runs 400 days ahead.
   function homePoemOfTheDay(day = utcDay()) {
@@ -6963,9 +7326,8 @@
     (HOME.potdFields || []).forEach((k, i) => { p[k] = row[i]; });
     return p.id && p.title ? p : null;
   }
-  // The poem of a given day, from the index when it is in (as the home page does), else
-  // from home.json.
-  const potdFor = (day) => (DATA ? poemOfTheDay(day) : homePoemOfTheDay(day));
+  // The poem of a given day (home.json).
+  const potdFor = (day) => homePoemOfTheDay(day);
   const dayLabel = (day) => { const d = new Date(day * 864e5); return d.getUTCDate() + " " + MONTHS[d.getUTCMonth()]; };
 
   // ---------- #/today: the poem of the day in full, and the days before it ----------
@@ -6986,7 +7348,7 @@
       if (!p || !p.text) { location.replace(location.href.split("#")[0] + "#/poem/" + t.id); return; }
       EARLY_DRAWN = DATA ? "" : location.hash;   // drawn without the index: it stays when the index comes
       EARLY_REDRAW = false;
-      const lang = langAttr(p.authorSlug || slug, p.translator);
+      const lang = langAttr(p.authorSlug || slug, p.translator, p.language, p.title + " " + String(p.text || "").slice(0, 1000));
       setTitle("Poem of the day — " + p.title);
       app.innerHTML = `
       <article class="detail potd-page">
@@ -7019,9 +7381,9 @@
       const p = potdFor(day);
       if (p) rows.push({ day, p }); else missing++;
     }
-    const more = missing && !DATA ? `<div class="more-row"><button class="more-btn" type="button">${rows.length ? "Show earlier days" : `Show the last ${TODAY_BACK} days`}</button></div>` : "";
+    const more = "";   // home.json holds the last TODAY_BACK days (tools/build_home.py)
     box.innerHTML = (rows.length ? `<ul class="poem-links">${rows.map(({ day, p }) => {
-      const lang = p.lang !== undefined ? (p.lang ? ` lang="${esc(p.lang)}"` : "") : langAttr(p.authorSlug, p.translator);
+      const lang = p.lang !== undefined ? (p.lang ? ` lang="${esc(p.lang)}"` : "") + dirAuto(p.lang, p.title + " " + (p.excerpt || "")) : langAttr(p.authorSlug, p.translator, p.language, p.title);
       return `
         <li><a href="#/poem/${esc(p.id)}"><span class="pl-title"${lang}>${esc(p.title)}</span><span class="pl-sub">${esc(p.author)} · ${dayLabel(day)}</span></a></li>`;
     }).join("")}</ul>` : "") + more;
@@ -7041,7 +7403,7 @@
   function poemOfTheDayHTML(p) {
     if (!p) return "";
     const d = new Date();
-    const lang = p.lang !== undefined ? (p.lang ? ` lang="${esc(p.lang)}"` : "") : langAttr(p.authorSlug, p.translator);
+    const lang = p.lang !== undefined ? (p.lang ? ` lang="${esc(p.lang)}"` : "") + dirAuto(p.lang, p.title + " " + (p.excerpt || "")) : langAttr(p.authorSlug, p.translator, p.language, p.title);
     return `<a class="potd" href="#/poem/${esc(p.id)}">
         <span class="d-kicker">Poem of the day · ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]}</span>
         <span class="d-name"${lang}>${esc(p.title)}</span>
@@ -7075,15 +7437,25 @@
   const surpriseHref = (f) => "#/surprise" + (surpriseParams(f) ? "?" + surpriseParams(f) : "");
   // "Sonnets · Love · Romantic": what the draw is limited to, for its labels ("" for none).
   function surpriseScope(f) {
-    const sub = f.subject && DATA ? (DATA.subjects.find((s) => subjectKey(s.name) === f.subject) || {}).name : "";
+    const d = coreData();
+    const sub = f.subject && d ? (d.subjects.find((s) => subjectKey(s.name) === f.subject) || {}).name : "";
     return [f.form ? formLabel(f.form) : "", sub || "", f.era ? SLUG_TO_CATEGORY[f.era] : ""].filter(Boolean).join(" · ");
   }
-  function surprisePool(f, skipRecent) {
-    const cat = f.era ? SLUG_TO_CATEGORY[f.era] : "";
-    const recent = new Set(skipRecent ? readingRecent().map((r) => r.id) : []);
-    return DATA.poems.filter((p) => (!cat || (POETS[p.authorSlug] || {}).category === cat)
-      && (!f.subject || subjectKey(p.primarySubject) === f.subject)
-      && (!f.form || p.form === f.form) && !recent.has(p.id));
+  // The list to draw from (an era's list, filtered by subject and form within the page drawn).
+  function surpriseList(f) {
+    if (f.era) return catKey(SLUG_TO_CATEGORY[f.era]);
+    return f.subject && f.form ? `sf-${f.subject}-${f.form}` : f.subject ? "s-" + f.subject : f.form ? "f-" + f.form : "all";
+  }
+  const surpriseKeeps = (f, p) => (!f.subject || subjectKey(p.primarySubject) === f.subject) && (!f.form || p.form === f.form);
+  // One poem at random from the list: a random place in it, the page it falls on, and a poem
+  // of that page that fits (null when the page has none).
+  async function surpriseOne(f, recent) {
+    const name = surpriseList(f), m = await listMeta(name);
+    if (!m.n) return null;
+    const r = Math.floor(Math.random() * m.n);
+    const page = m.items ? m.items : await listPage(name, m, m.pages.findIndex((pg) => r >= pg.at && r < pg.at + pg.n));
+    const fits = page.filter((p) => surpriseKeeps(f, p) && !recent.has(p.id));
+    return fits.length ? fits[Math.floor(Math.random() * fits.length)] : null;
   }
   // Each draw has its number: the index's arrival routes again, and "Try again" draws anew,
   // so only the latest draw may open its poem.
@@ -7096,9 +7468,8 @@
     whenIndex(() => {
       if (location.hash !== here || seq !== surpriseSeq) return;   // the reader has moved on
       if (!DATA) { app.innerHTML = indexErrorHTML(); return; }
-      // Everything read lately is left out, unless that leaves nothing (a small era).
-      let pool = surprisePool(f, true);
-      if (!pool.length) pool = surprisePool(f, false);
+      // Everything read lately is left out, except in the last tries (a small era).
+      const recentIds = new Set(readingRecent().map((r) => r.id)), none = new Set();
       const give = () => {
         app.innerHTML = `<div class="page-head"><h1 class="page-title">Surprise me</h1>
           <p class="page-sub">No short poem turned up${surpriseScope(f) ? " (" + esc(surpriseScope(f)) + ")" : ""} this time.</p></div>
@@ -7106,11 +7477,13 @@
         // the link is this very page, so following it would change nothing: draw again here
         app.querySelector(".surprise-link").addEventListener("click", (e) => { e.preventDefault(); renderSurprise(q); });
       };
-      const draw = (k) => {
+      const draw = async (k) => {
         if (location.hash !== here || seq !== surpriseSeq) return;
-        if (!pool.length || k >= SURPRISE_TRIES) { give(); return; }
-        const j = Math.floor(Math.random() * pool.length), p = pool[j];
-        pool.splice(j, 1);
+        if (k >= SURPRISE_TRIES) { give(); return; }
+        let p = null;
+        try { p = await surpriseOne(f, k < SURPRISE_TRIES / 2 ? recentIds : none); } catch (e) { p = null; }
+        if (location.hash !== here || seq !== surpriseSeq) return;
+        if (!p) { draw(k + 1); return; }
         const cut = p.id.lastIndexOf("/"), n = parseInt(p.id.slice(cut + 1), 10);
         loadPoemPage(p.id.slice(0, cut), n).then((file) => {
           const po = file && file.poems[n];
@@ -7139,7 +7512,7 @@
   // facts, so the page does not change when the index arrives; see "a fast first screen").
   function homeHTML() {
     const f = DATA
-      ? { count: DATA.count, eras: CATEGORY_STATS, epics: epicCount(DATA.works), potd: poemOfTheDay() }
+      ? { count: DATA.count, eras: CATEGORY_STATS, epics: epicCount(DATA.works), potd: homePoemOfTheDay() }
       : { count: HOME.count, eras: HOME.eras, epics: HOME.epics || 0, potd: homePoemOfTheDay() };
     // Two doors under one roof: the collection, and the way of asking about it.
     // The Oracle keeps its place even while it sleeps, so the shape of the site
@@ -7181,9 +7554,20 @@
     if (!catName) { location.hash = "#/"; return; }
 
     const works = (DATA.works || []).filter((w) => POETS[w.authorSlug] && POETS[w.authorSlug].category === catName);
-    const poems = sortedPoems().filter((p) => POETS[p.authorSlug] && POETS[p.authorSlug].category === catName);
-    const sub = `${num(poems.length)} poem${poems.length === 1 ? "" : "s"}.`;
-    const lists = eraListsHTML(catName, slug);
+    // The poems come from the era's list (data/l/c-<category>/), a page at a time.
+    const here = location.hash, name = catKey(catName);
+    let src;
+    if (!LIST_META.has(name)) app.innerHTML = `<p class="loading">Opening the archive…</p>`;
+    listSource(name).then((x) => { src = x; return src.get(0, shown); }).then((first) => {
+      if (location.hash !== here) return;
+      drawCategory(slug, catName, works, src, first);
+      restoreScroll();
+    }, () => { if (location.hash === here) app.innerHTML = `<p class="empty">Could not load this list. Check your connection and try again.</p>`; });
+  }
+  function drawCategory(slug, catName, works, src, first) {
+    const poems = { length: src.n };
+    const sub = `${num(src.n)} poem${src.n === 1 ? "" : "s"}.`;
+    const lists = eraListsHTML(catName, slug, src.meta.start || []);
 
     setTitle(catName + " poetry");
     app.innerHTML = `
@@ -7195,12 +7579,12 @@
       ${lists && (works.length || poems.length) ? `<h2 class="section-label era-az">Every work and poem, A–Z</h2>` : ""}
       <div class="grid">
         ${works.map(workCardHTML).join("")}
-        ${pagedCards(poems)}
+        ${first.map(cardHTML).join("")}
         ${!works.length && !poems.length ? `<p class="empty">Nothing filed here yet.</p>` : ""}
       </div>
       ${moreHTML(poems.length)}`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/"; });
-    bindMore(poems);
+    bindMore(src);
     fillEraArt(slug);
   }
 
@@ -7210,23 +7594,15 @@
   // Note, else their first poem), in the poet-page list style.
   const ERA_POETS = 40, ERA_START = 10;
   const poetSize = (p) => (p.poemCount || 0) + (p.workCount || 0);
-  let ERA_FIRSTS = null;   // poet slug -> the poem to begin with (built once)
-  function eraListsHTML(catName, slug) {
+  // start: the "Poems to begin with", worked out by tools/build_lists.py (the era list's "start":
+  // each of the ERA_START poets with most poems and works, their first poem with a Codex Note,
+  // else their first poem, in date order).
+  function eraListsHTML(catName, slug, start) {
     const all = DATA.poets.filter((p) => p.category === catName && poetSize(p) > 0);
     if (all.length < 2) return "";
     const byDate = (a, b) => (a.order ?? 0) - (b.order ?? 0);
     const bySize = all.slice().sort((a, b) => poetSize(b) - poetSize(a) || byDate(a, b));
     const poets = (all.length > ERA_POETS ? bySize.slice(0, ERA_POETS) : all.slice()).sort(byDate);
-    if (!ERA_FIRSTS) {
-      ERA_FIRSTS = new Map();
-      DATA.poems.forEach((p) => {
-        const f = ERA_FIRSTS.get(p.authorSlug);
-        if (!f || (p.hasNote && !f.hasNote)) ERA_FIRSTS.set(p.authorSlug, p);
-      });
-    }
-    const firsts = ERA_FIRSTS;
-    const start = bySize.map((p) => firsts.get(p.slug)).filter(Boolean).slice(0, ERA_START)
-      .sort((a, b) => byDate(POETS[a.authorSlug], POETS[b.authorSlug]));
     return `
       <section class="poet-poems era-lists">
         <h2>${all.length > ERA_POETS ? `The ${ERA_POETS} poets with most poems` : `Poets · ${num(all.length)}`}</h2>
@@ -7238,7 +7614,7 @@
       ${start.length ? `<section class="poet-poems era-lists">
         <h2>Poems to begin with</h2>
         <ul class="poem-links">${start.map((p) => `
-          <li><a href="#/poem/${esc(p.id)}"><span class="pl-title"${langAttr(p.authorSlug, p.translator)}>${esc(p.title)}</span><span class="pl-sub">${esc(p.author)}</span></a></li>`).join("")}
+          <li><a href="#/poem/${esc(p.id)}"><span class="pl-title"${langAttr(p.authorSlug, p.translator, p.language, p.title)}>${esc(p.title)}</span><span class="pl-sub">${esc(p.author)}</span></a></li>`).join("")}
         </ul>
       </section>` : ""}`;
   }
@@ -7335,19 +7711,30 @@
   // Each form chip has an (i) beside it, a link to the form in the glossary (#/term/<form>).
   const FORM_PLURAL = { Sonnet: "Sonnets", Ode: "Odes", Ballad: "Ballads", Elegy: "Elegies", Hymn: "Hymns",
     Song: "Songs", Riddle: "Riddles", Epigram: "Epigrams", Epitaph: "Epitaphs", Ghazal: "Ghazals" };
-  let FORM_COUNTS = null;
-  function formCounts() {
-    if (!FORM_COUNTS) {
-      const n = {};
-      DATA.poems.forEach((p) => { if (p.form) n[p.form] = (n[p.form] || 0) + 1; });
-      FORM_COUNTS = Object.keys(n).sort((a, b) => n[b] - n[a]).map((name) => ({ name, count: n[name] }));
-    }
-    return FORM_COUNTS;
-  }
+  // data/l/counts.json (listCounts), read before the list is drawn.
+  let FORM_COUNTS = [];
+  const formCounts = () => FORM_COUNTS;
   const formLabel = (f) => FORM_PLURAL[f] || f;
+  // The archive, all of it or one subject and / or form, by title, from its list
+  // (data/l/<all | s-… | f-… | sf-…>/). A search is the results page (#/search?q=) now.
   function renderList() {
-    const words = searchWords(query);
-    const results = rankResults(sortedPoems().filter((p) => matches(p, words)), words);
+    if (query) { const v = query; query = ""; location.replace("#/search?q=" + encodeURIComponent(v)); return; }
+    const here = location.hash, name = poemsListName(), state = filterSubject + "|" + filterForm;
+    let src;
+    if (!LIST_META.has(name)) app.innerHTML = `<p class="loading">Opening the archive…</p>`;
+    Promise.all([listSource(name), listCounts()]).then(([x, counts]) => {
+      src = x;
+      FORM_COUNTS = counts.forms || [];
+      return src.get(0, shown);
+    }).then((first) => {
+      if (location.hash !== here || filterSubject + "|" + filterForm !== state) return;
+      drawList(src, first);
+      restoreScroll();
+    }, () => { if (location.hash === here) app.innerHTML = `<p class="empty">Could not load the list of poems. Check your connection and try again.</p>`; });
+  }
+  function drawList(src, first) {
+    const words = [];
+    const results = { length: src.n };
     const works = filterSubject !== "All" || filterForm !== "All" ? [] : (DATA.works || []).filter((w) => {
       if (!words.length) return true;
       if (w._hay === undefined) w._hay = fold([w.title, w.author, w.translator].join(" "));
@@ -7373,7 +7760,7 @@
       <p class="result-meta">${num(results.length)} poem${results.length === 1 ? "" : "s"}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}${filterForm !== "All" ? " · " + esc(formLabel(filterForm)) : ""}${works.length ? ` · <a href="#list-works" class="works-jump">${num(works.length)} long work${works.length === 1 ? "" : "s"} ↓</a>` : ""}</p>
       ${!query && results.length && (filterSubject !== "All" || filterForm !== "All") ? `<p class="surprise-row surprise-list"><a class="surprise-link" href="${esc(surpriseHref({
         subject: filterSubject !== "All" ? subjectKey(filterSubject) : "", form: filterForm !== "All" ? filterForm : "" }))}">Surprise me from these</a></p>` : ""}
-      <div class="grid">${results.length ? pagedCards(results) : works.length ? "" : `<p class="empty">No poems match.</p>`}</div>
+      <div class="grid">${results.length ? first.map(cardHTML).join("") : works.length ? "" : `<p class="empty">No poems match.</p>`}</div>
       ${moreHTML(results.length)}
       ${works.length ? `
       <details class="list-works" id="list-works"${query || !results.length ? " open" : ""}>
@@ -7386,7 +7773,7 @@
     app.querySelectorAll(".chip[data-form]").forEach((c) => c.addEventListener("click", () => { filterForm = c.dataset.form; query = ""; syncSearchInput(); freshList(); }));
     const clr = app.querySelector("[data-clear]");
     if (clr) clr.addEventListener("click", () => { query = ""; filterSubject = "All"; filterForm = "All"; syncSearchInput(); freshList(); });
-    bindMore(results);
+    bindMore(src);
     bindListWorks(works);
   }
   // The long works under the poems, drawn only when their section is open, PAGE at a time.
@@ -7606,12 +7993,27 @@
 
   function renderPoet(slug) {
     if (mergedOf(slug)) { replaceHash("#/poet/" + mergedOf(slug)); return; }   // a poet merged into another
-    const poet = POETS[slug];
+    let poet = POETS[slug];
     if (!poet) { location.hash = "#/poets"; return; }
-    // Drawn from the core index the page has its header and works at once; the poems and bio
-    // come with the full index, when it is drawn again in place (routeEarly, loadIndex).
+    // The page has its header and works at once (the core index); the poems, bio and portrait
+    // credit come with the poet's own file (data/l/p/<poet>.json), when it is drawn again in
+    // place, where the reader is.
     if (DATA) { EARLY_DRAWN = ""; EARLY_REDRAW = false; }
-    const poems = DATA ? DATA.poems.filter((p) => p.authorSlug === slug) : null;
+    const pl = POET_LIST_DONE.get(slug);
+    if (!pl) {
+      const here = location.hash;
+      loadPoetList(slug).then(() => {
+        if (location.hash !== here) return;
+        const y = window.scrollY;
+        renderPoet(slug);
+        if (restoreY) restoreScroll(); else jumpTo(y);
+      }, () => {
+        const box = location.hash === here && app.querySelector(".poet > .loading");
+        if (box) box.textContent = "Could not load the poems. Check your connection and try again.";
+      });
+    }
+    const poems = pl ? pl.poems : null;
+    if (pl) poet = Object.assign({}, poet, { bio: pl.bio, credit: pl.credit });
     const works = (coreData().works || []).filter((w) => w.authorSlug === slug)
       .map((w, k) => [w, k]).sort((a, b) => (isRecommended(b[0]) - isRecommended(a[0])) || a[1] - b[1]).map((x) => x[0]);
     setTitle(poet.name);
@@ -7654,7 +8056,7 @@
           ${poems.length ? `<div class="cite-row poet-offline">${offlineHTML("poet:" + slug)}</div>` : ""}
           <ul class="poem-links">
             ${poems.map((p) => `
-              <li><a href="#/poem/${esc(p.id)}"><span class="pl-title"${langAttr(p.authorSlug, p.translator)}>${esc(p.title)}</span><span class="pl-sub">${esc(p.primarySubject)}</span></a></li>`).join("")}
+              <li><a href="#/poem/${esc(p.id)}"><span class="pl-title"${langAttr(p.authorSlug, p.translator, p.language, p.title)}>${esc(p.title)}</span><span class="pl-sub">${esc(p.primarySubject)}</span></a></li>`).join("")}
           </ul>
         </section>` : ""}
       </article>`;
@@ -7836,7 +8238,7 @@
         ${otherTrHTML(WORKS[slug], i)}
         <hr class="rule">
         ${enginePanel(s.text, { gloss: true })}
-        ${poemBlock(s.text, { translator: w.translator, lang: textLangAttr(w.authorSlug, w.translator, s.text, "work:" + slug), work: true,
+        ${poemBlock(s.text, { translator: w.translator, lang: textLangAttr(w.authorSlug, w.translator, s.text, "work:" + slug, w.language), work: true,
                               parallel: parCtlHTML("works", slug, par) })}
         <p class="book-source-slot" hidden></p>
         ${citeHTML(cite, entry)}
@@ -7887,7 +8289,7 @@
     noteRecent({ id: "work:" + slug, kind: "work", i, part: w.sections.length > 1 ? s.title : "", title: named, author: w.author });
     drawProgress();
     showLinkedLines();
-    bindLearn({ entry, text: s.text, translator: w.translator, lang: textLangAttr(w.authorSlug, w.translator, s.text, "work:" + slug), par: [] });
+    bindLearn({ entry, text: s.text, translator: w.translator, lang: textLangAttr(w.authorSlug, w.translator, s.text, "work:" + slug, w.language), par: [] });
     bindReadingBar({ contents: "#/work/" + slug });
     bindSpeakers(slug, i);
     bindPeople(w, slug, i);
@@ -9337,10 +9739,10 @@
                  translator: w.translator || "", first: "", prose: !!s.prose };
       }
     } else {
-      const p = DATA && POEM_BY_ID.get(x.ref);
-      if (!p) return null;
+      const p = POEM_BY_ID.get(x.ref);
+      if (!p || !p.title) return null;
       info = { kind: "poem", title: p.title, author: p.author, translator: p.translator || "",
-               first: String(p.excerpt || "").split("\n").map((l) => l.trim()).find(Boolean) || "" };
+               first: p.first || String(p.excerpt || "").split("\n").map((l) => l.trim()).find(Boolean) || "" };
     }
     if (x.l) info.loc = (info.prose ? "paragraphs " : "lines ") + x.l.replace("-", "–");
     return info;
@@ -9366,7 +9768,13 @@
   }
   const listItemHref = (x, k) => routeFor(x.ref) + "?list=" + (k + 1) + (x.l ? "&l=" + x.l : "");
   function renderReadingList() {
-    const list = parseReadingList(location.hash);
+    const list = parseReadingList(location.hash), here = location.hash;
+    // the poems' titles and first lines come from their poets' files (one fetch a poet)
+    if (poemInfoMissing(list.items.map((x) => x.ref)).length) {
+      renderLoading();
+      ensurePoemInfo(list.items.map((x) => x.ref)).then(() => { if (location.hash === here) { renderReadingList(); restoreScroll(); } });
+      return;
+    }
     setTitle(list.t);
     const rows = list.items.map((x) => ({ x, info: listItemInfo(x) }));
     const found = rows.filter((r) => r.info).map((r) => Object.assign({ ref: r.x.ref, l: r.x.l, note: r.x.note, due: r.x.due }, r.info));
@@ -10994,16 +11402,11 @@ ${body}</body></html>`;
   }
   // Everything the Codex can be pointed at: every poem, and every section of
   // every work. Built once, on first use.
+  // The work sections it can be pointed at (poems come from the search index): built once.
   let ASK_ITEMS = null;
   function askItems() {
     if (ASK_ITEMS || !DATA) return ASK_ITEMS || [];
-    ASK_ITEMS = DATA.poems.map((p) => ({
-      id: p.id,
-      label: p.title,
-      author: p.author,
-      lab: fold(p.title),
-      hay: fold(p.title + " " + p.author),
-    }));
+    ASK_ITEMS = [];
     (DATA.works || []).forEach((w) => {
       (w.sections || []).forEach((sec, i) => {
         ASK_ITEMS.push({
@@ -11053,7 +11456,9 @@ ${body}</body></html>`;
     input.addEventListener("focus", loadIndex);
     let waiting = false;
 
-    input.addEventListener("input", function search() {
+    let pickSeq = 0;
+    const PICKED = new Map();
+    input.addEventListener("input", async function search() {
       onPick(null);
       const q = fold(input.value.trim());
       if (q.length < 3) return close();
@@ -11067,6 +11472,7 @@ ${body}</body></html>`;
         }
         return;
       }
+      const my = ++pickSeq;
       const scored = [];
       for (const it of askItems()) {
         if (it.id === excludeId) continue;
@@ -11078,9 +11484,18 @@ ${body}</body></html>`;
         scored.push([score, it]);
         if (scored.length > 400) break;          // enough to rank well
       }
+      const found0 = await searchPoems(input.value.trim(), 12).catch(() => null);
+      if (my !== pickSeq) return;
+      (found0 ? found0.rows : []).forEach(([title, author, id]) => {
+        if (id === excludeId) return;
+        const lab = fold(title);
+        scored.push([lab.startsWith(q) ? 0 : lab.includes(q) ? 1 : 2, { id, label: title, author, lab, hay: fold(title + " " + author) }]);
+      });
       if (!scored.length) return close();
       scored.sort((a, b) => a[0] - b[0]);
       const found = scored.slice(0, 8).map((x) => x[1]);
+      PICKED.clear();
+      found.forEach((it) => PICKED.set(it.id, it));
       hits.innerHTML = found.map((it) =>
         `<li data-id="${esc(it.id)}"><strong>${esc(it.label)}</strong> <span>${esc(it.author)}</span></li>`).join("");
       hits.hidden = false;
@@ -11090,7 +11505,7 @@ ${body}</body></html>`;
     hits.addEventListener("mousedown", (e) => {
       const li = e.target.closest("li");
       if (!li || !li.dataset.id) return;
-      const it = askItems().find((x) => x.id === li.dataset.id);
+      const it = PICKED.get(li.dataset.id);
       if (it) { input.value = it.label + " \u2014 " + it.author; onPick(it); }
       close();
     });
@@ -11298,26 +11713,25 @@ ${body}</body></html>`;
   // "Read next": three poems on the same subject from the same era or tradition, the same
   // three every time a poem is opened (picked from the poem's id, no randomness), from other
   // poets where there are enough. If the era has fewer than three, the subject alone is used.
-  let RELATED = null;   // "subject|category" -> poems, and "subject|" -> poems (built once)
-  function relatedPoems(p) {
-    if (!RELATED) {
-      RELATED = new Map();
-      const add = (k, q) => { if (!RELATED.has(k)) RELATED.set(k, []); RELATED.get(k).push(q); };
-      DATA.poems.forEach((q) => {
-        add(q.primarySubject + "|" + ((POETS[q.authorSlug] || {}).category || ""), q);
-        add(q.primarySubject + "|", q);
-      });
-    }
+  // The pool is one page of the era's list (data/l/c-<category>/), the page picked from the
+  // poem's id, less the poems on other subjects; else one page of the subject's list.
+  async function relatedPoems(p) {
+    let h = 0;
+    for (const ch of p.id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+    const fromList = async (name, keep) => {
+      const m = await listMeta(name);
+      if (!m.n) return [];
+      const es = m.items ? m.items : await listPage(name, m, h % m.pages.length);
+      return es.filter((q) => q.id !== p.id && keep(q));
+    };
     const cat = (POETS[p.authorSlug] || {}).category || "";
-    let pool = (RELATED.get(p.primarySubject + "|" + cat) || []).filter((q) => q.id !== p.id);
+    let pool = cat ? await fromList(catKey(cat), (q) => q.primarySubject === p.primarySubject) : [];
     let label = cat ? `More ${cat} poems on ${p.primarySubject}` : "";
     if (pool.length < 3 || !cat) {
-      pool = (RELATED.get(p.primarySubject + "|") || []).filter((q) => q.id !== p.id);
+      pool = await fromList("s-" + subjectKey(p.primarySubject), () => true);
       label = `More poems on ${p.primarySubject}`;
     }
     if (!pool.length) return null;
-    let h = 0;
-    for (const ch of p.id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
     const len = pool.length, start = h % len, step = len % 7919 ? 7919 : 1;
     const picked = [], poets = new Set([p.authorSlug]);
     // First pass: one poem each from other poets; second pass: anything left.
@@ -11330,8 +11744,15 @@ ${body}</body></html>`;
     }
     return { label, poems: picked };
   }
-  function relatedHTML(p) {
-    const r = relatedPoems(p);
+  // "Read next" drawn into its place under the poem once its list page is in.
+  function fillRelated(p) {
+    const here = location.hash;
+    relatedPoems(p).then((r) => {
+      const slot = location.hash === here && app.querySelector(".related-slot");
+      if (slot) slot.outerHTML = relatedHTML(r);
+    }, () => {});
+  }
+  function relatedHTML(r) {
     if (!r) return "";
     return `<section class="related" aria-label="${esc(r.label)}">
           <p class="section-label">Read next · ${esc(r.label)}</p>
@@ -11367,8 +11788,8 @@ ${body}</body></html>`;
     const poems = poetFile.poems;
     const themes = p.subjects.length
       ? `<div class="themes">${p.subjects.map((s) => `<span class="theme-tag" data-sub="${esc(s)}">${esc(s)}</span>`).join("")}</div>` : "";
-    const lang = langAttr(p.authorSlug, p.translator), tlang = textLangAttr(p.authorSlug, p.translator, p.text, p.id);
-    const form = DATA ? (POEM_BY_ID.get(p.id) || {}).form : "";   // index only (B3)
+    const lang = langAttr(p.authorSlug, p.translator, p.language, p.title), tlang = textLangAttr(p.authorSlug, p.translator, p.text, p.id, p.language);
+    const form = p.form || indexPoem(p.id).form || "";   // the shard carries it (build_shards.py)
     EARLY_DRAWN = DATA ? "" : location.hash;   // drawn without the index, which it does not fetch
     EARLY_REDRAW = false;
     const cite = { author: p.author, title: p.title, translator: p.translator, path: `/poem/${slug}/${n}/`,
@@ -11409,18 +11830,20 @@ ${body}</body></html>`;
           <button ${pv < 0 ? "disabled" : ""} data-go="${pv}"><span class="dir">← Previous</span>${pv >= 0 ? esc(poems[pv].title) : ""}</button>
           <button class="next" ${nx < 0 ? "disabled" : ""} data-go="${nx}"><span class="dir">Next →</span>${nx >= 0 ? esc(poems[nx].title) : ""}</button>
         </div>
-        ${DATA ? relatedHTML(p) : poetNextHTML(poems, n, p)}
+        ${DATA ? `<div class="related-slot"></div>` : poetNextHTML(poems, n, p)}
       </article>`;
     document.getElementById("back").addEventListener("click", () => { if (history.length > 1) history.back(); else location.hash = "#/poems"; });
     app.querySelectorAll(".theme-tag").forEach((t) => t.addEventListener("click", () => {
       const isSub = !DATA || DATA.subjects.some((s) => s.name === t.dataset.sub);
-      filterSubject = isSub ? t.dataset.sub : "All";
+      if (!isSub) { location.hash = "#/search?q=" + encodeURIComponent(t.dataset.sub); return; }
+      filterSubject = t.dataset.sub;
       filterForm = "All";
-      query = isSub ? "" : t.dataset.sub;
+      query = "";
       syncSearchInput(); location.hash = "#/poems";
     }));
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/poem/" + slug + "/" + b.dataset.go; }));
     bindEngine({ title: p.title, author: p.author, text: p.text, id: p.id });
+    fillRelated(p);
     bindReadingTools();
     bindFind();
     bindLineNumbers();
@@ -11481,7 +11904,7 @@ ${body}</body></html>`;
   function listenLang(authorSlug, translator, text) {
     if (String(translator || "").trim()) return "en";   // every translation here is in English
     const cat = (POETS[authorSlug] || {}).category || "", sample = String(text || "").slice(0, 4000);
-    if (langAttr(authorSlug, translator) || (!cat && /[ğışĞİŞ]/.test(sample))) return "tr";
+    if (isTurkishText(authorSlug, translator) || (!cat && /[ğışĞİŞ]/.test(sample))) return "tr";
     if (cat === "Anglo-Saxon" || cat === "Medieval" || /[æðþÆÐÞͰ-Ͽἀ-῿]/.test(sample) || looksArchaic(sample)) return "";
     const words = sample.toLowerCase().match(/[\p{L}']+/gu) || [];
     return words.length && words.filter((w) => ENGLISH_WORDS.has(w)).length / words.length >= 0.15 ? "en" : "";
@@ -11754,7 +12177,8 @@ ${body}</body></html>`;
         const base = portraitWebp(poet.portrait);
         if (base) { add(base + "-320.webp"); add(base + "-640.webp"); }
       }
-      (DATA ? DATA.poems : []).filter((p) => p.authorSlug === slug).forEach((p) => {
+      const pl = await loadPoetList(slug).catch(() => null);
+      (pl ? pl.poems : []).forEach((p) => {
         if (glossed.has(p.id)) add(`data/glosses/poems/${p.id}.json`);
         parList("poems", p.id).forEach((e) => add(`data/poets/${encodeURIComponent(e.with.split("/")[0])}.json`));
       });
