@@ -1743,7 +1743,58 @@
      "mode": "blocks"
     }
    ]
+  },
+  {
+   "orig_id": "runeberg/6",
+   "lang": "sv",
+   "translations": [
+    {
+     "id": "runeberg/0",
+     "mode": "blocks"
+    }
+   ]
+  },
+  {
+   "orig_id": "runeberg/7",
+   "lang": "sv",
+   "translations": [
+    {
+     "id": "runeberg/1",
+     "mode": "blocks"
+    }
+   ]
+  },
+  {
+   "orig_id": "runeberg/10",
+   "lang": "sv",
+   "translations": [
+    {
+     "id": "runeberg/4",
+     "mode": "blocks"
+    }
+   ]
+  },
+  {
+   "orig_id": "runeberg/11",
+   "lang": "sv",
+   "translations": [
+    {
+     "id": "runeberg/5",
+     "mode": "blocks"
+    }
+   ]
   }
  ],
- "works": []
+ "works": [
+  {
+   "orig_work": "frithiofs-saga-sv",
+   "translation_work": "fridthjofs-saga-holcomb",
+   "sections": "by-position"
+  },
+  {
+   "orig_work": "frithiofs-saga-sv",
+   "translation_work": "fridthjofs-saga-spalding",
+   "sections": "by-position"
+  }
+ ]
 }
