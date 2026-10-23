@@ -16467,6 +16467,36 @@
      "mode": "blocks"
     }
    ]
+  },
+  {
+   "orig_id": "kolcsey/12",
+   "lang": "hu",
+   "translations": [
+    {
+     "id": "kolcsey/0",
+     "mode": "blocks"
+    }
+   ]
+  },
+  {
+   "orig_id": "kolcsey/6",
+   "lang": "hu",
+   "translations": [
+    {
+     "id": "kolcsey/2",
+     "mode": "blocks"
+    }
+   ]
+  },
+  {
+   "orig_id": "berzsenyi/18",
+   "lang": "hu",
+   "translations": [
+    {
+     "id": "berzsenyi/3",
+     "mode": "blocks"
+    }
+   ]
   }
  ],
  "works": [
@@ -16534,6 +16564,11 @@
    "orig_work": "wilhelm-tell-de",
    "translation_work": "william-tell-martin",
    "sections": "by-title"
+  },
+  {
+   "orig_work": "konrad-wallenrod-pl",
+   "translation_work": "konrad-wallenrod-biggs",
+   "sections": "by-position"
   }
  ]
 }
