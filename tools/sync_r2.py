@@ -84,14 +84,22 @@ def run(args, **kw):
     return subprocess.run(args, cwd=ROOT, env=rclone_env(), **kw)
 
 
-def snapshot(files, dest):
+def snapshot(files, dest, want=None):
     """Write the committed (HEAD) copy of every published file under dest, so the bucket gets
-    exactly what GitHub has, whatever is being edited in the working tree meanwhile."""
+    exactly what GitHub has, whatever is being edited in the working tree meanwhile.
+    With `want` (a set of paths), only those, data/ and the top-level files are written: the
+    rest are unchanged since the last upload, and writing 180,000 pages to disk only to skip
+    them took hours once Windows Defender scanned each new file (23 Oct 2026)."""
     import tarfile
     p = subprocess.Popen(["git", "archive", "--format=tar", "HEAD", "--", *DIRS, *sorted({f for f in files if "/" not in f})],
                          cwd=ROOT, stdout=subprocess.PIPE)
     with tarfile.open(fileobj=p.stdout, mode="r|") as tar:
-        tar.extractall(dest, filter="data")
+        if want is None:
+            tar.extractall(dest, filter="data")
+        else:
+            for m in tar:
+                if m.name in want or m.name.startswith("data/") or "/" not in m.name:
+                    tar.extract(m, dest, filter="data")
     # tarfile stops at the end-of-archive mark, but git still writes the padding after it;
     # unread, it fills the pipe and git (and this script) wait for ever.
     p.stdout.read()
@@ -104,10 +112,33 @@ def main():
     files = subprocess.run(["git", "ls-files", "-z"], cwd=ROOT, capture_output=True).stdout.decode("utf-8").split("\0")
     files = sorted(f for f in files if f and published(f))
     print(f"{len(files)} published files")
+    import json
+    # The git blob id of each committed file: a file whose blob is the one recorded at the last
+    # upload is unchanged, so it is neither exported nor read again (its checksum is the
+    # manifest's). BLOBS sits beside the manifest; without it everything is read once.
+    tree = subprocess.run(["git", "ls-tree", "-r", "-z", "HEAD"], cwd=ROOT, capture_output=True).stdout.decode("utf-8")
+    blobs = {}
+    for ent in tree.split("\0"):
+        if "\t" in ent:
+            meta, path = ent.split("\t", 1)
+            blobs[path] = meta.split()[2]
+    blobs = {f: blobs[f] for f in files if f in blobs}
+    blobs_file = MANIFEST + ".blobs.json"
+    prev = prev_blobs = None
+    if "--full" not in sys.argv and "--mark-synced" not in sys.argv and os.path.exists(MANIFEST):
+        with open(MANIFEST, encoding="utf-8") as fh:
+            prev = json.load(fh)
+        if os.path.exists(blobs_file):
+            with open(blobs_file, encoding="utf-8") as fh:
+                prev_blobs = json.load(fh)
+    same = set()
+    if prev is not None and prev_blobs is not None:
+        same = {f for f, b in blobs.items() if prev_blobs.get(f) == b and f in prev and not f.startswith("data/")}
+        print(f"{len(same)} committed files unchanged since the last upload (not exported)", flush=True)
     with tempfile.TemporaryDirectory() as tmp:
         src = os.path.join(tmp, "site")
         print("Exporting the committed site ...", flush=True)
-        snapshot(files, src)
+        snapshot(files, src, want=set(files) - same if same else None)
         # The shards (tools/build_shards.py) are made from that same copy: they are derived
         # files, not in git, and are uploaded with the rest.
         r = subprocess.run([sys.executable, "-I", os.path.join(ROOT, "tools", "build_shards.py"), "--root", src], cwd=ROOT)
@@ -133,27 +164,25 @@ def main():
         # repo) lets a normal publish upload only the changed files with --no-check-dest (no
         # per-file HEAD) and delete only what disappeared, without listing the bucket.
         # --full, or a missing manifest, falls back to the old checksum sync + listing once.
-        import hashlib, json
+        import hashlib
         def sha(path):
             h = hashlib.sha1()
             with open(path, "rb") as fh:
                 for block in iter(lambda: fh.read(1 << 20), b""):
                     h.update(block)
             return h.hexdigest()
-        now = {f: sha(os.path.join(src, f)) for f in files}
+        now = {f: (prev[f] if f in same else sha(os.path.join(src, f))) for f in files}
+        def write_manifest():
+            for path, d in ((MANIFEST, now), (blobs_file, blobs)):
+                with open(path + ".tmp", "w", encoding="utf-8") as fh:
+                    json.dump(d, fh)
+                os.replace(path + ".tmp", path)
         if "--mark-synced" in sys.argv:
             # The bucket is known to match HEAD (a full sync just finished): record it without
             # touching R2 at all.
-            tmpm = MANIFEST + ".tmp"
-            with open(tmpm, "w", encoding="utf-8") as fh:
-                json.dump(now, fh)
-            os.replace(tmpm, MANIFEST)
+            write_manifest()
             print(f"Manifest written for {len(now)} files; nothing uploaded.")
             return
-        prev = None
-        if "--full" not in sys.argv and os.path.exists(MANIFEST):
-            with open(MANIFEST, encoding="utf-8") as fh:
-                prev = json.load(fh)
         # A list's _.json and the search manifest name the pages and the index version they
         # need, so they go up with the pages, after the files they name.
         later = lambda f: f.endswith(".html") or f == "sw.js" or (f.startswith("data/l/") and f.endswith("/_.json")) or f == "data/s/manifest.json"
@@ -194,10 +223,7 @@ def main():
             if r.returncode:
                 sys.exit(r.returncode)
         if not dry:
-            tmpm = MANIFEST + ".tmp"
-            with open(tmpm, "w", encoding="utf-8") as fh:
-                json.dump(now, fh)
-            os.replace(tmpm, MANIFEST)
+            write_manifest()
     print("R2 is in step with the repository." if not dry else "Dry run finished; nothing was changed.")
 
 
