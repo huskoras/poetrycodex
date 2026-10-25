@@ -1,0 +1,45 @@
+{
+ "slug": "li-shen",
+ "name": "Li Shen",
+ "dates": "772–846",
+ "era": "Classical Chinese",
+ "category": "Chinese & Japanese",
+ "portrait": null,
+ "credit": "",
+ "language": "Classical Chinese",
+ "bio": [
+  "Li Shen (772–846), courtesy name Gongchui, was a Tang dynasty official who rose to the rank of chancellor. As a young man he was a friend of Bai Juyi and Yuan Zhen and took part in the New Yuefu movement, which revived the folk-ballad form to comment on the hardships of ordinary people.",
+  "He is remembered above all for the two quatrains titled Min nong (Pity the Farmers), which the Complete Tang Poems preserves among his works. Their plain lines on the farmer's labour and hunger are among the most widely taught poems in China."
+ ],
+ "order": 63.279535,
+ "poems": [
+  {
+   "id": "li-shen/0",
+   "title": "憫農 其一 (Min nong qi yi)",
+   "authorSlug": "li-shen",
+   "author": "Li Shen",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "Tang; Wikisource transcription",
+   "note": "",
+   "text": "春種一粒粟，\n秋收萬顆子。\n四海無閒田，\n農夫猶餓死。",
+   "language": "Classical Chinese"
+  },
+  {
+   "id": "li-shen/1",
+   "title": "憫農 其二 (Min nong qi er)",
+   "authorSlug": "li-shen",
+   "author": "Li Shen",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "Tang; Wikisource transcription",
+   "note": "",
+   "text": "鋤禾日當午，\n汗滴禾下土。\n誰知盤中飧，\n粒粒皆辛苦。",
+   "language": "Classical Chinese"
+  }
+ ]
+}
