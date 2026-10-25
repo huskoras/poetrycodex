@@ -1,0 +1,45 @@
+{
+ "slug": "anonymous-polish",
+ "name": "Anonymous (Polish)",
+ "dates": "13th–15th c.",
+ "era": "Medieval",
+ "category": "Russian & Slavic",
+ "language": "Polish",
+ "portrait": "poets/anonymous-polish.jpg",
+ "credit": "Not a portrait of a poet (the poems are anonymous): the Bogurodzica in the Kraków manuscript of 1407 · Public domain (Wikimedia Commons)",
+ "bio": [
+  "The oldest surviving Polish religious poetry comes down anonymously in manuscripts of the thirteenth to fifteenth centuries. Its best-known piece, the hymn Bogurodzica (\"Mother of God\"), was sung for centuries as a prayer and a battle song, and the Lament świętokrzyski gives the voice of the Virgin Mary at the foot of the Cross.",
+  "The texts are given here in Old Polish as printed on Polish Wikisource: the Lament świętokrzyski as transcribed there, with editorial square brackets kept, and the first two stanzas of the Bogurodzica in the normalised transcription of Jan Łoś's edition (Lublin, 1922); his introduction, commentary and variant readings are left out."
+ ],
+ "order": 82.85,
+ "poems": [
+  {
+   "id": "anonymous-polish/0",
+   "title": "Lament świętokrzyski",
+   "authorSlug": "anonymous-polish",
+   "author": "Anonymous (Polish)",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Lament świętokrzyski",
+   "note": "",
+   "text": "Posłuchajcie, bracia miła,\nkcęć wam skorzyć krwawą głowę;\nusłyszycie mój zamętek,\njen mi się [z]stał w Wielki Piątek.\n\nPożałuj mię, stary, młody,\nboć mi przyszły krwawe gody.\nJednegociem Syna miała\ni tegociem ożalała.\n\nZamęt ciężki dostał się mie, ubogiej żenie,\nwidzęć rozkrwawione me miłe narodzenie;\nciężka moja chwila, krwawa godzin[a],\nwidzęć niewiernego Żydowina,\niż on bije, męczy mego miłego Syna.\n\nSynku miły i wybrany,\nrozdziel z matką swoją rany.\nA wszakom cię, Synku miły, w swem sercu nosiła,\na takież Tobie wiernie służyła.\n\nPrzemow k'matce, bych się ucieszyła,\nBo już jidziesz ode mnie, moja nadzieja miła.\n\nSynku, bych cię nisko miała,\nniecoś bych ci wspomagała.\nTwoja głowka krzywo wisa, tęć bych ja podparła,\nkrew po Tobie płynie, tęć bych ja utarła,\npicia wołasz, picia-ć bych ci dała,\nale nie lza dosiąc twego święteg[o] ciała.\n\nO anjele Gabryjele,\ngdzie jest ono twe wesele,\ncożeś mi go obiecował tak barzo wiele,\na rzekęcy: \"Panno, pełna jeś miłości!\".\nA ja pełna smutku i żałości.\nSprochniało we mnie ciało i moje wszytki kości.\n\nProścież Boga, wy miłe i żądne maciory,\nby wam nad dziatkami nie były takie to pozory,\njele ja, nieboga, ninie dziś zeźrzała\nnad swym, nad miłym Synem krasnym,\niż on cirpi męki nie będąc w żadnej winie.\n\nNie mam ani będę mieć jinego,\njedno ciebie, Synu, na krzyżu rozbitego.",
+   "language": "Polish"
+  },
+  {
+   "id": "anonymous-polish/1",
+   "title": "Bogurodzica",
+   "authorSlug": "anonymous-polish",
+   "author": "Anonymous (Polish)",
+   "primarySubject": "Religion",
+   "subjects": [
+    "Religion"
+   ],
+   "collection": "Bogurodzica (Jan Łoś edition, 1922)",
+   "note": "",
+   "text": "Bogu rodzica, dziewica, Bogiem sławiena Maryja!\nU twego syna, gospodzina, matko zwolena Maryja,\nZyszczy nam, spuści nam.\nKiryjelejzon.\n\nTwego dziela krzciciela, bożycze,\nUsłysz głosy, napełń myśli człowiecze.\nSłysz modlitwę, jąż nosimy,\nA dać raczy, jegoż prosimy,\nA na świecie zbożny pobyt,\nPo żywocie rajski przebyt.\nKiryjelejzon.",
+   "language": "Polish"
+  }
+ ]
+}
