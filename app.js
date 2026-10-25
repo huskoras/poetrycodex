@@ -11915,12 +11915,21 @@ ${body}</body></html>`;
     const words = sample.toLowerCase().match(/[\p{L}']+/gu) || [];
     return words.length && words.filter((w) => ENGLISH_WORDS.has(w)).length / words.length >= 0.15 ? "en" : "";
   }
-  // The device's voice for that language: one in the reader's own variant (en-GB, en-US) if
-  // there is one, else the browser's default for it, else the first.
-  function listenVoice(lang) {
-    const vs = LISTEN_OK ? speechSynthesis.getVoices().filter((v) => String(v.lang).toLowerCase().replace("_", "-").split("-")[0] === lang) : [];
+  // The device's best voice for that language. The owner's choice (25 Oct 2026): a natural-sounding
+  // woman's voice. Neural voices (Edge's "Online (Natural)", Apple's Enhanced and Premium) come first,
+  // then known women's voices, then the reader's own variant (en-GB, en-US), then the default.
+  // localOnly skips network voices, for when one has failed.
+  const VOICE_WOMEN = /\b(aria|jenny|ava|emma|michelle|ana|sonia|libby|maisie|natasha|clara|emily|molly|neerja|leah|emel|seda|yelda|samantha|allison|susan|serena|kate|karen|moira|tessa|fiona|zoe|victoria|nicky|zira|hazel|heera|catherine|female)\b/i;
+  const VOICE_MEN = /\b(guy|ryan|andrew|brian|christopher|eric|roger|steffan|davis|tony|jason|thomas|william|liam|prabhat|ahmet|tolga|david|mark|george|james|richard|daniel|alex|fred|tom|aaron|arthur|oliver|rishi|gordon|male)\b/i;
+  function listenVoice(lang, localOnly) {
+    const vs = LISTEN_OK ? speechSynthesis.getVoices().filter((v) => String(v.lang).toLowerCase().replace("_", "-").split("-")[0] === lang && (!localOnly || v.localService)) : [];
     const own = String(navigator.language || "").toLowerCase();
-    return vs.find((v) => String(v.lang).toLowerCase().replace("_", "-") === own) || vs.find((v) => v.default) || vs[0] || null;
+    const score = (v) => {
+      const n = String(v.name);
+      return (/natural|neural|premium|enhanced/i.test(n) ? 8 : 0) + (VOICE_WOMEN.test(n) ? 4 : 0) - (VOICE_MEN.test(n) ? 6 : 0)
+        + (/^google/i.test(n) ? 1 : 0) + (String(v.lang).toLowerCase().replace("_", "-") === own ? 2 : 0) + (v.default ? 1 : 0);
+    };
+    return vs.reduce((best, v) => (!best || score(v) > score(best) ? v : best), null);
   }
   // Called by a poem or book page once it is drawn. The voices can arrive a moment later.
   function bindListen(lang) {
@@ -12103,7 +12112,12 @@ ${body}</body></html>`;
       ctx.timer = setTimeout(speakUnit, ctx.units[ctx.at].pause ? 450 : 0);
     };
     ut.onend = next;
-    ut.onerror = (e) => { if (e.error !== "interrupted" && e.error !== "canceled") next(); };
+    ut.onerror = (e) => {
+      if (e.error === "interrupted" || e.error === "canceled") return;
+      const local = ctx.voice && !ctx.voice.localService ? listenVoice(ctx.lang, true) : null;
+      if (local && gen === ctx.gen && LISTEN === ctx && ctx.playing) { ctx.voice = local; speakUnit(); return; }   // a network voice failed: read on with the device's own
+      next();
+    };
     speechSynthesis.speak(ut);
   }
   // The soft background on the line being read, scrolled into view when it leaves it.
