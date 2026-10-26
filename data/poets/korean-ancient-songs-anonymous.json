@@ -1,0 +1,47 @@
+{
+ "slug": "korean-ancient-songs-anonymous",
+ "name": "Anonymous (Ancient Korean songs)",
+ "dates": "Gojoseon to 1st c. CE (traditional)",
+ "era": "Ancient Korea",
+ "category": "Korean",
+ "language": "Classical Chinese",
+ "portrait": null,
+ "credit": "Text: Wikisource (zh.wikisource.org, 箜篌引 (佚名); 三國遺事/卷第二), public domain. No portrait.",
+ "bio": [
+  "These are the oldest songs in the Korean tradition, preserved in Classical Chinese rather than in the Korean in which they were first sung. They stand at the opening of every survey of Korean literature, and their authorship is anonymous or legendary.",
+  "The first, Gongmudohaga, is attributed to the wife of a madman who drowned crossing a river, and is transmitted in the Gogeumju and the Yuefu shiji. The second, Gujiga, the Song of the Turtle, comes from the account of Garakguk (Gaya) in the Samguk yusa (1281), where it is sung to summon the founder-king down from Mount Guji."
+ ],
+ "order": 42.45,
+ "poems": [
+  {
+   "id": "korean-ancient-songs-anonymous/0",
+   "title": "공무도하가 (公無渡河歌, Gongmudohaga)",
+   "authorSlug": "korean-ancient-songs-anonymous",
+   "author": "Anonymous (Ancient Korean songs)",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore"
+   ],
+   "collection": "Ancient Korean songs",
+   "note": "",
+   "language": "Classical Chinese",
+   "source": "Transmitted in the Gogeumju (古今注) and the Yuefu shiji (樂府詩集), as 箜篌引 (又名〈公無渡河〉); text from zh.wikisource 箜篌引 (佚名).",
+   "text": "公無渡河\n公竟渡河\n墮河而死\n當奈公何"
+  },
+  {
+   "id": "korean-ancient-songs-anonymous/1",
+   "title": "구지가 (龜旨歌, Gujiga)",
+   "authorSlug": "korean-ancient-songs-anonymous",
+   "author": "Anonymous (Ancient Korean songs)",
+   "primarySubject": "Mythology & Folklore",
+   "subjects": [
+    "Mythology & Folklore"
+   ],
+   "collection": "Ancient Korean songs",
+   "note": "",
+   "language": "Classical Chinese",
+   "source": "Samguk yusa (三國遺事), book 2, Garakguk-gi (駕洛國記); text from zh.wikisource.",
+   "text": "龜何龜何\n首其現也\n若不現也\n燔灼而喫也"
+  }
+ ]
+}
