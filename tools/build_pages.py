@@ -1028,9 +1028,59 @@ def blog_index(posts):
 
 def not_found_page():
     """404.html: GitHub Pages serves it for any address that does not exist."""
-    body = r"""    <article class="detail not-found">
-      <p class="detail-subject">Page not found</p>
-      <h1 class="detail-title">This page is not in the Codex</h1>
+    body = r"""<article class="detail not-found">
+      <style>
+        .nf-quill { display: block; width: min(220px, 60vw); height: auto; margin: 0 auto .4rem; overflow: visible; }
+        .nf-quill .nf-ink { stroke: var(--accent); }
+        .nf-quill .nf-dot { fill: var(--accent); }
+        .nf-quill .nf-feather { fill: var(--surface-alt); stroke: var(--gold); }
+        .nf-quill .nf-vane { stroke: var(--gold); }
+        .nf-quill .nf-nib { fill: var(--ink-soft); }
+        .nf-quill .nf-shadow { fill: var(--line); }
+        .nf-code { font-family: var(--sans); letter-spacing: .32em; color: var(--gold-ink); font-size: .8rem; margin: 0 0 .5rem; }
+        .nf-verse { font-family: var(--serif); font-style: italic; font-size: 1.12rem; line-height: 1.6; color: var(--ink-soft); margin: 1.1rem auto 1.3rem; }
+        .nf-verse cite { display: block; font-style: normal; font-family: var(--sans); font-size: .78rem; letter-spacing: .04em; color: var(--faint); margin-top: .35rem; }
+        .nf-verse a { color: inherit; }
+        .nf-instead { margin: 1.6rem 0 0; font-family: var(--serif); font-style: italic; }
+        .nf-instead a { color: var(--accent); }
+      </style>
+      <svg class="nf-quill" viewBox="0 0 220 210" role="img" aria-label="A quill pen writing a question mark">
+        <ellipse class="nf-shadow" cx="110" cy="196" rx="46" ry="5"/>
+        <g id="nf-scene">
+          <path id="nf-q" class="nf-ink" d="M78 74 C76 40 142 34 144 70 C146 98 110 102 110 128 L110 146" fill="none" stroke-width="9" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1">
+            <animate attributeName="stroke-dashoffset" values="1;0;0" keyTimes="0;.46;1" dur="5s" repeatCount="indefinite"/>
+          </path>
+          <circle class="nf-dot" cx="110" cy="172" r="0">
+            <animate attributeName="r" values="0;0;7.5;6;6" keyTimes="0;.56;.6;.63;1" dur="5s" repeatCount="indefinite"/>
+          </circle>
+          <g>
+            <animateMotion dur="5s" repeatCount="indefinite" keyPoints="0;.86;1;1;.94" keyTimes="0;.46;.56;.62;1" calcMode="linear" path="M78 74 C76 40 142 34 144 70 C146 98 110 102 110 128 L110 146 L110 172"/>
+            <g transform="rotate(32)">
+              <animateTransform attributeName="transform" type="rotate" values="32;26;34;30;32" keyTimes="0;.25;.46;.6;1" dur="5s" repeatCount="indefinite"/>
+              <path class="nf-nib" d="M0 0 L-3.2 -14 L3.2 -14 Z"/>
+              <path class="nf-feather" d="M0 -12 C-14 -40 -20 -80 -6 -118 C4 -96 18 -62 10 -30 C8 -22 4 -16 0 -12 Z" stroke-width="1.6"/>
+              <path class="nf-vane" d="M0 -14 C-2 -50 -4 -85 -6 -116 M-2 -40 L-11 -50 M-3 -58 L-13 -70 M-4 -76 L-13 -90 M-1 -46 L8 -58 M-2 -66 L10 -80 M-4 -86 L6 -98" fill="none" stroke-width="1.2" stroke-linecap="round"/>
+            </g>
+          </g>
+          <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.88;.97;1" dur="5s" repeatCount="indefinite"/>
+        </g>
+      </svg>
+      <p class="nf-code">404</p>
+      <h1 class="detail-title">This page is nobody</h1>
+      <blockquote class="nf-verse" id="nf-verse">I’m nobody! Who are you?<br />Are you nobody, too?<cite>— <a href="/poem/dickinson/115/">Emily Dickinson</a></cite></blockquote>
+      <script>
+        // One of five lines about being lost, a different one on each visit (Dickinson without script).
+        (function () {
+          var V = [
+            ["Midway upon the journey of our life<br />I found myself within a forest dark,<br />For the straightforward pathway had been lost.", "/work/divine-comedy-longfellow/0/", "Dante, translated by Longfellow"],
+            ["Failing to fetch me at first keep encouraged,<br />Missing me one place search another,<br />I stop somewhere waiting for you.", "/poem/whitman/25/", "Walt Whitman"],
+            ["Does the road wind up-hill all the way?<br />Yes, to the very end.", "/poem/rossetti_c/259/", "Christina Rossetti"],
+            ["The World was all before them, where to choose<br />Thir place of rest, and Providence thir guide.", "/work/paradise-lost/11/", "John Milton"]
+          ];
+          var k = Math.floor(Math.random() * (V.length + 1));
+          if (k < V.length) document.getElementById("nf-verse").innerHTML = V[k][0] + '<cite>— <a href="' + V[k][1] + '">' + V[k][2] + "</a></cite>";
+        })();
+      </script>
       <p class="page-sub">The address may be mistyped, or the page may have moved. Search the archive, or start from one of these.</p>
       <form class="archive-search" id="nf-search" action="/" method="get" autocomplete="off">
         <input type="search" name="q" placeholder="Search by poem or poet…" aria-label="Search the archive" />
@@ -1045,12 +1095,16 @@ def not_found_page():
         <a href="/#/oracle">The Oracle</a>
         <a href="/#/about">About</a>
       </nav>
+      <p class="nf-instead"><a href="/#/surprise">Or read a poem instead</a></p>
     </article>
     <script>
       (function () {
         // /poets, /about … typed as paths are meant as the archive's pages of that name.
         var path = location.pathname.replace(/\/+$/, "").toLowerCase();
         if (/^\/(poems|poets|eras|oracle|about)$/.test(path)) { location.replace("/#" + path); return; }
+        // the quill's little animation: shown finished, and still, to readers who ask for less motion
+        var quill = document.querySelector(".nf-quill");
+        if (quill && quill.pauseAnimations && matchMedia("(prefers-reduced-motion: reduce)").matches) { quill.pauseAnimations(); quill.setCurrentTime(3.5); }
         document.getElementById("nf-search").addEventListener("submit", function (e) {
           e.preventDefault();
           var q = this.q.value.trim();

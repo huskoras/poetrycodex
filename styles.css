@@ -550,6 +550,13 @@ a.az.active { background: var(--accent); border-color: var(--accent); color: var
 .poem-text.is-prose p { margin: 0 0 1em; }
 .poem-text.is-prose p:last-child { margin-bottom: 0; }
 .prose-note { font-family: var(--sans); font-size: .76rem; letter-spacing: .02em; color: var(--faint); margin: 1.4rem 0 0; }
+/* The printer's close: one gold star under the last line (poemBlock in app.js). */
+.fleuron { margin: 2.1rem 0 .2rem; padding-left: 1.3rem; text-align: center; color: var(--gold); font-size: .95rem; line-height: 1; opacity: .9; user-select: none; }
+@media (max-width: 560px) { .fleuron { padding-left: .75rem; } }
+/* A work's opening section, when it is prose, begins with a gold initial three lines deep. */
+.poem-text.is-prose.work-opening > p:first-of-type::first-letter { float: left; font-family: var(--serif); font-size: 3.15em;
+  line-height: .82; padding: .07em .1em 0 0; color: var(--gold-ink); font-weight: 500; }
+.foot-colophon { flex-basis: 100%; opacity: .8; }
 /* Optional line numbers for long poems and work sections: every fifth line, in a
    right-hand gutter. They count the lines of this edition, not a critical edition's. */
 .ln-bar { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin: 0 0 .9rem; }
@@ -1754,6 +1761,7 @@ textarea.ask-input {
   body.pc-printing { background: #fff; }
   body.pc-printing .pr-sheet { display: block; color: #000; font-family: Georgia, "Times New Roman", var(--serif), serif; }
   .pr-sheet * { background: none !important; box-shadow: none !important; color: #000 !important; }
+  .pr-body::after { content: "º6" / ""; display: block; margin: 1.4em 0 0; text-align: center; font-size: 10pt; }
   .pr-head { margin: 0 0 1.4rem; padding-bottom: .7rem; border-bottom: .5pt solid #000; }
   .pr-kicker { margin: 0 0 .2rem; font-size: 9pt; letter-spacing: .08em; text-transform: uppercase; }
   .pr-title { margin: 0 0 .25rem; font-family: inherit; font-size: 20pt; font-weight: normal; line-height: 1.2; }

@@ -1293,6 +1293,7 @@
         + `<button type="button" class="hl-note-btn hl-more" data-more="1" aria-haspopup="dialog">More on this line</button></span>`
         + `<span class="hl-bar-group hl-bar-acts">
              <button type="button" class="hl-act" data-act="quote">Copy quote</button>
+             <button type="button" class="hl-act" data-act="picture" aria-label="Save these lines as a picture">Save as picture</button>
              <button type="button" class="hl-act" data-act="link">Link to lines</button>
              <button type="button" class="hl-act" data-act="lookup">Look up</button>
              <button type="button" class="hl-act" data-act="passage" aria-haspopup="menu" aria-expanded="false">Add passage to…</button>
@@ -1328,6 +1329,7 @@
                          lang: lang ? ` lang="${esc(lang)}"` : "", ok: true, own: true }], 0, { a: q.a, b: q.b }, null);
             return;
           }
+          if (q && b.dataset.act === "picture") { window.getSelection().removeAllRanges(); quoteCard(q, hadFocus); return; }
           if (q) quoteAction(b.dataset.act, q, hadFocus);
           return;
         }
@@ -1690,6 +1692,84 @@
     };
     copy("MLA");
   }
+  // "Save as picture": the lines chosen, set in the Codex's navy and gold on a square card, a
+  // PNG drawn in the reader's own browser (shared where the phone can share files, otherwise
+  // downloaded). Only the poem's own words go on it, with the poet, the title and the address.
+  function quoteCard(q, hadFocus) {
+    if (!SEL_CTX) return;
+    const rows = String(q.text || "").replace(/\s+$/, "").split("\n").map((l) => l.replace(/\s+$/, ""));
+    if (rows.filter((l) => l.trim()).length > 12 || q.text.length > 600) {
+      selToast("Choose up to twelve lines for a picture.", null, hadFocus); return;
+    }
+    const c = SEL_CTX.cite || {};
+    const S = 1200, PAD = 130, W = S - 2 * PAD;
+    const cv = document.createElement("canvas"); cv.width = cv.height = S;
+    const g = cv.getContext("2d");
+    const rtl = RTL_RE.test(q.text);
+    const SERIF = 'Fraunces, "Cormorant Garamond", Georgia, serif', SANS = 'Inter, system-ui, sans-serif';
+    const wrap = (line, px) => {          // a line too wide for the card turns over, indented
+      g.font = `400 ${px}px ${SERIF}`;
+      if (g.measureText(line).width <= W) return [line];
+      const out = []; let cur = "";
+      for (const w of line.split(/(\s+)/)) {
+        if (cur && g.measureText(cur + w).width > W - (out.length ? px : 0)) { out.push(cur.replace(/\s+$/, "")); cur = w.replace(/^\s+/, ""); }
+        else cur += w;
+      }
+      if (cur.trim()) out.push(cur);
+      return out.map((t, k) => (k ? "\u2003" : "") + t);
+    };
+    const draw = () => {
+      let px = 54, set;
+      for (; px >= 28; px -= 2) {
+        set = rows.flatMap((l) => l.trim() ? wrap(l.replace(/^\s+/, (sp) => "\u2002".repeat(Math.min(sp.length, 8))), px) : [""]);
+        if (set.length * px * 1.5 <= 640) break;
+      }
+      g.fillStyle = "#1c2f44"; g.fillRect(0, 0, S, S);
+      g.strokeStyle = "#cba650"; g.lineWidth = 2;
+      g.beginPath(); g.moveTo(PAD, 118); g.lineTo(S - PAD, 118); g.moveTo(PAD, S - 118); g.lineTo(S - PAD, S - 118); g.stroke();
+      g.fillStyle = "#cba650"; g.textAlign = "center"; g.textBaseline = "alphabetic";
+      g.font = `400 34px ${SERIF}`; g.fillText("\u2726", S / 2, 104);
+      const lh = px * 1.5, blockH = set.length * lh;
+      let y = 160 + Math.max(0, (700 - blockH) / 2) + px;
+      g.fillStyle = "#f3eee2"; g.font = `400 ${px}px ${SERIF}`;
+      g.direction = rtl ? "rtl" : "ltr"; g.textAlign = rtl ? "right" : "left";
+      for (const t of set) { if (t) g.fillText(t, rtl ? S - PAD : PAD, y); y += lh; }
+      g.direction = "ltr"; g.textAlign = "left";
+      g.fillStyle = "#cba650"; g.font = `500 30px ${SANS}`;
+      const by = String(c.author || "").toUpperCase();
+      if ("letterSpacing" in g) g.letterSpacing = "4px";
+      g.fillText(by, PAD, S - 196);
+      if ("letterSpacing" in g) g.letterSpacing = "0px";
+      const title = c.work && c.title ? `${c.work}, ${c.title}` : c.work || c.title || "";
+      g.fillStyle = "#d9d2c2"; g.font = `italic 400 30px ${SERIF}`;
+      let tt = title;
+      if (g.measureText(tt).width > W) { while (tt.length > 4 && g.measureText(tt + "…").width > W) tt = tt.slice(0, -1); tt = tt.replace(/\s+$/, "") + "…"; }
+      if (tt) g.fillText(tt, PAD, S - 150);
+      g.fillStyle = "rgba(243,238,226,.6)"; g.font = `400 24px ${SANS}`; g.textAlign = "right";
+      g.fillText("poetrycodex.com", S - PAD, S - 74);
+      cv.toBlob((blob) => {
+        if (!blob) { selToast("The picture could not be made.", null, hadFocus); return; }
+        const name = (String(c.path || "poem").replace(/^\/|\/$/g, "").replace(/^(poem|work)\//, "").replace(/[^\w-]+/g, "-") || "poem") + ".png";
+        const save = () => {
+          const a = document.createElement("a");
+          a.href = URL.createObjectURL(blob); a.download = name;
+          document.body.appendChild(a); a.click(); a.remove();
+          setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+          selToast("Picture saved.", null, hadFocus);
+        };
+        let file = null;
+        try { file = new File([blob], name, { type: "image/png" }); } catch (e) { file = null; }
+        if (file && navigator.canShare && window.matchMedia("(pointer: coarse)").matches && navigator.canShare({ files: [file] })) {
+          navigator.share({ files: [file], title: c.title || c.work || "Poetry Codex" }).then(() => announce("Picture shared."),
+            (e) => { if (!e || e.name !== "AbortError") save(); });
+        } else save();
+      }, "image/png");
+    };
+    const fonts = document.fonts && document.fonts.load
+      ? Promise.all([document.fonts.load("400 40px Fraunces"), document.fonts.load("italic 400 30px Fraunces"), document.fonts.load("500 30px Inter")]).catch(() => {})
+      : Promise.resolve();
+    fonts.then(draw, draw);
+  }
   // A small notice at the foot of the screen; also read out by the live region.
   let toastEl = null, toastTimer = 0, liveEl = null;
   function announce(msg) {
@@ -1869,7 +1949,10 @@
     if (!document.getElementById("gl-list")) list.id = "gl-list";
     list.innerHTML = `<h2 class="section-label">Study notes on this ${/^work:/.test(entry.id) ? "book" : "poem"}</h2><ol>${notes.map((g) =>
       `<li><button type="button" class="gl-li" data-g="${esc(g.id)}"><span class="gl-li-t">${esc(g.title)}</span>${g.ref ? ` <span class="gl-li-r">${esc(g.ref)}</span>` : ""}</button><span class="gl-li-s">${esc(g.short || "")}</span></li>`).join("")}</ol>`;
-    root.after(list);
+    // after the printer's star (and the prose note) that close the text
+    let at = root;
+    while (at.nextElementSibling && /^(prose-note|fleuron)$/.test(at.nextElementSibling.className)) at = at.nextElementSibling;
+    at.after(list);
     ctx.glList = list;
     list.querySelectorAll(".gl-li").forEach((b) => b.addEventListener("click", () => openGloss(b.dataset.g, b, set)));
   }
@@ -2381,6 +2464,7 @@
     const acts = [
       own ? `<button type="button" class="lp-act" data-act="quote">Copy quote</button>` : "",
       own ? `<button type="button" class="lp-act" data-act="link">Copy link to ${units}</button>` : "",
+      own ? `<button type="button" class="lp-act" data-act="picture" aria-label="Save these ${units} as a picture">Save as picture</button>` : "",
       listen ? `<button type="button" class="lp-act" data-act="listen">Listen from here</button>` : "",
       learn ? `<button type="button" class="lp-act" data-act="learn" aria-haspopup="dialog">Learn this stanza</button>` : "",
       own && PRINT_NOW && PRINT_NOW.hash === location.hash ? `<button type="button" class="lp-act" data-act="print" aria-haspopup="dialog">Print ${a === b ? "this " + unit : "these " + units}</button>` : "",
@@ -2431,6 +2515,7 @@
     body.querySelectorAll(".lp-act").forEach((btn) => btn.addEventListener("click", () => {
       const act = btn.dataset.act;
       if (act === "quote" || act === "link") { const q = lpQuote(a, b); if (q) quoteAction(act, q, false); return; }
+      if (act === "picture") { const q = lpQuote(a, b); if (q) quoteCard(q, false); return; }
       if (act === "print") { const from = LP.from; closeLinePanel(false); openPrint({ a, b }, from); return; }
       if (act === "listen") {
         if (!LP_WIDE.matches) closeLinePanel(false);
@@ -3655,8 +3740,9 @@
         <button class="ln-toggle" type="button" aria-pressed="${on}">${prose ? "Paragraph numbers" : "Line numbers"}</button></span>` : ""}
       </div>` : label;
     const solo = `
-      <div class="poem-text${prose ? " is-prose" : ""}${on ? " numbered" : ""}"${o.lang || ""}>${poemHTML(text, prose)}</div>
-      ${prose ? `<p class="prose-note">This translation is printed as prose in its source edition.</p>` : ""}`;
+      <div class="poem-text${prose ? " is-prose" : ""}${on ? " numbered" : ""}${o.opening ? " work-opening" : ""}"${o.lang || ""}>${poemHTML(text, prose)}</div>
+      ${prose ? `<p class="prose-note">This translation is printed as prose in its source edition.</p>` : ""}
+      <p class="fleuron" aria-hidden="true">✦</p>`;
     return `${head}${o.parallel ? `<div class="text-solo">${solo}</div><div class="fx-slot" hidden></div>` : solo}`;
   }
   // A prose translation with a line map (data/linemaps/<slug>.json, from the Perseus
@@ -7766,7 +7852,7 @@
       <p class="result-meta">${num(results.length)} poem${results.length === 1 ? "" : "s"}${filterSubject !== "All" ? " · " + esc(filterSubject) : ""}${filterForm !== "All" ? " · " + esc(formLabel(filterForm)) : ""}${works.length ? ` · <a href="#list-works" class="works-jump">${num(works.length)} long work${works.length === 1 ? "" : "s"} ↓</a>` : ""}</p>
       ${!query && results.length && (filterSubject !== "All" || filterForm !== "All") ? `<p class="surprise-row surprise-list"><a class="surprise-link" href="${esc(surpriseHref({
         subject: filterSubject !== "All" ? subjectKey(filterSubject) : "", form: filterForm !== "All" ? filterForm : "" }))}">Surprise me from these</a></p>` : ""}
-      <div class="grid">${results.length ? first.map(cardHTML).join("") : works.length ? "" : `<p class="empty">No poems match.</p>`}</div>
+      <div class="grid">${results.length ? first.map(cardHTML).join("") : works.length ? "" : `<p class="empty" role="status">No poem answers to that. Try a first line, a poet’s name, or a single word.</p>`}</div>
       ${moreHTML(results.length)}
       ${works.length ? `
       <details class="list-works" id="list-works"${query || !results.length ? " open" : ""}>
@@ -8244,7 +8330,7 @@
         ${otherTrHTML(WORKS[slug], i)}
         <hr class="rule">
         ${enginePanel(s.text, { gloss: true })}
-        ${poemBlock(s.text, { translator: w.translator, lang: textLangAttr(w.authorSlug, w.translator, s.text, "work:" + slug, w.language), work: true,
+        ${poemBlock(s.text, { translator: w.translator, lang: textLangAttr(w.authorSlug, w.translator, s.text, "work:" + slug, w.language), work: true, opening: i === 0,
                               parallel: parCtlHTML("works", slug, par) })}
         <p class="book-source-slot" hidden></p>
         ${citeHTML(cite, entry)}
@@ -12379,6 +12465,7 @@ ${body}</body></html>`;
   }
 
   // ---------- start ----------
+  try { console.info("Poetry Codex — poetry in the public domain, read closely.\nA poem we lack, or a slip in one we have? Write to admin@poetrycodex.com."); } catch (e) { /* no console */ }
   // Search works before the index is in (it opens the archive, which draws when the index
   // arrives); the page shows the masthead, or "Opening the archive…", until then.
   wireSearch();
