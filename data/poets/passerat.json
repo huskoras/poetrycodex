@@ -1,0 +1,43 @@
+{
+ "slug": "passerat",
+ "name": "Jean Passerat",
+ "dates": "1534–1602",
+ "era": "Renaissance",
+ "category": "French",
+ "language": "Middle French",
+ "portrait": "poets/passerat.jpg",
+ "credit": "Engraved portrait of Jean Passerat · Public domain (Wikimedia Commons)",
+ "bio": [
+  "Jean Passerat (1534–1602) was a French humanist, Latin scholar and poet. Born in Troyes, he studied in Paris and later held a chair of eloquence at the Collège royal, where he taught Latin literature.",
+  "He wrote in both Latin and French, and is remembered for his light, graceful verse, and for his share in the Satire Ménippée, the anti-League satire of the 1590s. His villanelle on the lost turtle-dove, with its two refrains, became the model of the villanelle form."
+ ],
+ "order": 190.05,
+ "poems": [
+  {
+   "id": "passerat/0",
+   "title": "Villanelle (J’ay perdu ma tourterelle)",
+   "authorSlug": "passerat",
+   "author": "Jean Passerat",
+   "primarySubject": "Love",
+   "subjects": [
+    "Love"
+   ],
+   "collection": "The Oxford Book of French Verse (1907)",
+   "note": "",
+   "text": "J’AI perdu ma tourterelle ;\nEst-ce point celle que j’oy ?\nJe veux aller après elle.\n\nTu regrettes ta femelle,\nHélas ! aussi fais-je moy.\nJ’ai perdu ma tourterelle.\n\nSi ton amour est fidelle,\nAussi est ferme ma foy ;\nJe veux aller après elle.\n\nTa plainte se renouvelle,\nToujours plaindre je me doy ;\nJ’ai perdu ma tourterelle.\n\nEn ne voyant plus la belle,\nPlus rien de beau je ne voy ;\nJe veux aller après elle.\n\nMort, que tant de fois j’appelle,\nPrends ce qui se donne à toy !\nJ’ai perdu ma tourterelle ;\nJe veux aller après elle."
+  },
+  {
+   "id": "passerat/1",
+   "title": "Sur la mort de Thulène",
+   "authorSlug": "passerat",
+   "author": "Jean Passerat",
+   "primarySubject": "Social Commentaries",
+   "subjects": [
+    "Social Commentaries"
+   ],
+   "collection": "The Oxford Book of French Verse (1907)",
+   "note": "",
+   "text": "SIRE, Thulène est mort: j’ay veu sa sépulture.\nMais il est presque en vous de le resusciter\nFaictes de son estat un poète hériter:\nLe poète et le fou sont de mesme nature.\n\nL’un fuit l’ambition, et l’autre n’en a cure,\nTous deux ne font jamais leur argent profiter ;\nTous deux sont d’une humeur aisée à irriter,\nL’un parle sans penser, et l’autre à l’aventure.\n\nL’un a la teste verte, et l’autre va couvert\nD’un joly chapperon faict de jaune et de vert ;\nL’un chante des sonets. l’autre danse aus sonettes.\n\nLe plus grand différent qui se trouve entre nous,\nC’est qu’on dict que tousjours fortune aime les fouls\nEt qu’elle est peu souvent favorable aux poètes."
+  }
+ ]
+}
