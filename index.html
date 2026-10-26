@@ -30,13 +30,25 @@
   <link rel="preload" as="font" type="font/woff2" href="fonts/fraunces-normal-latin.woff2" crossorigin />
   <!-- The reader's "Aa" choices (text size, light/dark), applied before the page draws. -->
   <script>window.pcSetTheme=function(n){var d=document.documentElement;d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};window.pcToggleTheme=function(){var d=document.documentElement,c=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("pc-theme",n)}catch(e){}document.querySelectorAll(".rt-panel [data-theme]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.theme===n))})};try{var d=document.documentElement,t=localStorage.getItem("pc-theme"),s=localStorage.getItem("pc-text");if(t==="light"||t==="dark")d.dataset.theme=t;if(s==="l"||s==="xl")d.dataset.text=s}catch(e){}</script>
-  <link rel="stylesheet" href="styles.css?v=84" />
+  <link rel="stylesheet" href="styles.css?v=83" />
   <!-- The home page is drawn from this small file while the large index loads (app.js, "a fast first screen").
        Asked for here, while app.js is still loading, with the same fetch() app.js reads it with
        (a rel=preload copy could not be handed over through the service worker, and came down twice). -->
   <script>try{window.pcHome=fetch("data/home.json",{priority:"high"});window.pcHome.catch(function(){})}catch(e){}</script>
   <!-- The app, fetched at once and run after the page has been read (defer): the inline scripts above and in the body run first. -->
   <script defer src="app.js?v=152"></script>
+  <!-- Small touches of 27 Oct 2026, kept here until styles.css next changes its ?v= (a new
+       number there rewrites every static page, which waits for the 15 Nov regeneration). -->
+  <style>
+    /* The printer's close: one gold star under the last line (poemBlock in app.js). */
+    .fleuron { margin: 2.1rem 0 .2rem; padding-left: 1.3rem; text-align: center; color: var(--gold); font-size: .95rem; line-height: 1; opacity: .9; user-select: none; }
+    @media (max-width: 560px) { .fleuron { padding-left: .75rem; } }
+    /* A work's opening section, when it is prose, begins with a gold initial. */
+    .poem-text.is-prose.work-opening > p:first-of-type::first-letter { float: left; font-family: var(--serif); font-size: 3.15em;
+      line-height: .82; padding: .07em .1em 0 0; color: var(--gold-ink); font-weight: 500; }
+    .foot-colophon { flex-basis: 100%; opacity: .8; }
+    @media print { .pr-body::after { content: "\2726" / ""; display: block; margin: 1.4em 0 0; text-align: center; font-size: 10pt; } }
+  </style>
 </head>
 <body>
   <script>document.body.dataset.route=/^(#\/?(\?.*)?)?$/.test(location.hash)?"home":"sub"</script>
