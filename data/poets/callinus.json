@@ -1,0 +1,45 @@
+{
+ "slug": "callinus",
+ "name": "Callinus",
+ "dates": "fl. c. 650 BC",
+ "era": "Archaic Greece",
+ "category": "Ancient Greek & Roman",
+ "language": "Ancient Greek",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Callinus was an elegiac poet of Ephesus, the earliest Greek elegist whose verses survive. He wrote in the seventh century BC, when Ionian cities such as Ephesus and Smyrna were threatened by the Cimmerian invasions of Asia Minor. Nothing firm is known of his life beyond what his few fragments and later quotations reveal.",
+  "His one substantial surviving poem is an exhortation to battle, urging idle young men to defend their homeland, wives and children and reminding them that death comes only when the Fates decree it. A short fragment appeals to Zeus on behalf of the Smyrnaeans. The poems are given here as printed in Hiller and Crusius, Anthologia Lyrica (Leipzig: Teubner, 1904), collated with a second scan of the same edition; the fragment numbers are theirs, and the one-line fragments (3 and 4) are left out."
+ ],
+ "order": 38.75,
+ "poems": [
+  {
+   "id": "callinus/0",
+   "title": "Fragment 1: Exhortation to Battle",
+   "authorSlug": "callinus",
+   "author": "Callinus",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "Elegeia",
+   "note": "",
+   "language": "Ancient Greek",
+   "text": "Μέχρις τεῦ κατάκεισθε; κότʼ ἄλκιμον ἕξετε θυμόν,\nὦ νέοι; οὐδʼ αἰδεῖσθʼ ἀμφιπερικτίονας\nὧδε λίην μεθιέντες; ἐν εἰρήνῃ δὲ δοκεῖτε\nἦσθαι, ἀτὰρ πόλεμος γαῖαν ἅπασαν ἔχει,\nκαί τις ἀποθνῄσκων ὕστατʼ ἀκοντισάτω.\nτιμῆέν τε γάρ ἐστι καὶ ἀγλαὸν ἀνδρὶ μάχεσθαι\nγῆς πέρι καὶ παίδων κουριδίης τʼ ἀλόχου\nδυσμενέσιν· θάνατος δὲ τότʼ ἔσσεται, ὁππότε κεν δὴ\nΜοῖραι ἐπικλώσωσʼ· ἀλλά τις ἰθὺς ἴτω\nἔγχος ἀνασχόμενος καὶ ὑπʼ ἀσπίδος ἄλκιμον ἦτορ\nἔλσας, τὸ πρῶτον μιγνυμένου πολέμου.\nοὐ γάρ κως θάνατόν γε φυγεῖν εἱμαρμένον ἐστὶν\nἄνδρʼ, οὐδʼ εἰ προγόνων ἢ γένος ἀθανάτων.\nπολλάκι δηιοτῆτα φυγὼν καὶ δοῦπον ἀκόντων\nἔρχεται, ἐν δʼ οἴκῳ μοῖρα κίχεν θανάτου·\nἀλλʼ ὃ μὲν οὐκ ἔμπης δήμῳ φίλος οὐδὲ ποθεινός,\nτὸν δʼ ὀλίγος στενάχει καὶ μέγας, ἤν τι πάθῃ·\nλαῷ γὰρ σύμπαντι πόθος κρατερόφρονος ἀνδρὸς\nθνῄσκοντος· ζώων δʼ ἄξιος ἡμιθέων·\nὥσπερ γάρ μιν πύργον ἐν ὀφθαλμοῖσιν ὁρῶσιν·\nἔρδει γὰρ πολλῶν ἄξια μοῦνος ἐών."
+  },
+  {
+   "id": "callinus/1",
+   "title": "Fragment 2: Prayer for Smyrna",
+   "authorSlug": "callinus",
+   "author": "Callinus",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "Elegeia",
+   "note": "",
+   "language": "Ancient Greek",
+   "text": "Σμυρναίους δʼ ἐλέησον.\nμνῆσαι δʼ εἴ κοτέ τοι μηρία καλὰ βοῶν\nΣμυρναῖοι κατέκηαν."
+  }
+ ]
+}
