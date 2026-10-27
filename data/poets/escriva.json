@@ -1,0 +1,46 @@
+{
+ "slug": "escriva",
+ "name": "Comendador Joan Escrivá",
+ "dates": "fl. 1470-1497",
+ "era": "15th century (Cancionero general)",
+ "category": "Spanish & Portuguese",
+ "portrait": null,
+ "credit": "",
+ "bio": [
+  "Joan Escrivá (fl. 1470-1497), called the Comendador, was a Valencian courtier and poet who wrote in Castilian. His verse was gathered in the Cancionero general (Valencia, 1511).",
+  "He is remembered above all for one short canción, 'Ven muerte tan escondida', a plea that death come so quietly that the joy of its coming may not call the dying back to life. The poem was glossed and imitated by Spanish poets for two centuries."
+ ],
+ "order": 137.0,
+ "language": "Spanish",
+ "poems": [
+  {
+   "id": "escriva/0",
+   "title": "Canción: Ven muerte tan escondida",
+   "authorSlug": "escriva",
+   "author": "Comendador Joan Escrivá",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "The Oxford Book of Spanish Verse (1913)",
+   "note": "Spanish original, from the Cancionero general (1511); the English translation by John Bowring follows as the next poem.",
+   "language": "Spanish",
+   "text": "Ven muerte tan escondida\nque no te sienta comigo,\nporqu' el gozo de contigo\nno me torne a dar la vida.\n\nVen como rayo que hiere,\nque hasta que ha herido\nno se siente su ruydo,\npor mejor herir do quiere:\nassi sea tu venida,\nsi no, desde aqui me obligo\nqu' el gozo que aure contigo\nme dara de nuevo vida."
+  },
+  {
+   "id": "escriva/1",
+   "title": "Welcome, Death!",
+   "authorSlug": "escriva",
+   "author": "Comendador Joan Escrivá",
+   "primarySubject": "Death & Dying",
+   "subjects": [
+    "Death & Dying"
+   ],
+   "collection": "Ancient Poetry and Romances of Spain (1824)",
+   "note": "Translation of the canción 'Ven muerte tan escondida' (the Spanish original is the preceding poem).",
+   "language": "English",
+   "translator": "John Bowring (1824)",
+   "text": "Come, gentle death! come silently,\nAnd sound no knell, no warning give,\nLest the sweet bliss of welcoming thee\nShould rouse my wearied soul to live.\n\nCome like the rapid lightning's ray,\nThat wounds, but while it wounds is still;\nIt passes, voiceless, on its way,\nAnd flings its mortal barb at will.\nThus soft, thus calm, thy coming be,\nElse, death! this warning now I give,\nThat the sweet bliss of welcoming thee\nWill rouse my weary soul to live."
+  }
+ ]
+}
