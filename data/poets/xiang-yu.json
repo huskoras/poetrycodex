@@ -1,0 +1,31 @@
+{
+ "slug": "xiang-yu",
+ "name": "Xiang Yu",
+ "dates": "232-202 BC",
+ "era": "Qin-Han transition",
+ "category": "Chinese & Japanese",
+ "language": "Classical Chinese",
+ "portrait": "poets/xiang-yu.jpg",
+ "credit": "Portrait from Portraits of Famous Men (Qing woodblock print) · Public domain (Wikimedia Commons)",
+ "bio": [
+  "Xiang Yu (232-202 BC), styled Ji, was a general of the state of Chu who overthrew the Qin dynasty and proclaimed himself Hegemon-King of Western Chu. He then fought a long war against Liu Bang, the future Han Gaozu, for mastery of China.",
+  "Surrounded at Gaixia in 202 BC, he is said in the Shiji to have sung this song to his consort Yu and his horse Zhui before breaking out and meeting his death at the Wu River."
+ ],
+ "order": 44.33,
+ "poems": [
+  {
+   "id": "xiang-yu/0",
+   "title": "垓下歌 (Gaixia ge)",
+   "authorSlug": "xiang-yu",
+   "author": "Xiang Yu",
+   "primarySubject": "History & Politics",
+   "subjects": [
+    "History & Politics"
+   ],
+   "collection": "Shiji juan 7; Gushi yuan (1719) juan 2",
+   "note": "",
+   "language": "Classical Chinese",
+   "text": "力拔山兮氣蓋世，\n時不利兮騅不逝。\n騅不逝兮可奈何，\n虞兮虞兮奈若何。"
+  }
+ ]
+}
