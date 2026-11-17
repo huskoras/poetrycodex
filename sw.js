@@ -8,12 +8,12 @@
 //                            (stale-while-revalidate): the 32 MB index comes from the
 //                            reader's own disk, and the next visit has the newer one
 //   Google Fonts             kept, refreshed in the background
-//   anything else (the Oracle's POSTs, other sites)   not touched
+//   anything else (other sites)  not touched
 //
 // Raise VERSION to throw every kept copy away (a broken file cached by mistake).
 const VERSION = "pc-2";
 // "index.html" only (not "./" as well, the same page twice): the offline fallback below uses it.
-const SHELL = ["index.html", "data/home.json", "coin-68.webp", "archive-248.webp", "oracle-248.webp"];
+const SHELL = ["index.html", "data/home.json", "coin-68.webp", "archive-248.webp", "poets-248.webp"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(SHELL)).catch(() => {}).then(() => self.skipWaiting()));

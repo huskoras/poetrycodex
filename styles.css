@@ -1125,8 +1125,6 @@ a.shelf-dl { display: inline-flex; align-items: center; text-decoration: none; }
   /* Five items on one line, so nothing hides off the edge. */
   .tb-nav { margin-left: 0; order: 3; width: 100%; justify-content: space-between; gap: .4rem; }
   .tb-nav a { white-space: nowrap; font-size: .68rem; letter-spacing: .05em; }
-  /* The cue keeps its label and its action; the sentence beside them is for desktop. */
-  .ec-hint { display: none; }
   /* Phones: the brand, Display and Sign in on the first row, the search box across the whole
      second row (it shrank to about 105px beside them), the nav on the third. */
   .topbar-inner.has-search .tb-display { margin-left: auto; }
@@ -1152,15 +1150,7 @@ a.shelf-dl { display: inline-flex; align-items: center; text-decoration: none; }
 /* Phones: a 1rem margin each side gives verse more of the line (after the 780px rule above). */
 @media (max-width: 560px) { main { padding-left: 1rem; padding-right: 1rem; } }
 
-/* About — roadmap list + "early version" tag */
-.about h2 .soon {
-  display: inline-block; margin-left: .6rem; padding: .18rem .5rem;
-  font-family: var(--sans); font-size: .62rem; font-weight: 700;
-  letter-spacing: .1em; text-transform: uppercase;
-  color: var(--ink-soft); background: rgba(23,20,15,.07);
-  border: 1px solid rgba(23,20,15,.14); border-radius: 3px;
-  vertical-align: middle;
-}
+/* About — the list of what the site offers */
 .about-list { list-style: none; margin: 0 0 1.2rem; padding: 0; }
 .about-list li {
   font-family: var(--serif); font-size: 1.08rem; line-height: 1.75;
@@ -1174,331 +1164,9 @@ a.shelf-dl { display: inline-flex; align-items: center; text-decoration: none; }
 .about-list strong { color: var(--ink); font-weight: 600; }
 
 
-/* ============ CRITICAL ENGINE ============ */
-/* The reading column is 720px; the engine gets its own, wider card so the
-   lens row does not wrap into four cramped lines. */
-.engine {
-  width: min(1080px, 100vw - 3rem);
-  margin: 1.6rem 0 2.8rem 50%;
-  transform: translateX(-50%);
-  background: var(--surface-alt);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 2.3rem 2.6rem 2.5rem;
-  box-shadow: var(--shadow-sm);
-}
-.engine .section-label { margin-top: 0; }
-.engine-intro {
-  font-family: var(--serif); font-size: 1.02rem; line-height: 1.7;
-  color: var(--ink-soft); margin: 0 0 1.5rem; max-width: 62ch; font-style: italic;
-}
-
-/* --- lens buttons --- */
-.lens-row { display: flex; flex-wrap: wrap; gap: .55rem; margin: 0 0 1.6rem; }
-.lens {
-  font-family: var(--sans); font-size: .76rem; font-weight: 600;
-  letter-spacing: .08em; text-transform: uppercase;
-  padding: .62rem 1.05rem; border-radius: 4px; cursor: pointer;
-  color: var(--ink-soft); background: var(--surface);
-  border: 1px solid var(--line-strong);
-  transition: background .15s, border-color .15s, color .15s, box-shadow .15s;
-}
-.lens:hover:not(:disabled) {
-  border-color: var(--accent); color: var(--accent); box-shadow: var(--shadow-sm);
-}
-.lens.active { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-.lens:disabled { opacity: .4; cursor: default; box-shadow: none; }
-.lens-alt { border-style: dashed; color: var(--gold-ink); border-color: var(--gold); }
-.lens-alt:hover:not(:disabled) { border-color: var(--gold); color: var(--gold-ink); }
-.lens-alt.active { background: var(--gold-ink); border-color: var(--gold-ink); color: var(--on-accent); }
-
-/* --- question + compare rows --- */
-.ask-form { display: flex; align-items: flex-end; gap: .7rem; margin: 0 0 1rem; position: relative; }
-.ask-form:not(.compare-form) { margin-bottom: 1.1rem; }
-.ask-form.compare-form { margin-bottom: 2rem; }
-.ask-input {
-  flex: 1; font-family: var(--serif); font-size: 1.1rem; line-height: 1.6;
-  padding: 1rem 1.15rem; color: var(--ink);
-  background: var(--surface);
-  border: 1px solid var(--line-strong); border-radius: 6px;
-}
-textarea.ask-input {
-  min-height: 118px; resize: vertical; display: block;
-  box-shadow: inset 0 1px 2px rgba(23,20,15,.04);
-}
-.ask-input::placeholder { color: var(--faint); font-style: italic; }
-.ask-input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(169,133,47,.13); }
-.ask-send {
-  font-family: var(--sans); font-size: .78rem; font-weight: 700;
-  letter-spacing: .1em; text-transform: uppercase;
-  padding: 1rem 1.9rem; cursor: pointer; border-radius: 6px;
-  color: var(--on-accent); background: var(--gold-ink); border: 1px solid var(--gold-ink);
-  transition: opacity .15s; white-space: nowrap;
-}
-.ask-send:hover:not(:disabled) { opacity: .86; }
-.ask-input:disabled, .ask-send:disabled { opacity: .45; cursor: default; }
-
-/* --- type-ahead list, shared by compare and the hero form --- */
-.compare-hits, .ha-hits {
-  position: absolute; top: 100%; left: 0; right: 0; z-index: 30;
-  margin: .3rem 0 0; padding: .3rem; list-style: none;
-  background: var(--surface); border: 1px solid var(--line-strong); border-radius: 4px;
-  box-shadow: var(--shadow); max-height: 300px; overflow-y: auto; text-align: left;
-}
-.compare-hits li, .ha-hits li {
-  padding: .55rem .65rem; cursor: pointer; border-radius: 3px;
-  font-family: var(--serif); font-size: 1rem; line-height: 1.35; color: var(--ink);
-}
-.compare-hits li:hover, .ha-hits li:hover { background: var(--surface-alt); }
-.compare-hits li strong, .ha-hits li strong { font-weight: 500; }
-.compare-hits li span, .ha-hits li span {
-  display: block; font-family: var(--sans); font-size: .7rem;
-  letter-spacing: .06em; text-transform: uppercase; color: var(--faint);
-}
-
-/* --- generated output --- */
-.engine-out {
-  border-left: 3px solid var(--gold);
-  padding: .3rem 0 .3rem 1.7rem; margin: .4rem 0 0;
-  min-height: 170px;
-}
-.engine-out p {
-  font-family: var(--serif); font-size: 1.13rem; line-height: 1.82;
-  color: var(--ink-soft); margin: 0 0 1.1rem;
-}
-.engine-out p:last-of-type { margin-bottom: 0; }
-.engine-out.is-loading, .engine-out.is-error {
-  font-family: var(--sans); font-size: .8rem; letter-spacing: .08em;
-  text-transform: uppercase; color: var(--ink-soft); padding-top: .3rem;
-}
-.engine-out.is-loading { animation: engine-pulse 1.4s ease-in-out infinite; }
-.engine-out.is-error { border-left-color: var(--error); color: var(--error); }
-@keyframes engine-pulse { 0%,100% { opacity: .42; } 50% { opacity: 1; } }
-
-/* A gloss alternates original line and modern rendering, so it wants tighter
-   blocks than prose; the trailing Notes paragraph goes back to normal flow. */
-.engine-out.is-gloss p { white-space: pre-wrap; font-size: 1.04rem; line-height: 1.62; }
-.engine-out.is-gloss p:last-of-type { white-space: normal; font-style: italic; }
-
-.engine-credit {
-  font-family: var(--sans) !important; font-size: .72rem !important;
-  letter-spacing: .06em; text-transform: uppercase; color: var(--faint) !important;
-  margin-top: 1.5rem !important; font-style: normal !important;
-}
-/* a stored reading, replayed rather than written afresh */
-.engine-saved { display: inline-block; margin-left: .45rem; padding: .05rem .42rem; border: 1px solid currentColor;
-  border-radius: 3px; color: var(--gold-ink); font-weight: 700; white-space: nowrap; cursor: help; }
-
-@media (max-width: 760px) {
-  .engine { width: calc(100vw - 2rem); padding: 1.5rem 1.3rem 1.7rem; margin-bottom: 2rem; }
-  textarea.ask-input { min-height: 104px; }
-  .engine-out { padding-left: 1.1rem; }
-  .lens { font-size: .7rem; padding: .52rem .8rem; letter-spacing: .06em; }
-  .ask-form { flex-direction: column; }
-  .ask-send { width: 100%; }
-}
-
-/* The composer carries the hint, so the intro above it can stay short. */
-.ask-hint {
-  font-family: var(--sans); font-size: .72rem; letter-spacing: .05em;
-  color: var(--faint); margin: 0 0 1.7rem;
-}
-.compare-form .ask-send {
-  background: transparent; color: var(--gold-ink); border-color: var(--gold);
-}
-.compare-form .ask-send:hover:not(:disabled) { background: var(--gold-ink); border-color: var(--gold-ink); color: var(--on-accent); opacity: 1; }
-
-
-/* ============ THE ORACLE ============ */
-
-/* --- the Oracle page --- */
-.oracle { max-width: 820px; margin: 0 auto; }
-.oracle-head { text-align: center; margin: 0 0 2.2rem; }
-.oracle-coin {
-  width: 108px; height: 108px; border-radius: 50%;
-  box-shadow: 0 3px 14px rgba(23,20,15,.3); margin-bottom: 1rem;
-}
-.oracle-head h1 {
-  font-family: var(--serif); font-weight: 500; font-size: clamp(2rem, 5vw, 2.7rem);
-  margin: 0 0 .6rem; letter-spacing: .01em;
-}
-.oracle-head p {
-  font-family: var(--serif); font-size: 1.08rem; line-height: 1.7;
-  color: var(--ink-soft); margin: 0 auto; max-width: 56ch;
-}
-
-.o-openers { display: flex; flex-wrap: wrap; gap: .55rem; justify-content: center; margin: 0 0 2rem; }
-.o-opener {
-  font-family: var(--serif); font-size: .98rem; cursor: pointer;
-  padding: .6rem 1rem; border-radius: 20px; color: var(--ink-soft);
-  background: var(--surface); border: 1px solid var(--line-strong);
-  transition: border-color .15s, color .15s;
-}
-.o-opener:hover { border-color: var(--gold); color: var(--gold); }
-
-.o-thread { display: flex; flex-direction: column; gap: 1.9rem; margin: 0 0 1.8rem; }
-.o-turn { display: flex; gap: 1rem; }
-.o-you { justify-content: flex-end; }
-.o-you .o-bubble {
-  background: var(--accent); color: var(--on-accent); border-radius: 14px 14px 3px 14px;
-  padding: .85rem 1.15rem; max-width: 80%;
-  font-family: var(--serif); font-size: 1.06rem; line-height: 1.6;
-}
-.o-mark { flex: none; }
-.o-mark img { border-radius: 50%; box-shadow: 0 1px 5px rgba(23,20,15,.3); display: block; }
-.o-body { flex: 1; min-width: 0; padding-top: .15rem; }
-.o-body p {
-  font-family: var(--serif); font-size: 1.12rem; line-height: 1.8;
-  color: var(--ink-soft); margin: 0 0 1rem;
-}
-.o-body p:last-child { margin-bottom: 0; }
-.o-body a { color: var(--accent); text-decoration: underline; text-underline-offset: .18em; text-decoration-thickness: 1px; }
-.o-body a:hover { color: var(--gold); }
-.o-body strong { color: var(--ink); font-weight: 600; }
-.o-status, .o-error {
-  font-family: var(--sans) !important; font-size: .8rem !important;
-  letter-spacing: .07em; text-transform: uppercase;
-}
-.o-status { color: var(--faint) !important; animation: engine-pulse 1.4s ease-in-out infinite; }
-.o-error { color: var(--error) !important; }
-
-.o-composer {
-  display: flex; align-items: flex-end; gap: .7rem;
-  position: sticky; bottom: 1.2rem; margin-top: 1.4rem;
-  background: var(--body); padding-top: .4rem;
-}
-.o-input {
-  flex: 1; font-family: var(--serif); font-size: 1.1rem; line-height: 1.6;
-  padding: .95rem 1.15rem; color: var(--ink); background: var(--surface);
-  border: 1px solid var(--line-strong); border-radius: 8px;
-  resize: none; overflow-y: auto; min-height: 56px; max-height: 260px;
-  box-shadow: var(--shadow-sm);
-}
-.o-input::placeholder { color: var(--faint); font-style: italic; }
-.o-input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(169,133,47,.13); }
-.o-send {
-  font-family: var(--sans); font-size: .78rem; font-weight: 700;
-  letter-spacing: .1em; text-transform: uppercase;
-  padding: 1rem 1.7rem; cursor: pointer; border-radius: 8px;
-  color: var(--on-accent); background: var(--gold-ink); border: 1px solid var(--gold-ink);
-  transition: opacity .15s;
-}
-.o-send:hover:not(:disabled) { opacity: .86; }
-.o-input:disabled, .o-send:disabled { opacity: .45; cursor: default; }
-.oracle .ask-hint { text-align: center; margin: .2rem 0 0; }
-
-@media (max-width: 760px) {
-  .o-you .o-bubble { max-width: 92%; }
-  .o-send { padding: .95rem 1.2rem; }
-}
-
-
-/* ============ ENGINE CUE ============ */
-/* The panel is closed by default so the poem comes first; this bar opens it
-   and stays in reach however long the poem runs. */
-.engine-cue {
-  position: sticky; top: 56px; z-index: 20;
-  display: flex; align-items: center; gap: .9rem; width: 100%;
-  margin: 1.4rem 0 1.8rem; padding: .85rem 1.1rem;
-  cursor: pointer; text-align: left;
-  background: var(--surface-alt); border: 1px solid var(--line-strong);
-  border-radius: 8px; box-shadow: var(--shadow-sm);
-  transition: border-color .15s, box-shadow .15s;
-}
-.engine-cue:hover { border-color: var(--gold); }
-/* On phones the top bar does not follow the reader, so the cue sticks to the screen's top. */
-@media (max-width: 780px) { .engine-cue { top: .6rem; } }
-.ec-mark { color: var(--gold); font-size: 1rem; line-height: 1; }
-.ec-label {
-  font-family: var(--sans); font-size: .76rem; font-weight: 700;
-  letter-spacing: .12em; text-transform: uppercase; color: var(--ink);
-}
-.ec-hint {
-  flex: 1; font-family: var(--serif); font-size: .96rem; font-style: italic;
-  color: var(--ink-soft); opacity: .8;
-}
-.ec-go {
-  flex: none; font-family: var(--sans); font-size: .7rem; font-weight: 700;
-  letter-spacing: .1em; text-transform: uppercase; color: var(--gold-ink);
-}
-.engine-more {
-  font-family: var(--serif); font-size: 1rem; color: var(--ink-soft);
-  margin: 1.6rem 0 0; font-style: italic;
-}
-.to-oracle {
-  font: inherit; font-style: normal; color: var(--accent); cursor: pointer;
-  background: none; border: none; padding: 0;
-  text-decoration: underline; text-underline-offset: .18em;
-}
-.to-oracle:hover { color: var(--gold); }
-
-/* ============ ORACLE: CONTEXT & TRAIL ============ */
-/* Naming the scope is what makes this one Oracle rather than two. */
-.o-context {
-  display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap;
-  margin: 0 0 1.6rem; padding: .7rem 1rem;
-  background: var(--surface-alt); border: 1px solid var(--line-strong);
-  border-left: 3px solid var(--gold); border-radius: 6px;
-}
-.oc-label {
-  font-family: var(--sans); font-size: .64rem; font-weight: 700;
-  letter-spacing: .16em; text-transform: uppercase; color: var(--gold-ink);
-}
-.oc-title { font-family: var(--serif); font-size: 1.04rem; color: var(--ink); }
-.oc-by { font-family: var(--serif); font-size: .96rem; font-style: italic; color: var(--ink-soft); }
-.oc-clear {
-  margin-left: auto; cursor: pointer; background: none; border: none;
-  font-size: 1.2rem; line-height: 1; color: var(--faint); padding: 0 .2rem;
-}
-.oc-clear:hover { color: var(--ink); }
-
-/* What the answer was built on, kept rather than discarded. */
-.o-trail { margin-top: 1.2rem; }
-.o-trail summary {
-  font-family: var(--sans); font-size: .68rem; font-weight: 600;
-  letter-spacing: .1em; text-transform: uppercase; color: var(--faint);
-  cursor: pointer; list-style: none;
-}
-.o-trail summary::-webkit-details-marker { display: none; }
-.o-trail summary::before { content: "\25b8 "; }
-.o-trail[open] summary::before { content: "\25be "; }
-.o-trail summary:hover { color: var(--gold); }
-.o-trail p { margin: .6rem 0 0 !important; display: flex; flex-wrap: wrap; gap: .35rem; }
-.o-trail span {
-  font-family: var(--sans) !important; font-size: .7rem; letter-spacing: .04em;
-  padding: .2rem .55rem; border-radius: 10px;
-  background: var(--surface-alt); border: 1px solid var(--line);
-  color: var(--ink-soft);
-}
-
-/* A question quoted, not a chat bubble. The archive's tone, not a messenger's. */
-.o-you { display: block; }
-.o-q {
-  margin: 0; padding: 0 0 0 1.4rem;
-  border-left: 3px solid var(--line-strong);
-  font-family: var(--serif); font-size: 1.22rem; line-height: 1.55;
-  color: var(--ink); font-style: italic;
-}
-
-/* The Oracle, asleep. */
-.oracle-coin.is-resting { filter: grayscale(.45) brightness(.92); opacity: .75; }
-.o-resting {
-  max-width: 56ch; margin: 0 auto; padding: 1.8rem 2rem;
-  background: var(--surface-alt); border: 1px solid var(--line);
-  border-radius: 8px; text-align: center;
-}
-.o-resting p {
-  font-family: var(--serif); font-size: 1.08rem; line-height: 1.75;
-  color: var(--ink-soft); margin: 0 0 1rem;
-}
-.o-resting p:last-child { margin-bottom: 0; }
-.o-resting a { color: var(--accent); text-decoration: underline; text-underline-offset: .18em; }
-.o-resting a:hover { color: var(--gold); }
-
-
 /* ============ THE TWO DOORS ============ */
 /* One roof, two ways in. Equal weight, different temperature: amber for the
-   collection, silver for the asking. */
+   archive by era, ink-blue for the poets. */
 .doors {
   display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem;
   margin: 0 0 3.4rem;
@@ -1529,17 +1197,8 @@ textarea.ask-input {
 }
 .door-archive:hover { border-color: var(--gold); }
 .door-archive .d-go { background: var(--gold-ink); }
-.door-oracle:hover { border-color: var(--accent); }
-.door-oracle .d-go { background: var(--accent); }
-
-/* Asleep, but still half the architecture. */
-.door-oracle.is-resting img { filter: grayscale(.5) brightness(.93); opacity: .7; }
-.door-oracle.is-resting .d-name,
-.door-oracle.is-resting .d-line { opacity: .62; }
-.door-oracle.is-resting .d-go {
-  background: transparent; color: var(--faint);
-  border: 1px solid var(--line-strong);
-}
+.door-poets:hover { border-color: var(--accent); }
+.door-poets .d-go { background: var(--accent); }
 
 /* The poem of the day: its own card under the two doors. */
 .doors.has-potd { margin-bottom: 1.6rem; }
@@ -1677,7 +1336,7 @@ textarea.ask-input {
     --gold: #a9852f; --gold-ink: #86671f; --on-accent: #fff; --masthead: #f1f0ea; --ts: 1; color-scheme: light;
     --read-font: var(--serif); --lh-d: 0; }   /* and the Aa font and spacing (width: .detail below) */
   body { background: #fff; }
-  .site-head, .site-foot, .engine-cue, .engine, .detail-nav, .back, .themes, .pn-row,
+  .site-head, .site-foot, .detail-nav, .back, .themes, .pn-row,
   .read-in-archive, .rule-ornament, .ln-ctl, .cite-row, .cite-box, .more-row, .shelf-msg, .note-box,
   .also-tr, .compare-tools, .compare-open, .continue-wrap, .continue-list, .related, .rt { display: none !important; }
   .detail, :root[data-measure] .detail { max-width: none !important; }
@@ -1852,7 +1511,7 @@ textarea.ask-input {
   letter-spacing: .08em; text-transform: uppercase; text-decoration: none; box-shadow: var(--shadow); transition: background .15s, transform .15s; }
 .acct-open:hover { background: var(--accent-2); transform: translateY(-1px); }
 .acct-sync { color: var(--ink-soft); font-size: .95rem; line-height: 1.55; margin: 1rem .2rem 0; }
-.acct-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; margin: 1.4rem 0 .4rem; }
+.acct-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin: 1.4rem 0 .4rem; }
 .acct-stat { display: flex; flex-direction: column; align-items: flex-start; gap: .3rem; padding: 1rem 1.1rem; text-align: left;
   border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--ink); cursor: pointer;
   transition: border-color .15s, transform .15s; }
@@ -1862,7 +1521,7 @@ textarea.ask-input {
 .acct-sec { margin-top: 2.4rem; scroll-margin-top: 90px; }
 .acct-sec h2 { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
   color: var(--ink-soft); margin: 0 0 .9rem; padding-bottom: .55rem; border-bottom: 1px solid var(--line); }
-.acct-list, .mark-list, .acct-readings { list-style: none; margin: 0; padding: 0; }
+.acct-list, .mark-list { list-style: none; margin: 0; padding: 0; }
 .acct-row a { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .75rem .2rem;
   border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); }
 .acct-row a:hover .acct-row-t { color: var(--accent); }
@@ -1874,16 +1533,6 @@ textarea.ask-input {
 .mark-row-quote { font-family: var(--serif); font-size: 1.04rem; margin: 0 0 .3rem; }
 .mark-row-note { margin: 0 0 .3rem; white-space: pre-wrap; line-height: 1.55; }
 .mark-row-src { margin: 0; font-size: .85rem; color: var(--ink-soft); }
-.acct-reading details { border: 1px solid var(--line); border-radius: 12px; margin: 0 0 .7rem; background: var(--surface); }
-.acct-reading details[open] { border-color: var(--gold); }
-.acct-reading summary { cursor: pointer; list-style: none; padding: .85rem 1rem; display: flex; flex-wrap: wrap; gap: .3rem .7rem; align-items: baseline; }
-.acct-reading summary::-webkit-details-marker { display: none; }
-.acct-r-kind { font-family: var(--sans); font-size: .62rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
-  color: var(--on-accent); background: var(--accent); padding: .22rem .6rem; border-radius: 999px; }
-.acct-r-label { font-family: var(--serif); font-size: 1.04rem; }
-.acct-r-src { flex-basis: 100%; color: var(--ink-soft); font-size: .85rem; }
-.acct-r-text { padding: 0 1.1rem 1rem; line-height: 1.65; }
-.acct-r-go { font-family: var(--sans); font-size: .85rem; }
 .acct-set-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .8rem 1.2rem;
   padding: 1rem 0; border-bottom: 1px solid var(--line); }
 .acct-set-row > div { flex: 1 1 20rem; }
@@ -1904,7 +1553,7 @@ textarea.ask-input {
   .acct-head { padding: 1.2rem; }
   .acct-seal { width: 64px; height: 64px; }
   .acct-open { width: 100%; justify-content: center; }
-  .acct-stats { grid-template-columns: repeat(2, 1fr); }
+  .acct-stats { grid-template-columns: repeat(3, 1fr); }
   .acct-row a { flex-direction: column; gap: .15rem; }
   .acct-row-by { text-align: left; }
 }
@@ -2597,8 +2246,6 @@ a.off-missing:hover { opacity: .65; }
   /* Players and notices at the foot of the screen sit above the bar while it is up. */
   body.rb-on:not(.rb-hide):not(.rb-off) .listen-bar { bottom: calc(56px + 12px + env(safe-area-inset-bottom, 0px)); }
   body.rb-on:not(.rb-hide):not(.rb-off) .sel-toast { bottom: calc(56px + 16px + env(safe-area-inset-bottom, 0px)); }
-  /* The Codex cue, moved under the text on a phone, no longer follows the reader down. */
-  .engine-cue.is-below { position: static; margin: 2.2rem 0 1.6rem; }
   /* A note's dot in the margin: a 32px target around the small dot. */
   .mark-dot { position: relative; }
   .mark-dot::before { content: ""; position: absolute; left: 50%; top: 50%; width: 32px; height: 32px; transform: translate(-50%, -50%); border-radius: 50%; }
@@ -3265,3 +2912,13 @@ a.ec-here { color: var(--accent); }
 .sn-list li { margin: 0 0 1.1rem; line-height: 1.6; }
 .sn-head { margin: 0 0 .2rem; }
 .sn-ref, .sn-src { color: var(--ink-soft); font-size: .88rem; }
+
+/* ============ SMALL TOUCHES (27 Oct 2026, moved here from index.html on 18 Nov 2026) ============ */
+/* The printer's close: one gold star under the last line (poemBlock in app.js). */
+.fleuron { margin: 2.1rem 0 .2rem; padding-left: 1.3rem; text-align: center; color: var(--gold); font-size: .95rem; line-height: 1; opacity: .9; user-select: none; }
+@media (max-width: 560px) { .fleuron { padding-left: .75rem; } }
+/* A work's opening section, when it is prose, begins with a gold initial. */
+.poem-text.is-prose.work-opening > p:first-of-type::first-letter { float: left; font-family: var(--serif); font-size: 3.15em;
+  line-height: .82; padding: .07em .1em 0 0; color: var(--gold-ink); font-weight: 500; }
+.foot-colophon { flex-basis: 100%; opacity: .8; }
+@media print { .pr-body::after { content: "\2726" / ""; display: block; margin: 1.4em 0 0; text-align: center; font-size: 10pt; } }

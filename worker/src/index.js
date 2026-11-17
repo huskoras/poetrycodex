@@ -576,6 +576,12 @@ export default {
     if (!ROUTES.includes(route) || request.method !== "POST") {
       return json(404, { error: "Not found." }, origin);
     }
+    // Master switch (owner's decision, 18 Nov 2026: no AI spending at all). While AI_ENABLED
+    // is not "true" in wrangler.toml, every paid route answers 503 before anything else runs,
+    // so neither the site nor a direct call to this address can cost anything.
+    if (String(env.AI_ENABLED) !== "true") {
+      return json(503, { error: "The critical engine is switched off." }, origin);
+    }
     if (origin && !ALLOWED_ORIGINS.has(origin)) {
       return json(403, { error: "This endpoint serves poetrycodex.com only." }, origin);
     }

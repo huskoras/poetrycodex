@@ -41,26 +41,6 @@
   let GLOSSARY = null;       // data/glossary.json once it is in: {list, bySlug} (glossary of poetic terms)
   let GLOSSARY_P = null;     // ...and the fetch of it
 
-  // ---------- critical engine ----------
-  // The reading panel stays hidden until this points at the deployed Worker
-  // (see worker/README.md). Keep it in sync with ALLOWED_ORIGINS there.
-  const ENGINE_URL = "https://poetrycodex-engine.poetrycodex.workers.dev";
-  // Set to true (and ORACLE_ENABLED in worker/wrangler.toml) to wake the Oracle.
-  const ORACLE_LIVE = false;
-
-  // What the Oracle is reading over your shoulder, if anything.
-  let ORACLE_CONTEXT = null;   // {id, title, author, text}
-  const LENSES = [
-    { id: "formalist", label: "Formalist" },
-    { id: "historicist", label: "Historicist" },
-    { id: "feminist", label: "Feminist" },
-    { id: "psychoanalytic", label: "Psychoanalytic" },
-    { id: "postcolonial", label: "Postcolonial" },
-    { id: "ecocritical", label: "Ecocritical" },
-    { id: "marxist", label: "Materialist" },
-    { id: "reader-response", label: "Reader-Response" },
-  ];
-
   // ---------- on-demand data fetching (poet/work full text, cached in memory) ----------
   const POET_CACHE = new Map();  // slug -> Promise<{slug, poems:[...]}>
   const WORK_CACHE = new Map();  // slug -> Promise<full work with sections[].text>
@@ -497,9 +477,9 @@
   const ACCOUNT_KEY = "pc-account";   // {name, email} while signed in: the pages' hint (the session is an HttpOnly cookie)
   const SYNC_KEY = "pc-sync";         // {at: {kind: server ms}, dirty: {kind: n}}
   const SYNC_KINDS = { shelf: "pc-shelf", notes: "pc-notes", reading: "pc-reading", parallel: "pc-parallel",
-                       marks: "pc-marks", readings: "pc-readings" };
+                       marks: "pc-marks" };
   const KIND_OF = { "pc-shelf": "shelf", "pc-notes": "notes", "pc-reading": "reading", "pc-parallel": "parallel",
-                    "pc-marks": "marks", "pc-readings": "readings" };
+                    "pc-marks": "marks" };
   let SYNCING = false;                // true while the account's copy is written into the browser
   const STORE_OK = (() => {
     try { localStorage.setItem("pc-test", "1"); localStorage.removeItem("pc-test"); return true; }
@@ -2867,26 +2847,6 @@
     window.print();
   }
 
-  // ---------- the reader's readings with the Codex ----------
-  // Each reading, answer, gloss or comparison the engine writes for this reader is kept (the
-  // last READINGS_MAX, each up to 6,000 characters), so the account page can show them again.
-  // pc-readings: {v, items: [{id, kind, label, title, author, text, at}]}.
-  const READINGS_KEY = "pc-readings";
-  const READINGS_MAX = 30;
-  function allReadings() {
-    const r = readStore(READINGS_KEY).items;
-    return Array.isArray(r) ? r.filter((x) => x && x.id && x.text) : [];
-  }
-  function recordReading(piece, path, label, text) {
-    if (!piece || !piece.id || !String(text || "").trim()) return;
-    const kind = path.replace("/api/", "");
-    const items = allReadings().filter((x) => !(x.id === piece.id && x.kind === kind && x.label === label));
-    items.unshift({ id: piece.id, kind, label, title: piece.title, author: piece.author,
-                    text: String(text).slice(0, 6000), at: new Date().toISOString() });
-    writeStore(READINGS_KEY, { v: 1, items: items.slice(0, READINGS_MAX) });
-  }
-  const READING_KINDS = { analyze: "Reading", ask: "Question", gloss: "Gloss", compare: "Comparison" };
-
   window.addEventListener("storage", (e) => {      // saved or removed in another tab
     if (e.key !== SHELF_KEY && e.key !== NOTES_KEY && e.key !== null) return;
     updateShelfNav();
@@ -3063,16 +3023,6 @@
       });
       return { v: 1, marks };
     },
-    readings(local, server) {
-      const seen = new Map();
-      [].concat((local && local.items) || [], (server && server.items) || []).forEach((r) => {
-        if (!r || !r.id) return;
-        const k = r.id + "|" + r.kind + "|" + r.label;
-        const o = seen.get(k);
-        if (!o || String(r.at || "") > String(o.at || "")) seen.set(k, r);
-      });
-      return { v: 1, items: [...seen.values()].sort((x, y) => String(y.at).localeCompare(String(x.at))).slice(0, READINGS_MAX) };
-    },
   };
   let pushTimer = 0, pushing = false, lastPull = 0;
   function noteChange(kind) {
@@ -3236,7 +3186,7 @@
   window.addEventListener("online", () => { if (signedIn()) schedulePush(500); });
 
   // The account page, #/account: the reader's library when signed in (what is saved, the
-  // notes on poems and on lines, the readings the Codex wrote for them, then the account's
+  // notes on poems and on lines, then the account's
   // own settings); the sign-in page when not.
   function renderAccount() {
     const acct = readStore(ACCOUNT_KEY);
@@ -3263,8 +3213,6 @@
               <span class="acct-perk-d">Save poems and long works on your phone, read them on your laptop.</span></li>
             <li><span class="acct-perk-t">Notes on the lines</span>
               <span class="acct-perk-d">Select a line in any poem and write beside it; your notes wait for you.</span></li>
-            <li><span class="acct-perk-t">Your readings with the Codex</span>
-              <span class="acct-perk-d">Every reading and answer the engine writes for you, kept to read again.</span></li>
           </ul>
           <div class="acct-google"><p class="loading">Loading Google sign-in…</p></div>
           <p class="account-status" role="status"></p>
@@ -3278,7 +3226,6 @@
     const shelf = shelfItems();
     const notes = Object.values(allNotes()).sort((a, b) => String(b.updated).localeCompare(String(a.updated)));
     const marks = markRows();
-    const readings = allReadings();
     const stat = (n, one, many, jump) => `
       <button class="acct-stat" type="button" data-jump="${jump}">
         <span class="acct-stat-n">${num(n)}</span><span class="acct-stat-l">${n === 1 ? one : many}</span>
@@ -3290,16 +3237,6 @@
     const noteRow = (n) => `
       <li class="mark-row"><p class="mark-row-note">${noteHTML(n.text)}</p>
         <p class="mark-row-src"><a href="${esc(routeFor(n.id))}">${esc(n.title || "")}</a>${n.author ? ` · ${esc(n.author)}` : ""} · ${esc(shortDate(n.updated))}</p></li>`;
-    const readingRow = (r, k) => `
-      <li class="acct-reading">
-        <details>
-          <summary><span class="acct-r-kind">${esc(READING_KINDS[r.kind] || "Reading")}</span>
-            <span class="acct-r-label">${esc(r.label || "")}</span>
-            <span class="acct-r-src">${esc(r.title || "")}${r.author ? ` · ${esc(r.author)}` : ""} · ${esc(shortDate(r.at))}</span></summary>
-          <div class="acct-r-text">${String(r.text).split(/\n{2,}/).filter(Boolean).map((p) => `<p>${esc(p)}</p>`).join("")}
-            <p class="acct-r-go"><a href="${esc(routeFor(r.id))}">Open the text →</a></p></div>
-        </details>
-      </li>`;
     app.innerHTML = `
       <article class="acct">
         <header class="acct-head">${seal}
@@ -3316,7 +3253,6 @@
           ${stat(shelf.length, "text saved", "texts saved", "acct-saved")}
           ${stat(notes.length, "note", "notes", "acct-notes")}
           ${stat(marks.length, "note on a line", "notes on lines", "acct-marks")}
-          ${stat(readings.length, "reading with the Codex", "readings with the Codex", "acct-readings")}
         </div>
 
         <section class="acct-sec" id="acct-saved">
@@ -3335,11 +3271,6 @@
           <h2>Notes on poems</h2>
           ${notes.length ? `<ul class="mark-list">${notes.slice(0, 6).map(noteRow).join("")}</ul>`
             : empty(`Under any poem, <strong>Add a note</strong> keeps a private note on the whole text.`)}
-        </section>
-        <section class="acct-sec" id="acct-readings">
-          <h2>Readings with the Codex</h2>
-          ${readings.length ? `<ul class="acct-readings">${readings.map(readingRow).join("")}</ul>`
-            : empty(`Open a poem and choose <strong>Read with the Codex</strong>: every reading, answer or gloss it writes for you is kept here.`)}
         </section>
 
         <section class="acct-sec acct-settings">
@@ -4728,8 +4659,7 @@
   // the title the top bar slides away; scrolling back up by 40px or more, or reaching the end,
   // brings it back together with a bar at the foot of the screen: Previous · Aa · Find ·
   // Contents (a book) or Save (a poem) · Focus · Next, each an icon with its name under it. The
-  // reading-progress line rides on that bar's top edge, the "Read with the Codex" cue goes
-  // below the text, and a note's dot in the margin is easier to hit. A tap in the text never
+  // reading-progress line rides on that bar's top edge, and a note's dot in the margin is easier to hit. A tap in the text never
   // shows or hides anything (taps belong to highlights and study notes). The bar never hides
   // while the focus is in it, while the Aa panel it opened is up, or while a dialog is open;
   // it steps aside for the on-screen keyboard (Find, a note) and for a pop-over (the
@@ -4796,17 +4726,7 @@
     RB = { nav, kind: o.contents ? "work" : "poem", last: window.scrollY, turn: window.scrollY, kb: false };
     bindFocus();             // Focus and the [ ] keys, on this page's text
     omControls(omCtx());     // "My marks", while the text has marks
-    placeCue();
     rbSync();
-  }
-  // The Codex cue: under the text on a phone, above it (where the page draws it) on a wider screen.
-  function placeCue() {
-    const cue = app.querySelector(".detail > .engine-cue"), panel = cue && cue.nextElementSibling;
-    if (!cue || !panel || !panel.classList.contains("engine")) return;
-    const below = RB_PHONE.matches, slot = app.querySelector(".detail > .book-source-slot"), rule = app.querySelector(".detail > hr.rule");
-    if (below === cue.classList.contains("is-below") || !slot || !rule) return;
-    if (below) slot.before(cue, panel); else rule.after(cue, panel);
-    cue.classList.toggle("is-below", below);
   }
   // The on-screen keyboard: a box to type in has the focus (outside the bar).
   const rbTyping = (el) => !!(el && el.matches && el.matches("textarea, select, [contenteditable]:not([contenteditable='false']), input:not([type='checkbox']):not([type='radio']):not([type='button']):not([type='submit'])"));
@@ -4865,7 +4785,7 @@
   document.addEventListener("click", rbLater);
   document.addEventListener("keyup", (e) => { if (e.key === "Escape") rbLater(); });
   {
-    const turned = () => { if (RB && RB.nav.isConnected) { placeCue(); rbSync(); } };
+    const turned = () => { if (RB && RB.nav.isConnected) { rbSync(); } };
     if (RB_PHONE.addEventListener) RB_PHONE.addEventListener("change", turned); else RB_PHONE.addListener(turned);   // Safari 13
   }
   window.addEventListener("hashchange", () => { RB = null; rbSync(); });
@@ -5391,7 +5311,7 @@
   // Neither the home page nor poem pages, books of works and contents pages ask for the
   // index by themselves: a reader who opens the home page or one poem gets that and not
   // 10 MB of index. It is fetched when something needs it (the lists, a category, the shelf,
-  // a poet's poems, the Oracle; see routeEarly and loadIndex's callers), and early, on the
+  // a poet's poems; see routeEarly and loadIndex's callers), and early, on the
   // first hover or touch of a link to one of those (the listener after loadIndex). Poets, Eras
   // and About need only the small core index (loadCore).
   const homeFetch = (window.pcHome && typeof window.pcHome.then === "function")
@@ -5486,7 +5406,7 @@
   // The core index (speed fix 6a): a small fraction of the full one. Poets, Eras, About and a
   // poet's header and works are drawn from it (routeEarly), so a reader who opens them does not
   // wait for, or download, the full index; a poet's poems and bio still come with the full
-  // index, which that page asks for at the same time. Everything else, the Oracle included,
+  // index, which that page asks for at the same time. Everything else
   // waits for loadIndex() as before. When the full index comes it replaces POETS, WORKS and
   // CATEGORY_STATS with its own records. If the core is missing or broken, those pages wait
   // for the full index, as they always did.
@@ -5504,7 +5424,7 @@
   const coreData = () => DATA || CORE;
   // ---------- lists and search without the archive index (tools/build_lists.py) ----------
   // data/index.json grows with every poem (40 MB at 116,000), so no reader page fetches it
-  // any more (the Oracle engine on the Worker still reads it). A list page reads the pages of
+  // any more. A list page reads the pages of
   // its list it shows: data/l/<list>/_.json names the pages ([file, poems on it]) and each page
   // (about 450 poems, ~35 KB compressed) holds their index entries. The lists: "all" (by
   // title), "s-<subject>", "f-<form>", "sf-<subject>-<form>", "c-<category>". A poet's page
@@ -7041,7 +6961,7 @@
   const isHomeHash = (h) => !h || /^#\/?(\?.*)?$/.test(h);
   const isTodayHash = (h) => h === "#/today";
   const EARLY_NAV = [[/^#\/category\b/, "eras"], [/^#\/(poems|poem|work|today)\b/, "poems"], [/^#\/poets?\b/, "poets"],
-    [/^#\/topics/, "topics"], [/^#\/about/, "about"], [/^#\/shelf/, "shelf"], [/^#\/account/, "account"], [/^#\/oracle/, "oracle"], [/^#\/eras/, "eras"]];
+    [/^#\/topics/, "topics"], [/^#\/about/, "about"], [/^#\/shelf/, "shelf"], [/^#\/account/, "account"], [/^#\/eras/, "eras"]];
   // Before the index is in: the home page from home.json if it has come (while it is on its
   // way the home page shows only the masthead), anything else "Opening the archive…".
   // route() draws the page properly when the index arrives.
@@ -7227,7 +7147,7 @@
     else if (/^#\/plan(?:$|\?)/.test(h)) { setRoute("", "sub"); renderPlan(); }
     else if (h.startsWith("#/notes")) { setRoute("shelf", "sub"); renderNotes(); }
     else if (h.startsWith("#/account")) { setRoute("account", "sub"); renderAccount(); }
-    else if (h.startsWith("#/oracle")) { setRoute("oracle", "sub"); renderOracle(); }
+    else if (h.startsWith("#/oracle")) { replaceHash("#/"); return; }   // the Oracle was retired on 18 Nov 2026
     else if (h.startsWith("#/eras")) { setRoute("eras", "sub"); renderEras(); }
     else if (h.startsWith("#/poems")) {
       // "#/poems?q=keats" (the 404 page's search box) opens the archive already searched.
@@ -7606,9 +7526,8 @@
     const f = DATA
       ? { count: DATA.count, eras: CATEGORY_STATS, epics: epicCount(DATA.works), potd: homePoemOfTheDay() }
       : { count: HOME.count, eras: HOME.eras, epics: HOME.epics || 0, potd: homePoemOfTheDay() };
-    // Two doors under one roof: the collection, and the way of asking about it.
-    // The Oracle keeps its place even while it sleeps, so the shape of the site
-    // does not change when it wakes. The poem of the day has its own card below.
+    // Two doors under one roof: the poems by era, and the poets. The poem of the day has
+    // its own card below.
     const potd = poemOfTheDayHTML(f.potd);
     return `
       <div class="doors${potd ? " has-potd" : ""}">
@@ -7619,12 +7538,12 @@
           from Homer and Anglo-Saxon verse to the early twentieth century \u2014 every one in the public domain.</span>
           <span class="d-go">Enter &rarr;</span>
         </a>
-        <a class="door door-oracle${ORACLE_LIVE ? "" : " is-resting"}" href="#/oracle">
-          <img src="oracle-248.webp" alt="" width="124" height="124" />
-          <span class="d-name">The Oracle</span>
-          <span class="d-line">Ask for a poem, an argument, or a place to start.
-          It searches the collection before it answers.</span>
-          <span class="d-go">${ORACLE_LIVE ? "Consult &rarr;" : "Resting"}</span>
+        <a class="door door-poets" href="#/poets">
+          <img src="poets-248.webp" alt="" width="124" height="124" />
+          <span class="d-name">The Poets</span>
+          <span class="d-line">From Homer and Sappho to Basho, Rumi and Rilke: each poet with a
+          portrait, a life, and every poem of theirs the archive holds.</span>
+          <span class="d-go">Meet them &rarr;</span>
         </a>
       </div>
       ${homePlanHTML()}
@@ -8329,7 +8248,6 @@
         ${sourceLine(w.translator, "", readTime(s.text, isProse(s.text, w.translator)))}
         ${otherTrHTML(WORKS[slug], i)}
         <hr class="rule">
-        ${enginePanel(s.text, { gloss: true })}
         ${poemBlock(s.text, { translator: w.translator, lang: textLangAttr(w.authorSlug, w.translator, s.text, "work:" + slug, w.language), work: true, opening: i === 0,
                               parallel: parCtlHTML("works", slug, par) })}
         <p class="book-source-slot" hidden></p>
@@ -8341,8 +8259,6 @@
         </div>
       </article>`;
     document.getElementById("back").addEventListener("click", () => { location.hash = "#/work/" + slug; });
-    bindEngine({ title: w.title + " \u00b7 " + s.title, author: w.author, text: s.text,
-                 id: "work:" + slug + "/" + i });
     bindReadingTools();
     bindFind();
     bindLineNumbers();
@@ -9268,55 +9184,29 @@
       <article class="about">
         <img class="about-coin" src="coin-300.webp" alt="Gold medallion of Alexander the Great" />
         <h1>About Poetry Codex</h1>
-        <p>Poetry Codex is a reading archive of poetry in the public domain — and the foundation of a
-        larger project: a critical engine able to read these poems through the full range of methods
-        that literary scholarship has developed over the past two centuries.</p>
+        <p>Poetry Codex is a reading archive of the world's poetry in the public domain: complete texts,
+        carefully transcribed from good editions, with the poets' lives, the great long works read book
+        by book, and tools for the slow, attentive reading that poems ask for.</p>
         <p>The archive currently holds <strong>${coreData().count.toLocaleString("en-US")} poems</strong> in ${CATEGORY_ORDER.length} traditions, from the ancient world,
         the Greek and Roman epics and Anglo-Saxon verse through the Middle Ages, the Renaissance, the
         Romantics and the Victorians to the early twentieth century. Every text is reproduced in full
         and is free of copyright.</p>
 
         <h2>Why this exists</h2>
-        <p>Great poems are easy to find online; informed readings of them are not. A reader is usually
-        offered either a bare text or a single, unattributed interpretation presented as the meaning of
-        the poem. Poetry Codex begins from a different premise: that a poem is best understood through
-        more than one lens, and that a reader deserves to see the lens named.</p>
+        <p>Great poems are easy to find online; good texts of them are not. A reader is usually offered
+        a fragment without its source, a modernised version without saying so, or a page buried in
+        advertising. Poetry Codex begins from a different premise: every text whole, every source named,
+        every translator credited, and nothing between the reader and the poem.</p>
 
-        <h2>The Critical Engine <span class="soon">Early version</span></h2>
-        <p>We are building a reading system specialised entirely in poetry — not a general assistant —
-        that can analyse any text in the archive through a chosen critical tradition: formalist,
-        historicist, psychoanalytic, feminist, postcolonial, ecocritical, and others. An early version
-        is already open on every poem page, under “Read with the Codex”. Ask how <em>Beowulf</em> reads
-        through a feminist lens, or how a Donne lyric looks first to a New Critic and then to a
-        historicist, and the answer should be an argument rather than a summary.</p>
-        <p><strong>How the Codex reads.</strong> When you ask for a reading of a poem, a language model
-        (Claude, made by Anthropic) reads the poem in front of you and writes a short critical response
-        through the tradition you choose. It works from the poem and from what it learned in training,
-        and it is instructed never to invent a quotation, a date, an edition, or the opinion of a named
-        critic; it may name a critical tradition, but it does not put words in a scholar’s mouth. The
-        engine does not claim to give the right reading, only a starting point for yours; machine-written
-        readings can be shallow or wrong, and they are no substitute for a teacher, a good edition, or a
-        library.</p>
-        <p><strong>What comes next</strong> (a plan, not a feature): we are assembling a library of
-        public-domain criticism and essays; once it is switched on, the engine will answer with real
-        passages from that library in front of it, each quotation copied from the source and footnoted
-        to the full article here — and it will say so when the library has nothing to offer.</p>
-        <p>What the engine offers, and what it is growing into:</p>
+        <h2>What you can do here</h2>
         <ul class="about-list">
-          <li><strong>Semantic search</strong> — find poems by what they are about, not by the words
-          they happen to use: ask for poems on exile, or on grief that refuses consolation.${ORACLE_LIVE ? "" : " It comes with the Oracle, which is resting for now and will return later."}</li>
-          <li><strong>Codex Notes</strong> — short critical readings, generated under scholarly
-          constraints and reviewed before publication; a growing number of poems carry one.</li>
-          <li><strong>Comparative reading</strong> — two poems placed side by side, with an account of
-          what they share and where they part.</li>
-          <li><strong>Modern-English gloss</strong> — line-by-line glosses for Old and Middle English
-          verse, so that the earliest poetry in the archive stays readable.</li>
+          <li><strong>Read whole works</strong> — the epics and long poems book by book, with your place
+          kept, and many with translations side by side.</li>
+          <li><strong>Codex Notes</strong> — short notes on a growing number of poems, to help a first reading.</li>
+          <li><strong>Your shelf and notes</strong> — save texts, highlight lines and write beside them; sign in
+          (optional) to find them on every device.</li>
+          <li><strong>Learn by heart</strong> — practise a passage line by line until it stays.</li>
         </ul>
-
-        <h2>Built with scholars</h2>
-        <p>The engine is being developed together with academic collaborators, who define the critical
-        frameworks, select the sources and review the readings it produces. Poetry Codex is built on the
-        assumption that an interpretation is only as good as the tradition it can be held accountable to.</p>
 
         <h2>Reading with the keyboard</h2>
         <p>On a poem or a book of a long work, while you are not typing in a box, these keys work
@@ -11268,206 +11158,6 @@ ${body}</body></html>`;
   });
 
 
-  // ---------- THE ORACLE ----------
-  // Kept at module scope so leaving the page and coming back does not throw
-  // the conversation away.
-  let ORACLE_MSGS = [];          // [{role, content, searches?}]
-
-  const ORACLE_OPENERS = [
-    "Recommend me poems about nature, epic and heroes.",
-    "I have never read poetry before. Where should I start?",
-    "What makes a sonnet a sonnet?",
-    "Which poem in this archive is the strangest?",
-  ];
-
-  // Escapes everything, then allows exactly three things back: bold, italic,
-  // and links whose href is an internal route. Nothing else from the model
-  // reaches the page as markup.
-  function renderMarkdown(text) {
-    let out = esc(text);
-    out = out.replace(/\[([^\]\n]+)\]\(#\/([A-Za-z0-9\/_\-]+)\)/g,
-      (m, label, href) => `<a href="#/${href}">${label}</a>`);
-    out = out.replace(/\*\*([^*\n]+)\*\*/g, "<strong>$1</strong>");
-    out = out.replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<em>$2</em>");
-    return out.split(/\n{2,}/).filter(Boolean)
-      .map((para) => `<p>${para.replace(/\n/g, "<br>")}</p>`).join("");
-  }
-
-  // The searches behind an answer, kept visible. An archive's credibility
-  // rests on being able to see what was looked up.
-  function searchTrail(searches) {
-    if (!searches || !searches.length) return "";
-    return `<details class="o-trail"><summary>Searched the archive &middot; ${searches.length}
-      ${searches.length === 1 ? "query" : "queries"}</summary>
-      <p>${searches.map((q) => `<span>${esc(q)}</span>`).join("")}</p></details>`;
-  }
-
-  function oracleBubble(m) {
-    return m.role === "user"
-      ? `<div class="o-turn o-you"><blockquote class="o-q">${esc(m.content)}</blockquote></div>`
-      : `<div class="o-turn o-codex"><div class="o-mark"><img src="oracle-248.webp" alt="" width="34" height="34" /></div>
-         <div class="o-body">${renderMarkdown(m.content)}${searchTrail(m.searches)}</div></div>`;
-  }
-
-  function contextChip() {
-    if (!ORACLE_CONTEXT) return "";
-    return `<div class="o-context">
-      <span class="oc-label">Reading</span>
-      <span class="oc-title">${esc(ORACLE_CONTEXT.title)}</span>
-      <span class="oc-by">${esc(ORACLE_CONTEXT.author)}</span>
-      <button class="oc-clear" title="Ask about the whole archive instead">&times;</button>
-    </div>`;
-  }
-
-  function renderOracleResting() {
-    setTitle("The Oracle");
-    app.innerHTML = `
-      <section class="oracle">
-        <header class="oracle-head">
-          <img class="oracle-coin is-resting" src="oracle-248.webp" alt="Silver tetradrachm of Alexander the Great" />
-          <h1>The Oracle</h1>
-          <p>The Oracle is resting. It will answer again soon.</p>
-        </header>
-        <div class="o-resting">
-          <p>The Oracle reads the archive and answers questions about it \u2014 which poem to
-          start with, how a form works, what a period was arguing about. It is paused for
-          the moment.</p>
-          <p>Everything else is open: <a href="#/poems">${DATA.count.toLocaleString("en-US")} poems</a> by
-          <a href="#/poets">poets of every age</a>, arranged
-          <a href="#/eras">by era</a>, every one of them free to read.</p>
-        </div>
-      </section>`;
-  }
-
-  function renderOracle() {
-    if (!ORACLE_LIVE) return renderOracleResting();
-    setTitle("The Oracle");
-    const empty = !ORACLE_MSGS.length;
-    app.innerHTML = `
-      <section class="oracle">
-        <header class="oracle-head">
-          <img class="oracle-coin" src="oracle-248.webp" alt="Silver tetradrachm of Alexander the Great" />
-          <h1>The Oracle</h1>
-          <p>Ask anything about poetry, or about what this archive holds. The Oracle
-          searches the collection before it answers, and links to what it finds.</p>
-        </header>
-        ${contextChip()}
-        ${empty ? `<div class="o-openers">${ORACLE_OPENERS.map((q) =>
-          `<button class="o-opener">${esc(q)}</button>`).join("")}</div>` : ""}
-        <div class="o-thread" id="o-thread">${ORACLE_MSGS.map(oracleBubble).join("")}</div>
-        <form class="o-composer" autocomplete="off">
-          <textarea class="o-input" rows="1" maxlength="2000"
-                    placeholder="Ask the Oracle\u2026" aria-label="Ask the Oracle"></textarea>
-          <button class="o-send" type="submit">Ask</button>
-        </form>
-        <p class="ask-hint">Press Enter to ask \u00b7 Shift + Enter for a new line \u00b7
-        Answers are generated, and the archive ends where copyright begins.</p>
-      </section>`;
-
-    const thread = document.getElementById("o-thread");
-    const form = app.querySelector(".o-composer");
-    const input = app.querySelector(".o-input");
-    const send = app.querySelector(".o-send");
-    let running = false;
-
-    const clear = app.querySelector(".oc-clear");
-    if (clear) clear.addEventListener("click", () => { ORACLE_CONTEXT = null; renderOracle(); });
-
-    // The composer grows with the question, up to a point.
-    function grow() {
-      input.style.height = "auto";
-      input.style.height = Math.min(input.scrollHeight, 260) + "px";
-    }
-    input.addEventListener("input", grow);
-    grow();
-    input.focus();
-
-    app.querySelectorAll(".o-opener").forEach((b) =>
-      b.addEventListener("click", () => { input.value = b.textContent; grow(); ask(); }));
-
-    input.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); ask(); }
-    });
-    form.addEventListener("submit", (e) => { e.preventDefault(); ask(); });
-
-    async function ask() {
-      const question = input.value.trim();
-      if (!question || running) return;
-      running = true;
-      input.value = ""; grow();
-      input.disabled = true; send.disabled = true;
-      const openers = app.querySelector(".o-openers");
-      if (openers) openers.remove();
-
-      ORACLE_MSGS.push({ role: "user", content: question });
-      thread.insertAdjacentHTML("beforeend", oracleBubble(ORACLE_MSGS[ORACLE_MSGS.length - 1]));
-      thread.insertAdjacentHTML("beforeend",
-        `<div class="o-turn o-codex" id="o-live"><div class="o-mark"><img src="oracle-248.webp" alt="" width="34" height="34" /></div>
-         <div class="o-body"><p class="o-status">Consulting the archive\u2026</p></div></div>`);
-      const live = document.getElementById("o-live").querySelector(".o-body");
-      live.scrollIntoView({ behavior: "smooth", block: "end" });
-
-      const searches = [];
-      let prose = "";
-      try {
-        const payload = { messages: ORACLE_MSGS.map((m) => ({ role: m.role, content: m.content })) };
-        if (ORACLE_CONTEXT) {
-          payload.context = {
-            title: ORACLE_CONTEXT.title, author: ORACLE_CONTEXT.author,
-            text: ORACLE_CONTEXT.text,
-          };
-        }
-        const res = await fetch(ENGINE_URL + "/api/oracle", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        });
-        if (!res.ok || !res.body) {
-          const info = await res.json().catch(() => ({}));
-          throw new Error(info.error || "The Oracle could not answer.");
-        }
-        const reader = res.body.getReader();
-        const decoder = new TextDecoder();
-        let buf = "";
-        for (;;) {
-          const { done, value } = await reader.read();
-          if (done) break;
-          buf += decoder.decode(value, { stream: true });
-          const lines = buf.split("\n");
-          buf = lines.pop();
-          for (const line of lines) {
-            if (!line.startsWith("data: ")) continue;
-            const chunk = line.slice(6);
-            if (chunk === "[DONE]") continue;
-            let msg;
-            try { msg = JSON.parse(chunk); } catch { continue; }
-            if (msg.error) throw new Error(msg.error);
-            if (msg.searching) {
-              if (searches.indexOf(msg.searching) < 0) searches.push(msg.searching);
-              if (!prose) {
-                live.innerHTML = `<p class="o-status">Searching the archive for \u201c${esc(msg.searching)}\u201d\u2026</p>`;
-              }
-              continue;
-            }
-            prose += msg.t || "";
-            if (prose) live.innerHTML = renderMarkdown(prose) + searchTrail(searches);
-          }
-        }
-        if (!prose.trim()) throw new Error("The Oracle had nothing to say. Please try again.");
-        ORACLE_MSGS.push({ role: "assistant", content: prose, searches });
-      } catch (err) {
-        live.innerHTML = `<p class="o-error">${esc(err.message || "The Oracle could not answer.")}</p>`;
-        ORACLE_MSGS.pop();                       // drop the unanswered question
-      } finally {
-        const node = document.getElementById("o-live");
-        if (node) node.removeAttribute("id");
-        running = false;
-        input.disabled = false; send.disabled = false;
-        input.focus();
-      }
-    }
-  }
-
   // ---------- POEM DETAIL ----------
   // id format: "<authorSlug>/<n>" where n is the poem's index within that
   // poet's own poems array (stable across content edits to OTHER poets).
@@ -11492,120 +11182,14 @@ ${body}</body></html>`;
       });
     }).catch((e) => { if (location.hash === requestedHash) renderFetchError(e); });
   }
-  // Everything the Codex can be pointed at: every poem, and every section of
-  // every work. Built once, on first use.
-  // The work sections it can be pointed at (poems come from the search index): built once.
-  let ASK_ITEMS = null;
-  function askItems() {
-    if (ASK_ITEMS || !DATA) return ASK_ITEMS || [];
-    ASK_ITEMS = [];
-    (DATA.works || []).forEach((w) => {
-      (w.sections || []).forEach((sec, i) => {
-        ASK_ITEMS.push({
-          id: "work:" + w.slug + "/" + i,
-          label: w.title + " \u00b7 " + sec.title,
-          author: w.author,
-          lab: fold(w.title + " · " + sec.title),
-          hay: fold(w.title + " " + sec.title + " " + w.author),
-        });
-      });
-    });
-    return ASK_ITEMS;
-  }
-
-  // Where an ask-item lives.
+  // Where a text with this id lives: a poem ("<slug>/<n>") or a book of a work ("work:<slug>/<i>").
   function routeFor(id) {
     return id.startsWith("work:")
       ? "#/work/" + id.slice(5)
       : "#/poem/" + id;
   }
 
-  // The full text behind an ask-item, fetched on demand.
-  function loadPiece(id) {
-    if (id.startsWith("work:")) {
-      const cut = id.lastIndexOf("/");
-      const slug = id.slice(5, cut);
-      const i = Number(id.slice(cut + 1));
-      return fetchWorkFile(slug).then((w) => {
-        const sec = w.sections[i];
-        return sec && { title: w.title + " \u00b7 " + sec.title, author: w.author, text: sec.text };
-      });
-    }
-    const parts = id.split("/");
-    return fetchPoetFile(parts[0]).then((f) => {
-      const po = f.poems[Number(parts[1])];
-      return po && { title: po.title, author: po.author, text: po.text };
-    });
-  }
-
-  // Type-ahead over poems and work sections. Title matches beat author
-  // matches, and a title that starts with the query beats one that merely
-  // contains it, so "paradise lost" leads with the poem of that name.
-  function attachPoemPicker(input, hits, onPick, excludeId) {
-    const close = () => { hits.hidden = true; hits.innerHTML = ""; };
-    // The titles to pick from are the index's: a poem page drawn without it asks for it when
-    // the reader comes to this box, and looks again when it is in.
-    input.addEventListener("focus", loadIndex);
-    let waiting = false;
-
-    let pickSeq = 0;
-    const PICKED = new Map();
-    input.addEventListener("input", async function search() {
-      onPick(null);
-      const q = fold(input.value.trim());
-      if (q.length < 3) return close();
-      if (!DATA) {
-        loadIndex();
-        hits.innerHTML = `<li class="hits-wait">${INDEX_ERROR ? "The list of titles could not be loaded." : "Loading the archive’s titles…"}</li>`;
-        hits.hidden = false;
-        if (!waiting && !INDEX_ERROR) {
-          waiting = true;
-          whenIndex(() => { waiting = false; if (document.activeElement === input && input.value.trim()) search(); });
-        }
-        return;
-      }
-      const my = ++pickSeq;
-      const scored = [];
-      for (const it of askItems()) {
-        if (it.id === excludeId) continue;
-        let score;
-        if (it.lab.startsWith(q)) score = 0;
-        else if (it.lab.includes(q)) score = 1;
-        else if (it.hay.includes(q)) score = 2;
-        else continue;
-        scored.push([score, it]);
-        if (scored.length > 400) break;          // enough to rank well
-      }
-      const found0 = await searchPoems(input.value.trim(), 12).catch(() => null);
-      if (my !== pickSeq) return;
-      (found0 ? found0.rows : []).forEach(([title, author, id]) => {
-        if (id === excludeId) return;
-        const lab = fold(title);
-        scored.push([lab.startsWith(q) ? 0 : lab.includes(q) ? 1 : 2, { id, label: title, author, lab, hay: fold(title + " " + author) }]);
-      });
-      if (!scored.length) return close();
-      scored.sort((a, b) => a[0] - b[0]);
-      const found = scored.slice(0, 8).map((x) => x[1]);
-      PICKED.clear();
-      found.forEach((it) => PICKED.set(it.id, it));
-      hits.innerHTML = found.map((it) =>
-        `<li data-id="${esc(it.id)}"><strong>${esc(it.label)}</strong> <span>${esc(it.author)}</span></li>`).join("");
-      hits.hidden = false;
-    });
-
-    // mousedown, not click: blur would close the list first.
-    hits.addEventListener("mousedown", (e) => {
-      const li = e.target.closest("li");
-      if (!li || !li.dataset.id) return;
-      const it = PICKED.get(li.dataset.id);
-      if (it) { input.value = it.label + " \u2014 " + it.author; onPick(it); }
-      close();
-    });
-
-    input.addEventListener("blur", () => setTimeout(close, 140));
-  }
-
-  // The gloss button has to find Chaucer, Gower, Langland and Wyatt without
+  // Middle English or not (for the dictionary lookups): finds Chaucer, Gower, Langland and Wyatt without
   // firing on Shakespeare or Spenser, whose spelling is old but readable.
   // Measured over the archive, Middle English texts score 9-59 hits per
   // thousand words on this vocabulary and early modern verse scores 0-1.6,
@@ -11617,189 +11201,6 @@ ${body}</body></html>`;
     if (/[\u00e6\u00fe\u00f0]/.test(sample)) return true;   // ash, thorn, eth
     const words = Math.max(sample.split(/\s+/).length, 1);
     return (sample.match(ARCHAIC_WORDS) || []).length / words * 1000 >= ARCHAIC_PER_1000;
-  }
-
-  // Markup for the critical-engine panel; empty while ENGINE_URL is unset.
-  // opts.gloss adds the modern-English button (only where the text is archaic),
-  // opts.compare the second-poem picker.
-  function enginePanel(text, opts) {
-    if (!ENGINE_URL) return "";
-    const o = opts || {};
-    const gloss = o.gloss && looksArchaic(text)
-      ? `<button class="lens lens-alt" data-gloss="1">Modern English</button>` : "";
-    const compare = o.compare ? `
-      <form class="ask-form compare-form" autocomplete="off">
-        <input class="ask-input compare-input" type="text" maxlength="120"
-               placeholder="Compare with another poem\u2026" aria-label="Compare with another poem" />
-        <button class="ask-send" type="submit">Compare</button>
-        <ul class="compare-hits" hidden></ul>
-      </form>` : "";
-    return `
-      <button class="engine-cue" type="button" aria-expanded="false">
-        <span class="ec-mark">\u25c8</span>
-        <span class="ec-label">Read with the Codex</span>
-        <span class="ec-hint">Eight critical traditions, or a question of your own</span>
-        <span class="ec-go">Open \u25be</span>
-      </button>
-      <section class="engine" hidden>
-      <p class="section-label">Read with the Codex</p>
-      <p class="engine-intro">Choose a critical tradition, or ask a question of your own.
-      Readings are generated, and are meant to open an argument rather than settle one.</p>
-      <div class="lens-row">${LENSES.map((l) =>
-        `<button class="lens" data-lens="${esc(l.id)}">${esc(l.label)}</button>`).join("")}${gloss}</div>
-      <form class="ask-form" autocomplete="off">
-        <textarea class="ask-input" rows="3" maxlength="400"
-                  placeholder="Ask the Codex about this poem \u2014 what it means, how it works, what a critic would say\u2026"
-                  aria-label="Ask the Codex about this poem"></textarea>
-        <button class="ask-send" type="submit">Ask</button>
-      </form>
-      <p class="ask-hint">Press Enter to ask \u00b7 Shift + Enter for a new line</p>
-      ${compare}
-      <div class="engine-out" id="engine-out" hidden></div>
-      ${ORACLE_LIVE ? `<p class="engine-more">Or <button class="to-oracle" type="button">take this poem to the Oracle</button>
-      for a longer conversation.</p>` : ""}
-      </section>`;
-  }
-
-  // `piece` is {title, author, text, id?} - a poem, or one section of a work.
-  function bindEngine(piece) {
-    if (!ENGINE_URL) return;
-    const out = document.getElementById("engine-out");
-    const buttons = Array.from(app.querySelectorAll(".lens"));
-    const askForm = app.querySelector(".ask-form:not(.compare-form)");
-    const askInput = askForm.querySelector(".ask-input");
-    const cmpForm = app.querySelector(".compare-form");
-    const fields = Array.from(app.querySelectorAll(".ask-input, .ask-send"));
-    let running = false;
-
-    function setBusy(busy) {
-      running = busy;
-      buttons.forEach((b) => { b.disabled = busy; });
-      fields.forEach((f) => { f.disabled = busy; });
-    }
-
-    // Streams one reading, answer, gloss or comparison into #engine-out.
-    async function run(path, payload, credit, label) {
-      if (running) return;
-      setBusy(true);
-      out.hidden = false;
-      out.className = "engine-out is-loading";
-      out.textContent = "Reading\u2026";
-      let prose = "";
-      let saved = false;     // the Worker replayed a stored reading ({cached: true})
-
-      try {
-        const res = await fetch(ENGINE_URL + path, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(Object.assign(
-            { title: piece.title, author: piece.author, text: piece.text }, payload)),
-        });
-        if (!res.ok || !res.body) {
-          const info = await res.json().catch(() => ({}));
-          throw new Error(info.error || "The reading could not be completed.");
-        }
-        const reader = res.body.getReader();
-        const decoder = new TextDecoder();
-        let buf = "";
-        for (;;) {
-          const { done, value } = await reader.read();
-          if (done) break;
-          buf += decoder.decode(value, { stream: true });
-          const lines = buf.split("\n");
-          buf = lines.pop();                       // keep the partial last line
-          for (const line of lines) {
-            if (!line.startsWith("data: ")) continue;
-            const chunk = line.slice(6);
-            if (chunk === "[DONE]") continue;
-            let msg;
-            try { msg = JSON.parse(chunk); } catch { continue; }
-            if (msg.error) throw new Error(msg.error);
-            if (msg.cached) saved = true;
-            prose += msg.t || "";
-            out.className = "engine-out" + (path === "/api/gloss" ? " is-gloss" : "");
-            out.innerHTML = prose.split(/\n{2,}/).filter(Boolean)
-              .map((para) => `<p>${esc(para)}</p>`).join("")
-              + `<p class="engine-credit">${esc(credit)}${saved
-                ? ` <span class="engine-saved" title="Written for an earlier reader and kept: everyone who asks for this reading gets the same text.">Saved reading</span>`
-                : ""}</p>`;
-          }
-        }
-        recordReading(piece, path, label || "", prose);
-      } catch (err) {
-        out.className = "engine-out is-error";
-        out.textContent = err.message || "The reading could not be completed.";
-      } finally {
-        setBusy(false);
-      }
-    }
-
-    buttons.forEach((btn) => btn.addEventListener("click", () => {
-      if (running) return;
-      buttons.forEach((b) => b.classList.toggle("active", b === btn));
-      askInput.value = "";
-      if (btn.dataset.gloss) {
-        // Mirrors MAX_GLOSS_CHARS in the Worker.
-        const partial = piece.text.length > 6000;
-        run("/api/gloss", {}, partial
-          ? "Modern-English gloss of the opening lines, generated by the Poetry Codex critical engine."
-          : "Modern-English gloss, generated by the Poetry Codex critical engine.", "Modern-English gloss");
-      } else {
-        run("/api/analyze", { lens: btn.dataset.lens },
-            btn.textContent + " reading, generated by the Poetry Codex critical engine.", btn.textContent + " reading");
-      }
-    }));
-
-    askInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); askForm.requestSubmit(); }
-    });
-
-    askForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const question = askInput.value.trim();
-      if (!question || running) return;
-      buttons.forEach((b) => b.classList.remove("active"));
-      run("/api/ask", { question },
-          "In answer to: \u201c" + question + "\u201d \u2014 generated by the Poetry Codex critical engine.", question);
-    });
-
-    const panel = app.querySelector(".engine");
-    const cue = app.querySelector(".engine-cue");
-    if (cue) cue.addEventListener("click", () => {
-      const open = !panel.hidden;
-      panel.hidden = open;
-      cue.setAttribute("aria-expanded", String(!open));
-      cue.querySelector(".ec-go").textContent = open ? "Open \u25be" : "Close \u25b4";
-      if (!open) panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    });
-
-    const toOracle = app.querySelector(".to-oracle");
-    if (toOracle) toOracle.addEventListener("click", () => {
-      ORACLE_CONTEXT = { id: piece.id, title: piece.title, author: piece.author, text: piece.text };
-      location.hash = "#/oracle";
-    });
-
-    if (cmpForm) bindCompare(cmpForm, piece, run, () => running, buttons);
-  }
-
-  // Compare box: same picker, then the chosen poem's full text.
-  function bindCompare(form, piece, run, isRunning, buttons) {
-    const input = form.querySelector(".compare-input");
-    const hits = form.querySelector(".compare-hits");
-    let chosen = null;
-    attachPoemPicker(input, hits, (p) => { chosen = p; }, piece.id);
-
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      if (isRunning() || !chosen) { input.focus(); return; }
-      buttons.forEach((b) => b.classList.remove("active"));
-      const other = await loadPiece(chosen.id).catch(() => null);
-      if (!other) return;
-      run("/api/compare",
-          { otherTitle: other.title, otherAuthor: other.author, otherText: other.text },
-          "A comparative reading with \u201c" + other.title + "\u201d by " + other.author
-          + ", generated by the Poetry Codex critical engine.", "Compared with \u201c" + other.title + "\u201d");
-    });
   }
 
   // "Read next": three poems on the same subject from the same era or tradition, the same
@@ -11911,7 +11312,6 @@ ${body}</body></html>`;
         ${sourceLine(p.translator, p.collection, long ? readTime(p.text, isProse(p.text, p.translator)) : "")}
         ${themes}
         <hr class="rule">
-        ${enginePanel(p.text, { compare: true, gloss: true })}
         ${poemBlock(p.text, { label: "The Poem", translator: p.translator, lang: tlang, parallel: parCtlHTML("poems", p.id, par) })}
         <p class="book-source-slot" hidden></p>
         ${p.note ? `<div class="rule-ornament">✦ ✦ ✦</div>
@@ -11934,7 +11334,6 @@ ${body}</body></html>`;
       syncSearchInput(); location.hash = "#/poems";
     }));
     app.querySelectorAll(".detail-nav button").forEach((b) => b.addEventListener("click", () => { if (!b.disabled) location.hash = "#/poem/" + slug + "/" + b.dataset.go; }));
-    bindEngine({ title: p.title, author: p.author, text: p.text, id: p.id });
     fillRelated(p);
     bindReadingTools();
     bindFind();

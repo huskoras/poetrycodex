@@ -6,6 +6,9 @@ compatibility_flags = ["nodejs_compat"]
 # The Oracle is the costliest route, so it has an off switch. Set to "true"
 # and redeploy to bring it back; nothing else on the site depends on it.
 [vars]
+# MASTER SWITCH for every paid model call (owner's decision, 18 Nov 2026: the site no longer
+# uses AI at all, to stop the API bill). "false" = every route answers 503 and spends nothing.
+AI_ENABLED = "false"
 ORACLE_ENABLED = "false"
 
 # Most paid model calls the engine will make in one UTC day, across all visitors.

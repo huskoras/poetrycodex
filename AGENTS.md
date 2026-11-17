@@ -7,7 +7,7 @@ points here). Read it fully before making changes.
 **Live site:** https://poetrycodex.com (GitHub Pages origin behind Cloudflare; the old
 address https://huskoras.github.io/poetrycodex/ redirects there)
 **Repo:** https://github.com/huskoras/poetrycodex
-**AI engine:** https://poetrycodex-engine.poetrycodex.workers.dev (Cloudflare Worker, `worker/`)
+**AI engine:** RETIRED 18 Nov 2026 (owner: no AI spending). The site makes no AI calls; see §4b.
 **Contact:** admin@poetrycodex.com
 **Owner:** a non-technical user. Explain things in plain language, avoid jargon, and
 do the technical work yourself rather than handing them instructions to run. He enters
@@ -20,7 +20,7 @@ API keys, secrets, payments and dashboard settings himself — never ask him to 
 A curated archive of **public-domain poetry** — currently **58,207 poems, 1,669 poets,
 133 multi-section works** (as of 13 Oct 2026; `data/index.json` is the live count), spanning Cædmon (~7th c.) and Homer
 (~8th c. BC) through early-20th-century British, American and Turkish poets — plus an
-AI reading engine ("Read with the Codex" on every poem, and the Oracle, see §4b).
+(no AI features: the reading engine and the Oracle were removed on 18 Nov 2026, see §4b).
 
 Each poem page shows the full text; each poet has a page with portrait, dates, bio and
 their poem/work list. Long texts (epics, poem cycles) are "works" split into readable
@@ -318,14 +318,14 @@ original text first, then translations by year); the tile's number counts each w
 
 ## 4. Routes (all hash-based, in `app.js`)
 
-`#/` home (two "doors": Archive → `#/eras`, Oracle → `#/oracle`, plus era tiles; while
-`ORACLE_LIVE` is off the Oracle's door shows the poem of the day instead, drawn from the
-`hasNote` poems by UTC date, `poemOfTheDay` in `app.js`) ·
+`#/` home (two "doors": The Archive → `#/eras`, The Poets → `#/poets` (poets-248.webp, Homer),
+then the poem of the day card, drawn from the `hasNote` poems by UTC date, `poemOfTheDay` in
+`app.js`, plus era tiles) ·
 `#/eras` · `#/poems` full archive (topic filters live here) · `#/poets` · `#/poet/<slug>` ·
 `#/poem/<authorSlug>/<n>` · `#/poem/<oldNumericIndex>` (legacy, see below) ·
 `#/work/<slug>` (contents) · `#/work/<slug>/<i>` (one section) ·
 `#/work/<slug>/<i>/with/<otherSlug>` (the same book in two translations, side by side) ·
-`#/category/<slug>` · `#/oracle` · `#/about` · `#/shelf` (the reader's saved texts)
+`#/category/<slug>` · `#/about` (the old `#/oracle` goes home) · `#/shelf` (the reader's saved texts)
 
 `#/poems` has two chip rows: subjects, and forms (from each entry's `form`; the row is absent
 with an index that has none); both combine ("Sonnets on Love"). Under every poem, "Read next"
@@ -352,7 +352,7 @@ its maps in `parallel-oe.json` must be checked again (they count non-empty lines
 app-only; the static pages do not show it. `facingHTML`, `alignRows` and `workFacing` in
 `app.js` do the work.
 
-Nav: Poems · Poets · Eras · The Oracle · About. The pre-redesign layout is tagged
+Nav: Poems · Poets · Eras · About. The pre-redesign layout is tagged
 `design-before-v2` in git if a rollback is ever wanted.
 
 **Legacy links:** before the September 2026 data-layer split, poem links were a bare
@@ -415,16 +415,25 @@ Synced kinds (`SYNC_KINDS` in app.js = `KEYS` in accounts.js): shelf, notes, rea
 **marks** (notes on lines: select text in a verse poem → "Note on this line"; anchored to the
 lines' `data-i`, poemHTML's running index of every rendered line, so never renumber how
 poemHTML emits lines; gold rule + dot in the text; listed on the shelf and `#/account`) and
-**readings** (the last 30 texts the engine wrote for this reader, recorded in bindEngine's
-run()). `#/account` signed in = "Your library" (medallion header, Open your shelf, counts, recent
-saves, line notes, notes, readings, then sign out/delete). The site never shows the owner's
+(the old **readings** kind, the engine's texts, is no longer synced or shown since 18 Nov 2026;
+accounts.js still accepts the key, harmlessly). `#/account` signed in = "Your library" (medallion
+header, Open your shelf, counts, recent saves, line notes, notes, then sign out/delete). The site never shows the owner's
 name or a place; it is "run by an international group of academics" (owner, 16 Oct 2026).
 The emblem is the Walters Art Museum's Medallion with Alexander the Great (59.1, CC0), credited
 in the footer and on About.
 
 ---
 
-## 4b. The critical engine (`worker/`)
+## 4b. The critical engine (`worker/`) — RETIRED 18 Nov 2026
+
+**Owner's decision, 18 Nov 2026: no AI on the site and no AI spending.** The per-poem panel
+("Read with the Codex": lenses, questions, compare, gloss), the Oracle page, its nav links and
+home door, and the account's "Readings with the Codex" were removed from app.js, styles.css,
+index.html, build_pages.py, privacy and terms. `worker/wrangler.toml` has a master switch
+`AI_ENABLED = "false"`: while it is not "true" every route answers 503 before anything runs.
+Do not bring any of it back, or add any other paid AI feature, without the owner's explicit
+order. The notes below describe the retired engine, for the record.
+
 
 Live at `https://poetrycodex-engine.poetrycodex.workers.dev`, wired into
 `ENGINE_URL` in `app.js`. A Cloudflare Worker: the static site cannot hold an

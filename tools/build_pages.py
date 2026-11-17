@@ -426,7 +426,6 @@ def shell(title, description, canonical, body, og_type="article", image=SHARE_IM
           <a href="/#/poems">Poems</a>
           <a href="/#/poets">Poets</a>
           <a href="/#/eras">Eras</a>
-          <a class="tb-oracle" href="/#/oracle">The Oracle</a>
           <a href="/#/about">About</a>
         </nav>
         {SEARCH_FORM}
@@ -1092,7 +1091,6 @@ def not_found_page():
         <a href="/#/poems">Poems</a>
         <a href="/#/poets">Poets</a>
         <a href="/#/eras">Eras</a>
-        <a href="/#/oracle">The Oracle</a>
         <a href="/#/about">About</a>
       </nav>
       <p class="nf-instead"><a href="/#/surprise">Or read a poem instead</a></p>
@@ -1101,7 +1099,7 @@ def not_found_page():
       (function () {
         // /poets, /about … typed as paths are meant as the archive's pages of that name.
         var path = location.pathname.replace(/\/+$/, "").toLowerCase();
-        if (/^\/(poems|poets|eras|oracle|about)$/.test(path)) { location.replace("/#" + path); return; }
+        if (/^\/(poems|poets|eras|about)$/.test(path)) { location.replace("/#" + path); return; }
         // the quill's little animation: shown finished, and still, to readers who ask for less motion
         var quill = document.querySelector(".nf-quill");
         if (quill && quill.pauseAnimations && matchMedia("(prefers-reduced-motion: reduce)").matches) { quill.pauseAnimations(); quill.setCurrentTime(3.5); }
