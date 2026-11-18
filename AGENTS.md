@@ -318,7 +318,7 @@ original text first, then translations by year); the tile's number counts each w
 
 ## 4. Routes (all hash-based, in `app.js`)
 
-`#/` home (two "doors": The Archive → `#/eras`, The Poets → `#/poets` (poets-248.webp, Homer),
+`#/` home (two "doors": The Archive → `#/eras`, The Poets → `#/poets` (lyre-248.webp: a Chalcidian League silver tetradrachm with a kithara, BnF, public domain),
 then the poem of the day card, drawn from the `hasNote` poems by UTC date, `poemOfTheDay` in
 `app.js`, plus era tiles) ·
 `#/eras` · `#/poems` full archive (topic filters live here) · `#/poets` · `#/poet/<slug>` ·

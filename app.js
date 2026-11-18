@@ -7539,7 +7539,7 @@
           <span class="d-go">Enter &rarr;</span>
         </a>
         <a class="door door-poets" href="#/poets">
-          <img src="poets-248.webp" alt="" width="124" height="124" />
+          <img src="lyre-248.webp" alt="" width="124" height="124" />
           <span class="d-name">The Poets</span>
           <span class="d-line">From Homer and Sappho to Basho, Rumi and Rilke: each poet with a
           portrait, a life, and every poem of theirs the archive holds.</span>
